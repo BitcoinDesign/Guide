@@ -1,0 +1,51 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+
+
+
+      <nav class="footer-nav">
+        {%- for path in page_paths -%}
+          {%- assign nav_pages = site.pages | where_exp:"item", "item.nav_order != nil" | sort:"nav_order" -%}
+          {%- assign my_page = site.pages | where: "path", path | first -%}
+          {% if my_page.footer_nav %}
+            {%- if my_page.title -%}
+              <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            {%- endif -%}
+          {% endif %}
+        {%- endfor -%}
+
+          <a class="page-link" href="{{ 'feed.xml' | relative_url }}">
+            <span>Subscribe</span>
+          </a>
+
+     </nav>
+
+
+      {%- if site.author %}
+        <ul class="contact-list">
+          {% if site.author.name -%}
+            <li class="p-name">{{ site.author.name | escape }}</li>
+          {% endif -%}
+          {% if site.author.email -%}
+            <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+          {%- endif %}
+        </ul>
+      {%- endif %}
+      </div>
+      <div class="footer-col">
+        <p>{{ site.description | escape }}</p>
+      </div>
+    </div>
+
+    <div class="social-links">
+      {%- include social.html -%}
+    </div>
+
+  </div>
+
+</footer>

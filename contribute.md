@@ -2,6 +2,8 @@
 layout: page
 title: Contribute
 permalink: /contribute/
+main_nav: true
+nav_order: 50
 ---
 
 Help build this guide, find an exiting project to help scale, or joint the community and start something new .

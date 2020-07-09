@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+
+      <div class="wrapper">
+
+        {%- if page.path contains 'case-studies' or page.path contains 'resources' -%}
+        <div class="side-bar">
+          <nav role="navigation" aria-label="Main" id="secundary-nav" class=" secundary-nav">
+              {% include secundary-nav.html %}
+          </nav>
+        </div>
+        {%- endif -%}
+
+        <div class="main {% if page.path contains 'case-studies' or page.path contains 'resources' %} sidebar{% endif %}" id="top">
+          {{ content }}
+
+
+        <div class="edit-link">
+          <a href="{{site.github.repository_url}}/blob/gh-pages/{{page.path}}">Edit this page</a>
+        </div>
+
+        </div>
+
+      </div>
+
+
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>
