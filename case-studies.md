@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Case Studies
-nav_order: 0
+nav_order: 2
 permalink: /case-studies/
 main_nav: true
 secondary_nav: false

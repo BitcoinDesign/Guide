@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Resources
-nav_order: 0
+nav_order: 1
 permalink: /resources/
 main_nav: true
 secondary_nav: false

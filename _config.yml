@@ -18,9 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Bitcoin Design Guide
-email: hi@bitcoindesignguide.com
-description: "The Bitcoin Design Guide aims to be a free open-source community resource that will help designers and developers working on bitcoin-products to create better experiences, faster."
+title: Bitcoin Design
+email: hi@bitcoindesign.com
+description: "Bitcoin Design aims to be a free open-source community resource that will help designers and developers working on bitcoin-products to create better experiences, faster."
 # baseurl: "bitcoin-design-guide" # Only for gh-pages. Comment this line to run the website on localhost:4000
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb

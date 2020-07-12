@@ -84,7 +84,13 @@
       margin-right: 0;
     }
     margin-left: 20px;
+    
   }
+  
+  .page-link.active{
+      border-bottom: $brand-color 2px solid;
+   }
+
 
   @media screen and (min-width: $on-medium) {
     position: static;
@@ -106,10 +112,10 @@
 
     .page-link {
       display: inline;
-      padding: 0;
+      padding: 0 0 $spacing-unit/3 0;
 
       &:not(:last-child) {
-        margin-right: 20px;
+        margin-right: 40px;
       }
       margin-left: auto;
     }
@@ -127,6 +133,7 @@
   background-color: darken($background-color, 3%);
   position: relative;
   z-index: 1;
+  margin-top: $spacing-unit*4;
   .page-link {
       &:not(:last-child) {
         margin-right: 20px;
@@ -209,6 +216,7 @@
 /**
  * Page content
  */
+
 .page-content {
   padding: $spacing-unit 0;
   @include media-query($on-palm) {
@@ -221,8 +229,34 @@
 }
 
 .page-heading {
-  @include relative-font-size(2);
+  @include relative-font-size(4);
+  line-height:1em;
+  margin: $spacing-unit*4 0;
+  max-width: 1000px;
+  @include media-query($on-palm) {
+     @include relative-font-size(3);
+  }
 }
+
+
+
+
+.entry-points {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    grid-gap: 4rem 4rem;
+    margin: $spacing-unit*4 0;
+}
+
+.entry-point {
+  display:block;
+  background: #ffb900;
+  padding: $spacing-unit;
+  padding-top: calc(45% - (#{$spacing-unit} / 2));
+}
+
+
+
 
 .post-list-heading {
   @include relative-font-size(1.75);
@@ -231,6 +265,7 @@
 .post-list {
   margin-left: 0;
   list-style: none;
+  margin: $spacing-unit*4 0;
 
   > li {
     margin-bottom: $spacing-unit;
@@ -286,6 +321,7 @@
     height: 100%;
     flex-direction: column;
     align-items: flex-end;
+    padding-top: #{$spacing-unit / 4};
     padding-right: #{$spacing-unit / 4};
     @include media-query($on-palm) {
       position: relative;

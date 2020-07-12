@@ -24,12 +24,23 @@
             {%- assign my_page = site.pages | where: "path", path | first -%}
             {% if my_page.main_nav %}
               {%- if my_page.title -%}
-                <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                {% assign current_page = page.url | replace:'/',' ' | truncatewords: 1,"" %}
+                {% assign menu_page = my_page.url | replace:'/',' ' | truncatewords: 1,"" %}
+                <a class="page-link{% if current_page == menu_page %} active{% endif %}" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
               {%- endif -%}
             {% endif %}
           {%- endfor -%}
+          <a class="search-label page-link" onclick="toggleSearch()"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></a>
         </div>
       </nav>
+
+      <div class="search-input-wrap" id="toggled-search" style="display: none;">
+        <form action="/search.html" method="get">
+          <input type="text" id="search-input" name="query" class="search-input" tabindex="0" placeholder="Search" aria-label="Search {{ site.title }}" autocomplete="off">
+        </form>
+      </div>
+
+
     {%- endif -%}
   </div>
 </header>

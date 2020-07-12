@@ -319,6 +319,10 @@ body {
 
 
 
+
+
+
+
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -327,6 +331,7 @@ p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
   margin-bottom: $spacing-unit / 2;
+  max-width: 770px;
 }
 
 hr {
@@ -374,7 +379,7 @@ figcaption {
  * Lists
  */
 ul, ol {
-  margin-left: $spacing-unit;
+  margin-left: $spacing-unit * 1.5;
 }
 
 li {
