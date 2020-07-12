@@ -370,9 +370,19 @@ figure > img {
 }
 
 figcaption {
+  padding-top: $spacing-unit / 4;
   font-size: $small-font-size;
+  color: $grey-dk-000;
 }
 
+figcaption a, figcaption a:visited, figcaption a:hover{
+  color: $grey-dk-000;
+  text-decoration: underline;
+}
+
+figcaption a:hover{
+  color: $grey-dk-300;
+}
 
 
 /**

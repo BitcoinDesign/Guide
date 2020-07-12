@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Resources
+title: Guide
 nav_order: 1
-permalink: /resources/
+permalink: /guide/
 main_nav: true
 secondary_nav: false
 ---

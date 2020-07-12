@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Case Studies
+title: Projects
 nav_order: 2
-permalink: /case-studies/
+permalink: /projects/
 main_nav: true
 secondary_nav: false
 ---

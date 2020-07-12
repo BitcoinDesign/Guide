@@ -84,9 +84,9 @@
       margin-right: 0;
     }
     margin-left: 20px;
-    
+
   }
-  
+
   .page-link.active{
       border-bottom: $brand-color 2px solid;
    }
@@ -241,18 +241,24 @@
 
 
 
-.entry-points {
+.grid {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
     grid-gap: 4rem 4rem;
-    margin: $spacing-unit*4 0;
 }
 
-.entry-point {
+.grid-item {
   display:block;
-  background: #ffb900;
-  padding: $spacing-unit;
-  padding-top: calc(45% - (#{$spacing-unit} / 2));
+}
+
+
+.entry-points {
+  margin: $spacing-unit*4 0;
+  .grid-item {
+    background: #ffb900;
+    padding: $spacing-unit;
+    padding-top: calc(45% - (#{$spacing-unit} / 2));
+  }
 }
 
 
