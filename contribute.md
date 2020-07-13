@@ -32,11 +32,11 @@ projets:
 Help build this guide, find an exiting project to help scale, or joint the community and start something new.
 
 
-<div class="grid entry-points">
+<div class="grid projects">
 {% for item in page.projets %}
-      <div class="grid">
-        <h3>{{- item.name -}}</h3>
+      <div class="grid project">
         <img src="{{ item.image | relative_url }}" />
+        <h3>{{- item.name -}}</h3>
         {{- item.description -}}
         <a href="{{- item.site -}}" target="_blank">Website</a>
       </div>
