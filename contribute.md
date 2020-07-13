@@ -36,11 +36,9 @@ Help build this guide, find an exiting project to help scale, or joint the commu
 {% for item in page.projets %}
       <div class="grid">
         <h3>{{- item.name -}}</h3>
-        <img src="{{ baseurl }}{{- item.image -}}" />
+        <img src="{{ item.image | relative_url }}" />
         {{- item.description -}}
         <a href="{{- item.site -}}" target="_blank">Website</a>
       </div>
 {% endfor %}
 </div>
-
-{{ item.image | relative_url }}
