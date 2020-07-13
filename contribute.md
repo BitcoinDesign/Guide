@@ -34,7 +34,7 @@ Help build this guide, find an exiting project to help scale, or joint the commu
 
 <div class="grid projects">
 {% for item in page.projets %}
-      <div class="grid project">
+      <div class="grid-item">
         <img src="{{ item.image | relative_url }}" />
         <h3>{{- item.name -}}</h3>
         {{- item.description -}}

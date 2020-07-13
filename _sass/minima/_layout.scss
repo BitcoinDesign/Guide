@@ -252,7 +252,7 @@
 }
 
 
-.entry-points {
+.grid.entry-points {
   margin: $spacing-unit*4 0;
   .grid-item {
     background: #ffb900;
@@ -261,14 +261,20 @@
   }
 }
 
-.grid {
-   .project {
+.grid.projects {
+   margin: $spacing-unit*2 0 0 0;
+   .grid-item {
      display:block;
      img {
-       max-width:120px;
+       max-width:150px;
+       max-height:80px;
      }
      h3 {
        margin-top: 0;
+     }
+     a {
+       display:block;
+       margin-top: $spacing-unit/2;
      }
    }
 }
