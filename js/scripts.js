@@ -90,7 +90,7 @@ function loadSearchData() {
 		}
 	};
 
-	request.open('GET', '/search-data.json');
+	request.open('GET', siteConfig.baseUrl + 'search-data.json');
 	request.send();
 };
 
