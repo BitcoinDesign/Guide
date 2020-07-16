@@ -109,7 +109,7 @@ function handleSearchInput(event) {
     }
 
     var searchBox = document.getElementById("toggled-search");
-    var form = searchBox.getElementByTagName('form')[0];
+    var form = searchBox.getElementsByTagName('form')[0];
     form.action = '/search.html?query=' + encodeURIComponent(searchInput);
   }
 }
