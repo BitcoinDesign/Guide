@@ -37,7 +37,13 @@ plugins:
 minima:
   date_format: "%b %-d, %Y"
 
-
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      permalink: ":path/:basename"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
