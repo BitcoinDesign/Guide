@@ -6,6 +6,14 @@ main_nav: true
 nav_order: 5
 
 projets:
+  - name: CoinSwap
+    site: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2020-May/017898.html
+    description: CoinSwap is a way of trading one coin for another coin in a non-custodial way. It is closely related to the idea of an atomic swap.
+    image: /assets/images/contribute/coinswap.png
+  - name: photon-lib
+    site: https://github.com/photon-sdk/photon-lib
+    description: A high level library for building bitcoin wallets with react native.
+    image: /assets/images/contribute/photon-lib.png
   - name: BTCPay Server
     site: https://btcpayserver.org/
     description: BTCPay Server is proudly free and open-source, built and maintained by a world-wide community of passionate contributors.
