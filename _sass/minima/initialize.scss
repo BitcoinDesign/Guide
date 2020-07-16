@@ -32,7 +32,28 @@ $on-large:         1300px !default;
 
 
 
+$bitcoin-yellow: #F2A900;
 
+$primary-color: $bitcoin-yellow;
+
+
+
+
+:root {
+  --back: 251, 251, 251;
+  --front: 0, 0, 0;
+
+  --backHex: #fbfbfb;
+  --frontHex: #000000;
+}
+
+.theme--dark {
+  --back: 13, 13, 15;
+  --front: 255, 255, 255;
+
+  --backHex: #0D0D0F;
+  --frontHex: #ffffff;
+}
 
 
 
@@ -151,7 +172,7 @@ $media-queries: (
   xl: 1400px,
 ) !default;
 
-
+$ease  : cubic-bezier(0.5, 0.0, 0.2, 1);
 
 
 
@@ -187,6 +208,8 @@ $media-queries: (
   "minima/base",             // Defines element resets.
   "minima/layout",           // Defines structure and style based on CSS selectors.
   "minima/inter",
+  "minima/site-header",
+  "minima/site-footer",
   "minima/side-nav",
   "minima/search",
   "minima/custom-styles"     // Hook to override existing styles.
