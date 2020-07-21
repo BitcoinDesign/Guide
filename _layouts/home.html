@@ -7,12 +7,7 @@ layout: default
       Community based, open-source design for bitcoin products.
     </h1>
 
-  {{ content }}
-
-
-
-
-
+  
   {%- assign nav_pages = site.pages | where_exp:"item", "item.nav_order != nil" | sort:"nav_order" -%}
   {%- assign default_paths = nav_pages | map: "path" -%}
   {%- assign page_paths = nav_pages.header_pages | default: default_paths -%}
