@@ -143,10 +143,32 @@ function displaySearchResults(searchInput, results) {
   searchResults.style.display = 'block';
 }
 
+function toggleSecondaryNav(event) {
+  var target = event.target;
+  var navListItem = target;
+  while(navListItem && !navListItem.classList.contains('nav-list-item')) {
+    navListItem = navListItem.parentNode;
+  }
+
+  if(navListItem.classList.contains('-active')) {
+    navListItem.classList.remove('-active');
+  } else {
+    navListItem.classList.add('-active');
+  }
+
+  console.log('toggleSecondaryNav', navListItem, target);
+}
+
 document.addEventListener("DOMContentLoaded", function(event) {
   var searchInput = document.getElementById("search-input");
   searchInput.addEventListener('keyup', handleSearchInput);
 
   var navTrigger = document.getElementById("nav-trigger");
   navTrigger.addEventListener('click', toggleMenu);
+
+  var secondaryNavListExpander = document.getElementsByClassName("nav-list-expander");
+  console.log('secondaryNavListExpander', secondaryNavListExpander);
+  for(var i=0; i<secondaryNavListExpander.length; i++) {
+    secondaryNavListExpander[i].addEventListener('click', toggleSecondaryNav);
+  }
 });

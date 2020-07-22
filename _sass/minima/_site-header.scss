@@ -13,7 +13,6 @@
         display: flex;
         justify-content: space-between;
         padding-left: 20px;
-        padding-right: 20px;
 
         .site-title {
             @include relative-font-size(1.825);
@@ -23,20 +22,20 @@
             line-height: 60px;
             letter-spacing: -0.5px;
             color: var(--frontHex);
-
-            @include media-query($on-palm) {
-                padding-right: 45px;
-            }
+            transition: color 100ms $ease;
 
             &,
             &:visited {
                 color: $site-title-color;
             }
+
+            &:hover {
+                color: $primary-color;
+                text-decoration: none;
+            }
         }
 
         .site-nav {
-            line-height: 60px;
-
             .page-link {
                 color: var(--frontHex);
                 line-height: 60px;
@@ -47,11 +46,16 @@
 
                 &:hover {
                     color: $primary-color;
+                    text-decoration: none;
                 }
 
                 &.active {
                     color: $primary-color;
                 }
+            }
+
+            & > .page-link > a {
+                line-height: 60px;
             }
         }
 
@@ -90,7 +94,8 @@
             top: 100%;
             right: 0;
             background-color: white;
-            width: 500px;
+            width: 100vw;
+            max-width: 500px;
             z-index: 10;
             box-shadow: 0 10px 25px -5px rgba(var(--front), 0.1);
             border-bottom-left-radius: 3px;
@@ -155,11 +160,13 @@
                         font-size: 15px;
                         line-height: 1.2;
                         color: var(--frontHex);
+                        transition: color 100ms $ease;
                     }
 
                     a {
                         display: block;
                         padding: 15px 20px;
+                        transition: background-color 100ms $ease;
 
                         p {
                             margin-top: 5px;
@@ -170,6 +177,9 @@
                         }
 
                         &:hover {
+                            text-decoration: none;
+                            background-color: rgba($primary-color, 0.05);
+
                             h3 {
                                 color: $primary-color;
                             }
@@ -194,6 +204,7 @@
         .wrap {
             display: flex;
             position: relative;
+            padding-right: 10px;
 
             .nav-trigger {
                 width: 60px;
@@ -226,15 +237,32 @@
 
                 .page-link {
                     padding: 0 20px;
-                    font-size: 18px;
+                    font-size: 22px;
                     position: relative;
+                }
 
+                .page-link,
+                .nav-list {
                     & + .page-link:before {
                         content: '';
                         display: block;
                         background-color: rgba(var(--front), 0.1);
                         width: 100%;
                         height: 1px;
+                    }
+                }
+
+                .nav-list {
+                    & + .page-link {
+                        margin-top: 14px;
+                    }
+                }
+
+                .nav-list {
+                    a {
+                        line-height: 34px;
+                        padding-left: 10px;
+                        padding-right: 10px;
                     }
                 }
             }
@@ -250,14 +278,17 @@
         }
     }
 
-
     @media screen and (min-width: $on-medium + 1) {
         .wrap {
+            padding-right: 20px;
+
             .site-nav {
                 display: flex;
                 margin-left: auto;
 
                 .page-link {
+                    margin-left: 40px;
+
                     &:after {
                         display: block;
                         content: '';
@@ -270,15 +301,19 @@
                         background-color: $primary-color;
                     }
 
-                    &.-active {
+                    &.active {
                         &:after {
                             opacity: 1;
                         }
                     }
 
-                    & + .page-link {
-                        margin-left: 40px;
+                    &:first-child {
+                        margin-left: 0;
                     }
+                }
+
+                .nav-list {
+                    display: none;
                 }
             }
 

@@ -17,6 +17,10 @@
               {% assign current_page = page.url | replace:'/',' ' | truncatewords: 1,"" %}
               {% assign menu_page = my_page.url | replace:'/',' ' | truncatewords: 1,"" %}
               <a class="page-link{% if current_page == menu_page %} active{% endif %}" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+
+              {%- if my_page.title contains 'Guide' -%}
+                {% include secondary-nav.html %}
+              {% endif %}
             {%- endif -%}
           {% endif %}
         {%- endfor -%}

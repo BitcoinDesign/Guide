@@ -1,0 +1,42 @@
+
+article.guide {
+  position: relative;
+
+  > iframe {
+    display: block;
+  }
+
+  @media screen and (max-width: $on-medium) {
+    padding-left: $spacing-unit / 2;
+    padding-right: $spacing-unit / 2;
+  }
+
+  @media screen and (min-width: $on-medium + 1) {
+    padding-left: $spacing-unit;
+    padding-right: $spacing-unit;
+  }
+
+  & > *.-full-width {
+    @media screen and (max-width: $on-medium) {
+      margin-left: $spacing-unit / 2;
+      margin-right: $spacing-unit / 2;
+    }
+
+    @media screen and (min-width: $on-medium + 1) {
+      margin-left: -$spacing-unit;
+      margin-right: -$spacing-unit;
+    }
+  }
+
+  & > *:not(.-full-width) {
+    @media screen and (max-width: $on-medium) {
+
+    }
+
+    @media screen and (min-width: $on-medium + 1) {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

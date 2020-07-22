@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: guide
 title: Example UI Mocks
 nav_order: 3
 has_children: true

@@ -8,7 +8,7 @@
   background-color: darken($background-color, 3%);
   position: relative;
   z-index: 1;
-  margin-top: $spacing-unit*4;
+  
   .page-link {
       &:not(:last-child) {
         margin-right: 20px;

@@ -9,17 +9,17 @@
 
     <main class="page-content" aria-label="Content">
 
-      <div class="wrapper">
+      <div class="page-content-wrapper">
 
-        {%- if page.path contains 'projects' or page.path contains 'guide' -%}
+        {%- if page.path contains 'guide' -%}
         <div class="side-bar">
-          <nav role="navigation" aria-label="Main" id="secundary-nav" class=" secundary-nav">
-              {% include secundary-nav.html %}
+          <nav role="navigation" aria-label="Main" id="secondary-nav" class="secondary-nav">
+              {% include secondary-nav.html %}
           </nav>
         </div>
         {%- endif -%}
 
-        <div class="main {% if page.path contains 'projects' or page.path contains 'guide' %} sidebar{% endif %}" id="top">
+        <div class="main {% if page.path contains 'guide' %} sidebar{% endif %}" id="top">
 
           {{ content }}
 

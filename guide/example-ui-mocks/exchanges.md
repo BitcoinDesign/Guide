@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: guide
 title: Exchanges
 parent: Example UI Mocks
 nav_order: 2

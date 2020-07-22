@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: guide
 title: Icons
 parent: Drop-in Resources
 nav_order: 2
