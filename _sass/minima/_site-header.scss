@@ -67,12 +67,17 @@
             background-color: transparent;
             padding: 0;
             width: 60px;
+            outline: none;
 
             svg {
                 width: 23px;
                 height: 23px;
                 color: var(--frontHex);
                 transition: color 100ms linear;
+            }
+
+            &:focus {
+                background-color: rgba($primary-color, 0.05);
             }
 
             &:hover {
@@ -215,6 +220,15 @@
                 background-color: transparent;
                 padding: 0;
                 border-width: 0;
+                outline: none;
+
+                &:focus {
+                    background-color: rgba($primary-color, 0.05);
+                }
+
+                &:hover {
+                    color: $primary-color;
+                }
             }
 
             .nav-search {
@@ -273,6 +287,12 @@
                 .site-nav {
                     overflow-y: scroll;
                     height: calc(100vh - 60px);
+                }
+
+                .nav-trigger {                    
+                    svg {
+                        fill: $primary-color;
+                    }
                 }
             }
         }

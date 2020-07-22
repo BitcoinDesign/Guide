@@ -1,4 +1,4 @@
-<figure>
+<figure{% if include.full-width %} class="-full-width"{%- endif -%}>
     <img src="{{ include.image }}" alt="{{ include.alt-text }}}">
     <figcaption>{{ include.caption }}</figcaption>
 </figure>

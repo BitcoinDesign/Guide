@@ -28,6 +28,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
            image = "/assets/images/guide/getting-started-overview.png"
            alt-text = "Alternative text"
            caption = "A caption with a <a href='https://bitcoin.org' target='_blank'>link</a>"
+           full-width = true
 %}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

@@ -6,15 +6,27 @@ var searchOverlayVisible = false;
 var mobileMenuVisible = false;
 
 function toggleMenu() {
-  var header = document.getElementById("site-header");
-
   if(mobileMenuVisible) {
-  	mobileMenuVisible = false;
-  	header.classList.remove('-active');
+    hideMenu();
   } else {
-  	mobileMenuVisible = true;
-  	header.classList.add('-active');
+    showMenu();
   }
+};
+
+function showMenu() {
+  var header = document.getElementById("site-header");
+  mobileMenuVisible = true;
+  header.classList.add('-active');
+
+  if(searchOverlayVisible) {
+    hideSearchOverlay();
+  }
+};
+
+function hideMenu() {
+  var header = document.getElementById("site-header");
+  mobileMenuVisible = false;
+  header.classList.remove('-active');
 };
 
 function toggleSearch() {
@@ -38,6 +50,10 @@ function showSearchOverlay() {
   searchTrigger.classList.add('-active');
 
   document.addEventListener('click', clickOutsideSearchOverlay);
+
+  if(mobileMenuVisible) {
+    hideMenu()
+  }
 }
 
 function hideSearchOverlay() {

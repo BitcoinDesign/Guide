@@ -18,13 +18,13 @@ article.guide {
 
   & > *.-full-width {
     @media screen and (max-width: $on-medium) {
-      margin-left: $spacing-unit / 2;
-      margin-right: $spacing-unit / 2;
+      margin-left: -$spacing-unit / 2;
+      margin-right: -$spacing-unit / 2;
     }
 
     @media screen and (min-width: $on-medium + 1) {
-      margin-left: -$spacing-unit;
-      margin-right: -$spacing-unit;
+      margin-left: - $spacing-unit;
+      margin-right: - $spacing-unit;
     }
   }
 
