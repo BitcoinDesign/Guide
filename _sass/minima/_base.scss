@@ -20,7 +20,7 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-  color: $text-color;
+  color: rgba(var(--front), 0.72);
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
@@ -118,6 +118,7 @@ li {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: $heavy-font-weight;
+  color: var(--frontHex);
 }
 
 

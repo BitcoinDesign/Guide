@@ -16,7 +16,19 @@ article.guide {
     padding-right: $spacing-unit;
   }
 
-  & > *.-full-width {
+  & > .center {
+    @include clearfix;
+  }
+
+  & > .-float-left,
+  & > .center .-float-left {
+    @media screen and (min-width: $on-medium + 1) {
+      float: left;
+      margin-right: 30px;
+    }
+  }
+
+  & > .-full-width {
     @media screen and (max-width: $on-medium) {
       margin-left: -$spacing-unit / 2;
       margin-right: -$spacing-unit / 2;
