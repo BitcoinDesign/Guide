@@ -1,0 +1,19 @@
+
+.side-bar {
+  flex-wrap: nowrap;
+  position: sticky;
+  top: 60px;
+  width: 300px;
+  height: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 30px 40px;
+
+  @include media-query(medium-down) {
+    display: none;
+  }
+
+  @include media-query(large) {
+    width: 228px;
+  }
+}

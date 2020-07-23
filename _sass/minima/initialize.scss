@@ -19,13 +19,10 @@ $table-text-align: left !default;
 // Width of the content area
 $content-width:    1340px !default;
 
-$on-palm:          600px !default;
-$on-laptop:        800px !default;
-
-$on-medium:        $on-palm !default;
-$on-large:         1300px !default;
-
-
+// For media queries.
+$small_width:               640px;
+$large_width:               1024px;
+$huge_width:               1440px;
 
 
 
@@ -182,45 +179,16 @@ $ease  : cubic-bezier(0.5, 0.0, 0.2, 1);
 
 
 
-@mixin clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-
-
-// Use media queries like this:
-// @include media-query($on-palm) {
-//   .wrapper {
-//     padding-right: $spacing-unit / 2;
-//     padding-left: $spacing-unit / 2;
-//   }
-// }
-// Notice the following mixin uses max-width, in a deprecated, desktop-first
-// approach, whereas media queries used elsewhere now use min-width.
-@mixin media-query($device) {
-  @media screen and (max-width: $device) {
-    @content;
-  }
-}
-
-@mixin relative-font-size($ratio) {
-  font-size: #{$ratio}rem;
-}
-
 // Import pre-styling-overrides hook and style-partials.
 @import
-  "minima/custom-variables", // Hook to override predefined variables.
+  "minima/mixins",
   "minima/base",             // Defines element resets.
   "minima/layout",           // Defines structure and style based on CSS selectors.
-  "minima/inter",
-  "minima/site-header",
-  "minima/site-footer",
-  "minima/side-bar",
-  "minima/nav-list",
-  "minima/layout-guide",
-  "minima/search",
-  "minima/custom-styles"     // Hook to override existing styles.
+  "minima/inter",            // Font
+  "minima/site-header",      // The global site header, mobile menu, and search box
+  "minima/site-footer",      // The global site footer
+  "minima/side-bar",         // Side bar for guide pages
+  "minima/nav-list",         // Navigation list for guide page side bar and mobile menu guide sub nav
+  "minima/article",          // Formatting for all article pages (guide, post, page)
+  "minima/search-page"       // Formatting for the search page
 ;

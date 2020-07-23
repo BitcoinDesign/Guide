@@ -10,78 +10,58 @@
   z-index: 1;
   
   .page-link {
-      &:not(:last-child) {
-        margin-right: 20px;
-      }
-      margin-left: auto;
+    margin-left: auto;
+    
+    &:not(:last-child) {
+      margin-right: 20px;
     }
-}
-
-.footer-heading {
-  @include relative-font-size(1.125);
-  margin-bottom: $spacing-unit / 2;
-}
-
-.feed-subscribe .svg-icon {
-  padding: 5px 5px 2px 0
-}
-
-.contact-list,
-.social-media-list {
-  list-style: none;
-  margin-left: 0;
-}
-
-.footer-col-wrapper,
-.social-links {
-  @include relative-font-size(0.9375);
-  color: $brand-color;
-}
-
-.footer-col {
-  margin-bottom: $spacing-unit / 2;
-}
-
-.footer-col-1,
-.footer-col-2 {
-  width: calc(50% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-  width: calc(100% - (#{$spacing-unit} / 2));
-}
-
-@media screen and (min-width: $on-large) {
-  .footer-col-1 {
-    width: calc(35% - (#{$spacing-unit} / 2));
   }
 
-  .footer-col-2 {
-    width: calc(20% - (#{$spacing-unit} / 2));
+  .footer-heading {
+    @include relative-font-size(1.125);
+    margin-bottom: $spacing-unit / 2;
   }
 
-  .footer-col-3 {
-    width: calc(45% - (#{$spacing-unit} / 2));
+  .feed-subscribe {
+    .svg-icon {
+      padding: 5px 5px 2px 0;
+    }
   }
-}
 
-@media screen and (min-width: $on-medium) {
-  .footer-col-wrapper {
-    display: flex
+  .contact-list,
+  .social-media-list {
+    list-style: none;
+    margin-left: 0;
+  }
+
+  .footer-col-wrapper,
+  .social-links {
+    @include relative-font-size(0.9375);
+    color: $brand-color;
   }
 
   .footer-col {
-    width: calc(100% - (#{$spacing-unit} / 2));
-    padding: 0 ($spacing-unit / 2);
+    margin-bottom: $spacing-unit / 2;
+  }
 
-    &:first-child {
-      padding-right: $spacing-unit / 2;
-      padding-left: 0;
+  @include media-query(medium-up) {
+    .footer-col-wrapper {
+      display: flex
     }
 
-    &:last-child {
-      padding-right: 0;
-      padding-left: $spacing-unit / 2;
+    .footer-col {
+      width: calc(100% - (#{$spacing-unit} / 2));
+      padding: 0 ($spacing-unit / 2);
+
+      &:first-child {
+        padding-right: $spacing-unit / 2;
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+        padding-left: $spacing-unit / 2;
+      }
     }
   }
 }

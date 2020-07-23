@@ -219,9 +219,9 @@ pre {
   margin-left: auto;
   padding-right: $spacing-unit / 2;
   padding-left: $spacing-unit / 2;
-  @extend %clearfix;
+  @include clearfix;
 
-  @media screen and (min-width: $on-large) {
+  @include media-query(large) {
     max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
@@ -289,7 +289,7 @@ table {
     border: 1px solid $table-border-color;
   }
 
-  @include media-query($on-laptop) {
+  @include media-query(large) {
     display: block;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;

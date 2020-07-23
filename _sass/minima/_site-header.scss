@@ -203,7 +203,7 @@
         }
     }
 
-    @media screen and (max-width: $on-medium) {
+    @include media-query(medium-down) {
         height: 60px;
 
         .wrap {
@@ -298,7 +298,7 @@
         }
     }
 
-    @media screen and (min-width: $on-medium + 1) {
+    @include media-query(large) {
         .wrap {
             padding-right: 20px;
 
