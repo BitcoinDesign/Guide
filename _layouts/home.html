@@ -1,36 +1,25 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-<div class="home">
-    <h1 class="page-heading">
-      Community based, open-source design for bitcoin products.
-    </h1>
+  {%- include head.html -%}
 
-  {{ content }}
+  <body>
+    <main class="home-minimal-page">
+      <section>
+        <div class="title">
+          <h1>Bitcoin Design</h1>
+        </div>
+        <div class="placeholder"></div>
+      </section>
+      <section>
+        <div class="copy">
+          <p>We are an open community with the goal of helping improve the design of <a href="https://bitcoin.org">bitcoin</a> and its ecosystem.</p>
+        </div>
+        <div class="copy">
+          <p>Join us on <a href="https://bitcoindesign.slack.com">Slack</a>, or see what we are working on on <a href="https://github.com/bitcoindesign">Github</a>. This is a temporary landing page. Stay tuned for updates.</p>
+        </div>
+      </section>
+    </main>
+  </body>
 
-
-
-
-
-  {%- assign nav_pages = site.pages | where_exp:"item", "item.nav_order != nil" | sort:"nav_order" -%}
-  {%- assign default_paths = nav_pages | map: "path" -%}
-  {%- assign page_paths = nav_pages.header_pages | default: default_paths -%}
-  {%- assign titles_size = nav_pages | map: 'title' | join: '' | size -%}
-
-
-  <div class="grid entry-points">
-  {%- for path in page_paths -%}
-    {%- assign my_page = site.pages | where: "path", path | first -%}
-    {% if my_page.main_nav %}
-      {%- if my_page.title -%}
-        <a class="grid-item" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-      {%- endif -%}
-    {% endif %}
-  {%- endfor -%}
-  </div>
-
-
-
-
-</div>
+</html>
