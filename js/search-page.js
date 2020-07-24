@@ -100,12 +100,15 @@ function displaySearchPageResults(searchInput, results) {
 
 document.addEventListener("DOMContentLoaded", function(event) {
   var searchInput = document.getElementById("search-page-input");
-  searchInput.addEventListener('keyup', handleSearchPageInput);
 
-  var searchTerm = getQueryVariable('query');
-  if(searchTerm) {
-    searchInput.setAttribute("value", searchTerm);
+  if(searchInput) {
+    searchInput.addEventListener('keyup', handleSearchPageInput);
 
-    loadSearchPageData();
+    var searchTerm = getQueryVariable('query');
+    if(searchTerm) {
+      searchInput.setAttribute("value", searchTerm);
+
+      loadSearchPageData();
+    }
   }
 });

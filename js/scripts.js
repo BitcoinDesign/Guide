@@ -171,19 +171,20 @@ function toggleSecondaryNav(event) {
   } else {
     navListItem.classList.add('-active');
   }
-
-  console.log('toggleSecondaryNav', navListItem, target);
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {
   var searchInput = document.getElementById("search-input");
-  searchInput.addEventListener('keyup', handleSearchInput);
+  if(searchInput) {
+    searchInput.addEventListener('keyup', handleSearchInput);
+  }
 
   var navTrigger = document.getElementById("nav-trigger");
-  navTrigger.addEventListener('click', toggleMenu);
+  if(navTrigger) {
+    navTrigger.addEventListener('click', toggleMenu);
+  }
 
   var secondaryNavListExpander = document.getElementsByClassName("nav-list-expander");
-  console.log('secondaryNavListExpander', secondaryNavListExpander);
   for(var i=0; i<secondaryNavListExpander.length; i++) {
     secondaryNavListExpander[i].addEventListener('click', toggleSecondaryNav);
   }
