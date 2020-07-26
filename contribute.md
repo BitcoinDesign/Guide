@@ -4,6 +4,7 @@ title: Contribute
 permalink: /contribute/
 main_nav: true
 nav_order: 5
+image: /assets/bitcoin-design-custom-og.png
 
 projets:
   - name: CoinSwap

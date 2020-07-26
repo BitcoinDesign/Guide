@@ -32,7 +32,7 @@ github_repository_url: "https://github.com/pedromvpg/bitcoin-design-guide"
 theme: minima
 plugins:
   - jekyll-feed
-
+  - jekyll-seo-tag
 
 # Minima date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -46,6 +46,23 @@ defaults:
       type: "pages"
     values:
       permalink: ":path/:basename"
+      image: "/assets/bitcoin-design-og.png"
+
+
+twitter:
+  username: Bitcoin Design
+  card: summary
+
+
+social:
+  name: Bitcoin Design
+  links:
+    - https://twitter.com/BitcoinDesign
+    - https://www.facebook.com/BitcoinDesign
+    - https://www.linkedin.com/in/BitcoinDesign
+    - https://github.com/BitcoinDesign
+    - https://bitcoindesign.slack.com/
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
