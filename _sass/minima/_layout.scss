@@ -134,12 +134,12 @@
 .main {
   @include media-query(small) {
     padding-top: $spacing-unit;
-    padding-bottom: $spacing-unit;
+    padding-bottom: $spacing-unit * 2;
   }
 
   @include media-query(medium-up) {
-    padding-top: $spacing-unit * 2;
-    padding-bottom: $spacing-unit * 2;
+    padding-top: $spacing-unit * 4;
+    padding-bottom: $spacing-unit * 6;
   }
 }
 
