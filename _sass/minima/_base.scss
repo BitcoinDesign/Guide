@@ -33,6 +33,8 @@ body {
   flex-direction: column;
   overflow-wrap: break-word;
   letter-spacing: 0.5px;
+  width: 100%;
+  box-sizing:border-box;
 }
 
 
@@ -216,6 +218,7 @@ pre {
  */
 .main:not(.sidebar),
 .wrapper {
+  width: 100%;
   max-width: calc(#{$content-width} - (#{$spacing-unit}));
   margin-right: auto;
   margin-left: auto;
@@ -230,6 +233,9 @@ pre {
   }
 }
 
+.with-sidebar .wrapper {
+  max-width: unset;
+}
 
 
 /**
