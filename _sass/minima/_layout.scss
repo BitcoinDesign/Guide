@@ -30,13 +30,6 @@
     }
   }
 
-  @include media-query(medium-down) {
-    padding: $spacing-unit / 3 0;
-  }
-
-  @include media-query(large) {
-    padding: $spacing-unit / 3 0;
-  }
 }
 
 .page-heading {
