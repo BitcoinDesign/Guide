@@ -302,6 +302,12 @@
         .wrap {
             padding-right: 20px;
 
+            .wrap-inner {
+                width: 100%;
+                display: flex;
+                background-color: $background-color;
+            }
+
             .site-nav {
                 display: flex;
                 margin-left: auto;
