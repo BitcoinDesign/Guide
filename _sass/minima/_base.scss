@@ -216,6 +216,7 @@ pre {
  */
 .main:not(.sidebar),
 .wrapper {
+  max-width: calc(#{$content-width} - (#{$spacing-unit}));
   margin-right: auto;
   margin-left: auto;
   padding-right: $spacing-unit / 2;
@@ -223,6 +224,7 @@ pre {
   @include clearfix;
 
   @include media-query(large) {
+    max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
   }
