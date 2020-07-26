@@ -46,9 +46,9 @@
                 color: var(--frontHex);
                 line-height: 60px;
                 display: block;
-                padding: 0 10px;
                 transition: color 100ms linear;
                 position: relative;
+                font-size: 16px;
 
                 &:hover {
                     color: $primary-color;
@@ -74,6 +74,7 @@
             padding: 0;
             width: 60px;
             outline: none;
+            margin-left: 10px;
 
             svg {
                 width: 23px;
