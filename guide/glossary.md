@@ -12,7 +12,7 @@ nav_order: 2
 
 | Term             | Meaning           | Usage     |
 |:-----------------|:------------------|:----------|
-| Term 1           | Meaning with an [external link](https://bitcoin.org){:target="_blank"}. | Usage with a line <br> break.      |
+| Hot Wallet           | A hot wallet is a wallet which you use for day to day transactions | I always back up the keys for my hot wallet even if it just holds a small amount      |
 | Term 2           | Meaning with an [external link](https://bitcoin.org){:target="_blank"}. | Usage with a line <br> break.      |
 | Term 3           | Meaning with an [external link](https://bitcoin.org){:target="_blank"}. | Usage with a line <br> break.      |
 | Term 4           | Meaning with an [external link](https://bitcoin.org){:target="_blank"}. | Usage with a line <br> break.      |
