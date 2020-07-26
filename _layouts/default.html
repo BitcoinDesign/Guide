@@ -3,7 +3,7 @@
 
   {%- include head.html -%}
 
-  <body>
+  <body class="{% if page.path contains 'guide' %}sidebar{% endif %}">
 
     {%- include svgs.html -%}
     {%- include header.html -%}
@@ -20,7 +20,7 @@
         </div>
         {%- endif -%}
 
-        <div class="main {% if page.path contains 'guide' %} sidebar{% endif %}" id="top">
+        <div class="main {% if page.path contains 'guide' %}sidebar{% endif %}" id="top">
 
           {{ content }}
 
