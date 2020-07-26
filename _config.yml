@@ -63,6 +63,8 @@ social:
     - https://github.com/BitcoinDesign
     - https://bitcoindesign.slack.com/
 
+exclude:
+  - README.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.
