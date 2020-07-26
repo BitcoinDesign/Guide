@@ -3,7 +3,7 @@
  */
 .site-header {
     position: sticky;
-    background-color: var(--backHex);
+    background-color: $background-color;
     border-bottom: 1px solid rgba(var(--front), 0.05);
     top: 0;
     z-index: 11;
