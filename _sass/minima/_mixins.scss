@@ -1,0 +1,69 @@
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Media queries
+
+@mixin media-query($media-query) {
+  @if $media-query == small {
+    @media only screen and (max-width:($small_width - 1)) {
+      @content;
+    }
+  }
+
+  @if $media-query == medium {
+    @media only screen and (min-width:$small_width) and (max-width:($large_width - 1)) {
+      @content;
+    }
+  }
+
+  @if $media-query == medium-up {
+    @media only screen and (min-width:$small_width) {
+      @content;
+    }
+  }
+
+  @if $media-query == medium-down {
+    @media only screen and (max-width:($large_width - 1)) {
+      @content;
+    }
+  }
+
+  @if $media-query == large {
+    @media only screen and (min-width:$large_width) {
+      @content;
+    }
+  }
+
+  @if $media-query == medium-large {
+    @media only screen and (min-width:$small_width) and (max-width:($huge_width - 1)) {
+      @content;
+    }
+  }
+
+  @if $media-query == huge {
+    @media only screen and (min-width:$huge_width) {
+      @content;
+    }
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: #{$ratio}rem;
+}
+
+@mixin responsive($property, $minSize, $maxSize) {
+  $multiplier: ($maxSize - $minSize)/(1280 - 375)*100;
+  $baseSize: $minSize - 375 / 100 * $multiplier + 'px';
+
+  #{$property}: calc(#{$baseSize} + 1vw * #{$multiplier});
+
+  @include media-query(large) {
+    #{$property}: $maxSize+px;
+  }
+}

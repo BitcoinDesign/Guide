@@ -1,0 +1,54 @@
+
+article.guide {
+  position: relative;
+
+  > iframe {
+    display: block;
+  }
+
+  @include media-query(medium-down) {
+    padding-left: $spacing-unit / 2;
+    padding-right: $spacing-unit / 2;
+  }
+
+  @include media-query(large) {
+    padding-left: $spacing-unit;
+    padding-right: $spacing-unit;
+  }
+
+  & > .center {
+    @include clearfix;
+  }
+
+  & > .-float-left,
+  & > .center .-float-left {
+    @include media-query(large) {
+      float: left;
+      margin-right: 30px;
+    }
+  }
+
+  & > .-full-width {
+    @include media-query(medium-down) {
+      margin-left: -$spacing-unit / 2;
+      margin-right: -$spacing-unit / 2;
+    }
+
+    @include media-query(large) {
+      margin-left: - $spacing-unit;
+      margin-right: - $spacing-unit;
+    }
+  }
+
+  & > *:not(.-full-width) {
+    @include media-query(medium-down) {
+
+    }
+
+    @include media-query(large) {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

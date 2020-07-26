@@ -13,73 +13,82 @@
   list-style: none;
 
   .nav-list-item {
-
     position: relative;
     margin: 0;
 
-
     .nav-list-link {
       display: block;
-      min-height: #{$spacing-unit / 5};
-      padding-top: #{$spacing-unit / 5};
-      padding-bottom: #{$spacing-unit / 5};
+      font-size: 15px;
+      line-height: 34px;
+      margin-left: 34px;
 
-
-      &.active {
-        font-weight: 600;
+      &.-active {
+        font-weight: 500;
+        color: $primary-color;
         text-decoration: none;
       }
 
       &:hover,
-      &.active {
+      &.-active {
         text-decoration: none;
       }
     }
 
     .nav-list-expander {
       position: absolute;
-      right: 0;
-      padding-top: #{$spacing-unit / 4};
-      padding-right: #{$spacing-unit / 2};
-      padding-bottom: #{$spacing-unit / 4};
-      padding-left: #{$spacing-unit / 2};
-      color: $link-base-color;
-      width: #{$spacing-unit / 2};
-      height: #{$spacing-unit / 2};
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 34px;
+      height: 34px;
 
-      @include media-query($on-laptop) {
-        padding-top: #{$spacing-unit / 4};
-        padding-right: #{$spacing-unit / 4};
-        padding-bottom: #{$spacing-unit / 4};
-        padding-left: #{$spacing-unit / 4};
+      svg {
+        width: 15px;
+        height: 15px;
+        color: $link-base-color;
+        transition: all 150ms $ease;
       }
 
       &:hover {
-        background-color: rgba($brand-color, 0.1);
+        background-color: rgba($primary-color, 0.1);
+
+        svg {
+          color: $primary-color;
+        }
+      }
+
+      & + .nav-list-link {
+        
       }
     }
 
     > .nav-list {
       display: none;
-      padding-left: #{$spacing-unit / 2};
       list-style: none;
+      padding-left: 15px;
 
       .nav-list-item {
         position: relative;
 
         .nav-list-link {
-          color: $brand-color;
+          // color: $primary-color;
         }
 
         .nav-list-expander {
-          color: $brand-color;
+          // color: $primary-color;
         }
       }
     }
 
-    &.active {
+    &.-active {
+      > .nav-list-link {
+          // color: $primary-color;
+      }
+
       > .nav-list-expander svg {
           transform: rotate(90deg);
+          color: $primary-color;
       }
 
       > .nav-list {

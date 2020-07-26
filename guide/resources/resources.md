@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: guide
 title: Drop-in Resources
 nav_order: 4
 has_children: true
