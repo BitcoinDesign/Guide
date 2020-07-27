@@ -34,7 +34,7 @@
 
 .page-heading {
   max-width: 1000px;
-  margin: $spacing-unit*4 0;
+  margin: $spacing-unit*2 0 $spacing-unit/2 0;
   @include relative-font-size(4);
   line-height:1em;
 
@@ -44,6 +44,15 @@
 }
 
 
+.hero {
+  background-image: url('/assets/images/home/hero.png');
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
 
 
 .grid {
@@ -58,11 +67,16 @@
 
 
 .grid.entry-points {
-  margin: $spacing-unit*4 0;
   .grid-item {
-    background: #ffb900;
+    background: #f7f7f7;
     padding: $spacing-unit;
     padding-top: calc(45% - (#{$spacing-unit} / 2));
+  }
+  h2 {
+    margin: 0;
+  }
+  a:hover{
+    text-decoration: none;
   }
 }
 

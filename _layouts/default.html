@@ -10,6 +10,19 @@
 
     <main class="page-content" aria-label="Content">
 
+      {% if page.url == '/home' %}
+      <div class="hero">
+        <div class="main">
+          <h1 class="page-heading">
+            Design Bitcoin <br>for Everyone
+          </h1>
+          <h3>
+            Open-source design for bitcoin products.
+          </h3>
+        </div>
+      </div>
+      {% endif %}
+
       <div class="page-content-wrapper">
 
         {%- if page.path contains 'guide' -%}

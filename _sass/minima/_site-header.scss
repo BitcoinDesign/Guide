@@ -12,7 +12,7 @@
         position: relative;
         display: flex;
         justify-content: space-between;
-        padding-left: 20px;
+        padding-left: 40px;
 
         .wrap-inner {
             width: 100%;
@@ -21,11 +21,10 @@
         }
 
         .site-title {
-            @include relative-font-size(1.825);
+            @include relative-font-size(1.25);
             font-weight: $heavy-font-weight;
             margin-bottom: 0;
-            font-size: 26px;
-            line-height: 60px;
+            line-height: 80px;
             letter-spacing: -0.5px;
             color: var(--frontHex);
             transition: color 100ms $ease;
@@ -44,7 +43,7 @@
         .site-nav {
             .page-link {
                 color: var(--frontHex);
-                line-height: 60px;
+                line-height: 80px;
                 display: block;
                 transition: color 100ms linear;
                 position: relative;
@@ -77,8 +76,8 @@
             margin-left: 10px;
 
             svg {
-                width: 23px;
-                height: 23px;
+                width: 20px;
+                height: 20px;
                 color: var(--frontHex);
                 transition: color 100ms linear;
             }
@@ -308,7 +307,7 @@
 
     @include media-query(large) {
         .wrap {
-            padding-right: 20px;
+            padding-right: 30px;
 
             .site-nav {
                 display: flex;
