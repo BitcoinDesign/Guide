@@ -28,3 +28,22 @@ layout: default
 
 
 </div>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("site-header").classList.add("scroll-top");
+  });
+  window.addEventListener("scroll", function() {
+      var st = window.pageYOffset || document.documentElement.scrollTop;
+      if (st > 20) {
+        document.getElementById("site-header").classList.remove("scroll-top");
+      } else {
+        document.getElementById("site-header").classList.add("scroll-top");
+      }
+      st <= 0 ? 0 : st;
+    },
+    false
+  );
+</script>

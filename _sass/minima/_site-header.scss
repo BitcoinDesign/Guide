@@ -355,3 +355,17 @@
         }
     }
 }
+
+
+.site-header, .wrap-inner {
+  transition: all 300ms ease;
+}
+.site-header.scroll-top {
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+  .wrap {
+      .wrap-inner {
+          background-color: transparent;
+      }
+  }
+}
