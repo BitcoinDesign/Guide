@@ -222,6 +222,7 @@ pre {
 .main:not(.sidebar),
 .wrapper {
   width: 100%;
+  box-sizing: border-box;
   max-width: calc(#{$content-width} - (#{$spacing-unit}));
   margin-right: auto;
   margin-left: auto;

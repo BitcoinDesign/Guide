@@ -47,11 +47,17 @@
 .hero {
   background-image: url('/assets/images/home/hero.png');
   background-size: cover;
+  background-position: center;
   width: 100%;
-  height: 500px;
   top: 0;
   left: 0;
   z-index: -10;
+  margin-top: -82px;
+  padding-top: 82px;
+  @include media-query(small) {
+    margin-top: -50px;
+    padding-top: 50px;
+  }
 }
 
 
@@ -59,6 +65,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
     grid-gap: 4rem 4rem;
+    @include media-query(small) {
+      grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+      grid-gap: 1rem 1rem;
+    }
 }
 
 .grid-item {
@@ -71,6 +81,10 @@
     background: #f7f7f7;
     padding: $spacing-unit;
     padding-top: calc(45% - (#{$spacing-unit} / 2));
+    @include media-query(small) {
+      padding: $spacing-unit / 3;
+      padding-top: calc(45% - (#{$spacing-unit} / 3));
+    }
   }
   h2 {
     margin: 0;
