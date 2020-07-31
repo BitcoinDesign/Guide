@@ -37,6 +37,7 @@
   margin: $spacing-unit*2 0 $spacing-unit/2 0;
   @include relative-font-size(4);
   line-height:1em;
+  font-weight:600;
 
   @include media-query(medium-down) {
      @include relative-font-size(3);
