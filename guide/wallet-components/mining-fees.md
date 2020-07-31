@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Mining Fees
-parent: Example UI Mocks
+parent: Wallet Components
 nav_order: 5
 ---
 

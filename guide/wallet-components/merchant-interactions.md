@@ -1,11 +1,11 @@
 ---
 layout: guide
-title: Output Selection
-parent: Example UI Mocks
-nav_order: 2
+title: Merchant Interactions
+parent: Wallet Components
+nav_order: 6
 ---
 
-# Output Selection
+# Merchant Interactions
 {: .no_toc }
 
 

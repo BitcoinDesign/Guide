@@ -1,11 +1,11 @@
 ---
 layout: guide
-title: Example UI Mocks
+title: Wallet Components
 nav_order: 3
 has_children: true
-permalink: /guide/example-ui-mocks/
+permalink: /guide/wallet-components/
 ---
 
-# Example UI Mocks
+# Wallet Components
 
 Semper quis lectus nulla at volutpat diam. Sit amet est placerat in egestas erat imperdiet. Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula.

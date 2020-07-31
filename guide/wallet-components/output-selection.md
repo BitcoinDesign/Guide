@@ -1,11 +1,11 @@
 ---
 layout: guide
-title: Wallets
-parent: Example UI Mocks
+title: Output Selection
+parent: Wallet Components
 nav_order: 2
 ---
 
-# Wallets
+# Output Selection
 {: .no_toc }
 
 
