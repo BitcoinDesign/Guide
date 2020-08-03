@@ -40,6 +40,18 @@ article.guide {
     }
   }
 
+  & > iframe.-full-width {
+    @include media-query(medium-down) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    @include media-query(large) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
   & > *:not(.-full-width) {
     @include media-query(medium-down) {
 
