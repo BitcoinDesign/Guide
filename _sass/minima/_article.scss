@@ -67,4 +67,21 @@ article.guide {
   li {
       margin-left: 18px;
   }
+
+  figure, iframe {
+
+    margin-top: $spacing-unit;
+    margin-bottom: $spacing-unit;
+
+    @include media-query(medium-down) {
+      margin-top: $spacing-unit * 2;
+      margin-bottom: $spacing-unit * 2;
+    }
+
+    @include media-query(large) {
+      margin-top: $spacing-unit * 3;
+      margin-bottom: $spacing-unit * 3;
+    }
+
+  }
 }
