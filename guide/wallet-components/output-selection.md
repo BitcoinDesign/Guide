@@ -14,9 +14,19 @@ Allowing the selection of which outputs to spend can offer the user the ability 
 
 
 {% include image.html
+   image = "/assets/images/guide/wallet-components/output-selection/ouput-selection-bitcoin-core.png"
+   alt-text = "Alternative text"
+   caption = "Bitcoin Core v0.17.0"
+   layout = "full-width"
+   width = 1280
+   height = 514
+%}
+
+
+{% include image.html
    image = "/assets/images/guide/wallet-components/output-selection/ouput-selection-btcpay.png"
    alt-text = "Alternative text"
-   caption = "BTCPay Server wallet"
+   caption = "BTCPay Server"
    layout = "full-width"
    width = 1280
    height = 514
@@ -26,7 +36,7 @@ Allowing the selection of which outputs to spend can offer the user the ability 
 {% include image.html
    image = "/assets/images/guide/wallet-components/output-selection/ouput-selection-wasabi.png"
    alt-text = "Alternative text"
-   caption = "Wasabi wallet"
+   caption = "Wasabi"
    width = 800
    height = 400
 %}
@@ -35,7 +45,7 @@ Allowing the selection of which outputs to spend can offer the user the ability 
 {% include image.html
    image = "/assets/images/guide/wallet-components/output-selection/ouput-selection-bisq.png"
    alt-text = "Alternative text"
-   caption = "Bisq wallet"
+   caption = "Bisq v1.3.5"
    width = 800
    height = 400
 %}
