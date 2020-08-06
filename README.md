@@ -8,14 +8,11 @@ Project Intro
 </p>
 
 
-
 This is a project overview of a design guide for bitcoin with early thoughts on what it could be.
 
 Like a travel guide, it provides an introduction to a “foreign place”, shows you the highlights and tells you some of the best stories. It provides facts and maps to figure out how to get around, ideas for tours and things to do. Whether you end up taking the official museum tour, clubbing all night or go on shopping sprees is still your choice. Note that these are guides, not mandates. Just like in a foreign city, you can choose to go off the path, and forge a new direction. Others may just follow in the future.
 
-Comments on a previous version have been reviewed and used to improve this doc where relevant.
-
-A lot of discussion about it is taking place in the [bitcoin design Slack](https://bitcoindesign.slack.com/join/shared_invite/zt-fljgbpg0-wHr_thYUYWh5105UnGTWHw#/) (#bitcoin-design-guide).
+Discussion about it is taking place in the [bitcoin design Slack](https://bitcoindesign.slack.com/join/shared_invite/zt-fljgbpg0-wHr_thYUYWh5105UnGTWHw#/) (#bitcoin-design-guide).
 
 We welcome feedback.
 
@@ -32,9 +29,7 @@ We welcome feedback.
 
 ## Objective
 
-_ “For bitcoin to become a currency with widespread adoption and daily use.”_
-
-The Bitcoin Design Guide aims to be a free open-source community resource that will help designers, developers and others working on non-custodial bitcoin-products to create better experiences, faster. We hope that over time it will be relevant for all sorts of products, including consumer wallets, merchant interactions, exchanges and more. Better products and experiences should ultimately make it more appealing for anyone to own and use bitcoin.
+The Bitcoin Design Guide is a free open-source community resource that helps designers, developers and others working on non-custodial bitcoin-products to create better experiences, faster. We hope that, over time, it will cover all relevant types of products, including consumer wallets, merchant interactions, exchanges and more. Better products and experiences should ultimately make it more appealing for anyone to own and use bitcoin.
 
 An equally important goal is that this process nurtures an open-source bitcoin design community that can carry this, and other projects forward longer term. The [bitcoin design Slack](https://bitcoindesign.slack.com/join/shared_invite/zt-fljgbpg0-wHr_thYUYWh5105UnGTWHw#/) mentioned above, and created after the first version of this doc, is the first step in this direction.
 
@@ -45,45 +40,37 @@ The goal is for the process of creating the guide to be as open and decentralize
 
 **Phase 1 - facilitate and initiate collaborative work**
 
-**DONE **Initial conversations with many existing contributors and members of the bitcoin design community.
+**DONE** Initial conversations with many existing contributors and members of the bitcoin design community.
 
-**DONE **Learn about the main UX issues that need tackling, what a guide could help with, and thoughts about how to foster a long term community. Via early conversations and feedback on this doc.
+**DONE** Learn about the main UX issues that need tackling, what a guide could help with, and thoughts about how to foster a long term community. Via early conversations and feedback on this doc.
 
-**DONE **Facilitate communication amongst bitcoin designers by creating a [forum](https://bitcoindesign.slack.com/join/shared_invite/zt-fljgbpg0-wHr_thYUYWh5105UnGTWHw#/).
+**DONE** Facilitate communication amongst bitcoin designers by creating a [forum](https://bitcoindesign.slack.com/join/shared_invite/zt-fljgbpg0-wHr_thYUYWh5105UnGTWHw#/).
 
-**DONE **Start regular video calls. (First call held 9am PT July 1, second call planned for July 22)
+**DONE** Start regular video calls. (First call held 9am PT July 1, second call held on July 22, third call planned for August 12)
 
-Create a lightweight project list for the community to be aware of what is being worked on. (Github Projects proposed, temporary doc )
+Create a lightweight project list for the community to be aware of what is being worked on. (Github Projects proposed, temporary doc, etc.)
 
 **Phase 2 - create content domains, repositories and draft first chapters**
 
 Start work on the first batch of chapters for the guide.
 
+*   [Cristoph Ono](https://github.com/GBKS) working on ‘Getting started guide’
+*   [Daniel Nordh](https://github.com/danielnordh) working on ‘Private key management’
 
+Create a website and other resources for the bitcoin design community.
 
-*   Cristoph Ono working on ‘Getting started guide’
-*   Daniel Nordh working on ‘Private key management’
-
-Create a website and other resources for the bitcoin design community
-
-
-
-*   Domain name
-*   Github handle
-*   Twitter handle (less urgent)
-*   Initial holding page / content
-*   Propose governance model
-
+*  **DONE** [Domain name](https://github.com/BitcoinDesign/Guide/issues/9) - bitcoin.design
+*  Github handle
+*  Twitter handle (less urgent)
+*  [Initial holding page / content](https://github.com/BitcoinDesign/Guide/issues/10)
+*  Propose governance model
 Find community members to take on other parts of the guide content.
-
 Form working groups around key topics in the guide.
 
 **Phase 3 - publish guide mvp**
 
 Complete first chapters of guide on the website.
-
-Guide’ is announced to be usable in its first form. Contribution and governance model is clarified. Work continues by community, grants etc.
-
+Guide is announced to be usable in its first form. Contribution and governance model is clarified. Work continues by community, grants etc.
 Consider publishing a regular/monthly newsletter with updates from the community / relevant news for the bitcoin design community.
 
 
