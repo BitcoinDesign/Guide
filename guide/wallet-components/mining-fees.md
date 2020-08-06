@@ -2,7 +2,7 @@
 layout: guide
 title: Mining Fees
 parent: Wallet Components
-nav_order: 5
+nav_order: 2
 ---
 
 # Mining Fees

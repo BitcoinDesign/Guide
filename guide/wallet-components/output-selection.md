@@ -2,7 +2,7 @@
 layout: guide
 title: Output Selection
 parent: Wallet Components
-nav_order: 2
+nav_order: 3
 ---
 
 # Output Selection

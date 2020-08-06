@@ -2,7 +2,7 @@
 layout: guide
 title: Transaction History
 parent: Wallet Components
-nav_order: 6
+nav_order: 2
 ---
 
 # Transaction History
