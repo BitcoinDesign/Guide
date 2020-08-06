@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Bitcoin Design Guide
 Project Intro
 
@@ -28,7 +29,6 @@ We welcome feedback.
 - [Run Locally](#run-locally)
 
 ---
-
 
 
 ## Objective
@@ -213,3 +213,6 @@ To run on gh-pages, uncomment the base_url variable on _config.yml
 ```
 baseurl: "bitcoin-design-guide"
 ```
+=======
+# Guide
+>>>>>>> Create README.md
