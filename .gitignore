@@ -3,5 +3,16 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
-_sass/.DS_Store
-_sass/.DS_Store
+
+# OS GENERATED
+.DS_Store
+._*
+._hidden
+.Spotlight-V100
+.Trashes
+Thumbs.db
+*~
+
+# vi temp
+*.swp
+*.swo
