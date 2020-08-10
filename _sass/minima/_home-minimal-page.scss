@@ -106,6 +106,7 @@
         }
     }
 
+    // Medium to large phones and tablets.
     @include media-query(medium-down) {
         height: 100vh;
         flex-direction: column;
@@ -158,6 +159,31 @@
         }
     }
 
+    // For iPhone SE.
+    @include media-query(tiny) {
+        section {
+            &:first-child {
+                h1 {
+                    font-size: 32px;
+
+                    &:before {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+            }
+
+            &:last-child {
+                .copy {
+                    p {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    // Laptops and desktops.
     @include media-query(large) {
         flex-direction: column;
         justify-content: center;
@@ -184,9 +210,5 @@
                 max-width: 570px;
             }
         }
-    }
-
-    @include media-query(small) {
-        
     }
 }
