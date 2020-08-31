@@ -8,6 +8,8 @@ permalink: /getting-started/common-user-flows/
 
 # Common user flows
 
+<!--
+
 ## Software download & installation
 This step is many times overlooked, but before anyone uses your product, they first need to find it, get interested in it and choose to install it.
 
@@ -32,3 +34,5 @@ I is important here to distinguish between wallet software, and the wallet that 
 
 ## Resolving a problem
 This can be a tricky experience to address. For one, non-custodial cryptocurrency management by nature places a lot of responsibility on the user. This also puts much of the burden of solving problems on users. The second aspect is that open-source software typically relies on online documentation and forums for "customer service". Ideally, software helps prevent errors as much as possible through techniques like validating user input and requiring extra approvals for impactful actions. When this is not possible though, and errors do occur, they should be communicated as clearly as possible.
+
+-->

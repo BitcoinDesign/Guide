@@ -8,6 +8,8 @@ permalink: /getting-started/technology-primer/
 
 # Bitcoin technology primer
 
+<!--
+
 It can take many years to understand bitcoin in every detail, but luckily you don’t need to know everything to design great products. Let’s take a look at the most important aspects of the technology behind bitcoin, with an eye towards the basics needed to design bitcoin products.
 
 The most fundamental read is the Bitcoin White Paper. Published on October 31, 2008 by the mysterious Satoshi Nakamoto, it layous the fundamental system design in only 9 short pages.
@@ -24,3 +26,5 @@ That’s where wallets come in. A Bitcoin wallet is typically based on a so-call
 This mechanism of generating a piece of information from another one, where one can be shared and the other one is kept private is known as public-key cryptography. While there are many other cryptographic techniques used in Bitcoin, this is one that you should understand well.
 
 So you may ask how Bitcoin are created? This involves a process we know as mining. Miners are computers that help process transactions. For this effort, which requires huge amounts of computing power, they are rewarded with freshly minted Bitcoin. At the moment, 6.25 new Bitcoin are created around every 10 minutes, which is an annual inflation rate of 1.86%. The creation of Bitcoin is tightly controlled via code because money only has value if it is scarce.
+
+-->

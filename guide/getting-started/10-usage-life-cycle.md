@@ -8,6 +8,8 @@ permalink: /getting-started/usage-life-cycle/
 
 # Usage life cycle
 
+<!--
+
 This series of steps describes the change in familiarity of a (potential) user for your product - from somebody who has never heard of it all the way to power user. It is helpful to think through each phase and consider what your users needs are, what their understanding of bitcoin and your product likely is, and how you can help them successfully navigate.
 
 ## Unaware
@@ -27,3 +29,5 @@ Through repeat use, the user becomes more familiar with the service and starts u
 
 ## Passionate use
 These are expert users with high expectations. They will express strong wishes, provide feedback and also spread the word to potential new users.
+
+-->
