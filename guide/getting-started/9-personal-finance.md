@@ -55,7 +55,7 @@ For small, frequent payments we generally accept more risk in exchange for conve
    alt-text = "Mobile and desktop wallets"
    caption = "For daily spending, users may use a dedicated mobile wallet they regularly refill from a primary wallet that is better secured."
    width = 1600
-   height = 815
+   height = 800
 %}
 
 Most stores (online and offline) don't accept bitcoin, so buying coffee is not a very realistic use case for most of us. When that time arrives, users who already pay via smartphone app or NFC-enabled credit card can easily switch to bitcoin wallet apps. A common scenario could be that users create dedicated mobile bitcoin (and lightning) wallets for on-the-go payments, in addition to having separate wallets for larger amounts. Similar to having a bank account and regularly taking out cash at an ATM, users could refill their mobile wallets. From a security perspective, the mobile wallet may use seedless private key storage, meaning that private keys are hidden from the user and stored on the device with an encrypted backup on a cloud storage provider. The primary wallet however would be more strongly secured with a hardware wallet or even a multi signature configuration. This would mirror the primary focus of convenience over security. Beyond key management, payment interactions could be identical to what users are already familiar with.
@@ -85,7 +85,7 @@ The amounts involved in these transactions are higher and therefore require bett
    image = "/assets/images/guide/getting-started/monthly-budget-wallet-setup.png"
    alt-text = "Alternative text"
    width = 1600
-   height = 815
+   height = 800
 %}
 
 A solution for bitcoin could be a hardware wallet with an accompanying desktop application. While keys are stored and transactions get signed on secure hardware, users can still enjoy the convenience of a desktop application. This avoids or reduces some of the risks involved with the mobile wallet configuration described in the first category, while adding a small amount of friction that is acceptable for transactions that occur less frequently.
@@ -112,7 +112,7 @@ In traditional finance, this money might get parked in a high-interest savings a
    image = "/assets/images/guide/getting-started/savings-wallet-setup.png"
    alt-text = "Alternative text"
    width = 1600
-   height = 1065
+   height = 800
 %}
 
 A bitcoiner may want to set up a cold storage multi signature wallet. In this type of setup, there are multiple applications or hardware devices required to make transactions. So even if one device gets stolen or is locked, the rightful owner still has access to all their funds. Since transactions are infrequent, the balance is tipped towards security over convenience.
@@ -147,16 +147,16 @@ A sinking fund is a way to systematically set money aside for a planned large ex
 
 HODLing is more than a meme, as there are many bitcoiners who create highly secure setups to store their savings away for many years.
 
-For example, [Glacier Protocol](https://glacierprotocol.org){:target="_blank"} is highly secure, but also requires about $600 in new equipment and takes 8 hours to set up. While it is designed as a step-by-step guide, some areas are quite complex, all in the name of  reducing and avoiding different types of risk.
+For example, [Glacier Protocol](https://glacierprotocol.org){:target="_blank"} is highly secure, but also requires about $600 in new equipment and takes 8 hours to set up. While it is designed as a step-by-step guide, some areas are quite complex, all in the name of reducing and avoiding different types of risk. It is an extreme example, but it illustrates well how complex the topic of practicing good security is.
 
 </div>
 
 {% include image.html
    image = "/assets/images/guide/getting-started/glacier-protocol-wallet-setup.png"
    alt-text = "Alternative text"
-   caption="The Glacier prototcol requires a complex hardware setup that involves 6 different computers, 6 USB memory sticks, a smartphone, and more."
+   caption="The Glacier prototcol requires a complex hardware setup that involves 6 different computers, 6 USB drives, a smartphone, printer and various other equipment."
    width = 1600
-   height = 732
+   height = 800
 %}
 
 Many people don’t personally custody their long-term savings. They rely on banks and financial service providers to provide security and also to help manage and invest those savings. Savings accounts and related products may also incentivize customers with low interest rates that may or may not be high enough to keep up with inflation.
