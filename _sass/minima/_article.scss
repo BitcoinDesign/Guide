@@ -68,19 +68,18 @@ article.guide {
       margin-left: 18px;
   }
 
-  figure, iframe {
-
+  figure:not(.-float-left), iframe {
     margin-top: $spacing-unit;
     margin-bottom: $spacing-unit;
 
     @include media-query(medium-down) {
-      margin-top: $spacing-unit * 2;
-      margin-bottom: $spacing-unit * 2;
+      margin-top: $spacing-unit * 0.5;
+      margin-bottom: $spacing-unit * 0.5;
     }
 
     @include media-query(large) {
-      margin-top: $spacing-unit * 3;
-      margin-bottom: $spacing-unit * 3;
+      margin-top: $spacing-unit * 1;
+      margin-bottom: $spacing-unit * 1;
     }
 
   }

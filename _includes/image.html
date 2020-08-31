@@ -1,4 +1,9 @@
 <figure{% if include.layout %} class="-{{ include.layout }}"{%- endif -%}>
-    <img src="{{ include.image | relative_url }}" alt="{{ include.alt-text }}}">
+    <img
+    	src="{{ include.image | relative_url }}" 
+    	alt="{{ include.alt-text }}" 
+    	width="{{ include.width }}" 
+    	height="{{ include.height }}"
+    >
     <figcaption class="small">{{ include.caption }}</figcaption>
 </figure>
