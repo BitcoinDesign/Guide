@@ -59,7 +59,7 @@ Start work on the first batch of chapters for the guide.
 
 Create a website and other resources for the bitcoin design community.
 
-*  Agree on [Domain name](https://github.com/BitcoinDesign/Guide/issues/9) - bitcoin.design discussion
+*  Agree on domain name - [bitcoin.design discussion](https://github.com/BitcoinDesign/Guide/issues/9)
 *  Github handle
 *  Twitter handle (less urgent)
 *  [Initial holding page / content](https://github.com/BitcoinDesign/Guide/issues/10)
