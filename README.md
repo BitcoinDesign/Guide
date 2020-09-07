@@ -46,7 +46,7 @@ The goal is for the process of creating the guide to be as open and decentralize
 
 **DONE** Facilitate communication amongst bitcoin designers by creating a [forum](https://bitcoindesign.slack.com/join/shared_invite/zt-fljgbpg0-wHr_thYUYWh5105UnGTWHw#/).
 
-**DONE** Start regular video calls. (First call held 9am PT July 1, second call held on July 22, third call planned for August 12)
+**DONE** Start regular video calls. (First call held 9am PT July 1, information on past and upcoming calls can be found [here]( https://github.com/BitcoinDesign/Meta/issues).
 
 Create a lightweight project list for the community to be aware of what is being worked on. (Github Projects proposed, temporary doc, etc.)
 
