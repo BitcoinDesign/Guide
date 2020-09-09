@@ -1,9 +1,76 @@
 ---
 layout: guide
-title: X Hardware overview
+title: Hardware overview
 nav_order: 14
 parent: Getting started
 permalink: /getting-started/hardware/
 ---
 
+<!--
+
+Editor's notes
+
+This page provides an overview of the different types of hardware that interact with the bitcoin network.
+
+-->
+
 # Hardware overview
+
+Generally, any hardware with an internet connection can interact with the bitcoin network. While our personal computers and smartphones work great for general wallet management and transactions, a few types of dedicated hardware have been created that are optimized for the more unique aspects of how bitcoin works.
+
+## Recovery phrase storage
+
+Simple, cheap and robust storage solutions for recovery phrases come in modest forms. [Seedplate](https://bitcoinseedbackup.com/), for example, is a metal plate in which users can etch the words of their recovery phrase for long-term offline storage. [CardWallet](https://www.cardwallet.com), in comparison, is the size of a credit card and comes pre-loaded with a recovery phrase (hidden behind a security seal) and a matching bitcoin address. And if you like an even simpler solution, a piece of paper will do. Although paper is not as durable and may be easy to loose, it is one of the strengths of Bitcoin that such simple solutions are possible.
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/hardware-seed-storage.png"
+   alt-text = "Examples of hardware wallets"
+   width = 1600
+   height = 800
+%}
+
+## Wallets
+
+You may already be familar with key fobs from your bank or work. They are small devices with specific built-in authentication that is used to control and secure access to a computer system. Key fobs are not connected to the internet or any other network, so they cannot easily be hacked without physical access.
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/hardware-wallets.png"
+   alt-text = "Examples of hardware wallets"
+   width = 1600
+   height = 800
+%}
+
+Hardware wallets for bitcoin play a similar role but with several differences. Similar to key fobs, they securely store an authentication mechanism and isolate it from other devices and networks. In the case of bitcoin, these are the seed, associated keys and all functions that require direct interaction with them.
+
+Because hardware wallets are so optimized for this specific uses case, they have very small screens and limited input options. Most interactions with them happen via desktop software that is also provided by the manufacturer. So users perform most wallet interactions on their desktops, and the application sends only specific requests to the hardware wallet to verify or sign data. This provides a great balance of security and convenience, and keeps hardware wallets generally affordable for most use cases.
+
+## Nodes
+
+Thousands of computers participate in the Bitcoin network. They are called nodes and continuously exchange, verify and compare transaction data. Running your own node, instead of relying on a third-party node, has the benefit that transactions are getting validated by your own personal device. Nodes also improve privacy and help secure the network. Several DIY and consumer hardware products have been created to make it easy to run your own node on a dedicated device.
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/node-hardware.png"
+   alt-text = "Examples of hardware wallets"
+   width = 1600
+   height = 800
+%}
+
+Dedicated node hardware is particularly relevant for heavy users of the Lightning network. While a bitcoin node can be turned off and on and can easily catch up with network activity, Lightning nodes need to be online at all times in order to maintain payment channels with other nodes. Smartphones are typically also online 24/7 but are not suited well for this task due to large amounts of data transfere and storage capacity requirements.
+
+While plug-and-play hardware nodes can solve various problems for bitcoin users, they have not seen wide-spread adoption as commercial products.
+
+## Miners
+
+Bitcoin mining has turned into a professional undertaking years ago. Today, dedicated hardware (so-called ASICS, or application-specific integrated circuits) is being developed that is optimized to continuously execute the bitcoin hashing algorithm over and over until an acceptable hash is found. A modern miner (in 2020) can generate around 14,000,000,000,000 hashes per second. The more hashes generated, the higher the chance of "finding" a new block and receiving freshly minted bitcoin as a reward.
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/mining-hardware.png"
+   alt-text = "Examples of hardware wallets"
+   width = 1600
+   height = 800
+%}
+
+Outside of purchasing hardware, the main cost of mining is electricity. That's why mining facilities can be found all over the world wherever electricity is abundant and cheap, whether it is in Iceland for geothermal energy or in China using exceess hydroelectricity.
+
+
+
