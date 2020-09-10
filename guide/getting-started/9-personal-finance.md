@@ -173,7 +173,7 @@ Many people don’t personally custody their long-term savings. They rely on ban
    layout = "float-left"
 %}
 
-Investing is about putting saved money to work in the hope that it increases in value, from retirement accounts to stock investing and real estate ownership. This necessarily requires the involvement of third parties, which goes beyond the current  focus of this guide.
+Investing is about putting saved money to work in the hope that it increases in value, from retirement accounts to stock investing and real estate ownership. This necessarily requires the involvement of third parties, which goes beyond the current focus of this guide.
 
 </div>
 
