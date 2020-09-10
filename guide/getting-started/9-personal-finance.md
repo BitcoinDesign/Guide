@@ -72,7 +72,7 @@ Most stores (online and offline) don't accept bitcoin, so buying coffee is not a
    layout = "float-left"
 %}
 
-Rent, utilities, subscriptions, car payments, grocery bills and similar expenses need to be paid regularly on a weekly or monthly basis. Compared to discretionary day-to-day spending, these payments are higher in value, less frequent and play a more important role in our lives. We can got without an extra coffee in the afternoon, but not paying rent or water bills is typically not an option. 
+Rent, utilities, subscriptions, car payments, grocery bills and similar expenses need to be paid regularly on a weekly or monthly basis. Compared to discretionary day-to-day spending, these payments are higher in value, less frequent and play a more important role in our lives. We can go without an extra coffee in the afternoon, but not paying rent or water bills is typically not an option. 
 
 </div>
 
