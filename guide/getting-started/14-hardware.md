@@ -55,7 +55,7 @@ Thousands of computers participate in the Bitcoin network. They are called nodes
    height = 800
 %}
 
-Dedicated node hardware is particularly relevant for heavy users of the Lightning network. While a bitcoin node can be turned off and on and can easily catch up with network activity, Lightning nodes need to be online at all times in order to maintain payment channels with other nodes. Smartphones are typically also online 24/7 but are not suited well for this task due to large amounts of data transfere and storage capacity requirements.
+Dedicated node hardware is particularly relevant for heavy users of the Lightning network. While a bitcoin node can be turned off and on and can easily catch up with network activity, Lightning nodes need to be online at all times in order to maintain payment channels with other nodes. Smartphones are typically also online 24/7 but are not suited well for this task due to large amounts of data transfer and storage capacity requirements.
 
 While plug-and-play hardware nodes can solve various problems for bitcoin users, they have not seen wide-spread adoption as commercial products.
 
@@ -71,6 +71,5 @@ Bitcoin mining has turned into a professional undertaking years ago. Today, dedi
 %}
 
 Outside of purchasing hardware, the main cost of mining is electricity. That's why mining facilities can be found all over the world wherever electricity is abundant and cheap, whether it is in Iceland for geothermal energy or in China using exceess hydroelectricity.
-
 
 
