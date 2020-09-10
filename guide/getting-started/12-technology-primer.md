@@ -12,7 +12,7 @@ permalink: /getting-started/technology-primer/
 
 It can take many years to understand bitcoin in every detail, but luckily you don’t need to know everything to design great products. Let’s take a look at the most important aspects of the technology behind bitcoin, with an eye towards the basics needed to design bitcoin products.
 
-The most fundamental read is the Bitcoin White Paper. Published on October 31, 2008 by the mysterious Satoshi Nakamoto, it layous the fundamental system design in only 9 short pages.
+The most fundamental read is the Bitcoin White Paper. Published on October 31, 2008 by the mysterious Satoshi Nakamoto, it lays out the fundamental system design in only 9 short pages.
 
 The white paper describes Bitcoin as electronic peer-to-peer cash. Just like cash, users are fully in control of their Bitcoin, and also like cash, they can send Bitcoin to anyone they want, without any middlemen. This is achieved through a network of thousands of computers that are in constant communication with each other to pass back and forth transactions. These so-called nodes ensure that users can only spend Bitcoin they own, and that they are only spent once. Anyone with a computer can run a node, and many people do, as it provides them with extra certainty that their Bitcoin are secure.
 
