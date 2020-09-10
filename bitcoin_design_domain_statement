@@ -10,7 +10,9 @@ Before I make any changes to the domain ownership or technical configuration, I 
 
 To request such a change, I need to:
 
-- Create a pull request with a clear description and rationale for the change in the Guide repository of the BitcoinDesign github organization https://github.com/BitcoinDesign/Guide. - Post the issue in the #bitcoin-design-guide channel on the Slack workspace, for all members of the Bitcoin Design community to see and respond to. - The issue needs to remain open for at least 30 days, and all concerns and comments need to have been addressed before a decision can be made. 
+- Create a pull request with a clear description and rationale for the change in the Guide repository of the BitcoinDesign github organization https://github.com/BitcoinDesign/Guide.
+- Post the issue in the #bitcoin-design-guide channel on the Slack workspace, for all members of the Bitcoin Design community to see and respond to. 
+- The issue needs to remain open for at least 30 days, and all concerns and comments need to have been addressed before a decision can be made. 
 
 I can participate in discussing the request but I am not allowed to participate in the final resolution of this matter. This same process applies to members of the community for requests for me to make changes to the domain ownership or configuration.
 
