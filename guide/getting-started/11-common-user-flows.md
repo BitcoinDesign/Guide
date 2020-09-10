@@ -19,7 +19,7 @@ Bitcoin is complex, and so it is recommended to think through and carefully shap
 Onboarding may be purely informational based on the content, but many times it also includes an initial setup that helps personalize the software towards the users specific needs and context.
 
 ## Creating a new wallet
-I is important here to distinguish between wallet software, and the wallet that represents the users "account". This particular experience may be almost invisible or highly elaborate. While some mobile wallet applications choose to automatically create and secure a wallet during first launch, other wallets provide extensive configuration wizards.
+It is important here to distinguish between wallet software, and the wallet that represents the users "account". This particular experience may be almost invisible or highly elaborate. While some mobile wallet applications choose to automatically create and secure a wallet during first launch, other wallets provide extensive configuration wizards.
 
 ## Importing an existing wallet
 
