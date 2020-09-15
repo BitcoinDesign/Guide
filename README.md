@@ -1,20 +1,10 @@
 # Bitcoin Design Guide
-Project Intro
 
-<p align='center'>
-  <a href='https://bitcoin.design'>
-    <img src='https://bitcoin.org/img/full-node/en-bitcoin-qt-ibd.png?1595178616' alt='cover image' />
-  </a>
-</p>
-
-
-This is a project overview of a design guide for bitcoin with early thoughts on what it could be.
+This is a project overview of a design guide for bitcoin with early thoughts on what it could end up being.
 
 Like a travel guide, it provides an introduction to a “foreign place”, shows you the highlights and tells you some of the best stories. It provides facts and maps to figure out how to get around, ideas for tours and things to do. Whether you end up taking the official museum tour, clubbing all night or go on shopping sprees is still your choice. Note that these are guides, not mandates. Just like in a foreign city, you can choose to go off the path, and forge a new direction. Others may just follow in the future.
 
-Discussion about it is taking place in the [bitcoin design Slack](https://bitcoindesign.slack.com/join/shared_invite/zt-fljgbpg0-wHr_thYUYWh5105UnGTWHw#/) (#bitcoin-design-guide).
-
-We welcome feedback.
+Discussion and collaboration is taking place in the [bitcoin design Slack](https://bitcoindesign.slack.com/join/shared_invite/zt-fljgbpg0-wHr_thYUYWh5105UnGTWHw#/) (#bitcoin-design-guide).
 
 
 ## Table of Contents
@@ -27,7 +17,7 @@ We welcome feedback.
 ---
 
 
-## Objective
+## Goal
 
 The Bitcoin Design Guide is a free open-source community resource that helps designers, developers and others working on non-custodial bitcoin-products to create better experiences, faster. We hope that, over time, it will cover all relevant types of products, including consumer wallets, merchant interactions, exchanges and more. Better products and experiences should ultimately make it more appealing for anyone to own and use bitcoin.
 
@@ -36,7 +26,7 @@ An equally important goal is that this process nurtures an open-source bitcoin d
 
 ## Process
 
-The goal is for the process of creating the guide to be as open and decentralized as possible, resulting in a sustainable model to run projects with the community. A rough outline of thinking on phases so far;
+The goal is for the process of creating the guide to be as open and decentralized as possible, resulting in a sustainable model to run projects with the community. A rough outline of thinking on phases so far:
 
 **Phase 1 - facilitate and initiate collaborative work**
 
@@ -54,18 +44,19 @@ Create a lightweight project list for the community to be aware of what is being
 
 Start work on the first batch of chapters for the guide.
 
-*   [Cristoph Ono](https://github.com/GBKS) working on ‘Getting started guide’
+*   [Christoph Ono](https://github.com/GBKS) working on [‘Getting started guide’](https://github.com/BitcoinDesign/Guide/pull/20)
 *   [Daniel Nordh](https://github.com/danielnordh) working on ‘Private key management’
+*   [Johns Beharry](https://github.com/peakshift) working on ‘Payments’
 
 Create a website and other resources for the bitcoin design community.
 
 *  Agree on domain name - [bitcoin.design discussion](https://github.com/BitcoinDesign/Guide/issues/9)
-*  Github handle
+*  Github handle [BitcoinDesign](https://github.com/BitcoinDesign)
 *  Twitter handle (less urgent)
 *  [Initial holding page / content](https://github.com/BitcoinDesign/Guide/issues/10)
-*  Propose governance model
-Find community members to take on other parts of the guide content.
-Form working groups around key topics in the guide.
+*  Propose governance model - [discussion](https://github.com/BitcoinDesign/Meta/issues/10)
+* Find community members to take on other parts of the guide content.
+* Form working groups around key topics in the guide.
 
 **Phase 3 - publish guide mvp**
 
@@ -80,9 +71,7 @@ It should be a simple starting-point for anyone looking to build bitcoin-based p
 
 The guide should be seen as an evolving resource. Similar to the iterative design process, it starts with core parts then grows in ambition based on community support.
 
-Bitcoin Design Guide - skeleton;
-
-
+An initial outline that will be updated as needed:
 
 *   Getting started
     *   Intro
