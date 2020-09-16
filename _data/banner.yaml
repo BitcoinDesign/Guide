@@ -1,12 +1,14 @@
 ---
-titleFillColor: white
-titleOutlineColor: none
-descriptionFillColor: black
-slackButtonFillColor: white
-slackButtonOutlineColor: black
-slackButtonLabelFillColor: black
-githubButtonFillColor: white
-githubButtonOutlineColor: black
-githubButtonLabelFillColor: black
-# backgroundImagePath: /assets/test-image.png
+copyBackgroundColor: 6490E3
+bitcoinLogoPath: /assets/banner-bitcoin-logo.svg 
+titleFillColor: FFF
+titleOutlineColor: FFF
+descriptionFillColor: FFF
+slackButtonFillColor: FFF
+slackButtonOutlineColor: FFF
+slackButtonLabelFillColor: 6490E3
+githubButtonFillColor: FFF
+githubButtonOutlineColor: FFF
+githubButtonLabelFillColor: 6490E3
+backgroundImagePath: /assets/test-image.png
 ---
