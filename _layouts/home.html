@@ -12,22 +12,24 @@
 
   {%- include head.html -%}
 
+  <style>
+    :root {
+      --title-fill-color: {{ site.data.banner.titleFillColor }};
+      --title-outline-color: {{ site.data.banner.titleOutlineColor }};
+      --description-fill-color: {{ site.data.banner.descriptionFillColor }};
+      --slack-button-fill-color: {{ site.data.banner.slackButtonFillColor }};
+      --slack-button-outline-color: {{ site.data.banner.slackButtonOutlineColor }};
+      --slack-button-label-fill-color: {{ site.data.banner.slackLabelButtonFillColor }};
+      --github-button-fill-color: {{ site.data.banner.githubButtonFillColor }};
+      --github-button-outline-color: {{ site.data.banner.githubButtonOutlineColor }};
+      --github-button-label-fill-color: {{ site.data.banner.githubButtonLabelFillColor }};
+      --background-image-path: url({{ site.data.banner.backgroundImagePath }});
+    }
+  </style>
+
   <body>
-    <main class="home-minimal-page">
-      <section>
-        <div class="title">
-          <h1>Bitcoin Design</h1>
-        </div>
-        <div class="placeholder"></div>
-      </section>
-      <section>
-        <div class="copy">
-          <p>An open community collaborating on making <a href="https://bitcoin.org">Bitcoin</a> more user-friendly through thoughtful user experience design.</p>
-        </div>
-        <div class="copy">
-          <p>Join us on <a href="https://bitcoindesign.slack.com">Slack</a>, or see what we are working on on <a href="https://github.com/bitcoindesign">Github</a>. This is a temporary landing page. Stay tuned for updates.</p>
-        </div>
-      </section>
+    <main>
+      {%- include home-banner.html -%}
     </main>
   </body>
 

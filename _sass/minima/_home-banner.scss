@@ -1,0 +1,105 @@
+
+
+.home-banner {
+  display: flex;
+  flex-direction: column-reverse;
+
+  .home-banner-copy-wrapper {
+    padding: 15px 30px;
+
+    h1 {
+      font-family: $base-font-family;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 64px;
+      line-height: 100%;
+      letter-spacing: -0.03em;
+
+      color: black;
+      -webkit-text-fill-color: var(--title-fill-color); /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: var(--title-outline-color);
+    }
+
+    p {
+      color: var(--description-fill-color);
+      font-family: $base-font-family;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 27px;
+      margin-bottom: 30px;
+    }
+
+    a {
+      display: inline-block;
+      padding: 15px 20px;
+      text-decoration: none;
+      box-sizing: border-box;
+      filter: drop-shadow(0px 8px 24px rgba(0, 0, 0, 0.05));
+      border-radius: 5px;
+      margin: 0 0 12px 0;
+    }
+
+    #slack-link-button {
+      background-color: var(--slack-button-fill-color);
+      border: 1px solid var(--slack-button-outline-color);
+      color: var(--slack-button-label-fill-color);
+    }
+
+    #github-link-button {
+      background-color: var(--github-button-fill-color);
+      border: 1px solid var(--github-button-outline-color);
+      color: var(--github-button-label-fill-color);
+    }
+
+    .home-banner-copy {
+      max-width: 500px;
+
+      .home-banner-logo-wrapper {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .home-banner-image {
+    width: 100%;
+    padding-bottom: 100%;
+    background-image: var(--background-image-path);
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    background-color: #F4F4F4;
+  }
+
+  @include media-query(large) {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+
+    .home-banner-copy-wrapper {
+      width: 50%;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        margin: 0 12px 0 0;
+      }
+  
+    }
+
+    .home-banner-buttons-wrapper {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .home-banner-image {
+      width: 50%;
+      padding-bottom: 50%;
+    }
+  }
+}
+
