@@ -4,7 +4,7 @@ titleOutlineColor: none
 descriptionFillColor: black
 slackButtonFillColor: white
 slackButtonOutlineColor: black
-slackLabelButtonFillColor: black
+slackButtonLabelFillColor: black
 githubButtonFillColor: white
 githubButtonOutlineColor: black
 githubButtonLabelFillColor: black
