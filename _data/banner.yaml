@@ -1,0 +1,12 @@
+---
+titleFillColor: white
+titleOutlineColor: none
+descriptionFillColor: black
+slackButtonFillColor: white
+slackButtonOutlineColor: black
+slackLabelButtonFillColor: black
+githubButtonFillColor: white
+githubButtonOutlineColor: black
+githubButtonLabelFillColor: black
+# backgroundImagePath: /assets/test-image.png
+---
