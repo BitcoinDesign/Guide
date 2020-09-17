@@ -14,23 +14,24 @@
 
   <style>
     :root {
-      --copy-background-color: #{{ site.data.banner.copyBackgroundColor }};
-      --title-fill-color: #{{ site.data.banner.titleFillColor }};
-      --title-outline-color: #{{ site.data.banner.titleOutlineColor }};
-      --description-fill-color: #{{ site.data.banner.descriptionFillColor }};
-      --slack-button-fill-color: #{{ site.data.banner.slackButtonFillColor }};
-      --slack-button-outline-color: #{{ site.data.banner.slackButtonOutlineColor }};
-      --slack-button-label-fill-color: #{{ site.data.banner.slackButtonLabelFillColor }};
-      --github-button-fill-color: #{{ site.data.banner.githubButtonFillColor }};
-      --github-button-outline-color: #{{ site.data.banner.githubButtonOutlineColor }};
-      --github-button-label-fill-color: #{{ site.data.banner.githubButtonLabelFillColor }};
+      --copy-background-color: {{ site.data.banner.copyBackgroundColor }};
+      --title-fill-color: {{ site.data.banner.titleFillColor }};
+      --title-outline-color: {{ site.data.banner.titleOutlineColor }};
+      --description-fill-color: {{ site.data.banner.descriptionFillColor }};
+      --slack-button-fill-color: {{ site.data.banner.slackButtonFillColor }};
+      --slack-button-outline-color: {{ site.data.banner.slackButtonOutlineColor }};
+      --slack-button-label-fill-color: {{ site.data.banner.slackButtonLabelFillColor }};
+      --github-button-fill-color: {{ site.data.banner.githubButtonFillColor }};
+      --github-button-outline-color: {{ site.data.banner.githubButtonOutlineColor }};
+      --github-button-label-fill-color: {{ site.data.banner.githubButtonLabelFillColor }};
       --background-image-path: url({{ site.data.banner.backgroundImagePath }});
+      --background-image-path-mobile: url({{ site.data.banner.backgroundImagePathMobile }});
     }
   </style>
 
   <body>
     <main>
-      {%- include home-banner.html -%}
+      {%- include home-banner.html bitcoinLogoFillColor=site.data.banner.bitcoinLogoFillColor bitcoinLogoOutlineColor=site.data.banner.bitcoinLogoOutlineColor flipLayoutOnMobile=site.data.banner.flipLayoutOnMobile -%}
     </main>
   </body>
 
