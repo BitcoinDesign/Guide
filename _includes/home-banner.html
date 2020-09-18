@@ -1,10 +1,8 @@
-<section class="home-banner{% if include.flipLayoutOnMobile %} -flip-on-mobile{% endif %}">
+<section class="home-banner{% if include.flipLayoutOnMobile %} -flip-on-mobile{% endif %}" id="home-banner">
   <div class="home-banner-copy-wrapper">
     <div class=home-banner-copy>
       <div class="home-banner-logo-wrapper">
-        {%- if include.bitcoinLogoFillColor or include.bitcoinLogoOutlineColor -%}
           {% include_relative /assets/banner-bitcoin-logo.svg bitcoinLogoFillColor=include.bitcoinLogoFillColor bitcoinLogoOutlineColor=include.bitcoinLogoOutlineColor %}
-        {%- endif -%}
       </div>
       <h1>
         Design Bitcoin for Everyone

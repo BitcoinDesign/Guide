@@ -6,7 +6,7 @@ let themes = [
     bitcoinLogoFillColor: "#FFF",
     bitcoinLogoOutlineColor: "", 
     titleFillColor: "#FFF",
-    titleOutlineColor: "#FFF",
+    titleOutlineColor: "transparent",
     descriptionFillColor: "#FFF",
     slackButtonFillColor: "#FFF",
     slackButtonOutlineColor: "#FFF",
@@ -16,7 +16,7 @@ let themes = [
     githubButtonLabelFillColor: "#6490E3",
     backgroundImagePath: 'url("/assets/images/home/banner/person.png")',
     backgroundImagePathMobile: 'url("/assets/images/home/banner/person.png")',
-    flipLayoutOnMobile: true,
+    flipLayoutOnMobile: false,
   },
   {
     // alexa
@@ -25,7 +25,7 @@ let themes = [
     bitcoinLogoFillColor: "#000",
     bitcoinLogoOutlineColor: "",
     titleFillColor: "#000",
-    titleOutlineColor: "#000",
+    titleOutlineColor: "transparent",
     descriptionFillColor: "#000",
     slackButtonFillColor: "#FFF",
     slackButtonOutlineColor: "#000",
@@ -35,7 +35,7 @@ let themes = [
     githubButtonLabelFillColor: "#000",
     backgroundImagePath: 'url("/assets/images/home/banner/alexa.png")',
     backgroundImagePathMobile: 'url("/assets/images/home/banner/alexa-mobile.png")',
-    flipLayoutOnMobile: true,
+    flipLayoutOnMobile: false,
   },
   {
     // clear
@@ -54,16 +54,16 @@ let themes = [
     githubButtonLabelFillColor: "#000",
     backgroundImagePath: "",
     backgroundImagePathMobile: "", 
-    flipLayoutOnMobile: true,
+    flipLayoutOnMobile: false,
   },
   {
     // rollercoaster
     copyBackgroundColor: "#9ABBC2",
     bitcoinLogoPath: "/assets/banner-bitcoin-logo.svg", 
     bitcoinLogoFillColor: "#FFF",
-    bitcoinLogoOutlineColor: "#FFF",
+    bitcoinLogoOutlineColor: "",
     titleFillColor: "#FFF",
-    titleOutlineColor: "#FFF",
+    titleOutlineColor: "transparent",
     descriptionFillColor: "#FFF",
     slackButtonFillColor: "#FFF",
     slackButtonOutlineColor: "",
@@ -76,19 +76,81 @@ let themes = [
     flipLayoutOnMobile: true
   }
   
-]
+];
 
-var theme = themes[Math.floor(Math.random()*themes.length)]
+var shuffleArray = function(array) {
+    var i = array.length - 1;
+    for(; i > 0; i--){
+      const j = Math.floor(Math.random() * i)
+      const temp = array[i]
+      array[i] = array[j]
+      array[j] = temp
+    }
+};
 
-document.documentElement.style.setProperty('--copy-background-color', theme.copyBackgroundColor);
-document.documentElement.style.setProperty('--title-fill-color', theme.titleFillColor);
-document.documentElement.style.setProperty('--title-outline-color', theme.titleOutlineColor);
-document.documentElement.style.setProperty('--description-fill-color', theme.descriptionFillColor);
-document.documentElement.style.setProperty('--slack-button-fill-color', theme.slackButtonFillColor);
-document.documentElement.style.setProperty('--slack-button-outline-color', theme.slackButtonOutlineColor);
-document.documentElement.style.setProperty('--slack-button-label-fill-color', theme.slackButtonLabelFillColor);
-document.documentElement.style.setProperty('--github-button-fill-color', theme.githubButtonFillColor);
-document.documentElement.style.setProperty('--github-button-outline-color', theme.githubButtonOutlineColor);
-document.documentElement.style.setProperty('--github-button-label-fill-color', theme.githubButtonLabelFillColor);
-document.documentElement.style.setProperty('--background-image-path', theme.backgroundImagePath);
-document.documentElement.style.setProperty('--background-image-path-mobile', theme.backgroundImagePathMobile);
+shuffleArray(themes);
+
+var currentThemeIndex = null;
+var applyNextTheme = function() {
+    currentThemeIndex++;
+
+    if(currentThemeIndex >= themes.length) {
+        currentThemeIndex = 0;
+    }
+
+    applyTheme(currentThemeIndex);
+}
+
+var applyTheme = function(themeIndex) {
+    currentThemeIndex = themeIndex;
+
+    var theme = themes[themeIndex];
+
+    document.documentElement.style.setProperty('--copy-background-color', theme.copyBackgroundColor);
+    document.documentElement.style.setProperty('--title-fill-color', theme.titleFillColor);
+    document.documentElement.style.setProperty('--title-outline-color', theme.titleOutlineColor);
+    document.documentElement.style.setProperty('--description-fill-color', theme.descriptionFillColor);
+    document.documentElement.style.setProperty('--slack-button-fill-color', theme.slackButtonFillColor);
+    document.documentElement.style.setProperty('--slack-button-outline-color', theme.slackButtonOutlineColor);
+    document.documentElement.style.setProperty('--slack-button-label-fill-color', theme.slackButtonLabelFillColor);
+    document.documentElement.style.setProperty('--github-button-fill-color', theme.githubButtonFillColor);
+    document.documentElement.style.setProperty('--github-button-outline-color', theme.githubButtonOutlineColor);
+    document.documentElement.style.setProperty('--github-button-label-fill-color', theme.githubButtonLabelFillColor);
+    document.documentElement.style.setProperty('--background-image-path', theme.backgroundImagePath);
+    document.documentElement.style.setProperty('--background-image-path-mobile', theme.backgroundImagePathMobile);
+
+    var logoPath = document.getElementById('banner-bitcoin-logo-path');
+    if(logoPath) {
+        logoPath.setAttribute('fill', theme.bitcoinLogoFillColor);
+        logoPath.setAttribute('stroke', theme.bitcoinLogoOutlineColor);
+    }
+
+    var banner = document.getElementById('home-banner');
+    if(banner) {
+        if(theme.flipLayoutOnMobile) {
+            banner.classList.add('-flip-on-mobile');
+        } else {
+            banner.classList.remove('-flip-on-mobile');
+        }
+    }
+};
+
+applyTheme(0);
+
+function docReady(fn) {
+    // see if DOM is already available
+    if (document.readyState === "complete" || document.readyState === "interactive") {
+        // call on next available tick
+        setTimeout(fn, 1);
+    } else {
+        document.addEventListener("DOMContentLoaded", fn);
+    }
+}
+
+docReady(function() {
+    applyTheme(0);
+
+    document.getElementById('banner-bitcoin-logo-svg').addEventListener('click', function() {
+        applyNextTheme();
+    });
+});
