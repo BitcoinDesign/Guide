@@ -127,3 +127,61 @@
   }
 }
 
+.home-banner-info {
+  display: flex;
+  justify-content: center;
+  background-color: #f4f4f4;
+  padding: 5px 15px;
+
+  .home-banner-info-wrapper {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > p {
+      font-size: 12px;
+      line-height: 24px;
+      margin: 0;
+
+      a {
+        color: black;
+        text-decoration: underline;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .home-banner-info-options {
+      display: flex;
+      align-items: center;
+
+      a,
+      button {
+        display: block;
+        font-size: 12px;
+        line-height: 24px;
+        color: black;
+        text-decoration: underline;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+
+      button {
+        appearance: none;
+        background-color: transparent;
+        border-width: 0;
+      }
+
+      a + button {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+

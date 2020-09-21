@@ -17,6 +17,8 @@ let themes = [
     backgroundImagePath: 'url("/assets/images/home/banner/person.png")',
     backgroundImagePathMobile: 'url("/assets/images/home/banner/person.png")',
     flipLayoutOnMobile: false,
+    author: "Pla Hol Derce",
+    authorLink: "https://github.com/BitcoinDesign/Guide/issues/11"
   },
   {
     // alexa
@@ -36,6 +38,8 @@ let themes = [
     backgroundImagePath: 'url("/assets/images/home/banner/alexa.png")',
     backgroundImagePathMobile: 'url("/assets/images/home/banner/alexa-mobile.png")',
     flipLayoutOnMobile: false,
+    author: "Alexa Aker",
+    authorLink: "https://github.com/BitcoinDesign/Guide/issues/11"
   },
   {
     // clear
@@ -55,6 +59,8 @@ let themes = [
     backgroundImagePath: "",
     backgroundImagePathMobile: "", 
     flipLayoutOnMobile: false,
+    author: "Holder of Places",
+    authorLink: "https://github.com/BitcoinDesign/Guide/issues/11"
   },
   {
     // rollercoaster
@@ -73,7 +79,9 @@ let themes = [
     githubButtonLabelFillColor: "#9ABBC2",
     backgroundImagePath: 'url("/assets/images/home/banner/rollercoaster.png")',
     backgroundImagePathMobile: 'url("/assets/images/home/banner/rollercoaster-mobile.png")',
-    flipLayoutOnMobile: true
+    flipLayoutOnMobile: true,
+    author: "Place Holder",
+    authorLink: "https://github.com/BitcoinDesign/Guide/issues/11"
   }
   
 ];
@@ -133,6 +141,12 @@ var applyTheme = function(themeIndex) {
             banner.classList.remove('-flip-on-mobile');
         }
     }
+
+    var author = document.getElementById('home-banner-info-author');
+    if(author) {
+        author.innerText = theme.author;
+        author.setAttribute('href', theme.authorLink);
+    }
 };
 
 applyTheme(0);
@@ -151,6 +165,10 @@ docReady(function() {
     applyTheme(0);
 
     document.getElementById('banner-bitcoin-logo-svg').addEventListener('click', function() {
+        applyNextTheme();
+    });
+
+    document.getElementById('home-banner-info-next').addEventListener('click', function() {
         applyNextTheme();
     });
 });

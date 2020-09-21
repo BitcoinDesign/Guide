@@ -20,14 +20,6 @@ article.guide {
     @include clearfix;
   }
 
-  & > .-float-left,
-  & > .center .-float-left {
-    @include media-query(large) {
-      float: left;
-      margin-right: 30px;
-    }
-  }
-
   & > .-full-width {
     @include media-query(medium-down) {
       margin-left: -$spacing-unit / 2;
@@ -74,14 +66,34 @@ article.guide {
     margin-bottom: $spacing-unit;
 
     @include media-query(medium-down) {
-      margin-top: $spacing-unit * 2;
-      margin-bottom: $spacing-unit * 2;
+      margin-top: $spacing-unit * 0.5;
+      margin-bottom: $spacing-unit * 0.5;
     }
 
     @include media-query(large) {
-      margin-top: $spacing-unit * 3;
-      margin-bottom: $spacing-unit * 3;
+      margin-top: $spacing-unit * 1;
+      margin-bottom: $spacing-unit * 1;
     }
 
+  }
+
+  & > .-float-left,
+  & > .center .-float-left {
+    @include media-query(large) {
+      margin-top: 0;
+      margin-bottom: 0;
+      float: left;
+      margin-right: 30px;
+    }
+  }
+
+  & > .-float-right,
+  & > .center .-float-right {
+    @include media-query(large) {
+      margin-top: 0;
+      margin-bottom: 0;
+      float: right;
+      margin-left: 30px;
+    }
   }
 }
