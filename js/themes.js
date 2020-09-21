@@ -38,7 +38,7 @@ let themes = [
     button2LabelFillColor: "#000",
     backgroundImagePath: 'url("/assets/images/home/banner/alexa.png")',
     backgroundImagePathMobile: 'url("/assets/images/home/banner/alexa-mobile.png")',
-    backgroundImageColor: '#FFF',
+    backgroundImageColor: '#F7931A',
     flipLayoutOnMobile: false,
     author: "Alexa Aker",
     authorLink: "https://github.com/BitcoinDesign/Guide/issues/11"
