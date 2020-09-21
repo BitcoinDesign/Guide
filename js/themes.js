@@ -8,14 +8,15 @@ let themes = [
     titleFillColor: "#FFF",
     titleOutlineColor: "transparent",
     descriptionFillColor: "#FFF",
-    slackButtonFillColor: "#FFF",
-    slackButtonOutlineColor: "#FFF",
-    slackButtonLabelFillColor: "#6490E3",
-    githubButtonFillColor: "#FFF",
-    githubButtonOutlineColor: "#FFF",
-    githubButtonLabelFillColor: "#6490E3",
+    button1FillColor: "#FFF",
+    button1OutlineColor: "#FFF",
+    button1LabelFillColor: "#6490E3",
+    button2FillColor: "#FFF",
+    button2OutlineColor: "#FFF",
+    button2LabelFillColor: "#6490E3",
     backgroundImagePath: 'url("/assets/images/home/banner/person.png")',
     backgroundImagePathMobile: 'url("/assets/images/home/banner/person.png")',
+    backgroundImageColor: '#FFF',
     flipLayoutOnMobile: false,
     author: "Pla Hol Derce",
     authorLink: "https://github.com/BitcoinDesign/Guide/issues/11"
@@ -29,14 +30,15 @@ let themes = [
     titleFillColor: "#000",
     titleOutlineColor: "transparent",
     descriptionFillColor: "#000",
-    slackButtonFillColor: "#FFF",
-    slackButtonOutlineColor: "#000",
-    slackButtonLabelFillColor: "#000",
-    githubButtonFillColor: "#F7931A",
-    githubButtonOutlineColor: "#000",
-    githubButtonLabelFillColor: "#000",
+    button1FillColor: "#FFF",
+    button1OutlineColor: "#000",
+    button1LabelFillColor: "#000",
+    button2FillColor: "#F7931A",
+    button2OutlineColor: "#000",
+    button2LabelFillColor: "#000",
     backgroundImagePath: 'url("/assets/images/home/banner/alexa.png")',
     backgroundImagePathMobile: 'url("/assets/images/home/banner/alexa-mobile.png")',
+    backgroundImageColor: '#FFF',
     flipLayoutOnMobile: false,
     author: "Alexa Aker",
     authorLink: "https://github.com/BitcoinDesign/Guide/issues/11"
@@ -50,14 +52,15 @@ let themes = [
     titleFillColor: "#FFF",
     titleOutlineColor: "#000",
     descriptionFillColor: "#000",
-    slackButtonFillColor: "",
-    slackButtonOutlineColor: "#000",
-    slackButtonLabelFillColor: "#000",
-    githubButtonFillColor: "",
-    githubButtonOutlineColor: "#000",
-    githubButtonLabelFillColor: "#000",
+    button1FillColor: "",
+    button1OutlineColor: "#000",
+    button1LabelFillColor: "#000",
+    button2FillColor: "",
+    button2OutlineColor: "#000",
+    button2LabelFillColor: "#000",
     backgroundImagePath: "",
-    backgroundImagePathMobile: "", 
+    backgroundImagePathMobile: "",
+    backgroundImageColor: "#fbfbfb",
     flipLayoutOnMobile: false,
     author: "Holder of Places",
     authorLink: "https://github.com/BitcoinDesign/Guide/issues/11"
@@ -71,14 +74,15 @@ let themes = [
     titleFillColor: "#FFF",
     titleOutlineColor: "transparent",
     descriptionFillColor: "#FFF",
-    slackButtonFillColor: "#FFF",
-    slackButtonOutlineColor: "",
-    slackButtonLabelFillColor: "#9ABBC2",
-    githubButtonFillColor: "#FFF",
-    githubButtonOutlineColor: "",
-    githubButtonLabelFillColor: "#9ABBC2",
+    button1FillColor: "#FFF",
+    button1OutlineColor: "",
+    button1LabelFillColor: "#9ABBC2",
+    button2FillColor: "#FFF",
+    button2OutlineColor: "",
+    button2LabelFillColor: "#9ABBC2",
     backgroundImagePath: 'url("/assets/images/home/banner/rollercoaster.png")',
     backgroundImagePathMobile: 'url("/assets/images/home/banner/rollercoaster-mobile.png")',
+    backgroundImageColor: "#FFF",
     flipLayoutOnMobile: true,
     author: "Place Holder",
     authorLink: "https://github.com/BitcoinDesign/Guide/issues/11"
@@ -118,14 +122,15 @@ var applyTheme = function(themeIndex) {
     document.documentElement.style.setProperty('--title-fill-color', theme.titleFillColor);
     document.documentElement.style.setProperty('--title-outline-color', theme.titleOutlineColor);
     document.documentElement.style.setProperty('--description-fill-color', theme.descriptionFillColor);
-    document.documentElement.style.setProperty('--slack-button-fill-color', theme.slackButtonFillColor);
-    document.documentElement.style.setProperty('--slack-button-outline-color', theme.slackButtonOutlineColor);
-    document.documentElement.style.setProperty('--slack-button-label-fill-color', theme.slackButtonLabelFillColor);
-    document.documentElement.style.setProperty('--github-button-fill-color', theme.githubButtonFillColor);
-    document.documentElement.style.setProperty('--github-button-outline-color', theme.githubButtonOutlineColor);
-    document.documentElement.style.setProperty('--github-button-label-fill-color', theme.githubButtonLabelFillColor);
+    document.documentElement.style.setProperty('--button-1-fill-color', theme.button1FillColor);
+    document.documentElement.style.setProperty('--button-1-outline-color', theme.button1OutlineColor);
+    document.documentElement.style.setProperty('--button-1-label-fill-color', theme.button1LabelFillColor);
+    document.documentElement.style.setProperty('--button-2-fill-color', theme.button2FillColor);
+    document.documentElement.style.setProperty('--button-2-outline-color', theme.button2OutlineColor);
+    document.documentElement.style.setProperty('--button-2-label-fill-color', theme.button2LabelFillColor);
     document.documentElement.style.setProperty('--background-image-path', theme.backgroundImagePath);
     document.documentElement.style.setProperty('--background-image-path-mobile', theme.backgroundImagePathMobile);
+    document.documentElement.style.setProperty('--background-image-color', theme.backgroundImageColor);
 
     var logoPath = document.getElementById('banner-bitcoin-logo-path');
     if(logoPath) {

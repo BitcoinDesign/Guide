@@ -63,14 +63,15 @@ Below are the variable used to configure a theme. These are located in [themes.j
     titleFillColor: "#000",
     titleOutlineColor: "transparent",
     descriptionFillColor: "#000",
-    slackButtonFillColor: "#FFF",
-    slackButtonOutlineColor: "#000",
-    slackButtonLabelFillColor: "#000",
-    githubButtonFillColor: "#F7931A",
-    githubButtonOutlineColor: "#000",
-    githubButtonLabelFillColor: "#000",
+    button1FillColor: "#FFF",
+    button1OutlineColor: "#000",
+    button1LabelFillColor: "#000",
+    button2FillColor: "#F7931A",
+    button2OutlineColor: "#000",
+    button2LabelFillColor: "#000",
     backgroundImagePath: 'url("/assets/images/home/banner/alexa.png")',
     backgroundImagePathMobile: 'url("/assets/images/home/banner/alexa-mobile.png")',
+    backgroundImageColor: '#FFF',
     flipLayoutOnMobile: false,
     author: "Alexa Aker",
     authorLink: "https://github.com/BitcoinDesign/Guide/issues/11"
@@ -78,7 +79,7 @@ Below are the variable used to configure a theme. These are located in [themes.j
 
 ## Getting hands-on
 
-Once you have an idea for your theme and want to make it real, then the best way to start is by duplicating this Figma community file. It includes a template overview and some examples. If you are familiar with Figma (or Sketch), it is hopefully easy to get started with.
+Once you have an idea for your theme and want to make it real, then the best way to start is by duplicating this [Figma community file](https://www.figma.com/file/RZfxlwn0SyRpIQiCl02PQb/Bitcoin-Design-Website-Banner-Template?node-id=1%3A129){:target="_blank"}. It includes a template overview and some examples. If you are familiar with Figma (or Sketch), it is hopefully easy to get started with.
 
 Once your design is in good shape and you'd like to get some first feedback from the Bitcoin Design community, you have two options. You can either post a link or screenshot with some background information to the #design-review channel in our Slack workspace. Or you can [create a Github issue](https://github.com/BitcoinDesign/Guide/issues){:target="_blank"}. Or you can do both, as you prefer.
 
