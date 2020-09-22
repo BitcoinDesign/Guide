@@ -20,7 +20,7 @@ Generally, any hardware with an internet connection can interact with the bitcoi
 
 ## Recovery phrase storage
 
-Simple, cheap and robust storage solutions for recovery phrases come in modest forms. [Seedplate](https://bitcoinseedbackup.com/), for example, is a metal plate in which users can etch the words of their recovery phrase for long-term offline storage. [CardWallet](https://www.cardwallet.com), in comparison, is the size of a credit card and comes pre-loaded with a recovery phrase (hidden behind a security seal) and a matching bitcoin address. And if you like an even simpler solution, a piece of paper will do. Although paper is not as durable and may be easy to loose, it is one of the strengths of Bitcoin that such simple solutions are possible.
+Simple, cheap and robust storage solutions for recovery phrases come in modest forms. [Seedplate](https://bitcoinseedbackup.com/){:target="_blank"}, for example, is a metal plate in which users can etch the words of their recovery phrase for long-term offline storage. [CardWallet](https://www.cardwallet.com){:target="_blank"}, in comparison, is the size of a credit card and comes pre-loaded with a recovery phrase (hidden behind a security seal) and a matching bitcoin address. And if you like an even simpler solution, a piece of paper will do. Although paper is not as durable and may be easy to loose, it is one of the strengths of Bitcoin that such simple solutions are possible.
 
 {% include image.html
    image = "/assets/images/guide/getting-started/hardware-seed-storage.png"
@@ -48,8 +48,9 @@ Because hardware wallets are so optimized for this specific uses case, they have
 
 Thousands of computers participate in the Bitcoin network. They are called nodes and continuously exchange, verify and compare transaction data. Running your own node, instead of relying on a third-party node, has the benefit that transactions are getting validated by your own personal device. Nodes also improve privacy and help secure the network. Several DIY and consumer hardware products have been created to make it easy to run your own node on a dedicated device.
 
-{% include image.html
+{% include picture.html
    image = "/assets/images/guide/getting-started/node-hardware.png"
+   mobile = "/assets/images/guide/getting-started/node-hardware-mobile.png"
    alt-text = "Examples of hardware wallets"
    width = 1600
    height = 800
@@ -61,7 +62,7 @@ While plug-and-play hardware nodes can solve various problems for bitcoin users,
 
 ## Miners
 
-Bitcoin mining has turned into a professional undertaking years ago. Today, dedicated hardware (so-called ASICS, or application-specific integrated circuits) is being developed that is optimized to continuously execute the bitcoin hashing algorithm over and over until an acceptable hash is found. A modern miner (in 2020) can generate around 14,000,000,000,000 hashes per second. The more hashes generated, the higher the chance of "finding" a new block and receiving freshly minted bitcoin as a reward.
+Bitcoin mining has turned into a professional undertaking years ago. Today, dedicated hardware (so-called ASICS, or application-specific integrated circuits) is being developed that is optimized to continuously execute the Bitcoin hashing algorithm (called [SHA-256](https://en.wikipedia.org/wiki/SHA-2){:target="_blank"}) over and over until an acceptable hash is found. A modern miner (in 2020) can generate around 14,000,000,000,000 hashes per second. The more hashes generated, the higher the chance of "finding" a new block and receiving freshly minted bitcoin as a reward.
 
 {% include image.html
    image = "/assets/images/guide/getting-started/mining-hardware.png"

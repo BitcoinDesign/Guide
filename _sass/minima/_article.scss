@@ -29,6 +29,10 @@ article.guide {
   }
 
   & > .-full-width {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     @include media-query(medium-down) {
       margin-left: -$spacing-unit / 2;
       margin-right: -$spacing-unit / 2;
@@ -81,6 +85,23 @@ article.guide {
       margin-top: $spacing-unit * 1;
       margin-bottom: $spacing-unit * 1;
     }
+  }
 
+  .image-gallery {
+    display: flex;
+    background-color: #f8f8f8;
+    justify-content: center;
+    max-width: none !important;
+
+    figure {
+      img {
+        box-shadow: 0 20px 10px -8px rgba(black, 0.05);
+        border: 1px solid rgba(black, 0.1);
+      }
+
+      & + figure {
+        margin-left: 40px;
+      }
+    }
   }
 }

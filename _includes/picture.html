@@ -1,0 +1,15 @@
+<figure{% if include.layout %} class="-{{ include.layout }}"{% endif %}>
+	<picture>
+		<source
+			media="(max-width: 639px)"
+	    	srcset="{{ include.mobile | relative_url }}" 
+		>
+	    <img
+	    	src="{{ include.image | relative_url }}" 
+	    	alt="{{ include.alt-text }}" 
+	    	width="{{ include.width }}" 
+	    	height="{{ include.height }}"
+	    >
+	</picture>
+	{% if include.caption %}<figcaption class="small">{{ include.caption }}</figcaption>{% endif %}
+</figure>

@@ -6,6 +6,14 @@ parent: Getting started
 permalink: /getting-started/personal-finance/
 ---
 
+<!--
+
+Editor's notes
+
+This page provides a rough framework for how to think about transactions in the general context of typical personal finances. It can provide a great jumping-off point into different other pages like private key management solutions, payment types and hardware wallets.
+
+-->
+
 # Personal finance and bitcoin
 {:.no_toc}
 
@@ -25,11 +33,13 @@ Let's take a look at six different categories of how somebody may want to organi
 ## Day-to-day spending
 
 <!--
- - Use case explanation
- - Risk
- - Convenience
- - Privacy
- - Mobility
+
+Section structure
+
+ - Describe the current use case (typical transactions)
+ - Discuss risk factors and risk/convenience trade-offs
+ - Other factors like privacy, mobility, etc
+
 -->
 
 <div class="center" markdown="1">
