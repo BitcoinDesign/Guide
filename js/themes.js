@@ -1,50 +1,6 @@
 let themes = [
   {
-    // person
-    copyBackgroundColor: "#6490E3",
-    bitcoinLogoPath: "/assets/banner-bitcoin-logo.svg",
-    bitcoinLogoFillColor: "#FFF",
-    bitcoinLogoOutlineColor: "#FFF", 
-    titleFillColor: "#FFF",
-    titleOutlineColor: "transparent",
-    descriptionFillColor: "#FFF",
-    button1FillColor: "#FFF",
-    button1OutlineColor: "transparent",
-    button1LabelFillColor: "#6490E3",
-    button2FillColor: "#FFF",
-    button2OutlineColor: "transparent",
-    button2LabelFillColor: "#6490E3",
-    backgroundImagePath: 'url("/assets/images/home/banner/person.png")',
-    backgroundImagePathMobile: 'url("/assets/images/home/banner/person.png")',
-    backgroundImageColor: '#FFF',
-    flipLayoutOnMobile: false,
-    author: "Pla Hol Derce",
-    authorLink: "https://github.com/BitcoinDesign/Guide/issues/11"
-  },
-  {
-    // alexa
-    copyBackgroundColor: "#F7931A",
-    bitcoinLogoPath: "/assets/banner-bitcoin-logo.svg",
-    bitcoinLogoFillColor: "#000",
-    bitcoinLogoOutlineColor: "#000",
-    titleFillColor: "#000",
-    titleOutlineColor: "transparent",
-    descriptionFillColor: "#000",
-    button1FillColor: "#FFF",
-    button1OutlineColor: "#000",
-    button1LabelFillColor: "#000",
-    button2FillColor: "#F7931A",
-    button2OutlineColor: "#000",
-    button2LabelFillColor: "#000",
-    backgroundImagePath: 'url("/assets/images/home/banner/alexa.png")',
-    backgroundImagePathMobile: 'url("/assets/images/home/banner/alexa-mobile.png")',
-    backgroundImageColor: '#F7931A',
-    flipLayoutOnMobile: false,
-    author: "Alexa Aker",
-    authorLink: "https://github.com/BitcoinDesign/Guide/issues/11"
-  },
-  {
-    // clear
+    // Template
     copyBackgroundColor: "", 
     bitcoinLogoPath: "/assets/banner-bitcoin-logo.svg", 
     bitcoinLogoFillColor: "", 
@@ -58,36 +14,15 @@ let themes = [
     button2FillColor: "",
     button2OutlineColor: "#000",
     button2LabelFillColor: "#000",
-    backgroundImagePath: "",
-    backgroundImagePathMobile: "",
+    backgroundImagePath: 'url("/assets/images/home/banner/template.jpg")',
+    backgroundImagePathRetina: 'url("/assets/images/home/banner/template@2x.jpg")',
+    backgroundImagePathMobile: 'url("/assets/images/home/banner/template-mobile.jpg")',
+    backgroundImagePathMobileRetina: 'url("/assets/images/home/banner/template-mobile@2x.jpg")',
     backgroundImageColor: "#fbfbfb",
     flipLayoutOnMobile: false,
-    author: "Holder of Places",
-    authorLink: "https://github.com/BitcoinDesign/Guide/issues/11"
-  },
-  {
-    // rollercoaster
-    copyBackgroundColor: "#9ABBC2",
-    bitcoinLogoPath: "/assets/banner-bitcoin-logo.svg", 
-    bitcoinLogoFillColor: "#FFF",
-    bitcoinLogoOutlineColor: "#FFF",
-    titleFillColor: "#FFF",
-    titleOutlineColor: "transparent",
-    descriptionFillColor: "#FFF",
-    button1FillColor: "#FFF",
-    button1OutlineColor: "transparent",
-    button1LabelFillColor: "#9ABBC2",
-    button2FillColor: "#FFF",
-    button2OutlineColor: "transparent",
-    button2LabelFillColor: "#9ABBC2",
-    backgroundImagePath: 'url("/assets/images/home/banner/rollercoaster.png")',
-    backgroundImagePathMobile: 'url("/assets/images/home/banner/rollercoaster-mobile.png")',
-    backgroundImageColor: "#FFF",
-    flipLayoutOnMobile: true,
-    author: "Place Holder",
-    authorLink: "https://github.com/BitcoinDesign/Guide/issues/11"
+    author: "Template",
+    authorLink: "https://github.com/BitcoinDesign/Guide/pull/27"
   }
-  
 ];
 
 var shuffleArray = function(array) {
@@ -129,7 +64,9 @@ var applyTheme = function(themeIndex) {
     document.documentElement.style.setProperty('--button-2-outline-color', theme.button2OutlineColor);
     document.documentElement.style.setProperty('--button-2-label-fill-color', theme.button2LabelFillColor);
     document.documentElement.style.setProperty('--background-image-path', theme.backgroundImagePath);
+    document.documentElement.style.setProperty('--background-image-path-retina', theme.backgroundImagePathRetina);
     document.documentElement.style.setProperty('--background-image-path-mobile', theme.backgroundImagePathMobile);
+    document.documentElement.style.setProperty('--background-image-path-mobile-retina', theme.backgroundImagePathMobileRetina);
     document.documentElement.style.setProperty('--background-image-color', theme.backgroundImageColor);
 
     var logoPath = document.getElementById('banner-bitcoin-logo-path');

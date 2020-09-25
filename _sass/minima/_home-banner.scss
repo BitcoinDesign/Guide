@@ -84,6 +84,10 @@
     background-repeat:   no-repeat;
     background-position: center center; 
     transition: all 150ms $ease;
+
+    @include retina() {
+      background-image: var(--background-image-path-mobile-retina);
+    }
   }
 
   @include media-query(medium-down) {
@@ -99,6 +103,10 @@
 
     .home-banner-image {
       background-image: var(--background-image-path);
+
+      @include retina() {
+        background-image: var(--background-image-path-retina);
+      }
     }
 
     .home-banner-copy-wrapper {
