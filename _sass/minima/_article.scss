@@ -22,10 +22,14 @@ article.guide {
 
   & > .-float-left,
   & > .center .-float-left {
-    @include media-query(large) {
-      float: left;
-      margin-right: 30px;
-    }
+    float: left;
+    margin-right: 15px;
+  }
+
+  & > .-float-right,
+  & > .center .-float-right {
+    float: right;
+    margin-left: 15px;
   }
 
   & > .-full-width {
@@ -72,7 +76,8 @@ article.guide {
       margin-left: 18px;
   }
 
-  figure:not(.-float-left), iframe {
+  figure:not(.-float-left, .-float-right),
+  iframe {
     margin-top: $spacing-unit;
     margin-bottom: $spacing-unit;
 
@@ -98,9 +103,20 @@ article.guide {
         box-shadow: 0 20px 10px -8px rgba(black, 0.05);
         border: 1px solid rgba(black, 0.1);
       }
+    }
 
-      & + figure {
-        margin-left: 40px;
+    @include media-query(small) {
+      flex-direction: column;
+      margin-left: -15px;
+      margin-right: -15px;
+      padding: 10px 15px;
+    }
+
+    @include media-query(medium-up) {
+      figure {
+        & + figure {
+          margin-left: 40px;
+        }
       }
     }
   }

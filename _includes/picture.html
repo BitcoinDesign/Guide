@@ -2,10 +2,17 @@
 	<picture>
 		<source
 			media="(max-width: 639px)"
-	    	srcset="{{ include.mobile | relative_url }}" 
+	    	{% if include.mobileRetina %}
+	    		srcset="{{ include.mobile | relative_url }} 1x, {{ include.mobileRetina | relative_url }} 2x"
+	    	{% else %}
+	    		srcset="{{ include.mobile | relative_url }}" 
+	    	{% endif %}
 		>
 	    <img
-	    	src="{{ include.image | relative_url }}" 
+	    	src="{{ include.image | relative_url }}"
+	    	{% if include.retina %}
+	    		srcset="{{ include.image | relative_url }} 1x, {{ include.retina | relative_url }} 2x"
+	    	{% endif %}
 	    	alt="{{ include.alt-text }}" 
 	    	width="{{ include.width }}" 
 	    	height="{{ include.height }}"

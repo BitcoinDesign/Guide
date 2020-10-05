@@ -45,7 +45,8 @@ Section structure
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/coffee.png"
+   image = "/assets/images/guide/getting-started/personal-finance/coffee.jpg"
+   retina = "/assets/images/guide/getting-started/personal-finance/coffee@2x.jpg"
    alt-text = "Coffee icon"
    width = 100
    height = 100
@@ -61,21 +62,23 @@ From a portability perspective, many of these payments happen outside of our hom
 For small, frequent payments we generally accept more risk in exchange for convenience. It becomes more important to quickly execute a transaction than protecting the money involved from as many attack vectors as possible. While we wouldn’t carry our life savings in our pockets, we are comfortable doing so with small amounts, as it is does not have a big impact on us if they are lost or stolen. So not only do we take much fewer security precautions, financial service providers like banks do the same. One example is that you may not need to sign or enter the PIN for credit card payments if the amount is below $25. The only thing that may be required to transact is entering a 4-digit PIN or authentication via face recognition.
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/daily-spending-wallet-setup.png"
+   image = "/assets/images/guide/getting-started/personal-finance/daily-spending-wallet-setup.jpg"
+   retina = "/assets/images/guide/getting-started/personal-finance/daily-spending-wallet-setup@2x.jpg"
    alt-text = "Mobile and desktop wallets"
    caption = "For daily spending, users may use a dedicated mobile wallet they regularly refill from a primary wallet that is better secured."
    width = 1600
    height = 800
 %}
 
-Most stores (online and offline) don't accept bitcoin, so buying coffee is not a very realistic use case for most of us. When that time arrives, users who already pay via smartphone app or NFC-enabled credit card can easily switch to bitcoin wallet apps. A common scenario could be that users create dedicated mobile bitcoin (and lightning) wallets for on-the-go payments, in addition to having separate wallets for larger amounts. Similar to having a bank account and regularly taking out cash at an ATM, users could refill their mobile wallets. From a security perspective, the mobile wallet may use seedless private key storage, meaning that private keys are hidden from the user and stored on the device with an encrypted backup on a cloud storage provider. The primary wallet however would be more strongly secured with a hardware wallet or even a multi signature configuration. This would mirror the primary focus of convenience over security. Beyond key management, payment interactions could be identical to what users are already familiar with.
+Most stores (online and offline) don't accept bitcoin, so buying coffee is not a very realistic use case for most of us. When that time arrives, users who already pay via smartphone app or NFC-enabled credit card can easily switch to bitcoin wallet apps. A common scenario could be that users create dedicated mobile bitcoin (and lightning) wallets for on-the-go payments, in addition to having separate wallets for larger amounts. Similar to having a bank account and regularly taking out cash at an ATM, users could refill their mobile wallets. From a security perspective, the mobile wallet may use seedless private key storage, meaning that private keys are hidden from the user and stored on the device with an encrypted backup on a cloud storage provider. The primary wallet however would be more strongly secured with a [hardware wallet]({% link guide/getting-started/14-hardware.md %}#hardware-wallets) or even a multi signature configuration. This would mirror the primary focus of convenience over security. Beyond key management, payment interactions could be identical to what users are already familiar with.
 
 ## Monthly budgeting
 
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/groceries.png"
+   image = "/assets/images/guide/getting-started/personal-finance/groceries.png"
+   retina = "/assets/images/guide/getting-started/personal-finance/groceries@2x.jpg"
    alt-text = "Alternative text"
    width = 100
    height = 100
@@ -92,7 +95,8 @@ The amounts involved in these transactions are higher and therefore require bett
 
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/monthly-budget-wallet-setup.png"
+   image = "/assets/images/guide/getting-started/personal-finance/monthly-budget-wallet-setup.jpg"
+   retina = "/assets/images/guide/getting-started/personal-finance/monthly-budget-wallet-setup@2x.jpg"
    alt-text = "Alternative text"
    width = 1600
    height = 800
@@ -105,7 +109,8 @@ A solution for bitcoin could be a hardware wallet with an accompanying desktop a
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/bandaid.png"
+   image = "/assets/images/guide/getting-started/personal-finance/bandaid.jpg"
+   retina = "/assets/images/guide/getting-started/personal-finance/bandaid@2x.jpg"
    alt-text = "Alternative text"
    width = 100
    height = 100
@@ -119,7 +124,8 @@ There are times when we are suddenly faced with a more expensive problem like a 
 In traditional finance, this money might get parked in a high-interest savings account or something equivalent that allows for quick low-risk withdrawal but still provides some type of return. Once the fund is set up, the money may not get touched for a long time.
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/savings-wallet-setup.png"
+   image = "/assets/images/guide/getting-started/personal-finance/savings-wallet-setup.jpg"
+   retina = "/assets/images/guide/getting-started/personal-finance/savings-wallet-setup@2x.jpg"
    alt-text = "Alternative text"
    width = 1600
    height = 800
@@ -132,7 +138,8 @@ A bitcoiner may want to set up a cold storage multi signature wallet. In this ty
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/car.png"
+   image = "/assets/images/guide/getting-started/personal-finance/car.jpg"
+   retina = "/assets/images/guide/getting-started/personal-finance/car@2x.jpg"
    alt-text = "Alternative text"
    width = 100
    height = 100
@@ -148,7 +155,8 @@ A sinking fund is a way to systematically set money aside for a planned large ex
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/safe.png"
+   image = "/assets/images/guide/getting-started/personal-finance/safe.jpg"
+   retina = "/assets/images/guide/getting-started/personal-finance/safe@2x.jpg"
    alt-text = "Alternative text"
    width = 100
    height = 100
@@ -162,7 +170,8 @@ For example, [Glacier Protocol](https://glacierprotocol.org){:target="_blank"} i
 </div>
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/glacier-protocol-wallet-setup.png"
+   image = "/assets/images/guide/getting-started/personal-finance/glacier-protocol-wallet-setup.jpg"
+   retina = "/assets/images/guide/getting-started/personal-finance/glacier-protocol-wallet-setup@2x.jpg"
    alt-text = "Alternative text"
    caption="The Glacier prototcol requires a complex hardware setup that involves 6 different computers, 6 USB drives, a smartphone, printer and various other equipment."
    width = 1600
@@ -176,7 +185,8 @@ Many people don’t personally custody their long-term savings. They rely on ban
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/stocks.png"
+   image = "/assets/images/guide/getting-started/personal-finance/stocks.jpg"
+   retina = "/assets/images/guide/getting-started/personal-finance/stocks@2x.jpg"
    alt-text = "Alternative text"
    width = 100
    height = 100

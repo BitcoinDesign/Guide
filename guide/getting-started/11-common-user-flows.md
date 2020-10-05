@@ -18,14 +18,15 @@ Let's take a look at some common user needs and workflows that can be created fo
 
 ## Orientation
 
-This step is many times overlooked, but before anyone uses your product, they first need to find out that it exists, understand and develop interest and decide to start using it.
+This step is many times overlooked, but before anyone uses your product, they first need to find out that it exists, understand and develop interest and decide to start using it. If users cannot quickly learn the purpose and benefits of the application, they are less likely to use it. Also see the first three phasess of the [usage life cycle]({% link guide/getting-started/10-usage-life-cycle.md %}).
 
 ## Software download & installation
 
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/download.png"
+   image = "/assets/images/guide/getting-started/common-user-flows/download.jpg"
+   retina = "/assets/images/guide/getting-started/common-user-flows/download@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
@@ -67,7 +68,8 @@ The App Store landing page includes screenshots, a description and updates in th
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/onboarding.png"
+   image = "/assets/images/guide/getting-started/common-user-flows/onboarding.jpg"
+   retina = "/assets/images/guide/getting-started/common-user-flows/onboarding@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
@@ -104,7 +106,8 @@ A whole section about onboarding is in development for this guide, stay tuned fo
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/create-wallet.png"
+   image = "/assets/images/guide/getting-started/common-user-flows/create-wallet.jpg"
+   retina = "/assets/images/guide/getting-started/common-user-flows/create-wallet@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
@@ -124,28 +127,32 @@ One of the most complex users flows in Bitcoin is the creation of multisignature
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/import-wallet.png"
+   image = "/assets/images/guide/getting-started/common-user-flows/import-wallet.jpg"
+   retina = "/assets/images/guide/getting-started/common-user-flows/import-wallet@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
    layout = "float-left"
 %}
 
+We ask users to securely back up their keys when they create new wallets so they can restore them later. This might be due to practical reasons like switching to a new computer or from a laptop to a smartphone. It may also be part of an investment strategy, like when a user wants to access bitcoin from cold storage after not interacting with them for months or years.
+
 </div>
-
-
 
 ## Securing a wallet
 
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/secure-wallet.png"
+   image = "/assets/images/guide/getting-started/common-user-flows/secure-wallet.jpg"
+   retina = "/assets/images/guide/getting-started/common-user-flows/secure-wallet@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
    layout = "float-left"
 %}
+
+Similar to fiat currencies, securely storing money can be as simple as storing some coins in your pocket, or highly complex with safety deposit boxes at multiple banks. For self-custodial wallets, all of this is in the hands of the users, although wallet software ideally provides guidelines and support to more easily follow best practices. Continue to the Key Management section for introductions and deep-dives into different techniques.
 
 </div>
 
@@ -154,26 +161,90 @@ One of the most complex users flows in Bitcoin is the creation of multisignature
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/sending.png"
+   image = "/assets/images/guide/getting-started/common-user-flows/sending.jpg"
+   retina = "/assets/images/guide/getting-started/common-user-flows/sending@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
    layout = "float-left"
 %}
 
+While we all prefer to receive bitcoin, there are times when we need to send them to others. At the core, sending bitcoin can be a very simple matter of entering an address and bitcoin amount and tapping "Send". It can also scale up to a much more complex interaction when batching transactions, using a multisignature wallet or taking advantage of a privacy-preserving technique like a PayJoin.
+
 </div>
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/common-user-flows/sending-ui-complexity.jpg"
+   retina = "/assets/images/guide/getting-started/common-user-flows/sending-ui-complexity@2x.jpg"
+   alt-text = "Interface design examples of two send screens with different levels of complexity"
+   caption = "A bitcoin transaction can be extremely simple, but can also be finely tuned for users with specific needs."
+   width = 800
+   height = 656
+%}
+
+Once a transaction has been broadcast, the bitcoin network starts processing it. Users may want to stay informed about this progress, particularly when a transaction takes longer than expected. In extreme cases, it is possible to retroactively increase the transaction fee so it gets validated faster with a technique called Replace-by-Fee.
 
 ## Requesting bitcoin
 
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/receiving.png"
+   image = "/assets/images/guide/getting-started/common-user-flows/requesting.jpg"
+   retina = "/assets/images/guide/getting-started/common-user-flows/requesting@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
    layout = "float-left"
 %}
+
+Equivalent to creating an invoice, requesting bitcoin involves entering information about this specific transaction and forwarding it to the payer. Overall, there is less complexity involved in this process as for sending, but there are a few things for designers to consider.
+
+</div>
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/common-user-flows/receiving-ui-example.jpg"
+   retina = "/assets/images/guide/getting-started/common-user-flows/receiving-ui-example@2x.jpg"
+   alt-text = "Interface design examples of two send screens with different levels of complexity"
+   caption = "A basic example of the information a user needs to add when requesting bitcoin."
+   width = 800
+   height = 336
+%}
+
+While it is initially intuitive to re-use the same receiving address over and over, this practice is highly discouraged. Anyone with this address can easily see what other payments are being made to it and how the bitcoin are spent. The UI should encourage users to create new addresses for each invoice. This also makes it easier for the software to understand when a specific payment has been received.
+
+The most important consideration is around how this request is securely shared and received. When transmitting this information, there is a risk that a third party can intercept it and tamper with it. This can result in Bitcoin getting sent to an attackers address instead. So it is good to consider offering ways for both payee and payer to verify the accuracy of the information (for example by allowing them to share the information via two different channels).
+
+As for data formats for sharing, [BIP 21](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki){:target="_blank"} describes a URI scheme to turn requests into links that can be shared like any other link. On  click, wallets that support this scheme can immediately show the send screen with the correct information pre-filled. Links can also be encoded and transmitted via QR code. Since the scheme also allows for inclusion of an address label and transaction description, it allows both sender and recipient to stay organized.
+
+## Receiving bitcoin
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/common-user-flows/receiving.jpg"
+   retina = "/assets/images/guide/getting-started/common-user-flows/receiving@2x.jpg"
+   alt-text = ""
+   width = 100
+   height = 100
+   layout = "float-left"
+%}
+
+Once a user has requested a payment, they are naturally interested in knowing when it has been sent and confirmed. Even when the request was not specifically made, it is nice to know when you receive money. This can ideally be communicated via push notifications or similar mechanisms. Since the Bitcoin network does not have native functionality to push updates to wallet clients, this requires wallet software to regularly check for new transactions, or the use of a trusted third-party service. 
+
+</div>
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/common-user-flows/receive-notification.jpg"
+   retina = "/assets/images/guide/getting-started/common-user-flows/receive-notification@2x.jpg"
+   alt-text = "Interface design examples of two send screens with different levels of complexity"
+   width = 400
+   height = 158
+   layout = "float-right"
+%}
+
+A user may also want to check in and see if there are any previous requests that have not been completed yet. This is easily possible if the user has initiated all requests on the same wallet and used a new address for each one. In this case, a request can be considered fulfilled if at least one payment has been received with the total amount the user asked for. It is not as clear if addressess are getting re-used (how to tell which payment was for which purpose?) or the request has been made with another wallet (as this meta data is not stored and synced via the Bitcoin network).
 
 </div>
 
@@ -182,36 +253,56 @@ One of the most complex users flows in Bitcoin is the creation of multisignature
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/transactions.png"
+   image = "/assets/images/guide/getting-started/common-user-flows/transactions.jpg"
+   retina = "/assets/images/guide/getting-started/common-user-flows/transactions@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
    layout = "float-left"
 %}
 
+While the bitcoin network only stores transactions, a wallet is more than just a list of bitcoin sent and received. Behind each transaction is an interaction between people and companies (or software). So for a user to make sense and work with transactions, they typically need to apply an organizational system. This could be a list of contacts they assign addresses to, tags like "allowance" or "business expenses", or simple describing what a transaction was for.
+
 </div>
+
+Wallet software can support users and make this easier by offering organizational features and automated organization as it is possible.
+
+This is not only helpful to users, but can also help improve privacy. Since the individual transaction history can be traced, it is helpful to isolate transactions by sender and/or recipient. If I receive bitcoin from an exchange and then pay a store, then there is a chance that personal information about myself can be uncovered by making that connection. With well-labelled transactions, wallets can help users avoid this type of situation.
 
 ## Wallet maintenance
 
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/create-wallet.png"
+   image = "/assets/images/guide/getting-started/common-user-flows/maintenance.jpg"
+   retina = "/assets/images/guide/getting-started/common-user-flows/maintenance@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
    layout = "float-left"
 %}
 
+It is not necessarily intuitive that a wallet may need maintenance, but there are a few actions users should regularly do in order to ensure their money is secure and private.
 
 </div>
+
+### Sweep dust
+{:.no_toc}
+
+This is similar to exchanging many small coins into bills (like exchanging 100 one-dollar bills to a single one-hundred dollar bill). Dust refers to small amounts of unspent bitcoin in a wallet. If they add up, future transactions fees can become costly. That's because fees are partially based on transaction size. This size increases with every output from a previous transaction that is included. Sweeping dust helps by making a transaction to yourself that turns the many outputs with small amounts into a single output with a larger amount. This is typically done at a time when there are few transactions being done on the bitcoin network, which is another factor in fee calculation (senders choose how much they want to pay in fees, and the network prioritizes transactions that pay more).
+
+### Test hardware wallets
+{:.no_toc}
+
+Whether it's to ensure a hardware wallet still works, or to install a software update, it is recommended to regularly verify that everything still operates as expected. If a hardware wallet is exclusively used with a particular application, then the application can offer users support with this task (for example, by reminding users to check the hardware wallet every six months). The higher the amount stored, the more important it is to regularly check on the health of the setup.
 
 ## Resolving a problem
 
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/create-wallet.png"
+   image = "/assets/images/guide/getting-started/common-user-flows/resolving-problems.jpg"
+   retina = "/assets/images/guide/getting-started/common-user-flows/resolving-problems@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
