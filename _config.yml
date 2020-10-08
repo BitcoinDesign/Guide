@@ -57,11 +57,8 @@ twitter:
 social:
   name: Bitcoin Design
   links:
-    - https://twitter.com/BitcoinDesign
-    - https://www.facebook.com/BitcoinDesign
-    - https://www.linkedin.com/in/BitcoinDesign
-    - https://github.com/BitcoinDesign
-    - https://bitcoindesign.slack.com/
+    github: bitcoindesign
+    slack: bitcoindesign
 
 exclude:
   - README.md

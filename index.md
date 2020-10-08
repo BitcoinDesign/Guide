@@ -4,3 +4,18 @@
 
 layout: home
 ---
+
+## We are an open community with the goal of helping improve the design of [bitcoin](https://bitcoin.org){:target="_blank"} and its ecosystem.
+
+
+Bitcoin may have been put into the world by a single entity, but today it is a public good contributed to by thousands and used by millions. Our goal is to make bitcoin easier to use by more people around the world, while always nourishing the original vision that makes bitcoin so unique.
+
+We use [Slack](https://bitcoindesign.slack.com){:target="_blank"} to communicate day and night, and [Github](https://github.com/BitcoinDesign/Meta){:target="_blank"} to organize the work we produce. Why don’t you jump in and join us?
+
+We believe that great things happen when people from many different backgrounds with different ideas and perspectives come together. Our Slack workspace was created as an open and safe space to discuss everything bitcoin and design.
+
+Open source and open design are part of our foundation, so all our work happens in public and is open for anyone to contribute to.
+
+### The Bitcoin Design Guide
+
+Our first big project is to create a [Bitcoin Design Guide](https://github.com/BitcoinDesign/Guide){:target="_blank"}. Designing for bitcoin projects is hard and our goal with the guide is to provide thorough explanations, best practices and other resources to support our fellow creators. More projects are on the way, and you are welcome to join in and help us.
