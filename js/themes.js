@@ -106,11 +106,15 @@ function docReady(fn) {
 docReady(function() {
     applyTheme(0);
 
-    document.getElementById('banner-bitcoin-logo-svg').addEventListener('click', function() {
+    document.getElementById('banner-bitcoin-logo-svg').addEventListener('click', function(event) {
+        event.preventDefault();
+        
         applyNextTheme();
     });
 
-    document.getElementById('home-banner-info-next').addEventListener('click', function() {
+    document.getElementById('home-banner-info-next').addEventListener('click', function(event) {
+        event.preventDefault();
+        
         applyNextTheme();
     });
 });

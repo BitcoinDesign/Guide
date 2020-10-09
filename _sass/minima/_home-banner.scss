@@ -191,5 +191,26 @@
       }
     }
   }
+
+  @include media-query(tiny) {
+    .home-banner-info-wrapper {
+      > p {
+        font-size: 10px;
+      }
+
+      .home-banner-info-options {
+
+        a,
+        button {
+          font-size: 10px;
+          line-height: 20px;
+        }
+
+        a + button {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
 }
 
