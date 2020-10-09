@@ -21,7 +21,9 @@
         width: 40px;
         height: 40px;
         overflow: visible;
+        stroke: black;
         stroke-width: 1.5px;
+        transition: all 100ms $ease;
       }
 
       &:hover {
@@ -54,6 +56,13 @@
         svg {
           width: 30px;
           height: 30px;
+          transition: all 150ms $ease;
+        }
+
+        &:hover {
+          svg {
+            fill: $primary-color !important;
+          }
         }
 
         & + a {
@@ -131,7 +140,7 @@
       flex-wrap: wrap;
 
       a.-logo {
-        flex-grow: 1;
+        margin-right: auto;
       }
       
       .edit-license {
