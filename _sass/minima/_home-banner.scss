@@ -83,7 +83,7 @@
     background-size:     cover;
     background-repeat:   no-repeat;
     background-position: center center; 
-    transition: all 150ms $ease;
+    transition: background-color 150ms $ease;
 
     @include retina() {
       background-image: var(--background-image-path-mobile-retina);
