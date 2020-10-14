@@ -24,12 +24,30 @@ article.guide {
   & > .center .-float-left {
     float: left;
     margin-right: 15px;
+    max-width: 50%;
   }
 
   & > .-float-right,
   & > .center .-float-right {
     float: right;
     margin-left: 15px;
+    max-width: 50%;
+  }
+
+  @include media-query(medium-up) {
+    & > .-float-left-desktop,
+    & > .center .-float-left-desktop {
+      float: left;
+      margin-right: 15px;
+      max-width: 50%;
+    }
+
+    & > .-float-right-desktop,
+    & > .center .-float-right-desktop {
+      float: right;
+      margin-left: 15px;
+      max-width: 50%;
+    }
   }
 
   & > .-full-width {

@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Markdown guide
-parent: Drop-in Resources
+parent: Resources
 nav_order: 3
 ---
 

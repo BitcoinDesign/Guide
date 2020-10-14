@@ -58,7 +58,7 @@ In open design, we...
 - are transparent and share our process and work
 - make it easy for others to use and build on our ideas and work
 - are inclusive and help others
-- are open-minded and flexibile 
+- are open-minded and flexible 
 - work multidisciplinary, because good results require different perspectives and skillsets
 - continuously learn independently, and from each other
 - rely on our peer group for free and communal validation of quality

@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Icons
-parent: Drop-in Resources
+parent: Resources
 nav_order: 2
 ---
 

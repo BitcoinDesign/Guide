@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Drop-in Resources
+title: Resources
 nav_order: 4
 has_children: true
 permalink: guide/resources
