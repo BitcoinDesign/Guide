@@ -5,7 +5,7 @@
 layout: home
 ---
 
-## We are an open community with the goal of helping improve the user experience and design of [bitcoin](https://bitcoin.org){:target="_blank"} and its ecosystem.
+## We are an open community with the goal of improving the user experience and design of [bitcoin](https://bitcoin.org){:target="_blank"} and its ecosystem.
 
 
 Bitcoin is a digital currency and was invented in 2008. Since then it has become a public good, contributed to by thousands and used by millions. Our goal is to make bitcoin easier to use by more people around the world, while always nourishing the original vision that makes bitcoin so unique.
