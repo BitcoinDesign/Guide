@@ -35,6 +35,10 @@ projets:
     site: https://wasabiwallet.io/
     description: Wasabi is an open-source, non-custodial, privacy-focused Bitcoin wallet for Desktop, that implements trustless CoinJoin.
     image: /assets/images/contribute/wasabi.png
+  - name: Bitcoin Core
+    site: https://bitcoincore.org/
+    description: Bitcoin Core is an open source project which maintains and releases Bitcoin client software called “Bitcoin Core”.
+    image: /assets/images/contribute/bitcoincore.png  
 
 ---
 
