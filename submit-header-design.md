@@ -47,7 +47,7 @@ You will notice that it is not possible to change the type face or layout. We tr
    height = 476
 %}
 
-You can upload a custom image for mobile, plus there is one extra option. You can choose the order of the two banner halves.
+You can upload a custom image for mobile. Plus there is one extra option, you can choose the order of the two banner halves.
 
 </div>
 
@@ -92,4 +92,3 @@ Please note that not all designs will make it to the live site. You need rough c
 Once there is consensus, you can implement your design and submit a pull request. If you'd like support with this process, reach out in #website-dev channel on Slack.
 
 We're excited to see what you will come up with.
-
