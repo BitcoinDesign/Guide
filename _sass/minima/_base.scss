@@ -132,6 +132,7 @@ li {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: $heavy-font-weight;
+  line-height: 1.4;
   color: var(--frontHex);
 }
 
@@ -146,6 +147,7 @@ h1 {
 a {
   color: $link-base-color;
   text-decoration: none;
+  transition: color 100ms $ease;
 
   &:visited {
     color: $link-visited-color;
