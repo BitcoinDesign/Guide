@@ -6,7 +6,7 @@ nav_order:
 
 # Content guidelines
 
-Thank your for helping shape the Bitcoin Design Guide. We have many different authors with different ideas and voices. To ensure a coherent and consistent experience for readers, we collected a few tips on writing here.
+Thank your for helping shape the Bitcoin Design Guide. We have many different authors with different ideas and voices. To ensure a coherent and consistent experience for readers, we assembled the below guidelines to help.
 
 #### Know your reader
 
@@ -14,29 +14,31 @@ The guide is primarily meant as a tool for people who work on open-source, non-c
 
 #### Speak to the reader
 
-Address the reader directly via "you".
+Address the reader directly with "you".
 
 #### Use simple language
 
-Bitcoin is meant for a global audience, so you need to assume that many readers are not native English speakers. Many speech writers intentionally write for a 6 to 8th grade proficiency level. This allows a wider audience to understand the content (including non-native speakers), and it forces them to clarify their thinking. You can take advantage of readability tools like [Hemingway](http://www.hemingwayapp.com). They analyze text, provide a readability score, and suggest ways to simplify the writing.
+Bitcoin is meant for a global audience, so you need to assume that many readers are not native English speakers. Many speechwriters intentionally write for a 6 to 8th grade proficiency level. This lets a wider audience understand the content (including non-native speakers), and it forces them to clarify their thinking. 
 
-Note that simple language does not mean "dumbing things down". There are also some specific topics that require more complex language. A good guidelines is that the deeper a reader gets into a topic, the more complex the language can be (it does not have to be).
+Readability tools like [Hemingway](http://www.hemingwayapp.com) are very useful since they analyze text, provide a readability score, and suggest ways to simplify the writing.
+
+Note that simple language does not mean "dumbing things down". There are specific topics that require more complex language. A good rule of thumb is that the deeper a reader gets into a topic, the more complex the language can be (it does not have to be).
 
 #### Be precise
 
-Focus on the information that will be the most useful to your reader. If a page gets too long, split it up into multiple pages. If you want to allow users to dive deeper into a topic that is not core to the guide, see if there are third-party resources you can link to.
+Focus on the information that will be the most useful to your reader. If a page gets too long, split it up into multiple pages. If you want to allow users to dive deeper into a topic that is not core to the guide, please try to link to a third party for readers.
 
 #### Give practical tips, but don't be overly prescriptive
 
-Provide recommendations and best practices but do not force specific solutions on readers. The project the reader is working on may require something slightly or completely different because of unique context.
+Provide recommendations and best practices but do not force specific solutions on readers. The project the reader is working on may require something slightly or completely different because of a unique context.
 
 #### Get the reader involved
 
-You can consider asking questions directly to the user before giving answers. You can also use work-sheets, to-do lists, do's and don'ts or other formats to get readers hands-on. 
+You can consider asking questions directly to the user before giving answers. You can also use worksheets, to-do lists, do's and dont's or other formats to get readers hands-on. 
 
 #### Use the right medium
 
-One picture can say more than one thousand words. Plus, we can use videos, interactive prototypes, diagrams, and more. Take advantage of these different media and their strengths at communicating differen types of information. If you'd like help creating this type of content, ask in the community.
+One picture can say more than one thousand words. Plus, we can use videos, interactive prototypes, diagrams, and more. Take advantage of these different media and their strengths at communicating different types of information. If you'd like help creating this type of content, ask in the community.
 
 #### Show examples
 
@@ -48,7 +50,7 @@ The guide is a work in progress and needs to evolve to stay relevant. What we wr
 
 #### Write in the open if you can
 
-It is healthy to get early feedback as it may prevent you from going into a wrong direction for too long. There is a whole community around you to help you create better content that helps more people.
+It is healthy to get early feedback as it may prevent you from going in the wrong direction for too long. There is a whole community around you to help you create better content that helps more people.
 
 
 
