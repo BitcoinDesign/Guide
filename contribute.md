@@ -38,7 +38,7 @@ projets:
 
 ---
 
-Help build this guide, find an exiting project to help scale, or join the community and start something new.
+Help build this guide, find an exciting project to help scale, or join the community and start something new.
 
 
 <div class="grid projects">
