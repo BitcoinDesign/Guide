@@ -89,6 +89,6 @@ Once your design is in good shape and you'd like to get some first feedback from
 
 Please note that not all designs will make it to the live site. You need rough consensus (see our general [project life cycle](https://github.com/BitcoinDesign/Meta/blob/master/Projects.md)) from the community. So before you start implementing your theme, it is a good idea to get some feedback first. Please also make sure you respect any copyrights and licenses if you are using resources from others.
 
-Once there is consensus, you can implement your design and submit a pull request. If you'd like support with this process, reach out in #website-dev channel on Slack.
+Once you have implemented your design, submit a pull request for another round of review. If you'd like support with this process, reach out in #website-dev channel on Slack.
 
 We're excited to see what you will come up with.
