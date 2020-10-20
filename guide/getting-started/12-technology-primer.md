@@ -1,30 +1,208 @@
 ---
 layout: guide
-title: X Bitcoin technology primer
+title: Bitcoin technology primer
 nav_order: 12
 parent: Getting started
 permalink: /getting-started/technology-primer/
 ---
 
-# Bitcoin technology primer
-
 <!--
 
-It can take many years to understand bitcoin in every detail, but luckily you don’t need to know everything to design great products. Let’s take a look at the most important aspects of the technology behind bitcoin, with an eye towards the basics needed to design bitcoin products.
+Framing
+
+Start with something readers will know, like "What is a bitcoin" and "How do I own bitcoin",
+and work backwards to the technology.
+
+-->
+
+
+# Bitcoin technology primer
+
+It can take many years to understand bitcoin in every detail, but luckily you don’t need to know everything to design great products. Let’s take a look at the most important ideas and technolgies behind Bitcoin, with an eye towards the basics you may need to design bitcoin products.
 
 The most fundamental read is the Bitcoin White Paper. Published on October 31, 2008 by the mysterious Satoshi Nakamoto, it lays out the fundamental system design in only 9 short pages.
 
-The white paper describes Bitcoin as electronic peer-to-peer cash. Just like cash, users are fully in control of their Bitcoin, and also like cash, they can send Bitcoin to anyone they want, without any middlemen. This is achieved through a network of thousands of computers that are in constant communication with each other to pass back and forth transactions. These so-called nodes ensure that users can only spend Bitcoin they own, and that they are only spent once. Anyone with a computer can run a node, and many people do, as it provides them with extra certainty that their Bitcoin are secure.
+Let's start by differentiating between bitcoin and Bitcoin. Lowercase bitcoin refers to the currency. So you may have 1 bitcoin in your wallet. Capitalized Bitcoin refers to the protocol and payment network.
 
-So how do you actually own Bitcoin? In simple terms, owning 1 Bitcoin means that you have control over a Bitcoin address that somebody else sent 1 Bitcoin to.
+## What is a bitcoin?
 
-Addresses can easily be generated on a smartphone or computer via a Bitcoin wallet application. Every address comes with a matching private key, which allows you to send the Bitcoin associated with the address. As the name implies, it is very important to keep those private keys secure, as anyone can use them to control your hard-earned Bitcoin.
+<div class="center" markdown="1">
 
-While we typically use one credit card number or have one bank account number in traditional banking, addresses in Bitcoin offer a bit more flexibility. While it is not required, it is recommended that a new address is generated for every transaction. Since all Bitcoin transactions are public, reusing the same address makes it easy for others to analyze your financial habits.
-That’s where wallets come in. A Bitcoin wallet is typically based on a so-called recovery phrase, which is similar to private keys of addresses mentioned above. From a recovery phrase, wallets can generate many unique addresses.
+{% include image.html
+   image = "/assets/images/guide/getting-started/technology/transaction.jpg"
+   retina = "/assets/images/guide/getting-started/technology/transaction@2x.jpg"
+   alt-text = ""
+   width = 400
+   height = 400
+   layout = "float-right"
+%}
 
-This mechanism of generating a piece of information from another one, where one can be shared and the other one is kept private is known as public-key cryptography. While there are many other cryptographic techniques used in Bitcoin, this is one that you should understand well.
+Bitcoin (as in "I have 1 bitcoin") are just numbers associated with addresses. An address is a long, complex string (like ``1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2```), and a transaction involves sending bitcoin from one address to another. This reduces the balance (more on balances below) of the sending address, and increases the balance of the receiving address.
 
-So you may ask how Bitcoin are created? This involves a process we know as mining. Miners are computers that help process transactions. For this effort, which requires huge amounts of computing power, they are rewarded with freshly minted Bitcoin. At the moment, 6.25 new Bitcoin are created around every 10 minutes, which is an annual inflation rate of 1.86%. The creation of Bitcoin is tightly controlled via code because money only has value if it is scarce.
+Owning a bitcoin therefore means being in control of one or more addresses that have received bitcoin.
 
--->
+</div>
+
+## What's my balance?
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/technology/balance.jpg"
+   retina = "/assets/images/guide/getting-started/technology/balance@2x.jpg"
+   alt-text = ""
+   width = 400
+   height = 400
+   layout = "float-right"
+%}
+
+The Bitcoin network does not store your balance. It is dynamically calculated by summing up all bitcoin you have received and subtracting the ones you have spent. So a wallet application needs to know your full transaction history in order to calculate how much you bitcoin you still control.
+
+</div>
+
+## How do I get an address?
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/technology/addresses.jpg"
+   retina = "/assets/images/guide/getting-started/technology/addresses@2x.jpg"
+   alt-text = ""
+   width = 400
+   height = 400
+   layout = "float-right"
+%}
+
+Modern Bitcoin wallet can generate as many addresses as you need (using a standard called Hierarchical Deterministic Wallets, specified in [BIP 32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki){:target="_blank"}).
+
+Note that addresses are generated on your own computer. There is no centralized system to verify or approve them.
+
+It is best practice to use a new address for every transaction as it makes it easier to identify them. There are also privacy benefits, as transaction data is public and re-using addresses allows for tracing of your financial habits.
+
+</div>
+
+## How do you control an address?
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/technology/address-and-private-key.jpg"
+   retina = "/assets/images/guide/getting-started/technology/address-and-private-key@2x.jpg"
+   alt-text = ""
+   width = 400
+   height = 400
+   layout = "float-right"
+%}
+
+As we know now, bitcoin are just numbers linked to addresses. An address can receive bitcoin, but in oder to spend those bitcoin, a private key is needed. When an address is generated, a matching private key is also created (this technique is called [public key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography){:target="_blank"}). While the address can be publicly shared, the private key should be kept a secret as anyone who knows it can spend from the address.
+
+Wallet software typically hides private keys, as users don't need to interact with them. But just like addresses, private keys are generated on your computer, and there is no central authority. That is why it is crucial for users to back up their keys, and for applications to support and encourage best practices.
+
+Read more in our chapter about [Private Key Management](/).
+
+</div>
+
+## What is the mempool?
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/technology/mempool.jpg"
+   retina = "/assets/images/guide/getting-started/technology/mempool@2x.jpg"
+   alt-text = ""
+   width = 400
+   height = 400
+   layout = "float-right"
+%}
+
+Every transaction needs to be processed before it arrives at the recipient. The waiting line for new transactions is called the mempool. The Bitcoin network can only process a certain amount of transactions per day, so it may take longer to process your transactions during busy times. Transactions that involve higher fees are typically processed faster.
+
+</div>
+
+## What is a block?
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/technology/block.jpg"
+   retina = "/assets/images/guide/getting-started/technology/block@2x.jpg"
+   alt-text = ""
+   width = 400
+   height = 400
+   layout = "float-right"
+%}
+
+From the mempool, transactions are bundled into blocks. One a transaction is in a block that the network has accepted, the transaction is considered "confirmed". Blocks are created roughly every 10 minutes.
+
+They have restrictions on file size, so a block can only contain a certain number of transactions.
+
+</div>
+
+## What is hashing?
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/technology/hashing.jpg"
+   retina = "/assets/images/guide/getting-started/technology/hashing@2x.jpg"
+   alt-text = ""
+   caption = "Example of a SHA-256 hash."
+   width = 400
+   height = 400
+   layout = "float-right"
+%}
+
+Another fundamental technique to cryptography and Bitcoin is called hashing. It is the process of taking data and applying a function that creates a unique identifier for it, which can be thought of as a fingerprint. This process cannot be reversed, meaning that that the original data cannot be restored from the hash. Because hashes are small in size, they are a great way to verify the authenticity of specific information. 
+
+</div>
+
+## What is a blockchain?
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/technology/blockchain.jpg"
+   retina = "/assets/images/guide/getting-started/technology/blockchain@2x.jpg"
+   alt-text = ""
+   width = 400
+   height = 400
+   layout = "float-right"
+%}
+
+A term that has become widely popular, blockchain refers to the linking of blocks by embedding information about one block into the next one. Every block contains a hash of the previous block. This allow for verifying that new blocks are based on the same data set that nodes in the Bitcoin network have agreed on.
+
+</div>
+
+## How are transactions processed?
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/technology/mining-a-block.jpg"
+   retina = "/assets/images/guide/getting-started/technology/mining-a-block@2x.jpg"
+   alt-text = ""
+   width = 400
+   height = 400
+   layout = "float-right"
+%}
+
+This function is performed by miners, which are computers that group new transactions from the mempool into blocks and try to get those blocks accepted by the Bitcoin network. They are called miners because the creation of new blocks is rewarded by freshly minted bitcoin. This is the only way bitcoin are created, so there is heavy competition around mining.
+
+</div>
+
+## Nodes
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/technology/node.jpg"
+   retina = "/assets/images/guide/getting-started/technology/node@2x.jpg"
+   alt-text = ""
+   width = 400
+   height = 400
+   layout = "float-right"
+%}
+
+While miners create blocks, nodes verify and store those blocks. Just like miners, nodes are computers connected to each other, constantly exchanging information to ensure that the rules of the Bitcoin protocol are adhered to. 
+
+</div>

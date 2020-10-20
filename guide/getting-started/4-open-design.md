@@ -25,6 +25,9 @@ Examples in Bitcoin Design
 - Johns exploring CoinJoins with Wasabi and wider bitcoin audience (cross-project)
 - Bosch working with Bitcoin Core GUI (project-specific)
 
+Ideas
+- Add quotes and stories from designers
+
 -->
 
 # Open design
@@ -80,6 +83,7 @@ As mentioned above, it can be difficult to find a starting point in the Bitcoin 
 - Join the Bitcoin Design Community on Slack and see what others are discussing. A good way to get started is by asking questions and joining conversations that interest you. Our Community Calls and Design Review calls are also great ways to get active.
 - Redesign a Bitcoin application of your choice. Even as a brief exercise, a redesign is a great way to develop deeper understanding of how something works and why certain decisions were made.
 - Read, watch and listen. There is a lot of great material out there to learn more about Bitcoin. Design-focused content is unfortunately not as common but expanding into related materials (like finance) might help.
+- Review your tools and workflows, and the work you produce, and consider how you can make it more public and accesssible for others.
 
 ## Licensing
 
