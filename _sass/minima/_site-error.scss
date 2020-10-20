@@ -1,0 +1,77 @@
+@mixin error-background-color {
+  background-color: $yellow-400;
+}
+
+@mixin error-link-color {
+  color: $white;
+}
+
+@mixin error-text-color {
+  color: $blue-900
+}
+
+.error {
+  .site-header {
+    @include error-background-color;
+    @include error-link-color;
+    border-bottom: 1px solid $white;
+    
+    .wrap {
+      .wrap-inner {
+        @include error-background-color;
+        @include error-link-color;
+      }
+      
+      .site-title {
+        @include error-link-color;
+      }
+
+      .site-nav {
+        .page-link {
+            @include error-link-color;
+            
+            &:hover {
+              @include error-link-color;
+            }
+
+            &.active {
+              @include error-link-color;
+            }
+        }
+      }
+      .nav-search {
+        display: none; //TODO remnove and add correct styling for search
+      }
+    }
+  }
+
+  .page-content {
+    @include error-background-color;
+  }
+
+  .site-footer {
+    @include error-background-color;
+
+    .wrapper {
+      .footer-nav
+        .page-link {
+          @include error-link-color;
+        }
+      
+
+      .footer-col-wrapper,
+      .social-links {
+        @include relative-font-size(0.7375);
+        @include error-link-color;
+      }
+    }
+  }
+
+  h1 {
+    @include error-text-color;
+  }
+  
+  p {
+    @include error-text-color;
+  }
+}
