@@ -18,7 +18,7 @@ and work backwards to the technology.
 
 # Bitcoin technology primer
 
-It can take many years to understand bitcoin in every detail, but luckily you don’t need to know everything to design great products. Let’s take a look at the most important ideas and technolgies behind Bitcoin, with an eye towards the basics you may need to design bitcoin products.
+It can take many years to understand bitcoin in every detail, but luckily you don’t need to know everything to design great products. Let’s take a look at the most important ideas and technologies behind Bitcoin, with an eye towards the basics you may need to design bitcoin products.
 
 ## The whitepaper
 
@@ -33,7 +33,7 @@ It can take many years to understand bitcoin in every detail, but luckily you do
    layout = "float-right-desktop"
 %}
 
-The most fundamental read is the Bitcoin White Paper. Published on October 31, 2008 by the mysterious Satoshi Nakamoto, it lays out the fundamental system design in only 9 short pages.
+The most fundamental read is the [Bitcoin whitepaper](https://bitcoin.org/bitcoin.pdf){:target="_blank"}. Published on October 31, 2008 by the mysterious Satoshi Nakamoto, it lays out the fundamental system design in only 9 short pages. It is not overly technical and makes for a great starting point.
 
 </div>
 
@@ -67,7 +67,9 @@ It's both. Lowercase bitcoin refers to the currency. So you may have 1 bitcoin i
    layout = "float-right-desktop"
 %}
 
-Bitcoin (as in "I have 1 bitcoin") are numbers associated with addresses. Just like bank account numbers, addresses are long, alphanumerical strings. A transaction involves sending bitcoin from one address to another. This reduces the balance (more on that below) of the sending address, and increases the balance of the receiving address.
+Bitcoin (as in "I have 1 bitcoin") are numbers associated with addresses.
+
+Just like bank account numbers, addresses are long, alphanumerical strings. A transaction involves sending bitcoin from one address to another. This reduces the balance (more on that below) of the sending address, and increases the balance of the receiving address.
 
 Owning a bitcoin therefore means being in control of one or more addresses that have received bitcoin.
 
@@ -103,9 +105,7 @@ Yes. Bitcoin has a subunit called Satoshi. 1 bitcoin is one hundred million Sato
    layout = "float-right-desktop"
 %}
 
-Modern Bitcoin wallet can generate as many addresses as you need (using a standard called Hierarchical Deterministic Wallets, specified in [BIP 32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki){:target="_blank"}).
-
-Note that addresses are generated on your own computer. There is no centralized system to verify or approve them.
+Modern Bitcoin wallet can generate as many addresses as you need. Note that addresses are generated on your own computer. There is no centralized system to verify or approve them.
 
 It is best practice to use a new address for every transaction as it makes it easier to identify them. There are also privacy benefits, as transaction data is public and re-using addresses allows for tracing of your financial habits.
 
@@ -124,7 +124,26 @@ It is best practice to use a new address for every transaction as it makes it ea
    layout = "float-right-desktop"
 %}
 
-The Bitcoin network does not store your balance. It is dynamically calculated by summing up all bitcoin you have received and subtracting the ones you have spent. So a wallet application needs to know your full transaction history in order to calculate how much you bitcoin you still control.
+The Bitcoin network does not store your balance. It is dynamically calculated by summing up all bitcoin you have received and subtracting the ones you have spent.
+
+So a wallet application needs to know your full transaction history in order to calculate how much you bitcoin you control.
+
+</div>
+
+## Do I need to remember all my addresses?
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/technology/derivation.jpg"
+   retina = "/assets/images/guide/getting-started/technology/derivation@2x.jpg"
+   alt-text = ""
+   width = 400
+   height = 400
+   layout = "float-right-desktop"
+%}
+
+No. Most wallets generate them using a standard called Hierarchical Deterministic Wallets, specified in [BIP 32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki){:target="_blank"}). So all your addresses and private keys are derived from a single piece of information, called the recovery phrase.
 
 </div>
 
@@ -141,11 +160,12 @@ The Bitcoin network does not store your balance. It is dynamically calculated by
    layout = "float-right-desktop"
 %}
 
-As we know now, bitcoin are just numbers linked to addresses. An address can receive bitcoin, but in oder to spend those bitcoin, a private key is needed. When an address is generated, a matching private key is also created (this technique is called [public key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography){:target="_blank"}). While the address can be publicly shared, the private key should be kept a secret as anyone who knows it can spend from the address.
+As we now know, bitcoin are just numbers linked to addresses. An address can receive bitcoin, but in oder to spend those bitcoin, a private key is needed. Every time an address is generated, a matching private key is also created (this technique is called [public key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography){:target="_blank"}). While the address can be publicly shared, the private key should be kept a secret as anyone who knows it can spend from the address.
 
 Wallet software typically hides private keys, as users don't need to interact with them. But just like addresses, private keys are generated on your computer, and there is no central authority. That is why it is crucial for users to back up their keys, and for applications to support and encourage best practices.
 
-Read more in our chapter about [Private Key Management](/).
+Keep reading:
+- [Private Key Management](/)
 
 </div>
 
@@ -199,11 +219,13 @@ They have restrictions on file size, so a block can only contain a certain numbe
    layout = "float-right-desktop"
 %}
 
-Another fundamental technique to cryptography and Bitcoin is called hashing. It is the process of taking data and applying a function that creates a unique identifier for it, which can be thought of as a fingerprint. This process cannot be reversed, meaning that that the original data cannot be restored from the hash. Because hashes are small in size, they are a great way to verify the authenticity of specific information. 
+Another fundamental technique to cryptography and Bitcoin is called hashing. It is the process of taking data and applying a function that creates a unique identifier for it. This is called a hash and can be thought of as a fingerprint.
+
+This process cannot be reversed, meaning that that the original data cannot be restored from the hash. Because hashes are small in size, they are a great way to verify the authenticity of specific information. 
 
 </div>
 
-## What is a blockchain?
+## What is a block chain?
 
 <div class="center" markdown="1">
 
@@ -253,3 +275,7 @@ This function is performed by miners, which are computers that group new transac
 While miners create blocks, nodes verify and store those blocks. Just like miners, nodes are computers connected to each other, constantly exchanging information to ensure that the rules of the Bitcoin protocol are adhered to. 
 
 </div>
+
+These are some of the basic technological concepts that make Bitcoin work. Each one individually is very complex, and some of the other chapters in this guide explore them in much more detail.
+
+
