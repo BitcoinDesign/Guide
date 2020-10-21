@@ -6,51 +6,46 @@ nav_order:
 
 # Content guidelines
 
-Thank your for helping shape the Bitcoin Design Guide. We have many different authors with different ideas and voices. To ensure a coherent and consistent experience for readers, we assembled the below guidelines to help.
+The Bitcoin Design Guide is the work of many authors from many different backgrounds, each with their own unique voice and perspective. To help us ensure a consistent written voice throughout the guide, follow these content guidelines. 
 
 #### Know your reader
 
-The guide is primarily meant as a tool for people who work on open-source, non-custodial bitcoin projects, with a focus on design.
-
-#### Speak to the reader
-
-Address the reader directly with "you".
+This guide was created specifically for designers who work on open-source, non-custodial bitcoin projects. It isn't the biggest audience in design, but it is among the most specialized.
 
 #### Use simple language
 
-Bitcoin is meant for a global audience, so you need to assume that many readers are not native English speakers. Many speechwriters intentionally write for a 6 to 8th grade proficiency level. This lets a wider audience understand the content (including non-native speakers), and it forces them to clarify their thinking. 
-
-Readability tools like [Hemingway](http://www.hemingwayapp.com) are very useful since they analyze text, provide a readability score, and suggest ways to simplify the writing.
-
-Note that simple language does not mean "dumbing things down". There are specific topics that require more complex language. A good rule of thumb is that the deeper a reader gets into a topic, the more complex the language can be (it does not have to be).
+Bitcoin is a global currency, so not everyone using this guide will be a native English speaker. Make sure you are are writing plain, easy to follow English. If you're still not sure, try using a readability tool to analyze your text and make recommendations. We like [Hemingway](http://www.hemingwayapp.com).
 
 #### Be precise
 
-Focus on the information that will be the most useful to your reader. If a page gets too long, split it up into multiple pages. If you want to allow users to dive deeper into a topic that is not core to the guide, please try to link to a third party for readers.
+Focus on what's most useful to your reader. If you suspect that something isn't working, it probably isn't. If a page or a paragraph gets too long, split it up. If you want users to dive deeper into a topic that is not essential to the guide, consider linking to a third-party resource.
 
-#### Give practical tips, but don't be overly prescriptive
+#### Speak to the reader
 
-Provide recommendations and best practices but do not force specific solutions on readers. The project the reader is working on may require something slightly or completely different because of a unique context.
+Address the reader directly and make them a part of the conversation by using second-person pronouns like "you," "your," and "yours."
+
+#### Give tips, not commands
+
+When giving instruction, stick to broad strokes. They can be adjusted over time to grow with a project and its designer. Overly detailed instructions are usually outdated by the next software patch.  
 
 #### Get the reader involved
 
-You can consider asking questions directly to the user before giving answers. You can also use worksheets, to-do lists, do's and dont's or other formats to get readers hands-on. 
+Consider asking questions before giving answers. This encourages self-sufficient thinking that will benefit readers more than cutting straight to the chase. You can also add work-sheets, to-do lists, do's and don'ts, and other instructive examples.
 
 #### Use the right medium
 
-One picture can say more than one thousand words. Plus, we can use videos, interactive prototypes, diagrams, and more. Take advantage of these different media and their strengths at communicating different types of information. If you'd like help creating this type of content, ask in the community.
+A picture is worth a thousand words, but so are videos, interactive prototypes, diagrams, and more. Don't be afraid to try a different medium if you think it will inform better than text or a picture. If you'd like to help us create this kind of content, visit https://bitcoin.design/ and join our Slack.
 
 #### Show examples
 
-It is OK to show screenshots of other software as reference points. Make sure to indicate the product and version. Avoid negative examples and focus on showcasing good solutions and explain why they are good.
+Feel free to reference other software using screenshots. Remember to indicate the product and version. Focus on what you like about them instead of what you don't like.
 
 #### Be humble
 
-The guide is a work in progress and needs to evolve to stay relevant. What we write today may not be applicable tomorrow.
+The guide is a work in progress and needs to evolve to stay relevant. What we write today may not be applicable tomorrow. Have fun. Don't overthink things. Bitcoin, and therefore this guide, is the ultimate work-in-progress.
 
-#### Write in the open if you can
+#### Write in the open
 
-It is healthy to get early feedback as it may prevent you from going in the wrong direction for too long. There is a whole community around you to help you create better content that helps more people.
-
+It's a good idea to ask for directions by seeking feedback early. This may stop you from wandering too far in the wrong direction. There is a whole community around you that's ready to jump in and help.
 
 
