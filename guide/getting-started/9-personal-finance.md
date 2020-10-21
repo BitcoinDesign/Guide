@@ -77,7 +77,7 @@ Most stores (online and offline) don't accept bitcoin, so buying coffee is not a
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/personal-finance/groceries.png"
+   image = "/assets/images/guide/getting-started/personal-finance/groceries.jpg"
    retina = "/assets/images/guide/getting-started/personal-finance/groceries@2x.jpg"
    alt-text = "Alternative text"
    width = 100

@@ -18,6 +18,10 @@ article.guide {
 
   & > .center {
     @include clearfix;
+
+    > figure {
+      margin-top: 0;
+    }
   }
 
   & > .-float-left,
@@ -111,13 +115,13 @@ article.guide {
 
   }
 
-  & > .-float-left,
-  & > .center .-float-left {
-    @include media-query(large) {
-      margin-top: $spacing-unit * 1;
-      margin-bottom: $spacing-unit * 1;
-    }
-  }
+  // & > .-float-left,
+  // & > .center .-float-left {
+  //   @include media-query(large) {
+  //     margin-top: $spacing-unit * 1;
+  //     margin-bottom: $spacing-unit * 1;
+  //   }
+  // }
 
   .image-gallery {
     display: flex;
@@ -136,7 +140,6 @@ article.guide {
       float: left;
       margin-right: 30px;
     }
-  }
 
     @include media-query(small) {
       flex-direction: column;
@@ -155,6 +158,8 @@ article.guide {
           margin-left: 40px;
         }
       }
+    }
+  }
 
   & > .-float-right,
   & > .center .-float-right {
@@ -163,7 +168,6 @@ article.guide {
       margin-bottom: 0;
       float: right;
       margin-left: 30px;
-
     }
   }
 }
