@@ -10,9 +10,9 @@ $text-color:            #000000 !default;
 $background-color:      #ffffff !default;
 $code-background-color: #f9f9f9 !default;
 
-$link-base-color:       #111111 !default;
-$link-visited-color:    darken($link-base-color, 15%) !default;
-$link-hover-color:      $text-color !default;
+$link-base-color:       $primary-color !default;
+$link-visited-color:    darken($link-base-color, 5%) !default;
+$link-hover-color:      lighten($link-base-color, 5%) !default;
 
 $border-color-01:       #f3f3f3 !default;
 $border-color-02:       lighten($brand-color, 50%) !default;

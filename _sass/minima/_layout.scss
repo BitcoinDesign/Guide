@@ -221,7 +221,11 @@ article.guide {
   }
 }
 
-.social-media-list {
+/**
+ * Pagination navbar
+ */
+.pagination {
+  margin-bottom: $spacing-unit;
   display: table;
   margin: 0 auto;
 
@@ -238,16 +242,6 @@ article.guide {
       &:hover { border-color: $border-color-02 }
     }
   }
-}
-
-
-
-/**
- * Pagination navbar
- */
-.pagination {
-  margin-bottom: $spacing-unit;
-  @extend .social-media-list;
   li {
     a, div {
       min-width: 41px;

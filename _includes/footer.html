@@ -1,45 +1,29 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
+<footer class="site-footer">
   <div class="wrapper">
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col">
+    <a class="-logo" href="{{ "/" | relative_url }}">
+      {% include banner-bitcoin-logo.svg %}
+    </a>
 
+    <div class="edit-license">
+      <a class="-edit" target="_blank" href="{{site.github_repository_url}}/blob/gh-pages/{{page.path}}">Edit this page</a>
 
-
-      <nav class="footer-nav">
-        {%- for path in page_paths -%}
-          {%- assign nav_pages = site.pages | where_exp:"item", "item.nav_order != nil" | sort:"nav_order" -%}
-          {%- assign my_page = site.pages | where: "path", path | first -%}
-          {% if my_page.footer_nav %}
-            {%- if my_page.title -%}
-              <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            {%- endif -%}
-          {% endif %}
-        {%- endfor -%}
-     </nav>
-
-
-      {%- if site.author %}
-        <ul class="contact-list">
-          {% if site.author.name -%}
-            <li class="p-name">{{ site.author.name | escape }}</li>
-          {% endif -%}
-          {% if site.author.email -%}
-            <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-          {%- endif %}
-        </ul>
-      {%- endif %}
-      </div>
-      <div class="footer-col">
-        <p>License</p>
-      </div>
+      <a class="-license" href="{{ "/LICENSE" }}">License</a>
     </div>
 
-    <div class="social-links">
-      {%- include social.html -%}
-    </div>
+    {%- include social.html -%}
+
+    <nav class="footer-nav">
+      {%- for path in page_paths -%}
+        {%- assign nav_pages = site.pages | where_exp:"item", "item.nav_order != nil" | sort:"nav_order" -%}
+        {%- assign my_page = site.pages | where: "path", path | first -%}
+        {% if my_page.footer_nav %}
+          {%- if my_page.title -%}
+            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+          {%- endif -%}
+        {% endif %}
+      {%- endfor -%}
+   </nav>   
 
   </div>
 
