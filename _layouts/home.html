@@ -13,22 +13,15 @@
   {%- include head.html -%}
 
   <body>
-    <main class="home-minimal-page">
-      <section>
-        <div class="title">
-          <h1>Bitcoin Design</h1>
-        </div>
-        <div class="placeholder"></div>
-      </section>
-      <section>
-        <div class="copy">
-          <p>An open community collaborating on making <a href="https://bitcoin.org">Bitcoin</a> more user-friendly through thoughtful user experience design.</p>
-        </div>
-        <div class="copy">
-          <p>Join us on <a href="https://bitcoindesign.slack.com">Slack</a>, or see what we are working on on <a href="https://github.com/bitcoindesign">Github</a>. This is a temporary landing page. Stay tuned for updates.</p>
-        </div>
-      </section>
+    <main>
+      {%- include home-banner.html -%}
+
+      <article class="guide">
+      	{{ content }}
+      </article>
     </main>
+
+    {%- include footer.html -%}
   </body>
 
 </html>

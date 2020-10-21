@@ -1,0 +1,216 @@
+
+
+.home-banner {
+  display: flex;
+  flex-direction: column-reverse;
+  max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .home-banner-copy-wrapper {
+    background-color: var(--copy-background-color);
+    transition: background-color 150ms $ease;
+    padding: 30px 15px;
+
+    h1 {
+      font-family: $base-font-family;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 64px;
+      line-height: 100%;
+      letter-spacing: -0.03em;
+      transition: all 150ms $ease;
+
+      color: black;
+      -webkit-text-fill-color: var(--title-fill-color); /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: var(--title-outline-color);
+    }
+
+    p {
+      color: var(--description-fill-color);
+      font-family: $base-font-family;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 27px;
+      margin-bottom: 30px;
+      transition: color 150ms $ease;
+    }
+
+    a {
+      display: inline-block;
+      padding: 10px 20px;
+      text-decoration: none;
+      box-sizing: border-box;
+      filter: drop-shadow(0px 8px 24px rgba(0, 0, 0, 0.05));
+      border-radius: 5px;
+      margin: 0 0 12px 0;
+      font-weight: 600;
+      transition: all 150ms $ease;
+    }
+
+    #link-button-1 {
+      background-color: var(--button-1-fill-color);
+      border: 1px solid var(--button-1-outline-color);
+      color: var(--button-1-label-fill-color);
+    }
+
+    #link-button-2 {
+      background-color: var(--button-2-fill-color);
+      border: 1px solid var(--button-2-outline-color);
+      color: var(--button-2-label-fill-color);
+    }
+
+    .home-banner-copy {
+      max-width: 500px;
+
+      .home-banner-logo-wrapper {
+        margin-bottom: 20px;
+
+        svg {
+          overflow: visible;
+        }
+      }
+    }
+  }
+
+  .home-banner-image {
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: var(--background-image-color);
+    background-image: var(--background-image-path-mobile);
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    transition: background-color 150ms $ease;
+
+    @include retina() {
+      background-image: var(--background-image-path-mobile-retina);
+    }
+  }
+
+  @include media-query(medium-down) {
+    &.-flip-on-mobile {
+      flex-direction: column;
+    }
+  }
+
+  @include media-query(large) {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+
+    .home-banner-image {
+      background-image: var(--background-image-path);
+
+      @include retina() {
+        background-image: var(--background-image-path-retina);
+      }
+    }
+
+    .home-banner-copy-wrapper {
+      width: 50%;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        margin: 0 12px 0 0;
+      }
+  
+    }
+
+    .home-banner-buttons-wrapper {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .home-banner-image {
+      width: 50%;
+      padding-bottom: 50%;
+    }
+  }
+}
+
+.home-banner-info {
+  display: flex;
+  justify-content: center;
+  background-color: #f4f4f4;
+  padding: 5px 15px;
+
+  .home-banner-info-wrapper {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > p {
+      font-size: 12px;
+      line-height: 24px;
+      margin: 0;
+
+      a {
+        color: black;
+        text-decoration: underline;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .home-banner-info-options {
+      display: flex;
+      align-items: center;
+
+      a,
+      button {
+        display: block;
+        font-size: 12px;
+        line-height: 24px;
+        color: black;
+        text-decoration: underline;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+
+      button {
+        appearance: none;
+        background-color: transparent;
+        border-width: 0;
+      }
+
+      a + button {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  @include media-query(tiny) {
+    .home-banner-info-wrapper {
+      > p {
+        font-size: 10px;
+      }
+
+      .home-banner-info-options {
+
+        a,
+        button {
+          font-size: 10px;
+          line-height: 20px;
+        }
+
+        a + button {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
+
