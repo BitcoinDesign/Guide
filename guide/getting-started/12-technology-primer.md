@@ -207,7 +207,7 @@ No. Transactions are stored plainly in the Bitcoin network for anyone with an in
 
 </div>
 
-## What is the mempool?
+## How are transactions processed?
 
 <div class="center" markdown="1">
 
@@ -220,7 +220,26 @@ No. Transactions are stored plainly in the Bitcoin network for anyone with an in
    layout = "float-right-desktop"
 %}
 
-Every transaction needs to be processed before it arrives at the recipient. The waiting line for new transactions is called the mempool. The Bitcoin network can only process a certain amount of transactions per day, so it may take longer to process your transactions during busy times. Transactions that involve higher fees are typically processed faster.
+Every transaction needs to be confirmed before the recipient can consider the involved bitcoin theirs. The waiting line for new transactions is called the mempool. The Bitcoin network can only process a certain amount of transactions per day, so it may take longer to process your transactions during busy times. Transactions that involve higher fees are typically processed faster.
+
+</div>
+
+## How are transactions confirmed?
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/technology/mining-a-block.jpg"
+   retina = "/assets/images/guide/getting-started/technology/mining-a-block@2x.jpg"
+   alt-text = ""
+   width = 400
+   height = 400
+   layout = "float-right-desktop"
+%}
+
+This function is performed by miners, which are computers that group new transactions from the mempool into blocks and try to get those blocks accepted by the Bitcoin network. They are called miners because the creation of new blocks is rewarded by freshly minted bitcoin. This is the only way bitcoin are created, so there is heavy competition around mining.
+
+Once a transaction is in a block that has been accepted by the network, it is considered as having one confirmation. With every new block created, the number of confirmations of this particular block increases.
 
 </div>
 
@@ -237,46 +256,7 @@ Every transaction needs to be processed before it arrives at the recipient. The 
    layout = "float-right-desktop"
 %}
 
-From the mempool, transactions are bundled into blocks. One a transaction is in a block that the network has accepted, the transaction is considered "confirmed". Blocks are created roughly every 10 minutes.
-
-They have restrictions on file size, so a block can only contain a certain number of transactions.
-
-</div>
-
-## And who creates blocks?
-
-<div class="center" markdown="1">
-
-{% include image.html
-   image = "/assets/images/guide/getting-started/technology/mining-a-block.jpg"
-   retina = "/assets/images/guide/getting-started/technology/mining-a-block@2x.jpg"
-   alt-text = ""
-   width = 400
-   height = 400
-   layout = "float-right-desktop"
-%}
-
-This function is performed by miners, which are computers that group new transactions from the mempool into blocks and try to get those blocks accepted by the Bitcoin network. They are called miners because the creation of new blocks is rewarded by freshly minted bitcoin. This is the only way bitcoin are created, so there is heavy competition around mining.
-
-</div>
-
-## What is hashing?
-
-<div class="center" markdown="1">
-
-{% include image.html
-   image = "/assets/images/guide/getting-started/technology/hashing.jpg"
-   retina = "/assets/images/guide/getting-started/technology/hashing@2x.jpg"
-   alt-text = ""
-   caption = "Example of a SHA-256 hash."
-   width = 400
-   height = 400
-   layout = "float-right-desktop"
-%}
-
-Another fundamental technique to cryptography and Bitcoin is called hashing. It is the process of taking data and applying a function that creates a unique identifier for it. This is called a hash and can be thought of as a fingerprint.
-
-This process cannot be reversed, meaning that that the original data cannot be restored from the hash. Because hashes are small in size, they are a great way to verify the authenticity of specific information. 
+Instead of processing each transaction individually, the Bitcoin network bundles them into blocks. Blocks are created roughly every 10 minutes, and can only contain a certain amount of transactions due to a file size limit. Once a block is accepted, it can never be changed again.
 
 </div>
 
@@ -293,7 +273,27 @@ This process cannot be reversed, meaning that that the original data cannot be r
    layout = "float-right-desktop"
 %}
 
-A term that has become widely popular, blockchain refers to the linking of blocks by embedding information about one block into the next one. Every block contains a hash of the previous block. This allow for verifying that new blocks are based on the same data set that nodes in the Bitcoin network have agreed on.
+A term that has become widely popular, block chain refers to the linking of blocks by embedding information about one block into the next one. Every block contains a unique fingerprint (called a hash) of the previous block. This allow for verifying that new blocks are based on the same history of blocks that nodes in the Bitcoin network have agreed upon.
+
+</div>
+
+## What is a hash?
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/technology/hashing.jpg"
+   retina = "/assets/images/guide/getting-started/technology/hashing@2x.jpg"
+   alt-text = ""
+   caption = "Example of a SHA-256 hash."
+   width = 400
+   height = 400
+   layout = "float-right-desktop"
+%}
+
+Another fundamental technique to cryptography and Bitcoin is called hashing. It is the process of taking data and applying a function that creates a unique identifier for it. This is called a hash and can be thought of as a fingerprint.
+
+This process cannot be reversed, meaning that that the original data cannot be restored from the hash. Because hashes are small in size, they are a great way to verify the authenticity of specific information. 
 
 </div>
 
