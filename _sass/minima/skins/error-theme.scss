@@ -1,0 +1,139 @@
+@mixin error-theme-background-color {
+  background-color: $yellow-400;
+}
+
+@mixin error-theme-link-color {
+  color: $white;
+}
+
+@mixin error-theme-text-color {
+  color: $blue-900;
+}
+
+@mixin error-theme-border-color {
+  border-color: $white;
+}
+
+@mixin error-theme-link-behaviour {
+  a {
+    @include error-theme-link-color;
+    text-decoration: none;
+
+    &:hover {
+      @include error-theme-link-color;
+      text-decoration: underline;
+    }
+
+    &:active {
+      @include error-theme-link-color;
+    }
+
+    &:visited {
+      @include error-theme-link-color;
+    }
+  }
+}
+
+.error-theme {
+  h1 {
+    @include error-theme-text-color;
+  }
+  
+  p {
+    @include error-theme-text-color;
+  }
+
+  @include error-theme-link-behaviour;
+
+  .site-header {
+    @include error-theme-background-color;
+    @include error-theme-link-color;
+    border-bottom: 1px solid $white;
+    
+    .wrap {
+      .wrap-inner {
+        @include error-theme-background-color;
+        @include error-theme-link-color;
+      }
+      
+      .site-title {
+        @include error-theme-link-color;
+      }
+
+      .site-nav {
+        .page-link {
+            @include error-theme-link-color;
+            
+            &:hover {
+              @include error-theme-link-color;
+              text-decoration: underline;
+            }
+
+            &:active {
+              @include error-theme-link-color;
+            }
+        }
+      }
+      .nav-search {
+        display: none; //TODO remnove and add correct styling for search
+      }
+    }
+  }
+
+  .page-content {
+    @include error-theme-background-color;
+  }
+
+  .site-footer {
+    @include error-theme-background-color;
+
+    .wrapper {
+      a.-logo {
+        svg path {
+          stroke: $white;
+        }
+
+        &:hover {
+          svg path {
+            stroke: $blue-900;
+          }
+        }
+      }
+
+      nav.social-media-list {
+        a {
+          svg path {
+            fill: $white;
+          }
+
+          &:hover {
+            svg path {
+              fill: $blue-900;
+            }
+          }
+        }
+      }
+
+      @include error-theme-border-color;
+      @include error-theme-link-behaviour;
+
+      .edit-license {
+        @include error-theme-border-color;
+      }
+
+      .footer-nav {
+        @include error-theme-border-color;
+        .page-link {
+          @include error-theme-link-color;
+        }
+      }
+      
+
+      .footer-col-wrapper,
+      .social-links {
+        @include relative-font-size(0.7375);
+        @include error-theme-link-color;
+      }
+    }
+  }
+}

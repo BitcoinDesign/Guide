@@ -1,77 +1,17 @@
-@mixin error-background-color {
-  background-color: $yellow-400;
+figcaption {
+  @include error-theme-text-color;
+  @include error-theme-link-behaviour;
 }
 
-@mixin error-link-color {
-  color: $white;
+h1 {
+  margin: 30px 0;
+  font-size: 4em;
+  line-height: 1;
+  letter-spacing: -1px;
 }
 
-@mixin error-text-color {
-  color: $blue-900
-}
-
-.error {
-  .site-header {
-    @include error-background-color;
-    @include error-link-color;
-    border-bottom: 1px solid $white;
-    
-    .wrap {
-      .wrap-inner {
-        @include error-background-color;
-        @include error-link-color;
-      }
-      
-      .site-title {
-        @include error-link-color;
-      }
-
-      .site-nav {
-        .page-link {
-            @include error-link-color;
-            
-            &:hover {
-              @include error-link-color;
-            }
-
-            &.active {
-              @include error-link-color;
-            }
-        }
-      }
-      .nav-search {
-        display: none; //TODO remnove and add correct styling for search
-      }
-    }
-  }
-
-  .page-content {
-    @include error-background-color;
-  }
-
-  .site-footer {
-    @include error-background-color;
-
-    .wrapper {
-      .footer-nav
-        .page-link {
-          @include error-link-color;
-        }
-      
-
-      .footer-col-wrapper,
-      .social-links {
-        @include relative-font-size(0.7375);
-        @include error-link-color;
-      }
-    }
-  }
-
-  h1 {
-    @include error-text-color;
-  }
-  
-  p {
-    @include error-text-color;
-  }
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 16px;
 }
