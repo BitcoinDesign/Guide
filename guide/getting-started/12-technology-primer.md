@@ -69,9 +69,11 @@ It's both. Lowercase bitcoin refers to the currency. So you may have 1 bitcoin i
 
 Bitcoin (as in "I have 1 bitcoin") are numbers associated with addresses.
 
-Just like bank account numbers, addresses are long, alphanumeric strings. A transaction involves sending bitcoin from one address to another. This reduces the balance (more on that below) of the sending address, and increases the balance of the receiving address.
+Addresses are long, alphanumeric strings, and a transaction involves sending bitcoin from one address to another. This reduces the available balance of the sending address, and increases the balance of the receiving address.
 
 Owning a bitcoin therefore means being in control of one or more addresses that have received bitcoin.
+
+- [Addresses](/)
 
 </div>
 
@@ -88,9 +90,11 @@ Owning a bitcoin therefore means being in control of one or more addresses that 
    layout = "float-right-desktop"
 %}
 
-Modern Bitcoin wallet can generate as many addresses as you need. Note that addresses are generated on your own computer. Addresses follow a specific format, but there is no centralized system to verify or approve them.
+Bitcoin wallets generate as many addresses as you need. Note that addresses are generated on your own computer. They follow a specific format, but there is no centralized system to verify or approve them. Valid addresses can even be generated on computers that have never been online.
 
-It is best practice to use a new address for every transaction as it makes it easier to identify them. There are also privacy benefits, as transaction data is public and re-using addresses allows for tracing of your financial habits.
+It is best practice to use a new address for every transaction as it makes it easier to identify each one. As transaction data is public and can be analyzed, using many different addresses also provides privacy benefits by making it harder to trace how you receive and spend bitcoin.
+
+- [Bitcoin wallets](/)
 
 </div>
 
@@ -107,9 +111,11 @@ It is best practice to use a new address for every transaction as it makes it ea
    layout = "float-right-desktop"
 %}
 
-The Bitcoin network does not store your balance. It is dynamically calculated by summing up all bitcoin you have received on your addresses, and subtracting bitcoin you spent.
+The Bitcoin network does not store your balance. This value is dynamically calculated by summing up all bitcoin you have received on your addresses, and subtracting bitcoin you spent.
 
-So a wallet application needs to know your full transaction history in order to calculate how much you bitcoin you control.
+To do this, a wallet application needs to know your full transaction history in order to calculate how much you bitcoin you control.
+
+- [Balance display](/)
 
 </div>
 
@@ -126,9 +132,9 @@ So a wallet application needs to know your full transaction history in order to 
    layout = "float-right-desktop"
 %}
 
-No. Most wallets generate them using a standard called Hierarchical Deterministic Wallets, specified in [BIP 32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki){:target="_blank"}. So all your addresses and private keys are derived from a single piece of information, called the recovery phrase.
+No. Most wallets generate them using a standard called [Hierarchical Deterministic Wallets](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki){:target="_blank"}. All your addresses and private keys are derived from a single piece of information, called the recovery phrase.
 
-This makes backing up your wallet fairly easy, as you only need store a single piece of information. It also creates a single point of failure.
+This makes backing up your wallet fairly easy, as you only need securely store your recovery phrase to restore your wallet. However, it also concentrates the risk of having your bitcoin stolen the recovery phrase. Because of this, supporting users in this backup process is one of the most important considerations for designers.
 
 </div>
 
@@ -145,11 +151,10 @@ This makes backing up your wallet fairly easy, as you only need store a single p
    layout = "float-right-desktop"
 %}
 
-As we now know, bitcoin are just numbers linked to addresses. An address can receive bitcoin, but in oder to spend those bitcoin, a private key is needed. Every address is generated from a matching private key. While the address can be publicly shared, the private key should be kept a secret as anyone who knows it can spend from the address.
+As we now know, bitcoin are just numbers linked to addresses. An address can receive bitcoin, but in oder to spend those bitcoin, a private key is needed. Wallets actually create private keys first, and then derive matching addresses from them. While an address can be publicly shared, the private key should be kept a secret as anyone who knows it can spend from the address.
 
-Wallet software typically hides private keys, as users don't need to interact with them. But just like addresses, private keys are generated on your computer, and there is no central authority. That is why it is crucial for users to back up their keys, and for applications to support and encourage best practices.
+Wallet software typically hides private keys from users, as there is no need to interact with them. 
 
-Keep reading:
 - [Private Key Management](/)
 
 </div>
@@ -167,9 +172,11 @@ Keep reading:
    layout = "float-right-desktop"
 %}
 
-In [public key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography){:target="_blank"}), a private key is used to scramble information. The matching public key (which we call an address in Bitcoin) can unscramble the information again. This allows for transfer of information without any third party being able to understand it.
+A private key is used to scramble information. The matching public key (which we call an address in Bitcoin) can unscramble the information again. This allows for transfer of information without any third party being able to understand it.
 
-Initially, this requires that the sender and recipient securely exchange public keys with each other. This way, they can unscramble enrypted messages they receive from each other.
+Note that there is a strong element of identity in this mechanism, as it ensures that only the recipient can unscramble the message while also being able to verify that the message actually came from the expected sender. This requires that both parties securely exchange public keys with each other.
+
+- [Public key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography){:target="_blank"})
 
 </div>
 
@@ -203,7 +210,10 @@ Since a private key can be used to prove that the holder controls a specific add
    layout = "float-right-desktop"
 %}
 
-No. Transactions are stored plainly in the Bitcoin network for anyone with an internet connection to see and analyze. This allows for observers to verify that all transactions in the system are valid and that nobody spends bitcoin they don't have. This transparency is unique to Bitcoin. It also introduces the potential for attacks through the intelligent analysis of transaction behavior.
+No. Transactions are stored in a plain format in the Bitcoin network for anyone with an internet connection to see and analyze. This allows for observers to verify that all transactions in the system are valid and that nobody spends bitcoin they don't have. This transparency is unique to Bitcoin compared to any other traditional currency. It also introduces the potential for attacks through the intelligent analysis of transaction behavior.
+
+- [Explorer software](/)
+- [Privacy](/)
 
 </div>
 
@@ -220,7 +230,9 @@ No. Transactions are stored plainly in the Bitcoin network for anyone with an in
    layout = "float-right-desktop"
 %}
 
-Every transaction needs to be confirmed before the recipient can consider the involved bitcoin theirs. The waiting line for new transactions is called the mempool. The Bitcoin network can only process a certain amount of transactions per day, so it may take longer to process your transactions during busy times. Transactions that involve higher fees are typically processed faster.
+Every transaction needs to be confirmed before the recipient can consider the involved bitcoin theirs. This waiting line for new transactions is called the mempool. The Bitcoin network can only process a certain amount of transactions per day, so it may take longer to process your transactions during busy times. Transactions that involve higher fees are typically processed faster.
+
+- [Decentralization](/)
 
 </div>
 
@@ -237,9 +249,11 @@ Every transaction needs to be confirmed before the recipient can consider the in
    layout = "float-right-desktop"
 %}
 
-This function is performed by miners, which are computers that group new transactions from the mempool into blocks and try to get those blocks accepted by the Bitcoin network. They are called miners because the creation of new blocks is rewarded by freshly minted bitcoin. This is the only way bitcoin are created, so there is heavy competition around mining.
+This function is performed by miners, which are computers that group new transactions from the mempool into blocks and try to get those blocks accepted by the Bitcoin network. They are called miners because the creation of new blocks is rewarded by freshly minted bitcoin. This is the only way bitcoin are created, which creates heavy competition around mining.
 
 Once a transaction is in a block that has been accepted by the network, it is considered as having one confirmation. With every new block created, the number of confirmations of this particular block increases.
+
+- Mining [software](/) and [hardware](/)
 
 </div>
 
@@ -256,11 +270,11 @@ Once a transaction is in a block that has been accepted by the network, it is co
    layout = "float-right-desktop"
 %}
 
-Instead of processing each transaction individually, the Bitcoin network bundles them into blocks. Blocks are created roughly every 10 minutes, and can only contain a certain amount of transactions due to a file size limit. Once a block is accepted, it can never be changed again.
+Instead of processing each transaction individually, the Bitcoin network bundles them into blocks. Blocks are created roughly every 10 minutes, and can only contain a certain amount of transactions due to a strict file size limit. Once a block is accepted and has several confirmations, it can never be changed again.
 
 </div>
 
-## What is a block chain?
+## What makes it a block chain?
 
 <div class="center" markdown="1">
 
@@ -273,7 +287,7 @@ Instead of processing each transaction individually, the Bitcoin network bundles
    layout = "float-right-desktop"
 %}
 
-A term that has become widely popular, block chain refers to the linking of blocks by embedding information about one block into the next one. Every block contains a unique fingerprint (called a hash) of the previous block. This allow for verifying that new blocks are based on the same history of blocks that nodes in the Bitcoin network have agreed upon.
+This term refers to the linking of blocks by embedding a hash (a digital fingerprint) of one block into the next one. This allows for verifying that new blocks are based on the same history of blocks that nodes in the Bitcoin network have already agreed upon.
 
 </div>
 
@@ -293,7 +307,7 @@ A term that has become widely popular, block chain refers to the linking of bloc
 
 Another fundamental technique to cryptography and Bitcoin is called hashing. It is the process of taking data and applying a function that creates a unique identifier for it. This is called a hash and can be thought of as a fingerprint.
 
-This process cannot be reversed, meaning that that the original data cannot be restored from the hash. Because hashes are small in size, they are a great way to verify the authenticity of specific information. 
+Unlike encryption, a hash does not contain the original data and the hashing process cannot be reversed. Since hashes are small in size, they are a great way to verify the authenticity of information.
 
 </div>
 
@@ -310,7 +324,12 @@ This process cannot be reversed, meaning that that the original data cannot be r
    layout = "float-right-desktop"
 %}
 
-While miners create blocks, nodes verify and store those blocks. Just like miners, nodes are computers connected to each other, constantly exchanging information to ensure that the rules of the Bitcoin protocol are adhered to. 
+While miners create blocks, nodes verify, distribute and store blocks. Just like miners, nodes are computers connected with each other, constantly exchanging information to ensure that the rules of the Bitcoin protocol are adhered to.
+
+With thousands of nodes all over the world, operated by many different people, it becomes almost impossible to manipulate data this network has agreed upon. It would require at least half of these nodes to collude.
+
+- [Decentralization](/)
+- Node [software](/) and [hardware](/)
 
 </div>
 
