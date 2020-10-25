@@ -3,15 +3,74 @@ figcaption {
   @include error-theme-link-behaviour;
 }
 
-h1 {
-  margin: 30px 0;
-  font-size: 4em;
-  line-height: 1;
-  letter-spacing: -1px;
-}
+.error-theme {
+  h1 {
+    padding-top: $sp-3;
+    font-size: 4em;
+    font-weight: 600;
+    line-height: 1.4;
+  }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 16px;
+  .action-link {
+    @include error-theme-link-color;
+    text-decoration: none;
+    border-bottom: 2px dashed $white;
+
+    &:hover {
+      text-decoration: none;
+      @include error-theme-link-color;
+      border-bottom: 2px solid $white;
+    }
+
+    &:active {
+      @include error-theme-link-color;
+      border-bottom: 2px dashed $white;
+    }
+  }
+
+  .action-button {
+    margin-top: $sp-10;
+    padding: 8px $sp-2;
+    display: inline-block;
+    text-decoration: none;
+    @include error-theme-link-color;
+    border: 5px solid $white;
+    font-size: 2rem;
+    line-height: 1.2;
+
+    &:hover {
+      text-decoration: none;
+      @include error-theme-text-color;
+    }
+  }
+
+  .message {
+    position: relative;
+    line-height: 1.4;
+    margin-top: $sp-6;
+    font-size: $large-font-size;
+    font-weight: 600;
+  }
+
+  .message::before {
+    transform: translateY(-30px);
+    height: 10px;
+    width: 70px;
+    position: absolute;
+    top: -2%;
+    content: '';
+    background-color: $blue-900;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: $sp-4;
+  }
+
+  .-image-wrapper {
+    height: 512px;
+    width: 512px;
+    justify-self: end;
+  }
 }
