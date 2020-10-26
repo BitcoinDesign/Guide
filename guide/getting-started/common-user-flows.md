@@ -18,7 +18,7 @@ Let's take a look at some common user needs and workflows that can be created fo
 
 ## Orientation
 
-This step is many times overlooked, but before anyone uses your product, they first need to find out that it exists, understand and develop interest and decide to start using it. If users cannot quickly learn the purpose and benefits of the application, they are less likely to use it. Also see the first three phases of the [usage life cycle]({% link guide/getting-started/10-usage-life-cycle.md %}).
+This step is many times overlooked, but before anyone uses your product, they first need to find out that it exists, understand and develop interest and decide to start using it. If users cannot quickly learn the purpose and benefits of the application, they are less likely to use it. Also see the first three phases of the [usage life cycle]({% link guide/getting-started/usage-life-cycle.md %}).
 
 ## Software download & installation
 
