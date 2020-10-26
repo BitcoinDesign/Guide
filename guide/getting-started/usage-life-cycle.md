@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Usage life cycle
-nav_order: 10
+nav_order: 8
 parent: Getting started
 permalink: /getting-started/usage-life-cycle/
 ---

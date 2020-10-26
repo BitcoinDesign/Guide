@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Technology primer
-nav_order: 12
+nav_order: 10
 parent: Getting started
 permalink: /getting-started/technology-primer/
 ---

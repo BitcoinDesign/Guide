@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Hardware overview
-nav_order: 14
+nav_order: 12
 parent: Getting started
 permalink: /getting-started/hardware/
 ---

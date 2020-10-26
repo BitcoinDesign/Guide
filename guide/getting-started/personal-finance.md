@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Personal finance and bitcoin
-nav_order: 9
+nav_order: 7
 parent: Getting started
 permalink: /getting-started/personal-finance/
 ---

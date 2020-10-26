@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Software overview
-nav_order: 13
+nav_order: 11
 parent: Getting started
 permalink: /getting-started/software/
 ---
