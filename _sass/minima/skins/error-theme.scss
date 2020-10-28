@@ -49,8 +49,15 @@
     @include error-theme-background-color;
     @include error-theme-link-color;
     border-bottom: 1px solid $white;
-    
     .wrap {
+      .nav-trigger:hover {
+        fill: $blue-900;
+      }
+
+      .nav-trigger {
+        fill: $white;
+      }
+
       .wrap-inner {
         @include error-theme-background-color;
         @include error-theme-link-color;
@@ -75,7 +82,23 @@
         }
       }
       .nav-search {
-        display: none; //TODO remnove and add correct styling for search
+        svg {
+          color: $white;
+
+          &:hover {
+            color: $blue-900;
+          }
+        }
+      }
+    }
+
+    &.-active {
+      .wrap .nav-trigger svg {
+        fill: $white;
+      }
+
+      .site-nav {
+        background-color: $blue-900;
       }
     }
   }
