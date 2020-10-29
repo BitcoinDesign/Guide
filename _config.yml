@@ -19,14 +19,14 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Bitcoin Design
-email: hi@bitcoindesign.com
+email: hi@bitcoindesign.org
 description: "Bitcoin Design aims to be a free open-source community resource that will help designers and developers working on bitcoin-products to create better experiences, faster."
 # baseurl: "Guide" # Only for gh-pages. Comment this line to run the website on localhost:4000
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
-github_repository_url: "https://github.com/pedromvpg/bitcoin-design-guide/"
+github_repository_url: "https://github.com/BitcoinDesign/Guide/"
 
 # Build settings
 theme: minima
@@ -46,7 +46,7 @@ defaults:
       type: "pages"
     values:
       permalink: ":path/:basename"
-      image: "https://pedromvpg.github.io/bitcoin-design-guide/assets/bitcoin-design-og.png"
+      image: "https://bitcoindesign.github.io/Guide/assets/bitcoin-design-og.png"
 
 
 twitter:
