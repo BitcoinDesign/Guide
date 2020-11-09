@@ -4,6 +4,7 @@ title: Technology primer
 nav_order: 10
 parent: Getting started
 permalink: /getting-started/technology-primer/
+main_classes: -no-top-padding
 ---
 
 <!--
@@ -15,27 +16,19 @@ and work backwards to the technology.
 
 -->
 
+{% include image.html
+   image = "/assets/images/guide/getting-started/technology/blueprint.jpg"
+   retina = "/assets/images/guide/getting-started/technology/blueprint@2x.jpg"
+   alt-text = ""
+   width = 1600
+   height = 800
+   layout = "full-width"
+%}
+
 
 # Bitcoin technology primer
 
 It can take many years to understand bitcoin in every detail, but luckily you don’t need to know everything to design great products. Let’s take a look at the most important ideas and technologies behind Bitcoin, with an eye towards the basics you may need to design bitcoin products.
-
-## The whitepaper
-
-<div class="center" markdown="1">
-
-{% include image.html
-   image = "/assets/images/guide/getting-started/technology/whitepaper.jpg"
-   retina = "/assets/images/guide/getting-started/technology/whitepaper@2x.jpg"
-   alt-text = ""
-   width = 400
-   height = 400
-   layout = "float-right-desktop"
-%}
-
-The most fundamental read is the [Bitcoin whitepaper](https://bitcoin.org/bitcoin.pdf){:target="_blank"}. Published on October 31, 2008 by the mysterious Satoshi Nakamoto, it lays out the fundamental system design in only 9 short pages. It is not overly technical and makes for a great starting point.
-
-</div>
 
 ## Is it Bitcoin or bitcoin?
 
@@ -333,8 +326,23 @@ With thousands of nodes all over the world, operated by many different people, i
 
 </div>
 
-### In summary
+### There's a lot more
 
-These are some of the basic technological concepts that make Bitcoin work. Each one individually is very complex, and some of the other chapters in this guide explore them in much more detail.
+These are some of the basic technological concepts that make Bitcoin work. Each one individually is complex, and the interplay between them is a whole other area of interest. Dive into the other chapters in this guide to explore the technnology and its applications in more detail.
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/technology/whitepaper.jpg"
+   retina = "/assets/images/guide/getting-started/technology/whitepaper@2x.jpg"
+   alt-text = ""
+   width = 400
+   height = 400
+   layout = "float-right-desktop"
+%}
+
+Now, if you'd like to go all the way to the beginning of Bitcoin, the most fundamental read is the [Bitcoin whitepaper](https://bitcoin.org/bitcoin.pdf){:target="_blank"}. Published on October 31, 2008 by the mysterious Satoshi Nakamoto, it lays out the fundamental system design in only 9 short pages. It is not necessarily an easy read, but still highly recommended reading.
+
+</div>
 
 

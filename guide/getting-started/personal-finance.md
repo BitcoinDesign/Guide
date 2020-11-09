@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Personal finance and bitcoin
+title: Personal finance
 nav_order: 7
 parent: Getting started
 permalink: /getting-started/personal-finance/
@@ -14,7 +14,7 @@ This page provides a rough framework for how to think about transactions in the 
 
 -->
 
-# Personal finance and bitcoin
+# Personal finance
 {:.no_toc}
 
 **If we consider bitcoin a new form of money, then we should consider how we interact with existing forms of money and how bitcoin compares. This can guide us towards behavioral patterns that users may already be familiar with.**

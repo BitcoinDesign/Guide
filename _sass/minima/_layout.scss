@@ -162,13 +162,21 @@
 
 .main {
   @include media-query(small) {
-    padding-top: $spacing-unit;
     padding-bottom: $spacing-unit * 2;
   }
 
   @include media-query(medium-up) {
-    padding-top: $spacing-unit * 4;
     padding-bottom: $spacing-unit * 6;
+  }
+
+  &:not(.-no-top-padding) {
+    @include media-query(small) {
+      padding-top: $spacing-unit;
+    }
+
+    @include media-query(medium-up) {
+      padding-top: $spacing-unit * 4;
+    }
   }
 }
 
