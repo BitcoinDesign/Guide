@@ -18,9 +18,11 @@ How to contribute
 
 -->
 
-{% include image.html
+{% include picture.html
    image = "/assets/images/guide/getting-started/go.jpg"
    retina = "/assets/images/guide/getting-started/go@2x.jpg"
+   mobile = "/assets/images/guide/getting-started/go-mobile.jpg"
+   mobileRetina = "/assets/images/guide/getting-started/go-mobile@2x.jpg"
    alt-text = ""
    width = 1600
    height = 600

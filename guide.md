@@ -5,6 +5,7 @@ title: Guide
 permalink: /guide/
 main_nav: true
 secondary_nav: false
+main_classes: -no-top-padding
 ---
 
 <!--
@@ -17,6 +18,15 @@ How to use it
 How to contribute
 
 -->
+
+{% include image.html
+   image = "/assets/images/guide/bitcoin-island.jpg"
+   retina = "/assets/images/guide/bitcoin-island@2x.jpg"
+   alt-text = ""
+   width = 1600
+   height = 900
+   layout = "full-width"
+%}
 
 # The bitcoin design guide
 
