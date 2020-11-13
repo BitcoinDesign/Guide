@@ -20,7 +20,7 @@ Global community and audience
 
 -->
 
-{% include image.html
+{% include picture.html
    image = "/assets/images/guide/getting-started/why-design-for-bitcoin/why-design-for-bitcoin.jpg"
    retina = "/assets/images/guide/getting-started/why-design-for-bitcoin/why-design-for-bitcoin@2x.jpg"
    mobile = "/assets/images/guide/getting-started/why-design-for-bitcoin/why-design-for-bitcoin-mobile.jpg"
@@ -28,7 +28,7 @@ Global community and audience
    alt-text = ""
    caption = ""
    width = 1600
-   height = 900
+   height = 600
    layout = "full-width"
 %}
 
