@@ -164,3 +164,10 @@ A node connects to and participates in the bitcoin network to download and excha
 Mining has become primarily a professional undertaking with dedicated software to manage racks of mining hardware. However, some wallets still offer mining features, and there are also cloud mining providers that allow customers to rent mining capacity.
 
 </div>
+
+---
+
+Some bitcoin features and functionality are best handled by [dedicated hardware]({{ '/getting-started/hardware/' | relative_url }}).
+
+
+

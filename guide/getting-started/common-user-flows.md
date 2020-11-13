@@ -312,3 +312,7 @@ Whether it's to ensure a hardware wallet still works, or to install a software u
 This can be a tricky experience to address. For one, non-custodial cryptocurrency management by nature places a lot of responsibility on the user. This also puts much of the burden of solving problems on users. The second aspect is that open-source software typically relies on online documentation and forums for "customer service". Ideally, software helps prevent errors as much as possible through techniques like validating user input and requiring extra approvals for impactful actions. When this is not possible though, and errors do occur, they should be communicated as clearly as possible.
 
 </div>
+
+---
+
+Designing specific user flows may required a better understanding of the main technical concepts of bitcoin, which are covered in the [technology primer]({{ '/getting-started/technology-primer/' | relative_url }}).

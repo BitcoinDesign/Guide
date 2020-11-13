@@ -206,6 +206,8 @@ When designing a bitcoin product or service, it is very important to consider wh
 
 This section described one of many lenses through which we can investigate bitcoin. Based on your goals, this lens may or may not be relevant to you. Make sure to pick the right perspectives for your product and also back up your assumptions with user research and testing.
 
+<!--
+
 ## Work sheet (placeholder)
 {:.no_toc}
 
@@ -216,3 +218,9 @@ Considering your product, ask yourself these questions:
 - Where do these transactions happen?
 - What is the typical user flow of these transactions?
 - What risks and attack vectors exist?
+
+-->
+
+---
+
+Looking closer at the user experience, we can identify a series of common phases that together form a [usage life cycle]({{ '/getting-started/usage-life-cycle/' | relative_url }}).

@@ -33,3 +33,7 @@ Through repeat use, the user becomes more familiar with the service and starts u
 
 ## Passionate use
 These are expert users with high expectations. They will express strong wishes, provide feedback and also spread the word to potential new users.
+
+---
+
+Another helpful way of thinking about user experiences it to consider [common user flows]({{ '/getting-started/common-user-flows/' | relative_url }}).

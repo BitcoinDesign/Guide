@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: The visual language of bitcoin
+title: Visual language
 nav_order: 5
 parent: Getting started
 permalink: /getting-started/visual-language/
@@ -173,4 +173,7 @@ A good way to think about the visual language of Bitcoin is of a scale that rang
 
 In digital product design, there are times when a minimally expressive approach is most appropriate. For example, when a user makes a transaction, we want them to be highly focused and not distract them with graphics. At other times, illustrations and stronger visual elements are more appropriate, and this is where we can take advantage of the creative freedom Bitcoin affords.
 
+---
+
+As you have seen, the expression if bitcoin is shaped by its user base. This brings us to our next topic, which is [user-research]({{ '/getting-started/user-research/' | relative_url }}).
 

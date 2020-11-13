@@ -31,61 +31,61 @@ How to contribute
 
 # Getting started
 
-Welcome to bitcoin, you're in for an adventure. This chapter is all about the big concepts you should be aware of when creating bitcoin products. On this page, you'll find a brief summary that allows you to dig deeper into the sections you are most interested in.
+Welcome to bitcoin design, you're in for an adventure. This chapter is all about the big concepts that are helpful to be familar with when creating bitcoin products. You'll find a brief summary of each concept onn this page, click through if you would like to dig deeper into a specific topic. Note that this is not meant as a comprehensive overview of all topics bitcoin, but only the ones we think are important to know as a designer working in this space.
 
 ---
 
 **[Why bitcoin is unique]({{ '/getting-started/why-bitcoin-is-unique/' | relative_url }})**
 
-The internet has opened an endless, open design space for information and communication. Bitcoin does the same for money and the transfer of value.
+The internet has opened an infinite design space for information and communication. Bitcoin adds the new dimension of transfering value that could bring similar change as previous waves of innovation.
 
 ---
 
 **[Why design for bitcoin]({{ '/getting-started/why-design-for-bitcoin/' | relative_url }})**
 
-Bitcoin is cutting-edge technology that's unlike previous digital innovations. Yet it is fundamentally open and participatory and allows designers and creators to explore and shape our experiences.
+Bitcoin is fundamentally open and participatory and allows designers and creators to explore and shape experiences for users around the globe.
 
 ---
 
 **[Open design]({{ '/getting-started/open-design/' | relative_url }})**
 
-Help shape bitcoin products for a global audience, free from traditional agency or in-house design structures. Open design and open source allow for open collaboration driven by people who care to make a difference.
+Open design is about global collaboration that balances the free exchange of design information, the independence of individual designers and the collective power of collaboration.
 
 ---
 
 **[The visual language of bitcoin]({{ '/getting-started/visual-language/' | relative_url }})**
 
-As an open and public protocol, bitcoin does not have a strictly defined brand. Yet there is a recognizable symbol that has evolved over time and been remixed over and over.
+As an open and public protocol, bitcoin does not have a strictly defined brand. Yet there is a recognizable symbol that has evolved over time and remixed endlessly.
 
 ---
 
 **[User research]({{ '/getting-started/user-research/' | relative_url }})**
 
-All products begin with user needs and end in those same users hands. User research is a fundamental activity in getting from building things to building the things that people care about.
+All products begin with user needs and end in those same users hands. User research is a fundamental activity that helps shift our focus from the act of building towards building the things that people care about.
 
 ---
 
 **[Personal finance]({{ '/getting-started/personal-finance/' | relative_url }})**
 
-If we consider bitcoin money, we need to consider how bitcoin users think about their finances. This page provides a simple framework that can serve as a starting point, deriving bitcoin software and hardware setups from budgeting categories.
+If we consider bitcoin money, we need to consider how bitcoin users think about their finances. This page provides a simple framework that can serve as a starting point, deriving bitcoin software and hardware setups from common budgeting categories.
 
 ---
 
 **[Usage life cycle]({{ '/getting-started/usage-life-cycle/' | relative_url }})**
 
-We all start without any knowledge of bitcoin or your product. As we learn more, our understanding and needs change. As designers, it is important to guide users through this experience.
+All users start without any knowledge of bitcoin or your particular product. As we learn more, our understanding and needs change. As designers, it is important to guide users through this experience.
 
 ---
 
 **[Common user flows]({{ '/getting-started/common-user-flows/' | relative_url }})**
 
-Most bitcoin applications share certain user activities, from initial setup to making a transaction. It is important to follow patterns and behaviors users expect to reduce the chance of mistakes.
+Most bitcoin applications share certain user activities, from initial setup to making a transaction. It is important to follow expected patterns and behaviors users to reduce the risk of mistakes and allow users to seamlessly move between products.
 
 ---
 
 **[Technology primer]({{ '/getting-started/technology-primer/' | relative_url }})**
 
-Learn some of the basic concepts behind the technologies that make bitcoin work, through the lens of designing user experiences.
+Learn some of the basic concepts behind the technologies that make bitcoin work, from what a bitcoin actually is to how transactions are confirmed.
 
 ---
 

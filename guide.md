@@ -19,9 +19,11 @@ How to contribute
 
 -->
 
-{% include image.html
+{% include picture.html
    image = "/assets/images/guide/bitcoin-island.jpg"
    retina = "/assets/images/guide/bitcoin-island@2x.jpg"
+   mobile = "/assets/images/guide/bitcoin-island-mobile.jpg"
+   mobileRetina = "/assets/images/guide/bitcoin-island-mobile@2x.jpg"
    alt-text = ""
    width = 1600
    height = 900
@@ -45,7 +47,7 @@ With bitcoin being so new and different, a big focus of the guide lies on provid
 - [Resources]({{ '/resources/introduction/' | relative_url }}) are tools and information to practically help you get things done
 - [Reference]({{ '/reference/introduction/' | relative_url }}) includes a glossary, an overview of important bitcoin improvement proposals and other useful information
 
-## How to  use the guide
+## How to use the guide
 
 If you are new to bitcoin, continue to the "[Getting started]({{ '/getting-started/introduction/' | relative_url }})" section for an introduction on why bitcoin is so unique and what makes it so interesting and worthwhile to be involved. As a more experienced reader, you are more than welcome to skip straight to the sections that interest you most. And if you don’t find what you are looking for, try the search function, [ask in the community](https://www.bitcoindesigners.org) or [file an issue]({{site.github_repository_url}}Guide/issues) and help us improve this guide.
 
@@ -57,4 +59,4 @@ This guide is an example of this. It was created and is maintained by a communit
 
 ---
 
-Now, [why is bitcoin so unique?]({{ '/getting-started/why-bitcoin-is-unique/' | relative_url }})
+Now, let's [get started]({{ '/getting-started/introduction/' | relative_url }}).

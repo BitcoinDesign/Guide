@@ -345,4 +345,6 @@ Now, if you'd like to go all the way to the beginning of Bitcoin, the most funda
 
 </div>
 
+---
 
+Take a look at how these technologies are implemented in the various types of [bitcoin software]({{ '/getting-started/software/' | relative_url }}).
