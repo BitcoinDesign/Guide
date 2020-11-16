@@ -1,0 +1,22 @@
+<figure{% if include.layout %} class="-{{ include.layout }}"{% endif %}>
+	<picture>
+		<source
+			media="(max-width: 639px)"
+	    	{% if include.mobileRetina %}
+	    		srcset="{{ include.mobile | relative_url }} 1x, {{ include.mobileRetina | relative_url }} 2x"
+	    	{% else %}
+	    		srcset="{{ include.mobile | relative_url }}" 
+	    	{% endif %}
+		>
+	    <img
+	    	src="{{ include.image | relative_url }}"
+	    	{% if include.retina %}
+	    		srcset="{{ include.image | relative_url }} 1x, {{ include.retina | relative_url }} 2x"
+	    	{% endif %}
+	    	alt="{{ include.alt-text }}" 
+	    	width="{{ include.width }}" 
+	    	height="{{ include.height }}"
+	    >
+	</picture>
+	{% if include.caption %}<figcaption class="small">{{ include.caption }}</figcaption>{% endif %}
+</figure>

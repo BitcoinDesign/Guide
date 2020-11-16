@@ -33,7 +33,7 @@
         </div>
         {%- endif -%}
 
-        <div class="main {% if page.path contains 'guide' %}sidebar{% endif %}" id="top">
+        <div class="main{% if page.path contains 'guide' %} sidebar{% endif %}{% if page.main_classes %} {{ page.main_classes }}{% endif %}" id="top">
 
           {{ content }}
 
