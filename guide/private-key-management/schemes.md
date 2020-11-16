@@ -6,7 +6,7 @@ parent: Private key management
 permalink: /private-key-management/schemes/
 ---
 
-# Private key management schemes for bitcoin wallet products
+# Private key management schemes
 
 For the most part, wallet-products have until recently ranged mostly from generalist to advanced when it comes to private key management schemes. Few non-custodial products have targeted or been suitable for newcomers to bitcoin, the learning curve is steep. As the community matures and grows, we should expect there to be opportunities to make more specialized wallet-products. This will also encourage a wider range of private management schemes to be employed that suits the individual product and their customers.
 
