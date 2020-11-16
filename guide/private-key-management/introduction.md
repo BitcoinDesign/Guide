@@ -1,7 +1,7 @@
 ---
 layout: guide
-title: Private Key Management
-nav_order: 3
+title: Private key management
+nav_order: 1
 has_children: true
 permalink: /private-key-management/introduction/
 ---
@@ -16,17 +16,6 @@ How to use it
 How to contribute
 
 -->
-
-{% include picture.html
-   image = "/assets/images/guide/getting-started/go.jpg"
-   retina = "/assets/images/guide/getting-started/go@2x.jpg"
-   mobile = "/assets/images/guide/getting-started/go-mobile.jpg"
-   mobileRetina = "/assets/images/guide/getting-started/go-mobile@2x.jpg"
-   alt-text = ""
-   width = 1600
-   height = 600
-   layout = "full-width"
-%}
 
 # Private key management
 
