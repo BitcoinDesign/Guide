@@ -1,10 +1,9 @@
 ---
 layout: guide
 title: Private Key Management
-nav_order: 1
+nav_order: 3
 has_children: true
 permalink: /private-key-management/introduction/
-main_classes: -no-top-padding
 ---
 
 <!--
@@ -45,19 +44,13 @@ This guide is meant to give an overview of the concept of private keys and relev
 
 An overview of the most common private key management schemes for bitcoin products and thoughts on picking a suitable scheme for your target audience and their use-case.
 
----
-
 **[Principles]({{ '/private-key-management/principles/' | relative_url }})**
 
 Every use-case and product is different but here is an overview of things that all wallet-products should strive for, and only diverge from with very good reasons.
 
----
-
 **[Best practice / Case studies]({{ '/private-key-management/case-studies/' | relative_url }})**
 
 A look at some hypothetical use-case categories and what might be suitable approaches for private key management schemes for each of them.
-
----
 
 **[Appendix]({{ '/private-key-management/appendix/' | relative_url }})**
 
