@@ -21,6 +21,7 @@ A seedless approach is instead trying to provide an automated approach for priva
 **How it works** - The wallet-product will generate a wallet with a keypair, encrypt and back this information up to a location that the user is unlikely to lose access to, while hard for a malicious third party to gain access to. With most implementations so far, the location will be the keychain or key-value store on a mobile device that is also backed up by the OS provider such as iOS (iCloud) or Android (Google Drive). That makes the backup accessible by the user on a new device, should they lose the original, but only accessible by someone that can log into the user’s Apple or Google account. 
 
 **Pros** - Low risk of loss from negligence due to the automatic nature and redundant backups, low onboarding friction
+
 **Cons** - Private key in cloud storage increases risk of malicious third party access, user needs to trust their OS and cloud storage provider, unless the encrypted backup includes the recovery phrase users will not be able to export and import their wallet to another product
 
 **When to use** - when risk of loss from negligence is higher than loss from theft, for beginners
@@ -44,6 +45,7 @@ This scheme is suitable for target-audiences who are already familiar with bitco
 This can be an effective way to reduce the risk of loss from theft if the backup is off-line and the device is biometrically protected (or otherwise protected from use in case of theft), but puts more of the op-sec burden on the individual user. The security and risk will only be as good as how they backup the recovery phrase. To get the best security out of recovery phrases they ought not to be backed up on-line but instead in several redundant secure places off-line and need to take resistance to physical theft, fire and other destructive events into account. A fair amount of effort and knowledge is required for this. We’ll call this approach sovereign backup, to differentiate it from cloud backup. 
 
 **Pros** - Sovereign backups done well can provide very high security, good interoperability
+
 **Cons** - Requires significant effort and knowledge to avoid common beginner mistakes, onboarding friction, especially high risk of unsatisfactory backup security for mobile products where onboarding is likely to happen without access to the right backup tools and locations
 
 **When to use** - When target audience is likely to be knowledgeable and implement good sovereign backup schemes, when storing medium amounts, when risk of loss from theft is higher than loss from negligence 
@@ -62,6 +64,7 @@ A wallet-product that supports external signing can remove the need for the priv
 **How it works** - The software wallet-product connects to an external device where the extended keypair can be generated and held. When a transaction needs to be signed, the software submits a partially signed bitcoin transaction (PSBT, defined in [BIP174]) to the device. The user confirms on the device and the PSBT state of the transaction returned to the software wallet-product is now fully signed and can be transmitted to the blockchain.
 
 **Pros** - Removes private key from online devices
+
 **Cons** - The wallet still needs its recovery phrase backed up with a good sovereign backup scheme, requires further effort and knowledge
 
 **When to use** - When target audience is likely to be very knowledgeable and implement good sovereign backup schemes, when storing medium to large amounts, when risk of loss from theft is higher than loss from negligence 
@@ -82,9 +85,11 @@ Some benefits over a multikey setup include greater privacy, as a transaction us
 **How it works** - A single private key is split into n key-shares that are distributed to several parties, devices or locations. When signing a transaction the required number of shares need to be coordinated into one valid signature.
 
 **Pros** - Can provide higher resistance to loss from theft and negligence
+
 **Cons** - Require precise coordination of key-shares when signing, few advantages over multi-key setups with Schnorr signatures, individual implementations not interoperable
 
 **When to use** - When target audience is knowledgeable and risk of theft is higher than negligance
+
 **When not to use** - When Schnorr signatures are available enabling multi-key setups
 
 **Variations** - Number of signatures required, location and distribution of pieces, signing procedure
@@ -101,9 +106,11 @@ This can raise the security since anyone needs access to more than one key to mo
 **How it works** - A software wallet-product or coordination software initiates a multi-sig wallet that can have several private keys attached (co-signers), the user then adds private keys from other wallets generated elsewhere to the multisig after which the software wallet can complete the creation process. For any future transaction from the multi-sig wallet the required amount of co-signers need to sign (using Partially Signed Bitcoin Transactions - PSBT from [BIP174]) before any transaction is valid.
 
 **Pros** - Can add redundancy to private keys and increase security
+
 **Cons** - Adds complexity and op-sec burden for multiple private keys
 
 **When to use** - When storing large amounts, when users are likely to be very knowledgeable
+
 **When not to use** - For small amounts, when users are likely to be new to bitcoin
 
 **Variations** - number of keys, key storage, distribution, add social recovery
