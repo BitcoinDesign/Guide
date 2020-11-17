@@ -22,6 +22,30 @@ let themes = [
     flipLayoutOnMobile: false,
     author: "Template",
     authorLink: "https://github.com/BitcoinDesign/Guide/pull/27"
+  },
+  {
+    // Bridging bitcoin
+    copyBackgroundColor: "#F7931A", 
+    bitcoinLogoPath: "/assets/banner-bitcoin-logo.svg", 
+    bitcoinLogoFillColor: "#000", 
+    bitcoinLogoOutlineColor: "",
+    titleFillColor: "#000",
+    titleOutlineColor: "",
+    descriptionFillColor: "#000",
+    button1FillColor: "#FFF",
+    button1OutlineColor: "#000",
+    button1LabelFillColor: "#000",
+    button2FillColor: "",
+    button2OutlineColor: "#000",
+    button2LabelFillColor: "#000",
+    backgroundImagePath: 'url("/assets/images/home/banner/bridging-bitcoin.jpg")',
+    backgroundImagePathRetina: 'url("/assets/images/home/banner/bridging-bitcoin@2x.jpg")',
+    backgroundImagePathMobile: 'url("/assets/images/home/banner/bridging-bitcoin-mobile.jpg")',
+    backgroundImagePathMobileRetina: 'url("/assets/images/home/banner/bridging-bitcoin-mobile@2x.jpg")',
+    backgroundImageColor: "#fbfbfb",
+    flipLayoutOnMobile: false,
+    author: "Alexa Aker",
+    authorLink: "https://github.com/BitcoinDesign/Guide/issues/45"
   }
 ];
 
