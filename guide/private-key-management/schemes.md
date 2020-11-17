@@ -30,10 +30,24 @@ Good reading material about complete views on threats and risk can be found [her
 * **Loss from negligence** - you lose access to your own private key(s), and therefore the funds held
 * **Loss from theft** - a third party gains access to your private key(s) and deliberately takes control of your funds
 
+{% include image.html
+   image = "/assets/images/guide/private-key-management/schemes/schemes-spectrum.png"
+   retina = "/assets/images/guide/private-key-management/schemes/schemes-spectrum@2x.png"
+   alt-text = "Private key management schemes, spectrum"
+   caption = "Illustration of spectrum, WIP"
+   width = 800
+   height = 624
+%}
+
 ## Picking a scheme for your product
 
 Now that you have a clear picture of your use-case, target audience and risk vectors we can consider where on this spectrum you should be aiming. 
 
-*{Illustration of spectrum, WIP}*
-
-*{Decision tree / Scheme picker flow chart illustration, WIP}*
+{% include image.html
+   image = "/assets/images/guide/private-key-management/schemes/schemes-flowchart.png"
+   retina = "/assets/images/guide/private-key-management/schemes/schemes-flowchart@2x.png"
+   alt-text = "Private key management schemes, flowchart"
+   caption = "Decision tree / Scheme picker flow chart illustration, WIP"
+   width = 800
+   height = 584
+%}

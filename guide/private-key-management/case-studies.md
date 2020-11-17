@@ -21,7 +21,14 @@ A single-key scheme with automatic cloud backup might be the most suitable choic
 
 **Technical considerations** - What is backed up (key, phrase etc. ?), encryption, backup locations, upgrade-path if funds stored increase 
 
-*{Outline design of key screens for case study, WIP}*
+{% include image.html
+   image = "/assets/images/guide/private-key-management/case-studies/case-study-daily.png"
+   retina = "/assets/images/guide/private-key-management/case-studies/case-study-daily@2x.png"
+   alt-text = "Outline design of key screens for case study, WIP"
+   caption = "Outline design of key screens for case study, WIP"
+   width = 800
+   height = 372
+%}
 
 ## Current / Checking account
 
@@ -47,6 +54,15 @@ Should they lose either their main mobile device, or the purpose-built signing d
 **Design considerations** - Suitable for monthly transactions, lots of edge cases and infrequent but important situations; key setup, rotation, recovery, signing transactions etc.
 
 **Technical considerations** - Pitfalls of using hardware wallets in multisig, need to take care when backing up to include x-pubs from all keys, usage could be simplified bye having hardware device designed/customized by the software maker (compare banks and their digital token signers common in Europe).
+
+{% include image.html
+   image = "/assets/images/guide/private-key-management/case-studies/case-study-current.png"
+   retina = "/assets/images/guide/private-key-management/case-studies/case-study-current@2x.png"
+   alt-text = "Outline design of key screens for case study, WIP"
+   caption = "Outline design of key screens for case study, WIP"
+   width = 800
+   height = 208
+%}
 
 ## Savings / Investment account
 
