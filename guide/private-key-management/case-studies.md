@@ -10,7 +10,7 @@ permalink: /private-key-management/case-studies/
 
 As mentioned previously, before deciding on a private key management scheme it’s essential to have a good idea of what use-case and target audience your product has. Let’s look at some hypothetical use-case categories and what might be suitable approaches.
 
-## Cash / Transaction products
+## Cash / Daily spending
 
 Imagine a product which tries to solve the problem of quickly and easily sending smaller amounts of money, for example to friends and family or for small purchases. 
 Ease and speed of use will be important as usage is likely to be on mobile devices and on the go. Users are not expected to be well versed in bitcoin technology or advanced private key management, which makes it reasonable to worry more about loss from negligence than theft.
@@ -23,7 +23,7 @@ A single-key scheme with automatic cloud backup might be the most suitable choic
 
 *{Outline design of key screens for case study, WIP}*
 
-## Current (checking) account products
+## Current / Checking account
 
 A product that is meant to be a replacement for what a bank would call a current/checking account where the user might receive their salary and pay their bills from. 
 Safeguards against loss will be a higher priority than with a cash product, and we might therefore accept more friction both when setting up the wallet and when transacting.
@@ -47,3 +47,23 @@ Should they lose either their main mobile device, or the purpose-built signing d
 **Design considerations** - Suitable for monthly transactions, lots of edge cases and infrequent but important situations; key setup, rotation, recovery, signing transactions etc.
 
 **Technical considerations** - Pitfalls of using hardware wallets in multisig, need to take care when backing up to include x-pubs from all keys, usage could be simplified bye having hardware device designed/customized by the software maker (compare banks and their digital token signers common in Europe).
+
+## Savings / Investment account
+
+...
+
+## Life savings
+
+...
+
+## The 'upgradeable wallet'
+
+...
+
+## Multi-user current / checking account
+
+...
+
+## Business account
+
+...
