@@ -1,9 +1,9 @@
 ---
 layout: guide
-title: Private Key Management Schemes
-nav_order: 2
+title: Schemes
+nav_order: 1
 parent: Private key management
-permalink: /private-key-management/schemes/
+permalink: /guide/private-key-management/schemes/
 ---
 
 # Private key management schemes

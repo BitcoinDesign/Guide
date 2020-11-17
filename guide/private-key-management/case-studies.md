@@ -1,9 +1,9 @@
 ---
 layout: guide
 title: Case studies
-nav_order: 6
+nav_order: 5
 parent: Private key management
-permalink: /private-key-management/case-studies/
+permalink: /guide/private-key-management/case-studies/
 ---
 
 # Case studies

@@ -1,9 +1,9 @@
 ---
 layout: guide
 title: Principles
-nav_order: 5
+nav_order: 4
 parent: Private key management
-permalink: /private-key-management/principles/
+permalink: /guide/private-key-management/principles/
 ---
 
 # Principles

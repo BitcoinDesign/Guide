@@ -3,7 +3,7 @@ layout: guide
 title: Private key management
 nav_order: 1
 has_children: true
-permalink: /private-key-management/introduction/
+permalink: /guide/private-key-management/introduction/
 ---
 
 <!--

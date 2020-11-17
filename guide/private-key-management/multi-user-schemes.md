@@ -1,9 +1,9 @@
 ---
 layout: guide
 title: Multi-user schemes
-nav_order: 4
+nav_order: 3
 parent: Private key management
-permalink: /private-key-management/multi-user-schemes/
+permalink: /guide/private-key-management/multi-user-schemes/
 ---
 
 # Multi-user schemes
