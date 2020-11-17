@@ -3,7 +3,7 @@ layout: guide
 title: Software overview
 nav_order: 11
 parent: Getting started
-permalink: /getting-started/software/
+permalink: /guide/getting-started/software/
 ---
 
 # Software overview
@@ -167,7 +167,7 @@ Mining has become primarily a professional undertaking with dedicated software t
 
 ---
 
-Some bitcoin features and functionality are best handled by [dedicated hardware]({{ '/getting-started/hardware/' | relative_url }}).
+Some bitcoin features and functionality are best handled by [dedicated hardware]({{ '/guide/getting-started/hardware/' | relative_url }}).
 
 
 

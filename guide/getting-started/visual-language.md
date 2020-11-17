@@ -3,7 +3,7 @@ layout: guide
 title: Visual language
 nav_order: 5
 parent: Getting started
-permalink: /getting-started/visual-language/
+permalink: /guide/getting-started/visual-language/
 ---
 
 # The visual language of bitcoin
@@ -175,5 +175,5 @@ In digital product design, there are times when a minimally expressive approach 
 
 ---
 
-As you have seen, the expression if bitcoin is shaped by its user base. This brings us to our next topic, which is [user-research]({{ '/getting-started/user-research/' | relative_url }}).
+As you have seen, the expression if bitcoin is shaped by its user base. This brings us to our next topic, which is [user-research]({{ '/guide/getting-started/user-research/' | relative_url }}).
 

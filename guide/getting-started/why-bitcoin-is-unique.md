@@ -3,7 +3,7 @@ layout: guide
 title: Why bitcoin is unique
 nav_order: 2
 parent: Getting started
-permalink: /getting-started/why-bitcoin-is-unique/
+permalink: /guide/getting-started/why-bitcoin-is-unique/
 main_classes: -no-top-padding
 ---
 
@@ -99,4 +99,4 @@ How many currencies and payment networks allow anyone to just show up, participa
 
 ---
 
-Continue on and find out why you should [design for bitcoin]({{ '/getting-started/why-design-for-bitcoin/' | relative_url }}).
+Continue on and find out why you should [design for bitcoin]({{ '/guide/getting-started/why-design-for-bitcoin/' | relative_url }}).

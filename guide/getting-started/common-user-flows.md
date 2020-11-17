@@ -3,7 +3,7 @@ layout: guide
 title: Common user flows
 nav_order: 9
 parent: Getting started
-permalink: /getting-started/common-user-flows/
+permalink: /guide/getting-started/common-user-flows/
 ---
 
 # Common user flows
@@ -315,4 +315,4 @@ This can be a tricky experience to address. For one, non-custodial cryptocurrenc
 
 ---
 
-Designing specific user flows may required a better understanding of the main technical concepts of bitcoin, which are covered in the [technology primer]({{ '/getting-started/technology-primer/' | relative_url }}).
+Designing specific user flows may required a better understanding of the main technical concepts of bitcoin, which are covered in the [technology primer]({{ '/guide/getting-started/technology-primer/' | relative_url }}).

@@ -3,7 +3,7 @@ layout: guide
 title: Open design
 nav_order: 4
 parent: Getting started
-permalink: /getting-started/open-design/
+permalink: /guide/getting-started/open-design/
 ---
 
 <!--
@@ -93,4 +93,4 @@ This guide is published under three different licenses ([MIT license](LICENSE-MI
 
 ---
 
-There is enourmous space for creativity. To find a starting point, take a look at the [visual-language of bitcoin]({{ '/getting-started/visual-language/' | relative_url }}).
+There is enourmous space for creativity. To find a starting point, take a look at the [visual-language of bitcoin]({{ '/guide/getting-started/visual-language/' | relative_url }}).

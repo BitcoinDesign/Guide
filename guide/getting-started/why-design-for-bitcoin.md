@@ -3,7 +3,7 @@ layout: guide
 title: Why design for bitcoin
 nav_order: 3
 parent: Getting started
-permalink: /getting-started/why-design-for-bitcoin/
+permalink: /guide/getting-started/why-design-for-bitcoin/
 main_classes: -no-top-padding
 ---
 
@@ -54,7 +54,7 @@ Many bitcoin projects start by identifying an unmet need. Unlike traditional fin
 
 ## Work in public
 
-Bitcoin is open-source, and designing for bitcoin allows you also work on the same ideas of publicly sharing and collaborating on design information. Free from the structures of agencies and corporations, open collaboration allows every participant to have a voice and shape the way they work based on their interests and preferences. Find out more about [open design]({{ '/getting-started/open-design/' | relative_url }}).
+Bitcoin is open-source, and designing for bitcoin allows you also work on the same ideas of publicly sharing and collaborating on design information. Free from the structures of agencies and corporations, open collaboration allows every participant to have a voice and shape the way they work based on their interests and preferences. Find out more about [open design]({{ '/guide/getting-started/open-design/' | relative_url }}).
 
 ## Design money
 
@@ -66,6 +66,6 @@ The doors are wide open and bitcoin design is discussed publicly online and any 
 
 ---
 
-Dive deeper into what [open design]({{ '/getting-started/open-design/' | relative_url }}) means.
+Dive deeper into what [open design]({{ '/guide/getting-started/open-design/' | relative_url }}) means.
 
 

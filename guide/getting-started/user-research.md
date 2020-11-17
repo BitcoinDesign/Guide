@@ -3,7 +3,7 @@ layout: guide
 title: User research
 nav_order: 6
 parent: Getting started
-permalink: /getting-started/user-research/
+permalink: /guide/getting-started/user-research/
 ---
 
 # User research
@@ -22,9 +22,22 @@ We design digital products for the benefit of others. In order to do that, we ne
 
 ## Why user research?
 
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/user-research/user-research.jpg"
+   retina = "/assets/images/guide/getting-started/user-research/user-research@2x.jpg"
+   alt-text = ""
+   width = 100
+   height = 100
+   layout = "float-left"
+%}
+
 **In short, user research helps teams create better products in a more focused and efficient manner.**
 
-Prioritizing on the features and improvements that make the biggest difference is crucial. What exactly those are is often a matter of heavy debate with clashing opinions and rationale. A great way to get past individual opinions is to make data-informed decisions. User research creates data from the start and end points of our efforts. Products are created because there are specific unaddressed needs, then they go through development and finally back in the hands of the target audience for use and evaluation. Many times we are too occupied with the complexities of development, but the real measure of success is whether user needs are satisfied well. 
+Prioritizing on the features and improvements that make the biggest difference is crucial. What exactly those are is often a matter of heavy debate with clashing opinions and rationale. A great way to get past individual opinions is to make data-informed decisions. User research creates data from the start and end points of our efforts. Products are created because there are specific unaddressed needs, then they go through development and finally back in the hands of the target audience for use and evaluation. Many times we are too occupied with the complexities of development, but the real measure of success is whether user needs are satisfied well.
+
+</div>
 
 User research allows us to effectively connect these dots and highlight the quickest path between them. This results in more appropriate product roadmaps, more focused team efforts, and happier users. This is especially important for projects with limited resources, which many open-source efforts are.
 
@@ -63,7 +76,20 @@ The bitcoin protocol works with addresses and has otherwise no sense of identity
 
 ### It's a public ledger
 
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/user-research/public-ledger.jpg"
+   retina = "/assets/images/guide/getting-started/user-research/public-ledger@2x.jpg"
+   alt-text = "Privacy"
+   width = 100
+   height = 100
+   layout = "float-left"
+%}
+
 While we cannot know who is directly responsible for the activity, we can analyze the overall network activity. No other currency in history has had a complete and accurate database of all transactions. What can we learn from this data that allows us to improve the system for users?
+
+</div>
 
 ### New and evolving technology
 
@@ -95,7 +121,7 @@ Links to:
 
 ### Open source and open design
 
-While there are plenty of private companies that build on Bitcoin, but this guide focuses on open-source. In open-source, collaboration is based on communal efforts that mostly happen in public. Find out more on our dedicated page on [open design]({{ '/getting-started/open-design/' | relative_url }}).
+While there are plenty of private companies that build on Bitcoin, but this guide focuses on open-source. In open-source, collaboration is based on communal efforts that mostly happen in public. Find out more on our dedicated page on [open design]({{ '/guide/getting-started/open-design/' | relative_url }}).
 
 <!--
 
@@ -108,7 +134,20 @@ Links to:
 
 ### Privacy
 
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/user-research/private.jpg"
+   retina = "/assets/images/guide/getting-started/user-research/private@2x.jpg"
+   alt-text = "Privacy"
+   width = 100
+   height = 100
+   layout = "float-left"
+%}
+
 User research should not be a one-sided extraction of information, but a collaboration between researchers and users to find better solutions. Since research efforts are initiated by researchers, it is up to them to create frameworks that respect the privacy and agency of users. That means full upfront disclosure, open collaboration, and a mutual understanding of how research results will be used.
+
+</div>
 
 <!--
 
@@ -130,4 +169,4 @@ Links to:
 
 ---
 
-Frameworks are helpful tools to organize user behavior. Our next section introduces one with a focus on [personal finance]({{ '/getting-started/personal-finance/' | relative_url }}).
+Frameworks are helpful tools to organize user behavior. Our next section introduces one with a focus on [personal finance]({{ '/guide/getting-started/personal-finance/' | relative_url }}).

@@ -3,7 +3,7 @@ layout: guide
 title: Personal finance
 nav_order: 7
 parent: Getting started
-permalink: /getting-started/personal-finance/
+permalink: /guide/getting-started/personal-finance/
 ---
 
 <!--
@@ -223,4 +223,4 @@ Considering your product, ask yourself these questions:
 
 ---
 
-Looking closer at the user experience, we can identify a series of common phases that together form a [usage life cycle]({{ '/getting-started/usage-life-cycle/' | relative_url }}).
+Looking closer at the user experience, we can identify a series of common phases that together form a [usage life cycle]({{ '/guide/getting-started/usage-life-cycle/' | relative_url }}).

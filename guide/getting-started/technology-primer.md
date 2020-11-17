@@ -3,7 +3,7 @@ layout: guide
 title: Technology primer
 nav_order: 10
 parent: Getting started
-permalink: /getting-started/technology-primer/
+permalink: /guide/getting-started/technology-primer/
 main_classes: -no-top-padding
 ---
 
@@ -347,4 +347,4 @@ Now, if you'd like to go all the way to the beginning of Bitcoin, the most funda
 
 ---
 
-Take a look at how these technologies are implemented in the various types of [bitcoin software]({{ '/getting-started/software/' | relative_url }}).
+Take a look at how these technologies are implemented in the various types of [bitcoin software]({{ '/guide/getting-started/software/' | relative_url }}).
