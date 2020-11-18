@@ -109,11 +109,10 @@ This can raise the security since anyone needs access to more than one key to mo
 
 **Cons** - Adds complexity and op-sec burden for multiple private keys
 
-**When to use** - When storing large amounts, when users are likely to be very knowledgeable
+**When to use** - When storing large amounts, when users are confident and able to manually back up their recovery-phrase.
 
 **When not to use** - For small amounts, when users are likely to be new to bitcoin
 
 **Variations** - number of keys, key storage, distribution, add social recovery
 
 **Products that use this scheme** - Electrum, Casa,Unchained Capital, Armory, Guarda, Caravan
-
