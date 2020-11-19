@@ -4,7 +4,20 @@ title: Usage life cycle
 nav_order: 8
 parent: Getting started
 permalink: /guide/getting-started/usage-life-cycle/
+main_classes: -no-top-padding
 ---
+
+{% include picture.html
+   image = "/assets/images/guide/getting-started/usage-life-cycle/usage-life-cycle.jpg"
+   retina = "/assets/images/guide/getting-started/usage-life-cycle/usage-life-cycle@2x.jpg"
+   mobile = "/assets/images/guide/getting-started/usage-life-cycle/usage-life-cycle-mobile.jpg"
+   mobileRetina = "/assets/images/guide/getting-started/usage-life-cycle/usage-life-cycle-mobile@2x.jpg"
+   alt-text = ""
+   caption = ""
+   width = 1600
+   height = 600
+   layout = "full-width"
+%}
 
 # Usage life cycle
 {:.no_toc}
@@ -115,6 +128,27 @@ Through repeat use, the user becomes more familiar with the service and starts u
 %}
 
 These are expert users with high expectations. They will express strong wishes, provide feedback and also spread the word to potential new users.
+
+</div>
+
+---
+
+## A leaky bucket
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/usage-life-cycle/dropoff.jpg"
+   retina = "/assets/images/guide/getting-started/usage-life-cycle/dropoff@2x.jpg"
+   alt-text = "Coffee icon"
+   width = 400
+   height = 400
+   layout = "float-right-desktop"
+%}
+
+Some users disappear at every step in the life cycle. If you understand where and why they drop off, you have a better chance at fixing those issues and hopefully turning them into passionate users of your product.
+
+There are various [user research]({{ '/guide/getting-started/user research/' | relative_url }}) techniques that can help identify these types of issues.
 
 </div>
 

@@ -4,6 +4,7 @@ title: Personal finance
 nav_order: 7
 parent: Getting started
 permalink: /guide/getting-started/personal-finance/
+main_classes: -no-top-padding
 ---
 
 <!--
@@ -13,6 +14,18 @@ Editor's notes
 This page provides a rough framework for how to think about transactions in the general context of typical personal finances. It can provide a great jumping-off point into different other pages like private key management solutions, payment types and hardware wallets.
 
 -->
+
+{% include picture.html
+   image = "/assets/images/guide/getting-started/personal-finance/personal-finance.jpg"
+   retina = "/assets/images/guide/getting-started/personal-finance/personal-finance@2x.jpg"
+   mobile = "/assets/images/guide/getting-started/personal-finance/personal-finance-mobile.jpg"
+   mobileRetina = "/assets/images/guide/getting-started/personal-finance/personal-finance-mobile@2x.jpg"
+   alt-text = ""
+   caption = ""
+   width = 1600
+   height = 600
+   layout = "full-width"
+%}
 
 # Personal finance
 {:.no_toc}

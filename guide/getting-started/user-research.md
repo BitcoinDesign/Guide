@@ -4,9 +4,8 @@ title: User research
 nav_order: 6
 parent: Getting started
 permalink: /guide/getting-started/user-research/
+main_classes: -no-top-padding
 ---
-
-# User research
 
 <!--
 
@@ -17,6 +16,20 @@ Goal of this page is to frame user research in the bitcoin ecosystem.
 - Further resources
 
 -->
+
+{% include picture.html
+   image = "/assets/images/guide/getting-started/user-research/user-research-header.jpg"
+   retina = "/assets/images/guide/getting-started/user-research/user-research-header@2x.jpg"
+   mobile = "/assets/images/guide/getting-started/user-research/user-research-header-mobile.jpg"
+   mobileRetina = "/assets/images/guide/getting-started/user-research/user-research-header-mobile@2x.jpg"
+   alt-text = ""
+   caption = ""
+   width = 1600
+   height = 600
+   layout = "full-width"
+%}
+
+# User research
 
 We design digital products for the benefit of others. In order to do that, we need to understand who those others are, as well as their unique needs, desires, and behaviors. A comprehensive design strategy balances user needs with considerations around the technology, business models, societal and economic impact, and other factors. But here in this section, we will focus on understanding users better.
 
