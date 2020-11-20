@@ -4,6 +4,7 @@ title: Hardware overview
 nav_order: 12
 parent: Getting started
 permalink: /guide/getting-started/hardware/
+main_classes: -no-top-padding
 ---
 
 <!--
@@ -13,6 +14,18 @@ Editor's notes
 This page provides an overview of the different types of hardware that interact with the bitcoin network.
 
 -->
+
+{% include picture.html
+   image = "/assets/images/guide/getting-started/hardware/hardware-overview.jpg"
+   retina = "/assets/images/guide/getting-started/hardware/hardware-overview@2x.jpg"
+   mobile = "/assets/images/guide/getting-started/hardware/hardware-overview-mobile.jpg"
+   mobileRetina = "/assets/images/guide/getting-started/hardware/hardware-overview-mobile@2x.jpg"
+   alt-text = ""
+   caption = ""
+   width = 1600
+   height = 600
+   layout = "full-width"
+%}
 
 # Hardware overview
 

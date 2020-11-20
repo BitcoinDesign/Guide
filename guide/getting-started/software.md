@@ -4,9 +4,8 @@ title: Software overview
 nav_order: 11
 parent: Getting started
 permalink: /guide/getting-started/software/
+main_classes: -no-top-padding
 ---
-
-# Software overview
 
 <!--
 
@@ -26,6 +25,20 @@ Functionality
 - Accounting
 
 -->
+
+{% include picture.html
+   image = "/assets/images/guide/getting-started/software/software-overview.jpg"
+   retina = "/assets/images/guide/getting-started/software/software-overview@2x.jpg"
+   mobile = "/assets/images/guide/getting-started/hardware/software-overview-mobile.jpg"
+   mobileRetina = "/assets/images/guide/getting-started/software/software-overview-mobile@2x.jpg"
+   alt-text = ""
+   caption = ""
+   width = 1600
+   height = 600
+   layout = "full-width"
+%}
+
+# Software overview
 
 Finance is complex and there are many use cases, from giving weekly allowance to a child and selling goods in a store to managing multi-billion dollar retirement funds and hectic day trading. So we end up with many different applications solutions for the various uses cases. Bitcoin being a global currency adds another layer of complexity as the software may need to be adapted to different languages, cultures and legal frameworks. When designing, it's a good idea to have a feel for this landscape and know where your product fits. Here is an overview of several common and specialized categories.
 
