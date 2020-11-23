@@ -1,9 +1,9 @@
 let themes = [
   {
     // Template
-    copyBackgroundColor: "", 
-    bitcoinLogoPath: "/assets/banner-bitcoin-logo.svg", 
-    bitcoinLogoFillColor: "", 
+    copyBackgroundColor: "",
+    bitcoinLogoPath: "/assets/banner-bitcoin-logo.svg",
+    bitcoinLogoFillColor: "",
     bitcoinLogoOutlineColor: "#000",
     titleFillColor: "#FFF",
     titleOutlineColor: "#000",
@@ -25,9 +25,9 @@ let themes = [
   },
   {
     // Bridging bitcoin
-    copyBackgroundColor: "#F7931A", 
-    bitcoinLogoPath: "/assets/banner-bitcoin-logo.svg", 
-    bitcoinLogoFillColor: "#000", 
+    copyBackgroundColor: "#F7931A",
+    bitcoinLogoPath: "/assets/banner-bitcoin-logo.svg",
+    bitcoinLogoFillColor: "#000",
     bitcoinLogoOutlineColor: "",
     titleFillColor: "#000",
     titleOutlineColor: "",
@@ -38,11 +38,11 @@ let themes = [
     button2FillColor: "",
     button2OutlineColor: "#000",
     button2LabelFillColor: "#000",
-    backgroundImagePath: 'url("/assets/images/home/banner/bridging-bitcoin.jpg")',
-    backgroundImagePathRetina: 'url("/assets/images/home/banner/bridging-bitcoin@2x.jpg")',
-    backgroundImagePathMobile: 'url("/assets/images/home/banner/bridging-bitcoin-mobile.jpg")',
-    backgroundImagePathMobileRetina: 'url("/assets/images/home/banner/bridging-bitcoin-mobile@2x.jpg")',
-    backgroundImageColor: "#fbfbfb",
+    backgroundImagePath: 'url("/assets/images/home/banner/header-theme-1-bridging-bitcoin.png")',
+    backgroundImagePathRetina: 'url("/assets/images/home/banner/header-theme-1-bridging-bitcoin@2x.png")',
+    backgroundImagePathMobile: 'url("/assets/images/home/banner/header-theme-1-bridging-bitcoin-mobile.png")',
+    backgroundImagePathMobileRetina: 'url("/assets/images/home/banner/header-theme-1-bridging-bitcoin-mobile@2x.png")',
+    backgroundImageColor: "#F7931A",
     flipLayoutOnMobile: false,
     author: "Alexa Aker",
     authorLink: "https://github.com/BitcoinDesign/Guide/issues/45"
@@ -132,13 +132,13 @@ docReady(function() {
 
     document.getElementById('banner-bitcoin-logo-svg').addEventListener('click', function(event) {
         event.preventDefault();
-        
+
         applyNextTheme();
     });
 
     document.getElementById('home-banner-info-next').addEventListener('click', function(event) {
         event.preventDefault();
-        
+
         applyNextTheme();
     });
 });
