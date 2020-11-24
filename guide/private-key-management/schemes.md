@@ -24,11 +24,18 @@ The narrower you can define your goal on these axes, the easier it will be to pi
 
 The trick to picking a private key management scheme is finding the appropriate balance between convenience and ease of use on the one hand, and risk of loss and redundant security on the other. While continuous improvements mean we can now enable higher security and good user experience at the same time, there is always a balance. Higher security generally means more friction and work for the user, both during setup and usage of a wallet-product. 
 
-How you and your customers feel about risk is a related but distinct issue. There are many potential threat-vectors for customers of non-custodial wallet-products and people will be exposed differently to these vectors, and be more or less comfortable with their risk in each.
-Good reading material about complete views on threats and risk can be found [here], but as a simplification we can characterize the main potentials for loss of funds as;
+How you and your customers feel about risk is a related but distinct issue. There are many potential threat-vectors for customers of non-custodial wallet-products and people will be exposed differently to these vectors, and be more or less comfortable with their risk in each. 
 
-* **Loss from negligence** - you lose access to your own private key(s), and therefore the funds held
-* **Loss from theft** - a third party gains access to your private key(s) and deliberately takes control of your funds
+As a simplification we can characterize the main potentials for loss of funds as;
+
+* **Loss from negligence** - you lose access to your own private key
+* **Loss from theft** - a third party gains access to your private key
+
+Casa's [wealth security protocol]({{ 'https://github.com/Casa/wealth-security-protocol/blob/master/casa-wealth-security-protocol.pdf'}}) is good reading material for more complete views on threat vectors and risk.
+
+## Picking a scheme for your product
+
+Now that you have a clear picture of your use-case, target audience and risk vectors we can consider where on this spectrum you should be aiming. 
 
 {% include image.html
    image = "/assets/images/guide/private-key-management/schemes/schemes-spectrum.png"
@@ -38,10 +45,6 @@ Good reading material about complete views on threats and risk can be found [her
    width = 800
    height = 624
 %}
-
-## Picking a scheme for your product
-
-Now that you have a clear picture of your use-case, target audience and risk vectors we can consider where on this spectrum you should be aiming. 
 
 {% include image.html
    image = "/assets/images/guide/private-key-management/schemes/schemes-flowchart.png"
