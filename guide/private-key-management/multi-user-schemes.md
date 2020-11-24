@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Multi-user schemes
+title: Multi-user
 nav_order: 3
 parent: Private key management
 permalink: /guide/private-key-management/multi-user-schemes/

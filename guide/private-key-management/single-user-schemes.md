@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Single-user schemes
+title: Single-user
 nav_order: 2
 parent: Private key management
 permalink: /guide/private-key-management/single-user-schemes/
@@ -10,7 +10,7 @@ permalink: /guide/private-key-management/single-user-schemes/
 
 Now let's dive in and look at the various schemes that might be suitable for a single-user wallet-product to understand the differences at a high level.
 
-### Automatic cloud backup (Seedless)
+### Automatic cloud backup
 
 A so-called seedless wallet-product is a fairly new concept but basically means that the user is NOT required to manually backup their recovery-phrase (seed) when setting up a new wallet. The target audience with a seedless scheme would be new or novice bitcoin users to whom being exposed to backing up a recovery phrase as part of onboarding can be baffling and backfire. 
 
@@ -32,7 +32,7 @@ A seedless approach is instead trying to provide an automated approach for priva
 
 **Products that use this scheme** - Casa Mobile Key, Photon SDK (in development), Paymobil (not a bitcoin product)
 
-### Single-key recovery phrase
+### Recovery phrase
 
 Recovery phrases have been the most common private key management scheme by far since its proposal with BIP39 in 2013. If you have used any non-custodial bitcoin product you are likely to have experienced the onboarding requirements. After creating a wallet, the product will ask you to manually backup a 12 (or 24 in rare instances) word recovery phrase to a ‘safe place’. As the next step it will often ask you to verify that you did save it by having you input the phrase in the correct order again. 
 

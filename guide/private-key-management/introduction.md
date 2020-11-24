@@ -39,7 +39,7 @@ This guide is meant to give an overview of the concept of private keys and relev
 
 ---
 
-**[Private key management schemes]({{ '/guide/private-key-management/schemes/' | relative_url }})**
+**[Schemes]({{ '/guide/private-key-management/schemes/' | relative_url }})**
 
 An overview of the most common private key management schemes for bitcoin products and thoughts on picking a suitable scheme for your target audience and their use-case.
 

@@ -6,7 +6,7 @@ parent: Private key management
 permalink: /guide/private-key-management/schemes/
 ---
 
-# Private key management schemes
+# Private key schemes
 
 For the most part, wallet-products have until recently ranged mostly from generalist to advanced when it comes to private key management schemes. Few non-custodial products have targeted or been suitable for newcomers to bitcoin, the learning curve is steep. As the community matures and grows, we should expect there to be opportunities to make more specialized wallet-products. This will also encourage a wider range of private management schemes to be employed that suits the individual product and their customers.
 
@@ -39,14 +39,14 @@ Now that you have a clear picture of your use-case, target audience and risk vec
 We can divide the options up into single and multi-user schemes;
 
 ### [Single-user schemes]({{ '/guide/private-key-management/single-user-schemes/' | relative_url }})
-- **Automatic cloud backup**
-- **Single-key recovery phrase**
-- **External signing device**
-- **Threshold signatures/Key-sharing**
-- **Multi-key**
+- [Automatic cloud backup]({{ '/guide/private-key-management/single-user-schemes/#automatic-cloud-backup' | relative_url }}) - no user action required for backup
+- [Recovery phrase]({{ '/guide/private-key-management/single-user-schemes/#recovery-phrase' | relative_url }}) - manual backup of a phrase of words
+- [External signing device]({{ '/guide/private-key-management/single-user-schemes/#external-signing-device' | relative_url }}) - keys are held on a separate device
+- [Threshold signatures/Key-sharing]({{ '/guide/private-key-management/single-user-schemes/#threshold-signatures--key-sharing' | relative_url }}) - one key is split and distributed
+- [Multi-key]({{ '/guide/private-key-management/single-user-schemes/#multi-key' | relative_url }}) - several keys jointly control the wallet
 
 ### [Multi-user schemes]({{ '/guide/private-key-management/multi-user-schemes/' | relative_url }})
-- **Multi-key**
+- [Multi-key]({{ '/guide/private-key-management/multi-user-schemes/#multi-key' | relative_url }}) - several keys and several people control the wallet
 
 ---
 WIP
