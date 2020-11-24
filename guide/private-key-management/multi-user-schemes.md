@@ -12,7 +12,7 @@ While multi-key setups can be used for a single user, when several users need to
 
 The use-cases for several people needing to have access to a bitcoin wallet include spouses managing a joint account, inheritance planning, and groups, organizations or companies managing their funds. It could also be used for governance of an organization, with transactions used not to transfer funds but to record, or vote, for decisions. 
 
-### Multi-key
+## Multi-key
 
 As we saw with multi-key setups for single users the principle is that each wallet has several controlling keypairs attached, so called co-signers. The number of keys and required co-signers will depend on the use case. With spouses sharing a ‘joint account’, a simple 1-of-2 multi-key setup might suffice, meaning there are two keys but only one is required to sign for a transaction to be valid. At the other end of a spectrum a company might require a more complex 3-of-5 setup, requiring three of the five co-signers to approve any transaction. 
 
