@@ -42,7 +42,7 @@ With bitcoin being so new and different, a big focus of the guide lies on provid
 
 - [Getting started]({{ '/getting-started/introduction/' | relative_url }}) is for top-level overviews, whether it's bitcoin technology, visual language, software, or design collaboration in an open-source world
 - _Onboarding_ (Coming soon) goes in-depth on the delicate process of introducing new users to bitcoin and how to use specific products and features
-- _Private key management_ (Coming soon) provides extensive details and guidance on the many techniques for storing private keys
+- [Private key management]({{ '/guide/private-key-management/introduction/' | relative_url }}) provides extensive details and guidance on the many techniques for storing private keys
 - _Transactions_ (Coming soon) deals with the complexities of sending and receiving bitcoin across various use cases
 - _Resources_ (Coming soon) are tools and information to practically help you get things done
 - _Reference_ (Coming soon) includes a glossary, an overview of important bitcoin improvement proposals and other useful information
