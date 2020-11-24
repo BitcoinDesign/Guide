@@ -4,7 +4,19 @@ title: Common user flows
 nav_order: 9
 parent: Getting started
 permalink: /guide/getting-started/common-user-flows/
+main_classes: -no-top-padding
 ---
+
+{% include picture.html
+   image = "/assets/images/guide/getting-started/common-user-flows/common-user-flows.jpg"
+   retina = "/assets/images/guide/getting-started/common-user-flows/common-user-flows@2x.jpg"
+   mobile = "/assets/images/guide/getting-started/common-user-flows/common-user-flows-mobile.jpg"
+   mobileRetina = "/assets/images/guide/getting-started/common-user-flows/common-user-flows-mobile@2x.jpg"
+   alt-text = ""
+   width = 1600
+   height = 600
+   layout = "full-width"
+%}
 
 # Common user flows
 {:.no_toc}
@@ -289,12 +301,38 @@ It is not necessarily intuitive that a wallet may need maintenance, but there ar
 ### Sweep dust
 {:.no_toc}
 
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/common-user-flows/sweep.jpg"
+   retina = "/assets/images/guide/getting-started/common-user-flows/sweep@2x.jpg"
+   alt-text = ""
+   width = 100
+   height = 100
+   layout = "float-left"
+%}
+
 This is similar to exchanging many small coins into bills (like exchanging 100 one-dollar bills to a single one-hundred dollar bill). Dust refers to small amounts of unspent bitcoin in a wallet. If they add up, future transactions fees can become costly. That's because fees are partially based on transaction size. This size increases with every output from a previous transaction that is included. Sweeping dust helps by making a transaction to yourself that turns the many outputs with small amounts into a single output with a larger amount. This is typically done at a time when there are few transactions being done on the bitcoin network, which is another factor in fee calculation (senders choose how much they want to pay in fees, and the network prioritizes transactions that pay more).
+
+</div>
 
 ### Test hardware wallets
 {:.no_toc}
 
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/common-user-flows/test.jpg"
+   retina = "/assets/images/guide/getting-started/common-user-flows/test@2x.jpg"
+   alt-text = ""
+   width = 100
+   height = 100
+   layout = "float-left"
+%}
+
 Whether it's to ensure a hardware wallet still works, or to install a software update, it is recommended to regularly verify that everything still operates as expected. If a hardware wallet is exclusively used with a particular application, then the application can offer users support with this task (for example, by reminding users to check the hardware wallet every six months). The higher the amount stored, the more important it is to regularly check on the health of the setup.
+
+</div>
 
 ## Resolving a problem
 
