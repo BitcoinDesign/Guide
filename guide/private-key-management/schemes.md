@@ -36,6 +36,20 @@ Casa's [wealth security protocol]({{ 'https://github.com/Casa/wealth-security-pr
 ## Picking a scheme for your product
 
 Now that you have a clear picture of your use-case, target audience and risk vectors we can consider where on this spectrum you should be aiming. 
+We can divide the options up into single and multi-user schemes;
+
+### [Single-user schemes]({{ '/guide/private-key-management/single-user-schemes/' | relative_url }})
+- **Automatic cloud backup**
+- **Single-key recovery phrase**
+- **External signing device**
+- **Threshold signatures/Key-sharing**
+- **Multi-key**
+
+### [Multi-user schemes]({{ '/guide/private-key-management/multi-user-schemes/' | relative_url }})
+- **Multi-key**
+
+---
+WIP
 
 {% include image.html
    image = "/assets/images/guide/private-key-management/schemes/schemes-spectrum.png"
