@@ -4,6 +4,7 @@ title: Private key management
 nav_order: 1
 has_children: true
 permalink: /guide/private-key-management/introduction/
+main_classes: -no-top-padding
 ---
 
 <!--
@@ -16,6 +17,15 @@ How to use it
 How to contribute
 
 -->
+
+{% include picture.html
+   image = "/assets/images/guide/private-key-management/private-key-management.jpg"
+   retina = "/assets/images/guide/private-key-management/private-key-management@2x.jpg"
+   alt-text = "Private key management chapter illustration"
+   width = 1600
+   height = 900
+   layout = "full-width"
+%}
 
 # Private key management
 
