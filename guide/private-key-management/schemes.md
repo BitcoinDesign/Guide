@@ -37,16 +37,16 @@ Casa's [wealth security protocol]({{ 'https://github.com/Casa/wealth-security-pr
 
 ## Picking a scheme for your product
 
-Now that you have a clear picture of your use-case, target audience and risk vectors we can consider where on this spectrum you should be aiming. We can divide the options up into single and multi-user schemes;
+Now that you have a clear picture of your use-case, target audience and risk vectors we can consider where on this spectrum you should be aiming. We can divide the options up into personal and shared wallet schemes;
 
-### [Single-user schemes]({{ '/guide/private-key-management/single-user-schemes/' | relative_url }})
+### [Personal]({{ '/guide/private-key-management/single-user-schemes/' | relative_url }})
 - [Automatic cloud backup]({{ '/guide/private-key-management/single-user-schemes/#automatic-cloud-backup' | relative_url }}) - no user action required for backup
 - [Recovery phrase]({{ '/guide/private-key-management/single-user-schemes/#recovery-phrase' | relative_url }}) - manual backup of a phrase of words
 - [External signing device]({{ '/guide/private-key-management/single-user-schemes/#external-signing-device' | relative_url }}) - keys are held on a separate device
 - [Threshold signatures/Key-sharing]({{ '/guide/private-key-management/single-user-schemes/#threshold-signatures--key-sharing' | relative_url }}) - one key is split and distributed
 - [Multi-key]({{ '/guide/private-key-management/single-user-schemes/#multi-key' | relative_url }}) - several keys jointly control the wallet
 
-### [Multi-user schemes]({{ '/guide/private-key-management/multi-user-schemes/' | relative_url }})
+### [Shared]({{ '/guide/private-key-management/multi-user-schemes/' | relative_url }})
 - [Multi-key]({{ '/guide/private-key-management/multi-user-schemes/#multi-key' | relative_url }}) - several keys and several people control the wallet
 
 ---

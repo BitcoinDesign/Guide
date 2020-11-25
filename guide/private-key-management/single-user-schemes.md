@@ -1,26 +1,28 @@
 ---
 layout: guide
-title: Single-user
+title: Personal
 nav_order: 2
 parent: Private key management
 permalink: /guide/private-key-management/single-user-schemes/
 ---
 
-# Single-user schemes
+# Personal schemes
 
-Now let's dive in and look at the various schemes that might be suitable for a single-user wallet-product to understand the differences at a high level.
+Now let's dive in and look at the various schemes that might be suitable for a personal wallet-product with a single-user to understand the differences at a high level.
+
+*{illustration with the 5 schemes}*
 
 ## Automatic cloud backup
 
 By using an automatic cloud backup for the private key the user is NOT required to manually backup anything when setting up a new wallet. This is sometimes also called *seedless*, as the user is never exposed to the traditional seed/recovery-phrase that is used to initiate a wallet. 
 
-The target audience with this scheme would be new or novice bitcoin users to whom being exposed to backing up a recovery-phrase as part of onboarding can be baffling and backfire. 
+The target audience with this scheme would be new or novice bitcoin users to whom being exposed to backing up a recovery-phrase as part of onboarding can be baffling and backfire. It could also be a starting point for a progressive security model that lets customers upgrade when the start accumulating more funds. 
 
-The automatic cloud backup scheme gives users reasonable security against third-party theft, while providing low risk for loss due to negligence. 
+The automatic cloud backup scheme gives users reasonable security against theft, while providing low risk for self-inflicted losses. 
 
 #### Pros 
 - Low onboarding friction
-- Low risk of loss from negligence due to the automatic nature and redundant backups
+- Low risk of self-inflicted loss due to the automatic nature and redundant backups
 
 #### Cons
 - Private key in cloud storage increases risk of malicious third party access
@@ -32,17 +34,30 @@ The automatic cloud backup scheme gives users reasonable security against third-
 ### How it works
 The wallet-product will generate a wallet with a keypair, then encrypt and back the key up to a location that the user is unlikely to lose access to, while hard for a malicious third party to gain access to. 
 
-With most implementations so far, the location will be the keychain or key-value store on a mobile device that is also backed up by the OS provider such as iOS (iCloud) or Android (Google Drive). That makes the backup accessible by the user on a new device, should they lose the original, but only accessible by someone that can log into the user’s Apple or Google account. 
+With most implementations so far, the location will be the keychain or key-value store on a mobile device that is also backed up by the OS provider such as iOS (iCloud) or Android (Google Drive). 
+
+This makes the backup accessible by the user on a new device, should they lose the original, but only accessible by someone that can log into the user’s Apple or Google account. 
 
 ### Best practice
 
-**When to use** - when risk of loss from negligence is higher than loss from theft, for beginners
+**When to use** 
+- When risk of self-inflicted loss is higher than loss from theft
+- For beginners, or products with progressive security
+- For lower values
 
-**When not to use** - when storing high value amounts, when risk to loss from theft is higher than loss to negligence
+**When not to use** 
+- When storing high values
+- When risk of loss from theft is higher than self-inflicted loss
+- When complete self-sovereignty is important to the target audience
 
-**Variations** - Storage location, biometrics use, additional PIN
+**Variations** 
+- Storage location (keychain, iCloud, Google Drive, One Password etc.)
+- Additional user authentication (biometrics, pin)
 
-**Products that use this scheme** - Casa Mobile Key, Photon SDK (in development), Paymobil (not a bitcoin product)
+**Products that use this scheme** 
+- Casa Mobile Key
+- Photon SDK (in development)
+- Paymobil (not a bitcoin product)
 
 ***
 
