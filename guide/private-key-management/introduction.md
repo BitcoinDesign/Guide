@@ -39,11 +39,11 @@ This chapter is meant to give an overview of private key management schemes, inc
 
 **[Schemes]({{ '/guide/private-key-management/schemes/' | relative_url }})**
 
-An overview of the most common private key management schemes for bitcoin products and thoughts on picking a suitable scheme for your target audience and their use-case.
+An overview of the most common private key management schemes for bitcoin products, and thoughts on picking a suitable scheme for your target audience and their use-case.
 
 **[Principles]({{ '/guide/private-key-management/principles/' | relative_url }})**
 
-Every use-case and product is different but here is an overview of things that all wallet-products should strive for, and only diverge from with very good reasons.
+Every use-case and product is different but there are things that all wallet-products should strive for, and only diverge from with very good reasons.
 
 **[Case studies]({{ '/guide/private-key-management/case-studies/' | relative_url }})**
 
