@@ -57,15 +57,15 @@ This makes the backup accessible by the user on a new device, should they lose t
 **Products that use this scheme** 
 - [Photon SDK]({{ 'https://photonsdk.org'}}) (for use by other wallets, in development)
 - [Casa]({{ 'https://keys.casa'}})  mobile single key 
-- [Paymobil]({{ 'https://www.paymobil.co'}}) (not a bitcoin wallet)
+- [Paymobil]({{ 'https://www.paymobil.co'}}) (not a bitcoin wallet) 
 
 ***
 
 ## Recovery phrase
 
-Recovery phrases have been the most common private key management scheme by far, since its proposal with BIP39 in 2013. If you have used any non-custodial bitcoin product you are likely to have experienced the onboarding requirements. 
+Recovery phrases have been the most common private key management scheme by far, since its proposal with [BIP39]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki'}}) in 2013. If you have used any non-custodial bitcoin product you are likely to have experienced the onboarding requirements. 
 
-After creating a new wallet, you will be asked to manually backup a 12 (or 24 in rare instances) word recovery-phrase to a ‘safe place’. As the next step it will often ask you to verify that you did save it by having you input the phrase in the correct order. 
+After creating a new wallet, you will be asked to manually backup a 12 (or 24 in rare instances) word recovery-phrase to a *safe place*. As the next step it will often ask you to verify that you did save it by having you input the phrase in the correct order. 
 
 This scheme is suitable for target-audiences who are already familiar with bitcoin and procedures for secure off-line backups of the recovery phrase. It is not suited for complete beginners. When told to store the backup in a safe way off-line, bitcoin-beginners in reality often take a screenshot, write it down in plain text somewhere on their mobile device, computer or a piece of paper on the fridge, or simply don’t back it up at all. This has the risk of achieving the opposite of what we want; high risk of self-inflicted loss and low to medium security in terms of third party theft.
 
@@ -76,7 +76,7 @@ This scheme is suitable for target-audiences who are already familiar with bitco
 - Good interoperability
 
 #### Cons 
-- Requires significant effort and knowledge from users to achieve safe and redundant backups
+- Requires significant effort from users to achieve safe and redundant backups
 - High onboarding friction
 
 ### How it works
@@ -100,7 +100,7 @@ A full guide to sovereign best practices for users is out of scope for this chap
 - When onboarding is likely to happen outside of users' homes
 
 **Variations** 
-- 12 or 24 word phrases
+- 12 or 24 word phrase
 - Additional user authentication (biometrics use, pin or password)
 - Cloud backup options
 
@@ -116,15 +116,24 @@ Most bitcoin wallets, including;
 
 ## External signing device
 
-A wallet-product that supports external signing can remove the need for the private key to be readable by the wallet software, thereby decreasing the risk of keeping keys on a device that is likely always connected to the internet. Most common are hardware wallets who’s makers often provide their own software to pair with. But there are also third party wallet-products that support external signing, or software that can be run on off-line (air gapped) computers to perform the same function.
+A wallet-product that supports external signing can remove the need for the private key to be readable by the wallet software, thereby decreasing the risk of keeping keys on a device that is likely always connected to the internet. Most common are hardware wallets who’s makers often provide their own software to pair with. But there are also third party wallet-products that support external signing, or software that can be run on off-line (air gapped) computers to perform the same function. 
+
+#### Pros 
+- Removes private key from online devices
+- Can provide very high security if used correctly
+
+#### Cons
+- Purchase of specialized hardware required
+- Requires further effort and knowledge to setup correctly
+- Still requires a good sovereign backup for redundancy
 
 *{illustration}*
 
-**How it works** - The software wallet-product connects to an external device where the extended keypair can be generated and held. When a transaction needs to be signed, the software submits a partially signed bitcoin transaction (PSBT, defined in [BIP174]) to the device. The user confirms on the device and the PSBT state of the transaction returned to the software wallet-product is now fully signed and can be transmitted to the blockchain.
+## How it works
+The external device can generate and store a keypair offline, the private key has thus never been known outside the device. A softare wallet can connect to the signing device and act as an interface, or handle transactiosn airgapped from the device. 
 
-**Pros** - Removes private key from online devices
+When a transaction needs to be signed, the software submits a partially signed bitcoin transaction (PSBT, defined in [BIP174]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki'}})) to the device. The user confirms on the device and the PSBT state of the transaction returned to the software wallet-product is now fully signed and can be transmitted to the blockchain. This process can also happen fully airgapped by using memory cards instead of cables or wireless connections to keep the device offlien at all times.
 
-**Cons** - The wallet still needs its recovery phrase backed up with a good sovereign backup scheme, requires further effort and knowledge
 
 **When to use** - When target audience is likely to be very knowledgeable and implement good sovereign backup schemes, when storing medium to large amounts, when risk of loss from theft is higher than loss from negligence 
 When not to use - When most users are new to bitcoin and unlikely to implement good backup schemes, to store small amounts
