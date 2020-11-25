@@ -55,9 +55,9 @@ This makes the backup accessible by the user on a new device, should they lose t
 - Additional user authentication (biometrics, pin)
 
 **Products that use this scheme** 
-- Casa Mobile Key
-- Photon SDK (in development)
-- Paymobil (not a bitcoin product)
+- [Photon SDK]({{ 'https://photonsdk.org'}}) (in development)
+- [Casa]({{ 'https://keys.casa'}})  mobile single key 
+- [Paymobil]({{ 'https://www.paymobil.co'}}) (not a bitcoin wallet)
 
 ***
 
