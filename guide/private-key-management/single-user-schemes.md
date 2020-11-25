@@ -55,7 +55,7 @@ This makes the backup accessible by the user on a new device, should they lose t
 - Additional user authentication (biometrics, pin)
 
 **Products that use this scheme** 
-- [Photon SDK]({{ 'https://photonsdk.org'}}) (in development)
+- [Photon SDK]({{ 'https://photonsdk.org'}}) (for use by other wallets, in development)
 - [Casa]({{ 'https://keys.casa'}})  mobile single key 
 - [Paymobil]({{ 'https://www.paymobil.co'}}) (not a bitcoin wallet)
 
@@ -63,26 +63,54 @@ This makes the backup accessible by the user on a new device, should they lose t
 
 ## Recovery phrase
 
-Recovery phrases have been the most common private key management scheme by far since its proposal with BIP39 in 2013. If you have used any non-custodial bitcoin product you are likely to have experienced the onboarding requirements. After creating a wallet, the product will ask you to manually backup a 12 (or 24 in rare instances) word recovery phrase to a ‘safe place’. As the next step it will often ask you to verify that you did save it by having you input the phrase in the correct order again. 
+Recovery phrases have been the most common private key management scheme by far, since its proposal with BIP39 in 2013. If you have used any non-custodial bitcoin product you are likely to have experienced the onboarding requirements. 
 
-This scheme is suitable for target-audiences who are already familiar with bitcoin and the need for secure off-line backups of the recovery phrase. It is not suited for complete beginners who when told they are expected to store the backup in a safe way off-line, often in reality take a screenshot, write it down in plain text somewhere on their mobile device, computer or a piece of paper on the fridge, or simply don’t back it up at all. This has the risk of achieving the opposite of what we want; high risk of loss due to negligence and low to medium security in terms of third party theft.
+After creating a new wallet, you will be asked to manually backup a 12 (or 24 in rare instances) word recovery-phrase to a ‘safe place’. As the next step it will often ask you to verify that you did save it by having you input the phrase in the correct order. 
+
+This scheme is suitable for target-audiences who are already familiar with bitcoin and procedures for secure off-line backups of the recovery phrase. It is not suited for complete beginners. When told to store the backup in a safe way off-line, bitcoin-beginners in reality often take a screenshot, write it down in plain text somewhere on their mobile device, computer or a piece of paper on the fridge, or simply don’t back it up at all. This has the risk of achieving the opposite of what we want; high risk of self-inflicted loss and low to medium security in terms of third party theft.
 
 *{illustration}*
 
-**How it works** - The wallet-product will generate a 12 or 24 word phrase (seed / recovery phrase) from which all the wallet’s keys can be derived. This means the user will have access to the wallet from any compatible wallet-product even if they lose the device or software.
+#### Pros 
+- Sovereign backups done well can provide very high security
+- Good interoperability
 
-This can be an effective way to reduce the risk of loss from theft if the backup is off-line and the device is biometrically protected (or otherwise protected from use in case of theft), but puts more of the op-sec burden on the individual user. The security and risk will only be as good as how they backup the recovery phrase. To get the best security out of recovery phrases they ought not to be backed up on-line but instead in several redundant secure places off-line and need to take resistance to physical theft, fire and other destructive events into account. A fair amount of effort and knowledge is required for this. We’ll call this approach sovereign backup, to differentiate it from cloud backup. 
+#### Cons 
+- Requires significant effort and knowledge from users to achieve safe and redundant backups
+- High onboarding friction
 
-**Pros** - Sovereign backups done well can provide very high security, good interoperability
+### How it works
+The wallet-product will generate a 12 or 24 word phrase (seed / recovery phrase) from which all the wallet’s keys can be derived. This means the user can have access to the wallet from any compatible wallet-product with the phrase, even if they lose the device or software.
 
-**Cons** - Requires significant effort and knowledge to avoid common beginner mistakes, onboarding friction, especially high risk of unsatisfactory backup security for mobile products where onboarding is likely to happen without access to the right backup tools and locations
+This can be an effective way to reduce the risk of loss from theft if the backup is off-line in a safe place, but puts more of the op-sec burden on the individual user. The security and risk will only be as good as how they backup the recovery phrase. To get the best security out of recovery phrases they should be in several redundant secure places off-line. You also need to take resistance to physical theft, fire and other destructive events into account. A fair amount of effort and knowledge is required for this. We can call this approach sovereign backup, to differentiate it from cloud backup. 
 
-**When to use** - When target audience is likely to be knowledgeable and implement good sovereign backup schemes, when storing medium amounts, when risk of loss from theft is higher than loss from negligence 
-When not to use - When most users are new to bitcoin and unlikely to implement good backup schemes, to store small amounts
+A full guide to sovereign best practices for users is out of scope for this chapter but [this resource I need to identify] is a good starting point.
 
-**Variations** - Biometrics use, additional PIN or password, cloud backup options, 12 or 24 words
 
-**Products that use this scheme** - Most bitcoin wallets, including Bluewallet, Electrum, Blockstream Green, Coinbase Wallet
+### Best practice
+
+**When to use** 
+- When target audience is likely to be knowledgeable and implement good sovereign backup schemes
+- When storing medium amounts
+- When risk of loss from theft is higher than self-inflicted loss
+
+**When not to use**
+- When users are new to bitcoin and unlikely to implement good sovereign backups
+- For use-cases with small amounts
+- When onboarding is likely to happen outside of users' homes
+
+**Variations** 
+- 12 or 24 word phrases
+- Additional user authentication (biometrics use, pin or password)
+- Cloud backup options
+
+**Products that use this scheme** 
+Most bitcoin wallets, including; 
+- [Bluewallet]({{ 'https://bluewallet.io'}})
+- [Electrum]({{ 'https://electrum.org'}})
+- [Wasabi]({{ 'https://wasabiwallet.io'}})
+- [Blockstream Green]({{ 'https://blockstream.com/green/'}})
+- [Coinbase Wallet]({{ 'https://wallet.coinbase.com'}})
 
 ***
 
