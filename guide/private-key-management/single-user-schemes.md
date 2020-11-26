@@ -167,25 +167,42 @@ When a transaction needs to be signed, the software submits a partially signed b
 
 ## Threshold signatures / Key-sharing
 
-A threshold signature scheme can require n-of-n signatures from parts of a single private key to make a valid transaction. By sharing parts of the private key among several parties or locations, greater resistance to theft can be achieved since access to more than one share is required. Depending on the setup, resistance to loss from negligence can be similar to a single key (2-of-2) or better (2-of-3 or more).
+A threshold signature scheme can require n-of-n signatures from parts of a single private key to make a valid transaction. By sharing parts of the private key among several parties or locations, greater resistance to theft can be achieved since access to more than one share is required. Depending on the setup, resistance to self-inflicted loss can be similar or worse than with a single key (2-of-2) or better (2-of-3 or more).
 
 Some benefits over a multikey setup include greater privacy, as a transaction using threshold signatures will appear equal to a single key transaction and not expose details about the different key shares. Transactions will also incur lower fees than a multikey setup as only one signature will be recorded on-chain. The big caveat here however is that these advantages are true only with the current ECDSA signatures of bitcoin, while with the forthcoming Schnorr signature scheme multikey signatures will be indistinguishable from single key.  
 
 *{illustration}*
 
-**How it works** - A single private key is split into n key-shares that are distributed to several parties, devices or locations. When signing a transaction the required number of shares need to be coordinated into one valid signature.
+### How it works
+A single private key is split into n key-shares that are distributed to several parties, devices or locations. When signing a transaction the required number of shares need to be coordinated into one valid signature. This relies on a cryptographic algorithm called [Shamir's Secret Sharing]({{ 'https://en.wikipedia.org/wiki/Shamir's_Secret_Sharing'}}) after it's creator.
 
-**Pros** - Can provide higher resistance to loss from theft and negligence
+#### Pros
+- Can provide higher resistance to loss from theft
+- Transactions look identical and have same cost as single key wallets on chain
 
-**Cons** - Require precise coordination of key-shares when signing, few advantages over multi-key setups with Schnorr signatures, individual implementations not interoperable
+#### Cons 
+- Requires precise coordination of key-shares when signing
+- Few advantages over multi-key setups with Schnorr signatures
+- Individual product implementations not interoperable
 
-**When to use** - When target audience is knowledgeable and risk of theft is higher than negligance
+### Best practice
 
-**When not to use** - When Schnorr signatures are available enabling multi-key setups
+**When to use** 
+- When target audience is knowledgeable 
+- When risk of theft is higher than self-inflected loss
 
-**Variations** - Number of signatures required, location and distribution of pieces, signing procedure
+**When not to use** 
+- When Schnorr signatures are available, enabling multi-key setups with similar benefits
 
-**Products that use this scheme** - ZenGo, Hexa, Bitfreeze
+**Variations** 
+- Number of signatures required
+- Location and distribution of pieces
+- Signing procedure
+
+**Products that use this scheme** 
+- [ZenGo]({{ 'https://zengo.com'}})
+- [Hexa]({{ 'https://hexawallet.io'}})
+- [Bitfreeze]({{ 'https://medium.com/@bitfreeze/threshold-signatures-multisig-is-not-enough-e1ba468f6102'}}) - No longer in active development
 
 ***
 
