@@ -116,7 +116,9 @@ Most bitcoin wallets, including;
 
 ## External signing device
 
-A wallet-product that supports external signing can remove the need for the private key to be readable by the wallet software, thereby decreasing the risk of keeping keys on a device that is likely always connected to the internet. Most common are hardware wallets who’s makers often provide their own software to pair with. But there are also third party wallet-products that support external signing, or software that can be run on off-line (air gapped) computers to perform the same function. 
+Most common are hardware wallets who’s makers often provide their own software to pair with. But there are also third party wallet-products that support external signing, or software that can be run on off-line (air gapped) computers to perform the same function. 
+
+A wallet-product that supports external signing can remove the need for the private key to be readable by the wallet software, thereby decreasing the risk of keeping keys on a device that is likely always connected to the internet.
 
 #### Pros 
 - Removes private key from online devices
@@ -132,15 +134,34 @@ A wallet-product that supports external signing can remove the need for the priv
 ## How it works
 The external device can generate and store a keypair offline, the private key has thus never been known outside the device. A softare wallet can connect to the signing device and act as an interface, or handle transactiosn airgapped from the device. 
 
-When a transaction needs to be signed, the software submits a partially signed bitcoin transaction (PSBT, defined in [BIP174]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki'}})) to the device. The user confirms on the device and the PSBT state of the transaction returned to the software wallet-product is now fully signed and can be transmitted to the blockchain. This process can also happen fully airgapped by using memory cards instead of cables or wireless connections to keep the device offlien at all times.
+When a transaction needs to be signed, the software submits a partially signed bitcoin transaction (PSBT, defined in [BIP174]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki'}})) to the device. The user confirms on the device and the PSBT state of the transaction returned to the software wallet-product is now fully signed and can be transmitted to the blockchain. This process can also happen fully airgapped by using memory cards instead of cables or wireless connections, to keep the device offline at all times.
 
+### Best practice
 
-**When to use** - When target audience is likely to be very knowledgeable and implement good sovereign backup schemes, when storing medium to large amounts, when risk of loss from theft is higher than loss from negligence 
-When not to use - When most users are new to bitcoin and unlikely to implement good backup schemes, to store small amounts
+**When to use** 
+- When storing medium to large amounts
+- When risk of loss from theft is higher than loss from negligence 
+- When target audience is likely to be very knowledgeable or motivated to learn good sovereign backup schemes, 
 
-**Variations** - Device dependent, PIN
+**When not to use** 
+- When most users are new to bitcoin and unlikely to implement good backup schemes
+- When transactions are likely to be frequent and low value
 
-**Products that use this scheme** - Trezor, Ledger, Keepkey Coldcard, Electrum, Wasabi, Specter
+**Variations** 
+- Interfaces (bluetooth, USB, microSD card, camera, NFC)
+- Platform compatability
+- Additional user authentication (pin or password)
+
+**Products that use this scheme** 
+- [Electrum]({{ 'https://electrum.org'}})
+- [Wasabi]({{ 'https://wasabiwallet.io'}})
+- [Bluewallet]({{ 'https://bluewallet.io'}})
+
+**Hardware wallets**
+- [Trezor]({{ 'https://trezor.io'}})
+- [Ledger]({{ 'https://www.ledger.com'}})
+- [Keepkey]({{ 'https://shapeshift.com/keepkey'}})
+- [Coldcard]({{ 'https://coldcardwallet.com'}})
 
 ***
 
