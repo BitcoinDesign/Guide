@@ -171,11 +171,6 @@ A threshold signature scheme can require n-of-n signatures from parts of a singl
 
 Some benefits over a multikey setup include greater privacy, as a transaction using threshold signatures will appear equal to a single key transaction and not expose details about the different key shares. Transactions will also incur lower fees than a multikey setup as only one signature will be recorded on-chain. The big caveat here however is that these advantages are true only with the current ECDSA signatures of bitcoin, while with the forthcoming Schnorr signature scheme multikey signatures will be indistinguishable from single key.  
 
-*{illustration}*
-
-### How it works
-A single private key is split into n key-shares that are distributed to several parties, devices or locations. When signing a transaction the required number of shares need to be coordinated into one valid signature. This relies on a cryptographic algorithm called [Shamir's Secret Sharing]({{ 'https://en.wikipedia.org/wiki/Shamir's_Secret_Sharing'}}) after it's creator.
-
 #### Pros
 - Can provide higher resistance to loss from theft
 - Transactions look identical and have same cost as single key wallets on chain
@@ -184,6 +179,11 @@ A single private key is split into n key-shares that are distributed to several 
 - Requires precise coordination of key-shares when signing
 - Few advantages over multi-key setups with Schnorr signatures
 - Individual product implementations not interoperable
+
+*{illustration}*
+
+### How it works
+A single private key is split into n key-shares that are distributed to several parties, devices or locations. When signing a transaction the required number of shares need to be coordinated into one valid signature. This relies on a cryptographic algorithm called [Shamir's Secret Sharing]({{ 'https://en.wikipedia.org/wiki/Shamir's_Secret_Sharing'}}) after it's creator.
 
 ### Best practice
 
@@ -207,22 +207,43 @@ A single private key is split into n key-shares that are distributed to several 
 ***
 
 ## Multi-key
-All of the above schemes have relied on a single private key to control the wallet. This presents an all-or-nothing risk for loss of funds from both theft and negligence. To counter this a wallet can have several private keys attached of which all or a subset need to sign any transactions. This is often called multi-signature, or multisig for short and described as ‘n-of-n’ to indicate how many keys are needed to sign a transaction out of the issued number. For example a ‘2-of-3’ setup requires two of the three private keys to sign a transaction for it to be valid.
+All of the above schemes have relied on a single private key to control the wallet. This presents an all-or-nothing risk for loss of funds from both theft and negligence. To counter this a wallet can have several private keys attached of which all or a subset need to sign any transactions. 
 
-This can raise the security since anyone needs access to more than one key to move any funds. But clearly it also increases complexity and the requirements on the user to keep even more keys securely stored and/or backed up.
+This is often called multi-signature, or multisig for short and described as ‘n-of-n’ to indicate how many keys are needed to sign a transaction out of the issued number. For example a ‘2-of-3’ setup requires two of the three private keys to sign a transaction for it to be valid.
+
+Multi-key schemes can raise the security, since anyone needs access to more than one key to move any funds. But clearly it also increases complexity and the requirements on the user to keep even more keys securely stored and/or backed up.
+
+#### Pros 
+- Significantly increases security against theft
+
+#### Cons 
+- Adds complexity and op-sec burden for multiple private keys
 
 *{illustration}*
 
-**How it works** - A software wallet-product or coordination software initiates a multi-sig wallet that can have several private keys attached (co-signers), the user then adds private keys from other wallets generated elsewhere to the multisig after which the software wallet can complete the creation process. For any future transaction from the multi-sig wallet the required amount of co-signers need to sign (using Partially Signed Bitcoin Transactions - PSBT from [BIP174]) before any transaction is valid.
+### How it works
+A software wallet-product or coordination software initiates a multi-sig wallet, choosing the number of total keys, and the number required to sign transactions. The user then adds private keys from other wallets generated elsewhere to the multisig after which the software wallet can complete the creation process. For any future transaction from the multi-sig wallet the required amount of co-signers need to sign (using Partially Signed Bitcoin Transactions - PSBT from [BIP174]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki'}})) before any transaction is valid.
 
-**Pros** - Can add redundancy to private keys and increase security
+### Best practice
 
-**Cons** - Adds complexity and op-sec burden for multiple private keys
+**When to use** 
+- When storing large amounts 
+- When target audience is likely to own hardware wallets
+- When most users are likely to implement good backup schemes for multiple keys
 
-**When to use** - When storing large amounts, when users are confident and able to manually back up their recovery-phrase.
+**When not to use** 
+- For small amounts
+- When users are likely to be new to bitcoin
 
-**When not to use** - For small amounts, when users are likely to be new to bitcoin
+**Variations** 
+- Number of total and co-signing keys
+- Key locations and distribution
+- Managed or completely sovereign
 
-**Variations** - number of keys, key storage, distribution, add social recovery
-
-**Products that use this scheme** - Electrum, Casa,Unchained Capital, Armory, Guarda, Caravan
+**Products that use this scheme** 
+- [Casa]({{ 'https://keys.casa'}}) co-managed 2-of-3, or 3-of-5
+- [Electrum]({{ 'https://electrum.org'}})
+- [Bluewallet]({{ 'https://bluewallet.io'}})
+- [Unchained Capital/Caravan]({{ 'https://unchained-capital.com'}}) co-managed
+- [Armory]({{ 'https://btcarmory.com'}})
+- [Guarda]({{ 'https://guarda.com'}})
