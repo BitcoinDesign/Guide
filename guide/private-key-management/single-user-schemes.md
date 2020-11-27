@@ -35,6 +35,8 @@ Now let's dive in and look at the various schemes that might be suitable for a p
    height = 400
 %}
 
+***
+
 ## Automatic cloud backup
 
 By using an automatic cloud backup for the private key the user is NOT required to manually backup anything when setting up a new wallet. This is sometimes also called *seedless*, as the user is never exposed to the traditional seed/recovery-phrase that is used to initiate a wallet. 
