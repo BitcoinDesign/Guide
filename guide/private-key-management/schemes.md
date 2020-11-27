@@ -4,7 +4,17 @@ title: Schemes
 nav_order: 1
 parent: Private key management
 permalink: /guide/private-key-management/schemes/
+main_classes: -no-top-padding
 ---
+
+{% include picture.html
+   image = "/assets/images/guide/private-key-management/header-placeholder.jpg"
+   retina = "/assets/images/guide/private-key-management/header-placeholder@2x.jpg"
+   alt-text = "Schemes header illustration"
+   width = 1600
+   height = 600
+   layout = "full-width"
+%}
 
 # Private key schemes
 

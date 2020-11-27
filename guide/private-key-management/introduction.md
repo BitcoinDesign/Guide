@@ -23,7 +23,7 @@ How to contribute
    retina = "/assets/images/guide/private-key-management/private-key-management@2x.jpg"
    alt-text = "Private key management chapter illustration"
    width = 1600
-   height = 900
+   height = 600
    layout = "full-width"
 %}
 

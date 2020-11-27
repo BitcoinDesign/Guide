@@ -4,7 +4,17 @@ title: Shared
 nav_order: 3
 parent: Private key management
 permalink: /guide/private-key-management/multi-user-schemes/
+main_classes: -no-top-padding
 ---
+
+{% include picture.html
+   image = "/assets/images/guide/private-key-management/header-placeholder.jpg"
+   retina = "/assets/images/guide/private-key-management/header-placeholder@2x.jpg"
+   alt-text = "Shared schemes header illustration"
+   width = 1600
+   height = 600
+   layout = "full-width"
+%}
 
 # Shared schemes
 
@@ -25,7 +35,14 @@ Just like with personal schemes, external signing devices can be used to replace
 #### Cons 
 - Has significant complexity and op-sec burden for multiple private keys, each of which might need good sovereign backup scheme
 
-*{illustration}*
+{% include image.html
+   image = "/assets/images/guide/private-key-management/illustration-placeholder.jpg"
+   retina = "/assets/images/guide/private-key-management/illustration-placeholder@2x.jpg"
+   alt-text = ""
+   caption = "Illustration of multi-key for shared wallet."
+   width = 800
+   height = 400
+%}
 
 ### How it works 
 … (similar to single-user multi-key, , but increased setup complexity due to multiple people involved) 

@@ -4,7 +4,17 @@ title: Case studies
 nav_order: 5
 parent: Private key management
 permalink: /guide/private-key-management/case-studies/
+main_classes: -no-top-padding
 ---
+
+{% include picture.html
+   image = "/assets/images/guide/private-key-management/header-placeholder.jpg"
+   retina = "/assets/images/guide/private-key-management/header-placeholder@2x.jpg"
+   alt-text = "Case studies header illustration"
+   width = 1600
+   height = 600
+   layout = "full-width"
+%}
 
 # Case studies
 

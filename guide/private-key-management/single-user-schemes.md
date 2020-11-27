@@ -4,7 +4,17 @@ title: Personal
 nav_order: 2
 parent: Private key management
 permalink: /guide/private-key-management/single-user-schemes/
+main_classes: -no-top-padding
 ---
+
+{% include picture.html
+   image = "/assets/images/guide/private-key-management/header-placeholder.jpg"
+   retina = "/assets/images/guide/private-key-management/header-placeholder@2x.jpg"
+   alt-text = "Personal schemes header illustration"
+   width = 1600
+   height = 600
+   layout = "full-width"
+%}
 
 # Personal schemes
 
@@ -16,7 +26,14 @@ Now let's dive in and look at the various schemes that might be suitable for a p
 - [Threshold signatures/Key-sharing]({{ '/guide/private-key-management/single-user-schemes/#threshold-signatures--key-sharing' | relative_url }})
 - [Multi-key]({{ '/guide/private-key-management/single-user-schemes/#multi-key' | relative_url }})
 
-*{illustration with the 5 schemes}*
+{% include image.html
+   image = "/assets/images/guide/private-key-management/illustration-placeholder.jpg"
+   retina = "/assets/images/guide/private-key-management/illustration-placeholder@2x.jpg"
+   alt-text = ""
+   caption = "Illustration of the 5 schemes."
+   width = 800
+   height = 400
+%}
 
 ## Automatic cloud backup
 
@@ -35,7 +52,14 @@ The automatic cloud backup scheme gives users reasonable security against theft,
 - User needs to trust their OS and cloud storage provider
 - Unless the backup includes the recovery phrase users will not be able to export their wallet to another product
 
-*{illustration}*
+{% include image.html
+   image = "/assets/images/guide/private-key-management/illustration-placeholder.jpg"
+   retina = "/assets/images/guide/private-key-management/illustration-placeholder@2x.jpg"
+   alt-text = ""
+   caption = "Illustration Automatic cloud backup."
+   width = 800
+   height = 400
+%}
 
 ### How it works
 The wallet-product will generate a wallet with a keypair, then encrypt and back the key up to a location that the user is unlikely to lose access to, while hard for a malicious third party to gain access to. 
@@ -67,15 +91,13 @@ This makes the backup accessible by the user on a new device, should they lose t
 
 ***
 
-## Recovery phrase
+## Recovery-phrase
 
 Recovery phrases have been the most common private key management scheme by far, since its proposal with [BIP39]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki'}}) in 2013. If you have used any non-custodial bitcoin product you are likely to have experienced the onboarding requirements. 
 
 After creating a new wallet, you will be asked to manually backup a 12 (or 24 in rare instances) word recovery-phrase to a *safe place*. As the next step it will often ask you to verify that you did save it by having you input the phrase in the correct order. 
 
 This scheme is suitable for target-audiences who are already familiar with bitcoin and procedures for secure off-line backups of the recovery phrase. It is not suited for complete beginners. When told to store the backup in a safe way off-line, bitcoin-beginners in reality often take a screenshot, write it down in plain text somewhere on their mobile device, computer or a piece of paper on the fridge, or simply don’t back it up at all. This has the risk of achieving the opposite of what we want; high risk of self-inflicted loss and low to medium security in terms of third party theft.
-
-*{illustration}*
 
 #### Pros 
 - Sovereign backups done well can provide very high security
@@ -84,6 +106,15 @@ This scheme is suitable for target-audiences who are already familiar with bitco
 #### Cons 
 - Requires significant effort from users to achieve safe and redundant backups
 - High onboarding friction
+
+{% include image.html
+   image = "/assets/images/guide/private-key-management/illustration-placeholder.jpg"
+   retina = "/assets/images/guide/private-key-management/illustration-placeholder@2x.jpg"
+   alt-text = ""
+   caption = "Illustration of recovery-phrase."
+   width = 800
+   height = 400
+%}
 
 ### How it works
 The wallet-product will generate a 12 or 24 word phrase (seed / recovery phrase) from which all the wallet’s keys can be derived. This means the user can have access to the wallet from any compatible wallet-product with the phrase, even if they lose the device or software.
@@ -135,7 +166,14 @@ A wallet-product that supports external signing can remove the need for the priv
 - Requires further effort and knowledge to setup correctly
 - Still requires a good sovereign backup for redundancy
 
-*{illustration}*
+{% include image.html
+   image = "/assets/images/guide/private-key-management/illustration-placeholder.jpg"
+   retina = "/assets/images/guide/private-key-management/illustration-placeholder@2x.jpg"
+   alt-text = ""
+   caption = "Illustration of external signing device."
+   width = 800
+   height = 400
+%}
 
 ## How it works
 The external device can generate and store a keypair offline, the private key has thus never been known outside the device. A softare wallet can connect to the signing device and act as an interface, or handle transactiosn airgapped from the device. 
@@ -186,7 +224,14 @@ Some benefits over a multikey setup include greater privacy, as a transaction us
 - Few advantages over multi-key setups with Schnorr signatures
 - Individual product implementations not interoperable
 
-*{illustration}*
+{% include image.html
+   image = "/assets/images/guide/private-key-management/illustration-placeholder.jpg"
+   retina = "/assets/images/guide/private-key-management/illustration-placeholder@2x.jpg"
+   alt-text = ""
+   caption = "Illustration of threshold signatures."
+   width = 800
+   height = 400
+%}
 
 ### How it works
 A single private key is split into n key-shares that are distributed to several parties, devices or locations. When signing a transaction the required number of shares need to be coordinated into one valid signature. This relies on a cryptographic algorithm called [Shamir's Secret Sharing]({{ 'https://en.wikipedia.org/wiki/Shamir's_Secret_Sharing'}}) after it's creator.
@@ -225,7 +270,14 @@ Multi-key schemes can raise the security, since anyone needs access to more than
 #### Cons 
 - Adds complexity and op-sec burden for multiple private keys
 
-*{illustration}*
+{% include image.html
+   image = "/assets/images/guide/private-key-management/illustration-placeholder.jpg"
+   retina = "/assets/images/guide/private-key-management/illustration-placeholder@2x.jpg"
+   alt-text = ""
+   caption = "Illustration of multi-key."
+   width = 800
+   height = 400
+%}
 
 ### How it works
 A software wallet-product or coordination software initiates a multi-sig wallet, choosing the number of total keys, and the number required to sign transactions. The user then adds private keys from other wallets generated elsewhere to the multisig after which the software wallet can complete the creation process. For any future transaction from the multi-sig wallet the required amount of co-signers need to sign (using Partially Signed Bitcoin Transactions - PSBT from [BIP174]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki'}})) before any transaction is valid.
