@@ -49,7 +49,7 @@ Ideas
 
 Open design tries to balance the independence of individual designers and the collective power of collaboration. The goal is to enable and promote design projects, which are motivated by personal conviction and passion of designers for the greater benefit of a global society.
 
-In practical terms, open design can manifest itself in a different ways. You might:
+In practical terms, open design can manifest itself in different ways. You might:
 
 * help design the interface of your favorite open-source project
 * be really interested in a specific topic and collaborate with multiple people and projects in related areas
