@@ -37,7 +37,7 @@ Ideas
    mobile = "/assets/images/guide/getting-started/open-design/open-design-mobile.jpg"
    mobileRetina = "/assets/images/guide/getting-started/open-design/open-design-mobile@2x.jpg"
    alt-text = ""
-   caption = ""
+   caption = 'Character designs by [Open Peeps]("https://www.openpeeps.com/"){:target="_blank" rel="nofollow"}'
    width = 1600
    height = 740
    layout = "full-width"

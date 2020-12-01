@@ -29,7 +29,7 @@ it should be considered whether to include it or link to external resources.
    mobile = "/assets/images/guide/getting-started/user-research/user-research-header-mobile.jpg"
    mobileRetina = "/assets/images/guide/getting-started/user-research/user-research-header-mobile@2x.jpg"
    alt-text = ""
-   caption = ""
+   caption = ''
    width = 1600
    height = 600
    layout = "full-width"

@@ -26,6 +26,7 @@ A future addition could be user flows related to merchant and other applications
    mobile = "/assets/images/guide/getting-started/common-user-flows/common-user-flows-mobile.jpg"
    mobileRetina = "/assets/images/guide/getting-started/common-user-flows/common-user-flows-mobile@2x.jpg"
    alt-text = ""
+   caption = 'Notebook photo by [Mike Tinnion](https://unsplash.com/@m15ky){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
    width = 1600
    height = 600
    layout = "full-width"

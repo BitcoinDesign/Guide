@@ -22,7 +22,7 @@ could be to create sub-pages for each category to discusss it in more detail.
    mobile = "/assets/images/guide/getting-started/hardware/software-overview-mobile.jpg"
    mobileRetina = "/assets/images/guide/getting-started/software/software-overview-mobile@2x.jpg"
    alt-text = ""
-   caption = ""
+   caption = 'Texture by [Bilal O.](https://unsplash.com/@lightcircle){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
    width = 1600
    height = 600
    layout = "full-width"
@@ -40,7 +40,7 @@ Primarily used by developers, command-line interfaces typically offer the most f
    image = "/assets/images/guide/getting-started/software/cli-example.jpg"
    retina = "/assets/images/guide/getting-started/software/cli-example@2x.jpg"
    alt-text = "Illustrative interface of a command-line interaction"
-   caption = "Command line interfaces are text-only."
+   caption = 'Command line interfaces are text-only. Texture by [Joel Filipe](https://unsplash.com/@joelfilip){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
    width = 800
    height = 350
 %}
@@ -53,7 +53,7 @@ Primarily used by developers, command-line interfaces typically offer the most f
    image = "/assets/images/guide/getting-started/software/explorer-example.jpg"
    retina = "/assets/images/guide/getting-started/software/explorer-example@2x.jpg"
    alt-text = "Illustrative interface for block explorer software"
-   caption = "Block explorer offer insight into activiy on the bitcoin network."
+   caption = 'Block explorer offer insight into activiy on the bitcoin network. Texture by [Mike van den Bos](https://unsplash.com/@mike_van_den_bos){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
    width = 400
    height = 388
    layout = "float-right-desktop"
@@ -99,7 +99,7 @@ Another reason is that standards are still evolving as some of the technology is
    image = "/assets/images/guide/getting-started/software/point-of-sale-example.jpg"
    retina = "/assets/images/guide/getting-started/software/point-of-sale-example@2x.jpg"
    alt-text = "Illustrative interface for an online shop"
-   caption = "Payment processors help merchants to sell good and manage inventory and accounting."
+   caption = 'Payment processors help merchants to sell good and manage inventory and accounting. Texture by [Majid Gheidarlou](https://unsplash.com/@majidvj){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
    width = 400
    height = 541
    layout = "float-right-desktop"
@@ -108,7 +108,6 @@ Another reason is that standards are still evolving as some of the technology is
 Making purchases with bitcoin is great, as long as we have stores to buy things from. Payment processing applications offer easy-to-use online stores and point-of-sale experiences, paired with more complex feature sets for merchants to manage their inventory, accounting, shipping, and integrations with other services.
 
 </div>
-
 
 ## Exchanges
 
@@ -120,7 +119,7 @@ Exchanges allow for swapping between currencies and usually fall in three genera
    image = "/assets/images/guide/getting-started/software/exchange-example.jpg"
    retina = "/assets/images/guide/getting-started/software/exchange-example@2x.jpg"
    alt-text = "Illustrative interface for exchanging bitcoin"
-   caption = "Exchanges allow for trading between different currencies."
+   caption = 'Exchanges allow for trading between different currencies. Texture by [Bilal O.](https://unsplash.com/@lightcircle){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
    width = 400
    height = 388
    layout = "float-right-desktop"
@@ -140,7 +139,7 @@ In between these first two categories fall decentralized exchanges. They may be 
    image = "/assets/images/guide/getting-started/software/node-ui-example.jpg"
    retina = "/assets/images/guide/getting-started/software/node-ui-example@2x.jpg"
    alt-text = "Illustrative interface for node software"
-   caption = "Node applications connect to and participate in the bitcoin network."
+   caption = 'Node applications connect to and participate in the bitcoin network. Texture by [okeykat](https://unsplash.com/@okeykat){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
    width = 400
    height = 426
    layout = "float-right-desktop"
@@ -158,7 +157,7 @@ A node connects to and participates in the bitcoin network to download and excha
    image = "/assets/images/guide/getting-started/software/miner-ui-example.jpg"
    retina = "/assets/images/guide/getting-started/software/miner-ui-example@2x.jpg"
    alt-text = "Illustrative interface for mining software"
-   caption = "Mining software manages hardware that helps secure the bitcoin network."
+   caption = 'Mining software manages hardware that helps secure the bitcoin network. Texture by [Mae Mu](https://unsplash.com/@picoftasty){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
    width = 400
    height = 359
    layout = "float-right-desktop"

@@ -24,7 +24,7 @@ reality of contributing.
    mobile = "/assets/images/guide/getting-started/why-design-for-bitcoin/why-design-for-bitcoin-mobile.jpg"
    mobileRetina = "/assets/images/guide/getting-started/why-design-for-bitcoin/why-design-for-bitcoin-mobile@2x.jpg"
    alt-text = ""
-   caption = ""
+   caption = 'Paint texture by [Geordanna Cordero](https://unsplash.com/@geordannatheartist"){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com"){:target="_blank" rel="nofollow"}'
    width = 1600
    height = 600
    layout = "full-width"
