@@ -105,8 +105,8 @@ If you are completely new to open design, it can feel tricky to find a starting 
 
 Licenses help ensure that bad actors cannot abuse this open system by taking the published work and pretend it's their own, patent it, redistribute it under a commercial license, or otherwise profit from it. A variety of licenses have been created by the open-source movement to accomodate different types of projects and situations.
 
-This guide is published under three different licenses ([MIT license](LICENSE-MIT), [Apache License 2.0](LICENSE-APACHE), and [Creative Commons Attribution 4.0 International License](LICENSE-CC-BY)). Anyone who wants to remix it, or parts of it, may choose which one to publish their work under. You can read the full license text [here](LICENSE).
+This guide is published under three different licenses ([MIT license]({{site.github_repository_url}}blob/master/LICENSE-MIT), [Apache License 2.0]({{site.github_repository_url}}blob/master/LICENSE-APACHE), and [Creative Commons Attribution 4.0 International License]({{site.github_repository_url}}blob/master/LICENSE-CC-BY)). Anyone who wants to remix it, or parts of it, may choose which one to publish their work under. You can read the full license text [here]({{site.github_repository_url}}blob/master/LICENSE).
 
 ---
 
-There is enourmous space for creativity. To find a starting point, take a look at the [visual-language of bitcoin]({{ '/guide/getting-started/visual-language/' | relative_url }}).
+There is enourmous space for creativity. To find a starting point, take a look at the [visual language of bitcoin]({{ '/guide/getting-started/visual-language/' | relative_url }}).
