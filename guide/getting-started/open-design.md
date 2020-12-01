@@ -99,7 +99,7 @@ If you are completely new to open design, it can feel tricky to find a starting 
 - Download a Bitcoin wallet and experiment with small amounts. You can alse use Testnet, which allows you use all the features, but with worthless test bitcoin. Pay attention to the experience and come up with ways to improve it.
 - Redesign a Bitcoin application of your choice. Even as a brief exercise, a redesign is a great way to develop deeper understanding of how something works and why certain decisions were made.
 - Read, watch and listen. There is a lot of great material out there to learn more about Bitcoin. Design-focused content is unfortunately not as common but expanding into related materials (like finance) might help.
-- Review your tools and workflows, and the work you produce, and consider how you can make it more public and accesssible for others.
+- Review your tools and workflows, and the work you produce, and consider how you can make it more public and accessible for others.
 
 ## Licensing
 
