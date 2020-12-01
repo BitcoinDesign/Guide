@@ -93,7 +93,7 @@ And we value...
 
 ## Getting started
 
-If you are completely new to open design, it can feel tricky to find a starting point in the Bitcoin ecosystem. Not only is the technology complex, but there are also few design resources available. A good starting is the [Contribute]({{ '/contribute' | relative_url }}) page, and here are a few extra tips to help you find your way around in general:
+If you are completely new to open design, it can feel tricky to find a starting point in the Bitcoin ecosystem. Not only is the technology complex, but there are also few design resources available. A good starting point is the [Contribute]({{ '/contribute' | relative_url }}) page, and here are a few extra tips to help you find your way around in general:
 
 - Join the [Bitcoin Design Community](http://bitcoindesigners.org) on Slack and see what others are discussing. A good way to get started is by asking questions and joining conversations that interest you. Our [Community Calls](https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+Community+Call) and [Design Review](https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+Design+Review+Call+) calls are also great ways to get active.
 - Download a Bitcoin wallet and experiment with small amounts. You can also use Testnet, which allows you to use all the features, but with worthless test bitcoin. Pay attention to the experience and come up with ways to improve it.
