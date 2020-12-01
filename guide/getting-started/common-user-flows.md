@@ -7,6 +7,19 @@ permalink: /guide/getting-started/common-user-flows/
 main_classes: -no-top-padding
 ---
 
+<!--
+
+Editor's notes
+
+This page breaks down the overall user experience of wallets into specific activities.
+Readers get a better understanding of each one, and can then better break down the
+experience of their product and optimize each user flow individually.
+
+Although not clearly indicated, this page currently deals with wallet interactions only.
+A future addition could be user flows related to merchant and other applications.
+
+-->
+
 {% include picture.html
    image = "/assets/images/guide/getting-started/common-user-flows/common-user-flows.jpg"
    retina = "/assets/images/guide/getting-started/common-user-flows/common-user-flows@2x.jpg"

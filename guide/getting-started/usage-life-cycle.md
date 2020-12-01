@@ -7,6 +7,15 @@ permalink: /guide/getting-started/usage-life-cycle/
 main_classes: -no-top-padding
 ---
 
+<!--
+
+Editor's notes
+
+An introduction to the main phases users of a product go through. This is a helpful
+framework for user research and decision making.
+
+-->
+
 {% include picture.html
    image = "/assets/images/guide/getting-started/usage-life-cycle/usage-life-cycle.jpg"
    retina = "/assets/images/guide/getting-started/usage-life-cycle/usage-life-cycle@2x.jpg"

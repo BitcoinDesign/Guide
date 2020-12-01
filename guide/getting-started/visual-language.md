@@ -6,6 +6,16 @@ parent: Getting started
 permalink: /guide/getting-started/visual-language/
 ---
 
+<!--
+
+Editor's notes
+
+A brief history of bitcoin "branding" and the visual culture around bitcoin.
+
+A good addition would be a summary of the basic brand elements (color, symbol...).
+
+-->
+
 # The visual language of bitcoin
 
 Since Bitcoin does not have a central authority, there is no specific symbol or style that we can consider official. However, there is a large body of community art and design work, along with a few proposals that ended up being highly influential. Let's start with some key moments that led us to the visual that many of us associate with Bitcoin today.

@@ -9,10 +9,15 @@ main_classes: -no-top-padding
 
 <!--
 
-Framing
+Editor's notes
 
-Start with something readers will know, like "What is a bitcoin" and "How do I own bitcoin",
-and work backwards to the technology.
+An introduction to bitcoin tech concepts based on simple questions readers might have,
+like "What is a bitcoin" and "How do I own bitcoin". With further reading, more concepts
+are introduced and connections between concepts are made.
+
+This is only meant as an overview. As this is a design guide, future additions to this 
+content should weigh off whether to add it here, create sub-pages or reference external
+resources.
 
 -->
 

@@ -9,14 +9,9 @@ main_classes: -no-top-padding
 
 <!--
 
-Why bitcoin matters in the world with an eye towards designers
+Editor's notes
 
-- The first natively digital currency
-- Global transfer of value
-- Open, public, and no central control
-- Anyone can participate
-
-What does it allow us to do?
+A very top-level introduction to why bitcoin matters, with an eye towards designers.
 
 -->
 

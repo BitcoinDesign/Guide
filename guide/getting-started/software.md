@@ -9,20 +9,10 @@ main_classes: -no-top-padding
 
 <!--
 
-Use case
-- Wallet
-- Exchange
-- Node
-- Point of sale
-- Signing
+Editor's notes
 
-Functionality
-- Send, receive, transactions
-- Signing
-- Mine
-- Node
-- Exchange
-- Accounting
+This page highlights some of the most common software categories. Future expansion
+could be to create sub-pages for each category to discusss it in more detail.
 
 -->
 

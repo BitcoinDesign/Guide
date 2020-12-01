@@ -11,7 +11,8 @@ main_classes: -no-top-padding
 
 Editor's notes
 
-This page provides an overview of the different types of hardware that interact with the bitcoin network.
+This page provides an overview of the different types of hardware that interact with the bitcoin network. It is only a top-level summary. An idea for future expansion would be create sub-pages
+to more thoroughly discuss each hardware type.
 
 -->
 

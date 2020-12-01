@@ -9,11 +9,17 @@ main_classes: -no-top-padding
 
 <!--
 
+Editor's notes
+
 Goal of this page is to frame user research in the bitcoin ecosystem.
 - The role, importance, and value of user research
 - Unique aspects of the space
 - Starting points for getting involved
 - Further resources
+
+Ideas for further content could be deep-dives into specific methods and frameworks,
+and practical resources like survey kits. For generic content around user research,
+it should be considered whether to include it or link to external resources.
 
 -->
 

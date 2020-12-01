@@ -9,14 +9,12 @@ main_classes: -no-top-padding
 
 <!--
 
-Appeal to designers to join the bitcoin ecosystem
+Editor's notes
 
-Cutting edge - New design challenges
-Few designers
-Permissionless
-Open design
-Opens up industries that had gatekeepers before
-Global community and audience
+Frames the role and activity of design in the bitcoin ecosystem, and how
+it is unique and interesting compared to other areas of design. This should
+strike a good balance between highlighting exciting opportunities and the
+reality of contributing.
 
 -->
 
