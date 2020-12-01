@@ -61,7 +61,7 @@ Whichever it may be, it is a voluntary, public contribution to efforts that you 
 
 Open-source development has existed and matured for decades, while open design is not as widely known or practiced. Starting to design for bitcoin products can therefore sometimes be disorienting, as many designers need to adjust not just how they work and collaborate, but also the relationship to their work. No longer is the design an artefact only controlled by just the designer or a small group of people inside an organzation. The design instead becomes part of a public conversation where anyone is invited to help shape it, and group consensus influences the way forward. In open-source software, this public review and debate often leads to better products and services, and this effect ideally carries over to open design.
 
-The best solutions typically come from a comprehensive understanding of the problem to be solved, whether they are technical, human, societal, economic, or otherwise. This makes a multidisciplinary approach essential, with users, designers, developers, translaters, project managers, and others working together.
+The best solutions typically come from a comprehensive understanding of the problem to be solved, whether they are technical, human, societal, economic, or otherwise. This makes a multidisciplinary approach essential, with users, designers, developers, translators, project managers, and others working together.
 
 ##  Open design and Bitcoin
 
