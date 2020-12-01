@@ -65,7 +65,7 @@ The best solutions typically come from a comprehensive understanding of the prob
 
 ##  Open design and Bitcoin
 
-Bitcoin has had the spirit of openness deeply embedded from its humble beginnings. The source code is public, participation in the network is public and unrestricted, and transfering value via the Bitcoin protocoal is permissionless as well. Thousands of projects have copied ideas, techniques and code from Bitcoin to experiment and explore different directions. So it provides a fantastic foundation for designers to also contribute in this open and participatory manner.
+Bitcoin has had the spirit of openness deeply embedded from its humble beginnings. The source code is public, participation in the network is public and unrestricted, and transferring value via the Bitcoin protocol is permissionless as well. Thousands of projects have copied ideas, techniques and code from Bitcoin to experiment and explore different directions. So it provides a fantastic foundation for designers to also contribute in this open and participatory manner.
 
 One might argue that Bitcoin needs open design in order to stay true to its founding values. The majority of users don't interact directly with a technical protocol, but instead with applications built on top of it. If those applications end up being controlled or manipulated, then it will not matter if the protocol is open. So it is up to the people shaping the open-source application layer to help ensure that the future of Bitcoin remains decentralized and allows for permissionless participation.
 
