@@ -78,7 +78,7 @@ In open design, we...
 - make it easy for others to use and build on our ideas and work
 - are inclusive and help others
 - are open-minded and flexible 
-- work multidisciplinary, because good results require different perspectives and skillsets
+- work multidisciplinary, because good results require different perspectives and skill sets
 - continuously learn independently, and from each other
 - rely on our peer group for free and communal validation of quality
 - are accountable for our own actions, and have vested interest in the groups actions and goals
