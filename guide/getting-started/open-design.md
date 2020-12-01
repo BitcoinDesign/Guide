@@ -109,4 +109,4 @@ This guide is published under three different licenses ([MIT license](LICENSE-MI
 
 ---
 
-There is enourmous space for creativity. To find a starting point, take a look at the [visual-language of bitcoin]({{ '/guide/getting-started/visual-language/' | relative_url }}).
+There is enormous space for creativity. To find a starting point, take a look at the [visual-language of bitcoin]({{ '/guide/getting-started/visual-language/' | relative_url }}).
