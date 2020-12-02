@@ -52,8 +52,8 @@ Casa's [wealth security protocol]({{ 'https://github.com/Casa/wealth-security-pr
 Now that you have a clear picture of your use-case, target audience and risk vectors we can consider where on this spectrum you should be aiming. 
 
 {% include image.html
-   image = "/assets/images/guide/private-key-management/schemes/spectrum.png"
-   retina = "/assets/images/guide/private-key-management/schemes/spectrum@2x.png"
+   image = "/assets/images/guide/private-key-management/schemes/spectrum.jpg"
+   retina = "/assets/images/guide/private-key-management/schemes/spectrum@2x.jpg"
    alt-text = "Private key management schemes, spectrum"
    caption = "The range of private key management schemes."
    width = 2084
