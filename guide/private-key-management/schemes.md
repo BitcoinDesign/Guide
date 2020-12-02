@@ -49,7 +49,7 @@ Casa's [wealth security protocol]({{ 'https://github.com/Casa/wealth-security-pr
 
 ## Picking a scheme for your product
 
-Now that you have a clear picture of your use-case, target audience and risk vectors we can consider where on this spectrum you should be aiming. 
+Now that you have a clear picture of your use-case, target audience and risk vectors we can consider which schemes might be suitable for your product. 
 
 {% include image.html
    image = "/assets/images/guide/private-key-management/schemes/spectrum.jpg"
@@ -64,22 +64,22 @@ Now that you have a clear picture of your use-case, target audience and risk vec
    image = "/assets/images/guide/private-key-management/schemes/flow-chart.jpg"
    retina = "/assets/images/guide/private-key-management/schemes/flow-chart@2x.jpg"
    alt-text = "Private key management schemes, flowchart"
-   caption = "Decision tree / Scheme picker flow chart illustration, WIP"
-   width = 800
-   height = 584
+   caption = "A flow-chart for picking a scheme based on use-case."
+   width = 2226
+   height = 1416
 %}
 
 We can divide the options up into personal and shared wallet schemes. The following pages goes into more detail about each one;
 
 ### [Personal]({{ '/guide/private-key-management/single-user-schemes/' | relative_url }})
-- [Automatic cloud backup]({{ '/guide/private-key-management/single-user-schemes/#automatic-cloud-backup' | relative_url }}) - no user action required for backup
-- [Recovery phrase]({{ '/guide/private-key-management/single-user-schemes/#recovery-phrase' | relative_url }}) - manual backup of a phrase of words
-- [External signing device]({{ '/guide/private-key-management/single-user-schemes/#external-signing-device' | relative_url }}) - keys are held on a separate device
-- [Threshold signatures/Key-sharing]({{ '/guide/private-key-management/single-user-schemes/#threshold-signatures--key-sharing' | relative_url }}) - one key is split and distributed
-- [Multi-key]({{ '/guide/private-key-management/single-user-schemes/#multi-key' | relative_url }}) - several keys jointly control the wallet
+- **Automatic cloud backup** - no user action required for backup
+- **Recovery phrase** - manual backup of a phrase of words
+- **External signing device** - keys are held on a separate device
+- **Threshold signatures/Key-sharing** - one key is split and distributed
+- **Multi-key** - several keys jointly control the wallet
 
 ### [Shared]({{ '/guide/private-key-management/multi-user-schemes/' | relative_url }})
-- [Multi-key]({{ '/guide/private-key-management/multi-user-schemes/#multi-key' | relative_url }}) - several keys and several people control the wallet
+- **Multi-key** - several keys and several people control the wallet
 
 ---
 
