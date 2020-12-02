@@ -57,10 +57,10 @@ The automatic cloud backup scheme gives users reasonable security against theft,
 - Unless the backup includes the recovery phrase users will not be able to export their wallet to another product
 
 {% include image.html
-   image = "/assets/images/guide/private-key-management/illustration-placeholder.jpg"
-   retina = "/assets/images/guide/private-key-management/illustration-placeholder@2x.jpg"
-   alt-text = ""
-   caption = "Illustration Automatic cloud backup."
+   image = "/assets/images/guide/private-key-management/schemes/cloud-backup.jpg"
+   retina = "/assets/images/guide/private-key-management/schemes/cloud-backup@2x.jpg"
+   alt-text = "Automatic cloud backup illustration"
+   caption = "Private keys are encrypted and stored in the cloud."
    width = 800
    height = 400
 %}
@@ -171,10 +171,10 @@ A wallet-product that supports external signing can remove the need for the priv
 - Still requires a good sovereign backup for redundancy
 
 {% include image.html
-   image = "/assets/images/guide/private-key-management/illustration-placeholder.jpg"
-   retina = "/assets/images/guide/private-key-management/illustration-placeholder@2x.jpg"
-   alt-text = ""
-   caption = "Illustration of external signing device."
+   image = "/assets/images/guide/private-key-management/schemes/signing-devices.jpg"
+   retina = "/assets/images/guide/private-key-management/schemes/signing-devices@2x.jpg"
+   alt-text = "External signing device illustration"
+   caption = "Hardware wallets are the most common external signing devices."
    width = 800
    height = 400
 %}
@@ -229,10 +229,10 @@ Some benefits over a multikey setup include greater privacy, as a transaction us
 - Individual product implementations not interoperable
 
 {% include image.html
-   image = "/assets/images/guide/private-key-management/illustration-placeholder.jpg"
-   retina = "/assets/images/guide/private-key-management/illustration-placeholder@2x.jpg"
-   alt-text = ""
-   caption = "Illustration of threshold signatures."
+   image = "/assets/images/guide/private-key-management/schemes/threshold-signatures.jpg"
+   retina = "/assets/images/guide/private-key-management/schemes/threshold-signatures@2x.jpg"
+   alt-text = "Threshold signatures illustration"
+   caption = "One key is split into several pieces, more than one are required for controlling the wallet."
    width = 800
    height = 400
 %}
@@ -275,10 +275,10 @@ Multi-key schemes can raise the security, since anyone needs access to more than
 - Adds complexity and op-sec burden for multiple private keys
 
 {% include image.html
-   image = "/assets/images/guide/private-key-management/illustration-placeholder.jpg"
-   retina = "/assets/images/guide/private-key-management/illustration-placeholder@2x.jpg"
-   alt-text = ""
-   caption = "Illustration of multi-key."
+   image = "/assets/images/guide/private-key-management/schemes/multi-key.jpg"
+   retina = "/assets/images/guide/private-key-management/schemes/multi-key@2x.jpg"
+   alt-text = "Multi-key illustration"
+   caption = "Several keys are required to control the wallet."
    width = 800
    height = 400
 %}
