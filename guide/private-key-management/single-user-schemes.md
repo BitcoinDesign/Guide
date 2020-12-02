@@ -22,12 +22,6 @@ main_classes: -no-top-padding
 
 Now let's dive in and look at the various schemes that might be suitable for a personal wallet-product with a single-user to understand the differences at a high level.
 
-- [Automatic cloud backup]({{ '/guide/private-key-management/single-user-schemes/#automatic-cloud-backup' | relative_url }})
-- [Recovery phrase]({{ '/guide/private-key-management/single-user-schemes/#recovery-phrase' | relative_url }})
-- [External signing device]({{ '/guide/private-key-management/single-user-schemes/#external-signing-device' | relative_url }})
-- [Threshold signatures/Key-sharing]({{ '/guide/private-key-management/single-user-schemes/#threshold-signatures--key-sharing' | relative_url }})
-- [Multi-key]({{ '/guide/private-key-management/single-user-schemes/#multi-key' | relative_url }})
-
 {% include image.html
    image = "/assets/images/guide/private-key-management/schemes/personal-schemes.jpg"
    retina = "/assets/images/guide/private-key-management/schemes/personal-schemes@2x.jpg"
@@ -36,6 +30,12 @@ Now let's dive in and look at the various schemes that might be suitable for a p
    width = 2012
    height = 400
 %}
+
+- [Automatic cloud backup]({{ '/guide/private-key-management/single-user-schemes/#automatic-cloud-backup' | relative_url }})
+- [Recovery phrase]({{ '/guide/private-key-management/single-user-schemes/#recovery-phrase' | relative_url }})
+- [External signing device]({{ '/guide/private-key-management/single-user-schemes/#external-signing-device' | relative_url }})
+- [Threshold signatures/Key-sharing]({{ '/guide/private-key-management/single-user-schemes/#threshold-signatures--key-sharing' | relative_url }})
+- [Multi-key]({{ '/guide/private-key-management/single-user-schemes/#multi-key' | relative_url }})
 
 ***
 
