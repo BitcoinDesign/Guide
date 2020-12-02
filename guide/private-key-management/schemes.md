@@ -61,8 +61,8 @@ Now that you have a clear picture of your use-case, target audience and risk vec
 %}
 
 {% include image.html
-   image = "/assets/images/guide/private-key-management/schemes/schemes-flowchart.png"
-   retina = "/assets/images/guide/private-key-management/schemes/schemes-flowchart@2x.png"
+   image = "/assets/images/guide/private-key-management/schemes/flow-chart.jpg"
+   retina = "/assets/images/guide/private-key-management/schemes/flow-chart@2x.jpg"
    alt-text = "Private key management schemes, flowchart"
    caption = "Decision tree / Scheme picker flow chart illustration, WIP"
    width = 800
