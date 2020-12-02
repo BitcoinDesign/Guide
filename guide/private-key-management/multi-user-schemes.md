@@ -38,10 +38,10 @@ Just like with personal schemes, external signing devices can be used to replace
 - Has significant complexity and op-sec burden for multiple private keys, each of which might need good sovereign backup scheme
 
 {% include image.html
-   image = "/assets/images/guide/private-key-management/illustration-placeholder.jpg"
-   retina = "/assets/images/guide/private-key-management/illustration-placeholder@2x.jpg"
-   alt-text = ""
-   caption = "Illustration of multi-key for shared wallet."
+   image = "/assets/images/guide/private-key-management/schemes/shared-multi-key.jpg"
+   retina = "/assets/images/guide/private-key-management/schemes/shared-multi-key@2x.jpg"
+   alt-text = "Shared multi-key illustration"
+   caption = "Several users can control the wallet with a combination of the keys."
    width = 800
    height = 400
 %}
