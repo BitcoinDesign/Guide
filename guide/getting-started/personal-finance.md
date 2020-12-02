@@ -5,6 +5,7 @@ nav_order: 7
 parent: Getting started
 permalink: /guide/getting-started/personal-finance/
 main_classes: -no-top-padding
+image: /assets/images/guide/getting-started/personal-finance/personal-finance-preview.jpg
 ---
 
 <!--
@@ -12,6 +13,11 @@ main_classes: -no-top-padding
 Editor's notes
 
 This page provides a rough framework for how to think about transactions in the general context of typical personal finances. It can provide a great jumping-off point into different other pages like private key management solutions, payment types and hardware wallets.
+
+Illustration sources
+
+- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=288%3A394
+- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=862%3A3081
 
 -->
 

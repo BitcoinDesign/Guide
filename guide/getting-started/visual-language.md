@@ -4,6 +4,7 @@ title: Visual language
 nav_order: 5
 parent: Getting started
 permalink: /guide/getting-started/visual-language/
+image: /assets/images/guide/getting-started/visual-language/visual-language-preview.jpg
 ---
 
 <!--
@@ -13,6 +14,10 @@ Editor's notes
 A brief history of bitcoin "branding" and the visual culture around bitcoin.
 
 A good addition would be a summary of the basic brand elements (color, symbol...).
+
+Illustration sources
+
+- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=887%3A151
 
 -->
 

@@ -5,6 +5,7 @@ nav_order: 10
 parent: Getting started
 permalink: /guide/getting-started/technology-primer/
 main_classes: -no-top-padding
+image: /assets/images/guide/getting-started/technology/technology-primer-preview.jpg
 ---
 
 <!--
@@ -18,6 +19,10 @@ are introduced and connections between concepts are made.
 This is only meant as an overview. As this is a design guide, future additions to this 
 content should weigh off whether to add it here, create sub-pages or reference external
 resources.
+
+Illustration sources
+
+- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=194%3A2902
 
 -->
 

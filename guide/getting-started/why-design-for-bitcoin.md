@@ -5,6 +5,7 @@ nav_order: 3
 parent: Getting started
 permalink: /guide/getting-started/why-design-for-bitcoin/
 main_classes: -no-top-padding
+image: /assets/images/guide/getting-started/why-design-for-bitcoin/why-design-for-bitcoin-preview.jpg
 ---
 
 <!--
@@ -15,6 +16,10 @@ Frames the role and activity of design in the bitcoin ecosystem, and how
 it is unique and interesting compared to other areas of design. This should
 strike a good balance between highlighting exciting opportunities and the
 reality of contributing.
+
+Illustration sources
+
+- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=257%3A3260
 
 -->
 

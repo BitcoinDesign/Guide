@@ -5,6 +5,7 @@ nav_order: 12
 parent: Getting started
 permalink: /guide/getting-started/hardware/
 main_classes: -no-top-padding
+image: /assets/images/guide/getting-started/hardware/hardware-preview.jpg
 ---
 
 <!--
@@ -13,6 +14,11 @@ Editor's notes
 
 This page provides an overview of the different types of hardware that interact with the bitcoin network. It is only a top-level summary. An idea for future expansion would be create sub-pages
 to more thoroughly discuss each hardware type.
+
+Illustration sources
+
+- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=291%3A2675
+- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=53%3A3663
 
 -->
 

@@ -5,6 +5,7 @@ nav_order: 2
 parent: Getting started
 permalink: /guide/getting-started/why-bitcoin-is-unique/
 main_classes: -no-top-padding
+image: /assets/images/guide/getting-started/why-bitcoin-is-unique/why-bitcoin-is-unique-preview.jpg
 ---
 
 <!--
@@ -12,6 +13,11 @@ main_classes: -no-top-padding
 Editor's notes
 
 A very top-level introduction to why bitcoin matters, with an eye towards designers.
+
+Illustration sources
+
+- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=253%3A0
+- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=194%3A2902
 
 -->
 

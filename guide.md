@@ -6,16 +6,21 @@ permalink: /guide/
 main_nav: true
 secondary_nav: false
 main_classes: -no-top-padding
+image: /assets/images/guide/bitcoin-island-preview.jpg
 ---
 
 <!--
 
 Introduction to the guide
 
-Why it exists
-What's in it
-How to use it
-How to contribute
+- Why it exists
+- What's in it
+- How to use it
+- How to contribute
+
+Illustration sources
+
+- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=238%3A3
 
 -->
 

@@ -5,6 +5,7 @@ nav_order: 11
 parent: Getting started
 permalink: /guide/getting-started/software/
 main_classes: -no-top-padding
+image: /assets/images/guide/getting-started/software/software-preview.jpg
 ---
 
 <!--
@@ -13,6 +14,10 @@ Editor's notes
 
 This page highlights some of the most common software categories. Future expansion
 could be to create sub-pages for each category to discusss it in more detail.
+
+Illustration sources
+
+- https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=148%3A174
 
 -->
 

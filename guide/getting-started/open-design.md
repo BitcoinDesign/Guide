@@ -5,6 +5,7 @@ nav_order: 4
 parent: Getting started
 permalink: /guide/getting-started/open-design/
 main_classes: -no-top-padding
+image: /assets/images/guide/getting-started/open-design/open-design-preview.jpg
 ---
 
 <!--
@@ -28,6 +29,10 @@ Examples in Bitcoin Design
 
 Ideas
 - Add quotes and stories from designers
+
+Illustration sources
+
+- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=881%3A1051
 
 -->
 

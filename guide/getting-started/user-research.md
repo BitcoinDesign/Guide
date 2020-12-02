@@ -5,6 +5,7 @@ nav_order: 6
 parent: Getting started
 permalink: /guide/getting-started/user-research/
 main_classes: -no-top-padding
+image: /assets/images/guide/getting-started/user-research/user-research-preview.jpg
 ---
 
 <!--
@@ -20,6 +21,10 @@ Goal of this page is to frame user research in the bitcoin ecosystem.
 Ideas for further content could be deep-dives into specific methods and frameworks,
 and practical resources like survey kits. For generic content around user research,
 it should be considered whether to include it or link to external resources.
+
+Illustration sources
+
+- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=288%3A652
 
 -->
 

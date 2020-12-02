@@ -5,6 +5,7 @@ nav_order: 8
 parent: Getting started
 permalink: /guide/getting-started/usage-life-cycle/
 main_classes: -no-top-padding
+image: /assets/images/guide/getting-started/usage-life-cycle/usage-life-cycle-preview.jpg
 ---
 
 <!--
@@ -13,6 +14,10 @@ Editor's notes
 
 An introduction to the main phases users of a product go through. This is a helpful
 framework for user research and decision making.
+
+Illustration sources
+
+- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=878%3A3190
 
 -->
 

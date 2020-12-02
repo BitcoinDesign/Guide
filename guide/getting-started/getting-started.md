@@ -5,6 +5,7 @@ nav_order: 1
 has_children: true
 permalink: /guide/getting-started/introduction/
 main_classes: -no-top-padding
+image: /assets/images/guide/getting-started/getting-started-preview.jpg
 ---
 
 <!--
@@ -13,6 +14,10 @@ Editor's notes
 
 A brief introduction and summary of all pages in this section. The idea is that readers
 scan this page to get an overview of the section and then decide which topics to dive into.
+
+Illustration sources
+
+- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=236%3A467
 
 -->
 

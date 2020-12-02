@@ -5,6 +5,7 @@ nav_order: 9
 parent: Getting started
 permalink: /guide/getting-started/common-user-flows/
 main_classes: -no-top-padding
+image: /assets/images/guide/getting-started/common-user-flows/common-user-flows-preview.jpg
 ---
 
 <!--
@@ -17,6 +18,10 @@ experience of their product and optimize each user flow individually.
 
 Although not clearly indicated, this page currently deals with wallet interactions only.
 A future addition could be user flows related to merchant and other applications.
+
+Illustration sources
+
+- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=862%3A2982
 
 -->
 
