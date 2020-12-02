@@ -30,13 +30,6 @@ As we saw with multi-key setups for personal use, a multi-key wallet has several
 
 Just like with personal schemes, external signing devices can be used to replace one or many of the keys used for a shared multi-key setup. While this can increase security if managed correctly, the same caveat applies in terms of adding significant complexity. 
 
-#### Pros 
-- Allows several people to access and/or control a bitcoin wallet
-- Can tailor requirements for multiple co-signers and access
-
-#### Cons 
-- Has significant complexity and op-sec burden for multiple private keys, each of which might need good sovereign backup scheme
-
 {% include image.html
    image = "/assets/images/guide/private-key-management/schemes/shared-multi-key.jpg"
    retina = "/assets/images/guide/private-key-management/schemes/shared-multi-key@2x.jpg"
@@ -45,6 +38,13 @@ Just like with personal schemes, external signing devices can be used to replace
    width = 800
    height = 400
 %}
+
+#### Pros 
+- Allows several people to access and/or control a bitcoin wallet
+- Can tailor requirements for multiple co-signers and access
+
+#### Cons 
+- Has significant complexity and op-sec burden for multiple private keys, each of which might need good sovereign backup scheme
 
 ### How it works 
 … (similar to single-user multi-key, , but increased setup complexity due to multiple people involved) 
