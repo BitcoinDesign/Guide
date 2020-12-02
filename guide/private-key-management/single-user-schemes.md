@@ -29,11 +29,11 @@ Now let's dive in and look at the various schemes that might be suitable for a p
 - [Multi-key]({{ '/guide/private-key-management/single-user-schemes/#multi-key' | relative_url }})
 
 {% include image.html
-   image = "/assets/images/guide/private-key-management/illustration-placeholder.jpg"
-   retina = "/assets/images/guide/private-key-management/illustration-placeholder@2x.jpg"
+   image = "/assets/images/guide/private-key-management/schemes/personal-schemes.jpg"
+   retina = "/assets/images/guide/private-key-management/schemes/personal-schemes@2x.jpg"
    alt-text = ""
-   caption = "Illustration of the 5 schemes."
-   width = 800
+   caption = "Cloud backup, recovery-phrase, signing-device, threshold-signatures and multi-key."
+   width = 2012
    height = 400
 %}
 
@@ -47,15 +47,6 @@ The target audience with this scheme would be new or novice bitcoin users to who
 
 The automatic cloud backup scheme gives users reasonable security against theft, while providing low risk for self-inflicted losses. 
 
-#### Pros 
-- Low onboarding friction
-- Low risk of self-inflicted loss due to the automatic nature and redundant backups
-
-#### Cons
-- Private key in cloud storage increases risk of malicious third party access
-- User needs to trust their OS and cloud storage provider
-- Unless the backup includes the recovery phrase users will not be able to export their wallet to another product
-
 {% include image.html
    image = "/assets/images/guide/private-key-management/schemes/cloud-backup.jpg"
    retina = "/assets/images/guide/private-key-management/schemes/cloud-backup@2x.jpg"
@@ -64,6 +55,15 @@ The automatic cloud backup scheme gives users reasonable security against theft,
    width = 800
    height = 400
 %}
+
+#### Pros 
+- Low onboarding friction
+- Low risk of self-inflicted loss due to the automatic nature and redundant backups
+
+#### Cons
+- Private key in cloud storage increases risk of malicious third party access
+- User needs to trust their OS and cloud storage provider
+- Unless the backup includes the recovery phrase users will not be able to export their wallet to another product
 
 ### How it works
 The wallet-product will generate a wallet with a keypair, then encrypt and back the key up to a location that the user is unlikely to lose access to, while hard for a malicious third party to gain access to. 
@@ -103,14 +103,6 @@ After creating a new wallet, you will be asked to manually backup a 12 (or 24 in
 
 This scheme is suitable for target-audiences who are already familiar with bitcoin and procedures for secure off-line backups of the recovery phrase. It is not suited for complete beginners. When told to store the backup in a safe way off-line, bitcoin-beginners in reality often take a screenshot, write it down in plain text somewhere on their mobile device, computer or a piece of paper on the fridge, or simply don’t back it up at all. This has the risk of achieving the opposite of what we want; high risk of self-inflicted loss and low to medium security in terms of third party theft.
 
-#### Pros 
-- Sovereign backups done well can provide very high security
-- Good interoperability
-
-#### Cons 
-- Requires significant effort from users to achieve safe and redundant backups
-- High onboarding friction
-
 {% include image.html
    image = "/assets/images/guide/private-key-management/schemes/recovery-phrase.jpg"
    retina = "/assets/images/guide/private-key-management/schemes/recovery-phrase@2x.jpg"
@@ -119,6 +111,14 @@ This scheme is suitable for target-audiences who are already familiar with bitco
    width = 800
    height = 400
 %}
+
+#### Pros 
+- Sovereign backups done well can provide very high security
+- Good interoperability
+
+#### Cons 
+- Requires significant effort from users to achieve safe and redundant backups
+- High onboarding friction
 
 ### How it works
 The wallet-product will generate a 12 or 24 word phrase (seed / recovery phrase) from which all the wallet’s keys can be derived. This means the user can have access to the wallet from any compatible wallet-product with the phrase, even if they lose the device or software.
@@ -161,15 +161,6 @@ Most common are hardware wallets who’s makers often provide their own software
 
 A wallet-product that supports external signing can remove the need for the private key to be readable by the wallet software, thereby decreasing the risk of keeping keys on a device that is likely always connected to the internet.
 
-#### Pros 
-- Removes private key from online devices
-- Can provide very high security if used correctly
-
-#### Cons
-- Purchase of specialized hardware required
-- Requires further effort and knowledge to setup correctly
-- Still requires a good sovereign backup for redundancy
-
 {% include image.html
    image = "/assets/images/guide/private-key-management/schemes/signing-devices.jpg"
    retina = "/assets/images/guide/private-key-management/schemes/signing-devices@2x.jpg"
@@ -178,6 +169,15 @@ A wallet-product that supports external signing can remove the need for the priv
    width = 800
    height = 400
 %}
+
+#### Pros 
+- Removes private key from online devices
+- Can provide very high security if used correctly
+
+#### Cons
+- Purchase of specialized hardware required
+- Requires further effort and knowledge to setup correctly
+- Still requires a good sovereign backup for redundancy
 
 ## How it works
 The external device can generate and store a keypair offline, the private key has thus never been known outside the device. A softare wallet can connect to the signing device and act as an interface, or handle transactiosn airgapped from the device. 
@@ -219,15 +219,6 @@ A threshold signature scheme can require n-of-n signatures from parts of a singl
 
 Some benefits over a multikey setup include greater privacy, as a transaction using threshold signatures will appear equal to a single key transaction and not expose details about the different key shares. Transactions will also incur lower fees than a multikey setup as only one signature will be recorded on-chain. The big caveat here however is that these advantages are true only with the current ECDSA signatures of bitcoin, while with the forthcoming Schnorr signature scheme multikey signatures will be indistinguishable from single key.  
 
-#### Pros
-- Can provide higher resistance to loss from theft
-- Transactions look identical and have same cost as single key wallets on chain
-
-#### Cons 
-- Requires precise coordination of key-shares when signing
-- Few advantages over multi-key setups with Schnorr signatures
-- Individual product implementations not interoperable
-
 {% include image.html
    image = "/assets/images/guide/private-key-management/schemes/threshold-signatures.jpg"
    retina = "/assets/images/guide/private-key-management/schemes/threshold-signatures@2x.jpg"
@@ -236,6 +227,15 @@ Some benefits over a multikey setup include greater privacy, as a transaction us
    width = 800
    height = 400
 %}
+
+#### Pros
+- Can provide higher resistance to loss from theft
+- Transactions look identical and have same cost as single key wallets on chain
+
+#### Cons 
+- Requires precise coordination of key-shares when signing
+- Few advantages over multi-key setups with Schnorr signatures
+- Individual product implementations not interoperable
 
 ### How it works
 A single private key is split into n key-shares that are distributed to several parties, devices or locations. When signing a transaction the required number of shares need to be coordinated into one valid signature. This relies on a cryptographic algorithm called [Shamir's Secret Sharing]({{ 'https://en.wikipedia.org/wiki/Shamir's_Secret_Sharing'}}) after it's creator.
@@ -268,12 +268,6 @@ This is often called multi-signature, or multisig for short and described as ‘
 
 Multi-key schemes can raise the security, since anyone needs access to more than one key to move any funds. But clearly it also increases complexity and the requirements on the user to keep even more keys securely stored and/or backed up.
 
-#### Pros 
-- Significantly increases security against theft
-
-#### Cons 
-- Adds complexity and op-sec burden for multiple private keys
-
 {% include image.html
    image = "/assets/images/guide/private-key-management/schemes/multi-key.jpg"
    retina = "/assets/images/guide/private-key-management/schemes/multi-key@2x.jpg"
@@ -282,6 +276,12 @@ Multi-key schemes can raise the security, since anyone needs access to more than
    width = 800
    height = 400
 %}
+
+#### Pros 
+- Significantly increases security against theft
+
+#### Cons 
+- Adds complexity and op-sec burden for multiple private keys
 
 ### How it works
 A software wallet-product or coordination software initiates a multi-sig wallet, choosing the number of total keys, and the number required to sign transactions. The user then adds private keys from other wallets generated elsewhere to the multisig after which the software wallet can complete the creation process. For any future transaction from the multi-sig wallet the required amount of co-signers need to sign (using Partially Signed Bitcoin Transactions - PSBT from [BIP174]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki'}})) before any transaction is valid.
