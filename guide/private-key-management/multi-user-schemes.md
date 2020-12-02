@@ -60,3 +60,7 @@ Just like with personal schemes, external signing devices can be used to replace
 
 **Products that use this scheme** 
 - ? Specter (Revault is not a product but a project in this direction)
+
+---
+
+Next up, common [principles]({{ '/guide/private-key-management/principles/' | relative_url }}) we should strive to follow.

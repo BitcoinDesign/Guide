@@ -307,3 +307,7 @@ A software wallet-product or coordination software initiates a multi-sig wallet,
 - [Unchained Capital/Caravan]({{ 'https://unchained-capital.com'}}) co-managed
 - [Armory]({{ 'https://btcarmory.com'}})
 - [Guarda]({{ 'https://guarda.com'}})
+
+---
+
+Next, let's look at [shared schemes]({{ '/guide/private-key-management/multi-user-schemes/' | relative_url }}).

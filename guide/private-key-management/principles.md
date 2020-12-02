@@ -49,3 +49,7 @@ While it is possible to own and store immense wealth in a non-custodial bitcoin 
 (Mention examples; Minimum expectations, relevant BIPs, bonus goals...)
 
 *(Illustration: Automatic cloud backup → 2-of-3 multisig → 3-of-5 multisig)*
+
+***
+
+OK, let's have a look at some [case studies]({{ '/guide/private-key-management/case-studies/' | relative_url }}).

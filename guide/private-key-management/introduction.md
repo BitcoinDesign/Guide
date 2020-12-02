@@ -52,3 +52,7 @@ A look at some hypothetical use-case categories and what might be suitable appro
 **[Appendix]({{ '/guide/private-key-management/appendix/' | relative_url }})**
 
 Peripheral information regarding private key management and special cases.
+
+---
+
+Let's get started with an overview of private key management [schemes]({{ '/guide/private-key-management/schemes/' | relative_url }}).
