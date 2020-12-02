@@ -33,7 +33,7 @@ Illustration sources
    retina = "/assets/images/guide/getting-started/user-research/user-research-header@2x.jpg"
    mobile = "/assets/images/guide/getting-started/user-research/user-research-header-mobile.jpg"
    mobileRetina = "/assets/images/guide/getting-started/user-research/user-research-header-mobile@2x.jpg"
-   alt-text = ""
+   alt-text = "Illustration of post-its on a wall with terms related to user research written on them"
    caption = ''
    width = 1600
    height = 600
@@ -76,7 +76,7 @@ There are many ways in which research and development are similar to other digit
 {% include image.html
    image = "/assets/images/guide/getting-started/user-research/global-audience.jpg"
    retina = "/assets/images/guide/getting-started/user-research/global-audience@2x.jpg"
-   alt-text = ""
+   alt-text = "Illustration of a globe with scattered pins"
    width = 400
    height = 400
    layout = "float-right-desktop"
@@ -122,7 +122,7 @@ While we cannot know who is directly responsible for the activity, we can analyz
 {% include image.html
    image = "/assets/images/guide/getting-started/user-research/adoption.jpg"
    retina = "/assets/images/guide/getting-started/user-research/adoption@2x.jpg"
-   alt-text = ""
+   alt-text = "Chart showing the technology adoption curve"
    width = 400
    height = 400
    layout = "float-right-desktop"

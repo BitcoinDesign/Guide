@@ -26,7 +26,7 @@ Illustration sources
    retina = "/assets/images/guide/getting-started/personal-finance/personal-finance@2x.jpg"
    mobile = "/assets/images/guide/getting-started/personal-finance/personal-finance-mobile.jpg"
    mobileRetina = "/assets/images/guide/getting-started/personal-finance/personal-finance-mobile@2x.jpg"
-   alt-text = ""
+   alt-text = "Bar chart showing various spending categories"
    caption = ""
    width = 1600
    height = 600
@@ -98,7 +98,7 @@ Most stores (online and offline) don't accept bitcoin, so buying coffee is not a
 {% include image.html
    image = "/assets/images/guide/getting-started/personal-finance/groceries.jpg"
    retina = "/assets/images/guide/getting-started/personal-finance/groceries@2x.jpg"
-   alt-text = "Alternative text"
+   alt-text = ""
    width = 100
    height = 100
    layout = "float-left"
@@ -116,7 +116,7 @@ The amounts involved in these transactions are higher and therefore require bett
 {% include image.html
    image = "/assets/images/guide/getting-started/personal-finance/monthly-budget-wallet-setup.jpg"
    retina = "/assets/images/guide/getting-started/personal-finance/monthly-budget-wallet-setup@2x.jpg"
-   alt-text = "Alternative text"
+   alt-text = "A hardware wallet and a laptop"
    width = 1600
    height = 800
 %}
@@ -130,7 +130,7 @@ A solution for bitcoin could be a hardware wallet with an accompanying desktop a
 {% include image.html
    image = "/assets/images/guide/getting-started/personal-finance/bandaid.jpg"
    retina = "/assets/images/guide/getting-started/personal-finance/bandaid@2x.jpg"
-   alt-text = "Alternative text"
+   alt-text = ""
    width = 100
    height = 100
    layout = "float-left"
@@ -145,7 +145,7 @@ In traditional finance, this money might get parked in a high-interest savings a
 {% include image.html
    image = "/assets/images/guide/getting-started/personal-finance/savings-wallet-setup.jpg"
    retina = "/assets/images/guide/getting-started/personal-finance/savings-wallet-setup@2x.jpg"
-   alt-text = "Alternative text"
+   alt-text = "Three hardware wallets and a laptop"
    width = 1600
    height = 800
 %}
@@ -159,7 +159,7 @@ A bitcoiner may want to set up a cold storage multi signature wallet. In this ty
 {% include image.html
    image = "/assets/images/guide/getting-started/personal-finance/car.jpg"
    retina = "/assets/images/guide/getting-started/personal-finance/car@2x.jpg"
-   alt-text = "Alternative text"
+   alt-text = ""
    width = 100
    height = 100
    layout = "float-left"
@@ -176,7 +176,7 @@ A sinking fund is a way to systematically set money aside for a planned large ex
 {% include image.html
    image = "/assets/images/guide/getting-started/personal-finance/safe.jpg"
    retina = "/assets/images/guide/getting-started/personal-finance/safe@2x.jpg"
-   alt-text = "Alternative text"
+   alt-text = ""
    width = 100
    height = 100
    layout = "float-left"
@@ -191,7 +191,7 @@ For example, [Glacier Protocol](https://glacierprotocol.org){:target="_blank"} i
 {% include image.html
    image = "/assets/images/guide/getting-started/personal-finance/glacier-protocol-wallet-setup.jpg"
    retina = "/assets/images/guide/getting-started/personal-finance/glacier-protocol-wallet-setup@2x.jpg"
-   alt-text = "Alternative text"
+   alt-text = "6 laptops, 1 smartphone and 6 USB drives"
    caption="The Glacier prototcol requires a complex hardware setup that involves 6 different computers, 6 USB drives, a smartphone, printer and various other equipment."
    width = 1600
    height = 800
@@ -206,7 +206,7 @@ Many people don’t personally custody their long-term savings. They rely on ban
 {% include image.html
    image = "/assets/images/guide/getting-started/personal-finance/stocks.jpg"
    retina = "/assets/images/guide/getting-started/personal-finance/stocks@2x.jpg"
-   alt-text = "Alternative text"
+   alt-text = ""
    width = 100
    height = 100
    layout = "float-left"

@@ -26,7 +26,7 @@ Illustration sources
    retina = "/assets/images/guide/getting-started/go@2x.jpg"
    mobile = "/assets/images/guide/getting-started/go-mobile.jpg"
    mobileRetina = "/assets/images/guide/getting-started/go-mobile@2x.jpg"
-   alt-text = ""
+   alt-text = "The word 'GO' with an arrow pointing right underneath"
    width = 1600
    height = 600
    layout = "full-width"

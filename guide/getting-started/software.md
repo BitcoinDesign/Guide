@@ -26,7 +26,7 @@ Illustration sources
    retina = "/assets/images/guide/getting-started/software/software-overview@2x.jpg"
    mobile = "/assets/images/guide/getting-started/hardware/software-overview-mobile.jpg"
    mobileRetina = "/assets/images/guide/getting-started/software/software-overview-mobile@2x.jpg"
-   alt-text = ""
+   alt-text = "Examples of several types of bitcoin software"
    caption = 'Texture by [Bilal O.](https://unsplash.com/@lightcircle){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
    width = 1600
    height = 600

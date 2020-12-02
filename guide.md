@@ -29,7 +29,7 @@ Illustration sources
    retina = "/assets/images/guide/bitcoin-island@2x.jpg"
    mobile = "/assets/images/guide/bitcoin-island-mobile.jpg"
    mobileRetina = "/assets/images/guide/bitcoin-island-mobile@2x.jpg"
-   alt-text = ""
+   alt-text = "Bitcoin island travel map"
    width = 1600
    height = 900
    layout = "full-width"

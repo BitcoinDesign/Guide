@@ -27,7 +27,7 @@ Illustration sources
    retina = "/assets/images/guide/getting-started/hardware/hardware-overview@2x.jpg"
    mobile = "/assets/images/guide/getting-started/hardware/hardware-overview-mobile.jpg"
    mobileRetina = "/assets/images/guide/getting-started/hardware/hardware-overview-mobile@2x.jpg"
-   alt-text = ""
+   alt-text = "Simplified illustrations of several types of bitcoin hardware"
    caption = ""
    width = 1600
    height = 600

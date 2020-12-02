@@ -41,7 +41,7 @@ Illustration sources
    retina = "/assets/images/guide/getting-started/open-design/open-design@2x.jpg"
    mobile = "/assets/images/guide/getting-started/open-design/open-design-mobile.jpg"
    mobileRetina = "/assets/images/guide/getting-started/open-design/open-design-mobile@2x.jpg"
-   alt-text = ""
+   alt-text = "Diverse people lingering and conversing in an open space"
    caption = 'Character designs by [Open Peeps]("https://www.openpeeps.com/"){:target="_blank" rel="nofollow"}'
    width = 1600
    height = 740

@@ -26,7 +26,7 @@ Illustration sources
    retina = "/assets/images/guide/getting-started/why-bitcoin-is-unique/why-bitcoin-is-unique@2x.jpg"
    mobile = "/assets/images/guide/getting-started/why-bitcoin-is-unique/why-bitcoin-is-unique-mobile.jpg"
    mobileRetina = "/assets/images/guide/getting-started/why-bitcoin-is-unique/why-bitcoin-is-unique-mobile@2x.jpg"
-   alt-text = ""
+   alt-text = "Four identical shapes and one unique shape"
    caption = ""
    width = 1600
    height = 500
@@ -53,7 +53,7 @@ We have already hinted at some of the unique properties of Bitcoin, but let’s 
 {% include image.html
    image = "/assets/images/guide/getting-started/why-bitcoin-is-unique/internet-money.jpg"
    retina = "/assets/images/guide/getting-started/why-bitcoin-is-unique/internet-money@2x.jpg"
-   alt-text = ""
+   alt-text = "Illustration of a dollar bill, a euro bill and a smartphone showing a one bitcoin balance"
    caption = ""
    width = 400
    height = 400
@@ -79,7 +79,7 @@ Bitcoin can be used by anyone with an internet connection, which is available to
 {% include image.html
    image = "/assets/images/guide/getting-started/why-bitcoin-is-unique/equality.jpg"
    retina = "/assets/images/guide/getting-started/why-bitcoin-is-unique/equality@2x.jpg"
-   alt-text = ""
+   alt-text = "Chart showing how the Bitcoin network relies on addresses and not real-life identities"
    caption = ""
    width = 400
    height = 400

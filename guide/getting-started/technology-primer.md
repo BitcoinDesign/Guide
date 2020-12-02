@@ -29,7 +29,7 @@ Illustration sources
 {% include image.html
    image = "/assets/images/guide/getting-started/technology/blueprint.jpg"
    retina = "/assets/images/guide/getting-started/technology/blueprint@2x.jpg"
-   alt-text = ""
+   alt-text = "Blueprint illustration of a bitcoin symbol"
    width = 1600
    height = 800
    layout = "full-width"
@@ -47,7 +47,7 @@ It can take many years to understand bitcoin in every detail, but luckily you do
 {% include image.html
    image = "/assets/images/guide/getting-started/technology/bitcoin-capitalization.jpg"
    retina = "/assets/images/guide/getting-started/technology/bitcoin-capitalization@2x.jpg"
-   alt-text = ""
+   alt-text = "Bitcoin with lowercase and uppercase spelling"
    width = 400
    height = 400
    layout = "float-right-desktop"
@@ -64,7 +64,7 @@ It's both. Lowercase bitcoin refers to the currency. So you may have 1 bitcoin i
 {% include image.html
    image = "/assets/images/guide/getting-started/technology/transaction.jpg"
    retina = "/assets/images/guide/getting-started/technology/transaction@2x.jpg"
-   alt-text = ""
+   alt-text = "Simplified illustration of a bitcoin transaction"
    width = 400
    height = 400
    layout = "float-right-desktop"
@@ -86,7 +86,7 @@ Owning a bitcoin therefore means being in control of one or more addresses that 
 {% include image.html
    image = "/assets/images/guide/getting-started/technology/addresses.jpg"
    retina = "/assets/images/guide/getting-started/technology/addresses@2x.jpg"
-   alt-text = ""
+   alt-text = "Examples of addresses in a bitcoin wallet" 
    width = 400
    height = 400
    layout = "float-right-desktop"
@@ -105,7 +105,7 @@ It is best practice to use a new address for every transaction. The Bitcoin netw
 {% include image.html
    image = "/assets/images/guide/getting-started/technology/balance.jpg"
    retina = "/assets/images/guide/getting-started/technology/balance@2x.jpg"
-   alt-text = ""
+   alt-text = "A ledger for calculating a balance"
    width = 400
    height = 400
    layout = "float-right-desktop"
@@ -124,7 +124,7 @@ To do this, a wallet application needs to know your full transaction history in 
 {% include image.html
    image = "/assets/images/guide/getting-started/technology/derivation.jpg"
    retina = "/assets/images/guide/getting-started/technology/derivation@2x.jpg"
-   alt-text = ""
+   alt-text = "Flowchart showing how addresses are derived from recovery phrases"
    width = 400
    height = 400
    layout = "float-right-desktop"
@@ -143,7 +143,7 @@ This makes backing up your wallet fairly easy, as you only need to securely stor
 {% include image.html
    image = "/assets/images/guide/getting-started/technology/address-and-private-key.jpg"
    retina = "/assets/images/guide/getting-started/technology/address-and-private-key@2x.jpg"
-   alt-text = ""
+   alt-text = "Combination of an address and a private key"
    width = 400
    height = 400
    layout = "float-right-desktop"
@@ -162,7 +162,7 @@ Wallet software typically hides private keys from users, as there is no need to 
 {% include image.html
    image = "/assets/images/guide/getting-started/technology/encryption.jpg"
    retina = "/assets/images/guide/getting-started/technology/encryption@2x.jpg"
-   alt-text = ""
+   alt-text = "Chart showing encryption and decryption of a message during communication"
    width = 400
    height = 400
    layout = "float-right-desktop"
@@ -184,7 +184,7 @@ Note that there is a strong element of identity in this mechanism, as it ensures
 {% include image.html
    image = "/assets/images/guide/getting-started/technology/signature.jpg"
    retina = "/assets/images/guide/getting-started/technology/signature@2x.jpg"
-   alt-text = ""
+   alt-text = "Illustration of a transaction signature"
    width = 400
    height = 400
    layout = "float-right-desktop"
@@ -203,7 +203,7 @@ One of the most important activities of the Bitcoin network is to verify that si
 {% include image.html
    image = "/assets/images/guide/getting-started/technology/public.jpg"
    retina = "/assets/images/guide/getting-started/technology/public@2x.jpg"
-   alt-text = ""
+   alt-text = "Several eyes looking at a bitcoin transaction"
    width = 400
    height = 400
    layout = "float-right-desktop"
@@ -223,7 +223,7 @@ No. Transactions are stored in a plain format in the Bitcoin network for anyone 
 {% include image.html
    image = "/assets/images/guide/getting-started/technology/mempool.jpg"
    retina = "/assets/images/guide/getting-started/technology/mempool@2x.jpg"
-   alt-text = ""
+   alt-text = "A user wallet pushing a transaction into the mempool"
    width = 400
    height = 400
    layout = "float-right-desktop"
@@ -241,7 +241,7 @@ Every transaction needs to be confirmed before the recipient can consider the in
 {% include image.html
    image = "/assets/images/guide/getting-started/technology/mining-a-block.jpg"
    retina = "/assets/images/guide/getting-started/technology/mining-a-block@2x.jpg"
-   alt-text = ""
+   alt-text = "Transactions moving from the mempool into a block"
    width = 400
    height = 400
    layout = "float-right-desktop"
@@ -264,7 +264,7 @@ Once a transaction is in a block that has been accepted by the network, it is co
 {% include image.html
    image = "/assets/images/guide/getting-started/technology/block.jpg"
    retina = "/assets/images/guide/getting-started/technology/block@2x.jpg"
-   alt-text = ""
+   alt-text = "Simplified block graphic containing multiple transactions"
    width = 400
    height = 400
    layout = "float-right-desktop"
@@ -281,7 +281,7 @@ Instead of processing each transaction individually, the Bitcoin network bundles
 {% include image.html
    image = "/assets/images/guide/getting-started/technology/blockchain.jpg"
    retina = "/assets/images/guide/getting-started/technology/blockchain@2x.jpg"
-   alt-text = ""
+   alt-text = "Several blocks chained together via their hashes"
    width = 400
    height = 400
    layout = "float-right-desktop"
@@ -298,7 +298,7 @@ This term refers to the linking of blocks by embedding a hash (a digital fingerp
 {% include image.html
    image = "/assets/images/guide/getting-started/technology/hashing.jpg"
    retina = "/assets/images/guide/getting-started/technology/hashing@2x.jpg"
-   alt-text = ""
+   alt-text = "Example of a message and it's hash"
    caption = "Example of a SHA-256 hash."
    width = 400
    height = 400
@@ -318,7 +318,7 @@ Unlike encryption, a hash does not contain the original data and the hashing pro
 {% include image.html
    image = "/assets/images/guide/getting-started/technology/node.jpg"
    retina = "/assets/images/guide/getting-started/technology/node@2x.jpg"
-   alt-text = ""
+   alt-text = "Several computers connected to form a network"
    width = 400
    height = 400
    layout = "float-right-desktop"
@@ -342,7 +342,7 @@ These are some of the basic technological concepts that make Bitcoin work. Each 
 {% include image.html
    image = "/assets/images/guide/getting-started/technology/whitepaper.jpg"
    retina = "/assets/images/guide/getting-started/technology/whitepaper@2x.jpg"
-   alt-text = ""
+   alt-text = "Illustration of the first page of the Bitcoin white paper"
    width = 400
    height = 400
    layout = "float-right-desktop"

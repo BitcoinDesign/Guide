@@ -26,7 +26,7 @@ Illustration sources
    retina = "/assets/images/guide/getting-started/usage-life-cycle/usage-life-cycle@2x.jpg"
    mobile = "/assets/images/guide/getting-started/usage-life-cycle/usage-life-cycle-mobile.jpg"
    mobileRetina = "/assets/images/guide/getting-started/usage-life-cycle/usage-life-cycle-mobile@2x.jpg"
-   alt-text = ""
+   alt-text = "Abstract illustrations of phases in the usage life cycle"
    caption = ""
    width = 1600
    height = 600

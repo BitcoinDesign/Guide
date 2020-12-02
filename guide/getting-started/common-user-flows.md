@@ -30,7 +30,7 @@ Illustration sources
    retina = "/assets/images/guide/getting-started/common-user-flows/common-user-flows@2x.jpg"
    mobile = "/assets/images/guide/getting-started/common-user-flows/common-user-flows-mobile.jpg"
    mobileRetina = "/assets/images/guide/getting-started/common-user-flows/common-user-flows-mobile@2x.jpg"
-   alt-text = ""
+   alt-text = "Notebook with handwritten user actions"
    caption = 'Notebook photo by [Mike Tinnion](https://unsplash.com/@m15ky){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
    width = 1600
    height = 600
@@ -75,7 +75,7 @@ Here are two different examples of webpages for downloading bitcoin wallet softw
 {% include image.html
    image = "/assets/images/guide/getting-started/common-user-flows/app-store-bluewallet.jpg"
    retina = "/assets/images/guide/getting-started/common-user-flows/app-store-bluewallet@2x.jpg"
-   alt-text = ""
+   alt-text = "Blue Wallet app store download page"
    caption = '<a href="https://apps.apple.com/us/app/bluewallet-bitcoin-wallet/id1376878040" target="_blank">BlueWallet landing page</a> on the App Store'
    width = 400
    height = 480
@@ -84,7 +84,7 @@ Here are two different examples of webpages for downloading bitcoin wallet softw
 {% include image.html
    image = "/assets/images/guide/getting-started/common-user-flows/bitcoincore-com.jpg"
    retina = "/assets/images/guide/getting-started/common-user-flows/bitcoincore-com@2x.jpg"
-   alt-text = ""
+   alt-text = "bitcoincore.org download page"
    caption = '<a href="https://bitcoincore.org/" target="_blank">bitcoincore.org</a>'
    width = 400
    height = 480
@@ -123,7 +123,7 @@ The example below shows a series of approaches:
 {% include image.html
    image = "/assets/images/guide/getting-started/common-user-flows/blockchain-com-onboarding.jpg"
    retina = "/assets/images/guide/getting-started/common-user-flows/blockchain-com-onboarding@2x.jpg"
-   alt-text = ""
+   alt-text = "Screenshots of the first-time user experience of the blockchain.com bitcoin wallet"
    caption = 'Onboarding screens of the <a href="https://www.blockchain.com/wallet" target="_blank">blockchain.com wallet</a> as of September 2020'
    width = 1024
    height = 630
@@ -269,7 +269,7 @@ Once a user has requested a payment, they are naturally interested in knowing wh
 {% include image.html
    image = "/assets/images/guide/getting-started/common-user-flows/receive-notification.jpg"
    retina = "/assets/images/guide/getting-started/common-user-flows/receive-notification@2x.jpg"
-   alt-text = "Interface design examples of two send screens with different levels of complexity"
+   alt-text = "Smartphone notification about an incoming transaction"
    width = 400
    height = 158
    layout = "float-right"

@@ -30,7 +30,7 @@ Since Bitcoin does not have a central authority, there is no specific symbol or 
 {% include image.html
    image = "/assets/images/guide/getting-started/visual-language/satoshi-2010.png"
    retina = "/assets/images/guide/getting-started/visual-language/satoshi-2010@2x.png"
-   alt-text = ""
+   alt-text = "The original Bitcoin symbol from 2010"
    width = 140
    height = 140
    layout = "float-left"
@@ -46,7 +46,7 @@ This original icon was a golden coin with bold initial "BC" inscribed, created b
 
 {% include image.html
    image = "/assets/images/guide/getting-started/visual-language/early-bitcoin-core-wallet.jpg"
-   alt-text = ""
+   alt-text = "Screenshot of an early version of the Bitcoin Core application"
    caption = "The original logo in an early version of the Bitcoin Core wallet."
    width = 640
    height = 300
@@ -59,7 +59,7 @@ This original icon was a golden coin with bold initial "BC" inscribed, created b
 {% include image.html
    image = "/assets/images/guide/getting-started/visual-language/satoshi-update-2010.png"
    retina = "/assets/images/guide/getting-started/visual-language/satoshi-update-2010@2x.png"
-   alt-text = ""
+   alt-text = "Updated version of the Bitcoin symbool"
    width = 140
    height = 140
    layout = "float-left"
@@ -76,7 +76,7 @@ On February 24, 2010, Satoshi posted an updated icon that adopted the capital "B
 {% include image.html
    image = "/assets/images/guide/getting-started/visual-language/bitboy-2011.png"
    retina = "/assets/images/guide/getting-started/visual-language/bitboy-2011@2x.png"
-   alt-text = ""
+   alt-text = "A new version of the Bitcoin symbol that we still use today"
    width = 140
    height = 140
    layout = "float-left"
@@ -93,7 +93,7 @@ On November 1, 2010, a user named bitboy proposed a new icon and set of promotio
 {% include image.html
    image = "/assets/images/guide/getting-started/visual-language/bitboy-promotional-graphics.png"
    retina = "/assets/images/guide/getting-started/visual-language/bitboy-promotional-graphics@2x.png"
-   alt-text = ""
+   alt-text = "Promotional Bitcoin graphics like buttons and stickers"
    caption = "Promotional graphics created by bitboy."
    width = 573
    height = 567
@@ -106,7 +106,7 @@ On November 1, 2010, a user named bitboy proposed a new icon and set of promotio
 {% include image.html
    image = "/assets/images/guide/getting-started/visual-language/unicode-symbol.png"
    retina = "/assets/images/guide/getting-started/visual-language/unicode-symbol@2x.png"
-   alt-text = ""
+   alt-text = "Bitcoin unicode symbol"
    width = 140
    height = 140
    layout = "float-left"
@@ -131,7 +131,7 @@ From moon lambos to the price rollercoaster, memes naturally arise from the shee
 {% include image.html
    image = "/assets/images/guide/getting-started/visual-language/memes.jpg"
    retina = "/assets/images/guide/getting-started/visual-language/memes@2x.jpg"
-   alt-text = ""
+   alt-text = "Examples of popular bitcoin memes"
    caption = "References from top left to bottom right, <a href='http://www.brainlesstales.com/bitcoin-roller-coaster' target='_blank'>1</a>, <a href='https://www.reddit.com/r/Bitcoin/comments/1gagle/lol_new_bitcoin_billboard_in_san_jose_honey_badger/' target='_blank'>2</a>, unknown author, <a href='https://medium.com/@paulbars/magic-internet-money-how-a-reddit-ad-made-bitcoin-hit-1000-and-inspired-south-parks-art-b414ec7a5598' target='_blank'>4</a>, unknown author, unknown author."
    width = 800
    height = 421
@@ -148,7 +148,7 @@ Most likely stemming from the original depication as a gold coin, there is a com
 {% include image.html
    image = "/assets/images/guide/getting-started/visual-language/metaphors.jpg"
    retina = "/assets/images/guide/getting-started/visual-language/metaphors@2x.jpg"
-   alt-text = ""
+   alt-text = "Examples of illustrations of bitcoin as a physical coin or gold"
    caption = "References from top left to bottom right, unknown author, <a href='https://www.freepik.com/free-vector/bitcoin-design_2082416.htm' target='_blank'>2</a>, unknown author, unknown author, <a href='https://wall.alphacoders.com/big.php?i=794593' target='_blank'>4</a>, <a href='https://wall.alphacoders.com/big.php?i=939776' target='_blank'>5</a>."
    width = 800
    height = 500
@@ -165,7 +165,7 @@ Magazines, blogs and other publications often hire professional illustrators to 
 {% include image.html
    image = "/assets/images/guide/getting-started/visual-language/illustrations.jpg"
    retina = "/assets/images/guide/getting-started/visual-language/illustrations@2x.jpg"
-   alt-text = ""
+   alt-text = "Examples of professional illustrations involving bitcoin"
    caption = "References from top left to bottom right, <a href='https://www.behance.net/gallery/66922301/Cryptoshop_Spot' target='_blank'>1</a>, <a href='https://www.behance.net/gallery/16903103/INSIDE-THE-WILD-WORLD-OF-BITCOIN' target='_blank'>2</a>, <a href='https://www.behance.net/gallery/25226745/Bitcoin-Illustration-for-an-internal-corporale-mag' target='_blank'>3</a>, <a href='https://www.behance.net/gallery/55850063/Waiting-for-Bitcoin' target='_blank'>4</a>, <a href='https://www.behance.net/gallery/56839949/The-Bitcoin-Knight' target='_blank'>5</a>, <a href='https://www.behance.net/gallery/58381785/Cryptocurrency' target='_blank'>6</a>, <a href='https://www.behance.net/gallery/59591697/Miss-Currency' target='_blank'>7</a>, <a href='https://www.behance.net/gallery/59920255/WIRED-Backchannel-The-Future-of-Bitcoin' target='_blank'>8</a>, <a href='https://mercuryo.io' target='_blank'>9</a>, <a href='' target='_blank'>10</a>, <a href='https://cash.app/bitcoin' target='_blank'>11</a>."
    width = 800
    height = 608
@@ -180,7 +180,7 @@ A good way to think about the visual language of Bitcoin is of a scale that rang
 {% include image.html
    image = "/assets/images/guide/getting-started/visual-language/expression-scale.png"
    retina = "/assets/images/guide/getting-started/visual-language/expression-scale@2x.png"
-   alt-text = ""
+   alt-text = "Sequence of images showing the bitcoin symbol illustrated in mininimal and expressive ways"
    caption = ""
    width = 800
    height = 133
