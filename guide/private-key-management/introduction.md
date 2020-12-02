@@ -51,10 +51,6 @@ Every use-case and product is different but there are things that all wallet-pro
 
 A look at some hypothetical use-case categories and what might be suitable approaches for private key management schemes for each of them.
 
-**[Appendix]({{ '/guide/private-key-management/appendix/' | relative_url }})**
-
-Peripheral information regarding private key management and special cases.
-
 ---
 
 Let's get started with an overview of private key management [schemes]({{ '/guide/private-key-management/schemes/' | relative_url }}).
