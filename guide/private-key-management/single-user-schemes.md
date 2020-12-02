@@ -112,10 +112,10 @@ This scheme is suitable for target-audiences who are already familiar with bitco
 - High onboarding friction
 
 {% include image.html
-   image = "/assets/images/guide/private-key-management/illustration-placeholder.jpg"
-   retina = "/assets/images/guide/private-key-management/illustration-placeholder@2x.jpg"
-   alt-text = ""
-   caption = "Illustration of recovery-phrase."
+   image = "/assets/images/guide/private-key-management/schemes/recovery-phrase.jpg"
+   retina = "/assets/images/guide/private-key-management/schemes/recovery-phrase@2x.jpg"
+   alt-text = "Recovery-phrase illustration"
+   caption = "Recovery-phrases should be stored off-line on metal or paper backups."
    width = 800
    height = 400
 %}
