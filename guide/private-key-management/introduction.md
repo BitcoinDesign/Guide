@@ -21,6 +21,8 @@ How to contribute
 {% include picture.html
    image = "/assets/images/guide/private-key-management/private-key-management.jpg"
    retina = "/assets/images/guide/private-key-management/private-key-management@2x.jpg"
+   mobile = "/assets/images/guide/private-key-management/private-key-management-mobile.jpg"
+   mobileRetina = "/assets/images/guide/private-key-management/private-key-management-mobile@2x.jpg"
    alt-text = "Private key management chapter illustration"
    width = 1600
    height = 600

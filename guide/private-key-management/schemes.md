@@ -8,8 +8,10 @@ main_classes: -no-top-padding
 ---
 
 {% include picture.html
-   image = "/assets/images/guide/private-key-management/header-placeholder.jpg"
-   retina = "/assets/images/guide/private-key-management/header-placeholder@2x.jpg"
+   image = "/assets/images/guide/private-key-management/schemes.jpg"
+   retina = "/assets/images/guide/private-key-management/schemes@2x.jpg"
+   mobile = "/assets/images/guide/private-key-management/schemes-mobile.jpg"
+   mobileRetina = "/assets/images/guide/private-key-management/schemes-mobile@2x.jpg"
    alt-text = "Schemes header illustration"
    width = 1600
    height = 600
