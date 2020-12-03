@@ -32,9 +32,9 @@ Now let's dive in and look at the various schemes that might be suitable for a p
 %}
 
 - [Automatic cloud backup]({{ '/guide/private-key-management/single-user-schemes/#automatic-cloud-backup' | relative_url }})
-- [Recovery phrase]({{ '/guide/private-key-management/single-user-schemes/#recovery-phrase' | relative_url }})
+- [Manual backup / Recovery phrase]({{ '/guide/private-key-management/single-user-schemes/#recovery-phrase' | relative_url }})
 - [External signing device]({{ '/guide/private-key-management/single-user-schemes/#external-signing-device' | relative_url }})
-- [Threshold signatures/Key-sharing]({{ '/guide/private-key-management/single-user-schemes/#threshold-signatures--key-sharing' | relative_url }})
+- [Threshold signatures / Key-sharing]({{ '/guide/private-key-management/single-user-schemes/#threshold-signatures--key-sharing' | relative_url }})
 - [Multi-key]({{ '/guide/private-key-management/single-user-schemes/#multi-key' | relative_url }})
 
 ***
@@ -95,9 +95,9 @@ This makes the backup accessible by the user on a new device, should they lose t
 
 ***
 
-## Recovery-phrase
+## Manual backup / Recovery-phrase
 
-Recovery phrases have been the most common private key management scheme by far, since its proposal with [BIP39]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki'}}) in 2013. If you have used any non-custodial bitcoin product you are likely to have experienced the onboarding requirements. 
+Manual backup of the recovery phrase have been the most common private key management scheme by far, since its proposal with [BIP39]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki'}}) in 2013. If you have used any non-custodial bitcoin product you are likely to have experienced the onboarding requirements of manual backups. 
 
 After creating a new wallet, you will be asked to manually backup a 12 (or 24 in rare instances) word recovery-phrase to a *safe place*. As the next step it will often ask you to verify that you did save it by having you input the phrase in the correct order. 
 

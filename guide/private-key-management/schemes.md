@@ -73,9 +73,9 @@ We can divide the options up into personal and shared wallet schemes. The follow
 
 ### [Personal]({{ '/guide/private-key-management/single-user-schemes/' | relative_url }})
 - **Automatic cloud backup** - no user action required for backup
-- **Recovery phrase** - manual backup of a phrase of words
+- **Manual backup / Recovery phrase** - manual backup of a phrase of words
 - **External signing device** - keys are held on a separate device
-- **Threshold signatures/Key-sharing** - one key is split and distributed
+- **Threshold signatures / Key-sharing** - one key is split and distributed
 - **Multi-key** - several keys jointly control the wallet
 
 ### [Shared]({{ '/guide/private-key-management/multi-user-schemes/' | relative_url }})
