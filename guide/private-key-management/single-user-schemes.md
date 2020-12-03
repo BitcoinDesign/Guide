@@ -89,9 +89,11 @@ This makes the backup accessible by the user on a new device, should they lose t
 - Additional user authentication (biometrics, pin)
 
 **Products that use this scheme** 
-- [Photon SDK]({{ 'https://photonsdk.org'}}) (for use by other wallets, in development)
-- [Casa]({{ 'https://keys.casa'}})  mobile single key 
-- [Paymobil]({{ 'https://www.paymobil.co'}}) (not a bitcoin wallet) 
+- [Photon SDK]({{ 'https://photonsdk.org'}}) - for use by other wallets, in development
+- [Casa]({{ 'https://keys.casa'}})
+- [Pine]({{ https://pine.pm }}) - Lightning, beta
+- [Paymobil]({{ 'https://www.paymobil.co'}}) - not a bitcoin wallet
+- Bitcoin.com mobile wallet
 
 ***
 
@@ -101,7 +103,7 @@ Manual backup of the recovery phrase have been the most common private key manag
 
 After creating a new wallet, you will be asked to manually backup a 12 (or 24 in rare instances) word recovery-phrase to a *safe place*. As the next step it will often ask you to verify that you did save it by having you input the phrase in the correct order. 
 
-This scheme is suitable for target-audiences who are already familiar with bitcoin and procedures for secure off-line backups of the recovery phrase. It is not suited for complete beginners. When told to store the backup in a safe way off-line, bitcoin-beginners in reality often take a screenshot, write it down in plain text somewhere on their mobile device, computer or a piece of paper on the fridge, or simply don’t back it up at all. This has the risk of achieving the opposite of what we want; high risk of self-inflicted loss and low to medium security in terms of third party theft.
+This scheme is suitable for target-audiences who are already familiar with bitcoin and procedures for secure off-line backups of the recovery-phrase. It is not suited for complete beginners. When told to store the backup in a safe way off-line, bitcoin-beginners in reality often take a screenshot, write it down in plain text somewhere on their mobile device, computer or a piece of paper on the fridge, or simply don’t back it up at all. This has the risk of achieving the opposite of what we want; high risk of self-inflicted loss and low to medium security in terms of third party theft.
 
 {% include image.html
    image = "/assets/images/guide/private-key-management/schemes/recovery-phrase.jpg"
@@ -123,9 +125,9 @@ This scheme is suitable for target-audiences who are already familiar with bitco
 ### How it works
 The wallet-product will generate a 12 or 24 word phrase (seed / recovery phrase) from which all the wallet’s keys can be derived. This means the user can have access to the wallet from any compatible wallet-product with the phrase, even if they lose the device or software.
 
-This can be an effective way to reduce the risk of loss from theft if the backup is off-line in a safe place, but puts more of the op-sec burden on the individual user. The security and risk will only be as good as how they backup the recovery phrase. To get the best security out of recovery phrases they should be in several redundant secure places off-line. You also need to take resistance to physical theft, fire and other destructive events into account. A fair amount of effort and knowledge is required for this. 
+This can be an effective way to reduce the risk of loss from theft if the backup is off-line in a safe place, but puts more of the op-sec burden on the individual user. The security and risk will only be as good as how they backup the recovery phrase. To get the best security out of recovery phrases they should be in several redundant and secure places off-line. You also need to take resistance to physical theft, fire and other destructive events into account. A fair amount of effort and knowledge is required for this. 
 
-A full guide to manual backup best practices for users is out of scope for this chapter but [this resource I need to identify] is a good starting point.
+A full guide to manual backup best practices for users is out of scope for this chapter but the [Do's and Dont's of Bitcoin key management]({{ https://blog.keys.casa/the-dos-and-donts-of-bitcoin-key-management/ }}) is a good starting point.
 
 
 ### Best practice
@@ -145,6 +147,9 @@ A full guide to manual backup best practices for users is out of scope for this 
 - Additional user authentication (biometrics use, pin or password)
 - Cloud backup options
 
+**Do's** 
+- Explain what a recovery-phrase is, and provide a guide how to do *safe off-line backups* BEFORE the user is exposed to the phrase or can start using the wallet
+
 **Products that use this scheme** 
 Most bitcoin wallets, including; 
 - [Bluewallet]({{ 'https://bluewallet.io'}})
@@ -152,6 +157,7 @@ Most bitcoin wallets, including;
 - [Wasabi]({{ 'https://wasabiwallet.io'}})
 - [Blockstream Green]({{ 'https://blockstream.com/green/'}})
 - [Coinbase Wallet]({{ 'https://wallet.coinbase.com'}})
+- [Rise]({{ https://www.risewallet.com }})
 
 ***
 
@@ -258,6 +264,7 @@ A single private key is split into n key-shares that are distributed to several 
 - [ZenGo]({{ 'https://zengo.com'}})
 - [Hexa]({{ 'https://hexawallet.io'}})
 - [Bitfreeze]({{ 'https://medium.com/@bitfreeze/threshold-signatures-multisig-is-not-enough-e1ba468f6102'}}) - No longer in active development
+- [Spatium]({{ https://spatium.net }})
 
 ***
 
