@@ -137,7 +137,7 @@ A common real-world use case for shared accounts are couples managing their mont
 
 The other person does not need to co-sign every transaction, but we might want a *spending limit*, above which both parties need to approve the transaction. All multi-key setups are represented by bitcoin scripts on the blockchain, and the spending limit can be introduced as a conditional for both the 1-of-2 or 2-of-3 scheme.
 
-Although the 1-of-2 scheme could work here, it offers lower protection against both theft and self-inflicted loss, unless rigorous sovereign backups are implemented. For this example we will choose the 2-of-3 scheme, but still have to decide on who will hold the third key, and the location of the other two. 
+Although the 1-of-2 scheme could work here, it offers lower protection against both theft and self-inflicted loss, unless rigorous manual backups are implemented. For this example we will choose the 2-of-3 scheme, but still have to decide on who will hold the third key, and the location of the other two. 
 
 Depending on how tailor-made or interoperable we want this setup could be we have many options for the location of the three keys, including:
 

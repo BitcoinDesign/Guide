@@ -26,7 +26,7 @@ The use-cases for shared schemes include spouses managing a joint account, group
 
 ## Multi-key
 
-As we saw with multi-key setups for personal use, a multi-key wallet has several controlling keypairs attached, so called co-signers. The number of keys and required co-signers will depend on the use case. With spouses sharing a ‘joint account’, a simple 1-of-2 multi-key setup might suffice, meaning there are two keys but only one is required to sign for a transaction to be valid. At the other end of a spectrum a company might require a more complex 3-of-5 setup, requiring three of the five co-signers to approve any transaction. 
+As we saw with multi-key setups for personal use, a multi-key wallet has several controlling keypairs attached, so called co-signers. The number of keys and required co-signers will depend on the use case. With spouses sharing a *joint account*, a simple 1-of-2 multi-key setup might suffice, meaning there are two keys but only one is required to sign for a transaction to be valid. At the other end of a spectrum a company might require a more complex 3-of-5 setup, requiring three of the five co-signers to approve any transaction. 
 
 Just like with personal schemes, external signing devices can be used to replace one or many of the keys used for a shared multi-key setup. While this can increase security if managed correctly, the same caveat applies in terms of adding significant complexity. 
 
@@ -40,11 +40,11 @@ Just like with personal schemes, external signing devices can be used to replace
 %}
 
 #### Pros 
-- Allows several people to access and/or control a bitcoin wallet
+- Allows several people to access and control a bitcoin wallet
 - Can tailor requirements for multiple co-signers and access
 
 #### Cons 
-- Has significant complexity and op-sec burden for multiple private keys, each of which might need good sovereign backup scheme
+- Has significant complexity and op-sec burden for multiple private keys, each of which might need a good manual backup scheme
 
 ### How it works 
 … (similar to single-user multi-key, , but increased setup complexity due to multiple people involved) 

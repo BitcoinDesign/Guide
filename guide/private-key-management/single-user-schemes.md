@@ -113,7 +113,7 @@ This scheme is suitable for target-audiences who are already familiar with bitco
 %}
 
 #### Pros 
-- Sovereign backups done well can provide very high security
+- Manual backups done well can provide very high security
 - Good interoperability
 
 #### Cons 
@@ -123,20 +123,20 @@ This scheme is suitable for target-audiences who are already familiar with bitco
 ### How it works
 The wallet-product will generate a 12 or 24 word phrase (seed / recovery phrase) from which all the wallet’s keys can be derived. This means the user can have access to the wallet from any compatible wallet-product with the phrase, even if they lose the device or software.
 
-This can be an effective way to reduce the risk of loss from theft if the backup is off-line in a safe place, but puts more of the op-sec burden on the individual user. The security and risk will only be as good as how they backup the recovery phrase. To get the best security out of recovery phrases they should be in several redundant secure places off-line. You also need to take resistance to physical theft, fire and other destructive events into account. A fair amount of effort and knowledge is required for this. We can call this approach sovereign backup, to differentiate it from cloud backup. 
+This can be an effective way to reduce the risk of loss from theft if the backup is off-line in a safe place, but puts more of the op-sec burden on the individual user. The security and risk will only be as good as how they backup the recovery phrase. To get the best security out of recovery phrases they should be in several redundant secure places off-line. You also need to take resistance to physical theft, fire and other destructive events into account. A fair amount of effort and knowledge is required for this. 
 
-A full guide to sovereign best practices for users is out of scope for this chapter but [this resource I need to identify] is a good starting point.
+A full guide to manual backup best practices for users is out of scope for this chapter but [this resource I need to identify] is a good starting point.
 
 
 ### Best practice
 
 **When to use** 
-- When target audience is likely to be knowledgeable and implement good sovereign backup schemes
+- When target audience is likely to be knowledgeable and implement good manual backup schemes
 - When storing medium amounts
 - When risk of loss from theft is higher than self-inflicted loss
 
 **When not to use**
-- When users are new to bitcoin and unlikely to implement good sovereign backups
+- When users are new to bitcoin and unlikely to implement good manual backups
 - For use-cases with small amounts
 - When onboarding is likely to happen outside of users' homes
 
@@ -177,7 +177,7 @@ A wallet-product that supports external signing can remove the need for the priv
 #### Cons
 - Purchase of specialized hardware required
 - Requires further effort and knowledge to setup correctly
-- Still requires a good sovereign backup for redundancy
+- Still requires a good manual backup for redundancy
 
 ## How it works
 The external device can generate and store a keypair offline, the private key has thus never been known outside the device. A softare wallet can connect to the signing device and act as an interface, or handle transactiosn airgapped from the device. 
@@ -189,7 +189,7 @@ When a transaction needs to be signed, the software submits a partially signed b
 **When to use** 
 - When storing medium to large amounts
 - When risk of loss from theft is higher than loss from negligence 
-- When target audience is likely to be very knowledgeable or motivated to learn good sovereign backup schemes, 
+- When target audience is likely to be very knowledgeable or motivated to learn good manual backup schemes, 
 
 **When not to use** 
 - When most users are new to bitcoin and unlikely to implement good backup schemes
