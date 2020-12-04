@@ -65,11 +65,11 @@ You may already be familar with key fobs from your bank or work. They are small 
 
 Hardware wallets for bitcoin play a similar role but with several differences. Similar to key fobs, they securely store an authentication mechanism and isolate it from other devices and networks. In the case of bitcoin, these are the seed, associated keys and all functions that require direct interaction with them.
 
-Because hardware wallets are so optimized for this specific uses case, they have very small screens and limited input options. Most interactions with them happen via desktop software that is also provided by the manufacturer. So users perform most wallet interactions on their desktops, and the application sends only specific requests to the hardware wallet to verify or sign data. This provides a great balance of security and convenience, and keeps hardware wallets generally affordable for most use cases.
+Because hardware wallets are so optimized for this specific use case, they have very small screens and limited input options. Most interactions with them happen via desktop software that is also provided by the manufacturer. So users perform most wallet interactions on their desktops, and the application sends only specific requests to the hardware wallet to verify or sign data. This provides a great balance of security and convenience, and keeps hardware wallets generally affordable for most use cases.
 
 ## Nodes
 
-Thousands of computers participate in the Bitcoin network. They are called nodes and continuously exchange, verify and compare transaction data. Running your own node, instead of relying on a third-party node, has the benefit that transactions are getting validated by your own personal device. Nodes also improve privacy and help secure the network. Several DIY and consumer hardware products have been created to make it easy to run your own node on a dedicated device.
+Thousands of computers participate in the Bitcoin network. They are called nodes and continuously exchange, verify and compare transaction and block data. Running your own node, instead of relying on a third-party node, has the benefit that transactions are getting validated by your own personal device. Nodes also improve privacy and help secure the network. Several DIY and consumer hardware products have been created to make it easy to run your own node on a dedicated device.
 
 {% include picture.html
    image = "/assets/images/guide/getting-started/hardware/node-hardware.jpg"

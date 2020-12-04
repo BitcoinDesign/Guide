@@ -35,7 +35,7 @@ Illustration sources
 
 # Software overview
 
-Finance is complex and there are many use cases, from giving weekly allowance to a child and selling goods in a store to managing multi-billion dollar retirement funds and hectic day trading. So we end up with many different applications solutions for the various uses cases. Bitcoin being a global currency adds another layer of complexity as the software may need to be adapted to different languages, cultures and legal frameworks. When designing, it's a good idea to have a feel for this landscape and know where your product fits. Here is an overview of several common and specialized categories.
+Finance is complex and there are many use cases, from giving weekly allowance to a child and selling goods in a store to managing multi-billion dollar retirement funds and hectic day trading. So we end up with many different application solutions for the various use cases. Bitcoin being a global currency adds another layer of complexity as the software may need to be adapted to different languages, cultures and legal frameworks. When designing, it's a good idea to have a feel for this landscape and know where your product fits. Here is an overview of several common and specialized categories.
 
 ## Command-line interfaces (CLI)
 

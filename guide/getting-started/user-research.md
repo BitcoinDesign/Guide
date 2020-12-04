@@ -86,7 +86,7 @@ Most digital products start with a specific country, culture, language or legal 
 
 This has resulted in diverse and lively online commmunities that are deeply invested in bitcoin. Designers and researchers have vast amounts of public conversation at their hands that allow them to better understand user needs and issues. These communities are also great for direct interaction to brainstorm ideas, get feedback on potential solutions, and get users involved in the design process.
 
-Some of the following links have been around for a long day and provide a huge archive and history of information and conversation around bitcoin:
+Some of the following links have been around for a long time and provide a huge archive and history of information and conversation around bitcoin:
 - [Bitcoin on Github](https://github.com/bitcoin)
 - [Bitcoin mailing list](https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev)
 - [Bitcointalk](https://bitcointalk.org/)
