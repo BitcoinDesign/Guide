@@ -39,11 +39,9 @@ We need to inform our users of these risks and provide mechanisms that help them
 
 ## Lightning Payments
 
-One way users can think about onchain payments is like a bank where cross border payments are usually slower. The bank is where you store your value as it gives you better security. Lightning Payments Network on the other hand works like mobile money or a digital wallet which you fund from your bank for daily payments.
+Lightning Network is part of the bitcoin ecosystem that allows for near-instant payments with much lower fees.
 
-Lightning Payments is part of the bitcoin ecosystem that allows for near-instant payments with much lower fees. While onchain transactions can take 10 mins or more to confirm — Lighting Payments are near-instant and can be used even for micro-payments.
-
-Unlike onchain transactions though, both participants need to be online for the payment to go through. This definitely poses a problem for people with intermittent connections.
+One way you can think about onchain payments is like a bank where cross border payments are usually slower. The bank is where you store your value as it gives you better security. Lightning Payments on the other hand works like mobile money or a digital wallet which you fund from your bank for daily payments.
 
 We will also explore what are the differences between lightning payments and onchain transactions, use cases, and implications to user experience.
 
