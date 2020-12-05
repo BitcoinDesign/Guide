@@ -5,8 +5,7 @@ nav_order: 3
 has_children: true
 main_classes: -no-top-padding
 permalink: /guide/payments/introduction/
-image: /assets/images/guide/getting-started/getting-started-preview.jpg
-
+image: /assets/images/payments/introduction.png
 ---
 
 # Payments
