@@ -19,3 +19,6 @@ Everyone is welcome to join and participate.
 Our first community project, the [Bitcoin Design Guide](https://github.com/BitcoinDesign/Guide){:target="_blank"} is a free, open-source repository for anyone building non-custodial bitcoin products. The guide will eventually cover consumer wallets, merchant interactions, financial applications, and much more.
 
 If you’d like to help by providing feedback, submitting ideas, or creating content, check out the list of current [issues](https://github.com/BitcoinDesign/Guide/issues) or join us on Slack. 
+
+
+ADDING MORE STUFF HERE
