@@ -5,7 +5,7 @@
 layout: home
 ---
 
-## We are helping make [bitcoin](https://bitcoin.org){:target="_blank"} more intuitive and accessible.
+## We are helping make [bitcoin](https://bitcoin.org){:target="_blank"} amazing and cool bro.
 
 
 As bitcoin’s popularity continues to rise, it is essential that everyone be able to participate in this new economy regardless of technical expertise or geography. That can only happen if creators everywhere have the resources and community necessary to foster better bitcoin experiences.
@@ -14,7 +14,7 @@ The Bitcoin Design Community [Slack](https://bitcoindesign.slack.com){:target="_
 
 Everyone is welcome to join and participate.
 
-### The Bitcoin Design Guide
+### The Bitcoin Design Guide rocks!
 
 Our first community project, the [Bitcoin Design Guide](https://github.com/BitcoinDesign/Guide){:target="_blank"} is a free, open-source repository for anyone building non-custodial bitcoin products. The guide will eventually cover consumer wallets, merchant interactions, financial applications, and much more.
 
