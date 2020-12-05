@@ -8,26 +8,43 @@ permalink: /guide/payments/introduction/
 image: /assets/images/payments/introduction.png
 ---
 
+{% include picture.html
+   image = "/assets/images/payments/introduction.png"
+   retina = "/assets/images/payments/introduction@2x.png"
+   mobile = "/assets/images/payments/introduction.png"
+   mobileRetina = "/assets/images/payments/introduction@2x.png"
+   alt-text = ""
+   width = 1600
+   height = 900
+   layout = "full-width"
+%}
+
 # Payments
 
 ## Onchain
 
-Transactions onchain can take a bit longer to confirm. This is because the transactions get secured by the entire network of nodes and miners which pass transactions they receive to each other and validate the payments within them.
+Transactions made onchain can take mins or days to confirm — depending on the fee you pay. This is because they get secured by the entire network of nodes and miners which exchange transactions they receive to each other and validate the payments within them.
 
-### Privacy
+A common misconception people make about bitcoin is that it is anonymous. This isn't quite accurate because all transactions are public so anyone can see the entire history of transfers that ever happened going back to the very first one on [2009-01-03](https://blockstream.info/tx/4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b).
 
-A common misconception people make about bitcoin is that it is anonymous. This isn't accurate because all transactions are public so anyone can see the movements of all bitcoins that ever happened going back to the very first one on [2009-01-03](https://blockstream.info/tx/4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b).
+#### Why are transactions public?
 
-The ledger is public so everyone can have the ability to verify the entire history of transactions themselves — we then have to provide users with mechanisms to get an acceptable amount of privacy when making payments.
+They are public so that anyone can have the ability to verify the entire history of transactions themselves. We call this a permissionless system. No one needs to ask for permission to send transactions or to build experiences on top of bitcoin.
 
-We will explore what kinds of payments are suitable onchain, and the UI features that a privacy focused wallets would rely on.
+#### What about privacy?
+
+Even though all transactions are stored publicly, there is no personally identifiable information attached to them. Privacy is still super important though since every time you make a payment the person receiving can see where you funded that transaction from.
+
+We need to inform our users of these risks and provide mechanisms that help them get an acceptable amount of privacy[^1]. We will explore what kinds of payments are suitable onchain, and the UI features that a privacy focused wallet would rely on.
 
 ## Lightning Payments
 
-Just like Mobile Money, or Payment applications which are funded by a bank account — The Lightning payments network allows for faster and cheaper peer to peer payments. While onchain transactions take 10 mins to confirm — Lighting Network can be used for smaller, faster payments.
+One way users can think about onchain payments is like a bank where cross border payments are usually slower. The bank is where you store your value as it gives you better security. Lightning Payments Network on the other hand works like mobile money or a digital wallet which you fund from your bank for daily payments.
 
-Unlike bitcoin though, both participants need to be online for the payment to be facilitated. This definitely poses a problem for people with intermittent connections.
+Lightning Payments is part of the bitcoin ecosystem that allows for near-instant payments with much lower fees. While onchain transactions can take 10 mins or more to confirm — Lighting Payments are near-instant and can be used even for micro-payments.
 
-The Lightning payments network is comparable to mobile money, Venmo, Cash.app, Abeg.app, or Debit Card.
+Unlike onchain transactions though, both participants need to be online for the payment to go through. This definitely poses a problem for people with intermittent connections.
 
-We will also explore what are the differences between lightning payments and onchain transactions, use cases and user flows.
+We will also explore what are the differences between lightning payments and onchain transactions, use cases, and implications to user experience.
+
+[^1]: https://bitcoin.org/en/protect-your-privacy
