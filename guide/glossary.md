@@ -1,13 +1,29 @@
 ---
 layout: guide
 title: Glossary
-nav_order: 2
+nav_order: 4
 ---
 
 # Glossary
 {: .no_toc }
 
 ## Address
+
+An identifier of 26-35 alphanumeric characters that can be used to receive bitcoin. There are [several address formats](https://en.bitcoin.it/wiki/List_of_address_prefixes){:target="_blank"} based on different standards and use cases. These are the three most common ones:
+
+
+**[P2PKH](https://en.bitcoin.it/wiki/Transaction#Pay-to-PubkeyHash){:target="_blank"}**<br/>
+These begin with the number 1. For example: `1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2`
+
+**[P2SH](https://en.bitcoin.it/wiki/Pay_to_script_hash){:target="_blank"}**<br/>
+These start with the number 3. For example: `3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy`
+
+**[Bech32](https://en.bitcoin.it/wiki/Bech32){:target="_blank"}**<br/>
+Specified in [BIP 173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki){:target="_blank"}, these addresses start with `bc1`. For example: `bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq`
+
+Applications should make it clear to users which standards are being used. Support for formats variies, so users may need to know this information for backup and future recovery.
+
+When users enter addresses, these formats can also be used to instantly validate correctness and possibly deduct other useful information.
 
 ## Account
 
@@ -18,13 +34,13 @@ Differentiate between
 - Bitcoin wallet account
 - Service account
 
-## Bech32
-
 ## Bitcoin / bitcoin
+
+Bitcoin with a capital “B” is typically associated with Bitcoin the protocol and payment network. It is also often used to refer to as the ecosystem as a whole when writing about it in general terms. Bitcoin with a lowercase “b” written as “bitcoin” is usually associated specifically with bitcoin as the currency.
 
 ## Bitcoin Core
 
-## Bitcoin Core GUI
+A Bitcoin wallet often considered as a "reference" implementation of the Bitcoin protocol. More on the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Bitcoin_Core).
 
 ## Bitcoin improvement proposal (BIP)
 
@@ -48,15 +64,29 @@ As it is possible to trace the history of coins and see how they were previously
 
  Allow for combining multiple payments from multiple spenders into a single transaction to make it harder to determine which spender paid which recipient(s).
 
-## Descriptor
+## Output script descriptor
+
+A small piece of data that has all the information needed to generate a specific set of addresses or keys. Bundling this data in a standardized format has several benefits. It is harder to forget important configuration details, and it is more efficient than transmitting a long list of addresses or keys.
+
+{% include picture.html
+   image = "/assets/images/guide/glossary/descriptors.jpg"
+   retina = "/assets/images/guide/glossary/descriptors@2x.jpg"
+   mobile = "/assets/images/guide/glossary/descriptors-mobile.jpg"
+   mobileRetina = "/assets/images/glossary/descriptors-mobile@2x.jpg"
+   alt-text = ""
+   width = 1600
+   height = 400
+%}
 
 ## Extended private key (XPRIV)
+
+In a hierarchical deterministic wallet, all addresses and their matching private keys are derived from this extended private key.
 
 ## Extended public key (XPUB, YPUB, ZPUB)
 
 The master public key of a bitcoin account. All public addresses are generated from it. 
 
-Explain how this is used for multisig and view-only wallets.
+_Explain how this is used for multisig and view-only wallets._
 
 ### YPUB
 
@@ -77,6 +107,13 @@ When an address receives bitcoin from another address, this is called an input. 
 ## Key
 
 ## Miniscript
+
+A language for writing certain types of Bitcoin Scripts in a structured way. Miniscript is easier to read by developers, and also allows for various tools to be build to help ensure that scripts are safe, valid, and efficient.
+
+**References:**
+
+- [Bitcoin Optech](https://bitcoinops.org/en/topics/miniscript/){:target="_blank"}
+- [Introduction](https://medium.com/blockstream/miniscript-bitcoin-scripting-3aeff3853620){:target="_blank"} by Blockstream
 
 ## Multi signature wallet (Multisig)
 
@@ -146,6 +183,8 @@ An algorithm to generate cryptographic signatures. One of the benefits is that t
 ## Segregated witness (SegWit)
 
 ## Taproot
+
+A technique that makes complex multisig transactions look the same as standard transactions on the blockchain. This improves both efficiency and privacy, as multiple signatures are combined into a single one.
 
 ## Transaction
 
