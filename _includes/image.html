@@ -1,4 +1,10 @@
-<figure{% if include.layout %} class="-{{ include.layout }}"{%- endif -%}>
-    <img src="{{ include.image | relative_url }}" alt="{{ include.alt-text }}}"{% if include.retina %} srcset="{{ include.image | relative_url }} 1x, {{ include.retina | relative_url }} 2x"{%- endif -%}>
-    <figcaption class="small">{{ include.caption }}</figcaption>
+<figure{% if include.layout %} class="-{{ include.layout }}"{% endif %}>
+    <img
+    	src="{{ include.image | relative_url }}" 
+    	{% if include.retina %} srcset="{{ include.image | relative_url }} 1x, {{ include.retina | relative_url }} 2x"{% endif %}
+    	alt="{{ include.alt-text }}" 
+    	width="{{ include.width }}" 
+    	height="{{ include.height }}"
+    >
+    {% if include.caption %}<figcaption markdown="1">{{ include.caption | markdownify }}</figcaption>{% endif %}
 </figure>
