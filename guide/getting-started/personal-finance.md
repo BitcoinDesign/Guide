@@ -80,9 +80,11 @@ From a portability perspective, many of these payments happen outside of our hom
 
 For small, frequent payments we generally accept more risk in exchange for convenience. It becomes more important to quickly execute a transaction than protecting the money involved from as many attack vectors as possible. While we wouldn’t carry our life savings in our pockets, we are comfortable doing so with small amounts, as it is does not have a big impact on us if they are lost or stolen. So not only do we take much fewer security precautions, financial service providers like banks do the same. One example is that you may not need to sign or enter the PIN for credit card payments if the amount is below $25. The only thing that may be required to transact is entering a 4-digit PIN or authentication via face recognition.
 
-{% include image.html
+{% include picture.html
    image = "/assets/images/guide/getting-started/personal-finance/daily-spending-wallet-setup.jpg"
    retina = "/assets/images/guide/getting-started/personal-finance/daily-spending-wallet-setup@2x.jpg"
+   mobile = "/assets/images/guide/getting-started/personal-finance/daily-spending-wallet-setup-mobile.jpg"
+   mobileRetina = "/assets/images/guide/getting-started/personal-finance/daily-spending-wallet-setup-mobile@2x.jpg"
    alt-text = "Mobile and desktop wallets"
    caption = "For daily spending, users may use a dedicated mobile wallet they regularly refill from a primary wallet that is better secured."
    width = 1600
@@ -113,9 +115,11 @@ While grocery bills are still one-off payments and we may visit different stores
 The amounts involved in these transactions are higher and therefore require better security. While I can carry cash with me and hand it to anyone I desire directly, monthly expenses are typically done indirectly via transfers between the banks of both parties. A manual payment might require me to log into my banks website via username and password, along with a second security mechanism like [two-factor authentication](https://en.wikipedia.org/wiki/Help:Two-factor_authentication){:target="_blank"}.
 
 
-{% include image.html
+{% include picture.html
    image = "/assets/images/guide/getting-started/personal-finance/monthly-budget-wallet-setup.jpg"
    retina = "/assets/images/guide/getting-started/personal-finance/monthly-budget-wallet-setup@2x.jpg"
+   mobile = "/assets/images/guide/getting-started/personal-finance/monthly-budget-wallet-setup-mobile.jpg"
+   mobileRetina = "/assets/images/guide/getting-started/personal-finance/monthly-budget-wallet-setup-mobile@2x.jpg"
    alt-text = "A hardware wallet and a laptop"
    width = 1600
    height = 800
@@ -142,9 +146,11 @@ There are times when we are suddenly faced with a more expensive problem like a 
 
 In traditional finance, this money might get parked in a high-interest savings account or something equivalent that allows for quick low-risk withdrawal but still provides some type of return. Once the fund is set up, the money may not get touched for a long time.
 
-{% include image.html
+{% include picture.html
    image = "/assets/images/guide/getting-started/personal-finance/savings-wallet-setup.jpg"
    retina = "/assets/images/guide/getting-started/personal-finance/savings-wallet-setup@2x.jpg"
+   mobile = "/assets/images/guide/getting-started/personal-finance/savings-wallet-setup-mobile.jpg"
+   mobileRetina = "/assets/images/guide/getting-started/personal-finance/savings-wallet-setup-mobile@2x.jpg"
    alt-text = "Three hardware wallets and a laptop"
    width = 1600
    height = 800
@@ -188,9 +194,11 @@ For example, [Glacier Protocol](https://glacierprotocol.org){:target="_blank"} i
 
 </div>
 
-{% include image.html
+{% include picture.html
    image = "/assets/images/guide/getting-started/personal-finance/glacier-protocol-wallet-setup.jpg"
    retina = "/assets/images/guide/getting-started/personal-finance/glacier-protocol-wallet-setup@2x.jpg"
+   mobile = "/assets/images/guide/getting-started/personal-finance/glacier-protocol-wallet-setup-mobile.jpg"
+   mobileRetina = "/assets/images/guide/getting-started/personal-finance/glacier-protocol-wallet-setup-mobile@2x.jpg"
    alt-text = "6 laptops, 1 smartphone and 6 USB drives"
    caption="The Glacier prototcol requires a complex hardware setup that involves 6 different computers, 6 USB drives, a smartphone, printer and various other equipment."
    width = 1600
