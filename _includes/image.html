@@ -6,5 +6,5 @@
     	width="{{ include.width }}" 
     	height="{{ include.height }}"
     >
-    {% if include.caption %}<figcaption class="small">{{ include.caption }}</figcaption>{% endif %}
+    {% if include.caption %}<figcaption markdown="1">{{ include.caption | markdownify }}</figcaption>{% endif %}
 </figure>
