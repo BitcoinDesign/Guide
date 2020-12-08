@@ -58,6 +58,7 @@ Now that you have a clear picture of your use-case, target audience and risk vec
    caption = "The range of private key management schemes."
    width = 2084
    height = 982
+   layout = "full-width"
 %}
 
 {% include image.html
@@ -67,6 +68,7 @@ Now that you have a clear picture of your use-case, target audience and risk vec
    caption = "A flow-chart for picking a scheme based on use-case."
    width = 2226
    height = 1416
+   layout = "full-width"
 %}
 
 We can divide the options up into personal and shared wallet schemes. The following pages goes into more detail about each one;
