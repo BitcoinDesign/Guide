@@ -54,15 +54,41 @@ A standardized design document format for suggesting improvements to Bitcoin. Th
 
 ## Coin control
 
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/glossary/coin-selection.jpg"
+   retina = "/assets/images/guide/glossary/coin-selection@2x.jpg"
+   alt-text = "Illustration of specific coins a user has received getting chosen for a new transacton."
+   layout = "float-right-desktop"
+   width = 400
+   height = 400
+%}
+
 The act of choosing which coins (really unspent outputs (UTXOs)) to forward to another address in a transaction. Wallet can automatically choose these, but sometimes users may want to manually choose coins to send.
 
 Fees are based on transaction size, which is based on the number of outputs included. So choosing fewer outputs can reduce fees.
 
 As it is possible to trace the history of coins and see how they were previously spent, it may sometimes be warranted to not send certain coins because the recipient may be able to deduct personal information.
 
+</div>
+
 ## CoinJoin
 
+<div class="center">
+
+{% include image.html
+   image = "/assets/images/guide/glossary/coinjoin.jpg"
+   retina = "/assets/images/guide/glossary/coinjoin@2x.jpg"
+   alt-text = "Illustration of multiple senders and receives joining a single transaction."
+   layout = "float-right-desktop"
+   width = 400
+   height = 400
+%}
+
  Allow for combining multiple payments from multiple spenders into a single transaction to make it harder to determine which spender paid which recipient(s).
+
+</div>
 
 ## Output script descriptor
 
@@ -204,7 +230,20 @@ A term sometimes used for multi signature wallets.
 
 ## Wallet
 
+<div class="center">
+
+{% include image.html
+   image = "/assets/images/guide/glossary/wallet.jpg"
+   retina = "/assets/images/guide/glossary/wallet@2x.jpg"
+   alt-text = "Illustrations of different types of wallets."
+   layout = "float-right-desktop"
+   width = 400
+   height = 300
+%}
+
 This term is often used interchangeably for very different things. A user can “download a bitcoin wallet” in the app store, and then the app may offer the option to “create a new wallet” on the home screen. A software wallet may allow for browsing and sending transactions, while a hardware wallet may be limited to key storage and signing functionality.
+
+</div>
 
 ### Hardware wallet
 
