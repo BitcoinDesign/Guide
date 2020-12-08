@@ -34,7 +34,7 @@ Illustration sources
 
 # Getting started
 
-Welcome to bitcoin design, you're in for an adventure. This chapter is all about the big concepts that are helpful to be familar with when creating bitcoin products. You'll find a brief summary of each concept onn this page, click through if you would like to dig deeper into a specific topic. Note that this is not meant as a comprehensive overview of all topics bitcoin, but only the ones we think are important to know as a designer working in this space.
+Welcome to bitcoin design, you're in for an adventure. This chapter is all about the big concepts that are helpful to be familiar with when creating bitcoin products. You'll find a brief summary of each concept on this page, click through if you would like to dig deeper into a specific topic. Note that this is not meant as a comprehensive overview of all topics bitcoin, but only the ones we think are important to know as a designer working in this space.
 
 ---
 
