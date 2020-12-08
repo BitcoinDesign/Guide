@@ -40,7 +40,7 @@ Welcome to bitcoin design, you're in for an adventure. This chapter is all about
 
 **[Why bitcoin is unique]({{ '/guide/getting-started/why-bitcoin-is-unique/' | relative_url }})**
 
-The internet has opened an infinite design space for information and communication. Bitcoin adds the new dimension of transfering value that could bring similar change as previous waves of innovation.
+The internet has opened an infinite design space for information and communication. Bitcoin adds the new dimension of transferring value that could bring similar change as previous waves of innovation.
 
 ---
 
