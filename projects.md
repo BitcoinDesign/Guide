@@ -82,7 +82,7 @@ These are some of the bitcoin projects some of us are either involved in, and pr
         <p>{{- item.description -}}</p>
         <div class="links">
 	        {% for link in item.links %}
-	        	<a href="{{- link.link -}}" target="_blank">{{ link.name }}</a>
+	        	<a href="{{- link.link -}}" target="_blank" rel="noopener">{{ link.name }}</a>
 	        {% endfor %}
     	</div>
       </div>
