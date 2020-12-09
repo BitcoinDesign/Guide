@@ -5,19 +5,17 @@
 layout: home
 ---
 
-## We are an open community with the goal of improving the user experience and design of [bitcoin](https://bitcoin.org){:target="_blank"} and its ecosystem.
+## We are helping make [bitcoin](https://bitcoin.org){:target="_blank"} more intuitive and accessible.
 
 
-Bitcoin is a digital currency and was invented in 2008. Since then it has become a public good, contributed to by thousands and used by millions. Our goal is to make bitcoin easier to use by more people around the world, while always nourishing the original vision that makes bitcoin so unique.
+As bitcoin’s popularity continues to rise, it is essential that everyone be able to participate in this new economy regardless of technical expertise or geography. That can only happen if creators everywhere have the resources and community necessary to foster better bitcoin experiences.
 
-We believe that great things happen when people from many different backgrounds with different ideas and perspectives come together. Our [Slack workspace](https://bitcoindesign.slack.com){:target="_blank"} was created as an open and safe space to discuss and explore everything bitcoin and design.
+The Bitcoin Design Community [Slack](https://bitcoindesign.slack.com){:target="_blank"} is an open space to discuss and explore everything bitcoin and design. Open standards are part of our foundation, so all of our work can also be found on [Github](https://github.com/BitcoinDesign/Meta){:target="_blank"}.
 
-Open source and open design are part of our foundation, so all our work happens in public and is open for anyone to contribute to. We use [Github](https://github.com/BitcoinDesign/Meta){:target="_blank"} to organize and publish the work we produce.
-
-Community members are involved in a variety of different projects, and you are welcome to join and help.
+Everyone is welcome to join and participate.
 
 ### The Bitcoin Design Guide
 
-Our first community project is to create a [Bitcoin Design Guide](https://github.com/BitcoinDesign/Guide){:target="_blank"}. It is a free open-source community resource that helps designers, developers and others working on non-custodial bitcoin-products to create better experiences, faster. We hope that, over time, it will cover all relevant types of products, including consumer wallets, merchant interactions, exchanges and more. Better products and experiences should ultimately make it more appealing for anyone to own and use bitcoin.
+Our first community project, the [Bitcoin Design Guide](https://github.com/BitcoinDesign/Guide){:target="_blank"} is a free, open-source repository for anyone building non-custodial bitcoin products. The guide will eventually cover consumer wallets, merchant interactions, financial applications, and much more.
 
-We are early in the creation of this guide. If you'd like to help with feedback and ideas, or creating content for it, a good starting point is our planned [Table of Contents](https://github.com/BitcoinDesign/Guide#guide-content).
+If you’d like to help by providing feedback, submitting ideas, or creating content, check out the list of current [issues](https://github.com/BitcoinDesign/Guide/issues) or join us on Slack. 

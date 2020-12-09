@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Private key management
-nav_order: 1
+nav_order: 2
 has_children: true
 permalink: /guide/private-key-management/introduction/
 main_classes: -no-top-padding
