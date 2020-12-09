@@ -1,5 +1,7 @@
 # Bitcoin Design Guide
 
+![guide-builder](https://github.com/johnsBeharry/bitcoin-design-guide/workflows/guide-builder/badge.svg)
+
 This is a project overview of a design guide for bitcoin with early thoughts on what it could end up being.
 
 Like a travel guide, it provides an introduction to a “foreign place”, shows you the highlights and tells you some of the best stories. It provides facts and maps to figure out how to get around, ideas for tours and things to do. Whether you end up taking the official museum tour, clubbing all night or go on shopping sprees is still your choice. Note that these are guides, not mandates. Just like in a foreign city, you can choose to go off the path, and forge a new direction. Others may just follow in the future.
