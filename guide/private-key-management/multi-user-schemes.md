@@ -68,7 +68,7 @@ A software wallet-product or coordination software initiates a multi-sig wallet,
 
 **Products that use this scheme** 
 Few tailor-made products exist for shared wallets, but any wallet-product that supports multi-key setups can be used to initiate a shared wallet. 
-- [Revault]({{https://revault.dev}} - in development)
+- [Revault]({{https://revault.dev}}) - in development
 - [Electrum]({{ 'https://electrum.org'}})
 - [Bluewallet]({{ 'https://bluewallet.io'}})
 - [Specter]({{https://specter.solutions}})
