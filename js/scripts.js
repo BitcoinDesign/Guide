@@ -4,6 +4,7 @@ var searchDataLoading = false;
 var searchIndex = null;
 var searchOverlayVisible = false;
 var mobileMenuVisible = false;
+var figmaEmbeds = [];
 
 function toggleMenu() {
   if(mobileMenuVisible) {
@@ -173,6 +174,62 @@ function toggleSecondaryNav(event) {
   }
 }
 
+function captureFigmaEmbeds() {
+  var elements = document.getElementsByClassName("figma-embed");
+  var embed, iframe;
+  for(var i=0; i<elements.length; i++) {
+    embed = elements[i];
+    iframe = embed.getElementsByTagName('iframe')[0];
+
+    figmaEmbeds.push({
+      element: embed,
+      parent: embed.parentElement,
+      iframe: iframe,
+      width: parseInt(iframe.getAttribute('width')),
+      height: parseInt(iframe.getAttribute('height'))
+    });
+  }
+}
+
+function resizeFigmaEmbed(embed) {
+  var transform = '';
+  var newWidth = 'auto';
+  var newHeight = 'auto';
+
+  var style = window.getComputedStyle(embed.parent, null);
+  var maxWidth = parseInt(style.getPropertyValue('width').split('px').join(''));
+  var maxHeight = window.innerHeight - 200;
+
+  if(maxWidth < embed.width) {
+    var scale = maxWidth / embed.width;
+    transform = 'scale('+scale+', '+scale+') translate(-50%, -50%)';
+
+    newWidth = embed.width * scale;
+    newHeight = embed.height * scale;
+  }
+
+  if(newWidth == 'auto' || newHeight > maxHeight) {
+    newHeight = maxHeight;
+    newWidth = maxHeight * embed.width / embed.height;
+
+    scale = maxHeight / embed.height;
+    transform = 'scale('+scale+', '+scale+') translate(-50%, -50%)';
+  }
+
+  embed.iframe.style.transform = transform;
+  embed.element.style.height = newHeight + (newHeight == 'auto' ? '' : 'px');
+}
+
+function resizeFigmaEmbeds() {
+  for(var i=0; i<figmaEmbeds.length; i++) {
+    resizeFigmaEmbed(figmaEmbeds[i]);
+  }
+}
+
+window.addEventListener("resize", function(event) {
+  resizeFigmaEmbeds();
+})
+
 document.addEventListener("DOMContentLoaded", function(event) {
   var searchInput = document.getElementById("search-input");
   if(searchInput) {
@@ -188,4 +245,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   for(var i=0; i<secondaryNavListExpander.length; i++) {
     secondaryNavListExpander[i].addEventListener('click', toggleSecondaryNav);
   }
+  
+  captureFigmaEmbeds();
+  resizeFigmaEmbeds();
 });

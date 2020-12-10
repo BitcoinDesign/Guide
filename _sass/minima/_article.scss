@@ -98,6 +98,21 @@ article.guide {
       margin-left: 18px;
   }
 
+  .figma-embed {
+    overflow: hidden;
+    position: relative;
+
+    iframe {
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      box-sizing: border-box;
+      transform-origin: left top;
+      border: 1px solid rgba(black, 0.5);
+    }
+  }
+
   figure:not(.-float-left, .-float-right),
   iframe {
     margin-top: $spacing-unit;

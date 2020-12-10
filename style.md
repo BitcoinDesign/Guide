@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: guide
 title: Style
 nav_order: 99
 footer_nav: true
@@ -118,6 +118,12 @@ end
 - [ ] Hello, this is a TODO item
 - [ ] Hello, this is another TODO item
 - [x] Goodbye, this item is done
+
+### Figma embed
+
+<div class="figma-embed">
+<iframe width="450" height="1000" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FHggAJoHhLXPH0oZQEr1D4D%2FBitcoin-Design-Guide%3Fnode-id%3D166%253A0%26viewport%3D1714%252C3489%252C1%26scaling%3Dmin-zoom" allowfullscreen></iframe>
+</div>
 
 ### Small encoded image
 
