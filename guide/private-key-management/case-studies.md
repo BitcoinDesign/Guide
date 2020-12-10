@@ -47,6 +47,14 @@ A single-key scheme with [automatic cloud backup]({{ '/guide/private-key-managem
 - Upgrade-path to other schemes if funds stored increase 
 
 {% include image.html
+   image = "/assets/images/guide/private-key-management/case-studies/bash-prototype.png"
+   retina = "/assets/images/guide/private-key-management/case-studies/bash-prototype@2x.png"
+   alt-text = "Clickable Figma prototype"
+   caption = "Clickable Figma prototype"
+   link-url = "https://www.figma.com/proto/HggAJoHhLXPH0oZQEr1D4D/Bitcoin-Design-Guide?node-id=166%3A0&viewport=1714%2C3489%2C1&scaling=min-zoom"
+%}
+
+{% include image.html
    image = "/assets/images/guide/private-key-management/case-studies/case-study-daily.png"
    retina = "/assets/images/guide/private-key-management/case-studies/case-study-daily@2x.png"
    alt-text = "Outline design of key screens for case study, WIP"
