@@ -1,10 +1,12 @@
 ---
 layout: guide
 title: Contribute
+description: Find out how to get involved in Bitcoin design
 permalink: /contribute/
 main_nav: true
 nav_order: 5
 main_classes: -no-top-padding
+image: /assets/images/contribute/contribute-preview.jpg
 ---
 
 {% include picture.html
@@ -31,28 +33,27 @@ If you are not familiar with the concepts of open design, we have a [great intro
 
 ## How to get involved in the community
 
-1. [Join the community on Slack](https://join.slack.com/t/bitcoindesign/shared_invite/zt-gytq2snl-4TEWJOTKrXRCB4YLBoDunA)
-2. [Subscribe to the newsletter](https://bitcoindesign.substack.com) to stay up-to-date
-2. Read up on our [project life cycle](projects.md)
-3. Browse [issues](https://github.com/BitcoinDesign/Meta/issues) for upcoming calls and discussions around processes and coordination
-4. Subscribe to our [calendar](https://raw.githubusercontent.com/BitcoinDesign/Meta/calendar/events.ical) for calls and events we organize
+1. [Join the community on Slack](https://join.slack.com/t/bitcoindesign/shared_invite/zt-gytq2snl-4TEWJOTKrXRCB4YLBoDunA) and say hi in the [#introductions](https://bitcoindesign.slack.com/archives/C0162PV1810) channnel
+1. [Subscribe to the newsletter](https://bitcoindesign.substack.com) to stay up-to-date
+1. Read up on our [project life cycle](projects.md)
+1. Browse [issues](https://github.com/BitcoinDesign/Meta/issues) for upcoming calls and discussions around processes and coordination
+1. Subscribe to our [calendar](https://raw.githubusercontent.com/BitcoinDesign/Meta/calendar/events.ical) for calls and events we organize
 
 ## How to get involved in projects
 
 1. See the projects we are either involved in or recommend on the [projects]({{ 'projects' | relative_url }}) page
 1. Browse [issues labeled as projects](https://github.com/BitcoinDesign/Meta/issues?q=is%3Aopen+is%3Aissue+label%3Aproject)
 2. Browse and post ideas in the [#project-ideas](https://bitcoindesign.slack.com/archives/C0174N5KUF9) Slack channel
-1. See [projects](projects.md) for a few project ideas
 1. Contribute to the [Bitcoin Design Guide](https://github.com/BitcoinDesign/Guide)
 
 ## Bitcoin Design Guide
 
-- Project Intro — [Doc v2.0.0](https://docs.google.com/document/d/1YiYeRIybGmxmErCOI4Jc8Qajz3JGM1JYVfUtpzyCzSk/edit?usp=sharing)
-- Slack Channel — [#bitcoin-design-guide](https://bitcoindesign.slack.com/archives/C015856BDME)
-- Github Repository — [Guide](https://github.com/BitcoinDesign/Guide)
-- Github Project Board — [Guide/Content](https://github.com/BitcoinDesign/Guide/projects/1)
-```suggestion
-[How To Contribute to Bitcoin Design Guide video series](https://www.youtube.com/playlist?list=PLPZzDjXV0FTZwILz4uyqiJNjUX-kHWP0k)
+- [View the guide]({{ 'guide' | relative_url }})
+- Follow progress on the [project board](https://github.com/BitcoinDesign/Guide/projects/1)
+- Discuss on the [#bitcoin-design-guide](https://bitcoindesign.slack.com/archives/C015856BDME) Slack channel
+- Review code and content on the [github repository](https://github.com/BitcoinDesign/Guide)
+- Read the original [project intro](https://docs.google.com/document/d/1YiYeRIybGmxmErCOI4Jc8Qajz3JGM1JYVfUtpzyCzSk/edit?usp=sharing) document
+- Watch the [How To Contribute to the Bitcoin Design Guide](https://www.youtube.com/playlist?list=PLPZzDjXV0FTZwILz4uyqiJNjUX-kHWP0k) video series
 
 ## Further Slack channels
 
