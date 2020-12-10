@@ -1,4 +1,3 @@
-
 article.guide {
   position: relative;
 
@@ -168,6 +167,31 @@ article.guide {
       margin-bottom: 0;
       float: right;
       margin-left: 30px;
+    }
+  }
+}
+
+.footnotes {
+  padding: 30px;
+  font-size: 0.8rem;
+  margin: 60px;
+  border: 1px solid #f2f2f2;
+  box-sizing: border-box;
+  &::before {
+    content: "REFERENCES";
+    display: block;
+    margin-bottom: 10px;
+    color: var(--frontHex);
+    letter-spacing: 1px;
+  }
+  ol {
+    margin: 0;
+    list-style-position: inside;
+    li {
+      margin-left: 0;
+      p {
+        display: inline;
+      }
     }
   }
 }
