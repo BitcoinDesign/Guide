@@ -35,16 +35,12 @@ Imagine a product which tries to solve the problem of quickly and easily sending
 
 A single-key scheme with [automatic cloud backup]({{ '/guide/private-key-management/single-user-schemes/#automatic-cloud-backup' | relative_url }}) might be the best choice for the majority of users in this case. For more advanced users you could offer the option to opt-out of automatic cloud backup and instead use a recovery-phrase.
 
+<iframe style="border: 0px solid rgba(0, 0, 0, 0.1);" width="450" height="1000" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FHggAJoHhLXPH0oZQEr1D4D%2FBitcoin-Design-Guide%3Fnode-id%3D166%253A0%26viewport%3D1714%252C3489%252C1%26scaling%3Dmin-zoom" allowfullscreen></iframe>
+
 #### Design considerations 
 - Most users will be bitcoin beginners
 - Quick and easy send/receive
 - Onboarding with as little friction as possible
-
-#### Technical considerations
-- Back up encrypted recovery-phrase automatically to retain export option in the future
-- Use a platform-appropriate storage location (keychain with iCloud, Google Drive)
-- Additional user authentication to consider: biometrics, pin)
-- Upgrade-path to other schemes if funds stored increase 
 
 {% include image.html
    image = "/assets/images/guide/private-key-management/case-studies/case-study-daily.png"
@@ -55,7 +51,11 @@ A single-key scheme with [automatic cloud backup]({{ '/guide/private-key-managem
    height = 372
 %}
 
-<iframe style="border: 0px solid rgba(0, 0, 0, 0.1);" width="450" height="1000" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FHggAJoHhLXPH0oZQEr1D4D%2FBitcoin-Design-Guide%3Fnode-id%3D166%253A0%26viewport%3D1714%252C3489%252C1%26scaling%3Dmin-zoom" allowfullscreen></iframe>
+#### Technical considerations
+- Back up encrypted recovery-phrase automatically to retain export option in the future
+- Use a platform-appropriate storage location (keychain with iCloud, Google Drive)
+- Additional user authentication to consider: biometrics, pin)
+- Upgrade-path to other schemes if funds stored increase 
 
 ***
 
