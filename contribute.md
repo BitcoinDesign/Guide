@@ -33,7 +33,7 @@ If you are not familiar with the concepts of open design, we have a [great intro
 
 1. [Join the community on Slack](https://join.slack.com/t/bitcoindesign/shared_invite/zt-gytq2snl-4TEWJOTKrXRCB4YLBoDunA)
 2. [Subscribe to the newsletter](https://bitcoindesign.substack.com) to stay up-to-date
-2. Read up on our [project life cycle](Projects.md)
+2. Read up on our [project life cycle](projects.md)
 3. Browse [issues](https://github.com/BitcoinDesign/Meta/issues) for upcoming calls and discussions around processes and coordination
 4. Subscribe to our [calendar](https://raw.githubusercontent.com/BitcoinDesign/Meta/calendar/events.ical) for calls and events we organize
 
