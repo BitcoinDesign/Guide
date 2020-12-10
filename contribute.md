@@ -42,7 +42,7 @@ If you are not familiar with the concepts of open design, we have a [great intro
 1. See the projects we are either involved in or recommend on the [projects]({{ 'projects' | relative_url }}) page
 1. Browse [issues labeled as projects](https://github.com/BitcoinDesign/Meta/issues?q=is%3Aopen+is%3Aissue+label%3Aproject)
 2. Browse and post ideas in the [#project-ideas](https://bitcoindesign.slack.com/archives/C0174N5KUF9) Slack channel
-1. See [projects](Projects.md) for a few project ideas
+1. See [projects](projects.md) for a few project ideas
 1. Contribute to the [Bitcoin Design Guide](https://github.com/BitcoinDesign/Guide)
 
 ## Bitcoin Design Guide
