@@ -320,3 +320,19 @@ table {
             -ms-overflow-style: -ms-autohiding-scrollbar;
   }
 }
+
+a.footnote {
+  color: #474747;
+  padding: 0 6px;
+  font-size: 0.7rem;
+}
+
+ul.task-list {
+  list-style: none inside;
+  li {
+    margin-left: 0!important;
+      input {
+        margin: 0 1rem 0 0;
+      }
+  }
+}
