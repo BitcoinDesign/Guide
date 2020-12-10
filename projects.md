@@ -22,7 +22,7 @@ projects:
       - name: Contribute
         link: https://bitcoincore.org/en/contribute/
   - name: BTCPay Server
-    description: BTCPay Server is proudly free and open-source, built and maintained by a world-wide community of passionate contributors.
+    description: BTCPay Server is a self-hosted, open-source bitcoin payment processor, built and maintained by a world-wide community of passionate contributors.
     image: /assets/images/contribute/btcpay.svg
     links:
       - name: Site
