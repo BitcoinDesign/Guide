@@ -51,6 +51,8 @@ If you are not familiar with the concepts of open design, we have a [great intro
 - Slack Channel — [#bitcoin-design-guide](https://bitcoindesign.slack.com/archives/C015856BDME)
 - Github Repository — [Guide](https://github.com/BitcoinDesign/Guide)
 - Github Project Board — [Guide/Content](https://github.com/BitcoinDesign/Guide/projects/1)
+```suggestion
+[How To Contribute to Bitcoin Design Guide video series](https://www.youtube.com/playlist?list=PLPZzDjXV0FTZwILz4uyqiJNjUX-kHWP0k)
 
 ## Further Slack channels
 
