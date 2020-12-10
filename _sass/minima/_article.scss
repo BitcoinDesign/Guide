@@ -175,7 +175,7 @@ article.guide {
   padding: 30px;
   font-size: 0.8rem;
   margin: 60px 0 0;
-  border: 1px solid #f2f2f2;
+  border: 1px solid rgba(var(--front), 0.05);
   box-sizing: border-box;
   background: #FDFDFD;
   &::before {
