@@ -36,15 +36,15 @@ Imagine a product which tries to solve the problem of quickly and easily sending
 A single-key scheme with [automatic cloud backup]({{ '/guide/private-key-management/single-user-schemes/#automatic-cloud-backup' | relative_url }}) might be the best choice for the majority of users in this case. For more advanced users you could offer the option to opt-out of automatic cloud backup and instead use a recovery-phrase.
 
 #### Design considerations 
-- Onboarding with as little friction as possible
-- Quick and easy send/receive
 - Most users will be bitcoin beginners
+- Quick and easy send/receive
+- Onboarding with as little friction as possible
 
 #### Technical considerations
-- What is backed up (just the key, or recovery-phrase for export)
-- Storage location (keychain, iCloud, Google Drive, One Password etc.)
-- Additional user authentication (biometrics, pin)
-- Upgrade-path if funds stored increase 
+- Back up encrypted recovery-phrase automatically to retain export option in the future
+- Use a platform-appropriate storage location (keychain with iCloud, Google Drive)
+- Additional user authentication to consider: biometrics, pin)
+- Upgrade-path to other schemes if funds stored increase 
 
 {% include image.html
    image = "/assets/images/guide/private-key-management/case-studies/case-study-daily.png"
@@ -54,6 +54,8 @@ A single-key scheme with [automatic cloud backup]({{ '/guide/private-key-managem
    width = 800
    height = 372
 %}
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FHggAJoHhLXPH0oZQEr1D4D%2FBitcoin-Design-Guide%3Fnode-id%3D166%253A0%26viewport%3D1714%252C3489%252C1%26scaling%3Dmin-zoom" allowfullscreen></iframe>
 
 ***
 

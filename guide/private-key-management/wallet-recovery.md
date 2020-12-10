@@ -23,3 +23,14 @@ main_classes: -no-top-padding
 # Wallet recovery
 
 Stub for page about wallet recovery (for different schemes).
+
+## Single-key
+
+...
+
+## Multi-key
+
+bip174
+Value: The master key fingerprint as defined by BIP 32 concatenated with the derivation path of the public key. The derivation path is represented as 32-bit little endian unsigned integer indexes concatenated with each other. The number of 32 bit unsigned integer indexes must match the depth provided in the extended public key.
+https://btcguide.github.io/backup-wallet/public-keys-advanced#extended-public-key-info
+https://coldcardwallet.com/docs/multisig
