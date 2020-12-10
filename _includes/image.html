@@ -1,4 +1,5 @@
 <figure{% if include.layout %} class="-{{ include.layout }}"{% endif %}>
+	<a href="{{ include.link-url }}"></a>
     <img
     	src="{{ include.image | relative_url }}" 
     	{% if include.retina %} srcset="{{ include.image | relative_url }} 1x, {{ include.retina | relative_url }} 2x"{% endif %}
