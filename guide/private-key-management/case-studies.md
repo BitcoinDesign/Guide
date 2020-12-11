@@ -42,20 +42,13 @@ A single-key scheme with [automatic cloud backup]({{ '/guide/private-key-managem
 - Quick and easy send/receive
 - Onboarding with as little friction as possible
 
-{% include image.html
-   image = "/assets/images/guide/private-key-management/case-studies/case-study-daily.png"
-   retina = "/assets/images/guide/private-key-management/case-studies/case-study-daily@2x.png"
-   alt-text = "Outline design of key screens for case study, WIP"
-   caption = "Outline design of key screens for case study, WIP"
-   width = 800
-   height = 372
-%}
-
 #### Technical considerations
 - Back up encrypted recovery-phrase automatically to retain export option in the future
 - Use a platform-appropriate storage location (keychain with iCloud, Google Drive)
 - Additional user authentication to consider: biometrics, pin)
 - Upgrade-path to other schemes if funds stored increase 
+
+You can find a Figma file with [outline designs and a prototype here]({{https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=0%3A1}}).
 
 ***
 
