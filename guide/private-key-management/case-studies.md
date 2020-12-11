@@ -100,6 +100,8 @@ The solution in this case could be a wallet that enables the user to upgrade the
 - 2-of-3 multi-key - for seasoned users, and critical amounts
 - 3-of-5 multi-key - for really serious situations and/or very high amounts
 
+<iframe style="border: 0px solid rgba(0, 0, 0, 0.1);" width="450" height="1000" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSRWlaxbDulsacpPQn2TTri%2FCase-study-prototypes%3Fnode-id%3D15%253A270%26viewport%3D1057%252C573%252C0.23897239565849304%26scaling%3Dscale-down" allowfullscreen></iframe>
+
 #### Design considerations
 - Low friction onboarding
 - Guide the user through scheme upgrades as funds grow
@@ -107,14 +109,7 @@ The solution in this case could be a wallet that enables the user to upgrade the
 #### Technical considerations
 - Need to handle many schemes; automatic cloud backups, recovery-phrases, external signing devices, multi-key
 
-{% include image.html
-   image = "/assets/images/guide/private-key-management/illustration-placeholder.jpg"
-   retina = "/assets/images/guide/private-key-management/illustration-placeholder@2x.jpg"
-   alt-text = ""
-   caption = "Illustration of case study."
-   width = 800
-   height = 400
-%}
+You can find a prototype for this case study embedded above, and a Figma file with [outline designs here]({{https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A269}}).
 
 ***
 
