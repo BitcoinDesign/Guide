@@ -24,7 +24,7 @@ Every use-case and product is different but there are a number of things that al
 
 ## No loss of funds
 
-Even though non-custodial wallet-makers don’t technically hold their customers’ funds, and are less exposed to regulation, you are still providing a financial service product. It is essential to take the safekeeping of customers funds seriously. Regardless of how loss could occur, whether it is self-inflicted or through theft, you should have thought this through and implemented adequate measures for the risk-profile of the use-case. This includes not simply blaming a first-time bitcoin user for not backing up their recovery phase when you told them to. 
+Even though non-custodial wallet-makers don’t technically hold their customers’ funds, and are less exposed to regulation, you are still providing a financial service product. It is essential to take the safekeeping of customers funds seriously. Regardless of how loss could occur, whether it is self-inflicted or through theft, you should have thought this through and implemented adequate measures for the risk-profile of the use-case. This includes not simply blaming a first-time bitcoin user for not manually backing up their recovery phase when you told them to. 
 
 Any loss is ultimately bad for both the customer, the wallet-product maker and the whole bitcoin community. Strive for *No loss of funds*. 
 
