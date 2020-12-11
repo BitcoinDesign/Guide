@@ -48,7 +48,7 @@ Just like with personal schemes, external signing devices can be used to hold on
 - Has significant complexity and op-sec burden for multiple private keys, each of which might need a good manual backup scheme
 
 ### How it works 
-A software wallet-product or coordination software initiates a multi-sig wallet, choosing the number of total keys, and the number required to sign transactions. One user then adds private keys from other users' wallets generated elsewhere to the multisig, after which the software wallet can complete the creation process. For any future transaction from the multi-sig wallet the required amount of co-signers need to sign (using Partially Signed Bitcoin Transactions - PSBT from [BIP174]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki'}})) before any transaction is valid.
+A software wallet-application or coordination software initiates a multi-sig wallet, choosing the number of total keys, and the number required to sign transactions. One user then adds private keys from other users' wallets generated elsewhere to the multisig, after which the software wallet can complete the creation process. For any future transaction from the multi-sig wallet the required amount of co-signers need to sign (using Partially Signed Bitcoin Transactions - PSBT from [BIP174]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki'}})) before any transaction is valid.
 
 ### Best practice
 
@@ -67,7 +67,7 @@ A software wallet-product or coordination software initiates a multi-sig wallet,
 - Make sure the multi-key setup itself is backed up properly, including x-pubs for all the participating keys, fingerprint and derivation.
 
 **Products that use this scheme** 
-Few tailor-made products exist for shared wallets, but any wallet-product that supports multi-key setups can be used to initiate a shared wallet. 
+Few tailor-made products exist for shared wallets, but any wallet-application that supports multi-key setups can be used to initiate a shared wallet. 
 - [Revault]({{https://revault.dev}}) - in development
 - [Electrum]({{ 'https://electrum.org'}})
 - [Bluewallet]({{ 'https://bluewallet.io'}})

@@ -20,7 +20,7 @@ main_classes: -no-top-padding
 
 # Personal schemes
 
-Now let's dive in and look at the various schemes that might be suitable for a personal wallet-product with a single-user to understand the differences at a high level.
+Now let's dive in and look at the various schemes that might be suitable for a personal wallet-application with a single-user to understand the differences at a high level.
 
 {% include image.html
    image = "/assets/images/guide/private-key-management/schemes/personal-schemes.jpg"
@@ -41,7 +41,7 @@ Now let's dive in and look at the various schemes that might be suitable for a p
 
 ## Automatic cloud backup
 
-By using an automatic cloud backup for the private key the user is NOT required to manually backup anything when setting up a new wallet. This is sometimes also called *seedless*, as the user is never exposed to the traditional seed/recovery-phrase that is used to initiate a wallet. 
+By using an automatic cloud backup for the private key the user is NOT required to manually backup anything when setting up a new wallet. This is sometimes also called *seedless*, as the user is never exposed to the traditional *seed*, or recovery-phrase that is used to initiate a wallet. 
 
 The target audience with this scheme would be new or novice bitcoin users to whom being exposed to backing up a recovery-phrase as part of onboarding can be baffling and backfire. It could also be a starting point for a progressive security model that lets customers upgrade when the start accumulating more funds. 
 
@@ -66,7 +66,7 @@ The automatic cloud backup scheme gives users reasonable security against theft,
 - Unless the backup includes the recovery phrase users will not be able to export their wallet to another product
 
 ### How it works
-The wallet-product will generate a wallet with a keypair, then encrypt and back the key up to a location that the user is unlikely to lose access to, while hard for a malicious third party to gain access to. 
+The wallet-application will generate a wallet with a keypair, then encrypt and back the key up to a location that the user is unlikely to lose access to, while hard for a malicious third party to gain access to. 
 
 With most implementations so far, the location will be the keychain or key-value store on a mobile device that is also backed up by the OS provider such as iOS (iCloud) or Android (Google Drive). 
 
@@ -123,7 +123,7 @@ This scheme is suitable for target-audiences who are already familiar with bitco
 - High onboarding friction
 
 ### How it works
-The wallet-product will generate a 12 or 24 word phrase (seed / recovery phrase) from which all the wallet’s keys can be derived. This means the user can have access to the wallet from any compatible wallet-product with the phrase, even if they lose the device or software.
+The wallet-application will generate a 12 or 24 word phrase (seed / recovery phrase) from which all the wallet’s keys can be derived. This means the user can have access to the wallet from any compatible wallet-application with the phrase, even if they lose the device or software.
 
 This can be an effective way to reduce the risk of loss from theft if the backup is off-line in a safe place, but puts more of the op-sec burden on the individual user. The security and risk will only be as good as how they backup the recovery phrase. To get the best security out of recovery phrases they should be in several redundant and secure places off-line. You also need to take resistance to physical theft, fire and other destructive events into account. A fair amount of effort and knowledge is required for this. 
 
@@ -163,9 +163,9 @@ Most bitcoin wallets, including;
 
 ## External signing device
 
-Most common are hardware wallets who’s makers often provide their own software to pair with. But there are also third party wallet-products that support external signing, or software that can be run on off-line (air gapped) computers to perform the same function. 
+Most common are hardware wallets who’s makers often provide their own software to pair with. But there are also third party wallet-applications that support external signing, or software that can be run on off-line (air gapped) computers to perform the same function. 
 
-A wallet-product that supports external signing can remove the need for the private key to be readable by the wallet software, thereby decreasing the risk of keeping keys on a device that is likely always connected to the internet.
+A wallet-application that supports external signing can remove the need for the private key to be readable by the wallet software, thereby decreasing the risk of keeping keys on a device that is likely always connected to the internet.
 
 {% include image.html
    image = "/assets/images/guide/private-key-management/schemes/signing-devices.jpg"
@@ -188,7 +188,7 @@ A wallet-product that supports external signing can remove the need for the priv
 ## How it works
 The external device can generate and store a keypair offline, the private key has thus never been known outside the device. A softare wallet can connect to the signing device and act as an interface, or handle transactiosn airgapped from the device. 
 
-When a transaction needs to be signed, the software submits a partially signed bitcoin transaction (PSBT, defined in [BIP174]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki'}})) to the device. The user confirms on the device and the PSBT state of the transaction returned to the software wallet-product is now fully signed and can be transmitted to the blockchain. This process can also happen fully airgapped by using memory cards instead of cables or wireless connections, to keep the device offline at all times.
+When a transaction needs to be signed, the software submits a partially signed bitcoin transaction (PSBT, defined in [BIP174]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki'}})) to the device. The user confirms on the device and the PSBT state of the transaction returned to the software wallet-application is now fully signed and can be transmitted to the blockchain. This process can also happen fully airgapped by using memory cards instead of cables or wireless connections, to keep the device offline at all times.
 
 ### Best practice
 
@@ -291,7 +291,7 @@ Multi-key schemes can raise the security, since anyone needs access to more than
 - Adds complexity and op-sec burden for multiple private keys
 
 ### How it works
-A software wallet-product or coordination software initiates a multi-sig wallet, choosing the number of total keys, and the number required to sign transactions. The user then adds private keys from other wallets generated elsewhere to the multisig after which the software wallet can complete the creation process. For any future transaction from the multi-sig wallet the required amount of co-signers need to sign (using Partially Signed Bitcoin Transactions - PSBT from [BIP174]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki'}})) before any transaction is valid.
+A software wallet-application or coordination software initiates a multi-sig wallet, choosing the number of total keys, and the number required to sign transactions. The user then adds private keys from other wallets generated elsewhere to the multisig after which the software wallet can complete the creation process. For any future transaction from the multi-sig wallet the required amount of co-signers need to sign (using Partially Signed Bitcoin Transactions - PSBT from [BIP174]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki'}})) before any transaction is valid.
 
 ### Best practice
 

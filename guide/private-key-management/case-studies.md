@@ -67,7 +67,7 @@ A key question is the combination of key-storage devices and their distribution.
 - Full sovereignty (one or more purpose-built signing devices) 
 - All keys off-line (two or more purpose-built signing devices)
 
-For this case study we will go with the middle ground option which will require one purpose-built signing device such as a hardware wallet. The other two keys will be one created on the user’s main mobile device and automatically backed up to their cloud provider, and another key held by the wallet-product provider on a server for recovery. Neither of the two keys in the user’s control (mobile and signing device) will require recovery-phrase backups, although this could be offered as an option. 
+For this case study we will go with the middle ground option which will require one purpose-built signing device such as a hardware wallet. The other two keys will be one created on the user’s main mobile device and automatically backed up to their cloud provider, and another key held by the wallet-application provider on a server for recovery. Neither of the two keys in the user’s control (mobile and signing device) will require recovery-phrase backups, although this could be offered as an option. 
 
 The idea here is that the user will control the wallet through an app on their main mobile device, but when they are sending funds (paying bills etc) they will need to confirm the transaction on the purpose-built signing device.
 
