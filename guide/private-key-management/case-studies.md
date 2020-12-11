@@ -48,7 +48,7 @@ A single-key scheme with [automatic cloud backup]({{ '/guide/private-key-managem
 - Additional user authentication to consider: biometrics, pin)
 - Upgrade-path to other schemes if funds stored increase 
 
-You can find a Figma file with [outline designs and a prototype here]({{https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=0%3A1}}).
+You can find a prototype for this case study embedded above, and a Figma file with [outline designs here]({{https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=0%3A1}}).
 
 ***
 
@@ -73,6 +73,8 @@ The idea here is that the user will control the wallet through an app on their m
 
 Should they lose either their main mobile device, or the purpose-built signing device they can replace the lost key (rotate in a new key) with the help of the recovery key. However, if they lose both the mobile and signing device they will not be able to recover their funds, unless they had also backed up either of the respective recovery-phrases. 
 
+<iframe style="border: 0px solid rgba(0, 0, 0, 0.1);" width="450" height="1000" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSRWlaxbDulsacpPQn2TTri%2FCase-study-prototypes%3Fnode-id%3D6%253A11%26viewport%3D479%252C82%252C0.5%26scaling%3Dscale-down" allowfullscreen></iframe>
+
 #### Design considerations
 - Suitable for monthly transactions
 - Lots of edge cases and infrequent but important situations
@@ -83,14 +85,7 @@ Should they lose either their main mobile device, or the purpose-built signing d
 - Need to take care when backing up to include x-pubs from all keys
 - Usage could be simplified bye having hardware device designed/customized by the software maker (compare banks and their digital token signers common in Europe).
 
-{% include image.html
-   image = "/assets/images/guide/private-key-management/case-studies/case-study-current.png"
-   retina = "/assets/images/guide/private-key-management/case-studies/case-study-current@2x.png"
-   alt-text = "Outline design of key screens for case study, WIP"
-   caption = "Outline design of key screens for case study, WIP"
-   width = 800
-   height = 208
-%}
+You can find a prototype for this case study embedded above, and a Figma file with [outline designs here]({{https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=6%3A9}}).
 
 ***
 
