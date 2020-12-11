@@ -132,11 +132,6 @@ Depending on how tailor-made or interoperable we want this setup could be we hav
 
 We are looking for a low friction, easy-to-manage solution that could work for beginners so in this case we'll go with the two mobile keys and the third key held by the co-manager.
 
-{% include image.html
-   image = "/assets/images/guide/private-key-management/illustration-placeholder.jpg"
-   retina = "/assets/images/guide/private-key-management/illustration-placeholder@2x.jpg"
-   alt-text = ""
-   caption = "Illustration of case study."
-   width = 800
-   height = 400
-%}
+<iframe style="border: 0px solid rgba(0, 0, 0, 0.1);" width="450" height="1000" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSRWlaxbDulsacpPQn2TTri%2FCase-study-prototypes%3Fnode-id%3D15%253A824%26viewport%3D739%252C217%252C0.5%26scaling%3Dscale-down" allowfullscreen></iframe>
+
+You can find a prototype for this case study embedded above, and a Figma file with [outline designs here]({{https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A822}}).
