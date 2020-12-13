@@ -24,7 +24,7 @@ Despite the challenge of the fractional aspect and the abundance of digits used 
 
 #### Current adoption
 
-The most common way bitcoin is expressed is BTC (bitcoin)  with 8 decimal places. While not as common, denominations of BTC such as mBTC ("millibitcoins"), μBTC ("bits") and sat ("satoshi") are also used. The chart below illutrates how each units relate to the BTC unit.
+The most common way bitcoin is expressed is BTC (bitcoin) with 8 decimal places. While not as common, denominations of BTC such as mBTC ("millibitcoins"), μBTC ("bits") and sat ("satoshi") are also used. The chart below illustrates how each units relate to the BTC unit.
 
 | Unit     | Symbol       | Example (English) | Example (Non-English) |
 | -------- | ------------ | ----------------- | --------------------- |
