@@ -4,7 +4,6 @@ title: Units & Symbols
 nav_order: 1
 parent: Payments
 permalink: /guide/payments/units-and-symbols/
-typora-root-url: ./images
 ---
 
 # Units and symbols
