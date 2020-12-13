@@ -18,7 +18,7 @@ Bitcoin, bits , sats. The format and presentation of bitcoin values are probably
 
 #### Objective
 
-Despite the challenge of the fractional aspect and the abundance of digits used to present the value of bitcoin, the objective is to serve as a guide to format the values so they are easily scannable, quick to read, and possible to remember. It's a tall order given the challenge, but that will be the horizon to aim. 
+Despite the challenge of the fractional aspect and the abundance of digits used to present the value of bitcoin, the objective is to serve as a guide to format the values so they can easily be scanned, quick to read, and possible to remember. It's a tall order given the challenge, but that will be the horizon to aim. 
 
 
 
@@ -52,4 +52,3 @@ Set preferred unit at app level, with default set to Bitcoin (BTC):*
 Change unit contextually:
 
 ![ContextualSetting](/../../../assets/images/payments/ContextualSetting.svg)
-
