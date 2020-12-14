@@ -130,21 +130,22 @@ _ToDo: Explain how this is used for multisig and view-only wallets._
 
 ### YPUB
 
-Same as XPUB however the Y denotes that this xpub belongs to a wallet that is following the BIP49 standard. BIP49 details the derivation scheme from wrapped-segwit addresses (P2WPKH-nested-in-P2SH).
+Same as XPUB however the Y denotes that this xpub belongs to a wallet that is following the [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki){:target="_blank"} standard that details the derivation scheme for wrapped-segwit addresses (P2WPKH-nested-in-P2SH).
 
 ### ZPUB
 
-Same as YPUB though the Z denotes it is an extended public key from a segregated witness enabled wallet following BIP49. 
+Same as YPUB though the Z denotes it is an extended public key from a segregated witness enabled wallet following [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki){:target="_blank"}. 
 
 ## Initial block download (IBD)
 
-To fully verify that all transactions on the bitcoin network are valid, a full node needs to download and examine a large amount of data. This is called the initial block download, after which the node has caught up with the latest transaction activity. This can take several hours, and only after it is complete can wallets linked to the node be used.
+To fully verify that all transactions on the bitcoin network are valid, a full node needs to download and examine all previous block-data. This is called the initial block download, after which the node has caught up with the latest transaction activity. This can take several hours, and only after it is complete can wallets linked to the node be used.
 
 ## Input
 
 When an address receives bitcoin from another address, this is called an input. Transactions can include multiple inputs.
 
-## Key
+## Keys
+Bitcoin wallets and addresses are have both [public]({{ '/guide/glossary/#public-key' | relative_url }}) and [private keys]({{ '/guide/glossary/#private-key' | relative_url }}) associated to them. The private key controls access to funds and the ability to sign (approve) transactions.
 
 ## Miniscript
 
