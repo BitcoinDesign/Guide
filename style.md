@@ -11,7 +11,7 @@ Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 There should be whitespace between paragraphs.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project[^1].
 
 # [](#header-1)Header 1
 
@@ -154,3 +154,5 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ```
 The final element.
 ```
+
+[^1]: https://bitcoin.design "Footnote with a caption"
