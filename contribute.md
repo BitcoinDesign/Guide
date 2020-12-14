@@ -4,7 +4,7 @@ title: Contribute
 description: Find out how to get involved in Bitcoin design
 permalink: /contribute/
 main_nav: true
-nav_order: 5
+nav_order: 2
 main_classes: -no-top-padding
 image: /assets/images/contribute/contribute-preview.jpg
 ---
