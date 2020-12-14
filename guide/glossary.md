@@ -38,7 +38,7 @@ For example: `bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq`
 
 ## Account
 
-Just like wallet, the term account can also be used for very different things. In bitcoin wallets that follow the hierarchy described in BIP44, a bitcoin wallet can have multiple accounts, with each one having its own addresses. However, account is also oftentimes used for accounts with third-party service providers.
+Just like wallet, the term account can also be used for very different things. In bitcoin wallets that follow the hierarchy described in [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki){:target="_blank"}, a bitcoin wallet can have multiple accounts, with each one having its own addresses. However, account is also oftentimes used for accounts with third-party service providers.
 
 Differentiate between
 
@@ -47,11 +47,11 @@ Differentiate between
 
 ## Bitcoin / bitcoin
 
-Bitcoin with a capital “B” is typically associated with Bitcoin the protocol and payment network. It is also often used to refer to as the ecosystem as a whole when writing about it in general terms. Bitcoin with a lowercase “b” written as “bitcoin” is usually associated specifically with bitcoin as the currency.
+Bitcoin with a capital *B* is typically associated with Bitcoin the protocol and payment network. It is also often used to refer to as the ecosystem as a whole when writing about it in general terms. Bitcoin with a lowercase “b” written as “bitcoin” is usually associated specifically with bitcoin as the currency.
 
 ## Bitcoin Core
 
-A Bitcoin wallet often considered as a *reference implementation* of the Bitcoin protocol. More on the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Bitcoin_Core).
+A Bitcoin wallet often considered as a *reference implementation* of the Bitcoin protocol. It is the continuation of Satoshi Nakamoto's original code. More on the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Bitcoin_Core).
 
 ## BIP - Bitcoin improvement proposal
 
@@ -59,7 +59,8 @@ A standardized design document format for suggesting improvements to Bitcoin. Th
 
 - [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki){:target="_blank"}: Mnemonic code for generating deterministic keys
 - [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki){:target="_blank"}: Multi-account hierarchy for HD wallets
-- [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki){:target="_blank"}: Derivation scheme for HD wallets using the P2WPKH-nested-in-P2SH
+- [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki){:target="_blank"}: Derivation scheme for HD wallets using P2WPKH-nested-in-P2SH, nested SegWit
+- [BIP84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki){:target="_blank"}: Derivation scheme for HD wallets using P2WPKH, native SegWit
 - [BIP141](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki){:target="_blank"}: Segregated Witness, changes to transaction structure
 - [BIP173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki){:target="_blank"}: *Bech32* standard for native segregated witness addresses 
 - [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki){:target="_blank"}: Partially Signed Bitcoin Transaction Format
@@ -101,7 +102,7 @@ As it is possible to trace the history of coins and see how they were previously
    height = 400
 %}
 
- Allow for combining multiple payments from multiple spenders into a single transaction to make it harder to determine which spender paid which recipient(s). See also [PayJoin]({{ '/guide/glossary/#payjoin-p2ep' | relative_url }})
+ Allow for combining multiple payments from multiple spenders into a single transaction to make it harder to determine which spender paid which recipient(s). See also [PayJoin]('/guide/glossary/#payjoin-p2ep' | relative_url)
 
 </div>
 
