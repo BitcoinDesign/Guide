@@ -136,9 +136,12 @@ docReady(function() {
         applyNextTheme();
     });
 
-    document.getElementById('home-banner-info-next').addEventListener('click', function(event) {
-        event.preventDefault();
+    var bannerNext = document.getElementById('home-banner-info-next');
+    if(bannerNext) {
+        bannerNext.addEventListener('click', function(event) {
+            event.preventDefault();
 
-        applyNextTheme();
-    });
+            applyNextTheme();
+        });
+    }
 });

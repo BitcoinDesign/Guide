@@ -159,7 +159,7 @@ These are expert users with high expectations. They will express strong wishes, 
 
 Some users disappear at every step in the life cycle. If you understand where and why they drop off, you have a better chance at fixing those issues and hopefully getting more and more passionate, satisfied users.
 
-There are various [user research]({{ '/guide/getting-started/user research/' | relative_url }}) techniques that can help identify these types of issues.
+There are various [user research]({{ '/guide/getting-started/user-research/' | relative_url }}) techniques that can help identify these types of issues.
 
 </div>
 
