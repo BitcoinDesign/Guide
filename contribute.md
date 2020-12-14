@@ -35,7 +35,7 @@ If you are not familiar with the concepts of open design, we have a [great intro
 
 1. [Join the community on Slack](https://join.slack.com/t/bitcoindesign/shared_invite/zt-gytq2snl-4TEWJOTKrXRCB4YLBoDunA) and say hi in the [#introductions](https://bitcoindesign.slack.com/archives/C0162PV1810) channnel
 1. [Subscribe to the newsletter](https://bitcoindesign.substack.com) to stay up-to-date
-1. Read up on our [project life cycle](projects.md)
+1. Read up on our [project life cycle](https://github.com/BitcoinDesign/Meta/blob/master/Projects.md)
 1. Browse [issues](https://github.com/BitcoinDesign/Meta/issues) for upcoming calls and discussions around processes and coordination
 1. Subscribe to our [calendar](https://raw.githubusercontent.com/BitcoinDesign/Meta/calendar/events.ical) for calls and events we organize
 
@@ -59,12 +59,12 @@ If you are not familiar with the concepts of open design, we have a [great intro
 
 - [#open-design](https://bitcoindesign.slack.com/archives/C015GFYSJNA)
 - [#research](https://bitcoindesign.slack.com/archives/C015DQEPCHJ)
-- [#design-review](https://bitcoindesign.slack.com/archives/C015DQEPCHJ)
-- [#art](https://bitcoindesign.slack.com/archives/C015DQEPCHJ)
+- [#design-review](https://bitcoindesign.slack.com/archives/C019MTNFKL7)
+- [#art](https://bitcoindesign.slack.com/archives/C0193ED2HT6)
 - [#onboarding](https://bitcoindesign.slack.com/archives/C019PB6GW7M)
 - [#private-key-mgmt](https://bitcoindesign.slack.com/archives/C018RATDW82)
 - [#payments](https://bitcoindesign.slack.com/archives/C0191UWDHBP)
-- [#ux](https://bitcoindesign.slack.com/archives/C015DQEPCHJ)
+- [#ux](https://bitcoindesign.slack.com/archives/C016SDP7HT2)
 
 ## The Bitcoin Design calendar
 
