@@ -91,7 +91,7 @@ As it is possible to trace the history of coins and see how they were previously
 
 ## CoinJoin
 
-<div class="center">
+<div class="center" markdown="1">
 
 {% include image.html
    image = "/assets/images/guide/glossary/coinjoin.jpg"
