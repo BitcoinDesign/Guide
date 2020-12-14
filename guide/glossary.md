@@ -19,13 +19,13 @@ These are the three most common ones:
 **Legacy address - [P2PKH](https://en.bitcoin.it/wiki/Transaction#Pay-to-PubkeyHash){:target="_blank"}**<br/>
 Stands for pay-to-pubkey-hash, i.e pay to a hash of the recipient’s public key. This was the original address format for bitcoin and is sometimes called *legacy address*. Legacy addresses are not segwit compatible, but you can still send BTC from a P2PKH address to a segwit address without any problems. The average fee when sending from a P2PKH address is likely to be higher than when sending from a segwit address, however, because legacy address transactions are larger in size.
 
-*Legacy addresses* begin with the number 1 and are mixed and case sensitive. 
+*Legacy addresses* begin with the number 1 and are mixed and case sensitive. <br/>
 For example: `1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2`
 
 **Script address - [P2SH](https://en.bitcoin.it/wiki/Pay_to_script_hash){:target="_blank"}**<br/>
-P2SH, which stands for pay-to-script-hash, was defined in [BIP13](https://github.com/bitcoin/bips/blob/master/bip-0013.mediawiki) and enables more functionality than legacy addresses. The P2SH script function is most commonly used for multisig addresses which can specify, for example, that multiple digital signatures are required to authorize the transaction. They are also used to enable non-native segwit transactions using a process known as P2WPKH-in-P2SH. This address type is widely supported and can be used to send funds to both P2PKH and Bech32 addresses.
+P2SH, which stands for pay-to-script-hash, was defined in [BIP 13](https://github.com/bitcoin/bips/blob/master/bip-0013.mediawiki) and enables more functionality than legacy addresses. The P2SH script function is most commonly used for multisig addresses which can specify, for example, that multiple digital signatures are required to authorize the transaction. They are also used to enable non-native segwit transactions using a process known as P2WPKH-in-P2SH. This address type is widely supported and can be used to send funds to both P2PKH and Bech32 addresses.
 
-*Script addresses* start with the number 3 and are mixed and case sensitive. 
+*Script addresses* start with the number 3 and are mixed and case sensitive. <br/>
 For example: `3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy`
 
 **SegWit address - [Bech32](https://en.bitcoin.it/wiki/Bech32){:target="_blank"}**<br/>
@@ -33,7 +33,7 @@ Bech32 is the *SegWit* address format (for segregated witness), and is specified
 
 The benefits of Bech32 addresses include more resistance to input errors (they are case insensitive, and use error-correcting codes), and lower transaction fees. Transaction fees are based on the number of bytes in your transaction and SegWit allows to move a significant part of the transaction to a new structure called witness. Bytes in the witness get a 75% discount. How much you save depends on your transaction. If it involves a lot of signatures that can be moved to the witness you save more.
 
-*Segwit addresses* start with `bc1` and are all lowercase and case insensitive. 
+*SegWit addresses* start with `bc1` and are all lowercase and case insensitive. <br/>
 For example: `bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq`
 
 ## Account
@@ -51,19 +51,20 @@ Bitcoin with a capital “B” is typically associated with Bitcoin the protocol
 
 ## Bitcoin Core
 
-A Bitcoin wallet often considered as a "reference" implementation of the Bitcoin protocol. More on the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Bitcoin_Core).
+A Bitcoin wallet often considered as a *reference implementation* of the Bitcoin protocol. More on the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Bitcoin_Core).
 
-## Bitcoin improvement proposal (BIP)
+## BIP - Bitcoin improvement proposal
 
 A standardized design document format for suggesting improvements to Bitcoin. They are hosted on Github [here](https://github.com/bitcoin/bips){:target="_blank"}. Some important proposals to be aware of:
 
 - [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki){:target="_blank"}: Mnemonic code for generating deterministic keys
-- [BIP 44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki){:target="_blank"}: Multi-Account Hierarchy for Deterministic Wallets
+- [BIP 44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki){:target="_blank"}: Multi-account hierarchy for HD wallets
+- [BIP 49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki){:target="_blank"}: Derivation scheme for HD wallets using the P2WPKH-nested-in-P2SH
 - [BIP 173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki){:target="_blank"}: *Bech32* standard for native segregated witness addresses 
 - [BIP 174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki){:target="_blank"}: Partially Signed Bitcoin Transaction Format
 
 ## Change address
-TBA
+When the output of a transaction is used as the input of another transaction, it must be spent in its entirety. Sometimes the value of the output is higher than what the user wishes to pay. In this case, the bitcoin client generates a new Bitcoin address, and sends the difference back to this address. This is known as *change address*.
 
 ## Coin control
 
@@ -78,7 +79,7 @@ TBA
    height = 400
 %}
 
-The act of choosing which coins (really unspent outputs (UTXOs)) to forward to another address in a transaction. Wallet can automatically choose these, but sometimes users may want to manually choose coins to send.
+The act of choosing which coins (really unspent outputs, or UTXOs) to forward to another address in a transaction. Wallet-applications can automatically choose the coins to use, but there are scenarios when users may want to manually choose what coins to send.
 
 Fees are based on transaction size, which is based on the number of outputs included. So choosing fewer outputs can reduce fees.
 
