@@ -23,13 +23,13 @@ Stands for pay-to-pubkey-hash, i.e pay to a hash of the recipient’s public key
 For example: `1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2`
 
 **Script address - [P2SH](https://en.bitcoin.it/wiki/Pay_to_script_hash){:target="_blank"}**<br/>
-P2SH, which stands for pay-to-script-hash, was defined in [BIP 13](https://github.com/bitcoin/bips/blob/master/bip-0013.mediawiki) and enables more functionality than legacy addresses. The P2SH script function is most commonly used for multisig addresses which can specify, for example, that multiple digital signatures are required to authorize the transaction. They are also used to enable non-native segwit transactions using a process known as P2WPKH-in-P2SH. This address type is widely supported and can be used to send funds to both P2PKH and Bech32 addresses.
+P2SH, which stands for pay-to-script-hash, was defined in [BIP13](https://github.com/bitcoin/bips/blob/master/bip-0013.mediawiki) and enables more functionality than legacy addresses. The P2SH script function is most commonly used for multisig addresses which can specify, for example, that multiple digital signatures are required to authorize the transaction. They are also used to enable non-native segwit transactions using a process known as P2WPKH-in-P2SH. This address type is widely supported and can be used to send funds to both P2PKH and Bech32 addresses.
 
 *Script addresses* start with the number 3 and are mixed and case sensitive. <br/>
 For example: `3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy`
 
 **SegWit address - [Bech32](https://en.bitcoin.it/wiki/Bech32){:target="_blank"}**<br/>
-Bech32 is the *SegWit* address format (for segregated witness), and is specified in [BIP 173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki){:target="_blank"}. They are supported by the majority of software and hardware wallets, but a minority of exchanges. While most exchanges enable sending funds to bech32 addresses, they don’t enable users to receive them with this format. Bech32 adoption by wallet-applications and exchanges is tracked on [this page](https://en.bitcoin.it/wiki/Bech32_adoption).
+Bech32 is the *SegWit* address format (for segregated witness), and is specified in [BIP173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki){:target="_blank"}. They are supported by the majority of software and hardware wallets, but a minority of exchanges. While most exchanges enable sending funds to bech32 addresses, they don’t enable users to receive them with this format. Bech32 adoption by wallet-applications and exchanges is tracked on [this page](https://en.bitcoin.it/wiki/Bech32_adoption).
 
 The benefits of Bech32 addresses include more resistance to input errors (they are case insensitive, and use error-correcting codes), and lower transaction fees. Transaction fees are based on the number of bytes in your transaction and SegWit allows to move a significant part of the transaction to a new structure called witness. Bytes in the witness get a 75% discount. How much you save depends on your transaction. If it involves a lot of signatures that can be moved to the witness you save more.
 
@@ -38,7 +38,7 @@ For example: `bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq`
 
 ## Account
 
-Just like wallet, the term account can also be used for very different things. In bitcoin wallets that follow the hierarchy described in BIP 44, a bitcoin wallet can have multiple accounts, with each one having its own addresses. However, account is also oftentimes used for accounts with third-party service providers.
+Just like wallet, the term account can also be used for very different things. In bitcoin wallets that follow the hierarchy described in BIP44, a bitcoin wallet can have multiple accounts, with each one having its own addresses. However, account is also oftentimes used for accounts with third-party service providers.
 
 Differentiate between
 
@@ -57,11 +57,11 @@ A Bitcoin wallet often considered as a *reference implementation* of the Bitcoin
 
 A standardized design document format for suggesting improvements to Bitcoin. They are hosted on Github [here](https://github.com/bitcoin/bips){:target="_blank"}. Some important proposals to be aware of:
 
-- [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki){:target="_blank"}: Mnemonic code for generating deterministic keys
-- [BIP 44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki){:target="_blank"}: Multi-account hierarchy for HD wallets
-- [BIP 49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki){:target="_blank"}: Derivation scheme for HD wallets using the P2WPKH-nested-in-P2SH
-- [BIP 173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki){:target="_blank"}: *Bech32* standard for native segregated witness addresses 
-- [BIP 174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki){:target="_blank"}: Partially Signed Bitcoin Transaction Format
+- [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki){:target="_blank"}: Mnemonic code for generating deterministic keys
+- [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki){:target="_blank"}: Multi-account hierarchy for HD wallets
+- [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki){:target="_blank"}: Derivation scheme for HD wallets using the P2WPKH-nested-in-P2SH
+- [BIP173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki){:target="_blank"}: *Bech32* standard for native segregated witness addresses 
+- [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki){:target="_blank"}: Partially Signed Bitcoin Transaction Format
 
 ## Change address
 When the output of a transaction is used as the input of another transaction, it must be spent in its entirety. Sometimes the value of the output is higher than what the user wishes to pay. In this case, the bitcoin client generates a new Bitcoin address, and sends the difference back to this address. This is known as *change address*.
@@ -126,11 +126,11 @@ In a hierarchical deterministic wallet, all addresses and their matching private
 
 The master public key of a bitcoin account. All public addresses are generated from it. 
 
-_Explain how this is used for multisig and view-only wallets._
+_ToDo: Explain how this is used for multisig and view-only wallets._
 
 ### YPUB
 
-Same as XPUB however the Y denotes that this ‘xpub’ belongs to a wallet that is following the BIP49 standard. BIP49 details the derivation scheme from wrapped-segwit addresses (P2WPKH-nested-in-P2SH).
+Same as XPUB however the Y denotes that this xpub belongs to a wallet that is following the BIP49 standard. BIP49 details the derivation scheme from wrapped-segwit addresses (P2WPKH-nested-in-P2SH).
 
 ### ZPUB
 
@@ -230,7 +230,7 @@ An algorithm to generate cryptographic signatures. One of the benefits is that t
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Schnorr_signature){:target="_blank"}
 - [Bitcoin wiki](){:target="_blank"}
-- [BIP 340](){:target="_blank"}
+- [BIP340](){:target="_blank"}
 
 ## Segregated witness (SegWit)
 
@@ -248,7 +248,7 @@ A file format for bitcoin transactions that are not fully signed yet. Allows for
 
 **References:**
 
-- [BIP 174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki){:target="_blank"}: Partially Signed Bitcoin Transaction Format
+- [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki){:target="_blank"}: Partially Signed Bitcoin Transaction Format
 
 ## Vault
 
