@@ -248,8 +248,8 @@ A technique that makes complex multisig transactions look the same as standard t
 ## Unspent transaction output (UTXO)
 An output that has not been sent to another address. The bitcoin wallet balance is calculated from adding up unspent outputs.
 
-Partially signed bitcoin transaction (PSBT)
-A file format for bitcoin transactions that are not fully signed yet. Allows for passing around a transaction to other software or devices for signing, for example in a multi signature wallet setup.
+##  Partially signed bitcoin transaction (PSBT)
+A file format for bitcoin transactions that are not fully signed yet. Allows for passing around a transaction to other applications or devices for signing, for example in a multi signature wallet setup.
 
 **References:**
 
