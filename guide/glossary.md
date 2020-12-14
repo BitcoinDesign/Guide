@@ -9,7 +9,11 @@ nav_order: 4
 
 ## Address
 
-An identifier of 26-35 alphanumeric characters that can be used to receive bitcoin. There are [several address formats](https://en.bitcoin.it/wiki/List_of_address_prefixes){:target="_blank"} based on different standards and use cases. These are the three most common ones:
+An identifier of 26-35 alphanumeric characters that can be used to receive bitcoin. There are [several address formats](https://en.bitcoin.it/wiki/List_of_address_prefixes){:target="_blank"} based on different standards and use cases. Applications should make it clear to users which standards are being used. Support for formats varies, so users may need to know this information for backup and future recovery.
+
+When users enter addresses, these formats can also be used to instantly validate correctness and possibly deduct other useful information.
+
+These are the three most common ones:
 
 
 **[P2PKH](https://en.bitcoin.it/wiki/Transaction#Pay-to-PubkeyHash){:target="_blank"} - Legacy address**<br/>
@@ -18,7 +22,7 @@ Stands for pay-to-pubkey-hash, i.e pay to a hash of the recipient’s public key
 *Legacy addresses* begin with the number 1. 
 For example: `1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2`
 
-**[P2SH](https://en.bitcoin.it/wiki/Pay_to_script_hash){:target="_blank"} - Scrip address**<br/>
+**[P2SH](https://en.bitcoin.it/wiki/Pay_to_script_hash){:target="_blank"} - Script address**<br/>
 P2SH, which stands for pay-to-script-hash, enables more functionality than legacy addresses. The P2SH script function is most commonly used for multisig addresses which can specify, for example, that multiple digital signatures are required to authorize the transaction. They are also used to enable non-native segwit transactions using a process known as P2WPKH-in-P2SH. This address type is widely supported and can be used to send funds to both P2PKH and Bech32 addresses.
 
 *Script addresses* start with the number 3. 
@@ -27,13 +31,9 @@ For example: `3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy`
 **[Bech32](https://en.bitcoin.it/wiki/Bech32){:target="_blank"} - SegWit address**<br/>
 Bech32 is the *Segwit* (for segregated witness) address format and is specified in [BIP 173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki){:target="_blank"}. They are supported by the majority of software and hardware wallets, but a minority of exchanges. While most exchanges enable sending funds to bech32 addresses, they don’t enable users to receive them with this format. Bech32 adoption by wallet-applications and exchanges is tracked on [this page(https://en.bitcoin.it/wiki/Bech32_adoption)].
 
-The benefits of Bech32 addresses include more resistance to input errors (they are case insensitive, and only exist on bitcoin) and lower transaction fees. Transaction fees are based on the number of bytes in your transaction and Segwit allows to move a significant part of the transaction to a new structure called witness. Bytes in the witness get a 75% discount. How much you save depends on your transaction. If it involves a lot of signatures that can be moved to the witness you save more.
+The benefits of Bech32 addresses include more resistance to input errors (they are case insensitive, and use error-correcting codes), and lower transaction fees. Transaction fees are based on the number of bytes in your transaction and Segwit allows to move a significant part of the transaction to a new structure called witness. Bytes in the witness get a 75% discount. How much you save depends on your transaction. If it involves a lot of signatures that can be moved to the witness you save more.
 
 *Segwit addresses* start with `bc1`. For example: `bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq`
-
-Applications should make it clear to users which standards are being used. Support for formats varies, so users may need to know this information for backup and future recovery.
-
-When users enter addresses, these formats can also be used to instantly validate correctness and possibly deduct other useful information.
 
 ## Account
 
