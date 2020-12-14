@@ -60,6 +60,7 @@ A standardized design document format for suggesting improvements to Bitcoin. Th
 - [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki){:target="_blank"}: Mnemonic code for generating deterministic keys
 - [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki){:target="_blank"}: Multi-account hierarchy for HD wallets
 - [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki){:target="_blank"}: Derivation scheme for HD wallets using the P2WPKH-nested-in-P2SH
+- [BIP141](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki){:target="_blank"}: Segregated Witness, changes to transaction structure
 - [BIP173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki){:target="_blank"}: *Bech32* standard for native segregated witness addresses 
 - [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki){:target="_blank"}: Partially Signed Bitcoin Transaction Format
 
@@ -100,7 +101,7 @@ As it is possible to trace the history of coins and see how they were previously
    height = 400
 %}
 
- Allow for combining multiple payments from multiple spenders into a single transaction to make it harder to determine which spender paid which recipient(s).
+ Allow for combining multiple payments from multiple spenders into a single transaction to make it harder to determine which spender paid which recipient(s). See also [PayJoin]({{ '/guide/glossary/#payjoin-p2ep' | relative_url }})
 
 </div>
 
@@ -210,9 +211,10 @@ The controlling keypair of a bitcoin wallet can be derived from a *recovery phra
 
 Many wallet-applications work with HD Wallets and recovery phrases, and are interoperable, meaning you can change the product that can control your wallet should you wish (although there are some caveats depending on if they support just BIP32 or also BIP44). 
 
-**Technicalities** - Multisig ‘recovery’ needs both the extended public key and the recovery phrase.
+**Technicalities** - Recovery of multisig-wallets needs both the extended public key and the recovery phrase of all paticipating keys as well as the master key fingerprint as defined by BIP32 concatenated with the derivation path of the public key. The derivation path is represented as 32-bit little endian unsigned integer indexes concatenated with each other. The number of 32 bit unsigned integer indexes must match the depth provided in the extended public key.
 
 ## Simplified payment verification (SPV)
+ It is possible to verify bitcoin payments without running a full network node. This is called simplified payment verification, or SPV. A user’s bitcoin spv wallet only needs a copy of the block headers of the longest chain, which are available by querying network nodes until it is apparent that the longest chain has been obtained. SPV lets you validate your transactions without having to worry about anybody else’s transactions. It ensures your transactions are in a block, and it provides confirmations that additional blocks are being added to the chain. An SPV wallet is a type of bitcoin wallet that works this way.
 
 **References:**
 
@@ -221,11 +223,11 @@ Many wallet-applications work with HD Wallets and recovery phrases, and are inte
 
 ## PayJoin (P2EP)
 
-A type of CoinJoin for direct transactions between two parties that makes it harder to understand the ownership of the inputs included in the transaction. The sender creates a partial transaction that the recipient adds another input to. Then the sender broadcasts the transaction. The same amount of bitcoin is transferred as in a simple bitcoin transaction. However, the additional input from the recipient makes it harder to analyze from the outside what happened in the transaction.
+A type of [CoinJoin]({{ '/guide/glossary/#coinjoin' | relative_url }}) for direct transactions between two parties that makes it harder to understand the ownership of the inputs included in the transaction. The sender creates a partial transaction that the recipient adds another input to. Then the sender broadcasts the transaction. The same amount of bitcoin is transferred as in a simple bitcoin transaction. However, the additional input from the recipient makes it harder to analyze from the outside what happened in the transaction.
 
 ## Schnorr signature
 
-An algorithm to generate cryptographic signatures. One of the benefits is that the size of multi signature transactions can be reduced (see MuSig). The code for this improvement was merged in Bitcoin Core in September 2020.
+An algorithm to generate cryptographic signatures. One of the benefits is that the size of multi signature transactions can be reduced, resulting ing lower fees, and that multisignature transactions will appear equal to single signature, increasing privacy (see [MuSig]({{ '/guide/glossary/#musig' | relative_url }})). The code for this improvement was merged in Bitcoin Core in September 2020.
 
 **References:**
 
@@ -234,6 +236,7 @@ An algorithm to generate cryptographic signatures. One of the benefits is that t
 - [BIP340](){:target="_blank"}
 
 ## Segregated witness (SegWit)
+Segregated Witness, or SegWit, is the name for a soft fork change in the transaction format of Bitcoin. It was described in [BIP141](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki){:target="_blank"}. It was intended to mitigate a blockchain size limitation problem that reduces bitcoin transaction speed. It does this by splitting the transaction into two segments, removing the unlocking signature (*witness* data) from the original portion and appending it as a separate structure at the end. The original section hold the sender and receiver data, and the new *witness* structure contain scripts and signatures.
 
 ## Taproot
 
