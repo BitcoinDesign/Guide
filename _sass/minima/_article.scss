@@ -112,7 +112,7 @@ article.guide {
     }
   }
 
-  figure:not(.-float-left, .-float-right),
+  figure:not(.-float-left, .-float-right, :first-child),
   iframe {
     margin-top: $spacing-unit;
     margin-bottom: $spacing-unit;
