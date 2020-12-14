@@ -51,12 +51,21 @@
       align-items: center;
       width: 34px;
       height: 34px;
+      background-color: transparent;
+      border-width: 0;
+      appearance: none;
 
       svg {
         width: 15px;
         height: 15px;
         color: $link-base-color;
         transition: all 150ms $ease;
+      }
+
+      &:active,
+      &:focus {
+        border-width: 0;
+        outline: none;
       }
 
       &:hover {

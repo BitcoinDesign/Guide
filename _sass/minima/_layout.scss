@@ -18,7 +18,7 @@
       & > .main.sidebar {
         flex-basis: 100%;
         flex-shrink: 1;
-        border-left: 1px solid rgba(var(--front), 0.05);
+        border-left: 1px solid rgba(var(--front), 0.1);
         min-height: 90vh;
 
         .edit-link {

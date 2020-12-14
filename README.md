@@ -188,3 +188,5 @@ To run on gh-pages, uncomment the base_url variable on _config.yml
 ```
 baseurl: "bitcoin-design-guide"
 ```
+
+To test your HTML for errors, run the rake script via `rake test`.
