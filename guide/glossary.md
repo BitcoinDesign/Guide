@@ -243,6 +243,7 @@ Segregated Witness, or SegWit, is the name for a soft fork change in the transac
 A technique that makes complex multisig transactions look the same as standard transactions on the blockchain. This improves both efficiency and privacy, as multiple signatures are combined into a single one.
 
 ## Transaction
+*ToDo*
 
 ## Unspent transaction output (UTXO)
 An output that has not been sent to another address. The bitcoin wallet balance is calculated from adding up unspent outputs.
