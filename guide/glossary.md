@@ -272,7 +272,7 @@ A term sometimes used for multi-signature wallets.
    height = 300
 %}
 
-This term is often used interchangeably for very different things. A user can “download a bitcoin wallet” in the app store, and then the app may offer the option to “create a new wallet” on the home screen. A software wallet may allow for browsing and sending transactions, while a hardware wallet may be limited to key storage and signing functionality.
+This term is often used interchangeably for very different things. A user can *download a bitcoin wallet* in the app store, and then the app may offer the option to “create a new wallet” on the home screen. A software wallet may allow for browsing and sending transactions, while a hardware wallet may be limited to key storage and signing functionality.
 
 </div>
 
@@ -282,7 +282,7 @@ All bitcoin-related data derived from and associated with a single recovery phra
 
 ### HD wallet
 
-Hierarchical Deterministic wallets, or HD wallets, can create infinite keypairs organized in a tree-structure (hierarchical) from a single (deterministic) controlling keypair. They were introduced and defined in [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki){:target="_blank"} and then expanded with [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki){:target="_blank"} which added the ability to handle multiple wallets in one ‘account’. 
+Hierarchical Deterministic wallets, or HD wallets, can create infinite keypairs organized in a tree-structure (hierarchical) from a single (deterministic) controlling keypair. They were introduced and defined in [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki){:target="_blank"} and then expanded with [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki){:target="_blank"} which added the ability to handle multiple *accounts* in one wallet. 
 
 **Technicalities** - There are different bitcoin address standards; Legacy, Native SegWit (segregated witness) and Nested SegWit. They have to be held in different branches of the HD wallet but can be controlled by the same recovery phrase. Native SegWit uses Bech32 address formats specified in [BIP173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki){:target="_blank"}.
 
@@ -296,13 +296,13 @@ A software application used to manage a bitcoin wallet.
 
 ### Non-custodial / Custodial wallet
 
-A non-custodial wallet-product implies that the private key and/or recovery phrase is only known and exposed to the end-user. This means that transactions can never be made without the user’s permission. It also means that should the user forget or misplace their recovery phrase, the makers of the wallet-product are unable to help restore access to the funds in the bitcoin wallet.
+A non-custodial wallet-product implies that the private key and/or recovery phrase is only known and exposed to the end-user. This means that transactions can never be made without the user’s permission. It also means that should the user forget or misplace their recovery phrase, the makers of the wallet-product are unable to help restore access to the funds in the bitcoin wallet. This guide is focused on non-custodial wallets.
 
-With a custodial wallet-product, the users are not exposed to and in charge of securing the recovery phrase, often just requiring the users to sign in with their email and password. This means that the users have to trust the makers of the wallet-product to secure their recovery phrase and bitcoin. With a custodial wallet-product the makers of it are technically in control of their users funds.
+With a custodial wallet-product, the users are not exposed to and in charge of securing the recovery phrase, often just requiring the users to sign in with their email and password. This means that the users have to trust the makers of the wallet-product to secure their recovery phrase and bitcoin. With a custodial wallet-product the makers of it are technically in control of their users funds. Most exchanges give users custodial wallets.
 
 ### Hot / Cold wallet
 
-Hot and cold are often used to describe the wallet in terms of being connected to the internet. Where a hot wallet is connected to the internet, a cold wallet is not. The idea is that a cold wallet is less susceptible to third-party theft over the internet. Most software wallet-products would be seen as ‘hot’ (although some can be used just for signing on a device not connected to the internet) and most hardware wallet-products would be seen as ‘cold’ (although they are sometimes connected for signing purposes). 
+*Hot* and *cold* are often used to describe the wallet in terms of being connected to the internet. Where a hot wallet is connected to the internet, a cold wallet is not. The idea is that a cold wallet is less susceptible to third-party theft over the internet. Most software wallet-products would be seen as hot (although some can be used just for signing on a device not connected to the internet) and most hardware wallet-products would be seen as cold (although they are sometimes connected for signing purposes). 
 
 
 
