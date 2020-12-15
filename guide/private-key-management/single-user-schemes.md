@@ -89,17 +89,17 @@ This makes the backup accessible by the user on a new device, should they lose t
 - Additional user authentication (biometrics, pin)
 
 **Products that use this scheme** 
-- [Photon SDK]({{ 'https://photonsdk.org'}}) - for use by other wallets, in development
-- [Casa]({{ 'https://keys.casa'}})
-- [Pine]({{ https://pine.pm }}) - Lightning, beta
-- [Paymobil]({{ 'https://www.paymobil.co'}}) - not a bitcoin wallet
+- [Photon SDK](https://photonsdk.org}) - for use by other wallets, in development
+- [Casa](https://keys.casa)
+- [Pine](https://pine.pm ) - Lightning, beta
+- [Paymobil](https://www.paymobil.co) - not a bitcoin wallet
 - Bitcoin.com mobile wallet
 
 ***
 
 ## Manual backup / Recovery-phrase
 
-Manual backup of the recovery phrase have been the most common private key management scheme by far, since its proposal with [BIP39]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki'}}) in 2013. If you have used any non-custodial bitcoin product you are likely to have experienced the onboarding requirements of manual backups. 
+Manual backup of the recovery phrase have been the most common private key management scheme by far, since its proposal with [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) in 2013. If you have used any non-custodial bitcoin product you are likely to have experienced the onboarding requirements of manual backups. 
 
 After creating a new wallet, you will be asked to manually backup a 12 (or 24 in rare instances) word recovery-phrase to a *safe place*. As the next step it will often ask you to verify that you did save it by having you input the phrase in the correct order. 
 
@@ -127,7 +127,7 @@ The wallet-application will generate a 12 or 24 word phrase (seed / recovery phr
 
 This can be an effective way to reduce the risk of loss from theft if the backup is off-line in a safe place, but puts more of the op-sec burden on the individual user. The security and risk will only be as good as how they backup the recovery phrase. To get the best security out of recovery phrases they should be in several redundant and secure places off-line. You also need to take resistance to physical theft, fire and other destructive events into account. A fair amount of effort and knowledge is required for this. 
 
-A full guide to manual backup best practices for users is out of scope for this chapter but the [Do's and Dont's of Bitcoin key management]({{ https://blog.keys.casa/the-dos-and-donts-of-bitcoin-key-management/ }}) is a good starting point.
+A full guide to manual backup best practices for users is out of scope for this chapter but the [Do's and Dont's of Bitcoin key management](https://blog.keys.casa/the-dos-and-donts-of-bitcoin-key-management/) is a good starting point.
 
 
 ### Best practice
@@ -152,12 +152,12 @@ A full guide to manual backup best practices for users is out of scope for this 
 
 **Products that use this scheme** 
 Most bitcoin wallets, including; 
-- [Bluewallet]({{ 'https://bluewallet.io'}})
-- [Electrum]({{ 'https://electrum.org'}})
-- [Wasabi]({{ 'https://wasabiwallet.io'}})
-- [Blockstream Green]({{ 'https://blockstream.com/green/'}})
-- [Coinbase Wallet]({{ 'https://wallet.coinbase.com'}})
-- [Rise]({{ https://www.risewallet.com }})
+- [Bluewallet](https://bluewallet.io)
+- [Electrum](https://electrum.org)
+- [Wasabi](https://wasabiwallet.io)
+- [Blockstream Green](https://blockstream.com/green/)
+- [Coinbase Wallet](https://wallet.coinbase.com)
+- [Rise](https://www.risewallet.com)
 
 ***
 
@@ -244,7 +244,7 @@ Some benefits over a multikey setup include greater privacy, as a transaction us
 - Individual product implementations not interoperable
 
 ### How it works
-A single private key is split into n key-shares that are distributed to several parties, devices or locations. When signing a transaction the required number of shares need to be coordinated into one valid signature. This relies on a cryptographic algorithm called [Shamir's Secret Sharing]({{ 'https://en.wikipedia.org/wiki/Shamir's_Secret_Sharing'}}) after it's creator.
+A single private key is split into n key-shares that are distributed to several parties, devices or locations. When signing a transaction the required number of shares need to be coordinated into one valid signature. This relies on a cryptographic algorithm called [Shamir's Secret Sharing](https://en.wikipedia.org/wiki/Shamir's_Secret_Sharing) after it's creator.
 
 ### Best practice
 
@@ -261,10 +261,10 @@ A single private key is split into n key-shares that are distributed to several 
 - Signing procedure
 
 **Products that use this scheme** 
-- [ZenGo]({{ 'https://zengo.com'}})
-- [Hexa]({{ 'https://hexawallet.io'}})
-- [Bitfreeze]({{ 'https://medium.com/@bitfreeze/threshold-signatures-multisig-is-not-enough-e1ba468f6102'}}) - No longer in active development
-- [Spatium]({{ https://spatium.net }})
+- [ZenGo](https://zengo.com)
+- [Hexa](https://hexawallet.io)
+- [Bitfreeze](https://medium.com/@bitfreeze/threshold-signatures-multisig-is-not-enough-e1ba468f6102) - No longer in active development
+- [Spatium](https://spatium.net)
 
 ***
 
@@ -291,7 +291,7 @@ Multi-key schemes can raise the security, since anyone needs access to more than
 - Adds complexity and op-sec burden for multiple private keys
 
 ### How it works
-A software wallet-application or coordination software initiates a multi-sig wallet, choosing the number of total keys, and the number required to sign transactions. The user then adds private keys from other wallets generated elsewhere to the multisig after which the software wallet can complete the creation process. For any future transaction from the multi-sig wallet the required amount of co-signers need to sign (using Partially Signed Bitcoin Transactions - PSBT from [BIP174]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki'}})) before any transaction is valid.
+A software wallet-application or coordination software initiates a multi-sig wallet, choosing the number of total keys, and the number required to sign transactions. The user then adds private keys from other wallets generated elsewhere to the multisig after which the software wallet can complete the creation process. For any future transaction from the multi-sig wallet the required amount of co-signers need to sign (using Partially Signed Bitcoin Transactions - PSBT from [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki)) before any transaction is valid.
 
 ### Best practice
 
@@ -313,13 +313,13 @@ A software wallet-application or coordination software initiates a multi-sig wal
 - Make sure the multi-key setup itself is backed up properly, including x-pubs for all the participating keys, fingerprint and derivation.
 
 **Products that use this scheme** 
-- [Casa]({{ 'https://keys.casa'}}) co-managed 2-of-3, or 3-of-5
-- [Electrum]({{ 'https://electrum.org'}})
-- [Bluewallet]({{ 'https://bluewallet.io'}})
-- [Unchained Capital/Caravan]({{ 'https://unchained-capital.com'}}) co-managed
-- [Specter]({{https://specter.solutions}})
-- [Armory]({{ 'https://btcarmory.com'}})
-- [Guarda]({{ 'https://guarda.com'}})
+- [Casa](https://keys.casa') co-managed 2-of-3, or 3-of-5
+- [Electrum](https://electrum.org)
+- [Bluewallet](https://bluewallet.io)
+- [Unchained Capital/Caravan](https://unchained-capital.com) co-managed
+- [Specter](https://specter.solutions)
+- [Armory](https://btcarmory.com)
+- [Guarda](https://guarda.com)
 
 ---
 

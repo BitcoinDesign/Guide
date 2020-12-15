@@ -48,7 +48,7 @@ A single-key scheme with [automatic cloud backup]({{ '/guide/private-key-managem
 - Additional user authentication to consider: biometrics, pin)
 - Upgrade-path to other schemes if funds stored increase 
 
-You can find a prototype for this case study embedded above, and a Figma file with [outline designs here]({{https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=0%3A1}}).
+You can find a prototype for this case study embedded above, and a Figma file with [outline designs here](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=0%3A1).
 
 ***
 
@@ -85,7 +85,7 @@ Should they lose either their main mobile device, or the purpose-built signing d
 - Need to take care when backing up to include x-pubs from all keys
 - Usage could be simplified bye having hardware device designed/customized by the software maker (compare banks and their digital token signers common in Europe).
 
-You can find a prototype for this case study embedded above, and a Figma file with [outline designs here]({{https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=6%3A9}}).
+You can find a prototype for this case study embedded above, and a Figma file with [outline designs here](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=6%3A9).
 
 ***
 
@@ -109,7 +109,7 @@ The solution in this case could be a wallet that enables the user to upgrade the
 #### Technical considerations
 - Need to handle many schemes; automatic cloud backups, recovery-phrases, external signing devices, multi-key
 
-You can find a prototype for this case study embedded above, and a Figma file with [outline designs here]({{https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A269}}).
+You can find a prototype for this case study embedded above, and a Figma file with [outline designs here](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A269).
 
 ***
 
@@ -134,4 +134,4 @@ We are looking for a low friction, easy-to-manage solution that could work for b
 
 <iframe style="border: 0px solid rgba(0, 0, 0, 0.1);" width="450" height="1000" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSRWlaxbDulsacpPQn2TTri%2FCase-study-prototypes%3Fnode-id%3D15%253A824%26viewport%3D739%252C217%252C0.5%26scaling%3Dscale-down" allowfullscreen></iframe>
 
-You can find a prototype for this case study embedded above, and a Figma file with [outline designs here]({{https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A822}}).
+You can find a prototype for this case study embedded above, and a Figma file with [outline designs here](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A822).
