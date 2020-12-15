@@ -1,7 +1,9 @@
 ---
 layout: guide
 title: Content guidelines
-nav_order: 
+nav_order: 10
+parent: Resources
+permalink: /guide/resources/content-guidelines
 ---
 
 # Content guidelines
