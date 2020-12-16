@@ -130,7 +130,7 @@ function docReady(fn) {
 docReady(function() {
     var banner = document.getElementById('home-banner');
 
-    if(banner.length > 0) {
+    if(banner) {
         applyTheme(0);
 
         var bannerNext = document.getElementById('home-banner-info-next');
