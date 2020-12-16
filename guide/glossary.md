@@ -300,7 +300,7 @@ A software application used to manage a bitcoin wallet.
 
 A non-custodial wallet-product implies that the private key and/or recovery phrase is in full control of the end-user. This means that transactions can never be made without the user's direct action. It also means that should the user forget or misplace their recovery phrase, wallet-product makers cannot help restore access to the funds in the bitcoin wallet. _This guide is focused on non-custodial wallets._
 
-With a custodial wallet-product, the users are not exposed to and in charge of securing the recovery phrase, often just requiring the users to sign in with their email and password. This means that the users have to trust the makers of the wallet-product to secure their recovery phrase and bitcoin. With a custodial wallet-product the makers of it are technically in control of their users funds. Most exchanges give users custodial wallets.
+With a custodial wallet-product, the users are not exposed to and in charge of securing the recovery phrase. Often custodial wallet-products require users to sign in with their email and password. Users have to trust the wallet-product makers to secure their recovery phrase and bitcoin. With a custodial wallet-product, the makers of it are technically in control of their users' funds. Most exchanges give users custodial wallets.
 
 ### Hot / Cold wallet
 
