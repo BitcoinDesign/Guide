@@ -9,9 +9,9 @@ nav_order: 4
 
 ## Address
 
-An identifier of 26-35 alphanumeric characters that can be used to receive bitcoin. There are [several address formats](https://en.bitcoin.it/wiki/List_of_address_prefixes){:target="_blank"} based on different standards and use cases. Applications should make it clear to users which standards are being used. Support for formats varies, so users may need to know this information for backup and future recovery.
+An identifier of 26-35 alphanumeric characters that is used to receive bitcoin. There are [several address formats](https://en.bitcoin.it/wiki/List_of_address_prefixes){:target="_blank"} based on different specifications. Users need to know this information during backup for future recovery so applications should inform users which format it uses as support varies across applications.
 
-When users enter addresses, these formats can also be used to instantly validate correctness and possibly deduct other useful information.
+When users enter an address, these formats have specific prefixes so it is possible to instantly determine which format is being used.
 
 These are the three most common ones:
 
@@ -19,13 +19,13 @@ These are the three most common ones:
 **Legacy address - [P2PKH](https://en.bitcoin.it/wiki/Transaction#Pay-to-PubkeyHash){:target="_blank"}**<br/>
 Stands for pay-to-pubkey-hash, i.e pay to a hash of the recipient’s public key. This was the original address format for bitcoin and is often called *legacy address*.
 
-*Legacy addresses* begin with the number 1 and are mixed and case sensitive. <br/>
+*Legacy addresses* begin with the number 1, can contain upper and lowercase characters, and are case sensitive. <br/>
 For example: `1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2`
 
 **Script address - [P2SH](https://en.bitcoin.it/wiki/Pay_to_script_hash){:target="_blank"}**<br/>
 A script address can have code attached to enable additional rules and functionality. P2SH stands for pay-to-script-hash, and was defined in [BIP13](https://github.com/bitcoin/bips/blob/master/bip-0013.mediawiki).  Script addresses are most commonly used for multi-sig addresses which can specify, for example, that signatures from several keys are required to authorize the transaction.
 
-*Script addresses* start with the number 3 and are mixed and case sensitive. <br/>
+*Script addresses* start with the number 3, can contain upper and lowercase characters, and are case sensitive. <br/>
 For example: `3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy`
 
 **SegWit address - [Bech32](https://en.bitcoin.it/wiki/Bech32){:target="_blank"}**<br/>
@@ -33,7 +33,7 @@ The *SegWit* address format (for segregated witness) was introduced in an update
 
 The benefits of SegWit addresses include more resistance to input errors (as they are case insensitive and use error-correcting codes), and lower transaction fees. The fee saving will depend on the type of transaction but for a common transfer of funds it can be in the 30-40% range.
 
-*SegWit addresses* start with `bc1` and are all lowercase and case insensitive. <br/>
+*SegWit addresses* start with `bc1` and are case insensitive. <br/>
 For example: `bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq`
 
 **Change address**<br/>
@@ -54,11 +54,11 @@ Bitcoin with a capital *B* is typically associated with Bitcoin the protocol and
 
 ## Bitcoin Core
 
-A Bitcoin wallet often considered as a *reference implementation* of the Bitcoin protocol. It is the continuation of Satoshi Nakamoto's original code. More on the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Bitcoin_Core).
+A Bitcoin wallet often considered as the *reference implementation* and serves as the specification of the Bitcoin protocol. It is the continuation of Satoshi Nakamoto's original code. More on the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Bitcoin_Core).
 
 ## BIP - Bitcoin improvement proposal
 
-A standardized design document format for suggesting improvements to Bitcoin. They are hosted on Github [here](https://github.com/bitcoin/bips){:target="_blank"}. Some important proposals to be aware of:
+A standardized technical document format for suggesting improvements to Bitcoin. They are hosted on Github [here](https://github.com/bitcoin/bips){:target="_blank"}. Some important proposals to be aware of:
 
 - [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki){:target="_blank"}: Mnemonic code for generating deterministic keys
 - [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki){:target="_blank"}: Multi-account hierarchy for HD wallets
@@ -81,7 +81,7 @@ A standardized design document format for suggesting improvements to Bitcoin. Th
    height = 400
 %}
 
-The act of choosing which coins (really unspent outputs, or UTXOs) to forward to another address in a transaction. Wallet-applications can automatically choose the coins to use, but there are scenarios when users may want to manually choose what coins to send.
+The act of choosing which [unspent transaction output](#unspent-transaction-output-utxo) to forward to another address in a transaction. Wallet-applications can automatically choose the coins to use, but there are scenarios when users may want to manually choose what coins to send.
 
 Fees are based on transaction size, which is based on the number of outputs included. So choosing fewer outputs can reduce fees.
 
@@ -209,9 +209,9 @@ A node policy that allows an unconfirmed transaction to be replaced with a diffe
 
 _Also referred to as Seed, Mnemonic, and Backup phrase._
 
-The controlling keypair of a bitcoin wallet can be derived from a *recovery phrase* of 12 words (or 18 or 24, which is less common) from a standardized list, defined in [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki){:target="_blank"}. The recovery phrase provides full access to a bitcoin wallet as it contains the private key and is therefore very valuable. It’s extremely important to keep it safe, both from other people getting access to it and for yourself not to lose it by creating one or several backups of the phrase. In many applications most of this work falls on the user and it’s important to acknowledge the responsibility here of the makers of the product to ensure that the user is able and aware of how to securely store a recovery phrase backup.
+The controlling keypair of a bitcoin wallet can be derived from a *recovery phrase* of 12 words (or 18 or 24, which is less common) from a standardized list, defined in [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki){:target="_blank"}. The recovery phrase provides full access to a bitcoin wallet as it contains the private key and is therefore very valuable. It’s extremely important to keep it safe, both from other people getting access to it and for yourself not to lose it by creating one or several backups of the phrase. In many applications most of this work falls on the user and it’s important to acknowledge the responsibility here of the makers of the application to ensure that the user is able and aware of how to securely store a recovery phrase backup.
 
-Many wallet-applications work with HD Wallets and recovery phrases, and are interoperable, meaning you can change the product that can control your wallet should you wish (although there are some caveats depending on if they support just BIP32 or also BIP44). 
+Many wallet-applications work with HD Wallets and recovery phrases, and are interoperable, meaning you can change the application that can control your wallet should you wish (although there are some caveats depending on if they support just BIP32 or also BIP44). 
 
 **Technicalities** - Recovery of multisig-wallets needs both the extended public key and the recovery phrase of all paticipating keys as well as the master key fingerprint as defined by BIP32 concatenated with the derivation path of the public key. The derivation path is represented as 32-bit little endian unsigned integer indexes concatenated with each other. The number of 32 bit unsigned integer indexes must match the depth provided in the extended public key.
 
@@ -298,13 +298,13 @@ A software application used to manage a bitcoin wallet.
 
 ### Non-custodial / Custodial wallet
 
-A non-custodial wallet-product implies that the private key and/or recovery phrase is only known and exposed to the end-user. This means that transactions can never be made without the user’s permission. It also means that should the user forget or misplace their recovery phrase, the makers of the wallet-product are unable to help restore access to the funds in the bitcoin wallet. This guide is focused on non-custodial wallets.
+A non-custodial wallet-application implies that the private key and/or recovery phrase is in full control of the end-user. This means that transactions can never be made without the user's direct action. It also means that should the user forget or misplace their recovery phrase, wallet-application makers cannot help restore access to the funds in the bitcoin wallet. _This guide is focused on non-custodial wallets._
 
-With a custodial wallet-product, the users are not exposed to and in charge of securing the recovery phrase, often just requiring the users to sign in with their email and password. This means that the users have to trust the makers of the wallet-product to secure their recovery phrase and bitcoin. With a custodial wallet-product the makers of it are technically in control of their users funds. Most exchanges give users custodial wallets.
+With a custodial wallet-application, the users are not exposed to and in charge of securing the recovery phrase. Often custodial wallet-applications require users to sign in with their email and password. Users have to trust the wallet-application makers to secure their recovery phrase and bitcoin. With a custodial wallet-application, the makers of it are technically in control of their users' funds. Most exchanges give users custodial wallets.
 
 ### Hot / Cold wallet
 
-*Hot* and *cold* are often used to describe the wallet in terms of being connected to the internet. Where a hot wallet is connected to the internet, a cold wallet is not. The idea is that a cold wallet is less susceptible to third-party theft over the internet. Most software wallet-products would be seen as hot (although some can be used just for signing on a device not connected to the internet) and most hardware wallet-products would be seen as cold (although they are sometimes connected for signing purposes). 
+*Hot* and *cold* describe a wallet in terms of being connected to the internet. Where a hot wallet is connected to the internet, a cold wallet is not. The idea is that a cold wallet is less susceptible to third-party theft over the internet. Most software wallet-application would be seen as hot (although some can be used just for signing on a device not connected to the internet) and most hardware wallet-application would be seen as cold (although they are sometimes connected for signing purposes). 
 
 
 
