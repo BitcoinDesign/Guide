@@ -69,7 +69,7 @@ The automatic cloud backup scheme gives users reasonable security against theft,
 First the application generates a wallet with a keypair. Then, the key is encrypted and backed up to a location convenient and safe for the user, yet hard for a malicious third-party to gain access to.
 
 
-With most implementations so far, the location will be the keychain or key-value store on a mobile device that is also backed up by the OS provider such as iOS (iCloud) or Android (Google Drive). 
+With most implementations so far, the location will be the keychain or a user-specific key-value-store on a mobile device that is also backed up by the OS provider. The most common would be iOS (iCloud) and Android (Google Drive) which both have secure data storage that is backed up and synced between a user's devices. 
 
 This makes the backup accessible by the user on a new device, should they lose the original, but only accessible by someone that can log into the user’s Apple or Google account. 
 
