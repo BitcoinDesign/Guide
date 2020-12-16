@@ -126,7 +126,7 @@ The wallet-application will generate a 12 or 24 word phrase (seed / recovery phr
 
 This can be an effective way to reduce the risk of loss from theft if the backup is off-line in a safe place, but puts more of the op-sec burden on the individual user. The security and risk will only be as good as how they backup the recovery phrase. To get the best security out of recovery phrases they should be in several redundant and secure places off-line. You also need to take resistance to physical theft, fire and other destructive events into account. A fair amount of effort and knowledge is required for this. 
 
-A full guide to manual backup best practices for users is out of scope for this chapter but the [Do's and Dont's of Bitcoin key management](https://blog.keys.casa/the-dos-and-donts-of-bitcoin-key-management/){:target="_blank"} is a good starting point.
+A full guide to manual backup best practices for users is out of scope for this chapter but the [Do's and Dont's](https://blog.keys.casa/the-dos-and-donts-of-bitcoin-key-management/){:target="_blank"}  of Bitcoin key management is a good starting point.
 
 
 ### Best practice
