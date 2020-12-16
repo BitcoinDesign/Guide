@@ -11,7 +11,7 @@ nav_order: 4
 
 An identifier of 26-35 alphanumeric characters that is used to receive bitcoin. There are [several address formats](https://en.bitcoin.it/wiki/List_of_address_prefixes){:target="_blank"} based on different specifications. Users need to know this information during backup for future recovery so applications should inform users which format it uses as support varies across applications.
 
-When users enter addresses, these formats can also be used to instantly validate correctness and possibly deduct other useful information.
+When users enter an address, these formats have specific prefixes so it is possible to instantly determine which format is being used.
 
 These are the three most common ones:
 
