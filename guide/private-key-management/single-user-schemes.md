@@ -187,7 +187,7 @@ A wallet-application that supports external signing can remove the need for the 
 ## How it works
 The external device can generate and store a keypair offline, the private key has thus never been known outside the device. A softare wallet can connect to the signing device and act as an interface, or handle transactiosn airgapped from the device. 
 
-When a transaction needs to be signed, the software submits a partially signed bitcoin transaction (PSBT, defined in [BIP174]('https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki'){:target="_blank"} to the device. The user confirms on the device and the PSBT state of the transaction returned to the software wallet-application is now fully signed and can be transmitted to the blockchain. This process can also happen fully airgapped by using memory cards instead of cables or wireless connections, to keep the device offline at all times.
+When a transaction needs to be signed, the software submits a partially signed bitcoin transaction (PSBT, defined in [BIP174]('https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki'){:target="_blank"}) to the device. The user confirms on the device and the PSBT state of the transaction returned to the software wallet-application is now fully signed and can be transmitted to the blockchain. This process can also happen fully airgapped by using memory cards instead of cables or wireless connections, to keep the device offline at all times.
 
 ### Best practice
 
