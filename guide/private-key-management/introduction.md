@@ -33,7 +33,7 @@ How to contribute
 
 When designing a bitcoin wallet-application, the way you choose to handle private key management often dictates the fundamental user experience for your users. Being in control of a private key means you have access to the funds it holds. Keeping that key safe is like being in charge of the security of your own bank. It comes with a lot of freedom, but also a big responsibility that many users are not used to. 
 
-If it’s not secure enough, you risk loss of customer's funds. But if it’s not convenient enough, you risk not getting or retaining many customers in the first place.
+If it’s not secure enough, you risk loss of user's funds. But if it’s not convenient enough, you risk not getting or retaining many users in the first place.
 
 This chapter is meant to give an overview of private key management schemes, including descriptions of  available approaches, some advice and best practices. After this chapter, you should be able to choose a solution that is well suited to your product’s use-case, and understand best-practices for the implementation of it.
 
