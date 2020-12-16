@@ -3,7 +3,7 @@ layout: guide
 title: Content guidelines
 nav_order: 10
 parent: Resources
-permalink: /guide/resources/content-guidelines
+permalink: /guide/resources/content-guidelines/
 ---
 
 # Content guidelines
@@ -49,6 +49,5 @@ The guide is a work in progress and needs to evolve to stay relevant. What we wr
 #### Write in the open
 
 It's a good idea to ask for directions by seeking feedback early. This may stop you from wandering too far in the wrong direction. There is a whole community around you that's ready to jump in and help.
-
 
 
