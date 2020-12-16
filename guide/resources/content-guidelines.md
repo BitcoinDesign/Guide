@@ -1,9 +1,11 @@
 ---
 layout: guide
 title: Content guidelines
+description: Writing tips for authors of the Bitcoin Design Guide.
 nav_order: 10
 parent: Resources
 permalink: /guide/resources/content-guidelines/
+image: /assets/images/guide/resources/content-guidelines-preview.jpg
 ---
 
 # Content guidelines

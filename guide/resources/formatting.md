@@ -1,9 +1,11 @@
 ---
 layout: guide
 title: Formatting
+description: Visual examples of formatting options available for content authors.
 nav_order: 11
 parent: Resources
 permalink: /guide/resources/formatting/
+image: /assets/images/guide/resources/formatting-preview.jpg
 ---
 
 # Formatting
