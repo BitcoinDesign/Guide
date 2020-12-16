@@ -23,7 +23,7 @@ Stands for pay-to-pubkey-hash, i.e pay to a hash of the recipient’s public key
 For example: `1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2`
 
 **Script address - [P2SH](https://en.bitcoin.it/wiki/Pay_to_script_hash){:target="_blank"}**<br/>
-P2SH, which stands for pay-to-script-hash, was defined in [BIP13](https://github.com/bitcoin/bips/blob/master/bip-0013.mediawiki) and enables more functionality than legacy addresses. The P2SH script function is most commonly used for multisig addresses which can specify, for example, that multiple digital signatures are required to authorize the transaction. They are also used to enable non-native segwit transactions using a process known as P2WPKH-in-P2SH. This address type is widely supported and can be used to send funds to both P2PKH and Bech32 addresses.
+A script address can have code attached to enable additional rules and functionality. P2SH stands for pay-to-script-hash, and was defined in [BIP13](https://github.com/bitcoin/bips/blob/master/bip-0013.mediawiki).  Script addresses are most commonly used for multi-sig addresses which can specify, for example, that signatures from several keys are required to authorize the transaction.
 
 *Script addresses* start with the number 3 and are mixed and case sensitive. <br/>
 For example: `3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy`
