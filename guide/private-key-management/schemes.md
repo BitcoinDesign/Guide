@@ -19,8 +19,7 @@ main_classes: -no-top-padding
 %}
 
 # Private key schemes
-
-Bitcoin wallet-applications have until recently ranged mostly from generalist to advanced use-cases, with manual backup of recovery-phrases dominating as the private key management scheme. Few non-custodial products have targeted or been suitable for newcomers to bitcoin, the learning curve remains steep. As the community matures and grows, we should expect there to be opportunities to make more specialized wallet-applications, and improve the experience for beginners. This should also encourage a wider range of private management schemes to be employed that suits the individual product and their customers.
+The private key controls the bitcoin wallet, and the *scheme* is simply a way to describe the way that the key is stored and kept secure.
 
 Important aspects to consider when choosing a private key management scheme is what you expect your customers to use the wallet-application for, who they are and how much bitcoin they might store in your product. For example;
 
