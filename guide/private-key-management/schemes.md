@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Schemes
+title: Private key schemes
 nav_order: 1
 parent: Private key management
 permalink: /guide/private-key-management/schemes/
