@@ -1,0 +1,34 @@
+
+.grid.projects {
+    margin: $spacing-unit*2 0 0 0;
+
+    .grid-item {
+        display: block;
+
+        img {
+            max-width: 150px;
+            max-height: 80px;
+        }
+
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+
+        p {
+            margin-top: 5px;
+            margin-bottom: 0px;
+        }
+
+        .links {
+            a {
+                display: inline-block;
+                margin-top: $spacing-unit/2;
+
+                & + a {
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}

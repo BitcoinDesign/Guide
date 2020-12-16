@@ -18,7 +18,7 @@
       & > .main.sidebar {
         flex-basis: 100%;
         flex-shrink: 1;
-        border-left: 1px solid rgba(var(--front), 0.05);
+        border-left: 1px solid rgba(var(--front), 0.1);
         min-height: 90vh;
 
         .edit-link {
@@ -93,24 +93,6 @@
   a:hover{
     text-decoration: none;
   }
-}
-
-.grid.projects {
-   margin: $spacing-unit*2 0 0 0;
-   .grid-item {
-     display:block;
-     img {
-       max-width:150px;
-       max-height:80px;
-     }
-     h3 {
-       margin-top: 0;
-     }
-     a {
-       display:block;
-       margin-top: $spacing-unit/2;
-     }
-   }
 }
 
 
