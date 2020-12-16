@@ -5,6 +5,7 @@ nav_order: 1
 parent: Private key management
 permalink: /guide/private-key-management/schemes/
 main_classes: -no-top-padding
+image: /assets/images/guide/private-key-management/schemes/page-private-key-schemes.jpg
 ---
 
 {% include picture.html

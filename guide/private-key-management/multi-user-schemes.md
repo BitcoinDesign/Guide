@@ -5,6 +5,7 @@ nav_order: 3
 parent: Private key management
 permalink: /guide/private-key-management/multi-user-schemes/
 main_classes: -no-top-padding
+image: /assets/images/guide/private-key-management/schemes/page-shared-schemes.jpg
 ---
 
 {% include picture.html

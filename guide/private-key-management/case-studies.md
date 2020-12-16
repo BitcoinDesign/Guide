@@ -5,6 +5,7 @@ nav_order: 5
 parent: Private key management
 permalink: /guide/private-key-management/case-studies/
 main_classes: -no-top-padding
+image: /assets/images/guide/private-key-management/case-studies/page-case-studies.jpg
 ---
 
 {% include picture.html
