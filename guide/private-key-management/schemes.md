@@ -21,7 +21,7 @@ main_classes: -no-top-padding
 # Private key schemes
 The private key controls the bitcoin wallet, and the *scheme* is simply a way to describe the way that the key is stored and kept secure.
 
-Important aspects to consider when choosing a private key management scheme is what you expect your customers to use the wallet-application for, who they are and how much bitcoin they might store in your product. For example;
+Important aspects to consider when choosing a private key management scheme is what you expect your users to use the wallet-application for, who they are and how much bitcoin they might store in your product. For example;
 
 
 * **Target audience** - Are your users completely new to bitcoin and its concepts, or well versed in all the technological underpinnings?
