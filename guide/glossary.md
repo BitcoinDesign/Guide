@@ -29,9 +29,9 @@ A script address can have code attached to enable additional rules and functiona
 For example: `3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy`
 
 **SegWit address - [Bech32](https://en.bitcoin.it/wiki/Bech32){:target="_blank"}**<br/>
-Bech32 is the *SegWit* address format (for segregated witness), and is specified in [BIP173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki){:target="_blank"}. They are supported by the majority of software and hardware wallets, but a minority of exchanges. While most exchanges enable sending funds to bech32 addresses, they don’t enable users to receive them with this format. Bech32 adoption by wallet-applications and exchanges is tracked on [this page](https://en.bitcoin.it/wiki/Bech32_adoption).
+The *SegWit* address format (for segregated witness) was introduced in an update to the Bitcoin protocol that made changes to the transaction format. The technical name of this address format is Bech32, and is specified in [BIP173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki){:target="_blank"}. SegWit addresses are supported by the majority of software and hardware wallets, but a minority of exchanges. SegWit address adoption by applications and exchanges is tracked on [this page](https://en.bitcoin.it/wiki/Bech32_adoption). Any new bitcoin-application should support the use of SegWit addresses.
 
-The benefits of Bech32 addresses include more resistance to input errors (they are case insensitive, and use error-correcting codes), and lower transaction fees. Transaction fees are based on the number of bytes in your transaction and SegWit allows to move a significant part of the transaction to a new structure called witness. Bytes in the witness get a 75% discount. How much you save depends on your transaction. If it involves a lot of signatures that can be moved to the witness you save more.
+The benefits of SegWit addresses include more resistance to input errors (as they are case insensitive and use error-correcting codes), and lower transaction fees. The fee saving will depend on the type of transaction but for a common transfer of funds it can be in the 30-40% range.
 
 *SegWit addresses* start with `bc1` and are all lowercase and case insensitive. <br/>
 For example: `bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq`
