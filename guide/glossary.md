@@ -17,24 +17,27 @@ These are the three most common ones:
 
 
 **Legacy address - [P2PKH](https://en.bitcoin.it/wiki/Transaction#Pay-to-PubkeyHash){:target="_blank"}**<br/>
-Stands for pay-to-pubkey-hash, i.e pay to a hash of the recipient’s public key. This was the original address format for bitcoin and is sometimes called *legacy address*. Legacy addresses are not segwit compatible, but you can still send BTC from a P2PKH address to a segwit address without any problems. The average fee when sending from a P2PKH address is likely to be higher than when sending from a segwit address, however, because legacy address transactions are larger in size.
+Stands for pay-to-pubkey-hash, i.e pay to a hash of the recipient’s public key. This was the original address format for bitcoin and is often called *legacy address*.
 
 *Legacy addresses* begin with the number 1 and are mixed and case sensitive. <br/>
 For example: `1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2`
 
 **Script address - [P2SH](https://en.bitcoin.it/wiki/Pay_to_script_hash){:target="_blank"}**<br/>
-P2SH, which stands for pay-to-script-hash, was defined in [BIP13](https://github.com/bitcoin/bips/blob/master/bip-0013.mediawiki) and enables more functionality than legacy addresses. The P2SH script function is most commonly used for multisig addresses which can specify, for example, that multiple digital signatures are required to authorize the transaction. They are also used to enable non-native segwit transactions using a process known as P2WPKH-in-P2SH. This address type is widely supported and can be used to send funds to both P2PKH and Bech32 addresses.
+A script address can have code attached to enable additional rules and functionality. P2SH stands for pay-to-script-hash, and was defined in [BIP13](https://github.com/bitcoin/bips/blob/master/bip-0013.mediawiki).  Script addresses are most commonly used for multi-sig addresses which can specify, for example, that signatures from several keys are required to authorize the transaction.
 
 *Script addresses* start with the number 3 and are mixed and case sensitive. <br/>
 For example: `3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy`
 
 **SegWit address - [Bech32](https://en.bitcoin.it/wiki/Bech32){:target="_blank"}**<br/>
-Bech32 is the *SegWit* address format (for segregated witness), and is specified in [BIP173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki){:target="_blank"}. They are supported by the majority of software and hardware wallets, but a minority of exchanges. While most exchanges enable sending funds to bech32 addresses, they don’t enable users to receive them with this format. Bech32 adoption by wallet-applications and exchanges is tracked on [this page](https://en.bitcoin.it/wiki/Bech32_adoption).
+The *SegWit* address format (for segregated witness) was introduced in an update to the Bitcoin protocol that made changes to the transaction format. The technical name of this address format is Bech32, and is specified in [BIP173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki){:target="_blank"}. SegWit addresses are supported by the majority of software and hardware wallets, but a minority of exchanges. SegWit address adoption by applications and exchanges is tracked on [this page](https://en.bitcoin.it/wiki/Bech32_adoption). Any new bitcoin-application should support the use of SegWit addresses.
 
-The benefits of Bech32 addresses include more resistance to input errors (they are case insensitive, and use error-correcting codes), and lower transaction fees. Transaction fees are based on the number of bytes in your transaction and SegWit allows to move a significant part of the transaction to a new structure called witness. Bytes in the witness get a 75% discount. How much you save depends on your transaction. If it involves a lot of signatures that can be moved to the witness you save more.
+The benefits of SegWit addresses include more resistance to input errors (as they are case insensitive and use error-correcting codes), and lower transaction fees. The fee saving will depend on the type of transaction but for a common transfer of funds it can be in the 30-40% range.
 
 *SegWit addresses* start with `bc1` and are all lowercase and case insensitive. <br/>
 For example: `bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq`
+
+**Change address**
+When the output of a transaction is used as the input of another transaction, it must be spent in its entirety. Sometimes the value of the output is higher than what the user wishes to pay. In this case, the bitcoin client generates a new Bitcoin address, and sends the difference back to this address. This is known as *change address*.
 
 ## Account
 
@@ -65,9 +68,6 @@ A standardized design document format for suggesting improvements to Bitcoin. Th
 - [BIP173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki){:target="_blank"}: *Bech32* standard for native segregated witness addresses 
 - [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki){:target="_blank"}: Partially Signed Bitcoin Transaction Format
 
-## Change address
-When the output of a transaction is used as the input of another transaction, it must be spent in its entirety. Sometimes the value of the output is higher than what the user wishes to pay. In this case, the bitcoin client generates a new Bitcoin address, and sends the difference back to this address. This is known as *change address*.
-
 ## Coin control
 
 <div class="center" markdown="1">
@@ -91,7 +91,7 @@ As it is possible to trace the history of coins and see how they were previously
 
 ## CoinJoin
 
-<div class="center" markdown="1">
+<div class="center">
 
 {% include image.html
    image = "/assets/images/guide/glossary/coinjoin.jpg"
