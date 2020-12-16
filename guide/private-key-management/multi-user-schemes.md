@@ -48,7 +48,7 @@ Just like with personal schemes, external signing devices can be used to hold on
 - Has significant complexity and op-sec burden for multiple private keys, each of which might need a good manual backup scheme
 
 ### How it works 
-A software wallet-application or coordination software initiates a multi-sig wallet, choosing the number of total keys, and the number required to sign transactions. One user then adds private keys from other users' wallets generated elsewhere to the multisig, after which the software wallet can complete the creation process. For any future transaction from the multi-sig wallet the required amount of co-signers need to sign (using Partially Signed Bitcoin Transactions - PSBT from [BIP174]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki'}}){:target="_blank"} before any transaction is valid.
+A wallet or coordination application initiates a multi-sig wallet, choosing the number of total keys, and the number required to sign transactions. It then needs to add private keys from the other user's wallet. It can then complete the creation process. For any future transaction from the multi-sig wallet the required amount of co-signers need to sign (using Partially Signed Bitcoin Transactions - PSBT from [BIP174]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki'}}){:target="_blank"} before any transaction is valid.
 
 ### Best practice
 
