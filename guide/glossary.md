@@ -9,7 +9,9 @@ nav_order: 4
 
 ## Address
 
-An identifier of 26-35 alphanumeric characters that can be used to receive bitcoin. There are [several address formats](https://en.bitcoin.it/wiki/List_of_address_prefixes){:target="_blank"} based on different standards and use cases. Applications should make it clear to users which standards are being used. Support for formats varies, so users may need to know this information for backup and future recovery.
+An identifier of 26-35 alphanumeric characters that is used to receive bitcoin. There are [several address formats](https://en.bitcoin.it/wiki/List_of_address_prefixes){:target="_blank"} based on different specifications. Users need to know this information during backup for future recovery so applications should inform users which format it uses as support varies across applications.```
+
+NOTE: In some places we say "wallet-products" and here we say "application". So we should have a conversation on what this should be called to have more harmony in the content - as I've also been leaning towards "applications", "bitcoin applications", "experiences" which introduces more inconsistencies. 
 
 When users enter addresses, these formats can also be used to instantly validate correctness and possibly deduct other useful information.
 
