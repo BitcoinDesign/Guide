@@ -81,7 +81,7 @@ A standardized technical document format for suggesting improvements to Bitcoin.
    height = 400
 %}
 
-The act of choosing which UTXO to forward to another address in a transaction. Wallet-applications can automatically choose the coins to use, but there are scenarios when users may want to manually choose what coins to send.
+The act of choosing which [unspent transaction output](#unspent-transaction-output-utxo) to forward to another address in a transaction. Wallet-applications can automatically choose the coins to use, but there are scenarios when users may want to manually choose what coins to send.
 
 Fees are based on transaction size, which is based on the number of outputs included. So choosing fewer outputs can reduce fees.
 
