@@ -36,7 +36,7 @@ The benefits of SegWit addresses include more resistance to input errors (as the
 *SegWit addresses* start with `bc1` and are all lowercase and case insensitive. <br/>
 For example: `bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq`
 
-**Change address**
+**Change address**<br/>
 When the output of a transaction is used as the input of another transaction, it must be spent in its entirety. Sometimes the value of the output is higher than what the user wishes to pay. In this case, the bitcoin client generates a new Bitcoin address, and sends the difference back to this address. This is known as *change address*.
 
 ## Account
