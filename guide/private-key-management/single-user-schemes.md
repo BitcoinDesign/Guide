@@ -93,8 +93,6 @@ This makes the backup accessible by the user on a new device, should they lose t
 - [Photon SDK](https://photonsdk.org}) - for use by other wallets, in development
 - [Casa](https://keys.casa)
 - [Pine](https://pine.pm ) - Lightning, beta
-- [Paymobil](https://www.paymobil.co) - not a bitcoin wallet
-- Bitcoin.com mobile wallet
 
 ***
 
