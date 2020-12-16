@@ -25,7 +25,7 @@ For example: `1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2`
 **Script address - [P2SH](https://en.bitcoin.it/wiki/Pay_to_script_hash){:target="_blank"}**<br/>
 A script address can have code attached to enable additional rules and functionality. P2SH stands for pay-to-script-hash, and was defined in [BIP13](https://github.com/bitcoin/bips/blob/master/bip-0013.mediawiki).  Script addresses are most commonly used for multi-sig addresses which can specify, for example, that signatures from several keys are required to authorize the transaction.
 
-*Script addresses* start with the number 3 and are mixed and case sensitive. <br/>
+*Script addresses* start with the number 3, can contain upper and lowercase characters, and is case sensitive. <br/>
 For example: `3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy`
 
 **SegWit address - [Bech32](https://en.bitcoin.it/wiki/Bech32){:target="_blank"}**<br/>
