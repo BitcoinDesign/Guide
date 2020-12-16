@@ -66,7 +66,8 @@ The automatic cloud backup scheme gives users reasonable security against theft,
 - Unless the backup includes the recovery phrase users will not be able to export their wallet to another product
 
 ### How it works
-The wallet-application will generate a wallet with a keypair, then encrypt and back the key up to a location that the user is unlikely to lose access to, while hard for a malicious third party to gain access to. 
+First the application generates a wallet with a keypair. Then, the key is encrypted and backed up to a location convenient and safe for the user, yet hard to for a malicious third-party to gain access to.
+
 
 With most implementations so far, the location will be the keychain or key-value store on a mobile device that is also backed up by the OS provider such as iOS (iCloud) or Android (Google Drive). 
 
