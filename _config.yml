@@ -39,7 +39,7 @@ imageoptim:
   allow_lossy: true
   skip_missing_workers: true
   pngout: false
-  verbose: true
+  verbose: false
   svgo: false
 
 compress_images:
