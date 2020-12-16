@@ -90,9 +90,9 @@ This makes the backup accessible by the user on a new device, should they lose t
 - Additional user authentication (biometrics, pin)
 
 **Products that use this scheme** 
-- [Photon SDK](https://photonsdk.org}) - for use by other wallets, in development
-- [Casa](https://keys.casa)
-- [Pine](https://pine.pm ) - Lightning, beta
+- [Photon SDK](https://photonsdk.org}){:target="_blank"} - for use by other wallets, in development
+- [Casa](https://keys.casa){:target="_blank"}
+- [Pine](https://pine.pm ){:target="_blank"} - Lightning, beta
 
 ***
 
@@ -126,7 +126,7 @@ The wallet-application will generate a 12 or 24 word phrase (seed / recovery phr
 
 This can be an effective way to reduce the risk of loss from theft if the backup is off-line in a safe place, but puts more of the op-sec burden on the individual user. The security and risk will only be as good as how they backup the recovery phrase. To get the best security out of recovery phrases they should be in several redundant and secure places off-line. You also need to take resistance to physical theft, fire and other destructive events into account. A fair amount of effort and knowledge is required for this. 
 
-A full guide to manual backup best practices for users is out of scope for this chapter but the [Do's and Dont's of Bitcoin key management](https://blog.keys.casa/the-dos-and-donts-of-bitcoin-key-management/) is a good starting point.
+A full guide to manual backup best practices for users is out of scope for this chapter but the [Do's and Dont's of Bitcoin key management](https://blog.keys.casa/the-dos-and-donts-of-bitcoin-key-management/){:target="_blank"} is a good starting point.
 
 
 ### Best practice
@@ -151,12 +151,12 @@ A full guide to manual backup best practices for users is out of scope for this 
 
 **Products that use this scheme** 
 Most bitcoin wallets, including; 
-- [Bluewallet](https://bluewallet.io)
-- [Electrum](https://electrum.org)
-- [Wasabi](https://wasabiwallet.io)
-- [Blockstream Green](https://blockstream.com/green/)
-- [Coinbase Wallet](https://wallet.coinbase.com)
-- [Rise](https://www.risewallet.com)
+- [Bluewallet](https://bluewallet.io){:target="_blank"}
+- [Electrum](https://electrum.org){:target="_blank"}
+- [Wasabi](https://wasabiwallet.io){:target="_blank"}
+- [Blockstream Green](https://blockstream.com/green/){:target="_blank"}
+- [Coinbase Wallet](https://wallet.coinbase.com){:target="_blank"}
+- [Rise](https://www.risewallet.com){:target="_blank"}
 
 ***
 
@@ -187,7 +187,7 @@ A wallet-application that supports external signing can remove the need for the 
 ## How it works
 The external device can generate and store a keypair offline, the private key has thus never been known outside the device. A softare wallet can connect to the signing device and act as an interface, or handle transactiosn airgapped from the device. 
 
-When a transaction needs to be signed, the software submits a partially signed bitcoin transaction (PSBT, defined in [BIP174]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki'}})) to the device. The user confirms on the device and the PSBT state of the transaction returned to the software wallet-application is now fully signed and can be transmitted to the blockchain. This process can also happen fully airgapped by using memory cards instead of cables or wireless connections, to keep the device offline at all times.
+When a transaction needs to be signed, the software submits a partially signed bitcoin transaction (PSBT, defined in [BIP174]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki'}})){:target="_blank"} to the device. The user confirms on the device and the PSBT state of the transaction returned to the software wallet-application is now fully signed and can be transmitted to the blockchain. This process can also happen fully airgapped by using memory cards instead of cables or wireless connections, to keep the device offline at all times.
 
 ### Best practice
 
@@ -206,15 +206,15 @@ When a transaction needs to be signed, the software submits a partially signed b
 - Additional user authentication (pin or password)
 
 **Products that use this scheme** 
-- [Electrum]({{ 'https://electrum.org'}})
-- [Wasabi]({{ 'https://wasabiwallet.io'}})
-- [Bluewallet]({{ 'https://bluewallet.io'}})
+- [Electrum]({{ 'https://electrum.org'}}){:target="_blank"}
+- [Wasabi]({{ 'https://wasabiwallet.io'}}){:target="_blank"}
+- [Bluewallet]({{ 'https://bluewallet.io'}}){:target="_blank"}
 
 **Hardware wallets**
-- [Trezor]({{ 'https://trezor.io'}})
-- [Ledger]({{ 'https://www.ledger.com'}})
-- [Keepkey]({{ 'https://shapeshift.com/keepkey'}})
-- [Coldcard]({{ 'https://coldcardwallet.com'}})
+- [Trezor]({{ 'https://trezor.io'}}){:target="_blank"}
+- [Ledger]({{ 'https://www.ledger.com'}}){:target="_blank"}
+- [Keepkey]({{ 'https://shapeshift.com/keepkey'}}){:target="_blank"}
+- [Coldcard]({{ 'https://coldcardwallet.com'}}){:target="_blank"}
 
 ***
 
@@ -243,7 +243,7 @@ Some benefits over a multikey setup include greater privacy, as a transaction us
 - Individual product implementations not interoperable
 
 ### How it works
-A single private key is split into n key-shares that are distributed to several parties, devices or locations. When signing a transaction the required number of shares need to be coordinated into one valid signature. This relies on a cryptographic algorithm called [Shamir's Secret Sharing](https://en.wikipedia.org/wiki/Shamir's_Secret_Sharing) after it's creator.
+A single private key is split into n key-shares that are distributed to several parties, devices or locations. When signing a transaction the required number of shares need to be coordinated into one valid signature. This relies on a cryptographic algorithm called [Shamir's Secret Sharing](https://en.wikipedia.org/wiki/Shamir's_Secret_Sharing){:target="_blank"} after it's creator.
 
 ### Best practice
 
@@ -260,10 +260,10 @@ A single private key is split into n key-shares that are distributed to several 
 - Signing procedure
 
 **Products that use this scheme** 
-- [ZenGo](https://zengo.com)
-- [Hexa](https://hexawallet.io)
-- [Bitfreeze](https://medium.com/@bitfreeze/threshold-signatures-multisig-is-not-enough-e1ba468f6102) - No longer in active development
-- [Spatium](https://spatium.net)
+- [ZenGo](https://zengo.com){:target="_blank"}
+- [Hexa](https://hexawallet.io){:target="_blank"}
+- [Bitfreeze](https://medium.com/@bitfreeze/threshold-signatures-multisig-is-not-enough-e1ba468f6102){:target="_blank"} - No longer in active development
+- [Spatium](https://spatium.net){:target="_blank"}
 
 ***
 
@@ -290,7 +290,7 @@ Multi-key schemes can raise the security, since anyone needs access to more than
 - Adds complexity and op-sec burden for multiple private keys
 
 ### How it works
-A software wallet-application or coordination software initiates a multi-sig wallet, choosing the number of total keys, and the number required to sign transactions. The user then adds private keys from other wallets generated elsewhere to the multisig after which the software wallet can complete the creation process. For any future transaction from the multi-sig wallet the required amount of co-signers need to sign (using Partially Signed Bitcoin Transactions - PSBT from [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki)) before any transaction is valid.
+A software wallet-application or coordination software initiates a multi-sig wallet, choosing the number of total keys, and the number required to sign transactions. The user then adds private keys from other wallets generated elsewhere to the multisig after which the software wallet can complete the creation process. For any future transaction from the multi-sig wallet the required amount of co-signers need to sign (using Partially Signed Bitcoin Transactions - PSBT from [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki)){:target="_blank"} before any transaction is valid.
 
 ### Best practice
 
@@ -312,13 +312,13 @@ A software wallet-application or coordination software initiates a multi-sig wal
 - Make sure the multi-key setup itself is backed up properly, including x-pubs for all the participating keys, fingerprint and derivation.
 
 **Products that use this scheme** 
-- [Casa](https://keys.casa') co-managed 2-of-3, or 3-of-5
-- [Electrum](https://electrum.org)
-- [Bluewallet](https://bluewallet.io)
-- [Unchained Capital/Caravan](https://unchained-capital.com) co-managed
-- [Specter](https://specter.solutions)
-- [Armory](https://btcarmory.com)
-- [Guarda](https://guarda.com)
+- [Casa](https://keys.casa'){:target="_blank"} co-managed 2-of-3, or 3-of-5
+- [Electrum](https://electrum.org){:target="_blank"}
+- [Bluewallet](https://bluewallet.io){:target="_blank"}
+- [Unchained Capital/Caravan](https://unchained-capital.com){:target="_blank"} co-managed
+- [Specter](https://specter.solutions){:target="_blank"}
+- [Armory](https://btcarmory.com){:target="_blank"}
+- [Guarda](https://guarda.com){:target="_blank"}
 
 ---
 
