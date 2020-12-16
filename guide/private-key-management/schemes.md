@@ -8,6 +8,14 @@ main_classes: -no-top-padding
 image: /assets/images/guide/private-key-management/schemes/page-private-key-schemes.jpg
 ---
 
+<!--
+
+Editor's notes
+
+An overview of what different private key management schemes there are, and how to choose one depending on use-case.
+
+-->
+
 {% include picture.html
    image = "/assets/images/guide/private-key-management/schemes.jpg"
    retina = "/assets/images/guide/private-key-management/schemes@2x.jpg"

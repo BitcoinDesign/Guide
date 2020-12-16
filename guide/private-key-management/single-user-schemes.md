@@ -8,6 +8,14 @@ main_classes: -no-top-padding
 image: /assets/images/guide/private-key-management/schemes/page-personal-schemes.jpg
 ---
 
+<!--
+
+Editor's notes
+
+Descriptions of schemes suitable for a single user.
+
+-->
+
 {% include picture.html
    image = "/assets/images/guide/private-key-management/personal.jpg"
    retina = "/assets/images/guide/private-key-management/personal@2x.jpg"

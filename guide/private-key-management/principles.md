@@ -8,6 +8,14 @@ main_classes: -no-top-padding
 image: /assets/images/guide/private-key-management/principles/page-principles.jpg
 ---
 
+<!--
+
+Editor's notes
+
+Principles to strive for while building bitcoin applications for end-users.
+
+-->
+
 {% include picture.html
    image = "/assets/images/guide/private-key-management/principles.jpg"
    retina = "/assets/images/guide/private-key-management/principles@2x.jpg"

@@ -8,6 +8,14 @@ main_classes: -no-top-padding
 image: /assets/images/guide/private-key-management/case-studies/page-case-studies.jpg
 ---
 
+<!--
+
+Editor's notes
+
+A range of case study designs for bitcoin applications.
+
+-->
+
 {% include picture.html
    image = "/assets/images/guide/private-key-management/case-studies.jpg"
    retina = "/assets/images/guide/private-key-management/case-studies@2x.jpg"

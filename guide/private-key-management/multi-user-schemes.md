@@ -8,6 +8,14 @@ main_classes: -no-top-padding
 image: /assets/images/guide/private-key-management/schemes/page-shared-schemes.jpg
 ---
 
+<!--
+
+Editor's notes
+
+Description of schemes suitable for multi-user scenarios.
+
+-->
+
 {% include picture.html
    image = "/assets/images/guide/private-key-management/shared.jpg"
    retina = "/assets/images/guide/private-key-management/shared@2x.jpg"

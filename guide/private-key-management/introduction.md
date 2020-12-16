@@ -10,12 +10,10 @@ image: /assets/images/guide/private-key-management/page-private-key-management.j
 
 <!--
 
-Introduction to the private key management chapter
+Editor's notes
 
-Why it exists
-What's in it
-How to use it
-How to contribute
+A brief introduction and summary of all pages in this section. The idea is that readers
+scan this page to get an overview of the section and then decide which topics to dive into.
 
 -->
 
