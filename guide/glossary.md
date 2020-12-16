@@ -19,7 +19,7 @@ These are the three most common ones:
 **Legacy address - [P2PKH](https://en.bitcoin.it/wiki/Transaction#Pay-to-PubkeyHash){:target="_blank"}**<br/>
 Stands for pay-to-pubkey-hash, i.e pay to a hash of the recipient’s public key. This was the original address format for bitcoin and is often called *legacy address*.
 
-*Legacy addresses* begin with the number 1 and are mixed and case sensitive. <br/>
+*Legacy addresses* begin with the number 1, can contain upper and lowercase characters, and is case sensitive. <br/>
 For example: `1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2`
 
 **Script address - [P2SH](https://en.bitcoin.it/wiki/Pay_to_script_hash){:target="_blank"}**<br/>
