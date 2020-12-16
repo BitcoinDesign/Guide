@@ -20,8 +20,6 @@ function loadSearchPageData() {
   var request = new XMLHttpRequest();
 
   request.onreadystatechange = function() {
-    console.log('onreadystatechange', request);
-
     if (request.readyState === 4) {
       searchData = JSON.parse(request.responseText);
 
@@ -32,8 +30,6 @@ function loadSearchPageData() {
         this.field('category');
         this.field('content');
       });
-
-      console.log('dd', searchPageIndex);
 
       for (var key in searchData) { // Add the data to lunr
         searchPageIndex.add({
@@ -75,19 +71,25 @@ function displaySearchPageResults(searchInput, results) {
   if (results.length) { // Are there any results?
     var appendString = '';
     var item;
-    var maxVisible = 5;
 
-    for(var i = 0; i < Math.min(maxVisible, results.length); i++) {  // Iterate over the results
+    var content, contentBits, k, index;
+    for(var i = 0; i < results.length; i++) {  // Iterate over the results
       item = searchData[results[i].ref];
-      
+
+      // Strip Jekyll includes.
+      contentBits = item.content.split('{%');
+      for(k=0; k<contentBits.length; k++) {
+        index = contentBits[k].indexOf('%}');
+        if(index !== -1) {
+          contentBits[k] = contentBits[k].substring(index+2);
+        }
+      }
+      content = contentBits.join('').substring(0, 150);
+
       appendString += '<li><a href="' + item.url + '">';
       appendString += '<h3>' + item.title + '</h3>';
-      appendString += '<p>' + item.content.substring(0, 250) + '...</p>';
+      appendString += '<p>' + content + '...</p>';
       appendString += '</a></li>';
-    }
-
-    if(results.length > maxVisible) {
-      appendString += '<li><a href="/search.html?query=' + encodeURIComponent(searchInput) + '"><h3>View all ' + results.length + ' results</h3></a></li>';
     }
 
     searchResults.innerHTML = appendString;

@@ -54,7 +54,7 @@ With bitcoin being so new and different, a big focus of the guide lies on provid
 
 ## How to use the guide
 
-If you are new to bitcoin, continue to the "[Getting started]({{ '/guide/getting-started/introduction/' | relative_url }})" section for an introduction on why bitcoin is so unique and what makes it so interesting and worthwhile to be involved. As a more experienced reader, you are more than welcome to skip straight to the sections that interest you most. And if you don’t find what you are looking for, try the search function, [ask in the community](https://www.bitcoindesigners.org) or [file an issue]({{site.github_repository_url}}issues) and help us improve this guide.
+If you are new to bitcoin, continue to the "[Getting started]({{ '/guide/getting-started/introduction/' | relative_url }})" section for an introduction on why bitcoin is so unique and what makes it so interesting and worthwhile to be involved. As a more experienced reader, you are more than welcome to skip straight to the sections that interest you most. And if you don’t find what you are looking for, try the search function, [ask in the community](http://bitcoindesigners.org) or [file an issue]({{site.github_repository_url}}issues) and help us improve this guide.
 
 ## A community effort
 
