@@ -3,7 +3,7 @@ layout: page
 title: Projects
 permalink: /projects/
 main_nav: true
-nav_order: 4
+nav_order: 3
 projects:
   - name: Bitcoin Design Guide
     description: The primary project we are working on, a resource for designers to create better Bitcoin products faster.
