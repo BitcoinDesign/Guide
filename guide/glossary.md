@@ -54,7 +54,7 @@ Bitcoin with a capital *B* is typically associated with Bitcoin the protocol and
 
 ## Bitcoin Core
 
-A Bitcoin wallet often considered as a *reference implementation* of the Bitcoin protocol. It is the continuation of Satoshi Nakamoto's original code. More on the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Bitcoin_Core).
+A Bitcoin wallet often considered as the *reference implementation* and serves as the specification of the Bitcoin protocol. It is the continuation of Satoshi Nakamoto's original code. More on the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Bitcoin_Core).
 
 ## BIP - Bitcoin improvement proposal
 
