@@ -91,7 +91,7 @@ As it is possible to trace the history of coins and see how they were previously
 
 ## CoinJoin
 
-<div class="center">
+<div class="center" markdown="1">
 
 {% include image.html
    image = "/assets/images/guide/glossary/coinjoin.jpg"
@@ -102,7 +102,7 @@ As it is possible to trace the history of coins and see how they were previously
    height = 400
 %}
 
- Allow for combining multiple payments from multiple spenders into a single transaction to make it harder to determine which spender paid which recipient(s). More information can be found on [the Bitcoin Wiki](https://en.bitcoin.it/wiki/CoinJoin){:target="_blank"}. See also [PayJoin]( {{ '/guide/glossary/#payjoin-p2ep' | relative_url }} ). 
+Allow for combining multiple payments from multiple spenders into a single transaction to make it harder to determine which spender paid which recipient(s). More information can be found on [the Bitcoin Wiki](https://en.bitcoin.it/wiki/CoinJoin). See also [PayJoin]({{ '/guide/glossary/#payjoin-p2ep' | relative_url }}). 
 
 
 </div>
