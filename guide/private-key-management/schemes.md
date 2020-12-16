@@ -42,7 +42,7 @@ As a simplification we can characterize the main potentials for loss of funds as
 * **Self inflicted** - you lose access to your own private key
 * **Theft** - a third party gains access to your private key
 
-So our goal is to make it hard for your customer to lose their keys, and at the same time make it hard for a third party to get to them. 
+So your goal is to make it hard for users to lose their keys, and at the same time, make it hard for a third party to get to them. 
 
 Casa's [wealth security protocol]({{ 'https://github.com/Casa/wealth-security-protocol/blob/master/casa-wealth-security-protocol.pdf'}}) is good reading material for more complete views on threat vectors and risk.
 
