@@ -44,7 +44,7 @@ At a minimum, make it easy for your customers to avoid address re-use.
 
 While it is possible to own and store immense wealth in a non-custodial bitcoin wallet, most new users of bitcoin are likely to start with much smaller sums before they get comfortable with depositing material parts of their savings in a wallet where they are responsible for security. There are many guides out there for how to best keep your recovery-phrase backup safe, and conduct advanced op-sec to minimise every conceivable threat-vector. This might be appropriate for someone already intimately familiar with bitcoin technology, but is very likely both overkill and scary to the point of turning away new users. Think carefully about who your target customer is and choose a private key management scheme that is well suited to them. 
 
-Strive for your product to grow with the customer and provide progressively stronger security. For example, offering the ability to *sweep* a wallet into a new one, with a higher level security scheme once certain thresholds are reached. This way, a beginner could start out with an automatic cloud backup scheme but know that as they grow their funds could upgrade to a multikey setup down the line.
+Strive for your product to grow with the user and provide progressively stronger security. For example, offering the ability to *sweep* a wallet into a new one, with a higher level security scheme once certain thresholds are reached. This way, a beginner could start out with an automatic cloud backup scheme but know that as they grow their funds could upgrade to a multikey setup down the line.
 
 ***
 
