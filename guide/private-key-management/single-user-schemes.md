@@ -262,8 +262,8 @@ A single private key is split into n key-shares that are distributed to several 
 **Products that use this scheme** 
 - [ZenGo](https://zengo.com){:target="_blank"}
 - [Hexa](https://hexawallet.io){:target="_blank"}
-- [Bitfreeze](https://medium.com/@bitfreeze/threshold-signatures-multisig-is-not-enough-e1ba468f6102){:target="_blank"} - No longer in active development
 - [Spatium](https://spatium.net){:target="_blank"}
+- [Bitfreeze](https://medium.com/@bitfreeze/threshold-signatures-multisig-is-not-enough-e1ba468f6102){:target="_blank"} - No longer in active development
 
 ***
 
