@@ -148,7 +148,7 @@ To fully verify that all transactions on the bitcoin network are valid, a full n
 When an address receives bitcoin from another address, this is called an input. Transactions can include multiple inputs.
 
 ## Keys
-Bitcoin wallets and addresses are have both [public]({{ '/guide/glossary/#public-key' | relative_url }}) and [private keys]({{ '/guide/glossary/#private-key' | relative_url }}) associated to them. The private key controls access to funds and the ability to sign (approve) transactions.
+Bitcoin wallets and addresses are have both [public](#public-key) and [private keys](#private-key) associated to them. The private key controls access to funds and the ability to sign (approve) transactions.
 
 ## Miniscript
 
@@ -225,11 +225,11 @@ Many wallet-applications work with HD Wallets and recovery phrases, and are inte
 
 ## PayJoin (P2EP)
 
-A type of [CoinJoin]({{ '/guide/glossary/#coinjoin' | relative_url }}) for direct transactions between two parties that makes it harder to understand the ownership of the inputs included in the transaction. The sender creates a partial transaction that the recipient adds another input to. Then the sender broadcasts the transaction. The same amount of bitcoin is transferred as in a simple bitcoin transaction. However, the additional input from the recipient makes it harder to analyze from the outside what happened in the transaction.
+A type of [CoinJoin](#coinjoin) for direct transactions between two parties that makes it harder to understand the ownership of the inputs included in the transaction. The sender creates a partial transaction that the recipient adds another input to. Then the sender broadcasts the transaction. The same amount of bitcoin is transferred as in a simple bitcoin transaction. However, the additional input from the recipient makes it harder to analyze from the outside what happened in the transaction.
 
 ## Schnorr signature
 
-An algorithm to generate cryptographic signatures. One of the benefits is that the size of multi signature transactions can be reduced, resulting in lower fees, and that multisignature transactions will appear equal to single signature, increasing privacy (see [MuSig]({{ '/guide/glossary/#musig' | relative_url }})). The code for this improvement was merged in Bitcoin Core in September 2020.
+An algorithm to generate cryptographic signatures. One of the benefits is that the size of multi signature transactions can be reduced, resulting in lower fees, and that multisignature transactions will appear equal to single signature, increasing privacy (see [MuSig](#musig)). The code for this improvement was merged in Bitcoin Core in September 2020.
 
 **References:**
 
