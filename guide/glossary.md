@@ -304,7 +304,7 @@ With a custodial wallet-product, the users are not exposed to and in charge of s
 
 ### Hot / Cold wallet
 
-*Hot* and *cold* are often used to describe the wallet in terms of being connected to the internet. Where a hot wallet is connected to the internet, a cold wallet is not. The idea is that a cold wallet is less susceptible to third-party theft over the internet. Most software wallet-products would be seen as hot (although some can be used just for signing on a device not connected to the internet) and most hardware wallet-products would be seen as cold (although they are sometimes connected for signing purposes). 
+*Hot* and *cold* describe a wallet in terms of being connected to the internet. Where a hot wallet is connected to the internet, a cold wallet is not. The idea is that a cold wallet is less susceptible to third-party theft over the internet. Most software wallet-products would be seen as hot (although some can be used just for signing on a device not connected to the internet) and most hardware wallet-products would be seen as cold (although they are sometimes connected for signing purposes). 
 
 
 
