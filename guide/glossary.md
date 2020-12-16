@@ -33,7 +33,7 @@ The *SegWit* address format (for segregated witness) was introduced in an update
 
 The benefits of SegWit addresses include more resistance to input errors (as they are case insensitive and use error-correcting codes), and lower transaction fees. The fee saving will depend on the type of transaction but for a common transfer of funds it can be in the 30-40% range.
 
-*SegWit addresses* start with `bc1` and are all lowercase and case insensitive. <br/>
+*SegWit addresses* start with `bc1` and are case insensitive. <br/>
 For example: `bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq`
 
 **Change address**<br/>
