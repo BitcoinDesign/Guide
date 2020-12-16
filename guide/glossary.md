@@ -17,7 +17,7 @@ These are the three most common ones:
 
 
 **Legacy address - [P2PKH](https://en.bitcoin.it/wiki/Transaction#Pay-to-PubkeyHash){:target="_blank"}**<br/>
-Stands for pay-to-pubkey-hash, i.e pay to a hash of the recipient’s public key. This was the original address format for bitcoin and is sometimes called *legacy address*. Legacy addresses are not segwit compatible, but you can still send BTC from a P2PKH address to a segwit address without any problems. The average fee when sending from a P2PKH address is likely to be higher than when sending from a segwit address, however, because legacy address transactions are larger in size.
+Stands for pay-to-pubkey-hash, i.e pay to a hash of the recipient’s public key. This was the original address format for bitcoin and is often called *legacy address*.
 
 *Legacy addresses* begin with the number 1 and are mixed and case sensitive. <br/>
 For example: `1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2`
