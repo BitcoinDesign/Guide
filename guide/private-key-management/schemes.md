@@ -24,7 +24,7 @@ The private key controls the bitcoin wallet, and the *scheme* is simply a way to
 Important aspects to consider when choosing a private key management scheme is what you expect your customers to use the wallet-application for, who they are and how much bitcoin they might store in your product. For example;
 
 
-* **Target audience** - Are your customers completely new to bitcoin and its concepts, or well versed in all the technological underpinnings?
+* **Target audience** - Are your users completely new to bitcoin and its concepts, or well versed in all the technological underpinnings?
 * **Use-case** - Are you building a product for frequent low value transactions, or somewhere for your customers to store their life savings?
 * **Value stored** - While we always strive for no loss of funds, how critical to their financial situation would it be if your customer lost access to their funds?
 
