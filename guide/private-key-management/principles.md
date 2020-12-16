@@ -32,7 +32,7 @@ Any loss is ultimately bad for both the user, the wallet-application maker and t
 
 The bitcoin community is firmly built on open-source, decentralization and the idea that the individual should be in full control of their funds. This has led to a number of standards that should make it fairly easy to switch and move your bitcoin wallet to a different wallet-application. Making sure that your product supports these standards when relevant is best practice and builds trust. 
 
-At a minimum, strive for supporting interoperability by enabling import and export, and using standard address derivation schemes.
+At a minimum, strive for supporting interoperability by enabling import and export, and using standard [address]({{ '/guide/glossary/#address' | relative_url }}){:target="_blank"} derivation schemes.
 
 ## Privacy
 

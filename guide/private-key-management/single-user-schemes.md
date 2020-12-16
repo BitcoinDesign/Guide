@@ -20,7 +20,7 @@ main_classes: -no-top-padding
 
 # Personal schemes
 
-Now let's dive in and look at the various schemes that might be suitable for a personal wallet-application with a single-user to understand the differences at a high level.
+Now let's dive in and look at the various schemes that might be suitable for a personal wallet-application with a single user to understand the differences at a high level.
 
 {% include image.html
    image = "/assets/images/guide/private-key-management/schemes/personal-schemes.jpg"
@@ -41,9 +41,9 @@ Now let's dive in and look at the various schemes that might be suitable for a p
 
 ## Automatic cloud backup
 
-By using an automatic cloud backup for the private key the user is NOT required to manually backup anything when setting up a new wallet. This is sometimes also called *seedless*, as the user is never exposed to the traditional *seed*, or recovery-phrase that is used to initiate a wallet. 
+By using an automatic cloud backup for the private key the user is NOT required to manually backup anything when setting up a new wallet. This is sometimes also called *seedless*, as the user is never exposed to the traditional *seed*, or [recovery-phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}){:target="_blank"} that is used to initiate a wallet. 
 
-The target audience with this scheme would be new or novice bitcoin users to whom being exposed to backing up a recovery-phrase as part of onboarding can be baffling and backfire. It could also be a starting point for a progressive security model that lets customers upgrade when they start accumulating more funds. 
+The target audience for this scheme would those new to bitcoin or novice users to whom being exposed to backing up a recovery-phrase as part of onboarding can be baffling and backfire. It could also be a starting point for a progressive security model that lets customers upgrade when they start accumulating more funds. 
 
 The automatic cloud backup scheme gives users reasonable security against theft, while providing low risk for self-inflicted losses. 
 
@@ -98,11 +98,11 @@ This makes the backup accessible by the user on a new device, should they lose t
 
 ## Manual backup / Recovery-phrase
 
-Manual backup of the recovery phrase have been the most common private key management scheme by far, since its proposal with [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki){:target="_blank"} in 2013. If you have used any non-custodial bitcoin product you are likely to have experienced the onboarding requirements of manual backups. 
+Manual backup of the [recovery-phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}){:target="_blank"} have been the most common private key management scheme by far, since its proposal with [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki){:target="_blank"} in 2013. If you have used any [non-custodial]({{ '/guide/glossary/#non-custodial--custodial-wallet' | relative_url }}){:target="_blank"} bitcoin application you are likely to have experienced the onboarding requirements of manual backups. 
 
 After creating a new wallet, you will be asked to manually backup a 12 or 24 word recovery-phrase to a *safe place*. As the next step it will often ask you to verify that you did save it by having you input the phrase in the correct order. 
 
-This scheme is suitable for target-audiences who are already familiar with bitcoin and procedures for secure off-line backups of the recovery-phrase. It is not suited for complete beginners. When told to store the backup in a safe way off-line, bitcoin-beginners in reality often take a screenshot, write it down in plain text somewhere on their mobile device, computer or a piece of paper on the fridge, or simply don’t back it up at all. This has the risk of achieving the opposite of what we want; high risk of self-inflicted loss and low to medium security in terms of third party theft.
+This scheme is suitable for audiences who are already familiar with bitcoin and procedures for secure off-line backups of the recovery-phrase. It is not suited for complete beginners. When told to store the backup in a safe way off-line, bitcoin-beginners in reality often take a screenshot, write it down in plain text somewhere on their mobile device, computer or a piece of paper on the fridge, or simply don’t back it up at all. This has the risk of achieving the opposite of what we want - high risk of self-inflicted loss and low to medium security in terms of third party theft.
 
 {% include image.html
    image = "/assets/images/guide/private-key-management/schemes/recovery-phrase.jpg"
@@ -122,7 +122,7 @@ This scheme is suitable for target-audiences who are already familiar with bitco
 - High onboarding friction
 
 ### How it works
-The wallet-application will generate a 12 or 24 word phrase (seed / recovery phrase) from which all the wallet’s keys can be derived. This means the user can have access to the wallet from any compatible wallet-application with the phrase, even if they lose the device or software.
+The wallet-application will generate a 12 or 24 word phrase (seed / [recovery-phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}){:target="_blank"}) from which all the wallet’s [keys]({{ '/guide/glossary/#keys' | relative_url }}){:target="_blank"} can be derived. This means the user can have access to the wallet from any compatible wallet-application with the phrase, even if they lose the device or software.
 
 This can be an effective way to reduce the risk of loss from theft if the backup is off-line in a safe place, but puts more of the op-sec burden on the individual user. The security and risk will only be as good as how they backup the recovery phrase. To get the best security out of recovery phrases they should be in several redundant and secure places off-line. You also need to take resistance to physical theft, fire and other destructive events into account. A fair amount of effort and knowledge is required for this. 
 
