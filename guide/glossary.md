@@ -9,9 +9,7 @@ nav_order: 4
 
 ## Address
 
-An identifier of 26-35 alphanumeric characters that is used to receive bitcoin. There are [several address formats](https://en.bitcoin.it/wiki/List_of_address_prefixes){:target="_blank"} based on different specifications. Users need to know this information during backup for future recovery so applications should inform users which format it uses as support varies across applications.```
-
-NOTE: In some places we say "wallet-products" and here we say "application". So we should have a conversation on what this should be called to have more harmony in the content - as I've also been leaning towards "applications", "bitcoin applications", "experiences" which introduces more inconsistencies. 
+An identifier of 26-35 alphanumeric characters that is used to receive bitcoin. There are [several address formats](https://en.bitcoin.it/wiki/List_of_address_prefixes){:target="_blank"} based on different specifications. Users need to know this information during backup for future recovery so applications should inform users which format it uses as support varies across applications.
 
 When users enter addresses, these formats can also be used to instantly validate correctness and possibly deduct other useful information.
 
@@ -211,9 +209,9 @@ A node policy that allows an unconfirmed transaction to be replaced with a diffe
 
 _Also referred to as Seed, Mnemonic, and Backup phrase._
 
-The controlling keypair of a bitcoin wallet can be derived from a *recovery phrase* of 12 words (or 18 or 24, which is less common) from a standardized list, defined in [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki){:target="_blank"}. The recovery phrase provides full access to a bitcoin wallet as it contains the private key and is therefore very valuable. It’s extremely important to keep it safe, both from other people getting access to it and for yourself not to lose it by creating one or several backups of the phrase. In many applications most of this work falls on the user and it’s important to acknowledge the responsibility here of the makers of the product to ensure that the user is able and aware of how to securely store a recovery phrase backup.
+The controlling keypair of a bitcoin wallet can be derived from a *recovery phrase* of 12 words (or 18 or 24, which is less common) from a standardized list, defined in [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki){:target="_blank"}. The recovery phrase provides full access to a bitcoin wallet as it contains the private key and is therefore very valuable. It’s extremely important to keep it safe, both from other people getting access to it and for yourself not to lose it by creating one or several backups of the phrase. In many applications most of this work falls on the user and it’s important to acknowledge the responsibility here of the makers of the application to ensure that the user is able and aware of how to securely store a recovery phrase backup.
 
-Many wallet-applications work with HD Wallets and recovery phrases, and are interoperable, meaning you can change the product that can control your wallet should you wish (although there are some caveats depending on if they support just BIP32 or also BIP44). 
+Many wallet-applications work with HD Wallets and recovery phrases, and are interoperable, meaning you can change the application that can control your wallet should you wish (although there are some caveats depending on if they support just BIP32 or also BIP44). 
 
 **Technicalities** - Recovery of multisig-wallets needs both the extended public key and the recovery phrase of all paticipating keys as well as the master key fingerprint as defined by BIP32 concatenated with the derivation path of the public key. The derivation path is represented as 32-bit little endian unsigned integer indexes concatenated with each other. The number of 32 bit unsigned integer indexes must match the depth provided in the extended public key.
 
@@ -300,13 +298,13 @@ A software application used to manage a bitcoin wallet.
 
 ### Non-custodial / Custodial wallet
 
-A non-custodial wallet-product implies that the private key and/or recovery phrase is in full control of the end-user. This means that transactions can never be made without the user's direct action. It also means that should the user forget or misplace their recovery phrase, wallet-product makers cannot help restore access to the funds in the bitcoin wallet. _This guide is focused on non-custodial wallets._
+A non-custodial wallet-application implies that the private key and/or recovery phrase is in full control of the end-user. This means that transactions can never be made without the user's direct action. It also means that should the user forget or misplace their recovery phrase, wallet-application makers cannot help restore access to the funds in the bitcoin wallet. _This guide is focused on non-custodial wallets._
 
-With a custodial wallet-product, the users are not exposed to and in charge of securing the recovery phrase. Often custodial wallet-products require users to sign in with their email and password. Users have to trust the wallet-product makers to secure their recovery phrase and bitcoin. With a custodial wallet-product, the makers of it are technically in control of their users' funds. Most exchanges give users custodial wallets.
+With a custodial wallet-application, the users are not exposed to and in charge of securing the recovery phrase. Often custodial wallet-applications require users to sign in with their email and password. Users have to trust the wallet-application makers to secure their recovery phrase and bitcoin. With a custodial wallet-application, the makers of it are technically in control of their users' funds. Most exchanges give users custodial wallets.
 
 ### Hot / Cold wallet
 
-*Hot* and *cold* describe a wallet in terms of being connected to the internet. Where a hot wallet is connected to the internet, a cold wallet is not. The idea is that a cold wallet is less susceptible to third-party theft over the internet. Most software wallet-products would be seen as hot (although some can be used just for signing on a device not connected to the internet) and most hardware wallet-products would be seen as cold (although they are sometimes connected for signing purposes). 
+*Hot* and *cold* describe a wallet in terms of being connected to the internet. Where a hot wallet is connected to the internet, a cold wallet is not. The idea is that a cold wallet is less susceptible to third-party theft over the internet. Most software wallet-application would be seen as hot (although some can be used just for signing on a device not connected to the internet) and most hardware wallet-application would be seen as cold (although they are sometimes connected for signing purposes). 
 
 
 
