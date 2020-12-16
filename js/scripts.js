@@ -85,7 +85,7 @@ function loadSearchData() {
 		if (request.readyState === 4) {
 			searchData = JSON.parse(request.responseText);
 
-			searchIndex = lunr(function () {
+			searchIndex = lunr(function() {
 	      this.field('id');
 	      this.field('title', { boost: 10 });
 	      this.field('author');
@@ -102,8 +102,6 @@ function loadSearchData() {
 	        'content': searchData[key].content
 	      });
 	    }
-
-			console.log('searchData', searchData, searchIndex);
 		}
 	};
 
@@ -122,7 +120,7 @@ function handleSearchInput(event) {
       loadSearchData();
     } else if(searchIndex) {
       var results = searchIndex.search(searchInput.value); // Get lunr to perform a search
-      displaySearchResults(searchInput, results);
+      displaySearchResults(searchInput.value, results);
     }
 
     var searchBox = document.getElementById("toggled-search");
@@ -139,12 +137,23 @@ function displaySearchResults(searchInput, results) {
     var item;
     var maxVisible = 5;
 
+    var content, contentBits, k, index;
     for(var i = 0; i < Math.min(maxVisible, results.length); i++) {  // Iterate over the results
       item = searchData[results[i].ref];
-      
+
+      // Strip Jekyll includes.
+      contentBits = item.content.split('{%');
+      for(k=0; k<contentBits.length; k++) {
+        index = contentBits[k].indexOf('%}');
+        if(index !== -1) {
+          contentBits[k] = contentBits[k].substring(index+2);
+        }
+      }
+      content = contentBits.join('').substring(0, 150);
+
       appendString += '<li><a href="' + item.url + '">';
       appendString += '<h3>' + item.title + '</h3>';
-      appendString += '<p>' + item.content.substring(0, 150) + '...</p>';
+      appendString += '<p>' + content + '...</p>';
       appendString += '</a></li>';
     }
 
