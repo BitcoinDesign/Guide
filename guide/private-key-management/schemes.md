@@ -25,7 +25,7 @@ Important aspects to consider when choosing a private key management scheme is w
 
 
 * **Target audience** - Are your users completely new to bitcoin and its concepts, or well versed in all the technological underpinnings?
-* **Use-case** - Are you building a product for frequent low value transactions, or somewhere for your customers to store their life savings?
+* **Use-case** - Are you building a product for daily payments, or a long-term life-saving storage solution?
 * **Value stored** - While we always strive for no loss of funds, how critical to their financial situation would it be if your customer lost access to their funds?
 
 
