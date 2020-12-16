@@ -270,7 +270,7 @@ A single private key is split into n key-shares that are distributed to several 
 ## Multi-key
 All of the above schemes have relied on a single private key to control the wallet. This presents an all-or-nothing risk for loss of funds from both theft and negligence. To counter this a wallet can have several private keys attached of which all or a subset need to sign any transactions. 
 
-This is often called multi-signature, or multisig for short and described as ‘n-of-n’ to indicate how many keys are needed to sign a transaction out of the issued number. For example a ‘2-of-3’ setup requires two of the three private keys to sign a transaction for it to be valid.
+This is often called multi-signature, or multisig for short, but is also sometimes referred to as a *vault*. A multi-key setup is described as *n-of-n* to indicate how many keys are needed to sign a transaction out of the issued number. For example a *2-of-3* setup requires two of the three private keys to sign a transaction for it to be valid.
 
 Multi-key schemes can raise the security, since anyone needs access to more than one key to move any funds. But clearly it also increases complexity and the requirements on the user to keep even more keys securely stored and/or backed up.
 
