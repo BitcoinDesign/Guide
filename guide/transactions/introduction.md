@@ -33,11 +33,6 @@ We only use this as an example because to make it easier to communicate the capa
 
 Below we explore the structure and lifecycle of an on-chain bitcoin transaction.
 
-```mermaid
-graph LR
-	1(Reason) --> 2(Invoice Creation) --> 3(Transaction Creation) --> 4(Transaction Processing) --> 5(First Confirmation) --> 6(More Blocks Generated)
-```
-
 ---
 
 #### [Funding a transaction](#)
