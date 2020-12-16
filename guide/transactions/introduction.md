@@ -88,7 +88,7 @@ At this point the transaction is not yet confirmed — we say the transaction is
 
 #### [Speeding Up / Canceling](#)
 
-While in the mempool — its possible to speed up the transaction or even cancel it. Not all transactions can do this — an option called "Replace by Fee" needs to be turned on before the transaction is broadcasted.
+While in the mempool — it's possible to speed up the transaction or even cancel it. Not all transactions can do this — an option called "Replace by Fee" needs to be turned on before the transaction is broadcasted.
 
 ---
 
