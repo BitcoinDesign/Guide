@@ -36,6 +36,9 @@ The benefits of Bech32 addresses include more resistance to input errors (they a
 *SegWit addresses* start with `bc1` and are all lowercase and case insensitive. <br/>
 For example: `bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq`
 
+**Change address**
+When the output of a transaction is used as the input of another transaction, it must be spent in its entirety. Sometimes the value of the output is higher than what the user wishes to pay. In this case, the bitcoin client generates a new Bitcoin address, and sends the difference back to this address. This is known as *change address*.
+
 ## Account
 
 Just like wallet, the term account can also be used for very different things. In bitcoin wallets that follow the hierarchy described in [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki){:target="_blank"}, a bitcoin wallet can have multiple accounts, with each one having its own addresses. However, account is also oftentimes used for accounts with third-party service providers.
@@ -65,9 +68,6 @@ A standardized design document format for suggesting improvements to Bitcoin. Th
 - [BIP173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki){:target="_blank"}: *Bech32* standard for native segregated witness addresses 
 - [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki){:target="_blank"}: Partially Signed Bitcoin Transaction Format
 
-## Change address
-When the output of a transaction is used as the input of another transaction, it must be spent in its entirety. Sometimes the value of the output is higher than what the user wishes to pay. In this case, the bitcoin client generates a new Bitcoin address, and sends the difference back to this address. This is known as *change address*.
-
 ## Coin control
 
 <div class="center" markdown="1">
@@ -91,7 +91,7 @@ As it is possible to trace the history of coins and see how they were previously
 
 ## CoinJoin
 
-<div class="center" markdown="1">
+<div class="center">
 
 {% include image.html
    image = "/assets/images/guide/glossary/coinjoin.jpg"
