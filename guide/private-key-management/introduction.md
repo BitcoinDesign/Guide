@@ -53,4 +53,4 @@ A look at some hypothetical use-case categories and what might be suitable appro
 
 ---
 
-Let's get started with an overview of private key management [schemes]({{ '/guide/private-key-management/schemes/' | relative_url }}).
+Let's get started with an overview of [private key schemes]({{ '/guide/private-key-management/schemes/' | relative_url }}).
