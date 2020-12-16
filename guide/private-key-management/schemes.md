@@ -44,7 +44,7 @@ As a simplification we can characterize the main potentials for loss of funds as
 
 So your goal is to make it hard for users to lose their keys, and at the same time, make it hard for a third party to get to them. 
 
-Casa's [wealth security protocol]({{ 'https://github.com/Casa/wealth-security-protocol/blob/master/casa-wealth-security-protocol.pdf'}}) is good reading material for more complete views on threat vectors and risk.
+Casa's [wealth security protocol]({{ 'https://github.com/Casa/wealth-security-protocol/blob/master/casa-wealth-security-protocol.pdf'}}){:target="_blank"} is good reading material for more complete views on threat vectors and risk.
 
 ## Picking a scheme for your product
 
