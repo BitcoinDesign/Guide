@@ -3,7 +3,7 @@ layout: guide
 title: Resources
 nav_order: 11
 has_children: true
-permalink: /guide/resources
+permalink: /guide/resources/
 ---
 
 # Resources
