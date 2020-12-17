@@ -62,10 +62,10 @@ A standardized technical document format for suggesting improvements to Bitcoin.
 
 - [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki){:target="_blank"}: Mnemonic code for generating deterministic keys
 - [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki){:target="_blank"}: Multi-account hierarchy for HD wallets
-- [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki){:target="_blank"}: Derivation scheme for HD wallets using P2WPKH-nested-in-P2SH, nested SegWit
-- [BIP84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki){:target="_blank"}: Derivation scheme for HD wallets using P2WPKH, native SegWit
-- [BIP141](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki){:target="_blank"}: Segregated Witness, changes to transaction structure
-- [BIP173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki){:target="_blank"}: *Bech32* standard for native segregated witness addresses 
+- [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki){:target="_blank"}: Derivation scheme for HD wallets using nested SegWit
+- [BIP84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki){:target="_blank"}: Derivation scheme for HD wallets using SegWit
+- [BIP141](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki){:target="_blank"}: SegWit, changes to transaction structure
+- [BIP173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki){:target="_blank"}: *Bech32* standard for native SegWit addresses 
 - [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki){:target="_blank"}: Partially Signed Bitcoin Transaction Format
 
 ## Coin control
@@ -107,19 +107,22 @@ As it is possible to trace the history of coins and see how they were previously
 
 </div>
 
-## Output script descriptor
+## Derivation path
 
-A small piece of data that has all the information needed to generate a specific set of addresses or keys. Bundling this data in a standardized format has several benefits. It is harder to forget important configuration details, and it is more efficient than transmitting a long list of addresses or keys.
+There are several standards for how to notate the path to a key and corresponding address in [HD wallets](#hd-wallet). It is important to know which ones are used and supported by a wallet-application when importing and exporting a wallet. The most common are:
 
-{% include picture.html
-   image = "/assets/images/guide/glossary/descriptors.jpg"
-   retina = "/assets/images/guide/glossary/descriptors@2x.jpg"
-   mobile = "/assets/images/guide/glossary/descriptors-mobile.jpg"
-   mobileRetina = "/assets/images/glossary/descriptors-mobile@2x.jpg"
-   alt-text = ""
-   width = 1600
-   height = 400
-%}
+- [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki){:target="_blank"}: original, deprecated
+- [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki){:target="_blank"}: multi-account for HD wallets
+- [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki){:target="_blank"}: multi-account, for script addresses with nested-SegWit
+- [BIP84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki){:target="_blank"}: multi-account, for SegWit addresses
+
+BIP44 instroduced the following structure, which BIP49 and BIP84 follow:<br/>
+`m / purpose / coin_type / account / change / index`
+
+The path to the first address in a bitcoin-wallet using BIP84 will look like this:<br/>
+`m/84h/0h/0h/0/0`
+
+For full interoperability a wallet should support all of these standards. More information can be found [here](https://learnmeabitcoin.com/technical/derivation-paths).
 
 ## Extended private key (XPRIV)
 
@@ -171,7 +174,7 @@ A standard for multi-signature that uses Schnorr signatures. Previously, the mor
 
 ## Node
 
-Node refers to software that participates in the bitcoin network. It exchanges transaction data with other nodes, stores some or all of it, and verifies that transactions are valid. 
+Node refers to [software]({{ '/guide/getting-started/software/#nodes' | relative_url }}) that participates in the bitcoin network. It exchanges transaction data with other nodes, stores some or all of it, and verifies that transactions are valid. There is also dedicated [node hardware]({{ '/guide/getting-started/hardware/#hardware-wallets' | relative_url }}).
 
 ### Full node
 
@@ -187,6 +190,20 @@ A full node that has not only verified all data, but also stores and provides it
 
 ## Output
 The opposite of an input, an output is when an address sends bitcoin to another address. Transactions can include multiple outputs.
+
+## Output script descriptor
+
+A small piece of data that has all the information needed to generate a specific set of addresses or keys. Bundling this data in a standardized format has several benefits. It is harder to forget important configuration details, and it is more efficient than transmitting a long list of addresses or keys.
+
+{% include picture.html
+   image = "/assets/images/guide/glossary/descriptors.jpg"
+   retina = "/assets/images/guide/glossary/descriptors@2x.jpg"
+   mobile = "/assets/images/guide/glossary/descriptors-mobile.jpg"
+   mobileRetina = "/assets/images/glossary/descriptors-mobile@2x.jpg"
+   alt-text = ""
+   width = 1600
+   height = 400
+%}
 
 ## Private key
 Every bitcoin address has a public key and a corresponding private key, together they are called a keypair. If you have access to both the public and private key, you effectively control the funds in the address. As with HD Wallets there are also keypairs that control *branches* in the hierarchical tree of the wallet, and at the very top is the extended keypair (x-pub and x-prv for short) that control all the addresses in the wallet.
@@ -286,17 +303,19 @@ All bitcoin-related data derived from and associated with a single recovery phra
 
 Hierarchical Deterministic wallets, or HD wallets, can create infinite keypairs organized in a tree-structure (hierarchical) from a single (deterministic) controlling keypair. They were introduced and defined in [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki){:target="_blank"} and then expanded with [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki){:target="_blank"} which added the ability to handle multiple *accounts* in one wallet. 
 
-**Technicalities** - There are different bitcoin address standards; Legacy, Native SegWit (segregated witness) and Nested SegWit. They have to be held in different branches of the HD wallet but can be controlled by the same recovery phrase. Native SegWit uses Bech32 address formats specified in [BIP173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki){:target="_blank"}.
+**Technicalities** - There are different bitcoin address formats (see [address](#address)). They have to be held in different branches of the HD wallet but can be controlled by the same recovery phrase.
 
 ### Hardware wallet
 
-A hardware device used to manage a bitcoin wallet.
+A hardware device used to manage a bitcoin wallet. More on the [Hardware overview]({{ '/guide/getting-started/hardware/#hardware-wallets' | relative_url }}) page.
 
 ### Wallet application
 
-A software application used to manage a bitcoin wallet.
+A software application used to manage a bitcoin wallet. More on the [Hardware overview]({{ '/guide/getting-started/software/#wallets' | relative_url }}) page.
 
 ### Non-custodial / Custodial wallet
+
+_Also known as unhosted / self-hosted / hosted wallet._
 
 A non-custodial wallet-application implies that the private key and/or recovery phrase is in full control of the end-user. This means that transactions can never be made without the user's direct action. It also means that should the user forget or misplace their recovery phrase, wallet-application makers cannot help restore access to the funds in the bitcoin wallet. _This guide is focused on non-custodial wallets._
 
@@ -305,8 +324,6 @@ With a custodial wallet-application, the users are not exposed to and in charge 
 ### Hot / Cold wallet
 
 *Hot* and *cold* describe a wallet in terms of being connected to the internet. Where a hot wallet is connected to the internet, a cold wallet is not. The idea is that a cold wallet is less susceptible to third-party theft over the internet. Most software wallet-application would be seen as hot (although some can be used just for signing on a device not connected to the internet) and most hardware wallet-application would be seen as cold (although they are sometimes connected for signing purposes). 
-
-
 
 ## Additional resources
 
