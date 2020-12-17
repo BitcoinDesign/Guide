@@ -171,7 +171,7 @@ A standard for multi-signature that uses Schnorr signatures. Previously, the mor
 
 ## Node
 
-Node refers to software that participates in the bitcoin network. It exchanges transaction data with other nodes, stores some or all of it, and verifies that transactions are valid. 
+Node refers to [software]({{ '/guide/getting-started/software/#nodes' | relative_url }}) that participates in the bitcoin network. It exchanges transaction data with other nodes, stores some or all of it, and verifies that transactions are valid. There is also dedicated [node hardware]({{ '/guide/getting-started/hardware/#hardware-wallets' | relative_url }}).
 
 ### Full node
 
@@ -290,13 +290,15 @@ Hierarchical Deterministic wallets, or HD wallets, can create infinite keypairs 
 
 ### Hardware wallet
 
-A hardware device used to manage a bitcoin wallet.
+A hardware device used to manage a bitcoin wallet. More on the [Hardware overview]({{ '/guide/getting-started/hardware/#hardware-wallets' | relative_url }}) page.
 
 ### Wallet application
 
-A software application used to manage a bitcoin wallet.
+A software application used to manage a bitcoin wallet. More on the [Hardware overview]({{ '/guide/getting-started/software/#wallets' | relative_url }}) page.
 
 ### Non-custodial / Custodial wallet
+
+_Also known as unhosted / self-Hosted / hosted wallet._
 
 A non-custodial wallet-application implies that the private key and/or recovery phrase is in full control of the end-user. This means that transactions can never be made without the user's direct action. It also means that should the user forget or misplace their recovery phrase, wallet-application makers cannot help restore access to the funds in the bitcoin wallet. _This guide is focused on non-custodial wallets._
 
@@ -305,8 +307,6 @@ With a custodial wallet-application, the users are not exposed to and in charge 
 ### Hot / Cold wallet
 
 *Hot* and *cold* describe a wallet in terms of being connected to the internet. Where a hot wallet is connected to the internet, a cold wallet is not. The idea is that a cold wallet is less susceptible to third-party theft over the internet. Most software wallet-application would be seen as hot (although some can be used just for signing on a device not connected to the internet) and most hardware wallet-application would be seen as cold (although they are sometimes connected for signing purposes). 
-
-
 
 ## Additional resources
 
