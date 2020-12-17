@@ -29,6 +29,8 @@ Illustration sources
 {% include image.html
    image = "/assets/images/guide/getting-started/technology/blueprint.jpg"
    retina = "/assets/images/guide/getting-started/technology/blueprint@2x.jpg"
+   mobile = "/assets/images/guide/getting-started/technology/blueprint-mobile.jpg"
+   mobileRetina = "/assets/images/guide/getting-started/technology/blueprint-mobile@2x.jpg"
    alt-text = "Blueprint illustration of a bitcoin symbol"
    width = 1600
    height = 800
