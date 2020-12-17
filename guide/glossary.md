@@ -62,8 +62,8 @@ A standardized technical document format for suggesting improvements to Bitcoin.
 
 - [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki){:target="_blank"}: Mnemonic code for generating deterministic keys
 - [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki){:target="_blank"}: Multi-account hierarchy for HD wallets
-- [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki){:target="_blank"}: Derivation scheme for HD wallets using P2WPKH-nested-in-P2SH, nested SegWit
-- [BIP84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki){:target="_blank"}: Derivation scheme for HD wallets using P2WPKH, native SegWit
+- [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki){:target="_blank"}: Derivation scheme for HD wallets using nested SegWit
+- [BIP84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki){:target="_blank"}: Derivation scheme for HD wallets using SegWit
 - [BIP141](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki){:target="_blank"}: Segregated Witness, changes to transaction structure
 - [BIP173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki){:target="_blank"}: *Bech32* standard for native segregated witness addresses 
 - [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki){:target="_blank"}: Partially Signed Bitcoin Transaction Format
@@ -111,16 +111,16 @@ Allow for combining multiple payments from multiple spenders into a single trans
 
 There are several standards for how to notate the path to a key and corresponding address in [HD wallets](#hd-wallet). It is important to know which ones are used and supported by a wallet-application when importing and exporting a wallet. The most common are:
 
-BIP32: original, deprecated
-[BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki){:target="_blank"}: multi-account for HD wallets
-[BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki){:target="_blank"}: multi-account, for script addresses with nested-SegWit
-[BIP84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki){:target="_blank"}: multi-account, for SegWit addresses
+BIP32: original, deprecated<br/>
+[BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki){:target="_blank"}: multi-account for HD wallets<br/>
+[BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki){:target="_blank"}: multi-account, for script addresses with nested-SegWit<br/>
+[BIP84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki){:target="_blank"}: multi-account, for SegWit addresses<br/>
 
-BIP44 instroduced the following structure, which BIP49 and BIP84 follow:
+BIP44 instroduced the following structure, which BIP49 and BIP84 follow:<br/>
 `m / purpose / coin_type / account / change / index`
 
-The path to the first address in a bitcoin-wallet using BIP84 will look like this:
-`m/84h/0h/0h/0/0` and hold a SegWit address `bc1qacwy02va0hajhuge9xf5cl3mrm9hmj7jhpvc87`
+The path to the first address in a bitcoin-wallet using BIP84 will look like this:<br/>
+`m/84h/0h/0h/0/0`
 
 For full interoperability a wallet should support all of this standards. More information can be found [here](https://learnmeabitcoin.com/technical/derivation-paths).
 
