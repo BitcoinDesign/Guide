@@ -26,7 +26,7 @@ Illustration sources
 
 -->
 
-{% include image.html
+{% include picture.html
    image = "/assets/images/guide/getting-started/technology/blueprint.jpg"
    retina = "/assets/images/guide/getting-started/technology/blueprint@2x.jpg"
    mobile = "/assets/images/guide/getting-started/technology/blueprint-mobile.jpg"
