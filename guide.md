@@ -1,7 +1,7 @@
 ---
 layout: guide
 nav_order: 1
-title: Bitcoin Design Guide
+title: Guide
 description: The Bitcoin Design Guide is a reference for the design of bitcoin applications. 
 permalink: /guide/
 main_nav: true
