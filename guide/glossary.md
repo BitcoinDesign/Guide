@@ -107,20 +107,6 @@ Allow for combining multiple payments from multiple spenders into a single trans
 
 </div>
 
-## Output script descriptor
-
-A small piece of data that has all the information needed to generate a specific set of addresses or keys. Bundling this data in a standardized format has several benefits. It is harder to forget important configuration details, and it is more efficient than transmitting a long list of addresses or keys.
-
-{% include picture.html
-   image = "/assets/images/guide/glossary/descriptors.jpg"
-   retina = "/assets/images/guide/glossary/descriptors@2x.jpg"
-   mobile = "/assets/images/guide/glossary/descriptors-mobile.jpg"
-   mobileRetina = "/assets/images/glossary/descriptors-mobile@2x.jpg"
-   alt-text = ""
-   width = 1600
-   height = 400
-%}
-
 ## Extended private key (XPRIV)
 
 In a hierarchical deterministic wallet, all addresses and their matching private keys are derived from this extended private key.
@@ -187,6 +173,20 @@ A full node that has not only verified all data, but also stores and provides it
 
 ## Output
 The opposite of an input, an output is when an address sends bitcoin to another address. Transactions can include multiple outputs.
+
+## Output script descriptor
+
+A small piece of data that has all the information needed to generate a specific set of addresses or keys. Bundling this data in a standardized format has several benefits. It is harder to forget important configuration details, and it is more efficient than transmitting a long list of addresses or keys.
+
+{% include picture.html
+   image = "/assets/images/guide/glossary/descriptors.jpg"
+   retina = "/assets/images/guide/glossary/descriptors@2x.jpg"
+   mobile = "/assets/images/guide/glossary/descriptors-mobile.jpg"
+   mobileRetina = "/assets/images/glossary/descriptors-mobile@2x.jpg"
+   alt-text = ""
+   width = 1600
+   height = 400
+%}
 
 ## Private key
 Every bitcoin address has a public key and a corresponding private key, together they are called a keypair. If you have access to both the public and private key, you effectively control the funds in the address. As with HD Wallets there are also keypairs that control *branches* in the hierarchical tree of the wallet, and at the very top is the extended keypair (x-pub and x-prv for short) that control all the addresses in the wallet.
