@@ -64,8 +64,8 @@ A standardized technical document format for suggesting improvements to Bitcoin.
 - [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki){:target="_blank"}: Multi-account hierarchy for HD wallets
 - [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki){:target="_blank"}: Derivation scheme for HD wallets using nested SegWit
 - [BIP84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki){:target="_blank"}: Derivation scheme for HD wallets using SegWit
-- [BIP141](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki){:target="_blank"}: Segregated Witness, changes to transaction structure
-- [BIP173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki){:target="_blank"}: *Bech32* standard for native segregated witness addresses 
+- [BIP141](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki){:target="_blank"}: SegWit, changes to transaction structure
+- [BIP173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki){:target="_blank"}: *Bech32* standard for native SegWit addresses 
 - [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki){:target="_blank"}: Partially Signed Bitcoin Transaction Format
 
 ## Coin control
