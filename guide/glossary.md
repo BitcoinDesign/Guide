@@ -286,7 +286,7 @@ All bitcoin-related data derived from and associated with a single recovery phra
 
 Hierarchical Deterministic wallets, or HD wallets, can create infinite keypairs organized in a tree-structure (hierarchical) from a single (deterministic) controlling keypair. They were introduced and defined in [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki){:target="_blank"} and then expanded with [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki){:target="_blank"} which added the ability to handle multiple *accounts* in one wallet. 
 
-**Technicalities** - There are different bitcoin address standards; Legacy, Native SegWit (segregated witness) and Nested SegWit. They have to be held in different branches of the HD wallet but can be controlled by the same recovery phrase. Native SegWit uses Bech32 address formats specified in [BIP173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki){:target="_blank"}.
+**Technicalities** - There are different bitcoin address formats (see [address](#address)). They have to be held in different branches of the HD wallet but can be controlled by the same recovery phrase.
 
 ### Hardware wallet
 
