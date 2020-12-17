@@ -315,7 +315,7 @@ A software application used to manage a bitcoin wallet. More on the [Hardware ov
 
 ### Non-custodial / Custodial wallet
 
-_Also known as unhosted / self-Hosted / hosted wallet._
+_Also known as unhosted / self-hosted / hosted wallet._
 
 A non-custodial wallet-application implies that the private key and/or recovery phrase is in full control of the end-user. This means that transactions can never be made without the user's direct action. It also means that should the user forget or misplace their recovery phrase, wallet-application makers cannot help restore access to the funds in the bitcoin wallet. _This guide is focused on non-custodial wallets._
 
