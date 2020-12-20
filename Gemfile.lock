@@ -43,6 +43,9 @@ GEM
     image_optim_pack (0.7.0)
       fspath (>= 2.1, < 4)
       image_optim (~> 0.19)
+    image_optim_pack (0.7.0-x86_64-linux)
+      fspath (>= 2.1, < 4)
+      image_optim (~> 0.19)
     image_size (2.1.0)
     in_threads (1.5.4)
     jekyll (4.1.1)
@@ -109,6 +112,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86_64-linux
 
 DEPENDENCIES
   html-proofer
@@ -117,9 +121,10 @@ DEPENDENCIES
   jekyll-feed (~> 0.12)
   jekyll-seo-tag
   minima (~> 2.5)
+  nokogiri (= 1.10.10)
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
 
 BUNDLED WITH
-   2.1.4
+   2.2.2
