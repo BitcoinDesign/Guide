@@ -90,8 +90,8 @@ Should they lose either their main mobile device, or the purpose-built signing d
 - Key setup, rotation, recovery and signing flows
 
 #### Technical considerations
-- Pitfalls of using hardware wallets in multisig
-- Need to take care when backing up to include x-pubs from all keys
+- Complexities of multi-key setups
+- Implement thorough backup code and instructions for users
 - Usage could be simplified by having hardware device designed/customized by the software maker (compare banks and their digital token signers common in Europe)
 
 You can find a prototype for this case study embedded above, and a Figma file with [outline designs here](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=6%3A9){:target="_blank"}.
