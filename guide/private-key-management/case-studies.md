@@ -54,7 +54,7 @@ A single-key scheme with [automatic cloud backup]({{ '/guide/private-key-managem
 #### Technical considerations
 - Back up encrypted recovery-phrase automatically to retain export option in the future
 - Use a platform-appropriate storage location (keychain with iCloud, Google Drive)
-- Additional user authentication to consider: biometrics, pin)
+- Additional user authentication to consider: biometrics, pin
 - Upgrade-path to other schemes if funds stored increase 
 
 You can find a prototype for this case study embedded above, and a Figma file with [outline designs here](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=0%3A1){:target="_blank"}.
