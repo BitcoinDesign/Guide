@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Private key schemes
+description: An overview of personal and shared schemes, and how to pick one for your product depending on your use-case.
 nav_order: 1
 parent: Private key management
 permalink: /guide/private-key-management/schemes/

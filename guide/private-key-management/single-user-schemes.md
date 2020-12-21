@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Personal schemes
+description: An overview of personal private key management schemes.
 nav_order: 2
 parent: Private key management
 permalink: /guide/private-key-management/single-user-schemes/

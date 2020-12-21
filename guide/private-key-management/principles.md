@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Principles
+description: Principles to strive for while building bitcoin applications for end-users.
 nav_order: 4
 parent: Private key management
 permalink: /guide/private-key-management/principles/

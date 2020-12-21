@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Case studies
+description: A range of case study designs for bitcoin applications.
 nav_order: 5
 parent: Private key management
 permalink: /guide/private-key-management/case-studies/
