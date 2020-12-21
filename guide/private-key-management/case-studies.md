@@ -69,7 +69,7 @@ If users have no prior bitcoin knowledge we should expect to spend a significant
 
 A 2-of-3 [multi-key setup]({{ '/guide/private-key-management/single-user-schemes/#multi-key' | relative_url }}) would seem the most appropriate here, although it will be a significant hurdle in onboarding. Other schemes could be considered but come with distinct downsides for amounts of value we can expect users to store in this use-case. A single-key scheme with an automatic cloud backup, recovery-phrase or single signing device could work at the lower end of the value scale, but start to look like less responsible recommendations with higher values due to their single points of failure.
 
-A key question is the combination of key-storage devices and their distribution. We have many options here, and it might come down to the experience of the target audience and their expected access to the necessary hardware; 
+An important question is the combination of key-storage devices and their distribution. We have many options here, and it might come down to the experience of the target audience and their expected access to the necessary hardware; 
 
 - As low friction as possible (co-managed, no purpose-built signing device)
 - Middle ground (co-managed, one purpose-built signing device)
