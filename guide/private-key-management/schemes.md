@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Private key schemes
-description: An overview of personal and shared schemes, and how to pick one for your product depending on your use-case.
+description: An overview of personal and shared schemes, and how to pick one for your product depending on your use case.
 nav_order: 1
 parent: Private key management
 permalink: /guide/private-key-management/schemes/
@@ -13,7 +13,7 @@ image: /assets/images/guide/private-key-management/schemes/page-private-key-sche
 
 Editor's notes
 
-An overview of what different private key management schemes there are, and how to choose one depending on use-case.
+An overview of what different private key management schemes there are, and how to choose one depending on use case.
 
 -->
 
@@ -31,11 +31,11 @@ An overview of what different private key management schemes there are, and how 
 # Private key schemes
 The private key controls the bitcoin [wallet]({{ '/guide/glossary/#wallet' | relative_url }}){:target="_blank"}, and the *scheme* is simply a way to describe the way that the key is stored and kept secure.
 
-Important aspects to consider when choosing a private key management scheme is what you expect your users to use the wallet-application for, who they are and how much bitcoin they might store in your product. For example:
+Important aspects to consider when choosing a private key management scheme is what you expect your users to use the wallet application for, who they are and how much bitcoin they might store in your product. For example:
 
 
 * **Target audience** - Are your users completely new to bitcoin and its concepts, or well versed in all the technological underpinnings?
-* **Use-case** - Are you building a product for daily payments, or a long-term life-saving storage solution?
+* **Use case** - Are you building a product for daily payments, or a long-term life-saving storage solution?
 * **Value stored** - While we always strive for no loss of funds, how critical to their financial situation would it be if your customer lost access to their funds?
 
 
@@ -43,9 +43,9 @@ The narrower you can define your answer to these questions, the easier it will b
 
 ## Balancing security, risk and convenience
 
-The trick to picking a private key management scheme is finding the appropriate balance between convenience on the one hand, and risk of loss and redundant security on the other. While continuous improvements mean we can now enable higher security and good user experience at the same time, there is always a balance. Higher security generally means more friction and work for the user, both during setup and usage of a wallet-application. 
+The trick to picking a private key management scheme is finding the appropriate balance between convenience on the one hand, and risk of loss and redundant security on the other. While continuous improvements mean we can now enable higher security and good user experience at the same time, there is always a balance. Higher security generally means more friction and work for the user, both during setup and usage of a wallet application. 
 
-There are many potential threat-vectors for customers of non-custodial wallet-applications. People will be exposed differently to these vectors, and be more or less comfortable with their risk in each. 
+There are many potential threat-vectors for customers of non-custodial wallet applications. People will be exposed differently to these vectors, and be more or less comfortable with their risk in each. 
 
 As a simplification we can characterize the main potentials for loss of funds as;
 
@@ -58,7 +58,7 @@ Casa's [wealth security protocol]({{ 'https://github.com/Casa/wealth-security-pr
 
 ## Picking a scheme for your product
 
-Now that you have a clear picture of your use-case, target audience and risk vectors we can consider which schemes might be suitable for your product. 
+Now that you have a clear picture of your use case, target audience and risk vectors we can consider which schemes might be suitable for your product. 
 
 {% include image.html
    image = "/assets/images/guide/private-key-management/schemes/spectrum.jpg"
@@ -74,7 +74,7 @@ Now that you have a clear picture of your use-case, target audience and risk vec
    image = "/assets/images/guide/private-key-management/schemes/flow-chart.jpg"
    retina = "/assets/images/guide/private-key-management/schemes/flow-chart@2x.jpg"
    alt-text = "Private key management schemes, flowchart"
-   caption = "A flow-chart for picking a scheme based on use-case."
+   caption = "A flow-chart for picking a scheme based on use case."
    width = 2226
    height = 1416
    layout = "full-width"

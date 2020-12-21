@@ -32,7 +32,7 @@ Description of schemes suitable for multi-user scenarios.
 
 While multi-key setups can be used for personal use, if several people need to share funds multiple keys become a necessity. You will often see this referred to as *multi-sig* setups, stemming from the fact that multiple keys need to sign a transaction for it to be valid.
 
-The use-cases for shared schemes include spouses managing a joint account, groups, organizations or companies managing their funds, as well as inheritance planning. It can also be used for governance of an organization, with transactions used not to transfer funds but to record, or vote, for decisions. 
+The use cases for shared schemes include spouses managing a joint account, groups, organizations or companies managing their funds, as well as inheritance planning. It can also be used for governance of an organization, with transactions used not to transfer funds but to record, or vote, for decisions. 
 
 ## Shared multi-key
 
@@ -77,7 +77,7 @@ A wallet or coordination application initiates a multi-sig wallet, choosing the 
 - Make sure the multi-key setup itself is backed up properly, including x-pubs for all the participating keys, fingerprint and derivation.
 
 **Products that use this scheme** 
-Few tailor-made products exist for shared wallets, but any wallet-application that supports multi-key setups can be used to initiate a shared wallet. 
+Few tailor-made products exist for shared wallets, but any wallet application that supports multi-key setups can be used to initiate a shared wallet. 
 - [Electrum](https://electrum.org){:target="_blank"}
 - [Bluewallet](https://bluewallet.io){:target="_blank"}
 - [Specter](https://specter.solutions){:target="_blank"}

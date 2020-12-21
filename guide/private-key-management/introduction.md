@@ -35,21 +35,21 @@ When designing a bitcoin-application, the way you choose to manage the [private 
 
 If it’s not secure enough, you risk loss of user's funds. But if it’s not convenient enough, you risk not getting or retaining many users in the first place.
 
-This chapter is meant to give an overview of private key management schemes, including descriptions of  available approaches, some advice and best practices. After this chapter, you should be able to choose a solution that is well suited to your product’s use-case, and understand best-practices for the implementation of it.
+This chapter is meant to give an overview of private key management schemes, including descriptions of  available approaches, some advice and best practices. After this chapter, you should be able to choose a solution that is well suited to your product’s use case, and understand best-practices for the implementation of it.
 
 ---
 
 **[Private key schemes]({{ '/guide/private-key-management/schemes/' | relative_url }})**
 
-An overview of the most common private key management schemes for bitcoin products, and thoughts on picking a suitable scheme for your target audience and their use-case.
+An overview of the most common private key management schemes for bitcoin products, and thoughts on picking a suitable scheme for your target audience and their use case.
 
 **[Principles]({{ '/guide/private-key-management/principles/' | relative_url }})**
 
-Every use-case and product is different but there are things that all wallet-applications should strive for, and only diverge from with very good reasons.
+Every use case and product is different but there are things that all wallet applications should strive for, and only diverge from with very good reasons.
 
 **[Case studies]({{ '/guide/private-key-management/case-studies/' | relative_url }})**
 
-A look at some hypothetical use-case categories and what might be suitable approaches for private key management schemes for each of them.
+A look at some hypothetical use case categories and what might be suitable approaches for private key management schemes for each of them.
 
 ---
 

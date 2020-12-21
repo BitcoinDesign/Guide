@@ -30,7 +30,7 @@ A range of case study designs for bitcoin applications.
 
 # Case studies
 
-Before deciding on a private key management scheme it’s essential to have a good idea of what use-case and target audience your product has. Let’s look at some hypothetical use-case categories and what might be suitable approaches.
+Before deciding on a private key management scheme it’s essential to have a good idea of what use case and target audience your product has. Let’s look at some hypothetical use case categories and what might be suitable approaches.
 
 - [Cash / Daily spending]({{ '/guide/private-key-management/case-studies/#cash--daily-spending' | relative_url }})
 - [Current / Checking account]({{ '/guide/private-key-management/case-studies/#current--checking-account' | relative_url }})
@@ -43,7 +43,7 @@ Before deciding on a private key management scheme it’s essential to have a go
 
 Imagine a product which tries to solve the problem of quickly and easily sending smaller amounts of money to friends and family, or for small purchases. Ease and speed of use will be important as usage is likely to be on mobile devices and on the go. Users are not expected to be well versed in bitcoin technology or advanced private key management, which makes it reasonable to worry more about self-inflicted loss than from theft.
 
-A single-key scheme with [automatic cloud backup]({{ '/guide/private-key-management/single-user-schemes/#automatic-cloud-backup' | relative_url }}) might be the best choice for the majority of users in this case. For more advanced users you could offer the option to opt-out of automatic cloud backup and instead use a recovery-phrase.
+A single-key scheme with [automatic cloud backup]({{ '/guide/private-key-management/single-user-schemes/#automatic-cloud-backup' | relative_url }}) might be the best choice for the majority of users in this case. For more advanced users you could offer the option to opt-out of automatic cloud backup and instead use a recovery phrase.
 
 <iframe style="border: 0px solid rgba(0, 0, 0, 0.1);" width="450" height="1000" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSRWlaxbDulsacpPQn2TTri%2FCase-study-prototypes%3Fnode-id%3D1%253A3%26viewport%3D1204%252C392%252C0.5%26scaling%3Dmin-zoom" allowfullscreen></iframe>
 
@@ -53,7 +53,7 @@ A single-key scheme with [automatic cloud backup]({{ '/guide/private-key-managem
 - Onboarding with as little friction as possible
 
 #### Technical considerations
-- Back up encrypted recovery-phrase automatically to retain export option in the future
+- Back up encrypted recovery phrase automatically to retain export option in the future
 - Use a platform-appropriate storage location (keychain with iCloud, Google Drive)
 - Additional user authentication to consider: biometrics, pin
 - Upgrade-path to other schemes if funds stored increase 
@@ -68,7 +68,7 @@ A product that is meant to be a replacement for what a bank would call a current
 Safeguards against loss will be a higher priority than with a cash product, and we might therefore accept more friction both when setting up the wallet and when transacting.
 If users have no prior bitcoin knowledge we should expect to spend a significant effort educating them to put them in a position to safely operate the wallet product.
 
-A 2-of-3 [multi-key setup]({{ '/guide/private-key-management/single-user-schemes/#multi-key' | relative_url }}) would seem the most appropriate here, although it will be a significant hurdle in onboarding. Other schemes could be considered but come with distinct downsides for amounts of value we can expect users to store in this use-case. A single-key scheme with an automatic cloud backup, recovery-phrase or single signing device could work at the lower end of the value scale, but start to look like less responsible recommendations with higher values due to their single points of failure.
+A 2-of-3 [multi-key setup]({{ '/guide/private-key-management/single-user-schemes/#multi-key' | relative_url }}) would seem the most appropriate here, although it will be a significant hurdle in onboarding. Other schemes could be considered but come with distinct downsides for amounts of value we can expect users to store in this use case. A single-key scheme with an automatic cloud backup, recovery phrase or single signing device could work at the lower end of the value scale, but start to look like less responsible recommendations with higher values due to their single points of failure.
 
 An important question is the combination of key-storage devices and their distribution. We have many options here, and it might come down to the experience of the target audience and their expected access to the necessary hardware; 
 
@@ -77,11 +77,11 @@ An important question is the combination of key-storage devices and their distri
 - Full sovereignty (one or more purpose-built signing devices) 
 - All keys off-line (two or more purpose-built signing devices)
 
-For this case study we will go with the middle ground option which will require one purpose-built signing device such as a hardware wallet. The other two keys will be one created on the user’s main mobile device and automatically backed up to their cloud provider, and another key held by the wallet-application provider on a server for recovery. Neither of the two keys in the user’s control (mobile and signing device) will require recovery-phrase backups, although this could be offered as an option. 
+For this case study we will go with the middle ground option which will require one purpose-built signing device such as a hardware wallet. The other two keys will be one created on the user’s main mobile device and automatically backed up to their cloud provider, and another key held by the wallet application provider on a server for recovery. Neither of the two keys in the user’s control (mobile and signing device) will require recovery phrase backups, although this could be offered as an option. 
 
 The idea here is that the user will control the wallet through an app on their main mobile device, but when they are sending funds (paying bills etc) they will need to confirm the transaction on the purpose-built signing device.
 
-Should they lose either their main mobile device, or the purpose-built signing device they can replace the lost key (rotate in a new key) with the help of the recovery key. However, if they lose both the mobile and signing device they will not be able to recover their funds, unless they had also backed up either of the respective recovery-phrases. 
+Should they lose either their main mobile device, or the purpose-built signing device they can replace the lost key (rotate in a new key) with the help of the recovery key. However, if they lose both the mobile and signing device they will not be able to recover their funds, unless they had also backed up either of the respective recovery phrases. 
 
 <iframe style="border: 0px solid rgba(0, 0, 0, 0.1);" width="450" height="1000" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSRWlaxbDulsacpPQn2TTri%2FCase-study-prototypes%3Fnode-id%3D6%253A11%26viewport%3D479%252C82%252C0.5%26scaling%3Dscale-down" allowfullscreen></iframe>
 
@@ -101,7 +101,7 @@ You can find a prototype for this case study embedded above, and a Figma file wi
 
 ## General upgradeable wallet
 
-Although it is generally easier to build a great experience with a specific use-case in mind, let's look at a case where we would like to make a wallet that is as general as possible. It needs to be suitable both for beginners and expanding users, and for holding anything between small and significant amounts. How do we choose a single private key management scheme for this situation?
+Although it is generally easier to build a great experience with a specific use case in mind, let's look at a case where we would like to make a wallet that is as general as possible. It needs to be suitable both for beginners and expanding users, and for holding anything between small and significant amounts. How do we choose a single private key management scheme for this situation?
 
 The solution in this case could be a wallet that enables the user to upgrade the scheme as their experience and funds grow. The idea is to provide progressive security that doesn't introduce unnecessary friction until it is required. Our wallet will be able to switch from;
 
@@ -117,7 +117,7 @@ The solution in this case could be a wallet that enables the user to upgrade the
 - Guide the user through scheme upgrades as funds grow
 
 #### Technical considerations
-- Need to handle many schemes; automatic cloud backups, recovery-phrases, external signing devices, multi-key
+- Need to handle many schemes; automatic cloud backups, recovery phrases, external signing devices, multi-key
 
 You can find a prototype for this case study embedded above, and a Figma file with [outline designs here](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A269){:target="_blank"}.
 
