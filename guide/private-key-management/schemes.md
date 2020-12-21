@@ -79,7 +79,7 @@ Now that you have a clear picture of your use-case, target audience and risk vec
    layout = "full-width"
 %}
 
-We can divide the options up into personal and shared wallet schemes. The following pages goes into more detail about each one:
+We can divide the options up into personal and shared wallet schemes. The following pages explain each one in more detail:
 
 ### [Personal schemes]({{ '/guide/private-key-management/single-user-schemes/' | relative_url }})
 - **Automatic cloud backup** - no user action required for backup
