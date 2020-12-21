@@ -43,7 +43,7 @@ The narrower you can define your answer to these questions, the easier it will b
 
 ## Balancing security, risk and convenience
 
-The trick to picking a private key management scheme is finding the appropriate balance between convenience on the one hand, and risk of loss and redundant security on the other. While continuous improvements mean we can now enable higher security and good user experience at the same time, there is always a balance. Higher security generally means more friction and work for the user, both during setup and usage of a wallet application. 
+The trick to picking a private key management scheme is finding the appropriate balance between convenience on the one hand, and risk of loss and redundant security on the other. While learnings over the last decade mean we can now enable higher security and good user experience at the same time, there is always a balance. Higher security generally means more friction and work for the user, both during setup and usage of a wallet application. 
 
 There are many potential threat-vectors for customers of non-custodial wallet applications. People will be exposed differently to these vectors, and be more or less comfortable with their risk in each. 
 
