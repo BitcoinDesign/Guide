@@ -102,7 +102,7 @@ You can find a prototype for this case study embedded above, and a Figma file wi
 
 Although it is generally easier to build a great experience with a specific use-case in mind, let's look at a case where we would like to make a wallet that is as general as possible. It needs to be suitable both for beginners and expanding users, and for holding anything between small and significant amounts. How do we choose a single private key management scheme for this situation?
 
-The solution in this case could be a wallet that enables the user to upgrade the scheme as their experience, and funds grow. The idea is to provide progressive security that doesn't introduce unnecessary friction until it is required. Our wallet will be able to switch from;
+The solution in this case could be a wallet that enables the user to upgrade the scheme as their experience and funds grow. The idea is to provide progressive security that doesn't introduce unnecessary friction until it is required. Our wallet will be able to switch from;
 
 - Automatic cloud backup - as default for new users, who often start out with small amounts
 - External signing device - for more experienced users, and when funds have grown
