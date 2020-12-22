@@ -204,7 +204,7 @@ When a transaction needs to be signed, the software submits a partially signed b
 **When to use** 
 - When storing medium to large amounts
 - When risk of loss from theft is higher than loss from negligence 
-- When target audience is likely to be very knowledgeable or motivated to learn good manual backup schemes, 
+- When target audience is likely to be very knowledgeable or motivated to learn good manual backup schemes
 
 **When not to use** 
 - When most users are new to bitcoin and unlikely to implement good backup schemes
