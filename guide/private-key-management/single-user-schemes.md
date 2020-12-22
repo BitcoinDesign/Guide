@@ -110,7 +110,7 @@ This makes the backup accessible by the user on a new device, should they lose t
 
 Manual backup of the [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}){:target="_blank"} has been the most common private key management scheme by far since its proposal with [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki){:target="_blank"} in 2013. If you have used any [non-custodial]({{ '/guide/glossary/#non-custodial--custodial-wallet' | relative_url }}){:target="_blank"} bitcoin application you are likely to have experienced the onboarding requirements of manual backups. 
 
-After creating a new wallet, you will be asked to manually backup a 12 or 24 word recovery phrase to a *safe place*. As the next step it will often ask you to verify that you did save it by having you input the phrase in the correct order. 
+When creating a new wallet, you will be asked to manually backup a 12 or 24 word recovery phrase to a *safe place*. Often, as the next step it will ask you to verify that you did save it by having you input the phrase in the correct order. 
 
 This scheme is suitable for audiences who are already familiar with bitcoin and procedures for secure off-line backups of the recovery phrase. It is not suited for complete beginners. When told to store the backup in a safe way off-line, bitcoin-beginners in reality often take a screenshot, write it down in plain text somewhere on their mobile device, computer or a piece of paper on the fridge, or simply don’t back it up at all. This has the risk of achieving the opposite of what we want - high risk of self-inflicted loss and low to medium security in terms of third party theft.
 
