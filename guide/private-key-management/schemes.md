@@ -39,7 +39,7 @@ Important aspects to consider when choosing a private key management scheme is w
 * **Value stored** - While we always strive for no loss of funds, how critical to their financial situation would it be if your user lost access to their funds?
 
 
-The narrower you can define your answer to these questions, the easier it will be to pick the right private key management scheme, and provide a great user experience. If you find yourself wanting to target a wide range, this is a good signal to consider how you can employ a progressive scheme that grows with the customer. 
+The narrower you can define your answer to these questions, the easier it will be to pick the right private key management scheme, and provide a great user experience. If you find yourself wanting to target a wide range, this is a good signal to consider how you can employ a progressive scheme that grows with the user. 
 
 ## Balancing security, risk and convenience
 
