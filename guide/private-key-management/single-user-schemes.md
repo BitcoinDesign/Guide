@@ -259,7 +259,7 @@ A single private key is split into n key-shares that are distributed to several 
 
 **When to use** 
 - When target audience is knowledgeable 
-- When risk of theft is higher than self-inflected loss
+- When risk of theft is higher than self-inflicted loss
 
 **When not to use** 
 - When Schnorr signatures are available, enabling multi-key setups with similar benefits
