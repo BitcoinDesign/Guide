@@ -253,7 +253,7 @@ Some benefits over a multikey setup include greater privacy, as a transaction us
 - Individual product implementations not interoperable
 
 ### How it works
-A single private key is split into n key-shares that are distributed to several parties, devices or locations. When signing a transaction the required number of shares need to be coordinated into one valid signature. This relies on a cryptographic algorithm called [Shamir's Secret Sharing](https://en.wikipedia.org/wiki/Shamir's_Secret_Sharing){:target="_blank"} after it's creator.
+A single private key is split into n key-shares that are distributed to several parties, devices or locations. When signing a transaction the required number of shares need to be coordinated into one valid signature. This relies on a cryptographic algorithm called [Shamir's Secret Sharing](https://en.wikipedia.org/wiki/Shamir's_Secret_Sharing){:target="_blank"} after its creator.
 
 ### Best practice
 
