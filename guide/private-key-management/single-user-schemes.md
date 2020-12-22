@@ -212,7 +212,7 @@ When a transaction needs to be signed, the software submits a partially signed b
 
 **Variations** 
 - Interfaces (bluetooth, USB, microSD card, camera, NFC)
-- Platform compatability
+- Platform compatibility
 - Additional user authentication (pin or password)
 
 **Products that use this scheme** 
