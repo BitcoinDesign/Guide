@@ -112,7 +112,7 @@ Manual backup of the [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | r
 
 When creating a new wallet, you will be asked to manually backup a 12 or 24 word recovery phrase to a *safe place*. Often, as the next step it will ask you to verify that you did save it by having you input the phrase in the correct order. 
 
-This scheme is suitable for audiences who are already familiar with bitcoin and procedures for secure off-line backups of the recovery phrase. It is not suited for complete beginners. When told to store the backup in a safe way off-line, bitcoin-beginners in reality often take a screenshot, write it down in plain text somewhere on their mobile device, computer or a piece of paper on the fridge, or simply don’t back it up at all. This has the risk of achieving the opposite of what we want - high risk of self-inflicted loss and low to medium security in terms of third party theft.
+This scheme is suitable for users who are already familiar with bitcoin and procedures for secure off-line backups of their recovery phrase. It is not suited for complete beginners. When told to store the backup in a safe way off-line, bitcoin-beginners in reality often take a screenshot, write it down in plain text somewhere on their mobile device, computer or a piece of paper on the fridge, or simply don’t back it up at all. This has the risk of achieving the opposite of what we want - high risk of self-inflicted loss and low to medium security in terms of third party theft.
 
 {% include image.html
    image = "/assets/images/guide/private-key-management/schemes/recovery-phrase.jpg"
