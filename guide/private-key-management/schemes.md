@@ -29,7 +29,7 @@ An overview of what different private key management schemes there are, and how 
 %}
 
 # Private key schemes
-The private key controls the bitcoin [wallet]({{ '/guide/glossary/#wallet' | relative_url }}){:target="_blank"}, and the *scheme* is simply a way to describe the way that the key is stored and kept secure.
+The private key controls the bitcoin [wallet]({{ '/guide/glossary/#wallet' | relative_url }}){:target="_blank"}, and the *scheme* is simply a way to describe how the key is stored and kept secure.
 
 Important aspects to consider when choosing a private key management scheme is what you expect your users to use the wallet application for, who they are and how much bitcoin they might store in your product. For example:
 
