@@ -53,7 +53,7 @@ Now let's dive in and look at the various schemes that might be suitable for a p
 
 By using an automatic cloud backup for the private key the user is NOT required to manually backup anything when setting up a new [bitcoin wallet]({{ '/guide/glossary/#bitcoin-wallet' | relative_url }}){:target="_blank"}. This is sometimes also called *seedless*, as the user is never exposed to the traditional *seed*, or [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}){:target="_blank"} that is used to initiate a wallet. 
 
-This scheme can be used for those new to bitcoin, or novices who would find manually backing up a recovery phrase during onboarding confusing and possibly backfire on them. It could also be a starting point for a progressive security model that lets customers upgrade when they start accumulating more funds. 
+This scheme can be used for those new to bitcoin, or novices who would find manually backing up a recovery phrase during onboarding confusing, possibly leading to unsafe backups. It could also be a starting point for a progressive security model that lets customers upgrade when they start accumulating more funds. 
 
 The automatic cloud backup scheme gives users reasonable security against theft, while providing low risk for self-inflicted losses. 
 
