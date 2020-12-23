@@ -30,7 +30,7 @@ Principles to strive for while building bitcoin applications for end-users.
 
 # Principles
 
-Every use case and product is different but there are a number of things that all wallet applications should strive for, and only diverge from with very good reasons.
+Although every use case and product is different, there are a number of things that all wallet applications should strive for. Diverging from them should only be done with good reason.
 
 ## No loss of funds
 
@@ -40,7 +40,7 @@ Any loss is ultimately bad for both the user, the wallet application maker and t
 
 ## Interoperability
 
-The bitcoin community is firmly built on open-source, decentralization and the idea that the individual should be in full control of their funds. This has led to a number of standards that should make it fairly easy to switch and move your bitcoin wallet to a different wallet application. Making sure that your product supports these standards when relevant is best practice and builds trust. 
+The bitcoin community is firmly built on open-source, decentralization, and the idea that the individual should be in full control of their funds. This has led to a number of standards that should make it fairly easy to switch and move your bitcoin wallet to a different wallet application. Making sure that your product supports these standards when relevant is best practice and builds trust. 
 
 At a minimum, strive for supporting interoperability by enabling import and export, and using standard [address]({{ '/guide/glossary/#address' | relative_url }}){:target="_blank"} derivation schemes.
 

@@ -169,9 +169,9 @@ Most bitcoin wallets, including;
 
 ***
 
-## External signing device
+## External signing device 
 
-Most common are hardware wallets who’s makers often provide their own software to pair with. But there are also third party wallet applications that support external signing, or software that can be run on offline (air gapped) computers to perform the same function. 
+The most common external signing devices are hardware wallets who’s makers often provide their own software to pair with. But, there are also third party wallet applications that support external signing, or software, that can be run on offline on airgapped computers to perform the same function.
 
 A wallet application that supports external signing can remove the need for the private key to be readable by the wallet software, thereby decreasing the risk of keeping keys on a device that is likely always connected to the internet.
 
@@ -185,7 +185,7 @@ A wallet application that supports external signing can remove the need for the 
 %}
 
 ### How it works
-The external device can generate and store a keypair offline, the private key has thus never been known outside the device. A software wallet can connect to the signing device and act as an interface, or handle transactions air gapped from the device. 
+The external device can generate and store a keypair offline. Therefore, the private key has never been known outside the device. A software wallet can connect to the signing device and act as an interface, or handle transactions air gapped from the device. 
 
 When a transaction needs to be signed, the software submits a partially signed bitcoin transaction (PSBT, defined in [BIP174]('https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki'){:target="_blank"}) to the device. The user confirms on the device and the PSBT state of the transaction returned to the software wallet application is now fully signed and can be transmitted to the blockchain. This process can also happen fully air gapped by using memory cards instead of cables or wireless connections, to keep the device offline at all times.
 
@@ -257,7 +257,7 @@ A single private key is split into n key-shares that are distributed to several 
 ### Best practice
 
 **When to use** 
-- When target audience is knowledgeable 
+- When target audience is well-versed with crypto 
 - When risk of theft is higher than self-inflicted loss
 
 **When not to use** 
@@ -318,7 +318,7 @@ A software wallet application or coordination software initiates a multi-sig wal
 - Managed or completely sovereign
 
 **Do's** 
-- Make sure the multi-key setup itself is backed up properly, including x-pubs for all the participating keys, fingerprint and derivation.
+- Make sure the multi-key setup itself is backed up properly, including [extended public keys]({{ '/guide/glossary/#extended-public-key-xpub-ypub-zpub' | relative_url }}){:target="_blank"} for all the participating keys, fingerprint and derivation.
 
 **Products that use this scheme** 
 - [Casa](https://keys.casa'){:target="_blank"} co-managed 2-of-3, or 3-of-5

@@ -30,13 +30,13 @@ Description of schemes suitable for multi-user scenarios.
 
 # Shared schemes
 
-While multi-key setups can be used for personal use, if several people need to share funds multiple keys become a necessity. You will often see this referred to as *multi-sig* setups, stemming from the fact that multiple keys need to sign a transaction for it to be valid.
+While multi-key setups can be used for personal use, if several people need to share funds multiple keys become a necessity. You will often see this referred to as *multi-sig* setups, stemming from the fact that multiple keys are needed to sign a transaction in order for it to go through and be valid.
 
 The use cases for shared schemes include spouses managing a joint account, groups, organizations or companies managing their funds, as well as inheritance planning. It can also be used for governance of an organization, with transactions used not to transfer funds but to record, or vote, for decisions. 
 
 ## Shared multi-key
 
-As we saw with multi-key setups for personal use, a multi-key wallet has several controlling keypairs attached, so called co-signers. The number of keys and required co-signers will depend on the use case. With spouses sharing a *joint account*, a simple 1-of-2 multi-key setup might suffice, meaning there are two keys but only one is required to sign for a transaction to be valid. At the other end of a spectrum a company might require a more complex 3-of-5 setup, requiring three of the five co-signers to approve any transaction. 
+As we saw with multi-key setups for personal use, a multi-key wallet has several controlling keypairs attached, or what is often called co-signers. The number of keys and required co-signers will depend on the use case. With spouses sharing a *joint account*, a simple 1-of-2 multi-key setup might suffice, meaning there are two keys but only one is required to sign for a transaction to be valid. At the other end of a spectrum a company might require a more complex 3-of-5 setup, requiring three of the five co-signers to approve any transaction. 
 
 Just like with personal schemes, external signing devices can be used to hold one or several of the keys used for a shared multi-key setup. While this can increase security if managed correctly, the same caveat applies in terms of adding significant complexity. 
 

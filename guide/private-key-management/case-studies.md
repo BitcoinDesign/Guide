@@ -64,7 +64,7 @@ You can find a prototype for this case study embedded above, and a Figma file wi
 
 ## Current / Checking account
 
-A product that is meant to be a replacement for what a bank would call a current/checking account where the user might receive their salary and pay their bills from. 
+In this section, we are looking at a product that is meant to be a replacement for what a bank would call a current/checking account where the user might receive their salary and pay their bills from. 
 Safeguards against loss will be a higher priority than with a cash product, and we might therefore accept more friction both when setting up the wallet and when transacting.
 If users have no prior bitcoin knowledge we should expect to spend a significant effort educating them to put them in a position to safely operate the wallet product.
 
@@ -99,9 +99,9 @@ You can find a prototype for this case study embedded above, and a Figma file wi
 
 ***
 
-## General upgradeable wallet
+## Upgradeable wallet
 
-Although it is generally easier to build a great experience with a specific use case in mind, let's look at a case where we would like to make a wallet that is as general as possible. It needs to be suitable both for beginners and expanding users, and for holding anything between small and significant amounts. How do we choose a single private key management scheme for this situation?
+Although it is generally easier to build a great experience with a specific use case in mind, let's look at a case where we would like to make a wallet that is made for a broad range of uses and audiences. It needs to be suitable both for beginners and expanding users, and for holding anything between small and significant amounts. How do we choose a single private key management scheme for this situation?
 
 The solution in this case could be a wallet that enables the user to upgrade the scheme as their experience and funds grow. The idea is to provide progressive security that doesn't introduce unnecessary friction until it is required. Our wallet will be able to switch from;
 
