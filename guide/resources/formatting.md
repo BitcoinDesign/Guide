@@ -3,7 +3,7 @@ layout: guide
 title: Formatting
 nav_order: 11
 parent: Resources
-permalink: /guide/resources/formatting
+permalink: /guide/resources/formatting/
 ---
 
 # Formatting
