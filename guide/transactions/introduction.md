@@ -21,26 +21,24 @@ image: /assets/images/guide/transaction/introduction.png
 
 # Transactions
 
-Unlike most other payment systems bitcoin does keep track of balances or accounts. Instead it uses something known as Unspent Transaction Outputs, sometimes refered to as "coins". If you use an account based model then everyone can find your transacitons under one address — the UTXO model of bitcoin provides privacy advantages as it becomes a lot more difficult to link transactions together under a single account. The blockchain is public afterall.
+Bitcoin does keep track of balances or accounts. Instead it uses something known as Unspent Transaction Outputs, sometimes refered to as UTXOs or coins. If it were account based then everyone would be able to look up your entire history of transactions when you received a payment — the UTXO model of bitcoin provides privacy advantages as it becomes a lot more difficult to link transactions together since the blockchain is public afterall.
 
-It is also possible to send very simple transactions in bitcoin which contains just one operation / payment. This is how most wallets do it these days. One transaction for each payment.  This is not the most cost effective, or optimised way of handling onchain payments though.
+It is also possible to send very simple transactions which contains just one payment. There may be cases where you want to make multiple payments within a single transaction, and bitcoin is able to support this because of the transaction structure.
 
-Since a transaction is able to take multiple inputs (coins used to fund the transaction) and outputs (payments and change). You can eseentially allow users to build a transaction that contains multiple operations. Enter, batched payments.
+## Structure
+
+A transaction is able to take multiple inputs (coins used to fund the transaction) and outputs (payments and the remaining change). So you can allow users to build a transaction that contains multiple payment operations. Enter, batched payments.
 
 A batched transaction is a collection of payments that will all be sent out at the same time, effectivly in the same transaction. This has a potential for fee saving benefits, but is terrible for privacy as it makes it possible to link one identity with several payments on-chain.
 
-We only use this as an example because to make it easier to communicate the capabilities of an on-chain transaction.
-
-Below we explore the structure and lifecycle of an on-chain bitcoin transaction.
-
-```
-graph LR
-	
-```
-
-
+Still we use batched transactions in this chapter as it make it easier to communicate the capabilities of an on-chain transaction.
 
 ---
+
+```mermaid
+graph LR
+	1(Create) --> 2(Update) --> 3(Sign) --> 4(Combine) --> 5(Finalise) --> 6(Broadcast) --> 7(Validation & Propogation) --> 8(Confirmation)
+```
 
 #### [Creating a Transaction](#)
 
@@ -48,13 +46,13 @@ graph LR
 
 ##### [Funding a transaction](#)
 
-Each transaction needs to be funded by some previously received (unspent) bitcoin.
+Each transaction needs to be funded by some bitcoin you have previously received.
 
 ---
 
 ##### [Adding Payments](#)
 
-There can be multiple payments within a transaction but it is typical — 
+There can be multiple payments within a transaction — and all that is required by the user is to enter the destination address and the amount.
 
 ###### How do payments get added to a transaction?
 
@@ -63,19 +61,21 @@ There can be multiple payments within a transaction but it is typical —
 - Selecting an unfullfilled payment request
 - Selecting contact and entering the amount
 - Scanning payment request
-- Detect payment request in clip board
+- Detect payment request in clip board.
 
 ---
 
 ##### [Change](#)
 
-If after funding a transaction and adding payment/s, there is usually some remaining amount left over. This is known as change. Usually this change can be returned back to the users wallet because in the background a new "change address" would be created to receive it. It's also possible for you to allow the user to choose where this change goes (for example to a payment channel of the user on Lightning).
+If the amount of the payment/s is lower than the amount the user has funded the transaction with, there will be some change remaining.
+
+Usually this change is returned back to the users wallet because in the background a new "change address" would be created to receive it. It's also possible for you to allow the user to choose where this change goes (for example to a payment channel of the user on Lightning).
 
 ---
 
-#### [Fee Estimation](#)
+#### [Fee](#)
 
-There is no fixed fee, or percentage based fee with bitcoin on-chain, instead the fees are dependent on the amount of data the transaction uses. The smallest transaction is about 226 virtual bytes, and the lowest fee is 1 satoshi. This means the transaction would be 226 satoshis.
+Fees are dependent on the amount of data the transaction uses. The smallest transaction is about 226 virtual bytes, and the lowest fee is 1 satoshi. This means the transaction would be 226 satoshis.
 
 Also the fee to get a transaction into the next block depends on how congested the network is — see mempool.
 
@@ -83,27 +83,33 @@ The size of the transaction increased based on how many coins it was funded with
 
 The time a transaction takes to get included in a block is dependent on the fee. The fee is included in transaction and subtracted from the UTXO that you may receive as change.
 
+##### Reader Notes
+
+- There is no fixed fee, or percentage based fee with bitcoin on-chain transactions.
+
 ---
 
 #### [Signing](#)
 
-In order for a transaction to be valid and finalised — it needs to be signed. What is being signed is the bitcoin you funded the transaction with, and the payments you've added to the transaction (including the change).
+In order for a transaction to be valid and finalised — it needs to be signed. What is being signed is the bitcoin you funded the transaction with, and the payments you've added to that transaction (including the change).
 
-This can be done in the background and the user does not need to be individaully prompted every time the transaction gets funded or a payment added.
+##### In the wallet software
 
-##### On your own
+Signing a transaction on your own is pretty straight forward, the user does not need to be prompted each time the transaction gets funded or a payment added. Instead signing is usually done all at once when the user approves the transaction to be broadcasted.
 
-Signing a transaction on your own is pretty straight forward — and this is usually done under the hood of the application when you broadcast the transaction.
+##### External signing device
 
-##### With another device / person
+...
 
-There may be occasions though where you are need to sign a transaction with another party — for example multi-sig. You may send a transaction you create to be signed
+##### With another person
+
+There may be occasions where you are need to sign a transaction with another party — for example in a private key management scheme like [Shared multi-key](/guide/private-key-management/multi-user-schemes/).
 
 ---
 
 #### [Broadcasting](#)
 
-Once the transaction has been funded, payments selected, and fee set, and signing is complete — its time to broadcast the transaction. The transaction needs to be sent to a node which is constnatly communicating to other nodes and miners the latest transactions they've received.
+Once the transaction has been funded, payments selected, fee set, and signing is complete — its time to broadcast the transaction. Broadcasting a transactioin means that it is sent to a node which is constnatly communicating to other nodes and miners for the latest transactions they have received from users around the world.
 
 At this point the transaction is not yet confirmed — we say the transaction is in the memory pool, or mempool for short.
 
@@ -136,3 +142,5 @@ A transaction can be collaboratively built (for example joint accounts / multisi
 - Timelock
 - Multi-Signature
 
+[^1]: https://github.com/bitcoin/bips/blob/master/bip-0125.mediawiki: "BIP125 —Replace by Fee"
+[^2]: https://bitcoinops.org/en/topics/psbt/
