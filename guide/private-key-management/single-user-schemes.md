@@ -66,6 +66,14 @@ The automatic cloud backup scheme gives users reasonable security against theft,
    height = 400
 %}
 
+### How it works
+First the application generates a wallet with a keypair. Then, the key is encrypted and backed up to a location convenient and safe for the user, yet hard for a malicious third-party to gain access to.
+
+
+With most implementations so far, the location will be the keychain or a user-specific key-value-store on a mobile device that is also backed up by the OS provider. The most common would be iOS (iCloud) and Android (Google Drive) which both have secure data storage that is backed up and synced between a user's devices. 
+
+This makes the backup accessible by the user on a new device, should they lose the original, but only accessible by someone that can log into the user’s Apple or Google account. 
+
 #### Pros 
 - Low onboarding friction
 - Low risk of self-inflicted loss due to the automatic nature and redundant backups
@@ -74,14 +82,6 @@ The automatic cloud backup scheme gives users reasonable security against theft,
 - Private key in cloud storage increases risk of malicious third party access
 - User needs to trust their OS and cloud storage provider
 - Unless the backup includes the recovery phrase users will not be able to export their wallet to another product
-
-### How it works
-First the application generates a wallet with a keypair. Then, the key is encrypted and backed up to a location convenient and safe for the user, yet hard for a malicious third-party to gain access to.
-
-
-With most implementations so far, the location will be the keychain or a user-specific key-value-store on a mobile device that is also backed up by the OS provider. The most common would be iOS (iCloud) and Android (Google Drive) which both have secure data storage that is backed up and synced between a user's devices. 
-
-This makes the backup accessible by the user on a new device, should they lose the original, but only accessible by someone that can log into the user’s Apple or Google account. 
 
 ### Best practice
 
@@ -123,14 +123,6 @@ This scheme is suitable for users who are already familiar with bitcoin and proc
    height = 400
 %}
 
-#### Pros 
-- Manual backups done well can provide very high security
-- Good interoperability
-
-#### Cons 
-- Requires significant effort from users to achieve safe and redundant backups
-- High onboarding friction
-
 ### How it works
 The wallet application will generate a 12 or 24 word phrase (seed / [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}){:target="_blank"}) from which all the wallet’s [keys]({{ '/guide/glossary/#keys' | relative_url }}){:target="_blank"} can be derived. This means the user can have access to the wallet from any compatible wallet application with the phrase, even if they lose the device or software.
 
@@ -138,6 +130,13 @@ This can be an effective way to reduce the risk of loss from theft if the backup
 
 A full guide to manual backup best practices for users is out of scope for this chapter but the [Do's and Dont's](https://blog.keys.casa/the-dos-and-donts-of-bitcoin-key-management/){:target="_blank"}  of Bitcoin key management is a good starting point.
 
+#### Pros 
+- Manual backups done well can provide very high security
+- Good interoperability
+
+#### Cons 
+- Requires significant effort from users to achieve safe and redundant backups
+- High onboarding friction
 
 ### Best practice
 
@@ -185,6 +184,11 @@ A wallet application that supports external signing can remove the need for the 
    height = 400
 %}
 
+### How it works
+The external device can generate and store a keypair off-line, the private key has thus never been known outside the device. A software wallet can connect to the signing device and act as an interface, or handle transactions air gapped from the device. 
+
+When a transaction needs to be signed, the software submits a partially signed bitcoin transaction (PSBT, defined in [BIP174]('https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki'){:target="_blank"}) to the device. The user confirms on the device and the PSBT state of the transaction returned to the software wallet application is now fully signed and can be transmitted to the blockchain. This process can also happen fully air gapped by using memory cards instead of cables or wireless connections, to keep the device off-line at all times.
+
 #### Pros 
 - Removes private key from online devices
 - Can provide very high security if used correctly
@@ -193,11 +197,6 @@ A wallet application that supports external signing can remove the need for the 
 - Purchase of specialized hardware required
 - Requires further effort and knowledge to setup correctly
 - Still requires a good manual backup for redundancy
-
-## How it works
-The external device can generate and store a keypair off-line, the private key has thus never been known outside the device. A software wallet can connect to the signing device and act as an interface, or handle transactions air gapped from the device. 
-
-When a transaction needs to be signed, the software submits a partially signed bitcoin transaction (PSBT, defined in [BIP174]('https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki'){:target="_blank"}) to the device. The user confirms on the device and the PSBT state of the transaction returned to the software wallet application is now fully signed and can be transmitted to the blockchain. This process can also happen fully air gapped by using memory cards instead of cables or wireless connections, to keep the device off-line at all times.
 
 ### Best practice
 
@@ -243,6 +242,9 @@ Some benefits over a multikey setup include greater privacy, as a transaction us
    height = 400
 %}
 
+### How it works
+A single private key is split into n key-shares that are distributed to several parties, devices or locations. When signing a transaction the required number of shares need to be coordinated into one valid signature. This relies on a cryptographic algorithm called [Shamir's Secret Sharing](https://en.wikipedia.org/wiki/Shamir's_Secret_Sharing){:target="_blank"} after its creator.
+
 #### Pros
 - Can provide higher resistance to loss from theft
 - Transactions look identical and have same cost as single key wallets on chain
@@ -251,9 +253,6 @@ Some benefits over a multikey setup include greater privacy, as a transaction us
 - Requires precise coordination of key-shares when signing
 - Few advantages over multi-key setups with Schnorr signatures
 - Individual product implementations not interoperable
-
-### How it works
-A single private key is split into n key-shares that are distributed to several parties, devices or locations. When signing a transaction the required number of shares need to be coordinated into one valid signature. This relies on a cryptographic algorithm called [Shamir's Secret Sharing](https://en.wikipedia.org/wiki/Shamir's_Secret_Sharing){:target="_blank"} after its creator.
 
 ### Best practice
 
@@ -293,14 +292,14 @@ Multi-key schemes can raise the security, since anyone needs access to more than
    height = 400
 %}
 
+### How it works
+A software wallet application or coordination software initiates a multi-sig wallet, choosing the number of total keys, and the number required to sign transactions. The user then adds private keys from other wallets generated elsewhere to the multisig after which the software wallet can complete the creation process. For any future transaction from the multi-sig wallet the required amount of co-signers need to sign (using Partially Signed Bitcoin Transactions - PSBT from [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki){:target="_blank"}) before any transaction is valid.
+
 #### Pros 
 - Significantly increases security against theft
 
 #### Cons 
 - Adds complexity and op-sec burden for multiple private keys
-
-### How it works
-A software wallet application or coordination software initiates a multi-sig wallet, choosing the number of total keys, and the number required to sign transactions. The user then adds private keys from other wallets generated elsewhere to the multisig after which the software wallet can complete the creation process. For any future transaction from the multi-sig wallet the required amount of co-signers need to sign (using Partially Signed Bitcoin Transactions - PSBT from [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki){:target="_blank"}) before any transaction is valid.
 
 ### Best practice
 
