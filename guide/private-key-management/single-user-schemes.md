@@ -257,7 +257,7 @@ A single private key is split into n key-shares that are distributed to several 
 ### Best practice
 
 **When to use** 
-- When target audience is well-versed with crypto 
+- When target audience is well-versed with bitcoin 
 - When risk of theft is higher than self-inflicted loss
 
 **When not to use** 
