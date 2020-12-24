@@ -21,9 +21,9 @@ image: /assets/images/guide/transaction/introduction.png
 
 # Transactions
 
-Bitcoin does keep track of balances or accounts. Instead it uses something known as Unspent Transaction Outputs, sometimes refered to as UTXOs or coins. If it were account based then everyone would be able to look up your entire history of transactions when you received a payment — the UTXO model of bitcoin provides privacy advantages as it becomes a lot more difficult to link transactions together since the blockchain is public afterall.
+The bitcoin blockchain does not have a concept of accounts. Instead, it uses something called Unspent Transaction Outputs, also known as UTXOs or coins. Accounts make it easy for anyone you transact with to look up your entire transaction history since the blockchain is public.
 
-It is also possible to send very simple transactions which contains just one payment. There may be cases where you want to make multiple payments within a single transaction, and bitcoin is able to support this because of the transaction structure.
+With bitcoin on-chain, you fund a transaction by selecting some previously received bitcoin and select the payment destination and a change destination. Now, the person you are paying can only see a small portion of the funds you own if they choose.
 
 ## Structure
 
@@ -46,13 +46,15 @@ graph LR
 
 ##### [Funding a transaction](#)
 
-Each transaction needs to be funded by some bitcoin you have previously received.
+When transacting on the bitcoin blockchain (on-chain), you fund a transaction by selecting some previously received coins, then enter the payment destination and amount.
 
 ---
 
 ##### [Adding Payments](#)
 
 There can be multiple payments within a transaction — and all that is required by the user is to enter the destination address and the amount.
+
+If5430 satoshis
 
 ###### How do payments get added to a transaction?
 
@@ -67,25 +69,34 @@ There can be multiple payments within a transaction — and all that is required
 
 ##### [Change](#)
 
-If the amount of the payment/s is lower than the amount the user has funded the transaction with, there will be some change remaining.
+If the amount of coins you funded the transaction with exceeds the amount you need for the payment there will be some change remaining. Your wallet would generate a new change address in the background where the remaining bitcoin would be sent.
 
-Usually this change is returned back to the users wallet because in the background a new "change address" would be created to receive it. It's also possible for you to allow the user to choose where this change goes (for example to a payment channel of the user on Lightning).
+It's also possible for you to allow the user to choose where this change goes (for example to a payment channel of the user on Lightning).
 
 ---
 
 #### [Fee](#)
 
-Fees are dependent on the amount of data the transaction uses. The smallest transaction is about 226 virtual bytes, and the lowest fee is 1 satoshi. This means the transaction would be 226 satoshis.
+Fees are paid to miners as they must do work to validate transactions. The amount you pay is dependent on the amount of data a transaction uses, and the urgency.
+
+A memory pool is a waiting list for transactions that every node and miner keeps.
+
+A transaction with many inputs would be larger in size and in turn be more difficult for a miner to validate. So the size of the transaction increases based on how many coins it was funded with, and amount of individual payments that it contains — there is also a fixed overhead cost for every transaction.
+
+The time a transaction takes to get included in a block is dependent on the fee. The fee is included in transaction and subtracted from the change.
+
+The smallest transaction is about 226 virtual bytes, and the lowest fee is 1 satoshi. This means the transaction would be 226 satoshis.
 
 Also the fee to get a transaction into the next block depends on how congested the network is — see mempool.
-
-The size of the transaction increased based on how many coins it was funded with, and payments that it contains — there is also a fixed overhead cost for every transaction.
-
-The time a transaction takes to get included in a block is dependent on the fee. The fee is included in transaction and subtracted from the UTXO that you may receive as change.
 
 ##### Reader Notes
 
 - There is no fixed fee, or percentage based fee with bitcoin on-chain transactions.
+- The smallest fee you can pay is 226 satoshis but the smallest amount you can send is 5460 satoshis.
+
+#### Fee & Mempool
+
+- How demand drives the fee up
 
 ---
 
