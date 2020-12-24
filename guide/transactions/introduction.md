@@ -54,8 +54,6 @@ When transacting on the bitcoin blockchain (on-chain), you fund a transaction by
 
 There can be multiple payments within a transaction — and all that is required by the user is to enter the destination address and the amount.
 
-If5430 satoshis
-
 ###### How do payments get added to a transaction?
 
 - Manually entering address, amount and memo
@@ -77,17 +75,13 @@ It's also possible for you to allow the user to choose where this change goes (f
 
 #### [Fee](#)
 
-Fees are paid to miners as they must do work to validate transactions. The amount you pay is dependent on the amount of data a transaction uses, and the urgency.
+Each transaction needs to pay a fee to miners as they must do work to validate transactions. The fee is included in transaction and subtracted from the change.
 
-A memory pool is a waiting list for transactions that every node and miner keeps.
+A memory pool is a waiting list for transactions that every node and miner keeps. There is a limited amount of transactions that can be confirmed in a block every 10 minutes.
 
 A transaction with many inputs would be larger in size and in turn be more difficult for a miner to validate. So the size of the transaction increases based on how many coins it was funded with, and amount of individual payments that it contains — there is also a fixed overhead cost for every transaction.
 
-The time a transaction takes to get included in a block is dependent on the fee. The fee is included in transaction and subtracted from the change.
-
 The smallest transaction is about 226 virtual bytes, and the lowest fee is 1 satoshi. This means the transaction would be 226 satoshis.
-
-Also the fee to get a transaction into the next block depends on how congested the network is — see mempool.
 
 ##### Reader Notes
 
@@ -128,7 +122,16 @@ At this point the transaction is not yet confirmed — we say the transaction is
 
 #### [Speeding Up / Canceling](#)
 
-While in the mempool — it's possible to speed up the transaction or even cancel it. Not all transactions can do this though — an option called "Replace by Fee" needs to be turned on before the transaction is broadcasted.
+While in the mempool — it's possible to speed up the transaction or even cancel it before it is confirmed in a block. Not all transactions can do this though — an option called "Replace by Fee" needs to be turned on before the transaction is broadcasted.
+
+##### Child pays for parent
+
+- speeding up a transaction
+
+##### Replace by fee
+
+- canceling a transaction or speeding it up
+- flag must be set before the transaction is submitted
 
 ##### Why might you want to disable replace by fee?
 
