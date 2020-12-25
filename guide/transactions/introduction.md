@@ -21,9 +21,9 @@ image: /assets/images/guide/transaction/introduction.png
 
 # Transactions
 
-The bitcoin blockchain does not have a concept of accounts. Instead, it uses something called Unspent Transaction Outputs, also known as UTXOs or coins. Accounts make it easy for anyone you transact with to look up your entire transaction history since the blockchain is public.
+The bitcoin blockchain (on-chain) does not have a concept of accounts. Instead, it uses something called Unspent Transaction Outputs, also known as UTXOs or coins. Accounts make it easy for anyone you transact with to look up your entire transaction history and current balance since the blockchain is public.
 
-With bitcoin on-chain, you fund a transaction by selecting some previously received bitcoin and select the payment destination and a change destination. Now, the person you are paying can only see a small portion of the funds you own if they choose.
+To make a payment on-chain, you required to fund a transaction by selecting some previously received bitcoin and select the payment destination and a change destination. Now, the person you are paying can only see a small portion of the funds you own if they choose.
 
 ## Structure
 
@@ -42,11 +42,18 @@ graph LR
 
 #### [Creating a Transaction](#)
 
-...
+A transaction can be collaboratively built (for example joint accounts / multisig). In the scenario where the user may want to share a transaction with another party or another device for signing — the there is a file type bitcoin transactions use called PSBT. The transaction can be exported as a `.psbt` file and shared just as you would with a document.
+
+You can think of a wallet as an interface for this file type — which in the end allows you to publish the transaction.
 
 ##### [Funding a transaction](#)
 
 When transacting on the bitcoin blockchain (on-chain), you fund a transaction by selecting some previously received coins, then enter the payment destination and amount.
+
+###### Unlocking funds
+
+- Single Signature
+- Multi-signature
 
 ---
 
@@ -63,6 +70,10 @@ There can be multiple payments within a transaction — and all that is required
 - Scanning payment request
 - Detect payment request in clip board.
 
+###### Spending Conditions
+
+- Multi-Signature
+
 ---
 
 ##### [Change](#)
@@ -70,6 +81,8 @@ There can be multiple payments within a transaction — and all that is required
 If the amount of coins you funded the transaction with exceeds the amount you need for the payment there will be some change remaining. Your wallet would generate a new change address in the background where the remaining bitcoin would be sent.
 
 It's also possible for you to allow the user to choose where this change goes (for example to a payment channel of the user on Lightning).
+
+Change is handled the same way as any other payment described earlier, except the wallet would generate the new address automatically for this change payment to be sent.
 
 ---
 
@@ -120,41 +133,32 @@ At this point the transaction is not yet confirmed — we say the transaction is
 
 ---
 
-#### [Speeding Up / Canceling](#)
-
-While in the mempool — it's possible to speed up the transaction or even cancel it before it is confirmed in a block. Not all transactions can do this though — an option called "Replace by Fee" needs to be turned on before the transaction is broadcasted.
-
-##### Child pays for parent
-
-- speeding up a transaction
-
-##### Replace by fee
-
-- canceling a transaction or speeding it up
-- flag must be set before the transaction is submitted
-
-##### Why might you want to disable replace by fee?
-
-...
-
----
-
 #### [Pending / Confirmations](#)
 
 There is a new block being creating on average every 10 mins. A payment is not guaranteed unless it’s in a transaction that has 1 or more confirmations.
 
 ---
 
-#### [Filetype](#)
+#### [Speeding Up / Canceling](#)
 
-A transaction can be collaboratively built (for example joint accounts / multisig). In a scenario where the user may want to share a transaction with another party or another device for signing — the transaction can be exported as a `.psbt` file and shared just as you would with a document.
+While in the mempool — it's possible to speed up the transaction or even cancel a payment within it before it is confirmed in a block.
 
----
+##### Speeding up
 
-#### [Spending Conditions](#)
+While you cannot remove a transaction from the mempool after it's been broadcasted, there are two recomended ways to speed up a transaction before it has been confirmed by creating a new one which would be prioritised before it.
 
-- Timelock
-- Multi-Signature
+###### Replace with a higher fee
+
+Not all transactions can do this — an option called "Replace by Fee" needs to be turned on before the transaction is broadcasted.
+
+###### Child pays for parent (tag along)
+
+In the event you need to spend some unconfirmed bitcoin, you can make a transaction with a high fee that includes a payment of those unconfirmed coins which would incentivise miners to prioritise both of them.
+
+##### Canceling Transactions
+
+Replace by Fee can be used to "cancel" a transaction — you would need to pay a higher fee so that this replacement transaction would be prioritised by miners.
 
 [^1]: https://github.com/bitcoin/bips/blob/master/bip-0125.mediawiki: "BIP125 —Replace by Fee"
 [^2]: https://bitcoinops.org/en/topics/psbt/
+
