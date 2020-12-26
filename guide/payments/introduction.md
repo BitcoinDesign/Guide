@@ -75,11 +75,11 @@ This is known as a payment channel, Lightning is essentially a network of paymen
 
 Instead of recording each payment as an on-chain transaction to be secured in a block, they instead keep track of the balance at each side of the payment channel. The two parties only need to make a final settlement on-chain if that relationship ends and they want to "close" the channel which would unlock the balance on their side of the payment channel on-chain.
 
-Lighting payments gains us some privacy since the payments are not individually recorded on-chain in a transaction only the final settlement is.
+Lighting payments gain us some privacy since the payments are not individually recorded on-chain in a transaction, only the final settlement is.
 
 #### Who to open a payment channel with?
 
-Its possible to connect two computers together to share files or even make calls between themselves without the internet — but if you want to communicate someone outside of this network you would go to a Telcom (ISP) to get a connection to the global information network. The same with lightning — you can connect to a Lightning Service Provider (LSP) which would provide you access to a larger network of payment channels, a global payment network.
+It's possible to connect two computers to share files or even make calls between themselves without the internet — but if you want to communicate with someone outside of this network, you would have to go to a Telcom (ISP) to get a connection to the global information network. The same with lightning — you can connect to a Lightning Service Provider (LSP) which would provide you access to a larger network of payment channels, a global payment network.
 
 [^]: 
 [^1]: https://bitcoin.org/en/protect-your-privacy
