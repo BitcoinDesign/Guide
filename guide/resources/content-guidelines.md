@@ -53,4 +53,3 @@ The guide is a work in progress and needs to evolve to stay relevant. What we wr
 It's a good idea to ask for directions by seeking feedback early. This may stop you from wandering too far in the wrong direction. There is a whole community around you that's ready to jump in and help.
 
 
-
