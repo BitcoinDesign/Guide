@@ -13,11 +13,14 @@
   {%- include head.html -%}
 
   <body>
+    {%- include svgs.html -%}
+    {%- include header.html -%}
+    
     <main>
       {%- include home-banner.html -%}
 
       <article class="guide">
-      	{{ content }}
+      	{{ content | replace: '<a href="http', '<a rel="nofollow noopener noreferrer" target="_blank" href="http' }}
       </article>
     </main>
 

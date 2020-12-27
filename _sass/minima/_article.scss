@@ -184,6 +184,21 @@ article.guide {
       margin-left: 30px;
     }
   }
+
+  // fix: add offset for in page links
+  h1[id]::before, h2[id]::before, h3[id]::before,
+  h4[id]::before, h5[id]::before, h6[id]::before {
+    content: '';
+    display: block;
+    position: relative;
+    width: 0;
+    height: 2em;
+    margin-top: -2em;
+    @include media-query(medium-up) {
+      height: 3em;
+      margin-top: -3em;
+    }
+  }
 }
 
 .footnotes {
