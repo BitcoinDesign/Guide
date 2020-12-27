@@ -33,6 +33,17 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-compress-images
+
+imageoptim:
+  allow_lossy: true
+  skip_missing_workers: true
+  pngout: false
+  verbose: false
+  svgo: false
+
+compress_images:
+  images_path: "assets/**/*.{gif,png,jpg,jpeg}"
 
 # Minima date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -62,6 +73,7 @@ social:
 
 exclude:
   - README.md
+  - _compress_images_cache.yml
 
 # Exclude from processing.
 # The following items will not be processed, by default.

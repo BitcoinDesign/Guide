@@ -4,6 +4,7 @@ var searchDataLoading = false;
 var searchIndex = null;
 var searchOverlayVisible = false;
 var mobileMenuVisible = false;
+var figmaEmbeds = [];
 
 function toggleMenu() {
   if(mobileMenuVisible) {
@@ -84,7 +85,7 @@ function loadSearchData() {
 		if (request.readyState === 4) {
 			searchData = JSON.parse(request.responseText);
 
-			searchIndex = lunr(function () {
+			searchIndex = lunr(function() {
 	      this.field('id');
 	      this.field('title', { boost: 10 });
 	      this.field('author');
@@ -101,8 +102,6 @@ function loadSearchData() {
 	        'content': searchData[key].content
 	      });
 	    }
-
-			console.log('searchData', searchData, searchIndex);
 		}
 	};
 
@@ -121,7 +120,7 @@ function handleSearchInput(event) {
       loadSearchData();
     } else if(searchIndex) {
       var results = searchIndex.search(searchInput.value); // Get lunr to perform a search
-      displaySearchResults(searchInput, results);
+      displaySearchResults(searchInput.value, results);
     }
 
     var searchBox = document.getElementById("toggled-search");
@@ -138,12 +137,23 @@ function displaySearchResults(searchInput, results) {
     var item;
     var maxVisible = 5;
 
+    var content, contentBits, k, index;
     for(var i = 0; i < Math.min(maxVisible, results.length); i++) {  // Iterate over the results
       item = searchData[results[i].ref];
-      
+
+      // Strip Jekyll includes.
+      contentBits = item.content.split('{%');
+      for(k=0; k<contentBits.length; k++) {
+        index = contentBits[k].indexOf('%}');
+        if(index !== -1) {
+          contentBits[k] = contentBits[k].substring(index+2);
+        }
+      }
+      content = contentBits.join('').substring(0, 150);
+
       appendString += '<li><a href="' + item.url + '">';
       appendString += '<h3>' + item.title + '</h3>';
-      appendString += '<p>' + item.content.substring(0, 150) + '...</p>';
+      appendString += '<p>' + content + '...</p>';
       appendString += '</a></li>';
     }
 
@@ -173,6 +183,62 @@ function toggleSecondaryNav(event) {
   }
 }
 
+function captureFigmaEmbeds() {
+  var elements = document.getElementsByClassName("figma-embed");
+  var embed, iframe;
+  for(var i=0; i<elements.length; i++) {
+    embed = elements[i];
+    iframe = embed.getElementsByTagName('iframe')[0];
+
+    figmaEmbeds.push({
+      element: embed,
+      parent: embed.parentElement,
+      iframe: iframe,
+      width: parseInt(iframe.getAttribute('width')),
+      height: parseInt(iframe.getAttribute('height'))
+    });
+  }
+}
+
+function resizeFigmaEmbed(embed) {
+  var transform = '';
+  var newWidth = 'auto';
+  var newHeight = 'auto';
+
+  var style = window.getComputedStyle(embed.parent, null);
+  var maxWidth = parseInt(style.getPropertyValue('width').split('px').join(''));
+  var maxHeight = window.innerHeight - 200;
+
+  if(maxWidth < embed.width) {
+    var scale = maxWidth / embed.width;
+    transform = 'scale('+scale+', '+scale+') translate(-50%, -50%)';
+
+    newWidth = embed.width * scale;
+    newHeight = embed.height * scale;
+  }
+
+  if(newWidth == 'auto' || newHeight > maxHeight) {
+    newHeight = maxHeight;
+    newWidth = maxHeight * embed.width / embed.height;
+
+    scale = maxHeight / embed.height;
+    transform = 'scale('+scale+', '+scale+') translate(-50%, -50%)';
+  }
+
+  embed.iframe.style.transform = transform;
+  embed.element.style.height = newHeight + (newHeight == 'auto' ? '' : 'px');
+}
+
+function resizeFigmaEmbeds() {
+  for(var i=0; i<figmaEmbeds.length; i++) {
+    resizeFigmaEmbed(figmaEmbeds[i]);
+  }
+}
+
+window.addEventListener("resize", function(event) {
+  resizeFigmaEmbeds();
+})
+
 document.addEventListener("DOMContentLoaded", function(event) {
   var searchInput = document.getElementById("search-input");
   if(searchInput) {
@@ -188,4 +254,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   for(var i=0; i<secondaryNavListExpander.length; i++) {
     secondaryNavListExpander[i].addEventListener('click', toggleSecondaryNav);
   }
+  
+  captureFigmaEmbeds();
+  resizeFigmaEmbeds();
 });

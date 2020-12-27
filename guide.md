@@ -47,14 +47,14 @@ With bitcoin being so new and different, a big focus of the guide lies on provid
 
 - [Getting started]({{ '/guide/getting-started/introduction/' | relative_url }}) is for top-level overviews, whether it's bitcoin technology, visual language, software, or design collaboration in an open-source world
 - _Onboarding_ (Coming soon) goes in-depth on the delicate process of introducing new users to bitcoin and how to use specific products and features
-- [Private key management]({{ '/private-key-management/introduction/' | relative_url }}) provides extensive details and guidance on the many techniques for storing private keys
+- [Private key management]({{ '/guide/private-key-management/introduction/' | relative_url }}) provides extensive details and guidance on the many techniques for storing private keys
 - _Transactions_ (Coming soon) deals with the complexities of sending and receiving bitcoin across various use cases
 - _Resources_ (Coming soon) are tools and information to practically help you get things done
 - _Reference_ (Coming soon) includes a glossary, an overview of important bitcoin improvement proposals and other useful information
 
 ## How to use the guide
 
-If you are new to bitcoin, continue to the "[Getting started]({{ '/guide/getting-started/introduction/' | relative_url }})" section for an introduction on why bitcoin is so unique and what makes it so interesting and worthwhile to be involved. As a more experienced reader, you are more than welcome to skip straight to the sections that interest you most. And if you don’t find what you are looking for, try the search function, [ask in the community](https://www.bitcoindesigners.org) or [file an issue]({{site.github_repository_url}}issues) and help us improve this guide.
+If you are new to bitcoin, continue to the "[Getting started]({{ '/guide/getting-started/introduction/' | relative_url }})" section for an introduction on why bitcoin is so unique and what makes it so interesting and worthwhile to be involved. As a more experienced reader, you are more than welcome to skip straight to the sections that interest you most. And if you don’t find what you are looking for, try the search function, [ask in the community](http://bitcoindesigners.org) or [file an issue]({{site.github_repository_url}}issues) and help us improve this guide.
 
 ## A community effort
 
