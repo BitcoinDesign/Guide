@@ -32,10 +32,10 @@ A range of case study designs for bitcoin applications.
 
 Before deciding on a private key management scheme it’s essential to have a good idea of what use case and target audience your product has. Let’s look at some hypothetical use case categories and what might be suitable approaches.
 
-- [Cash / Daily spending]({{ '/guide/private-key-management/case-studies/#cash--daily-spending' | relative_url }})
-- [Current / Checking account]({{ '/guide/private-key-management/case-studies/#current--checking-account' | relative_url }})
-- [General upgradeable wallet]({{ '/guide/private-key-management/case-studies/#general-upgradeable-wallet' | relative_url }})
-- [Shared account]({{ '/guide/private-key-management/case-studies/#shared-account' | relative_url }})
+- [Cash / Daily spending](#cash--daily-spending)
+- [Current / Checking account](#current--checking-account)
+- [General upgradeable wallet](#upgradeable-wallet)
+- [Shared account](#shared-account)
 
 ***
 

@@ -5,6 +5,7 @@ task :test do
   options = {
 	:assume_extension => true,
 	:empty_alt_ignore => true,
+	:disable_external => false,
 	:url_ignore => ['http://bitcoindesigners.org']
   }
   HTMLProofer.check_directory("./_site", options).run
