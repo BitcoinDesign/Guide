@@ -27,6 +27,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 github_repository_url: "https://github.com/BitcoinDesign/Guide/"
+slack_invite_url: "http://bitcoindesigners.org"
 
 # Build settings
 theme: minima
