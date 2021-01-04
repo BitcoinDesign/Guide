@@ -6,6 +6,26 @@ parent: Payments
 permalink: /guide/payments/coin-selection/
 ---
 
+{% include picture.html
+
+  image = "/assets/images/payments/coin-selection-header.png"
+
+  retina = "/assets/images/payments/coin-selection-header@2x.png"
+
+  mobile = "/assets/images/payments/coin-selection-header.png"
+
+  mobileRetina = "/assets/images/payments/coin-selection-header@2x.png"
+
+  alt-text = ""
+
+  width = 1600
+
+  height = 900
+
+  layout = "full-width"
+
+%}
+
 # Coin Selection
 
 ## Intro
