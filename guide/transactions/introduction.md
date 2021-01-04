@@ -21,9 +21,13 @@ image: /assets/images/guide/transaction/introduction.png
 
 # Transactions
 
-The bitcoin blockchain (on-chain) does not have a concept of accounts. Instead, it uses something called Unspent Transaction Outputs, also known as UTXOs or coins. Accounts make it easy for anyone you transact with to look up your entire transaction history and current balance since the blockchain is public.
+The bitcoin blockchain (on-chain) does not have a concept of accounts built-in. Since all on-chain transactions are public, bitcoin uses Unspent Transaction Outputs instead. Accounts would make it easy for anyone you transact with to find your entire balance and transaction history.
 
-To make a payment on-chain, you required to fund a transaction by selecting some previously received bitcoin and select the payment destination and a change destination. Now, the person you are paying can only see a small portion of the funds you own if they choose.
+To make a payment on-chain, you need to create a transaction, fund it by selecting some previously received bitcoin then select the payment destination address and amount. If there is any remainder, you need to set a change destination address; otherwise, the miner will take anything remaining as the fee to confirm the transaction into a block.
+
+On the receiving end, the person you are paying can see the UTXOs that you funded the transaction with if they choose to look it up in a [blockchain explorer](). They won't be able to see any of the other UTXOs in your wallet that you previously received.
+
+Taking this scenario further — if the recipient needs to make a payment to someone else, they would create a transaction of their own and fund it with the UTXO you sent.
 
 ## Structure
 
@@ -100,6 +104,8 @@ The smallest transaction is about 226 virtual bytes, and the lowest fee is 1 sat
 
 - There is no fixed fee, or percentage based fee with bitcoin on-chain transactions.
 - The smallest fee you can pay is 226 satoshis but the smallest amount you can send is 5460 satoshis.
+
+Minimum relay fee — need the output amounts 
 
 #### Fee & Mempool
 
