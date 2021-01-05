@@ -58,7 +58,7 @@ defaults:
       type: "pages"
     values:
       permalink: ":path/:basename"
-      image: "https://bitcoindesign.github.io/Guide/assets/bitcoin-design-og.png"
+      image: "https://bitcoindesign.github.io/Guide/assets/images/bitcoin-design-preview.jpg"
 
 
 twitter:

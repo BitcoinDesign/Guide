@@ -28,10 +28,15 @@
             letter-spacing: -0.5px;
             color: var(--frontHex);
             transition: color 100ms $ease;
+            outline: none;
 
             &,
             &:visited {
                 color: $site-title-color;
+            }
+
+            &:focus {
+                background-color: rgba($primary-color, 0.05);
             }
 
             &:hover {
