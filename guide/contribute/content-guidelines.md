@@ -3,14 +3,14 @@ layout: guide
 title: Content guidelines
 description: Writing tips for authors of the Bitcoin Design Guide.
 nav_order: 10
-parent: Resources
-permalink: /guide/resources/content-guidelines/
-image: /assets/images/guide/resources/content-guidelines-preview.jpg
+parent: Contribute
+permalink: /guide/contribute/content-guidelines/
+image: /assets/images/guide/contribute/content-guidelines-preview.jpg
 ---
 
 # Content guidelines
 
-The Bitcoin Design Guide is the work of many authors from many different backgrounds, each with their own unique voice and perspective. To help us ensure a consistent written voice throughout the guide, follow these content guidelines. 
+The Bitcoin Design Guide is the work of many authors from many different backgrounds, each with their own unique voice and perspective. To help us ensure a consistent written voice throughout the guide, follow these content guidelines.
 
 #### Know your reader
 
@@ -51,5 +51,3 @@ The guide is a work in progress and needs to evolve to stay relevant. What we wr
 #### Write in the open
 
 It's a good idea to ask for directions by seeking feedback early. This may stop you from wandering too far in the wrong direction. There is a whole community around you that's ready to jump in and help.
-
-
