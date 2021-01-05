@@ -1,14 +1,14 @@
 ---
 layout: guide
-title: Resources
+title: Contribute
 description: Additional material for both readers and writers of the guide.
 nav_order: 11
 has_children: true
-permalink: /guide/resources/
-image: /assets/images/guide/resources/resources-preview.jpg
+permalink: /guide/contribute/
+image: /assets/images/guide/contribute/resources-preview.jpg
 ---
 
-# Resources
+# Contribute to the Bitcoin Design Guide
 
 This section includes additional materials for both readers and writers of the guide.
 
