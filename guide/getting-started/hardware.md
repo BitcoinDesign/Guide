@@ -105,4 +105,18 @@ Bitcoin mining has turned into a professional undertaking years ago. Today, dedi
 
 Outside of purchasing hardware, the main cost of mining is electricity. That's why mining facilities can be found all over the world wherever electricity is abundant and cheap, whether it is in Iceland for geothermal energy or in China using exceess hydroelectricity.
 
+## ATMs
+
+A Bitcoin ATM (Automated Teller machine) allows for the purchase or sale of bitcoin from cash or debit cards. These machines are typically bound to local laws and regulations for money transmitters, such as KYC (Know Your Customer) and anti-money laundering regulations. More on [Wikipedia](https://en.wikipedia.org/wiki/Bitcoin_ATM).
+
+{% include picture.html
+   image = "/assets/images/guide/getting-started/hardware/atm.jpg"
+   retina = "/assets/images/guide/getting-started/hardware/atm@2x.jpg"
+   mobile = "/assets/images/guide/getting-started/hardware/atm-mobile.jpg"
+   mobileRetina = "/assets/images/guide/getting-started/hardware/atm-mobile@2x.jpg"
+   alt-text = "Examples of hardware wallets"
+   width = 800
+   height = 400
+%}
+
 
