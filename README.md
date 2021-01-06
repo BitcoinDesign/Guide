@@ -4,7 +4,7 @@ This is a project overview of a design guide for bitcoin with early thoughts on 
 
 Like a travel guide, it provides an introduction to a “foreign place”, shows you the highlights and tells you some of the best stories. It provides facts and maps to figure out how to get around, ideas for tours and things to do. Whether you end up taking the official museum tour, clubbing all night or go on shopping sprees is still your choice. Note that these are guides, not mandates. Just like in a foreign city, you can choose to go off the path, and forge a new direction. Others may just follow in the future.
 
-Discussion and collaboration is taking place in the [bitcoin design Slack](https://bitcoindesign.slack.com/join/shared_invite/zt-gytq2snl-4TEWJOTKrXRCB4YLBoDunA#/) (#bitcoin-design-guide).
+Discussion and collaboration is taking place in the [bitcoin design Slack](http://bitcoindesigners.org) (#bitcoin-design-guide).
 
 
 ## Table of Contents
@@ -21,7 +21,7 @@ Discussion and collaboration is taking place in the [bitcoin design Slack](https
 
 The Bitcoin Design Guide is a free open-source community resource that helps designers, developers and others working on non-custodial bitcoin-products to create better experiences, faster. We hope that, over time, it will cover all relevant types of products, including consumer wallets, merchant interactions, exchanges and more. Better products and experiences should ultimately make it more appealing for anyone to own and use bitcoin.
 
-An equally important goal is that this process nurtures an open-source bitcoin design community that can carry this, and other projects forward longer term. The [bitcoin design Slack](https://bitcoindesign.slack.com/join/shared_invite/zt-gytq2snl-4TEWJOTKrXRCB4YLBoDunA#/) mentioned above, and created after the first version of this doc, is the first step in this direction.
+An equally important goal is that this process nurtures an open-source bitcoin design community that can carry this, and other projects forward longer term. The [bitcoin design Slack](http://bitcoindesigners.org) mentioned above, and created after the first version of this doc, is the first step in this direction.
 
 
 ## Process
@@ -34,7 +34,7 @@ The goal is for the process of creating the guide to be as open and decentralize
 
 **DONE** Learn about the main UX issues that need tackling, what a guide could help with, and thoughts about how to foster a long term community. Via early conversations and feedback on this doc.
 
-**DONE** Facilitate communication amongst bitcoin designers by creating a [forum](https://bitcoindesign.slack.com/join/shared_invite/zt-gytq2snl-4TEWJOTKrXRCB4YLBoDunA#/).
+**DONE** Facilitate communication amongst bitcoin designers by creating a [forum](http://bitcoindesigners.org).
 
 **DONE** Start regular video calls. (First call held 9am PT July 1, information on past and upcoming calls can be found [here]( https://github.com/BitcoinDesign/Meta/issues).
 

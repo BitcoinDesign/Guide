@@ -176,11 +176,25 @@ article.guide h1 {
 
 .post-content,
 article.guide {
-  // margin-top: $spacing-unit;
+  h1, h2, h3 {
+    margin-top: 0;
+    padding-top: $spacing-unit * 1;
 
-  h1:not(:first-child), h2, h3 { margin-top: $spacing-unit * 2 }
+    @include media-query(medium-up) {
+      margin-top: 0;
+      padding-top: $spacing-unit * 2;
+    }
+  }
 
-  h4, h5, h6 { margin-top: $spacing-unit }
+  h4, h5, h6 {
+    margin-top: 0;
+    padding-top: $spacing-unit * 0.5;
+
+    @include media-query(medium-up) {
+      margin-top: 0;
+      padding-top: $spacing-unit * 2;
+    }
+  }
 
   h2 {
     @include relative-font-size(1.75);

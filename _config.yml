@@ -27,12 +27,24 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 github_repository_url: "https://github.com/BitcoinDesign/Guide/"
+slack_invite_url: "http://bitcoindesigners.org"
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-compress-images
+
+imageoptim:
+  allow_lossy: true
+  skip_missing_workers: true
+  pngout: false
+  verbose: false
+  svgo: false
+
+compress_images:
+  images_path: "assets/**/*.{gif,png,jpg,jpeg}"
 
 # Minima date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -46,7 +58,7 @@ defaults:
       type: "pages"
     values:
       permalink: ":path/:basename"
-      image: "https://bitcoindesign.github.io/Guide/assets/bitcoin-design-og.png"
+      image: "https://bitcoindesign.github.io/Guide/assets/images/bitcoin-design-preview.jpg"
 
 
 twitter:
@@ -62,6 +74,7 @@ social:
 
 exclude:
   - README.md
+  - _compress_images_cache.yml
 
 # Exclude from processing.
 # The following items will not be processed, by default.

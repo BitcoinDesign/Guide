@@ -1,9 +1,11 @@
 ---
 layout: page
 title: Projects
+description: Projects some of us are involved in or think highly of.
 permalink: /projects/
 main_nav: true
 nav_order: 3
+image: /assets/images/projects-preview.jpg
 projects:
   - name: Bitcoin Design Guide
     description: The primary project we are working on, a resource for designers to create better Bitcoin products faster.

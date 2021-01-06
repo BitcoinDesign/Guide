@@ -128,20 +128,18 @@ function docReady(fn) {
 }
 
 docReady(function() {
-    applyTheme(0);
+    var banner = document.getElementById('home-banner');
 
-    document.getElementById('banner-bitcoin-logo-svg').addEventListener('click', function(event) {
-        event.preventDefault();
+    if(banner) {
+        applyTheme(0);
 
-        applyNextTheme();
-    });
+        var bannerNext = document.getElementById('home-banner-info-next');
+        if(bannerNext) {
+            bannerNext.addEventListener('click', function(event) {
+                event.preventDefault();
 
-    var bannerNext = document.getElementById('home-banner-info-next');
-    if(bannerNext) {
-        bannerNext.addEventListener('click', function(event) {
-            event.preventDefault();
-
-            applyNextTheme();
-        });
+                applyNextTheme();
+            });
+        }
     }
 });
