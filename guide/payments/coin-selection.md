@@ -74,9 +74,13 @@ The questions designers and developers are faced with are: how much privacy to w
 
 ### Solutions
 
-#### Current Solution (Optimising for Fees)
+#### Current Solutions
 
+With the exception of a few privacy oriented bitcoin wallets (e.g Bitcoin Core), most interfaces will use the following forms of automated coin selection for outgoing transactions:
 
+- **Oldest coins first (FIFO):** the default strategy spends the oldest coins first. 
+- **Minimize fees (optimize size):** the strategy spends the lowest number of coins to reduce the byte size of the transaction. This strategy results in a low network fee. 
+- **Minimize future fees (merge coins):** the strategy spends the maximum number of inputs so that a potential price rise does not make smaller coins economically unspendable. Indeed, if the price of a crypto asset increases too much, smaller coins may worth less than the cost of the network fees to spend them. 
 
 #### Proposed Solution (Optimising for Privacy)
 
@@ -139,3 +143,5 @@ Coin information could either be displayed by:
 https://coincentral.com/what-is-coin-selection-and-why-does-it-matter/
 
 https://www.investopedia.com/terms/u/utxo.asp
+
+https://support.ledger.com/hc/en-us/articles/360015996580-Using-Coin-control#:~:text=Before%20this%20new%20feature%2C%20all,to%20fulfill%20the%20transaction%20amount.
