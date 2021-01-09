@@ -10,9 +10,9 @@ image: /assets/images/guide/contribute/resources-preview.jpg
 
 # Contribute to the Bitcoin Design Guide
 
-People around the internet build and shape the Bitcoin Design Guide every day. You can be the part of our open-community too! This page shows you how to get involved and start contributing.
+People around the internet build and shape the Bitcoin Design Guide every day. You can be the part of our open-community too!
 
-There are various ways to contribute to the Bitcoin Design Guide. If your interest is in broader Bitcoin-Design, check out
+This page shows you how to get involved and start contributing.
 
 ---
 
@@ -25,3 +25,5 @@ Tips on how to write for the guide, with the goal of achieving a consistent tone
 **[Formatting]({{ '/guide/contribute/formatting/' | relative_url }})**
 
 Layout and formatting options available for content pages, from headers and blockquotes to images and embeds.
+
+Bitcoin Design Guide is just a project within the Bitcoin Design community. To get involved with the broader Bitcoin-Design community and projects, check out [general contribution guidelines](https://bitcoin.design/contribute/).
