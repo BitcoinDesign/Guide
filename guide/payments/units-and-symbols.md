@@ -9,7 +9,7 @@ permalink: /guide/payments/units-and-symbols/
 # Units and symbols
 
 <!--Don't forget to update date -->
-11 December 2020
+8 January 2021
 
 Bitcoin, bits , sats. The format and presentation of bitcoin values are probably amongst the most challenging for new users. The objective of this section is to provide observations of its current usage and recommendations for the best option if multiple formats exist. The goal is not to re-invent the format but to observe the current usage, and eventually to codify it through an organic approach. The surest way to achieve wide-scale adoption is to standardize what is already being used today. 
 
@@ -42,12 +42,14 @@ When displaying bitcoin values, the default unit should be bitcoin, with 8 decim
 
 
 
-Set preferred unit at app level, with default set to Bitcoin (BTC):*
+###### Set preferred unit at app level, with default set to Bitcoin (BTC):*
 
 ![appsetting](/../../../assets/images/payments/appsetting.svg)
 
 
 
-Change unit contextually:
+###### Change unit display contextually:
+
+User should always be able to change unit contextually. Additionally, for the value to have meaning to most users today, the option to select the local currency should also be readily available:
 
 ![ContextualSetting](/../../../assets/images/payments/ContextualSetting.svg)
