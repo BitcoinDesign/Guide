@@ -14,15 +14,15 @@ The Bitcoin Design Guide is the work of many authors with different backgrounds,
 
 #### Know your reader
 
-This guide was created specifically for designers who work on open-source, non-custodial bitcoin projects. It isn't the biggest audience in design, but it is among the most specialized. Read more in-depth about the [Target audience]({{ '/guide/target-audience' | relative_url }})..
+This guide is crafted for anyone interested in building an effective Bitcoin application. Read more in-depth about the [Target audience]({{ '/guide/target-audience' | relative_url }})..
 
 #### Speak to the reader
 
-Address the reader directly. Use active instead of passive voice. Make reader a part the conversation by using second-person pronouns like "you," "your," and "yours". Do not write in first-person and avoid giving predictions and personal opinions.
+Address the reader directly. Whenever possible, try using active instead of passive voice. Make reader a part the conversation by using second-person pronouns like "you, your and yours". Do not write in first-person and avoid giving predictions and personal opinions.
 
 #### Use simple language
 
-Bitcoin is a global currency, so not everyone using this guide will be a native English speaker. Make sure you are writing in plain, easy to follow English. If you're still not sure, try using a readability tool to analyze your text and make recommendations. We like [Hemingway](http://www.hemingwayapp.com).
+Bitcoin is a global currency. Not everyone using this guide is a native English speaker. Make sure you are writing in plain, easy to follow English. If you're still not sure, try using a readability tool to analyze your text and make recommendations. We like [Hemingway](http://www.hemingwayapp.com).
 
 #### Be concise
 
@@ -30,12 +30,12 @@ Focus on information relevant to the reader. Use direct, clear, concise sentence
 
 #### Make content scannable
 
-On the internet, majority of people scans the content before reading it. By scanning, a reader tries to search for a relevant information on the page.
-Split text into paragraphs, use links, text styling and images to enhance the scanability. Per paragraph you should have 3-4 sentences.
+On the internet, majority of people scans the content before reading it. By scanning, a reader tries to search for relevant information on the page.
+Split text into paragraphs, use links, text styling and images to enhance the scanability. Per paragraph, you should have 3-4 sentences.
 
 #### Linking
 
-Linking provides necessary context and helps with information repetition. Link to the [Glossary]({{ '/guide/glossary' | relative_url }}) or to another page in the guide whenever possible. If information isn't available, consider linking to a reputable third-party resource.
+Linking provides necessary context and helps avoid information repetition. Link to the [Glossary]({{ '/guide/glossary' | relative_url }}) or to another page in the guide whenever possible. If information isn't available, consider linking to a reputable third-party resource.
 
 #### Give tips, not commands
 
@@ -43,10 +43,11 @@ When giving instruction, stick to broad strokes. They can be adjusted over time 
 
 #### Get the reader involved
 
-The Design Guide is a set of recommended solutions and practices based on our research that should encourage self-sufficient thinking and creativity. Motivate people to think critically and inspire them to come up with their 
+The Design Guide is a set of recommended solutions and practices based on our research that should encourage self-sufficient thinking and creativity. Motivate people to think critically and inspire them to come up with their own solutions.
+
 #### Show, don’t tell
 
-Feel free to reference other software using screenshots. Remember to indicate the product and version. Focus on what you like about them instead of what you don't like.
+When it's possible, try to provide an example or a visual instead of highly-technical explanation. Feel free to reference other software using screenshots. Remember to indicate the product and version. Focus on what you like about them instead of what you don't like.
 
 #### Use the right medium
 
