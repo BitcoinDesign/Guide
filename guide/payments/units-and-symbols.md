@@ -8,8 +8,6 @@ permalink: /guide/payments/units-and-symbols/
 
 # Units and symbols
 
-8 January 2021
-
 Bitcoin, bits , sats. The format and presentation of bitcoin values are probably amongst the most challenging for new users. The objective of this section is to provide observations of its current usage and recommendations for the best option if multiple formats exist. The goal is not to re-invent the format but to observe the current usage, and eventually to codify it through an organic approach. The surest way to achieve wide-scale adoption is to standardize what is already being used today. 
 
 
