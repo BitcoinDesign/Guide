@@ -8,7 +8,7 @@ permalink: /guide/contribute/
 image: /assets/images/guide/contribute/resources-preview.jpg
 ---
 
-# Contribute to the Bitcoin Design Guide
+# Contribute to the Guide
 
 People around the internet build and shape the Bitcoin Design Guide every day. You can be the part of our open-community too!
 
