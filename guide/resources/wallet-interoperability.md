@@ -44,7 +44,7 @@ Here are some common scenarios:
 - Paying someone who uses different software
 - Migrating to a different device, operating system or application
 - Multi-signature wallets that require multiple devices and applications to exchange data
-- Using your own node
+- Using your own [node]({{ 'guide/getting-started/software/#nodes' | relative_url }})
 
 Each of these requires that applications are designed and developed to be open, ideally relying on standardized formats.
 
@@ -64,6 +64,8 @@ So here are some ways to allow users to more seamlessly navigate different softw
 %}
 
 Allow for wallets generated in one application to be easily restored in another application. Over the years, Bitcoin applications have implemented various technical details in different ways, partly because standards take time to evolve. See [Wallets Recovery](https://walletsrecovery.org) as an illustration of the problem.
+
+To prevent issues, wallets should make it convenient for users to back up all relevant information they may need for recovery with other applications. One solution is, for example, to provide a downloadable PDF with the wallet name, software name and version, address type, derivation paths, and other non-standard information.
 
 </div>
 
@@ -105,6 +107,8 @@ bitcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=50&label=Luke-Jr&message=Donat
 QR codes are visual representations of data. Since most devices today feature cameras with built-in support for reading QR codes, this technique has become a convenient method to transfer data from one device to another, even if those devices are offline. Common use cases include reading payment invoices (such as the payment links described above), or importing wallet keys from a backup.
 
 Static QR codes can only contain small amounts of information. Animated QR codes address this problem by splitting up the data over multiple static QR codes. Reading animated QR codes is not a standard feature yet.
+
+Although QR codes are a well-established and standardized format, there are details to consider. It is, for example, [more efficient](https://bitcoinops.org/en/bech32-sending-support/#creating-more-efficient-qr-codes-with-bech32-addresses) to encode uppercase characters, resulting in simpler QR codes that are easier to scan. So it is recommended to uppercase data that is not case sensitive. However, [not all wallets](https://github.com/btcpayserver/btcpayserver/issues/2110) can properly interpret this capitalized data, which can cause issues for users.
 
 </div>
 
@@ -189,6 +193,6 @@ While it is extremely convenient when applications provide their own node connec
    layout = "float-right-desktop"
 %}
 
-Most Bitcoin applications rely on external data sources (like currency conversion data) and may also have integrations with third parties (like linking to an external block explorer). Whenever possible, it should be possible for users to learn about these dependencies and choose alternatives.
+Most Bitcoin applications rely on external data sources (like currency conversion data) and may also have integrations with third parties (like linking to an external [block explorer]({{ 'guide/getting-started/software/#block-explorers' | relative_url }})). Whenever possible, it should be easy for users to learn about these dependencies and choose alternatives.
 
 </div>
