@@ -4,8 +4,8 @@ title: Formatting
 description: Visual examples of formatting options available for content authors.
 nav_order: 11
 parent: Resources
-permalink: /guide/resources/formatting/
-image: /assets/images/guide/resources/formatting-preview.jpg
+permalink: /guide/contribute/formatting/
+image: /assets/images/guide/contribute/formatting-preview.jpg
 ---
 
 # Formatting
@@ -182,7 +182,7 @@ Let's start with a very wide image that extends beyond the content with on deskt
    layout = "float-left-desktop"
 %}
 
-Mobile app stores do a good job at providing previews of what using an app will be like. Through copy, videos, images and reviews, users can make informed decisions about the product they are evaluating. Open-source software is typically downloaded via a website or from Github and each project decides what information to present. 
+Mobile app stores do a good job at providing previews of what using an app will be like. Through copy, videos, images and reviews, users can make informed decisions about the product they are evaluating. Open-source software is typically downloaded via a website or from Github and each project decides what information to present.
 
 </div>
 
@@ -199,7 +199,7 @@ Mobile app stores do a good job at providing previews of what using an app will 
    layout = "float-left"
 %}
 
-Mobile app stores do a good job at providing previews of what using an app will be like. Through copy, videos, images and reviews, users can make informed decisions about the product they are evaluating. Open-source software is typically downloaded via a website or from Github and each project decides what information to present. 
+Mobile app stores do a good job at providing previews of what using an app will be like. Through copy, videos, images and reviews, users can make informed decisions about the product they are evaluating. Open-source software is typically downloaded via a website or from Github and each project decides what information to present.
 
 </div>
 
