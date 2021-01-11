@@ -102,7 +102,7 @@ bitcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=50&label=Luke-Jr&message=Donat
    layout = "float-right-desktop"
 %}
 
-QR codes (Quick Response codes) are visual representations of data. Since most devices today feature cameras with built-in support for reading QR codes, this technique has become a convenient method to transfer data from one device to another, even if those devices are offline. Common use cases include reading payment invoices (such as the payment links described above), or importing wallet keys from a backup.
+QR codes are visual representations of data. Since most devices today feature cameras with built-in support for reading QR codes, this technique has become a convenient method to transfer data from one device to another, even if those devices are offline. Common use cases include reading payment invoices (such as the payment links described above), or importing wallet keys from a backup.
 
 Static QR codes can only contain small amounts of information. Animated QR codes address this problem by splitting up the data over multiple static QR codes. Reading animated QR codes is not a standard feature yet.
 
