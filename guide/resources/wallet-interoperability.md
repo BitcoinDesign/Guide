@@ -50,6 +50,23 @@ Each of these requires that applications are designed and developed to be open, 
 
 So here are some ways to allow users to more seamlessly navigate different software configurations.
 
+## Wallet import and export
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/wallet-interoperability/key-import-export.jpg"
+   retina = "/assets/images/guide/wallet-interoperability/key-import-export@2x.jpg"
+   alt-text = "Transfer of wallet data between applications"
+   width = 400
+   height = 300
+   layout = "float-right-desktop"
+%}
+
+Allow for wallets generated in one application to be easily restored in another application. Over the years, Bitcoin applications have implemented various technical details in different ways, partly because standards take time to evolve. See [Wallets Recovery](https://walletsrecovery.org) as an illustration of the problem.
+
+</div>
+
 ## Payment links
 
 <div class="center" markdown="1">
@@ -69,23 +86,6 @@ Example link:
 ```
 bitcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=50&label=Luke-Jr&message=Donation%20for%20project%20xyz
 ```
-
-</div>
-
-## Wallet import and export
-
-<div class="center" markdown="1">
-
-{% include image.html
-   image = "/assets/images/guide/wallet-interoperability/key-import-export.jpg"
-   retina = "/assets/images/guide/wallet-interoperability/key-import-export@2x.jpg"
-   alt-text = "Transfer of wallet data between applications"
-   width = 400
-   height = 300
-   layout = "float-right-desktop"
-%}
-
-Allow for wallets generated in one application to be easily restored in another application. Over the years, Bitcoin applications have implemented various technical details in different ways, partly because standards take time to evolve. See [Wallets Recovery](https://walletsrecovery.org) as an illustration of the problem.
 
 </div>
 
