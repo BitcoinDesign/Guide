@@ -72,31 +72,25 @@ In each of these scenarios, I am exposing the data of each previous UTXO owner. 
 
 The questions designers and developers are faced with are: how much privacy to we want to inherently bake into our wallets payments? Do we want users to have manual selection over which coins they use to fund a transaction? Should this be an automated process? Finally, and perhaps most importantly, how do we translate this privacy risk to the user through the UI?
 
-### Solutions
+### Solutions - Optimising for Privacy
 
-#### Current Solutions
+#### Automatic Coin Selection
 
-With the exception of a few privacy oriented bitcoin wallets (e.g Bitcoin Core), most interfaces will use the following forms of automated coin selection for outgoing transactions:
+The ideal privacy oriented automated solution would be for wallets to automatically select (a cluster of) coins to send from the payee's recognised address (e.g Joe), thereby minimising privacy exposure as a default standard. However, this relies upon there being an existing cluster recognised by the payee's address, as well as this cluster containing enough bitcoin to fund the outgoing transaction. If there is an additional sum of bitcoin required for the transaction input, the wallet could then default to one of the three following options (commonly used by bitcoin wallets today) for coin selection:
 
 - **Oldest coins first (FIFO):** the default strategy spends the oldest coins first. 
 - **Minimize fees (optimize size):** the strategy spends the lowest number of coins to reduce the byte size of the transaction. This strategy results in a low network fee. 
 - **Minimize future fees (merge coins):** the strategy spends the maximum number of inputs so that a potential price rise does not make smaller coins economically unspendable. Indeed, if the price of a crypto asset increases too much, smaller coins may worth less than the cost of the network fees to spend them. 
 
-#### Proposed Solution (Optimising for Privacy)
-
-The ideal privacy oriented solution would be for wallets to automatically select (a cluster of) coins to send from the payee's recognised address (e.g Joe), thereby minimising privacy exposure. However, if the coins selected do not total the amount required for the transaction input, the wallet provider gives you the option to use either automatic or manual coin selection.
-
-##### 1. Automatic Coin Selection
+However, with these additional automated coin selection methods, there is likely to be some privacy breach (exposing one or more contact's balance or address, as well as your own). It would be the wallet provider's responsibility to show that there is some level of privacy risk being taken, and that sensitive information is being comprimised. *Which might then prompt...*
 
 ![Automatic Coin Selection](../../assets/images/payments/Automatic Coin Selection.png)
 
-The first option is to use an automatic coin selection which prioritises a payee's cluster of UTXOs (e.g Joe's). However, this is idealised and reliant upon the cluster containing enough bitcoin to fund the payment request.
+#### Manual Coin Selection
 
-If the payee's cluster does not contain enough bitcoin, the wallet could automatically select other coins to send. It would be the wallet provider's responsibility to show that there is some level of risk being taken, and that privacy is being comprimised. *Which might then prompt...*
+If a wallet owner wants to manually mitigate their own privacy risks (or those of others), they could manually select exactly which UTXOs they wish to fund the payment request with. This would need to total the input request (e.g 0.6 BTC), otherwise the transaction would fail. Ideally, the sender would be able to see which contacts/addresses would be exposed, and they can then select coins accordingly (as a precourser, this level of manual coin selection relies somewhat upon contact creation and transaction labelling). 
 
-##### 2. Manual Coin Selection
-
-If a wallet owner wants to manually mitigate their own privacy risks (or those of others), they could manually select exactly which UTXOs they wish to fund the payment request with. This would need to total the input request (e.g 0.6 BTC), otherwise the transaction would fail. Ideally, the sender would be able to see which contacts/addresses would be exposed, and they can then select coins accordingly. 
+Furthermore, in each of the following examples, the design (hierachy of coin information displayed) suggests the user starts of by selecting coins from an already recognised cluster (e.g Joe's) to minimise privacy exposure from the outset. The question therefore becomes, "If this recognised cluster does not contain enough coins to fund the entire transaction, which additional UTXOs/clusters shall I select, and who and what will I exposing in the process?"
 
 ![Automatic Coin Selection 2](../../assets/images/payments/Automatic Coin Selection 2.png)
 
@@ -104,7 +98,7 @@ Coin information could either be displayed by:
 
 **a). Individual UTXOs** 
 
-- Giving users full control over which exact coins they can select from. This might be multiple UTXOs from one contact, or a mixture of multiple contacts. This solution might be best in optimising for privacy when it comes to balance exposure, however, might also lead to more contacts becoming exposed to the payee.
+- This standard privacy oriented coin selection method employed by wallets gives users full control over which exact coins they can select from. This might be multiple UTXOs from one contact, or a mixture of multiple contacts. This solution might be best in optimising for privacy when it comes to balance exposure, however, might also lead to more contacts becoming exposed to the payee.
 
 **b). UTXO Clusters** 
 
