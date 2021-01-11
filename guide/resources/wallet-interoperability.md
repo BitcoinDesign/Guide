@@ -138,7 +138,7 @@ Transaction data is stored on the Bitcoin block chain and available in any walle
    layout = "float-right-desktop"
 %}
 
-Also known as the [Partially Signed Bitcoin Transaction Format](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki), this type of file allows for storage and transfer of transactions that are not finalized. Common use cases are in multi signature wallets where one application prepares a transaction and sends it to another wallet for an additional signature. It also allows signig wallets to be offline, as the transaction data can be transferred via USB drives or animated QR codes.
+Also known as the [Partially Signed Bitcoin Transaction Format](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki), this type of file allows for storage and transfer of transactions that are not finalized. Common use cases are in multi signature wallets where one application prepares a transaction and sends it to another wallet for an additional signature. It also allows signing wallets to be offline, as the transaction data can be transferred via USB drives or animated QR codes.
 
 </div>
 
@@ -192,5 +192,4 @@ While it is extremely convenient when applications provide their own node connec
 Most Bitcoin applications rely on external data sources (like currency conversion data) and may also have integrations with third parties (like linking to an external block explorer). Whenever possible, it should be possible for users to learn about these dependencies and choose alternatives.
 
 </div>
-
 
