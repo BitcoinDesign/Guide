@@ -37,7 +37,7 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 
 # Wallet interoperability
 
-Diverse applications with different philosophies, feature sets and approaches is fantastic for Bitcoin. It allows the many different users around the world to choose the applications that best fit their needs. For this to be practical, a minimum of interoperability should be worked towards, for smoother interactions with fewer mistakes.
+Diverse applications with different philosophies, feature sets and approaches are fantastic for Bitcoin. It allows the many different users around the world to choose the applications that best fit their needs. For this to be practical, a minimum of interoperability should be worked towards, for smoother interactions with fewer mistakes.
 
 Here are some common scenarios:
 - Using different wallets for desktop and mobile
