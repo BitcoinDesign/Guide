@@ -23,9 +23,11 @@ image: /assets/images/guide/transaction/introduction.png
 
 # Requesting Payments
 
-**Payment Requests** hold the information a wallet requires to make a bitcoin payment. Whether you are making an On-chain or Lightning Payment the user flow is typically the same.
+**Payment Requests** hold the information a wallet requires to make a bitcoin payment. Whether on-chain or lightning, a payment request does not represent an account. Instead, think of it as an invoice, and ideally, recipients should only use payment requests once.
 
-The receiver generates a payment request, shares it with the payer via some out-of-band method (QR code, text message, etc.), then the payer approves the payment in their wallet.
+Whether you are making an On-chain or Lightning Payment, the user flow is typically the same.The receiver generates a payment request, shares it with the payer via some out-of-band method (QR code, text message, etc.), then the payer approves the payment in their wallet.
+
+At the core, they contain the destination (address or invoice) and other pieces of data required to identify who and what is being paid for, like the amount, payer's name, and memo.
 
 ![payment-request-creation](../../assets/images/payments/payment-request-creation.svg)
 
@@ -34,6 +36,10 @@ The receiver generates a payment request, shares it with the payer via some out-
 Lightning Payments are made by paying an invoice that uses the BOLT11 standard. It is only technically possible to pay a Lightning Invoice once and in the full amount.
 
 On-chain the core of a payment request is an address. While not strictly enforced, you should recommend users only to use them once as all transactions are public. By receiving multiple payments to a single address leaks more information about the users' funds in future transactions.
+
+It's also possible to have an online service generating a Payment Request on-demand, for instance, online shops that accept bitcoin. They usually have a hot wallet (see glossary), which can generate payment requests as needed for customers at checkout.
+
+There is no forced limit, but you should only send a payment request to one payer to safeguard your privacy, as using payment requests with multiple payers will expose your other funds to them. You should also note that on-chain payment requests can have numerous payments made to them, while bitcoin Lightning Payment requests only accept a single payment, which must be paid in full.
 
 ## Expirations
 
@@ -56,8 +62,6 @@ When a payment request is created it should be stored in the app until it is ful
 - Since invoices are already stored on the users lightning node, when they connect to that node on a new device it will pull the invoices in.
 
 ##### On-chain
-
-
 
 - https://blog.lopp.net/mind-the-bitcoin-address-gap/
 - [account-scanning](./account-scanning.md)
