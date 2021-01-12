@@ -20,13 +20,13 @@ main_classes: -no-top-padding
 
 # Coin Selection
 
-Coin selection is the process of choosing which of your Bitcoins to spend when creating and approving a spending transaction. To understand coin selection a little better, one must first have a decent knowledge of Unspent Transaction Outputs (UTXOs), the amount of digital currency remaining after a bitcoin transaction has been executed.
+Coin selection is the process of choosing which of your Bitcoins to spend when creating and approving a spending transaction. To understand coin selection a little better, one must first have a decent knowledge of Unspent Transaction Outputs (UTXOs)[^2], the amount of digital currency remaining after a bitcoin transaction has been executed.
 
 How does this relate to coin selection, you might ask? Because UTXOs allow for transactions to be conducted using miltiple fractions of bitcoin that do not all come from a single previous transaction. Instead, multiple fractions of bitcoin are retrieved by the algorithm to fulfill a spending request. For example, an outward transaction of 1.2 BTC may retrieve UTXOs worth 1 BTC and 0.5 BTC from a users wallet. Change (0.3 BTC) from this transaction is then sent back to the senders address in the form of one of more UTXOs.
 
 ![funding-tx](/assets/images/payments/funding-tx.png)
 
-Coin selection, therefore, is the choosing of which UTXOs to fund a bitcoin transaction with (i.e the transaction's inputs). 
+Coin selection, therefore, is the choosing of which UTXOs to fund a bitcoin transaction with (i.e the transaction's inputs).[^1]
 
 ## A Privacy Risk
 
@@ -83,7 +83,7 @@ The questions designers and developers are faced with are: how much privacy to w
 
 #### Automatic Coin Selection
 
-The ideal privacy oriented automated solution would be for bitcoin wallets to automatically select (a cluster of) coins to send from the payee's recognised address (e.g Joe), thereby minimising privacy exposure as a default standard. However, this relies upon there being an existing cluster recognised by the payee's address, as well as this cluster containing enough bitcoin to fund the outgoing transaction. If there is an additional sum of bitcoin required for the transaction input, or perhaps no recognised cluster of coins at all, the wallet could then default to one of the three following options (commonly used by bitcoin wallets today) for coin selection:
+The ideal privacy oriented automated solution would be for bitcoin wallets to automatically select (a cluster of) coins to send from the payee's recognised address (e.g Joe), thereby minimising privacy exposure as a default standard. However, this relies upon there being an existing cluster recognised by the payee's address, as well as this cluster containing enough bitcoin to fund the outgoing transaction. If there is an additional sum of bitcoin required for the transaction input, or perhaps no recognised cluster of coins at all, the wallet could then default to one of the three following options (commonly used by bitcoin wallets today) for coin selection:[^3]
 
 - **Oldest coins first (FIFO):** the default strategy spends the oldest coins first. 
 - **Minimize fees (optimize size):** the strategy spends the lowest number of coins to reduce the byte size of the transaction. This strategy results in a low network fee. 
