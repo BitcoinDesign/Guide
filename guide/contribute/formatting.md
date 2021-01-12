@@ -370,6 +370,11 @@ end
 
 #### YouTube video embed
 
+```markdown
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/zKMRSLbQEqk/mqdefault.jpg)](https://www.youtube.com/watch?v=zKMRSLbQEqk)
+```
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/zKMRSLbQEqk/mqdefault.jpg)](https://www.youtube.com/watch?v=zKMRSLbQEqk)
+
 #### Figma embed
 
 Figma embeds are automatically resized to comfortable fit into the visible screen area.
