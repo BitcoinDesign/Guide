@@ -22,11 +22,11 @@ Address the reader directly. Whenever possible, try using active instead of pass
 
 ##### Don't
 
-> My wallet balance is 1 bitcoin (BTC). If I have recently mined a block, this could be a fresh whole bitcoin. However, it is most likely going to be an accumulation of UTXOs (change) from previous bitcoin transactions.
+*My wallet balance is 1 bitcoin (BTC). If I have recently mined a block, this could be a fresh whole bitcoin. However, it is most likely going to be an accumulation of UTXOs (change) from previous bitcoin transactions.*
 
 ##### Do
 
-> Your wallet balance is 1 bitcoin (BTC). If you have recently mined a block, this could be a fresh whole bitcoin. However, it is most likely going to be an accumulation of UTXOs (change) from your previous bitcoin transactions.
+*Your wallet balance is 1 bitcoin (BTC). If you have recently mined a block, this could be a fresh whole bitcoin. However, it is most likely going to be an accumulation of UTXOs (change) from your previous bitcoin transactions.*
 
 
 #### Use simple language
@@ -39,11 +39,11 @@ Focus on information relevant to the reader. Use direct, clear, concise sentence
 
 ##### Don't
 
-> The wallet-application will generate a wallet with a keypair, then encrypt and back the key up to a location that the user is unlikely to lose access to, while hard for a malicious third party to gain access to.
+*The wallet-application will generate a wallet with a keypair, then encrypt and back the key up to a location that the user is unlikely to lose access to, while hard for a malicious third party to gain access to.*
 
 ##### Do
 
-> First the application generates a wallet with a keypair. Then, the key is encrypted and backed up to a location convenient and safe for the user, yet hard to for a malicious third-party to gain access to.
+*First the application generates a wallet with a keypair. Then, the key is encrypted and backed up to a location convenient and safe for the user, yet hard to for a malicious third-party to gain access to.*
 
 #### Make content scannable
 
