@@ -37,9 +37,13 @@ Bitcoin is a global currency. Not everyone using this guide is a native English 
 
 Focus on information relevant to the reader. Use direct, clear, concise sentences that are easy to understand. Try to reduce the word count to just the right brevity without being obscure.
 
-**Don't** > The wallet-application will generate a wallet with a keypair, then encrypt and back the key up to a location that the user is unlikely to lose access to, while hard for a malicious third party to gain access to.
+##### Don't
 
-**Do**> First the application generates a wallet with a keypair. Then, the key is encrypted and backed up to a location convenient and safe for the user, yet hard to for a malicious third-party to gain access to.
+> The wallet-application will generate a wallet with a keypair, then encrypt and back the key up to a location that the user is unlikely to lose access to, while hard for a malicious third party to gain access to.
+
+##### Do
+
+> First the application generates a wallet with a keypair. Then, the key is encrypted and backed up to a location convenient and safe for the user, yet hard to for a malicious third-party to gain access to.
 
 #### Make content scannable
 
@@ -60,7 +64,7 @@ The Design Guide is a set of recommended solutions and practices based on our re
 
 #### Show, don’t tell
 
-When it's possible, try to provide an example or a visual instead of highly-technical explanation. Feel free to reference other software using screenshots.
+When it's possible, try to provide an example or a visual instead of highly-technical or text-heavy explanation. Feel free to reference other software using screenshots.
 
 #### Use the right medium
 
