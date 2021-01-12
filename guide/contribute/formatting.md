@@ -68,9 +68,9 @@ There should be whitespace between paragraphs.
 #### Internal links
 
 ```markdown
-[Link to another page]({{ '/guide' | relative_url }}).
+[Linking]({{ '/guide/getting-started/why-bitcoin-is-unique/' | relative_url }})
 ```
-[Link to another page]({{ '/guide' | relative_url }}).
+[Linking]({{ '/guide/getting-started/why-bitcoin-is-unique/' | relative_url }})
 
 ### Images
 
