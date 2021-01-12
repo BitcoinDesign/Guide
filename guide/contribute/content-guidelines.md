@@ -52,7 +52,7 @@ Split text into paragraphs, use links, text styling and images to enhance the sc
 
 #### Linking
 
-Linking provides necessary context and helps avoid information repetition. Link to the [Glossary]({{ '/guide/glossary' | relative_url }}) or to another page in the guide whenever possible. If information isn't available, consider linking to a reputable third-party resource.
+[Linking]({{ '/guide/contribute/formatting/#links' | relative_url }}) provides necessary context and helps avoid information repetition. Link to the [Glossary]({{ '/guide/glossary' | relative_url }}) or to another page in the guide whenever possible. If information isn't available, consider linking to a reputable third-party resource.
 
 #### Give tips, not commands
 
