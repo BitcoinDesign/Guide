@@ -65,6 +65,7 @@ There should be whitespace between paragraphs.
 [Link to another page](https://bitcoin.org/bitcoin.pdf).
 
 #### Internal links
+
 ```
 [Link to another page]({{ '/guide' | relative_url }}).
 ```
@@ -72,9 +73,8 @@ There should be whitespace between paragraphs.
 
 ### Images
 
-## Image
-
 Let's start with a very wide image that extends beyond the content with on desktops. Note how a different images is shown on mobile. This can be used to reformat image content to a portrait format.
+
 ```
 {% include picture.html
    image = "/assets/images/style/example-image-wide-desktop.jpg"
@@ -98,8 +98,8 @@ Let's start with a very wide image that extends beyond the content with on deskt
    layout = "full-width"
 %}
 
-**Next is an image that fits exactly the content width.**
-
+#### Image fits content width
+```
 {% include picture.html
    image = "/assets/images/style/example-image-wide-desktop.jpg"
    retina = "/assets/images/style/example-image-wide-desktop@2x.jpg"
@@ -109,9 +109,31 @@ Let's start with a very wide image that extends beyond the content with on deskt
    width = 1600
    height = 800
 %}
+```
+{% include picture.html
+   image = "/assets/images/style/example-image-wide-desktop.jpg"
+   retina = "/assets/images/style/example-image-wide-desktop@2x.jpg"
+   mobile = "/assets/images/style/example-image-wide-mobile.jpg"
+   mobileRetina = "/assets/images/style/example-image-wide-mobile@2x.jpg"
+   alt-text = "Example image"
+   width = 1600
+   height = 800
+%}
+### Image inline with the content
 
-**Images can also be inline with the content. This one is inline on desktop, but takes the full screen width on mobile.**
+Images can also be inline with the content. This one is inline on desktop, but takes the full screen width on mobile.
+```
+<div class="center" markdown="1">
 
+{% include image.html
+   image = "/assets/images/style/example-image-square.jpg"
+   retina = "/assets/images/style/example-image-square@2x.jpg"
+   alt-text = "Example image"
+   width = 400
+   height = 400
+   layout = "float-left-desktop"
+%}
+```
 <div class="center" markdown="1">
 
 {% include image.html
@@ -127,8 +149,10 @@ Mobile app stores do a good job at providing previews of what using an app will 
 
 </div>
 
-**This next image is inline on both mobile and desktop.**
+#### Image inline on mobile and desktop
 
+This next image is inline on both mobile and desktop.
+```
 <div class="center" markdown="1">
 
 {% include image.html
@@ -143,7 +167,21 @@ Mobile app stores do a good job at providing previews of what using an app will 
 Mobile app stores do a good job at providing previews of what using an app will be like. Through copy, videos, images and reviews, users can make informed decisions about the product they are evaluating. Open-source software is typically downloaded via a website or from Github and each project decides what information to present.
 
 </div>
+```
+div class="center" markdown="1">
 
+{% include image.html
+   image = "/assets/images/style/example-image-square.jpg"
+   retina = "/assets/images/style/example-image-square@2x.jpg"
+   alt-text = "Example image"
+   width = 100
+   height = 100
+   layout = "float-left"
+%}
+
+Mobile app stores do a good job at providing previews of what using an app will be like. Through copy, videos, images and reviews, users can make informed decisions about the product they are evaluating. Open-source software is typically downloaded via a website or from Github and each project decides what information to present.
+
+</div>
 ### Lists
 
 #### Unordered list:
