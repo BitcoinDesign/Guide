@@ -4,10 +4,19 @@ title: Coin Selection
 nav_order: 1
 parent: Payments
 permalink: /guide/payments/coin-selection/
-main_classes: -no-top-padding![coin-selection-header](../../assets/images/payments/coin-selection-header.png)
+main_classes: -no-top-padding
 ---
 
-![coin-selection-header](/assets/images/payments/coin-selection-header-0452403.png)
+{% include picture.html
+   image = "/assets/images/payments/coin-selection-header-0452403.png"
+   retina = "/assets/images/payments/coin-selection-header-0452403.png"
+   mobile = "/assets/images/payments/coin-selection-header-0452403.png"
+   mobileRetina = "/assets/images/payments/coin-selection-header-0452403.png"
+   alt-text = "Coin Selection"
+   width = 1600
+   height = 900
+   layout = "full-width"
+%}
 
 # Coin Selection
 
