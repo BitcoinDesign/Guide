@@ -30,7 +30,7 @@ There should be whitespace between paragraphs.
 
 ### Headers
 
-```html
+```plaintext
 # h1
 ## h2
 ### h3
@@ -333,6 +333,7 @@ Breaking down content into lists is useful for readability. Here are examples of
 | ok           | good `oreos`      | hmm   |
 | ok           | good `zoute` drop | yumm  |
 ```
+
 | head1        | head two          | three |
 |:-------------|:------------------|:------|
 | ok           | good swedish fish | nice  |
