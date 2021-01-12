@@ -75,7 +75,8 @@ There should be whitespace between paragraphs.
 ### Images
 
 Let's start with a very wide image that extends beyond the content with on desktops. Note how a different images is shown on mobile. This can be used to reformat image content to a portrait format.
-{{% raw %}}
+
+{% raw %}
 ```liquid
 {% include picture.html
    image = "/assets/images/style/example-image-wide-desktop.jpg"
@@ -88,7 +89,7 @@ Let's start with a very wide image that extends beyond the content with on deskt
    layout = "full-width"
 %}
 ```
-{{% endraw %}}
+{% endraw %}
 
 {% include picture.html
    image = "/assets/images/style/example-image-wide-desktop.jpg"
@@ -103,7 +104,7 @@ Let's start with a very wide image that extends beyond the content with on deskt
 
 #### Image fits content width
 
-{{% raw %}}
+{% raw %}
 ```liquid
 {% include picture.html
    image = "/assets/images/style/example-image-wide-desktop.jpg"
@@ -115,7 +116,7 @@ Let's start with a very wide image that extends beyond the content with on deskt
    height = 800
 %}
 ```
-{{% endraw %}}
+{% endraw %}
 
 {% include picture.html
    image = "/assets/images/style/example-image-wide-desktop.jpg"
@@ -130,7 +131,7 @@ Let's start with a very wide image that extends beyond the content with on deskt
 
 Images can also be inline with the content. This one is inline on desktop, but takes the full screen width on mobile.
 
-{{% raw %}}
+{% raw %}
 ```liquid
 <div class="center" markdown="1">
 
@@ -143,7 +144,7 @@ Images can also be inline with the content. This one is inline on desktop, but t
    layout = "float-left-desktop"
 %}
 ```
-{{% endraw %}}
+{% endraw %}
 
 <div class="center" markdown="1">
 
@@ -164,7 +165,7 @@ Mobile app stores do a good job at providing previews of what using an app will 
 
 This next image is inline on both mobile and desktop.
 
-{{% raw %}}
+{% raw %}
 ```liquid
 <div class="center" markdown="1">
 
@@ -181,7 +182,7 @@ Mobile app stores do a good job at providing previews of what using an app will 
 
 </div>
 ```
-{{% endraw %}}
+{% endraw %}
 
 <div class="center" markdown="1">
 
