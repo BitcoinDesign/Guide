@@ -8,6 +8,16 @@ permalink: /guide/payments/hide-sensitive-information/
 main_classes: -no-top-padding
 image: /assets/images/guide/payments/hide-sensitive-information-header.png
 ---
+{% include picture.html
+   image = "/assets/images/payments/hide-sensitive-information-header.png"
+   retina = "/assets/images/payments/hide-sensitive-information-header.png"
+   mobile ="/assets/images/payments/hide-sensitive-information-header.png"
+   mobileRetina ="/assets/images/payments/hide-sensitive-information-header.png"
+   alt-text = ""
+   width = 1600
+   height = 900
+   layout = "full-width"
+%}
 
 # Hiding Sensitive Information
 
