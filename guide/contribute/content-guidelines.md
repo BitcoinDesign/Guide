@@ -66,6 +66,16 @@ The Design Guide is a set of recommended solutions and practices based on our re
 
 When it's possible, try to provide an example or a visual instead of highly-technical or text-heavy explanation. Feel free to reference other software using screenshots.
 
+##### Do
+
+*The user’s wallet currently has a balance of 2.845 BTC, and is comprised of 4 UTXOs:*
+* *1 BTC from Ed*
+* *0.5 BTC from Ed*
+* *0.845 BTC from Jane*
+* *0.5 from Joe*
+*These UTXOs can also be grouped into “clusters” from the individual senders (see diagram)*.
+![](assets/images/payments/cluster-options.png)
+
 #### Use the right medium
 
 A picture is worth a thousand words, but so are videos, interactive prototypes, diagrams, and more. Don't be afraid to try a different medium if you think it will inform better than text or a picture.
