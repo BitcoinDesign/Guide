@@ -23,7 +23,7 @@ It's more common for wallets to protect private keys but not much is done for ot
 
 The hide icon / button, which is usually displayed within close reach of the balance itself, is used to quickly and easily hide and reveal wallet information by tapping or clicking on it.
 
-![hidden by eye icon](/assets/images/payments/hidden-by-eye-icon.png)
+![hidden by eye icon](/assets/images/payments/hide-info-hidden-by-eye-icon.png)
 
 Pros
 
