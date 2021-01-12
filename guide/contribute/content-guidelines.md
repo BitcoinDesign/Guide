@@ -14,11 +14,20 @@ The Bitcoin Design Guide is the work of many authors with different backgrounds,
 
 #### Know your reader
 
-This guide is crafted for anyone interested in building an effective Bitcoin application. Read more in-depth about the [Target audience]({{ '/guide/target-audience' | relative_url }}).
+This guide is crafted for anyone interested in building an effective Bitcoin application. To understand who are you writing for, familiarize yourself with our [Target audience]({{ '/guide/target-audience' | relative_url }}).
 
 #### Speak to the reader
 
 Address the reader directly. Whenever possible, try using active instead of passive voice. Make reader a part the conversation by using second-person pronouns like "you, your and yours". Do not write in first-person and avoid giving predictions and personal opinions.
+
+##### Don't
+
+> My wallet balance is 1 bitcoin (BTC). If I have recently mined a block, this could be a fresh whole bitcoin. However, it is most likely going to be an accumulation of UTXOs (change) from previous bitcoin transactions.
+
+##### Do
+
+> Your wallet balance is 1 bitcoin (BTC). If you have recently mined a block, this could be a fresh whole bitcoin. However, it is most likely going to be an accumulation of UTXOs (change) from your previous bitcoin transactions.
+
 
 #### Use simple language
 
@@ -27,6 +36,10 @@ Bitcoin is a global currency. Not everyone using this guide is a native English 
 #### Be concise
 
 Focus on information relevant to the reader. Use direct, clear, concise sentences that are easy to understand. Try to reduce the word count to just the right brevity without being obscure.
+
+**Don't** > The wallet-application will generate a wallet with a keypair, then encrypt and back the key up to a location that the user is unlikely to lose access to, while hard for a malicious third party to gain access to.
+
+**Do**> First the application generates a wallet with a keypair. Then, the key is encrypted and backed up to a location convenient and safe for the user, yet hard to for a malicious third-party to gain access to.
 
 #### Make content scannable
 
@@ -39,7 +52,7 @@ Linking provides necessary context and helps avoid information repetition. Link 
 
 #### Give tips, not commands
 
-When giving instruction, stick to broad strokes. They can be adjusted over time to grow with a project and its designer. Overly detailed instructions are usually outdated by the next software patch.  
+When giving instruction, stick to broad strokes. They can be adjusted over time to grow with a project and its designer. Overly-detailed instructions could easily get outdated with the next software patch.
 
 #### Get the reader involved
 
@@ -47,11 +60,11 @@ The Design Guide is a set of recommended solutions and practices based on our re
 
 #### Show, don’t tell
 
-When it's possible, try to provide an example or a visual instead of highly-technical explanation. Feel free to reference other software using screenshots. Remember to indicate the product and version. Focus on what you like about them instead of what you don't like.
+When it's possible, try to provide an example or a visual instead of highly-technical explanation. Feel free to reference other software using screenshots.
 
 #### Use the right medium
 
-A picture is worth a thousand words, but so are videos, interactive prototypes, diagrams, and more. Don't be afraid to try a different medium if you think it will inform better than text or a picture. If you'd like to help us create this kind of content, visit https://bitcoin.design/ and join our Slack.
+A picture is worth a thousand words, but so are videos, interactive prototypes, diagrams, and more. Don't be afraid to try a different medium if you think it will inform better than text or a picture.
 
 #### Be humble
 
