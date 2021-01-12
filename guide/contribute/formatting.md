@@ -13,85 +13,111 @@ image: /assets/images/guide/contribute/formatting-preview.jpg
 This page showcases the various formatting and layout options available for content. This allows editors to better understand their toolbox and access reference code. It also allows for designers to see the design system in one place.
 
 The design source file is a public Figma community file you can find [here](https://www.figma.com/community/file/862622015964353400/Bitcoin-Designers-site). To improve the design, please start with the Figma file and make a proposal in Slack or Github before implementing.
-
 ---
+
+## Basic markdown formatting
+
+We use [Markdown](https://daringfireball.net/projects/markdown/) when writing content. Markdown is a plain-text formatting syntax that helps us better prepare our text for the web. Below you can find an overview of commonly used syntax elements.
+
+### Text formatting
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to another page]({{ '/guide' | relative_url }}).
-
+```
+**bold**
+_italic_
+~~strikethrough~~
+```
 There should be whitespace between paragraphs.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project[^1].
+### Headers
 
-# [](#header-1)Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## [](#header-2)Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### [](#header-3)Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
+```
+# h1
+## h2
+### h3
+#### h4
+##### h5
+###### h6
 ```
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
+# h1 header
+## h2 header
+### h3 header
+#### H4 header
+##### h5 header
+###### h6 header
+
+### Blockquote
+
+```
+> This is a blockquote text.
+```
+> This is a blockquote text.
+
+
+### Links
+
+### External Links
+
+```
+[Link to another page](https://bitcoin.org/bitcoin.pdf).
 ```
 
-#### [](#header-4)Header 4
+[Link to another page](https://bitcoin.org/bitcoin.pdf).
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+#### Internal links
+```
+[Link to another page]({{ '/guide' | relative_url }}).
+```
+[Link to another page]({{ '/guide' | relative_url }}).
 
-##### [](#header-5)Header 5
+### Images
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+### Lists
 
-###### [](#header-6)Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
+Here is an unordered list:
+```
+*   Item foo
+*   Item bar
+*   Item baz
+*   Item zip
+```
 *   Item foo
 *   Item bar
 *   Item baz
 *   Item zip
 
-### And an ordered list:
+And an ordered list:
 
+```
+1.  Item one
+1.  Item two
+1.  Item three
+1.  Item four
+```
 1.  Item one
 1.  Item two
 1.  Item three
 1.  Item four
 
-### And a nested list:
 
+And a nested list:
+```
+- level 1 item
+  - level 2 item
+  - level 2 item
+    - level 3 item
+    - level 3 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+  - level 2 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+- level 1 item
+```
 - level 1 item
   - level 2 item
   - level 2 item
@@ -106,8 +132,24 @@ end
   - level 2 item
 - level 1 item
 
-### Nesting an ol in ul in an ol
-
+Nesting an ol in ul in an ol
+```
+- level 1 item (ul)
+  1. level 2 item (ol)
+  1. level 2 item (ol)
+    - level 3 item (ul)
+    - level 3 item (ul)
+- level 1 item (ul)
+  1. level 2 item (ol)
+  1. level 2 item (ol)
+    - level 3 item (ul)
+    - level 3 item (ul)
+  1. level 4 item (ol)
+  1. level 4 item (ol)
+    - level 3 item (ul)
+    - level 3 item (ul)
+- level 1 item (ul)
+```
 - level 1 item (ul)
   1. level 2 item (ol)
   1. level 2 item (ol)
@@ -129,6 +171,39 @@ end
 - [ ] Hello, this is a TODO item
 - [ ] Hello, this is another TODO item
 - [x] Goodbye, this item is done
+
+#### Nested lists
+
+### Code embedding
+
+```js
+// Javascript code with syntax highlighting.
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
+```
+
+```ruby
+# Ruby code with syntax highlighting
+GitHubPages::Dependencies.gems.each do |gem, version|
+  s.add_dependency(gem, "= #{version}")
+end
+```
+
+
+| head1        | head two          | three |
+|:-------------|:------------------|:------|
+| ok           | good swedish fish | nice  |
+| out of stock | good and plenty   | nice  |
+| ok           | good `oreos`      | hmm   |
+| ok           | good `zoute` drop | yumm  |
+
+### There's a horizontal rule below this.
+
+* * *
+
+
 
 ### Figma embed
 
