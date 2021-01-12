@@ -55,7 +55,9 @@ Even though all transactions are stored publicly, there is no personally identif
 
 We should inform our users of these risks but also provide mechanisms that help them gain an acceptable amount of privacy[^1].
 
-## Bitcoin is too slow for payments
+<<<<<<< HEAD
+
+## Bitcoin is not too slow for payments
 
 Transactions made on-chain can take minutes or days to confirm — depending on the fee you pay. This is because they get secured by the entire network of nodes and miners which exchange transactions they receive from wallets and other services with each other. Every 10 minutes miners validate the payments within the transactions and publish a block. For this service, they typically take the transactions with the highest fees.
 
@@ -81,5 +83,4 @@ Lighting payments gain us some privacy since the payments are not individually r
 
 It's possible to connect two computers to share files or even make calls between themselves without the internet — but if you want to communicate with someone outside of this network, you would have to go to a Telcom (ISP) to get a connection to the global information network. The same with lightning — you can connect to a Lightning Service Provider (LSP) which would provide you access to a larger network of payment channels, a global payment network.
 
-[^]: 
 [^1]: https://bitcoin.org/en/protect-your-privacy
