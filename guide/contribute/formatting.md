@@ -123,7 +123,7 @@ Let's start with a very wide image that extends beyond the content with on deskt
 ### Image inline with the content
 
 Images can also be inline with the content. This one is inline on desktop, but takes the full screen width on mobile.
-```
+```html
 <div class="center" markdown="1">
 
 {% include image.html
@@ -154,7 +154,7 @@ Mobile app stores do a good job at providing previews of what using an app will 
 
 This next image is inline on both mobile and desktop.
 
-```
+```html
 <div class="center" markdown="1">
 
 {% include image.html
@@ -197,7 +197,7 @@ Breaking down content into lists is useful for readability. Here are examples of
 
 #### Unordered list:
 
-```
+```html
 *   Item foo
 *   Item bar
 *   Item baz
@@ -210,7 +210,7 @@ Breaking down content into lists is useful for readability. Here are examples of
 
 #### Ordered list:
 
-```
+```html
 1.  Item one
 1.  Item two
 1.  Item three
@@ -223,7 +223,7 @@ Breaking down content into lists is useful for readability. Here are examples of
 
 #### Nested list
 
-```
+```html
 - level 1 item
   - level 2 item
   - level 2 item
@@ -253,7 +253,8 @@ Breaking down content into lists is useful for readability. Here are examples of
 - level 1 item
 
 #### Nesting an ol in ul in an ol
-```
+
+```html
 - level 1 item (ul)
   1. level 2 item (ol)
   1. level 2 item (ol)
@@ -287,7 +288,8 @@ Breaking down content into lists is useful for readability. Here are examples of
 - level 1 item (ul)
 
 #### Task list
-```
+
+```html
 - [ ] Hello, this is a TODO item
 - [ ] Hello, this is another TODO item
 - [x] Goodbye, this item is done
@@ -322,6 +324,7 @@ Breaking down content into lists is useful for readability. Here are examples of
 </dl>
 
 ### Tables
+
 ```html
 | head1        | head two          | three |
 |:-------------|:------------------|:------|
@@ -368,7 +371,7 @@ end
 
 Figma embeds are automatically resized to comfortable fit into the visible screen area.
 
-```
+```html
 <div class="figma-embed">
 <iframe width="450" height="1000" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FHggAJoHhLXPH0oZQEr1D4D%2FBitcoin-Design-Guide%3Fnode-id%3D166%253A0%26viewport%3D1714%252C3489%252C1%26scaling%3Dmin-zoom" allowfullscreen></iframe>
 </div>
