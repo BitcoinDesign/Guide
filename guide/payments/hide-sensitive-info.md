@@ -21,8 +21,6 @@ image: /assets/images/guide/payments/hide-sensitive-information-header.png
    layout = "full-width"
 %}
 
-![header image](/assets/images/payments/hide-sensitive-information-header.png)
-
 # Hiding Sensitive Information
 
 Imagine this scenario. You are in a public place, and you need to make a payment using your bitcoin wallet. You open your wallet on your phone, but you don’t feel comfortable having your address and balance information clearly visible to strangers who may be looking over your shoulder. Hence by giving users the ability to hide sensitive information in their wallet if desired, they gain an added sense of privacy and security when using the app in public.
