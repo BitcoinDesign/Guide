@@ -7,17 +7,21 @@ parent: Payments
 permalink: /guide/payments/hide-sensitive-information/
 main_classes: -no-top-padding
 image: /assets/images/guide/payments/hide-sensitive-information-header.png
+
 ---
 {% include picture.html
    image = "/assets/images/payments/hide-sensitive-information-header.png"
    retina = "/assets/images/payments/hide-sensitive-information-header.png"
    mobile ="/assets/images/payments/hide-sensitive-information-header.png"
    mobileRetina ="/assets/images/payments/hide-sensitive-information-header.png"
-   alt-text = ""
+   alt-text = "Payment Privacy & Security"
+   caption = 'Person by [DrawKit](https://www.drawkit.io/illustrations/mobile-article-colour){:target="_blank" rel="nofollow"} and trees by [Flaticon](https://www.flaticon.com/free-icon/tree-with-many-leaves_25267){:target="_blank" rel="nofollow"}'
    width = 1600
-   height = 900
+   height = 600
    layout = "full-width"
 %}
+
+![header image](/assets/images/payments/hide-sensitive-information-header.png)
 
 # Hiding Sensitive Information
 
@@ -44,7 +48,7 @@ Cons
 - Super easy for anyone else to reveal your information if they have access to your device.
 
 
-## Entering a pin to unveil balance
+## Entering a pin to unveil information
 
 A problem that seemed to arise throughout each implementation was that is was as easy to reverse the hidden state as it was to enable it. This may be for convenience sake, however, if you are in a situation where you are concerned about unauthorized access by someone who has your device, once hidden perhaps you should be only able to unhide if a PIN or password has been entered. This could therefore reaffirm the identity of the wallet owner for extra security.
 
