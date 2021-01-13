@@ -414,4 +414,7 @@ Here's a simple footnote[^1]
 ```
 Here's a simple footnote[^1]
 
+```markdown
+[^1]: https://bitcoin.design "Footnote with a caption"
+```
 [^1]: https://bitcoin.design "Footnote with a caption"
