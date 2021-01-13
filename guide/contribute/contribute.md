@@ -5,7 +5,7 @@ description: Additional material for both readers and writers of the guide.
 nav_order: 9
 has_children: true
 permalink: /guide/contribute/
-image: /assets/images/guide/contribute/resources-preview.jpg
+image: /assets/images/guide/contribute/contribute-preview.jpg
 ---
 
 # Contribute to the Guide
@@ -26,4 +26,6 @@ Tips on how to write for the guide, with the goal of achieving a consistent tone
 
 Layout and formatting options available for content pages, from headers and blockquotes to images and embeds.
 
-Bitcoin Design Guide is just a project within the Bitcoin Design community. To get involved with the broader Bitcoin-Design community and projects, check out [general contribution guidelines](https://bitcoin.design/contribute/).
+---
+
+These contribution guidelines are for the Bitcoin Design Guide project. To get involved with the broader Bitcoin Design community and projects, check out [general contribution guidelines](https://bitcoin.design/contribute/).
