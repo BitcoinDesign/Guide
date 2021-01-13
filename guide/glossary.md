@@ -2,7 +2,7 @@
 layout: guide
 title: Glossary
 permalink: /guide/glossary/
-nav_order: 4
+nav_order: 6
 ---
 
 # Glossary
