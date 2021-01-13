@@ -18,7 +18,7 @@
       & > .main.sidebar {
         flex-basis: 100%;
         flex-shrink: 1;
-        border-left: 1px solid rgba(var(--front), 0.05);
+        border-left: 1px solid rgba(var(--front), 0.1);
         min-height: 90vh;
 
         .edit-link {
@@ -95,24 +95,6 @@
   }
 }
 
-.grid.projects {
-   margin: $spacing-unit*2 0 0 0;
-   .grid-item {
-     display:block;
-     img {
-       max-width:150px;
-       max-height:80px;
-     }
-     h3 {
-       margin-top: 0;
-     }
-     a {
-       display:block;
-       margin-top: $spacing-unit/2;
-     }
-   }
-}
-
 
 
 
@@ -162,13 +144,21 @@
 
 .main {
   @include media-query(small) {
-    padding-top: $spacing-unit;
     padding-bottom: $spacing-unit * 2;
   }
 
   @include media-query(medium-up) {
-    padding-top: $spacing-unit * 4;
     padding-bottom: $spacing-unit * 6;
+  }
+
+  &:not(.-no-top-padding) {
+    @include media-query(small) {
+      padding-top: $spacing-unit;
+    }
+
+    @include media-query(medium-up) {
+      padding-top: $spacing-unit * 4;
+    }
   }
 }
 
@@ -186,11 +176,25 @@ article.guide h1 {
 
 .post-content,
 article.guide {
-  // margin-top: $spacing-unit;
+  h1, h2, h3 {
+    margin-top: 0;
+    padding-top: $spacing-unit * 1;
 
-  h1:not(:first-child), h2, h3 { margin-top: $spacing-unit * 2 }
+    @include media-query(medium-up) {
+      margin-top: 0;
+      padding-top: $spacing-unit * 2;
+    }
+  }
 
-  h4, h5, h6 { margin-top: $spacing-unit }
+  h4, h5, h6 {
+    margin-top: 0;
+    padding-top: $spacing-unit * 0.5;
+
+    @include media-query(medium-up) {
+      margin-top: 0;
+      padding-top: $spacing-unit * 2;
+    }
+  }
 
   h2 {
     @include relative-font-size(1.75);

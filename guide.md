@@ -2,89 +2,67 @@
 layout: guide
 nav_order: 1
 title: Guide
+description: The Bitcoin Design Guide is a reference for the design of bitcoin applications. 
 permalink: /guide/
 main_nav: true
 secondary_nav: false
+main_classes: -no-top-padding
+image: /assets/images/guide/bitcoin-island-preview.jpg
 ---
 
-# Guide
+<!--
 
-#### Key management refers to management of cryptography keys in a cryptosystem. This includes dealing with the generation, exchange, storage, use, crypto-shredding (destruction) and replacement of keys. 
+Introduction to the guide
 
-Key management concerns keys at the user level, either between users or systems. This is in contrast to key scheduling, which typically refers to the internal handling of keys within the operation of a cipher.
+- Why it exists
+- What's in it
+- How to use it
+- How to contribute
 
-{% include image.html
-   image = "/assets/images/placeholder/full-width.png"
-   alt-text = "Alternative text"
-   caption = "A caption with a <a href='https://bitcoin.org' target='_blank'>link</a>"
+Illustration sources
+
+- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=238%3A3
+
+-->
+
+{% include picture.html
+   image = "/assets/images/guide/bitcoin-island.jpg"
+   retina = "/assets/images/guide/bitcoin-island@2x.jpg"
+   mobile = "/assets/images/guide/bitcoin-island-mobile.jpg"
+   mobileRetina = "/assets/images/guide/bitcoin-island-mobile@2x.jpg"
+   alt-text = "Bitcoin island travel map"
+   width = 1600
+   height = 900
    layout = "full-width"
-   width = 1280
-   height = 514
 %}
 
-Cryptographic protocol design, key servers, user procedures, and other relevant protocols.
+# The bitcoin design guide
 
-Key management concerns [keys](https://en.bitcoin.it/wiki/Private_key) at the user level, either between users or systems. This is in contrast to key scheduling, which typically refers to the internal handling of keys within the operation of a cipher.
+**Bitcoin is an incredibly open and public technology that we can all use, be part of, and contribute to. It is also a complex technology that takes time to understand, with a global audience and diverse uses cases. Therefore it's best to combine efforts, share knowledge and support each other in building great bitcoin products.**
 
-> Cryptographic protocol design, key servers, user procedures, and other relevant protocols.
->
-> -- <cite>Samantha</cite>
+This guide was built on that very idea. Like a travel guide, it provides an introduction to a “foreign place”, shows you the highlights and tells you some of the best stories. It provides facts and maps to figure out how to get around, ideas for tours and things to do. Whether you end up taking the official museum tour, clubbing all night or go on shopping sprees is still your choice. Note that these are guides, not mandates. Just like in a foreign city, you can choose to go off the path, and forge a new direction. Others may just follow in the future.
 
-Successful key management is critical to the security of a cryptosystem. It is the more challenging side of cryptography in a sense that it involves aspects of social engineering such as system policy, user training, organizational and departmental interactions, and coordination between all of these elements, in contrast to pure mathematical practices that can be automated.
+## What's in it?
 
-<div class="center">
+With bitcoin being so new and different, a big focus of the guide lies on providing overviews, explanations and best practices for the most common questions and problems. These are the main chapters:
 
-{% include image.html
-   image = "/assets/images/placeholder/small-square.png"
-   alt-text = "Alternative text"
-   caption = "A caption with a <a href='https://bitcoin.org' target='_blank'>link</a>"
-   layout = "float-left"
-   width = 200
-   height = 200
-%}
+- [Getting started]({{ '/guide/getting-started/introduction/' | relative_url }}) is for top-level overviews, whether it's bitcoin technology, visual language, software, or design collaboration in an open-source world
+- _Onboarding_ (Coming soon) goes in-depth on the delicate process of introducing new users to bitcoin and how to use specific products and features
+- [Private key management]({{ '/guide/private-key-management/introduction/' | relative_url }}) provides extensive details and guidance on the many techniques for storing private keys
+- _Transactions_ (Coming soon) deals with the complexities of sending and receiving bitcoin across various use cases
+- _Resources_ (Coming soon) are tools and information to practically help you get things done
+- _Reference_ (Coming soon) includes a glossary, an overview of important bitcoin improvement proposals and other useful information
 
-Successful key management is critical to the security of a cryptosystem. It is the more challenging side of cryptography in a sense that it involves aspects of social engineering such as system policy, user training, organizational and departmental interactions, and coordination between all of these elements, in contrast to pure mathematical practices that can be automated.
+## How to use the guide
 
-</div>
+If you are new to bitcoin, continue to the "[Getting started]({{ '/guide/getting-started/introduction/' | relative_url }})" section for an introduction on why bitcoin is so unique and what makes it so interesting and worthwhile to be involved. As a more experienced reader, you are more than welcome to skip straight to the sections that interest you most. And if you don’t find what you are looking for, try the search function, [ask in the community](http://bitcoindesigners.org) or [file an issue]({{site.github_repository_url}}issues) and help us improve this guide.
 
-Successful key management is **critical** to the security of a *cryptosystem*. It is the more challenging side of cryptography in a sense that it involves aspects of social engineering such as system policy, user training, organizational and departmental interactions, and coordination between all of these elements, in contrast to pure mathematical practices that can be automated.
+## A community effort
 
-## Key management concerns
+One of the unique aspects of bitcoin is that it is an open-source project and no single group, company or government owns or controls it. That means all of us can freely participate and contribute as much or as little as we want. All contributions are equally valid, and there are no gatekeepers. This decentralization is an incredibly important property for a global currency as it provides a level playing field for all participants. It also means that there are many different people independently working on different projects, and that we need to help each other to make bitcoin as useful as possible for as many people as possible.
 
-Key management concerns keys at the user level, either between users or systems. This is in contrast to key scheduling, which typically refers to the internal handling of keys within the operation of a cipher.
+This guide is an example of this. It was created and is maintained by a community of designers and design enthusiasts that want to help improve the overall level of design in the bitcoin ecosystem. It is continuously improved and you are welcome to help, whether it’s providing feedback or adding more content. And if you implement any of the information from this guide in your project, please share how it worked out for you.
 
-{% include image.html
-   image = "/assets/images/placeholder/normal-width.png"
-   alt-text = "Alternative text"
-   caption = "A caption with a <a href='https://bitcoin.org' target='_blank'>link</a>"
-   width = 800
-   height = 400
-%}
+---
 
-Successful key management is critical to the security of a cryptosystem. It is the more challenging side of cryptography in a sense that it involves aspects of social engineering such as system policy, user training, organizational and departmental interactions, and coordination between all of these elements, in contrast to pure mathematical practices that can be automated.
-
-{% include image.html
-   image = "/assets/images/placeholder/app-screens@2x.png"
-   alt-text = "Alternative text"
-   caption = "A caption with a <a href='https://bitcoin.org' target='_blank'>link</a>"
-   layout = "full-width"
-   width = 2560
-   height = 901
-%}
-
-Successful key management is critical to the security of a cryptosystem. It is the more challenging side of cryptography in a sense that it involves aspects of social engineering such as system policy, user training, organizational and departmental interactions, and coordination between all of these elements, in contrast to pure mathematical practices that can be automated.
-
-## The usage life cycle
-
-User training, organizational and departmental interactions, and coordination between all of these elements, in contrast to pure mathematical practices that can be automated.
-
-{% include image.html
-   image = "/assets/images/placeholder/life-cycle.png"
-   alt-text = "Alternative text"
-   caption = "A caption with a <a href='https://bitcoin.org' target='_blank'>link</a>"
-   layout = "full-width"
-   width = 1280
-   height = 317
-%}
-
-Successful key management is critical to the security of a cryptosystem. It is the more challenging side of cryptography in a sense that it involves aspects of social engineering such as system policy, user training, organizational and departmental interactions, and coordination between all of these elements, in contrast to pure mathematical practices that can be automated.
+Now, let's [get started]({{ '/guide/getting-started/introduction/' | relative_url }}).

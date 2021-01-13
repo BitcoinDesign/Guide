@@ -1,8 +1,0 @@
----
-layout: post
-title:  "Draft Post"
-date:   2020-07-02 19:52:30 -0400
-categories: draft
----
-
-To display draft content run $ jekyll serve --draft

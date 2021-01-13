@@ -1,9 +1,11 @@
 ---
 layout: guide
 title: Submit a header theme
+description: A how-to guide for creating your own theme for the bitcoin.design homepage banner.
 permalink: /submit-header-design
 main_nav: false
 secondary_nav: false
+image: /assets/images/submit-header-design-preview.jpg
 ---
 
 # How to submit a home page banner theme design
@@ -83,7 +85,7 @@ Below are the variable used to configure a theme. These are located in [themes.j
 
 Once you have an idea for your theme and want to make it real, then the best way to start is by duplicating this [Figma community file](https://www.figma.com/community/file/891254324897262700/Bitcoin-Design-Community-Website-Banner-Template){:target="_blank"}. It includes a template overview and some examples. If you are familiar with Figma (or Sketch), it is hopefully easy to get started with.
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FRZfxlwn0SyRpIQiCl02PQb%2FBitcoin-Design-Community-Website-Banner-Template&chrome=DOCUMENTATION" allowfullscreen></iframe>
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1); margin-bottom: 24px;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FRZfxlwn0SyRpIQiCl02PQb%2FBitcoin-Design-Community-Website-Banner-Template&chrome=DOCUMENTATION" allowfullscreen></iframe>
 
 Once your design is in good shape and you'd like to get some first feedback from the Bitcoin Design community, you have two options. You can either post a link or screenshot with some background information to the #design-review channel in our Slack workspace. Or you can [create a Github issue](https://github.com/BitcoinDesign/Guide/issues){:target="_blank"}. Or you can do both, as you prefer.
 

@@ -22,7 +22,7 @@
         height: 40px;
         overflow: visible;
         stroke: black;
-        stroke-width: 1.5px;
+        stroke-width: 2px;
         transition: all 100ms $ease;
       }
 
@@ -175,6 +175,6 @@
 body.sidebar {
   .site-footer {
     padding-top: 30px;
-    border-top: 1px solid rgba(var(--front), 0.05);
+    border-top: 1px solid rgba(var(--front), 0.1);
   }
 }

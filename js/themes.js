@@ -1,9 +1,9 @@
 let themes = [
   {
     // Template
-    copyBackgroundColor: "", 
-    bitcoinLogoPath: "/assets/banner-bitcoin-logo.svg", 
-    bitcoinLogoFillColor: "", 
+    copyBackgroundColor: "",
+    bitcoinLogoPath: "/assets/banner-bitcoin-logo.svg",
+    bitcoinLogoFillColor: "",
     bitcoinLogoOutlineColor: "#000",
     titleFillColor: "#FFF",
     titleOutlineColor: "#000",
@@ -22,6 +22,30 @@ let themes = [
     flipLayoutOnMobile: false,
     author: "Template",
     authorLink: "https://github.com/BitcoinDesign/Guide/pull/27"
+  },
+  {
+    // Bridging bitcoin
+    copyBackgroundColor: "#F7931A",
+    bitcoinLogoPath: "/assets/banner-bitcoin-logo.svg",
+    bitcoinLogoFillColor: "#000",
+    bitcoinLogoOutlineColor: "",
+    titleFillColor: "#000",
+    titleOutlineColor: "",
+    descriptionFillColor: "#000",
+    button1FillColor: "#FFF",
+    button1OutlineColor: "#000",
+    button1LabelFillColor: "#000",
+    button2FillColor: "",
+    button2OutlineColor: "#000",
+    button2LabelFillColor: "#000",
+    backgroundImagePath: 'url("/assets/images/home/banner/header-theme-1-bridging-bitcoin.png")',
+    backgroundImagePathRetina: 'url("/assets/images/home/banner/header-theme-1-bridging-bitcoin@2x.png")',
+    backgroundImagePathMobile: 'url("/assets/images/home/banner/header-theme-1-bridging-bitcoin-mobile.png")',
+    backgroundImagePathMobileRetina: 'url("/assets/images/home/banner/header-theme-1-bridging-bitcoin-mobile@2x.png")',
+    backgroundImageColor: "#F7931A",
+    flipLayoutOnMobile: false,
+    author: "Alexa Aker",
+    authorLink: "https://github.com/BitcoinDesign/Guide/issues/45"
   }
 ];
 
@@ -104,17 +128,18 @@ function docReady(fn) {
 }
 
 docReady(function() {
-    applyTheme(0);
+    var banner = document.getElementById('home-banner');
 
-    document.getElementById('banner-bitcoin-logo-svg').addEventListener('click', function(event) {
-        event.preventDefault();
-        
-        applyNextTheme();
-    });
+    if(banner) {
+        applyTheme(0);
 
-    document.getElementById('home-banner-info-next').addEventListener('click', function(event) {
-        event.preventDefault();
-        
-        applyNextTheme();
-    });
+        var bannerNext = document.getElementById('home-banner-info-next');
+        if(bannerNext) {
+            bannerNext.addEventListener('click', function(event) {
+                event.preventDefault();
+
+                applyNextTheme();
+            });
+        }
+    }
 });

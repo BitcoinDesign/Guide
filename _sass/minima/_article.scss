@@ -1,7 +1,34 @@
-
 article.guide {
   position: relative;
-  margin-bottom: $spacing-unit * 2;
+
+  h2, h3, h4, h5, h6 {
+    a.header-anchor {
+      font-size: 0.65em;
+      vertical-align: text-top;
+      color: #CCCCCC;
+
+      &:hover {
+        text-decoration: none;
+      } 
+    }
+
+    @include media-query(large) {
+      a.header-anchor {
+        opacity: 0;
+        transition: all 100ms $ease;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+
+      &:hover {
+        a.header-anchor {
+          opacity: 1;
+        }
+      } 
+    }
+  }
 
   > iframe {
     display: block;
@@ -19,9 +46,47 @@ article.guide {
 
   & > .center {
     @include clearfix;
+
+    > figure {
+      margin-top: 0;
+    }
+  }
+
+  & > .-float-left,
+  & > .center .-float-left {
+    float: left;
+    margin-right: 15px;
+    max-width: 50%;
+  }
+
+  & > .-float-right,
+  & > .center .-float-right {
+    float: right;
+    margin-left: 15px;
+    max-width: 50%;
+  }
+
+  @include media-query(medium-up) {
+    & > .-float-left-desktop,
+    & > .center .-float-left-desktop {
+      float: left;
+      margin-right: 15px;
+      max-width: 50%;
+    }
+
+    & > .-float-right-desktop,
+    & > .center .-float-right-desktop {
+      float: right;
+      margin-left: 15px;
+      max-width: 50%;
+    }
   }
 
   & > .-full-width {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     @include media-query(medium-down) {
       margin-left: -$spacing-unit / 2;
       margin-right: -$spacing-unit / 2;
@@ -61,8 +126,23 @@ article.guide {
       margin-left: 18px;
   }
 
-  figure, iframe {
+  .figma-embed {
+    overflow: hidden;
+    position: relative;
 
+    iframe {
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      box-sizing: border-box;
+      transform-origin: left top;
+      border: 0px solid rgba(black, 0.5);
+    }
+  }
+
+  figure:not(.-float-left, .-float-right, :first-child),
+  iframe {
     margin-top: $spacing-unit;
     margin-bottom: $spacing-unit;
 
@@ -78,13 +158,49 @@ article.guide {
 
   }
 
-  & > .-float-left,
-  & > .center .-float-left {
-    @include media-query(large) {
+  // & > .-float-left,
+  // & > .center .-float-left {
+  //   @include media-query(large) {
+  //     margin-top: $spacing-unit * 1;
+  //     margin-bottom: $spacing-unit * 1;
+  //   }
+  // }
+
+  .image-gallery {
+    display: flex;
+    background-color: #f8f8f8;
+    justify-content: center;
+    max-width: none !important;
+
+    figure {
+      img {
+        box-shadow: 0 20px 10px -8px rgba(black, 0.05);
+        border: 1px solid rgba(black, 0.1);
+      }
+
       margin-top: 0;
       margin-bottom: 0;
       float: left;
       margin-right: 30px;
+    }
+
+    @include media-query(small) {
+      flex-direction: column;
+      margin-left: -15px;
+      margin-right: -15px;
+      padding: 10px 15px;
+    }
+
+    @include media-query(medium-up) {
+      margin-left: -30px;
+      margin-right: -30px;
+      padding: 30px 30px 15px 30px;
+
+      figure {
+        & + figure {
+          margin-left: 40px;
+        }
+      }
     }
   }
 
@@ -95,6 +211,32 @@ article.guide {
       margin-bottom: 0;
       float: right;
       margin-left: 30px;
+    }
+  }
+}
+
+.footnotes {
+  padding: 30px;
+  font-size: 0.8rem;
+  margin: 60px 0 0;
+  border: 1px solid rgba(var(--front), 0.05);
+  box-sizing: border-box;
+  background: #FDFDFD;
+  &::before {
+    content: "REFERENCES";
+    display: block;
+    margin-bottom: 10px;
+    color: var(--frontHex);
+    letter-spacing: 1px;
+  }
+  ol {
+    margin: 0;
+    list-style-position: inside;
+    li {
+      margin-left: 0;
+      p {
+        display: inline;
+      }
     }
   }
 }
