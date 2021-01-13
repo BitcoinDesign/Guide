@@ -60,7 +60,7 @@ There should be whitespace between paragraphs.
 ### External Links
 
 ```markdown
-[Link to another page](https://bitcoin.org/bitcoin.pdf).
+[Link to another page](https://bitcoin.org/bitcoin.pdf)
 ```
 
 [Link to another page](https://bitcoin.org/bitcoin.pdf).
@@ -74,7 +74,7 @@ There should be whitespace between paragraphs.
 
 ### Images
 
-Let's start with a very wide image that extends beyond the content with on desktops. Note how a different images is shown on mobile. This can be used to reformat image content to a portrait format.
+Let's start with a very wide image that extends beyond the content with on desktops. Note how a different image is shown on mobile. This can be used to reformat image content to a portrait format.
 
 {% raw %}
 ```liquid
@@ -157,7 +157,7 @@ Images can also be inline with the content. This one is inline on desktop, but t
    layout = "float-left-desktop"
 %}
 
-Mobile app stores do a good job at providing previews of what using an app will be like. Through copy, videos, images and reviews, users can make informed decisions about the product they are evaluating. Open-source software is typically downloaded via a website or from Github and each project decides what information to present.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus ultricies sapien, sed facilisis justo tristique a. Cras faucibus elementum neque. Quisque ac gravida metus. Vestibulum vehicula lobortis magna quis luctus. Donec lorem erat, convallis imperdiet mattis at, pretium id quam. Curabitur lobortis tincidunt neque.
 
 </div>
 
@@ -178,7 +178,7 @@ This next image is inline on both mobile and desktop.
    layout = "float-left"
 %}
 
-Mobile app stores do a good job at providing previews of what using an app will be like. Through copy, videos, images and reviews, users can make informed decisions about the product they are evaluating. Open-source software is typically downloaded via a website or from Github and each project decides what information to present.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus ultricies sapien, sed facilisis justo tristique a. Cras faucibus elementum neque. Quisque ac gravida metus. Vestibulum vehicula lobortis magna quis luctus. Donec lorem erat, convallis imperdiet mattis at, pretium id quam. Curabitur lobortis tincidunt neque.
 
 </div>
 ```
@@ -195,7 +195,7 @@ Mobile app stores do a good job at providing previews of what using an app will 
    layout = "float-left"
 %}
 
-Mobile app stores do a good job at providing previews of what using an app will be like. Through copy, videos, images and reviews, users can make informed decisions about the product they are evaluating. Open-source software is typically downloaded via a website or from Github and each project decides what information to present.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus ultricies sapien, sed facilisis justo tristique a. Cras faucibus elementum neque. Quisque ac gravida metus. Vestibulum vehicula lobortis magna quis luctus. Donec lorem erat, convallis imperdiet mattis at, pretium id quam. Curabitur lobortis tincidunt neque.
 
 </div>
 

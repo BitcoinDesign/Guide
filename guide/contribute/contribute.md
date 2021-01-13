@@ -10,7 +10,7 @@ image: /assets/images/guide/contribute/contribute-preview.jpg
 
 # Contribute to the Guide
 
-People around the internet build and shape the Bitcoin Design Guide every day. You can be the part of our open-community too!
+People around the internet build and shape the Bitcoin Design Guide every day. You can be the part of our open community too!
 
 This page shows you how to get involved and start contributing.
 
