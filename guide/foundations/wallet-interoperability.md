@@ -1,19 +1,19 @@
 ---
 layout: guide
 title: Wallet interoperability
-description: Writing tips for authors of the Bitcoin Design Guide.
+description: Designing for seamless experiences across Bitcoin applications.
 nav_order: 10
-parent: Resources
-permalink: /guide/resources/wallet-interoperability/
+parent: Foundations
+permalink: /guide/foundations/wallet-interoperability/
 main_classes: -no-top-padding
-image: /assets/images/guide/resources/wallet-interoperability-preview.jpg
+image: /assets/images/guide/foundations/wallet-interoperability/wallet-interoperability-preview.jpg
 ---
 
 <!--
 
 Editor's notes
 
-An overview of important interaction points between different Bitcoin and other applications.
+An overview of important interaction points between Bitcoin applications and user experiences.
 
 Designers should think beyond the software they are working on and strongly consider these
 areas, as it is extremely likely that users interact with multiple applications over time.
@@ -25,10 +25,10 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/wallet-interoperability/wallet-interoperability.jpg"
-   retina = "/assets/images/guide/wallet-interoperability/wallet-interoperability@2x.jpg"
-   mobile = "/assets/images/guide/wallet-interoperability/wallet-interoperability-mobile.jpg"
-   mobileRetina = "/assets/images/guide/wallet-interoperability/wallet-interoperability-mobile@2x.jpg"
+   image = "/assets/images/guide/foundations/wallet-interoperability/wallet-interoperability.jpg"
+   retina = "/assets/images/guide/foundations/wallet-interoperability/wallet-interoperability@2x.jpg"
+   mobile = "/assets/images/guide/foundations/wallet-interoperability/wallet-interoperability-mobile.jpg"
+   mobileRetina = "/assets/images/guide/foundations/wallet-interoperability/wallet-interoperability-mobile@2x.jpg"
    alt-text = "Several devices exchanging data"
    width = 1600
    height = 700
@@ -55,8 +55,8 @@ So here are some ways to allow users to more seamlessly navigate different softw
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/wallet-interoperability/key-import-export.jpg"
-   retina = "/assets/images/guide/wallet-interoperability/key-import-export@2x.jpg"
+   image = "/assets/images/guide/foundations/wallet-interoperability/key-import-export.jpg"
+   retina = "/assets/images/guide/foundations/wallet-interoperability/key-import-export@2x.jpg"
    alt-text = "Transfer of wallet data between applications"
    width = 400
    height = 300
@@ -74,8 +74,8 @@ To prevent issues, wallets should make it convenient for users to back up all re
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/wallet-interoperability/payment-links.jpg"
-   retina = "/assets/images/guide/wallet-interoperability/payment-links@2x.jpg"
+   image = "/assets/images/guide/foundations/wallet-interoperability/payment-links.jpg"
+   retina = "/assets/images/guide/foundations/wallet-interoperability/payment-links@2x.jpg"
    alt-text = "Click a link to launch Bitcoin software"
    width = 400
    height = 300
@@ -96,8 +96,8 @@ bitcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=50&label=Luke-Jr&message=Donat
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/wallet-interoperability/qr-code.jpg"
-   retina = "/assets/images/guide/wallet-interoperability/qr-code@2x.jpg"
+   image = "/assets/images/guide/foundations/wallet-interoperability/qr-code.jpg"
+   retina = "/assets/images/guide/foundations/wallet-interoperability/qr-code@2x.jpg"
    alt-text = "A smartphone camera scanning a QR code"
    width = 400
    height = 400
@@ -117,8 +117,8 @@ Although QR codes are a well-established and standardized format, there are deta
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/wallet-interoperability/user-data-import-export.jpg"
-   retina = "/assets/images/guide/wallet-interoperability/user-data-import-export@2x.jpg"
+   image = "/assets/images/guide/foundations/wallet-interoperability/user-data-import-export.jpg"
+   retina = "/assets/images/guide/foundations/wallet-interoperability/user-data-import-export@2x.jpg"
    alt-text = "Transfer of user data between applications"
    width = 400
    height = 300
@@ -134,8 +134,8 @@ Transaction data is stored on the Bitcoin block chain and available in any walle
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/wallet-interoperability/transaction-file.jpg"
-   retina = "/assets/images/guide/wallet-interoperability/transaction-file@2x.jpg"
+   image = "/assets/images/guide/foundations/wallet-interoperability/transaction-file.jpg"
+   retina = "/assets/images/guide/foundations/wallet-interoperability/transaction-file@2x.jpg"
    alt-text = "Transfer of transaction files between applications"
    width = 400
    height = 300
@@ -151,8 +151,8 @@ Also known as the [Partially Signed Bitcoin Transaction Format](https://github.c
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/wallet-interoperability/multi-signature.jpg"
-   retina = "/assets/images/guide/wallet-interoperability/multi-signature@2x.jpg"
+   image = "/assets/images/guide/foundations/wallet-interoperability/multi-signature.jpg"
+   retina = "/assets/images/guide/foundations/wallet-interoperability/multi-signature@2x.jpg"
    alt-text = "Cosigner wallets interacting with a multi signature wallet"
    width = 400
    height = 300
@@ -168,8 +168,8 @@ Per definition, multi signature wallets require interaction between all cosigner
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/wallet-interoperability/node-options.jpg"
-   retina = "/assets/images/guide/wallet-interoperability/node-options@2x.jpg"
+   image = "/assets/images/guide/foundations/wallet-interoperability/node-options.jpg"
+   retina = "/assets/images/guide/foundations/wallet-interoperability/node-options@2x.jpg"
    alt-text = "Node options"
    width = 400
    height = 300
@@ -185,8 +185,8 @@ While it is extremely convenient when applications provide their own node connec
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/wallet-interoperability/integrations.jpg"
-   retina = "/assets/images/guide/wallet-interoperability/integrations@2x.jpg"
+   image = "/assets/images/guide/foundations/wallet-interoperability/integrations.jpg"
+   retina = "/assets/images/guide/foundations/wallet-interoperability/integrations@2x.jpg"
    alt-text = "Application reliance on external data and services"
    width = 400
    height = 300
