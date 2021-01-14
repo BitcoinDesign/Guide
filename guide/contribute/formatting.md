@@ -386,24 +386,46 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 
 #### YouTube video embed
 
-```markdown
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/zKMRSLbQEqk/mqdefault.jpg)](https://www.youtube.com/watch?v=zKMRSLbQEqk)
+{% raw %}
+```liquid
+{% include youtube.html id="zKMRSLbQEqk" %}
 ```
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/zKMRSLbQEqk/mqdefault.jpg)](https://www.youtube.com/watch?v=zKMRSLbQEqk)
+{% endraw %}
 
-#### Figma embed
+{% include youtube.html id="zKMRSLbQEqk" %}
 
-Figma embeds are automatically resized to comfortable fit into the visible screen area.
+#### Prototypes
 
-```html
-<div class="figma-embed">
-<iframe width="450" height="1000" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FHggAJoHhLXPH0oZQEr1D4D%2FBitcoin-Design-Guide%3Fnode-id%3D166%253A0%26viewport%3D1714%252C3489%252C1%26scaling%3Dmin-zoom" allowfullscreen></iframe>
-</div>
+Linking to prototypes is similar to [embedding images](#images). The main differences are the use of a different include and the addition of a link URL. The image is rendered as a link with a call-to-action button that lets users click through to the prototype.
+
+Ensure that your images provide a good overview of the prototype content, so users can make an informed decision whether to give it a try.
+
+{% raw %}
+```liquid
+{% include prototype.html
+   link = "https://www.figma.com/proto/HggAJoHhLXPH0oZQEr1D4D/Bitcoin-Design-Guide?node-id=166%3A0&viewport=1714%2C3489%2C1&scaling=min-zoom"
+   image = "/assets/images/guide/contribute/formatting/prototype-example.png"
+   retina = "/assets/images/guide/contribute/formatting/prototype-example@2x.png"
+   mobile = "/assets/images/guide/contribute/formatting/prototype-example-mobile.png"
+   mobileRetina = "/assets/images/guide/contribute/formatting/prototype-example-mobile@2x.png"
+   alt-text = "Example image"
+   width = 800
+   height = 500
+%}
 ```
+{% endraw %}
 
-<div class="figma-embed">
-<iframe width="450" height="1000" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FHggAJoHhLXPH0oZQEr1D4D%2FBitcoin-Design-Guide%3Fnode-id%3D166%253A0%26viewport%3D1714%252C3489%252C1%26scaling%3Dmin-zoom" allowfullscreen></iframe>
-</div>
+
+{% include prototype.html
+   link = "https://www.figma.com/proto/HggAJoHhLXPH0oZQEr1D4D/Bitcoin-Design-Guide?node-id=166%3A0&viewport=1714%2C3489%2C1&scaling=min-zoom"
+   image = "/assets/images/guide/contribute/formatting/prototype-example.png"
+   retina = "/assets/images/guide/contribute/formatting/prototype-example@2x.png"
+   mobile = "/assets/images/guide/contribute/formatting/prototype-example-mobile.png"
+   mobileRetina = "/assets/images/guide/contribute/formatting/prototype-example-mobile@2x.png"
+   alt-text = "Example image"
+   width = 800
+   height = 500
+%}
 
 ### Footnotes
 
