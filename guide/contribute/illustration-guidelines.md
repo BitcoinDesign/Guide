@@ -14,7 +14,7 @@ As this is a design guide, it is only natural that much of our content uses imag
 
 ## Creative direction
 
-The basic design of this website was intentionally kept minimal, so authors have more freedom to express their own creative ideas in the content they create. So we encourage experimentation and expression, just keep in mind that the total experience of the guide should still be coherent to readers and allows for easy absorption of the content. Regularly discussing your ideas with others and getting feedback is the best way to ensure we can achieve this. Also make sure to look around and take inspiration from what others have done.
+The basic design of this website was intentionally kept minimal, so authors have more freedom to express their own creative ideas in the content they create. We encourage experimentation and expression, just keep in mind that the total experience of the guide should still be coherent to readers and allow for easy absorption of the content. Regularly discussing your ideas with others and getting feedback is the best way to ensure we can achieve this. Also make sure to look around and take inspiration from what others have done.
 
 ## File folders
 
@@ -61,7 +61,7 @@ This ensures images render crisp and clear while keeping file download size and 
 
 Overall, there are five layout options for images, each one resulting in a different image size. Aditionally, desktop and mobile layout logic differs, and we also need to support regular and retina screen resolutions. Result is that each image needs to be exported at four different sizes. For examples, view the [Formatting](/guide/contribute/formatting/#images) page.
 
-Overall, the image width is what you should pay attention to when export. Image height is up you, based on the image content.
+Pay attention to the image width when you export. Image height is up you, based on the image content.
 
 Image width specifications are as follows, with widths provided in pixels. 2x images are for retina screens and always double the size of the regular image.
 
@@ -118,7 +118,7 @@ Create and specify differently laid out images for desktop and mobile as needed.
 
 ## File size optimization
 
-If you run this repository locally, images will be automatically compressed as you add them. After compression, ensure that the quality is still acceptable. Heavily textured images are sometimes too strongly compressed resulting in visible compression crystals, blurry lines and other visual artefacts.
+If you run this repository [locally](https://github.com/BitcoinDesign/Guide/#run-locally), images will be automatically compressed as you add them. After compression, ensure that the quality is still acceptable. Heavily textured images are sometimes heavily compressed resulting in visible compression crystals, blurry lines and other visual artefacts.
 
 ---
 
