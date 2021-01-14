@@ -32,11 +32,11 @@ Images for this page are located in:
 
 Keep your file names in lowercase and avoid any special characters (including spaces).
 
-Bad:
+**Don't**
 
 `My übercool image.PNG`
 
-Good:
+**Do**
 
 `my-ubercool-image.png`
 
@@ -63,9 +63,9 @@ Overall, there are five layout options for images, each one resulting in a diffe
 
 Overall, the image width is what you should pay attention to when export. Image height is up you, based on the image content.
 
-</div>
-
 Image width specifications are as follows, with widths provided in pixels. 2x images are for retina screens and always double the size of the regular image.
+
+</div>
 
 | Type | Purpose | width
 |:-|:-|:-|
