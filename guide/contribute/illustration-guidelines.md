@@ -61,7 +61,7 @@ This ensures images render crisp and clear while keeping file download size and 
 
 Overall, there are five layout options for images, each one resulting in a different image size. Aditionally, desktop and mobile layout logic differs, and we also need to support regular and retina screen resolutions. Result is that each image needs to be exported at four different sizes. For examples, view the [Formatting](/guide/contribute/formatting/#images) page.
 
-Overall, the image width is what you should pay attention to when export. Image height is up you, based on the image content.
+Pay attention to the image width when you export. Image height is up you, based on the image content.
 
 </div>
 
