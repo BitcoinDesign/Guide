@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Illustration guidelines
-description: Writing tips for authors of the Bitcoin Design Guide.
+description: Tips for creating and preparing visuals for the Bitcoin Design Guide.
 nav_order: 3
 parent: Contribute
 permalink: /guide/contribute/illustration-guidelines/
@@ -119,3 +119,7 @@ Create and specify differently laid out images for desktop and mobile as needed.
 ## File size optimization
 
 If you run this repository locally, images will be automatically compressed as you add them. After compression, ensure that the quality is still acceptable. Heavily textured images are sometimes too strongly compressed resulting in visible compression crystals, blurry lines and other visual artefacts.
+
+---
+
+Next, find out what options are available for formatting your content. [Take a look](/guide/contribute/formatting/).
