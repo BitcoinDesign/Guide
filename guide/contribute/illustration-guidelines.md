@@ -14,7 +14,7 @@ As this is a design guide, it is only natural that much of our content uses imag
 
 ## Creative direction
 
-The basic design of this website was intentionally kept minimal, so authors have more freedom to express their own creative ideas in the content they create. So we encourage experimentation and expression, just keep in mind that the total experience of the guide should still be coherent to readers and allows for easy absorption of the content. Regularly discussing your ideas with others and getting feedback is the best way to ensure we can achieve this. Also make sure to look around and take inspiration from what others have done.
+The basic design of this website was intentionally kept minimal, so authors have more freedom to express their own creative ideas in the content they create. We encourage experimentation and expression, just keep in mind that the total experience of the guide should still be coherent to readers and allow for easy absorption of the content. Regularly discussing your ideas with others and getting feedback is the best way to ensure we can achieve this. Also make sure to look around and take inspiration from what others have done.
 
 ## File folders
 
