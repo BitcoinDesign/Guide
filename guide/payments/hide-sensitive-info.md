@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Hide Sensitive Information
+title: Hide sensitive information
 nav_order: 71
 has_children: false
 parent: Payments
@@ -21,15 +21,18 @@ image: /assets/images/guide/payments/hide-sensitive-information-header.png
    layout = "full-width"
 %}
 
-# Hiding Sensitive Information
+# Hiding sensitive information
 
 Imagine this scenario. You are in a public place, and you need to make a payment using your bitcoin wallet. You open your wallet on your phone, but you don’t feel comfortable having your address and balance information clearly visible to strangers who may be looking over your shoulder. Hence by giving users the ability to hide sensitive information in their wallet if desired, they gain an added sense of privacy and security when using the app in public.
 
 ## What information is considered sensitive ?
 
-Sensitive information in wallet applications include the wallet balance, addresses, private keys and previous transactions information. They are considered sensitive for the following reasons, the wallet balance is considered sensitive because it shows exactly how much you have in your wallet, addresses and previous transaction information are sensitive because they can be used to track how you spend and receive your bitcoins, and private keys, if they fall into the wrong hands, can be used to access and transfer your bitcoins.
+Sensitive information in wallet applications include the wallet balance, addresses, private keys and previous transactions information. 
+- Wallet Balance - shows how much you own
+- Addresses - can be used to track your transaction history
+- Private keys - can be used to access and transfer your bitcoins
 
-It's more common for wallets to protect private keys but not much is done for other sensitive information like the balance, addresses and previous transactions but a few wallets like Bitcoin Core, Wasabi, Wallet of Satoshi, and others have made it work though. Below describes a pattern, and considerations for hiding and revealing sensitive information
+It's more common for wallets to protect private keys but not much is done for other sensitive information like the balance, addresses and previous transactions. A few wallets like Bitcoin Core, Wasabi, Wallet of Satoshi, and others have made it work though. Below describes a pattern, and considerations for hiding and revealing sensitive information.
 
 ## Hiding and revealing information with the hide icon
 
@@ -52,10 +55,10 @@ Pros
 
 Cons
 
-- Super easy for anyone else to reveal your information if they have access to your device.
+- Easy for anyone else to reveal your information if they have access to your device.
 
 
-## Entering a pin to unveil information
+## Entering a PIN to unveil information
 
 A problem that seemed to arise throughout each implementation was that is was as easy to reverse the hidden state as it was to enable it. This may be for convenience sake, however, if you are in a situation where you are concerned about unauthorized access by someone who has your device, once hidden perhaps you should be only able to unhide if a PIN or password has been entered. This could therefore reaffirm the identity of the wallet owner for extra security.
 
@@ -143,4 +146,3 @@ By including the hiding information pattern in design of wallets, we give users 
 [^4]:  https://github.com/bitcoin-core/gui/issues/82
 
 [5]: https://docs.wasabiwallet.io/using-wasabi/PrivacyMode.html
-
