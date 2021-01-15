@@ -1,11 +1,12 @@
 # Bitcoin Design Guide
 
-This is a project overview of a design guide for bitcoin with early thoughts on what it could end up being.
-
-Like a travel guide, it provides an introduction to a “foreign place”, shows you the highlights and tells you some of the best stories. It provides facts and maps to figure out how to get around, ideas for tours and things to do. Whether you end up taking the official museum tour, clubbing all night or go on shopping sprees is still your choice. Note that these are guides, not mandates. Just like in a foreign city, you can choose to go off the path, and forge a new direction. Others may just follow in the future.
+This is the repository for the [Bitcoin Design Guide](https://bitcoin.design/guide/), and the [bitcoin.design](http://bitcoin.design) community website.
 
 Discussion and collaboration is taking place in the [bitcoin design Slack](http://bitcoindesigners.org) (#bitcoin-design-guide).
 
+The [Bitcoin Design Guide](https://bitcoin.design/guide/) is a free open-source community resource that helps designers, developers and others working on non-custodial bitcoin-products to create better experiences, faster. We hope that, over time, it will cover all relevant types of products, including consumer wallets, merchant interactions, exchanges and more. Better products and experiences should ultimately make it more appealing for anyone to own and use bitcoin.
+
+An equally important goal is that the process of creating this guide nurtures an open-source bitcoin design community that can carry this, and other projects forward longer term. The [bitcoin design Slack](http://bitcoindesigners.org) and the [bitcoin.design](http://bitcoin.design) website are the first step in this direction.
 
 ## Table of Contents
 
@@ -15,14 +16,6 @@ Discussion and collaboration is taking place in the [bitcoin design Slack](http:
 - [Run Locally](#run-locally)
 
 ---
-
-
-## Goal
-
-The Bitcoin Design Guide is a free open-source community resource that helps designers, developers and others working on non-custodial bitcoin-products to create better experiences, faster. We hope that, over time, it will cover all relevant types of products, including consumer wallets, merchant interactions, exchanges and more. Better products and experiences should ultimately make it more appealing for anyone to own and use bitcoin.
-
-An equally important goal is that the process of creating this guide nurtures an open-source bitcoin design community that can carry this, and other projects forward longer term. The [bitcoin design Slack](http://bitcoindesigners.org) and the [bitcoin.design](http://bitcoin.design) website are the first step in this direction.
-
 
 ## Process
 
