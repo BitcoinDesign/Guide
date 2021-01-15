@@ -26,6 +26,7 @@ We use the #bitcoin-design-guide channel in the [Bitoin Design Slack community](
 
 We use Github to host the content of the guide. [Issues](https://github.com/BitcoinDesign/Guide/issues) are used to post ideas for improvements, and proposed changes are posted as [Pull Requests](https://github.com/BitcoinDesign/Guide/pulls). 
 For some ideas we use [Discussions](https://github.com/BitcoinDesign/Guide/discussions). 
+
 ---
 
 **[Content guidelines]({{ '/guide/contribute/content-guidelines/' | relative_url }})**
