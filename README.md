@@ -60,24 +60,25 @@ Consider publishing a regular/monthly newsletter with updates from the community
 
 ## Guide Content
 
-It should be a simple starting-point for anyone looking to build bitcoin-based products, while providing deeper topics and value also for more experienced bitcoin designers. If bitcoin is the platform, the guide could provide information and resources that should be consistent across apps and products built on top of it.
+The guide is meant to be a simple starting-point for anyone looking to build bitcoin-based applications, while providing deeper topics and value for more experienced bitcoin designers. Bitcoin is the platform, and the guide should provide information and resources that should be consistent across applications built on top of it.
 
-The guide should be seen as an evolving resource. Similar to the iterative design process, it starts with core parts then grows in ambition based on community support.
+The guide is still being created and should be seen as an evolving resource. Similar to the iterative design process, it starts with core parts then grows in ambition based on community support.
 
-An initial outline that will be updated as needed:
+Here is an initial outline that will be updated as needed, content that is live is linked:
 
-*   Getting started
-    *   Intro
+[The Bitcoin Design Guide](https://bitcoin.design/guide/)
+*   [Getting started](https://bitcoin.design/guide/getting-started/introduction/)
+    *   Why bitcoin is unique
     *   Why design for bitcoin
-    *   What makes bitcoin unique
-    *   Bitcoin technology primer
-        *   Technologies
-        *   Software
-        *   Hardware
-    *   Common use cases & user flows
-    *   Open source & open design
-    *   Unique aspects of bitcoin design
-    *   First steps
+    *   Open design
+    *   The visual language of bitcoin
+    *   User research
+    *   Personal finance
+    *   Usage life cycle
+    *   Common user flows
+    *   Technology primer
+    *   Software overview
+    *   Hardware overview
 *   Bitcoin design principles (to be discussed)
     *   Decentralization
     *   Self-sovereignty
@@ -88,40 +89,24 @@ An initial outline that will be updated as needed:
     *   Onboarding users to bitcoin
         *   Key concepts users should be aware of
         *   Recommended actions on first-run
-    *   Private key management
-        *   Freedom with responsibility (users are in charge of their own security)
-        *   Range of options (Hardware, paper, seed, multi-sig, keychain etc)
-        *   Best practice for each option, when to use etc. (real-world scenarios, inheritance planning, commercial/organization use, value thresholds...)
-        *   Privacy (address re-use, chainalysis, Tor, CoinJoin…)
-        *   Multisig and its various applications
-        *   Multi-account?
-    *   Transactions
-        *   Sending / Receiving
-            *   Address representation and naming
-            *   Transaction states
-            *   Confirmation
-            *   Fee-bumping (RBF)
-        *   Transaction history
-        *   Number representation (Full decimal Bitcoin, Sats, Fiat converted)
-        *   Merchant interactions
-        *   Bitcoin vs Lightning (massive headache, should be the same to users)
+    *   [Private key management](https://bitcoin.design/guide/private-key-management/introduction/)
+        *   Private key schemes
+        *   Personal schemes
+        *   Shared schemes
+        *   Principles
+        *   Case studies
+    *   Payments and transactions - [Discussion about WIP](https://github.com/BitcoinDesign/Guide/discussions/98)
+        *   Transactions overview
+        *   Sending bitcoin
+        *   Receiving bitcoin
+        *   Transaction privacy
+        *   Bitcoin transactiosn in depth
+        *   Lightning transactions in depth
+        *   Managing funds
+        *   Case studies
     *   Important BIPs
 *   Resources
-    *   The visual language of bitcoin
-        *   Branding/Not branding - network vs products
-        *   Color - document, network vs products?
-        *   ‘Official’ icons and symbols? (when to use)
-            *   Icon, (Bitboy, Nov 1 2010)
-            *   Symbol, Unicode 10 (2017) U+20BF
-            *   Promotional graphics on [bitcoinwiki.org](https://en.bitcoinwiki.org/wiki/Promotional_graphics)?
-        *   Action icons - should there be recommended standards?
-    *   Common design patterns
-        *   Wallets (desktop/web/mobile, open-source, custodial...)
-        *   Merchant tools
-        *   Exchanges
-        *   Nodes
-        *   Do’s & Don'ts
-    *   Glossary, explanation of terminology (would duplicate [Bitcoin Optech](https://bitcoinops.org/en/topics/)?)
+    *   [Glossary](https://bitcoin.design/guide/glossary/)
 *   Reference
     *   User research
         *   Overview
@@ -131,8 +116,10 @@ An initial outline that will be updated as needed:
     *   Academic research
     *   Available/relevant technologies (Development tools, Libraries etc.)
     *   Material and articles elsewhere
-*   About
-*   Contribute
+*   [Contribute](https://bitcoin.design/guide/contribute/)
+    *   Content guidelines
+    *   Illustration guidelines
+    *   Formatting
 *   Maybe?
     *   Designing for Lightning
     *   Designing for hardware wallets
