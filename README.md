@@ -17,46 +17,11 @@ An equally important goal is that the process of creating this guide nurtures an
 
 ---
 
-## Process
+## Process and how to contribute
 
-The goal is for the process of creating the guide to be as open and decentralized as possible, resulting in a sustainable model to run projects with the community. A rough outline of thinking on phases so far:
+The process of creating the guide is meant to be as open and decentralized as possible, resulting in a sustainable model to run projects with the community. Most of the discussion happen in the [bitcoin design Slack](http://bitcoindesigners.org), in the #bitcoin-design-guide, and here on Github in [Issues](https://github.com/BitcoinDesign/Guide/issues), [Pull requests](https://github.com/BitcoinDesign/Guide/pulls) and [Discussions](https://github.com/BitcoinDesign/Guide/discussions).
 
-**Phase 1 - facilitate and initiate collaborative work**
-
-**DONE** Initial conversations with many existing contributors and members of the bitcoin design community.
-
-**DONE** Learn about the main UX issues that need tackling, what a guide could help with, and thoughts about how to foster a long term community. Via early conversations and feedback on this doc.
-
-**DONE** Facilitate communication amongst bitcoin designers by creating a [forum](http://bitcoindesigners.org).
-
-**DONE** Start regular video calls. (First call held 9am PT July 1, information on past and upcoming calls can be found [here]( https://github.com/BitcoinDesign/Meta/issues).
-
-Create a lightweight project list for the community to be aware of what is being worked on. (Github Projects proposed, temporary doc, etc.)
-
-**Phase 2 - create content domains, repositories and draft first chapters**
-
-Start work on the first batch of chapters for the guide.
-
-*   [Christoph Ono](https://github.com/GBKS) working on [‘Getting started guide’](https://github.com/BitcoinDesign/Guide/pull/20)
-*   [Daniel Nordh](https://github.com/danielnordh) working on ‘Private key management’
-*   [Johns Beharry](https://github.com/peakshift) working on ‘Payments’
-
-Create a website and other resources for the bitcoin design community.
-
-*  Agree on domain name - [bitcoin.design discussion](https://github.com/BitcoinDesign/Guide/issues/9)
-*  Github handle [BitcoinDesign](https://github.com/BitcoinDesign)
-*  Twitter handle (less urgent)
-*  [Initial holding page / content](https://github.com/BitcoinDesign/Guide/issues/10)
-*  Propose governance model - [discussion](https://github.com/BitcoinDesign/Meta/issues/10)
-* Find community members to take on other parts of the guide content.
-* Form working groups around key topics in the guide.
-
-**Phase 3 - publish guide mvp**
-
-Complete first chapters of guide on the website.
-Guide is announced to be usable in its first form. Contribution and governance model is clarified. Work continues by community, grants etc.
-Consider publishing a regular/monthly newsletter with updates from the community / relevant news for the bitcoin design community.
-
+You can read more about [how to contribute](https://bitcoin.design/guide/contribute/)
 
 ## Guide Content
 
@@ -141,8 +106,9 @@ Here is an initial outline that will be updated as needed, content that is live 
 
 ---
 
+## Origin and history
 
-Version 1 of this doc [can be found here](https://docs.google.com/document/d/1omAxwvCSRlo_u5UL3ThTXFhNccDuN7GJOi4RlZfk--w/edit#heading=h.75nvyav1r98b) for reference.
+The process to create the guide started in the summer of 2020. The first drafts of this document first existed as Google Docs, here are [Version 1](https://docs.google.com/document/d/1omAxwvCSRlo_u5UL3ThTXFhNccDuN7GJOi4RlZfk--w/edit#heading=h.75nvyav1r98b) and [Version 2](https://docs.google.com/document/d/1YiYeRIybGmxmErCOI4Jc8Qajz3JGM1JYVfUtpzyCzSk/edit?usp=sharing) for reference.
 
 
 ---
