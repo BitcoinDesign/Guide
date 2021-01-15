@@ -45,7 +45,16 @@ Imagine a product which tries to solve the problem of quickly and easily sending
 
 A single-key scheme with [automatic cloud backup]({{ '/guide/private-key-management/single-user-schemes/#automatic-cloud-backup' | relative_url }}) might be the best choice for the majority of users in this case. For more advanced users you could offer the option to opt-out of automatic cloud backup and instead use a recovery phrase.
 
-<iframe style="border: 0px solid rgba(0, 0, 0, 0.1);" width="450" height="1000" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSRWlaxbDulsacpPQn2TTri%2FCase-study-prototypes%3Fnode-id%3D1%253A3%26viewport%3D1204%252C392%252C0.5%26scaling%3Dmin-zoom" allowfullscreen></iframe>
+{% include prototype.html
+   link = "https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=1%3A3&viewport=1357%2C576%2C1&scaling=scale-down"
+   image = "/assets/images/guide/private-key-management/case-studies/case-cash.png"
+   retina = "/assets/images/guide/private-key-management/case-studies/case-cash@2x.png"
+   mobile = "/assets/images/guide/private-key-management/case-studies/case-cash-mobile.png"
+   mobileRetina = "/assets/images/guide/private-key-management/case-studies/case-cash-mobile@2x.png"
+   alt-text = "Image of case study prototype"
+   width = 800
+   height = 500
+%}
 
 #### Design considerations 
 - Most users will be bitcoin beginners
