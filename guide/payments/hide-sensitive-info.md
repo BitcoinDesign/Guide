@@ -35,7 +35,15 @@ It's more common for wallets to protect private keys but not much is done for ot
 
 The hide icon / button, which is usually displayed within close reach of the balance itself, is used to quickly and easily hide and reveal wallet information by tapping or clicking on it.
 
-![hidden by eye icon](/assets/images/payments/hide-info-hidden-by-eye-icon.png)
+{% include picture.html
+   image = "/assets/images/payments/hide-info-hidden-by-eye-icon.png"
+   retina = "/assets/images/payments/hide-info-hidden-by-eye-icon.png"
+   mobile = "/assets/images/payments/hide-info-hidden-by-eye-icon.png"
+   mobileRetina = "/assets/images/payments/hide-info-hidden-by-eye-icon.png"
+   alt-text = "hidden-by-eye-icon"
+   width = 1600
+   height = 800
+   layout = "full-width"
 
 Pros
 
@@ -50,7 +58,16 @@ Cons
 
 A problem that seemed to arise throughout each implementation was that is was as easy to reverse the hidden state as it was to enable it. This may be for convenience sake, however, if you are in a situation where you are concerned about unauthorized access by someone who has your device, once hidden perhaps you should be only able to unhide if a PIN or password has been entered. This could therefore reaffirm the identity of the wallet owner for extra security.
 
-![reveal by pin](/assets/images/payments/hide-info-reveal-by-pin.png)
+{% include picture.html
+   image = "/assets/images/payments/hide-info-reveal-by-pin.png"
+   retina = "/assets/images/payments/hide-info-reveal-by-pin.png"
+   mobile = "/assets/images/payments/hide-info-reveal-by-pin.png"
+   mobileRetina = "/assets/images/payments/hide-info-reveal-by-pin.png"
+   alt-text = "hide-info-reveal-by-pin"
+   width = 1600
+   height = 800
+   layout = "full-width"
+
 
 Pros
 - The risk of an unauthorized person revealing your information is minimal due to the pin required
@@ -65,7 +82,16 @@ Cons
 
 Another solution would be to invoke the wallet’s hidden state as a default when the app is opened. What this means is that in the event that someone sees your wallet when you open it, they wouldn't be able to make out the information. The pre-hidden state can be unveiled  after a tap, PIN entry, or perhaps a short 5 second timer.
 
-![hidden by default](/assets/images/payments/hide-info-hidden-by-default.png)
+{% include picture.html
+   image = "/assets/images/payments/hide-info-hidden-by-default.png"
+   retina = "/assets/images/payments/hide-info-hidden-by-default.png"
+   mobile = "/assets/images/payments/hide-info-hidden-by-default.png"
+   mobileRetina = "/assets/images/payments/hide-info-hidden-by-default.png"
+   alt-text = "hidden-by-default"
+   width = 1600
+   height = 800
+   layout = "full-width"
+
 
 Pros
 
@@ -79,7 +105,16 @@ Cons
 
 Having the show/hide button right on the main screen make things quite obvious for someone who has access to your device to press unhide. A solution would be to move the hide toggle away from the home screen and into the app settings. This way, if someone has access to your device and opens the app, they may not immediately know how to reveal the hidden information as it is not as obvious as the previous solutions.
 
-![hide toggle in setting](/assets/images/payments/hide-info-hide-toggle-in-settings.png)
+{% include picture.html
+   image = "/assets/images/payments/hide-info-hide-toggle-in-settings.png"
+   retina = "/assets/images/payments/hide-info-hide-toggle-in-settings.png"
+   mobile = "/assets/images/payments/hide-info-hide-toggle-in-settings.png"
+   mobileRetina = "/assets/images/payments/hide-info-hide-toggle-in-settings.png"
+   alt-text = "hide-toggle-in-setting"
+   width = 1600
+   height = 800
+   layout = "full-width"
+
 
 Pros
 - The risk of an unauthorized person revealing your information is minimal due to the fact that the toggle isn't immediately visible on the home screen
