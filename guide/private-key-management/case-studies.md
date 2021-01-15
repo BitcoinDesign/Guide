@@ -14,6 +14,7 @@ image: /assets/images/guide/private-key-management/case-studies/page-case-studie
 Editor's notes
 
 A range of case study designs for bitcoin applications.
+The images for this page come from this Figma file: https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=986%3A0
 
 -->
 
