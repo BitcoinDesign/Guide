@@ -18,7 +18,7 @@ This page shows you how to get involved and start contributing.
 
 **[Slack channel]({{ site.slack_invite_url }})**
 
-We use the #bitcoin-design-guide channel in the [Bitoin Design Slack community]({{ site.slack_invite_url }}) to communicate and discuss work on guide. To hear what is going on, see what you can help with, or suggest new contributions please come and say hi.
+We use the #bitcoin-design-guide channel in the [Bitcoin Design Slack community]({{ site.slack_invite_url }}) to communicate and discuss work on guide. To hear what is going on, see what you can help with, or suggest new contributions please come and say hi.
 
 ---
 
