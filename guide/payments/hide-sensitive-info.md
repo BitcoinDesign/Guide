@@ -44,6 +44,7 @@ The hide icon / button, which is usually displayed within close reach of the bal
    width = 1600
    height = 800
    layout = "full-width"
+   %}
 
 Pros
 
@@ -67,6 +68,7 @@ A problem that seemed to arise throughout each implementation was that is was as
    width = 1600
    height = 800
    layout = "full-width"
+   %}
 
 
 Pros
@@ -91,6 +93,7 @@ Another solution would be to invoke the wallet’s hidden state as a default whe
    width = 1600
    height = 800
    layout = "full-width"
+   %}
 
 
 Pros
@@ -114,6 +117,7 @@ Having the show/hide button right on the main screen make things quite obvious f
    width = 1600
    height = 800
    layout = "full-width"
+   %}
 
 
 Pros
