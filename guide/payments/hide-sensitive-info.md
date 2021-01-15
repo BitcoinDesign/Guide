@@ -27,9 +27,12 @@ Imagine this scenario. You are in a public place, and you need to make a payment
 
 ## What information is considered sensitive ?
 
-Sensitive information in wallet applications include the wallet balance, addresses, private keys and previous transactions information. They are considered sensitive for the following reasons, the wallet balance is considered sensitive because it shows exactly how much you have in your wallet, addresses and previous transaction information are sensitive because they can be used to track how you spend and receive your bitcoins, and private keys, if they fall into the wrong hands, can be used to access and transfer your bitcoins.
+Sensitive information in wallet applications include the wallet balance, addresses, private keys and previous transactions information. 
+- Wallet Balance - shows how much you own
+- Addresses - can be used to track your transaction history
+- Private keys - can be used to access and transfer your bitcoins
 
-It's more common for wallets to protect private keys but not much is done for other sensitive information like the balance, addresses and previous transactions but a few wallets like Bitcoin Core, Wasabi, Wallet of Satoshi, and others have made it work though. Below describes a pattern, and considerations for hiding and revealing sensitive information
+It's more common for wallets to protect private keys but not much is done for other sensitive information like the balance, addresses and previous transactions. A few wallets like Bitcoin Core, Wasabi, Wallet of Satoshi, and others have made it work though. Below describes a pattern, and considerations for hiding and revealing sensitive information.
 
 ## Hiding and revealing information with the hide icon
 
@@ -54,7 +57,7 @@ Cons
 - Easy for anyone else to reveal your information if they have access to your device.
 
 
-## Entering a pin to unveil information
+## Entering a PIN to unveil information
 
 A problem that seemed to arise throughout each implementation was that is was as easy to reverse the hidden state as it was to enable it. This may be for convenience sake, however, if you are in a situation where you are concerned about unauthorized access by someone who has your device, once hidden perhaps you should be only able to unhide if a PIN or password has been entered. This could therefore reaffirm the identity of the wallet owner for extra security.
 
