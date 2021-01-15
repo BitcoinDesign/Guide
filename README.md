@@ -13,7 +13,7 @@ An equally important goal is that the process of creating this guide nurtures an
 - [Objective](#objective)
 - [Process](#process)
 - [Guide Content](#guide-content)
-- [Run Locally](#run-locally)
+- [How to build and run the site locally](#run-locally)
 
 ---
 
@@ -161,20 +161,20 @@ Version 1 of this doc [can be found here](https://docs.google.com/document/d/1om
 ---
 
 
-## Run Locally
+## How to build and run the site locally
 
 You'll want to run the site locally to test your changes.
 
-First make sure you have Ruby and Bundler:
+**Make sure you have Ruby and Bundler installed:**
 
-1. Check that Ruby is installed (check with `ruby -v`). Must be 2.2.5 or higher. Install instruction at https://www.ruby-lang.org/en/documentation/installation/.
+1. Check that Ruby is installed (check with `ruby -v`). Must be 2.2.5 or higher. Install instructions can be found at https://www.ruby-lang.org/en/documentation/installation/.
 2. If you don't already have Bundler (check with `which bundle`), you can install by following the instructions at https://bundler.io.
 
-Then clone the source code, build, and serve:
+**Clone the source code, build, and serve:**
 
 3. Clone this repository and `cd` into it.
-4. Run `bundle install`.
-5. Run `bundle exec jekyll serve`.
+4. Run `bundle install`
+5. Run `bundle exec jekyll serve`
 6. Browse the site at http://127.0.0.1:4000/
 
 To run on gh-pages, uncomment the base_url variable on _config.yml
