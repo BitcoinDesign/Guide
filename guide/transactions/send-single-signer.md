@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Personal Spending
+title: Self Spending
 nav_order: 2
 parent: Transactions
 permalink: /guide/transactions/single-signer/

@@ -4,12 +4,24 @@ title: Structure & Lifecycle
 nav_order: 1
 parent: Transactions
 permalink: /guide/transactions/structure-and-lifecycle/
+main_classes: -no-top-padding
 image: /assets/images/guide/transaction/introduction.png
 ---
 
 <!--
 This explanation assumes the application being designed is using a transaction that requires SIGHASH_ALL
 -->
+
+{% include picture.html
+   image = "/assets/images/transactions/introduction.png"
+   retina = "/assets/images/transactions/introduction@2x.png"
+   mobile = "/assets/images/transactions/introduction.png"
+   mobileRetina = "/assets/images/transactions/introduction@2x.png"
+   alt-text = ""
+   width = 1600
+   height = 900
+   layout = "full-width"
+%}
 
 # Structure & Lifecycle
 
@@ -19,7 +31,7 @@ Still we use batched transactions in this chapter as it makes it easier to commu
 
 ---
 
-#### Cr	eating a Transaction
+#### Creating a Transaction
 
 {% include picture.html
    image = "/assets/images/transactions/placeholder.png"
