@@ -33,16 +33,7 @@ Still we use batched transactions in this chapter as it makes it easier to commu
 
 #### Creating a Transaction
 
-{% include picture.html
-   image = "/assets/images/transactions/placeholder.png"
-   retina = "/assets/images/transactions/placeholder@2x.png"
-   mobile = "/assets/images/transactions/placeholder.png"
-   mobileRetina = "/assets/images/transactions/placeholder@2x.png"
-   alt-text = ""
-   width = 1600
-   height = 900
-   layout = "full-width"
-%}
+![Transaction File](/assets/images/transactions/tx-file.svg)
 
 A transaction can be collaboratively built (for example joint accounts / multisig). In the scenario where the user may want to share a transaction with another party or another device for signing — the there is a file type bitcoin transactions use called PSBT. The transaction can be exported as a `.psbt` file and shared just as you would with a document.
 
@@ -50,16 +41,7 @@ You can think of a wallet as an interface for this file type — which in the en
 
 ##### Adding Payments
 
-{% include picture.html
-   image = "/assets/images/transactions/placeholder.png"
-   retina = "/assets/images/transactions/placeholder@2x.png"
-   mobile = "/assets/images/transactions/placeholder.png"
-   mobileRetina = "/assets/images/transactions/placeholder@2x.png"
-   alt-text = ""
-   width = 1600
-   height = 900
-   layout = "full-width"
-%}
+![Adding Payments/Outputs](/assets/images/transactions/tx-add-payment.svg)
 
 There can be multiple payments within a transaction — and all that is required by the user is to enter the destination address and the amount.
 
@@ -80,18 +62,9 @@ There can be multiple payments within a transaction — and all that is required
 
 ##### Funding a transaction
 
-{% include picture.html
-   image = "/assets/images/transactions/placeholder.png"
-   retina = "/assets/images/transactions/placeholder@2x.png"
-   mobile = "/assets/images/transactions/placeholder.png"
-   mobileRetina = "/assets/images/transactions/placeholder@2x.png"
-   alt-text = ""
-   width = 1600
-   height = 900
-   layout = "full-width"
-%}
-
 When transacting on the bitcoin blockchain (on-chain), you fund a transaction by selecting some previously received coins, then enter the payment destination and amount.
+
+![Adding Inputs](/assets/images/transactions/tx-fund.svg)
 
 ---
 
@@ -157,17 +130,6 @@ During this phase you import the transaction (file, or text) into the applicatio
 ##### In the wallet software
 
 Signing a transaction on your own is pretty straight forward, the user does not need to be prompted each time the transaction gets funded or a payment added. Instead signing is usually done all at once when the user approves the transaction to be broadcasted.
-
-{% include picture.html
-   image = "/assets/images/transactions/placeholder.png"
-   retina = "/assets/images/transactions/placeholder@2x.png"
-   mobile = "/assets/images/transactions/placeholder.png"
-   mobileRetina = "/assets/images/transactions/placeholder@2x.png"
-   alt-text = ""
-   width = 1600
-   height = 900
-   layout = "full-width"
-%}
 
 ##### External signing device
 
@@ -239,16 +201,7 @@ There is a new block being creating on average every 10 mins. A payment is not g
 
 #### Speeding Up / Canceling
 
-{% include picture.html
-   image = "/assets/images/transactions/placeholder.png"
-   retina = "/assets/images/transactions/placeholder@2x.png"
-   mobile = "/assets/images/transactions/placeholder.png"
-   mobileRetina = "/assets/images/transactions/placeholder@2x.png"
-   alt-text = ""
-   width = 1600
-   height = 900
-   layout = "full-width"
-%}
+![Bump Transaction](/assets/images/transactions/tx-speed.svg)
 
 While in the mempool — it's possible to speed up the transaction or even cancel a payment within it before it is confirmed in a block.
 
