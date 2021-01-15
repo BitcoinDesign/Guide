@@ -25,6 +25,8 @@ Illustration sources
 
 Since Bitcoin does not have a central authority, there is no specific symbol or style that we can consider official. However, there is a large body of community art and design work, along with a few proposals that ended up being highly influential. Let's start with some key moments that led us to the visual that many of us associate with Bitcoin today.
 
+### Original symbol
+
 <div class="center" markdown="1">
 
 {% include image.html
@@ -35,8 +37,6 @@ Since Bitcoin does not have a central authority, there is no specific symbol or 
    height = 140
    layout = "float-left"
 %}
-
-### Original symbol
 
 This original icon was a golden coin with bold initial "BC" inscribed, created by Satoshi Nakamoto for the original Bitcoin Core client.
 
@@ -54,6 +54,8 @@ This original icon was a golden coin with bold initial "BC" inscribed, created b
 
 </div>
 
+### Updated symbol
+
 <div class="center" markdown="1">
 
 {% include image.html
@@ -65,11 +67,11 @@ This original icon was a golden coin with bold initial "BC" inscribed, created b
    layout = "float-left"
 %}
 
-### Updated symbol
-
 On February 24, 2010, Satoshi posted an updated icon that adopted the capital "B" with two vertical lines ([archive.org](https://web.archive.org/web/20130524055823/https://bitcointalk.org/index.php?topic=64.0), [bitcointalk.org](https://bitcointalk.org/index.php?topic=64.0)).
 
 </div>
+
+### Update by Bitboy
 
 <div class="center" markdown="1">
 
@@ -81,8 +83,6 @@ On February 24, 2010, Satoshi posted an updated icon that adopted the capital "B
    height = 140
    layout = "float-left"
 %}
-
-### Bitboy
 
 On November 1, 2010, a user named bitboy proposed a new icon and set of promotional graphics on the Bitcointalk forum ([archive.org](https://web.archive.org/web/20130524191250/https://bitcointalk.org/index.php?topic=1631.0), [bitcointalk.org](https://bitcointalk.org/index.php?topic=1631.0)). This iteration embraced a simple, flat style with the hex color #F7931A and a 14-degree rotation.
 
@@ -101,6 +101,8 @@ On November 1, 2010, a user named bitboy proposed a new icon and set of promotio
 
 </div>
 
+### The unicode symbol
+
 <div class="center" markdown="1">
 
 {% include image.html
@@ -111,8 +113,6 @@ On November 1, 2010, a user named bitboy proposed a new icon and set of promotio
    height = 140
    layout = "float-left"
 %}
-
-### Unicode symbol
 
 The unicode symbol for Bitcoin (₿) was introduced in [Unicode 10.0.0](http://www.unicode.org/versions/Unicode10.0.0/) on June 20, 2017. This was an important step for establishing Bitcoin as a currency symbol alongside the US Dollar ($), Euro (€) and others. Few fonts support the symbol as of late 2020.
 

@@ -1,7 +1,8 @@
 ---
 layout: guide
 title: Glossary
-nav_order: 4
+permalink: /guide/glossary/
+nav_order: 6
 ---
 
 # Glossary
@@ -9,27 +10,27 @@ nav_order: 4
 
 ## Address
 
-An identifier of 26-35 alphanumeric characters that is used to receive bitcoin. There are [several address formats](https://en.bitcoin.it/wiki/List_of_address_prefixes){:target="_blank"} based on different specifications. Users need to know this information during backup for future recovery so applications should inform users which format it uses as support varies across applications.
+An identifier of 26-35 alphanumeric characters that is used to receive bitcoin. There are [several address formats](https://en.bitcoin.it/wiki/List_of_address_prefixes) based on different specifications. Users need to know this information during backup for future recovery so applications should inform users which format it uses as support varies across applications.
 
 When users enter an address, these formats have specific prefixes so it is possible to instantly determine which format is being used.
 
 These are the three most common ones:
 
 
-**Legacy address - [P2PKH](https://en.bitcoin.it/wiki/Transaction#Pay-to-PubkeyHash){:target="_blank"}**<br/>
+**Legacy address - [P2PKH](https://en.bitcoin.it/wiki/Transaction#Pay-to-PubkeyHash)**<br/>
 Stands for pay-to-pubkey-hash, i.e pay to a hash of the recipient’s public key. This was the original address format for bitcoin and is often called *legacy address*.
 
 *Legacy addresses* begin with the number 1, can contain upper and lowercase characters, and are case sensitive. <br/>
 For example: `1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2`
 
-**Script address - [P2SH](https://en.bitcoin.it/wiki/Pay_to_script_hash){:target="_blank"}**<br/>
+**Script address - [P2SH](https://en.bitcoin.it/wiki/Pay_to_script_hash)**<br/>
 A script address can have code attached to enable additional rules and functionality. P2SH stands for pay-to-script-hash, and was defined in [BIP13](https://github.com/bitcoin/bips/blob/master/bip-0013.mediawiki).  Script addresses are most commonly used for multi-sig addresses which can specify, for example, that signatures from several keys are required to authorize the transaction.
 
 *Script addresses* start with the number 3, can contain upper and lowercase characters, and are case sensitive. <br/>
 For example: `3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy`
 
-**SegWit address - [Bech32](https://en.bitcoin.it/wiki/Bech32){:target="_blank"}**<br/>
-The *SegWit* address format (for segregated witness) was introduced in an update to the Bitcoin protocol that made changes to the transaction format. The technical name of this address format is Bech32, and is specified in [BIP173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki){:target="_blank"}. SegWit addresses are supported by the majority of software and hardware wallets, but a minority of exchanges. SegWit address adoption by applications and exchanges is tracked on [this page](https://en.bitcoin.it/wiki/Bech32_adoption). Any new bitcoin-application should support the use of SegWit addresses.
+**SegWit address - [Bech32](https://en.bitcoin.it/wiki/Bech32)**<br/>
+The *SegWit* address format (for segregated witness) was introduced in an update to the Bitcoin protocol that made changes to the transaction format. The technical name of this address format is Bech32, and is specified in [BIP173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki). SegWit addresses are supported by the majority of software and hardware wallets, but a minority of exchanges. SegWit address adoption by applications and exchanges is tracked on [this page](https://en.bitcoin.it/wiki/Bech32_adoption). Any new bitcoin-application should support the use of SegWit addresses.
 
 The benefits of SegWit addresses include more resistance to input errors (as they are case insensitive and use error-correcting codes), and lower transaction fees. The fee saving will depend on the type of transaction but for a common transfer of funds it can be in the 30-40% range.
 
@@ -41,7 +42,7 @@ When the output of a transaction is used as the input of another transaction, it
 
 ## Account
 
-Just like wallet, the term account can also be used for very different things. In bitcoin wallets that follow the hierarchy described in [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki){:target="_blank"}, a bitcoin wallet can have multiple accounts, with each one having its own addresses. However, account is also oftentimes used for accounts with third-party service providers.
+Just like wallet, the term account can also be used for very different things. In bitcoin wallets that follow the hierarchy described in [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki), a bitcoin wallet can have multiple accounts, with each one having its own addresses. However, account is also oftentimes used for accounts with third-party service providers.
 
 Differentiate between
 
@@ -58,15 +59,15 @@ A Bitcoin wallet often considered as the *reference implementation* and serves a
 
 ## BIP - Bitcoin improvement proposal
 
-A standardized technical document format for suggesting improvements to Bitcoin. They are hosted on Github [here](https://github.com/bitcoin/bips){:target="_blank"}. Some important proposals to be aware of:
+A standardized technical document format for suggesting improvements to Bitcoin. They are hosted on Github [here](https://github.com/bitcoin/bips). Some important proposals to be aware of:
 
-- [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki){:target="_blank"}: Mnemonic code for generating deterministic keys
-- [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki){:target="_blank"}: Multi-account hierarchy for HD wallets
-- [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki){:target="_blank"}: Derivation scheme for HD wallets using nested SegWit
-- [BIP84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki){:target="_blank"}: Derivation scheme for HD wallets using SegWit
-- [BIP141](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki){:target="_blank"}: SegWit, changes to transaction structure
-- [BIP173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki){:target="_blank"}: *Bech32* standard for native SegWit addresses 
-- [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki){:target="_blank"}: Partially Signed Bitcoin Transaction Format
+- [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki): Mnemonic code for generating deterministic keys
+- [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki): Multi-account hierarchy for HD wallets
+- [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki): Derivation scheme for HD wallets using nested SegWit
+- [BIP84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki): Derivation scheme for HD wallets using SegWit
+- [BIP141](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki): SegWit, changes to transaction structure
+- [BIP173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki): *Bech32* standard for native SegWit addresses 
+- [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki): Partially Signed Bitcoin Transaction Format
 
 ## Coin control
 
@@ -102,7 +103,7 @@ As it is possible to trace the history of coins and see how they were previously
    height = 400
 %}
 
- Allow for combining multiple payments from multiple spenders into a single transaction to make it harder to determine which spender paid which recipient(s). More information can be found on [the Bitcoin Wiki](https://en.bitcoin.it/wiki/CoinJoin){:target="_blank"}. See also [PayJoin]( {{ '/guide/glossary/#payjoin-p2ep' | relative_url }} ). 
+ Allow for combining multiple payments from multiple spenders into a single transaction to make it harder to determine which spender paid which recipient(s). More information can be found on [the Bitcoin Wiki](https://en.bitcoin.it/wiki/CoinJoin). See also [PayJoin](#payjoin-p2ep). 
 
 
 </div>
@@ -111,10 +112,10 @@ As it is possible to trace the history of coins and see how they were previously
 
 There are several standards for how to notate the path to a key and corresponding address in [HD wallets](#hd-wallet). It is important to know which ones are used and supported by a wallet-application when importing and exporting a wallet. The most common are:
 
-- [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki){:target="_blank"}: original, deprecated
-- [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki){:target="_blank"}: multi-account for HD wallets
-- [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki){:target="_blank"}: multi-account, for script addresses with nested-SegWit
-- [BIP84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki){:target="_blank"}: multi-account, for SegWit addresses
+- [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki): original, deprecated
+- [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki): multi-account for HD wallets
+- [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki): multi-account, for script addresses with nested-SegWit
+- [BIP84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki): multi-account, for SegWit addresses
 
 BIP44 instroduced the following structure, which BIP49 and BIP84 follow:<br/>
 `m / purpose / coin_type / account / change / index`
@@ -136,11 +137,11 @@ _ToDo: Explain how this is used for multisig and view-only wallets._
 
 ### YPUB
 
-Same as XPUB however the Y denotes that this xpub belongs to a wallet that is following the [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki){:target="_blank"} standard that details the derivation scheme for wrapped-segwit addresses (P2WPKH-nested-in-P2SH).
+Same as XPUB however the Y denotes that this xpub belongs to a wallet that is following the [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki) standard that details the derivation scheme for wrapped-segwit addresses (P2WPKH-nested-in-P2SH).
 
 ### ZPUB
 
-Same as YPUB though the Z denotes it is an extended public key from a segregated witness enabled wallet following [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki){:target="_blank"}. 
+Same as YPUB though the Z denotes it is an extended public key from a segregated witness enabled wallet following [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki). 
 
 ## Initial block download (IBD)
 
@@ -159,18 +160,18 @@ A language for writing certain types of Bitcoin Scripts in a structured way. Min
 
 **References:**
 
-- [Bitcoin Optech](https://bitcoinops.org/en/topics/miniscript/){:target="_blank"}
-- [Introduction](https://medium.com/blockstream/miniscript-bitcoin-scripting-3aeff3853620){:target="_blank"} by Blockstream
+- [Bitcoin Optech](https://bitcoinops.org/en/topics/miniscript/)
+- [Introduction](https://medium.com/blockstream/miniscript-bitcoin-scripting-3aeff3853620) by Blockstream
 
 ## Multi-signature wallet (Multisig)
 Multi-signature wallets are bitcoin wallets that are controlled by more than one keypair. They can be defined by bitcoin scripts and use P2SH addresses. Common usecases and setups include *2-of-3*, or *3-of-5* multi-signature wallets that require a subset of the controlling keypairs to sign a transaction. 
 
 ## MuSig
-A standard for multi-signature that uses Schnorr signatures. Previously, the more signers participated in a transaction, the size of the transaction got larger and took more time to verify. It was also possible to see the number of signers in the final transaction. MuSig addresses both issues. It hides the number of signers for better privacy. MuSig also improves scalability by reducing the size of transactions and being more efficient to verify. The [original paper that describes MuSig](https://eprint.iacr.org/2018/068){:target="_blank"}.
+A standard for multi-signature that uses Schnorr signatures. Previously, the more signers participated in a transaction, the size of the transaction got larger and took more time to verify. It was also possible to see the number of signers in the final transaction. MuSig addresses both issues. It hides the number of signers for better privacy. MuSig also improves scalability by reducing the size of transactions and being more efficient to verify. The [original paper that describes MuSig](https://eprint.iacr.org/2018/068).
 
 **References:**
 
-- [Proposal](https://eprint.iacr.org/2018/068){:target="_blank"} in the Cryptology ePrint archive
+- [Proposal](https://eprint.iacr.org/2018/068) in the Cryptology ePrint archive
 
 ## Node
 
@@ -226,7 +227,7 @@ A node policy that allows an unconfirmed transaction to be replaced with a diffe
 
 _Also referred to as Seed, Mnemonic, and Backup phrase._
 
-The controlling keypair of a bitcoin wallet can be derived from a *recovery phrase* of 12 words (or 18 or 24, which is less common) from a standardized list, defined in [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki){:target="_blank"}. The recovery phrase provides full access to a bitcoin wallet as it contains the private key and is therefore very valuable. It’s extremely important to keep it safe, both from other people getting access to it and for yourself not to lose it by creating one or several backups of the phrase. In many applications most of this work falls on the user and it’s important to acknowledge the responsibility here of the makers of the application to ensure that the user is able and aware of how to securely store a recovery phrase backup.
+The controlling keypair of a bitcoin wallet can be derived from a *recovery phrase* of 12 words (or 18 or 24, which is less common) from a standardized list, defined in [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki). The recovery phrase provides full access to a bitcoin wallet as it contains the private key and is therefore very valuable. It’s extremely important to keep it safe, both from other people getting access to it and for yourself not to lose it by creating one or several backups of the phrase. In many applications most of this work falls on the user and it’s important to acknowledge the responsibility here of the makers of the application to ensure that the user is able and aware of how to securely store a recovery phrase backup.
 
 Many wallet-applications work with HD Wallets and recovery phrases, and are interoperable, meaning you can change the application that can control your wallet should you wish (although there are some caveats depending on if they support just BIP32 or also BIP44). 
 
@@ -237,8 +238,8 @@ Many wallet-applications work with HD Wallets and recovery phrases, and are inte
 
 **References:**
 
-- [WabiSabi](https://github.com/zkSNACKs/WabiSabi/blob/master/explainer.md){:target="_blank"}
-- [Bitcoin wiki](https://en.bitcoin.it/wiki/CoinJoin){:target="_blank"}
+- [WabiSabi](https://github.com/zkSNACKs/WabiSabi/blob/master/explainer.md)
+- [Bitcoin wiki](https://en.bitcoin.it/wiki/CoinJoin)
 
 ## PayJoin (P2EP)
 
@@ -250,12 +251,12 @@ An algorithm to generate cryptographic signatures. One of the benefits is that t
 
 **References:**
 
-- [Wikipedia](https://en.wikipedia.org/wiki/Schnorr_signature){:target="_blank"}
-- [Bitcoin wiki](){:target="_blank"}
-- [BIP340](){:target="_blank"}
+- [Wikipedia](https://en.wikipedia.org/wiki/Schnorr_signature)
+- [Bitcoin wiki]()
+- [BIP340]()
 
 ## Segregated witness (SegWit)
-Segregated Witness, or SegWit, is the name for a soft fork change in the transaction format of Bitcoin. It was described in [BIP141](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki){:target="_blank"}. It was intended to mitigate a blockchain size limitation problem that reduces bitcoin transaction speed. It does this by splitting the transaction into two segments, removing the unlocking signature (*witness* data) from the original portion and appending it as a separate structure at the end. The original section hold the sender and receiver data, and the new *witness* structure contain scripts and signatures.
+Segregated Witness, or SegWit, is the name for a soft fork change in the transaction format of Bitcoin. It was described in [BIP141](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki). It was intended to mitigate a blockchain size limitation problem that reduces bitcoin transaction speed. It does this by splitting the transaction into two segments, removing the unlocking signature (*witness* data) from the original portion and appending it as a separate structure at the end. The original section hold the sender and receiver data, and the new *witness* structure contain scripts and signatures.
 
 ## Taproot
 
@@ -272,7 +273,7 @@ A file format for bitcoin transactions that are not fully signed yet. Allows for
 
 **References:**
 
-- [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki){:target="_blank"}: Partially Signed Bitcoin Transaction Format
+- [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki): Partially Signed Bitcoin Transaction Format
 
 ## Vault
 
@@ -301,7 +302,7 @@ All bitcoin-related data derived from and associated with a single recovery phra
 
 ### HD wallet
 
-Hierarchical Deterministic wallets, or HD wallets, can create infinite keypairs organized in a tree-structure (hierarchical) from a single (deterministic) controlling keypair. They were introduced and defined in [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki){:target="_blank"} and then expanded with [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki){:target="_blank"} which added the ability to handle multiple *accounts* in one wallet. 
+Hierarchical Deterministic wallets, or HD wallets, can create infinite keypairs organized in a tree-structure (hierarchical) from a single (deterministic) controlling keypair. They were introduced and defined in [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) and then expanded with [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) which added the ability to handle multiple *accounts* in one wallet. 
 
 **Technicalities** - There are different bitcoin address formats (see [address](#address)). They have to be held in different branches of the HD wallet but can be controlled by the same recovery phrase.
 
@@ -327,8 +328,8 @@ With a custodial wallet-application, the users are not exposed to and in charge 
 
 ## Additional resources
 
-- [Bitcoin.org](https://bitcoin.org/en/vocabulary){:target="_blank"}
-- [Bitcoin Q + A glossary](https://www.bitcoinqna.com/glossary){:target="_blank"}
-- [Bitcoin Wiki](https://en.bitcoin.it/wiki/Main_Page){:target="_blank"}
-- [Bitcoin Optech style guide](https://github.com/bitcoinops/bitcoinops.github.io/blob/master/STYLE.md){:target="_blank"}
-- [Bitcoin Optech topics](https://bitcoinops.org/en/topics/){:target="_blank"}
+- [Bitcoin.org](https://bitcoin.org/en/vocabulary)
+- [Bitcoin Q + A glossary](https://www.bitcoinqna.com/glossary)
+- [Bitcoin Wiki](https://en.bitcoin.it/wiki/Main_Page)
+- [Bitcoin Optech style guide](https://github.com/bitcoinops/bitcoinops.github.io/blob/master/STYLE.md)
+- [Bitcoin Optech topics](https://bitcoinops.org/en/topics/)
