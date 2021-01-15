@@ -1,6 +1,47 @@
 article.guide {
   position: relative;
 
+  a.video-link,
+  a.prototype-link {
+    position: relative;
+
+    > svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 62px;
+      height: 62px;
+      transition: all $ease 250ms;
+    }
+
+    span {
+      display: flex;
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      transition: all $ease 250ms;
+      background-color: rgba(black, 0.2);
+      border: 2px solid white;
+      border-radius: 100px;
+      color: white;
+      font-size: 18px;
+      padding: 5px 10px;
+      box-shadow: 0 5px 15px -3px rgba(black, 0.25);
+
+      > svg {
+        width: 30px;
+        height: 30px;
+        margin-right: 3px;
+      }
+    }
+
+    &.prototype-link {
+      display: block;
+    }
+  }
+
   h2, h3, h4, h5, h6 {
     a.header-anchor {
       font-size: 0.65em;
