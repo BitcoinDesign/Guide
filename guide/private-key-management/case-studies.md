@@ -92,7 +92,16 @@ The idea here is that the user will control the wallet through an app on their m
 
 Should they lose either their main mobile device, or the purpose-built signing device they can replace the lost key (rotate in a new key) with the help of the recovery key. However, if they lose both the mobile and signing device they will not be able to recover their funds, unless they had also backed up either of the respective recovery phrases. 
 
-<iframe style="border: 0px solid rgba(0, 0, 0, 0.1);" width="450" height="1000" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSRWlaxbDulsacpPQn2TTri%2FCase-study-prototypes%3Fnode-id%3D6%253A11%26viewport%3D479%252C82%252C0.5%26scaling%3Dscale-down" allowfullscreen></iframe>
+{% include prototype.html
+   link = "https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=6%3A11&viewport=333%2C41%2C0.37497082352638245&scaling=scale-down"
+   image = "/assets/images/guide/private-key-management/case-studies/case-current.png"
+   retina = "/assets/images/guide/private-key-management/case-studies/case-current@2x.png"
+   mobile = "/assets/images/guide/private-key-management/case-studies/case-current-mobile.png"
+   mobileRetina = "/assets/images/guide/private-key-management/case-studies/case-current-mobile@2x.png"
+   alt-text = "Image of case study prototype"
+   width = 800
+   height = 500
+%}
 
 #### Design considerations
 - Suitable for monthly transactions
