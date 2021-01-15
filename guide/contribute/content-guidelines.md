@@ -18,7 +18,7 @@ This guide is crafted for anyone interested in building an effective Bitcoin app
 
 #### Speak to the reader
 
-Address the reader directly. Whenever possible, try using active instead of passive voice. Make reader a part the conversation by using second-person pronouns like "you, your and yours". Do not write in first-person and avoid giving predictions and personal opinions.
+Address the reader directly. Whenever possible, try using active instead of passive voice. Make the reader a part the conversation by using second-person pronouns like "you, your and yours". Do not write in first-person and avoid giving predictions and personal opinions.
 
 ##### Don't
 
