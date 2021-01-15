@@ -51,7 +51,7 @@ Pros
 
 Cons
 
-- Super easy for anyone else to reveal your information if they have access to your device.
+- Easy for anyone else to reveal your information if they have access to your device.
 
 
 ## Entering a pin to unveil information
