@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Contribute
+title: Contribute to Guide
 description: Additional material for both readers and writers of the guide.
 nav_order: 9
 has_children: true
