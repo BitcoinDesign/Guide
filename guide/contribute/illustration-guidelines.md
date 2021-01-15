@@ -30,7 +30,7 @@ Images for this page are located in:
 
 ## File names
 
-Keep your file names in lowercase and avoid any special characters (including spaces).
+Keep your file names in lowercase and avoid any special characters (including spaces). Keep them short and descriptive.
 
 **Don't**
 
@@ -38,7 +38,7 @@ Keep your file names in lowercase and avoid any special characters (including sp
 
 **Do**
 
-`my-ubercool-image.png`
+`transaction-confirmation.png`
 
 ## JPG or PNG?
 
