@@ -8,13 +8,6 @@ The [Bitcoin Design Guide](https://bitcoin.design/guide/) is a free open-source 
 
 An equally important goal is that the process of creating this guide nurtures an open-source bitcoin design community that can carry this, and other projects forward longer term. The [bitcoin design Slack](http://bitcoindesigners.org) and the [bitcoin.design](http://bitcoin.design) website are the first step in this direction.
 
-## Table of Contents
-
-- [Objective](#objective)
-- [Process](#process)
-- [Guide Content](#guide-content)
-- [How to build and run the site locally](#run-locally)
-
 ---
 
 ## Process and how to contribute
