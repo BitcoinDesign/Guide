@@ -395,7 +395,8 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 
 #### Figma embed
 
-Figma embeds are automatically resized to comfortable fit into the visible screen area.
+Figma embeds are automatically resized to comfortably fit into the visible screen area.
+Unfortunately, Figma uses a large number of trackers on their embeds. For the time being we recommend using an image with a link to the prototype instead of an embed.
 
 ```html
 <div class="figma-embed">
