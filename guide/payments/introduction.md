@@ -23,7 +23,7 @@ image: /assets/images/payments/introduction.png
 
 There are limitations in the current financial system that make payment services inaccessible to people in many places of the world — not everyone has access to bank accounts, identification, proof of address or are in countries which support the use of modern financial services.
 
-We have established that [bitcoin is money](#) and [bitcoin is global](#) now we dive into how it can be used to facilitate payments.
+We have established that [bitcoin is money](/guide/getting-started/why-bitcoin-is-unique/#its-money-but-digital) and [bitcoin is global](/guide/getting-started/why-bitcoin-is-unique/#global-by-default) now we dive into how it can be used to facilitate payments.
 
 ## Bitcoin is extensible, it's not just a payment network
 
