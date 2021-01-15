@@ -55,7 +55,7 @@ Split text into paragraphs, use links, text styling and images to make this easi
 
 ### Give tips, not commands
 
-When giving instruction, stick to broad strokes. They can be adjusted over time to grow with a project and its designer. Overly-detailed instructions could easily get outdated with the next software patch.
+When describing solutions, stick to broad strokes. Overly-detailed instructions could easily get outdated with new technical developments.
 
 ### Get the reader involved
 
