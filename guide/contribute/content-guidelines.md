@@ -46,7 +46,7 @@ Focus on information relevant to the reader. Use direct, clear, concise sentence
 
 ### Make content scannable
 
-On the internet, majority of people scans the content before reading it. By scanning, a reader tries to search for relevant information on the page.
+On the internet, most people scan the content before reading it. By scanning, a reader tries to search for relevant information on the page.
 Split text into paragraphs, use links, text styling and images to enhance the scanability. Per paragraph, you should have 3-4 sentences.
 
 ### Linking
