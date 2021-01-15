@@ -55,7 +55,6 @@ Even though all transactions are stored publicly, there is no personally identif
 
 We should inform our users of these risks but also provide mechanisms that help them gain an acceptable amount of privacy[^1].
 
-<<<<<<< HEAD
 
 ## Bitcoin is not too slow for payments
 
