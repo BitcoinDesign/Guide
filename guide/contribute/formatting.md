@@ -76,7 +76,7 @@ There should be whitespace between paragraphs.
 
 ### Images
 
-Let's start with a very wide image that extends beyond the content with on desktops. Note how a different images is shown on mobile. This can be used to reformat image content to a portrait format.
+Let's start with a very wide image that extends beyond the content width on desktops. Note how a different image is shown on mobile. This can be used to reformat image content to a portrait format.
 
 {% raw %}
 ```liquid
