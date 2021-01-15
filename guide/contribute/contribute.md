@@ -16,6 +16,18 @@ This page shows you how to get involved and start contributing.
 
 ---
 
+**[Slack channel]({{ site.slack_invite_url }})**
+
+We use the #bitcoin-design-guide channel in the [Bitoin Design Slack community]({{ site.slack_invite_url }}) to communicate and discuss work on guide. To hear what is going on, see what you can help with, or suggest new contributions please come and say hi.
+
+---
+
+**[Github](https://github.com/BitcoinDesign/Guide)**
+
+We use Github to host the content of the guide. [Issues](https://github.com/BitcoinDesign/Guide/issues) are used to post ideas for improvements, and proposed changes are posted as [Pull Requests](https://github.com/BitcoinDesign/Guide/pulls). 
+For some ideas we use [Discussions](https://github.com/BitcoinDesign/Guide/discussions). 
+---
+
 **[Content guidelines]({{ '/guide/contribute/content-guidelines/' | relative_url }})**
 
 Tips on how to write for the guide, with the goal of achieving a consistent tone across all pages.
