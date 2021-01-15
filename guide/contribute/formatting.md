@@ -410,7 +410,7 @@ Unfortunately, Figma uses a large number of trackers on their embeds. For the ti
 
 ### Footnotes
 
-With footnotes you can add notes and references without them appearing on page.
+With footnotes you can add notes and references without them interrupting your text flow, instead appearing at the bottom of the page.
 
 ```markdown
 Here's a simple footnote[^1]
