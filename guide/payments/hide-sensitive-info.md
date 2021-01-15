@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Hide Sensitive Information
+title: Hide sensitive information
 nav_order: 71
 has_children: false
 parent: Payments
@@ -21,7 +21,7 @@ image: /assets/images/guide/payments/hide-sensitive-information-header.png
    layout = "full-width"
 %}
 
-# Hiding Sensitive Information
+# Hiding sensitive information
 
 Imagine this scenario. You are in a public place, and you need to make a payment using your bitcoin wallet. You open your wallet on your phone, but you don’t feel comfortable having your address and balance information clearly visible to strangers who may be looking over your shoulder. Hence by giving users the ability to hide sensitive information in their wallet if desired, they gain an added sense of privacy and security when using the app in public.
 
@@ -139,4 +139,3 @@ By including the hiding information pattern in design of wallets, we give users 
 [^4]:  https://github.com/bitcoin-core/gui/issues/82
 
 [5]: https://docs.wasabiwallet.io/using-wasabi/PrivacyMode.html
-
