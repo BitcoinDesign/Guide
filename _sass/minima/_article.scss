@@ -1,6 +1,35 @@
 article.guide {
   position: relative;
 
+  h2, h3, h4, h5, h6 {
+    a.header-anchor {
+      font-size: 0.65em;
+      vertical-align: text-top;
+      color: #CCCCCC;
+
+      &:hover {
+        text-decoration: none;
+      } 
+    }
+
+    @include media-query(large) {
+      a.header-anchor {
+        opacity: 0;
+        transition: all 100ms $ease;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+
+      &:hover {
+        a.header-anchor {
+          opacity: 1;
+        }
+      } 
+    }
+  }
+
   > iframe {
     display: block;
   }
@@ -182,21 +211,6 @@ article.guide {
       margin-bottom: 0;
       float: right;
       margin-left: 30px;
-    }
-  }
-
-  // fix: add offset for in page links
-  h1[id]::before, h2[id]::before, h3[id]::before,
-  h4[id]::before, h5[id]::before, h6[id]::before {
-    content: '';
-    display: block;
-    position: relative;
-    width: 0;
-    height: 2em;
-    margin-top: -2em;
-    @include media-query(medium-up) {
-      height: 3em;
-      margin-top: -3em;
     }
   }
 }
