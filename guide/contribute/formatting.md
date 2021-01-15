@@ -3,7 +3,7 @@ layout: guide
 title: Formatting
 description: Visual examples of formatting options available for content authors.
 nav_order: 11
-parent: Contribute to Guide
+parent: Contribute to guide
 permalink: /guide/contribute/formatting/
 image: /assets/images/guide/contribute/formatting-preview.jpg
 ---
