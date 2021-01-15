@@ -10,7 +10,9 @@ image: /assets/images/guide/contribute/formatting-preview.jpg
 
 # Formatting
 
-This page showcases the various formatting and layout options available for content. This allows editors to better understand their toolbox and access reference code. It also allows for designers to see the design system in one place. The design source file is a public Figma community file you can find [here](https://www.figma.com/community/file/862622015964353400/Bitcoin-Designers-site). To improve the design, please start with the Figma file and make a proposal in Slack or Github before implementing.
+This page showcases the various formatting and layout options available for content. This allows editors to better understand their toolbox and access reference code for use in the markdown files that make up the Guide. It also allows for designers to see the design system in one place. 
+
+The design source file is a public Figma community file you can find [here](https://www.figma.com/community/file/862622015964353400/Bitcoin-Designers-site). To improve the design, please start with the Figma file and make a proposal in Slack or Github before implementing.
 
 
 ## Basic markdown formatting
