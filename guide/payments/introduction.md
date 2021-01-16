@@ -23,7 +23,7 @@ image: /assets/images/payments/introduction.png
 
 There are limitations in the current financial system that make payment services inaccessible to people in many places of the world — not everyone has access to bank accounts, identification, proof of address or are in countries which support the use of modern financial services.
 
-We have established that [bitcoin is money](/guide/getting-started/why-bitcoin-is-unique/#its-money-but-digital) and [bitcoin is global](/guide/getting-started/why-bitcoin-is-unique/#global-by-default) now we dive into how it can be used to facilitate payments.
+We have established that [Bitcoin is money](/guide/getting-started/why-bitcoin-is-unique/#its-money-but-digital) and [Bitcoin is global](/guide/getting-started/why-bitcoin-is-unique/#global-by-default) now we dive into how it can be used to facilitate payments.
 
 ## Bitcoin is extensible, it's not just a payment network
 
@@ -54,7 +54,7 @@ This is may not be suitable if you want to make a small payment to a vendor at y
 
 To meet the demands of our modern economy — movement of money needs to be borderless, secure, fast, and cheap.
 
-The Lightning Network is part of the bitcoin ecosystem that will power this economy. It allows for near-instant payments at much lower fees. This is possible because extends bitcoin in a way that does not record each payment on-chain.
+The Lightning Network is part of the Bitcoin ecosystem that will power this economy. It allows for near-instant payments at much lower fees. This is possible because extends Bitcoin in a way that does not record each payment on-chain.
 
 #### A Network of Payment Channels and Settlement
 
