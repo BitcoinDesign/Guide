@@ -21,9 +21,9 @@ image: /assets/images/guide/payments/hide-sensitive-information-header.png
    layout = "full-width"
 %}
 
-# Hiding sensitive information
+# Hiding Sensitive Information
 
-Imagine this scenario. You are in a public place, and you need to make a payment using your bitcoin wallet. You open your wallet on your phone, but you don’t feel comfortable having your address and balance information clearly visible to strangers who may be looking over your shoulder. Hence by giving users the ability to hide sensitive information in their wallet if desired, they gain an added sense of privacy and security when using the app in public.
+Imagine this scenario. You are in a public place, and you need to make a payment using your bitcoin wallet. You open your wallet on your phone, but you don’t feel comfortable having your address and balance information clearly visible to strangers who may be looking over your shoulder, persons lurking or video surveillance . Hence by giving users the ability to hide sensitive information in their wallet if desired, they gain an added sense of privacy and security when using the app in public.
 
 ## What information is considered sensitive ?
 
@@ -34,93 +34,56 @@ Sensitive information in wallet applications include the wallet balance, address
 
 It's more common for wallets to protect private keys but not much is done for other sensitive information like the balance, addresses and previous transactions. A few wallets like Bitcoin Core, Wasabi, Wallet of Satoshi, and others have made it work though. Below describes a pattern, and considerations for hiding and revealing sensitive information.
 
-## Hiding and revealing information with the hide icon
+## Quickly hide from overview screen
 
 The hide icon / button, which is usually displayed within close reach of the balance itself, is used to quickly and easily hide and reveal wallet information by tapping or clicking on it.
 
-{% include picture.html
-   image = "/assets/images/payments/hide-info-hidden-by-eye-icon.png"
-   retina = "/assets/images/payments/hide-info-hidden-by-eye-icon.png"
-   mobile = "/assets/images/payments/hide-info-hidden-by-eye-icon.png"
-   mobileRetina = "/assets/images/payments/hide-info-hidden-by-eye-icon.png"
-   alt-text = "hidden-by-eye-icon"
-   width = 1600
-   height = 800
-   layout = "full-width"
-   %}
+![hide-eye-icon](/assets/images/payments/hide-by-eye-icon.gif)
 
-Pros
+#### Pros
 
 - It is quite convenient to switch between revealed and hidden state
 
-Cons
+#### Cons
 
 - Easy for anyone else to reveal your information if they have access to your device.
 
 
-## Entering a PIN to unveil information
+## Entering a PIN to reveal information
 
-A problem that seemed to arise throughout each implementation was that is was as easy to reverse the hidden state as it was to enable it. This may be for convenience sake, however, if you are in a situation where you are concerned about unauthorized access by someone who has your device, once hidden perhaps you should be only able to unhide if a PIN or password has been entered. This could therefore reaffirm the identity of the wallet owner for extra security.
+A problem that seemed to arise throughout each implementation was that it was as easy to reverse the hidden state as it was to enable it. This may be for convenience sake, however, for protection against unauthorized access, perhaps you should be only able to unhide your information if a PIN or password has been entered. This could therefore reaffirm the identity of the wallet owner for extra security.
 
-{% include picture.html
-   image = "/assets/images/payments/hide-info-reveal-by-pin.png"
-   retina = "/assets/images/payments/hide-info-reveal-by-pin.png"
-   mobile = "/assets/images/payments/hide-info-reveal-by-pin.png"
-   mobileRetina = "/assets/images/payments/hide-info-reveal-by-pin.png"
-   alt-text = "hide-info-reveal-by-pin"
-   width = 1600
-   height = 800
-   layout = "full-width"
-   %}
+![reveal-by-pin](/assets/images/payments/reveal-by-pin.gif)
 
+#### Pros
 
-Pros
-- The risk of an unauthorized person revealing your information is minimal due to the pin required
+- The risk of an unauthorized person revealing your information is minimal due to the PIN required
 
-Cons
+#### Cons
 
-- It may be annoying having to repeatedly put in your min when ever you want to reveal your information especially if you do so often
+- It may not be convenient for the users to repeatedly put in their PIN when ever they want to reveal your information especially if they do so often.
 
   
 
-##  Information hidden by default
+##  Hide if inactive 
 
 Another solution would be to invoke the wallet’s hidden state as a default when the app is opened. What this means is that in the event that someone sees your wallet when you open it, they wouldn't be able to make out the information. The pre-hidden state can be unveiled  after a tap, PIN entry, or perhaps a short 5 second timer.
 
-{% include picture.html
-   image = "/assets/images/payments/hide-info-hidden-by-default.png"
-   retina = "/assets/images/payments/hide-info-hidden-by-default.png"
-   mobile = "/assets/images/payments/hide-info-hidden-by-default.png"
-   mobileRetina = "/assets/images/payments/hide-info-hidden-by-default.png"
-   alt-text = "hidden-by-default"
-   width = 1600
-   height = 800
-   layout = "full-width"
-   %}
+![hide-by-default](/assets/images/payments/hide-by-default.gif)
 
-
-Pros
+#### Pros
 
 - Users have some time to assess their environment before their info is displayed.
 
-Cons
+#### Cons
 
 - The user may feel a bit frustrated having to wait for their information to be revealed especially in an urgent situation
 
-## Consider removing the hide toggle from the homepage
+## Making the toggle less obvious
 
 Having the show/hide button right on the main screen make things quite obvious for someone who has access to your device to press unhide. A solution would be to move the hide toggle away from the home screen and into the app settings. This way, if someone has access to your device and opens the app, they may not immediately know how to reveal the hidden information as it is not as obvious as the previous solutions.
 
-{% include picture.html
-   image = "/assets/images/payments/hide-info-hide-toggle-in-settings.png"
-   retina = "/assets/images/payments/hide-info-hide-toggle-in-settings.png"
-   mobile = "/assets/images/payments/hide-info-hide-toggle-in-settings.png"
-   mobileRetina = "/assets/images/payments/hide-info-hide-toggle-in-settings.png"
-   alt-text = "hide-toggle-in-setting"
-   width = 1600
-   height = 800
-   layout = "full-width"
-   %}
+![hide-in-settings](/assets/images/payments/hide-in-settings.gif)
 
 
 Pros
@@ -134,7 +97,7 @@ Cons
 
 ## Why is this pattern important to designers?
 
-Privacy in bitcoin payments goes far beyond hiding balances and other sensitive information, the privacy by design framework states that privacy should be incorporated and built into products by default. This way, whether or not the user is concerned with their data privacy, they would always be protected through good UX.
+Privacy in bitcoin payments goes far beyond hiding balances and other sensitive information, the privacy by design framework states that privacy should be incorporated and built into products by default. This way, whether or not the user is concerned with their data privacy, they would always be protected through good UX and UI.
 
 By including the hiding information pattern in design of wallets, we give users a greater sense of control and comfortability in any environment when using it. They have the freedom to decide whether or not they want their information visible.
 
@@ -146,3 +109,6 @@ By including the hiding information pattern in design of wallets, we give users 
 [^4]:  https://github.com/bitcoin-core/gui/issues/82
 
 [5]: https://docs.wasabiwallet.io/using-wasabi/PrivacyMode.html
+
+[6]: https://www.ipc.on.ca/wp-content/uploads/Resources/7foundationalprinciples.pdf
+
