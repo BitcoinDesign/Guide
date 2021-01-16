@@ -47,7 +47,6 @@ A transaction can be collaboratively built (for example joint accounts / multisi
    alt-text = "..."
    width = 1600
    height = 900
-   layout = "full-width"
 %}
 
 So you can think of a wallet as an edtior and viewer for transaction files — which may also allow you to publish (broadcast) when its ready.
@@ -91,7 +90,6 @@ When transacting on the bitcoin blockchain (on-chain), you fund a transaction by
    alt-text = "Adding Inputs / Funding a Transaction"
    width = 1600
    height = 900
-   layout = "full-width"
 %}
 
 ---
