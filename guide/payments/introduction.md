@@ -56,9 +56,18 @@ To meet the demands of our modern economy — movement of money needs to be bord
 
 The Lightning Network is part of the bitcoin ecosystem that will power this economy. It allows for near-instant payments at much lower fees. This is possible because extends bitcoin in a way that does not record each payment on-chain.
 
-#### A Network of Payment Channels and Settlement 
+#### A Network of Payment Channels and Settlement
 
 If two parties want to make payments between themselves often, they can lock up some funds together in an on-chain transaction. Then they are able to bypass recording their subsequent payments with one another on-chain, by instead keeping track of each of their bitcoin balances in Lightning.
+
+{% include picture.html	
+   image = "/assets/images/payments/payment-channels.svg"
+   mobile = "/assets/images/payments/payment-channels-mobile.svg"
+   alt-text = "A payment channel is like one row of an abacus"
+   width = 1600
+   height = 900
+   layout = "full-width"
+%}
 
 This is known as a payment channel, Lightning is essentially a network of payment channels which a sender's payment can be routed through to reach any other beneficiary.
 
