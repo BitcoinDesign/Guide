@@ -23,7 +23,13 @@ This explanation assumes the application being designed is using a transaction t
    layout = "full-width"
 %}
 
-# Structure & Lifecycle
+# Transaction Structure & Lifecycle
+
+Think of the application you're making as an editor for a transaction. Whether its a mobile wallet for personal spending or a desktop application for joint owners in a company to do shared spending. Both are taking in your users input to construct a transaction that would ultimatly allow them to move bitcoin.
+
+A lot of what is explained about here can be abstracted away in clever ways if you are designing for a first time bitcoin user. There are times though, when the use case demands more flexibility or transparency. The goal of this section is to equip you with the fundamentals to be able to make those design decisions.
+
+## Overview
 
 A transaction is able to take multiple inputs ([UTXOs](../glossary.md#) used to fund the transaction) and outputs (payments and the remaining change). You can also allow users to build a transaction that contains multiple payment operations — this is known as batching. There are fee saving benefits of batched transactions, but it can also be terrible for privacy as it makes it possible to link one identity with several payments on-chain.
 
@@ -31,65 +37,96 @@ Still we use batched transactions in this chapter as it makes it easier to commu
 
 ---
 
-#### Creating a Transaction
-
-![Transaction File](/assets/images/transactions/tx-file.svg)
+## Creating a Transaction
 
 A transaction can be collaboratively built (for example joint accounts / multisig). In the scenario where the user may want to share a transaction with another party or another device for signing — the there is a file type bitcoin transactions use called PSBT. The transaction can be exported as a `.psbt` file and shared just as you would with a document.
 
-You can think of a wallet as an interface for this file type — which in the end allows you to publish the transaction.
+{% include picture.html
+   image = "/assets/images/transactions/tx-file.svg"
+   mobile = "/assets/images/transactions/tx-file-mobile.svg"
+   alt-text = "..."
+   width = 1600
+   height = 900
+   layout = "full-width"
+%}
 
-##### Adding Payments
+So you can think of a wallet as an edtior and viewer for transaction files — which may also allow you to publish (broadcast) when its ready.
 
-![Adding Payments/Outputs](/assets/images/transactions/tx-add-payment.svg)
+There are a few settings you can set on the transaction
 
-There can be multiple payments within a transaction — and all that is required by the user is to enter the destination address and the amount.
+- **Locktime** — You can use locktime to make sure that the transaction is not mined until a specific block number, or a point in time[^3].
+- **Replace by Fee** — see [speeding up / canceling](#speeding-up--canceling)
+
+### Adding Payments
+
+There can be multiple payments within a transaction — at minimum all that is required by the user is to enter the destination address and the amount.
+
+{% include picture.html
+   image = "/assets/images/transactions/tx-add-payment.svg"
+   mobile = "/assets/images/transactions/tx-add-payment-mobile.svg"
+   alt-text = "Adding Payments/Outputs"
+   width = 1600
+   height = 900
+   layout = "full-width"
+%}
 
 ###### How do payments get added to a transaction?
 
-- Manually entering address, amount and memo
-- Selecting an unfullfilled payment request
+- Scanning payment request in the form of a QR Code
+- Detect payment request in clip board
+- Selecting an unpaid payment request
 - Selecting contact and entering the amount
-- Scanning payment request
-- Detect payment request in clip board.
-- Subscription Manager automatically adds a payment to a transaction thats been scheduled.
-
-###### Spending Conditions
-
-- Multi-Signature
+- Manually typing an address, amount and optionally a [label](/guide/transactions/labels)
+- Subscription Manager automatically adds a payment to a transaction thats been scheduled
 
 ---
 
-##### Funding a transaction
+### Funding a transaction
 
 When transacting on the bitcoin blockchain (on-chain), you fund a transaction by selecting some previously received coins, then enter the payment destination and amount.
 
-![Adding Inputs](/assets/images/transactions/tx-fund.svg)
+{% include picture.html
+   image = "/assets/images/transactions/tx-fund.svg"
+   mobile = "/assets/images/transactions/tx-fund-mobile.svg"
+   alt-text = "Adding Inputs / Funding a Transaction"
+   width = 1600
+   height = 900
+   layout = "full-width"
+%}
 
 ---
 
-##### Change
+### Change
+
+If the amount of bitcoin you funded the transaction with exceeds the amount you need for the payment there will be some change remaining. Your wallet would generate a new change address in the background where the remaining bitcoin would be sent.
 
 {% include picture.html
-   image = "/assets/images/transactions/placeholder.png"
-   retina = "/assets/images/transactions/placeholder@2x.png"
-   mobile = "/assets/images/transactions/placeholder.png"
-   mobileRetina = "/assets/images/transactions/placeholder@2x.png"
+   image = "/assets/images/transactions/tx-change.svg"
+   mobile = "/assets/images/transactions/tx-change-mobile.svg"
    alt-text = ""
    width = 1600
    height = 900
    layout = "full-width"
 %}
 
-If the amount of bitcoin you funded the transaction with exceeds the amount you need for the payment there will be some change remaining. Your wallet would generate a new change address in the background where the remaining bitcoin would be sent.
-
 Change is handled the same way as any other payment described earlier, the only difference is you are in control of the private keys for that address.
 
 ---
 
-#### Fee
+### Fee
 
 Each transaction needs to pay a fee to miners as they must do work to validate transactions. The fee is included in transaction and subtracted from the change.
+
+{% include picture.html
+   image = "/assets/images/transactions/placeholder.png"
+   retina = "/assets/images/transactions/placeholder@2x.png"
+   mobile = "/assets/images/transactions/placeholder.png"
+   mobileRetina = "/assets/images/transactions/placeholder@2x.png"
+   alt-text = "..."
+   width = 1600
+   height = 900
+   layout = "full-width"
+%}
 
 A memory pool is a waiting list for transactions that every node and miner keeps. There is a limited amount of transactions that can be confirmed in a block every 10 minutes.
 
@@ -97,21 +134,11 @@ A transaction with many inputs would be larger in size and in turn be more diffi
 
 The smallest transaction is about 226 virtual bytes, and the lowest fee is 1 satoshi. This means the transaction would be 226 satoshis.
 
-{% include picture.html
-   image = "/assets/images/transactions/placeholder.png"
-   retina = "/assets/images/transactions/placeholder@2x.png"
-   mobile = "/assets/images/transactions/placeholder.png"
-   mobileRetina = "/assets/images/transactions/placeholder@2x.png"
-   alt-text = ""
-   width = 1600
-   height = 900
-   layout = "full-width"
-%}
-
 ##### Reader Notes
 
 - There is no fixed fee, or percentage based fee with bitcoin on-chain transactions.
-- The smallest fee you can pay is 226 satoshis but the smallest amount you can send is 5460 satoshis.
+- The smallest fee you can pay is 226 satoshis
+- The smallest amount you can send is 5460 satoshis.
 
 Minimum relay fee — need the output amounts 
 
@@ -121,7 +148,7 @@ Minimum relay fee — need the output amounts
 
 ---
 
-#### Signing
+### Signing
 
 In order for a transaction to be valid and finalised — it needs to be signed. What is being signed is the bitcoin you funded the transaction with, and the payments you've added to that transaction (including the change).
 
@@ -133,14 +160,12 @@ Signing a transaction on your own is pretty straight forward, the user does not 
 
 ##### External signing device
 
-There are devices special made for 
+There are devices special made for storing private keys and signing a `.psbt` file.
 
 {% include picture.html
-   image = "/assets/images/transactions/placeholder.png"
-   retina = "/assets/images/transactions/placeholder@2x.png"
-   mobile = "/assets/images/transactions/placeholder.png"
-   mobileRetina = "/assets/images/transactions/placeholder@2x.png"
-   alt-text = ""
+   image = "/assets/images/transactions/tx-sign.svg"
+   mobile = "/assets/images/transactions/tx-sign-mobile.svg"
+   alt-text = "..."
    width = 1600
    height = 900
    layout = "full-width"
@@ -151,11 +176,9 @@ There are devices special made for
 There may be occasions where you are need to sign a transaction with another party — for example in a private key management scheme like [Shared multi-key](/guide/private-key-management/multi-user-schemes/).
 
 {% include picture.html
-   image = "/assets/images/transactions/placeholder.png"
-   retina = "/assets/images/transactions/placeholder@2x.png"
-   mobile = "/assets/images/transactions/placeholder.png"
-   mobileRetina = "/assets/images/transactions/placeholder@2x.png"
-   alt-text = ""
+   image = "/assets/images/transactions/tx-sign.svg"
+   mobile = "/assets/images/transactions/tx-sign-mobile.svg"
+   alt-text = "..."
    width = 1600
    height = 900
    layout = "full-width"
@@ -163,51 +186,49 @@ There may be occasions where you are need to sign a transaction with another par
 
 ---
 
-#### Broadcasting
+### Broadcasting
+
+Once the transaction has been funded, payments selected, fee set, and signing is complete — its time to broadcast the transaction. The device that broadcasts the transaction needs to be online and have a connection to a [bitcoin node](/guide/getting-started/technology-primer/#what-is-a-node). The node which is constnatly communicating to other nodes and miners in the network for the latest transactions they have received from others around the world.
 
 {% include picture.html
    image = "/assets/images/transactions/placeholder.png"
    retina = "/assets/images/transactions/placeholder@2x.png"
    mobile = "/assets/images/transactions/placeholder.png"
    mobileRetina = "/assets/images/transactions/placeholder@2x.png"
-   alt-text = ""
+   alt-text = "..."
    width = 1600
    height = 900
    layout = "full-width"
 %}
-
-Once the transaction has been funded, payments selected, fee set, and signing is complete — its time to broadcast the transaction. The device that broadcasts the transaction needs to be online and have a connection to a [bitcoin node](/guide/getting-started/technology-primer/#what-is-a-node). The node which is constnatly communicating to other nodes and miners in the network for the latest transactions they have received from others around the world.
 
 At this point the transaction is not yet confirmed — we say the transaction is in the [memory pool](/getting-started/technology-primer/#how-are-transactions-confirmed).
 
 ---
 
-#### Pending / Confirmations
+### Pending / Confirmations
+
+There is a new block being creating on average every 10 mins. A payment is not guaranteed unless it’s in a transaction that has 1 or more confirmations.
 
 {% include picture.html
    image = "/assets/images/transactions/placeholder.png"
    retina = "/assets/images/transactions/placeholder@2x.png"
    mobile = "/assets/images/transactions/placeholder.png"
    mobileRetina = "/assets/images/transactions/placeholder@2x.png"
-   alt-text = ""
+   alt-text = "..."
    width = 1600
    height = 900
    layout = "full-width"
 %}
 
-There is a new block being creating on average every 10 mins. A payment is not guaranteed unless it’s in a transaction that has 1 or more confirmations.
-
 ---
 
-#### Speeding Up / Canceling
-
-![Bump Transaction](/assets/images/transactions/tx-speed.svg)
-
-While in the mempool — it's possible to speed up the transaction or even cancel a payment within it before it is confirmed in a block.
+### Speeding Up / Canceling
 
 ##### Speeding up
 
-While you cannot remove a transaction from the mempool after it's been broadcasted, there are two recomended ways to speed up a transaction before it has been confirmed by creating a new one which would be prioritised before it.
+While you cannot remove a transaction from the mempool after it's been broadcasted, there are two recomended ways to speed up a transaction before it has been confirmed. Both methods require a new replacement transaction with a higher fee which would be prioritised before the origional.
+
+![Bump Transaction](/assets/images/transactions/tx-speed.svg)
 
 ###### Replace with a higher fee
 
@@ -224,3 +245,4 @@ Replace by Fee can be used to "cancel" a transaction — you would need to pay a
 [^1]: https://github.com/bitcoin/bips/blob/master/bip-0125.mediawiki: "BIP125 —Replace by Fee"
 [^2]: https://bitcoinops.org/en/topics/psbt/
 
+[^3]: https://learnmeabitcoin.com/technical/locktime

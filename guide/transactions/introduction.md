@@ -39,7 +39,7 @@ We dive into the structure of bitcoin transactions to understand its capabilitie
 
 Authorisation to spend some bitcoin in a transaction is done in a process called signing — we look at the self spending and joint spending user flows for signing transactions.
 
-#### [Labeling]({{ '/guide/transactions/labeling/' | relative_url }})
+#### [Labeling]({{ '/guide/transactions/labels/' | relative_url }})
 
 Since you never have to reveal your identity when transacting with bitcoin, you may find yourself in a situation where the person on thev other side of the payment also does not. It becomes a manual process to give context to your payments and the funds you control. We look at labels, a critical component of adding content to payments you send or receive.
 

@@ -3,7 +3,7 @@ layout: guide
 title: Labeling Payments
 nav_order: 5
 parent: Transactions
-permalink: /guide/transactions/labeling/
+permalink: /guide/transactions/labels/
 main_classes: -no-top-padding
 image: /assets/images/guide/transaction/introduction.png
 ---

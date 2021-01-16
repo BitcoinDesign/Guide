@@ -21,7 +21,7 @@ image: /assets/images/guide/transaction/introduction.png
 
 # Self Spending
 
-[INSERT INTRODUCTION]
+Spending condition is only you.
 
 ### How it works
 
