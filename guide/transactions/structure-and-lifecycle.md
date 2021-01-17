@@ -78,6 +78,10 @@ There can be multiple payments within a transaction — at minimum all that is r
 - Manually typing an address, amount and optionally a [label](/guide/transactions/labels)
 - Subscription Manager automatically adds a payment to a transaction thats been scheduled
 
+###### Reader Notes
+
+- The smallest amount you can send is 5460 satoshis.
+
 ---
 
 ### Funding a transaction
@@ -85,7 +89,7 @@ There can be multiple payments within a transaction — at minimum all that is r
 When transacting on the bitcoin blockchain (on-chain), you fund a transaction by selecting some previously received coins, then enter the payment destination and amount.
 
 {% include picture.html
-   image = "/assets/images/transactions/tx-fund.svg"
+   image = "/assets/images/transactions/tx-fund-alt.svg"
    mobile = "/assets/images/transactions/tx-fund-mobile.svg"
    alt-text = "Adding Inputs / Funding a Transaction"
    width = 1600
@@ -113,7 +117,7 @@ Change is handled the same way as any other payment described earlier, the only 
 
 ### Fee
 
-Each transaction needs to pay a fee to miners as they must do work to validate transactions. The fee is included in transaction and subtracted from the change.
+Each transaction needs to pay a fee to miners as they must do work to validate it. The fee is calculated based on the complexity of the transaction, and the fee rate fluctuates depending on the demand for the next block.
 
 {% include picture.html
    image = "/assets/images/transactions/placeholder.png"
@@ -126,7 +130,15 @@ Each transaction needs to pay a fee to miners as they must do work to validate t
    layout = "full-width"
 %}
 
-A memory pool is a waiting list for transactions that every node and miner keeps. There is a limited amount of transactions that can be confirmed in a block every 10 minutes.
+For example — a transaction with 1 payment being funded by 20 UTXOs would be more work for a miner to verify than one with 1 payment and 1 UTXO. Just as it would be more work for a market vendor to check 20 coins instead of a single note.
+
+The fee is included in transaction and subtracted from the change and is calculated based on the complexity of the transaction.
+
+Since there is a limited amount of space in each block, you are also competing with others who also want to have their transactions verified. 
+
+The lowest fee rate you can pay is 1 satoshi per byte.
+
+There are times when the 
 
 A transaction with many inputs would be larger in size and in turn be more difficult for a miner to validate. So the size of the transaction increases based on how many coins it was funded with, and amount of individual payments that it contains — there is also a fixed overhead cost for every transaction.
 
@@ -136,7 +148,6 @@ The smallest transaction is about 226 virtual bytes, and the lowest fee is 1 sat
 
 - There is no fixed fee, or percentage based fee with bitcoin on-chain transactions.
 - The smallest fee you can pay is 226 satoshis
-- The smallest amount you can send is 5460 satoshis.
 
 Minimum relay fee — need the output amounts 
 
@@ -189,10 +200,8 @@ There may be occasions where you are need to sign a transaction with another par
 Once the transaction has been funded, payments selected, fee set, and signing is complete — its time to broadcast the transaction. The device that broadcasts the transaction needs to be online and have a connection to a [bitcoin node](/guide/getting-started/technology-primer/#what-is-a-node). The node which is constnatly communicating to other nodes and miners in the network for the latest transactions they have received from others around the world.
 
 {% include picture.html
-   image = "/assets/images/transactions/placeholder.png"
-   retina = "/assets/images/transactions/placeholder@2x.png"
-   mobile = "/assets/images/transactions/placeholder.png"
-   mobileRetina = "/assets/images/transactions/placeholder@2x.png"
+   image = "/assets/images/transactions/tx-broadcast.svg"
+   mobile = "/assets/images/transactions/tx-broadcast-mobile.svg"
    alt-text = "..."
    width = 1600
    height = 900
@@ -226,7 +235,14 @@ There is a new block being creating on average every 10 mins. A payment is not g
 
 While you cannot remove a transaction from the mempool after it's been broadcasted, there are two recomended ways to speed up a transaction before it has been confirmed. Both methods require a new replacement transaction with a higher fee which would be prioritised before the origional.
 
-![Bump Transaction](/assets/images/transactions/tx-speed.svg)
+{% include picture.html
+   image = "/assets/images/transactions/tx-replace.svg"
+   mobile = "/assets/images/transactions/tx-replace-mobile.svg"
+   alt-text = "Bump Transaction"
+   width = 1600
+   height = 900
+   layout = "full-width"
+%}
 
 ###### Replace with a higher fee
 
