@@ -58,7 +58,7 @@ Here is an initial outline that will be updated as needed, content that is live 
         *   Sending bitcoin
         *   Receiving bitcoin
         *   Transaction privacy
-        *   Bitcoin transactiosn in depth
+        *   Bitcoin transaction in depth
         *   Lightning transactions in depth
         *   Managing funds
         *   Case studies
