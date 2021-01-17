@@ -29,6 +29,12 @@ Privacy issues aside, there are still use cases where batched transaction come i
 
 ---
 
+ — this is known as batching. There are fee saving benefits of batched transactions, but it can also be terrible for privacy as it makes it possible to link one identity with several payments on-chain.
+
+Still we use batched transactions in this chapter as it makes it easier to communicate the capabilities of an on-chain transaction.
+
+---
+
 ### How it works
 
 A company may want to pay all of its employees salaries at a specific day of the month. It would create a single transaction enter the payments (addresses and amounts) for each employee then fund the transaction with sufficient enough UTXOs. Once finalised, the transaction would be broadcasted and all employees would be paid once the transaction has gotten a confirmation.

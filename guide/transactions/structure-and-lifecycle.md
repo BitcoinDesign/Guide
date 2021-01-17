@@ -31,15 +31,15 @@ A lot of what is explained about here can be abstracted away in clever ways if y
 
 ## Overview
 
-A transaction is able to take multiple inputs ([UTXOs](../glossary.md#) used to fund the transaction) and outputs (payments and the remaining change). You can also allow users to build a transaction that contains multiple payment operations — this is known as batching. There are fee saving benefits of batched transactions, but it can also be terrible for privacy as it makes it possible to link one identity with several payments on-chain.
-
-Still we use batched transactions in this chapter as it makes it easier to communicate the capabilities of an on-chain transaction.
+A transaction is able to take multiple inputs ([UTXOs](../glossary.md#) used to fund the transaction) and outputs (payments and the remaining change). You can also allow users to build a transaction that contains multiple payment operations. Once you're ready, you may publish the transaction so that it can be verified by the Bitcoin miners.
 
 ---
 
 ## Creating a Transaction
 
-A transaction can be collaboratively built (for example joint accounts / multisig). In the scenario where the user may want to share a transaction with another party or another device for signing — the there is a file type bitcoin transactions use called PSBT. The transaction can be exported as a `.psbt` file and shared just as you would with a document.
+A transaction can be exported as a `.psbt` file. This is a standard format which can be shared in a similar way to a document. The file contains the authorisation to spend some bitcoin, and the payment amounts and destinations.
+
+A scenario to demonstrate how a transaction is can be collaboratively built is joint accounts / multi-sig. A user may want to share a transaction with another party or device for signing or to update.
 
 {% include picture.html
    image = "/assets/images/transactions/tx-file.svg"
@@ -49,16 +49,16 @@ A transaction can be collaboratively built (for example joint accounts / multisi
    height = 900
 %}
 
-So you can think of a wallet as an edtior and viewer for transaction files — which may also allow you to publish (broadcast) when its ready.
+So you can think of a bitcoin wallet or application as both an edtior and viewer for transaction files — some applications may also allow you to publish or broadcast the transaction when preparation is done.
 
-There are a few settings you can set on the transaction
+Here are a few things you can set configure for a transaction:
 
 - **Locktime** — You can use locktime to make sure that the transaction is not mined until a specific block number, or a point in time[^3].
 - **Replace by Fee** — see [speeding up / canceling](#speeding-up--canceling)
 
 ### Adding Payments
 
-There can be multiple payments within a transaction — at minimum all that is required by the user is to enter the destination address and the amount.
+There can be multiple payments within a transaction — at minimum all that is required by the user is to enter the destination address and the amount. These payments become UTXOs for whomever controls the private key of the addresses once the transaction gets confirmed.
 
 {% include picture.html
    image = "/assets/images/transactions/tx-add-payment.svg"
@@ -71,22 +71,22 @@ There can be multiple payments within a transaction — at minimum all that is r
 
 ###### How do payments get added to a transaction?
 
-- Scanning payment request in the form of a QR Code
-- Detect payment request in clip board
+- Scanning [payment request](/guide/foundations/wallet-interoperability/#qr-codes) in the form of a QR Code
+- Detect [payment link](/guide/foundations/wallet-interoperability/#payment-links) in clip board
 - Selecting an unpaid payment request
-- Selecting contact and entering the amount
+- Selecting contact that stores addresses and entering the amount
 - Manually typing an address, amount and optionally a [label](/guide/transactions/labels)
-- Subscription Manager automatically adds a payment to a transaction thats been scheduled
+- Subscription Manager automatically adds a scheduled payment to a transaction
 
 ###### Reader Notes
 
-- The smallest amount you can send is 5460 satoshis.
+- The smallest total payment a transaction can have is 5460 satoshis.
 
 ---
 
 ### Funding a transaction
 
-When transacting on the bitcoin blockchain (on-chain), you fund a transaction by selecting some previously received coins, then enter the payment destination and amount.
+When transacting on the bitcoin blockchain (on-chain), you fund a transaction by selecting some previously received UTXOs.
 
 {% include picture.html
    image = "/assets/images/transactions/tx-fund-alt.svg"
@@ -94,6 +94,7 @@ When transacting on the bitcoin blockchain (on-chain), you fund a transaction by
    alt-text = "Adding Inputs / Funding a Transaction"
    width = 1600
    height = 900
+   layout = "full-width"
 %}
 
 ---
