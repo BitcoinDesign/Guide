@@ -2,8 +2,6 @@
 layout: guide
 title: Content guidelines
 description: Writing tips for authors of the Bitcoin Design Guide.
-nav_order: 2
-parent: Contribute
 nav_order: 10
 parent: Contribute to guide
 permalink: /guide/contribute/content-guidelines/
