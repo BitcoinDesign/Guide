@@ -18,7 +18,7 @@ You can read more about [how to contribute](https://bitcoin.design/guide/contrib
 
 ## Guide Content
 
-The guide is meant to be a simple starting-point for anyone looking to build bitcoin-based applications, while providing deeper topics and value for more experienced bitcoin designers. Bitcoin is the platform, and the guide should provide information and resources that should be consistent across applications built on top of it.
+The guide is meant to be a simple starting-point for anyone looking to build Bitcoin-based applications, while providing deeper topics and value for more experienced Bitcoin designers. Bitcoin is the platform, and the guide should provide information and resources that should be consistent across applications built on top of it.
 
 The guide is still being created and should be seen as an evolving resource. Similar to the iterative design process, it starts with core parts then grows in ambition based on community support.
 
