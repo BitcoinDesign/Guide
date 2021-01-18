@@ -61,7 +61,18 @@ The hide icon / button, which is usually displayed within close reach of the bal
 
 A problem that seemed to arise throughout each implementation was that it was as easy to reverse the hidden state as it was to enable it. This may be for convenience sake, however, for protection against unauthorized access, perhaps you should only be able to unhide your information if a PIN or password has been entered. This could therefore reaffirm the identity of the wallet owner for extra security.
 
-![reveal-by-pin](/assets/images/payments/reveal-by-pin.gif)
+{% include picture.html
+   image = "/assets/images/payments/reveal-by-pin-2.gif"
+   retina = "/assets/images/payments/reveal-by-pin-2.gif"
+   mobile = "/assets/images/payments/reveal-by-pin-2.gif"
+   mobileRetina = "/assets/images/payments/reveal-by-pin-2.gif"
+   alt-text = "PIN"
+   width = 1600
+   height = 800
+   layout ="full-width"
+%}
+
+![reveal-by-pin](/assets/images/payments/reveal-by-pin-2.gif)
 
 #### Pros
 
