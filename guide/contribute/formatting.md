@@ -2,15 +2,17 @@
 layout: guide
 title: Formatting
 description: Visual examples of formatting options available for content authors.
-nav_order: 11
-parent: Contribute
+nav_order: 4
+parent: Contribute to guide
 permalink: /guide/contribute/formatting/
 image: /assets/images/guide/contribute/formatting-preview.jpg
 ---
 
 # Formatting
 
-This page showcases the various formatting and layout options available for content. This allows editors to better understand their toolbox and access reference code. It also allows for designers to see the design system in one place. The design source file is a public Figma community file you can find [here](https://www.figma.com/community/file/862622015964353400/Bitcoin-Designers-site). To improve the design, please start with the Figma file and make a proposal in Slack or Github before implementing.
+This page showcases the various formatting and layout options available for content. This allows editors to better understand their toolbox and access reference code. It also allows for designers to see the design system in one place. 
+
+The design source file is a public Figma community file you can find [here](https://www.figma.com/community/file/862622015964353400/Bitcoin-Designers-site). To improve the design, please start with the Figma file and make a proposal in Slack or Github before implementing.
 
 
 ## Basic markdown formatting
@@ -74,7 +76,7 @@ There should be whitespace between paragraphs.
 
 ### Images
 
-Let's start with a very wide image that extends beyond the content with on desktops. Note how a different images is shown on mobile. This can be used to reformat image content to a portrait format.
+Let's start with a very wide image that extends beyond the content width on desktops. Note how a different image is shown on mobile. This can be used to reformat image content to a portrait format.
 
 {% raw %}
 ```liquid

@@ -138,8 +138,13 @@
 .home-banner-info {
   display: flex;
   justify-content: center;
+  max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #f4f4f4;
   padding: 5px 15px;
+  position: relative;
+  z-index: 1;
 
   .home-banner-info-wrapper {
     width: 100%;
