@@ -6,7 +6,19 @@ nav_order: 3
 parent: Contribute
 permalink: /guide/contribute/illustration-guidelines/
 image: /assets/images/guide/contribute/illustration-guidelines/illustration-guidelines-preview.jpg
+main_classes: -no-top-padding
 ---
+
+{% include picture.html
+   image = "/assets/images/guide/contribute/illustration-guidelines/illustration-guidelines.jpg"
+   retina = "/assets/images/guide/contribute/illustration-guidelines/illustration-guidelines@2x.jpg"
+   mobile = "/assets/images/guide/contribute/illustration-guidelines/illustration-guidelines-mobile.jpg"
+   mobileRetina = "/assets/images/guide/contribute/illustration-guidelines/illustration-guidelines-mobile@2x.jpg"
+   alt-text = "Placeholder image"
+   width = 1600
+   height = 600
+   layout = "full-width"
+%}
 
 # Illustration guidelines
 
@@ -14,7 +26,7 @@ As this is a design guide, it is only natural that much of our content uses imag
 
 ## Creative direction
 
-The basic design of this website was intentionally kept minimal, so authors have more freedom to express their own creative ideas in the content they create. We encourage experimentation and expression, just keep in mind that the total experience of the guide should still be coherent to readers and allow for easy absorption of the content. Regularly discussing your ideas with others and getting feedback is the best way to ensure we can achieve this. Also make sure to look around and take inspiration from what others have done.
+The basic design of this website was intentionally kept minimal, so authors have more freedom to express their own creative ideas in the content they create. Experiment and express yourself, just keep in mind that the total experience of the guide should still be coherent to readers and allow for easy absorption of the content. Visuals should primarily be used for communicating content, not solely for decoration. Regularly discussing your ideas with others and getting feedback is the best way to ensure we can achieve this. Also make sure to look around and take inspiration from what others have done.
 
 ## File folders
 
@@ -40,9 +52,11 @@ Keep your file names in lowercase and avoid any special characters (including sp
 
 `transaction-confirmation.png`
 
-## JPG or PNG?
+## JPG, PNG or GIF?
 
-The two formats use different compression methods. PNG files are better for images with flat colors, while JPGs can compress photos and heavily textures visuals better. When in doubt, export both file types and see which one looks best at an acceptable file size.
+For static images, use JPG or PNG. The two formats use different compression methods. PNG files are better for images with flat colors, while JPGs can compress photos and heavily textures visuals better. When in doubt, export both file types and see which one looks best at an acceptable file size.
+
+For short animations, use GIFs. Be aware that GIFs can easily bloat in file size and have limited color depth.
 
 ## Export images at the right sizes
 
