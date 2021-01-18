@@ -3,7 +3,7 @@ layout: guide
 title: Illustration guidelines
 description: Tips for creating and preparing visuals for the Bitcoin Design Guide.
 nav_order: 3
-parent: Contribute
+parent: Contribute to guide
 permalink: /guide/contribute/illustration-guidelines/
 image: /assets/images/guide/contribute/illustration-guidelines/illustration-guidelines-preview.jpg
 main_classes: -no-top-padding
@@ -27,6 +27,28 @@ As this is a design guide, it is only natural that much of our content uses imag
 ## Creative direction
 
 The basic design of this website was intentionally kept minimal, so authors have more freedom to express their own creative ideas in the content they create. Experiment and express yourself, just keep in mind that the total experience of the guide should still be coherent to readers and allow for easy absorption of the content. Visuals should primarily be used for communicating content, not solely for decoration. Regularly discussing your ideas with others and getting feedback is the best way to ensure we can achieve this. Also make sure to look around and take inspiration from what others have done.
+
+## Image sources
+
+We collaborate on visuals the same way we collaborate on text. Please make the source files for your illustrations publicly accessible. For file-based visuals (Sketch, Photoshop, etc), use cloud hosting like a Github repository, Dropbox folder or other similar service. For Figma file, share a link to the source file.
+
+Each markdown file should contain a comment at the top that include links to these source files. For [example](https://raw.githubusercontent.com/BitcoinDesign/Guide/master/guide/getting-started/common-user-flows.md):
+
+{% raw %}
+```
+<!--
+
+Editor's notes
+
+This page provides an overview to...
+
+Illustration sources
+
+- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=862%3A2982
+
+-->
+```
+{% endraw %}
 
 ## File folders
 
