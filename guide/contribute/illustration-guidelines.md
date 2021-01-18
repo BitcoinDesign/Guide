@@ -3,7 +3,7 @@ layout: guide
 title: Illustration guidelines
 description: Tips for creating and preparing visuals for the Bitcoin Design Guide.
 nav_order: 3
-parent: Contribute
+parent: Contribute to guide
 permalink: /guide/contribute/illustration-guidelines/
 image: /assets/images/guide/contribute/illustration-guidelines/illustration-guidelines-preview.jpg
 main_classes: -no-top-padding
