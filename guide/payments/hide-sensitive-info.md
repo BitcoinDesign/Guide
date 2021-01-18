@@ -95,8 +95,6 @@ Another solution would be to invoke the wallet’s hidden state as a default whe
    height = 800
 %}
 
-![hide-by-default](/assets/images/payments/hide-by-default.gif)
-
 #### Pros
 
 - Users have some time to assess their environment before their info is displayed.
@@ -118,8 +116,6 @@ Having the show/hide button right on the main screen make things quite obvious f
    width = 1600
    height = 800
 %}
-
-
 
 #### Pros
 
