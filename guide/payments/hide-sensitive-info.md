@@ -23,7 +23,7 @@ image: /assets/images/guide/payments/hide-sensitive-information-header.png
 
 # Hiding Sensitive Information
 
-Imagine this scenario. You are in a public place, and you need to make a payment using your bitcoin wallet. You open your wallet on your phone, but you don’t feel comfortable having your address and balance information clearly visible to strangers who may be looking over your shoulder, persons lurking or video surveillance . Hence by giving users the ability to hide sensitive information in their wallet if desired, they gain an added sense of privacy and security when using the app in public.
+Imagine this scenario. You are in a public place, and you need to make a payment using your bitcoin wallet. You open your wallet on your phone, but you don’t feel comfortable having your address and balance information clearly visible to strangers who may be looking over your shoulder, persons lurking or video surveillance . Hence by giving users the ability to hide sensitive information in their wallet if desired, they gain an added sense of physical privacy and security [^3]when using the app in public.
 
 ## What information is considered sensitive ?
 
@@ -36,7 +36,7 @@ It's more common for wallets to protect private keys but not much is done for ot
 
 ## Quickly hide from overview screen
 
-The hide icon / button, which is usually displayed within close reach of the balance itself, is used to quickly and easily hide and reveal wallet information by tapping or clicking on it.
+The hide icon / button, which is usually displayed within close reach of the balance itself, is used to quickly and easily hide and reveal wallet information by tapping or clicking on it.[^2]
 
 ![hide-eye-icon](/assets/images/payments/hide-by-eye-icon.gif)
 
@@ -51,7 +51,7 @@ The hide icon / button, which is usually displayed within close reach of the bal
 
 ## Entering a PIN to reveal information
 
-A problem that seemed to arise throughout each implementation was that it was as easy to reverse the hidden state as it was to enable it. This may be for convenience sake, however, for protection against unauthorized access, perhaps you should be only able to unhide your information if a PIN or password has been entered. This could therefore reaffirm the identity of the wallet owner for extra security.
+A problem that seemed to arise throughout each implementation was that it was as easy to reverse the hidden state as it was to enable it. This may be for convenience sake, however, for protection against unauthorized access, perhaps you should only be able to unhide your information if a PIN or password has been entered. This could therefore reaffirm the identity of the wallet owner for extra security.
 
 ![reveal-by-pin](/assets/images/payments/reveal-by-pin.gif)
 
@@ -81,15 +81,15 @@ Another solution would be to invoke the wallet’s hidden state as a default whe
 
 ## Making the toggle less obvious
 
-Having the show/hide button right on the main screen make things quite obvious for someone who has access to your device to press unhide. A solution would be to move the hide toggle away from the home screen and into the app settings. This way, if someone has access to your device and opens the app, they may not immediately know how to reveal the hidden information as it is not as obvious as the previous solutions.
+Having the show/hide button right on the main screen make things quite obvious for someone who has access to your device to press unhide. A solution would be to move the hide toggle away from the home screen and into the app settings[^1]. This way, if someone has access to your device and opens the app, they may not immediately know how to reveal the balance, transaction and/or addresses as it is not made obvious as the previous solutions.
 
 ![hide-in-settings](/assets/images/payments/hide-in-settings.gif)
 
+#### Pros
 
-Pros
 - The risk of an unauthorized person revealing your information is minimal due to the fact that the toggle isn't immediately visible on the home screen
 
-Cons
+#### Cons
 
 - This solution may not be convenient for a user to quickly hide their information if the need arises.
 
@@ -97,18 +97,12 @@ Cons
 
 ## Why is this pattern important to designers?
 
-Privacy in bitcoin payments goes far beyond hiding balances and other sensitive information, the privacy by design framework states that privacy should be incorporated and built into products by default. This way, whether or not the user is concerned with their data privacy, they would always be protected through good UX and UI.
+Privacy in bitcoin payments goes far beyond hiding balances and other sensitive information, the privacy by design framework[^4] states that privacy should be incorporated and built into products by default. This way, whether or not the user is concerned with their data privacy, they would always be protected through good UX and UI.
 
 By including the hiding information pattern in design of wallets, we give users a greater sense of control and comfortability in any environment when using it. They have the freedom to decide whether or not they want their information visible.
 
-
-
 [^1]: https://medium.com/@olanrewajusodiq64/the-ui-ux-of-hide-balance-designing-to-improve-asset-security-e4b20668f315
-[^2]: https://www.invisionapp.com/inside-design/designing-for-privacy/
-[^3]: https://uxdesign.cc/how-to-design-with-privacy-in-mind-24c96cfc2611
-[^4]:  https://github.com/bitcoin-core/gui/issues/82
-
-[5]: https://docs.wasabiwallet.io/using-wasabi/PrivacyMode.html
-
-[6]: https://www.ipc.on.ca/wp-content/uploads/Resources/7foundationalprinciples.pdf
+[^2]:  https://github.com/bitcoin-core/gui/issues/82
+[^3]: https://docs.wasabiwallet.io/using-wasabi/PrivacyMode.html
+[^4]: https://www.ipc.on.ca/wp-content/uploads/Resources/7foundationalprinciples.pdf
 
