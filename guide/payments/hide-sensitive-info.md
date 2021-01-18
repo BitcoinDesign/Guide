@@ -9,6 +9,17 @@ main_classes: -no-top-padding
 image: /assets/images/guide/payments/hide-sensitive-information-header.png
 
 ---
+<!--
+
+Editor's notes
+
+This page provides an overview to a few patterns that can be incorporated by wallets to hide users sensitive information.
+
+Illustration sources
+
+- https://www.figma.com/file/TGJ8VxZOQ65In8kCir6eQt/Hide-sensitive-information-illustration?node-id=0%3A1
+-->
+
 {% include picture.html
    image = "/assets/images/payments/hide-sensitive-information-header.png"
    retina = "/assets/images/payments/hide-sensitive-information-header.png"
