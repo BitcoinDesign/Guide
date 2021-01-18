@@ -176,23 +176,51 @@ article.guide h1 {
 
 .post-content,
 article.guide {
-  h1, h2, h3 {
+  h1 {
+    margin-top: $spacing-unit * 1;
+    
+    @include media-query(medium-up) {
+      margin-top: $spacing-unit * 2;
+    }
+  }
+
+  h2, h3, h4, h5, h6 {
     margin-top: 0;
-    padding-top: $spacing-unit * 1;
+
+    &::before {
+      display: block;
+      content: '';
+      width: 0;
+      visibility: hidden;
+      position: relative;
+      z-index: -1;
+      pointer-events: none;
+    }
+  }
+
+  h2, h3 {
+    &::before {
+      height: $spacing-unit * 1;
+    }
 
     @include media-query(medium-up) {
-      margin-top: 0;
-      padding-top: $spacing-unit * 2;
+      &::before {
+        height: $spacing-unit * 3;
+        margin-top: -$spacing-unit * 2;
+      }
     }
   }
 
   h4, h5, h6 {
-    margin-top: 0;
-    padding-top: $spacing-unit * 0.5;
+    &::before {
+      height: $spacing-unit * 1.5;
+      margin-top: -$spacing-unit 1.5;
+    }
 
     @include media-query(medium-up) {
-      margin-top: 0;
-      padding-top: $spacing-unit * 2;
+      &::before {
+        height: $spacing-unit * 1;
+      }
     }
   }
 
