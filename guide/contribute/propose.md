@@ -2,7 +2,7 @@
 layout: guide
 title: Propose a change
 description: Contribute to the guide by proposing an improvement you've made or fixing an issue
-nav_order: 4
+nav_order: 1
 parent: Contribute to guide
 permalink: /guide/contribute/propose
 image: /assets/images/guide/contribute/contribute-propose-preview.jpg
@@ -28,7 +28,7 @@ While advanced users can interact with GitHub through the command line, this gui
 2. [Download and install GitHub desktop](https://desktop.github.com/) (MacOS and Windows) / [Linux](https://github.com/shiftkey/desktop)
 3. Download and install text editor ([Sublime Text](https://www.sublimetext.com/), [Atom](https://atom.io/), etc)
 
-### Finding what to fix
+### Identifying what to fix
 
 If you're looking to help, but not sure where to begin, check
 
@@ -39,18 +39,18 @@ If you're looking to help, but not sure where to begin, check
 
 For more challenging pieces of work, like a new page or a new chapter, it's good idea to talk to community and seek consensus before you begin working on it. This helps avoid work duplication and makes sure your efforts are aligned with others.
 
-### Getting Started
+### Getting started
 
 Like any novelty, the process may seem intimidating at first, but the best way to understand this is to try it out in practice.
 
 {% include youtube.html id="DxrLZtABG0E" %}
 
-1. Create a fork (clone)
-2. Create a branch
-3. Manage files
-4. Apply changes
-5. Create a pull request
-6. Applying additional changes
+1. [Create a fork (clone)](#forking-design-guide-repository)
+2. [Create a branch](#creating-a-branch)
+3. [Manage files](#managing-files)
+4. [Apply changes](#applying-changes)
+5. [Create a pull request](#creating-a-pull-request)
+6. [Applying additional changes](#applying-additional-changes)
 
 #### Forking Design Guide repository
 
@@ -78,13 +78,13 @@ When a new branch is created, while making sure it's selected, click on either `
 
 After identifying a file or folder where you want to make a change, it's time to make your changes to text, code or visuals. Whenever you're finished, make sure to `Save` the file (File > Save) in a _text editor_ or use a shortcut (Ctrl+S/CMD+S).
 
-Please make sure that your changes are consistent with our [content](content-guidelines.md), [illustration](illustration-guidelines) and [formatting](formatting.md) guidelines.
+Please make sure that your changes are consistent with our [content](content-guidelines), [illustration](illustration-guidelines) and [formatting](formatting) guidelines.
 
 ##### Committing
 
 Saving changes in a text editor, automatically triggers GitHub Desktop application to showcase them. You can review the changes quickly, and then make a commit[^3].
 
-Commits should contain _meaningful changes__ grouped together.
+Commits should contain _meaningful changes_ grouped together.
 
 **Do**
 - Add good textual context to your commit
@@ -101,19 +101,20 @@ When you're ready to publish your changes to the world, click `Publish a branch`
 After changes have been published on your copy, it's time to announce them in the original repository of the Bitcoin Design Guide.
 
 **Do**
-
 - If your pull request is related to an issue, reference to it. For example, "Fixes issue #32, "Closes #32" or "Related to #32"
 - Summarize changes you did and provide reasoning if necessary
 - Keep pull requests related to specific problem. Pull requests with lots of changes and different issues are harder to review
+- The title of the pull request should concisely explain what it's trying to solve
 
 **Don't**
-
-- Create a pull request with no context
+- Create a pull request without description
 - Create pull requests that tackle many different issues and files
 
 #### Applying additional changes
 
-During the [review process](Review.md) of your pull request, you may be asked to make certain changes. To do that, simply make sure that you're on the same branch as the pull request you've submitted. Apply and push your changes.
+Your proposed changes need to undergo a [review process](review.md). During the review of your pull request, you may be asked to make certain changes. To do that, simply make sure that you're on the same branch as the pull request you've submitted. [Apply and push](#applying-changes) your changes.
+
+Once the maintainers and contributors have a consensus on the proposed changes, your pull request will get merged, and your changes will become part of the Bitcoin Design Guide.
 
 ## Resources
 
