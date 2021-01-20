@@ -25,7 +25,7 @@ The entire source code and content of the guide are hosted in a cloud, [on GitHu
 While advanced users can interact with GitHub through the command line, this guide focuses on showing how to work with Git locally, by using following software:
 
 1. Create a [GitHub account](https://github.com/)
-2. [Download and install GitHub desktop](https://desktop.github.com/) (MacOS and Windows) / [Linux](https://github.com/shiftkey/desktop)
+2. [Download and install GitHub desktop](https://desktop.github.com/) (MacOS and Windows) | [Linux](https://github.com/shiftkey/desktop)
 3. Download and install text editor ([Sublime Text](https://www.sublimetext.com/), [Atom](https://atom.io/), etc)
 
 ### Identifying what to fix
@@ -64,19 +64,27 @@ To fork a repository[^1]:
 - Paste `https://github.com/BitcoinDesign/Guide/` into the URL field.
 - Click `Clone`
 
+{% include picture.html
+  image = "/assets/images/guide/contribute/propose/clonerepo.png"
+%}
+
 #### Creating a branch
 
 A branch[^2] allows you to create a copy of a copy. This sets up a _contained area_ where you can apply changes, without going out of sync with the cloned version.
 
 The cloned version should reside on a `master/main branch`, where as any changes should be done on a separate branches. This isn't a strict rule, it's the best practice that would allow you to easier sync your copy with the original (upstream) version of the design guide.
 
+{% include picture.html
+  image = "/assets/images/guide/contribute/propose/createbranch.png"
+%}
+
 #### Managing files
 
-When a new branch is created, while making sure it's selected, click on either `Open in Text Editor` or`Show in explorer` to browse through the folders and files. You can use a search(find) function (Ctrl+F/ CMD+F) to search for a specific keyword that can help identify the file you would like to edit.
+When a new branch is created, while making sure it's selected, click on either `Open in Text Editor` or`Show in explorer` to browse through the folders and files. You can use a search (find) function `Ctrl+F/ cmd+F` to search for a specific keyword that can help identify the file you would like to edit.
 
 #### Applying changes
 
-After identifying a file or folder where you want to make a change, it's time to make your changes to text, code or visuals. Whenever you're finished, make sure to `Save` the file (File > Save) in a _text editor_ or use a shortcut (Ctrl+S/CMD+S).
+After identifying a file or folder where you want to make a change, it's time to make your changes to text, code or visuals. Whenever you're finished, make sure to `Save` the file (File > Save) in a _text editor_ or use a shortcut `Ctrl+S/cmd+S`.
 
 Please make sure that your changes are consistent with our [content](content-guidelines), [illustration](illustration-guidelines) and [formatting](formatting) guidelines.
 
@@ -91,6 +99,10 @@ Commits should contain _meaningful changes_ grouped together.
 
 **Don't**
 - Abuse the commit function to gain commits, not every change should be a commit.
+
+{% include picture.html
+  image = "/assets/images/guide/contribute/propose/commit.png"
+%}
 
 ##### Pushing commits
 
@@ -114,7 +126,7 @@ After changes have been published on your copy, it's time to announce them in th
 
 Your proposed changes need to undergo a [review process](review.md). During the review of your pull request, you may be asked to make certain changes. To do that, simply make sure that you're on the same branch as the pull request you've submitted. [Apply and push](#applying-changes) your changes.
 
-Once the maintainers and contributors have a consensus on the proposed changes, your pull request will get merged, and your changes will become part of the Bitcoin Design Guide.
+Once there is a consensus on the proposed changes, your pull request will be merged, and your changes will become part of the Bitcoin Design Guide.
 
 ## Resources
 
