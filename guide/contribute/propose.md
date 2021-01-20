@@ -1,9 +1,9 @@
 ---
 layout: guide
-title: Contribute to guide
+title: Propose a change
 description: Contribute to the guide by proposing an improvement you've made or fixing an issue
-nav_order: 9
-has_children: false
+nav_order: 4
+parent: Contribute to guide
 permalink: /guide/contribute/propose
 image: /assets/images/guide/contribute/contribute-propose-preview.jpg
 ---
