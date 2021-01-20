@@ -25,7 +25,7 @@ The entire source code and content of the guide are hosted in a cloud, [on GitHu
 While advanced users can interact with GitHub through the command line, this guide focuses on showing how to work with Git locally, by using following software:
 
 1. Create a [GitHub account](https://github.com/)
-2. [Download and install GitHub desktop](https://desktop.github.com/) (MacOS and Windows) | [Linux](https://github.com/shiftkey/desktop)
+2. [Download and install GitHub desktop](https://desktop.github.com/) (MacOS and Windows) / [Linux](https://github.com/shiftkey/desktop)
 3. Download and install text editor ([Sublime Text](https://www.sublimetext.com/), [Atom](https://atom.io/), etc)
 
 ### Identifying what to fix
