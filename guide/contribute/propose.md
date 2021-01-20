@@ -88,6 +88,8 @@ After identifying a file or folder where you want to make a change, it's time to
 
 Please make sure that your changes are consistent with our [content](content-guidelines), [illustration](illustration-guidelines) and [formatting](formatting) guidelines.
 
+{% include youtube.html id="jlt5GDko-to" %}
+
 ##### Committing
 
 Saving changes in a text editor, automatically triggers GitHub Desktop application to showcase them. You can review the changes quickly, and then make a commit[^3].
