@@ -10,34 +10,34 @@ image: /assets/images/guide/contribute/contribute-propose-preview.jpg
 
 # Proposing a change
 
-As a free and open-source project, the Bitcoin Design Guide depends on contributions from people all over the internet. Our open-philosophy means that anyone can be the part of the community and improve the guide. No matter if you're a experienced developer looking to fix a improve the code, a designer looking to enhance visuals, or you just want to fix a typo - your contributions are welcomed.
+As a free and open-source project, the Bitcoin Design Guide depends on contributions from people all over the internet. Our open-philosophy means that anyone can be a part of the community and improve the guide. No matter if you’re an experienced developer looking to improve the code, a designer looking to enhance visuals, or you just want to fix a typo — your contributions are welcomed.
 
 Anyone can make a difference and become a contributor. This page explains how to make your first contribution by fixing an issue or making an improvement.
 
 ## GitHub
 
-The entire source code and content of the guide are hosted in a cloud, [on GitHub](https://github.com/BitcoinDesign/Guide/). GitHub is collaborative platform which at its core has a distributed version control system called [Git](https://git-scm.com/). GitHub doesn't just host the code, it also allows smooth collaboration and interaction between contributors.
+The entire source code and content of the guide are hosted in a cloud, [on GitHub](https://github.com/BitcoinDesign/Guide/). GitHub is a collaborative platform which at its core has a distributed version control system called [Git](https://git-scm.com/). GitHub doesn't just host the code, it also allows smooth collaboration and interaction between contributors.
 
 {% include youtube.html id="0vMBdtOnHJM" %}
 
 ### Prerequisites
 
-While advanced users can interact with GitHub through the command line, this guide focuses on showing how to work with Git locally, by using following software:
+While advanced users can interact with GitHub through a command line, this guide focuses on showing how to work with Git locally, by using the following software:
 
 1. Create a [GitHub account](https://github.com/)
-2. [Download and install GitHub desktop](https://desktop.github.com/) (MacOS and Windows) / [Linux](https://github.com/shiftkey/desktop)
+2. [Download and install GitHub Desktop](https://desktop.github.com/) (macOS and Windows) / [Linux](https://github.com/shiftkey/desktop)
 3. Download and install text editor ([Sublime Text](https://www.sublimetext.com/), [Atom](https://atom.io/), etc)
 
 ### Identifying what to fix
 
-If you're looking to help, but not sure where to begin, check
+If you're looking to help, but not sure where to begin:
 
 - Check issues labeled as [Good first issue](https://github.com/BitcoinDesign/Guide/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
 - Check issues labeled as [Design](https://github.com/BitcoinDesign/Guide/issues?q=is%3Aissue+is%3Aopen+label%3Adesign)
 - Consult the community [on Slack]({{ site.slack_invite_url }}) or start a [GitHub discussion](https://github.com/BitcoinDesign/Guide/discussions/new) with your proposal
 - Browse [bitcoin.design](https://bitcoin.design/guide) test it and try to identify issues yourself
 
-For more challenging pieces of work, like a new page or a new chapter, it's good idea to talk to community and seek consensus before you begin working on it. This helps avoid work duplication and makes sure your efforts are aligned with others.
+For more challenging pieces of work, a new page, or a new chapter, it's a good idea to talk to the community and seek consensus before you begin working on it. This helps avoid work duplication and makes sure your efforts are aligned with the community-determined goals.
 
 ### Getting started
 
@@ -58,9 +58,9 @@ The first step is to fork the Bitcoin Design Guide repository. Forking a reposit
 
 To fork a repository[^1]:
 
-- Sign into GitHub desktop
+- Sign in to GitHub desktop
 - File > `Clone repository`
-- Switch to URL tab
+- Switch to the URL tab
 - Paste `https://github.com/BitcoinDesign/Guide/` into the URL field.
 - Click `Clone`
 
@@ -72,7 +72,7 @@ To fork a repository[^1]:
 
 A branch[^2] allows you to create a copy of a copy. This sets up a _contained area_ where you can apply changes, without going out of sync with the cloned version.
 
-The cloned version should reside on a `master/main branch`, where as any changes should be done on a separate branches. This isn't a strict rule, it's the best practice that would allow you to easier sync your copy with the original (upstream) version of the design guide.
+The cloned version should reside on a `master/main branch`, whereas any changes should be done on separate branches. This isn't a strict rule, it's the best practice that would allow you to easier sync your copy with the original (upstream) version of the design guide.
 
 {% include picture.html
   image = "/assets/images/guide/contribute/propose/createbranch.png"
@@ -84,7 +84,7 @@ When a new branch is created, while making sure it's selected, click on either `
 
 #### Applying changes
 
-After identifying a file or folder where you want to make a change, it's time to make your changes to text, code or visuals. Whenever you're finished, make sure to `Save` the file (File > Save) in a _text editor_ or use a shortcut `Ctrl+S/cmd+S`.
+After identifying a file or folder where you want to make a change, it's time to make your changes to the text, code, or visuals. Whenever you're finished, make sure to `Save` the file (File > Save) in a _text editor_ or use a shortcut `Ctrl+S/cmd+S`.
 
 Please make sure that your changes are consistent with our [content](content-guidelines), [illustration](illustration-guidelines) and [formatting](formatting) guidelines.
 
@@ -92,7 +92,7 @@ Please make sure that your changes are consistent with our [content](content-gui
 
 ##### Committing
 
-Saving changes in a text editor, automatically triggers GitHub Desktop application to showcase them. You can review the changes quickly, and then make a commit[^3].
+Saving changes in a text editor automatically triggers the GitHub Desktop application to showcase them. You can review the changes quickly, and then make a commit[^3].
 
 Commits should contain _meaningful changes_ grouped together.
 
@@ -108,7 +108,7 @@ Commits should contain _meaningful changes_ grouped together.
 
 ##### Pushing commits
 
-When you're ready to publish your changes to the world, click `Publish a branch`. This will publish the branch on your GitHub.com account, making it visible to everyone. You can keep adding commits and push them when you're ready. Pushing commits transfers latest changes to the cloud copy (your fork of the Design Guide).
+When you're ready to publish your changes to the world, click `Publish a branch`. This will publish the branch on your GitHub.com account, making it visible to everyone. You can keep adding commits and push them when you're ready. Pushing commits transfers the latest changes to the cloud copy (your fork of the Design Guide).
 
 {% include picture.html
   image = "/assets/images/guide/contribute/propose/publishbranch.png"
@@ -123,13 +123,13 @@ After changes have been published on your copy, it's time to announce them in th
 %}
 
 **Do**
-- If your pull request is related to an issue, reference to it. For example, "Fixes issue #32, "Closes #32" or "Related to #32"
+- If your pull request is related to an issue, reference it. For example, "Fixes issue #32, "Closes #32" or "Related to #32"
 - Summarize changes you did and provide reasoning if necessary
-- Keep pull requests related to specific problem. Pull requests with lots of changes and different issues are harder to review
+- Keep pull requests related to a specific problem. Pull requests with lots of changes and different issues are harder to review
 - The title of the pull request should concisely explain what it's trying to solve
 
 **Don't**
-- Create a pull request without description
+- Create a pull request without a description
 - Create pull requests that tackle many different issues and files
 
 {% include picture.html
