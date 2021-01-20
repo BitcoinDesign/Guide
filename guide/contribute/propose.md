@@ -108,9 +108,17 @@ Commits should contain _meaningful changes_ grouped together.
 
 When you're ready to publish your changes to the world, click `Publish a branch`. This will publish the branch on your GitHub.com account, making it visible to everyone. You can keep adding commits and push them when you're ready. Pushing commits transfers latest changes to the cloud copy (your fork of the Design Guide).
 
+{% include picture.html
+  image = "/assets/images/guide/contribute/propose/publishbranch.png"
+%}
+
 #### Creating a pull request
 
 After changes have been published on your copy, it's time to announce them in the original repository of the Bitcoin Design Guide.
+
+{% include picture.html
+  image = "/assets/images/guide/contribute/propose/createpullrequest.png"
+%}
 
 **Do**
 - If your pull request is related to an issue, reference to it. For example, "Fixes issue #32, "Closes #32" or "Related to #32"
@@ -121,6 +129,10 @@ After changes have been published on your copy, it's time to announce them in th
 **Don't**
 - Create a pull request without description
 - Create pull requests that tackle many different issues and files
+
+{% include picture.html
+  image = "/assets/images/guide/contribute/propose/createpullrequestgithub.png"
+%}
 
 #### Applying additional changes
 
