@@ -65,7 +65,11 @@ To fork a repository[^1]:
 - Click `Clone`
 
 {% include picture.html
-  image = "/assets/images/guide/contribute/propose/clone-repository.png"
+   image = "/assets/images/guide/contribute/propose/clone-repository.png"
+   retina = "//assets/images/guide/contribute/propose/clone-repository@2x.png"
+   alt-text = "Cloning a repository"
+   width = 400
+   height = 400
 %}
 
 #### Creating a branch
@@ -74,8 +78,13 @@ A branch[^2] allows you to have a _contained area_ where you can make any change
 
 The cloned version will reside on the `master branch`, while any changes should be done on separate branches. This isn't a strict rule, it's the best practice that would allow you to easier sync your copy with the original (upstream) version of the design guide.
 
+
 {% include picture.html
-  image = "/assets/images/guide/contribute/propose/create-branch.png"
+   image = "/assets/images/guide/contribute/propose/create-branch.png"
+   retina = "//assets/images/guide/contribute/propose/create-branch@2x.png"
+   alt-text = "Creating a branch"
+   width = 800
+   height = 542
 %}
 
 #### Managing files
@@ -103,15 +112,24 @@ Commits should contain _meaningful changes_ grouped together.
 - Abuse the commit function to gain commits, not every change should be a commit.
 
 {% include picture.html
-  image = "/assets/images/guide/contribute/propose/commit.png"
+   image = "/assets/images/guide/contribute/propose/commit.png"
+   retina = "//assets/images/guide/contribute/propose/commit@2x.png"
+   alt-text = "Creating a branch"
+   width = 400
+   height = 600
 %}
 
 ##### Pushing commits
 
 When you're ready to publish your changes to the world, click `Publish a branch`. This will publish the branch on your GitHub.com account, making it visible to everyone. You can keep adding commits and push them when you're ready. Pushing commits transfers the latest changes to the cloud copy (your fork of the Design Guide).
 
+
 {% include picture.html
-  image = "/assets/images/guide/contribute/propose/publish-branch.png"
+   image = "/assets/images/guide/contribute/propose/publish-branch.png"
+   retina = "//assets/images/guide/contribute/propose/publish-branch@2x.png"
+   alt-text = "Creating a branch"
+   width = 800
+   height = 400
 %}
 
 #### Creating a pull request
@@ -119,7 +137,11 @@ When you're ready to publish your changes to the world, click `Publish a branch`
 After changes have been published on your copy, it's time to announce them in the original repository of the Bitcoin Design Guide.
 
 {% include picture.html
-  image = "/assets/images/guide/contribute/propose/create-pull-request.png"
+   image = "/assets/images/guide/contribute/propose/create-pull-request.png"
+   retina = "//assets/images/guide/contribute/propose/create-pull-request@2x.png"
+   alt-text = "Creating a branch"
+   width = 800
+   height = 400
 %}
 
 **Do**
@@ -133,7 +155,11 @@ After changes have been published on your copy, it's time to announce them in th
 - Create pull requests that tackle many different issues and files
 
 {% include picture.html
-  image = "/assets/images/guide/contribute/propose/create-pull-request-github.png"
+   image = "/assets/images/guide/contribute/propose/create-pull-request-github.png"
+   retina = "//assets/images/guide/contribute/propose/create-pull-request-github@2x.png"
+   alt-text = "Creating a branch"
+   width = 800
+   height = 400
 %}
 
 #### Applying additional changes
