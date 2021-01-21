@@ -154,7 +154,7 @@ Create and specify differently laid out images for desktop and mobile as needed.
 
 ## File size optimization
 
-Optimize your images before committing them. The easiest way is to run this repository [locally](https://github.com/BitcoinDesign/Guide/#run-locally). Images will be automatically compressed as you add them. After compression, ensure that the quality is still acceptable. Heavily textured images are sometimes heavily compressed resulting in visible compression crystals, blurry lines and other visual artefacts.
+Optimize your images before committing them. The easiest way is to [build and run this repository locally](https://github.com/BitcoinDesign/Guide#how-to-build-and-run-the-site-locally). Images will be automatically compressed as you add them. After compression, ensure that the quality is still acceptable. Heavily textured images are sometimes heavily compressed resulting in visible compression crystals, blurry lines and other visual artefacts.
 
 ---
 
