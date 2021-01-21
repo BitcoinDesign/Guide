@@ -123,7 +123,7 @@ You'll want to run the site locally to test your changes.
 5. Run `bundle exec jekyll serve`
 6. Browse the site at http://127.0.0.1:4000/
 
-To run on gh-pages, uncomment the base_url variable on _config.yml
+To run on gh-pages, uncomment the `base_url` variable in `_config.yml`.
 ```
 baseurl: "bitcoin-design-guide"
 ```
