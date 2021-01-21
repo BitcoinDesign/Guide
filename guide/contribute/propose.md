@@ -66,7 +66,7 @@ To fork a repository[^1]:
 
 {% include picture.html
    image = "/assets/images/guide/contribute/propose/clone-repository.png"
-   retina = "//assets/images/guide/contribute/propose/clone-repository@2x.png"
+   retina = "/assets/images/guide/contribute/propose/clone-repository@2x.png"
    alt-text = "Cloning a repository"
    width = 400
    height = 400
@@ -81,7 +81,7 @@ The cloned version will reside on the `master branch`, while any changes should 
 
 {% include picture.html
    image = "/assets/images/guide/contribute/propose/create-branch.png"
-   retina = "//assets/images/guide/contribute/propose/create-branch@2x.png"
+   retina = "/assets/images/guide/contribute/propose/create-branch@2x.png"
    alt-text = "Creating a branch"
    width = 800
    height = 542
@@ -113,7 +113,7 @@ Commits should contain _meaningful changes_ grouped together.
 
 {% include picture.html
    image = "/assets/images/guide/contribute/propose/commit.png"
-   retina = "//assets/images/guide/contribute/propose/commit@2x.png"
+   retina = "/assets/images/guide/contribute/propose/commit@2x.png"
    alt-text = "Creating a branch"
    width = 400
    height = 600
@@ -126,7 +126,7 @@ When you're ready to publish your changes to the world, click `Publish a branch`
 
 {% include picture.html
    image = "/assets/images/guide/contribute/propose/publish-branch.png"
-   retina = "//assets/images/guide/contribute/propose/publish-branch@2x.png"
+   retina = "/assets/images/guide/contribute/propose/publish-branch@2x.png"
    alt-text = "Creating a branch"
    width = 800
    height = 400
@@ -138,7 +138,7 @@ After changes have been published on your copy, it's time to announce them in th
 
 {% include picture.html
    image = "/assets/images/guide/contribute/propose/create-pull-request.png"
-   retina = "//assets/images/guide/contribute/propose/create-pull-request@2x.png"
+   retina = "/assets/images/guide/contribute/propose/create-pull-request@2x.png"
    alt-text = "Creating a branch"
    width = 800
    height = 400
@@ -156,7 +156,7 @@ After changes have been published on your copy, it's time to announce them in th
 
 {% include picture.html
    image = "/assets/images/guide/contribute/propose/create-pull-request-github.png"
-   retina = "//assets/images/guide/contribute/propose/create-pull-request-github@2x.png"
+   retina = "/assets/images/guide/contribute/propose/create-pull-request-github@2x.png"
    alt-text = "Creating a branch"
    width = 800
    height = 400
