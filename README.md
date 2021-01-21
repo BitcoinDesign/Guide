@@ -14,7 +14,7 @@ An equally important goal is that the process of creating this guide nurtures an
 
 The process of creating the guide is meant to be as open and decentralized as possible, resulting in a sustainable model to run projects with the community. Most of the discussion happens in the [Bitcoin Design Slack](http://bitcoindesigners.org), in the #bitcoin-design-guide, and here on GitHub in [Issues](https://github.com/BitcoinDesign/Guide/issues), [Pull requests](https://github.com/BitcoinDesign/Guide/pulls) and [Discussions](https://github.com/BitcoinDesign/Guide/discussions).
 
-You can read more about [how to contribute](https://bitcoin.design/guide/contribute/)
+You can read more about [how to contribute](https://bitcoin.design/guide/contribute/).
 
 ## Guide Content
 
