@@ -70,9 +70,9 @@ To fork a repository[^1]:
 
 #### Creating a branch
 
-A branch[^2] allows you to create a copy of a copy. This sets up a _contained area_ where you can apply changes, without going out of sync with the cloned version.
+A branch[^2] allows you to have a _contained area_ where you can make any changes, without going out of sync with the cloned version.
 
-The cloned version should reside on a `master/main branch`, whereas any changes should be done on separate branches. This isn't a strict rule, it's the best practice that would allow you to easier sync your copy with the original (upstream) version of the design guide.
+The cloned version will reside on the `master branch`, while any changes should be done on separate branches. This isn't a strict rule, it's the best practice that would allow you to easier sync your copy with the original (upstream) version of the design guide.
 
 {% include picture.html
   image = "/assets/images/guide/contribute/propose/create-branch.png"
