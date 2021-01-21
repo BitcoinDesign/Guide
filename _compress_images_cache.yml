@@ -439,3 +439,8 @@ assets/images/guide/contribute/propose/commit.png: commit.png
 assets/images/guide/contribute/propose/publishbranch.png: publishbranch.png
 assets/images/guide/contribute/propose/createpullrequest.png: createpullrequest.png
 assets/images/guide/contribute/propose/createpullrequestgithub.png: createpullrequestgithub.png
+assets/images/guide/contribute/propose/clone-repository.png: clone-repository.png
+assets/images/guide/contribute/propose/publish-branch.png: publish-branch.png
+assets/images/guide/contribute/propose/create-branch.png: create-branch.png
+assets/images/guide/contribute/propose/create-pull-request-github.png: create-pull-request-github.png
+assets/images/guide/contribute/propose/create-pull-request.png: create-pull-request.png
