@@ -61,12 +61,14 @@ Casa's [wealth security protocol]({{ 'https://github.com/Casa/wealth-security-pr
 Now that you have a clear picture of your use case, target audience and risk vectors we can consider which schemes might be suitable for your product. 
 
 {% include image.html
-   image = "/assets/images/guide/private-key-management/schemes/spectrum.jpg"
-   retina = "/assets/images/guide/private-key-management/schemes/spectrum@2x.jpg"
+   image = "/assets/images/guide/private-key-management/schemes/spectrum.png"
+   retina = "/assets/images/guide/private-key-management/schemes/spectrum@2x.png"
+   mobile = "/assets/images/guide/private-key-management/schemes/spectrum-mobile.png"
+   mobileRetina = "/assets/images/guide/private-key-management/schemes/spectrum-mobile@2x.png"
    alt-text = "Private key management schemes, spectrum"
    caption = "The range of private key management schemes."
-   width = 2084
-   height = 982
+   width = 1024
+   height = 450
    layout = "full-width"
 %}
 
