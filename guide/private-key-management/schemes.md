@@ -73,12 +73,14 @@ Now that you have a clear picture of your use case, target audience and risk vec
 %}
 
 {% include image.html
-   image = "/assets/images/guide/private-key-management/schemes/flow-chart.jpg"
-   retina = "/assets/images/guide/private-key-management/schemes/flow-chart@2x.jpg"
+   image = "/assets/images/guide/private-key-management/schemes/flow-chart.png"
+   retina = "/assets/images/guide/private-key-management/schemes/flow-chart@2x.png"
+   mobile = "/assets/images/guide/private-key-management/schemes/flow-chart-mobile.png"
+   mobileRetina = "/assets/images/guide/private-key-management/schemes/flow-chart-mobile@2x.png"
    alt-text = "Private key management schemes, flowchart"
    caption = "A flow-chart for picking a scheme based on use case."
-   width = 2226
-   height = 1416
+   width = 1024
+   height = 650
    layout = "full-width"
 %}
 
