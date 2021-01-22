@@ -58,7 +58,9 @@ Casa's [wealth security protocol]({{ 'https://github.com/Casa/wealth-security-pr
 
 ## Picking a scheme for your product
 
-Now that you have a clear picture of your use case, target audience and risk vectors we can consider which schemes might be suitable for your product. 
+Now that you have a clear picture of your use case, target audience and risk vectors we can consider which schemes might be suitable for your product.
+
+Here's an illustration of the spectrum of suitable schemes for use cases ranging from low value and casual usage, to high value and critical usage.
 
 {% include picture.html
    image = "/assets/images/guide/private-key-management/schemes/spectrum.png"
@@ -70,6 +72,8 @@ Now that you have a clear picture of your use case, target audience and risk vec
    width = 1024
    height = 450
 %}
+
+Or you can follow this flow chart to find a suitable scheme for your use case.
 
 {% include picture.html
    image = "/assets/images/guide/private-key-management/schemes/flow-chart.png"
