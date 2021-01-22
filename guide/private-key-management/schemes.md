@@ -60,7 +60,7 @@ Casa's [wealth security protocol]({{ 'https://github.com/Casa/wealth-security-pr
 
 Now that you have a clear picture of your use case, target audience and risk vectors we can consider which schemes might be suitable for your product. 
 
-{% include image.html
+{% include picture.html
    image = "/assets/images/guide/private-key-management/schemes/spectrum.png"
    retina = "/assets/images/guide/private-key-management/schemes/spectrum@2x.png"
    mobile = "/assets/images/guide/private-key-management/schemes/spectrum-mobile.png"
@@ -71,7 +71,7 @@ Now that you have a clear picture of your use case, target audience and risk vec
    height = 450
 %}
 
-{% include image.html
+{% include picture.html
    image = "/assets/images/guide/private-key-management/schemes/flow-chart.png"
    retina = "/assets/images/guide/private-key-management/schemes/flow-chart@2x.png"
    mobile = "/assets/images/guide/private-key-management/schemes/flow-chart-mobile.png"
