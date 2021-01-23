@@ -168,6 +168,6 @@ Your proposed changes need to undergo a [review process](review.md). During the 
 
 Once there is a consensus on the proposed changes, your pull request will be merged, and your changes will become part of the Bitcoin Design Guide.
 
-[^1]: https://docs.github.com/en/enterprise-server@3.0/github/creating-cloning-and-archiving-repositories/about-repositories
-[^2]: https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
-[^3]: https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/committing-and-reviewing-changes-to-your-project#about-commits
+[^1]:[Creating, cloning and archiving repositories](https://docs.github.com/en/enterprise-server@3.0/github/creating-cloning-and-archiving-repositories/about-repositories)
+[^2]:[Branches in a nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
+[^3]: [Committing and reviewing changes](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/committing-and-reviewing-changes-to-your-project#about-commits)
