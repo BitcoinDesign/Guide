@@ -18,7 +18,7 @@ Anyone can make a difference and become a contributor. This page explains how to
 
 The entire source code and content of the guide are hosted in a cloud, [on GitHub](https://github.com/BitcoinDesign/Guide/). GitHub is a collaborative platform which at its core has a distributed version control system called [Git](https://git-scm.com/). GitHub doesn't just host the code, it also allows smooth collaboration and interaction between contributors.
 
-{% include youtube.html id="0vMBdtOnHJM" %}
+{% include youtube.html id="JnXVzE_V7kw" %}
 
 ### Prerequisites
 
@@ -43,7 +43,7 @@ For more challenging pieces of work, a new page, or a new chapter, it's a good i
 
 Like any novelty, the process may seem intimidating at first, but the best way to understand this is to try it out in practice.
 
-{% include youtube.html id="DxrLZtABG0E" %}
+{% include youtube.html id="nt02IS6oIJw" %}
 
 1. [Create a fork (clone)](#forking-design-guide-repository)
 2. [Create a branch](#creating-a-branch)
@@ -97,7 +97,7 @@ After identifying a file or folder where you want to make a change, it's time to
 
 Please make sure that your changes are consistent with our [content](content-guidelines), [illustration](illustration-guidelines) and [formatting](formatting) guidelines.
 
-{% include youtube.html id="jlt5GDko-to" %}
+{% include youtube.html id="TjydTyOK4Wo" %}
 
 ##### Committing
 
