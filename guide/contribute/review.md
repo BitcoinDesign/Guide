@@ -31,7 +31,9 @@ Pull requests marked as **WIP (Work in progress)** usually require structural fe
 
 ### Reviewing a pull requests
 
-From the list of pull request select the one you want to review. Read the description of a pull request, and if it's associated with an issue, check the issue to get the context.
+From the list of pull request select the one you want to review. Read the description of a pull request, and if it's associated with an issue, check the issue to get the context. To begin the review process click on the `Files Changed` tab. The tab is split into two sections. The section on the left represents the code/content that is currently on the master/main branch. The section on the right, represents the proposed changes.
+
+To begin reviewing, browse through the changed files from top to bottom. When there is something that you would like to leave feedback on or propose a change, click on the `+` icon on the line you want to comment on, to toggle the comment window.
 
 #### Best practices when reviewing a pull requests
 
