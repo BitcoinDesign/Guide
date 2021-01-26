@@ -47,13 +47,7 @@ To begin reviewing, browse through the changed files from top to bottom. When yo
    height = 709
 %}
 
-If you have a concrete suggestion for a change, you can make a suggestion. To make a suggestion click on the suggestion icon, or use `Ctrl+G` or `cmd+G`.
-
-When you're done with leaving individual feedback, you can submit it. Click on the `Leave a review` button in the upper right corner. There are three types of feedback you can leave:
-
-- **Comment** - general feedback without explicit approval.
-- **Approve changes** - feedback approving the proposed changes.
-- **Request changes** - feedback explicitly suggesting changes.
+If you have a concrete `suggestion` for a change, you can make a suggestion. To make a suggestion click on the suggestion icon, or use `Ctrl+G` or `cmd+G`. If your direct suggestion is accepted, it will count as a commit and you will be credited as a co-author of the commit.
 
 {% include picture.html
    image = "/assets/images/guide/contribute/review/review-pull-request-suggest.gif"
@@ -65,13 +59,43 @@ When you're done with leaving individual feedback, you can submit it. Click on t
    height = 709
 %}
 
+When you're done with leaving individual feedback, you can submit it. Click on the `Leave a review` button in the upper right corner. There are three types of feedback you can leave:
+
+- **Comment** - general feedback without explicit approval.
+- **Approve changes** - feedback approving the proposed changes.
+- **Request changes** - feedback explicitly suggesting changes.
+
 #### Best practices when reviewing a pull requests
 
 **Do**
 
-### Testing a pull request
+- Leave a suggestion instead of general feedback whenever possible, especially for typo and grammar related feedback
+- Be humble and humble when reviewing
+- Be understanding and welcoming towards new contributors
+- If something is not clear enough, feel free to ask questions to the pull request author
 
-#### Testing a pull request via Netify
-#### Testing a pull request locally
+**Don't**
+- Request a change without providing a context or a reason for requesting it
+
+### Testing a pull request
+Previewing a proposed change in the split screen may be handy for quickly taking a glance at the changes and leaving a feedback, but previewing them directly on the website gives a better feeling on how content, code and visuals fit together. Testing a pull request is the last step of a review process.
+
+There are two ways to test a pull request in the Bitcoin Design Guide repository:
+- Previewing the Netlify link (easy)
+- [Testing locally](https://github.com/BitcoinDesign/Guide#how-to-build-and-run-the-site-locally) (advanced)
+
+#### Testing a pull request via Netlify
+
+Netlify is a platform that allows us to quickly preview how our pull request will look in production. It provides a unique permanent URL for every pull request. To preview a pull request you have to click on the `Details` deploy link at the bottom of every pull request.
+
+Once you visited the URL, locate the page(s) to which proposed changes refer to and preview them. Test the overall experience, links, images, preview website on mobile phone.
+
+{% include picture.html
+   image = "/assets/images/guide/contribute/review/test-pull-request-netlify.png"
+   alt-text = "netlify-test"
+   width = 973
+   height = 368
+%}
+
 
 [^1]:[About pull requests](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
