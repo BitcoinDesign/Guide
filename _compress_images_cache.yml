@@ -431,3 +431,5 @@ assets/images/style/example-image-wide-mobile.jpg: example-image-wide-mobile.jpg
 assets/images/style/example-image-wide-mobile@2x.jpg: example-image-wide-mobile@2x.jpg
 assets/images/submit-header-design-preview.jpg: submit-header-design-preview.jpg
 assets/mstile-150x150.png: mstile-150x150.png
+assets/images/guide/contribute/review/review-pull-request-suggest.gif: review-pull-request-suggest.gif
+assets/images/guide/contribute/review/review-pull-request-comment.gif: review-pull-request-comment.gif
