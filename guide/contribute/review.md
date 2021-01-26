@@ -45,6 +45,8 @@ To begin reviewing, browse through the changed files from top to bottom. When th
    height = 709
 %}
 
+If you have a concrete suggestion for a change, you can make a suggestion. To make a suggestion click on the suggestion icon, or use `Ctrl+G` or `cmd+G`.
+
 {% include picture.html
    image = "/assets/images/guide/contribute/review/review-pull-request-suggest.gif"
    retina ="/assets/images/guide/contribute/review/review-pull-request-suggest.gif"
