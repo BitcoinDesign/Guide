@@ -35,6 +35,26 @@ From the list of pull request select the one you want to review. Read the descri
 
 To begin reviewing, browse through the changed files from top to bottom. When there is something that you would like to leave feedback on or propose a change, click on the `+` icon on the line you want to comment on, to toggle the comment window.
 
+{% include picture.html
+   image = "/assets/images/guide/contribute/review/review-pull-request-comment.gif"
+   retina = "/assets/images/guide/contribute/review/review-pull-request-comment.gif"
+   mobile = "/assets/images/guide/contribute/review/review-pull-request-comment.gif"
+   mobileRetina = "/assets/images/guide/contribute/review/review-pull-request-comment.gif"
+   alt-text = "pull-request-comment"
+   width = 1438
+   height = 709
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/contribute/review/review-pull-request-suggest.gif"
+   retina ="/assets/images/guide/contribute/review/review-pull-request-suggest.gif"
+   mobile ="/assets/images/guide/contribute/review/review-pull-request-suggest.gif"
+   mobileRetina ="/assets/images/guide/contribute/review/review-pull-request-suggest.gif"
+   alt-text = "pull-request-comment"
+   width = 1438
+   height = 709
+%}
+
 #### Best practices when reviewing a pull requests
 
 **Do**
