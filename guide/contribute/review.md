@@ -16,7 +16,7 @@ Reviewing is a great entry-point for new contributors. By inspecting others' wor
 
 ## Prerequisites
 
-The review process requires only a GitHub account and no additional software.
+The review process requires only a GitHub account and no additional software. It's good practice to read our guidelines that will help you better evaluate proposed changes.
 
 1. Create a [GitHub account](https://github.com/)
 2. Read the [content guidelines](content-guidelines.md)
@@ -31,9 +31,11 @@ Pull requests marked as **WIP (Work in progress)** usually require structural fe
 
 ### Reviewing a pull requests
 
-From the list of pull request select the one you want to review. Read the description of a pull request, and if it's associated with an issue, check the issue to get the context. To begin the review process click on the `Files Changed` tab. The tab is split into two sections. The section on the left represents the code/content that is currently on the master/main branch. The section on the right, represents the proposed changes.
+From the list of pull request select the one you want to review. Read the description of a pull request, and if it references an issue, check the issue to get the context. To begin the review process click on the `Files Changed` tab.
 
-To begin reviewing, browse through the changed files from top to bottom. When there is something that you would like to leave feedback on or propose a change, click on the `+` icon on the line you want to comment on, to toggle the comment window.
+The tab is split into two sections. The section on the left represents the current code/content. The section on the right, represents the proposed changes.
+
+To begin reviewing, browse through the changed files from top to bottom. When you identify something that requires a comment or suggestion, click on the `+` icon in front of the line you want to comment on, and toggle the comment window and leave your comment.
 
 {% include picture.html
    image = "/assets/images/guide/contribute/review/review-pull-request-comment.gif"
@@ -46,6 +48,12 @@ To begin reviewing, browse through the changed files from top to bottom. When th
 %}
 
 If you have a concrete suggestion for a change, you can make a suggestion. To make a suggestion click on the suggestion icon, or use `Ctrl+G` or `cmd+G`.
+
+When you're done with leaving individual feedback, you can submit it. Click on the `Leave a review` button in the upper right corner. There are three types of feedback you can leave:
+
+- **Comment** - general feedback without explicit approval.
+- **Approve changes** - feedback approving the proposed changes.
+- **Request changes** - feedback explicitly suggesting changes.
 
 {% include picture.html
    image = "/assets/images/guide/contribute/review/review-pull-request-suggest.gif"
