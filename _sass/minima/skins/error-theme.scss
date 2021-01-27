@@ -127,6 +127,10 @@
       .site-title {
         color: $white;
 
+        svg {
+          fill: white;
+        }
+
         &:hover {
           color: $blue-900;
         }
