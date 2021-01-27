@@ -29,13 +29,13 @@ For some ideas we use [Discussions](https://github.com/BitcoinDesign/Guide/discu
 
 ---
 
-**[How to propose a change]({{ '/guide/contribute/propose.md/' | relative_url }})**
+**[Create your first pull request]({{ '/guide/contribute/propose.md/' | relative_url }})**
 
 Learn the basics of GitHub, an open-source collaboration platform and create your first pull request.
 
 ---
 
-**[How to review a proposed change]({{ '/guide/contribute/review/' | relative_url }})**
+**[Become a reviewer]({{ '/guide/contribute/review/' | relative_url }})**
 
 Get involved in the reviewing process. It's a fantastic entry-point for new contributors.
 
