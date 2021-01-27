@@ -14,6 +14,8 @@ Peer-review is a foundation of an open-source project. The review process happen
 
 Reviewing is a great entry-point for new contributors. By inspecting others' work, you can get a better insight into the project, familiarize yourself with our processes or learn about Bitcoin.
 
+{% include youtube.html id="OXPReIz9HMs" %}
+
 ## Prerequisites
 
 The review process requires only a GitHub account and no additional software. It's good practice to read our guidelines that will help you better evaluate proposed changes.
@@ -96,6 +98,5 @@ Once you visited the URL, locate the page(s) to which proposed changes refer to 
    width = 973
    height = 368
 %}
-
 
 [^1]:[About pull requests](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
