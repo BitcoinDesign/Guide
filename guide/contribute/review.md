@@ -12,7 +12,7 @@ image: /assets/images/guide/contribute/contribute-review-preview.jpg
 
 Peer-review is a foundation of an open-source project. The review process happens in the open, and anyone can preview and assess a proposed change.
 
-Reviewing is a great entry-point for new contributors. By inspecting others' work, you can get a better insight into the project, familiarize yourself with our processes or learn about Bitcoin.
+Reviewing is a great entry point for new contributors. By inspecting others' work, you can get a better insight into the project, familiarize yourself with our processes or learn about Bitcoin.
 
 {% include youtube.html id="OXPReIz9HMs" %}
 
@@ -29,13 +29,13 @@ The review process requires only a GitHub account and no additional software. It
 
 A change is proposed in a form of a pull request[^1]. To preview a list of all proposals visit this [link](https://github.com/BitcoinDesign/Guide/pulls) or go to Bitcoin Design Guide [repository](https://github.com/BitcoinDesign/Guide/) and click on the `Pull requests` tab.
 
-Pull requests marked as **WIP (Work in progress)** usually require structural feedback and do not need thorough evaluation. If the WIP pull request description doesn't specify required feedback type, feel free to ask the author by leaving a comment.
+Pull requests marked as **WIP (Work in progress)** usually require structural feedback and do not need a thorough evaluation. If the WIP pull request description doesn't specify the required feedback type, feel free to ask the author by leaving a comment.
 
-### Reviewing a pull requests
+### Reviewing pull requests
 
-From the list of pull request select the one you want to review. Read the description of a pull request, and if it references an issue, check the issue to get the context. To begin the review process click on the `Files Changed` tab.
+From the list of pull requests select the one you want to review. Read the description of a pull request, and if it references an issue, check the issue to get the context. To begin the review process click on the `Files Changed` tab.
 
-The tab is split into two sections. The section on the left represents the current code/content. The section on the right, represents the proposed changes.
+The tab is split into two sections. The section on the left represents the current code/content. The section on the right represents the proposed changes.
 
 To begin reviewing, browse through the changed files from top to bottom. When you identify something that requires a comment or suggestion, click on the `+` icon in front of the line you want to comment on, and toggle the comment window and leave your comment.
 
@@ -67,11 +67,11 @@ When you're done with leaving individual feedback, you can submit it. Click on t
 - **Approve changes** - feedback approving the proposed changes.
 - **Request changes** - feedback explicitly suggesting changes.
 
-#### Best practices when reviewing a pull requests
+#### Best practices when reviewing pull requests
 
 **Do**
 
-- Leave a suggestion instead of general feedback whenever possible, especially for typo and grammar related feedback
+- Leave a suggestion instead of general feedback whenever possible, especially for typo and grammar-related feedback
 - Be humble and humble when reviewing
 - Be understanding and welcoming towards new contributors
 - If something is not clear enough, feel free to ask questions to the pull request author
@@ -80,7 +80,7 @@ When you're done with leaving individual feedback, you can submit it. Click on t
 - Request a change without providing a context or a reason for requesting it
 
 ### Testing a pull request
-Previewing a proposed change in the split screen may be handy for quickly taking a glance at the changes and leaving a feedback, but previewing them directly on the website gives a better feeling on how content, code and visuals fit together. Testing a pull request is the last step of a review process.
+Previewing a proposed change in the split-screen may be handy for quickly taking a glance at the changes and leaving feedback, but previewing them directly on the website gives a better feeling on how content, code, and visuals fit together. Testing a pull request is the last step of a review process.
 
 There are two ways to test a pull request in the Bitcoin Design Guide repository:
 - Previewing the Netlify link (easy)
@@ -90,7 +90,7 @@ There are two ways to test a pull request in the Bitcoin Design Guide repository
 
 Netlify is a platform that allows us to quickly preview how our pull request will look in production. It provides a unique permanent URL for every pull request. To preview a pull request you have to click on the `Details` deploy link at the bottom of every pull request.
 
-Once you visited the URL, locate the page(s) to which proposed changes refer to and preview them. Test the overall experience, links, images, preview website on mobile phone.
+Once you visited the URL, locate the page(s) to which proposed changes refer and preview them. Test the overall experience, links, images, preview website on a mobile device.
 
 {% include picture.html
    image = "/assets/images/guide/contribute/review/test-pull-request-netlify.png"
