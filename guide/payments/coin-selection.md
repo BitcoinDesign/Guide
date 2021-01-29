@@ -8,13 +8,13 @@ main_classes: -no-top-padding
 ---
 
 {% include picture.html
-   image = "/assets/images/payments/coin-selection-header-0452403.png"
-   retina = "/assets/images/payments/coin-selection-header-0452403.png"
-   mobile = "/assets/images/payments/coin-selection-header-0452403.png"
-   mobileRetina = "/assets/images/payments/coin-selection-header-0452403.png"
+   image = "/assets/images/payments/coin-selection-header.jpg"
+   retina = "/assets/images/payments/coin-selection-header@2x.jpg"
+   mobile = "/assets/images/payments/coin-selection-header-mobile.jpg"
+   mobileRetina = "/assets/images/payments/coin-selection-header-mobile@2x.jpg"
    alt-text = "Coin Selection"
    width = 1600
-   height = 900
+   height = 800
    layout = "full-width"
 %}
 
