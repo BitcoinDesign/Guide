@@ -30,15 +30,15 @@ Remember: onboarding should not be a crutch for bad design. Avoid over indexing 
 
 ---
 
-**[Principles]({{ '/guide/onboarding/principles/' | relative_url }})**
+**Principles (coming soon)**
 
 Onboarding experiences can look very different depending on your target audience, however there are some things that should be consistent across bitcoin products.
 
-**[Getting to know your users]({{ '/guide/onboarding/getting-to-know-your-users/' | relative_url }})**
+**Getting to know your users (coming soon)**
 
 This section will give you some tips on how best to understand and develop knowledge about your users.
 
-**[First-time user experience]({{ '/guide/onboarding/first-time-user-experience/' | relative_url }})**
+**First-time user experience (coming soon)**
 
 An overview of how to design a successful onboarding experience for first-time users. This will help set the basis for a more advanced type of user.
 
