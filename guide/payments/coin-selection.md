@@ -34,7 +34,15 @@ The user may be also motivated to optimise for three different reasons:
 2. Optimising for Speed
 3. Optimising for Privacy
 
-![](../../assets/images/payments/NAtqYb9.png)
+{% include picture.html
+   image = "/assets/images/payments/funding-tx.jpg"
+   retina = "/assets/images/payments/funding-tx@2x.jpg"
+   mobile = "/assets/images/payments/funding-tx-mobile.jpg"
+   mobileRetina = "/assets/images/payments/funding-tx-mobile@2x.jpg"
+   alt-text = "Funding TX"
+   width = 800
+   height = 400
+%}
 
 ## Hard Contraints and Goals with Coin Selection
 Before exploring some popular coin selection strategies, it is worth noting the following hard constraints when making a bitcoin payment in relation to UTXOs.
@@ -65,7 +73,15 @@ An automatic coin selection strategy used in bitcoin wallets allows the applicat
 
 Whilst this strategy may not always be optimal, it can provide the most frictionless user experience and is therefore employed by most introductory level bitcoin wallets.
 
-![](../../assets/images/payments/CIa2cwO.png)
+{% include picture.html
+   image = "/assets/images/payments/automatic-coin-selection.jpg"
+   retina = "/assets/images/payments/automatic-coin-selection@2x.jpg"
+   mobile = "/assets/images/payments/automatic-coin-selection-mobile.jpg"
+   mobileRetina = "/assets/images/payments/automatic-coin-selection-mobile@2x.jpg"
+   alt-text = "Automatic Coin Selection"
+   width = 800
+   height = 400
+%}
 
 ### How it works
 A user chooses to send a payment to one of their contacts. They enter the amount of bitcoin they wish to send, select their transaction fee rate, and approves the outgoing payment request. 
@@ -81,8 +97,7 @@ A few popular algorithms currently implemented by bitcoin wallets:
 - **Minimize Future Fees (Merge Coins):** <br/><small>The strategy spends the maximum number of inputs so that a potential price rise does not make smaller coins economically unspendable. Indeed, if the price of a crypto asset increases too much, smaller coins may worth less than the cost of the network fees to spend them.</small>
 
 ##### Algorithms Optimising for Privacy (No Change)
-- **Target Sized Change** <br/><small>Wallet aims to minimize the value difference of target input and change output.</small>
-- **Branch & Bound (BnB)/Exact Change** <br/><small>Wallet finds an input set that is equal in value to the target, avoiding change outputs. If the wallet cannot find an exact match, it refers back to a "knapsack" solver which selects inputs that minimise the change output to within 0.01 BTC.</small>
+- **Branch & Bound (BnB)/Exact Change** <br/><small>Wallet aims to find an input set that is equal in value to the target, avoiding change outputs. If the wallet cannot find an exact match, it refers back to a "knapsack" solver which selects inputs that minimise the change output to within 0.01 BTC.</small>
 - **Blackjack:**  <br/><small>Accumulates inputs until the target value (+fees) is matched, does not accumulate inputs that go over the target value (within a threshold).</small>
 - **Accumulative:** <br/><small>Accumulates inputs until the target value (+fees) is reached, skipping detrimental inputs.</small>
 
@@ -118,7 +133,7 @@ A few popular algorithms currently implemented by bitcoin wallets:
 - Bread Wallet + Electrum (FIFO)
 - Mycelium (Pruned FIFO)
 - BitcoinJ and Bitcoin Wallet for Android (High Priority First)
-- Electrum *Private Mode (Target Sized Change)
+- Electrum *Private Mode* (Target Sized Change)
 - Bitcoin Core (Branch and Bound)
 - Hexa (Blackjack, with Accumulative Fallback)
 
@@ -129,7 +144,15 @@ Whilst employing automatic coin selection algorithms such as Branch and Bound or
 
 This semi-manual strategy gives users the ability to take some form of coin control, whilst not having to undergo an often tiring process of manually selecting transaction inputs. Good labelling of UTXOs and contacts gives users a much clearer idea of which coins or clusters they might wish to white/black list.
 
-![](../../assets/images/payments/wj9mhXK.png)
+{% include picture.html
+   image = "/assets/images/payments/coin-selection-white-black-listing.jpg"
+   retina = "/assets/images/payments/coin-selection-white-black-listing@2x.jpg"
+   mobile = "/assets/images/payments/coin-selection-white-black-listing-mobile.jpg"
+   mobileRetina = "/assets/images/payments/coin-selection-white-black-listing-mobile@2x.jpg"
+   alt-text = "White/Black Listing"
+   width = 800
+   height = 400
+%}
 
 ### How it Works
 
@@ -173,7 +196,16 @@ Manual coin control is often an "opt-in" strategy, agreed to by users as they en
 
 Manual coin control also gives users the ability to choose for themselves what they optimise for in their bitcoin transactions (cost, speed, or privacy). However, it's worth noting that manual coin control, whilst beneficial to many users, could also lead to expensive, slow, or revealing if used incorrectly. Manual coin selection is an advanced feature and should be used (and designed) with caution. 
 
-![](../../assets/images/payments/nf9tbJy.png)
+{% include picture.html
+   image = "/assets/images/payments/manual-coin-selection.jpg"
+   retina = "/assets/images/payments/manual-coin-selection@2x.jpg"
+   mobile = "/assets/images/payments/manual-coin-selection-mobile.jpg"
+   mobileRetina = "/assets/images/payments/manual-coin-selection-mobile@2x.jpg"
+   alt-text = "Coin Control"
+   width = 800
+   height = 400
+%}
+
 
 ### How it works
 
