@@ -44,7 +44,7 @@ The user may be also motivated to optimise for three different reasons:
    height = 400
 %}
 
-## Hard Contraints and Goals with Coin Selection
+### Hard Contraints and Goals with Coin Selection
 Before exploring some popular coin selection strategies, it is worth noting the following hard constraints when making a bitcoin payment in relation to UTXOs.
 
 #### Constraints
