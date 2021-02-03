@@ -4,7 +4,7 @@ title: Propose a change
 description: Contribute to the guide by proposing an improvement you've made or fixing an issue
 nav_order: 1
 parent: Contribute to guide
-permalink: /guide/contribute/propose
+permalink: /guide/contribute/propose/
 image: /assets/images/guide/contribute/contribute-propose-preview.jpg
 ---
 
@@ -93,7 +93,7 @@ When a new branch is created, while making sure it's selected, click on either `
 
 #### Applying changes
 
-After identifying a file or folder where you want to make a change, it's time to make your changes to the text, code, or visuals. Whenever you're finished, make sure to `Save` the file (File > Save) in a _text editor_ or use a shortcut `Ctrl+S/cmd+S`.
+After identifying a file or folder where you want to make a change, it's time to make your changes to the text, code, or visuals. Whenever you're finished, make sure to `Save` the file (File > Save) in a _text editor_ or use the shortcuts `Ctrl+S` or `cmd+S`.
 
 Please make sure that your changes are consistent with our [content](content-guidelines), [illustration](illustration-guidelines) and [formatting](formatting) guidelines.
 
