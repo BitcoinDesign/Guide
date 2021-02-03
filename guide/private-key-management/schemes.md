@@ -71,6 +71,7 @@ Here's an illustration of the spectrum of suitable schemes for use cases ranging
    caption = "The range of private key management schemes."
    width = 1024
    height = 450
+   layout = "full-width"
 %}
 
 Or you can follow this flow chart to find a suitable scheme for your use case.
@@ -84,6 +85,7 @@ Or you can follow this flow chart to find a suitable scheme for your use case.
    caption = "A flow-chart for picking a scheme based on use case."
    width = 1024
    height = 650
+   layout = "full-width"
 %}
 
 We can divide the options up into personal and shared wallet schemes. The following pages explain each one in more detail:
