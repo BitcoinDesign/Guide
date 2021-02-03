@@ -69,8 +69,8 @@ Here's an illustration of the spectrum of suitable schemes for use cases ranging
    mobileRetina = "/assets/images/guide/private-key-management/schemes/spectrum-mobile@2x.png"
    alt-text = "Private key management schemes, spectrum"
    caption = "The range of private key management schemes."
-   width = 1024
-   height = 450
+   width = 1600
+   height = 703
    layout = "full-width"
 %}
 
@@ -83,8 +83,8 @@ Or you can follow this flow chart to find a suitable scheme for your use case.
    mobileRetina = "/assets/images/guide/private-key-management/schemes/flow-chart-mobile@2x.png"
    alt-text = "Private key management schemes, flowchart"
    caption = "A flow-chart for picking a scheme based on use case."
-   width = 1024
-   height = 650
+   width = 1600
+   height = 1015
    layout = "full-width"
 %}
 
