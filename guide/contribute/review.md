@@ -4,15 +4,15 @@ title: Review
 description: Contribute to the guide by reviewing a proposed change
 nav_order: 2
 parent: Contribute to guide
-permalink: /guide/contribute/review
+permalink: /guide/contribute/review/
 image: /assets/images/guide/contribute/contribute-review-preview.jpg
 ---
 
 # Reviewing a proposed change
 
-Peer-review is a foundation of an open-source project. The review process happens in the open, and anyone can preview and assess a proposed change.
+Peer-review is fundamental for open-source projects. The review process happens in the open, and anyone can preview and assess proposed changes.
 
-Reviewing is a great entry point for new contributors. By inspecting others' work, you can get a better insight into the project, familiarize yourself with our processes or learn about Bitcoin.
+Reviewing is a great entry point for new contributors. By inspecting others' work, you can get a better insight into the project, familiarize yourself with our processes and learn about Bitcoin.
 
 {% include youtube.html id="OXPReIz9HMs" %}
 
@@ -29,7 +29,7 @@ The review process requires only a GitHub account and no additional software. It
 
 A change is proposed in a form of a pull request[^1]. To preview a list of all proposals visit this [link](https://github.com/BitcoinDesign/Guide/pulls) or go to Bitcoin Design Guide [repository](https://github.com/BitcoinDesign/Guide/) and click on the `Pull requests` tab.
 
-Pull requests marked as **WIP (Work in progress)** usually require structural feedback and do not need a thorough evaluation. If the WIP pull request description doesn't specify the required feedback type, feel free to ask the author by leaving a comment.
+Pull requests with the `Draft` status, or marked as **WIP (Work in progress)**, usually require structural feedback and do not need a thorough evaluation yet. If the WIP pull request description doesn't specify the required feedback type, feel free to ask the author by leaving a comment.
 
 ### Reviewing pull requests
 
@@ -49,7 +49,7 @@ To begin reviewing, browse through the changed files from top to bottom. When yo
    height = 709
 %}
 
-If you have a concrete `suggestion` for a change, you can make a suggestion. To make a suggestion click on the suggestion icon, or use `Ctrl+G` or `cmd+G`. If your direct suggestion is accepted, it will count as a commit and you will be credited as a co-author of the commit.
+If you have a concrete `suggestion` for a change, you can make a suggestion. To do so, click the suggestion icon, or use `Ctrl+G` or `cmd+G`. If your direct suggestion is accepted, it will count as a commit and you will be credited as a co-author of the commit.
 
 {% include picture.html
    image = "/assets/images/guide/contribute/review/review-pull-request-suggest.gif"
