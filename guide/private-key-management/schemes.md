@@ -58,25 +58,33 @@ Casa's [wealth security protocol]({{ 'https://github.com/Casa/wealth-security-pr
 
 ## Picking a scheme for your product
 
-Now that you have a clear picture of your use case, target audience and risk vectors we can consider which schemes might be suitable for your product. 
+Now that you have a clear picture of your use case, target audience and risk vectors we can consider which schemes might be suitable for your product.
 
-{% include image.html
-   image = "/assets/images/guide/private-key-management/schemes/spectrum.jpg"
-   retina = "/assets/images/guide/private-key-management/schemes/spectrum@2x.jpg"
+Here's an illustration of the spectrum of suitable schemes for use cases ranging from low value and casual usage, to high value and critical usage.
+
+{% include picture.html
+   image = "/assets/images/guide/private-key-management/schemes/spectrum.png"
+   retina = "/assets/images/guide/private-key-management/schemes/spectrum@2x.png"
+   mobile = "/assets/images/guide/private-key-management/schemes/spectrum-mobile.png"
+   mobileRetina = "/assets/images/guide/private-key-management/schemes/spectrum-mobile@2x.png"
    alt-text = "Private key management schemes, spectrum"
    caption = "The range of private key management schemes."
-   width = 2084
-   height = 982
+   width = 1600
+   height = 703
    layout = "full-width"
 %}
 
-{% include image.html
-   image = "/assets/images/guide/private-key-management/schemes/flow-chart.jpg"
-   retina = "/assets/images/guide/private-key-management/schemes/flow-chart@2x.jpg"
+Or you can follow this flow chart to find a suitable scheme for your use case.
+
+{% include picture.html
+   image = "/assets/images/guide/private-key-management/schemes/flow-chart.png"
+   retina = "/assets/images/guide/private-key-management/schemes/flow-chart@2x.png"
+   mobile = "/assets/images/guide/private-key-management/schemes/flow-chart-mobile.png"
+   mobileRetina = "/assets/images/guide/private-key-management/schemes/flow-chart-mobile@2x.png"
    alt-text = "Private key management schemes, flowchart"
    caption = "A flow-chart for picking a scheme based on use case."
-   width = 2226
-   height = 1416
+   width = 1600
+   height = 1015
    layout = "full-width"
 %}
 
