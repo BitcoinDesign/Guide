@@ -5,6 +5,8 @@ description: An overview of some of the concepts to consider when building onboa
 nav_order: 2
 has_children: true
 permalink: /guide/onboarding/introduction/
+main_classes: -no-top-padding
+image: /assets/images/guide/onboarding/onboarding.png
 ---
 
 <!--
@@ -15,6 +17,17 @@ A brief introduction and summary of all pages in this section. The idea is that 
 scan this page to get an overview of the section and then decide which topics to dive into.
 
 -->
+
+{% include picture.html
+   image = "/assets/images/guide/onboarding/onboarding.png"
+   retina = "/assets/images/guide/onboarding/onboarding@2x.png"
+   mobile = "/assets/images/guide/onboarding/onboarding-mobile.png"
+   mobileRetina = "/assets/images/guide/onboarding/onboarding-mobile@2x.png"
+   alt-text = "Onboarding chapter illustration"
+   width = 1600
+   height = 600
+   layout = "full-width"
+%}
 
 # Onboarding
 
