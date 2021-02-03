@@ -33,7 +33,7 @@ scan this page to get an overview of the section and then decide which topics to
 
 Effective onboarding can make or break someone’s first bitcoin experience. Therefore, it is important to identify your target audience when building wallet-products and design specifically with that audience in mind. 
 
-Some new users bring years of traditional financial experience to bitcoin. They have bank accounts, debit cards, and ingrained ideas about what money is. This makes them tricky to onboard. Users might assume that the patterns and habits from prior experience will apply, so convincing them to use a different financial system might be better in the product. 
+Some new users bring years of traditional financial experience to bitcoin. They have bank accounts, debit cards, and ingrained ideas about what money is. This makes them tricky to onboard, as they might assume that the patterns and habits from prior experience will apply. Convincing them to use a different financial system might be better in the product. 
 
 On the other hand, more than four billion people have no exposure to traditional financial institutions. This, along with designing for younger people whose ideas about money aren’t fully formed, represents a very different challenge.
 
