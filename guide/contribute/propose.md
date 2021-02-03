@@ -89,7 +89,7 @@ The cloned version will reside on the `master branch`, while any changes should 
 
 #### Managing files
 
-When a new branch is created, while making sure it's selected, click on either `Open in Text Editor` or`Show in explorer` to browse through the folders and files. You can use a search (find) function `Ctrl+F/ cmd+F` to search for a specific keyword that can help identify the file you would like to edit.
+When a new branch is created, while making sure it's selected, click on either `Open in Text Editor` or`Show in explorer` to browse through the folders and files. You can use a search (find) function (`Ctrl+F` or `cmd+F` in most editors) to search for a specific keyword that can help identify the file you would like to edit.
 
 #### Applying changes
 
