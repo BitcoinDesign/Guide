@@ -37,7 +37,7 @@ Some new users bring years of traditional financial experience to bitcoin. They 
 
 On the other hand, more than four billion people have no exposure to traditional financial institutions. This, along with designing for younger people whose ideas about money aren’t fully formed, represents a very different challenge.
 
-Onboarding, for this guide, refers to anything that helps users set up the product or learn its interface (such as dedicated flows and UI elements). But onboarding isn’t just for first-time users. Experienced users also need to be onboarded, especially when new features are added. 
+Onboarding, for this guide, refers to anything that helps users set up the product or learn its interface (such as dedicated flows and UI elements) and initially focuses on mobile applications. But onboarding isn’t just for first-time users. Experienced users also need to be onboarded, especially when new features are added. 
 
 Remember: Onboarding should not be a crutch for bad design. Avoid trying to explain too much and then shooting users into a poorly designed app. Rather, think about onboarding flows as a smooth on-ramp into a great user experience.
 
