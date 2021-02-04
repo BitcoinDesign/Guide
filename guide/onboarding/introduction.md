@@ -33,7 +33,7 @@ scan this page to get an overview of the section and then decide which topics to
 
 Onboarding, the first use, can make or break someone’s experience of a product. Therefore it is important to identify your target audience and design specifically with its context, expectations, and needs in mind. 
 
-Some new users bring years of traditional financial experience to bitcoin. They have bank accounts, debit cards, and ingrained ideas about what money is. This makes them tricky to onboard, as they might assume that the patterns and habits from prior experience will apply. Convincing them to use a different financial system might be better in the product. 
+Some new users bring years of traditional financial experience to bitcoin. They have bank accounts, debit cards, and ingrained ideas about what money is. This makes onboarding tricky, as the user might assume that the patterns and habits from prior experience will apply. If you design a user experience that is superior to the traditional system, convincing users to swtich to a different financial system will be a lot easier. 
 
 On the other hand, more than four billion people have no exposure to traditional financial institutions. This, along with designing for younger people whose ideas about money aren’t fully formed, represents a very different challenge.
 
