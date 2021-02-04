@@ -47,9 +47,13 @@ Remember: Onboarding should not be a crutch for bad design. Avoid trying to expl
 
 Onboarding experiences can look very different depending on your target audience, however there are some things that should be consistent across Bitcoin products.
 
+---
+
 **Getting to know your users (coming soon)**
 
 This section will give you some tips on how best to understand and develop knowledge about your users.
+
+---
 
 **First-time user experience (coming soon)**
 
