@@ -108,9 +108,6 @@ Commits should contain _meaningful changes_ grouped together.
 **Do**
 - Add good textual context to your commit
 
-**Don't**
-- Abuse the commit function to gain commits, not every change should be a commit.
-
 {% include picture.html
    image = "/assets/images/guide/contribute/propose/commit.png"
    retina = "/assets/images/guide/contribute/propose/commit@2x.png"
