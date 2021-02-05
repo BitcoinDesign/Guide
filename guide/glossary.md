@@ -53,9 +53,13 @@ Differentiate between
 
 Bitcoin with a capital *B* is typically associated with Bitcoin the protocol and payment network. It is also often used to refer to as the ecosystem as a whole when writing about it in general terms. Bitcoin with a lowercase “b” written as “bitcoin” is usually associated specifically with bitcoin as the currency.
 
+## Bitcoin Client
+
+-What is considered a Bitcoin client? I'd suggest it's a software package comprising node / base layer wallet features. [Several other](https://coin.dance/nodes) clients exist besides Bitcoin Core. -Bosch 
+
 ## Bitcoin Core
 
-A Bitcoin wallet often considered as the *reference implementation* and serves as the specification of the Bitcoin protocol. It is the continuation of Satoshi Nakamoto's original code. More on the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Bitcoin_Core).
+An open source Bitcoin project that maintains and releases Bitcoin client also referred to as "Bitcoin Core." Bitcoin Core is often considered as the *reference implementation* and serves as the specification of the Bitcoin protocol. It is the continuation of Satoshi Nakamoto's original bitcoin client released on 9th January 2009. More on the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Bitcoin_Core) and [Bitcoin Core website](https://bitcoincore.org/).
 
 ## BIP - Bitcoin improvement proposal
 

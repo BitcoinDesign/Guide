@@ -242,8 +242,8 @@ pre {
   max-width: calc(#{$content-width} - (#{$spacing-unit}));
   margin-right: auto;
   margin-left: auto;
-  padding-right: $spacing-unit / 2;
-  padding-left: $spacing-unit / 2;
+  padding-right: $spacing-unit / 3 * 2;
+  padding-left: $spacing-unit / 3 * 2;
   @include clearfix;
 
   @include media-query(large) {
