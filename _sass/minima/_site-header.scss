@@ -21,7 +21,7 @@
         }
 
         .site-title {
-            @include relative-font-size(1.25);
+            font-size: 25px;
             font-weight: $heavy-font-weight;
             margin-bottom: 0;
             line-height: 60px;
@@ -29,6 +29,16 @@
             color: var(--frontHex);
             transition: color 100ms $ease;
             outline: none;
+            white-space: nowrap;
+
+            svg {
+                width: 30px;
+                height: 30px;
+                vertical-align: middle;
+                margin-right: 5px;
+                transform: translateY(-1px);
+                fill: black;
+            }
 
             &,
             &:visited {
@@ -82,8 +92,8 @@
             margin-left: 10px;
 
             svg {
-                width: 20px;
-                height: 20px;
+                width: 44px;
+                height: 44px;
                 color: var(--frontHex);
                 transition: color 100ms linear;
             }
@@ -240,6 +250,11 @@
                 border-width: 0;
                 outline: none;
 
+                svg {
+                    width: 44px;
+                    height: 44px;
+                }
+
                 &:focus {
                     background-color: rgba($primary-color, 0.05);
                 }
@@ -323,6 +338,12 @@
     @include media-query(large) {
         .wrap {
             padding-right: 20px;
+
+            .site-title {
+                svg {
+                    display: none;
+                }
+            }
 
             .site-nav {
                 display: flex;

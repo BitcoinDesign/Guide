@@ -16,10 +16,10 @@
       font-family: $base-font-family;
       font-style: normal;
       font-weight: bold;
-      font-size: 64px;
       line-height: 100%;
       letter-spacing: -0.03em;
       transition: all 150ms $ease;
+      @include responsive('font-size', 48, 64);
 
       color: black;
       -webkit-text-fill-color: var(--title-fill-color); /* Will override color (regardless of order) */
@@ -94,6 +94,18 @@
     &.-flip-on-mobile {
       flex-direction: column;
     }
+
+    .home-banner-copy-wrapper {
+      .home-banner-copy {
+        .home-banner-logo-wrapper {
+          display: none;
+        }
+
+        h1 {
+          margin-top: 0;
+        }
+      }
+    }
   }
 
   @include media-query(large) {
@@ -120,7 +132,6 @@
       a {
         margin: 0 12px 0 0;
       }
-  
     }
 
     .home-banner-buttons-wrapper {
