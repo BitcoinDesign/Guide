@@ -14,6 +14,7 @@ image: /assets/images/guide/private-key-management/case-studies/page-case-studie
 Editor's notes
 
 A range of case study designs for bitcoin applications.
+The images for this page come from this Figma file: https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=986%3A0
 
 -->
 
@@ -45,7 +46,16 @@ Imagine a product which tries to solve the problem of quickly and easily sending
 
 A single-key scheme with [automatic cloud backup]({{ '/guide/private-key-management/single-user-schemes/#automatic-cloud-backup' | relative_url }}) might be the best choice for the majority of users in this case. For more advanced users you could offer the option to opt-out of automatic cloud backup and instead use a recovery phrase.
 
-<iframe style="border: 0px solid rgba(0, 0, 0, 0.1);" width="450" height="1000" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSRWlaxbDulsacpPQn2TTri%2FCase-study-prototypes%3Fnode-id%3D1%253A3%26viewport%3D1204%252C392%252C0.5%26scaling%3Dmin-zoom" allowfullscreen></iframe>
+{% include prototype.html
+   link = "https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=1%3A3&viewport=1357%2C576%2C1&scaling=scale-down"
+   image = "/assets/images/guide/private-key-management/case-studies/case-cash.png"
+   retina = "/assets/images/guide/private-key-management/case-studies/case-cash@2x.png"
+   mobile = "/assets/images/guide/private-key-management/case-studies/case-cash-mobile.png"
+   mobileRetina = "/assets/images/guide/private-key-management/case-studies/case-cash-mobile@2x.png"
+   alt-text = "Image of case study prototype"
+   width = 800
+   height = 500
+%}
 
 #### Design considerations 
 - Most users will be bitcoin beginners
@@ -58,7 +68,7 @@ A single-key scheme with [automatic cloud backup]({{ '/guide/private-key-managem
 - Additional user authentication to consider: biometrics, pin
 - Upgrade-path to other schemes if funds stored increase 
 
-You can find a prototype for this case study embedded above, and a Figma file with [outline designs here](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=0%3A1){:target="_blank"}.
+You can find a prototype for this case study linked in the image above, and a Figma file with [outline designs here](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=0%3A1){:target="_blank"}.
 
 ***
 
@@ -83,7 +93,16 @@ The idea here is that the user will control the wallet through an app on their m
 
 Should they lose either their main mobile device, or the purpose-built signing device they can replace the lost key (rotate in a new key) with the help of the recovery key. However, if they lose both the mobile and signing device they will not be able to recover their funds, unless they had also backed up either of the respective recovery phrases. 
 
-<iframe style="border: 0px solid rgba(0, 0, 0, 0.1);" width="450" height="1000" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSRWlaxbDulsacpPQn2TTri%2FCase-study-prototypes%3Fnode-id%3D6%253A11%26viewport%3D479%252C82%252C0.5%26scaling%3Dscale-down" allowfullscreen></iframe>
+{% include prototype.html
+   link = "https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=6%3A11&viewport=333%2C41%2C0.37497082352638245&scaling=scale-down"
+   image = "/assets/images/guide/private-key-management/case-studies/case-current.png"
+   retina = "/assets/images/guide/private-key-management/case-studies/case-current@2x.png"
+   mobile = "/assets/images/guide/private-key-management/case-studies/case-current-mobile.png"
+   mobileRetina = "/assets/images/guide/private-key-management/case-studies/case-current-mobile@2x.png"
+   alt-text = "Image of case study prototype"
+   width = 800
+   height = 500
+%}
 
 #### Design considerations
 - Suitable for monthly transactions
@@ -95,7 +114,7 @@ Should they lose either their main mobile device, or the purpose-built signing d
 - Implement thorough backup code and instructions for users
 - Usage could be simplified by having hardware device designed/customized by the software maker (compare banks and their digital token signers common in Europe)
 
-You can find a prototype for this case study embedded above, and a Figma file with [outline designs here](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=6%3A9){:target="_blank"}.
+You can find a prototype for this case study linked in the image above, and a Figma file with [outline designs here](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=6%3A9){:target="_blank"}.
 
 ***
 
@@ -110,7 +129,16 @@ The solution in this case could be a wallet that enables the user to upgrade the
 - 2-of-3 multi-key - for seasoned users, and critical amounts
 - 3-of-5 multi-key - for really serious situations and/or very high amounts
 
-<iframe style="border: 0px solid rgba(0, 0, 0, 0.1);" width="450" height="1000" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSRWlaxbDulsacpPQn2TTri%2FCase-study-prototypes%3Fnode-id%3D15%253A270%26viewport%3D1057%252C573%252C0.23897239565849304%26scaling%3Dscale-down" allowfullscreen></iframe>
+{% include prototype.html
+   link = "https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A270&viewport=861%2C146%2C0.44897958636283875&scaling=scale-down"
+   image = "/assets/images/guide/private-key-management/case-studies/case-upgradeable.png"
+   retina = "/assets/images/guide/private-key-management/case-studies/case-upgradeable@2x.png"
+   mobile = "/assets/images/guide/private-key-management/case-studies/case-upgradeable-mobile.png"
+   mobileRetina = "/assets/images/guide/private-key-management/case-studies/case-upgradeable-mobile@2x.png"
+   alt-text = "Image of case study prototype"
+   width = 800
+   height = 500
+%}
 
 #### Design considerations
 - Low friction onboarding
@@ -119,7 +147,7 @@ The solution in this case could be a wallet that enables the user to upgrade the
 #### Technical considerations
 - Need to handle many schemes; automatic cloud backups, recovery phrases, external signing devices, multi-key
 
-You can find a prototype for this case study embedded above, and a Figma file with [outline designs here](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A269){:target="_blank"}.
+You can find a prototype for this case study linked in the image above, and a Figma file with [outline designs here](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A269){:target="_blank"}.
 
 ***
 
@@ -142,6 +170,15 @@ Depending on how tailor-made or interoperable we want this setup could be we hav
 
 We are looking for a low friction, easy-to-manage solution that could work for beginners so in this case we'll go with the two mobile keys and the third key held by the co-manager.
 
-<iframe style="border: 0px solid rgba(0, 0, 0, 0.1);" width="450" height="1000" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSRWlaxbDulsacpPQn2TTri%2FCase-study-prototypes%3Fnode-id%3D15%253A824%26viewport%3D739%252C217%252C0.5%26scaling%3Dscale-down" allowfullscreen></iframe>
+{% include prototype.html
+   link = "https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A824&viewport=333%2C41%2C0.37497082352638245&scaling=scale-down"
+   image = "/assets/images/guide/private-key-management/case-studies/case-shared.png"
+   retina = "/assets/images/guide/private-key-management/case-studies/case-shared@2x.png"
+   mobile = "/assets/images/guide/private-key-management/case-studies/case-shared-mobile.png"
+   mobileRetina = "/assets/images/guide/private-key-management/case-studies/case-shared-mobile@2x.png"
+   alt-text = "Image of case study prototype"
+   width = 800
+   height = 500
+%}
 
-You can find a prototype for this case study embedded above, and a Figma file with [outline designs here](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A822){:target="_blank"}.
+You can find a prototype for this case study linked in the image above, and a Figma file with [outline designs here](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A822){:target="_blank"}.

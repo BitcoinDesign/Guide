@@ -26,12 +26,12 @@
             {%- assign first_level_url = node.url | absolute_url -%}
           {%- endif -%}
           {%- if node.has_children -%}
-            <button class="nav-list-expander" title="Toggle list"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></button>
+            <button class="nav-list-expander" aria-expanded="false" aria-controls="nav-list-{{ forloop.index }}" title="Toggle list"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></button>
           {%- endif -%}
           <a href="{{ node.url | absolute_url }}" class="nav-list-link{% if page.url == node.url %} -active{% endif %}">{{ node.title }}</a>
           {%- if node.has_children -%}
             {%- assign children_list = pages_list | where: "parent", node.title -%}
-            <ul class="nav-list ">
+            <ul class="nav-list" id="nav-list-{{ forloop.index }}">
             {%- for child in children_list -%}
               {%- unless child.nav_exclude -%}
                 <li class="nav-list-item {% if page.url == child.url or page.parent == child.title %} -active{% endif %}">

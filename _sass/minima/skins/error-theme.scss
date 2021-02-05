@@ -1,0 +1,270 @@
+.error-theme {
+  .error-box {
+    @include media-query(medium) {
+      padding: 36px;
+    }
+  }
+
+  h1 {
+    padding-top: $sp-3;
+    font-size: 4em;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .action-link {
+    color: $white;
+    text-decoration: none;
+    border-bottom: 2px dashed $white;
+
+    &:hover {
+      text-decoration: none;
+      color: $white;
+      border-bottom: 2px solid $white;
+    }
+
+    &:active {
+      color: $white;
+      border-bottom: 2px dashed $white;
+    }
+  }
+
+  .action-button {
+    margin-top: $sp-4;
+    padding: 8px 20px 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: $white;
+    border: 4px solid $white;
+    font-size: 2rem;
+    line-height: 1.2;
+    transition: all 100ms $ease;
+
+    &:hover {
+      text-decoration: none;
+      color: $blue-900;
+      border-color: $blue-900;
+    }
+
+    @include media-query(large) {
+      margin-top: $sp-10;
+    }
+  }
+
+  .message {
+    position: relative;
+    line-height: 1.4;
+    margin-top: $sp-6;
+    font-size: $large-font-size;
+    font-weight: 600;
+
+    &::before {
+      transform: translateY(-30px);
+      height: 10px;
+      width: 70px;
+      position: absolute;
+      top: -5.5%;
+      content: '';
+      background-color: $blue-900;
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: $sp-4;
+    
+    @include media-query(medium-down) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 0;
+    }
+  }
+
+  .-image-wrapper {
+    max-height: 512px;
+    max-width: 512px;
+    justify-self: end;
+    
+    @include media-query(medium-down) {
+      grid-row: 1;
+      justify-self: center;
+      width: 100%;
+      height: auto
+    }
+  }
+
+  h1 {
+    color: $blue-900;
+    
+    @include media-query(medium-down) {
+      padding-top: 0;
+    }
+  }
+  
+  p {
+    color: $blue-900;
+  }
+
+  .site-header {
+    background-color: $yellow-400;
+    color: $white;
+    border-bottom: 1px solid $white;
+
+    .wrap {
+      .nav-trigger:hover {
+        fill: $blue-900;
+      }
+
+      .nav-trigger {
+        fill: $white;
+      }
+
+      .wrap-inner {
+        background-color: $yellow-400;
+        color: $white;
+      }
+      
+      .site-title {
+        color: $white;
+
+        svg {
+          fill: white;
+        }
+
+        &:hover {
+          color: $blue-900;
+        }
+      }
+
+      .nav-search {
+        svg {
+          color: $white;
+
+          &:hover {
+            color: $blue-900;
+          }
+        }
+      }
+    }
+
+    &:not(.-active) {
+      .wrap {
+        .site-nav {
+          .page-link {
+            color: $white;
+            
+            &:hover {
+              color: $blue-900;
+              text-decoration: none;
+            }
+
+            &:active {
+              color: $blue-900;
+            }
+          }
+        }
+      }
+    }
+
+    &.-active {
+      .wrap .nav-trigger svg {
+        fill: $white;
+      }
+
+      .site-nav {
+        // background-color: $blue-900;
+      }
+    }
+  }
+
+  .page-content {
+    background-color: $yellow-400;
+  }
+
+  .site-footer {
+    background-color: $yellow-400;
+
+    .wrapper {
+      a.-logo {
+        svg {
+          path {
+            fill: transparent;
+            stroke: $white;
+          }
+        }
+
+        &:hover {
+          svg path {
+            stroke: $blue-900;
+          }
+        }
+      }
+
+      nav.social-media-list {
+        a {
+          svg path {
+            fill: $white;
+          }
+
+          &:hover {
+            svg path {
+              fill: $blue-900;
+            }
+          }
+        }
+      }
+
+      border-color: $white;
+
+      .edit-license {
+        border-color: $white;
+
+        a {
+          &:hover {
+            text-decoration: none;
+            color: $blue-900;
+          }
+        }
+      }
+
+      .footer-nav {
+        border-color: $white;
+
+        .page-link {
+          color: $white;
+        }
+      }
+      
+
+      .footer-col-wrapper,
+      .social-links {
+        @include relative-font-size(0.7375);
+        color: $white;
+      }
+    }
+  }
+
+  figcaption {
+    color: $blue-900;
+  }
+
+  a,
+  figcaption a,
+  .site-footer .wrapper a {
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      color: $white;
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: $white;
+    }
+
+    &:visited {
+      color: $white;
+    }
+  }
+}
