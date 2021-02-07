@@ -10,7 +10,7 @@ permalink: /guide/payments/
 {% include picture.html
    image = "/assets/images/guide/payments/introduction.svg"
    mobile = "/assets/images/guide/payments/introduction-mobile.svg"
-   alt-text = "Transaction builder"
+   alt-text = "A network of payment channels"
    width = 1600
    height = 600
    layout = "full-width"
