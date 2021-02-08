@@ -35,7 +35,7 @@ An overview of Bitcoin payments, common concepts and the transaction lifecycle.
 
 #### Sending bitcoin (coming soon)
 
-An introduction to how sending Bitcoin works.
+An introduction to how sending bitcoin works.
 
 ---
 
