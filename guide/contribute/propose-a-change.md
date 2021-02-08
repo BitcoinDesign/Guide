@@ -4,7 +4,7 @@ title: Propose a change
 description: Contribute to the guide by proposing an improvement you've made or fixing an issue
 nav_order: 1
 parent: Contribute to guide
-permalink: /guide/contribute/propose/
+permalink: /guide/contribute/propose-a-change/
 image: /assets/images/guide/contribute/contribute-propose-preview.jpg
 ---
 
