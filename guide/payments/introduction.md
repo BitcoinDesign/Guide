@@ -41,7 +41,7 @@ An introduction to how sending Bitcoin works.
 
 #### Receiving bitcoin (coming soon)
 
-And introduction to how receiving and requesting Bitcoin works.
+An introduction to how receiving and requesting bitcoin works.
 
 ---
 
@@ -54,4 +54,3 @@ An overview of how to help users maintain their financial privacy while using Bi
 #### Managing funds (coming soon)
 
 How to help users organize and manage their transaction data and holdings.
-
