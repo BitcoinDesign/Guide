@@ -3,7 +3,7 @@ layout: guide
 title: Payments
 description: Diving into the user experience of moving Bitcoin
 nav_order: 4
-has_children: true
+has_children: false
 permalink: /guide/payments/
 main_classes: -no-top-padding
 ---
