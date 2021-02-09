@@ -431,6 +431,10 @@ assets/images/style/example-image-wide-mobile.jpg: example-image-wide-mobile.jpg
 assets/images/style/example-image-wide-mobile@2x.jpg: example-image-wide-mobile@2x.jpg
 assets/images/submit-header-design-preview.jpg: submit-header-design-preview.jpg
 assets/mstile-150x150.png: mstile-150x150.png
+assets/images/guide/onboarding/onboarding-mobile.png: onboarding-mobile.png
+assets/images/guide/onboarding/onboarding-mobile@2x.png: onboarding-mobile@2x.png
+assets/images/guide/onboarding/onboarding@2x.png: onboarding@2x.png
+assets/images/guide/onboarding/onboarding.png: onboarding.png
 assets/images/guide/private-key-management/schemes/spectrum-mobile@2x.png: spectrum-mobile@2x.png
 assets/images/guide/private-key-management/schemes/flow-chart.png: flow-chart.png
 assets/images/guide/private-key-management/schemes/flow-chart-mobile@2x.png: flow-chart-mobile@2x.png
