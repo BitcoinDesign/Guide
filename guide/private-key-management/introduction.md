@@ -2,7 +2,7 @@
 layout: guide
 title: Private key management
 description: An overview of private key management schemes, including descriptions of  available approaches, some advice and best practices.
-nav_order: 2
+nav_order: 3
 has_children: true
 permalink: /guide/private-key-management/introduction/
 main_classes: -no-top-padding
