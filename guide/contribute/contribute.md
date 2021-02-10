@@ -39,6 +39,7 @@ Learn the basics of GitHub, an open-source collaboration platform and create you
 
 Get involved in the reviewing process. It's a fantastic entry-point for new contributors.
 
+
 ---
 
 **[Content guidelines]({{ '/guide/contribute/content-guidelines/' | relative_url }})**

@@ -60,7 +60,7 @@ In practical terms, open design can manifest itself in different ways. You might
 * be really interested in a specific topic and collaborate with multiple people and projects in related areas
 * create a design resource library (like an icon or illustration set, or a UI Kit) for others to use
 * help test and provide feedback to an open-source product
-* contribute to this Bitcoin Design Guide (hint, hint)
+* [contribute](/guide/contribute/) to this Bitcoin Design Guide (hint, hint)
 
 Whichever it may be, it is a voluntary, public contribution to efforts that you think are worthwhile. From these individual efforts, a network of people and projects emerges that is only loosely bound through personal relationships, communities, or the work itself. This is different from common corporate structures and requires individuals to think and act more independently and be comfortable with ambiguity.
 
@@ -100,7 +100,7 @@ And we value...
 
 If you are completely new to open design, it can feel tricky to find a starting point in the Bitcoin ecosystem. Not only is the technology complex, but there are also few design resources available. A good starting point is the [Contribute]({{ '/contribute' | relative_url }}) page, and here are a few extra tips to help you find your way around in general:
 
-- Join the [Bitcoin Design Community](http://bitcoindesigners.org) on Slack and see what others are discussing. A good way to get started is by asking questions and joining conversations that interest you. Our [Community Calls](https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+Community+Call) and [Design Review](https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+Design+Review+Call+) calls are also great ways to get active.
+- Join the [Bitcoin Design Community]({{site.slack_invite_url}}) on Slack and see what others are discussing. A good way to get started is by asking questions and joining conversations that interest you. Our [Community Calls](https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+Community+Call) and [Design Review](https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+Design+Review+Call+) calls are also great ways to get active.
 - Download a Bitcoin wallet and experiment with small amounts. You can also use Testnet, which allows you to use all the features, but with worthless test bitcoin. Pay attention to the experience and come up with ways to improve it.
 - Redesign a Bitcoin application of your choice. Even as a brief exercise, a redesign is a great way to develop deeper understanding of how something works and why certain decisions were made.
 - Read, watch and listen. There is a lot of great material out there to learn more about Bitcoin. Design-focused content is unfortunately not as common but expanding into related materials (like finance) might help.
@@ -108,9 +108,16 @@ If you are completely new to open design, it can feel tricky to find a starting 
 
 ## Licensing
 
-Licenses help ensure that bad actors cannot abuse this open system by taking the published work and pretend it's their own, patent it, redistribute it under a commercial license, or otherwise profit from it. A variety of licenses have been created by the open-source movement to accomodate different types of projects and situations.
+Open source licenses help ensure freedom of access and use of the shared information and resources. They also protect creators from being held liable and may ask for attribution and some publicity and trademark rights. Overall, their goal is to encourage openess, including the right to use, modify, and redistribute, even for commercial purposes. A variety of licenses have been created by the open-source movement to accomodate different types of projects and situations.
 
 This guide is published under three different licenses ([MIT license]({{site.github_repository_url}}blob/master/LICENSE-MIT), [Apache License 2.0]({{site.github_repository_url}}blob/master/LICENSE-APACHE), and [Creative Commons Attribution 4.0 International License]({{site.github_repository_url}}blob/master/LICENSE-CC-BY)). Anyone who wants to remix it, or parts of it, may choose which one to publish their work under. You can read the full license text [here]({{site.github_repository_url}}blob/master/LICENSE).
+
+## Resources
+
+- [Open-design movement](https://en.wikipedia.org/wiki/Open-design_movement) on Wikipedia
+- [Open Source Design](https://opensourcedesign.net/) community
+- [Articles on open design](https://opendesign.ushahidi.com/open-design-articles/) by [Ushahidi](https://www.ushahidi.com/)
+- [Open Source Guide](https://opensource.guide/) by [Github](https://github.com/)
 
 ---
 
