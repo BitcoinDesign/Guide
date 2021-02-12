@@ -35,7 +35,7 @@ Pull requests with the `Draft` status, or marked as **WIP (Work in progress)**, 
 
 From the list of pull requests select the one you want to review. Read the description of a pull request, and if it references an issue, check the issue to get the context. To begin the review process click on the `Files Changed` tab.
 
-The tab is split into two sections. The section on the left represents the current code/content. The section on the right represents the proposed changes.
+The tab is split into two sections. The section on the left represents the current code/content. The section on the right represents the proposed changes. If you see the single column screen, you can switch from unified to split view by clicking on the gear icon. 
 
 To begin reviewing, browse through the changed files from top to bottom. When you identify something that requires a comment or suggestion, click on the `+` icon in front of the line you want to comment on, and toggle the comment window and leave your comment.
 
@@ -72,7 +72,7 @@ When you're done with leaving individual feedback, you can submit it. Click on t
 **Do**
 
 - Leave a suggestion instead of general feedback whenever possible, especially for typo and grammar-related feedback
-- Be humble and humble when reviewing
+- Be humble and constructive when reviewing
 - Be understanding and welcoming towards new contributors
 - If something is not clear enough, feel free to ask questions to the pull request author
 
