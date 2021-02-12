@@ -51,8 +51,12 @@ With Bitcoin being so new and different, a big focus of the guide lies on provid
 - [Onboarding]({{ '/guide/onboarding/introduction/' | relative_url }})  goes in-depth on the delicate process of introducing new users to bitcoin and how to use specific products and features
 - [Private key management]({{ '/guide/private-key-management/introduction/' | relative_url }}) provides extensive details and guidance on the many techniques for storing private keys
 - [Payments]({{ '/guide/payments/' | relative_url }}) deals with the complexities of sending and receiving bitcoin across various use cases
+<<<<<<< HEAD
 - [Foundations]({{ '/guide/foundations/' | relative_url }}) highlights principles, best practices and other useful information for designing Bitcoin products
 - [Case studies]({{ '/guide/case-studies/' | relative_url }}) explores approaches to diverse uses cases with wireframes, designs and prototypes.
+=======
+- [Foundations]({{ '/guide/foundations/' | relative_url }}) basics and best practices and other useful information for designing Bitcoin products
+>>>>>>> Clean up use of principles word in Foundations description
 - [Glossary]({{ '/guide/glossary/' | relative_url }}) explains common Bitcoin terminology, from Address to ZPUB.
 
 ## How to use the guide

@@ -10,7 +10,7 @@ image: /assets/images/guide/foundations/foundations-preview.jpg
 
 # Foundations
 
-Learn about some of the basic principles to keep in mind when designing Bitcoin applications.
+Learn about some of the basics to keep in mind when designing Bitcoin applications.
 
 ---
 
