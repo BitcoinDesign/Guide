@@ -41,24 +41,24 @@ To begin reviewing, browse through the changed files from top to bottom. When yo
 
 {% include picture.html
    image = "/assets/images/guide/contribute/review/review-pull-request-comment.gif"
-   retina = "/assets/images/guide/contribute/review/review-pull-request-comment.gif"
+   retina = "/assets/images/guide/contribute/review/review-pull-request-comment@2x.gif"
    mobile = "/assets/images/guide/contribute/review/review-pull-request-comment.gif"
    mobileRetina = "/assets/images/guide/contribute/review/review-pull-request-comment.gif"
-   alt-text = "pull-request-comment"
-   width = 1438
-   height = 709
+   alt-text = "Start a review via a comment"
+   width = 800
+   height = 394
 %}
 
 If you have a concrete `suggestion` for a change, you can make a suggestion. To do so, click the suggestion icon, or use `Ctrl+G` or `cmd+G`. If your direct suggestion is accepted, it will count as a commit and you will be credited as a co-author of the commit.
 
 {% include picture.html
    image = "/assets/images/guide/contribute/review/review-pull-request-suggest.gif"
-   retina ="/assets/images/guide/contribute/review/review-pull-request-suggest.gif"
+   retina ="/assets/images/guide/contribute/review/review-pull-request-suggest@2x.gif"
    mobile ="/assets/images/guide/contribute/review/review-pull-request-suggest.gif"
    mobileRetina ="/assets/images/guide/contribute/review/review-pull-request-suggest.gif"
-   alt-text = "pull-request-comment"
-   width = 1438
-   height = 709
+   alt-text = "Add a comment to a review"
+   width = 800
+   height = 394
 %}
 
 When you're done with leaving individual feedback, you can submit it. Click on the `Leave a review` button in the upper right corner. There are three types of feedback you can leave:
@@ -94,7 +94,7 @@ Once you visited the URL, locate the page(s) to which proposed changes refer and
 
 {% include picture.html
    image = "/assets/images/guide/contribute/review/test-pull-request-netlify.png"
-   alt-text = "netlify-test"
+   alt-text = "How to find the Netlify preview link for a pull request"
    width = 973
    height = 368
 %}
