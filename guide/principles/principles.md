@@ -18,17 +18,16 @@ The key principles of designing for Bitcoin
 
 # Bitcoin Design Principles
 
-As a new technology, Bitcoin offers the opportunity of an open financial system without intermediaries. To make this a reality, we encourage everyone that is working on products to deliberately support the core principles of designing for Bitcoin:
+As a new technology, Bitcoin offers the opportunity of an open financial system without intermediaries. To make this a reality, we encourage everyone that is working on products to deliberately support the core principles of designing for Bitcoin. Some of these come from the technology itself, and others from the behaviour and ethos of the community. Although every use case and product is different, all applications should strive to follow these principles. Diverging from them should only be done with very good reason.
 
-- Decentralization
-- Inclusion
-- Transparency
-- Self-custody
-- Security
-- Privacy
-- Interoperability
 
-Some of these come from the technology itself, and others from the behaviour and ethos of the community. Although every use case and product is different, all applications should strive to follow these principles. Diverging from them should only be done with very good reason.
+- [Decentralization](#decentralization)
+- [Inclusion](#inclusion)
+- [Transparency](#transparency)
+- [Self-custody](#self-custody)
+- [Security](#security)
+- [Privacy](#privacy)
+- [Interoperability](#interoperability)
 
 ---
 
@@ -37,6 +36,7 @@ Some of these come from the technology itself, and others from the behaviour and
 Unlike traditional banking systems, the Bitcoin economy does not require new users to seek permission from anyone. Bitcoin has no central point of control. No one person or entity is in charge. Connecting to any node on the network gives you the same rights and responsibilities, which also ensures that there is no single point of failure.
 
 *Build products that are permissive in terms of what users can do with Bitcoin.*
+
 *Have fall-back options for connections to the network.*
 
 **Do**
@@ -57,6 +57,7 @@ There are no background checks, credit checks, or gatekeepers to Bitcoin. A Keny
 And while Bitcoin is already widely used by a large number of people, it pales in comparison with the billions that will use it in the future. Without dumbing down or reducing the possibilities we need to design products that are prepared for people that are new to Bitcoin. This means using plain and ordinary language, explaining things in the context where they are needed, not overwhelming people with technical detail, and more.
 
 *Provide equal and direct access to the Bitcoin network, without middlemen and exclusive requirements.*
+
 *Design Bitcoin products that are usable by the widest range of people possible.*
 
 **Do**
@@ -77,6 +78,7 @@ And while Bitcoin is already widely used by a large number of people, it pales i
 While an open and decentralized financial system that lets people connect directly with it is great, it does put a lot of burden on the users to pick a product they trust, and that works for them. We can make this easier by freely sharing information about how our products work, what technologies they use and rely on and so forth. Let people verify that your claims are true. It is also very important to be open about what risks the user might be taking on with self-custody, under which scenarios they might lose access to their funds and best practices for avoiding this. 
 
 *Be open and transparent with how your product works.*
+
 *Explain what risks the user is taking on, and how best to mitigate them.*
 
 **Do**
@@ -136,6 +138,7 @@ A common misconception of Bitcoin is that it provides complete anonymity and pri
 The Bitcoin network doesn’t need to know your name for you to use it. Strive to collect as little personal information as possible about your users. When it is absolutely required to provide the product services, collect only the bare minimum and consider if and when this can be discarded when no longer necessary. If you do collect personal information, be transparent about why and how you will use and store it.
 
 *Minimize collection of personal information.*
+
 *Maximize financial transaction privacy.*
 
 **Do**
@@ -153,6 +156,7 @@ The Bitcoin network doesn’t need to know your name for you to use it. Strive t
 Bitcoin is an open-source protocol, operated in a decentralized manner. This has led to a number of standards being developed for products building on the protocol to be compatible. It should be easy to switch and move your Bitcoin wallet to a different application, should you wish. Making sure that your product supports as many of these standards as possible is best practice and builds trust.
 
 *No lock-in, users should be able to port wallets and data.*
+
 *Maximum compatibility with open standards.*
 
 **Do**
