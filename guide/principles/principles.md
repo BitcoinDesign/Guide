@@ -42,7 +42,7 @@ Unlike traditional banking systems, the Bitcoin economy does not require new use
 **Do**
 - Manage your own private keys
 - Run a full Bitcoin node when possible
-- Alternatively, use a light client with the p2p network (BIP157) using compact block filters (BIP158) 
+- Alternatively, use a light client with the p2p network [BIP157]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki'}}) using compact block filters [BIP158]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki'}}) 
 - Offer the user choice of what node to connect to
 
 **Don't**
@@ -67,7 +67,7 @@ And while Bitcoin is already widely used by a large number of people, it pales i
 - Treat users with impairments, or who rely on assistive technologies, as first-class citizens
 
 **Don't**
-- Introduce requirements that might exclude many people, for example by building only for high end hardware, requiring US KYC etc
+- Introduce requirements that might exclude many people, for example by building only for high-end hardware, requiring US KYC (Know-your-customer) information etc
 - Avoid technical detail that is not required knowledge, or technical terms like seed phrase XPUBs, mnemonics etc.
 - Do not put all education up front and expect people to read and remember it
 
@@ -144,7 +144,7 @@ The Bitcoin network doesn’t need to know your name for you to use it. Strive t
 **Do**
 - Minimize the personal information you collect
 - Avoid address reuse
-- Embrace privacy-preserving options when relevant (link to other page: running a full node, using compact block filters, tor, LN, privacy-oriented coin selection, schnorr, payjoin, coinswap, etc.)
+- Embrace privacy-preserving options when relevant (running a full node, compact block filters, Tor, Lightning Network, coin selection, schnorr signatures, payjoin, coinswap, etc.)
 
 **Don't**
 - Collect and store personal information not required for the functionality of your product
@@ -153,7 +153,7 @@ The Bitcoin network doesn’t need to know your name for you to use it. Strive t
 
 ## Interoperability
 
-Bitcoin is an open-source protocol, operated in a decentralized manner. This has led to a number of standards being developed for products building on the protocol to be compatible. It should be easy to switch and move your Bitcoin wallet to a different application, should you wish. Making sure that your product supports as many of these standards as possible is best practice and builds trust.
+Bitcoin is an open-source protocol, operated in a decentralized manner. This has led to a number of standards being developed for products building on the protocol to be compatible. It should be easy to switch and move your Bitcoin wallet to a different application, should you wish. Making sure that your product supports as many of these standards as possible is best practice and builds trust. More on [wallet interoperability]({{ '/guide/foundations/wallet-interoperability/' | relative_url }}). 
 
 *No lock-in, users should be able to port wallets and data.*
 
