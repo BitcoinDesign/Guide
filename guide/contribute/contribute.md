@@ -22,14 +22,14 @@ We use the #bitcoin-design-guide channel in the [Bitcoin Design Slack community]
 
 ---
 
-**[Github](https://github.com/BitcoinDesign/Guide)**
+**[GitHub](https://github.com/BitcoinDesign/Guide)**
 
 We use Github to host the content of the guide. [Issues](https://github.com/BitcoinDesign/Guide/issues) are used to post ideas for improvements, and proposed changes are posted as [Pull Requests](https://github.com/BitcoinDesign/Guide/pulls).
 For some ideas we use [Discussions](https://github.com/BitcoinDesign/Guide/discussions).
 
 ---
 
-**[Create your first pull request]({{ '/guide/contribute/propose.md/' | relative_url }})**
+**[Create your first pull request]({{ '/guide/contribute/propose-a-change/' | relative_url }})**
 
 Learn the basics of GitHub, an open-source collaboration platform and create your first pull request.
 
