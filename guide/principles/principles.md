@@ -41,7 +41,7 @@ Unlike traditional banking systems, the Bitcoin economy does not require new use
 **Do**
 - Manage your own private keys
 - Run a full Bitcoin node when possible
-- Alternatively, use a light client with the p2p network [BIP157]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki'}}) using compact block filters [BIP158]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki'}}) 
+- Alternatively, use a light client with the [p2p network]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki'}}) using [compact block filters]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki'}}) 
 - Offer the user choice of what node to connect to
 
 **Don't**
