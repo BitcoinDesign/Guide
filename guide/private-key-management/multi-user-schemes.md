@@ -87,4 +87,4 @@ Few tailor-made products exist for shared wallets, but any wallet application th
 
 ---
 
-Next up, common [principles]({{ '/guide/private-key-management/principles/' | relative_url }}) we should strive to follow.
+OK, let's have a look at some [case studies]({{ '/guide/private-key-management/case-studies/' | relative_url }}).
