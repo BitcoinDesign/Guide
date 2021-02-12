@@ -21,9 +21,9 @@ Reviewing is a great entry point for new contributors. By inspecting others' wor
 The review process requires only a GitHub account and no additional software. It's good practice to read our guidelines that will help you better evaluate proposed changes.
 
 1. Create a [GitHub account](https://github.com/)
-2. Read the [content guidelines](content-guidelines.md)
-3. Read the [illustration guidelines](illustration-guidelines.md)
-4. Read the [formatting guidelines](formatting.md)
+2. Read the [content guidelines]({{ '/guide/contribute/content-guidelines/' | relative_url }})
+3. Read the [illustration guidelines]({{ '/guide/contribute/illustration-guidelines/' | relative_url }})
+4. Read the [formatting guidelines]({{ '/guide/contribute/formatting/' | relative_url }})
 
 ### Identifying what to review
 
@@ -35,7 +35,7 @@ Pull requests with the `Draft` status, or marked as **WIP (Work in progress)**, 
 
 From the list of pull requests select the one you want to review. Read the description of a pull request, and if it references an issue, check the issue to get the context. To begin the review process click on the `Files Changed` tab.
 
-The tab is split into two sections. The section on the left represents the current code/content. The section on the right represents the proposed changes. If you see the single column screen, you can switch from unified to split view by clicking on the gear icon. 
+The tab is split into two sections. The section on the left represents the current code/content. The section on the right represents the proposed changes. If you see the single column screen, you can switch from unified to split view by clicking on the gear icon.
 
 To begin reviewing, browse through the changed files from top to bottom. When you identify something that requires a comment or suggestion, click on the `+` icon in front of the line you want to comment on, and toggle the comment window and leave your comment.
 
