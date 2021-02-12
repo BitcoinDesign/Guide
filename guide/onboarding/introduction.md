@@ -39,7 +39,11 @@ Remember: Onboarding should not be a crutch for bad design. Avoid trying to expl
 
 ---
 
+<<<<<<< HEAD
 [**Getting to know your users**]({{ '/guide/onboarding/getting-to-know-your-users/' | relative_url }})
+=======
+**Getting to know your users (coming soon)**
+>>>>>>> Remove Principles section from Onboarding chapter intro page cc: @ConorOkus
 
 This section will give you some tips on how best to understand and develop knowledge about your users.
 
