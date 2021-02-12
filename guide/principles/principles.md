@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Principles
+title: Bitcoin design principles
 description: The key principles to follow when designing Bitcoin products.
 nav_order: 2
 has_children: false
@@ -16,7 +16,7 @@ The key principles of designing for Bitcoin
 
 -->
 
-# Bitcoin Design Principles
+# Bitcoin design principles
 
 As a new technology, Bitcoin offers the opportunity of a decentralized open financial system without intermediaries. To make this a reality, we encourage everyone that is working on products to deliberately support the core principles of designing for Bitcoin. Some of these come from the technology itself, and others from the behaviour and ethos of the community. Although every use case and product is different, all applications should strive to follow these principles. Diverging from them should only be done with very good reason.
 
