@@ -37,7 +37,7 @@ Here is an initial outline that will be updated as needed, content that is live 
     *   Technology primer
     *   Software overview
     *   Hardware overview
-*   Bitcoin design principles (to be discussed)
+*   [Bitcoin design principles](https://bitcoin.design/guide/principles/principles/)
     *   Decentralization
     *   Self-sovereignty
     *   Security
