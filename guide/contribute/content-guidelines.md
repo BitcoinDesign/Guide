@@ -2,7 +2,7 @@
 layout: guide
 title: Content guidelines
 description: Writing tips for authors of the Bitcoin Design Guide.
-nav_order: 2
+nav_order: 3
 parent: Contribute to guide
 permalink: /guide/contribute/content-guidelines/
 image: /assets/images/guide/contribute/content-guidelines-preview.jpg
@@ -64,16 +64,6 @@ The Design Guide is a set of recommended solutions and practices based on our re
 ### Show, don’t tell
 
 When it's possible, try to provide an example or a visual instead of highly-technical or text-heavy explanation. Feel free to reference other software using screenshots.
-
-##### Do
-
-*The user’s wallet currently has a balance of 2.845 BTC, and is comprised of 4 UTXOs:*
-* *1 BTC from Ed*
-* *0.5 BTC from Ed*
-* *0.845 BTC from Jane*
-* *0.5 from Joe*
-*These UTXOs can also be grouped into “clusters” from the individual senders (see diagram)*.
-![](assets/images/payments/cluster-options.png)
 
 ### Use the right medium
 
