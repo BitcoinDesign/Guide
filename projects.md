@@ -75,6 +75,15 @@ projects:
         link: https://electrum.org/#community
 ---
 
+<!--
+
+Editor's notes
+
+Header illustration source:
+https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=1127%3A7710
+
+-->
+
 {% include picture.html
    image = "/assets/images/projects/projects.jpg"
    retina = "/assets/images/projects/projects@2x.jpg"
