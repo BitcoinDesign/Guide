@@ -2,6 +2,7 @@
 layout: guide
 title: Onboarding
 description: An overview of some of the concepts to consider when building onboarding experiences.
+has_children: true
 nav_order: 2
 permalink: /guide/onboarding/introduction/
 main_classes: -no-top-padding
