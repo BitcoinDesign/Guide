@@ -1,6 +1,10 @@
 article.guide {
   position: relative;
 
+  > figure:first-child {
+    margin-top: 0;
+  }
+
   a.video-link,
   a.prototype-link {
     position: relative;
