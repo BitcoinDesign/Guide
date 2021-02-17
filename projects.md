@@ -14,8 +14,8 @@ projects:
     links:
       - name: Site
         link: https://bitcoin.design/guide
-      - name: Repository
-        link: https://github.com/BitcoinDesign/Guide
+      - name: How to contribute
+        link: https://bitcoin.design/guide/contribute/
   - name: Bitcoin Core
     description: One of the oldest and best-maintained Bitcoin clients.
     image: /assets/images/contribute/bitcoin-core.svg
@@ -24,6 +24,22 @@ projects:
         link: https://bitcoincore.org/
       - name: Contribute
         link: https://bitcoincore.org/en/contribute/
+  - name: Specter
+    description: A watch-only coordinator for multi-signature and single-key Bitcoin wallets.
+    image: /assets/images/contribute/specter.png
+    links:
+      - name: Site
+        link: https://specter.solutions/
+      - name: Collaboration
+        link: https://github.com/BitcoinDesign/Meta/issues/69
+  - name: Zeus
+    description: Manage your Bitcoin and Lightning node on the go.
+    image: /assets/images/contribute/zeus.png
+    links:
+      - name: Site
+        link: https://zeusln.app/
+      - name: Collaboration
+        link: https://github.com/BitcoinDesign/Meta/issues/70
   - name: BTCPay Server
     description: BTCPay Server is a self-hosted, open-source bitcoin payment processor, built and maintained by a world-wide community of passionate contributors.
     image: /assets/images/contribute/btcpay.svg
@@ -32,7 +48,7 @@ projects:
         link: https://btcpayserver.org/
       - name: Contribute
         link: https://docs.btcpayserver.org/Contribute/
-  - name: photon-lib
+  - name: Photon SDK
     description: A high level library for building bitcoin wallets with react native.
     image: /assets/images/contribute/photon-lib.png
     links:
@@ -97,7 +113,13 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 
 # Projects
 
-These are some of the bitcoin projects some of us are either involved in, and projects we think highly of. If you are interested in helping out, you can either ask directly in the communities of those projects, or reach out in our Slack to see if there are already ongoing efforts.
+Here we highlight some (not all) Bitcoin projects we care about, for a few reasons:
+
+- Some projects we have a more formal [collaboration](https://github.com/BitcoinDesign/Meta/blob/master/Collaboration.md) with (see our [current collaborations](https://github.com/BitcoinDesign/Meta/projects/2))
+- Some of us are individually involved with a few of the projects
+- And there are some projects we think highly of but have no direct involvement
+
+If you are interested in helping out, check the links for each project, ask directly in the communities of those projects, or reach out in our [Slack]({{ site.slack_invite_url }}).
 
 <div class="grid projects">
 {% for item in page.projects %}
