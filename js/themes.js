@@ -66,7 +66,7 @@ let themes = [
     backgroundImagePathRetina: 'url("/assets/images/home/banner/header-theme-2-3d-abstract@2x.png")',
     backgroundImagePathMobile: 'url("/assets/images/home/banner/header-theme-2-3d-abstract-mobile.png")',
     backgroundImagePathMobileRetina: 'url("/assets/images/home/banner/header-theme-2-3d-abstract-mobile@2x.png")',
-    backgroundImageColor: "##64EBFC",
+    backgroundImageColor: "#64EBFC",
     flipLayoutOnMobile: false,
     author: "Gabor Magyar",
     authorLink: "https://github.com/BitcoinDesign/Guide/issues/143"   
