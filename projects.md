@@ -1,11 +1,12 @@
 ---
-layout: page
+layout: guide
 title: Projects
 description: Projects some of us are involved in or think highly of.
 permalink: /projects/
 main_nav: true
 nav_order: 3
-image: /assets/images/projects-preview.jpg
+main_classes: -no-top-padding
+image: /assets/images/projects/projects-preview.jpg
 projects:
   - name: Bitcoin Design Guide
     description: The primary project we are working on, a resource for designers to create better Bitcoin products faster.
@@ -89,6 +90,28 @@ projects:
       - name: Community
         link: https://electrum.org/#community
 ---
+
+<!--
+
+Editor's notes
+
+Header illustration source:
+https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=1127%3A7710
+
+-->
+
+{% include picture.html
+   image = "/assets/images/projects/projects.jpg"
+   retina = "/assets/images/projects/projects@2x.jpg"
+   mobile = "/assets/images/projects/projects-mobile.jpg"
+   mobileRetina = "/assets/images/projects/projects-mobile@2x.jpg"
+   alt-text = "Strong handshake"
+   width = 1600
+   height = 900
+   layout = "full-width"
+%}
+
+# Projects
 
 Here we highlight some (not all) Bitcoin projects we care about, for a few reasons:
 

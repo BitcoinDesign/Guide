@@ -64,10 +64,11 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
-    grid-gap: 4rem 4rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 3rem 3rem;
+
     @include media-query(small) {
-      grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       grid-gap: 1rem 1rem;
     }
 }
