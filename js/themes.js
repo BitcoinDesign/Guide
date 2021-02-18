@@ -46,6 +46,30 @@ let themes = [
     flipLayoutOnMobile: false,
     author: "Alexa Aker",
     authorLink: "https://github.com/BitcoinDesign/Guide/issues/45"
+  },
+  {
+    // 3D abstract
+    copyBackgroundColor: "#64EBFC",
+    bitcoinLogoPath: "/assets/banner-bitcoin-logo.svg",
+    bitcoinLogoFillColor: "#F7931A",
+    bitcoinLogoOutlineColor: "",
+    titleFillColor: "#F7931A",
+    titleOutlineColor: "#F7931A",
+    descriptionFillColor: "#000",
+    button1FillColor: "#F7931A",
+    button1OutlineColor: "#F7931A",
+    button1LabelFillColor: "#FFF",
+    button2FillColor: "#F7931A",
+    button2OutlineColor: "#F7931A",
+    button2LabelFillColor: "#FFF",
+    backgroundImagePath: 'url("/assets/images/home/banner/header-theme-2-3d-abstract.png")',
+    backgroundImagePathRetina: 'url("/assets/images/home/banner/header-theme-2-3d-abstract@2x.png")',
+    backgroundImagePathMobile: 'url("/assets/images/home/banner/header-theme-2-3d-abstract-mobile.png")',
+    backgroundImagePathMobileRetina: 'url("/assets/images/home/banner/header-theme-2-3d-abstract-mobile@2x.png")',
+    backgroundImageColor: "#64EBFC",
+    flipLayoutOnMobile: false,
+    author: "Gabor Magyar",
+    authorLink: "https://github.com/BitcoinDesign/Guide/issues/143"   
   }
 ];
 
