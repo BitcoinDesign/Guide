@@ -31,4 +31,12 @@
             }
         }
     }
+
+    @include media-query(small) {
+      .grid-item {
+        + .grid-item {
+            margin-top: $spacing-unit;
+        }
+      }
+    }
 }
