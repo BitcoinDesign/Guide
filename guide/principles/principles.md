@@ -54,7 +54,7 @@ Unlike traditional banking systems, the Bitcoin economy does not require new use
 
 There are no background checks, credit checks, or gatekeepers to Bitcoin. A Kenyan farmer has the same access to Bitcoin as a Wall Street trader. 
 
-And while Bitcoin is already widely used by a large number of people, it pales in comparison with the billions that will use it in the future. Without dumbing down or reducing the possibilities we need to design products that are prepared for people that are new to Bitcoin. This means using plain and ordinary language, explaining things in the context where they are needed, not overwhelming people with technical detail, and more.
+And while Bitcoin is already widely used by a large number of people, it pales in comparison with the billions that will use it in the future. We need to design products that are prepared for people new to Bitcoin, without reducing the possibilities. This means using plain and familiar language, explaining things in the context where they are needed, not overwhelming people with technical detail, and more.
 
 *Provide equal and direct access to the Bitcoin network, without middlemen and exclusive requirements.* <br>
 *Design Bitcoin products that are usable by the widest range of people possible.*
