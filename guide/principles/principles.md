@@ -105,7 +105,7 @@ Our existing mental models of access to digital services are usernames and passw
 
 ## Security
 
-Self-custody means that the end user is ultimately responsible for keeping their funds and private keys safe. They can only do that if we provide them with good, appropriate tools and awareness of good practice. It is therefore our responsibility as designers and makers to really take their security seriously and make Bitcoin products that are as secure as possible by default. We should strive for no loss of funds, regardless of whether this happens through negligence or theft. 
+Self-custody means that the end user is ultimately responsible for keeping their funds and private keys safe. They can only do that if we provide them with good, appropriate tools and awareness of best practices. It is therefore our responsibility as designers and makers to really take their security seriously and make Bitcoin products that are as secure as possible by default. We should strive for no loss of funds, regardless of whether this happens through negligence or theft. 
 
 Security is especially important when onboarding people new to Bitcoin where solutions that might be fine for advanced users might backfire for beginners. New users are likely to start by storing small amounts until they get comfortable with self-custody. A scheme suited for storing large amounts of funds is likely overkill and scary to a beginner, so the concept of progressive security is a good idea. This could let a user upgrade their security and private key management scheme as their savings grow. 
 
