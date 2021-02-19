@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Bitcoin design principles
+title: Principles
 description: The key principles to follow when designing Bitcoin products.
 nav_order: 2
 has_children: false
