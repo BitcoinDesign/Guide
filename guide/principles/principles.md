@@ -33,7 +33,7 @@ As a new technology, Bitcoin offers the opportunity of a decentralized open fina
 
 ## Decentralization
 
-> Encourage the running of your own bitcoin node and connecting directly to the network.
+> Encourage users to run their own bitcoin node and connect directly to the network
 
 Unlike traditional banking systems, the Bitcoin economy does not require new users to seek permission from anyone. Bitcoin has no central point of control. No one person or entity is in charge. Connecting to any [node](({{ '/guide/glossary/#node/ | relative_url }}) on the network gives you the same rights and responsibilities, which also ensures that there is no single point of failure.
 
@@ -51,7 +51,7 @@ Unlike traditional banking systems, the Bitcoin economy does not require new use
 
 ## Inclusion
 
-> Provide equal access regardless of the user's location, ability and prior knowledge
+> Provide equal access regardless of the user's location, language, ability and prior knowledge of bitcoin
 
 There are no background checks, credit checks, or gatekeepers to Bitcoin. A Kenyan farmer has the same access to Bitcoin as a Wall Street trader. 
 
@@ -91,7 +91,7 @@ While an open and decentralized financial system that lets people connect direct
 
 ## Self-custody
 
-> Give users control of their private keys, with no risk for seizure or freezing of their funds
+> Let users control their private keys, with no risk for seizure or freezing of funds
 
 Our existing mental models of access to digital services are usernames and passwords, controlled by a company that has custody of your funds and data. With everyone having direct access to the Bitcoin network without middlemen, there is no longer a need for people to delegate control of their funds. While it comes with greater responsibility, it is self-custody that enables the open financial system of peer-to-peer transactions.
 
@@ -114,7 +114,7 @@ Security is especially important when onboarding people new to Bitcoin where sol
 
 A big part of security is also education and awareness, protecting users from bad actors and potentially their own bad behavior. Bad actors may already know what most users don’t, and be aware of new vulnerabilities. It is unrealistic to expect beginners to take in all the knowledge acquired by advanced users of several years in one go, for example while onboarding to a product. We should therefore consider how to continuously educate and level up user awareness of best practices and risks.
 
-Security can also be a feeling. A product that is polished, good looking, easy to use and transparently communicates how it works can help users feel more secure compared to one with the exact same security measures that lack these soft qualities.
+Security can also be a feeling. A product that is polished, good looking, easy to use and transparently communicates how it works can help users feel more secure. Especialy compared to one with the exact same security measures that lack these qualities.
 
 
 **Do**
