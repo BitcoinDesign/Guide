@@ -112,6 +112,8 @@ Security is especially important when onboarding people new to Bitcoin where sol
 
 A big part of security is also education and awareness, protecting users from bad actors and potentially their own bad behavior. Bad actors may already know what most users don’t, and be aware of new vulnerabilities. It is unrealistic to expect beginners to take in all the knowledge acquired by advanced users of several years in one go, for example while onboarding to a product. We should therefore consider how to continuously educate and level up user awareness of best practices and risks.
 
+Security can also be a feeling. A product that is polished, good looking, easy to use and transparently communicates how it works can help users feel more secure compared to one with the exact same security measures that lack these soft qualities.
+
 
 *Provide appropriate and progressive security for all types of users.*
 
@@ -127,6 +129,7 @@ A big part of security is also education and awareness, protecting users from ba
 **Don't**
 - Blame the user for losing funds
 - Expect beginners to implement best practice backup strategies
+- Underestimate the added *feeling* of security that can come from well polished products
 
 ---
 
