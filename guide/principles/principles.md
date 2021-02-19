@@ -67,7 +67,7 @@ And while Bitcoin is already widely used by a large number of people, it pales i
 
 **Don't**
 - Introduce requirements that might exclude many people, for example by building only for high-end hardware, requiring US KYC (Know-your-customer) information etc
-- Avoid technical detail that is not required knowledge, or technical terms like seed phrase XPUBs, mnemonics etc.
+- Add technical detail that is not required knowledge, or technical terms like seed phrase XPUBs, mnemonics etc.
 - Do not put all education up front and expect people to read and remember it
 
 ---
