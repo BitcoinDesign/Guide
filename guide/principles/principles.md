@@ -46,6 +46,7 @@ Unlike traditional banking systems, the Bitcoin economy does not require new use
 
 **Don't**
 - Introduce a single point of failure between the user and the Bitcoin network
+- Build products that stop working if the project shuts down
 
 ---
 
