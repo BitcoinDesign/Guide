@@ -80,7 +80,7 @@ While an open and decentralized financial system that lets people connect direct
 *Explain what risks the user is taking on, and how best to mitigate them.*
 
 **Do**
-- Build your product as open source when possible
+- Build your product as open-source when possible
 - Let people verify, without having to trust
 - Be clear about what risk the user is taking on, and how they can lose access to their funds 
 
