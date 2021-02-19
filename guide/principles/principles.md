@@ -91,7 +91,7 @@ While an open and decentralized financial system that lets people connect direct
 
 ## Self-custody
 
-Our existing mental models of access to digital services are usernames and passwords, controlled by a company that has custody of your funds and data. With everyone having direct access to the Bitcoin network without middlemen, there is no longer a need for people to delegate control of their funds. While it comes with greater responsibility, it is self-custody that really enables the open financial system of peer-to-peer transactions.
+Our existing mental models of access to digital services are usernames and passwords, controlled by a company that has custody of your funds and data. With everyone having direct access to the Bitcoin network without middlemen, there is no longer a need for people to delegate control of their funds. While it comes with greater responsibility, it is self-custody that enables the open financial system of peer-to-peer transactions.
 
 *Give end users full control of their funds.*
 
