@@ -33,7 +33,7 @@ As a new technology, Bitcoin offers the opportunity of a decentralized open fina
 
 ## Decentralization
 
-> Encourage users to run their own bitcoin node and connect directly to the network
+> Encourage users to run their own Bitcoin node and connect directly to the network
 
 Unlike traditional banking systems, the Bitcoin economy does not require new users to seek permission from anyone. Bitcoin has no central point of control. No one person or entity is in charge. Connecting to any [node]({{ '/guide/glossary/#node/' | relative_url }}) on the network gives you the same rights and responsibilities, which also ensures that there is no single point of failure.
 
@@ -51,7 +51,7 @@ Unlike traditional banking systems, the Bitcoin economy does not require new use
 
 ## Inclusion
 
-> Provide equal access regardless of the user's location, language, ability and prior knowledge of bitcoin
+> Provide equal access regardless of the user's location, language, ability and prior knowledge of Bitcoin
 
 There are no background checks, credit checks, or gatekeepers to Bitcoin. A Kenyan farmer has the same access to Bitcoin as a Wall Street trader. 
 
