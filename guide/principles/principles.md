@@ -33,10 +33,9 @@ As a new technology, Bitcoin offers the opportunity of a decentralized open fina
 
 ## Decentralization
 
-Unlike traditional banking systems, the Bitcoin economy does not require new users to seek permission from anyone. Bitcoin has no central point of control. No one person or entity is in charge. Connecting to any [node](({{ '/guide/glossary/#node/ | relative_url }}) on the network gives you the same rights and responsibilities, which also ensures that there is no single point of failure.
+> Encourage the running of your own bitcoin node and connecting directly to the network.
 
-*Build products that are permissive in terms of what users can do with Bitcoin.* <br>
-*Have fall-back options for connections to the network.*
+Unlike traditional banking systems, the Bitcoin economy does not require new users to seek permission from anyone. Bitcoin has no central point of control. No one person or entity is in charge. Connecting to any [node](({{ '/guide/glossary/#node/ | relative_url }}) on the network gives you the same rights and responsibilities, which also ensures that there is no single point of failure.
 
 **Do**
 - Manage your own [private keys](({{ '/guide/private-key-management/introduction/ | relative_url }})
@@ -52,14 +51,15 @@ Unlike traditional banking systems, the Bitcoin economy does not require new use
 
 ## Inclusion
 
+> Provide equal access regardless of the user's location, ability and prior knowledge
+
 There are no background checks, credit checks, or gatekeepers to Bitcoin. A Kenyan farmer has the same access to Bitcoin as a Wall Street trader. 
 
 And while Bitcoin is already widely used by a large number of people, it pales in comparison with the many more that are likely to use it in the future. We need to design products that are prepared for people new to Bitcoin, without reducing the possibilities. This means using plain and familiar language, explaining things in the context where they are needed, not overwhelming people with technical detail, and more.
 
-*Provide equal and direct access to the Bitcoin network, without middlemen and exclusive requirements.* <br>
-*Design Bitcoin products that are usable by the widest range of people possible.*
-
 **Do**
+- Provide equal and direct access to the Bitcoin network, without middlemen and exclusive requirements
+- Design Bitcoin products that are usable by the widest range of people possible
 - Use plain language that people new to Bitcoin can understand regardless of prior knowledge
 - Use more languages than just english
 - Educate in place, when people are presented with a new concept
@@ -74,10 +74,9 @@ And while Bitcoin is already widely used by a large number of people, it pales i
 
 ## Transparency
 
-While an open and decentralized financial system that lets people connect directly with it is great, it does put a lot of burden on the users to pick a product they trust, and that works for them. We can make this easier by freely sharing information about how our products work, what technologies they use and rely on and so forth. Let people verify that your claims are true. It is also very important to be open about what risks the user might be taking on with self-custody, under which scenarios they might lose access to their funds and best practices for avoiding this. 
+> Open-source your products and clearly explain how they work
 
-*Be open and transparent with how your product works.* <br>
-*Explain what risks the user is taking on, and how best to mitigate them.*
+While an open and decentralized financial system that lets people connect directly with it is great, it does put a lot of burden on the users to pick a product they trust, and that works for them. We can make this easier by freely sharing information about how our products work, what technologies they use and rely on and so forth. Let people verify that your claims are true. It is also very important to be open about what risks the user might be taking on with self-custody, under which scenarios they might lose access to their funds and best practices for avoiding this. 
 
 **Do**
 - Be open and transparent with how your product works
@@ -92,19 +91,22 @@ While an open and decentralized financial system that lets people connect direct
 
 ## Self-custody
 
+> Give users control of their private keys, with no risk for seizure or freezing of their funds
+
 Our existing mental models of access to digital services are usernames and passwords, controlled by a company that has custody of your funds and data. With everyone having direct access to the Bitcoin network without middlemen, there is no longer a need for people to delegate control of their funds. While it comes with greater responsibility, it is self-custody that enables the open financial system of peer-to-peer transactions.
 
-*Give end users full control of their funds.*
-
 **Do**
-- Let users control their private keys, and funds directly
+- Let users control their private keys and funds directly
 
 **Don't**
 - Custody funds for your users
+- Build products where the users' funds can be seized, or frozen
 
 ---
 
 ## Security
+
+> Provide appropriate and progressive security for all types of users
 
 Self-custody means that the end user is ultimately responsible for keeping their funds and private keys safe. They can only do that if we provide them with good, appropriate tools and awareness of best practices. It is therefore our responsibility as designers and makers to really take their security seriously and make Bitcoin products that are as secure as possible by default. We should strive for no loss of funds, regardless of whether this happens through negligence or theft. 
 
@@ -114,8 +116,6 @@ A big part of security is also education and awareness, protecting users from ba
 
 Security can also be a feeling. A product that is polished, good looking, easy to use and transparently communicates how it works can help users feel more secure compared to one with the exact same security measures that lack these soft qualities.
 
-
-*Provide appropriate and progressive security for all types of users.*
 
 **Do**
 - Take safeguarding of users funds seriously
@@ -135,12 +135,11 @@ Security can also be a feeling. A product that is polished, good looking, easy t
 
 ## Privacy
 
+> Minimize collection of personal information, and maximize financial transaction privacy
+
 A common misconception of Bitcoin is that it provides complete anonymity and privacy of transactions. Since the blockchain is an unchangeable ledger of all transactions ever made, it is in fact very hard to not have your complete transaction history visible once even a single one of your addresses is connected to you. If Bitcoin is to become viable for a wider audience and daily use we ought to take privacy seriously. This is certainly not to enable or encourage illicit activity, but to protect individual financial privacy. We would not accept our bank to publish our financial transactions publicly.
 
 The Bitcoin network doesn’t need to know your name for you to use it. Strive to collect as little personal information as possible about your users. When it is absolutely required to provide the product services, collect only the bare minimum and consider if and when this can be discarded when no longer necessary. If you do collect personal information, be transparent about why and how you will use and store it.
-
-*Minimize collection of personal information.* <br>
-*Maximize financial transaction privacy.*
 
 **Do**
 - Minimize the personal information you collect
@@ -154,16 +153,16 @@ The Bitcoin network doesn’t need to know your name for you to use it. Strive t
 
 ## Interoperability
 
-Bitcoin is an open-source protocol, operated in a decentralized manner. This has led to a number of standards being developed for products building on the protocol to be compatible. It should be easy to switch and move your Bitcoin wallet to a different application, should you wish. Making sure that your product supports as many of these standards as possible is best practice and builds trust. More on [wallet interoperability]({{ '/guide/foundations/wallet-interoperability/' | relative_url }}). 
+> Enable import and export of wallets, maximise backwards compatibility and use of open standards
 
-*No lock-in, users should be able to port wallets and data.* <br>
-*Maximum compatibility with open standards.*
+Bitcoin is an open-source protocol, operated in a decentralized manner. This has led to a number of standards being developed for products building on the protocol to be compatible. It should be easy to switch and move your Bitcoin wallet to a different application, should you wish. Making sure that your product supports as many of these standards as possible is best practice and builds trust. More on [wallet interoperability]({{ '/guide/foundations/wallet-interoperability/' | relative_url }}). 
 
 **Do**
 - Support import and export of wallets
 - Support as many relevant BIPs as possible
 - Be transparent with which ones you do and don’t support
-
+- Maximize backwards compatibility
 
 **Don't**
+- Lock your users in
 - Implement proprietary solutions when open standards exist
