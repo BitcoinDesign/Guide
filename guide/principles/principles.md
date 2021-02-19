@@ -39,7 +39,7 @@ Unlike traditional banking systems, the Bitcoin economy does not require new use
 *Have fall-back options for connections to the network.*
 
 **Do**
-- [Manage your own private keys](({{ '/guide/private-key-management/introduction/ | relative_url }})
+- Manage your own [private keys](({{ '/guide/private-key-management/introduction/ | relative_url }})
 - Run a full Bitcoin node when possible
 - Alternatively, use a light client with the [p2p network]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki'}}) using [compact block filters]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki'}}) 
 - Offer the user choice of what node and other external services to connect to
