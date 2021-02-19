@@ -109,7 +109,7 @@ Self-custody means that the end user is ultimately responsible for keeping their
 
 Security is especially important when onboarding people new to Bitcoin where solutions that might be fine for advanced users might backfire for beginners. New users are likely to start by storing small amounts until they get comfortable with self-custody. A scheme suited for storing large amounts of funds is likely overkill and scary to a beginner, so the concept of progressive security is a good idea. This could let a user upgrade their security and private key management scheme as their savings grow. 
 
-A big part of security is also education and awareness, protecting users from bad actors and potentially their own bad behavior. Bad actors may already know what most users don’t, and be aware of new vulnerabilities. It is unrealistic to expect beginners to take onboard all the knowledge acquired by advanced users of several years in one go, for example while onboarding to a product. We should therefore consider how to continuously educate and level up user awareness of best practices and risks.
+A big part of security is also education and awareness, protecting users from bad actors and potentially their own bad behavior. Bad actors may already know what most users don’t, and be aware of new vulnerabilities. It is unrealistic to expect beginners to take in all the knowledge acquired by advanced users of several years in one go, for example while onboarding to a product. We should therefore consider how to continuously educate and level up user awareness of best practices and risks.
 
 
 *Provide appropriate and progressive security for all types of users.*
