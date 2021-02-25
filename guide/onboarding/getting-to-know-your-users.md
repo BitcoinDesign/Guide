@@ -6,8 +6,15 @@ parent: Onboarding
 nav_order: 1
 permalink: /guide/onboarding/getting-to-know-your-users/
 main_classes: -no-top-padding
-image: /assets/images/guide/onboarding/getting-to-know-your-users.png
 ---
+
+{% include picture.html
+   image = "/assets/images/guide/onboarding/getting-to-know-your-users.svg"
+   alt-text = "Bitcoin, key and lock"
+   width = 1600
+   height = 600
+   layout = "full-width"
+%}
 
 # Getting to know your users
 
