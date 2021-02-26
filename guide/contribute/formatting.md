@@ -14,7 +14,6 @@ This page showcases the various formatting and layout options available for cont
 
 The design source file is a public Figma community file you can find [here](https://www.figma.com/community/file/862622015964353400/Bitcoin-Designers-site). To improve the design, please start with the Figma file and make a proposal in Slack or Github before implementing.
 
-
 ## Basic markdown formatting
 
 We use [Markdown](https://daringfireball.net/projects/markdown/) when writing content. Markdown is a plain-text formatting syntax that helps us better prepare our text for the web. Below you can find an overview of commonly used syntax elements.
@@ -81,10 +80,10 @@ Let's start with a very wide image that extends beyond the content width on desk
 {% raw %}
 ```liquid
 {% include picture.html
-   image = "/assets/images/style/example-image-wide-desktop.jpg"
-   retina = "/assets/images/style/example-image-wide-desktop@2x.jpg"
-   mobile = "/assets/images/style/example-image-wide-mobile.jpg"
-   mobileRetina = "/assets/images/style/example-image-wide-mobile@2x.jpg"
+   image = "/assets/images/guide/contribute/formatting/example-image-wide-desktop.jpg"
+   retina = "/assets/images/guide/contribute/formatting/example-image-wide-desktop@2x.jpg"
+   mobile = "/assets/images/guide/contribute/formatting/example-image-wide-mobile.jpg"
+   mobileRetina = "/assets/images/guide/contribute/formatting/example-image-wide-mobile@2x.jpg"
    alt-text = "Example image"
    width = 1600
    height = 800
@@ -94,10 +93,10 @@ Let's start with a very wide image that extends beyond the content width on desk
 {% endraw %}
 
 {% include picture.html
-   image = "/assets/images/style/example-image-wide-desktop.jpg"
-   retina = "/assets/images/style/example-image-wide-desktop@2x.jpg"
-   mobile = "/assets/images/style/example-image-wide-mobile.jpg"
-   mobileRetina = "/assets/images/style/example-image-wide-mobile@2x.jpg"
+   image = "/assets/images/guide/contribute/formatting/example-image-wide-desktop.jpg"
+   retina = "/assets/images/guide/contribute/formatting/example-image-wide-desktop@2x.jpg"
+   mobile = "/assets/images/guide/contribute/formatting/example-image-wide-mobile.jpg"
+   mobileRetina = "/assets/images/guide/contribute/formatting/example-image-wide-mobile@2x.jpg"
    alt-text = "Example image"
    width = 1600
    height = 800
@@ -109,10 +108,10 @@ Let's start with a very wide image that extends beyond the content width on desk
 {% raw %}
 ```liquid
 {% include picture.html
-   image = "/assets/images/style/example-image-wide-desktop.jpg"
-   retina = "/assets/images/style/example-image-wide-desktop@2x.jpg"
-   mobile = "/assets/images/style/example-image-wide-mobile.jpg"
-   mobileRetina = "/assets/images/style/example-image-wide-mobile@2x.jpg"
+   image = "/assets/images/guide/contribute/formatting/example-image-wide-desktop.jpg"
+   retina = "/assets/images/guide/contribute/formatting/example-image-wide-desktop@2x.jpg"
+   mobile = "/assets/images/guide/contribute/formatting/example-image-wide-mobile.jpg"
+   mobileRetina = "/assets/images/guide/contribute/formatting/example-image-wide-mobile@2x.jpg"
    alt-text = "Example image"
    width = 1600
    height = 800
@@ -121,14 +120,15 @@ Let's start with a very wide image that extends beyond the content width on desk
 {% endraw %}
 
 {% include picture.html
-   image = "/assets/images/style/example-image-wide-desktop.jpg"
-   retina = "/assets/images/style/example-image-wide-desktop@2x.jpg"
-   mobile = "/assets/images/style/example-image-wide-mobile.jpg"
-   mobileRetina = "/assets/images/style/example-image-wide-mobile@2x.jpg"
+   image = "/assets/images/guide/contribute/formatting/example-image-wide-desktop.jpg"
+   retina = "/assets/images/guide/contribute/formatting/example-image-wide-desktop@2x.jpg"
+   mobile = "/assets/images/guide/contribute/formatting/example-image-wide-mobile.jpg"
+   mobileRetina = "/assets/images/guide/contribute/formatting/example-image-wide-mobile@2x.jpg"
    alt-text = "Example image"
    width = 1600
    height = 800
 %}
+
 ### Image inline with the content
 
 Images can also be inline with the content. This one is inline on desktop, but takes the full screen width on mobile.
@@ -138,8 +138,8 @@ Images can also be inline with the content. This one is inline on desktop, but t
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/style/example-image-square.jpg"
-   retina = "/assets/images/style/example-image-square@2x.jpg"
+   image = "/assets/images/guide/contribute/formatting/example-image-square.jpg"
+   retina = "/assets/images/guide/contribute/formatting/example-image-square@2x.jpg"
    alt-text = "Example image"
    width = 400
    height = 400
@@ -151,8 +151,8 @@ Images can also be inline with the content. This one is inline on desktop, but t
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/style/example-image-square.jpg"
-   retina = "/assets/images/style/example-image-square@2x.jpg"
+   image = "/assets/images/guide/contribute/formatting/example-image-square.jpg"
+   retina = "/assets/images/guide/contribute/formatting/example-image-square@2x.jpg"
    alt-text = "Example image"
    width = 400
    height = 400
@@ -172,8 +172,8 @@ This next image is inline on both mobile and desktop.
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/style/example-image-square.jpg"
-   retina = "/assets/images/style/example-image-square@2x.jpg"
+   image = "/assets/images/guide/contribute/formatting/example-image-square.jpg"
+   retina = "/assets/images/guide/contribute/formatting/example-image-square@2x.jpg"
    alt-text = "Example image"
    width = 100
    height = 100
@@ -189,8 +189,8 @@ Mobile app stores do a good job at providing previews of what using an app will 
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/style/example-image-square.jpg"
-   retina = "/assets/images/style/example-image-square@2x.jpg"
+   image = "/assets/images/guide/contribute/formatting/example-image-square.jpg"
+   retina = "/assets/images/guide/contribute/formatting/example-image-square@2x.jpg"
    alt-text = "Example image"
    width = 100
    height = 100
@@ -198,6 +198,78 @@ Mobile app stores do a good job at providing previews of what using an app will 
 %}
 
 Mobile app stores do a good job at providing previews of what using an app will be like. Through copy, videos, images and reviews, users can make informed decisions about the product they are evaluating. Open-source software is typically downloaded via a website or from Github and each project decides what information to present.
+
+</div>
+
+### Image slide gallery
+
+A horizontal slide show of images. When the content is too wide for the screen, users can scroll.
+
+{% raw %}
+```liquid
+<div class="image-slide-gallery">
+
+{% include picture.html
+   image = "/assets/images/guide/contribute/formatting/example-image-mobile-screen.png"
+   retina = "/assets/images/guide/contribute/formatting/example-image-mobile-screen@2x.png"
+   alt-text = "Example image"
+   caption = "Example text"
+   width = 250
+   height = 541
+%}
+
+... more picture includes ...
+
+</div>
+```
+{% endraw %}
+
+<div class="image-slide-gallery">
+
+{% include picture.html
+   image = "/assets/images/guide/contribute/formatting/example-image-mobile-screen.png"
+   retina = "/assets/images/guide/contribute/formatting/example-image-mobile-screen@2x.png"
+   alt-text = "Example image"
+   caption = "Example text"
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/contribute/formatting/example-image-mobile-screen.png"
+   retina = "/assets/images/guide/contribute/formatting/example-image-mobile-screen@2x.png"
+   alt-text = "Example image"
+   caption = "Example text"
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/contribute/formatting/example-image-mobile-screen.png"
+   retina = "/assets/images/guide/contribute/formatting/example-image-mobile-screen@2x.png"
+   alt-text = "Example image"
+   caption = "Example text"
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/contribute/formatting/example-image-mobile-screen.png"
+   retina = "/assets/images/guide/contribute/formatting/example-image-mobile-screen@2x.png"
+   alt-text = "Example image"
+   caption = "Example text"
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/contribute/formatting/example-image-mobile-screen.png"
+   retina = "/assets/images/guide/contribute/formatting/example-image-mobile-screen@2x.png"
+   alt-text = "Example image"
+   caption = "Example text"
+   width = 250
+   height = 541
+%}
 
 </div>
 
