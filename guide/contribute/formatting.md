@@ -14,6 +14,22 @@ This page showcases the various formatting and layout options available for cont
 
 The design source file is a public Figma community file you can find [here](https://www.figma.com/community/file/862622015964353400/Bitcoin-Designers-site). To improve the design, please start with the Figma file and make a proposal in Slack or Github before implementing.
 
+- [Text](#text-formatting)
+- [Headers](#headers)
+- [Blockquotes](#blockquote)
+- [Links](#links)
+- [Images](#images)
+- [Gallery](#image-slide-gallery)
+- [Lists](#lists)
+- [Tables](#tables)
+- [Code](#code-embedding)
+- [YouTube videos](#youtube-video-embed)
+- [Prototypes](#prototypes)
+- [Facts](#facts)
+- [Recommendations](#recommendations)
+- [Tips](#tips)
+- [Footnotes](#footnotes)
+
 ## Basic markdown formatting
 
 We use [Markdown](https://daringfireball.net/projects/markdown/) when writing content. Markdown is a plain-text formatting syntax that helps us better prepare our text for the web. Below you can find an overview of commonly used syntax elements.
@@ -129,7 +145,7 @@ Let's start with a very wide image that extends beyond the content width on desk
    height = 800
 %}
 
-### Image inline with the content
+#### Image inline with the content
 
 Images can also be inline with the content. This one is inline on desktop, but takes the full screen width on mobile.
 
@@ -201,7 +217,7 @@ Mobile app stores do a good job at providing previews of what using an app will 
 
 </div>
 
-### Image slide gallery
+#### Image slide gallery
 
 A horizontal slide show of images. When the content is too wide for the screen, users can scroll.
 
@@ -500,6 +516,103 @@ Ensure that your images provide a good overview of the prototype content, so use
    width = 800
    height = 500
 %}
+
+### Recommendations
+
+For highlighting moments when we think there is a particular approach or solution that the reader should strongly connsider following.
+
+{% raw %}
+```liquid
+{% include rec-open.html %}
+
+Most bitcoin products should use HD Wallets with Native Segwit addresses (unless focusing on maximum backwards compatibility).
+
+{% include rec-close.html %}
+```
+{% endraw %}
+
+{% include rec-open.html %}
+
+Most bitcoin products should use HD Wallets with Native Segwit addresses (unless focusing on maximum backwards compatibility).
+
+{% include rec-close.html %}
+
+### Tips
+
+For additional information that is useful, but does not fit into the main flow of the content.
+
+{% raw %}
+```liquid
+{% include fact-pros.html %}
+
+Sed in lacus vitae turpis lobortis ultrices. Aenean hendrerit nec elit in sagittis. Nulla mi ante, luctus vitae tincidunt ut, rhoncus ac ex. Morbi sit amet mauris est.
+
+{% include fact-close.html %}
+```
+{% endraw %}
+
+{% include tip-open.html %}
+
+Sed in lacus vitae turpis lobortis ultrices. Aenean hendrerit nec elit in sagittis. Nulla mi ante, luctus vitae tincidunt ut, rhoncus ac ex. Morbi sit amet mauris est.
+
+{% include tip-close.html %}
+
+### Facts
+
+A table that provides specific descriptions based on standardized properties. Variations available are:
+
+- fact-pros.html
+- fact-cons.html
+- fact-when-to-use.html
+- fact-when-not-to-use.html
+- fact-variations.html
+- fact-products.html
+
+{% raw %}
+```liquid
+{% include fact-pros.html %}
+
+Can provide higher resistance to loss from theft and negligence.
+
+{% include fact-close.html %}
+```
+{% endraw %}
+
+{% include fact-pros.html %}
+
+Can provide higher resistance to loss from theft and negligence.
+
+{% include fact-close.html %}
+
+{% include fact-cons.html %}
+
+Require precise coordination of key-shares when signing, few advantages over multi-key setups with Schnorr signatures, individual implementations not interoperable.
+
+{% include fact-close.html %}
+
+{% include fact-when-to-use.html %}
+
+When target audience is knowledgeable and risk of theft is higher than negligance.
+
+{% include fact-close.html %}
+
+{% include fact-when-not-to-use.html %}
+
+When Schnorr signatures are available enabling multi-key setups.
+
+{% include fact-close.html %}
+
+{% include fact-variations.html %}
+
+Number of signatures required, location and distribution of pieces, signing procedure.
+
+{% include fact-close.html %}
+
+{% include fact-products.html %}
+
+[Bitcoin wallet](https://bitcoin.design/), [BTC wallet](https://bitcoin.design/), [BeeTeeCee Wallet](https://bitcoin.design/)
+
+{% include fact-close.html %}
 
 ### Footnotes
 

@@ -5,6 +5,123 @@ article.guide {
     margin-top: 0;
   }
 
+  .tip,
+  .recommendation {
+    margin-top: $spacing-unit;
+    padding: 25px 25px 20px 25px;
+    box-sizing: border-box;
+
+    h6 {
+      margin: 0;
+      padding: 0;
+      font-size: 22px;
+      font-weight: 500;
+
+      &:before {
+        display: none;
+      }
+
+      svg {
+        display: inline-block;
+        margin-right: 10px;
+        background-color: $blue;
+        border-radius: 3px;
+        width: 24px;
+        height: 24px;
+        color: white;
+        vertical-align: middle;
+        transform: translateY(-2px);
+      }
+    }
+
+    p {
+      margin: 10px 0 0 0;
+    }
+  }
+
+  .tip {
+    background-color: rgba($blue, 0.1);
+
+    h6 {
+      svg {
+        background-color: $blue;
+      }
+    }
+  }
+
+  .recommendation {
+    background-color: rgba($bitcoin-yellow, 0.1);
+
+    h6 {
+      svg {
+        background-color: $bitcoin-yellow;
+      }
+    }
+  }
+
+  .fact {
+    margin-top: $spacing-unit;
+    display: flex;
+    border: 1px solid #DEDEDE;
+    align-items: stretch;
+
+    .icon {
+      padding: 10px 20px;
+      border-right: 1px solid #DEDEDE;
+      flex-grow: 0;
+      display: flex;
+      align-items: center;
+
+      &.-green {
+        svg {
+          background-color: $green;
+        }
+      }
+
+      &.-red {
+        svg {
+          background-color: $red;
+        }
+      }
+
+      svg {
+        display: inline-block;
+        background-color: $blue;
+        border-radius: 3px;
+        width: 24px;
+        height: 24px;
+        color: white;
+        vertical-align: middle;
+        transform: translateY(-2px);
+      }
+    }
+
+    .copy {
+      padding: 20px;
+      flex-grow: 1;
+
+      h6 {
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        font-weight: 500;
+
+        &:before {
+          display: none;
+        }
+      }
+
+      p {
+        margin: 5px 0 0 0;
+      }
+    }
+
+    & + .fact {
+      margin-top: 0;
+      border-top: 0;
+    }
+  }
+
   a.video-link,
   a.prototype-link {
     position: relative;
