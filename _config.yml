@@ -28,6 +28,8 @@ github_username:  jekyll
 
 github_repository_url: "https://github.com/BitcoinDesign/Guide/"
 slack_invite_url: "http://bitcoindesigners.org"
+youtube_url: "https://www.youtube.com/channel/UCXKST1b8Wmq8Zt6b6S_-k3Q"
+twitter_url: "https://twitter.com/bitcoin_design"
 
 # Build settings
 theme: minima
