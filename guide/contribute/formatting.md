@@ -25,9 +25,9 @@ The design source file is a public Figma community file you can find [here](http
 - [Code](#code-embedding)
 - [YouTube videos](#youtube-video-embed)
 - [Prototypes](#prototypes)
-- [Facts](#facts)
 - [Recommendations](#recommendations)
 - [Tips](#tips)
+- [Facts](#facts)
 - [Footnotes](#footnotes)
 
 ## Basic markdown formatting
