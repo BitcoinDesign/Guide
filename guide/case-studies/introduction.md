@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Case studies
-description: A range of case study designs for bitcoin applications.
+description: A range of case study designs for Bitcoin applications.
 nav_order: 5
 has_children: true
 permalink: /guide/case-studies/
@@ -28,9 +28,7 @@ Editor's notes
 
 # Case studies
 
-A look at some hypothetical use case categories and what might be suitable approaches for private key management schemes for each of them.
-
-Before deciding on a private key management scheme it’s essential to have a good idea of what use case and target audience your product has. Let’s look at some hypothetical use case categories and what might be suitable approaches.
+This section provides practical explorations of common user experiences with wireframes, design mock-ups, prototypes and more.
 
 ---
 
@@ -42,7 +40,7 @@ Explores a simple mobile wallet design that relies on automated cloud backup to 
 
 **[Multisig wallet]({{ '/guide/case-studies/multisig-wallet/' | relative_url }})**
 
-Shows the user flow of setting up a 2-of-3 multsig wallet in a mobile application.
+An example user flow for setting up a 2-of-3 multsig wallet in a mobile application.
 
 ---
 
@@ -54,4 +52,4 @@ A mobile experience that starts users off with a simple cloud backup solution an
 
 **[Shared account]({{ '/guide/case-studies/shared-account/' | relative_url }})**
 
-An onboarding experience for a mobile wallet shared by a couple who want to access and manage the funds together.
+An onboarding experience for a mobile wallet shared by a couple who want to access and manage funds together.
