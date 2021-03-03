@@ -71,16 +71,15 @@ There should be whitespace between paragraphs.
 
 > This is a blockquote text.
 
-
 ### Links
 
 ### External Links
 
 ```markdown
-[Link to another page](https://bitcoin.org/bitcoin.pdf).
+[Link to another page](https://bitcoin.org/bitcoin.pdf)
 ```
 
-[Link to another page](https://bitcoin.org/bitcoin.pdf).
+[Link to another page](https://bitcoin.org/bitcoin.pdf)
 
 #### Internal links
 
@@ -88,6 +87,16 @@ There should be whitespace between paragraphs.
 [Linking]({{ '/guide/getting-started/why-bitcoin-is-unique/' | relative_url }})
 ```
 [Linking]({{ '/guide/getting-started/why-bitcoin-is-unique/' | relative_url }})
+
+#### Button links
+
+```markdown
+[Filled button link](https://bitcoin.org/bitcoin.pdf){: .button}
+[Outline button link](https://bitcoin.org/bitcoin.pdf){: .button.-outline}
+```
+
+[Filled button link](https://bitcoin.org/bitcoin.pdf){: .button}
+[Outline button link](https://bitcoin.org/bitcoin.pdf){: .button.-outline}
 
 ### Images
 
