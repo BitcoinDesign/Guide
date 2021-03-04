@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Multisig wallet
+title: Checking account
 nav_order: 2
 parent: Case studies
 permalink: /guide/case-studies/multisig-wallet/

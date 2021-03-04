@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Upgradeable wallet
+title: Upgradeable account
 nav_order: 3
 parent: Case studies
 permalink: /guide/case-studies/upgradeable-wallet/

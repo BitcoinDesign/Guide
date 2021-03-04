@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Cloud backup
+title: Daily spending
 nav_order: 1
 parent: Case studies
 permalink: /guide/case-studies/cloud-backup/
