@@ -83,7 +83,7 @@ Given that control is a motivator, a wallet could aim to provide as much customi
 It's important to allow you and your team to be as free and creative about how you might solve these unmet needs. No idea is too "out there". Gather as many ideas as possible and build upon each other's ideas as you move along. Also, look for existing research and findings to compare against what you have found and check for any similarities. 
 
 ## Prototype & Test
-Next you can think about prototyping a subset of these ideas and understand the feasibility of your ideas through feedback on these prototypes. Put your prototypes in front of real users and test to verify the solution meets the users needs.
+Next, you can think about prototyping a subset of these ideas and understanding your ideas' feasibility through feedback on these prototypes. Put your prototypes in front of real users and test to verify the solution meets the users' needs.
 
 You might choose to lean on something like the Bitcoin Wallet UI Kit4, which gives you several components that you can piece together for a specific use case. This would allow you to prototype rapidly and get a feel for if the UI flow makes sense before committing to more detailed designs.
 
