@@ -76,7 +76,7 @@ You might also uncover barriers and motivators in various channels such as chats
 ## Brainstorm solutions with your team
 With this information, you can weaken the barriers and strengthen the motivators to craft the best experience for a user like Josh.
 
-To weaken Josh's "Fear of losing private key", a wallet might opt to initially backup an encrypted version of his recovery phrase to a cloud provider and educate him over time on how to take more control of his private key.
+To weaken Josh's "Fear of losing a private key," a wallet might opt to initially backup an encrypted version of his recovery phrase to a cloud provider and educate him over time on how to take more control of his private key.
 
 Given that control is a motivator, a wallet could aim to provide as much customizability as possible such as fee selection or coin selection. 
 
