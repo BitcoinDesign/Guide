@@ -80,7 +80,7 @@ To weaken Josh's "Fear of losing a private key," a wallet might opt to initially
 
 Given that control is a motivator, a wallet could aim to provide as much customizability as possible such as fee selection or coin selection. 
 
-It's important to allow you and your team to be as free and creative about how you might solve these unmet needs. No idea is too “out there”. Gather as many ideas as possible and build upon each other's ideas as you move along. Also look for already existing research and findings to compare against what you have found and check for any similarities. 
+It's important to allow you and your team to be as free and creative about how you might solve these unmet needs. No idea is too "out there". Gather as many ideas as possible and build upon each other's ideas as you move along. Also, look for existing research and findings to compare against what you have found and check for any similarities. 
 
 ## Prototype & Test
 Next you can think about prototyping a subset of these ideas and understand the feasibility of your ideas through feedback on these prototypes. Put your prototypes in front of real users and test to verify the solution meets the users needs.
