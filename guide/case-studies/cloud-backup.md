@@ -14,7 +14,7 @@ Editor's notes
 
 -->
 
-## Cash / Daily spending
+## Cash account / Daily spending
 
 Imagine a product which tries to solve the problem of quickly and easily sending smaller amounts of money to friends and family, or for small purchases. Ease and speed of use will be important as usage is likely to be on mobile devices and on the go. Users are not expected to be well versed in bitcoin technology or advanced private key management, which makes it reasonable to worry more about self-inflicted loss than from theft.
 
