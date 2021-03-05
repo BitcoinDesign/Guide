@@ -74,8 +74,7 @@ The uncovering of this scenario could be the result of a user interview[^3], tha
 You might also uncover barriers and motivators in various channels such as chats, issues or even twitter and find insights this way.
 
 ## Brainstorm solutions with your team
-With this information you can look to weaken the barriers and stregthen the motivators in order to craft the best experience
-for a user like Josh.
+With this information, you can weaken the barriers and strengthen the motivators to craft the best experience for a user like Josh.
 
 To weaken Josh's "Fear of losing private key", a wallet might opt to initially backup an encrypted version of his recovery phrase to a cloud provider and educate him over time on how to take more control of his private key.
 
