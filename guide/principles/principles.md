@@ -35,7 +35,7 @@ These are principles we in the Bitcoin Design Community have identified and stan
 
 ## Decentralization
 
-> Encourage users to run their own Bitcoin node and connect directly to the network
+> Design products that encourage people to run a full Bitcoin node
 
 Unlike traditional banking systems, the Bitcoin economy does not require new users to seek permission from anyone. Bitcoin has no central point of control. No one person or entity is in charge. Connecting to any [node]({{ '/guide/glossary/#node' | relative_url }}) on the network gives you the same rights and responsibilities, which also ensures that there is no single point of failure.
 
