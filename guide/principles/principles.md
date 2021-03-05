@@ -40,7 +40,6 @@ These are principles we in the Bitcoin Design Community have identified and stan
 Unlike traditional banking systems, the Bitcoin economy does not require new users to seek permission from anyone. Bitcoin has no central point of control. No one person or entity is in charge. Connecting to any [node]({{ '/guide/glossary/#node' | relative_url }}) on the network gives you the same rights and responsibilities, which also ensures that there is no single point of failure.
 
 **Do**
-- Manage your own [private keys]({{ '/guide/private-key-management/introduction/' | relative_url }})
 - Run a full Bitcoin node when possible
 - Alternatively, use a light client with the [p2p network]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki'}}) using [compact block filters]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki'}}) 
 - Offer the user choice of what node and other external services to connect to
