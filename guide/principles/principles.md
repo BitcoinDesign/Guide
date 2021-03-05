@@ -62,7 +62,7 @@ And while Bitcoin is already widely used by a large number of people, it pales i
 - Provide equal and direct access to the Bitcoin network, without middlemen and exclusive requirements
 - Design Bitcoin products that are usable by the widest range of people possible
 - Use plain language that people new to Bitcoin can understand regardless of prior knowledge
-- Use more languages than just English
+- Localize your product and make it multilingual 
 - Educate in place, when people are presented with a new concept
 - Treat users with impairments, or who rely on assistive technologies, as first-class citizens
 
