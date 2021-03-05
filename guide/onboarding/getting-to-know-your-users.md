@@ -30,7 +30,7 @@ This could take the form of user research, user interviews and surveys aimed at 
 * Where do they experience frustration?
 * Where does the first experience take place?
 * How did they hear about my application? Word of mouth? App store search? 
-* Do first time users have specific needs or goals?
+* Do first-time users have specific needs or goals?
 
 Perhaps after research, you identify your users as "cypherpunks" with sound knowledge of bitcoin but they are new to your app. You might build an experience that preserves as much of their privacy as possible and is super customizable from the outset. 
 
