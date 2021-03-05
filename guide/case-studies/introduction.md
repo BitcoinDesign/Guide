@@ -32,19 +32,19 @@ This section provides practical explorations of common user experiences with wir
 
 ---
 
-**[Cloud backup]({{ '/guide/case-studies/cloud-backup/' | relative_url }})**
+**[Cash account / Daily spending]({{ '/guide/case-studies/cloud-backup/' | relative_url }})**
 
 Explores a simple mobile wallet design that relies on automated cloud backup to store private keys. A common use case for this technique are wallets for daily spending on-the-go.
 
 ---
 
-**[Multisig wallet]({{ '/guide/case-studies/multisig-wallet/' | relative_url }})**
+**[Checking account]({{ '/guide/case-studies/multisig-wallet/' | relative_url }})**
 
 An example user flow for setting up a 2-of-3 multsig wallet in a mobile application.
 
 ---
 
-**[Upgradeable wallet]({{ '/guide/case-studies/upgradeable-wallet/' | relative_url }})**
+**[Upgradeable account]({{ '/guide/case-studies/upgradeable-wallet/' | relative_url }})**
 
 A mobile experience that starts users off with a simple cloud backup solution and allows them to upgrade the security model progressively as their needs change.
 
