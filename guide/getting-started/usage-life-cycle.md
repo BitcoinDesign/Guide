@@ -36,9 +36,9 @@ Illustration sources
 # Usage life cycle
 {:.no_toc}
 
-We have all mastered different skills and tools that we care about or use frequently. Many times we forget what the initial struggles were once we reach a certain comfort level. A similar change happens when we develop products. We learn and internalize different mechanisms and logic and what was once hard becomes intuitive, and we my end up building things with overwhelming learning curves. So it's a healthy habit to regularly take a step back and look through the eyes users at different levels of experience with your product.
+We have all mastered different skills and tools that we care about or use frequently. Many times we forget what the initial struggles were once we reach a certain comfort level. A similar change happens when we develop products. We learn and internalize different mechanisms and logic, and what was once hard becomes intuitive, and we end up building things with overwhelming learning curves. So it's a healthy habit to regularly take a step back and look through users' eyes at different levels of experience with your product.
 
-The following 6 sections outline different phases of a typical usage life cycle, from somebody who has never heard of your product all the way to them becoming a power user. It is helpful to think through each phase and consider what the current user needs are, what their understanding of bitcoin and your product likely is, and how you can help them successfully navigate.
+The following six sections outline different phases of a typical usage life cycle, from somebody who has never heard of your product to them becoming a power user. It is helpful to think through each phase and consider what the current user needs are, what their understanding of bitcoin and your product likely is, and how you can help them successfully navigate.
 
 ## Unaware
 
@@ -53,7 +53,7 @@ The following 6 sections outline different phases of a typical usage life cycle,
    layout = "float-left"
 %}
 
-Every user starts here and most remain in this phase. At this point, they have never heard or seen your company or product before. 
+Every user starts here and most remain in this phase. At this point, they have never heard or seen your company or product before.
 
 </div>
 
@@ -70,7 +70,7 @@ Every user starts here and most remain in this phase. At this point, they have n
    layout = "float-left"
 %}
 
-A user hears about the service for the first time. This could be via a word of mouth recommendation, advertising, a news article, social media, or any other channel. Whichever it may be, this exposure is usually extremely short and limited, so it’s important that the purpose and benefits of your product are clear. Users already start to form a mental model from the first contact with your product. If it appears trustworthy and well-considered from the start, they will expect their future interactions to be the same. The same applies if your product looks intimidating or buggy.
+A user hears about the service for the first time. This could be via word-of-mouth recommendation, advertising, news articles, social media, or any other channel. Whichever it may be, this exposure is usually extremely short and limited, so the purpose and benefits of your product must be clear. Users already start to form a mental model from the first contact with your product. If it appears trustworthy and well-considered from the start, they will expect their future interactions to be the same. The same applies if your product looks intimidating or buggy.
 
 </div>
 
@@ -87,7 +87,7 @@ A user hears about the service for the first time. This could be via a word of m
    layout = "float-left"
 %}
 
-A user becomes interested in your product. Maybe they have heard about it several times or their first interaction was convincing enough that they decide to try the product. At this point, they generally understand the benefits and likely have a need for the product that they are looking to address. They evaluate your product, and you as the creator, from multiple perspectives to make an informed decision whether to move forward. "Is this a convenient way to get done what I want to do? Can I trust this product and its creators? What can I lose? Can I get out if something geos wrong?" These are some of the questions they may have and if most can be answered positively, users take the next steps.
+A user becomes interested in your product. Maybe they have heard about it several times, or their first interaction was convincing enough for them to decide to try the product. At this point, they generally understand the benefits and likely have a need for the product that they are looking to address. They evaluate your product and you as the creator from multiple perspectives to make an informed decision on whether to move forward. "Is this a convenient way to get done what I want to do? Can I trust this product and its creators? What can I lose? Can I get out if something goes wrong?" These are some of the questions they may have, and if most can be answered positively, users take the next steps.
 
 </div>
 
@@ -104,7 +104,7 @@ A user becomes interested in your product. Maybe they have heard about it severa
    layout = "float-left"
 %}
 
-The user tries the service for the first time. They made an intentional decision to move forward and expect to be satisfied. They are still not very familiar with exactly how your product works, and their expectations may not match what your product actually offers. Thefore it is very important to pay close attention to the design of the first-time use, also known as onboarding experience. Users should be able to quickly and successfully achieve the task they have in mind, while getting introduced to the basic concepts and best practices for using your product. This experience sets expectations for future interactions. If the first use is frustrating, users are less likely to come back as they weight off whether the trouble is worth the benefit.
+The user tries the service for the first time. They made an intentional decision to move forward and expect to be satisfied. They are still not very familiar with exactly how your product works, and their expectations may not match what your product offers. Therefore it is very important to pay close attention to the design of the first-time use, also known as onboarding experience. Users should quickly and successfully achieve the task they have in mind while getting introduced to the basic concepts and best practices for using your product. This experience sets expectations for future interactions. If the first use is frustrating, users are less likely to return as they weight off whether the trouble is worth the benefit.
 
 </div>
 
@@ -121,7 +121,7 @@ The user tries the service for the first time. They made an intentional decision
    layout = "float-left"
 %}
 
-Through repeat use, the user becomes more familiar with the service and starts using more features, in a more sophisticated manner. Their mental model of your product becomes more complete and closer to yours. Repeat use also implies that users have begun to make your product part of their lives. While first-time users are typically non-commital, repeat users have stronger expectations, while also being willing to put in more work to get the most our of your product.
+Through repeat use, the user becomes more familiar with the service and starts using more features in a more sophisticated manner. Their mental model of your product becomes complete and closer to yours. Repeat use also implies that users have begun to make your product part of their lives. While first-time users are typically non-committal, repeat users have more substantial expectations while also being willing to put in more work to get the most out of your product.
 
 </div>
 
@@ -138,7 +138,7 @@ Through repeat use, the user becomes more familiar with the service and starts u
    layout = "float-left"
 %}
 
-These are expert users with high expectations. They will express strong wishes, provide feedback and also spread the word to potential new users. Very few users actually make it to this phase, and you should have a special relationship with them. They can be your strongest promoters and also help push the product further by engaging with you and your team.
+These are expert users with high expectations. They will express strong wishes, provide feedback, and also spread the word to potential new users. Very few users make it to this phase, and you should have a special relationship with them. They can be your strongest promoters and help push the product further by engaging with you and your team.
 
 </div>
 
