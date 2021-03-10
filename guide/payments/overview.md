@@ -13,8 +13,8 @@ image: /assets/images/guide/payments/overview/page-overview.svg
 
 Bitcoin is a peer-to-peer push-payment system. This means that you are able to send, or *push*, bitcoin to any address at your will, at any time, without passing through a third party.
 
-This is radically different from the legacy financial system where it is often possible for others to *pull* and withdraw money from your account (utility companies, financial institutions, merchants etc.). When you make a payment it will pass through systems that might delay, control or block the payment. 
 
+This is radically different from the legacy financial system where it is often possible for others to *pull* and withdraw money from your account (utility companies, financial institutions, merchants etc.). When you make a payment it will pass through systems that might delay, control or block the payment. 
 ## Bitcoin transactions
 
 The most common bitcoin transactions simply contain instructions to move funds from one address to another. Other types of transactions include creating multi-sig wallets or recording data on the blockchain.
@@ -23,6 +23,7 @@ Once created, a transaction needs to be signed with the private key(s) of the se
 
 Technically, the transaction is data that contains the necessary information to execute on the blockcain. The principal properties are:
 
+- Amount - the amount of bitcoin, in satoshis
 - Inputs - the source(s)
 - Outputs - the destination(s)
 - Version - the code version this transaction follows
@@ -42,35 +43,35 @@ Blocks are limited in size and new ones are created every 10 minutes on average.
 
 When submitting a transaction you can optimize for fast confirmation, or lower fee. It is good practice to give the user some control of this.
 
+
+
 ## Transaction lifecycle
 
-Let's break the entire payment process of down further.
+Let's lay out the entire payment process.
 
 ![](https://i.imgur.com/IzJLhXb.png)
 
 
-#### 1. Get Recipient Address
-Somebody wants to send money to another person for some reason. Could be for a purchase, a donation, or something else.
+#### 1. Get recipient address
+You need a valid address to send bitcoin. This can be shared by the recipient as a QR code, in plain text or as a payment link.
 
-Payees can create an invoice in their wallet application with an amount and recipient address, and sends it to the sender.
+#### 2. Transaction creation
+The wallet application guides the user through collected the required information (address and amount), and any optional information (what coins to send, fee options).
 
-#### 2. Transaction Creation
-User enters an amount, the recipeint’s address, and sometimes selects the fee and coins used themselves. This is the required information a wallet application needs to construct a transaction.
+#### 3. Transaction signing
+The transactoin needs to be signed by the private key(s) of the input address(es) to be valid. The signing is often done in the same application and at the same time as the creation, but this does not have to be the case.
 
-#### 3. Transaction Signing
-The private keys of the input addresses need to sign the transaction for it to be validated. The signing is often done in the same application and at the same time as the creation, but this does not have to be the case.
+#### 4. Transaction broadcasting
+The transaction is broadcasted to a Bitcoin node, normally the one the wallet is connected to.
 
-#### 4. Transaction Broadcasting
-Transaction is broadcasted to a node, usually the one the wallet is connected to.
+#### 5. Transaction validation
+The receiving node checks that the transaction is valid. In practice this means confirming that it was signed by the private key of the relevant address.
 
-#### 5. Transaction Validation
-If valid, nodes then propogate TXs to others in the network - returning a success message to originators.
+#### 6. Transaction propagation
+Once validated, the node passes the transaction on to other nodes in the network - returning a success message to the originator. The transaction is now in the *memory pool*, and remains there until confirmed.
 
-#### 6. Transaction Propogation
-The transaction is in the memory pool. The sender sees the transaction in their wallet as unconfirmed when the transaction is also in the mempool of the node they are connected to.
+#### 7. First transaction confirmation
+At some point the transaction is included in a block that is added to the blockchain. This counts as a first confirmation. The recipient can be confident that they will receive the bitcoin, and may even receive a pre-emptive notification from their wallet. How long the first confirmation takes is dependent on many factors, principally - how many other transactions are waiting to be confirmed and how big a fee the transaction will pay. A new block is confirmed roughly every ten minutes.
 
-#### 7. First Transaction Confirmation
-The transaction is bundled a block, and that block is accepted by the network. This counts as a first confirmation. The recipient can be confident that they will receive the bitcoin, and may even receive a pre-emptive notification from their wallet.
-
-#### 8. More Blocks are Generated
-Each additional block that is accepted by the network counts as an extra confirmation. When a transaction/block has 6 confirmations, it is considered final.
+#### 8. Final confirmation
+Each additional block that is accepted by the network counts as an extra confirmation, making the transaction more secure by making it harder to undo. When a transaction has 6 confirmations, it is considered final.
