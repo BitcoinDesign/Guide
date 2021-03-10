@@ -2,9 +2,9 @@
 layout: guide
 title: Transaction overview
 description: Principles to strive for while building bitcoin applications for end-users.
-nav_order: 4
+nav_order: 1
 parent: Payments
-permalink: /guide/payments/overview/
+permalink: /guide/payments/transactions/
 main_classes: -no-top-padding
 image: /assets/images/guide/payments/overview/page-overview.svg
 ---
