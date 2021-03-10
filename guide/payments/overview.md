@@ -17,7 +17,7 @@ Bitcoin is a peer-to-peer push-payment system. This means that you can send, or 
 This is radically different from the legacy financial system, where it is often possible for others to *pull* and withdraw money from your account (utility companies, financial institutions, merchants, etc.). When you make a payment, it will pass through systems that might delay, control or block the payment. 
 ## Bitcoin transactions
 
-The most common bitcoin transactions simply contain instructions to move funds from one address to another. Other types of transactions include creating multi-sig wallets or recording data on the blockchain.
+The most common Bitcoin transactions contain instructions to move funds from one address to another. Other types of transactions include creating multi-sig wallets or recording data on the blockchain.
 
 Once created, a transaction needs to be signed with the private key(s) of the sender(s), submitted to a node on the network for validation and propagation to other nodes. It then waits to be verified and included in a newly mined block, after which point it will be recorded on the blockchain. For this service, the sender will pay a fee for every transaction which goes to the node who mined the block as a reward.
 
