@@ -58,4 +58,4 @@ Strive for your product to grow with the user and provide progressively stronger
 
 ***
 
-OK, let's have a look at some [case studies]({{ '/guide/private-key-management/case-studies/' | relative_url }}).
+OK, let's have a look at some [case studies]({{ '/guide/case-studies/' | relative_url }}).

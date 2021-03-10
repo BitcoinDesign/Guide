@@ -2,10 +2,11 @@
 layout: guide
 nav_order: 1
 title: Guide
+secondary_nav_title: Introduction
 description: The Bitcoin Design Guide is a reference for the design of bitcoin applications. 
 permalink: /guide/
 main_nav: true
-secondary_nav: false
+secondary_nav: true
 main_classes: -no-top-padding
 image: /assets/images/guide/bitcoin-island-preview.jpg
 ---
@@ -51,6 +52,7 @@ With Bitcoin being so new and different, a big focus of the guide lies on provid
 - [Private key management]({{ '/guide/private-key-management/introduction/' | relative_url }}) provides extensive details and guidance on the many techniques for storing private keys
 - [Payments]({{ '/guide/payments/' | relative_url }}) deals with the complexities of sending and receiving bitcoin across various use cases
 - [Foundations]({{ '/guide/foundations/' | relative_url }}) highlights principles, best practices and other useful information for designing Bitcoin products
+- [Case studies]({{ '/guide/case-studies/' | relative_url }}) explores approaches to diverse uses cases with wireframes, designs and prototypes.
 - [Glossary]({{ '/guide/glossary/' | relative_url }}) explains common Bitcoin terminology, from Address to ZPUB.
 
 ## How to use the guide

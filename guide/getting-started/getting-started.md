@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Getting started
-nav_order: 1
+nav_order: 2
 has_children: true
 permalink: /guide/getting-started/introduction/
 main_classes: -no-top-padding

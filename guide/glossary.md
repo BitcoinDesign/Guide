@@ -2,7 +2,7 @@
 layout: guide
 title: Glossary
 permalink: /guide/glossary/
-nav_order: 6
+nav_order: 8
 main_classes: -no-top-padding
 image: /assets/images/guide/glossary/glossary-preview.jpg
 ---
@@ -29,6 +29,15 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 
 # Glossary
 {: .no_toc }
+
+---
+
+<div class="glossary-toc" markdown="1">
+ * Table of contents
+{:toc}
+</div>
+
+---
 
 ## Address
 
@@ -167,7 +176,7 @@ Same as XPUB however the Y denotes that this xpub belongs to a wallet that is fo
 
 ### ZPUB
 
-Same as YPUB though the Z denotes it is an extended public key from a segregated witness enabled wallet following [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki). 
+Same as YPUB though the Z denotes it is an extended public key from a segregated witness enabled wallet following [BIP84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki).
 
 ## Initial block download (IBD)
 
