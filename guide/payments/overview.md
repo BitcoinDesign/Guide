@@ -14,7 +14,7 @@ image: /assets/images/guide/payments/overview/page-overview.svg
 Bitcoin is a peer-to-peer push-payment system. This means that you can send, or *push*, bitcoin to any address at your will, at any time, without passing through a third party.
 
 
-This is radically different from the legacy financial system where it is often possible for others to *pull* and withdraw money from your account (utility companies, financial institutions, merchants etc.). When you make a payment it will pass through systems that might delay, control or block the payment. 
+This is radically different from the legacy financial system, where it is often possible for others to *pull* and withdraw money from your account (utility companies, financial institutions, merchants, etc.). When you make a payment, it will pass through systems that might delay, control or block the payment. 
 ## Bitcoin transactions
 
 The most common bitcoin transactions simply contain instructions to move funds from one address to another. Other types of transactions include creating multi-sig wallets or recording data on the blockchain.
