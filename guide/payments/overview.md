@@ -56,7 +56,7 @@ Let's lay out the entire payment process.
 You need a valid address to send bitcoin. This can be shared by the recipient as a QR code, in plain text or as a payment link.
 
 #### 2. Transaction creation
-The wallet application guides the user through collected the required information (address and amount), and any optional information (what coins to send, fee options).
+The wallet application guides the user through collecting the required information (address and amount), and any optional information (what coins to send, fee options).
 
 #### 3. Transaction signing
 The transactoin needs to be signed by the private key(s) of the input address(es) to be valid. The signing is often done in the same application and at the same time as the creation, but this does not have to be the case.
