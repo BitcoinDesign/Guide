@@ -30,6 +30,15 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 # Glossary
 {: .no_toc }
 
+---
+
+<div class="glossary-toc" markdown="1">
+ * Table of contents
+{:toc}
+</div>
+
+---
+
 ## Address
 
 An identifier of 26-35 alphanumeric characters that is used to receive bitcoin. There are [several address formats](https://en.bitcoin.it/wiki/List_of_address_prefixes) based on different specifications. Users need to know this information during backup for future recovery so applications should inform users which format it uses as support varies across applications.
