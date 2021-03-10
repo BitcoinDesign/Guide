@@ -22,17 +22,17 @@ When building onboarding experiences, it is important to understand and develop 
 Within the Bitcoin ecosystem, there is a wide range in the level of expertise. Identifying who you are building for is crucial, as these user groups value and understand varying characteristics of coin management tools. For example, “rookies” often favor convenient, easy-to-use wallets, while well-versed bitcoin owners tend to prioritize security[^1].
 
 ## Observe your potential users
-This could take the form of user research, user interviews and surveys aimed at a range of participants and observe what they do, how they think, and what they want. Let's consider some things we might want to ask ourselves when improving the onboarding experience for new users: 
+This observation could take the form of user research, user interviews and surveys aimed at a range of participants and observe what they do, how they think, and what they want. Let's consider some things we might want to ask ourselves when improving the onboarding experience for new users:
 
 * What is their perception of Bitcoin?[^2]
 * Why do they intend to use Bitcoin, investment, savings or spending?
 * Where do they prefer to store most of their value, mobile or desktop wallets?
 * Where do they experience frustration?
 * Where does the first experience take place?
-* How did they hear about my application? Word of mouth? App store search? 
+* How did they hear about my application? Word of mouth? App store search?
 * Do first-time users have specific needs or goals?
 
-Perhaps after research, you identify your users as "cypherpunks" with sound knowledge of Bitcoin, but they are new to your app. You might build an experience that preserves as much of their privacy as possible and is super customizable from the outset. 
+Perhaps after research, you identify your users as "cypherpunks" with sound knowledge of Bitcoin, but they are new to your app. You might build an experience that preserves as much of their privacy as possible and is super customizable from the outset.
 
 Aim to gather as much information and observations as possible in order to empathize with your users.
 
@@ -41,11 +41,11 @@ You can then use this research to identify where potential problems may exist. T
 
 ### Rookie example
 
-Let's use an example of saving for the future and see how we can understand a user with this goal. For the sake of simplicity let's focus on one persona or maybe more accurately personal story. 
+Let's use an example of saving for the future and see how we can understand a user with this goal. For the sake of simplicity let's focus on one persona or maybe more accurately personal story.
 
-> Joshua Akinsola is a 21-year old Nigerian studying economics in the large city of Lagos. Growing up, his family struggled to save any money, due to a lack of financial education, high unemployment and a local currency that is inflating at 15% per year. There is a lack of reliable savings technology in his country so he opts to save money for the future using bitcoin.  
+> Joshua Akinsola is a 21-year old Nigerian studying economics in the large city of Lagos. Growing up, his family struggled to save any money, due to a lack of financial education, high unemployment and a local currency that is inflating at 15% per year. There is a lack of reliable savings technology in his country so he opts to save money for the future using bitcoin.
 
-The uncovering of this scenario could be the result of a user interview[^3], that gathers insights into their needs and frustrations. By focusing on the emotional aspect of saving using bitcoin we may identify the following themes for barriers and motivations. 
+The uncovering of this scenario could be the result of a user interview[^3], that gathers insights into their needs and frustrations. By focusing on the emotional aspect of saving using bitcoin we may identify the following themes for barriers and motivations.
 
 {% include picture.html
    image = "/assets/images/guide/onboarding/barriers-motivators.svg"
@@ -60,7 +60,7 @@ The uncovering of this scenario could be the result of a user interview[^3], tha
     * "I'm scared that I will lose my private key and lose my savings forever"
 * Fear of being hacked
     * "How will I protect myself if I get targetted by a hacker?"
-* Fear of being judged 
+* Fear of being judged
     * "Bitcoin is still new, will people think I'm weird for saving like this?"
 
 #### Motivators (strongest to weakest)
@@ -78,9 +78,9 @@ With this information, you can weaken the barriers and strengthen the motivators
 
 To weaken Josh's "Fear of losing a private key," a wallet might opt to initially backup an encrypted version of his recovery phrase to a cloud provider and educate him over time on how to take more control of his private key.
 
-Given that control is a motivator, a wallet could aim to provide as much customizability as possible such as fee selection or coin selection. 
+Given that control is a motivator, a wallet could aim to provide as much customizability as possible such as fee selection or coin selection.
 
-It's important to allow you and your team to be as free and creative about how you might solve these unmet needs. No idea is too "out there". Gather as many ideas as possible and build upon each other's ideas as you move along. Also, look for existing research and findings to compare against what you have found and check for any similarities. 
+It's important to allow you and your team to be as free and creative about how you might solve these unmet needs. No idea is too "out there". Gather as many ideas as possible and build upon each other's ideas as you move along. Also, look for existing research and findings to compare against what you have found and check for any similarities.
 
 ## Prototype & Test
 Next, you can think about prototyping a subset of these ideas and understanding your ideas' feasibility through feedback on these prototypes. Put your prototypes in front of real users and test to verify the solution meets the users' needs.
