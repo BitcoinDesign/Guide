@@ -1,13 +1,24 @@
 ---
 layout: guide
 title: Transaction overview
-description: Principles to strive for while building bitcoin applications for end-users.
+description: An overview of Bitcoin payments, common concepts and the transaction lifecycle.
 nav_order: 1
 parent: Payments
 permalink: /guide/payments/transactions/
 main_classes: -no-top-padding
 image: /assets/images/guide/payments/overview/page-overview.svg
 ---
+
+{% include picture.html
+   image = "/assets/images/guide/payments/transactions/transactions-desktop.png"
+   retina = "/assets/images/guide/payments/transactions/transactions-desktop@2x.png"
+   mobile = "/assets/images/guide/payments/transactions/transactions-mobile.png"
+   mobileRetina = "/assets/images/guide/payments/transactions/transactions-mobile@2x.png"
+   alt-text = "Example image"
+   width = 1600
+   height = 800
+   layout = "full-width"
+%}
 
 # Transactions overview
 
