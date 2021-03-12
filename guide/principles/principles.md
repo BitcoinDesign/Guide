@@ -93,10 +93,10 @@ And while Bitcoin is already widely used by a large number of people, it pales i
 - Use plain language that people new to Bitcoin can understand regardless of prior knowledge
 - Localize your product and make it multilingual 
 - Educate in place, when people are presented with a new concept
-- Treat users with impairments, or who rely on assistive technologies, as first-class citizens
+- Treat users who rely on assistive technologies, as first-class citizens
 
 **Don't**
-- Introduce requirements that might exclude many people, for example by building only for high-end hardware, requiring US KYC (Know-your-customer) information etc
+- Exclude people by building features that only work in certain countries
 - Add technical detail that is not required knowledge, or technical terms like seed phrase XPUBs, mnemonics etc.
 - Put all education up front and expect people to read and remember it
 
