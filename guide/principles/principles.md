@@ -110,17 +110,18 @@ Our existing mental models of access to digital services are usernames and passw
 
 > Provide appropriate and progressive security for all types of users
 
-Self-custody means that the end user is ultimately responsible for keeping their funds and private keys safe. They can only do that if we provide them with good, appropriate tools and awareness of best practices. It is therefore our responsibility as designers and makers to really take their security seriously and make Bitcoin products that are as secure as possible by default. We should strive for no loss of funds, regardless of whether this happens through negligence or theft. 
+Self-custody often leaves the end-user responsible for the security of their private keys. They can only do a good job of that if we provide them with appropriate tools and awareness of best practices. 
 
-Security is especially important when onboarding people new to Bitcoin where solutions that might be fine for advanced users might backfire for beginners. New users are likely to start by storing small amounts until they get comfortable with self-custody. A scheme suited for storing large amounts of funds is likely overkill and scary to a beginner, so the concept of progressive security is a good idea. This could let a user upgrade their security and private key management scheme as their savings grow. 
+Security is especially important when onboarding people new to Bitcoin where solutions that work for advanced users might backfire. New users are likely to start by storing small amounts until they get comfortable with self-custody. The concept of progressive security is a good idea for here. This would let a user upgrade their security and private key management scheme as their savings grow. 
 
-A big part of security is also education and awareness, protecting users from bad actors and potentially their own bad behavior. Bad actors may already know what most users don’t, and be aware of new vulnerabilities. It is unrealistic to expect beginners to take in all the knowledge acquired by advanced users of several years in one go, for example while onboarding to a product. We should therefore consider how to continuously educate and level up user awareness of best practices and risks.
+Education and awareness is a big part of security, protecting users from bad actors and potentially their own bad behavior. It is unrealistic to expect beginners to take in all the knowledge acquired by advanced users in one go, for example while onboarding to a product. We should therefore consider how to continuously educate and level up user awareness of best practices and risks.
 
 Security can also be a feeling. A product that is polished, good looking, easy to use and transparently communicates how it works can help users feel more secure. Especialy compared to one with the exact same security measures that lack these qualities.
 
 
 **Do**
 - Take safeguarding of users funds seriously
+- Strive for no loss of funds, whether by negligence or theft 
 - Provide suitable private key management schemes for beginners
 - Offer progressive security and upgrade paths
 - Build with bad actors in mind
