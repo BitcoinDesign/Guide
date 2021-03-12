@@ -81,7 +81,7 @@ Security can also be a feeling. A product that is polished, good looking, easy t
 
 ## Inclusion
 
-> Build borderless products without location, language, social or political barriers
+> Build borderless products without location, language or social barriers
 
 There are no background checks, credit checks, or gatekeepers to Bitcoin. A Kenyan farmer has the same access to Bitcoin as a Wall Street trader. 
 
