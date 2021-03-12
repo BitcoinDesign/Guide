@@ -98,6 +98,7 @@ Our existing mental models of access to digital services are usernames and passw
 
 **Do**
 - Let users control their private keys and funds directly
+- Create an easy path to self-custody for Bitcoin beginners
 
 **Don't**
 - Custody funds for your users
