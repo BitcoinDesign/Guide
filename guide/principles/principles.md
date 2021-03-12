@@ -128,8 +128,7 @@ While an open and decentralized financial system that lets people connect direct
 
 **Do**
 - Be open and transparent with how your product works
-- Build your product as open-source when possible
-- Let people verify, without having to trust
+- Let people verify your claims by open-sourcing your code when possible
 - Explain what risks the user is taking on, and how best to mitigate them
 
 **Don't**
