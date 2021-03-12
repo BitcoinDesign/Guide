@@ -52,7 +52,7 @@ Unlike traditional banking systems, the Bitcoin economy does not require new use
 
 ## Inclusion
 
-> Provide equal access regardless of the user's location, language, ability and prior knowledge of Bitcoin
+> Build borderless products without location, language, social or political barriers
 
 There are no background checks, credit checks, or gatekeepers to Bitcoin. A Kenyan farmer has the same access to Bitcoin as a Wall Street trader. 
 
