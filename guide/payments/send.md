@@ -181,53 +181,7 @@ If the wallet allows users to set a spending limit and the current transaction e
 
 ## Transaction processing and confirmation
 
-Once a transaction has been signed by the sender and submitted by the application, the transaction goes through the following steps before being confirmed by miners on the network:
-
-<div class="center" markdown="1">
-{% include image.html
-   image = "https://i.imgur.com/t8WHLp6.png"
-   retina = "https://i.imgur.com/t8WHLp6.png"
-   alt-text = "Example image"
-   width = 100
-   height = 100
-   layout = "float-left"
-%}
-
-**Broadcasting**<br />
-The transaction is broadcast to a node, usually the one the wallet is connected to.
-
----
-</div>
-
-<div class="center" markdown="1">
-{% include image.html
-   image = "https://i.imgur.com/Ey6hMoA.png"
-   retina = "https://i.imgur.com/Ey6hMoA.png"
-   alt-text = "Example image"
-   width = 100
-   height = 100
-   layout = "float-left"
-%}
-
-**Validation**<br />
-The node checks to see if the transaction is valid. If **Yes**, the node propagates the transaction to other nodes in the network. If **No**, the transaction is rejected.
-
----
-</div>
-
-<div class="center" markdown="1">
-{% include image.html
-   image = "https://i.imgur.com/DEsVUFj.png"
-   retina = "https://i.imgur.com/DEsVUFj.png"
-   alt-text = "Example image"
-   width = 100
-   height = 100
-   layout = "float-left"
-%}
-
-**Propagation**<br />
-Once the transaction is valid it is now in the *memory pool*, and is available for including in a block by miners. When in the *memory pool*, the sender can see the transaction in their wallet as unconfirmed.
-</div>
+Once a transaction has the correct signatures, authorised by the senders wallet, and it's broadcasted to a node, it will be in an unconfirmed state.
 
 {% include image.html
    image = "https://i.imgur.com/idV0Mt7.png"
@@ -238,34 +192,15 @@ Once the transaction is valid it is now in the *memory pool*, and is available f
 %}
 
 ### Do's
-// Maybe these can be combined, they say almost the same thing
+- Notify users of confirmed outgoing/incoming payments
+- Show the amount of confirmations a transaction has received
+- Provide information on transaction/block ID for receipt purposes
 - Notify the user which stage of the process their transaction is in:
     - Awaiting broadcast
     - Broadcast, awaiting validation
     - Validated, awaiting propagation
     - Awaiting confirmation
-- Or, simply show the transaction as pending, perhaps with a time estimate if applicable
+- Or, simply show the transaction as pending, perhaps with a time estimate if possible
 
 ### Don'ts
 - Show a  the transaction as confirmed until it has received ***at least*** one confirmation, but preferably six
-
-## Transaction confirmation
-At some point the transaction is included in a block that is added to the blockchain. This counts as a first confirmation. The recipient can be confident that they will receive the bitcoin, and may even receive a pre-emptive notification from their wallet. How long the first confirmation takes is dependent on many factors, principally - how many other transactions are waiting to be confirmed and how big a fee the transaction will pay. A new block is confirmed roughly every ten minutes.
-
-Each additional block that is accepted by the network counts as an extra confirmation. When a block (and therefore the transaction within) has 6 confirmations, it is considered final.
-
-![](https://i.imgur.com/BxvSAzE.png)
-
-### Error States
-
-// Maybe write some explanatory text here?
-
-### Do's
-- Notify users of confirmed outgoing/incoming payments
-- Show the amount of confirmations a transaction has received
-- Provide information on transaction/block ID for receipt purposes
-
-### Don'ts
-// This is doubling up with the ones in Transaction processing (maybe they can be cut and moved here?)
-
-- 
