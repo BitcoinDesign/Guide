@@ -166,7 +166,7 @@ One of the most complex users flows in Bitcoin is the creation of multisignature
    layout = "float-left"
 %}
 
-We ask users to securely back up their keys when they create new wallets to restore them later. This might be due to practical reasons like switching to a new computer or from a laptop to a smartphone. It may also be part of an investment strategy, like when a user wants to access bitcoin from cold storage after not interacting with them for months or years.
+We ask users to securely back up their keys when they create new wallets, to restore them later. This might be due to practical reasons like switching to a new computer or from a laptop to a smartphone. It may also be part of an investment strategy, like when a user wants to access bitcoin from cold storage after not interacting with them for months or years.
 
 </div>
 
