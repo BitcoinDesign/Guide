@@ -52,7 +52,7 @@ Bitcoin is fundamentally open and participatory and allows designers and creator
 
 **[Open design]({{ '/guide/getting-started/open-design/' | relative_url }})**
 
-Open design is about global collaboration that balances the free exchange of design information, individual designers' independence, and the collective power of collaboration.
+Open design is about global collaboration that balances the free exchange of design information, the independence of individual designers and the collective power of collaboration.
 
 ---
 

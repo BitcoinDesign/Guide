@@ -240,7 +240,7 @@ Equivalent to creating an invoice, requesting bitcoin involves entering informat
    height = 336
 %}
 
-While it is initially intuitive to re-use the same receiving address repeatedly, this practice is highly discouraged. Anyone with this address can easily see what other payments are being made and how the bitcoin is spent. The UI should encourage users to create new addresses for each invoice. This also makes it easier for the software to understand when a specific payment has been received.
+While it is initially intuitive to re-use the same receiving address repeatedly, this practice is highly discouraged. Anyone with this address can easily see what other payments are being made and how the bitcoins are spent. The UI should encourage users to create new addresses for each invoice. This also makes it easier for the software to understand when a specific payment has been received.
 
 The most important consideration is around how this request is securely shared and received. When transmitting this information, there is a risk that a third party can intercept it and tamper with it. This can result in Bitcoin getting sent to an attacker's address instead. So it is good to consider offering ways for both payee and payer to verify the accuracy of the information (for example, by allowing them to share the information via two different channels).
 
