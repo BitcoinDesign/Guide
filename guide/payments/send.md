@@ -27,10 +27,6 @@ To send a payment on the Bitcoin blockchain we need the recipient's address. Sin
 
 This is easily accomplished by generating a new address in the receiving wallet application, then sharing it with the sender. If the sender and receiver are together at the time, scanning the receivers address as a QR code will be easy, but if you are not they can send the address as text in any regular communication tool like email, sms etc.
 
-{% include tip-open.html %}
-There are different types of Bitcoin addresses. This can have implications for compatability when sending bitcoin. A modern wallet application is likely to use native SegWit addresses. SegWit enables cheaper transactions and other functionality. Find more information on [address types](https://bitcoin.design/guide/glossary/#address) in the glossary.
-{% include tip-close.html %}
-
 ## Input an address
 
 Once you have gotten the address, it needs to be inputed on the create transaction interface. Bitcoin transactions are irreversible so both the sender and receiver should take great care in correctly sharing and inputting addresses. 
@@ -130,7 +126,6 @@ The application can automatically estimate a fee and set it for the sender. This
 The total fee is dependent upon the data size of the transaction multiplied by the fee rate, not the amount being sent. The fee rate is expressed as satoshi's per vByte (sat/vB). Be mindful that not all bitcoin users are familiar with terms such as sat/vB, so it may be necessary to also express the value in their local currencies.
 
 {% include tip-open.html %}
-#### Fee Estimation
 Fee estimations are largly inaccurate — this is because the fee rate is impacted by everyone else who are trying to get their transactions into a block. The rate is constantly changing so it is difficult to make an accurate prediction of.
 
 The fee recomendation in your application can cause senders to end up over paying in fees, or waiting long periods of time to get their transactions confirmed.
@@ -162,7 +157,7 @@ Human error with fee selection can lead to [costly mistakes](https://www.coindes
 
 ## Reviewing and Approving the Payment
 
-A valid transaction that is broadcast to the network cannot be reversed, so it is critical that the sender is given a chance to double check the payment details (amount, recipient address, total fee, etc) before submitting the transaction.
+A valid transaction that is broadcasted to the network cannot be reversed, so it is critical that the sender is given a chance to double check the payment details (amount, recipient address, total fee, etc) before submitting the transaction.
 
 ![](https://i.imgur.com/mk3pJHa.png)
 
@@ -181,7 +176,7 @@ If the wallet allows users to set a spending limit and the current transaction e
 
 ## Transaction processing and confirmation
 
-Once a transaction has the correct signatures, authorised by the senders wallet, and it's broadcasted to a node, it will be in an unconfirmed state.
+Once the transaction is valid it is now in the *memory pool*, and is available for including in a block by miners. When in the *memory pool*, the sender can see the transaction in their wallet as unconfirmed.
 
 {% include image.html
    image = "https://i.imgur.com/idV0Mt7.png"
