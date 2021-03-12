@@ -47,7 +47,6 @@ Upon address input, the user should be clearly informed if the address is valid 
    height = 100
    layout = "float-left"
 %}
-
 **QR Code**<br />
 Once the camera detects a valid address in the QR Code, it can be automatically inputted. The user will need to grant access your application to be able to scan QR Codes.
 
@@ -88,7 +87,7 @@ Depending on their familiarity with bitcoin, your users may have a preference to
 
 - **bitcoin** — most common *(i.e. 0.00019376 btc)*
 - **local currency** — more familiar *(i.e. $10)*
-- **sats / satoshis** — more knowledgable *(i.e. 19376 sats)*
+- **sats / satoshis** — more knowledgeable *(i.e. 19376 sats)*
 
 Allowing the amount to be inputed in different denominations should be readily available. Read more about why and changing units contextually in [Units, symbols and amount display](https://deploy-preview-63--sad-borg-390916.netlify.app/guide/payments/units-and-symbols/).
 
@@ -114,7 +113,7 @@ Payment links and QR codes can contain an amount — when they do, the amount sh
 
 ## Transaction fee
 
-The application can automatically estimate a fee and set it for the sender. This would normally prioritise the transaction to be included in a block as soon as possible. Since the fee rate may vary if the network is busy, you can give senders more fine grained fee controls so they can choose to optimize for faster confirmation, or lower fees.
+The application can automatically estimate a fee and set it for the sender. This would normally prioritize the transaction to be included in a block as soon as possible. Since the fee rate may vary if the network is busy, you can give senders more fine grained fee controls so they can choose to optimize for faster confirmation, or lower fees.
 
 #### Variations
 - Automatically set fee rate
@@ -128,7 +127,7 @@ The total fee is dependent upon the data size of the transaction multiplied by t
 {% include tip-open.html %}
 Fee estimations are largely inaccurate — this is because the fee rate is impacted by everyone else who are trying to get their transactions into a block. The rate is constantly changing so it is difficult to make an accurate prediction.
 
-The fee recomendation in your application can cause senders to end up over paying in fees, or waiting long periods of time to get their transactions confirmed.
+The fee recommendation in your application can cause senders to end up over paying in fees, or waiting long periods of time to get their transactions confirmed.
 {% include tip-close.html %}
 
 ### Setting the transaction fee manually
@@ -141,13 +140,13 @@ Human error with fee selection can lead to [costly mistakes](https://www.coindes
 
 ### Do's
 
-- Clearly communicate infomation related to the fee rate options
+- Clearly communicate information related to the fee rate options
 - Display the fee rate and estimated transaction confirmation time
 - Display bitcoin and local currency denominations for cost reference
 - Include an option to adjust this rate with either:
     - Select from priority pre-set options (high, medium, low priority)
     - Manually entering a fee rate for their transaction
-- Display a warning if the user enters an amount far beyond the recommened rate
+- Display a warning if the user enters an amount far beyond the recommended rate
 - Consider offering a [replace by fee]() option to speed up stuck transactions
 
 ### Don'ts
@@ -176,7 +175,9 @@ If the wallet allows users to set a spending limit and the current transaction e
 
 ## Transaction processing and confirmation
 
-Once the transaction is valid it is now in the *memory pool*, and is available for including in a block by miners. When in the *memory pool*, the sender can see the transaction in their wallet as unconfirmed.
+Once the transaction is valid it is now in the *memory pool*, and is available for including in a block by miners. When in the *memory pool*, the sender can see the transaction in their wallet as unconfirmed or pending.
+
+After broadcasting a transaction, the process of propagation and validation is quite fast so showing these states may be infeasible. You may inform the user that their transaction is pending a confirmation, the estimated time to confirm given the current fee market, and once it has gotten its first confirmation.
 
 {% include image.html
    image = "https://i.imgur.com/idV0Mt7.png"
@@ -187,15 +188,9 @@ Once the transaction is valid it is now in the *memory pool*, and is available f
 %}
 
 ### Do's
-- Notify users of confirmed outgoing/incoming payments
-- Show the amount of confirmations a transaction has received
+- Clearly indicate state of the outgoing transaction
+- Show the amount of confirmations the transaction has gotten
 - Provide information on transaction/block ID for receipt purposes
-- Notify the user which stage of the process their transaction is in:
-    - Awaiting broadcast
-    - Broadcast, awaiting validation
-    - Validated, awaiting propagation
-    - Awaiting confirmation
-- Or, simply show the transaction as pending, perhaps with a time estimate if possible
 
 ### Don'ts
 - Show a  the transaction as confirmed until it has received ***at least*** one confirmation, but preferably six
