@@ -25,11 +25,11 @@ The order of configuration for the payment can be tailored to your use case. For
 ## Get the recipient address
 To send a payment on the Bitcoin blockchain we need the recipient's address. Since Bitcoin [addresses](https://bitcoin.design/guide/glossary/#address) are long and seemingly random, they are best shared by copying and pasting in plain text, as a [payment link](https://bitcoin.design/guide/foundations/wallet-interoperability/#payment-links), or as a scannable [QR Code](https://bitcoin.design/guide/foundations/wallet-interoperability/#qr-codes).
 
-This is easily accomplished by generating a new address in the receiving wallet application, then sharing it with the sender. If the sender and receiver are together at the time, scanning the receivers address as a QR code will be easy, but if you are not they can send the address as text in any regular communication tool like email, sms etc.
+This is easily accomplished by generating a new address in the receiving wallet application, then sharing it with the sender. If the sender and receiver are together at the time, scanning the receivers address as a QR code will be easy, but if they are not, they can send the address as text in any regular communication tool like email, sms etc.
 
 ## Input an address
 
-Once you have gotten the address, it needs to be inputed on the create transaction interface. Bitcoin transactions are irreversible so both the sender and receiver should take great care in correctly sharing and inputting addresses. 
+Once you have gotten the address, it needs to be inputted on the "create transaction" interface. Bitcoin transactions are irreversible so both the sender and receiver should take great care in correctly sharing and inputting addresses. 
 
 Upon address input, the user should be clearly informed if the address is valid or not. If the address is not valid, or incompatible with the current application, sending should be disabled.
 
@@ -92,7 +92,7 @@ Depending on their familiarity with bitcoin, your users may have a preference to
 
 Allowing the amount to be inputed in different denominations should be readily available. Read more about why and changing units contextually in [Units, symbols and amount display](https://deploy-preview-63--sad-borg-390916.netlify.app/guide/payments/units-and-symbols/).
 
-Since an amount specified in bitcoin or sats often involve many digits, and don't correspond easily to a local currency amount ($10 as 0.00019376 bitcoin for example). Applications can let the sender select fractions of the total available balance. Most common is *max*, which also makes it easy for the user to sweep all of the available coins to another wallet.
+Since an amount specified in bitcoin or sats often involve many digits, and don't correspond easily to a local currency amount ($10 as 0.00019376 bitcoin for example). Applications can allow the sender select fractions of the total available balance. Most common is *max* or *all*, which also makes it easy for the user to sweep the entire balance to another wallet.
 
 {% include tip-open.html %}
 Payment links and QR codes can contain an amount — when they do, the amount should be populated automatically.
@@ -114,7 +114,7 @@ Payment links and QR codes can contain an amount — when they do, the amount sh
 
 ## Transaction fee
 
-The application can automatically estimate a fee and set it for the sender. This would normally prioritise the transaction to be included in a block as soon as possible. Since the fee rate may vary if the network is busy, you can give senders more fine grained fee controls so they choose to optimize for faster confirmation, or lower fees.
+The application can automatically estimate a fee and set it for the sender. This would normally prioritise the transaction to be included in a block as soon as possible. Since the fee rate may vary if the network is busy, you can give senders more fine grained fee controls so they can choose to optimize for faster confirmation, or lower fees.
 
 #### Variations
 - Automatically set fee rate
@@ -126,7 +126,7 @@ The application can automatically estimate a fee and set it for the sender. This
 The total fee is dependent upon the data size of the transaction multiplied by the fee rate, not the amount being sent. The fee rate is expressed as satoshi's per vByte (sat/vB). Be mindful that not all bitcoin users are familiar with terms such as sat/vB, so it may be necessary to also express the value in their local currencies.
 
 {% include tip-open.html %}
-Fee estimations are largly inaccurate — this is because the fee rate is impacted by everyone else who are trying to get their transactions into a block. The rate is constantly changing so it is difficult to make an accurate prediction of.
+Fee estimations are largely inaccurate — this is because the fee rate is impacted by everyone else who are trying to get their transactions into a block. The rate is constantly changing so it is difficult to make an accurate prediction.
 
 The fee recomendation in your application can cause senders to end up over paying in fees, or waiting long periods of time to get their transactions confirmed.
 {% include tip-close.html %}
@@ -137,7 +137,7 @@ The fee recomendation in your application can cause senders to end up over payin
 
 When allowing users to set their own fee, it is important to clearly communicate the estimated cost and confirmation time, along with some details on how the fee gets calculated ([see below](#How-are-transaction-fees-calculated)).
 
-Human error with fee selection can lead to [costly mistakes](https://www.coindesk.com/dumb-mistakes-costly-bitcoin-losses). Someone can set a fee rate that's way too high, overpaying in fees or having transactions stuck for long periods of time if the fee is too low. For these reasons you should carefully consider if and how to expose transaction fees to users depending on the usecase.
+Human error with fee selection can lead to [costly mistakes](https://www.coindesk.com/dumb-mistakes-costly-bitcoin-losses). Someone can set a fee rate that's way too high, overpaying in fees or having transactions stuck for long periods of time if the fee is too low. For these reasons you should carefully consider if and how to expose transaction fees to users depending on the use case.
 
 ### Do's
 
