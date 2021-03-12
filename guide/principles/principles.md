@@ -6,6 +6,7 @@ nav_order: 9
 parent: Foundations
 permalink: /guide/foundations/principles/
 main_classes: -no-top-padding
+image: /assets/images/guide/foundation/principles/page-principles.jpg
 ---
 
 <!--
@@ -15,6 +16,17 @@ Editor's notes
 The key principles of designing for Bitcoin
 
 -->
+
+{% include picture.html
+   image = "/assets/images/guide/foundation/principles/principles.jpg"
+   retina = "/assets/images/guide/foundation/principles/principles@2x.jpg"
+   mobile = "/assets/images/guide/foundation/principles/principles-mobile.jpg"
+   mobileRetina = "/assets/images/foundation/principles/principles-mobile@2x.jpg"
+   alt-text = "Principles header illustration"
+   width = 1600
+   height = 600
+   layout = "full-width"
+%}
 
 # Bitcoin design principles
 
