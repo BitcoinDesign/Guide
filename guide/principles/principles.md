@@ -75,9 +75,9 @@ And while Bitcoin is already widely used by a large number of people, it pales i
 
 ## Transparency
 
-> Open-source your products and clearly explain how they work
+> Be open and transparent with how your product works, open-source your code when possible
 
-While an open and decentralized financial system that lets people connect directly with it is great, it does put a lot of burden on the users to pick a product they trust, and that works for them. We can make this easier by freely sharing information about how our products work, what technologies they use and rely on and so forth. Let people verify that your claims are true. It is also very important to be open about what risks the user might be taking on with self-custody, under which scenarios they might lose access to their funds and best practices for avoiding this. 
+While an open and decentralized financial system that lets people connect directly with it is great, it does put a lot of burden on the users to pick a product they trust, and that works for them. We can make this easier by freely sharing information about how our products work, what technologies they use and rely on. Let people verify that your claims are true, ideally by open-sourcing your own code. It is also very important to be open about what risks the user might be taking on with self-custody, under which scenarios they might lose access to their funds and best practices for avoiding this. 
 
 **Do**
 - Be open and transparent with how your product works
