@@ -87,7 +87,7 @@ In open design, we:
 - are open-minded and flexible
 - work multidisciplinary because good results require different perspectives and skillsets
 - continuously learn independently and from each other
-- rely on our peer group for free and communal validation of a quality
+- rely on our peer group for free and communal validation of quality
 - are accountable for our actions and have vested interest in the groups' actions and goals
 
 And we value:

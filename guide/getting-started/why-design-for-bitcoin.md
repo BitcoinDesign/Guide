@@ -53,7 +53,7 @@ There are still very few dedicated designers working in the Bitcoin ecosystem. A
 
 ## Design for your needs
 
-Many bitcoin projects start by identifying an unmet need. Unlike traditional finance, the barriers to entry are shallow. So if you were ever unhappy with your bank's service of a financial provider, here's your chance to shape something better.
+Many bitcoin projects start by identifying an unmet need. Unlike traditional finance, the barriers to entry are shallow. So if you were ever unhappy with the service of your bank or financial provider, here's your chance to shape something better.
 
 ## Work in public
 

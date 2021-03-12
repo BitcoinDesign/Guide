@@ -34,7 +34,7 @@ Illustration sources
 
 # Getting started
 
-Welcome to Bitcoin Design Guide Guide! You’re in for an adventure. This chapter is all about the big concepts that are helpful to be familiar with when creating Bitcoin products. You’ll find a summary of concepts on this page, click through if you would like to dig deeper into a specific topic. The guide isn't a comprehensive overview of all Bitcoin topics, but only the ones you should know as a designer working in this space.
+Welcome to the Bitcoin Design Guide! You’re in for an adventure. This chapter is all about the big concepts that are helpful to be familiar with when creating Bitcoin products. You’ll find a summary of concepts on this page, click through if you would like to dig deeper into a specific topic. The guide isn't a comprehensive overview of all Bitcoin topics, but only the ones you should know as a designer working in this space.
 
 ---
 
@@ -82,7 +82,7 @@ All users start without any knowledge of Bitcoin or your particular product. As 
 
 **[Common user flows]({{ '/guide/getting-started/common-user-flows/' | relative_url }})**
 
-Most Bitcoin applications share certain user activities, from initial setup to making a transaction. It is vital to follow users' expected patterns and behaviors to reduce mistakes and enable seamless move between products.
+Most Bitcoin applications share certain user activities, from initial setup to making a transaction. It is vital to follow users' expected patterns and behaviors to reduce mistakes and enable seamless switching between products.
 
 ---
 
