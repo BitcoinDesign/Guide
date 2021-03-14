@@ -112,9 +112,7 @@ Human error with fee selection can lead to [costly mistakes](https://www.coindes
 - Clearly communicate information related to the fee rate options
 - Display the fee rate and estimated transaction confirmation time
 - Display bitcoin and local currency denominations for cost reference
-- Include an option to adjust this rate with either:
-    - Select from priority pre-set options (high, medium, low priority)
-    - Manually entering a fee rate for their transaction
+- Include an option to adjust fee rate based on some presets (e.g. high, medium, low priority)
 - Display a warning if the user enters an amount far beyond the recommended rate
 - Consider offering a [replace by fee]() option to speed up stuck transactions
 
