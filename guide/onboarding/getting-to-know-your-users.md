@@ -22,7 +22,7 @@ When building onboarding experiences, it is important to understand and develop 
 Within the Bitcoin ecosystem, there is a wide range in the level of expertise. Identifying who you are building for is crucial, as these user groups value and understand varying characteristics of coin management tools. For example, “rookies” often favor convenient, easy-to-use wallets, while well-versed bitcoin owners tend to prioritize security[^1].
 
 ## Observe your potential users
-This observation could take the form of user research, user interviews and surveys aimed at a range of participants and observe what they do, how they think, and what they want. Let's consider some things we might want to ask ourselves when improving the onboarding experience for new users:
+This observation could take the form of user research, user interviews and surveys aimed at a range of participants to observe what they do, how they think, and what they want. Let's consider some things you might want to ask yourself when improving the onboarding experience for new users:
 
 * What is their perception of Bitcoin?[^2]
 * Why do they intend to use Bitcoin, investment, savings or spending?
