@@ -53,6 +53,13 @@ Motivators are specific user wants that are driving the user to seek out Bitcoin
 
 #### Barriers (strongest to weakest)
 
+{% include picture.html
+   image = "/assets/images/guide/onboarding/barriers.svg"
+   alt-text = "barriers"
+   width = 1600
+   height = 800
+%}
+
 * Fear of losing private key
     * "I'm scared that I will lose my private key and so I still keep some of my savings in cash and not bitcoin"
 * Fear of being hacked
@@ -61,6 +68,14 @@ Motivators are specific user wants that are driving the user to seek out Bitcoin
     * "Bitcoin is still new, will people think I'm weird for saving like this?"
 
 #### Motivators (strongest to weakest)
+
+{% include picture.html
+   image = "/assets/images/guide/onboarding/motivators.svg"
+   alt-text = "motivators"
+   width = 1600
+   height = 800
+%}
+
 * Financial security
     * "I think bitcoin is a good way of saving for the future, and my local currency is unreliable"
 * Control
@@ -68,13 +83,6 @@ Motivators are specific user wants that are driving the user to seek out Bitcoin
 * Privacy
     * "I don't want my personal data and information to get into the wrong hands"
 
-
-{% include picture.html
-   image = "/assets/images/guide/onboarding/barriers-motivators.svg"
-   alt-text = "Barriers & motivators"
-   width = 1600
-   height = 800
-%}
 
 ## Brainstorm solutions with your team
 With this information, you can craft solutions based on these barriers and motivators to create the best experience for a user like Josh.
