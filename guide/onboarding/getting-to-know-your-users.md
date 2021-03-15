@@ -39,13 +39,35 @@ Aim to gather as much information and observations as possible in order to empat
 ## Identify barriers and motivators they have
 You can then use this research to identify where potential problems may exist. This will then allow you to highlight opportunities for innovation.
 
-### Rookie example
+### Example
 
-Let's use an example of saving for the future and see how we can understand a user with this goal. For the sake of simplicity let's focus on one persona or maybe more accurately personal story.
+For the sake of simplicity let's focus on one hypothetical user.
 
 > Joshua Akinsola is a 21-year old Nigerian studying economics in the large city of Lagos. Growing up, his family struggled to save any money, due to a lack of financial education, high unemployment and a local currency that is inflating at 15% per year. There is a lack of reliable savings technology in his country so he opts to save money for the future using bitcoin.
 
-The uncovering of this scenario could be the result of a user interview[^3], that gathers insights into their needs and frustrations. By focusing on the emotional aspect of saving using bitcoin we may identify the following themes for barriers and motivations.
+The uncovering of this scenario could be the result of a user interview[^3] or found in various channels such as chats, issues or even twitter. We can then take quotes from the participant to understand their emotions and infer their specific needs. This then helps us identify barriers and motivators.
+
+Barriers are anything that the user percieves as preventing them from acheiving their desired goals.
+
+Motivators are specific user wants that are driving the user to seek out Bitcoin in the first place
+
+#### Barriers (strongest to weakest)
+
+* Fear of losing private key
+    * "I'm scared that I will lose my private key and so I still keep some of my savings in cash and not bitcoin"
+* Fear of being hacked
+    * "What if a hacker knows I have a lot of savings, how will I protect my funds and myself?"
+* Fear of being judged
+    * "Bitcoin is still new, will people think I'm weird for saving like this?"
+
+#### Motivators (strongest to weakest)
+* Financial security
+    * "I think bitcoin is a good way of saving for the future, and my local currency is unreliable"
+* Control
+    * "I want to be in total control of my money, I don't trust my government to keep inflation low"
+* Privacy
+    * "I don't want my personal data and information to get into the wrong hands"
+
 
 {% include picture.html
    image = "/assets/images/guide/onboarding/barriers-motivators.svg"
@@ -54,27 +76,8 @@ The uncovering of this scenario could be the result of a user interview[^3], tha
    height = 800
 %}
 
-#### Barriers (strongest to weakest)
-
-* Fear of losing private key
-    * "I'm scared that I will lose my private key and lose my savings forever"
-* Fear of being hacked
-    * "How will I protect myself if I get targetted by a hacker?"
-* Fear of being judged
-    * "Bitcoin is still new, will people think I'm weird for saving like this?"
-
-#### Motivators (strongest to weakest)
-* Security
-    * "I want to have some security about my future, so I can own a home and send my kids to school"
-* Control
-    * "I want to be in total control of my money, I don't trust my government to keep inflation low"
-* Knowledge
-    * "I think it's the future so it makes sense to learn more about it"
-
-You might also uncover barriers and motivators in various channels such as chats, issues or even twitter and find insights this way.
-
 ## Brainstorm solutions with your team
-With this information, you can weaken the barriers and strengthen the motivators to craft the best experience for a user like Josh.
+With this information, you can craft solutions based on these barriers and motivators to create the best experience for a user like Josh.
 
 To weaken Josh's "Fear of losing a private key," a wallet might opt to initially backup an encrypted version of his recovery phrase to a cloud provider and educate him over time on how to take more control of his private key.
 
