@@ -40,7 +40,7 @@ Illustration sources
 # Common user flows
 {:.no_toc}
 
-Some applications are like Swiss Army Knives. They provide many different invidiual tools and it is up to each user to find the right one for their job and use it effectively. Other software is highly optimized for specific use cases and provides specific, more linear work flows for each one. And many applications use both approaches at different times. Particularly for new users and for initial software setup, offering linear workflows (also known as wizards), can be very helpful in successfully completing tasks.
+Some applications are like Swiss Army Knives. They provide many different individual tools, and it is up to each user to find the right one for their job and use it effectively. Other software is highly optimized for clear use cases and provides specific, more linear workflows for each one. And many applications use both approaches at different times. Particularly for new users and for initial software setup, offering linear workflows (also known as wizards) can help complete tasks.
 
 Let's take a look at some common user needs and workflows that can be created for them.
 
@@ -49,7 +49,7 @@ Let's take a look at some common user needs and workflows that can be created fo
 
 ## Orientation
 
-This step is many times overlooked, but before anyone uses your product, they first need to find out that it exists, understand and develop interest and decide to start using it. If users cannot quickly learn the purpose and benefits of the application, they are less likely to use it. Also see the first three phases of the [usage life cycle]({% link guide/getting-started/usage-life-cycle.md %}).
+This step is often overlooked, but before anyone uses your product, they first need to find out that it exists, understand and develop interest and decide to start using it. If users cannot quickly learn the application's purpose and benefits, they are less likely to use it. Also see the first three phases of the [usage life cycle]({% link guide/getting-started/usage-life-cycle.md %}).
 
 ## Software download & installation
 
@@ -64,7 +64,7 @@ This step is many times overlooked, but before anyone uses your product, they fi
    layout = "float-left"
 %}
 
-Mobile app stores do a good job at providing previews of what using an app will be like. Through copy, videos, images and reviews, users can make informed decisions about the product they are evaluating. Open-source software is typically downloaded via a website or from Github and each project decides what information to present. 
+Mobile app stores do a good job at providing previews of what using an app will be like. Through copy, videos, images, and reviews, users can make informed decisions about the product they are evaluating. Open-source software is typically downloaded via a website or from Github, and each project decides what information to present.
 
 </div>
 
@@ -92,7 +92,7 @@ Here are two different examples of webpages for downloading bitcoin wallet softw
 
 </div>
 
-The App Store landing page includes screenshots, a description and updates in the latest version, as well as user reviews and information about the developer. The bitcoincore.org landing page does not allow me to get an idea of how the product works, what it looks like, or what others think of it. Instead it provides multiple download links, requirements, and information about how to verify that it is indeed the software I am looking for. The two approaches are for different phases of the usage life cycle. One is for the aware user who wants to determine whether they are interested in the product. The other is for the interested user who wants to start using the product. Make sure to satisfy both of these users.
+The App Store landing page includes screenshots, a description, updates in the latest version and user reviews, and information about the developer. The bitcoincore.org landing page does not allow me to get an idea of how the product works, what it looks like, or what others think of it. Instead, it provides multiple download links, requirements, and information about how to verify that it is indeed the software I am looking for. The two approaches are for different phases of the usage life cycle. One is for the aware user who wants to determine whether they are interested in the product. The other is for the interested user who wants to start using the product. Make sure to satisfy both of these users.
 
 ## Software onboarding
 
@@ -109,7 +109,7 @@ The App Store landing page includes screenshots, a description and updates in th
 
 Bitcoin is complex, and so it is recommended to think through and carefully shape the first experience users have in your product. Without being overwhelming or getting into too much detail, this user flow should explain core concepts and features that allow users to create mental models on how they will use the application.
 
-Onboarding may be purely informational based on the content, but many times it also includes an initial setup that helps personalize the software towards the users specific needs and context. After onboarding, users are mostly on their own, so the goal is to leave users with a clear idea on how to achieve what they came for.
+Onboarding may be purely informational based on the content, but it also includes an initial setup that helps personalize the software towards the users' specific needs and context. After onboarding, users are mostly on their own, so the goal is to leave users with a clear idea of achieving what they came for.
 
 The example below shows a series of approaches:
 
@@ -145,7 +145,7 @@ A whole section about onboarding is in development for this guide, stay tuned fo
    layout = "float-left"
 %}
 
-It is important here to distinguish between wallet software, and the wallet that represents the users "account". This particular experience may be almost invisible or highly elaborate. While some mobile wallet applications choose to automatically create and secure a wallet during first launch, other wallets provide extensive configuration wizards.
+It is essential to distinguish between wallet software and the wallet representing the user's "account." This particular experience may be almost invisible or highly elaborate. While some mobile wallet applications choose to create and secure a wallet during the first launch automatically, other wallets provide extensive configuration wizards.
 
 </div>
 
@@ -166,7 +166,7 @@ One of the most complex users flows in Bitcoin is the creation of multisignature
    layout = "float-left"
 %}
 
-We ask users to securely back up their keys when they create new wallets so they can restore them later. This might be due to practical reasons like switching to a new computer or from a laptop to a smartphone. It may also be part of an investment strategy, like when a user wants to access bitcoin from cold storage after not interacting with them for months or years.
+We ask users to securely back up their keys when they create new wallets, to restore them later. This might be due to practical reasons like switching to a new computer or from a laptop to a smartphone. It may also be part of an investment strategy, like when a user wants to access bitcoin from cold storage after not interacting with them for months or years.
 
 </div>
 
@@ -183,7 +183,7 @@ We ask users to securely back up their keys when they create new wallets so they
    layout = "float-left"
 %}
 
-Similar to fiat currencies, securely storing money can be as simple as storing some coins in your pocket, or highly complex with safety deposit boxes at multiple banks. For self-custodial wallets, all of this is in the hands of the users, although wallet software ideally provides guidelines and support to more easily follow best practices. Continue to the Key Management section for introductions and deep-dives into different techniques.
+Like fiat currencies, securely storing money can be as simple as storing some coins in your pocket or highly complex with multiple banks' safety deposit boxes. For self-custodial wallets, all of this is in the users' hands, although wallet software ideally provides guidelines and support to more easily follow best practices. Continue to the Key Management section for introductions and deep-dives into different techniques.
 
 </div>
 
@@ -213,7 +213,7 @@ While we all prefer to receive bitcoin, there are times when we need to send the
    height = 656
 %}
 
-Once a transaction has been broadcast, the bitcoin network starts processing it. Users may want to stay informed about this progress, particularly when a transaction takes longer than expected. In extreme cases, it is possible to retroactively increase the transaction fee so it gets validated faster with a technique called Replace-by-Fee.
+Once a transaction has been broadcast, the bitcoin network starts processing it. Users may want to stay informed about this progress, particularly when a transaction takes longer than expected. In extreme cases, it is possible to retroactively increase the transaction fee to get validated faster with a Replace-by-Fee technique.
 
 ## Requesting bitcoin
 
@@ -228,8 +228,7 @@ Once a transaction has been broadcast, the bitcoin network starts processing it.
    layout = "float-left"
 %}
 
-Equivalent to creating an invoice, requesting bitcoin involves entering information about this specific transaction and forwarding it to the payer. Overall, there is less complexity involved in this process as for sending, but there are a few things for designers to consider.
-
+Equivalent to creating an invoice, requesting bitcoin involves entering information about this specific transaction and forwarding it to the payer. Overall, there is less complexity involved in this process than sending, but there are a few things for designers to consider.
 </div>
 
 {% include image.html
@@ -241,11 +240,11 @@ Equivalent to creating an invoice, requesting bitcoin involves entering informat
    height = 336
 %}
 
-While it is initially intuitive to re-use the same receiving address over and over, this practice is highly discouraged. Anyone with this address can easily see what other payments are being made to it and how the bitcoin are spent. The UI should encourage users to create new addresses for each invoice. This also makes it easier for the software to understand when a specific payment has been received.
+While it is initially intuitive to re-use the same receiving address repeatedly, this practice is highly discouraged. Anyone with this address can easily see what other payments are being made and how the bitcoins are spent. The UI should encourage users to create new addresses for each invoice. This also makes it easier for the software to understand when a specific payment has been received.
 
-The most important consideration is around how this request is securely shared and received. When transmitting this information, there is a risk that a third party can intercept it and tamper with it. This can result in Bitcoin getting sent to an attackers address instead. So it is good to consider offering ways for both payee and payer to verify the accuracy of the information (for example by allowing them to share the information via two different channels).
+The most important consideration is around how this request is securely shared and received. When transmitting this information, there is a risk that a third party can intercept it and tamper with it. This can result in Bitcoin getting sent to an attacker's address instead. So it is good to consider offering ways for both payee and payer to verify the accuracy of the information (for example, by allowing them to share the information via two different channels).
 
-As for data formats for sharing, [BIP 21](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki){:target="_blank"} describes a URI scheme to turn requests into links that can be shared like any other link. On  click, wallets that support this scheme can immediately show the send screen with the correct information pre-filled. Links can also be encoded and transmitted via QR code. Since the scheme also allows for inclusion of an address label and transaction description, it allows both sender and recipient to stay organized.
+As for data formats for sharing, [BIP 21](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki){:target="_blank"} describes a URI scheme to turn requests into links that can be shared like any other link. On click, wallets that support this scheme can immediately show the send screen with the correct information pre-filled. Links can also be encoded and transmitted via QR code. Since the scheme also allows for the inclusion of an address label and transaction description, it allows both sender and recipient to stay organized.
 
 ## Receiving bitcoin
 
@@ -260,8 +259,7 @@ As for data formats for sharing, [BIP 21](https://github.com/bitcoin/bips/blob/m
    layout = "float-left"
 %}
 
-Once a user has requested a payment, they are naturally interested in knowing when it has been sent and confirmed. Even when the request was not specifically made, it is nice to know when you receive money. This can ideally be communicated via push notifications or similar mechanisms. Since the Bitcoin network does not have native functionality to push updates to wallet clients, this requires wallet software to regularly check for new transactions, or the use of a trusted third-party service. 
-
+Once a user has requested payment, they are naturally interested in knowing when sent and confirmed. Even when the request was not specifically made, it is nice to know when you receive money. This can ideally be communicated via push notifications or similar mechanisms. Since the Bitcoin network does not have native functionality to push updates to wallet clients, this requires wallet software to regularly check for new transactions or the use of trusted third-party service.
 </div>
 
 <div class="center" markdown="1">
@@ -275,7 +273,7 @@ Once a user has requested a payment, they are naturally interested in knowing wh
    layout = "float-right"
 %}
 
-A user may also want to check in and see if there are any previous requests that have not been completed yet. This is easily possible if the user has initiated all requests on the same wallet and used a new address for each one. In this case, a request can be considered fulfilled if at least one payment has been received with the total amount the user asked for. It is not as clear if addressess are getting re-used (how to tell which payment was for which purpose?) or the request has been made with another wallet (as this meta data is not stored and synced via the Bitcoin network).
+A user may also want to check in and see if any previous requests have not been completed yet. This is easily possible if the user has initiated all requests on the same wallet and used a new address for each one. In this case, a request can be considered fulfilled if at least one payment has been received with the total amount the user asked for. It is not as clear if addressess are getting re-used (how to tell which payment was for which purpose?) or the request has been made with another wallet (as this meta data is not stored and synced via the Bitcoin network).
 
 </div>
 
@@ -292,13 +290,12 @@ A user may also want to check in and see if there are any previous requests that
    layout = "float-left"
 %}
 
-While the bitcoin network only stores transactions, a wallet is more than just a list of bitcoin sent and received. Behind each transaction is an interaction between people and companies (or software). So for a user to make sense and work with transactions, they typically need to apply an organizational system. This could be a list of contacts they assign addresses to, tags like "allowance" or "business expenses", or simple describing what a transaction was for.
-
+While the Bitcoin network only stores transactions, a wallet is more than just a list of bitcoin sent and received. Behind each transaction is an interaction between people and companies (or software). To make sense and work with transactions, they typically need to apply an organizational system. This could be a list of contacts they assign addresses to, tags like "allowance" or "business expenses," or simply describing what a transaction was for.
 </div>
 
 Wallet software can support users and make this easier by offering organizational features and automated organization as it is possible.
 
-This is not only helpful to users, but can also help improve privacy. Since the individual transaction history can be traced, it is helpful to isolate transactions by sender and/or recipient. If I receive bitcoin from an exchange and then pay a store, then there is a chance that personal information about myself can be uncovered by making that connection. With well-labelled transactions, wallets can help users avoid this type of situation.
+This is not only helpful to users but can also help improve privacy. Since the individual transaction history can be traced, it is helpful to isolate transactions by the sender and/or recipient. If I receive bitcoin from an exchange and then pay a store, then there is a chance that personal information about myself can be uncovered by making that connection. With well-labeled transactions, wallets can help users avoid this type of situation.
 
 ## Switch wallets
 
@@ -313,7 +310,7 @@ This is not only helpful to users, but can also help improve privacy. Since the 
    layout = "float-left"
 %}
 
-In some circumstances users need to move all their funds to a new wallet. This may be because a wallet is potentially compromised, a simple change of software, or a migration to a wallet with a security setup that is more appropriate to the amount of funds stored. Whichever it may be, this can be a vital function for users that should be supported by applications. While it is easy to simply send all funds to a new address, there is additional meta and state data stored in wallet applications that also needs to be considered.
+In some circumstances, users need to move all their funds to a new wallet. This may be because a wallet is potentially compromised, a simple change of software, or a migration to a wallet with a security setup that is more appropriate to the number of funds stored. Whichever it may be, this can be a vital function for users that applications should support. While it is easy to send all funds to a new address simply, additional meta and state data stored in wallet applications also need to be considered.
 
 </div>
 
@@ -348,7 +345,7 @@ It is not necessarily intuitive that a wallet may need maintenance, but there ar
    layout = "float-left"
 %}
 
-This is similar to exchanging many small coins into bills (like exchanging 100 one-dollar bills to a single one-hundred dollar bill). Dust refers to small amounts of unspent bitcoin in a wallet. If they add up, future transactions fees can become costly. That's because fees are partially based on transaction size. This size increases with every output from a previous transaction that is included. Sweeping dust helps by making a transaction to yourself that turns the many outputs with small amounts into a single output with a larger amount. This is typically done at a time when there are few transactions being done on the bitcoin network, which is another factor in fee calculation (senders choose how much they want to pay in fees, and the network prioritizes transactions that pay more).
+This is similar to exchanging many small coins into bills (like exchanging 100 one-dollar bills to a single one-hundred dollar bill). Dust refers to small amounts of unspent bitcoin in a wallet. If they add up, future transaction fees can become costly. That's because fees are partially based on transaction size. This size increases with every output from a previous transaction that is included. Sweeping dust helps by making a transaction to yourself that turns the many outputs with small amounts into a single output with a larger amount. This is typically done at a time when few transactions are being done on the bitcoin network, which is another factor in fee calculation (senders choose how much they want to pay in fees, and the network prioritizes transactions that pay more).
 
 </div>
 
@@ -366,7 +363,7 @@ This is similar to exchanging many small coins into bills (like exchanging 100 o
    layout = "float-left"
 %}
 
-Mixing coins is a technique to improve transaction privacy by making a special transaction. Multiple senders participate in the same transaction by sending and receiving identical amounts of bitcoin. Because this intertwines the transaction history of those coins, it becomes much harder to trace the individual coins and their respective owners. 
+Mixing coins is a technique to improve transaction privacy by making a special transaction. Multiple senders participate in the same transaction by sending and receiving identical amounts of bitcoin. Because this intertwines the transaction history of those coins, it becomes much harder to trace the individual coins and their respective owners.
 
 </div>
 
@@ -384,7 +381,7 @@ Mixing coins is a technique to improve transaction privacy by making a special t
    layout = "float-left"
 %}
 
-Whether it's to ensure a hardware wallet still works, or to install a software update, it is recommended to regularly verify that everything still operates as expected. If a hardware wallet is exclusively used with a particular application, then the application can offer users support with this task (for example, by reminding users to check the hardware wallet every six months). The higher the amount stored, the more important it is to regularly check on the health of the setup.
+Whether it's to ensure a hardware wallet still works, or to install a software update, it is recommended to verify that everything still operates as expected regularly. If a hardware wallet is exclusively used with a particular application, then the application can offer users support with this task (for example, by reminding users to check the hardware wallet every six months). The higher the amount stored, the more important it is to check on the health of the setup regularly.
 
 </div>
 
@@ -401,7 +398,7 @@ Whether it's to ensure a hardware wallet still works, or to install a software u
    layout = "float-left"
 %}
 
-This can be a tricky experience to address. For one, non-custodial cryptocurrency management by nature places a lot of responsibility on the user. This also puts much of the burden of solving problems on users. The second aspect is that open-source software typically relies on online documentation and forums for "customer service". Ideally, software helps prevent errors as much as possible through techniques like validating user input and requiring extra approvals for impactful actions. When this is not possible though, and errors do occur, they should be communicated as clearly as possible.
+This can be a tricky experience to address. For one, non-custodial cryptocurrency management by nature places a lot of responsibility on the user. This also puts much of the burden of solving problems on users. The second aspect is that open-source software typically relies on online documentation and forums for "customer service." Ideally, the software helps prevent errors as much as possible through validating user input and requiring extra approvals for impactful actions. When this is not possible, though, and errors do occur, they should be communicated as clearly as possible.
 
 </div>
 

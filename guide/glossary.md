@@ -2,7 +2,7 @@
 layout: guide
 title: Glossary
 permalink: /guide/glossary/
-nav_order: 6
+nav_order: 8
 main_classes: -no-top-padding
 image: /assets/images/guide/glossary/glossary-preview.jpg
 ---
@@ -29,6 +29,15 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 
 # Glossary
 {: .no_toc }
+
+---
+
+<div class="glossary-toc" markdown="1">
+ * Table of contents
+{:toc}
+</div>
+
+---
 
 ## Address
 
