@@ -40,7 +40,7 @@ Generally, any hardware with an internet connection can interact with the bitcoi
 
 ## Recovery phrase storage
 
-Simple, cheap and robust storage solutions for recovery phrases come in modest forms. [Seedplate](https://bitcoinseedbackup.com/){:target="_blank"}, for example, is a metal plate in which users can etch the words of their recovery phrase for long-term offline storage. [CardWallet](https://www.cardwallet.com){:target="_blank"}, in comparison, is the size of a credit card and comes pre-loaded with a recovery phrase (hidden behind a security seal) and a matching bitcoin address. And if you like an even simpler solution, a piece of paper will do. Although paper is not as durable and may be easy to loose, it is one of the strengths of Bitcoin that such simple solutions are possible.
+Simple, cheap, and robust storage solutions for recovery phrases come in subtle forms. [Seedplate](https://bitcoinseedbackup.com/){:target="_blank"}, for example, is a metal plate in which users can etch the words of their recovery phrase for long-term offline storage. [CardWallet](https://www.cardwallet.com){:target="_blank"}, in comparison, is the size of a credit card and comes pre-loaded with a recovery phrase (hidden behind a security seal) and a matching bitcoin address. And if you like an even simpler solution, a piece of paper will do. Although paper is not as durable and may be easy to lose, it is one of the strengths of Bitcoin that such simple solutions are possible.
 
 {% include picture.html
    image = "/assets/images/guide/getting-started/hardware/hardware-seed-storage.jpg"
@@ -54,7 +54,7 @@ Simple, cheap and robust storage solutions for recovery phrases come in modest f
 
 ## Hardware wallets
 
-You may already be familar with key fobs from your bank or work. They are small devices with specific built-in authentication that is used to control and secure access to a computer system. Key fobs are not connected to the internet or any other network, so they cannot easily be hacked without physical access.
+You may already be familiar with key fobs from your bank or work. They are small devices with specific built-in authentication used to control and secure access to a computer system. Key fobs are not connected to the internet or any other network, so they cannot easily be hacked without physical access.
 
 {% include picture.html
    image = "/assets/images/guide/getting-started/hardware/hardware-wallets.jpg"
@@ -67,9 +67,9 @@ You may already be familar with key fobs from your bank or work. They are small 
    height = 400
 %}
 
-Hardware wallets for bitcoin play a similar role but with several differences. Similar to key fobs, they securely store an authentication mechanism and isolate it from other devices and networks. In the case of bitcoin, these are the seed, associated keys and all functions that require direct interaction with them.
+Hardware wallets for bitcoin play a similar role but with several differences. Like key fobs, they securely store an authentication mechanism and isolate it from other devices and networks. In bitcoin, these are the seed, associated keys, and all functions that require direct interaction with them.
 
-Because hardware wallets are so optimized for this specific use case, they have very small screens and limited input options. Most interactions with them happen via desktop software that is also provided by the manufacturer. So users perform most wallet interactions on their desktops, and the application sends only specific requests to the hardware wallet to verify or sign data. This provides a great balance of security and convenience, and keeps hardware wallets generally affordable for most use cases.
+Because hardware wallets are so optimized for this specific use case, they have tiny screens and limited input options. Most interactions with them happen via desktop software that the manufacturer also provides. Users perform most wallet interactions on their desktops, and the application sends only specific requests to the hardware wallet to verify or sign data. This provides a good balance of security and convenience and keeps hardware wallets generally affordable for most use cases.
 
 ## Nodes
 
@@ -85,13 +85,13 @@ Thousands of computers participate in the Bitcoin network. They are called nodes
    height = 400
 %}
 
-Dedicated node hardware is particularly relevant for heavy users of the Lightning network. While a bitcoin node can be turned off and on and can easily catch up with network activity, Lightning nodes need to be online at all times in order to maintain payment channels with other nodes. Smartphones are typically also online 24/7 but are not suited well for this task due to large amounts of data transfer and storage capacity requirements.
+Dedicated node hardware is particularly relevant for heavy users of the Lightning network. While a bitcoin node can be turned off and on and can easily catch up with network activity, Lightning nodes need to be online at all times to maintain payment channels with other nodes. Smartphones are typically online 24/7 but are not suited well for this task due to large amounts of data transfer and storage capacity requirements.
 
-While plug-and-play hardware nodes can solve various problems for bitcoin users, they have not seen wide-spread adoption as commercial products.
+While plug-and-play hardware nodes can solve bitcoin users' various problems, they have not seen widespread adoption as commercial products.
 
 ## Miners
 
-Bitcoin mining has turned into a professional undertaking years ago. Today, dedicated hardware (so-called ASICS, or application-specific integrated circuits) is being developed that is optimized to continuously execute the Bitcoin hashing algorithm (called [SHA-256](https://en.wikipedia.org/wiki/SHA-2){:target="_blank"}) over and over until an acceptable hash is found. A modern miner (in 2020) can generate around 14,000,000,000,000 hashes per second. The more hashes generated, the higher the chance of "finding" a new block and receiving freshly minted bitcoin as a reward.
+Bitcoin mining has turned into a professional undertaking years ago. Today, dedicated hardware (so-called ASICS, or application-specific integrated circuits) is being developed that is optimized to continuously execute the Bitcoin hashing algorithm (called [SHA-256](https://en.wikipedia.org/wiki/SHA-2){:target="_blank"}) over and over until an acceptable hash is found. A modern miner (in 2020) can generate around 14,000,000,000,000 hashes per second. The more hashes generated, the higher the chance of "finding" a new block and receiving freshly minted bitcoins as a reward.
 
 {% include picture.html
    image = "/assets/images/guide/getting-started/hardware/mining-hardware.jpg"
@@ -103,11 +103,11 @@ Bitcoin mining has turned into a professional undertaking years ago. Today, dedi
    height = 400
 %}
 
-Outside of purchasing hardware, the main cost of mining is electricity. That's why mining facilities can be found all over the world wherever electricity is abundant and cheap, whether it is in Iceland for geothermal energy or in China using exceess hydroelectricity.
+Outside of purchasing hardware, the main cost of mining is electricity. That's why mining facilities can be found worldwide wherever electricity is abundant and cheap, whether in Iceland for geothermal energy or in China using excess hydroelectricity.
 
 ## ATMs
 
-A Bitcoin ATM (Automated Teller machine) allows for the purchase or sale of bitcoin from cash or debit cards. These machines are typically bound to local laws and regulations for money transmitters, such as KYC (Know Your Customer) and anti-money laundering regulations. More on [Wikipedia](https://en.wikipedia.org/wiki/Bitcoin_ATM).
+A Bitcoin ATM (Automated Teller Machine) allows for bitcoin's purchase or sale from cash or debit cards. These machines are typically bound to local laws and regulations for money transmitters, such as KYC (Know Your Customer) and anti-money laundering regulations. More on [Wikipedia](https://en.wikipedia.org/wiki/Bitcoin_ATM).
 
 {% include picture.html
    image = "/assets/images/guide/getting-started/hardware/atm.jpg"
@@ -118,5 +118,3 @@ A Bitcoin ATM (Automated Teller machine) allows for the purchase or sale of bitc
    width = 800
    height = 400
 %}
-
-

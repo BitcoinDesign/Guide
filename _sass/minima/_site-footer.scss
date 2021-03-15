@@ -29,6 +29,7 @@
       &:hover {
         svg {
           stroke: $primary-color;
+          fill: $primary-color;
         }
       }
     }
@@ -66,14 +67,12 @@
         }
 
         & + a {
-          margin-left: 20px;
+          margin-left: 15px;
         }
       }
     }
 
     nav.footer-nav {
-      display: flex;
-
       a {
         display: inline-block;
         color: black;
@@ -123,7 +122,9 @@
       }
 
       nav.footer-nav {
-        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        // flex-direction: column;
         order: 5;
         flex-basis: 100%;
         border-top: 1px solid black;
@@ -141,30 +142,36 @@
 
       a.-logo {
         margin-right: auto;
+        order: 1;
       }
       
       .edit-license {
         display: flex;
         border-right: 1px solid black;
-        padding-right: 20px;
-        margin-right: 20px;
+        padding-right: 15px;
+        margin-right: 15px;
+        order: 2;
 
         a {
           & + a {
-            margin-left: 20px;
+            margin-left: 15px;
           }
         }
       }
 
+      nav.social-media-list {
+        order: 4;
+      }
+
       nav.footer-nav {
-        flex-basis: 100%;
-        border-top: 1px solid black;
-        margin-top: 20px;
-        padding-top: 20px;
+        border-right: 1px solid black;
+        padding-right: 15px;
+        margin-right: 15px;
+        order: 3;
 
         a {
           & + a {
-            margin-left: 20px;
+            margin-left: 15px;
           }
         }
       }

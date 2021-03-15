@@ -37,38 +37,36 @@ Illustration sources
 
 # Why design for bitcoin
 
-At first, bitcoin may sound primarily like a complex technical innovation. A closer inspection reveals exciting new opportunities for designers to shape user experiences that can make a fundamental difference for people around the world. So much of our lives is tied to money and financial systems, yet we sometimes have so little control or influence. Bitcoin has the potential to balance this, and its up to us to make it a reality.
+At first, Bitcoin may sound like a complex technical innovation. A closer inspection reveals exciting new opportunities for designers to shape user experiences that can make a fundamental difference for people worldwide. So much of our lives is tied to money and financial systems, yet we sometimes have so little control or influence. Bitcoin has the potential to balance this, and it's up to us to make it a reality.
 
 ## Be on the cutting edge
 
-The bitcoin white paper was released in 2008. Over a decade later, it is still a young and maturing technology full of potential. Like working early on the internet, there are big and exciting questions to be discussed and design decisions to be made. Designing for bitcoin is a fantastic and rewarding challenge.
+The Bitcoin white paper was released in 2008. Over a decade later, it is still a young and maturing technology full of potential. Like working early on the internet, there are big and exciting questions to be discussed and design decisions to be made. Designing for bitcoin is a fantastic and rewarding challenge.
 
 ## Permissionless
 
-The idea that there are no gatekeepers is baked into the foundation of bitcoin and its ecosystem. A bitcoin wallet designed by you is just as official as one created by the biggest corporation.
+The idea that there are no gatekeepers is baked into the foundation of Bitcoin and its ecosystem. A Bitcoin wallet designed by you is as official as one created by a big corporation.
 
 ## Blaze the trail
 
-There are still very few dedicated designers working in the bitcoin ecosystem. As we have seen with the evolution of the internet, it takes time for the world to adopt new technology. If you are curious and excited about new challenges, here's your chance.
+There are still very few dedicated designers working in the Bitcoin ecosystem. As we have seen with the evolution of the internet, it takes time to adopt new technology. If you are curious and excited about new challenges, here's your chance.
 
 ## Design for your needs
 
-Many bitcoin projects start by identifying an unmet need. Unlike traditional finance, the barriers to entry are incredibly low. So if you were ever unhappy with the service of your bank for financial provider, here's your chance to shape something better.
+Many bitcoin projects start by identifying an unmet need. Unlike traditional finance, the barriers to entry are shallow. So if you were ever unhappy with the service of your bank or financial provider, here's your chance to shape something better.
 
 ## Work in public
 
-Bitcoin is open-source, and designing for bitcoin allows you also work on the same ideas of publicly sharing and collaborating on design information. Free from the structures of agencies and corporations, open collaboration allows every participant to have a voice and shape the way they work based on their interests and preferences. Find out more about [open design]({{ '/guide/getting-started/open-design/' | relative_url }}).
+Bitcoin is open-source, and designing for Bitcoin allows you also work on the same ideas of publicly sharing and collaborating on design information. Free from agencies and corporations' structures, open collaboration allows every participant to have a voice and shape the way they work based on their interests and preferences. Find out more about [open design]({{ '/guide/getting-started/open-design/' | relative_url }}).
 
 ## Design money
 
-Money is a powerful force and therefore heavily regulated and controlled. The composition of bitcoin allows us to trust in its value and availability while also providing vast freedom to experiment and build on top of it. The emergence of thousands of so-called alternative coins, hundreds of wallets and the many bitcoin businesses are the clearest signifier as to just how open this space is.
+Money is a powerful force and therefore heavily regulated and controlled. The composition of bitcoin allows us to trust in its value and availability while also providing vast freedom to experiment and build on top of it. The emergence of thousands of so-called alternative coins, hundreds of wallets, and the many bitcoin businesses are the most apparent signifier of just how open this space is.
 
 ## Join a global community
 
-The doors are wide open and bitcoin design is discussed publicly online and any social media service you can think of. Design and build with friends and strangers, participate in the various communities and help shape an ecosystem for design and creativity.
+The doors are wide open, and Bitcoin design is discussed publicly online and any social media service you can think of. Design and build with friends and strangers, participate in the various communities and help shape an ecosystem for design and creativity.
 
 ---
 
 Dive deeper into what [open design]({{ '/guide/getting-started/open-design/' | relative_url }}) means.
-
-

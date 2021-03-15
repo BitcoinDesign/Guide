@@ -1,7 +1,7 @@
 <nav class="social-media-list">
   <a 
     rel="me" 
-    href="http://bitcoindesigners.org" 
+    href="{{ site.slack_invite_url }}" 
     title="Bitcoin Design Slack"
   >
     {% include slack.svg %}
@@ -9,8 +9,22 @@
   <a 
     rel="me" 
     href="https://github.com/BitcoinDesign" 
-    title="BitcoinDesign on Github"
+    title="Bitcoin Design on Github"
   >
     {% include github.svg %}
+  </a>
+  <a 
+    rel="me" 
+    href="{{ site.twitter_url }}" 
+    title="Bitcoin Design on Twitter"
+  >
+    {% include twitter.svg %}
+  </a>
+  <a 
+    rel="me" 
+    href="{{ site.youtube_url }}" 
+    title="Bitcoin Design on YouTube"
+  >
+    {% include youtube.svg %}
   </a>
 </nav>
