@@ -35,11 +35,11 @@ Illustration sources
 
 # Software overview
 
-Finance is complex and there are many use cases, from giving weekly allowance to a child and selling goods in a store to managing multi-billion dollar retirement funds and hectic day trading. So we end up with many different application solutions for the various use cases. Bitcoin being a global currency adds another layer of complexity as the software may need to be adapted to different languages, cultures and legal frameworks. When designing, it's a good idea to have a feel for this landscape and know where your product fits. Here is an overview of several common and specialized categories.
+Finance is complex, and there are many use cases, from giving weekly allowance to a child and selling goods in a store to managing multi-billion dollar retirement funds and hectic day trading. So we end up with many different application solutions for the various use cases. Bitcoin being a global currency adds another layer of complexity as the software may need to be adapted to different languages, cultures, and legal frameworks. When designing, it's a good idea to feel for this landscape and know where your product fits. Here is an overview of several common and specialized categories.
 
 ## Command-line interfaces (CLI)
 
-Primarily used by developers, command-line interfaces typically offer the most feature-rich options to interact with blockchains. They can be thought of as general-purpose tool boxes, so they require certain technical knowledge and are not optimized for specific use cases. New features are often first included in a CLI, and then later added to graphical user interfaces (GUI).
+Primarily used by developers, command-line interfaces typically offer the most feature-rich options to interact with blockchains. They can be thought of as general-purpose toolboxes, so they require certain technical knowledge and are not optimized for specific use cases. New features are often first included in a CLI and then later added to graphical user interfaces (GUI).
 
 {% include image.html
    image = "/assets/images/guide/getting-started/software/cli-example.jpg"
@@ -64,7 +64,7 @@ Primarily used by developers, command-line interfaces typically offer the most f
    layout = "float-right-desktop"
 %}
 
-If a blockchain can be thought of as a public database, then explorers are simply windows into that database. They typically display the data structure as is and maybe offer some basic functionality like looking up specific transactions to verify that they were processed.
+If a blockchain can be thought of as a public database, then explorers are simply windows into that database. They typically display the data structure and maybe offer some basic functionality like looking up specific transactions to verify that they were processed.
 
 </div>
 
@@ -86,15 +86,13 @@ Explorers often also provide insight into activity on the bitcoin network, like 
 
 Wallet provide easy-to-use graphical interfaces for a wide audience. Wallets many times don't offer all functionality that can be found in a CLI, but instead focus on general use cases like making payments and browsing transactions.
 
-Due to the nature of open-source, wallets can be developed by anyone with the technical knowledge, and many code libraries are available to simplify this task.
+Due to the nature of open-source, wallets can be developed by anyone with the technical knowledge, and many code libraries are available to simplify this task.</div>
 
-</div>
+Features can vary by application but always include wallet setup, viewing balances and transactions, and sending and receiving bitcoin. The range of additional features wallets may support is broad, from security and privacy to transaction management, currency exchange, accounting, and interoperability to accessibility and localization. Which features to include should be based on the specific use cases and user needs of your product.
 
-Features can vary by application, but always include wallet setup, viewing balances and transactions, as well as sending and receiving bitcoin. The range of additional features wallets may support is broad, from security and privacy to transaction management, currency exchange, to accounting and interoperability to accessibility and localization. Which features to include should be based on the specific use cases and user needs of your product.
+Some of these features come with highly complex technical challenges and can be executed in different ways. Reliance on third-party service is always a sensitive topic for bitcoin applications, as a high level of trust is required. This can also sometimes be an underlying reason why a wallet may or may not support specific features or implement a feature in a specific manner.
 
-Some of these features come with highly complex technical challenges and can be executed in different ways. Reliance on third-party service is always a sensitive topic for bitcoin applications, as a high level of trust is required. This can also sometimes be an underlying reason why a wallet may or may not support specific features, or implement a feature in a specific manner.
-
-Another reason is that standards are still evolving as some of the technology is still maturing. Even fundamental aspects like address formats and how keys are generated can be implemented in various, incompatible ways.
+Another reason is that standards are still evolving as some of the technology is still maturing. Even fundamental aspects like address formats and how keys are generated can be implemented in incompatible ways.
 
 ## Payment processors
 
@@ -175,6 +173,3 @@ Mining has become primarily a professional undertaking with dedicated software t
 ---
 
 Some bitcoin features and functionality are best handled by [dedicated hardware]({{ '/guide/getting-started/hardware/' | relative_url }}).
-
-
-
