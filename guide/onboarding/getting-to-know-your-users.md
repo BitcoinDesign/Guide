@@ -43,7 +43,7 @@ You can then use this research to identify where potential problems may exist. T
 
 For the sake of simplicity let's focus on one hypothetical user.
 
-> Joshua Akinsola is a 21-year old Nigerian studying economics in the large city of Lagos. Growing up, his family struggled to save any money, due to a lack of financial education, high unemployment and a local currency that is inflating at 15% per year. There is a lack of reliable savings technology in his country so he opts to save money for the future using bitcoin.
+> Joshua Akinsola is a 21-year old Nigerian studying economics in the large city of Lagos. Growing up, his family struggled to save any money due to a lack of financial education, high unemployment, and a local currency inflating at 15% per year. There is a lack of reliable savings technology in his country, so he opts to save money for the future using bitcoin.
 
 The uncovering of this scenario could be the result of a user interview[^3] or found in various channels such as chats, issues or even twitter. We can then take quotes from the participant to understand their emotions and infer their specific needs. This then helps us identify barriers and motivators.
 
