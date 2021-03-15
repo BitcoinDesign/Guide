@@ -10,7 +10,7 @@ image: /assets/images/projects/projects-preview.jpg
 projects:
   - name: Bitcoin Design Guide
     description: The primary project we are working on, a resource for designers to create better Bitcoin products faster.
-    image: 
+    image:
       url: /assets/images/contribute/bitcoin-design-guide.svg
       width: 75
       height: 75
@@ -22,7 +22,7 @@ projects:
 collaborations:
   - name: Specter
     description: A watch-only coordinator for multi-signature and single-key Bitcoin wallets.
-    image: 
+    image:
       url: /assets/images/contribute/specter.png
       width: 75
       height: 75
@@ -33,7 +33,7 @@ collaborations:
         link: https://github.com/BitcoinDesign/Meta/issues/69
   - name: Zeus
     description: Manage your Bitcoin and Lightning node on the go.
-    image: 
+    image:
       url: /assets/images/contribute/zeus.png
       width: 75
       height: 75
@@ -45,7 +45,7 @@ collaborations:
 inactive:
   - name: BTCPay Server
     description: BTCPay Server is a self-hosted, open-source bitcoin payment processor, built and maintained by a world-wide community of passionate contributors.
-    image: 
+    image:
       url: /assets/images/contribute/btcpay.svg
     links:
       - name: Site
@@ -92,7 +92,7 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 
 # Projects
 
-We don’t just chat about design and create resources for designers, we are also deeply involved with projects to power up Bitcoiners through good design. If you are interested in helping out, check the links for each project, ask directly in the communities of those projects, or reach out in our [Slack]({{ site.slack_invite_url }}).
+We don’t just chat about design, we also actively work on improving design in the Bitcoin ecosystem. Projects launched by community members often focus on creating design resources. With collaborations, we try to help other Bitcoin projects improve the design and user experience of their products. For more details, see our [Collaboration](https://github.com/BitcoinDesign/Meta/blob/master/Collaboration.md) and [Project](https://github.com/BitcoinDesign/Meta/blob/master/Projects.md) documents. If you are interested in getting involved, reach out directly to the projects below, or reach out in our [Slack]({{ site.slack_invite_url }}).
 
 ## Community projects
 
@@ -115,9 +115,9 @@ These are design projects we have initiated ourselves.
 {% endfor %}
 </div>
 
-## Community collaborations
+## Collaborations
 
-Some projects we have a more formal [collaboration](https://github.com/BitcoinDesign/Meta/blob/master/Collaboration.md) with (see our [current collaborations](https://github.com/BitcoinDesign/Meta/projects/2)).
+For a full list, see our [collaboration board](https://github.com/BitcoinDesign/Meta/projects/2).
 
 <div class="project-grid">
 {% for item in page.collaborations %}
