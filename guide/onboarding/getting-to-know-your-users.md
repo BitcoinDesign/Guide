@@ -88,7 +88,7 @@ It's important to allow you and your team to be as free and creative about how y
 ## Prototype & Test
 Next, you can think about prototyping a subset of these ideas and understanding your ideas' feasibility through feedback on these prototypes. Put your prototypes in front of real users and test to verify the solution meets the users' needs.
 
-You might choose to lean on something like the Bitcoin Wallet UI Kit4, which gives you several components that you can piece together for a specific use case. This would allow you to prototype rapidly and get a feel for if the UI flow makes sense before committing to more detailed designs.
+You might choose to lean on something like the Bitcoin Wallet UI Kit[^4], which gives you several components that you can piece together for a specific use case. This would allow you to prototype rapidly and get a feel for if the UI flow makes sense before committing to more detailed designs.
 
 Ultimately the goal of onboarding is that users trust the application, feel comfortable using it, and are set up for success. They should have an idea of how this application is going to fit into their lives and take care of certain needs. It's also ideal if they can already envision the next time they will use it.
 
