@@ -35,7 +35,7 @@ Illustration sources
 
 # Why Bitcoin is unique
 
-The internet has changed the world. Barriers to global communication and the exchange of information have been reduced to almost nothing. Bitcoin adds another important dimension to this and brings us a natively digital method for storing and transfering value.
+The internet has changed the world. Barriers to global communication and the exchange of information are reduced to almost nothing. Bitcoin adds another important dimension to this and brings us a natively digital method for storing and transferring value.
 
 <!--
 The status quo is that currencies are created and managed by governments and online payments are routed through the payment networks of large corporations. Government authority ensures that currencies are recognized and backed, while payment providers stay on top of fraud, prevent double-spending, provide security and various other benefits and services. This highly complex system works well enough for most people.
@@ -66,7 +66,7 @@ The economic definition of money typically involves three specific [functions](h
 
 ## You own it
 
-When we carry cash, we are fully in control of its value. When we purchase something and give the cash away, its gone. Online banking and payments rely on third parties that hold our money for us and allow us to access it through their websites and applications. Bitcoin manages to combine the benefits of cash as a bearer instrument, with the convenience of online banking. When you control your bitcoin private keys, nobody in the world can take your bitcoin.
+When we carry cash, we are entirely in control of its value. When we purchase something and give the cash away, it is gone. Online banking and payments rely on third parties that hold our money for us and allow us to access it through their websites and applications. Bitcoin manages to combine the benefits of cash as a bearer instrument with online banking convenience. When you control your bitcoin private keys, nobody in the world can take your bitcoin.
 
 ## Global by default
 
@@ -86,7 +86,7 @@ Bitcoin can be used by anyone with an internet connection, which is available to
    layout = "float-right-desktop"
 %}
 
-Bitcoin as a technical protocol relies on addresses and does not work with concepts of persons, real-life identities or even user names. Individuals, companies, governments and anyone else interact with it on a level playing field with the same rights and benefits. At a fundamental level no group can shut another group out and censor transactions or confiscate bitcoin. This naturally only applies to bitcoin itself and services built on bitcoin may enforce identity verification and discriminate between users.
+Bitcoin as a technical protocol relies on addresses and does not work with persons' concepts, real-life identities, or even user names. Individuals, companies, governments, and anyone else interact with it on a level playing field with the same rights and benefits. No group can shut another group out at a fundamental level, censor transactions, or confiscate bitcoin. This naturally only applies to bitcoin itself, and services built on bitcoin may enforce identity verification and discriminate between users.
 
 </div>
 
@@ -96,7 +96,7 @@ Around [1.7 billion adults](https://globalfindex.worldbank.org/sites/globalfinde
 
 ## It is open-source
 
-How many currencies and payment networks allow anyone to just show up, participate and contribute? This has traditionally not been possible since those systems rely on central authorities to function. Bitcoin relies on thousands of volunteer contributors to collaboratively keep the system running, evolve it, and build services on top of it. This community of passionate contributors creates the free software that keeps bitcoin running and allows everyone else to interact with it as they desire.
+How many currencies and payment networks allow anyone to show up, participate and contribute? This has traditionally not been possible since those systems rely on central authorities to function. Bitcoin relies on thousands of volunteer contributors to collaboratively keep the system running, evolve it, and build services on top of it. This community of passionate contributors creates the free software that keeps Bitcoin running and allows everyone to interact with it as they desire.
 
 ---
 
