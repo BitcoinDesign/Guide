@@ -31,7 +31,7 @@ scan this page to get an overview of the section and then decide which topics to
 
 # Private key management
 
-When designing a bitcoin-application, the way you choose to manage the [private key]({{ '/guide/glossary/#private-key' | relative_url }}){:target="_blank"} often dictates the fundamental user experience for your users. Being in control of a private key means you have access to the funds it holds. Keeping that key safe is like being in charge of the security of your own bank. It comes with a lot of freedom, but also a big responsibility that many users are not used to.
+When designing a bitcoin-application, the way you choose to manage the [private key]({{ '/guide/glossary/#private-key' | relative_url }}){:target="_blank"} often dictates the fundamental user experience for your users. Being in control of a private key means you have access to the funds it holds. Keeping that key safe is like being in charge of the security of your own bank. It comes with a lot of freedom, but also a big responsibility that many users are not used to. 
 
 If it’s not secure enough, you risk loss of user's funds. But if it’s not convenient enough, you risk not getting or retaining many users in the first place.
 
@@ -42,6 +42,14 @@ This chapter is meant to give an overview of private key management schemes, inc
 **[Private key schemes]({{ '/guide/private-key-management/schemes/' | relative_url }})**
 
 An overview of the most common private key management schemes for bitcoin products, and thoughts on picking a suitable scheme for your target audience and their use case.
+
+**[Personal schemes]({{ '/guide/private-key-management/single-user-schemes/' | relative_url }})**
+
+The schemes that are most common for the personal use of one individual.
+
+**[Shared schemes]({{ '/guide/private-key-management/single-user-schemes/' | relative_url }})**
+
+When more than one person wants to share a Bitcoin wallet, multi-key schemes become essential.
 
 ---
 
