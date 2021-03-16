@@ -92,7 +92,7 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 
 # Projects
 
-We don’t just chat about design, we also actively work on improving design in the Bitcoin ecosystem. Projects launched by community members often focus on creating design resources. With collaborations, we try to help other Bitcoin projects improve the design and user experience of their products. For more details, see our [Collaboration](https://github.com/BitcoinDesign/Meta/blob/master/Collaboration.md) and [Project](https://github.com/BitcoinDesign/Meta/blob/master/Projects.md) documents. If you are interested in getting involved, reach out directly to the projects below, or reach out in our [Slack]({{ site.slack_invite_url }}).
+We don't just chat about design. We also actively improve design in the Bitcoin ecosystem. Projects launched by community members often focus on creating design resources. With collaborations, we try to help other Bitcoin projects improve their products' design and user experience. For more details, see our [Collaboration](https://github.com/BitcoinDesign/Meta/blob/master/Collaboration.md) and [Project](https://github.com/BitcoinDesign/Meta/blob/master/Projects.md) documents. If you are interested in getting involved, reach out directly to the projects below, or reach out in our [Slack]({{ site.slack_invite_url }}).
 
 ## Community projects
 
