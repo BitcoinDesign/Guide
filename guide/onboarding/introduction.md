@@ -2,7 +2,7 @@
 layout: guide
 title: Onboarding
 description: An overview of some of the concepts to consider when building onboarding experiences.
-nav_order: 2
+nav_order: 3
 permalink: /guide/onboarding/introduction/
 main_classes: -no-top-padding
 image: /assets/images/guide/onboarding/onboarding.png

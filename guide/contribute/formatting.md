@@ -14,6 +14,21 @@ This page showcases the various formatting and layout options available for cont
 
 The design source file is a public Figma community file you can find [here](https://www.figma.com/community/file/862622015964353400/Bitcoin-Designers-site). To improve the design, please start with the Figma file and make a proposal in Slack or Github before implementing.
 
+- [Text](#text-formatting)
+- [Headers](#headers)
+- [Blockquotes](#blockquote)
+- [Links](#links)
+- [Images](#images)
+- [Gallery](#image-slide-gallery)
+- [Lists](#lists)
+- [Tables](#tables)
+- [Code](#code-embedding)
+- [YouTube videos](#youtube-video-embed)
+- [Prototypes](#prototypes)
+- [Recommendations](#recommendations)
+- [Tips](#tips)
+- [Facts](#facts)
+- [Footnotes](#footnotes)
 
 ## Basic markdown formatting
 
@@ -56,16 +71,15 @@ There should be whitespace between paragraphs.
 
 > This is a blockquote text.
 
-
 ### Links
 
 ### External Links
 
 ```markdown
-[Link to another page](https://bitcoin.org/bitcoin.pdf).
+[Link to another page](https://bitcoin.org/bitcoin.pdf)
 ```
 
-[Link to another page](https://bitcoin.org/bitcoin.pdf).
+[Link to another page](https://bitcoin.org/bitcoin.pdf)
 
 #### Internal links
 
@@ -74,6 +88,16 @@ There should be whitespace between paragraphs.
 ```
 [Linking]({{ '/guide/getting-started/why-bitcoin-is-unique/' | relative_url }})
 
+#### Button links
+
+```markdown
+[Filled button link](https://bitcoin.org/bitcoin.pdf){: .button}
+[Outline button link](https://bitcoin.org/bitcoin.pdf){: .button.-outline}
+```
+
+[Filled button link](https://bitcoin.org/bitcoin.pdf){: .button}
+[Outline button link](https://bitcoin.org/bitcoin.pdf){: .button.-outline}
+
 ### Images
 
 Let's start with a very wide image that extends beyond the content width on desktops. Note how a different image is shown on mobile. This can be used to reformat image content to a portrait format.
@@ -81,10 +105,10 @@ Let's start with a very wide image that extends beyond the content width on desk
 {% raw %}
 ```liquid
 {% include picture.html
-   image = "/assets/images/style/example-image-wide-desktop.jpg"
-   retina = "/assets/images/style/example-image-wide-desktop@2x.jpg"
-   mobile = "/assets/images/style/example-image-wide-mobile.jpg"
-   mobileRetina = "/assets/images/style/example-image-wide-mobile@2x.jpg"
+   image = "/assets/images/guide/contribute/formatting/example-image-wide-desktop.jpg"
+   retina = "/assets/images/guide/contribute/formatting/example-image-wide-desktop@2x.jpg"
+   mobile = "/assets/images/guide/contribute/formatting/example-image-wide-mobile.jpg"
+   mobileRetina = "/assets/images/guide/contribute/formatting/example-image-wide-mobile@2x.jpg"
    alt-text = "Example image"
    width = 1600
    height = 800
@@ -94,10 +118,10 @@ Let's start with a very wide image that extends beyond the content width on desk
 {% endraw %}
 
 {% include picture.html
-   image = "/assets/images/style/example-image-wide-desktop.jpg"
-   retina = "/assets/images/style/example-image-wide-desktop@2x.jpg"
-   mobile = "/assets/images/style/example-image-wide-mobile.jpg"
-   mobileRetina = "/assets/images/style/example-image-wide-mobile@2x.jpg"
+   image = "/assets/images/guide/contribute/formatting/example-image-wide-desktop.jpg"
+   retina = "/assets/images/guide/contribute/formatting/example-image-wide-desktop@2x.jpg"
+   mobile = "/assets/images/guide/contribute/formatting/example-image-wide-mobile.jpg"
+   mobileRetina = "/assets/images/guide/contribute/formatting/example-image-wide-mobile@2x.jpg"
    alt-text = "Example image"
    width = 1600
    height = 800
@@ -109,10 +133,10 @@ Let's start with a very wide image that extends beyond the content width on desk
 {% raw %}
 ```liquid
 {% include picture.html
-   image = "/assets/images/style/example-image-wide-desktop.jpg"
-   retina = "/assets/images/style/example-image-wide-desktop@2x.jpg"
-   mobile = "/assets/images/style/example-image-wide-mobile.jpg"
-   mobileRetina = "/assets/images/style/example-image-wide-mobile@2x.jpg"
+   image = "/assets/images/guide/contribute/formatting/example-image-wide-desktop.jpg"
+   retina = "/assets/images/guide/contribute/formatting/example-image-wide-desktop@2x.jpg"
+   mobile = "/assets/images/guide/contribute/formatting/example-image-wide-mobile.jpg"
+   mobileRetina = "/assets/images/guide/contribute/formatting/example-image-wide-mobile@2x.jpg"
    alt-text = "Example image"
    width = 1600
    height = 800
@@ -121,15 +145,16 @@ Let's start with a very wide image that extends beyond the content width on desk
 {% endraw %}
 
 {% include picture.html
-   image = "/assets/images/style/example-image-wide-desktop.jpg"
-   retina = "/assets/images/style/example-image-wide-desktop@2x.jpg"
-   mobile = "/assets/images/style/example-image-wide-mobile.jpg"
-   mobileRetina = "/assets/images/style/example-image-wide-mobile@2x.jpg"
+   image = "/assets/images/guide/contribute/formatting/example-image-wide-desktop.jpg"
+   retina = "/assets/images/guide/contribute/formatting/example-image-wide-desktop@2x.jpg"
+   mobile = "/assets/images/guide/contribute/formatting/example-image-wide-mobile.jpg"
+   mobileRetina = "/assets/images/guide/contribute/formatting/example-image-wide-mobile@2x.jpg"
    alt-text = "Example image"
    width = 1600
    height = 800
 %}
-### Image inline with the content
+
+#### Image inline with the content
 
 Images can also be inline with the content. This one is inline on desktop, but takes the full screen width on mobile.
 
@@ -138,8 +163,8 @@ Images can also be inline with the content. This one is inline on desktop, but t
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/style/example-image-square.jpg"
-   retina = "/assets/images/style/example-image-square@2x.jpg"
+   image = "/assets/images/guide/contribute/formatting/example-image-square.jpg"
+   retina = "/assets/images/guide/contribute/formatting/example-image-square@2x.jpg"
    alt-text = "Example image"
    width = 400
    height = 400
@@ -151,8 +176,8 @@ Images can also be inline with the content. This one is inline on desktop, but t
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/style/example-image-square.jpg"
-   retina = "/assets/images/style/example-image-square@2x.jpg"
+   image = "/assets/images/guide/contribute/formatting/example-image-square.jpg"
+   retina = "/assets/images/guide/contribute/formatting/example-image-square@2x.jpg"
    alt-text = "Example image"
    width = 400
    height = 400
@@ -172,8 +197,8 @@ This next image is inline on both mobile and desktop.
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/style/example-image-square.jpg"
-   retina = "/assets/images/style/example-image-square@2x.jpg"
+   image = "/assets/images/guide/contribute/formatting/example-image-square.jpg"
+   retina = "/assets/images/guide/contribute/formatting/example-image-square@2x.jpg"
    alt-text = "Example image"
    width = 100
    height = 100
@@ -189,8 +214,8 @@ Mobile app stores do a good job at providing previews of what using an app will 
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/style/example-image-square.jpg"
-   retina = "/assets/images/style/example-image-square@2x.jpg"
+   image = "/assets/images/guide/contribute/formatting/example-image-square.jpg"
+   retina = "/assets/images/guide/contribute/formatting/example-image-square@2x.jpg"
    alt-text = "Example image"
    width = 100
    height = 100
@@ -198,6 +223,78 @@ Mobile app stores do a good job at providing previews of what using an app will 
 %}
 
 Mobile app stores do a good job at providing previews of what using an app will be like. Through copy, videos, images and reviews, users can make informed decisions about the product they are evaluating. Open-source software is typically downloaded via a website or from Github and each project decides what information to present.
+
+</div>
+
+#### Image slide gallery
+
+A horizontal slide show of images. When the content is too wide for the screen, users can scroll.
+
+{% raw %}
+```liquid
+<div class="image-slide-gallery">
+
+{% include picture.html
+   image = "/assets/images/guide/contribute/formatting/example-image-mobile-screen.png"
+   retina = "/assets/images/guide/contribute/formatting/example-image-mobile-screen@2x.png"
+   alt-text = "Example image"
+   caption = "Example text"
+   width = 250
+   height = 541
+%}
+
+... more picture includes ...
+
+</div>
+```
+{% endraw %}
+
+<div class="image-slide-gallery">
+
+{% include picture.html
+   image = "/assets/images/guide/contribute/formatting/example-image-mobile-screen.png"
+   retina = "/assets/images/guide/contribute/formatting/example-image-mobile-screen@2x.png"
+   alt-text = "Example image"
+   caption = "Example text"
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/contribute/formatting/example-image-mobile-screen.png"
+   retina = "/assets/images/guide/contribute/formatting/example-image-mobile-screen@2x.png"
+   alt-text = "Example image"
+   caption = "Example text"
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/contribute/formatting/example-image-mobile-screen.png"
+   retina = "/assets/images/guide/contribute/formatting/example-image-mobile-screen@2x.png"
+   alt-text = "Example image"
+   caption = "Example text"
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/contribute/formatting/example-image-mobile-screen.png"
+   retina = "/assets/images/guide/contribute/formatting/example-image-mobile-screen@2x.png"
+   alt-text = "Example image"
+   caption = "Example text"
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/contribute/formatting/example-image-mobile-screen.png"
+   retina = "/assets/images/guide/contribute/formatting/example-image-mobile-screen@2x.png"
+   alt-text = "Example image"
+   caption = "Example text"
+   width = 250
+   height = 541
+%}
 
 </div>
 
@@ -428,6 +525,103 @@ Ensure that your images provide a good overview of the prototype content, so use
    width = 800
    height = 500
 %}
+
+### Recommendations
+
+For highlighting moments when we think there is a particular approach or solution that the reader should strongly connsider following.
+
+{% raw %}
+```liquid
+{% include rec-open.html %}
+
+Most bitcoin products should use HD Wallets with Native Segwit addresses (unless focusing on maximum backwards compatibility).
+
+{% include rec-close.html %}
+```
+{% endraw %}
+
+{% include rec-open.html %}
+
+Most bitcoin products should use HD Wallets with Native Segwit addresses (unless focusing on maximum backwards compatibility).
+
+{% include rec-close.html %}
+
+### Tips
+
+For additional information that is useful, but does not fit into the main flow of the content.
+
+{% raw %}
+```liquid
+{% include fact-pros.html %}
+
+Sed in lacus vitae turpis lobortis ultrices. Aenean hendrerit nec elit in sagittis. Nulla mi ante, luctus vitae tincidunt ut, rhoncus ac ex. Morbi sit amet mauris est.
+
+{% include fact-close.html %}
+```
+{% endraw %}
+
+{% include tip-open.html %}
+
+Sed in lacus vitae turpis lobortis ultrices. Aenean hendrerit nec elit in sagittis. Nulla mi ante, luctus vitae tincidunt ut, rhoncus ac ex. Morbi sit amet mauris est.
+
+{% include tip-close.html %}
+
+### Facts
+
+A table that provides specific descriptions based on standardized properties. Variations available are:
+
+- fact-pros.html
+- fact-cons.html
+- fact-when-to-use.html
+- fact-when-not-to-use.html
+- fact-variations.html
+- fact-products.html
+
+{% raw %}
+```liquid
+{% include fact-pros.html %}
+
+Can provide higher resistance to loss from theft and negligence.
+
+{% include fact-close.html %}
+```
+{% endraw %}
+
+{% include fact-pros.html %}
+
+Can provide higher resistance to loss from theft and negligence.
+
+{% include fact-close.html %}
+
+{% include fact-cons.html %}
+
+Require precise coordination of key-shares when signing, few advantages over multi-key setups with Schnorr signatures, individual implementations not interoperable.
+
+{% include fact-close.html %}
+
+{% include fact-when-to-use.html %}
+
+When target audience is knowledgeable and risk of theft is higher than negligance.
+
+{% include fact-close.html %}
+
+{% include fact-when-not-to-use.html %}
+
+When Schnorr signatures are available enabling multi-key setups.
+
+{% include fact-close.html %}
+
+{% include fact-variations.html %}
+
+Number of signatures required, location and distribution of pieces, signing procedure.
+
+{% include fact-close.html %}
+
+{% include fact-products.html %}
+
+[Bitcoin wallet](https://bitcoin.design/), [BTC wallet](https://bitcoin.design/), [BeeTeeCee Wallet](https://bitcoin.design/)
+
+{% include fact-close.html %}
 
 ### Footnotes
 
