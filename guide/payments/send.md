@@ -6,21 +6,21 @@ nav_order: 2
 parent: Payments
 permalink: /guide/payments/send/
 main_classes: -no-top-padding
-image: /assets/images/guide/payments/overview/page-overview.svg
+# image: /assets/images/guide/payments/send/header.svg
 ---
 
 # Sending bitcoin
 
-Sending bitcoin can be a very straight forward or complex flow in a bitcoin application. Users may be sending bitcoin to a known contact, moving it between their own wallets on different devices, or making a purchase through a [payment processor](https://bitcoin.design/guide/getting-started/software/#payment-processors).
+Sending bitcoin can be a very straight forward or complex flow in a bitcoin application. People may be sending bitcoin to a known contact, moving it between their own wallets on different devices, or making a purchase through a [payment processor](https://bitcoin.design/guide/getting-started/software/#payment-processors).
 
-Regardless of where the bitcoin is being sent, there are some basic configurations that an application needs to help the user with when creating a transaction: 
+Regardless of where the bitcoin is being sent, there are some basic configurations that an application needs to help the sender with when creating a transaction: 
 
 - **Amount** — How much to send
 - **Recipient address** — Where to send the bitcoin
 - **Coin selection** — Which coins/inputs to use (optional)
 - **Fee settings** — Prioritize fast confirmation or low cost (optional)
 
-The order of configuration for the payment can be tailored to your use case. For example, you may make users set the amount before the address is entered.
+The order of configuration for the payment can be tailored to your use case. For example, you may make the sender set the amount before the address is entered.
             
 ## Get the recipient address
 To send a payment on the Bitcoin blockchain we need the recipient's address. Since Bitcoin [addresses](https://bitcoin.design/guide/glossary/#address) are long and seemingly random, they are best shared by copying and pasting in plain text, as a [payment link](https://bitcoin.design/guide/foundations/wallet-interoperability/#payment-links), or as a scannable [QR Code](https://bitcoin.design/guide/foundations/wallet-interoperability/#qr-codes).
@@ -31,8 +31,8 @@ This is easily accomplished by generating a new address in the receiving wallet 
 
 <div class="center" markdown="1">
 {% include image.html
-   image = "/assets/images/guide/payments/send/enter-address.svg"
-   alt-text = "Example image"
+   image = "/assets/images/guide/payments/send/input-address.svg"
+   alt-text = "Address input field prompting the sender to paste the address"
    width = 400
    height = 400
    layout = "float-right-desktop"
@@ -40,18 +40,18 @@ This is easily accomplished by generating a new address in the receiving wallet 
 
 Once you have gotten the address, its time to enter the payment details. Bitcoin transactions are irreversible so both the sender and receiver should take great care in correctly sharing and inputting addresses. 
 
-Once inputted, the user should be clearly informed if the address is valid or not. If the address is not valid, or incompatible with the wallet, sending should be disabled.
+Once inputted, the sender should be clearly informed if the address is valid or not. If the address is not valid, or incompatible with the wallet, sending should be disabled.
 
-**QR Code** -- Once the camera detects a valid address in the QR Code, it can be automatically inputted. The user will need to grant access your application to be able to scan QR Codes.
+**QR Code** -- Once the camera detects a valid address in the QR Code, it can be automatically inputted. Access will need to be granted to your application to enable scanning of QR Codes.
 
-**Copy Paste** -- When the sender receives the address in text format they would need to paste in the address. Your application can detect a valid address in the clipboard and prompt the user to press a button to paste. While most platforms allow applications to read the contents of the device's clipboard which enable convenient copy/paste prompts. Some users may perceive it as a privacy infringement. You may want to consider giving them an option to disable such automatic reading of the clipboard contents.
+**Copy Paste** -- When the sender receives the address in text format they would need to paste in the address. Your application can detect a valid address in the clipboard and prompt the sender to press a button to paste. While most platforms allow applications to read the contents of the device's clipboard which enable convenient copy/paste prompts. Some may perceive it as a privacy infringement so you may want to consider providing the option to disable automatic reading of the clipboard contents in the application preferences.
 
 </div>
 
 **Do's**
 
 - Indicate clearly if the address is valid or not
-- Show the whole address if possible to help the user visually verify it is correct
+- Show the whole address if possible to help the sender visually verify it is correct
 - If space is a constraint, truncate the address in the middle so that both the beginning and end are visible
 
 **Don'ts**
@@ -63,15 +63,15 @@ Once inputted, the user should be clearly informed if the address is valid or no
 <div class="center" markdown="1">
 {% include image.html
    image = "/assets/images/guide/payments/send/input-amount.svg"
-   alt-text = "Example image"
+   alt-text = "Amount input field with bitcoin, local currency and selections for fractions of the total wallet balance"
    width = 400
    height = 400
    layout = "float-right-desktop"
 %}
 
-Depending on their familiarity with bitcoin, your users may have a preference of which denomination the amount should be specified in. Read more about why and changing units contextually in [Units, symbols and amount display](https://deploy-preview-63--sad-borg-390916.netlify.app/guide/payments/units-and-symbols/).
+Depending on their familiarity with bitcoin, the sender may have a preference of which denomination the amount should be specified in. Read more about why and changing units contextually in [Units, symbols and amount display](https://deploy-preview-63--sad-borg-390916.netlify.app/guide/payments/units-and-symbols/).
 
-Since an amount specified in bitcoin or sats often involve many digits, and don't correspond easily to a local currency amount ($10 as 0.00019376 bitcoin for example). Applications can allow the sender select fractions of the total available balance. Most common is *max* or *all*, which also makes it easy for the user to sweep the entire balance to another wallet.
+Since an amount specified in bitcoin or sats often involve many digits, and don't correspond easily to a local currency amount ($10 as 0.00019376 bitcoin for example). Applications can allow the sender select fractions of the total available balance. Most common is *max* or *all*, which also makes it easy for the sender to sweep the entire balance to another wallet.
 </div>
 
 **Do's**
@@ -92,7 +92,7 @@ Since an amount specified in bitcoin or sats often involve many digits, and don'
 <div class="center" markdown="1">
 {% include image.html
    image = "/assets/images/guide/payments/send/select-fee-rate.svg"
-   alt-text = "Example image"
+   alt-text = "Fee selection component with high, medium, low urgency options"
    width = 400
    height = 400
    layout = "float-right-desktop"
@@ -100,15 +100,15 @@ Since an amount specified in bitcoin or sats often involve many digits, and don'
 
 The application can automatically estimate a fee and set it for the sender. This would normally prioritize the transaction to be included in a block as soon as possible. Since the fee rate may vary if the network is busy, you can give senders more fine grained fee controls so they can choose to optimize for faster confirmation, or lower fees.
 
-When allowing users to set their own fee, it is important to clearly communicate the estimated cost and confirmation time, along with some details on how the fee gets calculated ([see below](#How-are-transaction-fees-calculated)).
+When allowing the sender to set their own fee, it is important to clearly communicate the estimated cost and confirmation time. Be mindful that the way bitcoin fee's are calculated may not map to traditional financial experience so provide details on how the fee gets calculated.
 
-Human error with fee selection can lead to [costly mistakes](https://www.coindesk.com/dumb-mistakes-costly-bitcoin-losses). Someone can set a fee rate that's way too high, overpaying in fees or having transactions stuck for long periods of time if the fee is too low. For these reasons you should carefully consider if and how to expose transaction fees to users.
+Human error with fee selection can lead to [costly mistakes](https://www.coindesk.com/dumb-mistakes-costly-bitcoin-losses), and fee estimations are imperfect. Carefully consider if and how to expose transaction fees to senders.
 </div>
 
 **Variations**
 - Automatically set fee rate
-- Allow user to choose from presets
-- Allow user to enter a custom fee rate (advanced)
+- Allow sender to choose from presets
+- Allow sender to enter a custom fee rate (advanced)
 
 **Do's**
 
@@ -116,20 +116,20 @@ Human error with fee selection can lead to [costly mistakes](https://www.coindes
 - Display the fee rate and estimated transaction confirmation time
 - Display bitcoin and local currency denominations for cost reference
 - Include an option to adjust fee rate based on some presets (e.g. high, medium, low priority)
-- Display a warning if the user enters an amount far beyond the recommended rate
+- Display a warning if the sender enters an amount far beyond the recommended rate
 - Consider offering a [replace by fee]() option to speed up stuck transactions
 
 **Don'ts**
 
 - Allow for confusion between total fee and fee rate
-- Allow users to overpay in transaction fees
+- Allow senders to overpay in transaction fees
 
 ## Reviewing and approving the payment
 
 <div class="center" markdown="1">
 {% include image.html
    image = "/assets/images/guide/payments/send/review-payment.svg"
-   alt-text = "Example image"
+   alt-text = "Approval screen with details of the transaction and confirmation button"
    width = 400
    height = 400
    layout = "float-right-desktop"
@@ -137,31 +137,31 @@ Human error with fee selection can lead to [costly mistakes](https://www.coindes
 
 A valid transaction that is broadcasted to the network cannot be reversed, so it is critical that the sender is given a chance to double check the payment details (amount, recipient address, total fee, etc) before submitting the transaction.
 
-If the wallet allows users to set a spending limit and the current transaction exceeds it, make sure users go through some security check (biometric, enter PIN, 2FA password, etc). This can also be used if the 100% of the funds are being sent. 
+If your application allows setting spending limits, and the current transaction exceeds it, make sure they go through some security check (biometric, enter PIN, 2FA password, etc). This technique can also be employed if the transaction is attempting to use the max wallet balance. 
 </div>
 
 **Do's**
 
-- Allow users to review payment details and adjust if necessary, before submitting the transaction
+- Allow the sender to review payment details and adjust if necessary, before submitting the transaction
 - Show amount and fee in both bitcoin and local currency denominations
 
 **Don'ts**
 
-- Assume the user has got all the details correct, give them the chance to look over the information before broadcasting the transaction
+- Assume the sender has got all the details correct, give them the chance to look over the information before broadcasting the transaction
 
 ## Transaction processing and confirmation
 
 {% include image.html
    image = "https://i.imgur.com/idV0Mt7.png"
    retina = "https://i.imgur.com/idV0Mt7.png"
-   alt-text = "Example image"
+   alt-text = "Notifications after the transaction is broadcasted"
    width = 1600
    height = 800
 %}
 
 Once the transaction is valid it is now in the *memory pool*, and is available for including in a block by miners. When in the *memory pool*, the sender can see the transaction in their wallet as unconfirmed or pending.
 
-After broadcasting a transaction, the process of propagation and validation is quite fast so showing these states may be infeasible. You may inform the user that their transaction is pending a confirmation, the estimated time to confirm given the current fee market, and once it has gotten its first confirmation.
+After broadcasting a transaction, the process of propagation and validation is quite fast so showing these states may be infeasible. You may inform the sender that their transaction is pending a confirmation, the estimated time to confirm given the current fee market, and once it has gotten its first confirmation.
 
 **Do's**
 - Clearly indicate state of the outgoing transaction
