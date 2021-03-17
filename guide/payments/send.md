@@ -11,7 +11,7 @@ main_classes: -no-top-padding
 
 # Sending bitcoin
 
-Sending bitcoin can be a very straight forward or complex flow in a bitcoin application. People may be sending bitcoin to a known contact, moving it between their own wallets on different devices, or making a purchase through a [payment processor](https://bitcoin.design/guide/getting-started/software/#payment-processors).
+Sending bitcoin can be a very straightforward or complex flow in a Bitcoin application. People may be sending bitcoin to a known contact, moving it between their own wallets on different devices, or making a purchase through a [payment processor](https://bitcoin.design/guide/getting-started/software/#payment-processors).
 
 Regardless of where the bitcoin is being sent, there are some basic configurations that an application needs to help the sender with when creating a transaction: 
 
@@ -20,10 +20,10 @@ Regardless of where the bitcoin is being sent, there are some basic configuratio
 - **Coin selection** — Which coins/inputs to use (optional)
 - **Fee settings** — Prioritize fast confirmation or low cost (optional)
 
-The order of configuration for the payment can be tailored to your use case. For example, you may make the sender set the amount before the address is entered.
+You can tailor the configuration's order for the payment. For example, you may make users set the amount before they enter the address.
             
 ## Get the recipient address
-To send a payment on the Bitcoin blockchain we need the recipient's address. Since Bitcoin [addresses](https://bitcoin.design/guide/glossary/#address) are long and seemingly random, they are best shared by copying and pasting in plain text, as a [payment link](https://bitcoin.design/guide/foundations/wallet-interoperability/#payment-links), or as a scannable [QR Code](https://bitcoin.design/guide/foundations/wallet-interoperability/#qr-codes).
+To send a payment on the Bitcoin blockchain, we need the recipient's address. Since Bitcoin [addresses](https://bitcoin.design/guide/glossary/#address) are long and seemingly random, they are best shared by copying and pasting in plain text, as a [payment link](https://bitcoin.design/guide/foundations/wallet-interoperability/#payment-links), or as a scannable [QR Code](https://bitcoin.design/guide/foundations/wallet-interoperability/#qr-codes).
 
 This is easily accomplished by generating a new address in the receiving wallet application, then sharing it with the sender. If the sender and receiver are together at the time, scanning the receivers address as a QR code will be easy, but if they are not, they can send the address as text in any regular communication tool like email, sms etc.
 
@@ -38,13 +38,11 @@ This is easily accomplished by generating a new address in the receiving wallet 
    layout = "float-right-desktop"
 %}
 
-Once you have gotten the address, its time to enter the payment details. Bitcoin transactions are irreversible so both the sender and receiver should take great care in correctly sharing and inputting addresses. 
+Once you have gotten the address, its time to enter the payment details. Bitcoin transactions are irreversible so both the sender and receiver should take great care in correctly sharing and inputting addresses. The sender should be clearly informed if the address is valid or not.
 
-Once inputted, the sender should be clearly informed if the address is valid or not. If the address is not valid, or incompatible with the wallet, sending should be disabled.
+**QR Code** -- Access will need to be granted to your application to enable scanning of QR Codes. Once the camera detects a valid address in the QR Code, it can be automatically inputted.
 
-**QR Code** -- Once the camera detects a valid address in the QR Code, it can be automatically inputted. Access will need to be granted to your application to enable scanning of QR Codes.
-
-**Copy Paste** -- When the sender receives the address in text format they would need to paste in the address. Your application can detect a valid address in the clipboard and prompt the sender to press a button to paste. While most platforms allow applications to read the contents of the device's clipboard which enable convenient copy/paste prompts. Some may perceive it as a privacy infringement so you may want to consider providing the option to disable automatic reading of the clipboard contents in the application preferences.
+**Copy Paste** -- When the sender receives the address as text your application can detect a valid address in the clipboard and prompt the sender to press a button to paste it.
 
 </div>
 
@@ -71,7 +69,9 @@ Once inputted, the sender should be clearly informed if the address is valid or 
 
 Depending on their familiarity with bitcoin, the sender may have a preference of which denomination the amount should be specified in. Read more about why and changing units contextually in [Units, symbols and amount display](https://deploy-preview-63--sad-borg-390916.netlify.app/guide/payments/units-and-symbols/).
 
-Since an amount specified in bitcoin or sats often involve many digits, and don't correspond easily to a local currency amount ($10 as 0.00019376 bitcoin for example). Applications can allow the sender select fractions of the total available balance. Most common is *max* or *all*, which also makes it easy for the sender to sweep the entire balance to another wallet.
+Since an amount specified in bitcoin or satoshis often involve many digits, and don't correspond easily to a local currency amount ($10 as 0.00019376 bitcoin for example).
+
+Applications can allow the sender to select fractions of the total available balance. Most common is *max* or *use full balance*, which also makes it easy for the sender to sweep all of the bitcoin to another wallet.
 </div>
 
 **Do's**
@@ -79,12 +79,11 @@ Since an amount specified in bitcoin or sats often involve many digits, and don'
 - Allow different denominations to be used for the amount
 - Show the total balance available to send
 - Allow selecting max amount (subtracting the required fee)
-- Payment links and QR codes can contain an amount — when they do, the amount should be populated automatically.
+- Payment links and QR Codes can contain an amount. When they do, the amount should be populated automatically.
 
 **Don'ts**
 
 - Don't allow entering more than the available balance
-
 
 
 ## Transaction fee
@@ -100,7 +99,7 @@ Since an amount specified in bitcoin or sats often involve many digits, and don'
 
 The application can automatically estimate a fee and set it for the sender. This would normally prioritize the transaction to be included in a block as soon as possible. Since the fee rate may vary if the network is busy, you can give senders more fine grained fee controls so they can choose to optimize for faster confirmation, or lower fees.
 
-When allowing the sender to set their own fee, it is important to clearly communicate the estimated cost and confirmation time. Be mindful that the way bitcoin fee's are calculated may not map to traditional financial experience so provide details on how the fee gets calculated.
+When allowing the sender to set their own fee, it is important to clearly communicate the estimated cost and confirmation time. Be mindful that the way Bitcoin fee's are calculated may not map to the senders traditional financial experience, so if you allow them to choose their own fee consider providing details on how the fee gets calculated.
 
 Human error with fee selection can lead to [costly mistakes](https://www.coindesk.com/dumb-mistakes-costly-bitcoin-losses), and fee estimations are imperfect. Carefully consider if and how to expose transaction fees to senders.
 </div>
@@ -117,7 +116,6 @@ Human error with fee selection can lead to [costly mistakes](https://www.coindes
 - Display bitcoin and local currency denominations for cost reference
 - Include an option to adjust fee rate based on some presets (e.g. high, medium, low priority)
 - Display a warning if the sender enters an amount far beyond the recommended rate
-- Consider offering a [replace by fee]() option to speed up stuck transactions
 
 **Don'ts**
 
