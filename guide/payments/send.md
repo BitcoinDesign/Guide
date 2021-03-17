@@ -27,7 +27,7 @@ To send a payment on the Bitcoin blockchain we need the recipient's address. Sin
 
 This is easily accomplished by generating a new address in the receiving wallet application, then sharing it with the sender. If the sender and receiver are together at the time, scanning the receivers address as a QR code will be easy, but if they are not, they can send the address as text in any regular communication tool like email, sms etc.
 
-## Input an address
+## Inputing an address
 
 <div class="center" markdown="1">
 {% include image.html
@@ -38,13 +38,14 @@ This is easily accomplished by generating a new address in the receiving wallet 
    layout = "float-right-desktop"
 %}
 
-Once you have gotten the address, it needs to be inputted on the "create transaction" interface. Bitcoin transactions are irreversible so both the sender and receiver should take great care in correctly sharing and inputting addresses. 
+Once you have gotten the address, its time to enter the payment details. Bitcoin transactions are irreversible so both the sender and receiver should take great care in correctly sharing and inputting addresses. 
 
-Upon address input, the user should be clearly informed if the address is valid or not. If the address is not valid, or incompatible with the current application, sending should be disabled.
+Once inputted, the user should be clearly informed if the address is valid or not. If the address is not valid, or incompatible with the wallet, sending should be disabled.
 
 **QR Code** -- Once the camera detects a valid address in the QR Code, it can be automatically inputted. The user will need to grant access your application to be able to scan QR Codes.
 
-**Copy Paste** -- When the sender receives the address in text format they would need to paste in the address. Your application can detect a valid address in the clipboard and prompt the user to press a button to paste.
+**Copy Paste** -- When the sender receives the address in text format they would need to paste in the address. Your application can detect a valid address in the clipboard and prompt the user to press a button to paste. While most platforms allow applications to read the contents of the device's clipboard which enable convenient copy/paste prompts. Some users may perceive it as a privacy infringement. You may want to consider giving them an option to disable such automatic reading of the clipboard contents.
+
 </div>
 
 **Do's**
@@ -52,20 +53,12 @@ Upon address input, the user should be clearly informed if the address is valid 
 - Indicate clearly if the address is valid or not
 - Show the whole address if possible to help the user visually verify it is correct
 - If space is a constraint, truncate the address in the middle so that both the beginning and end are visible
-- Most platforms allow applications to read the contents of the device's clipboard to enable convenient copy/paste. While some users find this helpful, some may perceive it as a privacy infringement. You may want to consider giving them an option to disable automatic reading of the clipboard.
 
 **Don'ts**
 
 - Don't allow a transaction to be sent if the address is invalid
 
 ## Inputing an amount
-
-{% include image.html
-   image = "/assets/images/guide/payments/send/input-amount-desktop.svg"
-   alt-text = "Example image"
-   width = 1600
-   height = 800
-%}
 
 <div class="center" markdown="1">
 {% include image.html
@@ -135,7 +128,7 @@ Human error with fee selection can lead to [costly mistakes](https://www.coindes
 
 <div class="center" markdown="1">
 {% include image.html
-   image = "/assets/images/guide/payments/send/input-amount.svg"
+   image = "/assets/images/guide/payments/send/review-payment.svg"
    alt-text = "Example image"
    width = 400
    height = 400
@@ -158,10 +151,6 @@ If the wallet allows users to set a spending limit and the current transaction e
 
 ## Transaction processing and confirmation
 
-Once the transaction is valid it is now in the *memory pool*, and is available for including in a block by miners. When in the *memory pool*, the sender can see the transaction in their wallet as unconfirmed or pending.
-
-After broadcasting a transaction, the process of propagation and validation is quite fast so showing these states may be infeasible. You may inform the user that their transaction is pending a confirmation, the estimated time to confirm given the current fee market, and once it has gotten its first confirmation.
-
 {% include image.html
    image = "https://i.imgur.com/idV0Mt7.png"
    retina = "https://i.imgur.com/idV0Mt7.png"
@@ -169,6 +158,10 @@ After broadcasting a transaction, the process of propagation and validation is q
    width = 1600
    height = 800
 %}
+
+Once the transaction is valid it is now in the *memory pool*, and is available for including in a block by miners. When in the *memory pool*, the sender can see the transaction in their wallet as unconfirmed or pending.
+
+After broadcasting a transaction, the process of propagation and validation is quite fast so showing these states may be infeasible. You may inform the user that their transaction is pending a confirmation, the estimated time to confirm given the current fee market, and once it has gotten its first confirmation.
 
 **Do's**
 - Clearly indicate state of the outgoing transaction
