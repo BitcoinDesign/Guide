@@ -157,14 +157,14 @@ If your application allows setting spending limits, and the current transaction 
    height = 800
 %}
 
-Once the transaction is valid it is now in the *memory pool*, and is available for including in a block by miners. When in the *memory pool*, the sender can see the transaction in their wallet as unconfirmed or pending.
+Once the transaction is valid, it is now in the memory pool and is available for including in a block by miners. When in the memory pool, the sender can see the wallet's transaction as unconfirmed or pending.
 
-After broadcasting a transaction, the process of propagation and validation is quite fast so showing these states may be infeasible. You may inform the sender that their transaction is pending a confirmation, the estimated time to confirm given the current fee market, and once it has gotten its first confirmation.
+After broadcasting a transaction, the process of propagation and validation is quite fast so showing these states may be infeasible. You may inform the sender that their transaction is pending a confirmation, the estimated time to confirm the current fee market, and once it has gotten its first confirmation.
 
 **Do's**
-- Clearly indicate state of the outgoing transaction
-- Show the amount of confirmations the transaction has gotten
+- Clearly indicate the state of the outgoing transaction
+- Show the amount of confirmations the transaction has
 - Provide information on transaction/block ID for receipt purposes
 
 **Don'ts**
-- Show a  the transaction as confirmed until it has received ***at least*** one confirmation, but preferably six
+- Show the transaction as confirmed until it has received ***at least*** one confirmation, but preferably six
