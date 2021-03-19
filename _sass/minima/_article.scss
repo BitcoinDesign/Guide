@@ -197,7 +197,7 @@ article.guide {
 
       &:hover {
         text-decoration: none;
-      } 
+      }
     }
 
     @include media-query(large) {
@@ -214,7 +214,7 @@ article.guide {
         a.header-anchor {
           opacity: 1;
         }
-      } 
+      }
     }
   }
 
@@ -432,8 +432,6 @@ article.guide {
     }
 
     @include media-query(small) {
-      margin-left: -15px;
-      margin-right: -15px;
       padding: 30px 0;
 
       figure {
@@ -450,9 +448,12 @@ article.guide {
       }
     }
 
+    @include media-query(medium-down) {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+
     @include media-query(medium-up) {
-      margin-left: -30px;
-      margin-right: -30px;
       padding: 30px 0 30px 0;
 
       figure {
@@ -465,6 +466,11 @@ article.guide {
       &:after {
         flex-basis: 30px;
       }
+    }
+
+    @include media-query(large) {
+      margin-left: -30px;
+      margin-right: -30px;
     }
   }
 
