@@ -118,7 +118,7 @@ While Bitcoin is already used by a large number of people, it pales in compariso
 
 > Enable import and export of wallets, maximise backwards compatibility and use of open standards
 
-Bitcoin is an open-source protocol, operated in a decentralized manner. This has led to a number of standards being developed for products building on the protocol to be compatible. It should be easy to switch and move your Bitcoin wallet to a different application, should you wish. Making sure that your product supports as many of these standards as possible is best practice and builds trust. More on [wallet interoperability]({{ '/guide/foundations/wallet-interoperability/' | relative_url }}). 
+Bitcoin is an open-source protocol, operated in a decentralized manner. This has led to a number of standards being developed to ensure compatibility between products. It should be easy to switch and move your Bitcoin wallet to a different application, should you wish. Making sure that your product supports as many of these standards as possible is best practice and builds trust. More on [wallet interoperability]({{ '/guide/foundations/wallet-interoperability/' | relative_url }}). 
 
 **Do**
 - Support import and export of wallets
@@ -136,7 +136,7 @@ Bitcoin is an open-source protocol, operated in a decentralized manner. This has
 
 > Be open and transparent with how your product works, open-source your code when possible
 
-While an open and decentralized financial system that lets people connect directly with it has many benefits, it does put a lot of burden on the users to pick a product they trust, and that works for them. We can make this easier by freely sharing information about how our products work, what technologies they use and rely on. Let people verify that your claims are true, ideally by open-sourcing your own code. It is also very important to be open about what risks the user might be taking on with self-custody, under which scenarios they might lose access to their funds and best practices for avoiding this. 
+While an open and decentralized financial system that users can connect with directly is great, it puts a burden on them to choose a product that they trust and like to use. We can make this easier by freely sharing information about how our products work and what technologies they use/rely on. By open-sourcing your code, you can let people verify that your claims are true, ultimately building more trust with your users. It is also very important to be transparent with users about the risks that come with self-custodying funds. Be sure to educate about scenarios where they may risk losing access to their funds along with best practices for avoiding this.
 
 **Do**
 - Be open and transparent with how your product works
