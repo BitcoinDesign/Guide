@@ -136,7 +136,7 @@ Bitcoin is an open-source protocol, operated in a decentralized manner. This has
 
 > Be open and transparent with how your product works, open-source your code when possible
 
-While an open and decentralized financial system that lets people connect directly with it is great, it does put a lot of burden on the users to pick a product they trust, and that works for them. We can make this easier by freely sharing information about how our products work, what technologies they use and rely on. Let people verify that your claims are true, ideally by open-sourcing your own code. It is also very important to be open about what risks the user might be taking on with self-custody, under which scenarios they might lose access to their funds and best practices for avoiding this. 
+While an open and decentralized financial system that lets people connect directly with it has many benefits, it does put a lot of burden on the users to pick a product they trust, and that works for them. We can make this easier by freely sharing information about how our products work, what technologies they use and rely on. Let people verify that your claims are true, ideally by open-sourcing your own code. It is also very important to be open about what risks the user might be taking on with self-custody, under which scenarios they might lose access to their funds and best practices for avoiding this. 
 
 **Do**
 - Be open and transparent with how your product works
