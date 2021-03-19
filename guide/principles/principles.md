@@ -109,7 +109,7 @@ While Bitcoin is already used by a large number of people, it pales in compariso
 
 **Don't**
 - Exclude people by building features that only work in certain countries
-- Add technical detail that is not required knowledge, or technical terms like seed phrase XPUBs, mnemonics etc.
+- Add technical detail that is not required knowledge, or technical terms like seed phrase, XPUBs, mnemonics etc.
 - Put all education up front and expect people to read and remember it
 
 ---
