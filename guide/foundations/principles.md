@@ -30,7 +30,7 @@ The key principles of designing for Bitcoin
 
 # Bitcoin design principles
 
-As a new technology, Bitcoin offers the opportunity of a decentralized open financial system, where participants share the role of securing the network. This is important to give everyone equal and direct access without needing intermediaries. To make this a reality, we encourage everyone working on products to deliberately support the core principles of designing for Bitcoin. 
+As a new technology, Bitcoin offers the opportunity of a decentralized open financial system, where participants share the role of securing the network. This is important to give everyone equal and direct access to economic opportunities without fearing seizure or needing intermediaries. To make this a reality, we encourage everyone working on products to deliberately support the core principles of designing for Bitcoin. 
 
 These are principles we in the Bitcoin Design Community has identified and stand behind. Some of these come from the technology itself, and others from the behavior and ethos of the community. Although every use case and product is different, applications should strive to follow these principles. Diverging from them should only be done with very good reason.
 
