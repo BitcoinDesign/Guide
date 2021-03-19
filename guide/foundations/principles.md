@@ -75,7 +75,7 @@ Security can also be a feeling. A product that is polished, good looking, easy t
 
 
 **Do**
-- Take safeguarding of users funds seriously
+- Take safeguarding of users' funds seriously
 - Strive for no loss of funds, whether by negligence or theft 
 - Provide suitable private key management schemes for beginners
 - Offer progressive security and upgrade paths
