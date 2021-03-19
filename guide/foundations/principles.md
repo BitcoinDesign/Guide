@@ -69,9 +69,9 @@ Self-custody often leaves the end-user responsible for the security of their pri
 
 Security is especially important when onboarding people new to Bitcoin where solutions that work for advanced users might backfire. New users are likely to start by storing small amounts until they get comfortable with self-custody. The concept of progressive security is a good idea here. This would let a user upgrade their security and private key management scheme as their savings grow. 
 
-Education and awareness is a big part of security, protecting users from bad actors and potentially their own bad behavior. It is unrealistic to expect beginners to take in all the knowledge acquired by advanced users in one go, for example while [onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}) to a bitcoin product. We should therefore consider how to continuously educate and level up user awareness of best practices and risks.
+Education and awareness is a big part of security, protecting users from bad actors and potentially their own mistakes. It is unrealistic to expect beginners to take in all the knowledge acquired by advanced users in one go, for example, while [onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}) to a Bitcoin product. We should therefore consider how to continuously educate and level up user awareness of best practices and risks.
 
-Security can also be a feeling. A product that is polished, good looking, easy to use and transparently communicates how it works can help users feel more secure. Especialy compared to one with the exact same security measures that lack these qualities.
+Security can also be a feeling. A product that is polished, good looking, easy to use and transparently communicates how it works can help users feel more secure. Especially compared to one with the exact same security measures that lack these qualities.
 
 
 **Do**
@@ -82,7 +82,7 @@ Security can also be a feeling. A product that is polished, good looking, easy t
 - Build with bad actors in mind
 - Minimize risk of self-inflicted loss from user negligence
 - Continuously educate users on best practice and risks 
-- Reduce attack surface by minimizing use of external code dependencies
+- Reduce attack surfaces by minimizing use of external code dependencies
 
 **Don't**
 - Blame the user for losing funds
@@ -105,11 +105,11 @@ While Bitcoin is already used by a large number of people, it pales in compariso
 - Use plain language that people new to Bitcoin can understand regardless of prior knowledge
 - Localize your product and make it multilingual 
 - Educate in place, when people are presented with a new concept
-- Treat users who rely on assistive technologies, as first-class citizens
+- Treat users who rely on assistive technologies as first-class citizens
 
 **Don't**
 - Exclude people by building features that only work in certain countries
-- Add technical detail that is not required knowledge, or technical terms like seed phrase XPUBs, mnemonics etc.
+- Add technical detail that is not required knowledge, or technical terms like seed phrase, XPUBs, mnemonics etc.
 - Put all education up front and expect people to read and remember it
 
 ---
@@ -136,7 +136,7 @@ Bitcoin is an open-source protocol, operated in a decentralized manner. This has
 
 > Be open and transparent with how your product works, open-source your code when possible
 
-While an open and decentralized financial system that lets people connect directly with it is great, it does put a lot of burden on the users to pick a product they trust, and that works for them. We can make this easier by freely sharing information about how our products work, what technologies they use and rely on. Let people verify that your claims are true, ideally by open-sourcing your own code. It is also very important to be open about what risks the user might be taking on with self-custody, under which scenarios they might lose access to their funds and best practices for avoiding this. 
+While an open and decentralized financial system that lets people connect directly with it has many benefits, it does put a lot of burden on the users to pick a product they trust, and that works for them. We can make this easier by freely sharing information about how our products work, what technologies they use and rely on. Let people verify that your claims are true, ideally by open-sourcing your own code. It is also very important to be open about what risks the user might be taking on with self-custody, under which scenarios they might lose access to their funds and best practices for avoiding this. 
 
 **Do**
 - Be open and transparent with how your product works
@@ -152,7 +152,7 @@ While an open and decentralized financial system that lets people connect direct
 
 > Minimize collection of personal information, and maximize financial transaction privacy
 
-A common misconception of Bitcoin is that it provides complete anonymity and privacy of transactions. Since the blockchain is an unchangeable ledger of all transactions ever made, it is in fact very hard to not have your complete transaction history visible once even a single one of your addresses is connected to you. If Bitcoin is to become viable for a wider audience and daily use we ought to take privacy seriously. This is certainly not to enable or encourage illicit activity, but to protect individual financial privacy. We would not accept our bank to publish our financial transactions to our Twitter or Facebook feeds, so should avoid that scenario with Bitcoin as well.
+A common misconception of Bitcoin is that it provides complete anonymity and privacy of transactions. Since the blockchain is an unchangeable ledger of all transactions ever made, it is in fact very hard to not have your complete transaction history visible once even a single one of your addresses is connected to you. If Bitcoin is to become viable for a wider audience and daily use we ought to take privacy seriously. This is certainly not to enable or encourage illicit activity, but to protect individual financial privacy. We would not accept our bank to publish our financial transactions to our Twitter or Facebook feeds, so we should avoid that scenario with Bitcoin as well.
 
 The Bitcoin network doesn’t need to know your name for you to use it. Strive to collect as little personal information as possible about your users. When it is absolutely required to provide the product services, collect only the bare minimum and consider if and when this can be discarded when no longer necessary. If you do collect personal information, be transparent about why and how you will use and store it.
 
