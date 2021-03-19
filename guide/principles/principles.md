@@ -105,7 +105,7 @@ While Bitcoin is already used by a large number of people, it pales in compariso
 - Use plain language that people new to Bitcoin can understand regardless of prior knowledge
 - Localize your product and make it multilingual 
 - Educate in place, when people are presented with a new concept
-- Treat users who rely on assistive technologies, as first-class citizens
+- Treat users who rely on assistive technologies as first-class citizens
 
 **Don't**
 - Exclude people by building features that only work in certain countries
