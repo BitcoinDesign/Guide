@@ -67,11 +67,11 @@ Our existing mental models of access to digital services are usernames and passw
 
 Self-custody often leaves the end-user responsible for the security of their private keys. They can only do a good job of that if we provide them with appropriate tools and awareness of best practices. 
 
-Security is especially important when onboarding people new to Bitcoin where solutions that work for advanced users might backfire. New users are likely to start by storing small amounts until they get comfortable with self-custody. The concept of progressive security is a good idea here. This would let a user upgrade their security and private key management scheme as their savings grow. 
+Security is especially important when onboarding people new to Bitcoin. For example, new users are likely to start by only storing small amounts. After a period of time, however, they may get more comfortable with the idea of self-custodying. The concept of progressive security is a good idea here, starting with automatic cloud backups. This would let a user upgrade their security and private key management scheme as their savings grow. Although common, recovery phrases that require manual backup might backfire for new users not yet familiar with safe backup practices. 
 
-Education and awareness is a big part of security, protecting users from bad actors and potentially their own mistakes. It is unrealistic to expect beginners to take in all the knowledge acquired by advanced users in one go, for example, while [onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}) to a Bitcoin product. We should therefore consider how to continuously educate and level up user awareness of best practices and risks.
+Education and awareness is a big part of security, as it can protect users from bad actors and potentially their own security mistakes. It is unrealistic to expect beginners to take in all the knowledge acquired by advanced users in one go, for example, while [onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}) to a Bitcoin product. We should therefore consider how to continuously educate and level up user awareness of best practices and risks.
 
-Security can also be a feeling. A product that is polished, good looking, easy to use and transparently communicates how it works can help users feel more secure. Especially compared to one with the exact same security measures that lack these qualities.
+Security can also be a feeling. A product that is polished, good looking, easy to use, and transparently communicates how it works can help users feel more secure– especially when compared to another product with the exact same security measures, but lacks these qualities.
 
 
 **Do**
