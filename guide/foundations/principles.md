@@ -22,7 +22,7 @@ The key principles of designing for Bitcoin
    retina = "/assets/images/guide/foundations/principles/principles@2x.jpg"
    mobile = "/assets/images/guide/foundations/principles/principles-mobile.jpg"
    mobileRetina = "/assets/images/foundations/principles/principles-mobile@2x.jpg"
-   alt-text = "Principles header illustration"
+   alt-text = "Principles header illustration, five white circles in a horizontal line on black background"
    width = 1600
    height = 600
    layout = "full-width"
