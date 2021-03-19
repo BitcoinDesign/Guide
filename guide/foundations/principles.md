@@ -67,7 +67,7 @@ Our existing mental models of access to digital services are usernames and passw
 
 Self-custody often leaves the end-user responsible for the security of their private keys. They can only do a good job of that if we provide them with appropriate tools and awareness of best practices. 
 
-Security is especially important when onboarding people new to Bitcoin where solutions that work for advanced users might backfire. New users are likely to start by storing small amounts until they get comfortable with self-custody. The concept of progressive security is a good idea for here. This would let a user upgrade their security and private key management scheme as their savings grow. 
+Security is especially important when onboarding people new to Bitcoin where solutions that work for advanced users might backfire. New users are likely to start by storing small amounts until they get comfortable with self-custody. The concept of progressive security is a good idea here. This would let a user upgrade their security and private key management scheme as their savings grow. 
 
 Education and awareness is a big part of security, protecting users from bad actors and potentially their own bad behavior. It is unrealistic to expect beginners to take in all the knowledge acquired by advanced users in one go, for example while [onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}) to a bitcoin product. We should therefore consider how to continuously educate and level up user awareness of best practices and risks.
 
