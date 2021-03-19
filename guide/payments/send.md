@@ -25,7 +25,7 @@ You can tailor the configuration's order for the payment. For example, you may m
 ## Get the recipient address
 To send a payment on the Bitcoin blockchain, we need the recipient's address. Since Bitcoin [addresses](https://bitcoin.design/guide/glossary/#address) are long and seemingly random, they are best shared by copying and pasting in plain text, as a [payment link](https://bitcoin.design/guide/foundations/wallet-interoperability/#payment-links), or as a scannable [QR Code](https://bitcoin.design/guide/foundations/wallet-interoperability/#qr-codes).
 
-This is easily accomplished by generating a new address in the receiving wallet application, then sharing it with the sender. If the sender and receiver are together at the time, scanning the receivers address as a QR code will be easy, but if they are not, they can send the address as text in any regular communication tool like email, sms etc.
+This is easily accomplished by generating a new address in the receiving wallet application, then sharing it with the sender. If the sender and receiver are physically close to each other, scanning the receiver's address as a QR Code will be easy. Still, if they are not, they can send the address as text in any regular communication tool like email, SMS, etc.
 
 ## Inputing an address
 
@@ -38,7 +38,7 @@ This is easily accomplished by generating a new address in the receiving wallet 
    layout = "float-right-desktop"
 %}
 
-Once you have gotten the address, its time to enter the payment details. Bitcoin transactions are irreversible so both the sender and receiver should take great care in correctly sharing and inputting addresses. The sender should be clearly informed if the address is valid or not.
+Once you have gotten the address, its time to enter the payment details. Bitcoin transactions are irreversible, so both the sender and receiver should take great care in correctly sharing and inputting addresses. The sender should be clearly informed if the address is valid or not.
 
 **QR Code** -- Access will need to be granted to your application to enable scanning of QR Codes. Once the camera detects a valid address in the QR Code, it can be automatically inputted.
 
@@ -159,7 +159,7 @@ If your application allows setting spending limits, and the current transaction 
 
 Once the transaction is valid, it is now in the memory pool and is available for including in a block by miners. When in the memory pool, the sender can see the wallet's transaction as unconfirmed or pending.
 
-After broadcasting a transaction, the process of propagation and validation is quite fast so showing these states may be infeasible. You may inform the sender that their transaction is pending a confirmation, the estimated time to confirm the current fee market, and once it has gotten its first confirmation.
+After broadcasting a transaction, the process of propagation and validation is quite fast, so showing these states may be infeasible. You may inform the sender that their transaction is pending a confirmation, the estimated time to confirm given the current fee market, and once it has gotten its first confirmation.
 
 **Do's**
 - Clearly indicate the state of the outgoing transaction
