@@ -9,8 +9,11 @@ main_classes: -no-top-padding
 ---
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/getting-to-know-your-users.svg"
-   alt-text = "Bitcoin, key and lock"
+   image = "/assets/images/guide/onboarding/getting-to-know-your-users.png"
+   retina = "/assets/images/guide/onboarding/getting-to-know-your-users@2x.png"
+   mobile = "/assets/images/guide/onboarding/getting-to-know-your-users-mobile.png"
+   mobileRetina = "/assets/images/guide/onboarding/getting-to-know-your-users-mobile@2x.png"
+   alt-text = "Getting to know your users chapter illustration"
    width = 1600
    height = 600
    layout = "full-width"
