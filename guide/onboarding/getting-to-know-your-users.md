@@ -87,7 +87,7 @@ Motivators are specific user wants that are driving the user to seek out Bitcoin
    layout = "float-left"
 %}
 
-*"What if a hacker knows I have a lot of savings, how will I protect my funds and myself?"*
+*"What if a hacker knows I have a lot of savings? How will I protect my funds and myself?"*
 
 </div>
 
