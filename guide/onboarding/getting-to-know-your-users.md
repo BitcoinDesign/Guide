@@ -71,7 +71,7 @@ Motivators are specific user wants that are driving the user to seek out Bitcoin
    layout = "float-left"
 %}
 
-*"I'm scared that I will lose my private key and so I still keep some of my savings in cash and not bitcoin."*
+*"I'm scared that I will lose my private key, so I still keep some of my savings in cash and not bitcoin."*
 
 </div>
 
