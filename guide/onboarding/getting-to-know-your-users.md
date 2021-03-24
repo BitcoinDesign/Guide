@@ -57,7 +57,7 @@ Barriers are anything that the user percieves as preventing them from achieving 
 
 Motivators are specific user wants that are driving the user to seek out Bitcoin in the first place.
 
-### Barriers (strongest to weakest)
+### Barriers
 
 #### Fear of loss
 
@@ -108,7 +108,7 @@ Motivators are specific user wants that are driving the user to seek out Bitcoin
 </div>
 
 
-### Motivators (strongest to weakest)
+### Motivators
 
 #### Financial security
 
