@@ -71,7 +71,7 @@ Security is especially important when onboarding people new to Bitcoin. For exam
 
 Education and awareness are a big part of security, as they can protect users from bad actors and potentially their own security mistakes. It is unrealistic to expect beginners to take in all the knowledge acquired by advanced users in one go, for example, while [onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}) to a Bitcoin product. We should therefore consider how to continuously educate and level up user awareness of best practices and risks.
 
-Security can also be a feeling. A product that is polished, good looking, easy to use, and transparently communicates how it works can help users feel more secure– especially when compared to another product with the exact same security measures, but lacks these qualities.
+Security can also be a feeling. A polished, good-looking, easy-to-use product that transparently communicates how it works can help users feel more secure– especially when compared to another product with the same security measures - but lacks these qualities.
 
 
 **Do**
