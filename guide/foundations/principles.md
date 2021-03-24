@@ -118,7 +118,7 @@ While Bitcoin is already used by a large number of people, it pales in compariso
 
 > Enable import and export of wallets, maximise backwards compatibility and use of open standards
 
-Bitcoin is an open-source protocol, operated in a decentralized manner. This has led to a number of standards being developed to ensure compatibility between products. It should be easy to switch and move your Bitcoin wallet to a different application, should you wish. Making sure that your product supports as many of these standards as possible is best practice and builds trust. More on [wallet interoperability]({{ '/guide/foundations/wallet-interoperability/' | relative_url }}). 
+Bitcoin is an open-source protocol, operating in a decentralized manner. This has led to a number of standards being developed to ensure compatibility between products. It should be easy to switch and move your Bitcoin wallet to a different application, should you wish. Ensuring that your product supports as many of these standards as possible is best practice and builds trust. More on [wallet interoperability]({{ '/guide/foundations/wallet-interoperability/' | relative_url }}). 
 
 **Do**
 - Support import and export of wallets
