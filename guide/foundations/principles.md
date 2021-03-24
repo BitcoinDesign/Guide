@@ -49,7 +49,7 @@ These are principles we in the Bitcoin Design Community identified and stand beh
 
 > Let users control their private keys, with no risk for seizure or freezing of funds
 
-Our existing mental models of access to digital services are usernames and passwords, controlled by a company that has custody of your funds and data. With everyone having direct access to the Bitcoin network, we no longer need to design products that require people to delegate control of their funds to middlemen. While it comes with greater responsibility, it is self-custody that enables the open financial system of peer-to-peer transactions.
+Our existing mental models of access to digital services are usernames and passwords controlled by a company with custody of your funds and data. With everyone having direct access to the Bitcoin network, we no longer need to design products that require people to delegate control of their funds to middlemen. While it comes with greater responsibility, self-custody enables the open financial system of peer-to-peer transactions.
 
 **Do**
 - Let users control their bitcoin and private keys directly
