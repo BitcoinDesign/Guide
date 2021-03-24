@@ -19,6 +19,17 @@ projects:
         link: https://bitcoin.design/guide
       - name: How to contribute
         link: https://bitcoin.design/guide/contribute/
+  - name: Bitcoin icon set
+    description: Icons for typical needs of Bitcoin applications. Includes common generic icons like arrows, and more unique ones like a wallet, keys, mining, and Bitcoin symbols.
+    image:
+      url: /assets/images/contribute/bitcoin-icon-set.svg
+      width: 75
+      height: 75
+    links:
+      - name: Figma
+        link: https://www.figma.com/community/file/948545404023677970/Bitcoin-icon-set
+      - name: Github
+        link: https://github.com/BitcoinDesign/Bitcoin-Icons
 collaborations:
   - name: Specter
     description: A watch-only coordinator for multi-signature and single-key Bitcoin wallets.
