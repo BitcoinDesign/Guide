@@ -53,7 +53,7 @@ For the sake of simplicity let's focus on one hypothetical user.
 
 The uncovering of this scenario could be the result of a user interview[^3] or found in various channels such as chats, issues, or even Twitter. We can then take quotes from the participant to understand their emotions and infer their specific needs. This then helps us identify barriers and motivators.
 
-Barriers are anything that the user percieves as preventing them from achieving their desired goals.
+Barriers are anything that the user perceives as preventing them from achieving their desired goals.
 
 Motivators are specific user wants that are driving the user to seek out Bitcoin in the first place.
 
