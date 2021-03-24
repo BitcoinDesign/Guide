@@ -170,7 +170,7 @@ The Bitcoin network doesn’t need to know your name for you to use it. Strive t
 
 > Design products that encourage people to run a full Bitcoin node
 
-Unlike traditional banking systems, the Bitcoin economy does not require new users to seek permission from anyone. Bitcoin has no central point of control. No one person or entity is in charge. Connecting to any [node]({{ '/guide/glossary/#node' | relative_url }}) on the network gives you the same rights and responsibilities, which also ensures that there is no single point of failure.
+Unlike traditional banking systems, the Bitcoin economy does not require new users to seek permission from anyone. Bitcoin has no central point of control. No one person or entity is in charge. Connecting to any [node]({{ '/guide/glossary/#node' | relative_url }}) on the network gives you the same rights and responsibilities, ensuring no single point of failure.
 
 **Do**
 - Design products that encourage people to run a full Bitcoin node
