@@ -51,9 +51,9 @@ For the sake of simplicity let's focus on one hypothetical user.
 
 > Joshua Akinsola is a 21-year old Nigerian studying economics in the large city of Lagos. Growing up, his family struggled to save any money due to a lack of financial education, high unemployment, and a local currency inflating at 15% per year. There is a lack of reliable [savings]({{ 'guide/getting-started/personal-finance/#savings' | relative_url }}) technology in his country, so he opts to save money for the future using bitcoin.
 
-The uncovering of this scenario could be the result of a user interview[^3] or found in various channels such as chats, issues or even twitter. We can then take quotes from the participant to understand their emotions and infer their specific needs. This then helps us identify barriers and motivators.
+The uncovering of this scenario could be the result of a user interview[^3] or found in various channels such as chats, issues, or even Twitter. We can then take quotes from the participant to understand their emotions and infer their specific needs. This then helps us identify barriers and motivators.
 
-Barriers are anything that the user percieves as preventing them from achieving their desired goals.
+Barriers are anything that the user perceives as preventing them from achieving their desired goals.
 
 Motivators are specific user wants that are driving the user to seek out Bitcoin in the first place.
 
@@ -71,7 +71,7 @@ Motivators are specific user wants that are driving the user to seek out Bitcoin
    layout = "float-left"
 %}
 
-*"I'm scared that I will lose my private key and so I still keep some of my savings in cash and not bitcoin."*
+*"I'm scared that I will lose my private key, so I still keep some of my savings in cash and not bitcoin."*
 
 </div>
 
@@ -87,7 +87,7 @@ Motivators are specific user wants that are driving the user to seek out Bitcoin
    layout = "float-left"
 %}
 
-*"What if a hacker knows I have a lot of savings, how will I protect my funds and myself?"*
+*"What if a hacker knows I have a lot of savings? How will I protect my funds and myself?"*
 
 </div>
 
