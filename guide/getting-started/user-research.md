@@ -42,7 +42,7 @@ Illustration sources
 
 # User research
 
-We design digital products for the benefit of others. In order to do that, we need to understand who those others are, as well as their unique needs, desires, and behaviors. A comprehensive design strategy balances user needs with considerations around the technology, business models, societal and economic impact, and other factors. But here in this section, we will focus on understanding users better.
+We design digital products for the benefit of others. To do that, we need to understand who those others are and their unique needs, desires, and behaviors. A comprehensive design strategy balances user needs with considerations around the technology, business models, societal and economic impact, and other factors. In this section, we focus on understanding the users better.
 
 ## Why user research?
 
@@ -59,15 +59,17 @@ We design digital products for the benefit of others. In order to do that, we ne
 
 **In short, user research helps teams create better products in a more focused and efficient manner.**
 
-Prioritizing on the features and improvements that make the biggest difference is crucial. What exactly those are is often a matter of heavy debate with clashing opinions and rationale. A great way to get past individual opinions is to make data-informed decisions. User research creates data from the start and end points of our efforts. Products are created because there are specific unaddressed needs, then they go through development and finally back in the hands of the target audience for use and evaluation. Many times we are too occupied with the complexities of development, but the real measure of success is whether user needs are satisfied well.
+Prioritizing on the features and improvements that make the biggest difference is crucial. What precisely those are is often a matter of heavy debate with clashing opinions and rationale. A great way to get past individual views is to make data-informed decisions.
+
+User research creates data from the start and end points of our efforts. Products are created because there are specific unaddressed needs, then they go through development and finally back in the hands of the target audience for use and evaluation. We are often too occupied with the complexities of development, but the real measure of success is whether users' needs are satisfied.
 
 </div>
 
-User research allows us to effectively connect these dots and highlight the quickest path between them. This results in more appropriate product roadmaps, more focused team efforts, and happier users. This is especially important for projects with limited resources, which many open-source efforts are.
+User research allows us to effectively connect these dots and highlight the quickest path between them. The end-result are more appropriate product roadmaps, better-focused team efforts, and happier users. This is especially important for projects with limited resources, which many open-source efforts are.
 
 ## Unique aspects of user research in Bitcoin
 
-There are many ways in which research and development are similar to other digital products. As to not repeat techniques and approaches that have been well-documented elsewhere, let's look at some areas in which Bitcoin may be different and unique.
+There are many ways in which research and development are similar to other digital products. To avoid repeating techniques and approaches that have been well-documented elsewhere, let's look at some areas in which Bitcoin may be different and unique.
 
 ### Global audiences and use cases
 
@@ -84,7 +86,7 @@ There are many ways in which research and development are similar to other digit
 
 Most digital products start with a specific country, culture, language or legal framework in mind. This is especially true for financial applications, which are typically highly regulated and need to slowly and strategically evolve. While Bitcoin did start with a single language, its use case was not tied to any particular context, and this has resulted in a much more diverse user base from the start.
 
-This has resulted in diverse and lively online commmunities that are deeply invested in bitcoin. Designers and researchers have vast amounts of public conversation at their hands that allow them to better understand user needs and issues. These communities are also great for direct interaction to brainstorm ideas, get feedback on potential solutions, and get users involved in the design process.
+This has resulted in diverse and lively online communities that are deeply invested in Bitcoin. Designers and researchers have vast amounts of public conversation at their hands that help them better understand user needs and issues. These communities are also great for direct interaction to brainstorm ideas, get feedback on potential solutions, and get users involved in the design process.
 
 Some of the following links have been around for a long time and provide a huge archive and history of information and conversation around bitcoin:
 - [Bitcoin on Github](https://github.com/bitcoin)
@@ -96,7 +98,7 @@ Some of the following links have been around for a long time and provide a huge 
 
 ### An unknowable userbase
 
-The bitcoin protocol works with addresses and has otherwise no sense of identity that allows us to find out who actually uses the system and performs various functions. Analyzing the blockchain allows for some basic analyis of transaction behavior, but it cannot be tied to specific persons or even locations. While this is generally a fantastic user benefit for privacy and security, it makes it harder to understand user behavior and recruiting users for research.
+The Bitcoin protocol works with addresses and has otherwise no sense of identity that allows us to find out who uses the system and performs various functions. Analyzing the blockchain allows for some basic transaction behavior analysis, but analysis cannot tie it to specific persons or locations. While this is generally a fantastic user benefit for privacy and security, it is harder to understand user behavior and recruit users for research.
 
 ### It's a public ledger
 
@@ -128,11 +130,11 @@ While we cannot know who is directly responsible for the activity, we can analyz
    layout = "float-right-desktop"
 %}
 
-New technologies can take decades to reach adoption by mainstream audiences. Bitcoin is still early in the adoption curve, which affects research in multiple ways. For one, early adopters have different use cases and needs than users who will discover Bitcoin in the future. Products designed for todays user base may be inappropriate soon.
+New technologies can take decades to reach adoption by mainstream audiences. Bitcoin is still early in the adoption curve, which affects research in multiple ways. Early adopters have different use cases and needs than users who will discover Bitcoin in the future. Products designed for today's user base may be inappropriate soon.
 
-Secondly, as the technology is maturing, its capabilities evolve as well. Scaling and performance improvements make complex transactions more affordable, better privacy and security properties allow individuals to more easily self-custody, and much more. There is an interplay between the size of the user base and the maturity of the technology.
+Secondly, as the technology is maturing, its capabilities evolve as well. Scaling and performance improvements make complex transactions more affordable, better privacy, and security properties allow individuals to self-custody more comfortably and much more. There is an interplay between the size of the user base and the maturity of the technology.
 
-For user research, this means that findings may become outdated more quickly as they are more closely linked to a specific point in time.
+For user research, this means that findings may become outdated quicker as they are closely linked to a specific point in time.
 
 <!--
 
@@ -169,7 +171,7 @@ Links to:
    layout = "float-left"
 %}
 
-User research should not be a one-sided extraction of information, but a collaboration between researchers and users to find better solutions. Since research efforts are initiated by researchers, it is up to them to create frameworks that respect the privacy and agency of users. That means full upfront disclosure, open collaboration, and a mutual understanding of how research results will be used.
+User research should not be a one-sided extraction of information but a collaboration between researchers and users to find better solutions. Since researchers initiate research efforts, it is up to them to create frameworks that respect users' privacy. That means full upfront disclosure, open collaboration, and a mutual understanding of how research results will be used.
 
 </div>
 

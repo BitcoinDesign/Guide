@@ -43,11 +43,17 @@ This chapter is meant to give an overview of private key management schemes, inc
 
 An overview of the most common private key management schemes for bitcoin products, and thoughts on picking a suitable scheme for your target audience and their use case.
 
----
+**[Personal schemes]({{ '/guide/private-key-management/single-user-schemes/' | relative_url }})**
 
-**[Principles]({{ '/guide/private-key-management/principles/' | relative_url }})**
+The schemes that are most common for the personal use of one individual.
 
-Every use case and product is different but there are things that all wallet applications should strive for, and only diverge from with very good reasons.
+**[Shared schemes]({{ '/guide/private-key-management/single-user-schemes/' | relative_url }})**
+
+When more than one person wants to share a Bitcoin wallet, multi-key schemes become essential.
+
+**[Case studies]({{ '/guide/private-key-management/case-studies/' | relative_url }})**
+
+A look at some hypothetical use case categories and what might be suitable approaches for private key management schemes for each of them.
 
 ---
 

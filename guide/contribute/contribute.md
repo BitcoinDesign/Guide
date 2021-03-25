@@ -2,7 +2,7 @@
 layout: guide
 title: Contribute to guide
 description: Additional material for both readers and writers of the guide.
-nav_order: 9
+nav_order: 8
 has_children: true
 permalink: /guide/contribute/
 image: /assets/images/guide/contribute/contribute-preview.jpg

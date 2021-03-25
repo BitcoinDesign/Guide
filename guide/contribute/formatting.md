@@ -6,6 +6,7 @@ nav_order: 5
 parent: Contribute to guide
 permalink: /guide/contribute/formatting/
 image: /assets/images/guide/contribute/formatting-preview.jpg
+main_classes: -no-top-padding
 ---
 
 # Formatting
