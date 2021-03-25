@@ -60,11 +60,11 @@ defaults:
       type: "pages"
     values:
       permalink: ":path/:basename"
-      image: "https://bitcoindesign.github.io/Guide/assets/images/bitcoin-design-preview.jpg"
+      image: "https://bitcoin.design/assets/images/bitcoin-design-preview.jpg"
 
 
 twitter:
-  username: Bitcoin Design
+  username: bitcoin_design
   card: summary
 
 

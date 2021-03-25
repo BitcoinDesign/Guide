@@ -4,9 +4,9 @@ title: Principles
 description: The key principles to follow when designing Bitcoin products.
 nav_order: 9
 parent: Foundations
-permalink: /guide/foundations/principles/
+permalink: https://bitcoin.design/guide/foundations/principles/
 main_classes: -no-top-padding
-image: /assets/images/guide/foundations/principles/page-principles.jpg
+image: https://bitcoin.design/assets/images/guide/foundations/principles/page-principles.jpg
 ---
 
 <!--
@@ -30,7 +30,7 @@ The key principles of designing for Bitcoin
 
 # Bitcoin design principles
 
-As a new technology, Bitcoin offers the opportunity of a decentralized open financial system, where participants share the role of securing the network. This is important to give everyone equal and direct access to economic opportunities without fearing seizure or needing intermediaries. To make this a reality, we encourage everyone working on products to deliberately support the core principles of designing for Bitcoin. 
+As a new technology, Bitcoin offers the opportunity of a decentralized open financial system, where participants share the role of securing the network. This is important to give everyone equal and direct access to economic opportunities without fearing seizure or needing intermediaries. To make this a reality, we encourage everyone working on products to deliberately support the core principles of designing for Bitcoin.
 
 These are principles we in the Bitcoin Design Community identified and stand behind. Some of these come from the technology itself and others from the community's behavior and ethos. Although every use case and product is different, applications should strive to follow these principles. Diverging from them should only be done with very good reason.
 
@@ -65,7 +65,7 @@ Our existing mental models of access to digital services are usernames and passw
 
 > Provide appropriate and progressive security for all types of users
 
-Self-custody often leaves the end-user responsible for the security of their private keys. They can only do a good job of that if we provide them with appropriate tools and awareness of best practices. 
+Self-custody often leaves the end-user responsible for the security of their private keys. They can only do a good job of that if we provide them with appropriate tools and awareness of best practices.
 
 Security is especially important when onboarding people new to Bitcoin. For example, new users are likely to start by only storing small amounts. After a while, however, they may get more comfortable with the idea of self-custody. The concept of progressive security is a good idea here, starting with automatic cloud backups. This would let a user upgrade their security and private key management scheme as their savings grow. Although common, recovery phrases that require manual backup might backfire for new users not yet familiar with safe backup practices.
 
@@ -76,12 +76,12 @@ Security can also be a feeling. A polished, good-looking, easy-to-use product th
 
 **Do**
 - Take safeguarding of users' funds seriously
-- Strive for no loss of funds, whether by negligence or theft 
+- Strive for no loss of funds, whether by negligence or theft
 - Provide suitable private key management schemes for beginners
 - Offer progressive security and upgrade paths
 - Build with bad actors in mind
 - Minimize risk of self-inflicted loss from user negligence
-- Continuously educate users on best practice and risks 
+- Continuously educate users on best practice and risks
 - Reduce attack surfaces by minimizing use of external code dependencies
 
 **Don't**
@@ -95,7 +95,7 @@ Security can also be a feeling. A polished, good-looking, easy-to-use product th
 
 > Build borderless products without location, language or social barriers
 
-There are no background checks, credit checks, or gatekeepers to Bitcoin. A Kenyan farmer has the same access to Bitcoin as a Wall Street trader. 
+There are no background checks, credit checks, or gatekeepers to Bitcoin. A Kenyan farmer has the same access to Bitcoin as a Wall Street trader.
 
 While Bitcoin is already used by a large number of people, it pales in comparison with the many more that are likely to use it in the future. We need to design products that are prepared for people unfamiliar with Bitcoin. This means using plain and familiar language, explaining things in the context where they are needed, not overwhelming people with technical detail, and more.
 
@@ -103,7 +103,7 @@ While Bitcoin is already used by a large number of people, it pales in compariso
 - Provide equal and direct access to the Bitcoin network
 - Design Bitcoin products that are usable by the widest range of people possible
 - Use plain language that people new to Bitcoin can understand regardless of prior knowledge
-- Localize your product and make it multilingual 
+- Localize your product and make it multilingual
 - Educate in place, when people are presented with a new concept
 - Treat users who rely on assistive technologies as first-class citizens
 
@@ -118,7 +118,7 @@ While Bitcoin is already used by a large number of people, it pales in compariso
 
 > Enable import and export of wallets, maximise backwards compatibility and use of open standards
 
-Bitcoin is an open-source protocol, operating in a decentralized manner. This has led to a number of standards being developed to ensure compatibility between products. It should be easy to switch and move your Bitcoin wallet to a different application, should you wish. Ensuring that your product supports as many of these standards as possible is best practice and builds trust. More on [wallet interoperability]({{ '/guide/foundations/wallet-interoperability/' | relative_url }}). 
+Bitcoin is an open-source protocol, operating in a decentralized manner. This has led to a number of standards being developed to ensure compatibility between products. It should be easy to switch and move your Bitcoin wallet to a different application, should you wish. Ensuring that your product supports as many of these standards as possible is best practice and builds trust. More on [wallet interoperability]({{ '/guide/foundations/wallet-interoperability/' | relative_url }}).
 
 **Do**
 - Support import and export of wallets
@@ -144,7 +144,7 @@ While an open and decentralized financial system that users can connect with dir
 - Explain what risks the user is taking on, and how best to mitigate them
 
 **Don't**
-- Make claims that are not explained or verifiable 
+- Make claims that are not explained or verifiable
 
 ---
 
@@ -174,7 +174,7 @@ Unlike traditional banking systems, the Bitcoin economy does not require new use
 
 **Do**
 - Design products that encourage people to run a full Bitcoin node
-- Alternatively, use a light client with the [p2p network]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki'}}) using [compact block filters]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki'}}) 
+- Alternatively, use a light client with the [p2p network]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki'}}) using [compact block filters]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki'}})
 - Offer the user choice of what node and other external services to connect to
 
 **Don't**
