@@ -87,4 +87,4 @@ Few tailor-made products exist for shared wallets, but any wallet application th
 
 ---
 
-OK, let's have a look at some [case studies]({{ '/guide/private-key-management/case-studies/' | relative_url }}).
+OK, let's have a look at some [case studies]({{ '/guide/case-studies/' | relative_url }}).
