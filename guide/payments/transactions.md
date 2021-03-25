@@ -26,13 +26,20 @@ image: /assets/images/guide/payments/overview/page-overview.svg
 Bitcoin is a peer-to-peer push-payment system. This means that you can send, or *push*, bitcoin to any address at your will, at any time, without passing through a third party.
 
 
-This is radically different from the legacy financial system, where it is often possible for others to *pull* and withdraw money from your account (utility companies, financial institutions, merchants, etc.). When you make a payment, it will pass through systems that might delay, control or block the payment. 
+This is radically different from the legacy financial system, where it is often possible for others to *pull* and withdraw money from your account (utility companies, financial institutions, merchants, etc.). When you make a payment, it will pass through systems that might delay, control or block the payment.
 
 ## Transaction lifecycle
 
 Let's lay out the entire payment process.
 
-![](https://i.imgur.com/IzJLhXb.png)
+{% include picture.html
+   image = "/assets/images/guide/payments/transactions/tx-lifecycle-simplified.svg"
+   mobile = "/assets/images/guide/payments/transactions/tx-lifecycle-simplified-mobile.svg"
+   alt-text = "Flow chart of the process of a transaction getting created and then finally confirmed"
+   width = 1350
+   height = 242
+   layout = "full-width"
+%}
 
 #### 1. Get recipient address
 You need a valid address to send bitcoin. This can be shared by the recipient as a QR code, in plain text or as a payment link.
@@ -83,6 +90,6 @@ Likewise, you need to specify the destination address, or addresses for the tran
 
 Every transaction needs to pay a fee to incentivises miners to include it in a block. There is no fixed fee for making a transaction as it depends on the amount of data it includes, the amount of other transactions that are trying to get verified, and how much each submitter is prepared to pay at any given time. Miners typically pick the transactions that will earn them the highest reward to include in a block.
 
-Blocks are limited in size and new ones are created every 10 minutes on average. This means that if you want a transaction to be confirmed in the next block you might have to pay a high price. 
+Blocks are limited in size and new ones are created every 10 minutes on average. This means that if you want a transaction to be confirmed in the next block you might have to pay a high price.
 
 When submitting a transaction you can optimize for fast confirmation, or lower fee. It is good practice to give the user some control of this.
