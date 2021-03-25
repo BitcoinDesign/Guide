@@ -42,7 +42,7 @@ Let's lay out the entire payment process.
 %}
 
 #### 1. Get recipient address
-You need a valid address to send bitcoin. This can be shared by the recipient as a QR code, in plain text or as a payment link.
+You need a valid address to send bitcoin to. This can be shared by the recipient as a QR code, in plain text or as a payment link.
 
 #### 2. Creation
 The wallet application guides the user through collecting the required information (address and amount), and any optional information (what coins to send, fee options).
@@ -68,28 +68,26 @@ Each additional block that is accepted by the network counts as an extra confirm
 
 ## Transaction structure
 
-The most common Bitcoin transactions contain instructions to move funds from one address to another. Other types of transactions include creating multi-sig wallets or recording data on the blockchain.
+Think of a transaction as a file that contains the authorisations to spend some bitcoin, as well as the payment details of the recipient(s). Once miners get the transaction they check all the details once more before they include it into a block.
 
-Once created, a transaction needs to be signed with the private key(s) of the sender(s), submitted to a node on the network for validation and propagation to other nodes. It then waits to be verified and included in a newly mined block, after which point it will be recorded on the blockchain. For this service, the sender will pay a fee for every transaction which goes to the node who mined the block as a reward.
+The principal properties are:
 
-Technically, the transaction is data that contains the necessary information to execute on the blockcain. The principal properties are:
-
-- **Amount** -- the amount of bitcoin, in satoshis
-- **Inputs** -- the source(s)
-- **Outputs** -- the destination(s)
-- **Version** -- the code version this transaction follows
-- **Lock time** -- time until the transaction should be executed, optional
+- **Amount** -- amount of bitcoin, in satoshis
+- **Inputs** -- source of funds
+- **Outputs** -- payment or change destination(s)
+- **Lock time** -- earliest the transaction can be broadcasted (optional)
+<!-- Purposfully left out RBF as I don't think this format would guide the reader to understanding how it works. Will add in v2 of the page -->
 
 ### Input and outputs
 
-In a Bitcoin wallet, funds are often not held in a single address, but more commonly in one address per transaction where you received bitcoin. When you are making a transaction you need to specify which of your addresses should be the source of the funds. If you need to spend more than what a single address holds, you can specify several. These are called *inputs* to the transaction.
+In a Bitcoin wallet, funds are often not held in a single address, but more commonly in on address per transaction where you previously received bitcoin. When you are making a transaction you need to specify which of your addresses you would like to use to fund the transaction. If you need to spend more than what a single address holds, you can specify several. These are called *inputs* to the transaction.
 
-Likewise, you need to specify the destination address, or addresses for the transaction. These are called *outputs*. Should there be more bitcoin in the inputs than are needed for the transaction, a new address will be created in your wallet for the change, often called a *change output*.
+Likewise, you need to specify the destination address, or addresses for the transaction. These are called *outputs*. should there be more bitcoin in the inputs than are needed for the payment, a new address will be created in your wallet for the remaining change, often called a *change output*.
 
 ### Transaction fee
 
-Every transaction needs to pay a fee to incentivises miners to include it in a block. There is no fixed fee for making a transaction as it depends on the amount of data it includes, the amount of other transactions that are trying to get verified, and how much each submitter is prepared to pay at any given time. Miners typically pick the transactions that will earn them the highest reward to include in a block.
+Every transaction needs to pay a fee to incentivise miners to include it in a block. There is no fixed fee for making a transaction as it depends on the amount of data it includes, the amount of other transactions that are trying to get verified, and how much each submitter is prepared to pay at any given time. Miners typically pick the transactions that will earn them the highest reward to include in a block.
 
-Blocks are limited in size and new ones are created every 10 minutes on average. This means that if you want a transaction to be confirmed in the next block you might have to pay a high price.
+Blocks are limited in size and new ones are created every 10 minutes on average. This means that if you want a transaction to be confirmed in the next block you might have to pay a relativly high price.
 
 When submitting a transaction you can optimize for fast confirmation, or lower fee. It is good practice to give the user some control of this.
