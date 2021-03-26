@@ -4,7 +4,7 @@ title: Glossary
 permalink: /guide/glossary/
 nav_order: 8
 main_classes: -no-top-padding
-image: /assets/images/guide/glossary/glossary-preview.jpg
+image: https://bitcoin.design/assets/images/guide/glossary/glossary-preview.jpg
 ---
 
 <!--
@@ -86,7 +86,7 @@ Bitcoin with a capital *B* is typically associated with Bitcoin the protocol and
 
 ## Bitcoin Client
 
--What is considered a Bitcoin client? I'd suggest it's a software package comprising node / base layer wallet features. [Several other](https://coin.dance/nodes) clients exist besides Bitcoin Core. -Bosch 
+-What is considered a Bitcoin client? I'd suggest it's a software package comprising node / base layer wallet features. [Several other](https://coin.dance/nodes) clients exist besides Bitcoin Core. -Bosch
 
 ## Bitcoin Core
 
@@ -101,7 +101,7 @@ A standardized technical document format for suggesting improvements to Bitcoin.
 - [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki): Derivation scheme for HD wallets using nested SegWit
 - [BIP84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki): Derivation scheme for HD wallets using SegWit
 - [BIP141](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki): SegWit, changes to transaction structure
-- [BIP173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki): *Bech32* standard for native SegWit addresses 
+- [BIP173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki): *Bech32* standard for native SegWit addresses
 - [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki): Partially Signed Bitcoin Transaction Format
 
 ## Coin control
@@ -138,7 +138,7 @@ As it is possible to trace the history of coins and see how they were previously
    height = 400
 %}
 
- Allow for combining multiple payments from multiple spenders into a single transaction to make it harder to determine which spender paid which recipient(s). More information can be found on [the Bitcoin Wiki](https://en.bitcoin.it/wiki/CoinJoin). See also [PayJoin](#payjoin-p2ep). 
+ Allow for combining multiple payments from multiple spenders into a single transaction to make it harder to determine which spender paid which recipient(s). More information can be found on [the Bitcoin Wiki](https://en.bitcoin.it/wiki/CoinJoin). See also [PayJoin](#payjoin-p2ep).
 
 
 </div>
@@ -166,7 +166,7 @@ In a hierarchical deterministic wallet, all addresses and their matching private
 
 ## Extended public key (XPUB, YPUB, ZPUB)
 
-The master public key of a bitcoin account. All public addresses are generated from it. 
+The master public key of a bitcoin account. All public addresses are generated from it.
 
 _ToDo: Explain how this is used for multisig and view-only wallets._
 
@@ -199,7 +199,7 @@ A language for writing certain types of Bitcoin Scripts in a structured way. Min
 - [Introduction](https://medium.com/blockstream/miniscript-bitcoin-scripting-3aeff3853620) by Blockstream
 
 ## Multi-signature wallet (Multisig)
-Multi-signature wallets are bitcoin wallets that are controlled by more than one keypair. They can be defined by bitcoin scripts and use P2SH addresses. Common usecases and setups include *2-of-3*, or *3-of-5* multi-signature wallets that require a subset of the controlling keypairs to sign a transaction. 
+Multi-signature wallets are bitcoin wallets that are controlled by more than one keypair. They can be defined by bitcoin scripts and use P2SH addresses. Common usecases and setups include *2-of-3*, or *3-of-5* multi-signature wallets that require a subset of the controlling keypairs to sign a transaction.
 
 ## MuSig
 A standard for multi-signature that uses Schnorr signatures. Previously, the more signers participated in a transaction, the size of the transaction got larger and took more time to verify. It was also possible to see the number of signers in the final transaction. MuSig addresses both issues. It hides the number of signers for better privacy. MuSig also improves scalability by reducing the size of transactions and being more efficient to verify. The [original paper that describes MuSig](https://eprint.iacr.org/2018/068).
@@ -264,7 +264,7 @@ _Also referred to as Seed, Mnemonic, and Backup phrase._
 
 The controlling keypair of a bitcoin wallet can be derived from a *recovery phrase* of 12 words (or 18 or 24, which is less common) from a standardized list, defined in [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki). The recovery phrase provides full access to a bitcoin wallet as it contains the private key and is therefore very valuable. It’s extremely important to keep it safe, both from other people getting access to it and for yourself not to lose it by creating one or several backups of the phrase. In many applications most of this work falls on the user and it’s important to acknowledge the responsibility here of the makers of the application to ensure that the user is able and aware of how to securely store a recovery phrase backup.
 
-Many wallet-applications work with HD Wallets and recovery phrases, and are interoperable, meaning you can change the application that can control your wallet should you wish (although there are some caveats depending on if they support just BIP32 or also BIP44). 
+Many wallet-applications work with HD Wallets and recovery phrases, and are interoperable, meaning you can change the application that can control your wallet should you wish (although there are some caveats depending on if they support just BIP32 or also BIP44).
 
 **Technicalities** - Recovery of multisig-wallets needs both the extended public key and the recovery phrase of all paticipating keys as well as the master key fingerprint as defined by BIP32 concatenated with the derivation path of the public key. The derivation path is represented as 32-bit little endian unsigned integer indexes concatenated with each other. The number of 32 bit unsigned integer indexes must match the depth provided in the extended public key.
 
@@ -337,7 +337,7 @@ All bitcoin-related data derived from and associated with a single recovery phra
 
 ### HD wallet
 
-Hierarchical Deterministic wallets, or HD wallets, can create infinite keypairs organized in a tree-structure (hierarchical) from a single (deterministic) controlling keypair. They were introduced and defined in [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) and then expanded with [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) which added the ability to handle multiple *accounts* in one wallet. 
+Hierarchical Deterministic wallets, or HD wallets, can create infinite keypairs organized in a tree-structure (hierarchical) from a single (deterministic) controlling keypair. They were introduced and defined in [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) and then expanded with [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) which added the ability to handle multiple *accounts* in one wallet.
 
 **Technicalities** - There are different bitcoin address formats (see [address](#address)). They have to be held in different branches of the HD wallet but can be controlled by the same recovery phrase.
 
@@ -359,7 +359,7 @@ With a custodial wallet-application, the users are not exposed to and in charge 
 
 ### Hot / Cold wallet
 
-*Hot* and *cold* describe a wallet in terms of being connected to the internet. Where a hot wallet is connected to the internet, a cold wallet is not. The idea is that a cold wallet is less susceptible to third-party theft over the internet. Most software wallet-application would be seen as hot (although some can be used just for signing on a device not connected to the internet) and most hardware wallet-application would be seen as cold (although they are sometimes connected for signing purposes). 
+*Hot* and *cold* describe a wallet in terms of being connected to the internet. Where a hot wallet is connected to the internet, a cold wallet is not. The idea is that a cold wallet is less susceptible to third-party theft over the internet. Most software wallet-application would be seen as hot (although some can be used just for signing on a device not connected to the internet) and most hardware wallet-application would be seen as cold (although they are sometimes connected for signing purposes).
 
 ## Additional resources
 

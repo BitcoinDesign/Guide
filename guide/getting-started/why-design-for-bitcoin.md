@@ -5,7 +5,7 @@ nav_order: 3
 parent: Getting started
 permalink: /guide/getting-started/why-design-for-bitcoin/
 main_classes: -no-top-padding
-image: /assets/images/guide/getting-started/why-design-for-bitcoin/why-design-for-bitcoin-preview.jpg
+image: https://bitcoin.design/assets/images/guide/getting-started/why-design-for-bitcoin/why-design-for-bitcoin-preview.jpg
 ---
 
 <!--

@@ -6,7 +6,7 @@ permalink: /projects/
 main_nav: true
 nav_order: 3
 main_classes: -no-top-padding
-image: /assets/images/projects/projects-preview.jpg
+image: https://bitcoin.design/assets/images/projects/projects-preview.jpg
 projects:
   - name: Bitcoin Design Guide
     description: The primary project we are working on, a resource for designers to create better Bitcoin products faster.
@@ -53,32 +53,6 @@ collaborations:
         link: https://zeusln.app/
       - name: Collaboration
         link: https://github.com/BitcoinDesign/Meta/issues/70
-inactive:
-  - name: BTCPay Server
-    description: BTCPay Server is a self-hosted, open-source bitcoin payment processor, built and maintained by a world-wide community of passionate contributors.
-    image:
-      url: /assets/images/contribute/btcpay.svg
-    links:
-      - name: Site
-        link: https://btcpayserver.org/
-      - name: Contribute
-        link: https://docs.btcpayserver.org/Contribute/
-  - name: Photon SDK
-    description: A high level library for building bitcoin wallets with react native.
-    image: /assets/images/contribute/photon-lib.png
-    links:
-      - name: Site
-        link: https://photonsdk.org/
-      - name: Repository
-        link: https://github.com/photon-sdk
-  - name: Bitcoin Core
-    description: One of the oldest and best-maintained Bitcoin clients.
-    image: /assets/images/contribute/bitcoin-core.svg
-    links:
-      - name: Site
-        link: https://bitcoincore.org/
-      - name: Contribute
-        link: https://bitcoincore.org/en/contribute/
 ---
 
 <!--

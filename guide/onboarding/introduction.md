@@ -6,7 +6,7 @@ has_children: true
 nav_order: 3
 permalink: /guide/onboarding/introduction/
 main_classes: -no-top-padding
-image: /assets/images/guide/onboarding/onboarding.png
+image: https://bitcoin.design/assets/images/guide/onboarding/onboarding.png
 ---
 
 <!--

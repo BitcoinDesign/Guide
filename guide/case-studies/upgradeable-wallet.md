@@ -5,7 +5,7 @@ nav_order: 3
 parent: Case studies
 permalink: /guide/case-studies/upgradeable-wallet/
 main_classes: -no-top-padding
-image: /assets/images/guide/getting-started/getting-started-preview.jpg
+image: https://bitcoin.design/assets/images/guide/getting-started/getting-started-preview.jpg
 ---
 
 <!--
