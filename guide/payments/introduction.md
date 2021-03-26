@@ -27,7 +27,7 @@ We have already established that [Bitcoin is money](https://bitcoin.design/guide
 
 ---
 
-**[Transactions overview](/guide/payments/overview/)**
+**[Transactions overview](/guide/payments/transactions/)**
 
 An overview of Bitcoin payments, common concepts and the transaction lifecycle.
 
