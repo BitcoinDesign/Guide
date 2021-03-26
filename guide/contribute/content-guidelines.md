@@ -14,7 +14,7 @@ The Bitcoin Design Guide is the work of many authors with different backgrounds,
 
 ### Know your reader
 
-This guide is crafted for anyone interested in building an effective Bitcoin application. To understand who you are writing for, familiarize yourself with our [Target audience]({{ '/guide/target-audience' | relative_url }}).
+This guide is crafted for anyone interested in building an effective Bitcoin application. To understand who you are writing for, familiarize yourself with our [Target audience](https://github.com/BitcoinDesign/Guide/issues/51).
 
 ### Speak to the reader
 

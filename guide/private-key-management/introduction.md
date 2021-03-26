@@ -31,7 +31,7 @@ scan this page to get an overview of the section and then decide which topics to
 
 # Private key management
 
-When designing a bitcoin-application, the way you choose to manage the [private key]({{ '/guide/glossary/#private-key' | relative_url }}){:target="_blank"} often dictates the fundamental user experience for your users. Being in control of a private key means you have access to the funds it holds. Keeping that key safe is like being in charge of the security of your own bank. It comes with a lot of freedom, but also a big responsibility that many users are not used to. 
+When designing a bitcoin-application, the way you choose to manage the [private key]({{ '/guide/glossary/#private-key' | relative_url }}){:target="_blank"} often dictates the fundamental user experience for your users. Being in control of a private key means you have access to the funds it holds. Keeping that key safe is like being in charge of the security of your own bank. It comes with a lot of freedom, but also a big responsibility that many users are not used to.
 
 If it’s not secure enough, you risk loss of user's funds. But if it’s not convenient enough, you risk not getting or retaining many users in the first place.
 
@@ -51,7 +51,7 @@ The schemes that are most common for the personal use of one individual.
 
 When more than one person wants to share a Bitcoin wallet, multi-key schemes become essential.
 
-**[Case studies]({{ '/guide/private-key-management/case-studies/' | relative_url }})**
+**[Case studies]({{ '/guide/case-studies/' | relative_url }})**
 
 A look at some hypothetical use case categories and what might be suitable approaches for private key management schemes for each of them.
 
