@@ -5,7 +5,7 @@ description: Additional material for both readers and writers of the guide.
 nav_order: 8
 has_children: true
 permalink: /guide/contribute/
-image: /assets/images/guide/contribute/contribute-preview.jpg
+image: https://bitcoin.design/assets/images/guide/contribute/contribute-preview.jpg
 ---
 
 # Contribute to the Guide

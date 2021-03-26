@@ -5,7 +5,7 @@ nav_order: 2
 has_children: true
 permalink: /guide/getting-started/introduction/
 main_classes: -no-top-padding
-image: /assets/images/guide/getting-started/getting-started-preview.jpg
+image: https://bitcoin.design/assets/images/guide/getting-started/getting-started-preview.jpg
 ---
 
 <!--

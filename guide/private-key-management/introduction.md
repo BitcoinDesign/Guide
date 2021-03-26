@@ -6,7 +6,7 @@ nav_order: 4
 has_children: true
 permalink: /guide/private-key-management/introduction/
 main_classes: -no-top-padding
-image: /assets/images/guide/private-key-management/page-private-key-management.jpg
+image: https://bitcoin.design/assets/images/guide/private-key-management/page-private-key-management.jpg
 ---
 
 <!--
@@ -31,7 +31,7 @@ scan this page to get an overview of the section and then decide which topics to
 
 # Private key management
 
-When designing a bitcoin-application, the way you choose to manage the [private key]({{ '/guide/glossary/#private-key' | relative_url }}){:target="_blank"} often dictates the fundamental user experience for your users. Being in control of a private key means you have access to the funds it holds. Keeping that key safe is like being in charge of the security of your own bank. It comes with a lot of freedom, but also a big responsibility that many users are not used to. 
+When designing a bitcoin-application, the way you choose to manage the [private key]({{ '/guide/glossary/#private-key' | relative_url }}){:target="_blank"} often dictates the fundamental user experience for your users. Being in control of a private key means you have access to the funds it holds. Keeping that key safe is like being in charge of the security of your own bank. It comes with a lot of freedom, but also a big responsibility that many users are not used to.
 
 If it’s not secure enough, you risk loss of user's funds. But if it’s not convenient enough, you risk not getting or retaining many users in the first place.
 

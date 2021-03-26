@@ -5,7 +5,7 @@ description: An overview of some of the concepts to consider when building onboa
 nav_order: 3
 permalink: /guide/onboarding/introduction/
 main_classes: -no-top-padding
-image: /assets/images/guide/onboarding/onboarding.png
+image: https://bitcoin.design/assets/images/guide/onboarding/onboarding.png
 ---
 
 <!--

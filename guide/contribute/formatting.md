@@ -5,7 +5,7 @@ description: Visual examples of formatting options available for content authors
 nav_order: 5
 parent: Contribute to guide
 permalink: /guide/contribute/formatting/
-image: /assets/images/guide/contribute/formatting-preview.jpg
+image: https://bitcoin.design/assets/images/guide/contribute/formatting-preview.jpg
 main_classes: -no-top-padding
 ---
 

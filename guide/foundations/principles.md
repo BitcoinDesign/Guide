@@ -4,7 +4,7 @@ title: Principles
 description: The key principles to follow when designing Bitcoin products.
 nav_order: 9
 parent: Foundations
-permalink: https://bitcoin.design/guide/foundations/principles/
+permalink: /guide/foundations/principles/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/foundations/principles/page-principles.jpg
 ---
