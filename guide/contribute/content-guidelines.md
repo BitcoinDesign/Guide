@@ -4,9 +4,22 @@ title: Content guidelines
 description: Writing tips for authors of the Bitcoin Design Guide.
 nav_order: 3
 parent: Contribute to guide
+main_classes: -no-top-padding
 permalink: /guide/contribute/content-guidelines/
 image: https://bitcoin.design/assets/images/guide/contribute/content-guidelines-preview.jpg
 ---
+
+{% include picture.html
+   image = "/assets/images/guide/contribute/content-guidelines/content-guidelines-header.png"
+   retina = "/assets/images/guide/contribute/content-guidelines/content-guidelines-header-mobile@2x.png"
+   mobile = "/assets/images/guide/contribute/content-guidelines/content-guidelines-header-mobile.png"
+   mobileRetina = "/assets/images/guide/contribute/content-guidelines/content-guidelines-header-mobile@2x.png"
+   alt-text = "Lines twisting with orage paletter - Content guidelines image"
+   width = 1600
+   height = 800
+   layout = "full-width"
+%}
+
 
 # Content guidelines
 
