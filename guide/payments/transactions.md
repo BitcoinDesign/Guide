@@ -23,10 +23,9 @@ image: /assets/images/guide/payments/overview/page-overview.svg
 
 # Transactions overview
 
-Bitcoin is a peer-to-peer push-payment system. This means that you can send, or *push*, bitcoin to any address at your will, at any time, without passing through a third party.
+This page is meant to equip you with the understanding of how bitcoin transactions get created and processed by the Bitcoin network. Bitcoin is a peer-to-peer push-payment system. This means that you can send, or *push*, bitcoin to any address at your will, at any time, without passing through a trusted third party.
 
-
-This is radically different from the legacy financial system, where it is often possible for others to *pull* and withdraw money from your account (utility companies, financial institutions, merchants, etc.). When you make a payment, it will pass through systems that might delay, control or block the payment.
+This is radically different from the traditional financial system, where it is often possible for others to *pull* and withdraw money from your account (utility companies, financial institutions, merchants, etc.). When you make a payment, it will pass through systems that might delay, control or block the payment.
 
 ## Transaction lifecycle
 
@@ -42,13 +41,13 @@ Let's lay out the entire payment process.
 %}
 
 #### 1. Get recipient address
-You need a valid address to send bitcoin to. This can be shared by the recipient as a QR code, in plain text or as a payment link.
+The sender needs a valid address for the payment to be sent to. This can be shared by the recipient as a QR code, in plain text or as a payment link.
 
 #### 2. Creation
-The wallet application guides the user through collecting the required information (address and amount), and any optional information (what coins to send, fee options).
+The wallet application guides the sender through collecting the required information (address and amount), and any optional configurations (which coins to send, fee options) in order to create a transaction.
 
 #### 3. Signing
-The transaction needs to be signed by the [private key(s)]({{ '/guide/glossary/#private-key' | relative_url }}) of the input address(es) to be valid. The signing is often done in the same application and at the same time as the creation, but this does not have to be the case.
+The transaction needs to be signed by the [private key(s)]({{ '/guide/glossary/#private-key' | relative_url }}) of the input [address(es)]({{ '/guide/glossary/#address' | relative_url }}) to be valid. The signing is often done in the same application after the transaction has created and configured, but this does not have to be the case.
 
 #### 4. Broadcasting
 The transaction is broadcasted to a Bitcoin node, normally the one the wallet is connected to.
@@ -60,9 +59,7 @@ The receiving node checks that the transaction is valid. In practice this means 
 Once validated, the node passes the transaction on to other nodes in the network - returning a success message to the originator. The transaction is now in the *memory pool*, and remains there until confirmed.
 
 #### 7. Confirmations
-At some point the transaction is included in a block that is added to the blockchain. This counts as a first confirmation. The recipient can be confident that they will receive the bitcoin, and may even receive a pre-emptive notification from their wallet. How long the first confirmation takes is dependent on many factors, principally - how many other transactions are waiting to be confirmed and how big a fee the transaction will pay. A new block is confirmed roughly every ten minutes.
-
-Each additional block that is accepted by the network counts as an extra confirmation, making the transaction more secure by making it harder to undo. When a transaction has 6 confirmations, it is considered final.
+We learned [how are transactions confirmed]({{ '/guide/getting-started/technology-primer/#how-are-transactions-confirmed' | relative_url }}). On the first confirmation, the recipient can be confident that they will receive the bitcoin, which their wallet should notify them of. How long the first confirmation takes is dependent on many factors, principally - how many other transactions are waiting to be confirmed and how big a fee the transaction will pay.
 
 ---
 
@@ -72,10 +69,10 @@ Think of a transaction as a file that contains the authorisations to spend some 
 
 The principal properties are:
 
-- **Amount** -- amount of bitcoin, in satoshis
-- **Inputs** -- source of funds
-- **Outputs** -- payment or change destination(s)
-- **Lock time** -- earliest the transaction can be broadcasted (optional)
+- **Amount** -- the amount of bitcoin, in satoshis
+- **Inputs** -- the source of funds
+- **Outputs** -- the payment or change destination(s)
+- **Lock time** -- the earliest the transaction can be broadcasted (optional)
 <!-- Purposfully left out RBF as I don't think this format would guide the reader to understanding how it works. Will add in v2 of the page -->
 
 ### Input and outputs
@@ -86,7 +83,7 @@ Likewise, you need to specify the destination address, or addresses for the tran
 
 ### Transaction fee
 
-Every transaction needs to pay a fee to incentivise miners to include it in a block. There is no fixed fee for making a transaction as it depends on the amount of data it includes, the amount of other transactions that are trying to get verified, and how much each submitter is prepared to pay at any given time. Miners typically pick the transactions that will earn them the highest reward to include in a block.
+Every transaction needs to pay a fee to incentivise miners to include it in a block. There is no fixed fee for making a transaction as it depends on the amount of data it includes, the amount of other transactions that are trying to get verified, and how much each submitter is prepared to pay. Miners typically pick the transactions that will earn them the highest reward to include in a block.
 
 Blocks are limited in size and new ones are created every 10 minutes on average. This means that if you want a transaction to be confirmed in the next block you might have to pay a relativly high price.
 
