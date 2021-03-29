@@ -56,10 +56,17 @@ The transaction is broadcasted to a Bitcoin node, normally the one the wallet is
 The receiving node checks that the transaction is valid. In practice this means confirming that it was signed by the private key of the relevant address.
 
 #### 6. Propagation
-Once validated, the node passes the transaction on to other nodes in the network - returning a success message to the originator. The transaction is now in the *memory pool*, and remains there until confirmed.
+Once validated, the node passes the transaction on to other nodes in the network. The transaction is now in the *memory pool*, and remains there until it is mined. At this stage the transaction has 0 confirmations.
+<!-- indicate that a tx with a fee rate that is lower than the current normal can be stuck and even forgotten by miners if it remains in the mempool for too long -->
 
 #### 7. Confirmations
-We learned [how are transactions confirmed]({{ '/guide/getting-started/technology-primer/#how-are-transactions-confirmed' | relative_url }}). On the first confirmation, the recipient can be confident that they will receive the bitcoin, which their wallet should notify them of. How long the first confirmation takes is dependent on many factors, principally - how many other transactions are waiting to be confirmed and how big a fee the transaction will pay.
+Given that you know [how transactions are confirmed]({{ '/guide/getting-started/technology-primer/#how-are-transactions-confirmed' | relative_url }}), lets look at how the number of confirmations affects the payment settlement.
+
+Not every miner creates the new block with the same transactions, so some nodes may have a different version of the blockchain than others for a short time. The Bitcoin protocol's main function is to bring all nodes to the same version of the blockchain. Through a process called chain reorganization, nodes remove their incorrect block and update with the winning block as determined by the majority of other nodes.
+
+There is a slight risk that a transaction with 1 confirmation may revert to 0 confirmaations when a chain reorganisation occurs. Due to this, some parties may require more confirmations for the transaction before providing the product or service.
+
+It is widely accepted that after 6 confirmations, no other reorganizations would occur, and the payment final.
 
 ---
 
