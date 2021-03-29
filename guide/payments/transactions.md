@@ -6,7 +6,7 @@ nav_order: 1
 parent: Payments
 permalink: /guide/payments/transactions/
 main_classes: -no-top-padding
-image: /assets/images/guide/payments/transactions/transactions-preview.jpg
+image: /assets/images/guide/payments/transactions/tx-preview.jpg
 ---
 
 {% include picture.html
