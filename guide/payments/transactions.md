@@ -23,7 +23,7 @@ image: /assets/images/guide/payments/overview/page-overview.svg
 
 # Transactions overview
 
-This page is meant to equip you with the understanding of how bitcoin transactions get created and processed by the Bitcoin network. Bitcoin is a peer-to-peer push-payment system. This means that you can send, or *push*, bitcoin to any address at your will, at any time, without passing through a trusted third party.
+This page is meant to help you with understanding how bitcoin transactions get created and processed by the Bitcoin network. Bitcoin is a peer-to-peer push-payment system. This means that you can send, or push, bitcoin to any address at your will, at any time, without passing through a trusted third party.
 
 This is radically different from the traditional financial system, where it is often possible for others to *pull* and withdraw money from your account (utility companies, financial institutions, merchants, etc.). When you make a payment, it will pass through systems that might delay, control or block the payment.
 
@@ -41,10 +41,10 @@ Let's lay out the entire payment process.
 %}
 
 #### 1. Get recipient address
-The sender needs a valid address for the payment to be sent to. This can be shared by the recipient as a QR code, in plain text or as a payment link.
+The sender needs a valid address for the payment to be sent to. This can be shared by the recipient as a QR code, in plain text, or as a payment link.
 
 #### 2. Creation
-The wallet application guides the sender through collecting the required information (address and amount), and any optional configurations (which coins to send, fee options) in order to create a transaction.
+The wallet application guides the sender through collecting the required information (address and amount) and any optional configurations (which coins to send, fee options) in order to create a transaction.
 
 #### 3. Signing
 The transaction needs to be signed by the [private key(s)]({{ '/guide/glossary/#private-key' | relative_url }}) of the input [address(es)]({{ '/guide/glossary/#address' | relative_url }}) to be valid. The signing is often done in the same application after the transaction has created and configured, but this does not have to be the case.
@@ -53,10 +53,10 @@ The transaction needs to be signed by the [private key(s)]({{ '/guide/glossary/#
 The transaction is broadcasted to a Bitcoin node, normally the one the wallet is connected to.
 
 #### 5. Validation
-The receiving node checks that the transaction is valid. In practice this means confirming that it was signed by the private key of the relevant address.
+The receiving node checks that the transaction is valid. In practice, this means confirming that it was signed by the private key of the relevant address.
 
 #### 6. Propagation
-Once validated, the node passes the transaction on to other nodes in the network. The transaction is now in the *memory pool*, and remains there until it is mined. At this stage the transaction has 0 confirmations.
+Once validated, the node passes the transaction on to other nodes in the network. The transaction is now in the *memory pool*, and remains there until it is mined. At this stage, the transaction has 0 confirmations.
 <!-- indicate that a tx with a fee rate that is lower than the current normal can be stuck and even forgotten by miners if it remains in the mempool for too long -->
 
 #### 7. Confirmations
@@ -64,7 +64,7 @@ Given that you know [how transactions are confirmed]({{ '/guide/getting-started/
 
 Not every miner creates the new block with the same transactions, so some nodes may have a different version of the blockchain than others for a short time. The Bitcoin protocol's main function is to bring all nodes to the same version of the blockchain. Through a process called chain reorganization, nodes remove their incorrect block and update with the winning block as determined by the majority of other nodes.
 
-There is a slight risk that a transaction with 1 confirmation may revert to 0 confirmaations when a chain reorganisation occurs. Due to this, some parties may require more confirmations for the transaction before providing the product or service.
+There is a slight risk that a transaction with 1 confirmation may revert to 0 confirmations when a chain reorganization occurs. Due to this, some parties may require more confirmations for the transaction before providing the product or service.
 
 It is widely accepted that after 6 confirmations, no other reorganizations would occur, and the payment final.
 
@@ -72,7 +72,7 @@ It is widely accepted that after 6 confirmations, no other reorganizations would
 
 ## Transaction structure
 
-Think of a transaction as a file that contains the authorisations to spend some bitcoin, as well as the payment details of the recipient(s). Once miners get the transaction they check all the details once more before they include it into a block.
+Think of a transaction as a file that contains the authorizations to spend some bitcoin, as well as the payment details of the recipient(s). Once miners get the transaction they check all the details once more before they include it into a block.
 
 The principal properties are:
 
@@ -86,10 +86,10 @@ The principal properties are:
 
 In a Bitcoin wallet, funds are often not held in a single address, but more commonly in one address per transaction where you previously received bitcoin. When you are creating a transaction you need to specify which of your addresses you would like to use to fund it. If you need to spend more than what a single address holds, you can specify several. These are called *inputs* to the transaction.
 
-Likewise, you need to specify the destination address, or addresses for the transaction. These are called *outputs*. should there be more bitcoin in the inputs than are needed for the payment, a new address will be created in your wallet for the remaining change, often called a *change output*.
+Likewise, you need to specify the destination address or addresses for the transaction. These are called *outputs*. should there be more bitcoin in the inputs than are needed for the payment, a new address will be created in your wallet for the remaining change, often called a *change output*.
 
 ### Transaction fee
 
-Every transaction needs to pay a fee to incentivise miners to include it in a block. There is no fixed fee for making a transaction as it depends on the amount of data it includes, the amount of other transactions that are trying to get verified, and how much each submitter is prepared to pay. Miners typically pick the transactions that will earn them the highest reward to include in a block.
+Every transaction needs to pay a fee to incentivize miners to include it in a block. There is no fixed fee for making a transaction as it depends on the amount of data it includes, the amount of other transactions that are trying to get verified, and how much each submitter is prepared to pay. Miners typically pick the transactions that will earn them the highest reward to include in a block.
 
-Blocks are also limited in size and new ones are created every 10 minutes on average. This means that if you want a transaction to be confirmed in the next block you might have to pay a relativly high price.
+Blocks are also limited in size and new ones are created every 10 minutes on average. This means that if you want a transaction to be confirmed in the next block you might have to pay a relatively high price.
