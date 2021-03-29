@@ -3,7 +3,7 @@ layout: guide
 title: Payments
 description: Diving into the user experience of moving Bitcoin
 nav_order: 5
-has_children: false
+has_children: true
 permalink: /guide/payments/
 main_classes: -no-top-padding
 ---
@@ -27,7 +27,7 @@ We have already established that [Bitcoin is money](https://bitcoin.design/guide
 
 ---
 
-**Transactions overview (coming soon)**
+**[Transactions overview](/guide/payments/transactions/)**
 
 An overview of Bitcoin payments, common concepts and the transaction lifecycle.
 
