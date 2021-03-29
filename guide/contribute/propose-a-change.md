@@ -5,8 +5,20 @@ description: Contribute to the guide by proposing an improvement you've made or 
 nav_order: 1
 parent: Contribute to guide
 permalink: /guide/contribute/propose-a-change/
-image: https://bitcoin.design/assets/images/guide/contribute/contribute-propose-a-change-preview.jpg
+image: https://bitcoin.design/assets/images/guide/contribute/propose-a-change/propose-a-change-preview.jpg
+main_classes: -no-top-padding
 ---
+
+{% include picture.html
+   image = "/assets/images/guide/contribute/propose-a-change/propose-a-change.jpg"
+   retina = "/assets/images/guide/contribute/propose-a-change/propose-a-change@2x.jpg"
+   mobile = "/assets/images/guide/contribute/propose-a-change/propose-a-change-mobile.jpg"
+   mobileRetina = "/assets/images/guide/contribute/propose-a-change/propose-a-change-mobile@2x.jpg"
+   alt-text = "Code merge icon"
+   width = 1600
+   height = 800
+   layout = "full-width"
+%}
 
 # Proposing a change
 
