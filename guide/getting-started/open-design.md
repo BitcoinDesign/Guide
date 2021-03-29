@@ -5,7 +5,7 @@ nav_order: 4
 parent: Getting started
 permalink: /guide/getting-started/open-design/
 main_classes: -no-top-padding
-image: /assets/images/guide/getting-started/open-design/open-design-preview.jpg
+image: https://bitcoin.design/assets/images/guide/getting-started/open-design/open-design-preview.jpg
 ---
 
 <!--

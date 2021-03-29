@@ -5,7 +5,7 @@ description: A how-to guide for creating your own theme for the bitcoin.design h
 permalink: /submit-header-design
 main_nav: false
 secondary_nav: false
-image: /assets/images/submit-header-design-preview.jpg
+image: https://bitcoin.design/assets/images/submit-header-design-preview.jpg
 ---
 
 # How to submit a home page banner theme design
@@ -58,9 +58,9 @@ You can upload a custom image for mobile. Plus there is one extra option, you ca
 Below are the variable used to configure a theme. These are located in [themes.js](/js/themes.js){:target="_blank"}.
 
 ```javascript
-    copyBackgroundColor: "", 
-    bitcoinLogoPath: "/assets/banner-bitcoin-logo.svg", 
-    bitcoinLogoFillColor: "", 
+    copyBackgroundColor: "",
+    bitcoinLogoPath: "/assets/banner-bitcoin-logo.svg",
+    bitcoinLogoFillColor: "",
     bitcoinLogoOutlineColor: "#000",
     titleFillColor: "#FFF",
     titleOutlineColor: "#000",

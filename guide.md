@@ -3,12 +3,12 @@ layout: guide
 nav_order: 1
 title: Guide
 secondary_nav_title: Introduction
-description: The Bitcoin Design Guide is a reference for the design of bitcoin applications. 
+description: The Bitcoin Design Guide is a reference for the design of bitcoin applications.
 permalink: /guide/
 main_nav: true
 secondary_nav: true
 main_classes: -no-top-padding
-image: /assets/images/guide/bitcoin-island-preview.jpg
+image: https://bitcoin.design/assets/images/guide/bitcoin-island-preview.jpg
 ---
 
 <!--

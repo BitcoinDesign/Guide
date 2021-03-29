@@ -5,7 +5,7 @@ nav_order: 12
 parent: Getting started
 permalink: /guide/getting-started/hardware/
 main_classes: -no-top-padding
-image: /assets/images/guide/getting-started/hardware/hardware-preview.jpg
+image: https://bitcoin.design/assets/images/guide/getting-started/hardware/hardware-preview.jpg
 ---
 
 <!--

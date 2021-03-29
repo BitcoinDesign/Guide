@@ -5,7 +5,7 @@ description: Contribute to the guide by reviewing a proposed change
 nav_order: 2
 parent: Contribute to guide
 permalink: /guide/contribute/review/
-image: /assets/images/guide/contribute/contribute-review-preview.jpg
+image: https://bitcoin.design/assets/images/guide/contribute/contribute-review-preview.jpg
 ---
 
 # Reviewing a proposed change

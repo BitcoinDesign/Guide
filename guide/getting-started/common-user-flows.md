@@ -5,7 +5,7 @@ nav_order: 9
 parent: Getting started
 permalink: /guide/getting-started/common-user-flows/
 main_classes: -no-top-padding
-image: /assets/images/guide/getting-started/common-user-flows/common-user-flows-preview.jpg
+image: https://bitcoin.design/assets/images/guide/getting-started/common-user-flows/common-user-flows-preview.jpg
 ---
 
 <!--

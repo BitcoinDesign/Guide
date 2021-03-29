@@ -5,7 +5,7 @@ nav_order: 11
 parent: Getting started
 permalink: /guide/getting-started/software/
 main_classes: -no-top-padding
-image: /assets/images/guide/getting-started/software/software-preview.jpg
+image: https://bitcoin.design/assets/images/guide/getting-started/software/software-preview.jpg
 ---
 
 <!--

@@ -5,7 +5,7 @@ nav_order: 6
 parent: Getting started
 permalink: /guide/getting-started/user-research/
 main_classes: -no-top-padding
-image: /assets/images/guide/getting-started/user-research/user-research-preview.jpg
+image: https://bitcoin.design/assets/images/guide/getting-started/user-research/user-research-preview.jpg
 ---
 
 <!--

@@ -5,7 +5,7 @@ description: Contribute to the guide by proposing an improvement you've made or 
 nav_order: 1
 parent: Contribute to guide
 permalink: /guide/contribute/propose-a-change/
-image: /assets/images/guide/contribute/contribute-propose-a-change-preview.jpg
+image: https://bitcoin.design/assets/images/guide/contribute/contribute-propose-a-change-preview.jpg
 ---
 
 # Proposing a change

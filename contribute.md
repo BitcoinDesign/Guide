@@ -6,7 +6,7 @@ permalink: /contribute/
 main_nav: true
 nav_order: 2
 main_classes: -no-top-padding
-image: /assets/images/contribute/contribute-preview.jpg
+image: https://bitcoin.design/assets/images/contribute/contribute-preview.jpg
 ---
 
 {% include picture.html

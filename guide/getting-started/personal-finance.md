@@ -5,7 +5,7 @@ nav_order: 7
 parent: Getting started
 permalink: /guide/getting-started/personal-finance/
 main_classes: -no-top-padding
-image: /assets/images/guide/getting-started/personal-finance/personal-finance-preview.jpg
+image: https://bitcoin.design/assets/images/guide/getting-started/personal-finance/personal-finance-preview.jpg
 ---
 
 <!--

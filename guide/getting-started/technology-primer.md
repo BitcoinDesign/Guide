@@ -5,7 +5,7 @@ nav_order: 10
 parent: Getting started
 permalink: /guide/getting-started/technology-primer/
 main_classes: -no-top-padding
-image: /assets/images/guide/getting-started/technology/technology-primer-preview.jpg
+image: https://bitcoin.design/assets/images/guide/getting-started/technology/technology-primer-preview.jpg
 ---
 
 <!--

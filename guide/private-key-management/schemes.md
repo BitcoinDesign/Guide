@@ -6,7 +6,7 @@ nav_order: 1
 parent: Private key management
 permalink: /guide/private-key-management/schemes/
 main_classes: -no-top-padding
-image: /assets/images/guide/private-key-management/schemes/page-private-key-schemes.jpg
+image: https://bitcoin.design/assets/images/guide/private-key-management/schemes/page-private-key-schemes.jpg
 ---
 
 <!--
@@ -39,20 +39,20 @@ Important aspects to consider when choosing a private key management scheme is w
 * **Value stored** - While we always strive for no loss of funds, how critical to their financial situation would it be if your user lost access to their funds?
 
 
-The narrower you can define your answer to these questions, the easier it will be to pick the right private key management scheme, and provide a great user experience. If you find yourself wanting to target a wide range, it might be a good idea to use a progressive scheme that changes as the user’s funds and familiarity with bitcoin grows. 
+The narrower you can define your answer to these questions, the easier it will be to pick the right private key management scheme, and provide a great user experience. If you find yourself wanting to target a wide range, it might be a good idea to use a progressive scheme that changes as the user’s funds and familiarity with bitcoin grows.
 
 ## Balancing security, risk and convenience
 
-The trick to picking a private key management scheme is finding the appropriate balance between convenience on the one hand, and risk of loss and redundant security on the other. While learnings over the last decade mean we can now enable higher security and good user experience at the same time, there is always a balance. Higher security generally means more friction and work for the user, both during setup and usage of a wallet application. 
+The trick to picking a private key management scheme is finding the appropriate balance between convenience on the one hand, and risk of loss and redundant security on the other. While learnings over the last decade mean we can now enable higher security and good user experience at the same time, there is always a balance. Higher security generally means more friction and work for the user, both during setup and usage of a wallet application.
 
-There are many potential threat-vectors for users of non-custodial wallet applications. People will be exposed differently to these vectors, and be more or less comfortable with their risk in each. 
+There are many potential threat-vectors for users of non-custodial wallet applications. People will be exposed differently to these vectors, and be more or less comfortable with their risk in each.
 
 As a simplification we can characterize the main potentials for loss of funds as;
 
 * **Self inflicted** - you lose access to your own private key
 * **Theft** - a third party gains access to your private key
 
-So your goal is to make it hard for users to lose their keys, and at the same time, make it hard for a third party to get to them. 
+So your goal is to make it hard for users to lose their keys, and at the same time, make it hard for a third party to get to them.
 
 Casa's [wealth security protocol]({{ 'https://github.com/Casa/wealth-security-protocol/blob/master/casa-wealth-security-protocol.pdf'}}){:target="_blank"} is good reading material for more complete views on threat vectors and risk.
 

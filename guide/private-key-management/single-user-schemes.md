@@ -6,7 +6,7 @@ nav_order: 2
 parent: Private key management
 permalink: /guide/private-key-management/single-user-schemes/
 main_classes: -no-top-padding
-image: /assets/images/guide/private-key-management/schemes/page-personal-schemes.jpg
+image: https://bitcoin.design/assets/images/guide/private-key-management/schemes/page-personal-schemes.jpg
 ---
 
 <!--

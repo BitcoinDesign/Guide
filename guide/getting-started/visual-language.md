@@ -4,7 +4,7 @@ title: Visual language
 nav_order: 5
 parent: Getting started
 permalink: /guide/getting-started/visual-language/
-image: /assets/images/guide/getting-started/visual-language/visual-language-preview.jpg
+image: https://bitcoin.design/assets/images/guide/getting-started/visual-language/visual-language-preview.jpg
 ---
 
 <!--
