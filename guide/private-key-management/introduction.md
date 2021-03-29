@@ -51,7 +51,7 @@ The schemes that are most common for the personal use of one individual.
 
 When more than one person wants to share a Bitcoin wallet, multi-key schemes become essential.
 
-**[Case studies]({{ '/guide/private-key-management/case-studies/' | relative_url }})**
+**[Case studies]({{ '/guide/case-studies/' | relative_url }})**
 
 A look at some hypothetical use case categories and what might be suitable approaches for private key management schemes for each of them.
 

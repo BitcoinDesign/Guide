@@ -321,7 +321,7 @@ A software wallet application or coordination software initiates a multi-sig wal
 - Make sure the multi-key setup itself is backed up properly, including [extended public keys]({{ '/guide/glossary/#extended-public-key-xpub-ypub-zpub' | relative_url }}) for all the participating keys, fingerprint and derivation.
 
 **Products that use this scheme**
-- [Casa](https://keys.casa') co-managed 2-of-3, or 3-of-5
+- [Casa](https://keys.casa) co-managed 2-of-3, or 3-of-5
 - [Electrum](https://electrum.org)
 - [Bluewallet](https://bluewallet.io)
 - [Unchained Capital/Caravan](https://unchained-capital.com) co-managed
