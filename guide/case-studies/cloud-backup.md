@@ -5,7 +5,7 @@ nav_order: 1
 parent: Case studies
 permalink: /guide/case-studies/cloud-backup/
 main_classes: -no-top-padding
-image: /assets/images/guide/getting-started/getting-started-preview.jpg
+image: https://bitcoin.design/assets/images/guide/getting-started/getting-started-preview.jpg
 ---
 
 <!--
@@ -31,7 +31,7 @@ A single-key scheme with [automatic cloud backup]({{ '/guide/private-key-managem
    height = 500
 %}
 
-#### Design considerations 
+#### Design considerations
 - Most users will be bitcoin beginners
 - Quick and easy send/receive
 - Onboarding with as little friction as possible
@@ -40,6 +40,6 @@ A single-key scheme with [automatic cloud backup]({{ '/guide/private-key-managem
 - Back up encrypted recovery phrase automatically to retain export option in the future
 - Use a platform-appropriate storage location (keychain with iCloud, Google Drive)
 - Additional user authentication to consider: biometrics, pin
-- Upgrade-path to other schemes if funds stored increase 
+- Upgrade-path to other schemes if funds stored increase
 
 You can find a prototype for this case study linked in the image above, and a Figma file with [outline designs here](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=0%3A1).

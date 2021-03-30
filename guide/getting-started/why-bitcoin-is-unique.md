@@ -5,7 +5,7 @@ nav_order: 2
 parent: Getting started
 permalink: /guide/getting-started/why-bitcoin-is-unique/
 main_classes: -no-top-padding
-image: /assets/images/guide/getting-started/why-bitcoin-is-unique/why-bitcoin-is-unique-preview.jpg
+image: https://bitcoin.design/assets/images/guide/getting-started/why-bitcoin-is-unique/why-bitcoin-is-unique-preview.jpg
 ---
 
 <!--

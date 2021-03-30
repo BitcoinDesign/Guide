@@ -5,8 +5,20 @@ description: Visual examples of formatting options available for content authors
 nav_order: 5
 parent: Contribute to guide
 permalink: /guide/contribute/formatting/
-image: /assets/images/guide/contribute/formatting-preview.jpg
+image: https://bitcoin.design/assets/images/guide/contribute/formatting/formatting-preview.jpg
+main_classes: -no-top-padding
 ---
+
+{% include picture.html
+   image = "/assets/images/guide/contribute/formatting/formatting.jpg"
+   retina = "/assets/images/guide/contribute/formatting/formatting@2x.jpg"
+   mobile = "/assets/images/guide/contribute/formatting/formatting-mobile.jpg"
+   mobileRetina = "/assets/images/guide/contribute/formatting/formatting-mobile@2x.jpg"
+   alt-text = "Abstract page layout illustration"
+   width = 1600
+   height = 800
+   layout = "full-width"
+%}
 
 # Formatting
 

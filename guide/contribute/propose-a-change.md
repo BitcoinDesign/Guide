@@ -5,8 +5,20 @@ description: Contribute to the guide by proposing an improvement you've made or 
 nav_order: 1
 parent: Contribute to guide
 permalink: /guide/contribute/propose-a-change/
-image: /assets/images/guide/contribute/contribute-propose-a-change-preview.jpg
+image: https://bitcoin.design/assets/images/guide/contribute/propose-a-change/propose-a-change-preview.jpg
+main_classes: -no-top-padding
 ---
+
+{% include picture.html
+   image = "/assets/images/guide/contribute/propose-a-change/propose-a-change.jpg"
+   retina = "/assets/images/guide/contribute/propose-a-change/propose-a-change@2x.jpg"
+   mobile = "/assets/images/guide/contribute/propose-a-change/propose-a-change-mobile.jpg"
+   mobileRetina = "/assets/images/guide/contribute/propose-a-change/propose-a-change-mobile@2x.jpg"
+   alt-text = "Code merge icon"
+   width = 1600
+   height = 800
+   layout = "full-width"
+%}
 
 # Proposing a change
 
@@ -95,7 +107,7 @@ When a new branch is created, while making sure it's selected, click on either `
 
 After identifying a file or folder where you want to make a change, it's time to make your changes to the text, code, or visuals. Whenever you're finished, make sure to `Save` the file (File > Save) in a _text editor_ or use the shortcuts `Ctrl+S` or `cmd+S`.
 
-Please make sure that your changes are consistent with our [content](content-guidelines), [illustration](illustration-guidelines) and [formatting](formatting) guidelines.
+Please make sure that your changes are consistent with our [content]({{ '/guide/contribute/content-guidelines/' | relative_url }}), [illustration]({{ '/guide/contribute/illustration-guidelines/' | relative_url }}) and [formatting]({{ '/guide/contribute/formatting/' | relative_url }}) guidelines.
 
 {% include youtube.html id="TjydTyOK4Wo" %}
 
@@ -161,7 +173,7 @@ After changes have been published on your copy, it's time to announce them in th
 
 #### Applying additional changes
 
-Your proposed changes need to undergo a [review process](review.md). During the review of your pull request, you may be asked to make certain changes. To do that, simply make sure that you're on the same branch as the pull request you've submitted. [Apply and push](#applying-changes) your changes.
+Your proposed changes need to undergo a [review process]({{ '/guide/contribute/review/' | relative_url }}). During the review of your pull request, you may be asked to make certain changes. To do that, simply make sure that you're on the same branch as the pull request you've submitted. [Apply and push](#applying-changes) your changes.
 
 Once there is a consensus on the proposed changes, your pull request will be merged, and your changes will become part of the Bitcoin Design Guide.
 

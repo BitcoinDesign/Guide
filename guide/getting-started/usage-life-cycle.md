@@ -5,7 +5,7 @@ nav_order: 8
 parent: Getting started
 permalink: /guide/getting-started/usage-life-cycle/
 main_classes: -no-top-padding
-image: /assets/images/guide/getting-started/usage-life-cycle/usage-life-cycle-preview.jpg
+image: https://bitcoin.design/assets/images/guide/getting-started/usage-life-cycle/usage-life-cycle-preview.jpg
 ---
 
 <!--

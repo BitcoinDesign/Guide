@@ -2,11 +2,23 @@
 layout: guide
 title: Contribute to guide
 description: Additional material for both readers and writers of the guide.
-nav_order: 9
+nav_order: 8
 has_children: true
 permalink: /guide/contribute/
-image: /assets/images/guide/contribute/contribute-preview.jpg
+main_classes: -no-top-padding
+image: https://bitcoin.design/assets/images/guide/contribute/contribute-preview.jpg
 ---
+
+{% include picture.html
+   image = "/assets/images/guide/contribute/contribute.png"
+   retina = "/assets/images/guide/contribute/contribute@2x.png"
+   mobile = "/assets/images/guide/contribute/contribute-mobile.png"
+   mobileRetina = "/assets/images/guide/contribute/contribute-mobile@2x.png"
+   alt-text = "Twisting lines"
+   width = 1600
+   height = 800
+   layout = "full-width"
+%}
 
 # Contribute to the Guide
 
