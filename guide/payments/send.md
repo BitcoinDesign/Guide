@@ -11,7 +11,7 @@ main_classes: -no-top-padding
 
 # Sending bitcoin
 
-Sending bitcoin can be a very straightforward or complex flow in a Bitcoin application. People may be sending bitcoin to a known contact, moving it between their wallets on different devices, or making a purchase through a [payment processor](https://bitcoin.design/guide/getting-started/software/#payment-processors).
+Sending bitcoin can be a very straightforward or complex flow in a Bitcoin application. People may be sending bitcoin to a known contact, moving it between their wallets on different devices, or making a purchase through a [payment processor]({{ '/guide/getting-started/software/#payment-processors' | relative_url }}).
 
 Let us look at the main transaction options senders need to configure when moving bitcoin:
 
@@ -33,7 +33,7 @@ You do not need to follow the order below. Feel free to tailor the configuration
    layout = "float-right-desktop"
 %}
 
-To send a payment on the Bitcoin blockchain, the sender needs to obtain an address from the recipient. Since Bitcoin [addresses](https://bitcoin.design/guide/glossary/#address) are long and seemingly random, they are best shared by copying and pasting in plain text, as a [payment link](https://bitcoin.design/guide/foundations/wallet-interoperability/#payment-links), or as a scannable [QR Code](https://bitcoin.design/guide/foundations/wallet-interoperability/#qr-codes).
+To send a payment on the Bitcoin blockchain, the sender needs to obtain an address from the recipient. Since Bitcoin [addresses]({{ '/guide/glossary/#address' | relative_url }}) are long and seemingly random, they are best shared by copying and pasting in plain text, as a [payment link]({{ '/guide/foundations/wallet-interoperability/#payment-links' | relative_url }}), or as a scannable [QR Code]({{ '/guide/foundations/wallet-interoperability/#qr-codes' | relative_url }}).
 
 The receiver does this by generating a new address in their wallet application, then sharing it with the sender. If the sender and receiver are physically close to each other, scanning the receiver's address as a QR Code will be easy. Still, if they are not, they can send the address as text in any regular communication tool like email, SMS, etc.
 </div>
@@ -143,6 +143,7 @@ If your application allows setting spending limits, and the current transaction 
 
 ## Transaction processing and confirmation
 
+<div class="center" markdown="1">
 {% include image.html
    image = "https://i.imgur.com/idV0Mt7.png"
    retina = "https://i.imgur.com/idV0Mt7.png"
@@ -150,16 +151,16 @@ If your application allows setting spending limits, and the current transaction 
    width = 1600
    height = 800
 %}
+
 Let us look at how we communicate to the sender about the [processing of a transaction]({{ '/guide/payments/transactions/#transaction-lifecycle' | relative_url }}) after it has been broadcasted. There are three main states that you would want to inform or notify the sender of:
 
-- **Pending/Unconfirmed** -- the transaction is successfully in the nodes memory pool and is being propagated throughout the network.
-- **1 confirmation** -- the transaction has been selected by miners and included in a block. Since a reorganization can still happen, a transaction with one confirmation can also be considered a pending state by the receiver.
-- **6 confirmations** -- commonly regarded as the final settlement of the payment. Some merchants, for example, would be willing to release the product or service.
+**Pending/Unconfirmed** -- The transaction is successfully in the nodes' memory pool and is being propagated throughout the network. The fee market can sometimes be volatile, and the "time until the first confirmation" may change from what was estimated when they had initially broadcasted the transaction. While pending, inform the sender of when they can expect the first transaction confirmation.
 
-While a transaction is pending, inform the sender of when they can expect the first confirmation. The fee market can sometimes be volatile, and the "time until the first confirmation" may change from what was estimated when they had initially broadcasted the transaction.
+**1 confirmation** -- The transaction has been selected by miners and included in a block. Since a reorganization can still happen, a transaction with one confirmation can also be considered a pending state by the receiver. This is a good point to notify the sender.
 
-After the first confirmation, the application can notify the sender that processing is underway, and by the sixth confirmation, you can indicate that the payment is finalized.
+**6 confirmations** -- Commonly regarded as when the final settlement of the payment happens. Merchants, for example, would only be willing to release the product or service at this point.
 
+</div>
 **Do's**
 - Clearly indicate the state of the outgoing transaction
 - Show the amount of confirmations the transaction has
