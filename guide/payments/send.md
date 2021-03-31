@@ -49,7 +49,7 @@ The receiver does this by generating a new address in their wallet application, 
    layout = "float-right-desktop"
 %}
 
-Once you have gotten the address, its time to enter the payment details. Bitcoin transactions are irreversible, so both the sender and receiver should take great care in correctly sharing and inputting addresses.
+Once you have gotten the address, it's time to enter the payment details. Bitcoin transactions are irreversible, so both the sender and receiver should take great care in correctly sharing and inputting addresses.
 
 **QR Code** -- Access will need to be granted to your application to enable scanning of QR Codes. Once the camera detects a valid address in the QR Code, it should automatically fill the address field.
 
@@ -110,15 +110,15 @@ Human error with fee selection can lead to costly mistakes, and fee estimations 
 </div>
 
 **Variations**
-- Automatically set the fee-rate
+- Automatically set the fee rate
 - Allow sender to choose from presets
 - Allow sender to enter a custom fee rate (advanced)
 
 **Do's**
 
-- If the sender does not have advanced knowledge about bitcoin fees but wants control over the fee-rate, provide presets to select how urgent the transaction is (e.g. low, medium, high priority)
-- When using presets clearly communicate estimated confirmation time and costs related to each of the fee rate options
-- When allowing users to enter their own fee rate warn the sender if they enter an amount far beyond the recommended fee-rate for the next block
+- If the sender does not have advanced knowledge about bitcoin fees but wants control over the fee rate, provide presets to select how urgent the transaction is (e.g. low, medium, high priority)
+- When using presets, clearly communicate estimated confirmation time and costs related to each of the fee rate options
+- When allowing users to enter their own fee rate, warn the sender if they enter an amount far beyond the recommended fee rate for the next block
 
 ## Reviewing and approving the payment
 
@@ -143,7 +143,6 @@ If your application allows setting spending limits, and the current transaction 
 
 ## Transaction processing and confirmation
 
-<div class="center" markdown="1">
 {% include image.html
    image = "https://i.imgur.com/idV0Mt7.png"
    retina = "https://i.imgur.com/idV0Mt7.png"
@@ -160,10 +159,9 @@ Let us look at how we communicate to the sender about the [processing of a trans
 
 **6 confirmations** -- Commonly regarded as when the final settlement of the payment happens. Merchants, for example, would only be willing to release the product or service at this point.
 
-</div>
 **Do's**
 - Clearly indicate the state of the outgoing transaction
-- Show the amount of confirmations the transaction has
+- Show the number of confirmations the transaction has
 - Provide information on transaction/block ID for receipt purposes
 
 **Don'ts**
