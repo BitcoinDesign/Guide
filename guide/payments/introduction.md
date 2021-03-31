@@ -33,7 +33,7 @@ An overview of Bitcoin payments, common concepts and the transaction lifecycle.
 
 ---
 
-**Sending bitcoin (coming soon)**
+**[Sending bitcoin](/guide/payments/send/)**
 
 An introduction to how sending bitcoin works.
 
