@@ -74,6 +74,21 @@ With most implementations so far, the location will be the keychain or a user-sp
 
 This makes the backup accessible by the user on a new device, should they lose the original, but only accessible by someone that can log into the user’s Apple or Google account.
 
+{% include fact-pros.html %}
+
+- Low onboarding friction
+- Low risk of self-inflicted loss due to the automatic nature
+
+{% include fact-close.html %}
+
+{% include fact-cons.html %}
+
+- Private key in cloud storage increases risk of malicious third party access
+- User needs to trust their OS and cloud storage provider
+- Unless the backup includes the recovery phrase users will not be able to export their wallet to another product
+
+{% include fact-close.html %}
+
 #### Pros
 - Low onboarding friction
 - Low risk of self-inflicted loss due to the automatic nature
