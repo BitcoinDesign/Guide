@@ -144,8 +144,7 @@ If your application allows setting spending limits, and the current transaction 
 ## Transaction processing and confirmation
 
 {% include image.html
-   image = "https://i.imgur.com/idV0Mt7.png"
-   retina = "https://i.imgur.com/idV0Mt7.png"
+   image = "/assets/images/guide/payments/send/first-confirmation.svg"
    alt-text = "Notifications after the transaction is broadcasted"
    width = 1600
    height = 800
