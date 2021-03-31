@@ -150,10 +150,15 @@ If your application allows setting spending limits, and the current transaction 
    width = 1600
    height = 800
 %}
+Let us look at how we communicate to the sender about the [processing of a transaction]({{ '/guide/payments/transactions/#transaction-lifecycle' | relative_url }}) after it has been broadcasted. There are three main states that you would want to inform or notify the sender of:
 
-Once the transaction is valid, it is now in the memory pool and is available for including in a block by miners. When in the memory pool, the sender can see the wallet's transaction as unconfirmed or pending.
+- **Pending/Unconfirmed** -- the transaction is successfully in the nodes memory pool and is being propagated throughout the network.
+- **1 confirmation** -- the transaction has been selected by miners and included in a block. Since a reorganization can still happen, a transaction with one confirmation can also be considered a pending state by the receiver.
+- **6 confirmations** -- commonly regarded as the final settlement of the payment. Some merchants, for example, would be willing to release the product or service.
 
-After broadcasting a transaction, the process of propagation and validation is quite fast, so showing these states may be infeasible. You may inform the sender that their transaction is pending a confirmation, the estimated time to confirm given the current fee market, and once it has gotten its first confirmation.
+While a transaction is pending, inform the sender of when they can expect the first confirmation. The fee market can sometimes be volatile, and the "time until the first confirmation" may change from what was estimated when they had initially broadcasted the transaction.
+
+After the first confirmation, the application can notify the sender that processing is underway, and by the sixth confirmation, you can indicate that the payment is finalized.
 
 **Do's**
 - Clearly indicate the state of the outgoing transaction
