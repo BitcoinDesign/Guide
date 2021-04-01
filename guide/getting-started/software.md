@@ -86,7 +86,7 @@ Explorers often also provide insight into activity on the bitcoin network, like 
 
 Wallet provide easy-to-use graphical interfaces for a wide audience. Wallets many times don't offer all functionality that can be found in a CLI, but instead focus on general use cases like making payments and browsing transactions.
 
-Due to the nature of open-source, wallets can be developed by anyone with the technical knowledge, and many code libraries are available to simplify this task.</div>
+Due to the nature of open-source, wallets can be developed by anyone with the technical knowledge, and many code libraries are available to simplify this task.
 
 Features can vary by application but always include wallet setup, viewing balances and transactions, and sending and receiving bitcoin. The range of additional features wallets may support is broad, from security and privacy to transaction management, currency exchange, accounting, and interoperability to accessibility and localization. Which features to include should be based on the specific use cases and user needs of your product.
 
