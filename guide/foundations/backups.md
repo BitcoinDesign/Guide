@@ -34,14 +34,14 @@ Illustration sources
 
 # Bitcoin backups
 
-The self-custody of bitcoin is an important right, but also a financial responsibility that can scale from pocket money to life savings. Most of us lack experience of caring for the security of large amounts of money on our own, and it can feel scary to figure things out without help.
+The self-custody of bitcoin is an important right, but also a financial responsibility that can scale from pocket money to life savings and it can take practice getting used to.
 
 Making a secure backup of your wallet should be straightforward. This guide is meant to provide a starting point for simple bitcoin backups. From a basic setup, you can increase the security level as your funds grow. 
 
 
-## Backups in practice
+## What are backups?
 
-When we talk about backups, we mean saving the information needed to restore access to a wallet outside of the application that created the private keys. Most often, this will be the *recovery-phrase* of the wallet from which all it's private keys can be retrieved, but can also include other information like a *pass-phrase*.
+When we talk about backups, we mean saving the information needed to restore access to a wallet outside of the application that created the private keys. Most often, this will be the *recovery-phrase* of of 12 or 24 words, but can also include other information like a *pass-phrase*.
 
 The main risks that backups need to protect against are:
 
@@ -52,13 +52,23 @@ The main risks that backups need to protect against are:
 - Catastrophic events - your backup location got destroyed
 - Inheritance loss - next-of-kin were unable to access your wallet
 
+
+## Backup levels, basic to advanced
+
+A basic backup can be done in a few minutes, while more advanced setups can require the purchase of dedicated material and more effort. 
+
 Let’s look at some real life examples and methods of backing up single-key wallets. (Multi-key setups require their own writeup.)
 
-[illustration of backup levels]
+{% include image.html
+   image = "/assets/images/guide/foundations/backups/backup-table-sketch.png"
+   retina = "/assets/images/guide/foundations/backups/backup-table-sketch@2x.png"
+   alt-text = "Table of backup levels"
+%}
 
 <br>
 
-## Level 0 - encrypted cloud backup 
+#### Level 0
+## Encrypted cloud backup 
 
 By storing the recovery-phrase in an online location that is encrypted (not in plain text) and hard to access by anyone other than yourself, you are protected against *loss of wallet*.
 
@@ -82,7 +92,8 @@ By storing the recovery-phrase in an online location that is encrypted (not in p
 
 <br>
 
-## Level 1 - single offline paper backup
+#### Level 1
+## Single paper backup
 
 By storing the recovery-phrase written down on paper in your own home you have protected against *loss of wallet* and *remote theft*.
 
@@ -109,7 +120,8 @@ By storing the recovery-phrase written down on paper in your own home you have p
 
 <br>
 
-## Level 2 - single offline metal backup
+#### Level 2
+## Single metal backup
 
 By storing the recovery-phrase on metal in your own home you have protected against *loss of wallet*, *remote theft* and *physical damage*. 
 
@@ -136,8 +148,9 @@ The best metal backup solutions are resistant to most physical damage, including
 
 <br>
 
-## Level 3 - single offline backup with discovery protection
-The previous offline backup levels have one flaw in common. If they are discovered by a bad actor, they can steal your funds.
+#### Level 3
+## Single backup with discovery protection
+The previous offline backup levels have one flaw in common. If they are discovered by a bad actor, your funds can be stolen.
 
 To protect against this *theft on discovery risk*, a *pass-phrase* can be added to the 12 or 24 word recovery-phrase when creating the wallet. This pass-phrase is sometimes called an extra word, or the 13th/25th word. 
 
@@ -146,6 +159,8 @@ The pass-phrase should be stored separate from the recovery-phrase. This could i
 If a bad actor discovers the recovery-phrase, they will find an empty wallet as the 12 or 24 phrase is a valid recovery-phrase on its own. Alternatively, one can deliberately leave a small amount of Bitcoin in this wallet as a honey-pot, and monitor it for any withdrawals to know if it has been discovered.
 
 Adding the pass-phrase will generate a different wallet from the recovery-phrase on its own. It is therefore best to add it when first creating the wallet, and before storing any bitcoin in its addresses.
+
+It's worth noting that most hardware wallets support pass-phrases, but most software wallet applications do not.
 
 {% include image.html
    image = "/assets/images/guide/foundations/backups/offline-discoveryprotection.png"
@@ -172,7 +187,8 @@ Set up a hardware wallet from the recovery and pass-phrase that uses a PIN to pr
 
 <br>
 
-## Level 4 - multiple offline backups with discovery protection in more than one location
+#### Level 4 
+## Multiple backups with discovery protection
 One remaining flaw with the previous offline backup levels is that severe damage to the one location where they are stored, could in the worst case scenario lead to the backup not being readable. This could be a fire, flood, earthquake or similar, all more or less likely depending on where you live.
 
 To protect against such a *catastrophic event* we can create multiple backups, and distribute them to other locations. This could be a second home, other family members or a safe deposit box. 
@@ -197,16 +213,17 @@ As the risk of discovery increases with the multiplying backups, best practice a
 
 <br>
 
-## Level 5 - multi-continental offline backups with discovery protection
-The previous level should offer protection against all but very large catastrophic events. If we did want to mitigate against even larger events, like countrywide or continental destruction, further distribution of backups would be necessary.
+#### Level 5
+## Multi-continental backups
+The previous level should offer protection against all but very large catastrophic events. If you want to mitigate against even larger events, like countrywide or continental destruction, further distribution of backups would be necessary.
 
-A recommended setup at this level could include offline metal backups with discovery protection stored in safe-deposit boxes on two or more continents. With the extra word being treated with equal care, backed up in an encrypted password manager AND one or more physical locations on the same continents, but separate from the metal backups.
+A recommended setup at this level could include offline metal backups with discovery protection stored in safe-deposit boxes on two or more continents. With the pass-phrase being treated with equal care, backed up in an encrypted password manager AND one or more physical locations on the same continents as, but separate from the metal backups.
 
 
 {% include image.html
    image = "/assets/images/guide/foundations/backups/multi-continental.png"
    retina = "/assets/images/guide/foundations/backups/multi-continental@2x.png"
-   alt-text = "Multiple offline backups with discovery protection"
+   alt-text = "Multi-continental backups"
 %}
 
 
