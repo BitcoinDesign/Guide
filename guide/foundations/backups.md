@@ -34,7 +34,7 @@ Illustration sources
 
 # Bitcoin backups
 
-The self-custody of bitcoin is an important right, but also a financial responsibility that can scale from pocket money to life savings and it can take practice getting used to.
+The self-custody of bitcoin is an important right, but also a financial responsibility that can take practice getting used to, and scale from pocket money to life savings.
 
 Making a secure backup of your wallet should be straightforward. This guide is meant to provide a starting point for simple bitcoin backups. From a basic setup, you can increase the security level as your funds grow. 
 
@@ -57,11 +57,13 @@ The main risks that backups need to protect against are:
 
 A basic backup can be done in a few minutes, while more advanced setups can require the purchase of dedicated material and more effort. 
 
-Let’s look at some real life examples and methods of backing up single-key wallets. (Multi-key setups require their own writeup.)
+Let’s look at some real life examples of backup methods for single-key wallets and what they protect against. (Multi-key setups require their own writeup.)
+
+<br>
 
 {% include image.html
-   image = "/assets/images/guide/foundations/backups/backup-table-sketch.png"
-   retina = "/assets/images/guide/foundations/backups/backup-table-sketch@2x.png"
+   image = "/assets/images/guide/foundations/backups/backup-table.png"
+   retina = "/assets/images/guide/foundations/backups/backup-table@2x.png"
    alt-text = "Table of backup levels"
 %}
 
@@ -70,7 +72,7 @@ Let’s look at some real life examples and methods of backing up single-key wal
 #### Level 0
 ## Encrypted cloud backup 
 
-By storing the recovery-phrase in an online location that is encrypted (not in plain text) and hard to access by anyone other than yourself, you are protected against *loss of wallet*.
+By storing the recovery-phrase in an online location that is encrypted (not in plain text) and hard to access by anyone other than yourself, you are protected against *loss of wallet*. This is the absolute minimum you should do and only takes a few minutes.
 
 {% include image.html
    image = "/assets/images/guide/foundations/backups/cloudbackup.png"
