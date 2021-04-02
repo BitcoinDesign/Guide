@@ -21,13 +21,11 @@ Illustration sources
 
 -->
 
-// replace image
-
 {% include picture.html
-   image = "/assets/images/guide/foundations/wallet-interoperability/wallet-interoperability.jpg"
-   retina = "/assets/images/guide/foundations/wallet-interoperability/wallet-interoperability@2x.jpg"
-   mobile = "/assets/images/guide/foundations/wallet-interoperability/wallet-interoperability-mobile.jpg"
-   mobileRetina = "/assets/images/guide/foundations/wallet-interoperability/wallet-interoperability-mobile@2x.jpg"
+   image = "/assets/images/guide/foundations/backups/backups.jpg"
+   retina = "/assets/images/guide/foundations/backups/backups@2x.jpg"
+   mobile = "/assets/images/guide/foundations/backups/backups-mobile.jpg"
+   mobileRetina = "/assets/images/guide/foundations/backups/backups-mobile@2x.jpg"
    alt-text = "Several devices exchanging data"
    width = 1600
    height = 700
@@ -54,15 +52,21 @@ The main risks that backups need to protect against are:
 - Catastrophic events - your backup location got destroyed
 - Inheritance loss - next-of-kin were unable to access your wallet
 
-Let’s look at some real life examples and methods of backing up single-key wallets. (Multi-key setups require their own separate writeup.)
+Let’s look at some real life examples and methods of backing up single-key wallets. (Multi-key setups require their own writeup.)
 
 [illustration of backup levels]
+
+<br>
 
 ## Level 0 - encrypted cloud backup 
 
 By storing the recovery-phrase in an online location that is encrypted (not in plain text) and hard to access by anyone other than yourself, you are protected against *loss of wallet*.
 
-[Illustration: Device with wallet + encrypted online phrase]
+{% include image.html
+   image = "/assets/images/guide/foundations/backups/cloudbackup.png"
+   retina = "/assets/images/guide/foundations/backups/cloudbackup@2x.png"
+   alt-text = "Encrypted cloud backup"
+%}
 
 **Do**
 - Use an encrypted password manager like 1Password, LastPass, iCloud Keychain
@@ -72,16 +76,23 @@ By storing the recovery-phrase in an online location that is encrypted (not in p
 - Screenshot the recovery-phrase and save it in Google Photos, iCloud photos
 - Write down the recovery-phrase in plain text on your device, Google Docs, Dropbox, Notes etc.
 
-**Suitable**
+**Suitable for**
 - For small amounts (less than a months salary) 
 - When you can't wait to set up a new wallet until you are at home
 
+<br>
 
 ## Level 1 - single offline paper backup
 
 By storing the recovery-phrase written down on paper in your own home you have protected against *loss of wallet* and *remote theft*.
 
-[Illustration: paper backup]
+
+{% include image.html
+   image = "/assets/images/guide/foundations/backups/paperbackup.png"
+   retina = "/assets/images/guide/foundations/backups/paperbackup@2x.png"
+   alt-text = "24 word paper backup"
+%}
+
 
 **Do**
 - Write the recovery-phrase clearly with the words numbered, using permanent ink on card, or a [template](create a template people can print) //ToDo
@@ -96,6 +107,7 @@ By storing the recovery-phrase written down on paper in your own home you have p
 - For small amounts (less than a months salary)
 - When you are setting up a new wallet at home
 
+<br>
 
 ## Level 2 - single offline metal backup
 
@@ -104,7 +116,11 @@ By storing the recovery-phrase on metal in your own home you have protected agai
 The best metal backup solutions are resistant to most physical damage, including fire, acid and high pressure.
 
 
-[Illustration: Device with wallet + offline metal recovery-phrase]
+{% include image.html
+   image = "/assets/images/guide/foundations/backups/metalbackup.png"
+   retina = "/assets/images/guide/foundations/backups/metalbackup@2x.png"
+   alt-text = "Metal backup"
+%}
 
 
 **Do** 
@@ -118,6 +134,7 @@ The best metal backup solutions are resistant to most physical damage, including
 **Suitable for**
 - Amounts above your monthly salary, but less than half your annual salary
 
+<br>
 
 ## Level 3 - single offline backup with discovery protection
 The previous offline backup levels have one flaw in common. If they are discovered by a bad actor, they can steal your funds.
@@ -130,7 +147,11 @@ If a bad actor discovers the recovery-phrase, they will find an empty wallet as 
 
 Adding the pass-phrase will generate a different wallet from the recovery-phrase on its own. It is therefore best to add it when first creating the wallet, and before storing any bitcoin in its addresses.
 
-[Illustration: ]
+{% include image.html
+   image = "/assets/images/guide/foundations/backups/offline-discoveryprotection.png"
+   retina = "/assets/images/guide/foundations/backups/offline-discoveryprotection@2x.png"
+   alt-text = "Offline backup with discovery protection"
+%}
 
 
 **Do** 
@@ -149,6 +170,7 @@ Adding the pass-phrase will generate a different wallet from the recovery-phrase
 **Alternative**
 Set up a hardware wallet from the recovery and pass-phrase that uses a PIN to protect usage. The PIN now becomes the protection against theft on discovery and should be saved somewhere safe just like the pass-phrase
 
+<br>
 
 ## Level 4 - multiple offline backups with discovery protection in more than one location
 One remaining flaw with the previous offline backup levels is that severe damage to the one location where they are stored, could in the worst case scenario lead to the backup not being readable. This could be a fire, flood, earthquake or similar, all more or less likely depending on where you live.
@@ -157,7 +179,11 @@ To protect against such a *catastrophic event* we can create multiple backups, a
 
 As the risk of discovery increases with the multiplying backups, best practice at this level would be to maintain the protection against theft on discovery like in level 3 for all the additional backups. This could again be by using a pass-phrase, a duplicate hardware wallet with a PIN, or a mix. 
 
-[Illustration: ]
+{% include image.html
+   image = "/assets/images/guide/foundations/backups/multiple-discoveryprotection.png"
+   retina = "/assets/images/guide/foundations/backups/multiple-discoveryprotection@2x.png"
+   alt-text = "Multiple offline backups with discovery protection"
+%}
 
 **Do** 
 - Document your setup well for next-of-kin now that complexity has increased
@@ -169,13 +195,19 @@ As the risk of discovery increases with the multiplying backups, best practice a
 - Large amounts
 - In locations where catastrophic events are common, or likely to cause severe damage
 
+<br>
+
 ## Level 5 - multi-continental offline backups with discovery protection
 The previous level should offer protection against all but very large catastrophic events. If we did want to mitigate against even larger events, like countrywide or continental destruction, further distribution of backups would be necessary.
 
 A recommended setup at this level could include offline metal backups with discovery protection stored in safe-deposit boxes on two or more continents. With the extra word being treated with equal care, backed up in an encrypted password manager AND one or more physical locations on the same continents, but separate from the metal backups.
 
 
-[Illustration: Device with wallet + 2x offline metal recovery-phrase + 2x pass-phrase on different continents]
+{% include image.html
+   image = "/assets/images/guide/foundations/backups/multi-continental.png"
+   retina = "/assets/images/guide/foundations/backups/multi-continental@2x.png"
+   alt-text = "Multiple offline backups with discovery protection"
+%}
 
 
 **Do** 
@@ -190,4 +222,25 @@ A recommended setup at this level could include offline metal backups with disco
 
 **Alternatives** 
 At this level, one can imagine many alternative solutions that could provide similar levels of protection, including multiple distributed hardware wallets with the same recovery-phrase, or multi-sig setups. For very large amounts, get expert advice from a specialist.
+
+<br>
+
+# Inheritance instructions
+For any backup setup, sufficient information and understandable instructions for recovering the wallet should be available to next-of-kin.  
+
+Even though it might feel uncomfortable (or unnecessary if you are young and single), it is never too early to document your wallets. If you don’t there is a very high chance that none of the funds will be available to next-of-kin. 
+
+At a minimum, document each wallet with a given name (Bob’s Bitcoin wallet 1), how to recover it, when it was created and what application was used to create the wallet. Ideally this document has all the instructions required to recover the wallet, but not the information itself (*recovery-phrase*, *pass-phrase* etc.) or it might expose you to theft on discovery risks.
+
+**Do**
+- Make next-of-kin aware of the existence of any wallets
+- Explain clearly how to recover the setup, and how to access the required information
+
+
+**Don’t**
+- Store any required information ONLY in locations that will not be accessible to next-of-kin (password managers, single user accounts etc.)
+
+
+**Suitable for**
+- Any amount
 
