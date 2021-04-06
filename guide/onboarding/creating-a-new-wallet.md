@@ -17,7 +17,7 @@ Instead, a bitcoin wallet contains the "private keys" to your bitcoin, the bitco
 
 There are a few different types of wallets that let you send, receive, and store bitcoin.
 
-{% include tip-open.html %}
+{% include tip-open.html title="Tip: Break onboarding up" %}
 
 The wallet creation process is an excellent place to break things up into different activities, events, and tasks. For example, you might want to dedicate multiple screens to generate a recovery phrase and explain why it is essential.
 
