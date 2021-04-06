@@ -558,6 +558,26 @@ Most bitcoin products should use HD Wallets with Native Segwit addresses (unless
 
 {% include rec-close.html %}
 
+### Alert
+
+For highlighting moments when we think there is a particular approach or solution that the reader should strongly avoid.
+
+{% raw %}
+```liquid
+{% include alert-open.html title="Alert title" %}
+
+Most bitcoin products should use HD Wallets with Native Segwit addresses (unless focusing on maximum backwards compatibility).
+
+{% include alert-close.html %}
+```
+{% endraw %}
+
+{% include alert-open.html %}
+
+Most bitcoin products should use HD Wallets with Native Segwit addresses (unless focusing on maximum backwards compatibility).
+
+{% include alert-close.html %}
+
 ### Tips
 
 For additional information that is useful, but does not fit into the main flow of the content. You can also add in a custom title for your tip.

@@ -32,7 +32,8 @@ article.guide {
   }
 
   .tip,
-  .recommendation {
+  .recommendation,
+  .alert {
     margin-top: $spacing-unit;
     padding: 25px 25px 20px 25px;
     box-sizing: border-box;
@@ -81,6 +82,16 @@ article.guide {
     h6 {
       svg {
         background-color: $bitcoin-yellow;
+      }
+    }
+  }
+
+  .alert {
+    background-color: rgba($red, 0.1);
+
+    h6 {
+      svg {
+        background-color: $red;
       }
     }
   }
