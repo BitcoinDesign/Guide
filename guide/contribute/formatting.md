@@ -560,19 +560,19 @@ Most bitcoin products should use HD Wallets with Native Segwit addresses (unless
 
 ### Tips
 
-For additional information that is useful, but does not fit into the main flow of the content.
+For additional information that is useful, but does not fit into the main flow of the content. You can also add in a custom title for your tip.
 
 {% raw %}
 ```liquid
-{% include fact-pros.html %}
+{% include tip-open.html title="Tips title" %}
 
 Sed in lacus vitae turpis lobortis ultrices. Aenean hendrerit nec elit in sagittis. Nulla mi ante, luctus vitae tincidunt ut, rhoncus ac ex. Morbi sit amet mauris est.
 
-{% include fact-close.html %}
+{% include tip-close.html %}
 ```
 {% endraw %}
 
-{% include tip-open.html %}
+{% include tip-open.html title="Tips title" %}
 
 Sed in lacus vitae turpis lobortis ultrices. Aenean hendrerit nec elit in sagittis. Nulla mi ante, luctus vitae tincidunt ut, rhoncus ac ex. Morbi sit amet mauris est.
 
