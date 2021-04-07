@@ -38,6 +38,7 @@ The design source file is a public Figma community file you can find [here](http
 - [YouTube videos](#youtube-video-embed)
 - [Prototypes](#prototypes)
 - [Recommendations](#recommendations)
+- [Alert](#alert)
 - [Tips](#tips)
 - [Facts](#facts)
 - [Footnotes](#footnotes)
@@ -560,7 +561,7 @@ Most bitcoin products should use HD Wallets with Native Segwit addresses (unless
 
 ### Alert
 
-For highlighting moments when we think there is a particular approach or solution that the reader should strongly avoid.
+For highlighting moments when we think there is something to strongly avoid.
 
 {% raw %}
 ```liquid
@@ -568,11 +569,11 @@ For highlighting moments when we think there is a particular approach or solutio
 
 Most bitcoin products should use HD Wallets with Native Segwit addresses (unless focusing on maximum backwards compatibility).
 
-{% include alert-close.html %}
+{% include alert-close.html  %}
 ```
 {% endraw %}
 
-{% include alert-open.html %}
+{% include alert-open.html title="Alert title" %}
 
 Most bitcoin products should use HD Wallets with Native Segwit addresses (unless focusing on maximum backwards compatibility).
 
