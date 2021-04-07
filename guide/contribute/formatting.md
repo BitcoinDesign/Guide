@@ -76,12 +76,19 @@ There should be whitespace between paragraphs.
 ###### h6 header
 
 ### Blockquote
-
-```markdown
-> This is a blockquote text.
+{% raw %}
+```liquid
+{% include blockquote.html
+   quote="Users reported that they often felt like they lacked guidance and understanding during wallet setup"
+   attribution="As researched by Eskandari et al "
+%}
 ```
+{% endraw %}
 
-> This is a blockquote text.
+{% include blockquote.html
+   quote="Users reported that they often felt like they lacked guidance and understanding during wallet setup"
+   attribution="As researched by [Eskandari et al](https://arxiv.org/pdf/1802.04351.pdf)"
+%}
 
 ### Links
 
