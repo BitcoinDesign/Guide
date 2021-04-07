@@ -540,7 +540,7 @@ Ensure that your images provide a good overview of the prototype content, so use
 
 ### Tips & recommendations
 
-For additional information that is useful, but does not fit into the main flow of the content. This component has two presets, bug can also be customized. Here are the presets.
+For additional information that is useful, but does not fit into the main flow of the content. This component has two presets, but can also be customized. Here are the presets:
 
 #### Tips
 
