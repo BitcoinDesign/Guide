@@ -49,6 +49,34 @@ Within your onboarding process, be clear about what it means to have a non-custo
 
 While this may sound daunting to first-time users, it’s crucial that these caveats are not hidden. Doing so may severely compromise the safety of their funds, as their default assumptions and behaviors could potentially mimic how they typically use centralized applications (for example, feeling like it is OK if they forget their account information because they can contact customer support to help them recover it). According to a study conducted by Ekandari et al about the usability of cryptocurrency wallets, it became clear that users struggled greatly with technical terminology and feeling as though they had a lack of guidance during wallet setup. By walking users through a short set of carousels that clearly frame these Bitcoin-specific features, users will feel well-equipped to confidently navigate and use your wallet.
 
-[Prototype](https://www.figma.com/proto/oLJlzjXqgoU7efgXJM8FlK/Onboarding-Prototypes?node-id=1%3A4&viewport=125%2C332%2C0.4993551969528198&scaling=min-zoom)
+<div class="image-slide-gallery">
 
-This prototype exhibits the typical first screen that users are shown after downloading a Bitcoin wallet, followed by an outline of suggested informational carousels that explicitly lay out/guide users on the unique features of non-custodial wallets to make sure they understand these caveats. These screens suggest talking about ownership of their “account”, explicitly stating the recovery mechanism that the respective wallet uses, and security measures that they should take to protect their wallet.
+{% include picture.html
+   image = "/assets/images/guide/onboarding/first-onboarding-screen.jpg"
+   retina = "/assets/images/guide/onboarding/first-onboarding-screen@2x.jpg"
+   alt-text = "First onboarding screen"
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/onboarding/first-onboarding-screen.jpg"
+   retina = "/assets/images/guide/onboarding/first-onboarding-screen@2x.jpg"
+   alt-text = "First onboarding screen"
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/onboarding/first-onboarding-screen.jpg"
+   retina = "/assets/images/guide/onboarding/first-onboarding-screen@2x.jpg"
+   alt-text = "First onboarding screen"
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/onboarding/first-onboarding-screen.jpg"
+   retina = "/assets/images/guide/onboarding/first-onboarding-screen@2x.jpg"
+   alt-text = "First onboarding screen"
+%}
+
+</div>
+
+*This prototype exhibits the typical first screen that users are shown after downloading a Bitcoin wallet, followed by an outline of suggested informational carousels that explicitly lay out/guide users on the unique features of non-custodial wallets to make sure they understand these caveats. These screens suggest talking about ownership of their “account”, explicitly stating the recovery mechanism that the respective wallet uses, and security measures that they should take to protect their wallet.*
