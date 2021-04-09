@@ -63,6 +63,56 @@ article.guide {
     p {
       margin: 10px 0 0 0;
     }
+
+    &.-red {
+      background-color: rgba($red, 0.1);
+
+      h6 {
+        svg {
+          background-color: $red;
+        }
+      }
+    }
+
+    &.-green {
+      background-color: rgba($green, 0.1);
+
+      h6 {
+        svg {
+          background-color: $green;
+        }
+      }
+    }
+
+    &.-blue {
+      background-color: rgba($blue, 0.1);
+
+      h6 {
+        svg {
+          background-color: $blue;
+        }
+      }
+    }
+
+    &.-orange {
+      background-color: rgba($bitcoin-yellow, 0.1);
+
+      h6 {
+        svg {
+          background-color: $bitcoin-yellow;
+        }
+      }
+    }
+
+    &.-yellow {
+      background-color: rgba($yellow, 0.1);
+
+      h6 {
+        svg {
+          background-color: $yellow;
+        }
+      }
+    }
   }
 
   .tip {
