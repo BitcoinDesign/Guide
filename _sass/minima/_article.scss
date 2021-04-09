@@ -543,6 +543,98 @@ article.guide {
   }
 }
 
+dl {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+
+  dt,
+  dd {
+    display: flex;
+    padding: 20px 30px;
+    background-color: rgba($blue, 0.1);
+
+    p {
+      margin: 0;
+    }
+
+    &.-green {
+      background-color: rgba($green, 0.1);
+    }
+
+    &.-red {
+      background-color: rgba($red, 0.1);
+    }
+
+    &.-blue {
+      background-color: rgba($blue, 0.1);
+    }
+
+    &.-orange {
+      background-color: rgba($bitcoin-yellow, 0.1);
+    }
+
+    &.-yellow {
+      background-color: rgba($yellow, 0.1);
+    }
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  @include media-query(small) {
+    dt,
+    dd,
+    .icon {
+      flex-basis: 100%;
+    }
+
+    dd {
+      & + dt {
+        margin-top: 20px;
+      }
+    }
+
+    .icon {
+      height: 60px;
+
+      svg {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  @include media-query(medium-up) {
+    dt,
+    dd {
+      flex-basis: 30%;
+      flex-grow: 1;
+      margin-top: 20px;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+
+    .icon {
+      width: 60px;
+      margin-top: 20px;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
 .footnotes {
   padding: 30px;
   font-size: 0.8rem;
