@@ -60,21 +60,21 @@ While this may sound daunting to first-time users, it’s crucial that these cav
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/first-onboarding-screen.png"
-   retina = "/assets/images/guide/onboarding/first-onboarding-screen@2x.png"
-   alt-text = "First onboarding screen"
+   image = "/assets/images/guide/onboarding/second-onboarding-screen.png"
+   retina = "/assets/images/guide/onboarding/second-onboarding-screen@2x.png"
+   alt-text = "Second onboarding screen"
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/first-onboarding-screen.png"
-   retina = "/assets/images/guide/onboarding/first-onboarding-screen@2x.png"
-   alt-text = "First onboarding screen"
+   image = "/assets/images/guide/onboarding/third-onboarding-screen.png"
+   retina = "/assets/images/guide/onboarding/third-onboarding-screen@2x.png"
+   alt-text = "Third onboarding screen"
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/first-onboarding-screen.png"
-   retina = "/assets/images/guide/onboarding/first-onboarding-screen@2x.png"
-   alt-text = "First onboarding screen"
+   image = "/assets/images/guide/onboarding/fourth-onboarding-screen.png"
+   retina = "/assets/images/guide/onboarding/fourth-onboarding-screen@2x.png"
+   alt-text = "Fourth onboarding screen"
 %}
 
 </div>
