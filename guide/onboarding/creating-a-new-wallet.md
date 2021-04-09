@@ -52,28 +52,28 @@ While this may sound daunting to first-time users, it’s crucial that these cav
 <div class="image-slide-gallery">
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/first-onboarding-screen.jpg"
-   retina = "/assets/images/guide/onboarding/first-onboarding-screen@2x.jpg"
+   image = "/assets/images/guide/onboarding/first-onboarding-screen.png"
+   retina = "/assets/images/guide/onboarding/first-onboarding-screen@2x.png"
    alt-text = "First onboarding screen"
    width = 250
    height = 541
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/first-onboarding-screen.jpg"
-   retina = "/assets/images/guide/onboarding/first-onboarding-screen@2x.jpg"
+   image = "/assets/images/guide/onboarding/first-onboarding-screen.png"
+   retina = "/assets/images/guide/onboarding/first-onboarding-screen@2x.png"
    alt-text = "First onboarding screen"
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/first-onboarding-screen.jpg"
-   retina = "/assets/images/guide/onboarding/first-onboarding-screen@2x.jpg"
+   image = "/assets/images/guide/onboarding/first-onboarding-screen.png"
+   retina = "/assets/images/guide/onboarding/first-onboarding-screen@2x.png"
    alt-text = "First onboarding screen"
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/first-onboarding-screen.jpg"
-   retina = "/assets/images/guide/onboarding/first-onboarding-screen@2x.jpg"
+   image = "/assets/images/guide/onboarding/first-onboarding-screen.png"
+   retina = "/assets/images/guide/onboarding/first-onboarding-screen@2x.png"
    alt-text = "First onboarding screen"
 %}
 
