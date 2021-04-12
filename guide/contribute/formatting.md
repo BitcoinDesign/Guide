@@ -77,14 +77,14 @@ There should be whitespace between paragraphs.
 
 ### Blockquote
 ```markdown
-> Quote here.
+> The details are not the details. They make the design.
 >
-> -- <cite>Benjamin Franklin</cite>
+> <cite>By <a href="#">Charles Eames</a></cite>
 ```
 
-> Quote here.
+> The details are not the details. They make the design.
 >
-> -- <cite>Benjamin Franklin</cite>
+> <cite>By <a href="#">Charles Eames</a></cite>
 
 ### Links
 

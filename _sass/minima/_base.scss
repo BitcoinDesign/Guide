@@ -181,13 +181,15 @@ blockquote {
   border: none;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px;
   box-sizing: border-box;
-  font-size: 28px;
-  color: #474747;
+
+  p {
+
+  }
 
   cite {
-    font-size: 22px;
+    display: inline-block;
+    @include responsive('font-size', 16, 22);
     font-style: normal;
   }
 
@@ -202,6 +204,13 @@ blockquote {
   i, em {
     font-style: normal;
   }
+}
+
+blockquote,
+blockquote > p {
+  @include responsive('font-size', 22, 28);
+  line-height: 1.4;
+  color: #474747;
 }
 
 
