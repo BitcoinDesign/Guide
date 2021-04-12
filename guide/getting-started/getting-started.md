@@ -34,8 +34,6 @@ Illustration sources
 
 # Getting started
 
----
-
 **[What makes bitcoin unique]({{ '/guide/getting-started/why-bitcoin-is-unique/' | relative_url }})**
 
 Familiarize yourself with some of the most significant concepts that bitcoin designers need to know.
