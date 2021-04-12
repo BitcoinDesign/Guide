@@ -175,20 +175,42 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: $brand-color;
-  border-left: 4px solid $border-color-01;
-  padding-left: $spacing-unit / 2;
-  @include relative-font-size(1.125);
-  font-style: italic;
+  background: #f8f8f8;
+  padding: 24px;
+  text-align: center;
+  border: none;
+  font-style: normal;
+  font-weight: 400;
   box-sizing: border-box;
+
+  p {
+
+  }
+
+  cite {
+    display: inline-block;
+    @include responsive('font-size', 16, 22);
+    font-style: normal;
+  }
 
   > :last-child {
     margin-bottom: 0;
+
+    &::first-letter {
+      font-size: 0;
+    }
   }
 
   i, em {
     font-style: normal;
   }
+}
+
+blockquote,
+blockquote > p {
+  @include responsive('font-size', 22, 28);
+  line-height: 1.4;
+  color: #474747;
 }
 
 
