@@ -27,12 +27,12 @@ The wallet creation process is an excellent place to break things up into differ
 
 <div class="center" markdown="1">
 
-{% include box-with-image.html
+{% include image.html
    image = "/assets/images/guide/onboarding/intro-screen.jpg"
    retina = "/assets/images/guide/onboarding/intro-screen@2x.jpg"
    alt-text = "Onboarding intro screen"
-   layout = "float-left-desktop"
-   description = "From the [Onboarding Prototype](https://www.figma.com/proto/oLJlzjXqgoU7efgXJM8FlK/Onboarding-Prototypes?node-id=1%3A4&viewport=332%2C345%2C0.5653080344200134&scaling=min-zoom&page-id=0%3A1)"
+   layout = "float-left-desktop -background -shadow"
+   caption = "From the [Onboarding Prototype](https://www.figma.com/proto/oLJlzjXqgoU7efgXJM8FlK/Onboarding-Prototypes?node-id=1%3A4&viewport=332%2C345%2C0.5653080344200134&scaling=min-zoom&page-id=0%3A1)"
 %}
 
 After downloading a wallet application, users are typically presented with the option of either creating a new wallet or restoring an existing one. Obviously, first-time users will be going through the flow of creating a new wallet.
@@ -49,14 +49,16 @@ Within your onboarding process, be clear about what it means to have a non-custo
 
 While this may sound daunting to first-time users, it’s crucial that these caveats are not hidden. Doing so may severely compromise the safety of their funds, as their default assumptions and behaviors could potentially mimic how they typically use centralized applications (for example, feeling like it is OK if they forget their account information because they can contact customer support to help them recover it). According to a study conducted by Ekandari et al about the usability of cryptocurrency wallets, it became clear that users struggled greatly with technical terminology and feeling as though they had a lack of guidance during wallet setup. By walking users through a short set of carousels that clearly frame these Bitcoin-specific features, users will feel well-equipped to confidently navigate and use your wallet.
 
+> Users reported that they often felt like they lacked guidance and understanding during wallet setup
+>
+> <cite>As researched by <a href="https://arxiv.org/pdf/1802.04351.pdf">Eskandari et al</a></cite>
+
 <div class="image-slide-gallery">
 
 {% include picture.html
    image = "/assets/images/guide/onboarding/first-onboarding-screen.png"
    retina = "/assets/images/guide/onboarding/first-onboarding-screen@2x.png"
    alt-text = "First onboarding screen"
-   width = 250
-   height = 541
 %}
 
 {% include picture.html
