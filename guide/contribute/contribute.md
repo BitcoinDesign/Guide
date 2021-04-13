@@ -24,7 +24,6 @@ image: https://bitcoin.design/assets/images/guide/contribute/contribute-preview.
 
 Join our open community and help us improve the Bitcoin Design Guide. Here’s where you can get involved and contribute.
 
-
 ---
 
 **[Slack channel]({{ site.slack_invite_url }})**
@@ -66,7 +65,7 @@ Creating visuals for the Bitcoin Design Guide? We recommend following these best
 
 **[Formatting]({{ '/guide/contribute/formatting/' | relative_url }})**
 
-Layout and formatting recommendations from headers and blockquotes to images and embeds.
+Layout and formatting options from headers and blockquotes to images and embeds.
 
 ---
 
