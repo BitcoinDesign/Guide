@@ -74,14 +74,20 @@ With most implementations so far, the location will be the keychain or a user-sp
 
 This makes the backup accessible by the user on a new device, should they lose the original, but only accessible by someone that can log into the user’s Apple or Google account.
 
-#### Pros
+{% include fact/pros.html %}
+
 - Low onboarding friction
 - Low risk of self-inflicted loss due to the automatic nature
 
-#### Cons
+{% include fact/close.html %}
+
+{% include fact/cons.html %}
+
 - Private key in cloud storage increases risk of malicious third party access
 - User needs to trust their OS and cloud storage provider
 - Unless the backup includes the recovery phrase users will not be able to export their wallet to another product
+
+{% include fact/close.html %}
 
 ### Best practice
 
@@ -130,13 +136,19 @@ This can be an effective way to reduce the risk of loss from theft if the backup
 
 A full guide to manual backup best practices for users is out of scope for this chapter but the [Do's and Dont's](https://blog.keys.casa/the-dos-and-donts-of-bitcoin-key-management/)  of Bitcoin key management is a good starting point.
 
-#### Pros
+{% include fact/pros.html %}
+
 - Manual backups done well can provide very high security
 - Good interoperability
 
-#### Cons
+{% include fact/close.html %}
+
+{% include fact/cons.html %}
+
 - Requires significant effort from users to achieve safe backups
 - High onboarding friction
+
+{% include fact/close.html %}
 
 ### Best practice
 
@@ -189,14 +201,20 @@ The external device can generate and store a keypair offline. Therefore, the pri
 
 When a transaction needs to be signed, the software submits a partially signed bitcoin transaction (PSBT, defined in [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki)) to the device. The user confirms on the device and the PSBT state of the transaction returned to the software wallet application is now fully signed and can be transmitted to the blockchain. This process can also happen fully air gapped by using memory cards instead of cables or wireless connections, to keep the device offline at all times.
 
-#### Pros
+{% include fact/pros.html %}
+
 - Removes private key from online devices
 - Can provide very high security if used correctly
 
-#### Cons
+{% include fact/close.html %}
+
+{% include fact/cons.html %}
+
 - Purchase of specialized hardware required
 - Requires further effort and knowledge to setup correctly
 - Still requires a good manual backup for redundancy
+
+{% include fact/close.html %}
 
 ### Best practice
 
@@ -245,14 +263,20 @@ Some benefits over a multikey setup include greater privacy, as a transaction us
 ### How it works
 A single private key is split into n key-shares that are distributed to several parties, devices or locations. When signing a transaction the required number of shares need to be coordinated into one valid signature. This relies on a cryptographic algorithm called [Shamir's Secret Sharing](https://en.wikipedia.org/wiki/Shamir's_Secret_Sharing) after its creator.
 
-#### Pros
+{% include fact/pros.html %}
+
 - Can provide higher resistance to loss from theft
 - Transactions look identical and have same cost as single key wallets on chain
 
-#### Cons
+{% include fact/close.html %}
+
+{% include fact/cons.html %}
+
 - Requires precise coordination of key-shares when signing
 - Few advantages over multi-key setups with Schnorr signatures
 - Individual product implementations not interoperable
+
+{% include fact/close.html %}
 
 ### Best practice
 
@@ -295,11 +319,17 @@ Multi-key schemes can raise the security, since anyone needs access to more than
 ### How it works
 A software wallet application or coordination software initiates a multi-sig wallet, choosing the number of total keys, and the number required to sign transactions. The user then adds private keys from other wallets generated elsewhere to the multisig after which the software wallet can complete the creation process. For any future transaction from the multi-sig wallet the required amount of co-signers need to sign (using Partially Signed Bitcoin Transactions - PSBT from [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki)) before any transaction is valid.
 
-#### Pros
+{% include fact/pros.html %}
+
 - Significantly increases security against theft
 
-#### Cons
+{% include fact/close.html %}
+
+{% include fact/cons.html %}
+
 - Adds complexity and op-sec burden for multiple private keys
+
+{% include fact/close.html %}
 
 ### Best practice
 

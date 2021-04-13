@@ -37,8 +37,7 @@ The design source file is a public Figma community file you can find [here](http
 - [Code](#code-embedding)
 - [YouTube videos](#youtube-video-embed)
 - [Prototypes](#prototypes)
-- [Recommendations](#recommendations)
-- [Tips](#tips)
+- [Tips & recommendations](#tips--recommendations)
 - [Facts](#facts)
 - [Footnotes](#footnotes)
 
@@ -76,12 +75,15 @@ There should be whitespace between paragraphs.
 ###### h6 header
 
 ### Blockquote
-
 ```markdown
-> This is a blockquote text.
+> The details are not the details. They make the design.
+>
+> <cite>By <a href="#">Charles Eames</a></cite>
 ```
 
-> This is a blockquote text.
+> The details are not the details. They make the design.
+>
+> <cite>By <a href="#">Charles Eames</a></cite>
 
 ### Links
 
@@ -417,30 +419,81 @@ Breaking down content into lists is useful for readability. Here are examples of
 - [ ] Hello, this is another TODO item
 - [x] Goodbye, this item is done
 
-#### Definition with HTML syntax.
+#### Definition list
 
-```markdown
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+Typically used for lists of terms and descriptions.
+
+{% raw %}
+```liquid
+{% include dl/open.html %}
+
+{% include dl/item-open.html color="red" %}
+
+“You will be shown your recovery phrase on the next screen”
+
+{% include dl/item-middle.html color="red" %}
+
+Prepares a user for what they are about to **see**.
+
+{% include dl/item-close.html %}
+
+{% include dl/close.html %}
 ```
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+{% endraw %}
+
+{% include dl/open.html %}
+
+{% include dl/item-open.html color="red" %}
+
+“You will be shown your recovery phrase on the next screen”
+
+{% include dl/item-middle.html color="red" %}
+
+Prepares a user for what they are about to **see**.
+
+{% include dl/item-close.html %}
+
+{% include dl/item-open.html color="orange" %}
+
+“Your recovery phrase is a group of 12 random words”
+
+{% include dl/item-middle.html color="orange" %}
+
+Explains to users what a recovery phrase **is**.
+
+{% include dl/item-close.html %}
+
+{% include dl/item-open.html color="yellow" %}
+
+“Your recovery phrase is the only way to acess your wallet if your phone is lost or stolen.”
+
+{% include dl/item-middle.html color="yellow" %}
+
+Explains to users what the **purpose** of a recovery phrase is and why it’s important.
+
+{% include dl/item-close.html %}
+
+{% include dl/item-open.html color="green" %}
+
+“If you lose your recovery phrase, you will no longer be able to access your wallet. Never share your recovery phrase with anyone. Anyone who has it can access your funds.”
+
+{% include dl/item-middle.html color="green" %}
+
+Explains to users what the **consequences** of their behavior is, and how it can affect the safety of their funds.
+
+{% include dl/item-close.html %}
+
+{% include dl/item-open.html %}
+
+“We recommend writing these words down in order on a piece of paper and storing it somewhere safe that you will remember.”
+
+{% include dl/item-middle.html %}
+
+Guides and gives users actionable items on how to safely **handle** their recovery phrase.
+
+{% include dl/item-close.html %}
+
+{% include dl/close.html %}
 
 ### Tables
 
@@ -538,102 +591,130 @@ Ensure that your images provide a good overview of the prototype content, so use
    height = 500
 %}
 
-### Recommendations
+### Tips & recommendations
+
+For additional information that is useful, but does not fit into the main flow of the content. This component has two presets, but can also be customized. Here are the presets:
+
+#### Tips
+
+{% raw %}
+```liquid
+{% include tip/tip.html %}
+
+Sed in lacus vitae turpis lobortis ultrices. Aenean hendrerit nec elit in sagittis. Nulla mi ante, luctus vitae tincidunt ut, rhoncus ac ex. Morbi sit amet mauris est.
+
+{% include tip/close.html %}
+```
+{% endraw %}
+
+{% include tip/tip.html %}
+
+Sed in lacus vitae turpis lobortis ultrices. Aenean hendrerit nec elit in sagittis. Nulla mi ante, luctus vitae tincidunt ut, rhoncus ac ex. Morbi sit amet mauris est.
+
+{% include tip/close.html %}
+
+#### Recommendations
 
 For highlighting moments when we think there is a particular approach or solution that the reader should strongly connsider following.
 
 {% raw %}
 ```liquid
-{% include rec-open.html %}
+{% include tip/recommendation.html %}
 
 Most bitcoin products should use HD Wallets with Native Segwit addresses (unless focusing on maximum backwards compatibility).
 
-{% include rec-close.html %}
+{% include tip/close.html %}
 ```
 {% endraw %}
 
-{% include rec-open.html %}
+{% include tip/recommendation.html %}
 
 Most bitcoin products should use HD Wallets with Native Segwit addresses (unless focusing on maximum backwards compatibility).
 
-{% include rec-close.html %}
+{% include tip/close.html %}
 
-### Tips
+#### Custom use
 
-For additional information that is useful, but does not fit into the main flow of the content.
+You can also customize which color, title and icon the component should display with the following template. Available colors are red, orange, yellow, green, and blue.
 
 {% raw %}
 ```liquid
-{% include fact-pros.html %}
+{% include tip/open.html color="green" icon="check" label="My title" %}
 
-Sed in lacus vitae turpis lobortis ultrices. Aenean hendrerit nec elit in sagittis. Nulla mi ante, luctus vitae tincidunt ut, rhoncus ac ex. Morbi sit amet mauris est.
+Most bitcoin products should use HD Wallets with Native Segwit addresses (unless focusing on maximum backwards compatibility).
 
-{% include fact-close.html %}
+{% include tip/close.html %}
 ```
 {% endraw %}
 
-{% include tip-open.html %}
+{% include tip/open.html color="green" icon="check" label="Do this" %}
 
-Sed in lacus vitae turpis lobortis ultrices. Aenean hendrerit nec elit in sagittis. Nulla mi ante, luctus vitae tincidunt ut, rhoncus ac ex. Morbi sit amet mauris est.
+Most bitcoin products should use HD Wallets with Native Segwit addresses (unless focusing on maximum backwards compatibility).
 
-{% include tip-close.html %}
+{% include tip/close.html %}
+
+{% include tip/open.html color="red" icon="forbid" label="Don't do this" %}
+
+Most bitcoin products should use HD Wallets with Native Segwit addresses (unless focusing on maximum backwards compatibility).
+
+{% include tip/close.html %}
 
 ### Facts
 
 A table that provides specific descriptions based on standardized properties. Variations available are:
 
-- fact-pros.html
-- fact-cons.html
-- fact-when-to-use.html
-- fact-when-not-to-use.html
-- fact-variations.html
-- fact-products.html
+- fact/pros.html
+- fact/cons.html
+- fact/dos.html
+- fact/donts.html
+- fact/variations.html
+- fact/products.html
 
 {% raw %}
 ```liquid
-{% include fact-pros.html %}
+{% include fact/pros.html %}
 
 Can provide higher resistance to loss from theft and negligence.
 
-{% include fact-close.html %}
+{% include fact/close.html %}
 ```
 {% endraw %}
 
-{% include fact-pros.html %}
+{% include fact/pros.html %}
 
 Can provide higher resistance to loss from theft and negligence.
 
-{% include fact-close.html %}
+{% include fact/close.html %}
 
-{% include fact-cons.html %}
+{% include fact/cons.html %}
 
 Require precise coordination of key-shares when signing, few advantages over multi-key setups with Schnorr signatures, individual implementations not interoperable.
 
-{% include fact-close.html %}
+{% include fact/close.html %}
 
-{% include fact-when-to-use.html %}
+{% include fact/dos.html %}
 
 When target audience is knowledgeable and risk of theft is higher than negligance.
 
-{% include fact-close.html %}
+{% include fact/close.html %}
 
-{% include fact-when-not-to-use.html %}
+{% include fact/donts.html %}
 
 When Schnorr signatures are available enabling multi-key setups.
 
-{% include fact-close.html %}
+{% include fact/close.html %}
 
-{% include fact-variations.html %}
+{% include fact/variations.html %}
 
 Number of signatures required, location and distribution of pieces, signing procedure.
 
-{% include fact-close.html %}
+{% include fact/close.html %}
 
-{% include fact-products.html %}
+{% include fact/products.html %}
 
 [Bitcoin wallet](https://bitcoin.design/), [BTC wallet](https://bitcoin.design/), [BeeTeeCee Wallet](https://bitcoin.design/)
 
-{% include fact-close.html %}
+{% include fact/close.html %}
 
 ### Footnotes
 
