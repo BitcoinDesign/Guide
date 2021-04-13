@@ -75,12 +75,15 @@ There should be whitespace between paragraphs.
 ###### h6 header
 
 ### Blockquote
-
 ```markdown
-> This is a blockquote text.
+> The details are not the details. They make the design.
+>
+> <cite>By <a href="#">Charles Eames</a></cite>
 ```
 
-> This is a blockquote text.
+> The details are not the details. They make the design.
+>
+> <cite>By <a href="#">Charles Eames</a></cite>
 
 ### Links
 

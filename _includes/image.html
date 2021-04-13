@@ -1,13 +1,13 @@
 <figure{% if include.layout %} class="-{{ include.layout }}"{% endif %}>
-	<a href="{{ include.link-url }}">
+	{% if include.link-url %}<a href="{{ include.link-url }}">{% endif %}
         <img
-        	src="{{ include.image | relative_url }}" 
+        	src="{{ include.image | relative_url }}"
         	{% if include.retina %} srcset="{{ include.image | relative_url }} 1x, {{ include.retina | relative_url }} 2x"{% endif %}
-        	alt="{{ include.alt-text }}" 
-        	width="{{ include.width }}" 
+        	alt="{{ include.alt-text }}"
+        	width="{{ include.width }}"
         	height="{{ include.height }}"
         	loading="lazy"
     	>
-    </a>
+    {% if include.link-url %}</a>{% endif %}
     {% if include.caption %}<figcaption markdown="1">{{ include.caption | markdownify }}</figcaption>{% endif %}
 </figure>
