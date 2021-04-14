@@ -45,7 +45,7 @@ Once an individual selects “create a new wallet”, it’s typical for beginne
 
 {% include /tip/open.html label="Don’t: Hide the implications of a non-custodial wallet" icon="forbid" color="red" %}
 
-Within your onboarding process, be clear about what it means to have a non-custodial wallet. (and the responsibility that comes along with it). Within your onboarding process, be clear that “account” information cannot be recovered by your respective team.
+Within your onboarding process, be clear about what it means to have a non-custodial wallet. (and the responsibility that comes along with it). Within your onboarding process, be clear that your respective team cannot recover " account” information.
 
 {% include /tip/close.html %}
 
