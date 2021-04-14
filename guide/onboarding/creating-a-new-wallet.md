@@ -32,7 +32,9 @@ The wallet creation process is an excellent place to break things up into differ
 {% include image.html
    image = "/assets/images/guide/onboarding/intro-screen.jpg"
    retina = "/assets/images/guide/onboarding/intro-screen@2x.jpg"
-   alt-text = "Onboarding intro screen"
+   width = 150
+   height = 150
+   alt-text = "Onboarding welcome screen"
    layout = "float-left-desktop -background -shadow"
    caption = "From the [Onboarding Prototype](https://www.figma.com/proto/oLJlzjXqgoU7efgXJM8FlK/Onboarding-Prototypes?node-id=1%3A4&viewport=332%2C345%2C0.5653080344200134&scaling=min-zoom&page-id=0%3A1)"
 %}
