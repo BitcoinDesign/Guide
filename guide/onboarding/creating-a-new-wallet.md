@@ -13,7 +13,9 @@ main_classes: -no-top-padding
 
 First, bitcoin [wallets]({{ 'guide/glossary/#wallet' | relative_url }}) are not analogous to their namesakes. Physical wallets are places to store physical currency, credit cards, IDs, and so on. Bitcoin wallets don't store bitcoin.
 
-Instead, a bitcoin wallet contains the "private keys" to your bitcoin, the bitcoin is located on a network that contains a communally sustained public ledger with a record of everyone's transactions and balances (so think of bitcoin wallets more like keychains). Like regular keys on a keychain, these keys can be copied. For example, if you gave someone a copy of your house keys, they could get into your home. Likewise, if someone has a copy of your private key, they can access your funds. This makes private key management one of the most important considerations of any bitcoin owner.
+Instead, a bitcoin wallet contains the "private keys" to your bitcoin, the bitcoin is located on a network that contains a communally sustained public ledger with a record of everyone's transactions and balances (so think of bitcoin wallets more like keychains).
+
+ Like regular keys on a keychain, these keys can be copied. For example, if you gave someone a copy of your house keys, they could get into your home. Likewise, if someone has a copy of your private key, they can access your funds. This makes [private key management](/guide/private-key-management/introduction/) one of the most important considerations of any bitcoin owner.
 
 There are a few different types of wallets that let you send, receive, and store bitcoin.
 
