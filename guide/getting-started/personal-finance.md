@@ -44,7 +44,7 @@ It still is possible to create simplified mental models that help us better unde
 
 This section uses the traditional personal finance lens to think about what type of bitcoin products we may need. Because of bitcoin's unique properties, we cannot imitate conventional financial products and assume that the same solutions apply. And even if we could, this might be an excellent opportunity to take a fresh look and design new solutions for today's world. Bitcoin is also global by nature, so consider the unique circumstances of your users' lives.
 
-Let's take a look at six different categories of how somebody may want to organize their finances. Note that the following examples always assume that a user wants to keep as much self-custody as reasonable while balancing security and privacy.
+Let's take a look at six different categories of how somebody may want to organize their finances. Note that the following examples always assume that a user wants to keep as much [self-custody](/guide/foundations/principles/#self-custody) as reasonable while balancing [security](/guide/foundations/principles/#security) and [privacy](/guide/foundations/principles/#privacy).
 
 1. Table of contents
 {:toc}
