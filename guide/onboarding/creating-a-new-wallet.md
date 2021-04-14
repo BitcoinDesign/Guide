@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Creating a new a wallet
+title: Creating a new wallet
 description: Steps to take when creating a new wallet
 parent: Onboarding
 nav_order: 2
