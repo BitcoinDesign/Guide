@@ -8,8 +8,7 @@ permalink: /guide/onboarding/creating-a-new-wallet/
 main_classes: -no-top-padding
 ---
 
-
-# What is a bitcoin wallet?
+# Creating a new wallet
 
 First, bitcoin [wallets]({{ 'guide/glossary/#wallet' | relative_url }}) are not analogous to their namesakes. Physical wallets are places to store physical currency, credit cards, IDs, and so on. Bitcoin wallets don't store bitcoin.
 
@@ -24,8 +23,6 @@ There are a few different types of wallets that let you send, receive, and store
 The wallet creation process is an excellent place to break things up into different activities, events, and tasks. For example, you might want to dedicate multiple screens to generate a [recovery phrase](/guide/glossary/#recovery-phrase) and explain why it is essential.
 
 {% include /tip/close.html %}
-
-# Creating a new wallet
 
 <div class="center" markdown="1">
 
