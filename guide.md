@@ -48,7 +48,7 @@ We designed this guide to help anyone navigate those complexities—regardless o
 The Bitcoin Design Guide is divided into the following sections:
 
 - [Getting started]({{ '/guide/getting-started/introduction/' | relative_url }}) provides top-level overviews of common visual language, software, and best practices for design collaboration
-- [Onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}) introduces new users to must know bitcoin terms, products, and features
+- [Onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}) familiarizes designers with the products, features, and terms needed to create better experiences for first time users
 - [Private key management]({{ '/guide/private-key-management/introduction/' | relative_url }}) details the many techniques that can be used to store private keys
 - [Payments]({{ '/guide/payments/' | relative_url }}) covers the complexities encountered when sending and receiving bitcoin
 - [Foundations]({{ '/guide/foundations/' | relative_url }}) highlights principles and other fundamentals designing Bitcoin products
