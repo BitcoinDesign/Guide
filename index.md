@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+permalink: /
 ---
 
 ## We are helping make [bitcoin](https://bitcoin.org) more intuitive and accessible.
@@ -18,4 +19,4 @@ Everyone is welcome to join and participate.
 
 Our first community project, the [Bitcoin Design Guide]({{ '/guide' | relative_url }}) is a free, open-source repository for anyone building non-custodial bitcoin products. The guide will eventually cover consumer wallets, merchant interactions, financial applications, and much more.
 
-If you’d like to help by providing feedback, submitting ideas, or creating content, check out the list of current [issues](https://github.com/BitcoinDesign/Guide/issues) or join us on Slack. 
+If you’d like to help by providing feedback, submitting ideas, or creating content, check out the list of current [issues](https://github.com/BitcoinDesign/Guide/issues) or join us on Slack.
