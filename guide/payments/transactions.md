@@ -10,10 +10,10 @@ image: /assets/images/guide/payments/transactions/tx-preview.jpg
 ---
 
 {% include picture.html
-   image = "/assets/images/guide/payments/transactions/transactions-desktop.png"
-   retina = "/assets/images/guide/payments/transactions/transactions-desktop@2x.png"
-   mobile = "/assets/images/guide/payments/transactions/transactions-mobile.png"
-   mobileRetina = "/assets/images/guide/payments/transactions/transactions-mobile@2x.png"
+   image = "/assets/images/guide/payments/transactions/transactions-desktop.jpg"
+   retina = "/assets/images/guide/payments/transactions/transactions-desktop@2x.jpg"
+   mobile = "/assets/images/guide/payments/transactions/transactions-mobile.jpg"
+   mobileRetina = "/assets/images/guide/payments/transactions/transactions-mobile@2x.jpg"
    alt-text = "Process of transaction being mined, and new payments being made, mixed and sent to multiple other wallets"
    caption = '3D payments and transaction lifecycle illustration by [Alexa Aker](https://alexaaker.com){:target="_blank" rel="nofollow"}'
    width = 1600

@@ -6,7 +6,7 @@ has_children: true
 nav_order: 3
 permalink: /guide/onboarding/introduction/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/onboarding/onboarding.png
+image: https://bitcoin.design/assets/images/guide/onboarding/onboarding-preview.png
 ---
 
 <!--
@@ -19,7 +19,10 @@ scan this page to get an overview of the section and then decide which topics to
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/onboarding.svg"
+   image = "/assets/images/guide/onboarding/onboarding.png"
+   retina = "/assets/images/guide/onboarding/onboarding@2x.png"
+   mobile = "/assets/images/guide/onboarding/onboarding-mobile.png"
+   mobileRetina = "/assets/images/guide/onboarding/onboarding/onboarding-mobile@2x.png"
    alt-text = "Person climbing ladder"
    width = 1600
    height = 600
