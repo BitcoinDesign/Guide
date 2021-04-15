@@ -27,8 +27,8 @@ The wallet creation process is an excellent place to break things up into differ
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/onboarding/intro-screen.jpg"
-   retina = "/assets/images/guide/onboarding/intro-screen@2x.jpg"
+   image = "/assets/images/guide/onboarding/creating-a-new-wallet/onboarding-welcome-screen.jpg"
+   retina = "/assets/images/guide/onboarding/creating-a-new-wallet/onboarding-welcome-screen@2x.jpg"
    width = 150
    height = 150
    alt-text = "Onboarding welcome screen"
@@ -57,27 +57,27 @@ While this may sound daunting to first-time users, these caveats mustn't be hidd
 <div class="image-slide-gallery">
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/first-onboarding-screen.png"
-   retina = "/assets/images/guide/onboarding/first-onboarding-screen@2x.png"
-   alt-text = "First onboarding screen"
+   image = "/assets/images/guide/onboarding/creating-a-new-wallet/first-onboarding-screen.png"
+   retina = "/assets/images/guide/onboarding/creating-a-new-wallet/first-onboarding-screen@2x.png"
+   alt-text = "Onboarding welcome screen"
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/second-onboarding-screen.png"
-   retina = "/assets/images/guide/onboarding/second-onboarding-screen@2x.png"
-   alt-text = "Second onboarding screen"
+   image = "/assets/images/guide/onboarding/creating-a-new-wallet/second-onboarding-screen.png"
+   retina = "/assets/images/guide/onboarding/creating-a-new-wallet/second-onboarding-screen@2x.png"
+   alt-text = "Onboarding talk about ownership screen"
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/third-onboarding-screen.png"
-   retina = "/assets/images/guide/onboarding/third-onboarding-screen@2x.png"
-   alt-text = "Third onboarding screen"
+   image = "/assets/images/guide/onboarding/creating-a-new-wallet/third-onboarding-screen.png"
+   retina = "/assets/images/guide/onboarding/creating-a-new-wallet/third-onboarding-screen@2x.png"
+   alt-text = "Onboarding talk about recovery screen"
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/fourth-onboarding-screen.png"
-   retina = "/assets/images/guide/onboarding/fourth-onboarding-screen@2x.png"
-   alt-text = "Fourth onboarding screen"
+   image = "/assets/images/guide/onboarding/creating-a-new-wallet/fourth-onboarding-screen.png"
+   retina = "/assets/images/guide/onboarding/creating-a-new-wallet/fourth-onboarding-screen@2x.png"
+   alt-text = "Onboarding talk about security screen"
 %}
 
 </div>

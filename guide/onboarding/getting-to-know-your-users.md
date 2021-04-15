@@ -9,10 +9,10 @@ main_classes: -no-top-padding
 ---
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/getting-to-know-your-users.jpeg"
-   retina = "/assets/images/guide/onboarding/getting-to-know-your-users@2x.jpeg"
-   mobile = "/assets/images/guide/onboarding/getting-to-know-your-users-mobile.jpeg"
-   mobileRetina = "/assets/images/guide/onboarding/getting-to-know-your-users-mobile@2x.jpeg"
+   image = "/assets/images/guide/onboarding/getting-to-know-your-users/banner.jpeg"
+   retina = "/assets/images/guide/onboarding/getting-to-know-your-users/banner@2x.jpeg"
+   mobile = "/assets/images/guide/onboarding/getting-to-know-your-users/banner-mobile.jpeg"
+   mobileRetina = "/assets/images/guide/onboarding/getting-to-know-your-users/banner-mobile@2x.jpeg"
    alt-text = "Getting to know your users chapter illustration"
    width = 1600
    height = 600
@@ -64,7 +64,7 @@ Motivators are specific user wants that are driving the user to seek out Bitcoin
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/onboarding/strongest-barrier-battery.svg"
+   image = "/assets/images/guide/onboarding/getting-to-know-your-users/strongest-barrier-battery.svg"
    alt-text = "strongest barrier"
    width = 100
    height = 100
@@ -80,7 +80,7 @@ Motivators are specific user wants that are driving the user to seek out Bitcoin
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/onboarding/neutral-barrier-battery.svg"
+   image = "/assets/images/guide/onboarding/getting-to-know-your-users/neutral-barrier-battery.svg"
    alt-text = "neutral barrier"
    width = 100
    height = 100
@@ -96,7 +96,7 @@ Motivators are specific user wants that are driving the user to seek out Bitcoin
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/onboarding/lowest-barrier-battery.svg"
+   image = "/assets/images/guide/onboarding/getting-to-know-your-users/lowest-barrier-battery.svg"
    alt-text = "neutral barrier"
    width = 100
    height = 100
@@ -115,7 +115,7 @@ Motivators are specific user wants that are driving the user to seek out Bitcoin
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/onboarding/highest-motivator-battery.svg"
+   image = "/assets/images/guide/onboarding/getting-to-know-your-users/highest-motivator-battery.svg"
    alt-text = "neutral barrier"
    width = 100
    height = 100
@@ -131,7 +131,7 @@ Motivators are specific user wants that are driving the user to seek out Bitcoin
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/onboarding/neutral-motivator-battery.svg"
+   image = "/assets/images/guide/onboarding/getting-to-know-your-users/neutral-motivator-battery.svg"
    alt-text = "neutral barrier"
    width = 100
    height = 100
@@ -147,7 +147,7 @@ Motivators are specific user wants that are driving the user to seek out Bitcoin
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/onboarding/lowest-motivator-battery.svg"
+   image = "/assets/images/guide/onboarding/getting-to-know-your-users/lowest-motivator-battery.svg"
    alt-text = "neutral barrier"
    width = 100
    height = 100
