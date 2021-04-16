@@ -29,11 +29,10 @@ The wallet creation process is an excellent place to break things up into differ
 {% include image.html
    image = "/assets/images/guide/onboarding/creating-a-new-wallet/onboarding-welcome-screen.jpg"
    retina = "/assets/images/guide/onboarding/creating-a-new-wallet/onboarding-welcome-screen@2x.jpg"
-   width = 150
-   height = 150
+   width = 250
+   height = 250
    alt-text = "Onboarding welcome screen"
    layout = "float-left-desktop -background -shadow"
-   caption = "From the [Onboarding Prototype](https://www.figma.com/proto/oLJlzjXqgoU7efgXJM8FlK/Onboarding-Prototypes?node-id=1%3A4&viewport=332%2C345%2C0.5653080344200134&scaling=min-zoom&page-id=0%3A1)"
 %}
 
 After downloading a wallet application, users are typically presented with the option of either creating a new wallet or restoring an existing one. Obviously, first-time users will be going through the flow of creating a new wallet.
@@ -54,32 +53,15 @@ While this may sound daunting to first-time users, these caveats mustn't be hidd
 >
 > <cite>As researched by <a href="https://arxiv.org/pdf/1802.04351.pdf">Eskandari et al</a></cite>
 
-<div class="image-slide-gallery">
-
-{% include picture.html
-   image = "/assets/images/guide/onboarding/creating-a-new-wallet/first-onboarding-screen.png"
-   retina = "/assets/images/guide/onboarding/creating-a-new-wallet/first-onboarding-screen@2x.png"
-   alt-text = "Onboarding welcome screen"
+{% include prototype.html
+   link = "https://www.figma.com/proto/oLJlzjXqgoU7efgXJM8FlK/Onboarding-Prototypes?node-id=1%3A4&scaling=scale-down&page-id=0%3A1"
+   image = "/assets/images/guide/onboarding/creating-a-new-wallet/onboarding-prototype-cover.png"
+   retina = "/assets/images/guide/onboarding/creating-a-new-wallet/onboarding-prototype-cover@2x.png"
+   mobile = "/assets/images/guide/contribute/formatting/prototype-example-mobile.png"
+   mobileRetina = "/assets/images/guide/contribute/formatting/prototype-example-mobile@2x.png"
+   alt-text = "Example image"
+   width = 800
+   height = 500
 %}
 
-{% include picture.html
-   image = "/assets/images/guide/onboarding/creating-a-new-wallet/second-onboarding-screen.png"
-   retina = "/assets/images/guide/onboarding/creating-a-new-wallet/second-onboarding-screen@2x.png"
-   alt-text = "Onboarding talk about ownership screen"
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/onboarding/creating-a-new-wallet/third-onboarding-screen.png"
-   retina = "/assets/images/guide/onboarding/creating-a-new-wallet/third-onboarding-screen@2x.png"
-   alt-text = "Onboarding talk about recovery screen"
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/onboarding/creating-a-new-wallet/fourth-onboarding-screen.png"
-   retina = "/assets/images/guide/onboarding/creating-a-new-wallet/fourth-onboarding-screen@2x.png"
-   alt-text = "Onboarding talk about security screen"
-%}
-
-</div>
-
-*This prototype exhibits the typical first screen that users are shown after downloading a Bitcoin wallet, followed by an outline of suggested informational carousels that explicitly lay out/guide users on the unique features of non-custodial wallets to make sure they understand these caveats. These screens suggest talking about ownership of their “account”, explicitly stating the recovery mechanism that the respective wallet uses, and security measures that they should take to protect their wallet.*
+This prototype exhibits the typical first screen that users are shown after downloading a Bitcoin wallet, followed by an outline of suggested informational carousels that explicitly lay out/guide users on the unique features of non-custodial wallets to make sure they understand these caveats. These screens suggest talking about ownership of their “account”, explicitly stating the recovery mechanism that the respective wallet uses, and security measures that they should take to protect their wallet.
