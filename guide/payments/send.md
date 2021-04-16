@@ -106,7 +106,7 @@ The application can automatically estimate a fee and set it for the sender. This
 
 When allowing the sender to set fees, it is essential to communicate the estimated cost in their preferred currency and the estimated time until first confirmation. Be mindful that the way Bitcoin fees get calculated may not map to the sender's traditional financial experience. If you allow adjustment of fees, consider providing details on how it gets calculated.
 
-Human error with fee selection can lead to costly mistakes, and fee estimations are imperfect. Carefully consider if and how you expose transaction fees selection to senders.
+Human error with fee selection can lead to costly mistakes, and fee estimations are imperfect. Carefully consider if and how you expose transaction fee selection to senders.
 </div>
 
 **Variations**
