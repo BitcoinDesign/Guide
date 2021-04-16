@@ -57,11 +57,15 @@ While this may sound daunting to first-time users, these caveats mustn't be hidd
    link = "https://www.figma.com/proto/oLJlzjXqgoU7efgXJM8FlK/Onboarding-Prototypes?node-id=1%3A4&scaling=scale-down&page-id=0%3A1"
    image = "/assets/images/guide/onboarding/creating-a-new-wallet/onboarding-prototype-cover.png"
    retina = "/assets/images/guide/onboarding/creating-a-new-wallet/onboarding-prototype-cover@2x.png"
-   mobile = "/assets/images/guide/contribute/formatting/prototype-example-mobile.png"
-   mobileRetina = "/assets/images/guide/contribute/formatting/prototype-example-mobile@2x.png"
-   alt-text = "Example image"
+   mobile = "/assets/images/guide/onboarding/creating-a-new-wallet/onboarding-prototype-mobile-cover.png"
+   mobileRetina = "/assets/images/guide/onboarding/creating-a-new-wallet/onboarding-prototype-mobile-cover@2x.png"
+   alt-text = "Prototype cover"
    width = 800
    height = 500
 %}
 
 This prototype exhibits the typical first screen that users are shown after downloading a Bitcoin wallet, followed by an outline of suggested informational carousels that explicitly lay out/guide users on the unique features of non-custodial wallets to make sure they understand these caveats. These screens suggest talking about ownership of their “account”, explicitly stating the recovery mechanism that the respective wallet uses, and security measures that they should take to protect their wallet.
+
+---
+
+Ok, now let's look at backing up a recovery phrase (coming soon)
