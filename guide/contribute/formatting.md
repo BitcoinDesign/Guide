@@ -737,7 +737,7 @@ Provide clear error messages that tell users how to solve the problem.
 
 {% include do/middle.html label="Don't" icon="forbid" color="red" %}
 
-Write overly complex error messages that require technical knowledge.
+Write overly complex error messages that require deep technical knowledge.
 
 {% include image.html
    image = "/assets/images/guide/contribute/formatting/example-image-square.jpg"
@@ -765,7 +765,7 @@ Provide clear error messages that tell users how to solve the problem.
 
 {% include do/middle.html label="Don't" icon="forbid" color="red" %}
 
-Write overly complex error messages that require technical knowledge.
+Write overly complex error messages that require deep technical knowledge.
 
 {% include image.html
    image = "/assets/images/guide/contribute/formatting/example-image-square.jpg"
