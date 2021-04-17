@@ -39,6 +39,7 @@ The design source file is a public Figma community file you can find [here](http
 - [Prototypes](#prototypes)
 - [Tips & recommendations](#tips--recommendations)
 - [Facts](#facts)
+- [Do's and don'ts](#dos-and-donts)
 - [Footnotes](#footnotes)
 
 ## Basic markdown formatting
@@ -715,6 +716,66 @@ Number of signatures required, location and distribution of pieces, signing proc
 [Bitcoin wallet](https://bitcoin.design/), [BTC wallet](https://bitcoin.design/), [BeeTeeCee Wallet](https://bitcoin.design/)
 
 {% include fact/close.html %}
+
+### Do's and don'ts
+
+This component allows for visual display and comparison of good and bad design implementations. The component consists of open, middle and close tags, between which regular markdown can be used.
+
+{% raw %}
+```liquid
+{% include do/open.html label="Do" icon="check" color="green" %}
+
+Provide clear error messages that tell users how to solve the problem.
+
+{% include image.html
+   image = "/assets/images/guide/contribute/formatting/example-image-square.jpg"
+   retina = "/assets/images/guide/contribute/formatting/example-image-square@2x.jpg"
+   alt-text = "Example image"
+   width = 400
+   height = 400
+%}
+
+{% include do/middle.html label="Don't" icon="forbid" color="red" %}
+
+Write overly complex error messages that require deep technical knowledge.
+
+{% include image.html
+   image = "/assets/images/guide/contribute/formatting/example-image-square.jpg"
+   retina = "/assets/images/guide/contribute/formatting/example-image-square@2x.jpg"
+   alt-text = "Example image"
+   width = 400
+   height = 400
+%}
+
+{% include do/close.html %}
+```
+{% endraw %}
+
+{% include do/open.html label="Do" icon="check" color="green" %}
+
+Provide clear error messages that tell users how to solve the problem.
+
+{% include image.html
+   image = "/assets/images/guide/contribute/formatting/example-image-square.jpg"
+   retina = "/assets/images/guide/contribute/formatting/example-image-square@2x.jpg"
+   alt-text = "Example image"
+   width = 400
+   height = 400
+%}
+
+{% include do/middle.html label="Don't" icon="forbid" color="red" %}
+
+Write overly complex error messages that require deep technical knowledge.
+
+{% include image.html
+   image = "/assets/images/guide/contribute/formatting/example-image-square.jpg"
+   retina = "/assets/images/guide/contribute/formatting/example-image-square@2x.jpg"
+   alt-text = "Example image"
+   width = 400
+   height = 400
+%}
+
+{% include do/close.html %}
 
 ### Footnotes
 
