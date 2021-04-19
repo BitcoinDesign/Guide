@@ -66,6 +66,7 @@
       &:focus {
         border-width: 0;
         outline: none;
+        background-color: rgba($primary-color, 0.1);
       }
 
       &:hover {
@@ -77,7 +78,7 @@
       }
 
       & + .nav-list-link {
-        
+
       }
     }
 
