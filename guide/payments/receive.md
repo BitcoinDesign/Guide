@@ -4,7 +4,7 @@ title: Receiving bitcoin
 description: An introduction to how receiving bitcoin works.
 nav_order: 3
 parent: Payments
-permalink: /guide/receive/send/
+permalink: /guide/payments/receive/
 main_classes: -no-top-padding
 # image: /assets/images/guide/payments/receive/header.svg
 ---
@@ -81,7 +81,7 @@ Suppose the sender is using a legacy wallet and paying to a receiver who gave th
    image = "/assets/images/guide/payments/receive/select-address-default.png"
    retina = "/assets/images/guide/payments/receive/select-address-default.png"
    alt-text = "Example image"
-   caption = "Example text"
+   caption = "Once the address is generated, ..."
    width = 250
    height = 541
 %}
@@ -121,7 +121,7 @@ Add below as Do's & Don'ts
 ## Sharing the payment details
 The two methods of sharing payment details whether it is a simple address or a payment link are in text form, and as scannable QR Codes.
 
-**Copy/Paste**
+**Text**
 
 Sharing payment details in this way is a straightforward process, where the text is just copied and pasted. It is also typical to provide the receiver with a button to conveniently share in other applications, with "share sheets," which most mobile operating systems offer.
 
