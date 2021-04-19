@@ -53,7 +53,7 @@ Once you have gotten the address, it's time to enter the payment details. Bitcoi
 
 **QR Code** -- Access will need to be granted to your application to enable scanning of QR Codes. Once the camera detects a valid address in the QR Code, it should automatically fill the address field.
 
-**Copy Paste** -- When the sender receives the address or payment link as text, your application can detect a valid address in the clipboard and prompt the sender to press a button to paste it.
+**Copy/Paste** -- When the sender receives the address or payment link as text, your application can detect a valid address in the clipboard and prompt the sender to press a button to paste it.
 
 </div>
 
@@ -165,3 +165,7 @@ Let us look at how we communicate to the sender about the [processing of a trans
 
 **Don'ts**
 - Show the transaction as confirmed until it has received ***at least*** one confirmation, but preferably six
+
+---
+
+Sending is just one side of the process. Lets now look at things from the [receivers perspective](/payments/receive).
