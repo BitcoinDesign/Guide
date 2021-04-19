@@ -49,8 +49,8 @@ The following are the primary properties of a payment request:
 {% include picture.html
    image = "/assets/images/guide/payments/receive/enter-details-amount.png"
    retina = "/assets/images/guide/payments/receive/enter-details-amount@2x.png"
-   alt-text = "Enter details amount"
-   caption = "The receiver can specify the amount that is being requested. This could be used in payment links and would auto-fill the amount for the sender."
+   alt-text = "..."
+   caption = "..."
    width = 250
    height = 541
 %}
@@ -58,8 +58,8 @@ The following are the primary properties of a payment request:
 {% include picture.html
    image = "/assets/images/guide/payments/receive/enter-details-from.png"
    retina = "/assets/images/guide/payments/receive/enter-details-from@2x.png"
-   alt-text = "Enter details from"
-   caption = "This note helps both the recipient understand who they received the payment from. Does not need to be included in payment links."
+   alt-text = "Note for who they payment is being recieved from"
+   caption = "..."
    width = 250
    height = 541
 %}
@@ -67,8 +67,8 @@ The following are the primary properties of a payment request:
 {% include picture.html
    image = "/assets/images/guide/payments/receive/enter-details-purpose.png"
    retina = "/assets/images/guide/payments/receive/enter-details-purpose@2x.png"
-   alt-text = "Enter details purpose"
-   caption = "Another bit of accounting information is what the payment is for. This is also for personal notes, and although supported, it does not need to be included in payment links."
+   alt-text = "..."
+   caption = "..."
    width = 250
    height = 541
 %}
@@ -76,8 +76,8 @@ The following are the primary properties of a payment request:
 {% include picture.html
    image = "/assets/images/guide/payments/receive/enter-details-compact.png"
    retina = "/assets/images/guide/payments/receive/enter-details-compact@2x.png"
-   alt-text = "Enter details compact view"
-   caption = "Alternativly you can choose to skip straight to a “share payment details” screen with the automatically generated address and ask the receiver to add notes secondarily."
+   alt-text = "..."
+   caption = "..."
    width = 250
    height = 541
 %}
