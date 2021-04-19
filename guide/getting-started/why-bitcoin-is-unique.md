@@ -79,7 +79,7 @@ Bitcoin combines the custodial benefits of physical cash with the convenience of
 
 ## Global by default
 
-If you can access the Internet, you can access bitcoin. As of April 2021, roughly [53.6% of the world’s population](https://en.wikipedia.org/wiki/Global_Internet_usage) was online. That means 53.6% of the world already has access to bitcoin. This makes bitcoin the first currency of any kind entirely unbound by national borders. It also makes it the first currency to completely cut out middlemen like currency exchanges, local payment services, and banks.
+If you can access the Internet, you can access bitcoin. As of 2019, roughly [53.6% of the world’s population](https://en.wikipedia.org/wiki/Global_Internet_usage) was online. That means 53.6% of the world already has access to bitcoin. This makes bitcoin the first currency of any kind entirely unbound by national borders. It also makes it the first currency to completely cut out middlemen like currency exchanges, local payment services, and banks.
 
 ## Equal treatment for all
 
