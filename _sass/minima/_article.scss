@@ -523,15 +523,15 @@ article.guide {
     max-width: none !important;
 
     figure {
-      img {
-        box-shadow: 0 20px 10px -8px rgba(black, 0.05);
-        border: 1px solid rgba(black, 0.1);
-      }
-
       margin-top: 0;
       margin-bottom: 0;
       float: left;
       margin-right: 30px;
+
+      img {
+        box-shadow: 0 20px 10px -8px rgba(black, 0.05);
+        border: 1px solid rgba(black, 0.1);
+      }
     }
 
     @include media-query(small) {
@@ -570,9 +570,10 @@ article.guide {
       flex-shrink: 0;
       margin-top: 0;
       margin-bottom: 0;
+      width: min-content;
 
       img {
-        width: 100%;
+        max-width: none;
         height: auto;
       }
 
