@@ -270,7 +270,7 @@ A horizontal slide show of images. When the content is too wide for the screen, 
    image = "/assets/images/guide/contribute/formatting/example-image-mobile-screen.png"
    retina = "/assets/images/guide/contribute/formatting/example-image-mobile-screen@2x.png"
    alt-text = "Example image"
-   caption = "Example text"
+   caption = "Sed in lacus vitae turpis lobortis ultrices. Aenean hendrerit nec elit in sagittis. Nulla mi ante, luctus vitae tincidunt ut, rhoncus ac ex. Morbi sit amet mauris est."
    width = 250
    height = 541
 %}
