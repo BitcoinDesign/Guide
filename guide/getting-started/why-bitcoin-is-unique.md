@@ -95,7 +95,7 @@ If you can access the Internet, you can access bitcoin. As of April 2021, roughl
    layout = "float-right-desktop"
 %}
 
-Bitcoin uses scrambled, pseudonymous strings of letters and numbers in place of personal information, real-life identities, and even usernames. It treats everyone from individuals to corporations and governments the same. No group has the power to censor transactions, shut others out of the network, or confiscate another’s bitcoin. While certain services might discriminate or request personal information, the bitcoin network not only won’t, but can’t.
+Bitcoin uses scrambled, pseudonymous strings of letters and numbers in place of personal information, real-life identities, and even usernames. It treats everyone from individuals to corporations and governments the same. No group has the power to censor transactions, shut others out of the network, or confiscate another’s bitcoin. While certain services might discriminate or request personal information, the Bitcoin network not only won’t, but can’t.
 
 </div>
 
