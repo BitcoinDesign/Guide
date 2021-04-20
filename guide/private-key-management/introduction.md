@@ -31,7 +31,7 @@ scan this page to get an overview of the section and then decide which topics to
 
 # Private key management
 
-Protecting a user's private keys comes with no less responsibility than safeguarding their bank accounts. That puts [private key]({{ '/guide/glossary/#private-key' | relative_url }}){:target="_blank"}management at the center of all bitcoin application design considerations. It also presents a problem: if your application is not secure enough, you risk losing the user's funds. But if it's not convenient enough, you risk losing the user.
+Protecting a user's private keys comes with no less responsibility than safeguarding their bank accounts. That puts [private key]({{ '/guide/glossary/#private-key' | relative_url }}){:target="_blank"} management at the center of all bitcoin application design considerations. It also presents a problem: if your application is not secure enough, you risk losing the user's funds. But if it's not convenient enough, you risk losing the user.
 
 This chapter is an overview of private key management schemes, including descriptions of available approaches, advice, and best practices. After this chapter, you should be able to choose a solution that is suited to your users.
 
