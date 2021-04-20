@@ -203,7 +203,7 @@ For example, [Glacier Protocol](https://glacierprotocol.org){:target="_blank"} i
    height = 800
 %}
 
-Many people don’t personally custody their long-term savings. They rely on banks and financial service providers to provide security and help manage and invest those savings. Savings accounts and related products may also incentivize customers with low-interest rates that may or may not be high enough to keep up with inflation.
+Many people don’t self-cusody their long-term savings. They rely on banks and financial service providers to provide security and help manage and invest those savings. Savings accounts and related products may also incentivize customers with low-interest rates that may or may not be high enough to keep up with inflation.
 
 ## Investing
 
