@@ -43,13 +43,20 @@ Remember: Onboarding should not be a crutch for bad design. Avoid trying to expl
 
 ---
 
-[**Getting to know your users**]({{ '/guide/onboarding/getting-to-know-your-users/' | relative_url }})
-
+### [Getting to know your users]({{ '/guide/onboarding/getting-to-know-your-users/' | relative_url }})
 
 This section will give you some tips on how best to understand and develop knowledge about your users.
 
 ---
 
-**First-time user experience (coming soon)**
+### First-time user experience (coming soon)
 
 An overview of how to design a successful onboarding experience for first-time users. This will help set the basis for a more advanced type of user.
+
+### Creating a wallet (coming soon)
+
+### Funding a wallet (coming soon)
+
+### Restoring a wallet (coming soon)
+
+### Protecting a wallet (coming soon)

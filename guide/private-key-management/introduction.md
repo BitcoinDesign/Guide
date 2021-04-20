@@ -37,25 +37,25 @@ This chapter is an overview of private key management schemes, including descrip
 
 ---
 
-**[Private key schemes]({{ '/guide/private-key-management/schemes/' | relative_url }})**
+###  [Private key schemes]({{ '/guide/private-key-management/schemes/' | relative_url }})
 
 Get to know the most common bitcoin private key management schemes, then follow our guidelines to pick the right one for your users.
 
 ---
 
-**[Personal schemes]({{ '/guide/private-key-management/single-user-schemes/' | relative_url }})**
+### [Personal schemes]({{ '/guide/private-key-management/single-user-schemes/' | relative_url }})
 
 An introduction to some of the common private key management schemes for individual users.
 
 ---
 
-**[Shared schemes]({{ '/guide/private-key-management/single-user-schemes/' | relative_url }})**
+### [Shared schemes]({{ '/guide/private-key-management/single-user-schemes/' | relative_url }})
 
 An introduction to some of the common private key management schemes for shared users.
 
 ---
 
-**[Case studies]({{ '/guide/case-studies/' | relative_url }})**
+### [Case studies]({{ '/guide/case-studies/' | relative_url }})
 
 A look at hypothetical application uses and suitable approaches to private key management for each of them.
 

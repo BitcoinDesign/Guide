@@ -14,12 +14,12 @@ Learn about some of the basics to keep in mind when designing Bitcoin applicatio
 
 ---
 
-**[Bitcoin design principles]({{ '/guide/foundations/principles/' | relative_url }})**
+### [Bitcoin design principles]({{ '/guide/foundations/principles/' | relative_url }})
 
 Core bitcoin design principles recommended by the Bitcoin Design Community.
 
 ---
 
-**[Wallet interoperability]({{ '/guide/foundations/wallet-interoperability/' | relative_url }})**
+### [Wallet interoperability]({{ '/guide/foundations/wallet-interoperability/' | relative_url }})
 
 Get to know the points of interaction and overlap connecting payment links, wallet recovery, node configurations, and more.

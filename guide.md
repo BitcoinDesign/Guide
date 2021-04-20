@@ -49,43 +49,43 @@ With Bitcoin being so new and different, a big focus of the guide lies on provid
 
 ---
 
-**[Getting started]({{ '/guide/getting-started/introduction/' | relative_url }})**
+### [Getting started]({{ '/guide/getting-started/introduction/' | relative_url }})
 
 For top-level overviews, whether it's bitcoin technology, visual language, software, or design collaboration in an open-source world.
 
 ---
 
-**[Onboarding]({{ '/guide/onboarding/introduction/' | relative_url }})**
+### [Onboarding]({{ '/guide/onboarding/introduction/' | relative_url }})
 
 Goes in-depth on the delicate process of introducing new users to bitcoin and how to use specific products and features.
 
 ---
 
-**[Private key management]({{ '/guide/private-key-management/introduction/' | relative_url }})**
+### [Private key management]({{ '/guide/private-key-management/introduction/' | relative_url }})
 
 Provides extensive details and guidance on the many techniques for storing private keys.
 
 ---
 
-**[Payments]({{ '/guide/payments/' | relative_url }})**
+### [Payments]({{ '/guide/payments/' | relative_url }})
 
 Deals with the complexities of sending and receiving bitcoin across various use cases.
 
 ---
 
-**[Foundations]({{ '/guide/foundations/' | relative_url }})**
+### [Foundations]({{ '/guide/foundations/' | relative_url }})
 
 Highlights principles, best practices and other useful information for designing Bitcoin product.
 
 ---
 
-**[Case studies]({{ '/guide/case-studies/' | relative_url }})**
+### [Case studies]({{ '/guide/case-studies/' | relative_url }})
 
 Explores approaches to diverse uses cases with wireframes, designs and prototypes.
 
 ---
 
-**[Glossary]({{ '/guide/glossary/' | relative_url }})**
+### [Glossary]({{ '/guide/glossary/' | relative_url }})
 
 Explains common Bitcoin terminology, from Address to ZPUB.
 
