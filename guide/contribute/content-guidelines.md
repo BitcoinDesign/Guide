@@ -4,9 +4,22 @@ title: Content guidelines
 description: Writing tips for authors of the Bitcoin Design Guide.
 nav_order: 3
 parent: Contribute to guide
+main_classes: -no-top-padding
 permalink: /guide/contribute/content-guidelines/
-image: /assets/images/guide/contribute/content-guidelines-preview.jpg
+image: https://bitcoin.design/assets/images/guide/contribute/content-guidelines/content-guidelines-preview.jpg
 ---
+
+{% include picture.html
+   image = "/assets/images/guide/contribute/content-guidelines/content-guidelines.jpg"
+   retina = "/assets/images/guide/contribute/content-guidelines/content-guidelines@2x.jpg"
+   mobile = "/assets/images/guide/contribute/content-guidelines/content-guidelines-mobile.jpg"
+   mobileRetina = "/assets/images/guide/contribute/content-guidelines/content-guidelines-mobile@2x.jpg"
+   alt-text = "How to correctly spell and capitalize Bitcoin"
+   width = 1600
+   height = 800
+   layout = "full-width"
+%}
+
 
 # Content guidelines
 
@@ -14,7 +27,7 @@ The Bitcoin Design Guide is the work of many authors with different backgrounds,
 
 ### Know your reader
 
-This guide is crafted for anyone interested in building an effective Bitcoin application. To understand who you are writing for, familiarize yourself with our [Target audience]({{ '/guide/target-audience' | relative_url }}).
+This guide is crafted for anyone interested in building an effective Bitcoin application. To understand who you are writing for, familiarize yourself with our [Target audience](https://github.com/BitcoinDesign/Guide/issues/51).
 
 ### Speak to the reader
 

@@ -5,15 +5,21 @@ description: Basics for designing great Bitcoin products.
 nav_order: 6
 has_children: true
 permalink: /guide/foundations/
-image: /assets/images/guide/foundations/foundations-preview.jpg
+image: https://bitcoin.design/assets/images/guide/foundations/foundations-preview.jpg
 ---
 
 # Foundations
 
-Learn about some of the basic principles to keep in mind when designing Bitcoin applications.
+Learn about some of the basics to keep in mind when designing Bitcoin applications.
 
 ---
 
-**[Wallet interoperability]({{ '/guide/foundations/wallet-interoperability/' | relative_url }})**
+### [Bitcoin design principles]({{ '/guide/foundations/principles/' | relative_url }})
 
-An overview of important interaction points between Bitcoin applications and user experiences, from payment links and wallet recovery to node configuration.
+Core bitcoin design principles recommended by the Bitcoin Design Community.
+
+---
+
+### [Wallet interoperability]({{ '/guide/foundations/wallet-interoperability/' | relative_url }})
+
+Get to know the points of interaction and overlap connecting payment links, wallet recovery, node configurations, and more.

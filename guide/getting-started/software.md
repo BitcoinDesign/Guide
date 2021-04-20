@@ -5,7 +5,7 @@ nav_order: 11
 parent: Getting started
 permalink: /guide/getting-started/software/
 main_classes: -no-top-padding
-image: /assets/images/guide/getting-started/software/software-preview.jpg
+image: https://bitcoin.design/assets/images/guide/getting-started/software/software-preview.jpg
 ---
 
 <!--
@@ -86,13 +86,15 @@ Explorers often also provide insight into activity on the bitcoin network, like 
 
 Wallet provide easy-to-use graphical interfaces for a wide audience. Wallets many times don't offer all functionality that can be found in a CLI, but instead focus on general use cases like making payments and browsing transactions.
 
-Due to the nature of open-source, wallets can be developed by anyone with the technical knowledge, and many code libraries are available to simplify this task.</div>
+Due to the nature of open-source, wallets can be developed by anyone with the technical knowledge, and many code libraries are available to simplify this task.
 
 Features can vary by application but always include wallet setup, viewing balances and transactions, and sending and receiving bitcoin. The range of additional features wallets may support is broad, from security and privacy to transaction management, currency exchange, accounting, and interoperability to accessibility and localization. Which features to include should be based on the specific use cases and user needs of your product.
 
 Some of these features come with highly complex technical challenges and can be executed in different ways. Reliance on third-party service is always a sensitive topic for bitcoin applications, as a high level of trust is required. This can also sometimes be an underlying reason why a wallet may or may not support specific features or implement a feature in a specific manner.
 
 Another reason is that standards are still evolving as some of the technology is still maturing. Even fundamental aspects like address formats and how keys are generated can be implemented in incompatible ways.
+
+</div>
 
 ## Payment processors
 

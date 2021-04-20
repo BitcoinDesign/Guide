@@ -6,7 +6,7 @@ nav_order: 10
 parent: Foundations
 permalink: /guide/foundations/wallet-interoperability/
 main_classes: -no-top-padding
-image: /assets/images/guide/foundations/wallet-interoperability/wallet-interoperability-preview.jpg
+image: https://bitcoin.design/assets/images/guide/foundations/wallet-interoperability/wallet-interoperability-preview.jpg
 ---
 
 <!--
@@ -159,7 +159,7 @@ Also known as the [Partially Signed Bitcoin Transaction Format](https://github.c
    layout = "float-right-desktop"
 %}
 
-Per definition, multi signature wallets require interaction between all cosigners and therefore interoperability between their software (or hardware) of choice. Especially when there are multiple cosigners (rather than one owner using multiple signing devices), there should be strong design considerations to how the cosigners exchange keystores and transaction data. 
+Per definition, multi signature wallets require interaction between all cosigners and therefore interoperability between their software (or hardware) of choice. Especially when there are multiple cosigners (rather than one owner using multiple signing devices), there should be strong design considerations to how the cosigners exchange keystores and transaction data.
 
 </div>
 
@@ -176,7 +176,7 @@ Per definition, multi signature wallets require interaction between all cosigner
    layout = "float-right-desktop"
 %}
 
-While it is extremely convenient when applications provide their own node connections, it is recommended to allow users to have a choice, and potentially even encourage them to set up their own node. This results in better decentralization, and also has privacy and security benefits.
+While it is extremely convenient when applications provide their own node connections, it is recommended to allow users to have a choice, and potentially even encourage them to set up their own node. This results in better [decentralization](/guide/foundations/principles/#decentralization), and also has privacy and [security](/guide/foundations/principles/#security) benefits.
 
 </div>
 

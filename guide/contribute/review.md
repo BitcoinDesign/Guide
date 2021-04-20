@@ -5,8 +5,20 @@ description: Contribute to the guide by reviewing a proposed change
 nav_order: 2
 parent: Contribute to guide
 permalink: /guide/contribute/review/
-image: /assets/images/guide/contribute/contribute-review-preview.jpg
+image: https://bitcoin.design/assets/images/guide/contribute/review/review-preview.jpg
+main_classes: -no-top-padding
 ---
+
+{% include picture.html
+   image = "/assets/images/guide/contribute/review/review.jpg"
+   retina = "/assets/images/guide/contribute/review/review@2x.jpg"
+   mobile = "/assets/images/guide/contribute/review/review-mobile.jpg"
+   mobileRetina = "/assets/images/guide/contribute/review/review-mobile@2x.jpg"
+   alt-text = "Reviewing content changes"
+   width = 1600
+   height = 800
+   layout = "full-width"
+%}
 
 # Reviewing a proposed change
 

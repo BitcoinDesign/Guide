@@ -6,7 +6,7 @@ nav_order: 4
 has_children: true
 permalink: /guide/private-key-management/introduction/
 main_classes: -no-top-padding
-image: /assets/images/guide/private-key-management/page-private-key-management.jpg
+image: https://bitcoin.design/assets/images/guide/private-key-management/page-private-key-management.jpg
 ---
 
 <!--
@@ -31,24 +31,34 @@ scan this page to get an overview of the section and then decide which topics to
 
 # Private key management
 
-When designing a bitcoin-application, the way you choose to manage the [private key]({{ '/guide/glossary/#private-key' | relative_url }}){:target="_blank"} often dictates the fundamental user experience for your users. Being in control of a private key means you have access to the funds it holds. Keeping that key safe is like being in charge of the security of your own bank. It comes with a lot of freedom, but also a big responsibility that many users are not used to. 
+Protecting a user's private keys comes with no less responsibility than safeguarding their bank accounts. That puts [private key]({{ '/guide/glossary/#private-key' | relative_url }}){:target="_blank"} management at the center of all bitcoin application design considerations. It also presents a problem: if your application is not secure enough, you risk losing the user's funds. But if it's not convenient enough, you risk losing the user.
 
-If it’s not secure enough, you risk loss of user's funds. But if it’s not convenient enough, you risk not getting or retaining many users in the first place.
-
-This chapter is meant to give an overview of private key management schemes, including descriptions of  available approaches, some advice and best practices. After this chapter, you should be able to choose a solution that is well suited to your product’s use case, and understand best-practices for the implementation of it.
+This chapter is an overview of private key management schemes, including descriptions of available approaches, advice, and best practices. After this chapter, you should be able to choose a solution that is suited to your users.
 
 ---
 
-**[Private key schemes]({{ '/guide/private-key-management/schemes/' | relative_url }})**
+###  [Private key schemes]({{ '/guide/private-key-management/schemes/' | relative_url }})
 
-An overview of the most common private key management schemes for bitcoin products, and thoughts on picking a suitable scheme for your target audience and their use case.
-
----
-
-**[Principles]({{ '/guide/private-key-management/principles/' | relative_url }})**
-
-Every use case and product is different but there are things that all wallet applications should strive for, and only diverge from with very good reasons.
+Get to know the most common bitcoin private key management schemes, then follow our guidelines to pick the right one for your users.
 
 ---
 
-Let's get started with an overview of [private key schemes]({{ '/guide/private-key-management/schemes/' | relative_url }}).
+### [Personal schemes]({{ '/guide/private-key-management/single-user-schemes/' | relative_url }})
+
+An introduction to some of the common private key management schemes for individual users.
+
+---
+
+### [Shared schemes]({{ '/guide/private-key-management/single-user-schemes/' | relative_url }})
+
+An introduction to some of the common private key management schemes for shared users.
+
+---
+
+### [Case studies]({{ '/guide/case-studies/' | relative_url }})
+
+A look at hypothetical application uses and suitable approaches to private key management for each of them.
+
+---
+
+Start at the top with [private key schemes]({{ '/guide/private-key-management/schemes/' | relative_url }}).

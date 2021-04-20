@@ -5,7 +5,7 @@ nav_order: 10
 parent: Getting started
 permalink: /guide/getting-started/technology-primer/
 main_classes: -no-top-padding
-image: /assets/images/guide/getting-started/technology/technology-primer-preview.jpg
+image: https://bitcoin.design/assets/images/guide/getting-started/technology/technology-primer-preview.jpg
 ---
 
 <!--
@@ -27,10 +27,10 @@ Illustration sources
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/getting-started/technology/blueprint.jpg"
-   retina = "/assets/images/guide/getting-started/technology/blueprint@2x.jpg"
-   mobile = "/assets/images/guide/getting-started/technology/blueprint-mobile.jpg"
-   mobileRetina = "/assets/images/guide/getting-started/technology/blueprint-mobile@2x.jpg"
+   image = "/assets/images/guide/getting-started/technology/blueprint.png"
+   retina = "/assets/images/guide/getting-started/technology/blueprint@2x.png"
+   mobile = "/assets/images/guide/getting-started/technology/blueprint-mobile.png"
+   mobileRetina = "/assets/images/guide/getting-started/technology/blueprint-mobile@2x.png"
    alt-text = "Blueprint illustration of a bitcoin symbol"
    width = 1600
    height = 800

@@ -20,6 +20,7 @@
         flex-shrink: 1;
         border-left: 1px solid rgba(var(--front), 0.1);
         min-height: 90vh;
+        overflow: hidden;
 
         .edit-link {
           max-width: 800px;
@@ -179,7 +180,7 @@ article.guide h1 {
 article.guide {
   h1 {
     margin-top: $spacing-unit * 1;
-    
+
     @include media-query(medium-up) {
       margin-top: $spacing-unit * 2;
     }
