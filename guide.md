@@ -51,7 +51,7 @@ The Bitcoin Design Guide is divided into the following sections:
 - [Onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}) familiarizes designers with the products, features, and terms needed to create better experiences for first time users
 - [Private key management]({{ '/guide/private-key-management/introduction/' | relative_url }}) details the many techniques that can be used to store private keys
 - [Payments]({{ '/guide/payments/' | relative_url }}) covers the complexities encountered when sending and receiving bitcoin
-- [Foundations]({{ '/guide/foundations/' | relative_url }}) highlights principles and other fundamentals designing Bitcoin products
+- [Foundations]({{ '/guide/foundations/' | relative_url }}) highlights principles and other fundamentals of designing Bitcoin products
 - [Case studies]({{ '/guide/case-studies/' | relative_url }}) explores wire framing, designing, and prototyping for diverse use cases
 - [Glossary]({{ '/guide/glossary/' | relative_url }}) helps you learn the most need-to-know bitcoin terminology from Address to ZPUB
 
