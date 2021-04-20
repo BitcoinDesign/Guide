@@ -48,21 +48,25 @@ We designed this guide to help anyone navigate those complexities—regardless o
 ### [Getting started]({{ '/guide/getting-started/introduction/' | relative_url }})
 
 Provides top-level overviews of common visual language, software, and best practices for design collaboration.
+
 ---
 
 ### [Onboarding]({{ '/guide/onboarding/introduction/' | relative_url }})
 
 Familiarizes designers with the products, features, and terms needed to create better experiences for first time users.
+
 ---
 
 ### [Private key management]({{ '/guide/private-key-management/introduction/' | relative_url }})
 
 Details the many techniques that can be used to store private keys.
+
 ---
 
 ### [Payments]({{ '/guide/payments/' | relative_url }})
 
 Covers the complexities encountered when sending and receiving bitcoin.
+
 ---
 
 ### [Foundations]({{ '/guide/foundations/' | relative_url }})
