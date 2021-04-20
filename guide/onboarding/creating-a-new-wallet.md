@@ -27,8 +27,8 @@ The wallet creation process is an excellent place to break things up into differ
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/onboarding/creating-a-new-wallet/onboarding-welcome-screen.jpg"
-   retina = "/assets/images/guide/onboarding/creating-a-new-wallet/onboarding-welcome-screen@2x.jpg"
+   image = "/assets/images/guide/onboarding/creating-a-new-wallet/onboarding-welcome-screen.png"
+   retina = "/assets/images/guide/onboarding/creating-a-new-wallet/onboarding-welcome-screen@2x.png"
    width = 250
    height = 250
    alt-text = "Onboarding welcome screen"
@@ -53,18 +53,38 @@ While this may sound daunting to first-time users, these caveats mustn't be hidd
 >
 > <cite>As researched by <a href="https://arxiv.org/pdf/1802.04351.pdf">Eskandari et al</a></cite>
 
-{% include prototype.html
-   link = "https://www.figma.com/proto/oLJlzjXqgoU7efgXJM8FlK/Onboarding-Prototypes?node-id=1%3A4&scaling=scale-down&page-id=0%3A1"
-   image = "/assets/images/guide/onboarding/creating-a-new-wallet/onboarding-prototype-cover.png"
-   retina = "/assets/images/guide/onboarding/creating-a-new-wallet/onboarding-prototype-cover@2x.png"
-   mobile = "/assets/images/guide/onboarding/creating-a-new-wallet/onboarding-prototype-mobile-cover.png"
-   mobileRetina = "/assets/images/guide/onboarding/creating-a-new-wallet/onboarding-prototype-mobile-cover@2x.png"
-   alt-text = "Prototype cover"
-   width = 800
-   height = 500
+<div class="image-slide-gallery">
+
+{% include picture.html
+   image = "/assets/images/guide/onboarding/creating-a-new-wallet/product-intro-1.png"
+   retina = "/assets/images/guide/onboarding/creating-a-new-wallet/product-intro-1@2x.png"
+   alt-text = "Introduction screen explaining ownership"
+   caption = "Talk about ownership"
+   width = 250
+   height = 541
 %}
 
-This prototype exhibits the typical first screen that users are shown after downloading a Bitcoin wallet, followed by an outline of suggested informational carousels that explicitly lay out/guide users on the unique features of non-custodial wallets to make sure they understand these caveats. These screens suggest talking about ownership of their “account”, explicitly stating the recovery mechanism that the respective wallet uses, and security measures that they should take to protect their wallet.
+{% include picture.html
+   image = "/assets/images/guide/onboarding/creating-a-new-wallet/product-intro-2.png"
+   retina = "/assets/images/guide/onboarding/creating-a-new-wallet/product-intro-2@2x.png"
+   alt-text = "Introduction screen explaining recovery"
+   caption = "Talk about recovery"
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/onboarding/creating-a-new-wallet/product-intro-3.png"
+   retina = "/assets/images/guide/onboarding/creating-a-new-wallet/product-intro-3@2x.png"
+   alt-text = "Introduction screen explaining security"
+   caption = "Talk about security"
+   width = 250
+   height = 541
+%}
+
+</div>
+
+The above screens exhibit the typical first screens that users are shown after downloading a Bitcoin wallet, followed by an outline of suggested informational carousels that explicitly lay out/guide users on the unique features of non-custodial wallets to make sure they understand these caveats. These screens suggest talking about ownership of their “account”, explicitly stating the recovery mechanism that the respective wallet uses, and security measures that they should take to protect their wallet.
 
 ---
 
