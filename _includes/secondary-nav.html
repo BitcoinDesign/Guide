@@ -31,7 +31,7 @@
           <a href="{{ node.url | absolute_url }}" class="nav-list-link{% if page.url == node.url %} -active{% endif %}">{%- if node.secondary_nav_title -%}{{ node.secondary_nav_title }}{%- else -%}{{ node.title }}{%- endif -%}</a>
           {%- if node.has_children -%}
             {%- assign children_list = pages_list | where: "parent", node.title -%}
-            <ul class="nav-list" id="nav-list-{{ forloop.index }}">
+            <ul class="nav-list" id="nav-list-{{ include.id | default: "1" }}-{{ forloop.index }}">
             {%- for child in children_list -%}
               {%- unless child.nav_exclude -%}
                 <li class="nav-list-item {% if page.url == child.url or page.parent == child.title %} -active{% endif %}">

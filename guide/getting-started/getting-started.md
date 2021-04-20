@@ -36,66 +36,66 @@ Illustration sources
 
 ---
 
-**[What makes bitcoin unique]({{ '/guide/getting-started/why-bitcoin-is-unique/' | relative_url }})**
+### [Why Bitcoin is unique]({{ '/guide/getting-started/why-bitcoin-is-unique/' | relative_url }})
 
 Familiarize yourself with some of the most significant concepts that bitcoin designers need to know.
 
 ---
 
-**[Why design for Bitcoin]({{ '/guide/getting-started/why-design-for-bitcoin/' | relative_url }})**
+### [Why design for Bitcoin]({{ '/guide/getting-started/why-design-for-bitcoin/' | relative_url }})
 
 Bitcoin is open-source, decentralized, permissionless, fungible, stateless, and non-custodial. If those words don’t mean anything to you, consider starting here.  
 
 ---
 
-**[Open design]({{ '/guide/getting-started/open-design/' | relative_url }})**
+### [Open design]({{ '/guide/getting-started/open-design/' | relative_url }})
 
 Bitcoin isn’t just changing money—it’s changing how designers collaborate across broad use cases. While open-source development has been around for years, open design is brand new.
 
 ---
 
-**[The visual language of Bitcoin]({{ '/guide/getting-started/visual-language/' | relative_url }})**
+### [The visual language of Bitcoin]({{ '/guide/getting-started/visual-language/' | relative_url }})
 
 Since bitcoin is public, open, and dependent upon no single person or organization, its brand is still undefined—and it might always be. But there’s still a to learn about how best to represent it visually.
 
 ---
 
-**[User research]({{ '/guide/getting-started/user-research/' | relative_url }})**
+### [User research]({{ '/guide/getting-started/user-research/' | relative_url }})
 
 Before a product can solve its users’ problems, its designers need to understand what those problems are. User research helps us zoom in on what users care about.
 
 ---
 
-**[Personal finance]({{ '/guide/getting-started/personal-finance/' | relative_url }})**
+### [Personal finance]({{ '/guide/getting-started/personal-finance/' | relative_url }})
 
 The language of bitcoin is the language of money. If you’re still new to the concepts that underpin personal finance, this section can get you up to speed.
 
 ---
 
-**[Usage life cycle]({{ '/guide/getting-started/usage-life-cycle/' | relative_url }})**
+### [Usage life cycle]({{ '/guide/getting-started/usage-life-cycle/' | relative_url }})
 
 As familiarization with the bitcoin ecosystem increases, users’ needs evolve. As designers, we need to understand each of the steps along that journey.
 
 ---
 
-**[Common user flows]({{ '/guide/getting-started/common-user-flows/' | relative_url }})**
+### [Common user flows]({{ '/guide/getting-started/common-user-flows/' | relative_url }})
 
 Because solutions to common problems such as how to send, store, and purchase bitcoin are often the most in demand, they are also the most available as a resource online.
 
 ---
 
-**[Technology primer]({{ '/guide/getting-started/technology-primer/' | relative_url }})**
+### [Technology primer]({{ '/guide/getting-started/technology-primer/' | relative_url }})
 
 Learn the need-to-know concepts behind the technologies that drive bitcoin.
 
 ---
 
-**[Software overview]({{ '/guide/getting-started/software/' | relative_url }})**
+### [Software overview]({{ '/guide/getting-started/software/' | relative_url }})
 
 Get to know the categories of software that define the bitcoin ecosystem of products. These range from consumer-friendly wallets to merchant-specific tools and more.
 
 ---
 
-**[Hardware overview]({{ '/guide/getting-started/hardware/' | relative_url }})**
+### [Hardware overview]({{ '/guide/getting-started/hardware/' | relative_url }})
 
 Bitcoin-specific hardware is a burgeoning ecosystem within the greater bitcoin ecosystem. These are the essential devices that you and your users need to know.

@@ -152,13 +152,13 @@ There are several standards for how to notate the path to a key and correspondin
 - [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki): multi-account, for script addresses with nested-SegWit
 - [BIP84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki): multi-account, for SegWit addresses
 
-BIP44 instroduced the following structure, which BIP49 and BIP84 follow:<br/>
+BIP44 introduced the following structure, which BIP49 and BIP84 follow:<br/>
 `m / purpose / coin_type / account / change / index`
 
 The path to the first address in a bitcoin-wallet using BIP84 will look like this:<br/>
 `m/84h/0h/0h/0/0`
 
-For full interoperability a wallet should support all of these standards. More information can be found [here](https://learnmeabitcoin.com/technical/derivation-paths).
+For full [interoperability](/guide/foundations/principles/#interoperability) a wallet should support all of these standards. More information can be found [here](/guide/foundations/wallet-interoperability/#wallet-import-and-export) and [here](https://learnmeabitcoin.com/technical/derivation-paths).
 
 ## Extended private key (XPRIV)
 

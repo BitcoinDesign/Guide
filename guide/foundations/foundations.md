@@ -14,12 +14,12 @@ Learn about some of the basics to keep in mind when designing Bitcoin applicatio
 
 ---
 
-**[Bitcoin design principles]({{ '/guide/foundations/principles/' | relative_url }})**
+### [Bitcoin design principles]({{ '/guide/foundations/principles/' | relative_url }})
 
-Principles that the Bitcoin Design Community have identified and stand behind. Although every use case and product is different, applications should strive to follow these principles.
+Core bitcoin design principles recommended by the Bitcoin Design Community.
 
 ---
 
-**[Wallet interoperability]({{ '/guide/foundations/wallet-interoperability/' | relative_url }})**
+### [Wallet interoperability]({{ '/guide/foundations/wallet-interoperability/' | relative_url }})
 
-An overview of important interaction points between Bitcoin applications and user experiences, from payment links and wallet recovery to node configuration.
+Get to know the points of interaction and overlap connecting payment links, wallet recovery, node configurations, and more.

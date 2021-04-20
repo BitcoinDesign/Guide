@@ -47,13 +47,49 @@ This guide was built on that very idea. Like a travel guide, it provides an intr
 
 With Bitcoin being so new and different, a big focus of the guide lies on providing overviews, explanations and best practices for the most common questions and problems. These are the main chapters:
 
-- [Getting started]({{ '/guide/getting-started/introduction/' | relative_url }}) is for top-level overviews, whether it's bitcoin technology, visual language, software, or design collaboration in an open-source world
-- [Onboarding]({{ '/guide/onboarding/introduction/' | relative_url }})  goes in-depth on the delicate process of introducing new users to bitcoin and how to use specific products and features
-- [Private key management]({{ '/guide/private-key-management/introduction/' | relative_url }}) provides extensive details and guidance on the many techniques for storing private keys
-- [Payments]({{ '/guide/payments/' | relative_url }}) deals with the complexities of sending and receiving bitcoin across various use cases
-- [Foundations]({{ '/guide/foundations/' | relative_url }}) highlights principles, best practices and other useful information for designing Bitcoin products
-- [Case studies]({{ '/guide/case-studies/' | relative_url }}) explores approaches to diverse uses cases with wireframes, designs and prototypes.
-- [Glossary]({{ '/guide/glossary/' | relative_url }}) explains common Bitcoin terminology, from Address to ZPUB.
+---
+
+### [Getting started]({{ '/guide/getting-started/introduction/' | relative_url }})
+
+For top-level overviews, whether it's bitcoin technology, visual language, software, or design collaboration in an open-source world.
+
+---
+
+### [Onboarding]({{ '/guide/onboarding/introduction/' | relative_url }})
+
+Goes in-depth on the delicate process of introducing new users to bitcoin and how to use specific products and features.
+
+---
+
+### [Private key management]({{ '/guide/private-key-management/introduction/' | relative_url }})
+
+Provides extensive details and guidance on the many techniques for storing private keys.
+
+---
+
+### [Payments]({{ '/guide/payments/' | relative_url }})
+
+Deals with the complexities of sending and receiving bitcoin across various use cases.
+
+---
+
+### [Foundations]({{ '/guide/foundations/' | relative_url }})
+
+Highlights principles, best practices and other useful information for designing Bitcoin product.
+
+---
+
+### [Case studies]({{ '/guide/case-studies/' | relative_url }})
+
+Explores approaches to diverse uses cases with wireframes, designs and prototypes.
+
+---
+
+### [Glossary]({{ '/guide/glossary/' | relative_url }})
+
+Explains common Bitcoin terminology, from Address to ZPUB.
+
+---
 
 ## How to use the guide
 

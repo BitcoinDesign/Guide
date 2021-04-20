@@ -176,7 +176,7 @@ Per definition, multi signature wallets require interaction between all cosigner
    layout = "float-right-desktop"
 %}
 
-While it is extremely convenient when applications provide their own node connections, it is recommended to allow users to have a choice, and potentially even encourage them to set up their own node. This results in better decentralization, and also has privacy and security benefits.
+While it is extremely convenient when applications provide their own node connections, it is recommended to allow users to have a choice, and potentially even encourage them to set up their own node. This results in better [decentralization](/guide/foundations/principles/#decentralization), and also has privacy and [security](/guide/foundations/principles/#security) benefits.
 
 </div>
 
