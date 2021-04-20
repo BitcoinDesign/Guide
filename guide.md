@@ -45,25 +45,41 @@ We designed this guide to help anyone navigate those complexities—regardless o
 
 ## What's in it?
 
-The Bitcoin Design Guide is divided into the following sections:
+### [Getting started]({{ '/guide/getting-started/introduction/' | relative_url }})
 
-- [Getting started]({{ '/guide/getting-started/introduction/' | relative_url }}) provides top-level overviews of common visual language, software, and best practices for design collaboration
-- [Onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}) familiarizes designers with the products, features, and terms needed to create better experiences for first time users
-- [Private key management]({{ '/guide/private-key-management/introduction/' | relative_url }}) details the many techniques that can be used to store private keys
-- [Payments]({{ '/guide/payments/' | relative_url }}) covers the complexities encountered when sending and receiving bitcoin
-- [Foundations]({{ '/guide/foundations/' | relative_url }}) highlights principles and other fundamentals of designing Bitcoin products
-- [Case studies]({{ '/guide/case-studies/' | relative_url }}) explores wire framing, designing, and prototyping for diverse use cases
-- [Glossary]({{ '/guide/glossary/' | relative_url }}) helps you learn the most need-to-know Bitcoin terminology from Address to ZPUB
+Provides top-level overviews of common visual language, software, and best practices for design collaboration.
+---
 
+### [Onboarding]({{ '/guide/onboarding/introduction/' | relative_url }})
 
-## How to use the guide
+Familiarizes designers with the products, features, and terms needed to create better experiences for first time users.
+---
 
-Can’t find what you’re looking for? Try [asking the community](http://bitcoindesigners.org), [filing an issue]({{site.github_repository_url}}issues), or using the search function.
+### [Private key management]({{ '/guide/private-key-management/introduction/' | relative_url }})
 
-## A community effort
+Details the many techniques that can be used to store private keys.
+---
 
-We based this guide on the same philosophy of decentralization that Bitcoin is built on. This means that no single person, company, or government has control over the guide. Instead, it is maintained by an open and informal community of designers and design enthusiasts. Everyone is welcome to contribute.
+### [Payments]({{ '/guide/payments/' | relative_url }})
+
+Covers the complexities encountered when sending and receiving bitcoin.
+---
+
+### [Foundations]({{ '/guide/foundations/' | relative_url }})
+
+Highlights principles and other fundamentals of designing Bitcoin products
 
 ---
 
+### [Case studies]({{ '/guide/case-studies/' | relative_url }})
+
+Explores wire framing, designing, and prototyping for diverse use cases.
+
+---
+
+### [Glossary]({{ '/guide/glossary/' | relative_url }})
+
+Helps you learn the most need-to-know Bitcoin terminology from Address to ZPUB
+
+---
 Let's [get started]({{ '/guide/getting-started/introduction/' | relative_url }}).
