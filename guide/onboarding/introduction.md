@@ -6,7 +6,7 @@ has_children: true
 nav_order: 3
 permalink: /guide/onboarding/introduction/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/onboarding/onboarding.png
+image: https://bitcoin.design/assets/images/guide/onboarding/onboarding-preview.png
 ---
 
 <!--
@@ -19,7 +19,10 @@ scan this page to get an overview of the section and then decide which topics to
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/onboarding.svg"
+   image = "/assets/images/guide/onboarding/onboarding.png"
+   retina = "/assets/images/guide/onboarding/onboarding@2x.png"
+   mobile = "/assets/images/guide/onboarding/onboarding-mobile.png"
+   mobileRetina = "/assets/images/guide/onboarding/onboarding/onboarding-mobile@2x.png"
    alt-text = "Person climbing ladder"
    width = 1600
    height = 600
@@ -40,13 +43,20 @@ Remember: Onboarding should not be a crutch for bad design. Avoid trying to expl
 
 ---
 
-[**Getting to know your users**]({{ '/guide/onboarding/getting-to-know-your-users/' | relative_url }})
-
+### [Getting to know your users]({{ '/guide/onboarding/getting-to-know-your-users/' | relative_url }})
 
 This section will give you some tips on how best to understand and develop knowledge about your users.
 
 ---
 
-**First-time user experience (coming soon)**
+### First-time user experience (coming soon)
 
 An overview of how to design a successful onboarding experience for first-time users. This will help set the basis for a more advanced type of user.
+
+### Creating a wallet (coming soon)
+
+### Funding a wallet (coming soon)
+
+### Restoring a wallet (coming soon)
+
+### Protecting a wallet (coming soon)

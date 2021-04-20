@@ -94,6 +94,8 @@ Some of these features come with highly complex technical challenges and can be 
 
 Another reason is that standards are still evolving as some of the technology is still maturing. Even fundamental aspects like address formats and how keys are generated can be implemented in incompatible ways.
 
+</div>
+
 ## Payment processors
 
 <div class="center" markdown="1">

@@ -55,6 +55,7 @@ The Bitcoin Design Guide is divided into the following sections:
 - [Case studies]({{ '/guide/case-studies/' | relative_url }}) explores wire framing, designing, and prototyping for diverse use cases
 - [Glossary]({{ '/guide/glossary/' | relative_url }}) helps you learn the most need-to-know bitcoin terminology from Address to ZPUB
 
+
 ## How to use the guide
 
 Can’t find what you’re looking for? Try [asking the community](http://bitcoindesigners.org), [filing an issue]({{site.github_repository_url}}issues), or using the search function.

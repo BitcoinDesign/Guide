@@ -27,30 +27,30 @@ We have already established that [Bitcoin is money](https://bitcoin.design/guide
 
 ---
 
-**[Transactions overview](/guide/payments/transactions/)**
+### [Transactions overview](/guide/payments/transactions/)
 
 An overview of Bitcoin payments, common concepts and the transaction lifecycle.
 
 ---
 
-**[Sending bitcoin](/guide/payments/send/)**
+### [Sending bitcoin](/guide/payments/send/)
 
 An introduction to how sending bitcoin works.
 
 ---
 
-**Receiving bitcoin (coming soon)**
+### Receiving bitcoin (coming soon)
 
 An introduction to how receiving and requesting bitcoin works.
 
 ---
 
-**Transaction privacy (coming soon)**
+### Transaction privacy (coming soon)
 
 An overview of how to help users maintain their financial privacy while using Bitcoin.
 
 ---
 
-**Managing funds (coming soon)**
+### Managing funds (coming soon)
 
 How to help users organize and manage their transaction data and holdings.

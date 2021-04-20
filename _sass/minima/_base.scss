@@ -195,10 +195,6 @@ blockquote {
 
   > :last-child {
     margin-bottom: 0;
-
-    &::first-letter {
-      font-size: 0;
-    }
   }
 
   i, em {

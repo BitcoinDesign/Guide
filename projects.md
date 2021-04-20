@@ -26,6 +26,8 @@ projects:
       width: 75
       height: 75
     links:
+      - name: Site
+        link: https://bitcoinicons.com
       - name: Figma
         link: https://www.figma.com/community/file/948545404023677970/Bitcoin-icon-set
       - name: Github

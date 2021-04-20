@@ -22,7 +22,7 @@ title: Bitcoin Design
 email: no-reply@bitcoindesign.org
 description: "Bitcoin Design aims to be a free open-source community resource that will help designers and developers working on bitcoin-products to create better experiences, faster."
 # baseurl: "Guide" # Only for gh-pages. Comment this line to run the website on localhost:4000
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://bitcoin.design" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 

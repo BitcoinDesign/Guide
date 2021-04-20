@@ -45,6 +45,96 @@ article.guide {
     }
   }
 
+  .do {
+    margin-top: $spacing-unit;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f8f8f8;
+    @include responsive('padding', 20, 30);
+
+    .icon {
+      flex-grow: 0;
+      display: flex;
+      align-items: center;
+      padding-top: 2px;
+
+      &.-green {
+        svg {
+          background-color: $green;
+        }
+      }
+
+      &.-red {
+        svg {
+          background-color: $red;
+        }
+      }
+
+      svg {
+        display: block;
+        background-color: $blue;
+        border-radius: 3px;
+        width: 24px;
+        height: 24px;
+        color: white;
+        vertical-align: middle;
+        transform: translateY(-2px);
+      }
+    }
+
+    h6 {
+      margin: 0 0 0 10px;
+      padding: 0px 0 0 0;
+      font-size: 18px;
+      font-weight: 500;
+      flex-grow: 1;
+      flex-basis: 50%;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    .copy {
+      p {
+        & + figure {
+          margin-top: 10px;
+        }
+      }
+
+      figure {
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .dos {
+    display: flex;
+
+    @include media-query(small) {
+      flex-direction: column;
+
+      .do {
+        & + .do {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    @include media-query(medium-up) {
+      .do {
+        flex-basis: 30%;
+        flex-grow: 1;
+
+        & + .do {
+          margin-left: 40px;
+        }
+      }
+    }
+  }
+
   .tip,
   .recommendation {
     margin-top: $spacing-unit;
@@ -433,15 +523,15 @@ article.guide {
     max-width: none !important;
 
     figure {
-      img {
-        box-shadow: 0 20px 10px -8px rgba(black, 0.05);
-        border: 1px solid rgba(black, 0.1);
-      }
-
       margin-top: 0;
       margin-bottom: 0;
       float: left;
       margin-right: 30px;
+
+      img {
+        box-shadow: 0 20px 10px -8px rgba(black, 0.05);
+        border: 1px solid rgba(black, 0.1);
+      }
     }
 
     @include media-query(small) {
@@ -480,9 +570,10 @@ article.guide {
       flex-shrink: 0;
       margin-top: 0;
       margin-bottom: 0;
+      width: min-content;
 
       img {
-        width: 100%;
+        max-width: none;
         height: auto;
       }
 

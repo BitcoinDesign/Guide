@@ -65,9 +65,9 @@ Once you have gotten the address, it's time to enter the payment details. Bitcoi
 
 **Don'ts**
 
-- Prevent the transaction to be sent if the address is invalid
+- Make it possible that a transaction is sent if the address is invalid
 
-## Inputing an amount
+## Inputting an amount
 
 <div class="center" markdown="1">
 {% include image.html
@@ -106,7 +106,7 @@ The application can automatically estimate a fee and set it for the sender. This
 
 When allowing the sender to set fees, it is essential to communicate the estimated cost in their preferred currency and the estimated time until first confirmation. Be mindful that the way Bitcoin fees get calculated may not map to the sender's traditional financial experience. If you allow adjustment of fees, consider providing details on how it gets calculated.
 
-Human error with fee selection can lead to costly mistakes, and fee estimations are imperfect. Carefully consider if and how you expose transaction fees to senders.
+Human error with fee selection can lead to costly mistakes, and fee estimations are imperfect. Carefully consider if and how you expose transaction fee selection to senders.
 </div>
 
 **Variations**
@@ -131,7 +131,7 @@ Human error with fee selection can lead to costly mistakes, and fee estimations 
    layout = "float-right-desktop"
 %}
 
-A valid transaction that is broadcasted to the network cannot be reversed, so it is critical that the sender is given a chance to double check the payment details (amount, recipient address, total fee, etc) before submitting the transaction.
+A valid transaction that is broadcast to the network cannot be reversed, so it is critical that the sender is given a chance to double check the payment details (amount, recipient address, total fee, etc) before submitting the transaction.
 
 If your application allows setting spending limits, and the current transaction exceeds it, make sure they go through some security check (biometric, enter PIN, 2FA password, etc). This technique can also be employed if the transaction is attempting to use the max wallet balance.
 </div>
@@ -145,18 +145,18 @@ If your application allows setting spending limits, and the current transaction 
 
 {% include image.html
    image = "/assets/images/guide/payments/send/first-confirmation.svg"
-   alt-text = "Notifications after the transaction is broadcasted"
+   alt-text = "Notifications after the transaction is broadcast"
    width = 1600
    height = 800
 %}
 
-Let us look at how we communicate to the sender about the [processing of a transaction]({{ '/guide/payments/transactions/#transaction-lifecycle' | relative_url }}) after it has been broadcasted. There are three main states that you would want to inform or notify the sender of:
+Let us look at how we communicate to the sender about the [processing of a transaction]({{ '/guide/payments/transactions/#transaction-lifecycle' | relative_url }}) after it has been broadcast. There are three main states that you would want to inform or notify the sender of:
 
-**Pending/Unconfirmed** -- The transaction is successfully in the nodes' memory pool and is being propagated throughout the network. The fee market can sometimes be volatile, and the "time until the first confirmation" may change from what was estimated when they had initially broadcasted the transaction. While pending, inform the sender of when they can expect the first transaction confirmation.
+**Pending/Unconfirmed** -- The transaction is successfully in the nodes' memory pool and is being propagated throughout the network. The fee market can sometimes be volatile, and the "time until the first confirmation" may change from what was estimated when they had initially broadcast the transaction. While pending, inform the sender of when they can expect the first transaction confirmation.
 
-**1 confirmation** -- The transaction has been selected by miners and included in a block. Since a reorganization can still happen, a transaction with one confirmation can also be considered a pending state by the receiver. This is a good point to notify the sender.
+**First confirmation** -- The transaction has been selected by miners and included in a block. Since a reorganization can still happen, a transaction with one confirmation can also be considered a pending state by the receiver. This is a good point to notify the sender.
 
-**6 confirmations** -- Commonly regarded as when the final settlement of the payment happens. Merchants, for example, would only be willing to release the product or service at this point.
+**Sixth confirmation** -- Commonly regarded as when the final settlement of the payment happens. Merchants, for example, would only be willing to release the product or service at this point.
 
 **Do's**
 - Clearly indicate the state of the outgoing transaction
