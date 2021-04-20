@@ -88,6 +88,19 @@ In a Bitcoin wallet, funds are often not held in a single address, but more comm
 
 Likewise, you need to specify the destination address or addresses for the transaction. These are called *outputs*. should there be more bitcoin in the inputs than are needed for the payment, a new address will be created in your wallet for the remaining change, often called a *change output*.
 
+{% include picture.html
+image = "/assets/images/guide/payments/transactions/inputs-and-outputs.svg"
+mobile = "/assets/images/guide/payments/transactions/inputs-and-outputs-mobile.svg"
+alt-text = "A flow chart depicting outputs beings used as the inputs to new transactions, which in turn have their own outputs."
+width = 977
+height = 443
+layout = "full-width"
+%}
+
+The above image is an example of how transaction outputs become the inputs to new transactions. The "sender", represented in purple, decides to send somebody **0.001 BTC**. To accomplish this, they use a **0.005 BTC** input from their wallet. This results in two outputs, one **0.001 BTC** _payment output_ to the wallet of the "receiver", represented in blue, and one **0.004 BTC** change output back to the sender's wallet.
+
+Next, the sender decides to send somebody **0.005 BTC**. To accomplish this, they combine their **0.004 BTC** output from the previous transaction with a **0.002 BTC** output from their wallet. This also results in two outputs, a **0.005 BTC** payment output to the second receiver's wallet, represented in green, and a **0.001 BTC** output to their own wallet. These outputs may also become the inputs to future transactions.
+
 ### Transaction fee
 
 Every transaction needs to pay a fee to incentivize miners to include it in a block. There is no fixed fee for making a transaction as it depends on the amount of data it includes, the amount of other transactions that are trying to get verified, and how much each submitter is prepared to pay. Miners typically pick the transactions that will earn them the highest reward to include in a block.
