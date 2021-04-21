@@ -35,7 +35,7 @@ The wallet creation process is an excellent place to break things up into differ
    layout = "float-left-desktop -background -shadow"
 %}
 
-After downloading a wallet application, users are typically presented with the option of either creating a new wallet or restoring an existing one. Obviously, first-time users will be going through the flow of creating a new wallet.
+After downloading a wallet application, users are typically presented with the option of either creating a new wallet or restoring an existing one. Obviously, people who have not used bitcoin before will be going through the flow of creating a new wallet.
 
 Once an individual selects “create a new wallet”, it’s typical for beginner-friendly applications to first present informational carousels that provide a high-level overview of the implications, benefits, and responsibility that comes with having a non-custodial wallet. This moment is a great place to explain that, unlike traditional centralized financial products, a user’s “account” information cannot be recovered by the respective company. Rather, it is up to the user to safely protect their wallet information.
 
