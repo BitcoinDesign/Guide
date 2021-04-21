@@ -84,7 +84,7 @@ While this may sound daunting to first-time users, these caveats mustn't be hidd
 
 </div>
 
-The above screens exhibit the typical first screens that users are shown after downloading a Bitcoin wallet, followed by an outline of suggested informational carousels that explicitly lay out/guide users on the unique features of non-custodial wallets to make sure they understand these caveats. These screens suggest talking about ownership of their “account”, explicitly stating the recovery mechanism that the respective wallet uses, and security measures that they should take to protect their wallet.
+Above exhibits the typical first screens that users are shown after downloading a Bitcoin wallet, followed by an outline of suggested informational carousels that explicitly lay out/guide users on the unique features of non-custodial wallets to make sure they understand these caveats. These screens suggest talking about ownership of their “account”, explicitly stating the recovery mechanism that the respective wallet uses, and security measures that they should take to protect their wallet.
 
 ---
 
