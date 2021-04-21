@@ -26,44 +26,44 @@ Join our open community and help us improve the Bitcoin Design Guide. Here’s w
 
 ---
 
-**[Slack channel]({{ site.slack_invite_url }})**
+### [Slack channel]({{ site.slack_invite_url }})
 
 Head over to the Bitcoin [Bitcoin Design Slack community]({{ site.slack_invite_url }}) and join the #bitcoin-design-guide channel. If you don’t have Slack, you can [download it here](https://slack.com/intl/en-rs/downloads) or on the App Store.
 
 
 ---
 
-**[GitHub](https://github.com/BitcoinDesign/Guide)**
+### [GitHub](https://github.com/BitcoinDesign/Guide)
 
 The Bitcoin Design Guide is hosted on GitHub, an open-source collaboration platform. This is where you can view outstanding [issues](https://github.com/BitcoinDesign/Guide/issues), propose changes, see what needs to be done, and see who’s working alongside you.
 
 ---
 
-**[Proposing changes]({{ '/guide/contribute/propose-a-change/' | relative_url }})**
+### [Proposing changes]({{ '/guide/contribute/propose-a-change/' | relative_url }})
 
 Learn the basics of collaborating on GitHub so that when you’re ready to make your first pull request, you’ll know how.
 
 ---
 
-**[Become a reviewer]({{ '/guide/contribute/review/' | relative_url }})**
+### [Become a reviewer]({{ '/guide/contribute/review/' | relative_url }})
 
 Get involved in the Bitcoin Design Guide review process. Reviewers are essential to improving the quality and usefulness of the guide.
 
 ---
 
-**[Content guidelines]({{ '/guide/contribute/content-guidelines/' | relative_url }})**
+### [Content guidelines]({{ '/guide/contribute/content-guidelines/' | relative_url }})
 
 Tips on how to write for the guide. The goal is to achieve a consistent tone across all pages for the benefit of readers.
 
 ---
 
-**[Illustration guidelines]({{ '/guide/contribute/illustration-guidelines/' | relative_url }})**
+### [Illustration guidelines]({{ '/guide/contribute/illustration-guidelines/' | relative_url }})
 
 Creating visuals for the Bitcoin Design Guide? We recommend following these best practices for file naming, image sizing, and on.
 
 ---
 
-**[Formatting]({{ '/guide/contribute/formatting/' | relative_url }})**
+### [Formatting]({{ '/guide/contribute/formatting/' | relative_url }})
 
 Layout and formatting options from headers and blockquotes to images and embeds.
 

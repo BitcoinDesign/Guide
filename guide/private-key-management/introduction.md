@@ -31,31 +31,31 @@ scan this page to get an overview of the section and then decide which topics to
 
 # Private key management
 
-Protecting a user's private keys comes with no less responsibility than safeguarding their bank accounts. That puts [private key]({{ '/guide/glossary/#private-key' | relative_url }}){:target="_blank"}management at the center of all bitcoin application design considerations. It also presents a problem: if your application is not secure enough, you risk losing the user's funds. But if it's not convenient enough, you risk losing the user.
+Protecting a user's private keys comes with no less responsibility than safeguarding their bank accounts. That puts [private key]({{ '/guide/glossary/#private-key' | relative_url }}){:target="_blank"} management at the center of all bitcoin application design considerations. It also presents a problem: if your application is not secure enough, you risk losing the user's funds. But if it's not convenient enough, you risk losing the user.
 
 This chapter is an overview of private key management schemes, including descriptions of available approaches, advice, and best practices. After this chapter, you should be able to choose a solution that is suited to your users.
 
 ---
 
-**[Private key schemes]({{ '/guide/private-key-management/schemes/' | relative_url }})**
+###  [Private key schemes]({{ '/guide/private-key-management/schemes/' | relative_url }})
 
 Get to know the most common bitcoin private key management schemes, then follow our guidelines to pick the right one for your users.
 
 ---
 
-**[Personal schemes]({{ '/guide/private-key-management/single-user-schemes/' | relative_url }})**
+### [Personal schemes]({{ '/guide/private-key-management/single-user-schemes/' | relative_url }})
 
 An introduction to some of the common private key management schemes for individual users.
 
 ---
 
-**[Shared schemes]({{ '/guide/private-key-management/single-user-schemes/' | relative_url }})**
+### [Shared schemes]({{ '/guide/private-key-management/single-user-schemes/' | relative_url }})
 
 An introduction to some of the common private key management schemes for shared users.
 
 ---
 
-**[Case studies]({{ '/guide/case-studies/' | relative_url }})**
+### [Case studies]({{ '/guide/case-studies/' | relative_url }})
 
 A look at hypothetical application uses and suitable approaches to private key management for each of them.
 

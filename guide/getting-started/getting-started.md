@@ -38,66 +38,66 @@ Welcome to the Bitcoin Design Guide! You’re in for an adventure. This chapter 
 
 ---
 
-**[Why Bitcoin is unique]({{ '/guide/getting-started/why-bitcoin-is-unique/' | relative_url }})**
+### [Why Bitcoin is unique]({{ '/guide/getting-started/why-bitcoin-is-unique/' | relative_url }})
 
 The internet has opened an infinite design space for information and communication. Bitcoin adds the new dimension of transferring value that could bring similar change as previous waves of innovation.
 
 ---
 
-**[Why design for Bitcoin]({{ '/guide/getting-started/why-design-for-bitcoin/' | relative_url }})**
+### [Why design for Bitcoin]({{ '/guide/getting-started/why-design-for-bitcoin/' | relative_url }})
 
 Bitcoin is fundamentally open and participatory and allows designers and creators to explore and shape experiences for users around the globe.
 
 ---
 
-**[Open design]({{ '/guide/getting-started/open-design/' | relative_url }})**
+### [Open design]({{ '/guide/getting-started/open-design/' | relative_url }})
 
 Open design is about global collaboration that balances the free exchange of design information, the independence of individual designers and the collective power of collaboration.
 
 ---
 
-**[The visual language of Bitcoin]({{ '/guide/getting-started/visual-language/' | relative_url }})**
+### [The visual language of Bitcoin]({{ '/guide/getting-started/visual-language/' | relative_url }})
 
 As an open and public protocol, Bitcoin does not have a strictly defined brand. Yet there is a recognizable symbol that has evolved and remixed endlessly.
 
 ---
 
-**[User research]({{ '/guide/getting-started/user-research/' | relative_url }})**
+### [User research]({{ '/guide/getting-started/user-research/' | relative_url }})
 
 All products begin with user needs and end in those same users hands. User research is a fundamental activity that helps us focus on things people care about.
 
 ---
 
-**[Personal finance]({{ '/guide/getting-started/personal-finance/' | relative_url }})**
+### [Personal finance]({{ '/guide/getting-started/personal-finance/' | relative_url }})
 
 If we consider Bitcoin money, we need to consider how Bitcoin users think about their finances. This page provides a simple framework that can serve as a starting point, deriving bitcoin software and hardware setups from common budgeting categories.
 
 ---
 
-**[Usage life cycle]({{ '/guide/getting-started/usage-life-cycle/' | relative_url }})**
+### [Usage life cycle]({{ '/guide/getting-started/usage-life-cycle/' | relative_url }})
 
 All users start without any knowledge of Bitcoin or your particular product. As we learn more, our understanding and needs change. As designers, it is essential to guide users through this experience.
 
 ---
 
-**[Common user flows]({{ '/guide/getting-started/common-user-flows/' | relative_url }})**
+### [Common user flows]({{ '/guide/getting-started/common-user-flows/' | relative_url }})
 
 Most Bitcoin applications share certain user activities, from initial setup to making a transaction. It is vital to follow users' expected patterns and behaviors to reduce mistakes and enable seamless switching between products.
 
 ---
 
-**[Technology primer]({{ '/guide/getting-started/technology-primer/' | relative_url }})**
+### [Technology primer]({{ '/guide/getting-started/technology-primer/' | relative_url }})
 
 Learn the basics behind the technologies that make Bitcoin work, from what a Bitcoin is to how transactions are confirmed.
 
 ---
 
-**[Software overview]({{ '/guide/getting-started/software/' | relative_url }})**
+### [Software overview]({{ '/guide/getting-started/software/' | relative_url }})
 
 Bitcoin applications roughly fall into a defined set of categories, from consumer-friendly wallets, to merchant tools, and more.
 
 ---
 
-**[Hardware overview]({{ '/guide/getting-started/hardware/' | relative_url }})**
+### [Hardware overview]({{ '/guide/getting-started/hardware/' | relative_url }})
 
 Whether it's for security or participating in the network, Bitcoin hardware is an essential part of the ecosystem and user experience.
