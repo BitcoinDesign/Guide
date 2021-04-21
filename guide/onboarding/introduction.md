@@ -49,30 +49,30 @@ This section will give you some tips on how best to understand and develop knowl
 
 ---
 
-[**Creating a new wallet**]({{ '/guide/onboarding/creating-a-new-wallet/' | relative_url }})
+### [Creating a new wallet]({{ '/guide/onboarding/creating-a-new-wallet/' | relative_url }})
 
 An overview of what information to include when creating a wallet for the first time.
 
 ---
 
-**Backing up a recovery phrase (coming soon)**
+### Backing up a recovery phrase (coming soon)
 
 An overview of the tradeoffs between using manual backups vs seedless backups.
 
 ---
 
-**Restoring a wallet (coming soon)**
+### Restoring a wallet (coming soon)
 
 What options to consider if a user has lost their device, had it stolen or deleted and redownloaded a particular wallet application.
 
 ---
 
-**Protecting a wallet (coming soon)**
+### Protecting a wallet (coming soon)
 
 An overview of how to add extra layers of securtiy to protect sensitive user data.
 
 ---
 
-**Funding a wallet (coming soon)**
+### Funding a wallet (coming soon)
 
 An overview of how users are likely to fund their wallets
