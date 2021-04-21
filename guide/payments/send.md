@@ -91,7 +91,7 @@ Applications sometimes also allow the sender to select fractions of their total 
 - Payment links and QR Codes can contain an amount. When they do, your application should populate the amount field automatically
 - Indicate if an amount entered is more than the available balance
 
-## Transaction fee
+## Setting the transaction fee
 
 <div class="center" markdown="1">
 {% include image.html
@@ -131,9 +131,9 @@ Human error with fee selection can lead to costly mistakes, and fee estimations 
    layout = "float-right-desktop"
 %}
 
-A valid transaction that is broadcast to the network cannot be reversed, so it is critical that the sender is given a chance to double check the payment details (amount, recipient address, total fee, etc) before submitting the transaction.
+A valid transaction that is broadcast to the network cannot be reversed, so it is critical that the sender is given a chance to double-check the payment details (amount, recipient address, total fee, etc) before submitting the transaction.
 
-If your application allows setting spending limits, and the current transaction exceeds it, make sure they go through some security check (biometric, enter PIN, 2FA password, etc). This technique can also be employed if the transaction is attempting to use the max wallet balance.
+If your application allows setting spending limits, and the current transaction exceeds it, make sure they go through some security check (biometric, enter a PIN, 2FA password, etc). This technique can also be employed if the transaction is attempting to use the max wallet balance.
 </div>
 
 **Do's**
@@ -168,4 +168,4 @@ Let us look at how we communicate to the sender about the [processing of a trans
 
 ---
 
-Sending is just one side of the process. Lets now look at things from the [receivers perspective](/payments/receive).
+Sending is one side of the process. Let's look at things from the [receiver's perspective](/payments/receive).

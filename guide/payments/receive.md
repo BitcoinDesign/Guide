@@ -23,9 +23,11 @@ This page should cover what to do when receiving bitcoin, how to share and copy 
 
 -->
 
-The details required by a sender to make a payment, at minimum, is an address. You can think of an address just as you would an invoice. The receiver generates it in their Bitcoin wallet application and is presented to the sender each time a new payment is requested.
+The details required by a sender to make a payment, at minimum, is an address. You can think of an address just as you would an invoice, as it is only used once. The receiver generates an address in their Bitcoin application and gives it to the sender. Just as with traditional invoices, a new address needs to be created each time the receiver wants to receive funds.
 
-We will now dive into scenarios like when receivers may have other payment details that they may want to share and friction points for incoming payments like address compatibility.
+There is other contextual information about payments, like the names of the transacting parties or the purpose, that is also useful to keep and communicate. Remember, the blockchain does not store any of this. Such information can only be stored in your application or encoded in [payment links](https://bitcoin.design/guide/foundations/wallet-interoperability/#payment-links). After a transaction is finalized, all that will get recorded are amounts and addresses.
+
+Let’s now explore our options when receivers may have other payment details that they may want to share with the sender or store alongside the payment request for their own record keeping. We will also look at the friction points that can arise from address incompatibility.
 
 <!-- 
 Update glossary
@@ -35,22 +37,34 @@ Each address that a Bitcoin application generates has an accompaniying private k
 Although addresses are not a problem to share publically, their accompanying private keys which typically generated from a single recovery phrase must be kept secure and private.
 -->
 
-## Entering details for the payment request
-Oftentimes, to complete a payment, the sender would require some additional information like an amount. The receiver may also want to keep some notes about the payment for their future accounting.
+## Creating an invoice
+Oftentimes, to complete a payment, the sender may need to know the specific amount to be sent. On the receiver’s side, they may want to keep some notes about who sent the bitcoin to help them manage their funds in the future and understand their past transaction activity.
 
-The following are the primary properties of a payment request:
-- **Address** -- the destination of the payment (automatically generated)
-- **Amount** -- how much is being sent (requires user input)
-- **Label** -- who is receiving (requires user input)
-- **Message** -- what the payment is for (requires user input)
+The following are the primary properties of a Bitcoin invoice:
+
+- **Address** – The destination of the payment
+- **Amount** – How much is being requested (optional)
+- **From** – Name of who is sending the payment (optional)
+- **Purpose/Message** – Note with a description of what the payment is for (optional)
+
+While the application will generate a new address in the background, other information like; how much is being requested, the name of the sender, and what is being paid for has to be manually entered by the receiver. The order in which these properties get entered is up to you, and besides the address, all else is optional.
+
+<!--
+Technical nitpick;
+Addresses are not exactly "generated"
+since they are deterministic technically
+what happens is an unused address just gets chosen
+-->
+
+The more time passes, the more difficult it will be to recall the details of transactions. When transacting in Bitcoin there is no requirement for senders and receivers even to identify themselves, so both sides may end up having a transaction history with only amounts and random-looking text (addresses) to reference when trying to understand where some funds came from.
 
 <div class="image-slide-gallery">
 
 {% include picture.html
    image = "/assets/images/guide/payments/receive/enter-details-amount.png"
    retina = "/assets/images/guide/payments/receive/enter-details-amount@2x.png"
-   alt-text = "..."
-   caption = "..."
+   alt-text = "Screen asking the receiver to enter the amount being requested"
+   caption = "The receiver can specify the amount that they are requesting. This could be shared in payment links which would auto-fill the amount for the sender."
    width = 250
    height = 541
 %}
@@ -58,8 +72,8 @@ The following are the primary properties of a payment request:
 {% include picture.html
    image = "/assets/images/guide/payments/receive/enter-details-from.png"
    retina = "/assets/images/guide/payments/receive/enter-details-from@2x.png"
-   alt-text = "Note for who they payment is being recieved from"
-   caption = "..."
+   alt-text = "Screen asking the receiver to enter the name of the sender"
+   caption = "The receiver can specify the amount that they are requesting. This could be shared in payment links which would auto-fill the amount for the sender."
    width = 250
    height = 541
 %}
@@ -67,24 +81,27 @@ The following are the primary properties of a payment request:
 {% include picture.html
    image = "/assets/images/guide/payments/receive/enter-details-purpose.png"
    retina = "/assets/images/guide/payments/receive/enter-details-purpose@2x.png"
-   alt-text = "..."
-   caption = "..."
+   alt-text = "Screen asking the receiver to enter the purpose of the payment"
+   caption = "Sometimes the purpose can be determined by identifying who the payment is from. Be mindful of that, and consider easy ways to help the receiver add more context."
    width = 250
    height = 541
 %}
+</div>
+
+If your design’s goal is to get the receiver in the quickest time to share an address, you can choose to show them a new address straight away. The other properties can be left as optional fields. Consider the trade-off when optimizing this way, as there will be less useful contextual details for reports that you may want to provide in the future.
+
+<div class="image-slide-gallery">
 
 {% include picture.html
    image = "/assets/images/guide/payments/receive/enter-details-compact.png"
    retina = "/assets/images/guide/payments/receive/enter-details-compact@2x.png"
-   alt-text = "..."
-   caption = "..."
+   alt-text = "Screen showing QR Code for the address and optional entry for other properties"
+   caption = "All properties editable on a single screen"
    width = 250
    height = 541
 %}
 
 </div>
-
-Bitcoin "payment links" can be used to share payment details so that [different applications can understand](https://bitcoin.design/guide/foundations/wallet-interoperability/#payment-links). It should be noted that although the label and message are often disregarded when sharing payment links, the amount is usually kept and auto-fills in the sender's application.
 
 <!-- 
 Update interopability page
@@ -96,46 +113,35 @@ Since bitcoin is a open system and has many payment applications built ontop of 
 -->
 
 ## Choosing the type of address
-There are currently [three different versions](https://bitcoin.design/guide/glossary/#address) of bitcoin addresses, in order of oldest to newest they are; Legacy, Script, and SegWit. It is best practice for new applications to support the latest, SegWit by default.
+There are currently [three different versions](https://bitcoin.design/guide/glossary/#address) of bitcoin addresses. In order of oldest to newest they are; Legacy, Script, and SegWit. It is best practice for new applications to support SegWit, the latest, by default.
 
-The most commonly used addresses are still the "legacy" addresses since Segwit addresses are only a few years old, and some older applications have yet to update.
+The most commonly used addresses are still the “legacy” addresses since Segwit addresses are only a few years old, and some older applications have yet to update.
 
-Suppose the sender is using a legacy wallet and paying to a receiver who gave them a SegWit address. In this case, their wallet may incorrectly warn them that the address is invalid or not supported. This can confuse the sender's end, leading them to think that the receiver provided an incorrect address.
+Suppose the sender is using a legacy wallet and paying to the receiver's SegWit address. In this case, the sender's wallet may incorrectly warn them that the address is invalid or not supported. This can confuse the sender’s end, leading them to think that the receiver provided an incorrect address.
+
+The receiver should then have the ability to switch to a Script address that does not have all the benefits of SegWit, like cheaper transactions but will be compatible with the sender's wallet.
 
 <div class="image-slide-gallery">
 
 {% include picture.html
-   image = "/assets/images/guide/payments/receive/select-address-default.png"
-   retina = "/assets/images/guide/payments/receive/select-address-default.png"
-   alt-text = "Example image"
-   caption = "Once the address is generated, ..."
+   image = "/assets/images/guide/payments/receive/address-switch.png"
+   retina = "/assets/images/guide/payments/receive/address-switch@2x.png"
+   alt-text = "Screen with modal of invoice details, and address switcher"
+   caption = "Allow the receiver to switch to a legacy compatible address"
    width = 250
    height = 541
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/payments/receive/select-address-legacy.png"
-   retina = "/assets/images/guide/payments/receive/select-address-legacy.png"
-   alt-text = "Example image"
-   caption = "Example text"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/payments/receive/select-address-info.png"
-   retina = "/assets/images/guide/payments/receive/select-address-info.png"
-   alt-text = "Example image"
-   caption = "Example text"
+   image = "/assets/images/guide/payments/receive/address-info.png"
+   retina = "/assets/images/guide/payments/receive/address-info@2x.png"
+   alt-text = "Screen explaining SegWit and Legacy addresses"
+   caption = "Provide information about the different address types"
    width = 250
    height = 541
 %}
 
 </div>
-
-Suppose the sender is using a legacy wallet and paying to a receiver using a SegWit address. In that case, their wallet may incorrectly warn them that the address is invalid or not supported. This can confuse the sender's end, leading them to think that the receiver provided an incorrect address.
-
-The receiver should then have the ability to choose a Script address that does not have all the benefits of SegWit, like cheaper transactions. Still, it will be recognized by the sender's outdated application.
 
 <!--
 On /guide/payments/send/#inputting-an-address
@@ -146,7 +152,30 @@ Add below as Do's & Don'ts
 -->
 
 ## Sharing the payment details
-The two methods of sharing payment details whether it is a simple address or a payment link are in text form, and as scannable QR Codes.
+Whether it’s just an address or a payment link, the two methods of sharing the payment details are text or scannable QR Codes.
+
+<div class="image-slide-gallery">
+
+{% include picture.html
+   image = "/assets/images/guide/payments/receive/share.png"
+   retina = "/assets/images/guide/payments/receive/share@2x.png"
+   alt-text = "Screen showing the invoice with a share button"
+   caption = ""
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/payments/receive/share-sharesheet.png"
+   retina = "/assets/images/guide/payments/receive/share-sharesheet@2x.png"
+   alt-text = "Screen showing the invoice overlayed with a share sheet"
+   caption = ""
+   width = 250
+   height = 541
+%}
+
+</div>
+
 
 **Text**
 
