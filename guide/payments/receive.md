@@ -179,7 +179,7 @@ Whether it’s just an address or a payment link, the two methods of sharing the
 
 **Text**
 
-Sharing payment details in this way is a straightforward process, where the text is just copied and pasted. It is also typical to provide the receiver with a button to conveniently share in other applications, with "share sheets," which most mobile operating systems offer.
+Sharing payment details as text is as straightforward as copying and pasting. It is also typical to provide the receiver with a button to conveniently share in other applications, with “share sheets,” which most mobile operating systems offer.
 
 **QR Codes**
 
