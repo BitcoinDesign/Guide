@@ -21,6 +21,20 @@ image: /assets/images/guide/payments/transactions/tx-preview.jpg
    layout = "full-width"
 %}
 
+<!--
+
+Editor's notes
+
+This page describes the structure of bitcoin transactions. It is not meant to be an extensive technical resource, but
+more of a primer on the subject. As bitcoin transactions are fundamentally different than traditional financial
+transactions, it's important for designers to understand these differences when creating for bitcoin.
+
+Illustration sources
+
+- https://www.figma.com/file/Da2FpXLqY2BX7WN4mQFNZo/Inputs-and-Outputs-Christoph-Copy?node-id=104%3A138
+
+-->
+
 # Transactions overview
 
 This page is meant to help you with understanding how bitcoin transactions get created and processed by the Bitcoin network. Bitcoin is a peer-to-peer push-payment system. This means that you can send, or push, bitcoin to any address at your will, at any time, without passing through a trusted third party.
