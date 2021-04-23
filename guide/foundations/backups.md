@@ -211,6 +211,7 @@ As the risk of discovery increases with the multiplying backups, it's best to ma
 %}
 
 **Do** 
+- Make sure you have reduntant copies of all parts of the backup in several locations
 - Document your setup well for next-of-kin now that complexity has increased
 
 **Don’t** 
