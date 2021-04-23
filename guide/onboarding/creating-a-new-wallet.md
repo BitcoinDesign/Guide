@@ -16,7 +16,7 @@ Instead, a bitcoin wallet contains the "private keys" to your bitcoin. The bitco
 
  Like regular keys on a keychain, bitcoin private keys can be copied. For example, if you gave someone a copy of your house keys, they can unlock the door to your home. Likewise, if someone has a copy of your private key, they can access your bitcoin. This makes [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) one of the most important considerations of any bitcoin owner.
 
-There are a few different types of wallets that let you send, receive, and store bitcoin.
+There are a few different types of wallets that let you send, receive, store and manage bitcoin.
 
 {% include /tip/open.html label="Tip: Break onboarding up" icon="info" color="blue" %}
 
