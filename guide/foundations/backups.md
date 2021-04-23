@@ -255,7 +255,7 @@ At this level, many solutions could provide high levels of protection, including
 # Inheritance instructions
 For any backup setup, sufficient information and understandable instructions for recovering the wallet should be available to next-of-kin.  
 
-Even though it might feel uncomfortable (or unnecessary if you are young and single), it is never too early to document your wallets. If you don’t, there is a very high chance that none of the funds will be available to next-of-kin. 
+Even though it might feel uncomfortable (or unnecessary if you are young and single), it is never too early to document your wallets. If you don’t, there is a very high chance that next-of-kin will not be able to inherit your funds. 
 
 At a minimum, document each wallet with a given name (Bob’s Bitcoin wallet 1), how to recover it, when it was created and what application was used to create the wallet. Ideally this document has all the instructions required to recover the wallet, but not the information itself (*recovery-phrase*, *pass-phrase* etc.), as that might expose you to theft on discovery risks.
 
