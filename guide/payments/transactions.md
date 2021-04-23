@@ -86,7 +86,7 @@ The principal properties are:
 
 In a Bitcoin wallet, funds are often not held in a single address, but more commonly in one address per transaction where you previously received bitcoin. When you are creating a transaction you need to specify which of your addresses you would like to use to fund it. If you need to spend more than what a single address holds, you can specify several. These are called *inputs* to the transaction.
 
-Likewise, you need to specify the destination address or addresses for the transaction. These are called *outputs*. should there be more bitcoin in the inputs than are needed for the payment, a new address will be created in your wallet for the remaining change, often called a *change output*.
+Likewise, you need to specify the destination address or addresses for the transaction. These are called *outputs*. Should there be more bitcoin in the inputs than are needed for the payment, a new address will be created in your wallet for the remaining change, often called a *change output*.
 
 {% include picture.html
 image = "/assets/images/guide/payments/transactions/inputs-and-outputs.svg"
