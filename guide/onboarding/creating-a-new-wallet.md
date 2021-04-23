@@ -14,7 +14,7 @@ First, bitcoin [wallets]({{ 'guide/glossary/#wallet' | relative_url }}) are not 
 
 Instead, a bitcoin wallet contains the "private keys" to your bitcoin. The bitcoin is located on the Bitcoin network that contains a public ledger similar in many ways to a spreadsheet with a record of everyone's transactions and balances. Private keys let you access bitcoin associated with those keys. A more suitable analogy for a bitcoin wallet would be a keychain.
 
- Like regular keys on a keychain, these keys can be copied. For example, if you gave someone a copy of your house keys, they can unlock the door to your home. Likewise, if someone has a copy of your private key, they can access your funds. This makes [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) one of the most important considerations of any bitcoin owner.
+ Like regular keys on a keychain, bitcoin private keys can be copied. For example, if you gave someone a copy of your house keys, they can unlock the door to your home. Likewise, if someone has a copy of your private key, they can access your bitcoin. This makes [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) one of the most important considerations of any bitcoin owner.
 
 There are a few different types of wallets that let you send, receive, and store bitcoin.
 
