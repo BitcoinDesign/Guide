@@ -36,7 +36,9 @@ Illustration sources
 
 The self-custody of bitcoin is an important right, but also a financial responsibility that can scale from pocket money to life savings, and take practice getting used to.
 
-This guide is a straightforward starting point for simple bitcoin backups. From a basic setup, you can increase the security level as your funds grow. 
+This guide is a straightforward starting point for simple bitcoin backups, aimed at users of bitcoin products.
+
+If you are a designer or developer, make sure you offer guidance to your users so they can secure their bitcoin with an appropriate backup.
 
 
 ## What are backups?
@@ -57,7 +59,7 @@ The main risks that backups need to protect against are:
 
 A basic backup can be done in a few minutes, while more advanced setups can require more time and effort, like the purchase of dedicated material. 
 
-Let’s look at some real life examples of backup methods for single-key wallets and what they protect against. Multi-key setups are more complex and require their own writeup.
+Let’s look at some real life examples of backup methods for single-key wallets and what they protect against.
 
 <br>
 
