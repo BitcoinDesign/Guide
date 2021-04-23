@@ -41,12 +41,12 @@ This guide is a straightforward starting point for simple bitcoin backups. From 
 
 ## What are backups?
 
-When we talk about backups, we mean saving the information needed to restore access to a wallet outside of the application that created the private keys. Often, this will just be the *recovery-phrase* of 12 or 24 words, but can also include other information like a *pass-phrase*.
+When we talk about backups, we mean saving the information needed to restore access to a wallet outside of the application that created the private keys. Often, this will just be the [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) of 12 or 24 words, but can also include other information like a *pass-phrase*.
 
 The main risks that backups need to protect against are:
 
 - Loss of wallet - you lost the device and application holding the private key
-- Remote theft - your private key got discovered online by a bad actor
+- Remote theft - your backup got discovered online by a bad actor
 - Physical damage - your backup got destroyed
 - Theft on discovery - your backup got discovered in person by a bad actor
 - Catastrophic events - your backup location got destroyed
