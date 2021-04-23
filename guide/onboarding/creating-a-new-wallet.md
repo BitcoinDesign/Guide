@@ -10,7 +10,7 @@ main_classes: -no-top-padding
 
 # Creating a new wallet
 
-First, bitcoin [wallets]({{ 'guide/glossary/#wallet' | relative_url }}) are not analogous to their namesakes. Physical wallets are places to store physical currency, credit cards, IDs, and so on. Bitcoin wallets don't store bitcoin.
+First, bitcoin [wallets]({{ 'guide/glossary/#wallet' | relative_url }}) are not analogous to their namesakes. Physical wallets are places to store physical currency, credit cards, IDs, and so on. Bitcoin wallets don't store bitcoin. However, the [self custodial]({{ 'guide/glossary/#self-custody' | relative_url }})  nature of bitcoin wallets give users full control of what they do with their bitcoin.
 
 Instead, a bitcoin wallet contains the "private keys" to your bitcoin. The bitcoin is located on the Bitcoin network that contains a public ledger similar in many ways to a spreadsheet with a record of everyone's transactions and balances. Private keys let you access bitcoin associated with those keys. A more suitable analogy for a bitcoin wallet would be a keychain.
 
@@ -20,7 +20,7 @@ There are a few different types of wallets that let you send, receive, store and
 
 {% include /tip/open.html label="Tip: Break onboarding up" icon="info" color="blue" %}
 
-Wallet creation during onboarding is an excellent opportunity to educate your users. For example, using several screens when generating a  [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) to empasize it's importance. 
+Wallet creation during onboarding is an excellent opportunity to educate your users. For example, using several screens when generating a  [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) to empasize it's importance.
 
 {% include /tip/close.html %}
 
@@ -37,13 +37,13 @@ Wallet creation during onboarding is an excellent opportunity to educate your us
 
 Most wallets will begin the onboarding process with creating a new or restoring an existing wallet. Clearly, users new to bitcoin will be going through the flow of creating a new wallet.
 
-Once an individual selects “create a new wallet”, it’s typical for beginner-friendly applications to first present informational carousels that provide a high-level overview of the implications, benefits, and responsibility that comes with having a [non-custodial]({{ '/guide/glossary/#non-custodial--custodial-wallet' | relative_url }}) wallet. This moment is a great place to explain that, unlike traditional centralized financial products, a user’s “account” information cannot be recovered by the respective company. Rather, it is up to the user to safely protect their wallet information.
+Once an individual selects “create a new wallet”, it’s typical for beginner-friendly applications to first present informational carousels that provide a high-level overview of the implications, benefits, and responsibility that comes with having a [self-custodial]({{ '/guide/glossary/#self-custody' | relative_url }}) wallet. This moment is a great place to explain that, unlike traditional centralized financial products, a user’s “account” information cannot be recovered by the respective company. Rather, it is up to the user to safely protect their wallet information.
 
 </div>
 
-{% include /tip/open.html label="Don’t hide the implications of a non-custodial wallet" icon="forbid" color="red" %}
+{% include /tip/open.html label="Don’t hide the implications of a self-custodial wallet" icon="forbid" color="red" %}
 
-Within your onboarding process, be clear about what it means to have a non-custodial wallet and the responsibility that they must accept. Within your onboarding process, be clear that your respective team cannot recover "account" information.
+Within your onboarding process, be clear about what it means to have a self-custodial wallet and the responsibility that they must accept. Within your onboarding process, be clear that your respective team cannot recover "account" information.
 
 {% include /tip/close.html %}
 
