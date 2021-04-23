@@ -222,36 +222,6 @@ As the risk of discovery increases with the multiplying backups, it's best to ma
 
 <br>
 
-#### Level 5
-## Multi-continental backups
-The previous level should offer protection against all but countrywide or continental destruction. To mitigate against those, further distribution of backups would be necessary.
-
-This could include offline metal backups stored in safe-deposit boxes on two or more continents. With the pass-phrase being treated with equal care, backed up in an encrypted password manager AND one or more physical locations on the same continents as, but separate from the recovery-phrase.
-
-
-{% include image.html
-   image = "/assets/images/guide/foundations/backups/multi-continental.png"
-   retina = "/assets/images/guide/foundations/backups/multi-continental@2x.png"
-   alt-text = "Multi-continental backups"
-%}
-
-
-**Do** 
-- Document your setup extremely well and in redundant ways
-
-**Don’t** 
-- Forget to safely store the extra words or PINs in multiple locations
-
-**Suitable for**
-- Very large amounts
-- In situations or times where high risk, or impact of loss is likely
-
-**Alternatives** 
-
-At this level, many solutions could provide high levels of protection, including multiple distributed hardware wallets with the same recovery-phrase, or multi-key setups. For very large amounts, get expert advice.
-
-<br>
-
 # Inheritance instructions
 For any backup setup, sufficient information and understandable instructions for recovering the wallet should be available to next-of-kin.  
 
