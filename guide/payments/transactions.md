@@ -92,14 +92,15 @@ Likewise, you need to specify the destination address or addresses for the trans
 image = "/assets/images/guide/payments/transactions/inputs-and-outputs.svg"
 mobile = "/assets/images/guide/payments/transactions/inputs-and-outputs-mobile.svg"
 alt-text = "A flow chart depicting outputs beings used as the inputs to new transactions, which in turn have their own outputs."
-width = 977
-height = 443
+width = 1630
+height = 454
 layout = "full-width"
 %}
 
-The above image is an example of how transaction outputs become the inputs to new transactions. The "sender", represented in purple, decides to send somebody **0.001 BTC**. To accomplish this, they use a **0.005 BTC** input from their wallet. This results in two outputs, one **0.001 BTC** _payment output_ to the wallet of the "receiver", represented in blue, and one **0.004 BTC** change output back to the sender's wallet.
-
-Next, the sender decides to send somebody **0.005 BTC**. To accomplish this, they combine their **0.004 BTC** output from the previous transaction with a **0.002 BTC** output from their wallet. This also results in two outputs, a **0.005 BTC** payment output to the second receiver's wallet, represented in green, and a **0.001 BTC** output to their own wallet. These outputs may also become the inputs to future transactions.
+The above image is an example of how transaction outputs become the inputs to new transactions. In this example, the sender wants to send 4 bitcoin to another wallet.
+In the sender's wallet, there are two unspent transaction outputs, one containing 3 bitcoin (represented in blue) and another containing 2 bitcoin (represented in green).
+The sender's wallet uses both of these as inputs in the transaction, meaning that the transaction involves 5 bitcoin total.
+4 bitcoin goes to a payment output in the receiver's wallet (represented in orange), and 1 bitcoin goes to a change output in the sender's wallet (represented in purple).
 
 ### Transaction fee
 
