@@ -55,10 +55,4 @@ An introduction to some of the common private key management schemes for shared 
 
 ---
 
-### [Case studies]({{ '/guide/case-studies/' | relative_url }})
-
-A look at hypothetical application uses and suitable approaches to private key management for each of them.
-
----
-
 Start at the top with [private key schemes]({{ '/guide/private-key-management/schemes/' | relative_url }}).
