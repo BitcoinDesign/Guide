@@ -139,6 +139,7 @@ The best metal backup solutions are resistant to most physical damage, including
 
 **Do** 
 - Order a dedicated metal backup product, recommendations can be found [here](https://jlopp.github.io/metal-bitcoin-storage-reviews/)
+- Follow the instructions and make sure the phrase is indented, etched, engraved or set properly
 - Store it in a location where it is unlikely to be found by a bad actor
 - Document or tell next-of-kin where the backup can be found
 
