@@ -65,6 +65,9 @@ Let’s look at some real life examples of backup methods for single-key wallets
    image = "/assets/images/guide/foundations/backups/backup-table.png"
    retina = "/assets/images/guide/foundations/backups/backup-table@2x.png"
    alt-text = "Table of backup levels"
+   width = 904
+   height = 625
+   layout = "full-width"
 %}
 
 <br>
