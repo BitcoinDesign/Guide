@@ -79,7 +79,7 @@ As familiarization with the Bitcoin ecosystem increases, users’ needs evolve. 
 
 ### [Common user flows]({{ '/guide/getting-started/common-user-flows/' | relative_url }})
 
-Because solutions to common problems such as how to send, store, and purchase bitcoin are often the most in demand, they are also the most available as a resource online.
+Most Bitcoin applications share certain user activities, from initial setup to making a transaction. It is vital to follow users' expected patterns and behaviors to reduce mistakes and enable seamless switching between products.
 
 ---
 
