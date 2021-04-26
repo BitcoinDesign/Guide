@@ -38,19 +38,18 @@ Illustration sources
 
 ### [Why Bitcoin is unique]({{ '/guide/getting-started/why-bitcoin-is-unique/' | relative_url }})
 
-Familiarize yourself with some of the most significant concepts that bitcoin designers need to know.
-
+The internet has opened an infinite design space for information and communication. Bitcoin adds the new dimension of transferring value that could bring similar change as previous waves of innovation.
 ---
 
 ### [Why design for Bitcoin]({{ '/guide/getting-started/why-design-for-bitcoin/' | relative_url }})
 
-Bitcoin is open-source, decentralized, permissionless, fungible, stateless, and non-custodial. If those words don’t mean anything to you, consider starting here.  
+Bitcoin is fundamentally open and participatory and allows designers and creators to explore and shape experiences for users around the globe.
 
 ---
 
 ### [Open design]({{ '/guide/getting-started/open-design/' | relative_url }})
 
-Bitcoin isn’t just changing money—it’s changing how designers collaborate across broad use cases. While open-source development has been around for years, open design is brand new.
+Bitcoin is open-source protocol. The design process around it should utilize open-principles and the collective power of collaboration.
 
 ---
 
@@ -68,9 +67,9 @@ Before a product can solve its users’ problems, its designers need to understa
 
 ### [Personal finance]({{ '/guide/getting-started/personal-finance/' | relative_url }})
 
-The language of bitcoin is the language of money. If you’re still new to the concepts that underpin personal finance, this section can get you up to speed.
-
+The language of Bitcoin is the language of money. If you’re still new to the concepts that underpin personal finance, this section can get you up to speed.
 ---
+but how Bitcoin products can be used to address those different personal finance needs
 
 ### [Usage life cycle]({{ '/guide/getting-started/usage-life-cycle/' | relative_url }})
 
