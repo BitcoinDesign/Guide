@@ -56,7 +56,7 @@ Bitcoin isn’t just changing money—it’s changing how designers collaborate 
 
 ### [The visual language of Bitcoin]({{ '/guide/getting-started/visual-language/' | relative_url }})
 
-Since bitcoin is public, open, and dependent upon no single person or organization, its brand is still undefined—and it might always be. But there’s still a to learn about how best to represent it visually.
+Since bitcoin is public, open, and dependent upon no single person or organization, its brand is still undefined—and it might always be. But there’s still a lot to learn about how best to represent it visually.
 
 ---
 
@@ -74,7 +74,7 @@ The language of bitcoin is the language of money. If you’re still new to the c
 
 ### [Usage life cycle]({{ '/guide/getting-started/usage-life-cycle/' | relative_url }})
 
-As familiarization with the bitcoin ecosystem increases, users’ needs evolve. As designers, we need to understand each of the steps along that journey.
+As familiarization with the Bitcoin ecosystem increases, users’ needs evolve. As designers, we need to understand each of the steps along that journey.
 
 ---
 
@@ -86,7 +86,7 @@ Because solutions to common problems such as how to send, store, and purchase bi
 
 ### [Technology primer]({{ '/guide/getting-started/technology-primer/' | relative_url }})
 
-Learn the need-to-know concepts behind the technologies that drive bitcoin.
+Learn the need-to-know concepts behind the technologies that drive Bitcoin.
 
 ---
 
@@ -98,4 +98,4 @@ Get to know the categories of software that define the bitcoin ecosystem of prod
 
 ### [Hardware overview]({{ '/guide/getting-started/hardware/' | relative_url }})
 
-Bitcoin-specific hardware is a burgeoning ecosystem within the greater bitcoin ecosystem. These are the essential devices that you and your users need to know.
+Bitcoin-specific hardware is a burgeoning ecosystem within the greater Bitcoin ecosystem. These are the essential devices that you and your users need to know.
