@@ -20,7 +20,7 @@ There are a few different types of wallets that let you send, receive, store and
 
 {% include /tip/open.html label="Tip: Break onboarding up" icon="info" color="blue" %}
 
-Wallet creation during onboarding is an excellent opportunity to educate your users. For example, using several screens when generating a  [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) to empasize it's importance. This allows users to focus on one task at a time, reducing the possibility of getting overwhelmed or making mistakes.
+Wallet creation during onboarding is an excellent opportunity to educate your users. For example, using several screens when generating a  [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) to emphasize its importance. This allows users to focus on one task at a time, reducing the possibility of getting overwhelmed or making mistakes.
 
 {% include /tip/close.html %}
 
