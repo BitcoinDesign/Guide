@@ -1,21 +1,24 @@
 .article {
   .footnotes {
-    padding: 30px;
+    padding: $spacing-unit;
     font-size: 0.8rem;
-    margin: 60px 0 0;
+    margin: $spacing-unit*2 0 0 0;
     border: 1px solid rgba(var(--front), 0.05);
     box-sizing: border-box;
     background: #FDFDFD;
+
     &::before {
       content: "REFERENCES";
       display: block;
-      margin-bottom: 10px;
+      margin-bottom: $spacing-unit/3;
       color: var(--frontHex);
       letter-spacing: 1px;
     }
+
     ol {
       margin: 0;
       list-style-position: inside;
+
       li {
         margin-left: 0;
         p {

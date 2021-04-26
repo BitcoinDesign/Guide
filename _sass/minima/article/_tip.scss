@@ -2,7 +2,7 @@ article.guide {
   .tip,
   .recommendation {
     margin-top: $spacing-unit;
-    padding: 25px 25px 20px 25px;
+    padding: $spacing-unit/6*5 $spacing-unit/6*5 $spacing-unit/3*2 $spacing-unit/6*5;
     box-sizing: border-box;
 
     h6 {

@@ -7,7 +7,7 @@ article.guide {
 
   figure {
     &.-background {
-      padding: 20px;
+      padding: $spacing-unit/3*2;
       background-color: #f8f8f8;
     }
 
@@ -21,7 +21,7 @@ article.guide {
 
   a.button {
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 $spacing-unit/3*2;
     border-radius: 3px;
     color: white;
     line-height: 43px;
@@ -75,8 +75,8 @@ article.guide {
       box-shadow: 0 5px 15px -3px rgba(black, 0.25);
 
       > svg {
-        width: 30px;
-        height: 30px;
+        width: $spacing-unit;
+        height: $spacing-unit;
         margin-right: 3px;
       }
     }
@@ -120,8 +120,8 @@ article.guide {
   }
 
   @include media-query(medium-down) {
-    padding-left: $spacing-unit / 2;
-    padding-right: $spacing-unit / 2;
+    padding-left: $spacing-unit/2;
+    padding-right: $spacing-unit/2;
   }
 
   @include media-query(large) {
@@ -140,14 +140,14 @@ article.guide {
   & > .-float-left,
   & > .center .-float-left {
     float: left;
-    margin-right: $spacing-unit / 2;
+    margin-right: $spacing-unit/2;
     max-width: 50%;
   }
 
   & > .-float-right,
   & > .center .-float-right {
     float: right;
-    margin-left: $spacing-unit / 2;
+    margin-left: $spacing-unit/2;
     max-width: 50%;
   }
 
@@ -155,14 +155,14 @@ article.guide {
     & > .-float-left-desktop,
     & > .center .-float-left-desktop {
       float: left;
-      margin-right: $spacing-unit / 2;
+      margin-right: $spacing-unit/2;
       max-width: 50%;
     }
 
     & > .-float-right-desktop,
     & > .center .-float-right-desktop {
       float: right;
-      margin-left: $spacing-unit / 2;
+      margin-left: $spacing-unit/2;
       max-width: 50%;
     }
   }
@@ -185,8 +185,8 @@ article.guide {
     align-items: center;
 
     @include media-query(medium-down) {
-      margin-left: -$spacing-unit / 2;
-      margin-right: -$spacing-unit / 2;
+      margin-left: -$spacing-unit/2;
+      margin-right: -$spacing-unit/2;
     }
 
     @include media-query(large) {
@@ -197,8 +197,8 @@ article.guide {
 
   figure.-full-width {
     figcaption {
-      margin-left: $spacing-unit / 2;
-      margin-right: $spacing-unit / 2;
+      margin-left: $spacing-unit/2;
+      margin-right: $spacing-unit/2;
     }
   }
 
@@ -261,13 +261,13 @@ article.guide {
     margin-bottom: $spacing-unit;
 
     @include media-query(medium-down) {
-      margin-top: $spacing-unit * 0.5;
-      margin-bottom: $spacing-unit * 0.5;
+      margin-top: $spacing-unit/2;
+      margin-bottom: $spacing-unit/2;
     }
 
     @include media-query(large) {
-      margin-top: $spacing-unit * 1;
-      margin-bottom: $spacing-unit * 1;
+      margin-top: $spacing-unit;
+      margin-bottom: $spacing-unit;
     }
   }
 }

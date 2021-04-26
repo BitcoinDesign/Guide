@@ -1,6 +1,7 @@
 article.guide {
   .image-gallery {
     display: flex;
+    margin-top: $spacing-unit;
     background-color: #f8f8f8;
     justify-content: center;
     max-width: none !important;
@@ -9,7 +10,7 @@ article.guide {
       margin-top: 0;
       margin-bottom: 0;
       float: left;
-      margin-right: 30px;
+      // margin-right: $spacing-unit;
 
       img {
         box-shadow: 0 20px 10px -8px rgba(black, 0.05);
@@ -19,9 +20,10 @@ article.guide {
 
     @include media-query(small) {
       flex-direction: column;
-      margin-left: -15px;
-      margin-right: -15px;
-      padding: 10px 15px;
+      align-items: center;
+      margin-left: -$spacing-unit / 2;
+      margin-right: -$spacing-unit / 2;
+      padding: $spacing-unit $spacing-unit/2;
 
       figure {
         margin: 0;
@@ -33,13 +35,13 @@ article.guide {
     }
 
     @include media-query(medium-up) {
-      margin-left: -30px;
-      margin-right: -30px;
-      padding: 30px 30px 15px 30px;
+      margin-left: -$spacing-unit;
+      margin-right: -$spacing-unit;
+      padding: $spacing-unit;
 
       figure {
         & + figure {
-          margin-left: 40px;
+          margin-left: $spacing-unit/3*4;
         }
       }
     }

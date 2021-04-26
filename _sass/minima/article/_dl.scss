@@ -7,7 +7,7 @@
     dt,
     dd {
       display: flex;
-      padding: 20px 30px;
+      padding: $spacing-unit/3*2 $spacing-unit;
       background-color: rgba($blue, 0.1);
 
       p {
@@ -41,8 +41,8 @@
       justify-content: center;
 
       svg {
-        width: 30px;
-        height: 30px;
+        width: $spacing-unit;
+        height: $spacing-unit;
       }
     }
 
@@ -55,12 +55,12 @@
 
       dd {
         & + dt {
-          margin-top: 20px;
+          margin-top: $spacing-unit/3*2;
         }
       }
 
       .icon {
-        height: 60px;
+        height: $spacing-unit * 2;
 
         svg {
           transform: rotate(90deg);
@@ -73,7 +73,7 @@
       dd {
         flex-basis: 30%;
         flex-grow: 1;
-        margin-top: 20px;
+        margin-top: $spacing-unit/3*2;
 
         &:first-of-type {
           margin-top: 0;
@@ -81,8 +81,8 @@
       }
 
       .icon {
-        width: 60px;
-        margin-top: 20px;
+        width: $spacing-unit*2;
+        margin-top: $spacing-unit/3*2;
 
         &:first-of-type {
           margin-top: 0;

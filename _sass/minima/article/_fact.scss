@@ -6,7 +6,7 @@ article.guide {
     align-items: stretch;
 
     .icon {
-      padding: 10px 20px;
+      padding: $spacing-unit/3 $spacing-unit/3*2;
       border-right: 1px solid #DEDEDE;
       flex-grow: 0;
       display: flex;
@@ -37,7 +37,7 @@ article.guide {
     }
 
     .copy {
-      padding: 20px;
+      padding: $spacing-unit/3*2;
       flex-grow: 1;
 
       h6 {

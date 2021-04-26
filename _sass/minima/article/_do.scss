@@ -37,7 +37,7 @@ article.guide {
     }
 
     h6 {
-      margin: 0 0 0 10px;
+      margin: 0 0 0 $spacing-unit/3;
       padding: 0px 0 0 0;
       font-size: 18px;
       font-weight: 500;
@@ -52,7 +52,7 @@ article.guide {
     .copy {
       p {
         & + figure {
-          margin-top: 10px;
+          margin-top: $spacing-unit/3;
         }
       }
 
@@ -72,7 +72,7 @@ article.guide {
 
       .do {
         & + .do {
-          margin-top: 20px;
+          margin-top: $spacing-unit/3*2;
         }
       }
     }
@@ -83,7 +83,7 @@ article.guide {
         flex-grow: 1;
 
         & + .do {
-          margin-left: 40px;
+          margin-left: $spacing-unit/3*4;
         }
       }
     }
