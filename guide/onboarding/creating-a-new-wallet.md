@@ -35,7 +35,7 @@ Wallet creation during onboarding is an excellent opportunity to educate your us
    layout = "float-left-desktop -background -shadow"
 %}
 
-Most wallets will begin the onboarding process with creating a new or restoring an existing wallet. Clearly, users new to bitcoin will be going through the flow of creating a new wallet.
+Most wallets will begin the onboarding process by creating a new or restoring an existing wallet. Clearly, users new to Bitcoin will be going through the flow of creating a new wallet.
 
 Once an individual selects “create a new wallet”, it’s typical for beginner-friendly applications to first present informational carousels that provide a high-level overview of the implications, benefits, and responsibility that comes with having a [self-custodial]({{ '/guide/glossary/#self-custody' | relative_url }}) wallet. This moment is a great place to explain that, unlike traditional centralized financial products, a user’s “account” information cannot be recovered by the respective company. Rather, it is up to the user to safely protect their wallet information.
 
