@@ -153,21 +153,21 @@ After changes have been published on your copy, it's time to announce them in th
    height = 400
 %}
 
-{% include tip/open.html color="green" icon="check" label="Do this" %}
+{% include tip/open.html color="green" icon="check" label="Do this" %}
 
-- If your pull request is related to an issue, reference it. For example, "Fixes issue #32, "Closes #32" or "Related to #32"
+- If your pull request is related to an issue, reference it. For example, “Fixes issue #32, “Closes #32” or “Related to #32”
 - Summarize changes you did and provide reasoning if necessary
 - Keep pull requests related to a specific problem. Pull requests with lots of changes and different issues are harder to review
-- The title of the pull request should concisely explain what it's trying to solve
+- The title of the pull request should concisely explain what it’s trying to solve
 
-{% include tip/close.html %}
+{% include tip/close.html %}
 
-{% include tip/open.html color="red" icon="forbid" label="Don't do this" %}
+{% include tip/open.html color="red" icon="forbid" label="Don't do this" %}
 
 - Create a pull request without a description
 - Create pull requests that tackle many different issues and files
 
-{% include tip/close.html %}
+{% include tip/close.html %}
 
 {% include picture.html
    image = "/assets/images/guide/contribute/propose-a-change/create-pull-request-github.png"

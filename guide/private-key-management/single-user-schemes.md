@@ -91,24 +91,25 @@ This makes the backup accessible by the user on a new device, should they lose t
 
 ### Best practice
 
-**When to use**
+#### When to use
 - When risk of self-inflicted loss is higher than loss from theft
 - For beginners, or products with progressive security
 - For lower values
 
-**When not to use**
+#### When not to use
 - When storing high values
 - When risk of loss from theft is higher than self-inflicted loss
 - When complete self-sovereignty is important to the target audience
 
-**Variations**
+#### Variations
 - Storage location (keychain, iCloud, Google Drive, One Password etc.)
 - Additional user authentication (biometrics, pin)
 
-**Products that use this scheme**
-- [Photon SDK](https://photonsdk.org) - for use by other wallets, in development
-- [Casa](https://keys.casa)
-- [Pine](https://pine.pm ) - Lightning, beta
+{% include fact/open.html color="blue" label="Products that use this scheme" icon="rectangle" %}
+
+[Photon SDK](https://photonsdk.org), [Casa](https://keys.casa), [Pine](https://pine.pm).
+
+{% include fact/close.html %}
 
 ***
 
@@ -152,32 +153,29 @@ A full guide to manual backup best practices for users is out of scope for this 
 
 ### Best practice
 
-**When to use**
+#### When to use
 - When target audience is likely to be knowledgeable and implement good manual backup schemes
 - When storing medium amounts
 - When risk of loss from theft is higher than self-inflicted loss
 
-**When not to use**
+#### When not to use
 - When users are new to bitcoin and unlikely to implement good manual backups
 - For use-cases with small amounts
 - When onboarding is likely to happen outside of users' homes
 
-**Variations**
+#### Variations
 - 12 or 24 word phrase
 - Additional user authentication (biometrics use, pin or password)
 - Cloud backup options
 
-**Do's**
+#### Do's
 - Explain what a recovery phrase is, and provide a guide how to do *safe offline backups* BEFORE the user is exposed to the phrase or can start using the wallet
 
-**Products that use this scheme**
-Most bitcoin wallets, including;
-- [Bluewallet](https://bluewallet.io)
-- [Electrum](https://electrum.org)
-- [Wasabi](https://wasabiwallet.io)
-- [Blockstream Green](https://blockstream.com/green/)
-- [Coinbase Wallet](https://wallet.coinbase.com)
-- [Rise](https://www.risewallet.com)
+{% include fact/open.html color="blue" label="Products that use this scheme" icon="rectangle" %}
+
+[Bluewallet](https://bluewallet.io), [Electrum](https://electrum.org), [Wasabi](https://wasabiwallet.io), [Blockstream Green](https://blockstream.com/green/)[Coinbase Wallet](https://wallet.coinbase.com), [Rise](https://www.risewallet.com).
+
+{% include fact/close.html %}
 
 ***
 
@@ -218,30 +216,31 @@ When a transaction needs to be signed, the software submits a partially signed b
 
 ### Best practice
 
-**When to use**
+#### When to use
 - When storing medium to large amounts
 - When risk of loss from theft is higher than loss from negligence
 - When target audience is likely to be very knowledgeable or motivated to learn good manual backup schemes
 
-**When not to use**
+#### When not to use
 - When most users are new to bitcoin and unlikely to implement good backup schemes
 - When transactions are likely to be frequent and low value
 
-**Variations**
+#### Variations
 - Interfaces (bluetooth, USB, microSD card, camera, NFC)
 - Platform compatibility
 - Additional user authentication (pin or password)
 
-**Products that use this scheme**
-- [Electrum]({{ 'https://electrum.org'}})
-- [Wasabi]({{ 'https://wasabiwallet.io'}})
-- [Bluewallet]({{ 'https://bluewallet.io'}})
+{% include fact/open.html color="blue" label="Products that use this scheme" icon="rectangle" %}
 
-**Hardware wallets**
-- [Trezor]({{ 'https://trezor.io'}})
-- [Ledger]({{ 'https://www.ledger.com'}})
-- [Keepkey]({{ 'https://shapeshift.com/keepkey'}})
-- [Coldcard]({{ 'https://coldcardwallet.com'}})
+[Electrum]({{ 'https://electrum.org'}}), [Wasabi]({{ 'https://wasabiwallet.io'}}), [Bluewallet]({{ 'https://bluewallet.io'}}).
+
+{% include fact/close.html %}
+
+{% include fact/open.html color="orange" label="Hardware wallets" icon="rectangle" %}
+
+[Trezor]({{ 'https://trezor.io'}}), [Ledger]({{ 'https://www.ledger.com'}}), [Keepkey]({{ 'https://shapeshift.com/keepkey'}}), [Coldcard]({{ 'https://coldcardwallet.com'}}), [Cobo]({{ 'https://cobo.com/'}}).
+
+{% include fact/close.html %}
 
 ***
 
@@ -280,23 +279,23 @@ A single private key is split into n key-shares that are distributed to several 
 
 ### Best practice
 
-**When to use**
+#### When to use
 - When target audience is well-versed with bitcoin
 - When risk of theft is higher than self-inflicted loss
 
-**When not to use**
+#### When not to use
 - When Schnorr signatures are available, enabling multi-key setups with similar benefits
 
-**Variations**
+#### Variations
 - Number of signatures required
 - Location and distribution of pieces
 - Signing procedure
 
-**Products that use this scheme**
-- [ZenGo](https://zengo.com)
-- [Hexa](https://hexawallet.io)
-- [Spatium](https://spatium.net)
-- [Bitfreeze](https://medium.com/@bitfreeze/threshold-signatures-multisig-is-not-enough-e1ba468f6102) - No longer in active development
+{% include fact/open.html color="blue" label="Products that use this scheme" icon="rectangle" %}
+
+[ZenGo](https://zengo.com), [Hexa](https://hexawallet.io), [Spatium](https://spatium.net), [Bitfreeze](https://medium.com/@bitfreeze/threshold-signatures-multisig-is-not-enough-e1ba468f6102).
+
+{% include fact/close.html %}
 
 ***
 
@@ -333,31 +332,28 @@ A software wallet application or coordination software initiates a multi-sig wal
 
 ### Best practice
 
-**When to use**
+#### When to use
 - When storing large amounts
 - When target audience is likely to own hardware wallets
 - When most users are likely to implement good backup schemes for multiple keys
 
-**When not to use**
+#### When not to use
 - For small amounts
 - When users are likely to be new to bitcoin
 
-**Variations**
+#### Variations
 - Number of total and co-signing keys
 - Key locations and distribution
 - Managed or completely sovereign
 
-**Do's**
+#### Do's
 - Make sure the multi-key setup itself is backed up properly, including [extended public keys]({{ '/guide/glossary/#extended-public-key-xpub-ypub-zpub' | relative_url }}) for all the participating keys, fingerprint and derivation.
 
-**Products that use this scheme**
-- [Casa](https://keys.casa) co-managed 2-of-3, or 3-of-5
-- [Electrum](https://electrum.org)
-- [Bluewallet](https://bluewallet.io)
-- [Unchained Capital/Caravan](https://unchained-capital.com) co-managed
-- [Specter](https://specter.solutions)
-- [Armory](https://btcarmory.com)
-- [Guarda](https://guarda.com)
+{% include fact/open.html color="blue" label="Products that use this scheme" icon="rectangle" %}
+
+[Casa](https://keys.casa) co-managed 2-of-3, or 3-of-5, [Electrum](https://electrum.org), [Bluewallet](https://bluewallet.io), [Unchained Capital/Caravan](https://unchained-capital.com) co-managed, [Specter](https://specter.solutions), [Armory](https://btcarmory.com), [Guarda](https://guarda.com).
+
+{% include fact/close.html %}
 
 ---
 

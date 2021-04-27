@@ -64,33 +64,29 @@ A wallet or coordination application initiates a multi-sig wallet, choosing the 
 
 - Has significant complexity and op-sec burden for multiple private keys, each of which might need a good manual backup scheme
 
-
 {% include fact/close.html %}
 
 ### Best practice
 
-**When to use**
+#### When to use
 - When funds need to be accessed by several people or an organization
 - When users are likely to be very knowledgeable or be guided through setup and use
 
-**When not to use**
+#### When not to use
 - (No other option currently for shared access scenarios)
 
-**Variations**
+#### Variations
 - The number of required co-signers and attached keypairs
 - Key storage devices
 
-**Do's**
+#### Do's
 - Make sure the multi-key setup itself is backed up properly, including x-pubs for all the participating keys, fingerprint and derivation.
 
-**Products that use this scheme**
-Few tailor-made products exist for shared wallets, but any wallet application that supports multi-key setups can be used to initiate a shared wallet.
-- [Electrum](https://electrum.org){:target="_blank"}
-- [Bluewallet](https://bluewallet.io){:target="_blank"}
-- [Specter](https://specter.solutions){:target="_blank"}
-- [Armory](https://btcarmory.com){:target="_blank"}
-- [Guarda](https://guarda.com){:target="_blank"}
-- [Revault](https://revault.dev){:target="_blank"} - in development
+{% include fact/open.html color="blue" label="Products that use this scheme" icon="rectangle" %}
+
+[Electrum](https://electrum.org){:target="_blank"}, [Bluewallet](https://bluewallet.io){:target="_blank"}, [Specter](https://specter.solutions){:target="_blank"}, [Armory](https://btcarmory.com){:target="_blank"},[Nunchuk](https://nunchuk.io/){:target="_blank"}, [Sparrow](https://sparrowwallet.com/){:target="_blank"}, [Guarda](https://guarda.com){:target="_blank"}, [Revault](https://revault.dev){:target="_blank"}.
+
+{% include fact/close.html %}
 
 ---
 

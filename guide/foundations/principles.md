@@ -51,19 +51,19 @@ These are principles we in the Bitcoin Design Community identified and stand beh
 
 Our existing mental models of access to digital services are usernames and passwords controlled by a company with custody of your funds and data. With everyone having direct access to the Bitcoin network, we no longer need to design products that require people to delegate control of their funds to middlemen. While it comes with greater responsibility, self-custody enables the open financial system of peer-to-peer transactions.
 
-{% include tip/open.html color="green" icon="check" label="Do this" %}
+{% include tip/open.html color="green" icon="check" label="Do this" %}
 
 - Let users control their bitcoin and private keys directly
 - Create an easy path to self-custody for Bitcoin beginners
 
-{% include tip/close.html %}
+{% include tip/close.html %}
 
-{% include tip/open.html color="red" icon="forbid" label="Don't do this" %}
+{% include tip/open.html color="red" icon="forbid" label="Don't do this" %}
 
 - Custody funds for your users
-- Build products where the users' funds can be seized, or frozen
+- Build products where the users’ funds can be seized, or frozen
 
-{% include tip/close.html %}
+{% include tip/close.html %}
 
 ---
 
@@ -79,9 +79,9 @@ Education and awareness are a big part of security, as they can protect users fr
 
 Security can also be a feeling. A polished, good-looking, easy-to-use product that transparently communicates how it works can help users feel more secure– especially when compared to another product with the same security measures - but lacks these qualities.
 
-{% include tip/open.html color="green" icon="check" label="Do this" %}
+{% include tip/open.html color="green" icon="check" label="Do this" %}
 
-- Take safeguarding of users' funds seriously
+- Take safeguarding of users’ funds seriously
 - Strive for no loss of funds, whether by negligence or theft
 - Provide suitable private key management schemes for beginners
 - Offer progressive security and upgrade paths
@@ -90,15 +90,15 @@ Security can also be a feeling. A polished, good-looking, easy-to-use product th
 - Continuously educate users on best practice and risks
 - Reduce attack surfaces by minimizing use of external code dependencies
 
-{% include tip/close.html %}
+{% include tip/close.html %}
 
-{% include tip/open.html color="red" icon="forbid" label="Don't do this" %}
+{% include tip/open.html color="red" icon="forbid" label="Don't do this" %}
 
 - Blame the user for losing funds
 - Expect beginners to implement best practice backup strategies
-- Underestimate the added *feeling* of security that can come from well polished products
+- Underestimate the added feeling of security that can come from well polished products
 
-{% include tip/close.html %}
+{% include tip/close.html %}
 
 ---
 
@@ -110,7 +110,7 @@ There are no background checks, credit checks, or gatekeepers to Bitcoin. A Keny
 
 While Bitcoin is already used by a large number of people, it pales in comparison with the many more that are likely to use it in the future. We need to design products that are prepared for people unfamiliar with Bitcoin. This means using plain and familiar language, explaining things in the context where they are needed, not overwhelming people with technical detail, and more.
 
-{% include tip/open.html color="green" icon="check" label="Do this" %}
+{% include tip/open.html color="green" icon="check" label="Do this" %}
 
 - Provide equal and direct access to the Bitcoin network
 - Design Bitcoin products that are usable by the widest range of people possible
@@ -119,15 +119,15 @@ While Bitcoin is already used by a large number of people, it pales in compariso
 - Educate in place, when people are presented with a new concept
 - Treat users who rely on assistive technologies as first-class citizens
 
-{% include tip/close.html %}
+{% include tip/close.html %}
 
-{% include tip/open.html color="red" icon="forbid" label="Don't do this" %}
+{% include tip/open.html color="red" icon="forbid" label="Don't do this" %}
 
 - Exclude people by building features that only work in certain countries
 - Add technical detail that is not required knowledge, or technical terms like seed phrase, XPUBs, mnemonics etc.
 - Put all education up front and expect people to read and remember it
 
-{% include tip/close.html %}
+{% include tip/close.html %}
 
 ---
 
@@ -137,21 +137,21 @@ While Bitcoin is already used by a large number of people, it pales in compariso
 
 Bitcoin is an open-source protocol, operating in a decentralized manner. This has led to a number of standards being developed to ensure compatibility between products. It should be easy to switch and move your Bitcoin wallet to a different application, should you wish. Ensuring that your product supports as many of these standards as possible is best practice and builds trust. More on [wallet interoperability]({{ '/guide/foundations/wallet-interoperability/' | relative_url }}).
 
-{% include tip/open.html color="green" icon="check" label="Do this" %}
+{% include tip/open.html color="green" icon="check" label="Do this" %}
 
 - Support import and export of wallets
 - Support as many relevant BIPs as possible
 - Be transparent with which ones you do and don’t support
 - Maximize backwards compatibility
 
-{% include tip/close.html %}
+{% include tip/close.html %}
 
-{% include tip/open.html color="red" icon="forbid" label="Don't do this" %}
+{% include tip/open.html color="red" icon="forbid" label="Don't do this" %}
 
 - Lock your users in
 - Implement proprietary solutions when open standards exist
 
-{% include tip/close.html %}
+{% include tip/close.html %}
 
 ---
 
@@ -161,19 +161,19 @@ Bitcoin is an open-source protocol, operating in a decentralized manner. This ha
 
 While an open and decentralized financial system that users can connect with directly is great, it puts a burden on them to choose a product that they trust and like to use. We can make this easier by freely sharing information about how our products work and what technologies they use/rely on. By open-sourcing your code, you can let people verify that your claims are true, ultimately building more trust with your users. It is important to be transparent with users about the risks that come with self-custodying funds. Be sure to educate about scenarios where they may risk losing access to their funds along with best practices for avoiding this.
 
-{% include tip/open.html color="green" icon="check" label="Do this" %}
+{% include tip/open.html color="green" icon="check" label="Do this" %}
 
 - Be open and transparent with how your product works
 - Let people verify your claims by open-sourcing your code when possible
 - Explain what risks the user is taking on, and how best to mitigate them
 
-{% include tip/close.html %}
+{% include tip/close.html %}
 
-{% include tip/open.html color="red" icon="forbid" label="Don't do this" %}
+{% include tip/open.html color="red" icon="forbid" label="Don't do this" %}
 
 - Make claims that are not explained or verifiable
 
-{% include tip/close.html %}
+{% include tip/close.html %}
 
 ---
 
@@ -185,19 +185,19 @@ A common misconception of Bitcoin is that it provides complete anonymity and pri
 
 The Bitcoin network doesn’t need to know your name for you to use it. Strive to collect as little personal information as possible about your users. When absolutely required to provide the product services, collect only the bare minimum and consider if and when this can be discarded when no longer necessary. If you collect personal information, be transparent about why and how you will use and store it.
 
-{% include tip/open.html color="green" icon="check" label="Do this" %}
+{% include tip/open.html color="green" icon="check" label="Do this" %}
 
 - Minimize the personal information you collect
 - Avoid address reuse
 - Embrace privacy-preserving options when relevant (running a full node, compact block filters, Tor, Lightning Network, coin selection, schnorr signatures, payjoin, coinswap, etc.)
 
-{% include tip/close.html %}
+{% include tip/close.html %}
 
-{% include tip/open.html color="red" icon="forbid" label="Don't do this" %}
+{% include tip/open.html color="red" icon="forbid" label="Don't do this" %}
 
-- Collect and store personal information not required for the functionality of your product.
+- Collect and store personal information not required for the functionality of your product
 
-{% include tip/close.html %}
+{% include tip/close.html %}
 
 ---
 
@@ -207,17 +207,17 @@ The Bitcoin network doesn’t need to know your name for you to use it. Strive t
 
 Unlike traditional banking systems, the Bitcoin economy does not require new users to seek permission from anyone. Bitcoin has no central point of control. No one person or entity is in charge. Connecting to any [node]({{ '/guide/glossary/#node' | relative_url }}) on the network gives you the same rights and responsibilities, ensuring no single point of failure.
 
-{% include tip/open.html color="green" icon="check" label="Do this" %}
+{% include tip/open.html color="green" icon="check" label="Do this" %}
 
 - Design products that encourage people to run a full Bitcoin node
-- Alternatively, use a light client with the [p2p network]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki'}}) using [compact block filters]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki'}})
+- Alternatively, use a light client with the p2p network using compact block filters
 - Offer the user choice of what node and other external services to connect to
 
-{% include tip/close.html %}
+{% include tip/close.html %}
 
-{% include tip/open.html color="red" icon="forbid" label="Don't do this" %}
+{% include tip/open.html color="red" icon="forbid" label="Don't do this" %}
 
 - Introduce a single point of failure between the user and the Bitcoin network
 - Build products that stop working if the project shuts down
 
-{% include tip/close.html %}
+{% include tip/close.html %}

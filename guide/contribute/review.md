@@ -81,15 +81,19 @@ When you're done with leaving individual feedback, you can submit it. Click on t
 
 #### Best practices when reviewing pull requests
 
-**Do**
+{% include tip/open.html color="green" icon="check" label="Do this" %}
 
-- Leave a suggestion instead of general feedback whenever possible, especially for typo and grammar-related feedback
-- Be humble and constructive when reviewing
-- Be understanding and welcoming towards new contributors
-- If something is not clear enough, feel free to ask questions to the pull request author
+- Comment - general feedback without explicit approval.
+- Approve changes - feedback approving the proposed changes.
+- Request changes - feedback explicitly suggesting changes.
 
-**Don't**
+{% include tip/close.html %}
+
+{% include tip/open.html color="red" icon="forbid" label="Don't do this" %}
+
 - Request a change without providing a context or a reason for requesting it
+
+{% include tip/close.html %}
 
 ### Testing a pull request
 Previewing a proposed change in the split-screen may be handy for quickly taking a glance at the changes and leaving feedback, but previewing them directly on the website gives a better feeling on how content, code, and visuals fit together. Testing a pull request is the last step of a review process.
