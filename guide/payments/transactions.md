@@ -10,16 +10,30 @@ image: /assets/images/guide/payments/transactions/tx-preview.jpg
 ---
 
 {% include picture.html
-   image = "/assets/images/guide/payments/transactions/transactions-desktop.png"
-   retina = "/assets/images/guide/payments/transactions/transactions-desktop@2x.png"
-   mobile = "/assets/images/guide/payments/transactions/transactions-mobile.png"
-   mobileRetina = "/assets/images/guide/payments/transactions/transactions-mobile@2x.png"
+   image = "/assets/images/guide/payments/transactions/transactions-desktop.jpg"
+   retina = "/assets/images/guide/payments/transactions/transactions-desktop@2x.jpg"
+   mobile = "/assets/images/guide/payments/transactions/transactions-mobile.jpg"
+   mobileRetina = "/assets/images/guide/payments/transactions/transactions-mobile@2x.jpg"
    alt-text = "Process of transaction being mined, and new payments being made, mixed and sent to multiple other wallets"
    caption = '3D payments and transaction lifecycle illustration by [Alexa Aker](https://alexaaker.com){:target="_blank" rel="nofollow"}'
    width = 1600
    height = 800
    layout = "full-width"
 %}
+
+<!--
+
+Editor's notes
+
+This page describes the structure of bitcoin transactions. It is not meant to be an extensive technical resource, but
+more of a primer on the subject. As bitcoin transactions are fundamentally different than traditional financial
+transactions, it's important for designers to understand these differences when creating for bitcoin.
+
+Illustration sources
+
+- https://www.figma.com/file/Da2FpXLqY2BX7WN4mQFNZo/Inputs-and-Outputs-Christoph-Copy?node-id=104%3A138
+
+-->
 
 # Transactions overview
 
@@ -86,7 +100,21 @@ The principal properties are:
 
 In a Bitcoin wallet, funds are often not held in a single address, but more commonly in one address per transaction where you previously received bitcoin. When you are creating a transaction you need to specify which of your addresses you would like to use to fund it. If you need to spend more than what a single address holds, you can specify several. These are called *inputs* to the transaction.
 
-Likewise, you need to specify the destination address or addresses for the transaction. These are called *outputs*. should there be more bitcoin in the inputs than are needed for the payment, a new address will be created in your wallet for the remaining change, often called a *change output*.
+Likewise, you need to specify the destination address or addresses for the transaction. These are called *outputs*. Should there be more bitcoin in the inputs than are needed for the payment, a new address will be created in your wallet for the remaining change, often called a *change output*.
+
+{% include picture.html
+image = "/assets/images/guide/payments/transactions/inputs-and-outputs.svg"
+mobile = "/assets/images/guide/payments/transactions/inputs-and-outputs-mobile.svg"
+alt-text = "A flow chart depicting outputs beings used as the inputs to new transactions, which in turn have their own outputs."
+width = 1630
+height = 454
+layout = "full-width"
+%}
+
+The above image is an example of how transaction outputs become the inputs to new transactions. In this example, the sender wants to send 4 bitcoin to another wallet.
+In the sender's wallet, there are two unspent transaction outputs, one containing 3 bitcoin (represented in blue) and another containing 2 bitcoin (represented in green).
+The sender's wallet uses both of these as inputs in the transaction, meaning that the transaction involves 5 bitcoin total.
+4 bitcoin goes to a payment output in the receiver's wallet (represented in orange), and 1 bitcoin goes to a change output in the sender's wallet (represented in purple).
 
 ### Transaction fee
 
