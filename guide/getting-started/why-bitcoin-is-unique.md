@@ -73,7 +73,6 @@ Although bitcoin is purely digital, it meets every classical definition of what 
 
 When you take cash out of your bank account, it becomes your responsibility. If you lose it, it’s lost. If you transact with it, no middleman can block the transaction. Either way, you are its custodian—this is bitcoin in a nutshell. It’s digital, self-custodial cash.
 
-Fiat currencies in digital form are different. Online banks and payment processors heavily depend on third-party websites and applications. Are they vetted? Will they responsibly manage your money? Are they even solvent? Tough to say. You just have to trust your bank’s judgment.
 
 Bitcoin combines the custodial benefits of physical cash with the convenience of online banking and payment processing. But unlike your bank, bitcoin has never been hacked. So as long as you responsibly manage your private keys, not only do you own your bitcoin, no one can take them away.
 
