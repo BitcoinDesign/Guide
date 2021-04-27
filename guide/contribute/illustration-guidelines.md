@@ -66,13 +66,17 @@ Images for this page are located in:
 
 Keep your file names in lowercase and avoid any special characters (including spaces). Keep them short and descriptive.
 
-**Don't**
+{% include tip/open.html color="green" icon="check" label="Do this" %}
 
-`My übercool image.PNG`
+My übercool image.PNG
 
-**Do**
+{% include tip/close.html %}
 
-`transaction-confirmation.png`
+{% include tip/open.html color="red" icon="forbid" label="Don't do this" %}
+
+transaction-confirmation.png
+
+{% include tip/close.html %}
 
 ## JPG, PNG or GIF?
 

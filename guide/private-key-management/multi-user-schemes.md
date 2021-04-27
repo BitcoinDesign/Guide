@@ -52,13 +52,20 @@ Just like with personal schemes, external signing devices can be used to hold on
 ### How it works
 A wallet or coordination application initiates a multi-sig wallet, choosing the number of total keys, and the number required to sign transactions. It then needs to add private keys from the other user's wallet. It can then complete the creation process. For any future transaction from the multi-sig wallet the required amount of co-signers need to sign (using Partially Signed Bitcoin Transactions - PSBT from [BIP174]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki'}}){:target="_blank"}) before any transaction is valid.
 
-#### Pros
+{% include fact/pros.html %}
+
 - Allows several people to access and control a bitcoin wallet
 - Can tailor requirements for multiple co-signers and access
 - High security, if setup well
 
-#### Cons
+{% include fact/close.html %}
+
+{% include fact/cons.html %}
+
 - Has significant complexity and op-sec burden for multiple private keys, each of which might need a good manual backup scheme
+
+
+{% include fact/close.html %}
 
 ### Best practice
 

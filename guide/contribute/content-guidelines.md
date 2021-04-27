@@ -33,13 +33,17 @@ This guide is crafted for anyone interested in building an effective Bitcoin app
 
 Address the reader directly. Whenever possible, try using active instead of passive voice. Make the reader a part the conversation by using second-person pronouns like "you, your and yours". Do not write in first-person and avoid giving predictions and personal opinions.
 
-##### Do
+{% include tip/open.html color="green" icon="check" label="Do this" %}
 
 *Your wallet balance is 1 bitcoin (BTC). If you have recently mined a block, this could be a fresh whole bitcoin. However, it is most likely going to be an accumulation of UTXOs (change) from your previous bitcoin transactions.*
 
-##### Don't
+{% include tip/close.html %}
+
+{% include tip/open.html color="red" icon="forbid" label="Don't do this" %}
 
 *My wallet balance is 1 bitcoin (BTC). If I have recently mined a block, this could be a fresh whole bitcoin. However, it is most likely going to be an accumulation of UTXOs (change) from previous bitcoin transactions.*
+
+{% include tip/close.html %}
 
 ### Use simple language
 
@@ -49,13 +53,17 @@ Bitcoin is a global currency. Not everyone using this guide is a native English 
 
 Focus on information relevant to the reader. Use direct, clear, concise sentences that are easy to understand. Try to reduce the word count to just the right brevity without being obscure.
 
-##### Do
+{% include tip/open.html color="green" icon="check" label="Do this" %}
 
 *First the application generates a wallet with a keypair. Then, the key is encrypted and backed up to a location convenient and safe for the user, yet hard to for a malicious third-party to gain access to.*
 
-##### Don't
+{% include tip/close.html %}
+
+{% include tip/open.html color="red" icon="forbid" label="Don't do this" %}
 
 *The wallet-application will generate a wallet with a keypair, then encrypt and back the key up to a location that the user is unlikely to lose access to, while hard for a malicious third party to gain access to.*
+
+{% include tip/close.html %}
 
 ### Make content scannable
 
