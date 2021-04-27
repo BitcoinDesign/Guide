@@ -35,7 +35,7 @@ Illustration sources
 
 # Why Bitcoin is unique
 
-The Internet lets people anywhere instantly exchange ideas and information with people everywhere. Bitcoin takes this further by giving everyone a baked in method for storing and transferring value online.
+The Internet lets people anywhere instantly exchange ideas and information with people everywhere. Bitcoin takes this further by giving everyone a built-in method for storing and transferring value online.
 
 ## It's money, but digital
 
