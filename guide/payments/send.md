@@ -51,21 +51,25 @@ The receiver does this by generating a new address in their wallet application, 
 
 Once you have gotten the address, it's time to enter the payment details. Bitcoin transactions are irreversible, so both the sender and receiver should take great care in correctly sharing and inputting addresses.
 
-**QR Code** -- Access will need to be granted to your application to enable scanning of QR Codes. Once the camera detects a valid address in the QR Code, it should automatically fill the address field.
+**QR Code** -- Camera access will need to be granted to your application to enable scanning of QR Codes. Once the camera detects a valid address in the QR Code, it should automatically fill the address field.
 
 **Copy Paste** -- When the sender receives the address or payment link as text, your application can detect a valid address in the clipboard and prompt the sender to press a button to paste it.
 
 </div>
 
-**Do's**
+{% include tip/open.html color="green" icon="check" label="Do this" %}
 
 - Indicate clearly if the address is valid or not
 - Show the full address if possible to help the sender visually verify it is correct
-- If space is a constraint, truncate the address in the middle so that both the beginning and end are visible
+- If space is a constraint, truncate the address in the middle so that both the beginning and end are visible like so bc1qsmprft5u...nyqt48vmjn87
 
-**Don'ts**
+{% include tip/close.html %}
+
+{% include tip/open.html color="red" icon="forbid" label="Don't do this" %}
 
 - Make it possible that a transaction is sent if the address is invalid
+
+{% include tip/close.html %}
 
 ## Inputting an amount
 
@@ -83,13 +87,21 @@ Unless the sender needs to transfer a specific amount of bitcoin, they should ha
 Applications sometimes also allow the sender to select fractions of their total available balance by providing a "max" or "use full balance" button. These fractions can be handy when the sender needs to make transfers from their hot wallet to a more secure hardware wallet.
 </div>
 
-**Do's**
+{% include tip/open.html color="green" icon="check" label="Do this" %}
 
 - Allow senders to switch which denomination they are inputting the amount with
 - State the total balance available (subtracting the required fee)
 - Allow selecting max amount or fractions for easier fund management
 - Payment links and QR Codes can contain an amount. When they do, your application should populate the amount field automatically
 - Indicate if an amount entered is more than the available balance
+
+{% include tip/close.html %}
+
+{% include tip/open.html color="red" icon="forbid" label="Don't do this" %}
+
+- Insert don'ts here...
+
+{% include tip/close.html %}
 
 ## Transaction fee
 
@@ -114,11 +126,19 @@ Human error with fee selection can lead to costly mistakes, and fee estimations 
 - Allow sender to choose from presets
 - Allow sender to enter a custom fee rate (advanced)
 
-**Do's**
+{% include tip/open.html color="green" icon="check" label="Do this" %}
 
 - If the sender does not have advanced knowledge about bitcoin fees but wants control over the fee rate, provide presets to select how urgent the transaction is (e.g. low, medium, high priority)
 - When using presets, clearly communicate estimated confirmation time and costs related to each of the fee rate options
 - When allowing users to enter their own fee rate, warn the sender if they enter an amount far beyond the recommended fee rate for the next block
+
+{% include tip/close.html %}
+
+{% include tip/open.html color="red" icon="forbid" label="Don't do this" %}
+
+- Insert don'ts here...
+
+{% include tip/close.html %}
 
 ## Reviewing and approving the payment
 
@@ -136,10 +156,18 @@ A valid transaction that is broadcast to the network cannot be reversed, so it i
 If your application allows setting spending limits, and the current transaction exceeds it, make sure they go through some security check (biometric, enter PIN, 2FA password, etc). This technique can also be employed if the transaction is attempting to use the max wallet balance.
 </div>
 
-**Do's**
+{% include tip/open.html color="green" icon="check" label="Do this" %}
 
 - Allow the sender to review payment details like address, amount, and fees and adjust if necessary before submitting the transaction
 - Show the amount being sent and the fee information in both bitcoin and the senders preferred currency
+
+{% include tip/close.html %}
+
+{% include tip/open.html color="red" icon="forbid" label="Don't do this" %}
+
+- Insert don'ts here...
+
+{% include tip/close.html %}
 
 ## Transaction processing and confirmation
 
@@ -158,10 +186,16 @@ Let us look at how we communicate to the sender about the [processing of a trans
 
 **Sixth confirmation** -- Commonly regarded as when the final settlement of the payment happens. Merchants, for example, would only be willing to release the product or service at this point.
 
-**Do's**
+{% include tip/open.html color="green" icon="check" label="Do this" %}
+
 - Clearly indicate the state of the outgoing transaction
 - Show the number of confirmations the transaction has
 - Provide information on transaction/block ID for receipt purposes
 
-**Don'ts**
+{% include tip/close.html %}
+
+{% include tip/open.html color="red" icon="forbid" label="Don't do this" %}
+
 - Show the transaction as confirmed until it has received ***at least*** one confirmation, but preferably six
+
+{% include tip/close.html %}
