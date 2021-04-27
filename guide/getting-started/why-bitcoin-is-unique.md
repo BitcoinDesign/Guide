@@ -35,16 +35,7 @@ Illustration sources
 
 # Why Bitcoin is unique
 
-The internet has changed the world. Barriers to global communication and the exchange of information are reduced to almost nothing. Bitcoin adds another important dimension to this and brings us a natively digital method for storing and transferring value.
-
-<!--
-The status quo is that currencies are created and managed by governments and online payments are routed through the payment networks of large corporations. Government authority ensures that currencies are recognized and backed, while payment providers stay on top of fraud, prevent double-spending, provide security and various other benefits and services. This highly complex system works well enough for most people.
-
-Bitcoins unique and clever combination of different technologies has managed to create both a currency and a payment network that can be trusted without government or corporate authorities. This innovation does not only open up global payments to anyone with a smartphone or computer, it also allows for storing value outside of traditional economic systems. This does not mean that bitcoin will replace existing currencies. Instead, it can complement them by better serving audiences and use cases that are typically difficult and expensive, as well as opening up completely new possibilities.
-
-We have already hinted at some of the unique properties of Bitcoin, but let’s go through them one by one, seen through the lens of Bitcoin as money.
-
--->
+The Internet lets people anywhere instantly exchange ideas and information with people everywhere. Bitcoin takes this further by giving everyone a built-in method for storing and transferring value online.
 
 ## It's money, but digital
 
@@ -60,19 +51,36 @@ We have already hinted at some of the unique properties of Bitcoin, but let’s 
    layout = "float-right-desktop"
 %}
 
-The economic definition of money typically involves three specific [functions](https://en.wikipedia.org/wiki/Money#Functions) (medium of exchange, unit of account, store of value) and five [properties](https://en.wikipedia.org/wiki/Money#Properties) (durability, portability, fungibility, scarcity, divisibility, recognizability). Although bitcoin is a new breed of money, it still satisfies all of these requirements. Instead of relying on physical properties (like gold and silver) or trust in central authorities (like traditional currencies), bitcoin relies on a network of thousands of computers to enforce its mathematically defined ruleset.
+Historically, in order to be considered money, it must be usable as each of the following:
 
+1. A medium of exchange
+2. A unit of account
+3. A store of value
+
+In addition, six fundamental properties define whether or not a currency can actually function as money. Those [properties](https://en.wikipedia.org/wiki/Money#Properties) are:
+
+1. Durability
+2. Portability
+3. Fungibility
+4. Scarcity
+5. Divisibility
+6. Recognizability
+
+Although bitcoin is purely digital, it meets every classical definition of what makes something money. Instead of relying on physical properties (like gold and silver) or central authorities (like government-issued fiat currencies), bitcoin relies on the world’s most powerful computer network to mathematically enforce the rules that make it the first truly digital form of cash.
 </div>
 
 ## You own it
 
-When we carry cash, we are entirely in control of its value. When we purchase something and give the cash away, it is gone. Online banking and payments rely on third parties that hold our money for us and allow us to access it through their websites and applications. Bitcoin manages to combine the benefits of cash as a bearer instrument with online banking convenience. When you control your bitcoin private keys, nobody in the world can take your bitcoin.
+When you take cash out of your bank account, it becomes your responsibility. If you lose it, it’s lost. If you transact with it, no middleman can block the transaction. Either way, you are its custodian—this is bitcoin in a nutshell. It’s digital, self-custodial cash.
+
+
+Bitcoin combines the custodial benefits of physical cash with the convenience of online banking and payment processing. But unlike your bank, bitcoin has never been hacked. So as long as you responsibly manage your private keys, not only do you own your bitcoin, no one can take them away.
 
 ## Global by default
 
-Bitcoin can be used by anyone with an internet connection, which is available to around [53.6% of the world population](https://en.wikipedia.org/wiki/Global_Internet_usage), a number that is growing quickly. Some aspects of bitcoin, like key and address generation, even work without being online. This makes it the first truly globally available form of money that is unbound by country borders. People from around the world can freely transact without having to rely on middlemen like currency exchanges and local payment services.
+If you can access the Internet, you can access bitcoin. As of 2019, roughly [53.6% of the world’s population](https://en.wikipedia.org/wiki/Global_Internet_usage) was online. That means 53.6% of the world already has access to bitcoin. This makes bitcoin the first currency of any kind entirely unbound by national borders. It also makes it the first currency to completely cut out middlemen like currency exchanges, local payment services, and banks.
 
-## All participants are treated equally
+## Equal treatment for all
 
 <div class="center" markdown="1">
 
@@ -86,18 +94,21 @@ Bitcoin can be used by anyone with an internet connection, which is available to
    layout = "float-right-desktop"
 %}
 
-Bitcoin as a technical protocol relies on addresses and does not work with persons' concepts, real-life identities, or even user names. Individuals, companies, governments, and anyone else interact with it on a level playing field with the same rights and benefits. No group can shut another group out at a fundamental level, censor transactions, or confiscate bitcoin. This naturally only applies to bitcoin itself, and services built on bitcoin may enforce identity verification and discriminate between users.
+Bitcoin uses scrambled, pseudonymous strings of letters and numbers in place of personal information, real-life identities, and even usernames. It treats everyone from individuals to corporations and governments the same. No group has the power to censor transactions, shut others out of the network, or confiscate another’s bitcoin. While certain services might discriminate or request personal information, the Bitcoin network not only won’t, but can’t.
 
 </div>
 
-## It complements existing financial systems
+## Bitcoin complements existing financial systems
 
-Around [1.7 billion adults](https://globalfindex.worldbank.org/sites/globalfindex/files/chapters/2017%20Findex%20full%20report_chapter2.pdf) do not have access to banking services, including roughly [55 million US citizens](https://en.wikipedia.org/wiki/Unbanked#The_unbanked_in_the_United_States). Reasons may include that lack of availability of financial services, lack of trustworthy institutions, or exclusion of certain parts of the population due to their legal, social or financial status. Bitcoin has the potential to serve these individuals, as it is an unbiased, open, and public network. This can be an incredibly equalizing force for many people and use cases and opens up new economic opportunities.
+Globally, around [1.7 billion adults](https://globalfindex.worldbank.org/sites/globalfindex/files/chapters/2017%20Findex%20full%20report_chapter2.pdf) have no access to banking services, including [55 million US citizens](https://en.wikipedia.org/wiki/Unbanked#The_unbanked_in_the_United_States).
+Geographical distance, lack of access to dependable institutions, and exclusion based on legal, social, and financial status are just some of the factors that contribute to this disparity.
+
+However, because bitcoin is unbiased, open, and public, it can serve communities that conventional financial institutions overlook, helping grow economies and creating economic mobility where it never existed.
 
 ## It is open-source
 
-How many currencies and payment networks allow anyone to show up, participate and contribute? This has traditionally not been possible since those systems rely on central authorities to function. Bitcoin relies on thousands of volunteer contributors to collaboratively keep the system running, evolve it, and build services on top of it. This community of passionate contributors creates the free software that keeps Bitcoin running and allows everyone to interact with it as they desire.
+It's only appropriate that the bitcoin ecosystem is being developed by teams and individuals worldwide. Not many financial institutions allow anyone to participate and contribute to them. So it’s fitting that bitcoin almost exclusively relies on collaboration between volunteers from around the world to keep it running and evolving.
 
 ---
 
-Continue on and find out why you should [design for bitcoin]({{ '/guide/getting-started/why-design-for-bitcoin/' | relative_url }}).
+Wondering why you should [design for bitcoin?]({{ '/guide/getting-started/why-design-for-bitcoin/' | relative_url }}) Read on.
