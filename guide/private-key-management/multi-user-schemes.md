@@ -52,6 +52,8 @@ Just like with personal schemes, external signing devices can be used to hold on
 ### How it works
 A wallet or coordination application initiates a multi-sig wallet, choosing the number of total keys, and the number required to sign transactions. It then needs to add private keys from the other user's wallet. It can then complete the creation process. For any future transaction from the multi-sig wallet the required amount of co-signers need to sign (using Partially Signed Bitcoin Transactions - PSBT from [BIP174]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki'}}){:target="_blank"}) before any transaction is valid.
 
+### Best practice
+
 {% include fact/pros.html %}
 
 - Allows several people to access and control a bitcoin wallet
@@ -66,25 +68,36 @@ A wallet or coordination application initiates a multi-sig wallet, choosing the 
 
 {% include fact/close.html %}
 
-### Best practice
+{% include fact/open.html color="green" label="When to use" icon="check" %}
 
-#### When to use
 - When funds need to be accessed by several people or an organization
 - When users are likely to be very knowledgeable or be guided through setup and use
 
-#### When not to use
+{% include fact/close.html %}
+
+{% include fact/open.html color="red" label="When not to use" icon="forbid" %}
+
 - (No other option currently for shared access scenarios)
 
-#### Variations
+{% include fact/close.html %}
+
+{% include fact/open.html color="green" label="Do's" icon="check" %}
+
+- Make sure the multi-key setup itself is backed up properly, including x-pubs for all the participating keys, fingerprint and derivation.
+
+{% include fact/close.html %}
+
+{% include fact/variations.html %}
+
 - The number of required co-signers and attached keypairs
 - Key storage devices
 
-#### Do's
-- Make sure the multi-key setup itself is backed up properly, including x-pubs for all the participating keys, fingerprint and derivation.
+{% include fact/close.html %}
+
 
 {% include fact/open.html color="blue" label="Products that use this scheme" icon="rectangle" %}
 
-[Electrum](https://electrum.org){:target="_blank"}, [Bluewallet](https://bluewallet.io){:target="_blank"}, [Specter](https://specter.solutions){:target="_blank"}, [Armory](https://btcarmory.com){:target="_blank"},[Nunchuk](https://nunchuk.io/){:target="_blank"}, [Sparrow](https://sparrowwallet.com/){:target="_blank"}, [Guarda](https://guarda.com){:target="_blank"}, [Revault](https://revault.dev){:target="_blank"}.
+[Electrum](https://electrum.org), [Bluewallet](https://bluewallet.io), [Specter](https://specter.solutions), [Armory](https://btcarmory.com), [Nunchuk](https://nunchuk.io/), [Sparrow](https://sparrowwallet.com/), [Guarda](https://guarda.com), [Revault](https://revault.dev).
 
 {% include fact/close.html %}
 

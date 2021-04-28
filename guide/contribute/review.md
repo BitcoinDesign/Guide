@@ -83,9 +83,10 @@ When you're done with leaving individual feedback, you can submit it. Click on t
 
 {% include tip/open.html color="green" icon="check" label="Do this" %}
 
-- Comment - general feedback without explicit approval.
-- Approve changes - feedback approving the proposed changes.
-- Request changes - feedback explicitly suggesting changes.
+- Leave a suggestion instead of general feedback whenever possible, especially for typo and grammar-related feedback
+- Be humble and constructive when reviewing
+- Be understanding and welcoming towards new contributors
+- If something is not clear enough, feel free to ask questions to the pull request author
 
 {% include tip/close.html %}
 

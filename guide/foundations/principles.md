@@ -210,7 +210,7 @@ Unlike traditional banking systems, the Bitcoin economy does not require new use
 {% include tip/open.html color="green" icon="check" label="Do this" %}
 
 - Design products that encourage people to run a full Bitcoin node
-- Alternatively, use a light client with the p2p network using compact block filters
+- Alternatively, use a light client with the [p2p network]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki'}}) using [compact block filters]({{ 'https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki'}})
 - Offer the user choice of what node and other external services to connect to
 
 {% include tip/close.html %}

@@ -74,6 +74,8 @@ With most implementations so far, the location will be the keychain or a user-sp
 
 This makes the backup accessible by the user on a new device, should they lose the original, but only accessible by someone that can log into the user’s Apple or Google account.
 
+### Best practice
+
 {% include fact/pros.html %}
 
 - Low onboarding friction
@@ -89,21 +91,28 @@ This makes the backup accessible by the user on a new device, should they lose t
 
 {% include fact/close.html %}
 
-### Best practice
+{% include fact/open.html color="green" label="When to use" icon="check" %}
 
-#### When to use
 - When risk of self-inflicted loss is higher than loss from theft
 - For beginners, or products with progressive security
 - For lower values
 
-#### When not to use
+{% include fact/close.html %}
+
+{% include fact/open.html color="red" label="When not to use" icon="forbid" %}
+
 - When storing high values
 - When risk of loss from theft is higher than self-inflicted loss
 - When complete self-sovereignty is important to the target audience
 
-#### Variations
+{% include fact/close.html %}
+
+{% include fact/variations.html %}
+
 - Storage location (keychain, iCloud, Google Drive, One Password etc.)
 - Additional user authentication (biometrics, pin)
+
+{% include fact/close.html %}
 
 {% include fact/open.html color="blue" label="Products that use this scheme" icon="rectangle" %}
 
@@ -137,6 +146,8 @@ This can be an effective way to reduce the risk of loss from theft if the backup
 
 A full guide to manual backup best practices for users is out of scope for this chapter but the [Do's and Dont's](https://blog.keys.casa/the-dos-and-donts-of-bitcoin-key-management/)  of Bitcoin key management is a good starting point.
 
+### Best practice
+
 {% include fact/pros.html %}
 
 - Manual backups done well can provide very high security
@@ -151,25 +162,36 @@ A full guide to manual backup best practices for users is out of scope for this 
 
 {% include fact/close.html %}
 
-### Best practice
+{% include fact/open.html color="green" label="When to use" icon="check" %}
 
-#### When to use
 - When target audience is likely to be knowledgeable and implement good manual backup schemes
 - When storing medium amounts
 - When risk of loss from theft is higher than self-inflicted loss
 
-#### When not to use
+{% include fact/close.html %}
+
+{% include fact/open.html color="red" label="When not to use" icon="forbid" %}
+
 - When users are new to bitcoin and unlikely to implement good manual backups
 - For use-cases with small amounts
 - When onboarding is likely to happen outside of users' homes
 
-#### Variations
+{% include fact/close.html %}
+
+{% include fact/open.html color="green" label="Do's" icon="check" %}
+
+- Explain what a recovery phrase is, and provide a guide how to do *safe offline backups* BEFORE the user is exposed to the phrase or can start using the wallet
+
+{% include fact/close.html %}
+
+{% include fact/variations.html %}
+
 - 12 or 24 word phrase
 - Additional user authentication (biometrics use, pin or password)
 - Cloud backup options
 
-#### Do's
-- Explain what a recovery phrase is, and provide a guide how to do *safe offline backups* BEFORE the user is exposed to the phrase or can start using the wallet
+{% include fact/close.html %}
+
 
 {% include fact/open.html color="blue" label="Products that use this scheme" icon="rectangle" %}
 
@@ -199,6 +221,8 @@ The external device can generate and store a keypair offline. Therefore, the pri
 
 When a transaction needs to be signed, the software submits a partially signed bitcoin transaction (PSBT, defined in [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki)) to the device. The user confirms on the device and the PSBT state of the transaction returned to the software wallet application is now fully signed and can be transmitted to the blockchain. This process can also happen fully air gapped by using memory cards instead of cables or wireless connections, to keep the device offline at all times.
 
+### Best practice
+
 {% include fact/pros.html %}
 
 - Removes private key from online devices
@@ -214,21 +238,28 @@ When a transaction needs to be signed, the software submits a partially signed b
 
 {% include fact/close.html %}
 
-### Best practice
+{% include fact/open.html color="green" label="When to use" icon="check" %}
 
-#### When to use
 - When storing medium to large amounts
 - When risk of loss from theft is higher than loss from negligence
 - When target audience is likely to be very knowledgeable or motivated to learn good manual backup schemes
 
-#### When not to use
+{% include fact/close.html %}
+
+{% include fact/open.html color="red" label="When not to use" icon="forbid" %}
+
 - When most users are new to bitcoin and unlikely to implement good backup schemes
 - When transactions are likely to be frequent and low value
 
-#### Variations
+{% include fact/close.html %}
+
+{% include fact/variations.html %}
+
 - Interfaces (bluetooth, USB, microSD card, camera, NFC)
 - Platform compatibility
 - Additional user authentication (pin or password)
+
+{% include fact/close.html %}
 
 {% include fact/open.html color="blue" label="Products that use this scheme" icon="rectangle" %}
 
@@ -236,7 +267,7 @@ When a transaction needs to be signed, the software submits a partially signed b
 
 {% include fact/close.html %}
 
-{% include fact/open.html color="orange" label="Hardware wallets" icon="rectangle" %}
+{% include fact/open.html label="Hardware wallets" icon="rectangle" %}
 
 [Trezor]({{ 'https://trezor.io'}}), [Ledger]({{ 'https://www.ledger.com'}}), [Keepkey]({{ 'https://shapeshift.com/keepkey'}}), [Coldcard]({{ 'https://coldcardwallet.com'}}), [Cobo]({{ 'https://cobo.com/'}}).
 
@@ -262,6 +293,8 @@ Some benefits over a multikey setup include greater privacy, as a transaction us
 ### How it works
 A single private key is split into n key-shares that are distributed to several parties, devices or locations. When signing a transaction the required number of shares need to be coordinated into one valid signature. This relies on a cryptographic algorithm called [Shamir's Secret Sharing](https://en.wikipedia.org/wiki/Shamir's_Secret_Sharing) after its creator.
 
+### Best practice
+
 {% include fact/pros.html %}
 
 - Can provide higher resistance to loss from theft
@@ -277,19 +310,26 @@ A single private key is split into n key-shares that are distributed to several 
 
 {% include fact/close.html %}
 
-### Best practice
+{% include fact/open.html color="green" label="When to use" icon="check" %}
 
-#### When to use
 - When target audience is well-versed with bitcoin
 - When risk of theft is higher than self-inflicted loss
 
-#### When not to use
+{% include fact/close.html %}
+
+{% include fact/open.html color="red" label="When not to use" icon="forbid" %}
+
 - When Schnorr signatures are available, enabling multi-key setups with similar benefits
 
-#### Variations
+{% include fact/close.html %}
+
+{% include fact/variations.html %}
+
 - Number of signatures required
 - Location and distribution of pieces
 - Signing procedure
+
+{% include fact/close.html %}
 
 {% include fact/open.html color="blue" label="Products that use this scheme" icon="rectangle" %}
 
@@ -318,6 +358,8 @@ Multi-key schemes can raise the security, since anyone needs access to more than
 ### How it works
 A software wallet application or coordination software initiates a multi-sig wallet, choosing the number of total keys, and the number required to sign transactions. The user then adds private keys from other wallets generated elsewhere to the multisig after which the software wallet can complete the creation process. For any future transaction from the multi-sig wallet the required amount of co-signers need to sign (using Partially Signed Bitcoin Transactions - PSBT from [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki)) before any transaction is valid.
 
+### Best practice
+
 {% include fact/pros.html %}
 
 - Significantly increases security against theft
@@ -330,24 +372,34 @@ A software wallet application or coordination software initiates a multi-sig wal
 
 {% include fact/close.html %}
 
-### Best practice
+{% include fact/open.html color="green" label="When to use" icon="check" %}
 
-#### When to use
 - When storing large amounts
 - When target audience is likely to own hardware wallets
 - When most users are likely to implement good backup schemes for multiple keys
 
-#### When not to use
+{% include fact/close.html %}
+
+{% include fact/open.html color="red" label="When not to use" icon="forbid" %}
+
 - For small amounts
 - When users are likely to be new to bitcoin
 
-#### Variations
+{% include fact/close.html %}
+
+{% include fact/open.html color="green" label="Do's" icon="check" %}
+
+- Make sure the multi-key setup itself is backed up properly, including [extended public keys]({{ '/guide/glossary/#extended-public-key-xpub-ypub-zpub' | relative_url }}) for all the participating keys, fingerprint and derivation.
+
+{% include fact/close.html %}
+
+{% include fact/variations.html %}
+
 - Number of total and co-signing keys
 - Key locations and distribution
 - Managed or completely sovereign
 
-#### Do's
-- Make sure the multi-key setup itself is backed up properly, including [extended public keys]({{ '/guide/glossary/#extended-public-key-xpub-ypub-zpub' | relative_url }}) for all the participating keys, fingerprint and derivation.
+{% include fact/close.html %}
 
 {% include fact/open.html color="blue" label="Products that use this scheme" icon="rectangle" %}
 
