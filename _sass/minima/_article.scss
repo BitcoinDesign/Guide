@@ -47,6 +47,8 @@ article.guide {
 
   a.video-link,
   a.prototype-link {
+    margin-top: $spacing-unit;
+    display: block;
     position: relative;
 
     > svg {
@@ -132,8 +134,22 @@ article.guide {
   & > .center {
     @include clearfix;
 
-    > figure {
-      margin-top: 0;
+    @include media-query(medium-down) {
+      > figure {
+        &:not(:first-child),
+        &.-float-left,
+        &.-float-right,
+        &.-float-left-mobile,
+        &.-float-right-mobile {
+          margin-top: $spacing-unit/5;
+        }
+      }
+    }
+
+    @include media-query(large) {
+      > figure {
+        margin-top: 0;
+      }
     }
   }
 
@@ -257,12 +273,9 @@ article.guide {
 
   figure:not(.-float-left, .-float-right, :first-child),
   iframe {
-    margin-top: $spacing-unit;
-    margin-bottom: $spacing-unit;
-
     @include media-query(medium-down) {
-      margin-top: $spacing-unit/2;
-      margin-bottom: $spacing-unit/2;
+      margin-top: $spacing-unit;
+      margin-bottom: $spacing-unit;
     }
 
     @include media-query(large) {

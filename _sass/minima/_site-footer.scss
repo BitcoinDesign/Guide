@@ -3,7 +3,7 @@
  * Site footer
  */
 .site-footer {
-  padding: 20px 20px $spacing-unit * 2 20px;
+  padding: $spacing-unit/2 $spacing-unit/2 $spacing-unit*2 $spacing-unit/2;
 
   .wrapper {
     display: flex;
@@ -144,7 +144,7 @@
         margin-right: auto;
         order: 1;
       }
-      
+
       .edit-license {
         display: flex;
         border-right: 1px solid black;
