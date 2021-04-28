@@ -23,11 +23,11 @@ This page should cover what to do when receiving bitcoin, how to share and copy 
 
 -->
 
-The details required by a sender to make a payment, at minimum, is an address. You can think of an address just as you would an invoice, as it is only used once. The receiver generates an address in their Bitcoin application and gives it to the sender. Just as with traditional invoices, a new address needs to be created each time the receiver wants to receive funds.
+For someone to receive bitcoin, the sender needs to know the recipient’s address. The receiver generates an address in their Bitcoin application and shares it with the sender as text, [QR Code]({{ '/guide/foundations/wallet-interoperability/#qr-codes' | relative_url }}), or a [payment link]({{ '/guide/foundations/wallet-interoperability/#payment-links' | relative_url }}). You can think of an address just as you would an invoice. A new address should be generated for every payment, as they should only be used once. This prevents the current sender from learning about previously received funds.
 
-There is other contextual information about payments, like the names of the transacting parties or the purpose, that is also useful to keep and communicate. Remember, the blockchain does not store any of this. Such information can only be stored in your application or encoded in [payment links](https://bitcoin.design/guide/foundations/wallet-interoperability/#payment-links). After a transaction is finalized, all that will get recorded are amounts and addresses.
+There is other contextual information about payments that can be useful to keep or to communicate, like the names of the transacting parties or the purpose of the transaction. As the blockchain only stores the amount and addresses involved in a transaction, any additional information has to be stored in your application, or encoded in payment links when they need to be shared.
 
-Let’s now explore our options when receivers may have other payment details that they may want to share with the sender or store alongside the payment request for their own record keeping. We will also look at the friction points that can arise from address incompatibility.
+Let's look at our options when receivers want to share other details with the sender, or store them with the payment request for their own record keeping.
 
 <!-- 
 Update glossary
@@ -113,11 +113,11 @@ Since bitcoin is a open system and has many payment applications built ontop of 
 -->
 
 ## Choosing the type of address
-There are currently [three different versions](https://bitcoin.design/guide/glossary/#address) of bitcoin addresses. In order of oldest to newest they are; Legacy, Script, and SegWit. It is best practice for new applications to support SegWit, the latest, by default.
+There are currently [three different versions](https://bitcoin.design/guide/glossary/#address) of bitcoin addresses. From newest to oldest they are; Segwit, Script, and Legacy. It is the best practice for applications to support the newest address version, SegWit, as their default.
 
-The most commonly used addresses are still the “legacy” addresses since Segwit addresses are only a few years old, and some older applications have yet to update.
+Since "legacy" addresses are still in use, and some older applications have yet to upgrade. Script addresses can be used to resolve incompatibility issues that can arise when the sender's application does not recognize the SegWit address provided by the receiver.
 
-Suppose the sender is using a legacy wallet and paying to the receiver's SegWit address. In this case, the sender's wallet may incorrectly warn them that the address is invalid or not supported. This can confuse the sender’s end, leading them to think that the receiver provided an incorrect address.
+To illustrate the problem, suppose the sender is using a legacy wallet and paying to the receiver's SegWit address. In this case, the sender's wallet may incorrectly warn them that the address is invalid or not supported. This can confuse the sender’s end, leading them to think that the receiver provided an incorrect address.
 
 The receiver should then have the ability to switch to a Script address that does not have all the benefits of SegWit, like cheaper transactions but will be compatible with the sender's wallet.
 

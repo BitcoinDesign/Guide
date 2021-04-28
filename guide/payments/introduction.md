@@ -39,7 +39,7 @@ An introduction to how sending bitcoin works.
 
 ---
 
-### Receiving bitcoin (coming soon)
+### [Receiving bitcoin](/guide/payments/receive/)
 
 An introduction to how receiving and requesting bitcoin works.
 
