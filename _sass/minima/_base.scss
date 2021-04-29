@@ -57,6 +57,10 @@ hr {
   margin-top: $spacing-unit;
   border: 1px solid rgba(var(--front), 0.1);
   border-width: 1px 0 0;
+
+  & + p {
+    margin-top: $spacing-unit;
+  }
 }
 
 /**
