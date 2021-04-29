@@ -23,7 +23,7 @@ This page should cover what to do when receiving bitcoin, how to share and copy 
 
 -->
 
-For someone to receive bitcoin, the sender needs to know the recipient’s address. The receiver generates an address in their Bitcoin application and shares it with the sender as text, [QR Code]({{ '/guide/foundations/wallet-interoperability/#qr-codes' | relative_url }}), or a [payment link]({{ '/guide/foundations/wallet-interoperability/#payment-links' | relative_url }}). You can think of an address just as you would an invoice. A new address should be generated for every payment, as they should only be used once. This prevents the current sender from learning about previously received funds.
+For someone to receive bitcoin, the sender needs to know the recipient’s address. The receiver generates an address in their Bitcoin application and shares it with the sender as text, [QR Code]({{ '/guide/foundations/wallet-interoperability/#qr-codes' | relative_url }}), or a [payment link]({{ '/guide/foundations/wallet-interoperability/#payment-links' | relative_url }}). You can think of an address just as you would an invoice. A new address should be generated for every payment, as they should only be used once. This prevents the sender from learning about previously received funds.
 
 There is other contextual information about payments that can be useful to keep or to communicate, like the names of the transacting parties or the purpose of the transaction. As the blockchain only stores the amount and addresses involved in a transaction, any additional information has to be stored in your application, or encoded in payment links when they need to be shared.
 
@@ -56,7 +56,7 @@ since they are deterministic technically
 what happens is an unused address just gets chosen
 -->
 
-The more time passes, the more difficult it will be to recall the details of transactions. When transacting in Bitcoin there is no requirement for senders and receivers even to identify themselves, so both sides may end up having a transaction history with only amounts and random-looking text (addresses) to reference when trying to understand where some funds came from.
+The more time passes, the more difficult it will be to recall the details of transactions. When transacting in Bitcoin, there is no requirement for senders and receivers even to identify themselves, so both sides may end up having a transaction history with only amounts, random-looking text (addresses), and the date it was included in a block to reference when trying to understand where some funds came from.
 
 <div class="image-slide-gallery">
 
@@ -109,13 +109,13 @@ Since there are many Bitcoin applications for people to choose from, its likely 
 
 The exchange of payment details then most commonly happens outside of the wallet application. This 
 
-Since bitcoin is a open system and has many payment applications built ontop of it, there is a [standard format](https://bitcoin.design/guide/foundations/wallet-interoperability/#payment-links) of "payment links" that most bitcoin applications use to share payment details.
+Since bitcoin is a open system and has many payment applications built ontop of it, there is a [standard format]({{ '/guide/foundations/wallet-interoperability/#payment-links' | relative_url }}) of "payment links" that most bitcoin applications use to share payment details.
 -->
 
 ## Choosing the type of address
-There are currently [three different versions](https://bitcoin.design/guide/glossary/#address) of bitcoin addresses. From newest to oldest they are; Segwit, Script, and Legacy. It is the best practice for applications to support the newest address version, SegWit, as their default.
+There are currently [three different versions]({{ '/guide/glossary/#address' | relative_url }}) of bitcoin addresses. From newest to oldest they are; Segwit, Script, and Legacy. It is the best practice for applications to support the newest address version, SegWit, as default.
 
-Since "legacy" addresses are still in use, and some older applications have yet to upgrade. Script addresses can be used to resolve incompatibility issues that can arise when the sender's application does not recognize the SegWit address provided by the receiver.
+Since "legacy" addresses are still in use[^1], and some older applications have yet to upgrade. Script addresses can be used to resolve incompatibility issues that can arise when the sender's application does not recognize the SegWit address provided by the receiver.
 
 To illustrate the problem, suppose the sender is using a legacy wallet and paying to the receiver's SegWit address. In this case, the sender's wallet may incorrectly warn them that the address is invalid or not supported. This can confuse the sender’s end, leading them to think that the receiver provided an incorrect address.
 
@@ -191,23 +191,27 @@ Here are some constraints to consider when displaying QR Codes:
 - There should be sufficient contrast between the blocks in a QR Code and the background. Ideally, keeping the blocks black and background white would be the most optimal.
 - Size matters. You won't know the distance the devices will be from one another when the scan is happening, so you should design assuming the longest scan distance.
 
+For more technical details about optimising QR Codes [see this article](https://bitcoinops.org/en/bech32-sending-support/#creating-more-efficient-qr-codes-with-bech32-addresses).
+
 ## Waiting and transaction processing
 Once the payment details are shared, until the sender creates a transaction and broadcast it, there is uncertainty of when the payment would be completed. Think about how to keep the receiver informed while they are waiting.
 
-Similar to [the processes a sender](https://bitcoin.design/guide/payments/send/#transaction-processing-and-confirmation) sees, with the inclusion of this waiting period, here is what the receiver can expect:
+Similar to [the processes a sender]({{ '/guide/payments/send/#transaction-processing-and-confirmation' | relative_url }}) sees, with the inclusion of this waiting period, here is what the receiver can expect:
 
 **Awaiting payment** -- the sender has not broadcasted a transaction with the payment, or one has not been detected as yet by the receiver's application.
 
 **Pending/Unconfirmed** -- miners know about the transaction, but have yet to process it. 
 
-**First confirmation** -- at this point the receiver may already be able to spend the funds, but has to be mindful of [chain reorganizations](https://bitcoin.design/guide/payments/transactions/#7-confirmations).
+**First confirmation** -- at this point the receiver may already be able to spend the funds, but has to be mindful of [chain reorganizations]({{ '/guide/payments/transactions/#7-confirmations' | relative_url }}).
 
 **Sixth confirmation** -- from this point the payment is finalized, it should be no problem to spend freely.
 
 If your application has an area where the user can see a list of payment requests, this would be a good place to use it to also indicate which specific stage the payment is in.
 
-Then once the payment has been finalized, you should also consider what the receiver may want to do with those funds. You may want to help facilitate those follow-up activities e.g. moving the funds to a shared multi-key wallet or doing a [coinjoin](https://bitcoin.design/guide/glossary/#coinjoin).
+Then once the payment has been finalized, you should also consider what the receiver may want to do with those funds. You may want to help facilitate those follow-up activities e.g. moving the funds to a shared multi-key wallet or doing a [coinjoin]({{ '/guide/glossary/#coinjoin' | relative_url }}).
 
 <!-- 
 Follow up page would touch on privacy of transactions including topics of wallet fingerprints (multisig vs signle sig), input/output ordering, coinjoins, and labeling to help users keep separate coin histories.
 -->
+
+[^1]: [SegWit Usage Trends](https://dashboard.bitcoinops.org/d/xVQwtADiz/segwit-usage-trends?refresh=1h&orgId=1)
