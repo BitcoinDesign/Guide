@@ -129,7 +129,7 @@ You can find more screenshots [here](https://www.figma.com/file/rPyJ0Y8xg0kN4FrH
    image = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-1.png"
    retina = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-1@2x.png"
    alt-text = "Muun iOS app cover screen"
-   caption = "Cover screen for new users"
+   caption = "Cover screen for new users."
    width = 250
    height = 541
    layout = "shadow"
@@ -139,7 +139,7 @@ You can find more screenshots [here](https://www.figma.com/file/rPyJ0Y8xg0kN4FrH
    image = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-2.png"
    retina = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-2@2x.png"
    alt-text = "Pin entry screen"
-   caption = "Choosing a PIN for security"
+   caption = "Choosing a PIN for security."
    width = 250
    height = 541
    layout = "shadow"
@@ -149,7 +149,7 @@ You can find more screenshots [here](https://www.figma.com/file/rPyJ0Y8xg0kN4FrH
    image = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-3.png"
    retina = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-3@2x.png"
    alt-text = "Confirmation screen that a wallet was created"
-   caption = "Letting users know that a wallet was successfully created"
+   caption = "Letting users know that a wallet was successfully created."
    width = 250
    height = 541
    layout = "shadow"
@@ -179,7 +179,7 @@ You can find more screenshots [here](https://www.figma.com/file/rPyJ0Y8xg0kN4FrH
    image = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-6.png"
    retina = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-6@2x.png"
    alt-text = "Information about the emergency kit backup option"
-   caption = "An instructional screen to inform users about the security option they are about to set up"
+   caption = "An instructional screen to inform users about the security option they are about to set up."
    width = 250
    height = 541
    layout = "shadow"
