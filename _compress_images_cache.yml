@@ -154,8 +154,6 @@ assets/images/guide/getting-started/common-user-flows/onboarding.jpg: onboarding
 assets/images/guide/getting-started/common-user-flows/onboarding@2x.jpg: onboarding@2x.jpg
 assets/images/guide/getting-started/common-user-flows/receive-notification.jpg: receive-notification.jpg
 assets/images/guide/getting-started/common-user-flows/receive-notification@2x.jpg: receive-notification@2x.jpg
-assets/images/guide/getting-started/common-user-flows/receiving-ui-example.jpg: receiving-ui-example.jpg
-assets/images/guide/getting-started/common-user-flows/receiving-ui-example@2x.jpg: receiving-ui-example@2x.jpg
 assets/images/guide/getting-started/common-user-flows/receiving.jpg: receiving.jpg
 assets/images/guide/getting-started/common-user-flows/receiving@2x.jpg: receiving@2x.jpg
 assets/images/guide/getting-started/common-user-flows/requesting.jpg: requesting.jpg
@@ -164,8 +162,6 @@ assets/images/guide/getting-started/common-user-flows/resolving-problems.jpg: re
 assets/images/guide/getting-started/common-user-flows/resolving-problems@2x.jpg: resolving-problems@2x.jpg
 assets/images/guide/getting-started/common-user-flows/secure-wallet.jpg: secure-wallet.jpg
 assets/images/guide/getting-started/common-user-flows/secure-wallet@2x.jpg: secure-wallet@2x.jpg
-assets/images/guide/getting-started/common-user-flows/sending-ui-complexity.jpg: sending-ui-complexity.jpg
-assets/images/guide/getting-started/common-user-flows/sending-ui-complexity@2x.jpg: sending-ui-complexity@2x.jpg
 assets/images/guide/getting-started/common-user-flows/sending.jpg: sending.jpg
 assets/images/guide/getting-started/common-user-flows/sending@2x.jpg: sending@2x.jpg
 assets/images/guide/getting-started/common-user-flows/sweep.jpg: sweep.jpg
@@ -553,3 +549,11 @@ assets/images/guide/payments/transactions/transactions-mobile.jpg: transactions-
 assets/images/guide/payments/transactions/transactions-mobile@2x.jpg: transactions-mobile@2x.jpg
 assets/images/guide/onboarding/getting-to-know-your-users-mobile@2x.jpg: getting-to-know-your-users-mobile@2x.jpg
 assets/images/guide/onboarding/getting-to-know-your-users-mobile.jpg: getting-to-know-your-users-mobile.jpg
+assets/images/guide/getting-started/common-user-flows/receiving-ui-example-enter-info.png: receiving-ui-example-enter-info.png
+assets/images/guide/getting-started/common-user-flows/receiving-ui-example-enter-info@2x.png: receiving-ui-example-enter-info@2x.png
+assets/images/guide/getting-started/common-user-flows/receiving-ui-example-share-request.png: receiving-ui-example-share-request.png
+assets/images/guide/getting-started/common-user-flows/receiving-ui-example-share-request@2x.png: receiving-ui-example-share-request@2x.png
+assets/images/guide/getting-started/common-user-flows/sending-ui-basic.png: sending-ui-basic.png
+assets/images/guide/getting-started/common-user-flows/sending-ui-basic@2x.png: sending-ui-basic@2x.png
+assets/images/guide/getting-started/common-user-flows/sending-ui-complex.png: sending-ui-complex.png
+assets/images/guide/getting-started/common-user-flows/sending-ui-complex@2x.png: sending-ui-complex@2x.png
