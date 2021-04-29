@@ -77,7 +77,7 @@ Highlights principles and other fundamentals of designing Bitcoin products
 
 ### [Case studies]({{ '/guide/case-studies/' | relative_url }})
 
-Explores wire framing, designing, and prototyping for diverse use cases.
+Explores approaches to diverse uses cases with wireframes, designs and prototypes.
 
 ---
 
