@@ -9,6 +9,9 @@ article.guide {
     &.-background {
       padding: $spacing-unit/3*2;
       background-color: #f8f8f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     &.-shadow {
