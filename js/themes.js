@@ -183,7 +183,7 @@ let themes = [
     },
     flipLayoutOnMobile: false,
     author: {
-        name: "Rama",
+        name: "Rama Krushna",
         link: "https://github.com/BitcoinDesign/Guide/pull"
     }
   }
