@@ -111,26 +111,123 @@ Bitcoin is complex, and so it is recommended to think through and carefully shap
 
 Onboarding may be purely informational based on the content, but it also includes an initial setup that helps personalize the software towards the users' specific needs and context. After onboarding, users are mostly on their own, so the goal is to leave users with a clear idea of achieving what they came for.
 
-The example below shows a series of approaches:
+The example screens below from the [Muun](https://muun.com/) iOS wallet (taken January 2021) use several different methods:
 
-1. Guide the user through forms one small step at a time
-1. Offer a slideshow of information users can choose to read through
-1. Provide a guided tour of the interface to orient users in the product
-1. Offer prompts to primary actions and use cases
+1. Guide the user through information and setup one step at a time
+1. Offer carousels of information users can choose to read (or skip)
+1. Provide simple prompts of key actions
+1. Confirm users are aware of their responsibilities
+
+You can find more screenshots [here](https://www.figma.com/file/rPyJ0Y8xg0kN4FrHFCeDRg/Muun-wallet?node-id=1%3A40).
 
 </div>
 
-{% include image.html
-   image = "/assets/images/guide/getting-started/common-user-flows/blockchain-com-onboarding.jpg"
-   retina = "/assets/images/guide/getting-started/common-user-flows/blockchain-com-onboarding@2x.jpg"
-   alt-text = "Screenshots of the first-time user experience of the blockchain.com bitcoin wallet"
-   caption = 'Onboarding screens of the <a href="https://www.blockchain.com/wallet" target="_blank">blockchain.com wallet</a> as of September 2020'
-   width = 1024
-   height = 630
-   layout = "full-width"
+
+<div class="image-slide-gallery">
+
+{% include picture.html
+   image = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-1.png"
+   retina = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-1@2x.png"
+   alt-text = "Muun iOS app cover screen"
+   caption = "Cover screen for new users"
+   width = 250
+   height = 541
+   layout = "shadow"
 %}
 
-A whole section about onboarding is in development for this guide, stay tuned for more.
+{% include picture.html
+   image = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-2.png"
+   retina = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-2@2x.png"
+   alt-text = "Pin entry screen"
+   caption = "Choosing a PIN for security"
+   width = 250
+   height = 541
+   layout = "shadow"
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-3.png"
+   retina = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-3@2x.png"
+   alt-text = "Confirmation screen that a wallet was created"
+   caption = "Letting users know that a wallet was successfully created"
+   width = 250
+   height = 541
+   layout = "shadow"
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-4.png"
+   retina = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-4@2x.png"
+   alt-text = "Home screen"
+   caption = "The home screen with a prompt to back up the wallet."
+   width = 250
+   height = 541
+   layout = "shadow"
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-5.png"
+   retina = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-5@2x.png"
+   alt-text = "Security center"
+   caption = "The security center guides users through different backup options."
+   width = 250
+   height = 541
+   layout = "shadow"
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-6.png"
+   retina = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-6@2x.png"
+   alt-text = "Information about the emergency kit backup option"
+   caption = "An instructional screen to inform users about the security option they are about to set up"
+   width = 250
+   height = 541
+   layout = "shadow"
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-7.png"
+   retina = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-7@2x.png"
+   alt-text = "Starting the backup process"
+   caption = "Another informational screen for the manual backup option."
+   width = 250
+   height = 541
+   layout = "shadow"
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-8.png"
+   retina = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-8@2x.png"
+   alt-text = "Asking users to write down their recovery code"
+   caption = "A screen that requests users to copy their recovery code."
+   width = 250
+   height = 541
+   layout = "shadow"
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-9.png"
+   retina = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-9@2x.png"
+   alt-text = "Ensuring users understand their responsibility in the security mechanisms of the application"
+   caption = "Confirming that users understand their responsibility in the security mechanisms of the app."
+   width = 250
+   height = 541
+   layout = "shadow"
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-10.png"
+   retina = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-10@2x.png"
+   alt-text = "Success screen"
+   caption = "Giving users confirmation that the app is set up properly."
+   width = 250
+   height = 541
+   layout = "shadow"
+%}
+
+</div>
+
+See the [onboarding section](/guide/onboarding/introduction/) to learn more on this topic.
 
 ## Creating a new wallet
 
