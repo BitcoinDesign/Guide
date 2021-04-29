@@ -70,7 +70,7 @@ Mobile app stores do a good job at providing previews of what using an app will 
 
 Here are two different examples of webpages for downloading bitcoin wallet software. Which one allows users to better understand what using the software will be like? Which one builds more trust?
 
-<div class="image-slide-gallery">
+<div class="image-gallery">
 
 {% include image.html
    image = "/assets/images/guide/getting-started/common-user-flows/app-store-bluewallet.jpg"
@@ -206,7 +206,7 @@ While we all prefer to receive bitcoin, there are times when we need to send the
 
 </div>
 
-<div class="image-slide-gallery">
+<div class="image-gallery">
 
 {% include image.html
    image = "/assets/images/guide/getting-started/common-user-flows/sending-ui-basic.png"
@@ -248,7 +248,7 @@ Once a transaction has been broadcast, the bitcoin network starts processing it.
 Equivalent to creating an invoice, requesting bitcoin involves entering information about this specific transaction and forwarding it to the payer. Overall, there is less complexity involved in this process than sending, but there are a few things for designers to consider.
 </div>
 
-<div class="image-slide-gallery">
+<div class="image-gallery">
 
 {% include image.html
    image = "/assets/images/guide/getting-started/common-user-flows/receiving-ui-example-enter-info.png"
