@@ -70,7 +70,7 @@ Mobile app stores do a good job at providing previews of what using an app will 
 
 Here are two different examples of webpages for downloading bitcoin wallet software. Which one allows users to better understand what using the software will be like? Which one builds more trust?
 
-<div class="image-gallery" markdown="1">
+<div class="image-gallery">
 
 {% include image.html
    image = "/assets/images/guide/getting-started/common-user-flows/app-store-bluewallet.jpg"
@@ -79,6 +79,7 @@ Here are two different examples of webpages for downloading bitcoin wallet softw
    caption = '<a href="https://apps.apple.com/us/app/bluewallet-bitcoin-wallet/id1376878040" target="_blank">BlueWallet landing page</a> on the App Store'
    width = 400
    height = 480
+   layout = "shadow"
 %}
 
 {% include image.html
@@ -88,6 +89,7 @@ Here are two different examples of webpages for downloading bitcoin wallet softw
    caption = '<a href="https://bitcoincore.org/" target="_blank">bitcoincore.org</a>'
    width = 400
    height = 480
+   layout = "shadow"
 %}
 
 </div>
@@ -204,16 +206,31 @@ While we all prefer to receive bitcoin, there are times when we need to send the
 
 </div>
 
+<div class="image-gallery">
+
 {% include image.html
-   image = "/assets/images/guide/getting-started/common-user-flows/sending-ui-complexity.jpg"
-   retina = "/assets/images/guide/getting-started/common-user-flows/sending-ui-complexity@2x.jpg"
-   alt-text = "Interface design examples of two send screens with different levels of complexity"
-   caption = "A bitcoin transaction can be extremely simple, but can also be finely tuned for users with specific needs."
-   width = 800
-   height = 656
+   image = "/assets/images/guide/getting-started/common-user-flows/sending-ui-basic.png"
+   retina = "/assets/images/guide/getting-started/common-user-flows/sending-ui-basic@2x.png"
+   alt-text = "Example of a basic send screen"
+   caption = "A UI for sending bitcoin with just the basic information ([source](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1374%3A33577))."
+   width = 400
+   height = 243
+   layout = "shadow"
 %}
 
-Once a transaction has been broadcast, the bitcoin network starts processing it. Users may want to stay informed about this progress, particularly when a transaction takes longer than expected. In extreme cases, it is possible to retroactively increase the transaction fee to get validated faster with a Replace-by-Fee technique.
+{% include image.html
+   image = "/assets/images/guide/getting-started/common-user-flows/sending-ui-complex.png"
+   retina = "/assets/images/guide/getting-started/common-user-flows/sending-ui-complex@2x.png"
+   alt-text = "Example of a complex send screen"
+   caption = "An overly complex interface with advanced send options ([source](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1374%3A33792))."
+   width = 400
+   height = 690
+   layout = "shadow"
+%}
+
+</div>
+
+Once a transaction has been broadcast, the bitcoin network starts processing it. Users may want to stay informed about this progress, particularly when a transaction takes longer than expected. In extreme cases, it is possible to retroactively increase the transaction fee to get validated faster with a Replace-by-Fee technique. To find out more, visit the [Sending bitcoin](/guide/payments/send/) page.
 
 ## Requesting bitcoin
 
@@ -231,14 +248,29 @@ Once a transaction has been broadcast, the bitcoin network starts processing it.
 Equivalent to creating an invoice, requesting bitcoin involves entering information about this specific transaction and forwarding it to the payer. Overall, there is less complexity involved in this process than sending, but there are a few things for designers to consider.
 </div>
 
+<div class="image-gallery">
+
 {% include image.html
-   image = "/assets/images/guide/getting-started/common-user-flows/receiving-ui-example.jpg"
-   retina = "/assets/images/guide/getting-started/common-user-flows/receiving-ui-example@2x.jpg"
-   alt-text = "Interface design examples of two send screens with different levels of complexity"
-   caption = "A basic example of the information a user needs to add when requesting bitcoin."
-   width = 800
-   height = 336
+   image = "/assets/images/guide/getting-started/common-user-flows/receiving-ui-example-enter-info.png"
+   retina = "/assets/images/guide/getting-started/common-user-flows/receiving-ui-example-enter-info@2x.png"
+   alt-text = "Example interface for entering payment request information."
+   caption = "A payment request starts with entering invoice information."
+   width = 400
+   height = 276
+   layout = "shadow"
 %}
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/common-user-flows/receiving-ui-example-share-request.png"
+   retina = "/assets/images/guide/getting-started/common-user-flows/receiving-ui-example-share-request@2x.png"
+   alt-text = "Example interface for sharing a payment request."
+   caption = "Then the payment request needs to be shared with the payer."
+   width = 400
+   height = 260
+   layout = "shadow"
+%}
+
+</div>
 
 While it is initially intuitive to re-use the same receiving address repeatedly, this practice is highly discouraged. Anyone with this address can easily see what other payments are being made and how the bitcoins are spent. The UI should encourage users to create new addresses for each invoice. This also makes it easier for the software to understand when a specific payment has been received.
 
