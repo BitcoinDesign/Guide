@@ -27,7 +27,7 @@ For someone to receive bitcoin, the sender needs to know the recipient’s addre
 
 A new address should be generated for every payment, as they should only be used once. This helps safeguards the receiver's privacy.
 
-As the blockchain only stores the amount and addresses involved in a transaction, any additional information has to be stored in your application, or encoded in payment links. It's up to you to decide how and if you allow receivers to enter these additional details. 
+As the blockchain only stores the amount and addresses involved in a transaction, any additional information has to be stored in your application, or encoded in payment links.
 
 It's up to you to find the balance between a payment flow that is optimized to quickly generate and share addresses, and one that prompts them to describe the payment so they can use it in the future to have more context about what payment was for.
 
@@ -39,8 +39,8 @@ Each address that a Bitcoin application generates has an accompaniying private k
 Although addresses are not a problem to share publically, their accompanying private keys which typically generated from a single recovery phrase must be kept secure and private.
 -->
 
-## Requesting bitcoin
-As we said earlier, the simplest way to request bitcoin is to create and share a Bitcoin address where the sender should direct the payment. Generating a new address and showing it as a QR code and plain text is the most common way for applications to help users do so. 
+## Preparing the payment request
+The simplest way to request bitcoin is to create and share a Bitcoin address where the sender should direct the payment. Generating a new address and showing it as a QR code and plain text is the most common way for applications to help users do so.
 
 <div class="image-slide-gallery">
 
@@ -56,15 +56,10 @@ As we said earlier, the simplest way to request bitcoin is to create and share a
 </div>
 
 {% include tip/tip.html %}
-Since there are multiple types of addresses, there are some compatbiltiy issues between them that can disrupt a payment flow. Read more about [address compatbiltiy](#address-compatibility).
+Since there are multiple types of addresses, there are some compatibility issues between them that can disrupt a payment flow. Read more about [address compatibility](#address-compatibility).
 {% include tip/close.html %}
 
-As time passes, it becomes more difficult to recall the details of transactions. When transacting in Bitcoin, there is no requirement for senders and receivers to even identify themselves, so both sides may end up having a transaction history with only amounts, random-looking text (addresses), and the date it was included in a block to reference when trying to understand where some funds came from.
-
-Let's look at our options when receivers want to share other details with the sender, or store them with the payment request for their own record keeping.
-
-## Creating a payment request
-Oftentimes, to complete a payment, the sender may need to know the specific amount to be sent. On the receiver’s side, they may want to keep some notes about who sent the bitcoin to help them manage their funds in the future and understand their past transaction activity.
+The receiver may want to request a specific amount from the sender, or save additional information for their own record. This will require extra steps and information when generating the payment request, which can then be shared with the sender as a payment link.
 
 The following are the primary properties of a payment request:
 
@@ -72,8 +67,6 @@ The following are the primary properties of a payment request:
 - **Amount** – How much is being requested (optional)
 - **Label** – For example the name of who is sending the payment (optional)
 - **Message** – For example the purpose of payment (optional)
-
-While the application will generate a new address in the background, other information has to be manually entered. The order in which it is entered is up to you, and besides the address, all else is optional.
 
 <div class="image-slide-gallery">
 
@@ -103,6 +96,7 @@ While the application will generate a new address in the background, other infor
    width = 250
    height = 541
 %}
+
 </div>
 
 <!--
@@ -121,7 +115,7 @@ The exchange of payment details then most commonly happens outside of the wallet
 Since bitcoin is a open system and has many payment applications built ontop of it, there is a [standard format]({{ '/guide/foundations/wallet-interoperability/#payment-links' | relative_url }}) of "payment links" that most bitcoin applications use to share payment details.
 -->
 
-## Sharing the payment details
+## Sharing the payment request
 Whether it’s just an address or a payment link, the two methods of sharing the payment details are text or scannable QR Codes.
 
 <div class="image-slide-gallery">
@@ -168,13 +162,7 @@ Once the payment details are shared, until the sender creates a transaction and 
 
 Similar to [the processes a sender]({{ '/guide/payments/send/#transaction-processing-and-confirmation' | relative_url }}) sees, with the inclusion of this waiting period, here is what the receiver can expect:
 
-**Awaiting payment** -- the sender has not broadcasted a transaction with the payment, or one has not been detected as yet by the receiver's application.
-
-**Pending/Unconfirmed** -- miners know about the transaction, but have yet to process it. 
-
-**First confirmation** -- at this point the receiver may already be able to spend the funds, but has to be mindful of [chain reorganizations]({{ '/guide/payments/transactions/#7-confirmations' | relative_url }}).
-
-**Sixth confirmation** -- from this point the payment is finalized, it should be no problem to spend freely.
+[WHAT DOES THE RECEIVER SEE?]
 
 If your application has an area where the user can see a list of payment requests, this would be a good place to use it to also indicate which specific stage the payment is in.
 
