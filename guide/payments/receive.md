@@ -23,11 +23,13 @@ This page should cover what to do when receiving bitcoin, how to share and copy 
 
 -->
 
-For someone to receive bitcoin, the sender needs to know the recipient’s address. The receiver generates an address in their Bitcoin application and shares it with the sender as text, [QR Code]({{ '/guide/foundations/wallet-interoperability/#qr-codes' | relative_url }}), or a [payment link]({{ '/guide/foundations/wallet-interoperability/#payment-links' | relative_url }}). You can think of an address just as you would an invoice. A new address should be generated for every payment, as they should only be used once. This prevents the sender from learning about previously received funds.
+For someone to receive bitcoin, the sender needs to know the recipient’s address. The receiver generates an address in their Bitcoin application and shares it with the sender as text, by scanning a [QR Code]({{ '/guide/foundations/wallet-interoperability/#qr-codes' | relative_url }}). [Payment links]({{ '/guide/foundations/wallet-interoperability/#payment-links' | relative_url }}) are also used to share additional details about a payment and can be shared in the same way.
 
-There is other contextual information about payments that can be useful to keep or to communicate, like the names of the transacting parties or the purpose of the transaction. As the blockchain only stores the amount and addresses involved in a transaction, any additional information has to be stored in your application, or encoded in payment links when they need to be shared.
+A new address should be generated for every payment, as they should only be used once. This helps safeguards the receiver's privacy.
 
-Let's look at our options when receivers want to share other details with the sender, or store them with the payment request for their own record keeping.
+As the blockchain only stores the amount and addresses involved in a transaction, any additional information has to be stored in your application, or encoded in payment links. It's up to you to decide how and if you allow receivers to enter these additional details. 
+
+It's up to you to find the balance between a payment flow that is optimized to quickly generate and share addresses, and one that prompts them to describe the payment so they can use it in the future to have more context about what payment was for.
 
 <!-- 
 Update glossary
@@ -37,26 +39,37 @@ Each address that a Bitcoin application generates has an accompaniying private k
 Although addresses are not a problem to share publically, their accompanying private keys which typically generated from a single recovery phrase must be kept secure and private.
 -->
 
-## Creating an invoice
+## Requesting bitcoin
+As we said earlier, the simplest way to request bitcoin is to create and share a Bitcoin address where the sender should direct the payment. Generating a new address and showing it as a QR code and plain text is the most common way for applications to help users do so. 
+
+<div class="image-slide-gallery">
+
+{% include picture.html
+   image = "/assets/images/guide/payments/receive/enter-details-compact.png"
+   retina = "/assets/images/guide/payments/receive/enter-details-compact@2x.png"
+   alt-text = "Screen showing QR Code for the address and optional entry for other properties"
+   caption = "The receiver is able to share a bitcoin address as soon as they enter the request flow"
+   width = 250
+   height = 541
+%}
+
+</div>
+
+The more time passes, the more difficult it will be to recall the details of transactions. When transacting in Bitcoin, there is no requirement for senders and receivers even to identify themselves, so both sides may end up having a transaction history with only amounts, random-looking text (addresses), and the date it was included in a block to reference when trying to understand where some funds came from.
+
+Let's look at our options when receivers want to share other details with the sender, or store them with the payment request for their own record keeping.
+
+## Creating a payment request
 Oftentimes, to complete a payment, the sender may need to know the specific amount to be sent. On the receiver’s side, they may want to keep some notes about who sent the bitcoin to help them manage their funds in the future and understand their past transaction activity.
 
-The following are the primary properties of a Bitcoin invoice:
+The following are the primary properties of a payment request:
 
 - **Address** – The destination of the payment
 - **Amount** – How much is being requested (optional)
-- **From** – Name of who is sending the payment (optional)
-- **Purpose/Message** – Note with a description of what the payment is for (optional)
+- **Label** – For example the name of who is sending the payment (optional)
+- **Message** – For example the purpose of payment (optional)
 
-While the application will generate a new address in the background, other information like; how much is being requested, the name of the sender, and what is being paid for has to be manually entered by the receiver. The order in which these properties get entered is up to you, and besides the address, all else is optional.
-
-<!--
-Technical nitpick;
-Addresses are not exactly "generated"
-since they are deterministic technically
-what happens is an unused address just gets chosen
--->
-
-The more time passes, the more difficult it will be to recall the details of transactions. When transacting in Bitcoin, there is no requirement for senders and receivers even to identify themselves, so both sides may end up having a transaction history with only amounts, random-looking text (addresses), and the date it was included in a block to reference when trying to understand where some funds came from.
+While the application will generate a new address in the background, other information has to be manually entered. The order in which it is entered is up to you, and besides the address, all else is optional.
 
 <div class="image-slide-gallery">
 
@@ -88,20 +101,12 @@ The more time passes, the more difficult it will be to recall the details of tra
 %}
 </div>
 
-If your design’s goal is to get the receiver in the quickest time to share an address, you can choose to show them a new address straight away. The other properties can be left as optional fields. Consider the trade-off when optimizing this way, as there will be less useful contextual details for reports that you may want to provide in the future.
-
-<div class="image-slide-gallery">
-
-{% include picture.html
-   image = "/assets/images/guide/payments/receive/enter-details-compact.png"
-   retina = "/assets/images/guide/payments/receive/enter-details-compact@2x.png"
-   alt-text = "Screen showing QR Code for the address and optional entry for other properties"
-   caption = "All properties editable on a single screen"
-   width = 250
-   height = 541
-%}
-
-</div>
+<!--
+Technical nitpick;
+Addresses are not exactly "generated"
+since they are deterministic technically
+what happens is an unused address just gets chosen
+-->
 
 <!-- 
 Update interopability page
@@ -110,45 +115,6 @@ Since there are many Bitcoin applications for people to choose from, its likely 
 The exchange of payment details then most commonly happens outside of the wallet application. This 
 
 Since bitcoin is a open system and has many payment applications built ontop of it, there is a [standard format]({{ '/guide/foundations/wallet-interoperability/#payment-links' | relative_url }}) of "payment links" that most bitcoin applications use to share payment details.
--->
-
-## Choosing the type of address
-There are currently [three different versions]({{ '/guide/glossary/#address' | relative_url }}) of bitcoin addresses. From newest to oldest they are; Segwit, Script, and Legacy. It is the best practice for applications to support the newest address version, SegWit, as default.
-
-Since "legacy" addresses are still in use[^1], and some older applications have yet to upgrade. Script addresses can be used to resolve incompatibility issues that can arise when the sender's application does not recognize the SegWit address provided by the receiver.
-
-To illustrate the problem, suppose the sender is using a legacy wallet and paying to the receiver's SegWit address. In this case, the sender's wallet may incorrectly warn them that the address is invalid or not supported. This can confuse the sender’s end, leading them to think that the receiver provided an incorrect address.
-
-The receiver should then have the ability to switch to a Script address that does not have all the benefits of SegWit, like cheaper transactions but will be compatible with the sender's wallet.
-
-<div class="image-slide-gallery">
-
-{% include picture.html
-   image = "/assets/images/guide/payments/receive/address-switch.png"
-   retina = "/assets/images/guide/payments/receive/address-switch@2x.png"
-   alt-text = "Screen with modal of invoice details, and address switcher"
-   caption = "Allow the receiver to switch to a legacy compatible address"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/payments/receive/address-info.png"
-   retina = "/assets/images/guide/payments/receive/address-info@2x.png"
-   alt-text = "Screen explaining SegWit and Legacy addresses"
-   caption = "Provide information about the different address types"
-   width = 250
-   height = 541
-%}
-
-</div>
-
-<!--
-On /guide/payments/send/#inputting-an-address
-Add below as Do's & Don'ts
-
-> Besides pushing wallets to adopt Bech32, wallets should provide better and clearer error messages to the end-user. Merchants could use P2SH to mitigate. In my opinion P2SH is just a patch not a solution. A solution where Bech32 invoice can fallback to P2SH would be a good balance.
-> @pavelenex
 -->
 
 ## Sharing the payment details
@@ -187,11 +153,11 @@ QR Codes are also a common way to exchange payment details when the two devices 
 
 Here are some constraints to consider when displaying QR Codes:
 
-- QR Codes with more blocks (modules) are challenging to read for devices with low-resolution cameras.
-- There should be sufficient contrast between the blocks in a QR Code and the background. Ideally, keeping the blocks black and background white would be the most optimal.
-- Size matters. You won't know the distance the devices will be from one another when the scan is happening, so you should design assuming the longest scan distance.
+- Complex QR Codes can be difficult for devices with low-resolution cameras to read.
+- Use high contrast between the QR Code blocks and their background.
+- Display the QR Code at the largest size, so the scanner can detect it easily.
 
-For more technical details about optimising QR Codes [see this article](https://bitcoinops.org/en/bech32-sending-support/#creating-more-efficient-qr-codes-with-bech32-addresses).
+_For more technical details about optimizing   QR Codes [see this article](https://bitcoinops.org/en/bech32-sending-support/#creating-more-efficient-qr-codes-with-bech32-addresses)._
 
 ## Waiting and transaction processing
 Once the payment details are shared, until the sender creates a transaction and broadcast it, there is uncertainty of when the payment would be completed. Think about how to keep the receiver informed while they are waiting.
@@ -209,6 +175,46 @@ Similar to [the processes a sender]({{ '/guide/payments/send/#transaction-proces
 If your application has an area where the user can see a list of payment requests, this would be a good place to use it to also indicate which specific stage the payment is in.
 
 Then once the payment has been finalized, you should also consider what the receiver may want to do with those funds. You may want to help facilitate those follow-up activities e.g. moving the funds to a shared multi-key wallet or doing a [coinjoin]({{ '/guide/glossary/#coinjoin' | relative_url }}).
+
+
+## Address compatibility
+There are currently [three different versions]({{ '/guide/glossary/#address' | relative_url }}) of bitcoin addresses. From newest to oldest they are; Segwit, Script, and Legacy. It is the best practice for applications to support the newest address version, SegWit, as default.
+
+Since "legacy" addresses are still in use[^1], and some older applications have yet to upgrade. Script addresses can be used to resolve incompatibility issues that can arise when the sender's application does not recognize the SegWit address provided by the receiver.
+
+To illustrate the problem, suppose the sender is using a legacy wallet and paying to the receiver's SegWit address. In this case, the sender's wallet may incorrectly warn them that the address is invalid or not supported. This can confuse the sender’s end, leading them to think that the receiver provided an incorrect address.
+
+The receiver should then have the ability to switch to a Script address that does not have all the benefits of SegWit, like cheaper transactions but will be compatible with the sender's wallet.
+
+<div class="image-slide-gallery">
+
+{% include picture.html
+   image = "/assets/images/guide/payments/receive/address-switch.png"
+   retina = "/assets/images/guide/payments/receive/address-switch@2x.png"
+   alt-text = "Screen with modal of invoice details, and address switcher"
+   caption = "Allow the receiver to switch to a legacy compatible address"
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/payments/receive/address-info.png"
+   retina = "/assets/images/guide/payments/receive/address-info@2x.png"
+   alt-text = "Screen explaining SegWit and Legacy addresses"
+   caption = "Provide information about the different address types"
+   width = 250
+   height = 541
+%}
+
+</div>
+
+<!--
+On /guide/payments/send/#inputting-an-address
+Add below as Do's & Don'ts
+
+> Besides pushing wallets to adopt Bech32, wallets should provide better and clearer error messages to the end-user. Merchants could use P2SH to mitigate. In my opinion P2SH is just a patch not a solution. A solution where Bech32 invoice can fallback to P2SH would be a good balance.
+> @pavelenex
+-->
 
 <!-- 
 Follow up page would touch on privacy of transactions including topics of wallet fingerprints (multisig vs signle sig), input/output ordering, coinjoins, and labeling to help users keep separate coin histories.
