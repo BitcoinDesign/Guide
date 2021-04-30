@@ -55,7 +55,11 @@ As we said earlier, the simplest way to request bitcoin is to create and share a
 
 </div>
 
-The more time passes, the more difficult it will be to recall the details of transactions. When transacting in Bitcoin, there is no requirement for senders and receivers even to identify themselves, so both sides may end up having a transaction history with only amounts, random-looking text (addresses), and the date it was included in a block to reference when trying to understand where some funds came from.
+{% include tip/tip.html %}
+Since there are multiple types of addresses, there are some compatbiltiy issues between them that can disrupt a payment flow. Read more about [address compatbiltiy](#address-compatibility).
+{% include tip/close.html %}
+
+As time passes, it becomes more difficult to recall the details of transactions. When transacting in Bitcoin, there is no requirement for senders and receivers to even identify themselves, so both sides may end up having a transaction history with only amounts, random-looking text (addresses), and the date it was included in a block to reference when trying to understand where some funds came from.
 
 Let's look at our options when receivers want to share other details with the sender, or store them with the payment request for their own record keeping.
 
