@@ -68,7 +68,7 @@ Keep your file names in lowercase and avoid any special characters (including sp
 
 {% include tip/open.html color="green" icon="check" label="Do this" %}
 
-My übercool image.png
+transaction-confirmation.png
 
 {% include tip/close.html %}
 
