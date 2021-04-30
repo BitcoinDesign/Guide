@@ -163,7 +163,7 @@ Here are some constraints to consider when displaying QR Codes:
 
 _For more technical details about optimizing   QR Codes [see this article](https://bitcoinops.org/en/bech32-sending-support/#creating-more-efficient-qr-codes-with-bech32-addresses)._
 
-## Waiting and transaction processing
+## Awaiting the payment
 Once the payment details are shared, until the sender creates a transaction and broadcast it, there is uncertainty of when the payment would be completed. Think about how to keep the receiver informed while they are waiting.
 
 Similar to [the processes a sender]({{ '/guide/payments/send/#transaction-processing-and-confirmation' | relative_url }}) sees, with the inclusion of this waiting period, here is what the receiver can expect:
