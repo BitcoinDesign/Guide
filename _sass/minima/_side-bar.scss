@@ -3,11 +3,15 @@
   flex-wrap: nowrap;
   position: sticky;
   top: 60px;
-  width: 300px;
+  width: 380px;
   height: 100%;
   flex-direction: column;
   align-items: flex-end;
   padding: 30px 40px;
+  max-height: calc(100vh - 61px);
+  overflow: hidden;
+  overflow-y: scroll;
+  box-sizing: border-box;
 
   @include media-query(medium-down) {
     display: none;

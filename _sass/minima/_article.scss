@@ -7,8 +7,11 @@ article.guide {
 
   figure {
     &.-background {
-      padding: 20px;
+      padding: $spacing-unit/3*2;
       background-color: #f8f8f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     &.-shadow {
@@ -21,7 +24,7 @@ article.guide {
 
   a.button {
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 $spacing-unit/3*2;
     border-radius: 3px;
     color: white;
     line-height: 43px;
@@ -45,273 +48,10 @@ article.guide {
     }
   }
 
-  .do {
-    margin-top: $spacing-unit;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #f8f8f8;
-    @include responsive('padding', 20, 30);
-
-    .icon {
-      flex-grow: 0;
-      display: flex;
-      align-items: center;
-      padding-top: 2px;
-
-      &.-green {
-        svg {
-          background-color: $green;
-        }
-      }
-
-      &.-red {
-        svg {
-          background-color: $red;
-        }
-      }
-
-      svg {
-        display: block;
-        background-color: $blue;
-        border-radius: 3px;
-        width: 24px;
-        height: 24px;
-        color: white;
-        vertical-align: middle;
-        transform: translateY(-2px);
-      }
-    }
-
-    h6 {
-      margin: 0 0 0 10px;
-      padding: 0px 0 0 0;
-      font-size: 18px;
-      font-weight: 500;
-      flex-grow: 1;
-      flex-basis: 50%;
-
-      &:before {
-        display: none;
-      }
-    }
-
-    .copy {
-      p {
-        & + figure {
-          margin-top: 10px;
-        }
-      }
-
-      figure {
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
-    }
-  }
-
-  .dos {
-    display: flex;
-
-    @include media-query(small) {
-      flex-direction: column;
-
-      .do {
-        & + .do {
-          margin-top: 20px;
-        }
-      }
-    }
-
-    @include media-query(medium-up) {
-      .do {
-        flex-basis: 30%;
-        flex-grow: 1;
-
-        & + .do {
-          margin-left: 40px;
-        }
-      }
-    }
-  }
-
-  .tip,
-  .recommendation {
-    margin-top: $spacing-unit;
-    padding: 25px 25px 20px 25px;
-    box-sizing: border-box;
-
-    h6 {
-      margin: 0;
-      padding: 0;
-      font-size: 22px;
-      font-weight: 500;
-
-      &:before {
-        display: none;
-      }
-
-      svg {
-        display: inline-block;
-        margin-right: 10px;
-        background-color: $blue;
-        border-radius: 3px;
-        width: 24px;
-        height: 24px;
-        color: white;
-        vertical-align: middle;
-        transform: translateY(-2px);
-      }
-    }
-
-    p {
-      margin: 10px 0 0 0;
-    }
-
-    &.-red {
-      background-color: rgba($red, 0.1);
-
-      h6 {
-        svg {
-          background-color: $red;
-        }
-      }
-    }
-
-    &.-green {
-      background-color: rgba($green, 0.1);
-
-      h6 {
-        svg {
-          background-color: $green;
-        }
-      }
-    }
-
-    &.-blue {
-      background-color: rgba($blue, 0.1);
-
-      h6 {
-        svg {
-          background-color: $blue;
-        }
-      }
-    }
-
-    &.-orange {
-      background-color: rgba($bitcoin-yellow, 0.1);
-
-      h6 {
-        svg {
-          background-color: $bitcoin-yellow;
-        }
-      }
-    }
-
-    &.-yellow {
-      background-color: rgba($yellow, 0.1);
-
-      h6 {
-        svg {
-          background-color: $yellow;
-        }
-      }
-    }
-  }
-
-  .tip {
-    background-color: rgba($blue, 0.1);
-
-    h6 {
-      svg {
-        background-color: $blue;
-      }
-    }
-  }
-
-  .recommendation {
-    background-color: rgba($bitcoin-yellow, 0.1);
-
-    h6 {
-      svg {
-        background-color: $bitcoin-yellow;
-      }
-    }
-  }
-
-  .fact {
-    margin-top: $spacing-unit;
-    display: flex;
-    border: 1px solid #DEDEDE;
-    align-items: stretch;
-
-    .icon {
-      padding: 10px 20px;
-      border-right: 1px solid #DEDEDE;
-      flex-grow: 0;
-      display: flex;
-      align-items: center;
-
-      &.-green {
-        svg {
-          background-color: $green;
-        }
-      }
-
-      &.-red {
-        svg {
-          background-color: $red;
-        }
-      }
-
-      svg {
-        display: inline-block;
-        background-color: $blue;
-        border-radius: 3px;
-        width: 24px;
-        height: 24px;
-        color: white;
-        vertical-align: middle;
-        transform: translateY(-2px);
-      }
-    }
-
-    .copy {
-      padding: 20px;
-      flex-grow: 1;
-
-      h6 {
-        margin: 0;
-        padding: 0;
-        font-size: 18px;
-        font-weight: 500;
-
-        &:before {
-          display: none;
-        }
-      }
-
-      ul, ol {
-        margin-left: 0;
-
-        &:first-child {
-          margin-top: 5px;
-        }
-      }
-
-      p {
-        margin: 5px 0 0 0;
-      }
-    }
-
-    & + .fact {
-      margin-top: 0;
-      border-top: 0;
-    }
-  }
-
   a.video-link,
   a.prototype-link {
+    margin-top: $spacing-unit;
+    display: block;
     position: relative;
 
     > svg {
@@ -340,8 +80,8 @@ article.guide {
       box-shadow: 0 5px 15px -3px rgba(black, 0.25);
 
       > svg {
-        width: 30px;
-        height: 30px;
+        width: $spacing-unit;
+        height: $spacing-unit;
         margin-right: 3px;
       }
     }
@@ -385,8 +125,8 @@ article.guide {
   }
 
   @include media-query(medium-down) {
-    padding-left: $spacing-unit / 2;
-    padding-right: $spacing-unit / 2;
+    padding-left: $spacing-unit/2;
+    padding-right: $spacing-unit/2;
   }
 
   @include media-query(large) {
@@ -397,22 +137,36 @@ article.guide {
   & > .center {
     @include clearfix;
 
-    > figure {
-      margin-top: 0;
+    @include media-query(medium-down) {
+      > figure {
+        &:not(:first-child),
+        &.-float-left,
+        &.-float-right,
+        &.-float-left-mobile,
+        &.-float-right-mobile {
+          margin-top: $spacing-unit/5;
+        }
+      }
+    }
+
+    @include media-query(large) {
+      > figure {
+        margin-top: 0;
+      }
     }
   }
 
   & > .-float-left,
   & > .center .-float-left {
     float: left;
-    margin-right: 15px;
+    margin-right: $spacing-unit/2;
     max-width: 50%;
   }
 
   & > .-float-right,
   & > .center .-float-right {
     float: right;
-    margin-left: 15px;
+    margin-left: $spacing-unit/2;
     max-width: 50%;
   }
 
@@ -420,17 +174,29 @@ article.guide {
     & > .-float-left-desktop,
     & > .center .-float-left-desktop {
       float: left;
-      margin-right: 15px;
+      margin-right: $spacing-unit/2;
       max-width: 50%;
     }
 
     & > .-float-right-desktop,
     & > .center .-float-right-desktop {
       float: right;
-      margin-left: 15px;
+      margin-left: $spacing-unit/2;
       max-width: 50%;
     }
   }
+
+  & > .-float-right,
+  & > .center .-float-right {
+    @include media-query(large) {
+      margin-top: 0;
+      margin-bottom: 0;
+      float: right;
+      margin-left: $spacing-unit;
+    }
+  }
+
+  // Full width images stretch all the way, up to 1600px width.
 
   & > .-full-width {
     display: flex;
@@ -438,14 +204,29 @@ article.guide {
     align-items: center;
 
     @include media-query(medium-down) {
-      margin-left: -$spacing-unit / 2;
-      margin-right: -$spacing-unit / 2;
+      margin-left: -$spacing-unit/2;
+      margin-right: -$spacing-unit/2;
     }
 
     @include media-query(large) {
       margin-left: - $spacing-unit;
       margin-right: - $spacing-unit;
     }
+  }
+
+  figure.-full-width {
+    figcaption {
+      margin-left: $spacing-unit/2;
+      margin-right: $spacing-unit/2;
+    }
+  }
+
+  // Width images can stretch beyond the regular content, but maintain padding left and right.
+
+  & > .-wide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   & > iframe.-full-width {
@@ -460,7 +241,7 @@ article.guide {
     }
   }
 
-  & > *:not(.-full-width) {
+  & > *:not(.-full-width, .-wide) {
     @include media-query(medium-down) {
 
     }
@@ -471,6 +252,8 @@ article.guide {
       margin-right: auto;
     }
   }
+
+  // Other
 
   li {
       margin-left: 18px;
@@ -493,275 +276,14 @@ article.guide {
 
   figure:not(.-float-left, .-float-right, :first-child),
   iframe {
-    margin-top: $spacing-unit;
-    margin-bottom: $spacing-unit;
-
     @include media-query(medium-down) {
-      margin-top: $spacing-unit * 0.5;
-      margin-bottom: $spacing-unit * 0.5;
+      margin-top: $spacing-unit;
+      margin-bottom: $spacing-unit;
     }
 
     @include media-query(large) {
-      margin-top: $spacing-unit * 1;
-      margin-bottom: $spacing-unit * 1;
-    }
-
-  }
-
-  // & > .-float-left,
-  // & > .center .-float-left {
-  //   @include media-query(large) {
-  //     margin-top: $spacing-unit * 1;
-  //     margin-bottom: $spacing-unit * 1;
-  //   }
-  // }
-
-  .image-gallery {
-    display: flex;
-    background-color: #f8f8f8;
-    justify-content: center;
-    max-width: none !important;
-
-    figure {
-      margin-top: 0;
-      margin-bottom: 0;
-      float: left;
-      margin-right: 30px;
-
-      img {
-        box-shadow: 0 20px 10px -8px rgba(black, 0.05);
-        border: 1px solid rgba(black, 0.1);
-      }
-    }
-
-    @include media-query(small) {
-      flex-direction: column;
-      margin-left: -15px;
-      margin-right: -15px;
-      padding: 10px 15px;
-    }
-
-    @include media-query(medium-up) {
-      margin-left: -30px;
-      margin-right: -30px;
-      padding: 30px 30px 15px 30px;
-
-      figure {
-        & + figure {
-          margin-left: 40px;
-        }
-      }
-    }
-  }
-
-  .image-slide-gallery {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background-color: #f8f8f8;
-    justify-content: left;
-    max-width: none !important;
-    display: flex;
-    overflow: hidden;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-
-    figure {
-      flex-shrink: 0;
-      margin-top: 0;
-      margin-bottom: 0;
-      width: min-content;
-
-      img {
-        max-width: none;
-        height: auto;
-      }
-
-      figcaption {
-        p {
-          margin-top: 0;
-        }
-      }
-    }
-
-    &:before,
-    &:after {
-      display: block;
-      content: '';
-      position: relative;
-      height: 20px;
-      flex-shrink: 0;
-      flex-grow: 1;
-    }
-
-    @include media-query(small) {
-      padding: 30px 0;
-
-      figure {
-        flex-basis: calc(100vw - 180px);
-
-        & + figure {
-          margin-left: 30px;
-        }
-      }
-
-      &:before,
-      &:after {
-        flex-basis: 30px;
-      }
-    }
-
-    @include media-query(medium-down) {
-      margin-left: -15px;
-      margin-right: -15px;
-    }
-
-    @include media-query(medium-up) {
-      padding: 30px 0 30px 0;
-
-      figure {
-        & + figure {
-          margin-left: 30px;
-        }
-      }
-
-      &:before,
-      &:after {
-        flex-basis: 30px;
-      }
-    }
-
-    @include media-query(large) {
-      margin-left: -30px;
-      margin-right: -30px;
-    }
-  }
-
-  & > .-float-right,
-  & > .center .-float-right {
-    @include media-query(large) {
-      margin-top: 0;
-      margin-bottom: 0;
-      float: right;
-      margin-left: 30px;
-    }
-  }
-}
-
-dl {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-
-  dt,
-  dd {
-    display: flex;
-    padding: 20px 30px;
-    background-color: rgba($blue, 0.1);
-
-    p {
-      margin: 0;
-    }
-
-    &.-green {
-      background-color: rgba($green, 0.1);
-    }
-
-    &.-red {
-      background-color: rgba($red, 0.1);
-    }
-
-    &.-blue {
-      background-color: rgba($blue, 0.1);
-    }
-
-    &.-orange {
-      background-color: rgba($bitcoin-yellow, 0.1);
-    }
-
-    &.-yellow {
-      background-color: rgba($yellow, 0.1);
-    }
-  }
-
-  .icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    svg {
-      width: 30px;
-      height: 30px;
-    }
-  }
-
-  @include media-query(small) {
-    dt,
-    dd,
-    .icon {
-      flex-basis: 100%;
-    }
-
-    dd {
-      & + dt {
-        margin-top: 20px;
-      }
-    }
-
-    .icon {
-      height: 60px;
-
-      svg {
-        transform: rotate(90deg);
-      }
-    }
-  }
-
-  @include media-query(medium-up) {
-    dt,
-    dd {
-      flex-basis: 30%;
-      flex-grow: 1;
-      margin-top: 20px;
-
-      &:first-of-type {
-        margin-top: 0;
-      }
-    }
-
-    .icon {
-      width: 60px;
-      margin-top: 20px;
-
-      &:first-of-type {
-        margin-top: 0;
-      }
-    }
-  }
-}
-
-.footnotes {
-  padding: 30px;
-  font-size: 0.8rem;
-  margin: 60px 0 0;
-  border: 1px solid rgba(var(--front), 0.05);
-  box-sizing: border-box;
-  background: #FDFDFD;
-  &::before {
-    content: "REFERENCES";
-    display: block;
-    margin-bottom: 10px;
-    color: var(--frontHex);
-    letter-spacing: 1px;
-  }
-  ol {
-    margin: 0;
-    list-style-position: inside;
-    li {
-      margin-left: 0;
-      p {
-        display: inline;
-      }
+      margin-top: $spacing-unit;
+      margin-bottom: $spacing-unit;
     }
   }
 }
