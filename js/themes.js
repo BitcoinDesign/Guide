@@ -141,7 +141,7 @@ let themes = [
     }
   },
   {
-    // Bitcoin thinker
+    // The Meta-Future
     logo: {
         path: "/assets/banner-bitcoin-logo.svg",
         fillColor: "#F7931A",
@@ -165,10 +165,10 @@ let themes = [
         labelFillColor: "#000"
     },
     background: {
-        path: 'url("/assets/images/home/banner/bitcoin-thinker.jpg")',
-        pathRetina: 'url("/assets/images/home/banner/bitcoin-thinker@2x.jpg")',
-        pathMobile: 'url("/assets/images/home/banner/bitcoin-thinker-mobile.jpg")',
-        pathMobileRetina: 'url("/assets/images/home/banner/bitcoin-thinker-mobile@2x.jpg")',
+        path: 'url("/assets/images/home/banner/the-meta-future.jpg")',
+        pathRetina: 'url("/assets/images/home/banner/the-meta-future@2x.jpg")',
+        pathMobile: 'url("/assets/images/home/banner/the-meta-future-mobile.jpg")',
+        pathMobileRetina: 'url("/assets/images/home/banner/the-meta-future-mobile@2x.jpg")',
         backgroundColor: "#D0E8E1"
     },
     copy: {
