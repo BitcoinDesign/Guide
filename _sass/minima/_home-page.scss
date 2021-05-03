@@ -1,0 +1,13 @@
+.home-page {
+  article {
+    padding-top: $spacing-unit;
+  }
+
+  @include media-query(small) {
+    padding-bottom: $spacing-unit;
+  }
+
+  @include media-query(medium-up) {
+    padding-bottom: $spacing-unit*2;
+  }
+}
