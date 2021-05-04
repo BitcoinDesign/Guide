@@ -845,3 +845,13 @@ assets/images/guide/payments/payments-preview.jpg: payments-preview.jpg
 assets/images/guide/private-key-management/private-key-management-preview.jpg: private-key-management-preview.jpg
 assets/images/guide/onboarding/backing-up-a-recovery-phrase/verify-recovery-phrase.png: verify-recovery-phrase.png
 assets/images/guide/onboarding/backing-up-a-recovery-phrase/verify-recovery-phrase@2x.png: verify-recovery-phrase@2x.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/auto-backup-intro.png: auto-backup-intro.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/auto-backup-intro@2x.png: auto-backup-intro@2x.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/auto-cloud-backup-select-provider.png: auto-cloud-backup-select-provider.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/auto-cloud-backup-select-provider@2x.png: auto-cloud-backup-select-provider@2x.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/auto-cloud-backup-set-password@2x.png: auto-cloud-backup-set-password@2x.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/auto-cloud-backup-set-password.png: auto-cloud-backup-set-password.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/auto-cloud-backup-save-password.png: auto-cloud-backup-save-password.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/auto-cloud-backup-save-password@2x.png: auto-cloud-backup-save-password@2x.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/auto-cloud-backup-complete.png: auto-cloud-backup-complete.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/auto-cloud-backup-complete@2x.png: auto-cloud-backup-complete@2x.png
