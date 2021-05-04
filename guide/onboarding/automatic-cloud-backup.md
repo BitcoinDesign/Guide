@@ -56,7 +56,7 @@ There is research to suggest beginners perceive themselves as “incapable of se
 %}
 
 {% include picture.html
-     image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/auto-cloud-backup-complete.png"
+   image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/auto-cloud-backup-complete.png"
    retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/auto-cloud-backup-complete@2x.png"
    alt-text = "Completing a cloud backup"
    width = 250
