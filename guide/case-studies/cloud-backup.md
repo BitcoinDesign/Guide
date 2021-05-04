@@ -10,40 +10,43 @@ image_base: /assets/images/guide/case-studies/cloud-backup/
 images:
     - file: first
       alt:
-      caption: Explain purpose and design of this screen.
+      caption: Clear main action -> Create wallet. Offer the option to import an existing wallet when possible.
     - file: second
       alt:
-      caption: Explain purpose and design of this screen.
+      caption: Explain what is about to happen. Be transparent about how the private key is stored and the risks. Link to more detailed information when required. Offer any advanced options you expect to be used by a minority on a separate page.
     - file: advanced-options
       alt:
-      caption: Explain purpose and design of this screen.
+      caption: If you offer other private key schemes make sure to explain the differences. Default to the one you think most of your customers will benefit the most from.
     - file: more-information
       alt:
-      caption: Explain purpose and design of this screen.
+      caption: Provide more detailed information about how private keys are managed if you cannot fit it all on the previous screen. You can also link to general bitcoin information to help users get up to speed.
     - file: import-wallet
       alt:
-      caption: Explain purpose and design of this screen.
+      caption: Explain what importing a wallet means and what is required. If your application does not support certain features or functions of an HD bitcoin wallet make sure users are aware.
     - file: input-recovery-phrase
       alt:
-      caption: Explain purpose and design of this screen.
+      caption: Let users enter one word at a time and make it easy to see what order they should go in.
     - file: backup-info
       alt:
-      caption: Explain purpose and design of this screen.
+      caption: Inform the user about how the private key is managed, and if you have options let the user decide here.
     - file: balance
       alt:
-      caption: Explain purpose and design of this screen.
+      caption: Currency denomination defaults to fiat but can be changed to bitcoin or sats. Add and Withdraw used for fiat transactions. Transaction history with relevant info for use-case.
     - file: settings
       alt:
-      caption: Explain purpose and design of this screen.
+      caption: Options for changing the private key security scheme and exporting the wallet.
     - file: change-private-key-scheme
       alt:
-      caption: Explain purpose and design of this screen.
+      caption: Current scheme clearly marked and described. Other available scheme listed, with more information available when tapped. Changing scheme might require more steps and additional material for multi-key setups. Process should be clearly explained and explicitly confirmed.
     - file: export-wallet
       alt:
-      caption: Explain purpose and design of this screen.
+      caption: Explain what the recovery-phrase is before asking the user to reveal it.
     - file: recovery-phrase
       alt:
-      caption: Explain purpose and design of this screen.
+      caption: Show numbered words to avoid confusion.
+    - file: home
+      alt:
+      caption: The use-case is focused on quick transactions. Currency denomination defaults to fiat but can be changed to bitcoin or sats. Receive and Send used for bitcoin transactions.
 ---
 
 <!--
