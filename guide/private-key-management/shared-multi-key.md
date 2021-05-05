@@ -1,10 +1,10 @@
 ---
 layout: guide
-title: Shared schemes
+title: Shared multi-key
 description: An overview of shared private key management schemes.
-nav_order: 3
+nav_order: 7
 parent: Private key management
-permalink: /guide/private-key-management/multi-user-schemes/
+permalink: /guide/private-key-management/shared-multi-key/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/private-key-management/schemes/page-shared-schemes.jpg
 ---
@@ -28,13 +28,7 @@ Description of schemes suitable for multi-user scenarios.
    layout = "full-width"
 %}
 
-# Shared schemes
-
-While multi-key setups can be used for personal use, if several people need to share funds multiple keys become a necessity. You will often see this referred to as *multi-sig* setups, stemming from the fact that multiple keys are needed to sign a transaction in order for it to go through and be valid.
-
-The use cases for shared schemes include spouses managing a joint account, groups, organizations or companies managing their funds, as well as inheritance planning. It can also be used for governance of an organization, with transactions used not to transfer funds but to record, or vote, for decisions.
-
-## Shared multi-key
+# Shared multi-key
 
 As we saw with multi-key setups for personal use, a multi-key wallet has several controlling keypairs attached, or what is often called co-signers. The number of keys and required co-signers will depend on the use case. With spouses sharing a *joint account*, a simple 1-of-2 multi-key setup might suffice, meaning there are two keys but only one is required to sign for a transaction to be valid. At the other end of a spectrum a company might require a more complex 3-of-5 setup, requiring three of the five co-signers to approve any transaction.
 
@@ -87,4 +81,4 @@ Few tailor-made products exist for shared wallets, but any wallet application th
 
 ---
 
-OK, let's have a look at some [case studies]({{ '/guide/case-studies/' | relative_url }}).
+OK, let's have a look at [payments]({{ '/guide/payments/' | relative_url }}).

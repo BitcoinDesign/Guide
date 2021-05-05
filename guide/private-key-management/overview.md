@@ -1,10 +1,10 @@
 ---
 layout: guide
-title: Private key schemes
+title: Overview
 description: An overview of personal and shared schemes, and how to pick one for your product depending on your use case.
 nav_order: 1
 parent: Private key management
-permalink: /guide/private-key-management/schemes/
+permalink: /guide/private-key-management/overview/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/private-key-management/schemes/page-private-key-schemes.jpg
 ---
@@ -90,16 +90,33 @@ Or you can follow this flow chart to find a suitable scheme for your use case.
 
 We can divide the options up into personal and shared wallet schemes. The following pages explain each one in more detail:
 
-### [Personal schemes]({{ '/guide/private-key-management/single-user-schemes/' | relative_url }})
-- **Automatic cloud backup** - no user action required for backup
-- **Manual backup / Recovery phrase** - manual backup of a phrase of words
-- **External signing device** - keys are held on a separate device
-- **Threshold signatures / Key-sharing** - one key is split and distributed
-- **Multi-key** - several keys jointly control the wallet
+### Personal schemes
 
-### [Shared schemes]({{ '/guide/private-key-management/multi-user-schemes/' | relative_url }})
-- **Multi-key** - several keys and several people control the wallet
+Now let's dive in and look at the various schemes that might be suitable for a personal wallet application with a single user to understand the differences at a high level.
+
+{% include image.html
+   image = "/assets/images/guide/private-key-management/schemes/personal-schemes.jpg"
+   retina = "/assets/images/guide/private-key-management/schemes/personal-schemes@2x.jpg"
+   alt-text = ""
+   caption = "Cloud backup, manual backup , signing-device, threshold-signatures and multi-key."
+   width = 2012
+   height = 400
+%}
+
+- [Automatic cloud backup](/guide/private-key-management/automatic-cloud-backup) - no user action required for backup
+- [Manual backup / Recovery phrase](/guide/private-key-management/manual-backup) - manual backup of a phrase of words
+- [External signing device](/guide/private-key-management/external-signing-device) - keys are held on a separate device
+- [Threshold signatures / Key-sharing](/guide/private-key-management/threshold-signatures) - one key is split and distributed
+- [Multi-key](#multi-key) - several keys jointly control the wallet
+
+### Shared schemes
+
+While multi-key setups can be used for personal use, if several people need to share funds multiple keys become a necessity. You will often see this referred to as *multi-sig* setups, stemming from the fact that multiple keys are needed to sign a transaction in order for it to go through and be valid.
+
+The use cases for shared schemes include spouses managing a joint account, groups, organizations or companies managing their funds, as well as inheritance planning. It can also be used for governance of an organization, with transactions used not to transfer funds but to record, or vote, for decisions.
+
+- [Shared multi-key](/guide/private-key-management/shared-multi-key) - several keys and several people control the wallet
 
 ---
 
-Let's continue by looking at [personal schemes]({{ '/guide/private-key-management/single-user-schemes/' | relative_url }}).
+Let's start by looking at the [automatic cloud backup](/guide/private-key-management/automatic-cloud-backup) scheme.
