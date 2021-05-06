@@ -9,6 +9,13 @@ main_classes: -no-top-padding
 # image: /assets/images/guide/payments/send/header.svg
 ---
 
+<!--
+
+Illustration source:
+https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=1329%3A564
+
+-->
+
 # Sending bitcoin
 
 Sending bitcoin can be a very straightforward or complex flow in a Bitcoin application. People may be sending bitcoin to a known contact, moving it between their wallets on different devices, or making a purchase through a [payment processor]({{ '/guide/getting-started/software/#payment-processors' | relative_url }}).
@@ -26,7 +33,8 @@ You do not need to follow the order below. Feel free to tailor the configuration
 
 <div class="center" markdown="1">
 {% include image.html
-   image = "/assets/images/guide/payments/send/get-recipient-address.svg"
+   image = "/assets/images/guide/payments/send/get-recipient-address.png"
+   retina = "/assets/images/guide/payments/send/get-recipient-address@2x.png"
    alt-text = "Graphic showing chat messages between the sender and receiver. The sender sends a bitcoin address and the receiver agrees to pay."
    width = 400
    height = 400
@@ -42,10 +50,11 @@ The receiver does this by generating a new address in their wallet application, 
 
 <div class="center" markdown="1">
 {% include image.html
-   image = "/assets/images/guide/payments/send/input-address.svg"
+   image = "/assets/images/guide/payments/send/input-address.png"
+   retina = "/assets/images/guide/payments/send/input-address@2x.png"
    alt-text = "Address input field prompting the sender to paste the address"
    width = 400
-   height = 400
+   height = 219
    layout = "float-right-desktop"
 %}
 
@@ -71,10 +80,11 @@ Once you have gotten the address, it's time to enter the payment details. Bitcoi
 
 <div class="center" markdown="1">
 {% include image.html
-   image = "/assets/images/guide/payments/send/input-amount.svg"
+   image = "/assets/images/guide/payments/send/input-amount.png"
+   retina = "/assets/images/guide/payments/send/input-amount@2x.png"
    alt-text = "Amount input field with bitcoin, local currency and selections for fractions of the total wallet balance"
    width = 400
-   height = 400
+   height = 222
    layout = "float-right-desktop"
 %}
 
@@ -95,7 +105,8 @@ Applications sometimes also allow the sender to select fractions of their total 
 
 <div class="center" markdown="1">
 {% include image.html
-   image = "/assets/images/guide/payments/send/select-fee-rate.svg"
+   image = "/assets/images/guide/payments/send/select-fee-rate.png"
+   retina = "/assets/images/guide/payments/send/select-fee-rate@2x.png"
    alt-text = "Fee selection component with high, medium, low urgency options"
    width = 400
    height = 400
@@ -124,7 +135,8 @@ Human error with fee selection can lead to costly mistakes, and fee estimations 
 
 <div class="center" markdown="1">
 {% include image.html
-   image = "/assets/images/guide/payments/send/review-payment.svg"
+   image = "/assets/images/guide/payments/send/review-payment.png"
+   retina = "/assets/images/guide/payments/send/review-payment@2x.png"
    alt-text = "Approval screen with details of the transaction and confirmation button"
    width = 400
    height = 400
@@ -144,10 +156,13 @@ If your application allows setting spending limits, and the current transaction 
 ## Transaction processing and confirmation
 
 {% include image.html
-   image = "/assets/images/guide/payments/send/first-confirmation.svg"
+   image = "/assets/images/guide/payments/send/first-confirmation.png"
+   retina = "/assets/images/guide/payments/send/first-confirmation@2x.png"
+   mobile = "/assets/images/guide/payments/send/first-confirmation-mobile.png"
+   mobileRetina = "/assets/images/guide/payments/send/first-confirmation-mobile@2x.png"
    alt-text = "Notifications after the transaction is broadcast"
-   width = 1600
-   height = 800
+   width = 800
+   height = 270
 %}
 
 Let us look at how we communicate to the sender about the [processing of a transaction]({{ '/guide/payments/transactions/#transaction-lifecycle' | relative_url }}) after it has been broadcast. There are three main states that you would want to inform or notify the sender of:
