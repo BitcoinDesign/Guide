@@ -92,7 +92,7 @@ Software that runs and/or connects to the Bitcoin network.
 
 An open source Bitcoin project that maintains and releases the primary Bitcoin reference implementation the [Bitcoin Core client](bitcoin-core-client).
 
-- [Bitcoin Core website](https://bitcoincore.org/).
+- [Bitcoin Core website](https://bitcoincore.org/)
 - [Bitcoin wiki entry](https://en.bitcoin.it/wiki/Bitcoin_Core)
 
 ## Bitcoin Core client
@@ -233,7 +233,7 @@ A Node refers to a Bitcoin Client that participates in the Bitcoin network.
 
 ### Full nodes
 
-_Also referred to as full client_
+_Also referred to as a full client_
 
 A node that fully verifies and enforces all rules of the Bitcoin network. An example of a rule is that there will only ever be 21 million bitcoin.
 
@@ -247,7 +247,7 @@ A node that fully verifies and enforces all rules of the Bitcoin network that st
 
 ### Light nodes
 
-_Also referred to as lightweight client, thin client_
+_Also referred to as lightweight clients or thin clients_
 
 A light node is a Bitcoin client that interacts with the Bitcoin network but does not enforce any of its rules and only downloads data relevant to the user.
 
@@ -256,10 +256,11 @@ A light node is a Bitcoin client that interacts with the Bitcoin network but doe
 A Bitcoin client that queries and downloads block headers from full nodes, making it possible for users to verify their transactions without running a full node and storing the entire Bitcoin block chain. 
 
 - [Bitcoin Wiki SPV](https://en.bitcoinwiki.org/wiki/Simplified_Payment_Verification)
+- [Bitcoin whitepaper - section 8](https://bitcoin.org/bitcoin.pdf)
 
 #### Neutrino node
 
-A Bitcoin client that uses the Neutrino protocol. The Neutrino protocol uses compact block filters to query and download blocks that contain relevant transaction data involving the users keys. 
+A Bitcoin client that uses the Neutrino protocol. The Neutrino protocol uses compact block filters to query and download condensed representations of blocks that contain relevant transaction data involving the users keys. 
 
 - [Bitcoin Optech - block filters](https://bitcoinops.org/en/topics/compact-block-filters/)
 - [GitHub Neutrino repo](https://github.com/lightninglabs/neutrino)
