@@ -95,20 +95,20 @@ An open source Bitcoin project that maintains and releases the primary Bitcoin r
 - [Bitcoin Core website](https://bitcoincore.org/)
 - [Bitcoin wiki entry](https://en.bitcoin.it/wiki/Bitcoin_Core)
 
-## Bitcoin Core client
+### Bitcoin Core client
 
 An open source Bitcoin client that is considered the primary reference implementation for Bitcoin. It is the continuation of Satoshi Nakamoto's original bitcoin client released on 9th January 2009. 
 
 - [Bitcoin Core download](https://bitcoincore.org/en/download/)
 - [Bitcoin whitepaper by Satoshi Nakamoto](https://bitcoin.org/bitcoin.pdf)
 
-## bitcoind
+### bitcoind
 
 bitcoind is a program that implements the Bitcoin protocol for remote procedure call (RPC) use. It is a free, open source client available under the [MIT licence](https://opensource.org/licenses/mit-license.php).
 
 - [Bitcoin wiki entry](https://en.bitcoin.it/wiki/Bitcoind)
 
-## Bitcoin improvement proposal (BIP)
+### Bitcoin improvement proposal (BIP)
 
 A standardized technical document format for suggesting improvements to Bitcoin. They are hosted on Github [here](https://github.com/bitcoin/bips). Some important proposals to be aware of:
 
@@ -176,21 +176,21 @@ The path to the first address in a bitcoin-wallet using BIP84 will look like thi
 
 For full [interoperability](/guide/foundations/principles/#interoperability) a wallet should support all of these standards. More information can be found [here](/guide/foundations/wallet-interoperability/#wallet-import-and-export) and [here](https://learnmeabitcoin.com/technical/derivation-paths).
 
-## Extended private key (xpriv)
+### Extended private key (xpriv)
 
 In a hierarchical deterministic wallet, all addresses and their matching private keys are derived from this extended private key.
 
-## Extended public key (xpub, ypub, zpub)
+#### Extended public key (xpub, ypub, zpub)
 
 The master public key of a bitcoin account. All public addresses are generated from it.
 
 _ToDo: Explain how this is used for multisig and view-only wallets._
 
-### ypub
+#### ypub
 
 Same as XPUB however the Y denotes that this xpub belongs to a wallet that is following the [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki) standard that details the derivation scheme for wrapped-segwit addresses (P2WPKH-nested-in-P2SH).
 
-### zpub
+#### zpub
 
 Same as YPUB though the Z denotes it is an extended public key from a segregated witness enabled wallet following [BIP84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki).
 
@@ -203,7 +203,6 @@ To fully verify that all transactions on the bitcoin network are valid, a full n
 When an address receives bitcoin from another address, this is called an input. Transactions can include multiple inputs.
 
 ### Keys
-
 Bitcoin wallets and addresses are have both [public](#public-key) and [private keys](#private-key) associated to them. The private key controls access to funds and the ability to sign (approve) transactions.
 
 ### Miniscript
@@ -216,11 +215,9 @@ A language for writing certain types of Bitcoin Scripts in a structured way. Min
 - [Introduction](https://medium.com/blockstream/miniscript-bitcoin-scripting-3aeff3853620) by Blockstream
 
 ### Multi-signature wallet (Multisig)
-
 Multi-signature wallets are bitcoin wallets that are controlled by more than one keypair. They can be defined by bitcoin scripts and use P2SH addresses. Common usecases and setups include *2-of-3*, or *3-of-5* multi-signature wallets that require a subset of the controlling keypairs to sign a transaction.
 
 ### MuSig
-
 A standard for multi-signature that uses Schnorr signatures. Previously, the more signers participated in a transaction, the size of the transaction got larger and took more time to verify. It was also possible to see the number of signers in the final transaction. MuSig addresses both issues. It hides the number of signers for better privacy. MuSig also improves scalability by reducing the size of transactions and being more efficient to verify. The [original paper that describes MuSig](https://eprint.iacr.org/2018/068).
 
 **References:**
@@ -231,34 +228,34 @@ A standard for multi-signature that uses Schnorr signatures. Previously, the mor
 
 A Node refers to a Bitcoin Client that participates in the Bitcoin network.
 
-### Full nodes
+#### Full nodes
 
 _Also referred to as a full client_
 
 A node that fully verifies and enforces all rules of the Bitcoin network. An example of a rule is that there will only ever be 21 million bitcoin.
 
-#### Pruned full node
+##### Pruned full node
 
 A node that fully verifies and enforces all rules of the Bitcoin network at a much lower storage capacity as it only stores a portion of recent block history. 
 
-#### Archival full node
+##### Archival full node
 
 A node that fully verifies and enforces all rules of the Bitcoin network that stores the entire Bitcoin block chain and sends historical data to other nodes.
 
-### Light nodes
+#### Light nodes
 
 _Also referred to as lightweight clients or thin clients_
 
 A light node is a Bitcoin client that interacts with the Bitcoin network but does not enforce any of its rules and only downloads data relevant to the user.
 
-#### Simplified payment verification (SPV) node
+##### Simplified payment verification (SPV) node
 
 A Bitcoin client that queries and downloads block headers from full nodes, making it possible for users to verify their transactions without running a full node and storing the entire Bitcoin block chain. 
 
 - [Bitcoin Wiki SPV](https://en.bitcoinwiki.org/wiki/Simplified_Payment_Verification)
 - [Bitcoin whitepaper - section 8](https://bitcoin.org/bitcoin.pdf)
 
-#### Neutrino node
+##### Neutrino node
 
 A Bitcoin client that uses the Neutrino protocol. The Neutrino protocol uses compact block filters to query and download condensed representations of blocks that contain relevant transaction data involving the users keys. 
 
@@ -266,7 +263,6 @@ A Bitcoin client that uses the Neutrino protocol. The Neutrino protocol uses com
 - [GitHub Neutrino repo](https://github.com/lightninglabs/neutrino)
 
 ### Output
-
 The opposite of an input, an output is when an address sends bitcoin to another address. Transactions can include multiple outputs.
 
 ### Output script descriptor
@@ -284,7 +280,6 @@ A small piece of data that has all the information needed to generate a specific
 %}
 
 ### Private key
-
 Every bitcoin address has a public key and a corresponding private key, together they are called a keypair. If you have access to both the public and private key, you effectively control the funds in the address. As with HD Wallets there are also keypairs that control *branches* in the hierarchical tree of the wallet, and at the very top is the extended keypair (x-pub and x-prv for short) that control all the addresses in the wallet.
 
 The private key is a 64 hexadecimal (or 256 if described in binary 1’s and 0’s) character string generated by the encryption algorithm. They look something like this in hexadecimal form:
@@ -296,11 +291,9 @@ Or for the extended private key:
 `xprv9zrji5mK3nb4RbuR2ZYFtyzK3gn78KnEzkNP4ZxwwPPwcgQQVZqnjTMAGxmmM3jpmfsthQUtfD9iYPvnaqwejCjcyEswLqEhX4LPKNFUXT5`
 
 ### Public key
-
 A bitcoin address' public key can be derived from the private key. The address itself is a hash of the public key.
 
 ### Replace-by-fee (RBF)
-
 A node policy that allows an unconfirmed transaction to be replaced with a different transaction that spends at least one of the same inputs and which pays a higher transaction fee. This can sometimes be useful if a transaction has got *stuck* during times of higher-than-normal network-fees.
 
 ### Recovery phrase
@@ -333,7 +326,6 @@ An algorithm to generate cryptographic signatures. One of the benefits is that t
 - [BIP340]()
 
 ### Segregated witness (SegWit)
-
 Segregated Witness, or SegWit, is the name for a soft fork change in the transaction format of Bitcoin. It was described in [BIP141](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki). It was intended to mitigate a blockchain size limitation problem that reduces bitcoin transaction speed. It does this by splitting the transaction into two segments, removing the unlocking signature (*witness* data) from the original portion and appending it as a separate structure at the end. The original section hold the sender and receiver data, and the new *witness* structure contain scripts and signatures.
 
 ### Taproot
