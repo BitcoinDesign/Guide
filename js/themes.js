@@ -1,75 +1,191 @@
 let themes = [
   {
     // Template
-    copyBackgroundColor: "",
-    bitcoinLogoPath: "/assets/banner-bitcoin-logo.svg",
-    bitcoinLogoFillColor: "",
-    bitcoinLogoOutlineColor: "#000",
-    titleFillColor: "#FFF",
-    titleOutlineColor: "#000",
-    descriptionFillColor: "#000",
-    button1FillColor: "",
-    button1OutlineColor: "#000",
-    button1LabelFillColor: "#000",
-    button2FillColor: "",
-    button2OutlineColor: "#000",
-    button2LabelFillColor: "#000",
-    backgroundImagePath: 'url("/assets/images/home/banner/template.jpg")',
-    backgroundImagePathRetina: 'url("/assets/images/home/banner/template@2x.jpg")',
-    backgroundImagePathMobile: 'url("/assets/images/home/banner/template-mobile.jpg")',
-    backgroundImagePathMobileRetina: 'url("/assets/images/home/banner/template-mobile@2x.jpg")',
-    backgroundImageColor: "#fbfbfb",
+    logo: {
+        path: "/assets/banner-bitcoin-logo.svg",
+        fillColor: "",
+        outlineColor: "#000"
+    },
+    title: {
+        fillColor: "#FFF",
+        outlineColor: "#000"
+    },
+    description: {
+        fillColor: "#000"
+    },
+    button1: {
+        fillColor: "",
+        outlineColor: "#000",
+        labelFillColor: "#000"
+    },
+    button2: {
+        fillColor: "",
+        outlineColor: "#000",
+        labelFillColor: "#000"
+    },
+    background: {
+        path: '',
+        pathRetina: '',
+        pathMobile: '',
+        pathMobileRetina: '',
+        backgroundColor: ''
+    },
+    copy: {
+        backgroundColor: ""
+    },
+    image: {
+        path: 'url("/assets/images/home/banner/template.jpg")',
+        pathRetina: 'url("/assets/images/home/banner/template@2x.jpg")',
+        pathMobile: 'url("/assets/images/home/banner/template-mobile.jpg")',
+        pathMobileRetina: 'url("/assets/images/home/banner/template-mobile@2x.jpg")',
+        backgroundColor: "#fbfbfb"
+    },
     flipLayoutOnMobile: false,
-    author: "Template",
-    authorLink: "https://github.com/BitcoinDesign/Guide/pull/27"
+    author: {
+        name: "Template",
+        link: "https://github.com/BitcoinDesign/Guide/pull/27"
+    }
   },
   {
     // Bridging bitcoin
-    copyBackgroundColor: "#F7931A",
-    bitcoinLogoPath: "/assets/banner-bitcoin-logo.svg",
-    bitcoinLogoFillColor: "#000",
-    bitcoinLogoOutlineColor: "",
-    titleFillColor: "#000",
-    titleOutlineColor: "",
-    descriptionFillColor: "#000",
-    button1FillColor: "#FFF",
-    button1OutlineColor: "#000",
-    button1LabelFillColor: "#000",
-    button2FillColor: "",
-    button2OutlineColor: "#000",
-    button2LabelFillColor: "#000",
-    backgroundImagePath: 'url("/assets/images/home/banner/header-theme-1-bridging-bitcoin.png")',
-    backgroundImagePathRetina: 'url("/assets/images/home/banner/header-theme-1-bridging-bitcoin@2x.png")',
-    backgroundImagePathMobile: 'url("/assets/images/home/banner/header-theme-1-bridging-bitcoin-mobile.png")',
-    backgroundImagePathMobileRetina: 'url("/assets/images/home/banner/header-theme-1-bridging-bitcoin-mobile@2x.png")',
-    backgroundImageColor: "#F7931A",
+    logo: {
+        path: "/assets/banner-bitcoin-logo.svg",
+        fillColor: "#000",
+        outlineColor: ""
+    },
+    title: {
+        fillColor: "#000",
+        outlineColor: "transparent"
+    },
+    description: {
+        fillColor: "#000"
+    },
+    button1: {
+        fillColor: "#FFF",
+        outlineColor: "#000",
+        labelFillColor: "#000"
+    },
+    button2: {
+        fillColor: "",
+        outlineColor: "#000",
+        labelFillColor: "#000"
+    },
+    background: {
+        path: '',
+        pathRetina: '',
+        pathMobile: '',
+        pathMobileRetina: '',
+        backgroundColor: ''
+    },
+    copy: {
+        backgroundColor: "#F7931A"
+    },
+    image: {
+        path: 'url("/assets/images/home/banner/header-theme-1-bridging-bitcoin.png")',
+        pathRetina: 'url("/assets/images/home/banner/header-theme-1-bridging-bitcoin@2x.png")',
+        pathMobile: 'url("/assets/images/home/banner/header-theme-1-bridging-bitcoin-mobile.png")',
+        pathMobileRetina: 'url("/assets/images/home/banner/header-theme-1-bridging-bitcoin-mobile@2x.png")',
+        backgroundColor: "#F7931A"
+    },
     flipLayoutOnMobile: false,
-    author: "Alexa Aker",
-    authorLink: "https://github.com/BitcoinDesign/Guide/issues/45"
+    author: {
+        name: "Alexa Aker",
+        link: "https://github.com/BitcoinDesign/Guide/issues/45"
+    }
   },
   {
     // 3D abstract
-    copyBackgroundColor: "#64EBFC",
-    bitcoinLogoPath: "/assets/banner-bitcoin-logo.svg",
-    bitcoinLogoFillColor: "#F7931A",
-    bitcoinLogoOutlineColor: "",
-    titleFillColor: "#F7931A",
-    titleOutlineColor: "#F7931A",
-    descriptionFillColor: "#000",
-    button1FillColor: "#F7931A",
-    button1OutlineColor: "#F7931A",
-    button1LabelFillColor: "#FFF",
-    button2FillColor: "#F7931A",
-    button2OutlineColor: "#F7931A",
-    button2LabelFillColor: "#FFF",
-    backgroundImagePath: 'url("/assets/images/home/banner/header-theme-2-3d-abstract.png")',
-    backgroundImagePathRetina: 'url("/assets/images/home/banner/header-theme-2-3d-abstract@2x.png")',
-    backgroundImagePathMobile: 'url("/assets/images/home/banner/header-theme-2-3d-abstract-mobile.png")',
-    backgroundImagePathMobileRetina: 'url("/assets/images/home/banner/header-theme-2-3d-abstract-mobile@2x.png")',
-    backgroundImageColor: "#64EBFC",
+    logo: {
+        path: "/assets/banner-bitcoin-logo.svg",
+        fillColor: "#F7931A",
+        outlineColor: ""
+    },
+    title: {
+        fillColor: "#F7931A",
+        outlineColor: "#F7931A"
+    },
+    description: {
+        fillColor: "#000"
+    },
+    button1: {
+        fillColor: "#F7931A",
+        outlineColor: "#F7931A",
+        labelFillColor: "#FFF"
+    },
+    button2: {
+        fillColor: "#F7931A",
+        outlineColor: "#F7931A",
+        labelFillColor: "#FFF"
+    },
+    background: {
+        path: '',
+        pathRetina: '',
+        pathMobile: '',
+        pathMobileRetina: '',
+        backgroundColor: ''
+    },
+    copy: {
+        backgroundColor: "#64EBFC"
+    },
+    image: {
+        path: 'url("/assets/images/home/banner/header-theme-2-3d-abstract.png")',
+        pathRetina: 'url("/assets/images/home/banner/header-theme-2-3d-abstract@2x.png")',
+        pathMobile: 'url("/assets/images/home/banner/header-theme-2-3d-abstract-mobile.png")',
+        pathMobileRetina: 'url("/assets/images/home/banner/header-theme-2-3d-abstract-mobile@2x.png")',
+        backgroundColor: "#64EBFC"
+    },
     flipLayoutOnMobile: false,
-    author: "Gabor Magyar",
-    authorLink: "https://github.com/BitcoinDesign/Guide/issues/143"   
+    author: {
+        name: "Gabor Magyar",
+        link: "https://github.com/BitcoinDesign/Guide/issues/143"
+    }
+  },
+  {
+    // The Meta-Future
+    logo: {
+        path: "/assets/banner-bitcoin-logo.svg",
+        fillColor: "#F7931A",
+        outlineColor: ""
+    },
+    title: {
+        fillColor: "#000",
+        outlineColor: "transparent"
+    },
+    description: {
+        fillColor: "#000"
+    },
+    button1: {
+        fillColor: "#F7931A",
+        outlineColor: "#000",
+        labelFillColor: "#000"
+    },
+    button2: {
+        fillColor: "#FFF",
+        outlineColor: "#000",
+        labelFillColor: "#000"
+    },
+    background: {
+        path: 'url("/assets/images/home/banner/the-meta-future.jpg")',
+        pathRetina: 'url("/assets/images/home/banner/the-meta-future@2x.jpg")',
+        pathMobile: 'url("/assets/images/home/banner/the-meta-future-mobile.jpg")',
+        pathMobileRetina: 'url("/assets/images/home/banner/the-meta-future-mobile@2x.jpg")',
+        backgroundColor: "#D0E8E1"
+    },
+    copy: {
+        backgroundColor: ""
+    },
+    image: {
+        path: '',
+        pathRetina: '',
+        pathMobile: '',
+        pathMobileRetina: '',
+        backgroundColor: ""
+    },
+    flipLayoutOnMobile: false,
+    author: {
+        name: "Rama Krushna",
+        link: "https://github.com/BitcoinDesign/Guide/issues/272"
+    }
   }
 ];
 
@@ -96,33 +212,77 @@ var applyNextTheme = function() {
     applyTheme(currentThemeIndex);
 }
 
+var getProperty = function(thing, find, fallback) {
+    if(!thing) {
+        return fallback ? fallback : null;
+    }
+
+    if(!find) {
+        return fallback ? fallback : null;
+    }
+
+    var result = thing;
+    var bits = find.split('.');
+    var i=0, length=bits.length, bit;
+    for(; i<length; i++) {
+        bit = bits[i];
+
+        if(result[bit]) {
+            result = result[bit];
+        } else {
+            result = fallback === undefined ? null :  fallback;
+            break;
+        }
+    }
+
+    return result;
+};
+
+var applyDocumentThemeProperty = function(theme, propertyName, propertyId) {
+    document.documentElement.style.setProperty(propertyName, getProperty(theme, propertyId));
+};
+
 var applyTheme = function(themeIndex) {
     currentThemeIndex = themeIndex;
 
     var theme = themes[themeIndex];
 
-    document.documentElement.style.setProperty('--copy-background-color', theme.copyBackgroundColor);
-    document.documentElement.style.setProperty('--title-fill-color', theme.titleFillColor);
-    document.documentElement.style.setProperty('--title-outline-color', theme.titleOutlineColor);
-    document.documentElement.style.setProperty('--description-fill-color', theme.descriptionFillColor);
-    document.documentElement.style.setProperty('--button-1-fill-color', theme.button1FillColor);
-    document.documentElement.style.setProperty('--button-1-outline-color', theme.button1OutlineColor);
-    document.documentElement.style.setProperty('--button-1-label-fill-color', theme.button1LabelFillColor);
-    document.documentElement.style.setProperty('--button-2-fill-color', theme.button2FillColor);
-    document.documentElement.style.setProperty('--button-2-outline-color', theme.button2OutlineColor);
-    document.documentElement.style.setProperty('--button-2-label-fill-color', theme.button2LabelFillColor);
-    document.documentElement.style.setProperty('--background-image-path', theme.backgroundImagePath);
-    document.documentElement.style.setProperty('--background-image-path-retina', theme.backgroundImagePathRetina);
-    document.documentElement.style.setProperty('--background-image-path-mobile', theme.backgroundImagePathMobile);
-    document.documentElement.style.setProperty('--background-image-path-mobile-retina', theme.backgroundImagePathMobileRetina);
-    document.documentElement.style.setProperty('--background-image-color', theme.backgroundImageColor);
+    // Document-wide property.
+    var documentProperties = [
+        ['--copy-background-color', 'copy.backgroundColor'],
+        ['--title-fill-color', 'title.fillColor'],
+        ['--title-outline-color', 'title.outlineColor'],
+        ['--description-fill-color', 'description.fillColor'],
+        ['--button-1-fill-color', 'button1.fillColor'],
+        ['--button-1-outline-color', 'button1.outlineColor'],
+        ['--button-1-label-fill-color', 'button1.labelFillColor'],
+        ['--button-2-fill-color', 'button2.fillColor'],
+        ['--button-2-outline-color', 'button2.outlineColor'],
+        ['--button-2-label-fill-color', 'button2.labelFillColor'],
+        ['--banner-image-path', 'image.path'],
+        ['--banner-image-path-retina', 'image.pathRetina'],
+        ['--banner-image-path-mobile', 'image.pathMobile'],
+        ['--banner-image-path-mobile-retina', 'image.pathMobileRetina'],
+        ['--banner-image-color', 'image.backgroundColor'],
+        ['--banner-background-path', 'background.path'],
+        ['--banner-background-path-retina', 'background.pathRetina'],
+        ['--banner-background-path-mobile', 'background.pathMobile'],
+        ['--banner-background-path-mobile-retina', 'background.pathMobileRetina'],
+        ['--banner-background-color', 'background.backgroundColor']
+    ];
 
-    var logoPath = document.getElementById('banner-bitcoin-logo-path');
-    if(logoPath) {
-        logoPath.setAttribute('fill', theme.bitcoinLogoFillColor);
-        logoPath.setAttribute('stroke', theme.bitcoinLogoOutlineColor);
+    for(var i=0; i<documentProperties.length; i++) {
+        applyDocumentThemeProperty(theme, documentProperties[i][0], documentProperties[i][1]);
     }
 
+    // Logo properties.
+    var logoPath = document.getElementById('banner-bitcoin-logo-path');
+    if(logoPath) {
+        logoPath.setAttribute('fill', getProperty(theme, 'logo.fillColor'));
+        logoPath.setAttribute('stroke', getProperty(theme, 'logo.outlineColor'));
+    }
+
+    // Banner properties.
     var banner = document.getElementById('home-banner');
     if(banner) {
         if(theme.flipLayoutOnMobile) {
@@ -132,10 +292,11 @@ var applyTheme = function(themeIndex) {
         }
     }
 
+    // Author properties.
     var author = document.getElementById('home-banner-info-author');
     if(author) {
-        author.innerText = theme.author;
-        author.setAttribute('href', theme.authorLink);
+        author.innerText = getProperty(theme, 'author.name');
+        author.setAttribute('href', getProperty(theme, 'author.link'));
     }
 };
 

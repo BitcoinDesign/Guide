@@ -1,0 +1,72 @@
+article.guide {
+  .fact {
+    margin-top: $spacing-unit;
+    display: flex;
+    border: 1px solid #DEDEDE;
+    align-items: stretch;
+
+    .icon {
+      padding: $spacing-unit/3 $spacing-unit/3*2;
+      border-right: 1px solid #DEDEDE;
+      flex-grow: 0;
+      display: flex;
+      align-items: center;
+
+      &.-green {
+        svg {
+          background-color: $green;
+        }
+      }
+
+      &.-red {
+        svg {
+          background-color: $red;
+        }
+      }
+
+      svg {
+        display: inline-block;
+        background-color: $blue;
+        border-radius: 3px;
+        width: 24px;
+        height: 24px;
+        color: white;
+        vertical-align: middle;
+        transform: translateY(-2px);
+      }
+    }
+
+    .copy {
+      padding: $spacing-unit/3*2;
+      flex-grow: 1;
+
+      h6 {
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        font-weight: 500;
+
+        &:before {
+          display: none;
+        }
+      }
+
+      ul, ol {
+        margin-left: 0;
+
+        &:first-child {
+          margin-top: 5px;
+        }
+      }
+
+      p {
+        margin: 5px 0 0 0;
+      }
+    }
+
+    & + .fact {
+      margin-top: 0;
+      border-top: 0;
+    }
+  }
+}

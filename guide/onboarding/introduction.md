@@ -22,7 +22,7 @@ scan this page to get an overview of the section and then decide which topics to
    image = "/assets/images/guide/onboarding/onboarding.png"
    retina = "/assets/images/guide/onboarding/onboarding@2x.png"
    mobile = "/assets/images/guide/onboarding/onboarding-mobile.png"
-   mobileRetina = "/assets/images/guide/onboarding/onboarding/onboarding-mobile@2x.png"
+   mobileRetina = "/assets/images/guide/onboarding/onboarding-mobile@2x.png"
    alt-text = "Person climbing ladder"
    width = 1600
    height = 600
@@ -49,14 +49,30 @@ This section will give you some tips on how best to understand and develop knowl
 
 ---
 
-### First-time user experience (coming soon)
+### [Creating a new wallet]({{ '/guide/onboarding/creating-a-new-wallet/' | relative_url }})
 
-An overview of how to design a successful onboarding experience for first-time users. This will help set the basis for a more advanced type of user.
+An overview of what information to include when creating a wallet for the first time.
 
-### Creating a wallet (coming soon)
+---
 
-### Funding a wallet (coming soon)
+### Backing up a recovery phrase (coming soon)
+
+An overview of the tradeoffs between using manual backups vs seedless backups.
+
+---
 
 ### Restoring a wallet (coming soon)
 
+What options to consider if a user has lost their device, had it stolen or deleted and redownloaded a particular wallet application.
+
+---
+
 ### Protecting a wallet (coming soon)
+
+An overview of how to add extra layers of securtiy to protect sensitive user data.
+
+---
+
+### Funding a wallet (coming soon)
+
+An overview of how users are likely to fund their wallets
