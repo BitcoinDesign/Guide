@@ -97,7 +97,7 @@ An open-source project that maintains and releases the most popular [Bitcoin cli
 
 ### Bitcoin Core client
 
-An open source Bitcoin client that is considered the primary reference implementation for Bitcoin. It is the continuation of Satoshi Nakamoto's original bitcoin client released on 9th January 2009. 
+The software which is considered both the reference implementation, as well as the specticiation for the Bitcoin protocol. It is the continuation of Satoshi Nakamoto's original bitcoin client released on 9th January 2009. 
 
 - [Bitcoin Core download](https://bitcoincore.org/en/download/)
 - [Bitcoin whitepaper by Satoshi Nakamoto](https://bitcoin.org/bitcoin.pdf)
