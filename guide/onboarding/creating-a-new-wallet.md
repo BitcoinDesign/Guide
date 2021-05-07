@@ -91,4 +91,4 @@ Below is an example of some carousel screens that might be useful in helping a u
 
 ---
 
-Ok, now let's look at backing up a recovery phrase (coming soon)
+Ok, now let's look at [backing up a recovery phrase.]({{ 'guide/onboarding/backing-up-a-recovery-phrase' | relative_url }})
