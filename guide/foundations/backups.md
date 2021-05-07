@@ -43,7 +43,7 @@ If you are a designer or developer, make sure you offer guidance to your users s
 
 ## What are backups?
 
-When we talk about backups, we mean saving the information needed to restore access to a wallet outside of the application that created the private keys. Often, this will just be the [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) of 12 or 24 words, but can also include other information like a *pass-phrase*.
+When we talk about backups, we mean saving the information needed to restore access to a wallet outside of the application that created the private keys. Often, this will just be the [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) of 12 or 24 words, but can also include other information like a *pass-phrase* and [derivation path]({{ '/guide/glossary/#derivation-path' | relative_url }}).
 
 The main risks that backups need to protect against are:
 
@@ -71,6 +71,14 @@ Let’s look at some real life examples of backup methods for single-key wallets
    height = 625
    layout = "full-width"
 %}
+
+{% include rec-open.html %}
+
+Level 0 and 1 are perfectly good if you are just getting started, and require very little effort.
+
+Level 2, 3 or 4 are recommended if you are planning to store larger amounts.
+
+{% include rec-close.html %}
 
 <br>
 
@@ -158,9 +166,11 @@ The best metal backup solutions are resistant to most physical damage, including
 
 #### Level 3
 ## Single backup with discovery protection
-The previous offline backups have one flaw in common - if discovered by a bad actor, your funds can be stolen.
+The previous offline backups have one flaw in common - if discovered by a bad actor, your funds can be stolen. 
 
 To protect against this *theft on discovery* risk, a *pass-phrase* can be added to the recovery-phrase. This pass-phrase is sometimes called an extra word, or the 13th/25th word. 
+
+While this level provides more protection, it also adds complexity to your backup setup. For most beginners storing small amounts it might not be worth the effort from the start and can be a later consideration should the funds grow.
 
 Technically, all recovery-phrases have a pass-phrase. If it's not set by the user, an empty string (“”) will be used by default. This means that using the recovery-phrase with or without the user-defined pass-phrase will recover two DIFFERENT wallets. 
 
@@ -170,7 +180,7 @@ To provide protection against *theft on discovery*, the pass-phrase should be st
 
 Since adding a pass-phrase will generate a different wallet, it is best to add it when first creating the wallet, and before storing any bitcoin in its addresses.
 
-It's worth noting that most hardware wallets support pass-phrases, but most software wallet applications do not.
+It's worth noting that most hardware wallets support pass-phrases, while most software wallet applications do not.
 
 {% include image.html
    image = "/assets/images/guide/foundations/backups/offline-discoveryprotection.png"
