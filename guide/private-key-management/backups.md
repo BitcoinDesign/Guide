@@ -2,8 +2,8 @@
 layout: guide
 title: Bitcoin backups
 description: A beginner's guide to Bitcoin backups.
-nav_order: 11
-parent: Foundations
+nav_order: 4
+parent: Private key management
 permalink: /guide/private-key-management/backups/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/foundations/wallet-interoperability/wallet-interoperability-preview.jpg
