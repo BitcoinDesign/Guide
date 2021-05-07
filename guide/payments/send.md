@@ -6,8 +6,32 @@ nav_order: 2
 parent: Payments
 permalink: /guide/payments/send/
 main_classes: -no-top-padding
-# image: /assets/images/guide/payments/send/header.svg
+image: /assets/images/guide/payments/send/bitcoin-payments-mobile.jpg
 ---
+
+<!--
+
+Editor's notes
+
+Illustration sources
+
+Illustrations were sketched first, then designed in Adobe Illustrator, and finally textured and resized in Adobe
+Photoshop. This Dropbox link contains the AI and PSD files.
+
+- https://www.dropbox.com/sh/z5qnj2rna7rclae/AAB0dOuiJ3OmJuk7ZXkpbz5ua?dl=0
+
+-->
+
+{% include picture.html
+image = "/assets/images/guide/payments/send/bitcoin-payments@0.5x.jpg"
+retina = "/assets/images/guide/payments/send/bitcoin-payments.jpg"
+mobile = "/assets/images/guide/payments/send/bitcoin-payments-mobile@0.5x.jpg"
+mobileRetina = "/assets/images/guide/payments/send/bitcoin-payments-mobile.jpg"
+alt-text = "Illustration of a man and woman exchanging a bitcoin"
+width = 1600
+height = 600
+layout = "full-width"
+%}
 
 # Sending bitcoin
 
