@@ -58,20 +58,20 @@ Open design can manifest in many different ways. You might:
 
 * help design the interface of your favorite open-source project
 * collaborate with people and projects in areas related to specific topics of interest
-* create a design resource library like an icon or illustration set or a UI kit
+* create a design resource library like an icon set or a UI kit
 * help test an open-source product and provide feedback
 * [contribute](/guide/contribute/) to the Bitcoin Design Guide
 
-Whatever you choose to do, open design projects are voluntary public contributions. From this work, a network of people and projects emerge connected by personal relationships, specialized communities, and sharing the work. This is different from corporate structures that require individuals to think and act independently.
+Whatever you choose to do, open design projects are voluntary public contributions. From this work, a network of people and projects emerge connected by personal relationships, specialized communities, and sharing of work. This is different from corporate structures and requires individuals to think and act more independently.
 
 In open-source software, public review and debate lead to better products and services. Open-source development has existed for decades, while open design is not widely known or practiced. Designing for bitcoin products, especially for newcomers in an open design setting, can be disorienting and require adjustments to how they work and collaborate. No longer is work the exclusive product of them or a small, localized team; instead, it becomes part of a public conversation.
 
 
 ##  Open design and Bitcoin
 
-The spirit of openness is deeply embedded into bitcoin; the source code is public, participation in the network is public and unrestricted, and transferring value via the bitcoin protocol is permissionless. Thousands of projects have borrowed ideas, techniques, and code from bitcoin to create their open-source experiments. For designers who aim to work collaboratively, it’s a robust foundation.
+The spirit of openness is deeply embedded into Bitcoin; the source code is public, participation in the network is public and unrestricted, and transferring value via the Bitcoin protocol is permissionless. Thousands of projects have borrowed ideas, techniques, and code from Bitcoin to create their open-source experiments. For designers who aim to work collaboratively, it’s a robust foundation.
 
-We could even argue that bitcoin needs open design to stay true to its mission, principles, and philosophy. Most users don’t interact directly with technical protocols but with the applications built on top of it. If those applications are centrally controlled or manipulated, it won’t matter if the protocol is open. So it is up to the community to ensure that bitcoin remains [decentralized](/guide/foundations/principles/#decentralization) and allows for permissionless participation at the open-source application layer.
+We could even argue that Bitcoin needs open design to stay true to its mission, principles, and philosophy. Most users don’t interact directly with technical protocols but with the applications built on top of it. If those applications are centrally controlled or manipulated, it won’t matter if the protocol is open. So it is up to the community to ensure that Bitcoin remains [decentralized](/guide/foundations/principles/#decentralization) and allows for permissionless participation at the open-source application layer.
 
 ## Values
 
@@ -91,13 +91,13 @@ We value:
 
 - moral and responsible choices
 - products that solve real problems and address real needs
-- usability accessibility for the broadest possible range of people, locations, and backgrounds
+- usability and accessibility for the broadest possible range of people, locations, and backgrounds
 - highly functional aesthetic elements that influence both how people feel and think
 
 
-## Getting
+## Getting started
 
-If you are new to open design for bitcoin, which many are, it can be tricky to find a place to start. Not only is the tech complex, but there are few educational resources available. The  [Contribute page]({{ '/contribute' | relative_url }}) is a good starting point. These tips can also help you find your footing:
+If you are new to open design for Bitcoin, which many are, it can be tricky to find a place to start. Not only is the tech complex, but there are few educational resources available. The [contribute page]({{ '/contribute' | relative_url }}) is a good starting point. These tips can also help you find your footing:
 
 
 - Join the [Bitcoin Design Community]({{site.slack_invite_url}}) on Slack and see what others are discussing. A good way to get started is by asking questions and joining conversations that interest you. Our [Community Calls](https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+Community+Call) and [Design Review](https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+Design+Review+Call+) calls are also great ways to get active.
