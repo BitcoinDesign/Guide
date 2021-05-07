@@ -74,8 +74,6 @@ Covers the complexities encountered when sending and receiving bitcoin.
 Highlights principles and other fundamentals of designing Bitcoin products
 
 ---
-
-<<<<<<< HEAD
 ### [Case studies]({{ '/guide/case-studies/' | relative_url }})
 
 Explores approaches to diverse uses cases with wireframes, designs and prototypes.
@@ -88,6 +86,3 @@ Helps you learn the most need-to-know Bitcoin terminology from Address to ZPUB
 
 ---
 Let's [get started]({{ '/guide/getting-started/introduction/' | relative_url }}).
-=======
-Now, let's [get started]({{ '/guide/getting-started/introduction/' | relative_url }}).
->>>>>>> Updated preview image URLs to absolute in all markdown files
