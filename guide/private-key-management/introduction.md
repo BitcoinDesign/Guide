@@ -51,6 +51,10 @@ The schemes that are most common for the personal use of one individual.
 
 When more than one person wants to share a Bitcoin wallet, multi-key schemes become essential.
 
+**[Bitcoin backups]({{ '/guide/private-key-management/backups/' | relative_url }})**
+
+A straigtforward guide to safe manual backups.
+
 ---
 
 Let's get started with an overview of [private key schemes]({{ '/guide/private-key-management/schemes/' | relative_url }}).
