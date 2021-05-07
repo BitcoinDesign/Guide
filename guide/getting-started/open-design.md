@@ -66,6 +66,7 @@ Whatever you choose to do, open design projects are voluntary public contributio
 
 In open-source software, public review and debate lead to better products and services. Open-source development has existed for decades, while open design is not widely known or practiced. Designing for bitcoin products, especially for newcomers in an open design setting, can be disorienting and require adjustments to how they work and collaborate. No longer is work the exclusive product of them or a small, localized team; instead, it becomes part of a public conversation.
 
+Designers, developers, translators, project managers, and others work together in the open. Multidisciplinary collaboration, openness, and diversity of people involved make sure that the best solution wins no matter where it comes from.
 
 ##  Open design and Bitcoin
 
@@ -102,10 +103,9 @@ If you are new to open design for Bitcoin, which many are, it can be tricky to f
 
 - Join the [Bitcoin Design Community]({{site.slack_invite_url}}) on Slack and see what others are discussing. A good way to get started is by asking questions and joining conversations that interest you. Our [Community Calls](https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+Community+Call) and [Design Review](https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+Design+Review+Call+) calls are also great ways to get active.
 - Download a Bitcoin wallet and experiment with small amounts of bitcoin. You can also use Testnet, which allows you to use all the features of the real Bitcoin network, but with worthless test bitcoin.
-- Read, watch, and listen. There is a lot of learning great material out there. Unfortunately, design-focused content is less common, but digging into related materials like finance can expand your knowledge.
+- Redesign a bitcoin application that interests you. Even as a brief exercise, a redesign is a great way to develop a deeper understanding of how something works and why specific decisions were made.
 - Read, watch and listen. There is a lot of great material out there to learn more about Bitcoin. Unfortunately, design-focused content is not as common, but expanding into related materials (like finance) might help.
 - Review your tools and workflows and consider how you can make them more public and accessible to others.
-
 
 ## Licensing
 
