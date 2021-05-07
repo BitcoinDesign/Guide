@@ -6,7 +6,7 @@ nav_order: 2
 parent: Payments
 permalink: /guide/payments/send/
 main_classes: -no-top-padding
-image: /assets/images/guide/payments/send/bitcoin-payments-mobile.jpg
+image: /assets/images/guide/payments/send/bitcoin-payments-social.jpg
 ---
 
 <!--
@@ -15,7 +15,7 @@ Editor's notes
 
 Illustration sources
 
-Page artwork: created in FIgma.
+Page artwork: created in Figma.
 Header: Illustration was sketched first, then designed in Adobe Illustrator, and finally textured and resized in Adobe
 Photoshop. The Dropbox link contains the AI and PSD files.
 
@@ -25,10 +25,10 @@ Photoshop. The Dropbox link contains the AI and PSD files.
 -->
 
 {% include picture.html
-image = "/assets/images/guide/payments/send/bitcoin-payments@0.5x.jpg"
-retina = "/assets/images/guide/payments/send/bitcoin-payments.jpg"
-mobile = "/assets/images/guide/payments/send/bitcoin-payments-mobile@0.5x.jpg"
-mobileRetina = "/assets/images/guide/payments/send/bitcoin-payments-mobile.jpg"
+image = "/assets/images/guide/payments/send/bitcoin-payments.jpg"
+retina = "/assets/images/guide/payments/send/bitcoin-payments@2x.jpg"
+mobile = "/assets/images/guide/payments/send/bitcoin-payments-mobile.jpg"
+mobileRetina = "/assets/images/guide/payments/send/bitcoin-payments-mobile@2x.jpg"
 alt-text = "Illustration of a man and woman exchanging a bitcoin"
 width = 1600
 height = 600
