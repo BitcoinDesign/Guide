@@ -90,7 +90,7 @@ Software that runs and/or connects to the Bitcoin network.
 
 ### Bitcoin Core
 
-An open source Bitcoin project that maintains and releases the primary Bitcoin reference implementation the [Bitcoin Core client](bitcoin-core-client).
+An open-source project that maintains and releases the most popular [Bitcoin client](bitcoin-core-client) of the same name.
 
 - [Bitcoin Core website](https://bitcoincore.org/)
 - [Bitcoin wiki entry](https://en.bitcoin.it/wiki/Bitcoin_Core)
