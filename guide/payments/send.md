@@ -15,10 +15,12 @@ Editor's notes
 
 Illustration sources
 
-Illustrations were sketched first, then designed in Adobe Illustrator, and finally textured and resized in Adobe
-Photoshop. This Dropbox link contains the AI and PSD files.
+Page artwork: created in FIgma.
+Header: Illustration was sketched first, then designed in Adobe Illustrator, and finally textured and resized in Adobe
+Photoshop. The Dropbox link contains the AI and PSD files.
 
-- https://www.dropbox.com/sh/z5qnj2rna7rclae/AAB0dOuiJ3OmJuk7ZXkpbz5ua?dl=0
+- https://www.dropbox.com/sh/z5qnj2rna7rclae/AAB0dOuiJ3OmJuk7ZXkpbz5ua?dl=0\
+- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=1329%3A564
 
 -->
 
@@ -32,13 +34,6 @@ width = 1600
 height = 600
 layout = "full-width"
 %}
-
-<!--
-
-Illustration source:
-https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=1329%3A564
-
--->
 
 # Sending bitcoin
 
