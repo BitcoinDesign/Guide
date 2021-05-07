@@ -6,7 +6,7 @@ nav_order: 4
 parent: Private key management
 permalink: /guide/private-key-management/backups/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/foundations/wallet-interoperability/wallet-interoperability-preview.jpg
+image: https://bitcoin.design/assets/images/guide/private-key-management/backups/page-backups.jpg
 ---
 
 <!--
