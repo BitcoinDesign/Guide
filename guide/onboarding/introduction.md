@@ -57,7 +57,7 @@ An overview of what information to include when creating a wallet for the first 
 
 ### [Backing up a recovery phrase]({{ 'guide/onboarding/backing-up-a-recovery-phrase' | relative_url }})
 
-An overview of the tradeoffs between using manual backups vs automatic cloud backups.
+An overview of the tradeoffs between using [manual backups]({{ 'guide/onboarding/backing-up-a-recovery-phrase/manual-backups' | relative_url }}) vs [automatic cloud backups]({{ 'guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backups' | relative_url }}).
 
 ---
 
