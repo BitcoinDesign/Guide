@@ -74,9 +74,9 @@ Let’s look at some real life examples of backup methods for single-key wallets
 
 {% include rec-open.html %}
 
-Level 0 and 1 are perfectly good if you are just getting started, and require very little effort.
+Level 0 and 1 are good when getting started, and require very little effort.
 
-Level 2, 3 or 4 are recommended if you are planning to store larger amounts.
+Level 2, 3 or 4 are recommended for storing larger amounts.
 
 {% include rec-close.html %}
 
@@ -121,7 +121,7 @@ By storing the recovery-phrase written down on paper in your own home you have p
 
 
 **Do**
-- Write the recovery-phrase clearly with the words numbered, using permanent ink on card, or a [template](create a template people can print) //ToDo
+- Write the recovery-phrase with the words numbered, using permanent ink on card
 - Store it in a location where it is unlikely to be found by a bad actor
 - Document or tell next-of-kin where the backup can be found
 
