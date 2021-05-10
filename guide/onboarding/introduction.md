@@ -5,7 +5,7 @@ description: An overview of some of the concepts to consider when building onboa
 nav_order: 3
 permalink: /guide/onboarding/introduction/
 main_classes: -no-top-padding
-image: /assets/images/guide/onboarding/onboarding.png
+image: https://bitcoin.design/assets/images/guide/onboarding/onboarding-preview.png
 ---
 
 <!--
@@ -22,7 +22,7 @@ scan this page to get an overview of the section and then decide which topics to
    retina = "/assets/images/guide/onboarding/onboarding@2x.png"
    mobile = "/assets/images/guide/onboarding/onboarding-mobile.png"
    mobileRetina = "/assets/images/guide/onboarding/onboarding-mobile@2x.png"
-   alt-text = "Onboarding chapter illustration"
+   alt-text = "Person climbing ladder"
    width = 1600
    height = 600
    layout = "full-width"
