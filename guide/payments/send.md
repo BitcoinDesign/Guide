@@ -60,7 +60,7 @@ The receiver does this by generating a new address in their wallet application, 
 
 Once you have gotten the address, it's time to enter the payment details. Bitcoin transactions are irreversible, so both the sender and receiver should take great care in correctly sharing and inputting addresses.
 
-**QR Code** -- Access will need to be granted to your application to enable scanning of QR Codes. Once the camera detects a valid address in the QR Code, it should automatically fill the address field.
+**QR Code** -- Camera access will need to be granted to your Bitcoin application to enable scanning of QR Codes. Once the camera detects a valid address in the QR Code, it should automatically fill the address field.
 
 **Copy/Paste** -- When the sender receives the address or payment link as text, your application can detect a valid address in the clipboard and prompt the sender to press a button to paste it.
 

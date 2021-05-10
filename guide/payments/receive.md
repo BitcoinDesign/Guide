@@ -50,11 +50,11 @@ The simplest form of requesting bitcoin is creating and sharing a Bitcoin addres
 
 </div>
 
-There are multiple types of addresses that could lead to compatibility issues that can disrupt a payment flow. Read more about [address compatibility]({{ '/guide/foundations/address/#address-compatibility' | relative_url }}) in foundations.
+There are multiple types of addresses that could lead to compatibility issues for senders and prevent a successful payment. Read more about [address compatibility]({{ '/guide/foundations/address/#address-compatibility' | relative_url }}) in foundations.
 
 ---
 
-Many Bitcoin wallet applications focus on providing a minimal interface for requesting payments. This is convenient in the short-term but may not be the user’s best interest longer-term. Lists of transactions without information about who they are from and their purpose makes it hard to manage personal finances.
+Many Bitcoin wallet applications focus on providing a minimal interface for requesting payments. This is convenient in the short-term but may not be in the user’s best interest longer-term. Lists of transactions without information about who they are from and their purpose makes it hard to manage personal finances.
 
 <div class="image-slide-gallery">
 
@@ -78,7 +78,7 @@ Many Bitcoin wallet applications focus on providing a minimal interface for requ
 
 </div>
 
-As the blockchain only stores the amount and addresses involved in a transaction, any additional information must be stored in your application. It’s also possible to share some of these details with senders by encoding them in payment links. Either way, these details have to be manually inputted.
+As the blockchain only stores the amount and addresses involved in a transaction, any additional information must be stored in your application. It’s also possible to share some of these details with senders by encoding them in [payment links]({{ '/guide/foundations/wallet-interoperability/' | relative_url }}). Either way, these details have to be manually inputted.
 
 The following are the standard properties of a payment link:
 
