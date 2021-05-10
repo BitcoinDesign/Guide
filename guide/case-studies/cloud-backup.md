@@ -4,7 +4,6 @@ title: Daily spending
 nav_order: 1
 parent: Case studies
 permalink: /guide/case-studies/cloud-backup/
-main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/getting-started/getting-started-preview.jpg
 image_base: /assets/images/guide/case-studies/cloud-backup/
 images:
@@ -54,17 +53,6 @@ images:
 Editor's notes
 
 -->
-
-{% include picture.html
-   image = "/assets/images/guide/case-studies/cloud-backup/cloud-backup-header.jpg"
-   retina = "/assets/images/guide/case-studies/cloud-backup/cloud-backup-header@2x.jpg"
-   mobile = "/assets/images/guide/case-studies/cloud-backup/cloud-backup-header-mobile.jpg"
-   mobileRetina = "/assets/images/guide/case-studies/cloud-backup/cloud-backup-header-mobile@2x.jpg"
-   alt-text = ""
-   width = 1600
-   height = 571
-   layout = "full-width"
-%}
 
 ## Cash account / Daily spending
 
