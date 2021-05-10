@@ -50,7 +50,7 @@ The simplest form of requesting bitcoin is creating and sharing a Bitcoin addres
 
 </div>
 
-There are multiple types of addresses that could lead to compatibility issues for senders and prevent a successful payment. Read more about [address compatibility]({{ '/guide/foundations/address/#address-compatibility' | relative_url }}) in foundations.
+There are multiple types of addresses that could lead to compatibility issues for senders and prevent a successful payment. Read more about [address compatibility]({{ '/guide/glossary/#address-compatibility' | relative_url }}) in foundations.
 
 ---
 

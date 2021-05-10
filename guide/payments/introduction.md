@@ -46,7 +46,7 @@ An introduction to how receiving and requesting bitcoin works.
 ---
 
 ### Transaction privacy (coming soon)
-s
+
 An overview of how to help users maintain their financial privacy while using Bitcoin.
 
 ---
