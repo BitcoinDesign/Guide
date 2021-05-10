@@ -26,41 +26,41 @@ Below is an example of what the user interface might look like for an automatic 
 <div class="image-slide-gallery">
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/auto-backup-intro.png"
-   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/auto-backup-intro@2x.png"
-   alt-text = "Introduction screen explaining automatic cloud backups"
+   image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-intro.png"
+   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-intro@2x.png"
+   alt-text = "Screen explaining automatic cloud backups"
    width = 250
    height = 541
 %}
 
 {% include picture.html
-     image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/auto-cloud-backup-select-provider.png"
-   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/auto-cloud-backup-select-provider@2x.png"
-   alt-text = "Selecting a cloud provider"
+     image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-password.png"
+   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-password@2x.png"
+   alt-text = "Screen asking user to set a password to use for encryption"
    width = 250
    height = 541
 %}
 
 {% include picture.html
-     image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/auto-cloud-backup-set-password.png"
-   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/auto-cloud-backup-set-password@2x.png"
-   alt-text = "Setting a password to encrypt the recovery phrase"
+     image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-service.png"
+   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-service@2x.png"
+   alt-text = "Screen showing saving a password to encrypt the recovery phrase"
    width = 250
    height = 541
 %}
 
 {% include picture.html
-     image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/auto-cloud-backup-save-password.png"
-   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/auto-cloud-backup-save-password@2x.png"
-   alt-text = "Saving a password to encrypt the recovery phrase"
+     image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-provider.png"
+   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-provider@2x.png"
+   alt-text = "Screen of placeholder where cloud provider UI would be"
    width = 250
    height = 541
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/auto-cloud-backup-complete.png"
-   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/auto-cloud-backup-complete@2x.png"
-   alt-text = "Completing a cloud backup"
+   image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-confirmation.png"
+   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-confirmation@2x.png"
+   alt-text = "Screen showing completing a cloud backup"
    width = 250
    height = 541
 %}
