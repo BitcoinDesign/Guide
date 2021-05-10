@@ -86,13 +86,29 @@ Bitcoin with a capital *B* is typically associated with Bitcoin the protocol and
 
 ### Bitcoin Client
 
--What is considered a Bitcoin client? I'd suggest it's a software package comprising node / base layer wallet features. [Several other](https://coin.dance/nodes) clients exist besides Bitcoin Core. -Bosch
+Software that runs and/or connects to the Bitcoin network.
 
 ### Bitcoin Core
 
-An open source Bitcoin project that maintains and releases Bitcoin client also referred to as "Bitcoin Core." Bitcoin Core is often considered as the *reference implementation* and serves as the specification of the Bitcoin protocol. It is the continuation of Satoshi Nakamoto's original bitcoin client released on 9th January 2009. More on the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Bitcoin_Core) and [Bitcoin Core website](https://bitcoincore.org/).
+An open source Bitcoin project that maintains and releases the primary Bitcoin reference implementation the [Bitcoin Core client](bitcoin-core-client).
 
-### BIP - Bitcoin improvement proposal
+- [Bitcoin Core website](https://bitcoincore.org/).
+- [Bitcoin wiki entry](https://en.bitcoin.it/wiki/Bitcoin_Core)
+
+## Bitcoin Core client
+
+An open source Bitcoin client that is considered the primary reference implementation for Bitcoin. It is the continuation of Satoshi Nakamoto's original bitcoin client released on 9th January 2009. 
+
+- [Bitcoin Core download](https://bitcoincore.org/en/download/)
+- [Bitcoin whitepaper by Satoshi Nakamoto](https://bitcoin.org/bitcoin.pdf)
+
+## bitcoind
+
+bitcoind is a program that implements the Bitcoin protocol for remote procedure call (RPC) use. It is a free, open source client available under the [MIT licence](https://opensource.org/licenses/mit-license.php).
+
+- [Bitcoin wiki entry](https://en.bitcoin.it/wiki/Bitcoind)
+
+## Bitcoin improvement proposal (BIP)
 
 A standardized technical document format for suggesting improvements to Bitcoin. They are hosted on Github [here](https://github.com/bitcoin/bips). Some important proposals to be aware of:
 
@@ -160,21 +176,21 @@ The path to the first address in a bitcoin-wallet using BIP84 will look like thi
 
 For full [interoperability](/guide/foundations/principles/#interoperability) a wallet should support all of these standards. More information can be found [here](/guide/foundations/wallet-interoperability/#wallet-import-and-export) and [here](https://learnmeabitcoin.com/technical/derivation-paths).
 
-### Extended private key (XPRIV)
+## Extended private key (xpriv)
 
 In a hierarchical deterministic wallet, all addresses and their matching private keys are derived from this extended private key.
 
-### Extended public key (XPUB, YPUB, ZPUB)
+## Extended public key (xpub, ypub, zpub)
 
 The master public key of a bitcoin account. All public addresses are generated from it.
 
 _ToDo: Explain how this is used for multisig and view-only wallets._
 
-#### YPUB
+### ypub
 
 Same as XPUB however the Y denotes that this xpub belongs to a wallet that is following the [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki) standard that details the derivation scheme for wrapped-segwit addresses (P2WPKH-nested-in-P2SH).
 
-#### ZPUB
+### zpub
 
 Same as YPUB though the Z denotes it is an extended public key from a segregated witness enabled wallet following [BIP84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki).
 
@@ -213,19 +229,40 @@ A standard for multi-signature that uses Schnorr signatures. Previously, the mor
 
 ### Node
 
-Node refers to [software]({{ '/guide/getting-started/software/#nodes' | relative_url }}) that participates in the bitcoin network. It exchanges transaction data with other nodes, stores some or all of it, and verifies that transactions are valid. There is also dedicated [node hardware]({{ '/guide/getting-started/hardware/#hardware-wallets' | relative_url }}).
+A Node refers to a Bitcoin Client that participates in the Bitcoin network.
 
-#### Full node
+### Full nodes
 
-A node that fully verifies all transactions and rules of the Bitcoin network.
+_Also referred to as full client_
+
+A node that fully verifies and enforces all rules of the Bitcoin network. An example of a rule is that there will only ever be 21 million bitcoin.
 
 #### Pruned full node
 
-A node that fully verifies all of the rules of the Bitcoin network with a much smaller storage capacity because it only stores transactions relevant to the users wallet.
+A node that fully verifies and enforces all rules of the Bitcoin network at a much lower storage capacity as it only stores a portion of recent block history. 
 
-#### Archival node
+#### Archival full node
 
-A full node that has not only verified all data, but also stores and provides it to other nodes on the network.
+A node that fully verifies and enforces all rules of the Bitcoin network that stores the entire Bitcoin block chain and sends historical data to other nodes.
+
+### Light nodes
+
+_Also referred to as lightweight client, thin client_
+
+A light node is a Bitcoin client that interacts with the Bitcoin network but does not enforce any of its rules and only downloads data relevant to the user.
+
+#### Simplified payment verification (SPV) node
+
+A Bitcoin client that queries and downloads block headers from full nodes, making it possible for users to verify their transactions without running a full node and storing the entire Bitcoin block chain. 
+
+- [Bitcoin Wiki SPV](https://en.bitcoinwiki.org/wiki/Simplified_Payment_Verification)
+
+#### Neutrino node
+
+A Bitcoin client that uses the Neutrino protocol. The Neutrino protocol uses compact block filters to query and download blocks that contain relevant transaction data involving the users keys. 
+
+- [Bitcoin Optech - block filters](https://bitcoinops.org/en/topics/compact-block-filters/)
+- [GitHub Neutrino repo](https://github.com/lightninglabs/neutrino)
 
 ### Output
 
@@ -274,10 +311,6 @@ The controlling keypair of a bitcoin wallet can be derived from a *recovery phra
 Many wallet-applications work with HD Wallets and recovery phrases, and are interoperable, meaning you can change the application that can control your wallet should you wish (although there are some caveats depending on if they support just BIP32 or also BIP44).
 
 **Technicalities** - Recovery of multisig-wallets needs both the extended public key and the recovery phrase of all paticipating keys as well as the master key fingerprint as defined by BIP32 concatenated with the derivation path of the public key. The derivation path is represented as 32-bit little endian unsigned integer indexes concatenated with each other. The number of 32 bit unsigned integer indexes must match the depth provided in the extended public key.
-
-### Simplified payment verification (SPV)
-
- It is possible to verify bitcoin payments without running a full network node. This is called simplified payment verification, or SPV. A user’s bitcoin spv wallet only needs a copy of the block headers of the longest chain, which are available by querying network nodes until it is apparent that the longest chain has been obtained. SPV lets you validate your transactions without having to worry about anybody else’s transactions. It ensures your transactions are in a block, and it provides confirmations that additional blocks are being added to the chain. An SPV wallet is a type of bitcoin wallet that works this way.
 
 **References:**
 
@@ -372,7 +405,8 @@ With a custodial wallet-application, the users are not exposed to and in charge 
 
 ### Additional resources
 
-- [Bitcoin.org](https://bitcoin.org/en/vocabulary)
+- [Bitcoin.org vocabulary](https://bitcoin.org/en/vocabulary)
+- [Bitcoin.org developer glossary](https://developer.bitcoin.org/glossary.html)
 - [Bitcoin Q + A glossary](https://www.bitcoinqna.com/glossary)
 - [Bitcoin Wiki](https://en.bitcoin.it/wiki/Main_Page)
 - [Bitcoin Optech style guide](https://github.com/bitcoinops/bitcoinops.github.io/blob/master/STYLE.md)
