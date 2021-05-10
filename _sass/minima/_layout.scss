@@ -5,6 +5,7 @@
 
 .page-content {
   flex: 1 0 auto;
+
   @include media-query(large) {
     > .page-content-wrapper {
       display: flex;
@@ -12,7 +13,7 @@
 
       & > .side-bar {
         flex-shrink: 0;
-        flex-basis: 300px;
+        flex-basis: 380px;
       }
 
       & > .main.sidebar {
@@ -129,9 +130,9 @@
   @include relative-font-size(0.8);
 
   @include media-query(medium-down) {
-    margin-top: $spacing-unit / 2;
-    margin-left: $spacing-unit / 2;
-    margin-right: $spacing-unit / 2;
+    margin-top: $spacing-unit/2;
+    margin-left: $spacing-unit/2;
+    margin-right: $spacing-unit/2;
   }
 
   @include media-query(large) {
@@ -139,18 +140,29 @@
   }
 }
 
-
 /**
  * Posts
  */
 
 .main {
-  @include media-query(small) {
-    padding-bottom: $spacing-unit * 2;
+  &.sidebar {
+    @include media-query(small) {
+      padding-bottom: $spacing-unit*2;
+    }
+
+    @include media-query(medium-up) {
+      padding-bottom: $spacing-unit * 6;
+    }
   }
 
-  @include media-query(medium-up) {
-    padding-bottom: $spacing-unit * 6;
+  &:not(.sidebar) {
+    @include media-query(small) {
+      padding-bottom: $spacing-unit;
+    }
+
+    @include media-query(medium-up) {
+      padding-bottom: $spacing-unit*3;
+    }
   }
 
   &:not(.-no-top-padding) {
@@ -159,14 +171,16 @@
     }
 
     @include media-query(medium-up) {
-      padding-top: $spacing-unit * 4;
+      padding-top: $spacing-unit*4;
     }
   }
 }
 
 .post-title,
 .post-content h1,
-article.guide h1 {
+article.guide h1,
+.post-content .h1,
+article.guide .h1 {
   @include relative-font-size(2.625);
   letter-spacing: -1px;
   line-height: 1.15;
@@ -178,7 +192,8 @@ article.guide h1 {
 
 .post-content,
 article.guide {
-  h1 {
+  h1,
+  .h1 {
     margin-top: $spacing-unit * 1;
 
     @include media-query(medium-up) {
@@ -186,7 +201,8 @@ article.guide {
     }
   }
 
-  h2, h3, h4, h5, h6 {
+  h2, h3, h4, h5, h6,
+  .h2, .h3, .h4, .h5, .h6 {
     margin-top: 0;
 
     &::before {
@@ -200,7 +216,8 @@ article.guide {
     }
   }
 
-  h2, h3 {
+  h2, h3,
+  .h2, .h3 {
     &::before {
       height: $spacing-unit * 1;
     }
@@ -213,7 +230,8 @@ article.guide {
     }
   }
 
-  h4, h5, h6 {
+  h4, h5, h6,
+  .h4, .h5, .h6 {
     &::before {
       height: $spacing-unit * 1.5;
       margin-top: -$spacing-unit 1.5;
@@ -226,7 +244,7 @@ article.guide {
     }
   }
 
-  h2 {
+  h2, .h2 {
     @include relative-font-size(1.75);
 
     @include media-query(large) {
@@ -234,7 +252,7 @@ article.guide {
     }
   }
 
-  h3 {
+  h3, .h3 {
     @include relative-font-size(1.375);
 
     @include media-query(large) {
@@ -242,15 +260,15 @@ article.guide {
     }
   }
 
-  h4 {
+  h4, .h4 {
     @include relative-font-size(1.25);
   }
 
-  h5 {
+  h5, .h5 {
     @include relative-font-size(1.125);
   }
 
-  h6 {
+  h6, .h6 {
     @include relative-font-size(1.0625);
   }
 }
@@ -267,7 +285,9 @@ article.guide {
     float: left;
     margin: 5px 10px 5px 0;
 
-    &:last-of-type { margin-right: 0 }
+    &:last-of-type {
+      margin-right: 0
+    }
 
     a {
       display: block;
@@ -276,12 +296,14 @@ article.guide {
       &:hover { border-color: $border-color-02 }
     }
   }
+
   li {
     a, div {
       min-width: 41px;
       text-align: center;
       box-sizing: border-box;
     }
+
     div {
       display: block;
       padding: $spacing-unit / 4;

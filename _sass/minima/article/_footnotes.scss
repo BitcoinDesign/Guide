@@ -1,0 +1,30 @@
+article.guide {
+  .footnotes {
+    padding: $spacing-unit;
+    font-size: 0.8rem;
+    margin-top: $spacing-unit*2;
+    border: 1px solid rgba(var(--front), 0.05);
+    box-sizing: border-box;
+    background: #FDFDFD;
+
+    &::before {
+      content: "REFERENCES";
+      display: block;
+      margin-bottom: $spacing-unit/3;
+      color: var(--frontHex);
+      letter-spacing: 1px;
+    }
+
+    ol {
+      margin: 0;
+      list-style-position: inside;
+
+      li {
+        margin-left: 0;
+        p {
+          display: inline;
+        }
+      }
+    }
+  }
+}

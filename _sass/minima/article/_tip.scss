@@ -1,0 +1,105 @@
+article.guide {
+  .tip,
+  .recommendation {
+    margin-top: $spacing-unit;
+    padding: $spacing-unit/6*5 $spacing-unit/6*5 $spacing-unit/3*2 $spacing-unit/6*5;
+    box-sizing: border-box;
+
+    h6 {
+      margin: 0;
+      padding: 0;
+      font-size: 22px;
+      font-weight: 500;
+
+      &:before {
+        display: none;
+      }
+
+      svg {
+        display: inline-block;
+        margin-right: 10px;
+        background-color: $blue;
+        border-radius: 3px;
+        width: 24px;
+        height: 24px;
+        color: white;
+        vertical-align: middle;
+        transform: translateY(-2px);
+      }
+    }
+
+    p {
+      margin: 10px 0 0 0;
+    }
+
+    &.-red {
+      background-color: rgba($red, 0.1);
+
+      h6 {
+        svg {
+          background-color: $red;
+        }
+      }
+    }
+
+    &.-green {
+      background-color: rgba($green, 0.1);
+
+      h6 {
+        svg {
+          background-color: $green;
+        }
+      }
+    }
+
+    &.-blue {
+      background-color: rgba($blue, 0.1);
+
+      h6 {
+        svg {
+          background-color: $blue;
+        }
+      }
+    }
+
+    &.-orange {
+      background-color: rgba($bitcoin-yellow, 0.1);
+
+      h6 {
+        svg {
+          background-color: $bitcoin-yellow;
+        }
+      }
+    }
+
+    &.-yellow {
+      background-color: rgba($yellow, 0.1);
+
+      h6 {
+        svg {
+          background-color: $yellow;
+        }
+      }
+    }
+  }
+
+  .tip {
+    background-color: rgba($blue, 0.1);
+
+    h6 {
+      svg {
+        background-color: $blue;
+      }
+    }
+  }
+
+  .recommendation {
+    background-color: rgba($bitcoin-yellow, 0.1);
+
+    h6 {
+      svg {
+        background-color: $bitcoin-yellow;
+      }
+    }
+  }
+}

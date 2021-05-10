@@ -1,0 +1,93 @@
+article.guide {
+  dl {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+    dt,
+    dd {
+      display: flex;
+      padding: $spacing-unit/3*2 $spacing-unit;
+      background-color: rgba($blue, 0.1);
+
+      p {
+        margin: 0;
+      }
+
+      &.-green {
+        background-color: rgba($green, 0.1);
+      }
+
+      &.-red {
+        background-color: rgba($red, 0.1);
+      }
+
+      &.-blue {
+        background-color: rgba($blue, 0.1);
+      }
+
+      &.-orange {
+        background-color: rgba($bitcoin-yellow, 0.1);
+      }
+
+      &.-yellow {
+        background-color: rgba($yellow, 0.1);
+      }
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        width: $spacing-unit;
+        height: $spacing-unit;
+      }
+    }
+
+    @include media-query(small) {
+      dt,
+      dd,
+      .icon {
+        flex-basis: 100%;
+      }
+
+      dd {
+        & + dt {
+          margin-top: $spacing-unit/3*2;
+        }
+      }
+
+      .icon {
+        height: $spacing-unit * 2;
+
+        svg {
+          transform: rotate(90deg);
+        }
+      }
+    }
+
+    @include media-query(medium-up) {
+      dt,
+      dd {
+        flex-basis: 30%;
+        flex-grow: 1;
+        margin-top: $spacing-unit/3*2;
+
+        &:first-of-type {
+          margin-top: 0;
+        }
+      }
+
+      .icon {
+        width: $spacing-unit*2;
+        margin-top: $spacing-unit/3*2;
+
+        &:first-of-type {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

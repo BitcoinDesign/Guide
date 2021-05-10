@@ -18,11 +18,7 @@ The differnt types of Bitcoin addresses
 
 # Bitcoin addresses
 
-A Bitcoin address is an identifier of 26-35 alphanumeric characters that is used to receive bitcoin. There are currently three different versions of Bitcoin addresses in use today. From newest to oldest they are; Segwit, Script, and Legacy. It is the best practice for applications to support the newest address version, SegWit, as default.
-
-Each address has a [different format](https://en.bitcoin.it/wiki/List_of_address_prefixes) based on different specifications. Users need to know this information during backup for future recovery so applications should inform users which format it uses as support varies across applications.
-
-When users enter an address, these formats have specific prefixes so it is possible to instantly determine which format is being used.
+A Bitcoin address is an identifier of 26-35 alphanumeric characters that is used to receive bitcoin. There are [several address formats](https://en.bitcoin.it/wiki/List_of_address_prefixes) based on different specifications. Users need to know this information during backup for future recovery so applications should inform users which format it uses as support varies across applications.
 
 Here are some more details about the three most common ones:
 
@@ -32,7 +28,7 @@ Stands for pay-to-pubkey-hash, i.e pay to a hash of the recipient’s public key
 *Legacy addresses* begin with the number 1, can contain upper and lowercase characters, and are case sensitive. <br/>
 For example: `1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2`
 
-**Script addsess - [P2SH](https://en.bitcoin.it/wiki/Pay_to_script_hash)**<br/>
+**Script address - [P2SH](https://en.bitcoin.it/wiki/Pay_to_script_hash)**<br/>
 A script address can have code attached to enable additional rules and functionality. P2SH stands for pay-to-script-hash, and was defined in [BIP13](https://github.com/bitcoin/bips/blob/master/bip-0013.mediawiki).  Script addresses are most commonly used for multi-sig addresses which can specify, for example, that signatures from several keys are required to authorize the transaction.
 
 *Script addresses* start with the number 3, can contain upper and lowercase characters, and are case sensitive. <br/>

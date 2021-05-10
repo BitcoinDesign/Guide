@@ -39,10 +39,10 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 
 ---
 
-## Address
+### Address
 A Bitcoin address is an identifier of 26-35 alphanumeric characters that is used to receive bitcoin. There are currently three different versions of Bitcoin addresses in use today. From newest to oldest they are; Segwit, Script, and Legacy. Read more about the different address types in [foundations]({{ '/guide/foundations/address/' | relative_url }}).
 
-## Account
+### Account
 
 Just like wallet, the term account can also be used for very different things. In bitcoin wallets that follow the hierarchy described in [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki), a bitcoin wallet can have multiple accounts, with each one having its own addresses. However, account is also oftentimes used for accounts with third-party service providers.
 
@@ -51,19 +51,19 @@ Differentiate between
 - Bitcoin wallet account
 - Service account
 
-## Bitcoin / bitcoin
+### Bitcoin / bitcoin
 
 Bitcoin with a capital *B* is typically associated with Bitcoin the protocol and payment network. It is also often used to refer to as the ecosystem as a whole when writing about it in general terms. Bitcoin with a lowercase “b” written as “bitcoin” is usually associated specifically with bitcoin as the currency.
 
-## Bitcoin Client
+### Bitcoin Client
 
 -What is considered a Bitcoin client? I'd suggest it's a software package comprising node / base layer wallet features. [Several other](https://coin.dance/nodes) clients exist besides Bitcoin Core. -Bosch
 
-## Bitcoin Core
+### Bitcoin Core
 
 An open source Bitcoin project that maintains and releases Bitcoin client also referred to as "Bitcoin Core." Bitcoin Core is often considered as the *reference implementation* and serves as the specification of the Bitcoin protocol. It is the continuation of Satoshi Nakamoto's original bitcoin client released on 9th January 2009. More on the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Bitcoin_Core) and [Bitcoin Core website](https://bitcoincore.org/).
 
-## BIP - Bitcoin improvement proposal
+### BIP - Bitcoin improvement proposal
 
 A standardized technical document format for suggesting improvements to Bitcoin. They are hosted on Github [here](https://github.com/bitcoin/bips). Some important proposals to be aware of:
 
@@ -75,7 +75,7 @@ A standardized technical document format for suggesting improvements to Bitcoin.
 - [BIP173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki): *Bech32* standard for native SegWit addresses
 - [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki): Partially Signed Bitcoin Transaction Format
 
-## Coin control
+### Coin control
 
 <div class="center" markdown="1">
 
@@ -96,7 +96,7 @@ As it is possible to trace the history of coins and see how they were previously
 
 </div>
 
-## CoinJoin
+### CoinJoin
 
 <div class="center" markdown="1">
 
@@ -114,7 +114,7 @@ As it is possible to trace the history of coins and see how they were previously
 
 </div>
 
-## Derivation path
+### Derivation path
 
 There are several standards for how to notate the path to a key and corresponding address in [HD wallets](#hd-wallet). It is important to know which ones are used and supported by a wallet-application when importing and exporting a wallet. The most common are:
 
@@ -131,36 +131,37 @@ The path to the first address in a bitcoin-wallet using BIP84 will look like thi
 
 For full [interoperability](/guide/foundations/principles/#interoperability) a wallet should support all of these standards. More information can be found [here](/guide/foundations/wallet-interoperability/#wallet-import-and-export) and [here](https://learnmeabitcoin.com/technical/derivation-paths).
 
-## Extended private key (XPRIV)
+### Extended private key (XPRIV)
 
 In a hierarchical deterministic wallet, all addresses and their matching private keys are derived from this extended private key.
 
-## Extended public key (XPUB, YPUB, ZPUB)
+### Extended public key (XPUB, YPUB, ZPUB)
 
 The master public key of a bitcoin account. All public addresses are generated from it.
 
 _ToDo: Explain how this is used for multisig and view-only wallets._
 
-### YPUB
+#### YPUB
 
 Same as XPUB however the Y denotes that this xpub belongs to a wallet that is following the [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki) standard that details the derivation scheme for wrapped-segwit addresses (P2WPKH-nested-in-P2SH).
 
-### ZPUB
+#### ZPUB
 
 Same as YPUB though the Z denotes it is an extended public key from a segregated witness enabled wallet following [BIP84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki).
 
-## Initial block download (IBD)
+### Initial block download (IBD)
 
 To fully verify that all transactions on the bitcoin network are valid, a full node needs to download and examine all previous block-data. This is called the initial block download, after which the node has caught up with the latest transaction activity. This can take several hours, and only after it is complete can wallets linked to the node be used.
 
-## Input
+### Input
 
 When an address receives bitcoin from another address, this is called an input. Transactions can include multiple inputs.
 
-## Keys
+### Keys
+
 Bitcoin wallets and addresses are have both [public](#public-key) and [private keys](#private-key) associated to them. The private key controls access to funds and the ability to sign (approve) transactions.
 
-## Miniscript
+### Miniscript
 
 A language for writing certain types of Bitcoin Scripts in a structured way. Miniscript is easier to read by developers, and also allows for various build-tools to help ensure that scripts are safe, valid, and efficient.
 
@@ -169,36 +170,39 @@ A language for writing certain types of Bitcoin Scripts in a structured way. Min
 - [Bitcoin Optech](https://bitcoinops.org/en/topics/miniscript/)
 - [Introduction](https://medium.com/blockstream/miniscript-bitcoin-scripting-3aeff3853620) by Blockstream
 
-## Multi-signature wallet (Multisig)
+### Multi-signature wallet (Multisig)
+
 Multi-signature wallets are bitcoin wallets that are controlled by more than one keypair. They can be defined by bitcoin scripts and use P2SH addresses. Common usecases and setups include *2-of-3*, or *3-of-5* multi-signature wallets that require a subset of the controlling keypairs to sign a transaction.
 
-## MuSig
+### MuSig
+
 A standard for multi-signature that uses Schnorr signatures. Previously, the more signers participated in a transaction, the size of the transaction got larger and took more time to verify. It was also possible to see the number of signers in the final transaction. MuSig addresses both issues. It hides the number of signers for better privacy. MuSig also improves scalability by reducing the size of transactions and being more efficient to verify. The [original paper that describes MuSig](https://eprint.iacr.org/2018/068).
 
 **References:**
 
 - [Proposal](https://eprint.iacr.org/2018/068) in the Cryptology ePrint archive
 
-## Node
+### Node
 
 Node refers to [software]({{ '/guide/getting-started/software/#nodes' | relative_url }}) that participates in the bitcoin network. It exchanges transaction data with other nodes, stores some or all of it, and verifies that transactions are valid. There is also dedicated [node hardware]({{ '/guide/getting-started/hardware/#hardware-wallets' | relative_url }}).
 
-### Full node
+#### Full node
 
 A node that fully verifies all transactions and rules of the Bitcoin network.
 
-### Pruned full node
+#### Pruned full node
 
 A node that fully verifies all of the rules of the Bitcoin network with a much smaller storage capacity because it only stores transactions relevant to the users wallet.
 
-### Archival node
+#### Archival node
 
 A full node that has not only verified all data, but also stores and provides it to other nodes on the network.
 
-## Output
+### Output
+
 The opposite of an input, an output is when an address sends bitcoin to another address. Transactions can include multiple outputs.
 
-## Output script descriptor
+### Output script descriptor
 
 A small piece of data that has all the information needed to generate a specific set of addresses or keys. Bundling this data in a standardized format has several benefits. It is harder to forget important configuration details, and it is more efficient than transmitting a long list of addresses or keys.
 
@@ -212,7 +216,8 @@ A small piece of data that has all the information needed to generate a specific
    height = 400
 %}
 
-## Private key
+### Private key
+
 Every bitcoin address has a public key and a corresponding private key, together they are called a keypair. If you have access to both the public and private key, you effectively control the funds in the address. As with HD Wallets there are also keypairs that control *branches* in the hierarchical tree of the wallet, and at the very top is the extended keypair (x-pub and x-prv for short) that control all the addresses in the wallet.
 
 The private key is a 64 hexadecimal (or 256 if described in binary 1’s and 0’s) character string generated by the encryption algorithm. They look something like this in hexadecimal form:
@@ -223,13 +228,15 @@ Or for the extended private key:
 
 `xprv9zrji5mK3nb4RbuR2ZYFtyzK3gn78KnEzkNP4ZxwwPPwcgQQVZqnjTMAGxmmM3jpmfsthQUtfD9iYPvnaqwejCjcyEswLqEhX4LPKNFUXT5`
 
-## Public key
+### Public key
+
 A bitcoin address' public key can be derived from the private key. The address itself is a hash of the public key.
 
-## Replace-by-fee (RBF)
+### Replace-by-fee (RBF)
+
 A node policy that allows an unconfirmed transaction to be replaced with a different transaction that spends at least one of the same inputs and which pays a higher transaction fee. This can sometimes be useful if a transaction has got *stuck* during times of higher-than-normal network-fees.
 
-## Recovery phrase
+### Recovery phrase
 
 _Also referred to as Seed, Mnemonic, and Backup phrase._
 
@@ -239,7 +246,8 @@ Many wallet-applications work with HD Wallets and recovery phrases, and are inte
 
 **Technicalities** - Recovery of multisig-wallets needs both the extended public key and the recovery phrase of all paticipating keys as well as the master key fingerprint as defined by BIP32 concatenated with the derivation path of the public key. The derivation path is represented as 32-bit little endian unsigned integer indexes concatenated with each other. The number of 32 bit unsigned integer indexes must match the depth provided in the extended public key.
 
-## Simplified payment verification (SPV)
+### Simplified payment verification (SPV)
+
  It is possible to verify bitcoin payments without running a full network node. This is called simplified payment verification, or SPV. A user’s bitcoin spv wallet only needs a copy of the block headers of the longest chain, which are available by querying network nodes until it is apparent that the longest chain has been obtained. SPV lets you validate your transactions without having to worry about anybody else’s transactions. It ensures your transactions are in a block, and it provides confirmations that additional blocks are being added to the chain. An SPV wallet is a type of bitcoin wallet that works this way.
 
 **References:**
@@ -247,11 +255,11 @@ Many wallet-applications work with HD Wallets and recovery phrases, and are inte
 - [WabiSabi](https://github.com/zkSNACKs/WabiSabi/blob/master/explainer.md)
 - [Bitcoin wiki](https://en.bitcoin.it/wiki/CoinJoin)
 
-## PayJoin (P2EP)
+### PayJoin (P2EP)
 
 A type of [CoinJoin](#coinjoin) for direct transactions between two parties that makes it harder to understand the ownership of the inputs included in the transaction. The sender creates a partial transaction that the recipient adds another input to. Then the sender broadcasts the transaction. The same amount of bitcoin is transferred as in a simple bitcoin transaction. However, the additional input from the recipient makes it harder to analyze from the outside what happened in the transaction.
 
-## Schnorr signature
+### Schnorr signature
 
 An algorithm to generate cryptographic signatures. One of the benefits is that the size of multi signature transactions can be reduced, resulting in lower fees, and that multisignature transactions will appear equal to single signature, increasing privacy (see [MuSig](#musig)). The code for this improvement was merged in Bitcoin Core in September 2020.
 
@@ -261,31 +269,32 @@ An algorithm to generate cryptographic signatures. One of the benefits is that t
 - [Bitcoin wiki]()
 - [BIP340]()
 
-## Segregated witness (SegWit)
+### Segregated witness (SegWit)
+
 Segregated Witness, or SegWit, is the name for a soft fork change in the transaction format of Bitcoin. It was described in [BIP141](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki). It was intended to mitigate a blockchain size limitation problem that reduces bitcoin transaction speed. It does this by splitting the transaction into two segments, removing the unlocking signature (*witness* data) from the original portion and appending it as a separate structure at the end. The original section hold the sender and receiver data, and the new *witness* structure contain scripts and signatures.
 
-## Taproot
+### Taproot
 
 A technique that makes complex multisig transactions look the same as standard transactions on the blockchain. This improves both efficiency and privacy, as multiple signatures are combined into a single one.
 
-## Transaction
+### Transaction
 *ToDo*
 
-## Unspent transaction output (UTXO)
+### Unspent transaction output (UTXO)
 An output that has not been sent to another address. The bitcoin wallet balance is calculated from adding up unspent outputs.
 
-##  Partially signed bitcoin transaction (PSBT)
+###  Partially signed bitcoin transaction (PSBT)
 A file format for bitcoin transactions that are not fully signed yet. Allows for passing around a transaction to other applications or devices for signing, for example in a multi signature wallet setup.
 
 **References:**
 
 - [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki): Partially Signed Bitcoin Transaction Format
 
-## Vault
+### Vault
 
 A term sometimes used for multi-signature wallets.
 
-## Wallet
+### Wallet
 
 <div class="center">
 
@@ -302,25 +311,25 @@ This term is often used interchangeably for very different things. A user can *d
 
 </div>
 
-### Bitcoin wallet
+#### Bitcoin wallet
 
 All bitcoin-related data derived from and associated with a single recovery phrase. Most modern bitcoin wallets are HD wallets.
 
-### HD wallet
+#### HD wallet
 
 Hierarchical Deterministic wallets, or HD wallets, can create infinite keypairs organized in a tree-structure (hierarchical) from a single (deterministic) controlling keypair. They were introduced and defined in [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) and then expanded with [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) which added the ability to handle multiple *accounts* in one wallet.
 
 **Technicalities** - There are different bitcoin address formats (see [address](#address)). They have to be held in different branches of the HD wallet but can be controlled by the same recovery phrase.
 
-### Hardware wallet
+#### Hardware wallet
 
 A hardware device used to manage a bitcoin wallet. More on the [Hardware overview]({{ '/guide/getting-started/hardware/#hardware-wallets' | relative_url }}) page.
 
-### Wallet application
+#### Wallet application
 
 A software application used to manage a bitcoin wallet. More on the [Hardware overview]({{ '/guide/getting-started/software/#wallets' | relative_url }}) page.
 
-### Non-custodial / Custodial wallet
+#### Non-custodial / Custodial wallet
 
 _Also known as unhosted / self-hosted / hosted wallet._
 
@@ -328,11 +337,11 @@ A non-custodial wallet-application implies that the private key and/or recovery 
 
 With a custodial wallet-application, the users are not exposed to and in charge of securing the recovery phrase. Often custodial wallet-applications require users to sign in with their email and password. Users have to trust the wallet-application makers to secure their recovery phrase and bitcoin. With a custodial wallet-application, the makers of it are technically in control of their users' funds. Most exchanges give users custodial wallets.
 
-### Hot / Cold wallet
+#### Hot / Cold wallet
 
 *Hot* and *cold* describe a wallet in terms of being connected to the internet. Where a hot wallet is connected to the internet, a cold wallet is not. The idea is that a cold wallet is less susceptible to third-party theft over the internet. Most software wallet-application would be seen as hot (although some can be used just for signing on a device not connected to the internet) and most hardware wallet-application would be seen as cold (although they are sometimes connected for signing purposes).
 
-## Additional resources
+### Additional resources
 
 - [Bitcoin.org](https://bitcoin.org/en/vocabulary)
 - [Bitcoin Q + A glossary](https://www.bitcoinqna.com/glossary)
