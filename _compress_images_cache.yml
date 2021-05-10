@@ -569,3 +569,15 @@ assets/images/guide/payments/receive/share.png: share.png
 assets/images/guide/payments/receive/share@2x.png: share@2x.png
 assets/images/guide/payments/receive/share-sharesheet.png: share-sharesheet.png
 assets/images/guide/payments/receive/share-sharesheet@2x.png: share-sharesheet@2x.png
+assets/images/guide/payments/receive/transactions-no-label-context.png: transactions-no-label-context.png
+assets/images/guide/payments/receive/transactions-no-label-context@2x.png: transactions-no-label-context@2x.png
+assets/images/guide/payments/receive/transactions-with-label-context.png: transactions-with-label-context.png
+assets/images/guide/payments/receive/transactions-with-label-context@2x.png: transactions-with-label-context@2x.png
+assets/images/guide/payments/receive/simple-share.png: simple-share.png
+assets/images/guide/payments/receive/simple-share@2x.png: simple-share@2x.png
+assets/images/guide/payments/receive/simple-share-address-settings.png: simple-share-address-settings.png
+assets/images/guide/payments/receive/simple-share-address-settings@2x.png: simple-share-address-settings@2x.png
+assets/images/guide/payments/receive/receive-pending-details.png: receive-pending-details.png
+assets/images/guide/payments/receive/receive-pending-details@2x.png: receive-pending-details@2x.png
+assets/images/guide/payments/receive/receive-with-pending.png: receive-with-pending.png
+assets/images/guide/payments/receive/receive-with-pending@2x.png: receive-with-pending@2x.png
