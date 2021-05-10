@@ -62,4 +62,3 @@ A straigtforward guide to safe manual backups.
 ---
 
 Start at the top with [private key schemes]({{ '/guide/private-key-management/schemes/' | relative_url }}).
-
