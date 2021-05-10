@@ -1,4 +1,3 @@
----
 assets/android-chrome-192x192.png: android-chrome-192x192.png
 assets/android-chrome-512x512.png: android-chrome-512x512.png
 assets/apple-touch-icon.png: apple-touch-icon.png
@@ -547,6 +546,10 @@ assets/images/guide/payments/transactions/transactions-mobile.jpg: transactions-
 assets/images/guide/payments/transactions/transactions-mobile@2x.jpg: transactions-mobile@2x.jpg
 assets/images/guide/onboarding/getting-to-know-your-users-mobile@2x.jpg: getting-to-know-your-users-mobile@2x.jpg
 assets/images/guide/onboarding/getting-to-know-your-users-mobile.jpg: getting-to-know-your-users-mobile.jpg
+assets/images/guide/payments/send/bitcoin-payments@0.5x.jpg: bitcoin-payments@0.5x.jpg
+assets/images/guide/payments/send/bitcoin-payments.jpg: bitcoin-payments.jpg
+assets/images/guide/payments/send/bitcoin-payments-mobile@0.5x.jpg: bitcoin-payments-mobile@0.5x.jpg
+assets/images/guide/payments/send/bitcoin-payments-mobile.jpg: bitcoin-payments-mobile.jpg
 assets/images/home/banner/the-meta-future-mobile.jpg: the-meta-future-mobile.jpg
 assets/images/home/banner/the-meta-future-mobile@2x.jpg: the-meta-future-mobile@2x.jpg
 assets/images/home/banner/the-meta-future.jpg: the-meta-future.jpg
@@ -629,6 +632,9 @@ assets/images/guide/payments/send/first-confirmation-mobile.png: first-confirmat
 assets/images/guide/payments/send/first-confirmation-mobile@2x.png: first-confirmation-mobile@2x.png
 assets/images/home/banner/home-page-banner-template-mobile.jpg: home-page-banner-template-mobile.jpg
 assets/images/home/banner/home-page-banner-template-mobile@2x.jpg: home-page-banner-template-mobile@2x.jpg
+assets/images/guide/payments/send/bitcoin-payments@2x.jpg: bitcoin-payments@2x.jpg
+assets/images/guide/payments/send/bitcoin-payments-mobile@2x.jpg: bitcoin-payments-mobile@2x.jpg
+assets/images/guide/payments/send/bitcoin-payments-social.jpg: bitcoin-payments-social.jpg
 assets/images/guide/payments/receive/address-info.png: address-info.png
 assets/images/guide/payments/receive/address-info@2x.png: address-info@2x.png
 assets/images/guide/payments/receive/address-switch.png: address-switch.png

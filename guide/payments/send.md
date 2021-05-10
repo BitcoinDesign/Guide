@@ -6,15 +6,34 @@ nav_order: 2
 parent: Payments
 permalink: /guide/payments/send/
 main_classes: -no-top-padding
-# image: /assets/images/guide/payments/send/header.svg
+image: /assets/images/guide/payments/send/bitcoin-payments-social.jpg
 ---
 
 <!--
 
-Illustration source:
-https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=1329%3A564
+Editor's notes
+
+Illustration sources
+
+Page artwork: created in Figma.
+Header: Illustration was sketched first, then designed in Adobe Illustrator, and finally textured and resized in Adobe
+Photoshop. The Dropbox link contains the AI and PSD files.
+
+- https://www.dropbox.com/sh/z5qnj2rna7rclae/AAB0dOuiJ3OmJuk7ZXkpbz5ua?dl=0\
+- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=1329%3A564
 
 -->
+
+{% include picture.html
+image = "/assets/images/guide/payments/send/bitcoin-payments.jpg"
+retina = "/assets/images/guide/payments/send/bitcoin-payments@2x.jpg"
+mobile = "/assets/images/guide/payments/send/bitcoin-payments-mobile.jpg"
+mobileRetina = "/assets/images/guide/payments/send/bitcoin-payments-mobile@2x.jpg"
+alt-text = "Illustration of a man and woman exchanging a bitcoin"
+width = 1600
+height = 600
+layout = "full-width"
+%}
 
 # Sending bitcoin
 
