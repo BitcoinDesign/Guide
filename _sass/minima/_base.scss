@@ -186,10 +186,6 @@ blockquote {
   font-weight: 400;
   box-sizing: border-box;
 
-  p {
-
-  }
-
   cite {
     display: inline-block;
     @include responsive('font-size', 16, 22);

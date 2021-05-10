@@ -23,7 +23,7 @@ If you have arrived on this page, you probably noticed that the banner of the ho
 
 ## Make your own
 
-The header follows a fairly simply template. All you need is a square image and a handful of colors to create your own theme. Here is a visual overview.
+The header follows a fairly simply template. All you need is a square image and a handful of colors to create your own theme. In addition, you can set a background image or color for the whole baner. Here is a visual overview.
 
 {% include image.html
    image = "/assets/images/home/banner/template-overview.jpg"
@@ -46,7 +46,7 @@ You will notice that it is not possible to change the type face or layout. We tr
    caption = "The order of the text and image areas can be flipped on mobile"
    layout = "float-right"
    width = 400
-   height = 476
+   height = 415
 %}
 
 You can upload a custom image for mobile. Plus there is one extra option, you can choose the order of the two banner halves.
@@ -58,27 +58,50 @@ You can upload a custom image for mobile. Plus there is one extra option, you ca
 Below are the variable used to configure a theme. These are located in [themes.js](/js/themes.js){:target="_blank"}.
 
 ```javascript
-    copyBackgroundColor: "",
-    bitcoinLogoPath: "/assets/banner-bitcoin-logo.svg",
-    bitcoinLogoFillColor: "",
-    bitcoinLogoOutlineColor: "#000",
-    titleFillColor: "#FFF",
-    titleOutlineColor: "#000",
-    descriptionFillColor: "#000",
-    button1FillColor: "",
-    button1OutlineColor: "#000",
-    button1LabelFillColor: "#000",
-    button2FillColor: "",
-    button2OutlineColor: "#000",
-    button2LabelFillColor: "#000",
-    backgroundImagePath: 'url("/assets/images/home/banner/template.jpg")',
-    backgroundImagePathRetina: 'url("/assets/images/home/banner/template@2x.jpg")',
-    backgroundImagePathMobile: 'url("/assets/images/home/banner/template-mobile.jpg")',
-    backgroundImagePathMobileRetina: 'url("/assets/images/home/banner/template-mobile@2x.jpg")',
-    backgroundImageColor: "#fbfbfb",
+    logo: {
+        path: "/assets/banner-bitcoin-logo.svg",
+        fillColor: "",
+        outlineColor: "#000"
+    },
+    title: {
+        fillColor: "#FFF",
+        outlineColor: "#000"
+    },
+    description: {
+        fillColor: "#000"
+    },
+    button1: {
+        fillColor: "",
+        outlineColor: "#000",
+        labelFillColor: "#000"
+    },
+    button2: {
+        fillColor: "",
+        outlineColor: "#000",
+        labelFillColor: "#000"
+    },
+    background: {
+        path: '',
+        pathRetina: '',
+        pathMobile: '',
+        pathMobileRetina: '',
+        backgroundColor: ''
+    },
+    copy: {
+        backgroundColor: ""
+    },
+    image: {
+        path: 'url("/assets/images/home/banner/template.jpg")',
+        pathRetina: 'url("/assets/images/home/banner/template@2x.jpg")',
+        pathMobile: 'url("/assets/images/home/banner/template-mobile.jpg")',
+        pathMobileRetina: 'url("/assets/images/home/banner/template-mobile@2x.jpg")',
+        backgroundColor: "#fbfbfb"
+    },
     flipLayoutOnMobile: false,
-    author: "Template",
-    authorLink: "https://github.com/BitcoinDesign/Guide/pull/27"
+    author: {
+        name: "Template",
+        link: "https://github.com/BitcoinDesign/Guide/pull/27"
+    }
 ```
 
 ## Getting hands-on
@@ -94,7 +117,7 @@ Once you have an idea for your theme and want to make it real, then the best way
    mobileRetina = "/assets/images/home/banner/figma-preview-mobile@2x.png"
    alt-text = "Preview of the Figma file with the home page banner template"
    width = 800
-   height = 736
+   height = 489
    label = "View Figma file"
 %}
 
