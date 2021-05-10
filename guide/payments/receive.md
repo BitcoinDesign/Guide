@@ -196,7 +196,7 @@ Once the payment details are shared, until the sender creates a transaction and 
    image = "/assets/images/guide/payments/receive/receive-pending-details.png"
    retina = "/assets/images/guide/payments/receive/receive-pending-details@2x.png"
    alt-text = "Screen showing details of an incoming payment that is pending"
-   caption = "It may not be necessary to go into such detail, but consider some users who are new to Bitcoin may not know how transactions get processed."
+   caption = "Consider some users who are new to Bitcoin may not know how its transactions get processed."
    width = 250
    height = 541
 %}
