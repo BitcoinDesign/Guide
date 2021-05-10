@@ -547,6 +547,10 @@ assets/images/guide/payments/transactions/transactions-mobile.jpg: transactions-
 assets/images/guide/payments/transactions/transactions-mobile@2x.jpg: transactions-mobile@2x.jpg
 assets/images/guide/onboarding/getting-to-know-your-users-mobile@2x.jpg: getting-to-know-your-users-mobile@2x.jpg
 assets/images/guide/onboarding/getting-to-know-your-users-mobile.jpg: getting-to-know-your-users-mobile.jpg
+assets/images/guide/payments/send/bitcoin-payments@0.5x.jpg: bitcoin-payments@0.5x.jpg
+assets/images/guide/payments/send/bitcoin-payments.jpg: bitcoin-payments.jpg
+assets/images/guide/payments/send/bitcoin-payments-mobile@0.5x.jpg: bitcoin-payments-mobile@0.5x.jpg
+assets/images/guide/payments/send/bitcoin-payments-mobile.jpg: bitcoin-payments-mobile.jpg
 assets/images/home/banner/the-meta-future-mobile.jpg: the-meta-future-mobile.jpg
 assets/images/home/banner/the-meta-future-mobile@2x.jpg: the-meta-future-mobile@2x.jpg
 assets/images/home/banner/the-meta-future.jpg: the-meta-future.jpg
@@ -648,3 +652,6 @@ assets/images/guide/getting-started/usage-life-cycle/unaware@2x.png: unaware@2x.
 assets/images/guide/getting-started/usage-life-cycle/usage-life-cycle-preview.png: usage-life-cycle-preview.png
 assets/images/guide/getting-started/usage-life-cycle/dropoff.png: dropoff.png
 assets/images/guide/getting-started/usage-life-cycle/dropoff@2x.png: dropoff@2x.png
+assets/images/guide/payments/send/bitcoin-payments@2x.jpg: bitcoin-payments@2x.jpg
+assets/images/guide/payments/send/bitcoin-payments-mobile@2x.jpg: bitcoin-payments-mobile@2x.jpg
+assets/images/guide/payments/send/bitcoin-payments-social.jpg: bitcoin-payments-social.jpg
