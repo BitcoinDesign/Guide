@@ -122,4 +122,6 @@ Every transaction needs to pay a fee to incentivize miners to include it in a bl
 
 Blocks are also limited in size and new ones are created every 10 minutes on average. This means that if you want a transaction to be confirmed in the next block you might have to pay a relatively high price.
 
+---
+
 Next we will cover [sending bitcoin]({{ '/guide/payments/send/' | relative_url }}).
