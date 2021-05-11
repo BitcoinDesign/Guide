@@ -53,9 +53,9 @@ Now let's dive in and look at the various schemes that might be suitable for a p
 
 By using an automatic cloud backup for the private key the user is NOT required to manually backup anything when setting up a new [bitcoin wallet]({{ '/guide/glossary/#bitcoin-wallet' | relative_url }}). This is sometimes also called *seedless*, as the user is never exposed to the traditional *seed*, or [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) that is used to initiate a wallet.
 
-This scheme can be used for those new to bitcoin, or novices who would find manually backing up a recovery phrase during onboarding confusing, possibly leading to unsafe backups. It could also be a starting point for a progressive security model that lets customers upgrade when they start accumulating more funds.
+This scheme is ideal for those new to bitcoin who may find manually backing up a recovery phrase during onboarding confusing, possibly leading to unsafe backups, hot or spending wallets which store private keys locally and who's security model does not require a manual backup, or be a starting point for a progressive security model that lets customers upgrade when they start accumulating more funds.
 
-The automatic cloud backup scheme gives users reasonable security against theft, while providing low risk for self-inflicted losses.
+The automatic cloud backup scheme gives users reasonable security against theft whilst providing low risk for self-inflicted losses and a more seamless user experience for spending wallets of which a manual backup may be unnecessary.
 
 {% include image.html
    image = "/assets/images/guide/private-key-management/schemes/cloud-backup.jpg"
@@ -95,6 +95,7 @@ This makes the backup accessible by the user on a new device, should they lose t
 - When risk of self-inflicted loss is higher than loss from theft
 - For beginners, or products with progressive security
 - For lower values
+- For hot or spending wallets that store their private keys locally
 
 **When not to use**
 - When storing high values
