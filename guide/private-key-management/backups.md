@@ -72,13 +72,13 @@ Let’s look at some real life examples of backup methods for single-key wallets
    layout = "full-width"
 %}
 
-{% include rec-open.html %}
+{% include tip/recommendation.html %}
 
 Level 0 and 1 are good when getting started, and require very little effort.
 
 Level 2, 3 or 4 are recommended for storing larger amounts.
 
-{% include rec-close.html %}
+{% include tip/close.html %}
 
 <br>
 
