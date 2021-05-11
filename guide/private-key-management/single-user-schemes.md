@@ -132,9 +132,9 @@ This scheme is suitable for users who are already familiar with bitcoin and proc
 ### How it works
 The wallet application will generate a 12 or 24 word phrase (seed / [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }})) from which all the wallet’s [keys]({{ '/guide/glossary/#keys' | relative_url }}) can be derived. This means the user can have access to the wallet from any compatible wallet application with the phrase, even if they lose the device or software.
 
-This can be an effective way to reduce the risk of loss from theft if the backup is offline in a safe place, but puts more of the op-sec burden on the individual user. The security and risk will only be as good as how they backup the recovery phrase. You need to take resistance to physical theft, fire and other destructive events into account. To get the best security out of recovery phrases they should be kept on several dedicated [metal storage pieces](https://jlopp.github.io/metal-bitcoin-storage-reviews/) in secure places offline. A fair amount of effort and knowledge is required for this.
+This can be an effective way to reduce the risk of loss from theft if the backup is offline in a safe place, but puts more of the burden on the individual user. The security and risk will only be as good as how they backup the recovery phrase.
 
-A full guide to manual backup best practices for users is out of scope for this chapter but the [Do's and Dont's](https://blog.keys.casa/the-dos-and-donts-of-bitcoin-key-management/)  of Bitcoin key management is a good starting point.
+Safe backups can be made fairly simple, take a look at our [Bitcoin backups](https://blog.keys.casa/the-dos-and-donts-of-bitcoin-key-management/) guide as good starting point.
 
 {% include fact/pros.html %}
 
