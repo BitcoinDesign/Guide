@@ -57,7 +57,7 @@ An introduction to some of the common private key management schemes for shared 
 
 ### [Bitcoin backups]({{ '/guide/private-key-management/backups/' | relative_url }})
 
-A straigtforward guide to safe manual backups.
+A straightforward guide to safe manual backups.
 
 ---
 
