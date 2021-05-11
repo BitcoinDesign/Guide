@@ -81,4 +81,4 @@ Few tailor-made products exist for shared wallets, but any wallet application th
 
 ---
 
-OK, let's have a look at [payments]({{ '/guide/payments/' | relative_url }}).
+OK, to end this chapter let's have a look at how to do safe [Bitcoin backups]({{ '/guide/private-key-management/backups/' | relative_url }}).

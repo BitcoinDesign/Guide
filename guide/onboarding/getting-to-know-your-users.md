@@ -9,10 +9,10 @@ main_classes: -no-top-padding
 ---
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/getting-to-know-your-users.jpeg"
-   retina = "/assets/images/guide/onboarding/getting-to-know-your-users@2x.jpeg"
-   mobile = "/assets/images/guide/onboarding/getting-to-know-your-users-mobile.jpeg"
-   mobileRetina = "/assets/images/guide/onboarding/getting-to-know-your-users-mobile@2x.jpeg"
+   image = "/assets/images/guide/onboarding/getting-to-know-your-users/banner.jpeg"
+   retina = "/assets/images/guide/onboarding/getting-to-know-your-users/banner@2x.jpeg"
+   mobile = "/assets/images/guide/onboarding/getting-to-know-your-users/banner-mobile.jpeg"
+   mobileRetina = "/assets/images/guide/onboarding/getting-to-know-your-users/banner-mobile@2x.jpeg"
    alt-text = "Getting to know your users chapter illustration"
    width = 1600
    height = 600
@@ -23,7 +23,6 @@ main_classes: -no-top-padding
 When building onboarding experiences, it is important to understand and develop knowledge about your users upfront.
 Within the Bitcoin ecosystem, there is a wide range in the level of expertise. Identifying who you are building for is crucial, as these user groups value and understand varying characteristics of coin and key management tools. For example, “rookies” often favor convenient, easy-to-use wallets, while well-versed bitcoin owners tend to prioritize security[^1].
 
----
 
 ## Observe your potential users
 This observation could take the form of [user research]({{ 'guide/getting-started/user-research/' | relative_url }}), user interviews and surveys aimed at a range of participants to observe and identify what they do, how they think, and what they want. Let's consider some things you might want to ask yourself when improving the onboarding experience for new users:
@@ -40,7 +39,6 @@ Perhaps after research, you identify your users as "cypherpunks" with sound know
 
 Aim to gather as much information and observations as possible in order to empathize with your users.
 
----
 
 ## Identify barriers and motivators they have
 You can then use this research to identify where potential problems may exist. This will then allow you to highlight opportunities for innovation.
@@ -64,7 +62,7 @@ Motivators are specific user wants that are driving the user to seek out Bitcoin
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/onboarding/strongest-barrier-battery.svg"
+   image = "/assets/images/guide/onboarding/getting-to-know-your-users/strongest-barrier-battery.svg"
    alt-text = "strongest barrier"
    width = 100
    height = 100
@@ -80,7 +78,7 @@ Motivators are specific user wants that are driving the user to seek out Bitcoin
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/onboarding/neutral-barrier-battery.svg"
+   image = "/assets/images/guide/onboarding/getting-to-know-your-users/neutral-barrier-battery.svg"
    alt-text = "neutral barrier"
    width = 100
    height = 100
@@ -96,7 +94,7 @@ Motivators are specific user wants that are driving the user to seek out Bitcoin
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/onboarding/lowest-barrier-battery.svg"
+   image = "/assets/images/guide/onboarding/getting-to-know-your-users/lowest-barrier-battery.svg"
    alt-text = "neutral barrier"
    width = 100
    height = 100
@@ -115,7 +113,7 @@ Motivators are specific user wants that are driving the user to seek out Bitcoin
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/onboarding/highest-motivator-battery.svg"
+   image = "/assets/images/guide/onboarding/getting-to-know-your-users/highest-motivator-battery.svg"
    alt-text = "neutral barrier"
    width = 100
    height = 100
@@ -131,7 +129,7 @@ Motivators are specific user wants that are driving the user to seek out Bitcoin
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/onboarding/neutral-motivator-battery.svg"
+   image = "/assets/images/guide/onboarding/getting-to-know-your-users/neutral-motivator-battery.svg"
    alt-text = "neutral barrier"
    width = 100
    height = 100
@@ -147,7 +145,7 @@ Motivators are specific user wants that are driving the user to seek out Bitcoin
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/onboarding/lowest-motivator-battery.svg"
+   image = "/assets/images/guide/onboarding/getting-to-know-your-users/lowest-motivator-battery.svg"
    alt-text = "neutral barrier"
    width = 100
    height = 100
@@ -158,7 +156,6 @@ Motivators are specific user wants that are driving the user to seek out Bitcoin
 
 </div>
 
----
 
 ## Brainstorm solutions with your team
 With this information, you can craft solutions based on these barriers and motivators to create the best experience for a user like Josh.
@@ -174,7 +171,6 @@ This is a good opportunity to circle back and find out deeper things about a use
 
 It's important to allow you and your team to be as free and creative about how you might solve these unmet needs. No idea is too "out there". Gather as many ideas as possible and build upon each other's ideas as you move along. Also, look for existing research and findings to compare against what you have found and check for any similarities.
 
----
 
 ## Prototype & Test
 Next, you can think about prototyping a subset of these ideas and understanding your ideas' feasibility through feedback on these prototypes. Put your prototypes in front of real users and test to verify the solution meets the users' needs.
@@ -187,3 +183,7 @@ Ultimately the goal of onboarding is that users trust the application, feel comf
 [^2]:[Bitcoin Perspectives Survey](https://docs.google.com/forms/d/e/1FAIpQLSdzT8cb54NgT7hGUnC_5ow6rDy-A9p_CA-5ptiQxrG8wQWvzQ/viewform)
 [^3]:[Bitcoin UX interviews](https://github.com/patestevao/Bitcoin-UX-interviews/blob/main/call-for-participants.md)
 [^4]:[Bitcoin Wallet UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=616%3A0)
+
+---
+
+Next, we will cover [creating a new wallet]({{ '/guide/onboarding/creating-a-new-wallet/' | relative_url }}).
