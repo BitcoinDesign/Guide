@@ -235,7 +235,9 @@ As the risk of discovery increases with the multiplying backups, it's best to ma
 
 <br>
 
-# Inheritance instructions
+---
+
+## Inheritance instructions
 For any backup setup, sufficient information and understandable instructions for recovering the wallet should be available to next-of-kin.  
 
 Even though it might feel uncomfortable (or unnecessary if you are young and single), it is never too early to document your wallets. If you don’t, there is a very high chance that next-of-kin will not be able to inherit your funds. 
