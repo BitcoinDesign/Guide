@@ -88,8 +88,8 @@ Level 2, 3 or 4 are recommended for storing larger amounts.
 By storing the recovery-phrase in an online location that is encrypted (not in plain text) and hard to access by anyone other than yourself, you are protected against *loss of wallet*. This is the absolute minimum you should do and only takes a few minutes.
 
 {% include image.html
-   image = "/assets/images/guide/private-key-management/backups/cloudbackup.png"
-   retina = "/assets/images/guide/private-key-management/backups/cloudbackup@2x.png"
+   image = "/assets/images/guide/private-key-management/backups/cloud-backup.jpg"
+   retina = "/assets/images/guide/private-key-management/backups/cloud-backup@2x.jpg"
    alt-text = "Encrypted cloud backup"
 %}
 
@@ -114,8 +114,8 @@ By storing the recovery-phrase written down on paper in your own home you have p
 
 
 {% include image.html
-   image = "/assets/images/guide/private-key-management/backups/paperbackup.png"
-   retina = "/assets/images/guide/private-key-management/backups/paperbackup@2x.png"
+   image = "/assets/images/guide/private-key-management/backups/paperbackup.jpg"
+   retina = "/assets/images/guide/private-key-management/backups/paperbackup@2x.jpg"
    alt-text = "24 word paper backup"
 %}
 
@@ -144,8 +144,8 @@ The best metal backup solutions are resistant to most physical damage, including
 
 
 {% include image.html
-   image = "/assets/images/guide/private-key-management/backups/metalbackup.png"
-   retina = "/assets/images/guide/private-key-management/backups/metalbackup@2x.png"
+   image = "/assets/images/guide/private-key-management/backups/metalbackup.jpg"
+   retina = "/assets/images/guide/private-key-management/backups/metalbackup@2x.jpg"
    alt-text = "Metal backup"
 %}
 
@@ -183,8 +183,8 @@ Since adding a pass-phrase will generate a different wallet, it is best to add i
 It's worth noting that most hardware wallets support pass-phrases, while most software wallet applications do not.
 
 {% include image.html
-   image = "/assets/images/guide/private-key-management/backups/offline-discoveryprotection.png"
-   retina = "/assets/images/guide/private-key-management/backups/offline-discoveryprotection@2x.png"
+   image = "/assets/images/guide/private-key-management/backups/offline-discoveryprotection.jpg"
+   retina = "/assets/images/guide/private-key-management/backups/offline-discoveryprotection@2x.jpg"
    alt-text = "Offline backup with discovery protection"
 %}
 
@@ -217,8 +217,8 @@ To protect against such a *catastrophic event* we can create multiple backups, a
 As the risk of discovery increases with the multiplying backups, it's best to maintain the protection against theft on discovery with a pass-phrase, or hardware wallets with a PIN. 
 
 {% include image.html
-   image = "/assets/images/guide/private-key-management/backups/multiple-discoveryprotection.png"
-   retina = "/assets/images/guide/private-key-management/backups/multiple-discoveryprotection@2x.png"
+   image = "/assets/images/guide/private-key-management/backups/multiple-discoveryprotection.jpg"
+   retina = "/assets/images/guide/private-key-management/backups/multiple-discoveryprotection@2x.jpg"
    alt-text = "Multiple offline backups with discovery protection"
 %}
 
