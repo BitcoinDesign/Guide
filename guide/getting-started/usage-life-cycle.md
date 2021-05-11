@@ -5,7 +5,7 @@ nav_order: 8
 parent: Getting started
 permalink: /guide/getting-started/usage-life-cycle/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/getting-started/usage-life-cycle/usage-life-cycle-preview.jpg
+image: https://bitcoin.design/assets/images/guide/getting-started/usage-life-cycle/usage-life-cycle-preview.png
 ---
 
 <!--
@@ -22,10 +22,10 @@ Illustration sources
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/getting-started/usage-life-cycle/usage-life-cycle.jpg"
-   retina = "/assets/images/guide/getting-started/usage-life-cycle/usage-life-cycle@2x.jpg"
-   mobile = "/assets/images/guide/getting-started/usage-life-cycle/usage-life-cycle-mobile.jpg"
-   mobileRetina = "/assets/images/guide/getting-started/usage-life-cycle/usage-life-cycle-mobile@2x.jpg"
+   image = "/assets/images/guide/getting-started/usage-life-cycle/usage-life-cycle.png"
+   retina = "/assets/images/guide/getting-started/usage-life-cycle/usage-life-cycle@2x.png"
+   mobile = "/assets/images/guide/getting-started/usage-life-cycle/usage-life-cycle-mobile.png"
+   mobileRetina = "/assets/images/guide/getting-started/usage-life-cycle/usage-life-cycle-mobile@2x.png"
    alt-text = "Abstract illustrations of phases in the usage life cycle"
    caption = ""
    width = 1600
@@ -45,9 +45,9 @@ The following six sections outline different phases of a typical usage life cycl
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/usage-life-cycle/unaware.jpg"
-   retina = "/assets/images/guide/getting-started/usage-life-cycle/unaware@2x.jpg"
-   alt-text = "Coffee icon"
+   image = "/assets/images/guide/getting-started/usage-life-cycle/unaware.png"
+   retina = "/assets/images/guide/getting-started/usage-life-cycle/unaware@2x.png"
+   alt-text = "Closed eye icon"
    width = 100
    height = 100
    layout = "float-left"
@@ -62,9 +62,9 @@ Every user starts here and most remain in this phase. At this point, they have n
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/usage-life-cycle/aware.jpg"
-   retina = "/assets/images/guide/getting-started/usage-life-cycle/aware@2x.jpg"
-   alt-text = "Coffee icon"
+   image = "/assets/images/guide/getting-started/usage-life-cycle/aware.png"
+   retina = "/assets/images/guide/getting-started/usage-life-cycle/aware@2x.png"
+   alt-text = "Half-open eye icon"
    width = 100
    height = 100
    layout = "float-left"
@@ -79,9 +79,9 @@ A user hears about the service for the first time. This could be via word-of-mou
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/usage-life-cycle/interested.jpg"
-   retina = "/assets/images/guide/getting-started/usage-life-cycle/interested@2x.jpg"
-   alt-text = "Coffee icon"
+   image = "/assets/images/guide/getting-started/usage-life-cycle/interested.png"
+   retina = "/assets/images/guide/getting-started/usage-life-cycle/interested@2x.png"
+   alt-text = "Wide open eye icon"
    width = 100
    height = 100
    layout = "float-left"
@@ -96,9 +96,9 @@ A user becomes interested in your product. Maybe they have heard about it severa
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/usage-life-cycle/first-use.jpg"
-   retina = "/assets/images/guide/getting-started/usage-life-cycle/first-use@2x.jpg"
-   alt-text = "Coffee icon"
+   image = "/assets/images/guide/getting-started/usage-life-cycle/first-use.png"
+   retina = "/assets/images/guide/getting-started/usage-life-cycle/first-use@2x.png"
+   alt-text = "Power button icon"
    width = 100
    height = 100
    layout = "float-left"
@@ -113,9 +113,9 @@ The user tries the service for the first time. They made an intentional decision
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/usage-life-cycle/repeat-use.jpg"
-   retina = "/assets/images/guide/getting-started/usage-life-cycle/repeat-use@2x.jpg"
-   alt-text = "Coffee icon"
+   image = "/assets/images/guide/getting-started/usage-life-cycle/repeat-use.png"
+   retina = "/assets/images/guide/getting-started/usage-life-cycle/repeat-use@2x.png"
+   alt-text = "Loader icon"
    width = 100
    height = 100
    layout = "float-left"
@@ -130,9 +130,9 @@ Through repeat use, the user becomes more familiar with the service and starts u
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/usage-life-cycle/passionate-use.jpg"
-   retina = "/assets/images/guide/getting-started/usage-life-cycle/passionate-use@2x.jpg"
-   alt-text = "Coffee icon"
+   image = "/assets/images/guide/getting-started/usage-life-cycle/passionate-use.png"
+   retina = "/assets/images/guide/getting-started/usage-life-cycle/passionate-use@2x.png"
+   alt-text = "Heart icon"
    width = 100
    height = 100
    layout = "float-left"
@@ -149,9 +149,9 @@ These are expert users with high expectations. They will express strong wishes, 
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/usage-life-cycle/dropoff.jpg"
-   retina = "/assets/images/guide/getting-started/usage-life-cycle/dropoff@2x.jpg"
-   alt-text = "Coffee icon"
+   image = "/assets/images/guide/getting-started/usage-life-cycle/dropoff.png"
+   retina = "/assets/images/guide/getting-started/usage-life-cycle/dropoff@2x.png"
+   alt-text = "Bar chart showing users dropping off in the usage life cycle"
    width = 400
    height = 400
    layout = "float-right-desktop"
