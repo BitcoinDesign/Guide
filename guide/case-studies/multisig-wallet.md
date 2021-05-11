@@ -4,8 +4,33 @@ title: Checking account
 nav_order: 2
 parent: Case studies
 permalink: /guide/case-studies/multisig-wallet/
-main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/getting-started/getting-started-preview.jpg
+image_base: /assets/images/guide/case-studies/multisig-wallet/
+images:
+    - file: first
+      alt: A mobile Bitcoin wallet landing scree.
+      caption: Cover screen with a clear statement of the application purpose.
+    - file: second
+      alt: Mobile app screen with text and user options to create or import a wallet.
+      caption: Introduction to the security concept with clear next steps.
+    - file: create-multi-key-wallet
+      alt: Mobile app screen with 3 steps to create main, signing, and recovery keys.
+      caption: A 3-step process is used to guide the user through the key setup.
+    - file: create-signing-key
+      alt: 3-step screen with the second step expanded
+      caption: The second key is created on a user-controlled external device to avoid a single point of failure.
+    - file: external-device-setup
+      alt: Mobile app screen that tells the user to connect a hardware wallet.
+      caption: Guides the user through the process of connecting a hardware wallet.
+    - file: create-recovery-key
+      alt: 3-step screen with the third step expanded
+      caption: The third key is stored on the servers of the application provider.
+    - file: creation-complete
+      alt: Mobile app screen confirming successful wallet creation.
+      caption: Let users know that the setup process was successful.
+    - file: home
+      alt: Mobile app screen for the main wallet overview
+      caption: Once the wallet is set up, users are ready to go.
 ---
 
 <!--
@@ -55,5 +80,29 @@ Should they lose either their main mobile device, or the purpose-built signing d
 - Complexities of multi-key setups
 - Implement thorough backup code and instructions for users
 - Usage could be simplified by having hardware device designed/customized by the software maker (compare banks and their digital token signers common in Europe)
+
+### Design details
+
+The wireframe screens below show the main onboarding sequence that guides users through the creation of multisig wallet.
+
+<div class="image-slide-gallery">
+
+{% for item in page.images %}
+
+{% capture imageURL %}{{ page.image_base }}{{ item.file }}.png{% endcapture %}
+{% capture imageURLRetina %}{{ page.image_base }}{{ item.file }}@2x.png{% endcapture %}
+
+{% include picture.html
+   image = imageURL
+   retina = imageURLRetina
+   alt-text = item.alt
+   caption = item.caption
+   width = 250
+   height = 541
+   layout = "shadow"
+%}
+{% endfor %}
+
+</div>
 
 You can find a prototype for this case study linked in the image above, and a Figma file with [outline designs here](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=6%3A9).
