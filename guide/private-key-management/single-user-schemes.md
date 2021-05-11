@@ -53,7 +53,7 @@ Now let's dive in and look at the various schemes that might be suitable for a p
 
 By using an automatic cloud backup for the private key the user is NOT required to manually backup anything when setting up a new [bitcoin wallet]({{ '/guide/glossary/#bitcoin-wallet' | relative_url }}). This is sometimes also called *seedless*, as the user is never exposed to the traditional *seed*, or [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) that is used to initiate a wallet.
 
-This scheme is ideal for those new to Bitcoin who may find manually backing up a recovery phrase during onboarding confusing, possibly leading to unsafe backups, hot or spending wallets which store private keys locally and who's security model does not require a manual backup, or be a starting point for a progressive security model that lets customers upgrade when they start accumulating more funds.
+Automatic cloud backups can be useful for a variety of user experience levels. New Bitcoin users will likely find this method more frictionless. For new users, manual backups may actually be less secure as the process is likely foreign to them. This can lead to writing down or storing the backup in an unsafe manner. More experienced users can also make use of this scheme.  Wallets that store private keys locally, also known as hot or spending wallets, likely don't need the security manual backups offer. This scheme may also bridge the gap between new and experienced users. A security model may start new users with an automatic cloud backup. Then over time shift users to more secure scheme as they accumulate more bitcoin.
 
 The automatic cloud backup scheme gives users reasonable security against theft whilst providing low risk for self-inflicted losses and a more seamless user experience for spending wallets of which a manual backup may be unnecessary.
 
@@ -68,7 +68,6 @@ The automatic cloud backup scheme gives users reasonable security against theft 
 
 ### How it works
 First the application generates a wallet with a keypair. Then, the key is encrypted and backed up to a location convenient and safe for the user, yet hard for a malicious third-party to gain access to.
-
 
 With most implementations so far, the location will be the keychain or a user-specific key-value-store on a mobile device that is also backed up by the OS provider. The most common would be iOS (iCloud) and Android (Google Drive) which both have secure data storage that is backed up and synced between a user's devices.
 
