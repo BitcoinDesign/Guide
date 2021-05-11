@@ -28,11 +28,11 @@ A common practice for wallets is to have a barrier (i.e. Touch ID, PINs, etc.) t
    layout = "float-left-desktop -background -shadow"
 %}
 
-One convenient way for users to verify their identity to unlock your wallet app is with biometrics. This could take form either through touch or face ID.
+One convenient way for users to verify their identity to unlock your wallet app is with biometrics. This could take the form of either touch or face ID.
 
-Pros: Users of Android and iOS devices are super familiar with these motions. More importantly, using biometrics does not require the user to remember anything, furthermore decreasing their chances of getting locked out of their wallet.
+Users of Android and iOS devices are super familiar with these motions. More importantly, using biometrics does not require the user to remember anything, furthermore decreasing their chances of getting locked out of their wallet.
 
-Cons: Unfortunately, biometrics are not supported on all mobile devices. Hardcore security users may be wary about giving up their biometric information.
+Unfortunately, biometrics are not supported on all mobile devices. Hardcore security users may be wary about giving up their biometric information.
 
 </div>
 
@@ -44,7 +44,7 @@ Bitcoin wallet users may feel hesitant about the privacy implications of your pr
 
 ### PIN
 
-A PIN is one of the most common and traditional methods for securing a mobile application. This setup requires that users creat a 4-6 digit PIN that must be entered when opening their wallet application, or when viewing sensitive information such as their recovery phrase.
+A PIN is one of the most common and traditional methods for securing a mobile application. This setup requires that users create a 4-6 digit PIN that must be entered when opening their wallet application, or when viewing sensitive information such as their recovery phrase.
 
 <div class="image-slide-gallery">
 
@@ -66,12 +66,14 @@ A PIN is one of the most common and traditional methods for securing a mobile ap
 
 </div>
 
-Pros: PIN-based approaches can be supported by all devices, and therefore is more accessible. A PIN can also be used to encrypt data within a wallet, which makes any locally stored information on the device inaccessible. Additionally, some users prefer this type of security measure because they use the same or similiar PINs on multiple applications/devices, making it easy to remember.
+The PIN-based approaches can be supported by all devices, and therefore is more accessible. A PIN can also be used to encrypt data within a wallet, which makes any locally stored information on the device inaccessible. Additionally, some users prefer this type of security measure because they use the same or similiar PINs on multiple applications/devices, making it easy to remember.
 
-Cons: Users with poor security practices might create easy-to-guess PINs (such as 1234), which would decrease the level of security. This design also relies on users to remember their PIN correctly.
+However, users with poor security practices might create easy-to-guess PINs (such as 1234), which would decrease the level of security. This design also relies on users to remember their PIN correctly.
 
 {% include tip/open.html color="green" icon="check" label="Do: Educate on Good Security Practices" %}
 
 Within your product upon PIN creation, tell your users what a good, secure PIN is (i.e. not their birthday). Recommend against (or even make it impossible) to create a PIN such as 1234, 1111, etc.
 
 {% include tip/close.html %}
+
+Now let's look at the different ways a user might go about [funding a wallet]({{ 'guide/onboarding/funding-a-wallet' | relative_url }}).
