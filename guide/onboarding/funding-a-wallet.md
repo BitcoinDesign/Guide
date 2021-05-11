@@ -14,7 +14,7 @@ Common problems faced by new users include buying their first bitcoin and transf
 
 ### Earning bitcoin
 
-Some users may choose to accept bitcoin as a form of payment. Many people already started accepting bitcoin for their work. Some employers might also choose to pay part of their staff's salary in bitcoin. This is one way to fill a wallet.
+Some users may choose to accept bitcoin as a form of payment. Many people already started accepting bitcoin for their work. Some employers might also choose to pay part of their staff's salary in bitcoin. This is one way to fund a wallet.
 
 > Fun Fact 🏈: Former Seattle Seahawk Russel Okung puts half of his salary in Bitcoin and is now considered one of the highest paid players in the league.
 >
@@ -48,7 +48,7 @@ As noted, most exchanges offer the option to buy bitcoin using fiat currencies. 
 
 Bitcoin ATMs are another great option for new users to exchange cash for bitcoin in person. These machines also let users trade their bitcoin for cash, which can be useful if they are somewhere new or foreign.
 
-Finally, new users can buy bitcoin directly from other bitcoin users such as friends, other users at a meetup, or intermediary services like localbitcoins.
+Finally, new users can buy bitcoin directly from other bitcoin users such as friends, other users at a meetup, or intermediary services like [localbitcoins](https://localbitcoins.com/).
 
 </div>
 
@@ -70,13 +70,13 @@ Cons:
 
 Gift cards allow users to buy and own small amounts of bitcoin without having to sign up for an exchange. These cards are sometimes available from local retailers.
 
-Rise Wallet is a good case study showing how users can get set up in minutes using this technique.
+Users can get set up in minutes using this technique.
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/funding-a-wallet/rise-redeem-gift-cards.png"
-   retina = "/assets/images/guide/onboarding/funding-a-wallet/rise-redeem-gift-cards@2x.png"
-   alt-text = "Rise Wallet gift cards"
-   caption = "Rise Wallet gift cards"
+   image = "/assets/images/guide/onboarding/funding-a-wallet/bitcoin-gift-cards.png"
+   retina = "/assets/images/guide/onboarding/funding-a-wallet/bitcoin-gift-cards@2x.png"
+   alt-text = "Bitcoin gift cards"
+   caption = "Bitcoin gift cards"
    width = 800
    height = 500
 %}
