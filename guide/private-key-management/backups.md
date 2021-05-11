@@ -34,7 +34,7 @@ Illustration sources
 
 # Bitcoin backups
 
-The self-custody of bitcoin is an important right, but also a financial responsibility that can scale from pocket money to life savings, and take practice getting used to.
+The self-custody of Bitcoin is an important right, but also a financial responsibility that can scale from pocket money to life savings, and take practice getting used to.
 
 This guide is a straightforward starting point for simple Bitcoin backups, aimed at users of Bitcoin products.
 
