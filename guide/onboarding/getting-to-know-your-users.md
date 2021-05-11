@@ -187,3 +187,7 @@ Ultimately the goal of onboarding is that users trust the application, feel comf
 [^2]:[Bitcoin Perspectives Survey](https://docs.google.com/forms/d/e/1FAIpQLSdzT8cb54NgT7hGUnC_5ow6rDy-A9p_CA-5ptiQxrG8wQWvzQ/viewform)
 [^3]:[Bitcoin UX interviews](https://github.com/patestevao/Bitcoin-UX-interviews/blob/main/call-for-participants.md)
 [^4]:[Bitcoin Wallet UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=616%3A0)
+
+---
+
+Next, we will cover [creating a new wallet]({{ '/guide/onboarding/creating-a-new-wallet/' | relative_url }}).
