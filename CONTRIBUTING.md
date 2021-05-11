@@ -9,7 +9,7 @@ When you are ready for your pull request to be reviewed, make sure to go through
 - [ ] Social image in frontmatter is 1200px x 630px
 - [ ] Heavily textured images/photos are `.jpg`
 
-This isn't an extensive list, here are resoruces that go more in depth:
+This isn't an extensive list, here are resources that go more in depth:
 - [Illustration guidelines](https://bitcoin.design/guide/contribute/illustration-guidelines/)
 - [Content guidelines](https://bitcoin.design/guide/contribute/content-guidelines/)
 - [Formatting](https://bitcoin.design/guide/contribute/formatting/)
