@@ -91,6 +91,8 @@ By storing the recovery-phrase in an online location that is encrypted (not in p
    image = "/assets/images/guide/private-key-management/backups/cloud-backup.jpg"
    retina = "/assets/images/guide/private-key-management/backups/cloud-backup@2x.jpg"
    alt-text = "Encrypted cloud backup"
+   width = 800
+   height = 420
 %}
 
 **Do**
@@ -117,6 +119,8 @@ By storing the recovery-phrase written down on paper in your own home you have p
    image = "/assets/images/guide/private-key-management/backups/paperbackup.jpg"
    retina = "/assets/images/guide/private-key-management/backups/paperbackup@2x.jpg"
    alt-text = "24 word paper backup"
+   width = 800
+   height = 508
 %}
 
 
@@ -147,6 +151,8 @@ The best metal backup solutions are resistant to most physical damage, including
    image = "/assets/images/guide/private-key-management/backups/metalbackup.jpg"
    retina = "/assets/images/guide/private-key-management/backups/metalbackup@2x.jpg"
    alt-text = "Metal backup"
+   width = 800
+   height = 440
 %}
 
 
@@ -186,6 +192,8 @@ It's worth noting that most hardware wallets support pass-phrases, while most so
    image = "/assets/images/guide/private-key-management/backups/offline-discoveryprotection.jpg"
    retina = "/assets/images/guide/private-key-management/backups/offline-discoveryprotection@2x.jpg"
    alt-text = "Offline backup with discovery protection"
+   width = 800
+   height = 420
 %}
 
 
@@ -220,6 +228,8 @@ As the risk of discovery increases with the multiplying backups, it's best to ma
    image = "/assets/images/guide/private-key-management/backups/multiple-discoveryprotection.jpg"
    retina = "/assets/images/guide/private-key-management/backups/multiple-discoveryprotection@2x.jpg"
    alt-text = "Multiple offline backups with discovery protection"
+   width = 800
+   height = 420
 %}
 
 **Do** 
