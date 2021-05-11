@@ -36,7 +36,7 @@ Illustration sources
 
 The self-custody of bitcoin is an important right, but also a financial responsibility that can scale from pocket money to life savings, and take practice getting used to.
 
-This guide is a straightforward starting point for simple bitcoin backups, aimed at users of bitcoin products.
+This guide is a straightforward starting point for simple Bitcoin backups, aimed at users of Bitcoin products.
 
 If you are a designer or developer, make sure you offer guidance to your users so they can secure their bitcoin with an appropriate backup.
 
@@ -253,4 +253,3 @@ At a minimum, document each wallet with a given name (Bob’s Bitcoin wallet 1),
 
 **Suitable for**
 - Any amount
-
