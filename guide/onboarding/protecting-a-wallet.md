@@ -54,6 +54,7 @@ A PIN is one of the most common and traditional methods for securing a mobile ap
    alt-text = "Choosing a pin screen"
    width = 250
    height = 541
+   class = "shadow"
 %}
 
 {% include picture.html
@@ -62,6 +63,7 @@ A PIN is one of the most common and traditional methods for securing a mobile ap
    alt-text = "Enter pin screen"
    width = 250
    height = 541
+   class = "shadow"
 %}
 
 </div>
