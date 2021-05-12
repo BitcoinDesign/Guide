@@ -70,7 +70,6 @@ It's both. Lowercase bitcoin refers to the currency. So you may have 1 bitcoin i
    width = 400
    height = 400
    layout = "float-right-desktop"
-   caption = 'Texture by [Bilal O.](https://unsplash.com/@lightcircle){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
 %}
 
 Bitcoin (as in "I have 1 bitcoin") are just numbers in the database of transactions often referred to as the bitcoin blockchain.
@@ -229,7 +228,6 @@ No. Transactions are stored in a plain format in the Bitcoin network for anyone 
    width = 400
    height = 400
    layout = "float-right-desktop"
-   caption = 'Texture by [Emilio Garcia](https://unsplash.com/@piensaenpixel){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
 %}
 
 Every transaction needs to be confirmed before the recipient can consider the involved bitcoin theirs. This waiting line for new transactions is called the mempool. The Bitcoin network can only process a certain amount of transactions per day, so it may take longer to process your transactions during busy times. Transactions that involve higher fees are typically processed faster.
@@ -247,7 +245,6 @@ Every transaction needs to be confirmed before the recipient can consider the in
    width = 400
    height = 400
    layout = "float-right-desktop"
-   caption = 'Texture by [Thom Milkovic](https://unsplash.com/@thommilkovic){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
 %}
 
 This function is performed by miners, which are computers that group new transactions from the mempool into blocks and try to get those blocks accepted by the Bitcoin network. They are called miners because the creation of new blocks is rewarded by freshly minted bitcoin. This is the only way bitcoins are created, which creates heavy competition around mining.
