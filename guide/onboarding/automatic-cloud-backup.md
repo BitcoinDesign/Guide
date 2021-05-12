@@ -75,7 +75,7 @@ On a similar note, it’s crucial that you also explain that if someone else kno
 
 {% include tip/open.html color="green" icon="check" label="Do: Inform your Users" %}
 
-Before automatically backing up a recovery phrase via iCloud, make sure the user knows what they are about to do. Once the backup is complete, provide a summary and some reassurances before moving on. This is a good place for loading interactions and animation.
+Before automatically backing up a recovery phrase via cloud backup, make sure the user knows what they are about to do. Once the backup is complete, provide a summary and some reassurances before moving on. This is a good place for loading interactions and animation.
 
 {% include tip/close.html %}
 
