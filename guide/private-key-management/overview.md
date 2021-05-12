@@ -103,11 +103,11 @@ Now let's dive in and look at the various schemes that might be suitable for a p
    height = 400
 %}
 
-- [Automatic cloud backup](/guide/private-key-management/automatic-cloud-backup) - no user action required for backup
-- [Manual backup / Recovery phrase](/guide/private-key-management/manual-backup) - manual backup of a phrase of words
-- [External signing device](/guide/private-key-management/external-signing-device) - keys are held on a separate device
-- [Threshold signatures / Key-sharing](/guide/private-key-management/threshold-signatures) - one key is split and distributed
-- [Multi-key](#multi-key) - several keys jointly control the wallet
+- [Automatic cloud backup](/guide/private-key-management/cloud-backup/) - no user action required for backup
+- [Manual backup / Recovery phrase](/guide/private-key-management/manual-backup/) - manual backup of a phrase of words
+- [External signing device](/guide/private-key-management/external-signing-device/) - keys are held on a separate device
+- [Threshold signatures / Key-sharing](/guide/private-key-management/key-sharing/) - one key is split and distributed
+- [Multi-key](/guide/private-key-management/multi-key/) - several keys jointly control the wallet
 
 ### Shared schemes
 
@@ -119,4 +119,4 @@ The use cases for shared schemes include spouses managing a joint account, group
 
 ---
 
-Let's start by looking at the [automatic cloud backup](/guide/private-key-management/automatic-cloud-backup) scheme.
+Let's start by looking at the [automatic cloud backup](/guide/private-key-management/cloud-backup/) scheme.

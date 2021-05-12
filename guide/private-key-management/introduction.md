@@ -37,21 +37,45 @@ This chapter is an overview of private key management schemes, including descrip
 
 ---
 
-###  [Private key schemes]({{ '/guide/private-key-management/schemes/' | relative_url }})
+###  [Overview]({{ '/guide/private-key-management/overview/' | relative_url }})
 
 Get to know the most common bitcoin private key management schemes, then follow our guidelines to pick the right one for your users.
 
 ---
 
-### [Personal schemes]({{ '/guide/private-key-management/single-user-schemes/' | relative_url }})
+### [Automatic cloud backup]({{ '/guide/private-key-management/cloud-backup/' | relative_url }})
 
-An introduction to some of the common private key management schemes for individual users.
+A scheme where no user action is required for backup.
 
 ---
 
-### [Shared schemes]({{ '/guide/private-key-management/single-user-schemes/' | relative_url }})
+### [Manual backup]({{ '/guide/private-key-management/manual-backup/' | relative_url }})
 
-An introduction to some of the common private key management schemes for shared users.
+Opposite to the automatic cloud backup, manual backup is highly involved for the user who takes full personal responsibility for all steps.
+
+---
+
+### [External signing device]({{ '/guide/private-key-management/external-signing-device/' | relative_url }})
+
+In this scheme, keys are managed on a device separate from the device a wallet application runs on.
+
+---
+
+### [Key sharing]({{ '/guide/private-key-management/key-sharing/' | relative_url }})
+
+A single key is split up and distributed.
+
+---
+
+### [Multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }})
+
+Mutliple keys are independently created and combined to form and manage a wallet.
+
+---
+
+### [Shared multi-key]({{ '/guide/private-key-management/shared-multi-key/' | relative_url }})
+
+Similar to the multi-key scheme, but with keys distributed to different people, requiring additional coordination.
 
 ---
 
@@ -61,4 +85,4 @@ A straightforward guide to safe manual backups.
 
 ---
 
-Start at the top with [private key schemes]({{ '/guide/private-key-management/schemes/' | relative_url }}).
+Start at the top with [private key schemes]({{ '/guide/private-key-management/overview/' | relative_url }}).
