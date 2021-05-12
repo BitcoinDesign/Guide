@@ -28,7 +28,7 @@ Pros:
 Cons:
  - Managing taxes
  - Difficult to find businesses/individuals willing to pay in bitcoin
- - Hard to set up recurring payments
+ - Limited options for recurring payments
 
 ### Buying bitcoin
 
