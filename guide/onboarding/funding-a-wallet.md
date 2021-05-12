@@ -14,7 +14,7 @@ Common problems faced by new users include buying their first bitcoin and transf
 
 ### Earning bitcoin
 
-Some users may choose to accept bitcoin as a form of payment. Many people already started accepting bitcoin for their work. Some employers might also choose to pay part of their staff's salary in bitcoin. This is one way to fund a wallet.
+Earning bitcoin through exchanging goods and services for it is one way to obtain bitcoin. Some individuals and/or businesses have already started accepting and even paying employers in bitcoin. This is one way to fund a wallet.
 
 > Fun Fact 🏈: Former Seattle Seahawk Russel Okung puts half of his salary in Bitcoin and is now considered one of the highest paid players in the league.
 >
