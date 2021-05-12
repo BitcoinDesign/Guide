@@ -100,4 +100,4 @@ Automatic cloud backups should not be considered for products with users that ar
 
 To grant users some ownership of their keys, you can create an optional manual backup within settings. A great way to do this is by framing it as an extra layer of security, or a good alternative in the case that the user loses access to their cloud account/if they feel uncomfortable trusting their provider.
 
-In the next section we will show different methods for [manual backups]({{ 'guide/onboarding/backing-up-a-recovery-phrase/manual-backups' | relative_url }}).
+In the next section we will show different methods for [manual backups]({{ 'guide/onboarding/backing-up-a-recovery-phrase/manual-backup' | relative_url }}).
