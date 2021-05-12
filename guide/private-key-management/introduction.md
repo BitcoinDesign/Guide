@@ -45,37 +45,37 @@ Get to know the most common bitcoin private key management schemes, then follow 
 
 ### [Automatic cloud backup]({{ '/guide/private-key-management/cloud-backup/' | relative_url }})
 
-A scheme where no user action is required for backup.
+A single key is stored locally on the device. No user action is required for backup.
 
 ---
 
 ### [Manual backup]({{ '/guide/private-key-management/manual-backup/' | relative_url }})
 
-Opposite to the automatic cloud backup, manual backup is highly involved for the user who takes full personal responsibility for all steps.
+A single key is stored locally on the device. User action is required for backup with a recovery phrase.
 
 ---
 
 ### [External signing device]({{ '/guide/private-key-management/external-signing-device/' | relative_url }})
 
-In this scheme, keys are managed on a device separate from the device a wallet application runs on.
+A single key that is not stored on the same device as the wallet application.
 
 ---
 
 ### [Key sharing]({{ '/guide/private-key-management/key-sharing/' | relative_url }})
 
-A single key is split up and distributed.
+A single key is split up, with each part stored in separate locations.
 
 ---
 
 ### [Multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }})
 
-Mutliple keys are independently created and combined to form and manage a wallet.
+A wallet that is managed by multiple independent keys of which at least one is stored on a separated device from the wallet application.
 
 ---
 
 ### [Shared multi-key]({{ '/guide/private-key-management/shared-multi-key/' | relative_url }})
 
-Similar to the multi-key scheme, but with keys distributed to different people, requiring additional coordination.
+Same as the multi-key scheme, but with keys managed by different people, requiring additional coordination.
 
 ---
 
