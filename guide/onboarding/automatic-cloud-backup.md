@@ -89,7 +89,7 @@ Additionally, by bringing cloud storage providers into the equation, we assume t
 
 {% include tip/open.html color="red" icon="forbid" label="Don’t: Use for High Value Amounts" %}
 
-Automatic cloud backups should not be considered for products with users that are storing high-value amounts. This is because there are potentially more security threat vectors. However, it’s important to note that new users will probably not be storing high values in their wallet, making it an appropriate mechanism to implement in a bitcoin product for beginners.
+Automatic cloud backups should not be considered for products with users that are storing high-value amounts. This is because there are potentially more security threat vectors.
 
 {% include tip/close.html %}
 
