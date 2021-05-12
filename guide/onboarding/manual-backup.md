@@ -11,7 +11,7 @@ main_classes: -no-top-padding
 
 # Manual backup
 
-### How it Works
+### How it works
 
 It usually requires users to manually back up their 12 to 24 word recovery phrase by writing it down on a piece of paper and storing it in a safe (but memorable location). In the case that a user’s device breaks or is stolen, the user can recover their funds and wallet by correctly entering their recovery phrase. The [private key management]({{ '/guide/private-key-management/single-user-schemes/#manual-backup--recovery-phrase' | relative_url }}) section dives further into the technical details of this scheme if interested in learning more.
 
@@ -93,7 +93,7 @@ Providing users with printable, designated materials to write down their recover
 
 {% include /tip/close.html %}
 
-### Ways to Show It
+### Ways to show it
 
 The goal is to encourage users to write it down their recovery phrase on a physical piece of paper. You can discourage users from taking a screenshot by showing a warning modal, or disabling the functionality altogether.
 
@@ -190,7 +190,7 @@ Throwing 12 or 24 words at a user all at once can potentially overwhelm him/her 
 
 </div>
 
-### Confirming a Backup
+### Confirming a backup
 
 This step is a great way to ensure and test that the user in question actually stored their recovery phrase in a way that allows them to access and recount it. This typically entails prompting them to recall the words, which can be done in multiple ways that are laid out below.
 

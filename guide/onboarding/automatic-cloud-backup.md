@@ -11,7 +11,7 @@ main_classes: -no-top-padding
 
 # Automatic cloud backup
 
-### How it Works
+### How it works
 
 The user’s key is encrypted and backed up on their respective device/cloud storage provider. In the case that their device is lost, stolen, or broken, the user can simply log into their Apple or Google account to regain access to their funds. To learn more about the technical details, hop over to the [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) section on this topic.
 
@@ -28,6 +28,7 @@ Below is an example of what the user interface might look like for an automatic 
 {% include picture.html
    image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-intro.png"
    retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-intro@2x.png"
+   class = "shadow"
    alt-text = "Screen explaining automatic cloud backups"
    width = 250
    height = 541
@@ -36,7 +37,8 @@ Below is an example of what the user interface might look like for an automatic 
 {% include picture.html
      image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-password.png"
    retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-password@2x.png"
-   alt-text = "Screen asking user to set a password to use for encryption"
+   class = "shadow"
+   alt-text = "The user can set a password which will be used to encrypt their recovery phrase and act as a login"
    width = 250
    height = 541
 %}
@@ -44,6 +46,7 @@ Below is an example of what the user interface might look like for an automatic 
 {% include picture.html
      image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-service.png"
    retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-service@2x.png"
+   class = "shadow"
    alt-text = "Screen showing saving a password to encrypt the recovery phrase"
    width = 250
    height = 541
@@ -52,6 +55,7 @@ Below is an example of what the user interface might look like for an automatic 
 {% include picture.html
      image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-provider.png"
    retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-provider@2x.png"
+   class = "shadow"
    alt-text = "Screen of placeholder where cloud provider UI would be"
    width = 250
    height = 541
@@ -60,6 +64,7 @@ Below is an example of what the user interface might look like for an automatic 
 {% include picture.html
    image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-confirmation.png"
    retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-confirmation@2x.png"
+   class = "shadow"
    alt-text = "Screen showing completing a cloud backup"
    width = 250
    height = 541
@@ -67,7 +72,7 @@ Below is an example of what the user interface might look like for an automatic 
 
 </div>
 
-### How to Discuss/Explain It
+### How to discuss/explain It
 
 One approach is to explicitly explain within onboarding carousels that a user’s recovery phrase is stored on the cloud; this means that, if they lose or break their device, they can regain access to their funds by logging into their respective cloud account on a different device.
 
