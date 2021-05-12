@@ -37,21 +37,45 @@ This chapter is an overview of private key management schemes, including descrip
 
 ---
 
-###  [Private key schemes]({{ '/guide/private-key-management/schemes/' | relative_url }})
+###  [Overview]({{ '/guide/private-key-management/overview/' | relative_url }})
 
 Get to know the most common bitcoin private key management schemes, then follow our guidelines to pick the right one for your users.
 
 ---
 
-### [Personal schemes]({{ '/guide/private-key-management/single-user-schemes/' | relative_url }})
+### [Automatic cloud backup]({{ '/guide/private-key-management/cloud-backup/' | relative_url }})
 
-An introduction to some of the common private key management schemes for individual users.
+A single key is stored locally on the device. No user action is required for backup.
 
 ---
 
-### [Shared schemes]({{ '/guide/private-key-management/single-user-schemes/' | relative_url }})
+### [Manual backup]({{ '/guide/private-key-management/manual-backup/' | relative_url }})
 
-An introduction to some of the common private key management schemes for shared users.
+A single key is stored locally on the device. User action is required for backup with a recovery phrase.
+
+---
+
+### [External signing device]({{ '/guide/private-key-management/external-signing-device/' | relative_url }})
+
+A single key that is not stored on the same device as the wallet application.
+
+---
+
+### [Key sharing]({{ '/guide/private-key-management/key-sharing/' | relative_url }})
+
+A single key is split up, with each part stored in separate locations.
+
+---
+
+### [Multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }})
+
+A wallet that is managed by multiple independent keys of which at least one is stored on a separated device from the wallet application.
+
+---
+
+### [Shared multi-key]({{ '/guide/private-key-management/shared-multi-key/' | relative_url }})
+
+Same as the multi-key scheme, but with keys managed by different people, requiring additional coordination.
 
 ---
 
@@ -61,4 +85,4 @@ A straightforward guide to safe manual backups.
 
 ---
 
-Start at the top with [private key schemes]({{ '/guide/private-key-management/schemes/' | relative_url }}).
+Start at the top with [private key schemes]({{ '/guide/private-key-management/overview/' | relative_url }}).
