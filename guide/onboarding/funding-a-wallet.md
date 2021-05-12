@@ -65,7 +65,8 @@ Cons:
  - Managing taxes
  - Difficult to find businesses/individuals willing to pay in bitcoin
  - Hard to set up recurring paymets
-- Not private 
+ - Not private
+
 ### Redeem bitcoin using a gift card
 
 Gift cards allow users to buy and own small amounts of bitcoin without having to sign up for an exchange. These cards are sometimes available from local retailers.
