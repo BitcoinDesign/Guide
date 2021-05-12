@@ -64,7 +64,7 @@ Pros:
 Cons:
  - Managing taxes
  - Difficult to find businesses/individuals willing to pay in bitcoin
- - Hard to set up recurring paymets
+ - Hard to set up recurring payments
  - Not private
 
 ### Redeem bitcoin using a gift card
