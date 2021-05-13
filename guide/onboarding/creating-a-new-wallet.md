@@ -10,7 +10,7 @@ main_classes: -no-top-padding
 
 # Creating a new wallet
 
-First, bitcoin [wallets]({{ 'guide/glossary/#wallet' | relative_url }}) are not analogous to their namesakes. Physical wallets are places to store physical currency, credit cards, IDs, and so on. Bitcoin wallets don't store bitcoin. However, the [self custodial]({{ 'guide/glossary/#self-custody' | relative_url }})  nature of bitcoin wallets gives users full control of what they do with their bitcoin.
+First, bitcoin [wallets]({{ 'guide/glossary/#wallet' | relative_url }}) are not analogous to their namesakes. Physical wallets are places to store physical currency, credit cards, IDs, and so on. Bitcoin wallets don't store bitcoin. However, the [self custodial]({{ 'guide/glossary/#non-custodial--custodial-wallet' | relative_url }})  nature of bitcoin wallets gives users full control of what they do with their bitcoin.
 
 Instead, a Bitcoin wallet contains the "private keys" to a users bitcoin. The bitcoin is located on the Bitcoin network that contains a public ledger similar in many ways to a spreadsheet with a record of everyone's transactions and balances. Private keys let users access bitcoin associated with those keys. A more suitable analogy for a Bitcoin wallet would be a keychain.
 
@@ -33,7 +33,7 @@ A few different types of wallets let you send, receive, store, and manage bitcoi
 
 Most wallets will begin the onboarding process by creating a new or restoring an existing wallet. New users to Bitcoin will usually be going through the flow of creating a new wallet.
 
-Once an individual selects “create a new wallet”, you might present informational carousels that provide a high-level overview of the implications, benefits, and responsibility that comes with having a [self-custodial]({{ '/guide/glossary/#self-custody' | relative_url }}) wallet. Here you can explain to your user that access to the wallet will not require collecting any sensitive information such as usernames and passwords, which is often the case with traditional financial products.
+Once an individual selects “create a new wallet”, you might present informational carousels that provide a high-level overview of the implications, benefits, and responsibility that comes with having a [self-custodial]({{ '/guide/glossary/#non-custodial--custodial-wallet' | relative_url }}) wallet. Here you can explain to your user that access to the wallet will not require collecting any sensitive information such as usernames and passwords, which is often the case with traditional financial products.
 
 Rather, the user can directly access their funds as long as they have access to the private key or recovery phrase. You should help your users understand that your team do not have the ability to recover their funds in the event they lose their private key. A self custodial wallet often means the user will have to take on greater responsibilty to safely protect their private key so they can always access their funds.
 
