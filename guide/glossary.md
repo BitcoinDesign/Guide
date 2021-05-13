@@ -42,7 +42,9 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 ### Address
 A Bitcoin address is an identifier of 26-35 alphanumeric characters that is used to receive bitcoin. There are [several address formats](https://en.bitcoin.it/wiki/List_of_address_prefixes) based on different specifications. Users need to know this information during backup for future recovery so applications should inform users which format it uses as support varies across applications.
 
-Here are some more details about the three most common ones:
+When users enter an address, these formats have specific prefixes so it is possible to instantly determine which format is being used.
+
+These are the three most common ones:
 
 **Legacy address - [P2PKH](https://en.bitcoin.it/wiki/Transaction#Pay-to-PubkeyHash)**<br/>
 Stands for pay-to-pubkey-hash, i.e pay to a hash of the recipient’s public key. This was the original address format for bitcoin and is often called *legacy address*.
