@@ -23,7 +23,7 @@ This page should cover what to do when receiving bitcoin, how to share and copy 
 
 -->
 
-For someone to receive bitcoin, they must first provide the sender with a payment destination. They can do this by generating an address within their Bitcoin wallet application. A new address should be generated for every payment, as addresses should only be used once. This helps safeguards the receiver’s privacy.
+For someone to receive bitcoin, they must provide the sender with a payment destination. They can do this by generating an address in their Bitcoin wallet application. A new address should be generated for every payment, as addresses should only be used once. This helps safeguards the receiver’s privacy.
 
 <!-- 
 Update glossary
@@ -33,10 +33,10 @@ Each address that a Bitcoin application generates has an accompaniying private k
 Although addresses are not a problem to share publically, their accompanying private keys which typically generated from a single recovery phrase must be kept secure and private.
 -->
 
-## Preparing the payment request
-The simplest way to receive bitcoin is by generating and sharing just a Bitcoin address with the sender. Receivers can share the address by either showing it as a scannable QR Code or as plain text that can be shared via any regular communication tool like email, instant messaging, SMS, etc.
+## Requesting bitcoin
+The simplest way to receive bitcoin is by generating and sharing a Bitcoin address with the sender. Receivers can share the address by either as a scannable QR code, or as plain text via any regular communication tool like email, instant messaging, SMS, etc.
 
-<div class="image-slide-gallery">
+<div markdown="1">
 
 {% include picture.html
    image = "/assets/images/guide/payments/receive/simple-share.png"
@@ -44,16 +44,18 @@ The simplest way to receive bitcoin is by generating and sharing just a Bitcoin 
    alt-text = "Screen showing how receiver is able to share a bitcoin address as soon as they enter the request flow"
    width = 250
    height = 541
-   layout = "float-right-desktop"
+   layout = "background -shadow"
 %}
 
 </div>
 
-There are multiple types of addresses. Sharing one that is incompatible with the sender's wallet application can prevent a successful payment. Read more about addresses such [address compatibility]({{ '/guide/glossary/#address-compatibility' | relative_url }}) issues in the glossary.
+{% include tip/tip.html %}
+There are several types of addresses. Sharing one that is incompatible with the sender's wallet application can prevent a successful payment. Read more about [address compatibility]({{ '/guide/glossary/#address-compatibility' | relative_url }}) issues in the glossary.
+{% include tip/close.html %}
 
----
+## Inputting additional payment details
 
-Many Bitcoin wallet applications focus on providing minimalized interfaces for requesting payments. This is convenient in the short-term as it can facilitate fast and easy payments but may not be in the user’s best interest longer-term. Lists of transactions without information about who they are from and their purpose make it hard to manage personal finances and future transaction privacy.
+Many Bitcoin wallet applications provide only this most basic interface with an address for requesting payments. This is convenient in the short-term as it is fast and simple, but may not be in the user’s best interest longer-term. Lists of transactions without information about who they are from and their purpose make it hard to manage personal finances and future transaction privacy.
 
 <div class="image-slide-gallery">
 
@@ -64,6 +66,7 @@ Many Bitcoin wallet applications focus on providing minimalized interfaces for r
    caption = "When no additional information is gathered from the receiver, only what is stored on the blockchain can be shown."
    width = 250
    height = 541
+   layout = "shadow"
 %}
 
 {% include picture.html
@@ -73,11 +76,12 @@ Many Bitcoin wallet applications focus on providing minimalized interfaces for r
    caption = "While more information can be helpful it requires manual input. Ask which are priorities, and how can you make their entry easier?"
    width = 250
    height = 541
+   layout = "shadow"
 %}
 
 </div>
 
-Since the Bitcoin blockchain only stores a limited amount of payment information, such as the amount and addresses involved in a transaction, any additional information must be stored in your application. This additional information can be vital in providing context to wallet owners on their spending habits and payment histories. It is possible for receivers to share some of these extra details with senders by encoding them in [payment links]({{ '/guide/foundations/wallet-interoperability/' | relative_url }}). Either way, these details have to be manually inputted when generating a payment request.
+Since the Bitcoin blockchain only stores a limited amount of information, such as the amount and addresses involved, any additional information must be stored in your application. This additional information can be vital in providing context to wallet owners on their spending habits and payment histories. These details have to be manually added. It is possible for receivers to share some of these extra details with senders by encoding them in [payment links]({{ '/guide/foundations/wallet-interoperability/' | relative_url }}).
 
 The following are the standard properties of a payment link:
 
@@ -86,7 +90,7 @@ The following are the standard properties of a payment link:
 - **Label** – For example, the name of who is sending the payment (optional)
 - **Message** – For example, the purpose of payment (optional)
 
-Not all applications support storing or even sharing payment links with these details. When providing this functionality, find the right balance between convenience and usefulness for your target audience. Try to also think of ways that you can make inputting these details take less time, so it isn't burdensome.
+Not all applications support storing additional information, or sharing payment links with these details. When providing this functionality, find the right balance between convenience and usefulness for your target audience. Consider ways that can make the input of these details easy, not burdensome.
 
 <div class="image-slide-gallery">
 
@@ -97,6 +101,7 @@ Not all applications support storing or even sharing payment links with these de
    caption = "The receiver can specify the amount that they are requesting. This could be shared in payment links which would auto-fill the amount for the sender."
    width = 250
    height = 541
+   layout = "shadow"
 %}
 
 {% include picture.html
@@ -106,6 +111,7 @@ Not all applications support storing or even sharing payment links with these de
    caption = "The receiver can use a label to specify who the payment is from. This can be stored and used in suggestions when making future payment requests."
    width = 250
    height = 541
+   layout = "shadow"
 %}
 
 {% include picture.html
@@ -115,6 +121,7 @@ Not all applications support storing or even sharing payment links with these de
    caption = "Sometimes the purpose can be determined by identifying who the payment is from. Be mindful of that, and consider easy ways to help the receiver add more context."
    width = 250
    height = 541
+   layout = "shadow"
 %}
 
 </div>
@@ -136,7 +143,7 @@ Since bitcoin is a open system and has many payment applications built ontop of 
 -->
 
 ## Sharing the payment request
-Whether it’s just an address, or a payment link containing additional payment information, the two primary methods of sharing payment details are via scannable QR Codes or as plain text.
+Whether it’s just an address, or a payment link containing additional information, the two primary methods of sharing requests are via QR codes or as plain text.
 
 <div class="image-slide-gallery">
 
@@ -147,6 +154,7 @@ Whether it’s just an address, or a payment link containing additional payment 
    caption = ""
    width = 250
    height = 541
+   layout = "shadow"
 %}
 
 {% include picture.html
@@ -156,6 +164,7 @@ Whether it’s just an address, or a payment link containing additional payment 
    caption = ""
    width = 250
    height = 541
+   layout = "shadow"
 %}
 
 </div>
@@ -163,22 +172,22 @@ Whether it’s just an address, or a payment link containing additional payment 
 
 **Text**
 
-Sharing payment details as text is as straightforward as copying and pasting. It is also typical for Bitcoin applications to provide the receiver with a “share” button - allowing them to conveniently share addresses or payment links via other applications, with “share sheets” being offered by most mobile operating systems.
+Sharing a request as text is as straightforward as copying and pasting. It is also typical for Bitcoin applications to provide the receiver with a “share” button - allowing them to conveniently share addresses or payment links via other applications, with “share sheets” being offered by most mobile operating systems.
 
-**QR Codes**
+**QR codes**
 
-QR Codes are also a common way to exchange payment details when the two devices are near one another. It is not without its faults though, as some people may not be familiar with QR Codes, and lower-end phones may have difficulty reading them.
+QR codes are commonly used when the sender and receiver are near one another. It is not without its faults though, as some people may not be familiar with QR Codes, and lower-end phones may have difficulty reading them.
 
-Here are some constraints to consider when displaying QR Codes:
+Here are some constraints to consider when displaying QR codes:
 
-- Complex QR Codes can be difficult for devices with low-resolution cameras to read.
-- Use high contrast between the QR Code blocks and their background.
-- Display the QR Code at the largest size so that the scanner can detect it easily.
+- Complex QR codes can be difficult for devices with low-resolution cameras to read.
+- Use high contrast between the QR code blocks and their background.
+- Display the QR code at the largest size so that the scanner can detect it easily.
 
-_For more technical details about optimizing QR Codes, [see this article](https://bitcoinops.org/en/bech32-sending-support/#creating-more-efficient-qr-codes-with-bech32-addresses)._
+_For more technical details about optimizing QR codes, [see this article](https://bitcoinops.org/en/bech32-sending-support/#creating-more-efficient-qr-codes-with-bech32-addresses)._
 
 ## Awaiting the payment
-Once the receiver's payment details have been shared, senders still have to create and broadcast their transaction, leaving room for uncertainty as to when the payment will be completed and received. Think about how to keep the receiver informed whilst they await their payment.
+Once the request has been shared, the sender still has to create and broadcast their transaction, leaving room for uncertainty as to when the payment will be completed and received. Think about how to keep the receiver informed whilst they await their payment.
 
 <div class="image-slide-gallery">
 
@@ -189,6 +198,7 @@ Once the receiver's payment details have been shared, senders still have to crea
    caption = "By labeling addresses and storing them, you will be able to indicate the state of incoming payments."
    width = 250
    height = 541
+   layout = "shadow"
 %}
 
 {% include picture.html
@@ -198,13 +208,14 @@ Once the receiver's payment details have been shared, senders still have to crea
    caption = "Consider some users who are new to Bitcoin may not know how its transactions get processed."
    width = 250
    height = 541
+   layout = "shadow"
 %}
 
 </div>
 
-If your application has a section where the user can see a list of their payment requests or transaction history, this would be a good place to provide the user with updates on the payment’s status and what stage of completion it is at.
+If your application has a list of their payment requests or transaction history, show the status and what stage of completion the transaction is at.
 
-Then once the payment has been finalized, you should also consider what the receiver may want to do with those funds. You may want to help facilitate those follow-up activities for example, moving the funds to a shared multi-key wallet or doing a [coinjoin]({{ '/guide/glossary/#coinjoin' | relative_url }}).
+Once the payment has been finalized, consider what the receiver may want to do with those funds. You may want to help facilitate those follow-up activities, for example moving the funds to a shared multi-key wallet or doing a [coinjoin]({{ '/guide/glossary/#coinjoin' | relative_url }}).
 
 <!--
 On /guide/payments/send/#inputting-an-address
