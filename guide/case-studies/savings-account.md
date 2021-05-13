@@ -1,9 +1,9 @@
 ---
 layout: guide
-title: Checking account
+title: Savings account
 nav_order: 2
 parent: Case studies
-permalink: /guide/case-studies/multisig-wallet/
+permalink: /guide/case-studies/savings-account/
 image: https://bitcoin.design/assets/images/guide/getting-started/getting-started-preview.jpg
 image_base: /assets/images/guide/case-studies/multisig-wallet/
 images:
@@ -39,11 +39,9 @@ Editor's notes
 
 -->
 
-## Current / Checking account
+## Savings account
 
-In this section, we are looking at a product that is meant to be a replacement for what a bank would call a current/checking account where the user might receive their salary and pay their bills from.
-Safeguards against loss will be a higher priority than with a cash product, and we might therefore accept more friction both when setting up the wallet and when transacting.
-If users have no prior bitcoin knowledge we should expect to spend a significant effort educating them to put them in a position to safely operate the wallet product.
+In this section, we are looking at a product that is meant to be a replacement for what a bank would call a savings account where the user might receive their salary, pay their bills from, or store wealth long term. Safeguards against loss will be a higher priority than with a cash product, and we might therefore accept more friction both when setting up the wallet and when transacting. If users have no prior bitcoin knowledge we should expect to spend a significant effort educating them to put them in a position to safely operate the wallet product.
 
 A 2-of-3 [multi-key setup]({{ '/guide/private-key-management/multi-key/' | relative_url }}) would seem the most appropriate here, although it will be a significant hurdle in onboarding. Other schemes could be considered but come with distinct downsides for amounts of value we can expect users to store in this use case. A single-key scheme with an automatic cloud backup, recovery phrase or single signing device could work at the lower end of the value scale, but start to look like less responsible recommendations with higher values due to their single points of failure.
 
