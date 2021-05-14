@@ -210,9 +210,11 @@ It's worth noting that most hardware wallets support pass-phrases, while most so
 - Large amounts
 - Situations where the backup can be discovered by bad actors
 
-**Alternative**
+**Alternatives**
 
 Set up a hardware wallet from the recovery and pass-phrase that uses a PIN to protect usage. The PIN now becomes the protection against theft on discovery and should be saved somewhere safe just like the pass-phrase.
+
+Another alternative is to split the recovery phrase into several parts and storing them separately, often called [Shamir's Secret Sharing](https://en.wikipedia.org/wiki/Shamir's_Secret_Sharing) or *sharding*. However, this is not recommended as it introduces more fragility by multiplying the potential failure points.
 
 <br>
 
