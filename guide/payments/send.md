@@ -202,4 +202,4 @@ Let us look at how we communicate to the sender about the [processing of a trans
 
 ---
 
-Sending is one side of the process. Let's look at things from the [receiver's perspective](/payments/receive).
+Sending is one side of the process. Let's look at things from the [receiver's perspective](/guide/payments/receive).
