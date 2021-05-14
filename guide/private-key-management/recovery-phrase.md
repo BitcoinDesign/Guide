@@ -4,7 +4,7 @@ title: Recovery phrase
 description: An overview of personal private key management schemes.
 nav_order: 3
 parent: Private key management
-permalink: /guide/private-key-management/manual-backup/
+permalink: /guide/private-key-management/recovery-phrase/
 image: https://bitcoin.design/assets/images/guide/private-key-management/schemes/page-personal-schemes.jpg
 ---
 
