@@ -67,7 +67,7 @@ A single-key scheme with [automatic cloud backup]({{ '/guide/private-key-managem
 
 ### Onboarding experience
 
-The wireframe screens below show the main onboarding sequence that guides users through the creation of multisig wallet.
+The wireframe screens below show the main onboarding sequence that guides users through the creation of the wallet.
 
 <div class="image-slide-gallery">
 
