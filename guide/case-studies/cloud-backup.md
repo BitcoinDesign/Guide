@@ -13,12 +13,13 @@ images:
     - file: second
       alt:
       caption: Explain what is about to happen. Be transparent about how the private key is stored and the risks. Advanced options can be placed on a separate page.
-    - file: advanced-options
-      alt:
-      caption: If you offer other private key schemes make sure to explain the differences. Default to the one you think most of your customers will benefit the most from.
     - file: more-information
       alt:
       caption: Explain how private keys are managed if you cannot fit it all on the previous screen. Link to general Bitcoin information to help users get up to speed.
+    - file: balance
+      alt:
+      caption: As key creation and backup is automated, users can immediately be navigated to the home screen.
+importImages:
     - file: import-wallet
       alt:
       caption: Explain what importing a wallet means and what is required. Point out features or functions your wallet does not support if users may expect them.
@@ -28,21 +29,6 @@ images:
     - file: backup-info
       alt:
       caption: Inform the user about how the private key is managed, and if you have options let users decide here.
-    - file: balance
-      alt:
-      caption: Currency denomination defaults to fiat but can be changed to bitcoin or sats. Add and Withdraw is used for fiat transactions, and a transaction history with relevant info for your use-case.
-    - file: settings
-      alt:
-      caption: Options for changing the private key security scheme and exporting the wallet.
-    - file: change-private-key-scheme
-      alt:
-      caption: The current scheme is clearly described. Changing scheme might require more steps for multi-key setups and the process should be clearly explained and confirmed.
-    - file: export-wallet
-      alt:
-      caption: Explain what the recovery-phrase is before asking the user to reveal it.
-    - file: recovery-phrase
-      alt:
-      caption: Show numbered words to avoid confusion.
 ---
 
 <!--
@@ -79,11 +65,37 @@ A single-key scheme with [automatic cloud backup]({{ '/guide/private-key-managem
 - Additional user authentication to consider: biometrics, pin
 - Upgrade-path to other schemes if funds stored increase
 
-### Design details
+### Onboarding experience
+
+The wireframe screens below show the main onboarding sequence that guides users through the creation of multisig wallet.
 
 <div class="image-slide-gallery">
 
 {% for item in page.images %}
+
+{% capture imageURL %}{{ page.image_base }}{{ item.file }}.png{% endcapture %}
+{% capture imageURLRetina %}{{ page.image_base }}{{ item.file }}@2x.png{% endcapture %}
+
+{% include picture.html
+   image = imageURL
+   retina = imageURLRetina
+   alt-text = item.alt
+   caption = item.caption
+   width = 250
+   height = 541
+   layout = "shadow"
+%}
+{% endfor %}
+
+</div>
+
+### Importing a wallet
+
+The import sequence guides the user through entering the recovery phrase, which is then also saved to cloud storage.
+
+<div class="image-slide-gallery">
+
+{% for item in page.importImages %}
 
 {% capture imageURL %}{{ page.image_base }}{{ item.file }}.png{% endcapture %}
 {% capture imageURLRetina %}{{ page.image_base }}{{ item.file }}@2x.png{% endcapture %}
