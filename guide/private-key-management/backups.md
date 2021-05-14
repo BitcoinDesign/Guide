@@ -43,7 +43,7 @@ If you are a designer or developer, make sure you offer guidance to your users s
 
 ## What are backups?
 
-When we talk about backups, we mean saving the information needed to restore access to a wallet outside of the application that created the private keys. Often, this will just be the [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) of 12 or 24 words, but can also include other information like a *pass-phrase* and [derivation path]({{ '/guide/glossary/#derivation-path' | relative_url }}).
+When we talk about backups, we mean saving the information needed to restore access to a wallet outside of the application that created the private keys. Often, this will just be the [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) of 12 or 24 words, but can also include other information like a [passphrase]({{ '/guide/glossary/#passphrase' | relative_url }}) and [derivation path]({{ '/guide/glossary/#derivation-path' | relative_url }}).
 
 The main risks that backups need to protect against are:
 
@@ -174,19 +174,19 @@ The best metal backup solutions are resistant to most physical damage, including
 ## Single backup with discovery protection
 The previous offline backups have one flaw in common - if discovered by a bad actor, your funds can be stolen.
 
-To protect against this *theft on discovery* risk, a *pass-phrase* can be added to the recovery-phrase. This pass-phrase is sometimes called an extra word, or the 13th/25th word.
+To protect against this *theft on discovery* risk, a *passphrase* can be added to the recovery-phrase. This passphrase is sometimes called an extra word, or the 13th/25th word.
 
 While this level provides more protection, it also adds complexity to your backup setup. For most beginners storing small amounts it might not be worth the effort from the start and can be a later consideration should the funds grow.
 
-Technically, all recovery-phrases have a pass-phrase. If it's not set by the user, an empty string (“”) will be used by default. This means that using the recovery-phrase with or without the user-defined pass-phrase will recover two DIFFERENT wallets.
+Technically, all recovery-phrases have a passphrase. If it's not set by the user, an empty string (“”) will be used by default. This means that using the recovery-phrase with or without the user-defined passphrase will recover two DIFFERENT wallets.
 
 If a bad actor discovers only the recovery-phrase, they will find an empty wallet. Alternatively, one can deliberately leave a small amount of bitcoin in this wallet as a honey-pot, and monitor it for any withdrawals to know if it has been discovered.
 
-To provide protection against *theft on discovery*, the pass-phrase should be stored separate from the recovery-phrase.
+To provide protection against *theft on discovery*, the passphrase should be stored separate from the recovery-phrase.
 
-Since adding a pass-phrase will generate a different wallet, it is best to add it when first creating the wallet, and before storing any bitcoin in its addresses.
+Since adding a passphrase will generate a different wallet, it is best to add it when first creating the wallet, and before storing any bitcoin in its addresses.
 
-It's worth noting that most hardware wallets support pass-phrases, while most software wallet applications do not.
+It's worth noting that most hardware wallets support passphrases, while most software wallet applications do not.
 
 {% include image.html
    image = "/assets/images/guide/private-key-management/backups/offline-discoveryprotection.jpg"
@@ -198,12 +198,12 @@ It's worth noting that most hardware wallets support pass-phrases, while most so
 
 
 **Do**
-- Use a secure pass-phrase, it is case sensitive and can include numbers and special characters
-- Have redundant and secure backups of both the recovery-phrase and the pass-phrase, they are equally important for successful wallet recovery
-- Understand you now have two distinct wallets, (one each from the recovery-phrase with or without the pass-phrase), this can be useful to fool a bad actor, or a risk if next-of-kin is unaware of the pass-phrase
+- Use a secure passphrase, it is case sensitive and can include numbers and special characters
+- Have redundant and secure backups of both the recovery-phrase and the passphrase, they are equally important for successful wallet recovery
+- Understand you now have two distinct wallets, (one each from the recovery-phrase with or without the passphrase), this can be useful to fool a bad actor, or a risk if next-of-kin is unaware of the passphrase
 
 **Don’t**
-- Store the recovery-phrase and pass-phrase together
+- Store the recovery-phrase and passphrase together
 - Forget to document your setup for next-of-kin
 
 **Suitable for**
@@ -212,7 +212,7 @@ It's worth noting that most hardware wallets support pass-phrases, while most so
 
 **Alternatives**
 
-Set up a hardware wallet from the recovery and pass-phrase that uses a PIN to protect usage. The PIN now becomes the protection against theft on discovery and should be saved somewhere safe just like the pass-phrase.
+Set up a hardware wallet from the recovery and passphrase that uses a PIN to protect usage. The PIN now becomes the protection against theft on discovery and should be saved somewhere safe just like the passphrase.
 
 Another alternative is to split the recovery phrase into several parts and storing them separately, often called [Shamir's Secret Sharing](https://en.wikipedia.org/wiki/Shamir's_Secret_Sharing) or *sharding*. However, this is not recommended as it introduces more fragility by multiplying the potential failure points.
 
@@ -224,7 +224,7 @@ One remaining flaw with the single offline backup levels is that severe damage t
 
 To protect against such a *catastrophic event* we can create multiple backups, and distribute them to other locations. This could be a second home, trusted family and friends or a safe deposit box.
 
-As the risk of discovery increases with the multiplying backups, it's best to maintain the protection against theft on discovery with a pass-phrase, or hardware wallets with a PIN.
+As the risk of discovery increases with the multiplying backups, it's best to maintain the protection against theft on discovery with a passphrase, or hardware wallets with a PIN.
 
 {% include image.html
    image = "/assets/images/guide/private-key-management/backups/multiple-discoveryprotection.jpg"
@@ -239,7 +239,7 @@ As the risk of discovery increases with the multiplying backups, it's best to ma
 - Document your setup well for next-of-kin now that complexity has increased
 
 **Don’t**
-- Forget to safely store the pass-phrases or PINs
+- Forget to safely store the passphrases or PINs
 
 **Suitable for**
 - Large amounts
@@ -254,7 +254,7 @@ For any backup setup, sufficient information and understandable instructions for
 
 Even though it might feel uncomfortable (or unnecessary if you are young and single), it is never too early to document your wallets. If you don’t, there is a very high chance that next-of-kin will not be able to inherit your funds.
 
-At a minimum, document each wallet with a given name (Bob’s Bitcoin wallet 1), how to recover it, when it was created and what application was used to create the wallet. Ideally this document has all the instructions required to recover the wallet, but not the information itself (*recovery-phrase*, *pass-phrase* etc.), as that might expose you to theft on discovery risks.
+At a minimum, document each wallet with a given name (Bob’s Bitcoin wallet 1), how to recover it, when it was created and what application was used to create the wallet. Ideally this document has all the instructions required to recover the wallet, but not the information itself (*recovery-phrase*, *passphrase* etc.), as that might expose you to theft on discovery risks.
 
 **Do**
 - Make next-of-kin aware of the existence of any wallets
