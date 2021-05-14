@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Manual backup
+title: Recovery phrase
 description: An overview of personal private key management schemes.
 nav_order: 3
 parent: Private key management
@@ -16,9 +16,9 @@ Descriptions of schemes suitable for a single user.
 
 -->
 
-# Manual backup / Recovery phrase
+# Recovery phrase
 
-Manual backup of the [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) has been the most common private key management scheme by far since its proposal with [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) in 2013. If you have used any [non-custodial]({{ '/guide/glossary/#non-custodial--custodial-wallet' | relative_url }}) bitcoin application you are likely to have experienced the onboarding requirements of manual backups.
+A [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) requiring manual backup by the user has been the most common private key management scheme by far since its proposal with [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) in 2013. If you have used any [non-custodial]({{ '/guide/glossary/#non-custodial--custodial-wallet' | relative_url }}) bitcoin application you are likely to have experienced the onboarding requirements of manual backups.
 
 When creating a new wallet, you will be asked to manually backup a 12 or 24 word recovery phrase to a *safe place*. Often, as the next step it will ask you to verify that you did save it by having you input the phrase in the correct order.
 
