@@ -88,8 +88,6 @@ Or you can follow this flow chart to find a suitable scheme for your use case.
    layout = "full-width"
 %}
 
-We can divide the options up into personal and shared wallet schemes. The following pages explain each one in more detail:
-
 ### Personal schemes
 
 Now let's dive in and look at the various schemes that might be suitable for a personal wallet application with a single user to understand the differences at a high level.
@@ -115,7 +113,7 @@ While multi-key setups can be used for personal use, if several people need to s
 
 The use cases for shared schemes include spouses managing a joint account, groups, organizations or companies managing their funds, as well as inheritance planning. It can also be used for governance of an organization, with transactions used not to transfer funds but to record, or vote, for decisions.
 
-- [Shared multi-key](/guide/private-key-management/shared-multi-key) - several keys and several people control the wallet
+- [Multi-key](/guide/private-key-management/multi-key/) - several keys and several people control the wallet
 
 ---
 

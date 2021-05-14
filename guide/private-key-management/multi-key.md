@@ -12,15 +12,19 @@ image: https://bitcoin.design/assets/images/guide/private-key-management/schemes
 
 Editor's notes
 
-Descriptions of schemes suitable for a single user.
+Descriptions of multi-key schemes.
 
 -->
 
 # Multi-key
 
-All of the above schemes have relied on a single private key to control the wallet. This presents an all-or-nothing risk for loss of funds from both theft and negligence. To counter this a wallet can have several private keys attached of which all or a subset need to sign any transactions. In the personal use case, one person will control all the keys but hold them on different devices, or in different places.
+All of the previous schemes have relied on a single private key to control the wallet. This presents an all-or-nothing risk for loss of funds from both theft and negligence. To counter this a wallet can have several private keys attached of which all or a subset need to sign any transactions. 
 
 This is often called multi-signature, or multisig for short, but is also sometimes referred to as a *vault*. A multi-key setup is described as *n-of-n* to indicate how many keys are needed to sign a transaction out of the issued number. For example a *2-of-3* setup requires two of the three private keys to sign a transaction for it to be valid.
+
+In the case of a personal wallet, one individual will control all the keys but hold them on different devices for increased security. 
+
+In the case of a shared wallet, different people will control the keys. The number of keys and required co-signers will depend on the use case. With spouses sharing a *joint account*, a simple 1-of-2 multi-key setup might suffice, meaning there are two keys but only one is required to sign for a transaction to be valid. At the other end of a spectrum a company might require a more complex 3-of-5 setup, requiring three of the five co-signers to approve any transaction.
 
 Multi-key schemes can raise the security, since anyone needs access to more than one key to move any funds. But clearly it also increases complexity and the requirements on the user to keep even more keys securely stored and/or backed up.
 
@@ -34,17 +38,19 @@ Multi-key schemes can raise the security, since anyone needs access to more than
 %}
 
 ### How it works
-A software wallet application or coordination software initiates a multi-sig wallet, choosing the number of total keys, and the number required to sign transactions. The user then adds private keys from other wallets generated elsewhere to the multisig after which the software wallet can complete the creation process. For any future transaction from the multi-sig wallet the required amount of co-signers need to sign (using Partially Signed Bitcoin Transactions - PSBT from [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki)) before any transaction is valid.
+A software wallet application or coordination software initiates a multi-sig wallet, choosing the number of total keys, and the number required to sign transactions. You then add private keys from other wallets generated elsewhere to the multisig after which the software wallet can complete the creation process. For any future transaction from the multi-sig wallet the required amount of co-signers need to sign (using Partially Signed Bitcoin Transactions - PSBT from [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki)) before any transaction is valid.
 
 {% include fact/pros.html %}
 
 - Significantly increases security against theft
+- Can allow several people to access and control a shared wallet
+- Can tailor requirements for multiple co-signing and access situations
 
 {% include fact/close.html %}
 
 {% include fact/cons.html %}
 
-- Adds complexity and op-sec burden for multiple private keys
+- Has significant complexity and op-sec burden for multiple private keys, each of which need a good backup scheme
 
 {% include fact/close.html %}
 
@@ -52,7 +58,9 @@ A software wallet application or coordination software initiates a multi-sig wal
 
 **When to use**
 - When storing large amounts
+- When funds need to be accessed by several people or an organization
 - When target audience is likely to own hardware wallets
+- When users are likely to be very knowledgeable or be guided through setup and use
 - When most users are likely to implement good backup schemes for multiple keys
 
 **When not to use**
@@ -61,8 +69,8 @@ A software wallet application or coordination software initiates a multi-sig wal
 
 **Variations**
 - Number of total and co-signing keys
-- Key locations and distribution
-- Managed or completely sovereign
+- Key storage devices and distribution
+- Managed or completely self-managed
 
 **Do's**
 - Make sure the multi-key setup itself is backed up properly, including [extended public keys]({{ '/guide/glossary/#extended-public-key-xpub-ypub-zpub' | relative_url }}) for all the participating keys, fingerprint and derivation.
@@ -75,7 +83,8 @@ A software wallet application or coordination software initiates a multi-sig wal
 - [Specter](https://specter.solutions)
 - [Armory](https://btcarmory.com)
 - [Guarda](https://guarda.com)
+- [Revault](https://revault.dev){:target="_blank"} - in development
 
 ---
 
-Next, let's look at [shared multi key]({{ '/guide/private-key-management/shared-multi-key/' | relative_url }}).
+OK, to end this chapter let's have a look at how to do safe [Bitcoin backups]({{ '/guide/private-key-management/backups/' | relative_url }}).
