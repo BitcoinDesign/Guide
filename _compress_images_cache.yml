@@ -421,13 +421,10 @@ assets/images/guide/private-key-management/schemes/multi-key.jpg: multi-key.jpg
 assets/images/guide/private-key-management/schemes/multi-key@2x.jpg: multi-key@2x.jpg
 assets/images/guide/private-key-management/schemes/page-personal-schemes.jpg: page-personal-schemes.jpg
 assets/images/guide/private-key-management/schemes/page-private-key-schemes.jpg: page-private-key-schemes.jpg
-assets/images/guide/private-key-management/schemes/page-shared-schemes.png: page-shared-schemes.png
 assets/images/guide/private-key-management/schemes/personal-schemes.jpg: personal-schemes.jpg
 assets/images/guide/private-key-management/schemes/personal-schemes@2x.jpg: personal-schemes@2x.jpg
 assets/images/guide/private-key-management/schemes/recovery-phrase.jpg: recovery-phrase.jpg
 assets/images/guide/private-key-management/schemes/recovery-phrase@2x.jpg: recovery-phrase@2x.jpg
-assets/images/guide/private-key-management/schemes/shared-multi-key.jpg: shared-multi-key.jpg
-assets/images/guide/private-key-management/schemes/shared-multi-key@2x.jpg: shared-multi-key@2x.jpg
 assets/images/guide/private-key-management/schemes/signing-devices.jpg: signing-devices.jpg
 assets/images/guide/private-key-management/schemes/signing-devices@2x.jpg: signing-devices@2x.jpg
 assets/images/guide/private-key-management/schemes/spectrum-mobile.png: spectrum-mobile.png
@@ -439,10 +436,6 @@ assets/images/guide/private-key-management/schemes/spectrum@2x.png: spectrum@2x.
 assets/images/guide/private-key-management/schemes/threshold-signatures.jpg: threshold-signatures.jpg
 assets/images/guide/private-key-management/schemes/threshold-signatures@2x.jpg: threshold-signatures@2x.jpg
 assets/images/guide/private-key-management/schemes@2x.jpg: schemes@2x.jpg
-assets/images/guide/private-key-management/shared-mobile.jpg: shared-mobile.jpg
-assets/images/guide/private-key-management/shared-mobile@2x.jpg: shared-mobile@2x.jpg
-assets/images/guide/private-key-management/shared.jpg: shared.jpg
-assets/images/guide/private-key-management/shared@2x.jpg: shared@2x.jpg
 assets/images/guide/resources/content-guidelines-preview.jpg: content-guidelines-preview.jpg
 assets/images/guide/resources/formatting-preview.jpg: formatting-preview.jpg
 assets/images/guide/resources/resources-preview.jpg: resources-preview.jpg
