@@ -91,7 +91,7 @@ The wireframe screens below show the main onboarding sequence that guides users 
 
 ### Importing a wallet
 
-The import sequence guides the user through entering the recovery phrase, which is then also saved to cloud storage.
+The import sequence guides the user through entering the recovery phrase, which is then also encrypted and saved to cloud storage.
 
 <div class="image-slide-gallery">
 
