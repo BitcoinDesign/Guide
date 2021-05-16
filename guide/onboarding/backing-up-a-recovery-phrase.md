@@ -11,7 +11,7 @@ main_classes: -no-top-padding
 
 # Backing up a recovery phrase
 
-When a user generates a new wallet, it results in creating something called a private key (also known as a recovery phrase). A [recovery phrase]({{ 'guide/glossary/#recovery-phrase' | relative_url }}), is a group of 12 or 24 words that let users recover funds if wallet access is lost. Likewise, users who lose both their recovery phrase and wallet access permanently lose their bitcoin. Arguably, this creates one of the toughest design problems within the space.
+When a user generates a new wallet, it creates something called a private key (also known as a recovery phrase). A [recovery phrase]({{ 'guide/glossary/#recovery-phrase' | relative_url }}), is a group of 12 or 24 words that let users recover funds if wallet access is lost. Likewise, users who lose both their recovery phrase and wallet access permanently lose their bitcoin. Arguably, this creates one of the toughest design problems within the space.
 
 <div class="center" markdown="1">
 
