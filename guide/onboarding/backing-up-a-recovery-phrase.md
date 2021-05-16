@@ -25,7 +25,7 @@ When a user generates a new wallet, it creates something called a private key (a
    layout = "float-left-desktop -background -shadow"
 %}
 
-When new users are presented with a recovery phrase, they are often asked to write 12 or 24 words on a piece of paper and store it safely. This kind of recovery scheme can create an unfamiliar and frustrating onboarding experience. It also poses potential threats to the safety of their funds, as new users may not know how to properly store their recovery phrase, increasing their risk of losing it. It also a creates decent amount of friction, ultimately driving new users away from self-custodying their bitcoin.
+When new users are presented with a recovery phrase, they are often asked to write 12 or 24 words on a piece of paper and store it safely. This kind of recovery scheme can create an unfamiliar and frustrating onboarding experience. It also poses potential threats to the safety of their funds, as new users may not know how to properly store their recovery phrase, increasing their risk of losing it. It also creates a decent amount of friction, ultimately driving new users away from self-custodying their bitcoin.
 
 Regardless of the type of scheme you decide to go with, it’s crucial to be explicit about how your product is handling key management.
 
