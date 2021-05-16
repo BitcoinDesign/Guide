@@ -13,7 +13,7 @@ main_classes: -no-top-padding
 
 ### How it works
 
-The user’s key is encrypted and backed up on their respective device/cloud storage provider. In the case that their device is lost, stolen, or broken, the user can simply log into their Apple or Google account to regain access to their funds. To learn more about the technical details, hop over to the [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) section on this topic.
+The user’s key is encrypted and backed up on their respective device/cloud storage provider. If their device is lost, stolen, or broken, the user can log into their Apple or Google account to regain access to their funds. To learn more about the technical details, hop over to the [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) section on this topic.
 
 > Crypto rookies perceive themselves as “incapable of self-managing keys”.
 >
