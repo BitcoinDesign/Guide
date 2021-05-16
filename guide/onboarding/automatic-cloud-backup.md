@@ -74,7 +74,7 @@ Below is an example of what the user interface might look like for an automatic 
 
 ### How to discuss/explain It
 
-One approach is to explicitly explain within onboarding carousels that a user’s recovery phrase is stored on the cloud; this means that, if they lose or break their device, they can regain access to their funds by logging into their respective cloud account on a different device.
+One approach is to explicitly explain within onboarding carousels that a user’s recovery phrase is stored on the cloud; this means that if they lose or break their device, they can regain access to their funds by logging into their respective cloud account on a different device.
 
 On a similar note, it’s crucial that you also explain that if someone else knows their cloud account information, they can gain access to their funds, too.
 
