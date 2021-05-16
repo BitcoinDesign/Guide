@@ -20,12 +20,12 @@ Earning bitcoin through exchanging goods and services for it is one way to obtai
 >
 > <cite>As reported by <a href="https://www.nbcsports.com/northwest/seahawks/former-seattle-seahawk-russell-okung-puts-half-salary-bitcoin-considered-highest">NBC Sports</a></cite>
 
-Pros:
+#### Pros
  - Privacy
  - No exchange fees
  - Simplifies onboarding
 
-Cons:
+#### Cons
  - Managing taxes
  - Difficult to find businesses/individuals willing to pay in bitcoin
  - Limited options for recurring payments
@@ -58,10 +58,10 @@ Users funding new wallets from an exchange could potentially come into contact w
 
 {% include /tip/close.html %}
 
-Pros:
+#### Pros
  - An easy and popular way to acquire bitcoin
 
-Cons:
+#### Cons
  - Managing taxes
  - Difficult to find businesses/individuals willing to pay in bitcoin
  - Hard to set up recurring payments
@@ -82,10 +82,10 @@ Users can get set up in minutes using this technique.
    height = 500
 %}
 
-Pros:
+#### Pros
  - Gets user comfortable with scanning QR codes
  - Simplifies onboarding
  - No compromise on privacy
 
-Cons:
+#### Cons
  - Low retail availability
