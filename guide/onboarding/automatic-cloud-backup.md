@@ -21,7 +21,7 @@ The user’s key is encrypted and backed up on their respective device/cloud sto
 
 This method provides users with the feeling that they can rely on their cloud provider to regain access to their funds rather than putting the responsibility on themselves.
 
-Below is an example of what the user interface might look like for an automatic cloud backup that significantly reduces the friction during onboarding.
+Below is an example of what the user interface might look like for an automatic cloud backup that significantly reduces friction during onboarding.
 
 <div class="image-slide-gallery">
 
