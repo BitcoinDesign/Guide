@@ -215,7 +215,7 @@ Try to make sure users understand your team cannot access their recovery phrase 
 
 **Option 1: Selecting Words from a Bank**
 
-A common design for confirming a manual backup is to present users with a scrambled word bank that consists of the words that make up their recovery phrase. Users are then prompted to select the words in the correct order.
+A common design for confirming a manual backup is to present users with a scrambled word bank consisting of the words that make up their recovery phrase. Users are then prompted to select the words in the correct order.
 
 </div>
 
