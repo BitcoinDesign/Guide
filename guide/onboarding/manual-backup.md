@@ -239,7 +239,7 @@ One way to present this is by giving them numbered fields (12 or 24 words depend
 
 {% include /tip/open.html label="Tip: Tell Users if they’re on the Right Track" icon="info" color="blue" %}
 
-Because typing each word out comes with more room for error, create a visual indicator that shows if the user is on the right track (i.e. make the box green if it is correct, make it red if it is incorrect). It can be a frustrating experience for a user to get a general warning that a word is not correct after having them manually type it out and force them to sleuth out where a misspelled word or wrong order occurred.
+Because typing each word out comes with more room for error, create a visual indicator that shows if the user is on the right track (i.e., make the box green if it is correct, make it red if it is incorrect). It can be frustrating for a user to get a general warning that a word is not correct after having them manually type it out and force them to sleuth out where a misspelled word or wrong order occurred.
 
 {% include /tip/close.html %}
 
