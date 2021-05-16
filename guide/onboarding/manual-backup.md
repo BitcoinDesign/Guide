@@ -186,7 +186,7 @@ Lastly, another design is to simply give a user the words all at once. In this d
 
 Here, there are no surprises in how long it is and does not require them to take any further action in revealing it.
 
-Throwing 12 or 24 words at a user all at once can potentially overwhelm him/her if they are not familiar with recovery phrases in general. This also introduces the possibility of a user simply skipping over this one screen with contents that inherently determines the safety of their funds.
+Throwing 12 or 24 words at a user all at once can potentially overwhelm them if they are not familiar with recovery phrases in general. This also introduces the possibility of a user skipping over this one screen with contents that inherently determines the safety of their funds.
 
 </div>
 
