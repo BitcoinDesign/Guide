@@ -94,7 +94,7 @@ This makes the backup accessible by the user on a new device, should they lose t
 - When risk of self-inflicted loss is higher than loss from theft
 - For beginners, or products with progressive security
 - For lower values
-- For hot or spending wallets that store their private keys locally
+- For wallets with frequent transactions of smaller amounts
 
 **When not to use**
 - When storing high values
