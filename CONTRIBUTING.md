@@ -10,7 +10,7 @@ When you are ready for your pull request to be reviewed, make sure to go through
 - [ ] Page has a link to the next page if it is within a chapter
 - [ ] Run `rake test` to check if there are broken links
 - [ ] File names are hyphenated and lowercased
-- [ ] The page preview image (frontmatter) is 1200px x 630px
+- [ ] The page preview image is 1200px x 630px
 - [ ] The page preview image file name ends with `-preview`
 - [ ] Heavily textured images/photos are `.jpg`
 - [ ] Images have retina sizes
