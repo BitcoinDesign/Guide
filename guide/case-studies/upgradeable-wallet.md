@@ -4,7 +4,7 @@ title: Upgradeable account
 nav_order: 3
 parent: Case studies
 permalink: /guide/case-studies/upgradeable-wallet/
-image: https://bitcoin.design/assets/images/guide/getting-started/getting-started-preview.jpg
+image: https://bitcoin.design/assets/images/guide/case-studies/upgradeable-wallet/upgradeable-wallet-preview.jpg
 image_base: /assets/images/guide/case-studies/upgradeable-wallet/
 images:
     - file: first

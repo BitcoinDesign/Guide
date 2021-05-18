@@ -6,6 +6,7 @@ parent: Onboarding
 nav_order: 1
 permalink: /guide/onboarding/getting-to-know-your-users/
 main_classes: -no-top-padding
+image: https://bitcoin.design/assets/images/guide/onboarding/getting-to-know-your-users/getting-to-know-your-users-preview.jpg
 ---
 
 {% include picture.html

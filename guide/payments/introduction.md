@@ -6,6 +6,7 @@ nav_order: 5
 has_children: true
 permalink: /guide/payments/
 main_classes: -no-top-padding
+image: https://bitcoin.design/assets/images/guide/payments/payments-preview.jpg
 ---
 
 {% include picture.html
