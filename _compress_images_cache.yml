@@ -29,10 +29,6 @@ assets/images/guide/case-studies/case-cash-mobile.png: case-cash-mobile.png
 assets/images/guide/case-studies/case-cash-mobile@2x.png: case-cash-mobile@2x.png
 assets/images/guide/case-studies/case-cash.png: case-cash.png
 assets/images/guide/case-studies/case-cash@2x.png: case-cash@2x.png
-assets/images/guide/case-studies/case-current-mobile.png: case-current-mobile.png
-assets/images/guide/case-studies/case-current-mobile@2x.png: case-current-mobile@2x.png
-assets/images/guide/case-studies/case-current.png: case-current.png
-assets/images/guide/case-studies/case-current@2x.png: case-current@2x.png
 assets/images/guide/case-studies/case-shared-mobile.png: case-shared-mobile.png
 assets/images/guide/case-studies/case-shared-mobile@2x.png: case-shared-mobile@2x.png
 assets/images/guide/case-studies/case-shared.png: case-shared.png
@@ -41,10 +37,6 @@ assets/images/guide/case-studies/case-studies-mobile.jpg: case-studies-mobile.jp
 assets/images/guide/case-studies/case-studies-mobile@2x.jpg: case-studies-mobile@2x.jpg
 assets/images/guide/case-studies/case-studies.jpg: case-studies.jpg
 assets/images/guide/case-studies/case-studies@2x.jpg: case-studies@2x.jpg
-assets/images/guide/case-studies/case-upgradeable-mobile.png: case-upgradeable-mobile.png
-assets/images/guide/case-studies/case-upgradeable-mobile@2x.png: case-upgradeable-mobile@2x.png
-assets/images/guide/case-studies/case-upgradeable.png: case-upgradeable.png
-assets/images/guide/case-studies/case-upgradeable@2x.png: case-upgradeable@2x.png
 assets/images/guide/case-studies/page-case-studies.jpg: page-case-studies.jpg
 assets/images/guide/case-studies@2x.jpg: case-studies@2x.jpg
 assets/images/guide/contribute/content-guidelines-preview.jpg: content-guidelines-preview.jpg
@@ -797,3 +789,11 @@ assets/images/guide/case-studies/upgradeable-wallet/change-private-key-scheme@2x
 assets/images/guide/case-studies/upgradeable-wallet/upgradeable-wallet-preview.jpg: upgradeable-wallet-preview.jpg
 assets/images/guide/case-studies/cloud-backup/cloud-backup-preview.jpg: cloud-backup-preview.jpg
 assets/images/guide/case-studies/multisig-wallet/multisig-wallet-preview.jpg: multisig-wallet-preview.jpg
+assets/images/guide/case-studies/upgradeable-wallet/case-upgradeable-mobile.png: case-upgradeable-mobile.png
+assets/images/guide/case-studies/upgradeable-wallet/case-upgradeable-mobile@2x.png: case-upgradeable-mobile@2x.png
+assets/images/guide/case-studies/upgradeable-wallet/case-upgradeable.png: case-upgradeable.png
+assets/images/guide/case-studies/upgradeable-wallet/case-upgradeable@2x.png: case-upgradeable@2x.png
+assets/images/guide/case-studies/multisig-wallet/case-current-mobile.png: case-current-mobile.png
+assets/images/guide/case-studies/multisig-wallet/case-current-mobile@2x.png: case-current-mobile@2x.png
+assets/images/guide/case-studies/multisig-wallet/case-current.png: case-current.png
+assets/images/guide/case-studies/multisig-wallet/case-current@2x.png: case-current@2x.png

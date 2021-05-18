@@ -43,10 +43,10 @@ The solution in this case could be a wallet that enables the user to upgrade the
 
 {% include prototype.html
    link = "https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A270&viewport=861%2C146%2C0.44897958636283875&scaling=scale-down"
-   image = "/assets/images/guide/case-studies/case-upgradeable.png"
-   retina = "/assets/images/guide/case-studies/case-upgradeable@2x.png"
-   mobile = "/assets/images/guide/case-studies/case-upgradeable-mobile.png"
-   mobileRetina = "/assets/images/guide/case-studies/case-upgradeable-mobile@2x.png"
+   image = "/assets/images/guide/case-studies/upgradeable-wallet/case-upgradeable.png"
+   retina = "/assets/images/guide/case-studies/upgradeable-wallet/case-upgradeable@2x.png"
+   mobile = "/assets/images/guide/case-studies/upgradeable-wallet/case-upgradeable-mobile.png"
+   mobileRetina = "/assets/images/guide/case-studies/upgradeable-wallet/case-upgradeable-mobile@2x.png"
    alt-text = "Image of case study prototype"
    width = 800
    height = 500
