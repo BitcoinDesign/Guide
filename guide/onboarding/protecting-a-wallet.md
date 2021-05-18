@@ -117,7 +117,7 @@ It's more common for wallets to protect private keys, but not much is done for o
 
 ### Quickly hide from overview screen
 
-The hide icon / button, which is usually displayed within close reach of the balance itself, is used to quickly and easily hide and reveal wallet information by tapping or clicking on it.[^2]
+The hide icon/button, which is usually displayed within close reach of the balance itself, is used to quickly and easily hide and reveal wallet information by tapping or clicking on it.[^2]
 
 {% include picture.html
    image = "/assets/images/guide/onboarding/protecting-a-wallet/hide-by-eye-icon.gif"
