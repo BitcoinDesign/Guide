@@ -4,7 +4,7 @@ title: Daily spending
 nav_order: 1
 parent: Case studies
 permalink: /guide/case-studies/cloud-backup/
-image: https://bitcoin.design/assets/images/guide/getting-started/getting-started-preview.jpg
+image: https://bitcoin.design/assets/images/guide/case-studies/cloud-backup/cloud-backup-preview.jpg
 image_base: /assets/images/guide/case-studies/cloud-backup/
 images:
     - file: first
