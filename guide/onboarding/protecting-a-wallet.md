@@ -93,7 +93,7 @@ A PIN is one of the most common and traditional methods for securing a mobile ap
 
 All devices can support the PIN-based approach, which makes it more accessible. A PIN can also be used to encrypt data within a wallet, making any locally stored information on the device inaccessible. Additionally, some users prefer this type of security measure because they use the same or similar PINs on multiple applications/devices, making it easy to remember.
 
-However, users with poor security practices might create easy-to-guess PINs (such as 1234), which would decrease the level of security. This design also relies on users to remember their PIN correctly.
+However, users with poor security practices might create easy-to-guess PINs (such as 1234), which would provide a false sense of security. This design also relies on users to remember their PIN correctly.
 
 {% include tip/open.html color="green" icon="check" label="Do: Educate on Good Security Practices" %}
 
