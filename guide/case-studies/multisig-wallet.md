@@ -4,7 +4,7 @@ title: Checking account
 nav_order: 2
 parent: Case studies
 permalink: /guide/case-studies/multisig-wallet/
-image: https://bitcoin.design/assets/images/guide/getting-started/getting-started-preview.jpg
+image: https://bitcoin.design/assets/images/guide/case-studies/multisig-wallet/multisig-wallet-preview.jpg
 image_base: /assets/images/guide/case-studies/multisig-wallet/
 images:
     - file: first
