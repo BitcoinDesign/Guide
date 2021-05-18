@@ -6,7 +6,7 @@ nav_order: 4
 has_children: true
 permalink: /guide/private-key-management/introduction/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/private-key-management/page-private-key-management.jpg
+image: https://bitcoin.design/assets/images/guide/private-key-management/private-key-management-preview.jpg
 ---
 
 <!--
