@@ -53,7 +53,7 @@ A common practice for wallets is to have a barrier (i.e., Touch ID, PINs, etc.) 
 
 One convenient way for users to verify their identity to unlock your wallet app is with biometrics. This could take the form of either touch or face ID.
 
-Users of Android and iOS devices are super familiar with these motions. More importantly, using biometrics does not require the user to remember anything, furthermore decreasing their chances of getting locked out of their wallet.
+Users of Android and iOS devices are already familiar with these motions. More importantly, using biometrics does not require the user to remember anything, decreasing their chances of getting locked out of their wallet.
 
 Unfortunately, biometrics are not supported on all mobile devices. Hardcore security users may be wary about giving up their biometric information.
 
