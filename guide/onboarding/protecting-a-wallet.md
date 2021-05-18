@@ -113,7 +113,7 @@ Sensitive information in wallet applications include the wallet balance, address
 - Addresses - can be used to track your transaction history
 - Private keys - can be used to access and transfer your bitcoins
 
-It's more common for wallets to protect private keys but not much is done for other sensitive information like the balance, addresses and previous transactions. A few wallets like Bitcoin Core, Wasabi, Wallet of Satoshi, and others have made it work though. Below describes a pattern, and considerations for hiding and revealing sensitive information.
+It's more common for wallets to protect private keys, but not much is done for other sensitive information like the balance, addresses, and previous transactions. A few wallets like Bitcoin Core, Wasabi, Wallet of Satoshi, and others have made it work, though. Below is a pattern and considerations for hiding and revealing sensitive information.
 
 ### Quickly hide from overview screen
 
