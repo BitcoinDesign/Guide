@@ -186,7 +186,7 @@ Another solution would be to invoke the wallet’s hidden state as a default whe
 
 ### Making the toggle less obvious
 
-Having the show/hide button right on the main screen make things quite obvious for someone who has access to your device to press unhide. A solution would be to move the hide toggle away from the home screen and into the app settings[^1]. This way, if someone has access to your device and opens the app, they may not immediately know how to reveal the balance, transaction and/or addresses as it is not made obvious as the previous solutions.
+Having the show/hide button right on the main screen makes things quite obvious for someone who has access to your device to press unhide. A solution would be to move the hide toggle away from the home screen and into the app settings[^1]. This way, if someone has access to your device and opens the app, they may not immediately know how to reveal the balance, transaction and/or addresses as it is not made obvious as the previous solutions.
 
 {% include picture.html
    image = "/assets/images/guide/onboarding/protecting-a-wallet/hide-in-settings.gif"
