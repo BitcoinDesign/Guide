@@ -1,4 +1,6 @@
-### CoinJoin
+---
+title: CoinJoin
+---
 
 <div class="center" markdown="1">
 

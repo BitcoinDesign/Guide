@@ -28,54 +28,23 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 %}
 
 # Glossary
-{: .no_toc }
 
 ---
 
 <div class="glossary-toc" markdown="1">
- * Table of contents
-{:toc}
+   <ul id="markdown-toc">
+{% for term in site.glossary %}
+     <li><a href="#{{term.title | slugify }}" id="markdown-toc-{{term.title | slugify }}">{{term.title}}</a></li>
+{% endfor %}
+   </ul>
 </div>
 
 ---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{% for term in site.glossary %}
+   {{ term.title | prepend: "### " | markdownify }}
+   {{ term.content | markdownify }}
+{% endfor %}
 
 ### Additional resources
 

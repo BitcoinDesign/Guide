@@ -1,4 +1,6 @@
-### Output script descriptor
+---
+title: Output script descriptor
+---
 
 A small piece of data that has all the information needed to generate a specific set of addresses or keys. Bundling this data in a standardized format has several benefits. It is harder to forget important configuration details, and it is more efficient than transmitting a long list of addresses or keys.
 

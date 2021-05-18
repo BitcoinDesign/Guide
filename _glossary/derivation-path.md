@@ -1,4 +1,6 @@
-### Derivation path
+---
+title: Derivation path
+---
 
 There are several standards for how to notate the path to a key and corresponding address in [HD wallets](#hd-wallet). It is important to know which ones are used and supported by a wallet-application when importing and exporting a wallet. The most common are:
 

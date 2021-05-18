@@ -1,4 +1,6 @@
-### Coin control
+---
+title: Coin control
+---
 
 <div class="center" markdown="1">
 

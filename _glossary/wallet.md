@@ -1,4 +1,6 @@
-### Wallet
+---
+title: Wallet
+---
 
 <div class="center">
 

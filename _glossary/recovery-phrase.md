@@ -1,4 +1,6 @@
-### Recovery phrase
+---
+title: Recovery phrase
+---
 
 _Also referred to as Seed, Mnemonic, and Backup phrase._
 
