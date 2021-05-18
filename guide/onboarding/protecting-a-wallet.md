@@ -67,7 +67,7 @@ Bitcoin wallet users may feel hesitant about the privacy implications of your pr
 
 ### PIN
 
-A PIN is one of the most common and traditional methods for securing a mobile application. This setup requires that users create a 4-6 digit PIN that must be entered when opening their wallet application, or when viewing sensitive information such as their recovery phrase.
+A PIN is one of the most common and traditional methods for securing a mobile application. This setup requires that users create a 4-6 digit PIN that must be entered when opening their wallet application or viewing sensitive information such as their recovery phrase.
 
 <div class="image-slide-gallery">
 
