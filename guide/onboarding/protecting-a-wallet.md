@@ -35,7 +35,7 @@ Illustration sources
 
 Bitcoin wallets contain sensitive information such as recovery phrases, balances, transaction histories, and more. Therefore, it is crucial to add extra layers of security to keep private data out of bad actors' hands. Additional protection may also be necessary for users who share devices, such as parents with children.
 
-A common practice for wallets is to have a barrier (i.e. Touch ID, PINs, etc.) that must be unlocked to open a wallet application. Creating robust and challenging- to- crack passwords and PIN codes isn't something that everyone excels at. In order to decrease the chance of someone’s wallet getting hacked because of poor security decisions, you can implement the following into your design:
+A common practice for wallets is to have a barrier (i.e., Touch ID, PINs, etc.) that must be unlocked to open a wallet application. Creating robust and challenging-to-crack passwords and PIN codes isn't something that everyone excels at. To decrease the chance of someone’s wallet getting hacked because of poor security decisions, you can implement the following into your design:
 
 ### Touch ID/Face ID
 
