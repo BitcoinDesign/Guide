@@ -88,7 +88,7 @@ There should be whitespace between paragraphs.
 
 ### Links
 
-### External Links
+#### External Links
 
 ```markdown
 [Link to another page](https://bitcoin.org/bitcoin.pdf)
