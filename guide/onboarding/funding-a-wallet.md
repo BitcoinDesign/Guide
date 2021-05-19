@@ -77,7 +77,7 @@ Users can get set up in minutes using this technique.
    image = "/assets/images/guide/onboarding/funding-a-wallet/bitcoin-gift-cards.png"
    retina = "/assets/images/guide/onboarding/funding-a-wallet/bitcoin-gift-cards@2x.png"
    alt-text = "Bitcoin gift cards"
-   caption = "Bitcoin gift cards"
+   caption = "Bitcoin gift card concept"
    width = 800
    height = 500
 %}
