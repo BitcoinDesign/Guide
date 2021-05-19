@@ -140,7 +140,7 @@ In this example the risk of an unauthorized person revealing their information i
 
 ##  Hide if inactive
 
-Another solution would be to invoke the wallet’s hidden state as a default when the app is opened. This means that if someone sees your wallet when you open it, they wouldn't be able to make out the information. The pre-hidden state can be unveiled after a tap, PIN entry, or perhaps a short 5-second timer.
+Another solution is to invoke the wallet’s hidden state as a default when the app is opened, to protect against prying eyes during initial display. The pre-hidden state can be unveiled after a tap, PIN entry, or perhaps a short 5-second timer.
 
 {% include picture.html
    image = "/assets/images/guide/onboarding/protecting-a-wallet/hide-by-default.gif"
