@@ -28,7 +28,7 @@ There are a number of reasons why a user might need to recover their wallet. Typ
 
 ### Restore from an automatic cloud backup
 
-As outlined earlier in the chapter, we consider an automatic cloud backup a good option, especially for beginners. One of the major UX benefits of this is a seamless recovery process. All users needs to do to gain access to their funds again is log into their Google or Apple account.
+As outlined earlier in the chapter, we consider an automatic cloud backup a good option, especially for beginners. One of the major UX benefits of this is a seamless recovery process. All users needs to do to gain access to their funds again is to log into their cloud storage account.
 
 If they aren't logged in, they only need to enter their password before the wallet can automatically access the recovery phrase stored on the user's iCloud or Google Drive account. Once the recovery phrase is located, the wallet can begin to regenerate the keys required for the user to access their funds.
 
@@ -48,4 +48,3 @@ For a more detailed explantion of this recovery technique check out this [blog p
 Some less popular methods include importing a file such as wallet.dat. Such a file would have all the information required to recover funds such as public keys and key metadata. In some cases you might be developing a watch-only wallet that only lets users track their bitcoin transactions. In this case you would import an extended public key, this tends to be for technically minded users however.
 
 The next section looks at options for adding extra layers of security and [protecting a wallet]({{ 'guide/onboarding/protecting-a-wallet' | relative_url }}).
-
