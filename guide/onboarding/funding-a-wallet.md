@@ -14,7 +14,7 @@ Common problems faced by new users include buying their first bitcoin and transf
 
 ### Earning bitcoin
 
-Earning bitcoin through exchanging goods and services for it is one way to obtain bitcoin. Some individuals and/or businesses have already started accepting and even paying employers in bitcoin. This is one way to fund a wallet.
+Earning bitcoin through exchange of goods and services is a great option. Some individuals and businesses have already started accepting and even paying employees in bitcoin.
 
 > Fun Fact 🏈: Former Seattle Seahawk Russel Okung puts half of his salary in Bitcoin and is now considered one of the highest paid players in the league.
 >
