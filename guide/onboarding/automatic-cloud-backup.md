@@ -28,7 +28,7 @@ Below is an example of what the user interface might look like for an automatic 
 {% include picture.html
    image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-intro.png"
    retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-intro@2x.png"
-   class = "shadow"
+   layout = "shadow"
    alt-text = "Screen explaining automatic cloud backups"
    width = 250
    height = 541
