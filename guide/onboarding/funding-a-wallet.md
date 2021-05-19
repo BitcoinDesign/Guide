@@ -36,9 +36,9 @@ Earning bitcoin through exchanging goods and services for it is one way to obtai
 
 {% include image.html
    image = "/assets/images/guide/onboarding/funding-a-wallet/buy-bitcoin.png"
-   retina = "/assets/images/guide/onboarding/funding-a-wallet/buy-bitcoin.png"
+   retina = "/assets/images/guide/onboarding/funding-a-wallet/buy-bitcoin@2x.png"
    width = 250
-   height = 250
+   height = 550
    alt-text = "Showing recovery phrase one word at a time"
    caption = "Buy bitcoin screen from the from [Wallet UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1228%3A28550)"
    layout = "float-left-desktop -background -shadow"
