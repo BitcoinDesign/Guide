@@ -34,7 +34,7 @@ If you are not familiar with the concepts of open design, we have a [great intro
 ## How to get involved in the community
 
 1. [Join the community on Slack]({{ site.slack_invite_url }}) and say hi in the [#introductions](https://bitcoindesign.slack.com/archives/C0162PV1810) channnel
-1. [Subscribe to the newsletter](https://bitcoindesign.substack.com) to stay up-to-date
+1. [Subscribe to the newsletter](https://bitcoindesign.substack.com) and follow on [Twitter](https://twitter.com/bitcoin_design) to stay up-to-date
 1. Read up on our [project life cycle](https://github.com/BitcoinDesign/Meta/blob/master/Projects.md)
 1. Browse [issues](https://github.com/BitcoinDesign/Meta/issues) for upcoming calls and discussions around processes and coordination
 1. Subscribe to our [calendar](https://raw.githubusercontent.com/BitcoinDesign/Meta/calendar/events.ical) for calls and events we organize
