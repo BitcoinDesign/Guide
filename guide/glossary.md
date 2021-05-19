@@ -113,7 +113,7 @@ Bitcoin with a capital *B* is typically associated with Bitcoin the protocol and
 
 ### Bitcoin client
 
-Software that runs and connects to the Bitcoin network.
+Software that runs and/or connects to the Bitcoin network.
 
 ### Bitcoin Core client
 
