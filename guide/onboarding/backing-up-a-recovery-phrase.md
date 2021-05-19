@@ -11,17 +11,17 @@ main_classes: -no-top-padding
 
 # Backing up a recovery phrase
 
-When a user generates a new wallet, it creates something called a private key (also known as a recovery phrase). A [recovery phrase]({{ 'guide/glossary/#recovery-phrase' | relative_url }}), is a group of 12 or 24 words that let users recover funds if wallet access is lost. Likewise, users who lose both their recovery phrase and wallet access permanently lose their bitcoin. Arguably, this creates one of the toughest design problems within the space.
+When a user generates a new wallet, it creates something called a recovery phrase. A [recovery phrase]({{ 'guide/glossary/#recovery-phrase' | relative_url }}), is a group of 12 or 24 words that let users recover funds if wallet access is lost. Likewise, users who lose both their recovery phrase and wallet access permanently lose their bitcoin. Arguably, this creates one of the toughest design problems within the space.
 
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/verify-recovery-phrase.png"
-   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/verify-recovery-phrase@2x.png"
+   image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/copy-recovery-phrase.png"
+   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/copy-recovery-phrase@2x.png"
    width = 250
-   height = 250
+   height = 460
    alt-text = "Recovery phrase interface"
-   caption = "Typical recovery phrase UI from the [UI Kit](Bitcoin Wallet UI Kit)"
+   caption = "Typical recovery phrase UI from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=649%3A760)"
    layout = "float-left-desktop -background -shadow"
 %}
 
@@ -41,4 +41,4 @@ In the [private key management]({{ 'guide/private-key-management/introduction/' 
 
 However, there may be times when it is necessary to use a manual backup alternative, as it can be low tech and easily accessible.
 
-The next sections will look at some UI considerations for [automatic cloud backups]({{ 'guide/onboarding/backing-up-recovery-phrase/automatic-cloud-backup' | relative_url }}) and [manual backups]({{ 'guide/onboarding/backing-up-recovery-phrase/manual-backup' | relative_url }}).
+The next sections will look at some UI considerations for [automatic cloud backups]({{ '/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup' | relative_url }}) and [manual backups]({{ 'guide/onboarding/backing-up-a-recovery-phrase/manual-backup/' | relative_url }}).
