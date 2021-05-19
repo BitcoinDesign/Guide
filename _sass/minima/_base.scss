@@ -55,9 +55,12 @@ ul, ol, dl, figure,
 
 hr {
   margin-top: $spacing-unit;
-  margin-bottom: $spacing-unit;
-  border: 1px solid rgba(var(--front), 0.05);
+  border: 1px solid rgba(var(--front), 0.1);
   border-width: 1px 0 0;
+
+  & + p {
+    margin-top: $spacing-unit;
+  }
 }
 
 /**
@@ -175,12 +178,19 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: $brand-color;
-  border-left: 4px solid $border-color-01;
-  padding-left: $spacing-unit / 2;
-  @include relative-font-size(1.125);
-  font-style: italic;
+  background: #f8f8f8;
+  padding: 24px;
+  text-align: center;
+  border: none;
+  font-style: normal;
+  font-weight: 400;
   box-sizing: border-box;
+
+  cite {
+    display: inline-block;
+    @include responsive('font-size', 16, 22);
+    font-style: normal;
+  }
 
   > :last-child {
     margin-bottom: 0;
@@ -189,6 +199,13 @@ blockquote {
   i, em {
     font-style: normal;
   }
+}
+
+blockquote,
+blockquote > p {
+  @include responsive('font-size', 22, 28);
+  line-height: 1.4;
+  color: #474747;
 }
 
 
@@ -242,8 +259,8 @@ pre {
   max-width: calc(#{$content-width} - (#{$spacing-unit}));
   margin-right: auto;
   margin-left: auto;
-  padding-right: $spacing-unit / 3 * 2;
-  padding-left: $spacing-unit / 3 * 2;
+  // padding-right: $spacing-unit / 3 * 2;
+  // padding-left: $spacing-unit / 3 * 2;
   @include clearfix;
 
   @include media-query(large) {
@@ -296,6 +313,7 @@ pre {
  * Tables
  */
 table {
+  margin-top: $spacing-unit;
   margin-bottom: $spacing-unit;
   width: 100%;
   text-align: $table-text-align;

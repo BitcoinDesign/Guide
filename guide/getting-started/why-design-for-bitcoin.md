@@ -5,7 +5,7 @@ nav_order: 3
 parent: Getting started
 permalink: /guide/getting-started/why-design-for-bitcoin/
 main_classes: -no-top-padding
-image: /assets/images/guide/getting-started/why-design-for-bitcoin/why-design-for-bitcoin-preview.jpg
+image: https://bitcoin.design/assets/images/guide/getting-started/why-design-for-bitcoin/why-design-for-bitcoin-preview.jpg
 ---
 
 <!--
@@ -37,38 +37,38 @@ Illustration sources
 
 # Why design for bitcoin
 
-At first, bitcoin may sound primarily like a complex technical innovation. A closer inspection reveals exciting new opportunities for designers to shape user experiences that can make a fundamental difference for people around the world. So much of our lives is tied to money and financial systems, yet we sometimes have so little control or influence. Bitcoin has the potential to balance this, and its up to us to make it a reality.
+Bitcoin lets designers seeking the next big challenge build a new kind of money and how we send, spend, save, and store that money. Since Bitcoin’s brand has no owner to set it in stone, you can still have a big impact on Bitcoin even if you aren’t a product designer. And that’s just for starters.
 
-## Be on the cutting edge
+## It’s the internet of money
 
-The bitcoin white paper was released in 2008. Over a decade later, it is still a young and maturing technology full of potential. Like working early on the internet, there are big and exciting questions to be discussed and design decisions to be made. Designing for bitcoin is a fantastic and rewarding challenge.
+Even though it was released in 2008, Bitcoin is still in its infancy. Working on Bitcoin today is like working on the Internet in its early days—many of the biggest and most exciting problems have yet to be solved or even discovered.
 
-## Permissionless
+## Build what you want
 
-The idea that there are no gatekeepers is baked into the foundation of bitcoin and its ecosystem. A bitcoin wallet designed by you is just as official as one created by the biggest corporation.
+Bitcoin is permissionless; this means that there are no individual, corporate, or governmental gatekeepers deciding what’s allowed, so anything that you build has the potential to grow beyond what even the most well-funded can imagine.
 
-## Blaze the trail
+## Blaze trails one pixel at a time
 
-There are still very few dedicated designers working in the bitcoin ecosystem. As we have seen with the evolution of the internet, it takes time for the world to adopt new technology. If you are curious and excited about new challenges, here's your chance.
+Few open designers currently work full-time on Bitcoin. Most have 9–5 jobs, and like most of Bitcoin’s open-source developers, contribute when they can. As the ecosystem grows, more opportunities to be among the first full-time Bitcoin designers are bound to open up.
+
+So if you’re looking for the next big thing in design, you found it.
 
 ## Design for your needs
 
-Many bitcoin projects start by identifying an unmet need. Unlike traditional finance, the barriers to entry are incredibly low. So if you were ever unhappy with the service of your bank for financial provider, here's your chance to shape something better.
+Many design projects start by identifying an unmet need then designing something that meets it. Unlike traditional finance, the barriers to entry into Bitcoin are shallow. So if you feel like your needs aren’t being met by your bank or service provider, here’s your chance to shape something better.
 
 ## Work in public
 
-Bitcoin is open-source, and designing for bitcoin allows you also work on the same ideas of publicly sharing and collaborating on design information. Free from the structures of agencies and corporations, open collaboration allows every participant to have a voice and shape the way they work based on their interests and preferences. Find out more about [open design]({{ '/guide/getting-started/open-design/' | relative_url }}).
+Bitcoin development is open-source. Designing for Bitcoin is no different. It lets you learn, grow, and exchange ideas in the same open and collaborative way. Learn out more about the [open design]({{ '/guide/getting-started/open-design/' | relative_url }}) philosophy.
 
 ## Design money
 
-Money is a powerful force and therefore heavily regulated and controlled. The composition of bitcoin allows us to trust in its value and availability while also providing vast freedom to experiment and build on top of it. The emergence of thousands of so-called alternative coins, hundreds of wallets and the many bitcoin businesses are the clearest signifier as to just how open this space is.
+Central authorities tightly control Government-issued currencies. This means that they are anything but open and experimental. At every level, Bitcoin places a great deal of value on openness and experimentation, letting designers build the future of money in their own way. The emergence of thousands of “alternative” coins, hundreds of wallets, and countless Bitcoin businesses signify just how open this space is.
 
 ## Join a global community
 
-The doors are wide open and bitcoin design is discussed publicly online and any social media service you can think of. Design and build with friends and strangers, participate in the various communities and help shape an ecosystem for design and creativity.
+Design and build experiences with friends and strangers. Participate in or even help lead one of the fastest growing design ecosystems in the world.
 
 ---
 
 Dive deeper into what [open design]({{ '/guide/getting-started/open-design/' | relative_url }}) means.
-
-

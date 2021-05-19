@@ -21,7 +21,7 @@
                 <a class="page-link{% if current_page == menu_page %} active{% endif %}" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
 
                 {%- if my_page.title contains 'Guide' -%}
-                  {% include secondary-nav.html %}
+                  {% include secondary-nav.html id="top" %}
                 {% endif %}
               {%- endif -%}
             {% endif %}

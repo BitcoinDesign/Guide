@@ -1,92 +1,124 @@
 ---
-layout: page
+layout: guide
 title: Projects
 description: Projects some of us are involved in or think highly of.
 permalink: /projects/
 main_nav: true
 nav_order: 3
-image: /assets/images/projects-preview.jpg
+main_classes: -no-top-padding
+image: https://bitcoin.design/assets/images/projects/projects-preview.jpg
 projects:
   - name: Bitcoin Design Guide
     description: The primary project we are working on, a resource for designers to create better Bitcoin products faster.
-    image: /assets/images/contribute/bitcoin-design-guide.svg
+    image:
+      url: /assets/images/contribute/bitcoin-design-guide.svg
+      width: 75
+      height: 75
     links:
       - name: Site
         link: https://bitcoin.design/guide
-      - name: Repository
-        link: https://github.com/BitcoinDesign/Guide
-  - name: Bitcoin Core
-    description: One of the oldest and best-maintained Bitcoin clients.
-    image: /assets/images/contribute/bitcoin-core.svg
+      - name: How to contribute
+        link: https://bitcoin.design/guide/contribute/
+  - name: Bitcoin icon set
+    description: Icons for typical needs of Bitcoin applications. Includes common generic icons like arrows, and more unique ones like a wallet, keys, mining, and Bitcoin symbols.
+    image:
+      url: /assets/images/contribute/bitcoin-icon-set.svg
+      width: 75
+      height: 75
     links:
       - name: Site
-        link: https://bitcoincore.org/
-      - name: Contribute
-        link: https://bitcoincore.org/en/contribute/
-  - name: BTCPay Server
-    description: BTCPay Server is a self-hosted, open-source bitcoin payment processor, built and maintained by a world-wide community of passionate contributors.
-    image: /assets/images/contribute/btcpay.svg
+        link: https://bitcoinicons.com
+      - name: Figma
+        link: https://www.figma.com/community/file/948545404023677970/Bitcoin-icon-set
+      - name: Github
+        link: https://github.com/BitcoinDesign/Bitcoin-Icons
+collaborations:
+  - name: Specter
+    description: A watch-only coordinator for multi-signature and single-key Bitcoin wallets.
+    image:
+      url: /assets/images/contribute/specter.png
+      width: 75
+      height: 75
     links:
       - name: Site
-        link: https://btcpayserver.org/
-      - name: Contribute
-        link: https://docs.btcpayserver.org/Contribute/
-  - name: photon-lib
-    description: A high level library for building bitcoin wallets with react native.
-    image: /assets/images/contribute/photon-lib.png
+        link: https://specter.solutions/
+      - name: Collaboration
+        link: https://github.com/BitcoinDesign/Meta/issues/69
+  - name: Zeus
+    description: Manage your Bitcoin and Lightning node on the go.
+    image:
+      url: /assets/images/contribute/zeus.png
+      width: 75
+      height: 75
     links:
       - name: Site
-        link: https://photonsdk.org/
-      - name: Repository
-        link: https://github.com/photon-sdk
-  - name: Bisq
-    site: 
-    description: Bisq is an open-source, peer-to-peer application that allows you to buy and sell cryptocurrencies in exchange for national currencies. No registration required.
-    image: /assets/images/contribute/bisq.svg
-    links:
-      - name: Site
-        link: https://bisq.network/
-      - name: Contribute
-        link: https://docs.bisq.network/contributor-checklist.html
-  - name: Wasabi
-    description: Wasabi is an open-source, non-custodial, privacy-focused Bitcoin wallet for Desktop, that implements trustless CoinJoin.
-    image: /assets/images/contribute/wasabi-wallet.png
-    links:
-      - name: Site
-        link: https://wasabiwallet.io/
-      - name: Contribute
-        link: https://docs.wasabiwallet.io/building-wasabi/ContributionChecklist.html
-  - name: Samourai
-    description: A modern bitcoin wallet hand forged to keep your transactions private your identity masked and your funds secured.
-    image: /assets/images/contribute/samourai-wallet.svg
-    links:
-      - name: Site
-        link: https://samouraiwallet.com/
-      - name: Repository
-        link: https://github.com/Samourai-Wallet
-  - name: Electrum
-    description: Electrum was created by Thomas Voegtlin in November 2011. Since then, various developers have contributed to its source code.
-    image: /assets/images/contribute/electrum.svg
-    links:
-      - name: Site
-        link: https://electrum.org/
-      - name: Community
-        link: https://electrum.org/#community
+        link: https://zeusln.app/
+      - name: Collaboration
+        link: https://github.com/BitcoinDesign/Meta/issues/70
 ---
 
-These are some of the bitcoin projects some of us are either involved in, and projects we think highly of. If you are interested in helping out, you can either ask directly in the communities of those projects, or reach out in our Slack to see if there are already ongoing efforts.
+<!--
 
-<div class="grid projects">
+Editor's notes
+
+Header illustration source:
+https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=1127%3A7710
+
+-->
+
+{% include picture.html
+   image = "/assets/images/projects/projects.jpg"
+   retina = "/assets/images/projects/projects@2x.jpg"
+   mobile = "/assets/images/projects/projects-mobile.jpg"
+   mobileRetina = "/assets/images/projects/projects-mobile@2x.jpg"
+   alt-text = "Strong handshake"
+   width = 1600
+   height = 900
+   layout = "full-width"
+%}
+
+# Projects
+
+We don't just chat about design. We also actively improve design in the Bitcoin ecosystem. Projects launched by community members often focus on creating design resources. With collaborations, we try to help other Bitcoin projects improve their products' design and user experience. For more details, see our [Collaboration](https://github.com/BitcoinDesign/Meta/blob/master/Collaboration.md) and [Project](https://github.com/BitcoinDesign/Meta/blob/master/Projects.md) documents. If you are interested in getting involved, reach out directly to the projects below, or reach out in our [Slack]({{ site.slack_invite_url }}).
+
+## Community projects
+
+These are design projects we have initiated ourselves.
+
+<div class="project-grid">
 {% for item in page.projects %}
-      <div class="grid-item">
-        <img src="{{ item.image | relative_url }}" />
+      <div class="project-grid-item">
+        <div class="project-grid-item-image">
+          <img src="{{ item.image.url | relative_url }}" width="{{ item.image.width }}" height="{{ item.image.height }}" alt="" />
+        </div>
         <h3>{{- item.name -}}</h3>
         <p>{{- item.description -}}</p>
         <div class="links">
-	        {% for link in item.links %}
-	        	<a href="{{- link.link -}}" target="_blank" rel="noopener">{{ link.name }}</a>
-	        {% endfor %}
-    	</div>
+          {% for link in item.links %}
+            <a href="{{- link.link -}}" target="_blank" rel="noopener">{{ link.name }}</a>
+          {% endfor %}
+        </div>
+      </div>
+{% endfor %}
+</div>
+
+## Collaborations
+
+For a full list, see our [collaboration board](https://github.com/BitcoinDesign/Meta/projects/2).
+
+<div class="project-grid">
+{% for item in page.collaborations %}
+      <div class="project-grid-item">
+        <div class="project-grid-item-image">
+          <img src="{{ item.image.url | relative_url }}" width="{{ item.image.width }}" height="{{ item.image.height }}" alt="" />
+        </div>
+        <h3>{{- item.name -}}</h3>
+        <p>{{- item.description -}}</p>
+        <div class="links">
+          {% for link in item.links %}
+            <a href="{{- link.link -}}" target="_blank" rel="noopener">{{ link.name }}</a>
+          {% endfor %}
+      </div>
       </div>
 {% endfor %}
 </div>

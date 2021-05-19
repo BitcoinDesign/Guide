@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+    jekyll:
+        image: jekyll/jekyll:4
+        ports:
+            - '4000:4000'
+        volumes:
+            - '.:/srv/jekyll'
+        command: jekyll serve

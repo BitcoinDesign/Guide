@@ -1,0 +1,91 @@
+article.guide {
+  .do {
+    margin-top: $spacing-unit;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f8f8f8;
+    @include responsive('padding', 20, 30);
+
+    .icon {
+      flex-grow: 0;
+      display: flex;
+      align-items: center;
+      padding-top: 2px;
+
+      &.-green {
+        svg {
+          background-color: $green;
+        }
+      }
+
+      &.-red {
+        svg {
+          background-color: $red;
+        }
+      }
+
+      svg {
+        display: block;
+        background-color: $blue;
+        border-radius: 3px;
+        width: 24px;
+        height: 24px;
+        color: white;
+        vertical-align: middle;
+        transform: translateY(-2px);
+      }
+    }
+
+    h6 {
+      margin: 0 0 0 $spacing-unit/3;
+      padding: 0px 0 0 0;
+      font-size: 18px;
+      font-weight: 500;
+      flex-grow: 1;
+      flex-basis: 50%;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    .copy {
+      p {
+        & + figure {
+          margin-top: $spacing-unit/3;
+        }
+      }
+
+      figure {
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .dos {
+    display: flex;
+
+    @include media-query(small) {
+      flex-direction: column;
+
+      .do {
+        & + .do {
+          margin-top: $spacing-unit/3*2;
+        }
+      }
+    }
+
+    @include media-query(medium-up) {
+      .do {
+        flex-basis: 30%;
+        flex-grow: 1;
+
+        & + .do {
+          margin-left: $spacing-unit/3*4;
+        }
+      }
+    }
+  }
+}

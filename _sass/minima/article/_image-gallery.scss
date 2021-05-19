@@ -1,0 +1,49 @@
+article.guide {
+  .image-gallery {
+    display: flex;
+    margin-top: $spacing-unit;
+    background-color: #f8f8f8;
+    justify-content: center;
+    max-width: none !important;
+
+    figure {
+      margin-top: 0;
+      margin-bottom: 0;
+      float: left;
+      // margin-right: $spacing-unit;
+
+      img {
+        box-shadow: 0 20px 10px -8px rgba(black, 0.05);
+        border: 1px solid rgba(black, 0.1);
+      }
+    }
+
+    @include media-query(small) {
+      flex-direction: column;
+      align-items: center;
+      margin-left: -$spacing-unit / 2;
+      margin-right: -$spacing-unit / 2;
+      padding: $spacing-unit $spacing-unit/2;
+
+      figure {
+        margin: 0;
+
+        & + figure {
+          margin-top: $spacing-unit;
+        }
+      }
+    }
+
+    @include media-query(medium-up) {
+      margin-left: -$spacing-unit;
+      margin-right: -$spacing-unit;
+      padding: $spacing-unit;
+
+      figure {
+        & + figure {
+          margin-left: $spacing-unit/3*4;
+        }
+      }
+    }
+  }
+}

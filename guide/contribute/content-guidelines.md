@@ -2,11 +2,24 @@
 layout: guide
 title: Content guidelines
 description: Writing tips for authors of the Bitcoin Design Guide.
-nav_order: 2
+nav_order: 3
 parent: Contribute to guide
+main_classes: -no-top-padding
 permalink: /guide/contribute/content-guidelines/
-image: /assets/images/guide/contribute/content-guidelines-preview.jpg
+image: https://bitcoin.design/assets/images/guide/contribute/content-guidelines/content-guidelines-preview.jpg
 ---
+
+{% include picture.html
+   image = "/assets/images/guide/contribute/content-guidelines/content-guidelines.jpg"
+   retina = "/assets/images/guide/contribute/content-guidelines/content-guidelines@2x.jpg"
+   mobile = "/assets/images/guide/contribute/content-guidelines/content-guidelines-mobile.jpg"
+   mobileRetina = "/assets/images/guide/contribute/content-guidelines/content-guidelines-mobile@2x.jpg"
+   alt-text = "How to correctly spell and capitalize Bitcoin"
+   width = 1600
+   height = 800
+   layout = "full-width"
+%}
+
 
 # Content guidelines
 
@@ -14,7 +27,7 @@ The Bitcoin Design Guide is the work of many authors with different backgrounds,
 
 ### Know your reader
 
-This guide is crafted for anyone interested in building an effective Bitcoin application. To understand who you are writing for, familiarize yourself with our [Target audience]({{ '/guide/target-audience' | relative_url }}).
+This guide is crafted for anyone interested in building an effective Bitcoin application. A large part of this group are designers and creatives, but also front-end developers, project managers, and others who actively shape the end-user experience. Consider their perspectives and needs first and avoid going into topics that are not relevant to these readers' goals.
 
 ### Speak to the reader
 
@@ -64,16 +77,6 @@ The Design Guide is a set of recommended solutions and practices based on our re
 ### Show, don’t tell
 
 When it's possible, try to provide an example or a visual instead of highly-technical or text-heavy explanation. Feel free to reference other software using screenshots.
-
-##### Do
-
-*The user’s wallet currently has a balance of 2.845 BTC, and is comprised of 4 UTXOs:*
-* *1 BTC from Ed*
-* *0.5 BTC from Ed*
-* *0.845 BTC from Jane*
-* *0.5 from Joe*
-*These UTXOs can also be grouped into “clusters” from the individual senders (see diagram)*.
-![](assets/images/payments/cluster-options.png)
 
 ### Use the right medium
 

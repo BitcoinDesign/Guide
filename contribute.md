@@ -6,7 +6,7 @@ permalink: /contribute/
 main_nav: true
 nav_order: 2
 main_classes: -no-top-padding
-image: /assets/images/contribute/contribute-preview.jpg
+image: https://bitcoin.design/assets/images/contribute/contribute-preview.jpg
 ---
 
 {% include picture.html
@@ -49,6 +49,7 @@ If you are not familiar with the concepts of open design, we have a [great intro
 ## Bitcoin Design Guide
 
 - [View the guide]({{ 'guide' | relative_url }})
+- We have a whole section on [how to contribute]({{ 'guide/contribute/' | relative_url }})
 - Follow progress on the [project board](https://github.com/BitcoinDesign/Guide/projects/1)
 - Discuss on the [#bitcoin-design-guide](https://bitcoindesign.slack.com/archives/C015856BDME) Slack channel
 - Review code and content on the [github repository](https://github.com/BitcoinDesign/Guide)

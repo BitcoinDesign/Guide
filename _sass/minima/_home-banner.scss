@@ -6,6 +6,16 @@
   max-width: 1680px;
   margin-left: auto;
   margin-right: auto;
+  background-color: var(--banner-background-color);
+  background-image: var(--banner-background-path-mobile);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  transition: background-color 150ms $ease;
+
+  @include retina() {
+    background-image: var(--banner-background-path-mobile-retina);
+  }
 
   .home-banner-copy-wrapper {
     background-color: var(--copy-background-color);
@@ -78,15 +88,15 @@
   .home-banner-image {
     width: 100%;
     padding-bottom: 100%;
-    background-color: var(--background-image-color);
-    background-image: var(--background-image-path-mobile);
+    background-color: var(--banner-image-color);
+    background-image: var(--banner-image-path-mobile);
     background-size:     cover;
     background-repeat:   no-repeat;
-    background-position: center center; 
+    background-position: center center;
     transition: background-color 150ms $ease;
 
     @include retina() {
-      background-image: var(--background-image-path-mobile-retina);
+      background-image: var(--banner-image-path-mobile-retina);
     }
   }
 
@@ -112,12 +122,18 @@
     display: flex;
     flex-direction: row;
     align-items: stretch;
+    background-image: var(--banner-background-path);
+    background-position: center center;
+
+    @include retina() {
+      background-image: var(--banner-background-path-retina);
+    }
 
     .home-banner-image {
-      background-image: var(--background-image-path);
+      background-image: var(--banner-image-path);
 
       @include retina() {
-        background-image: var(--background-image-path-retina);
+        background-image: var(--banner-image-path-retina);
       }
     }
 
@@ -156,6 +172,7 @@
   padding: 5px 15px;
   position: relative;
   z-index: 1;
+  box-sizing: border-box;
 
   .home-banner-info-wrapper {
     width: 100%;

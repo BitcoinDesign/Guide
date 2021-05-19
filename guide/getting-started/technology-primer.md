@@ -5,7 +5,7 @@ nav_order: 10
 parent: Getting started
 permalink: /guide/getting-started/technology-primer/
 main_classes: -no-top-padding
-image: /assets/images/guide/getting-started/technology/technology-primer-preview.jpg
+image: https://bitcoin.design/assets/images/guide/getting-started/technology/technology-primer-preview.jpg
 ---
 
 <!--
@@ -16,7 +16,7 @@ An introduction to bitcoin tech concepts based on simple questions readers might
 like "What is a bitcoin" and "How do I own bitcoin". With further reading, more concepts
 are introduced and connections between concepts are made.
 
-This is only meant as an overview. As this is a design guide, future additions to this 
+This is only meant as an overview. As this is a design guide, future additions to this
 content should weigh off whether to add it here, create sub-pages or reference external
 resources.
 
@@ -27,10 +27,10 @@ Illustration sources
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/getting-started/technology/blueprint.jpg"
-   retina = "/assets/images/guide/getting-started/technology/blueprint@2x.jpg"
-   mobile = "/assets/images/guide/getting-started/technology/blueprint-mobile.jpg"
-   mobileRetina = "/assets/images/guide/getting-started/technology/blueprint-mobile@2x.jpg"
+   image = "/assets/images/guide/getting-started/technology/blueprint.png"
+   retina = "/assets/images/guide/getting-started/technology/blueprint@2x.png"
+   mobile = "/assets/images/guide/getting-started/technology/blueprint-mobile.png"
+   mobileRetina = "/assets/images/guide/getting-started/technology/blueprint-mobile@2x.png"
    alt-text = "Blueprint illustration of a bitcoin symbol"
    width = 1600
    height = 800
@@ -40,7 +40,7 @@ Illustration sources
 
 # Bitcoin technology primer
 
-It can take many years to understand bitcoin in every detail, but luckily you don’t need to know everything to design great products. Let’s take a look at the most important ideas and technologies behind Bitcoin by answering some basic questions.
+It can take many years to understand bitcoin in every detail, but luckily you don’t need to know everything to design great products. Let’s look at the most important ideas and technologies behind Bitcoin by answering some basic questions.
 
 ## Is it Bitcoin or bitcoin?
 
@@ -70,14 +70,13 @@ It's both. Lowercase bitcoin refers to the currency. So you may have 1 bitcoin i
    width = 400
    height = 400
    layout = "float-right-desktop"
-   caption = 'Texture by [Bilal O.](https://unsplash.com/@lightcircle){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
 %}
 
-Bitcoin (as in "I have 1 bitcoin") are just numbers in the database of transactions often referred to as the bitcoin block chain.
+Bitcoin (as in "I have 1 bitcoin") are just numbers in the database of transactions often referred to as the bitcoin blockchain.
 
-A transaction involves sending bitcoin from one address to another. This reduces the available balance of the sending address, and increases the balance of the receiving address. A small amount is deducted to pay for the transaction fee.
+A transaction involves sending bitcoin from one address to another. This reduces the available balance of the sending address and increases the balance of the receiving address. A small amount is deducted to pay for the transaction fee.
 
-Owning a bitcoin therefore means being in control of one or more addresses that have received bitcoin.
+Owning a bitcoin, therefore, means being in control of one or more addresses that have received bitcoin.
 
 </div>
 
@@ -88,7 +87,7 @@ Owning a bitcoin therefore means being in control of one or more addresses that 
 {% include image.html
    image = "/assets/images/guide/getting-started/technology/addresses.jpg"
    retina = "/assets/images/guide/getting-started/technology/addresses@2x.jpg"
-   alt-text = "Examples of addresses in a bitcoin wallet" 
+   alt-text = "Examples of addresses in a bitcoin wallet"
    width = 400
    height = 400
    layout = "float-right-desktop"
@@ -134,7 +133,7 @@ To do this, a wallet application needs to know your full transaction history in 
 
 No. Most wallets generate them using a standard called [Hierarchical Deterministic Wallets](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki){:target="_blank"}. All your addresses and private keys are derived from a single piece of information, called the recovery phrase.
 
-This makes backing up your wallet fairly easy, as you only need to securely store your recovery phrase to restore your wallet. However, it also concentrates the risk of having your bitcoin stolen or lost to this one piece of information. Because of this, supporting and guiding users in backing up and securing their wallets is one of the most fundamental goals for designers.
+This makes backing up your wallet fairly easy, as you only need to store your recovery phrase to restore your wallet securely. However, it also concentrates the risk of having your bitcoin stolen or lost to this one piece of information. Thus, you supporting and guiding users in backing up and securing their wallets are among the most fundamental goals for designers.
 
 </div>
 
@@ -151,9 +150,9 @@ This makes backing up your wallet fairly easy, as you only need to securely stor
    layout = "float-right-desktop"
 %}
 
-As we now know, bitcoin are just numbers linked to addresses. An address can receive bitcoin, but in oder to spend those bitcoin, a private key is needed. Wallets actually create private keys first, and then derive matching addresses from them. While an address can be publicly shared, the private key should be kept a secret.
+As we now know, bitcoins are just numbers linked to addresses. An address can receive bitcoin, but to spend that bitcoin, a private key is needed. Wallets create private keys first and then derive matching addresses from them. While an address can be publicly shared, the private key should be kept a secret.
 
-Wallet software typically hides private keys from users, as there is no need to interact with them directly. 
+Wallet software typically hides private keys from users, as there is no need to interact with them directly.
 
 </div>
 
@@ -172,7 +171,7 @@ Wallet software typically hides private keys from users, as there is no need to 
 
 A private key is used to scramble information. The matching public key (which we call an address in Bitcoin) can unscramble the information again. This allows for the transfer of information without any third party being able to understand it.
 
-Note that there is a strong element of identity in this mechanism, as it ensures that only the recipient can unscramble the message while also being able to verify that the message actually came from the expected sender. This requires that both parties securely exchange public keys with each other in a secure way.
+Note that there is a strong element of identity in this mechanism, as it ensures that only the recipient can unscramble the message while also verifying that the message came from the expected sender. This requires that both parties securely exchange public keys with each other in a secure way.
 
 **More info**
 - [Public key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography){:target="_blank"}
@@ -211,7 +210,7 @@ One of the most important activities of the Bitcoin network is to verify that si
    layout = "float-right-desktop"
 %}
 
-No. Transactions are stored in a plain format in the Bitcoin network for anyone with an internet connection to see and analyze. This allows for observers to verify that all transactions in the system are valid and that nobody spends bitcoin they don't have. This transparency is unique to Bitcoin compared to any other traditional currency. At the same time it introduces potential privacy problems.
+No. Transactions are stored in a plain format in the Bitcoin network for anyone with an internet connection to see and analyze. This allows observers to verify that all transactions in the system are valid and that nobody spends bitcoin they don't have. This transparency is unique to Bitcoin compared to any other traditional currency. At the same time, it introduces potential privacy problems.
 
 **More info**
 - [Explorer software]({{ '/guide/getting-started/software/#block-explorers' | relative_url }})
@@ -229,7 +228,6 @@ No. Transactions are stored in a plain format in the Bitcoin network for anyone 
    width = 400
    height = 400
    layout = "float-right-desktop"
-   caption = 'Texture by [Emilio Garcia](https://unsplash.com/@piensaenpixel){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
 %}
 
 Every transaction needs to be confirmed before the recipient can consider the involved bitcoin theirs. This waiting line for new transactions is called the mempool. The Bitcoin network can only process a certain amount of transactions per day, so it may take longer to process your transactions during busy times. Transactions that involve higher fees are typically processed faster.
@@ -247,12 +245,11 @@ Every transaction needs to be confirmed before the recipient can consider the in
    width = 400
    height = 400
    layout = "float-right-desktop"
-   caption = 'Texture by [Thom Milkovic](https://unsplash.com/@thommilkovic){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
 %}
 
-This function is performed by miners, which are computers that group new transactions from the mempool into blocks and try to get those blocks accepted by the Bitcoin network. They are called miners because the creation of new blocks is rewarded by freshly minted bitcoin. This is the only way bitcoin are created, which creates heavy competition around mining.
+This function is performed by miners, which are computers that group new transactions from the mempool into blocks and try to get those blocks accepted by the Bitcoin network. They are called miners because the creation of new blocks is rewarded by freshly minted bitcoin. This is the only way bitcoins are created, which creates heavy competition around mining.
 
-Once a transaction is in a block that has been accepted by the network, it is considered as having one confirmation. With every new block created, the number of confirmations of this particular block increases.
+Once a transaction is in a block that the network has accepted, it is considered as having one confirmation. With every new block created, the number of confirmations of this particular block increases.
 
 **More info**
 - Mining [software]({{ '/guide/getting-started/software/#mining' | relative_url }}) and [hardware]({{ '/guide/getting-started/hardware/#miners' | relative_url }})
@@ -272,7 +269,7 @@ Once a transaction is in a block that has been accepted by the network, it is co
    layout = "float-right-desktop"
 %}
 
-Instead of processing each transaction individually, the Bitcoin network bundles them into blocks. Blocks are created roughly every 10 minutes, and can only contain a certain amount of transactions due to a strict file size limit. Once a block is accepted and has several confirmations, it can never be changed again.
+Instead of processing each transaction individually, the Bitcoin network bundles them into blocks. Blocks are created roughly every 10 minutes and can only contain a certain amount of transactions due to a strict file size limit. Once a block is accepted and has several confirmations, it can never be changed again.
 
 </div>
 
@@ -289,7 +286,7 @@ Instead of processing each transaction individually, the Bitcoin network bundles
    layout = "float-right-desktop"
 %}
 
-This term refers to the linking of blocks by embedding a hash (a digital fingerprint) of one block into the next one. This allows for verifying that new blocks are based on the same history of blocks that nodes in the Bitcoin network have already agreed upon.
+This term refers to linking blocks by embedding a hash (a digital fingerprint) of one block into the next one. This allows for verifying that new blocks are based on the same history of blocks that the Bitcoin network nodes have already agreed upon.
 
 </div>
 
@@ -309,7 +306,7 @@ This term refers to the linking of blocks by embedding a hash (a digital fingerp
 
 Another fundamental technique to cryptography and Bitcoin is called hashing. It is the process of taking data and applying a function that creates a unique identifier for it. This is called a hash and can be thought of as a fingerprint.
 
-Unlike encryption, a hash does not contain the original data and the hashing process cannot be reversed. Since hashes are small in size, they are a great way to verify the authenticity of information.
+Unlike encryption, a hash does not contain the original data, and the hashing process cannot be reversed. Since hashes are small in size, they are a great way to verify the information's authenticity.
 
 </div>
 
@@ -326,9 +323,9 @@ Unlike encryption, a hash does not contain the original data and the hashing pro
    layout = "float-right-desktop"
 %}
 
-While miners create blocks, nodes verify, distribute and store blocks. Just like miners, nodes are computers communicating with each other, constantly exchanging information to ensure that the rules of the Bitcoin protocol are adhered to.
+While miners create blocks, nodes verify, distribute and store blocks. Like miners, nodes are computers communicating with each other, constantly exchanging information to ensure that the Bitcoin protocol rules are adhered to.
 
-With thousands of nodes all over the world, operated by many different people, it becomes almost impossible to manipulate data this network has agreed upon. It would require at least half of these nodes to collude.
+With thousands of nodes worldwide, operated by many different people, it becomes almost impossible to manipulate data this network has agreed upon. It would require at least half of these nodes to collude.
 
 **More info**
 - Node [software]({{ '/guide/getting-started/software/#nodes' | relative_url }}) and [hardware]({{ '/guide/getting-started/hardware/#nodes' | relative_url }})
@@ -337,7 +334,7 @@ With thousands of nodes all over the world, operated by many different people, i
 
 ### There's a lot more
 
-These are some of the basic technological concepts that make Bitcoin work. Each one individually is complex, and the interplay between them is a whole other area of interest. Dive into the other chapters in this guide to explore the technnology and its applications in more detail.
+These are some of the basic technical concepts that make Bitcoin work. Each one individually is complex, and the interplay between them is a whole other area of interest. Dive into the other chapters in this guide to explore the technology and its applications in more detail.
 
 <div class="center" markdown="1">
 
@@ -350,8 +347,7 @@ These are some of the basic technological concepts that make Bitcoin work. Each 
    layout = "float-right-desktop"
 %}
 
-Now, if you'd like to go all the way to the beginning of Bitcoin, the most fundamental read is the [Bitcoin whitepaper](https://bitcoin.org/bitcoin.pdf){:target="_blank"}. Published on October 31, 2008 by the mysterious Satoshi Nakamoto, it lays out the fundamental system design in only 9 short pages. It is not necessarily an easy read, but still highly recommended reading.
-
+Now, if you'd like to go all the way to the beginning of Bitcoin, the most fundamental read is the [Bitcoin whitepaper](https://bitcoin.org/bitcoin.pdf){:target="_blank"}. Published on October 31, 2008, by the mysterious Satoshi Nakamoto, it lays out the fundamental system design in only nine short pages. It is not necessarily an easy read, but still highly recommended reading.
 </div>
 
 ---
