@@ -39,11 +39,11 @@ There are two categories of coin selection strategies that are used in bitcoin a
    height = 400
 %}
 
-## Hard Contraints, Optimisations, and Labels
+### Hard Contraints, Optimisations, and Labels
 
 Before exploring some popular coin selection strategies, it’s worth noting the following when making a bitcoin payment in relation to UTXOs.
 
-### Constraints
+#### Constraints
 
 - The transaction must have sufficient funding
   - In order to send X, the transaction inputs must at least equate to X.
@@ -52,7 +52,7 @@ Before exploring some popular coin selection strategies, it’s worth noting the
 - Avoiding Dust
   - Transactions that create dust outputs are not relayed and confirmed by most nodes and miners in the network.
 
-### Optimisations & Effects
+#### Optimisations & Effects
 
 Coin selection will always lead to certain effects and outcomes which can either optimise or hinder our bitcoin payments. Below is a breakdown of the three most common effects of coin control.
 
@@ -65,7 +65,7 @@ Coin selection will always lead to certain effects and outcomes which can either
 
 
 
-### The Importance of Labels
+#### The Importance of Labels
 
 When wallet owners receive coins (either in the form of an incoming payment, or a change output from an outgoing payment) they are able to label these coins, specifying “who” it is from. Labels not only provide context to a wallet’s transaction history, but also are essential in identifying the origin of coins - making it easier to avoid a cross contamination of payment, balance, or address information during future transactions as inputs are selected.
 
