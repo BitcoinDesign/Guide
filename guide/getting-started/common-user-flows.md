@@ -44,8 +44,14 @@ Some applications are like Swiss Army Knives. They provide many different indivi
 
 Let's take a look at some common user needs and workflows that can be created for them.
 
-1. Table of contents
+---
+
+<div class="glossary-toc" markdown="1">
+* Table of contents
 {:toc}
+</div>
+
+---
 
 ## Orientation
 

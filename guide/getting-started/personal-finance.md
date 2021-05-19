@@ -46,8 +46,14 @@ This section uses the traditional personal finance lens to think about what type
 
 Let's take a look at six different categories of how somebody may want to organize their finances. Note that the following examples always assume that a user wants to keep as much [self-custody](/guide/foundations/principles/#self-custody) as reasonable while balancing [security](/guide/foundations/principles/#security) and [privacy](/guide/foundations/principles/#privacy).
 
-1. Table of contents
+---
+
+<div class="glossary-toc" markdown="1">
+* Table of contents
 {:toc}
+</div>
+
+---
 
 ## Day-to-day spending
 
