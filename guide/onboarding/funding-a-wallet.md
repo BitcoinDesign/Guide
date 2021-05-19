@@ -40,7 +40,7 @@ Earning bitcoin through exchange of goods and services is a great option. Some i
    width = 250
    height = 550
    alt-text = "Showing recovery phrase one word at a time"
-   caption = "Buy bitcoin screen from the from [Wallet UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1228%3A28550)"
+   caption = "Buy bitcoin screen from the [Wallet UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1228%3A28550)"
    layout = "float-left-desktop -background -shadow"
 %}
 
