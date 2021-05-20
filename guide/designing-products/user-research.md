@@ -195,4 +195,4 @@ Links to:
 
 ---
 
-Frameworks are helpful tools to organize user behavior. Our next section introduces one with a focus on [personal finance]({{ '/guide/designing-products/personal-finance/' | relative_url }}).
+Frameworks are helpful tools to organize user behavior. Our next section introduces one with a focus on the [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/' | relative_url }}).

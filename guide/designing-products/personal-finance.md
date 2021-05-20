@@ -250,4 +250,4 @@ Considering your product, ask yourself these questions:
 
 ---
 
-Looking closer at the user experience, we can identify a series of common phases that together form a [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/' | relative_url }}).
+Looking closer at these use cases, we can identify a series of user actions, as outlined in [common user flows]({{ '/guide/designing-products/common-user-flows/' | relative_url }}).

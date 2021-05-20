@@ -533,4 +533,4 @@ This can be a tricky experience to address. For one, non-custodial cryptocurrenc
 
 ---
 
-Designing specific user flows may required a better understanding of the main technical concepts of bitcoin, which are covered in the [technology primer]({{ '/guide/getting-started/technology-primer/' | relative_url }}).
+That's it for this section. Keep reading to learn about [onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}).
