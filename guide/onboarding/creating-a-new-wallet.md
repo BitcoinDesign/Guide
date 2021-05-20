@@ -26,14 +26,15 @@ A few different types of wallets let you send, receive, store, and manage bitcoi
    image = "/assets/images/guide/onboarding/creating-a-new-wallet/onboarding-welcome-screen.png"
    retina = "/assets/images/guide/onboarding/creating-a-new-wallet/onboarding-welcome-screen@2x.png"
    width = 250
-   height = 250
-   alt-text = "Onboarding welcome screen"
+   height = 540
+   caption = "Cover screen from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=267%3A3874)"
+   alt-text = "Cover screen user interface"
    layout = "float-left-desktop -background -shadow"
 %}
 
 Most wallets will begin the onboarding process by creating a new or restoring an existing wallet. New users to Bitcoin will usually be going through the flow of creating a new wallet.
 
-Once an individual selects “create a new wallet”, you might present informational carousels that provide a high-level overview of the implications, benefits, and responsibility that comes with having a [self-custodial]({{ '/guide/glossary/#non-custodial--custodial-wallet' | relative_url }}) wallet. Here you can explain to your user that access to the wallet will not require collecting any sensitive information such as usernames and passwords, which is often the case with traditional financial products.
+Once an individual selects “create a new wallet”, you might present informational carousels that provide a high-level overview of the implications, benefits, and responsibility that comes with having a self-custodial wallet. Here you can explain to your user that access to the wallet will not require collecting any sensitive information such as usernames and passwords, which is often the case with traditional financial products.
 
 Rather, the user can directly access their funds as long as they have access to the private key or recovery phrase. You should help your users understand that your team do not have the ability to recover their funds in the event they lose their private key. A self custodial wallet often means the user will have to take on greater responsibilty to safely protect their private key so they can always access their funds.
 

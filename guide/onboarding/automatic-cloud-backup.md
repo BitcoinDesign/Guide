@@ -29,6 +29,7 @@ Below is an example of what the user interface might look like for an automatic 
    image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-intro.png"
    retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-intro@2x.png"
    layout = "shadow"
+   caption = "Describe to the user know what is about to happen and how it works."
    alt-text = "Screen explaining automatic cloud backups"
    width = 250
    height = 541
@@ -38,6 +39,7 @@ Below is an example of what the user interface might look like for an automatic 
      image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-password.png"
    retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-password@2x.png"
    class = "shadow"
+   caption = "Allows the user to set a password used for encryption, this could also be a PIN."
    alt-text = "The user can set a password which will be used to encrypt their recovery phrase and act as a login"
    width = 250
    height = 541
@@ -47,6 +49,7 @@ Below is an example of what the user interface might look like for an automatic 
      image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-service.png"
    retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-service@2x.png"
    class = "shadow"
+   caption = "Give the user different cloud provider options, others such as Dropbox might also be included"
    alt-text = "Screen showing saving a password to encrypt the recovery phrase"
    width = 250
    height = 541
@@ -56,6 +59,7 @@ Below is an example of what the user interface might look like for an automatic 
      image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-provider.png"
    retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-provider@2x.png"
    class = "shadow"
+   caption = "This UI will be very different depending on the cloud provider and what permissions are required"
    alt-text = "Screen of placeholder where cloud provider UI would be"
    width = 250
    height = 541
@@ -65,6 +69,7 @@ Below is an example of what the user interface might look like for an automatic 
    image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-confirmation.png"
    retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-confirmation@2x.png"
    class = "shadow"
+   caption = "Once the upload is complete it's a good idea to show a success screen and give some reassurances."
    alt-text = "Screen showing completing a cloud backup"
    width = 250
    height = 541
