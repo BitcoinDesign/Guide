@@ -1,11 +1,11 @@
 ---
 layout: guide
 title: Common user flows
-nav_order: 9
-parent: Getting started
-permalink: /guide/getting-started/common-user-flows/
+nav_order: 6
+parent: Designing Bitcoin products
+permalink: /guide/designing-products/common-user-flows/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/getting-started/common-user-flows/common-user-flows-preview.jpg
+image: https://bitcoin.design/assets/images/guide/designing-products/common-user-flows/common-user-flows-preview.jpg
 ---
 
 <!--
@@ -26,10 +26,10 @@ Illustration sources
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/getting-started/common-user-flows/common-user-flows.jpg"
-   retina = "/assets/images/guide/getting-started/common-user-flows/common-user-flows@2x.jpg"
-   mobile = "/assets/images/guide/getting-started/common-user-flows/common-user-flows-mobile.jpg"
-   mobileRetina = "/assets/images/guide/getting-started/common-user-flows/common-user-flows-mobile@2x.jpg"
+   image = "/assets/images/guide/designing-products/common-user-flows/common-user-flows.jpg"
+   retina = "/assets/images/guide/designing-products/common-user-flows/common-user-flows@2x.jpg"
+   mobile = "/assets/images/guide/designing-products/common-user-flows/common-user-flows-mobile.jpg"
+   mobileRetina = "/assets/images/guide/designing-products/common-user-flows/common-user-flows-mobile@2x.jpg"
    alt-text = "Notebook with handwritten user actions"
    caption = 'Notebook photo by [Mike Tinnion](https://unsplash.com/@m15ky){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
    width = 1600
@@ -49,15 +49,15 @@ Let's take a look at some common user needs and workflows that can be created fo
 
 ## Orientation
 
-This step is often overlooked, but before anyone uses your product, they first need to find out that it exists, understand and develop interest and decide to start using it. If users cannot quickly learn the application's purpose and benefits, they are less likely to use it. Also see the first three phases of the [usage life cycle]({% link guide/getting-started/usage-life-cycle.md %}).
+This step is often overlooked, but before anyone uses your product, they first need to find out that it exists, understand and develop interest and decide to start using it. If users cannot quickly learn the application's purpose and benefits, they are less likely to use it. Also see the first three phases of the [usage life cycle]({% link guide/designing-products/usage-life-cycle.md %}).
 
 ## Software download & installation
 
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/common-user-flows/download.jpg"
-   retina = "/assets/images/guide/getting-started/common-user-flows/download@2x.jpg"
+   image = "/assets/images/guide/designing-products/common-user-flows/download.jpg"
+   retina = "/assets/images/guide/designing-products/common-user-flows/download@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
@@ -73,8 +73,8 @@ Here are two different examples of webpages for downloading bitcoin wallet softw
 <div class="image-gallery">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/common-user-flows/app-store-bluewallet.jpg"
-   retina = "/assets/images/guide/getting-started/common-user-flows/app-store-bluewallet@2x.jpg"
+   image = "/assets/images/guide/designing-products/common-user-flows/app-store-bluewallet.jpg"
+   retina = "/assets/images/guide/designing-products/common-user-flows/app-store-bluewallet@2x.jpg"
    alt-text = "Blue Wallet app store download page"
    caption = '<a href="https://apps.apple.com/us/app/bluewallet-bitcoin-wallet/id1376878040" target="_blank">BlueWallet landing page</a> on the App Store'
    width = 400
@@ -83,8 +83,8 @@ Here are two different examples of webpages for downloading bitcoin wallet softw
 %}
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/common-user-flows/bitcoincore-com.jpg"
-   retina = "/assets/images/guide/getting-started/common-user-flows/bitcoincore-com@2x.jpg"
+   image = "/assets/images/guide/designing-products/common-user-flows/bitcoincore-com.jpg"
+   retina = "/assets/images/guide/designing-products/common-user-flows/bitcoincore-com@2x.jpg"
    alt-text = "bitcoincore.org download page"
    caption = '<a href="https://bitcoincore.org/" target="_blank">bitcoincore.org</a>'
    width = 400
@@ -101,8 +101,8 @@ The App Store landing page includes screenshots, a description, updates in the l
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/common-user-flows/onboarding.jpg"
-   retina = "/assets/images/guide/getting-started/common-user-flows/onboarding@2x.jpg"
+   image = "/assets/images/guide/designing-products/common-user-flows/onboarding.jpg"
+   retina = "/assets/images/guide/designing-products/common-user-flows/onboarding@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
@@ -128,8 +128,8 @@ You can find more screenshots [here](https://www.figma.com/file/rPyJ0Y8xg0kN4FrH
 <div class="image-slide-gallery">
 
 {% include picture.html
-   image = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-1.png"
-   retina = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-1@2x.png"
+   image = "/assets/images/guide/designing-products/common-user-flows/muun-onboarding-1.png"
+   retina = "/assets/images/guide/designing-products/common-user-flows/muun-onboarding-1@2x.png"
    alt-text = "Muun iOS app cover screen"
    caption = "Cover screen for new users."
    width = 250
@@ -138,8 +138,8 @@ You can find more screenshots [here](https://www.figma.com/file/rPyJ0Y8xg0kN4FrH
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-2.png"
-   retina = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-2@2x.png"
+   image = "/assets/images/guide/designing-products/common-user-flows/muun-onboarding-2.png"
+   retina = "/assets/images/guide/designing-products/common-user-flows/muun-onboarding-2@2x.png"
    alt-text = "Pin entry screen"
    caption = "Choosing a PIN for security."
    width = 250
@@ -148,8 +148,8 @@ You can find more screenshots [here](https://www.figma.com/file/rPyJ0Y8xg0kN4FrH
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-3.png"
-   retina = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-3@2x.png"
+   image = "/assets/images/guide/designing-products/common-user-flows/muun-onboarding-3.png"
+   retina = "/assets/images/guide/designing-products/common-user-flows/muun-onboarding-3@2x.png"
    alt-text = "Confirmation screen that a wallet was created"
    caption = "Letting users know that a wallet was successfully created."
    width = 250
@@ -158,8 +158,8 @@ You can find more screenshots [here](https://www.figma.com/file/rPyJ0Y8xg0kN4FrH
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-4.png"
-   retina = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-4@2x.png"
+   image = "/assets/images/guide/designing-products/common-user-flows/muun-onboarding-4.png"
+   retina = "/assets/images/guide/designing-products/common-user-flows/muun-onboarding-4@2x.png"
    alt-text = "Home screen"
    caption = "The home screen with a prompt to back up the wallet."
    width = 250
@@ -168,8 +168,8 @@ You can find more screenshots [here](https://www.figma.com/file/rPyJ0Y8xg0kN4FrH
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-5.png"
-   retina = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-5@2x.png"
+   image = "/assets/images/guide/designing-products/common-user-flows/muun-onboarding-5.png"
+   retina = "/assets/images/guide/designing-products/common-user-flows/muun-onboarding-5@2x.png"
    alt-text = "Security center"
    caption = "The security center guides users through different backup options."
    width = 250
@@ -178,8 +178,8 @@ You can find more screenshots [here](https://www.figma.com/file/rPyJ0Y8xg0kN4FrH
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-6.png"
-   retina = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-6@2x.png"
+   image = "/assets/images/guide/designing-products/common-user-flows/muun-onboarding-6.png"
+   retina = "/assets/images/guide/designing-products/common-user-flows/muun-onboarding-6@2x.png"
    alt-text = "Information about the emergency kit backup option"
    caption = "An instructional screen to inform users about the security option they are about to set up."
    width = 250
@@ -188,8 +188,8 @@ You can find more screenshots [here](https://www.figma.com/file/rPyJ0Y8xg0kN4FrH
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-7.png"
-   retina = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-7@2x.png"
+   image = "/assets/images/guide/designing-products/common-user-flows/muun-onboarding-7.png"
+   retina = "/assets/images/guide/designing-products/common-user-flows/muun-onboarding-7@2x.png"
    alt-text = "Starting the backup process"
    caption = "Another informational screen for the manual backup option."
    width = 250
@@ -198,8 +198,8 @@ You can find more screenshots [here](https://www.figma.com/file/rPyJ0Y8xg0kN4FrH
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-8.png"
-   retina = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-8@2x.png"
+   image = "/assets/images/guide/designing-products/common-user-flows/muun-onboarding-8.png"
+   retina = "/assets/images/guide/designing-products/common-user-flows/muun-onboarding-8@2x.png"
    alt-text = "Asking users to write down their recovery code"
    caption = "A screen that requests users to copy their recovery code."
    width = 250
@@ -208,8 +208,8 @@ You can find more screenshots [here](https://www.figma.com/file/rPyJ0Y8xg0kN4FrH
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-9.png"
-   retina = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-9@2x.png"
+   image = "/assets/images/guide/designing-products/common-user-flows/muun-onboarding-9.png"
+   retina = "/assets/images/guide/designing-products/common-user-flows/muun-onboarding-9@2x.png"
    alt-text = "Ensuring users understand their responsibility in the security mechanisms of the application"
    caption = "Confirming that users understand their responsibility in the security mechanisms of the app."
    width = 250
@@ -218,8 +218,8 @@ You can find more screenshots [here](https://www.figma.com/file/rPyJ0Y8xg0kN4FrH
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-10.png"
-   retina = "/assets/images/guide/getting-started/common-user-flows/muun-onboarding-10@2x.png"
+   image = "/assets/images/guide/designing-products/common-user-flows/muun-onboarding-10.png"
+   retina = "/assets/images/guide/designing-products/common-user-flows/muun-onboarding-10@2x.png"
    alt-text = "Success screen"
    caption = "Giving users confirmation that the app is set up properly."
    width = 250
@@ -236,8 +236,8 @@ See the [onboarding section](/guide/onboarding/introduction/) to learn more on t
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/common-user-flows/create-wallet.jpg"
-   retina = "/assets/images/guide/getting-started/common-user-flows/create-wallet@2x.jpg"
+   image = "/assets/images/guide/designing-products/common-user-flows/create-wallet.jpg"
+   retina = "/assets/images/guide/designing-products/common-user-flows/create-wallet@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
@@ -257,8 +257,8 @@ One of the most complex users flows in Bitcoin is the creation of multisignature
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/common-user-flows/import-wallet.jpg"
-   retina = "/assets/images/guide/getting-started/common-user-flows/import-wallet@2x.jpg"
+   image = "/assets/images/guide/designing-products/common-user-flows/import-wallet.jpg"
+   retina = "/assets/images/guide/designing-products/common-user-flows/import-wallet@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
@@ -274,8 +274,8 @@ We ask users to securely back up their keys when they create new wallets, to res
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/common-user-flows/secure-wallet.jpg"
-   retina = "/assets/images/guide/getting-started/common-user-flows/secure-wallet@2x.jpg"
+   image = "/assets/images/guide/designing-products/common-user-flows/secure-wallet.jpg"
+   retina = "/assets/images/guide/designing-products/common-user-flows/secure-wallet@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
@@ -291,8 +291,8 @@ Like fiat currencies, securely storing money can be as simple as storing some co
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/common-user-flows/sending.jpg"
-   retina = "/assets/images/guide/getting-started/common-user-flows/sending@2x.jpg"
+   image = "/assets/images/guide/designing-products/common-user-flows/sending.jpg"
+   retina = "/assets/images/guide/designing-products/common-user-flows/sending@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
@@ -306,8 +306,8 @@ While we all prefer to receive bitcoin, there are times when we need to send the
 <div class="image-gallery">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/common-user-flows/sending-ui-basic.png"
-   retina = "/assets/images/guide/getting-started/common-user-flows/sending-ui-basic@2x.png"
+   image = "/assets/images/guide/designing-products/common-user-flows/sending-ui-basic.png"
+   retina = "/assets/images/guide/designing-products/common-user-flows/sending-ui-basic@2x.png"
    alt-text = "Example of a basic send screen"
    caption = "A UI for sending bitcoin with just the basic information ([source](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1374%3A33577))."
    width = 400
@@ -316,8 +316,8 @@ While we all prefer to receive bitcoin, there are times when we need to send the
 %}
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/common-user-flows/sending-ui-complex.png"
-   retina = "/assets/images/guide/getting-started/common-user-flows/sending-ui-complex@2x.png"
+   image = "/assets/images/guide/designing-products/common-user-flows/sending-ui-complex.png"
+   retina = "/assets/images/guide/designing-products/common-user-flows/sending-ui-complex@2x.png"
    alt-text = "Example of a complex send screen"
    caption = "An overly complex interface with advanced send options ([source](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1374%3A33792))."
    width = 400
@@ -334,8 +334,8 @@ Once a transaction has been broadcast, the bitcoin network starts processing it.
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/common-user-flows/requesting.jpg"
-   retina = "/assets/images/guide/getting-started/common-user-flows/requesting@2x.jpg"
+   image = "/assets/images/guide/designing-products/common-user-flows/requesting.jpg"
+   retina = "/assets/images/guide/designing-products/common-user-flows/requesting@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
@@ -348,8 +348,8 @@ Equivalent to creating an invoice, requesting bitcoin involves entering informat
 <div class="image-gallery">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/common-user-flows/receiving-ui-example-enter-info.png"
-   retina = "/assets/images/guide/getting-started/common-user-flows/receiving-ui-example-enter-info@2x.png"
+   image = "/assets/images/guide/designing-products/common-user-flows/receiving-ui-example-enter-info.png"
+   retina = "/assets/images/guide/designing-products/common-user-flows/receiving-ui-example-enter-info@2x.png"
    alt-text = "Example interface for entering payment request information."
    caption = "A payment request starts with entering invoice information."
    width = 400
@@ -358,8 +358,8 @@ Equivalent to creating an invoice, requesting bitcoin involves entering informat
 %}
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/common-user-flows/receiving-ui-example-share-request.png"
-   retina = "/assets/images/guide/getting-started/common-user-flows/receiving-ui-example-share-request@2x.png"
+   image = "/assets/images/guide/designing-products/common-user-flows/receiving-ui-example-share-request.png"
+   retina = "/assets/images/guide/designing-products/common-user-flows/receiving-ui-example-share-request@2x.png"
    alt-text = "Example interface for sharing a payment request."
    caption = "Then the payment request needs to be shared with the payer."
    width = 400
@@ -380,8 +380,8 @@ As for data formats for sharing, [BIP 21](https://github.com/bitcoin/bips/blob/m
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/common-user-flows/receiving.jpg"
-   retina = "/assets/images/guide/getting-started/common-user-flows/receiving@2x.jpg"
+   image = "/assets/images/guide/designing-products/common-user-flows/receiving.jpg"
+   retina = "/assets/images/guide/designing-products/common-user-flows/receiving@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
@@ -394,8 +394,8 @@ Once a user has requested payment, they are naturally interested in knowing when
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/common-user-flows/receive-notification.jpg"
-   retina = "/assets/images/guide/getting-started/common-user-flows/receive-notification@2x.jpg"
+   image = "/assets/images/guide/designing-products/common-user-flows/receive-notification.jpg"
+   retina = "/assets/images/guide/designing-products/common-user-flows/receive-notification@2x.jpg"
    alt-text = "Smartphone notification about an incoming transaction"
    width = 400
    height = 158
@@ -411,8 +411,8 @@ A user may also want to check in and see if any previous requests have not been 
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/common-user-flows/transactions.jpg"
-   retina = "/assets/images/guide/getting-started/common-user-flows/transactions@2x.jpg"
+   image = "/assets/images/guide/designing-products/common-user-flows/transactions.jpg"
+   retina = "/assets/images/guide/designing-products/common-user-flows/transactions@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
@@ -431,8 +431,8 @@ This is not only helpful to users but can also help improve privacy. Since the i
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/common-user-flows/migrate.jpg"
-   retina = "/assets/images/guide/getting-started/common-user-flows/migrate@2x.jpg"
+   image = "/assets/images/guide/designing-products/common-user-flows/migrate.jpg"
+   retina = "/assets/images/guide/designing-products/common-user-flows/migrate@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
@@ -448,8 +448,8 @@ In some circumstances, users need to move all their funds to a new wallet. This 
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/common-user-flows/maintenance.jpg"
-   retina = "/assets/images/guide/getting-started/common-user-flows/maintenance@2x.jpg"
+   image = "/assets/images/guide/designing-products/common-user-flows/maintenance.jpg"
+   retina = "/assets/images/guide/designing-products/common-user-flows/maintenance@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
@@ -466,8 +466,8 @@ It is not necessarily intuitive that a wallet may need maintenance, but there ar
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/common-user-flows/sweep.jpg"
-   retina = "/assets/images/guide/getting-started/common-user-flows/sweep@2x.jpg"
+   image = "/assets/images/guide/designing-products/common-user-flows/sweep.jpg"
+   retina = "/assets/images/guide/designing-products/common-user-flows/sweep@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
@@ -484,8 +484,8 @@ This is similar to exchanging many small coins into bills (like exchanging 100 o
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/common-user-flows/mix.jpg"
-   retina = "/assets/images/guide/getting-started/common-user-flows/mix@2x.jpg"
+   image = "/assets/images/guide/designing-products/common-user-flows/mix.jpg"
+   retina = "/assets/images/guide/designing-products/common-user-flows/mix@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
@@ -502,8 +502,8 @@ Mixing coins is a technique to improve transaction privacy by making a special t
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/common-user-flows/test.jpg"
-   retina = "/assets/images/guide/getting-started/common-user-flows/test@2x.jpg"
+   image = "/assets/images/guide/designing-products/common-user-flows/test.jpg"
+   retina = "/assets/images/guide/designing-products/common-user-flows/test@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
@@ -519,8 +519,8 @@ Whether it's to ensure a hardware wallet still works, or to install a software u
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/common-user-flows/resolving-problems.jpg"
-   retina = "/assets/images/guide/getting-started/common-user-flows/resolving-problems@2x.jpg"
+   image = "/assets/images/guide/designing-products/common-user-flows/resolving-problems.jpg"
+   retina = "/assets/images/guide/designing-products/common-user-flows/resolving-problems@2x.jpg"
    alt-text = ""
    width = 100
    height = 100

@@ -190,4 +190,4 @@ In digital product design, there are times when a minimally expressive approach 
 
 ---
 
-As you have seen, the expression if bitcoin is shaped by its user base. This brings us to our next topic, which is [user-research]({{ '/guide/getting-started/user-research/' | relative_url }}).
+As you have seen, the expression if bitcoin is shaped by its user base. This brings us to our next topic, which is [user-research]({{ '/guide/designing-products/user-research/' | relative_url }}).

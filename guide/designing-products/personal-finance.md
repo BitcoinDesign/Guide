@@ -1,11 +1,11 @@
 ---
 layout: guide
 title: Personal finance
-nav_order: 7
-parent: Getting started
-permalink: /guide/getting-started/personal-finance/
+nav_order: 5
+parent: Designing Bitcoin products
+permalink: /guide/designing-products/personal-finance/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/getting-started/personal-finance/personal-finance-preview.jpg
+image: https://bitcoin.design/assets/images/guide/designing-products/personal-finance/personal-finance-preview.jpg
 ---
 
 <!--
@@ -22,10 +22,10 @@ Illustration sources
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/getting-started/personal-finance/personal-finance.jpg"
-   retina = "/assets/images/guide/getting-started/personal-finance/personal-finance@2x.jpg"
-   mobile = "/assets/images/guide/getting-started/personal-finance/personal-finance-mobile.jpg"
-   mobileRetina = "/assets/images/guide/getting-started/personal-finance/personal-finance-mobile@2x.jpg"
+   image = "/assets/images/guide/designing-products/personal-finance/personal-finance.jpg"
+   retina = "/assets/images/guide/designing-products/personal-finance/personal-finance@2x.jpg"
+   mobile = "/assets/images/guide/designing-products/personal-finance/personal-finance-mobile.jpg"
+   mobileRetina = "/assets/images/guide/designing-products/personal-finance/personal-finance-mobile@2x.jpg"
    alt-text = "Bar chart showing various spending categories"
    caption = ""
    width = 1600
@@ -64,8 +64,8 @@ Section structure
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/personal-finance/coffee.jpg"
-   retina = "/assets/images/guide/getting-started/personal-finance/coffee@2x.jpg"
+   image = "/assets/images/guide/designing-products/personal-finance/coffee.jpg"
+   retina = "/assets/images/guide/designing-products/personal-finance/coffee@2x.jpg"
    alt-text = "Coffee icon"
    width = 100
    height = 100
@@ -80,10 +80,10 @@ From a portability perspective, many of these payments happen outside of our hom
 For small, frequent payments we generally accept more risk in exchange for convenience. It becomes more important to quickly execute a transaction than protecting the money involved from as many attack vectors as possible. While we wouldn’t carry our life savings in our pockets, we are comfortable doing so with small amounts, as it does not have a significant impact on us if they are lost or stolen. Not only do we take much fewer security precautions, but financial service providers like banks do the same. One example is that you may not need to sign or enter the PIN for credit card payments if the amount is below $25. The only thing that may be required to transact is entering a 4-digit PIN or authentication via face recognition.
 
 {% include picture.html
-   image = "/assets/images/guide/getting-started/personal-finance/daily-spending-wallet-setup.jpg"
-   retina = "/assets/images/guide/getting-started/personal-finance/daily-spending-wallet-setup@2x.jpg"
-   mobile = "/assets/images/guide/getting-started/personal-finance/daily-spending-wallet-setup-mobile.jpg"
-   mobileRetina = "/assets/images/guide/getting-started/personal-finance/daily-spending-wallet-setup-mobile@2x.jpg"
+   image = "/assets/images/guide/designing-products/personal-finance/daily-spending-wallet-setup.jpg"
+   retina = "/assets/images/guide/designing-products/personal-finance/daily-spending-wallet-setup@2x.jpg"
+   mobile = "/assets/images/guide/designing-products/personal-finance/daily-spending-wallet-setup-mobile.jpg"
+   mobileRetina = "/assets/images/guide/designing-products/personal-finance/daily-spending-wallet-setup-mobile@2x.jpg"
    alt-text = "Mobile and desktop wallets"
    caption = "For daily spending, users may use a dedicated mobile wallet they regularly refill from a primary wallet that is better secured."
    width = 1600
@@ -99,8 +99,8 @@ For more on this use case, see the [daily spending case study]({{ '/guide/case-s
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/personal-finance/groceries.jpg"
-   retina = "/assets/images/guide/getting-started/personal-finance/groceries@2x.jpg"
+   image = "/assets/images/guide/designing-products/personal-finance/groceries.jpg"
+   retina = "/assets/images/guide/designing-products/personal-finance/groceries@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
@@ -117,10 +117,10 @@ The amounts involved in these transactions are higher and therefore require bett
 
 
 {% include picture.html
-   image = "/assets/images/guide/getting-started/personal-finance/monthly-budget-wallet-setup.jpg"
-   retina = "/assets/images/guide/getting-started/personal-finance/monthly-budget-wallet-setup@2x.jpg"
-   mobile = "/assets/images/guide/getting-started/personal-finance/monthly-budget-wallet-setup-mobile.jpg"
-   mobileRetina = "/assets/images/guide/getting-started/personal-finance/monthly-budget-wallet-setup-mobile@2x.jpg"
+   image = "/assets/images/guide/designing-products/personal-finance/monthly-budget-wallet-setup.jpg"
+   retina = "/assets/images/guide/designing-products/personal-finance/monthly-budget-wallet-setup@2x.jpg"
+   mobile = "/assets/images/guide/designing-products/personal-finance/monthly-budget-wallet-setup-mobile.jpg"
+   mobileRetina = "/assets/images/guide/designing-products/personal-finance/monthly-budget-wallet-setup-mobile@2x.jpg"
    alt-text = "A hardware wallet and a laptop"
    width = 1600
    height = 800
@@ -133,8 +133,8 @@ A solution for Bitcoin could be a hardware wallet with an accompanying desktop a
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/personal-finance/bandaid.jpg"
-   retina = "/assets/images/guide/getting-started/personal-finance/bandaid@2x.jpg"
+   image = "/assets/images/guide/designing-products/personal-finance/bandaid.jpg"
+   retina = "/assets/images/guide/designing-products/personal-finance/bandaid@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
@@ -147,10 +147,10 @@ There are times when we are suddenly faced with a more expensive problem like a 
 In traditional finance, this money might get parked in a high-interest savings account or something equivalent that allows for the quick low-risk withdrawal but still provides some return. Once the fund is set up, the money may not get touched for a long time.
 
 {% include picture.html
-   image = "/assets/images/guide/getting-started/personal-finance/savings-wallet-setup.jpg"
-   retina = "/assets/images/guide/getting-started/personal-finance/savings-wallet-setup@2x.jpg"
-   mobile = "/assets/images/guide/getting-started/personal-finance/savings-wallet-setup-mobile.jpg"
-   mobileRetina = "/assets/images/guide/getting-started/personal-finance/savings-wallet-setup-mobile@2x.jpg"
+   image = "/assets/images/guide/designing-products/personal-finance/savings-wallet-setup.jpg"
+   retina = "/assets/images/guide/designing-products/personal-finance/savings-wallet-setup@2x.jpg"
+   mobile = "/assets/images/guide/designing-products/personal-finance/savings-wallet-setup-mobile.jpg"
+   mobileRetina = "/assets/images/guide/designing-products/personal-finance/savings-wallet-setup-mobile@2x.jpg"
    alt-text = "Three hardware wallets and a laptop"
    width = 1600
    height = 800
@@ -163,8 +163,8 @@ A bitcoiner may want to set up a cold storage multi-signature wallet. In this ty
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/personal-finance/car.jpg"
-   retina = "/assets/images/guide/getting-started/personal-finance/car@2x.jpg"
+   image = "/assets/images/guide/designing-products/personal-finance/car.jpg"
+   retina = "/assets/images/guide/designing-products/personal-finance/car@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
@@ -180,8 +180,8 @@ A sinking fund is a way to systematically set money aside for a planned consider
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/personal-finance/safe.jpg"
-   retina = "/assets/images/guide/getting-started/personal-finance/safe@2x.jpg"
+   image = "/assets/images/guide/designing-products/personal-finance/safe.jpg"
+   retina = "/assets/images/guide/designing-products/personal-finance/safe@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
@@ -195,10 +195,10 @@ For example, [Glacier Protocol](https://glacierprotocol.org){:target="_blank"} i
 </div>
 
 {% include picture.html
-   image = "/assets/images/guide/getting-started/personal-finance/glacier-protocol-wallet-setup.jpg"
-   retina = "/assets/images/guide/getting-started/personal-finance/glacier-protocol-wallet-setup@2x.jpg"
-   mobile = "/assets/images/guide/getting-started/personal-finance/glacier-protocol-wallet-setup-mobile.jpg"
-   mobileRetina = "/assets/images/guide/getting-started/personal-finance/glacier-protocol-wallet-setup-mobile@2x.jpg"
+   image = "/assets/images/guide/designing-products/personal-finance/glacier-protocol-wallet-setup.jpg"
+   retina = "/assets/images/guide/designing-products/personal-finance/glacier-protocol-wallet-setup@2x.jpg"
+   mobile = "/assets/images/guide/designing-products/personal-finance/glacier-protocol-wallet-setup-mobile.jpg"
+   mobileRetina = "/assets/images/guide/designing-products/personal-finance/glacier-protocol-wallet-setup-mobile@2x.jpg"
    alt-text = "6 laptops, 1 smartphone and 6 USB drives"
    caption="The Glacier prototcol requires a complex hardware setup that involves 6 different computers, 6 USB drives, a smartphone, printer and various other equipment."
    width = 1600
@@ -212,8 +212,8 @@ Many people don’t self-cusody their long-term savings. They rely on banks and 
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/personal-finance/stocks.jpg"
-   retina = "/assets/images/guide/getting-started/personal-finance/stocks@2x.jpg"
+   image = "/assets/images/guide/designing-products/personal-finance/stocks.jpg"
+   retina = "/assets/images/guide/designing-products/personal-finance/stocks@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
@@ -250,4 +250,4 @@ Considering your product, ask yourself these questions:
 
 ---
 
-Looking closer at the user experience, we can identify a series of common phases that together form a [usage life cycle]({{ '/guide/getting-started/usage-life-cycle/' | relative_url }}).
+Looking closer at the user experience, we can identify a series of common phases that together form a [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/' | relative_url }}).

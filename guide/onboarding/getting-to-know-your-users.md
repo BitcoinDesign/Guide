@@ -26,7 +26,7 @@ Within the Bitcoin ecosystem, there is a wide range in the level of expertise. I
 
 
 ## Observe your potential users
-This observation could take the form of [user research]({{ 'guide/getting-started/user-research/' | relative_url }}), user interviews and surveys aimed at a range of participants to observe and identify what they do, how they think, and what they want. Let's consider some things you might want to ask yourself when improving the onboarding experience for new users:
+This observation could take the form of [user research]({{ 'guide/designing-products/user-research/' | relative_url }}), user interviews and surveys aimed at a range of participants to observe and identify what they do, how they think, and what they want. Let's consider some things you might want to ask yourself when improving the onboarding experience for new users:
 
 * What is their perception of Bitcoin?[^2]
 * Why do they intend to use Bitcoin, investment, savings or spending?
@@ -48,7 +48,7 @@ You can then use this research to identify where potential problems may exist. T
 
 For the sake of simplicity let's focus on one hypothetical user.
 
-> Joshua Akinsola is a 21-year old Nigerian studying economics in the large city of Lagos. Growing up, his family struggled to save any money due to a lack of financial education, high unemployment, and a local currency inflating at 15% per year. There is a lack of reliable [savings]({{ 'guide/getting-started/personal-finance/#savings' | relative_url }}) technology in his country, so he opts to save money for the future using bitcoin.
+> Joshua Akinsola is a 21-year old Nigerian studying economics in the large city of Lagos. Growing up, his family struggled to save any money due to a lack of financial education, high unemployment, and a local currency inflating at 15% per year. There is a lack of reliable [savings]({{ 'guide/designing-products/personal-finance/#savings' | relative_url }}) technology in his country, so he opts to save money for the future using bitcoin.
 
 The uncovering of this scenario could be the result of a user interview[^3] or found in various channels such as chats, issues, or even Twitter. We can then take quotes from the participant to understand their emotions and infer their specific needs. This then helps us identify barriers and motivators.
 

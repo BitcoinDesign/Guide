@@ -32,7 +32,7 @@ The basic design of this website was intentionally kept minimal, so authors have
 
 We collaborate on visuals the same way we collaborate on text. Please make the source files for your illustrations publicly accessible. For file-based visuals (Sketch, Photoshop, etc), use cloud hosting like a Github repository, Dropbox folder or other similar service. For Figma file, share a link to the source file.
 
-Each markdown file should contain a comment at the top that include links to these source files. For [example](https://raw.githubusercontent.com/BitcoinDesign/Guide/master/guide/getting-started/common-user-flows.md):
+Each markdown file should contain a comment at the top that include links to these source files. For [example](https://raw.githubusercontent.com/BitcoinDesign/Guide/master/guide/designing-products/common-user-flows.md):
 
 {% raw %}
 ```

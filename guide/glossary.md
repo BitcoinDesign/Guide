@@ -2,7 +2,7 @@
 layout: guide
 title: Glossary
 permalink: /guide/glossary/
-nav_order: 8
+nav_order: 10
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/glossary/glossary-preview.jpg
 ---
@@ -348,7 +348,7 @@ A file format for bitcoin transactions that are not fully signed yet. Allows for
 
 
 ###  Passphrase
-A passphrase can be added to the [recovery phrase](#recovery-phrase) for extra security. 
+A passphrase can be added to the [recovery phrase](#recovery-phrase) for extra security.
 Technically, all recovery phrases have a pass phrase. If it’s not set by the user, an empty string (“”) will be used by default. Using the recovery phrase with or without the user-defined pass phrase will recover two DIFFERENT wallets. Pass phrases are sometimes referred to as the password, the extra word, or the 13th/25th word.
 
 **References:**

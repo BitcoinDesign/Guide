@@ -3,7 +3,7 @@ layout: guide
 title: Onboarding
 description: An overview of some of the concepts to consider when building onboarding experiences.
 has_children: true
-nav_order: 3
+nav_order: 4
 permalink: /guide/onboarding/introduction/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/onboarding/onboarding-preview.png

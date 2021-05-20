@@ -1,11 +1,11 @@
 ---
 layout: guide
 title: User research
-nav_order: 6
-parent: Getting started
-permalink: /guide/getting-started/user-research/
+nav_order: 3
+parent: Designing Bitcoin products
+permalink: /guide/designing-products/user-research/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/getting-started/user-research/user-research-preview.jpg
+image: https://bitcoin.design/assets/images/guide/designing-products/user-research/user-research-preview.jpg
 ---
 
 <!--
@@ -29,10 +29,10 @@ Illustration sources
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/getting-started/user-research/user-research-header.jpg"
-   retina = "/assets/images/guide/getting-started/user-research/user-research-header@2x.jpg"
-   mobile = "/assets/images/guide/getting-started/user-research/user-research-header-mobile.jpg"
-   mobileRetina = "/assets/images/guide/getting-started/user-research/user-research-header-mobile@2x.jpg"
+   image = "/assets/images/guide/designing-products/user-research/user-research-header.jpg"
+   retina = "/assets/images/guide/designing-products/user-research/user-research-header@2x.jpg"
+   mobile = "/assets/images/guide/designing-products/user-research/user-research-header-mobile.jpg"
+   mobileRetina = "/assets/images/guide/designing-products/user-research/user-research-header-mobile@2x.jpg"
    alt-text = "Illustration of post-its on a wall with terms related to user research written on them"
    caption = ''
    width = 1600
@@ -49,8 +49,8 @@ We design digital products for the benefit of others. To do that, we need to und
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/user-research/user-research.jpg"
-   retina = "/assets/images/guide/getting-started/user-research/user-research@2x.jpg"
+   image = "/assets/images/guide/designing-products/user-research/user-research.jpg"
+   retina = "/assets/images/guide/designing-products/user-research/user-research@2x.jpg"
    alt-text = ""
    width = 100
    height = 100
@@ -76,8 +76,8 @@ There are many ways in which research and development are similar to other digit
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/user-research/global-audience.jpg"
-   retina = "/assets/images/guide/getting-started/user-research/global-audience@2x.jpg"
+   image = "/assets/images/guide/designing-products/user-research/global-audience.jpg"
+   retina = "/assets/images/guide/designing-products/user-research/global-audience@2x.jpg"
    alt-text = "Illustration of a globe with scattered pins"
    width = 400
    height = 400
@@ -105,8 +105,8 @@ The Bitcoin protocol works with addresses and has otherwise no sense of identity
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/user-research/public-ledger.jpg"
-   retina = "/assets/images/guide/getting-started/user-research/public-ledger@2x.jpg"
+   image = "/assets/images/guide/designing-products/user-research/public-ledger.jpg"
+   retina = "/assets/images/guide/designing-products/user-research/public-ledger@2x.jpg"
    alt-text = "Privacy"
    width = 100
    height = 100
@@ -122,8 +122,8 @@ While we cannot know who is directly responsible for the activity, we can analyz
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/user-research/adoption.jpg"
-   retina = "/assets/images/guide/getting-started/user-research/adoption@2x.jpg"
+   image = "/assets/images/guide/designing-products/user-research/adoption.jpg"
+   retina = "/assets/images/guide/designing-products/user-research/adoption@2x.jpg"
    alt-text = "Chart showing the technology adoption curve"
    width = 400
    height = 400
@@ -147,7 +147,7 @@ Links to:
 
 ### Open source and open design
 
-While there are plenty of private companies that build on Bitcoin, but this guide focuses on open-source. In open-source, collaboration is based on communal efforts that mostly happen in public. Find out more on our dedicated page on [open design]({{ '/guide/getting-started/open-design/' | relative_url }}).
+While there are plenty of private companies that build on Bitcoin, but this guide focuses on open-source. In open-source, collaboration is based on communal efforts that mostly happen in public. Find out more on our dedicated page on [open design]({{ '/guide/designing-products/open-design/' | relative_url }}).
 
 <!--
 
@@ -163,8 +163,8 @@ Links to:
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/user-research/private.jpg"
-   retina = "/assets/images/guide/getting-started/user-research/private@2x.jpg"
+   image = "/assets/images/guide/designing-products/user-research/private.jpg"
+   retina = "/assets/images/guide/designing-products/user-research/private@2x.jpg"
    alt-text = "Privacy"
    width = 100
    height = 100
@@ -195,4 +195,4 @@ Links to:
 
 ---
 
-Frameworks are helpful tools to organize user behavior. Our next section introduces one with a focus on [personal finance]({{ '/guide/getting-started/personal-finance/' | relative_url }}).
+Frameworks are helpful tools to organize user behavior. Our next section introduces one with a focus on [personal finance]({{ '/guide/designing-products/personal-finance/' | relative_url }}).
