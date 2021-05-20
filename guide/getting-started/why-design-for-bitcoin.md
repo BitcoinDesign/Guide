@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Why design for bitcoin
+title: Why design for Bitcoin
 nav_order: 3
 parent: Getting started
 permalink: /guide/getting-started/why-design-for-bitcoin/
@@ -35,7 +35,7 @@ Illustration sources
    layout = "full-width"
 %}
 
-# Why design for bitcoin
+# Why design for Bitcoin
 
 Bitcoin lets designers seeking the next big challenge build a new kind of money and how we send, spend, save, and store that money. Since Bitcoin’s brand has no owner to set it in stone, you can still have a big impact on Bitcoin even if you aren’t a product designer. And that’s just for starters.
 

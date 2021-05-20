@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Why bitcoin is unique
+title: Why Bitcoin is unique
 nav_order: 2
 parent: Getting started
 permalink: /guide/getting-started/why-bitcoin-is-unique/
