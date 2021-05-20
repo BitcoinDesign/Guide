@@ -45,6 +45,8 @@ With most implementations so far, the location will be the keychain or a user-sp
 
 This makes the backup accessible by the user on a new device, should they lose the original, but only accessible by someone that can log into the user’s Apple or Google account.
 
+To see what a user experience with this scheme could look like, see the [daily spending case study]({{ '/guide/case-studies/cloud-backup/' | relative_url }}).
+
 {% include fact/pros.html %}
 
 - Low onboarding friction
