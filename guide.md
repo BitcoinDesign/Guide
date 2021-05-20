@@ -43,7 +43,7 @@ Illustration sources
 
 We designed this guide to help anyone navigate those complexities—regardless of where they live or work. We can’t imagine every possible use case, but we can help you build for them.
 
-## What's in it?
+---
 
 ### [Getting started]({{ '/guide/getting-started/introduction/' | relative_url }})
 
