@@ -115,7 +115,7 @@ Bitcoin with a capital *B* is typically associated with Bitcoin the protocol and
 
 Software that runs and/or connects to the Bitcoin network.
 
-### Bitcoin Core client
+### Bitcoin Core (client)
 
 Software considered the reference implementation for the Bitcoin protocol. It is the continuation of Satoshi Nakamoto's original Bitcoin client released 9th January, 2009. 
 
