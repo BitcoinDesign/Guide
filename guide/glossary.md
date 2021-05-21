@@ -122,7 +122,7 @@ Software considered the reference implementation for the Bitcoin protocol. It is
 - [Bitcoin Core client download](https://bitcoincore.org/en/download/)
 - [Bitcoin Core source code](https://github.com/bitcoin/bitcoin)
 
-### Bitcoin Core
+### Bitcoin Core (project)
 
 An open-source project that maintains and releases the Bitcoin client of the same name.
 
