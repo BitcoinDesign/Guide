@@ -16,7 +16,7 @@ Descriptions of schemes suitable for a single user.
 
 -->
 
-# Recovery phrase
+# Manual backup of recovery phrase
 
 A [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) requiring manual backup by the user has been the most common private key management scheme by far since its proposal with [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) in 2013. If you have used any [non-custodial]({{ '/guide/glossary/#non-custodial--custodial-wallet' | relative_url }}) bitcoin application you are likely to have experienced the onboarding requirements of manual backups.
 
