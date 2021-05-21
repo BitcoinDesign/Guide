@@ -34,7 +34,9 @@ As a new technology, Bitcoin offers the opportunity of a decentralized open fina
 
 These are principles we in the Bitcoin Design Community identified and stand behind. Some of these come from the technology itself and others from the community's behavior and ethos. Although every use case and product is different, applications should strive to follow these principles. Diverging from them should only be done with very good reason.
 
+---
 
+<div class="glossary-toc" markdown="1">
 - [Self-custody](#self-custody)
 - [Security](#security)
 - [Inclusion](#inclusion)
@@ -42,6 +44,7 @@ These are principles we in the Bitcoin Design Community identified and stand beh
 - [Transparency](#transparency)
 - [Privacy](#privacy)
 - [Decentralization](#decentralization)
+</div>
 
 ---
 
