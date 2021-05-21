@@ -83,4 +83,4 @@ This makes the backup accessible by the user on a new device, should they lose t
 
 ---
 
-Next, let's look at [Recovery phrase]({{ '/guide/private-key-management/recovery-phrase/' | relative_url }}).
+Next, let's look at [manual backup of recovery phrase]({{ '/guide/private-key-management/recovery-phrase/' | relative_url }}).
