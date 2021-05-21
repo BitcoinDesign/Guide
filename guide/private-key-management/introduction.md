@@ -49,7 +49,7 @@ A single key is stored locally on the device. No user action is required for bac
 
 ---
 
-### [Recovery phrase]({{ '/guide/private-key-management/recovery-phrase/' | relative_url }})
+### [Manual backup of recovery phrase]({{ '/guide/private-key-management/recovery-phrase/' | relative_url }})
 
 A single key is stored locally on the device. User action is required for backup with a recovery phrase.
 
