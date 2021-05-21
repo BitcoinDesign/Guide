@@ -1,11 +1,11 @@
 ---
 layout: guide
 title: Usage life cycle
-nav_order: 8
-parent: Getting started
-permalink: /guide/getting-started/usage-life-cycle/
+nav_order: 4
+parent: Designing Bitcoin products
+permalink: /guide/designing-products/usage-life-cycle/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/getting-started/usage-life-cycle/usage-life-cycle-preview.png
+image: https://bitcoin.design/assets/images/guide/designing-products/usage-life-cycle/usage-life-cycle-preview.png
 ---
 
 <!--
@@ -22,10 +22,10 @@ Illustration sources
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/getting-started/usage-life-cycle/usage-life-cycle.png"
-   retina = "/assets/images/guide/getting-started/usage-life-cycle/usage-life-cycle@2x.png"
-   mobile = "/assets/images/guide/getting-started/usage-life-cycle/usage-life-cycle-mobile.png"
-   mobileRetina = "/assets/images/guide/getting-started/usage-life-cycle/usage-life-cycle-mobile@2x.png"
+   image = "/assets/images/guide/designing-products/usage-life-cycle/usage-life-cycle.png"
+   retina = "/assets/images/guide/designing-products/usage-life-cycle/usage-life-cycle@2x.png"
+   mobile = "/assets/images/guide/designing-products/usage-life-cycle/usage-life-cycle-mobile.png"
+   mobileRetina = "/assets/images/guide/designing-products/usage-life-cycle/usage-life-cycle-mobile@2x.png"
    alt-text = "Abstract illustrations of phases in the usage life cycle"
    caption = ""
    width = 1600
@@ -45,8 +45,8 @@ The following six sections outline different phases of a typical usage life cycl
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/usage-life-cycle/unaware.png"
-   retina = "/assets/images/guide/getting-started/usage-life-cycle/unaware@2x.png"
+   image = "/assets/images/guide/designing-products/usage-life-cycle/unaware.png"
+   retina = "/assets/images/guide/designing-products/usage-life-cycle/unaware@2x.png"
    alt-text = "Closed eye icon"
    width = 100
    height = 100
@@ -62,8 +62,8 @@ Every user starts here and most remain in this phase. At this point, they have n
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/usage-life-cycle/aware.png"
-   retina = "/assets/images/guide/getting-started/usage-life-cycle/aware@2x.png"
+   image = "/assets/images/guide/designing-products/usage-life-cycle/aware.png"
+   retina = "/assets/images/guide/designing-products/usage-life-cycle/aware@2x.png"
    alt-text = "Half-open eye icon"
    width = 100
    height = 100
@@ -79,8 +79,8 @@ A user hears about the service for the first time. This could be via word-of-mou
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/usage-life-cycle/interested.png"
-   retina = "/assets/images/guide/getting-started/usage-life-cycle/interested@2x.png"
+   image = "/assets/images/guide/designing-products/usage-life-cycle/interested.png"
+   retina = "/assets/images/guide/designing-products/usage-life-cycle/interested@2x.png"
    alt-text = "Wide open eye icon"
    width = 100
    height = 100
@@ -96,8 +96,8 @@ A user becomes interested in your product. Maybe they have heard about it severa
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/usage-life-cycle/first-use.png"
-   retina = "/assets/images/guide/getting-started/usage-life-cycle/first-use@2x.png"
+   image = "/assets/images/guide/designing-products/usage-life-cycle/first-use.png"
+   retina = "/assets/images/guide/designing-products/usage-life-cycle/first-use@2x.png"
    alt-text = "Power button icon"
    width = 100
    height = 100
@@ -113,8 +113,8 @@ The user tries the service for the first time. They made an intentional decision
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/usage-life-cycle/repeat-use.png"
-   retina = "/assets/images/guide/getting-started/usage-life-cycle/repeat-use@2x.png"
+   image = "/assets/images/guide/designing-products/usage-life-cycle/repeat-use.png"
+   retina = "/assets/images/guide/designing-products/usage-life-cycle/repeat-use@2x.png"
    alt-text = "Loader icon"
    width = 100
    height = 100
@@ -130,8 +130,8 @@ Through repeat use, the user becomes more familiar with the service and starts u
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/usage-life-cycle/passionate-use.png"
-   retina = "/assets/images/guide/getting-started/usage-life-cycle/passionate-use@2x.png"
+   image = "/assets/images/guide/designing-products/usage-life-cycle/passionate-use.png"
+   retina = "/assets/images/guide/designing-products/usage-life-cycle/passionate-use@2x.png"
    alt-text = "Heart icon"
    width = 100
    height = 100
@@ -149,8 +149,8 @@ These are expert users with high expectations. They will express strong wishes, 
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/usage-life-cycle/dropoff.png"
-   retina = "/assets/images/guide/getting-started/usage-life-cycle/dropoff@2x.png"
+   image = "/assets/images/guide/designing-products/usage-life-cycle/dropoff.png"
+   retina = "/assets/images/guide/designing-products/usage-life-cycle/dropoff@2x.png"
    alt-text = "Bar chart showing users dropping off in the usage life cycle"
    width = 400
    height = 400
@@ -159,10 +159,10 @@ These are expert users with high expectations. They will express strong wishes, 
 
 Some users disappear at every step in the life cycle. If you understand where and why they drop off, you have a better chance at fixing those issues and hopefully getting more and more passionate, satisfied users.
 
-There are various [user research]({{ '/guide/getting-started/user-research/' | relative_url }}) techniques that can help identify these types of issues.
+There are various [user research]({{ '/guide/designing-products/user-research/' | relative_url }}) techniques that can help identify these types of issues.
 
 </div>
 
 ---
 
-The usage life cycle is based on product familiarity. Another helpful way of thinking about user experiences is to consider [common user flows]({{ '/guide/getting-started/common-user-flows/' | relative_url }}).
+The usage life cycle is based on product familiarity. Another helpful way of thinking about user experiences is to consider user needs, for example from [personal finance]({{ '/guide/designing-products/personal-finance/' | relative_url }}).

@@ -1,11 +1,11 @@
 ---
 layout: guide
 title: Why design for Bitcoin
-nav_order: 3
-parent: Getting started
-permalink: /guide/getting-started/why-design-for-bitcoin/
+nav_order: 1
+parent: Designing Bitcoin products
+permalink: /guide/designing-products/why-design-for-bitcoin/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/getting-started/why-design-for-bitcoin/why-design-for-bitcoin-preview.jpg
+image: https://bitcoin.design/assets/images/guide/designing-products/why-design-for-bitcoin/why-design-for-bitcoin-preview.jpg
 ---
 
 <!--
@@ -24,10 +24,10 @@ Illustration sources
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/getting-started/why-design-for-bitcoin/why-design-for-bitcoin.jpg"
-   retina = "/assets/images/guide/getting-started/why-design-for-bitcoin/why-design-for-bitcoin@2x.jpg"
-   mobile = "/assets/images/guide/getting-started/why-design-for-bitcoin/why-design-for-bitcoin-mobile.jpg"
-   mobileRetina = "/assets/images/guide/getting-started/why-design-for-bitcoin/why-design-for-bitcoin-mobile@2x.jpg"
+   image = "/assets/images/guide/designing-products/why-design-for-bitcoin/why-design-for-bitcoin.jpg"
+   retina = "/assets/images/guide/designing-products/why-design-for-bitcoin/why-design-for-bitcoin@2x.jpg"
+   mobile = "/assets/images/guide/designing-products/why-design-for-bitcoin/why-design-for-bitcoin-mobile.jpg"
+   mobileRetina = "/assets/images/guide/designing-products/why-design-for-bitcoin/why-design-for-bitcoin-mobile@2x.jpg"
    alt-text = "A white bitcoin symbol with paint drawn on the right half"
    caption = 'Paint texture by [Geordanna Cordero](https://unsplash.com/@geordannatheartist){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}'
    width = 1600
@@ -59,7 +59,7 @@ Many design projects start by identifying an unmet need then designing something
 
 ## Work in public
 
-Bitcoin development is open-source. Designing for Bitcoin is no different. It lets you learn, grow, and exchange ideas in the same open and collaborative way. Learn out more about the [open design]({{ '/guide/getting-started/open-design/' | relative_url }}) philosophy.
+Bitcoin development is open-source. Designing for Bitcoin is no different. It lets you learn, grow, and exchange ideas in the same open and collaborative way. Learn out more about the [open design]({{ '/guide/designing-products/open-design/' | relative_url }}) philosophy.
 
 ## Design money
 
@@ -71,4 +71,4 @@ Design and build experiences with friends and strangers. Participate in or even 
 
 ---
 
-Dive deeper into what [open design]({{ '/guide/getting-started/open-design/' | relative_url }}) means.
+Dive deeper into what [open design]({{ '/guide/designing-products/open-design/' | relative_url }}) means.

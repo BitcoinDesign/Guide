@@ -1,11 +1,11 @@
 ---
 layout: guide
 title: Open design
-nav_order: 4
-parent: Getting started
-permalink: /guide/getting-started/open-design/
+nav_order: 2
+parent: Designing Bitcoin products
+permalink: /guide/designing-products/open-design/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/getting-started/open-design/open-design-preview.jpg
+image: https://bitcoin.design/assets/images/guide/designing-products/open-design/open-design-preview.jpg
 ---
 
 <!--
@@ -37,10 +37,10 @@ Illustration sources
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/getting-started/open-design/open-design.jpg"
-   retina = "/assets/images/guide/getting-started/open-design/open-design@2x.jpg"
-   mobile = "/assets/images/guide/getting-started/open-design/open-design-mobile.jpg"
-   mobileRetina = "/assets/images/guide/getting-started/open-design/open-design-mobile@2x.jpg"
+   image = "/assets/images/guide/designing-products/open-design/open-design.jpg"
+   retina = "/assets/images/guide/designing-products/open-design/open-design@2x.jpg"
+   mobile = "/assets/images/guide/designing-products/open-design/open-design-mobile.jpg"
+   mobileRetina = "/assets/images/guide/designing-products/open-design/open-design-mobile@2x.jpg"
    alt-text = "Diverse people lingering and conversing in an open space"
    caption = 'Character designs by [Open Peeps](https://www.openpeeps.com/){:target="_blank" rel="nofollow"}'
    width = 1600
@@ -122,4 +122,4 @@ This guide is published under three different licenses ([MIT license]({{site.git
 
 ---
 
-Still not sure where to start? Check out the next section, [the visual language of bitcoin]({{ '/guide/getting-started/visual-language/' | relative_url }}).
+Still not sure where to start? Check out the next section about [user research]({{ '/guide/designing-products/user-research/' | relative_url }}).

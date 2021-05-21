@@ -44,45 +44,9 @@ The internet has opened an infinite design space for information and communicati
 
 ---
 
-### [Why design for Bitcoin]({{ '/guide/getting-started/why-design-for-bitcoin/' | relative_url }})
-
-Bitcoin is fundamentally open and participatory and allows designers and creators to explore and shape experiences for users around the globe.
-
----
-
-### [Open design]({{ '/guide/getting-started/open-design/' | relative_url }})
-
-Open design is about global collaboration that balances the free exchange of design information, the independence of individual designers and the collective power of collaboration.
-
----
-
 ### [The visual language of Bitcoin]({{ '/guide/getting-started/visual-language/' | relative_url }})
 
 As an open and public protocol, Bitcoin does not have a strictly defined brand. Yet there is a recognizable symbol that has evolved and remixed endlessly.
-
----
-
-### [User research]({{ '/guide/getting-started/user-research/' | relative_url }})
-
-All products begin with user needs and end in those same users hands. User research is a fundamental activity that helps us focus on things people care about.
-
----
-
-### [Personal finance]({{ '/guide/getting-started/personal-finance/' | relative_url }})
-
-If we consider Bitcoin money, we need to consider how Bitcoin users think about their finances. This page provides a simple framework that can serve as a starting point, deriving bitcoin software and hardware setups from common budgeting categories.
-
----
-
-### [Usage life cycle]({{ '/guide/getting-started/usage-life-cycle/' | relative_url }})
-
-All users start without any knowledge of Bitcoin or your particular product. As we learn more, our understanding and needs change. As designers, it is essential to guide users through this experience.
-
----
-
-### [Common user flows]({{ '/guide/getting-started/common-user-flows/' | relative_url }})
-
-Most Bitcoin applications share certain user activities, from initial setup to making a transaction. It is vital to follow users' expected patterns and behaviors to reduce mistakes and enable seamless switching between products.
 
 ---
 

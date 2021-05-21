@@ -111,4 +111,4 @@ It's only appropriate that the bitcoin ecosystem is being developed by teams and
 
 ---
 
-Wondering why you should [design for bitcoin?]({{ '/guide/getting-started/why-design-for-bitcoin/' | relative_url }}) Read on.
+Still not sure where to start? Check out the next section, [the visual language of bitcoin]({{ '/guide/getting-started/visual-language/' | relative_url }}).

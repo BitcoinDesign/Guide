@@ -118,3 +118,7 @@ A Bitcoin ATM (Automated Teller Machine) allows for bitcoin's purchase or sale f
    width = 800
    height = 400
 %}
+
+---
+
+Ready to learn more about [designing Bitcoin products]({{ '/guide/designing-products/introduction/' | relative_url }})?
