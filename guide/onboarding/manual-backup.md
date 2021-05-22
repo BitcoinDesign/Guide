@@ -89,13 +89,13 @@ Drilling in the larger consequences of what it means to interact with a self-cus
 
 {% include /tip/open.html label="Tip: Give users access to printable templates" icon="info" color="blue" %}
 
-Providing users with printable, designated materials to write down their recovery phrase can instill a sense of trust, organization (especially if they have multiple wallets), and guidance. It may also encourage them to treat this designated paper with importance, rather than quickly scribbling it down on a random scrap. Check out an example template from the Wallet UI Kit [here](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1523%3A34106).
+Providing users with printable, designated materials to write down their recovery phrase can instill a sense of trust, organization (especially if they have multiple wallets), and guidance. It may also encourage them to treat this designated paper with importance rather than quickly scribbling it down on a random scrap. Check out an example template from the Wallet UI Kit [here](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1523%3A34106).
 
 {% include /tip/close.html %}
 
 ### How to display a recovery phrase
 
-The goal is to encourage users to write it down their recovery phrase on a physical piece of paper. You can discourage users from taking a screenshot by showing a warning modal, or disabling the functionality altogether.
+The goal is to encourage users to write down their recovery phrase on a physical piece of paper. You can discourage users from taking a screenshot by showing a warning modal or disabling the functionality altogether.
 
 {% include /tip/open.html label="Tip: Be Clear about Numbering" icon="info" color="blue" %}
 
