@@ -99,7 +99,7 @@ The goal is to encourage users to write it down their recovery phrase on a physi
 
 {% include /tip/open.html label="Tip: Be Clear about Numbering" icon="info" color="blue" %}
 
-Regardless of the option you decide to run with, it’s important that you explicitly instruct users to number each word (i.e. 1. sand 2. purple 3. flower). Manually backing up recovery phrases typically asks users to recount, for example, the fifth word. It’s a bit of a pain for users to count which word corresponds to a particular number if they are not numbered initially.
+Regardless of the option you decide to run with, it’s important that you explicitly instruct users to number each word (i.e. 1. sand 2. purple 3. flower). Typically, a manual recovery phrase backup scheme will ask users to recount, for example, the fifth word. It’s a bit of a pain for users to count which word corresponds to a particular number if they are not numbered initially.
 
 {% include /tip/close.html %}
 
@@ -163,7 +163,7 @@ Depending on how you show these groups of words, there is room for users to fals
 
 A clever way to give a user their recovery phrase is by creating an interaction where they have to “uncover” it. This can entail hovering over a blurred word to reveal it, or holding down a button to show it.
 
-By creating this design interaction, it drills in how, viewing, storing, and managing recovery phrases should be a private and secret matter.
+By creating this design interaction, it drills in how viewing, storing, and managing recovery phrases should be a private and secret matter.
 
 </div>
 
