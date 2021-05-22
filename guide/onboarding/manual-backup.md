@@ -251,7 +251,7 @@ Because typing each word out comes with more room for error, create a visual ind
    width = 250
    height = 600
    alt-text = "Identify specific recovery phrase words"
-   caption = "Word recallthe  UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A828)"
+   caption = "Word recall from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A828)"
    layout = "float-right-desktop -background -shadow"
 %}
 
