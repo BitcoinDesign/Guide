@@ -42,7 +42,7 @@ A common practice for wallets is to have a barrier (i.e., Touch ID, PINs, etc.) 
    image = "/assets/images/guide/onboarding/protecting-a-wallet/face-id-info.png"
    retina = "/assets/images/guide/onboarding/protecting-a-wallet/face-id-info@2x.png"
    width = 250
-   height = 250
+   height = 541
    alt-text = "Face ID screen"
    caption = "Face ID UI from [Wallet UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1228%3A27860)"
    layout = "float-left-desktop -background -shadow"
@@ -101,14 +101,14 @@ Within your product upon PIN creation, tell your users what a good, secure PIN i
 
 ## Hiding Sensitive Information
 
-Imagine this scenario. You are in a public place, and you need to make a payment using your bitcoin wallet. You open your wallet on your phone, but you don’t feel comfortable having your address and balance information clearly visible to strangers who may be looking over your shoulder, persons lurking or video surveillance . Hence by giving users the ability to hide sensitive information in their wallet if desired, they gain an added sense of physical privacy and security when using the app in public.
+Imagine this scenario. Your user is in a public place, and they need to make a payment using their bitcoin wallet. They open your wallet on their phone, but they don’t feel comfortable having their address and balance information clearly visible to strangers who may be looking over their shoulder, persons lurking or video surveillance. Hence by giving users the ability to hide sensitive information in their wallet if desired, they gain an added sense of physical privacy and security when using the app in public.
 
 ## What information is considered sensitive ?
 
 Sensitive information in wallet applications include the wallet balance, addresses, private keys and previous transactions information.
-- Wallet Balance - shows how much you own
-- Addresses - can be used to track your transaction history
-- Private keys - can be used to access and transfer your bitcoins
+- Wallet Balance - shows how much is owned
+- Addresses - can be used to track transaction history
+- Private keys - can be used to access and transfer bitcoins
 
 It's more common for wallets to protect private keys, but not much is done for other sensitive information like the balance, addresses, and previous transactions. A few wallets like [Bitcoin Core](https://bitcoin.org/en/bitcoin-core/), [Wasabi](https://wasabiwallet.io/), [Wallet of Satoshi](https://www.walletofsatoshi.com/), and others have made it work, though. Below is a pattern and considerations for hiding and revealing sensitive information.
 
@@ -123,7 +123,7 @@ The hide icon/button, which is usually displayed within close reach of the balan
    height = 800
 %}
 
-This is an easy and convenient way to switch between revealed and hidden states, but still makes it easy for anyone else to reveal your information if they have access to your device.
+This is an easy and convenient way to switch between revealed and hidden states, but still makes it easy for anyone else to reveal user information if they have access to their device.
 
 ## Entering a PIN to reveal information
 
@@ -154,7 +154,7 @@ This gives users some time to assess their environment before their info is disp
 
 ## Making the toggle less obvious
 
-Having the show/hide button right on the main screen makes things quite obvious for someone who has access to your device to press unhide. A solution would be to move the hide toggle away from the home screen and into the [app settings](https://medium.com/@olanrewajusodiq64/the-ui-ux-of-hide-balance-designing-to-improve-asset-security-e4b20668f315). This way, if someone has access to your device and opens the app, they may not immediately know how to reveal the balance, transaction and/or addresses as it is not made obvious as the previous solutions.
+Having the show/hide button right on the main screen makes things quite obvious for someone who has access to a users device to press unhide. A solution would be to move the hide toggle away from the home screen and into the [app settings](https://medium.com/@olanrewajusodiq64/the-ui-ux-of-hide-balance-designing-to-improve-asset-security-e4b20668f315). This way, if someone has access to their device and opens the app, they may not immediately know how to reveal the balance, transaction and/or addresses as it is not made obvious as the previous solutions.
 
 {% include picture.html
    image = "/assets/images/guide/onboarding/protecting-a-wallet/hide-in-settings.gif"
@@ -170,6 +170,5 @@ An advantage here is the risk of an unauthorized person revealing their informat
 Privacy in bitcoin payments goes far beyond hiding balances and other sensitive information, the [privacy by design framework](https://www.ipc.on.ca/wp-content/uploads/Resources/7foundationalprinciples.pdf) states that privacy should be incorporated and built into products by default. This way, whether or not the user is concerned with their data privacy, they would always be protected through good UX and UI.
 
 By including UX patterns for hiding information pattern wallets, we give users a greater sense of control and comfort in any situation. They have the freedom to decide whether or not they want their information visible.
-
 
 Now let's look at the different ways a user might go about [funding a wallet]({{ 'guide/onboarding/funding-a-wallet' | relative_url }}).

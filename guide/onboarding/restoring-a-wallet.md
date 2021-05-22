@@ -18,7 +18,7 @@ There are a number of reasons why a user might need to recover their wallet. Typ
    image = "/assets/images/guide/onboarding/restoring-a-wallet/import-options.png"
    retina = "/assets/images/guide/onboarding/restoring-a-wallet/import-options@2x.png"
    width = 250
-   height = 250
+   height = 600
    alt-text = "Showing wallet import options"
    caption = "Wallet import options from [Wallet UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1227%3A27425)"
    layout = "float-desktop -background -shadow"

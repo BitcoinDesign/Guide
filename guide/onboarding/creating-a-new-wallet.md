@@ -26,7 +26,7 @@ A few different types of wallets let you send, receive, store, and manage bitcoi
    image = "/assets/images/guide/onboarding/creating-a-new-wallet/onboarding-welcome-screen.png"
    retina = "/assets/images/guide/onboarding/creating-a-new-wallet/onboarding-welcome-screen@2x.png"
    width = 250
-   height = 540
+   height = 541
    caption = "Cover screen from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=267%3A3874)"
    alt-text = "Cover screen user interface"
    layout = "float-left-desktop -background -shadow"

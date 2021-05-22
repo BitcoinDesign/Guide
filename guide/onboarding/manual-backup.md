@@ -109,9 +109,9 @@ Regardless of the option you decide to run with, it’s important that you expli
    image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-single-word.png"
    retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-single-word@2x.png"
    width = 250
-   height = 250
+   height = 600
    alt-text = "Showing recovery phrase one word at a time"
-   caption = "One by One UI from [Wallet UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A0)"
+   caption = "One by One UI from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A0)"
    layout = "float-right-desktop -background -shadow"
 %}
 
@@ -131,9 +131,9 @@ This would be a time consuming step if one’s recovery phrase is 24 words. This
    image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-columns.png"
    retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-columns@2x.png"
    width = 250
-   height = 250
+   height = 600
    alt-text = "Showing recovery phrase one word at a time"
-   caption = "Column/Groups UI from [Wallet UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A131)"
+   caption = "Column/Groups UI from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A131)"
    layout = "float-left-desktop -background -shadow"
 %}
 
@@ -153,9 +153,9 @@ Depending on how you show these groups of words, there is room for users to fals
    image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-reveal.png"
    retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-reveal@2x.png"
    width = 250
-   height = 250
+   height = 600
    alt-text = "Reveal option where words are not readable by default"
-   caption = "Hold down to reveal UI from [Wallet UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A223)"
+   caption = "Hold down to reveal UI from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A223)"
    layout = "float-right-desktop -background -shadow"
 %}
 
@@ -173,9 +173,9 @@ By creating this design interaction, it drills in how, viewing, storing, and man
    image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-all-at-once.png"
    retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-all-at-once@2x.png"
    width = 250
-   height = 250
+   height = 600
    alt-text = "Show all 12 words at once"
-   caption = "All words at once UI from [Wallet UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A305)"
+   caption = "All words at once UI from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A305)"
    layout = "float-left-desktop -background -shadow"
 %}
 
@@ -207,9 +207,9 @@ Try to make sure users understand your team cannot access their recovery phrase 
    image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/confirm-recovery-phrase.png"
    retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/confirm-recovery-phrase@2x.png"
    width = 250
-   height = 250
+   height = 600
    alt-text = "Confirming a recovery phrase by tapping"
-   caption = "Word bank UI from [Wallet UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A408)"
+   caption = "Word bank UI from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A408)"
    layout = "float-left-desktop -background -shadow"
 %}
 
@@ -225,9 +225,9 @@ A common design for confirming a manual backup is to present users with a scramb
    image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/confirm-recovery-phrase-entry.png"
    retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/confirm-recovery-phrase-entry@2x.png"
    width = 250
-   height = 250
+   height = 600
    alt-text = "Typing a recovery phrase"
-   caption = "Typing it out UI from [Wallet UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A538)"
+   caption = "Typing it out UI from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A538)"
    layout = "float-right-desktop -background -shadow"
 %}
 
@@ -249,9 +249,9 @@ Because typing each word out comes with more room for error, create a visual ind
    image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/confirm-recovery-phrase-columns.png"
    retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/confirm-recovery-phrase-columns@2x.png"
    width = 250
-   height = 250
+   height = 600
    alt-text = "Identify specific recovery phrase words"
-   caption = "Word recall UI from [Wallet UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A828)"
+   caption = "Word recallthe  UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A828)"
    layout = "float-right-desktop -background -shadow"
 %}
 
