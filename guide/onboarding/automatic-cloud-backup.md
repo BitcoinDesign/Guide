@@ -93,7 +93,7 @@ Before automatically backing up a recovery phrase via cloud backup, make sure th
 
 By not making users manually backup, you decrease the risk of self-inflicted loss of funds. Automatic cloud backups put less pressure and responsibility on the user.
 
-While this is an easier way for users to set up a wallet, it brings in the potential threat of malicious third party access. If a user’s cloud account is hacked or they forget their cloud login information, their funds could be compromised.
+While this is an easier way for users to set up a wallet, it brings in the potential threat of malicious third-party access. If a user’s cloud account is hacked or they forget their cloud login information, their funds could be compromised.
 
 Additionally, by bringing cloud storage providers into the equation, we assume that users trust their providers. This also raises the question of [decentralization]({{ 'guide/foundations/principles/#decentralization' | relative_url }}): a guiding principle of the bitcoin space and could be considered at conflict with the popular saying, “not your keys, not your coins”.
 
