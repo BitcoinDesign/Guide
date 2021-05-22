@@ -95,7 +95,7 @@ Providing users with printable, designated materials to write down their recover
 
 ### Ways to show it
 
-The goal is to encourage users to write it down their recovery phrase on a physical piece of paper. You can discourage users from taking a screenshot by showing a warning modal, or disabling the functionality altogether.
+The goal is to encourage users to write down their recovery phrase on a physical piece of paper. You can discourage users from taking a screenshot by showing a warning modal or disabling the functionality altogether.
 
 {% include /tip/open.html label="Tip: Be Clear about Numbering" icon="info" color="blue" %}
 
