@@ -91,11 +91,11 @@ Before automatically backing up a recovery phrase via cloud backup, make sure th
 
 ### Tradeoffs
 
-By not making users manually backup, we decrease the risk of self-inflicted loss of funds. Automatic cloud backups put less pressure and responsibility on the user.
+By not making users manually backup, you decrease the risk of self-inflicted loss of funds. Automatic cloud backups put less pressure and responsibility on the user.
 
-While this is an easier way for users to set up a wallet, it brings in the potential threat of malicious third party access. If a user’s cloud account is hacked or they forget their cloud login information, their funds could be compromised.
+While this is an easier way for users to set up a wallet, it brings in the potential threat of malicious third-party access. If a user’s cloud account is hacked or they forget their cloud login information, their funds could be compromised.
 
-Additionally, by bringing cloud storage providers into the equation, we assume that users trust their providers. This also raises the question of [decentralization]({{ 'guide/foundations/principles/#decentralization' | relative_url }}): a guiding principle of the bitcoin space and could be considered at conflict with the popular saying, “not your keys, not your coins”.
+By bringing cloud storage providers into the equation, we assume that users trust their providers. This also raises the question of [decentralization]({{ 'guide/foundations/principles/#decentralization' | relative_url }}): a guiding principle of the Bitcoin space and could be considered in conflict with the popular saying, “not your keys, not your coins”.
 
 {% include tip/open.html color="red" icon="forbid" label="Don’t: Use for High Value Amounts" %}
 
@@ -103,6 +103,6 @@ Automatic cloud backups should not be considered for products with users that ar
 
 {% include tip/close.html %}
 
-To grant users some ownership of their keys, you can create an optional manual backup within settings. A great way to do this is by framing it as an extra layer of security, or a good alternative in the case that the user loses access to their cloud account/if they feel uncomfortable trusting their provider.
+To grant users some ownership of their keys, you can create an optional manual backup within settings. A great way to do this is by framing it as an extra layer of security or a good alternative in the case that the user loses access to their cloud account/if they feel uncomfortable trusting their provider.
 
 In the next section we will show different methods for [manual backups]({{ 'guide/onboarding/backing-up-a-recovery-phrase/manual-backup' | relative_url }}).
