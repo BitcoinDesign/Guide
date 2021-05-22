@@ -93,7 +93,7 @@ Providing users with printable, designated materials to write down their recover
 
 {% include /tip/close.html %}
 
-### Ways to show it
+### How to display a recovery phrase
 
 The goal is to encourage users to write it down their recovery phrase on a physical piece of paper. You can discourage users from taking a screenshot by showing a warning modal, or disabling the functionality altogether.
 
