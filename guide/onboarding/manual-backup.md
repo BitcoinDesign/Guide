@@ -15,7 +15,7 @@ main_classes: -no-top-padding
 
 It usually requires users to manually back up their 12 to 24 word recovery phrase by writing it down on a piece of paper and storing it in a safe (but memorable location). In the case that a user’s device breaks or is stolen, the user can recover their funds and wallet by correctly entering their recovery phrase. The [private key management]({{ '/guide/private-key-management/single-user-schemes/#manual-backup--recovery-phrase' | relative_url }}) section dives further into the technical details of this scheme if interested in learning more.
 
-If you are designing a wallet that opts to use manual backups, the following sections outline how to best go about this with new users in mind.
+If you are designing an application that opts to use manual backups, the following sections outline how to best go about this with new users in mind.
 
 ### When to reveal a recovery phrase
 
