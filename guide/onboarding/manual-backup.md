@@ -23,7 +23,7 @@ The onboarding carousels that we previously mentioned are a great place to prep 
 
 {% include /tip/open.html label="Tip: Let users transact even when not backed up" icon="info" color="blue" %}
 
-If you really want to skip showing a user their recovery phrase during the initial onboarding process, create an interaction (i.e. a vibration, modal pop-up, or blocking users from clicking anything) that prompts users to “back up” their recovery phrase at a later time. Perhaps before making any transactions or after several transactions.
+If you really want to skip showing a user their recovery phrase during the initial onboarding process, create an interaction (i.e. a vibration, modal pop-up, or similar) that prompts users to “back up” their recovery phrase at a later time. Perhaps before making any transactions or after several transactions.
 
 {% include /tip/close.html %}
 
