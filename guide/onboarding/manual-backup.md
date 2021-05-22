@@ -163,7 +163,7 @@ Depending on how you show these groups of words, there is room for users to fals
 
 A clever way to give a user their recovery phrase is by creating an interaction where they have to “uncover” it. This can entail hovering over a blurred word to reveal it, or holding down a button to show it.
 
-By creating this design interaction, it drills in how, viewing, storing, and managing recovery phrases should be a private and secret matter.
+By creating this design interaction, it drills in how viewing, storing, and managing recovery phrases should be a private and secret matter.
 
 </div>
 
