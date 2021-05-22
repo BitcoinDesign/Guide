@@ -19,7 +19,7 @@ If you are designing a wallet that opts to use manual backups, the following sec
 
 ### When to reveal a recovery phrase
 
-The onboarding carousels that we previously mentioned are a great place to prep and explain to users that they will be given a recovery phrase. While some wallets skip this step, in might be appropriate in some scenarios to display it early on. Doing so in the initial onboarding process allows users to pause, internalize what a recovery phrase is, and ensures that they do not neglect this step later on.
+Onboarding carousels are a great place to prep and explain to users that they will be given a recovery phrase. While some wallets skip this step, it might be appropriate to display it early on in some scenarios. Doing so in the initial onboarding process allows users to pause, internalize what a recovery phrase is, and ensures that they do not neglect this step later.
 
 {% include /tip/open.html label="Tip: Let users transact even when not backed up" icon="info" color="blue" %}
 
