@@ -55,7 +55,7 @@ By using an automatic cloud backup for the private key the user is NOT required 
 
 This scheme can be a good fit for wallets meant for storing smaller amounts of bitcoin. This includes wallets for novices who would find manually backing up a recovery phrase during onboarding confusing, possibly leading to unsafe backups. It could also be a starting point for a progressive security model that lets customers upgrade when they start accumulating more funds. Wallets using automatic cloud backups also work well for what experienced users might call *hot* or *spending* wallets where convenience is more important than maximum security. 
 
-The automatic cloud backup scheme gives users reasonable security against theft whilst providing low risk for self-inflicted losses and a more seamless user experience for spending wallets of which a manual backup may be unnecessary.
+The automatic cloud backup scheme gives users reasonable security against theft, while providing low risk for self-inflicted losses.
 
 {% include image.html
    image = "/assets/images/guide/private-key-management/schemes/cloud-backup.jpg"
