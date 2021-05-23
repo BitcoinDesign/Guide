@@ -2,11 +2,11 @@
 layout: guide
 title: Private key management
 description: An overview of private key management schemes, including descriptions of  available approaches, some advice and best practices.
-nav_order: 4
+nav_order: 5
 has_children: true
 permalink: /guide/private-key-management/introduction/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/private-key-management/page-private-key-management.jpg
+image: https://bitcoin.design/assets/images/guide/private-key-management/private-key-management-preview.jpg
 ---
 
 <!--
@@ -69,13 +69,7 @@ A single key is split up, with each part stored in separate locations.
 
 ### [Multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }})
 
-A wallet that is managed by multiple independent keys of which at least one is stored on a separated device from the wallet application.
-
----
-
-### [Shared multi-key]({{ '/guide/private-key-management/shared-multi-key/' | relative_url }})
-
-Same as the multi-key scheme, but with keys managed by different people, requiring additional coordination.
+A wallet that is managed by multiple independent keys of which at least one is stored on a separate device from the wallet application. The keys can be owned by one person, or several people in a shared setup.
 
 ---
 

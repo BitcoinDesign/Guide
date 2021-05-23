@@ -4,8 +4,24 @@ title: Upgradeable account
 nav_order: 3
 parent: Case studies
 permalink: /guide/case-studies/upgradeable-wallet/
-main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/getting-started/getting-started-preview.jpg
+image: https://bitcoin.design/assets/images/guide/case-studies/upgradeable-wallet/upgradeable-wallet-preview.jpg
+image_base: /assets/images/guide/case-studies/upgradeable-wallet/
+images:
+    - file: first
+      alt: App landing screen
+      caption: A cover screen should offer clear options to create and import wallets.
+    - file: second
+      alt: App screen with text information about key storage mechanisms
+      caption: Explain what is about to happen. Be transparent about how the private key is stored and the risks. Advanced options can be placed on a separate page.
+    - file: home
+      alt: Wallet home screen with a balance and send and receive buttons
+      caption: Due to the default use of automatic cloud backup, users can quickly reach the wallet home screen
+    - file: settings
+      alt: App settings screen
+      caption: Changing the key management scheme is accessed via settings.
+    - file: change-private-key-scheme
+      alt: Private key security options screen
+      caption: Schemes are clearly explained and changes should guide users through the steps involved.
 ---
 
 <!--
@@ -27,10 +43,10 @@ The solution in this case could be a wallet that enables the user to upgrade the
 
 {% include prototype.html
    link = "https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A270&viewport=861%2C146%2C0.44897958636283875&scaling=scale-down"
-   image = "/assets/images/guide/case-studies/case-upgradeable.png"
-   retina = "/assets/images/guide/case-studies/case-upgradeable@2x.png"
-   mobile = "/assets/images/guide/case-studies/case-upgradeable-mobile.png"
-   mobileRetina = "/assets/images/guide/case-studies/case-upgradeable-mobile@2x.png"
+   image = "/assets/images/guide/case-studies/upgradeable-wallet/case-upgradeable.png"
+   retina = "/assets/images/guide/case-studies/upgradeable-wallet/case-upgradeable@2x.png"
+   mobile = "/assets/images/guide/case-studies/upgradeable-wallet/case-upgradeable-mobile.png"
+   mobileRetina = "/assets/images/guide/case-studies/upgradeable-wallet/case-upgradeable-mobile@2x.png"
    alt-text = "Image of case study prototype"
    width = 800
    height = 500
@@ -42,5 +58,29 @@ The solution in this case could be a wallet that enables the user to upgrade the
 
 #### Technical considerations
 - Need to handle many schemes; automatic cloud backups, recovery phrases, external signing devices, multi-key
+
+### Onboarding & upgrading
+
+The screens below show how this architecture allows users to get onboarded quickly with upgrade options easily accessible.
+
+<div class="image-slide-gallery">
+
+{% for item in page.images %}
+
+{% capture imageURL %}{{ page.image_base }}{{ item.file }}.png{% endcapture %}
+{% capture imageURLRetina %}{{ page.image_base }}{{ item.file }}@2x.png{% endcapture %}
+
+{% include picture.html
+   image = imageURL
+   retina = imageURLRetina
+   alt-text = item.alt
+   caption = item.caption
+   width = 250
+   height = 541
+   layout = "shadow"
+%}
+{% endfor %}
+
+</div>
 
 You can find a prototype for this case study linked in the image above, and a Figma file with [outline designs here](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A269).

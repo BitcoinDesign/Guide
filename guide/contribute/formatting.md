@@ -26,6 +26,9 @@ This page showcases the various formatting and layout options available for cont
 
 The design source file is a public Figma community file you can find [here](https://www.figma.com/community/file/862622015964353400/Bitcoin-Designers-site). To improve the design, please start with the Figma file and make a proposal in Slack or Github before implementing.
 
+---
+
+<div class="glossary-toc" markdown="1">
 - [Text](#text-formatting)
 - [Headers](#headers)
 - [Blockquotes](#blockquote)
@@ -41,6 +44,9 @@ The design source file is a public Figma community file you can find [here](http
 - [Facts](#facts)
 - [Do's and don'ts](#dos-and-donts)
 - [Footnotes](#footnotes)
+</div>
+
+---
 
 ## Basic markdown formatting
 
@@ -88,7 +94,7 @@ There should be whitespace between paragraphs.
 
 ### Links
 
-### External Links
+#### External Links
 
 ```markdown
 [Link to another page](https://bitcoin.org/bitcoin.pdf)

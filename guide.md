@@ -43,11 +43,17 @@ Illustration sources
 
 We designed this guide to help anyone navigate those complexities—regardless of where they live or work. We can’t imagine every possible use case, but we can help you build for them.
 
-## What's in it?
+---
 
 ### [Getting started]({{ '/guide/getting-started/introduction/' | relative_url }})
 
-Provides top-level overviews of common visual language, software, and best practices for design collaboration.
+Provides top-level overviews of common visual language, technology, software, and hardware.
+
+---
+
+### [Designing Bitcoin products]({{ '/guide/designing-products/introduction/' | relative_url }})
+
+A close look at the design process, from the concept of open design to use cases and frameworks like the usage life cycle.
 
 ---
 

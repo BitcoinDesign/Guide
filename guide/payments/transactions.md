@@ -121,3 +121,7 @@ The sender's wallet uses both of these as inputs in the transaction, meaning tha
 Every transaction needs to pay a fee to incentivize miners to include it in a block. There is no fixed fee for making a transaction as it depends on the amount of data it includes, the amount of other transactions that are trying to get verified, and how much each submitter is prepared to pay. Miners typically pick the transactions that will earn them the highest reward to include in a block.
 
 Blocks are also limited in size and new ones are created every 10 minutes on average. This means that if you want a transaction to be confirmed in the next block you might have to pay a relatively high price.
+
+---
+
+Next we will cover [sending bitcoin]({{ '/guide/payments/send/' | relative_url }}).

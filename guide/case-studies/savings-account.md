@@ -60,10 +60,10 @@ Should they lose either their main mobile device, or the purpose-built signing d
 
 {% include prototype.html
    link = "https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=6%3A11&viewport=333%2C41%2C0.37497082352638245&scaling=scale-down"
-   image = "/assets/images/guide/case-studies/case-current.png"
-   retina = "/assets/images/guide/case-studies/case-current@2x.png"
-   mobile = "/assets/images/guide/case-studies/case-current-mobile.png"
-   mobileRetina = "/assets/images/guide/case-studies/case-current-mobile@2x.png"
+   image = "/assets/images/guide/case-studies/multisig-wallet/case-current.png"
+   retina = "/assets/images/guide/case-studies/multisig-wallet/case-current@2x.png"
+   mobile = "/assets/images/guide/case-studies/multisig-wallet/case-current-mobile.png"
+   mobileRetina = "/assets/images/guide/case-studies/multisig-wallet/case-current-mobile@2x.png"
    alt-text = "Image of case study prototype"
    width = 800
    height = 500

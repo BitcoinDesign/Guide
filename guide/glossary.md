@@ -2,7 +2,7 @@
 layout: guide
 title: Glossary
 permalink: /guide/glossary/
-nav_order: 8
+nav_order: 10
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/glossary/glossary-preview.jpg
 ---
@@ -40,13 +40,11 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 ---
 
 ### Address
-
-An identifier of 26-35 alphanumeric characters that is used to receive bitcoin. There are [several address formats](https://en.bitcoin.it/wiki/List_of_address_prefixes) based on different specifications. Users need to know this information during backup for future recovery so applications should inform users which format it uses as support varies across applications.
+A Bitcoin address is an identifier of 26-35 alphanumeric characters that is used to receive bitcoin. There are [several address formats](https://en.bitcoin.it/wiki/List_of_address_prefixes) based on different specifications. Users need to know this information during backup for future recovery so applications should inform users which format it uses as support varies across applications.
 
 When users enter an address, these formats have specific prefixes so it is possible to instantly determine which format is being used.
 
 These are the three most common ones:
-
 
 **Legacy address - [P2PKH](https://en.bitcoin.it/wiki/Transaction#Pay-to-PubkeyHash)**<br/>
 Stands for pay-to-pubkey-hash, i.e pay to a hash of the recipient’s public key. This was the original address format for bitcoin and is often called *legacy address*.
@@ -71,6 +69,35 @@ For example: `bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq`
 **Change address**<br/>
 When the output of a transaction is used as the input of another transaction, it must be spent in its entirety. Sometimes the value of the output is higher than what the user wishes to pay. In this case, the bitcoin client generates a new Bitcoin address, and sends the difference back to this address. This is known as *change address*.
 
+##### Address compatibility
+Since "legacy" addresses are still in use[^1], and some older applications have yet to upgrade. Script addresses can be used to resolve incompatibility issues that can arise when the sender's application does not recognize the SegWit address provided by the receiver.
+
+To illustrate the problem, suppose the sender is using a legacy wallet and paying to the receiver's SegWit address. In this case, the sender's wallet may incorrectly warn them that the address is invalid or not supported. This can confuse the sender’s end, leading them to think that the receiver provided an incorrect address.
+
+The receiver should then have the ability to switch to a Script address that does not have all the benefits of SegWit, like cheaper transactions but will be compatible with the sender's wallet.
+
+<div class="image-slide-gallery">
+
+{% include picture.html
+   image = "/assets/images/guide/payments/receive/address-switch.png"
+   retina = "/assets/images/guide/payments/receive/address-switch@2x.png"
+   alt-text = "Screen with modal of invoice details, and address switcher"
+   caption = "Allow the receiver to switch to a legacy compatible address"
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/payments/receive/address-info.png"
+   retina = "/assets/images/guide/payments/receive/address-info@2x.png"
+   alt-text = "Screen explaining SegWit and Legacy addresses"
+   caption = "Provide information about the different address types"
+   width = 250
+   height = 541
+%}
+
+</div>
+
 ### Account
 
 Just like wallet, the term account can also be used for very different things. In bitcoin wallets that follow the hierarchy described in [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki), a bitcoin wallet can have multiple accounts, with each one having its own addresses. However, account is also oftentimes used for accounts with third-party service providers.
@@ -84,13 +111,24 @@ Differentiate between
 
 Bitcoin with a capital *B* is typically associated with Bitcoin the protocol and payment network. It is also often used to refer to as the ecosystem as a whole when writing about it in general terms. Bitcoin with a lowercase “b” written as “bitcoin” is usually associated specifically with bitcoin as the currency.
 
-### Bitcoin Client
+### Bitcoin client
 
--What is considered a Bitcoin client? I'd suggest it's a software package comprising node / base layer wallet features. [Several other](https://coin.dance/nodes) clients exist besides Bitcoin Core. -Bosch
+Software that runs and/or connects to the Bitcoin network.
 
-### Bitcoin Core
+### Bitcoin Core (client)
 
-An open source Bitcoin project that maintains and releases Bitcoin client also referred to as "Bitcoin Core." Bitcoin Core is often considered as the *reference implementation* and serves as the specification of the Bitcoin protocol. It is the continuation of Satoshi Nakamoto's original bitcoin client released on 9th January 2009. More on the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Bitcoin_Core) and [Bitcoin Core website](https://bitcoincore.org/).
+Software considered the reference implementation for the Bitcoin protocol. It is the continuation of Satoshi Nakamoto's original Bitcoin client released 9th January, 2009. 
+
+- [Bitcoin Core client download](https://bitcoincore.org/en/download/)
+- [Bitcoin Core source code](https://github.com/bitcoin/bitcoin)
+
+### Bitcoin Core (project)
+
+An open-source project that maintains and releases the Bitcoin client of the same name.
+
+- [Bitcoin Core GitHub](https://github.com/bitcoin-core)
+- [Bitcoin Core website](https://bitcoincore.org/)
+- [Bitcoin Core wiki entry](https://en.bitcoin.it/wiki/Bitcoin_Core)
 
 ### BIP - Bitcoin improvement proposal
 
@@ -319,6 +357,15 @@ A file format for bitcoin transactions that are not fully signed yet. Allows for
 
 - [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki): Partially Signed Bitcoin Transaction Format
 
+
+###  Passphrase
+A passphrase can be added to the [recovery phrase](#recovery-phrase) for extra security.
+Technically, all recovery phrases have a pass phrase. If it’s not set by the user, an empty string (“”) will be used by default. Using the recovery phrase with or without the user-defined pass phrase will recover two DIFFERENT wallets. Pass phrases are sometimes referred to as the password, the extra word, or the 13th/25th word.
+
+**References:**
+
+- [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki): Mnemonic code for generating deterministic keys
+
 ### Vault
 
 A term sometimes used for multi-signature wallets.
@@ -377,3 +424,5 @@ With a custodial wallet-application, the users are not exposed to and in charge 
 - [Bitcoin Wiki](https://en.bitcoin.it/wiki/Main_Page)
 - [Bitcoin Optech style guide](https://github.com/bitcoinops/bitcoinops.github.io/blob/master/STYLE.md)
 - [Bitcoin Optech topics](https://bitcoinops.org/en/topics/)
+
+[^1]: [SegWit Usage Trends](https://dashboard.bitcoinops.org/d/xVQwtADiz/segwit-usage-trends?refresh=1h&orgId=1)

@@ -5,7 +5,33 @@ nav_order: 4
 parent: Case studies
 permalink: /guide/case-studies/shared-account/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/getting-started/getting-started-preview.jpg
+image: https://bitcoin.design/assets/images/guide/case-studies/shared-account/shared-account-preview.jpg
+image_base: /assets/images/guide/case-studies/shared-account/
+images:
+    - file: first
+      alt: App cover screen with a logo, intro and primary call-to-action.
+      caption: A typical app cover screen to welcome users.
+    - file: second
+      alt: Informational app screen about the private key management scheme used.
+      caption: Provide users with information about the scheme and the next steps they are about to take.
+    - file: create-multi-key-wallet
+      alt: 3-step screen with 'Create your key' highlighted.
+      caption: The first key is created directly on the device and stored via automatic cloud backup.
+    - file: create-signing-key
+      alt: 3-step screen with 'Invite account-holder' highlighted.
+      caption: The second key is created and stored by the account co-holder, which requires exchange of keys outside of the app.
+    - file: create-recovery-key
+      alt: 3-step screen with 'Account activation' highlighted.
+      caption: The third key is stored with the wallet provider.
+    - file: recovery-key-setup
+      alt: Summary screen of the recovery key setup process.
+      caption: Guide users through the recovery key creation.
+    - file: creation-complete
+      alt: 3-step screen with all steps checked.
+      caption: Clearly confirm that the wallet was successfully created.
+    - file: home
+      alt: Mobile app screen for the main wallet overview.
+      caption: Once set up, users are navigated to the app home screen.
 ---
 
 <!--
@@ -35,13 +61,37 @@ We are looking for a low friction, easy-to-manage solution that could work for b
 
 {% include prototype.html
    link = "https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A824&viewport=333%2C41%2C0.37497082352638245&scaling=scale-down"
-   image = "/assets/images/guide/case-studies/case-shared.png"
-   retina = "/assets/images/guide/case-studies/case-shared@2x.png"
-   mobile = "/assets/images/guide/case-studies/case-shared-mobile.png"
-   mobileRetina = "/assets/images/guide/case-studies/case-shared-mobile@2x.png"
+   image = "/assets/images/guide/case-studies/shared-account/case-shared.png"
+   retina = "/assets/images/guide/case-studies/shared-account/case-shared@2x.png"
+   mobile = "/assets/images/guide/case-studies/shared-account/case-shared-mobile.png"
+   mobileRetina = "/assets/images/guide/case-studies/shared-account/case-shared-mobile@2x.png"
    alt-text = "Image of case study prototype"
    width = 800
    height = 500
 %}
+
+### Onboarding experience
+
+The wireframe screens below show the main onboarding sequence that guides users through wallet creation.
+
+<div class="image-slide-gallery">
+
+{% for item in page.images %}
+
+{% capture imageURL %}{{ page.image_base }}{{ item.file }}.png{% endcapture %}
+{% capture imageURLRetina %}{{ page.image_base }}{{ item.file }}@2x.png{% endcapture %}
+
+{% include picture.html
+   image = imageURL
+   retina = imageURLRetina
+   alt-text = item.alt
+   caption = item.caption
+   width = 250
+   height = 541
+   layout = "shadow"
+%}
+{% endfor %}
+
+</div>
 
 You can find a prototype for this case study linked in the image above, and a Figma file with [outline designs here](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A822).

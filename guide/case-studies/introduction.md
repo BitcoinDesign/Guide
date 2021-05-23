@@ -2,11 +2,11 @@
 layout: guide
 title: Case studies
 description: A range of case study designs for Bitcoin applications.
-nav_order: 7
+nav_order: 8
 has_children: true
 permalink: /guide/case-studies/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/private-key-management/case-studies/page-case-studies.jpg
+image: https://bitcoin.design/assets/images/guide/case-studies/page-case-studies.jpg
 ---
 
 <!--

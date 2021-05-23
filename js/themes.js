@@ -1,51 +1,51 @@
 let themes = [
-  {
-    // Template
-    logo: {
-        path: "/assets/banner-bitcoin-logo.svg",
-        fillColor: "",
-        outlineColor: "#000"
-    },
-    title: {
-        fillColor: "#FFF",
-        outlineColor: "#000"
-    },
-    description: {
-        fillColor: "#000"
-    },
-    button1: {
-        fillColor: "",
-        outlineColor: "#000",
-        labelFillColor: "#000"
-    },
-    button2: {
-        fillColor: "",
-        outlineColor: "#000",
-        labelFillColor: "#000"
-    },
-    background: {
-        path: '',
-        pathRetina: '',
-        pathMobile: '',
-        pathMobileRetina: '',
-        backgroundColor: ''
-    },
-    copy: {
-        backgroundColor: ""
-    },
-    image: {
-        path: 'url("/assets/images/home/banner/template.jpg")',
-        pathRetina: 'url("/assets/images/home/banner/template@2x.jpg")',
-        pathMobile: 'url("/assets/images/home/banner/template-mobile.jpg")',
-        pathMobileRetina: 'url("/assets/images/home/banner/template-mobile@2x.jpg")',
-        backgroundColor: "#fbfbfb"
-    },
-    flipLayoutOnMobile: false,
-    author: {
-        name: "Template",
-        link: "https://github.com/BitcoinDesign/Guide/pull/27"
-    }
-  },
+  // {
+  //   // Template
+  //   logo: {
+  //       path: "/assets/banner-bitcoin-logo.svg",
+  //       fillColor: "",
+  //       outlineColor: "#000"
+  //   },
+  //   title: {
+  //       fillColor: "#FFF",
+  //       outlineColor: "#000"
+  //   },
+  //   description: {
+  //       fillColor: "#000"
+  //   },
+  //   button1: {
+  //       fillColor: "",
+  //       outlineColor: "#000",
+  //       labelFillColor: "#000"
+  //   },
+  //   button2: {
+  //       fillColor: "",
+  //       outlineColor: "#000",
+  //       labelFillColor: "#000"
+  //   },
+  //   background: {
+  //       path: '',
+  //       pathRetina: '',
+  //       pathMobile: '',
+  //       pathMobileRetina: '',
+  //       backgroundColor: ''
+  //   },
+  //   copy: {
+  //       backgroundColor: ""
+  //   },
+  //   image: {
+  //       path: 'url("/assets/images/home/banner/template.jpg")',
+  //       pathRetina: 'url("/assets/images/home/banner/template@2x.jpg")',
+  //       pathMobile: 'url("/assets/images/home/banner/template-mobile.jpg")',
+  //       pathMobileRetina: 'url("/assets/images/home/banner/template-mobile@2x.jpg")',
+  //       backgroundColor: "#fbfbfb"
+  //   },
+  //   flipLayoutOnMobile: false,
+  //   author: {
+  //       name: "Template",
+  //       link: "https://github.com/BitcoinDesign/Guide/pull/27"
+  //   }
+  // },
   {
     // Bridging bitcoin
     logo: {
@@ -185,6 +185,53 @@ let themes = [
     author: {
         name: "Rama Krushna",
         link: "https://github.com/BitcoinDesign/Guide/issues/272"
+    }
+  },
+  {
+    // BITs and pieces
+    logo: {
+        path: "/assets/banner-bitcoin-logo.svg",
+        fillColor: "#FEC34A",
+        outlineColor: "#000"
+    },
+    title: {
+        fillColor: "#000",
+        outlineColor: "transparent"
+    },
+    description: {
+        fillColor: "#000"
+    },
+    button1: {
+        fillColor: "#00C4C6",
+        outlineColor: "#000",
+        labelFillColor: "#000"
+    },
+    button2: {
+        fillColor: "#FEC34A",
+        outlineColor: "#000",
+        labelFillColor: "#000"
+    },
+    background: {
+        path: 'url("/assets/images/home/banner/bits-and-pieces.png")',
+        pathRetina: 'url("/assets/images/home/banner/bits-and-pieces@2x.png")',
+        pathMobile: '',
+        pathMobileRetina: '',
+        backgroundColor: "#FFFFFF"
+    },
+    copy: {
+        backgroundColor: ""
+    },
+    image: {
+        path: '',
+        pathRetina: '',
+        pathMobile: 'url("/assets/images/home/banner/bits-and-pieces-mobile.png")',
+        pathMobileRetina: 'url("/assets/images/home/banner/bits-and-pieces-mobile@2x.png")',
+        backgroundColor: ""
+    },
+    flipLayoutOnMobile: false,
+    author: {
+        name: "Jessica Wolff",
+        link: "https://github.com/BitcoinDesign/Guide/issues/289"
     }
   }
 ];

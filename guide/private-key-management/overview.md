@@ -35,7 +35,7 @@ Important aspects to consider when choosing a private key management scheme is w
 
 
 * **Target audience** - Are your users completely new to bitcoin and its concepts, or well versed in all the technological underpinnings?
-* **Use case** - Are you building a [personal finance]({{ '/guide/getting-started/personal-finance/' | relative_url }}) product for daily payments, or a long-term life-saving storage solution?
+* **Use case** - Are you building a [personal finance]({{ '/guide/designing-products/personal-finance/' | relative_url }}) product for daily payments, or a long-term life-saving storage solution?
 * **Value stored** - While we always strive for no loss of funds, how critical to their financial situation would it be if your user lost access to their funds?
 
 
@@ -88,8 +88,6 @@ Or you can follow this flow chart to find a suitable scheme for your use case.
    layout = "full-width"
 %}
 
-We can divide the options up into personal and shared wallet schemes. The following pages explain each one in more detail:
-
 ### Personal schemes
 
 Now let's dive in and look at the various schemes that might be suitable for a personal wallet application with a single user to understand the differences at a high level.
@@ -115,7 +113,7 @@ While multi-key setups can be used for personal use, if several people need to s
 
 The use cases for shared schemes include spouses managing a joint account, groups, organizations or companies managing their funds, as well as inheritance planning. It can also be used for governance of an organization, with transactions used not to transfer funds but to record, or vote, for decisions.
 
-- [Shared multi-key](/guide/private-key-management/shared-multi-key) - several keys and several people control the wallet
+- [Multi-key](/guide/private-key-management/multi-key/) - several keys and several people control the wallet
 
 ---
 

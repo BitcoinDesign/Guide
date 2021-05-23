@@ -79,9 +79,9 @@ The receiver does this by generating a new address in their wallet application, 
 
 Once you have gotten the address, it's time to enter the payment details. Bitcoin transactions are irreversible, so both the sender and receiver should take great care in correctly sharing and inputting addresses.
 
-**QR Code** -- Access will need to be granted to your application to enable scanning of QR Codes. Once the camera detects a valid address in the QR Code, it should automatically fill the address field.
+**QR Code** -- Camera access will need to be granted to your Bitcoin application to enable scanning of QR Codes. Once the camera detects a valid address in the QR Code, it should automatically fill the address field.
 
-**Copy Paste** -- When the sender receives the address or payment link as text, your application can detect a valid address in the clipboard and prompt the sender to press a button to paste it.
+**Copy/Paste** -- When the sender receives the address or payment link as text, your application can detect a valid address in the clipboard and prompt the sender to press a button to paste it.
 
 </div>
 
@@ -120,7 +120,7 @@ Applications sometimes also allow the sender to select fractions of their total 
 - Payment links and QR Codes can contain an amount. When they do, your application should populate the amount field automatically
 - Indicate if an amount entered is more than the available balance
 
-## Transaction fee
+## Setting the transaction fee
 
 <div class="center" markdown="1">
 {% include image.html
@@ -162,9 +162,9 @@ Human error with fee selection can lead to costly mistakes, and fee estimations 
    layout = "float-right-desktop"
 %}
 
-A valid transaction that is broadcast to the network cannot be reversed, so it is critical that the sender is given a chance to double check the payment details (amount, recipient address, total fee, etc) before submitting the transaction.
+A valid transaction that is broadcast to the network cannot be reversed, so it is critical that the sender is given a chance to double-check the payment details (amount, recipient address, total fee, etc) before submitting the transaction.
 
-If your application allows setting spending limits, and the current transaction exceeds it, make sure they go through some security check (biometric, enter PIN, 2FA password, etc). This technique can also be employed if the transaction is attempting to use the max wallet balance.
+If your application allows setting spending limits, and the current transaction exceeds it, make sure they go through some security check (biometric, enter a PIN, 2FA password, etc). This technique can also be employed if the transaction is attempting to use the max wallet balance.
 </div>
 
 **Do's**
@@ -199,3 +199,7 @@ Let us look at how we communicate to the sender about the [processing of a trans
 
 **Don'ts**
 - Show the transaction as confirmed until it has received ***at least*** one confirmation, but preferably six
+
+---
+
+Sending is one side of the process. Let's look at things from the [receiver's perspective](/guide/payments/receive).

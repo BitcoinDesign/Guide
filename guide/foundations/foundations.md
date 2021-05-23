@@ -2,7 +2,7 @@
 layout: guide
 title: Foundations
 description: Basics for designing great Bitcoin products.
-nav_order: 6
+nav_order: 7
 has_children: true
 permalink: /guide/foundations/
 image: https://bitcoin.design/assets/images/guide/foundations/foundations-preview.jpg
