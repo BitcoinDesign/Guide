@@ -82,6 +82,7 @@ collections:
   glossary:
     sort_by: title
     output: true
+    published: false
 
 # Exclude from processing.
 # The following items will not be processed, by default.

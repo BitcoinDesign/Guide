@@ -13,7 +13,7 @@ title: CoinJoin
    height = 400
 %}
 
- Allow for combining multiple payments from multiple spenders into a single transaction to make it harder to determine which spender paid which recipient(s). More information can be found on [the Bitcoin Wiki](https://en.bitcoin.it/wiki/CoinJoin). See also [PayJoin](#payjoin-p2ep).
+Allow for combining multiple payments from multiple spenders into a single transaction to make it harder to determine which spender paid which recipient(s). More information can be found on [the Bitcoin Wiki](https://en.bitcoin.it/wiki/CoinJoin). See also [PayJoin](#payjoin-p2ep).
 
 
 </div>
