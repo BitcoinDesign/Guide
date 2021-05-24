@@ -42,7 +42,7 @@ Depending on the target audience of your bitcoin application, designing send flo
 Below are the must-haves in a sending bitcoin design flow:
 
 - **Amount** - The amount of bitcoin the user is sending.
-- **Receiver address** - The Bitcoin Address the user is sending their bitcoin.
+- **Receiver address** - The Bitcoin Address the user is sending their bitcoin to.
 - **Network fee** - Display to the user the current Bitcoin network fee they will be paying for this send.
 
 Some optional, more complex, features you may include:
