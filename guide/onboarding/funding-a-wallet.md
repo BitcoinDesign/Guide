@@ -94,6 +94,6 @@ Users can get set up in minutes using this technique.
  - No compromise on privacy
 {% include fact/close.html %}
 
-{% include fact/close.html %}
+{% include fact/cons.html %}
  - Low retail availability
 {% include fact/close.html %}
