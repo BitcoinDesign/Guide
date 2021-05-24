@@ -22,13 +22,13 @@ image: https://bitcoin.design/assets/images/guide/onboarding/getting-to-know-you
 
 # Getting to know your users
 When building onboarding experiences, it is important to understand and develop knowledge about your users upfront.
-Within the Bitcoin ecosystem, there is a wide range in the level of expertise. Identifying who you are building for is crucial, as these user groups value and understand varying characteristics of coin and key management tools. For example, “rookies” often favor convenient, easy-to-use wallets, while well-versed bitcoin owners tend to prioritize security[^1].
+Within the Bitcoin ecosystem, there is a wide range in the level of expertise. Identifying who you are building for is crucial, as these user groups value and understand varying characteristics of coin and key management tools. For example, [research](https://voskart.de/pdf/bits_under_mattress.pdf) suggests “rookies” often favor convenient, easy-to-use wallets, while well-versed bitcoin owners tend to prioritize security.
 
 
 ## Observe your potential users
 This observation could take the form of [user research]({{ 'guide/designing-products/user-research/' | relative_url }}), user interviews and surveys aimed at a range of participants to observe and identify what they do, how they think, and what they want. Let's consider some things you might want to ask yourself when improving the onboarding experience for new users:
 
-* What is their perception of Bitcoin?[^2]
+* [What is their perception of Bitcoin?](https://docs.google.com/forms/d/e/1FAIpQLSdzT8cb54NgT7hGUnC_5ow6rDy-A9p_CA-5ptiQxrG8wQWvzQ/viewform)
 * Why do they intend to use Bitcoin, investment, savings or spending?
 * Where do they prefer to store most of their value, mobile or desktop wallets?
 * Where do they experience frustration?
@@ -50,7 +50,7 @@ For the sake of simplicity let's focus on one hypothetical user.
 
 > Joshua Akinsola is a 21-year old Nigerian studying economics in the large city of Lagos. Growing up, his family struggled to save any money due to a lack of financial education, high unemployment, and a local currency inflating at 15% per year. There is a lack of reliable [savings]({{ 'guide/designing-products/personal-finance/#savings' | relative_url }}) technology in his country, so he opts to save money for the future using bitcoin.
 
-The uncovering of this scenario could be the result of a user interview[^3] or found in various channels such as chats, issues, or even Twitter. We can then take quotes from the participant to understand their emotions and infer their specific needs. This then helps us identify barriers and motivators.
+The uncovering of this scenario could be the result of a [user interview](https://github.com/patestevao/Bitcoin-UX-interviews/blob/main/call-for-participants.md) or found in various channels such as chats, issues, or even Twitter. We can then take quotes from the participant to understand their emotions and infer their specific needs. This then helps us identify barriers and motivators.
 
 Barriers are anything that the user perceives as preventing them from achieving their desired goals.
 
@@ -176,15 +176,8 @@ It's important to allow you and your team to be as free and creative about how y
 ## Prototype & Test
 Next, you can think about prototyping a subset of these ideas and understanding your ideas' feasibility through feedback on these prototypes. Put your prototypes in front of real users and test to verify the solution meets the users' needs.
 
-You might choose to lean on something like the Bitcoin Wallet UI Kit[^4], which gives you several components that you can piece together for a specific [use case]({{ 'guide/case-studies/' | relative_url }}). This would allow you to prototype rapidly and get a feel for if the UI flow makes sense before committing to more detailed designs.
+You might choose to lean on something like the [Bitcoin Wallet UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=616%3A0), which gives you several components that you can piece together for a specific [use case]({{ 'guide/case-studies/' | relative_url }}). This would allow you to prototype rapidly and get a feel for if the UI flow makes sense before committing to more detailed designs.
 
 Ultimately the goal of onboarding is that users trust the application, feel comfortable using it, and are set up for success. They should have an idea of how this application is going to fit into their lives and take care of certain needs. It's also ideal if they can already envision the next time they will use it.
-
-[^1]:[Bits Under the Mattress: Understanding Different Risk Perceptions and Security Behaviors of Crypto-Asset Users](https://voskart.de/pdf/bits_under_mattress.pdf)
-[^2]:[Bitcoin Perspectives Survey](https://docs.google.com/forms/d/e/1FAIpQLSdzT8cb54NgT7hGUnC_5ow6rDy-A9p_CA-5ptiQxrG8wQWvzQ/viewform)
-[^3]:[Bitcoin UX interviews](https://github.com/patestevao/Bitcoin-UX-interviews/blob/main/call-for-participants.md)
-[^4]:[Bitcoin Wallet UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=616%3A0)
-
----
 
 Next, we will cover [creating a new wallet]({{ '/guide/onboarding/creating-a-new-wallet/' | relative_url }}).
