@@ -55,24 +55,24 @@ An overview of what information to include when creating a wallet for the first 
 
 ---
 
-### Backing up a recovery phrase (coming soon)
+### [Backing up a recovery phrase]({{ 'guide/onboarding/backing-up-a-recovery-phrase' | relative_url }})
 
-An overview of the tradeoffs between using manual backups vs seedless backups.
+An overview of the tradeoffs between using [manual backup]({{ 'guide/onboarding/backing-up-a-recovery-phrase/manual-backup' | relative_url }}) vs [automatic cloud backup]({{ 'guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup' | relative_url }}).
 
 ---
 
-### Restoring a wallet (coming soon)
+### [Restoring a wallet]({{ 'guide/onboarding/restoring-a-wallet' | relative_url }})
 
 What options to consider if a user has lost their device, had it stolen or deleted and redownloaded a particular wallet application.
 
 ---
 
-### Protecting a wallet (coming soon)
+### [Protecting a wallet]({{ 'guide/onboarding/protecting-a-wallet' | relative_url }})
 
 An overview of how to add extra layers of securtiy to protect sensitive user data.
 
 ---
 
-### Funding a wallet (coming soon)
+### [Funding a wallet]({{ 'guide/onboarding/funding-a-wallet' | relative_url }})
 
 An overview of how users are likely to fund their wallets
