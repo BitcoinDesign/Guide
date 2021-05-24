@@ -48,7 +48,7 @@ Let us look at the main transaction options senders need to configure when movin
 
 You do not need to follow the order below. Feel free to tailor the configuration's order for the payment to what best serves your users. For example, you may make users set the amount before they enter the address.
 
-## Get the recipient address
+## Get the receivers address
 
 <div class="center" markdown="1">
 {% include image.html
@@ -60,9 +60,9 @@ You do not need to follow the order below. Feel free to tailor the configuration
    layout = "float-right-desktop"
 %}
 
-To send a payment on the Bitcoin blockchain, the sender needs to obtain an address from the recipient. Since Bitcoin [addresses]({{ '/guide/glossary/#address' | relative_url }}) are long and seemingly random, they are best shared by copying and pasting in plain text, as a [payment link]({{ '/guide/foundations/wallet-interoperability/#payment-links' | relative_url }}), or as a scannable [QR Code]({{ '/guide/foundations/wallet-interoperability/#qr-codes' | relative_url }}).
+The first step in a sending bitcoin flow is getting the receivers [Bitcoin address](https://bitcoin.design/guide/glossary/#address). To send a bitcoin payment, the receiver needs to generate and share a bitcoin address with the sender. Bitcoin addresses are best shared as text, as a [payment link](https://bitcoin.design/guide/foundations/wallet-interoperability/#payment-links) or as a scannable [QR code](https://bitcoin.design/guide/foundations/wallet-interoperability/#qr-codes). For optimal privacy, Bitcoin addresses should be shared over secure communication channels. This could be recommended to users at the start of the sending user flow. 
 
-The receiver does this by generating a new address in their wallet application, then sharing it with the sender. If the sender and receiver are physically close to each other, scanning the receiver's address as a QR Code will be easy. Still, if they are not, they can send the address as text in any regular communication tool like email, SMS, etc.
+Design considerations for generating and sharing an address can be found in the [receiving bitcoin]( https://bitcoin.design/guide/payments/receive/#requesting-bitcoin ) section.
 </div>
 
 ## Inputting an address
