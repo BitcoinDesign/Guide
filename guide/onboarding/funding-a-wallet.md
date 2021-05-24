@@ -96,4 +96,4 @@ Users can get set up in minutes using this technique.
 
 {% include fact/close.html %}
  - Low retail availability
- {% include fact/close.html %}
+{% include fact/close.html %}
