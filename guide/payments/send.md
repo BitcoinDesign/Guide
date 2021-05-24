@@ -37,16 +37,25 @@ layout = "full-width"
 
 # Sending bitcoin
 
-Sending bitcoin can be a very straightforward or complex flow in a Bitcoin application. People may be sending bitcoin to a known contact, moving it between their wallets on different devices, or making a purchase through a [payment processor]({{ '/guide/getting-started/software/#payment-processors' | relative_url }}).
+Depending on the target audience of your bitcoin application, designing send flows can range in complexity. An application for new users may focus on the simple flow of entering an amount, address and clicking send. An application for more advanced users may include things like coin selection and custom fee setting as extra options. 
 
-Let us look at the main transaction options senders need to configure when moving bitcoin:
+Below are the must-haves in a sending bitcoin design flow:
 
-- **Amount** — How much to send
-- **Recipient address** — Where to send the bitcoin
-- **Coin selection** — Which coins/inputs to use (optional)
-- **Fee settings** — Prioritize fast confirmation or low cost (optional)
+- **Amount** - The amount of bitcoin the user is sending.
+- **Receiver address** - The Bitcoin Address the user is sending their bitcoin.
+- **Network fee** - Display to the user the current Bitcoin network fee they will be paying for this send.
 
-You do not need to follow the order below. Feel free to tailor the configuration's order for the payment to what best serves your users. For example, you may make users set the amount before they enter the address.
+Some optional, more complex, features you may include:
+
+- **Description** - Let the user add a description detailing what this send is for. 
+- **Coin selection** - Which coins/inputs, also called UTXOs, to use in this send.
+- **Custom fees** - Let the user set custom Bitcoin network fees.
+- **Fee bumping** - Let the user make use of fee bumping, or replace-by-fee (RBF) for this send. 
+- **Batch sending** - Allow the user to send to more than one bitcoin address in this send.
+
+A send flow should offer more complex features as an advanced option at the least. New users can then take advantage of these features as they become more comfortable sending bitcoin. 
+
+The rest of this section covers sending bitcoin design considerations and the process in more detail.
 
 ## Get the recipient address
 
