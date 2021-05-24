@@ -26,10 +26,11 @@ Earning bitcoin through exchange of goods and services is a great option. Some i
  - Simplifies onboarding
  {% include fact/close.html %}
 
-#### Cons
+{% include fact/cons.html %}
  - Managing taxes
  - Difficult to find businesses/individuals willing to pay in bitcoin
  - Limited options for recurring payments
+ {% include fact/close.html %}
 
 ### Buying bitcoin
 
