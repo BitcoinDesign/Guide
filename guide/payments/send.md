@@ -60,7 +60,9 @@ You do not need to follow the order below. Feel free to tailor the configuration
    layout = "float-right-desktop"
 %}
 
-The first step in a sending bitcoin flow is getting the receivers [Bitcoin address](https://bitcoin.design/guide/glossary/#address). To send a bitcoin payment, the receiver needs to generate and share a bitcoin address with the sender. Bitcoin addresses are best shared as text, as a [payment link](https://bitcoin.design/guide/foundations/wallet-interoperability/#payment-links) or as a scannable [QR code](https://bitcoin.design/guide/foundations/wallet-interoperability/#qr-codes). For optimal privacy, Bitcoin addresses should be shared over secure communication channels. This could be recommended to users at the start of the sending user flow. 
+The first step in a sending bitcoin flow is getting the receivers [Bitcoin address](https://bitcoin.design/guide/glossary/#address). To send a bitcoin payment, the receiver needs to generate and share a bitcoin address with the sender. Bitcoin addresses are best shared as text, a [payment link](https://bitcoin.design/guide/foundations/wallet-interoperability/#payment-links) or a scannable [QR code](https://bitcoin.design/guide/foundations/wallet-interoperability/#qr-codes). 
+
+For optimal privacy, Bitcoin addresses should be shared over secure communication channels. This could be recommended to users at the start of the sending user flow. 
 
 Design considerations for generating and sharing an address can be found in the [receiving bitcoin]( https://bitcoin.design/guide/payments/receive/#requesting-bitcoin ) section.
 </div>
