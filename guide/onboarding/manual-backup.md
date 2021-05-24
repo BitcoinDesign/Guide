@@ -181,7 +181,7 @@ By creating this design interaction, it drills in how viewing, storing, and mana
 
 **Option 4: All at Once**
 
-Lastly, another design is to simply give a user the words all at once. In this design, all words are shown on one screen.
+Lastly, another design is to give a user the words all at once. In this design, all words are shown on one screen.
 
 
 Here, there are no surprises in how long it is and does not require them to take any further action in revealing it.
