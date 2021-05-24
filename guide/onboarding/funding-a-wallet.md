@@ -20,10 +20,11 @@ Earning bitcoin through exchange of goods and services is a great option. Some i
 >
 > <cite>As reported by <a href="https://www.nbcsports.com/northwest/seahawks/former-seattle-seahawk-russell-okung-puts-half-salary-bitcoin-considered-highest">NBC Sports</a></cite>
 
-#### Pros
+{% include fact/pros.html %}
  - Privacy
  - No exchange fees
  - Simplifies onboarding
+ {% include fact/close.html %}
 
 #### Cons
  - Managing taxes
