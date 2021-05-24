@@ -86,10 +86,11 @@ Users can get set up in minutes using this technique.
    height = 500
 %}
 
-#### Pros
+{% include fact/pros.html %}
  - Gets user comfortable with scanning QR codes
  - Simplifies onboarding
  - No compromise on privacy
+ {% include fact/close.html %}
 
 #### Cons
  - Low retail availability
