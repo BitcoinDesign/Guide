@@ -36,11 +36,11 @@ Below is an example of what the user interface might look like for an automatic 
 %}
 
 {% include picture.html
-     image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-password.png"
-   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-password@2x.png"
+     image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-PIN.png"
+   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-PIN@2x.png"
    class = "shadow"
-   caption = "Allows the user to set a password used for encryption, this could also be a PIN."
-   alt-text = "The user can set a password which will be used to encrypt their recovery phrase and act as a login"
+   caption = "Allows the user to set a PIN used for authentication."
+   alt-text = "The user can set a PIN which will be used to authenticate and access the wallet"
    width = 250
    height = 541
 %}
@@ -49,7 +49,7 @@ Below is an example of what the user interface might look like for an automatic 
      image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-service.png"
    retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-service@2x.png"
    class = "shadow"
-   caption = "Give the user different cloud provider options, others such as Dropbox might also be included"
+   caption = "Give the user different cloud provider options, others such as Dropbox might also be included."
    alt-text = "Screen showing saving a password to encrypt the recovery phrase"
    width = 250
    height = 541
@@ -59,7 +59,7 @@ Below is an example of what the user interface might look like for an automatic 
      image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-provider.png"
    retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-provider@2x.png"
    class = "shadow"
-   caption = "This UI will be very different depending on the cloud provider and what permissions are required"
+   caption = "This UI will be very different depending on the cloud provider and what permissions are required."
    alt-text = "Screen of placeholder where cloud provider UI would be"
    width = 250
    height = 541
