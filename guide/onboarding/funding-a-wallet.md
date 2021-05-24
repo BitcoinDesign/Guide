@@ -60,8 +60,10 @@ Users funding new wallets from an exchange could potentially come into contact w
 
 {% include /tip/close.html %}
 
-#### Pros
- - An easy and popular way to acquire bitcoin
+{% include fact/pros.html %}
+  - An easy and popular way to acquire bitcoin
+{% include fact/close.html %}
+
 
 {% include fact/cons.html %}
  - Managing taxes
