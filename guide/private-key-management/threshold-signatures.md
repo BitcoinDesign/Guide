@@ -5,7 +5,8 @@ description: An overview of personal private key management schemes.
 nav_order: 5
 parent: Private key management
 permalink: /guide/private-key-management/key-sharing/
-image: https://bitcoin.design/assets/images/guide/private-key-management/schemes/page-personal-schemes.jpg
+image: https://bitcoin.design/assets/images/guide/private-key-management/key-sharing/key-sharing-preview.png
+main_classes: -no-top-padding
 ---
 
 <!--
@@ -16,20 +17,22 @@ Descriptions of schemes suitable for a single user.
 
 -->
 
+{% include picture.html
+   image = "/assets/images/guide/private-key-management/key-sharing/key-sharing.png"
+   retina = "/assets/images/guide/private-key-management/key-sharing/key-sharing@2x.png"
+   mobile = "/assets/images/guide/private-key-management/key-sharing/key-sharing-mobile.png"
+   mobileRetina = "/assets/images/guide/private-key-management/key-sharing/key-sharing-mobile@2x.png"
+   alt-text = "A smartphone and a key split in three pieces."
+   width = 1600
+   height = 700
+   layout = "full-width"
+%}
+
 # Threshold signatures / Key-sharing
 
 A threshold signature scheme can require n-of-n signatures from parts of a single private key to make a valid transaction. By sharing parts of the private key among several parties or locations, greater resistance to theft can be achieved since access to more than one share is required. Depending on the setup, resistance to self-inflicted loss can be similar or worse than with a single key (2-of-2) or better (2-of-3 or more).
 
 Some benefits over a multikey setup include greater privacy, as a transaction using threshold signatures will appear equal to a single key transaction and not expose details about the different key shares. Transactions will also incur lower fees than a multikey setup as only one signature will be recorded on-chain. The big caveat here however is that these advantages are true only with the current ECDSA signatures of bitcoin, while with the forthcoming Schnorr signature scheme multikey signatures will be indistinguishable from single key.
-
-{% include image.html
-   image = "/assets/images/guide/private-key-management/schemes/threshold-signatures.jpg"
-   retina = "/assets/images/guide/private-key-management/schemes/threshold-signatures@2x.jpg"
-   alt-text = "Threshold signatures illustration"
-   caption = "One key is split into several pieces, more than one are required for controlling the wallet."
-   width = 800
-   height = 400
-%}
 
 ### How it works
 A single private key is split into n key-shares that are distributed to several parties, devices or locations. When signing a transaction the required number of shares need to be coordinated into one valid signature. This relies on a cryptographic algorithm called [Shamir's Secret Sharing](https://en.wikipedia.org/wiki/Shamir's_Secret_Sharing) after its creator.
