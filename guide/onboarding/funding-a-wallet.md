@@ -92,7 +92,7 @@ Users can get set up in minutes using this technique.
  - Gets user comfortable with scanning QR codes
  - Simplifies onboarding
  - No compromise on privacy
- {% include fact/close.html %}
+{% include fact/close.html %}
 
 {% include fact/close.html %}
  - Low retail availability
