@@ -63,11 +63,13 @@ Users funding new wallets from an exchange could potentially come into contact w
 #### Pros
  - An easy and popular way to acquire bitcoin
 
-#### Cons
+{% include fact/cons.html %}
  - Managing taxes
  - Difficult to find businesses/individuals willing to pay in bitcoin
  - Hard to set up recurring payments
  - Not private
+ {% include fact/close.html %}
+
 
 ### Redeem bitcoin using a gift card
 
