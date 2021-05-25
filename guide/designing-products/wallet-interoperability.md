@@ -2,11 +2,11 @@
 layout: guide
 title: Wallet interoperability
 description: Designing for seamless experiences across Bitcoin applications.
-nav_order: 10
-parent: Foundations
-permalink: /guide/foundations/wallet-interoperability/
+nav_order: 8
+parent: Designing Bitcoin products
+permalink: /guide/designing-products/wallet-interoperability/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/foundations/wallet-interoperability/wallet-interoperability-preview.jpg
+image: https://bitcoin.design/assets/images/guide/designing-products/wallet-interoperability/wallet-interoperability-preview.jpg
 ---
 
 <!--
@@ -25,10 +25,10 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/foundations/wallet-interoperability/wallet-interoperability.jpg"
-   retina = "/assets/images/guide/foundations/wallet-interoperability/wallet-interoperability@2x.jpg"
-   mobile = "/assets/images/guide/foundations/wallet-interoperability/wallet-interoperability-mobile.jpg"
-   mobileRetina = "/assets/images/guide/foundations/wallet-interoperability/wallet-interoperability-mobile@2x.jpg"
+   image = "/assets/images/guide/designing-products/wallet-interoperability/wallet-interoperability.jpg"
+   retina = "/assets/images/guide/designing-products/wallet-interoperability/wallet-interoperability@2x.jpg"
+   mobile = "/assets/images/guide/designing-products/wallet-interoperability/wallet-interoperability-mobile.jpg"
+   mobileRetina = "/assets/images/guide/designing-products/wallet-interoperability/wallet-interoperability-mobile@2x.jpg"
    alt-text = "Several devices exchanging data"
    width = 1600
    height = 700
@@ -55,8 +55,8 @@ So here are some ways to allow users to more seamlessly navigate different softw
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/foundations/wallet-interoperability/key-import-export.jpg"
-   retina = "/assets/images/guide/foundations/wallet-interoperability/key-import-export@2x.jpg"
+   image = "/assets/images/guide/designing-products/wallet-interoperability/key-import-export.jpg"
+   retina = "/assets/images/guide/designing-products/wallet-interoperability/key-import-export@2x.jpg"
    alt-text = "Transfer of wallet data between applications"
    width = 400
    height = 300
@@ -74,8 +74,8 @@ To prevent issues, wallets should make it convenient for users to back up all re
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/foundations/wallet-interoperability/payment-links.jpg"
-   retina = "/assets/images/guide/foundations/wallet-interoperability/payment-links@2x.jpg"
+   image = "/assets/images/guide/designing-products/wallet-interoperability/payment-links.jpg"
+   retina = "/assets/images/guide/designing-products/wallet-interoperability/payment-links@2x.jpg"
    alt-text = "Click a link to launch Bitcoin software"
    width = 400
    height = 300
@@ -96,8 +96,8 @@ bitcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=50&label=Luke-Jr&message=Donat
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/foundations/wallet-interoperability/qr-code.jpg"
-   retina = "/assets/images/guide/foundations/wallet-interoperability/qr-code@2x.jpg"
+   image = "/assets/images/guide/designing-products/wallet-interoperability/qr-code.jpg"
+   retina = "/assets/images/guide/designing-products/wallet-interoperability/qr-code@2x.jpg"
    alt-text = "A smartphone camera scanning a QR code"
    width = 400
    height = 400
@@ -117,8 +117,8 @@ Although QR codes are a well-established and standardized format, there are deta
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/foundations/wallet-interoperability/user-data-import-export.jpg"
-   retina = "/assets/images/guide/foundations/wallet-interoperability/user-data-import-export@2x.jpg"
+   image = "/assets/images/guide/designing-products/wallet-interoperability/user-data-import-export.jpg"
+   retina = "/assets/images/guide/designing-products/wallet-interoperability/user-data-import-export@2x.jpg"
    alt-text = "Transfer of user data between applications"
    width = 400
    height = 300
@@ -134,8 +134,8 @@ Transaction data is stored on the Bitcoin block chain and available in any walle
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/foundations/wallet-interoperability/transaction-file.jpg"
-   retina = "/assets/images/guide/foundations/wallet-interoperability/transaction-file@2x.jpg"
+   image = "/assets/images/guide/designing-products/wallet-interoperability/transaction-file.jpg"
+   retina = "/assets/images/guide/designing-products/wallet-interoperability/transaction-file@2x.jpg"
    alt-text = "Transfer of transaction files between applications"
    width = 400
    height = 300
@@ -151,8 +151,8 @@ Also known as the [Partially Signed Bitcoin Transaction Format](https://github.c
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/foundations/wallet-interoperability/multi-signature.jpg"
-   retina = "/assets/images/guide/foundations/wallet-interoperability/multi-signature@2x.jpg"
+   image = "/assets/images/guide/designing-products/wallet-interoperability/multi-signature.jpg"
+   retina = "/assets/images/guide/designing-products/wallet-interoperability/multi-signature@2x.jpg"
    alt-text = "Cosigner wallets interacting with a multi signature wallet"
    width = 400
    height = 300
@@ -168,15 +168,15 @@ Per definition, multi signature wallets require interaction between all cosigner
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/foundations/wallet-interoperability/node-options.jpg"
-   retina = "/assets/images/guide/foundations/wallet-interoperability/node-options@2x.jpg"
+   image = "/assets/images/guide/designing-products/wallet-interoperability/node-options.jpg"
+   retina = "/assets/images/guide/designing-products/wallet-interoperability/node-options@2x.jpg"
    alt-text = "Node options"
    width = 400
    height = 300
    layout = "float-right-desktop"
 %}
 
-While it is extremely convenient when applications provide their own node connections, it is recommended to allow users to have a choice, and potentially even encourage them to set up their own node. This results in better [decentralization](/guide/foundations/principles/#decentralization), and also has privacy and [security](/guide/foundations/principles/#security) benefits.
+While it is extremely convenient when applications provide their own node connections, it is recommended to allow users to have a choice, and potentially even encourage them to set up their own node. This results in better [decentralization](/guide/designing-products/principles/#decentralization), and also has privacy and [security](/guide/designing-products/principles/#security) benefits.
 
 </div>
 
@@ -185,8 +185,8 @@ While it is extremely convenient when applications provide their own node connec
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/foundations/wallet-interoperability/integrations.jpg"
-   retina = "/assets/images/guide/foundations/wallet-interoperability/integrations@2x.jpg"
+   image = "/assets/images/guide/designing-products/wallet-interoperability/integrations.jpg"
+   retina = "/assets/images/guide/designing-products/wallet-interoperability/integrations@2x.jpg"
    alt-text = "Application reliance on external data and services"
    width = 400
    height = 300
@@ -196,3 +196,7 @@ While it is extremely convenient when applications provide their own node connec
 Most Bitcoin applications rely on external data sources (like currency conversion data) and may also have integrations with third parties (like linking to an external [block explorer]({{ 'guide/getting-started/software/#block-explorers' | relative_url }})). Whenever possible, it should be easy for users to learn about these dependencies and choose alternatives.
 
 </div>
+
+---
+
+That's it for this section. Keep reading to learn about [onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}).

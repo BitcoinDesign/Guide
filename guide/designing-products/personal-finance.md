@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Personal finance
-nav_order: 5
+nav_order: 6
 parent: Designing Bitcoin products
 permalink: /guide/designing-products/personal-finance/
 main_classes: -no-top-padding
