@@ -37,6 +37,12 @@ Open design is about global collaboration that balances the free exchange of des
 
 ---
 
+### [Bitcoin design principles]({{ '/guide/designing-products/principles/' | relative_url }})
+
+Core bitcoin design principles recommended by the Bitcoin Design Community.
+
+---
+
 ### [User research]({{ '/guide/designing-products/user-research/' | relative_url }})
 
 All products begin with user needs and end in those same users hands. User research is a fundamental activity that helps us focus on things people care about.
@@ -58,4 +64,10 @@ If we consider Bitcoin money, we need to consider how Bitcoin users think about 
 ### [Common user flows]({{ '/guide/designing-products/common-user-flows/' | relative_url }})
 
 Most Bitcoin applications share certain user activities, from initial setup to making a transaction. It is vital to follow users' expected patterns and behaviors to reduce mistakes and enable seamless switching between products.
+
+---
+
+### [Wallet interoperability]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }})
+
+Get to know the points of interaction and overlap connecting payment links, wallet recovery, node configurations, and more.
 
