@@ -75,12 +75,6 @@ Covers the complexities encountered when sending and receiving bitcoin.
 
 ---
 
-### [Foundations]({{ '/guide/foundations/' | relative_url }})
-
-Highlights principles and other fundamentals of designing Bitcoin products
-
----
-
 ### [Case studies]({{ '/guide/case-studies/' | relative_url }})
 
 Explores approaches to diverse uses cases with wireframes, designs and prototypes.

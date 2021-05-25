@@ -36,7 +36,7 @@ This observation could take the form of [user research]({{ 'guide/designing-prod
 * How did they hear about my application? Word of mouth? App store search?
 * Do first-time users have specific needs or goals?
 
-Perhaps after research, you identify your users as "cypherpunks" with sound knowledge of Bitcoin, but they are new to your app. You might build an experience that preserves as much of their [privacy](/guide/foundations/principles/#privacy) as possible and is super customizable from the outset.
+Perhaps after research, you identify your users as "cypherpunks" with sound knowledge of Bitcoin, but they are new to your app. You might build an experience that preserves as much of their [privacy](/guide/designing-products/principles/#privacy) as possible and is super customizable from the outset.
 
 Aim to gather as much information and observations as possible in order to empathize with your users.
 
