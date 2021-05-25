@@ -156,6 +156,10 @@ Create and specify differently laid out images for desktop and mobile as needed.
 
 Optimize your images before committing them. The easiest way is to [build and run this repository locally](https://github.com/BitcoinDesign/Guide#how-to-build-and-run-the-site-locally). Images will be automatically compressed as you add them. After compression, ensure that the quality is still acceptable. Heavily textured images are sometimes heavily compressed resulting in visible compression crystals, blurry lines and other visual artefacts.
 
+## Link preview images
+
+Social and messaging services typically show a preview image when sharing links. This is a custom image that needs to be prepared and defined in the front matter of each page. The file name should combine the page name and the `-preview suffix`, for example `getting-started-preview.jpg` for the `Getting started` page. The image resolution needs to be 1200x630px for best display across social networks, both JPG and PNG file types can be used. [Twitter](https://cards-dev.twitter.com/validator) and [Facebook](https://developers.facebook.com/tools/debug/) provide handy link preview tools to check if your image turns out correctly.
+
 ---
 
 Next, find out what options are available for formatting your content. [Take a look](/guide/contribute/formatting/).
