@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: User research
-nav_order: 3
+nav_order: 4
 parent: Designing Bitcoin products
 permalink: /guide/designing-products/user-research/
 main_classes: -no-top-padding

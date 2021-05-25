@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Common user flows
-nav_order: 6
+nav_order: 7
 parent: Designing Bitcoin products
 permalink: /guide/designing-products/common-user-flows/
 main_classes: -no-top-padding
@@ -539,4 +539,4 @@ This can be a tricky experience to address. For one, non-custodial cryptocurrenc
 
 ---
 
-That's it for this section. Keep reading to learn about [onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}).
+On to [wallet interoperability]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }}) which is essential for smooth interaction and migration between Bitcoin products.

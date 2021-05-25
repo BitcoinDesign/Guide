@@ -2,11 +2,11 @@
 layout: guide
 title: Principles
 description: The key principles to follow when designing Bitcoin products.
-nav_order: 9
-parent: Foundations
-permalink: /guide/foundations/principles/
+nav_order: 3
+parent: Designing Bitcoin products
+permalink: /guide/designing-products/principles/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/foundations/principles/page-principles.jpg
+image: https://bitcoin.design/assets/images/guide/designing-products/principles/page-principles.jpg
 ---
 
 <!--
@@ -18,10 +18,10 @@ The key principles of designing for Bitcoin
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/foundations/principles/principles.jpg"
-   retina = "/assets/images/guide/foundations/principles/principles@2x.jpg"
-   mobile = "/assets/images/guide/foundations/principles/principles-mobile.jpg"
-   mobileRetina = "/assets/images/guide/foundations/principles/principles-mobile@2x.jpg"
+   image = "/assets/images/guide/designing-products/principles/principles.jpg"
+   retina = "/assets/images/guide/designing-products/principles/principles@2x.jpg"
+   mobile = "/assets/images/guide/designing-products/principles/principles-mobile.jpg"
+   mobileRetina = "/assets/images/guide/designing-products/principles/principles-mobile@2x.jpg"
    alt-text = "Principles header illustration, five white circles in a horizontal line on black background"
    width = 1600
    height = 600
@@ -121,7 +121,7 @@ While Bitcoin is already used by a large number of people, it pales in compariso
 
 > Enable import and export of wallets, maximise backwards compatibility and use of open standards
 
-Bitcoin is an open-source protocol, operating in a decentralized manner. This has led to a number of standards being developed to ensure compatibility between products. It should be easy to switch and move your Bitcoin wallet to a different application, should you wish. Ensuring that your product supports as many of these standards as possible is best practice and builds trust. More on [wallet interoperability]({{ '/guide/foundations/wallet-interoperability/' | relative_url }}).
+Bitcoin is an open-source protocol, operating in a decentralized manner. This has led to a number of standards being developed to ensure compatibility between products. It should be easy to switch and move your Bitcoin wallet to a different application, should you wish. Ensuring that your product supports as many of these standards as possible is best practice and builds trust. More on [wallet interoperability]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }}).
 
 **Do**
 - Support import and export of wallets
@@ -183,3 +183,8 @@ Unlike traditional banking systems, the Bitcoin economy does not require new use
 **Don't**
 - Introduce a single point of failure between the user and the Bitcoin network
 - Build products that stop working if the project shuts down
+
+---
+
+Continue on to learn about [user research]({{ '/guide/designing-products/user-research/' | relative_url }}) in the Bitcoin ecosystem.
+

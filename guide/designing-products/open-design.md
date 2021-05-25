@@ -122,4 +122,4 @@ This guide is published under three different licenses ([MIT license]({{site.git
 
 ---
 
-Still not sure where to start? Check out the next section about [user research]({{ '/guide/designing-products/user-research/' | relative_url }}).
+Still not sure where to start? Check out the next section about [design principles]({{ '/guide/designing-products/principles/' | relative_url }}).
