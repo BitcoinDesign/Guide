@@ -117,7 +117,7 @@ Software that runs and/or connects to the Bitcoin network.
 
 ### Bitcoin Core (client)
 
-Software considered the reference implementation for the Bitcoin protocol. It is the continuation of Satoshi Nakamoto's original Bitcoin client released 9th January, 2009. 
+Software considered the reference implementation for the Bitcoin protocol. It is the continuation of Satoshi Nakamoto's original Bitcoin client released 9th January, 2009.
 
 - [Bitcoin Core client download](https://bitcoincore.org/en/download/)
 - [Bitcoin Core source code](https://github.com/bitcoin/bitcoin)
@@ -196,7 +196,7 @@ BIP44 introduced the following structure, which BIP49 and BIP84 follow:<br/>
 The path to the first address in a bitcoin-wallet using BIP84 will look like this:<br/>
 `m/84h/0h/0h/0/0`
 
-For full [interoperability](/guide/foundations/principles/#interoperability) a wallet should support all of these standards. More information can be found [here](/guide/foundations/wallet-interoperability/#wallet-import-and-export) and [here](https://learnmeabitcoin.com/technical/derivation-paths).
+For full [interoperability](/guide/designing-products/principles/#interoperability) a wallet should support all of these standards. More information can be found [here](/guide/designing-products/wallet-interoperability/#wallet-import-and-export) and [here](https://learnmeabitcoin.com/technical/derivation-paths).
 
 ### Extended private key (XPRIV)
 
