@@ -98,9 +98,9 @@ The "common input ownership" heuristic assumes that in a transaction, it is most
 
 ### Design with privacy in mind
 
-There is also no personally identifiable information attached to transactions on the blockchain. Thinking about privacy is still critical to keep in mind during the design process. Your users will not have the same level of knowledge in how to use Bitcoin privately. It is at the point of creating a transaction or requesting a payment that it becomes most critical to understand the possible implications of their privacy degrading actions. 
+There is also no personally identifiable information attached to transactions on the blockchain. Thinking about privacy is still critical to keep in mind during the design process. Your users will not have the same level of knowledge in how to use Bitcoin privately. It is at the point of creating a transaction or requesting a payment that it becomes most critical to understand the implications of their privacy degrading actions.
 
-While there is no perfect solution to guarantee 100% privacy, or privacy that lasts forever as things can be revealed over time. Consider ways to inform and pevent users of actions that could impact their privacy as they use your product.
+While there is no perfect solution to guarantee 100% privacy that lasts forever as things can be revealed over time. Consider ways to inform and prevent users of actions that could impact their privacy as they use your product.
 
 <!--
 There is no perfect solution to guarantee 100% privacy that lasts forever because things can be revealed over time. Since transactions are forever public, even if all precautions are taken at the time of payment to ensure the highest degree of anonymity, future behaviors of the wallet owner or transacting parties can still degrade previously attained privacy. A high amount of diligence is necessary whenever users are transacting with Bitcoin. The product should be able to guide, inform, and prevent them against privacy degrading actions.
