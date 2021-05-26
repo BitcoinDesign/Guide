@@ -42,7 +42,7 @@ The key to keeping your transactions private is to prevent others from determini
 
 ## Methods to preserve privacy
 
-Keeping private takes constant and diligent work but is not impossible to achieve an acceptable level of privacy[^1]. Let’s explore some methods and practices that can help preserve transaction privacy.
+Keeping private takes constant and diligent work but is not impossible to achieve an acceptable level of privacy[^1]. Let’s explore some methods and practices that can help preserve privacy on a transaction level.
 
 <!-- talk about the problem as you are talking about the solution -->
 
