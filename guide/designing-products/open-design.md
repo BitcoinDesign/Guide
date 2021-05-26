@@ -72,7 +72,7 @@ Designers, developers, translators, project managers, and others work together i
 
 The spirit of openness is deeply embedded into Bitcoin; the source code is public, participation in the network is public and unrestricted, and transferring value via the Bitcoin protocol is permissionless. Thousands of projects have borrowed ideas, techniques, and code from Bitcoin to create their open-source experiments. For designers who aim to work collaboratively, it’s a robust foundation.
 
-We could even argue that Bitcoin needs open design to stay true to its mission, principles, and philosophy. Most users don’t interact directly with technical protocols but with the applications built on top of it. If those applications are centrally controlled or manipulated, it won’t matter if the protocol is open. So it is up to the community to ensure that Bitcoin remains [decentralized](/guide/foundations/principles/#decentralization) and allows for permissionless participation at the open-source application layer.
+We could even argue that Bitcoin needs open design to stay true to its mission, principles, and philosophy. Most users don’t interact directly with technical protocols but with the applications built on top of it. If those applications are centrally controlled or manipulated, it won’t matter if the protocol is open. So it is up to the community to ensure that Bitcoin remains [decentralized](/guide/designing-products/principles/#decentralization) and allows for permissionless participation at the open-source application layer.
 
 ## Values
 
@@ -122,4 +122,4 @@ This guide is published under three different licenses ([MIT license]({{site.git
 
 ---
 
-Still not sure where to start? Check out the next section about [user research]({{ '/guide/designing-products/user-research/' | relative_url }}).
+Still not sure where to start? Check out the next section about [design principles]({{ '/guide/designing-products/principles/' | relative_url }}).

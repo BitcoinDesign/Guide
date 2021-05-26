@@ -4,6 +4,7 @@ title: Visual language
 nav_order: 5
 parent: Getting started
 permalink: /guide/getting-started/visual-language/
+main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/getting-started/visual-language/visual-language-preview.jpg
 ---
 
@@ -18,8 +19,20 @@ A good addition would be a summary of the basic brand elements (color, symbol...
 Illustration sources
 
 - https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=887%3A151
+- https://www.dropbox.com/sh/zqnc7dbg8j5as8d/AAACidCqqJ_R11_jl0-HcA4ta?dl=0
 
 -->
+
+{% include picture.html
+image = "/assets/images/guide/getting-started/visual-language/bitcoin-visual-language.jpg"
+retina = "/assets/images/guide/getting-started/visual-language/bitcoin-visual-language@2X.jpg"
+mobile = "/assets/images/guide/getting-started/visual-language/bitcoin-visual-language-mobile.jpg"
+mobileRetina = "/assets/images/guide/getting-started/visual-language/bitcoin-visual-language-mobile@2X.jpg"
+alt-text = "Illustration of two people having a conversation, each of them having a speech bubble with a different stylized version of the Bitcoin ₿"
+width = 1600
+height = 600
+layout = "full-width"
+%}
 
 # The visual language of bitcoin
 

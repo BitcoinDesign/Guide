@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: User research
-nav_order: 3
+nav_order: 4
 parent: Designing Bitcoin products
 permalink: /guide/designing-products/user-research/
 main_classes: -no-top-padding
@@ -132,7 +132,7 @@ While we cannot know who is directly responsible for the activity, we can analyz
 
 New technologies can take decades to reach adoption by mainstream audiences. Bitcoin is still early in the adoption curve, which affects research in multiple ways. Early adopters have different use cases and needs than users who will discover Bitcoin in the future. Products designed for today's user base may be inappropriate soon.
 
-Secondly, as the technology is maturing, its capabilities evolve as well. Scaling and performance improvements make complex transactions more affordable, better privacy, and security properties allow individuals to [self-custody](/guide/foundations/principles/#self-custody) more comfortably and much more. There is an interplay between the size of the user base and the maturity of the technology.
+Secondly, as the technology is maturing, its capabilities evolve as well. Scaling and performance improvements make complex transactions more affordable, better privacy, and security properties allow individuals to [self-custody](/guide/designing-products/principles/#self-custody) more comfortably and much more. There is an interplay between the size of the user base and the maturity of the technology.
 
 For user research, this means that findings may become outdated quicker as they are closely linked to a specific point in time.
 

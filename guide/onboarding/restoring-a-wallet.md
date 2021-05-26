@@ -12,7 +12,7 @@ main_classes: -no-top-padding
 
 <div class="center" markdown="1">
 
-There are a number of reasons why a user might need to recover their wallet. Typically, this might be because they lost their device, had it stolen, are migrating from a different wallet or deleted and redownloaded a particular wallet application. Regardless of how it occurred, it’s important that your wallet application has clear, easy instructions that provide an easy way for users to recover their funds. There are a number of ways that a wallet recovery can be done. However, as covered in the [wallet interoperability]({{ 'guide/foundations/wallet-interoperability' | relative_url }}) section, not all wallets from one application can be recovered in another.
+There are a number of reasons why a user might need to recover their wallet. Typically, this might be because they lost their device, had it stolen, are migrating from a different wallet or deleted and redownloaded a particular wallet application. Regardless of how it occurred, it’s important that your wallet application has clear, easy instructions that provide an easy way for users to recover their funds. There are a number of ways that a wallet recovery can be done. However, as covered in the [wallet interoperability]({{ 'guide/designing-products/wallet-interoperability' | relative_url }}) section, not all wallets from one application can be recovered in another.
 
 {% include picture.html
    image = "/assets/images/guide/onboarding/restoring-a-wallet/import-options.png"

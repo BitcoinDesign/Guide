@@ -32,13 +32,13 @@ This section provides practical explorations of common user experiences with wir
 
 ---
 
-### [Cash account / Daily spending]({{ '/guide/case-studies/cloud-backup/' | relative_url }})
+### [Daily spending]({{ '/guide/case-studies/cloud-backup/' | relative_url }})
 
 Explores a simple mobile wallet design that relies on automated cloud backup to store private keys. A common use case for this technique are wallets for daily spending on-the-go.
 
 ---
 
-### [Checking account]({{ '/guide/case-studies/multisig-wallet/' | relative_url }})
+### [Savings account]({{ '/guide/case-studies/savings-account/' | relative_url }})
 
 An example user flow for setting up a 2-of-3 multsig wallet in a mobile application.
 

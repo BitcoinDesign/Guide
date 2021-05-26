@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Usage life cycle
-nav_order: 4
+nav_order: 5
 parent: Designing Bitcoin products
 permalink: /guide/designing-products/usage-life-cycle/
 main_classes: -no-top-padding

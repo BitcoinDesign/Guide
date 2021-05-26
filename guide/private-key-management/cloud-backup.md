@@ -5,18 +5,18 @@ description: An overview of personal private key management schemes.
 nav_order: 2
 parent: Private key management
 permalink: /guide/private-key-management/cloud-backup/
+image: https://bitcoin.design/assets/images/guide/private-key-management/cloud-backup/cloud-backup-preview.jpg
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/private-key-management/schemes/page-personal-schemes.jpg
 ---
 
 {% include picture.html
-   image = "/assets/images/guide/private-key-management/personal.jpg"
-   retina = "/assets/images/guide/private-key-management/personal@2x.jpg"
-   mobile = "/assets/images/guide/private-key-management/personal-mobile.jpg"
-   mobileRetina = "/assets/images/guide/private-key-management/personal-mobile@2x.jpg"
-   alt-text = "Shared schemes header illustration"
+   image = "/assets/images/guide/private-key-management/cloud-backup/cloud-backup.jpg"
+   retina = "/assets/images/guide/private-key-management/cloud-backup/cloud-backup@2x.jpg"
+   mobile = "/assets/images/guide/private-key-management/cloud-backup/cloud-backup-mobile.jpg"
+   mobileRetina = "/assets/images/guide/private-key-management/cloud-backup/cloud-backup-mobile@2x.jpg"
+   alt-text = "Chart of a smart phone loading and sending a private key frrom and to a cloud"
    width = 1600
-   height = 600
+   height = 700
    layout = "full-width"
 %}
 
@@ -27,15 +27,6 @@ By using an automatic cloud backup for the private key the user is NOT required 
 This scheme can be used for those new to bitcoin, or novices who would find manually backing up a recovery phrase during onboarding confusing, possibly leading to unsafe backups. It could also be a starting point for a progressive security model that lets customers upgrade when they start accumulating more funds.
 
 The automatic cloud backup scheme gives users reasonable security against theft, while providing low risk for self-inflicted losses.
-
-{% include image.html
-   image = "/assets/images/guide/private-key-management/schemes/cloud-backup.jpg"
-   retina = "/assets/images/guide/private-key-management/schemes/cloud-backup@2x.jpg"
-   alt-text = "Automatic cloud backup illustration"
-   caption = "Private keys are encrypted and stored in the cloud."
-   width = 800
-   height = 400
-%}
 
 ### How it works
 First the application generates a wallet with a keypair. Then, the key is encrypted and backed up to a location convenient and safe for the user, yet hard for a malicious third-party to gain access to.

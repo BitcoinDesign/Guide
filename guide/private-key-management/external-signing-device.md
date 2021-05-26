@@ -5,7 +5,8 @@ description: An overview of personal private key management schemes.
 nav_order: 4
 parent: Private key management
 permalink: /guide/private-key-management/external-signing-device/
-image: https://bitcoin.design/assets/images/guide/private-key-management/schemes/page-personal-schemes.jpg
+image: https://bitcoin.design/assets/images/guide/private-key-management/external-signing-device/external-signing-device-preview.png
+main_classes: -no-top-padding
 ---
 
 <!--
@@ -16,20 +17,22 @@ Descriptions of schemes suitable for a single user.
 
 -->
 
+{% include picture.html
+   image = "/assets/images/guide/private-key-management/external-signing-device/external-signing-device.png"
+   retina = "/assets/images/guide/private-key-management/external-signing-device/external-signing-device@2x.png"
+   mobile = "/assets/images/guide/private-key-management/external-signing-device/external-signing-device-mobile.png"
+   mobileRetina = "/assets/images/guide/private-key-management/external-signing-device/external-signing-device-mobile@2x.png"
+   alt-text = "Examples of popular hardware wallets."
+   width = 1600
+   height = 700
+   layout = "full-width"
+%}
+
 # External signing device
 
 The most common external signing devices are hardware wallets who’s makers often provide their own software to pair with. But, there are also third party wallet applications that support external signing, or software, that can be run on offline on airgapped computers to perform the same function.
 
 A wallet application that supports external signing can remove the need for the private key to be readable by the wallet software, thereby decreasing the risk of keeping keys on a device that is likely always connected to the internet.
-
-{% include image.html
-   image = "/assets/images/guide/private-key-management/schemes/signing-devices.jpg"
-   retina = "/assets/images/guide/private-key-management/schemes/signing-devices@2x.jpg"
-   alt-text = "External signing device illustration"
-   caption = "Hardware wallets are the most common external signing devices."
-   width = 800
-   height = 400
-%}
 
 ### How it works
 The external device can generate and store a keypair offline. Therefore, the private key has never been known outside the device. A software wallet can connect to the signing device and act as an interface, or handle transactions air gapped from the device.
