@@ -75,7 +75,7 @@ TODO: Graphic / consider how to get the ui generating multiple addresses. make i
 
 **Do's**
 
-- Show a new unused address when the receive screen is entered if using simple receive mode.
+- Show a new unused address when the receive screen is entered.
 - Make it easy to generate as many addresses as the receiver needs at a time.
 - Before broadcasting a transaction, inform senders if an address is already used.
 
