@@ -30,7 +30,9 @@ This page should inform about what information is made public when sending or re
 - Coin join / Pay join
 -->
 
-It’s a common misconception that Bitcoin is anonymous. Instead, it is referred to as pseudonymous which means each address you generate is like a new identity. When mined, transactions, their signatures, and addresses are public on the ledger, forever. There is also no personally identifiable information attached to transactions on the blockchain though. This transparent property of the Bitcoin blockchain allows anyone to easily verify the amount of Bitcoin in existence and look up any address or transaction. This can be done going back to the first one on [2009-01-03](https://blockstream.info/tx/4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b), a transaction mined by Satoshi Nakamoto.
+It’s a common misconception that Bitcoin is anonymous. Instead, it is referred to as pseudonymous which means each address you generate is like a new identity. Unless you reveal that you are the owner whether directly or indirectly you are able to remain anonymous.
+
+When mined, transactions, their signatures, and addresses are public on the ledger, forever. There is no personally identifiable information attached to transactions on the blockchain though. The transparent property of the blockchain allows anyone to easily verify the amount of Bitcoin in existence but also makes looking up any address or transaction trivial. This can be demonstrated going back to the first block on [2009-01-03](https://blockstream.info/tx/4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b), a transaction mined by Satoshi Nakamoto.
 
 > Each Bitcoin transaction contains at least one input and at least one output. This means that once a single address is known, there is a trail to follow the Bitcoin.
 > 
