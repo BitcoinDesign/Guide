@@ -42,9 +42,17 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 ---
 
 {% for term in site.glossary %}
-   <h3 id="{{ term.title | slugify }}">{{ term.title }}
-   </h3>
-   {{ term.content | markdownify }}
+{% if term.permalink %}
+<h3 id="{{ term.title | slugify }}"><a href="{{ term.permalink }}">{{ term.title }}</a></h3>
+{% else %}
+<h3 id="{{ term.title | slugify }}">{{ term.title }}</h3>
+{% endif %}
+
+{% if term.summary %}
+{{ term.summary | markdownify }}
+{% else %}
+{{ term.content | markdownify }}
+{% endif %}
 {% endfor %}
 
 ### Additional resources

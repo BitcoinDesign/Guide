@@ -3,7 +3,7 @@
 
   {%- include head.html -%}
 
-  <body class="{% if page.path contains 'guide' %}sidebar{% endif %}">
+  <body class="{% if page.permalink contains 'guide' %}sidebar{% endif %}">
 
     {%- include svgs.html -%}
     {%- include header.html -%}
@@ -25,7 +25,7 @@
 
       <div class="page-content-wrapper">
 
-        {%- if page.path contains 'guide' -%}
+        {%- if page.permalink contains 'guide' -%}
         <div class="side-bar">
           <nav role="navigation" aria-label="Main" id="secondary-nav" class="secondary-nav">
               {% include secondary-nav.html id="side" %}
@@ -33,7 +33,7 @@
         </div>
         {%- endif -%}
 
-        <div class="main{% if page.path contains 'guide' %} sidebar{% endif %}{% if page.main_classes %} {{ page.main_classes }}{% endif %}" id="top">
+        <div class="main{% if page.permalink contains 'guide' %} sidebar{% endif %}{% if page.main_classes %} {{ page.main_classes }}{% endif %}" id="top">
 
           {{ content }}
 

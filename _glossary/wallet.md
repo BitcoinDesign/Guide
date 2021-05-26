@@ -1,5 +1,6 @@
 ---
 title: Wallet
+layout: guide
 ---
 
 <div class="center">
