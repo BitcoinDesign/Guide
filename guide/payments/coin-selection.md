@@ -39,11 +39,11 @@ There are two types of coin selection strategies that are used in Bitcoin applic
 
 There are a few constraints that you should have in mind when considering the coin-selection strategy for your product.
 
-First, the transaction must have sufficient funding. For example, to send X, the transaction inputs must at least equate to X. 
+First, the transaction must have sufficient funding. For example, to send X, the transaction inputs must at least equate to X.
 
-Second, as blockspace is limited, miners prioritize transactions by *fee per byte* to maximize revenue. The minimum relay fee must accompany transactions for confirmation (therefore, inputs must equal X + fee). 
+Second, as blockspace is limited, miners prioritize transactions by *fee per byte* to maximize revenue. The minimum relay fee must accompany transactions for confirmation (therefore, inputs must equal X + fee).
 
-Third, transaction outputs must have a value of 500 sats or more. Anything less than this value is considered a "dust" output, and these transactions are often not relayed and confirmed by most nodes and miners in the network. 
+Third, transaction outputs must have a value of 500 sats or more. Anything less than this value is considered a "dust" output, and these transactions are often not relayed and confirmed by most nodes and miners in the network.
 
 Finally, wallet owners need to label their incoming and outgoing (change) coins. Labels provide context to a wallet’s transaction history and coin provenance, making it easier to successfully employ coin control for privacy optimization.
 
@@ -61,7 +61,7 @@ Higher fees will increase the likelihood of your transaction being prioritized b
 
 #### Privacy
 
-Because each UTXO can be traced backward on a public ledger, we can unearth the digital footprints of Bitcoin payments. Privacy is often lost due to the exposure of unknown coins, addresses, balances, and economic activity to unrecognized trading partners. Privacy can be optimized by selecting transaction inputs from an anonymity set (CoinJoins or mixers) or a recognized label or cluster or reducing the size of change outputs. 
+Because each UTXO can be traced backward on a public ledger, we can unearth the digital footprints of Bitcoin payments. Privacy is often lost due to the exposure of unknown coins, addresses, balances, and economic activity to unrecognized trading partners. Privacy can be optimized by selecting transaction inputs from an anonymity set (CoinJoins or mixers) or a recognized label or cluster or reducing the size of change outputs.
 
 ## Automatic coin selection
 
@@ -247,13 +247,14 @@ Freezes certain coins or clusters from their wallet’s UTXO pool to either prio
    height = 400
 %}
 
-#### Pros
+{% include fact/pros.html %}
 - Low friction: easy for end user, doesn’t have to play around with manual coin selection (often an overwhelming process).
 - Wallets can choose to optimise for cost, speed, or privacy (byte size of transaction, fee, change outputs) depending upon their targeted user group.
 - Minimising change outputs decreases balance exposure (e.g BnB or Target Sized Change) and chance of tracing future transactions from that address.
 - Freezing coins gives some form of privacy control whilst allowing wallets to further optimise for cost, speed, or privacy
+{% include fact/close.html %}
 
-#### Cons
+{% include fact/cons.html %}
 - These strategies do not optimise for all 3 features (speed, cost, privacy), and more often than not privacy is the first to be sacrificed
 - Automatic selection strategies may select UTXOs associated with targered dusting attacks, resulting in privacy loss
 - UTXOs selected from unrecognised clusters can expose private data of wallet addresses, balances, and contact payment information (UTXO derivation paths and data).
@@ -263,6 +264,7 @@ Freezes certain coins or clusters from their wallet’s UTXO pool to either prio
 - Privacy oriented strategies can require strenuous computational power (BnB).
 - Smaller/no change outputs are not guaranteed and is often dependent upon wallets having a large variation of UTXOs.
 - Freezing certain coins reduces the size of a wallet's UTXO pool, and may hinder an automatic algorithm’s ability to optimise for speed, cost, or privacy.
+{% include fact/close.html %}
 
 ### Best practice
 
@@ -385,7 +387,7 @@ Bad labelling of contacts and clusters can lead to sensitive information being e
 - Samourai
 - BTCPay
 
-### The challenge for designers 
+### The challenge for designers
 
 The questions designers and developers are faced with are: how much privacy to we want to inherently bake into our wallet’s payments? How do we inform wallet users of privacy risks when sending and receiving payments (if at all)?
 
