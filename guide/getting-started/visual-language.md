@@ -41,8 +41,6 @@ Since Bitcoin answers to no central authority, there is no single symbol or logo
 
 ### Original symbol
 
-Satoshi Nakamoto created this lettered golden coin for the original Bitcoin Core client.
-
 <div class="center" markdown="1">
 
 {% include image.html
@@ -53,6 +51,8 @@ Satoshi Nakamoto created this lettered golden coin for the original Bitcoin Core
    height = 140
    layout = "float-left"
 %}
+
+Satoshi Nakamoto created this lettered golden coin for the original Bitcoin Core client.
 
 </div>
 
