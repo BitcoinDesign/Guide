@@ -47,7 +47,7 @@ Third, transaction outputs must have a value of 500 sats or more. Anything less 
 
 Finally, wallet owners need to label their incoming and outgoing (change) coins. Labels provide context to a wallet’s transaction history and coin provenance, making it easier to successfully employ coin control for privacy optimization.
 
-### Optimisations
+### Optimizations
 
 Whether an automated or manual process, coin selection is important when understanding how to optimize our Bitcoin payments for either cost, speed, or privacy. Below is a breakdown of the three most common effects of coin control.
 
