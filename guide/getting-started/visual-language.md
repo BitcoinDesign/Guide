@@ -34,7 +34,7 @@ height = 600
 layout = "full-width"
 %}
 
-# The visual language of bitcoin
+# The visual language of Bitcoin
 
 Since Bitcoin answers to no central authority, there is no single symbol or logo that can visually represent it, though many try. Here are some of the most recognized attempts to create a universal logo for Bitcoin.
 
@@ -128,7 +128,7 @@ On November 1, 2010, a user named bitboy proposed a new icon and set of promotio
    layout = "float-left"
 %}
 
-The Unicode symbol for Bitcoin (₿) was introduced in [Unicode 10.0.0](http://www.unicode.org/versions/Unicode10.0.0/) 10.0.0 on June 20, 2017. This important step established Bitcoin as a currency symbol alongside the US Dollar ($), Euro (€), and others. As of mid-2021, few fonts support the symbol.
+The Unicode symbol for Bitcoin (₿) was introduced in [Unicode 10.0.0](http://www.unicode.org/versions/Unicode10.0.0/) on June 20, 2017. This important step established Bitcoin as a currency symbol alongside the US Dollar ($), Euro (€), and others. As of mid-2021, few fonts support the symbol.
 
 </div>
 
@@ -172,7 +172,7 @@ Some of the most common representations of bitcoin are based on Satoshi’s orig
 
 ### Illustrations
 
-Magazines, blogs, and other publications often hire professional illustrators to visualize stores about bitcoin. Because Bitcoin does not have any official brand style guidelines, they are usually only limited by the illustrator and publisher’s imagination.
+Magazines, blogs, and other publications often hire professional illustrators to visualize stores about Bitcoin. Because Bitcoin does not have any official brand style guidelines, they are usually only limited by the illustrator and publisher’s imagination.
 
 <div class="image-gallery" markdown="1">
 
@@ -189,7 +189,7 @@ Magazines, blogs, and other publications often hire professional illustrators to
 
 ## The expression scale
 
-Think about Bitcoin’s visual language as a scale that ranges from muted to highly expressive. These images look, but they all capture bitcoin in some way. Public, community-owned identities like Bitcoin make them all equally valid and canonical. This provides enormous creative freedom to designers and illustrators with their own vision for Bitcoin.
+Think about Bitcoin’s visual language as a scale that ranges from muted to highly expressive. These images look very different, but they all capture Bitcoin in some way. As the identity of Bitcoin is public and community-owned, all these representations are equally valid. This provides enormous creative freedom to designers and illustrators with their own visions.
 
 {% include image.html
    image = "/assets/images/guide/getting-started/visual-language/expression-scale.png"
