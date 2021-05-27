@@ -19,13 +19,13 @@ This page should cover what to do when receiving bitcoin, how to share and copy 
 
 - What addresses to support (native segwit by default)
 - How to present QR codes (allow for specifying an amount)
-- Generating a new address 
+- Generating a new address
 
 -->
 
 For someone to receive bitcoin, they must provide the sender with a payment destination. They can do this by generating an address in their Bitcoin wallet application. A new address should be generated for every payment, as addresses should only be used once. This helps safeguards the receiver’s privacy.
 
-<!-- 
+<!--
 Update glossary
 
 Each address that a Bitcoin application generates has an accompaniying private key. This private key allows the receiver to unlock the bitcoin that is sent to the address when the receiver chooses to spend it.
@@ -81,7 +81,7 @@ Many Bitcoin wallet applications provide only this most basic interface with an 
 
 </div>
 
-Since the Bitcoin blockchain only stores a limited amount of information, such as the amount and addresses involved, any additional information must be stored in your application. This additional information can be vital in providing context to wallet owners on their spending habits and payment histories. These details have to be manually added. It is possible for receivers to share some of these extra details with senders by encoding them in [payment links]({{ '/guide/foundations/wallet-interoperability/' | relative_url }}).
+Since the Bitcoin blockchain only stores a limited amount of information, such as the amount and addresses involved, any additional information must be stored in your application. This additional information can be vital in providing context to wallet owners on their spending habits and payment histories. These details have to be manually added. It is possible for receivers to share some of these extra details with senders by encoding them in [payment links]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }}).
 
 The following are the standard properties of a payment link:
 
@@ -133,13 +133,13 @@ since they are deterministic technically
 what happens is an unused address just gets chosen
 -->
 
-<!-- 
+<!--
 Update interopability page
-Since there are many Bitcoin applications for people to choose from, its likely that the sender and receiver are not using the same one and they don't have the abilitiy to exchange payment details within the application itself. 
+Since there are many Bitcoin applications for people to choose from, its likely that the sender and receiver are not using the same one and they don't have the abilitiy to exchange payment details within the application itself.
 
-The exchange of payment details then most commonly happens outside of the wallet application. This 
+The exchange of payment details then most commonly happens outside of the wallet application. This
 
-Since bitcoin is a open system and has many payment applications built ontop of it, there is a [standard format]({{ '/guide/foundations/wallet-interoperability/#payment-links' | relative_url }}) of "payment links" that most bitcoin applications use to share payment details.
+Since bitcoin is a open system and has many payment applications built ontop of it, there is a [standard format]({{ '/guide/designing-products/wallet-interoperability/#payment-links' | relative_url }}) of "payment links" that most bitcoin applications use to share payment details.
 -->
 
 ## Sharing the payment request
@@ -225,6 +225,6 @@ Add below as Do's & Don'ts
 > @pavelenex
 -->
 
-<!-- 
+<!--
 Follow up page would touch on privacy of transactions including topics of wallet fingerprints (multisig vs signle sig), input/output ordering, coinjoins, and labeling to help users keep separate coin histories.
 -->

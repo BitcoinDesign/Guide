@@ -97,7 +97,7 @@ By storing the recovery-phrase in an online location that is encrypted (not in p
 
 **Do**
 - Use an encrypted password manager like 1Password, LastPass, iCloud Keychain
-- Alternatively, use a wallet application with automatic cloud backup
+- Alternatively, use a wallet application with [automatic cloud backup]({{ '/guide/private-key-management/cloud-backup/' | relative_url }})
 
 **Don’t**
 - Screenshot the recovery-phrase and save it in Google Photos, iCloud photos
@@ -106,6 +106,8 @@ By storing the recovery-phrase in an online location that is encrypted (not in p
 **Suitable for**
 - For small amounts (less than a months salary)
 - When you can't wait to set up a new wallet until you are at home
+
+For more on this user experience, see the [daily spending case study]({{ '/guide/case-studies/cloud-backup/' | relative_url }}).
 
 <br>
 

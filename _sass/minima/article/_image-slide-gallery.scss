@@ -7,7 +7,7 @@ article.guide {
     max-width: none !important;
     display: flex;
     overflow: hidden;
-    overflow-x: scroll;
+    overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
 

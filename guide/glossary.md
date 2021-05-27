@@ -2,7 +2,7 @@
 layout: guide
 title: Glossary
 permalink: /guide/glossary/
-nav_order: 8
+nav_order: 10
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/glossary/glossary-preview.jpg
 ---
@@ -111,13 +111,24 @@ Differentiate between
 
 Bitcoin with a capital *B* is typically associated with Bitcoin the protocol and payment network. It is also often used to refer to as the ecosystem as a whole when writing about it in general terms. Bitcoin with a lowercase “b” written as “bitcoin” is usually associated specifically with bitcoin as the currency.
 
-### Bitcoin Client
+### Bitcoin client
 
--What is considered a Bitcoin client? I'd suggest it's a software package comprising node / base layer wallet features. [Several other](https://coin.dance/nodes) clients exist besides Bitcoin Core. -Bosch
+Software that runs and/or connects to the Bitcoin network.
 
-### Bitcoin Core
+### Bitcoin Core (client)
 
-An open source Bitcoin project that maintains and releases Bitcoin client also referred to as "Bitcoin Core." Bitcoin Core is often considered as the *reference implementation* and serves as the specification of the Bitcoin protocol. It is the continuation of Satoshi Nakamoto's original bitcoin client released on 9th January 2009. More on the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Bitcoin_Core) and [Bitcoin Core website](https://bitcoincore.org/).
+Software considered the reference implementation for the Bitcoin protocol. It is the continuation of Satoshi Nakamoto's original Bitcoin client released 9th January, 2009.
+
+- [Bitcoin Core client download](https://bitcoincore.org/en/download/)
+- [Bitcoin Core source code](https://github.com/bitcoin/bitcoin)
+
+### Bitcoin Core (project)
+
+An open-source project that maintains and releases the Bitcoin client of the same name.
+
+- [Bitcoin Core GitHub](https://github.com/bitcoin-core)
+- [Bitcoin Core website](https://bitcoincore.org/)
+- [Bitcoin Core wiki entry](https://en.bitcoin.it/wiki/Bitcoin_Core)
 
 ### BIP - Bitcoin improvement proposal
 
@@ -185,7 +196,7 @@ BIP44 introduced the following structure, which BIP49 and BIP84 follow:<br/>
 The path to the first address in a bitcoin-wallet using BIP84 will look like this:<br/>
 `m/84h/0h/0h/0/0`
 
-For full [interoperability](/guide/foundations/principles/#interoperability) a wallet should support all of these standards. More information can be found [here](/guide/foundations/wallet-interoperability/#wallet-import-and-export) and [here](https://learnmeabitcoin.com/technical/derivation-paths).
+For full [interoperability](/guide/designing-products/principles/#interoperability) a wallet should support all of these standards. More information can be found [here](/guide/designing-products/wallet-interoperability/#wallet-import-and-export) and [here](https://learnmeabitcoin.com/technical/derivation-paths).
 
 ### Extended private key (XPRIV)
 
@@ -348,7 +359,7 @@ A file format for bitcoin transactions that are not fully signed yet. Allows for
 
 
 ###  Passphrase
-A passphrase can be added to the [recovery phrase](#recovery-phrase) for extra security. 
+A passphrase can be added to the [recovery phrase](#recovery-phrase) for extra security.
 Technically, all recovery phrases have a pass phrase. If it’s not set by the user, an empty string (“”) will be used by default. Using the recovery phrase with or without the user-defined pass phrase will recover two DIFFERENT wallets. Pass phrases are sometimes referred to as the password, the extra word, or the 13th/25th word.
 
 **References:**

@@ -10,7 +10,7 @@
   padding: 30px 40px;
   max-height: calc(100vh - 61px);
   overflow: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   box-sizing: border-box;
 
   @include media-query(medium-down) {

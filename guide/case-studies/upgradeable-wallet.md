@@ -32,13 +32,13 @@ Editor's notes
 
 ## Upgradeable wallet
 
-Although it is generally easier to build a great experience with a specific use case in mind, let's look at a case where we would like to make a wallet that is made for a broad range of uses and audiences. It needs to be suitable both for beginners and expanding users, and for holding anything between small and significant amounts. How do we choose a single private key management scheme for this situation?
+Although it is generally easier to build a great experience with a specific [use case]({{ '/guide/designing-products/personal-finance/' | relative_url }}) in mind, let's look at a case where we would like to make a wallet that is made for a broad range of uses and audiences. It needs to be suitable both for beginners and expanding users, and for holding anything between small and significant amounts. How do we choose a single private key management scheme for this situation?
 
 The solution in this case could be a wallet that enables the user to upgrade the scheme as their experience and funds grow. The idea is to provide progressive security that doesn't introduce unnecessary friction until it is required. Our wallet will be able to switch from;
 
-- Automatic cloud backup - as default for new users, who often start out with small amounts
-- External signing device - for more experienced users, and when funds have grown
-- 2-of-3 multi-key - for seasoned users, and critical amounts
+- [Automatic cloud backup]({{ '/guide/private-key-management/cloud-backup/' | relative_url }}) - as default for new users, who often start out with small amounts
+- [External signing device]({{ '/guide/private-key-management/external-signing-device/' | relative_url }}) - for more experienced users, and when funds have grown
+- 2-of-3 [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}) - for seasoned users, and critical amounts
 - 3-of-5 multi-key - for really serious situations and/or very high amounts
 
 {% include prototype.html
@@ -53,7 +53,7 @@ The solution in this case could be a wallet that enables the user to upgrade the
 %}
 
 #### Design considerations
-- Low friction onboarding
+- Low friction [onboarding]({{ '/guide/onboarding/introduction/' | relative_url }})
 - Guide the user through scheme upgrades as funds grow
 
 #### Technical considerations
@@ -83,4 +83,6 @@ The screens below show how this architecture allows users to get onboarded quick
 
 </div>
 
-You can find a prototype for this case study linked in the image above, and a Figma file with [outline designs here](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A269).
+**Case study resources**
+- [Protoype](https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A270&viewport=861%2C146%2C0.44897958636283875&scaling=scale-down)
+- [Figma design file](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A269)
