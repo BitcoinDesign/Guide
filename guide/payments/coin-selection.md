@@ -128,114 +128,29 @@ A user chooses to send a payment to one of their contacts. They enter the amount
 
 A few *popular algorithms* currently implemented by Bitcoin wallets:
 
-{% include dl/open.html %}
-
-{% include dl/item-open.html color="red" %}
-
-**First In First Out (FIFO) / Last In, First Out (LIFO)**
-
-{% include dl/item-middle.html color="red" %}
-
+- **First In First Out (FIFO) / Last In, First Out (LIFO)**<br/>
 The default strategy spends the oldest/youngest coins first.
-
-{% include dl/item-close.html %}
-
-{% include dl/item-open.html color="orange" %}
-
-**Pruned FIFO**
-
-{% include dl/item-middle.html color="orange" %}
-
-Similar to FIFO, but the smallest coins filtered out in the post-selection step.
-
-{% include dl/item-close.html %}
-
-{% include dl/item-open.html color="yellow" %}
-
-**High Priority First**
-
-{% include dl/item-middle.html color="yellow" %}
-
-Coins selected by priority (calculated by value x age). Up until February 2016, a portion of each block (50kB) was reserved for high-priority transactions by default. This algorithm, therefore, optimized for transaction speed.
-
-{% include dl/item-close.html %}
-
-{% include dl/item-open.html color="green" %}
-
-**Minimize Fees (Optimize Size)**
-
-{% include dl/item-middle.html color="green" %}
-
+- **Pruned FIFO**<br/>
+Similiar to FIFO, but smallest coins filtered out in post-selection step.
+- **High Priority First**<br/>
+Coins selected by priority (calculated by value x age). Up until February 2016, a portion of each block (50kB) was reserved for high-priority transactions by default. This algorithm therefore optimised for transaction speed.
+- **Minimize Fees (Optimize Size)**<br/>
 Spending the lowest number of coins to reduce the byte size of the transaction, resulting in a lower fee.
-
-{% include dl/item-close.html %}
-
-{% include dl/item-open.html %}
-
-**Minimize Future Fees (Merge Coins)**
-
-{% include dl/item-middle.html %}
-
-Spending the maximum number of inputs to merge coins as a single change output for future use. This strategy can optimize for speed as the transaction size (and therefore cost) is increased. However, merging coins can also lead to a loss of privacy as coins, their addresses, balances, and historical transaction data are intertwined.
-
-{% include dl/item-close.html %}
-
-{% include dl/close.html %}
+- **Minimize Future Fees (Merge Coins)**<br/>
+Spending the maximum number of inputs to merge coins as a single change output for future use. This strategy can optimise for speed as the transaction size (and therefore cost) is increased. However, merging coins can also lead to a loss of privacy as coins, their addresses, balances, and historical transaction data are intertwined.
 
 A few more, *optimising for privacy*
 
--{% include dl/open.html %}
-
-{% include dl/item-open.html color="red" %}
-
-**Target Sized Change**
-
-{% include dl/item-middle.html color="red" %}
-
+- **Target Sized Change**<br/>
 Wallet aims to minimize the value difference of target input and change output.
-
-{% include dl/item-close.html %}
-
-{% include dl/item-open.html color="orange" %}
-
-**Branch & Bound (BnB)/Exact Change**
-
-{% include dl/item-middle.html color="orange" %}
-
-Wallet finds an input set that is equal in value to the target, avoiding change outputs. If the wallet cannot find an exact match, it refers back to a “knapsack” solver which selects inputs that minimize the change output to within 0.01 BTC.
-
-{% include dl/item-close.html %}
-
-{% include dl/item-open.html color="yellow" %}
-
-**Blackjack**
-
-{% include dl/item-middle.html color="yellow" %}
-
-Accumulates inputs until the target value (+fees) is matched, does not accumulate inputs that go over the target value (within a threshold).    
-
-{% include dl/item-close.html %}
-
-{% include dl/item-open.html color="green" %}
-
-**Accumulative**
-
-{% include dl/item-middle.html color="green" %}
-
+- **Branch & Bound (BnB)/Exact Change**<br/>
+Wallet finds an input set that is equal in value to the target, avoiding change outputs. If the wallet cannot find an exact match, it refers back to a “knapsack” solver which selects inputs that minimise the change output to within 0.01 BTC.
+- **Blackjack**<br/>
+Accumulates inputs until the target value (+fees) is matched, does not accumulate inputs that go over the target value (within a threshold).
+- **Accumulative**<br/>
 Accumulates inputs until the target value (+fees) is reached, skipping detrimental inputs.
-{% include dl/item-close.html %}
-
-{% include dl/item-open.html %}
-
-*Freezing Coins**
-
-{% include dl/item-middle.html %}
-
+- **Freezing Coins**<br/>
 Freezes certain coins or clusters from their wallet’s UTXO pool to either prioritize or avoid using when funding outgoing payment requests. This technique aids automatic selection strategies to become more private but also relies on the practice of successfully labeling coins.
-
-{% include dl/item-close.html %}
-
-{% include dl/close.html %}
 
 {% include picture.html
    image = "/assets/images/guide/glossary/coin-selection/freezing.jpg"
