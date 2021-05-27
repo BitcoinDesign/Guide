@@ -29,6 +29,10 @@ The Bitcoin Design Guide is the work of many authors with different backgrounds,
 
 This guide is crafted for anyone interested in building an effective Bitcoin application. A large part of this group are designers and creatives, but also front-end developers, project managers, and others who actively shape the end-user experience. Consider their perspectives and needs first and avoid going into topics that are not relevant to these readers' goals.
 
+### Apply Bitcoin design principles
+
+When creating content for the guide make sure to apply the [Bitcoin design principles](/guide/designing-products/principles/) to what you create. These include self-custody, interoperability, decentralization, security, transparency, inclusion, and privacy. 
+
 ### Speak to the reader
 
 Address the reader directly. Whenever possible, try using active instead of passive voice. Make the reader a part the conversation by using second-person pronouns like "you, your and yours". Do not write in first-person and avoid giving predictions and personal opinions.
