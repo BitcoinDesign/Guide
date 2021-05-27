@@ -22,13 +22,9 @@ main_classes: -no-top-padding
 
 Coin selection is the process of choosing which [UTXOs](https://hackmd.io/glossary#utxo) (or “coins”) to fund a bitcoin transaction with (inputs[^1]) when making an on-chain payment. Since your wallet contains multiple coins to arrive at a balance, these are retrieved by an algorithm to fulfill the payment amount for outgoing transactions.
 
-Coin selection, whether an automated or manual process, is important when understanding how we can successfully optimise our bitcoin payments for either cost, speed, or privacy.
-
-There are two categories of coin selection strategies that are used in bitcoin applications:
-
-1. **Automatic Coin Selection** (wallet is delegated to control coin selection on behalf on user)
+There are two types of coin selection strategies that are used in Bitcoin applications:
+1. **Automatic Coin Selection** (wallet is delegated to control coin selection on behalf of user)
 2. **Manual Coin Selection** (user controls coin selection)
-
 {% include picture.html
    image = "/assets/images/guide/glossary/coin-selection/funding-tx.jpg"
    retina = "/assets/images/guide/glossary/coin-selection/funding-tx@2x.jpg"
@@ -39,33 +35,39 @@ There are two categories of coin selection strategies that are used in bitcoin a
    height = 400
 %}
 
-### Hard contraints
+### Contraints
 
-Before exploring some popular coin selection strategies, it’s worth noting the following when making a bitcoin payment in relation to UTXOs. 
+There are a few constraints that you should have in mind when considering the coin-selection strategy for your product.
 
-Firtstly; the transaction must have sufficient funding. For example, in order to send X, the transaction inputs must at least equate to X. Second; as blockspace is limited, miners prioritise transactions by *fee per byte* to maximise revenue. Transactions must be accompanied by the minimum relay fee for confirmation (therefore inputs must equal X + fee). Third; transaction outputs must have a value of 500 sats or more. Anything less than this value is considered  a "dust" output, and these transactions are often not relayed and confirmed by most nodes and miners in the network. Finally; it is essential for wallet owners to label their incoming and outgoing (change) coins. Labels provide context to a wallet’s transaction history and coin provenance, making it easier to successfully employ coin control for privacy optimisation.
+First, the transaction must have sufficient funding. For example, to send X, the transaction inputs must at least equate to X. 
+
+Second, as blockspace is limited, miners prioritize transactions by *fee per byte* to maximize revenue. The minimum relay fee must accompany transactions for confirmation (therefore, inputs must equal X + fee). 
+
+Third, transaction outputs must have a value of 500 sats or more. Anything less than this value is considered a "dust" output, and these transactions are often not relayed and confirmed by most nodes and miners in the network. 
+
+Finally, wallet owners need to label their incoming and outgoing (change) coins. Labels provide context to a wallet’s transaction history and coin provenance, making it easier to successfully employ coin control for privacy optimization.
 
 ### Optimisations
 
-Coin selection will always lead to certain effects and outcomes which can either optimise or hinder our bitcoin payments. Below is a breakdown of the three most common effects of coin control.
+Whether an automated or manual process, coin selection is important when understanding how to optimize our Bitcoin payments for either cost, speed, or privacy. Below is a breakdown of the three most common effects of coin control.
 
 #### Cost
 
-Miners select transactions on the basis of their fee, measured by the fee rate of satoshis per byte. Therefore, it is cost effective for users to minimize transaction size by minimising the number of inputs.
+Miners select transactions based on their fee, measured by the fee rate of satoshis per byte. Therefore, it is cost-effective for users to minimize transaction size by minimizing the number of inputs.
 
 #### Speed
 
-Higher fees will increase the likelihood of your transaction being prioritised by miners and included in the next block, thereby increasing the speed of your transaction. This can be optimised by either increasing the fee rate, or by selecting a higher number of transaction inputs.
+Higher fees will increase the likelihood of your transaction being prioritized by miners and included in the next block, thereby increasing the speed of your transaction. This can be optimized by either increasing the fee rate or selecting a higher number of transaction inputs.
 
 #### Privacy
 
-Because each UTXO can be traced backwards on a public ledger, we can unearth the digital footprints of bitcoin payments. Privacy is often lost due to the exposure of unknown coins, addresses, balances, and economic activity to unrecognised trading partners. Privacy can be optimised by selecting transaction inputs from an anonymity set (CoinJoins or mixers) or a recognised label or cluster, or by reducing the size of change outputs. 
+Because each UTXO can be traced backward on a public ledger, we can unearth the digital footprints of Bitcoin payments. Privacy is often lost due to the exposure of unknown coins, addresses, balances, and economic activity to unrecognized trading partners. Privacy can be optimized by selecting transaction inputs from an anonymity set (CoinJoins or mixers) or a recognized label or cluster or reducing the size of change outputs. 
 
 ## Automatic coin selection
 
-This strategy has arguably become the most popular form of coin selection used in bitcoin wallets and transactions. Wallet applications are delegated control, selecting coins on behalf of users in order to fulfil a payment request. As mentioned above, “fractions (of bitcoins) are retrieved by an algorithm to fulfill the payment amount”. This algorithm varies from wallet to wallet, and is dependent upon the desired outcome of optimisation.
+This strategy has arguably become the most popular form of coin selection used in Bitcoin wallets and applications. The application selects the coins on behalf of users to fulfill a payment request. As mentioned above, “fractions (of bitcoins) are retrieved by an algorithm to fulfill the payment amount”. This algorithm varies from wallet to wallet, and is dependent upon the desired outcome of optimisation.
 
-Automatic selection strategies can provide a near frictionless user experience, and is therefore suitable for most introductory level bitcoin wallets.
+Automatic selection strategies can provide a near frictionless user experience and are suitable for most introductory level Bitcoin wallets.
 
 {% include picture.html
    image = "/assets/images/guide/glossary/coin-selection/automatic-coin-selection.jpg"
@@ -78,7 +80,7 @@ Automatic selection strategies can provide a near frictionless user experience, 
 %}
 
 ### How it works
-A user chooses to send a payment to one of their contacts. They enter the amount of bitcoin they wish to send, select their transaction fee rate, and approve the outgoing payment request. During this process, their wallet selects which coins to use to fund the transaction’s inputs, making sure it can fulfill the payment request.
+A user chooses to send a payment to one of their contacts. They enter the amount of bitcoin they wish to send, select their transaction fee rate, and approve the outgoing payment request. During this process, their wallet **automatically** selects which coins to use to fund the transaction’s inputs, making sure it can fulfill the payment request.
 
 <div class="image-slide-gallery">
 
@@ -124,34 +126,116 @@ A user chooses to send a payment to one of their contacts. They enter the amount
 
 </div>
 
-A few *popular algorithms* currently implemented by bitcoin wallets:
+A few *popular algorithms* currently implemented by Bitcoin wallets:
 
-- **First In First Out (FIFO) / Last In, First Out (LIFO)**<br/>
-  The default strategy spends the oldest/youngest coins first.
-- **Pruned FIFO**<br/>
-  Similiar to FIFO, but smallest coins filtered out in post-selection step.
-- **High Priority First**<br/>
-  Coins selected by priority (calculated by value x age). Up until February 2016, a portion of each block (50kB) was reserved for high-priority transactions by default. This algorithm therefore optimised for transaction speed.
-- **Minimize Fees (Optimize Size)**<br/>
-  Spending the lowest number of coins to reduce the byte size of the transaction, resulting in a lower fee.
-- **Minimize Future Fees (Merge Coins)**<br/>
-  Spending the maximum number of inputs to merge coins as a single change output for future use. This strategy can optimise for speed as the transaction size (and therefore cost) is increased. However, merging coins can also lead to a loss of privacy as coins, their addresses, balances, and historical transaction data are intertwined.
+{% include dl/open.html %}
+
+{% include dl/item-open.html color="red" %}
+
+**First In First Out (FIFO) / Last In, First Out (LIFO)**
+
+{% include dl/item-middle.html color="red" %}
+
+The default strategy spends the oldest/youngest coins first.
+
+{% include dl/item-close.html %}
+
+{% include dl/item-open.html color="orange" %}
+
+**Pruned FIFO**
+
+{% include dl/item-middle.html color="orange" %}
+
+Similar to FIFO, but the smallest coins filtered out in the post-selection step.
+
+{% include dl/item-close.html %}
+
+{% include dl/item-open.html color="yellow" %}
+
+**High Priority First**
+
+{% include dl/item-middle.html color="yellow" %}
+
+Coins selected by priority (calculated by value x age). Up until February 2016, a portion of each block (50kB) was reserved for high-priority transactions by default. This algorithm, therefore, optimized for transaction speed.
+
+{% include dl/item-close.html %}
+
+{% include dl/item-open.html color="green" %}
+
+**Minimize Fees (Optimize Size)**
+
+{% include dl/item-middle.html color="green" %}
+
+Spending the lowest number of coins to reduce the byte size of the transaction, resulting in a lower fee.
+
+{% include dl/item-close.html %}
+
+{% include dl/item-open.html %}
+
+**Minimize Future Fees (Merge Coins)**
+
+{% include dl/item-middle.html %}
+
+Spending the maximum number of inputs to merge coins as a single change output for future use. This strategy can optimize for speed as the transaction size (and therefore cost) is increased. However, merging coins can also lead to a loss of privacy as coins, their addresses, balances, and historical transaction data are intertwined.
+
+{% include dl/item-close.html %}
+
+{% include dl/close.html %}
 
 A few more, *optimising for privacy*
 
-- **Target Sized Change**<br/>
-  Wallet aims to minimize the value difference of target input and change output.
-- **Branch & Bound (BnB)/Exact Change**<br/>
-  Wallet finds an input set that is equal in value to the target, avoiding change outputs. If the wallet cannot find an exact match, it refers back to a “knapsack” solver which selects inputs that minimise the change output to within 0.01 BTC.
-- **Blackjack**<br/>
-  Accumulates inputs until the target value (+fees) is matched, does not accumulate inputs that go over the target value (within a threshold).
-- **Accumulative**<br/>
-  Accumulates inputs until the target value (+fees) is reached, skipping detrimental inputs.
+-{% include dl/open.html %}
 
-*Additional ways to otpimise automatic coin selection for privacy:*
+{% include dl/item-open.html color="red" %}
 
-- **Freezing Coins**<br/>
-Some wallets allow users to "freeze" certain coins or clusters from their wallet’s UTXO pool to either prioritise or avoid using when funding outgoing payment requests. This technique aids automatic selection strategies to become more private, but also relies on the practise of successfully labelling coins.
+**Target Sized Change**
+
+{% include dl/item-middle.html color="red" %}
+
+Wallet aims to minimize the value difference of target input and change output.
+
+{% include dl/item-close.html %}
+
+{% include dl/item-open.html color="orange" %}
+
+**Branch & Bound (BnB)/Exact Change**
+
+{% include dl/item-middle.html color="orange" %}
+
+Wallet finds an input set that is equal in value to the target, avoiding change outputs. If the wallet cannot find an exact match, it refers back to a “knapsack” solver which selects inputs that minimize the change output to within 0.01 BTC.
+
+{% include dl/item-close.html %}
+
+{% include dl/item-open.html color="yellow" %}
+
+**Blackjack**
+
+{% include dl/item-middle.html color="yellow" %}
+
+Accumulates inputs until the target value (+fees) is matched, does not accumulate inputs that go over the target value (within a threshold).    
+
+{% include dl/item-close.html %}
+
+{% include dl/item-open.html color="green" %}
+
+**Accumulative**
+
+{% include dl/item-middle.html color="green" %}
+
+Accumulates inputs until the target value (+fees) is reached, skipping detrimental inputs.
+{% include dl/item-close.html %}
+
+{% include dl/item-open.html %}
+
+*Freezing Coins**
+
+{% include dl/item-middle.html %}
+
+Freezes certain coins or clusters from their wallet’s UTXO pool to either prioritize or avoid using when funding outgoing payment requests. This technique aids automatic selection strategies to become more private but also relies on the practice of successfully labeling coins.
+
+{% include dl/item-close.html %}
+
+{% include dl/close.html %}
 
 {% include picture.html
    image = "/assets/images/guide/glossary/coin-selection/freezing.jpg"
@@ -309,4 +393,3 @@ The questions designers and developers are faced with are: how much privacy to w
 [^2]: https://www.investopedia.com/terms/u/utxo.asp
 [^3]: https://support.ledger.com/hc/en-us/articles/360015996580-Using-Coin-control#:~:text=Before%20this%20new%20feature%2C%20all,to%20fulfill%20the%20transaction%20amount.
 [^4]: https://www.reddit.com/r/WasabiWallet/comments/eb1zzo/the_importance_of_good_labels/
-
