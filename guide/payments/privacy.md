@@ -121,7 +121,7 @@ _Check out the glossary to learn more about [how coin control works]({{ "/guide/
    layout = "float-right-desktop"
 %}
 
-The "common input ownership" heuristic[^4] assumes in a transaction, it is likely that all inputs belong to the same owner. [CoinJoins]({{ "/guide/glossary/#coinjoin" | relative_url }}) is a technique where multiple participants collaborate on a transaction to break this heuristic. It becomes more difficult (although not impossible) to determine the individuals who own the outputs are since all the outputs typically have the same denomination. With CoinJoins, as with any other anonymity network, a large and diverse group of participants provides the best protection.
+The "common input ownership" heuristic[^4] assumes that all inputs in a transaction likely belong to the same owner. [CoinJoins]({{ "/guide/glossary/#coinjoin" | relative_url }}) is a technique where multiple participants collaborate on a transaction to break this heuristic. It becomes more difficult (although not impossible) to determine the individuals who own the outputs are since all the outputs typically have the same denomination. With CoinJoins, as with any other anonymity network, a large and diverse group of participants provides the best protection.
 
 Users still have to be mindful of how the UTXOs they received from the CoinJoin are spent. For instance, spending them together in a single transaction would unravel the anonymity gains from participating in the CoinJoin.
 
