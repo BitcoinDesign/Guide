@@ -181,7 +181,7 @@ Freezes certain coins or clusters from their wallet’s UTXO pool to either prio
 #### When to use
 - New users or introductory level wallets
 - Wallets specifically optimizing for either cost, speed, or privacy
-- Wallets that wish to prioritise privacy in automatic coin selection (BnB or Target Size Change)
+- Wallets  prioritizing privacy in automatic coin selection
 
 #### When not to use
 - When privacy is a top priority to users
