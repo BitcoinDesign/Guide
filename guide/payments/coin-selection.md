@@ -272,7 +272,7 @@ A user chooses to send a payment to one of their contacts. They enter the amount
 - Can be a lengthy, often confusing process (particularly for inexperienced users)
 - Inexperienced bitcoiners may end up making mistakes that result in higher fees, slower transactions, or a loss of privacy
 - Can lead to dust attacks if not careful selecting sizes of UTXO inputs
-Bad labelling of contacts and clusters can lead to sensitive information being exposed
+- Bad labeling of contacts and clusters can lead to sensitive information being exposed
 
 ### Best practise
 
