@@ -289,7 +289,7 @@ A user chooses to send a payment to one of their contacts. They enter the amount
 
 #### Products that use this scheme
 
-{% include fact/productss.html %}
+{% include fact/products.html %}
 Bitcoin Core, Wasabi, Samourai, BTCPay Server
 {% include fact/close.html %}
 
