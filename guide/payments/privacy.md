@@ -100,6 +100,7 @@ TODO: Graphic / consider how to get the ui generating multiple addresses. make i
    width = 400
    height = 400
    layout = "float-right-desktop"
+   caption = "Labeling of receiving addresses can help minimize privacy leaks when spending the coins in the future."
 %}
 
 If the application supports it, the user can [add additional details]({{ "/guide/payments/receive/#inputting-additional-payment-details" | relative_url }}) to a payment when receiving bitcoin. This practice is often called address labeling. Not only does this help to remember what payments were for, it also enables preventative measures for preserving privacy. Labeling receiving addresses([UTXOs]({{ "/guide/glossary/#unspent-transaction-output-utxo" | relative_url }})) with the sender's name can inform decisions for which UTXOs are selected as inputs in future transactions, this is often referred to as [coin control]({{ "/guide/glossary/#coin-control" | relative_url }}).
@@ -120,6 +121,7 @@ Some applications make it possible to filter UTXOs by label to make such selecti
    width = 400
    height = 400
    layout = "float-right-desktop"
+   caption = "CoinJoin transactions attempt to make payments more private by mixing inputs from many senders and outputs to many receivers."
 %}
 
 [CoinJoins]({{ "/guide/glossary/#coinjoin" | relative_url }}) is an advanced technique where multiple participants collaborate on a transaction to break the "common input ownership" heuristic[^4], which assumes that all inputs in a transaction likely belong to the same owner. In a CoinJoin transaction all the outputs tend to be of the same amount. This makes it harder to define which input paid which output, somewhat breaking the absolute traceability of bitcoin transactions. As with any other anonymity network, a large and diverse group of participants will be more effective in disassociating the connections. CoinJoin transactions are not yet widely supported by Bitcoin applications.
@@ -130,7 +132,9 @@ Users still have to be mindful of how the UTXOs they received from the CoinJoin 
 
 ### Design with privacy in mind
 
-Thinking about privacy is critical during the design process. Your users will not have the same level of knowledge of how to use Bitcoin privately. It becomes especially important for them to understand the implications of their privacy degrading actions which often occur at the point of creating a transaction or requesting a payment. When managing funds 
+Thinking about privacy is critical during the design process. Your users will not have the same level of knowledge of how to use Bitcoin privately. 
+
+It is especially important to help them understand any actions that might impact their privacy. Most of the risks occur at the point of creating a transaction or requesting a payment, and we should try to design solutions that reduce the risk of unknowingly degrading privacy.
 
 While there is no perfect solution that will guarantee 100% privacy, try to minimize how much information gets shared to the most essential. Consider ways to inform and prevent user actions that negatively impact their privacy as they use your product.
 
