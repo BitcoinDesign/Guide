@@ -34,7 +34,7 @@ This page should inform about what information is made public when sending or re
 @TODO: address reuse / write glossary term about Gap limit  
 -->
 
-It’s a common misconception that Bitcoin is anonymous. Instead, it should be referred to as pseudonymous, which means that each address you generate is like a new identity. Unless your ownership is revealed, whether directly by yourself or indirectly by some third-party you are able to remain anonymous.
+It’s a common misconception that Bitcoin payments are anonymous. Instead, they can be referred to as pseudonymous, this means that who owns a freshly generated addresses is not public knowledge. Unless your ownership is revealed, whether directly by yourself or indirectly by some third-party you are able to remain anonymous.
 
 Transactions, their signatures, and addresses after they are mined remain public on the ledger forever. However, there is no personally identifiable information attached to transactions on the blockchain. The transparent property of the blockchain allows anyone to easily verify the amount of bitcoin in existence, which means it also makes looking up any address or transaction trivial. This can be demonstrated going back to the first block on [January 3, 2009](https://blockstream.info/tx/4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b).
 
