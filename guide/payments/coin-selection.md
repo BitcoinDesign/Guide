@@ -163,21 +163,16 @@ Freezes certain coins or clusters from their wallet’s UTXO pool to either prio
 %}
 
 {% include fact/pros.html %}
-- Low friction: easy for end user, doesn’t have to play around with manual coin selection (often an overwhelming process).
-- Wallets can choose to optimise for cost, speed, or privacy (byte size of transaction, fee, change outputs) depending upon their targeted user group.
-- Minimising change outputs decreases balance exposure (e.g BnB or Target Sized Change) and chance of tracing future transactions from that address.
-- Freezing coins gives some form of privacy control whilst allowing wallets to further optimise for cost, speed, or privacy
+- Low friction: easy for end-user, doesn’t have to play around with manual coin selection
+- Wallets can choose to optimize for cost, speed, or privacy (byte size of transaction, fee, change outputs) depending upon their targeted user group.
+- Minimizing change outputs and decreases balance exposure and the chance of tracing future transactions from that address.
 {% include fact/close.html %}
 
 {% include fact/cons.html %}
-- These strategies do not optimise for all 3 features (speed, cost, privacy), and more often than not privacy is the first to be sacrificed
-- Automatic selection strategies may select UTXOs associated with targered dusting attacks, resulting in privacy loss
-- UTXOs selected from unrecognised clusters can expose private data of wallet addresses, balances, and contact payment information (UTXO derivation paths and data).
+- Doesn't optimize for all three features (speed, cost, privacy)
+- Automatic selection strategies may select UTXOs associated with targeted dusting attacks, resulting in privacy loss
+- UTXOs selected from unrecognized clusters can expose private data of wallet addresses, balances, and contact payment information (UTXO derivation paths and data).
 - Reducing the inputs (byte size) of bitcoin transactions doesn’t usually optimise for minimal change outputs, exposing larger amounts of sensitive wallet data.
-- Standard network (relay) fees are usually so high that sacrificing privacy comes at little gain.
-- With the introduction of the Lightning Network, these solutions provide little gain for a decrease in privacy protection.
-- Privacy oriented strategies can require strenuous computational power (BnB).
-- Smaller/no change outputs are not guaranteed and is often dependent upon wallets having a large variation of UTXOs.
 - Freezing certain coins reduces the size of a wallet's UTXO pool, and may hinder an automatic algorithm’s ability to optimise for speed, cost, or privacy.
 {% include fact/close.html %}
 
@@ -185,13 +180,12 @@ Freezes certain coins or clusters from their wallet’s UTXO pool to either prio
 
 #### When to use
 - New users or introductory level wallets
-- Wallets that wish to specifically optimise for either cost, speed, or privacy
+- Wallets specifically optimizing for either cost, speed, or privacy
 - Wallets that wish to prioritise privacy in automatic coin selection (BnB or Target Size Change)
-- Freezing coins allows for further privacy optimisation and maleability, without overwhelming users
 
 #### When not to use
 - When privacy is a top priority to users
-- When wanting to provide a more custom experience for bitcoin transactions
+- When wanting to provide a more custom experience for Bitcoin transactions
 
 #### Products that use this scheme
 - Bread Wallet + Electrum (FIFO)
