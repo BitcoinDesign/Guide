@@ -249,21 +249,39 @@ A standard for multi-signature that uses Schnorr signatures. Previously, the mor
 
 - [Proposal](https://eprint.iacr.org/2018/068) in the Cryptology ePrint archive
 
-### Node
+### Nodes
 
-Node refers to [software]({{ '/guide/getting-started/software/#nodes' | relative_url }}) that participates in the bitcoin network. It exchanges transaction data with other nodes, stores some or all of it, and verifies that transactions are valid. There is also dedicated [node hardware]({{ '/guide/getting-started/hardware/#hardware-wallets' | relative_url }}).
+A node refers to a Bitcoin client that participates in the Bitcoin network.
 
-#### Full node
+#### Full nodes
 
-A node that fully verifies all transactions and rules of the Bitcoin network.
+Full nodes are Bitcoin clients that fully verify and enforce the rules of the Bitcoin network. An example of a rule is that there will only ever be 21 million bitcoin.
 
-#### Pruned full node
+##### Archival full node
 
-A node that fully verifies all of the rules of the Bitcoin network with a much smaller storage capacity because it only stores transactions relevant to the users wallet.
+A full node that stores the entire Bitcoin block chain, as well as sends historical data to other nodes.
 
-#### Archival node
+##### Pruned full node
 
-A full node that has not only verified all data, but also stores and provides it to other nodes on the network.
+A full node that uses much lower storage capacity as it only stores a portion of recent blocks. 
+
+#### Light nodes
+
+Light nodes are Bitcoin clients that do not verify or enforce the rules of the Bitcoin network.
+
+##### Simplified payment verification (SPV) light node
+
+A light node that queries and downloads block headers from full nodes making it possible for users to verify transactions without running a full node. 
+
+- [Bitcoin Wiki SPV](https://en.bitcoinwiki.org/wiki/Simplified_Payment_Verification)
+- [Bitcoin whitepaper - section 8](https://bitcoin.org/bitcoin.pdf)
+
+##### Neutrino light node
+
+A light node that uses the Neutrino protocol. The Neutrino protocol uses compact block filters to query and download condensed representations of blocks that contain transaction data relevant to the user.
+
+- [Bitcoin Optech - block filters](https://bitcoinops.org/en/topics/compact-block-filters/)
+- [GitHub Neutrino repo](https://github.com/lightninglabs/neutrino)
 
 ### Output
 
@@ -312,10 +330,6 @@ The controlling keypair of a bitcoin wallet can be derived from a *recovery phra
 Many wallet-applications work with HD Wallets and recovery phrases, and are interoperable, meaning you can change the application that can control your wallet should you wish (although there are some caveats depending on if they support just BIP32 or also BIP44).
 
 **Technicalities** - Recovery of multisig-wallets needs both the extended public key and the recovery phrase of all paticipating keys as well as the master key fingerprint as defined by BIP32 concatenated with the derivation path of the public key. The derivation path is represented as 32-bit little endian unsigned integer indexes concatenated with each other. The number of 32 bit unsigned integer indexes must match the depth provided in the extended public key.
-
-### Simplified payment verification (SPV)
-
- It is possible to verify bitcoin payments without running a full network node. This is called simplified payment verification, or SPV. A user’s bitcoin spv wallet only needs a copy of the block headers of the longest chain, which are available by querying network nodes until it is apparent that the longest chain has been obtained. SPV lets you validate your transactions without having to worry about anybody else’s transactions. It ensures your transactions are in a block, and it provides confirmations that additional blocks are being added to the chain. An SPV wallet is a type of bitcoin wallet that works this way.
 
 **References:**
 
