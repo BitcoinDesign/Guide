@@ -2,8 +2,9 @@
 layout: guide
 title: Coin Selection
 nav_order: 1
-parent: Payments
-permalink: /guide/payments/coin-selection/
+grand_parent: Payments
+parent: Send
+permalink: /guide/payments/send/coin-selection/
 main_classes: -no-top-padding
 ---
 
@@ -191,7 +192,6 @@ Freezes certain coins or clusters from their wallet’s UTXO pool to either prio
 {% include fact/products.html %}
 Bread Wallet + Electrum (FIFO), Mycelium (Pruned FIFO), BitcoinJ and Bitcoin Wallet for Android (High Priority First), Electrum *Private Mode* (Target Sized Change), Bitcoin Core (Branch and Bound), Hexa (Blackjack, with Accumulative Fallback)
 {% include fact/close.html %}
-
 
 
 ## Manual coin selection (a.k.a coin control)
