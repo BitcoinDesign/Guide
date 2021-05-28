@@ -48,7 +48,7 @@ An introduction to how receiving and requesting bitcoin works.
 
 ### [Transaction privacy]({{ '/guide/payments/privacy/' | relative_url }})
 
-An overview of how to help users maintain their financial privacy while using Bitcoin.
+An overview of how to help users maintain transaction privacy with Bitcoin.
 
 ---
 
