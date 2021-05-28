@@ -4,6 +4,7 @@ title: Sending bitcoin
 description: An introduction to how sending bitcoin works.
 nav_order: 2
 parent: Payments
+has_children: true
 permalink: /guide/payments/send/
 main_classes: -no-top-padding
 image: /assets/images/guide/payments/send/bitcoin-payments-social.jpg

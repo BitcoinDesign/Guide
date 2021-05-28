@@ -842,26 +842,273 @@ assets/images/guide/case-studies/multisig-wallet/case-current@2x.png: case-curre
 assets/images/guide/onboarding/getting-to-know-your-users/getting-to-know-your-users-preview.jpg: getting-to-know-your-users-preview.jpg
 assets/images/guide/payments/payments-preview.jpg: payments-preview.jpg
 assets/images/guide/private-key-management/private-key-management-preview.jpg: private-key-management-preview.jpg
+assets/images/payments/automatic-coin-selection-mobile.jpg: automatic-coin-selection-mobile.jpg
+assets/images/payments/automatic-coin-selection-mobile@2x.jpg: automatic-coin-selection-mobile@2x.jpg
+assets/images/payments/automatic-coin-selection.jpg: automatic-coin-selection.jpg
+assets/images/payments/automatic-coin-selection@2x.jpg: automatic-coin-selection@2x.jpg
+assets/images/payments/blackjack.jpg: blackjack.jpg
+assets/images/payments/blackjack@2x.jpg: blackjack@2x.jpg
+assets/images/payments/bnb.jpg: bnb.jpg
+assets/images/payments/bnb@2x.jpg: bnb@2x.jpg
+assets/images/payments/coin-selection-header-mobile.jpg: coin-selection-header-mobile.jpg
+assets/images/payments/coin-selection-header-mobile@2x.jpg: coin-selection-header-mobile@2x.jpg
+assets/images/payments/coin-selection-header.jpg: coin-selection-header.jpg
+assets/images/payments/coin-selection-header@2x.jpg: coin-selection-header@2x.jpg
+assets/images/payments/coin-selection-white-black-listing-mobile.jpg: coin-selection-white-black-listing-mobile.jpg
+assets/images/payments/coin-selection-white-black-listing-mobile@2x.jpg: coin-selection-white-black-listing-mobile@2x.jpg
+assets/images/payments/coin-selection-white-black-listing.jpg: coin-selection-white-black-listing.jpg
+assets/images/payments/coin-selection-white-black-listing@2x.jpg: coin-selection-white-black-listing@2x.jpg
+assets/images/payments/fifo.jpg: fifo.jpg
+assets/images/payments/fifo@2x.jpg: fifo@2x.jpg
+assets/images/payments/funding-tx-mobile.jpg: funding-tx-mobile.jpg
+assets/images/payments/funding-tx-mobile@2x.jpg: funding-tx-mobile@2x.jpg
+assets/images/payments/funding-tx.jpg: funding-tx.jpg
+assets/images/payments/funding-tx@2x.jpg: funding-tx@2x.jpg
+assets/images/payments/high-priority-first.jpg: high-priority-first.jpg
+assets/images/payments/high-priority-first@2x.jpg: high-priority-first@2x.jpg
+assets/images/payments/lifo.jpg: lifo.jpg
+assets/images/payments/lifo@2x.jpg: lifo@2x.jpg
+assets/images/payments/manual-coin-selection-mobile.jpg: manual-coin-selection-mobile.jpg
+assets/images/payments/manual-coin-selection-mobile@2x.jpg: manual-coin-selection-mobile@2x.jpg
+assets/images/payments/manual-coin-selection.jpg: manual-coin-selection.jpg
+assets/images/payments/manual-coin-selection@2x.jpg: manual-coin-selection@2x.jpg
+assets/images/payments/minimise-fees-merge-coins.jpg: minimise-fees-merge-coins.jpg
+assets/images/payments/minimise-fees-merge-coins@2x.jpg: minimise-fees-merge-coins@2x.jpg
+assets/images/payments/minimise-fees-optimising-size.jpg: minimise-fees-optimising-size.jpg
+assets/images/payments/minimise-fees-optimising-size@2x.jpg: minimise-fees-optimising-size@2x.jpg
+assets/images/payments/pruned-fifo.jpg: pruned-fifo.jpg
+assets/images/payments/pruned-fifo@2x.jpg: pruned-fifo@2x.jpg
+assets/images/payments/Coin Selection/Automatic Algorithms/blackjack.jpg: blackjack.jpg
+assets/images/payments/Coin Selection/Automatic Algorithms/blackjack@2x.jpg: blackjack@2x.jpg
+assets/images/payments/Coin Selection/Automatic Algorithms/bnb.jpg: bnb.jpg
+assets/images/payments/Coin Selection/Automatic Algorithms/bnb@2x.jpg: bnb@2x.jpg
+assets/images/payments/Coin Selection/Automatic Algorithms/fifo.jpg: fifo.jpg
+assets/images/payments/Coin Selection/Automatic Algorithms/fifo@2x.jpg: fifo@2x.jpg
+assets/images/payments/Coin Selection/Automatic Algorithms/high-priority-first.jpg: high-priority-first.jpg
+assets/images/payments/Coin Selection/Automatic Algorithms/high-priority-first@2x.jpg: high-priority-first@2x.jpg
+assets/images/payments/Coin Selection/Automatic Algorithms/lifo.jpg: lifo.jpg
+assets/images/payments/Coin Selection/Automatic Algorithms/lifo@2x.jpg: lifo@2x.jpg
+assets/images/payments/Coin Selection/Automatic Algorithms/minimise-fees-merge-coins.jpg: minimise-fees-merge-coins.jpg
+assets/images/payments/Coin Selection/Automatic Algorithms/minimise-fees-merge-coins@2x.jpg: minimise-fees-merge-coins@2x.jpg
+assets/images/payments/Coin Selection/Automatic Algorithms/minimise-fees-optimising-size.jpg: minimise-fees-optimising-size.jpg
+assets/images/payments/Coin Selection/Automatic Algorithms/minimise-fees-optimising-size@2x.jpg: minimise-fees-optimising-size@2x.jpg
+assets/images/payments/Coin Selection/Automatic Algorithms/pruned-fifo.jpg: pruned-fifo.jpg
+assets/images/payments/Coin Selection/Automatic Algorithms/pruned-fifo@2x.jpg: pruned-fifo@2x.jpg
+assets/images/payments/Coin Selection/automatic-coin-selection-mobile.jpg: automatic-coin-selection-mobile.jpg
+assets/images/payments/Coin Selection/automatic-coin-selection-mobile@2x.jpg: automatic-coin-selection-mobile@2x.jpg
+assets/images/payments/Coin Selection/automatic-coin-selection.jpg: automatic-coin-selection.jpg
+assets/images/payments/Coin Selection/automatic-coin-selection@2x.jpg: automatic-coin-selection@2x.jpg
+assets/images/payments/Coin Selection/coin-selection-header-mobile.jpg: coin-selection-header-mobile.jpg
+assets/images/payments/Coin Selection/coin-selection-header-mobile@2x.jpg: coin-selection-header-mobile@2x.jpg
+assets/images/payments/Coin Selection/coin-selection-header.jpg: coin-selection-header.jpg
+assets/images/payments/Coin Selection/coin-selection-header@2x.jpg: coin-selection-header@2x.jpg
+assets/images/payments/Coin Selection/coin-selection-white-black-listing-mobile.jpg: coin-selection-white-black-listing-mobile.jpg
+assets/images/payments/Coin Selection/coin-selection-white-black-listing-mobile@2x.jpg: coin-selection-white-black-listing-mobile@2x.jpg
+assets/images/payments/Coin Selection/coin-selection-white-black-listing.jpg: coin-selection-white-black-listing.jpg
+assets/images/payments/Coin Selection/coin-selection-white-black-listing@2x.jpg: coin-selection-white-black-listing@2x.jpg
+assets/images/payments/Coin Selection/funding-tx-mobile.jpg: funding-tx-mobile.jpg
+assets/images/payments/Coin Selection/funding-tx-mobile@2x.jpg: funding-tx-mobile@2x.jpg
+assets/images/payments/Coin Selection/funding-tx.jpg: funding-tx.jpg
+assets/images/payments/Coin Selection/funding-tx@2x.jpg: funding-tx@2x.jpg
+assets/images/payments/Coin Selection/manual-coin-selection-mobile.jpg: manual-coin-selection-mobile.jpg
+assets/images/payments/Coin Selection/manual-coin-selection-mobile@2x.jpg: manual-coin-selection-mobile@2x.jpg
+assets/images/payments/Coin Selection/manual-coin-selection.jpg: manual-coin-selection.jpg
+assets/images/payments/Coin Selection/manual-coin-selection@2x.jpg: manual-coin-selection@2x.jpg
+assets/images/payments/coin-selection/Automatic Algorithms/blackjack.jpg: blackjack.jpg
+assets/images/payments/coin-selection/Automatic Algorithms/blackjack@2x.jpg: blackjack@2x.jpg
+assets/images/payments/coin-selection/Automatic Algorithms/bnb.jpg: bnb.jpg
+assets/images/payments/coin-selection/Automatic Algorithms/bnb@2x.jpg: bnb@2x.jpg
+assets/images/payments/coin-selection/Automatic Algorithms/fifo.jpg: fifo.jpg
+assets/images/payments/coin-selection/Automatic Algorithms/fifo@2x.jpg: fifo@2x.jpg
+assets/images/payments/coin-selection/Automatic Algorithms/high-priority-first.jpg: high-priority-first.jpg
+assets/images/payments/coin-selection/Automatic Algorithms/high-priority-first@2x.jpg: high-priority-first@2x.jpg
+assets/images/payments/coin-selection/Automatic Algorithms/lifo.jpg: lifo.jpg
+assets/images/payments/coin-selection/Automatic Algorithms/lifo@2x.jpg: lifo@2x.jpg
+assets/images/payments/coin-selection/Automatic Algorithms/minimise-fees-merge-coins.jpg: minimise-fees-merge-coins.jpg
+assets/images/payments/coin-selection/Automatic Algorithms/minimise-fees-merge-coins@2x.jpg: minimise-fees-merge-coins@2x.jpg
+assets/images/payments/coin-selection/Automatic Algorithms/minimise-fees-optimising-size.jpg: minimise-fees-optimising-size.jpg
+assets/images/payments/coin-selection/Automatic Algorithms/minimise-fees-optimising-size@2x.jpg: minimise-fees-optimising-size@2x.jpg
+assets/images/payments/coin-selection/Automatic Algorithms/pruned-fifo.jpg: pruned-fifo.jpg
+assets/images/payments/coin-selection/Automatic Algorithms/pruned-fifo@2x.jpg: pruned-fifo@2x.jpg
+assets/images/payments/coin-selection/automatic-coin-selection-mobile.jpg: automatic-coin-selection-mobile.jpg
+assets/images/payments/coin-selection/automatic-coin-selection-mobile@2x.jpg: automatic-coin-selection-mobile@2x.jpg
+assets/images/payments/coin-selection/automatic-coin-selection.jpg: automatic-coin-selection.jpg
+assets/images/payments/coin-selection/automatic-coin-selection@2x.jpg: automatic-coin-selection@2x.jpg
+assets/images/payments/coin-selection/coin-selection-header-mobile.jpg: coin-selection-header-mobile.jpg
+assets/images/payments/coin-selection/coin-selection-header-mobile@2x.jpg: coin-selection-header-mobile@2x.jpg
+assets/images/payments/coin-selection/coin-selection-header.jpg: coin-selection-header.jpg
+assets/images/payments/coin-selection/coin-selection-header@2x.jpg: coin-selection-header@2x.jpg
+assets/images/payments/coin-selection/coin-selection-white-black-listing-mobile.jpg: coin-selection-white-black-listing-mobile.jpg
+assets/images/payments/coin-selection/coin-selection-white-black-listing-mobile@2x.jpg: coin-selection-white-black-listing-mobile@2x.jpg
+assets/images/payments/coin-selection/coin-selection-white-black-listing.jpg: coin-selection-white-black-listing.jpg
+assets/images/payments/coin-selection/coin-selection-white-black-listing@2x.jpg: coin-selection-white-black-listing@2x.jpg
+assets/images/payments/coin-selection/funding-tx-mobile.jpg: funding-tx-mobile.jpg
+assets/images/payments/coin-selection/funding-tx-mobile@2x.jpg: funding-tx-mobile@2x.jpg
+assets/images/payments/coin-selection/funding-tx.jpg: funding-tx.jpg
+assets/images/payments/coin-selection/funding-tx@2x.jpg: funding-tx@2x.jpg
+assets/images/payments/coin-selection/manual-coin-selection-mobile.jpg: manual-coin-selection-mobile.jpg
+assets/images/payments/coin-selection/manual-coin-selection-mobile@2x.jpg: manual-coin-selection-mobile@2x.jpg
+assets/images/payments/coin-selection/manual-coin-selection.jpg: manual-coin-selection.jpg
+assets/images/payments/coin-selection/manual-coin-selection@2x.jpg: manual-coin-selection@2x.jpg
+assets/images/payments/coin-selection/automatic-algorithms/blackjack.jpg: blackjack.jpg
+assets/images/payments/coin-selection/automatic-algorithms/blackjack@2x.jpg: blackjack@2x.jpg
+assets/images/payments/coin-selection/automatic-algorithms/bnb.jpg: bnb.jpg
+assets/images/payments/coin-selection/automatic-algorithms/bnb@2x.jpg: bnb@2x.jpg
+assets/images/payments/coin-selection/automatic-algorithms/fifo.jpg: fifo.jpg
+assets/images/payments/coin-selection/automatic-algorithms/fifo@2x.jpg: fifo@2x.jpg
+assets/images/payments/coin-selection/automatic-algorithms/high-priority-first.jpg: high-priority-first.jpg
+assets/images/payments/coin-selection/automatic-algorithms/high-priority-first@2x.jpg: high-priority-first@2x.jpg
+assets/images/payments/coin-selection/automatic-algorithms/lifo.jpg: lifo.jpg
+assets/images/payments/coin-selection/automatic-algorithms/lifo@2x.jpg: lifo@2x.jpg
+assets/images/payments/coin-selection/automatic-algorithms/minimise-fees-merge-coins.jpg: minimise-fees-merge-coins.jpg
+assets/images/payments/coin-selection/automatic-algorithms/minimise-fees-merge-coins@2x.jpg: minimise-fees-merge-coins@2x.jpg
+assets/images/payments/coin-selection/automatic-algorithms/minimise-fees-optimising-size.jpg: minimise-fees-optimising-size.jpg
+assets/images/payments/coin-selection/automatic-algorithms/minimise-fees-optimising-size@2x.jpg: minimise-fees-optimising-size@2x.jpg
+assets/images/payments/coin-selection/automatic-algorithms/pruned-fifo.jpg: pruned-fifo.jpg
+assets/images/payments/coin-selection/automatic-algorithms/pruned-fifo@2x.jpg: pruned-fifo@2x.jpg
+assets/images/guide/glossary/coin-selection/auto.png: auto.png
+assets/images/guide/glossary/coin-selection/auto@2x.png: auto@2x.png
+assets/images/guide/glossary/coin-selection/home.png: home.png
+assets/images/guide/glossary/coin-selection/home@2x.png: home@2x.png
+assets/images/guide/glossary/coin-selection/send-details.png: send-details.png
+assets/images/guide/glossary/coin-selection/send-details@2x.png: send-details@2x.png
+assets/images/guide/glossary/coin-selection/sent.png: sent.png
+assets/images/guide/glossary/coin-selection/sent@2x.png: sent@2x.png
+assets/images/guide/glossary/coin-selection/coin-selection/coins.png: coins.png
+assets/images/guide/glossary/coin-selection/coin-selection/coins@2x.png: coins@2x.png
+assets/images/guide/glossary/coin-selection/coin-selection/manual.png: manual.png
+assets/images/guide/glossary/coin-selection/coin-selection/manual@2x.png: manual@2x.png
+assets/images/guide/glossary/coin-selection/coin-selection/review.png: review.png
+assets/images/guide/glossary/coin-selection/coin-selection/review@2x.png: review@2x.png
+assets/images/guide/glossary/coin-selection/coin-selection/sent.png: sent.png
+assets/images/guide/glossary/coin-selection/coin-selection/sent@2x.png: sent@2x.png
+assets/images/guide/glossary/coin-selection/coins.png: coins.png
+assets/images/guide/glossary/coin-selection/coins@2x.png: coins@2x.png
+assets/images/guide/glossary/coin-selection/manual.png: manual.png
+assets/images/guide/glossary/coin-selection/manual@2x.png: manual@2x.png
+assets/images/guide/glossary/coin-selection/review.png: review.png
+assets/images/guide/glossary/coin-selection/review@2x.png: review@2x.png
+assets/images/guide/glossary/coin-selection/coin-selection/auto.png: auto.png
+assets/images/guide/glossary/coin-selection/coin-selection/auto@2x.png: auto@2x.png
+assets/images/guide/glossary/coin-selection/coin-selection/home.png: home.png
+assets/images/guide/glossary/coin-selection/coin-selection/home@2x.png: home@2x.png
+assets/images/guide/glossary/coin-selection/coin-selection/send-details.png: send-details.png
+assets/images/guide/glossary/coin-selection/coin-selection/send-details@2x.png: send-details@2x.png
+assets/images/guide/glossary/coin-selection/automatic-algorithms/blackjack.jpg: blackjack.jpg
+assets/images/guide/glossary/coin-selection/automatic-algorithms/blackjack@2x.jpg: blackjack@2x.jpg
+assets/images/guide/glossary/coin-selection/automatic-algorithms/bnb.jpg: bnb.jpg
+assets/images/guide/glossary/coin-selection/automatic-algorithms/bnb@2x.jpg: bnb@2x.jpg
+assets/images/guide/glossary/coin-selection/automatic-algorithms/fifo.jpg: fifo.jpg
+assets/images/guide/glossary/coin-selection/automatic-algorithms/fifo@2x.jpg: fifo@2x.jpg
+assets/images/guide/glossary/coin-selection/automatic-algorithms/high-priority-first.jpg: high-priority-first.jpg
+assets/images/guide/glossary/coin-selection/automatic-algorithms/high-priority-first@2x.jpg: high-priority-first@2x.jpg
+assets/images/guide/glossary/coin-selection/automatic-algorithms/lifo.jpg: lifo.jpg
+assets/images/guide/glossary/coin-selection/automatic-algorithms/lifo@2x.jpg: lifo@2x.jpg
+assets/images/guide/glossary/coin-selection/automatic-algorithms/minimise-fees-merge-coins.jpg: minimise-fees-merge-coins.jpg
+assets/images/guide/glossary/coin-selection/automatic-algorithms/minimise-fees-merge-coins@2x.jpg: minimise-fees-merge-coins@2x.jpg
+assets/images/guide/glossary/coin-selection/automatic-algorithms/minimise-fees-optimising-size.jpg: minimise-fees-optimising-size.jpg
+assets/images/guide/glossary/coin-selection/automatic-algorithms/minimise-fees-optimising-size@2x.jpg: minimise-fees-optimising-size@2x.jpg
+assets/images/guide/glossary/coin-selection/automatic-algorithms/pruned-fifo.jpg: pruned-fifo.jpg
+assets/images/guide/glossary/coin-selection/automatic-algorithms/pruned-fifo@2x.jpg: pruned-fifo@2x.jpg
+assets/images/guide/glossary/coin-selection/automatic-coin-selection-mobile.jpg: automatic-coin-selection-mobile.jpg
+assets/images/guide/glossary/coin-selection/automatic-coin-selection-mobile@2x.jpg: automatic-coin-selection-mobile@2x.jpg
+assets/images/guide/glossary/coin-selection/automatic-coin-selection.jpg: automatic-coin-selection.jpg
+assets/images/guide/glossary/coin-selection/automatic-coin-selection@2x.jpg: automatic-coin-selection@2x.jpg
+assets/images/guide/glossary/coin-selection/coin-selection-header-mobile.jpg: coin-selection-header-mobile.jpg
+assets/images/guide/glossary/coin-selection/coin-selection-header-mobile@2x.jpg: coin-selection-header-mobile@2x.jpg
+assets/images/guide/glossary/coin-selection/coin-selection-header.jpg: coin-selection-header.jpg
+assets/images/guide/glossary/coin-selection/coin-selection-header@2x.jpg: coin-selection-header@2x.jpg
+assets/images/guide/glossary/coin-selection/coin-selection-white-black-listing-mobile.jpg: coin-selection-white-black-listing-mobile.jpg
+assets/images/guide/glossary/coin-selection/coin-selection-white-black-listing-mobile@2x.jpg: coin-selection-white-black-listing-mobile@2x.jpg
+assets/images/guide/glossary/coin-selection/coin-selection-white-black-listing.jpg: coin-selection-white-black-listing.jpg
+assets/images/guide/glossary/coin-selection/coin-selection-white-black-listing@2x.jpg: coin-selection-white-black-listing@2x.jpg
+assets/images/guide/glossary/coin-selection/funding-tx-mobile.jpg: funding-tx-mobile.jpg
+assets/images/guide/glossary/coin-selection/funding-tx-mobile@2x.jpg: funding-tx-mobile@2x.jpg
+assets/images/guide/glossary/coin-selection/funding-tx.jpg: funding-tx.jpg
+assets/images/guide/glossary/coin-selection/funding-tx@2x.jpg: funding-tx@2x.jpg
+assets/images/guide/glossary/coin-selection/manual-coin-selection-mobile.jpg: manual-coin-selection-mobile.jpg
+assets/images/guide/glossary/coin-selection/manual-coin-selection-mobile@2x.jpg: manual-coin-selection-mobile@2x.jpg
+assets/images/guide/glossary/coin-selection/manual-coin-selection.jpg: manual-coin-selection.jpg
+assets/images/guide/glossary/coin-selection/manual-coin-selection@2x.jpg: manual-coin-selection@2x.jpg
+assets/images/guide/glossary/coin-selection/header-mobile.jpg: header-mobile.jpg
+assets/images/guide/glossary/coin-selection/header-mobile@2x.jpg: header-mobile@2x.jpg
+assets/images/guide/glossary/coin-selection/header.jpg: header.jpg
+assets/images/guide/glossary/coin-selection/header@2x.jpg: header@2x.jpg
+assets/images/guide/glossary/coin-selection/freezing-mobile.jpg: freezing-mobile.jpg
+assets/images/guide/glossary/coin-selection/freezing-mobile@2x.jpg: freezing-mobile@2x.jpg
+assets/images/guide/glossary/coin-selection/freezing.jpg: freezing.jpg
+assets/images/guide/glossary/coin-selection/freezing@2x.jpg: freezing@2x.jpg
+assets/images/guide/getting-started/visual-language/bitcoin-visual-language-mobile.jpg: bitcoin-visual-language-mobile.jpg
+assets/images/guide/getting-started/visual-language/bitcoin-visual-language-mobile@2x.jpg: bitcoin-visual-language-mobile@2x.jpg
+assets/images/guide/getting-started/visual-language/bitcoin-visual-language.jpg: bitcoin-visual-language.jpg
+assets/images/guide/getting-started/visual-language/bitcoin-visual-language@2x.jpg: bitcoin-visual-language@2x.jpg
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-PIN.png: cloud-backup-PIN.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-PIN@2x.png: cloud-backup-PIN@2x.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-confirmation.png: cloud-backup-confirmation.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-confirmation@2x.png: cloud-backup-confirmation@2x.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-intro.png: cloud-backup-intro.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-intro@2x.png: cloud-backup-intro@2x.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-provider.png: cloud-backup-provider.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-provider@2x.png: cloud-backup-provider@2x.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-service.png: cloud-backup-service.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-service@2x.png: cloud-backup-service@2x.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/copy-recovery-phrase.png: copy-recovery-phrase.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/copy-recovery-phrase@2x.png: copy-recovery-phrase@2x.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/confirm-recovery-phrase-columns.png: confirm-recovery-phrase-columns.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/confirm-recovery-phrase-columns@2x.png: confirm-recovery-phrase-columns@2x.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/confirm-recovery-phrase-entry.png: confirm-recovery-phrase-entry.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/confirm-recovery-phrase-entry@2x.png: confirm-recovery-phrase-entry@2x.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/confirm-recovery-phrase.png: confirm-recovery-phrase.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/confirm-recovery-phrase@2x.png: confirm-recovery-phrase@2x.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-all-at-once.png: copy-recovery-phrase-all-at-once.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-all-at-once@2x.png: copy-recovery-phrase-all-at-once@2x.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-columns.png: copy-recovery-phrase-columns.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-columns@2x.png: copy-recovery-phrase-columns@2x.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-reveal.png: copy-recovery-phrase-reveal.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-reveal@2x.png: copy-recovery-phrase-reveal@2x.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-single-word.png: copy-recovery-phrase-single-word.png
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-single-word@2x.png: copy-recovery-phrase-single-word@2x.png
+assets/images/guide/onboarding/funding-a-wallet/bitcoin-gift-cards.png: bitcoin-gift-cards.png
+assets/images/guide/onboarding/funding-a-wallet/bitcoin-gift-cards@2x.png: bitcoin-gift-cards@2x.png
+assets/images/guide/onboarding/funding-a-wallet/buy-bitcoin.png: buy-bitcoin.png
+assets/images/guide/onboarding/funding-a-wallet/buy-bitcoin@2x.png: buy-bitcoin@2x.png
+assets/images/guide/onboarding/protecting-a-wallet/choose-pin.png: choose-pin.png
+assets/images/guide/onboarding/protecting-a-wallet/choose-pin@2x.png: choose-pin@2x.png
+assets/images/guide/onboarding/protecting-a-wallet/enter-pin.png: enter-pin.png
+assets/images/guide/onboarding/protecting-a-wallet/enter-pin@2x.png: enter-pin@2x.png
+assets/images/guide/onboarding/protecting-a-wallet/face-id-info.png: face-id-info.png
+assets/images/guide/onboarding/protecting-a-wallet/face-id-info@2x.png: face-id-info@2x.png
+assets/images/guide/onboarding/protecting-a-wallet/hide-by-default.gif: hide-by-default.gif
+assets/images/guide/onboarding/protecting-a-wallet/hide-by-eye-icon-2.gif: hide-by-eye-icon-2.gif
+assets/images/guide/onboarding/protecting-a-wallet/hide-by-eye-icon.gif: hide-by-eye-icon.gif
+assets/images/guide/onboarding/protecting-a-wallet/hide-in-settings.gif: hide-in-settings.gif
+assets/images/guide/onboarding/protecting-a-wallet/hide-info-hidden-by-default.png: hide-info-hidden-by-default.png
+assets/images/guide/onboarding/protecting-a-wallet/hide-info-reveal-by-pin.png: hide-info-reveal-by-pin.png
+assets/images/guide/onboarding/protecting-a-wallet/hide-sensitive-information-header.png: hide-sensitive-information-header.png
+assets/images/guide/onboarding/protecting-a-wallet/reveal-by-pin-2.gif: reveal-by-pin-2.gif
+assets/images/guide/onboarding/protecting-a-wallet/reveal-by-pin.gif: reveal-by-pin.gif
+assets/images/guide/onboarding/restoring-a-wallet/import-options.png: import-options.png
+assets/images/guide/onboarding/restoring-a-wallet/import-options@2x.png: import-options@2x.png
+assets/images/guide/private-key-management/cloud-backup/cloud-backup-mobile.jpg: cloud-backup-mobile.jpg
+assets/images/guide/private-key-management/cloud-backup/cloud-backup-mobile@2x.jpg: cloud-backup-mobile@2x.jpg
 assets/images/guide/private-key-management/cloud-backup/cloud-backup-preview.jpg: cloud-backup-preview.jpg
 assets/images/guide/private-key-management/cloud-backup/cloud-backup.jpg: cloud-backup.jpg
 assets/images/guide/private-key-management/cloud-backup/cloud-backup@2x.jpg: cloud-backup@2x.jpg
-assets/images/guide/private-key-management/cloud-backup/cloud-backup-mobile.jpg: cloud-backup-mobile.jpg
-assets/images/guide/private-key-management/cloud-backup/cloud-backup-mobile@2x.jpg: cloud-backup-mobile@2x.jpg
-assets/images/guide/private-key-management/manual-backup/manual-backup.png: manual-backup.png
-assets/images/guide/private-key-management/manual-backup/manual-backup@2x.png: manual-backup@2x.png
+assets/images/guide/private-key-management/external-signing-device/external-signing-device-mobile.png: external-signing-device-mobile.png
+assets/images/guide/private-key-management/external-signing-device/external-signing-device-mobile@2x.png: external-signing-device-mobile@2x.png
+assets/images/guide/private-key-management/external-signing-device/external-signing-device-preview.png: external-signing-device-preview.png
+assets/images/guide/private-key-management/external-signing-device/external-signing-device.png: external-signing-device.png
+assets/images/guide/private-key-management/external-signing-device/external-signing-device@2x.png: external-signing-device@2x.png
+assets/images/guide/private-key-management/key-sharing/key-sharing-mobile.png: key-sharing-mobile.png
+assets/images/guide/private-key-management/key-sharing/key-sharing-mobile@2x.png: key-sharing-mobile@2x.png
+assets/images/guide/private-key-management/key-sharing/key-sharing-preview.png: key-sharing-preview.png
+assets/images/guide/private-key-management/key-sharing/key-sharing.png: key-sharing.png
+assets/images/guide/private-key-management/key-sharing/key-sharing@2x.png: key-sharing@2x.png
 assets/images/guide/private-key-management/manual-backup/manual-backup-mobile.png: manual-backup-mobile.png
 assets/images/guide/private-key-management/manual-backup/manual-backup-mobile@2x.png: manual-backup-mobile@2x.png
 assets/images/guide/private-key-management/manual-backup/manual-backup-preview.png: manual-backup-preview.png
-assets/images/guide/private-key-management/external-signing-device/external-signing-device-preview.png: external-signing-device-preview.png
-assets/images/guide/private-key-management/external-signing-device/external-signing-device-mobile.png: external-signing-device-mobile.png
-assets/images/guide/private-key-management/external-signing-device/external-signing-device-mobile@2x.png: external-signing-device-mobile@2x.png
-assets/images/guide/private-key-management/external-signing-device/external-signing-device.png: external-signing-device.png
-assets/images/guide/private-key-management/external-signing-device/external-signing-device@2x.png: external-signing-device@2x.png
-assets/images/guide/private-key-management/key-sharing/key-sharing-preview.png: key-sharing-preview.png
-assets/images/guide/private-key-management/key-sharing/key-sharing-mobile.png: key-sharing-mobile.png
-assets/images/guide/private-key-management/key-sharing/key-sharing-mobile@2x.png: key-sharing-mobile@2x.png
-assets/images/guide/private-key-management/key-sharing/key-sharing.png: key-sharing.png
-assets/images/guide/private-key-management/key-sharing/key-sharing@2x.png: key-sharing@2x.png
+assets/images/guide/private-key-management/manual-backup/manual-backup.png: manual-backup.png
+assets/images/guide/private-key-management/manual-backup/manual-backup@2x.png: manual-backup@2x.png
 assets/images/guide/private-key-management/multi-key/multi-key-mobile.png: multi-key-mobile.png
 assets/images/guide/private-key-management/multi-key/multi-key-mobile@2x.png: multi-key-mobile@2x.png
 assets/images/guide/private-key-management/multi-key/multi-key-preview.png: multi-key-preview.png
@@ -879,71 +1126,20 @@ assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-back
 assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/auto-cloud-backup-save-password@2x.png: auto-cloud-backup-save-password@2x.png
 assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/auto-cloud-backup-complete.png: auto-cloud-backup-complete.png
 assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/auto-cloud-backup-complete@2x.png: auto-cloud-backup-complete@2x.png
-assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-single-word.png: copy-recovery-phrase-single-word.png
-assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-single-word@2x.png: copy-recovery-phrase-single-word@2x.png
-assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-columns.png: copy-recovery-phrase-columns.png
-assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-columns@2x.png: copy-recovery-phrase-columns@2x.png
-assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-reveal.png: copy-recovery-phrase-reveal.png
 assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase- reveal@2x.png: copy-recovery-phrase-
   reveal@2x.png
-assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-reveal@2x.png: copy-recovery-phrase-reveal@2x.png
-assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-all-at-once.png: copy-recovery-phrase-all-at-once.png
-assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-all-at-once@2x.png: copy-recovery-phrase-all-at-once@2x.png
-assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/confirm-recovery-phrase.png: confirm-recovery-phrase.png
-assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/confirm-recovery-phrase@2x.png: confirm-recovery-phrase@2x.png
 assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-entry.png: copy-recovery-phrase-entry.png
 assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-entry@2x.png: copy-recovery-phrase-entry@2x.png
-assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/confirm-recovery-phrase-entry.png: confirm-recovery-phrase-entry.png
-assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/confirm-recovery-phrase-entry@2x.png: confirm-recovery-phrase-entry@2x.png
-assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/confirm-recovery-phrase-columns.png: confirm-recovery-phrase-columns.png
-assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/confirm-recovery-phrase-columns@2x.png: confirm-recovery-phrase-columns@2x.png
 assets/images/guide/onboarding/backing-up-a-recovery-phrase/restoring-a-wallet/import-options.png: import-options.png
 assets/images/guide/onboarding/backing-up-a-recovery-phrase/restoring-a-wallet/import-options@2x.png: import-options@2x.png
-assets/images/guide/onboarding/restoring-a-wallet/import-options@2x.png: import-options@2x.png
-assets/images/guide/onboarding/restoring-a-wallet/import-options.png: import-options.png
-assets/images/guide/onboarding/protecting-a-wallet/face-id-info.png: face-id-info.png
-assets/images/guide/onboarding/protecting-a-wallet/face-id-info@2x.png: face-id-info@2x.png
-assets/images/guide/onboarding/protecting-a-wallet/choose-pin.png: choose-pin.png
-assets/images/guide/onboarding/protecting-a-wallet/choose-pin@2x.png: choose-pin@2x.png
-assets/images/guide/onboarding/protecting-a-wallet/enter-pin.png: enter-pin.png
-assets/images/guide/onboarding/protecting-a-wallet/enter-pin@2x.png: enter-pin@2x.png
-assets/images/guide/onboarding/funding-a-wallet/buy-bitcoin.png: buy-bitcoin.png
-assets/images/guide/onboarding/funding-a-wallet/buy-bitcoin@2x.png: buy-bitcoin@2x.png
 assets/images/guide/onboarding/funding-a-wallet/redeem.png: redeem.png
 assets/images/guide/onboarding/funding-a-wallet/redeem@2x.png: redeem@2x.png
 assets/images/guide/onboarding/funding-a-wallet/rise-redeem-gift-cards@2x.png: rise-redeem-gift-cards@2x.png
 assets/images/guide/onboarding/funding-a-wallet/rise-redeem-gift-cards.png: rise-redeem-gift-cards.png
-assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-intro@2x.png: cloud-backup-intro@2x.png
-assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-intro.png: cloud-backup-intro.png
 assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-password.png: cloud-backup-password.png
 assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-password @2x.png: cloud-backup-password
   @2x.png
 assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-password@2x.png: cloud-backup-password@2x.png
-assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-service@2x.png: cloud-backup-service@2x.png
-assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-service.png: cloud-backup-service.png
-assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-confirmation.png: cloud-backup-confirmation.png
-assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-confirmation@2x.png: cloud-backup-confirmation@2x.png
-assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-provider@2x.png: cloud-backup-provider@2x.png
-assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-provider.png: cloud-backup-provider.png
-assets/images/guide/onboarding/funding-a-wallet/bitcoin-gift-cards.png: bitcoin-gift-cards.png
-assets/images/guide/onboarding/funding-a-wallet/bitcoin-gift-cards@2x.png: bitcoin-gift-cards@2x.png
-assets/images/guide/onboarding/protecting-a-wallet/hide-by-default.gif: hide-by-default.gif
-assets/images/guide/onboarding/protecting-a-wallet/hide-in-settings.gif: hide-in-settings.gif
-assets/images/guide/onboarding/protecting-a-wallet/hide-info-hidden-by-default.png: hide-info-hidden-by-default.png
-assets/images/guide/onboarding/protecting-a-wallet/reveal-by-pin-2.gif: reveal-by-pin-2.gif
-assets/images/guide/onboarding/protecting-a-wallet/hide-sensitive-information-header.png: hide-sensitive-information-header.png
-assets/images/guide/onboarding/protecting-a-wallet/hide-by-eye-icon.gif: hide-by-eye-icon.gif
-assets/images/guide/onboarding/protecting-a-wallet/hide-info-reveal-by-pin.png: hide-info-reveal-by-pin.png
-assets/images/guide/onboarding/protecting-a-wallet/hide-by-eye-icon-2.gif: hide-by-eye-icon-2.gif
-assets/images/guide/onboarding/protecting-a-wallet/reveal-by-pin.gif: reveal-by-pin.gif
-assets/images/guide/onboarding/backing-up-a-recovery-phrase/copy-recovery-phrase.png: copy-recovery-phrase.png
-assets/images/guide/onboarding/backing-up-a-recovery-phrase/copy-recovery-phrase@2x.png: copy-recovery-phrase@2x.png
-assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-PIN.png: cloud-backup-PIN.png
-assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-PIN@2x.png: cloud-backup-PIN@2x.png
-assets/images/guide/getting-started/visual-language/bitcoin-visual-language@2x.jpg: bitcoin-visual-language@2x.jpg
-assets/images/guide/getting-started/visual-language/bitcoin-visual-language.jpg: bitcoin-visual-language.jpg
-assets/images/guide/getting-started/visual-language/bitcoin-visual-language-mobile@2x.jpg: bitcoin-visual-language-mobile@2x.jpg
-assets/images/guide/getting-started/visual-language/bitcoin-visual-language-mobile.jpg: bitcoin-visual-language-mobile.jpg
 assets/images/guide/payments/privacy/header.jpg: header.jpg
 assets/images/guide/payments/privacy/address-labeling.jpg: address-labeling.jpg
 assets/images/guide/payments/privacy/address-labeling@2x.jpg: address-labeling@2x.jpg
