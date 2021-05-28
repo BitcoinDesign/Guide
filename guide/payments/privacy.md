@@ -78,7 +78,7 @@ TODO: Graphic / consider how to get the ui generating multiple addresses. make i
 
 
 {% include fact/dos.html %}
-- Show a new unused address when the receive screen is entered.
+- Show a new address when the receive screen is entered.
 - Make it easy to generate as many addresses as the receiver needs.
 - Before broadcasting a transaction, inform senders if an address is already used.
 {% include fact/close.html %}
