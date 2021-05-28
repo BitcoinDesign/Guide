@@ -42,7 +42,7 @@ Transactions, their signatures, and addresses after they are mined remain public
 > 
 > <cite>As documented by <a href="https://docs.wasabiwallet.io/FAQ/FAQ-GeneralBitcoinPrivacy.html#how-is-bitcoin-bad-in-terms-of-privacy">Wasabi Wallet</a></cite>
 
-The key to keeping your transactions private is to prevent others from determining which addresses you own[^3]. Satoshi let others know they mined the first block, which contained just one transaction, with the block reward getting sent to their address. This illustrates the possible permanence of association between an address and an identity. That being said, the pseudonym “Satoshi Nakamoto” also contributes to further anonymity. While it's possible to break assumptions of ownership going forward, the challenge is to recover privacy once an association is made public.
+The key to keeping your transactions private is to prevent others from determining which addresses you own[^3]. When Satoshi let others know that they had mined the first block, which contained a single transaction, one can deduce that both the address that received the block reward and the sender address in the transaction belongs to Satoshi. This illustrates the permanence of associations between addresses and identity. While it's possible to break assumptions of ownership going forward, the challenge is to recover privacy once an association is made public. That being said, in this case the pseudonym “Satoshi Nakamoto” has yet to be associated with any personal identity. 
 
 <!-- TODO: add graphic and heading that demonstrate points of compromise when transacting with bitcoin -->
 
