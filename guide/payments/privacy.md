@@ -58,7 +58,7 @@ Creating new online personas is not the only way to preserve privacy. A new addr
 
 Address re-use degrades the privacy of both the [sending](/guide/payments/send/) and [receiving](/guide/payments/receive) parties. Re-using an address on the receivers side means anyone with whom that address is shared can see previous payments and the amount of bitcoin controlled by that address. Likewise, the sender is revealing any previous transactions by their sending address.
 
-> If thieves can see your income, holdings, and spending, they can use this information to target and exploit you[^2]
+> If bad actors can see your income, holdings, and spending, they can use this information to target and exploit you[^2]
 
 On the receiver’s side, by using a single address, the sender or anyone with whom the address is shared can see the previous activity and the amount of bitcoin controlled by the owner. By _sending_ to an address that is being reused, assuming an adversary uncovers the identity behind the owner there is now a single point for them to reach anyone else who has transacted with the address.
 
