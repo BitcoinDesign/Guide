@@ -261,18 +261,19 @@ A user chooses to send a payment to one of their contacts. They enter the amount
 </div>
 
 
-#### Pros
-
+{% include fact/pros.html %}
 - Gives user full control over coin selection. They can choose to optimize for privacy, cost, or speed, and delegate risk accordingly.
 - Good labeling of coins allows users to prioritize recognized clusters, thereby minimizing the exposure of historical transaction data, balances, and addresses associated with certain coins.
 - Has potential to reduce dust attacks (avoiding choosing minute or unknown UTXOs for payment inputs)
+{% include fact/close.html %}
 
-#### Cons
 
+{% include fact/cons.html %}
 - Can be a lengthy, often confusing process (particularly for inexperienced users)
-- Inexperienced bitcoiners may end up making mistakes that result in higher fees, slower transactions, or a loss of privacy
+- Inexperienced users may end up making mistakes that result in higher fees, slower transactions, or a loss of privacy
 - Can lead to dust attacks if not careful selecting sizes of UTXO inputs
 - Bad labeling of contacts and clusters can lead to sensitive information being exposed
+{% include fact/close.html %}
 
 ### Best practise
 
