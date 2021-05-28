@@ -217,6 +217,10 @@ If your application has a list of their payment requests or transaction history,
 
 Once the payment has been finalized, consider what the receiver may want to do with those funds. You may want to help facilitate those follow-up activities, for example moving the funds to a shared multi-key wallet or doing a [coinjoin]({{ '/guide/glossary/#coinjoin' | relative_url }}).
 
+---
+
+Let's go, time go dive in a bit deeper with [Transaction privacy]({{ "/guide/payments/privacy" | relative_url }}).
+
 <!--
 On /guide/payments/send/#inputting-an-address
 Add below as Do's & Don'ts

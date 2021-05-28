@@ -34,9 +34,10 @@ height = 600
 layout = "full-width"
 %}
 
-# The visual language of bitcoin
+# The visual language of Bitcoin
 
-Since Bitcoin does not have a central authority, there is no specific symbol or style that we can consider official. However, there is a large body of community art and design work, along with a few proposals that ended up being highly influential. Let's start with some key moments that led us to the visual that many of us associate with Bitcoin today.
+Since Bitcoin answers to no central authority, there is no single symbol or logo that can visually represent it, though many try. Here are some of the most recognized attempts to create a universal logo for Bitcoin.
+
 
 ### Original symbol
 
@@ -51,7 +52,7 @@ Since Bitcoin does not have a central authority, there is no specific symbol or 
    layout = "float-left"
 %}
 
-This original icon was a golden coin with bold initial "BC" inscribed, created by Satoshi Nakamoto for the original Bitcoin Core client.
+Satoshi Nakamoto created this lettered golden coin for the original Bitcoin Core client.
 
 </div>
 
@@ -80,7 +81,7 @@ This original icon was a golden coin with bold initial "BC" inscribed, created b
    layout = "float-left"
 %}
 
-On February 24, 2010, Satoshi posted an updated icon that adopted the capital "B" with two vertical lines ([archive.org](https://web.archive.org/web/20130524055823/https://bitcointalk.org/index.php?topic=64.0), [bitcointalk.org](https://bitcointalk.org/index.php?topic=64.0)).
+On February 24, 2010, Satoshi posted an updated icon that adopted the capital “B” with two vertical lines ([archive.org](https://web.archive.org/web/20130524055823/https://bitcointalk.org/index.php?topic=64.0), [bitcointalk.org](https://bitcointalk.org/index.php?topic=64.0)).
 
 </div>
 
@@ -97,7 +98,7 @@ On February 24, 2010, Satoshi posted an updated icon that adopted the capital "B
    layout = "float-left"
 %}
 
-On November 1, 2010, a user named bitboy proposed a new icon and set of promotional graphics on the Bitcointalk forum ([archive.org](https://web.archive.org/web/20130524191250/https://bitcointalk.org/index.php?topic=1631.0), [bitcointalk.org](https://bitcointalk.org/index.php?topic=1631.0)). This iteration embraced a simple, flat style with the hex color #F7931A and a 14-degree rotation.
+On November 1, 2010, a user named bitboy proposed a new icon and set of promotional graphics on the Bitcointalk forum ([archive.org](https://web.archive.org/web/20130524191250/https://bitcointalk.org/index.php?topic=1631.0), [bitcointalk.org](https://bitcointalk.org/index.php?topic=1631.0)). This iteration added a flat style, the hex color #F7931A, and a 14-degree rotation of the B. This interpretation of the bitcoin logo is still ubiquitous today.
 
 </div>
 
@@ -127,17 +128,17 @@ On November 1, 2010, a user named bitboy proposed a new icon and set of promotio
    layout = "float-left"
 %}
 
-The Unicode symbol for Bitcoin (₿) was introduced in [Unicode 10.0.0](http://www.unicode.org/versions/Unicode10.0.0/) on June 20, 2017. This was an important step for establishing Bitcoin as a currency symbol alongside the US Dollar ($), Euro (€) and others. Few fonts support the symbol as of late 2020.
+The Unicode symbol for Bitcoin (₿) was introduced in [Unicode 10.0.0](http://www.unicode.org/versions/Unicode10.0.0/) on June 20, 2017. This important step established Bitcoin as a currency symbol alongside the US Dollar ($), Euro (€), and others. As of mid-2021, few fonts support the symbol.
 
 </div>
 
 ## Beyond the symbol
 
-Because Bitcoin is such an open project, there have been endless creative explorations and visualizations. Below are a few categories to provide structure.
+Bitcoin’s permissionless, decentralized, and open nature has led to practically endless representations not just of the logo but of the character and ethos of the community.
 
 ### Memes
 
-From moon Lambos to the price rollercoaster, memes naturally arise from the sheer infinite conversations of Bitcoiners around the globe. Certain graphics, stories, jokes, and ideas stick and spread and become recognizable visuals by the community and are remixed and repeated repeatedly.
+From moon Lambos to the price rollercoaster, there’s a meme for practically every situation. Certain graphics, stories, jokes, and ideas have won out over others to become recognizable avatars of the community and its personality.
 
 <div class="image-gallery" markdown="1">
 
@@ -154,7 +155,7 @@ From moon Lambos to the price rollercoaster, memes naturally arise from the shee
 
 ### The gold metaphor
 
-Most likely stemming from the original depiction as a gold coin, there is a common illustration style based on this idea. This also builds on the narrative of Bitcoin is a type of digital gold, for which additional elements of binary code or electrical circuits are also often added. On the other end of the spectrum of realism is the depiction of Bitcoin in the style of video game coins, which is more relatable than gold coins to a native digital audience.
+Some of the most common representations of bitcoin are based on Satoshi’s original gold coin illustration. This style boldly makes a case for bitcoin as a transactable kind of digital gold, for which additional elements of binary code or electrical circuits are sometimes added. On the other end of the realist spectrum are heavily illustrated coins like those you might find in a video game.
 
 <div class="image-gallery" markdown="1">
 
@@ -171,7 +172,7 @@ Most likely stemming from the original depiction as a gold coin, there is a comm
 
 ### Illustrations
 
-Magazines, blogs, and other publications often hire professional illustrators to create custom visuals for specific stories. Additionally, companies that integrate or build on Bitcoin also frequently create unique marketing materials. Because Bitcoin does not have any official style, we see many different visual expressions in these illustrations.
+Magazines, blogs, and other publications often hire professional illustrators to visualize stores about Bitcoin. Because Bitcoin does not have any official brand style guidelines, they are usually only limited by the illustrator and publisher’s imagination.
 
 <div class="image-gallery" markdown="1">
 
@@ -188,7 +189,7 @@ Magazines, blogs, and other publications often hire professional illustrators to
 
 ## The expression scale
 
-A good way to think about the visual language of Bitcoin is of a scale that ranges from minimal to highly expressive. Despite the images below looking and communicating so differently, they can all still be recognized as capturing Bitcoin. One of the great aspects of public, community-owned identities like the one Bitcoin has, is that all of these expressions are equally legitimate and valid. This provides enormous creative freedom to designers that we should explore and take advantage of.
+Think about Bitcoin’s visual language as a scale that ranges from muted to highly expressive. These images look very different, but they all capture Bitcoin in some way. As the identity of Bitcoin is public and community-owned, all these representations are equally valid. This provides enormous creative freedom to designers and illustrators with their own visions.
 
 {% include image.html
    image = "/assets/images/guide/getting-started/visual-language/expression-scale.png"
@@ -199,8 +200,8 @@ A good way to think about the visual language of Bitcoin is of a scale that rang
    height = 133
 %}
 
-In digital product design, there are times when a minimally expressive approach is most appropriate. For example, when a user makes a transaction, we want them to be highly focused and not distract them with graphics. At other times, illustrations and stronger visual elements are more appropriate, and this is where we can take advantage of the creative freedom Bitcoin affords.
+In digital product design, there are times when a minimally expressive approach is what’s needed. For example, when a user makes a transaction, we want them to focus. At other times, illustrations and stronger visual elements are more appropriate, and this is where we can take advantage of the creative freedom Bitcoin affords.
 
 ---
 
-As you have seen, the expression if bitcoin is shaped by its user base. Now, let's go under the hood with the [technology primer]({{ '/guide/getting-started/technology-primer/' | relative_url }}).
+As you have seen, Bitcoin is shaped by its user base. Now, let's go under the hood with the [technology primer]({{ '/guide/getting-started/technology-primer/' | relative_url }}).
