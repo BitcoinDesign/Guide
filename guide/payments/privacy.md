@@ -48,7 +48,7 @@ The key to keeping your transactions private is to prevent others from determini
 
 ## Methods to preserve privacy
 
-Keeping private takes constant and diligent work but is not impossible to ensure an acceptable level of privacy[^1]. Let’s explore some methods and practices that help preserve privacy on a transaction level.
+Keeping Bitcoin payments private takes constant and diligent work but is not impossible[^1]. Let’s explore some practices that help preserve privacy of your Bitcoin payments. 
 
 <!-- talk about the problem as you are talking about the solution -->
 
