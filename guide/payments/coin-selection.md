@@ -188,21 +188,19 @@ Freezes certain coins or clusters from their wallet’s UTXO pool to either prio
 - When wanting to provide a more custom experience for Bitcoin transactions
 
 #### Products that use this scheme
-- Bread Wallet + Electrum (FIFO)
-- Mycelium (Pruned FIFO)
-- BitcoinJ and Bitcoin Wallet for Android (High Priority First)
-- Electrum *Private Mode* (Target Sized Change)
-- Bitcoin Core (Branch and Bound)
-- Hexa (Blackjack, with Accumulative Fallback)
+{% include fact/products.html %}
+Bread Wallet + Electrum (FIFO), Mycelium (Pruned FIFO), BitcoinJ and Bitcoin Wallet for Android (High Priority First), Electrum *Private Mode* (Target Sized Change), Bitcoin Core (Branch and Bound), Hexa (Blackjack, with Accumulative Fallback)
+{% include fact/close.html %}
+
 
 
 ## Manual coin selection (a.k.a coin control)
 
-This strategy of manual coin selection gives users full control over exactly which coins or clusters they use to fund a transaction input for an outgoing payment request.
+Manual coin selection gives users full control over exactly which coins or clusters they use to fund a transaction input for an outgoing payment request.
 
-Manual coin control is often an “opt-in” strategy, agreed to by users as they enter “Private Mode” or select “Manual Coin Selection” when creating an outgoing payment request. However, it is also possible for bitcoin wallets to use manual coin control as their default coin selection strategy.
+Manual coin control is often an “opt-in” strategy, agreed to by users as they enter “Private Mode” or select “Manual Coin Selection” when creating an outgoing payment request. However, it is also possible for Bitcoin wallets to use manual coin control as their default coin selection strategy.
 
-This strategy gives you the ability to choose what you wish to optimise for in bitcoin transactions (cost, speed, or privacy). However, it’s worth noting that manual coin control, whilst beneficial to many, could also lead to expensive, slow, or revealing transactions if used incorrectly. Manual coin selection is an advanced feature and should be used (and designed) with caution.
+This strategy gives users the ability to choose what they wish to optimize for in Bitcoin transactions (cost, speed, or privacy). However, it’s worth noting that manual coin control, whilst beneficial to many, could also lead to expensive, slow, or revealing transactions if misused. Manual coin selection is an advanced feature and should be used (and designed) with caution.
 
 {% include picture.html
    image = "/assets/images/guide/glossary/coin-selection/manual-coin-selection.jpg"
@@ -265,8 +263,8 @@ A user chooses to send a payment to one of their contacts. They enter the amount
 
 #### Pros
 
-- Gives user full control over coin selection. They can choose to optimise for privacy, cost, or speed, and delegate risk accordingly.
-- Good labelling of coins allows users to prioritise recognised clusters, thereby minimising the exposure of historical transaction data, balances, and addresses associated with certain coins.
+- Gives user full control over coin selection. They can choose to optimize for privacy, cost, or speed, and delegate risk accordingly.
+- Good labeling of coins allows users to prioritize recognized clusters, thereby minimizing the exposure of historical transaction data, balances, and addresses associated with certain coins.
 - Has potential to reduce dust attacks (avoiding choosing minute or unknown UTXOs for payment inputs)
 
 #### Cons
@@ -291,14 +289,13 @@ Bad labelling of contacts and clusters can lead to sensitive information being e
 
 #### Products that use this scheme
 
-- Bitcoin Core
-- Wasabi
-- Samourai
-- BTCPay
+{% include fact/productss.html %}
+Bitcoin Core, Wasabi, Samourai, BTCPay Server
+{% include fact/close.html %}
 
 ### The challenge for designers
 
-The questions designers and developers are faced with are: how much privacy to we want to inherently bake into our wallet’s payments? How do we inform wallet users of privacy risks when sending and receiving payments (if at all)?
+The questions designers and developers face are: how much privacy do we want to bake into our wallet’s payments inherently? How do we inform wallet users of privacy risks when sending and receiving payments (if at all)?
 
 [^1]: https://coincentral.com/what-is-coin-selection-and-why-does-it-matter/
 [^2]: https://www.investopedia.com/terms/u/utxo.asp
