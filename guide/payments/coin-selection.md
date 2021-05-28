@@ -3,7 +3,7 @@ layout: guide
 title: Coin Selection
 nav_order: 1
 grand_parent: Payments
-parent: Send
+parent: Sending bitcoin
 permalink: /guide/payments/send/coin-selection/
 main_classes: -no-top-padding
 ---
