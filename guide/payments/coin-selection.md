@@ -190,9 +190,8 @@ Freezes certain coins or clusters from their wallet’s UTXO pool to either prio
 
 #### Products that use this scheme
 {% include fact/products.html %}
-Bread Wallet + Electrum (FIFO), Mycelium (Pruned FIFO), BitcoinJ and Bitcoin Wallet for Android (High Priority First), Electrum *Private Mode* (Target Sized Change), Bitcoin Core (Branch and Bound), Hexa (Blackjack, with Accumulative Fallback)
+Bread Wallet, Electrum, Mycelium, BitcoinJ and Bitcoin Wallet for Android, Bitcoin Core and Hexa Wallet
 {% include fact/close.html %}
-
 
 ## Manual coin selection (a.k.a coin control)
 
