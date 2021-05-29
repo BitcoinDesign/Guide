@@ -249,7 +249,7 @@ A standard for multi-signature that uses Schnorr signatures. Previously, the mor
 
 - [Proposal](https://eprint.iacr.org/2018/068) in the Cryptology ePrint archive
 
-### Nodes
+### Node
 
 A node refers to a Bitcoin client that participates in the Bitcoin network.
 
