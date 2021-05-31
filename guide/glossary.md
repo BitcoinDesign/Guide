@@ -255,7 +255,7 @@ A node refers to a Bitcoin client that participates in the Bitcoin network.
 
 #### Full nodes
 
-Full nodes are Bitcoin clients that fully verify and enforce the rules of the Bitcoin network. An example of a rule is that there will only ever be 21 million bitcoin.
+Full nodes are Bitcoin clients that fully verify and enforce the rules of the Bitcoin network. An example of a rule is that there will never be more than 21 million bitcoin.
 
 ##### Archival full node
 
