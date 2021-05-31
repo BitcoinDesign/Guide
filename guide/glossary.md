@@ -198,23 +198,21 @@ The path to the first address in a bitcoin-wallet using BIP84 will look like thi
 
 For full [interoperability](/guide/designing-products/principles/#interoperability) a wallet should support all of these standards. More information can be found [here](/guide/designing-products/wallet-interoperability/#wallet-import-and-export) and [here](https://learnmeabitcoin.com/technical/derivation-paths).
 
-### Extended private key (XPRIV)
+### Extended private key (xpriv)
 
 In a hierarchical deterministic wallet, all addresses and their matching private keys are derived from this extended private key.
 
-### Extended public key (XPUB, YPUB, ZPUB)
+### Extended public key (xpub, ypub, zpub)
 
 The master public key of a bitcoin account. All public addresses are generated from it.
 
-_ToDo: Explain how this is used for multisig and view-only wallets._
+#### ypub
 
-#### YPUB
+Same as xpub however the y denotes that this xpub belongs to a wallet that is following the [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki) standard that details the derivation scheme for wrapped-segwit addresses (P2WPKH-nested-in-P2SH).
 
-Same as XPUB however the Y denotes that this xpub belongs to a wallet that is following the [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki) standard that details the derivation scheme for wrapped-segwit addresses (P2WPKH-nested-in-P2SH).
+#### zpub
 
-#### ZPUB
-
-Same as YPUB though the Z denotes it is an extended public key from a segregated witness enabled wallet following [BIP84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki).
+Same as ypub though the z denotes it is an extended public key from a segregated witness enabled wallet following [BIP84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki).
 
 ### Initial block download (IBD)
 
