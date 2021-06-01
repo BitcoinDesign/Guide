@@ -6,7 +6,19 @@ parent: Onboarding
 nav_order: 7
 permalink: /guide/onboarding/funding-a-wallet/
 main_classes: -no-top-padding
+image: https://bitcoin.design/assets/images/guide/onboarding/funding-a-wallet/funding-a-wallet-preview.png
 ---
+
+{% include picture.html
+   image = "/assets/images/guide/onboarding/funding-a-wallet/funding-a-wallet.png"
+   retina = "/assets/images/guide/onboarding/funding-a-wallet/funding-a-wallet@2x.png"
+   mobile = "/assets/images/guide/onboarding/funding-a-wallet/funding-a-wallet-mobile.png"
+   mobileRetina = "/assets/images/guide/onboarding/funding-a-wallet/funding-a-wallet-mobile@2x.png"
+   alt-text = "Funding a wallet chapter header image"
+   width = 1600
+   height = 600
+   layout = "full-width"
+%}
 
 # Funding a wallet
 

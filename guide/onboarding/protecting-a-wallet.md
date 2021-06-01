@@ -6,23 +6,15 @@ parent: Onboarding
 nav_order: 6
 permalink: /guide/onboarding/protecting-a-wallet/
 main_classes: -no-top-padding
+image: https://bitcoin.design/assets/images/guide/onboarding/protecting-a-wallet/protecting-a-wallet-preview.png
 ---
 
-<!--
-
-Editor's notes
-
-This page provides an overview to a few patterns that can be incorporated by wallets to hide users sensitive information.
-
-Illustration sources
-
-- https://www.figma.com/file/TGJ8VxZOQ65In8kCir6eQt/Hide-sensitive-information-illustration?node-id=0%3A1
--->
-
 {% include picture.html
-   image = "/assets/images/guide/onboarding/protecting-a-wallet/hide-sensitive-information-header.png"
-   alt-text = "Payment Privacy & Security"
-   caption = 'Person by [DrawKit](https://www.drawkit.io/illustrations/mobile-article-colour) and trees by [Flaticon](https://www.flaticon.com/free-icon/tree-with-many-leaves_25267)'
+   image = "/assets/images/guide/onboarding/protecting-a-wallet/protecting-a-wallet.png"
+   retina = "/assets/images/guide/onboarding/protecting-a-wallet/protecting-a-wallet@2x.png"
+   mobile = "/assets/images/guide/onboarding/protecting-a-wallet/protecting-a-wallet-mobile.png"
+   mobileRetina = "/assets/images/guide/onboarding/protecting-a-wallet/protecting-a-wallet-mobile@2x.png"
+   alt-text = "Protecting a wallet chapter header image"
    width = 1600
    height = 600
    layout = "full-width"

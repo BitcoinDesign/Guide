@@ -7,7 +7,19 @@ has_children: true
 nav_order: 3
 permalink: /guide/onboarding/backing-up-a-recovery-phrase/
 main_classes: -no-top-padding
+image: https://bitcoin.design/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase-preview.png
 ---
+
+{% include picture.html
+   image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase.png"
+   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase@2x.png"
+   mobile = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase-mobile.png"
+   mobileRetina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase-mobile@2x.png"
+   alt-text = "Backing up a recovery phrase chapter header image"
+   width = 1600
+   height = 600
+   layout = "full-width"
+%}
 
 # Backing up a recovery phrase
 

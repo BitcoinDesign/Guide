@@ -19,11 +19,11 @@ scan this page to get an overview of the section and then decide which topics to
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/onboarding.png"
-   retina = "/assets/images/guide/onboarding/onboarding@2x.png"
-   mobile = "/assets/images/guide/onboarding/onboarding-mobile.png"
-   mobileRetina = "/assets/images/guide/onboarding/onboarding-mobile@2x.png"
-   alt-text = "Person climbing ladder"
+   image = "/assets/images/guide/onboarding/onboarding-main.png"
+   retina = "/assets/images/guide/onboarding/onboarding-main@2x.png"
+   mobile = "/assets/images/guide/onboarding/onboarding-main-mobile.png"
+   mobileRetina = "/assets/images/guide/onboarding/onboarding-main-mobile@2x.png"
+   alt-text = "Onboarding landing page header"
    width = 1600
    height = 600
    layout = "full-width"

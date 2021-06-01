@@ -6,7 +6,19 @@ parent: Onboarding
 nav_order: 2
 permalink: /guide/onboarding/creating-a-new-wallet/
 main_classes: -no-top-padding
+image: https://bitcoin.design/assets/images/guide/onboarding/creating-a-new-wallet/creating-a-new-wallet-preview.png
 ---
+
+{% include picture.html
+   image = "/assets/images/guide/onboarding/creating-a-new-wallet/creating-a-new-wallet.png"
+   retina = "/assets/images/guide/onboarding/creating-a-new-wallet/creating-a-new-wallet@2x.png"
+   mobile = "/assets/images/guide/onboarding/creating-a-new-wallet/creating-a-new-wallet-mobile.png"
+   mobileRetina = "/assets/images/guide/onboarding/creating-a-new-wallet/creating-a-new-wallet-mobile@2x.png"
+   alt-text = "Creating a new wallet chapter header image"
+   width = 1600
+   height = 600
+   layout = "full-width"
+%}
 
 # Creating a new wallet
 

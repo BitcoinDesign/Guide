@@ -6,7 +6,19 @@ parent: Onboarding
 nav_order: 4
 permalink: /guide/onboarding/restoring-a-wallet/
 main_classes: -no-top-padding
+image: https://bitcoin.design/assets/images/guide/onboarding/restoring-a-wallet/restoring-a-wallet-preview.png
 ---
+
+{% include picture.html
+   image = "/assets/images/guide/onboarding/restoring-a-wallet/restoring-a-wallet.png"
+   retina = "/assets/images/guide/onboarding/restoring-a-wallet/restoring-a-wallet@2x.png"
+   mobile = "/assets/images/guide/onboarding/restoring-a-wallet/restoring-a-wallet-mobile.png"
+   mobileRetina = "/assets/images/guide/onboarding/restoring-a-wallet/restoring-a-wallet-mobile@2x.png"
+   alt-text = "Restoring a wallet chapter header image"
+   width = 1600
+   height = 600
+   layout = "full-width"
+%}
 
 # Restoring a wallet
 

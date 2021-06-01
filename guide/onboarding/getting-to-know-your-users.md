@@ -6,15 +6,15 @@ parent: Onboarding
 nav_order: 1
 permalink: /guide/onboarding/getting-to-know-your-users/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/onboarding/getting-to-know-your-users/getting-to-know-your-users-preview.jpg
+image: https://bitcoin.design/assets/images/guide/onboarding/getting-to-know-your-users/getting-to-know-your-users-preview.png
 ---
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/getting-to-know-your-users/banner.jpeg"
-   retina = "/assets/images/guide/onboarding/getting-to-know-your-users/banner@2x.jpeg"
-   mobile = "/assets/images/guide/onboarding/getting-to-know-your-users/banner-mobile.jpeg"
-   mobileRetina = "/assets/images/guide/onboarding/getting-to-know-your-users/banner-mobile@2x.jpeg"
-   alt-text = "Getting to know your users chapter illustration"
+   image = "/assets/images/guide/onboarding/getting-to-know-your-users/getting-to-know-your-users.png"
+   retina = "/assets/images/guide/onboarding/getting-to-know-your-users/getting-to-know-your-users@2x.png"
+   mobile = "/assets/images/guide/onboarding/getting-to-know-your-users/getting-to-know-your-users-mobile.png"
+   mobileRetina = "/assets/images/guide/onboarding/getting-to-know-your-users/getting-to-know-your-users-mobile@2x.png"
+   alt-text = "Getting to know your users chapter header image"
    width = 1600
    height = 600
    layout = "full-width"
