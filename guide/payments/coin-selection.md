@@ -290,7 +290,7 @@ A user chooses to send a payment to one of their contacts. They enter the amount
 #### Products that use this scheme
 
 {% include fact/products.html %}
-Bitcoin Core, Wasabi, Samourai, BTCPay Server
+[Chaincase](https://chaincase.app), [Bitcoin Core](https://bitcoincore.org), [Wasabi](https://wasabiwallet.io), [Samourai](https://samouraiwallet.com), [BTCPay Server](https://btcpayserver.org)
 {% include fact/close.html %}
 
 ### The challenge for designers
