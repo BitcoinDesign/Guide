@@ -14,7 +14,7 @@ image: https://bitcoin.design/assets/images/guide/onboarding/protecting-a-wallet
    retina = "/assets/images/guide/onboarding/protecting-a-wallet/protecting-a-wallet@2x.png"
    mobile = "/assets/images/guide/onboarding/protecting-a-wallet/protecting-a-wallet-mobile.png"
    mobileRetina = "/assets/images/guide/onboarding/protecting-a-wallet/protecting-a-wallet-mobile@2x.png"
-   alt-text = "restoring a wallet chapter header image"
+   alt-text = "Protecting a wallet chapter header image"
    width = 1600
    height = 600
    layout = "full-width"

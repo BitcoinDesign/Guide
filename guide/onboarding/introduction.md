@@ -23,7 +23,7 @@ scan this page to get an overview of the section and then decide which topics to
    retina = "/assets/images/guide/onboarding/onboarding-main@2x.png"
    mobile = "/assets/images/guide/onboarding/onboarding-main-mobile.png"
    mobileRetina = "/assets/images/guide/onboarding/onboarding-main-mobile@2x.png"
-   alt-text = "onboarding landing page header"
+   alt-text = "Onboarding landing page header"
    width = 1600
    height = 600
    layout = "full-width"

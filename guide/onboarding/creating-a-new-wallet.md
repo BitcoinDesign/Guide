@@ -14,7 +14,7 @@ image: https://bitcoin.design/assets/images/guide/onboarding/creating-a-new-wall
    retina = "/assets/images/guide/onboarding/creating-a-new-wallet/creating-a-new-wallet@2x.png"
    mobile = "/assets/images/guide/onboarding/creating-a-new-wallet/creating-a-new-wallet-mobile.png"
    mobileRetina = "/assets/images/guide/onboarding/creating-a-new-wallet/creating-a-new-wallet-mobile@2x.png"
-   alt-text = "getting to know your users chapter header image"
+   alt-text = "Creating a new wallet chapter header image"
    width = 1600
    height = 600
    layout = "full-width"

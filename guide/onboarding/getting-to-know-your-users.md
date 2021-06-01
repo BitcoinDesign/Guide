@@ -14,7 +14,7 @@ image: https://bitcoin.design/assets/images/guide/onboarding/getting-to-know-you
    retina = "/assets/images/guide/onboarding/getting-to-know-your-users/getting-to-know-your-users@2x.png"
    mobile = "/assets/images/guide/onboarding/getting-to-know-your-users/getting-to-know-your-users-mobile.png"
    mobileRetina = "/assets/images/guide/onboarding/getting-to-know-your-users/getting-to-know-your-users-mobile@2x.png"
-   alt-text = "getting to know your users chapter header image"
+   alt-text = "Getting to know your users chapter header image"
    width = 1600
    height = 600
    layout = "full-width"

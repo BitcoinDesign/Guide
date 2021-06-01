@@ -15,7 +15,7 @@ image: https://bitcoin.design/assets/images/guide/onboarding/backing-up-a-recove
    retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase@2x.png"
    mobile = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase-mobile.png"
    mobileRetina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase-mobile@2x.png"
-   alt-text = "backing up a recovery phrase chapter header image"
+   alt-text = "Backing up a recovery phrase chapter header image"
    width = 1600
    height = 600
    layout = "full-width"
