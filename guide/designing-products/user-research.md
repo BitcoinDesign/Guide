@@ -85,20 +85,22 @@ In some ways, research and development are the same from industry to industry. B
 
 When designers begin to develop a product, they often start with a specific country, culture, language, or legal framework in mind. This is especially true for financial applications, which are highly regulated and need to evolve slowly and strategically. While Bitcoin was originally developed for an English speaking audience, it didn’t take long for its intended use case to naturally proliferate it.
 
-Online communities rapidly formed and multiplied around Bitcoin. Vast amounts of public conversation helped designers and developers comprehend what was possible with Bitcoin, and what was needed from Bitcoin.
+Online communities rapidly formed and multiplied around Bitcoin. Vast amounts of public conversation helped designers and developers comprehend what was possible, and what was needed from Bitcoin.
 
 Some of these links have been around for a while. The vast archives that they lead to still provide enormous value to anyone who wants to build Bitcoin products.
 
 - [Bitcoin on Github](https://github.com/bitcoin)
 - [Bitcoin mailing list](https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev)
 - [Bitcointalk](https://bitcointalk.org/)
+- [Bitcoin subreddit](https://www.reddit.com/r/Bitcoin/)
+- [Bitcoin Core dev meeting logs](http://www.erisian.com.au/meetbot/bitcoin-core-dev/)
 - [Bitcoin subreddit](https://www.reddit.com/r/bitcoin)
 
 </div>
 
 ### An unknowable userbase
 
-The Bitcoin protocol only knows its users through pseudonymous addresses. We can analyze the Bitcoin blockchain for fundamental transaction behavior analysis, but further analysis of addresses and transactions can be complicated. While this provides incredible privacy and security for users, it can make things challenging for user researchers.
+Bitcoin only knows its users through pseudonymous addresses. We can analyze on-chain metrics for things like fundamental transaction behaviors, but analysis of addresses and transactions beyond this can be complicated. While Bitcoin's privacy provides is a fundamental aspect, it can make things challenging for user researchers.
 
 ### It's a public ledger
 
@@ -113,7 +115,7 @@ The Bitcoin protocol only knows its users through pseudonymous addresses. We can
    layout = "float-left"
 %}
 
-While we often can’t know who is responsible for specific single transactions, we can still analyze overall network activity. No other currency in history has offered such a complete and accurate database of transactions. Here’s how we can use this data to improve bitcoin for users:
+While we often can’t know who is responsible for specific single transactions, we can still analyze overall network activity. No other currency in history has offered such a complete and accurate ledger of transactions. Here’s how we can use this data to improve Bitcoin for users:
 
 </div>
 
@@ -132,7 +134,7 @@ While we often can’t know who is responsible for specific single transactions,
 
 New technologies can take decades to reach mainstream adoption. Bitcoin is, in our opinion, still on its way up the adoption curve, which means it and we are early. This affects research in multiple ways. Early adopters have different use cases and needs than users who adopt Bitcoin ten years from now. Products designed today could be outdated by the time that the early majority embraces Bitcoin.
 
-Secondly, as Bitcoin matures, its capabilities will evolve. Scaling and performance improvements will make complex transactions more affordable, private, and secure. These properties will make early and later adopters more comfortable embracing bitcoin both as a store of value and as a medium of exchanges.
+Secondly, as Bitcoin matures, its capabilities will evolve. Scaling and performance improvements will make transactions more affordable, private, and secure. These improvements will make people more comfortable embracing bitcoin as both a store of value and medium of exchange.
 
 There is an interplay between the size of the user base and the maturity of the technology. For user research, this means that as development accelerates, so will the obsoletion of past user research.
 
