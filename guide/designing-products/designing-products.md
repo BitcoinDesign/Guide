@@ -4,6 +4,8 @@ title: Designing Bitcoin products
 nav_order: 3
 has_children: true
 permalink: /guide/designing-products/introduction/
+main_classes: -no-top-padding
+image: https://bitcoin.design/assets/images/guide/designing-products/designing-bitcoin-products/designing-bitcoin-products-preview.png
 ---
 
 <!--
@@ -18,6 +20,21 @@ Illustration sources
 - https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=236%3A467
 
 -->
+
+{% include picture.html
+   image = "/assets/images/guide/designing-products/designing-bitcoin-products/designing-bitcoin-products-web.png"
+   retina = "/assets/images/guide/designing-products/designing-bitcoin-products/designing-bitcoin-products-web@2x.png"
+   mobile = "/assets/images/guide/designing-products/designing-bitcoin-products/designing-bitcoin-products-mobile.png"
+   mobileRetina = "/assets/images/guide/designing-products/designing-bitcoin-products/designing-bitcoin-products-mobile@2x.png"
+   layout = "full-width"
+   layout = "full-width"
+   layout = "full-width"
+   alt-text = "Designing bitcoin products artistic icons"
+   caption = ""
+   width = 1600
+   height = 800
+   layout = "full-width"
+%}
 
 # Designing Bitcoin products
 
