@@ -64,13 +64,3 @@ The receiver should then have the ability to switch to a Script address that doe
 </div>
 
 [^1]: [SegWit Usage Trends](https://dashboard.bitcoinops.org/d/xVQwtADiz/segwit-usage-trends?refresh=1h&orgId=1)
-
----
-
-<div class="glossary-toc" markdown="1">
-   <ul id="markdown-toc">
-{% for term in site.glossary %}
-     <li><a href="#{{term.title | slugify }}" id="markdown-toc-{{term.title | slugify }}">{{term.title}}</a></li>
-{% endfor %}
-   </ul>
-</div>
