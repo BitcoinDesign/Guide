@@ -38,8 +38,6 @@ Illustration sources
 
 **If we consider Bitcoin a new form of money, it’s only natural that we compare it to existing forms of currency.This section views Bitcoin through the lens of traditional finance to help us build mental models, define behavioral patterns, and ultimately better understand what kind of products we should be making.**
 
-This section views bitcoin through the lens of traditional finance to help us build mental models, define behavioral patterns, and ultimately better understand what kind of products we should be making. Because Bitcoin is both different and new, we can’t depend on solutions to it that worked for conventional financial products.
-
 Assuming that a user wants to [self-custody](/guide/designing-products/principles/#self-custody) their bitcoin,while balancing [security](/guide/designing-products/principles/#security) and [privacy](/guide/designing-products/principles/#privacy) here are six ways that they can organize finances:
 
 ---
@@ -118,9 +116,6 @@ Higher value payments such as rent, utilities, car payments, and groceries are s
 For recurring payments, some of these mechanisms let businesses regularly deduct money from accounts without customers approving each transaction.
 
 Bitcoin is different since the sender must initiate all transactions, meaning that automated deductions might not be possible—at least when the wallet is non-custodial. Lightning wallets, which are always online, could solve this by allowing more complex interactions between senders and recipients.
-
-The amounts involved in these transactions are higher and therefore require better security. While you can carry cash hand it to anyone directly, monthly expenses are typically done indirectly via transfers between both parties' banks. A manual payment might require you to log into your banks' website via username and password, along with a second security mechanism like [two-factor authentication](https://en.wikipedia.org/wiki/Help:Two-factor_authentication){:target="_blank"}.
-
 
 {% include picture.html
    image = "/assets/images/guide/designing-products/personal-finance/monthly-budget-wallet-setup.jpg"
