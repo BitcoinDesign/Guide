@@ -1,6 +1,5 @@
 ---
 title: CoinJoin
-layout: guide
 ---
 
 <div class="center" markdown="1">

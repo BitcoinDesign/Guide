@@ -1,12 +1,8 @@
 ---
-layout: guide
 title: Address
 summary: A Bitcoin address is an identifier of 26-35 alphanumeric characters that is used to receive bitcoin. There are [several address formats](https://en.bitcoin.it/wiki/List_of_address_prefixes) based on different specifications. Users need to know this information during backup for future recovery so applications should inform users which format it uses as support varies across applications.
-parent: Glossary
 permalink: /guide/glossary/address
 ---
-
-# Address
 
 A Bitcoin address is an identifier of 26-35 alphanumeric characters that is used to receive bitcoin. There are [several address formats](https://en.bitcoin.it/wiki/List_of_address_prefixes) based on different specifications. Users need to know this information during backup for future recovery so applications should inform users which format it uses as support varies across applications.
 
@@ -68,3 +64,13 @@ The receiver should then have the ability to switch to a Script address that doe
 </div>
 
 [^1]: [SegWit Usage Trends](https://dashboard.bitcoinops.org/d/xVQwtADiz/segwit-usage-trends?refresh=1h&orgId=1)
+
+---
+
+<div class="glossary-toc" markdown="1">
+   <ul id="markdown-toc">
+{% for term in site.glossary %}
+     <li><a href="#{{term.title | slugify }}" id="markdown-toc-{{term.title | slugify }}">{{term.title}}</a></li>
+{% endfor %}
+   </ul>
+</div>

@@ -1,6 +1,7 @@
 ---
 title: BIP - Bitcoin improvement proposal
-layout: guide
+output: false
+published: true
 ---
 
 A standardized technical document format for suggesting improvements to Bitcoin. They are hosted on Github [here](https://github.com/bitcoin/bips). Some important proposals to be aware of:

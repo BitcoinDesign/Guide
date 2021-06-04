@@ -61,6 +61,15 @@ defaults:
     values:
       permalink: ":path/:basename"
       image: "https://bitcoin.design/assets/images/bitcoin-design-preview.jpg"
+  - 
+    scope:
+      path: ""
+      type: glossary
+    values:
+      layout: glossary
+      parent: Glossary
+      image: "https://bitcoin.design/assets/images/bitcoin-design-preview.jpg"
+      main_classes: -no-top-padding
 
 
 twitter:

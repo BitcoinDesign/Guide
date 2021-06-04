@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<article class="guide">
+	<h1>{{page.title}}</h1>
+	{% capture prepared_content %}
+	{{ content | replace: '<a href="http', '<a rel="nofollow noopener noreferrer" target="_blank" href="http' }}
+	{% endcapture %}
+
+	{% include anchor_headings.html html=prepared_content anchorBody="#" anchorClass="header-anchor" anchorAttrs='aria-hidden="true" tabindex="-1"' h_min=2 %}
+
+	<hr />
+
+	<h2>Other terms from the glossary</h2>
+
+	<div class="glossary-toc" markdown="1">
+	   <ul id="markdown-toc">
+	{% for term in site.glossary %}
+	     <li><a href="{{term.path | replace: '.md', '' | replace: '_glossary/', ''}}" id="markdown-toc-{{term.title | slugify }}">{{term.title}}</a></li>
+	{% endfor %}
+	   </ul>
+	</div>
+
+</article>

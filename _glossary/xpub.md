@@ -1,6 +1,5 @@
 ---
 title: Extended public key (XPUB, YPUB, ZPUB)
-layout: guide
 ---
 
 The master public key of a bitcoin account. All public addresses are generated from it.

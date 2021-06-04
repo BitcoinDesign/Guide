@@ -34,7 +34,7 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 <div class="glossary-toc" markdown="1">
    <ul id="markdown-toc">
 {% for term in site.glossary %}
-     <li><a href="#{{term.title | slugify }}" id="markdown-toc-{{term.title | slugify }}">{{term.title}}</a></li>
+     <li><a href="#{{term.path | replace: '.md', '' | replace: '_glossary/', ''}}" id="markdown-toc-{{term.path | replace: '.md', '' | replace: '_glossary/', ''}}">{{term.title}}</a></li>
 {% endfor %}
    </ul>
 </div>
@@ -43,9 +43,9 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 
 {% for term in site.glossary %}
 {% if term.permalink %}
-<h3 id="{{ term.title | slugify }}"><a href="{{ term.permalink }}">{{ term.title }}</a></h3>
+<h3 id="{{term.path | replace: '.md', '' | replace: '_glossary/', ''}}"><a href="{{ term.permalink }}">{{ term.title }}</a></h3>
 {% else %}
-<h3 id="{{ term.title | slugify }}">{{ term.title }}</h3>
+<h3 id="{{term.path | replace: '.md', '' | replace: '_glossary/', ''}}">{{ term.title }}</h3>
 {% endif %}
 
 {% if term.summary %}

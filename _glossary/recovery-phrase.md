@@ -1,6 +1,5 @@
 ---
 title: Recovery phrase
-layout: guide
 ---
 
 _Also referred to as Seed, Mnemonic, and Backup phrase._
