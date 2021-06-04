@@ -176,7 +176,12 @@ As it is possible to trace the history of coins and see how they were previously
    height = 400
 %}
 
- Allow for combining multiple payments from multiple spenders into a single transaction to make it harder to determine which spender paid which recipient(s). More information can be found on [the Bitcoin Wiki](https://en.bitcoin.it/wiki/CoinJoin). See also [PayJoin](#payjoin-p2ep).
+Allow for combining multiple payments from multiple spenders into a single transaction to make it harder to determine which spender paid which recipient(s). See also [PayJoin](#payjoin-p2ep).
+ 
+ **References:**
+
+- [WabiSabi](https://github.com/zkSNACKs/WabiSabi/blob/master/explainer.md)
+- [Bitcoin wiki](https://en.bitcoin.it/wiki/CoinJoin)
 
 
 </div>
@@ -314,11 +319,6 @@ Many wallet-applications work with HD Wallets and recovery phrases, and are inte
 ### Simplified payment verification (SPV)
 
  It is possible to verify bitcoin payments without running a full network node. This is called simplified payment verification, or SPV. A user’s bitcoin spv wallet only needs a copy of the block headers of the longest chain, which are available by querying network nodes until it is apparent that the longest chain has been obtained. SPV lets you validate your transactions without having to worry about anybody else’s transactions. It ensures your transactions are in a block, and it provides confirmations that additional blocks are being added to the chain. An SPV wallet is a type of bitcoin wallet that works this way.
-
-**References:**
-
-- [WabiSabi](https://github.com/zkSNACKs/WabiSabi/blob/master/explainer.md)
-- [Bitcoin wiki](https://en.bitcoin.it/wiki/CoinJoin)
 
 ### PayJoin (P2EP)
 
