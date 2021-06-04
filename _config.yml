@@ -82,7 +82,7 @@ collections:
   glossary:
     sort_by: title
     output: true
-    permalink: /guide/glossary/:name
+    permalink: /guide/:collection/:name
 
 # Exclude from processing.
 # The following items will not be processed, by default.
