@@ -92,7 +92,6 @@ Some of these links have been around for a while. The vast archives that they le
 - [Bitcoin on Github](https://github.com/bitcoin)
 - [Bitcoin mailing list](https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev)
 - [Bitcointalk](https://bitcointalk.org/)
-- [Bitcoin subreddit](https://www.reddit.com/r/Bitcoin/)
 - [Bitcoin Core dev meeting logs](http://www.erisian.com.au/meetbot/bitcoin-core-dev/)
 - [Bitcoin subreddit](https://www.reddit.com/r/bitcoin)
 
@@ -100,7 +99,7 @@ Some of these links have been around for a while. The vast archives that they le
 
 ### An unknowable userbase
 
-Bitcoin only knows its users through pseudonymous addresses. We can analyze on-chain metrics for things like fundamental transaction behaviors, but analysis of addresses and transactions beyond this can be complicated. While Bitcoin's privacy provides is a fundamental aspect, it can make things challenging for user researchers.
+Bitcoin only knows its users through pseudonymous addresses. We can analyze on-chain metrics for things like fundamental transaction behaviors, but analysis of addresses and transactions beyond this can be complicated. While the privacy Bitcoin provides is a fundamental aspect, it can make things challenging for user researchers.
 
 ### It's a public ledger
 
@@ -173,7 +172,7 @@ Links to:
    layout = "float-left"
 %}
 
-User research should not be a one-sided extraction of collaboration between researchers and users. Since researchers initiate research efforts, it is up to them to create frameworks that respect users’ privacy. That means upfront disclosures, open collaboration, and transparency about how research results are used.
+User research should not be a one-sided extraction of information, but a collaboration between researchers and users. Since researchers initiate research efforts, it is up to them to create frameworks that respect users’ privacy. That means upfront disclosures, open collaboration, and transparency about how research results are used.
 
 </div>
 
