@@ -42,7 +42,7 @@ Illustration sources
 
 # User research
 
-We design products to benefit users. That’s why it is necessary to understand their needs, desires, and behaviors.
+We design products to benefit users. That’s why it is necessary to understand their needs, desires, and behaviors. A comprehensive design strategy balances user needs with considerations around the technology, business models, societal and economic impact, and other factors. In this section, we focus on understanding the users better.
 
 ## How and why user research matters
 
@@ -61,14 +61,15 @@ We design products to benefit users. That’s why it is necessary to understand 
 
 Prioritizing features that make the most significant difference is crucial. Those features are seldom apparent, and their discovery is often the result of debate and critical thinking. If you find yourself stuck, try making data-informed decisions.
 
-The results are appropriate product roadmaps, better-focused team efforts, and happier users. This is especially important for projects with limited resources, in which many open-source efforts are.
+User research creates data from the start and end points of our efforts. Products are created because there are specific unaddressed needs, then they go through development and finally back in the hands of the target audience for use and evaluation. We are often too occupied with the complexities of development, but the real measure of success is whether users' needs are satisfied.
+
+User research allows us to effectively connect these dots and highlight the quickest path between them. The end-result are more appropriate product roadmaps, better-focused team efforts, and happier users. This is especially important for projects with limited resources, which many open-source efforts are.
 
 </div>
 
 ## User research is different with Bitcoin
 
 In some ways, research and development are the same from industry to industry. But that’s not always the case with Bitcoin. To avoid repeating what has already been said about doing product R&D elsewhere, we’ll look at how it’s different on planet Bitcoin.
-
 
 ### Global audiences and use cases
 
@@ -114,7 +115,7 @@ Bitcoin only knows its users through pseudonymous addresses. We can analyze on-c
    layout = "float-left"
 %}
 
-While we often can’t know who is responsible for specific single transactions, we can still analyze overall network activity. No other currency in history has offered such a complete and accurate ledger of transactions. Here’s how we can use this data to improve Bitcoin for users:
+While we often can’t know who is responsible for specific single transactions, we can still analyze overall network activity. No other currency in history has offered such a complete and accurate ledger of transactions. We can use this data to improve Bitcoin for users.
 
 </div>
 
