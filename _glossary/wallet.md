@@ -1,5 +1,6 @@
 ---
 title: Wallet
+summary: This term is often used interchangeably for very different things. A user can *download a bitcoin wallet* in the app store, and then the app may offer the option to “create a new wallet” on the home screen. A software wallet may allow for browsing and sending transactions, while a hardware wallet may be limited to key storage and signing functionality.
 ---
 
 <div class="center">
