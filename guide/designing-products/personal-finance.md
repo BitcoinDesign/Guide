@@ -177,7 +177,7 @@ This is money that one sets aside for a considerable but planned expense, such a
 
 </div>
 
-Sinking funds do not necessarily require a dedicated account. The amount secured could be deposited into any monthly budgeting or savings wallet.
+Sinking funds do not necessarily require a dedicated wallet. The amount secured could be deposited into any monthly budgeting or savings wallet.
 
 
 ## Savings
@@ -210,7 +210,7 @@ For example, [Glacier Protocol](https://glacierprotocol.org){:target="_blank"} i
    height = 800
 %}
 
-Of course, many prefer that banks and other custodial financial service providers secure and invest funds for them. Savings accounts and related products may also incentivize customers with low-interest rates that may or may not be high enough to keep up with inflation.
+Of course, many prefer that banks and other custodial financial service providers secure and invest funds for them. Savings accounts and related products may also incentivize customers with low interest rates that may or may not be high enough to keep up with inflation.
 
 ## Investing
 
