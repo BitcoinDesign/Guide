@@ -172,7 +172,7 @@ Some of the most common representations of bitcoin are based on Satoshi’s orig
 
 ### Illustrations
 
-Magazines, blogs, and other publications often hire professional illustrators to visualize stores about Bitcoin. Because Bitcoin does not have any official brand style guidelines, they are usually only limited by the illustrator and publisher’s imagination.
+Magazines, blogs, and other publications often hire professional illustrators to visualize stories about Bitcoin. Because Bitcoin does not have any official brand style guidelines, they are usually only limited by the illustrator and publisher’s imagination.
 
 <div class="image-gallery" markdown="1">
 
