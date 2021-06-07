@@ -3,6 +3,7 @@ layout: guide
 title: User research
 nav_order: 4
 parent: Designing Bitcoin products
+has_children: true
 permalink: /guide/designing-products/user-research/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/designing-products/user-research/user-research-preview.jpg
