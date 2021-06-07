@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🚀 Discussions
+    url: https://github.com/btcpayserver/btcpayserver/discussions
+    about: Questions, suggestions and feature requests
+    about: Check our documentation for answers to common questions
+  - name: 💬 Community Support Chat
+    url: http://bitcoindesigners.org/
+    about: Ask general questions and get community support in real-time
