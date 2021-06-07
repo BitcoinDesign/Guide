@@ -12,12 +12,7 @@ image: https://bitcoin.design/assets/images/guide/designing-products/designing-b
 
 Editor's notes
 
-A brief introduction and summary of all pages in this section. The idea is that readers
-scan this page to get an overview of the section and then decide which topics to dive into.
-
-Illustration sources
-
-- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=236%3A467
+A brief introduction and summary of all pages in this section. The idea is that readers scan this page to get an overview of the section and then decide which topics to dive into.
 
 -->
 
@@ -26,13 +21,9 @@ Illustration sources
    retina = "/assets/images/guide/designing-products/designing-bitcoin-products/designing-bitcoin-products-web@2x.png"
    mobile = "/assets/images/guide/designing-products/designing-bitcoin-products/designing-bitcoin-products-mobile.png"
    mobileRetina = "/assets/images/guide/designing-products/designing-bitcoin-products/designing-bitcoin-products-mobile@2x.png"
-   layout = "full-width"
-   layout = "full-width"
-   layout = "full-width"
-   alt-text = "Designing bitcoin products artistic icons"
-   caption = ""
+   alt-text = "Gear, light bulb, and box icons with the Bitcoin symbol overlaid"
    width = 1600
-   height = 800
+   height = 600
    layout = "full-width"
 %}
 
