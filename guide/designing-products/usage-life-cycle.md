@@ -162,7 +162,7 @@ These are expert users with high expectations. They will express firm wishes, pr
 
 Expects to lose users at every step in the life cycle. This is unavoidable. If you understand where and why they drop off, you can at least reduce the likelihood of it happening by solving for the issues that cause dropoff.
 
-Barious [user research]({{ '/guide/designing-products/user-research/' | relative_url }}) techniques that can help identify and solve these types of issues
+Various [user research]({{ '/guide/designing-products/user-research/' | relative_url }}) techniques that can help identify and solve these types of issues
 
 </div>
 
