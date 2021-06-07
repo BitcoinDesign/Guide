@@ -36,7 +36,7 @@ There are two types of coin selection strategies that are used in Bitcoin applic
    height = 400
 %}
 
-### Contraints
+### Constraints
 
 There are a few constraints that you should have in mind when considering the coin-selection strategy for your product.
 
