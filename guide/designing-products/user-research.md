@@ -84,11 +84,9 @@ In some ways, research and development are the same from industry to industry. B
    layout = "float-right-desktop"
 %}
 
-When designers begin to develop a product, they often start with a specific country, culture, language, or legal framework in mind. This is especially true for financial applications, which are highly regulated and need to evolve slowly and strategically. While Bitcoin was originally developed for an English speaking audience, it didn’t take long for its intended use case to naturally proliferate it.
+Most digital products start with a specific country, culture, language or legal framework in mind. This is especially true for financial applications, which are typically highly regulated and need to slowly and strategically evolve. While Bitcoin did start with a single language, its use case was not tied to any particular context, and this has resulted in a much more diverse user base from the start.
 
-Online communities rapidly formed and multiplied around Bitcoin. Vast amounts of public conversation helped designers and developers comprehend what was possible, and what was needed from Bitcoin.
-
-Some of these links have been around for a while. The vast archives that they lead to still provide enormous value to anyone who wants to build Bitcoin products.
+Diverse online communities rapidly formed around Bitcoin. Vast amounts of public conversation can help designers and developers comprehend what is possible, and what is needed from Bitcoin. These communities are great for brainstorming ideas, getting feedback, and involving users actively in the design process.
 
 - [Bitcoin on Github](https://github.com/bitcoin)
 - [Bitcoin mailing list](https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev)
@@ -115,7 +113,7 @@ Bitcoin only knows its users through pseudonymous addresses. We can analyze on-c
    layout = "float-left"
 %}
 
-While we often can’t know who is responsible for specific single transactions, we can still analyze overall network activity. No other currency in history has offered such a complete and accurate ledger of transactions. We can use this data to improve Bitcoin for users.
+While we often can’t know who is responsible for specific single transactions, we can still analyze overall network activity. No other currency in history has offered such a complete and accurate ledger of transactions. As designers, what can we learn from this data that allows us to improve the experience of our users.
 
 </div>
 
