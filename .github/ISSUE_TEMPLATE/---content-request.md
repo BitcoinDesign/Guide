@@ -25,4 +25,4 @@ _If you have a concrete suggestion on how to change/add the content, write it up
 _Add any other context about the request here._
 
 **Content guidelines**
-If you're a contributor looking to tackle the issue, you can [preview our illustration guidelines](https://bitcoin.design/guide/contribute/content-guidelines/).
+If you're a contributor looking to tackle the issue, you can [preview our content guidelines](https://bitcoin.design/guide/contribute/content-guidelines/).
