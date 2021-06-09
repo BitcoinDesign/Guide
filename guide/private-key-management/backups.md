@@ -269,3 +269,8 @@ At a minimum, document each wallet with a given name (Bob’s Bitcoin wallet 1),
 
 **Suitable for**
 - Any amount
+
+---
+
+Next, let's look at [payments]({{ 'guide/payments/' | relative_url }}).
+
