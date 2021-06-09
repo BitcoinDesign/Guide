@@ -163,4 +163,6 @@ Privacy in bitcoin payments goes far beyond hiding balances and other sensitive 
 
 By including UX patterns for hiding information pattern wallets, we give users a greater sense of control and comfort in any situation. They have the freedom to decide whether or not they want their information visible.
 
+---
+
 Now let's look at the different ways a user might go about [funding a wallet]({{ 'guide/onboarding/funding-a-wallet' | relative_url }}).
