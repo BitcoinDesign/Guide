@@ -145,3 +145,7 @@ There is no perfect solution to guarantee 100% privacy that lasts forever becaus
 [^1]: [Bitcoin.org - Protecting your privacy](https://bitcoin.org/en/protect-your-privacy)
 [^2]: [Top Seven Ways Your Identity Can Be Linked to Your Bitcoin Address](https://99bitcoins.com/know-more-top-seven-ways-your-identity-can-be-linked-to-your-bitcoin-address/)
 [^3]: [Bitcoin Wiki / Privacy](https://en.bitcoin.it/wiki/Privacy#Common-input-ownership_heuristic)
+
+---
+
+Next, let's look at some interesting [Case studies]({{ '/guide/case-studies/' | relative_url }}).
