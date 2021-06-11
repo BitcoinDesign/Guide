@@ -61,12 +61,6 @@ A single key that is not stored on the same device as the wallet application.
 
 ---
 
-### [Key sharing]({{ '/guide/private-key-management/key-sharing/' | relative_url }})
-
-A single key is split up, with each part stored in separate locations.
-
----
-
 ### [Multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }})
 
 A wallet that is managed by multiple independent keys of which at least one is stored on a separate device from the wallet application. The keys can be owned by one person, or several people in a shared setup.
