@@ -115,4 +115,4 @@ Once you visited the URL, locate the page(s) to which proposed changes refer and
 
 ---
 
-Next, let's take a look at the [Content guidelines]({{ '/guide/contribute/content-guidelines/' | relative_url }}).
+Next, let's take a look at the [content guidelines]({{ '/guide/contribute/content-guidelines/' | relative_url }}) that can help inform the review process.
