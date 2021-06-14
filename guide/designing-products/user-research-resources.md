@@ -59,8 +59,8 @@ Published in May 2017 by Katharina Krombholz, Aljosha Judmayer, Matthias Gusenba
 
 ## Surveys
 
-###### [Project Horizon](https://youtu.be/oZkBU5H2WjY) (presentation recording)
-Presented in May 2021 by Jamaal Montasser.
+###### [Project Horizon](https://youtu.be/oZkBU5H2WjY)
+Video presentation in May 2021 by Jamaal Montasser.
 
 <!--
 
