@@ -38,7 +38,7 @@ Illustration sources
 
 As we develop new skills, things that are difficult at first eventually become intuitive to us. So when we develop products, it’s a good idea to regularly step back and look at the products we create through users' eyes on that same journey.
 
-The following six sections outline a typical usage life cycle, from never having heard of your product to becoming one of its power users.
+The following six phases outline a typical usage life cycle, from never having heard of your product to becoming one of its power users.
 
 It is helpful to think through each phase and consider what the current user needs are, what their understanding of Bitcoin and your product likely is, and how you can help them successfully navigate.
 
@@ -107,7 +107,7 @@ A potential user is interested in your product. Maybe they have heard about it b
    layout = "float-left"
 %}
 
-The user decides to move forward with your product. They are still not familiar with exactly how it works, and their expectations may not match what your product offers. Therefore, it is crucial to tightly manage the [onboarding experience research]({{ '/guide/onboarding/introduction/' | relative_url }}). Your product should make it easy for users to quickly and successfully solve problems while being introduced to your product's basics and best practices. This sets expectations for future interactions. If the first use is frustrating, users are less likely to use your product again—or to recommend it.
+The user decides to move forward with your product. They are still not familiar with exactly how it works, and their expectations may not match what your product offers. Therefore, it is crucial to pay close attention to the design of the [onboarding experience]({{ '/guide/onboarding/introduction/' | relative_url }}). Your product should make it easy for users to quickly and successfully solve problems while being introduced to your product's basics and best practices. This sets expectations for future interactions. If the first use is frustrating, users are less likely to use your product again—or to recommend it.
 
 </div>
 
@@ -162,7 +162,7 @@ These are expert users with high expectations. They will express firm wishes, pr
 
 Expects to lose users at every step in the life cycle. This is unavoidable. If you understand where and why they drop off, you can at least reduce the likelihood of it happening by solving for the issues that cause dropoff.
 
-Various [user research]({{ '/guide/designing-products/user-research/' | relative_url }}) techniques that can help identify and solve these types of issues
+There are various [user research]({{ '/guide/designing-products/user-research/' | relative_url }}) techniques that can help identify and solve these types of issues.
 
 </div>
 
