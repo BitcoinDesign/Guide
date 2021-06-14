@@ -15,6 +15,17 @@ Editor's notes
 
 -->
 
+{% include picture.html
+   image = "/assets/images/guide/designing-products/user-research-resources/user-research-resources.png"
+   retina = "/assets/images/guide/designing-products/user-research-resources/user-research-resources@2x.png"
+   mobile = "/assets/images/guide/designing-products/user-research-resources/user-research-resources-mobile.png"
+   mobileRetina = "/assets/images/guide/designing-products/user-research-resources/user-research-resources-mobile@2x.png"
+   alt-text = "Printed Bitcoin survey results on a desk"
+   width = 1600
+   height = 600
+   layout = "full-width"
+%}
+
 # User research resources
 
 Below is a collection of published user research findings around Bitcoin, from academic papers, to surveys and blog posts.
