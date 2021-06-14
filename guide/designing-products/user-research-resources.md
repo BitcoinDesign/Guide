@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: User research resources
+description: Surveys, academic papers, articles and other resources on Bitcoin user research.
 nav_order: 1
 parent: User research
 grand_parent: Designing Bitcoin products
@@ -12,6 +13,9 @@ image: https://bitcoin.design/assets/images/guide/designing-products/user-resear
 <!--
 
 Editor's notes
+
+This page is a simple collection of user research references.
+A useful future addition would be to add short summaries of each reference.
 
 -->
 
@@ -58,8 +62,12 @@ Published in May 2017 by Katharina Krombholz, Aljosha Judmayer, Matthias Gusenba
 ###### [Project Horizon](https://youtu.be/oZkBU5H2WjY) (presentation recording)
 Presented in May 2021 by Jamaal Montasser.
 
+<!--
+
 ###### [Bitcoin Core Usage Survey](https://achow101.com/2021/01/bitcoin-core-survey)
 Launched in January 2021 by Andrew Chow. In progress.
+
+-->
 
 ###### [A study on how Bitcoin is perceived by no-coiners (non-holders of Bitcoin)](https://github.com/MickMorucci/Bitcoin_perception)
 Launched in January 2021 by Mick Morucci. In progress.
