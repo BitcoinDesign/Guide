@@ -96,4 +96,4 @@ It's a good idea to ask for directions by seeking feedback early. This may stop 
 
 ---
 
-Moving on to the next section, let’s take a look at the [Illustration guidelines]({{ '/guide/contribute/illustration-guidelines/' | relative_url }}).
+Now that we've covered general content guidelines, let’s take a closer look at [Illustration guidelines]({{ '/guide/contribute/illustration-guidelines/' | relative_url }}).
