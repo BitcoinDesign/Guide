@@ -20,10 +20,10 @@ A useful future addition would be to add short summaries of each reference.
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/designing-products/user-research-resources/user-research-resources.png"
-   retina = "/assets/images/guide/designing-products/user-research-resources/user-research-resources@2x.png"
-   mobile = "/assets/images/guide/designing-products/user-research-resources/user-research-resources-mobile.png"
-   mobileRetina = "/assets/images/guide/designing-products/user-research-resources/user-research-resources-mobile@2x.png"
+   image = "/assets/images/guide/designing-products/user-research-resources/user-research-resources.jpg"
+   retina = "/assets/images/guide/designing-products/user-research-resources/user-research-resources@2x.jpg"
+   mobile = "/assets/images/guide/designing-products/user-research-resources/user-research-resources-mobile.jpg"
+   mobileRetina = "/assets/images/guide/designing-products/user-research-resources/user-research-resources-mobile@2x.jpg"
    alt-text = "Printed Bitcoin survey results on a desk"
    width = 1600
    height = 600
