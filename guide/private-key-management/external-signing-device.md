@@ -83,4 +83,4 @@ When a transaction needs to be signed, the software submits a partially signed b
 
 ---
 
-Next, let's look at [key sharing]({{ '/guide/private-key-management/key-sharing/' | relative_url }}).
+Next, let's look at [multi key]({{ '/guide/private-key-management/multi-key/' | relative_url }}).

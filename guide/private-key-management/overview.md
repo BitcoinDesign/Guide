@@ -96,7 +96,7 @@ Now let's dive in and look at the various schemes that might be suitable for a p
    image = "/assets/images/guide/private-key-management/schemes/personal-schemes.jpg"
    retina = "/assets/images/guide/private-key-management/schemes/personal-schemes@2x.jpg"
    alt-text = ""
-   caption = "Cloud backup, manual backup , signing-device, threshold-signatures and multi-key."
+   caption = "Cloud backup, manual backup , signing-device and multi-key."
    width = 2012
    height = 400
 %}
@@ -104,7 +104,6 @@ Now let's dive in and look at the various schemes that might be suitable for a p
 - [Automatic cloud backup](/guide/private-key-management/cloud-backup/) - no user action required for backup
 - [Manual backup / Recovery phrase](/guide/private-key-management/manual-backup/) - manual backup of a phrase of words
 - [External signing device](/guide/private-key-management/external-signing-device/) - keys are held on a separate device
-- [Threshold signatures / Key-sharing](/guide/private-key-management/key-sharing/) - one key is split and distributed
 - [Multi-key](/guide/private-key-management/multi-key/) - several keys jointly control the wallet
 
 ### Shared schemes

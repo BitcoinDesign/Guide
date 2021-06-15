@@ -375,10 +375,6 @@ assets/images/guide/onboarding/onboarding-mobile.png: onboarding-mobile.png
 assets/images/guide/onboarding/onboarding-mobile@2x.png: onboarding-mobile@2x.png
 assets/images/guide/onboarding/onboarding.png: onboarding.png
 assets/images/guide/onboarding/onboarding@2x.png: onboarding@2x.png
-assets/images/guide/private-key-management/header-placeholder.jpg: header-placeholder.jpg
-assets/images/guide/private-key-management/header-placeholder@2x.jpg: header-placeholder@2x.jpg
-assets/images/guide/private-key-management/illustration-placeholder.jpg: illustration-placeholder.jpg
-assets/images/guide/private-key-management/illustration-placeholder@2x.jpg: illustration-placeholder@2x.jpg
 assets/images/guide/private-key-management/page-private-key-management.jpg: page-private-key-management.jpg
 assets/images/guide/private-key-management/personal-mobile.jpg: personal-mobile.jpg
 assets/images/guide/private-key-management/personal-mobile@2x.jpg: personal-mobile@2x.jpg
@@ -408,8 +404,6 @@ assets/images/guide/private-key-management/schemes/multi-key.jpg: multi-key.jpg
 assets/images/guide/private-key-management/schemes/multi-key@2x.jpg: multi-key@2x.jpg
 assets/images/guide/private-key-management/schemes/page-personal-schemes.jpg: page-personal-schemes.jpg
 assets/images/guide/private-key-management/schemes/page-private-key-schemes.jpg: page-private-key-schemes.jpg
-assets/images/guide/private-key-management/schemes/personal-schemes.jpg: personal-schemes.jpg
-assets/images/guide/private-key-management/schemes/personal-schemes@2x.jpg: personal-schemes@2x.jpg
 assets/images/guide/private-key-management/schemes/recovery-phrase.jpg: recovery-phrase.jpg
 assets/images/guide/private-key-management/schemes/recovery-phrase@2x.jpg: recovery-phrase@2x.jpg
 assets/images/guide/private-key-management/schemes/signing-devices.jpg: signing-devices.jpg
@@ -1099,11 +1093,6 @@ assets/images/guide/private-key-management/external-signing-device/external-sign
 assets/images/guide/private-key-management/external-signing-device/external-signing-device-preview.png: external-signing-device-preview.png
 assets/images/guide/private-key-management/external-signing-device/external-signing-device.png: external-signing-device.png
 assets/images/guide/private-key-management/external-signing-device/external-signing-device@2x.png: external-signing-device@2x.png
-assets/images/guide/private-key-management/key-sharing/key-sharing-mobile.png: key-sharing-mobile.png
-assets/images/guide/private-key-management/key-sharing/key-sharing-mobile@2x.png: key-sharing-mobile@2x.png
-assets/images/guide/private-key-management/key-sharing/key-sharing-preview.png: key-sharing-preview.png
-assets/images/guide/private-key-management/key-sharing/key-sharing.png: key-sharing.png
-assets/images/guide/private-key-management/key-sharing/key-sharing@2x.png: key-sharing@2x.png
 assets/images/guide/private-key-management/manual-backup/manual-backup-mobile.png: manual-backup-mobile.png
 assets/images/guide/private-key-management/manual-backup/manual-backup-mobile@2x.png: manual-backup-mobile@2x.png
 assets/images/guide/private-key-management/manual-backup/manual-backup-preview.png: manual-backup-preview.png
@@ -1189,3 +1178,5 @@ assets/images/guide/designing-products/designing-bitcoin-products/designing-bitc
 assets/images/guide/designing-products/designing-bitcoin-products/designing-bitcoin-products-web@2x.png: designing-bitcoin-products-web@2x.png
 assets/images/guide/designing-products/designing-bitcoin-products/designing-bitcoin-products-preview_preview.png: designing-bitcoin-products-preview_preview.png
 assets/images/guide/designing-products/designing-bitcoin-products/designing-bitcoin-products-preview.png: designing-bitcoin-products-preview.png
+assets/images/guide/private-key-management/schemes/personal-schemes@2x.jpg: personal-schemes@2x.jpg
+assets/images/guide/private-key-management/schemes/personal-schemes.jpg: personal-schemes.jpg
