@@ -32,7 +32,7 @@ A useful future addition would be to add short summaries of each reference.
 
 # User research resources
 
-Below is a collection of published user research findings around Bitcoin, from academic papers, to surveys and blog posts.
+Below is a collection of published user research findings around Bitcoin, from academic papers to surveys and blog posts.
 
 ## Research papers
 
