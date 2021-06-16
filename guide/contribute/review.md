@@ -112,3 +112,7 @@ Once you visited the URL, locate the page(s) to which proposed changes refer and
 %}
 
 [^1]:[About pull requests](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
+
+---
+
+Next, let's take a look at the [content guidelines]({{ '/guide/contribute/content-guidelines/' | relative_url }}) that can help inform the review process.

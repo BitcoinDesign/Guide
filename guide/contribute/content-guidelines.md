@@ -93,3 +93,7 @@ The guide is a work in progress and needs to evolve to stay relevant. What we wr
 ### Write in the open
 
 It's a good idea to ask for directions by seeking feedback early. This may stop you from wandering too far in the wrong direction. There is a whole community around you that's ready to jump in and help.
+
+---
+
+Now that we've covered general content guidelines, let’s take a closer look at [Illustration guidelines]({{ '/guide/contribute/illustration-guidelines/' | relative_url }}).

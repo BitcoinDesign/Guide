@@ -796,3 +796,7 @@ Here's a simple footnote[^1]
 [^1]: https://bitcoin.design "Footnote with a caption"
 ```
 [^1]: https://bitcoin.design "Footnote with a caption"
+
+---
+
+Next, let's move on to the [Glossary]({{ '/guide/glossary/' | relative_url }}) which explains common Bitcoin terms you may come across.

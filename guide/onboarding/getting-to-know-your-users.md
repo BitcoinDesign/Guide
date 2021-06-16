@@ -180,4 +180,6 @@ You might choose to lean on something like the [Bitcoin Wallet UI Kit](https://w
 
 Ultimately the goal of onboarding is that users trust the application, feel comfortable using it, and are set up for success. They should have an idea of how this application is going to fit into their lives and take care of certain needs. It's also ideal if they can already envision the next time they will use it.
 
+---
+
 Next, we will cover [creating a new wallet]({{ '/guide/onboarding/creating-a-new-wallet/' | relative_url }}).

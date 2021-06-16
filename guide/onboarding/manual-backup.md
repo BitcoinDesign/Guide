@@ -261,4 +261,6 @@ You could also ask users to select (or manually type out) a random word from the
 
 </div>
 
+---
+
 The next section will highlight some options for [restoring a wallet]({{ 'guide/onboarding/restoring-a-wallet' | relative_url }}).

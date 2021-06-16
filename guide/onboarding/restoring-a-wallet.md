@@ -59,4 +59,6 @@ For a more detailed explantion of this recovery technique check out this [blog p
 
 Some less popular methods include importing a file such as wallet.dat. Such a file would have all the information required to recover funds such as public keys and key metadata. In some cases you might be developing a watch-only wallet that only lets users track their bitcoin transactions. In this case you would import an extended public key, this tends to be for technically minded users however.
 
+---
+
 The next section looks at options for adding extra layers of security and [protecting a wallet]({{ 'guide/onboarding/protecting-a-wallet' | relative_url }}).

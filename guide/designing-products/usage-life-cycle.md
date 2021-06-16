@@ -36,9 +36,11 @@ Illustration sources
 # Usage life cycle
 {:.no_toc}
 
-We have all mastered different skills and tools that we care about or use frequently. Many times we forget what the initial struggles were once we reach a certain comfort level. A similar change happens when we develop products. We learn and internalize different mechanisms and logic, and what was once hard becomes intuitive, and we end up building things with overwhelming learning curves. So it's a healthy habit to regularly take a step back and look through users' eyes at different levels of experience with your product.
+As we develop new skills, things that are difficult at first eventually become intuitive to us. So when we develop products, it’s a good idea to regularly step back and look at the products we create through users' eyes on that same journey.
 
-The following six sections outline different phases of a typical usage life cycle, from somebody who has never heard of your product to them becoming a power user. It is helpful to think through each phase and consider what the current user needs are, what their understanding of bitcoin and your product likely is, and how you can help them successfully navigate.
+The following six phases outline a typical usage life cycle, from never having heard of your product to becoming one of its power users.
+
+It is helpful to think through each phase and consider what the current user needs are, what their understanding of Bitcoin and your product likely is, and how you can help them successfully navigate.
 
 ## Unaware
 
@@ -53,7 +55,7 @@ The following six sections outline different phases of a typical usage life cycl
    layout = "float-left"
 %}
 
-Every user starts here and most remain in this phase. At this point, they have never heard or seen your company or product before.
+This is where everyone starts, and most remain. At this point, they have never seen or heard of your product before.
 
 </div>
 
@@ -70,7 +72,7 @@ Every user starts here and most remain in this phase. At this point, they have n
    layout = "float-left"
 %}
 
-A user hears about the service for the first time. This could be via word-of-mouth recommendation, advertising, news articles, social media, or any other channel. Whichever it may be, this exposure is usually extremely short and limited, so the purpose and benefits of your product must be clear. Users already start to form a mental model from the first contact with your product. If it appears trustworthy and well-considered from the start, they will expect their future interactions to be the same. The same applies if your product looks intimidating or buggy.
+A user hears about the service for the first time. This could be via word-of-mouth, advertising, news articles, social media, or some other channel. This exposure is usually fleeting, so the purpose and benefit of your product must be clear to pique their curiosity. Here, users begin to form a mental model. If it appears trustworthy and well-considered, that is what they will expect from further engagement. The same applies if your product looks complex or buggy.
 
 </div>
 
@@ -87,7 +89,8 @@ A user hears about the service for the first time. This could be via word-of-mou
    layout = "float-left"
 %}
 
-A user becomes interested in your product. Maybe they have heard about it several times, or their first interaction was convincing enough for them to decide to try the product. At this point, they generally understand the benefits and likely have a need for the product that they are looking to address. They evaluate your product and you as the creator from multiple perspectives to make an informed decision on whether to move forward. "Is this a convenient way to get done what I want to do? Can I trust this product and its creators? What can I lose? Can I get out if something goes wrong?" These are some of the questions they may have, and if most can be answered positively, users take the next steps.
+A potential user is interested in your product. Maybe they have heard about it before, or their first interaction convinced them to try it. At this point, they understand the benefits and likely have a problem that it solves. They evaluate you and your product to decide whether to move forward. “Is this a convenient way to get done what I want to do? Can I trust this product and its creators? What can I lose? Can I get out if something goes wrong?” These are questions they might have, and if they can be answered positively, might propel them to take the next step.
+
 
 </div>
 
@@ -104,7 +107,7 @@ A user becomes interested in your product. Maybe they have heard about it severa
    layout = "float-left"
 %}
 
-The user tries the service for the first time. They made an intentional decision to move forward and expect to be satisfied. They are still not very familiar with exactly how your product works, and their expectations may not match what your product offers. Therefore it is very important to pay close attention to the design of the first-time use, also known as onboarding experience. Users should quickly and successfully achieve the task they have in mind while getting introduced to the basic concepts and best practices for using your product. This experience sets expectations for future interactions. If the first use is frustrating, users are less likely to return as they weight off whether the trouble is worth the benefit.
+The user decides to move forward with your product. They are still not familiar with exactly how it works, and their expectations may not match what your product offers. Therefore, it is crucial to pay close attention to the design of the [onboarding experience]({{ '/guide/onboarding/introduction/' | relative_url }}). Your product should make it easy for users to quickly and successfully solve problems while being introduced to your product's basics and best practices. This sets expectations for future interactions. If the first use is frustrating, users are less likely to use your product again—or to recommend it.
 
 </div>
 
@@ -121,7 +124,7 @@ The user tries the service for the first time. They made an intentional decision
    layout = "float-left"
 %}
 
-Through repeat use, the user becomes more familiar with the service and starts using more features in a more sophisticated manner. Their mental model of your product becomes complete and closer to yours. Repeat use also implies that users have begun to make your product part of their lives. While first-time users are typically non-committal, repeat users have more substantial expectations while also being willing to put in more work to get the most out of your product.
+The user becomes familiar with your product and uses it in a more sophisticated way. Their mental model of your product becomes closer to yours. Repeat use also implies that users have made your product a part of their lives. While first-time users are typically non-committal, repeat users are willing to put in more work to get the most out of products.
 
 </div>
 
@@ -138,7 +141,7 @@ Through repeat use, the user becomes more familiar with the service and starts u
    layout = "float-left"
 %}
 
-These are expert users with high expectations. They will express strong wishes, provide feedback, and also spread the word to potential new users. Very few users make it to this phase, and you should have a special relationship with them. They can be your strongest promoters and help push the product further by engaging with you and your team.
+These are expert users with high expectations. They will express firm wishes, provide feedback, and spread the word about your products. They are often your strongest promoters, helping push the product further by engaging with you and your team. Few users make it to this phase.
 
 </div>
 
@@ -157,9 +160,9 @@ These are expert users with high expectations. They will express strong wishes, 
    layout = "float-right-desktop"
 %}
 
-Some users disappear at every step in the life cycle. If you understand where and why they drop off, you have a better chance at fixing those issues and hopefully getting more and more passionate, satisfied users.
+Expects to lose users at every step in the life cycle. This is unavoidable. If you understand where and why they drop off, you can at least reduce the likelihood of it happening by solving for the issues that cause dropoff.
 
-There are various [user research]({{ '/guide/designing-products/user-research/' | relative_url }}) techniques that can help identify these types of issues.
+There are various [user research]({{ '/guide/designing-products/user-research/' | relative_url }}) techniques that can help identify and solve these types of issues.
 
 </div>
 
