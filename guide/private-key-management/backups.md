@@ -264,7 +264,8 @@ At a minimum, document each wallet with a given name (Bob’s Bitcoin wallet 1),
 
 
 **Don’t**
-- Store any required information ONLY in locations that will not be accessible to next-of-kin (password managers, single user accounts etc.)
+- Forget to ensure that required information is also stored in locations your next-of-kin can access even if you are not around anymore
+
 
 
 **Suitable for**
