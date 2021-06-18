@@ -43,6 +43,7 @@ Below is a collection of published user research findings around Bitcoin, from a
 Published in May 2021 by Artemij Voskobojnikov, Svetlana Abramova, Konstantin Beznosov, and Rainer Böhme.
 
 ###### [Bits Under the Mattress: Understanding Different Risk Perceptions and Security Behaviors of Crypto-Asset Users](https://voskart.de/pdf/bits_under_mattress.pdf)
+
 *Crypto-assets are unique in tying financial wealth to the secrecy of private keys. Prior empirical work has attempted to study end-user security from both technical and organizational perspectives. However, the link between individuals’ risk perceptions and security behavior was often obscured by the heterogeneity of the subjects in small samples. This paper contributes quantitative results from a survey of 395 crypto-asset users recruited by a novel combination of deep and broad sampling. The analysis accounts for heterogeneity with a new typology that partitions the sample in three robust clusters – cypherpunks, hodlers, and rookies – using five psychometric constructs. The constructs originate from established behavioral theories with items purposefully adapted to the domain. We demonstrate the utility of this typology in better understanding users’ characteristics and security behaviors. These insights inform the design of crypto-asset solutions, guide risk communication, and suggest directions for future digital currencies.*
 
 Published in February 2021 by Svetlana Abramova, Artemij Voskobojnikov, Konstantin Beznosov, and Rainer Böhme.
