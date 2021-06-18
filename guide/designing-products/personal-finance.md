@@ -121,7 +121,7 @@ Higher value payments such as rent, utilities, car payments, and groceries are s
 
 For recurring payments, some of these mechanisms let businesses regularly deduct money from accounts without customers approving each transaction.
 
-Bitcoin is different since the sender must initiate all transactions, meaning that automated deductions might not be possible—at least when the wallet is non-custodial. Lightning wallets, which are always online, could solve this by allowing more complex interactions between senders and recipients.
+Bitcoin is different since the sender must initiate all transactions, meaning that automated deductions might not be possible—at least when the wallet is non-custodial.
 
 {% include picture.html
    image = "/assets/images/guide/designing-products/personal-finance/monthly-budget-wallet-setup.jpg"
