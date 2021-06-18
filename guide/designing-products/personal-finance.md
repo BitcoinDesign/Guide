@@ -115,7 +115,7 @@ For more on this use case, see the [daily spending case study]({{ '/guide/case-s
    layout = "float-left"
 %}
 
-Higher value payments such as rent, utilities, car payments, and groceries are seldom paid for in cash. Instead, they are tied to service providers with ingrained payment mechanisms such as checks, debits, ACH, and wire transfers.
+Higher value payments such as rent, utilities, car payments, and groceries are seldom paid for in cash. Instead, they are tied to service providers with payment mechanisms such as checks or bank transfers.
 
 </div>
 
