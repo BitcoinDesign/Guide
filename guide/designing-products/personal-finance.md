@@ -36,7 +36,7 @@ Illustration sources
 # Personal finance
 {:.no_toc}
 
-**If we consider Bitcoin a new form of money, we should consider how we interact with existing forms of money and how Bitcoin compares. This can guide us towards behavioral patterns that users may already be familiar with.**
+**If we consider Bitcoin a new form of money, it’s only natural that we compare it to existing forms of currency. This section views Bitcoin through the lens of traditional finance to help us build mental models, define behavioral patterns, and ultimately better understand what kind of products we should be making.**
 
 Money is complex and can play many different roles in our lives. Buying a new shirt is quite different from buying a house or setting aside savings for retirement. Taking a payment as a store owner is very different from a child receiving an allowance from parents. On a global scale, the differences multiply across countries and cultures.
 
@@ -44,7 +44,7 @@ It still is possible to create simplified mental models that help us better unde
 
 This section uses the traditional personal finance lens to think about what type of bitcoin products we may need. Because of bitcoin's unique properties, we cannot imitate conventional financial products and assume that the same solutions apply. And even if we could, this might be an excellent opportunity to take a fresh look and design new solutions for today's world. Bitcoin is also global by nature, so consider the unique circumstances of your users' lives.
 
-Let's take a look at six different categories of how somebody may want to organize their finances. Note that the following examples always assume that a user wants to keep as much [self-custody](/guide/designing-products/principles/#self-custody) as reasonable while balancing [security](/guide/designing-products/principles/#security) and [privacy](/guide/designing-products/principles/#privacy).
+Assuming that a user wants to [self-custody](/guide/designing-products/principles/#self-custody) their bitcoin,while balancing [security](/guide/designing-products/principles/#security) and [privacy](/guide/designing-products/principles/#privacy) here are six ways that they can organize finances:
 
 ---
 
@@ -78,12 +78,12 @@ Section structure
    layout = "float-left"
 %}
 
-This category is equivalent to how we use cash, and an often-used example is buying coffee. We typically keep small amounts of money in our wallet or purse for these types of transactions, and maybe we have planned a specific allowance for them in our monthly budgets. While some countries have fully embraced credit cards or smartphones for daily spending, other countries still prefer physical coins and bills. Many Germans, for example, prefer cash because it typically provides better privacy.
+This is the “cash”—or in this case of Bitcoin, the “sats”—that we use to make small purchases such as coffee, lunch, etc. While some countries fully embrace credit cards and smartphones for daily spending, others, such as Germany, still prefer cash for its better privacy.
 </div>
 
-From a portability perspective, many of these payments happen outside of our homes. This makes mobile wallet applications ideally suited, which allow us to take advantage of the unique benefits of smartphones. Convenient camera access allows for quick scanning of QR payment code and NFC support ([Near-Field Communication](https://en.wikipedia.org/wiki/Near-field_communication){:target="_blank"}) lets us pay just by holding our phone next to a card reader.
+Nearly all of these payments happen outside of our homes. This makes mobile wallet apps for smartphones ideal replacements for physical cash. Convenient camera access allows for payment via QR code, and NFC support ([Near-Field Communication](https://en.wikipedia.org/wiki/Near-field_communication){:target="_blank"}) lets us pay by holding our phones next to card readers.
 
-For small, frequent payments we generally accept more risk in exchange for convenience. It becomes more important to quickly execute a transaction than protecting the money involved from as many attack vectors as possible. While we wouldn’t carry our life savings in our pockets, we are comfortable doing so with small amounts, as it does not have a significant impact on us if they are lost or stolen. Not only do we take much fewer security precautions, but financial service providers like banks do the same. One example is that you may not need to sign or enter the PIN for credit card payments if the amount is below $25. The only thing that may be required to transact is entering a 4-digit PIN or authentication via face recognition.
+For small, frequent payments, we generally accept greater risk in exchange for convenience, ultimately protecting these funds with fewer security precautions. This is standard practice even among traditional financial service providers. One example is that you may not need to sign or enter the PIN for credit card payments if the amount is below $25. The only thing that may be required to transact is entering a 4-digit PIN or authentication via face recognition.
 
 {% include picture.html
    image = "/assets/images/guide/designing-products/personal-finance/daily-spending-wallet-setup.jpg"
@@ -96,7 +96,9 @@ For small, frequent payments we generally accept more risk in exchange for conve
    height = 800
 %}
 
-Most stores (online and offline) don't accept bitcoin, so buying coffee is not a very realistic use case for most of us. When that time arrives, users who already pay via smartphones app or NFC-enabled credit card can easily switch to Bitcoin wallet apps. A typical scenario could be that users create dedicated mobile bitcoin (and lightning) wallets for on-the-go payments, in addition to having separate wallets for larger amounts. Similar to having a bank account and regularly taking out cash at an ATM, users could refill their mobile wallets. The mobile wallet may use seedless private key storage from a security perspective, meaning that private keys are hidden from the user and stored on the device with an encrypted backup on a cloud storage provider. The primary wallet however, would be more strongly secured with a [hardware wallet]({% link guide/getting-started/hardware.md %}#hardware-wallets) or even a multi-signature configuration. This would mirror the primary focus of convenience over security. Beyond key management, payment interactions could be identical to what users are already familiar with.
+Most stores (online and offline) don’t currently accept bitcoin. When they do, users who already pay with smartphones or NFC-enabled credit cards can easily transition to Bitcoin apps.
+
+A typical scenario could be that users create dedicated mobile bitcoin (and lightning) wallets for on-the-go payments, in addition to having separate wallets for larger amounts. Similar to having a bank account and regularly taking out cash at an ATM, users could refill their mobile wallets. The mobile wallet may use [automatic cloud backup private key storage]({{ '/guide/private-key-management/cloud-backup/' | relative_url }}). The primary wallet however, would be more strongly secured with a [hardware wallet]({% link guide/getting-started/hardware.md %}#hardware-wallets) or even a [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}) configuration. This would mirror the primary focus of convenience over security. Beyond key management, payment interactions could be identical to what users are already familiar with.
 
 For more on this use case, see the [daily spending case study]({{ '/guide/case-studies/cloud-backup/' | relative_url }}).
 
@@ -113,14 +115,13 @@ For more on this use case, see the [daily spending case study]({{ '/guide/case-s
    layout = "float-left"
 %}
 
-Rent, utilities, subscriptions, car payments, grocery bills, and similar expenses need to be paid regularly on a weekly or monthly basis. Compared to day-to-day discretionary spending, these payments are higher in value, less frequent, and play a more important role in our lives. We can go without an extra coffee in the afternoon, but not paying rent or water bills is typically not an option.
+Higher value payments such as rent, utilities, car payments, and groceries are seldom paid for in cash. Instead, they are tied to service providers with payment mechanisms such as checks or bank transfers.
 
 </div>
 
-While grocery bills are still one-off payments, and we may visit different stores every week, many payments in this category are tied to specific service providers we have relationships with. Financial institutions also provide different mechanisms for recurring payments where businesses can regularly deduct money from accounts without customers having to confirm each one. Bitcoin transactions have to be initiated by the sender, so automated deductions would not be easily possible for non-custodial wallets. This could be solved with Lightning wallets that are always online and allow for more complex interactions between senders and recipients.
+For recurring payments, some of these mechanisms let businesses regularly deduct money from accounts without customers approving each transaction.
 
-The amounts involved in these transactions are higher and therefore require better security. While you can carry cash hand it to anyone directly, monthly expenses are typically done indirectly via transfers between both parties' banks. A manual payment might require you to log into your banks' website via username and password, along with a second security mechanism like [two-factor authentication](https://en.wikipedia.org/wiki/Help:Two-factor_authentication){:target="_blank"}.
-
+Bitcoin is different since the sender must initiate all transactions, meaning that automated deductions might not be possible—at least when the wallet is non-custodial.
 
 {% include picture.html
    image = "/assets/images/guide/designing-products/personal-finance/monthly-budget-wallet-setup.jpg"
@@ -132,7 +133,7 @@ The amounts involved in these transactions are higher and therefore require bett
    height = 800
 %}
 
-A solution for Bitcoin could be a hardware wallet with an accompanying desktop application. While keys are stored, and transactions get signed on secure hardware, users can still enjoy a desktop application's convenience. This avoids or reduces some of the risks involved with the mobile wallet configuration described in the first category while adding a small amount of friction acceptable for transactions that occur less frequently.
+A hardware wallet accompanied by a desktop application where keys are stored and transactions are securely signed by hardware is another solution. This reduces the risk of keeping funds on a mobile wallet configuration but adds acceptable friction for transactions that occur less frequently.
 
 ## Emergency funds
 
@@ -147,10 +148,11 @@ A solution for Bitcoin could be a hardware wallet with an accompanying desktop a
    layout = "float-left"
 %}
 
-There are times when we are suddenly faced with a more expensive problem like a medical bill or home repairs, or lose our jobs and need to cover a few months of expenses. For these situations, it is recommended to keep around 3-6 months of average monthly expenses. You may or may not end up needing this money, but it’s great to have when you do.
+Financial experts recommend that you keep 3–6 months of salary available for when you are faced with costly problems like medical bills, home repairs, and sudden loss of employment.
+
 </div>
 
-In traditional finance, this money might get parked in a high-interest savings account or something equivalent that allows for the quick low-risk withdrawal but still provides some return. Once the fund is set up, the money may not get touched for a long time.
+In traditional finance, this money might get parked in a high-interest savings account that allows for quick, low-risk withdrawal but still provides some long-term return.
 
 {% include picture.html
    image = "/assets/images/guide/designing-products/personal-finance/savings-wallet-setup.jpg"
@@ -162,7 +164,7 @@ In traditional finance, this money might get parked in a high-interest savings a
    height = 800
 %}
 
-A bitcoiner may want to set up a cold storage multi-signature wallet. In this type of setup, there are multiple applications or hardware devices required to make transactions. Even if one device gets stolen or locked, the rightful owner still has access to all their funds. Since transactions are infrequent, the balance is tipped towards security over convenience.
+A bitcoiner may want to set up a cold storage multi-signature wallet. In this type of setup, there are multiple applications or hardware devices required to make transactions. Even if one device gets stolen or locked, the rightful owner still has access to all their funds. Since transactions are infrequent, security is prioritized over convenience.
 
 ## Sinking funds
 
@@ -177,9 +179,12 @@ A bitcoiner may want to set up a cold storage multi-signature wallet. In this ty
    layout = "float-left"
 %}
 
-A sinking fund is a way to systematically set money aside for a planned considerable expense, like a new car or a down payment for a new home. The amount may be similar to emergency budgets, but the sinking fund is created for a shorter timeline. There are likely to be multiple deposits and potentially only a single withdrawal or transfer, after which the fund is no longer needed. This use case does not necessarily require a dedicated account. The amount could be covered with a dedicated account in either the wallet for monthly budgeting or savings.
+This is money that one sets aside for a considerable but planned expense, such as a new car or a down payment on a house. The amount might be similar to an emergency budget but on a shorter timeline. There are likely to be multiple deposits and potentially only a single withdrawal, after which the fund is no longer needed.
 
 </div>
+
+Sinking funds do not necessarily require a dedicated wallet. The amount secured could be deposited into any monthly budgeting or savings wallet.
+
 
 ## Savings
 
@@ -194,9 +199,9 @@ A sinking fund is a way to systematically set money aside for a planned consider
    layout = "float-left"
 %}
 
-HODLing is more than a meme, as many bitcoiners create highly secure setups to store their savings away for many years.
+HODLing is more than a meme. Many bitcoiners create highly secure setups to store their savings over long periods of time. Ideally, these wallets are very safe but not very convenient.
 
-For example, [Glacier Protocol](https://glacierprotocol.org){:target="_blank"} is highly secure, but also requires about $600 in new equipment and takes 8 hours to set up. While it is designed as a step-by-step guide, some areas are quite complex, all in the name of reducing and avoiding different types of risk. It is an extreme example, but it illustrates well how complex practicing good security is.
+For example, [Glacier Protocol](https://glacierprotocol.org){:target="_blank"} is highly secure, but requires about $600 and eight hours to set up. While it comes with a step-by-step guide, some areas are quite complex. It is an extreme example, but it illustrates how complex great security can be.
 
 </div>
 
@@ -211,7 +216,7 @@ For example, [Glacier Protocol](https://glacierprotocol.org){:target="_blank"} i
    height = 800
 %}
 
-Many people don’t self-cusody their long-term savings. They rely on banks and financial service providers to provide security and help manage and invest those savings. Savings accounts and related products may also incentivize customers with low-interest rates that may or may not be high enough to keep up with inflation.
+Of course, many prefer that banks and other custodial financial service providers secure and invest funds for them. Savings accounts and related products may also incentivize customers with low interest rates that may or may not be high enough to keep up with inflation.
 
 ## Investing
 
@@ -226,11 +231,12 @@ Many people don’t self-cusody their long-term savings. They rely on banks and 
    layout = "float-left"
 %}
 
-Investing is about putting saved money to work hoping that it increases in value, from retirement accounts to stock investing and real estate ownership. This necessarily requires the involvement of third parties, which goes beyond the current focus of this guide.
+Investing is about turning the money you have into more money over time. From individuals to governments to corporations to pension funds, the goal of investing is growth. This necessarily requires the involvement of third parties, which is beyond the focus of this guide.
 
 </div>
 
-Since Bitcoin has dramatically increased in value, many see bitcoin itself as an investment (which is well expressed in the [HODL meme](https://knowyourmeme.com/memes/hodl){:target="_blank"}).
+Since Bitcoin continues to increase in value over time, many see the act of “HODLing” as investing. In the last ten years, an increasing number of financial advisors and institutions have come to see bitcoin as a necessary component of any sufficiently diversified portfolio.
+
 
 ## Summary
 {:.no_toc}
