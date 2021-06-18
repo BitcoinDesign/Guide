@@ -231,7 +231,7 @@ Of course, many prefer that banks and other custodial financial service provider
    layout = "float-left"
 %}
 
-Investing is about turning the money you have into more money over time. From individuals to governments to corporations to pension funds, the goal of investing is growth. This necessarily requires the involvement of third parties, which is beyond the focus of this guide (at least for now).
+Investing is about turning the money you have into more money over time. From individuals to governments to corporations to pension funds, the goal of investing is growth. This necessarily requires the involvement of third parties, which is beyond the focus of this guide.
 
 </div>
 
