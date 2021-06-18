@@ -78,7 +78,7 @@ Section structure
    layout = "float-left"
 %}
 
-This is the “cash”—or in this case of Bitcoin, the “sats”—that we use to make small purchases such as coffee, lunch, etc. While some countries fully embrace credit cards and smartphones for daily spending, others, such as Germany, still prefer physical coins and bills.
+This is the “cash”—or in this case of Bitcoin, the “sats”—that we use to make small purchases such as coffee, lunch, etc. While some countries fully embrace credit cards and smartphones for daily spending, others, such as Germany, still prefer cash for its better privacy.
 </div>
 
 Nearly all of these payments happen outside of our homes. This makes mobile wallet apps for smartphones ideal replacements for physical cash. Convenient camera access allows for payment via QR code, and NFC support ([Near-Field Communication](https://en.wikipedia.org/wiki/Near-field_communication){:target="_blank"}) lets us pay by holding our phones next to card readers.
