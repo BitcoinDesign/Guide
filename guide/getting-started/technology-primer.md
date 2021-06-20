@@ -72,7 +72,7 @@ It's both. Lowercase bitcoin refers to the currency. So you may have 1 bitcoin i
    layout = "float-right-desktop"
 %}
 
-Bitcoin (as in "I have 1 bitcoin") are just numbers in the database of transactions often referred to as the bitcoin blockchain.
+Bitcoin (as in "I have 1 bitcoin") are just numbers in the ledger of transactions often referred to as the bitcoin blockchain.
 
 A transaction involves sending bitcoin from one address to another. This reduces the available balance of the sending address and increases the balance of the receiving address. A small amount is deducted to pay for the transaction fee.
 
