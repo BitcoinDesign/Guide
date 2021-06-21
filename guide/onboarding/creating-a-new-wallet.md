@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Creating a new wallet
-description: Steps to take when creating a new wallet
+description: Steps to take when creating a new wallet, and tips for a great user experience.
 parent: Onboarding
 nav_order: 2
 permalink: /guide/onboarding/creating-a-new-wallet/

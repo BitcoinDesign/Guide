@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Automatic cloud backup
-description: An overview of personal private key management schemes.
+description: Overview of how recovery phrases and other wallet data can be securely stored with cloud storage service providers.
 nav_order: 2
 parent: Private key management
 permalink: /guide/private-key-management/cloud-backup/

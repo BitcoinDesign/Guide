@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Savings account
+description: Case study for a Bitcoin wallet designed for storing medium amounts.
 nav_order: 2
 parent: Case studies
 permalink: /guide/case-studies/savings-account/
@@ -39,7 +40,7 @@ Editor's notes
 
 -->
 
-## Savings account
+# Savings account
 
 In this section, we are looking at a product that is meant to be a replacement for what a bank would call a [savings]({{ '/guide/designing-products/personal-finance/#savings' | relative_url }}) account where the user might store wealth long term. Safeguards against loss will be a higher priority than with a frequent spending product, and we might therefore accept more friction both when setting up the wallet and when transacting. If users have no prior Bitcoin knowledge we should expect to spend a significant effort educating them to put them in a position to safely operate the wallet product.
 

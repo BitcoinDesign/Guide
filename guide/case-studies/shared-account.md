@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Shared account
+description: Bitcoin wallet design case study for accounts managed together by multiple owners.
 nav_order: 4
 parent: Case studies
 permalink: /guide/case-studies/shared-account/
@@ -40,7 +41,7 @@ Editor's notes
 
 -->
 
-## Shared account
+# Shared account
 
 A common real-world use case for shared accounts are couples managing their monthly spending, with both parties being able to spend from the account. For this situation we could consider the following private key management schemes:
 

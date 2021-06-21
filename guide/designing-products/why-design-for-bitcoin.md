@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Why design for Bitcoin
+description: Be on the cutting-edge of technology and open-design by working in the Bitcoin ecosystem.
 nav_order: 1
 parent: Designing Bitcoin products
 permalink: /guide/designing-products/why-design-for-bitcoin/

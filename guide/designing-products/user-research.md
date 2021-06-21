@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: User research
+description: Bitcoin user research is unique due to the decentralized and public nature of the network.
 nav_order: 4
 parent: Designing Bitcoin products
 has_children: true

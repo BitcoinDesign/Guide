@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Funding a wallet
-description: Outline of the ways users are likely to fund a wallet
+description: Outline of the ways users are likely to fund a wallet, from direct purchase to bitcoin gift cards.
 parent: Onboarding
 nav_order: 7
 permalink: /guide/onboarding/funding-a-wallet/

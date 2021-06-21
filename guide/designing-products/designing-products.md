@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Designing Bitcoin products
+description: Learn fundamentals, techniques and best practices for designing great Bitcoin UX.
 nav_order: 3
 has_children: true
 permalink: /guide/designing-products/introduction/

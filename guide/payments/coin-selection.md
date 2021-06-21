@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Coin Selection
+description: A primer on how UTXOs are chosen to fund new bitcoin transactions.
 nav_order: 1
 grand_parent: Payments
 parent: Sending bitcoin

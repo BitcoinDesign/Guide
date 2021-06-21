@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Open design
+description: What it means to participate in open design in the Bitcoin ecosystem.
 nav_order: 2
 parent: Designing Bitcoin products
 permalink: /guide/designing-products/open-design/

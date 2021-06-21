@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Common user flows
+description: Overview of the most common user activities in Bitcoin applications.
 nav_order: 7
 parent: Designing Bitcoin products
 permalink: /guide/designing-products/common-user-flows/

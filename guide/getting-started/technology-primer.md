@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Technology primer
+description: Learn the basics of Bitcoin technology in a series of simple explanations.
 nav_order: 10
 parent: Getting started
 permalink: /guide/getting-started/technology-primer/

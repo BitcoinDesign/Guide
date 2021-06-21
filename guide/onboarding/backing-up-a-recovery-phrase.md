@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Backing up a recovery phrase
-description: Handling recovery phrases during onboarding
+description: Handling recovery phrases during onboarding.
 parent: Onboarding
 has_children: true
 nav_order: 3

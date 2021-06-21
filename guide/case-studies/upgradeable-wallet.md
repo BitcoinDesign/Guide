@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Upgradeable account
+description: UX case study for a Bitcoin wallet with multiple private key management schemes.
 nav_order: 3
 parent: Case studies
 permalink: /guide/case-studies/upgradeable-wallet/
@@ -30,7 +31,7 @@ Editor's notes
 
 -->
 
-## Upgradeable wallet
+# Upgradeable wallet
 
 Although it is generally easier to build a great experience with a specific [use case]({{ '/guide/designing-products/personal-finance/' | relative_url }}) in mind, let's look at a case where we would like to make a wallet that is made for a broad range of uses and audiences. It needs to be suitable both for beginners and expanding users, and for holding anything between small and significant amounts. How do we choose a single private key management scheme for this situation?
 
