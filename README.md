@@ -22,58 +22,16 @@ The guide is meant to be a simple starting-point for anyone looking to build Bit
 
 The guide is still being created and should be seen as an evolving resource. Similar to the iterative design process, it starts with core parts then grows in ambition based on community support.
 
-Here is an outline of the content that is currently live:
+Here is the content that is currently live:
 
 [The Bitcoin Design Guide](https://bitcoin.design/guide/)
 *   [Getting started](https://bitcoin.design/guide/getting-started/introduction/)
-    *   Why Bitcoin is unique
-    *   Visual language
-    *   Technology primer
-    *   Software overview
-    *   Hardware overview
 *   [Designing Bitcoin products](https://bitcoin.design/guide/designing-products/introduction/)
-    *   Why design for Bitcoin
-    *   Open design
-    *   Principles
-    *   User research
-        *   User research resources
-    *   Usage life cycle
-    *   Personal finance
-    *   Common user flows
-    *   Wallet interoperability
 *   [Onboarding](https://bitcoin.design/guide/onboarding/introduction/)
-    *   Getting to know your users
-    *   Creating a new wallet
-    *   Backing up a recovery-phrase
-        *   Automatic cloud backup
-        *   Manual backup
-    *   Restoring a wallet
-    *   Protecting a wallet
-    *   Funding a wallet
 *   [Private key management](https://bitcoin.design/guide/private-key-management/introduction/)
-    *   Overview
-    *   Automatic cloud backup
-    *   Manual backup
-    *   External signing device
-    *   Multi-key
-    *   Bitcoin backups
 *   [Payments](https://bitcoin.design/guide/payments/)
-    *   Transactions overview
-    *   Sending bitcoin
-    *   Receiving bitcoin
-    *   Transaction privacy
-    *   Managing funds
 *   [Case studies](https://bitcoin.design/guide/case-studies/)
-    *   Daily spending
-    *   Savings account
-    *   Upgradeable account
-    *   Shared account
 *   [Contribute to guide](https://bitcoin.design/guide/contribute/)
-    *   Propose a change
-    *   Review
-    *   Content guidelines
-    *   Illustration guidelines
-    *   Formatting
 *   [Glossary](https://bitcoin.design/guide/glossary/)
 
 ---
