@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Automatic cloud backup
-description: How to backup a recovery phrase automatically
+description: How to backup a bitcoin wallet recovery phrase automatically via cloud storage service providers.
 grand_parent: Onboarding
 parent: Backing up a recovery phrase
 nav_order: 1

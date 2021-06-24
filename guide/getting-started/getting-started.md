@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Getting started
+description: Learn the basics of Bitcoin, from a history of visuals to available software and hardware categories.
 nav_order: 2
 has_children: true
 permalink: /guide/getting-started/introduction/

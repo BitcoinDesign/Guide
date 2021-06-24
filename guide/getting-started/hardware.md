@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Hardware overview
+description: List of the main categories of Bitcoin hardware, from wallets to miners.
 nav_order: 12
 parent: Getting started
 permalink: /guide/getting-started/hardware/

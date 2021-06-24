@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Visual language
+description: A short history of the visuals that we associate with Bitcoin, from the first symbol to the HODL meme.
 nav_order: 5
 parent: Getting started
 permalink: /guide/getting-started/visual-language/

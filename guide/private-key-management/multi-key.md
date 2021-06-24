@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Multi-key
-description: An overview of personal private key management schemes.
+description: Learn the basics of multi-signature Bitcoin wallets.
 nav_order: 6
 parent: Private key management
 permalink: /guide/private-key-management/multi-key/

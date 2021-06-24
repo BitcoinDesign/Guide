@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Manual backup
-description: An overview of personal private key management schemes.
+description: An explainer of manual backup for recovery phrases of Bitcoin wallets.
 nav_order: 3
 parent: Private key management
 permalink: /guide/private-key-management/manual-backup/

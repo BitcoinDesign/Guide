@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Manual backup
-description: How to backup a recovery phrase manually
+description: How to manually back up the recovery phrase of a Bitcoin wallet.
 grand_parent: Onboarding
 parent: Backing up a recovery phrase
 nav_order: 2

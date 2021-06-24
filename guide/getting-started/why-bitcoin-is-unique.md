@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Why Bitcoin is unique
+description: Overview of the most important traits that give Bitcoin its special role as a digital payment network.
 nav_order: 2
 parent: Getting started
 permalink: /guide/getting-started/why-bitcoin-is-unique/

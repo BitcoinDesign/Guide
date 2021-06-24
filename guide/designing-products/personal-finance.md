@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Personal finance
+description: How Bitcoin applications and usage overlap with traditional personal finance management.
 nav_order: 6
 parent: Designing Bitcoin products
 permalink: /guide/designing-products/personal-finance/

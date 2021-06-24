@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Software overview
+description: List of the main categories of Bitcoin software, from wallets to nodes.
 nav_order: 11
 parent: Getting started
 permalink: /guide/getting-started/software/

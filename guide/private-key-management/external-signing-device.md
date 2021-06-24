@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: External signing device
-description: An overview of personal private key management schemes.
+description: What hardware wallets are and their role in securing bitcoin.
 nav_order: 4
 parent: Private key management
 permalink: /guide/private-key-management/external-signing-device/
