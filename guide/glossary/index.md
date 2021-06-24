@@ -3,7 +3,7 @@ layout: guide
 title: Glossary
 permalink: /guide/glossary/
 nav_order: 10
-has_children: false
+has_children: true
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/glossary/glossary-preview.jpg
 ---
@@ -43,7 +43,7 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 ### [Address]({{ "/guide/glossary/address" | relative_url }})
 A Bitcoin address is an identifier of 26-35 alphanumeric characters that is used to receive bitcoin. There are [several address formats](https://en.bitcoin.it/wiki/List_of_address_prefixes) based on different specifications. Users need to know this information during backup for future recovery so applications should inform users which format it uses as support varies across applications.
 
-[Read more]({{ "/guide/glossary/address" | relative_url }}){: .button}
+[Read more]({{ "/guide/glossary/address" | relative_url }})
 
 ### Account
 
@@ -332,7 +332,7 @@ This term is often used interchangeably for very different things. A user can *d
 
 </div>
 
-[Read more]({{ "/guide/glossary/wallet" | relative_url }}){: .button}
+[Read more]({{ "/guide/glossary/wallet" | relative_url }})
 
 
 ### Additional resources
