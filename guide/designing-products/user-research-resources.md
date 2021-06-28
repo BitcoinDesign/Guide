@@ -36,6 +36,12 @@ Below is a collection of published user research findings around Bitcoin, from a
 
 ## Research papers
 
+###### [Cryptoasset consumer research 2021](https://www.fca.org.uk/publications/research/research-note-cryptoasset-consumer-research-2021)
+
+*A survey showing an increase in awareness of cryptocurrencies among adults in the UK, but a decreasing understanding of how cryptocurrencies work.*
+
+Published in June 2021 by Michael Karim, and Gergana Tomova.
+
 ###### [Non-adoption of crypto-assets: Exploring the role of trust, self-efficacy, and risk](https://voskart.de/pdf/crypto_adoption.pdf)
 Published in May 2021 by Artemij Voskobojnikov, Svetlana Abramova, Konstantin Beznosov, and Rainer Böhme.
 
