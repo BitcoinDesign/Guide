@@ -124,21 +124,72 @@ The relatioinship between nodes and wallet is one factor, another factor is how 
 
 Full nodes are Bitcoin clients that fully verify and enforce the rules of the Bitcoin network. An example of a rule is that there will never be more than 21 million bitcoin.
 
-- **Archival full nodes** store the entire Bitcoin block chain, as well as sends historical data to other nodes.
+<div class="center" markdown="1">
 
-- **Pruned full nodes** use much lower storage capacity as it only stores a portion of recent blocks.
+{% include image.html
+   image = "/assets/images/guide/glossary/node/archival-node.png"
+   retina = "/assets/images/guide/glossary/node/archival-node@2x.png"
+   alt-text = "Coffee icon"
+   width = 100
+   height = 100
+   layout = "float-left"
+%}
+
+**Archival full nodes** store the entire Bitcoin block chain, and send historical data to other nodes.
+
+</div>
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/glossary/node/pruned-node.png"
+   retina = "/assets/images/guide/glossary/node/pruned-node@2x.png"
+   alt-text = "Coffee icon"
+   width = 100
+   height = 100
+   layout = "float-left"
+%}
+
+**Pruned full nodes** use much lower storage capacity as they only store a portion of recent blocks.
+
+</div>
 
 #### Light nodes
 
 Light nodes are Bitcoin clients that do not verify or enforce the rules of the Bitcoin network.
 
-- **Simplified payment verification (SPV) light nodes** query and download block headers from full nodes making it possible for users to verify transactions without running a full node.
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/glossary/node/spv-node.png"
+   retina = "/assets/images/guide/glossary/node/spv-node@2x.png"
+   alt-text = "Coffee icon"
+   width = 100
+   height = 100
+   layout = "float-left"
+%}
+
+**Simplified payment verification (SPV) light nodes** query and download block headers from full nodes making it possible for users to verify transactions without running a full node.
 
    - [Bitcoin Wiki SPV](https://en.bitcoinwiki.org/wiki/Simplified_Payment_Verification)
    - [Bitcoin whitepaper - section 8](https://bitcoin.org/bitcoin.pdf)
 
-- **Neutrino light nodes** uses the Neutrino protocol. The Neutrino protocol uses compact block filters to query and download condensed representations of blocks that contain transaction data relevant to the user.
+</div>
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/glossary/node/bloom-filter-node.png"
+   retina = "/assets/images/guide/glossary/node/bloom-filter-node@2x.png"
+   alt-text = "Coffee icon"
+   width = 100
+   height = 100
+   layout = "float-left"
+%}
+
+**Neutrino light nodes** uses the Neutrino protocol. The Neutrino protocol uses compact block filters to query and download condensed representations of blocks that contain transaction data relevant to the user.
 
    - [Bitcoin Optech - block filters](https://bitcoinops.org/en/topics/compact-block-filters/)
    - [GitHub Neutrino repo](https://github.com/lightninglabs/neutrino)
 
+</div>

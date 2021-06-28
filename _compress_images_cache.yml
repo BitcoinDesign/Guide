@@ -1197,3 +1197,11 @@ assets/images/guide/glossary/node/third-party-api.png: third-party-api.png
 assets/images/guide/glossary/node/third-party-api@2x.png: third-party-api@2x.png
 assets/images/guide/glossary/node/third-party-node.png: third-party-node.png
 assets/images/guide/glossary/node/third-party-node@2x.png: third-party-node@2x.png
+assets/images/guide/glossary/node/archival-node.png: archival-node.png
+assets/images/guide/glossary/node/archival-node@2x.png: archival-node@2x.png
+assets/images/guide/glossary/node/bloom-filter-node.png: bloom-filter-node.png
+assets/images/guide/glossary/node/bloom-filter-node@2x.png: bloom-filter-node@2x.png
+assets/images/guide/glossary/node/pruned-node.png: pruned-node.png
+assets/images/guide/glossary/node/pruned-node@2x.png: pruned-node@2x.png
+assets/images/guide/glossary/node/spv-node.png: spv-node.png
+assets/images/guide/glossary/node/spv-node@2x.png: spv-node@2x.png
