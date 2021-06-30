@@ -20,6 +20,12 @@ files:
     retina: /assets/images/guide/designing-products/design-resources/bitcoin-icons@2x.jpg
     width: 400
     height: 210
+  - caption: <a href="https://www.figma.com/community/file/972290772932533325/Art-Meets-Bitcoin">Art meets Bitcoin</a>
+    alt: Collage of Bitcoin related illustration elements
+    image: /assets/images/guide/designing-products/design-resources/art-meets-bitcoin.jpg
+    retina: /assets/images/guide/designing-products/design-resources/art-meets-bitcoin@2x.jpg
+    width: 400
+    height: 210
   - caption: <a href="https://www.figma.com/community/file/946807598525782935/Bitcoin-hardware-%26-accessories">Hardware illustrations</a>
     alt: Collction of Bitcoin hardware outline illustrations
     image: /assets/images/guide/designing-products/design-resources/bitcoin-hardware-illustrations.jpg
@@ -33,7 +39,7 @@ files:
     width: 400
     height: 210
   - caption: <a href="https://www.figma.com/community/file/972067335916375043/Bitcoin-Design-Slide-Template">Slide template</a>
-    alt: Slide templat cover screen
+    alt: Slide template cover screen
     image: /assets/images/guide/designing-products/design-resources/slide-template.jpg
     retina: /assets/images/guide/designing-products/design-resources/slide-template@2x.jpg
     width: 400
