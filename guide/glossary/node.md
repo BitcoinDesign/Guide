@@ -6,7 +6,19 @@ parent: Glossary
 nav_order: 3
 permalink: /guide/glossary/node/
 main_classes: -no-top-padding
+image: https://bitcoin.design/assets/images/guide/glossary/node/node-preview.jpg
 ---
+
+{% include picture.html
+   image = "/assets/images/guide/glossary/node/node.jpg"
+   retina = "/assets/images/guide/glossary/node/node@2x.jpg"
+   mobile = "/assets/images/guide/glossary/node/node.jpg"
+   mobileRetina = "/assets/images/guide/glossary/node/node@2x.jpg"
+   alt-text = "The word 'GO' with an arrow pointing right underneath"
+   width = 1600
+   height = 600
+   layout = "full-width"
+%}
 
 # Node
 
@@ -21,7 +33,7 @@ A node refers to a Bitcoin client that participates in the Bitcoin network. Any 
 {% include image.html
    image = "/assets/images/guide/glossary/node/local-node.png"
    retina = "/assets/images/guide/glossary/node/local-node@2x.png"
-   alt-text = "Coffee icon"
+   alt-text = ""
    width = 100
    height = 100
    layout = "float-left"
@@ -38,7 +50,7 @@ A very simple setup is to use an application like Bitcoin Core that combindes no
 {% include image.html
    image = "/assets/images/guide/glossary/node/hardware-node.png"
    retina = "/assets/images/guide/glossary/node/hardware-node@2x.png"
-   alt-text = "Coffee icon"
+   alt-text = ""
    width = 100
    height = 100
    layout = "float-left"
@@ -55,7 +67,7 @@ Separating node and wallet functionality, many users rely on a dedicated compute
 {% include image.html
    image = "/assets/images/guide/glossary/node/own-hosted-node.png"
    retina = "/assets/images/guide/glossary/node/own-hosted-node@2x.png"
-   alt-text = "Coffee icon"
+   alt-text = ""
    width = 100
    height = 100
    layout = "float-left"
@@ -72,7 +84,7 @@ While it possible to run a node on a rented server, this partially places the no
 {% include image.html
    image = "/assets/images/guide/glossary/node/third-party-node.png"
    retina = "/assets/images/guide/glossary/node/third-party-node@2x.png"
-   alt-text = "Coffee icon"
+   alt-text = ""
    width = 100
    height = 100
    layout = "float-left"
@@ -89,7 +101,7 @@ A convenient setup is to connect to a node controlled by a third-party, which is
 {% include image.html
    image = "/assets/images/guide/glossary/node/multiple-third-party-nodes.png"
    retina = "/assets/images/guide/glossary/node/multiple-third-party-nodes@2x.png"
-   alt-text = "Coffee icon"
+   alt-text = ""
    width = 100
    height = 100
    layout = "float-left"
@@ -106,7 +118,7 @@ Connecting to multiple untrusted third-parties can be a good idea if compact blo
 {% include image.html
    image = "/assets/images/guide/glossary/node/third-party-api.png"
    retina = "/assets/images/guide/glossary/node/third-party-api@2x.png"
-   alt-text = "Coffee icon"
+   alt-text = ""
    width = 100
    height = 100
    layout = "float-left"
@@ -129,7 +141,7 @@ Full nodes are Bitcoin clients that fully verify and enforce the rules of the Bi
 {% include image.html
    image = "/assets/images/guide/glossary/node/archival-node.png"
    retina = "/assets/images/guide/glossary/node/archival-node@2x.png"
-   alt-text = "Coffee icon"
+   alt-text = ""
    width = 100
    height = 100
    layout = "float-left"
@@ -144,7 +156,7 @@ Full nodes are Bitcoin clients that fully verify and enforce the rules of the Bi
 {% include image.html
    image = "/assets/images/guide/glossary/node/pruned-node.png"
    retina = "/assets/images/guide/glossary/node/pruned-node@2x.png"
-   alt-text = "Coffee icon"
+   alt-text = ""
    width = 100
    height = 100
    layout = "float-left"
@@ -163,7 +175,7 @@ Light nodes are Bitcoin clients that do not verify or enforce the rules of the B
 {% include image.html
    image = "/assets/images/guide/glossary/node/spv-node.png"
    retina = "/assets/images/guide/glossary/node/spv-node@2x.png"
-   alt-text = "Coffee icon"
+   alt-text = ""
    width = 100
    height = 100
    layout = "float-left"
@@ -181,7 +193,7 @@ Light nodes are Bitcoin clients that do not verify or enforce the rules of the B
 {% include image.html
    image = "/assets/images/guide/glossary/node/bloom-filter-node.png"
    retina = "/assets/images/guide/glossary/node/bloom-filter-node@2x.png"
-   alt-text = "Coffee icon"
+   alt-text = ""
    width = 100
    height = 100
    layout = "float-left"
