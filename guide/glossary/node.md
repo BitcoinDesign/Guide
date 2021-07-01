@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Node
-description: A Bitcoin address is an identifier of 26-35 alphanumeric characters that is used to receive bitcoin
+description: A node refers to a Bitcoin client that participates in the Bitcoin network.
 parent: Glossary
 nav_order: 3
 permalink: /guide/glossary/node/
@@ -12,11 +12,11 @@ image: https://bitcoin.design/assets/images/guide/glossary/node/node-preview.jpg
 {% include picture.html
    image = "/assets/images/guide/glossary/node/node.jpg"
    retina = "/assets/images/guide/glossary/node/node@2x.jpg"
-   mobile = "/assets/images/guide/glossary/node/node.jpg"
-   mobileRetina = "/assets/images/guide/glossary/node/node@2x.jpg"
-   alt-text = "The word 'GO' with an arrow pointing right underneath"
+   mobile = "/assets/images/guide/glossary/node/node-mobile.jpg"
+   mobileRetina = "/assets/images/guide/glossary/node/node-mobile@2x.jpg"
+   alt-text = "Network graph of Bitcoin node connections"
    width = 1600
-   height = 600
+   height = 500
    layout = "full-width"
 %}
 
