@@ -24,9 +24,18 @@ image: https://bitcoin.design/assets/images/guide/glossary/node/node-preview.jpg
 
 A node refers to a Bitcoin client that participates in the Bitcoin network. Any Bitcoin application that wants to show and send transactions needs a way to connect to a node and manage block data and there are many ways to make this work.
 
+There are multiple aspects that differentiate nodes:
+- Is it controlled by you or someone else? How much trust is involved?
+- Does it verify the data it receives?
+- Does it store all transaction data or only data relevant to you?
+- Security considerations, such as the risk of receiving manipulated data
+- Privacy considerations, such as tracing your transaction behavior
+
 ## Common node setups
 
-### Local node
+From complete control to fully trusting a single third party, there are a variety of node setups. Below are examples of common ones.
+
+#### Local node
 
 <div class="center" markdown="1">
 
@@ -43,7 +52,7 @@ A very simple setup is to use an application like Bitcoin Core that combindes no
 
 </div>
 
-### Hardware node
+#### Hardware node
 
 <div class="center" markdown="1">
 
@@ -60,7 +69,7 @@ Separating node and wallet functionality, many users rely on a dedicated compute
 
 </div>
 
-### Self-hosted node
+#### Self-hosted node
 
 <div class="center" markdown="1">
 
@@ -77,7 +86,7 @@ While it possible to run a node on a rented server, this partially places the no
 
 </div>
 
-### Third-party node
+#### Third-party node
 
 <div class="center" markdown="1">
 
@@ -94,7 +103,7 @@ A convenient setup is to connect to a node controlled by a third-party, which is
 
 </div>
 
-### Multiple third-party nodes
+#### Multiple third-party nodes
 
 <div class="center" markdown="1">
 
@@ -111,7 +120,7 @@ Connecting to multiple untrusted third-parties can be a good idea if compact blo
 
 </div>
 
-### Third-party API
+#### Third-party API
 
 <div class="center" markdown="1">
 
@@ -130,7 +139,7 @@ Third-party APIs should be avoided. These are custom connection mechanisms built
 
 ## Block data management
 
-The relatioinship between nodes and wallet is one factor, another factor is how nodes request, store and verify block data.
+Based on use case and context, some nodes are very thorough and store and verify the complete block chain, while others are optimized for efficiency and may accept slight security and privacy tradeoffs.
 
 #### Full nodes
 
