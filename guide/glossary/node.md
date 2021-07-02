@@ -192,6 +192,8 @@ Light nodes are Bitcoin clients that do not verify or enforce the rules of the B
 
 **Simplified payment verification (SPV) light nodes** query and download block headers from full nodes making it possible for users to verify transactions without running a full node.
 
+For more information:
+
    - [Bitcoin Wiki SPV](https://en.bitcoinwiki.org/wiki/Simplified_Payment_Verification)
    - [Bitcoin whitepaper - section 8](https://bitcoin.org/bitcoin.pdf)
 
@@ -210,6 +212,7 @@ Light nodes are Bitcoin clients that do not verify or enforce the rules of the B
 
 **Neutrino light nodes** uses the Neutrino protocol. The Neutrino protocol uses compact block filters to query and download condensed representations of blocks that contain transaction data relevant to the user.
 
+For more information:
    - [Bitcoin Optech - block filters](https://bitcoinops.org/en/topics/compact-block-filters/)
    - [GitHub Neutrino repo](https://github.com/lightninglabs/neutrino)
 
