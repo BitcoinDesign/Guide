@@ -201,7 +201,7 @@ A standard for multi-signature that uses Schnorr signatures. Previously, the mor
 
 ### [Node]({{ '/guide/glossary/node/' | relative_url }})
 
-Node refers to [software]({{ '/guide/getting-started/software/#nodes' | relative_url }}) that participates in the bitcoin network. It exchanges transaction data with other nodes, stores some or all of it, and verifies that transactions are valid. There is also dedicated [node hardware]({{ '/guide/getting-started/hardware/#hardware-wallets' | relative_url }}).
+Node refers to [software]({{ '/guide/getting-started/software/#nodes' | relative_url }}) that participates in the Bitcoin network. It exchanges transaction data with other nodes, stores some or all of it, and verifies that transactions are valid. There is also dedicated [node hardware]({{ '/guide/getting-started/hardware/#hardware-wallets' | relative_url }}).
 
 [Read more]({{ '/guide/glossary/node/' | relative_url }})
 
