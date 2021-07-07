@@ -58,7 +58,7 @@ Editor's notes
 
 **The community maintains several design files for this guide and related projects. You can duplicate, use and modify them as you like.**
 
-There is no design tool yet that provides a public, open, and communal collaboration platform. At the moment many of us use Figma, as it comes closest. You can also use other design tools and workflows of your choice.
+There is no design tool yet that provides public, open, and communal collaboration platform. At the moment, many of us use Figma, as it comes closest. You can also use other design tools and workflows of your choice.
 
 These files are licensed under [CC-BY](https://creativecommons.org/licenses/by/4.0/) and you may use them freely for personal and commercial purposes. It would be fantastic if you could also help improve the work with comments, feedback and edits.
 
