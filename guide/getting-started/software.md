@@ -176,3 +176,10 @@ Mining has become primarily a professional undertaking with dedicated software t
 ---
 
 Some bitcoin features and functionality are best handled by [dedicated hardware]({{ '/guide/getting-started/hardware/' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/getting-started/technology-primer/"
+   previousName = "Technology primer"
+   nextUrl = "/guide/getting-started/hardware/"
+   nextName = "Hardware overview"
+%}

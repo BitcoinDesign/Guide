@@ -206,3 +206,10 @@ In digital product design, there are times when a minimally expressive approach 
 ---
 
 As you have seen, Bitcoin is shaped by its user base. Now, let's go under the hood with the [technology primer]({{ '/guide/getting-started/technology-primer/' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/getting-started/why-bitcoin-is-unique/"
+   previousName = "Why Bitcoin is unique"
+   nextUrl = "/guide/getting-started/technology-primer/"
+   nextName = "Technology primer"
+%}

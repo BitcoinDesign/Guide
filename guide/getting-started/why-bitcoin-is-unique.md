@@ -113,3 +113,10 @@ It's only appropriate that the bitcoin ecosystem is being developed by teams and
 ---
 
 Still not sure where to start? Check out the next section, [the visual language of bitcoin]({{ '/guide/getting-started/visual-language/' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/getting-started/introduction/"
+   previousName = "Getting started"
+   nextUrl = "/guide/getting-started/visual-language/"
+   nextName = "Visual language"
+%}

@@ -354,3 +354,10 @@ Now, if you'd like to go all the way to the beginning of Bitcoin, the most funda
 ---
 
 Take a look at how these technologies are implemented in the various types of [bitcoin software]({{ '/guide/getting-started/software/' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/getting-started/visual-language/"
+   previousName = "Visual language"
+   nextUrl = "/guide/getting-started/software/"
+   nextName = "Software overview"
+%}
