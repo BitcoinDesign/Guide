@@ -15,6 +15,10 @@ Editor's notes
 
 An overview of what different private key management schemes there are, and how to choose one depending on use case.
 
+Illustration sources
+
+https://www.figma.com/community/file/995256542920917246/BDG---Private-key-management-illustrations
+
 -->
 
 {% include picture.html

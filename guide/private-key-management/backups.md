@@ -17,7 +17,7 @@ A guide meant to lower the barrier for first time users of self-custody wallets.
 
 Illustration sources
 
-//
+https://www.figma.com/community/file/995256542920917246/BDG---Private-key-management-illustrations
 
 -->
 
