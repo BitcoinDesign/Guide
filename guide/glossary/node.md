@@ -48,7 +48,7 @@ From complete control to fully trusting a single third party, there are a variet
    layout = "float-left"
 %}
 
-A very simple setup is to use an application like Bitcoin Core that combindes node and wallet functionality.
+A very simple setup is to use an application like Bitcoin Core that combines node and wallet functionality.
 
 </div>
 
