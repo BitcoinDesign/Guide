@@ -210,7 +210,7 @@ For more information:
    layout = "float-left"
 %}
 
-**Neutrino light nodes** uses the Neutrino protocol. The Neutrino protocol uses compact block filters to query and download condensed representations of blocks that contain transaction data relevant to the user.
+**Neutrino light nodes** use the Neutrino protocol. The Neutrino protocol uses compact block filters to query and download condensed representations of blocks that contain transaction data relevant to the user.
 
 For more information:
    - [Bitcoin Optech - block filters](https://bitcoinops.org/en/topics/compact-block-filters/)
