@@ -13,6 +13,12 @@ image: https://bitcoin.design/assets/images/guide/case-studies/page-case-studies
 
 Editor's notes
 
+Chapter overview for the various case studies.
+
+Illustration sources
+
+https://www.figma.com/community/file/995256542920917246/BDG---Private-key-management-illustrations
+
 -->
 
 {% include picture.html

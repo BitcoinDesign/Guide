@@ -39,6 +39,12 @@ images:
 
 Editor's notes
 
+Shared account case study.
+
+Illustration sources
+
+https://www.figma.com/community/file/968416729557947210
+
 -->
 
 # Shared account

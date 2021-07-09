@@ -29,6 +29,12 @@ images:
 
 Editor's notes
 
+Upgradeable wallet case study.
+
+Illustration sources
+
+https://www.figma.com/community/file/968416729557947210
+
 -->
 
 # Upgradeable wallet
