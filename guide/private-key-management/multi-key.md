@@ -38,6 +38,8 @@ In the case of a personal wallet, one individual will control all the keys but h
 
 In the case of a shared wallet, different people will control the keys. The number of keys and required co-signers will depend on the use case. With spouses sharing a *joint account*, a simple 1-of-2 multi-key setup might suffice, meaning there are two keys but only one is required to sign for a transaction to be valid. At the other end of a spectrum a company might require a more complex 3-of-5 setup, requiring three of the five co-signers to approve any transaction.
 
+Since this is a common misunderstanding, we would like to remember that the usage of the multiple keys is necessary only for signing outgoing transactions, but not for receiving funds.
+
 Multi-key schemes can raise the security, since anyone needs access to more than one key to move any funds. But clearly it also increases complexity and the requirements on the user to keep even more keys securely stored and/or backed up.
 
 ### How it works
