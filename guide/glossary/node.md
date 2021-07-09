@@ -65,7 +65,7 @@ A very simple setup is to use an application like Bitcoin Core that combines nod
    layout = "float-left"
 %}
 
-Separating node and wallet functionality, many users rely on a dedicated computer like a Rasperry Pi running software like Umbrel, MyNode, and Raspiblitz. Wallet applications can connect to the node which allows them to be more lightweight.
+Separating node and wallet functionality, many users rely on a dedicated computer like a Raspberry Pi running software like Umbrel, MyNode, and Raspiblitz. Wallet applications can connect to the node which allows them to be more lightweight.
 
 </div>
 
