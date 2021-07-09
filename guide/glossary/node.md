@@ -156,7 +156,7 @@ Full nodes are Bitcoin clients that fully verify and enforce the rules of the Bi
    layout = "float-left"
 %}
 
-**Archival full nodes** store the entire Bitcoin block chain, and send historical data to other nodes.
+**Archival full nodes** store the entire Bitcoin blockchain, and send historical data to other nodes.
 
 </div>
 
