@@ -139,7 +139,7 @@ Third-party APIs should be avoided. These are custom connection mechanisms built
 
 ## Block data management
 
-Based on use case and context, some nodes are very thorough and store and verify the complete block chain, while others are optimized for efficiency and may accept slight security and privacy tradeoffs.
+Based on use case and context, some nodes are very thorough and store and verify the complete blockchain, while others are optimized for efficiency and may accept slight security and privacy tradeoffs.
 
 #### Full nodes
 
