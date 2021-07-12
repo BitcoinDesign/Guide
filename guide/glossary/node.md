@@ -99,7 +99,7 @@ While it possible to run a node on a rented server, this partially places the no
    layout = "float-left"
 %}
 
-A convenient setup is to connect to a node controlled by a third-party, which is only recommended if there is a good trust relationship.
+Connecting to a single node controlled by a third-party is a convenient setup for starters, or when the economic cost of running a node is too high. This should only be used if there is a good trust relationship or potential loss is minimal. Too many user relying on third-party nodes can lead to centralization, so it is generally discouraged.
 
 </div>
 
