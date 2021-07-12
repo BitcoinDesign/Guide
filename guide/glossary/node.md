@@ -86,23 +86,6 @@ While it possible to run a node on a rented server, this partially places the no
 
 </div>
 
-#### Third-party node
-
-<div class="center" markdown="1">
-
-{% include image.html
-   image = "/assets/images/guide/glossary/node/third-party-node.png"
-   retina = "/assets/images/guide/glossary/node/third-party-node@2x.png"
-   alt-text = ""
-   width = 100
-   height = 100
-   layout = "float-left"
-%}
-
-Connecting to a single node controlled by a third-party is a convenient setup for starters, or when the economic cost of running a node is too high. This should only be used if there is a good trust relationship or potential loss is minimal. Too many user relying on third-party nodes can lead to centralization, so it is generally discouraged.
-
-</div>
-
 #### Multiple third-party nodes
 
 <div class="center" markdown="1">
@@ -117,6 +100,23 @@ Connecting to a single node controlled by a third-party is a convenient setup fo
 %}
 
 Connecting to multiple untrusted third-parties can be a good idea if compact block filters are used. This prevents third parties from analyzing which data belongs to the user, an important privacy benefit. It also reduces the risk of receiving manipulated data from a single third-party node, as data from multiple sources can be compared.
+
+</div>
+
+#### Third-party node
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/glossary/node/third-party-node.png"
+   retina = "/assets/images/guide/glossary/node/third-party-node@2x.png"
+   alt-text = ""
+   width = 100
+   height = 100
+   layout = "float-left"
+%}
+
+Connecting to a single node controlled by a third-party is a convenient setup for starters, or when the economic cost of running a node is too high. This should only be used if there is a good trust relationship or potential loss is minimal. Too many user relying on third-party nodes can lead to centralization, so it is generally discouraged.
 
 </div>
 
