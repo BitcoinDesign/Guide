@@ -22,7 +22,7 @@ image: https://bitcoin.design/assets/images/guide/onboarding/creating-a-new-wall
 
 # Creating a new wallet
 
-First, bitcoin [wallets]({{ 'guide/glossary/#wallet' | relative_url }}) are not analogous to their namesakes. Physical wallets are places to store physical currency, credit cards, IDs, and so on. Bitcoin wallets don't store bitcoin. However, the [self custodial]({{ 'guide/glossary/#non-custodial--custodial-wallet' | relative_url }})  nature of bitcoin wallets gives users full control of what they do with their bitcoin.
+First, bitcoin [wallets]({{ 'guide/glossary/#wallet' | relative_url }}) are not analogous to their namesakes. Physical wallets are places to store physical currency, credit cards, IDs, and so on. Bitcoin wallets don't store bitcoin. However, the [self custodial]({{ 'guide/glossary/wallet/#non-custodial--custodial-wallet' | relative_url }})  nature of bitcoin wallets gives users full control of what they do with their bitcoin.
 
 Instead, a Bitcoin wallet contains the "private keys" to a users bitcoin. The bitcoin is located on the Bitcoin network that contains a public ledger similar in many ways to a spreadsheet with a record of everyone's transactions and balances. Private keys let users access bitcoin associated with those keys. A more suitable analogy for a Bitcoin wallet would be a keychain.
 
