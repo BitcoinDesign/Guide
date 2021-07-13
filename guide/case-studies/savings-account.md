@@ -5,33 +5,109 @@ description: Case study for a Bitcoin wallet designed for storing medium amounts
 nav_order: 2
 parent: Case studies
 permalink: /guide/case-studies/savings-account/
+main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/case-studies/multisig-wallet/multisig-wallet-preview.jpg
 image_base: /assets/images/guide/case-studies/multisig-wallet/
-images:
-    - file: first
-      alt: A mobile Bitcoin wallet landing scree.
-      caption: Cover screen with a clear statement of the application purpose.
-    - file: second
-      alt: Mobile app screen with text and user options to create or import a wallet.
-      caption: Introduction to the security concept with clear next steps.
-    - file: create-multi-key-wallet
-      alt: Mobile app screen with 3 steps to create main, signing, and recovery keys.
-      caption: A 3-step process is used to guide the user through the key setup.
-    - file: create-signing-key
-      alt: 3-step screen with the second step expanded
-      caption: The second key is created on a user-controlled external device to avoid a single point of failure.
-    - file: external-device-setup
-      alt: Mobile app screen that tells the user to connect a hardware wallet.
-      caption: Guides the user through the process of connecting a hardware wallet.
-    - file: create-recovery-key
-      alt: 3-step screen with the third step expanded
-      caption: The third key is stored on the servers of the application provider.
-    - file: creation-complete
-      alt: Mobile app screen confirming successful wallet creation.
-      caption: Let users know that the setup process was successful.
-    - file: home
-      alt: Mobile app screen for the main wallet overview
-      caption: Once the wallet is set up, users are ready to go.
+images_onboarding:
+    - file: onboarding/cover
+      alt:
+      caption:
+    - file: onboarding/intro
+      alt:
+      caption:
+    - file: onboarding/pin
+      alt:
+      caption:
+    - file: onboarding/key-overview
+      alt:
+      caption:
+    - file: onboarding/key-1-intro
+      alt:
+      caption:
+    - file: onboarding/key-1-service
+      alt:
+      caption:
+    - file: onboarding/key-1-complete
+      alt:
+      caption:
+    - file: onboarding/key-2-device-type
+      alt:
+      caption:
+    - file: onboarding/key-2-step-1
+      alt:
+      caption:
+    - file: onboarding/key-2-step-2
+      alt:
+      caption:
+    - file: onboarding/key-2-step-3
+      alt:
+      caption:
+    - file: onboarding/key-2-step-4
+      alt:
+      caption:
+    - file: onboarding/key-2-complete
+      alt:
+      caption:
+    - file: onboarding/key-3
+      alt:
+      caption:
+    - file: onboarding/complete
+      alt:
+      caption:
+images_send_auto:
+    - file: send/home
+      alt:
+      caption:
+    - file: send/amount
+      alt:
+      caption:
+    - file: send/amount-low
+      alt:
+      caption:
+    - file: send/amount-low-confirm
+      alt:
+      caption:
+images_send_manual:
+    - file: send/amount-high
+      alt:
+      caption:
+    - file: send/amount-high-step-1
+      alt:
+      caption:
+    - file: send/amount-high-step-2
+      alt:
+      caption:
+    - file: send/amount-high-step-3
+      alt:
+      caption:
+    - file: send/amount-high-step-4
+      alt:
+      caption:
+    - file: send/amount-high-step-5
+      alt:
+      caption:
+    - file: send/amount-high-confirm
+      alt:
+      caption:
+images_recovery:
+    - file: recovery/settings
+      alt:
+      caption:
+    - file: recovery/options
+      alt:
+      caption:
+    - file: recovery/luck
+      alt:
+      caption:
+    - file: recovery/cost
+      alt:
+      caption:
+    - file: recovery/device-registration
+      alt:
+      caption:
+    - file: recovery/complete
+      alt:
+      caption:
 ---
 
 <!--
@@ -39,6 +115,18 @@ images:
 Editor's notes
 
 -->
+
+{% include picture.html
+   image = "/assets/images/guide/case-studies/multisig-wallet/savings-account-header.jpg"
+   retina = "/assets/images/guide/case-studies/multisig-wallet/savings-account-header@2x.jpg"
+   mobile = "/assets/images/guide/case-studies/multisig-wallet/savings-account-header-mobile.jpg"
+   mobileRetina = "/assets/images/guide/case-studies/multisig-wallet/savings-account-header-mobile@2x.jpg"
+   alt-text = "Bar chart showing various spending categories"
+   caption = ""
+   width = 1600
+   height = 600
+   layout = "full-width"
+%}
 
 # Savings account
 
@@ -62,11 +150,11 @@ Should they lose either their main mobile device, or the purpose-built signing d
 The following prototype outlines how the onboarding and key recovery user experiences could be structured.
 
 {% include prototype.html
-   link = "https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=6%3A11&viewport=333%2C41%2C0.37497082352638245&scaling=scale-down"
-   image = "/assets/images/guide/case-studies/multisig-wallet/case-current.png"
-   retina = "/assets/images/guide/case-studies/multisig-wallet/case-current@2x.png"
-   mobile = "/assets/images/guide/case-studies/multisig-wallet/case-current-mobile.png"
-   mobileRetina = "/assets/images/guide/case-studies/multisig-wallet/case-current-mobile@2x.png"
+   link = "https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=1%3A55974&viewport=-2578%2C-212%2C0.6596679091453552&scaling=scale-down"
+   image = "/assets/images/guide/case-studies/multisig-wallet/case-current.jpg"
+   retina = "/assets/images/guide/case-studies/multisig-wallet/case-current@2x.jpg"
+   mobile = "/assets/images/guide/case-studies/multisig-wallet/case-current-mobile.jpg"
+   mobileRetina = "/assets/images/guide/case-studies/multisig-wallet/case-current-mobile@2x.jpg"
    alt-text = "Image of case study prototype"
    width = 800
    height = 500
@@ -88,7 +176,79 @@ The wireframe screens below show the main onboarding sequence that guides users 
 
 <div class="image-slide-gallery">
 
-{% for item in page.images %}
+{% for item in page.images_onboarding %}
+
+{% capture imageURL %}{{ page.image_base }}{{ item.file }}.png{% endcapture %}
+{% capture imageURLRetina %}{{ page.image_base }}{{ item.file }}@2x.png{% endcapture %}
+
+{% include picture.html
+   image = imageURL
+   retina = imageURLRetina
+   alt-text = item.alt
+   caption = item.caption
+   width = 250
+   height = 541
+   layout = "shadow"
+%}
+{% endfor %}
+
+</div>
+
+### Making small payments
+
+The wireframe screens below show the main onboarding sequence that guides users through the creation of the wallet.
+
+<div class="image-slide-gallery">
+
+{% for item in page.images_send_auto %}
+
+{% capture imageURL %}{{ page.image_base }}{{ item.file }}.png{% endcapture %}
+{% capture imageURLRetina %}{{ page.image_base }}{{ item.file }}@2x.png{% endcapture %}
+
+{% include picture.html
+   image = imageURL
+   retina = imageURLRetina
+   alt-text = item.alt
+   caption = item.caption
+   width = 250
+   height = 541
+   layout = "shadow"
+%}
+{% endfor %}
+
+</div>
+
+### Making large payments
+
+The wireframe screens below show the main onboarding sequence that guides users through the creation of the wallet.
+
+<div class="image-slide-gallery">
+
+{% for item in page.images_send_manual %}
+
+{% capture imageURL %}{{ page.image_base }}{{ item.file }}.png{% endcapture %}
+{% capture imageURLRetina %}{{ page.image_base }}{{ item.file }}@2x.png{% endcapture %}
+
+{% include picture.html
+   image = imageURL
+   retina = imageURLRetina
+   alt-text = item.alt
+   caption = item.caption
+   width = 250
+   height = 541
+   layout = "shadow"
+%}
+{% endfor %}
+
+</div>
+
+### Key recovery
+
+The wireframe screens below show the main onboarding sequence that guides users through the creation of the wallet.
+
+<div class="image-slide-gallery">
+
+{% for item in page.images_recovery %}
 
 {% capture imageURL %}{{ page.image_base }}{{ item.file }}.png{% endcapture %}
 {% capture imageURLRetina %}{{ page.image_base }}{{ item.file }}@2x.png{% endcapture %}
