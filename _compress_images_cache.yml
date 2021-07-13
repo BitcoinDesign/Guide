@@ -712,6 +712,33 @@ assets/images/guide/glossary/glossary-preview.png: glossary-preview.png
 assets/images/guide/glossary/glossary.png: glossary.png
 assets/images/guide/glossary/glossary@1x.png: glossary@1x.png
 assets/images/guide/glossary/glossary@2x.png: glossary@2x.png
+assets/images/guide/glossary/node/archival-node.png: archival-node.png
+assets/images/guide/glossary/node/archival-node@2x.png: archival-node@2x.png
+assets/images/guide/glossary/node/bloom-filter-node.png: bloom-filter-node.png
+assets/images/guide/glossary/node/bloom-filter-node@2x.png: bloom-filter-node@2x.png
+assets/images/guide/glossary/node/hardware-node.png: hardware-node.png
+assets/images/guide/glossary/node/hardware-node@2x.png: hardware-node@2x.png
+assets/images/guide/glossary/node/local-node.png: local-node.png
+assets/images/guide/glossary/node/local-node@2x.png: local-node@2x.png
+assets/images/guide/glossary/node/multiple-third-party-nodes.png: multiple-third-party-nodes.png
+assets/images/guide/glossary/node/multiple-third-party-nodes@2x.png: multiple-third-party-nodes@2x.png
+assets/images/guide/glossary/node/node-mobile.jpg: node-mobile.jpg
+assets/images/guide/glossary/node/node-mobile@2x.jpg: node-mobile@2x.jpg
+assets/images/guide/glossary/node/node-preview.jpg: node-preview.jpg
+assets/images/guide/glossary/node/node.jpg: node.jpg
+assets/images/guide/glossary/node/node@2x.jpg: node@2x.jpg
+assets/images/guide/glossary/node/own-hosted-node.png: own-hosted-node.png
+assets/images/guide/glossary/node/own-hosted-node@2x.png: own-hosted-node@2x.png
+assets/images/guide/glossary/node/pruned-node-1.png: pruned-node-1.png
+assets/images/guide/glossary/node/pruned-node.png: pruned-node.png
+assets/images/guide/glossary/node/pruned-node@2x-1.png: pruned-node@2x-1.png
+assets/images/guide/glossary/node/pruned-node@2x.png: pruned-node@2x.png
+assets/images/guide/glossary/node/spv-node.png: spv-node.png
+assets/images/guide/glossary/node/spv-node@2x.png: spv-node@2x.png
+assets/images/guide/glossary/node/third-party-api.png: third-party-api.png
+assets/images/guide/glossary/node/third-party-api@2x.png: third-party-api@2x.png
+assets/images/guide/glossary/node/third-party-node.png: third-party-node.png
+assets/images/guide/glossary/node/third-party-node@2x.png: third-party-node@2x.png
 assets/images/guide/glossary/wallet.jpg: wallet.jpg
 assets/images/guide/glossary/wallet@2x.jpg: wallet@2x.jpg
 assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/auto-backup-intro.png: auto-backup-intro.png
@@ -728,7 +755,7 @@ assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-back
 assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-confirmation@2x.png: cloud-backup-confirmation@2x.png
 assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-intro.png: cloud-backup-intro.png
 assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-intro@2x.png: cloud-backup-intro@2x.png
-assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-password @2x.png: cloud-backup-password
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-password @2x.png: cloud-backup-password@2x.png
 assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-password.png: cloud-backup-password.png
 assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-password@2x.png: cloud-backup-password@2x.png
 assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-PIN.png: cloud-backup-PIN.png
@@ -750,7 +777,7 @@ assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/confir
 assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/confirm-recovery-phrase-entry@2x.png: confirm-recovery-phrase-entry@2x.png
 assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/confirm-recovery-phrase.png: confirm-recovery-phrase.png
 assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/confirm-recovery-phrase@2x.png: confirm-recovery-phrase@2x.png
-assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase- reveal@2x.png: copy-recovery-phrase-
+assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase- reveal@2x.png: copy-recovery-phrase-reveal@2x.png
 assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-all-at-once.png: copy-recovery-phrase-all-at-once.png
 assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-all-at-once@2x.png: copy-recovery-phrase-all-at-once@2x.png
 assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-columns.png: copy-recovery-phrase-columns.png
