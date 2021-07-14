@@ -14,113 +14,113 @@ images_onboarding:
       caption:
     - file: onboarding/intro
       alt:
-      caption:
+      caption: Introduces the user to the setup flow and informs them about having a signing device at hand.
     - file: onboarding/pin
       alt:
-      caption:
+      caption: PIN entry, which is used for encrypting key and user data.
     - file: onboarding/key-overview
       alt:
-      caption:
+      caption: Overview of the key setup process.
     - file: onboarding/key-1-intro
       alt:
-      caption:
+      caption: Explanation of how Key 1 is set up.
     - file: onboarding/key-1-service
       alt:
-      caption:
+      caption: Choice of cloud storage provider.
     - file: onboarding/key-1-complete
       alt:
-      caption:
+      caption: Success message when Key 1 is created and secured.
     - file: onboarding/key-2-device-type
       alt:
-      caption:
+      caption: Choice of signing device for Key 2.
     - file: onboarding/key-2-step-1
       alt:
-      caption:
+      caption: Introduction to the key creation process via the signing device.
     - file: onboarding/key-2-step-2
       alt:
-      caption:
+      caption: Step 1 is to export the XPUB on the ColdCard.
     - file: onboarding/key-2-step-3
       alt:
-      caption:
+      caption: Step 2 is to connect the SD card from thae ColdCard to the phone.
     - file: onboarding/key-2-step-4
       alt:
-      caption:
+      caption: The card was detected and the XPUB copied.
     - file: onboarding/key-2-complete
       alt:
-      caption:
+      caption: Success message when Key 2 is created and secured.
     - file: onboarding/key-3
       alt:
-      caption:
+      caption: Summary of how Key 3 is set up and the auto-signing functionality.
     - file: onboarding/complete
       alt:
-      caption:
+      caption: Final success message that the wallet is ready.
 images_send_auto:
     - file: send/home
       alt:
-      caption:
+      caption: Basic home screen to access send and receive functionality.
     - file: send/amount-low
       alt:
-      caption:
+      caption: The user has entered an amount that is within the auto-signing limits.
     - file: send/amount-low-confirm
       alt:
-      caption:
+      caption: Once the user taps “Send”, the auto-signer approves and broadcasts the transaction.
 images_send_manual:
     - file: send/amount-high
       alt:
-      caption:
+      caption: The user has entered an amount that is beyond the auto-signing limits, and a note appears about manual approval.
     - file: send/amount-high-step-1
       alt:
-      caption:
+      caption: Prepare the user for the signing steps.
     - file: send/amount-high-step-2
       alt:
-      caption:
+      caption: Connect the SD card to save the PSBT file.
     - file: send/amount-high-step-3
       alt:
-      caption:
+      caption: Describes how to sign the PSBT file on the Coldcard.
     - file: send/amount-high-step-4
       alt:
-      caption:
+      caption: Loading the (now signed) PSBT file back into the app.
     - file: send/amount-high-step-5
       alt:
-      caption:
+      caption: Found it.
     - file: send/amount-high-confirm
       alt:
-      caption:
+      caption: The user has one more chance to review the transaction before sending it.
 images_recovery:
     - file: recovery/settings
       alt:
-      caption:
+      caption: A simplified settings screen to access key recovery.
     - file: recovery/options
       alt:
-      caption:
+      caption: User options to identify which key they lost access to.
     - file: recovery/luck
       alt:
-      caption:
+      caption: If recovery is possible, the user is informed about the process.
     - file: recovery/cost
       alt:
-      caption:
+      caption: Additional messaging about recovery costs.
     - file: recovery/device-registration
       alt:
-      caption:
+      caption: Repeat the device registration flow from the onboarding sequencc.
     - file: recovery/complete
       alt:
-      caption:
+      caption: A confirmation that the recovery is complete and the new wallet is ready for use.
 images_limits:
     - file: limits/settings
       alt:
-      caption:
+      caption: A simplified settings screen to access the auto-signer limits.
     - file: limits/limits
       alt:
-      caption:
+      caption: Overview of current limits with options to change them.
     - file: limits/change-intro
       alt:
-      caption:
+      caption: Inform users that limit changes require approval via the signing device.
     - file: limits/change-flow
       alt:
-      caption:
+      caption: Approval requires signing a message via the signing device.
     - file: limits/change-confirmation
       alt:
-      caption:
+      caption: Success message that limits were updated.
 ---
 
 <!--
