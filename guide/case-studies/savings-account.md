@@ -58,9 +58,6 @@ images_send_auto:
     - file: send/home
       alt:
       caption:
-    - file: send/amount
-      alt:
-      caption:
     - file: send/amount-low
       alt:
       caption:
