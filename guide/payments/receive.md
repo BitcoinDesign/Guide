@@ -50,7 +50,7 @@ The simplest way to receive bitcoin is by generating and sharing a Bitcoin addre
 </div>
 
 {% include tip/tip.html %}
-There are several types of addresses. Sharing one that is incompatible with the sender's wallet application can prevent a successful payment. Read more about [address compatibility]({{ '/guide/glossary/#address-compatibility' | relative_url }}) issues in the glossary.
+There are several types of addresses. Sharing one that is incompatible with the sender's wallet application can prevent a successful payment. Read more about [address compatibility]({{ '/guide/glossary/address/#address-compatibility' | relative_url }}) issues in the glossary.
 {% include tip/close.html %}
 
 ## Inputting additional payment details

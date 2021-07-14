@@ -61,7 +61,7 @@ The sender needs a valid address for the payment to be sent to. This can be shar
 The wallet application guides the sender through collecting the required information (address and amount) and any optional configurations (which coins to send, fee options) in order to create a transaction.
 
 #### 3. Signing
-The transaction needs to be signed by the [private key(s)]({{ '/guide/glossary/#private-key' | relative_url }}) of the input [address(es)]({{ '/guide/glossary/#address' | relative_url }}) to be valid. The signing is often done in the same application after the transaction has created and configured, but this does not have to be the case.
+The transaction needs to be signed by the [private key(s)]({{ '/guide/glossary/#private-key' | relative_url }}) of the input [address(es)]({{ '/guide/glossary/address' | relative_url }}) to be valid. The signing is often done in the same application after the transaction has created and configured, but this does not have to be the case.
 
 #### 4. Broadcasting
 The transaction is broadcasted to a Bitcoin node, normally the one the wallet is connected to.
