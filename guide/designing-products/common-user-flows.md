@@ -541,3 +541,10 @@ This can be a tricky experience to address. For one, non-custodial cryptocurrenc
 ---
 
 On to [wallet interoperability]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }}) which is essential for smooth interaction and migration between Bitcoin products.
+
+{% include next-previous.html
+   previousUrl = "/guide/designing-products/personal-finance/"
+   previousName = "Personal finance"
+   nextUrl = "/guide/designing-products/wallet-interoperability/"
+   nextName = "Wallet interoperability"
+%}

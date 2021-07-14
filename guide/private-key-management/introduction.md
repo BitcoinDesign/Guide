@@ -77,4 +77,9 @@ A straightforward guide to safe manual backups.
 
 ---
 
-Start at the top with [private key schemes]({{ '/guide/private-key-management/overview/' | relative_url }}).
+{% include next-previous.html
+   previousUrl = "/guide/onboarding/funding-a-wallet/"
+   previousName = "Funding a wallet"
+   nextUrl = "/guide/private-key-management/overview/"
+   nextName = "Overview"
+%}

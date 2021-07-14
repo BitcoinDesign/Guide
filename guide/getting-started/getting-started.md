@@ -66,3 +66,12 @@ Bitcoin applications roughly fall into a defined set of categories, from consume
 ### [Hardware overview]({{ '/guide/getting-started/hardware/' | relative_url }})
 
 Whether it's for security or participating in the network, Bitcoin hardware is an essential part of the ecosystem and user experience.
+
+---
+
+{% include next-previous.html
+   previousUrl = "/guide/"
+   previousName = "Introduction"
+   nextUrl = "/guide/getting-started/why-bitcoin-is-unique/"
+   nextName = "Why Bitcoin is unique"
+%}

@@ -94,3 +94,10 @@ Most bitcoin wallets, including;
 ---
 
 Next, let's look at [external signing devices]({{ '/guide/private-key-management/external-signing-device/' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/private-key-management/cloud-backup/"
+   previousName = "Automatic cloud backup"
+   nextUrl = "/guide/private-key-management/external-signing-device/"
+   nextName = "External signing devices"
+%}

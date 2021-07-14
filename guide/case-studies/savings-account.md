@@ -111,3 +111,12 @@ The wireframe screens below show the main onboarding sequence that guides users 
 - [Figma design file](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=6%3A9)
 - [Use case]({{ '/guide/designing-products/personal-finance/#savings' | relative_url }})
 - [Private key scheme]({{ '/guide/private-key-management/multi-key/' | relative_url }})
+
+---
+
+{% include next-previous.html
+   previousUrl = "/guide/case-studies/cloud-backup/"
+   previousName = "Daily spending"
+   nextUrl = "/guide/case-studies/upgradeable-wallet/"
+   nextName = "Upgradeable wallet"
+%}

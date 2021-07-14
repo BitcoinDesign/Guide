@@ -86,3 +86,12 @@ Get to know the points of interaction and overlap connecting payment links, wall
 
 Shared design source files and a suggested process for collaborating on creative work.
 
+---
+
+{% include next-previous.html
+   previousUrl = "/guide/getting-started/hardware/"
+   previousName = "Hardware overview"
+   nextUrl = "/guide/designing-products/why-design-for-bitcoin/"
+   nextName = "Why design for Bitcoin"
+%}
+

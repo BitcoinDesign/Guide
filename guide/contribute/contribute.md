@@ -70,3 +70,12 @@ Layout and formatting options from headers and blockquotes to images and embeds.
 ---
 
 These contribution guidelines are for the Bitcoin Design Guide project. To get involved with the broader Bitcoin Design Community and projects, check out [general contribution guidelines]({{ '/contribute/' | relative_url }}).
+
+---
+
+{% include next-previous.html
+   previousUrl = "/guide/case-studies/shared-account/"
+   previousName = "Shared account"
+   nextUrl = "/guide/contribute/propose-a-change/"
+   nextName = "Proposing a change"
+%}

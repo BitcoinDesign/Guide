@@ -128,5 +128,5 @@ Ready to learn more about [designing Bitcoin products]({{ '/guide/designing-prod
    previousUrl = "/guide/getting-started/software/"
    previousName = "Software overview"
    nextUrl = "/guide/designing-products/introduction/"
-   nextName = "Next section"
+   nextName = "Designing Bitcoin products"
 %}
