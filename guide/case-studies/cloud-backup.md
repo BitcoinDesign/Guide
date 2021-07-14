@@ -33,8 +33,13 @@ importImages:
 ---
 
 <!--
-
 Editor's notes
+
+Daily spending case study.
+
+Illustration sources
+
+https://www.figma.com/community/file/968416729557947210
 
 -->
 
