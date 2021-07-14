@@ -80,3 +80,9 @@ Most Bitcoin applications share certain user activities, from initial setup to m
 
 Get to know the points of interaction and overlap connecting payment links, wallet recovery, node configurations, and more.
 
+---
+
+### [Design resources]({{ '/guide/designing-products/design-resources/' | relative_url }})
+
+Shared design source files and a suggested process for collaborating on creative work.
+

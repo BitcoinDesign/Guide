@@ -9,6 +9,19 @@ image: https://bitcoin.design/assets/images/guide/private-key-management/cloud-b
 main_classes: -no-top-padding
 ---
 
+<!--
+
+Editor's notes
+
+Description of what an automatic cloud backup scheme consists of.
+
+Illustration sources
+
+https://www.figma.com/community/file/888680264445459448
+https://www.figma.com/community/file/995256542920917246/BDG---Private-key-management-illustrations
+
+-->
+
 {% include picture.html
    image = "/assets/images/guide/private-key-management/cloud-backup/cloud-backup.jpg"
    retina = "/assets/images/guide/private-key-management/cloud-backup/cloud-backup@2x.jpg"

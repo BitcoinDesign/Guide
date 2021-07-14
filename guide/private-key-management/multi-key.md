@@ -13,7 +13,12 @@ main_classes: -no-top-padding
 
 Editor's notes
 
-Descriptions of multi-key schemes.
+Description of what multi-key scheme consists of.
+
+Illustration sources
+
+https://www.figma.com/community/file/888680264445459448
+https://www.figma.com/community/file/995256542920917246/BDG---Private-key-management-illustrations
 
 -->
 
