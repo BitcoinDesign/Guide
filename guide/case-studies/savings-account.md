@@ -108,6 +108,22 @@ images_recovery:
     - file: recovery/complete
       alt:
       caption:
+images_limits:
+    - file: limits/settings
+      alt:
+      caption:
+    - file: limits/limits
+      alt:
+      caption:
+    - file: limits/change-intro
+      alt:
+      caption:
+    - file: limits/change-flow
+      alt:
+      caption:
+    - file: limits/change-confirmation
+      alt:
+      caption:
 ---
 
 <!--
@@ -132,6 +148,21 @@ Editor's notes
 
 In this section, we are looking at a product that is meant to be a replacement for what a bank would call a [savings]({{ '/guide/designing-products/personal-finance/#savings' | relative_url }}) account where the user might store wealth long term. Safeguards against loss will be a higher priority than with a frequent spending product, and we might therefore accept more friction both when setting up the wallet and when transacting. If users have no prior Bitcoin knowledge we should expect to spend a significant effort educating them to put them in a position to safely operate the wallet product.
 
+The following prototype includes initial onboarding, sending bitcoin, and key recovery, which are explained in detail further down.
+
+{% include prototype.html
+   link = "https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=1%3A55974&viewport=-304%2C225%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=1%3A55974&show-proto-sidebar=1"
+   image = "/assets/images/guide/case-studies/multisig-wallet/case-current.jpg"
+   retina = "/assets/images/guide/case-studies/multisig-wallet/case-current@2x.jpg"
+   mobile = "/assets/images/guide/case-studies/multisig-wallet/case-current-mobile.jpg"
+   mobileRetina = "/assets/images/guide/case-studies/multisig-wallet/case-current-mobile@2x.jpg"
+   alt-text = "Image of case study prototype"
+   width = 800
+   height = 500
+%}
+
+### Private key management
+
 A 2-of-3 [multi-key setup]({{ '/guide/private-key-management/multi-key/' | relative_url }}) would seem the most appropriate here, although it will be a significant hurdle in [onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}). Other schemes could be considered but come with distinct downsides for amounts of value we can expect users to store in this use case. A single-key scheme with an [automatic cloud backup]({{ '/guide/private-key-management/multi-key/' | relative_url }}), [recovery phrase]({{ '/guide/private-key-management/manual-backup/' | relative_url }}) or single [signing device]({{ '/guide/private-key-management/external-signing-device/' | relative_url }}) could work at the lower end of the value scale, but start to look like less responsible recommendations with higher values due to their single points of failure.
 
 An important question is the combination of key-storage devices and their distribution. We have many options here, and it might come down to the experience of the target audience and their expected access to the necessary hardware;
@@ -143,36 +174,9 @@ An important question is the combination of key-storage devices and their distri
 
 For this case study we will go with the middle ground option which will require one purpose-built signing device such as a [hardware wallet]({{ '/guide/getting-started/hardware/#hardware-wallets' | relative_url }}). The other two keys will be one created on the user’s main mobile device and automatically backed up to their cloud provider, and another key held by the wallet application provider on a server for recovery. Neither of the two keys in the user’s control (mobile and signing device) will require recovery phrase backups, although this could be offered as an option.
 
-The idea here is that the user will control the wallet through an app on their main mobile device, but when they are sending funds (paying bills, etc) they will need to confirm the transaction on the purpose-built signing device.
+### The onboarding experience
 
-Should they lose either their main mobile device, or the purpose-built signing device they can replace the lost key (rotate in a new key) with the help of the recovery key. However, if they lose both the mobile and signing device they will not be able to recover their funds, unless they had also backed up either of the respective recovery phrases.
-
-The following prototype outlines how the onboarding and key recovery user experiences could be structured.
-
-{% include prototype.html
-   link = "https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=1%3A55974&viewport=-2578%2C-212%2C0.6596679091453552&scaling=scale-down"
-   image = "/assets/images/guide/case-studies/multisig-wallet/case-current.jpg"
-   retina = "/assets/images/guide/case-studies/multisig-wallet/case-current@2x.jpg"
-   mobile = "/assets/images/guide/case-studies/multisig-wallet/case-current-mobile.jpg"
-   mobileRetina = "/assets/images/guide/case-studies/multisig-wallet/case-current-mobile@2x.jpg"
-   alt-text = "Image of case study prototype"
-   width = 800
-   height = 500
-%}
-
-#### Design considerations
-- Suitable for monthly transactions
-- Lots of edge cases and infrequent but important situations
-- Key setup, rotation, recovery and signing flows
-
-#### Technical considerations
-- Complexities of multi-key setups
-- Implement thorough backup code and instructions for users
-- Usage could be simplified by having hardware devices designed/customized by the software maker (compare banks and their digital token signers common in Europe)
-
-### Onboarding experience
-
-The wireframe screens below show the main onboarding sequence that guides users through the creation of the wallet.
+The screens below show the sequence of actions the user is guided through to set up and secure all three keys used by the wallet. [View prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=15%3A59302&viewport=-304%2C225%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=15%3A59302&show-proto-sidebar=1).
 
 <div class="image-slide-gallery">
 
@@ -196,7 +200,7 @@ The wireframe screens below show the main onboarding sequence that guides users 
 
 ### Making small payments
 
-The wireframe screens below show the main onboarding sequence that guides users through the creation of the wallet.
+Users will be able to conveniently make small payments in the app. Transactions are automatically signed by the wallet application provider, up to certain limits. This provides convenience for daily transactions while protecting larger savings. [View prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=15%3A59302&viewport=-304%2C225%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=15%3A59302&show-proto-sidebar=1).
 
 <div class="image-slide-gallery">
 
@@ -220,7 +224,7 @@ The wireframe screens below show the main onboarding sequence that guides users 
 
 ### Making large payments
 
-The wireframe screens below show the main onboarding sequence that guides users through the creation of the wallet.
+For larger transactions, the wallet application provider will no longer automatically approve. Instead, the user needs to connect their signing device for manual approval. [View prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=15%3A59828&viewport=-357%2C6%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=15%3A59828&show-proto-sidebar=1).
 
 <div class="image-slide-gallery">
 
@@ -244,7 +248,7 @@ The wireframe screens below show the main onboarding sequence that guides users 
 
 ### Key recovery
 
-The wireframe screens below show the main onboarding sequence that guides users through the creation of the wallet.
+Should they lose either their main mobile device, or the purpose-built signing device they can replace the lost key (rotate in a new key) with the help of the recovery key. However, if they lose both the mobile and signing device they will not be able to recover their funds, unless they had also backed up either of the respective recovery phrases. [View prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=15%3A59302&viewport=-304%2C225%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=1%3A56799&show-proto-sidebar=1).
 
 <div class="image-slide-gallery">
 
@@ -265,6 +269,40 @@ The wireframe screens below show the main onboarding sequence that guides users 
 {% endfor %}
 
 </div>
+
+### Changing spending limits
+
+Daily and per-transaction spending limits are a unique aspect of this application design. To avoid tampering, changing them also requires approval via the signing device. [View prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=28%3A58368&viewport=-304%2C225%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=28%3A58368&show-proto-sidebar=1).
+
+<div class="image-slide-gallery">
+
+{% for item in page.images_limits %}
+
+{% capture imageURL %}{{ page.image_base }}{{ item.file }}.png{% endcapture %}
+{% capture imageURLRetina %}{{ page.image_base }}{{ item.file }}@2x.png{% endcapture %}
+
+{% include picture.html
+   image = imageURL
+   retina = imageURLRetina
+   alt-text = item.alt
+   caption = item.caption
+   width = 250
+   height = 541
+   layout = "shadow"
+%}
+{% endfor %}
+
+</div>
+
+#### Design considerations
+- Suitable for monthly transactions
+- Lots of edge cases and infrequent but important situations
+- Key setup, rotation, recovery and signing flows
+
+#### Technical considerations
+- Complexities of multi-key setups
+- Implement thorough backup code and instructions for users
+- Usage could be simplified by having hardware devices designed/customized by the software maker (compare banks and their digital token signers common in Europe)
 
 **Case study resources**
 - [Protoype](https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=6%3A11&viewport=333%2C41%2C0.37497082352638245&scaling=scale-down)
