@@ -27,6 +27,9 @@ images_onboarding:
     - file: onboarding/key-1-service
       alt:
       caption: Choice of cloud storage provider.
+    - file: onboarding/key-1-steps
+      alt:
+      caption: Provider specific authentication steps.
     - file: onboarding/key-1-complete
       alt:
       caption: Success message when Key 1 is created and secured.
@@ -64,13 +67,16 @@ images_send_auto:
     - file: send/amount-low-confirm
       alt:
       caption: Once the user taps “Send”, the auto-signer approves and broadcasts the transaction.
+    - file: send/amount-low-sent
+      alt:
+      caption:
 images_send_manual:
     - file: send/amount-high
       alt:
       caption: The user has entered an amount that is beyond the auto-signing limits, and a note appears about manual approval.
     - file: send/amount-high-step-1
       alt:
-      caption: Prepare the user for the signing steps.
+      caption: Prepare the user for the signing steps that are specific to their device type.
     - file: send/amount-high-step-2
       alt:
       caption: Connect the SD card to save the PSBT file.
@@ -86,6 +92,9 @@ images_send_manual:
     - file: send/amount-high-confirm
       alt:
       caption: The user has one more chance to review the transaction before sending it.
+    - file: send/amount-high-sent
+      alt:
+      caption:
 images_recovery:
     - file: recovery/settings
       alt:
@@ -105,6 +114,16 @@ images_recovery:
     - file: recovery/complete
       alt:
       caption: A confirmation that the recovery is complete and the new wallet is ready for use.
+images_recovery_cloud:
+    - file: recovery/options-cloud
+      alt:
+      caption: The user has lost access to their cloud storage.
+    - file: recovery/options-cloud-step-1
+      alt:
+      caption: Several options for key backup are available.
+    - file: recovery/options-cloud-step-2
+      alt:
+      caption: The followinng steps depend on the user choice of backup method.
 images_limits:
     - file: limits/settings
       alt:
@@ -149,9 +168,9 @@ https://www.figma.com/community/file/968416729557947210
 
 # Savings account
 
-In this section, we are looking at a product that is meant to be a replacement for what a bank would call a [savings]({{ '/guide/designing-products/personal-finance/#savings' | relative_url }}) account where the user might store wealth long term. Safeguards against loss will be a higher priority than with a frequent spending product, and we might therefore accept more friction both when setting up the wallet and when transacting. If users have no prior Bitcoin knowledge we should expect to spend a significant effort educating them to put them in a position to safely operate the wallet product.
+In this case study, we are looking at a product that is meant to balance daily spending with what a bank would call a [savings]({{ '/guide/designing-products/personal-finance/#savings' | relative_url }}) account where the user might store wealth long term. Safeguards against loss will be a higher priority than with a frequent spending product, and we might therefore accept more friction both when setting up the wallet and when transacting. If users have no prior Bitcoin knowledge we should expect to spend a significant effort educating them to put them in a position to safely operate the wallet product.
 
-The following prototype includes initial onboarding, sending bitcoin, and key recovery, which are explained in detail further down.
+The following prototype includes initial onboarding, sending bitcoin, and key recovery, which are explained in detail further below.
 
 {% include prototype.html
    link = "https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=1%3A55974&viewport=-304%2C225%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=1%3A55974&show-proto-sidebar=1"
@@ -159,7 +178,7 @@ The following prototype includes initial onboarding, sending bitcoin, and key re
    retina = "/assets/images/guide/case-studies/multisig-wallet/case-current@2x.jpg"
    mobile = "/assets/images/guide/case-studies/multisig-wallet/case-current-mobile.jpg"
    mobileRetina = "/assets/images/guide/case-studies/multisig-wallet/case-current-mobile@2x.jpg"
-   alt-text = "Image of case study prototype"
+   alt-text = "Three stacked screens of the case study prototype"
    width = 800
    height = 500
 %}
@@ -175,130 +194,48 @@ An important question is the combination of key-storage devices and their distri
 - Full sovereignty (one or more purpose-built signing devices)
 - All keys off-line (two or more purpose-built signing devices)
 
-For this case study we will go with the middle ground option which will require one purpose-built signing device such as a [hardware wallet]({{ '/guide/getting-started/hardware/#hardware-wallets' | relative_url }}). The other two keys will be one created on the user’s main mobile device and automatically backed up to their cloud provider, and another key held by the wallet application provider on a server for recovery. Neither of the two keys in the user’s control (mobile and signing device) will require recovery phrase backups, although this could be offered as an option.
+For this case study we will go with the middle ground option which will require one purpose-built signing device such as a [hardware wallet]({{ '/guide/getting-started/hardware/#hardware-wallets' | relative_url }}). The second key will be created on the user’s main mobile device and automatically backed up to their cloud storage provider. The third key will be held by the wallet application provider on a server for recovery and automatic approval of low-value transactions (auto-signing). Neither of the two keys in the user’s control (mobile and signing device) will require recovery phrase backups, although this could be offered as an option.
 
 ### The onboarding experience
 
 The screens below show the sequence of actions the user is guided through to set up and secure all three keys used by the wallet. [View prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=15%3A59302&viewport=-304%2C225%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=15%3A59302&show-proto-sidebar=1).
 
-<div class="image-slide-gallery">
+{% include image-gallery.html pages = page.images_onboarding %}
 
-{% for item in page.images_onboarding %}
-
-{% capture imageURL %}{{ page.image_base }}{{ item.file }}.png{% endcapture %}
-{% capture imageURLRetina %}{{ page.image_base }}{{ item.file }}@2x.png{% endcapture %}
-
-{% include picture.html
-   image = imageURL
-   retina = imageURLRetina
-   alt-text = item.alt
-   caption = item.caption
-   width = 250
-   height = 541
-   layout = "shadow"
-%}
-{% endfor %}
-
-</div>
+Note that this experience could be designed in a progressive way. Users would start with a simple single-key wallet and upgrade to a multi-key configuration as needed. This design is explored in the [upgradeable wallet]({{ '/guide/case-studies/upgradeable-wallet/' | relative_url }}) case study.
 
 ### Making small payments
 
 Users will be able to conveniently make small payments in the app. Transactions are automatically signed by the wallet application provider, up to certain limits. This provides convenience for daily transactions while protecting larger savings. [View prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=15%3A59302&viewport=-304%2C225%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=15%3A59302&show-proto-sidebar=1).
 
-<div class="image-slide-gallery">
-
-{% for item in page.images_send_auto %}
-
-{% capture imageURL %}{{ page.image_base }}{{ item.file }}.png{% endcapture %}
-{% capture imageURLRetina %}{{ page.image_base }}{{ item.file }}@2x.png{% endcapture %}
-
-{% include picture.html
-   image = imageURL
-   retina = imageURLRetina
-   alt-text = item.alt
-   caption = item.caption
-   width = 250
-   height = 541
-   layout = "shadow"
-%}
-{% endfor %}
-
-</div>
+{% include image-gallery.html pages = page.images_send_auto %}
 
 ### Making large payments
 
 For larger transactions, the wallet application provider will no longer automatically approve. Instead, the user needs to connect their signing device for manual approval. [View prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=15%3A59828&viewport=-357%2C6%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=15%3A59828&show-proto-sidebar=1).
 
-<div class="image-slide-gallery">
+{% include image-gallery.html pages = page.images_send_manual %}
 
-{% for item in page.images_send_manual %}
-
-{% capture imageURL %}{{ page.image_base }}{{ item.file }}.png{% endcapture %}
-{% capture imageURLRetina %}{{ page.image_base }}{{ item.file }}@2x.png{% endcapture %}
-
-{% include picture.html
-   image = imageURL
-   retina = imageURLRetina
-   alt-text = item.alt
-   caption = item.caption
-   width = 250
-   height = 541
-   layout = "shadow"
-%}
-{% endfor %}
-
-</div>
-
-### Key recovery
+### Signing device key recovery
 
 Should they lose either their main mobile device, or the purpose-built signing device they can replace the lost key (rotate in a new key) with the help of the recovery key. However, if they lose both the mobile and signing device they will not be able to recover their funds, unless they had also backed up either of the respective recovery phrases. [View prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=15%3A59302&viewport=-304%2C225%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=1%3A56799&show-proto-sidebar=1).
 
-<div class="image-slide-gallery">
+{% include image-gallery.html pages = page.images_recovery %}
 
-{% for item in page.images_recovery %}
+### Cloud storage key recovery
 
-{% capture imageURL %}{{ page.image_base }}{{ item.file }}.png{% endcapture %}
-{% capture imageURLRetina %}{{ page.image_base }}{{ item.file }}@2x.png{% endcapture %}
+If a user loses access to their cloud storage, or accidentally deletes the backup file, they can easily restore the backup. If they no longer want to use cloud storage, alternative options should be available. [View prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=50%3A58938&viewport=-1473%2C-1193%2C0.35678958892822266&scaling=scale-down&starting-point-node-id=50%3A58938&show-proto-sidebar=1).
 
-{% include picture.html
-   image = imageURL
-   retina = imageURLRetina
-   alt-text = item.alt
-   caption = item.caption
-   width = 250
-   height = 541
-   layout = "shadow"
-%}
-{% endfor %}
-
-</div>
+{% include image-gallery.html pages = page.images_recovery_cloud %}
 
 ### Changing spending limits
 
 Daily and per-transaction spending limits are a unique aspect of this application design. To avoid tampering, changing them also requires approval via the signing device. [View prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=28%3A58368&viewport=-304%2C225%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=28%3A58368&show-proto-sidebar=1).
 
-<div class="image-slide-gallery">
-
-{% for item in page.images_limits %}
-
-{% capture imageURL %}{{ page.image_base }}{{ item.file }}.png{% endcapture %}
-{% capture imageURLRetina %}{{ page.image_base }}{{ item.file }}@2x.png{% endcapture %}
-
-{% include picture.html
-   image = imageURL
-   retina = imageURLRetina
-   alt-text = item.alt
-   caption = item.caption
-   width = 250
-   height = 541
-   layout = "shadow"
-%}
-{% endfor %}
-
-</div>
+{% include image-gallery.html pages = page.images_limits %}
 
 #### Design considerations
-- Suitable for monthly transactions
+- Suitable for daily and monthly transactions
 - Lots of edge cases and infrequent but important situations
 - Key setup, rotation, recovery and signing flows
 
