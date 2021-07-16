@@ -59,3 +59,12 @@ A mobile experience that starts users off with a simple cloud backup solution an
 ### [Shared account]({{ '/guide/case-studies/shared-account/' | relative_url }})
 
 An onboarding experience for a mobile wallet shared by a couple who want to access and manage funds together.
+
+---
+
+{% include next-previous.html
+   previousUrl = "/guide/payments/privacy/"
+   previousName = "Transaction privacy"
+   nextUrl = "/guide/case-studies/cloud-backup/"
+   nextName = "Daily spending"
+%}

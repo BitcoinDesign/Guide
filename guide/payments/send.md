@@ -204,3 +204,10 @@ Let us look at how we communicate to the sender about the [processing of a trans
 ---
 
 Sending is one side of the process. Let's look at things from the [receiver's perspective](/guide/payments/receive).
+
+{% include next-previous.html
+   previousUrl = "/guide/payments/transactions/"
+   previousName = "Transactions overview"
+   nextUrl = "/guide/payments/receive"
+   nextName = "Receiving bitcoin"
+%}

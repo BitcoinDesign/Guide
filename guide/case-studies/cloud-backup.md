@@ -126,3 +126,12 @@ The import sequence guides the user through entering the recovery phrase, which 
 - [Private key scheme]({{ '/guide/private-key-management/cloud-backup/' | relative_url }})
 - [Backup guidance for users]({{ '/guide/private-key-management/backups/#encrypted-cloud-backup' | relative_url }})
 
+---
+
+{% include next-previous.html
+   previousUrl = "/guide/case-studies/"
+   previousName = "Case studies"
+   nextUrl = "/guide/case-studies/savings-account/"
+   nextName = "Savings account"
+%}
+

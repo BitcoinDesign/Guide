@@ -86,4 +86,8 @@ Explores approaches to diverse uses cases with wireframes, designs and prototype
 Helps you learn the most need-to-know Bitcoin terminology from Address to ZPUB
 
 ---
-Let's [get started]({{ '/guide/getting-started/introduction/' | relative_url }}).
+
+{% include next-previous.html
+   nextUrl = "/guide/getting-started/introduction/"
+   nextName = "Get started"
+%}

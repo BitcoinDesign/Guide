@@ -97,3 +97,12 @@ Published in October 2019 by Ng Qun Zhao.
 
 ###### [Making design better for crypto apps: Abra UX Case study](https://medium.com/@kagakawa/abra-app-ux-case-study-2eb2a6e09c70)
 Published in July 2018 by Kagayaki "Kaga" Kawabata.
+
+---
+
+{% include next-previous.html
+   previousUrl = "/guide/designing-products/user-research/"
+   previousName = "User research"
+   nextUrl = "/guide/designing-products/usage-life-cycle/"
+   nextName = "Usage life cycle"
+%}

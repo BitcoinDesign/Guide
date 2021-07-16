@@ -112,4 +112,11 @@ Users can get set up in minutes using this technique.
 
 ---
 
-Next, let's look at [Private key management]({{ '/guide/private-key-management/introduction/' | relative_url }}).
+Next, let's look at [private key management]({{ '/guide/private-key-management/introduction/' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/onboarding/protecting-a-wallet/"
+   previousName = "Protecting a wallet"
+   nextUrl = "/guide/private-key-management/introduction/"
+   nextName = "Private key management"
+%}

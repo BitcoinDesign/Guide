@@ -198,3 +198,10 @@ Links to:
 ---
 
 Frameworks are helpful tools to organize user behavior. Our next section introduces one with a focus on the [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/designing-products/principles/"
+   previousName = "Design principles"
+   nextUrl = "/guide/designing-products/usage-life-cycle/"
+   nextName = "Usage life cycle"
+%}

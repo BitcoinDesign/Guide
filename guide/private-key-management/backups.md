@@ -273,5 +273,12 @@ At a minimum, document each wallet with a given name (Bob’s Bitcoin wallet 1),
 
 ---
 
-Next, let's look at [payments]({{ 'guide/payments/' | relative_url }}).
+Next, let's look at [payments]({{ '/guide/payments/' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/private-key-management/multi-key/"
+   previousName = "Multi-key"
+   nextUrl = "/guide/payments/"
+   nextName = "Payments"
+%}
 

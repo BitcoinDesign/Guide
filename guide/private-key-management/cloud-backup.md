@@ -89,3 +89,10 @@ To see what a user experience with this scheme could look like, see the [daily s
 ---
 
 Next, let's look at [manual backups]({{ '/guide/private-key-management/manual-backup/' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/private-key-management/overview/"
+   previousName = "Overview"
+   nextUrl = "/guide/private-key-management/manual-backup/"
+   nextName = "Manual backups"
+%}
