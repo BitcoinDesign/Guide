@@ -184,3 +184,10 @@ Once there is a consensus on the proposed changes, your pull request will be mer
 ---
 
 Next, find out how you can [become a guide reviewer](/guide/contribute/review/).
+
+{% include next-previous.html
+   previousUrl = "/guide/contribute/"
+   previousName = "Contribute"
+   nextUrl = "/guide/contribute/review/"
+   nextName = "Review"
+%}

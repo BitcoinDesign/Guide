@@ -125,3 +125,10 @@ Blocks are also limited in size and new ones are created every 10 minutes on ave
 ---
 
 Next we will cover [sending bitcoin]({{ '/guide/payments/send/' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/payments/"
+   previousName = "Payments"
+   nextUrl = "/guide/payments/send/"
+   nextName = "Sending bitcoin"
+%}

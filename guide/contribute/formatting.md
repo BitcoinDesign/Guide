@@ -800,3 +800,10 @@ Here's a simple footnote[^1]
 ---
 
 Next, let's move on to the [Glossary]({{ '/guide/glossary/' | relative_url }}) which explains common Bitcoin terms you may come across.
+
+{% include next-previous.html
+   previousUrl = "/guide/contribute/illustration-guidelines/"
+   previousName = "Illustration guidelines"
+   nextUrl = "/guide/glossary/"
+   nextName = "Glossary"
+%}

@@ -116,3 +116,10 @@ Once you visited the URL, locate the page(s) to which proposed changes refer and
 ---
 
 Next, let's take a look at the [content guidelines]({{ '/guide/contribute/content-guidelines/' | relative_url }}) that can help inform the review process.
+
+{% include next-previous.html
+   previousUrl = "/guide/contribute/propose-a-change/"
+   previousName = "Proposing a change"
+   nextUrl = "/guide/contribute/content-guidelines/"
+   nextName = "Content guidelines"
+%}

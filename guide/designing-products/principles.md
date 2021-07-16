@@ -188,3 +188,10 @@ Unlike traditional banking systems, the Bitcoin economy does not require new use
 
 Continue on to learn about [user research]({{ '/guide/designing-products/user-research/' | relative_url }}) in the Bitcoin ecosystem.
 
+{% include next-previous.html
+   previousUrl = "/guide/designing-products/open-design/"
+   previousName = "Open design"
+   nextUrl = "/guide/designing-products/user-research/"
+   nextName = "User research"
+%}
+

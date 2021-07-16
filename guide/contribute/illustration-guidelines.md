@@ -163,3 +163,10 @@ Social and messaging services typically show a preview image when sharing links.
 ---
 
 Next, find out what options are available for formatting your content. [Take a look](/guide/contribute/formatting/).
+
+{% include next-previous.html
+   previousUrl = "/guide/contribute/content-guidelines/"
+   previousName = "Content guidelines"
+   nextUrl = "/guide/contribute/formatting/"
+   nextName = "Formatting"
+%}

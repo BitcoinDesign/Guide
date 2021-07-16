@@ -127,6 +127,12 @@ images_limits:
 
 Editor's notes
 
+Savings account case study.
+
+Illustration sources
+
+https://www.figma.com/community/file/968416729557947210
+
 -->
 
 {% include picture.html
@@ -306,3 +312,12 @@ Daily and per-transaction spending limits are a unique aspect of this applicatio
 - [Figma design file](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=6%3A9)
 - [Use case]({{ '/guide/designing-products/personal-finance/#savings' | relative_url }})
 - [Private key scheme]({{ '/guide/private-key-management/multi-key/' | relative_url }})
+
+---
+
+{% include next-previous.html
+   previousUrl = "/guide/case-studies/cloud-backup/"
+   previousName = "Daily spending"
+   nextUrl = "/guide/case-studies/upgradeable-wallet/"
+   nextName = "Upgradeable wallet"
+%}

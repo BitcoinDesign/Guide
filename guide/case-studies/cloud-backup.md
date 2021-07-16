@@ -33,8 +33,13 @@ importImages:
 ---
 
 <!--
-
 Editor's notes
+
+Daily spending case study.
+
+Illustration sources
+
+https://www.figma.com/community/file/968416729557947210
 
 -->
 
@@ -120,4 +125,13 @@ The import sequence guides the user through entering the recovery phrase, which 
 - [Use case]({{ '/guide/designing-products/personal-finance/#day-to-day-spending' | relative_url }})
 - [Private key scheme]({{ '/guide/private-key-management/cloud-backup/' | relative_url }})
 - [Backup guidance for users]({{ '/guide/private-key-management/backups/#encrypted-cloud-backup' | relative_url }})
+
+---
+
+{% include next-previous.html
+   previousUrl = "/guide/case-studies/"
+   previousName = "Case studies"
+   nextUrl = "/guide/case-studies/savings-account/"
+   nextName = "Savings account"
+%}
 

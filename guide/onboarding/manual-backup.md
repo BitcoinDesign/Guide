@@ -263,4 +263,11 @@ You could also ask users to select (or manually type out) a random word from the
 
 ---
 
-The next section will highlight some options for [restoring a wallet]({{ 'guide/onboarding/restoring-a-wallet' | relative_url }}).
+The next section will highlight some options for [restoring a wallet]({{ '/guide/onboarding/restoring-a-wallet/' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/"
+   previousName = "Automatic cloud backups"
+   nextUrl = "/guide/onboarding/restoring-a-wallet/"
+   nextName = "Restoring a wallet"
+%}

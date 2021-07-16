@@ -88,4 +88,11 @@ When a transaction needs to be signed, the software submits a partially signed b
 
 ---
 
-Next, let's look at [multi key]({{ '/guide/private-key-management/multi-key/' | relative_url }}).
+Next, let's look at [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/private-key-management/manual-backup/"
+   previousName = "Manual backups"
+   nextUrl = "/guide/private-key-management/multi-key/"
+   nextName = "Multi-key"
+%}

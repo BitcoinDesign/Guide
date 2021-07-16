@@ -200,3 +200,10 @@ Most Bitcoin applications rely on external data sources (like currency conversio
 ---
 
 To kickstart your design work, take a look at [design resources]({{ '/guide/designing-products/design-resources/' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/designing-products/common-user-flows/"
+   previousName = "Common user flows"
+   nextUrl = "/guide/designing-products/design-resources/"
+   nextName = "Design resources"
+%}

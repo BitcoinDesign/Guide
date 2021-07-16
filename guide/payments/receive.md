@@ -219,7 +219,14 @@ Once the payment has been finalized, consider what the receiver may want to do w
 
 ---
 
-Let's go, time go dive in a bit deeper with [Transaction privacy]({{ "/guide/payments/privacy" | relative_url }}).
+Let's go, time go dive in a bit deeper with [transaction privacy]({{ "/guide/payments/privacy/" | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/payments/send/"
+   previousName = "Sending bitcoin"
+   nextUrl = "/guide/payments/privacy/"
+   nextName = "Transaction privacy"
+%}
 
 <!--
 On /guide/payments/send/#inputting-an-address

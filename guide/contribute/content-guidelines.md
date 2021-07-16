@@ -97,3 +97,10 @@ It's a good idea to ask for directions by seeking feedback early. This may stop 
 ---
 
 Now that we've covered general content guidelines, let’s take a closer look at [Illustration guidelines]({{ '/guide/contribute/illustration-guidelines/' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/contribute/review/"
+   previousName = "Review"
+   nextUrl = "/guide/contribute/illustration-guidelines/"
+   nextName = "Illustration guidelines"
+%}

@@ -117,3 +117,10 @@ The right-hand panel has an “Inspect” tab that is a great companion for deve
 ---
 
 That's it for this section. Keep reading to learn about [onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/designing-products/wallet-interoperability/"
+   previousName = "Wallet interoperability"
+   nextUrl = "/guide/onboarding/introduction/"
+   nextName = "Onboarding"
+%}

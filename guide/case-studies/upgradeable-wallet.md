@@ -29,6 +29,12 @@ images:
 
 Editor's notes
 
+Upgradeable wallet case study.
+
+Illustration sources
+
+https://www.figma.com/community/file/968416729557947210
+
 -->
 
 # Upgradeable wallet
@@ -87,3 +93,12 @@ The screens below show how this architecture allows users to get onboarded quick
 **Case study resources**
 - [Protoype](https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A270&viewport=861%2C146%2C0.44897958636283875&scaling=scale-down)
 - [Figma design file](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A269)
+
+---
+
+{% include next-previous.html
+   previousUrl = "/guide/case-studies/savings-account/"
+   previousName = "Savings account"
+   nextUrl = "/guide/case-studies/shared-account/"
+   nextName = "Shared account"
+%}
