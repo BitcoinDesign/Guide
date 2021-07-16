@@ -268,8 +268,8 @@ An algorithm to generate cryptographic signatures. One of the benefits is that t
 **References:**
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Schnorr_signature)
-- [Bitcoin wiki]()
-- [BIP340]()
+- [Bitcoin wiki](https://en.bitcoin.it/wiki/Schnorr)
+- [BIP340](https://github.com/bitcoin/bips/blob/master/bip-0340.mediawiki)
 
 ### Segregated witness (SegWit)
 

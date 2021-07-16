@@ -35,7 +35,7 @@ https://www.figma.com/community/file/995256542920917246/BDG---Private-key-manage
 
 # Automatic cloud backup
 
-By using an automatic cloud backup for the private key the user is NOT required to manually backup anything when setting up a new [bitcoin wallet]({{ '/guide/glossary/#bitcoin-wallet' | relative_url }}). This is sometimes also called *seedless*, as the user is never exposed to the traditional *seed*, or [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) that is used to initiate a wallet.
+By using an automatic cloud backup for the private key the user is NOT required to manually backup anything when setting up a new [bitcoin wallet]({{ '/guide/glossary/wallet/#bitcoin-wallet' | relative_url }}). This is sometimes also called *seedless*, as the user is never exposed to the traditional *seed*, or [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) that is used to initiate a wallet.
 
 This scheme can be a good fit for wallets meant for storing smaller amounts of bitcoin. This includes wallets for novices who would find manually backing up a recovery phrase during onboarding confusing, possibly leading to unsafe backups. It could also be a starting point for a progressive security model that lets customers upgrade when they start accumulating more funds. Wallets using automatic cloud backups also work well for what experienced users might call *hot* or *spending* wallets where convenience is more important than maximum security. 
 
