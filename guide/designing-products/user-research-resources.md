@@ -95,7 +95,7 @@ Launched in January 2021 by Andrew Chow. In progress.
 
 ###### [A study on how Bitcoin is perceived by no-coiners (non-holders of Bitcoin)](https://github.com/MickMorucci/Bitcoin_perception)
 
-*Beliefs drive behaviour more than the other way around. So, if we are trying to understand those who know about but have not purchased Bitcoin, we want to try to understand their beliefs surrounding Bitcoin and their perception of it. This research aims to gain a better picture of the beliefs of no-coiners about Bitcoin. Understanding these beliefs can help point to their behaviours, their non-action when buying Bitcoin. The objective is to gain a comprehensive list of these beliefs surrounding Bitcoin.*
+*A pilot survey of 62 participants around the perception and beliefs of Bitcoin users and non-users.*
 
 Launched in January 2021 by Mick Morucci. In progress.
 
