@@ -82,7 +82,7 @@ Published in May 2017 by Katharina Krombholz, Aljosha Judmayer, Matthias Gusenba
 
 ###### [Project Horizon](https://youtu.be/oZkBU5H2WjY)
 
-*Jamaal shared his findings from Project Horizon, which was an investigation into how people use (or don't use) Bitcoin Core Wallet and what needs are unmet by a variety of users. The project employed both qualitative interviews along with surveys to understand a variety of user needs and approaches to using Bitcoin. We then had a good discussion about what the future of the Bitcoin Core Wallet might be.*
+*An investigation into how people use (or don't use) the Bitcoin Core Wallet and what needs are unmet by a variety of users. The project employed both qualitative interviews along with surveys to understand a variety of user needs and approaches to using Bitcoin.*
 
 Video presentation in May 2021 by Jamaal Montasser.
 
