@@ -44,7 +44,7 @@ Published in May 2021 by Artemij Voskobojnikov, Svetlana Abramova, Konstantin Be
 
 ###### [Bits Under the Mattress: Understanding Different Risk Perceptions and Security Behaviors of Crypto-Asset Users](https://voskart.de/pdf/bits_under_mattress.pdf)
 
-*A survey-based exploration of different security behaviors among three Bitcoin user archetypes: Cypherpunks, hodlers, and rookies. This study demonstrates that cypherpunks tend to use self-managed security solutions, whereas hodlers and rookies use either custodial solutions or non-custodial wallets.*
+*A survey of security behaviors among three Bitcoin user archetypes, showing that cypherpunks tend to use self-managed security solutions, whereas hodlers and rookies use either custodial solutions or non-custodial wallets.*
 
 Published in February 2021 by Svetlana Abramova, Artemij Voskobojnikov, Konstantin Beznosov, and Rainer Böhme.
 
