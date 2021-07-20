@@ -133,6 +133,6 @@ Published in October 2019 by Ng Qun Zhao.
 
 ###### [Making design better for crypto apps: Abra UX Case study](https://medium.com/@kagakawa/abra-app-ux-case-study-2eb2a6e09c70) 
 
-*While working in blockchain industry for over 3+ years Kagayaki Kawabata realized there are many unintuitive apps that are difficult to use. There were difficulties buying coins using the Abra’s app, The assumption was made that other users also have the same issues. Through this UX case study, Kawabata will help pursue Abra’s mission statement “cryptocurrency investing simplified.” by exploring the human-centered design process by evaluating the usability of apps.*
+*A UX case study exploring the usability and suggesting improvements for making purchases in the Abra app.*
 
 Published in July 2018 by Kagayaki "Kaga" Kawabata.
