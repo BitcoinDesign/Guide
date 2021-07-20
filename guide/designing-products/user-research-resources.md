@@ -107,7 +107,7 @@ Published in December 2020 by Spencer Bogart.
 
 ###### [Blockchain Usability Report](https://fioprotocol.io/wp-content/themes/fio/build/files/blockchain-usability-report-2019.pdf)
 
-*For blockchain to achieve its potential, the value and information represented on blockchains ultimately needs to be moved between parties for the purpose of commerce and/or utility. There have been many hypotheses on what blockchain “needs” for mass adoption to occur and one of recurring topics of discussion is usability. To understand this problem better, FIO – the Foundation for Interwallet Operability – conducted a randomized survey of over 200 crypto holders. These users were asked various questions regarding their frequency and experiences in transacting crypto, with the goal of unearthing some of the common issues they’ve faced.*
+*A survey of over 200 crypto holders regarding their frequency and experiences in transacting crypto, with the goal of unearthing some of the common issues they’ve faced.*
 
 Published in February 2019 by FIO.
 
