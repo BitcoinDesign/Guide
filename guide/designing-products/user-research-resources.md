@@ -50,7 +50,7 @@ Published in February 2021 by Svetlana Abramova, Artemij Voskobojnikov, Konstant
 
 ###### [The U in Crypto Stands for Usable: An Empirical Study of User Experience with Mobile Cryptocurrency Wallets](https://voskart.de/pdf/u_in_crypto.pdf)
 
-*In a corpus of 45,821 app reviews of the top five mobile cryptocurrency wallets, 6,859 reviews were identified and qualitatively analyzed pertaining to the user experience with those wallets. The analysis suggests that both new and experienced users struggle with general and domain-specific UX issues that, aside from frustration and disengagement, might lead to dangerous errors and irreversible monetary losses. We reveal shortcomings of current wallet UX as well as users’ misconceptions, some of which can be traced back to a reliance on their understanding of conventional payment systems.*
+*An analysis of app reviews of the top five mobile cryptocurrency wallets suggesting that both new and experienced users struggle with general and domain-specific UX issues that might lead to dangerous errors and irreversible monetary losses.*
 
 Published in January 2021 by Artemij Voskobojnikov, Oliver Wiese, Masoud Mehrabi Koushki, Volker Roth, and Konstantin Beznosov.
 
