@@ -121,7 +121,7 @@ Published in December 2018 by Michel Rauchs, Apolline Blandin, Kristina Klein, D
 
 ###### [Automatic Cloud Backup (Seedless) Wallet Research](https://docs.google.com/document/d/11KbQnor7kQPdzHKmycBLPwOKyVo3t99nUEQYpVsik_o/edit?usp=sharing)
 
-*According to research conducted, users who are new to crypto lack confidence in their ability to safely hold and keep track of their seed phrase. It’s no secret that manually writing down a 12-24 word seed phrase mnemonic is an unfamiliar motion, causing this user group to accidentally misplace their seed phrase. As designers and product builders, our number 1 priority should be to create experiences that not only ensure the physical safety of a user’s funds, but the emotional security as well. At a high level, the goal of this research is to discover if automatic cloud backups can empower new-to-crypto users to confidently create and secure their own bitcoin wallets.*
+*Research on user new to crypto around whether they are confident in their ability to safely hold and keep track of seed phrases. Goal of the research was to discover whether automatic cloud backups could empower users to confidently secure their own bitcoin wallets.*
 
 Published in May 2021 by Maggie Valentine.
 
