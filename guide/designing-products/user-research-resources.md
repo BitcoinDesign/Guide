@@ -68,7 +68,7 @@ Published in February 2018 by Shayan Eskandari, David Barrera, Elizabeth Stobert
 
 ###### [An Evaluation of User Attitudes Towards Anonymity in Bitcoin](https://www.diva-portal.org/smash/get/diva2:1141672/FULLTEXT01.pdf)
 
-*The research effort presented in this paper consists of a quantitative study seeking to address the subject of user anonymity in the Bitcoin network. The survey seeks to form an understanding of user attitudes towards the aspect of anonymity by following a methodological approach for exploring common tendencies among the representatives and will serve as the underlying data set from which conclusions can be drawn. Furthermore, this paper will present a literary study of the actual state of anonymity in this peer-to-peer technology by reviewing current findings highlighted in the area, thus presenting a comprehensive view of anonymity in the Bitcoin network.*
+*A survey of 50 users on the [r/bitcoin subreddit](https://www.reddit.com/r/Bitcoin/) about their attitudes towards anonymity in the Bitcoin network.*
 
 Published in the spring of 2017 by Mihkel Pajunen.
 
