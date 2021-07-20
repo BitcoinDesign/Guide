@@ -127,7 +127,7 @@ Published in May 2021 by Maggie Valentine.
 
 ###### [Breaking down Bitcoin: A UX Design Case Study](https://medium.com/@ngqunzhao/breaking-down-bitcoin-a-ux-design-case-study-7fdefbe7e1b8)
 
-*This is a documentation of a UX redesign of Coinhako, a cryptocurrency trading and digital wallet app. For my capstone project at General Assembly, Ng Qun Zhao worked with team of 3 UX designers to deliver a redesign of Coinhako’s app platform over a period of two weeks. As the team leader and lead UX Researcher, Zhao set out to craft a new and improved user experience and interface, and achieve the company’s business goals of higher user engagement.*
+*Documentation of the user research, redesign and testing process of Coinhako, a cryptocurrency trading and digital wallet app.*
 
 Published in October 2019 by Ng Qun Zhao.
 
