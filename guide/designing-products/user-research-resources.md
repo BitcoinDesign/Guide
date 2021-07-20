@@ -101,7 +101,7 @@ Launched in January 2021 by Mick Morucci. In progress.
 
 ###### [Bitcoin is (Still) a Demographic Mega-trend: Data Update](https://medium.com/blockchain-capital-blog/bitcoin-is-still-a-demographic-mega-trend-data-update-c50df59a6cb3)
 
-*Every 18 months the team at Blockchain Capital commissions The Harris Poll to conduct a nationwide online survey of over 2,000 US adults to gauge the progression of the US general population through the crypto adoption funnel. This survey is intended to gauge the general population’s awareness, familiarity, perception, conviction, relative preference rates and propensity to purchase crypto.*
+*An online survey of over 2,000 US adults to gauge the progression of the general population through the crypto adoption funnel, including awareness, familiarity, perception, conviction, relative preference rates and propensity to purchase crypto.*
 
 Published in December 2020 by Spencer Bogart.
 
