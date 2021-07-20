@@ -113,7 +113,7 @@ Published in February 2019 by FIO.
 
 ###### [2nd Global Cryptoasset Benchmarking Study](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2nd-global-cryptoasset-benchmark-study/#.X_1mxi1h1qs)
 
-*The second edition of the Global Cryptoasset Benchmarking Study provides new insights into the current state of the cryptoasset industry. The study gathers survey data from more than 180 cryptoasset companies and individuals, covering 47 countries across five world regions. The empirical analysis specifically focuses on the following four key industry segments: mining, exchange, storage, and payments.*
+*Insights into the current state of the cryptoasset industry. The study gathers survey data from more than 180 cryptoasset companies and individuals, covering 47 countries across five world regions, focusing on the following four key industry segments: mining, exchange, storage, and payments.*
 
 Published in December 2018 by Michel Rauchs, Apolline Blandin, Kristina Klein, Dr. Gina Pieters, Martino Recanatini, Bryan Zhang.
 
