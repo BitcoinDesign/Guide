@@ -56,7 +56,7 @@ Published in January 2021 by Artemij Voskobojnikov, Oliver Wiese, Masoud Mehrabi
 
 ###### [User Perception of Bitcoin Usability and Security across Novice Users](https://www.researchgate.net/publication/331286661_User_Perception_of_Bitcoin_Usability_and_Security_across_Novice_Users)
 
-*This paper investigates users’ perceptions and experiences of an anonymous digital payment system (Bitcoin) and its influence on users in terms of usability and security in comparison to other non-anonymous payment systems such as credit/debit cards. This paper identifies users’ perceptual differences in terms of usability and security. We conclude that Bitcoin, as a crypto-currency, is still in its infancy and requires user education and a new way of thinking. The study recommends developing users’ mental models to deepen developers’ understanding of anonymous digital payment technology and improve user-centred design.*
+*A survey of undergraduate students at Keele University concluding that Bitcoin was still in its infancy at the time of writing and required user education and a new way of thinking. The study recommends user-centered design to develop users’ mental models and deepen their understanding of digital payment technology.*
 
 Published in February 2019 by Abdulla Alshamsi & Keele University.
 
