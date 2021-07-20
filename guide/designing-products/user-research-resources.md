@@ -62,7 +62,7 @@ Published in February 2019 by Abdulla Alshamsi & Keele University.
 
 ###### [A First Look at the Usability of Bitcoin Key Management](https://arxiv.org/pdf/1802.04351.pdf)
 
-*Bitcoin users are directly or indirectly forced to deal with public key cryptography, which has a number of security and usability challenges that differ from the password-based authentication underlying most online banking services. In this paper, we contribute an evaluation framework for comparing Bitcoin key management approaches, and conduct a broad usability evaluation of six representative Bitcoin clients. We find that Bitcoin shares many of the fundamental challenges of key management known from other domains, but that Bitcoin may present a unique opportunity to rethink key management for end users.*
+*A broad usability evaluation of key management techniques used by six representative Bitcoin clients. Findings show that Bitcoin shares many fundamental challenges known from other domains, and also presents a unique opportunity to rethink key management for end users.*
 
 Published in February 2018 by Shayan Eskandari, David Barrera, Elizabeth Stobert, and Jeremy Clark.
 
