@@ -134,7 +134,7 @@ Bitcoin is different since the sender must initiate all transactions, meaning th
    height = 800
 %}
 
-A hardware wallet accompanied by a desktop application where keys are stored and transactions are securely signed by hardware is another solution. This reduces the risk of keeping funds on a mobile wallet configuration but adds acceptable friction for transactions that occur less frequently.
+A hardware wallet accompanied by a desktop application where keys are stored and transactions are securely signed by hardware is another solution. This reduces the risk of keeping funds on a mobile wallet configuration but adds acceptable friction for transactions that occur less frequently. See the [savings account case study]({{ '/guide/case-studies/savings-account/' | relative_url }}) for an exploration of this user experience.
 
 ## Emergency funds
 

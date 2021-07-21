@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Savings account
-description: Case study for a Bitcoin wallet designed for storing medium amounts.
+description: A UX case study for a multi-key Bitcoin wallet designed for both daily spending and storing medium amounts.
 nav_order: 2
 parent: Case studies
 permalink: /guide/case-studies/savings-account/
@@ -23,7 +23,7 @@ images_onboarding:
       caption: Overview of the key setup process.
     - file: onboarding/key-1-intro
       alt:
-      caption: Explanation of how Key 1 is set up.
+      caption: Explanation of how Key 1 is set up. More on [automatic cloud backup](/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/).
     - file: onboarding/key-1-service
       alt:
       caption: Choice of cloud storage provider.
@@ -168,9 +168,9 @@ https://www.figma.com/community/file/968416729557947210
 
 # Savings account
 
-In this case study, we are looking at a product that is meant to balance daily spending with what a bank would call a [savings]({{ '/guide/designing-products/personal-finance/#savings' | relative_url }}) account where the user might store wealth long term. Safeguards against loss will be a higher priority than with a frequent spending product, and we might therefore accept more friction both when setting up the wallet and when transacting. If users have no prior Bitcoin knowledge we should expect to spend a significant effort educating them to put them in a position to safely operate the wallet product.
+In this case study, we look at a product that balances daily spending with what a bank would call a [savings]({{ '/guide/designing-products/personal-finance/#savings' | relative_url }}) account where the user might store wealth long term. Safeguards against loss will be a higher priority than with a frequent spending product, and we might therefore accept more friction both when setting up the wallet and when transacting. If users have no prior Bitcoin knowledge we should expect to spend a significant effort educating them to put them in a position to safely operate the wallet product.
 
-The following prototype includes initial onboarding, sending bitcoin, and key recovery, which are explained in detail further below.
+The following [prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=1%3A55974&viewport=-304%2C225%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=1%3A55974&show-proto-sidebar=1) includes initial onboarding, sending bitcoin, and key recovery, which are explained in detail further below.
 
 {% include prototype.html
    link = "https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=1%3A55974&viewport=-304%2C225%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=1%3A55974&show-proto-sidebar=1"
@@ -246,7 +246,7 @@ Daily and per-transaction spending limits are a unique aspect of this applicatio
 
 **Case study resources**
 - [Protoype](https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=6%3A11&viewport=333%2C41%2C0.37497082352638245&scaling=scale-down)
-- [Figma design file](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=6%3A9)
+- [Figma design file](https://www.figma.com/file/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?node-id=1%3A55973)
 - [Use case]({{ '/guide/designing-products/personal-finance/#savings' | relative_url }})
 - [Private key scheme]({{ '/guide/private-key-management/multi-key/' | relative_url }})
 

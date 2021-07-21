@@ -46,7 +46,7 @@ Explores a simple mobile wallet design that relies on automated cloud backup to 
 
 ### [Savings account]({{ '/guide/case-studies/savings-account/' | relative_url }})
 
-An example user flow for setting up a 2-of-3 multsig wallet in a mobile application.
+A mobile wallet based on 2-of-3 multi-key setup that balances both low-friction daily spending and stricter security practices for medium amounts.
 
 ---
 
