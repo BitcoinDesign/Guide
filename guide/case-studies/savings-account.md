@@ -17,7 +17,7 @@ images_onboarding:
       caption: Introduces the user to the setup flow and informs them about having a signing device at hand.
     - file: onboarding/pin
       alt:
-      caption: PIN entry, which is used for encrypting key and user data.
+      caption: PIN entry, which is used for encrypting key and user data. This could also be an email.
     - file: onboarding/key-overview
       alt:
       caption: Overview of the key setup process.
@@ -33,9 +33,12 @@ images_onboarding:
     - file: onboarding/key-1-complete
       alt:
       caption: Success message when Key 1 is created and secured.
+    - file: onboarding/key-2-connection-type
+      alt:
+      caption: Choice of cconnection method to the signing device.
     - file: onboarding/key-2-device-type
       alt:
-      caption: Choice of signing device for Key 2.
+      caption: Choice of signing device for Key 2 to provide accurate instructions.
     - file: onboarding/key-2-step-1
       alt:
       caption: Introduction to the key creation process via the signing device.
@@ -170,7 +173,7 @@ https://www.figma.com/community/file/968416729557947210
 
 In this case study, we look at a product that balances daily spending with what a bank would call a [savings]({{ '/guide/designing-products/personal-finance/#savings' | relative_url }}) account where the user might store wealth long term. Safeguards against loss will be a higher priority than with a frequent spending product, and we might therefore accept more friction both when setting up the wallet and when transacting. If users have no prior Bitcoin knowledge we should expect to spend a significant effort educating them to put them in a position to safely operate the wallet product.
 
-The following [prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=1%3A55974&viewport=-304%2C225%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=1%3A55974&show-proto-sidebar=1) includes initial onboarding, sending bitcoin, and key recovery, which are explained in detail further below.
+The following [prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=1%3A55974&viewport=-304%2C225%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=1%3A55974&show-proto-sidebar=1) includes initial onboarding, sending bitcoin, and key replacement, which are explained in detail further below.
 
 {% include prototype.html
    link = "https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=1%3A55974&viewport=-304%2C225%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=1%3A55974&show-proto-sidebar=1"
@@ -194,7 +197,7 @@ An important question is the combination of key-storage devices and their distri
 - Full sovereignty (one or more purpose-built signing devices)
 - All keys off-line (two or more purpose-built signing devices)
 
-For this case study we will go with the middle ground option which will require one purpose-built signing device such as a [hardware wallet]({{ '/guide/getting-started/hardware/#hardware-wallets' | relative_url }}). The second key will be created on the user’s main mobile device and automatically backed up to their cloud storage provider. The third key will be held by the wallet application provider on a server for recovery and automatic approval of low-value transactions (auto-signing). Neither of the two keys in the user’s control (mobile and signing device) will require recovery phrase backups, although this could be offered as an option.
+For this case study we will go with the middle ground option which will require one purpose-built signing device such as a [hardware wallet]({{ '/guide/getting-started/hardware/#hardware-wallets' | relative_url }}). The second key will be created on the user’s main mobile device and automatically backed up to their cloud storage provider. The third key will be held by the wallet application provider on a server for wallet recovery, key replacement and automatic approval of low-value transactions (auto-signing). Neither of the two keys in the user’s control (mobile and signing device) will require recovery phrase backups, although this could be offered as an option.
 
 ### The onboarding experience
 
@@ -216,13 +219,13 @@ For larger transactions, the wallet application provider will no longer automati
 
 {% include image-gallery.html pages = page.images_send_manual %}
 
-### Signing device key recovery
+### Signing device key replacement
 
-Should they lose either their main mobile device, or the purpose-built signing device they can replace the lost key (rotate in a new key) with the help of the recovery key. However, if they lose both the mobile and signing device they will not be able to recover their funds, unless they had also backed up either of the respective recovery phrases. [View prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=15%3A59302&viewport=-304%2C225%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=1%3A56799&show-proto-sidebar=1).
+Should they lose either their main mobile device, or the purpose-built signing device they can replace the lost key (rotate in a new key) with the help of the recovery key held by the auto-signer. However, if they lose both the mobile and signing device they will not be able to recover their funds, unless they had also backed up either of the respective recovery phrases. [View prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=15%3A59302&viewport=-304%2C225%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=1%3A56799&show-proto-sidebar=1).
 
 {% include image-gallery.html pages = page.images_recovery %}
 
-### Cloud storage key recovery
+### Cloud storage key recovery & replacement
 
 If a user loses access to their cloud storage, or accidentally deletes the backup file, they can easily restore the backup. If they no longer want to use cloud storage, alternative options should be available. [View prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=50%3A58938&viewport=-1473%2C-1193%2C0.35678958892822266&scaling=scale-down&starting-point-node-id=50%3A58938&show-proto-sidebar=1).
 
