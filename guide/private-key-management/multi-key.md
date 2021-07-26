@@ -37,9 +37,9 @@ https://www.figma.com/community/file/995256542920917246/BDG---Private-key-manage
 
 All of the previous schemes have relied on a single private key to control the wallet. This presents an all-or-nothing risk for loss of funds from both theft and negligence. To counter this a wallet can have several private keys attached of which all or a subset need to sign any transactions.
 
-This is often called multi-signature, or multisig for short, but is also sometimes referred to as a *vault*. A multi-key setup is described as *n-of-n* to indicate how many keys are needed to sign a transaction out of the issued number. For example a *2-of-3* setup requires two of the three private keys to sign a transaction for it to be valid.
+This is often called multi-signature, or multisig for short, but is also sometimes referred to as a *vault*. A multi-key setup is described as *n-of-n* to indicate how many keys are needed to sign a transaction out of the issued number. For example, a *2-of-3* setup requires two of the three private keys to sign a transaction for it to be valid
 
-In the case of a personal wallet, one individual will control all the keys but hold them on different devices for increased security.
+In the case of a personal wallet, one individual will control all the keys but hold them on different devices for increased security. See the [savings account case study]({{ '/guide/case-studies/savings-account/' | relative_url }}) for a UX exploration of this use case.
 
 In the case of a shared wallet, different people will control the keys. The number of keys and required co-signers will depend on the use case. With spouses sharing a *joint account*, a simple 1-of-2 multi-key setup might suffice, meaning there are two keys but only one is required to sign for a transaction to be valid. At the other end of a spectrum a company might require a more complex 3-of-5 setup, requiring three of the five co-signers to approve any transaction.
 
@@ -69,7 +69,7 @@ A software wallet application or coordination software initiates a multi-sig wal
 **When to use**
 - When storing large amounts
 - When funds need to be accessed by several people or an organization
-- When target audience is likely to own hardware wallets
+- When target audience is likely to own [hardware wallets]({{ '/guide/getting-started/hardware/#hardware-wallets' | relative_url }})
 - When users are likely to be very knowledgeable or be guided through setup and use
 - When most users are likely to implement good backup schemes for multiple keys
 
