@@ -74,7 +74,7 @@ Published in the spring of 2017 by Mihkel Pajunen.
 
 ###### [The Other Side of the Coin: User Experiences with Bitcoin Security and Privacy](https://publications.sba-research.org/publications/TheOtherSideOfTheCoin_FC16preConf.pdf)
 
-*The paper presents the first large-scale survey to investigate how users experience the Bitcoin ecosystem in terms of security, privacy and anonymity. 990 Bitcoin users were surveyed to determine Bitcoin management strategies and identified how users deploy security measures to protect their keys and bitcoins. It was also found that many users do not use all security capabilities of their selected Bitcoin management tool and have significant misconceptions on how to remain anonymous and protect their privacy in the Bitcoin network. To get a deeper understanding, qualitative interviews were conducted to explain some of the observed phenomena.*
+*A survey and follow-up interviews of Bitcoin users to determine bitcoin management strategies and identify how they deploy security measures to protect their keys and bitcoins. It was found that many do not use all security capabilities of their selected applications and have significant misconceptions on how to remain anonymous and protect their privacy.*
 
 Published in May 2017 by Katharina Krombholz, Aljosha Judmayer, Matthias Gusenbauer, and Edgar Weippl.
 
