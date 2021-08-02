@@ -1,8 +1,9 @@
 ---
+title: Search
+description: Search the Bitcoin Design Guide
 layout: search
+image: /assets/images/search-preview.jpg
 ---
-
-
 
 <form action="/search.html" msethod="get">
   <input type="text" id="search-page-input" name="query">
@@ -21,7 +22,7 @@ layout: search
         "title": "{{ page.title | xml_escape }}",
         "author": "{{ page.author | xml_escape }}",
         "category": "{{ page.category | xml_escape }}",
-        "content": {{ page.content | strip_html | strip_newlines | jsonify }},
+        "content": {{ page.content | markdownify | strip_html | strip_newlines | jsonify }},
         "url": "{{ page.url | xml_escape }}"
       }
       {% unless forloop.last %},{% endunless %}

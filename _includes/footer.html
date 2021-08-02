@@ -1,30 +1,35 @@
 <footer class="site-footer">
   <div class="wrapper">
 
-    <a class="-logo" href="{{ "/" | relative_url }}">
+    <a class="-logo" href="{{ "/" | relative_url }}" aria-label="Bitcoin design community logo">
       {% include banner-bitcoin-logo.svg %}
     </a>
 
     <div class="edit-license">
-      <a class="-edit" target="_blank" href="{{site.github_repository_url}}blob/master/{{page.path}}">Edit this page</a>
+      <a class="-edit" target="_blank" rel="noopener" href="{{site.github_repository_url}}blob/master/{{page.path}}">Edit this page</a>
 
       <a class="-license" href="{{ "/LICENSE" }}">License</a>
     </div>
 
-    {%- include social.html -%}
+    {%- include social.html -%}  
 
-    <nav class="footer-nav">
+    <nav class="footer-nav" aria-label="Footer navigation">
       {%- for path in page_paths -%}
-        {%- assign nav_pages = site.pages | where_exp:"item", "item.nav_order != nil" | sort:"nav_order" -%}
         {%- assign my_page = site.pages | where: "path", path | first -%}
-        {% if my_page.footer_nav %}
+        {% if my_page.main_nav %}
           {%- if my_page.title -%}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            {% assign current_page = page.url | replace:'/',' ' | truncatewords: 1,"" %}
+            {% assign menu_page = my_page.url | replace:'/',' ' | truncatewords: 1,"" %}
+            <a class="page-link{% if current_page == menu_page %} active{% endif %}" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
           {%- endif -%}
         {% endif %}
       {%- endfor -%}
-   </nav>   
+    </nav>
 
   </div>
+  
+  <script src="{{ "/js/scripts.js" | relative_url }}"></script>
+  <script src="{{ "/js/lunr.min.js" | relative_url }}"></script>
+  <script src="{{ "/js/themes.js" | relative_url }}"></script>
 
 </footer>

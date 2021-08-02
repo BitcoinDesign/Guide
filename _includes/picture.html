@@ -16,7 +16,8 @@
 	    	alt="{{ include.alt-text }}" 
 	    	width="{{ include.width }}" 
 	    	height="{{ include.height }}"
+    		loading="lazy"
 	    >
 	</picture>
-	{% if include.caption %}<figcaption class="small">{{ include.caption }}</figcaption>{% endif %}
+	{% if include.caption %}<figcaption markdown="1">{{ include.caption | markdownify }}</figcaption>{% endif %}
 </figure>

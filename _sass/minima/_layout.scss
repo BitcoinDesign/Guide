@@ -5,6 +5,7 @@
 
 .page-content {
   flex: 1 0 auto;
+
   @include media-query(large) {
     > .page-content-wrapper {
       display: flex;
@@ -12,14 +13,15 @@
 
       & > .side-bar {
         flex-shrink: 0;
-        flex-basis: 300px;
+        flex-basis: 380px;
       }
 
       & > .main.sidebar {
         flex-basis: 100%;
         flex-shrink: 1;
-        border-left: 1px solid rgba(var(--front), 0.05);
+        border-left: 1px solid rgba(var(--front), 0.1);
         min-height: 90vh;
+        overflow: hidden;
 
         .edit-link {
           max-width: 800px;
@@ -64,10 +66,11 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
-    grid-gap: 4rem 4rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 3rem 3rem;
+
     @include media-query(small) {
-      grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       grid-gap: 1rem 1rem;
     }
 }
@@ -93,24 +96,6 @@
   a:hover{
     text-decoration: none;
   }
-}
-
-.grid.projects {
-   margin: $spacing-unit*2 0 0 0;
-   .grid-item {
-     display:block;
-     img {
-       max-width:150px;
-       max-height:80px;
-     }
-     h3 {
-       margin-top: 0;
-     }
-     a {
-       display:block;
-       margin-top: $spacing-unit/2;
-     }
-   }
 }
 
 
@@ -145,9 +130,9 @@
   @include relative-font-size(0.8);
 
   @include media-query(medium-down) {
-    margin-top: $spacing-unit / 2;
-    margin-left: $spacing-unit / 2;
-    margin-right: $spacing-unit / 2;
+    margin-top: $spacing-unit/2;
+    margin-left: $spacing-unit/2;
+    margin-right: $spacing-unit/2;
   }
 
   @include media-query(large) {
@@ -155,18 +140,29 @@
   }
 }
 
-
 /**
  * Posts
  */
 
 .main {
-  @include media-query(small) {
-    padding-bottom: $spacing-unit * 2;
+  &.sidebar {
+    @include media-query(small) {
+      padding-bottom: $spacing-unit*2;
+    }
+
+    @include media-query(medium-up) {
+      padding-bottom: $spacing-unit * 6;
+    }
   }
 
-  @include media-query(medium-up) {
-    padding-bottom: $spacing-unit * 6;
+  &:not(.sidebar) {
+    @include media-query(small) {
+      padding-bottom: $spacing-unit;
+    }
+
+    @include media-query(medium-up) {
+      padding-bottom: $spacing-unit*3;
+    }
   }
 
   &:not(.-no-top-padding) {
@@ -175,14 +171,16 @@
     }
 
     @include media-query(medium-up) {
-      padding-top: $spacing-unit * 4;
+      padding-top: $spacing-unit*4;
     }
   }
 }
 
 .post-title,
 .post-content h1,
-article.guide h1 {
+article.guide h1,
+.post-content .h1,
+article.guide .h1 {
   @include relative-font-size(2.625);
   letter-spacing: -1px;
   line-height: 1.15;
@@ -194,13 +192,59 @@ article.guide h1 {
 
 .post-content,
 article.guide {
-  // margin-top: $spacing-unit;
+  h1,
+  .h1 {
+    margin-top: $spacing-unit * 1;
 
-  h1:not(:first-child), h2, h3 { margin-top: $spacing-unit * 2 }
+    @include media-query(medium-up) {
+      margin-top: $spacing-unit * 2;
+    }
+  }
 
-  h4, h5, h6 { margin-top: $spacing-unit }
+  h2, h3, h4, h5, h6,
+  .h2, .h3, .h4, .h5, .h6 {
+    margin-top: 0;
 
-  h2 {
+    &::before {
+      display: block;
+      content: '';
+      width: 0;
+      visibility: hidden;
+      position: relative;
+      z-index: -1;
+      pointer-events: none;
+    }
+  }
+
+  h2, h3,
+  .h2, .h3 {
+    &::before {
+      height: $spacing-unit * 1;
+    }
+
+    @include media-query(medium-up) {
+      &::before {
+        height: $spacing-unit * 3;
+        margin-top: -$spacing-unit * 2;
+      }
+    }
+  }
+
+  h4, h5, h6,
+  .h4, .h5, .h6 {
+    &::before {
+      height: $spacing-unit * 1.5;
+      margin-top: -$spacing-unit 1.5;
+    }
+
+    @include media-query(medium-up) {
+      &::before {
+        height: $spacing-unit * 1;
+      }
+    }
+  }
+
+  h2, .h2 {
     @include relative-font-size(1.75);
 
     @include media-query(large) {
@@ -208,7 +252,7 @@ article.guide {
     }
   }
 
-  h3 {
+  h3, .h3 {
     @include relative-font-size(1.375);
 
     @include media-query(large) {
@@ -216,15 +260,15 @@ article.guide {
     }
   }
 
-  h4 {
+  h4, .h4 {
     @include relative-font-size(1.25);
   }
 
-  h5 {
+  h5, .h5 {
     @include relative-font-size(1.125);
   }
 
-  h6 {
+  h6, .h6 {
     @include relative-font-size(1.0625);
   }
 }
@@ -241,7 +285,9 @@ article.guide {
     float: left;
     margin: 5px 10px 5px 0;
 
-    &:last-of-type { margin-right: 0 }
+    &:last-of-type {
+      margin-right: 0
+    }
 
     a {
       display: block;
@@ -250,12 +296,14 @@ article.guide {
       &:hover { border-color: $border-color-02 }
     }
   }
+
   li {
     a, div {
       min-width: 41px;
       text-align: center;
       box-sizing: border-box;
     }
+
     div {
       display: block;
       padding: $spacing-unit / 4;

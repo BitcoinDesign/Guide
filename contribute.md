@@ -1,53 +1,85 @@
 ---
-layout: page
+layout: guide
 title: Contribute
+description: Find out how to get involved in Bitcoin design
 permalink: /contribute/
 main_nav: true
-nav_order: 5
-image: https://pedromvpg.github.io/bitcoin-design-guide/assets/bitcoin-design-custom-og.png
-
-projets:
-  - name: CoinSwap
-    site: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2020-May/017898.html
-    description: CoinSwap is a way of trading one coin for another coin in a non-custodial way. It is closely related to the idea of an atomic swap.
-    image: /assets/images/contribute/coinswap.png
-  - name: photon-lib
-    site: https://github.com/photon-sdk/photon-lib
-    description: A high level library for building bitcoin wallets with react native.
-    image: /assets/images/contribute/photon-lib.png
-  - name: BTCPay Server
-    site: https://btcpayserver.org/
-    description: BTCPay Server is proudly free and open-source, built and maintained by a world-wide community of passionate contributors.
-    image: /assets/images/contribute/btcpay.png
-  - name: Bisq
-    site: https://bisq.network/
-    description: Bisq is an open-source, peer-to-peer application that allows you to buy and sell cryptocurrencies in exchange for national currencies. No registration required.
-    image: /assets/images/contribute/bisq.png
-  - name: Electrum
-    site: https://electrum.org/
-    description: Electrum was created by Thomas Voegtlin in November 2011. Since then, various developers have contributed to its source code.
-    image: /assets/images/contribute/electrum.png
-  - name: Samurai
-    site: https://samouraiwallet.com/
-    description: A modern bitcoin wallet hand forged to keep your transactions private your identity masked and your funds secured.
-    image: /assets/images/contribute/samurai.png
-  - name: Wasabi
-    site: https://wasabiwallet.io/
-    description: Wasabi is an open-source, non-custodial, privacy-focused Bitcoin wallet for Desktop, that implements trustless CoinJoin.
-    image: /assets/images/contribute/wasabi.png
-
+nav_order: 2
+main_classes: -no-top-padding
+image: https://bitcoin.design/assets/images/contribute/contribute-preview.jpg
 ---
 
-Help build this guide, find an exciting project to help scale, or join the community and start something new.
+{% include picture.html
+   image = "/assets/images/contribute/contribute.jpg"
+   retina = "/assets/images/contribute/contribute@2x.jpg"
+   mobile = "/assets/images/contribute/contribute-mobile.jpg"
+   mobileRetina = "/assets/images/contribute/contribute-mobile@2x.jpg"
+   alt-text = "Pencils and markers"
+   width = 1600
+   height = 900
+   layout = "full-width"
+%}
+
+# Contribute
+
+**So you’re interested in contributing? Fantastic! We welcome, appreciate and encourage new contributions.**
+
+Depending on your skills and interest, you can help in a number of ways. We design, illustrate, write copy and code, do technical research, discuss and answer questions, run workshops and community calls, and more. Design is a multidisciplinary activity and there are many different ways to be part of this community and help improve how we interact with the Bitcoin protocol.
 
 
-<div class="grid projects">
-{% for item in page.projets %}
-      <div class="grid-item">
-        <img src="{{ item.image | relative_url }}" />
-        <h3>{{- item.name -}}</h3>
-        {{- item.description -}}
-        <a href="{{- item.site -}}" target="_blank">Website</a>
-      </div>
-{% endfor %}
-</div>
+## Learn how we work
+
+If you are not familiar with the concepts of open design, we have a [great intro]({{ '/guide/designing-products/open-design/' | relative_url }}) for you. Open, public collaboration gives a lot of freedom to each participant and relies on us organically coming up with the organizational structures we want. The result is that things can sometimes look unorganized or unintuitive from the outside. The big benefit is that you can choose how you want to participate. Let's jump in.
+
+## How to get involved in the community
+
+1. [Join the community on Slack]({{ site.slack_invite_url }}) and say hi in the [#introductions](https://bitcoindesign.slack.com/archives/C0162PV1810) channnel
+1. [Subscribe to the newsletter](https://bitcoindesign.substack.com) and follow on [Twitter](https://twitter.com/bitcoin_design) to stay up-to-date
+1. Read up on our [project life cycle](https://github.com/BitcoinDesign/Meta/blob/master/Projects.md)
+1. Browse [issues](https://github.com/BitcoinDesign/Meta/issues) for upcoming calls and discussions around processes and coordination
+1. Subscribe to our [calendar](https://raw.githubusercontent.com/BitcoinDesign/Meta/calendar/events.ical) for calls and events we organize
+
+## How to get involved in projects
+
+1. See the projects we are either involved in or recommend on the [projects]({{ 'projects' | relative_url }}) page
+1. Browse [issues labeled as projects](https://github.com/BitcoinDesign/Meta/issues?q=is%3Aopen+is%3Aissue+label%3Aproject)
+2. Browse and post ideas in the [#project-ideas](https://bitcoindesign.slack.com/archives/C0174N5KUF9) Slack channel
+1. Contribute to the [Bitcoin Design Guide](https://github.com/BitcoinDesign/Guide)
+
+## Bitcoin Design Guide
+
+- [View the guide]({{ 'guide' | relative_url }})
+- We have a whole section on [how to contribute]({{ 'guide/contribute/' | relative_url }})
+- Follow progress on the [project board](https://github.com/BitcoinDesign/Guide/projects/1)
+- Discuss on the [#bitcoin-design-guide](https://bitcoindesign.slack.com/archives/C015856BDME) Slack channel
+- Review code and content on the [github repository](https://github.com/BitcoinDesign/Guide)
+- Read the original [project intro](https://docs.google.com/document/d/1YiYeRIybGmxmErCOI4Jc8Qajz3JGM1JYVfUtpzyCzSk/edit?usp=sharing) document
+- Watch the [How To Contribute to the Bitcoin Design Guide](https://www.youtube.com/playlist?list=PLPZzDjXV0FTZwILz4uyqiJNjUX-kHWP0k) video series
+
+## Further Slack channels
+
+- [#open-design](https://bitcoindesign.slack.com/archives/C015GFYSJNA)
+- [#research](https://bitcoindesign.slack.com/archives/C015DQEPCHJ)
+- [#design-review](https://bitcoindesign.slack.com/archives/C019MTNFKL7)
+- [#art](https://bitcoindesign.slack.com/archives/C0193ED2HT6)
+- [#onboarding](https://bitcoindesign.slack.com/archives/C019PB6GW7M)
+- [#private-key-mgmt](https://bitcoindesign.slack.com/archives/C018RATDW82)
+- [#payments](https://bitcoindesign.slack.com/archives/C0191UWDHBP)
+- [#ux](https://bitcoindesign.slack.com/archives/C016SDP7HT2)
+
+## The Bitcoin Design calendar
+
+Our [calendar](https://raw.githubusercontent.com/BitcoinDesign/Meta/calendar/events.ical) (an .iCal file) includes upcoming calls (community calls, design review calls, etc). Qualified issues are automatically added to the calendar, which you can then subscribe to via your favorite calendar tool.
+
+- Copy this URL: [https://raw.githubusercontent.com/BitcoinDesign/Meta/calendar/events.ical](https://raw.githubusercontent.com/BitcoinDesign/Meta/calendar/events.ical)
+- In Apple Calendar (desktop), use `File -> New calendar subscriptions`
+- In Google Calendar (web), click the small `+` icon next to `Other calendars` in the sidebar and select `From URL`
+- Paste the URL and save. New events (if there are any scheduled) should show up right away
+- In Thunderbird (desktop), `New Calendar` > `On my network` > `iCalendar (ICS)` and paste the [calendar link](https://raw.githubusercontent.com/BitcoinDesign/Meta/calendar/events.ical) in the location field.
+- Calendar tools regularly reload subscribed calendars for updates. How often this happens varies by tool
+
+There are two requirements for an issue to be included:
+
+- The issue needs to include a `UTCTime` meta property following this format: `UTCTime: 2020-10-14 9:00 UTC -7`. You can seen an example [here](https://github.com/BitcoinDesign/Meta/issues/27)
+- A maintainer needs to add the `call` label to the issue (this prevents spam)
+- The calendar auto-updates whenever a new issue is created, or an existing issue is edited

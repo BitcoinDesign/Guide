@@ -1,0 +1,52 @@
+
+.next-previous {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  &.--end {
+    justify-content: flex-end;
+  }
+
+  a {
+    display: flex;
+    border: 1px solid black;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 100ms $ease;
+
+    svg {
+      width: 24px;
+      height: 24px;
+      transition: all 100ms $ease;
+    }
+
+    & + a {
+      margin-left: 15px;
+    }
+
+    &.next-previous--previous {
+      padding: 14px 17px;
+
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+
+    &.next-previous--next {
+      align-self: flex-end;
+      padding: 14px 20px 14px 25px;
+
+      svg {
+        margin-left: 2px;
+      }
+    }
+
+    &:hover {
+      color: $primary-color;
+      border-color: $primary-color;
+    }
+  }
+}

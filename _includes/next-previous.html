@@ -1,0 +1,17 @@
+<div class="next-previous{% if include.nextUrl != nil and include.previousUrl == nil %} --end{% endif %}">
+  {%- if include.previousUrl -%}
+    <a class="next-previous--previous" href="{{ include.previousUrl | relative_url }}" title="{{ include.previousName }}" rel="prev">
+      <svg viewBox="0 0 24 24">
+        <use xlink:href="#svg-arrow-right"></use>
+      </svg>
+    </a>
+  {%- endif -%}
+  {%- if include.nextUrl -%}
+    <a class="next-previous--next" href="{{ include.nextUrl | relative_url }}" rel="next">
+      {{ include.nextName }}
+      <svg viewBox="0 0 24 24">
+        <use xlink:href="#svg-arrow-right"></use>
+      </svg>
+    </a>
+  {%- endif -%}
+</div>

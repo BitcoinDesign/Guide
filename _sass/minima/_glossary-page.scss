@@ -1,0 +1,37 @@
+
+.glossary-toc {
+    margin-top: 30px;
+
+    > ul {
+        margin-left: 0;
+        column-count: 3;
+
+        li {
+            font-size: 13px;
+            color: #bbbbbb;
+
+            a {
+                color: rgba(var(--front), 0.72);
+
+                &:hover {
+                    color: $primary-color;
+                    text-decoration: none;
+                }
+            }
+
+            & + li {
+                margin-top: 5px;
+            }
+
+            ol, ul {
+                display: none;
+            }
+        }
+    }
+
+    @include media-query(small) {
+        > ul {
+            column-count: 2;
+        }
+    }
+}

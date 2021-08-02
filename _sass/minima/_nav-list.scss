@@ -16,16 +16,25 @@
     position: relative;
     margin: 0;
 
-    .nav-list-link {
+    a.nav-list-link {
       display: block;
       font-size: 15px;
       line-height: 34px;
       margin-left: 34px;
+      color: black;
+
+      &:visited {
+        color: black;
+      }
 
       &.-active {
         font-weight: 500;
         color: $primary-color;
         text-decoration: none;
+
+        &:visited {
+          color: $primary-color;
+        }
       }
 
       &:hover,
@@ -42,12 +51,22 @@
       align-items: center;
       width: 34px;
       height: 34px;
+      background-color: transparent;
+      border-width: 0;
+      appearance: none;
 
       svg {
         width: 15px;
         height: 15px;
         color: $link-base-color;
         transition: all 150ms $ease;
+      }
+
+      &:active,
+      &:focus {
+        border-width: 0;
+        outline: none;
+        background-color: rgba($primary-color, 0.1);
       }
 
       &:hover {
@@ -59,7 +78,7 @@
       }
 
       & + .nav-list-link {
-        
+
       }
     }
 
@@ -82,13 +101,19 @@
     }
 
     &.-active {
-      > .nav-list-link {
-          // color: $primary-color;
+      > a.nav-list-link {
+          color: $primary-color;
+
+          &:visited {
+            color: $primary-color;
+          }
       }
 
-      > .nav-list-expander svg {
-          transform: rotate(90deg);
-          color: $primary-color;
+      > .nav-list-expander {
+          svg {
+            transform: rotate(90deg);
+            color: $primary-color;
+          }
       }
 
       > .nav-list {

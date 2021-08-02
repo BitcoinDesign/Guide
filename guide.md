@@ -2,20 +2,27 @@
 layout: guide
 nav_order: 1
 title: Guide
+secondary_nav_title: Introduction
+description: The Bitcoin Design Guide is a reference for the design of Bitcoin applications.
 permalink: /guide/
 main_nav: true
-secondary_nav: false
+secondary_nav: true
 main_classes: -no-top-padding
+image: https://bitcoin.design/assets/images/guide/bitcoin-island-preview.jpg
 ---
 
 <!--
 
 Introduction to the guide
 
-Why it exists
-What's in it
-How to use it
-How to contribute
+- Why it exists
+- What's in it
+- How to use it
+- How to contribute
+
+Illustration sources
+
+- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=238%3A3
 
 -->
 
@@ -24,39 +31,63 @@ How to contribute
    retina = "/assets/images/guide/bitcoin-island@2x.jpg"
    mobile = "/assets/images/guide/bitcoin-island-mobile.jpg"
    mobileRetina = "/assets/images/guide/bitcoin-island-mobile@2x.jpg"
-   alt-text = ""
+   alt-text = "Bitcoin island travel map"
    width = 1600
    height = 900
    layout = "full-width"
 %}
 
-# The bitcoin design guide
+# The Bitcoin design guide
 
-**Bitcoin is an incredibly open and public technology that we can all use, be part of, and contribute to. It is also a complex technology that takes time to understand, with a global audience and diverse uses cases. Therefore it's best to combine efforts, share knowledge and support each other in building great bitcoin products.**
+**Bitcoin is a global payment protocol that anyone with Internet access can participate in and contribute to. However, because Bitcoin’s use cases are as vast as its user base, building Bitcoin applications can be complicated.**
 
-This guide was built on that very idea. Like a travel guide, it provides an introduction to a “foreign place”, shows you the highlights and tells you some of the best stories. It provides facts and maps to figure out how to get around, ideas for tours and things to do. Whether you end up taking the official museum tour, clubbing all night or go on shopping sprees is still your choice. Note that these are guides, not mandates. Just like in a foreign city, you can choose to go off the path, and forge a new direction. Others may just follow in the future.
-
-## What's in it?
-
-With bitcoin being so new and different, a big focus of the guide lies on providing overviews, explanations and best practices for the most common questions and problems. These are the main chapters:
-
-- [Getting started]({{ '/getting-started/introduction/' | relative_url }}) is for top-level overviews, whether it's bitcoin technology, visual language, software, or design collaboration in an open-source world
-- _Onboarding_ (Coming soon) goes in-depth on the delicate process of introducing new users to bitcoin and how to use specific products and features
-- [Private key management]({{ '/private-key-management/introduction/' | relative_url }}) provides extensive details and guidance on the many techniques for storing private keys
-- _Transactions_ (Coming soon) deals with the complexities of sending and receiving bitcoin across various use cases
-- _Resources_ (Coming soon) are tools and information to practically help you get things done
-- _Reference_ (Coming soon) includes a glossary, an overview of important bitcoin improvement proposals and other useful information
-
-## How to use the guide
-
-If you are new to bitcoin, continue to the "[Getting started]({{ '/getting-started/introduction/' | relative_url }})" section for an introduction on why bitcoin is so unique and what makes it so interesting and worthwhile to be involved. As a more experienced reader, you are more than welcome to skip straight to the sections that interest you most. And if you don’t find what you are looking for, try the search function, [ask in the community](http://bitcoindesigners.org) or [file an issue]({{site.github_repository_url}}issues) and help us improve this guide.
-
-## A community effort
-
-One of the unique aspects of bitcoin is that it is an open-source project and no single group, company or government owns or controls it. That means all of us can freely participate and contribute as much or as little as we want. All contributions are equally valid, and there are no gatekeepers. This decentralization is an incredibly important property for a global currency as it provides a level playing field for all participants. It also means that there are many different people independently working on different projects, and that we need to help each other to make bitcoin as useful as possible for as many people as possible.
-
-This guide is an example of this. It was created and is maintained by a community of designers and design enthusiasts that want to help improve the overall level of design in the bitcoin ecosystem. It is continuously improved and you are welcome to help, whether it’s providing feedback or adding more content. And if you implement any of the information from this guide in your project, please share how it worked out for you.
+We designed this guide to help anyone navigate those complexities—regardless of where they live or work. We can’t imagine every possible use case, but we can help you build for them.
 
 ---
 
-Now, let's [get started]({{ '/getting-started/introduction/' | relative_url }}).
+### [Getting started]({{ '/guide/getting-started/introduction/' | relative_url }})
+
+Provides top-level overviews of common visual language, technology, software, and hardware.
+
+---
+
+### [Designing Bitcoin products]({{ '/guide/designing-products/introduction/' | relative_url }})
+
+A close look at the design process, from the concept of open design to use cases and frameworks like the usage life cycle.
+
+---
+
+### [Onboarding]({{ '/guide/onboarding/introduction/' | relative_url }})
+
+Familiarizes designers with the products, features, and terms needed to create better experiences for first time users.
+
+---
+
+### [Private key management]({{ '/guide/private-key-management/introduction/' | relative_url }})
+
+Details the many techniques that can be used to store private keys.
+
+---
+
+### [Payments]({{ '/guide/payments/' | relative_url }})
+
+Covers the complexities encountered when sending and receiving bitcoin.
+
+---
+
+### [Case studies]({{ '/guide/case-studies/' | relative_url }})
+
+Explores approaches to diverse uses cases with wireframes, designs and prototypes.
+
+---
+
+### [Glossary]({{ '/guide/glossary/' | relative_url }})
+
+Helps you learn the most need-to-know Bitcoin terminology from Address to ZPUB
+
+---
+
+{% include next-previous.html
+   nextUrl = "/guide/getting-started/introduction/"
+   nextName = "Get started"
+%}

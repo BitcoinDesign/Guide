@@ -6,6 +6,16 @@
   max-width: 1680px;
   margin-left: auto;
   margin-right: auto;
+  background-color: var(--banner-background-color);
+  background-image: var(--banner-background-path-mobile);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  transition: background-color 150ms $ease;
+
+  @include retina() {
+    background-image: var(--banner-background-path-mobile-retina);
+  }
 
   .home-banner-copy-wrapper {
     background-color: var(--copy-background-color);
@@ -16,10 +26,10 @@
       font-family: $base-font-family;
       font-style: normal;
       font-weight: bold;
-      font-size: 64px;
       line-height: 100%;
       letter-spacing: -0.03em;
       transition: all 150ms $ease;
+      @include responsive('font-size', 48, 64);
 
       color: black;
       -webkit-text-fill-color: var(--title-fill-color); /* Will override color (regardless of order) */
@@ -78,15 +88,15 @@
   .home-banner-image {
     width: 100%;
     padding-bottom: 100%;
-    background-color: var(--background-image-color);
-    background-image: var(--background-image-path-mobile);
+    background-color: var(--banner-image-color);
+    background-image: var(--banner-image-path-mobile);
     background-size:     cover;
     background-repeat:   no-repeat;
-    background-position: center center; 
+    background-position: center center;
     transition: background-color 150ms $ease;
 
     @include retina() {
-      background-image: var(--background-image-path-mobile-retina);
+      background-image: var(--banner-image-path-mobile-retina);
     }
   }
 
@@ -94,18 +104,36 @@
     &.-flip-on-mobile {
       flex-direction: column;
     }
+
+    .home-banner-copy-wrapper {
+      .home-banner-copy {
+        .home-banner-logo-wrapper {
+          display: none;
+        }
+
+        h1 {
+          margin-top: 0;
+        }
+      }
+    }
   }
 
   @include media-query(large) {
     display: flex;
     flex-direction: row;
     align-items: stretch;
+    background-image: var(--banner-background-path);
+    background-position: center center;
+
+    @include retina() {
+      background-image: var(--banner-background-path-retina);
+    }
 
     .home-banner-image {
-      background-image: var(--background-image-path);
+      background-image: var(--banner-image-path);
 
       @include retina() {
-        background-image: var(--background-image-path-retina);
+        background-image: var(--banner-image-path-retina);
       }
     }
 
@@ -120,7 +148,6 @@
       a {
         margin: 0 12px 0 0;
       }
-  
     }
 
     .home-banner-buttons-wrapper {
@@ -138,8 +165,14 @@
 .home-banner-info {
   display: flex;
   justify-content: center;
+  max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #f4f4f4;
   padding: 5px 15px;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
 
   .home-banner-info-wrapper {
     width: 100%;

@@ -4,7 +4,7 @@
 .site-header {
     position: sticky;
     background-color: $background-color;
-    border-bottom: 1px solid rgba(var(--front), 0.05);
+    border-bottom: 1px solid rgba(var(--front), 0.1);
     top: 0;
     z-index: 11;
 
@@ -12,7 +12,7 @@
         position: relative;
         display: flex;
         justify-content: space-between;
-        padding-left: 40px;
+        padding-left: 30px;
 
         .wrap-inner {
             width: 100%;
@@ -21,17 +21,32 @@
         }
 
         .site-title {
-            @include relative-font-size(1.25);
+            font-size: 25px;
             font-weight: $heavy-font-weight;
             margin-bottom: 0;
-            line-height: 80px;
+            line-height: 60px;
             letter-spacing: -0.5px;
             color: var(--frontHex);
             transition: color 100ms $ease;
+            outline: none;
+            white-space: nowrap;
+
+            svg {
+                width: 30px;
+                height: 30px;
+                vertical-align: middle;
+                margin-right: 5px;
+                transform: translateY(-1px);
+                fill: black;
+            }
 
             &,
             &:visited {
                 color: $site-title-color;
+            }
+
+            &:focus {
+                background-color: rgba($primary-color, 0.05);
             }
 
             &:hover {
@@ -43,7 +58,7 @@
         .site-nav {
             .page-link {
                 color: var(--frontHex);
-                line-height: 80px;
+                line-height: 60px;
                 display: block;
                 transition: color 100ms linear;
                 position: relative;
@@ -77,8 +92,8 @@
             margin-left: 10px;
 
             svg {
-                width: 20px;
-                height: 20px;
+                width: 44px;
+                height: 44px;
                 color: var(--frontHex);
                 transition: color 100ms linear;
             }
@@ -235,6 +250,11 @@
                 border-width: 0;
                 outline: none;
 
+                svg {
+                    width: 44px;
+                    height: 44px;
+                }
+
                 &:focus {
                     background-color: rgba($primary-color, 0.05);
                 }
@@ -286,10 +306,14 @@
                 }
 
                 .nav-list {
+                    button {
+                        margin-left: 10px;
+                    }
+
                     a {
                         line-height: 34px;
-                        padding-left: 10px;
-                        padding-right: 10px;
+                        padding-left: 15px;
+                        // padding-right: 10px;
                     }
                 }
             }
@@ -313,7 +337,13 @@
 
     @include media-query(large) {
         .wrap {
-            padding-right: 30px;
+            padding-right: 20px;
+
+            .site-title {
+                svg {
+                    display: none;
+                }
+            }
 
             .site-nav {
                 display: flex;
