@@ -129,7 +129,7 @@ Published in May 2021 by Maggie Valentine.
 
 *Documentation of the user research, redesign and testing process of Coinhako, a cryptocurrency trading and digital wallet app.*
 
-Published in October 2019 by Ng Qun Zhao.
+Published October 2019 by Zhao.
 
 ###### [Making design better for crypto apps: Abra UX Case study](https://medium.com/@kagakawa/abra-app-ux-case-study-2eb2a6e09c70) 
 
