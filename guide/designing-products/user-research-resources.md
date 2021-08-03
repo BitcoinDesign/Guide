@@ -70,7 +70,7 @@ _Published February 2018 by Eskandari, Barrera, Stobert, and Clark._
 
 *A survey of 50 users on the [r/bitcoin subreddit](https://www.reddit.com/r/Bitcoin/) about their attitudes towards anonymity in the Bitcoin network.*
 
-Published in the spring of 2017 by Mihkel Pajunen.
+_Published September 2017 by Pajunen._
 
 ###### [The Other Side of the Coin: User Experiences with Bitcoin Security and Privacy](https://publications.sba-research.org/publications/TheOtherSideOfTheCoin_FC16preConf.pdf)
 
