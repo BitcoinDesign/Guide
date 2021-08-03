@@ -38,7 +38,7 @@ Below is a collection of published user research findings around Bitcoin, from a
 
 ###### [Non-adoption of crypto-assets: Exploring the role of trust, self-efficacy, and risk](https://voskart.de/pdf/crypto_adoption.pdf)
 
-*A survey of 404 users and non-users of Bitcoin about the roles of trust, self-efficacy, and risk on adoption intention.*
+A survey of 404 users and non-users of Bitcoin about the roles of trust, self-efficacy, and risk on adoption intention.
 
 _Published May 2021 by Voskobojnikov, Abramova, Beznosov, and Böhme._
 
