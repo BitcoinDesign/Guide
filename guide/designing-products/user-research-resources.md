@@ -113,7 +113,7 @@ _Published  February 2019 by Foundation for Interwallet Operability (FIO)._
 
 ###### [2nd Global Cryptoasset Benchmarking Study](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2nd-global-cryptoasset-benchmark-study/#.X_1mxi1h1qs)
 
-*Insights into the current state of the cryptoasset industry. The study gathers survey data from more than 180 cryptoasset companies and individuals, covering 47 countries across five world regions, focusing on the following four key industry segments: mining, exchange, storage, and payments.*
+Insights into the current state of the cryptoasset industry. The study gathers survey data from more than 180 cryptoasset companies and individuals, covering 47 countries across five world regions, focusing on the following four key industry segments: mining, exchange, storage, and payments.
 
 _Published December 2018 by Rauchs, Blandin, Klein, Pieters, Recanatini, Zhang._
 
