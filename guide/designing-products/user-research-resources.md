@@ -76,7 +76,7 @@ _Published September 2017 by Pajunen._
 
 *A survey and follow-up interviews of Bitcoin users to determine bitcoin management strategies and identify how they deploy security measures to protect their keys and bitcoins. It was found that many do not use all security capabilities of their selected applications and have significant misconceptions on how to remain anonymous and protect their privacy.*
 
-Published in May 2017 by Katharina Krombholz, Aljosha Judmayer, Matthias Gusenbauer, and Edgar Weippl.
+Published May 2017 by Krombholz, Judmayer, Gusenbauer, and Weippl.
 
 ## Surveys
 
