@@ -107,7 +107,7 @@ _Published December 2020 by Bogart._
 
 ###### [Blockchain Usability Report](https://fioprotocol.io/wp-content/themes/fio/build/files/blockchain-usability-report-2019.pdf)
 
-*A survey of over 200 crypto holders regarding their frequency and experiences in transacting crypto, with the goal of unearthing some of the common issues they’ve faced.*
+A survey of over 200 crypto holders regarding their frequency and experiences in transacting crypto, with the goal of unearthing some of the common issues they’ve faced. 
 
 _Published  February 2019 by Foundation for Interwallet Operability (FIO)._
 
