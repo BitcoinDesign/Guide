@@ -68,7 +68,7 @@ _Published February 2018 by Eskandari, Barrera, Stobert, and Clark._
 
 ###### [An Evaluation of User Attitudes Towards Anonymity in Bitcoin](https://www.diva-portal.org/smash/get/diva2:1141672/FULLTEXT01.pdf)
 
-*A survey of 50 users on the [r/bitcoin subreddit](https://www.reddit.com/r/Bitcoin/) about their attitudes towards anonymity in the Bitcoin network.*
+A survey of 50 users on the [r/bitcoin subreddit](https://www.reddit.com/r/Bitcoin/) that showed Bitcoin users value their anonymity, which suggests that anonymity is an integral part of Bitcoin, at least from an end user perspective. 
 
 _Published September 2017 by Pajunen._
 
