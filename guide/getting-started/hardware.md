@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Hardware overview
+description: List of the main categories of Bitcoin hardware, from wallets to miners.
 nav_order: 12
 parent: Getting started
 permalink: /guide/getting-started/hardware/
@@ -122,3 +123,10 @@ A Bitcoin ATM (Automated Teller Machine) allows for bitcoin's purchase or sale f
 ---
 
 Ready to learn more about [designing Bitcoin products]({{ '/guide/designing-products/introduction/' | relative_url }})?
+
+{% include next-previous.html
+   previousUrl = "/guide/getting-started/software/"
+   previousName = "Software overview"
+   nextUrl = "/guide/designing-products/introduction/"
+   nextName = "Designing Bitcoin products"
+%}

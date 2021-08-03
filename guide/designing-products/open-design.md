@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Open design
+description: What it means to participate in open design in the Bitcoin ecosystem.
 nav_order: 2
 parent: Designing Bitcoin products
 permalink: /guide/designing-products/open-design/
@@ -123,3 +124,10 @@ This guide is published under three different licenses ([MIT license]({{site.git
 ---
 
 Still not sure where to start? Check out the next section about [design principles]({{ '/guide/designing-products/principles/' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/designing-products/why-design-for-bitcoin/"
+   previousName = "Why design for Bitcoin"
+   nextUrl = "/guide/designing-products/principles/"
+   nextName = "Design principles"
+%}

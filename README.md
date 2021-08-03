@@ -22,86 +22,25 @@ The guide is meant to be a simple starting-point for anyone looking to build Bit
 
 The guide is still being created and should be seen as an evolving resource. Similar to the iterative design process, it starts with core parts then grows in ambition based on community support.
 
-Here is an initial outline that will be updated as needed, content that is live is linked:
+Here is the content that is currently live:
 
 [The Bitcoin Design Guide](https://bitcoin.design/guide/)
 *   [Getting started](https://bitcoin.design/guide/getting-started/introduction/)
-    *   Why bitcoin is unique
-    *   Why design for bitcoin
-    *   Open design
-    *   The visual language of bitcoin
-    *   User research
-    *   Personal finance
-    *   Usage life cycle
-    *   Common user flows
-    *   Technology primer
-    *   Software overview
-    *   Hardware overview
-*   [Bitcoin design principles](https://bitcoin.design/guide/principles/principles/)
-    *   Decentralization
-    *   Self-sovereignty
-    *   Security
-    *   Interoperability
-    *   Privacy
-*   Essentials
-    *   Onboarding users to bitcoin
-        *   Key concepts users should be aware of
-        *   Recommended actions on first-run
-    *   [Private key management](https://bitcoin.design/guide/private-key-management/introduction/)
-        *   Private key schemes
-        *   Personal schemes
-        *   Shared schemes
-        *   Case studies
-    *   Payments and transactions - [Discussion about WIP](https://github.com/BitcoinDesign/Guide/discussions/98)
-        *   Transactions overview
-        *   Sending bitcoin
-        *   Receiving bitcoin
-        *   Transaction privacy
-        *   Bitcoin transaction in depth
-        *   Lightning transactions in depth
-        *   Managing funds
-        *   Case studies
-    *   Important BIPs
-*   Resources
-    *   [Glossary](https://bitcoin.design/guide/glossary/)
-*   Reference
-    *   User research
-        *   Overview
-        *   Published research (Segmented by use case etc)
-        *   Personas
-    *   Case studies, design rationales and open source design explorations
-    *   Academic research
-    *   Available/relevant technologies (Development tools, Libraries etc.)
-    *   Material and articles elsewhere
-*   [Contribute](https://bitcoin.design/guide/contribute/)
-    *   Content guidelines
-    *   Illustration guidelines
-    *   Formatting
-*   Maybe?
-    *   Designing for Lightning
-    *   Designing for hardware wallets
-    *   User guide - welcome to bitcoin
-        *   What is bitcoin
-        *   Is it trustworthy
-        *   Key use cases (international payments, remittances, investment…)
-        *   How does it fit in with the other financial systems we already have (and the wider cryptocurrency ecosystem)
-        *   Why should I use it
-        *   How do I use it / where do I start
-        *   Who do I use it with (if not just for speculating)
-    *   Proposals for unsolved problems / looking into the future
-        *   Creative visions for future UX
-        *   Inter-app communication (bitcoin to bitcoin app)
-        *   Prototypes
-    *   How to run a node
-
-
+*   [Designing Bitcoin products](https://bitcoin.design/guide/designing-products/introduction/)
+*   [Onboarding](https://bitcoin.design/guide/onboarding/introduction/)
+*   [Private key management](https://bitcoin.design/guide/private-key-management/introduction/)
+*   [Payments](https://bitcoin.design/guide/payments/)
+*   [Case studies](https://bitcoin.design/guide/case-studies/)
+*   [Contribute to guide](https://bitcoin.design/guide/contribute/)
+*   [Glossary](https://bitcoin.design/guide/glossary/)
 
 ---
 
 ## Origin and history
 
-The process to create the guide started in the summer of 2020. The first drafts of this document first existed as Google Docs, here are [Version 1](https://docs.google.com/document/d/1omAxwvCSRlo_u5UL3ThTXFhNccDuN7GJOi4RlZfk--w/edit#heading=h.75nvyav1r98b) and [Version 2](https://docs.google.com/document/d/1YiYeRIybGmxmErCOI4Jc8Qajz3JGM1JYVfUtpzyCzSk/edit?usp=sharing) for reference.
+The process to create the guide started in the summer of 2020. The first draft outlines of the guide first existed as Google Docs, here are [Version 1](https://docs.google.com/document/d/1omAxwvCSRlo_u5UL3ThTXFhNccDuN7GJOi4RlZfk--w/edit#heading=h.75nvyav1r98b) and [Version 2](https://docs.google.com/document/d/1YiYeRIybGmxmErCOI4Jc8Qajz3JGM1JYVfUtpzyCzSk/edit?usp=sharing) for reference.
 
+On June 2, 2021, the community [announced](https://bitcoindesign.medium.com/announcing-the-bitcoin-design-guide-c4955d859fda) the launch of the initial version of the Bitcoin Design Guide to the public.
 
 ---
 

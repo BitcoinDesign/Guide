@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Technology primer
+description: Learn the basics of Bitcoin technology in a series of simple explanations.
 nav_order: 10
 parent: Getting started
 permalink: /guide/getting-started/technology-primer/
@@ -72,7 +73,7 @@ It's both. Lowercase bitcoin refers to the currency. So you may have 1 bitcoin i
    layout = "float-right-desktop"
 %}
 
-Bitcoin (as in "I have 1 bitcoin") are just numbers in the database of transactions often referred to as the bitcoin blockchain.
+Bitcoin (as in "I have 1 bitcoin") are just numbers in the ledger of transactions often referred to as the bitcoin blockchain.
 
 A transaction involves sending bitcoin from one address to another. This reduces the available balance of the sending address and increases the balance of the receiving address. A small amount is deducted to pay for the transaction fee.
 
@@ -353,3 +354,10 @@ Now, if you'd like to go all the way to the beginning of Bitcoin, the most funda
 ---
 
 Take a look at how these technologies are implemented in the various types of [bitcoin software]({{ '/guide/getting-started/software/' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/getting-started/visual-language/"
+   previousName = "Visual language"
+   nextUrl = "/guide/getting-started/software/"
+   nextName = "Software overview"
+%}

@@ -50,7 +50,7 @@ The simplest way to receive bitcoin is by generating and sharing a Bitcoin addre
 </div>
 
 {% include tip/tip.html %}
-There are several types of addresses. Sharing one that is incompatible with the sender's wallet application can prevent a successful payment. Read more about [address compatibility]({{ '/guide/glossary/#address-compatibility' | relative_url }}) issues in the glossary.
+There are several types of addresses. Sharing one that is incompatible with the sender's wallet application can prevent a successful payment. Read more about [address compatibility]({{ '/guide/glossary/address/#address-compatibility' | relative_url }}) issues in the glossary.
 {% include tip/close.html %}
 
 ## Inputting additional payment details
@@ -219,7 +219,14 @@ Once the payment has been finalized, consider what the receiver may want to do w
 
 ---
 
-Let's go, time go dive in a bit deeper with [Transaction privacy]({{ "/guide/payments/privacy" | relative_url }}).
+Let's go, time go dive in a bit deeper with [transaction privacy]({{ "/guide/payments/privacy/" | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/payments/send/"
+   previousName = "Sending bitcoin"
+   nextUrl = "/guide/payments/privacy/"
+   nextName = "Transaction privacy"
+%}
 
 <!--
 On /guide/payments/send/#inputting-an-address

@@ -199,4 +199,11 @@ Most Bitcoin applications rely on external data sources (like currency conversio
 
 ---
 
-That's it for this section. Keep reading to learn about [onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}).
+To kickstart your design work, take a look at [design resources]({{ '/guide/designing-products/design-resources/' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/designing-products/common-user-flows/"
+   previousName = "Common user flows"
+   nextUrl = "/guide/designing-products/design-resources/"
+   nextName = "Design resources"
+%}

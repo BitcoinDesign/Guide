@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Manual backup
-description: An overview of personal private key management schemes.
+description: An explainer of manual backup for recovery phrases of Bitcoin wallets.
 nav_order: 3
 parent: Private key management
 permalink: /guide/private-key-management/manual-backup/
@@ -13,7 +13,12 @@ main_classes: -no-top-padding
 
 Editor's notes
 
-Descriptions of schemes suitable for a single user.
+Description of what manual backup / recovery phrase scheme consists of.
+
+Illustration sources
+
+https://www.figma.com/community/file/888680264445459448
+https://www.figma.com/community/file/995256542920917246/BDG---Private-key-management-illustrations
 
 -->
 
@@ -30,7 +35,7 @@ Descriptions of schemes suitable for a single user.
 
 # Manual backup / Recovery phrase
 
-Manual backup of the [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) has been the most common private key management scheme by far since its proposal with [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) in 2013. If you have used any [non-custodial]({{ '/guide/glossary/#non-custodial--custodial-wallet' | relative_url }}) bitcoin application you are likely to have experienced the onboarding requirements of manual backups.
+Manual backup of the [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) has been the most common private key management scheme by far since its proposal with [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) in 2013. If you have used any [non-custodial]({{ '/guide/glossary/wallet/#non-custodial--custodial-wallet' | relative_url }}) bitcoin application you are likely to have experienced the onboarding requirements of manual backups.
 
 When creating a new wallet, you will be asked to manually backup a 12 or 24 word recovery phrase to a *safe place*. Often, as the next step it will ask you to verify that you did save it by having you input the phrase in the correct order.
 
@@ -89,3 +94,10 @@ Most bitcoin wallets, including;
 ---
 
 Next, let's look at [external signing devices]({{ '/guide/private-key-management/external-signing-device/' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/private-key-management/cloud-backup/"
+   previousName = "Automatic cloud backup"
+   nextUrl = "/guide/private-key-management/external-signing-device/"
+   nextName = "External signing devices"
+%}

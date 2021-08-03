@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: User research
+description: Bitcoin user research is unique due to the decentralized and public nature of the network.
 nav_order: 4
 parent: Designing Bitcoin products
 has_children: true
@@ -197,3 +198,10 @@ Links to:
 ---
 
 Frameworks are helpful tools to organize user behavior. Our next section introduces one with a focus on the [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/designing-products/principles/"
+   previousName = "Design principles"
+   nextUrl = "/guide/designing-products/usage-life-cycle/"
+   nextName = "Usage life cycle"
+%}

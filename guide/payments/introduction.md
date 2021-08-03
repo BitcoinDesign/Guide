@@ -55,3 +55,13 @@ An overview of how to help users maintain transaction privacy with Bitcoin.
 ### Managing funds (coming soon)
 
 How to help users organize and manage their transaction data and holdings.
+
+---
+
+{% include next-previous.html
+   previousUrl = "/guide/private-key-management/backups/"
+   previousName = "Bitcoin backups"
+   nextUrl = "/guide/payments/transactions/"
+   nextName = "Transactions overview"
+%}
+

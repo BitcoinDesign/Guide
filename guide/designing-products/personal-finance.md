@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Personal finance
+description: How Bitcoin applications and usage overlap with traditional personal finance management.
 nav_order: 6
 parent: Designing Bitcoin products
 permalink: /guide/designing-products/personal-finance/
@@ -133,7 +134,7 @@ Bitcoin is different since the sender must initiate all transactions, meaning th
    height = 800
 %}
 
-A hardware wallet accompanied by a desktop application where keys are stored and transactions are securely signed by hardware is another solution. This reduces the risk of keeping funds on a mobile wallet configuration but adds acceptable friction for transactions that occur less frequently.
+A hardware wallet accompanied by a desktop application where keys are stored and transactions are securely signed by hardware is another solution. This reduces the risk of keeping funds on a mobile wallet configuration but adds acceptable friction for transactions that occur less frequently. See the [savings account case study]({{ '/guide/case-studies/savings-account/' | relative_url }}) for an exploration of this user experience.
 
 ## Emergency funds
 
@@ -263,3 +264,10 @@ Considering your product, ask yourself these questions:
 ---
 
 Looking closer at these use cases, we can identify a series of user actions, as outlined in [common user flows]({{ '/guide/designing-products/common-user-flows/' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/designing-products/usage-life-cycle/"
+   previousName = "Usage life cycle"
+   nextUrl = "/guide/designing-products/common-user-flows/"
+   nextName = "Common user flows"
+%}

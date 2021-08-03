@@ -15,6 +15,10 @@ Editor's notes
 
 An overview of what different private key management schemes there are, and how to choose one depending on use case.
 
+Illustration sources
+
+https://www.figma.com/community/file/995256542920917246/BDG---Private-key-management-illustrations
+
 -->
 
 {% include picture.html
@@ -117,3 +121,10 @@ The use cases for shared schemes include spouses managing a joint account, group
 ---
 
 Let's start by looking at the [automatic cloud backup](/guide/private-key-management/cloud-backup/) scheme.
+
+{% include next-previous.html
+   previousUrl = "/guide/private-key-management/introduction/"
+   previousName = "Private key management"
+   nextUrl = "/guide/private-key-management/cloud-backup/"
+   nextName = "Automatic cloud backup"
+%}

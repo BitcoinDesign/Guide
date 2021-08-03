@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Restoring a wallet
-description: Options for restoring a wallet
+description: Options for restoring a wallet, from automatic cloud backup to recovery phrases, and more.
 parent: Onboarding
 nav_order: 4
 permalink: /guide/onboarding/restoring-a-wallet/
@@ -61,4 +61,12 @@ Some less popular methods include importing a file such as wallet.dat. Such a fi
 
 ---
 
-The next section looks at options for adding extra layers of security and [protecting a wallet]({{ 'guide/onboarding/protecting-a-wallet' | relative_url }}).
+The next section looks at options for adding extra layers of security and [protecting a wallet]({{ '/guide/onboarding/protecting-a-wallet/' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/"
+   previousName = "Manual backups"
+   nextUrl = "/guide/onboarding/protecting-a-wallet/"
+   nextName = "Protecting a wallet"
+%}
+

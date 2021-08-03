@@ -36,6 +36,12 @@ Below is a collection of published user research findings around Bitcoin, from a
 
 ## Research papers
 
+###### [Cryptoasset consumer research 2021](https://www.fca.org.uk/publications/research/research-note-cryptoasset-consumer-research-2021)
+
+*A survey showing an increase in awareness of cryptocurrencies among adults in the UK, but a decreasing understanding of how cryptocurrencies work.*
+
+Published in June 2021 by Michael Karim, and Gergana Tomova.
+
 ###### [Non-adoption of crypto-assets: Exploring the role of trust, self-efficacy, and risk](https://voskart.de/pdf/crypto_adoption.pdf)
 
 A survey of 404 users and non-users of Bitcoin about the roles of trust, self-efficacy, and risk on adoption intention.
@@ -136,3 +142,12 @@ Published October 2019 by Zhao.
 A UX case study exploring the usability and suggesting improvements for making purchases in the Abra app.
 
 Published July 2018 by Kawabata.
+
+---
+
+{% include next-previous.html
+   previousUrl = "/guide/designing-products/user-research/"
+   previousName = "User research"
+   nextUrl = "/guide/designing-products/usage-life-cycle/"
+   nextName = "Usage life cycle"
+%}

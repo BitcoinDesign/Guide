@@ -183,3 +183,10 @@ Ultimately the goal of onboarding is that users trust the application, feel comf
 ---
 
 Next, we will cover [creating a new wallet]({{ '/guide/onboarding/creating-a-new-wallet/' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/onboarding/introduction/"
+   previousName = "Onboarding"
+   nextUrl = "/guide/onboarding/creating-a-new-wallet/"
+   nextName = "Creating a new wallet"
+%}

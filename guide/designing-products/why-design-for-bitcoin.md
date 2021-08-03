@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Why design for Bitcoin
+description: Be on the cutting-edge of technology and open-design by working in the Bitcoin ecosystem.
 nav_order: 1
 parent: Designing Bitcoin products
 permalink: /guide/designing-products/why-design-for-bitcoin/
@@ -72,3 +73,10 @@ Design and build experiences with friends and strangers. Participate in or even 
 ---
 
 Dive deeper into what [open design]({{ '/guide/designing-products/open-design/' | relative_url }}) means.
+
+{% include next-previous.html
+   previousUrl = "/guide/designing-products/introduction/"
+   previousName = "Designing Bitcoin products"
+   nextUrl = "/guide/designing-products/open-design/"
+   nextName = "Open design"
+%}

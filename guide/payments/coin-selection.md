@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Coin Selection
+description: A primer on how UTXOs are chosen to fund new bitcoin transactions.
 nav_order: 1
 grand_parent: Payments
 parent: Sending bitcoin
@@ -9,11 +10,11 @@ main_classes: -no-top-padding
 ---
 
 {% include picture.html
-   image = "/assets/images/guide/glossary/coin-selection/header.jpg"
-   retina = "/assets/images/guide/glossary/coin-selection/header@2x.jpg"
-   mobile = "/assets/images/guide/glossary/coin-selection/header-mobile.jpg"
-   mobileRetina = "/assets/images/guide/glossary/coin-selection/header-mobile@2x.jpg"
-   alt-text = "Coin Selection"
+   image = "/assets/images/guide/payments/coin-selection/header.jpg"
+   retina = "/assets/images/guide/payments/coin-selection/header@2x.jpg"
+   mobile = "/assets/images/guide/payments/coin-selection/header-mobile.jpg"
+   mobileRetina = "/assets/images/guide/payments/coin-selection/header-mobile@2x.jpg"
+   alt-text = "Mahatma Gandhi handing the bitcoin symbol to a young boy with the quote 'Be the UTXO you want to see in the world'"
    width = 1600
    height = 800
    layout = "full-width"
@@ -27,11 +28,11 @@ There are two types of coin selection strategies that are used in Bitcoin applic
 1. [**Automatic Coin Selection**](#automatic-coin-selection) (wallet is delegated to control coin selection on behalf of user)
 2. [**Manual Coin Selection**](#manual-coin-selection-aka-coin-control) (user controls coin selection)
 {% include picture.html
-   image = "/assets/images/guide/glossary/coin-selection/funding-tx.jpg"
-   retina = "/assets/images/guide/glossary/coin-selection/funding-tx@2x.jpg"
-   mobile = "/assets/images/guide/glossary/coin-selection/funding-tx-mobile.jpg"
-   mobileRetina = "/assets/images/guide/glossary/coin-selection/funding-tx-mobile@2x.jpg"
-   alt-text = "Funding TX"
+   image = "/assets/images/guide/payments/coin-selection/funding-tx.jpg"
+   retina = "/assets/images/guide/payments/coin-selection/funding-tx@2x.jpg"
+   mobile = "/assets/images/guide/payments/coin-selection/funding-tx-mobile.jpg"
+   mobileRetina = "/assets/images/guide/payments/coin-selection/funding-tx-mobile@2x.jpg"
+   alt-text = "Flow chart showing how unspent outputs from a wallet form inputs of a new transaction and the contained bitcoin end up in the receiving wallet."
    width = 800
    height = 400
 %}
@@ -71,11 +72,11 @@ This strategy has arguably become the most popular form of coin selection used i
 Automatic selection strategies can provide a near frictionless user experience and are suitable for most introductory level Bitcoin wallets.
 
 {% include picture.html
-   image = "/assets/images/guide/glossary/coin-selection/automatic-coin-selection.jpg"
-   retina = "/assets/images/guide/glossary/coin-selection/automatic-coin-selection@2x.jpg"
-   mobile = "/assets/images/guide/glossary/coin-selection/automatic-coin-selection-mobile.jpg"
-   mobileRetina = "/assets/images/guide/glossary/coin-selection/automatic-coin-selection-mobile@2x.jpg"
-   alt-text = "Automatic Coin Selection"
+   image = "/assets/images/guide/payments/coin-selection/automatic-coin-selection.jpg"
+   retina = "/assets/images/guide/payments/coin-selection/automatic-coin-selection@2x.jpg"
+   mobile = "/assets/images/guide/payments/coin-selection/automatic-coin-selection-mobile.jpg"
+   mobileRetina = "/assets/images/guide/payments/coin-selection/automatic-coin-selection-mobile@2x.jpg"
+   alt-text = "Flow chart showing inputs are chosen from a wallet for form a new transaction."
    width = 800
    height = 400
 %}
@@ -86,8 +87,8 @@ A user chooses to send a payment to one of their contacts. They enter the amount
 <div class="image-slide-gallery">
 
 {% include picture.html
-   image = "/assets/images/guide/glossary/coin-selection/home.png"
-   retina = "/assets/images/guide/glossary/coin-selection/home@2x.png"
+   image = "/assets/images/guide/payments/coin-selection/home.png"
+   retina = "/assets/images/guide/payments/coin-selection/home@2x.png"
    alt-text = "Screen showing a list of transactions with no context just amounts and transaction IDs"
    caption = "A user chooses to send a payment to one of their contacts and clicks **Send**."
    width = 250
@@ -96,8 +97,8 @@ A user chooses to send a payment to one of their contacts. They enter the amount
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/glossary/coin-selection/send-details.png"
-   retina = "/assets/images/guide/glossary/coin-selection/send-details@2x.png"
+   image = "/assets/images/guide/payments/coin-selection/send-details.png"
+   retina = "/assets/images/guide/payments/coin-selection/send-details@2x.png"
    alt-text = "Screen showing a list of transactions with details about the payment"
    caption = "Sender enters the amount, a destination address, and a label."
    width = 250
@@ -106,8 +107,8 @@ A user chooses to send a payment to one of their contacts. They enter the amount
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/glossary/coin-selection/auto.png"
-   retina = "/assets/images/guide/glossary/coin-selection/auto@2x.png"
+   image = "/assets/images/guide/payments/coin-selection/auto.png"
+   retina = "/assets/images/guide/payments/coin-selection/auto@2x.png"
    alt-text = "Screen showing a list of transactions with details about the payment"
    caption = "The sender reviews the final details of the payment before signing the transaction and decides to go ahead with automatic coin selection."
    width = 250
@@ -116,8 +117,8 @@ A user chooses to send a payment to one of their contacts. They enter the amount
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/glossary/coin-selection/sent.png"
-   retina = "/assets/images/guide/glossary/coin-selection/sent@2x.png"
+   image = "/assets/images/guide/payments/coin-selection/sent.png"
+   retina = "/assets/images/guide/payments/coin-selection/sent@2x.png"
    alt-text = "Screen showing a list of transactions with details about the payment"
    caption = "After signing the transaction, the sender receives a notification to show the payment has been sent."
    width = 250
@@ -154,11 +155,11 @@ Accumulates inputs until the target value (+fees) is reached, skipping detriment
 Freezes certain coins or clusters from their wallet’s UTXO pool to either prioritize or avoid using when funding outgoing payment requests. This technique aids automatic selection strategies to become more private but also relies on the practice of successfully labeling coins.
 
 {% include picture.html
-   image = "/assets/images/guide/glossary/coin-selection/freezing.jpg"
-   retina = "/assets/images/guide/glossary/coin-selection/freezing@2x.jpg"
-   mobile = "/assets/images/guide/glossary/coin-selection/freezing-mobile.jpg"
-   mobileRetina = "/assets/images/guide/glossary/coin-selection/freezing-mobile@2x.jpg"
-   alt-text = "Freezing"
+   image = "/assets/images/guide/payments/coin-selection/freezing.jpg"
+   retina = "/assets/images/guide/payments/coin-selection/freezing@2x.jpg"
+   mobile = "/assets/images/guide/payments/coin-selection/freezing-mobile.jpg"
+   mobileRetina = "/assets/images/guide/payments/coin-selection/freezing-mobile@2x.jpg"
+   alt-text = "Flow chart showing how frozen unspent outputs are skipped during coin selection."
    width = 800
    height = 400
 %}
@@ -201,11 +202,11 @@ Manual coin control is often an “opt-in” strategy, agreed to by users as the
 This strategy gives users the ability to choose what they wish to optimize for in Bitcoin transactions (cost, speed, or privacy). However, it’s worth noting that manual coin control, whilst beneficial to many, could also lead to expensive, slow, or revealing transactions if misused. Manual coin selection is an advanced feature and should be used (and designed) with caution.
 
 {% include picture.html
-   image = "/assets/images/guide/glossary/coin-selection/manual-coin-selection.jpg"
-   retina = "/assets/images/guide/glossary/coin-selection/manual-coin-selection@2x.jpg"
-   mobile = "/assets/images/guide/glossary/coin-selection/manual-coin-selection-mobile.jpg"
-   mobileRetina = "/assets/images/guide/glossary/coin-selection/manual-coin-selection-mobile@2x.jpg"
-   alt-text = "Coin Control"
+   image = "/assets/images/guide/payments/coin-selection/manual-coin-selection.jpg"
+   retina = "/assets/images/guide/payments/coin-selection/manual-coin-selection@2x.jpg"
+   mobile = "/assets/images/guide/payments/coin-selection/manual-coin-selection-mobile.jpg"
+   mobileRetina = "/assets/images/guide/payments/coin-selection/manual-coin-selection-mobile@2x.jpg"
+   alt-text = "Illustration showing a hand dragging unspent outputs to a new transaction."
    width = 800
    height = 400
 %}
@@ -218,8 +219,8 @@ A user chooses to send a payment to one of their contacts. They enter the amount
 <div class="image-slide-gallery">
 
 {% include picture.html
-   image = "/assets/images/guide/glossary/coin-selection/manual.png"
-   retina = "/assets/images/guide/glossary/coin-selection/manual@2x.png"
+   image = "/assets/images/guide/payments/coin-selection/manual.png"
+   retina = "/assets/images/guide/payments/coin-selection/manual@2x.png"
    alt-text = "Screen showing a list of transactions with no context just amounts and transaction IDs"
    caption = "When reveiwing their payment's details, the sender opts to disable automatic coin selection."
    width = 250
@@ -228,8 +229,8 @@ A user chooses to send a payment to one of their contacts. They enter the amount
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/glossary/coin-selection/coins.png"
-   retina = "/assets/images/guide/glossary/coin-selection/coins@2x.png"
+   image = "/assets/images/guide/payments/coin-selection/coins.png"
+   retina = "/assets/images/guide/payments/coin-selection/coins@2x.png"
    alt-text = "Screen showing a list of transactions with details about the payment"
    caption = "The sender manually selects which coins they wish to use as their payment inputs."
    width = 250
@@ -238,8 +239,8 @@ A user chooses to send a payment to one of their contacts. They enter the amount
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/glossary/coin-selection/review.png"
-   retina = "/assets/images/guide/glossary/coin-selection/review@2x.png"
+   image = "/assets/images/guide/payments/coin-selection/review.png"
+   retina = "/assets/images/guide/payments/coin-selection/review@2x.png"
    alt-text = "The sender reviews the final details of the payment before signing their transaction."
    width = 250
    height = 541
@@ -247,8 +248,8 @@ A user chooses to send a payment to one of their contacts. They enter the amount
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/glossary/coin-selection/sent.png"
-   retina = "/assets/images/guide/glossary/coin-selection/sent@2x.png"
+   image = "/assets/images/guide/payments/coin-selection/sent.png"
+   retina = "/assets/images/guide/payments/coin-selection/sent@2x.png"
    alt-text = "Screen showing a list of transactions with details about the payment"
    caption = "After signing the transaction, the sender receives a notification to show the payment has been sent."
    width = 250

@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Automatic cloud backup
-description: How to backup a recovery phrase automatically
+description: How to backup a bitcoin wallet recovery phrase automatically via cloud storage service providers.
 grand_parent: Onboarding
 parent: Backing up a recovery phrase
 nav_order: 1
@@ -105,4 +105,13 @@ Automatic cloud backups should not be considered for products with users that ar
 
 To grant users some ownership of their keys, you can create an optional manual backup within settings. A great way to do this is by framing it as an extra layer of security or a good alternative in the case that the user loses access to their cloud account/if they feel uncomfortable trusting their provider.
 
-In the next section we will show different methods for [manual backups]({{ 'guide/onboarding/backing-up-a-recovery-phrase/manual-backup' | relative_url }}).
+---
+
+In the next section we will show different methods for [manual backups]({{ '/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/onboarding/backing-up-a-recovery-phrase/"
+   previousName = "Backing up a recovery phrase"
+   nextUrl = "/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/"
+   nextName = "Manual backups"
+%}

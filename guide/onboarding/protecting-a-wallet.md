@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Protecting a wallet
-description: Adding extra layers of security
+description: How extra layers of security can be added to Bitcoin applications via PINs, Face Id, and other techniques.
 parent: Onboarding
 nav_order: 6
 permalink: /guide/onboarding/protecting-a-wallet/
@@ -165,4 +165,11 @@ By including UX patterns for hiding information pattern wallets, we give users a
 
 ---
 
-Now let's look at the different ways a user might go about [funding a wallet]({{ 'guide/onboarding/funding-a-wallet' | relative_url }}).
+Now let's look at the different ways a user might go about [funding a wallet]({{ '/guide/onboarding/funding-a-wallet/' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/onboarding/restoring-a-wallet/"
+   previousName = "Restoring a wallet"
+   nextUrl = "/guide/onboarding/funding-a-wallet/"
+   nextName = "Funding a wallet"
+%}

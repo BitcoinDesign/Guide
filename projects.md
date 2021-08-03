@@ -32,6 +32,19 @@ projects:
         link: https://www.figma.com/community/file/948545404023677970/Bitcoin-icon-set
       - name: Github
         link: https://github.com/BitcoinDesign/Bitcoin-Icons
+  - name: Bitcoin UI Kit
+    description: A complete design system to serve as a foundation for wallet concepts, prototypes and application development.
+    image:
+      url: /assets/images/contribute/bitcoin-ui-kit.svg
+      width: 75
+      height: 75
+    links:
+      - name: Site
+        link: https://bitcoinuikit.com
+      - name: Figma
+        link: https://www.figma.com/community/file/916680391812923706/Bitcoin-Wallet-UI-Kit-(work-in-progress)
+      - name: Github
+        link: https://github.com/GBKS/bitcoin-wallet-ui-kit
 collaborations:
   - name: Specter
     description: A watch-only coordinator for multi-signature and single-key Bitcoin wallets.

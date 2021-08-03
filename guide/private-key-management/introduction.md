@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Private key management
-description: An overview of private key management schemes, including descriptions of  available approaches, some advice and best practices.
+description: An overview of private key management schemes, including descriptions of available approaches, some advice and best practices.
 nav_order: 5
 has_children: true
 permalink: /guide/private-key-management/introduction/
@@ -15,6 +15,10 @@ Editor's notes
 
 A brief introduction and summary of all pages in this section. The idea is that readers
 scan this page to get an overview of the section and then decide which topics to dive into.
+
+Illustration sources
+
+https://www.figma.com/community/file/995256542920917246/BDG---Private-key-management-illustrations
 
 -->
 
@@ -73,4 +77,9 @@ A straightforward guide to safe manual backups.
 
 ---
 
-Start at the top with [private key schemes]({{ '/guide/private-key-management/overview/' | relative_url }}).
+{% include next-previous.html
+   previousUrl = "/guide/onboarding/funding-a-wallet/"
+   previousName = "Funding a wallet"
+   nextUrl = "/guide/private-key-management/overview/"
+   nextName = "Overview"
+%}

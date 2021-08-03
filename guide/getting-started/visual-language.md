@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Visual language
+description: A short history of the visuals that we associate with Bitcoin, from the first symbol to the HODL meme.
 nav_order: 5
 parent: Getting started
 permalink: /guide/getting-started/visual-language/
@@ -205,3 +206,10 @@ In digital product design, there are times when a minimally expressive approach 
 ---
 
 As you have seen, Bitcoin is shaped by its user base. Now, let's go under the hood with the [technology primer]({{ '/guide/getting-started/technology-primer/' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/getting-started/why-bitcoin-is-unique/"
+   previousName = "Why Bitcoin is unique"
+   nextUrl = "/guide/getting-started/technology-primer/"
+   nextName = "Technology primer"
+%}

@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Shared account
+description: Bitcoin wallet design case study for accounts managed together by multiple owners.
 nav_order: 4
 parent: Case studies
 permalink: /guide/case-studies/shared-account/
@@ -38,9 +39,15 @@ images:
 
 Editor's notes
 
+Shared account case study.
+
+Illustration sources
+
+https://www.figma.com/community/file/968416729557947210
+
 -->
 
-## Shared account
+# Shared account
 
 A common real-world use case for shared accounts are couples managing their monthly spending, with both parties being able to spend from the account. For this situation we could consider the following private key management schemes:
 
@@ -99,3 +106,12 @@ The wireframe screens below show the main [onboarding]({{ '/guide/onboarding/int
 **Case study resources**
 - [Protoype](https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A824&viewport=333%2C41%2C0.37497082352638245&scaling=scale-down)
 - [Figma design file](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A822)
+
+---
+
+{% include next-previous.html
+   previousUrl = "/guide/case-studies/upgradeable-wallet/"
+   previousName = "Upgradeable wallet"
+   nextUrl = "/guide/contribute/"
+   nextName = "Contribute"
+%}

@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Upgradeable account
+description: UX case study for a Bitcoin wallet with multiple private key management schemes.
 nav_order: 3
 parent: Case studies
 permalink: /guide/case-studies/upgradeable-wallet/
@@ -28,9 +29,15 @@ images:
 
 Editor's notes
 
+Upgradeable wallet case study.
+
+Illustration sources
+
+https://www.figma.com/community/file/968416729557947210
+
 -->
 
-## Upgradeable wallet
+# Upgradeable wallet
 
 Although it is generally easier to build a great experience with a specific [use case]({{ '/guide/designing-products/personal-finance/' | relative_url }}) in mind, let's look at a case where we would like to make a wallet that is made for a broad range of uses and audiences. It needs to be suitable both for beginners and expanding users, and for holding anything between small and significant amounts. How do we choose a single private key management scheme for this situation?
 
@@ -86,3 +93,12 @@ The screens below show how this architecture allows users to get onboarded quick
 **Case study resources**
 - [Protoype](https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A270&viewport=861%2C146%2C0.44897958636283875&scaling=scale-down)
 - [Figma design file](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A269)
+
+---
+
+{% include next-previous.html
+   previousUrl = "/guide/case-studies/savings-account/"
+   previousName = "Savings account"
+   nextUrl = "/guide/case-studies/shared-account/"
+   nextName = "Shared account"
+%}

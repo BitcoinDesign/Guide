@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Designing Bitcoin products
+description: Learn fundamentals, techniques and best practices for designing great Bitcoin UX.
 nav_order: 3
 has_children: true
 permalink: /guide/designing-products/introduction/
@@ -78,4 +79,19 @@ Most Bitcoin applications share certain user activities, from initial setup to m
 ### [Wallet interoperability]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }})
 
 Get to know the points of interaction and overlap connecting payment links, wallet recovery, node configurations, and more.
+
+---
+
+### [Design resources]({{ '/guide/designing-products/design-resources/' | relative_url }})
+
+Shared design source files and a suggested process for collaborating on creative work.
+
+---
+
+{% include next-previous.html
+   previousUrl = "/guide/getting-started/hardware/"
+   previousName = "Hardware overview"
+   nextUrl = "/guide/designing-products/why-design-for-bitcoin/"
+   nextName = "Why design for Bitcoin"
+%}
 

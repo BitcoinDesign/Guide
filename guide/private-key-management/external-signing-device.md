@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: External signing device
-description: An overview of personal private key management schemes.
+description: What hardware wallets are and their role in securing bitcoin.
 nav_order: 4
 parent: Private key management
 permalink: /guide/private-key-management/external-signing-device/
@@ -13,7 +13,12 @@ main_classes: -no-top-padding
 
 Editor's notes
 
-Descriptions of schemes suitable for a single user.
+Description of what an external signing device scheme consists of.
+
+Illustration sources
+
+https://www.figma.com/community/file/888680264445459448
+https://www.figma.com/community/file/995256542920917246/BDG---Private-key-management-illustrations
 
 -->
 
@@ -83,4 +88,11 @@ When a transaction needs to be signed, the software submits a partially signed b
 
 ---
 
-Next, let's look at [multi key]({{ '/guide/private-key-management/multi-key/' | relative_url }}).
+Next, let's look at [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/private-key-management/manual-backup/"
+   previousName = "Manual backups"
+   nextUrl = "/guide/private-key-management/multi-key/"
+   nextName = "Multi-key"
+%}

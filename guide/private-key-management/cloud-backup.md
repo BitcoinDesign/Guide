@@ -1,13 +1,26 @@
 ---
 layout: guide
 title: Automatic cloud backup
-description: An overview of personal private key management schemes.
+description: Overview of how recovery phrases and other wallet data can be securely stored with cloud storage service providers.
 nav_order: 2
 parent: Private key management
 permalink: /guide/private-key-management/cloud-backup/
 image: https://bitcoin.design/assets/images/guide/private-key-management/cloud-backup/cloud-backup-preview.jpg
 main_classes: -no-top-padding
 ---
+
+<!--
+
+Editor's notes
+
+Description of what an automatic cloud backup scheme consists of.
+
+Illustration sources
+
+https://www.figma.com/community/file/888680264445459448
+https://www.figma.com/community/file/995256542920917246/BDG---Private-key-management-illustrations
+
+-->
 
 {% include picture.html
    image = "/assets/images/guide/private-key-management/cloud-backup/cloud-backup.jpg"
@@ -22,7 +35,7 @@ main_classes: -no-top-padding
 
 # Automatic cloud backup
 
-By using an automatic cloud backup for the private key the user is NOT required to manually backup anything when setting up a new [bitcoin wallet]({{ '/guide/glossary/#bitcoin-wallet' | relative_url }}). This is sometimes also called *seedless*, as the user is never exposed to the traditional *seed*, or [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) that is used to initiate a wallet.
+By using an automatic cloud backup for the private key the user is NOT required to manually backup anything when setting up a new [bitcoin wallet]({{ '/guide/glossary/wallet/#bitcoin-wallet' | relative_url }}). This is sometimes also called *seedless*, as the user is never exposed to the traditional *seed*, or [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) that is used to initiate a wallet.
 
 This scheme can be a good fit for wallets meant for storing smaller amounts of bitcoin. This includes wallets for novices who would find manually backing up a recovery phrase during onboarding confusing, possibly leading to unsafe backups. It could also be a starting point for a progressive security model that lets customers upgrade when they start accumulating more funds. Wallets using automatic cloud backups also work well for what experienced users might call *hot* or *spending* wallets where convenience is more important than maximum security. 
 
@@ -76,3 +89,10 @@ To see what a user experience with this scheme could look like, see the [daily s
 ---
 
 Next, let's look at [manual backups]({{ '/guide/private-key-management/manual-backup/' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/private-key-management/overview/"
+   previousName = "Overview"
+   nextUrl = "/guide/private-key-management/manual-backup/"
+   nextName = "Manual backups"
+%}
