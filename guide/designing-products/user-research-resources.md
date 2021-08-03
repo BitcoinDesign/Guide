@@ -58,7 +58,7 @@ _Published January 2021 by Voskobojnikov, Wiese, M. Koushki, Roth, and Beznosov.
 
 *A survey of undergraduate students at Keele University concluding that Bitcoin was still in its infancy at the time of writing and required user education and a new way of thinking. The study recommends user-centered design to develop users’ mental models and deepen their understanding of digital payment technology.*
 
-Published in February 2019 by Abdulla Alshamsi & Keele University.
+_Published February 2019 by Alshamsi and Andras._
 
 ###### [A First Look at the Usability of Bitcoin Key Management](https://arxiv.org/pdf/1802.04351.pdf)
 
