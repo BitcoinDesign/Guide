@@ -64,7 +64,7 @@ Published in February 2019 by Abdulla Alshamsi & Keele University.
 
 *A broad usability evaluation of key management techniques used by six representative Bitcoin clients. Findings show that Bitcoin shares many fundamental challenges known from other domains, and also presents a unique opportunity to rethink key management for end users.*
 
-Published in February 2018 by Shayan Eskandari, David Barrera, Elizabeth Stobert, and Jeremy Clark.
+_Published February 2018 by Eskandari, Barrera, Stobert, and Clark._
 
 ###### [An Evaluation of User Attitudes Towards Anonymity in Bitcoin](https://www.diva-portal.org/smash/get/diva2:1141672/FULLTEXT01.pdf)
 
