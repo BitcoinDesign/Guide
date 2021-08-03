@@ -103,7 +103,7 @@ _Launched January 2021 by Morucci._
 
 *An online survey of over 2,000 US adults to gauge the progression of the general population through the crypto adoption funnel, including awareness, familiarity, perception, conviction, relative preference rates and propensity to purchase crypto.*
 
-Published in December 2020 by Spencer Bogart.
+_Published December 2020 by Bogart._
 
 ###### [Blockchain Usability Report](https://fioprotocol.io/wp-content/themes/fio/build/files/blockchain-usability-report-2019.pdf)
 
