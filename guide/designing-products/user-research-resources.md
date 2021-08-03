@@ -40,7 +40,7 @@ Below is a collection of published user research findings around Bitcoin, from a
 
 *A survey of 404 users and non-users of Bitcoin about the roles of trust, self-efficacy, and risk on adoption intention.*
 
-Published in May 2021 by Artemij Voskobojnikov, Svetlana Abramova, Konstantin Beznosov, and Rainer Böhme.
+_Published May 2021 by Voskobojnikov, Abramova, Beznosov, and Böhme._
 
 ###### [Bits Under the Mattress: Understanding Different Risk Perceptions and Security Behaviors of Crypto-Asset Users](https://voskart.de/pdf/bits_under_mattress.pdf)
 
