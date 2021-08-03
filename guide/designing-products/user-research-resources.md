@@ -95,7 +95,7 @@ Launched in January 2021 by Andrew Chow. In progress.
 
 ###### [A study on how Bitcoin is perceived by no-coiners (non-holders of Bitcoin)](https://github.com/MickMorucci/Bitcoin_perception)
 
-*A pilot survey of 62 participants around the perception and beliefs of Bitcoin users and non-users.*
+A currently active survey of 65 on the perception and beliefs of Bitcoin users and non-users.
 
 _Launched January 2021 by Morucci._
 
