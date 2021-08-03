@@ -127,7 +127,7 @@ Published May 2021 by Valentine.
 
 ###### [Breaking down Bitcoin: A UX Design Case Study](https://medium.com/@ngqunzhao/breaking-down-bitcoin-a-ux-design-case-study-7fdefbe7e1b8)
 
-*Documentation of the user research, redesign and testing process of Coinhako, a cryptocurrency trading and digital wallet app.*
+Documentation of the user research, redesign and testing process of Coinhako, a cryptocurrency trading and digital wallet app.
 
 Published October 2019 by Zhao.
 
