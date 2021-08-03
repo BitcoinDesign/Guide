@@ -121,7 +121,7 @@ _Published December 2018 by Rauchs, Blandin, Klein, Pieters, Recanatini, Zhang._
 
 ###### [Automatic Cloud Backup (Seedless) Wallet Research](https://docs.google.com/document/d/11KbQnor7kQPdzHKmycBLPwOKyVo3t99nUEQYpVsik_o/edit?usp=sharing)
 
-*Research on user new to crypto around whether they are confident in their ability to safely hold and keep track of seed phrases. Goal of the research was to discover whether automatic cloud backups could empower users to confidently secure their own bitcoin wallets.*
+Research on users new to crypto around whether they are confident in their ability to safely hold and keep track of seed phrases. This research aimed to discover whether automatic cloud backups could empower users to confidently secure their own bitcoin wallets.
 
 Published May 2021 by Valentine.
 
