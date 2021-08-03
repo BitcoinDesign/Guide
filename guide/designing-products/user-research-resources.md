@@ -84,7 +84,7 @@ Published May 2017 by Krombholz, Judmayer, Gusenbauer, and Weippl.
 
 *An investigation into how people use (or don't use) the Bitcoin Core Wallet and what needs are unmet by a variety of users. The project employed both qualitative interviews along with surveys to understand a variety of user needs and approaches to using Bitcoin.*
 
-Video presentation in May 2021 by Jamaal Montasser.
+_Video presentation in May 2021 by Montasser._
 
 <!--
 
