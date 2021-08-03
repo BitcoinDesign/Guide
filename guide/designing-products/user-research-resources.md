@@ -46,7 +46,7 @@ _Published May 2021 by Voskobojnikov, Abramova, Beznosov, and Böhme._
 
 *A survey of security behaviors among three Bitcoin user archetypes, showing that cypherpunks tend to use self-managed security solutions, whereas hodlers and rookies use either custodial solutions or non-custodial wallets.*
 
-Published in February 2021 by Svetlana Abramova, Artemij Voskobojnikov, Konstantin Beznosov, and Rainer Böhme.
+_Published February 2021 by Abramova, Voskobojnikov, Beznosov, and Böhme._
 
 ###### [The U in Crypto Stands for Usable: An Empirical Study of User Experience with Mobile Cryptocurrency Wallets](https://voskart.de/pdf/u_in_crypto.pdf)
 
