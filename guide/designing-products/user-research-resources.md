@@ -52,7 +52,7 @@ _Published February 2021 by Abramova, Voskobojnikov, Beznosov, and Böhme._
 
 *An analysis of app reviews of the top five mobile cryptocurrency wallets suggesting that both new and experienced users struggle with general and domain-specific UX issues that might lead to dangerous errors and irreversible monetary losses.*
 
-Published in January 2021 by Artemij Voskobojnikov, Oliver Wiese, Masoud Mehrabi Koushki, Volker Roth, and Konstantin Beznosov.
+_Published January 2021 by Voskobojnikov, Wiese, M. Koushki, Roth, and Beznosov._
 
 ###### [User Perception of Bitcoin Usability and Security across Novice Users](https://www.researchgate.net/publication/331286661_User_Perception_of_Bitcoin_Usability_and_Security_across_Novice_Users)
 
