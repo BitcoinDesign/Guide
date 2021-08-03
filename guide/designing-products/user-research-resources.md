@@ -97,7 +97,7 @@ Launched in January 2021 by Andrew Chow. In progress.
 
 *A pilot survey of 62 participants around the perception and beliefs of Bitcoin users and non-users.*
 
-Launched in January 2021 by Mick Morucci. In progress.
+_Launched January 2021 by Morucci._
 
 ###### [Bitcoin is (Still) a Demographic Mega-trend: Data Update](https://medium.com/blockchain-capital-blog/bitcoin-is-still-a-demographic-mega-trend-data-update-c50df59a6cb3)
 
