@@ -115,7 +115,7 @@ Published in February 2019 by FIO.
 
 *Insights into the current state of the cryptoasset industry. The study gathers survey data from more than 180 cryptoasset companies and individuals, covering 47 countries across five world regions, focusing on the following four key industry segments: mining, exchange, storage, and payments.*
 
-Published in December 2018 by Michel Rauchs, Apolline Blandin, Kristina Klein, Dr. Gina Pieters, Martino Recanatini, Bryan Zhang.
+_Published December 2018 by Rauchs, Blandin, Klein, Pieters, Recanatini, Zhang._
 
 ## Blog posts & write-ups
 
