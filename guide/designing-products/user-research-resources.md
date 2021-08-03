@@ -101,7 +101,7 @@ _Launched January 2021 by Morucci._
 
 ###### [Bitcoin is (Still) a Demographic Mega-trend: Data Update](https://medium.com/blockchain-capital-blog/bitcoin-is-still-a-demographic-mega-trend-data-update-c50df59a6cb3)
 
-*An online survey of over 2,000 US adults to gauge the progression of the general population through the crypto adoption funnel, including awareness, familiarity, perception, conviction, relative preference rates and propensity to purchase crypto.*
+An online survey of over 2,000 US adults by Blockchain Capital to gauge the progression of the general population through the crypto adoption funnel, including awareness, familiarity, perception, conviction, relative preference rates and propensity to purchase crypto.
 
 _Published December 2020 by Bogart._
 
