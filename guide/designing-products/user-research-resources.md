@@ -109,7 +109,7 @@ Published in December 2020 by Spencer Bogart.
 
 *A survey of over 200 crypto holders regarding their frequency and experiences in transacting crypto, with the goal of unearthing some of the common issues they’ve faced.*
 
-Published in February 2019 by FIO.
+_Published  February 2019 by Foundation for Interwallet Operability (FIO)._
 
 ###### [2nd Global Cryptoasset Benchmarking Study](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2nd-global-cryptoasset-benchmark-study/#.X_1mxi1h1qs)
 
