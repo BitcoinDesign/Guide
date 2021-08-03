@@ -133,6 +133,6 @@ Published October 2019 by Zhao.
 
 ###### [Making design better for crypto apps: Abra UX Case study](https://medium.com/@kagakawa/abra-app-ux-case-study-2eb2a6e09c70) 
 
-*A UX case study exploring the usability and suggesting improvements for making purchases in the Abra app.*
+A UX case study exploring the usability and suggesting improvements for making purchases in the Abra app.
 
 Published July 2018 by Kawabata.
