@@ -40,7 +40,7 @@ Below is a collection of published user research findings around Bitcoin, from a
 
 *A survey showing an increase in awareness of cryptocurrencies among adults in the UK, but a decreasing understanding of how cryptocurrencies work.*
 
-Published in June 2021 by Michael Karim, and Gergana Tomova.
+_Published in June 2021 by Michael Karim, and Gergana Tomova._
 
 ###### [Non-adoption of crypto-assets: Exploring the role of trust, self-efficacy, and risk](https://voskart.de/pdf/crypto_adoption.pdf)
 
@@ -82,7 +82,7 @@ _Published September 2017 by Pajunen._
 
 *A survey and follow-up interviews of Bitcoin users to determine bitcoin management strategies and identify how they deploy security measures to protect their keys and bitcoins. It was found that many do not use all security capabilities of their selected applications and have significant misconceptions on how to remain anonymous and protect their privacy.*
 
-Published May 2017 by Krombholz, Judmayer, Gusenbauer, and Weippl.
+_Published May 2017 by Krombholz, Judmayer, Gusenbauer, and Weippl._
 
 ## Surveys
 
@@ -129,19 +129,19 @@ _Published December 2018 by Rauchs, Blandin, Klein, Pieters, Recanatini, Zhang._
 
 Research on users new to crypto around whether they are confident in their ability to safely hold and keep track of seed phrases. This research aimed to discover whether automatic cloud backups could empower users to confidently secure their own bitcoin wallets.
 
-Published May 2021 by Valentine.
+_Published May 2021 by Valentine._
 
 ###### [Breaking down Bitcoin: A UX Design Case Study](https://medium.com/@ngqunzhao/breaking-down-bitcoin-a-ux-design-case-study-7fdefbe7e1b8)
 
 Documentation of the user research, redesign and testing process of Coinhako, a cryptocurrency trading and digital wallet app.
 
-Published October 2019 by Zhao.
+_Published October 2019 by Zhao._
 
 ###### [Making design better for crypto apps: Abra UX Case study](https://medium.com/@kagakawa/abra-app-ux-case-study-2eb2a6e09c70) 
 
 A UX case study exploring the usability and suggesting improvements for making purchases in the Abra app.
 
-Published July 2018 by Kawabata.
+_Published July 2018 by Kawabata._
 
 ---
 
