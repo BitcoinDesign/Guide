@@ -135,4 +135,4 @@ Published in October 2019 by Ng Qun Zhao.
 
 *A UX case study exploring the usability and suggesting improvements for making purchases in the Abra app.*
 
-Published in July 2018 by Kagayaki "Kaga" Kawabata.
+Published July 2018 by Kawabata.
