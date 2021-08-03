@@ -123,7 +123,7 @@ Published in December 2018 by Michel Rauchs, Apolline Blandin, Kristina Klein, D
 
 *Research on user new to crypto around whether they are confident in their ability to safely hold and keep track of seed phrases. Goal of the research was to discover whether automatic cloud backups could empower users to confidently secure their own bitcoin wallets.*
 
-Published in May 2021 by Maggie Valentine.
+Published May 2021 by Valentine.
 
 ###### [Breaking down Bitcoin: A UX Design Case Study](https://medium.com/@ngqunzhao/breaking-down-bitcoin-a-ux-design-case-study-7fdefbe7e1b8)
 
