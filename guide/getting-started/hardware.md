@@ -37,11 +37,12 @@ Illustration sources
 
 # Hardware overview
 
-Generally, any hardware with an internet connection can interact with the bitcoin network. While our personal computers and smartphones work great for general wallet management and transactions, a few types of dedicated hardware have been created that are optimized for the more unique aspects of how bitcoin works.
+Generally, any hardware that is connected to the Internet can interact with the Bitcoin network. While personal computers and smartphones work great for general wallet management and transactions, some dedicated hardware products are optimized for the nuances of Bitcoin. We’ll explore them and how they work here.
+
 
 ## Recovery phrase storage
 
-Simple, cheap, and robust storage solutions for recovery phrases come in subtle forms. [Seedplate](https://bitcoinseedbackup.com/){:target="_blank"}, for example, is a metal plate in which users can etch the words of their recovery phrase for long-term offline storage. [CardWallet](https://www.cardwallet.com){:target="_blank"}, in comparison, is the size of a credit card and comes pre-loaded with a recovery phrase (hidden behind a security seal) and a matching bitcoin address. And if you like an even simpler solution, a piece of paper will do. Although paper is not as durable and may be easy to lose, it is one of the strengths of Bitcoin that such simple solutions are possible.
+Simple, cheap, and robust storage solutions for recovery phrases come in many forms. [Seedplate](https://bitcoinseedbackup.com/){:target="_blank"}, is a metal plate that users can etch their recovery phrase into for long-term offline storage. [CardWallet](https://www.cardwallet.com){:target="_blank"}, by comparison, is the size of a credit card and pre-loaded with a recovery phrase (hidden behind a security seal) and a matching Bitcoin address. For an even simpler solution, a piece of paper will do. Although paper is less durable and easy to lose, it is a strength of Bitcoin that such simple solutions are possible.
 
 {% include picture.html
    image = "/assets/images/guide/getting-started/hardware/hardware-seed-storage.jpg"
@@ -55,7 +56,7 @@ Simple, cheap, and robust storage solutions for recovery phrases come in subtle 
 
 ## Hardware wallets
 
-You may already be familiar with key fobs from your bank or work. They are small devices with specific built-in authentication used to control and secure access to a computer system. Key fobs are not connected to the internet or any other network, so they cannot easily be hacked without physical access.
+You may already be familiar with key fobs from your bank or work. They are small devices with built-in authentication that is used to control and secure access to a computer system. Key fobs are not connected to the Internet or any other network, so they cannot easily be hacked.
 
 {% include picture.html
    image = "/assets/images/guide/getting-started/hardware/hardware-wallets.jpg"
@@ -68,13 +69,14 @@ You may already be familiar with key fobs from your bank or work. They are small
    height = 400
 %}
 
-Hardware wallets for bitcoin play a similar role but with several differences. Like key fobs, they securely store an authentication mechanism and isolate it from other devices and networks. In bitcoin, these are the seed, associated keys, and all functions that require direct interaction with them.
+Bitcoin hardware wallets play a similar role but with several noteworthy differences. Like key fobs, they securely store an authentication method and isolate it from the Internet, networks, and other devices. In bitcoin, these are the seed, associated keys, and functions that require interaction with them.
 
-Because hardware wallets are so optimized for this specific use case, they have tiny screens and limited input options. Most interactions with them happen via desktop software that the manufacturer also provides. Users perform most wallet interactions on their desktops, and the application sends only specific requests to the hardware wallet to verify or sign data. This provides a good balance of security and convenience and keeps hardware wallets generally affordable for most use cases.
+Because hardware wallets are so optimized for this specific use case, they have tiny screens and limited input options. Most interactions with them happen via desktop software that the manufacturer provides. The application sends only specific requests to the hardware wallet to verify or sign data. This provides a strong balance of security and convenience and keeps hardware wallets generally affordable.
 
 ## Nodes
 
-Thousands of computers participate in the Bitcoin network. They are called nodes and continuously exchange, verify and compare transaction and block data. Running your own node, instead of relying on a third-party node, has the benefit that transactions are getting validated by your own personal device. Nodes also improve privacy and help secure the network. Several DIY and consumer hardware products have been created to make it easy to run your own node on a dedicated device.
+Thousands of computers participate in the Bitcoin network. They are called nodes. Nodes exchange, verify, and compare block and transaction data.
+Running your own node, instead of relying on a third-party node, lets you validate transactions on your own device. Nodes also improve privacy and help secure the network. Several DIY and consumer hardware products make it easy to run your own node.
 
 {% include picture.html
    image = "/assets/images/guide/getting-started/hardware/node-hardware.jpg"
@@ -86,13 +88,13 @@ Thousands of computers participate in the Bitcoin network. They are called nodes
    height = 400
 %}
 
-Dedicated node hardware is particularly relevant for heavy users of the Lightning network. While a bitcoin node can be turned off and on and can easily catch up with network activity, Lightning nodes need to be online at all times to maintain payment channels with other nodes. Smartphones are typically online 24/7 but are not suited well for this task due to large amounts of data transfer and storage capacity requirements.
+Dedicated node hardware is particularly relevant for heavy users of the Lightning network. While a bitcoin node can be turned off and on, Lightning nodes need to be online at all times to maintain payment channels with other nodes. Smartphones are typically online 24/7 but are not suited for this task due to large amounts of data transfer and storage capacity requirements.
 
-While plug-and-play hardware nodes can solve bitcoin users' various problems, they have not seen widespread adoption as commercial products.
+While plug-and-play hardware nodes can solve various problems for bitcoin users, they have not seen widespread adoption as commercial products.
 
 ## Miners
 
-Bitcoin mining has turned into a professional undertaking years ago. Today, dedicated hardware (so-called ASICS, or application-specific integrated circuits) is being developed that is optimized to continuously execute the Bitcoin hashing algorithm (called [SHA-256](https://en.wikipedia.org/wiki/SHA-2){:target="_blank"}) over and over until an acceptable hash is found. A modern miner (in 2020) can generate around 14,000,000,000,000 hashes per second. The more hashes generated, the higher the chance of "finding" a new block and receiving freshly minted bitcoins as a reward.
+Bitcoin has become a professional undertaking. Today, dedicated hardware (so-called ASICS, or application-specific integrated circuits) are optimized for continuously executing the Bitcoin hashing algorithm (called [SHA-256](https://en.wikipedia.org/wiki/SHA-2){:target="_blank"}) over and over until an acceptable hash is found. A modern miner (in 2020) can generate around 14,000,000,000,000 hashes per second. The more hashes generated, the higher that miner’s chance of “finding” a new block and receiving newly minted bitcoin as a reward.
 
 {% include picture.html
    image = "/assets/images/guide/getting-started/hardware/mining-hardware.jpg"
@@ -104,11 +106,11 @@ Bitcoin mining has turned into a professional undertaking years ago. Today, dedi
    height = 400
 %}
 
-Outside of purchasing hardware, the main cost of mining is electricity. That's why mining facilities can be found worldwide wherever electricity is abundant and cheap, whether in Iceland for geothermal energy or in China using excess hydroelectricity.
+Outside of purchasing hardware, the main cost of mining is electricity. That’s why mining facilities are found wherever electricity is abundant and cheap, such as in Iceland (geothermal) or in China (hydroelectricity).
 
 ## ATMs
 
-A Bitcoin ATM (Automated Teller Machine) allows for bitcoin's purchase or sale from cash or debit cards. These machines are typically bound to local laws and regulations for money transmitters, such as KYC (Know Your Customer) and anti-money laundering regulations. More on [Wikipedia](https://en.wikipedia.org/wiki/Bitcoin_ATM).
+A Bitcoin ATM (Automated Teller Machine) allows users to purchase or sell bitcoin for cash or with debit cards. These machines are usually bound to local money transmitting laws and regulations, such as KYC (Know Your Customer) and anti-money laundering regulations. More on [Wikipedia](https://en.wikipedia.org/wiki/Bitcoin_ATM).
 
 {% include picture.html
    image = "/assets/images/guide/getting-started/hardware/atm.jpg"
