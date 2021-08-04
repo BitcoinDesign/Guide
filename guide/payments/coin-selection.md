@@ -175,7 +175,7 @@ Freezes certain coins or clusters from their wallet’s UTXO pool to either prio
 - Can select UTXOs associated with targeted dusting attacks, resulting in privacy loss
 - UTXOs selected from unrecognized clusters can expose private data of wallet addresses, balances, and contact payment information.
 - Reducing the inputs doesn’t usually optimise for minimal change outputs, exposing larger amounts of sensitive wallet data.
-- Freezing coins reduces the available UTXOs an automatic coin selection algorithm can choose from so the resulting transaction may not be properly optimized.
+- Freezing UTXOs prevents coin selection algorithms from using them, so the resulting transaction may not be properly optimized.
 {% include fact/close.html %}
 
 ### Best practice
