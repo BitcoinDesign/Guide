@@ -59,7 +59,7 @@ Miners select transactions based on their fee, measured by the fee rate of satos
 
 #### Speed
 
-Higher fees will increase the likelihood of your transaction being prioritized by miners and included in the next block, thereby increasing the speed of your transaction. This can be optimized by either increasing the fee rate or selecting a higher number of transaction inputs.
+Higher fees will increase the likelihood of your transaction being prioritized by miners and included in the next block, thereby increasing the speed of your transaction.
 
 #### Privacy
 
