@@ -174,7 +174,7 @@ Freezes certain coins or clusters from their wallet’s UTXO pool to either prio
 - Doesn't optimize for all three features (speed, cost, privacy)
 - Can select UTXOs associated with targeted dusting attacks, resulting in privacy loss
 - UTXOs selected from unrecognized clusters can expose private data of wallet addresses, balances, and contact payment information.
-- Reducing the inputs (byte size) of bitcoin transactions doesn’t usually optimise for minimal change outputs, exposing larger amounts of sensitive wallet data.
+- Reducing the inputs doesn’t usually optimise for minimal change outputs, exposing larger amounts of sensitive wallet data.
 - Freezing certain coins reduces the size of a wallet's UTXO pool, and may hinder an automatic algorithm’s ability to optimise for speed, cost, or privacy.
 {% include fact/close.html %}
 
@@ -261,8 +261,8 @@ A user chooses to send a payment to one of their contacts. They enter the amount
 
 
 {% include fact/pros.html %}
-- Gives user full control over coin selection. They can choose to optimize for privacy, cost, or speed, and delegate risk accordingly.
-- Good labeling allows users to prioritize recognized clusters and minimizes the exposure of historical transaction data, balances, and addresses associated with certain coins.
+- Gives user full control over coin selection. They can choose to optimize for privacy, cost, or speed
+- Good labeling allows users to prioritize recognized clusters and minimizes the exposure of data
 - Can reduce dust attacks (avoiding choosing minute or unknown UTXOs for payment inputs)
 {% include fact/close.html %}
 
