@@ -38,7 +38,7 @@ Below is a collection of published user research findings around Bitcoin, from a
 
 ###### [Cryptoasset consumer research 2021](https://www.fca.org.uk/publications/research/research-note-cryptoasset-consumer-research-2021)
 
-*A survey showing an increase in awareness of cryptocurrencies among adults in the UK, but a decreasing understanding of how cryptocurrencies work.*
+A survey showing an increase in awareness of cryptocurrencies among adults in the UK, but a decreasing understanding of how cryptocurrencies work.
 
 _Published in June 2021 by Michael Karim, and Gergana Tomova._
 
@@ -56,19 +56,19 @@ _Published February 2021 by Abramova, Voskobojnikov, Beznosov, and Böhme._
 
 ###### [The U in Crypto Stands for Usable: An Empirical Study of User Experience with Mobile Cryptocurrency Wallets](https://voskart.de/pdf/u_in_crypto.pdf)
 
-*An analysis of app reviews of the top five mobile cryptocurrency wallets suggesting that both new and experienced users struggle with general and domain-specific UX issues that might lead to dangerous errors and irreversible monetary losses.*
+An analysis of app reviews of the top five mobile cryptocurrency wallets suggesting that both new and experienced users struggle with general and domain-specific UX issues that might lead to dangerous errors and irreversible monetary losses.
 
 _Published January 2021 by Voskobojnikov, Wiese, M. Koushki, Roth, and Beznosov._
 
 ###### [User Perception of Bitcoin Usability and Security across Novice Users](https://www.researchgate.net/publication/331286661_User_Perception_of_Bitcoin_Usability_and_Security_across_Novice_Users)
 
-*A survey of undergraduate students at Keele University concluding that Bitcoin was still in its infancy at the time of writing and required user education and a new way of thinking. The study recommends user-centered design to develop users’ mental models and deepen their understanding of digital payment technology.*
+A survey of undergraduate students at Keele University concluding that Bitcoin was still in its infancy at the time of writing and required user education and a new way of thinking. The study recommends user-centered design to develop users’ mental models and deepen their understanding of digital payment technology.
 
 _Published February 2019 by Alshamsi and Andras._
 
 ###### [A First Look at the Usability of Bitcoin Key Management](https://arxiv.org/pdf/1802.04351.pdf)
 
-*A broad usability evaluation of key management techniques used by six representative Bitcoin clients. Findings show that Bitcoin shares many fundamental challenges known from other domains, and also presents a unique opportunity to rethink key management for end users.*
+A broad usability evaluation of key management techniques used by six representative Bitcoin clients. Findings show that Bitcoin shares many fundamental challenges known from other domains, and also presents a unique opportunity to rethink key management for end users.
 
 _Published February 2018 by Eskandari, Barrera, Stobert, and Clark._
 
@@ -80,7 +80,7 @@ _Published September 2017 by Pajunen._
 
 ###### [The Other Side of the Coin: User Experiences with Bitcoin Security and Privacy](https://publications.sba-research.org/publications/TheOtherSideOfTheCoin_FC16preConf.pdf)
 
-*A survey and follow-up interviews of Bitcoin users to determine bitcoin management strategies and identify how they deploy security measures to protect their keys and bitcoins. It was found that many do not use all security capabilities of their selected applications and have significant misconceptions on how to remain anonymous and protect their privacy.*
+A survey and follow-up interviews of Bitcoin users to determine bitcoin management strategies and identify how they deploy security measures to protect their keys and bitcoins. It was found that many do not use all security capabilities of their selected applications and have significant misconceptions on how to remain anonymous and protect their privacy.
 
 _Published May 2017 by Krombholz, Judmayer, Gusenbauer, and Weippl._
 
