@@ -59,7 +59,7 @@ Miners select transactions based on their fee, measured by the fee rate of satos
 
 #### Speed
 
-Higher fees will increase the likelihood of your transaction being prioritized by miners and included in the next block, thereby increasing the speed of your transaction. This can be optimized by either increasing the fee rate or selecting a higher number of transaction inputs.
+Higher fees will increase the likelihood of your transaction being prioritized by miners and included in the next block, thereby increasing the speed of your transaction being confirmed.
 
 #### Privacy
 
@@ -165,17 +165,17 @@ Freezes certain coins or clusters from their wallet’s UTXO pool to either prio
 %}
 
 {% include fact/pros.html %}
-- Low friction: easy for end-user, doesn’t have to play around with manual coin selection
-- Wallets can choose to optimize for cost, speed, or privacy (byte size of transaction, fee, change outputs) depending upon their targeted user group.
-- Minimizing change outputs and decreases balance exposure and the chance of tracing future transactions from that address.
+- Low friction
+- Optimizes for cost, speed, or privacy
+- Minimizes change outputs and decreases balance exposure
 {% include fact/close.html %}
 
 {% include fact/cons.html %}
 - Doesn't optimize for all three features (speed, cost, privacy)
-- Automatic selection strategies may select UTXOs associated with targeted dusting attacks, resulting in privacy loss
-- UTXOs selected from unrecognized clusters can expose private data of wallet addresses, balances, and contact payment information (UTXO derivation paths and data).
-- Reducing the inputs (byte size) of bitcoin transactions doesn’t usually optimise for minimal change outputs, exposing larger amounts of sensitive wallet data.
-- Freezing certain coins reduces the size of a wallet's UTXO pool, and may hinder an automatic algorithm’s ability to optimise for speed, cost, or privacy.
+- Can select UTXOs associated with targeted dusting attacks, resulting in privacy loss
+- UTXOs selected from unrecognized clusters can expose private data of wallet addresses, balances, and contact payment information.
+- Reducing the inputs doesn’t usually optimise for minimal change outputs, exposing larger amounts of sensitive wallet data.
+- Freezing UTXOs prevents coin selection algorithms from using them, so the resulting transaction may not be properly optimized.
 {% include fact/close.html %}
 
 ### Best practice
@@ -261,9 +261,9 @@ A user chooses to send a payment to one of their contacts. They enter the amount
 
 
 {% include fact/pros.html %}
-- Gives user full control over coin selection. They can choose to optimize for privacy, cost, or speed, and delegate risk accordingly.
-- Good labeling of coins allows users to prioritize recognized clusters, thereby minimizing the exposure of historical transaction data, balances, and addresses associated with certain coins.
-- Has potential to reduce dust attacks (avoiding choosing minute or unknown UTXOs for payment inputs)
+- Gives user full control over coin selection. They can choose to optimize for privacy, cost, or speed
+- Good labeling allows users to prioritize recognized clusters and minimizes the exposure of data
+- Can reduce dust attacks (avoiding choosing minute or unknown UTXOs for payment inputs)
 {% include fact/close.html %}
 
 
@@ -288,7 +288,7 @@ A user chooses to send a payment to one of their contacts. They enter the amount
 #### Products that use this scheme
 
 {% include fact/products.html %}
-[Bitcoin Core](https://bitcoincore.org), [BTCPay Server](https://btcpayserver.org), [Chaincase](https://chaincase.app), [Samourai](https://samouraiwallet.com), and [Wasabi](https://wasabiwallet.io) 
+[Bitcoin Core](https://bitcoincore.org), [BTCPay Server](https://btcpayserver.org), [Chaincase](https://chaincase.app), [Samourai](https://samouraiwallet.com), and [Wasabi](https://wasabiwallet.io)
 {% include fact/close.html %}
 
 [^1]: https://coincentral.com/what-is-coin-selection-and-why-does-it-matter/
