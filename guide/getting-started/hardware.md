@@ -42,7 +42,9 @@ Generally, any hardware device that is connected to the Internet can interact wi
 
 ## Recovery phrase storage
 
-Simple, cheap, and robust storage solutions for recovery phrases come in many forms. [Seedplate](https://bitcoinseedbackup.com/){:target="_blank"}, is a metal plate that users can etch their recovery phrase into for long-term offline storage. [CardWallet](https://www.cardwallet.com){:target="_blank"}, by comparison, is the size of a credit card and pre-loaded with a recovery phrase (hidden behind a security seal) and a matching Bitcoin address. For an even simpler solution, a piece of paper will do. Although paper is less durable and easy to lose, it is a strength of Bitcoin that such simple solutions are possible.
+Simple, cheap, and robust storage solutions for recovery phrases come in many forms.
+
+[Seedplate](https://bitcoinseedbackup.com/){:target="_blank"}, is a metal plate that users can etch their recovery phrase into for long-term offline storage. For an even simpler solution, a piece of paper will do. Although paper is less durable and easy to lose, it is a strength of Bitcoin that such simple solutions are possible.
 
 {% include picture.html
    image = "/assets/images/guide/getting-started/hardware/hardware-seed-storage.jpg"
@@ -75,8 +77,8 @@ Because hardware wallets are so optimized for this specific use case, they have 
 
 ## Nodes
 
-Tens of thousands of computers participate in the Bitcoin network. They are called nodes. Nodes exchange, verify, and compare block and transaction data.
-Running your own node, instead of relying on a third-party node, lets you validate transactions on your own device. Nodes also improve privacy and help secure the network. Several DIY and consumer hardware products make it easy to run your own node.
+Tens of thousands of computers participate in the Bitcoin network. They are called [nodes]({{ '/guide/glossary/node/' | relative_url }}). Nodes exchange, verify, and compare block and transaction data.
+Running your [own node]({{ '/guide/glossary/node/#self-hosted-node' | relative_url }}), instead of relying on a [third-party node]({{ '/guide/glossary/node/#third-party-node' | relative_url }}), lets you validate transactions on your own device. It also improves the privacy of your transaction and help secure the network. Several DIY and consumer hardware products make it easy to run your own node.
 
 {% include picture.html
    image = "/assets/images/guide/getting-started/hardware/node-hardware.jpg"
@@ -90,7 +92,7 @@ Running your own node, instead of relying on a third-party node, lets you valida
 
 Dedicated node hardware is particularly relevant for heavy users of the Lightning network. While a bitcoin node can be turned off and on, Lightning nodes need to be online at all times to maintain payment channels with other nodes. Smartphones are typically online 24/7 but are not suited for this task due to large amounts of data transfer and storage capacity requirements.
 
-While plug-and-play hardware nodes can solve various problems for bitcoin users, they have not seen widespread adoption as commercial products.
+While [plug-and-play hardware nodes]({{ '/guide/glossary/node/#hardware-node' | relative_url }}) can solve various problems for bitcoin users, they have not seen widespread adoption as commercial products.
 
 ## Miners
 
