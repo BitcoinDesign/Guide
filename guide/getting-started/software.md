@@ -137,7 +137,7 @@ Exchanges lets users swap between currencies and typically fall in three general
 
 Exchanges focused on investors and traders usually list many different cryptocurrencies. They allow users to trade with each other by submitting buy and sell requests on currency pairs. These products are generally for experienced users. They offer complex trading features and countless ways to analyze price movements.
 
-Decentralized exchanges fall In between these categories, focusing on occasional use or trading, but are, as their name implies, based on an open marketplace without a central authority.
+Decentralized exchanges fall in between these categories, focusing on occasional use or trading, but are, as their name implies, based on an open marketplace without a central authority.
 
 </div>
 
