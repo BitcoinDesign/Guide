@@ -128,30 +128,40 @@ A user chooses to send a payment to one of their contacts. They enter the amount
 
 </div>
 
-A few *popular algorithms* currently implemented by Bitcoin wallets:
+### Examples
 
-- **First In First Out (FIFO) / Last In, First Out (LIFO)**<br/>
+Below are some popular algorithms currently implemented by Bitcoin wallets that optimize for speed and lower fees:
+
+#### First In First Out (FIFO) / Last In, First Out (LIFO)<br/>
 The default strategy spends the oldest/youngest coins first.
-- **Pruned FIFO**<br/>
+
+#### Pruned FIFO<br/>
 Similiar to FIFO, but smallest coins filtered out in post-selection step.
-- **High Priority First**<br/>
+
+#### High Priority First<br/>
 Coins selected by priority (calculated by value x age). Up until February 2016, a portion of each block (50kB) was reserved for high-priority transactions by default. This algorithm therefore optimised for transaction speed.
-- **Minimize Fees (Optimize Size)**<br/>
+
+#### Minimize Fees (Optimize Size)<br/>
 Spending the lowest number of coins to reduce the byte size of the transaction, resulting in a lower fee.
-- **Minimize Future Fees (Merge Coins)**<br/>
+
+#### Minimize Future Fees (Merge Coins)<br/>
 Spending the maximum number of inputs to merge coins as a single change output for future use. This strategy can optimise for speed as the transaction size (and therefore cost) is increased. However, merging coins can also lead to a loss of privacy as coins, their addresses, balances, and historical transaction data are intertwined.
 
-A few more, *optimising for privacy*
+Below are algoorithms that optimize for privacy
 
-- **Target Sized Change**<br/>
+#### Target Sized Change<br/>
 Wallet aims to minimize the value difference of target input and change output.
-- **Branch & Bound (BnB)/Exact Change**<br/>
+
+#### Branch & Bound (BnB)/Exact Change<br/>
 Wallet finds an input set that is equal in value to the target, avoiding change outputs. If the wallet cannot find an exact match, it refers back to a “knapsack” solver which selects inputs that minimise the change output to within 0.01 BTC.
-- **Blackjack**<br/>
+
+#### Blackjack<br/>
 Accumulates inputs until the target value (+fees) is matched, does not accumulate inputs that go over the target value (within a threshold).
-- **Accumulative**<br/>
+
+#### Accumulative<br/>
 Accumulates inputs until the target value (+fees) is reached, skipping detrimental inputs.
-- **Freezing Coins**<br/>
+
+#### Freezing Coins<br/>
 Freezes certain coins or clusters from their wallet’s UTXO pool to either prioritize or avoid using when funding outgoing payment requests. This technique aids automatic selection strategies to become more private but also relies on the practice of successfully labeling coins.
 
 {% include picture.html
