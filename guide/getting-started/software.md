@@ -36,9 +36,7 @@ Illustration sources
 
 # Software overview
 
-There are countless use cases for financial tools, so there are almost as many application solutions per use case. Bitcoin’s global functionality adds complexity that may require adapting your application to foreign languages, cultures, and legal frameworks.
-Provided below is an overview of standard and specialized application categories.
-
+The unique history and architecture of Bitcoin has resulted in a few distinct categories of software, with each one serving a distinct purpose. Provided below is an overview of standard and specialized application categories.
 
 ## Command-line interfaces (CLI)
 
@@ -69,10 +67,9 @@ Primarily used by developers, Bitcoin CLIs offer feature-rich ways to interact w
 
 If blockchain is a public database, block explorers are simply windows into that database. They let users view data about specific transactions, latest blocks, block height, and so on.
 
+Explorers also provide insight into bigger picture activity on the Bitcoin network, such as daily transaction numbers. For example, there are typically fewer transactions on weekends, which results in lower fees, which are ideal for low-priority transactions.
 
 </div>
-
-Explorers also provide insight into bigger picture activity on the Bitcoin network, such as daily transaction numbers. For example, there are typically fewer transactions on weekends, which results in lower fees, which are ideal for low-priority transactions.
 
 ## Wallets
 
@@ -155,8 +152,7 @@ Decentralized exchanges fall in between these categories, focusing on occasional
    layout = "float-right-desktop"
 %}
 
-A network of computers called nodes maintains the blockchain. Individuals and groups running open-source Bitcoin software operate nodes. A node participates in the Bitcoin network by verifying activity on its blockchain. Some wallets have built-in nodes, and some node software supports wallet functionality. However, the minimum implementation of a node is syncing data and allowing other software a user has to access it.
-
+A [node]({{ '/guide/glossary/node/' | relative_url }}) is simply a computer running a Bitcoin software. Nodes verify transaction data on the Bitcoin blockchain and ensure the Bitcoin rules are being followed by network participants. Some wallets have built-in nodes, and some node software comes packaged with wallet functionality. However, the minimum implementation of a node is syncing data and allowing other software a user has to access it.
 </div>
 
 ## Mining
