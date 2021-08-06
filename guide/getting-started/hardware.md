@@ -37,7 +37,7 @@ Illustration sources
 
 # Hardware overview
 
-Generally, any hardware that is connected to the Internet can interact with the Bitcoin network. While personal computers and smartphones work great for general wallet management and transactions, some dedicated hardware products are optimized for the nuances of Bitcoin. We’ll explore them and how they work here.
+Generally, any hardware device that is connected to the Internet can interact with the Bitcoin network. While personal computers and smartphones work great for general wallet management and transactions, some dedicated hardware products are optimized for the nuances of Bitcoin. We’ll explore them and how they work here.
 
 
 ## Recovery phrase storage
@@ -71,11 +71,11 @@ You may already be familiar with key fobs from your bank or work. They are small
 
 Bitcoin hardware wallets play a similar role but with several noteworthy differences. Like key fobs, they securely store an authentication method and isolate it from the Internet, networks, and other devices. In bitcoin, these are the seed, associated keys, and functions that require interaction with them.
 
-Because hardware wallets are so optimized for this specific use case, they have tiny screens and limited input options. Most interactions with them happen via desktop software that the manufacturer provides. The application sends only specific requests to the hardware wallet to verify or sign data. This provides a strong balance of security and convenience and keeps hardware wallets generally affordable.
+Because hardware wallets are so optimized for this specific use case, they have tiny screens and limited input options. Most interactions with them happen via desktop software that the manufacturer provides. The application sends only specific requests to the hardware wallet to verify or sign data. This provides a strong balance of security and convenience.
 
 ## Nodes
 
-Thousands of computers participate in the Bitcoin network. They are called nodes. Nodes exchange, verify, and compare block and transaction data.
+Tens of thousands of computers participate in the Bitcoin network. They are called nodes. Nodes exchange, verify, and compare block and transaction data.
 Running your own node, instead of relying on a third-party node, lets you validate transactions on your own device. Nodes also improve privacy and help secure the network. Several DIY and consumer hardware products make it easy to run your own node.
 
 {% include picture.html
@@ -110,7 +110,7 @@ Outside of purchasing hardware, the main cost of mining is electricity. That’s
 
 ## ATMs
 
-A Bitcoin ATM (Automated Teller Machine) allows users to purchase or sell bitcoin for cash or with debit cards. These machines are usually bound to local money transmitting laws and regulations, such as KYC (Know Your Customer) and anti-money laundering regulations. More on [Wikipedia](https://en.wikipedia.org/wiki/Bitcoin_ATM).
+A Bitcoin ATM (Automated Teller Machine) allows users to purchase or sell bitcoin for cash or with debit cards. These machines are usually bound to local money transmitting laws and regulations, such as KYC (Know Your Customer) and AML (anti-money laundering) regulations. More on [Wikipedia](https://en.wikipedia.org/wiki/Bitcoin_ATM).
 
 {% include picture.html
    image = "/assets/images/guide/getting-started/hardware/atm.jpg"
