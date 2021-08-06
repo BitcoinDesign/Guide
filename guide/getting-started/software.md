@@ -42,7 +42,7 @@ Provided below is an overview of standard and specialized application categories
 
 ## Command-line interfaces (CLI)
 
-Primarily used by developers, command-line interfaces offer feature-rich ways to interact with blockchains. They can be thought of as general-purpose toolboxes, so they require certain technical knowledge and are not optimized for specific use cases. New features are often first included in a CLI and then later added to graphical user interfaces (GUI).
+Primarily used by developers, Bitcoin CLIs offer feature-rich ways to interact with Bitcoin. They can be thought of as general-purpose toolboxes, so they require certain technical knowledge and are not optimized for specific use cases. New features are often first included in a CLI and then later added to graphical user interfaces (GUI).
 
 {% include image.html
    image = "/assets/images/guide/getting-started/software/cli-example.jpg"
@@ -88,7 +88,7 @@ Explorers also provide insight into bigger picture activity on the Bitcoin netwo
    layout = "float-right-desktop"
 %}
 
-Wallets are perhaps the most important Bitcoin applications. They provide easy-to-use graphic interfaces designed for broad audiences that let Bitcoin owners send, receive, and store coins. Wallets don’t always offer the full functionality of a CLI but instead focus on general use cases like making payments and browsing transactions.
+Wallets are perhaps the most important Bitcoin applications. They provide easy-to-use graphical user interfaces (GUIs) designed for broad audiences that let bitcoin owners send, receive, store and manage their coins. Wallet GUIs don’t offer the full functionality of a CLI but instead focus on general use cases like making payments and browsing transactions.
 
 Due to Bitcoin’s open-source nature, anyone with the technical skills can develop a Bitcoin wallet. Many code libraries are available to simplify this task.
 
@@ -96,7 +96,7 @@ Wallet features vary by application but always include wallet setup, balance and
 
 Some of these features come with highly complex technical challenges. One of which is reliance on third-party services, a sensitive topic for bitcoin applications since they require a high level of trust. Wallets may not support specific features or implement a component in a particular manner for this reason.
 
-Another reason is that standards continue to evolve as technology matures. Even fundamental aspects of Bitcoin like address formats and key generation are implementable in incompatible ways.
+Another reason is that standards continue to evolve as Bitcoin matures. Even fundamental aspects of Bitcoin like address formats and key generation are implementable in incompatible ways.
 
 </div>
 
@@ -114,7 +114,7 @@ Another reason is that standards continue to evolve as technology matures. Even 
    layout = "float-right-desktop"
 %}
 
-Payment processing applications offer easy-to-use online stores and point-of-sale experiences paired with complex feature sets for merchants to manage their inventories, track their accounts, quickly ship products, and integrate with other services.
+Payment processing applications offer easy-to-use online stores and point-of-sale (POS) experiences paired with complex feature sets for merchants to manage their inventories, track their accounts, quickly ship products, and integrate with other services.
 
 </div>
 
