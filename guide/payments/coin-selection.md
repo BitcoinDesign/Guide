@@ -149,7 +149,7 @@ Spending the maximum number of inputs to merge coins as a single change output f
 
 Below are algoorithms that optimize for privacy
 
-#### Target Sized Change<br/>
+#### Target Sized Change
 Wallet aims to minimize the value difference of target input and change output.
 
 #### Branch & Bound (BnB)/Exact Change
