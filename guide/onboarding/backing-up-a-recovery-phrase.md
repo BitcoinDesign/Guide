@@ -53,6 +53,8 @@ In the [private key management]({{ 'guide/private-key-management/introduction/' 
 
 However, there may be times when it is necessary to use a manual backup alternative, as it can be low tech and easily accessible.
 
+---
+
 The next sections will look at some UI considerations for [automatic cloud backups]({{ '/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup' | relative_url }}) and [manual backups]({{ 'guide/onboarding/backing-up-a-recovery-phrase/manual-backup/' | relative_url }}).
 
 {% include next-previous.html
