@@ -22,35 +22,19 @@ image: https://bitcoin.design/assets/images/guide/glossary/node/node-preview.jpg
 
 # Node
 
-A node refers to a Bitcoin client that participates in the Bitcoin network. Any Bitcoin application that wants to show and send transactions needs a way to connect to a node and manage block data and there are many ways to make this work.
+A node refers to software that participates in the Bitcoin network. Any Bitcoin application that wants to show and send transaction data needs a way to connect to a node.
 
 There are multiple aspects that differentiate nodes:
 - Is it controlled by you or someone else? How much trust is involved?
 - Does it verify the data it receives?
 - Does it store all transaction data or only data relevant to you?
+- Does the node have a local hot wallet or does it simply connect to wallet applications? How exactly does it connect? 
 - Security considerations, such as the risk of receiving manipulated data
 - Privacy considerations, such as tracing your transaction behavior
 
 ## Common node setups
 
-From complete control to fully trusting a single third party, there are a variety of node setups. Below are examples of common ones.
-
-#### Local node
-
-<div class="center" markdown="1">
-
-{% include image.html
-   image = "/assets/images/guide/glossary/node/local-node.png"
-   retina = "/assets/images/guide/glossary/node/local-node@2x.png"
-   alt-text = ""
-   width = 100
-   height = 100
-   layout = "float-left"
-%}
-
-A very simple setup is to use an application like Bitcoin Core that combines node and wallet functionality.
-
-</div>
+From complete control, to fully trusting a single third party, there are a variety of node setups. Below are examples of some common node setups.
 
 #### Hardware node
 
@@ -65,11 +49,28 @@ A very simple setup is to use an application like Bitcoin Core that combines nod
    layout = "float-left"
 %}
 
-Separating node and wallet functionality, many users rely on a dedicated computer like a Raspberry Pi running software like Umbrel, MyNode, and Raspiblitz. Wallet applications can connect to the node which allows them to be more lightweight.
+Hardware nodes are dedicated devices, usually Raspberry Pi's, that run a Bitcoin node. Hardware nodes can come with local wallet functionality or simply be connected to by users external wallets as a source of trusted block data. Several 'plug-and-play' hardware node options exist such as [Umbrel](https://getumbrel.com/), [MyNode](https://mynodebtc.com/), [RoninDojo](https://ronindojo.io/), and [Raspiblitz](https://raspiblitz.org/).
 
 </div>
 
-#### Self-hosted node
+#### Local node
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/glossary/node/local-node.png"
+   retina = "/assets/images/guide/glossary/node/local-node@2x.png"
+   alt-text = ""
+   width = 100
+   height = 100
+   layout = "float-left"
+%}
+
+A local node runs a node on your local device using software such as [Bitcoin Core.](https://bitcoincore.org/)
+
+</div>
+
+#### Hosted node
 
 <div class="center" markdown="1">
 
@@ -82,7 +83,7 @@ Separating node and wallet functionality, many users rely on a dedicated compute
    layout = "float-left"
 %}
 
-While it possible to run a node on a rented server, this partially places the node in the control of a third party and introduces privacy risks.
+A hosted node is when a user runs their own node on a trusted third-party server. This puts full trust in the third-party that they will not tamper with your block data. This also exposes your transaction history to them, which which is a potential privacy risk.
 
 </div>
 
@@ -116,7 +117,7 @@ Connecting to multiple untrusted third-parties can be a good idea if compact blo
    layout = "float-left"
 %}
 
-Connecting to a single node controlled by a third-party is a convenient setup for starters, or when the economic cost of running a node is too high. This should only be used if there is a good trust relationship or potential loss is minimal. Too many user relying on third-party nodes can lead to centralization, so it is generally discouraged.
+Connecting to a single node controlled by a third-party is a convenient setup for starters, or when the economic cost of running a node is too high. This should only be used if there is a good trust relationship or potential loss is minimal. Too many users relying on third-party nodes can lead to network centralization, so it is generally discouraged.
 
 </div>
 
@@ -139,11 +140,11 @@ Third-party APIs should be avoided. These are custom connection mechanisms built
 
 ## Block data management
 
-Based on use case and context, some nodes are very thorough and store and verify the complete blockchain, while others are optimized for efficiency and may accept slight security and privacy tradeoffs.
+Based on use case and context, some nodes are very thorough and store and verify the complete Bitcoin blockchain, while others are optimized for efficiency and may accept slight security and privacy tradeoffs.
 
 #### Full nodes
 
-Full nodes are Bitcoin clients that fully verify and enforce the rules of the Bitcoin network. An example of a rule is that there will never be more than 21 million bitcoin.
+A Full nodes is Bitcoin software that fully verifies and enforce the rules of the Bitcoin network. An example of a rule is that there will never be more than 21 million bitcoin.
 
 <div class="center" markdown="1">
 
@@ -156,7 +157,7 @@ Full nodes are Bitcoin clients that fully verify and enforce the rules of the Bi
    layout = "float-left"
 %}
 
-**Archival full nodes** store the entire Bitcoin blockchain, and send historical data to other nodes.
+**Archival full nodes** store the entire Bitcoin blockchain locally, and send historical data to other nodes. These are sometimes referred to as listening nodes.
 
 </div>
 
@@ -171,13 +172,13 @@ Full nodes are Bitcoin clients that fully verify and enforce the rules of the Bi
    layout = "float-left"
 %}
 
-**Pruned full nodes** use much lower storage capacity as they only store a portion of recent blocks.
+**Pruned full nodes** only store a portion of recent block data locally. The amount of recent block data that can be stored can be modified by users depending on their storage capacity. 
 
 </div>
 
 #### Light nodes
 
-Light nodes are Bitcoin clients that do not verify or enforce the rules of the Bitcoin network.
+A light node is Bitcoin software that does not verify or enforce the rules of the Bitcoin network. Light nodes trust third parties to receive block data. 
 
 <div class="center" markdown="1">
 
@@ -210,7 +211,7 @@ For more information:
    layout = "float-left"
 %}
 
-**Neutrino light nodes** use the Neutrino protocol. The Neutrino protocol uses compact block filters to query and download condensed representations of blocks that contain transaction data relevant to the user.
+**Neutrino light nodes** use the Neutrino protocol which uses compact block filters to query and download condensed representations of blocks that contain transaction data relevant to the user.
 
 For more information:
    - [Bitcoin Optech - block filters](https://bitcoinops.org/en/topics/compact-block-filters/)
