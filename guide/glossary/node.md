@@ -144,7 +144,7 @@ Based on use case and context, some nodes are very thorough and store and verify
 
 #### Full nodes
 
-A Full nodes is Bitcoin software that fully verifies and enforce the rules of the Bitcoin network. An example of a rule is that there will never be more than 21 million bitcoin.
+A full node is Bitcoin software that fully verifies and enforce the rules of the Bitcoin network. An example of a rule is that there will never be more than 21 million bitcoin.
 
 <div class="center" markdown="1">
 
