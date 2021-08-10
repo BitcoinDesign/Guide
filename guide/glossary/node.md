@@ -83,7 +83,7 @@ A local node runs a node on your local device using software such as [Bitcoin Co
    layout = "float-left"
 %}
 
-A hosted node is when a user runs their own node on a trusted third-party server. This puts full trust in the third-party that they will not tamper with your block data. This also exposes your transaction history to them, which which is a potential privacy risk.
+A hosted node is when a user runs their own node on a trusted third-party server. This puts full trust in the third-party that they will not tamper with your block data. This also exposes your transaction history to them, which is a potential privacy risk.
 
 </div>
 
