@@ -44,7 +44,7 @@ Generally, any hardware device that is connected to the Internet can interact wi
 
 Simple, cheap, and robust storage solutions for recovery phrases come in many forms.
 
-[Seedplate](https://bitcoinseedbackup.com/){:target="_blank"}, is a metal plate that users can etch their recovery phrase into for long-term offline storage. For an even simpler solution, a piece of paper will do. Although paper is less durable and easy to lose, it is a strength of Bitcoin that such simple solutions are possible.
+[Seedplate](https://bitcoinseedbackup.com/){:target="_blank"}, is a metal plate that users can etch their recovery phrase into for long-term offline storage. For an even simpler solution, a piece of paper will do. Although paper is less durable and easy to lose, it is a strength of Bitcoin that such simple solutions are possible. See [Bitcoin backups]({{ '/guide/private-key-management/backups/' | relative_url }}) for more details.
 
 {% include picture.html
    image = "/assets/images/guide/getting-started/hardware/hardware-seed-storage.jpg"
