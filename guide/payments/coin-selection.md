@@ -33,8 +33,9 @@ There are two types of coin selection strategies that are used in Bitcoin applic
    mobile = "/assets/images/guide/payments/coin-selection/funding-tx-mobile.jpg"
    mobileRetina = "/assets/images/guide/payments/coin-selection/funding-tx-mobile@2x.jpg"
    alt-text = "Flow chart showing how unspent outputs from a wallet form inputs of a new transaction and the contained bitcoin end up in the receiving wallet."
-   width = 800
-   height = 400
+   width = 1200
+   height = 600
+   layout = "full-width"
 %}
 
 ### Constraints
