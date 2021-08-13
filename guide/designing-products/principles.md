@@ -6,7 +6,7 @@ nav_order: 3
 parent: Designing Bitcoin products
 permalink: /guide/designing-products/principles/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/designing-products/principles/page-principles.jpg
+image: https://bitcoin.design/assets/images/guide/designing-products/principles/principles-preview.jpg
 ---
 
 <!--
@@ -14,6 +14,8 @@ image: https://bitcoin.design/assets/images/guide/designing-products/principles/
 Editor's notes
 
 The key principles of designing for Bitcoin
+
+Artwork Source: https://www.figma.com/file/xQ5eWVSOLbNGLmcls3qz7d/Principles?node-id=0%3A1
 
 -->
 
@@ -48,6 +50,15 @@ These are principles we in the Bitcoin Design Community identified and stand beh
 
 ---
 
+{% include image.html
+image = "/assets/images/guide/designing-products/principles/principle-self-custody.png"
+retina = "/assets/images/guide/designing-products/principles/principle-self-custody@2x.png"
+alt-text = "Artwork depicting Self Custody"
+width = 200
+height = 200
+layout="principle"
+%}
+
 ## Self-custody
 
 > Let users control their private keys, with no risk for seizure or freezing of funds
@@ -63,6 +74,15 @@ Our existing mental models of access to digital services are usernames and passw
 - Build products where the users' funds can be seized, or frozen
 
 ---
+
+{% include image.html
+image = "/assets/images/guide/designing-products/principles/principle-security.png"
+retina = "/assets/images/guide/designing-products/principles/principle-security@2x.png"
+alt-text = "Artwork depicting Self Custody"
+width = 200
+height = 200
+layout="principle"
+%}
 
 ## Security
 
@@ -94,6 +114,15 @@ Security can also be a feeling. A polished, good-looking, easy-to-use product th
 
 ---
 
+{% include image.html
+image = "/assets/images/guide/designing-products/principles/principle-inclusion.png"
+retina = "/assets/images/guide/designing-products/principles/principle-inclusion@2x.png"
+alt-text = "Artwork depicting Self Custody"
+width = 200
+height = 200
+layout="principle"
+%}
+
 ## Inclusion
 
 > Build borderless products without location, language or social barriers
@@ -117,6 +146,15 @@ While Bitcoin is already used by a large number of people, it pales in compariso
 
 ---
 
+{% include image.html
+image = "/assets/images/guide/designing-products/principles/principle-interoperability.png"
+retina = "/assets/images/guide/designing-products/principles/principle-interoperability@2x.png"
+alt-text = "Artwork depicting Self Custody"
+width = 200
+height = 200
+layout="principle"
+%}
+
 ## Interoperability
 
 > Enable import and export of wallets, maximise backwards compatibility and use of open standards
@@ -135,6 +173,15 @@ Bitcoin is an open-source protocol, operating in a decentralized manner. This ha
 
 ---
 
+{% include image.html
+image = "/assets/images/guide/designing-products/principles/principle-transparency.png"
+retina = "/assets/images/guide/designing-products/principles/principle-transparency@2x.png"
+alt-text = "Artwork depicting Self Custody"
+width = 200
+height = 200
+layout="principle"
+%}
+
 ## Transparency
 
 > Be open and transparent with how your product works, open-source your code when possible
@@ -150,6 +197,15 @@ While an open and decentralized financial system that users can connect with dir
 - Make claims that are not explained or verifiable
 
 ---
+
+{% include image.html
+image = "/assets/images/guide/designing-products/principles/principle-privacy.png"
+retina = "/assets/images/guide/designing-products/principles/principle-privacy@2x.png"
+alt-text = "Artwork depicting Self Custody"
+width = 200
+height = 200
+layout="principle"
+%}
 
 ## Privacy
 
@@ -168,6 +224,15 @@ The Bitcoin network doesn’t need to know your name for you to use it. Strive t
 - Collect and store personal information not required for the functionality of your product
 
 ---
+
+{% include image.html
+image = "/assets/images/guide/designing-products/principles/principle-decentralization.png"
+retina = "/assets/images/guide/designing-products/principles/principle-decentralization@2x.png"
+alt-text = "Artwork depicting Self Custody"
+width = 200
+height = 200
+layout="principle"
+%}
 
 ## Decentralization
 

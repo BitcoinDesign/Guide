@@ -118,7 +118,7 @@ GEM
 PLATFORMS
   ruby
   x86_64-linux
-  x86_64-linux-musl
+  x86_64-linux
 
 DEPENDENCIES
   html-proofer
@@ -133,4 +133,4 @@ DEPENDENCIES
   webrick (~> 1.7)
 
 BUNDLED WITH
-   2.2.15
+   2.2.18
