@@ -53,7 +53,7 @@ These are principles we in the Bitcoin Design Community identified and stand beh
 {% include image.html
 image = "/assets/images/guide/designing-products/principles/principle-self-custody.png"
 retina = "/assets/images/guide/designing-products/principles/principle-self-custody@2x.png"
-alt-text = "Artwork depicting Self Custody"
+alt-text = "Artwork depicting self custody"
 width = 200
 height = 200
 layout="principle"
@@ -78,7 +78,7 @@ Our existing mental models of access to digital services are usernames and passw
 {% include image.html
 image = "/assets/images/guide/designing-products/principles/principle-security.png"
 retina = "/assets/images/guide/designing-products/principles/principle-security@2x.png"
-alt-text = "Artwork depicting Self Custody"
+alt-text = "Artwork depicting security"
 width = 200
 height = 200
 layout="principle"
@@ -117,7 +117,7 @@ Security can also be a feeling. A polished, good-looking, easy-to-use product th
 {% include image.html
 image = "/assets/images/guide/designing-products/principles/principle-inclusion.png"
 retina = "/assets/images/guide/designing-products/principles/principle-inclusion@2x.png"
-alt-text = "Artwork depicting Self Custody"
+alt-text = "Artwork depicting inclusion"
 width = 200
 height = 200
 layout="principle"
@@ -149,7 +149,7 @@ While Bitcoin is already used by a large number of people, it pales in compariso
 {% include image.html
 image = "/assets/images/guide/designing-products/principles/principle-interoperability.png"
 retina = "/assets/images/guide/designing-products/principles/principle-interoperability@2x.png"
-alt-text = "Artwork depicting Self Custody"
+alt-text = "Artwork depicting interoperability"
 width = 200
 height = 200
 layout="principle"
@@ -176,7 +176,7 @@ Bitcoin is an open-source protocol, operating in a decentralized manner. This ha
 {% include image.html
 image = "/assets/images/guide/designing-products/principles/principle-transparency.png"
 retina = "/assets/images/guide/designing-products/principles/principle-transparency@2x.png"
-alt-text = "Artwork depicting Self Custody"
+alt-text = "Artwork depicting transparency"
 width = 200
 height = 200
 layout="principle"
@@ -201,7 +201,7 @@ While an open and decentralized financial system that users can connect with dir
 {% include image.html
 image = "/assets/images/guide/designing-products/principles/principle-privacy.png"
 retina = "/assets/images/guide/designing-products/principles/principle-privacy@2x.png"
-alt-text = "Artwork depicting Self Custody"
+alt-text = "Artwork depicting privacy"
 width = 200
 height = 200
 layout="principle"
@@ -228,7 +228,7 @@ The Bitcoin network doesn’t need to know your name for you to use it. Strive t
 {% include image.html
 image = "/assets/images/guide/designing-products/principles/principle-decentralization.png"
 retina = "/assets/images/guide/designing-products/principles/principle-decentralization@2x.png"
-alt-text = "Artwork depicting Self Custody"
+alt-text = "Artwork depicting decentralization"
 width = 200
 height = 200
 layout="principle"
