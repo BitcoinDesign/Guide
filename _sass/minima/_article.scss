@@ -137,6 +137,14 @@ article.guide {
   & > .center {
     @include clearfix;
 
+    &.flex {
+      display: flex;
+      flex-direction: column;
+      align-content: flex-start;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
     @include media-query(medium-down) {
       > figure {
         &:not(:first-child),
@@ -145,6 +153,22 @@ article.guide {
         &.-float-left-mobile,
         &.-float-right-mobile {
           margin-top: $spacing-unit/5;
+        }
+      }
+    }
+
+    @include media-query(medium-up) {
+      &.flex {
+        flex-direction: row;
+
+        & > .-float-left {
+          img {
+            width: 100%;
+          }
+
+          & + * {
+            flex-shrink: 2;
+          }
         }
       }
     }

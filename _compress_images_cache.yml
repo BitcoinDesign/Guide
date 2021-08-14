@@ -1336,6 +1336,11 @@ assets/images/guide/case-studies/onboarding/intro.png: intro.png
 assets/images/guide/case-studies/onboarding/intro@2x.png: intro@2x.png
 assets/images/guide/case-studies/multisig-wallet/onboarding/key-2-connection-type.png: key-2-connection-type.png
 assets/images/guide/case-studies/multisig-wallet/onboarding/key-2-connection-type@2x.png: key-2-connection-type@2x.png
+assets/images/guide/designing-products/principles/principles-preview.jpg: principles-preview.jpg
+assets/images/guide/designing-products/principles/principles.jpg: principles.jpg
+assets/images/guide/designing-products/principles/principles-mobile.jpg: principles-mobile.jpg
+assets/images/guide/designing-products/principles/principles-mobile@2x.jpg: principles-mobile@2x.jpg
+assets/images/guide/designing-products/principles/principles@2x.jpg: principles@2x.jpg
 assets/images/guide/designing-products/principles/principle-security.png: principle-security.png
 assets/images/guide/designing-products/principles/principle-self-custody.png: principle-self-custody.png
 assets/images/guide/designing-products/principles/principle-self-custody@2x.png: principle-self-custody@2x.png
@@ -1350,8 +1355,3 @@ assets/images/guide/designing-products/principles/principle-inclusion@2x.png: pr
 assets/images/guide/designing-products/principles/principle-privacy@2x.png: principle-privacy@2x.png
 assets/images/guide/designing-products/principles/principle-decentralization@2x.png: principle-decentralization@2x.png
 assets/images/guide/designing-products/principles/principle-transparency.png: principle-transparency.png
-assets/images/guide/designing-products/principles/principles-preview.jpg: principles-preview.jpg
-assets/images/guide/designing-products/principles/principles.jpg: principles.jpg
-assets/images/guide/designing-products/principles/principles-mobile.jpg: principles-mobile.jpg
-assets/images/guide/designing-products/principles/principles-mobile@2x.jpg: principles-mobile@2x.jpg
-assets/images/guide/designing-products/principles/principles@2x.jpg: principles@2x.jpg

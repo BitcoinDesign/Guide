@@ -50,18 +50,24 @@ These are principles we in the Bitcoin Design Community identified and stand beh
 
 ---
 
+
+
+## Self-custody
+
+<div class="center flex" markdown="1">
+
 {% include image.html
 image = "/assets/images/guide/designing-products/principles/principle-self-custody.png"
 retina = "/assets/images/guide/designing-products/principles/principle-self-custody@2x.png"
 alt-text = "Artwork depicting self custody"
-width = 200
-height = 200
-layout="principle"
+width = 150
+height = 150
+layout="float-left"
 %}
 
-## Self-custody
-
 > Let users control their private keys, with no risk for seizure or freezing of funds
+
+</div>
 
 Our existing mental models of access to digital services are usernames and passwords controlled by a company with custody of your funds and data. With everyone having direct access to the Bitcoin network, we no longer need to design products that require people to delegate control of their funds to middlemen. While it comes with greater responsibility, self-custody enables the open financial system of peer-to-peer transactions.
 
@@ -75,18 +81,24 @@ Our existing mental models of access to digital services are usernames and passw
 
 ---
 
+
+
+## Security
+
+<div class="center flex" markdown="1">
+
 {% include image.html
 image = "/assets/images/guide/designing-products/principles/principle-security.png"
 retina = "/assets/images/guide/designing-products/principles/principle-security@2x.png"
 alt-text = "Artwork depicting security"
-width = 200
-height = 200
-layout="principle"
+width = 150
+height = 150
+layout="float-left"
 %}
 
-## Security
-
 > Provide appropriate and progressive security for all types of users
+
+</div>
 
 Self-custody often leaves the end-user responsible for the security of their private keys. They can only do a good job of that if we provide them with appropriate tools and awareness of best practices.
 
@@ -114,18 +126,24 @@ Security can also be a feeling. A polished, good-looking, easy-to-use product th
 
 ---
 
+
+
+## Inclusion
+
+<div class="center flex" markdown="1">
+
 {% include image.html
 image = "/assets/images/guide/designing-products/principles/principle-inclusion.png"
 retina = "/assets/images/guide/designing-products/principles/principle-inclusion@2x.png"
 alt-text = "Artwork depicting inclusion"
-width = 200
-height = 200
-layout="principle"
+width = 150
+height = 150
+layout="float-left"
 %}
 
-## Inclusion
-
 > Build borderless products without location, language or social barriers
+
+</div>
 
 There are no background checks, credit checks, or gatekeepers to Bitcoin. A Kenyan farmer has the same access to Bitcoin as a Wall Street trader.
 
@@ -146,18 +164,24 @@ While Bitcoin is already used by a large number of people, it pales in compariso
 
 ---
 
+
+
+## Interoperability
+
+<div class="center flex" markdown="1">
+
 {% include image.html
 image = "/assets/images/guide/designing-products/principles/principle-interoperability.png"
 retina = "/assets/images/guide/designing-products/principles/principle-interoperability@2x.png"
 alt-text = "Artwork depicting interoperability"
-width = 200
-height = 200
-layout="principle"
+width = 150
+height = 150
+layout="float-left"
 %}
 
-## Interoperability
-
 > Enable import and export of wallets, maximise backwards compatibility and use of open standards
+
+</div>
 
 Bitcoin is an open-source protocol, operating in a decentralized manner. This has led to a number of standards being developed to ensure compatibility between products. It should be easy to switch and move your Bitcoin wallet to a different application, should you wish. Ensuring that your product supports as many of these standards as possible is best practice and builds trust. More on [wallet interoperability]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }}).
 
@@ -173,18 +197,24 @@ Bitcoin is an open-source protocol, operating in a decentralized manner. This ha
 
 ---
 
+
+
+## Transparency
+
+<div class="center flex" markdown="1">
+
 {% include image.html
 image = "/assets/images/guide/designing-products/principles/principle-transparency.png"
 retina = "/assets/images/guide/designing-products/principles/principle-transparency@2x.png"
 alt-text = "Artwork depicting transparency"
-width = 200
-height = 200
-layout="principle"
+width = 150
+height = 150
+layout="float-left"
 %}
 
-## Transparency
-
 > Be open and transparent with how your product works, open-source your code when possible
+
+</div>
 
 While an open and decentralized financial system that users can connect with directly is great, it puts a burden on them to choose a product that they trust and like to use. We can make this easier by freely sharing information about how our products work and what technologies they use/rely on. By open-sourcing your code, you can let people verify that your claims are true, ultimately building more trust with your users. It is important to be transparent with users about the risks that come with self-custodying funds. Be sure to educate about scenarios where they may risk losing access to their funds along with best practices for avoiding this.
 
@@ -198,18 +228,22 @@ While an open and decentralized financial system that users can connect with dir
 
 ---
 
+## Privacy
+
+<div class="center flex" markdown="1">
+
 {% include image.html
 image = "/assets/images/guide/designing-products/principles/principle-privacy.png"
 retina = "/assets/images/guide/designing-products/principles/principle-privacy@2x.png"
 alt-text = "Artwork depicting privacy"
-width = 200
-height = 200
-layout="principle"
+width = 150
+height = 150
+layout="float-left"
 %}
 
-## Privacy
-
 > Minimize collection of personal information, and maximize financial transaction privacy
+
+</div>
 
 A common misconception of Bitcoin is that it provides complete anonymity and privacy of transactions. Since the blockchain is an unchangeable ledger of all transactions ever made, it is very hard not to have your complete transaction history visible once even a single one of your addresses is connected to you. If Bitcoin is to become viable for a wider audience and daily use, we should take privacy seriously. This is certainly not to enable or encourage illicit activity but to protect individual financial privacy. We would not accept our bank to publish our financial transactions to our Twitter or Facebook feeds, so we should avoid that scenario with Bitcoin.
 
@@ -225,18 +259,22 @@ The Bitcoin network doesn’t need to know your name for you to use it. Strive t
 
 ---
 
+## Decentralization
+
+<div class="center flex" markdown="1">
+
 {% include image.html
 image = "/assets/images/guide/designing-products/principles/principle-decentralization.png"
 retina = "/assets/images/guide/designing-products/principles/principle-decentralization@2x.png"
 alt-text = "Artwork depicting decentralization"
-width = 200
-height = 200
-layout="principle"
+width = 150
+height = 150
+layout="float-left"
 %}
 
-## Decentralization
-
 > Design products that encourage people to run a full Bitcoin node
+
+</div>
 
 Unlike traditional banking systems, the Bitcoin economy does not require new users to seek permission from anyone. Bitcoin has no central point of control. No one person or entity is in charge. Connecting to any [node]({{ '/guide/glossary/#node' | relative_url }}) on the network gives you the same rights and responsibilities, ensuring no single point of failure.
 
