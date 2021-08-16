@@ -60,13 +60,13 @@ https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=
 
 # Units and symbols
 
-Bitcoin, bits, sats. The format and presentation of bitcoin values are probably amongst the most challenging for new users. This page provides observations of its current usage and recommendations for the best option if multiple formats exist. The goal is not to re-invent the format but to observe the current usage, and eventually to codify it through an organic approach. The surest way to achieve wide-scale adoption is to standardize what is already being used today.
+Bitcoin, bits, sats. The format and presentation of bitcoin values are probably amongst the most challenging for new users. Here we provide observations on current usage and recommendations. The surest way to achieve wide-scale adoption is to standardize what is already being used today.
 
-Despite the challenge of the fractional aspect and the abundance of digits used to present the value of bitcoin and currencies in general, the intent is to serve as a guide to format the values so they can easily be scanned, quick to read, and intuitive to remember.
+Despite the challenge of the fractional aspect and the abundance of digits used to present the value of bitcoin, the intent is to serve as a guide to format the values so they can easily be scanned, quick to read, and intuitive to remember.
 
 #### Current adoption
 
-The most common way bitcoin is expressed is as BTC (bitcoin) with 8 decimal places, or sat (Satoshi). While not as common, denominations of BTC such as mBTC ("millibitcoins"), μBTC ("bits") are also sometimes used, as well as millisatoshi (msat) in the Lightning network. The chart below illustrates how each unit relates to the bitcoin unit.
+The most common way bitcoin is expressed is as BTC (bitcoin) with 8 decimal places, or sat (Satoshi). While not as common, denominations of BTC such as mBTC ("millibitcoins"), μBTC ("bits") are also sometimes used, as well as millisatoshi (msat) in the Lightning network. The unicode symbol ₿, formalized in June 2017, can also be used to represent BTC or bitcoin, but few typefaces support at the time of this writing. The chart below illustrates how each unit relates to the bitcoin unit.
 
 | Unit         | Symbol       | Bitcoin value     |
 | ------------ | ------------ | ----------------- |
@@ -75,6 +75,11 @@ The most common way bitcoin is expressed is as BTC (bitcoin) with 8 decimal plac
 | bit          | μBTC         | 0.00 000 100      |
 | satsoshi     | sat          | 0.00 000 001      |
 | millisatoshi | msat         | 0.00 000 000 001  |
+
+For more information, see the Bitcoin Wiki:
+
+- [Units](https://en.bitcoin.it/wiki/Units)
+- [Satoshi](https://en.bitcoin.it/wiki/Satoshi_(unit))
 
 #### Recommended Interaction
 
