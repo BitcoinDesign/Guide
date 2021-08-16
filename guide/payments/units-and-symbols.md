@@ -30,6 +30,9 @@ images_home:
     - file: home-unit-options
       alt: Home screen with a quick-access overlay to switch between units.
       caption: Tapping and holding the balance gives quick access to unit options.
+    - file: enter-amount
+      alt: Screen for entering an amount of funds to send.
+      caption: When entering amounts, a dedicated UI element may be needed to switch between units.
 image: /assets/images/guide/payments/units-and-symbols/units-and-symbols-preview.jpg
 
 ---
