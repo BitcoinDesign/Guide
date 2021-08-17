@@ -56,6 +56,7 @@ https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=
    mobile = "/assets/images/guide/payments/units-and-symbols/units-and-symbols-mobile.png"
    mobileRetina = "/assets/images/guide/payments/units-and-symbols/units-and-symbols-mobile@2x.png"
    alt-text = "Bitcoin value with annotations for parts of the number display."
+   caption = "Aspects to consider when formatting bitcoin amounts."
    width = 1600
    height = 700
    layout = "full-width"
@@ -63,13 +64,13 @@ https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=
 
 # Units and symbols
 
-Bitcoin, bits, sats. The format and presentation of bitcoin values are probably amongst the most challenging for new users. Here we provide observations on current usage and recommendations. The surest way to achieve wide-scale adoption is to standardize what is already being used today.
+Bitcoin, bits, sats. The format and presentation of bitcoin values are probably amongst the most challenging for new users. Here we provide observations and recommendations on current usage in the context of established, global standards. The surest way to achieve wide-scale adoption is to formalize what is already being used today.
 
 Despite the challenge of the fractional aspect and the abundance of digits used to present the value of bitcoin, the intent is to serve as a guide to format the values so they can easily be scanned, quick to read, and intuitive to remember.
 
 #### Current adoption
 
-The most common way bitcoin is expressed is as BTC (bitcoin) with 8 decimal places, or sat (Satoshi). While not as common, denominations of BTC such as mBTC ("millibitcoins"), μBTC ("bits") are also sometimes used, as well as millisatoshi (msat) in the Lightning network. The unicode symbol ₿, formalized in June 2017, can also be used to represent BTC or bitcoin, but few typefaces support at the time of this writing. The chart below illustrates how each unit relates to the bitcoin unit.
+The most common way bitcoin is expressed is as BTC (bitcoin) or sat (satoshi), with 1 bitcoin being 100 000 000 satoshi. While not as common, denominations of BTC such as mBTC ("millibitcoins"), μBTC ("bits") are also sometimes used, as well as millisatoshi (msat) in the Lightning network. The unicode symbol ₿, formalized in June 2017, can also be used to represent BTC or bitcoin, but few typefaces support at the time of this writing. The chart below illustrates how each unit relates to the bitcoin unit.
 
 | Unit         | Symbol       | Bitcoin value     |
 | ------------ | ------------ | ----------------- |
@@ -84,11 +85,15 @@ For more information, see the Bitcoin Wiki:
 - [Units](https://en.bitcoin.it/wiki/Units)
 - [Satoshi](https://en.bitcoin.it/wiki/Satoshi_(unit))
 
-#### Recommended Interaction
+#### Recommended interaction
 
-When displaying bitcoin values, the default unit should be bitcoin with 8 decimal places. However, due to the challenging nature of scanning a monetary value with more than 2 decimal places, the user should be given the option to choose their preferred bitcoin display across the application (for example, in the settings section) as well as contextually, whenever the value is primarily displayed.
+When displaying bitcoin values, the default unit for on-chain wallets should be bitcoin with 8 decimal places, and satosho for Lightning wallets. Due to the challenging nature of scanning a monetary value with more than 2 decimal places, the user should be given the option to choose their preferred format across the application (for example, in the settings section) as well as contextually, whenever the value is primarily displayed.
+
+Product teams can choose a different approaches based on their audience and targeted use case. Wallets for daily spending may be better served by defaulting to satoshi due to the low amounts involved, while the opposite can be true for savings-focused applications.
 
 ###### Setting the preferred unit
+
+Applications should try to establish smart defaults that work for the majority of users, while offering convenient ways to customize settings.
 
 {% include image-gallery.html pages = page.images_app %}
 
@@ -100,7 +105,14 @@ User should always be able to change unit contextually. Additionally, for the va
 
 #### Formatting units
 
-There are many different ways of formatting currency units across the world, and Bitcoin applications should be sensitive to these standards. A simple example are digit group and decimal separators, so based on where you live, you may prefer to write `10 000,00`, `10.000,00`, or `10,000.00`. For more information, see Wikipedia:
+There are many different ways of formatting numbers and currency units across the world, and Bitcoin applications should be sensitive to these standards. A simple example are digit group and decimal separators. Based on where you live you may be accustomed to one of these formatting standards:
+- `10 000,00`
+- `10.000,00`
+- `10,000.00`
+- `10'000,00`
+- `10,000·00`
+
+For more examples and information, see Wikipedia:
 
 - [Currency symbol](https://en.wikipedia.org/wiki/Currency_symbol)
 - [Unit prefix](https://en.wikipedia.org/wiki/Unit_prefix)
