@@ -142,7 +142,7 @@ article.guide {
       flex-direction: column;
       align-content: flex-start;
       justify-content: flex-start;
-      align-items: flex-start;
+      //align-items: flex-start;
     }
 
     @include media-query(medium-down) {

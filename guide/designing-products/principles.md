@@ -6,7 +6,7 @@ nav_order: 3
 parent: Designing Bitcoin products
 permalink: /guide/designing-products/principles/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/designing-products/principles/principles-preview.jpg
+image: https://bitcoin.design/assets/images/guide/designing-products/principles/principles-preview.png
 ---
 
 <!--
@@ -20,10 +20,10 @@ Artwork Source: https://www.figma.com/file/xQ5eWVSOLbNGLmcls3qz7d/Principles?nod
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/designing-products/principles/principles.jpg"
-   retina = "/assets/images/guide/designing-products/principles/principles@2x.jpg"
-   mobile = "/assets/images/guide/designing-products/principles/principles-mobile.jpg"
-   mobileRetina = "/assets/images/guide/designing-products/principles/principles-mobile@2x.jpg"
+   image = "/assets/images/guide/designing-products/principles/principles.png"
+   retina = "/assets/images/guide/designing-products/principles/principles@2x.png"
+   mobile = "/assets/images/guide/designing-products/principles/principles-mobile.png"
+   mobileRetina = "/assets/images/guide/designing-products/principles/principles-mobile@2x.png"
    alt-text = "Principles header illustration, five white circles in a horizontal line on black background"
    width = 1600
    height = 600
@@ -54,7 +54,7 @@ These are principles we in the Bitcoin Design Community identified and stand beh
 
 ## Self-custody
 
-<div class="center flex" markdown="1">
+<div class="center flex principle" markdown="1">
 
 {% include image.html
 image = "/assets/images/guide/designing-products/principles/principle-self-custody.png"
@@ -65,7 +65,7 @@ height = 150
 layout="float-left"
 %}
 
-> Let users control their private keys, with no risk for seizure or freezing of funds
+### Let users control their private keys, with no risk for seizure or freezing of funds
 
 </div>
 
@@ -85,7 +85,7 @@ Our existing mental models of access to digital services are usernames and passw
 
 ## Security
 
-<div class="center flex" markdown="1">
+<div class="center flex principle" markdown="1">
 
 {% include image.html
 image = "/assets/images/guide/designing-products/principles/principle-security.png"
@@ -96,7 +96,7 @@ height = 150
 layout="float-left"
 %}
 
-> Provide appropriate and progressive security for all types of users
+### Provide appropriate and progressive security for all types of users
 
 </div>
 
@@ -130,7 +130,7 @@ Security can also be a feeling. A polished, good-looking, easy-to-use product th
 
 ## Inclusion
 
-<div class="center flex" markdown="1">
+<div class="center flex principle" markdown="1">
 
 {% include image.html
 image = "/assets/images/guide/designing-products/principles/principle-inclusion.png"
@@ -141,7 +141,7 @@ height = 150
 layout="float-left"
 %}
 
-> Build borderless products without location, language or social barriers
+### Build borderless products without location, language or social barriers
 
 </div>
 
@@ -168,7 +168,7 @@ While Bitcoin is already used by a large number of people, it pales in compariso
 
 ## Interoperability
 
-<div class="center flex" markdown="1">
+<div class="center flex principle" markdown="1">
 
 {% include image.html
 image = "/assets/images/guide/designing-products/principles/principle-interoperability.png"
@@ -179,7 +179,7 @@ height = 150
 layout="float-left"
 %}
 
-> Enable import and export of wallets, maximise backwards compatibility and use of open standards
+### Enable import and export of wallets, maximise backwards compatibility and use of open standards
 
 </div>
 
@@ -201,7 +201,7 @@ Bitcoin is an open-source protocol, operating in a decentralized manner. This ha
 
 ## Transparency
 
-<div class="center flex" markdown="1">
+<div class="center flex principle" markdown="1">
 
 {% include image.html
 image = "/assets/images/guide/designing-products/principles/principle-transparency.png"
@@ -212,7 +212,7 @@ height = 150
 layout="float-left"
 %}
 
-> Be open and transparent with how your product works, open-source your code when possible
+### Be open and transparent with how your product works, open-source your code when possible
 
 </div>
 
@@ -230,7 +230,7 @@ While an open and decentralized financial system that users can connect with dir
 
 ## Privacy
 
-<div class="center flex" markdown="1">
+<div class="center flex principle" markdown="1">
 
 {% include image.html
 image = "/assets/images/guide/designing-products/principles/principle-privacy.png"
@@ -241,7 +241,7 @@ height = 150
 layout="float-left"
 %}
 
-> Minimize collection of personal information, and maximize financial transaction privacy
+### Minimize collection of personal information, and maximize financial transaction privacy
 
 </div>
 
@@ -261,7 +261,7 @@ The Bitcoin network doesn’t need to know your name for you to use it. Strive t
 
 ## Decentralization
 
-<div class="center flex" markdown="1">
+<div class="center flex principle" markdown="1">
 
 {% include image.html
 image = "/assets/images/guide/designing-products/principles/principle-decentralization.png"
@@ -272,7 +272,7 @@ height = 150
 layout="float-left"
 %}
 
-> Design products that encourage people to run a full Bitcoin node
+### Design products that encourage people to run a full Bitcoin node
 
 </div>
 
