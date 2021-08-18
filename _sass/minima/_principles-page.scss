@@ -1,0 +1,21 @@
+article.guide {
+  .principle {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    align-items: center;
+
+    figure {
+      margin-bottom: 20px;
+
+      @include media-query(medium-up) {
+        margin-bottom: 0;
+      }
+    }
+
+    h3 {
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
