@@ -22,6 +22,7 @@ Photoshop. The Dropbox link contains the AI and PSD files.
 
 - https://www.dropbox.com/sh/z5qnj2rna7rclae/AAB0dOuiJ3OmJuk7ZXkpbz5ua?dl=0\
 - https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=1329%3A564
+- https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=3%3A471
 
 -->
 
@@ -127,9 +128,10 @@ Applications sometimes also allow the sender to select fractions of their total 
 {% include image.html
    image = "/assets/images/guide/payments/send/select-fee-rate.png"
    retina = "/assets/images/guide/payments/send/select-fee-rate@2x.png"
-   alt-text = "Fee selection component with high, medium, low urgency options"
+   alt-text = "Fee selection component with urgent, normal, and not urgent options"
    width = 400
-   height = 400
+   height = 470
+   caption = "G = Haitian Gourde, the local currency of Haiti."
    layout = "float-right-desktop"
 %}
 
