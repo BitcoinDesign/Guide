@@ -69,7 +69,7 @@ Bitcoin, bits, sats. The format and presentation of bitcoin values are probably 
 
 #### Current adoption
 
-The most common way bitcoin is expressed is as BTC (bitcoin) or sat (satoshi), with 1 bitcoin being 100 000 000 satoshi. While not as common, denominations of BTC such as mBTC ("millibitcoins"), μBTC ("bits") are also sometimes used, as well as millisatoshi (msat) in the Lightning network. The unicode symbol ₿, formalized in June 2017, can also be used to represent BTC or bitcoin, but few typefaces support at the time of this writing. The chart below illustrates how each unit relates to the bitcoin unit.
+The most common way bitcoin is expressed is as BTC (bitcoin) or sat (satoshi), with 1 bitcoin being 100 million satoshi. The unicode symbol ₿, formalized in June 2017, is also used to represent BTC (bitcoin), but typeface support is still limited. While not as common, other denominations of BTC such as mBTC (millibitcoins), μBTC (bits) are sometimes used, as well as msat (millisatoshi) in the Lightning network. The chart below illustrates how each unit relates to the bitcoin unit.
 
 | Unit         | Symbol       | Bitcoin value     |
 | ------------ | ------------ | ----------------- |
