@@ -22,7 +22,7 @@ main_classes: -no-top-padding
 
 # Coin selection
 
-Coin selection is the process of choosing which [UTXOs](https://bitcoin.design/guide/glossary/#unspent-transaction-output-utxo) (or “coins”) to fund a Bitcoin transaction with (inputs[^1]) when making an on-chain payment. Since a wallet contains multiple coins to arrive at a balance, these are retrieved by an algorithm to fulfill the payment amount for outgoing transactions.
+Coin selection is the process of choosing which [UTXOs](https://bitcoin.design/guide/glossary/#unspent-transaction-output-utxo) (or “coins”) to fund a Bitcoin transaction with inputs when making an on-chain payment. Since a wallet contains multiple coins to arrive at a balance, these are retrieved by an algorithm to fulfill the payment amount for outgoing transactions.
 
 There are two types of coin selection strategies that are used in Bitcoin applications:
 1. [**Automatic Coin Selection**](#automatic-coin-selection) (wallet is delegated to control coin selection on behalf of user)
@@ -301,8 +301,3 @@ A user chooses to send a payment to one of their contacts. They enter the amount
 {% include fact/products.html %}
 [Bitcoin Core](https://bitcoincore.org), [BTCPay Server](https://btcpayserver.org), [Chaincase](https://chaincase.app), [Samourai](https://samouraiwallet.com), and [Wasabi](https://wasabiwallet.io)
 {% include fact/close.html %}
-
-[^1]: https://coincentral.com/what-is-coin-selection-and-why-does-it-matter/
-[^2]: https://www.investopedia.com/terms/u/utxo.asp
-[^3]: https://support.ledger.com/hc/en-us/articles/360015996580-Using-Coin-control#:~:text=Before%20this%20new%20feature%2C%20all,to%20fulfill%20the%20transaction%20amount.
-[^4]: https://www.reddit.com/r/WasabiWallet/comments/eb1zzo/the_importance_of_good_labels/
