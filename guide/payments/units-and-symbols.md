@@ -66,7 +66,6 @@ https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=
 
 Bitcoin, bits, sats. The format and presentation of bitcoin values are probably amongst the most challenging for new users. While there are no official standards for how they should be used, a good way to achieve converging user experiences is to formalize what is widely used today.
 
-Despite the challenge of the fractional aspect and the abundance of digits used to present the value of bitcoin, the intent is to serve as a guide to format the values so they can easily be scanned, quick to read, and intuitive to remember.
 
 #### Current adoption
 
