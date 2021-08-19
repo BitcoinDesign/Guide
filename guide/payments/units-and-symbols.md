@@ -104,7 +104,7 @@ User should always be able to change unit contextually. Additionally, for the va
 
 #### Formatting units
 
-There are many different ways of formatting numbers and currency units across the world, and Bitcoin applications should be sensitive to these standards. A simple example are digit group and decimal separators. Based on where you live you may be accustomed to one of these formatting standards:
+There are many different ways of formatting numbers and currency units across the world. Bitcoin applications should be sensitive to these standards by adapting the formatting to the user's locale. A simple example are digit group and decimal separators. Based on where you live you may be accustomed to one of these formatting standards, but be less comfortable with the others:
 - `10 000,00`
 - `10.000,00`
 - `10,000.00`
