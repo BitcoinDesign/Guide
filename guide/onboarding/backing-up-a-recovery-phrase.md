@@ -29,7 +29,7 @@ Illustration sources
    mobileRetina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase-mobile@2x.png"
    alt-text = "Backing up a recovery phrase chapter header image"
    width = 1600
-   height = 540
+   height = 600
    layout = "full-width"
 %}
 
@@ -43,7 +43,7 @@ When a user generates a new wallet, it creates something called a recovery phras
    image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/copy-recovery-phrase.png"
    retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/copy-recovery-phrase@2x.png"
    width = 250
-   height = 460
+   height = 540
    alt-text = "Recovery phrase mobile interface"
    caption = "Typical recovery phrase UI from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=649%3A760)"
    layout = "float-left-desktop -background -shadow"
