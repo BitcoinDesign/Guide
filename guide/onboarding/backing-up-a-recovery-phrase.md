@@ -43,7 +43,7 @@ When a user generates a new wallet, it creates something called a recovery phras
    image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/copy-recovery-phrase.png"
    retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/copy-recovery-phrase@2x.png"
    width = 250
-   height = 448
+   height = 541
    alt-text = "Recovery phrase mobile interface"
    caption = "Typical recovery phrase UI from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=649%3A760)"
    layout = "float-left-desktop -background -shadow"
