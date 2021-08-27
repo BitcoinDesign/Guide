@@ -96,7 +96,7 @@ While [plug-and-play hardware nodes]({{ '/guide/glossary/node/#hardware-node' | 
 
 ## Miners
 
-Since Bitcoins inception a multi-billion dollar industry has emerged around the mining of new bitcoins. Today, dedicated hardware (so-called ASICS, or application-specific integrated circuits) are optimized for continuously executing the Bitcoin hashing algorithm (called [SHA-256](https://en.wikipedia.org/wiki/SHA-2){:target="_blank"}) over and over until an acceptable hash is found. A modern miner (in 2020) can generate around 14,000,000,000,000 hashes per second. The more hashes generated, the higher that miner’s chance of “finding” a new block and receiving newly minted bitcoin as a reward.
+Since Bitcoin's inception a multi-billion dollar industry has emerged around the mining of new bitcoins. Today, dedicated hardware (so-called ASICS, or application-specific integrated circuits) are optimized for continuously executing the Bitcoin hashing algorithm (called [SHA-256](https://en.wikipedia.org/wiki/SHA-2){:target="_blank"}) over and over until an acceptable hash is found. A modern miner (in 2020) can generate around 14,000,000,000,000 hashes per second. The more hashes generated, the higher that miner’s chance of “finding” a new block and receiving newly minted bitcoin as a reward.
 
 {% include picture.html
    image = "/assets/images/guide/getting-started/hardware/mining-hardware.jpg"
