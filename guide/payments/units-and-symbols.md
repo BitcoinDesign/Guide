@@ -74,7 +74,7 @@ The most common way bitcoin is expressed is as BTC (bitcoin) or sat (satoshi), w
 | Unit         | Symbol       | Bitcoin value     |
 | ------------ | ------------ | ----------------- |
 | bitcoin      | BTC or ₿     | 1                 |
-| millibit     | mBTC         | 0.00 100 000      |
+| millibit     | mBTC         | 0.001             |
 | bit          | μBTC         | 0.000 001         |
 | satoshi      | sat          | 0.000 000 01      |
 | millisatoshi | msat         | 0.000 000 000 01  |
