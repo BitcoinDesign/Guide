@@ -10,6 +10,18 @@ main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase-preview.png
 ---
 
+<!--
+
+Editor's notes
+
+This chapter covers backing up a recovery phrase during user onboarding.
+
+Illustration sources
+
+- https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=0%3A1
+
+-->
+
 {% include picture.html
    image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase.png"
    retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase@2x.png"
@@ -31,7 +43,7 @@ When a user generates a new wallet, it creates something called a recovery phras
    image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/copy-recovery-phrase.png"
    retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/copy-recovery-phrase@2x.png"
    width = 250
-   height = 460
+   height = 541
    alt-text = "Recovery phrase mobile interface"
    caption = "Typical recovery phrase UI from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=649%3A760)"
    layout = "float-left-desktop -background -shadow"
@@ -52,6 +64,8 @@ Recent [studies](https://voskart.de/pdf/bits_under_mattress.pdf) show users are 
 In the [private key management]({{ 'guide/private-key-management/introduction/' | relative_url }}) chapter, we recommend using an automatic cloud backup for newer users. Users can simply press a button to have their recovery phrase backed up to the cloud without having to physically write down and store it. On top of this, the onboarding process is then sped up and less cumbersome. This type of gateway gives a beginner security without overwhelming them with unfamiliar onboarding actions.
 
 However, there may be times when it is necessary to use a manual backup alternative, as it can be low tech and easily accessible.
+
+---
 
 The next sections will look at some UI considerations for [automatic cloud backups]({{ '/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup' | relative_url }}) and [manual backups]({{ 'guide/onboarding/backing-up-a-recovery-phrase/manual-backup/' | relative_url }}).
 

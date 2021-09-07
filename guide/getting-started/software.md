@@ -36,11 +36,11 @@ Illustration sources
 
 # Software overview
 
-Finance is complex, and there are many use cases, from giving weekly allowance to a child and selling goods in a store to managing multi-billion dollar retirement funds and hectic day trading. So we end up with many different application solutions for the various use cases. Bitcoin being a global currency adds another layer of complexity as the software may need to be adapted to different languages, cultures, and legal frameworks. When designing, it's a good idea to feel for this landscape and know where your product fits. Here is an overview of several common and specialized categories.
+The unique history and architecture of Bitcoin has resulted in a few distinct categories of software, with each one serving a distinct purpose. Provided below is an overview of standard and specialized application categories.
 
 ## Command-line interfaces (CLI)
 
-Primarily used by developers, command-line interfaces typically offer the most feature-rich options to interact with blockchains. They can be thought of as general-purpose toolboxes, so they require certain technical knowledge and are not optimized for specific use cases. New features are often first included in a CLI and then later added to graphical user interfaces (GUI).
+Primarily used by developers, Bitcoin CLIs offer feature-rich ways to interact with Bitcoin. They can be thought of as general-purpose toolboxes, so they require certain technical knowledge and are not optimized for specific use cases. New features are often first included in a CLI and then later added to graphical user interfaces (GUI).
 
 {% include image.html
    image = "/assets/images/guide/getting-started/software/cli-example.jpg"
@@ -65,11 +65,11 @@ Primarily used by developers, command-line interfaces typically offer the most f
    layout = "float-right-desktop"
 %}
 
-If a blockchain can be thought of as a public database, then explorers are simply windows into that database. They typically display the data structure and maybe offer some basic functionality like looking up specific transactions to verify that they were processed.
+If blockchain is a public database, block explorers are simply windows into that database. They let users view data about specific transactions, latest blocks, block height, and so on.
+
+Explorers also provide insight into bigger picture activity on the Bitcoin network, such as daily transaction numbers. For example, there are typically fewer transactions on weekends, which results in lower fees, which are ideal for low-priority transactions.
 
 </div>
-
-Explorers often also provide insight into activity on the bitcoin network, like the number of daily transactions. While not essential, it can be helpful to understand this activity as it may affect design decisions. For example, there are typically fewer transactions on weekends. This results in lower fees, which is ideal for low-priority transactions.
 
 ## Wallets
 
@@ -85,15 +85,15 @@ Explorers often also provide insight into activity on the bitcoin network, like 
    layout = "float-right-desktop"
 %}
 
-Wallet provide easy-to-use graphical interfaces for a wide audience. Wallets many times don't offer all functionality that can be found in a CLI, but instead focus on general use cases like making payments and browsing transactions.
+Wallets are perhaps the most important Bitcoin applications. They provide easy-to-use graphical user interfaces (GUIs) designed for broad audiences that let bitcoin owners send, receive, store and manage their coins. Wallet GUIs don’t offer the full functionality of a CLI but instead focus on general use cases like making payments and browsing transactions.
 
-Due to the nature of open-source, wallets can be developed by anyone with the technical knowledge, and many code libraries are available to simplify this task.
+Due to Bitcoin’s open-source nature, anyone with the technical skills can develop a Bitcoin wallet. Many code libraries are available to simplify this task.
 
-Features can vary by application but always include wallet setup, viewing balances and transactions, and sending and receiving bitcoin. The range of additional features wallets may support is broad, from security and privacy to transaction management, currency exchange, accounting, and interoperability to accessibility and localization. Which features to include should be based on the specific use cases and user needs of your product.
+Wallet features vary by application but always include wallet setup, balance and transaction records, and the ability to send and receive bitcoin. The full range of features that wallets may support is broad and includes security and privacy options, currency exchange features, accounting tools, interoperability, accessibility, and localization options. The features you include should be based on the needs of your users.
 
-Some of these features come with highly complex technical challenges and can be executed in different ways. Reliance on third-party service is always a sensitive topic for bitcoin applications, as a high level of trust is required. This can also sometimes be an underlying reason why a wallet may or may not support specific features or implement a feature in a specific manner.
+Some of these features come with highly complex technical challenges. One of which is reliance on third-party services, a sensitive topic for bitcoin applications since they require a high level of trust. Wallets may not support specific features or implement a component in a particular manner for this reason.
 
-Another reason is that standards are still evolving as some of the technology is still maturing. Even fundamental aspects like address formats and how keys are generated can be implemented in incompatible ways.
+Another reason is that standards continue to evolve as Bitcoin matures. Even fundamental aspects of Bitcoin like address formats and key generation are implementable in incompatible ways.
 
 </div>
 
@@ -111,7 +111,7 @@ Another reason is that standards are still evolving as some of the technology is
    layout = "float-right-desktop"
 %}
 
-Making purchases with bitcoin is great, as long as we have stores to buy things from. Payment processing applications offer easy-to-use online stores and point-of-sale experiences, paired with more complex feature sets for merchants to manage their inventory, accounting, shipping, and integrations with other services.
+Payment processing applications offer easy-to-use online stores and point-of-sale (POS) experiences paired with complex feature sets for merchants to manage their inventories, track their accounts, quickly ship products, and integrate with other services.
 
 </div>
 
@@ -119,7 +119,8 @@ Making purchases with bitcoin is great, as long as we have stores to buy things 
 
 <div class="center" markdown="1">
 
-Exchanges allow for swapping between currencies and usually fall in three general categories. Consumer-focused exchanges allow for users to make trades directly with the exchange. This is ideal for occasional use.
+Exchanges lets users swap between currencies and typically fall in three general categories. Consumer-focused exchanges let users make trades directly with the exchange. This is ideal for occasional use.
+
 
 {% include image.html
    image = "/assets/images/guide/getting-started/software/exchange-example.jpg"
@@ -131,9 +132,9 @@ Exchanges allow for swapping between currencies and usually fall in three genera
    layout = "float-right-desktop"
 %}
 
-Exchanges focused on investors and traders are marketplaces that typically list many different cryptocurrencies and allow users trade with each other by to submit buy and sell requests on currency pairs. These products are usually for  experienced, regular users and filled with endless ways to analyze price movements and complex trading features.
+Exchanges focused on investors and traders usually list many different cryptocurrencies. They allow users to trade with each other by submitting buy and sell requests on currency pairs. These products are generally for experienced users. They offer complex trading features and countless ways to analyze price movements.
 
-In between these first two categories fall decentralized exchanges. They may be focused on occasional use or trading, but are always based on an open marketplace without a central authority.
+Decentralized exchanges fall in between these categories, focusing on occasional use or trading, but are, as their name implies, based on an open marketplace without a central authority.
 
 </div>
 
@@ -151,8 +152,7 @@ In between these first two categories fall decentralized exchanges. They may be 
    layout = "float-right-desktop"
 %}
 
-A node connects to and participates in the bitcoin network to download and exchange transaction data. Some wallets have built-in nodes and some node software also supports wallet functionality. The minimum implementation of a node however is that of syncing data and allowing other software a user has to access it.
-
+A [node]({{ '/guide/glossary/node/' | relative_url }}) is simply a computer running a Bitcoin software. Nodes verify transaction data on the Bitcoin blockchain and ensure the Bitcoin rules are being followed by network participants. Some wallets have built-in nodes, and some node software comes packaged with wallet functionality. However, the minimum implementation of a node is syncing data and allowing other software a user has to access it.
 </div>
 
 ## Mining
