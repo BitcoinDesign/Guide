@@ -55,9 +55,9 @@ https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=
    retina = "/assets/images/guide/payments/units-and-symbols/units-and-symbols@2x.png"
    mobile = "/assets/images/guide/payments/units-and-symbols/units-and-symbols-mobile.png"
    mobileRetina = "/assets/images/guide/payments/units-and-symbols/units-and-symbols-mobile@2x.png"
-   alt-text = "Bitcoin value with annotations for parts of the number display."
+   alt-text = "The amount 1,027 bitcoin in large letters."
    width = 1600
-   height = 700
+   height = 600
    layout = "full-width"
 %}
 
