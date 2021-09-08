@@ -95,7 +95,7 @@ Product teams can choose an approach based on their audience and targeted use ca
 
 ### Setting the preferred unit
 
-Applications should try to establish smart defaults that work for the majority of users, while offering convenient ways to customize settings.
+Applications should try to establish smart defaults that work for most users while offering convenient ways to customize settings.
 
 {% include image-gallery.html pages = page.images_app %}
 
