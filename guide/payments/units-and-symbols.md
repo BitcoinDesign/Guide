@@ -68,7 +68,7 @@ Bitcoin, bits, sats. The format and presentation of bitcoin values are probably 
 
 ## Current adoption
 
-The most common way bitcoin is expressed is as BTC (bitcoin) or sat (satoshi), with 1 bitcoin being 100 million satoshi. The unicode symbol ₿, formalized in June 2017, is also used to represent BTC (bitcoin), but typeface support is still limited. While not as common, other denominations of BTC such as mBTC (millibitcoins), μBTC (bits) are sometimes used, as well as msat (millisatoshi) in the Lightning network. The chart below illustrates how each unit relates to the bitcoin unit.
+The most common way bitcoin is expressed is as BTC (bitcoin) or sat (satoshi), with 1 bitcoin being 100 million satoshi. The unicode symbol ₿, formalized in June 2017, is also used to represent BTC (bitcoin), but typeface support is still limited. While not as common, other denominations of BTC such as mBTC (millibitcoins), μBTC (bits), as well as msat (millisatoshi) in the Lightning network are sometimes used. The chart below illustrates how each unit relates to the bitcoin unit.
 
 | Unit         | Symbol       | Bitcoin value     |
 | ------------ | ------------ | ----------------- |
@@ -85,7 +85,7 @@ For more information, see the Bitcoin Wiki:
 
 ## Recommended interaction
 
-When displaying bitcoin values, the default unit for on-chain wallets should be bitcoin with 8 decimal places, and satosho for Lightning wallets. Due to the challenging nature of scanning a monetary value with more than 2 decimal places, the user should be given the option to choose their preferred format across the application (for example, in the settings section) as well as contextually, whenever the value is primarily displayed.
+When displaying bitcoin values, the default unit for on-chain wallets should be bitcoin with 8 decimal places, and satoshi for Lightning wallets. Due to the challenging nature of scanning amounts with more than 2 decimal places, the user should be given the option to choose their preferred format across the application (for example, in the application's settings) as well as contextually, whenever the value is primarily displayed.
 
 Product teams can choose an approach based on their audience and targeted use case. Lightning wallets for daily spending may be better served by defaulting to satoshi due to the low amounts involved, while bitcoin can be used for savings-focused applications.
 
