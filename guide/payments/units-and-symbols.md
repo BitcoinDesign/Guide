@@ -67,7 +67,7 @@ Content images
 
 # Units and symbols
 
-Bitcoin, bits, sats. The format and presentation of bitcoin values are probably amongst the most challenging for new users. While there are no official standards for how they should be used, a good way to achieve converging user experiences is to formalize what is widely used today.
+Bitcoin, bits, sats. The format and presentation of bitcoin values are probably amongst the most challenging for application builders. While there are no official standards for how they should be used, a good way to achieve converging user experiences is to formalize what is widely used today.
 
 
 ## Current adoption
