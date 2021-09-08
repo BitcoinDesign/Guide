@@ -148,11 +148,11 @@ There is no perfect solution to guarantee 100% privacy that lasts forever becaus
 
 ---
 
-Next, let's look at some interesting [case studies]({{ '/guide/case-studies/' | relative_url }}).
+Next, let's look at [units & symbols]({{ '/guide/payments/units-and-symbols/' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/payments/receive"
    previousName = "Receiving bitcoin"
-   nextUrl = "/guide/case-studies/"
-   nextName = "Case studies"
+   nextUrl = "/guide/payments/units-and-symbols/"
+   nextName = "Units & Symbols"
 %}
