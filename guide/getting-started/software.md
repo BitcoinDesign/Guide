@@ -153,7 +153,11 @@ Decentralized exchanges fall in between these categories, focusing on occasional
    layout = "float-right-desktop"
 %}
 
-A [node]({{ '/guide/glossary/node/' | relative_url }}) is simply a computer running a Bitcoin software. Nodes verify transaction data on the Bitcoin blockchain and ensure the Bitcoin rules are being followed by network participants. Some wallets have built-in nodes, and some node software comes packaged with wallet functionality. However, the minimum implementation of a node is syncing data and allowing other software a user has to access it.
+A Bitcoin [node]({{ '/guide/glossary/node/' | relative_url }}) is simply a computer running software, like [Bitcoin Core]({{ '/guide/glossary/#bitcoin-core-client'}}) connecting in to the Bitcoin network. Nodes verify transaction data on the Bitcoin blockchain and ensure the Bitcoin rules are being followed by network participants. Some wallets have built-in nodes, and some node software comes packaged with wallet functionality. However, the minimum implementation of a Bitcoin node is syncing data and allowing other software a user has to access it.
+
+A Lightning node is a device running software connecting it to the Lightning network, which extends Bitcoin with payment channels to improve transaction speed and lower costs. It is becoming widely adopted and accepted as the preferred way to scale Bitcoin.
+It’s common to use node management software. This simplifies the setup, management and monitoring of nodes by providing graphical user interfaces to interact with the lower level node software instead of CLIs.
+
 </div>
 
 ## Mining
