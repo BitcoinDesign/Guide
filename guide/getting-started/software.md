@@ -18,7 +18,7 @@ could be to create sub-pages for each category to discusss it in more detail.
 
 Illustration sources
 
-- https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=148%3A174
+- https://www.figma.com/file/JxAYVV6pkXLvh60I62RQ6o/BDG-Software-overview-illustrations?node-id=1%3A2
 
 -->
 
