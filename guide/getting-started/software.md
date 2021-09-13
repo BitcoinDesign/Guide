@@ -120,7 +120,7 @@ Payment processing applications offer easy-to-use online stores and point-of-sal
 
 <div class="center" markdown="1">
 
-Exchanges lets users swap between currencies and typically fall in three general categories. Consumer-focused exchanges let users make trades directly with the exchange. This is ideal for occasional use.
+Exchanges let users swap between currencies and networks (for example USD to bitcoin, or from the base layer to the Lightning network. They typically fall in three general categories. Consumer-focused exchanges let users make trades directly with the exchange. This is ideal for occasional use.
 
 
 {% include image.html
