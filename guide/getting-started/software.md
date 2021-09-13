@@ -40,7 +40,7 @@ The unique history and architecture of Bitcoin has resulted in several categorie
 
 ## Command-line interfaces (CLI)
 
-Primarily used by developers, Bitcoin CLIs offer feature-rich ways to interact with Bitcoin. They can be thought of as general-purpose toolboxes, so they require certain technical knowledge and are not optimized for specific use cases. New features are often first included in a CLI and then later added to graphical user interfaces (GUI).
+Primarily used by developers, CLIs offer feature-rich ways to interact with nodes and other Bitcoin software. They can be thought of as general-purpose toolboxes, so they require certain technical knowledge and are not optimized for specific use cases. New features are often first included in a CLI and then later added to graphical user interfaces (GUI).
 
 {% include image.html
    image = "/assets/images/guide/getting-started/software/cli-example.jpg"
