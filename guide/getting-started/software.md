@@ -36,7 +36,7 @@ Illustration sources
 
 # Software overview
 
-The unique history and architecture of Bitcoin has resulted in a few distinct categories of software, with each one serving a distinct purpose. Provided below is an overview of standard and specialized application categories.
+The unique history and architecture of Bitcoin has resulted in several categories of software, with each one serving a distinct purpose. Provided below is an overview of standard and specialized application categories.
 
 ## Command-line interfaces (CLI)
 
