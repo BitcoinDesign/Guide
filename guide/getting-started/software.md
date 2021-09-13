@@ -53,25 +53,20 @@ Primarily used by developers, CLIs offer feature-rich ways to interact with node
 
 ## Explorers
 
-<div class="center" markdown="1">
-
-{% include image.html
-   image = "/assets/images/guide/getting-started/software/explorer-example.jpg"
-   retina = "/assets/images/guide/getting-started/software/explorer-example@2x.jpg"
-   alt-text = "Illustrative interface for block explorer software"
-   caption = 'Explorers offer insight into activiy on the Bitcoin and Lightning networks. Texture by [Mike van den Bos](https://unsplash.com/@mike_van_den_bos){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
-   width = 400
-   height = 388
-   layout = "float-right-desktop"
-%}
-
 If the blockchain is a public database, explorers are simply windows into that database.
 
 For Bitcoin, so-called block explorers let users view data about specific transactions, latest blocks, block height, and so on. They also provide insight into bigger picture activity on the Bitcoin network, such as daily transaction numbers. For example, there are typically fewer transactions on weekends, which results in lower fees, which are ideal for low-priority transactions.
 
 As transactions in Lightning payment channels are not recorded on the blockchain, there are also Lightning network explorers. These let you see public information about the network, such as channel count, capacity and status. Only participant nodes can look up specific transaction information in a channel.
 
-</div>
+{% include image.html
+   image = "/assets/images/guide/getting-started/software/explorer-example.jpg"
+   retina = "/assets/images/guide/getting-started/software/explorer-example@2x.jpg"
+   alt-text = "Illustrative interface for block explorer software"
+   caption = 'Explorers offer insight into activiy on the Bitcoin and Lightning networks. Texture by [Mike van den Bos](https://unsplash.com/@mike_van_den_bos){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
+   width = 800
+   height = 388
+%}
 
 ## Wallets
 
