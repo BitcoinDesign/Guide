@@ -106,7 +106,7 @@ The features you include should be based on the needs of your users. Try to maxi
    image = "/assets/images/guide/getting-started/software/point-of-sale-example.jpg"
    retina = "/assets/images/guide/getting-started/software/point-of-sale-example@2x.jpg"
    alt-text = "Illustrative interface for an online shop"
-   caption = 'Payment processors help merchants to sell good and manage inventory and accounting. Texture by [Majid Gheidarlou](https://unsplash.com/@majidvj){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
+   caption = 'Payment processors help merchants to sell goods and manage inventory and accounting. Texture by [Majid Gheidarlou](https://unsplash.com/@majidvj){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
    width = 400
    height = 541
    layout = "float-right-desktop"
