@@ -169,8 +169,6 @@ Primarily used by developers, CLIs offer feature-rich ways to interact with node
    layout = "float-right-desktop"
 %}
 
-Bitcoin mining is the act of confirming the next block in the blockchain by being the first to solve a computationally intense math problem. The successful miner receives a block reward and the fees for the transactions contained in the new block in bitcoin.
-
 Mining has become primarily a professional undertaking with dedicated software to manage racks of mining hardware. However, some wallets still offer mining features, and there are also cloud mining providers that allow customers to rent mining capacity.
 
 For the Lightning network, transaction confirmation by mining is only required when opening or closing a channel. Instead, node operators are incentivized to maintain payment channels with sufficient liquidity to other nodes by the option to charge a small fee for allowing payments to be routed through them when no direct channel exists between sender and receiver.
