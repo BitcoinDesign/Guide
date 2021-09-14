@@ -67,7 +67,7 @@ Due to Bitcoin’s open-source nature, anyone with the technical skills can deve
 
 <div class="center" markdown="1">
 
-Exchanges let users swap between currencies and networks (for example USD to bitcoin, or from the base layer to the Lightning network. They typically fall in three general categories. Consumer-focused exchanges let users make trades directly with the exchange. This is ideal for occasional use.
+Exchanges let users swap between currencies and networks (for example USD to bitcoin, or from the base layer to the Lightning network). They typically fall in three general categories. Consumer-focused exchanges let users make trades directly with the exchange. This is ideal for occasional use.
 
 
 {% include image.html
