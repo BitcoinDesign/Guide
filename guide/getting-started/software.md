@@ -98,7 +98,7 @@ As transactions in Lightning payment channels are not recorded on the blockchain
    image = "/assets/images/guide/getting-started/software/explorer-example.jpg"
    retina = "/assets/images/guide/getting-started/software/explorer-example@2x.jpg"
    alt-text = "Illustrative interface for block explorer software"
-   caption = 'Explorers offer insight into activiy on the Bitcoin and Lightning networks. Texture by [Mike van den Bos](https://unsplash.com/@mike_van_den_bos){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
+   caption = 'Explorers offer insight into activity on the Bitcoin and Lightning networks. Texture by [Mike van den Bos](https://unsplash.com/@mike_van_den_bos){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
    width = 800
    height = 388
 %}
