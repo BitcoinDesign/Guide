@@ -52,7 +52,7 @@ The unique history and architecture of Bitcoin has resulted in several categorie
    layout = "float-right-desktop"
 %}
 
-Wallets are perhaps the most important Bitcoin applications. They provide easy-to-use graphical user interfaces (GUIs) designed for broad audiences that let bitcoin owners send, receive, store and manage their coins. Wallet GUIs don’t offer the full functionality of a CLI but instead focus on general use cases like making payments and browsing transactions.
+Wallets are perhaps the most important Bitcoin applications. They provide easy-to-use graphical user interfaces (GUIs) designed for broad audiences that let bitcoin owners send, receive, store and manage their coins.
 
 Due to Bitcoin’s open-source nature, anyone with the technical skills can develop a Bitcoin wallet. Many code libraries are available to simplify this task.
 
