@@ -135,7 +135,7 @@ Payment processing applications offer easy-to-use online stores and point-of-sal
    layout = "float-right-desktop"
 %}
 
-Bitcoin [node]({{ '/guide/glossary/node/' | relative_url }}) software connects to and participates in the Bitcoin network. [Full nodes]({{ '/guide/glossary/node/#full-nodes/' | relative_url }}) verify transaction data on the blockchain and ensure network participants are following the Bitcoin rules. A [light node]({{ '/guide/glossary/node/#light-nodes/' | relative_url }}) connects to the Bitcoin network but does not verify or enforce the rules. Some wallet software comes with built-in full node capabilities, such as [Bitcoin Core]({{ '/guide/glossary/#bitcoin-core-client/' | relative_url }}), but most wallet software act as light nodes. 
+Bitcoin [node]({{ '/guide/glossary/node/' | relative_url }}) software connects to and participates in the Bitcoin network. Nodes typically download and broadcast user transactions, and optionally help verify blockchain data more broadly. Some wallet software comes with built-in node capabilities, such as [Bitcoin Core]({{ '/guide/glossary/#bitcoin-core-client/' | relative_url }}), but most wallet software connects to external nodes. Learn more on the [Node page]({{ '/guide/glossary/node/' | relative_url }}) in the glossary.
 
 Lightning node software connects to and participates in the Lightning network, which extends Bitcoin with payment channels to increase transaction speed and lower costs. It is becoming widely adopted and accepted as the preferred way to scale Bitcoin.
 
