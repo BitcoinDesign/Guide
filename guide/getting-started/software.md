@@ -56,7 +56,7 @@ Wallets are perhaps the most important Bitcoin applications. They provide easy-t
 
 Wallet features vary by application but always include wallet setup, balance and transaction records, and the ability to send and receive bitcoin. The full range of features that wallets may support is broad and includes security and privacy options, currency exchange features, accounting tools, interoperability, accessibility, and localization options.
 
-Few wallets support the full range of features. The reasons for this can vary from; standards not being available when the wallet was first developed (newer address formats or HD wallets for example), the choice to not include anything that implies trusting a third party, or simply because it does not fit the intended use case for the software.
+Few wallets support the full range of features. The reasons for this can vary from; standards not being available when the wallet was first developed (newer [address formats]({{ '/guide/glossary/address/' | relative_url }}) or [HD wallets]({{ '/guide/glossary/wallet/#hd-wallet' | relative_url }}) for example), the choice to not include anything that implies trusting a third party, or simply because it does not fit the intended use case for the software.
 The features you include should be based on the needs of your users. Try to maximize interoperability with other Bitcoin products by supporting modern standards and emerging technologies. For example, a wallet project started today should almost certainly support the Lightning network.
 
 Due to Bitcoin’s open-source nature, anyone with the technical skills can develop a Bitcoin wallet. Many code libraries are available to simplify this task.
