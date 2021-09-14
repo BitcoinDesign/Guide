@@ -172,7 +172,7 @@ Primarily used by developers, CLIs offer feature-rich ways to interact with node
 
 Mining has become primarily a professional undertaking with dedicated software to manage racks of mining hardware. However, some wallets still offer mining features, and there are also cloud mining providers that allow customers to rent mining capacity.
 
-For the Lightning network, transaction confirmation by mining is only required when opening or closing a channel. Instead, node operators are incentivized to maintain payment channels with sufficient liquidity to other nodes by the option to charge a small fee for allowing payments to be routed through them when no direct channel exists between sender and receiver.
+Mining does not exist for transactions on the Lightning network, so there is no equivalent software. However, opening and closing payment channels on Lightning involve transactions, that need to be mined on the Bitcoin network.
 
 </div>
 
