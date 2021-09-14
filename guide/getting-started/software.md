@@ -150,7 +150,7 @@ Decentralized exchanges fall in between these categories, focusing on occasional
 
 Bitcoin [node]({{ '/guide/glossary/node/' | relative_url }}) software connects to and participates in the Bitcoin network. [Full nodes]({{ '/guide/glossary/node/#full-nodes/' | relative_url }}) verify transaction data on the blockchain and ensure the Bitcoin rules are being followed by network participants. A [light node]({{ '/guide/glossary/node/#light-nodes/' | relative_url }}) connects to the Bitcoin network but does not verify or enforce the rules. Some wallet software comes with built-in full node capabilities, such as [Bitcoin Core]({{ '/guide/glossary/#bitcoin-core-client/' | relative_url }}), but most wallet software act as light nodes. 
 
-A Lightning node is a device running software connecting it to the Lightning network, which extends Bitcoin with payment channels to improve transaction speed and lower costs. It is becoming widely adopted and accepted as the preferred way to scale Bitcoin.
+Lightning node software connects to and participates in the Lightning network, which extends Bitcoin with payment channels to increase transaction speed and lower costs. It is becoming widely adopted and accepted as the preferred way to scale Bitcoin.
 It’s common to use node management software. This simplifies the setup, management and monitoring of nodes by providing graphical user interfaces to interact with the lower level node software instead of CLIs.
 
 </div>
