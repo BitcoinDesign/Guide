@@ -38,36 +38,6 @@ Illustration sources
 
 The unique history and architecture of Bitcoin has resulted in several categories of software, with each one serving a distinct purpose. Provided below is an overview of standard and specialized application categories.
 
-## Command-line interfaces (CLI)
-
-Primarily used by developers, CLIs offer feature-rich ways to interact with nodes and other Bitcoin software. They can be thought of as general-purpose toolboxes, so they require certain technical knowledge and are not optimized for specific use cases. New features are often first included in a CLI and then later added to graphical user interfaces (GUI).
-
-{% include image.html
-   image = "/assets/images/guide/getting-started/software/cli-example.jpg"
-   retina = "/assets/images/guide/getting-started/software/cli-example@2x.jpg"
-   alt-text = "Illustrative interface of a command-line interaction"
-   caption = 'Command line interfaces are text-only. Texture by [Joel Filipe](https://unsplash.com/@joelfilip){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
-   width = 800
-   height = 350
-%}
-
-## Explorers
-
-If the blockchain is a public database, explorers are simply windows into that database.
-
-For Bitcoin, block explorers let users view transaction data, latest blocks, block height, and so on. They also provide insight into bigger picture activity on the Bitcoin network, such as daily transaction numbers. For example, there are typically fewer transactions on weekends, which results in lower fees, which are ideal for low-priority transactions.
-
-As transactions in Lightning payment channels are not recorded on the blockchain, there are also Lightning network explorers. These let you see public information about the nodes and the network, such as channel count, capacity and status. Only participant nodes can look up specific transaction information in a channel.
-
-{% include image.html
-   image = "/assets/images/guide/getting-started/software/explorer-example.jpg"
-   retina = "/assets/images/guide/getting-started/software/explorer-example@2x.jpg"
-   alt-text = "Illustrative interface for block explorer software"
-   caption = 'Explorers offer insight into activiy on the Bitcoin and Lightning networks. Texture by [Mike van den Bos](https://unsplash.com/@mike_van_den_bos){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
-   width = 800
-   height = 388
-%}
-
 ## Wallets
 
 <div class="center" markdown="1">
@@ -90,24 +60,6 @@ Wallet features vary by application but always include wallet setup, balance and
 
 Few wallets support the full range of features. The reasons for this can vary from; standards not being available when the wallet was first developed (newer address formats or HD wallets for example), the choice to not include anything that implies trusting a third party, or simply because it does not fit the intended use case for the software.
 The features you include should be based on the needs of your users. Try to maximize interoperability with other Bitcoin products by supporting modern standards and emerging technologies. For example, a wallet project started today should almost certainly support the Lightning network.
-
-</div>
-
-## Payment processors
-
-<div class="center" markdown="1">
-
-{% include image.html
-   image = "/assets/images/guide/getting-started/software/point-of-sale-example.jpg"
-   retina = "/assets/images/guide/getting-started/software/point-of-sale-example@2x.jpg"
-   alt-text = "Illustrative interface for an online shop"
-   caption = 'Payment processors help merchants to sell goods and manage inventory and accounting. Texture by [Majid Gheidarlou](https://unsplash.com/@majidvj){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
-   width = 400
-   height = 541
-   layout = "float-right-desktop"
-%}
-
-Payment processing applications offer easy-to-use online stores and point-of-sale (POS) experiences paired with complex feature sets for merchants to manage their inventories, track their accounts, quickly ship products, and integrate with other services.
 
 </div>
 
@@ -134,6 +86,41 @@ Decentralized exchanges fall in between these categories, focusing on occasional
 
 </div>
 
+## Explorers
+
+If the blockchain is a public database, explorers are simply windows into that database.
+
+For Bitcoin, block explorers let users view transaction data, latest blocks, block height, and so on. They also provide insight into bigger picture activity on the Bitcoin network, such as daily transaction numbers. For example, there are typically fewer transactions on weekends, which results in lower fees, which are ideal for low-priority transactions.
+
+As transactions in Lightning payment channels are not recorded on the blockchain, there are also Lightning network explorers. These let you see public information about the nodes and the network, such as channel count, capacity and status. Only participant nodes can look up specific transaction information in a channel.
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/software/explorer-example.jpg"
+   retina = "/assets/images/guide/getting-started/software/explorer-example@2x.jpg"
+   alt-text = "Illustrative interface for block explorer software"
+   caption = 'Explorers offer insight into activiy on the Bitcoin and Lightning networks. Texture by [Mike van den Bos](https://unsplash.com/@mike_van_den_bos){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
+   width = 800
+   height = 388
+%}
+
+## Payment processors
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/software/point-of-sale-example.jpg"
+   retina = "/assets/images/guide/getting-started/software/point-of-sale-example@2x.jpg"
+   alt-text = "Illustrative interface for an online shop"
+   caption = 'Payment processors help merchants to sell goods and manage inventory and accounting. Texture by [Majid Gheidarlou](https://unsplash.com/@majidvj){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
+   width = 400
+   height = 541
+   layout = "float-right-desktop"
+%}
+
+Payment processing applications offer easy-to-use online stores and point-of-sale (POS) experiences paired with complex feature sets for merchants to manage their inventories, track their accounts, quickly ship products, and integrate with other services.
+
+</div>
+
 ## Nodes
 
 <div class="center" markdown="1">
@@ -154,6 +141,19 @@ Lightning node software connects to and participates in the Lightning network, w
 It’s common to use node management software. This simplifies the setup, management and monitoring of nodes by providing graphical user interfaces to interact with the lower level node software instead of CLIs.
 
 </div>
+
+## Command-line interfaces (CLI)
+
+Primarily used by developers, CLIs offer feature-rich ways to interact with nodes and other Bitcoin software. They can be thought of as general-purpose toolboxes, so they require certain technical knowledge and are not optimized for specific use cases. New features are often first included in a CLI and then later added to graphical user interfaces (GUI).
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/software/cli-example.jpg"
+   retina = "/assets/images/guide/getting-started/software/cli-example@2x.jpg"
+   alt-text = "Illustrative interface of a command-line interaction"
+   caption = 'Command line interfaces are text-only. Texture by [Joel Filipe](https://unsplash.com/@joelfilip){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
+   width = 800
+   height = 350
+%}
 
 ## Mining software
 
