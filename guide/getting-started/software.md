@@ -55,7 +55,7 @@ Primarily used by developers, CLIs offer feature-rich ways to interact with node
 
 If the blockchain is a public database, explorers are simply windows into that database.
 
-For Bitcoin, so-called block explorers let users view data about specific transactions, latest blocks, block height, and so on. They also provide insight into bigger picture activity on the Bitcoin network, such as daily transaction numbers. For example, there are typically fewer transactions on weekends, which results in lower fees, which are ideal for low-priority transactions.
+For Bitcoin, block explorers let users view transaction data, latest blocks, block height, and so on. They also provide insight into bigger picture activity on the Bitcoin network, such as daily transaction numbers. For example, there are typically fewer transactions on weekends, which results in lower fees, which are ideal for low-priority transactions.
 
 As transactions in Lightning payment channels are not recorded on the blockchain, there are also Lightning network explorers. These let you see public information about the network, such as channel count, capacity and status. Only participant nodes can look up specific transaction information in a channel.
 
