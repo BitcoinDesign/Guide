@@ -67,7 +67,7 @@ Due to Bitcoin’s open-source nature, anyone with the technical skills can deve
 
 <div class="center" markdown="1">
 
-Exchanges let users swap between currencies and networks (for example USD to bitcoin, or from the base layer to the Lightning network). They typically fall in three general categories. Consumer-focused exchanges let users make trades directly with the exchange. This is ideal for occasional use.
+Exchanges let users swap between currencies and networks (for example USD to bitcoin, or from the base layer to the Lightning network). They typically fall in three general categories.
 
 
 {% include image.html
@@ -80,9 +80,11 @@ Exchanges let users swap between currencies and networks (for example USD to bit
    layout = "float-right-desktop"
 %}
 
-Exchanges focused on investors and traders usually list many different cryptocurrencies. They allow users to trade with each other by submitting buy and sell requests on currency pairs. These products are generally for experienced users. They offer complex trading features and countless ways to analyze price movements.
+Consumer-focused exchanges let users buy and sell directly with the exchange. This is good for occasional use.
 
-Decentralized exchanges fall in between these categories, focusing on occasional use or trading, but are, as their name implies, based on an open marketplace without a central authority.
+Exchanges focused on investors and traders usually list many different cryptocurrencies. They allow users to trade with each other by submitting buy and sell orders on currency pairs. These products are generally for experienced users. They offer complex trading features and ways to analyze price movements.
+
+Decentralized exchanges focus on occasional use or trading, but are, as their name implies, based on an open marketplace without a central authority.
 
 </div>
 
