@@ -52,6 +52,12 @@ An overview of how to help users maintain transaction privacy with Bitcoin.
 
 ---
 
+### [Units & Symbols]({{ '/guide/payments/units-and-symbols/' | relative_url }})
+
+The basics on units and currency symbols, how to format them and what options to provide users with.
+
+---
+
 ### Managing funds (coming soon)
 
 How to help users organize and manage their transaction data and holdings.
