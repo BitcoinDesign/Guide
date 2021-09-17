@@ -138,7 +138,7 @@ Bitcoin Automated Teller Machines (ATM) are a convenient way to buy or sell bitc
 
 Much like traditional ATMs, Bitcoin ATMs allow the deposit and withdrawal of money. Bitcoin ATMs however allow someone to deposit fiat currencies in exchange for bitcoin. 
 
-Modern Bitcoin ATMs take advantage of the Bitcoin Lightning network which enables almost instant withdrawals and cheaper fees making the purchase experience more friendly and cost effective. 
+Modern Bitcoin ATMs take advantage of the Bitcoin Lightning network. This enables almost instant withdrawals and cheaper fees, which makes the purchase experience more friendly and cost effective. 
 
 Bitcoin ATMs are usually bound to local money transmitting laws and regulations, such as Know Your Customer (KYC) and anti-money laundering (AML) regulations. More on [Wikipedia](https://en.wikipedia.org/wiki/Bitcoin_ATM).
 
