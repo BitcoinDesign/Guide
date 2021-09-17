@@ -174,7 +174,7 @@ Primarily used by developers, CLIs offer feature-rich ways to interact with node
 
 Bitcoin [mining]({{ '/guide/getting-started/technology-primer/#how-are-transactions-confirmed' | relative_url }}) is the act of confirming transactions by solving a computationally intense problem, which is rewarded via freshly minted bitcoin and transaction fees.
 
-Mining has become primarily a professional undertaking with dedicated software to manage racks of mining hardware. However, some wallets still offer mining features, and there are also cloud mining providers that allow customers to rent mining capacity.
+Mining has become primarily a professional undertaking with dedicated software to manage racks of [mining hardware]({{ '/guide/getting-started/hardware/#miners' | relative_url }}). However, some wallets still offer mining features, and there are also cloud mining providers that allow customers to rent mining capacity.
 
 Mining does not exist for transactions on the Lightning network, so there is no equivalent software. However, opening and closing payment channels on Lightning involve transactions, that need to be mined on the Bitcoin network.
 
