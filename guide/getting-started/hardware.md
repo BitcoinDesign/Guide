@@ -140,7 +140,7 @@ Much like traditional ATMs, Bitcoin ATMs allow the deposit and withdrawal of mon
 
 Modern Bitcoin ATMs take advantage of the Bitcoin Lightning network. This enables almost instant withdrawals and cheaper fees, which makes the purchase experience more friendly and cost effective. 
 
-Bitcoin ATMs are usually bound to local money transmitting laws and regulations, such as Know Your Customer (KYC) and anti-money laundering (AML) regulations. More on [Wikipedia](https://en.wikipedia.org/wiki/Bitcoin_ATM).
+Bitcoin ATMs are usually bound to local money transmission laws and regulations, such as Know Your Customer (KYC) and Anti-Money Laundering (AML) regulations. More on [Wikipedia](https://en.wikipedia.org/wiki/Bitcoin_ATM).
 
 You can find local ATMs using services like [coinatmradar](https://coinatmradar.com/). 
 
