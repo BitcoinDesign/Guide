@@ -37,7 +37,7 @@ Illustration sources
 
 # Hardware overview
 
-General purpose hardware like personal computers and smartphones work great for most basic Bitcoin operations. Though In some circumstances dedicated hardware devices are optimized for the nuances of Bitcoin. We’ll explore them and how they work here. 
+General purpose hardware, like personal computers and smartphones, work great for most basic Bitcoin operations. In some circumstances, dedicated hardware devices are optimized for the nuances of Bitcoin. We’ll explore them and how they work here. 
 
 ## Physical backups
 
