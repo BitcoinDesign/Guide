@@ -106,7 +106,7 @@ See [nodes]({{ '/guide/glossary/node/' | relative_url }}) for more details.
 
 ## Mining hardware
 
-Miners are the backbone of Bitcoin generating new blocks which creates new bitcoin. Dedicated mining hardware, which runs dedicated [mining software]({{ '/guide/getting-started/software/#mining' | relative_url }}), exists for mining bitcoin. Various billion dollar industries have developed around the manufacture and deployment of such hardware.
+Miners are the backbone of Bitcoin generating new blocks, which creates new bitcoin. Dedicated mining hardware, which runs dedicated [mining software]({{ '/guide/getting-started/software/#mining' | relative_url }}), exists for mining bitcoin. Various billion dollar industries have developed around the manufacture and deployment of such hardware.
 
 {% include picture.html
    image = "/assets/images/guide/getting-started/hardware/mining-hardware.jpg"
