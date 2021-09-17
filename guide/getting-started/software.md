@@ -84,7 +84,7 @@ Consumer-focused exchanges let users buy and sell directly with the exchange. Th
 
 Exchanges focused on investors and traders usually list many different cryptocurrencies. They allow users to trade with each other by submitting buy and sell orders on currency pairs. These products are generally for experienced users. They offer complex trading features and ways to analyze price movements.
 
-Decentralized exchanges focus on occasional use or trading, but are, as their name implies, based on an open marketplace without a central authority.
+Decentralized exchanges focus on occasional use or trading, and are, as their name implies, based on an open marketplace without a central authority.
 
 </div>
 
