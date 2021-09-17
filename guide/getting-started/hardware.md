@@ -94,7 +94,7 @@ A node is a device that participates in a network. In Bitcoin, there are two typ
    height = 400
 %}
 
-It is quite common to have dedicated hardware to run Bitcoin [node software]({{ '/guide/getting-started/software/#nodes' | relative_url }}). Running a Bitcoin node on dedicated hardware ensures your node stays up to sync with the network and is regularly verifying the network rules increasing Bitcoin’s security. Some node software also comes packaged with other third-party applications of which may benefit from dedicated hardware and more regular uptime. 
+It is quite common to have dedicated hardware to run Bitcoin [node software]({{ '/guide/getting-started/software/#nodes' | relative_url }}). Running a Bitcoin node on dedicated hardware ensures your node stays in sync with the network and is regularly verifying the network rules, increasing Bitcoin’s security. Some node software also comes packaged with other third-party applications which may benefit from dedicated hardware and more regular uptime. 
 
 Lightning node software can be run on a smartphone. Though, this often comes with trusting a third-party for certain node functions such as payment path construction. For this reason, dedicated hardware Lightning nodes may be a better option for those who do not want a trust-minimized setup. 
 
