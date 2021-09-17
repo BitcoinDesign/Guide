@@ -248,9 +248,9 @@ While Lightning branding can be fun and expressive, it may give new Bitcoin user
 
 #### Consider your audience
 
-Are you developing Bitcoin products that are intended to be used primarily by developers or people who are very experienced with Bitcoin? If so, lightning branding may be a great choice for your product.
+Are you developing Bitcoin products that are intended to be used primarily by developers or people who are very experienced with Bitcoin? If so, Lightning branding may be a great choice for your product.
 
-Are you developing products intended for Bitcoin beginners? If so, consider minimizing or altogether avoiding lightning branding. Instead, focus on what your user needs or wants. For example, the term "instant payment" could be far more informative to this user than the term "lightning payment".
+Are you developing products intended for Bitcoin beginners? If so, consider minimizing or altogether avoiding Lightning branding. Instead, focus on what your user needs or wants. For example, the term "instant payment" could be far more informative to this user than the term "Lightning payment".
 
 ---
 
