@@ -39,9 +39,7 @@ layout = "full-width"
 
 Since Bitcoin answers to no central authority, there is no single symbol or logo that can visually represent it, though many try. Here are some of the most recognized attempts to create a universal logo for Bitcoin.
 
-## The Bitcoin symbol
-
-### Original symbol
+## Original symbol
 
 <div class="center" markdown="1">
 
@@ -54,7 +52,7 @@ Since Bitcoin answers to no central authority, there is no single symbol or logo
    layout = "float-left"
 %}
 
-Satoshi Nakamoto created this lettered golden coin for the original Bitcoin Core client.
+Satoshi Nakamoto created this lettered golden coin for the original Bitcoin Core client, [released on January 9, 2009](https://web.archive.org/web/20140326174921/http://www.mail-archive.com/cryptography@metzdowd.com/msg10142.html).
 
 </div>
 
@@ -70,7 +68,7 @@ Satoshi Nakamoto created this lettered golden coin for the original Bitcoin Core
 
 </div>
 
-### Updated symbol
+## Updated symbol
 
 <div class="center" markdown="1">
 
