@@ -227,7 +227,7 @@ In digital product design, there are times when a minimally expressive approach 
 
 The Lightning network is a layer 2 solution for scaling Bitcoin. It allows people to make almost instant payments with very small fees.
 
-Since the first Lightning implementation in 2018, a distinct visual identity has developed around the Lightning network based on a simple yellow icon of a lightning bolt. Sometimes, Lightning software and services may choose to completely forego common elements of Bitcoin branding (the color orange, the Bitcoin symbol, etc.) and instead use the color yellow, a lightning bolt symbol, and metaphors for electricity.
+Since the first Lightning implementation in 2018, a distinct visual identity has developed around the Lightning network based on a simple yellow lightning bolt icon. Sometimes, Lightning software and services completely forego common elements of Bitcoin branding (the color orange, the Bitcoin symbol, etc.) and instead use the color yellow, a lightning bolt symbol, and metaphors for electricity.
 
 <div class="image-gallery" markdown="1">
 
