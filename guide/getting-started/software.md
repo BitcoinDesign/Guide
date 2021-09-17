@@ -52,7 +52,7 @@ The unique history and architecture of Bitcoin has resulted in several categorie
    layout = "float-right-desktop"
 %}
 
-Wallets are perhaps the most important Bitcoin applications. They provide easy-to-use graphical user interfaces (GUIs) designed for broad audiences that let bitcoin owners [send]({{ '/guide/payments/send/' | relative_url }}), [receive]({{ '/guide/payments/receive/' | relative_url }}) store and manage their coins.
+Wallets are perhaps the most important Bitcoin applications. They provide easy-to-use graphical user interfaces (GUIs) designed for broad audiences that let bitcoin owners [send]({{ '/guide/payments/send/' | relative_url }}), [receive]({{ '/guide/payments/receive/' | relative_url }}), store and manage their coins.
 
 Wallet features vary by application but always include wallet setup, balance and transaction records, and the ability to send and receive bitcoin. The full range of features that wallets may support is broad and includes security and privacy options, currency exchange features, accounting tools, interoperability, accessibility, and localization options.
 
