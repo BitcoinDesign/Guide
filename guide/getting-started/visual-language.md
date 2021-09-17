@@ -98,9 +98,14 @@ On February 24, 2010, Satoshi posted an updated icon that adopted the capital â€
    layout = "float-left"
 %}
 
+</div>
+
 On November 1, 2010, a user named bitboy proposed a new icon and set of promotional graphics on the Bitcointalk forum ([archive.org](https://web.archive.org/web/20130524191250/https://bitcointalk.org/index.php?topic=1631.0), [bitcointalk.org](https://bitcointalk.org/index.php?topic=1631.0)). This iteration added a flat style, the hex color #F7931A, and a 14-degree rotation of the B. This interpretation of the bitcoin logo is still ubiquitous today.
 
-</div>
+#### Download Bitcoin Symbol
+
+[SVG](/assets/images/guide/getting-started/visual-language/bitcoin-symbol.svg){: .button}
+[PNG](/assets/images/guide/getting-started/visual-language/bitcoin-symbol.png){: .button.-outline}
 
 <div class="image-gallery" markdown="1">
 
