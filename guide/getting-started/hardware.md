@@ -82,7 +82,7 @@ Hardware wallets only exchange non-sensitive information with external devices. 
 
 ## Nodes
 
-A node is a device that participates in a network. In Bitcoin, there are two types of nodes to understand: A Bitcoin node which participates in the Bitcoin network, and a Lightning node which participates in the Lightning network. For a deeper dive into what purpose these nodes serve check out the [technology primer]({{ '/guide/getting-started/technology-primer/' | relative_url }}).
+A node is a device that participates in a network. There are two types of nodes to understand: A Bitcoin node which participates in the Bitcoin network, and a Lightning node which participates in the Lightning network. For a deeper dive into what purpose these nodes serve check out the [technology primer]({{ '/guide/getting-started/technology-primer/' | relative_url }}).
 
 {% include picture.html
    image = "/assets/images/guide/getting-started/hardware/node-hardware.jpg"
