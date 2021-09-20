@@ -76,7 +76,7 @@ You may already be familiar with physical security keys from your bank or work. 
    height = 400
 %}
 
-Bitcoin hardware wallets, also known as external signers, act like Bitcoin centric security keys. They isolate the recovery phrase, private keys, and other sensitive data from the internet and other devices.
+Bitcoin hardware wallets, also known as external signers, act like Bitcoin centric security keys. They isolate the recovery phrase and private keys from the internet and other devices.
 
 Hardware wallets only exchange non-sensitive information with external devices. Sensitive processes, such as signing a transaction to open a Lightning network payment channel, happen on the device. Most interactions with hardware wallets happen via desktop [software, like wallets]({{ '/guide/getting-started/software/#wallets' | relative_url }}). 
 
