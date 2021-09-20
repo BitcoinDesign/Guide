@@ -214,7 +214,7 @@ One of the most important activities of the Bitcoin network is to verify that si
 No. Transactions are stored in a plain format in the Bitcoin network for anyone with an internet connection to see and analyze. This allows observers to verify that all transactions in the system are valid and that nobody spends bitcoin they don't have. This transparency is unique to Bitcoin compared to any other traditional currency. At the same time, it introduces potential privacy problems.
 
 **More info**
-- [Explorer software]({{ '/guide/getting-started/software/#block-explorers' | relative_url }})
+- [Explorer software]({{ '/guide/getting-started/software/#explorers' | relative_url }})
 
 </div>
 
@@ -253,7 +253,7 @@ This function is performed by miners, which are computers that group new transac
 Once a transaction is in a block that the network has accepted, it is considered as having one confirmation. With every new block created, the number of confirmations of this particular block increases.
 
 **More info**
-- Mining [software]({{ '/guide/getting-started/software/#mining' | relative_url }}) and [hardware]({{ '/guide/getting-started/hardware/#miners' | relative_url }})
+- Mining [software]({{ '/guide/getting-started/software/#mining-software' | relative_url }}) and [hardware]({{ '/guide/getting-started/hardware/#mining-hardware' | relative_url }})
 
 </div>
 
