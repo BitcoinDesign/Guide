@@ -72,6 +72,24 @@ Although bitcoin is purely digital, it meets every classical definition of what 
 Natively digital money can also be extended in previously unthinkable ways. From smart contracts to Layer 2 solutions like the Lightning Network that enable faster and cheaper payments, Bitcoin can get built upon to enable new and evolving use cases.
 </div>
 
+## There's a limited supply
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/supply.jpg"
+   retina = "/assets/images/guide/getting-started/why-bitcoin-is-unique/supply@2x.jpg"
+   alt-text = "Chart showing how the Bitcoin network relies on addresses and not real-life identities"
+   caption = ""
+   width = 400
+   height = 400
+   layout = "float-right-desktop"
+%}
+
+There will never be more than 21 million bitcoin. The creation of new bitcoin is mathematically defined and strictly enforced by the Bitcoin network. This is different from fiat currencies, which may experience supply changes due to government decisions, which in turn can have various effects on economies and economic behavior. For an independent, global asset like bitcoin, the rigid supply dynamics are a big benefit, as they create reliability and trust.
+
+</div>
+
 ## You own it
 
 When you take cash out of your bank account, it becomes your responsibility. If you lose it, it’s lost. If you transact with it, no middleman can block the transaction. Either way, you are its custodian—this is bitcoin in a nutshell. It’s digital, [self-custodial]({{ '/guide/designing-products/principles/#self-custody' | relative_url }}) cash.
