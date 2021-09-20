@@ -43,6 +43,14 @@ Illustration sources
 
 We designed this guide to help anyone navigate those complexities—regardless of where they live or work. We can’t imagine every possible use case, but we can help you build for them.
 
+{% include tip/tip.html %}
+
+This guide is a work in progress. We are currently adding information about the [Lightning Network]({{ '/guide/glossary/#lightning-network' | relative_url }}) on all relevant pages. 
+
+You can track the progress on this [Github issue]({{ 'https://github.com/BitcoinDesign/Guide/issues/478' }}).
+
+{% include tip/close.html %}
+
 ---
 
 ### [Getting started]({{ '/guide/getting-started/introduction/' | relative_url }})
