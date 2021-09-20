@@ -239,7 +239,7 @@ retina = "/assets/images/guide/getting-started/visual-language/bitcoin-lightning
 alt-text = "Sequence of images showing examples of logos and brands for lightning software and services"
 caption = "References from top top bottom, left to right: <a href='https://www.walletofsatoshi.com/' target='_blank'>1</a>, <a href='https://shop.fulmo.org/raspiblitz/' target='_blank'>2</a>, <a href='https://www.lightningnetworkstores.com/' target='_blank'>3</a>, <a href='https://zeusln.app/' target='_blank'>4</a>, and <a href='https://lightning.store/product/bitcoin-rtl-t-shirt/' target='_blank'>5</a>."
 width = 800
-height = 600
+height = 584
 %}
 
 </div>
