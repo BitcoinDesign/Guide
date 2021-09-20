@@ -137,7 +137,7 @@ Payment processing applications offer easy-to-use online stores and point-of-sal
    layout = "float-right-desktop"
 %}
 
-Bitcoin [node]({{ '/guide/glossary/node/' | relative_url }}) software connects to and participates in the Bitcoin network. Nodes typically download and broadcast user transactions, and optionally help verify blockchain data more broadly. Some wallet software comes with built-in node capabilities, such as [Bitcoin Core]({{ '/guide/glossary/#bitcoin-core-client/' | relative_url }}), but most wallet software connects to external nodes. Learn more on the [Node page]({{ '/guide/glossary/node/' | relative_url }}) in the glossary.
+Bitcoin [node]({{ '/guide/glossary/node/' | relative_url }}) software connects to and participates in the Bitcoin network. Nodes typically download and broadcast user transactions, and optionally help verify blockchain data more broadly. Some wallet software comes with built-in node capabilities, such as [Bitcoin Core]({{ '/guide/glossary/#bitcoin-core-client' | relative_url }}), but most wallet software connects to external nodes. Learn more on the [Node page]({{ '/guide/glossary/node/' | relative_url }}) in the glossary.
 
 Lightning node software connects to and participates in the Lightning network, which extends Bitcoin with payment channels to increase transaction speed and lower costs. It is becoming widely adopted and accepted as the preferred way to scale Bitcoin.
 
@@ -174,7 +174,7 @@ Primarily used by developers, CLIs offer feature-rich ways to interact with node
 
 Bitcoin [mining]({{ '/guide/getting-started/technology-primer/#how-are-transactions-confirmed' | relative_url }}) is the act of confirming transactions by solving a computationally intense problem, which is rewarded via freshly minted bitcoin and transaction fees.
 
-Mining has become primarily a professional undertaking with dedicated software to manage racks of [mining hardware]({{ '/guide/getting-started/hardware/#miners' | relative_url }}). However, some wallets still offer mining features, and there are also cloud mining providers that allow customers to rent mining capacity.
+Mining has become primarily a professional undertaking with dedicated software to manage racks of [mining hardware]({{ '/guide/getting-started/hardware/#mining-hardware' | relative_url }}). However, some wallets still offer mining features, and there are also cloud mining providers that allow customers to rent mining capacity.
 
 Mining does not exist for transactions on the Lightning network, so there is no equivalent software. However, opening and closing payment channels on Lightning involve transactions, that need to be mined on the Bitcoin network.
 

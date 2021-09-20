@@ -193,7 +193,7 @@ While it is extremely convenient when applications provide their own node connec
    layout = "float-right-desktop"
 %}
 
-Most Bitcoin applications rely on external data sources (like currency conversion data) and may also have integrations with third parties (like linking to an external [block explorer]({{ 'guide/getting-started/software/#block-explorers' | relative_url }})). Whenever possible, it should be easy for users to learn about these dependencies and choose alternatives.
+Most Bitcoin applications rely on external data sources (like currency conversion data) and may also have integrations with third parties (like linking to an external [block explorer]({{ '/guide/getting-started/software/#explorers' | relative_url }})). Whenever possible, it should be easy for users to learn about these dependencies and choose alternatives.
 
 </div>
 
