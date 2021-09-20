@@ -151,7 +151,7 @@ retina = "/assets/images/guide/getting-started/visual-language/satoshi-symbols@2
 alt-text = "Sequence of images showing proposals for satoshi symbols"
 caption = "References from top left to bottom right, Keith, <a href='http://satbase.org/' target='_blank'>2</a>, <a href='https://www.reddit.com/r/Bitcoin/comments/ku9nl8/design_proposal_for_the_satoshi_symbol/' target='_blank'>3</a>, <a href='https://twitter.com/PLK5280/status/1326347333219606528' target='_blank'>4</a>, <a href='https://www.reddit.com/r/Bitcoin/comments/ku9nl8/design_proposal_for_the_satoshi_symbol/' target='_blank'>5</a>, Jeremiah, Alexa, <a href='https://satsymbol.com/' target='_blank'>8</a>, <a href='https://twitter.com/BitkoYinowsky' target='_blank'>9</a>, <a href='https://twitter.com/sbtlaln/status/1361368643238567951' target='_blank'>10</a>, <a href='https://www.reddit.com/r/Bitcoin/comments/k0e98n/my_proposal_for_the_satish_symbol_still_looks/' target='_blank'>11</a>, and <a href='https://www.reddit.com/r/Bitcoin/comments/ku9nl8/design_proposal_for_the_satoshi_symbol/' target='_blank'>12</a>."
 width = 800
-height = 508
+height = 504
 %}
 
 </div>
