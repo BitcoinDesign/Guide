@@ -120,7 +120,7 @@ Miners are the backbone of Bitcoin generating new blocks, which creates new bitc
 
 When Bitcoin was first launched back in 2009, mining hardware was mostly conducted by CPUs and GPUs. As the network grew in size, and the market around mining grew, more specialized and powerful hardware known as application-specific integrated circuits (ASICs) became the standard mining hardware. 
 
-Today, most Bitcoin miners are SHA-256 ASICs. SHA-256 ASICs which are optimized to continuously execute the SHA-256 hashing algorithm with the goal of finding a suitable hash and thus mining a new Bitcoin block. Modern SHA-256 ASIC miners (2021) are capable of producing 100 trillion SHA-256 hashes per second.
+Today, most Bitcoin miners are SHA-256 ASICs. They are optimized to continuously execute the SHA-256 hashing algorithm with the goal of finding a suitable hash and thus mining a new Bitcoin block. Modern miners (2021) are capable of producing 100 trillion hashes per second.
 
 ## ATMs
 
