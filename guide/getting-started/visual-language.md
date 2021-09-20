@@ -104,8 +104,8 @@ On November 1, 2010, a user named bitboy proposed a new icon and set of promotio
 
 #### Download Bitcoin Symbol
 
-[SVG](/assets/images/guide/getting-started/visual-language/bitcoin-symbol.svg){: .button}
-[PNG](/assets/images/guide/getting-started/visual-language/bitcoin-symbol.png){: .button.-outline}
+[SVG]({{'/assets/images/guide/getting-started/visual-language/bitcoin-symbol.svg' | relative_url }}){: .button download=""}
+[PNG]({{'/assets/images/guide/getting-started/visual-language/bitcoin-symbol.png' | relative_url }}){: .button.-outline download=""}
 
 <div class="image-gallery" markdown="1">
 
