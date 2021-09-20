@@ -39,8 +39,7 @@ layout = "full-width"
 
 Since Bitcoin answers to no central authority, there is no single symbol or logo that can visually represent it, though many try. Here are some of the most recognized attempts to create a universal logo for Bitcoin.
 
-
-### Original symbol
+## Original symbol
 
 <div class="center" markdown="1">
 
@@ -53,7 +52,7 @@ Since Bitcoin answers to no central authority, there is no single symbol or logo
    layout = "float-left"
 %}
 
-Satoshi Nakamoto created this lettered golden coin for the original Bitcoin Core client.
+Satoshi Nakamoto created this lettered golden coin for the original Bitcoin Core client, [released on January 9, 2009](https://web.archive.org/web/20140326174921/http://www.mail-archive.com/cryptography@metzdowd.com/msg10142.html).
 
 </div>
 
@@ -69,7 +68,7 @@ Satoshi Nakamoto created this lettered golden coin for the original Bitcoin Core
 
 </div>
 
-### Updated symbol
+## Updated symbol
 
 <div class="center" markdown="1">
 
@@ -82,7 +81,7 @@ Satoshi Nakamoto created this lettered golden coin for the original Bitcoin Core
    layout = "float-left"
 %}
 
-On February 24, 2010, Satoshi posted an updated icon that adopted the capital “B” with two vertical lines ([archive.org](https://web.archive.org/web/20130524055823/https://bitcointalk.org/index.php?topic=64.0), [bitcointalk.org](https://bitcointalk.org/index.php?topic=64.0)).
+On February 24, 2010, Satoshi posted an updated icon that adopted the capital “B” with two vertical lines ([archive.org](https://web.archive.org/web/20130524055823/https://bitcointalk.org/index.php?topic=64.0), [bitcointalk.org](https://bitcointalk.org/index.php?topic=64.0)). Satoshi requested that all derivative works be placed in the public domain.
 
 </div>
 
@@ -102,6 +101,11 @@ On February 24, 2010, Satoshi posted an updated icon that adopted the capital �
 On November 1, 2010, a user named bitboy proposed a new icon and set of promotional graphics on the Bitcointalk forum ([archive.org](https://web.archive.org/web/20130524191250/https://bitcointalk.org/index.php?topic=1631.0), [bitcointalk.org](https://bitcointalk.org/index.php?topic=1631.0)). This iteration added a flat style, the hex color #F7931A, and a 14-degree rotation of the B. This interpretation of the bitcoin logo is still ubiquitous today.
 
 </div>
+
+#### Download Bitcoin Symbol
+
+[SVG]({{'/assets/images/guide/getting-started/visual-language/bitcoin-symbol.svg' | relative_url }}){: .button download=""}
+[PNG]({{'/assets/images/guide/getting-started/visual-language/bitcoin-symbol.png' | relative_url }}){: .button.-outline download=""}
 
 <div class="image-gallery" markdown="1">
 
@@ -130,6 +134,25 @@ On November 1, 2010, a user named bitboy proposed a new icon and set of promotio
 %}
 
 The Unicode symbol for Bitcoin (₿) was introduced in [Unicode 10.0.0](http://www.unicode.org/versions/Unicode10.0.0/) on June 20, 2017. This important step established Bitcoin as a currency symbol alongside the US Dollar ($), Euro (€), and others. As of mid-2021, few fonts support the symbol.
+
+</div>
+
+## The Satoshi symbol
+
+As the price of bitcoin has increased, and the [Lightning network]({{ '/guide/glossary/#lightning-network' | relative_url }}) has facilitated low-value payments, it has become common for people to denominate bitcoin with the "satoshi". See the [Units & Symbols]({{ '/guide/payments/units-and-symbols/' | relative_url }}) section for more detailed information about bitcoin units.
+
+There is currently not an agreed upon symbol to represent the satoshi (or if there should even be one), however, many ideas are in circulation.
+
+<div class="image-gallery" markdown="1">
+
+{% include image.html
+image = "/assets/images/guide/getting-started/visual-language/satoshi-symbols.png"
+retina = "/assets/images/guide/getting-started/visual-language/satoshi-symbols@2x.png"
+alt-text = "Sequence of images showing proposals for satoshi symbols"
+caption = "References from top left to bottom right, Keith, <a href='http://satbase.org/' target='_blank'>2</a>, <a href='https://www.reddit.com/r/Bitcoin/comments/ku9nl8/design_proposal_for_the_satoshi_symbol/' target='_blank'>3</a>, <a href='https://twitter.com/PLK5280/status/1326347333219606528' target='_blank'>4</a>, <a href='https://www.reddit.com/r/Bitcoin/comments/ku9nl8/design_proposal_for_the_satoshi_symbol/' target='_blank'>5</a>, Jeremiah, Alexa, <a href='https://satsymbol.com/' target='_blank'>8</a>, <a href='https://twitter.com/BitkoYinowsky' target='_blank'>9</a>, <a href='https://twitter.com/sbtlaln/status/1361368643238567951' target='_blank'>10</a>, <a href='https://www.reddit.com/r/Bitcoin/comments/k0e98n/my_proposal_for_the_satish_symbol_still_looks/' target='_blank'>11</a>, and <a href='https://www.reddit.com/r/Bitcoin/comments/ku9nl8/design_proposal_for_the_satoshi_symbol/' target='_blank'>12</a>."
+width = 800
+height = 504
+%}
 
 </div>
 
@@ -202,6 +225,34 @@ Think about Bitcoin’s visual language as a scale that ranges from muted to hig
 %}
 
 In digital product design, there are times when a minimally expressive approach is what’s needed. For example, when a user makes a transaction, we want them to focus. At other times, illustrations and stronger visual elements are more appropriate, and this is where we can take advantage of the creative freedom Bitcoin affords.
+
+## The Lightning network
+
+
+Since the first Lightning implementation in 2018, a distinct visual identity has developed around the Lightning network based on a simple yellow lightning bolt icon. Sometimes, Lightning software and services completely forego common elements of Bitcoin branding (the color orange, the Bitcoin symbol, etc.) and instead use the color yellow, a lightning bolt symbol, and metaphors for electricity.
+
+<div class="image-gallery" markdown="1">
+
+{% include image.html
+image = "/assets/images/guide/getting-started/visual-language/bitcoin-lightning-branding.jpg"
+retina = "/assets/images/guide/getting-started/visual-language/bitcoin-lightning-branding@2x.jpg"
+alt-text = "Sequence of images showing examples of logos and brands for lightning software and services"
+caption = "References from top top bottom, left to right: <a href='https://www.walletofsatoshi.com/' target='_blank'>1</a>, <a href='https://shop.fulmo.org/raspiblitz/' target='_blank'>2</a>, <a href='https://www.lightningnetworkstores.com/' target='_blank'>3</a>, <a href='https://zeusln.app/' target='_blank'>4</a>, and <a href='https://lightning.store/product/bitcoin-rtl-t-shirt/' target='_blank'>5</a>."
+width = 800
+height = 584
+%}
+
+</div>
+
+## Should Lightning be distinct from Bitcoin?
+
+While Lightning branding can be fun and expressive, it may give new Bitcoin users the impression that Lightning is different from Bitcoin. More accurately, Lightning should be thought of as a different way of using bitcoin, not as a different currency than bitcoin.
+
+#### Consider your audience
+
+Are you developing Bitcoin products that are intended to be used primarily by developers or people who are very experienced with Bitcoin? If so, Lightning branding may be a great choice for your product.
+
+Are you developing products intended for Bitcoin beginners? If so, consider minimizing or altogether avoiding Lightning branding. Instead, focus on what your user needs or wants. For example, the term "instant payment" could be far more informative to this user than the term "Lightning payment".
 
 ---
 

@@ -1336,6 +1336,10 @@ assets/images/guide/case-studies/onboarding/intro.png: intro.png
 assets/images/guide/case-studies/onboarding/intro@2x.png: intro@2x.png
 assets/images/guide/case-studies/multisig-wallet/onboarding/key-2-connection-type.png: key-2-connection-type.png
 assets/images/guide/case-studies/multisig-wallet/onboarding/key-2-connection-type@2x.png: key-2-connection-type@2x.png
+assets/images/guide/getting-started/visual-language/bitcoin-lightning-branding.jpg: bitcoin-lightning-branding.jpg
+assets/images/guide/getting-started/visual-language/satoshi-symbols.png: satoshi-symbols.png
+assets/images/guide/getting-started/visual-language/bitcoin-lightning-branding@2x.jpg: bitcoin-lightning-branding@2x.jpg
+assets/images/guide/getting-started/visual-language/satoshi-symbols@2x.png: satoshi-symbols@2x.png
 assets/images/guide/payments/units-and-symbols/settings-bitcoin-units.png: settings-bitcoin-units.png
 assets/images/guide/payments/units-and-symbols/settings-bitcoin-units@2x.png: settings-bitcoin-units@2x.png
 assets/images/guide/payments/units-and-symbols/settings-local-currency.png: settings-local-currency.png
@@ -1401,5 +1405,6 @@ assets/images/guide/designing-products/principles/principles-mobile.png: princip
 assets/images/guide/designing-products/principles/principles-mobile@2x.png: principles-mobile@2x.png
 assets/images/guide/designing-products/principles/principles@2x.png: principles@2x.png
 assets/images/guide/designing-products/principles/principles-preview.png: principles-preview.png
+assets/images/guide/getting-started/visual-language/bitcoin-symbol.png: bitcoin-symbol.png
 assets/images/guide/getting-started/why-bitcoin-is-unique/supply.jpg: supply.jpg
 assets/images/guide/getting-started/why-bitcoin-is-unique/supply@2x.jpg: supply@2x.jpg
