@@ -77,7 +77,7 @@ Natively digital money can also be extended in previously unthinkable ways. From
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/supply.jpg"
+   image = "/assets/images/guide/getting-started/why-bitcoin-is-unique/supply.jpg"
    retina = "/assets/images/guide/getting-started/why-bitcoin-is-unique/supply@2x.jpg"
    alt-text = "Chart showing how the Bitcoin network relies on addresses and not real-life identities"
    caption = ""
