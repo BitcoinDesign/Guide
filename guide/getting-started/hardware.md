@@ -53,7 +53,7 @@ Recovery phrases and other important recovery data such as descriptors are often
    height = 400
 %}
 
-Many users backup their bitcoin recovery phrases using metal plates that have their recovery phrase etched into them. This protects the recovery phrase from physical destruction from fire and/or water. [Seedplate](https://seedplate.com/) is an example of such a product.
+Many users back up their wallet using metal plates that have their recovery phrase etched into them. This protects the recovery phrase from physical destruction from fire and  water. [Seedplate](https://seedplate.com/) is an example of such a product.
 
 A simpler option is writing your recovery phrase on a piece of paper. Compared to steel, paper can be easily destroyed, making this option less secure.
 
