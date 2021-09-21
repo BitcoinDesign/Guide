@@ -38,7 +38,7 @@ Illustration sources
 
 # Why design for Bitcoin
 
-Bitcoin lets designers seeking the next big challenge build a new kind of money and how we send, spend, save, and store that money. Since Bitcoin’s brand has no owner to set it in stone, you can still have a big impact on Bitcoin even if you aren’t a product designer. And that’s just for starters.
+Bitcoin lets designers seeking the next big challenge build a new kind of money and how we send, spend, save, and store that money. Since [Bitcoin’s brand]({{ '/guide/getting-started/visual-language/' | relative_url }}) has no owner to set it in stone, you can still have a big impact on Bitcoin even if you aren’t a product designer. And that’s just for starters.
 
 ## It’s the internet of money
 
@@ -50,7 +50,7 @@ Bitcoin is permissionless; this means that there are no individual, corporate, o
 
 ## Blaze trails one pixel at a time
 
-Few open designers currently work full-time on Bitcoin. Most have 9–5 jobs, and like most of Bitcoin’s open-source developers, contribute when they can. As the ecosystem grows, more opportunities to be among the first full-time Bitcoin designers are bound to open up.
+Few [open designers]({{ '/guide/designing-products/open-design/' | relative_url }}) currently work full-time on Bitcoin. Most have 9–5 jobs, and like most of Bitcoin’s open-source developers, contribute when they can. As the ecosystem grows, more opportunities to be among the first full-time Bitcoin designers are bound to open up.
 
 So if you’re looking for the next big thing in design, you found it.
 
@@ -60,7 +60,7 @@ Many design projects start by identifying an unmet need then designing something
 
 ## Work in public
 
-Bitcoin development is open-source. Designing for Bitcoin is no different. It lets you learn, grow, and exchange ideas in the same open and collaborative way. Learn out more about the [open design]({{ '/guide/designing-products/open-design/' | relative_url }}) philosophy.
+Bitcoin development is open-source. Designing for Bitcoin is no different. It lets you learn, grow, and exchange ideas in the same open and collaborative way. Learn more about the [open design]({{ '/guide/designing-products/open-design/' | relative_url }}) philosophy.
 
 ## Design money
 
