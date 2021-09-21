@@ -20,6 +20,7 @@ Illustration sources
 
 - https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=291%3A2675
 - https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=53%3A3663
+- https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=36%3A2
 
 -->
 
