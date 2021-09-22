@@ -137,7 +137,7 @@ For Bitcoin wallets, the first use can be a difficult balance between creating a
 
 The user becomes familiar with your product and uses it in a more sophisticated way (see [common user flows]({{ '/guide/designing-products/common-user-flows/' | relative_url }})). Their mental model of your product becomes closer to yours. Repeat use also implies that users have made your product a part of their lives. While first-time users are typically non-committal, repeat users are willing to put in more work to get the most out of products.
 
-The amount of funds in these users wallets likely also increases, making your product even more critical for them. Make sure to offer users easy ways to stay on top of good security practices.
+The amount of funds in these users wallets likely also increases, making your product even more critical for them. Make sure to offer users easy ways to stay on top of good security practices (see [personal finance]({{ '/guide/designing-products/personal-finance/' | relative_url }})).
 
 </div>
 
