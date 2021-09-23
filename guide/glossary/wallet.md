@@ -41,7 +41,7 @@ A hardware device used to manage a bitcoin wallet. More on the [Hardware overvie
 
 #### Wallet application
 
-A software application used to manage a bitcoin wallet. More on the [Hardware overview]({{ '/guide/getting-started/software/#wallets' | relative_url }}) page.
+A software application used to manage a bitcoin wallet. More on the [Software overview]({{ '/guide/getting-started/software/#wallets' | relative_url }}) page.
 
 #### Non-custodial / Custodial wallet
 
