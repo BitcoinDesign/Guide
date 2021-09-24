@@ -56,7 +56,7 @@ It is helpful to think through each phase and consider what the current user nee
    layout = "float-left"
 %}
 
-This is where everyone starts, and most remain. At this point, they have never seen or heard of your product before.
+This is where everyone starts, and most remain. At this point, they have never seen or heard of your product before. They may or may not be familiar with Bitcoin, its use cases and benefits.
 
 </div>
 
@@ -75,6 +75,8 @@ This is where everyone starts, and most remain. At this point, they have never s
 
 A user hears about the service for the first time. This could be via word-of-mouth, advertising, news articles, social media, or some other channel. This exposure is usually fleeting, so the purpose and benefit of your product must be clear to pique their curiosity. Here, users begin to form a mental model. If it appears trustworthy and well-considered, that is what they will expect from further engagement. The same applies if your product looks complex or buggy.
 
+If your user base is most likely not familar with Bitcoin, ensure you provide easy-to-understand entry points that focus on user benefits and core product concepts.
+
 </div>
 
 ## Interested
@@ -90,8 +92,14 @@ A user hears about the service for the first time. This could be via word-of-mou
    layout = "float-left"
 %}
 
-A potential user is interested in your product. Maybe they have heard about it before, or their first interaction convinced them to try it. At this point, they understand the benefits and likely have a problem that it solves. They evaluate you and your product to decide whether to move forward. “Is this a convenient way to get done what I want to do? Can I trust this product and its creators? What can I lose? Can I get out if something goes wrong?” These are questions they might have, and if they can be answered positively, might propel them to take the next step.
+A potential user is interested in your product. Maybe they have heard about it before, or their first interaction convinced them to try it. At this point, they understand the benefits and likely have a problem that it solves. They evaluate you and your product to decide whether to move forward.
 
+- “Is this a convenient way to get done what I want to do?”
+- “Can I trust this product and its creators?”
+- “Can I get out if something goes wrong?”
+- “What can I lose?”
+
+These are questions they might have, and if they can be answered positively, might propel them to take the next step. This is especially important for [self-custodial]({{ '/guide/designing-products/principles/#self-custody' | relative_url }}) products, in which the user assumes full responsibility and needs extra assurance that they are in good hands.
 
 </div>
 
@@ -110,6 +118,8 @@ A potential user is interested in your product. Maybe they have heard about it b
 
 The user decides to move forward with your product. They are still not familiar with exactly how it works, and their expectations may not match what your product offers. Therefore, it is crucial to pay close attention to the design of the [onboarding experience]({{ '/guide/onboarding/introduction/' | relative_url }}). Your product should make it easy for users to quickly and successfully solve problems while being introduced to your product's basics and best practices. This sets expectations for future interactions. If the first use is frustrating, users are less likely to use your product again—or to recommend it.
 
+For Bitcoin wallets, the first use can be a difficult balance between creating a simple, seamless experience and ensuring good security practices. A second aspect is to consider how you can set users up for repeat use. An empty wallet is not that useful, so try to offer simple ways to [fund it]({{ '/guide/onboarding/funding-a-wallet/' | relative_url }}) or [receive]({{ '/guide/payments/receive/' | relative_url }}) bitcoin.
+
 </div>
 
 ## Regular use
@@ -125,7 +135,9 @@ The user decides to move forward with your product. They are still not familiar 
    layout = "float-left"
 %}
 
-The user becomes familiar with your product and uses it in a more sophisticated way. Their mental model of your product becomes closer to yours. Repeat use also implies that users have made your product a part of their lives. While first-time users are typically non-committal, repeat users are willing to put in more work to get the most out of products.
+The user becomes familiar with your product and uses it in a more sophisticated way (see [common user flows]({{ '/guide/designing-products/common-user-flows/' | relative_url }})). Their mental model of your product becomes closer to yours. Repeat use also implies that users have made your product a part of their lives. While first-time users are typically non-committal, repeat users are willing to put in more work to get the most out of products.
+
+The amount of funds in these users wallets likely also increases, making your product even more critical for them. Make sure to offer users easy ways to stay on top of good security practices (see [personal finance]({{ '/guide/designing-products/personal-finance/' | relative_url }})).
 
 </div>
 
@@ -161,9 +173,9 @@ These are expert users with high expectations. They will express firm wishes, pr
    layout = "float-right-desktop"
 %}
 
-Expects to lose users at every step in the life cycle. This is unavoidable. If you understand where and why they drop off, you can at least reduce the likelihood of it happening by solving for the issues that cause dropoff.
+Expect to lose users at every step in the life cycle. This is unavoidable. If you understand where and why they drop off, you can at least reduce the likelihood of it happening by solving for the issues that cause dropoff.
 
-There are various [user research]({{ '/guide/designing-products/user-research/' | relative_url }}) techniques that can help identify and solve these types of issues.
+There are various [user research]({{ '/guide/designing-products/user-research/' | relative_url }}) techniques and [resources]({{ '/guide/designing-products/user-research/resources' | relative_url }}) that can help identify and solve these types of issues.
 
 </div>
 
