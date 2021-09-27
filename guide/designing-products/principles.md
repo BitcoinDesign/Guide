@@ -102,11 +102,11 @@ layout="float-left"
 
 Self-custody often leaves the end-user responsible for the security of their private keys. They can only do a good job of that if we provide them with appropriate tools and awareness of best practices.
 
-Security is especially important when onboarding people new to Bitcoin. For example, new users are likely to start by only storing small amounts. After a while, however, they may get more comfortable with the idea of self-custody. The concept of progressive security is a good idea here, starting with automatic cloud backups. This would let a user upgrade their security and private key management scheme as their savings grow. Although common, recovery phrases that require manual backup might backfire for new users not yet familiar with safe backup practices.
+Security is especially important when onboarding people who are new to Bitcoin. For example, new users are likely to start by only storing small amounts. After a while, they may become more comfortable with the idea of self-custody and begin to store larger amounts. The concept of progressive security is a good idea here, starting with [automatic cloud backups]({{'/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/' | relative_url}}). This would let a user upgrade their security and private key management scheme as their savings grow. Although common, recovery phrases that require [manual backup]({{'/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/' | relative_url}}) might backfire for new users not yet familiar with safe backup practices.
 
 Education and awareness are a big part of security, as they can protect users from bad actors and potentially their own security mistakes. It is unrealistic to expect beginners to take in all the knowledge acquired by advanced users in one go, for example, while [onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}) to a Bitcoin product. We should therefore consider how to continuously educate and level up user awareness of best practices and risks.
 
-Security can also be a feeling. A polished, good-looking, easy-to-use product that transparently communicates how it works can help users feel more secure– especially when compared to another product with the same security measures - but lacks these qualities.
+Security can also be a feeling. A polished, good-looking, easy-to-use product that transparently communicates how it works can help users feel more secure, especially when compared to another product that lacks these qualities but has the same security measures.
 
 
 **Do**
