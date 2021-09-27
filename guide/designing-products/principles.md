@@ -117,7 +117,6 @@ Security can also be a feeling. A polished, good-looking, easy-to-use product th
 - Build with bad actors in mind
 - Minimize risk of self-inflicted loss from user negligence
 - Continuously educate users on best practice and risks
-- Reduce attack surfaces by minimizing use of external code dependencies
 
 **Don't**
 - Blame the user for losing funds
