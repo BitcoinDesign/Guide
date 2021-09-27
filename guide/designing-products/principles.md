@@ -179,16 +179,18 @@ height = 150
 layout="float-left"
 %}
 
-### Enable import and export of wallets, maximise backwards compatibility and use of open standards
+### Enable import and export of wallet data, maximize backwards compatibility, and use open standards
 
 </div>
 
 Bitcoin is an open-source protocol, operating in a decentralized manner. This has led to a number of standards being developed to ensure compatibility between products. It should be easy to switch and move your Bitcoin wallet to a different application, should you wish. Ensuring that your product supports as many of these standards as possible is best practice and builds trust. More on [wallet interoperability]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }}).
 
 **Do**
-- Support import and export of wallets
-- Support as many relevant BIPs as possible
-- Be transparent with which ones you do and don’t support
+- Support import and export of wallet data
+    - For on-chain wallets, allow users to export and import wallets directly
+    - For Lightning wallets, make a clear path for the user to move their Lightning funds to another wallet should they choose
+- Support as many relevant BIPs and BOLTs as possible
+    - Be transparent with which ones you do and don’t support
 - Maximize backwards compatibility
 
 **Don't**
