@@ -144,7 +144,7 @@ layout="float-left"
 
 </div>
 
-There are no background checks, credit checks, or gatekeepers to Bitcoin. A Kenyan farmer has the same access to Bitcoin as a Wall Street trader.
+There are no background checks, credit checks, or gatekeepers to Bitcoin. A Kenyan farmer should have the same access to Bitcoin as a Wall Street trader.
 
 While Bitcoin is already used by a large number of people, it pales in comparison with the many more that are likely to use it in the future. We need to design products that are prepared for people unfamiliar with Bitcoin. This means using plain and familiar language, explaining things in the context where they are needed, not overwhelming people with technical detail, and more.
 
