@@ -253,8 +253,9 @@ The Bitcoin network doesn’t need to know your name for you to use it. Strive t
 
 **Do**
 - Minimize the personal information you collect
+- Encourage usage of the Lightning network for improved privacy
 - Avoid address reuse
-- Embrace privacy-preserving options when relevant (running a full node, compact block filters, Tor, Lightning Network, coin selection, schnorr signatures, payjoin, coinswap, etc.)
+- Embrace privacy-preserving options when relevant (running a full node, compact block filters, Tor, coin selection, schnorr signatures, payjoin, coinswap, etc.)
 
 **Don't**
 - Collect and store personal information not required for the functionality of your product
