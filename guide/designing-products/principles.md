@@ -247,7 +247,7 @@ layout="float-left"
 
 </div>
 
-A common misconception of Bitcoin is that it provides complete anonymity and privacy of transactions. Since the blockchain is an unchangeable ledger of all transactions ever made, it is very hard not to have your complete transaction history visible once even a single one of your addresses is connected to you. If Bitcoin is to become viable for a wider audience and daily use, we should take privacy seriously. This is certainly not to enable or encourage illicit activity but to protect individual financial privacy. We would not accept our bank to publish our financial transactions to our Twitter or Facebook feeds, so we should avoid that scenario with Bitcoin.
+A common misconception of Bitcoin is that it provides complete anonymity and privacy of transactions. Since the blockchain is an unchangeable ledger of all transactions ever made, your complete transaction history could become visible once even a single one of your addresses is connected to you. If Bitcoin is to become viable for a wider audience and daily use, we should take privacy seriously. This is certainly not to enable or encourage illicit activity but to protect individual financial privacy. We would not accept it if our bank published our financial transactions to our Twitter or Facebook feeds, so we should avoid a similar scenario with Bitcoin.
 
 The Bitcoin network doesn’t need to know your name for you to use it. Strive to collect as little personal information as possible about your users. When absolutely required to provide the product services, collect only the bare minimum and consider if and when this can be discarded when no longer necessary. If you collect personal information, be transparent about why and how you will use and store it.
 
