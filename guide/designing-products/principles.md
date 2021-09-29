@@ -188,7 +188,7 @@ Bitcoin is an open-source protocol, operating in a decentralized manner. This ha
 - Support import and export of wallet data
     - For on-chain wallets, allow users to export and import wallets directly
     - For Lightning wallets, offer a clear path for the user to move their Lightning funds to another wallet
-- Support as many relevant BIPs and BOLTs as possible
+- Support as many relevant [BIPs]({{'/guide/glossary/#bip---bitcoin-improvement-proposal' | relative_url}}) and BOLTs as possible
     - Be transparent with which ones you do and don’t support
 - Maximize backwards compatibility
 
