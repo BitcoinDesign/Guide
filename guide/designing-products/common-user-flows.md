@@ -251,7 +251,8 @@ See the [onboarding section](/guide/onboarding/introduction/) to learn more on t
    layout = "float-left"
 %}
 
-It is essential to distinguish between wallet software and the wallet representing the user's "account." This particular experience may be almost invisible or highly elaborate. While some mobile wallet applications choose to create and secure a wallet during the first launch automatically, other wallets provide extensive configuration wizards.
+By _wallet_, we normally mean the wallet [_application_](/guide/glossary/wallet/#wallet-application). Here we will talk about creating the [_Bitcoin wallet_](/guide/glossary/wallet/#bitcoin-wallet), the private key(s) that the software interacts with to control funds on the Bitcoin blockchain.
+A good starting point today is an [HD wallet](/guide/glossary/wallet/#hd-wallet) implemented according to [BIP](/guide/glossary/#bip---bitcoin-improvement-proposal)32, 39, 43, 44, 49 and 84. But not all Bitcoin wallets are created this way, as new standards and technologies have emerged over time.
 
 </div>
 
