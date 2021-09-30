@@ -252,9 +252,12 @@ See the [onboarding section](/guide/onboarding/introduction/) to learn more on t
 %}
 
 By _wallet_, we normally mean the wallet [_application_](/guide/glossary/wallet/#wallet-application). Here we will talk about creating the [_Bitcoin wallet_](/guide/glossary/wallet/#bitcoin-wallet), the private key(s) that the software interacts with to control funds on the Bitcoin blockchain.
-A good starting point today is an [HD wallet](/guide/glossary/wallet/#hd-wallet) implemented according to [BIP](/guide/glossary/#bip---bitcoin-improvement-proposal)32, 39, 43, 44, 49 and 84. But not all Bitcoin wallets are created this way, as new standards and technologies have emerged over time.
 
 </div>
+
+A good starting point today is an [HD wallet](/guide/glossary/wallet/#hd-wallet) implemented according to [BIP](/guide/glossary/#bip---bitcoin-improvement-proposal)32, 39, 43, 44, 49 and 84. But not all Bitcoin wallets are created this way, as new standards and technologies have emerged over time.
+
+Some older software may create wallets with outdated technical formats, while others allow users to choose specific formats for their particular needs. Generally, this is difficult to understand for regular users and should either be automatically handled with good default settings, or explained in layman terms. The Wallets Recovery project provides a great overview of different implementations and how nuanced some of the differences are.
 
 Not all wallets are the same as new standards have emerged over time. So some software may create wallets via outdated technical formats, and others allow users to choose different technical formats during wallet creation for wider compatibility with other software. [Wallets Recovery](https://github.com/nvk/wallets-recovery){:target="_blank"} provides a great overview of different implementations and how nuanced some of the differences are. Generally, these differences are very difficult to understand for regular users and should either be automatically handled by the system, or explained in layman terms.
 
