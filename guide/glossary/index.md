@@ -89,6 +89,10 @@ A standardized technical document format for suggesting improvements to Bitcoin.
 - [BIP173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki): *Bech32* standard for native SegWit addresses
 - [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki): Partially Signed Bitcoin Transaction Format
 
+### BOLT - Basis of Lightning Technology
+
+A standardized technical document format for the Lightning network protocol specifications. They are hosted on Github [here](https://github.com/lightningnetwork/lightning-rfc). The various Lightning implementations must adhere to the BOLTs in order to be interoperable. However, some Lightning implementations may have features which are not defined in BOLTs.
+
 ### Coin control
 
 <div class="center" markdown="1">
@@ -124,7 +128,7 @@ As it is possible to trace the history of coins and see how they were previously
 %}
 
 Allow for combining multiple payments from multiple spenders into a single transaction to make it harder to determine which spender paid which recipient(s). See also [PayJoin](#payjoin-p2ep).
- 
+
  **References:**
 
 - [WabiSabi](https://github.com/zkSNACKs/WabiSabi/blob/master/explainer.md)
@@ -180,7 +184,7 @@ Bitcoin wallets and addresses are have both [public](#public-key) and [private k
 
 ### Lightning Network
 
-The [Lightning Network]({{ 'https://lightning.network' }}) extends Bitcoin with payment channels to increase transaction speed and lower costs. It is becoming widely adopted and accepted as the preferred way to scale Bitcoin. 
+The [Lightning Network]({{ 'https://lightning.network' }}) extends Bitcoin with payment channels to increase transaction speed and lower costs. It is becoming widely adopted and accepted as the preferred way to scale Bitcoin.
 
 ### Miniscript
 
