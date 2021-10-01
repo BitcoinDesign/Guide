@@ -102,11 +102,11 @@ layout="float-left"
 
 Self-custody often leaves the end-user responsible for the security of their private keys. They can only do a good job of that if we provide them with appropriate tools and awareness of best practices.
 
-Security is especially important when onboarding people new to Bitcoin. For example, new users are likely to start by only storing small amounts. After a while, however, they may get more comfortable with the idea of self-custody. The concept of progressive security is a good idea here, starting with automatic cloud backups. This would let a user upgrade their security and private key management scheme as their savings grow. Although common, recovery phrases that require manual backup might backfire for new users not yet familiar with safe backup practices.
+Security is especially important when onboarding people who are new to Bitcoin. For example, new users are likely to start by only storing small amounts. After a while, they may become more comfortable with the idea of self-custody and begin to store larger amounts. The concept of progressive security is a good idea here, starting with [automatic cloud backups]({{'/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/' | relative_url}}). This would let a user upgrade their security and private key management scheme as their savings grow. Although common, recovery phrases that require [manual backup]({{'/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/' | relative_url}}) might backfire for new users not yet familiar with safe backup practices.
 
 Education and awareness are a big part of security, as they can protect users from bad actors and potentially their own security mistakes. It is unrealistic to expect beginners to take in all the knowledge acquired by advanced users in one go, for example, while [onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}) to a Bitcoin product. We should therefore consider how to continuously educate and level up user awareness of best practices and risks.
 
-Security can also be a feeling. A polished, good-looking, easy-to-use product that transparently communicates how it works can help users feel more secure– especially when compared to another product with the same security measures - but lacks these qualities.
+Security can also be a feeling. A polished, good-looking, easy-to-use product that transparently communicates how it works can help users feel more secure, especially when compared to another product that lacks these qualities but has the same security measures.
 
 
 **Do**
@@ -117,7 +117,6 @@ Security can also be a feeling. A polished, good-looking, easy-to-use product th
 - Build with bad actors in mind
 - Minimize risk of self-inflicted loss from user negligence
 - Continuously educate users on best practice and risks
-- Reduce attack surfaces by minimizing use of external code dependencies
 
 **Don't**
 - Blame the user for losing funds
@@ -145,7 +144,7 @@ layout="float-left"
 
 </div>
 
-There are no background checks, credit checks, or gatekeepers to Bitcoin. A Kenyan farmer has the same access to Bitcoin as a Wall Street trader.
+There are no background checks, credit checks, or gatekeepers to Bitcoin. A Kenyan farmer should have the same access to Bitcoin as a Wall Street trader.
 
 While Bitcoin is already used by a large number of people, it pales in comparison with the many more that are likely to use it in the future. We need to design products that are prepared for people unfamiliar with Bitcoin. This means using plain and familiar language, explaining things in the context where they are needed, not overwhelming people with technical detail, and more.
 
@@ -179,16 +178,18 @@ height = 150
 layout="float-left"
 %}
 
-### Enable import and export of wallets, maximise backwards compatibility and use of open standards
+### Enable import and export of wallet data, maximize backwards compatibility, and use open standards
 
 </div>
 
 Bitcoin is an open-source protocol, operating in a decentralized manner. This has led to a number of standards being developed to ensure compatibility between products. It should be easy to switch and move your Bitcoin wallet to a different application, should you wish. Ensuring that your product supports as many of these standards as possible is best practice and builds trust. More on [wallet interoperability]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }}).
 
 **Do**
-- Support import and export of wallets
-- Support as many relevant BIPs as possible
-- Be transparent with which ones you do and don’t support
+- Support import and export of wallet data
+    - For on-chain wallets, allow users to export and import wallets directly
+    - For Lightning wallets, offer a clear path for the user to move their Lightning funds to another wallet
+- Support as many relevant [BIPs]({{'/guide/glossary/#bip---bitcoin-improvement-proposal' | relative_url}}) and [BOLTs]({{'/guide/glossary/#bolt---basis-of-lightning-technology' | relative_url}}) as possible
+    - Be transparent with which ones you do and don’t support
 - Maximize backwards compatibility
 
 **Don't**
@@ -216,7 +217,7 @@ layout="float-left"
 
 </div>
 
-While an open and decentralized financial system that users can connect with directly is great, it puts a burden on them to choose a product that they trust and like to use. We can make this easier by freely sharing information about how our products work and what technologies they use/rely on. By open-sourcing your code, you can let people verify that your claims are true, ultimately building more trust with your users. It is important to be transparent with users about the risks that come with self-custodying funds. Be sure to educate about scenarios where they may risk losing access to their funds along with best practices for avoiding this.
+While an open and decentralized financial system that users can connect with directly is great, it puts a burden on them to choose a product that they trust and like to use. We can make this easier by freely sharing information about how our products work and what technologies they use/rely on. By open-sourcing your code, you can let people verify that your claims are true, ultimately building more trust with your users. It is important to be transparent with users about the risks that come with self-custodying funds. Be sure to educate them about scenarios where they may risk losing access to their funds along with best practices for avoiding this.
 
 **Do**
 - Be open and transparent with how your product works
@@ -245,14 +246,15 @@ layout="float-left"
 
 </div>
 
-A common misconception of Bitcoin is that it provides complete anonymity and privacy of transactions. Since the blockchain is an unchangeable ledger of all transactions ever made, it is very hard not to have your complete transaction history visible once even a single one of your addresses is connected to you. If Bitcoin is to become viable for a wider audience and daily use, we should take privacy seriously. This is certainly not to enable or encourage illicit activity but to protect individual financial privacy. We would not accept our bank to publish our financial transactions to our Twitter or Facebook feeds, so we should avoid that scenario with Bitcoin.
+A common misconception of Bitcoin is that it provides complete anonymity and privacy of transactions. Since the blockchain is an unchangeable ledger of all transactions ever made, your complete transaction history could become visible once even a single one of your addresses is connected to you. If Bitcoin is to become viable for a wider audience and daily use, we should take privacy seriously. This is certainly not to enable or encourage illicit activity but to protect individual financial privacy. We would not accept it if our bank published our financial transactions to our Twitter or Facebook feeds, so we should avoid a similar scenario with Bitcoin.
 
 The Bitcoin network doesn’t need to know your name for you to use it. Strive to collect as little personal information as possible about your users. When absolutely required to provide the product services, collect only the bare minimum and consider if and when this can be discarded when no longer necessary. If you collect personal information, be transparent about why and how you will use and store it.
 
 **Do**
 - Minimize the personal information you collect
+- Encourage usage of the Lightning network for improved privacy
 - Avoid address reuse
-- Embrace privacy-preserving options when relevant (running a full node, compact block filters, Tor, Lightning Network, coin selection, schnorr signatures, payjoin, coinswap, etc.)
+- Embrace privacy-preserving options when relevant (running a full node, compact block filters, Tor, coin selection, schnorr signatures, payjoin, coinswap, etc.)
 
 **Don't**
 - Collect and store personal information not required for the functionality of your product
