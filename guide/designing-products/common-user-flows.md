@@ -427,6 +427,8 @@ Once a user has requested payment, they are naturally interested in knowing when
 
 A user may also want to check in and see if any previous requests have not been completed yet. This is easily possible if the user has initiated all requests on the same wallet and used a new address for each one. In this case, a request can be considered fulfilled if at least one payment has been received with the total amount the user asked for. It is not as clear if addresses are getting re-used (how to tell which payment was for which purpose?) or the request has been made with another wallet (as this meta data is not stored and synced via the Bitcoin network).
 
+On the Lightning network, receiving bitcoin requires an invoice. This makes it easy to track if payments have been completed or not.
+
 </div>
 
 ## Managing transactions
