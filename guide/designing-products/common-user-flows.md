@@ -466,6 +466,8 @@ This is not only helpful to users but can also help improve privacy. Since the i
 
 In some circumstances, users need to move all their funds to a new wallet. This may be because a wallet is potentially compromised, a simple change of software, or a migration to a wallet with a security setup that is more appropriate to the number of funds stored. Whichever it may be, this can be a vital function for users that applications should support. While it is easy to send all funds to a new address simply, additional meta and state data stored in wallet applications also need to be considered.
 
+The fact that transactions on the Lightning network requires invoices created by the receiver makes management easier, as they can add details to any incoming payments before they arrive.
+
 </div>
 
 ## Wallet maintenance
