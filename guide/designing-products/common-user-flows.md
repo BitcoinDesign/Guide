@@ -251,13 +251,17 @@ See the [onboarding section](/guide/onboarding/introduction/) to learn more on t
    layout = "float-left"
 %}
 
-It is essential to distinguish between wallet software and the wallet representing the user's "account." This particular experience may be almost invisible or highly elaborate. While some mobile wallet applications choose to create and secure a wallet during the first launch automatically, other wallets provide extensive configuration wizards.
+By _wallet_, we normally mean the [_wallet application_](/guide/glossary/wallet/#wallet-application). In this context, we will instead talk about creating the [_bitcoin wallet_](/guide/glossary/wallet/#bitcoin-wallet) (the data structure which stores and manages the user's private key(s), which the software interacts with to control funds on the Bitcoin blockchain.
 
 </div>
 
-Not all wallets are the same as new standards have emerged over time. So some software may create wallets via outdated technical formats, and others allow users to choose different technical formats during wallet creation for wider compatibility with other software. [Wallets Recovery](https://github.com/nvk/wallets-recovery){:target="_blank"} provides a great overview of different implementations and how nuanced some of the differences are. Generally, these differences are very difficult to understand for regular users and should either be automatically handled by the system, or explained in layman terms.
+A good starting point today is an [HD wallet](/guide/glossary/wallet/#hd-wallet) implemented according to [BIP](/guide/glossary/#bip---bitcoin-improvement-proposal)32, 39, 43, 44, 49, 84 and 380.
 
-One of the most complex users flows in Bitcoin is the creation of multisignature wallets. Multisignature means that there are multiple keys that control the wallet. All keys are required for the creation of the wallet, and users can choose the number of keys required to sign transactions. This is typically done to increase security because it avoids having a single point of failure. For a hacker to get access to 2 out of total of 3 keys that are geographically distributed is much harder than if there is just a single key. While a single user can more easily set up a multisignature wallet with one computer and multiple hardware wallets, it is harder when multiple users hold keys. In that scenario, a file needs to be sent around for each participant to sign. Some wallet software providers hosts servers that seamlessly connect these users. However, this provides another potential attack vector and introduces risk.
+Some older software may create wallets with outdated technical formats, while others allow users to choose specific formats for their particular needs. Generally, this is difficult to understand for regular users and should either be automatically handled with good default settings, or explained in layman terms. The Wallets Recovery project provides a great overview of different implementations and how nuanced some of the differences are. 
+
+Most modern wallet applications should aim to support the Lightning network in addition to the base layer. While there are different options for how the applications interact with a Lightning network node, an HD wallet works fine for storing the required keys.
+
+Wallets can also be created with control shared between several other wallets, so called [multi-key wallets](/guide/private-key-management/multi-key/) (or multi-signature / multi-sig). This is typically done to increase security.
 
 ## Importing an existing wallet
 
