@@ -276,7 +276,7 @@ Wallets can also be created with control shared between several other wallets, s
    layout = "float-left"
 %}
 
-We ask users to securely back up their keys when they create new wallets, to restore them later. This might be due to practical reasons like switching to a new computer or from a laptop to a smartphone. It may also be part of an investment strategy, like when a user wants to access bitcoin from cold storage after not interacting with them for months or years.
+If the user is in possession of the [recovery phrase](/guide/glossary/#recovery-phrase) for a Bitcoin wallet, they should be able to import it into any application that supports the same standards. Other information like [derivation path](/guide/glossary/#derivation-path) and [output descriptors](/guide/glossary/#output-script-descriptor) may be required in some cases.  If the wallet controls funds held in Lightning channels, the correct channel state also needs to be restored. This is an area where standards have yet to emerge. Users are best advised to attempt recovery of a wallet with the same application as the wallet was created with for full compatibility. See also, [Restoring a wallet](/guide/onboarding/restoring-a-wallet/).
 
 </div>
 
