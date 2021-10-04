@@ -363,7 +363,7 @@ To find out more, visit the [Sending bitcoin](/guide/payments/send/) page.
    layout = "float-left"
 %}
 
-Equivalent to creating an invoice, requesting bitcoin involves entering information about this specific transaction and forwarding it to the payer. Overall, there is less complexity involved in this process than sending, but there are a few things for designers to consider.
+Equivalent to creating an invoice, requesting bitcoin involves entering information about this specific transaction and sharing it with the payer.
 </div>
 
 <div class="image-gallery">
@@ -390,11 +390,13 @@ Equivalent to creating an invoice, requesting bitcoin involves entering informat
 
 </div>
 
-While it is initially intuitive to re-use the same receiving address repeatedly, this practice is highly discouraged. Anyone with this address can easily see what other payments are being made and how the bitcoins are spent. The UI should encourage users to create new addresses for each invoice. This also makes it easier for the software to understand when a specific payment has been received.
+For the simplest form of base layer requests, the receiver only needs to share one of their addresses with the sender, who can themselves input the amount.
 
-The most important consideration is around how this request is securely shared and received. When transmitting this information, there is a risk that a third party can intercept it and tamper with it. This can result in Bitcoin getting sent to an attacker's address instead. So it is good to consider offering ways for both payee and payer to verify the accuracy of the information (for example, by allowing them to share the information via two different channels).
+While it is possible  to re-use the same receiving address repeatedly, this practice is highly discouraged for privacy reasons. 
 
-As for data formats for sharing, [BIP 21](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki){:target="_blank"} describes a URI scheme to turn requests into links that can be shared like any other link. On click, wallets that support this scheme can immediately show the send screen with the correct information pre-filled. Links can also be encoded and transmitted via QR code. Since the scheme also allows for the inclusion of an address label and transaction description, it allows both sender and recipient to stay organized.
+For more information-rich base layer requests , [BIP 21](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki) describes a URI scheme to turn requests into links that can be shared like any other link. On click, wallets that support this scheme can immediately show the send screen with the correct information pre-filled. Links can also be encoded and transmitted via QR code. Since the scheme also allows for the inclusion of an address label and transaction description, it allows both sender and recipient to stay organized.
+
+For requests on the Lightning network, the receiver needs to create a lightning invoice that includes the amount, and then share the invoice with the sender. 
 
 ## Receiving bitcoin
 
