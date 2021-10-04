@@ -261,7 +261,7 @@ Some older software may create wallets with outdated technical formats, while ot
 
 Most modern wallet applications should aim to support the Lightning network in addition to the base layer. While there are different options for how the applications interact with a Lightning network node, an HD wallet works fine for storing the required keys.
 
-Creating multi-key wallets (or multi-signature / multi-sig), can be one of the most complex user flows in Bitcoin. This setup means that several keys control the wallet. All keys are required for the creation of the wallet, and users can choose the number of keys required to sign transactions. This is typically done to increase security. For a hacker to get access to several keys that are geographically distributed is much harder than if there is just a single key. While a single user can somewhat easily set up a multisignature wallet with a computer or mobile device and multiple wallets in their possession, it is harder when different people hold keys. In that scenario, a file needs to be sent around for each participant to sign. Some wallet software providers host servers that seamlessly connect these users. However, this provides another potential attack vector and introduces risk.
+Wallets can also be created with control shared between several other wallets, so called [multi-key wallets](/guide/private-key-management/multi-key/) (or multi-signature / multi-sig). This is typically done to increase security.
 
 ## Importing an existing wallet
 
