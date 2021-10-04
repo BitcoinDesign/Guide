@@ -451,7 +451,7 @@ Wallet software can support users and make this easier by offering organizationa
 
 This is not only helpful to users but can also help improve privacy. Since the individual transaction history can be traced, it is helpful to isolate transactions by the sender and/or recipient. If I receive bitcoin from an exchange and then pay a store, then there is a chance that personal information about myself can be uncovered by making that connection. With well-labeled transactions, wallets can help users avoid this type of situation.
 
-## Switch wallets
+## Switching wallets
 
 <div class="center" markdown="1">
 
@@ -464,9 +464,16 @@ This is not only helpful to users but can also help improve privacy. Since the i
    layout = "float-left"
 %}
 
-In some circumstances, users need to move all their funds to a new wallet. This may be because a wallet is potentially compromised, a simple change of software, or a migration to a wallet with a security setup that is more appropriate to the number of funds stored. Whichever it may be, this can be a vital function for users that applications should support. While it is easy to send all funds to a new address simply, additional meta and state data stored in wallet applications also need to be considered.
+There are several reasons a user might want to switch wallets. 
 
-The fact that transactions on the Lightning network requires invoices created by the receiver makes management easier, as they can add details to any incoming payments before they arrive.
+A different wallet application might have features they need, or be better supported than the one they originally created the Bitcoin wallet with. Importing the wallet with the recovery phrase into the new application should be possible, and will be free from fees as no transfer of funds is happening.
+
+The owner may want to increase the security of their wallet, either by using a single-key wallet with a [passphrase](/guide/glossary/#passphrase), or a [multi-key](guide/private-key-management/multi-key/) wallet. As both of these include transferring funds to a new Bitcoin wallet, there will be fees to pay.
+
+In the worst case scenario the wallet might have been compromised, and funds should be saved by sending them all to a different Bitcoin wallet.
+
+Whatever the reason may be, the import and backup of wallets is a vital function for users that applications should support. While it is easy to send all funds to a new address, additional meta and state data stored in wallet applications also need to be considered for full compatibility. Extra care needs to be taken when switching wallets that include funds on the Lightning network, as standards for backing up channel state is yet to emerge. See also, [Wallet interoperability](/guide/designing-products/wallet-interoperability/).
+
 
 </div>
 
