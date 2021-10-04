@@ -293,7 +293,7 @@ If the user is in possession of the [recovery phrase](/guide/glossary/#recovery-
    layout = "float-left"
 %}
 
-Like fiat currencies, securely storing money can be as simple as storing some coins in your pocket or highly complex with multiple banks' safety deposit boxes. For self-custodial wallets, all of this is in the users' hands, although wallet software ideally provides guidelines and support to more easily follow best practices. Continue to the Key Management section for introductions and deep-dives into different techniques.
+Like fiat currencies, securely storing money can be as simple as storing some coins in your pocket or highly complex with multiple banks’ safety deposit boxes. For self-custodial wallets, all of this is in the users’ hands, although wallet software ideally provides guidelines and support to more easily follow best practices. See also, the [Private key management](/guide/private-key-management/introduction/) section and [Protecting a wallet](guide/onboarding/protecting-a-wallet/).
 
 </div>
 
