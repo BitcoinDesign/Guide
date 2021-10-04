@@ -255,7 +255,7 @@ By _wallet_, we normally mean the wallet [_application_](/guide/glossary/wallet/
 
 </div>
 
-A good starting point today is an [HD wallet](/guide/glossary/wallet/#hd-wallet) implemented according to [BIP](/guide/glossary/#bip---bitcoin-improvement-proposal)32, 39, 43, 44, 49 and 84. But not all Bitcoin wallets are created this way, as new standards and technologies have emerged over time.
+A good starting point today is an [HD wallet](/guide/glossary/wallet/#hd-wallet) implemented according to [BIP](/guide/glossary/#bip---bitcoin-improvement-proposal)32, 39, 43, 44, 49, 84 and 380.
 
 Some older software may create wallets with outdated technical formats, while others allow users to choose specific formats for their particular needs. Generally, this is difficult to understand for regular users and should either be automatically handled with good default settings, or explained in layman terms. The Wallets Recovery project provides a great overview of different implementations and how nuanced some of the differences are. 
 
