@@ -314,7 +314,7 @@ To enable recovery of a wallet that uses the manual backup scheme for private ke
    layout = "float-left"
 %}
 
-While we all prefer to receive bitcoin, there are times when we need to send them to others. At the core, sending bitcoin can be a very simple matter of entering an address and bitcoin amount and tapping "Send". It can also scale up to a much more complex interaction when batching transactions, using a multisignature wallet or taking advantage of a privacy-preserving technique like a PayJoin.
+While we all prefer to receive bitcoin, there are times when we need to send them to others. At the core, sending bitcoin can be a very simple matter of entering an address, amount and tapping “Send”. It can also scale up to a much more complex interaction when batching transactions or using a multi-signature wallet.
 
 </div>
 
@@ -342,7 +342,13 @@ While we all prefer to receive bitcoin, there are times when we need to send the
 
 </div>
 
-Once a transaction has been broadcast, the bitcoin network starts processing it. Users may want to stay informed about this progress, particularly when a transaction takes longer than expected. In extreme cases, it is possible to retroactively increase the transaction fee to get validated faster with a Replace-by-Fee technique. To find out more, visit the [Sending bitcoin](/guide/payments/send/) page.
+Bitcoin can be sent two ways; on the primary base layer, or the secondary [Lightning network](/guide/glossary/#lightning-network) layer. 
+
+On the base layer, once a transaction is broadcast from a wallet via a node, the Bitcoin network starts processing it. Users may want to stay informed about this progress, particularly when a transaction takes longer than expected. The average transaction time on the base layer is 10 minutes, but this can vary a lot depending on the fee the sender was willing to pay. In extreme cases, it is possible to retroactively increase the transaction fee to get validated faster with a [Replace-by-Fee](/guide/glossary/#replace-by-fee-rbf) technique.
+
+On the Lightning network, transactions happen inside payment channels that are established on the base layer between the two participants. The state of ownership of the bitcoin within the channel is maintained by the participant Lightning network nodes. Transactions on this layer are almost instant, and have negligible fees. There are however fees to open and close channels as this is recorded on the base layer.
+
+To find out more, visit the [Sending bitcoin](/guide/payments/send/) page.
 
 ## Requesting bitcoin
 
