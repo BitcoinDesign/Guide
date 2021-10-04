@@ -251,7 +251,7 @@ See the [onboarding section](/guide/onboarding/introduction/) to learn more on t
    layout = "float-left"
 %}
 
-By _wallet_, we normally mean the wallet [_application_](/guide/glossary/wallet/#wallet-application). Here we will talk about creating the [_Bitcoin wallet_](/guide/glossary/wallet/#bitcoin-wallet), the private key(s) that the software interacts with to control funds on the Bitcoin blockchain.
+By _wallet_, we normally mean the [_wallet application_](/guide/glossary/wallet/#wallet-application). In this context, we will instead talk about creating the [_bitcoin wallet_](/guide/glossary/wallet/#bitcoin-wallet) (the data structure which stores and manages the user's private key(s), which the software interacts with to control funds on the Bitcoin blockchain.
 
 </div>
 
