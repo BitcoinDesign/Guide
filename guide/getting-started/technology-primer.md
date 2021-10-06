@@ -146,7 +146,7 @@ With thousands of nodes and tens of millions of users worldwide, it also becomes
    layout = "float-right-desktop"
 %}
 
-Instead of processing each transaction individually, the Bitcoin network bundles them into blocks. A new block is created roughly every 10 minutes and can only contain a certain amount of transactions due to a strict file size limit, so transactions with the highest fees typically get chosen first. The new block must link to the one before it. Since this is a continuous process, a chain of blocks forms, hence the name blockchain.
+Instead of processing each transaction individually, the Bitcoin network bundles them into [blocks]({{'/guide/glossary/#hash' | relative_url }}). A new block is created roughly every 10 minutes and can only contain a certain amount of transactions due to a strict file size limit, so transactions with the highest fees typically get chosen first. The new block must link to the one before it. Since this is a continuous process, a chain of blocks forms, hence the name blockchain.
 
 Once a transaction is in a block that the network has accepted, it is considered to have one confirmation. With every new block created, the number of confirmations increases. After 6 confirmations, we consider a transaction fully settled.
 </div>

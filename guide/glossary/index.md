@@ -192,6 +192,27 @@ Same as ypub though the z denotes it is an extended public key from a segregated
 
 To fully verify that all transactions on the bitcoin network are valid, a full node needs to download and examine all previous block-data. This is called the initial block download, after which the node has caught up with the latest transaction activity. This can take several hours, and only after it is complete can wallets linked to the node be used.
 
+## Hash
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/glossary/hashing.jpg"
+   retina = "/assets/images/guide/glossary/hashing@2x.jpg"
+   alt-text = "Example of a message and it's hash"
+   caption = "Example of a SHA-256 hash."
+   width = 400
+   height = 400
+   layout = "float-right-desktop"
+%}
+
+Another fundamental technique to cryptography and Bitcoin is called hashing. It is the process of taking data and applying a function that creates a unique identifier for it. This is called a hash and can be thought of as a fingerprint.
+
+Unlike encryption, a hash does not contain the original data, and the hashing process cannot be reversed. Since hashes are small in size, they are a great way to verify the information's authenticity.
+
+</div>
+
+
 ### Input
 
 When an address receives bitcoin from another address, this is called an input. Transactions can include multiple inputs.
