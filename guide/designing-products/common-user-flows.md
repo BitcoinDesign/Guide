@@ -346,7 +346,7 @@ Bitcoin can be sent two ways; on the primary base layer, or the secondary [Light
 
 On the base layer, once a transaction is broadcast from a wallet via a node, the Bitcoin network starts processing it. Users may want to stay informed about this progress, particularly when a transaction takes longer than expected. The average transaction time on the base layer is 10 minutes, but this can vary a lot depending on the fee the sender was willing to pay. In extreme cases, it is possible to retroactively increase the transaction fee to get validated faster with a [Replace-by-Fee](/guide/glossary/#replace-by-fee-rbf) technique.
 
-On the Lightning network, transactions happen inside payment channels that are established on the base layer between the two participants. The state of ownership of the bitcoin within the channel is maintained by the participant Lightning network nodes. Transactions on this layer are almost instant, and have negligible fees. There are however fees to open and close channels as this is recorded on the base layer.
+On the Lightning network, transactions happen inside payment channels that are established on the base layer between two participants. The state of ownership of the bitcoin within the channel is maintained by the participant Lightning network nodes. Transactions on this layer are almost instant, and have negligible fees. There are however fees to open and close channels as this is recorded on the base layer.
 
 To find out more, visit the [Sending bitcoin](/guide/payments/send/) page.
 
@@ -392,7 +392,7 @@ Equivalent to creating an invoice, requesting bitcoin involves entering informat
 
 For the simplest form of base layer requests, the receiver only needs to share one of their addresses with the sender, who can themselves input the amount.
 
-While it is possible  to re-use the same receiving address repeatedly, this practice is highly discouraged for privacy reasons. 
+While it is possible to re-use the same receiving address repeatedly, this practice is highly discouraged for privacy reasons. 
 
 For more information-rich base layer requests , [BIP 21](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki) describes a URI scheme to turn requests into links that can be shared like any other link. On click, wallets that support this scheme can immediately show the send screen with the correct information pre-filled. Links can also be encoded and transmitted via QR code. Since the scheme also allows for the inclusion of an address label and transaction description, it allows both sender and recipient to stay organized.
 
