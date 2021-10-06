@@ -13,12 +13,18 @@ image: https://bitcoin.design/assets/images/guide/getting-started/technology/tec
 
 Editor's notes
 
-An introduction to bitcoin tech concepts based on simple questions readers might have,
-like "What is a bitcoin" and "How do I own bitcoin". With further reading, more concepts
-are introduced and connections between concepts are made.
+This is the second version of the tech primer that introduces the lightning
+network to the reader. It's an introduction to bitcoin tech concepts
+based on simple questions readers might have, like "What is a bitcoin"
+and "How do I own bitcoin" but also sets up the foundations about
+bitcoin scaling solutions and the "base layer" extensibility.
 
-This is only meant as an overview. As this is a design guide, future additions to this
-content should weigh off whether to add it here, create sub-pages or reference external
+With further reading, more concepts are introduced and connections
+between concepts are made.
+
+This is only meant as an overview. As this is a design guide,
+future additions to this content should weigh off whether to add it
+here, create sub-pages or reference external
 resources.
 
 Illustration sources
@@ -78,7 +84,7 @@ Bitcoin, as in "I have 1 bitcoin," are just numbers in a ledger of transactions 
 Therefore, owning a bitcoin means being in control of one or more addresses that have received bitcoin.
 
 **More info**
-- [Address](#) and [Private key management](#)
+- [Units and symbols]({{ '/guide/payments/units-and-symbols/' | relative_url }}), and [addresses]({{ '/guide/glossary/address' | relative_url }})
 
 <!--
    TODO:
@@ -100,7 +106,10 @@ Therefore, owning a bitcoin means being in control of one or more addresses that
    layout = "float-right-desktop"
 %}
 
-Just as the internet allows computers to exchange information, Bitcoin is a network that enables participants to exchange value. By running the Bitcoin software, you are setting yourself up as a node connected to the Bitcoin network. Some nodes use powerful computers that compete to [verify transactions](#) and update the blockchain for a reward. These nodes are called miners. Others are run by businesses like exchanges or merchants. They are also used by individuals making payments from mobile applications. Since January 3rd, 2009, every transfer of bitcoin made on the network has been permanently recorded in its shared global ledger.
+Just as the internet allows computers to exchange information, the Bitcoin network enables participants to exchange value. By running the Bitcoin software, you are a node connected to the Bitcoin network. Some nodes use powerful computers that compete to [verify transactions]({{'/guide/payments/transactions/' | relative_url }}) and update the blockchain for a reward. These nodes are called miners. Others are run by businesses like exchanges or merchants. They are also used by individuals making payments from mobile applications. Since [January 3rd, 2009](https://blockstream.info/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f){:target="_blank"}, every transfer of bitcoin has been permanently recorded in its shared global ledger.
+
+**More info**
+- Node [software]({{ '/guide/getting-started/software/#nodes' | relative_url }}) and [hardware]({{ '/guide/getting-started/hardware/#nodes' | relative_url }})
 </div>
 
 ## What are the benefits of this ledger?
@@ -108,9 +117,9 @@ Just as the internet allows computers to exchange information, Bitcoin is a netw
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/technology/node.jpg"
-   retina = "/assets/images/guide/getting-started/technology/node@2x.jpg"
-   alt-text = "Several computers connected to form a network"
+   image = "/assets/images/guide/getting-started/technology/public-ledger.jpg"
+   retina = "/assets/images/guide/getting-started/technology/public-ledger@2x.jpg"
+   alt-text = "Transactions are public so can be seen and verified by anyone"
    width = 400
    height = 400
    layout = "float-right-desktop"
@@ -119,6 +128,9 @@ Just as the internet allows computers to exchange information, Bitcoin is a netw
 Imagine a global spreadsheet where all transactions get recorded, and all entries are publicly accessible. With Bitcoin, each participant can verify a transaction themself in their copy of the spreadsheet. In comparison, traditional banks keep their spreadsheets private from one another, including their customers. Besides opportunities for fraud, there are many points of failure due to this, so you can't guarantee a payment will always happen. Even though all transactions are stored publicly on Bitcoin, there is no personally identifiable information attached to them.
 
 With thousands of nodes and tens of millions of users worldwide, it also becomes implausible to manipulate or corrupt the previously agreed-upon transactions stored in the blockchain. To do so would require a majority of nodes to accept such change.
+
+**More info**
+- [Explorer software]({{ '/guide/getting-started/software/#explorers' | relative_url }})
 </div>
 
 ## What is a blockchain?
@@ -144,9 +156,9 @@ Once a transaction is in a block that the network has accepted, it is considered
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/technology/block.jpg"
-   retina = "/assets/images/guide/getting-started/technology/block@2x.jpg"
-   alt-text = "Simplified block graphic containing multiple transactions"
+   image = "/assets/images/guide/getting-started/technology/mining-a-block.jpg"
+   retina = "/assets/images/guide/getting-started/technology/mining-a-block@2x.jpg"
+   alt-text = "Transactions moving from the mempool into a block"
    width = 400
    height = 400
    layout = "float-right-desktop"
@@ -154,7 +166,10 @@ Once a transaction is in a block that the network has accepted, it is considered
 
 While miners check that the transactions included in the block are valid, they must also be kept accountable that the information they are submitting is correct. While checking transactions for a new block, miners must also race to solve a cryptographic puzzle as proof that they have correctly done the verification. This process is called Proof of Work, and it is fundamental to the security of the blockchain. As compensation, the first miner to submit a valid block to the network, solving the puzzle, will earn all the fees from the transactions in the block and a block reward.
 
-Because of these security properties, we also call the Bitcoin blockchain the "base layer".
+We also call the Bitcoin blockchain "base layer" due to the strong security it provides.
+
+**More info**
+- Mining [software]({{ '/guide/getting-started/software/#mining-software' | relative_url }}) and [hardware]({{ '/guide/getting-started/hardware/#mining-hardware' | relative_url }})
 </div>
 
 ## Do all transactions have to be this secure?
@@ -162,9 +177,9 @@ Because of these security properties, we also call the Bitcoin blockchain the "b
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/technology/blockchain.jpg"
-   retina = "/assets/images/guide/getting-started/technology/blockchain@2x.jpg"
-   alt-text = "Several blocks chained together via their hashes"
+   image = "/assets/images/guide/getting-started/technology/layers.jpg"
+   retina = "/assets/images/guide/getting-started/technology/layers@2x.jpg"
+   alt-text = "Other networks connected to the Bitcoin blockchain"
    width = 400
    height = 400
    layout = "float-right-desktop"
@@ -180,9 +195,9 @@ To scale as a currency of the internet and meet the demands of the global econom
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/technology/blockchain.jpg"
-   retina = "/assets/images/guide/getting-started/technology/blockchain@2x.jpg"
-   alt-text = "Several blocks chained together via their hashes"
+   image = "/assets/images/guide/getting-started/technology/smart-contract.jpg"
+   retina = "/assets/images/guide/getting-started/technology/smart-contract@2x.jpg"
+   alt-text = "Bitcoin transaction facilitating the movement of funds Between two addresses"
    width = 400
    height = 400
    layout = "float-right-desktop"
@@ -208,22 +223,16 @@ There are multiple scaling solutions built on top of Bitcoin's base layer, but w
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/technology/blockchain.jpg"
-   retina = "/assets/images/guide/getting-started/technology/blockchain@2x.jpg"
-   alt-text = "Several blocks chained together via their hashes"
+   image = "/assets/images/guide/getting-started/technology/payment-channel.jpg"
+   retina = "/assets/images/guide/getting-started/technology/payment-channel@2x.jpg"
+   alt-text = "Several payment channels settling on the Bitcoin blockchain"
    width = 400
    height = 400
    layout = "float-right-desktop"
 %}
 
-A payment channel is a joint account where two parties agree to bypass recording their payments on the blockchain. Opening a payment channel involves locking up some funds together in a transaction which enables faster and cheaper subsequent payments. Instead of publishing a transaction for new payments, the two parties update their balance in the payment channel by creating a transaction but don't publish it.
+A payment channel is a [joint account]({{'/guide/glossary/#multi-signature-wallet-multisig' | relative_url }}) where two parties agree to bypass recording their payments on the blockchain. Opening a payment channel involves locking up some funds together in a transaction which enables faster and cheaper subsequent payments. Instead of publishing a transaction for new payments, the two parties update their balance in the payment channel by creating a transaction but don't publish it.
 
-<!-- 
-**More info**
-- Payment channel lifecycle
-
-... when you create payment channel, funds are locked in a transaction...
--->
 </div>
 
 ## The Bitcoin lightning payments network
@@ -231,18 +240,17 @@ A payment channel is a joint account where two parties agree to bypass recording
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/technology/blockchain.jpg"
-   retina = "/assets/images/guide/getting-started/technology/blockchain@2x.jpg"
-   alt-text = "Several blocks chained together via their hashes"
+   image = "/assets/images/guide/getting-started/technology/lightning-network.jpg"
+   retina = "/assets/images/guide/getting-started/technology/lightning-network@2x.jpg"
+   alt-text = "Lightning nodes connected to one another"
    width = 400
    height = 400
    layout = "float-right-desktop"
 %}
 
-The lightning network is essentially a network of these payment channels. Lightning nodes allow you to have multiple channels with different parties, and this new network forms a Bitcoin layer 2.
+The lightning network is essentially a network of these payment channels. Lightning nodes allow you to have multiple channels with different parties so you route your payments though. This new network forms a second layer on top of Bitcoin.
 
 Lighting has some privacy benefits too since payments are not individually recorded on the blockchain. Only when the channel is opened and the final settlement transaction gets broadcasted when closing the payment channel.
-
 </div>
 
 ## What are the ways to receive bitcoin?
@@ -258,7 +266,7 @@ Lighting has some privacy benefits too since payments are not individually recor
    layout = "float-right-desktop"
 %}
 
-To transfer bitcoin, the recipient needs to provide the sender with the destination of the payment. This is typically done in the recipient's wallet application by generating an address on the base layer or an invoice for Lightning payments. ​​While base layer transactions are updating balances on the public ledger, Lightning invoices contain information for a payment to be routed through the network of payment channels.
+To transfer bitcoin, the recipient needs to provide the sender with the destination of the payment. This is typically done in the recipient's wallet application by generating an address on the base layer or an invoice for Lightning payments. While base layer transactions are updating balances on the public ledger, Lightning invoices contain information for a payment to be routed through the network of payment channels.
 
 </div>
 
@@ -267,8 +275,8 @@ To transfer bitcoin, the recipient needs to provide the sender with the destinat
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/technology/addresses.jpg"
-   retina = "/assets/images/guide/getting-started/technology/addresses@2x.jpg"
+   image = "/assets/images/guide/getting-started/technology/routing.jpg"
+   retina = "/assets/images/guide/getting-started/technology/routing@2x.jpg"
    alt-text = "Examples of addresses in a bitcoin wallet"
    width = 400
    height = 400
@@ -294,30 +302,6 @@ To make a Lightning payment, you don't need to open a channel with everyone you 
 -->
 </div>
 
-<!--
-## What is a node?
-
-<div class="center" markdown="1">
-
-{% include image.html
-   image = "/assets/images/guide/getting-started/technology/node.jpg"
-   retina = "/assets/images/guide/getting-started/technology/node@2x.jpg"
-   alt-text = "Several computers connected to form a network"
-   width = 400
-   height = 400
-   layout = "float-right-desktop"
-%}
-
-While miners create blocks, nodes verify, distribute and store blocks. Like miners, nodes are computers communicating with each other, constantly exchanging information to ensure that the Bitcoin protocol rules are adhered to.
-
-With thousands of nodes worldwide, operated by many different people, it becomes almost impossible to manipulate data this network has agreed upon. It would require at least half of these nodes to collude.
-
-**More info**
-- Node [software]({{ '/guide/getting-started/software/#nodes' | relative_url }}) and [hardware]({{ '/guide/getting-started/hardware/#nodes' | relative_url }})
-
-</div>
--->
-
 ## What are hot and cold private keys?
 
 <div class="center" markdown="1">
@@ -336,7 +320,7 @@ Just like a key for a door, a private key gives you access to your bitcoin. Priv
 Lightning node private keys are referred to as hot as they are stored on a device that is connected to the internet. This is not typically advised for storing large amounts as it is possible for a remote attacker to get access to that device. A more secure way to store private keys is cold storage, which is not connected to the internet.
 
 **More info** 
-- [Private key management](#)
+- [Private key management]({{'/guide/private-key-management/introduction/' | relative_url }}) and [public key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography){:target="_blank"}
 </div>
 
 ## Signature
