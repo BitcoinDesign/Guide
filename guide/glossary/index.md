@@ -90,6 +90,23 @@ A standardized technical document format for suggesting improvements to Bitcoin.
 - [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki): Partially Signed Bitcoin Transaction Format
 - [BIP380](https://github.com/bitcoin/bips/blob/master/bip-0380.mediawiki): Output Script Descriptors General Operation
 
+### Block
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/glossary/block.jpg"
+   retina = "/assets/images/guide/glossary/block@2x.jpg"
+   alt-text = "Simplified block graphic containing multiple transactions"
+   width = 400
+   height = 400
+   layout = "float-right-desktop"
+%}
+
+Instead of processing each transaction individually, the Bitcoin network bundles them into blocks. Blocks are created roughly every 10 minutes and can only contain a certain amount of transactions due to a strict file size limit. Once a block is accepted and has several confirmations, it can never be changed again.
+
+</div>
+
+
 ### BOLT - Basis of Lightning Technology
 
 A standardized technical document format for the Lightning network protocol specifications. They are hosted on Github [here](https://github.com/lightningnetwork/lightning-rfc). The various Lightning implementations must adhere to the BOLTs in order to be interoperable. However, some Lightning implementations may have features which are not defined in BOLTs.
