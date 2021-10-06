@@ -468,7 +468,7 @@ There are several reasons a user might want to switch wallets.
 
 A different wallet application might have features they need, or be better supported than the one they originally created the Bitcoin wallet with. Importing the wallet with the recovery phrase into the new application should be possible, and will be free from fees as no transfer of funds is happening.
 
-The owner may want to increase the security of their wallet, either by using a single-key wallet with a [passphrase](/guide/glossary/#passphrase), or a [multi-key](guide/private-key-management/multi-key/) wallet. As both of these include transferring funds to a new Bitcoin wallet, there will be fees to pay.
+The owner may want to increase the security of their wallet, either by using a single-key wallet with a [passphrase](/guide/glossary/#passphrase), or a [multi-key](/guide/private-key-management/multi-key/) wallet. As both of these include transferring funds to a new Bitcoin wallet, there will be fees to pay.
 
 In the worst case scenario the wallet might have been compromised, and funds should be saved by sending them all to a different Bitcoin wallet.
 
