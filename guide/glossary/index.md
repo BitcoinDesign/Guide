@@ -188,11 +188,7 @@ Same as xpub however the y denotes that this xpub belongs to a wallet that is fo
 
 Same as ypub though the z denotes it is an extended public key from a segregated witness enabled wallet following [BIP84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki).
 
-### Initial block download (IBD)
-
-To fully verify that all transactions on the bitcoin network are valid, a full node needs to download and examine all previous block-data. This is called the initial block download, after which the node has caught up with the latest transaction activity. This can take several hours, and only after it is complete can wallets linked to the node be used.
-
-## Hash
+### Hash
 
 <div class="center" markdown="1">
 
@@ -201,9 +197,9 @@ To fully verify that all transactions on the bitcoin network are valid, a full n
    retina = "/assets/images/guide/glossary/hashing@2x.jpg"
    alt-text = "Example of a message and it's hash"
    caption = "Example of a SHA-256 hash."
+   layout = "float-right-desktop"
    width = 400
    height = 400
-   layout = "float-right-desktop"
 %}
 
 Another fundamental technique to cryptography and Bitcoin is called hashing. It is the process of taking data and applying a function that creates a unique identifier for it. This is called a hash and can be thought of as a fingerprint.
@@ -212,6 +208,9 @@ Unlike encryption, a hash does not contain the original data, and the hashing pr
 
 </div>
 
+### Initial block download (IBD)
+
+To fully verify that all transactions on the bitcoin network are valid, a full node needs to download and examine all previous block-data. This is called the initial block download, after which the node has caught up with the latest transaction activity. This can take several hours, and only after it is complete can wallets linked to the node be used.
 
 ### Input
 
