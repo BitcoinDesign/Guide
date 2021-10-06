@@ -117,8 +117,8 @@ Just as the internet allows computers to exchange information, the Bitcoin netwo
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/technology/public-ledger.jpg"
-   retina = "/assets/images/guide/getting-started/technology/public-ledger@2x.jpg"
+   image = "/assets/images/guide/getting-started/technology/public.jpg"
+   retina = "/assets/images/guide/getting-started/technology/public@2x.jpg"
    alt-text = "Transactions are public so can be seen and verified by anyone"
    width = 400
    height = 400
