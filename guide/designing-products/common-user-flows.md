@@ -276,7 +276,7 @@ Wallets can also be created with control shared between several other wallets, s
    layout = "float-left"
 %}
 
-If the user is in possession of the [recovery phrase](/guide/glossary/#recovery-phrase) for a Bitcoin wallet, they should be able to import it into any application that supports the same standards. Some technical caveats apply, generally users are best advised to attempt recovery of a wallet with the same application as the wallet was created with for full compatibility. See also, [Wallet interoperability](/guide/designing-products/wallet-interoperability/), and [Restoring a wallet](/guide/onboarding/restoring-a-wallet/).
+If the user is in possession of the [recovery phrase](/guide/glossary/#recovery-phrase) for a Bitcoin wallet, they should be able to import it into any application that supports the same standards. Some technical caveats apply, generally users are best advised to attempt recovery of a wallet with the same application as the wallet was created with for full compatibility. See also, [Wallet interoperability](/guide/designing-products/wallet-interoperability/) and [Restoring a wallet](/guide/onboarding/restoring-a-wallet/).
 
 </div>
 
