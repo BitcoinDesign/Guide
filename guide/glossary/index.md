@@ -185,7 +185,7 @@ Bitcoin wallets and addresses are have both [public](#public-key) and [private k
 
 ### Lightning invoice
 
-An Lightning invoice is used by users of the Lightning network to request a payment. It is defined by [BOLT 11](https://github.com/lightningnetwork/lightning-rfc/blob/master/11-payment-encoding.md) and includes an amount to be paid, destination of the payment, and an optional message. Unlike Bitcoin addresses Lightning invoice's expire after a set amount of time. 
+Users of the Lightning network use a Lightning invoice to request a payment. It is defined by [BOLT 11](https://github.com/lightningnetwork/lightning-rfc/blob/master/11-payment-encoding.md) and includes an amount to be paid, destination of the payment, and an optional message. Unlike Bitcoin addresses, Lightning invoice's expire after a set amount of time. 
 
 ### Lightning network
 
