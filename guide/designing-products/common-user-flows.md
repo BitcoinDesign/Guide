@@ -472,7 +472,7 @@ The owner may want to increase the security of their wallet, either by using a s
 
 In the worst case scenario the wallet might have been compromised, and funds should be saved by sending them all to a different Bitcoin wallet.
 
-Whatever the reason may be, the import and backup of wallets is a vital function for users that applications should support. While it is easy to send all funds to a new address, additional meta and state data stored in wallet applications also need to be considered for full compatibility. Extra care needs to be taken when switching wallets that include funds on the Lightning network, as standards for backing up channel state is yet to emerge. See also, [Wallet interoperability](/guide/designing-products/wallet-interoperability/).
+Whatever the reason may be, the import and backup of wallets is a vital function for users that applications should support. While it is easy to send all funds to a new address, additional meta and state data stored in wallet applications also need to be considered for full compatibility. It's not recommended to switch wallets that include funds on the Lightning network, as standards for backing up channel state have yet to emerge. See also, [Wallet interoperability](/guide/designing-products/wallet-interoperability/).
 
 
 </div>
