@@ -263,23 +263,6 @@ Most modern wallet applications should aim to support the Lightning network in a
 
 Wallets can also be created with control shared between several other wallets, so called [multi-key wallets](/guide/private-key-management/multi-key/) (or multi-signature / multi-sig). This is typically done to increase security.
 
-## Importing an existing wallet
-
-<div class="center" markdown="1">
-
-{% include image.html
-   image = "/assets/images/guide/designing-products/common-user-flows/import-wallet.jpg"
-   retina = "/assets/images/guide/designing-products/common-user-flows/import-wallet@2x.jpg"
-   alt-text = ""
-   width = 100
-   height = 100
-   layout = "float-left"
-%}
-
-If the user is in possession of the [recovery phrase](/guide/glossary/#recovery-phrase) for a Bitcoin wallet, they should be able to import it into any application that supports the same standards. Some technical caveats apply, generally users are best advised to attempt recovery of a wallet with the same application as the wallet was created with for full compatibility. See also, [Wallet interoperability](/guide/designing-products/wallet-interoperability/) and [Restoring a wallet](/guide/onboarding/restoring-a-wallet/).
-
-</div>
-
 ## Securing a wallet
 
 <div class="center" markdown="1">
@@ -300,6 +283,23 @@ Like fiat currencies, securely storing funds can be as simple as storing some co
 ## Backing up a wallet
 
 To enable recovery of a wallet that uses the manual backup scheme for private key management, we should ask users to securely back up their keys with their recovery phrase (and for full compatibility, [derivation path](/guide/glossary/#derivation-path) and [output descriptors](/guide/glossary/#output-script-descriptor)) when they create new wallets.  See also, [Wallet interoperability](/guide/designing-products/wallet-interoperability/) and [Bitcoin backups](/guide/private-key-management/backups/).
+
+## Importing an existing wallet
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/designing-products/common-user-flows/import-wallet.jpg"
+   retina = "/assets/images/guide/designing-products/common-user-flows/import-wallet@2x.jpg"
+   alt-text = ""
+   width = 100
+   height = 100
+   layout = "float-left"
+%}
+
+If the user is in possession of the [recovery phrase](/guide/glossary/#recovery-phrase) for a Bitcoin wallet, they should be able to import it into any application that supports the same standards. Some technical caveats apply, generally users are best advised to attempt recovery of a wallet with the same application as the wallet was created with for full compatibility. See also, [Wallet interoperability](/guide/designing-products/wallet-interoperability/) and [Restoring a wallet](/guide/onboarding/restoring-a-wallet/).
+
+</div>
 
 ## Sending bitcoin
 
