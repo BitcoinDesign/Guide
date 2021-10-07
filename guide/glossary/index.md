@@ -183,7 +183,11 @@ When an address receives bitcoin from another address, this is called an input. 
 
 Bitcoin wallets and addresses are have both [public](#public-key) and [private keys](#private-key) associated to them. The private key controls access to funds and the ability to sign (approve) transactions.
 
-### Lightning Network
+### Lightning invoice
+
+An Lightning invoice is used by users of the Lightning network to request a payment. It is defined by [BOLT 11](https://github.com/lightningnetwork/lightning-rfc/blob/master/11-payment-encoding.md) and includes an amount to be paid, destination of the payment, and an optional message. Unlike Bitcoin addresses Lightning invoice's expire after a set amount of time. 
+
+### Lightning network
 
 The [Lightning Network]({{ 'https://lightning.network' }}) extends Bitcoin with payment channels to increase transaction speed and lower costs. It is becoming widely adopted and accepted as the preferred way to scale Bitcoin.
 
