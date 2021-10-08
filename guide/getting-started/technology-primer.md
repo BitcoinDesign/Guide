@@ -106,7 +106,7 @@ Therefore, owning a bitcoin means being in control of one or more addresses that
    layout = "float-right-desktop"
 %}
 
-Just as the internet allows computers to exchange information, the Bitcoin network enables participants to exchange value. By running the Bitcoin software, you are a node connected to the Bitcoin network. Some nodes use powerful computers that compete to [verify transactions]({{'/guide/payments/transactions/' | relative_url }}) and update the blockchain for a reward. These nodes are called miners. Others are run by businesses like exchanges or merchants. They are also used by individuals making payments from mobile applications. Since [January 3rd, 2009](https://blockstream.info/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f){:target="_blank"}, every transfer of bitcoin has been permanently recorded in its shared global ledger.
+Just as the internet allows computers to exchange information, the Bitcoin network enables participants to exchange value. By running the Bitcoin software, you are running a node connected to the Bitcoin network. Some nodes use powerful computers that compete to [verify transactions]({{'/guide/payments/transactions/' | relative_url }}) and update the blockchain for a reward. These nodes are called miners. Others are run by businesses like exchanges or merchants. They are also used by individuals making payments from mobile applications. Since [January 3rd, 2009](https://blockstream.info/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f){:target="_blank"}, every transfer of bitcoin has been permanently recorded in its shared global ledger.
 
 **More info**
 - Node [software]({{ '/guide/getting-started/software/#nodes' | relative_url }}) and [hardware]({{ '/guide/getting-started/hardware/#nodes' | relative_url }})
@@ -125,9 +125,9 @@ Just as the internet allows computers to exchange information, the Bitcoin netwo
    layout = "float-right-desktop"
 %}
 
-Imagine a global spreadsheet where all transactions get recorded, and all entries are publicly accessible. With Bitcoin, each participant can verify a transaction themself in their copy of the spreadsheet. In comparison, traditional banks keep their spreadsheets private from one another, including their customers. Besides opportunities for fraud, there are many points of failure due to this, so you can't guarantee a payment will always happen. Even though all transactions are stored publicly on Bitcoin, there is no personally identifiable information attached to them.
+Imagine a global spreadsheet where all transactions get recorded, and all entries are publicly accessible. With Bitcoin, each participant can verify a transaction for themselves in their copy of the spreadsheet. In comparison, traditional banks keep their spreadsheets private from each other and their customers. Besides opportunities for fraud, there are many points of failure due to this, so you can't guarantee a payment will always happen. Even though all transactions are stored publicly on Bitcoin, there is no personally identifiable information attached to them.
 
-With thousands of nodes and tens of millions of users worldwide, it also becomes implausible to manipulate or corrupt the previously agreed-upon transactions stored in the blockchain. To do so would require a majority of nodes to accept such change.
+With thousands of nodes and tens of millions of users worldwide, it becomes implausible to manipulate or corrupt the previously agreed-upon transactions stored in the blockchain. To do so would require a majority of nodes to accept such a change.
 
 **More info**
 - [Explorer software]({{ '/guide/getting-started/software/#explorers' | relative_url }})
@@ -146,7 +146,7 @@ With thousands of nodes and tens of millions of users worldwide, it also becomes
    layout = "float-right-desktop"
 %}
 
-Instead of processing each transaction individually, the Bitcoin network bundles them into [blocks]({{'/guide/glossary/#hash' | relative_url }}). A new block is created roughly every 10 minutes and can only contain a certain amount of transactions due to a strict file size limit, so transactions with the highest fees typically get chosen first. The new block must link to the one before it. Since this is a continuous process, a chain of blocks forms, hence the name blockchain.
+Instead of processing each transaction individually, the Bitcoin network bundles them into [blocks]({{'/guide/glossary/#hash' | relative_url }}). A new block is created roughly every 10 minutes. A strict file size limit results in the transactions with the highest fees typically getting chosen first. Every new block must link to the one before it. Since this is a continuous process, a chain of blocks forms, hence the name blockchain.
 
 Once a transaction is in a block that the network has accepted, it is considered to have one confirmation. With every new block created, the number of confirmations increases. After 6 confirmations, we consider a transaction fully settled.
 </div>
@@ -231,11 +231,11 @@ There are multiple scaling solutions built on top of Bitcoin's base layer, but w
    layout = "float-right-desktop"
 %}
 
-A payment channel is a [joint account]({{'/guide/glossary/#multi-signature-wallet-multisig' | relative_url }}) where two parties agree to bypass recording their payments on the blockchain. Opening a payment channel involves locking up some funds together in a transaction which enables faster and cheaper subsequent payments. Instead of publishing a transaction for new payments, the two parties update their balance in the payment channel by creating a transaction but don't publish it.
+A payment channel is a [joint account]({{'/guide/glossary/#multi-signature-wallet-multisig' | relative_url }}) where two parties agree to bypass recording their payments on the blockchain. Opening a payment channel involves them locking up funds in a transaction. This enables faster and cheaper subsequent payments between the two parties as they only update their balances in the payment channel. For each update, a  new transaction is created, but it is only published when the parties agree to close the channel.
 
 </div>
 
-## The Bitcoin lightning payments network
+## The Lightning payment network
 
 <div class="center" markdown="1">
 
@@ -248,7 +248,7 @@ A payment channel is a [joint account]({{'/guide/glossary/#multi-signature-walle
    layout = "float-right-desktop"
 %}
 
-The lightning network is essentially a network of these payment channels. Lightning nodes allow you to have multiple channels with different parties so you route your payments though. This new network forms a second layer on top of Bitcoin.
+The Lightning network is essentially a network of these payment channels. Lightning nodes allow you to have multiple channels with different parties to route payments through. This new network forms a second layer on top of Bitcoin.
 
 Lighting has some privacy benefits too since payments are not individually recorded on the blockchain. Only when the channel is opened and the final settlement transaction gets broadcasted when closing the payment channel.
 </div>
