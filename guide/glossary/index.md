@@ -321,6 +321,23 @@ An algorithm to generate cryptographic signatures. One of the benefits is that t
 
 Segregated Witness, or SegWit, is the name for a soft fork change in the transaction format of Bitcoin. It was described in [BIP141](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki). It was intended to mitigate a blockchain size limitation problem that reduces bitcoin transaction speed. It does this by splitting the transaction into two segments, removing the unlocking signature (*witness* data) from the original portion and appending it as a separate structure at the end. The original section hold the sender and receiver data, and the new *witness* structure contain scripts and signatures.
 
+### Signature
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/glossary/signature.jpg"
+   retina = "/assets/images/guide/glossary/signature@2x.jpg"
+   alt-text = "Illustration of a transaction signature"
+   width = 400
+   height = 400
+   layout = "float-right-desktop"
+%}
+
+Since a private key can be used to prove that the holder controls a specific address, it can therefore authorize transactions from the address. This is called a digital signature.
+
+One of the most important activities of the Bitcoin network is to verify that signatures are valid.
+</div>
+
 ### Taproot
 
 A technique that makes complex multisig transactions look the same as standard transactions on the blockchain. This improves both efficiency and privacy, as multiple signatures are combined into a single one.

@@ -323,23 +323,6 @@ Lightning node private keys are referred to as hot as they are stored on a devic
 - [Private key management]({{'/guide/private-key-management/introduction/' | relative_url }}) and [public key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography){:target="_blank"}
 </div>
 
-## Signature
-<div class="center" markdown="1">
-
-{% include image.html
-   image = "/assets/images/guide/getting-started/technology/signature.jpg"
-   retina = "/assets/images/guide/getting-started/technology/signature@2x.jpg"
-   alt-text = "Illustration of a transaction signature"
-   width = 400
-   height = 400
-   layout = "float-right-desktop"
-%}
-
-Since a private key can be used to prove that the holder controls a specific address, it can therefore authorize transactions from the address. This is called a digital signature.
-
-One of the most important activities of the Bitcoin network is to verify that signatures are valid.
-</div>
-
 ### There's a lot more
 
 These are some of the basic technical concepts that make Bitcoin work. Each one individually is complex, and the interplay between them is a whole other area of interest. Dive into the other chapters in this guide to explore the technology and its applications in more detail.
