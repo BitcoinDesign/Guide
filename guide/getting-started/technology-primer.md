@@ -240,7 +240,7 @@ The Lightning network is essentially a network of these payment channels. Lightn
 Lighting has some privacy benefits too since payments are not individually recorded on the blockchain. Only when the channel is opened and the final settlement transaction gets broadcasted when closing the payment channel.
 </div>
 
-## What are the ways to receive bitcoin?
+## What are ways to receive bitcoin?
 
 <div class="center" markdown="1">
 
@@ -253,7 +253,7 @@ Lighting has some privacy benefits too since payments are not individually recor
    layout = "float-right-desktop"
 %}
 
-To transfer bitcoin, the recipient needs to provide the sender with the destination of the payment. This is typically done in the recipient's wallet application by generating an address on the base layer or an invoice for Lightning payments. While base layer transactions are updating balances on the public ledger, Lightning invoices contain information for a payment to be routed through the network of payment channels.
+To transfer bitcoin, the recipient needs to provide the sender with the destination for the payment. On the base layer, this is typically done in the recipient's wallet application by generating and sharing an address. For Lightning payments, an invoice is used. While base layer transactions update balances on the public ledger, Lightning invoices contain information for a payment to be routed through the network of payment channels.
 
 </div>
 
