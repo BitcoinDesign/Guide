@@ -106,7 +106,6 @@ Instead of processing each transaction individually, the Bitcoin network bundles
 
 </div>
 
-
 ### BOLT - Basis of Lightning Technology
 
 A standardized technical document format for the Lightning network protocol specifications. They are hosted on Github [here](https://github.com/lightningnetwork/lightning-rfc). The various Lightning implementations must adhere to the BOLTs in order to be interoperable. However, some Lightning implementations may have features which are not defined in BOLTs.

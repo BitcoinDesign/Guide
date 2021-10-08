@@ -133,9 +133,9 @@ With thousands of nodes and tens of millions of users worldwide, it becomes impl
    layout = "float-right-desktop"
 %}
 
-Instead of processing each transaction individually, the Bitcoin network bundles them into [blocks]({{'/guide/glossary/#hash' | relative_url }}). A new block is created roughly every 10 minutes. A strict file size limit results in the transactions with the highest fees typically getting chosen first. Every new block must link to the one before it. Since this is a continuous process, a chain of blocks forms, hence the name blockchain.
+Instead of processing each transaction individually, the Bitcoin network bundles them into [blocks]({{'/guide/glossary/#block' | relative_url }}). A new block is created roughly every 10 minutes. A strict file size limit results in the transactions with the highest fees typically getting chosen first. Every new block must link to the one before it. Since this is a continuous process, a chain of blocks forms, hence the name blockchain.
 
-Once a transaction is in a block that the network has accepted, it is considered to have one confirmation. With every new block created, the number of confirmations increases. After 6 confirmations, we consider a transaction fully settled.
+Once a transaction is in a block that the network has accepted, it is considered to have one confirmation. With every new block created, the number of [confirmations]({{ '/guide/payments/transactions/#7-confirmations' | relative_url }}) increases.
 </div>
 
 ## How is the blockchain secured?
@@ -235,9 +235,7 @@ A payment channel is a [joint account]({{'/guide/glossary/#multi-signature-walle
    layout = "float-right-desktop"
 %}
 
-The Lightning network is essentially a network of these payment channels. Lightning nodes allow you to have multiple channels with different parties to route payments through. This new network forms a second layer on top of Bitcoin.
-
-Lighting has some privacy benefits too since payments are not individually recorded on the blockchain. Only when the channel is opened and the final settlement transaction gets broadcasted when closing the payment channel.
+The Lightning network is a network of payment channels. Lightning nodes allow you to have multiple channels with different parties to route payments through. This new network forms a second layer on top of Bitcoin and has some privacy benefits too since payments are not individually recorded on the blockchain. Only when the channel is opened and the final settlement transaction gets broadcasted when closing the payment channel.
 </div>
 
 ## What are ways to receive bitcoin?
