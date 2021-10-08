@@ -68,6 +68,39 @@ collaborations:
         link: https://zeusln.app/
       - name: Collaboration
         link: https://github.com/BitcoinDesign/Meta/issues/70
+  - name: Hello Bitcoin
+    description: Your friendly place to learn about bitcoin.
+    image:
+      url: /assets/images/contribute/hello-bitcoin.png
+      width: 75
+      height: 75
+    links:
+      - name: Site
+        link: https://hellobitco.in/
+      - name: Collaboration
+        link: https://github.com/BitcoinDesign/Meta/issues/170
+  - name: Bitcoin Smiles
+    description: Raising bitcoin for dentistry treatments.
+    image:
+      url: /assets/images/contribute/bitcoin-smiles.png
+      width: 75
+      height: 75
+    links:
+      - name: Site
+        link: https://bitcoinsmiles.org/
+      - name: Twitter
+        link: https://twitter.com/BitcoinSmiles
+  - name: Alby
+    description: Lightning buzz for your Browser.
+    image:
+      url: /assets/images/contribute/alby.png
+      width: 75
+      height: 75
+    links:
+      - name: Site
+        link: https://getalby.com/
+      - name: Collaboration
+        link: https://github.com/BitcoinDesign/Meta/issues/113
 ---
 
 <!--
