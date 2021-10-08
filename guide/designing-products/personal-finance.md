@@ -84,7 +84,7 @@ This is the “cash”—or in this case of Bitcoin, the “sats”—that we us
 
 Nearly all of these payments happen outside of our homes. This makes mobile wallet apps for smartphones ideal replacements for physical cash. Convenient camera access allows for payment via QR code, and NFC support ([Near-Field Communication](https://en.wikipedia.org/wiki/Near-field_communication){:target="_blank"}) lets us pay by holding our phones next to card readers.
 
-For small, frequent payments, we generally accept greater risk in exchange for convenience, ultimately protecting these funds with fewer security precautions. This is standard practice even among traditional financial service providers. One example is that you may not need to sign or enter the PIN for credit card payments if the amount is below $25. The only thing that may be required to transact is entering a 4-digit PIN or authentication via face recognition.
+For small, frequent payments, we generally accept greater risk in exchange for convenience, ultimately protecting these funds with fewer security precautions. This is standard practice even among traditional financial service providers. For example, if a payment amount is below $25: you may not need to sign for a credit card payment; you may use a debit card which only requires entering a 4-digit PIN; or you may use a payment app which authenticates with face recognition.
 
 {% include picture.html
    image = "/assets/images/guide/designing-products/personal-finance/daily-spending-wallet-setup.jpg"
