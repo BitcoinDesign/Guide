@@ -224,6 +224,23 @@ Bitcoin wallets and addresses are have both [public](#public-key) and [private k
 
 The [Lightning Network]({{ 'https://lightning.network' }}) extends Bitcoin with payment channels to increase transaction speed and lower costs. It is becoming widely adopted and accepted as the preferred way to scale Bitcoin.
 
+### Mempool
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/technology/mempool.jpg"
+   retina = "/assets/images/guide/getting-started/technology/mempool@2x.jpg"
+   alt-text = "A user wallet pushing a transaction into the mempool"
+   width = 400
+   height = 400
+   layout = "float-right-desktop"
+%}
+
+Every transaction needs to be confirmed before the recipient can consider the involved bitcoin theirs. This waiting line for new transactions is called the mempool. The Bitcoin network can only process a certain amount of transactions per day, so it may take longer to process your transactions during busy times. Transactions that involve higher fees are typically processed faster.
+
+</div>
+
 ### Miniscript
 
 A language for writing certain types of Bitcoin Scripts in a structured way. Miniscript is easier to read by developers, and also allows for various build-tools to help ensure that scripts are safe, valid, and efficient.
