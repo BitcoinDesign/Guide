@@ -153,7 +153,7 @@ Once a transaction is in a block that the network has accepted, it is considered
 
 While miners check that the transactions included in the block are valid, they must also be kept accountable that the information they are submitting is correct. While checking transactions for a new block, miners must also race to solve a cryptographic puzzle as proof that they have correctly done the verification. This process is called Proof of Work, and it is fundamental to the security of the blockchain. As compensation, the first miner to submit a valid block to the network, solving the puzzle, will earn all the fees from the transactions in the block and a block reward.
 
-We also call the Bitcoin blockchain "base layer" due to the strong security it provides.
+We also call the Bitcoin blockchain "base layer" as it provides strong security, and is the foundation for other things to be built on top.
 
 **More info**
 - Mining [software]({{ '/guide/getting-started/software/#mining-software' | relative_url }}) and [hardware]({{ '/guide/getting-started/hardware/#mining-hardware' | relative_url }})
