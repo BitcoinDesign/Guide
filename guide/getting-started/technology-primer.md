@@ -79,17 +79,9 @@ It's both. Lowercase bitcoin refers to the currency. So you may have 1 bitcoin i
    layout = "float-right-desktop"
 %}
 
-Bitcoin, as in "I have 1 bitcoin," are just numbers in a ledger of transactions referred to as the Bitcoin blockchain. Transactions assign bitcoin from one address to another. This process reduces the available balance of the sending address and increases the balance of the receiving address. A small amount is used as the transaction fee to pay for the verification.
+You can own [fractions of 1 bitcoin]({{ '/guide/payments/units-and-symbols/' | relative_url }}), they are just numbers in a digital ledger of transactions. We call that ledger the Bitcoin blockchain. Transactions are used to assign bitcoin from one [address]({{ '/guide/glossary/address' | relative_url }}) to another. This process reduces the available balance of the sending address and increases the balance of the receiving address. A small amount has to be added as the fee to pay for the verification.
 
 Therefore, owning a bitcoin means being in control of one or more addresses that have received bitcoin.
-
-**More info**
-- [Units and symbols]({{ '/guide/payments/units-and-symbols/' | relative_url }}), and [addresses]({{ '/guide/glossary/address' | relative_url }})
-
-<!--
-   TODO:
-      - mention that bitcoin is divisable.
--->
 
 </div>
 
@@ -106,10 +98,8 @@ Therefore, owning a bitcoin means being in control of one or more addresses that
    layout = "float-right-desktop"
 %}
 
-Just as the internet allows computers to exchange information, the Bitcoin network enables participants to exchange value. By running the Bitcoin software, you are running a node connected to the Bitcoin network. Some nodes use powerful computers that compete to [verify transactions]({{'/guide/payments/transactions/' | relative_url }}) and update the blockchain for a reward. These nodes are called miners. Others are run by businesses like exchanges or merchants. They are also used by individuals making payments from mobile applications. Since [January 3rd, 2009](https://blockstream.info/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f){:target="_blank"}, every transfer of bitcoin has been permanently recorded in its shared global ledger.
+Just as the internet allows computers to exchange information, the Bitcoin network enables participants to exchange value. By running the [Bitcoin software]({{ '/guide/getting-started/software/#nodes' | relative_url }}), you are running a node connected to the Bitcoin network. Some nodes use [powerful computers]({{ '/guide/getting-started/hardware/#nodes' | relative_url }}) that compete to [verify transactions]({{'/guide/payments/transactions/' | relative_url }}) and update the blockchain for a reward. These nodes are called miners. Others are run by businesses like exchanges or merchants. They are also used by individuals making payments from mobile applications. Since [January 3rd, 2009](https://blockstream.info/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f){:target="_blank"}, every transfer of bitcoin has been permanently recorded in its shared global ledger. 
 
-**More info**
-- Node [software]({{ '/guide/getting-started/software/#nodes' | relative_url }}) and [hardware]({{ '/guide/getting-started/hardware/#nodes' | relative_url }})
 </div>
 
 ## What are the benefits of this ledger?
