@@ -202,7 +202,7 @@ Same as ypub though the z denotes it is an extended public key from a segregated
    height = 400
 %}
 
-Another fundamental technique to cryptography and Bitcoin is called hashing. It is the process of taking data and applying a function that creates a unique identifier for it. This is called a hash and can be thought of as a fingerprint.
+Hashing is a fundamental technique to cryptography and Bitcoin. It is the process of taking data and applying a function that creates a unique identifier for it. This is called a hash and can be thought of as a fingerprint.
 
 Unlike encryption, a hash does not contain the original data, and the hashing process cannot be reversed. Since hashes are small in size, they are a great way to verify the information's authenticity.
 
