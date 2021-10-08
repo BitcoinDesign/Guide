@@ -115,12 +115,9 @@ Just as the internet allows computers to exchange information, the Bitcoin netwo
    layout = "float-right-desktop"
 %}
 
-Imagine a global spreadsheet where all transactions get recorded, and all entries are publicly accessible. With Bitcoin, each participant can verify a transaction for themselves in their copy of the spreadsheet. In comparison, traditional banks keep their spreadsheets private from each other and their customers. Besides opportunities for fraud, there are many points of failure due to this, so you can't guarantee a payment will always happen. Even though all transactions are stored publicly on Bitcoin, there is no personally identifiable information attached to them.
+Imagine a global spreadsheet where all transactions get recorded, and all entries are publicly accessible. With Bitcoin, each participant can [verify a transaction for themselves]({{ '/guide/getting-started/software/#explorers' | relative_url }) in their copy of the spreadsheet. In comparison, traditional banks keep their spreadsheets private from each other and their customers. Besides opportunities for fraud, there are many points of failure due to this, so you can't guarantee a payment will always happen. Even though all transactions are stored publicly on Bitcoin, there is no personally identifiable information attached to them.
 
 With thousands of nodes and tens of millions of users worldwide, it becomes implausible to manipulate or corrupt the previously agreed-upon transactions stored in the blockchain. To do so would require a majority of nodes to accept such a change.
-
-**More info**
-- [Explorer software]({{ '/guide/getting-started/software/#explorers' | relative_url }})
 </div>
 
 ## What is a blockchain?
