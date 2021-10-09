@@ -208,7 +208,7 @@ Your application should support interfacing with the various [hardware wallets](
    layout = "float-right-desktop"
 %}
 
-Your application should support constructing and managing transaction files, also known as the [Partially Signed Bitcoin Transactions (PSBTs)](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki). This type of file allows for storage and transfer of transactions that are not finalized. PSBTs allow signing wallets to be offline, as the transaction data can be transferred via USB or animated QR codes. This is particularly useful if users want to open a payment channel directly from their cold storage.
+Your application should support constructing and managing transaction files, also known as [Partially Signed Bitcoin Transactions (PSBTs)](/guide/glossary/#partially-signed-bitcoin-transaction-psbt). This type of file allows for storage and transfer of transactions that are not finalized. PSBTs allow signing wallets to be offline, as the transaction data can be transferred via USB or animated QR codes. This is particularly useful if users want to open a payment channel directly from their cold storage.
 
 </div>
 
