@@ -52,14 +52,13 @@ When a user generates a new wallet, it creates something called a recovery phras
 When new users are presented with a recovery phrase, they are often asked to write 12 or 24 words on a piece of paper and store it safely. This kind of recovery scheme can create an unfamiliar and frustrating onboarding experience. It also poses potential threats to the safety of their funds, as new users may not know how to properly store their recovery phrase, increasing the risk of losing it. It also creates a decent amount of friction, ultimately driving new users away from self-custodying their bitcoin.
 
 Regardless of the type of scheme you decide to go with, it’s crucial to be explicit about how your product is handling key management.
+</div>
 
 {% include tip/recommendation.html %}
 
 We recommend that the optimal phase to hint the user to perform the backup should be after the wallet has received funds for the first time. This way we avoid overwhelming the user with an unnecessary task, as it just makes sense to backup a wallet that has funds on it.
 
 {% include tip/close.html %}
-
-</div>
 
 Recent [studies](https://voskart.de/pdf/bits_under_mattress.pdf) show users are often confused or unaware of where their private keys are being stored, ultimately causing inadequate risk assessment and poor storage behavior. This risk of user negligence may be avoided with transparent messaging around the scheme your wallet is using.
 
