@@ -191,7 +191,7 @@ If your application uses the Lightning Network, users will be running their own 
    layout = "float-right-desktop"
 %}
 
-Your application should support interfacing with the various hardware wallets (HWW) that exist on the market.  This can be different from one hardware wallet to the next and can mean supporting things like PSBTs, animated QR codes and having support for the hardware wallet interface (HWI). 
+Your application should support interfacing with the various [hardware wallets](/guide/getting-started/hardware/#hardware-wallets) (HWW) that exist on the market.  This can be different from one hardware wallet to the next and can mean supporting things like PSBTs, animated QR codes and having support for the hardware wallet interface (HWI). 
 
 </div>
 
