@@ -53,7 +53,11 @@ When new users are presented with a recovery phrase, they are often asked to wri
 
 Regardless of the type of scheme you decide to go with, it’s crucial to be explicit about how your product is handling key management.
 
-We consider that the optimal phase to hint the user to perform this backup is right after the wallet has received funds for the first time. This way, we can avoid overwhelming the user with an unnecessary task, as it just makes sense to backup a wallet that has funds on it.
+{% include tip/recommendation.html %}
+
+We recommend that the optimal phase to hint the user to perform the backup should be after the wallet has received funds for the first time. This way we avoid overwhelming the user with an unnecessary task, as it just makes sense to backup a wallet that has funds on it.
+
+{% include tip/close.html %}
 
 </div>
 
