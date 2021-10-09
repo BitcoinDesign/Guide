@@ -54,9 +54,9 @@ Below are areas within your Bitcoin application where interoperability should be
    layout = "float-right-desktop"
 %}
 
-You should ensure your application is interoperable with the various forms of sending and receiving Bitcoin payments. For on-chain, this means supporting the sending and receiving of the various address formats such as legacy (P2PKH), compatibility addresses (P2SH) and Segwit addresses (Bech32). For Lightning payments your application should be able to read and generate invoices according to the BOLT 11 standard. 
+You should ensure your application is interoperable with the various techniques for sending and receiving Bitcoin payments. For on-chain, this means supporting various [address formats](/guide/glossary/address/), such as legacy (P2PKH), compatibility addresses (P2SH), and Segwit addresses (Bech32). For Lightning payments, your application should be able to read and generate invoices according to the [BOLT 11](/guide/glossary/#bolt---basis-of-lightning-technology) standard. 
 
-You may want to also support more experimental Lightning payment options such as BOLT 12 offers, keysends, and LNURL. If your application does not support these, you should be sure to include a human readable failure state.
+You may want to also support more experimental Lightning payment options such as [BOLT 12 offers](https://bolt12.org/), [Keysend](https://lightning.readthedocs.io/lightning-keysend.7.html), and [LNURL](https://github.com/fiatjaf/lnurl-rfc). If your application does not support these, you should be sure to include a human-readable failure state.
 
 Bitcoin payment links and the underlying data should also be readable by your application. Forms should be automatically opened and filled in your application when a user clicks a payment link or button. Payment metadata is defined in [BIP 21](https://bips.xyz/21) for on-chain addresses and [BOLT 11](https://github.com/lightningnetwork/lightning-rfc/blob/master/11-payment-encoding.md) for Lightning invoices.
 
@@ -119,7 +119,7 @@ For the same reasons outlined in payments above, your application should be able
 
 Some Bitcoin use cases include payments, importing wallet keys from a backup, or constructing a multisig-wallet.
 
-Although QR codes are a well-established and standardized format, there are details to consider. For example, it is [more efficient](https://bitcoinops.org/en/bech32-sending-support/#creating-more-efficient-qr-codes-with-bech32-addresses) to encode uppercase characters. So it is recommended to uppercase data that is not case sensitive such as Bitcoin addresses.
+Although QR codes are a well-established and standardized format, there are details to consider. For example, it is [more efficient](https://bitcoinops.org/en/bech32-sending-support/#creating-more-efficient-qr-codes-with-bech32-addresses) to encode uppercase characters. So it is recommended to uppercase data that is not case sensitive, such as Bitcoin addresses.
 
 Static QR codes can only contain small amounts of information. If you need to include more information an animated QR code can be used. This  splits up the data over multiple static QR codes. Animated QR codes are often used for transferring partially signed bitcoin transactions (PSBTs) which can be quite large. You should ensure your application can read animated QRs if relevant.
 
@@ -155,7 +155,7 @@ Most Bitcoin applications rely on external data sources (like currency conversio
    layout = "float-right-desktop"
 %}
 
-Although every application will have it’s own unique interface, there are some elements that are beneficial to keep consistent across applications that overall improve user experience. This includes things like naming conventions, icons, unit formatting, etc. We have many suggestions throughout this design guide to help you.
+Although every application will have it’s own unique interface, there are certain elements that are beneficial to keep consistent across applications, in order to improve the overall user experience. This includes things like [naming conventions](/guide/glossary/), [icons](https://bitcoinicons.com), [unit formatting](/guide/payments/units-and-symbols/), etc. We have many suggestions throughout this design guide to help you.
 
 </div>
 
@@ -191,7 +191,7 @@ If your application uses the Lightning Network, users will be running their own 
    layout = "float-right-desktop"
 %}
 
-Your application should support interfacing with the various hardware wallets (HWW) that exist on the market.  This can be different from one hardware wallet to the next and can mean supporting things like PSBTs, animated QR codes and having support for the hardware wallet interface (HWI). 
+Your application should support interfacing with the various [hardware wallets](/guide/getting-started/hardware/#hardware-wallets) (HWW) that exist on the market.  This can be different from one hardware wallet to the next and can mean supporting things like PSBTs, animated QR codes and having support for the hardware wallet interface (HWI). 
 
 </div>
 
@@ -208,11 +208,11 @@ Your application should support interfacing with the various hardware wallets (H
    layout = "float-right-desktop"
 %}
 
-Your application should support constructing and managing transaction files, also known as the [Partially Signed Bitcoin Transactions (PSBTs)](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki). This type of file allows for storage and transfer of transactions that are not finalized. PSBTs allow signing wallets to be offline, as the transaction data can be transferred via USB or animated QR codes. This is particularly useful if users want to open a payment channel directly from their cold storage.
+Your application should support constructing and managing transaction files, also known as [Partially Signed Bitcoin Transactions (PSBTs)](/guide/glossary/#partially-signed-bitcoin-transaction-psbt). This type of file allows for storage and transfer of transactions that are not finalized. PSBTs allow signing wallets to be offline, as the transaction data can be transferred via USB or animated QR codes. This is particularly useful if users want to open a payment channel directly from their cold storage.
 
 </div>
 
-## Multi signature wallets
+## Multi-key wallets
 
 <div class="center" markdown="1">
 
