@@ -212,7 +212,7 @@ Your application should support constructing and managing transaction files, als
 
 </div>
 
-## Multi signature wallets
+## Multi-key wallets
 
 <div class="center" markdown="1">
 
