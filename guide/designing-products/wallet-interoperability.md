@@ -155,7 +155,7 @@ Most Bitcoin applications rely on external data sources (like currency conversio
    layout = "float-right-desktop"
 %}
 
-Although every application will have it’s own unique interface, there are some elements that are beneficial to keep consistent across applications that overall improve user experience. This includes things like naming conventions, icons, unit formatting, etc. We have many suggestions throughout this design guide to help you.
+Although every application will have it’s own unique interface, there are certain elements that are beneficial to keep consistent across applications, in order to improve the overall user experience. This includes things like [naming conventions](/guide/glossary/), [icons](https://bitcoinicons.com), [unit formatting](/guide/payments/units-and-symbols/), etc. We have many suggestions throughout this design guide to help you.
 
 </div>
 
