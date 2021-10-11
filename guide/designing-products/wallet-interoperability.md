@@ -96,7 +96,7 @@ It should be convenient for users to back up the relevant information they  need
    layout = "float-right-desktop"
 %}
 
-Data that users create, such as contacts, payment descriptions, notes etc. should be interoperable between different Bitcoin applications. Transaction data is stored on the Bitcoin blockchain and available in any wallet a user has set up. Transaction data however does not contain any information about the reasons why transactions were made, who owns each address, what node a Lightning payment was made to etc. 
+Data that users create, such as contacts, payment descriptions, notes, etc., should be interoperable between different Bitcoin applications. Transaction data is stored on the Bitcoin blockchain and available in any wallet a user has set up. However, transaction data does not contain any information about: the reasons why a transaction was made, who owns each address, which node a Lightning payment was made to, etc. 
 
 To better understand and organize their finances, users typically enrich transaction data by assigning contacts, notes, labels, and other useful information. This data should be stored in standardized, open formats and easily synced between applications. This is especially useful for users who rely on multiple devices.
 
