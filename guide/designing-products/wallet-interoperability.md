@@ -38,7 +38,7 @@ https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=112%3A612
 
 # Interoperability
 
-Diverse applications with different philosophies, feature sets and approaches are fantastic for Bitcoin. It allows many different users around the world to choose the applications that best fit their needs. For this to be practical, interoperability should be worked towards for smoother interactions with fewer mistakes.
+Diverse applications with different philosophies, feature sets, and approaches are fantastic for Bitcoin. It allows many different users around the world to choose the applications that best fit their needs. For this to be practical, interoperability should be worked towards for smoother interactions with fewer mistakes.
 Below are areas within your Bitcoin application where interoperability should be a focus.
 
 ## Payments
