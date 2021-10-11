@@ -263,23 +263,6 @@ Most modern wallet applications should aim to support the Lightning network in a
 
 Wallets can also be created with control shared between several other wallets, so called [multi-key wallets](/guide/private-key-management/multi-key/) (or multi-signature / multi-sig). This is typically done to increase security.
 
-## Importing an existing wallet
-
-<div class="center" markdown="1">
-
-{% include image.html
-   image = "/assets/images/guide/designing-products/common-user-flows/import-wallet.jpg"
-   retina = "/assets/images/guide/designing-products/common-user-flows/import-wallet@2x.jpg"
-   alt-text = ""
-   width = 100
-   height = 100
-   layout = "float-left"
-%}
-
-We ask users to securely back up their keys when they create new wallets, to restore them later. This might be due to practical reasons like switching to a new computer or from a laptop to a smartphone. It may also be part of an investment strategy, like when a user wants to access bitcoin from cold storage after not interacting with them for months or years.
-
-</div>
-
 ## Securing a wallet
 
 <div class="center" markdown="1">
@@ -293,7 +276,28 @@ We ask users to securely back up their keys when they create new wallets, to res
    layout = "float-left"
 %}
 
-Like fiat currencies, securely storing money can be as simple as storing some coins in your pocket or highly complex with multiple banks' safety deposit boxes. For self-custodial wallets, all of this is in the users' hands, although wallet software ideally provides guidelines and support to more easily follow best practices. Continue to the Key Management section for introductions and deep-dives into different techniques.
+Like fiat currencies, securely storing funds can be as simple as storing some coins in your pocket or highly complex with multiple banks’ safety deposit boxes. For self-custodial wallets, all of this is in the users’ hands, although wallet software ideally provides guidelines and support to more easily follow best practices. See also, the [Private key management](/guide/private-key-management/introduction/) section and [Protecting a wallet](guide/onboarding/protecting-a-wallet/).
+
+</div>
+
+## Backing up a wallet
+
+To enable recovery of a wallet that uses the manual backup scheme for private key management, we should ask users to securely back up their keys with their recovery phrase (and for full compatibility, [derivation path](/guide/glossary/#derivation-path) and [output descriptors](/guide/glossary/#output-script-descriptor)) when they create new wallets.  See also, [Wallet interoperability](/guide/designing-products/wallet-interoperability/) and [Bitcoin backups](/guide/private-key-management/backups/).
+
+## Importing an existing wallet
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/designing-products/common-user-flows/import-wallet.jpg"
+   retina = "/assets/images/guide/designing-products/common-user-flows/import-wallet@2x.jpg"
+   alt-text = ""
+   width = 100
+   height = 100
+   layout = "float-left"
+%}
+
+If the user is in possession of the [recovery phrase](/guide/glossary/#recovery-phrase) for a Bitcoin wallet, they should be able to import it into any application that supports the same standards. Some technical caveats apply, generally users are best advised to attempt recovery of a wallet with the same application as the wallet was created with for full compatibility. See also, [Wallet interoperability](/guide/designing-products/wallet-interoperability/) and [Restoring a wallet](/guide/onboarding/restoring-a-wallet/).
 
 </div>
 
@@ -310,7 +314,7 @@ Like fiat currencies, securely storing money can be as simple as storing some co
    layout = "float-left"
 %}
 
-While we all prefer to receive bitcoin, there are times when we need to send them to others. At the core, sending bitcoin can be a very simple matter of entering an address and bitcoin amount and tapping "Send". It can also scale up to a much more complex interaction when batching transactions, using a multisignature wallet or taking advantage of a privacy-preserving technique like a PayJoin.
+While we all prefer to receive bitcoin, there are times when we need to send them to others. At the core, sending bitcoin can be a very simple matter of entering an address, amount and tapping “Send”. It can also scale up to a much more complex interaction when batching transactions or using a multi-signature wallet.
 
 </div>
 
@@ -338,7 +342,13 @@ While we all prefer to receive bitcoin, there are times when we need to send the
 
 </div>
 
-Once a transaction has been broadcast, the bitcoin network starts processing it. Users may want to stay informed about this progress, particularly when a transaction takes longer than expected. In extreme cases, it is possible to retroactively increase the transaction fee to get validated faster with a Replace-by-Fee technique. To find out more, visit the [Sending bitcoin](/guide/payments/send/) page.
+Bitcoin can be sent two ways; on the primary base layer, or the secondary [Lightning network](/guide/glossary/#lightning-network) layer. 
+
+On the base layer, once a transaction is broadcast from a wallet, the Bitcoin network starts processing it. Users may want to stay informed about this progress, particularly when a transaction takes longer than expected. The average transaction time on the base layer is 10 minutes, but this can vary a lot depending on the fee the sender was willing to pay. In extreme cases, it is possible to retroactively increase the transaction fee to get validated faster with a [Replace-by-Fee](/guide/glossary/#replace-by-fee-rbf) technique.
+
+On the Lightning network, transactions happen inside payment channels that are established on the base layer between two participants. The state of ownership of the bitcoin within the channel is maintained by the participant Lightning network nodes. Transactions on this layer are almost instant, and have negligible fees. However, there are fees to open and close channels, as this is recorded on the base layer.
+
+To find out more, visit the [Sending bitcoin](/guide/payments/send/) page.
 
 ## Requesting bitcoin
 
@@ -353,7 +363,7 @@ Once a transaction has been broadcast, the bitcoin network starts processing it.
    layout = "float-left"
 %}
 
-Equivalent to creating an invoice, requesting bitcoin involves entering information about this specific transaction and forwarding it to the payer. Overall, there is less complexity involved in this process than sending, but there are a few things for designers to consider.
+Equivalent to creating an invoice, requesting bitcoin involves entering information about this specific transaction and sharing it with the payer.
 </div>
 
 <div class="image-gallery">
@@ -380,11 +390,13 @@ Equivalent to creating an invoice, requesting bitcoin involves entering informat
 
 </div>
 
-While it is initially intuitive to re-use the same receiving address repeatedly, this practice is highly discouraged. Anyone with this address can easily see what other payments are being made and how the bitcoins are spent. The UI should encourage users to create new addresses for each invoice. This also makes it easier for the software to understand when a specific payment has been received.
+For the simplest form of base layer requests, the receiver only needs to share one of their addresses with the sender, who can themselves input the amount.
 
-The most important consideration is around how this request is securely shared and received. When transmitting this information, there is a risk that a third party can intercept it and tamper with it. This can result in Bitcoin getting sent to an attacker's address instead. So it is good to consider offering ways for both payee and payer to verify the accuracy of the information (for example, by allowing them to share the information via two different channels).
+While it is possible to re-use the same receiving address repeatedly, this practice is highly discouraged for privacy reasons. 
 
-As for data formats for sharing, [BIP 21](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki){:target="_blank"} describes a URI scheme to turn requests into links that can be shared like any other link. On click, wallets that support this scheme can immediately show the send screen with the correct information pre-filled. Links can also be encoded and transmitted via QR code. Since the scheme also allows for the inclusion of an address label and transaction description, it allows both sender and recipient to stay organized.
+For more information-rich base layer requests, [BIP 21](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki) describes a URI scheme to turn requests into links that can be shared like any other link. On click, wallets that support this scheme can immediately show the send screen with the correct information pre-filled. Links can also be encoded and transmitted via QR code. Since the scheme also allows for the inclusion of an address label and transaction description, it allows both sender and recipient to stay organized.
+
+For requests on the Lightning network, the receiver needs to create a lightning invoice that includes the amount, and then share the invoice with the sender. 
 
 ## Receiving bitcoin
 
@@ -413,7 +425,9 @@ Once a user has requested payment, they are naturally interested in knowing when
    layout = "float-right"
 %}
 
-A user may also want to check in and see if any previous requests have not been completed yet. This is easily possible if the user has initiated all requests on the same wallet and used a new address for each one. In this case, a request can be considered fulfilled if at least one payment has been received with the total amount the user asked for. It is not as clear if addressess are getting re-used (how to tell which payment was for which purpose?) or the request has been made with another wallet (as this meta data is not stored and synced via the Bitcoin network).
+A user may also want to check in and see if any previous requests have not been completed yet. This is easily possible if the user has initiated all requests on the same wallet and used a new address for each one. In this case, a request can be considered fulfilled if at least one payment has been received with the total amount the user asked for. It is not as clear if addresses are getting re-used (how to tell which payment was for which purpose?) or the request has been made with another wallet (as this meta data is not stored and synced via the Bitcoin network).
+
+On the Lightning network, receiving bitcoin requires an invoice. This makes it easy to track if payments have been completed or not.
 
 </div>
 
@@ -437,7 +451,7 @@ Wallet software can support users and make this easier by offering organizationa
 
 This is not only helpful to users but can also help improve privacy. Since the individual transaction history can be traced, it is helpful to isolate transactions by the sender and/or recipient. If I receive bitcoin from an exchange and then pay a store, then there is a chance that personal information about myself can be uncovered by making that connection. With well-labeled transactions, wallets can help users avoid this type of situation.
 
-## Switch wallets
+## Switching wallets
 
 <div class="center" markdown="1">
 
@@ -450,7 +464,16 @@ This is not only helpful to users but can also help improve privacy. Since the i
    layout = "float-left"
 %}
 
-In some circumstances, users need to move all their funds to a new wallet. This may be because a wallet is potentially compromised, a simple change of software, or a migration to a wallet with a security setup that is more appropriate to the number of funds stored. Whichever it may be, this can be a vital function for users that applications should support. While it is easy to send all funds to a new address simply, additional meta and state data stored in wallet applications also need to be considered.
+There are several reasons a user might want to switch wallets. 
+
+A different wallet application might have features they need, or be better supported than the one they originally created the Bitcoin wallet with. Importing the wallet with the recovery phrase into the new application should be possible, and will be free from fees as no transfer of funds is happening.
+
+The owner may want to increase the security of their wallet, either by using a single-key wallet with a [passphrase](/guide/glossary/#passphrase), or a [multi-key](/guide/private-key-management/multi-key/) wallet. As both of these include transferring funds to a new Bitcoin wallet, there will be fees to pay.
+
+In the worst case scenario the wallet might have been compromised, and funds should be saved by sending them all to a different Bitcoin wallet.
+
+Whatever the reason may be, the import and backup of wallets is a vital function for users that applications should support. While it is easy to send all funds to a new address, additional meta and state data stored in wallet applications also need to be considered for full compatibility. It's not recommended to switch wallets that include funds on the Lightning network, as standards for backing up channel state have yet to emerge. See also, [Wallet interoperability](/guide/designing-products/wallet-interoperability/).
+
 
 </div>
 

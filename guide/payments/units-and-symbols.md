@@ -122,6 +122,12 @@ There are many different ways of formatting numbers and currency units across th
 - `10'000,00`
 - `10,000·00`
 
+The "Satcomma standard" (well explained by [Mark Nugent](https://medium.com/@mark.nugent.iv/grouping-bitcoins-fractional-digits-an-idea-whose-time-has-come-22d9dad8ac51) and [ProgrammableTX](https://medium.com/coinmonks/the-satcomma-standard-89f1e7c2aede)) is a proposal that suggests adjustment of digit group separators for better readability of small bitcoin fractions, as follows:
+- `0.000 250 00 bitcoin`
+- `0.00 025 000 bitcoin`
+
+Starting the grouping from the right side makes it easier to identify the Satoshi value, which is in this example 25 000. As there is no clear consensus around this proposal, it is up to designers to decide whether this is appropriate for their audience.
+
 For more examples and information, see Wikipedia:
 
 - [Currency symbol](https://en.wikipedia.org/wiki/Currency_symbol)
