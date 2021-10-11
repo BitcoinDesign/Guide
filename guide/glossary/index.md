@@ -349,7 +349,7 @@ Segregated Witness, or SegWit, is the name for a soft fork change in the transac
    layout = "float-right-desktop"
 %}
 
-Since a private key can be used to prove that the holder controls a specific address, it can therefore authorize transactions from the address. This is called a digital signature.
+Since a [private key](#private-key) can be used to prove that the holder controls a specific address, it can therefore authorize transactions from the address. This is called a digital signature.
 
 One of the most important activities of the Bitcoin network is to verify that signatures are valid.
 </div>
