@@ -225,7 +225,7 @@ Your application should support constructing and managing transaction files, als
    layout = "float-right-desktop"
 %}
 
-[Multi-signature wallets]({{ '/guide/private-key-management/multi-key' | relative_url }})) require interaction between all cosigners and therefore interoperability between users of different software (or hardware) setups is crucial. Especially when there are multiple cosigners (rather than one owner using multiple signing devices), there should be strong design considerations to how the cosigners exchange keystores and transaction data.
+[Multi-signature wallets]({{ '/guide/private-key-management/multi-key' | relative_url }}) require interaction between all cosigners and therefore interoperability between users of different software (or hardware) setups is crucial. Especially when there are multiple cosigners (rather than one owner using multiple signing devices), there should be strong design considerations to how the cosigners exchange keystores and transaction data.
 
 </div>
 
