@@ -134,7 +134,11 @@ Bitcoin is different: since the sender must initiate all transactions, automated
    height = 800
 %}
 
-A hardware wallet accompanied by a desktop application where keys are stored and transactions are securely signed by hardware is another solution. This reduces the risk of keeping funds on a mobile wallet configuration but adds acceptable friction for transactions that occur less frequently. See the [savings account case study]({{ '/guide/case-studies/savings-account/' | relative_url }}) for an exploration of this user experience.
+The higher-value of these payments necessitates a greater level of security than the daily spending wallet (which is a ["hot wallet"]({{'/guide/glossary/wallet/#hot--cold-wallet' | relative_url}}), meaning that the private key is on a device connected to the internet).
+
+At the moment, a good solution is a desktop application which relies on a hardware device to sign transactions. This reduces the risk of keeping funds on a mobile wallet configuration but adds acceptable friction for transactions that occur less frequently. See the [savings account case study]({{ '/guide/case-studies/savings-account/' | relative_url }}) for an exploration of this user experience.
+
+A disadvantage to this solution is that it does not use the Lightning network, meaning that the user will need to wait longer for their transaction to confirm as well as pay an on-transaction fee. However, this will likely not be always be the case: in the future, projects such as [Lightning Signer](https://gitlab.com/lightning-signer/docs) may solve this issue by allowing the private keys to be stored separately from the Lightning node on hardware that is security-hardened.
 
 ## Emergency funds
 
