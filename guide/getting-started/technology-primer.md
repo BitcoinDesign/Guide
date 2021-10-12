@@ -47,7 +47,7 @@ Illustration sources
 
 # Bitcoin technology primer
 
-It can take many years to understand bitcoin in every detail, but luckily you don’t need to know everything to design great products. Let’s look at the most important ideas and technologies behind Bitcoin by answering some basic questions.
+It can take many years to understand Bitcoin in every detail, but luckily you don't need to know everything to design great products. Let's look at the most important ideas and technologies behind Bitcoin by answering some basic questions.
 
 ## Is it Bitcoin or bitcoin?
 
