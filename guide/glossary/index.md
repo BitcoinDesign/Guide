@@ -90,6 +90,22 @@ A standardized technical document format for suggesting improvements to Bitcoin.
 - [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki): Partially Signed Bitcoin Transaction Format
 - [BIP380](https://github.com/bitcoin/bips/blob/master/bip-0380.mediawiki): Output Script Descriptors General Operation
 
+### Block
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/glossary/block.jpg"
+   retina = "/assets/images/guide/glossary/block@2x.jpg"
+   alt-text = "Simplified block graphic containing multiple transactions"
+   width = 400
+   height = 400
+   layout = "float-right-desktop"
+%}
+
+Instead of processing each transaction individually, the Bitcoin network bundles them into blocks. Blocks are created roughly every 10 minutes and can only contain a certain amount of transactions due to a strict file size limit. Once a block is accepted and has several confirmations, it can never be changed again.
+
+</div>
+
 ### BOLT - Basis of Lightning Technology
 
 A standardized technical document format for the Lightning network protocol specifications. They are hosted on Github [here](https://github.com/lightningnetwork/lightning-rfc). The various Lightning implementations must adhere to the BOLTs in order to be interoperable. However, some Lightning implementations may have features which are not defined in BOLTs.
@@ -171,6 +187,26 @@ Same as xpub however the y denotes that this xpub belongs to a wallet that is fo
 
 Same as ypub though the z denotes it is an extended public key from a segregated witness enabled wallet following [BIP84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki).
 
+### Hash
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/glossary/hashing.jpg"
+   retina = "/assets/images/guide/glossary/hashing@2x.jpg"
+   alt-text = "Example of a message and it's hash"
+   caption = "Example of a SHA-256 hash."
+   layout = "float-right-desktop"
+   width = 400
+   height = 400
+%}
+
+Hashing is a fundamental technique to cryptography and Bitcoin. It is the process of taking data and applying a function that creates a unique identifier for it. This is called a hash and can be thought of as a fingerprint.
+
+Unlike encryption, a hash does not contain the original data, and the hashing process cannot be reversed. Since hashes are small in size, they are a great way to verify the information's authenticity.
+
+</div>
+
 ### Initial block download (IBD)
 
 To fully verify that all transactions on the bitcoin network are valid, a full node needs to download and examine all previous block-data. This is called the initial block download, after which the node has caught up with the latest transaction activity. This can take several hours, and only after it is complete can wallets linked to the node be used.
@@ -190,6 +226,23 @@ Users of the Lightning network use a Lightning invoice to request a payment. It 
 ### Lightning network
 
 The [Lightning Network]({{ 'https://lightning.network' }}) extends Bitcoin with payment channels to increase transaction speed and lower costs. It is becoming widely adopted and accepted as the preferred way to scale Bitcoin.
+
+### Mempool
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/getting-started/technology/mempool.jpg"
+   retina = "/assets/images/guide/getting-started/technology/mempool@2x.jpg"
+   alt-text = "A user wallet pushing a transaction into the mempool"
+   width = 400
+   height = 400
+   layout = "float-right-desktop"
+%}
+
+Every transaction needs to be confirmed before the recipient can consider the involved bitcoin theirs. This waiting line for new transactions is called the mempool. The Bitcoin network can only process a certain amount of transactions per day, so it may take longer to process your transactions during busy times. Transactions that involve higher fees are typically processed faster.
+
+</div>
 
 ### Miniscript
 
@@ -287,6 +340,23 @@ An algorithm to generate cryptographic signatures. One of the benefits is that t
 ### Segregated witness (SegWit)
 
 Segregated Witness, or SegWit, is the name for a soft fork change in the transaction format of Bitcoin. It was described in [BIP141](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki). It was intended to mitigate a blockchain size limitation problem that reduces bitcoin transaction speed. It does this by splitting the transaction into two segments, removing the unlocking signature (*witness* data) from the original portion and appending it as a separate structure at the end. The original section hold the sender and receiver data, and the new *witness* structure contain scripts and signatures.
+
+### Signature
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/glossary/signature.jpg"
+   retina = "/assets/images/guide/glossary/signature@2x.jpg"
+   alt-text = "Illustration of a transaction signature"
+   width = 400
+   height = 400
+   layout = "float-right-desktop"
+%}
+
+Since a [private key](#private-key) can be used to prove that the holder controls a specific address, it can therefore authorize transactions from the address. This is called a digital signature.
+
+One of the most important activities of the Bitcoin network is to verify that signatures are valid.
+</div>
 
 ### Taproot
 
