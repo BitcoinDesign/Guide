@@ -170,7 +170,7 @@ From moon Lambos to the price rollercoaster, there’s a meme for practically ev
    image = "/assets/images/guide/getting-started/visual-language/memes.jpg"
    retina = "/assets/images/guide/getting-started/visual-language/memes@2x.jpg"
    alt-text = "Examples of popular bitcoin memes"
-   caption = "References from top left to bottom right, <a href='http://www.brainlesstales.com/bitcoin-roller-coaster' target='_blank'>1</a>, <a href='https://www.reddit.com/r/Bitcoin/comments/1gagle/lol_new_bitcoin_billboard_in_san_jose_honey_badger/' target='_blank'>2</a>, unknown author, <a href='https://medium.com/@paulbars/magic-internet-money-how-a-reddit-ad-made-bitcoin-hit-1000-and-inspired-south-parks-art-b414ec7a5598' target='_blank'>4</a>, unknown author, unknown author."
+   caption = "References from top left to bottom right, <a href='http://www.brainlesstales.com/bitcoin-roller-coaster' target='_blank'>1</a>, <a href='https://www.reddit.com/r/Bitcoin/comments/1gagle/lol_new_bitcoin_billboard_in_san_jose_honey_badger/' target='_blank'>2</a>, <a href='https://ryantdesign.com/bitcoin-art' target='_blank'>3</a>, <a href='https://medium.com/@paulbars/magic-internet-money-how-a-reddit-ad-made-bitcoin-hit-1000-and-inspired-south-parks-art-b414ec7a5598' target='_blank'>4</a>, unknown author, unknown author."
    width = 800
    height = 421
 %}
