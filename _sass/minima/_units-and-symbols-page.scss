@@ -31,6 +31,7 @@
             width: 100%;
             background-color: transparent;
             -moz-appearance: textfield;
+            border-bottom: 1px dashed #D2FA7B;
 
             &::-webkit-outer-spin-button,
             &::-webkit-inner-spin-button {
@@ -56,14 +57,15 @@
                 padding: 0;
                 flex-grow: 1;
                 font-size: 16px;
-                color: white;
                 flex-basis: 30%;
+                color: #EBEBEB;
 
                 &:first-child {
                     flex-grow: 1;
                 }
 
                 &:last-child {
+                    color: white;
                     text-align: right;
                 }
             }
