@@ -70,6 +70,8 @@ Wallet creation during onboarding is an excellent opportunity to educate your us
 
 While this may sound daunting to first-time users, these caveats mustn't be hidden. Doing so may severely compromise their funds' safety, as their default assumptions and behaviors could potentially mimic how they typically use centralized applications (for example, feeling like it is OK if they forget their account information because they can contact customer support to help them recover it).
 
+Ideally your application supports both the base layer and the Lightning network. When talking about backups, you should be clear on what is possible and required in terms of restoring the user’s wallet from a backup.
+
 Some studies suggest that users struggled greatly with technical terminology and feeling as though they had a lack of guidance during wallet setup. By walking users through single steps that clearly frame the features of self-custody Bitcoin wallets, users will feel well-equipped to navigate and use the wallet confidently.
 
 > Users reported that they often felt like they lacked guidance and understanding during wallet setup
