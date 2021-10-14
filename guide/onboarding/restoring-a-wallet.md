@@ -54,9 +54,9 @@ Some applications  also provide a proprietary option for users to scan an encryp
 
 ### Restore a wallet with funds on the Lightning network
 
-To fully restore a wallet with funds on the [Lightning network](https://bitcoin.design/guide/glossary/#lightning-network), the state and history of the payment channels are needed in addition to the recovery phrase. As there are no standards for this yet, wallet applications need to have their own format for backing this up, and subsequently restoring. Due to the amount of data, an encrypted QR code like in the previous example can be appropriate. 
+To fully restore a wallet with funds on the [Lightning network](/guide/glossary/#lightning-network), the state and history of the payment channels are needed in addition to the recovery phrase. As there are no standards for this yet, wallet applications need to have their own format for backing this up, and subsequently restoring. Due to the amount of data, an encrypted QR code like in the previous example can be appropriate. 
 
-Some less popular methods include importing a file such as wallet.dat. Such a file would have all the information required to recover funds such as public keys and key metadata. In some cases you might be developing a watch-only wallet that only lets users track their bitcoin transactions. In this case you would import an extended public key, this tends to be for technically minded users however.
+Some less popular methods for restoring a wallet include importing a file with all the information required to recover funds such as public keys and key metadata. A wallet.dat file from Bitcoin Core is one example of such a file scheme. If you are developing a watch-only wallet, you would import an [extended public key](/guide/glossary/#extended-public-key-xpub-ypub-zpub), this tends to be for technically minded users however.
 
 ---
 
