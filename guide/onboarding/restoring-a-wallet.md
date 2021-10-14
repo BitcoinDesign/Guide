@@ -24,7 +24,7 @@ image: https://bitcoin.design/assets/images/guide/onboarding/restoring-a-wallet/
 
 <div class="center" markdown="1">
 
-There are several reasons why a user might need to restore their wallet. They may have lost their device, are migrating from a different application or deleted their wallet application. Regardless of why, it’s important that your wallet application has an easy way for users to recover their funds. 
+There are several reasons why a user might need to restore their wallet. They may have lost their device, be migrating from a different application or have deleted their wallet application. Regardless of why, it’s important that your wallet application has an easy way for users to recover their funds. 
 
 However, not all wallets from one application can be recovered in another, depending on what standards they support as covered in the [wallet interoperability]({{ 'guide/designing-products/wallet-interoperability' | relative_url }}) section. This is particularly true for a wallet holding bitcoin on the Lightning network, and restoring should be done with the application originally used.
 
@@ -42,7 +42,7 @@ However, not all wallets from one application can be recovered in another, depen
 
 ### Restore from an automatic cloud backup
 
-As outlined earlier in the chapter, we consider an automatic cloud backup a good option, especially for beginners. One of the major UX benefits of this is a seamless recovery process. Assuming they are restoring in the same wallet application originally used, all the user needs to do to gain access to their funds again is to log into their cloud storage account.
+As outlined earlier in the chapter, we consider an [automatic cloud backup](/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/) a good option, especially for beginners. One of the major UX benefits of this is a seamless recovery process. Assuming they are restoring in the same wallet application originally used, all the user needs to do to gain access to their funds again is to log into their cloud storage account.
 
 ### Restore manually with a recovery phrase
 
