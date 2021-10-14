@@ -78,7 +78,7 @@ Some studies suggest that users struggled greatly with technical terminology and
 >
 > <cite>As researched by <a href="https://arxiv.org/pdf/1802.04351.pdf">Eskandari et al</a></cite>
 
-Below is an example of some carousel screens that might be useful in helping a user understand what to expect from this wallet. For this example, we have opted to backup up the users' recovery phrase to a cloud provider but other alternatives exist.
+Below is an example of some carousel screens that might be useful in helping a user understand what to expect from this wallet. For this example, we have opted to backup the users' recovery phrase to a cloud provider but other alternatives exist.
 
 <div class="image-slide-gallery">
 
@@ -111,7 +111,7 @@ Below is an example of some carousel screens that might be useful in helping a u
 
 </div>
 
- These screens explicitly lay out/guide users on the unique features of self-custodial wallets to make sure they understand these caveats. These screens suggest talking about ownership, explicitly stating the recovery mechanism that the respective wallet uses, and security measures that they should take to protect their wallet.
+ These screens explicitly lay out the unique features of self-custodial wallets to make sure the user understands these caveats. These screens suggest talking about ownership, explicitly stating the recovery mechanism that the respective wallet uses, and security measures that they should take to protect their wallet.
 
 ---
 
