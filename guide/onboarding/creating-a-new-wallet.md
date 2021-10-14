@@ -1,10 +1,10 @@
 ---
 layout: guide
-title: Creating a new wallet
-description: Steps to take when creating a new wallet, and tips for a great user experience.
+title: First use
+description: Common tasks when using a wallet application for the first time.
 parent: Onboarding
 nav_order: 2
-permalink: /guide/onboarding/creating-a-new-wallet/
+permalink: /guide/onboarding/first-use/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/onboarding/creating-a-new-wallet/creating-a-new-wallet-preview.png
 ---
@@ -24,7 +24,7 @@ image: https://bitcoin.design/assets/images/guide/onboarding/creating-a-new-wall
 
 There are a number of common tasks a user might want to achieve the first time they open a wallet application:
 
-- [Create a new wallet](/guide/onboarding/creating-a-new-wallet/#creating-a-wallet), or
+- [Create a new wallet](/guide/onboarding/first-use/#creating-a-wallet), or
 - [Restore an existing wallet](/guide/onboarding/restoring-a-wallet/)
 - [Backup a wallet](/guide/onboarding/backing-up-a-recovery-phrase/)
 - [Acquire bitcoin](/guide/onboarding/funding-a-wallet/)

@@ -49,9 +49,9 @@ This section will give you some tips on how best to understand and develop knowl
 
 ---
 
-### [Creating a new wallet]({{ '/guide/onboarding/creating-a-new-wallet/' | relative_url }})
+### [First use]({{ '/guide/onboarding/first-use/' | relative_url }})
 
-An overview of what information to include when creating a wallet for the first time.
+An overview of common tasks when using a wallet application for the first time.
 
 ---
 
