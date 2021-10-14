@@ -44,9 +44,9 @@ However, as covered in the [wallet interoperability]({{ 'guide/designing-product
 
 As outlined earlier in the chapter, we consider an automatic cloud backup a good option, especially for beginners. One of the major UX benefits of this is a seamless recovery process. Assuming they are restoring in the same wallet application originally used, all the user needs to do to gain access to their funds again is to log into their cloud storage account.
 
-### Restore with recovery phrase
+### Restore manually with a recovery phrase
 
-Users of your bitcoin wallet may also have created other wallets with different providers. If this is the case, they can transfer that wallet into yours by entering their 12 or 24-word recovery phrase. There are several ways you can choose to allow a user to enter a recovery phase. These were outlined earlier in the [manual backup]({{ 'guide/onboarding/backing-up-a-recovery-phrase/manual-backup/' | relative_url }}) section of this chapter.
+Users may have created a wallet with another wallet application. In this case, they can import that wallet into yours by entering their 12 or 24-word recovery phrase. There are several ways you can choose to allow a user to enter a recovery phase. These were outlined earlier in the [manual backup]({{ 'guide/onboarding/backing-up-a-recovery-phrase/manual-backup/' | relative_url }}) section of this chapter.
 
 ### Restore from an encrypted QR code backup
 
