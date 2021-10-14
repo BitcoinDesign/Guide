@@ -20,17 +20,28 @@ image: https://bitcoin.design/assets/images/guide/onboarding/creating-a-new-wall
    layout = "full-width"
 %}
 
-# Creating a new wallet
+# First use
 
-First, bitcoin [wallets]({{ 'guide/glossary/#wallet' | relative_url }}) are not analogous to their namesakes. Physical wallets are places to store physical currency, credit cards, IDs, and so on. Bitcoin wallets don't store bitcoin. However, the [self custodial]({{ 'guide/glossary/wallet/#non-custodial--custodial-wallet' | relative_url }})  nature of bitcoin wallets gives users full control of what they do with their bitcoin.
+There are a number of common tasks a user might want to achieve the first time they open a wallet application:
 
-Instead, a Bitcoin wallet contains the "private keys" to a users bitcoin. The bitcoin is located on the Bitcoin network that contains a public ledger similar in many ways to a spreadsheet with a record of everyone's transactions and balances. Private keys let users access bitcoin associated with those keys. A more suitable analogy for a Bitcoin wallet would be a keychain.
+- [Create a new wallet](/guide/onboarding/creating-a-new-wallet/#creating-a-wallet), or
+- [Restore an existing wallet](/guide/onboarding/restoring-a-wallet/)
+- [Backup a wallet](/guide/onboarding/backing-up-a-recovery-phrase/)
+- [Acquire bitcoin](/guide/onboarding/funding-a-wallet/)
 
- Like regular keys on a keychain, Bitcoin private keys can be copied. For example, if you gave someone a copy of your house keys, they can unlock the door to your home. Likewise, if someone has a copy of your private key, they can access your bitcoin. This makes [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) one of the most important considerations of any bitcoin owner.
+While the first two, creating or restoring a wallet, normally need to be tackled straight away, the last two can be designed to fit the flow and capability of your application.
 
- Most bitcoin wallets will automatically generate users' private keys during onboarding, and is not usually something a user controls. We will look at practical design solutions for guiding users through this process in this chapter. This page explains how we can help get a user comfortable with the idea of a self-custodial wallet.
+It is common to see onboarding flows that implores the user to do a manual backup of their recovery phrase straight away, often before they have even gotten to see the main screen of the application. While this can make sure the user is aware of the need to backup, their motivation and ability to safely do this at that exact moment might be limited.
 
-A few different types of wallets let you send, receive, store, and manage bitcoin. For this page, we focus on regular single-key wallets, which are the ones most commonly used.
+Alternative approaches can be to wait and prompt the user only once there are funds in the wallet, at regular intervals, or to use an automatic cloud backup for small amounts. This is all up to you as the application designer to decide what works best in your users’ use case.
+
+### Creating a wallet
+
+[Bitcoin wallets]({{ 'guide/glossary/#wallet' | relative_url }}) contain the “private keys” to a user’s bitcoin. Private keys let users access bitcoin associated with those keys.
+
+Like regular keys on a keychain, Bitcoin private keys can be copied. This makes [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) one of the most important considerations of any bitcoin owner.
+
+Most Bitcoin wallet applications will automatically generate users’ private keys during onboarding. 
 
 <div class="center" markdown="1">
 
@@ -44,11 +55,9 @@ A few different types of wallets let you send, receive, store, and manage bitcoi
    layout = "float-left-desktop -background -shadow"
 %}
 
-Most wallets will begin the onboarding process by creating a new or restoring an existing wallet. New users to Bitcoin will usually be going through the flow of creating a new wallet.
+After the user  selects “Create a new wallet”, you might present informational carousels that provide a high-level overview of the implications, benefits, and responsibility that comes with having a self-custodial wallet. Here you can explain to your user that access to the wallet will not require collecting any sensitive information such as usernames and passwords, which is often the case with traditional financial products.
 
-Once an individual selects “create a new wallet”, you might present informational carousels that provide a high-level overview of the implications, benefits, and responsibility that comes with having a self-custodial wallet. Here you can explain to your user that access to the wallet will not require collecting any sensitive information such as usernames and passwords, which is often the case with traditional financial products.
-
-Rather, the user can directly access their funds as long as they have access to the private key or recovery phrase. You should help your users understand that your team do not have the ability to recover their funds in the event they lose their private key. A self custodial wallet often means the user will have to take on greater responsibilty to safely protect their private key so they can always access their funds.
+Rather, the user can directly access their funds as long as they have access to the private key or recovery phrase. You should help your users understand that your team does not have the ability to recover their funds in the event they lose their private key. A self custodial wallet often means the user will have to take on greater responsibility to safely protect their private key so they can always access their funds.
 
 </div>
 
