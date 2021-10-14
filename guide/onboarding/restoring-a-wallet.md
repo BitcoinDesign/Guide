@@ -52,6 +52,10 @@ Users may have created a wallet with another wallet application. In this case, t
 
 Some applications  also provide a proprietary option for users to scan an encrypted QR code version of their recovery phrase. For a more detailed explantion of this recovery technique check out this [blog post](https://blog.keys.casa/product-update-transaction-memos-encrypted-backups/) by Casa.
 
+### Restore a wallet with funds on the Lightning network
+
+To fully restore a wallet with funds on the [Lightning network](https://bitcoin.design/guide/glossary/#lightning-network), the state and history of the payment channels are needed in addition to the recovery phrase. As there are no standards for this yet, wallet applications need to have their own format for backing this up, and subsequently restoring. Due to the amount of data, an encrypted QR code like in the previous example can be appropriate. 
+
 Some less popular methods include importing a file such as wallet.dat. Such a file would have all the information required to recover funds such as public keys and key metadata. In some cases you might be developing a watch-only wallet that only lets users track their bitcoin transactions. In this case you would import an extended public key, this tends to be for technically minded users however.
 
 ---
