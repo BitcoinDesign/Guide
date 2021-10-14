@@ -31,17 +31,15 @@ There are a number of common tasks a user might want to achieve the first time t
 
 While the first two, creating or restoring a wallet, normally need to be tackled straight away, the last two can be designed to fit the flow and capability of your application.
 
-It is common to see onboarding flows that implores the user to do a manual backup of their recovery phrase straight away, often before they have even gotten to see the main screen of the application. While this can make sure the user is aware of the need to backup, their motivation and ability to safely do this at that exact moment might be limited.
+It is common to see onboarding flows that implore the user to do a manual backup of their recovery phrase straight away, often before they have even gotten to see the main screen of the application. While this can make sure the user is aware of the need to backup, their motivation and ability to safely do this at that exact moment might be limited.
 
-Alternative approaches can be to wait and prompt the user only once there are funds in the wallet, at regular intervals, or to use an automatic cloud backup for small amounts. This is all up to you as the application designer to decide what works best in your users’ use case.
+Alternative approaches can be to wait and prompt the user only once there are funds in the wallet, at regular intervals, or to use an automatic cloud backup for small amounts. It is up to you as the application designer to decide what works best in your users’ use case.
 
 ### Creating a wallet
 
-[Bitcoin wallets]({{ 'guide/glossary/#wallet' | relative_url }}) contain the “private keys” to a user’s bitcoin. Private keys let users access bitcoin associated with those keys.
+[Bitcoin wallets]({{ 'guide/glossary/#wallet' | relative_url }}) contain the private keys to a user’s bitcoin. Private keys let users access bitcoin associated with those keys. If the user does not have a Bitcoin wallet already that they want to restore, it is necessary to create a new one. 
 
-Like regular keys on a keychain, Bitcoin private keys can be copied. This makes [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) one of the most important considerations of any bitcoin owner.
-
-Most Bitcoin wallet applications will automatically generate users’ private keys during onboarding. 
+Like regular keys on a keychain, Bitcoin private keys can be copied. This makes [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) one of the most important considerations of any bitcoin owner. Most Bitcoin wallet applications will automatically generate the user’s private keys during onboarding. 
 
 <div class="center" markdown="1">
 
@@ -111,7 +109,7 @@ Below is an example of some carousel screens that might be useful in helping a u
 
 </div>
 
- These screens explicitly lay out the unique features of self-custodial wallets to make sure the user understands these caveats. These screens suggest talking about ownership, explicitly stating the recovery mechanism that the respective wallet uses, and security measures that they should take to protect their wallet.
+ These screens lay out the unique features of self-custodial wallets to make sure the user understands these caveats. These screens suggest talking about ownership, explicitly stating the recovery mechanism that the respective wallet uses, and security measures that they should take to protect their wallet.
 
 ---
 
