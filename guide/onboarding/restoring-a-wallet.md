@@ -50,12 +50,7 @@ Users may have created a wallet with another wallet application. In this case, t
 
 ### Restore from an encrypted QR code backup
 
-You might also provide the option for users to scan an encrypted QR code version of their recovery phrase. This has two key benefits:
-
-1. Switching between a mobile OS is easier.
-2. It provides the option for more redundant backups.
-
-For a more detailed explantion of this recovery technique check out this [blog post](https://blog.keys.casa/product-update-transaction-memos-encrypted-backups/) by Casa.
+Some applications  also provide a proprietary option for users to scan an encrypted QR code version of their recovery phrase. For a more detailed explantion of this recovery technique check out this [blog post](https://blog.keys.casa/product-update-transaction-memos-encrypted-backups/) by Casa.
 
 Some less popular methods include importing a file such as wallet.dat. Such a file would have all the information required to recover funds such as public keys and key metadata. In some cases you might be developing a watch-only wallet that only lets users track their bitcoin transactions. In this case you would import an extended public key, this tends to be for technically minded users however.
 
