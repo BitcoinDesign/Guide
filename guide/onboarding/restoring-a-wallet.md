@@ -42,9 +42,7 @@ However, as covered in the [wallet interoperability]({{ 'guide/designing-product
 
 ### Restore from an automatic cloud backup
 
-As outlined earlier in the chapter, we consider an automatic cloud backup a good option, especially for beginners. One of the major UX benefits of this is a seamless recovery process. All users needs to do to gain access to their funds again is to log into their cloud storage account.
-
-If they aren't logged in, they only need to enter their password before the wallet can automatically access the recovery phrase stored on the user's iCloud or Google Drive account. Once the recovery phrase is located, the wallet can begin to regenerate the keys required for the user to access their funds.
+As outlined earlier in the chapter, we consider an automatic cloud backup a good option, especially for beginners. One of the major UX benefits of this is a seamless recovery process. Assuming they are restoring in the same wallet application originally used, all the user needs to do to gain access to their funds again is to log into their cloud storage account.
 
 ### Restore with recovery phrase
 
