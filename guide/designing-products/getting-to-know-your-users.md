@@ -2,12 +2,22 @@
 layout: guide
 title: Getting to know your users
 description: How best to understand and develop knowledge about your users.
-parent: Onboarding
-nav_order: 1
-permalink: /guide/onboarding/getting-to-know-your-users/
+parent: Designing Bitcoin products
+nav_order: 7
+permalink: /guide/designing-products/getting-to-know-your-users/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/onboarding/getting-to-know-your-users/getting-to-know-your-users-preview.png
 ---
+
+<!--
+
+Editor's notes
+
+Illustration sources
+
+- Sources needed
+
+-->
 
 {% include picture.html
    image = "/assets/images/guide/onboarding/getting-to-know-your-users/getting-to-know-your-users.png"
@@ -21,12 +31,12 @@ image: https://bitcoin.design/assets/images/guide/onboarding/getting-to-know-you
 %}
 
 # Getting to know your users
-When building onboarding experiences, it is important to understand and develop knowledge about your users upfront.
-Within the Bitcoin ecosystem, there is a wide range in the level of expertise. Identifying who you are building for is crucial, as these user groups value and understand varying characteristics of coin and key management tools. For example, [research](https://voskart.de/pdf/bits_under_mattress.pdf) suggests “rookies” often favor convenient, easy-to-use wallets, while well-versed bitcoin owners tend to prioritize security.
+When building Bitcoin applications, it is important to understand and develop knowledge about your users upfront. Within the Bitcoin ecosystem, there is a wide range in the level of expertise. Identifying who you are building for is crucial, as these user groups value and understand varying characteristics of coin and key management tools. For example, [research](https://voskart.de/pdf/bits_under_mattress.pdf) suggests “rookies” often favor convenient, easy-to-use wallets, while well-versed bitcoin owners tend to prioritize security.
 
 
 ## Observe your potential users
-This observation could take the form of [user research]({{ 'guide/designing-products/user-research/' | relative_url }}), user interviews and surveys aimed at a range of participants to observe and identify what they do, how they think, and what they want. Let's consider some things you might want to ask yourself when improving the onboarding experience for new users:
+This observation could take the form of [user research]({{ 'guide/designing-products/user-research/' | relative_url }}), user interviews and surveys aimed at a range of participants to observe and identify what they do, how they think, and what they want. Let’s consider some things you might want to ask yourself when improving the experience for new users:
+
 
 * [What is their perception of Bitcoin?](https://docs.google.com/forms/d/e/1FAIpQLSdzT8cb54NgT7hGUnC_5ow6rDy-A9p_CA-5ptiQxrG8wQWvzQ/viewform)
 * Why do they intend to use Bitcoin, investment, savings or spending?
@@ -176,17 +186,17 @@ It's important to allow you and your team to be as free and creative about how y
 ## Prototype & Test
 Next, you can think about prototyping a subset of these ideas and understanding your ideas' feasibility through feedback on these prototypes. Put your prototypes in front of real users and test to verify the solution meets the users' needs.
 
-You might choose to lean on something like the [Bitcoin Wallet UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=616%3A0), which gives you several components that you can piece together for a specific [use case]({{ 'guide/case-studies/' | relative_url }}). This would allow you to prototype rapidly and get a feel for if the UI flow makes sense before committing to more detailed designs.
+You might choose to lean on something like the [Bitcoin Wallet UI Kit](https://www.bitcoinuikit.com/), which gives you several components that you can piece together for a specific [use case]({{ 'guide/case-studies/' | relative_url }}). This would allow you to prototype rapidly and get a feel for if the UI flow makes sense before committing to more detailed designs.
 
-Ultimately the goal of onboarding is that users trust the application, feel comfortable using it, and are set up for success. They should have an idea of how this application is going to fit into their lives and take care of certain needs. It's also ideal if they can already envision the next time they will use it.
+Ultimately the goal of getting to know your users is to build trust in the application, feel comfortable using it, and are set up for success. They should have an idea of how this application is going to fit into their lives and take care of certain needs. It’s also ideal if they can already envision the next time they will use it.
 
 ---
 
-Next, we will cover [creating a new wallet]({{ '/guide/onboarding/creating-a-new-wallet/' | relative_url }}).
+Next, we will cover [common user flows]({{ '/guide/designing-products/common-user-flows/' | relative_url }}).
 
 {% include next-previous.html
-   previousUrl = "/guide/onboarding/introduction/"
-   previousName = "Onboarding"
-   nextUrl = "/guide/onboarding/creating-a-new-wallet/"
-   nextName = "Creating a new wallet"
+   previousUrl = "/guide/designing-products/personal-finance/"
+   previousName = "Personal finance"
+   nextUrl = "/guide/designing-products/common-user-flows/"
+   nextName = "Common user flows"
 %}

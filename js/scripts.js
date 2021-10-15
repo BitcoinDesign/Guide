@@ -254,6 +254,48 @@ function resizeFigmaEmbeds() {
   }
 }
 
+function handleUnitsAndSymbolsFormatterInput() {
+  var amount = ref.unitsAndSymbolsFormatterInput.value;
+
+  var formats = [
+    ['Germany', 'de-DE', 'EUR'],
+    ['Polen', 'pl', 'EUR'],
+    ['Liechtenstein', 'el-LI', 'CHF'],
+    ['Switzerland', 'de-CH', 'CHF'],
+    ['United States', 'en-US', 'USD'],
+    ['Japan', 'jp-JP', 'JPY'],
+    ['Israel', 'il', 'ILS']
+  ];
+
+  var html = '', format, formatted;
+  for(var i=0; i<formats.length; i++) {
+    format = formats[i];
+    formatted  = Intl.NumberFormat(
+      format[1],
+      {
+        style: "currency",
+        currency: format[2]
+      }
+    ).format(amount);
+    html += '<div><p>'+format[0]+'</p><p>'+format[2]+'</p><p>'+formatted+'</p></div>';
+  }
+
+  ref.unitsAndSymbolsFormatterTable.innerHTML = html;
+};
+
+function setupUnitsAndSymbolsFormatter() {
+  ref.unitsAndSymbolsFormatter =  document.getElementById("units-and-symbols-formatter");
+
+  if(ref.unitsAndSymbolsFormatter) {
+    ref.unitsAndSymbolsFormatterInput =  document.getElementById("units-and-symbols-formatter-input");
+    ref.unitsAndSymbolsFormatterTable =  document.getElementById("units-and-symbols-formatter-table");
+
+    ref.unitsAndSymbolsFormatterInput.addEventListener('keyup', handleUnitsAndSymbolsFormatterInput);
+
+    handleUnitsAndSymbolsFormatterInput();
+  }
+}
+
 window.addEventListener("resize", function(event) {
   resizeFigmaEmbeds();
 })
@@ -284,4 +326,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   
   captureFigmaEmbeds();
   resizeFigmaEmbeds();
+
+  setupUnitsAndSymbolsFormatter();
 });

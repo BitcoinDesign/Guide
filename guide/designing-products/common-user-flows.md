@@ -2,7 +2,7 @@
 layout: guide
 title: Common user flows
 description: Overview of the most common user activities in Bitcoin applications.
-nav_order: 7
+nav_order: 8
 parent: Designing Bitcoin products
 permalink: /guide/designing-products/common-user-flows/
 main_classes: -no-top-padding
@@ -276,7 +276,7 @@ Wallets can also be created with control shared between several other wallets, s
    layout = "float-left"
 %}
 
-Like fiat currencies, securely storing funds can be as simple as storing some coins in your pocket or highly complex with multiple banks’ safety deposit boxes. For self-custodial wallets, all of this is in the users’ hands, although wallet software ideally provides guidelines and support to more easily follow best practices. See also, the [Private key management](/guide/private-key-management/introduction/) section and [Protecting a wallet](guide/onboarding/protecting-a-wallet/).
+Like fiat currencies, securely storing funds can be as simple as storing some coins in your pocket or highly complex with multiple banks’ safety deposit boxes. For self-custodial wallets, all of this is in the users’ hands, although wallet software ideally provides guidelines and support to more easily follow best practices. See also, the [Private key management](/guide/private-key-management/introduction/) section and [Protecting a wallet](/guide/onboarding/protecting-a-wallet/).
 
 </div>
 
@@ -567,11 +567,11 @@ This can be a tricky experience to address. For one, non-custodial cryptocurrenc
 
 ---
 
-On to [wallet interoperability]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }}) which is essential for smooth interaction and migration between Bitcoin products.
+On to [interoperability]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }}) which is essential for smooth interaction and migration between Bitcoin products.
 
 {% include next-previous.html
-   previousUrl = "/guide/designing-products/personal-finance/"
-   previousName = "Personal finance"
+   previousUrl = "/guide/designing-products/getting-to-know-your-users/"
+   previousName = "Getting to know your users"
    nextUrl = "/guide/designing-products/wallet-interoperability/"
-   nextName = "Wallet interoperability"
+   nextName = "Interoperability"
 %}
