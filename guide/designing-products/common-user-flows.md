@@ -276,7 +276,7 @@ Wallets can also be created with control shared between several other wallets, s
    layout = "float-left"
 %}
 
-Like fiat currencies, securely storing funds can be as simple as storing some coins in your pocket or highly complex with multiple banks’ safety deposit boxes. For self-custodial wallets, all of this is in the users’ hands, although wallet software ideally provides guidelines and support to more easily follow best practices. See also, the [Private key management](/guide/private-key-management/introduction/) section and [Protecting a wallet](guide/onboarding/protecting-a-wallet/).
+Like fiat currencies, securely storing funds can be as simple as storing some coins in your pocket or highly complex with multiple banks’ safety deposit boxes. For self-custodial wallets, all of this is in the users’ hands, although wallet software ideally provides guidelines and support to more easily follow best practices. See also, the [Private key management](/guide/private-key-management/introduction/) section and [Protecting a wallet](/guide/onboarding/protecting-a-wallet/).
 
 </div>
 
