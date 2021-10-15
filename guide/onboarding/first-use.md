@@ -76,7 +76,7 @@ Some studies suggest that users struggled greatly with technical terminology and
 >
 > <cite>As researched by <a href="https://arxiv.org/pdf/1802.04351.pdf">Eskandari et al</a></cite>
 
-Below is an example of some carousel screens that might be useful in helping a user understand what to expect from this wallet. For this example, we have opted to backup the users' recovery phrase to a cloud provider but other alternatives exist.
+Below is an example of some carousel screens that might be useful in helping a user understand what to expect from this wallet. For this example, we have opted to backup the users' recovery phrase to a cloud provider, but other alternatives exist.
 
 <div class="image-slide-gallery">
 
