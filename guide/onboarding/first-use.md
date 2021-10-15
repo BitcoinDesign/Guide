@@ -27,7 +27,7 @@ There are a number of common tasks a user might want to achieve the first time t
 - [Create a new wallet](/guide/onboarding/first-use/#creating-a-wallet), or
 - [Restore an existing wallet](/guide/onboarding/restoring-a-wallet/)
 - [Backup a wallet](/guide/onboarding/backing-up-a-recovery-phrase/)
-- [Acquire bitcoin](/guide/onboarding/funding-a-wallet/)
+- [Fund a wallet](/guide/onboarding/funding-a-wallet/)
 
 While the first two, creating or restoring a wallet, normally need to be tackled straight away, the last two can be designed to fit the flow and capability of your application.
 
