@@ -92,7 +92,7 @@ For small, frequent payments, we generally accept greater risk in exchange for c
    mobile = "/assets/images/guide/designing-products/personal-finance/daily-spending-wallet-setup-mobile.jpg"
    mobileRetina = "/assets/images/guide/designing-products/personal-finance/daily-spending-wallet-setup-mobile@2x.jpg"
    alt-text = "Mobile and desktop wallets"
-   caption = "For daily spending, users may use a dedicated mobile wallet they regularly refill from a primary wallet that is better&nbsp;secured."
+   caption = "For daily spending, users may use a dedicated mobile wallet they regularly refill from a primary wallet that is better secured."
    width = 1600
    height = 800
 %}
