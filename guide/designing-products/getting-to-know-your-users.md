@@ -35,7 +35,7 @@ When building Bitcoin applications, it is important to understand and develop kn
 
 
 ## Observe your potential users
-This observation could take the form of [user research]({{ 'guide/designing-products/user-research/' | relative_url }}), user interviews and surveys aimed at a range of participants to observe and identify what they do, how they think, and what they want. Let’s consider some things you might want to ask yourself when improving the your applications experience for new users:
+This observation could take the form of [user research]({{ 'guide/designing-products/user-research/' | relative_url }}), user interviews and surveys aimed at a range of participants to observe and identify what they do, how they think, and what they want. Let’s consider some things you might want to ask yourself when improving the experience for new users:
 
 
 * [What is their perception of Bitcoin?](https://docs.google.com/forms/d/e/1FAIpQLSdzT8cb54NgT7hGUnC_5ow6rDy-A9p_CA-5ptiQxrG8wQWvzQ/viewform)
