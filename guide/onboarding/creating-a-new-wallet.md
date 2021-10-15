@@ -3,7 +3,7 @@ layout: guide
 title: Creating a new wallet
 description: Steps to take when creating a new wallet, and tips for a great user experience.
 parent: Onboarding
-nav_order: 2
+nav_order: 1
 permalink: /guide/onboarding/creating-a-new-wallet/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/onboarding/creating-a-new-wallet/creating-a-new-wallet-preview.png
@@ -107,7 +107,7 @@ Below is an example of some carousel screens that might be useful in helping a u
 Ok, now let's look at [backing up a recovery phrase.]({{ '/guide/onboarding/backing-up-a-recovery-phrase/' | relative_url }})
 
 {% include next-previous.html
-   previousUrl = "/guide/onboarding/getting-to-know-your-users/"
+   previousUrl = "/guide/onboarding/introduction/"
    previousName = "Getting to know your users"
    nextUrl = "/guide/onboarding/backing-up-a-recovery-phrase/"
    nextName = "Backing up a recovery phrase"
