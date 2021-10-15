@@ -186,7 +186,7 @@ It's important to allow you and your team to be as free and creative about how y
 ## Prototype & Test
 Next, you can think about prototyping a subset of these ideas and understanding your ideas' feasibility through feedback on these prototypes. Put your prototypes in front of real users and test to verify the solution meets the users' needs.
 
-You might choose to lean on something like the [Bitcoin Wallet UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=616%3A0), which gives you several components that you can piece together for a specific [use case]({{ 'guide/case-studies/' | relative_url }}). This would allow you to prototype rapidly and get a feel for if the UI flow makes sense before committing to more detailed designs.
+You might choose to lean on something like the [Bitcoin Wallet UI Kit](https://www.bitcoinuikit.com/), which gives you several components that you can piece together for a specific [use case]({{ 'guide/case-studies/' | relative_url }}). This would allow you to prototype rapidly and get a feel for if the UI flow makes sense before committing to more detailed designs.
 
 Ultimately the goal of getting to know your users is to build trust in the application, feel comfortable using it, and are set up for success. They should have an idea of how this application is going to fit into their lives and take care of certain needs. It’s also ideal if they can already envision the next time they will use it.
 
