@@ -84,7 +84,7 @@ This is the “cash”—or in this case of Bitcoin, the “sats”—that we us
 
 Nearly all of these payments happen outside of our homes. This makes mobile wallet apps for smartphones ideal replacements for physical cash. Convenient camera access allows for payment via QR code, and NFC support ([Near-Field Communication](https://en.wikipedia.org/wiki/Near-field_communication){:target="_blank"}) lets us pay by holding our phones next to card readers.
 
-For small, frequent payments, we generally accept greater risk in exchange for convenience, ultimately protecting these funds with fewer security precautions. This is standard practice even among traditional financial service providers. For example, if a payment amount is below $25: you may not need to sign for a credit card payment; you may use a debit card which only requires entering a 4-digit PIN; or you may use a payment app which authenticates with face recognition.
+For small, frequent payments, we generally accept greater risk in exchange for convenience, ultimately protecting these funds with fewer security precautions. This is standard practice even among traditional financial service providers. For example, if a payment amount is below $25, you may not need to sign for a credit card payment. You might use a debit card that only requires entering a 4-digit PIN. Or, you might use a payment app that authenticates with face recognition.
 
 {% include picture.html
    image = "/assets/images/guide/designing-products/personal-finance/daily-spending-wallet-setup.jpg"
@@ -267,7 +267,7 @@ Considering your product, ask yourself these questions:
 
 ---
 
-Next we will look at why it is important to [get to know your users]({{ '/guide/designing-products/getting-to-know-your-users/' | relative_url }}) when desiging Bitcoin applications. 
+Next we will look at why it is important to [get to know your users]({{ '/guide/designing-products/getting-to-know-your-users/' | relative_url }}) when desiging Bitcoin applications.
 
 {% include next-previous.html
    previousUrl = "/guide/designing-products/usage-life-cycle/"
