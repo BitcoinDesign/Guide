@@ -3,7 +3,7 @@ layout: guide
 title: Restoring a wallet
 description: Options for restoring a wallet, from automatic cloud backup to recovery phrases, and more.
 parent: Onboarding
-nav_order: 3
+nav_order: 4
 permalink: /guide/onboarding/restoring-a-wallet/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/onboarding/restoring-a-wallet/restoring-a-wallet-preview.png

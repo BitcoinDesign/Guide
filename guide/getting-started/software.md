@@ -172,7 +172,7 @@ Primarily used by developers, CLIs offer feature-rich ways to interact with node
    layout = "float-right-desktop"
 %}
 
-Bitcoin [mining]({{ '/guide/getting-started/technology-primer/#how-is-the-blockchain-secured' | relative_url }}) is the act of confirming transactions by solving a computationally intense problem, which is rewarded via freshly minted bitcoin and transaction fees.
+Bitcoin [mining]({{ '/guide/getting-started/technology-primer/#how-are-transactions-confirmed' | relative_url }}) is the act of confirming transactions by solving a computationally intense problem, which is rewarded via freshly minted bitcoin and transaction fees.
 
 Mining has become primarily a professional undertaking with dedicated software to manage racks of [mining hardware]({{ '/guide/getting-started/hardware/#mining-hardware' | relative_url }}). However, some wallets still offer mining features, and there are also cloud mining providers that allow customers to rent mining capacity.
 

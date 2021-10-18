@@ -82,6 +82,6 @@ An overview of how users are likely to fund their wallets
 {% include next-previous.html
    previousUrl = "/guide/designing-products/design-resources/"
    previousName = "Design resources"
-   nextUrl = "/guide/onboarding/creating-a-new-wallet/"
-   nextName = "Creating a new wallet"
+   nextUrl = "/guide/onboarding/getting-to-know-your-users/"
+   nextName = "Getting to know your users"
 %}

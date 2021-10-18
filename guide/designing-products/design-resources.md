@@ -2,7 +2,7 @@
 layout: guide
 title: Design resources
 description: Design files by and for the Bitcoin Design Community
-nav_order: 10
+nav_order: 9
 parent: Designing Bitcoin products
 permalink: /guide/designing-products/design-resources/
 main_classes: -no-top-padding

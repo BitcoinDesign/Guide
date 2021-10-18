@@ -74,7 +74,7 @@ Once validated, the node passes the transaction on to other nodes in the network
 <!-- indicate that a tx with a fee rate that is lower than the current normal can be stuck and even forgotten by miners if it remains in the mempool for too long -->
 
 #### 7. Confirmations
-Given that you know [how transactions are confirmed]({{ '/guide/getting-started/technology-primer/#how-is-the-blockchain-secured' | relative_url }}), lets look at how the number of confirmations affects the payment settlement.
+Given that you know [how transactions are confirmed]({{ '/guide/getting-started/technology-primer/#how-are-transactions-confirmed' | relative_url }}), lets look at how the number of confirmations affects the payment settlement.
 
 Not every miner creates the new block with the same transactions, so some nodes may have a different version of the blockchain than others for a short time. The Bitcoin protocol's main function is to bring all nodes to the same version of the blockchain. Through a process called chain reorganization, nodes remove their incorrect block and update with the winning block as determined by the majority of other nodes.
 
