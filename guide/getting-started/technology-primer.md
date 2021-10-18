@@ -197,7 +197,7 @@ While creating a transaction to move your funds from one address to another is c
 There are multiple scaling solutions built on top of Bitcoin's base layer, but we will be focusing on the Lightning Network in this guide.
 
 **More info**
-- [Transaction lifecycle](/payments/transactions)
+- [Transaction lifecycle](/guide/payments/transactions/)
 
 <!--
    While the base layer needs to have high integrity of decentralization, high security guarantees, and solid monetary principals...

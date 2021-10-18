@@ -43,12 +43,6 @@ Remember: Onboarding should not be a crutch for bad design. Avoid trying to expl
 
 ---
 
-### [Getting to know your users]({{ '/guide/onboarding/getting-to-know-your-users/' | relative_url }})
-
-This section will give you some tips on how best to understand and develop knowledge about your users.
-
----
-
 ### [First use]({{ '/guide/onboarding/first-use/' | relative_url }})
 
 An overview of common tasks when using a wallet application for the first time.
@@ -82,6 +76,6 @@ An overview of how users are likely to fund their wallets
 {% include next-previous.html
    previousUrl = "/guide/designing-products/design-resources/"
    previousName = "Design resources"
-   nextUrl = "/guide/onboarding/getting-to-know-your-users/"
-   nextName = "Getting to know your users"
+   nextUrl = "/guide/onboarding/creating-a-new-wallet/"
+   nextName = "Creating a new wallet"
 %}

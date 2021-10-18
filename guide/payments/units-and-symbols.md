@@ -115,18 +115,29 @@ User should always be able to change unit contextually. Additionally, for the va
    height = 300
 %}
 
-There are many different ways of formatting numbers and currency units across the world. Bitcoin applications should be sensitive to these standards by adapting the formatting to the user's locale. A simple example are digit group and decimal separators. Based on where you live you may be accustomed to one of these formatting standards, but be less comfortable with the others:
-- `10 000,00`
-- `10.000,00`
-- `10,000.00`
-- `10'000,00`
-- `10,000·00`
+There are many different ways of formatting numbers and currency units across the world. Bitcoin applications should be sensitive to these standards by adapting the formatting to the user's locale. A simple example are digit group and decimal separators.
+
+##### Interactive formatter
+
+Try entering different amounts in the interactive formatter below (which uses your browsers [built-in formatting library](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat)) to see various country-specific formats.
+
+<div id="units-and-symbols-formatter">
+    <div class="units-and-symbols-formatter-top">
+        <label for="units-and-symbols-formatter-input">Enter an amount</label>
+        <input id="units-and-symbols-formatter-input" type="number" value="25000.15" max="100000000" />
+    </div>
+    <div id="units-and-symbols-formatter-table"></div>
+</div>
+
+##### Satcomma
 
 The "Satcomma standard" (well explained by [Mark Nugent](https://medium.com/@mark.nugent.iv/grouping-bitcoins-fractional-digits-an-idea-whose-time-has-come-22d9dad8ac51) and [ProgrammableTX](https://medium.com/coinmonks/the-satcomma-standard-89f1e7c2aede)) is a proposal that suggests adjustment of digit group separators for better readability of small bitcoin fractions, as follows:
 - `0.000 250 00 bitcoin`
 - `0.00 025 000 bitcoin`
 
 Starting the grouping from the right side makes it easier to identify the Satoshi value, which is in this example 25 000. As there is no clear consensus around this proposal, it is up to designers to decide whether this is appropriate for their audience.
+
+##### Further reading
 
 For more examples and information, see Wikipedia:
 
