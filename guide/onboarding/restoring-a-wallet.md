@@ -42,7 +42,7 @@ However, not all wallets from one application can be recovered in another, depen
 
 ### Restore from an automatic cloud backup
 
-As outlined earlier in the chapter, we consider an [automatic cloud backup](/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/) a good option, especially for beginners. One of the major UX benefits of this is a seamless recovery process. Assuming they are restoring in the same wallet application originally used, all the user needs to do to gain access to their funds again is to log into their cloud storage account.
+As outlined earlier in the chapter, we consider an [automatic cloud backup](/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/) a good option, especially for beginners. One of the major UX benefits of this is a seamless recovery process. Assuming they are restoring in the same wallet application originally used, all the user needs to do to gain access to their funds again is to log into their cloud storage account (typically iCloud or Google Drive).
 
 ### Restore manually with a recovery phrase
 
