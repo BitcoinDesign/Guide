@@ -4,7 +4,7 @@ title: Backing up a recovery phrase
 description: Handling recovery phrases during onboarding.
 parent: Onboarding
 has_children: true
-nav_order: 3
+nav_order: 2
 permalink: /guide/onboarding/backing-up-a-recovery-phrase/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase-preview.png

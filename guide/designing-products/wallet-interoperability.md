@@ -2,7 +2,7 @@
 layout: guide
 title: Interoperability
 description: Designing for seamless experiences across Bitcoin applications.
-nav_order: 8
+nav_order: 9
 parent: Designing Bitcoin products
 permalink: /guide/designing-products/wallet-interoperability/
 main_classes: -no-top-padding

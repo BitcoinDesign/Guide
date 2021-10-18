@@ -70,13 +70,19 @@ If we consider Bitcoin money, we need to consider how Bitcoin users think about 
 
 ---
 
+### [Getting to know your users]({{ '/guide/designing-products/getting-to-know-your-users/' | relative_url }})
+
+This section will give you some tips on how best to understand and develop knowledge about your users. 
+
+---
+
 ### [Common user flows]({{ '/guide/designing-products/common-user-flows/' | relative_url }})
 
 Most Bitcoin applications share certain user activities, from initial setup to making a transaction. It is vital to follow users' expected patterns and behaviors to reduce mistakes and enable seamless switching between products.
 
 ---
 
-### [Wallet interoperability]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }})
+### [Interoperability]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }})
 
 Get to know the points of interaction and overlap connecting payment links, wallet recovery, node configurations, and more.
 

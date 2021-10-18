@@ -37,9 +37,9 @@ Alternative approaches can be to wait and prompt the user only once there are fu
 
 ### Creating a wallet
 
-[Bitcoin wallets]({{ 'guide/glossary/#wallet' | relative_url }}) contain the private keys to a user’s bitcoin. Private keys let users access bitcoin associated with those keys. If the user does not have a Bitcoin wallet already that they want to restore, it is necessary to create a new one. 
+[Bitcoin wallets]({{ 'guide/glossary/#wallet' | relative_url }}) contain the private keys to a user’s bitcoin. Private keys let users access bitcoin associated with those keys. If the user does not have a Bitcoin wallet already that they want to restore, it is necessary to create a new one.
 
-Like regular keys on a keychain, Bitcoin private keys can be copied. This makes [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) one of the most important considerations of any bitcoin owner. Most Bitcoin wallet applications will automatically generate the user’s private keys during onboarding. 
+Like regular keys on a keychain, Bitcoin private keys can be copied. This makes [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) one of the most important considerations of any bitcoin owner. Most Bitcoin wallet applications will automatically generate the user’s private keys during onboarding.
 
 <div class="center" markdown="1">
 
@@ -116,7 +116,7 @@ Below is an example of some carousel screens that might be useful in helping a u
 Ok, now let's look at [backing up a recovery phrase.]({{ '/guide/onboarding/backing-up-a-recovery-phrase/' | relative_url }})
 
 {% include next-previous.html
-   previousUrl = "/guide/onboarding/getting-to-know-your-users/"
+   previousUrl = "/guide/onboarding/introduction/"
    previousName = "Getting to know your users"
    nextUrl = "/guide/onboarding/backing-up-a-recovery-phrase/"
    nextName = "Backing up a recovery phrase"

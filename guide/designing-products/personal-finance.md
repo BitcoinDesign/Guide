@@ -263,11 +263,11 @@ Considering your product, ask yourself these questions:
 
 ---
 
-Looking closer at these use cases, we can identify a series of user actions, as outlined in [common user flows]({{ '/guide/designing-products/common-user-flows/' | relative_url }}).
+Next we will look at why it is important to [get to know your users]({{ '/guide/designing-products/getting-to-know-your-users/' | relative_url }}) when desiging Bitcoin applications. 
 
 {% include next-previous.html
    previousUrl = "/guide/designing-products/usage-life-cycle/"
    previousName = "Usage life cycle"
-   nextUrl = "/guide/designing-products/common-user-flows/"
-   nextName = "Common user flows"
+   nextUrl = "/guide/designing-products/getting-to-know-your-users/"
+   nextName = "Getting to know your users"
 %}
