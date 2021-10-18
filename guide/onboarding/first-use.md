@@ -70,7 +70,7 @@ While this may sound daunting to first-time users, these caveats mustn't be hidd
 
 Ideally your application supports both the base layer and the Lightning network. When talking about backups, you should be clear on what is possible and required in terms of restoring the user’s wallet from a backup.
 
-Some studies suggest that users struggled greatly with technical terminology and feeling as though they had a lack of guidance during wallet setup. By walking users through single steps that clearly frame the features of self-custody Bitcoin wallets, users will feel well-equipped to navigate and use the wallet confidently.
+Some studies suggest that users struggled greatly with technical terminology and feeling as though they had a lack of guidance during wallet setup. By walking users through single steps that clearly frame the features of self-custodial Bitcoin wallets, users will feel well-equipped to navigate and use the wallet confidently.
 
 > Users reported that they often felt like they lacked guidance and understanding during wallet setup
 >
