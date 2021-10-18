@@ -34,6 +34,7 @@ twitter_url: "https://twitter.com/bitcoin_design"
 # Build settings
 theme: minima
 plugins:
+  - jekyll-redirect-from
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-compress-images
