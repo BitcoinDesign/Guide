@@ -26,7 +26,7 @@ image: https://bitcoin.design/assets/images/guide/onboarding/restoring-a-wallet/
 
 There are several reasons why a user might need to restore their wallet. They may have lost their device, be migrating from a different application or have deleted their wallet application. Regardless of why, it’s important that your wallet application has an easy way for users to recover their funds. 
 
-However, not all wallets from one application can be recovered in another, depending on what standards they support as covered in the [wallet interoperability]({{ 'guide/designing-products/wallet-interoperability' | relative_url }}) section. This is particularly true for a wallet holding bitcoin on the Lightning network, and restoring should be done with the application originally used.
+However, not all wallets from one application can be recovered in another, depending on what standards they support, as covered in the [wallet interoperability]({{ 'guide/designing-products/wallet-interoperability' | relative_url }}) section. This is particularly true for a wallet holding bitcoin on the Lightning network, and restoring should be done with the application originally used.
 
 {% include picture.html
    image = "/assets/images/guide/onboarding/restoring-a-wallet/import-options.png"
