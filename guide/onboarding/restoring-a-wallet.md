@@ -50,7 +50,7 @@ Users may have created a wallet with another wallet application. In this case, t
 
 ### Restore from an encrypted QR code backup
 
-Some applications  also provide an option for users to scan an encrypted proprietary QR code version of their recovery phrase. For a more detailed explanation of this recovery technique check out this [blog post](https://blog.keys.casa/product-update-transaction-memos-encrypted-backups/) by Casa.
+Some applications  also provide an option for users to scan an encrypted proprietary QR code version of their recovery phrase. For a more detailed explanation of this recovery technique, check out this [blog post](https://blog.keys.casa/product-update-transaction-memos-encrypted-backups/) by Casa.
 
 ### Restore a wallet with funds on the Lightning network
 
