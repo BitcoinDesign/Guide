@@ -56,6 +56,12 @@ Some applications  also provide an option for users to scan an encrypted proprie
 
 To fully restore a wallet with funds on the [Lightning network](/guide/glossary/#lightning-network), the state and history of the payment channels are needed in addition to the recovery phrase. As there are no standards for this yet, wallet applications need to have their own format for backing this up, and subsequently restoring. Due to the amount of information, a QR code of the encrypted data, like in the previous example, can be appropriate. 
 
+{% include tip/recommendation.html %}
+
+Be clear to users what you support and what wallet specifications they can expect to restore in your application. Most bitcoin products should support restoring from a recovery phrase at a minimum. Capability to restore an HD wallet implemented according to BIP32, 39, 43, 44, 49, 84 and 380 would be a good starting point. 
+
+{% include tip/close.html %}
+
 Some less popular methods for restoring a wallet include importing a file with all the information required to recover funds such as public keys and key metadata. A wallet.dat file from Bitcoin Core is one example of such a file scheme. If you are developing a watch-only wallet, you would import an [extended public key](/guide/glossary/#extended-public-key-xpub-ypub-zpub) instead of the recovery phrase, this tends to be for technically minded users however.
 
 ---
