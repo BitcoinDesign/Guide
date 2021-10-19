@@ -5,6 +5,8 @@ description: How best to understand and develop knowledge about your users.
 parent: Designing Bitcoin products
 nav_order: 7
 permalink: /guide/designing-products/getting-to-know-your-users/
+redirect_from:
+ - /guide/onboarding/getting-to-know-your-users/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/onboarding/getting-to-know-your-users/getting-to-know-your-users-preview.png
 ---
