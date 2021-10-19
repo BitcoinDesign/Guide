@@ -5,6 +5,8 @@ description: Common tasks when using a wallet application for the first time.
 parent: Onboarding
 nav_order: 1
 permalink: /guide/onboarding/first-use/
+redirect_from:
+ - /guide/onboarding/creating-a-new-wallet/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/onboarding/creating-a-new-wallet/creating-a-new-wallet-preview.png
 ---
