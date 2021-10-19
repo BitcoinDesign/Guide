@@ -55,7 +55,7 @@ Like regular keys on a keychain, Bitcoin private keys can be copied. This makes 
 
 After the user  selects “Create a new wallet”, you might present informational carousels that provide a high-level overview of the implications, benefits, and responsibility that comes with having a self-custodial wallet. Here you can explain to your user that access to the wallet will not require collecting any sensitive information such as usernames and passwords, which is often the case with traditional financial products.
 
-Rather, the user can directly access their funds as long as they have access to the private key or recovery phrase. You should help your users understand that your team does not have the ability to recover their funds in the event they lose their private key. A self-custodial wallet often means the user will have to take on greater responsibility to safely protect their private key so they can always access their funds.
+Bitcoin owners can directly access their funds as long as they have access to their private keys or recovery phrase. You should help your users understand that your team does not have the ability to recover their funds in the event they lose their private key. A self-custodial wallet means the user will have to take on greater responsibility to safely protect their private key so they can always access their funds.
 
 </div>
 
