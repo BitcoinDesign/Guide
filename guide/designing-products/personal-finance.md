@@ -43,7 +43,7 @@ Money is complex and can play many different roles in our lives. Buying a new sh
 
 It still is possible to create simplified mental models that help us better understand user needs and behaviors. A single model might be oversimplified, but if we combine a few different lenses we can narrow in on a more complete picture that allows us to create more focused experiences, have better product differentiation, and make it easier for contributors to collaborate to make decisions.
 
-This section uses the traditional personal finance lens to think about what type of bitcoin products we may need. Because of bitcoin's unique properties, we cannot imitate conventional financial products and assume that the same solutions apply. And even if we could, this might be an excellent opportunity to take a fresh look and design new solutions for today's world. Bitcoin is also global by nature, so consider the unique circumstances of your users' lives.
+This section uses the traditional personal finance lens to think about what type of Bitcoin products we may need. Because of Bitcoin's unique properties, we cannot imitate conventional financial products and assume that the same solutions apply. And even if we could, this might be an excellent opportunity to take a fresh look and design new solutions for today's world. Bitcoin is also global by nature, so consider the unique circumstances of your users' lives.
 
 Assuming that a user wants to [self-custody](/guide/designing-products/principles/#self-custody) their bitcoin,while balancing [security](/guide/designing-products/principles/#security) and [privacy](/guide/designing-products/principles/#privacy) here are six ways that they can organize finances:
 
@@ -84,7 +84,7 @@ This is the “cash”—or in this case of Bitcoin, the “sats”—that we us
 
 Nearly all of these payments happen outside of our homes. This makes mobile wallet apps for smartphones ideal replacements for physical cash. Convenient camera access allows for payment via QR code, and NFC support ([Near-Field Communication](https://en.wikipedia.org/wiki/Near-field_communication){:target="_blank"}) lets us pay by holding our phones next to card readers.
 
-For small, frequent payments, we generally accept greater risk in exchange for convenience, ultimately protecting these funds with fewer security precautions. This is standard practice even among traditional financial service providers. One example is that you may not need to sign or enter the PIN for credit card payments if the amount is below $25. The only thing that may be required to transact is entering a 4-digit PIN or authentication via face recognition.
+For small, frequent payments, we generally accept greater risk in exchange for convenience, ultimately protecting these funds with fewer security precautions. This is standard practice even among traditional financial service providers. For example, if a payment amount is below $25, you may not need to sign for a credit card payment. You might use a debit card that only requires entering a 4-digit PIN. Or, you might use a payment app that authenticates with face recognition.
 
 {% include picture.html
    image = "/assets/images/guide/designing-products/personal-finance/daily-spending-wallet-setup.jpg"
@@ -99,7 +99,7 @@ For small, frequent payments, we generally accept greater risk in exchange for c
 
 Most stores (online and offline) don’t currently accept bitcoin. When they do, users who already pay with smartphones or NFC-enabled credit cards can easily transition to Bitcoin apps.
 
-A typical scenario could be that users create dedicated mobile bitcoin (and lightning) wallets for on-the-go payments, in addition to having separate wallets for larger amounts. Similar to having a bank account and regularly taking out cash at an ATM, users could refill their mobile wallets. The mobile wallet may use [automatic cloud backup private key storage]({{ '/guide/private-key-management/cloud-backup/' | relative_url }}). The primary wallet however, would be more strongly secured with a [hardware wallet]({% link guide/getting-started/hardware.md %}#hardware-wallets) or even a [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}) configuration. This would mirror the primary focus of convenience over security. Beyond key management, payment interactions could be identical to what users are already familiar with.
+A typical scenario could be that users create dedicated mobile Bitcoin wallets for on-the-go payments, in addition to having separate wallets for larger amounts. Similar to having a bank account and regularly taking out cash at an ATM, users could refill their mobile wallets. The mobile wallet is connected to the Lightning network, which allows the user to make very fast (almost instant) payments. This wallet may use [automatic cloud backup]({{ '/guide/private-key-management/cloud-backup/' | relative_url }}) for the private key as well as the Lightning channel state. The user's primary wallet however, would be more strongly secured with a [hardware wallet]({% link guide/getting-started/hardware.md %}#hardware-wallets) or even a [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}) configuration. This would mirror the primary focus of convenience over security. Beyond key management, payment interactions could be identical to what users are already familiar with.
 
 For more on this use case, see the [daily spending case study]({{ '/guide/case-studies/cloud-backup/' | relative_url }}).
 
@@ -122,7 +122,7 @@ Higher value payments such as rent, utilities, car payments, and groceries are s
 
 For recurring payments, some of these mechanisms let businesses regularly deduct money from accounts without customers approving each transaction.
 
-Bitcoin is different since the sender must initiate all transactions, meaning that automated deductions might not be possible—at least when the wallet is non-custodial.
+Bitcoin is different: since the sender must initiate all transactions, automated deductions are impossible for non-custodial wallets. However, the sender's wallet may support automatically sending recurring payments, which the sender would need to configure on their own.
 
 {% include picture.html
    image = "/assets/images/guide/designing-products/personal-finance/monthly-budget-wallet-setup.jpg"
@@ -134,7 +134,11 @@ Bitcoin is different since the sender must initiate all transactions, meaning th
    height = 800
 %}
 
-A hardware wallet accompanied by a desktop application where keys are stored and transactions are securely signed by hardware is another solution. This reduces the risk of keeping funds on a mobile wallet configuration but adds acceptable friction for transactions that occur less frequently. See the [savings account case study]({{ '/guide/case-studies/savings-account/' | relative_url }}) for an exploration of this user experience.
+The higher-value of these payments necessitates a greater level of security than the daily spending wallet (which is a ["hot wallet"]({{'/guide/glossary/wallet/#hot--cold-wallet' | relative_url}}), meaning that the private key is on a device connected to the internet).
+
+At the moment, a good solution is a desktop application which relies on a hardware device to sign transactions. This reduces the risk of keeping funds on a mobile wallet configuration but adds acceptable friction for transactions that occur less frequently. See the [savings account case study]({{ '/guide/case-studies/savings-account/' | relative_url }}) for an exploration of this user experience.
+
+A disadvantage to this solution is that it does not use the Lightning network, meaning that the user will need to wait longer for their [transaction to confirm]({{'/guide/payments/transactions/#7-confirmations' | relative_url}}) as well as pay an on-chain transaction fee. However, this will likely not be always be the case: in the future, projects such as [Lightning Signer](https://gitlab.com/lightning-signer/docs) may solve this issue by allowing the private keys to be stored separately from the Lightning node on hardware that is security-hardened.
 
 ## Emergency funds
 
@@ -263,7 +267,7 @@ Considering your product, ask yourself these questions:
 
 ---
 
-Next we will look at why it is important to [get to know your users]({{ '/guide/designing-products/getting-to-know-your-users/' | relative_url }}) when desiging Bitcoin applications. 
+Next we will look at why it is important to [get to know your users]({{ '/guide/designing-products/getting-to-know-your-users/' | relative_url }}) when desiging Bitcoin applications.
 
 {% include next-previous.html
    previousUrl = "/guide/designing-products/usage-life-cycle/"
