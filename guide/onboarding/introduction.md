@@ -43,9 +43,9 @@ Remember: Onboarding should not be a crutch for bad design. Avoid trying to expl
 
 ---
 
-### [Creating a new wallet]({{ '/guide/onboarding/creating-a-new-wallet/' | relative_url }})
+### [First use]({{ '/guide/onboarding/first-use/' | relative_url }})
 
-An overview of what information to include when creating a wallet for the first time.
+An overview of common tasks when using a wallet application for the first time.
 
 ---
 
@@ -76,6 +76,6 @@ An overview of how users are likely to fund their wallets
 {% include next-previous.html
    previousUrl = "/guide/designing-products/design-resources/"
    previousName = "Design resources"
-   nextUrl = "/guide/onboarding/creating-a-new-wallet/"
-   nextName = "Creating a new wallet"
+   nextUrl = "/guide/onboarding/first-use/"
+   nextName = "First use"
 %}
