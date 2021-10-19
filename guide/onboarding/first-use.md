@@ -39,7 +39,7 @@ Alternative approaches can be to wait and prompt the user only once there are fu
 
 [Bitcoin wallets]({{ 'guide/glossary/#wallet' | relative_url }}) contain the private keys to a user’s bitcoin. Private keys let users access bitcoin associated with those keys. If the user does not have a Bitcoin wallet already that they want to restore, it is necessary to create a new one. 
 
-Like regular keys on a keychain, Bitcoin private keys can be copied. This makes [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) one of the most important considerations of any bitcoin owner. Most Bitcoin wallet applications will automatically generate the user’s private keys during onboarding. 
+Like regular keys on a keychain, Bitcoin private keys can be copied. This makes [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) one of the most important considerations of any bitcoin owner. Bitcoin wallet applications should automatically generate the user’s private keys locally, meaning they are only generated and stored on the device and not by the wallet provider, during onboarding. 
 
 <div class="center" markdown="1">
 
