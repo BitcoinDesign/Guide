@@ -54,9 +54,9 @@ Below are areas within your Bitcoin application where interoperability should be
    layout = "float-right-desktop"
 %}
 
-You should ensure your application is interoperable with the various techniques for sending and receiving Bitcoin payments. For base-layer, this means supporting various [address formats](/guide/glossary/address/), such as legacy addresses(P2PKH), compatibility addresses (P2SH), and Segwit addresses (Bech32). For Lightning payments, your application should be able to read and generate invoices according to the [BOLT 11](/guide/glossary/#bolt---basis-of-lightning-technology) standard. 
+You should ensure your application is interoperable with the various techniques for sending and receiving Bitcoin payments. For base-layer, this means supporting various [address formats](/guide/glossary/address/), such as legacy addresses (P2PKH), compatibility addresses (P2SH), and Segwit addresses (Bech32). For Lightning payments, your application should be able to read and generate invoices according to the [BOLT 11](/guide/glossary/#bolt---basis-of-lightning-technology) standard. 
 
-You may want to also support more experimental Lightning payment options such as [BOLT 12 offers](https://bolt12.org/), [Keysend](https://lightning.readthedocs.io/lightning-keysend.7.html), and [LNURL](https://github.com/fiatjaf/lnurl-rfc). If your application does not support these, you should be sure to include a human-readable failure state.
+You may want to also support more experimental Lightning payment options such as [Lightning addresses](https://lightningaddress.com/), [BOLT 12 offers](https://bolt12.org/), [Keysend](https://lightning.readthedocs.io/lightning-keysend.7.html), and [LNURL](https://github.com/fiatjaf/lnurl-rfc). If your application does not support these, you should be sure to include a human-readable failure state.
 
 Bitcoin payment links and the underlying data should also be readable by your application. Forms should be automatically opened and filled in your application when a user clicks a payment link or button. Payment metadata is defined in [BIP 21](https://bips.xyz/21) for on-chain addresses and [BOLT 11](https://github.com/lightningnetwork/lightning-rfc/blob/master/11-payment-encoding.md) for Lightning invoices.
 
