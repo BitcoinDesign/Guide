@@ -64,18 +64,20 @@ A PIN is one of the most common and traditional methods for securing a mobile ap
    image = "/assets/images/guide/onboarding/protecting-a-wallet/choose-pin.png"
    retina = "/assets/images/guide/onboarding/protecting-a-wallet/choose-pin@2x.png"
    alt-text = "Choosing a pin screen"
+   caption = "When choosing a PIN, the user is also informed about how it is used."
    width = 250
    height = 541
-   class = "shadow"
+   layout = "shadow"
 %}
 
 {% include picture.html
    image = "/assets/images/guide/onboarding/protecting-a-wallet/enter-pin.png"
    retina = "/assets/images/guide/onboarding/protecting-a-wallet/enter-pin@2x.png"
    alt-text = "Enter pin screen"
+   caption = "PIN entry could be limited to a certain amount of unsuccessful attempts per day."
    width = 250
    height = 541
-   class = "shadow"
+   layout = "shadow"
 %}
 
 </div>
@@ -106,56 +108,167 @@ It's more common for wallets to protect private keys, but not much is done for o
 
 ## Quickly hide from overview screen
 
-The hide icon/button, which is usually displayed within close reach of the balance itself, is used to quickly and easily hide and reveal wallet information by tapping or clicking on it.
+<div class="center" markdown="1">
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/protecting-a-wallet/hide-by-eye-icon.gif"
+   image = "/assets/images/guide/onboarding/protecting-a-wallet/quick-hide-access.png"
+   imageRetina = "/assets/images/guide/onboarding/protecting-a-wallet/quick-hide-access@2x.png"
    alt-text = "A gif of a mobile interface for hiding user information"
-   width = 1600
-   height = 800
+   caption = "Home screen with a hidden balance and a quick reveal toggle."
+   width = 250
+   height = 541
+   layout = "float-right-desktop -background -shadow"
 %}
+
+The hide icon/button, which is usually displayed within close reach of the balance itself, is used to quickly and easily hide and reveal wallet information by tapping or clicking on it.
 
 This is an easy and convenient way to switch between revealed and hidden states, but still makes it easy for anyone else to reveal user information if they have access to their device.
 
+</div>
+
 ## Entering a PIN to reveal information
+
+<div class="center" markdown="1">
+
+{% include picture.html
+   image = "/assets/images/guide/onboarding/protecting-a-wallet/hidden-balance-pin-reveal.png"
+   imageRetina = "/assets/images/guide/onboarding/protecting-a-wallet/hidden-balance-pin-reveal@2x.png"
+   alt-text = "A gif showing a mobile interface where hidden information is revealed with a PIN"
+   caption = "Revealing the balance could require PIN entry."
+   width = 250
+   height = 541
+   layout = "float-right-desktop -background -shadow"
+%}
 
 With this method it's as easy to reverse the hidden state as it is to enable it. This is good for convenience sake, however, for protection against unauthorized access, perhaps the user should only be able to unhide their information if a PIN or password has been entered. This could therefore reaffirm the identity of the wallet owner for extra security.
 
-{% include picture.html
-   image = "/assets/images/guide/onboarding/protecting-a-wallet/reveal-by-pin.gif"
-   alt-text = "A gif showing a mobile interface where hidden information is revealed with a PIN"
-   width = 1600
-   height = 800
-%}
-
 In this example the risk of an unauthorized person revealing their information is minimal due to the PIN required. However, it might not be convenient for the users to repeatedly put in their PIN when ever they want to reveal their information especially if they do so often.
+
+</div>
 
 ##  Hide if inactive
 
-Another solution is to invoke the wallet’s hidden state as a default when the app is opened, to protect against prying eyes during initial display. The pre-hidden state can be unveiled after a tap, PIN entry, or perhaps a short 5-second timer.
+<div class="center" markdown="1">
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/protecting-a-wallet/hide-by-default.gif"
+   image = "/assets/images/guide/onboarding/protecting-a-wallet/hidden-balance-reveal-timer.png"
+   imageRetina = "/assets/images/guide/onboarding/protecting-a-wallet/hidden-balance-reveal-timer@2x.png"
    alt-text = "A gif showing a mobile interface where sensitive information is hidden by default"
-   width = 1600
-   height = 800
+   caption = "A timer could also be used before automatic balance reveal."
+   width = 250
+   height = 541
+   layout = "float-right-desktop -background -shadow"
 %}
 
+Another solution is to invoke the wallet’s hidden state as a default when the app is opened, to protect against prying eyes during initial display. The pre-hidden state can be unveiled after a tap, PIN entry, or perhaps a short 5-second timer.
 
 This gives users some time to assess their environment before their info is displayed but could leave them frustrated, having to wait for their information to be revealed especially in an urgent situation.
 
+</div>
+
 ## Making the toggle less obvious
+
+<div class="center" markdown="1">
+
+{% include picture.html
+   image = "/assets/images/guide/onboarding/protecting-a-wallet/privacy-and-security-settings.png"
+   imageRetina = "/assets/images/guide/onboarding/protecting-a-wallet/privacy-and-security-settings@2x.png"
+   alt-text = "A gif showing a mobile interface where the toggle for hiding information is moved to settings"
+   caption = "Hiding sensitive data could be toggle in the settings."
+   width = 250
+   height = 541
+   layout = "float-right-desktop -background -shadow"
+%}
 
 Having the show/hide button right on the main screen makes things quite obvious for someone who has access to a users device to press unhide. A solution would be to move the hide toggle away from the home screen and into the [app settings](https://medium.com/@olanrewajusodiq64/the-ui-ux-of-hide-balance-designing-to-improve-asset-security-e4b20668f315). This way, if someone has access to their device and opens the app, they may not immediately know how to reveal the balance, transaction and/or addresses as it is not made obvious as the previous solutions.
 
+An advantage here is the risk of an unauthorized person revealing their information is minimal due to the fact that the toggle isn't immediately visible on the home screen. The downside is that a user cannot quickly hide their information if the need arises.
+
+</div>
+
+## Security & privacy checklist
+
+Checklist screens for security and privacy can simplify wallet management for users. They abstract away detailed settings and provide simplified feedback and recommendations to make adjustments.
+
+<div class="image-slide-gallery">
+
 {% include picture.html
-   image = "/assets/images/guide/onboarding/protecting-a-wallet/hide-in-settings.gif"
-   alt-text = "A gif showing a mobile interface where the toggle for hiding information is moved to settings"
-   width = 1600
-   height = 800
+   image = "/assets/images/guide/onboarding/protecting-a-wallet/security-checklist.png"
+   retina = "/assets/images/guide/onboarding/protecting-a-wallet/security-checklist@2x.png"
+   alt-text = "A security checklist screen"
+   caption = "An example checklist for security settings."
+   width = 250
+   height = 541
+   layout = "shadow"
 %}
 
-An advantage here is the risk of an unauthorized person revealing their information is minimal due to the fact that the toggle isn't immediately visible on the home screen. The downside is that a user cannot quickly hide their information if the need arises.
+{% include picture.html
+   image = "/assets/images/guide/onboarding/protecting-a-wallet/privacy-checklist.png"
+   retina = "/assets/images/guide/onboarding/protecting-a-wallet/privacy-checklist@2x.png"
+   alt-text = "A privacy checklist screen"
+   caption = "An example checklist for privacy settings."
+   width = 250
+   height = 541
+   layout = "shadow"
+%}
+
+</div>
+
+## Progressive security
+
+As user funds change, the current security settings may no longer be appropriate. A life-changing amount of funds for one user may be pocket change for another, so it is hard to know what is appropriate in context. However, applications can still pro-actively remind users to regularly review their security and make recommendations in clear situations.
+
+<div class="image-slide-gallery">
+
+{% include picture.html
+   image = "/assets/images/guide/onboarding/protecting-a-wallet/home-security-reminder.png"
+   retina = "/assets/images/guide/onboarding/protecting-a-wallet/home-security-reminder@2x.png"
+   alt-text = "Wallet home screen with a reminder to review security settings"
+   caption = "Applications may regularly remind users to review their security settings."
+   width = 250
+   height = 541
+   layout = "shadow"
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/onboarding/protecting-a-wallet/inadequate-security.png"
+   retina = "/assets/images/guide/onboarding/protecting-a-wallet/inadequate-security@2x.png"
+   alt-text = "A security checklist screen with a note about the users security not being appropriate to their funds stored"
+   caption = "In clear situations, strong recommendations can be made to switch to a better security configuration."
+   width = 250
+   height = 541
+   layout = "shadow"
+%}
+
+</div>
+
+## Wallet limits
+
+To further prevent unwanted spending, wallet limits can be established. These could limit the size of single transactions, or impose daily limits. Limits could be changed at any time, but they would only apply after a certain amount of time has passed. Alternatively, another password could be required to change limits. So if a third-party manages to access the wallet, the pace at which they could steal the funds would be limited.
+
+<div class="image-slide-gallery">
+
+{% include picture.html
+   image = "/assets/images/guide/onboarding/protecting-a-wallet/privacy-and-security-settings.png"
+   imageRetina = "/assets/images/guide/onboarding/protecting-a-wallet/privacy-and-security-settings@2x.png"
+   alt-text = "A gif showing a mobile interface where the toggle for hiding information is moved to settings"
+   caption = "App settings with user options to set limits on transaction size and frequency."
+   width = 250
+   height = 541
+   layout = "shadow"
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/onboarding/protecting-a-wallet/wallet-limit-reached.png"
+   retina = "/assets/images/guide/onboarding/protecting-a-wallet/wallet-limit-reached@2x.png"
+   alt-text = "Wallet home screen with an overlay explaining that the daily spending limit was reached"
+   caption = "Users are notified when they reach the wallet limits."
+   width = 250
+   height = 541
+   layout = "shadow"
+%}
+
+</div>
 
 ## Why are these patterns important to designers?
 
