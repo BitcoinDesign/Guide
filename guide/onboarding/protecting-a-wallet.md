@@ -9,6 +9,23 @@ main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/onboarding/protecting-a-wallet/protecting-a-wallet-preview.png
 ---
 
+<!--
+
+Editor's notes
+
+This page narrowly focuses on user actions to set up and maintain good security
+and privacy for their wallets. It does not cover key setup and management, or
+technical things like watch towers for Lightning wallets.
+
+Illustration sources
+
+- https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-UI-Kit?node-id=2600%3A66326
+
+-->
+
+
+
+
 {% include picture.html
    image = "/assets/images/guide/onboarding/protecting-a-wallet/protecting-a-wallet.png"
    retina = "/assets/images/guide/onboarding/protecting-a-wallet/protecting-a-wallet@2x.png"
