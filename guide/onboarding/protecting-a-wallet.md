@@ -202,7 +202,7 @@ During PIN creation, tell your users what a good, secure PIN is (i.e. not their 
    layout = "float-right-desktop -background -shadow"
 %}
 
-There may be situations in which users do not want to show their real balances and transactions, or may be forced to disclose access. Here it can be helpful to allow users to set a second PIN, which loads a wallet with dummy data. The user experience of this wallet should look and feel like the actual wallet, but it should only simulate transactions.
+There may be situations in which users do not want to show their real balances and transactions, or may be forced to disclose access. Here it can be helpful to allow users to set a second PIN, which loads a wallet with dummy data. The user experience of this wallet should look and feel like the actual wallet, but it should only simulate transactions. For an example, see [Blue Wallet](https://bluewallet.io/features/#pdeniability).
 
 </div>
 
