@@ -53,7 +53,7 @@ Recent [studies](https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445679) show u
 
 > New-to-crypto users often expect a recovery mechanism that allows them to “regain access to their funds in the case that they lose their seed phrase.”
 >
-> <cite>As researched by <a href="https://voskart.de/pdf/bits_under_mattress.pdf">Voskobojnikov et al</a></cite>
+> <cite>As researched by <a href="https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445679">Voskobojnikov et al</a></cite>
 
 Cloud backups may be preferable in many situations. They speed up the onboarding process, are easier for newer users, and protect the user from mishandling their recovery phrase and potentially losing funds. They can also be automated to help ensure that there is an up-to-date backup of channel state in case the user loses their wallet. This type of gateway gives a beginner security without overwhelming them with unfamiliar onboarding actions.
 
