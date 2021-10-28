@@ -33,46 +33,35 @@ Illustration sources
    layout = "full-width"
 %}
 
-# Backing up a recovery phrase
+# Backing up a wallet
 
-When a user generates a new wallet, it creates something called a recovery phrase. A [recovery phrase]({{ 'guide/glossary/#recovery-phrase' | relative_url }}), is a group of 12 or 24 words that lets users recover funds if wallet access is lost. Likewise, users who lose both their recovery phrase and wallet access permanently lose their bitcoin. Arguably, this creates one of the toughest design problems within the space.
+When a user generates a new Bitcoin wallet, they will soon need to create a backup of their wallet in order to ensure that funds are not lost.
 
-<div class="center" markdown="1">
+There are two main types of information that need to be backed up: the user's wallet recovery data and their Lightning channel state. While the wallet recovery data may be used to restore the wallet using another wallet application, the channel state is typically only restorable within the same application.
 
-{% include image.html
-   image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/copy-recovery-phrase.png"
-   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/copy-recovery-phrase@2x.png"
-   width = 250
-   height = 541
-   alt-text = "Recovery phrase mobile interface"
-   caption = "Typical recovery phrase UI from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=649%3A760)"
-   layout = "float-left-desktop -background -shadow"
-%}
+Users who lose both their wallet access and their backup permanently lose their bitcoin. Arguably, this creates one of the toughest design problems within the space.
 
-When new users are presented with a recovery phrase, they are often asked to write 12 or 24 words on a piece of paper and store it safely. This kind of recovery scheme can create an unfamiliar and frustrating onboarding experience. It also poses potential threats to the safety of their funds, as new users may not know how to properly store their recovery phrase, increasing the risk of losing it. It also creates a decent amount of friction, ultimately driving new users away from self-custodying their bitcoin.
-
-Regardless of the type of scheme you decide to go with, it’s crucial to be explicit about how your product is handling key management.
-</div>
+Backups could be handled automatically by the software, manually by the user, or a mix of these two methods. Regardless of the type of scheme you decide to go with, it’s crucial to be explicit about how your product is handling backups and private key management.
 
 {% include tip/recommendation.html %}
 
-We recommend that the optimal phase to hint the user to perform the backup should be after the wallet has received funds for the first time. This way we avoid overwhelming the user with an unnecessary task, as it just makes sense to backup a wallet that has funds on it.
+We recommend that the optimal phase to hint the user to perform the backup should be after the wallet has received funds for the first time. This way, we avoid overwhelming the user with an unnecessary task, as it makes more sense to backup a wallet with funds on it.
 
 {% include tip/close.html %}
 
-Recent [studies](https://voskart.de/pdf/bits_under_mattress.pdf) show users are often confused or unaware of where their private keys are being stored, ultimately causing inadequate risk assessment and poor storage behavior. This risk of user negligence may be avoided with transparent messaging around the scheme your wallet is using.
+Recent [studies](https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445679) show users are often confused or unaware of where their private keys are being stored, ultimately causing inadequate risk assessment and poor storage behavior. This risk of user negligence may be avoided with transparent messaging around the scheme your wallet is using.
 
 > New-to-crypto users often expect a recovery mechanism that allows them to “regain access to their funds in the case that they lose their seed phrase.”
 >
 > <cite>As researched by <a href="https://voskart.de/pdf/bits_under_mattress.pdf">Voskobojnikov et al</a></cite>
 
-In the [private key management]({{ 'guide/private-key-management/introduction/' | relative_url }}) chapter, we recommend using an automatic cloud backup for newer users. Users can simply press a button to have their recovery phrase backed up to the cloud without having to physically write down and store it. On top of this, the onboarding process is then sped up and less cumbersome. This type of gateway gives a beginner security without overwhelming them with unfamiliar onboarding actions.
+Cloud backups may be preferable in many situations. They speed up the onboarding process, are easier for newer users, and protect the user from mishandling their recovery phrase and potentially losing funds. They can also be automated to help ensure that there is an up-to-date backup of channel state in case the user loses their wallet. This type of gateway gives a beginner security without overwhelming them with unfamiliar onboarding actions.
 
 However, there may be times when it is necessary to use a manual backup alternative, as it can be low tech and easily accessible.
 
 ---
 
-The next sections will look at some UI considerations for [automatic cloud backups]({{ '/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup' | relative_url }}) and [manual backups]({{ 'guide/onboarding/backing-up-a-recovery-phrase/manual-backup/' | relative_url }}).
+The next sections will look at some UI considerations for [cloud backups]({{ '/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup' | relative_url }}) and [manual backups]({{ 'guide/onboarding/backing-up-a-recovery-phrase/manual-backup/' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/onboarding/first-use/"
