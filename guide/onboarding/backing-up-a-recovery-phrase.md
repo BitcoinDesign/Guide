@@ -19,6 +19,7 @@ This chapter covers backing up a recovery phrase during user onboarding.
 Illustration sources
 
 - https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=0%3A1
+- https://www.figma.com/file/q9EgLqOKcIVc0Cq7khtpNm/Onboarding-%3E-Backups?node-id=0%3A1
 
 -->
 
