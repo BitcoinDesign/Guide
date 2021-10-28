@@ -39,6 +39,17 @@ When a user generates a new Bitcoin wallet, they will soon need to create a back
 
 There are two main types of information that need to be backed up: the user's wallet recovery data and their Lightning channel state. While the wallet recovery data may be used to restore the wallet using another wallet application, the channel state is typically only restorable within the same application.
 
+{% include picture.html
+image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/wallet-backup.png"
+retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/wallet-backup@2x.png"
+mobile = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/wallet-backup-mobile.png"
+mobileRetina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/wallet-backup-mobile@2x.png"
+alt-text = "Example image"
+width = 1200
+height = 680
+layout = "full-width"
+%}
+
 Users who lose both their wallet access and their backup permanently lose their bitcoin. Arguably, this creates one of the toughest design problems within the space.
 
 Backups could be handled automatically by the software, manually by the user, or a mix of these two methods. Regardless of the type of scheme you decide to go with, it’s crucial to be explicit about how your product is handling backups and private key management.
