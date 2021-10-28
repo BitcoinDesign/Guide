@@ -97,6 +97,12 @@ A survey and follow-up interview of 990 Bitcoin users to determine bitcoin manag
 
 ## Independent research
 
+#### [The state of Lightning](https://www.research.arcane.no/the-state-of-lightning)
+
+_2021 by Arcane research_
+
+The State of Lightning provides a comprehensive overview of usage on the Lightning network seen to date (October 2021). The report highlights and explains the growth in network metrics, provides estimates of mainstream adoption, and looks into the future of the Lightning network. 
+
 #### [Automatic Cloud Backup (Seedless) Wallet Research](https://docs.google.com/document/d/11KbQnor7kQPdzHKmycBLPwOKyVo3t99nUEQYpVsik_o/edit?usp=sharing)
 
 _2021 by Valentine._
