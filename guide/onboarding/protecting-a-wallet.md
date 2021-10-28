@@ -281,9 +281,9 @@ It's more common for wallets to protect private keys, but not much is done for o
    layout = "float-right-desktop -background -shadow"
 %}
 
-The hide icon/button, which is usually displayed within close reach of the balance itself, is used to quickly and easily hide and reveal wallet information by tapping or clicking.
+The hide icon/button, which is usually displayed within close reach of the balance itself, is used to quickly and easily hide wallet information by tapping, and revealing it again by tapping and holding.
 
-This is an easy and convenient way to switch between revealed and hidden states, but still makes it easy for anyone else to reveal user information if they have access to the device.
+This is an easy and convenient way to switch between revealed and hidden states, but still makes it relatively easy for anyone else to reveal user information if they have access to the device.
 
 </div>
 
