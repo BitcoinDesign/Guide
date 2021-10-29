@@ -50,7 +50,7 @@ Bitcoin wallets contain sensitive information such as recovery phrases, balances
 
 ## Proactive support
 
-"Usable security & privacy" has become its own topic because it is not enough to simply implement feature, it is just as important that users can easily and effecitely and use them. A highly effective security setting is of no use if users do not realize it exists. So applications should do their best to guide and inform users to adapt appropriate habits and practices, based on where users are in the [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/' | relative_url }}) and the application use case.
+"Usable security & privacy" has become its own topic because it is not enough to simply implement features, it is just as important that users can easily and effectively use them. A highly effective security setting is of no use if users do not realize it exists. So applications should do their best to guide and inform users to adapt appropriate habits and practices, based on where users are in the [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/' | relative_url }}) and the application use case.
 
 ### Security & privacy checklists
 
@@ -92,7 +92,7 @@ It can be easy to get overwhelmed by long lists of settings. Checklist screens c
 
 ### Reminders & recommendations
 
-As a users behavior and application usage changes, the current security settings may no longer be appropriate. A life-changing amount of funds for one user may be pocket change for another, so it is hard to know what is appropriate in context. However, applications can still pro-actively make recommendations and remind users to regularly review their setup.
+As a user's behavior and application usage change, the current security settings may no longer be appropriate. A life-changing amount of funds for one user may be pocket change for another, so it is hard to know what is appropriate. However, applications can still proactively make recommendations and remind users to review their setup regularly.
 
 <div class="image-slide-gallery">
 
@@ -120,7 +120,7 @@ As a users behavior and application usage changes, the current security settings
 
 ## Preventing unwanted access
 
-A common practice for wallets is to have a barrier (fingerprint scan, PIN entry...) that must be unlocked to open a wallet application. Creating robust and challenging-to-crack passwords and PIN codes isn't something that everyone excels at. To decrease the chance of someone’s wallet getting hacked because of poor security decisions, you can implement the following into your design:
+A common practice for wallets is to have a barrier (fingerprint scan, PIN entry, etc.) that must be unlocked to open a wallet application. Creating robust and challenging-to-crack passwords and PIN codes isn't something that everyone excels at. To decrease the chance of someone’s wallet getting hacked because of poor security decisions, you can implement the following into your design:
 
 ### Biometrics (touch ID & face ID)
 
@@ -152,7 +152,7 @@ Bitcoin wallet users may feel hesitant about the privacy implications of your pr
 
 ### PIN protection
 
-A PIN is one of the most common and traditional methods for securing a mobile application. This setup requires that users create a 4-6 digit PIN, that must be entered when opening their wallet application or viewing sensitive information, such as their recovery phrase.
+A PIN is one of the most common and traditional methods for securing a mobile application. This setup requires that users create a 4-6 digit PIN that they must enter when opening their wallet application or viewing sensitive information, such as their recovery phrase.
 
 <div class="image-slide-gallery">
 
@@ -184,7 +184,7 @@ However, users with poor security practices might create easy-to-guess PINs (suc
 
 {% include tip/open.html color="green" icon="check" label="Do: Educate on good security practices" %}
 
-During PIN creation, tell your users what a good, secure PIN is (i.e. not their birthday). Recommend against (or even make it impossible) to create a PIN such as 1234 or 1111.
+During PIN creation, tell your users what a good, secure PIN is (e.g. not their birthday). Recommend against (or even make it impossible) to create a PIN such as 1234 or 1111.
 
 {% include tip/close.html %}
 
@@ -250,20 +250,20 @@ To further prevent unwanted spending, wallet limits can be established. These ca
    layout = "float-right-desktop -background -shadow"
 %}
 
-After a user has backed up their recovery phrase, an option to delete it may be useful. This only makes the recovery phrase inaccessible to application users, the app itself continues to store the keys and data it requires to function.
+After a user has backed up their recovery phrase, an option to delete it may be useful. This only makes the recovery phrase inaccessible to application users. The app itself continues to store the keys and data it requires to function.
 
 </div>
 
 ## Hiding Sensitive Information
 
-Imagine this scenario. The user is in a public place, and they need to make a payment using their bitcoin wallet. They open the wallet on their phone, but they don’t feel comfortable having their address and balance information clearly visible to strangers who may be looking over their shoulder, persons lurking or video surveillance. Hence by giving users the ability to hide sensitive information in their wallet, but only when desired, they gain an added sense of physical privacy and security when using the app in public.
+Imagine this scenario. The user is in a public place, and they need to make a payment using their bitcoin wallet. They open the wallet on their phone, but they don’t feel comfortable having their address and balance information clearly visible to strangers who may be looking over their shoulder, persons lurking, or video surveillance. Hence by giving users the ability to hide sensitive information in their wallet, but only when desired, they gain an added sense of physical privacy and security when using the app in public.
 
 #### What information is considered sensitive?
 
 Sensitive information in wallet applications include the wallet balance, addresses, private keys and previous transactions information.
 - Wallet Balance - shows how much is owned
 - Addresses - can be used to track on-chain transaction history
-- Invoices - can be used to track Lightning transaction history
+- Invoices - can be used to track Lightning payment history
 - Private keys - can be used to access and transfer bitcoins
 
 It's more common for wallets to protect private keys, but not much is done for other sensitive information like the balance, addresses, and previous transactions. A few wallets like [Bitcoin Core](https://bitcoin.org/en/bitcoin-core/), [Wasabi](https://wasabiwallet.io/), [Muun](https://muun.com/), and others have made it work, though. Below are patterns and considerations for hiding and revealing sensitive information.
@@ -302,7 +302,7 @@ This is an easy and convenient way to switch between revealed and hidden states,
    layout = "float-right-desktop -background -shadow"
 %}
 
-With this method it's as easy to reverse the hidden state as it is to enable it. This is good for convenience sake, however, for protection against unauthorized access, perhaps the user should only be able to unhide their information if a PIN or password has been entered. This could therefore reaffirm the identity of the wallet owner for extra security.
+With this method, it's as easy to reverse the hidden state as enabling it. This is good for convenience's sake. However, for protection against unauthorized access, perhaps the user should only be able to unhide their information if a PIN or password has been entered. This could therefore reaffirm the identity of the wallet owner for extra security.
 
 In this example the risk of an unauthorized person revealing their information is minimal due to the PIN required. However, it might not be convenient for the users to repeatedly put in their PIN when ever they want to reveal their information especially if they do so often.
 
