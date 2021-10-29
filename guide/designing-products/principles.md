@@ -221,6 +221,7 @@ While an open and decentralized financial system that users can connect with dir
 
 **Do**
 - Be open and transparent with how your product works
+    -  For wallets, inform users on the fees your application charges
 - Let people verify your claims by open-sourcing your code when possible
 - Explain what risks the user is taking on, and how best to mitigate them
 
