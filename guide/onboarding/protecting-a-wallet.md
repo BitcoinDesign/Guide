@@ -48,7 +48,7 @@ Illustration sources
 
 Bitcoin wallets contain sensitive information such as recovery phrases, balances, transaction histories, and more. Therefore, it is crucial to add extra layers of security to keep private data, and access to sensitive functionality, out of bad actors' hands. Additional protection may also be necessary for users who share devices, such as parents with children.
 
-## Pro-active support
+## Proactive support
 
 "Usable security & privacy" has become its own topic because it is not enough to simply implement feature, it is just as important that users can easily and effecitely and use them. A highly effective security setting is of no use if users do not realize it exists. So applications should do their best to guide and inform users to adapt appropriate habits and practices, based on where users are in the [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/' | relative_url }}) and the application use case.
 
