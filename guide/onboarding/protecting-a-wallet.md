@@ -194,7 +194,7 @@ During PIN creation, tell your users what a good, secure PIN is (e.g. not their 
 
 {% include picture.html
    image = "/assets/images/guide/onboarding/protecting-a-wallet/choose-fake-wallet-pin.png"
-   imageRetina = "/assets/images/guide/onboarding/protecting-a-wallet/choose-fake-wallet-pin@2x.png"
+   retina = "/assets/images/guide/onboarding/protecting-a-wallet/choose-fake-wallet-pin@2x.png"
    alt-text = "PIN entry screen for a wallet with dummy data"
    caption = "The user chooses a second PIN to load the wallet with fake data instead."
    width = 250
@@ -216,7 +216,7 @@ To further prevent unwanted spending, wallet limits can be established. These ca
 
 {% include picture.html
    image = "/assets/images/guide/onboarding/protecting-a-wallet/privacy-and-security-settings.png"
-   imageRetina = "/assets/images/guide/onboarding/protecting-a-wallet/privacy-and-security-settings@2x.png"
+   retina = "/assets/images/guide/onboarding/protecting-a-wallet/privacy-and-security-settings@2x.png"
    alt-text = "A gif showing a mobile interface where the toggle for hiding information is moved to settings"
    caption = "App settings with user options to set limits on transaction size and frequency."
    width = 250
@@ -242,7 +242,7 @@ To further prevent unwanted spending, wallet limits can be established. These ca
 
 {% include picture.html
    image = "/assets/images/guide/onboarding/protecting-a-wallet/delete-recovery-phrase.png"
-   imageRetina = "/assets/images/guide/onboarding/protecting-a-wallet/delete-recovery-phrase@2x.png"
+   retina = "/assets/images/guide/onboarding/protecting-a-wallet/delete-recovery-phrase@2x.png"
    alt-text = "App settings screen for wallet backup with an option to delete the recovery phrase"
    caption = "A user can choose to delete the recovery phrase from the user-facing interface."
    width = 250
@@ -274,7 +274,7 @@ It's more common for wallets to protect private keys, but not much is done for o
 
 {% include picture.html
    image = "/assets/images/guide/onboarding/protecting-a-wallet/quick-hide-access.png"
-   imageRetina = "/assets/images/guide/onboarding/protecting-a-wallet/quick-hide-access@2x.png"
+   retina = "/assets/images/guide/onboarding/protecting-a-wallet/quick-hide-access@2x.png"
    alt-text = "A gif of a mobile interface for hiding user information"
    caption = "Home screen with a hidden balance and a quick reveal toggle."
    width = 250
@@ -294,7 +294,7 @@ This is an easy and convenient way to switch between revealed and hidden states,
 
 {% include picture.html
    image = "/assets/images/guide/onboarding/protecting-a-wallet/hidden-balance-pin-reveal.png"
-   imageRetina = "/assets/images/guide/onboarding/protecting-a-wallet/hidden-balance-pin-reveal@2x.png"
+   retina = "/assets/images/guide/onboarding/protecting-a-wallet/hidden-balance-pin-reveal@2x.png"
    alt-text = "A gif showing a mobile interface where hidden information is revealed with a PIN"
    caption = "Revealing the balance could require PIN entry."
    width = 250
@@ -314,7 +314,7 @@ In this example the risk of an unauthorized person revealing their information i
 
 {% include picture.html
    image = "/assets/images/guide/onboarding/protecting-a-wallet/hidden-balance-reveal-timer.png"
-   imageRetina = "/assets/images/guide/onboarding/protecting-a-wallet/hidden-balance-reveal-timer@2x.png"
+   retina = "/assets/images/guide/onboarding/protecting-a-wallet/hidden-balance-reveal-timer@2x.png"
    alt-text = "A gif showing a mobile interface where sensitive information is hidden by default"
    caption = "A timer could also be used before automatic balance reveal."
    width = 250
@@ -334,7 +334,7 @@ This gives users some time to assess their environment before their info is disp
 
 {% include picture.html
    image = "/assets/images/guide/onboarding/protecting-a-wallet/privacy-and-security-settings.png"
-   imageRetina = "/assets/images/guide/onboarding/protecting-a-wallet/privacy-and-security-settings@2x.png"
+   retina = "/assets/images/guide/onboarding/protecting-a-wallet/privacy-and-security-settings@2x.png"
    alt-text = "A gif showing a mobile interface where the toggle for hiding information is moved to settings"
    caption = "Hiding sensitive data could be toggle in the settings."
    width = 250
