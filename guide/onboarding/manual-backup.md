@@ -3,9 +3,9 @@ layout: guide
 title: Manual backup
 description: How to manually back up the recovery phrase of a Bitcoin wallet.
 grand_parent: Onboarding
-parent: Backing up a recovery phrase
+parent: Backing up a wallet
 nav_order: 2
-permalink: /guide/onboarding/backing-up-a-recovery-phrase/manual-backup/
+permalink: /guide/onboarding/backing-up-a-wallet/manual-backup/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase-preview.png
 ---
@@ -305,7 +305,7 @@ You could also ask users to select (or manually type out) a random word from the
 The next section will highlight some options for [restoring a wallet]({{ '/guide/onboarding/restoring-a-wallet/' | relative_url }}).
 
 {% include next-previous.html
-   previousUrl = "/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/"
+   previousUrl = "/guide/onboarding/backing-up-a-wallet/cloud-backup/"
    previousName = "Automatic cloud backups"
    nextUrl = "/guide/onboarding/restoring-a-wallet/"
    nextName = "Restoring a wallet"

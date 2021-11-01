@@ -24,9 +24,9 @@ image: https://bitcoin.design/assets/images/guide/onboarding/restoring-a-wallet/
 
 <div class="center" markdown="1">
 
-There are several reasons why a user might need to restore their Bitcoin wallet. They may have lost their device, be migrating from a different application or have deleted their wallet application. Regardless of why, it’s important that your wallet application has an easy way for users to recover their funds. 
+There are several reasons why a user might need to restore their Bitcoin wallet. They may have lost their device, be migrating from a different application or have deleted their wallet application. Regardless of why, it’s important that your wallet application has an easy way for users to recover their funds.
 
-However, not all wallets from one application can be recovered in another, depending on what standards they support, as covered in the [wallet interoperability]({{ 'guide/designing-products/wallet-interoperability' | relative_url }}) section. Lack of interoperability and vendor dependance is an issue for wallets holding bitcoin on the Lightning network. Lightning network wallets can currently only be restored in the application originally used. It's also worth noting that restoring from a recovery phrase only restores the private keys, but no user data like transaction notes, contacts etc. 
+However, not all wallets from one application can be recovered in another, depending on what standards they support, as covered in the [wallet interoperability]({{ 'guide/designing-products/wallet-interoperability' | relative_url }}) section. Lack of interoperability and vendor dependance is an issue for wallets holding bitcoin on the Lightning network. Lightning network wallets can currently only be restored in the application originally used. It's also worth noting that restoring from a recovery phrase only restores the private keys, but no user data like transaction notes, contacts etc.
 
 {% include picture.html
    image = "/assets/images/guide/onboarding/restoring-a-wallet/import-options.png"
@@ -42,11 +42,11 @@ However, not all wallets from one application can be recovered in another, depen
 
 ### Restore from an automatic cloud backup
 
-As outlined earlier in the chapter, we consider an [automatic cloud backup](/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/) a good option, especially for beginners. One of the major UX benefits of this is a seamless recovery process. Assuming they are restoring in the same wallet application originally used, all the user needs to do to gain access to their funds again is to log in to their cloud storage account (typically iCloud or Google Drive).
+As outlined earlier in the chapter, we consider an [automatic cloud backup](/guide/onboarding/backing-up-a-wallet/cloud-backup/) a good option, especially for beginners. One of the major UX benefits of this is a seamless recovery process. Assuming they are restoring in the same wallet application originally used, all the user needs to do to gain access to their funds again is to log in to their cloud storage account (typically iCloud or Google Drive).
 
 ### Restore manually with a recovery phrase
 
-Users may have created a wallet with another wallet application. In this case, they should be able to import that wallet into yours by entering their 12 or 24-word recovery phrase. There are several options for the UI when entering a recovery phase, as outlined earlier in the [manual backup]({{ 'guide/onboarding/backing-up-a-recovery-phrase/manual-backup/' | relative_url }}) section of this chapter.
+Users may have created a wallet with another wallet application. In this case, they should be able to import that wallet into yours by entering their 12 or 24-word recovery phrase. There are several options for the UI when entering a recovery phase, as outlined earlier in the [manual backup]({{ 'guide/onboarding/backing-up-a-wallet/manual-backup/' | relative_url }}) section of this chapter.
 
 ### Restore from an encrypted QR code backup
 
@@ -54,11 +54,11 @@ Some applications  also provide an option for users to scan an encrypted proprie
 
 ### Restore a wallet with funds on the Lightning network
 
-To fully restore a wallet with funds on the [Lightning network](/guide/glossary/#lightning-network), the state and history of the payment channels are needed in addition to the recovery phrase. As there are no standards for this yet, wallet applications need to have their own format for backing this up, and subsequently restoring. Due to the amount of information, a QR code of the encrypted data, like in the previous example, can be appropriate. 
+To fully restore a wallet with funds on the [Lightning network](/guide/glossary/#lightning-network), the state and history of the payment channels are needed in addition to the recovery phrase. As there are no standards for this yet, wallet applications need to have their own format for backing this up, and subsequently restoring. Due to the amount of information, a QR code of the encrypted data, like in the previous example, can be appropriate.
 
 {% include tip/recommendation.html %}
 
-Be clear to users what you support and what wallet specifications they can expect to restore in your application. Most bitcoin products should support restoring from a recovery phrase at a minimum. Capability to restore an HD wallet implemented according to BIP32, 39, 43, 44, 49, 84 and 380 would be a good starting point. 
+Be clear to users what you support and what wallet specifications they can expect to restore in your application. Most bitcoin products should support restoring from a recovery phrase at a minimum. Capability to restore an HD wallet implemented according to BIP32, 39, 43, 44, 49, 84 and 380 would be a good starting point.
 
 {% include tip/close.html %}
 
@@ -69,7 +69,7 @@ Some less popular methods for restoring a wallet include importing a file with a
 The next section looks at options for adding extra layers of security and [protecting a wallet]({{ '/guide/onboarding/protecting-a-wallet/' | relative_url }}).
 
 {% include next-previous.html
-   previousUrl = "/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/"
+   previousUrl = "/guide/onboarding/backing-up-a-wallet/manual-backup/"
    previousName = "Manual backups"
    nextUrl = "/guide/onboarding/protecting-a-wallet/"
    nextName = "Protecting a wallet"

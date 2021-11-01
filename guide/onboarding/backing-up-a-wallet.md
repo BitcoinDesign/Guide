@@ -1,11 +1,11 @@
 ---
 layout: guide
-title: Backing up a recovery phrase
+title: Backing up a wallet
 description: Handling recovery phrases during onboarding.
 parent: Onboarding
 has_children: true
 nav_order: 2
-permalink: /guide/onboarding/backing-up-a-recovery-phrase/
+permalink: /guide/onboarding/backing-up-a-wallet/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase-preview.png
 ---
@@ -73,11 +73,11 @@ However, there may be times when it is necessary to use a manual backup alternat
 
 ---
 
-The next sections will look at some UI considerations for [cloud backups]({{ '/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup' | relative_url }}) and [manual backups]({{ 'guide/onboarding/backing-up-a-recovery-phrase/manual-backup/' | relative_url }}).
+The next sections will look at some UI considerations for [cloud backups]({{ '/guide/onboarding/backing-up-a-wallet/cloud-backup' | relative_url }}) and [manual backups]({{ 'guide/onboarding/backing-up-a-wallet/manual-backup/' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/onboarding/first-use/"
    previousName = "First use"
-   nextUrl = "/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/"
+   nextUrl = "/guide/onboarding/backing-up-a-wallet/cloud-backup/"
    nextName = "Automatic cloud backups"
 %}

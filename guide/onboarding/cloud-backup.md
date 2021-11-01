@@ -3,9 +3,9 @@ layout: guide
 title: Cloud backup
 description: How to backup bitcoin wallet data via cloud storage service providers.
 grand_parent: Onboarding
-parent: Backing up a recovery phrase
+parent: Backing up a wallet
 nav_order: 1
-permalink: /guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/
+permalink: /guide/onboarding/backing-up-a-wallet/cloud-backup/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase-preview.png
 ---
@@ -142,11 +142,11 @@ To grant users some ownership of their wallet data, you can create an optional m
 
 ---
 
-In the next section we will show different methods for [manual backups]({{ '/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/' | relative_url }}).
+In the next section we will show different methods for [manual backups]({{ '/guide/onboarding/backing-up-a-wallet/manual-backup/' | relative_url }}).
 
 {% include next-previous.html
-   previousUrl = "/guide/onboarding/backing-up-a-recovery-phrase/"
+   previousUrl = "/guide/onboarding/backing-up-a-wallet/"
    previousName = "Backing up a recovery phrase"
-   nextUrl = "/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/"
+   nextUrl = "/guide/onboarding/backing-up-a-wallet/manual-backup/"
    nextName = "Manual backups"
 %}
