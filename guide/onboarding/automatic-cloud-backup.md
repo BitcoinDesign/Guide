@@ -87,7 +87,7 @@ On a similar note, it’s crucial that you also explain that if someone else kno
 
 {% include tip/open.html color="green" icon="check" label="Do: Inform your Users" %}
 
-Before automatically creating a wallet backup via cloud backup, make sure the user knows what they are about to do. Once the backup is complete, provide a summary and some reassurances before moving on. This is a good place for loading interactions and animation because there will likely be a few seconds between when a user clicks to upload to the cloud provider and when it completes.
+Before creating a wallet backup via cloud backup, make sure the user knows what they are about to do. Once the backup is complete, provide a summary and some reassurances before moving on. This is a good place for loading interactions and animation because there will likely be a few seconds between when a user clicks to upload to the cloud provider and when it completes.
 
 {% include tip/close.html %}
 
