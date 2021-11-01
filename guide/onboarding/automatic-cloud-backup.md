@@ -10,6 +10,17 @@ main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase-preview.png
 ---
 
+<!--
+
+Editor's notes
+
+This chapter covers backing up wallat data via a cloud provider.
+
+Illustration sources
+- https://www.figma.com/file/q9EgLqOKcIVc0Cq7khtpNm/Onboarding-%3E-Backups?node-id=0%3A1
+
+-->
+
 {% include picture.html
 image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase.png"
 retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase@2x.png"
@@ -38,6 +49,16 @@ This method provides users with the feeling that they can rely on their cloud pr
 Below is an example of what the user interface might look like for an automatic cloud backup that significantly reduces friction during onboarding. An optimal phase to show this may be after the wallet has received funds for the first time, so that the user has incentive to back up their wallet.
 
 <div class="image-slide-gallery">
+
+{% include picture.html
+image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-prompt.png"
+retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-prompt@2x.png"
+layout = "shadow"
+caption = "Prompt the user to back up when they have funds in the wallet"
+alt-text = "Screen prompting the user to back up after they have received a payment"
+width = 250
+height = 541
+%}
 
 {% include picture.html
    image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-intro.png"
