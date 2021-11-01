@@ -48,6 +48,12 @@ By far, the most important piece of the wallet recovery data is the recovery phr
 
 This user flow usually requires users to manually back up their 12 to 24 word recovery phrase by writing it down on a piece of paper and storing it in a safe (but memorable location). In the case that a user’s device breaks or is stolen, the user can recover their funds and wallet by correctly entering their recovery phrase. The [private key management]({{ '/guide/private-key-management/manual-backup/' | relative_url }}) section dives further into the technical details of this scheme.
 
+{% include tip/open.html label="Printable Template" %}
+
+You could help the user by providing them with a printable template for writing down their recovery phrase. Some non-sensitive data (such as the name of your wallet or the derivation path) could be included pre-filled in the template. The user would write in the sensitrive data by hand. Here is an [example template](https://www.figma.com/file/sJYnyi2amehFJ2JpDgj978/Bitcoin-Wallet---Paper-Backup-Template?node-id=1%3A535).
+
+{% include tip/close.html %}
+
 If you are designing an application that opts to use manual backups, the following sections outline how to best go about this with new users in mind.
 
 ### When to reveal a recovery phrase
