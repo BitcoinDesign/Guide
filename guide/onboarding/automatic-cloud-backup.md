@@ -46,7 +46,7 @@ If the user's device is lost, stolen, or broken, they can use the backup from th
 
 This method provides users with the feeling that they can rely on their cloud provider to regain access to their funds rather than putting the responsibility on themselves.
 
-Below is an example of what the user interface might look like for an automatic cloud backup that significantly reduces friction during onboarding. An optimal phase to show this may be after the wallet has received funds for the first time, so that the user has incentive to back up their wallet.
+Below is an example of what the user interface might look like for a cloud backup that significantly reduces friction during onboarding. An optimal phase to show this may be after the wallet has received funds for the first time, so that the user has incentive to back up their wallet.
 
 <div class="image-slide-gallery">
 
@@ -126,7 +126,7 @@ Before creating a wallet backup via cloud backup, make sure the user knows what 
 
 ### Tradeoffs
 
-By not making users manually backup, you decrease the risk of self-inflicted loss of funds. Automatic cloud backups put less pressure and responsibility on the user.
+By not making users manually backup, you decrease the risk of self-inflicted loss of funds. Cloud backups put less pressure and responsibility on the user.
 
 While this is an easier way for users to set up a wallet, it brings in the potential threat of malicious third-party access. If a user's cloud account is hacked, their funds could be compromised. This can be mitigated by encrypting the wallet recovery data before sending it to the cloud provider. However, the user could still lose access to funds if they forget their cloud login information or the cloud provider blocks their access.
 
