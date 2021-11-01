@@ -342,7 +342,7 @@ This gives users some time to assess their environment before their info is disp
    layout = "float-right-desktop -background -shadow"
 %}
 
-Having the show/hide button right on the main screen makes things quite obvious for someone who has access to a users device to press unhide. A solution would be to move the hide toggle away from the home screen and into the [app settings](https://medium.com/@olanrewajusodiq64/the-ui-ux-of-hide-balance-designing-to-improve-asset-security-e4b20668f315). This way, if someone has access to their device and opens the app, they may not immediately know how to reveal the balance, transaction and/or addresses as it is not made obvious as the previous solutions.
+Having the show/hide button right on the main screen makes things quite obvious for someone who has access to a user's device to press unhide. A solution would be to move the hide toggle away from the home screen and into the [app settings](https://medium.com/@olanrewajusodiq64/the-ui-ux-of-hide-balance-designing-to-improve-asset-security-e4b20668f315). This way, if someone has access to their device and opens the app, they may not immediately know how to reveal the balance, transaction, or addresses as it is not made obvious as the previous solutions.
 
 An advantage here is the risk of an unauthorized person revealing their information is minimal due to the fact that the toggle isn't immediately visible on the home screen. The downside is that a user cannot quickly hide their information if the need arises.
 
