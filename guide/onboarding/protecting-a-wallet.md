@@ -136,7 +136,7 @@ A common practice for wallets is to have a barrier (fingerprint scan, PIN entry,
    layout = "float-left-desktop -background -shadow"
 %}
 
-One convenient way for users to verify their identity to unlock your wallet app is with biometrics. This could take the form of either touch ID or face ID.
+One convenient way for users to verify their identity to unlock your wallet app is with [biometrics](https://en.wikipedia.org/wiki/Biometrics). This could take the form of either touch ID or face ID.
 
 Users of Android and iOS devices are already familiar with these motions. More importantly, using biometrics does not require the user to remember anything, decreasing their chances of getting locked out of their wallet.
 
@@ -328,7 +328,7 @@ This gives users some time to assess their environment before their info is disp
 
 </div>
 
-### Making the toggle less obvious
+### An application-wide setting
 
 <div class="center" markdown="1">
 
