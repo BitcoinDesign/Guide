@@ -87,7 +87,7 @@ A broad usability evaluation of key management techniques used by six representa
 
 _2017 by Pajunen._
 
-A survey of 50 users on the [r/bitcoin subreddit](https://www.reddit.com/r/Bitcoin/) that showed Bitcoin users value their anonymity, which suggests that anonymity is an integral part of Bitcoin, at least from an end user perspective. 
+A survey of 50 users on the [r/bitcoin subreddit](https://www.reddit.com/r/Bitcoin/) that showed Bitcoin users value their anonymity, which suggests that anonymity is an integral part of Bitcoin, at least from an end user perspective.
 
 #### [The Other Side of the Coin: User Experiences with Bitcoin Security and Privacy](https://publications.sba-research.org/publications/TheOtherSideOfTheCoin_FC16preConf.pdf)
 
@@ -101,7 +101,19 @@ A survey and follow-up interview of 990 Bitcoin users to determine bitcoin manag
 
 _2021 by Arcane research_
 
-The State of Lightning provides a comprehensive overview of usage on the Lightning network seen to date (October 2021). The report highlights and explains the growth in network metrics, provides estimates of mainstream adoption, and looks into the future of the Lightning network. 
+The State of Lightning provides a comprehensive overview of usage on the Lightning network seen to date (October 2021). The report highlights and explains the growth in network metrics, provides estimates of mainstream adoption, and looks into the future of the Lightning network.
+
+#### [Bitcoin UX Research](https://patestevao.com/work/bitcoin-ux-research/)
+
+_2021 by Estevão_
+
+The goal of the research was to provide an in-depth qualitative knowledge of how people use or perceive Bitcoin.
+
+#### [A Deep Dive Into Lightning as a Bitcoin Scaling Solution](https://downloads.coindesk.com/research/Lightning+Network+-+CoinDesk+Research+-+2021.09.pdf)
+
+_2021 by Kaloudis, CoinDesk research_
+
+The research looks at the Lightning Network from a perspective of the scaling solution and pinpoints the basic architecture that powers it and outlines the potential attact vectors.
 
 #### [Automatic Cloud Backup (Seedless) Wallet Research](https://docs.google.com/document/d/11KbQnor7kQPdzHKmycBLPwOKyVo3t99nUEQYpVsik_o/edit?usp=sharing)
 
@@ -123,7 +135,7 @@ An online survey of over 2,000 US adults by Blockchain Capital to gauge the prog
 
 #### [Cryptoasset consumer research 2021](https://www.fca.org.uk/publications/research/research-note-cryptoasset-consumer-research-2021)
 
-_2021 by Karim, and Tomova._ 
+_2021 by Karim, and Tomova._
 
 A survey showing an increase in awareness of cryptocurrencies among adults in the UK, but a decreasing understanding of how cryptocurrencies work.
 
@@ -144,7 +156,7 @@ Launched in January 2021 by Andrew Chow. In progress.
 
 _2019 by Foundation for Interwallet Operability (FIO)._
 
-A survey of over 200 crypto holders regarding their frequency and experiences in transacting crypto, with the goal of unearthing some of the common issues they’ve faced. 
+A survey of over 200 crypto holders regarding their frequency and experiences in transacting crypto, with the goal of unearthing some of the common issues they’ve faced.
 
 #### [2nd Global Cryptoasset Benchmarking Study](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2nd-global-cryptoasset-benchmark-study/#.X_1mxi1h1qs)
 
@@ -158,7 +170,7 @@ Insights into the current state of the cryptoasset industry. The study gathers s
 
 _2020 by Ramsey._
 
-A UX case case study by [built for mars](https://builtformars.com/) that covers the experience of buying, storing, trading and selling cryptocurrency's like bitcoin on Coinbase. 
+A UX case case study by [built for mars](https://builtformars.com/) that covers the experience of buying, storing, trading and selling cryptocurrency's like bitcoin on Coinbase.
 
 #### [Breaking down Bitcoin: A UX Design Case Study](https://medium.com/@ngqunzhao/breaking-down-bitcoin-a-ux-design-case-study-7fdefbe7e1b8)
 
@@ -166,7 +178,13 @@ _2019 by Zhao._
 
 Documentation of the user research, redesign and testing process of Coinhako, a cryptocurrency trading and digital wallet app.
 
-#### [Making design better for crypto apps: Abra UX Case study](https://medium.com/@kagakawa/abra-app-ux-case-study-2eb2a6e09c70) 
+#### [Lightning Network UX Research](https://patestevao.com/work/lightning-network-ux-research/)
+
+The study conducted to look into the interactions between users and the Lightning payments. It also reviewes three well-known projects at that time and looks through their user-experience.
+
+_2019 by Estevão._
+
+#### [Making design better for crypto apps: Abra UX Case study](https://medium.com/@kagakawa/abra-app-ux-case-study-2eb2a6e09c70)
 
 _2018 by Kawabata._
 
@@ -174,13 +192,13 @@ A UX case study exploring the usability and suggesting improvements for making p
 
 ## Blog posts & write-ups
 
-#### [The Usability of Cryptocurrency](https://www.uxmatters.com/mt/archives/2018/08/the-usability-of-cryptocurrency.php) 
+#### [The Usability of Cryptocurrency](https://www.uxmatters.com/mt/archives/2018/08/the-usability-of-cryptocurrency.php)
 
 _2018 by Scherba._
 
-A blog post by uxmatters that covers the usability issues cryptocurrencies face and how the path to mainstream adoption is hindered by a lack of usability. 
+A blog post by uxmatters that covers the usability issues cryptocurrencies face and how the path to mainstream adoption is hindered by a lack of usability.
 
-#### [Usability of Bitcoin: What Satoshi Forgot](https://blog.icons8.com/articles/bitcoin-usability/) 
+#### [Usability of Bitcoin: What Satoshi Forgot](https://blog.icons8.com/articles/bitcoin-usability/)
 
 _2017 by Braun and Ufaev._
 
