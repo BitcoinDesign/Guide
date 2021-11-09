@@ -46,7 +46,7 @@ If the user's device is lost, stolen, or broken, they can use the backup from th
 
 This method provides users with the feeling that they can rely on their cloud provider to regain access to their funds rather than putting the responsibility on themselves.
 
-Below is an example of what the user interface might look like for a cloud backup that significantly reduces friction during onboarding. An optimal phase to show this may be after the wallet has received funds for the first time, so that the user has incentive to back up their wallet.
+Below is an example of what the user interface might look like for a cloud backup that significantly reduces friction during onboarding. An optimal phase to show this may be after the wallet has received funds for the first time, so that the user has an incentive to back up their wallet.
 
 <div class="image-slide-gallery">
 
