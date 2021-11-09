@@ -38,7 +38,7 @@ Illustration sources
 
 When a user generates a new Bitcoin wallet, they will soon need to create a backup of their wallet in order to ensure that funds are not lost.
 
-There are two main types of information that need to be backed up: the user's wallet recovery data and their Lightning channel state. While the wallet recovery data may be used to restore the wallet using another wallet application, the channel state is typically only restorable within the same application.
+Two main types of information need to be backed up: the user's wallet recovery data and their Lightning channel state. While the wallet recovery data may be used to restore the wallet using another wallet application, the channel state is typically only restorable within the same application.
 
 {% include picture.html
 image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/wallet-backup.png"
