@@ -53,7 +53,7 @@ layout = "full-width"
 
 Users who lose both their wallet access and their backup permanently lose their bitcoin. Arguably, this creates one of the most challenging design problems within the space.
 
-Backups could be handled automatically by the software, manually by the user, or a mix of these two methods. Regardless of the type of scheme you decide to go with, it’s crucial to be explicit about how your product is handling backups and private key management.
+Backups could be handled automatically by the software, manually by the user, or a mix of these two methods. Regardless of the type of scheme you decide to go with, it’s crucial to be explicit about how your product handles backups and private key management.
 
 {% include tip/recommendation.html %}
 
