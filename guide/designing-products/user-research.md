@@ -117,7 +117,7 @@ Bitcoin only knows its users through pseudonymous addresses. We can analyze on-c
 
 Bitcoin is a protocol with [layers](https://bitcoin.design/guide/getting-started/technology-primer/#do-all-transactions-have-to-be-this-secure) built on top of it.
 
-Layers built on top of the base layer, such as [Lightning network](https://bitcoin.design/guide/getting-started/technology-primer/#the-lightning-payment-network) make the specific transaction analysis impossible thanks to the [payment channels](https://bitcoin.design/guide/getting-started/technology-primer/#what-is-a-payment-channel).
+The base layer is a public record of transactions that can easily be analyzed. However, layers built on top, such as [Lightning network](/guide/getting-started/technology-primer/#the-lightning-payment-network) make analysis of specific transaction impossible, thanks to [payment channels](/guide/getting-started/technology-primer/#what-is-a-payment-channel).
 
 While we often can’t know who is responsible for a specific transaction, on the Lightning network, we can attempt to analyze the overall network activity and look into metrics such as number of nodes, network capacity, payment channels changes.
 
