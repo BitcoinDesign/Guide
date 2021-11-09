@@ -37,7 +37,8 @@
                 vertical-align: middle;
                 margin-right: 5px;
                 transform: translateY(-1px);
-                fill: black;
+                transition: color 100ms $ease;
+                color: black;
             }
 
             &,
@@ -52,6 +53,10 @@
             &:hover {
                 color: $primary-color;
                 text-decoration: none;
+
+                svg {
+                    color: $primary-color;
+                }
             }
         }
 
