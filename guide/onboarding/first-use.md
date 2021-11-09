@@ -50,7 +50,7 @@ Like regular keys on a keychain, Bitcoin private keys can be copied. This makes 
    retina = "/assets/images/guide/onboarding/creating-a-new-wallet/onboarding-welcome-screen@2x.png"
    width = 250
    height = 541
-   caption = "Cover screen from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=267%3A3874)"
+   caption = "It is good practice to clearly highlight the primary user action, which is 'Create a new wallet' in this case."
    alt-text = "Cover screen user interface"
    layout = "float-left-desktop -background -shadow"
 %}

@@ -1439,3 +1439,33 @@ assets/images/guide/onboarding/backing-up-a-recovery-phrase/wallet-backup@2x.png
 assets/images/guide/onboarding/backing-up-a-recovery-phrase/wallet-backup-mobile.png: wallet-backup-mobile.png
 assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-prompt@2x.png: cloud-backup-prompt@2x.png
 assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-prompt.png: cloud-backup-prompt.png
+assets/images/guide/onboarding/protecting-a-wallet/privacy-and-security-settings.png: privacy-and-security-settings.png
+assets/images/guide/onboarding/protecting-a-wallet/privacy-and-security-settings@2x.png: privacy-and-security-settings@2x.png
+assets/images/guide/onboarding/protecting-a-wallet/hidden-balance-reveal-timer.png: hidden-balance-reveal-timer.png
+assets/images/guide/onboarding/protecting-a-wallet/hidden-balance-reveal-timer@2x.png: hidden-balance-reveal-timer@2x.png
+assets/images/guide/onboarding/protecting-a-wallet/hidden-balance-pin-reveal.png: hidden-balance-pin-reveal.png
+assets/images/guide/onboarding/protecting-a-wallet/hidden-balance-pin-reveal@2x.png: hidden-balance-pin-reveal@2x.png
+assets/images/guide/onboarding/protecting-a-wallet/quick-hide-access.png: quick-hide-access.png
+assets/images/guide/onboarding/protecting-a-wallet/quick-hide-access@2x.png: quick-hide-access@2x.png
+assets/images/guide/onboarding/protecting-a-wallet/home-security-reminder.png: home-security-reminder.png
+assets/images/guide/onboarding/protecting-a-wallet/home-security-reminder@2x.png: home-security-reminder@2x.png
+assets/images/guide/onboarding/protecting-a-wallet/inadequate-security.png: inadequate-security.png
+assets/images/guide/onboarding/protecting-a-wallet/inadequate-security@2x.png: inadequate-security@2x.png
+assets/images/guide/onboarding/protecting-a-wallet/privacy-checklist.png: privacy-checklist.png
+assets/images/guide/onboarding/protecting-a-wallet/privacy-checklist@2x.png: privacy-checklist@2x.png
+assets/images/guide/onboarding/protecting-a-wallet/security-checklist.png: security-checklist.png
+assets/images/guide/onboarding/protecting-a-wallet/security-checklist@2x.png: security-checklist@2x.png
+assets/images/guide/onboarding/protecting-a-wallet/wallet-limit-reached.png: wallet-limit-reached.png
+assets/images/guide/onboarding/protecting-a-wallet/wallet-limit-reached@2x.png: wallet-limit-reached@2x.png
+assets/images/guide/onboarding/protecting-a-wallet/Wallet backup.png: Wallet backup.png
+assets/images/guide/onboarding/protecting-a-wallet/Wallet backup@2x.png: Wallet backup@2x.png
+assets/images/guide/onboarding/protecting-a-wallet/choose-fake-wallet-pin.png: choose-fake-wallet-pin.png
+assets/images/guide/onboarding/protecting-a-wallet/choose-fake-wallet-pin@2x.png: choose-fake-wallet-pin@2x.png
+assets/images/guide/onboarding/protecting-a-wallet/delete-recovery-phrase.png: delete-recovery-phrase.png
+assets/images/guide/onboarding/protecting-a-wallet/delete-recovery-phrase@2x.png: delete-recovery-phrase@2x.png
+assets/images/guide/onboarding/protecting-a-wallet/settings-wallet-backup-preview.png: settings-wallet-backup-preview.png
+assets/images/guide/onboarding/protecting-a-wallet/settings-wallet-backup-preview@2x.png: settings-wallet-backup-preview@2x.png
+assets/images/guide/onboarding/protecting-a-wallet/settings-wallet-backup.png: settings-wallet-backup.png
+assets/images/guide/onboarding/protecting-a-wallet/settings-wallet-backup@2x.png: settings-wallet-backup@2x.png
+assets/images/guide/onboarding/protecting-a-wallet/checklist-option-details.png: checklist-option-details.png
+assets/images/guide/onboarding/protecting-a-wallet/checklist-option-details@2x.png: checklist-option-details@2x.png
