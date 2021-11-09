@@ -50,7 +50,7 @@ This user flow usually requires users to manually back up their 12 to 24 word re
 
 {% include tip/open.html label="Printable Template" %}
 
-You could help the user by providing them with a printable template for writing down their recovery phrase. Some non-sensitive data (such as the name of your wallet or the derivation path) could be included pre-filled in the template. The user would write in the sensitrive data by hand. Here is an [example template](https://www.figma.com/file/sJYnyi2amehFJ2JpDgj978/Bitcoin-Wallet---Paper-Backup-Template?node-id=1%3A535).
+You could help the user by providing them with a printable template for writing down their recovery phrase. Some non-sensitive data (such as the name of your wallet or the derivation path) could be included pre-filled in the template. The user would write in the sensitive data by hand. Here is an [example template](https://www.figma.com/file/sJYnyi2amehFJ2JpDgj978/Bitcoin-Wallet---Paper-Backup-Template?node-id=1%3A535).
 
 {% include tip/close.html %}
 
