@@ -103,9 +103,15 @@ _2021 by Arcane research_
 
 The State of Lightning provides a comprehensive overview of usage on the Lightning network seen to date (October 2021). The report highlights and explains the growth in network metrics, provides estimates of mainstream adoption, and looks into the future of the Lightning network.
 
+#### [Bitcoin UX Research](https://patestevao.com/work/bitcoin-ux-research/)
+
+_2021 by Estevão_
+
+The goal of the research was to provide an in-depth qualitative knowledge of how people use or perceive Bitcoin.
+
 #### [A Deep Dive Into Lightning as a Bitcoin Scaling Solution](https://downloads.coindesk.com/research/Lightning+Network+-+CoinDesk+Research+-+2021.09.pdf)
 
-_2021 by George Kaloudis, CoinDesk research_
+_2021 by Kaloudis, CoinDesk research_
 
 The research looks at the Lightning Network from a perspective of the scaling solution and pinpoints the basic architecture that powers it and outlines the potential attact vectors.
 
@@ -176,7 +182,7 @@ Documentation of the user research, redesign and testing process of Coinhako, a 
 
 The study conducted to look into the interactions between users and the Lightning payments. It also reviewes three well-known projects at that time and looks through their user-experience.
 
-_2019 by Patrícia Estevão._
+_2019 by Estevão._
 
 #### [Making design better for crypto apps: Abra UX Case study](https://medium.com/@kagakawa/abra-app-ux-case-study-2eb2a6e09c70)
 
