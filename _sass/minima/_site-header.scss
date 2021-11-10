@@ -32,11 +32,11 @@
             white-space: nowrap;
 
             svg {
-                width: 30px;
-                height: 30px;
+                width: 40px;
+                height: 40px;
                 vertical-align: middle;
                 margin-right: 5px;
-                transform: translateY(-1px);
+                transform: translateY(-2px);
                 transition: color 100ms $ease;
                 color: black;
             }
@@ -237,7 +237,7 @@
         .wrap {
             display: flex;
             position: relative;
-            padding-right: 0px;
+            padding-right: 10px;
             padding-left: $spacing-unit / 2;
 
             .site-title {
@@ -245,7 +245,7 @@
             }
 
             .nav-trigger {
-                width: 60px;
+                width: 44px;
                 height: 60px;
                 display: flex;
                 align-items: center;
@@ -271,6 +271,7 @@
 
             .nav-search {
                 margin-left: auto;
+                width: 44px;
 
                 > svg path {
                     fill: $border-color-03;
