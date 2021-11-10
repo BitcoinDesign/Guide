@@ -102,7 +102,7 @@ Diverse online communities rapidly formed around Bitcoin. Vast amounts of public
 
 Bitcoin only knows its users through pseudonymous addresses. We can analyze on-chain metrics for things like fundamental transaction behaviors, but analysis of addresses and transactions beyond this can be complicated. While the privacy Bitcoin provides is a fundamental aspect, it can make things challenging for user researchers.
 
-### It's a layered protocol
+### Transparent and extensible
 
 <div class="center" markdown="1">
 
