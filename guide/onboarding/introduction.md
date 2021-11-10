@@ -49,9 +49,9 @@ An overview of common tasks when using a wallet application for the first time.
 
 ---
 
-### [Backing up a recovery phrase]({{ 'guide/onboarding/backing-up-a-recovery-phrase' | relative_url }})
+### [Backing up a wallet]({{ 'guide/onboarding/backing-up-a-wallet' | relative_url }})
 
-An overview of the tradeoffs between using [manual backup]({{ 'guide/onboarding/backing-up-a-recovery-phrase/manual-backup' | relative_url }}) vs [automatic cloud backup]({{ 'guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup' | relative_url }}).
+An overview of the tradeoffs between using [manual backup]({{ 'guide/onboarding/backing-up-a-wallet/manual-backup' | relative_url }}) vs [automatic cloud backup]({{ 'guide/onboarding/backing-up-a-wallet/cloud-backup' | relative_url }}).
 
 ---
 

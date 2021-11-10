@@ -3,17 +3,56 @@ layout: guide
 title: Manual backup
 description: How to manually back up the recovery phrase of a Bitcoin wallet.
 grand_parent: Onboarding
-parent: Backing up a recovery phrase
+parent: Backing up a wallet
 nav_order: 2
-permalink: /guide/onboarding/backing-up-a-recovery-phrase/manual-backup/
+permalink: /guide/onboarding/backing-up-a-wallet/manual-backup/
 main_classes: -no-top-padding
+image: https://bitcoin.design/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase-preview.png
 ---
+
+{% include picture.html
+image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase.png"
+retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase@2x.png"
+mobile = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase-mobile.png"
+mobileRetina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase-mobile@2x.png"
+alt-text = "Backing up a recovery phrase chapter header image"
+width = 1600
+height = 600
+layout = "full-width"
+%}
 
 # Manual backup
 
-### How it works
+## Backing up channel state
 
-It usually requires users to manually back up their 12 to 24 word recovery phrase by writing it down on a piece of paper and storing it in a safe (but memorable location). In the case that a user’s device breaks or is stolen, the user can recover their funds and wallet by correctly entering their recovery phrase. The [private key management]({{ '/guide/private-key-management/manual-backup/' | relative_url }}) section dives further into the technical details of this scheme if interested in learning more.
+A channel state backup is typically a file which includes information about the user's channel balances. This file can be downloaded onto the user's device and used to restore the Lightning channel state on another device. This could be a database of the most current channel balance information, or a static backup (as an absolute last resort).
+
+{% include tip/open.html color="red" icon="forbid" label="Manual channel state backups are for advanced users" %}
+
+Manual backups of Lightning channel state should only be performed with careful consideration. This is because the channel state backup may become outdated very quickly, and attempting to restore from an outdated backup could harm the user's funds. In the interest of adhering to the principles of [self-custody]({{ '/guide/designing-products/principles/#self-custody' | relative_url }}) and [transparency]({{ '/guide/designing-products/principles/#transparency' | relative_url }}), you may choose to allow your user to perform a manual channel state backup. However, this is not recommended for the majority of users. If this option is available, keep it tucked away in a settings menu and prepend a warning that the option is only for advanced users.
+
+{% include tip/close.html %}
+
+## Backing up wallet recovery data
+
+Manual backup should be used primarily for wallet recovery data. Wallet recovery data includes:
+- The recovery phrase
+  - Type - BIP39, Electrum, Shamir Shares (SLIP39), AEZEED
+  - Passphrase (optional)
+- Derivation path
+- Fingerprint
+
+
+
+By far, the most important piece of the wallet recovery data is the recovery phrase. While the derivation path and fingerprint are not required in all situations (for example, when recovering a wallet using the same app that it was created with), it is good to make sure the user has this information stored in order to prevent potential loss of funds.
+
+This user flow usually requires users to manually back up their 12 to 24 word recovery phrase by writing it down on a piece of paper and storing it in a safe (but memorable location). In the case that a user’s device breaks or is stolen, the user can recover their funds and wallet by correctly entering their recovery phrase. The [private key management]({{ '/guide/private-key-management/manual-backup/' | relative_url }}) section dives further into the technical details of this scheme.
+
+{% include tip/open.html label="Printable Template" %}
+
+You could help the user by providing them with a printable template for writing down their recovery phrase. Some non-sensitive data (such as the name of your wallet or the derivation path) could be included pre-filled in the template. An [output script descriptor]({{'/guide/glossary/#output-script-descriptor' | relative_url}}) could be included as a QR code to ensure the wallet software knows how to restore the wallet properly. The user should be required to write in the sensitive data by hand. Here is an [example template](https://www.figma.com/file/sJYnyi2amehFJ2JpDgj978/Bitcoin-Wallet---Paper-Backup-Template?node-id=1%3A535).
+
+{% include tip/close.html %}
 
 If you are designing an application that opts to use manual backups, the following sections outline how to best go about this with new users in mind.
 
@@ -55,7 +94,7 @@ Explains to users what a recovery phrase **is**.
 
 {% include dl/item-open.html color="yellow" %}
 
-“Your recovery phrase is the only way to acess your wallet if your phone is lost or stolen.”
+“Your recovery phrase is the only way to access your wallet if your phone is lost or stolen.”
 
 {% include dl/item-middle.html color="yellow" %}
 
@@ -239,7 +278,7 @@ One way to present this is by giving them numbered fields (12 or 24 words depend
 
 {% include /tip/open.html label="Tip: Tell Users if they’re on the Right Track" icon="info" color="blue" %}
 
-Because typing each word out comes with more room for error, create a visual indicator that shows if the user is on the right track (i.e., make the box green if it is correct, make it red if it is incorrect). It can be frustrating for a user to get a general warning that a word is not correct after having them manually type it out and force them to sleuth out where a misspelled word or wrong order occurred.
+Because typing each word out comes with more room for error, create a visual indicator that shows if the user is on the right track (i.e., make the box green if it is correct, make it red if it is incorrect). Since the words in recovery phrases come from a pre-defined dictionary, your app could also offer to auto-complete words as the user types them in. It can be frustrating for a user to get a general warning that a word is not correct after having them manually type it out and force them to sleuth out where a misspelled word or wrong order occurred.
 
 {% include /tip/close.html %}
 
@@ -266,7 +305,7 @@ You could also ask users to select (or manually type out) a random word from the
 The next section will highlight some options for [restoring a wallet]({{ '/guide/onboarding/restoring-a-wallet/' | relative_url }}).
 
 {% include next-previous.html
-   previousUrl = "/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/"
+   previousUrl = "/guide/onboarding/backing-up-a-wallet/cloud-backup/"
    previousName = "Automatic cloud backups"
    nextUrl = "/guide/onboarding/restoring-a-wallet/"
    nextName = "Restoring a wallet"
