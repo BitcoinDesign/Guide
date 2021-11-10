@@ -2,7 +2,7 @@ let themes = [
   // {
   //   // Template
   //   logo: {
-  //       path: "/assets/banner-bitcoin-logo.svg",
+  //       path: "/assets/bitcoin-design-community-banner.svg",
   //       fillColor: "",
   //       outlineColor: "#000"
   //   },
@@ -49,7 +49,7 @@ let themes = [
   {
     // Bridging bitcoin
     logo: {
-        path: "/assets/banner-bitcoin-logo.svg",
+        path: "/assets/bitcoin-design-community-banner.svg",
         fillColor: "#FFF",
         outlineColor: "#000"
     },
@@ -96,7 +96,7 @@ let themes = [
   {
     // 3D abstract
     logo: {
-        path: "/assets/banner-bitcoin-logo.svg",
+        path: "/assets/bitcoin-design-community-banner.svg",
         fillColor: "#F7931A",
         outlineColor: "#FFF"
     },
@@ -143,7 +143,7 @@ let themes = [
   {
     // The Meta-Future
     logo: {
-        path: "/assets/banner-bitcoin-logo.svg",
+        path: "/assets/bitcoin-design-community-banner.svg",
         fillColor: "#F7931A",
         outlineColor: "#000"
     },
@@ -190,7 +190,7 @@ let themes = [
   {
     // BITs and pieces
     logo: {
-        path: "/assets/banner-bitcoin-logo.svg",
+        path: "/assets/bitcoin-design-community-banner.svg",
         fillColor: "#FEC34A",
         outlineColor: "#000"
     },

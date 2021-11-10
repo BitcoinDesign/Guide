@@ -59,7 +59,7 @@ Below are the variable used to configure a theme. These are located in [themes.j
 
 ```javascript
     logo: {
-        path: "/assets/banner-bitcoin-logo.svg",
+        path: "/assets/bitcoin-design-community-banner.svg",
         fillColor: "",
         outlineColor: "#000"
     },
