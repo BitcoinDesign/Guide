@@ -7,7 +7,7 @@ parent: Private key management
 permalink: /guide/private-key-management/external-signers/
 image: https://bitcoin.design/assets/images/guide/private-key-management/external-signers/external-signing-device-preview.png
 redirect_from:
- - /guide/onboarding/external-signing-device/
+ - /guide/private-key-management/external-signing-device/
 main_classes: -no-top-padding
 ---
 
