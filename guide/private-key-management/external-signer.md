@@ -59,7 +59,7 @@ The external signer generates and stores private keys externally, and preferably
 
 To sign a transaction, the primary wallet application submits a partially signed bitcoin transaction ([PSBT](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki)) to the external signer. 
 
-The external signer then signs the PSBT and sends it back to the primary wallet application. The users primary wallet application now broadcasts this now signed transaction to the Bitcoin network for processing. This process can also happen fully air gapped using QR codes or memory cards instead of cables or wireless connections, to keep the device offline at all times.
+The external signer then signs the PSBT and sends it back to the primary wallet application. The users primary wallet application now broadcasts this now signed transaction to the Bitcoin network for processing. This process can also happen fully air-gapped using QR codes or memory cards instead of cables or wireless connections, to keep the device offline at all times.
 
 </div>
 
