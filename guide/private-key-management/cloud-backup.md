@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Automatic cloud backup
+title: Cloud backup
 description: Overview of how recovery phrases and other wallet data can be securely stored with cloud storage service providers.
 nav_order: 2
 parent: Private key management
@@ -33,13 +33,15 @@ https://www.figma.com/community/file/995256542920917246/BDG---Private-key-manage
    layout = "full-width"
 %}
 
-# Automatic cloud backup
+# Cloud backup
 
 By using an automatic cloud backup for the private key the user is NOT required to manually backup anything when setting up a new [bitcoin wallet]({{ '/guide/glossary/wallet/#bitcoin-wallet' | relative_url }}). This is sometimes also called *seedless*, as the user is never exposed to the traditional *seed*, or [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) that is used to initiate a wallet.
 
-This scheme can be a good fit for wallets meant for storing smaller amounts of bitcoin. This includes wallets for novices who would find manually backing up a recovery phrase during onboarding confusing, possibly leading to unsafe backups. It could also be a starting point for a progressive security model that lets customers upgrade when they start accumulating more funds. Wallets using automatic cloud backups also work well for what experienced users might call *hot* or *spending* wallets where convenience is more important than maximum security. 
+This scheme can be a good fit for wallets meant for storing smaller amounts of bitcoin. This includes wallets for novices who would find manually backing up a recovery phrase during onboarding confusing, possibly leading to unsafe backups. It could also be a starting point for a progressive security model that lets customers upgrade when they start accumulating more funds. Wallets using automatic cloud backups also work well for what experienced users might call *hot* or *spending* wallets where convenience is more important than maximum security.
 
 The automatic cloud backup scheme gives users reasonable security against theft, while providing low risk for self-inflicted losses.
+
+If a wallet supports Lightning, it may already have cloud backup [enabled for the channel state]({{'/guide/onboarding/backing-up-a-wallet/cloud-backup/' | relative_url}}); therefore, it would not take much additional work to store the private key in the cloud as well.
 
 ### How it works
 First the application generates a wallet with a keypair. Then, the key is encrypted and backed up to a location convenient and safe for the user, yet hard for a malicious third-party to gain access to.
@@ -85,6 +87,12 @@ To see what a user experience with this scheme could look like, see the [daily s
 - [Photon SDK](https://photonsdk.org) - for use by other wallets, in development
 - [Casa](https://keys.casa)
 - [Pine](https://pine.pm ) - Lightning, beta
+
+{% include tip/open.html label="Encrypted Cloud Backups" %}
+
+You can provide an extra layer of security for the user's private key by encrypting it before sending it to the cloud. One option would be for the user to choose an encryption passphrase. Another would be to have a third-party hold the encryption key, so that neither the cloud provider nor the holder of the encryption key would have access to all the information to use the private key. See [this article](https://blog.keys.casa/casa-keymaster-security-mobile-key-overview/) for an example.
+
+{% include tip/close.html %}
 
 ---
 
