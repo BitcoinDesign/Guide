@@ -83,7 +83,9 @@ Safe backups can be made fairly simple, take a look at our [Bitcoin backups]({{ 
 - Explain what a recovery phrase is, and provide a guide how to do *safe offline backups* BEFORE the user is exposed to the phrase or can start using the wallet
 
 **Products that use this scheme**
-Most bitcoin wallets, including;
+
+Most bitcoin wallets, including:
+
 - [Bluewallet](https://bluewallet.io)
 - [Electrum](https://electrum.org)
 - [Wasabi](https://wasabiwallet.io)
