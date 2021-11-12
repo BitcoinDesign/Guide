@@ -120,11 +120,11 @@ The use cases for shared schemes include spouses managing a joint account, group
 
 ---
 
-Let's start by looking at the [automatic cloud backup](/guide/private-key-management/cloud-backup/) scheme.
+Let's start by looking at the [cloud backup](/guide/private-key-management/cloud-backup/) scheme.
 
 {% include next-previous.html
    previousUrl = "/guide/private-key-management/introduction/"
    previousName = "Private key management"
    nextUrl = "/guide/private-key-management/cloud-backup/"
-   nextName = "Automatic cloud backup"
+   nextName = "Cloud backup"
 %}
