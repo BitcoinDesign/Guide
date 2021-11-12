@@ -90,7 +90,7 @@ To see what a user experience with this scheme could look like, see the [daily s
 
 {% include tip/open.html label="Encrypted Cloud Backups" %}
 
-You can provide an extra layer of security for the user's private key by encrypting it before sending it to the cloud. One option would be for the user to choose an encryption passphrase. Another would be to have a third-party hold the encryption key, so that neither the cloud provider nor the holder of the encryption key would have access to all the information to use the private key. See [this article](https://blog.keys.casa/casa-keymaster-security-mobile-key-overview/) for an example.
+You can provide an extra layer of security for the user's private key by encrypting it before sending it to the cloud. One option would be for the user to choose an encryption passphrase. Another would be to have a third-party hold the encryption key so that neither the cloud provider nor the encryption key holder would have access to all the information to use the private key. See [this article](https://blog.keys.casa/casa-keymaster-security-mobile-key-overview/) for an example.
 
 {% include tip/close.html %}
 
