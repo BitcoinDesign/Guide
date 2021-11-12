@@ -37,7 +37,7 @@ https://www.figma.com/community/file/995256542920917246/BDG---Private-key-manage
 
 Manual backup of the [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) has been the most common private key management scheme by far since its proposal with [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) in 2013. If you have used any [non-custodial]({{ '/guide/glossary/wallet/#non-custodial--custodial-wallet' | relative_url }}) bitcoin application you are likely to have experienced the onboarding requirements of manual backups.
 
-When creating a new wallet, you will be asked to manually backup a 12 or 24 word recovery phrase to a *safe place*. Often, as the next step it will ask you to verify that you did save it by having you input the phrase in the correct order.
+When creating a new wallet, you will be asked to manually backup a 12 or 24 word recovery phrase to a *safe place*. Often, as the next step it will ask you to verify that you did save it by having you input the phrase in the correct order. Additionally, some wallets may use a [passphrase]({{'/guide/glossary/#passphrase' | relative_url}}) that can be defined by the user.
 
 This scheme is suitable for users who are already familiar with bitcoin and procedures for secure offline backups of their recovery phrase. It is not suited for complete beginners. When told to store the backup in a safe way offline, bitcoin-beginners in reality often take a screenshot, write it down in plain text somewhere on their mobile device, computer or a piece of paper on the fridge, or simply don’t back it up at all. This has the risk of achieving the opposite of what we want - high risk of self-inflicted loss and low to medium security in terms of third party theft.
 
@@ -73,11 +73,6 @@ Safe backups can be made fairly simple, take a look at our [Bitcoin backups]({{ 
 - When users are new to bitcoin and unlikely to implement good manual backups
 - For use-cases with small amounts
 - When onboarding is likely to happen outside of users' homes
-
-**Variations**
-- 12 or 24 word phrase
-- Additional user authentication (biometrics use, pin or password)
-- Cloud backup options
 
 **Do's**
 - Explain what a recovery phrase is, and provide a guide how to do *safe offline backups* BEFORE the user is exposed to the phrase or can start using the wallet
