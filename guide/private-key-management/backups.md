@@ -36,7 +36,7 @@ https://www.figma.com/community/file/995256542920917246/BDG---Private-key-manage
 
 The self-custody of Bitcoin is an important right, but also a financial responsibility that can scale from pocket money to life savings, and take practice getting used to.
 
-This guide is a straightforward starting point for simple Bitcoin backups, aimed at users of Bitcoin products.
+This guide is a straightforward starting point for simple Bitcoin backups, aimed at users of Bitcoin products using the base layer.
 
 If you are a designer or developer, make sure you offer guidance to your users so they can secure their bitcoin with an appropriate backup.
 
