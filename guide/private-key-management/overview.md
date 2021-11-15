@@ -64,6 +64,14 @@ Casa's [wealth security protocol]({{ 'https://github.com/Casa/wealth-security-pr
 
 Now that you have a clear picture of your use case, target audience and risk vectors we can consider which schemes might be suitable for your product.
 
+{% include tip/recommendation.html %}
+
+If your product supports the **Lightning network** by running a local node, the *automatic cloud backup* scheme is often the best fit. This is due to the need for continuously backing up accurate channel states. It is possible, but more complicated for the user to achieve this with a *manual backup*.
+
+It is not yet possible to use *external signing device* or *multi-key* schemes for Lightning. This is due to the need for the private key(s) to be available to the Lightning node at all times. 
+
+{% include tip/close.html %}
+
 Here's an illustration of the spectrum of suitable schemes for use cases ranging from low value and casual usage, to high value and critical usage.
 
 {% include picture.html
