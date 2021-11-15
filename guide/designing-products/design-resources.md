@@ -44,6 +44,12 @@ files:
     retina: /assets/images/guide/designing-products/design-resources/slide-template@2x.jpg
     width: 400
     height: 210
+  - caption: <a href="https://www.figma.com/community/file/1040606190770628557/Bitcoin-Design-Community-seal">Bitcoin Design Community seal</a><br/><a href="/assets/images/guide/designing-products/design-resources/bitcoin-design-community.zip" download>Download images</a>
+    alt: Bitcoin Design Community seal
+    image: /assets/images/guide/designing-products/design-resources/bitcoin-design-community-seal.jpg
+    retina: /assets/images/guide/designing-products/design-resources/bitcoin-design-community-seal@2x.jpg
+    width: 400
+    height: 210
 ---
 
 <!--
