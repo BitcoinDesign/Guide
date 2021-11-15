@@ -54,6 +54,11 @@ The main risks that backups need to protect against are:
 - Catastrophic events - your backup location got destroyed
 - Inheritance loss - next-of-kin were unable to access your wallet
 
+{% include tip/tip.html %}
+
+Lightning wallets also need to back up the full channel state history to be restored properly. See [Backing up a wallet](/guide/onboarding/backing-up-a-wallet/) in the Onboarding chapter to learn more. The guide on this page is only suitable for base layer wallets. 
+
+{% include tip/close.html %}
 
 ## Backup levels, basic to advanced
 
