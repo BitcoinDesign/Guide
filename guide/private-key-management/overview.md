@@ -35,12 +35,13 @@ https://www.figma.com/community/file/995256542920917246/BDG---Private-key-manage
 # Private key schemes
 The private key controls the bitcoin [wallet]({{ '/guide/glossary/#wallet' | relative_url }}){:target="_blank"}, and the *scheme* is simply a way to describe how the key is stored and kept secure.
 
-Important aspects to consider when choosing a private key management scheme is what you expect your users to use the wallet application for, who they are and how much bitcoin they might store in your product. For example:
+Important aspects to consider when choosing a private key management scheme is what you expect your users to use the wallet application for, who they are, how much bitcoin they might store in your product and what layers they need to transact on. For example:
 
 
 * **Target audience** - Are your users completely new to bitcoin and its concepts, or well versed in all the technological underpinnings?
 * **Use case** - Are you building a [personal finance]({{ '/guide/designing-products/personal-finance/' | relative_url }}) product for daily payments, or a long-term life-saving storage solution?
 * **Value stored** - While we always strive for no loss of funds, how critical to their financial situation would it be if your user lost access to their funds?
+* **Transaction layers** - Do your users need to transact on both the base layer and the Lightning network?
 
 
 The narrower you can define your answer to these questions, the easier it will be to pick the right private key management scheme, and provide a great user experience. If you find yourself wanting to target a wide range, it might be a good idea to use a progressive scheme that changes as the user’s funds and familiarity with bitcoin grows.
