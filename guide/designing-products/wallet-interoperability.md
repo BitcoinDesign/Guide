@@ -54,7 +54,7 @@ Below are areas within your Bitcoin application where interoperability should be
    layout = "float-right-desktop"
 %}
 
-You should ensure your application is interoperable with the various techniques for sending and receiving Bitcoin payments. For base-layer, this means supporting various [address formats](/guide/glossary/address/), such as legacy addresses (P2PKH), compatibility addresses (P2SH), and Segwit addresses (Bech32). For Lightning payments, your application should be able to read and generate invoices according to the [BOLT 11](/guide/glossary/#bolt---basis-of-lightning-technology) standard. 
+You should ensure your application is interoperable with the various techniques for sending and receiving Bitcoin payments. For base-layer, this means supporting various [address formats](/guide/glossary/address/), such as legacy (P2PKH), compatibility (P2SH), Segwit (Bech32), and Taproot (P2TR). For Lightning payments, your application should be able to read and generate invoices according to the [BOLT 11](/guide/glossary/#bolt---basis-of-lightning-technology) standard. 
 
 You may want to also support more experimental Lightning payment options such as [Lightning addresses](https://lightningaddress.com/), [BOLT 12 offers](https://bolt12.org/), [Keysend](https://lightning.readthedocs.io/lightning-keysend.7.html), and [LNURL](https://github.com/fiatjaf/lnurl-rfc). If your application does not support these, you should be sure to include a human-readable failure state.
 
