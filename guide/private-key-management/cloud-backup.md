@@ -69,21 +69,21 @@ To see what a user experience with this scheme could look like, see the [daily s
 
 ### Best practice
 
-**When to use**
+#### When to use
 - When risk of self-inflicted loss is higher than loss from theft
 - For beginners, or products with progressive security
 - For wallets with frequent transactions of smaller amounts
 
-**When not to use**
+#### When not to use
 - When storing high values
 - When risk of loss from theft is higher than self-inflicted loss
 - When complete self-sovereignty is important to the target audience
 
-**Variations**
+#### Variations
 - Storage location (keychain, iCloud, Google Drive, One Password etc.)
 - Additional user authentication (biometrics, pin)
 
-**Products that use this scheme**
+#### Products that use this scheme
 - [Photon SDK](https://photonsdk.org) - for use by other wallets, in development
 - [Casa](https://keys.casa)
 - [Pine](https://pine.pm ) - Lightning, beta

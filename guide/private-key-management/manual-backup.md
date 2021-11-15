@@ -64,20 +64,20 @@ Safe backups can be made fairly simple. Take a look at our [Bitcoin backups]({{ 
 
 ### Best practice
 
-**When to use**
+#### When to use
 - When the target audience is likely to be knowledgeable and implement good manual backup schemes
 - When storing medium amounts
 - When the risk of loss from theft is higher than the risk of self-inflicted loss
 
-**When not to use**
+#### When not to use
 - When users are new to bitcoin and unlikely to implement good manual backups
 - For use-cases with small amounts
 - When onboarding is likely to happen outside of users' homes
 
-**Do's**
+#### Do's
 - Explain what a recovery phrase is, and provide guidance on how to do *safe offline backups* BEFORE the user is exposed to the recovery phrase
 
-**Products that use this scheme**
+#### Products that use this scheme
 
 Most bitcoin wallets, including:
 
