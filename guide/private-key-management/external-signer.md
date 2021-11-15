@@ -48,7 +48,7 @@ A wallet application that supports external signers can remove the need for the 
 
 {% include image.html
    image = "/assets/images/guide/private-key-management/external-signers/external-signer.jpg"
-   retina = "/assets/images/guide/private-key-management/external-signers/external-signer@2x.jpg.jpg"
+   retina = "/assets/images/guide/private-key-management/external-signers/external-signer@2x.jpg"
    alt-text = "Transfer of wallet data between applications"
    width = 400
    height = 300
