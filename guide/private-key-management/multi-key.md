@@ -47,6 +47,12 @@ It is important to remember that the usage of multiple keys is necessary only fo
 
 Multi-key schemes can raise the security, since anyone needs access to more than one key to move any funds. But clearly it also increases complexity and the requirements on the user to keep even more keys securely stored and/or backed up.
 
+{% include tip/tip.html %}
+
+The keys used by a Lightning node cannot be controlled by a multi-key setup, as they need to be continuously available to the node.
+
+{% include tip/close.html %}
+
 ### How it works
 A software wallet application or coordination software initiates a multi-sig wallet, choosing the number of total keys, and the number required to sign transactions. You then add private keys from other wallets generated elsewhere to the multisig after which the software wallet can complete the creation process. For any future transaction from the multi-sig wallet the required amount of co-signers need to sign (using Partially Signed Bitcoin Transactions - PSBT from [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki)) before any transaction is valid.
 
@@ -61,6 +67,7 @@ A software wallet application or coordination software initiates a multi-sig wal
 {% include fact/cons.html %}
 
 - Has significant complexity and op-sec burden for multiple private keys, each of which need a good backup scheme
+- Not compatible with Lightning nodes
 
 {% include fact/close.html %}
 
@@ -76,6 +83,7 @@ A software wallet application or coordination software initiates a multi-sig wal
 **When not to use**
 - For small amounts
 - When users are likely to be new to bitcoin
+- When controlling a Lightning node
 
 **Variations**
 - Number of total and co-signing keys
