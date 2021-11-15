@@ -46,15 +46,6 @@ A wallet application that supports external signers can remove the need for the 
 
 <div class="center" markdown="1">
 
-{% include image.html
-   image = "/assets/images/guide/private-key-management/external-signers/external-signer.jpg"
-   retina = "/assets/images/guide/private-key-management/external-signers/external-signer@2x.jpg.jpg"
-   alt-text = "Transfer of wallet data between applications"
-   width = 400
-   height = 300
-   layout = "float-right-desktop"
-%}
-
 The external signer generates and stores private keys externally, and preferably offline, from the users primary wallet application.
 
 To sign a transaction, the primary wallet application submits a partially signed bitcoin transaction ([PSBT](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki)) to the external signer. 
