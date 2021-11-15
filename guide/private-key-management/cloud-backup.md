@@ -41,7 +41,7 @@ This scheme can be a good fit for wallets meant for storing smaller amounts of b
 
 The automatic cloud backup scheme gives users reasonable security against theft, while providing low risk for self-inflicted losses.
 
-If a wallet supports Lightning, it may already have cloud backup [enabled for the channel state]({{'/guide/onboarding/backing-up-a-wallet/cloud-backup/' | relative_url}}); therefore, it would not take much additional work to store the private key in the cloud as well.
+If a wallet supports Lightning, it may already have cloud backup [enabled for the channel state]({{'/guide/onboarding/backing-up-a-wallet/cloud-backup/' | relative_url}}). If you have implemented cloud backups for Lightning channel state in your app, you could also use this same connection with the cloud provider to store a backup of the user's private key.
 
 ### How it works
 First the application generates a wallet with a private key. Then, the private key is encrypted and backed up to a location convenient and safe for the user, yet hard for a malicious third-party to gain access to.
