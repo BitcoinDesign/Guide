@@ -67,7 +67,7 @@ A software wallet application or coordination software initiates a multi-sig wal
 {% include fact/cons.html %}
 
 - Has significant complexity and op-sec burden for multiple private keys, each of which need a good backup scheme
-- Not compatible with Lightning nodes
+- Not compatible with Lightning node wallets
 
 {% include fact/close.html %}
 
