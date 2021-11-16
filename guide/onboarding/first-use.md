@@ -28,7 +28,7 @@ There are a number of common tasks a user might want to achieve the first time t
 
 - [Create a new wallet](/guide/onboarding/first-use/#creating-a-wallet), or
 - [Restore an existing wallet](/guide/onboarding/restoring-a-wallet/)
-- [Backup a wallet](/guide/onboarding/backing-up-a-recovery-phrase/)
+- [Backup a wallet](/guide/onboarding/backing-up-a-wallet/)
 - [Fund a wallet](/guide/onboarding/funding-a-wallet/)
 
 While the first two, creating or restoring a wallet, normally need to be tackled straight away, the last two can be designed to fit the flow and capability of your application.
@@ -39,9 +39,9 @@ Alternative approaches can be to wait and prompt the user only once there are fu
 
 ### Creating a wallet
 
-[Bitcoin wallets]({{ 'guide/glossary/#wallet' | relative_url }}) contain the private keys to a user’s bitcoin. Private keys let users access bitcoin associated with those keys. If the user does not have a Bitcoin wallet already that they want to restore, it is necessary to create a new one. 
+[Bitcoin wallets]({{ 'guide/glossary/#wallet' | relative_url }}) contain the private keys to a user’s bitcoin. Private keys let users access bitcoin associated with those keys. If the user does not have a Bitcoin wallet already that they want to restore, it is necessary to create a new one.
 
-Like regular keys on a keychain, Bitcoin private keys can be copied. This makes [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) one of the most important considerations of any bitcoin owner. Bitcoin wallet applications should automatically generate the user’s private keys locally, meaning they are only generated and stored on the device and not by the wallet provider, during onboarding. 
+Like regular keys on a keychain, Bitcoin private keys can be copied. This makes [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) one of the most important considerations of any bitcoin owner. Bitcoin wallet applications should automatically generate the user’s private keys locally, meaning they are only generated and stored on the device and not by the wallet provider, during onboarding.
 
 <div class="center" markdown="1">
 
@@ -115,11 +115,11 @@ Below is an example of some carousel screens that might be useful in helping a u
 
 ---
 
-Ok, now let's look at [backing up a recovery phrase.]({{ '/guide/onboarding/backing-up-a-recovery-phrase/' | relative_url }})
+Ok, now let's look at [backing up a recovery phrase.]({{ '/guide/onboarding/backing-up-a-wallet/' | relative_url }})
 
 {% include next-previous.html
    previousUrl = "/guide/onboarding/introduction/"
    previousName = "Getting to know your users"
-   nextUrl = "/guide/onboarding/backing-up-a-recovery-phrase/"
+   nextUrl = "/guide/onboarding/backing-up-a-wallet/"
    nextName = "Backing up a recovery phrase"
 %}

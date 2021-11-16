@@ -36,7 +36,7 @@ https://www.figma.com/community/file/995256542920917246/BDG---Private-key-manage
 
 The self-custody of Bitcoin is an important right, but also a financial responsibility that can scale from pocket money to life savings, and take practice getting used to.
 
-This guide is a straightforward starting point for simple Bitcoin backups, aimed at users of Bitcoin products.
+This guide is a straightforward starting point for simple Bitcoin backups, aimed at users of Bitcoin products using the base layer.
 
 If you are a designer or developer, make sure you offer guidance to your users so they can secure their bitcoin with an appropriate backup.
 
@@ -54,6 +54,11 @@ The main risks that backups need to protect against are:
 - Catastrophic events - your backup location got destroyed
 - Inheritance loss - next-of-kin were unable to access your wallet
 
+{% include tip/tip.html %}
+
+Lightning wallets also need to back up the full channel state history to be restored properly. See [Backing up a wallet](/guide/onboarding/backing-up-a-wallet/) in the Onboarding chapter to learn more. The guide on this page is only suitable for base layer wallets. 
+
+{% include tip/close.html %}
 
 ## Backup levels, basic to advanced
 

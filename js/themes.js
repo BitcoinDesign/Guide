@@ -2,7 +2,7 @@ let themes = [
   // {
   //   // Template
   //   logo: {
-  //       path: "/assets/banner-bitcoin-logo.svg",
+  //       path: "/assets/bitcoin-design-community-banner.svg",
   //       fillColor: "",
   //       outlineColor: "#000"
   //   },
@@ -49,9 +49,9 @@ let themes = [
   {
     // Bridging bitcoin
     logo: {
-        path: "/assets/banner-bitcoin-logo.svg",
-        fillColor: "#000",
-        outlineColor: ""
+        path: "/assets/bitcoin-design-community-banner.svg",
+        fillColor: "#FFF",
+        outlineColor: "#000"
     },
     title: {
         fillColor: "#000",
@@ -96,9 +96,9 @@ let themes = [
   {
     // 3D abstract
     logo: {
-        path: "/assets/banner-bitcoin-logo.svg",
+        path: "/assets/bitcoin-design-community-banner.svg",
         fillColor: "#F7931A",
-        outlineColor: ""
+        outlineColor: "#FFF"
     },
     title: {
         fillColor: "#F7931A",
@@ -143,9 +143,9 @@ let themes = [
   {
     // The Meta-Future
     logo: {
-        path: "/assets/banner-bitcoin-logo.svg",
+        path: "/assets/bitcoin-design-community-banner.svg",
         fillColor: "#F7931A",
-        outlineColor: ""
+        outlineColor: "#000"
     },
     title: {
         fillColor: "#000",
@@ -190,7 +190,7 @@ let themes = [
   {
     // BITs and pieces
     logo: {
-        path: "/assets/banner-bitcoin-logo.svg",
+        path: "/assets/bitcoin-design-community-banner.svg",
         fillColor: "#FEC34A",
         outlineColor: "#000"
     },
@@ -318,15 +318,29 @@ var applyTheme = function(themeIndex) {
         ['--banner-background-color', 'background.backgroundColor']
     ];
 
-    for(var i=0; i<documentProperties.length; i++) {
+    var i;
+    for(i=0; i<documentProperties.length; i++) {
         applyDocumentThemeProperty(theme, documentProperties[i][0], documentProperties[i][1]);
     }
 
     // Logo properties.
-    var logoPath = document.getElementById('banner-bitcoin-logo-path');
-    if(logoPath) {
-        logoPath.setAttribute('fill', getProperty(theme, 'logo.fillColor'));
-        logoPath.setAttribute('stroke', getProperty(theme, 'logo.outlineColor'));
+    var logoPaths = document.getElementsByClassName('banner-bitcoin-logo-path');
+    var logoPathFills = document.getElementsByClassName('banner-bitcoin-logo-fill-path');
+    var logoFills = document.getElementsByClassName('banner-bitcoin-logo-fill');
+    if(logoPaths && logoPaths.length > 0) {
+        for(i=0; i<logoPaths.length; i++) {
+            logoPaths[i].setAttribute('stroke', getProperty(theme, 'logo.outlineColor'));
+        }
+    }
+    if(logoPathFills && logoPathFills.length > 0) {
+        for(i=0; i<logoPathFills.length; i++) {
+            logoPathFills[i].setAttribute('fill', getProperty(theme, 'logo.outlineColor'));
+        }
+    }
+    if(logoFills && logoFills.length > 0) {
+        for(i=0; i<logoFills.length; i++) {
+            logoFills[i].setAttribute('fill', getProperty(theme, 'logo.fillColor'));
+        }
     }
 
     // Banner properties.

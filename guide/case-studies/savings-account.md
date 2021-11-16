@@ -23,7 +23,7 @@ images_onboarding:
       caption: Overview of the key setup process.
     - file: onboarding/key-1-intro
       alt:
-      caption: Explanation of how Key 1 is set up. More on [automatic cloud backup](/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/).
+      caption: Explanation of how Key 1 is set up. More on [automatic cloud backup](/guide/onboarding/backing-up-a-wallet/cloud-backup/).
     - file: onboarding/key-1-service
       alt:
       caption: Choice of cloud storage provider.
