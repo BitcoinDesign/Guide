@@ -81,7 +81,7 @@ Lightning signers are an experimental type of external signers interacting with 
 - When target audience is likely to be very knowledgeable or motivated to learn good manual backup schemes
 
 #### When not to use
-- When most users are new to bitcoin and unlikely to implement good backup schemes
+- When most users are new to Bitcoin and unlikely to implement good backup schemes
 - When transactions are likely to be frequent and low value
 
 #### Variations
