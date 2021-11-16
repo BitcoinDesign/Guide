@@ -75,7 +75,7 @@ Example: `bc1pmzfrwwndsqmk5yh69yjr5lfgfg4ev8c0tsc06e`
 
 ### Change address
 
-When the output of a transaction is used as the input of another transaction, it must be spent in its entirety. Sometimes the value of the output is higher than what the user wishes to pay. In this case, the bitcoin client generates a new Bitcoin address, and sends the difference back to this address. This is known as *change address*. The change address format used will usually be the default format used by the wallet application. 
+When the output of a transaction is used as the input of another transaction, it must be spent entirely. Sometimes the value of the output is higher than what the user wishes to pay. In this case, the bitcoin client generates a new Bitcoin address, and sends the difference back to this address. This is known as *change address*. The change address format used will usually be the default format used by the wallet application. 
 
 ## Address compatibility
 
