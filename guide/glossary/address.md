@@ -67,7 +67,7 @@ Example: `bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq`
 
 A pay-to-taproot (P2TR), also known as a Taproot or Bech32m address, is the most recent and advanced Bitcoin address format. Taproot introduces more advanced security, privacy, flexibility and scaling to Bitcoin. Like SegWit, Taproot addresses are opt-in and they are not currently widely supported. Taproot adoption can be tracked [here](https://en.bitcoin.it/wiki/Bech32_adoption).
  
-Benefits of Taproot include the ability to use Schnorr Signatures offering better security, lower fees, and more flexible [multi-key]({{ "/guide/glossary/address" | relative_url }})(/guide/private-key-management/multi-key/) transactions. Multi-key addresses using P2TR look the same as single-key addresses giving users of multi-key increased privacy. Taproot also enables more advanced scripting which enables more complex smart contracts to be built on Bitcoin.
+Benefits of Taproot include the ability to use Schnorr Signatures offering better security, lower fees, and more flexible [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}) transactions. Multi-key addresses using P2TR look the same as single-key addresses giving users of multi-key increased privacy. Taproot also enables more advanced scripting which enables more complex smart contracts to be built on Bitcoin.
  
 Taproot addresses start with `bc1p` and are case insensitive.
  
