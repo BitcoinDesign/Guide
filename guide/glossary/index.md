@@ -105,6 +105,11 @@ A standardized technical document format for suggesting improvements to Bitcoin.
 Instead of processing each transaction individually, the Bitcoin network bundles them into blocks. Blocks are created roughly every 10 minutes and can only contain a certain amount of transactions due to a strict file size limit. Once a block is accepted and has several confirmations, it can never be changed again.
 
 </div>
+### Block reward
+
+Block rewards (also known as block subsidy) are the newly minted bitcoins awarded to miners for broadcasting a new block of verified transactions. The only way for a miner to participate in this process is by spending energy in the attempt to guess an incredibly large random number. In this sense, getting the block reward presents an important financial incentive for the miners to keep doing this work and securing the network.
+
+The described process is part of Bitcoins hard-coded monetary policy, which follows an autonomous and programmatic schedule. The block reward given to Bitcoin miners for processing transactions is cut in half after every 210,000 blocks, or around every four years. This is one of the mechanisms that allows us to know that there will never be more than 21M units. The last halving is expected to happen around the year 2,140.
 
 ### BOLT - Basis of Lightning Technology
 
