@@ -111,6 +111,9 @@ Block rewards (also known as block subsidy) are the newly minted bitcoins awarde
 
 The described process is part of Bitcoins hard-coded monetary policy, which follows an autonomous and programmatic schedule. The block reward given to Bitcoin miners for processing transactions is cut in half after every 210,000 blocks, or around every four years. This is one of the mechanisms that allows us to know that there will never be more than 21M units. The last halving is expected to happen around the year 2,140.
 
+You can find more information about it on the [Technology Primer page](/guide/getting-started/technology-primer/#how-is-the-blockchain-secured).
+
+
 ### BOLT - Basis of Lightning Technology
 
 A standardized technical document format for the Lightning network protocol specifications. They are hosted on Github [here](https://github.com/lightningnetwork/lightning-rfc). The various Lightning implementations must adhere to the BOLTs in order to be interoperable. However, some Lightning implementations may have features which are not defined in BOLTs.
