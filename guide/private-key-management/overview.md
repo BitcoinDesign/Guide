@@ -69,7 +69,7 @@ Now that you have a clear picture of your use case, target audience and risk vec
 
 If your product supports the **Lightning network** by running a local node, the *automatic cloud backup* scheme is often the best fit. This is due to the need for continuously backing up accurate channel states. It is possible, but more complicated for the user to achieve this with a *manual backup*.
 
-It is not yet possible to use *external signing device* or *multi-key* schemes for Lightning. This is due to the need for the private key(s) to be available to the Lightning node at all times. 
+It is not yet possible to use *external signer* or *multi-key* schemes for Lightning. This is due to the need for the private key(s) to be available to the Lightning node at all times. 
 
 {% include tip/close.html %}
 
@@ -116,7 +116,7 @@ Now let's dive in and look at the various schemes that might be suitable for a p
 
 - [Automatic cloud backup](/guide/private-key-management/cloud-backup/) - no user action required for backup
 - [Manual backup / Recovery phrase](/guide/private-key-management/manual-backup/) - manual backup of a phrase of words
-- [External signing device](/guide/private-key-management/external-signers/) - keys are held on a separate device
+- [External signers](/guide/private-key-management/external-signers/) - keys are held on a separate device
 - [Multi-key](/guide/private-key-management/multi-key/) - several keys jointly control the wallet
 
 ### Shared schemes
