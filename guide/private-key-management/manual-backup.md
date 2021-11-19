@@ -93,11 +93,11 @@ Most bitcoin wallets, including;
 
 ---
 
-Next, let's look at [external signing devices]({{ '/guide/private-key-management/external-signing-device/' | relative_url }}).
+Next, let's look at [external signers]({{ '/guide/private-key-management/external-signers/' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/private-key-management/cloud-backup/"
    previousName = "Automatic cloud backup"
-   nextUrl = "/guide/private-key-management/external-signing-device/"
-   nextName = "External signing devices"
+   nextUrl = "/guide/private-key-management/external-signers/"
+   nextName = "External signers"
 %}

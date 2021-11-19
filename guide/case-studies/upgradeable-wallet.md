@@ -44,7 +44,7 @@ Although it is generally easier to build a great experience with a specific [use
 The solution in this case could be a wallet that enables the user to upgrade the scheme as their experience and funds grow. The idea is to provide progressive security that doesn't introduce unnecessary friction until it is required. Our wallet will be able to switch from;
 
 - [Automatic cloud backup]({{ '/guide/private-key-management/cloud-backup/' | relative_url }}) - as default for new users, who often start out with small amounts
-- [External signing device]({{ '/guide/private-key-management/external-signing-device/' | relative_url }}) - for more experienced users, and when funds have grown
+- [External signing device]({{ '/guide/private-key-management/external-signers/' | relative_url }}) - for more experienced users, and when funds have grown
 - 2-of-3 [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}) - for seasoned users, and critical amounts
 - 3-of-5 multi-key - for really serious situations and/or very high amounts
 
