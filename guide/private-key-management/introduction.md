@@ -59,9 +59,9 @@ A single key is stored locally on the device. User action is required for backup
 
 ---
 
-### [External signing device]({{ '/guide/private-key-management/external-signing-device/' | relative_url }})
+### [External signers]({{ '/guide/private-key-management/external-signers//' | relative_url }})
 
-A single key that is not stored on the same device as the wallet application.
+Private keys that are not stored on the same device as the wallet application.
 
 ---
 
