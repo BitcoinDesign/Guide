@@ -22,93 +22,205 @@ image: https://bitcoin.design/assets/images/guide/onboarding/funding-a-wallet/fu
 
 # Funding a wallet
 
-Common problems faced by new users include buying their first bitcoin and transferring it to a new wallet. For this, most will purchase their first bitcoin from an exchange using a national or fiat currency. This generally involves providing some form of documentation (such as ID) and already having a bank account. After purchasing their bitcoin, they can then send it to an external wallet. While this works, there are better alternatives available. Understanding how your users fund their wallets can help you create more tailored and dedicated UI flows. Certain ways users fund their wallets are outlined below.
+The final stage of onboarding users to a Bitcoin wallet is having them fund it with some bitcoin. Below we explore different design directions your application could take when users fund their wallet for the first time.
 
-### Earning bitcoin
+## With Lightning services
 
-Earning bitcoin through exchange of goods and services is a great option. Some individuals and businesses have already started accepting and even paying employees in bitcoin.
+A Lightning service is a service wallet providers offer users to avoid having them manually manage and configure their wallet. Some of these services, and the user pain points they solve when funding a wallet, are as followed:
 
-> Fun Fact 🏈: Former Seattle Seahawk Russel Okung puts half of his salary in Bitcoin and is now considered one of the highest paid players in the league.
->
-> <cite>As reported by <a href="https://www.nbcsports.com/northwest/seahawks/former-seattle-seahawk-russell-okung-puts-half-salary-bitcoin-considered-highest">NBC Sports</a></cite>
+* Pay-to-open provides on-demand inbound payment channel liquidity so users can fund their wallet with Lightning payments straight away.
+* Swaps so users can open a payment channel and fund their wallet with an on-chain transfer. 
+* Spend-unconfirmed so users can send and receive as soon as their wallet is funded without having to wait for the on-chain transaction to confirm.
 
-{% include fact/pros.html %}
- - Privacy
- - No exchange fees
- - Simplifies onboarding
- {% include fact/close.html %}
+Lighting services have become a common practice to improve the UX of mobile Bitcoin wallets. These services however do come with trade-offs which we outline later in this page. Users should have the option to turn these services off and the trade-offs should be clearly communicated when used. If possible, users should also have the choice to source Lightning services from third party providers, not just your application. For a deeper dive on Lightning services be sure to check out our Lightning services page. 
 
-{% include fact/cons.html %}
- - Managing taxes
- - Difficult to find businesses/individuals willing to pay in bitcoin
- - Limited options for recurring payments
- {% include fact/close.html %}
+### Overview
 
-### Buying bitcoin
+<div class="image-slide-gallery">
 
-<div class="center" markdown="1">
-
-{% include image.html
-   image = "/assets/images/guide/onboarding/funding-a-wallet/buy-bitcoin.png"
-   retina = "/assets/images/guide/onboarding/funding-a-wallet/buy-bitcoin@2x.png"
-   width = 250
-   height = 550
-   alt-text = "Showing recovery phrase one word at a time"
-   caption = "Buy bitcoin screen from the [Wallet UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1228%3A28550)"
-   layout = "float-left-desktop -background -shadow"
+{% include picture.html
+image = "/assets/images/guide/onboarding/funding-a-wallet/lightning-services-landing.png"
+retina = "/assets/images/guide/onboarding/funding-a-wallet/lightning-services-landing@2x.png"
+layout = "shadow"
+caption = "The user will need to fund their wallet before they can use it."
+alt-text = "Screen prompting user will need to fund their wallet before they can use it."
+width = 250
+height = 541
 %}
 
-As noted, most exchanges offer the option to buy bitcoin using fiat currencies. Once purchased, users can transfer those funds to a separate, external wallet. This might confuse new users who don't understand the difference between exchange wallets and personal wallets.
+{% include picture.html
+   image = "/assets/images/guide/onboarding/funding-a-wallet/lightning-services-invoice.png"
+   retina = "/assets/images/guide/onboarding/funding-a-wallet/lightning-services-invoice@2x.png"
+   layout = "shadow"
+   caption = "The first time the user funds their wallet a payment channel will be opened."
+   alt-text = "Screen showing funding the wallet with an invoice."
+   width = 250
+   height = 541
+%}
 
-Bitcoin ATMs are another great option for new users to exchange cash for bitcoin in person. These machines also let users trade their bitcoin for cash, which can be useful if they are somewhere new or foreign.
+{% include picture.html
+   image = "/assets/images/guide/onboarding/funding-a-wallet/lightning-services-address.png"
+   retina = "/assets/images/guide/onboarding/funding-a-wallet/lightning-services-address@2x.png"
+   class = "shadow"
+   caption = "The user should have the option to fund via an address, as they may not have funds in Lightning."
+   alt-text = "Screen showing funding the wallet with an address."
+   width = 250
+   height = 541
+%}
 
-Finally, new users can buy bitcoin directly from other bitcoin users such as friends, other users at a meetup, or intermediary services like [localbitcoins](https://localbitcoins.com/).
+{% include picture.html
+     image = "/assets/images/guide/onboarding/funding-a-wallet/lightning-services-final.png"
+   retina = "/assets/images/guide/onboarding/funding-a-wallet/lightning-services-final@2x.png"
+   class = "shadow"
+   caption = "Once the wallet has been funded it is ready to use."
+   alt-text = "Screen showing the wallet funded and ready to use."
+   width = 250
+   height = 541
+%}
 
 </div>
 
-{% include /tip/open.html label="Tip: Teach users how to transfer" icon="info" color="blue" %}
+The initial screen when the user opens their wallet for the first time should prompt the user to fund their wallet so they can begin using it. Depending on how your application connects to the Bitcoin and Lightning network you may need to notify the user that funds will not appear until these connections are established and syncd. We recommend connecting to the Bitcoin network via Neutrino which offers a simple, private way to source blockchain data.
 
-Users funding new wallets from an exchange could potentially come into contact with unknown concepts, such as a bitcoin address, QR code, or transaction confirmations. This is an excellent opportunity to explain the exchange to personal wallet flow.
+When the user funds their wallet they have two Lightning service enabled options:
 
-{% include /tip/close.html %}
+1. **Fund via an invoice:** This requires the user to have funds in an external Lightning wallet already. Funding with Lightning requires the pay-to-open service to open an on-demand channel with inbound liquidity so the payment can be received. This requires a single on-chain transaction to open a payment channel and is the cheaper funding option.
 
-{% include fact/pros.html %}
-  - An easy and popular way to acquire bitcoin
-{% include fact/close.html %}
+2. **Fund via an address:** The user funds an address that automatically conducts a non-custodial swap and pay-to-open. This caters to a wider user base as not everyone has bitcoin already in Lightning. This requires two on-chain transactions to perform so this is a more expensive funding option.
 
+It should be clear to users that they will be paying extra in fees and what for when they fund their wallet for the first time. 
 
-{% include fact/cons.html %}
- - Managing taxes
- - Difficult to find businesses/individuals willing to pay in bitcoin
- - Hard to set up recurring payments
- - Not private
- {% include fact/close.html %}
+For both of the above options you may want to offer a spend-unconfirmed so users can send and receive instantly. If you do not offer this, you will need to prompt the user that they will have to wait until the channel is confirmed to send and receive payments. Having spend-unconfirmed for small amounts but not large amounts is something your application may want to consider. Users should have the option to trade off security for convenience when the risk-level is appropriate
 
+Offering spend-unconfirmed means the user will have to trust you until the payment channel is confirmed. This trade-off should be communicated to users with the option to disable this feature. 
 
-### Redeem bitcoin using a gift card
+How you choose to present these initial payment requests is up to you. Some applications include it as part of the initial onboarding carousel, on the main landing page of the wallet, or behind a receive button like the example shown above. 
 
-Gift cards allow users to buy and own small amounts of bitcoin without having to sign up for an exchange. These cards are sometimes available from local retailers.
+To prevent failed funding attempts you may want to offer payment forwarding so the user does not need to have their mobile application open to receive payments. Users should have the option to turn off payment forwarding so they can only receive payments when online. Phoenix is an example of Bitcoin wallet that uses payment forwarding. 
 
-Users can get set up in minutes using this technique.
+Payment forwarding comes with privacy implications as you as the forwarding peer knows the destination and amount. Having your application connect over Tor and/or use trampoline nodes may prevent this. Trade-offs should be clearly communicated to the user.
+
+Once funded, if you have not prompted users to backup their wallet prior to funding it’s important you prompt them to do so at this stage. This is explained more in depth in the backing up a wallet section.
+
+## Without Lightning services
+
+It is still possible to have great funding UX without Lightning services. Funding a wallet without Lightning services is a more manual and slow process. Meaning there is more room for error and confusion. However, with good design and clear communication at each step this can be avoided. 
+
+### Overview
+
+<div class="image-slide-gallery">
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/funding-a-wallet/bitcoin-gift-cards.png"
-   retina = "/assets/images/guide/onboarding/funding-a-wallet/bitcoin-gift-cards@2x.png"
-   alt-text = "Bitcoin gift cards"
-   caption = "Bitcoin gift card concept"
-   width = 800
-   height = 500
+image = "/assets/images/guide/onboarding/funding-a-wallet/without-services-landing.png"
+retina = "/assets/images/guide/onboarding/funding-a-wallet/without-services-landing@2x.png"
+layout = "shadow"
+caption = "The user will need to fund their wallet before they can use it."
+alt-text = "Screen prompting user will need to fund their wallet before they can use it."
+width = 250
+height = 541
 %}
 
-{% include fact/pros.html %}
- - Gets user comfortable with scanning QR codes
- - Simplifies onboarding
- - No compromise on privacy
-{% include fact/close.html %}
+{% include picture.html
+   image = "/assets/images/guide/onboarding/funding-a-wallet/without-services-address.png"
+   retina = "/assets/images/guide/onboarding/funding-a-wallet/without-services-address@2x.png"
+   layout = "shadow"
+   caption = "The first time the user funds their wallet a payment channel will  be automatically opened."
+   alt-text = "Screen showing funding the wallet with an address."
+   width = 250
+   height = 541
+%}
 
-{% include fact/cons.html %}
- - Low retail availability
-{% include fact/close.html %}
+{% include picture.html
+   image = "/assets/images/guide/onboarding/funding-a-wallet/without-services-channel.png"
+   retina = "/assets/images/guide/onboarding/funding-a-wallet/without-services-channel@2x.png"
+   class = "shadow"
+   caption = "Once the wallet on-chain funds are confirmed, a payment channel is opened."
+   alt-text = "Screen showing a channel being ready to be opened."
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
+     image = "/assets/images/guide/onboarding/funding-a-wallet/without-services-final.png"
+   retina = "/assets/images/guide/onboarding/funding-a-wallet/without-services-final@2x.png"
+   class = "shadow"
+   caption = "Once a channel has been opened the wallet is ready to use."
+   alt-text = "Screen showing the wallet funded and ready to use."
+   width = 250
+   height = 541
+%}
+
+</div>
+
+The initial screen when the user opens their wallet for the first time should prompt the user to fund their wallet so they can begin using it. Depending on how your application connects to the Bitcoin and Lightning network you may need to notify the user that funds will not appear until these connections are established and syncd. We recommend connecting to the Bitcoin network via Neutrino which offers a simple, private way to source blockchain data.
+
+When the user funds their wallet without Lightning services the user needs to send sats on-chain first then open a payment channel with those sats. The user should be prompted that they should send enough sats to cover the transaction fee for opening a payment channel. 
+
+For a simplified UX, the channel open could be initiated as soon as on-chain funds are confirmed so users don’t have to manually open a channel. Your wallet application could have a node that automatically opens a channel with the user. Having your application as a dedicated peer means users are less likely to have channels closed on them for inactivity. A wallet that has automatic channel opens to their own dedicated node is [Blixt](https://blixtwallet.github.io/).
+
+### Manual channel open
+
+<div class="image-slide-gallery">
+
+{% include picture.html
+image = "/assets/images/guide/onboarding/funding-a-wallet/manual-channel.png"
+retina = "/assets/images/guide/onboarding/funding-a-wallet/manual-channel@2x.png"
+layout = "shadow"
+caption = "Users may want to manually open a channel with a peer of their choice."
+alt-text = "Screen prompting user to manually open a channel."
+width = 250
+height = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/onboarding/funding-a-wallet/manual-channel-directory.png"
+   retina = "/assets/images/guide/onboarding/funding-a-wallet/manual-channel-directory@2x.png"
+   layout = "shadow"
+   caption = "When manually opening a channel your application should help users find reliable peers."
+   alt-text = "Screen showing directory of services to find channel peers."
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/onboarding/funding-a-wallet/manual-channel-amboss.png"
+   retina = "/assets/images/guide/onboarding/funding-a-wallet/manual-channel-amboss@2x.png"
+   class = "shadow"
+   caption = "A peer found by visiting amboss.com. The user copys the peers address to open a channel with them."
+   alt-text = "Screen showing a peer selected on Amboss."
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
+     image = "/assets/images/guide/onboarding/funding-a-wallet/manual-channel-channelopen.png"
+   retina = "/assets/images/guide/onboarding/funding-a-wallet/manual-channel-channelopen@2x.png"
+   class = "shadow"
+   caption = "The user opens a channel with their selected peer."
+   alt-text = "Screen showing user manually opening a channel."
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
+     image = "/assets/images/guide/onboarding/funding-a-wallet/manual-channel-final.png"
+   retina = "/assets/images/guide/onboarding/funding-a-wallet/manual-channel-final@2x.png"
+   class = "shadow"
+   caption = "Once a channel has been opened the wallet is ready to use."
+   alt-text = "Screen showing the wallet funded and ready to use."
+   width = 250
+   height = 541
+%}
+
+</div>
+
+Alternatively users could manually source their own peers to open channels with. You may want to offer a directory to assist users with finding peers.
+
+Opening channels without Lightning services like pay-to-open means the user will have no inbound liquidity to receive payments. Users will only be able to send initially and will only be able to receive once they have sent some payments. This should be clearly communicated to the user. We will explore this in more detail in the payments chapter. 
+
+You may want to offer services in your directory like LNBig that opens channels with inbound liquidity for users so they can receive instantly. 
+
+Once funded, if you have not prompted users to backup their wallet prior to funding it’s important you prompt them to do so once it is. This is explained more in depth in the backing up a wallet section.
 
 ---
 
