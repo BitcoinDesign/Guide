@@ -98,7 +98,7 @@ Therefore, owning a bitcoin means being in control of one or more addresses that
    layout = "float-right-desktop"
 %}
 
-Just as the internet allows computers to exchange information, the Bitcoin network enables participants to exchange value. By running the [Bitcoin software]({{ '/guide/getting-started/software/#nodes' | relative_url }}), you are running a node connected to the Bitcoin network. Some nodes use [powerful computers]({{ '/guide/getting-started/hardware/#nodes' | relative_url }}) that compete to [verify transactions]({{'/guide/payments/transactions/' | relative_url }}) and update the blockchain for a reward. These nodes are called miners. Others are run by businesses like exchanges or merchants. They are also used by individuals making payments from mobile applications. Since [January 3rd, 2009](https://blockstream.info/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f){:target="_blank"}, every transfer of bitcoin has been permanently recorded in its shared global ledger. 
+Just as the internet allows computers to exchange information, the Bitcoin network enables participants to exchange value. By running the [Bitcoin software]({{ '/guide/getting-started/software/#nodes' | relative_url }}), you are running a node connected to the Bitcoin network. Some nodes use [powerful computers]({{ '/guide/getting-started/hardware/#nodes' | relative_url }}) that compete to [verify transactions]({{'/guide/payments/transactions/' | relative_url }}) and update the blockchain for a reward. These nodes are called miners. Others are run by businesses like exchanges or merchants. They are also used by individuals making payments from mobile applications. Since [January 3rd, 2009](https://blockstream.info/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f){:target="_blank"}, every transfer of bitcoin has been permanently recorded in its shared global ledger.
 
 </div>
 
@@ -151,7 +151,7 @@ Once a transaction is in a block that the network has accepted, it is considered
    layout = "float-right-desktop"
 %}
 
-While miners check that the transactions included in the block are valid, they must also be kept accountable that the information they are submitting is correct. After a miner constructs a block transactions, it must race against other miners to solve a cryptographic puzzle, which incentivizes them to only include valid transactions in the block. This process is called Proof of Work, and it is fundamental to the security of the blockchain. The first miner to solve the puzzle and submit a valid block to the network will earn all the fees from the transactions in the block and a block reward as compensation; however, if they submit an invalid block, it will be rejected by the network.
+While miners check that the transactions included in the block are valid, they must also be kept accountable that the information they are submitting is correct. After a miner constructs a block transactions, it must race against other miners to solve a cryptographic puzzle, which incentivizes them to only include valid transactions in the block. This process is called Proof of Work, and it is fundamental to the security of the blockchain. The first miner to solve the puzzle and submit a valid block to the network will earn all the fees from the transactions in the block and a [block reward]({{ '/guide/glossary/#block-reward' | relative_url }}) as compensation; however, if they submit an invalid block, it will be rejected by the network.
 
 We also call the Bitcoin blockchain "base layer" as it provides strong security, and is the foundation for other things to be built on top.
 
@@ -190,7 +190,7 @@ To scale as a currency of the internet and meet the demands of the global econom
    layout = "float-right-desktop"
 %}
 
-Transactions get verified and stored by the entire network of nodes and miners who must constantly verify, exchange, and secure transactions they receive from wallets and other services. 
+Transactions get verified and stored by the entire network of nodes and miners who must constantly verify, exchange, and secure transactions they receive from wallets and other services.
 
 While creating a transaction to move your funds from one address to another is common, setting up more complex spending rules is also possible. Such rules could require multiple parties to agree before moving funds, how much each is entitled to, and even the amount of time that must pass before a transfer. These transaction features make Bitcoin customizable so that it's possible to build other applications and even networks on top of the base layer.
 
@@ -270,7 +270,7 @@ To transfer bitcoin, the recipient needs to provide the sender with the destinat
 
 To make a Lightning payment, you don't need to open a channel with everyone you transact with. Lightning nodes talk to one another and declare their payment channels. It's typical for nodes to have multiple channels to access different parts of the network for better routing. With an invoice, the sender finds a path to the receiver, and the payment hops from channel to channel until it reaches the destination.
 
-<!-- 
+<!--
    While the blockchain the transaction is broadcasted to a node which propogates it to the rest of the network to be incldued in a block, on lightning network a payment is routed through a set of predefined nodes and channels.
 
    ## actions
@@ -300,11 +300,11 @@ To make a Lightning payment, you don't need to open a channel with everyone you 
    layout = "float-right-desktop"
 %}
 
-Just like a key for a door, a private key gives you access to your bitcoin. Private keys authorize the movement of bitcoin on the base layer as well as Lightning. 
+Just like a key for a door, a private key gives you access to your bitcoin. Private keys authorize the movement of bitcoin on the base layer as well as Lightning.
 
 Lightning node private keys are referred to as hot as they are stored on a device that is connected to the internet. This is not typically advised for storing large amounts as it is possible for a remote attacker to get access to that device. A more secure way to store private keys is cold storage, which is not connected to the internet.
 
-**More info** 
+**More info**
 - [Private key management]({{'/guide/private-key-management/introduction/' | relative_url }}) and [public key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography){:target="_blank"}
 </div>
 
