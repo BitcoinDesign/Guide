@@ -9,6 +9,14 @@ main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/onboarding/funding-a-wallet/funding-a-wallet-preview.png
 ---
 
+<!--
+
+Illustration source
+
+- https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=201%3A687
+
+-->
+
 {% include picture.html
    image = "/assets/images/guide/onboarding/funding-a-wallet/funding-a-wallet.png"
    retina = "/assets/images/guide/onboarding/funding-a-wallet/funding-a-wallet@2x.png"
