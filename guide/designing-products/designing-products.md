@@ -88,6 +88,12 @@ Get to know the points of interaction and overlap connecting payment links, wall
 
 ---
 
+### [Lightning services]({{ '/guide/designing-products/lightning-services/' | relative_url }})
+
+Lightning services and their role in Bitcoin applications.
+
+---
+
 ### [Design resources]({{ '/guide/designing-products/design-resources/' | relative_url }})
 
 Shared design source files and a suggested process for collaborating on creative work.

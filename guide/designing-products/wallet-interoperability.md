@@ -231,11 +231,11 @@ Your application should support constructing and managing transaction files, als
 
 ---
 
-To kickstart your design work, take a look at [design resources]({{ '/guide/designing-products/design-resources/' | relative_url }}).
+Next we will go over additional [Lightning services]({{ '/guide/designing-products/lightning-services/' | relative_url }}) you can offer in your Bitcoin applications to improve the overall user expereience.
 
 {% include next-previous.html
    previousUrl = "/guide/designing-products/common-user-flows/"
    previousName = "Common user flows"
-   nextUrl = "/guide/designing-products/design-resources/"
-   nextName = "Design resources"
+   nextUrl = "/guide/designing-products/lightning-services/"
+   nextName = "Lightning services"
 %}

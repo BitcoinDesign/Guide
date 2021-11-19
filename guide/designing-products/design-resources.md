@@ -2,7 +2,7 @@
 layout: guide
 title: Design resources
 description: Design files by and for the Bitcoin Design Community
-nav_order: 10
+nav_order: 11
 parent: Designing Bitcoin products
 permalink: /guide/designing-products/design-resources/
 main_classes: -no-top-padding
@@ -125,8 +125,8 @@ The right-hand panel has an “Inspect” tab that is a great companion for deve
 That's it for this section. Keep reading to learn about [onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}).
 
 {% include next-previous.html
-   previousUrl = "/guide/designing-products/wallet-interoperability/"
-   previousName = "Wallet interoperability"
+   previousUrl = "/guide/designing-products/lightning-services/"
+   previousName = "Lightning services"
    nextUrl = "/guide/onboarding/introduction/"
    nextName = "Onboarding"
 %}
