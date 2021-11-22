@@ -34,7 +34,7 @@ The final stage of onboarding users to a Bitcoin wallet is having them fund it w
 
 ## With Lightning services
 
-A Lightning service is a service wallet providers offer users to avoid having them manually manage and configure their wallet. Some of these services, and the user pain points they solve when funding a wallet, are as followed:
+A "Lightning service" is a service wallet providers offer users to avoid having them manage and configure their wallets manually. Some of these services, and the user pain points they solve when funding a wallet, are as followed:
 
 * Pay-to-open provides on-demand inbound payment channel liquidity so users can fund their wallet with Lightning payments straight away.
 * Swaps so users can open a payment channel and fund their wallet with an on-chain transfer. 
