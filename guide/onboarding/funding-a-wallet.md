@@ -90,7 +90,7 @@ height = 541
 
 The initial screen when the user opens their wallet for the first time should prompt the user to fund their wallet so they can begin using it. Depending on how your application connects to the Bitcoin and Lightning network you may need to notify the user that funds will not appear until these connections are established and syncd. We recommend connecting to the Bitcoin network via Neutrino which offers a simple, private way to source blockchain data.
 
-When the user funds their wallet they have two Lightning service enabled options:
+When the user funds their wallet, they have two Lightning service enabled options:
 
 1. **Fund via an invoice:** This requires the user to have funds in an external Lightning wallet already. Funding with Lightning requires the pay-to-open service to open an on-demand channel with inbound liquidity so the payment can be received. This requires a single on-chain transaction to open a payment channel and is the cheaper funding option.
 
