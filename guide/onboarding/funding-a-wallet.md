@@ -228,7 +228,7 @@ Opening channels without Lightning services like pay-to-open means the user will
 
 You may want to offer services in your directory like LNBig that opens channels with inbound liquidity for users so they can receive instantly. 
 
-Once funded, if you have not prompted users to backup their wallet prior to funding it’s important you prompt them to do so once it is. This is explained more in depth in the backing up a wallet section.
+Once funded, if you have not prompted the user to backup their wallet yet, it’s important you do so at this stage. Backups are explained more in-depth in the [backing up a wallet section]({{'/guide/onboarding/backing-up-a-wallet/' | relative_url}}).
 
 ---
 
