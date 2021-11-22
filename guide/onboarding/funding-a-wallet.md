@@ -94,7 +94,7 @@ When the user funds their wallet, they have two Lightning service enabled option
 
 1. **Fund via an invoice:** To fund via an invoice, the user must already have funds in another Lightning wallet. A pay-to-open service is used to open an on-demand channel to the user with inbound liquidity to receive the payment. Funding via an invoice requires a single on-chain transaction, so it is the cheaper funding option.
 
-2. **Fund via an address:** The user funds an address that automatically conducts a non-custodial swap and pay-to-open. This caters to a wider user base as not everyone has bitcoin already in Lightning. This requires two on-chain transactions to perform so this is a more expensive funding option.
+2. **Fund via an address:** To fund via an address, the user sends bitcoin to an address that automatically conducts a non-custodial swap and pay-to-open. This caters to a wider user base as not everyone has bitcoin already in Lightning. Funding via an address requires two on-chain transactions to perform, so it is a more expensive funding option.
 
 It should be clear to users that they will be paying extra in fees and what for when they fund their wallet for the first time. 
 
