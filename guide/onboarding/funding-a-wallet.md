@@ -160,7 +160,7 @@ height = 541
 
 </div>
 
-The initial screen when the user opens their wallet for the first time should prompt the user to fund their wallet so they can begin using it. Depending on how your application connects to the Bitcoin and Lightning network you may need to notify the user that funds will not appear until these connections are established and syncd. We recommend connecting to the Bitcoin network via Neutrino which offers a simple, private way to source blockchain data.
+The initial screen when the user opens their wallet for the first time should prompt the user to fund their wallet so they can begin using it. Depending on how your application connects to the Bitcoin and Lightning network, you may need to notify the user that funds will not appear until these connections are established and synced. We recommend connecting to the Bitcoin network via Neutrino which, offers a simple, private way to source blockchain data.
 
 When the user funds their wallet without Lightning services the user needs to send sats on-chain first then open a payment channel with those sats. The user should be prompted that they should send enough sats to cover the transaction fee for opening a payment channel. 
 
