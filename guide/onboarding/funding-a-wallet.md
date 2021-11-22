@@ -164,7 +164,7 @@ The initial screen when the user opens their wallet for the first time should pr
 
 When the user funds their wallet without Lightning services, they need to send sats on-chain first and then use the sats to open a payment channel. They should be prompted to send enough sats to cover the transaction fee for opening a payment channel. 
 
-For a simplified UX, the channel open could be initiated as soon as on-chain funds are confirmed so users don’t have to manually open a channel. Your wallet application could have a node that automatically opens a channel with the user. Having your application as a dedicated peer means users are less likely to have channels closed on them for inactivity. A wallet that has automatic channel opens to their own dedicated node is [Blixt](https://blixtwallet.github.io/).
+For a simplified UX, the channel open could be initiated as soon as on-chain funds are confirmed so users don’t have to manually open a channel. Your wallet application could have a node that automatically opens a channel with the user. Having your application as a dedicated peer means users are less likely to have channels closed on them for inactivity. [Blixt](https://blixtwallet.github.io/) is an example of a wallet that has automatic channel opens to their own dedicated node.
 
 ### Manual channel open
 
