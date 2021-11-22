@@ -112,7 +112,7 @@ Once funded, if you have not prompted users to backup their wallet prior to fund
 
 ## Without Lightning services
 
-It is still possible to have great funding UX without Lightning services. Funding a wallet without Lightning services is a more manual and slow process. Meaning there is more room for error and confusion. However, with good design and clear communication at each step this can be avoided. 
+It is still possible to have great funding UX without Lightning services. Funding a wallet without Lightning services is a more manual and slow process, leaving more room for error and confusion. This can be avoided with good design and clear communication at each step.
 
 ### Overview
 
