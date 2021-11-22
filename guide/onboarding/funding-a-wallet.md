@@ -106,7 +106,7 @@ How you choose to present these initial payment requests is up to you. Some appl
 
 To prevent failed funding attempts you may want to offer payment forwarding so the user does not need to have their mobile application open to receive payments. Users should have the option to turn off payment forwarding so they can only receive payments when online. Phoenix is an example of Bitcoin wallet that uses payment forwarding. 
 
-Payment forwarding comes with privacy implications as you as the forwarding peer knows the destination and amount. Having your application connect over Tor and/or use trampoline nodes may prevent this. Trade-offs should be clearly communicated to the user.
+Payment forwarding comes with privacy implications: as the forwarding peer, you know the destination and amount. Having your application connect over Tor or use trampoline nodes may prevent this. You should clearly communicate trade-offs to the user.
 
 Once funded, if you have not prompted users to backup their wallet prior to funding it’s important you prompt them to do so at this stage. This is explained more in depth in the backing up a wallet section.
 
