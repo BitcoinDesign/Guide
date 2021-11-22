@@ -100,7 +100,7 @@ Now let's dive in and look at the various schemes that might be suitable for a p
    image = "/assets/images/guide/private-key-management/schemes/personal-schemes.jpg"
    retina = "/assets/images/guide/private-key-management/schemes/personal-schemes@2x.jpg"
    alt-text = ""
-   caption = "Cloud backup, manual backup , signing-device and multi-key."
+   caption = "Automatic cloud backup, manual backup , signing-device and multi-key."
    width = 2012
    height = 400
 %}
@@ -120,11 +120,11 @@ The use cases for shared schemes include spouses managing a joint account, group
 
 ---
 
-Let's start by looking at the [cloud backup](/guide/private-key-management/cloud-backup/) scheme.
+Let's start by looking at the [automatic cloud backup](/guide/private-key-management/cloud-backup/) scheme.
 
 {% include next-previous.html
    previousUrl = "/guide/private-key-management/introduction/"
    previousName = "Private key management"
    nextUrl = "/guide/private-key-management/cloud-backup/"
-   nextName = "Cloud backup"
+   nextName = "Automatic cloud backup"
 %}
