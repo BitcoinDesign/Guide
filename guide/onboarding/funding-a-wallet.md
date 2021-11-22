@@ -108,7 +108,7 @@ To prevent failed funding attempts you may want to offer payment forwarding so t
 
 Payment forwarding comes with privacy implications: as the forwarding peer, you know the destination and amount. Having your application connect over Tor or use trampoline nodes may prevent this. You should clearly communicate trade-offs to the user.
 
-Once funded, if you have not prompted users to backup their wallet prior to funding it’s important you prompt them to do so at this stage. This is explained more in depth in the backing up a wallet section.
+Once funded, if you have not prompted the user to backup their wallet yet, it’s important you do so at this stage. Backups are explained more in-depth in the [backing up a wallet section]({{'/guide/onboarding/backing-up-a-wallet/' | relative_url}}).
 
 ## Without Lightning services
 
