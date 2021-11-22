@@ -88,7 +88,7 @@ height = 541
 
 </div>
 
-The initial screen when the user opens their wallet for the first time should prompt the user to fund their wallet so they can begin using it. Depending on how your application connects to the Bitcoin and Lightning network you may need to notify the user that funds will not appear until these connections are established and syncd. We recommend connecting to the Bitcoin network via Neutrino which offers a simple, private way to source blockchain data.
+The initial screen when the user opens their wallet for the first time should prompt the user to fund their wallet so they can begin using it. Depending on how your application connects to the Bitcoin and Lightning network you may need to notify the user that funds will not appear until these connections are established and syncd. Common ways applications connect to the Bitcoin network is using [compact block filters (BIP 157/158)]({{'/guide/glossary/node/#light-nodes' | relative_url}}) or simple payment verification (SPV) to query and download block headers. Block filters offer more privacy but take some initial time to sync whilst an SPV does not offer any privacy benefits to users but is ready to use instantly.
 
 When the user funds their wallet, they have two Lightning service enabled options:
 
@@ -160,7 +160,7 @@ height = 541
 
 </div>
 
-The initial screen when the user opens their wallet for the first time should prompt the user to fund their wallet so they can begin using it. Depending on how your application connects to the Bitcoin and Lightning network, you may need to notify the user that funds will not appear until these connections are established and synced. We recommend connecting to the Bitcoin network via Neutrino which, offers a simple, private way to source blockchain data.
+The initial screen when the user opens their wallet for the first time should prompt the user to fund their wallet so they can begin using it. Depending on how your application connects to the Bitcoin and Lightning network, you may need to notify the user that funds will not appear until these connections are established and synced. Common ways applications connect to the Bitcoin network is using [compact block filters (BIP 157/158)]({{'/guide/glossary/node/#light-nodes' | relative_url}}) or simple payment verification (SPV) to query and download block headers. Block filters offer more privacy but take some initial time to sync whilst an SPV does not offer any privacy benefits to users but is ready to use instantly.
 
 When the user funds their wallet without Lightning services, they need to send sats on-chain first and then use the sats to open a payment channel. They should be prompted to send enough sats to cover the transaction fee for opening a payment channel. 
 
