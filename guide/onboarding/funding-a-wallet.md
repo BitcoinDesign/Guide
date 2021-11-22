@@ -162,7 +162,7 @@ height = 541
 
 The initial screen when the user opens their wallet for the first time should prompt the user to fund their wallet so they can begin using it. Depending on how your application connects to the Bitcoin and Lightning network, you may need to notify the user that funds will not appear until these connections are established and synced. We recommend connecting to the Bitcoin network via Neutrino which, offers a simple, private way to source blockchain data.
 
-When the user funds their wallet without Lightning services the user needs to send sats on-chain first then open a payment channel with those sats. The user should be prompted that they should send enough sats to cover the transaction fee for opening a payment channel. 
+When the user funds their wallet without Lightning services, they need to send sats on-chain first and then use the sats to open a payment channel. They should be prompted to send enough sats to cover the transaction fee for opening a payment channel. 
 
 For a simplified UX, the channel open could be initiated as soon as on-chain funds are confirmed so users don’t have to manually open a channel. Your wallet application could have a node that automatically opens a channel with the user. Having your application as a dedicated peer means users are less likely to have channels closed on them for inactivity. A wallet that has automatic channel opens to their own dedicated node is [Blixt](https://blixtwallet.github.io/).
 
