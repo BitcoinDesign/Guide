@@ -30,7 +30,7 @@ Illustration source
 
 # Funding a wallet
 
-The final stage of onboarding users to a Bitcoin wallet is having them fund it with some bitcoin. Below we explore different design directions your application could take when users fund their wallet for the first time.
+The next stage of onboarding users to a Bitcoin wallet is having them fund it with some bitcoin. Below we explore different design directions your application could take when users fund their wallet for the first time.
 
 ## With Lightning services
 
