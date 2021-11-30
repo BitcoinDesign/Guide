@@ -52,6 +52,12 @@ With most implementations so far, the private key's location will be the keychai
 
 This makes the backup accessible by the user on a new device, should they lose the original, but only accessible by someone that can log into the user’s Apple or Google account.
 
+{% include tip/open.html label="Encrypted Cloud Backups" %}
+
+When encrypting the user's private key for a cloud backup, one option would be for the user to choose an encryption passphrase. Another would be to have a third-party hold the encryption key so that neither the cloud provider nor the encryption key holder would have access to all the information to use the private key. See [this article](https://blog.keys.casa/casa-keymaster-security-mobile-key-overview/) for an example.
+
+{% include tip/close.html %}
+
 To see what a user experience with this scheme could look like, see the [daily spending case study]({{ '/guide/case-studies/cloud-backup/' | relative_url }}).
 
 {% include fact/pros.html %}
@@ -89,12 +95,6 @@ To see what a user experience with this scheme could look like, see the [daily s
 - [Photon SDK](https://photonsdk.org) - for use by other wallets, in development
 - [Casa](https://keys.casa)
 - [Pine](https://pine.pm ) - Lightning, beta
-
-{% include tip/open.html label="Encrypted Cloud Backups" %}
-
-You can provide an extra layer of security for the user's private key by encrypting it before sending it to the cloud. One option would be for the user to choose an encryption passphrase. Another would be to have a third-party hold the encryption key so that neither the cloud provider nor the encryption key holder would have access to all the information to use the private key. See [this article](https://blog.keys.casa/casa-keymaster-security-mobile-key-overview/) for an example.
-
-{% include tip/close.html %}
 
 ---
 
