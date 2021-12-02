@@ -109,7 +109,7 @@ Now let's dive in and look at the various schemes that might be suitable for a p
    image = "/assets/images/guide/private-key-management/schemes/personal-schemes.jpg"
    retina = "/assets/images/guide/private-key-management/schemes/personal-schemes@2x.jpg"
    alt-text = ""
-   caption = "Cloud backup, manual backup , signing-device and multi-key."
+   caption = "Automatic cloud backup, manual backup, signing-device and multi-key."
    width = 2012
    height = 400
 %}
