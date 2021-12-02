@@ -24,9 +24,8 @@ main_classes: -no-top-padding
 
 Coin selection is the process of choosing which [UTXOs](https://bitcoin.design/guide/glossary/#unspent-transaction-output-utxo) (or “coins”) to use as inputs when making an on-chain bitcoin payment. For payments on the Lightning network, coin selection is only relevant for the transaction that opens the lightning channel.
 
-There are two types of coin selection strategies that are used in Bitcoin applications:
-1. [**Automatic Coin Selection**](#automatic-coin-selection) (wallet is delegated to control coin selection on behalf of user)
-2. [**Manual Coin Selection**](#manual-coin-selection-aka-coin-control) (user controls coin selection)
+Coin selection can be [**automatic**](#automatic-coin-selection), and handled by the wallet application. Or it can be [**manual**](#manual-coin-selection-aka-coin-control), letting the user control which coins are used. strategies that are used in Bitcoin applications:
+
 {% include picture.html
    image = "/assets/images/guide/payments/coin-selection/funding-tx.jpg"
    retina = "/assets/images/guide/payments/coin-selection/funding-tx@2x.jpg"
