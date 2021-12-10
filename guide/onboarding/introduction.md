@@ -49,15 +49,15 @@ An overview of common tasks when using a wallet application for the first time.
 
 ---
 
-### [Backing up a wallet]({{ 'guide/onboarding/backing-up-a-wallet' | relative_url }})
+### [Funding a wallet]({{ 'guide/onboarding/funding-a-wallet' | relative_url }})
 
-An overview of the tradeoffs between using [manual backup]({{ 'guide/onboarding/backing-up-a-wallet/manual-backup' | relative_url }}) vs [automatic cloud backup]({{ 'guide/onboarding/backing-up-a-wallet/cloud-backup' | relative_url }}).
+An overview of how users are likely to fund their wallets
 
 ---
 
-### [Restoring a wallet]({{ 'guide/onboarding/restoring-a-wallet' | relative_url }})
+### [Backing up a wallet]({{ 'guide/onboarding/backing-up-a-wallet' | relative_url }})
 
-What options to consider if a user has lost their device, had it stolen or deleted and redownloaded a particular wallet application.
+An overview of the tradeoffs between using [manual backup]({{ 'guide/onboarding/backing-up-a-wallet/manual-backup' | relative_url }}) vs [automatic cloud backup]({{ 'guide/onboarding/backing-up-a-wallet/cloud-backup' | relative_url }}).
 
 ---
 
@@ -67,9 +67,9 @@ An overview of how to add extra layers of securtiy to protect sensitive user dat
 
 ---
 
-### [Funding a wallet]({{ 'guide/onboarding/funding-a-wallet' | relative_url }})
+### [Restoring a wallet]({{ 'guide/onboarding/restoring-a-wallet' | relative_url }})
 
-An overview of how users are likely to fund their wallets
+What options to consider if a user has lost their device, had it stolen or deleted and redownloaded a particular wallet application.
 
 ---
 
