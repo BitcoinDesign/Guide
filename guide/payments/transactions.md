@@ -32,18 +32,67 @@ transactions, it's important for designers to understand these differences when 
 Illustration sources
 
 - https://www.figma.com/file/Da2FpXLqY2BX7WN4mQFNZo/Inputs-and-Outputs-Christoph-Copy?node-id=104%3A138
+- https://www.figma.com/file/GPyzunxlHOPXILudhrkZRi/Bitcoin-Transactions-and-Payments-Charts?node-id=0%3A1
 
 -->
 
 # Transactions overview
 
-This page is meant to help you with understanding how bitcoin transactions get created and processed by the Bitcoin network. Bitcoin is a peer-to-peer push-payment system. This means that you can send, or push, bitcoin to any address at your will, at any time, without passing through a trusted third party.
+This page is meant to help you with understanding how bitcoin transactions get created and processed by the Bitcoin and Lightning networks. Bitcoin is a peer-to-peer push-payment system. This means that you can send, or push, bitcoin at any time, without passing through a trusted third party.
 
-This is radically different from the traditional financial system, where it is often possible for others to *pull* and withdraw money from your account (utility companies, financial institutions, merchants, etc.). When you make a payment, it will pass through systems that might delay, control or block the payment.
+This is radically different from the traditional financial system, where it is often possible for others to pull and withdraw money from your account (utility companies, financial institutions, merchants, etc.). When you make a payment, it will pass through systems that might delay, control or block the payment.
 
-## Transaction lifecycle
+## Comparing Bitcoin and Lightning
 
-Let's lay out the entire payment process.
+| Bitcoin          | Lightning |
+|-------------|------------------|
+| Users send *[transactions]({{'/guide/glossary/#transaction' | relative_url}})*. | Users send *[payments]({{'/guide/glossary/#payment' | relative_url}})*.  |
+| Transactions take 10 minutes to an hour for settlement. | Payments are settled almost instantly.  |
+| A valid transaction will always be mined, but may be delayed if the fee is too low. | Successful payment depends on Lightning network liquidity and finding a path to the recipient. |
+| Bitcoin is typically better for larger amounts of funds and less frequent transactions. | Lightning is typically better for smaller amounts of funds and more frequent payments. |
+
+For a more detailed look, see the [Technology Primer]({{'/guide/getting-started/technology-primer/' | relative_url}}).
+
+## Lightning Payment Lifecycle
+
+For most payments, the Lightning network is the best option, as it will enable the recipient to receive their bitcoin quicker and the sender to pay less in fees.
+
+{% include picture.html
+image = "/assets/images/guide/payments/transactions/payment-lifecycle.svg"
+mobile = "/assets/images/guide/payments/transactions/payment-lifecycle-mobile.svg"
+alt-text = "Flow chart of the process of a Lightning payment from invoice creation through successful payment"
+width = 1300
+height = 240
+layout = "full-width"
+%}
+
+### 1. Create invoice
+
+To make a payment, the sender requires an invoice created by the recipient. The recipient's wallet application creates a preimage, or payment secret, which is then used to create an invoice for one-time use. The sender can share the invoice with the recipient as a QR code, over NFC, in plain text, or as a payment link.
+
+### 2. Confirm payment
+
+The sender loads the invoice into their wallet application. After reviewing that the amount looks correct and the fee estimate is satisfactory, the sender confirms that they would like to make the payment.
+
+### 3. Pathfinding & Routing
+
+The wallet application attempts to route the payment to the recipient. In order to do this, it must attempt to construct a path through the Lightning network. Pathfinding is a complex, probabilistic process, which means that the routing fees shown in the prior step are only an estimate.
+
+If the payment along a particular path fails, the wallet application will repeatedly attempt the payment again with a different path until the payment succeeds.
+
+### 4. Receive payment and reveal preimage
+
+The payment reaches the intended recipient. The recipient's wallet application reveals the preimage to the previous node in the successful path. The preimage is passed in reverse through the path by every node in the path.
+
+### 5. Payment complete
+
+Once the preimage is passed all the way to the sender's wallet application, the sender's wallet application can consider the payment to be complete.
+
+This sounds like a complicated process; however, steps 3 - 5 are handled by software, and they happen very quickly. Users are not typically exposed to these details.
+
+## Bitcoin Transaction lifecycle
+
+Some transactions are better accomplished on-chain. For example, the user's wallet application may have difficulty finding a suitable path to route a larger payment, or the user may prefer to send their funds to a [multi-sig storage vault]({{'/guide/case-studies/savings-account/' | relative_url}}).
 
 {% include picture.html
    image = "/assets/images/guide/payments/transactions/tx-lifecycle-simplified.svg"
@@ -54,26 +103,26 @@ Let's lay out the entire payment process.
    layout = "full-width"
 %}
 
-#### 1. Get recipient address
+### 1. Get recipient address
 The sender needs a valid address for the payment to be sent to. This can be shared by the recipient as a QR code, in plain text, or as a payment link.
 
-#### 2. Creation
+### 2. Creation
 The wallet application guides the sender through collecting the required information (address and amount) and any optional configurations (which coins to send, fee options) in order to create a transaction.
 
-#### 3. Signing
+### 3. Signing
 The transaction needs to be signed by the [private key(s)]({{ '/guide/glossary/#private-key' | relative_url }}) of the input [address(es)]({{ '/guide/glossary/address' | relative_url }}) to be valid. The signing is often done in the same application after the transaction has created and configured, but this does not have to be the case.
 
-#### 4. Broadcasting
+### 4. Broadcasting
 The transaction is broadcasted to a Bitcoin node, normally the one the wallet is connected to.
 
-#### 5. Validation
+### 5. Validation
 The receiving node checks that the transaction is valid. In practice, this means confirming that it was signed by the private key of the relevant address.
 
-#### 6. Propagation
+### 6. Propagation
 Once validated, the node passes the transaction on to other nodes in the network. The transaction is now in the *memory pool*, and remains there until it is mined. At this stage, the transaction has 0 confirmations.
 <!-- indicate that a tx with a fee rate that is lower than the current normal can be stuck and even forgotten by miners if it remains in the mempool for too long -->
 
-#### 7. Confirmations
+### 7. Confirmations
 Given that you know [how transactions are confirmed]({{ '/guide/getting-started/technology-primer/#how-is-the-blockchain-secured' | relative_url }}), lets look at how the number of confirmations affects the payment settlement.
 
 Not every miner creates the new block with the same transactions, so some nodes may have a different version of the blockchain than others for a short time. The Bitcoin protocol's main function is to bring all nodes to the same version of the blockchain. Through a process called chain reorganization, nodes remove their incorrect block and update with the winning block as determined by the majority of other nodes.
