@@ -55,13 +55,13 @@ imagesInfo:
 imagesProcessing:
     - file: processing
       alt:
-      caption: Lorem ipsum.
+      caption: Lighning transactions typically complete in seconds and don't require loaders.
     - file: processing-longer-wait
       alt:
-      caption: Lorem ipsum.
+      caption: If a transaction takes uncharacteristically long, users should be informed.
     - file: processing-on-chain
       alt:
-      caption: Lorem ipsum.
+      caption: More detailed status updates are helpful for on-chain transactions, as they can take 10+ minutes to confirm.
 imagesErrors:
     - file: routing-error
       alt:
@@ -114,7 +114,7 @@ The need to send bitcoin can be triggered by many different use cases, and initi
 - Copy & pasting payment information
 - Clicking a payment link
 - Scanning a QR code
-- NFC (Near-field communication)
+- Holding a device close to another device (using [NFC](https://en.wikipedia.org/wiki/Near-field_communication))
 
 <div class="image-slide-gallery">
 
@@ -138,7 +138,9 @@ The need to send bitcoin can be triggered by many different use cases, and initi
 
 Since users cannot control how an address or invoice is presented to them, wallets should be highly flexible in terms of input options and interoperability.
 
-Payment information can be shared in many formats and over diverse communication channels. Each has its own advantages and limitations. More details on [this page]({{ '/guide/payments/send/payment-request-formats/' | relative_url }}).
+Payment information can be shared in many formats and over diverse communication channels. Each has its own advantages and limitations. More details on the [payment request formats]({{ '/guide/payments/send/payment-request-formats/' | relative_url }}) page.
+
+## Presenting payment requests
 
 Once the application has registered the payment request, it should provide clear instructions and options to the user.
 
@@ -162,11 +164,9 @@ Once the application has registered the payment request, it should provide clear
 
 </div>
 
-Together, these formats allow for broad flexibility in initiating payments. Note that some of them are still maturing and have varying support across applications.
+## Manual payment initiation
 
-## Information entry
-
-When a payment is initiated via a method that contains all necessary information, the user can quickly confirm and approve it. In other scenarios, it may be required to manually enter or edit various details.
+When responding an invoice that contains all relevent information, the user can quickly review and approve it. In other scenarios, it may be required to manually enter or edit various details.
 
 <div class="image-slide-gallery">
 
@@ -195,9 +195,11 @@ An address is a piece of information that bitcoin can be sent to, and that doesn
 - Lightning node ID
 - Lightning address
 
+Not that there are also static [invoice types]({{ '/guide/payments/send/payment-request-formats/' | relative_url }}) that can receive payments repeatedly. These are less intuitive overall due to their appearance, but could also be considered payment endpoints.
+
 **Amounts**
 
-If no amount is provided via an invoicepayment request, manual entry should be simple and convenient so users don’t accidentally send an incorrect amount. The amount should be displayed in both bitcoin or satoshi value, as well as the user’s local currency. Options to quickly toggle between them should be available.
+If no amount is provided via a payment request, manual entry should be simple and convenient so users don’t accidentally send an incorrect amount. The amount should be displayed in both bitcoin or satoshi value, as well as the user’s local currency. Options to quickly toggle between them should be available. More on the [Units & Symbols page]({{ '/guide/payments/units-and-symbols/' | relative_url }}).
 
 ## Fees
 
@@ -244,13 +246,15 @@ This fee is dependent on how many other transactions are currently waiting to be
 
 Particularly with payments for larger amounts, it is good practice to allow users to review and confirm the information before it is sent.
 
-Wallets that offer features for spending limits or support multi-key schemes for additional security may ask users to go through additional confirmation steps here.
+Payments initiated via invoices which don't require any additional input by the user can avoid this review step, as the whole user interaction is one of review and confirmation.
+
+Wallets that offer features for [pending limits]({{ '/guide/onboarding/protecting-a-wallet/#wallet-limits' | relative_url }})s or support [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}) schemes for additional security may ask users to go through additional confirmation steps here.
 
 </div>
 
 ## Transaction processing
 
-Processing times may also differ a lot between on-chain and Lightning network payments. On-chain, pending transactions are bundled into a new block roughly every 10 minutes. On the Lightning network, payment routing happens instantly and is largely dependent on the number of nodes involved and their responsiveness.
+Processing times may also differ a lot between on-chain and Lightning network payments. On-chain, pending transactions are bundled into a [new block]({{ '/guide/getting-started/technology-primer/#what-is-a-blockchain' | relative_url }}) roughly every 10 minutes. On the Lightning network, [payment routing]({{ '/guide/getting-started/technology-primer/#how-are-payments-routed' | relative_url }}) happens instantly and is largely dependent on the number of nodes involved and their responsiveness.
 
 When transactions take longer than expected, users need to be clearly informed about the status. In scenarios like in-store payments, speedy confirmation is of the essence, as the user wants to move on, and the merchant may have other customers waiting. In-app status updates can be coupled with notifications, or even emails, to ensure that both parties are confident that everything is in order.
 
@@ -292,7 +296,9 @@ On-chain, it may also be possible to cancel (via [replace-by-fee](https://bitcoi
    layout = "float-right-desktop -background -shadow"
 %}
 
-Completion of a payment should be clearly indicated to the user. Additionally, it should also be simple to share a proof that the payment was made. In-person, it may suffice to show the screen to the receiver. Additional options like sharing the confirmation via chat or email may also be useful. As on-chain transactions can be globally verified by anyone, a link to a Bitcoin explorer can be shared as a payment confirmation.
+Completion of a payment should be clearly indicated to the user. Additionally, it should also be simple to share a proof that the payment was made. In-person, it may suffice to show the screen to the receiver. Additional options like sharing the confirmation via chat or email may also be useful.
+
+As on-chain transactions can be globally verified by anyone, a link to a [Bitcoin explorer]({{ '/guide/getting-started/software/#explorers' | relative_url }}) can be shared as a payment confirmation. For Lightning transactions, the so-called `preimage` can be considered a proof of payment.
 
 </div>
 
@@ -325,10 +331,13 @@ Handling problems gracefully is particularly important when it comes to payments
 </div>
 
 It is ideal when the application can automatically identify and fix or avoid the problem. This may not always be possible, or even wanted if the solution incurs extra fees or takes time. For practical purposes, it can be helpful to group problems into categories, such as:
+
 - The problem cannot be identified
 - The problem can be identified and requires manual action by the user
 - The problem can be automatically fixed, but the user needs to choose which solution to use
 - The app can likely automatically fix the problem with negligible impact on the user
+
+Effectively supporting users when problems occur can build trust and confidence, and essential aspect for financial applications.
 
 ---
 
@@ -338,7 +347,7 @@ There are situations in which users may want to make more complex adjustments to
 
 **Coin selection**
 
-Some users may prefer to choose which of their bitcoin (UTXOs to be precise) to send, in order to protect their privacy. More on this topic [here](https://bitcoin.design/guide/payments/send/coin-selection/).
+Some users may prefer to choose which of their bitcoin (UTXOs to be precise) to send, in order to protect their privacy. More on this topic on the [Coin selection page]({{ '/guide/payments/send/coin-selection/' | relative_url }}) page.
 
 **Lightning routing options**
 
