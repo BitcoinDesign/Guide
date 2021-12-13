@@ -30,7 +30,7 @@ Illustration source
 
 # Funding a wallet
 
-To have users begin using your wallet they will need to fund it with some bitcoin. Users funding a wallet for the first time are likely to be introduced to new concepts that will need to be clearly explained to them. The design flows around funding a wallet can range from simple to complex depending on your applications target audience and/or what services you offer to streamline the process. 
+To have users begin using your wallet, they will need to fund it with some bitcoin. Users funding a wallet for the first time are likely to be introduced to new concepts that need to be clearly explained. The design flows around funding a wallet can range from simple to complex depending on your application's target audience and/or what services you offer to streamline the process.
 
 Below we explore a standard funding approach that does not make use of any Lightning services. Lightning services are services that can be offered by your application that avoid users having to manually manage and configure their wallet. We explore the user flows around funding with Lightning services in our using Lightning services page. 
 
