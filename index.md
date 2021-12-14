@@ -4,7 +4,7 @@
 
 layout: home
 permalink: /
-video: /assets/images/bitcoin-design-preview.mp4
+video: https://deploy-preview-594--sad-borg-390916.netlify.app/assets/images/bitcoin-design-preview.mp4
 videoType: 'video/mp4'
 videoWidth: 1600
 videoHeight: 840
