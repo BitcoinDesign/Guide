@@ -25,7 +25,7 @@ Editor's notes
 
 # Payment request formats
 
-Payment information can be shared in many formats and over diverse communication channels. Each has its own advantages and limitations, these formats seen together allow for broad flexibility in initiating payments. Note that some of them are still maturing and have varying support across applications.
+Payment information can be shared in many formats and over diverse communication channels. Each has its advantages and limitations, these formats seen together allow for broad flexibility in initiating payments. Some of them are still maturing and have varying support across applications.
 
 ### On-chain addresses
 
