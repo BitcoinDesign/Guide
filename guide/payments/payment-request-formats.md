@@ -33,7 +33,7 @@ Addresses are used for transactions on the base layer. More details on the [addr
 
 ### Lightning invoices ([BOLT 11](https://github.com/lightning/bolts/blob/master/11-payment-encoding.md))
 
-Lightning invoices are the basic payment mechanism on the Lightning network. They are usually set to expire after 1 hour and should only be paid once for best security and privacy. Invoices have to be created by the recipient and shared with the sender who then makes the payment.
+Lightning invoices are the basic payment mechanism on the Lightning network. They are usually set to expire after 1 hour and should only be paid once for best security and privacy. Invoices must be created by the recipient and shared with the sender, who then makes the payment.
 
 ### Offers ([BOLT 12](https://bolt12.org))
 
