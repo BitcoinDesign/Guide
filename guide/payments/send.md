@@ -142,7 +142,7 @@ Payment information can be shared in many formats and over diverse communication
 
 ## Presenting payment requests
 
-Once the application has registered the payment request, it should provide clear instructions and options to the user.
+Once the application has imported a payment request, it should provide clear instructions and options to the user.
 
 <div class="image-slide-gallery">
 
