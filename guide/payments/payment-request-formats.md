@@ -77,7 +77,7 @@ Each request format has its own unique approach to bundle payment information fo
 
 {% include fact/open.html color="blue" label="On-chain address" icon="triangle" %}
 
-<span style="word-break: break-word;">1E4NmSEoT8WhBfSo4fBCUS3NLXM4u8txLF</span>
+<span style="word-break: break-word;">bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq</span>
 
 {% include fact/close.html %}
 
