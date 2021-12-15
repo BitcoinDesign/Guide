@@ -166,7 +166,7 @@ Once the application has imported a payment request, it should provide clear ins
 
 ## Manual payment initiation
 
-When responding an invoice that contains all relevent information, the user can quickly review and approve it. In other scenarios, it may be required to manually enter or edit various details.
+When responding to an invoice that contains all relevent information, the user can quickly review and approve it. In other scenarios, it may be required to manually enter or edit various details.
 
 <div class="image-slide-gallery">
 
