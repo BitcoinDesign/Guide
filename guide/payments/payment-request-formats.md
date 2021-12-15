@@ -41,7 +41,7 @@ This draft specification has similarities with to LNURL-Pay and LNURL-Withdraw, 
 
 ### [Lightning AMP invoices](https://docs.lightning.engineering/lightning-network-tools/lnd/amp) (Atomic Multi-Path)
 
-This type of invoice allow for payments to be broken up in small payments, potentially increasing the likelihood of success for larger amounts. Invoices typically expire after one day, but can also be configured to be static and be paid multiple times. Unlike BOLT 11 invoices, AMP invoices can also be initiated by the sender without action by the recipient.
+This type of invoice allows for small payments to be broken up, potentially increasing the likelihood of success for larger amounts. Invoices typically expire after one day but can also be configured to be static and be paid multiple times. Unlike BOLT 11 invoices, AMP invoices can also be initiated by the sender without action by the recipient.
 
 ### Lightning node IDs
 
