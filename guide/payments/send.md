@@ -216,7 +216,7 @@ Payment fees can drastically differ based on a few attributes:
    layout = "float-right-desktop"
 %}
 
-**Lightning network routing fees**
+**Lightning routing fees**
 
 On the Lightning network, payments are passed between nodes to get from the sender to the receiver. Each of those nodes may charge a base fee and a second fee based on a percentage of the amount forwarded. Fees paid can vary, but are typically in the single-digit or double-digit Satoshi range (a small fraction of on-chain fees).
 
