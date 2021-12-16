@@ -195,7 +195,7 @@ An address is a piece of information that bitcoin can be sent to, and that doesn
 - Lightning node ID
 - Lightning address
 
-Not that there are also static [invoice types]({{ '/guide/payments/send/payment-request-formats/' | relative_url }}) that can receive payments repeatedly. These are less intuitive overall due to their appearance, but could also be considered payment endpoints.
+There are also static [invoice types]({{ '/guide/payments/send/payment-request-formats/' | relative_url }}) that can receive payments repeatedly. These are less intuitive overall due to their appearance, but could also be considered payment endpoints.
 
 **Amounts**
 
