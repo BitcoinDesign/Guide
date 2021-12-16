@@ -136,7 +136,7 @@ The need to send bitcoin can be triggered by many different use cases, and initi
 
 </div>
 
-Since users cannot control how an address or invoice is presented to them, wallets should be highly flexible in terms of input options and interoperability.
+Since users cannot control how a payment request is presented to them, wallets should be highly flexible in terms of input options and [interoperability]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }}). If your wallet does not support a particular payment request, users should be presented with a human readable [error]({{ '/guide/payments/send/#errors' | relative_url }}).
 
 Payment information can be shared in many formats and over diverse communication channels. Each has its own advantages and limitations. More details on the [payment request formats]({{ '/guide/payments/send/payment-request-formats/' | relative_url }}) page.
 
