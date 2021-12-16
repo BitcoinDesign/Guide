@@ -222,7 +222,7 @@ On the Lightning network, payments are passed between nodes to get from the send
 
 **Lightning service provider fees**
 
-In certain situations, the Lightning wallet may not have enough liquidity to send or receive a payment. Wallet providers may offer to alleviate these friction points, and earn additional fees. A common scenario is the automatic opening of a payment channel when a wallet receives the first deposit.
+In certain situations, the Lightning wallet may not have enough channel liquidity to send a payment. Wallet providers may offer to alleviate these friction points, and earn additional fees. A common scenario is the automatic opening of a payment channel when a wallet attempts to send a payment larger than their outbound capacity.
 
 **On-chain fees**
 
