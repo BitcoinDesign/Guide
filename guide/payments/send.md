@@ -248,7 +248,7 @@ Particularly with payments for larger amounts, it is good practice to allow user
 
 Payments initiated via invoices which don't require any additional input by the user can avoid this review step, as the whole user interaction is one of review and confirmation.
 
-Wallets that offer features for [pending limits]({{ '/guide/onboarding/protecting-a-wallet/#wallet-limits' | relative_url }})s or support [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}) schemes for additional security may ask users to go through additional confirmation steps here.
+Wallets that offer features for [spending limits]({{ '/guide/onboarding/protecting-a-wallet/#wallet-limits' | relative_url }}) or support [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}) schemes for additional security may ask users to go through additional confirmation steps here.
 
 </div>
 
