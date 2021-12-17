@@ -141,9 +141,9 @@ When responding to an invoice that contains all relevent information, the user c
 
 The most convenient option for choosing a recipient is from previously saved contacts. Alternatively, users can enter on-chain addresses, Lightning addresses, Lightning node IDs, or other static identifies that are supported by the wallet.
 
-Not that there are also static [invoice types]({{ '/guide/payments/send/payment-request-formats/' | relative_url }}) that can receive payments repeatedly. These are less intuitive overall due to their appearance, but could also be considered payment endpoints.
+There are also static [invoice types]({{ '/guide/payments/send/payment-request-formats/' | relative_url }}) that can receive payments repeatedly. These are less intuitive overall due to their appearance, but could also be considered payment endpoints.
 
-**Amounts**
+**Amount**
 
 If no amount is provided via a payment request, manual entry should be simple and convenient so users don’t accidentally send an incorrect amount. The amount should be displayed in both bitcoin or satoshi value, as well as the user’s local currency. Options to quickly toggle between them should be available. More on the [Units & Symbols page]({{ '/guide/payments/units-and-symbols/' | relative_url }}).
 
@@ -166,13 +166,13 @@ Payment fees can drastically differ based on a few attributes:
    layout = "float-right-desktop"
 %}
 
-**Lightning network routing fees**
+**Lightning routing fees**
 
 On the Lightning network, payments are passed between nodes to get from the sender to the receiver. Each of those nodes may charge a base fee and a second fee based on a percentage of the amount forwarded. Fees paid can vary, but are typically in the single-digit or double-digit Satoshi range (a small fraction of on-chain fees).
 
 **Lightning service provider fees**
 
-In certain situations, the Lightning wallet may not have enough liquidity to send or receive a payment. Wallet providers may offer to alleviate these friction points, and earn additional fees. A common scenario is the automatic opening of a payment channel when a wallet receives the first deposit.
+In certain situations, the Lightning wallet may not have enough channel liquidity to send a payment. Wallet providers may offer to alleviate these friction points, and earn additional fees. A common scenario is the automatic opening of a payment channel when a wallet attempts to send a payment larger than their outbound capacity.
 
 </div>
 
@@ -212,7 +212,7 @@ Particularly with payments for larger amounts, it is good practice to allow user
 
 Payments initiated via invoices which don't require any additional input by the user can avoid this review step, as the whole user interaction is one of review and confirmation.
 
-Wallets that offer features for [pending limits]({{ '/guide/onboarding/protecting-a-wallet/#wallet-limits' | relative_url }})s or support [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}) schemes for additional security may ask users to go through additional confirmation steps here.
+Wallets that offer features for [spending limits]({{ '/guide/onboarding/protecting-a-wallet/#wallet-limits' | relative_url }}) or support [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}) schemes for additional security may ask users to go through additional confirmation steps here.
 
 </div>
 
