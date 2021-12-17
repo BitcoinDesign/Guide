@@ -83,13 +83,13 @@ Each request format has its own unique approach to bundle payment information fo
 
 {% include fact/open.html color="blue" label="Lightning invoice (BOLT 11)" icon="triangle" %}
 
-<span style="word-break: break-word;">lnbc1pvjluezsp5zyg3zyg3zyg3zyg3zyg3zyg3zyg3zyg3zyg3zyg3zyg3zyg3zygspp5qqqsyqcyq5rqwzqfqqqsyqcyq5rqwzqfqqqsyqcyq5rqwzqfqypqdpl2pkx2ctnv5sxxmmwwd5kgetjypeh2ursdae8g6twvus8g6rfwvs8qun0dfjkxaq9qrsgq357wnc5r2ueh7ck6q93dj32dlqnls087fxdwk8qakdyafkq3yap9us6v52vjjsrvywa6rt52cm9r9zqt8r2t7mlcwspyetp5h2tztugp9lfyql</span>
+<span style="word-break: break-word;">LNBC1PVJLUEZSP5ZYG3ZYG3ZYG3ZYG3ZYG3ZYG3ZYG3ZYG3ZYG3ZYG3ZYG3ZYG3ZYGSPP5QQQSYQCYQ5RQWZQFQQQSYQCYQ5RQWZQFQQQSYQCYQ5RQWZQFQYPQDPL2PKX2CTNV5SXXMMWWD5KGETJYPEH2URSDAE8G6TWVUS8G6RFWVS8QUN0DFJKXAQ9QRSGQ357WNC5R2UEH7CK6Q93DJ32DLQNLS087FXDWK8QAKDYAFKQ3YAP9US6V52VJJSRVYWA6RT52CM9R9ZQT8R2T7MLCWSPYETP5H2TZTUGP9LFYQL</span>
 
 {% include fact/close.html %}
 
 {% include fact/open.html color="blue" label="Offer (BOLT 12)" icon="triangle" %}
 
-<span style="word-break: break-word;">lno1pg257enxv4ezqcneype82um50ynhxgrwdajx283qfwdpl28qqmc78ymlvhmxcsywdk5wrjnj36jryg488qwlrnzyjczs</span>
+<span style="word-break: break-word;">LNO1PG257ENXV4EZQCNEYPE82UM50YNHXGRWDAJX283QFWDPL28QQMC78YMLVHMXCSYWDK5WRJNJ36JRYG488QWLRNZYJCZS</span>
 
 {% include fact/close.html %}
 

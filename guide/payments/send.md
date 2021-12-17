@@ -46,6 +46,9 @@ imagesEntryScreens:
       alt:
       caption: Compatibility problems are not uncommon due to the many formats.
 imagesInfo:
+    - file: home
+      alt:
+      caption: Payment flows can typically also be initiated from the wallet home screen.
     - file: review
       alt:
       caption: Amount and recipient entry should be simple and convenient.
@@ -116,25 +119,7 @@ The need to send bitcoin can be triggered by many different use cases, and initi
 - Scanning a QR code
 - Holding a device close to another device (using [NFC](https://en.wikipedia.org/wiki/Near-field_communication))
 
-<div class="image-slide-gallery">
-
-{% for item in page.imagesEntryPoints %}
-
-{% capture imageURL %}{{ page.image_base }}{{ item.file }}.png{% endcapture %}
-{% capture imageURLRetina %}{{ page.image_base }}{{ item.file }}@2x.png{% endcapture %}
-
-{% include picture.html
-   image = imageURL
-   retina = imageURLRetina
-   alt-text = item.alt
-   caption = item.caption
-   width = 250
-   height = 541
-   layout = "shadow"
-%}
-{% endfor %}
-
-</div>
+{% include image-gallery.html pages = page.imagesEntryPoints %}
 
 Since users cannot control how a payment request is presented to them, wallets should be highly flexible in terms of input options and [interoperability]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }}). If your wallet does not support a particular payment request, users should be presented with a human readable [error]({{ '/guide/payments/send/#errors' | relative_url }}).
 
@@ -144,62 +129,27 @@ Payment information can be shared in many formats and over diverse communication
 
 Once the application has imported a payment request, it should provide clear instructions and options to the user.
 
-<div class="image-slide-gallery">
-
-{% for item in page.imagesEntryScreens %}
-
-{% capture imageURL %}{{ page.image_base }}{{ item.file }}.png{% endcapture %}
-{% capture imageURLRetina %}{{ page.image_base }}{{ item.file }}@2x.png{% endcapture %}
-
-{% include picture.html
-   image = imageURL
-   retina = imageURLRetina
-   alt-text = item.alt
-   caption = item.caption
-   width = 250
-   height = 541
-   layout = "shadow"
-%}
-{% endfor %}
-
-</div>
+{% include image-gallery.html pages = page.imagesEntryScreens %}
 
 ## Manual payment initiation
 
 When responding to an invoice that contains all relevent information, the user can quickly review and approve it. In other scenarios, it may be required to manually enter or edit various details.
 
-<div class="image-slide-gallery">
+{% include image-gallery.html pages = page.imagesInfo %}
 
-{% for item in page.imagesInfo %}
+**Recipient**
 
-{% capture imageURL %}{{ page.image_base }}{{ item.file }}.png{% endcapture %}
-{% capture imageURLRetina %}{{ page.image_base }}{{ item.file }}@2x.png{% endcapture %}
-
-{% include picture.html
-   image = imageURL
-   retina = imageURLRetina
-   alt-text = item.alt
-   caption = item.caption
-   width = 250
-   height = 541
-   layout = "shadow"
-%}
-{% endfor %}
-
-</div>
-
-**Address**
-
-An address is a piece of information that bitcoin can be sent to, and that doesn’t change. Here are the common formats:
-- On-chain address
-- Lightning node ID
-- Lightning address
+The most convenient option for choosing a recipient is from previously saved contacts. Alternatively, users can enter on-chain addresses, Lightning addresses, Lightning node IDs, or other static identifies that are supported by the wallet.
 
 Not that there are also static [invoice types]({{ '/guide/payments/send/payment-request-formats/' | relative_url }}) that can receive payments repeatedly. These are less intuitive overall due to their appearance, but could also be considered payment endpoints.
 
 **Amounts**
 
 If no amount is provided via a payment request, manual entry should be simple and convenient so users don’t accidentally send an incorrect amount. The amount should be displayed in both bitcoin or satoshi value, as well as the user’s local currency. Options to quickly toggle between them should be available. More on the [Units & Symbols page]({{ '/guide/payments/units-and-symbols/' | relative_url }}).
+
+**Meta data**
+
+A transaction history is hard to make sense of when it only shows amounts, dates, and identifiers. Users should be allowed to add descriptions, tags, and other meta data to add context. This context can separately be used for helpful tools like visual spending breakdowns.
 
 ## Fees
 
@@ -224,7 +174,21 @@ On the Lightning network, payments are passed between nodes to get from the send
 
 In certain situations, the Lightning wallet may not have enough liquidity to send or receive a payment. Wallet providers may offer to alleviate these friction points, and earn additional fees. A common scenario is the automatic opening of a payment channel when a wallet receives the first deposit.
 
+</div>
+
+<div class="center" markdown="1">
+
 **On-chain fees**
+
+{% include image.html
+   image = "/assets/images/guide/payments/send/confirm-fees.png"
+   retina = "/assets/images/guide/payments/send/confirm-fees@2x.png"
+   alt-text = "Example image"
+   caption = "On-chain fees can vary drastically and should be easy to edit."
+   width = 250
+   height = 541
+   layout = "float-right-desktop -background -shadow"
+%}
 
 This fee is dependent on how many other transactions are currently waiting to be processed on the base layer as a whole. The [average fee](https://ycharts.com/indicators/bitcoin_average_transaction_fee) in January 2021 was $0.63, and $28.60 in April 2021.
 
@@ -258,25 +222,7 @@ Processing times may also differ a lot between on-chain and Lightning network pa
 
 When transactions take longer than expected, users need to be clearly informed about the status. In scenarios like in-store payments, speedy confirmation is of the essence, as the user wants to move on, and the merchant may have other customers waiting. In-app status updates can be coupled with notifications, or even emails, to ensure that both parties are confident that everything is in order.
 
-<div class="image-slide-gallery">
-
-{% for item in page.imagesProcessing %}
-
-{% capture imageURL %}{{ page.image_base }}{{ item.file }}.png{% endcapture %}
-{% capture imageURLRetina %}{{ page.image_base }}{{ item.file }}@2x.png{% endcapture %}
-
-{% include picture.html
-   image = imageURL
-   retina = imageURLRetina
-   alt-text = item.alt
-   caption = item.caption
-   width = 250
-   height = 541
-   layout = "shadow"
-%}
-{% endfor %}
-
-</div>
+{% include image-gallery.html pages = page.imagesProcessing %}
 
 In case a user needs to briefly wait, the application should not block the interface, but offer other useful actions to perform, such as labelling and tagging the payment, or adding the recipient to the contact list.
 
@@ -310,25 +256,7 @@ Handling problems gracefully is particularly important when it comes to payments
 - How the problem can be fixed or avoided
 - What to do next
 
-<div class="image-slide-gallery">
-
-{% for item in page.imagesErrors %}
-
-{% capture imageURL %}{{ page.image_base }}{{ item.file }}.png{% endcapture %}
-{% capture imageURLRetina %}{{ page.image_base }}{{ item.file }}@2x.png{% endcapture %}
-
-{% include picture.html
-   image = imageURL
-   retina = imageURLRetina
-   alt-text = item.alt
-   caption = item.caption
-   width = 250
-   height = 541
-   layout = "shadow"
-%}
-{% endfor %}
-
-</div>
+{% include image-gallery.html pages = page.imagesErrors %}
 
 It is ideal when the application can automatically identify and fix or avoid the problem. This may not always be possible, or even wanted if the solution incurs extra fees or takes time. For practical purposes, it can be helpful to group problems into categories, such as:
 
