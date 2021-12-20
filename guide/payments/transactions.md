@@ -74,7 +74,7 @@ To make a payment, the sender requires an invoice created by the recipient. The 
 
 The sender loads the invoice into their wallet application. After reviewing that the amount looks correct and the fee estimate is satisfactory, the sender confirms that they would like to make the payment.
 
-### 3. Pathfinding & Routing
+### 3. Pathfinding & routing
 
 The wallet application attempts to route the payment to the recipient. In order to do this, it must attempt to construct a path through the Lightning network. Pathfinding is a complex, probabilistic process, which means that the routing fees shown in the prior step are only an estimate.
 
