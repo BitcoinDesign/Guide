@@ -53,7 +53,7 @@ This is radically different from the traditional financial system, where it is o
 
 For a more detailed look, see the [Technology Primer]({{'/guide/getting-started/technology-primer/' | relative_url}}).
 
-## Lightning Payment Lifecycle
+## Lightning payment Lifecycle
 
 For most payments, the Lightning network is the best option, as it will enable the recipient to receive their bitcoin quicker and the sender to pay less in fees.
 
