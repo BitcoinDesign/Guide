@@ -88,7 +88,7 @@ Below is an overview of a standard wallet funding flow. This expands on what we 
 
 The first step in funding a wallet is asking the user if they currently own bitcoin.
 
-If your user does not own bitcoin your application should guide them in obtaining some. One solution is offering a guide the user could read on how to obtain bitcoin.
+If your user does not own bitcoin, your application should guide them in obtaining some. One solution is offering a guide the user could read on how to obtain bitcoin.
 
 Alternatively, you could offer the option to buy directly within your application which greatly simplifies the funding process.
 
