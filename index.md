@@ -4,6 +4,10 @@
 
 layout: home
 permalink: /
+video: /assets/images/bitcoin-design-preview.mp4
+videoType: 'video/mp4'
+videoWidth: 1600
+videoHeight: 840
 ---
 
 ## We are helping make [Bitcoin](https://bitcoin.org) more intuitive and accessible.
