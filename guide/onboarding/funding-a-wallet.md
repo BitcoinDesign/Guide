@@ -170,7 +170,7 @@ The next step for the user is to send bitcoin to the payment request.
 
 Once the bitcoin has been sent, indicate to the user when the wallet has received the transaction and communicate it's status. Once the initial transaction has been confirmed, it's recommended to open a payment channel for the user automatically. This way, the user does not have to manually find a peer and open a channel.
 
-Opening of a payment channel will require another on-chain transaction to be processed. If you choose to automatically open a channel for the user both the initial and channel opening transaction status can be indicated with one screen. This avoids exposing users to unnecessary complexity.
+Opening of a payment channel will require another on-chain transaction to be processed. If you choose to automatically open a channel for the user, the status of both the initial and the channel opening transactions can be indicated with one screen. This avoids exposing users to unnecessary complexity.
 
 Once a payment channel is open, the user's wallet is ready to use. As the newly opened channel only has outbound liquidity, they will not be able to receive Lightning payments yet.
 
