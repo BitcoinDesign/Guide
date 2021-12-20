@@ -109,7 +109,7 @@ layout = "full-width"
 
 # Sending bitcoin
 
-Sending bitcoin can be a very simple, or complex flow in a Bitcoin application. People may want to send bitcoin to a known contact, transfer it to another wallet on a different device, or make a purchase via a [payment processor]({{ '/guide/getting-started/software/#payment-processors' | relative_url }}).
+Sending bitcoin is one of the most essential user activities in a Bitcoin application, and also one of the least structured ones. People may want to send bitcoin to a known contact, transfer it to another wallet on a different device, or make a purchase via a [payment processor]({{ '/guide/getting-started/software/#payment-processors' | relative_url }}).
 
 ## Payment entry points
 
