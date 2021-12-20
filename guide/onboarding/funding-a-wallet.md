@@ -160,7 +160,7 @@ With Lightning services, the user can fund their wallet directly with a Lightnin
 
 ### Network sync
 
-If your application uses a method like compact block filters (BIP157/158) to sync to the Bitcoin network, which may take some time to sync, communicate to the user that their funds will not appear until the sync is complete. You may even consider not presenting a payment request until this sync is complete to prevent user confusion that their funds have not shown up.
+Sync methods like compact block filters (BIP157/158) to sync to the Bitcoin network take some time to finish. If your application uses them, you should communicate to the user that their funds will not appear until the sync is complete. You may even consider not presenting a payment request until this sync is complete. This can help prevent users from getting confused about their funds not showing up.
 
 It's recommended to start any required syncing as soon as the user opens your application to limit wait times.
 
