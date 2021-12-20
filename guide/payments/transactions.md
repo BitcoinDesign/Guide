@@ -90,7 +90,7 @@ Once the preimage is passed all the way to the sender's wallet application, the 
 
 This sounds like a complicated process; however, steps 3 - 5 are handled by software, and they happen very quickly. Users are not typically exposed to these details.
 
-## Bitcoin Transaction lifecycle
+## Bitcoin transaction lifecycle
 
 Some transactions are better accomplished on-chain. For example, the user's wallet application may have difficulty finding a suitable path to route a larger payment, or the user may prefer to send their funds to a [multi-sig storage vault]({{'/guide/case-studies/savings-account/' | relative_url}}).
 
