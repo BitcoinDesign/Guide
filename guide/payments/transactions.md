@@ -104,7 +104,7 @@ Some transactions are better accomplished on-chain. For example, the user's wall
 %}
 
 ### 1. Get recipient address
-The sender needs a valid address for the payment to be sent to. This can be shared by the recipient as a QR code, in plain text, or as a payment link.
+The sender needs a valid address for the payment to be sent to. This can be shared by the recipient as a QR code, over NFC, in plain text, or as a payment link.
 
 ### 2. Creation
 The wallet application guides the sender through collecting the required information (address and amount) and any optional configurations (which coins to send, fee options) in order to create a transaction.
