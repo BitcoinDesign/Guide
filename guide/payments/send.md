@@ -65,6 +65,9 @@ imagesProcessing:
     - file: processing-on-chain
       alt:
       caption: More detailed status updates are helpful for on-chain transactions, as they can take 10+ minutes to confirm.
+    - file: processing-transactions
+      alt:
+      caption: Users should not be forced to wait until transaction completion to keep using the wallet, and be able to review the status at any time.
 imagesErrors:
     - file: routing-error
       alt:
@@ -118,6 +121,8 @@ The need to send bitcoin can be triggered by many different use cases, and initi
 - Clicking a payment link
 - Scanning a QR code
 - Receiving a contactless payment request (using [NFC](https://en.wikipedia.org/wiki/Near-field_communication) or [Bluetooth](https://en.wikipedia.org/wiki/Bluetooth))
+
+Below are visualizations of some of these entry points.
 
 {% include image-gallery.html pages = page.imagesEntryPoints %}
 
