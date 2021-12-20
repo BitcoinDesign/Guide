@@ -117,7 +117,7 @@ The need to send bitcoin can be triggered by many different use cases, and initi
 - Copy & pasting payment information
 - Clicking a payment link
 - Scanning a QR code
-- Holding a device close to another device (using [NFC](https://en.wikipedia.org/wiki/Near-field_communication))
+- Receiving a contactless payment request (using [NFC](https://en.wikipedia.org/wiki/Near-field_communication) or [Bluetooth](https://en.wikipedia.org/wiki/Bluetooth))
 
 {% include image-gallery.html pages = page.imagesEntryPoints %}
 
@@ -145,7 +145,7 @@ There are also static [invoice types]({{ '/guide/payments/send/payment-request-f
 
 **Amount**
 
-If no amount is provided via a payment request, manual entry should be simple and convenient so users don’t accidentally send an incorrect amount. The amount should be displayed in both bitcoin or satoshi value, as well as the user’s local currency. Options to quickly toggle between them should be available. More on the [Units & Symbols page]({{ '/guide/payments/units-and-symbols/' | relative_url }}).
+If no amount is provided via a payment request, manual entry should be simple and convenient so users don’t accidentally send an incorrect amount. The amount should be displayed in bitcoin or satoshi value, as well as the user’s local currency. Options to quickly toggle between them should be available. More on the [Units & Symbols page]({{ '/guide/payments/units-and-symbols/' | relative_url }}).
 
 **Meta data**
 
@@ -220,13 +220,13 @@ Wallets that offer features for [spending limits]({{ '/guide/onboarding/protecti
 
 Processing times may also differ a lot between on-chain and Lightning network payments. On-chain, pending transactions are bundled into a [new block]({{ '/guide/getting-started/technology-primer/#what-is-a-blockchain' | relative_url }}) roughly every 10 minutes. On the Lightning network, [payment routing]({{ '/guide/getting-started/technology-primer/#how-are-payments-routed' | relative_url }}) happens instantly and is largely dependent on the number of nodes involved and their responsiveness.
 
-When transactions take longer than expected, users need to be clearly informed about the status. In scenarios like in-store payments, speedy confirmation is of the essence, as the user wants to move on, and the merchant may have other customers waiting. In-app status updates can be coupled with notifications, or even emails, to ensure that both parties are confident that everything is in order.
+When transactions take longer than expected, users need to be clearly informed about the status. In scenarios like in-store payments, speedy confirmation is of the essence, as the user wants to move on, and the merchant may have other customers waiting. In-app status updates can be coupled with notifications to ensure that both parties are confident that everything is in order.
 
 {% include image-gallery.html pages = page.imagesProcessing %}
 
 In case a user needs to briefly wait, the application should not block the interface, but offer other useful actions to perform, such as labelling and tagging the payment, or adding the recipient to the contact list.
 
-On-chain, it may also be possible to cancel (via [replace-by-fee](https://bitcoinops.org/en/topics/replace-by-fee/) or double-spend with a higher fee) or speed-up (via [child-pays-for-parent](https://bitcoinops.org/en/topics/cpfp/)) a transaction after it has been broadcast, but before it has been included in a block.
+On-chain, you may offer users the options to cancel (via [replace-by-fee](https://bitcoinops.org/en/topics/replace-by-fee/) (RBF)) or speed-up (via [child-pays-for-parent](https://bitcoinops.org/en/topics/cpfp/) (CPFP)) a transaction. This is only possible after the transaction has been broadcast, but before it has been included in a block.
 
 ## Success
 
@@ -242,7 +242,9 @@ On-chain, it may also be possible to cancel (via [replace-by-fee](https://bitcoi
    layout = "float-right-desktop -background -shadow"
 %}
 
-Completion of a payment should be clearly indicated to the user. Additionally, it should also be simple to share a proof that the payment was made. In-person, it may suffice to show the screen to the receiver. Additional options like sharing the confirmation via chat or email may also be useful.
+Completion of a payment should be clearly indicated to the user.
+
+It should also be simple to share a proof that the payment was made. In-person, it may suffice to show the screen to the receiver. Additional options like sharing the confirmation via chat or email may also be useful.
 
 As on-chain transactions can be globally verified by anyone, a link to a [Bitcoin explorer]({{ '/guide/getting-started/software/#explorers' | relative_url }}) can be shared as a payment confirmation. For Lightning transactions, the so-called `preimage` can be considered a proof of payment.
 
@@ -252,13 +254,13 @@ As on-chain transactions can be globally verified by anyone, a link to a [Bitcoi
 
 Handling problems gracefully is particularly important when it comes to payments, as users may be concerned about having lost funds. Clear communication may include:
 - A brief explanation of what went wrong
-- Status of the funds and the payment as a whole
+- Status of the funds and payment to address user worries
 - How the problem can be fixed or avoided
 - What to do next
 
 {% include image-gallery.html pages = page.imagesErrors %}
 
-It is ideal when the application can automatically identify and fix or avoid the problem. This may not always be possible, or even wanted if the solution incurs extra fees or takes time. For practical purposes, it can be helpful to group problems into categories, such as:
+It is ideal when the application can automatically identify and fix or avoid the problem. This may not always be possible, or even wanted, if the solution incurs extra fees or takes time. For practical purposes, it can be helpful to group problems into categories, such as:
 
 - The problem cannot be identified
 - The problem can be identified and requires manual action by the user

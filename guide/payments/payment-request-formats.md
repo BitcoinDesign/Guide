@@ -49,7 +49,7 @@ Senders can initiate payments to recipients only knowing their node ID, using [K
 
 ### [LNURL](https://coincharge.io/en/lnurl-for-lightning-wallets/)
 
-This internet-based protocol establishes techniques on top of Lightning invoices for several important use cases:
+This internet-based protocol establishes techniques on top of Lightning invoices for several important use cases, including the following:
 
 **LNURL-Pay**
 
@@ -58,14 +58,6 @@ Makes it possible to generate Lightning invoices on-demand, based on a static id
 **LNURL-Withdraw**
 
 Allows for invoices to offer withdrawals with optional minimum and maximum amounts.
-
-**LNURL-Auth**
-
-Lets users authenticate to third-party services via their wallet (Lightning node).
-
-**LNURL-Channel**
-
-Streamlines the channel opening user flow.
 
 ### [Lightning addresses](https://lightningaddress.com)
 
