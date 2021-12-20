@@ -38,7 +38,7 @@ Illustration sources
 
 # Transactions overview
 
-This page is meant to help you with understanding how bitcoin transactions get created and processed by the Bitcoin and Lightning networks. Bitcoin is a peer-to-peer push-payment system. This means that you can send, or push, bitcoin at any time, without passing through a trusted third party.
+This page is meant to help you understand how bitcoin transactions get created and processed by the Bitcoin and Lightning networks. Bitcoin is a peer-to-peer push-payment system. This means that you can send, or push, bitcoin at any time, without passing through a trusted third party.
 
 This is radically different from the traditional financial system, where it is often possible for others to pull and withdraw money from your account (utility companies, financial institutions, merchants, etc.). When you make a payment, it will pass through systems that might delay, control or block the payment.
 
