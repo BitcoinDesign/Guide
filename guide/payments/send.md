@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Sending bitcoin
-description: An introduction to how sending bitcoin works.
+description: Best practices and design guidelines for designing user experiences for sending bitcoin in wallet applications
 nav_order: 2
 parent: Payments
 has_children: true
@@ -12,71 +12,71 @@ image: /assets/images/guide/payments/send/bitcoin-payments-social.jpg
 image_base: /assets/images/guide/payments/send/
 imagesEntryPoints:
     - file: home
-      alt:
+      alt: Wallet home screen with amount input, pay and request options
       caption: Home screens provide quick access to entering payment flows.
     - file: pick-contact
-      alt:
+      alt: A screen showing a list of contacts to choose from
       caption: Storing contact information makes consecutive payments convenient.
     - file: donation-page-copy
-      alt:
+      alt: A website with a list of donation options for a Bitcoin designer
       caption: Users may be required to copy & paste payment requests.
     - file: donation-page-link
-      alt:
+      alt: A website with a single donation option for a Bitcoin designer
       caption: Applications can initiate payment flows when users click specifically formatted links.
     - file: donation-qr-code
-      alt:
+      alt: A sheet of paper with donation information for a Bitcoin designer
       caption: Scanning a QR code is a common way to initiate a payment in a real-world setting.
 imagesEntryScreens:
     - file: lightning-address-options
-      alt:
+      alt: A payment request screen with options to send, request, and add to contacts
       caption: If no action type (pay, withdraw) is provided, users need to choose.
     - file: pay-invoice-without-amount
-      alt:
+      alt: A payment request screen with the recipient pre-filled
       caption: The minimum amount of information in an invoice is the recipient.
     - file: pay-invoice-with-details
-      alt:
+      alt: A payment request screen with complex pre-filled information
       caption: Invoices can also include more complex information, especially the LNURL format.
     - file: withdraw-invoice
-      alt:
+      alt: A payment request screen for withdrawing bitcoin
       caption: Invoices can also offer the user to withdraw bitcoin.
     - file: error-invoice-expired
-      alt:
+      alt: A home screen with a modal explaining an invoice has expired
       caption: Basic Lightning invoices expire, typically after one hour.
     - file: error-incompatibility
-      alt:
+      alt: A home screen with an informational modal around invoice compatibility
       caption: Compatibility problems are not uncommon due to the many formats.
 imagesInfo:
     - file: home
-      alt:
+      alt: Wallet home screen with amount input, pay and request options
       caption: Payment flows can typically also be initiated from the wallet home screen.
     - file: review
-      alt:
+      alt: A payment form with basic information completed
       caption: Amount and recipient entry should be simple and convenient.
     - file: review-with-label-and-tags
-      alt:
+      alt: A payment form with all information completed
       caption: Adding additional meta data makes it easier for users to organize their spending.
 imagesProcessing:
     - file: processing
-      alt:
+      alt: Payment screen showing the transaction is being sent
       caption: Lighning transactions typically complete in seconds and don't require loaders.
     - file: processing-longer-wait
-      alt:
+      alt: Payment screen showing that the transaction is taking longer than expected
       caption: If a transaction takes uncharacteristically long, users should be informed.
     - file: processing-on-chain
-      alt:
+      alt: Payment screen showing showing pending status for an on-chain transaction
       caption: More detailed status updates are helpful for on-chain transactions, as they can take 10+ minutes to confirm.
     - file: processing-transactions
-      alt:
+      alt: Transaction history screen showing payments with various different statuses
       caption: Users should not be forced to wait until transaction completion to keep using the wallet, and be able to review the status at any time.
 imagesErrors:
     - file: routing-error
-      alt:
+      alt: A screen describing a specific error with options to address it
       caption: Example of an identifiable error with known solutions.
     - file: generic-error
-      alt:
+      alt: A screen describing a generic error with options to self-help
       caption: A generic error with tips for the user to try.
     - file: generic-error-details
-      alt:
+      alt: A screen showing error details
       caption: Access to error details for problem-solving.
 ---
 
@@ -165,7 +165,7 @@ Payment fees can drastically differ based on a few attributes:
 {% include image.html
    image = "/assets/images/guide/payments/send/fee-options.png"
    retina = "/assets/images/guide/payments/send/fee-options@2x.png"
-   alt-text = "Example image"
+   alt-text = "Examples of on-chain, Lightning and Lightning routing fees"
    width = 400
    height = 417
    layout = "float-right-desktop"
@@ -188,7 +188,7 @@ In certain situations, the Lightning wallet may not have enough channel liquidit
 {% include image.html
    image = "/assets/images/guide/payments/send/confirm-fees.png"
    retina = "/assets/images/guide/payments/send/confirm-fees@2x.png"
-   alt-text = "Example image"
+   alt-text = "Screen showing fee options for a transaction"
    caption = "On-chain fees can vary drastically and should be easy to edit."
    width = 250
    height = 541
@@ -206,7 +206,7 @@ This fee is dependent on how many other transactions are currently waiting to be
 {% include image.html
    image = "/assets/images/guide/payments/send/confirm.png"
    retina = "/assets/images/guide/payments/send/confirm@2x.png"
-   alt-text = "Example image"
+   alt-text = "Invoice approval screen"
    caption = "A compact summary to confirm the information is accurate."
    width = 250
    height = 541
@@ -240,7 +240,7 @@ On-chain, you may offer users the options to cancel (via [replace-by-fee](https:
 {% include image.html
    image = "/assets/images/guide/payments/send/success.png"
    retina = "/assets/images/guide/payments/send/success@2x.png"
-   alt-text = "Example image"
+   alt-text = "Screen showing a completed transaction"
    caption = "A brief transaction summary with access to further details."
    width = 250
    height = 541
