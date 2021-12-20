@@ -68,7 +68,7 @@ layout = "full-width"
 
 ### 1. Create invoice
 
-To make a payment, the sender requires an invoice created by the recipient. The recipient's wallet application creates a preimage, or payment secret, which is then used to create an invoice for one-time use. The sender can share the invoice with the recipient as a QR code, over NFC, in plain text, or as a payment link.
+To make a payment, the sender requires an invoice created by the recipient. The recipient's wallet application creates a preimage, or payment secret, which is then used to create an invoice for one-time use. The recipient can share the invoice with the sender as a QR code, over NFC, in plain text, or as a payment link.
 
 ### 2. Confirm payment
 
