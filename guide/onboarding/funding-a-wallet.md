@@ -92,7 +92,7 @@ If your user does not own bitcoin, your application should guide them in obtaini
 
 Alternatively, you could offer the option to buy directly within your application, which greatly simplifies the funding process.
 
-If the user wants to fund their wallet at a later time they should have the option to skip this funding process.
+If the user wants to fund their wallet at a later time, they should have the option to skip this funding process.
 
 <div class="image-slide-gallery">
 
