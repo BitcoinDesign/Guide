@@ -166,7 +166,7 @@ It's recommended to start any required syncing as soon as the user opens your ap
 
 ## Funding the wallet
 
-The next step for the user to take is sending bitcoin to the payment request.
+The next step for the user is to send bitcoin to the payment request.
 
 Once the bitcoin has been sent, indicate to the user when the wallet has received the transaction and communicate it's status. Once the initial transaction has been confirmed, it's recommended to open a payment channel for the user automatically. This avoids the user having to manually find a peer and open a channel.
 
