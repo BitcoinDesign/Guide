@@ -216,7 +216,7 @@ When it comes to funding a wallet, Lightning services can prevent users waiting 
 
 ### Manual channel opening
 
-If a user wants to manually open a channel they should have the option to disable automatic channel opens in the settings. This is a more involved process and should be focused on more experienced users and not be the primary user flow.
+If a user wants to manually open a channel they should have the option to disable automatic channel opens in the settings. This is a more involved process and should be focused on more experienced users, and not be the primary user flow.
 
 <div class="image-slide-gallery">
 
