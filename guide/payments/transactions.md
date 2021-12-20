@@ -47,7 +47,7 @@ This is radically different from the traditional financial system, where it is o
 | Bitcoin          | Lightning |
 |-------------|------------------|
 | Users send *[transactions]({{'/guide/glossary/#transaction' | relative_url}})*. | Users send *[payments]({{'/guide/glossary/#payment' | relative_url}})*.  |
-| Transactions take 10 minutes to an hour for settlement. | Payments are settled almost instantly.  |
+| Transactions are settled on average every 10 minutes. | Payments are settled almost instantly.  |
 | A valid transaction will always be mined, but may be delayed if the fee is too low. | Successful payment depends on Lightning network liquidity and finding a path to the recipient. |
 | Bitcoin is typically better for larger amounts of funds and less frequent transactions. | Lightning is typically better for smaller amounts of funds and more frequent payments. |
 
