@@ -90,7 +90,7 @@ The first step in funding a wallet is asking the user if they currently own bitc
 
 If your user does not own bitcoin, your application should guide them in obtaining some. One solution is offering a guide the user could read on how to obtain bitcoin.
 
-Alternatively, you could offer the option to buy directly within your application which greatly simplifies the funding process.
+Alternatively, you could offer the option to buy directly within your application, which greatly simplifies the funding process.
 
 If the user wants to fund their wallet at a later time they should have the option to skip this funding process.
 
