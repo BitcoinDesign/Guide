@@ -168,7 +168,7 @@ It's recommended to start any required syncing as soon as the user opens your ap
 
 The next step for the user is to send bitcoin to the wallet.
 
-Once the bitcoin has been sent, notify the user once it's received. This should be followed by notifying the user that their wallet is being setup. The setup process being the confirmation of the first transaction and opening of a new payment channel.
+Once bitcoin has been sent, notify the user once it's received. This should be followed by notifying the user that their wallet is being setup. The setup process being the confirmation of the first transaction and opening of a new payment channel.
 
 {% include /tip/open.html label="⚡ Zero confirmation channels" icon="info" color="blue" %}
 
