@@ -30,7 +30,7 @@ Illustration source
 
 # Funding a wallet
 
-The user will need to fund their wallet with some bitcoin to begin using it. When the user funds a wallet for the first time, they are likely to be introduced to new concepts that need to be clearly explained. The design flows around funding a wallet can range from simple to complex, depending on your application's target audience and which services you offer to streamline the process.
+The user will need to fund their wallet with some bitcoin to begin using it. When the user funds a wallet for the first time, they are likely to be introduced to new concepts that need to be clearly explained. The design flows around funding a wallet can range from simple to complex, depending on your wallets target audience and which services you offer to streamline the process.
 
 This section covers a basic mobile Lightning wallet funding flow that does not make use of any Lightning or other third-party services. This expands on what we covered in the previous page covering the user's [first use]({{'/guide/onboarding/first-use/' | relative_url}}).
 
@@ -88,9 +88,9 @@ Lightning services greatly simplify the UX of funding and using a Lightning wall
 
 The first step in funding a wallet is asking the user if they currently own bitcoin.
 
-If your user does not own bitcoin, your application should guide them in obtaining some. One solution is offering a guide the user could read on how to obtain bitcoin.
+If your user does not own bitcoin, your wallet should guide them in obtaining some. One solution is offering a guide the user could read on how to obtain bitcoin.
 
-Alternatively, you could offer the option to buy directly within your application, which greatly simplifies the funding process.
+Alternatively, you could offer the option to buy directly within your wallet, which greatly simplifies the funding process.
 
 If the user wants to fund their wallet at a later time, they should have the option to skip this funding process.
 
@@ -120,8 +120,8 @@ If the user wants to fund their wallet at a later time, they should have the opt
    image = "/assets/images/guide/onboarding/funding-a-wallet/buy-bitcoin.png"
    retina = "/assets/images/guide/onboarding/funding-a-wallet/buy-bitcoin@2x.png"
    layout = "shadow"
-   caption = "Offer the option to buy bitcoin within your application."
-   alt-text = "Screen showing option to buy within the application"
+   caption = "Offer the option to buy bitcoin within your wallet."
+   alt-text = "Screen showing option to buy within the wallet"
    width = 250
    height = 541
 %}
@@ -148,7 +148,7 @@ Present the payment request to the user with an easily scannable QR code alongsi
 
 Alongside the payment request, explain to the user that a payment channel will be opened with the received amount and that a minimum amount should be sent. This amount is to cover the network fees for opening a new payment channel.
 
-For users who want to [manually open a channel]({{'/guide/onboarding/funding-a-wallet/#manual-channel-opening' | relative_url}}) this screen should be skippable.
+For users who want to manually fund their wallet this screen should be skippable.
 
 </div>
 
@@ -160,29 +160,29 @@ Offering a pay-to-open Lightning service allows users to fund their wallet direc
 
 ### Network sync
 
-Sync methods like compact block filters (BIP157/158) to sync to the Bitcoin network take some time to finish. If your application uses them, you should communicate to the user that their funds will not appear until the sync is complete. You may even consider not presenting a payment request until this sync is complete. This can help prevent users from getting confused about their funds not showing up.
+If your wallet uses a Bitcoin network sync method like compact block filters (BIP157/158) your wallet should communicate to the user that their funds will not appear until the sync is complete. You may even consider not presenting a payment request until this sync is complete. This can help prevent users from getting confused about their funds not showing up.
 
-It's recommended to start any required syncing as soon as the user opens your application to limit wait times.
+It's recommended to start any required syncing as soon as the user opens your wallet to limit wait times.
 
-## 3. Sending the bitcoin
+## 3. Funding the wallet
 
-The next step for the user is to send bitcoin to the wallet.
+The next step is for the user to fund your wallet by sending bitcoin to the payment request.
 
-Once bitcoin has been sent, notify the user once it's received. This should be followed by notifying the user that their wallet is being setup. The setup process being the confirmation of the first transaction and opening of a new payment channel.
+When the user funds their wallet, your application should notify them when the bitcoin has been received. This could be done by presenting to the user a screen saying their wallet is being setup whilst the on-chain transaction is being confirmed. Once it is confirmed, the primary wallet UI should be shown.
 
-{% include /tip/open.html label="⚡ Zero confirmation channels" icon="info" color="blue" %}
+{% include /tip/open.html label="⚡ Zero-confirmation" icon="info" color="blue" %}
 
-Offering a zero confirmation channel Lightning service allows users to use their wallet without having to wait for confirmations.
+Offering a zero-confirmation Lightning service allows users to make payments before transactions are confirmed.
 
 {% include /tip/close.html %}
 
-For beginner users, it's recommended to open a payment channel for them automatically once the initial transaction is confirmed. This way, they don't have to manually find a peer and open a channel.
+It's recommended to automatically initiate an unannounced channel open using the funds sent by the user once they are confirmed. This channel should be opened to a dedicated Lightning node, preferably one ran by your application, to prevent users having channels closed on them. A unannounced channel will avoid payments happening on the Lightning network to be routed through your users wallet which could add some extra confusion. Alternatively, users will have to [manually open a channel]({{'/guide/onboarding/funding-a-wallet/#manual-channel-opening' | relative_url}}) which will likely involve a lot of friction for new users.
 
-Once a payment channel is open, the user's wallet is ready to use. As the newly opened channel only has outbound liquidity, they will not be able to receive Lightning payments yet.
+Once the wallet is funded, it's ready to use. The newly opened channel will only have outbound liquidity meaning the user will only be able to send via Lightning until they make some payments and have some inbound liquidity. This should be communicated to the user if they attempt to receive via Lightning.
 
 {% include /tip/open.html label="⚡ Pay-to-open" icon="info" color="blue" %}
 
-Offering a pay-to-open Lightning service allows users to receive Lighting payments as soon as they fund their wallet.
+Offering a pay-to-open Lightning service allows users with no inbound liquidity to receive a Lightning payments.
 
 {% include /tip/close.html %}
 
@@ -220,9 +220,11 @@ Offering a pay-to-open Lightning service allows users to receive Lighting paymen
 
 </div>
 
-### Manual channel opening
+### Manually opening a channel
 
-If the user wants to manually open a channel they should have the option to disable automatic channel opens in the settings. This is a more involved process and should be focused on more experienced users, and not be the primary user flow.
+If your wallet does not automatically open a channel or the user wants to open their own channel for more control of their wallet then they will need to manually open a channel.
+
+Manually opening a channel involves finding a suitable peer to open a channel with. Many directories such as [1ml](https://1ml.com/) and [Amboss](https://amboss.space/) exist to assist users find peers to open a channel with. It's a good idea to guide users in your wallet towards these services to prevent them opening low quality channels with unreliable peers.
 
 <div class="image-slide-gallery">
 
@@ -230,7 +232,7 @@ If the user wants to manually open a channel they should have the option to disa
    image = "/assets/images/guide/onboarding/funding-a-wallet/auto-setting.png"
    retina = "/assets/images/guide/onboarding/funding-a-wallet/auto-setting@2x.png"
    layout = "shadow"
-   caption = "The user has disabled automatic channel opens in the settings."
+   caption = "The user has disabled automatic channel opens or your wallet does not offer automatic channel opens."
    alt-text = "Screen showing disabled automatic channel opens toggle."
    width = 250
    height = 541
@@ -300,7 +302,7 @@ If the user wants to manually open a channel they should have the option to disa
 
 ---
 
-Next, let's look at [backing up a wallet]({{ '/guide/onboarding/backing-up-a-wallet/' | relative_url }}).
+Now that your wallet has some bitcoin, it's time to [back it up]({{ '/guide/onboarding/backing-up-a-wallet/' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/onboarding/first-use/"
