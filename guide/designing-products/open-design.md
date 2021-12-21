@@ -55,10 +55,9 @@ Illustration sources
 **Open design welcomes the free exchange of ideas, knowledge, processes, and tools. It empowers by lifting barriers to innovation. It opens the door to scaling design projects by distributing adaptable resources.**
 
 ## A balance of independence and collaboration
-
 Open source projects are often driven by global communities. These hubs of learning and building allow you to carve an individual niche. Align yourself to projects based on your passions, talents, interests, and beliefs. Your work becomes a voluntary public contribution toward common goals. Some projects are also supported through grants and donations.
 
-Open design communities can have multidisciplinary teams with designers, developers, copywriters, translators, project managers.... These diverse groups can develop stronger solutions through varied points of view.
+Open design communities can have multidisciplinary teams with designers, developers, copywriters, translators, project managers, etc. These diverse groups can develop stronger solutions through varied points of view.
 
 ## Helpful skills
 
@@ -77,12 +76,12 @@ Open design communities can have multidisciplinary teams with designers, develop
 We could argue Bitcoin needs open design to stay true to its mission.
 
 * Bitcoin is public and open source
-* It has public & unrestricted network participation
-* It allows permissionless transfer of value in the Bitcoin protocol
+* It has public and unrestricted network participation
+* It allows permissionless transfer of value
 
 Thousands of projects have borrowed ideas, techniques, and code from Bitcoin. Countless open-source experiments have arisen. To a designer, Bitcoin is a robust foundation for collaboration. A foundation that comes with a responsibility toward the benefit of society.
 
-This ethical responsibility encompasses application design. Most people interact with applications instead of the underlying Bitcoin technical protocol. If someone controls access to an application, it won't matter if the protocol is open. It is up to the global community to build principled Bitcoin applications.
+This ethical responsibility encompasses application design. Most people interact with applications instead of the underlying Bitcoin technical protocol. If someone controls access to an application, it won't matter if the protocol is open. It is up to the global community to build [principled Bitcoin applications](guide/designing-products/principles/)
 
 Bitcoin is a protocol created to give access to anyone. Access and accessibility go hand in hand. Designing Bitcoin products means working on removing barriers of entry. It means making decisions to create a unique balance of features for ease of use. You should design for a specific audience at the same time as giving the widest access.
 
@@ -100,20 +99,20 @@ Open-source software development has existed for decades. Public review and deba
 
 - Collaborate without competing
 - Approach problems with an open-mind
-- Share transparent work and open processes
+- Share your work and process in an open and transparent way
 - Make it easy for others to build on our work and ideas
 - Be considerate while giving and receiving feedback
 
 ### Inclusion
 
 - Aim for inclusiveness, usability, and accessibility
-- Design features for the broadest range of people, locations, backgrounds, technological knowledge, financial literacy...
+- Design features for the broadest range of people, locations, backgrounds, technological knowledge, financial literacy, etc.
 - Embrace multidisciplinary feedback
 
 ### Real world solutions
 
 - Help design products that solve real problems and address real needs
-- Rely on our peers for quality assurance and validation
+- Rely on your peers for quality assurance and validation
 - Fulfill the open design group's goals through actions
 - Create functional elements that have a positive influence on how people feel and think
 
@@ -130,9 +129,9 @@ Open-source software development has existed for decades. Public review and deba
 ### Test, redesign, and engage in feedback
 
 - Experiment with Bitcoin and Lightning. Download a wallet and test small amounts. You can also test network features without using real bitcoin on Testnet. It works with some wallets.
-- Redesign a bitcoin and/or lightning application or focus on a CX issue that interests you. Even as a brief exercise, a redesign is a great way to develop understanding of how something works.
+- Redesign a bitcoin and/or lightning application or focus on a user experience issue that interests you. Even as a brief exercise, a redesign is a great way to develop understanding of how something works.
 - Join a [Design Review](https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+Design+Review+Call+). A call focusing on giving feedback to improve a specific bitcoin product. Products vary by call.
-- Join the [Wallet Improvement Project](https://github.com/BitcoinDesign/Guide/issues/493). It tests a list of real world bitcoin projects and suggests redesigns to their makers.  
+- Join the [Wallet Improvement Project](https://github.com/BitcoinDesign/Guide/issues/493). It tests a list of real world Bitcoin projects and suggests redesigns to their makers.  
 
 ### Continuous learning
 
@@ -142,7 +141,7 @@ Read, watch, listen, and test. You can discover great material about Bitcoin and
 
 - Try new ways of making your knowledge, tools, and workflows public and accessible to others.
 
-- Create free and open resources like an [icon set](https://bitcoinicons.com/), a [UI kit](https://www.bitcoinuikit.com/), a workshop....
+- Create free and open resources like an [icon set](https://bitcoinicons.com/), a [UI kit](https://www.bitcoinuikit.com/), or a workshop.
 
 ## Licensing
 
