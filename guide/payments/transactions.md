@@ -76,6 +76,8 @@ layout = "full-width"
 
 To make a Lightning payment, the sender requires an invoice created by the recipient. The recipient's wallet application creates a preimage, or payment secret, which is then used to create an invoice for one-time use. The recipient can share the invoice with the sender as a QR code, over NFC, in plain text, or as a payment link.
 
+Note that the recipient does not always need to produce the invoice manually. For example, an ecommerce site could generate invoices automatically on behalf of the recipient, or the recipient could rely on a static QR code that allows the sender's wallet to retrieve the invoice or necessary data dynamically.
+
 ### 2. Confirm payment
 
 The sender loads the invoice into their wallet application. After reviewing that the amount looks correct and the fee estimate is satisfactory, the sender confirms that they would like to make the Lightning payment.
@@ -111,6 +113,8 @@ Some things are accomplished better on-chain. For example, the user's wallet app
 
 ### 1. Get recipient address
 The sender needs a valid address to send the Bitcoin transaction to. The recipient can share the address as a QR code, over NFC, in plain text, or as a payment link.
+
+Note that the recipient does not always need to produce the address manually. For example, an ecommerce site could generate addresses automatically on behalf of the recipient. The recipient could rely on a static address QR code, but this is not recommended for good transaction privacy.
 
 ### 2. Creation
 The wallet application guides the sender through collecting the required information (address and amount) and any optional configurations (which coins to send, fee options, etc.) in order to create a transaction.
