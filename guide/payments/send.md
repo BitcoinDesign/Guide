@@ -1,13 +1,83 @@
 ---
 layout: guide
 title: Sending bitcoin
-description: An introduction to how sending bitcoin works.
+description: Best practices and design guidelines for designing user experiences for sending bitcoin in wallet applications
 nav_order: 2
 parent: Payments
 has_children: true
 permalink: /guide/payments/send/
 main_classes: -no-top-padding
 image: /assets/images/guide/payments/send/bitcoin-payments-social.jpg
+
+image_base: /assets/images/guide/payments/send/
+imagesEntryPoints:
+    - file: home
+      alt: Wallet home screen with amount input, pay and request options
+      caption: Home screens provide quick access to entering payment flows.
+    - file: pick-contact
+      alt: A screen showing a list of contacts to choose from
+      caption: Storing contact information makes consecutive payments convenient.
+    - file: donation-page-copy
+      alt: A website with a list of donation options for a Bitcoin designer
+      caption: Users may be required to copy & paste payment requests.
+    - file: donation-page-link
+      alt: A website with a single donation option for a Bitcoin designer
+      caption: Applications can initiate payment flows when users click specifically formatted links.
+    - file: donation-qr-code
+      alt: A sheet of paper with donation information for a Bitcoin designer
+      caption: Scanning a QR code is a common way to initiate a payment in a real-world setting.
+imagesEntryScreens:
+    - file: lightning-address-options
+      alt: A payment request screen with options to send, request, and add to contacts
+      caption: If no action type (pay, withdraw) is provided, users need to choose.
+    - file: pay-invoice-without-amount
+      alt: A payment request screen with the recipient pre-filled
+      caption: The minimum amount of information in an invoice is the recipient.
+    - file: pay-invoice-with-details
+      alt: A payment request screen with complex pre-filled information
+      caption: Invoices can also include more complex information, especially the LNURL format.
+    - file: withdraw-invoice
+      alt: A payment request screen for withdrawing bitcoin
+      caption: Invoices can also offer the user to withdraw bitcoin.
+    - file: error-invoice-expired
+      alt: A home screen with a modal explaining an invoice has expired
+      caption: Basic Lightning invoices expire, typically after one hour.
+    - file: error-incompatibility
+      alt: A home screen with an informational modal around invoice compatibility
+      caption: Compatibility problems are not uncommon due to the many formats.
+imagesInfo:
+    - file: home
+      alt: Wallet home screen with amount input, pay and request options
+      caption: Payment flows can typically also be initiated from the wallet home screen.
+    - file: review
+      alt: A payment form with basic information completed
+      caption: Amount and recipient entry should be simple and convenient.
+    - file: review-with-label-and-tags
+      alt: A payment form with all information completed
+      caption: Adding additional meta data makes it easier for users to organize their spending.
+imagesProcessing:
+    - file: processing
+      alt: Payment screen showing the transaction is being sent
+      caption: Lighning transactions typically complete in seconds and don't require loaders.
+    - file: processing-longer-wait
+      alt: Payment screen showing that the transaction is taking longer than expected
+      caption: If a transaction takes uncharacteristically long, users should be informed.
+    - file: processing-on-chain
+      alt: Payment screen showing showing pending status for an on-chain transaction
+      caption: More detailed status updates are helpful for on-chain transactions, as they can take 10+ minutes to confirm.
+    - file: processing-transactions
+      alt: Transaction history screen showing payments with various different statuses
+      caption: Users should not be forced to wait until transaction completion to keep using the wallet, and be able to review the status at any time.
+imagesErrors:
+    - file: routing-error
+      alt: A screen describing a specific error with options to address it
+      caption: Example of an identifiable error with known solutions.
+    - file: generic-error
+      alt: A screen describing a generic error with options to self-help
+      caption: A generic error with tips for the user to try.
+    - file: generic-error-details
+      alt: A screen showing error details
+      caption: Access to error details for problem-solving.
 ---
 
 <!--
@@ -39,169 +109,184 @@ layout = "full-width"
 
 # Sending bitcoin
 
-Sending bitcoin can be a very straightforward or complex flow in a Bitcoin application. People may be sending bitcoin to a known contact, moving it between their wallets on different devices, or making a purchase through a [payment processor]({{ '/guide/getting-started/software/#payment-processors' | relative_url }}).
+Sending bitcoin is one of the most essential user activities in a Bitcoin application, and also one of the least structured ones. People may want to send bitcoin to a known contact, transfer it to another wallet on a different device, or make a purchase via a [payment processor]({{ '/guide/getting-started/software/#payment-processors' | relative_url }}).
 
-Let us look at the main transaction options senders need to configure when moving bitcoin:
+## Payment entry points
 
-- **Amount** — How much to send
-- **Recipient address** — Where to send the bitcoin
-- **Coin selection** — Which coins/inputs to use (optional)
-- **Fee settings** — Prioritize fast confirmation or low cost (optional)
+The need to send bitcoin can be triggered by many different use cases, and initiated by both sender and receiver. Common entry points are:
 
-You do not need to follow the order below. Feel free to tailor the configuration's order for the payment to what best serves your users. For example, you may make users set the amount before they enter the address.
+- Manual entry of address and amount
+- Sending to a previously saved contact
+- Copy & pasting payment information
+- Clicking a payment link
+- Scanning a QR code
+- Receiving a contactless payment request (using [NFC](https://en.wikipedia.org/wiki/Near-field_communication) or [Bluetooth](https://en.wikipedia.org/wiki/Bluetooth))
 
-## Get the recipient address
+Below are visualizations of some of these entry points.
+
+{% include image-gallery.html pages = page.imagesEntryPoints %}
+
+Since users cannot control how a payment request is presented to them, wallets should be highly flexible in terms of input options and [interoperability]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }}). If your wallet does not support a particular payment request, users should be presented with a human readable [error]({{ '/guide/payments/send/#errors' | relative_url }}).
+
+Payment information can be shared in many formats and over diverse communication channels. Each has its own advantages and limitations. More details on the [payment request formats]({{ '/guide/payments/send/payment-request-formats/' | relative_url }}) page.
+
+## Presenting payment requests
+
+Once the application has imported a payment request, it should provide clear instructions and options to the user.
+
+{% include image-gallery.html pages = page.imagesEntryScreens %}
+
+## Manual payment initiation
+
+When responding to an invoice that contains all relevent information, the user can quickly review and approve it. In other scenarios, it may be required to manually enter or edit various details.
+
+{% include image-gallery.html pages = page.imagesInfo %}
+
+**Recipient**
+
+The most convenient option for choosing a recipient is from previously saved contacts. Alternatively, users can enter on-chain addresses, Lightning addresses, Lightning node IDs, or other static identifies that are supported by the wallet.
+
+There are also static [invoice types]({{ '/guide/payments/send/payment-request-formats/' | relative_url }}) that can receive payments repeatedly. These are less intuitive overall due to their appearance, but could also be considered payment endpoints.
+
+**Amount**
+
+If no amount is provided via a payment request, manual entry should be simple and convenient so users don’t accidentally send an incorrect amount. The amount should be displayed in bitcoin or satoshi value, as well as the user’s local currency. Options to quickly toggle between them should be available. More on the [Units & Symbols page]({{ '/guide/payments/units-and-symbols/' | relative_url }}).
+
+**Meta data**
+
+A transaction history is hard to make sense of when it only shows amounts, dates, and identifiers. Users should be allowed to add descriptions, tags, and other meta data to add context. This context can separately be used for helpful tools like visual spending breakdowns.
+
+## Fees
+
+Payment fees can drastically differ based on a few attributes:
 
 <div class="center" markdown="1">
+
 {% include image.html
-   image = "/assets/images/guide/payments/send/get-recipient-address.png"
-   retina = "/assets/images/guide/payments/send/get-recipient-address@2x.png"
-   alt-text = "Graphic showing chat messages between the sender and receiver. The sender sends a bitcoin address and the receiver agrees to pay."
+   image = "/assets/images/guide/payments/send/fee-options.png"
+   retina = "/assets/images/guide/payments/send/fee-options@2x.png"
+   alt-text = "Examples of on-chain, Lightning and Lightning routing fees"
    width = 400
-   height = 400
+   height = 417
    layout = "float-right-desktop"
 %}
 
-To send a payment on the Bitcoin blockchain, the sender needs to obtain an address from the recipient. Since Bitcoin [addresses]({{ '/guide/glossary/address' | relative_url }}) are long and seemingly random, they are best shared by copying and pasting in plain text, as a [payment link]({{ '/guide/designing-products/wallet-interoperability/#payments' | relative_url }}), or as a scannable [QR Code]({{ '/guide/designing-products/wallet-interoperability/#qr-codes' | relative_url }}).
+**Lightning routing fees**
 
-The receiver does this by generating a new address in their wallet application, then sharing it with the sender. If the sender and receiver are physically close to each other, scanning the receiver's address as a QR Code will be easy. Still, if they are not, they can send the address as text in any regular communication tool like email, SMS, etc.
+On the Lightning network, payments are passed between nodes to get from the sender to the receiver. Each of those nodes may charge a base fee and a second fee based on a percentage of the amount forwarded. Fees paid can vary, but are typically in the single-digit or double-digit Satoshi range (a small fraction of on-chain fees).
+
+**Lightning service provider fees**
+
+In certain situations, the Lightning wallet may not have enough channel liquidity to send a payment. Wallet providers may offer to alleviate these friction points, and earn additional fees. A common scenario is the automatic opening of a payment channel when a wallet attempts to send a payment larger than their outbound capacity.
+
 </div>
-
-## Inputting an address
 
 <div class="center" markdown="1">
+
+**On-chain fees**
+
 {% include image.html
-   image = "/assets/images/guide/payments/send/input-address.png"
-   retina = "/assets/images/guide/payments/send/input-address@2x.png"
-   alt-text = "Address input field prompting the sender to paste the address"
-   width = 400
-   height = 219
-   layout = "float-right-desktop"
+   image = "/assets/images/guide/payments/send/confirm-fees.png"
+   retina = "/assets/images/guide/payments/send/confirm-fees@2x.png"
+   alt-text = "Screen showing fee options for a transaction"
+   caption = "On-chain fees can vary drastically and should be easy to edit."
+   width = 250
+   height = 541
+   layout = "float-right-desktop -background -shadow"
 %}
 
-Once you have gotten the address, it's time to enter the payment details. Bitcoin transactions are irreversible, so both the sender and receiver should take great care in correctly sharing and inputting addresses.
-
-**QR Code** -- Camera access will need to be granted to your Bitcoin application to enable scanning of QR Codes. Once the camera detects a valid address in the QR Code, it should automatically fill the address field.
-
-**Copy/Paste** -- When the sender receives the address or payment link as text, your application can detect a valid address in the clipboard and prompt the sender to press a button to paste it.
+This fee is dependent on how many other transactions are currently waiting to be processed on the base layer as a whole. The [average fee](https://ycharts.com/indicators/bitcoin_average_transaction_fee) in January 2021 was $0.63, and $28.60 in April 2021.
 
 </div>
 
-**Do's**
-
-- Indicate clearly if the address is valid or not
-- Show the full address if possible to help the sender visually verify it is correct
-- If space is a constraint, truncate the address in the middle so that both the beginning and end are visible
-
-**Don'ts**
-
-- Make it possible that a transaction is sent if the address is invalid
-
-## Inputting an amount
+## Review & approval
 
 <div class="center" markdown="1">
+
 {% include image.html
-   image = "/assets/images/guide/payments/send/input-amount.png"
-   retina = "/assets/images/guide/payments/send/input-amount@2x.png"
-   alt-text = "Amount input field with bitcoin, local currency and selections for fractions of the total wallet balance"
-   width = 400
-   height = 222
-   layout = "float-right-desktop"
+   image = "/assets/images/guide/payments/send/confirm.png"
+   retina = "/assets/images/guide/payments/send/confirm@2x.png"
+   alt-text = "Invoice approval screen"
+   caption = "A compact summary to confirm the information is accurate."
+   width = 250
+   height = 541
+   layout = "float-right-desktop -background -shadow"
 %}
 
-Unless the sender needs to transfer a specific amount of bitcoin, they should have the ability to switch between other currencies when inputting the amount. It is common practice to provide bitcoin, satoshi, and the sender's preferred fiat currency as options.
+Particularly with payments for larger amounts, it is good practice to allow users to review and confirm the information before it is sent.
 
-Applications sometimes also allow the sender to select fractions of their total available balance by providing a "max" or "use full balance" button. These fractions can be handy when the sender needs to make transfers from their hot wallet to a more secure hardware wallet.
+Payments initiated via invoices which don't require any additional input by the user can avoid this review step, as the whole user interaction is one of review and confirmation.
+
+Wallets that offer features for [spending limits]({{ '/guide/onboarding/protecting-a-wallet/#wallet-limits' | relative_url }}) or support [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}) schemes for additional security may ask users to go through additional confirmation steps here.
+
 </div>
 
-**Do's**
+## Transaction processing
 
-- Allow senders to switch which denomination they are inputting the amount with
-- State the total balance available (subtracting the required fee)
-- Allow selecting max amount or fractions for easier fund management
-- Payment links and QR Codes can contain an amount. When they do, your application should populate the amount field automatically
-- Indicate if an amount entered is more than the available balance
+Processing times may also differ between on-chain and Lightning network payments. On-chain, pending transactions are bundled into a [new block]({{ '/guide/getting-started/technology-primer/#what-is-a-blockchain' | relative_url }}) roughly every 10 minutes. On the Lightning network, [payment routing]({{ '/guide/getting-started/technology-primer/#how-are-payments-routed' | relative_url }}) happens instantly and is largely dependent on the number of nodes involved, as well as their liquidity and processing speeds.
 
-## Setting the transaction fee
+When transactions take longer than expected, users need to be clearly informed about the status. In scenarios like in-store payments, speedy confirmation is of the essence, as the user wants to move on, and the merchant may have other customers waiting. In-app status updates can be coupled with notifications to ensure that both parties are confident that everything is in order. For a framework on timing, see [this article on response time limits](https://www.nngroup.com/articles/response-times-3-important-limits/).
+
+{% include image-gallery.html pages = page.imagesProcessing %}
+
+In case a user needs to briefly wait, the application should not block the interface, but offer other useful actions to perform, such as labelling and tagging the payment, or adding the recipient to the contact list.
+
+On-chain, you may offer users the options to cancel (via [replace-by-fee](https://bitcoinops.org/en/topics/replace-by-fee/) (RBF)) or speed-up (via [child-pays-for-parent](https://bitcoinops.org/en/topics/cpfp/) (CPFP)) a transaction. This is only possible after the transaction has been broadcast, but before it has been included in a block.
+
+## Success
 
 <div class="center" markdown="1">
+
 {% include image.html
-   image = "/assets/images/guide/payments/send/select-fee-rate.png"
-   retina = "/assets/images/guide/payments/send/select-fee-rate@2x.png"
-   alt-text = "Fee selection component with urgent, normal, and not urgent options"
-   width = 400
-   height = 470
-   caption = "G = Haitian Gourde, the local currency of Haiti."
-   layout = "float-right-desktop"
+   image = "/assets/images/guide/payments/send/success.png"
+   retina = "/assets/images/guide/payments/send/success@2x.png"
+   alt-text = "Screen showing a completed transaction"
+   caption = "A brief transaction summary with access to further details."
+   width = 250
+   height = 541
+   layout = "float-right-desktop -background -shadow"
 %}
 
-The application can automatically estimate a fee and set it for the sender. This would typically prioritize the transaction to be included in a block as soon as possible. Since the fee rate may vary if the network is busy, you can give senders more fine-grained fee controls so they can choose to optimize for faster confirmation or lower fees.
+Completion of a payment should be clearly indicated to the user.
 
-When allowing the sender to set fees, it is essential to communicate the estimated cost in their preferred currency and the estimated time until first confirmation. Be mindful that the way Bitcoin fees get calculated may not map to the sender's traditional financial experience. If you allow adjustment of fees, consider providing details on how it gets calculated.
+It should also be simple to share a proof that the payment was made. In-person, it may suffice to show the screen to the receiver. Additional options like sharing the confirmation via chat or email may also be useful.
 
-Human error with fee selection can lead to costly mistakes, and fee estimations are imperfect. Carefully consider if and how you expose transaction fee selection to senders.
+As on-chain transactions can be globally verified by anyone, a link to a [Bitcoin explorer]({{ '/guide/getting-started/software/#explorers' | relative_url }}) can be shared as a payment confirmation. For Lightning transactions, the so-called `preimage` can be considered a proof of payment.
+
 </div>
 
-**Variations**
-- Automatically set the fee rate
-- Allow sender to choose from presets
-- Allow sender to enter a custom fee rate (advanced)
+## Errors
 
-**Do's**
+Handling problems gracefully is particularly important when it comes to payments, as users may be concerned about having lost funds. Clear communication may include:
+- A brief explanation of what went wrong
+- Status of the funds and payment to address user worries
+- How the problem can be fixed or avoided
+- What to do next
 
-- If the sender does not have advanced knowledge about bitcoin fees but wants control over the fee rate, provide presets to select how urgent the transaction is (e.g. low, medium, high priority)
-- When using presets, clearly communicate estimated confirmation time and costs related to each of the fee rate options
-- When allowing users to enter their own fee rate, warn the sender if they enter an amount far beyond the recommended fee rate for the next block
+{% include image-gallery.html pages = page.imagesErrors %}
 
-## Reviewing and approving the payment
+It is ideal when the application can automatically identify and fix or avoid the problem. This may not always be possible, or even wanted, if the solution incurs extra fees or takes time. For practical purposes, it can be helpful to group problems into categories, such as:
 
-<div class="center" markdown="1">
-{% include image.html
-   image = "/assets/images/guide/payments/send/review-payment.png"
-   retina = "/assets/images/guide/payments/send/review-payment@2x.png"
-   alt-text = "Approval screen with details of the transaction and confirmation button"
-   width = 400
-   height = 400
-   layout = "float-right-desktop"
-%}
+- The problem cannot be identified
+- The problem can be identified and requires manual action by the user
+- The problem can be automatically fixed, but the user needs to choose which solution to use
+- The app can likely automatically fix the problem with negligible impact on the user
 
-A valid transaction that is broadcast to the network cannot be reversed, so it is critical that the sender is given a chance to double-check the payment details (amount, recipient address, total fee, etc) before submitting the transaction.
+Effectively supporting users when problems occur can build trust and confidence, and essential aspect for financial applications.
 
-If your application allows setting spending limits, and the current transaction exceeds it, make sure they go through some security check (biometric, enter a PIN, 2FA password, etc). This technique can also be employed if the transaction is attempting to use the max wallet balance.
-</div>
+---
 
-**Do's**
+## Advanced options
 
-- Allow the sender to review payment details like address, amount, and fees and adjust if necessary before submitting the transaction
-- Show the amount being sent and the fee information in both bitcoin and the senders preferred currency
+There are situations in which users may want to make more complex adjustments to the payment.
 
-## Transaction processing and confirmation
+**Coin selection**
 
-{% include image.html
-   image = "/assets/images/guide/payments/send/first-confirmation.png"
-   retina = "/assets/images/guide/payments/send/first-confirmation@2x.png"
-   mobile = "/assets/images/guide/payments/send/first-confirmation-mobile.png"
-   mobileRetina = "/assets/images/guide/payments/send/first-confirmation-mobile@2x.png"
-   alt-text = "Notifications after the transaction is broadcast"
-   width = 800
-   height = 270
-%}
+Some users may prefer to choose which of their bitcoin (UTXOs to be precise) to send, in order to protect their privacy. More on this topic on the [Coin selection page]({{ '/guide/payments/send/coin-selection/' | relative_url }}) page.
 
-Let us look at how we communicate to the sender about the [processing of a transaction]({{ '/guide/payments/transactions/#transaction-lifecycle' | relative_url }}) after it has been broadcast. There are three main states that you would want to inform or notify the sender of:
+**Lightning routing options**
 
-**Pending/Unconfirmed** -- The transaction is successfully in the nodes' memory pool and is being propagated throughout the network. The fee market can sometimes be volatile, and the "time until the first confirmation" may change from what was estimated when they had initially broadcast the transaction. While pending, inform the sender of when they can expect the first transaction confirmation.
-
-**First confirmation** -- The transaction has been selected by miners and included in a block. Since a reorganization can still happen, a transaction with one confirmation can also be considered a pending state by the receiver. This is a good point to notify the sender.
-
-**Sixth confirmation** -- Commonly regarded as when the final settlement of the payment happens. Merchants, for example, would only be willing to release the product or service at this point.
-
-**Do's**
-- Clearly indicate the state of the outgoing transaction
-- Show the number of confirmations the transaction has
-- Provide information on transaction/block ID for receipt purposes
-
-**Don'ts**
-- Show the transaction as confirmed until it has received ***at least*** one confirmation, but preferably six
+Routing is a probabilistic endeavor. For example, a routing algorithm may identify two routes. The first one has a low fee but is also less likely to succeed. The second route has a higher fee, but is more likely to succeed. Due to the technical complexity and unknowns, there is [ongoing conversation](https://github.com/BitcoinDesign/Guide/issues/585) whether routing options are relevant for users to be aware of and make decisions on.
 
 ---
 
