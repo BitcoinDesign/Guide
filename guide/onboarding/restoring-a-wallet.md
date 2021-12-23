@@ -3,7 +3,7 @@ layout: guide
 title: Restoring a wallet
 description: Options for restoring a wallet, from automatic cloud backup to recovery phrases, and more.
 parent: Onboarding
-nav_order: 3
+nav_order: 5
 permalink: /guide/onboarding/restoring-a-wallet/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/onboarding/restoring-a-wallet/restoring-a-wallet-preview.png
@@ -66,12 +66,12 @@ Some less popular methods for restoring a wallet include importing a file with a
 
 ---
 
-The next section looks at options for adding extra layers of security and [protecting a wallet]({{ '/guide/onboarding/protecting-a-wallet/' | relative_url }}).
+Next, let’s look at [private key management]({{ '/guide/private-key-management/introduction/' | relative_url }}) to consider for your bitcoin application.
 
 {% include next-previous.html
-   previousUrl = "/guide/onboarding/backing-up-a-wallet/manual-backup/"
-   previousName = "Manual backups"
-   nextUrl = "/guide/onboarding/protecting-a-wallet/"
-   nextName = "Protecting a wallet"
+   previousUrl = "/guide/onboarding/protecting-a-wallet/"
+   previousName = "Protecting a wallet"
+   nextUrl = "/guide/private-key-management/introduction/"
+   nextName = "Private key management"
 %}
 

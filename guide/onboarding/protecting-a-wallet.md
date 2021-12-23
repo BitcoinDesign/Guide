@@ -359,11 +359,11 @@ By including UX patterns for hiding information pattern wallets, we give users a
 
 ---
 
-Now let's look at the different ways a user might go about [funding a wallet]({{ '/guide/onboarding/funding-a-wallet/' | relative_url }}).
+The next section looks at options for adding extra layers of security and [restoring a wallet]({{ '/guide/onboarding/restoring-a-wallet/' | relative_url }}).
 
 {% include next-previous.html
-   previousUrl = "/guide/onboarding/restoring-a-wallet/"
-   previousName = "Restoring a wallet"
-   nextUrl = "/guide/onboarding/funding-a-wallet/"
-   nextName = "Funding a wallet"
+   previousUrl = "/guide/onboarding/backing-up-a-wallet/manual-backup/"
+   previousName = "Manual backup"
+   nextUrl = "/guide/onboarding/restoring-a-wallet/"
+   nextName = "Restoring a wallet"
 %}

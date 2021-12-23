@@ -115,11 +115,11 @@ Below is an example of some carousel screens that might be useful in helping a u
 
 ---
 
-Ok, now let's look at [backing up a recovery phrase.]({{ '/guide/onboarding/backing-up-a-wallet/' | relative_url }})
+Ok, now let's look at [funding a wallet.]({{ '/guide/onboarding/funding-a-wallet/' | relative_url }})
 
 {% include next-previous.html
    previousUrl = "/guide/onboarding/introduction/"
-   previousName = "Getting to know your users"
-   nextUrl = "/guide/onboarding/backing-up-a-wallet/"
-   nextName = "Backing up a recovery phrase"
+   previousName = "Onboarding introduction"
+   nextUrl = "/guide/onboarding/funding-a-wallet/"
+   nextName = "Funding a wallet"
 %}
