@@ -323,7 +323,8 @@ table {
   color: $table-text-color;
   border-collapse: collapse;
   th, td {
-    padding: ($spacing-unit / 3) 0;
+    padding: ($spacing-unit / 3) ($spacing-unit / 3);
+    vertical-align: top;
   }
   th {
     border-bottom: 1px solid $table-border-color;

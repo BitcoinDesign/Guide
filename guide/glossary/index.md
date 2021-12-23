@@ -226,7 +226,7 @@ Bitcoin wallets and addresses are have both [public](#public-key) and [private k
 
 ### Lightning invoice
 
-Users of the Lightning network use a Lightning invoice to request a payment. It is defined by [BOLT 11](https://github.com/lightningnetwork/lightning-rfc/blob/master/11-payment-encoding.md) and includes an amount to be paid, destination of the payment, and an optional message. Unlike Bitcoin addresses, Lightning invoice's expire after a set amount of time. 
+Users of the Lightning network use a Lightning invoice to request a payment. It is defined by [BOLT 11](https://github.com/lightningnetwork/lightning-rfc/blob/master/11-payment-encoding.md) and includes an amount to be paid, destination of the payment, and an optional message. Unlike Bitcoin addresses, Lightning invoice's expire after a set amount of time.
 
 ### Lightning network
 
@@ -293,6 +293,10 @@ A small piece of data that has all the information needed to generate a specific
    width = 1600
    height = 400
 %}
+
+### Payment
+
+A payment is a transaction that occurs over the Lightning network. Payments are routed through Lightning payment channels and are not recorded in the Bitcoin blockchain.
 
 ### Private key
 
@@ -368,7 +372,8 @@ One of the most important activities of the Bitcoin network is to verify that si
 A technique that makes complex multisig transactions look the same as standard transactions on the blockchain. This improves both efficiency and privacy, as multiple signatures are combined into a single one.
 
 ### Transaction
-*ToDo*
+
+A transaction is a transfer of value over the Bitcoin network. While transactions can be complicated, one of the simplest forms of a transaction would be sending bitcoin from one address to another. A transaction is not considered final until it has been included in a valid block by a miner.
 
 ### Unspent transaction output (UTXO)
 An output that has not been sent to another address. The bitcoin wallet balance is calculated from adding up unspent outputs.
