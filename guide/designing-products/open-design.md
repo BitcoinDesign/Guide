@@ -55,6 +55,7 @@ Illustration sources
 **Open design welcomes the free exchange of ideas, knowledge, processes, and tools. It empowers by lifting barriers to innovation. It opens the door to scaling design projects by distributing adaptable resources.**
 
 ## A balance of independence and collaboration
+
 Open source projects are often driven by global communities. These hubs of learning and building allow you to carve an individual niche. Align yourself to projects based on your passions, talents, interests, and beliefs. Your work becomes a voluntary public contribution toward common goals. Some projects are also supported through grants and donations.
 
 Open design communities can have multidisciplinary teams with designers, developers, copywriters, translators, project managers, etc. These diverse groups can develop stronger solutions through varied points of view.
@@ -63,7 +64,7 @@ Open design communities can have multidisciplinary teams with designers, develop
 
 - Ethics
 - Personal responsibility
-- Independence & self-will
+- Independence & self-motivation
 - Communication
 - Open-mindedness
 - Respectful feedback
@@ -83,8 +84,8 @@ Thousands of projects have borrowed ideas, techniques, and code from Bitcoin. Co
 
 This ethical responsibility encompasses application design. Most people interact with applications instead of the underlying Bitcoin technical protocol. If someone controls access to an application, it won't matter if the protocol is open. It is up to the global community to build [principled Bitcoin applications](guide/designing-products/principles/)
 
-Bitcoin is a protocol created to give access to anyone. Access and accessibility go hand in hand. Designing Bitcoin products means working on removing barriers of entry. It means making decisions to create a unique balance of features for ease of use. You should design for a specific audience at the same time as giving the widest access.
-
+Bitcoin is a protocol created to give access to anyone. Access and accessibility go hand in hand. Designing Bitcoin products means working on removing barriers of entry. It means making decisions to create a unique
+balance of features for ease of use.
 
 ## Values
 
@@ -125,6 +126,8 @@ Open-source software development has existed for decades. Public review and deba
 - Feel free to ask questions or ask for help in solving bitcoin design issues.
 - See some of the community [Projects](https://bitcoin.design/projects/).
 - Visit our [Contribute](https://bitcoin.design/contribute/) page.
+- Follow us on [Twitter](https://twitter.com/bitcoin_design)
+- Subscribe to [our YouTube](https://www.youtube.com/c/BitcoinDesign)
 
 ### Test, redesign, and engage in feedback
 
