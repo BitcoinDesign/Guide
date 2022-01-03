@@ -46,7 +46,7 @@ We have a dedicated page that covers funding a wallet using the outlined service
 
 The first step in funding a wallet is asking the user if they currently own any bitcoin.
 
-If your user does not own bitcoin, your wallet should guide them in obtaining some. Offering a guide on how to obtain bitcoin will prevent users from falling victim to scams and low quality exchanges. Alternatively, you could offer the option to buy directly within your wallet, which greatly simplifies the funding process.
+If your user does not own bitcoin, your wallet should provide practical tips to securely acquire bitcoin from trustworthy exchanges. Alternatively, you could offer the option to buy directly within your wallet, which greatly simplifies the funding process.
 
 If the user wants to fund their wallet at a later time they should have the option to skip this funding flow and go straight into the wallet.
 
