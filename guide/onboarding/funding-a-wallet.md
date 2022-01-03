@@ -296,7 +296,7 @@ Initially, the user will only have a payment channel with outbound liquidity mea
 
 {% include /tip/open.html label="⚡ On-demand channels" icon="info" color="blue" %}
 
-Offering on-demand channels as a Lightning service allows users to receive Lightning payment giving them both inbound and outbound liquidity.
+Offering on-demand channels as a Lightning service allows users to receive Lightning payments, giving them both inbound and outbound liquidity.
 
 {% include /tip/close.html %}
 
