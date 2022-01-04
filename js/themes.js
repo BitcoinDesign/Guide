@@ -93,6 +93,54 @@ let themes = [
         link: "https://github.com/BitcoinDesign/Guide/issues/45"
     }
   },
+
+  {
+    // Rutuja bitcoin page theme banner
+    logo: {
+        path: "/assets/bitcoin-design-community-banner.svg",
+        fillColor: "#FFF",
+        outlineColor: "#000"
+    },
+    title: {
+        fillColor: "#FEE78D",
+        outlineColor: "#FEE78D"
+    },
+    description: {
+        fillColor: "#8E8E8E"
+    },
+    button1: {
+        fillColor: "#FEE78D",
+        outlineColor: "#FEE78D",
+        labelFillColor: "#5A4C4C"
+    },
+    button2: {
+        fillColor: "#5A4C4C",
+        outlineColor: "#FEE78D",
+        labelFillColor: "#FEE78D"
+    },
+    background: {
+        path: '',
+        pathRetina: '',
+        pathMobile: '',
+        pathMobileRetina: '',
+        backgroundColor: ''
+    },
+    copy: {
+        backgroundColor: "#5A4C4C"
+    },
+    image: {
+        path: 'url("/assets/images/home/banner/rutuja_bitcoin_theme_banner_web.jpg")',
+        pathRetina: 'url("/assets/images/home/banner/rutuja_bitcoin_theme_banner_web@2x.jpg")',
+        pathMobile: 'url("/assets/images/home/banner/right_themeBG_mobile.jpg")',
+        pathMobileRetina: 'url("/assets/images/home/banner/right_themeBG_mobile@2x.jpg")',
+        backgroundColor: "#5A4C4C"
+    },
+    flipLayoutOnMobile: false,
+    author: {
+        name: "Rutuja Kelkar",
+        link: "https://github.com/BitcoinDesign/Guide/issues/592"
+    }
+  },
   {
     // 3D abstract
     logo: {
