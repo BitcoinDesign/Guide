@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Payments
-description: Diving into the user experience of bitcoin payments.
+description: Diving into the user experience of mobile bitcoin payments.
 nav_order: 6
 has_children: true
 permalink: /guide/payments/
@@ -40,9 +40,9 @@ An introduction to how sending bitcoin works.
 
 ---
 
-### [Receiving bitcoin]({{ '/guide/payments/receive/' | relative_url }})
+### [Requesting bitcoin]({{ '/guide/payments/request/' | relative_url }})
 
-An introduction to how receiving and requesting bitcoin works.
+An introduction to how requesting and receiving bitcoin works.
 
 ---
 
@@ -70,4 +70,3 @@ How to help users organize and manage their transaction data and holdings.
    nextUrl = "/guide/payments/transactions/"
    nextName = "Transactions overview"
 %}
-

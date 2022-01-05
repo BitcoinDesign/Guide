@@ -151,8 +151,8 @@ There is no perfect solution to guarantee 100% privacy that lasts forever becaus
 Next, let's look at [units & symbols]({{ '/guide/payments/units-and-symbols/' | relative_url }}).
 
 {% include next-previous.html
-   previousUrl = "/guide/payments/receive"
-   previousName = "Receiving bitcoin"
+   previousUrl = "/guide/payments/request"
+   previousName = "Requesting bitcoin"
    nextUrl = "/guide/payments/units-and-symbols/"
    nextName = "Units & Symbols"
 %}
