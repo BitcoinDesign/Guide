@@ -1,0 +1,28 @@
+article.guide {
+    .emoji-box {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        border: 1px solid #BBBBBB;
+        padding: 15px 20px;
+
+        &__emoji {
+            font-size: 40px;
+        }
+
+        &__copy {
+            h4 {
+                margin: 0;
+                font-size: 22px;
+
+                &:before {
+                    display: none;
+                }
+            }
+
+            p {
+                margin: 2px 0 0 0;
+            }
+        }
+    }
+}

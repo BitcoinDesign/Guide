@@ -1,0 +1,7 @@
+<div class="emoji-box">
+	{% if include.emoji %}<div class="emoji-box__emoji">{{ include.emoji }}</div>{% endif %}
+    <div class="emoji-box__copy">
+        {% if include.title %}<h5>{{ include.title }}</h5>{% endif %}
+        {% if include.description %}<p markdown="1">{{ include.description }}</p>{% endif %}
+    </div>
+</div>
