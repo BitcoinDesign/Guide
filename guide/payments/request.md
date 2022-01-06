@@ -83,7 +83,7 @@ The most common way bitcoin is requested today is in the form of single-use paym
 
 ### Amount
 
-When generating a single-use payment request, users need to be able to add an amount to be paid.  Entering an amount from the home screen can speed up the requesting flow. Alternatively, users can add an amount to an already generated payment request. Entering an amount needs to be clear to prevent users entering incorrect amounts.
+When generating a single-use payment request, the receiver may want to add an amount to be paid. Entering an amount from the home screen can speed up the requesting flow. Alternatively, users can add an amount to an already generated payment request. Entering an amount needs to be clear to prevent users entering incorrect amounts.
 
 Amount units need to be toggleable between bitcoin, satoshi and local currency values as senders may request in a set unit. Ensure the unit being entered is prominent to prevent entering of the wrong unit amount. More on the [Units & Symbols page]({{ "/guide/payments/units-and-symbols/" | relative_url }}).
 
