@@ -93,7 +93,7 @@ There are several address types that can be used for on-chain transfer requests.
 
 ### Meta data
 
-A payment request with only standard data like an amount and date communicates little to both parties about what the payment was for. Users should have the option to attach a note for record keeping and/or for the sender to read. Adding tags, labels and any other metadata that may be relevant to give more context to the payment is also beneficial.
+A payment request with only standard data like an amount and date communicates little to both parties about the payment. Users should have the option to attach a note for record-keeping and for the sender to read. Adding tags, labels and any other metadata that may be relevant to give more context to the payment is also beneficial.
 
 #### Invoice expirations
 
