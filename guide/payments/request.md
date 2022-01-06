@@ -295,7 +295,7 @@ Sharing a payment request as plaintext involves simply copying & sharing it with
 
 ### QR code
 
-QR codes are a common way in which payment requests are presented to senders. Any type of payment request can be converted into a QR for sharing with a sender. When generating QR codes in a wallet application, ensure they are large enough and have high contrast with the applications background so they can be easily scanned.
+QR codes are a common way to present payment requests to senders. Any type of payment request can be converted into a QR for sharing with a sender. When generating QR codes in a wallet application, ensure they are large enough and have high contrast with the application's background to be easily scanned.
 
 It’s typical that QR codes be downloadable. For single-use requests this makes them easier to share over various mediums. For reusable requests, these QR codes can be displayed in places where payments are needed to be regularly sent, like a website's donation page for example.
 
