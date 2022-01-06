@@ -24,16 +24,18 @@ image: https://bitcoin.design/assets/images/calendar/calendar-preview.jpg
 
 Join community calls, design reviews, project discussions and other events. Our calendar makes it easy to stay in the loop.
 
-[Subscribe](https://raw.githubusercontent.com/BitcoinDesign/Meta/calendar/events.ical){: .button}
+[Subscribe to the calendar](https://raw.githubusercontent.com/BitcoinDesign/Meta/calendar/events.ical){: .button}
 
-Design is about people. Slack, Github and Twitter are fantastic, but sometimes it’s helpful to get on video or audio chats and talk things through.
+Design is about people. Slack, Github and Twitter are fantastic, and in addition we regularly get on video or audio chats and talk things through.
 
 ## What’s in the calendar?
 
+<div class="emoji-boxes">
 {% include emoji-box.html
     emoji = "🌎"
     title = "Community calls"
     description = "Open conversations around current topics. Every 3 weeks on Twitter Spaces."
+    first = true
 %}
 
 {% include emoji-box.html
@@ -52,7 +54,9 @@ Design is about people. Slack, Github and Twitter are fantastic, but sometimes i
     emoji = "🙌"
     title = "Project calls"
     description = "Individual projects organize their own calls to hang out and discuss progress. Peek in if you’re curious."
+    last = true
 %}
+</div>
 
 ## How to subscribe manually
 
@@ -65,7 +69,7 @@ Our [calendar](https://raw.githubusercontent.com/BitcoinDesign/Meta/calendar/eve
 - In Thunderbird (desktop), `New Calendar` > `On my network` > `iCalendar (ICS)` and paste the [calendar link](https://raw.githubusercontent.com/BitcoinDesign/Meta/calendar/events.ical) in the location field.
 - Calendar tools regularly reload subscribed calendars for updates. How often this happens varies by tool
 
-There are two requirements for an issue to be included:
+## Adding your own event
 
 - The issue needs to include a `UTCTime` meta property following this format: `UTCTime: 2020-10-14 9:00 UTC -7`. You can seen an example [here](https://github.com/BitcoinDesign/Meta/issues/27)
 - A maintainer needs to add the `call` label to the issue (this prevents spam)

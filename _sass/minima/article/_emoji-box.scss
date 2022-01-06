@@ -4,6 +4,7 @@ article.guide {
         align-items: center;
         gap: 20px;
         border: 1px solid #BBBBBB;
+        border-radius: 5px;
         padding: 15px 20px;
 
         &__emoji {
@@ -11,7 +12,7 @@ article.guide {
         }
 
         &__copy {
-            h4 {
+            h5 {
                 margin: 0;
                 font-size: 22px;
 
@@ -22,6 +23,22 @@ article.guide {
 
             p {
                 margin: 2px 0 0 0;
+            }
+        }
+    }
+
+    .emoji-boxes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 20px;
+
+        @include media-query(medium-up) {
+            max-width: 1024px;
+
+            .emoji-box {
+                flex-basis: 35%;
+                flex-grow: 1;
             }
         }
     }
