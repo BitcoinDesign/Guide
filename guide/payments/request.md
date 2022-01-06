@@ -79,7 +79,7 @@ Below is an overview of these various entry points:
 
 ## Single-use payment requests
 
-The most common way bitcoin is requested today is in the form of single-use payment requests. For Lightning, a standard [BOLT11](https://github.com/lightning/bolts/blob/master/11-payment-encoding.md) invoice is used. For on-chain, [addresses of various types]({{ "/guide/glossary/address/" | relative_url }}) are used. Addresses can be reused though this is not advised due to privacy concerns. single-use invoices and addresses need to be easily and conveniently generated within a wallet application.
+The most common way bitcoin is requested today is in the form of single-use payment requests. For Lightning, a standard [BOLT11](https://github.com/lightning/bolts/blob/master/11-payment-encoding.md) invoice is used. For on-chain, [addresses of various types]({{ "/guide/glossary/address/" | relative_url }}) are used. Addresses can be reused though this is not advised due to [privacy concerns]({{ "/guide/payments/privacy/#generate-a-new-address-for-each-payment" | relative_url }}). Single-use invoices and addresses need to be easily and conveniently generated within a wallet application.
 
 ### Amount
 
