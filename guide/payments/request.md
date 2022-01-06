@@ -165,7 +165,7 @@ A piece of meta data unique to invoices is an expiration time. This is how long 
 
 ## Reusable payment requests
 
-Reusable payment requests aren’t as widely adopted or used as their single-use counterparts. For some use cases, reusable payment requests offer an improved user experience, more flexibility, and enable unique use cases compared to single-use payment requests. Reusable payment requests avoid users having to manually initiate a payment request each time they need to receive bitcoin, greatly simplifying payment flows.
+Reusable payment requests aren’t as widely adopted or used as their single-use counterparts. For some use cases, reusable payment requests offer an improved user experience, more flexibility, and enable unique use cases compared to single-use payment requests. Reusable payment requests prevent users from manually initiating a payment request each time they need to receive bitcoin, greatly simplifying payment flows.
 
 Reusable payment requests are common when making Lightning payments. They are made more frequently so having to manually generate a payment request for each payment adds a lot of friction.
 
