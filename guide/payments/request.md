@@ -291,7 +291,7 @@ Once a user has generated a payment request the next action to take is sharing i
 
 ### Plaintext
 
-Sharing a payment request as plaintext involves simply copying & sharing it with a sender. It is typical for Bitcoin wallets to provide a share button that allows receivers to conveniently share a payment request in this manner. Both reusable and single-use requests should be shareable as plaintext.
+Sharing a payment request as plaintext involves simply copying & sharing it with a sender. It is typical for Bitcoin wallets to provide a share button that allows receivers to share a payment request in this manner conveniently. Both reusable and single-use requests should be shareable as plaintext.
 
 ### QR code
 
