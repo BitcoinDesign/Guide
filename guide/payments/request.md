@@ -21,7 +21,7 @@ Illustration source
 
 # Requesting bitcoin
 
-To request bitcoin, the receiver must provide the sender with a payment request. There are several payment request formats available, both with Bitcoin and Lightning, with each having their own unique use cases and trade-offs. Payment requests can be single-use or reusable. This page covers the design considerations around generating, presenting, and sharing payment requests as well as receiving bitcoin.
+To request bitcoin, the receiver must provide the sender with a payment request. Several payment request formats are available, both with Bitcoin and Lightning, each having its unique use cases and trade-offs. Payment requests can be single-use or reusable. This page covers the design considerations around generating, presenting, and sharing payment requests as well as receiving bitcoin.
 
 ## Requesting entry points
 
