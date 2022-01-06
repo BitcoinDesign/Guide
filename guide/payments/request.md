@@ -383,7 +383,7 @@ Once a request has been shared, the sender then needs to send bitcoin to the req
 
 ### Lightning
 
-Receiving a Lightning payment is something that involves a lot of background complexity. How this is managed by a wallet application has a major impact on the end user's experience.
+Receiving a Lightning payment is something that involves a lot of background complexity. How a wallet application manages this, has a major impact on the end user's experience.
 
 To receive a Lightning payment, the receiver needs a payment channel with inbound liquidity and also has to be online. Some wallets offer services that allow channels to be opened on-demand if a user has no inbound liquidity when an incoming payment is received. They may also hold a payment for a user until they are online to forward it to them. Both of these services require a wallet to be solely connected to the peer that offers these services. We cover what services are commonly offered and how they work on our Lightning services page.
 
