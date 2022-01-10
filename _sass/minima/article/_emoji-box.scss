@@ -2,10 +2,10 @@ article.guide {
     .emoji-box {
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 25px;
         border: 1px solid #BBBBBB;
         border-radius: 5px;
-        padding: 15px 20px;
+        padding: 15px 25px;
 
         &__emoji {
             font-size: 40px;
@@ -15,6 +15,7 @@ article.guide {
             h5 {
                 margin: 0;
                 font-size: 22px;
+                transition: color 100ms $ease;
 
                 &:before {
                     display: none;
@@ -23,6 +24,19 @@ article.guide {
 
             p {
                 margin: 2px 0 0 0;
+                color: rgba(var(--front), 0.72);
+            }
+        }
+    }
+
+    a.emoji-box {
+        &:hover {
+            text-decoration: none;
+
+            .emoji-box__copy {
+                h5 {
+                    color: $primary-color;
+                }
             }
         }
     }
