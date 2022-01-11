@@ -89,7 +89,7 @@ Amount units need to be toggleable between bitcoin, satoshi and local currency v
 
 ### Address types
 
-There are several address types that can be used for on-chain transfer requests. Each address type has unique benefits, such as SegWit saving on network fees. Supporting every address type makes a wallet more interoperable and lets users access the benefits offered by each type. More on [address types]({{ "/guide/glossary/address/" | relative_url }}) page.
+There are several address types that can be used for on-chain transfer requests. Each address type has unique benefits, such as SegWit saving on network fees. Supporting every address type makes a wallet more interoperable and lets users access the benefits offered by each type. More on the [address types]({{ "/guide/glossary/address/" | relative_url }}) page.
 
 ### Meta data
 
