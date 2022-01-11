@@ -7,6 +7,8 @@
 
   .wrapper {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -16,6 +18,7 @@
     a.-logo {
       display: block;
       line-height: 1;
+      order: 1;
 
       svg {
         width: 50px;
@@ -34,6 +37,14 @@
     }
 
     .edit-license {
+      border-top: 1px solid black;
+      order: 3;
+      flex-basis: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      padding-top: 20px;
+
       a {
         display: block;
         color: black;
@@ -48,6 +59,8 @@
     nav.social-media-list {
       display: flex;
       align-items: center;
+      order: 2;
+      margin-left: auto;
 
       a {
         display: flex;
@@ -72,6 +85,14 @@
     }
 
     nav.footer-nav {
+      display: flex;
+      justify-content: space-between;
+      order: 5;
+      flex-basis: 100%;
+      border-top: 1px solid black;
+      margin-top: 20px;
+      padding-top: 20px;
+
       a {
         display: inline-block;
         color: black;
@@ -88,90 +109,17 @@
     }
   }
 
-  @include media-query(small) {
+  @include media-query(tiny) {
     .wrapper {
-      flex-wrap: wrap;
-      justify-content: space-between;
-
-      a.-logo {
-        order: 1;
-      }
-
       .edit-license {
-        border-top: 1px solid black;
-        order: 3;
-        flex-basis: 100%;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 20px;
-        padding-top: 20px;
-
-        a.-edit {
-
+        a {
+          font-size: 13px;
         }
-
-        a.-license {
-
-        }
-      }
-
-      nav.social-media-list {
-        order: 2;
-        margin-left: auto;
       }
 
       nav.footer-nav {
-        display: flex;
-        justify-content: space-between;
-        // flex-direction: column;
-        order: 5;
-        flex-basis: 100%;
-        border-top: 1px solid black;
-        margin-top: 20px;
-        padding-top: 20px;
-      }
-    }
-  }
-
-  @include media-query(medium-up) {
-    .wrapper {
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-
-      a.-logo {
-        margin-right: auto;
-        order: 1;
-      }
-
-      .edit-license {
-        display: flex;
-        border-right: 1px solid black;
-        padding-right: 15px;
-        margin-right: 15px;
-        order: 2;
-
         a {
-          & + a {
-            margin-left: 15px;
-          }
-        }
-      }
-
-      nav.social-media-list {
-        order: 4;
-      }
-
-      nav.footer-nav {
-        border-right: 1px solid black;
-        padding-right: 15px;
-        margin-right: 15px;
-        order: 3;
-
-        a {
-          & + a {
-            margin-left: 15px;
-          }
+          font-size: 13px;
         }
       }
     }

@@ -52,6 +52,12 @@
     }
   }
 
+  @if $media-query == small-large {
+    @media only screen and (max-width:($huge_width - 1)) {
+      @content;
+    }
+  }
+
   @if $media-query == huge {
     @media only screen and (min-width:$huge_width) {
       @content;
