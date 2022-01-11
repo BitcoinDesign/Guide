@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Calendar
-description: Find out how to get involved in Bitcoin design
+description: Design reviews, community calls, project sessions, and other events planned by the Bitcoin Design Community
 permalink: /calendar/
 main_nav: true
 nav_order: 3
