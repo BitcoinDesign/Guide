@@ -14,6 +14,7 @@ image: https://bitcoin.design/assets/images/guide/onboarding/funding-a-wallet/fu
 Illustration source
 
 - https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=201%3A687
+- https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=0%3A1
 
 -->
 

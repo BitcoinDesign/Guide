@@ -7,25 +7,26 @@ parent: Backing up a wallet
 nav_order: 1
 permalink: /guide/onboarding/backing-up-a-wallet/cloud-backup/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase-preview.png
+image: https://bitcoin.design/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/backing-up-a-wallet-cloud-preview.png
 ---
 
 <!--
 
 Editor's notes
 
-This chapter covers backing up wallat data via a cloud provider.
+This chapter covers backing up wallet data via a cloud provider.
 
 Illustration sources
 - https://www.figma.com/file/q9EgLqOKcIVc0Cq7khtpNm/Onboarding-%3E-Backups?node-id=0%3A1
+- https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=0%3A1
 
 -->
 
 {% include picture.html
-image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase.png"
-retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase@2x.png"
-mobile = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase-mobile.png"
-mobileRetina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase-mobile@2x.png"
+image = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/backing-up-a-wallet-cloud.png"
+retina = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/backing-up-a-wallet-cloud@2x.png"
+mobile = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/backing-up-a-wallet-cloud-mobile.png"
+mobileRetina = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/backing-up-a-wallet-cloud-mobile@2x.png"
 alt-text = "Backing up a recovery phrase chapter header image"
 width = 1600
 height = 600
@@ -51,8 +52,8 @@ Below is an example of what the user interface might look like for an automatic 
 <div class="image-slide-gallery">
 
 {% include picture.html
-image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-prompt.png"
-retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-prompt@2x.png"
+image = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-prompt.png"
+retina = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-prompt@2x.png"
 layout = "shadow"
 caption = "Prompt the user to back up when they have funds in the wallet"
 alt-text = "Screen prompting the user to back up after they have received a payment"
@@ -61,8 +62,8 @@ height = 541
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-intro.png"
-   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-intro@2x.png"
+   image = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-intro.png"
+   retina = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-intro@2x.png"
    layout = "shadow"
    caption = "Describe to the user know what is about to happen and how it works."
    alt-text = "Screen explaining automatic cloud backups"
@@ -71,8 +72,8 @@ height = 541
 %}
 
 {% include picture.html
-     image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-PIN.png"
-   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-PIN@2x.png"
+     image = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-PIN.png"
+   retina = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-PIN@2x.png"
    class = "shadow"
    caption = "Allows the user to set a PIN used for authentication."
    alt-text = "The user can set a PIN which will be used to authenticate and access the wallet"
@@ -81,8 +82,8 @@ height = 541
 %}
 
 {% include picture.html
-     image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-service.png"
-   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-service@2x.png"
+     image = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-service.png"
+   retina = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-service@2x.png"
    class = "shadow"
    caption = "Give the user different cloud provider options, others such as Dropbox might also be included."
    alt-text = "Screen showing saving a password to encrypt the recovery phrase"
@@ -91,8 +92,8 @@ height = 541
 %}
 
 {% include picture.html
-     image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-provider.png"
-   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-provider@2x.png"
+     image = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-provider.png"
+   retina = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-provider@2x.png"
    class = "shadow"
    caption = "This UI will be very different depending on the cloud provider and what permissions are required."
    alt-text = "Screen of placeholder where cloud provider UI would be"
@@ -101,8 +102,8 @@ height = 541
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-confirmation.png"
-   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-confirmation@2x.png"
+   image = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-confirmation.png"
+   retina = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-confirmation@2x.png"
    class = "shadow"
    caption = "Once the upload is complete it's a good idea to show a success screen and give some reassurances."
    alt-text = "Screen showing completing a cloud backup"
