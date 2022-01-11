@@ -37,17 +37,24 @@ Join community calls, design reviews, project discussions and other events. Our 
 %}
 
 {% include emoji-box.html
-    emoji = "👀"
-    title = "Design review calls"
-    description = "A project team presents their work and design challenges and we provide feedback. Scheduled as requested."
-    url = "https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+%22design+review%22+"
-%}
-
-{% include emoji-box.html
     emoji = "🎨"
     title = "Design guide jam sessions"
     description = "We discuss the ongoing work on the guide. Every 3 weeks on Jitsi."
     url = "https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+%22jam+session%22+"
+%}
+
+{% include emoji-box.html
+    emoji = "⚡️"
+    title = "Wallet improvement project"
+    description = "Designs review of mobile Lightning wallets. Every 3 weeks on Jitsi."
+    url = "https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+%22Wallet+improvement%22+"
+%}
+
+{% include emoji-box.html
+    emoji = "👀"
+    title = "Design review calls"
+    description = "A project team presents their work and design challenges and we provide feedback. Scheduled as requested."
+    url = "https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+%22design+review%22+"
 %}
 
 {% include emoji-box.html
