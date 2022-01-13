@@ -98,8 +98,8 @@ let themes = [
     // Rutuja bitcoin page theme banner
     logo: {
         path: "/assets/bitcoin-design-community-banner.svg",
-        fillColor: "#FFF",
-        outlineColor: "#000"
+        fillColor: "#FEE78D",
+        outlineColor: "#FEE78D"
     },
     title: {
         fillColor: "#FEE78D",
@@ -118,7 +118,7 @@ let themes = [
         outlineColor: "#FEE78D",
         labelFillColor: "#FEE78D"
     },
-    background: {
+    image: {
         path: '',
         pathRetina: '',
         pathMobile: '',
@@ -126,13 +126,13 @@ let themes = [
         backgroundColor: ''
     },
     copy: {
-        backgroundColor: "#5A4C4C"
+        backgroundColor: ""
     },
-    image: {
+    background: {
         path: 'url("/assets/images/home/banner/rutuja_bitcoin_theme_banner_web.jpg")',
         pathRetina: 'url("/assets/images/home/banner/rutuja_bitcoin_theme_banner_web@2x.jpg")',
-        pathMobile: 'url("/assets/images/home/banner/right_themeBG_mobile.jpg")',
-        pathMobileRetina: 'url("/assets/images/home/banner/right_themeBG_mobile@2x.jpg")',
+        pathMobile: 'url("/assets/images/home/banner/themeBG_mobile.jpg")',
+        pathMobileRetina: 'url("/assets/images/home/banner/themeBG_mobile@2x.jpg")',
         backgroundColor: "#5A4C4C"
     },
     flipLayoutOnMobile: false,
