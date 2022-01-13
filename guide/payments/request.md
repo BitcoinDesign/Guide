@@ -46,18 +46,18 @@ Below is an overview of these various entry points:
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/payments/request/single-use-invoice.png"
-   retina = "/assets/images/guide/payments/request/single-use-invoice@2x.png"
+   image = "/assets/images/guide/payments/request/single-use-payment-request.png"
+   retina = "/assets/images/guide/payments/request/single-use-payment-request@2x.png"
    layout = "shadow"
-   caption = "Single-use payment requests, like invoices, are useful for in-person payments."
+   caption = "Single-use payment requests are useful for in-person payments."
    alt-text = "Screen showing single-use invoice."
    width = 250
    height = 541
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/payments/request/my-contact-card.png"
-   retina = "/assets/images/guide/payments/request/my-contact-card@2x.png"
+   image = "/assets/images/guide/payments/request/my-profile.png"
+   retina = "/assets/images/guide/payments/request/my-profile@2x.png"
    layout = "shadow"
    caption = "Reusable payment requests, like Lightning addresses, are useful for receiving recurring payments."
    alt-text = "Screen showing reusable Lightning address."
@@ -97,7 +97,7 @@ A payment request with only standard data like an amount and date communicates l
 
 #### Invoice expirations
 
-A piece of meta data unique to invoices is an expiration time. This is how long until a single-use invoice expires. By default this is 60 minutes. When an invoice is generated an expiration timer needs to be shown to users alongside the payment request. Advanced users may want the ability to adjust this expiration time for different use cases.
+A piece of meta data unique to invoices is an expiration time. This is how long until a single-use invoice expires. By default this is 60 minutes. When an invoice is generated an expiration timer needs to be shown to users alongside the payment request. For more custom use cases, allowing users to adjust this expiration time manually.
 
 <div class="image-slide-gallery">
 
@@ -112,41 +112,41 @@ A piece of meta data unique to invoices is an expiration time. This is how long 
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/payments/request/single-use-invoice.png"
-   retina = "/assets/images/guide/payments/request/single-use-invoice@2x.png"
+   image = "/assets/images/guide/payments/request/single-use-payment-request.png"
+   retina = "/assets/images/guide/payments/request/single-use-payment-request@2x.png"
    layout = "shadow"
-   caption = "A newly generated single-use invoice."
-   alt-text = "Screen showing single-use invoice."
+   caption = "A newly generated single-use payment request."
+   alt-text = "Screen showing single-use payment request."
    width = 250
    height = 541
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/payments/request/single-use-invoice-settings.png"
-   retina = "/assets/images/guide/payments/request/single-use-invoice-settings@2x.png"
+   image = "/assets/images/guide/payments/request/single-use-payment-request-settings.png"
+   retina = "/assets/images/guide/payments/request/single-use-payment-request-settings@2x.png"
    layout = "shadow"
-   caption = "Let users configure the settings of the single-use invoice."
-   alt-text = "Screen showing single-use invoice settings."
+   caption = "Let users configure the settings of single-use payment requests."
+   alt-text = "Screen showing single-use payment request settings."
    width = 250
    height = 541
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/payments/request/single-use-address.png"
-   retina = "/assets/images/guide/payments/request/single-use-address@2x.png"
+   image = "/assets/images/guide/payments/request/single-use-transaction-request.png"
+   retina = "/assets/images/guide/payments/request/single-use-transaction-request@2x.png"
    layout = "shadow"
-   caption = "A newly generated single-use address."
-   alt-text = "Screen showing newly generated single-use address"
+   caption = "A newly generated single-use transaction-request."
+   alt-text = "Screen showing newly generated single-use transaction-request."
    width = 250
    height = 541
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/payments/request/single-use-address-settings.png"
-   retina = "/assets/images/guide/payments/request/single-use-address-settings@2x.png"
+   image = "/assets/images/guide/payments/request/single-use-transaction-request-settings.png"
+   retina = "/assets/images/guide/payments/request/single-use-transaction-request-settings@2x.png"
    layout = "shadow"
-   caption = "Let users configure the settings of the single-use address."
-   alt-text = "Screen showing newly generated single-use address settings."
+   caption = "Let users configure the settings of the single-use transaction-request."
+   alt-text = "Screen showing newly generated single-use transaction-request settings."
    width = 250
    height = 541
 %}
@@ -165,19 +165,19 @@ A piece of meta data unique to invoices is an expiration time. This is how long 
 
 ## Reusable payment requests
 
-Reusable payment requests aren’t as widely adopted or used as their single-use counterparts. For some use cases, reusable payment requests offer an improved user experience, more flexibility, and enable unique use cases compared to single-use payment requests. Reusable payment requests prevent users from manually initiating a payment request each time they need to receive bitcoin, greatly simplifying payment flows.
+Reusable payment requests aren’t as widely adopted or used as their single-use counterparts. For some use cases, reusable payment requests offer an improved user experience, more flexibility, and enable unique use cases compared to single-use payment requests. Reusable payment requests avoids users from having to manually initiate a payment request each time they need to receive bitcoin, greatly simplifying payment flows.
 
-Reusable payment requests are common when making Lightning payments. They are made more frequently so having to manually generate a payment request for each payment adds a lot of friction.
+Reusable payment requests are common when making payments as they are made more frequently. So manually generating a payment request for each payment adds a lot of friction.
 
-[Lightning addresses](https://lightningaddress.com/) are a popular reusable way in which users request Lightning payments. These look like regular emails (jane@domain.com) but wallets that support sending to Lightning addresses can send Lightning payments to them. Receiving to a Lightning address requires users to generate their own unique Lightning address that can be shared with senders. A Lightning address only needs to be generated and shared once for it to regularly receive Lightning payments.
+[Lightning addresses](https://lightningaddress.com/) are a popular reusable way in which users request payments. These look like regular emails (jane@domain.com) but wallets that support sending to Lightning addresses can send payments to them. Receiving to a Lightning address requires users to generate their own unique Lightning address that can be shared with senders. Generating a Lightning address is often done within the users profile or during onboarding.
 
-Reusable payment requests are not common when conducting Bitcoin transfers. This is due to them being conducted less frequently so the burden of generating a new payment request for each transfer is not as large. On-chain addresses are reusable, though as previously mentioned this has privacy implications so this practice is not recommended.
+Reusable payment requests are not common when conducting transactions. This is due to them being conducted less frequently so the burden of generating a new payment request for each transfer is not as large. On-chain addresses are reusable, though as previously mentioned this has privacy implications so this practice is not recommended.
 
-Several, not widely supported, reusable payments request formats also exist. For Lightning, BOLT 12 offers, AMP invoices and Key sends using just a node ID exist. For on-chain, reusable payment codes [(BIP 47)](https://bips.xyz/47) or [xpubs]({{ "/guide/glossary/#extended-public-key-xpub-ypub-zpub" | relative_url }}) used to generate addresses can be reused to receive bitcoin transfers. Learn more about these on our [payment request formats]({{ "/guide/payments/send/payment-request-formats/" | relative_url }}) page.
+Several, not widely supported, reusable payments request formats also exist. For Lightning, BOLT 12 offers, AMP invoices and Key sends using just a node ID exist. For on-chain, reusable payment codes [(BIP 47)](https://bips.xyz/47) or [xpubs]({{ "/guide/glossary/#extended-public-key-xpub-ypub-zpub" | relative_url }}) used to generate addresses can be reused to receive bitcoin transactions. Learn more about these on our [payment request formats]({{ "/guide/payments/send/payment-request-formats/" | relative_url }}) page.
 
 ### Contact cards
 
-Contact cards are a great way to create, store, manage and share reusable payment requests. A user's own contact card can be a place to generate, save and share reusable payment requests. Contact cards can also be used to save reusable payment requests of other users. This greatly simplifies both requesting and [sending]({{ "/guide/payments/send/" | relative_url }}) flows.
+Contact cards are a great way to  store, manage and share reusable payment requests. A user's own contact card can save and share the users own reusable payment requests. Contact cards of other users can store their reusable payment requests shared with the user. This greatly simplifies both requesting and [sending]({{ "/guide/payments/send/" | relative_url }}) flows.
 
 <div class="image-slide-gallery">
 
@@ -185,8 +185,38 @@ Contact cards are a great way to create, store, manage and share reusable paymen
    image = "/assets/images/guide/payments/request/Home.png"
    retina = "/assets/images/guide/payments/request/Home@2x.png"
    layout = "shadow"
-   caption = "Users should be able to access their contacts and reusable payment requests from their home screen."
+   caption = "Users should be able to access their profile via the home page."
    alt-text = "Screen showing home screen number pad entry."
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/payments/request/my-profile-empty.png"
+   retina = "/assets/images/guide/payments/request/my-profile-empty@2x.png"
+   layout = "shadow"
+   caption = "A users profile is a great place to generate a new Lightning address."
+   alt-text = "Screen showing users profile."
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/payments/request/generate-lightning-address.png"
+   retina = "/assets/images/guide/payments/request/generate-lightning-address@2x.png"
+   layout = "shadow"
+   caption = "Make generating a Lightning address simple."
+   alt-text = "Screen showing generation of a Lightning address."
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/payments/request/my-profile.png"
+   retina = "/assets/images/guide/payments/request/my-profile@2x.png"
+   layout = "shadow"
+   caption = "A newly generated reusable Lightning address used to receive regular payments to."
+   alt-text = "Screen showing newly generated Lightning address."
    width = 250
    height = 541
 %}
@@ -202,31 +232,11 @@ Contact cards are a great way to create, store, manage and share reusable paymen
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/payments/request/my-contact-card-empty.png"
-   retina = "/assets/images/guide/payments/request/my-contact-card-empty@2x.png"
+   image = "/assets/images/guide/payments/request/contact-card.png"
+   retina = "/assets/images/guide/payments/request/contact-card@2x.png"
    layout = "shadow"
-   caption = "A users contact card is a great place to create a reusable payment request."
-   alt-text = "Screen showing the users contact card."
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/payments/request/generate-lightning-address.png"
-   retina = "/assets/images/guide/payments/request/generate-lightning-address@2x.png"
-   layout = "shadow"
-   caption = "Generating new reusable payment requests should be simple."
-   alt-text = "Screen showing generating a new Lightning address."
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/payments/request/my-contact-card.png"
-   retina = "/assets/images/guide/payments/request/my-contact-card@2x.png"
-   layout = "shadow"
-   caption = "Contact cards can keep track of users reusable payment requests."
-   alt-text = "Screen showing reusable Lightning address in a contact card."
+   caption = "Contact cards can store the users reusable payment requests."
+   alt-text = "Screen showing users contact card."
    width = 250
    height = 541
 %}
@@ -237,16 +247,6 @@ Contact cards are a great way to create, store, manage and share reusable paymen
    layout = "shadow"
    caption = "Contact cards can store reusable payment requests of other users too."
    alt-text = "Screen showing another users contact card."
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/payments/request/my-contact-card-options.png"
-   retina = "/assets/images/guide/payments/request/my-contact-card-options@2x.png"
-   layout = "shadow"
-   caption = "Contact cards can be used to store and generate any kind of reusable payment request your wallet supports."
-   alt-text = "Screen showing a contact card with multiple reusable request options."
    width = 250
    height = 541
 %}
@@ -291,7 +291,7 @@ Once a user has generated a payment request the next action to take is sharing i
 
 ### Plaintext
 
-Sharing a payment request as plaintext involves simply copying & sharing it with a sender. It is typical for Bitcoin wallets to provide a share button that allows receivers to share a payment request in this manner conveniently. Both reusable and single-use requests should be shareable as plaintext.
+Sharing a payment request as plaintext involves simply copying and sharing it with a sender. It is typical for Bitcoin wallets to provide a share button that allows receivers to share a payment request in this manner conveniently. Both reusable and single-use requests should be shareable as plaintext.
 
 ### QR code
 
@@ -336,8 +336,8 @@ A contactless share uses near field communication (NFC) technology to share a pa
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/payments/request/single-use-invoice.png"
-   retina = "/assets/images/guide/payments/request/single-use-invoice@2x.png"
+   image = "/assets/images/guide/payments/request/single-use-payment-request.png"
+   retina = "/assets/images/guide/payments/request/single-use-payment-request@2x.png"
    layout = "shadow"
    caption = "QR codes are convenient for sharing single-use payment requests in person."
    alt-text = "Screen showing QR code share."
@@ -383,15 +383,11 @@ Once a request has been shared, the sender then needs to send bitcoin to the req
 
 ### Lightning
 
-Receiving a Lightning payment is something that involves a lot of background complexity. How a wallet application manages this, has a major impact on the end user's experience.
+Receiving a payment is something that involves a lot of background complexity. How a wallet application manages this, has a major impact on the end user's experience.
 
-To receive a Lightning payment, the receiver needs a payment channel with inbound liquidity and also has to be online. Some wallets offer services that allow channels to be opened on-demand if a user has no inbound liquidity when receiving an incoming payment. They may also hold payment for a user until they are online to forward it to them. These services require a wallet to be solely connected to the peer that offers these services. We cover what services are commonly offered and how they work on our Lightning services page.
+To receive a payment, the receiver needs a payment channel with inbound liquidity and also has to be online. Some wallets offer services that allow channels to be opened on-demand if a user has no inbound liquidity when receiving an incoming payment. They may also hold payment for a user until they are online to forward it to them. These services require a wallet to be solely connected to the peer that offers these services. We cover what services are commonly offered and how they work on our Lightning services page.
 
-Without Lightning services, a user will need to obtain some inbound liquidity before receiving a Lightning payment. This can be done by opening a channel with a peer that offers inbound liquidity and/or sending payments moving outbound to inbound capacity. It is recommended to let users know if they do not have any inbound liquidity before they share a payment request to prevent a payment failure.
-
-### On-chain
-
-Receiving on-chain involves the sender broadcasting a transaction to the network for it to be confirmed. As on-chain transaction confirmation times vary based on network congestion and fees being paid, it is uncertain exactly when a transfer will be considered complete. Keep users informed of the state of their incoming transfers.
+Without Lightning services, a user will need to obtain some inbound liquidity before receiving a payment. This can be done by opening a channel with a peer that offers inbound liquidity and/or sending payments moving outbound to inbound capacity. It is recommended to let users know if they do not have any inbound liquidity before they share a payment request to prevent a payment failure.
 
 <div class="image-slide-gallery">
 
@@ -419,21 +415,31 @@ Receiving on-chain involves the sender broadcasting a transaction to the network
    image = "/assets/images/guide/onboarding/funding-a-wallet/no-inbound.png"
    retina = "/assets/images/guide/onboarding/funding-a-wallet/no-inbound@2x.png"
    layout = "shadow"
-   caption = "Guide users as to how to obtain inbound liquidity so they can receive Lightning payments."
+   caption = "Guide users as to how to obtain inbound liquidity so they can receive payments."
    alt-text = "Screen showing options to receive inbound liquidity."
    width = 250
    height = 541
 %}
 
+</div>
+
+### On-chain
+
+Receiving on-chain involves the sender broadcasting a transaction to the network for it to be confirmed.
+
+<div class="center" markdown="1">
+
 {% include picture.html
    image = "/assets/images/guide/payments/request/confirming.png"
    retina = "/assets/images/guide/payments/request/confirming@2x.png"
-   layout = "shadow"
+   layout = "float-left-desktop -background -shadow"
    caption = "For on-chain, keep users updated on incoming pending transactions."
    alt-text = "Screen showing on-chain transaction being confirmed."
    width = 250
    height = 541
 %}
+
+As on-chain transaction confirmation times vary based on network congestion and fees being paid, it is uncertain exactly when a transfer will be considered complete. Keep users informed of the state of their incoming transactions.
 
 </div>
 
@@ -450,7 +456,7 @@ Wallet applications should clearly indicate once a payment has been received by 
    height = 541
    caption = "Notify the user once their incoming payment is complete."
    alt-text = "Screen showing a payment has been received."
-   layout = "float-left-desktop -background -shadow"
+   layout = "float-right-desktop -background -shadow"
 %}
 
 Users should have the option to share a confirmation that the payment has been received with the sender. For on-chain, the confirmed transaction on a Bitcoin block explorer can be shared. For Lightning, a preimage can be shared to show proof of payment.
