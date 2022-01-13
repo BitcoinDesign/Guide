@@ -99,14 +99,14 @@ let themes = [
     logo: {
         path: "/assets/bitcoin-design-community-banner.svg",
         fillColor: "#FEE78D",
-        outlineColor: "#FEE78D"
+        outlineColor: "#5A4C4C"
     },
     title: {
         fillColor: "#FEE78D",
         outlineColor: "#FEE78D"
     },
     description: {
-        fillColor: "#8E8E8E"
+        fillColor: "#E4CBCB"
     },
     button1: {
         fillColor: "#FEE78D",
