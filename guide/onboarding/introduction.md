@@ -16,6 +16,10 @@ Editor's notes
 A brief introduction and summary of all pages in this section. The idea is that readers
 scan this page to get an overview of the section and then decide which topics to dive into.
 
+Illustration sources:
+
+- https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=0%3A1
+
 -->
 
 {% include picture.html
