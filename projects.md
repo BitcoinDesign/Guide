@@ -4,7 +4,7 @@ title: Projects
 description: Projects some of us are involved in or think highly of.
 permalink: /projects/
 main_nav: true
-nav_order: 3
+nav_order: 4
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/projects/projects-preview.jpg
 projects:

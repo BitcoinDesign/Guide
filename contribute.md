@@ -26,7 +26,6 @@ image: https://bitcoin.design/assets/images/contribute/contribute-preview.jpg
 
 Depending on your skills and interest, you can help in a number of ways. We design, illustrate, write copy and code, do technical research, discuss and answer questions, run workshops and community calls, and more. Design is a multidisciplinary activity and there are many different ways to be part of this community and help improve how we interact with the Bitcoin protocol.
 
-
 ## Learn how we work
 
 If you are not familiar with the concepts of open design, we have a [great intro]({{ '/guide/designing-products/open-design/' | relative_url }}) for you. Open, public collaboration gives a lot of freedom to each participant and relies on us organically coming up with the organizational structures we want. The result is that things can sometimes look unorganized or unintuitive from the outside. The big benefit is that you can choose how you want to participate. Let's jump in.
@@ -37,7 +36,7 @@ If you are not familiar with the concepts of open design, we have a [great intro
 1. [Subscribe to the newsletter](https://bitcoindesign.substack.com) and follow on [Twitter](https://twitter.com/bitcoin_design) to stay up-to-date
 1. Read up on our [project life cycle](https://github.com/BitcoinDesign/Meta/blob/master/Projects.md)
 1. Browse [issues](https://github.com/BitcoinDesign/Meta/issues) for upcoming calls and discussions around processes and coordination
-1. Subscribe to our [calendar](https://raw.githubusercontent.com/BitcoinDesign/Meta/calendar/events.ical) for calls and events we organize
+1. Subscribe to our [calendar]({{ '/calendar/' | relative_url }}) for calls and events we organize
 
 ## How to get involved in projects
 
@@ -66,20 +65,3 @@ If you are not familiar with the concepts of open design, we have a [great intro
 - [#private-key-mgmt](https://bitcoindesign.slack.com/archives/C018RATDW82)
 - [#payments](https://bitcoindesign.slack.com/archives/C0191UWDHBP)
 - [#ux](https://bitcoindesign.slack.com/archives/C016SDP7HT2)
-
-## The Bitcoin Design calendar
-
-Our [calendar](https://raw.githubusercontent.com/BitcoinDesign/Meta/calendar/events.ical) (an .iCal file) includes upcoming calls (community calls, design review calls, etc). Qualified issues are automatically added to the calendar, which you can then subscribe to via your favorite calendar tool.
-
-- Copy this URL: [https://raw.githubusercontent.com/BitcoinDesign/Meta/calendar/events.ical](https://raw.githubusercontent.com/BitcoinDesign/Meta/calendar/events.ical)
-- In Apple Calendar (desktop), use `File -> New calendar subscriptions`
-- In Google Calendar (web), click the small `+` icon next to `Other calendars` in the sidebar and select `From URL`
-- Paste the URL and save. New events (if there are any scheduled) should show up right away
-- In Thunderbird (desktop), `New Calendar` > `On my network` > `iCalendar (ICS)` and paste the [calendar link](https://raw.githubusercontent.com/BitcoinDesign/Meta/calendar/events.ical) in the location field.
-- Calendar tools regularly reload subscribed calendars for updates. How often this happens varies by tool
-
-There are two requirements for an issue to be included:
-
-- The issue needs to include a `UTCTime` meta property following this format: `UTCTime: 2020-10-14 9:00 UTC -7`. You can seen an example [here](https://github.com/BitcoinDesign/Meta/issues/27)
-- A maintainer needs to add the `call` label to the issue (this prevents spam)
-- The calendar auto-updates whenever a new issue is created, or an existing issue is edited
