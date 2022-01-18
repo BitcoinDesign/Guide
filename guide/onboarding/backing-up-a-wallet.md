@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Backing up a wallet
-description: An overview of the data and considerations for backing Bitcoin wallets.
+description: An overview of the data and considerations for backing up Bitcoin wallets.
 parent: Onboarding
 has_children: true
 nav_order: 3
