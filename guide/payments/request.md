@@ -173,7 +173,7 @@ Reusable payment requests are common when making payments as they are made more 
 
 Reusable payment requests are not common when conducting transactions. This is due to them being conducted less frequently so the burden of generating a new payment request for each transfer is not as large. On-chain addresses are reusable, though as previously mentioned this has privacy implications so this practice is not recommended.
 
-Several, not widely supported, reusable payments request formats also exist. For Lightning, BOLT 12 offers, AMP invoices and Key sends using just a node ID exist. For on-chain, reusable payment codes [(BIP 47)](https://bips.xyz/47) or [xpubs]({{ "/guide/glossary/#extended-public-key-xpub-ypub-zpub" | relative_url }}) used to generate addresses can be reused to receive bitcoin transactions. Learn more about these on our [payment request formats]({{ "/guide/payments/send/payment-request-formats/" | relative_url }}) page.
+Several, not widely supported, reusable payments request formats also exist. For Lightning, BOLT 12 offers, AMP invoices and Keysends using just a node ID exist. For on-chain, reusable payment codes [(BIP 47)](https://bips.xyz/47) or [xpubs]({{ "/guide/glossary/#extended-public-key-xpub-ypub-zpub" | relative_url }}) used to generate addresses can be reused to receive bitcoin transactions. Learn more about these on our [payment request formats]({{ "/guide/payments/send/payment-request-formats/" | relative_url }}) page.
 
 ### Contact cards
 
