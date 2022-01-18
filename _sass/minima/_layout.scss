@@ -219,13 +219,13 @@ article.guide {
   h2, h3,
   .h2, .h3 {
     &::before {
-      height: $spacing-unit * 1;
+      height: $spacing-unit * 3;
+      margin-top: -$spacing-unit * 2;
     }
 
     @include media-query(medium-up) {
       &::before {
-        height: $spacing-unit * 3;
-        margin-top: -$spacing-unit * 2;
+
       }
     }
   }
@@ -233,13 +233,13 @@ article.guide {
   h4, h5, h6,
   .h4, .h5, .h6 {
     &::before {
-      height: $spacing-unit * 1.5;
-      margin-top: -$spacing-unit 1.5;
+      height: $spacing-unit * 3;
+      margin-top: -$spacing-unit * 2;
     }
 
     @include media-query(medium-up) {
       &::before {
-        height: $spacing-unit * 1;
+
       }
     }
   }

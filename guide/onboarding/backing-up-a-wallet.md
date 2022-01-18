@@ -1,13 +1,13 @@
 ---
 layout: guide
 title: Backing up a wallet
-description: Handling recovery phrases during onboarding.
+description: Handling wallet backups during onboarding.
 parent: Onboarding
 has_children: true
 nav_order: 3
 permalink: /guide/onboarding/backing-up-a-wallet/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase-preview.png
+image: https://bitcoin.design/assets/images/guide/onboarding/backing-up-a-wallet/backing-up-a-wallet-preview.png
 ---
 
 <!--
@@ -20,14 +20,15 @@ Illustration sources
 
 - https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=0%3A1
 - https://www.figma.com/file/q9EgLqOKcIVc0Cq7khtpNm/Onboarding-%3E-Backups?node-id=0%3A1
+- https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=0%3A1
 
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase.png"
-   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase@2x.png"
-   mobile = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase-mobile.png"
-   mobileRetina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase-mobile@2x.png"
+   image = "/assets/images/guide/onboarding/backing-up-a-wallet/backing-up-a-wallet.png"
+   retina = "/assets/images/guide/onboarding/backing-up-a-wallet/backing-up-a-wallet@2x.png"
+   mobile = "/assets/images/guide/onboarding/backing-up-a-wallet/backing-up-a-wallet-mobile.png"
+   mobileRetina = "/assets/images/guide/onboarding/backing-up-a-wallet/backing-up-a-wallet-mobile@2x.png"
    alt-text = "Backing up a recovery phrase chapter header image"
    width = 1600
    height = 600
@@ -41,10 +42,10 @@ When a user generates a new Bitcoin wallet, they will soon need to create a back
 Two main types of information need to be backed up: the user's wallet recovery data and their Lightning channel state. While the wallet recovery data may be used to restore the wallet using another wallet application, the channel state is typically only restorable within the same application.
 
 {% include picture.html
-image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/wallet-backup.png"
-retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/wallet-backup@2x.png"
-mobile = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/wallet-backup-mobile.png"
-mobileRetina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/wallet-backup-mobile@2x.png"
+image = "/assets/images/guide/onboarding/backing-up-a-wallet/wallet-backup.png"
+retina = "/assets/images/guide/onboarding/backing-up-a-wallet/wallet-backup@2x.png"
+mobile = "/assets/images/guide/onboarding/backing-up-a-wallet/wallet-backup-mobile.png"
+mobileRetina = "/assets/images/guide/onboarding/backing-up-a-wallet/wallet-backup-mobile@2x.png"
 alt-text = "Example image"
 width = 1200
 height = 680

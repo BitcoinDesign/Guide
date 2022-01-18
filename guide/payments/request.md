@@ -89,7 +89,7 @@ Amount units need to be toggleable between bitcoin, satoshi and local currency v
 
 ### Address types
 
-There are several address types that can be used for on-chain transfer requests. Each address type has unique benefits, such as SegWit saving on network fees. Supporting every address type makes a wallet more interoperable and lets users access the benefits offered by each type. More on the [address types]({{ "/guide/glossary/address/" | relative_url }}) page.
+There are several address types that can be used for on-chain payment requests. Each address type has unique benefits, such as SegWit saving on network fees. It's recommended to encourage users to use the latest - more feature rich address types. However, older address types should be supported for seamless backwards compatibility. More on the [address types]({{ "/guide/glossary/address/" | relative_url }}) page.
 
 ### Meta data
 
@@ -115,7 +115,7 @@ A piece of meta data unique to invoices is an expiration time. This is how long 
    image = "/assets/images/guide/payments/request/single-use-payment-request.png"
    retina = "/assets/images/guide/payments/request/single-use-payment-request@2x.png"
    layout = "shadow"
-   caption = "A newly generated single-use payment request."
+   caption = "A newly generated single-use Lightning payment request."
    alt-text = "Screen showing single-use payment request."
    width = 250
    height = 541
@@ -125,7 +125,7 @@ A piece of meta data unique to invoices is an expiration time. This is how long 
    image = "/assets/images/guide/payments/request/single-use-payment-request-settings.png"
    retina = "/assets/images/guide/payments/request/single-use-payment-request-settings@2x.png"
    layout = "shadow"
-   caption = "Let users configure the settings of single-use payment requests."
+   caption = "Let users configure the settings of single-use Lightning payment requests."
    alt-text = "Screen showing single-use payment request settings."
    width = 250
    height = 541
@@ -135,8 +135,8 @@ A piece of meta data unique to invoices is an expiration time. This is how long 
    image = "/assets/images/guide/payments/request/single-use-transaction-request.png"
    retina = "/assets/images/guide/payments/request/single-use-transaction-request@2x.png"
    layout = "shadow"
-   caption = "A newly generated single-use transaction-request."
-   alt-text = "Screen showing newly generated single-use transaction-request."
+   caption = "A newly generated single-use on-chain payment request."
+   alt-text = "Screen showing newly generated single-use on-chain payment request."
    width = 250
    height = 541
 %}
@@ -145,8 +145,8 @@ A piece of meta data unique to invoices is an expiration time. This is how long 
    image = "/assets/images/guide/payments/request/single-use-transaction-request-settings.png"
    retina = "/assets/images/guide/payments/request/single-use-transaction-request-settings@2x.png"
    layout = "shadow"
-   caption = "Let users configure the settings of the single-use transaction-request."
-   alt-text = "Screen showing newly generated single-use transaction-request settings."
+   caption = "Let users configure the settings of the single-use on-chain payment request."
+   alt-text = "Screen showing newly generated single-use on-chain payment settings."
    width = 250
    height = 541
 %}
@@ -167,13 +167,13 @@ A piece of meta data unique to invoices is an expiration time. This is how long 
 
 Reusable payment requests aren’t as widely adopted or used as their single-use counterparts. For some use cases, reusable payment requests offer an improved user experience, more flexibility, and enable unique use cases compared to single-use payment requests. Reusable payment requests avoids users from having to manually initiate a payment request each time they need to receive bitcoin, greatly simplifying payment flows.
 
-Reusable payment requests are common when making payments as they are made more frequently. So manually generating a payment request for each payment adds a lot of friction.
+Reusable payment requests are common when making Lightning payments as they are made more frequently. So manually generating a Lightning payment request for each payment adds a lot of friction.
 
-[Lightning addresses](https://lightningaddress.com/) are a popular reusable way in which users request payments. These look like regular emails (jane@domain.com) but wallets that support sending to Lightning addresses can send payments to them. Receiving to a Lightning address requires users to generate their own unique Lightning address that can be shared with senders. Generating a Lightning address is often done within the users profile or during onboarding.
+[Lightning addresses](https://lightningaddress.com/), which look like regular emails (jane@domain.com), are a popular reusable way in which users can request Lightning payments. Receiving to a Lightning address requires users to generate their own unique Lightning address that can be shared with senders. These are not native to the Lightning network itself but rather use a third party server, often ran by the wallet provider, to provide this service. Generating a Lightning address is often done within the users profile or during onboarding.
 
-Reusable payment requests are not common when conducting transactions. This is due to them being conducted less frequently so the burden of generating a new payment request for each transfer is not as large. On-chain addresses are reusable, though as previously mentioned this has privacy implications so this practice is not recommended.
+Reusable payment requests are not common when conducting transactions. This is due to them being conducted less frequently so the burden of generating a new payment request for each on-chain payment is not as large. On-chain addresses are reusable, though as previously mentioned this has privacy implications so this practice is not recommended.
 
-Several, not widely supported, reusable payments request formats also exist. For Lightning, BOLT 12 offers, AMP invoices and Keysends using just a node ID exist. For on-chain, reusable payment codes [(BIP 47)](https://bips.xyz/47) or [xpubs]({{ "/guide/glossary/#extended-public-key-xpub-ypub-zpub" | relative_url }}) used to generate addresses can be reused to receive bitcoin transactions. Learn more about these on our [payment request formats]({{ "/guide/payments/send/payment-request-formats/" | relative_url }}) page.
+Several, not widely supported, reusable payments request formats also exist. For Lightning, there are BOLT 12 offers, AMP invoices and Keysends, which require just a node ID. For on-chain, there are reusable payment codes [BIP 47](https://bips.xyz/47) and [xpubs]({{ "/guide/glossary/#extended-public-key-xpub-ypub-zpub" | relative_url }}), which can be used to generate addresses for receiving bitcoin on-chain. Learn more about these on our [payment request formats]({{ "/guide/payments/send/payment-request-formats/" | relative_url }}) page.
 
 ### Contact cards
 
@@ -235,16 +235,6 @@ Contact cards are a great way to  store, manage and share reusable payment reque
    image = "/assets/images/guide/payments/request/contact-card.png"
    retina = "/assets/images/guide/payments/request/contact-card@2x.png"
    layout = "shadow"
-   caption = "Contact cards can store the users reusable payment requests."
-   alt-text = "Screen showing users contact card."
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/payments/request/contact-card.png"
-   retina = "/assets/images/guide/payments/request/contact-card@2x.png"
-   layout = "shadow"
    caption = "Contact cards can store reusable payment requests of other users too."
    alt-text = "Screen showing another users contact card."
    width = 250
@@ -265,7 +255,7 @@ We explore generating a withdrawal request in our [sending bitcoin]({{ "/guide/p
    image = "/assets/images/guide/payments/request/withdrawal-qr.png"
    retina = "/assets/images/guide/payments/request/withdrawal-qr@2x.png"
    layout = "shadow"
-   caption = "A withdrawal request is another way a user can request bitcoin."
+   caption = "A withdrawal request is another way a user can receive bitcoin."
    alt-text = "Screen showing withdraw request QR code."
    width = 250
    height = 541
@@ -293,6 +283,10 @@ Once a user has generated a payment request the next action to take is sharing i
 
 Sharing a payment request as plaintext involves simply copying and sharing it with a sender. It is typical for Bitcoin wallets to provide a share button that allows receivers to share a payment request in this manner conveniently. Both reusable and single-use requests should be shareable as plaintext.
 
+### Payment link
+
+Bitcoin payment links are hypertext that contain a bitcoin payment request. They often contain a URI, **bitcoin:** for an on-chain and **lightning:** for Lightning, so they can be identified by the device clicking them. Other data is also usually included in these payment links alongside the request such as a note or label.
+
 ### QR code
 
 QR codes are a common way to present payment requests to senders. Any type of payment request can be converted into a QR for sharing with a sender. When generating QR codes in a wallet application, ensure they are large enough and have high contrast with the application's background to be easily scanned.
@@ -304,10 +298,6 @@ Typically, QR codes are downloadable. For single-use requests, this makes them e
 Using uppercased payment requests in QR codes results in less complex, more easily scannable, QR codes.
 
 {% include /tip/close.html %}
-
-### Payment link
-
-Bitcoin payment links are hypertext that contain a bitcoin payment request. They often contain a URI, **bitcoin:** for an on-chain and **lightning:** for Lightning, so they can be identified by the device clicking them. Other data is also usually included in these payment links alongside the request such as a note or label.
 
 ### Contactless
 
@@ -439,7 +429,7 @@ Receiving on-chain involves the sender broadcasting a transaction to the network
    height = 541
 %}
 
-As on-chain transaction confirmation times vary based on network congestion and fees being paid, it is uncertain exactly when a transfer will be considered complete. Keep users informed of the state of their incoming transactions.
+As on-chain transaction confirmation times vary based on network congestion and fees being paid, it is uncertain exactly when a on-chain payment will be considered complete. Keep users informed of the state of their incoming transactions.
 
 </div>
 
@@ -461,7 +451,7 @@ Wallet applications should clearly indicate once a payment has been received by 
 
 Users should have the option to share a confirmation that the payment has been received with the sender. For on-chain, the confirmed transaction on a Bitcoin block explorer can be shared. For Lightning, a preimage can be shared to show proof of payment.
 
-For in-person payments showing the confirmation screen to the sender will likely suffice.
+For in-person payments, showing the confirmation screen to the sender will likely suffice.
 
 </div>
 

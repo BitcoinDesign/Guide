@@ -8,14 +8,25 @@ permalink: /guide/onboarding/first-use/
 redirect_from:
  - /guide/onboarding/creating-a-new-wallet/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/onboarding/creating-a-new-wallet/creating-a-new-wallet-preview.png
+image: https://bitcoin.design/assets/images/guide/onboarding/first-use/first-use-preview.png
 ---
 
+<!--
+
+Editor's notes
+
+This chapter covers backing up wallet data via a cloud provider.
+
+Illustration sources
+- https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=0%3A1
+
+-->
+
 {% include picture.html
-   image = "/assets/images/guide/onboarding/creating-a-new-wallet/creating-a-new-wallet.png"
-   retina = "/assets/images/guide/onboarding/creating-a-new-wallet/creating-a-new-wallet@2x.png"
-   mobile = "/assets/images/guide/onboarding/creating-a-new-wallet/creating-a-new-wallet-mobile.png"
-   mobileRetina = "/assets/images/guide/onboarding/creating-a-new-wallet/creating-a-new-wallet-mobile@2x.png"
+   image = "/assets/images/guide/onboarding/first-use/first-use.png"
+   retina = "/assets/images/guide/onboarding/first-use/first-use@2x.png"
+   mobile = "/assets/images/guide/onboarding/first-use/first-use-mobile.png"
+   mobileRetina = "/assets/images/guide/onboarding/first-use/first-use-mobile@2x.png"
    alt-text = "Creating a new wallet chapter header image"
    width = 1600
    height = 600
@@ -46,8 +57,8 @@ Like regular keys on a keychain, Bitcoin private keys can be copied. This makes 
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/onboarding/creating-a-new-wallet/onboarding-welcome-screen.png"
-   retina = "/assets/images/guide/onboarding/creating-a-new-wallet/onboarding-welcome-screen@2x.png"
+   image = "/assets/images/guide/onboarding/first-use/onboarding-welcome-screen.png"
+   retina = "/assets/images/guide/onboarding/first-use/onboarding-welcome-screen@2x.png"
    width = 250
    height = 541
    caption = "It is good practice to clearly highlight the primary user action, which is 'Create a new wallet' in this case."
@@ -83,8 +94,8 @@ Below is an example of some carousel screens that might be useful in helping a u
 <div class="image-slide-gallery">
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/creating-a-new-wallet/product-intro-1.png"
-   retina = "/assets/images/guide/onboarding/creating-a-new-wallet/product-intro-1@2x.png"
+   image = "/assets/images/guide/onboarding/first-use/product-intro-1.png"
+   retina = "/assets/images/guide/onboarding/first-use/product-intro-1@2x.png"
    alt-text = "Introduction screen explaining ownership"
    caption = "Talk about ownership"
    width = 250
@@ -92,8 +103,8 @@ Below is an example of some carousel screens that might be useful in helping a u
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/creating-a-new-wallet/product-intro-2.png"
-   retina = "/assets/images/guide/onboarding/creating-a-new-wallet/product-intro-2@2x.png"
+   image = "/assets/images/guide/onboarding/first-use/product-intro-2.png"
+   retina = "/assets/images/guide/onboarding/first-use/product-intro-2@2x.png"
    alt-text = "Introduction screen explaining recovery"
    caption = "Talk about recovery"
    width = 250
@@ -101,8 +112,8 @@ Below is an example of some carousel screens that might be useful in helping a u
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/creating-a-new-wallet/product-intro-3.png"
-   retina = "/assets/images/guide/onboarding/creating-a-new-wallet/product-intro-3@2x.png"
+   image = "/assets/images/guide/onboarding/first-use/product-intro-3.png"
+   retina = "/assets/images/guide/onboarding/first-use/product-intro-3@2x.png"
    alt-text = "Introduction screen explaining security"
    caption = "Talk about security"
    width = 250

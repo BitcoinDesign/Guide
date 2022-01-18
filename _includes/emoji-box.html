@@ -1,0 +1,10 @@
+{% if include.url %}<a class="emoji-box" href="{{ include.url }}">{% endif %}
+{% if include.url == undefined %}<div class="emoji-box">{% endif %}
+	{% if include.emoji %}<div class="emoji-box__emoji">{{ include.emoji }}</div>{% endif %}
+    <div class="emoji-box__copy">
+        {% if include.title %}<h5>{{ include.title }}</h5>{% endif %}
+        {% if include.description %}<p markdown="1">{{ include.description }}</p>{% endif %}
+    </div>
+{% if include.url %}</a>{% endif %}
+{% if include.url == undefined %}</div>{% endif %}
+

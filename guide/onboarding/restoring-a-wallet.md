@@ -9,6 +9,14 @@ main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/onboarding/restoring-a-wallet/restoring-a-wallet-preview.png
 ---
 
+<!--
+
+Illustration sources:
+
+- https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=0%3A1
+
+-->
+
 {% include picture.html
    image = "/assets/images/guide/onboarding/restoring-a-wallet/restoring-a-wallet.png"
    retina = "/assets/images/guide/onboarding/restoring-a-wallet/restoring-a-wallet@2x.png"
@@ -74,4 +82,3 @@ Next, let’s look at [private key management]({{ '/guide/private-key-management
    nextUrl = "/guide/private-key-management/introduction/"
    nextName = "Private key management"
 %}
-
