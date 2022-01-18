@@ -69,7 +69,7 @@ Below is an overview of these various entry points:
    image = "/assets/images/guide/payments/request/withdraw-request.png"
    retina = "/assets/images/guide/payments/request/withdraw-request@2x.png"
    layout = "shadow"
-   caption = "A withdraw request is another way a user can request bitcoin."
+   caption = "A withdraw request is another way a user can receive bitcoin."
    alt-text = "Screen showing withdraw request UI."
    width = 250
    height = 541
