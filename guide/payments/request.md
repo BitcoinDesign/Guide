@@ -97,7 +97,7 @@ A payment request with only standard data like an amount and date communicates l
 
 #### Invoice expirations
 
-A piece of meta data unique to invoices is an expiration time. This is how long until a single-use invoice expires. By default this is 60 minutes. When an invoice is generated an expiration timer needs to be shown to users alongside the payment request. For more custom use cases, allowing users to adjust this expiration time manually.
+A piece of meta data unique to invoices is an expiration time. This is how long until a single-use invoice expires. By default this is 60 minutes. When an invoice is generated an expiration timer needs to be shown to users alongside the payment request. For more custom use cases, allow users to adjust this expiration time manually.
 
 <div class="image-slide-gallery">
 
