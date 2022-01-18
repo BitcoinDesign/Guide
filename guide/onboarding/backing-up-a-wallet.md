@@ -1,11 +1,13 @@
 ---
 layout: guide
 title: Backing up a wallet
-description: Handling wallet backups during onboarding.
+description: An overview of the data and considerations for backing Bitcoin wallets.
 parent: Onboarding
 has_children: true
 nav_order: 3
 permalink: /guide/onboarding/backing-up-a-wallet/
+redirect_from:
+ - /guide/onboarding/backing-up-a-recovery-phrase/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/onboarding/backing-up-a-wallet/backing-up-a-wallet-preview.png
 ---
@@ -42,15 +44,22 @@ When a user generates a new Bitcoin wallet, they will soon need to create a back
 Two main types of information need to be backed up: the user's wallet recovery data and their Lightning channel state. While the wallet recovery data may be used to restore the wallet using another wallet application, the channel state is typically only restorable within the same application.
 
 {% include picture.html
-image = "/assets/images/guide/onboarding/backing-up-a-wallet/wallet-backup.png"
-retina = "/assets/images/guide/onboarding/backing-up-a-wallet/wallet-backup@2x.png"
-mobile = "/assets/images/guide/onboarding/backing-up-a-wallet/wallet-backup-mobile.png"
-mobileRetina = "/assets/images/guide/onboarding/backing-up-a-wallet/wallet-backup-mobile@2x.png"
-alt-text = "Example image"
-width = 1200
-height = 680
-layout = "full-width"
+   image = "/assets/images/guide/onboarding/backing-up-a-wallet/wallet-backup.png"
+   retina = "/assets/images/guide/onboarding/backing-up-a-wallet/wallet-backup@2x.png"
+   mobile = "/assets/images/guide/onboarding/backing-up-a-wallet/wallet-backup-mobile.png"
+   mobileRetina = "/assets/images/guide/onboarding/backing-up-a-wallet/wallet-backup-mobile@2x.png"
+   alt-text = "A diagram of data required to back up a Bitcoin wallet"
+   width = 1200
+   height = 680
+   layout = "full-width"
 %}
+
+- The _[Recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }})_ is the fundamental information (consisting of 12 or 24 words) used to construct a wallet
+- The _Passphrase_ is an optional password for additional security
+- The _[Derivation path]({{ '/guide/glossary/#derivation-path' | relative_url }})_ includes information on how to construct the wallet
+- A _Fingerprint_ allows for verification that the wallet was reconstructed correctly after import
+- _Static channel backups_ contain all basic information about active Lightning channels
+- A _Channels database_ contains data on payments made in active Lightning channels
 
 Users who lose both their wallet access and their backup permanently lose their bitcoin. Arguably, this creates one of the most challenging design problems within the space.
 
