@@ -405,7 +405,7 @@ Without Lightning services, a user will need to obtain some inbound liquidity be
    image = "/assets/images/guide/onboarding/funding-a-wallet/channel-opened.png"
    retina = "/assets/images/guide/onboarding/funding-a-wallet/channel-opened@2x.png"
    layout = "shadow"
-   caption = "Indicate to users if they have no inbound liquidity they should get some before requesting a payment."
+   caption = "Indicate to users that, if they have no inbound liquidity, they should get some before requesting a payment."
    alt-text = "Screen showing that inbound liquidity is required."
    width = 250
    height = 541
