@@ -290,7 +290,7 @@ Routing is a probabilistic endeavor. For example, a routing algorithm may identi
 
 ---
 
-Sending is one side of the process. Let's look at things from the [requester's perspective](/guide/payments/receive).
+Sending is one side of the process. Let's look at things from the [requester's perspective](/guide/payments/request).
 
 {% include next-previous.html
    previousUrl = "/guide/payments/transactions/"
