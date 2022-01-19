@@ -2,7 +2,7 @@
 layout: guide
 title: Units & Symbols
 description: How to display and format bitcoin and currency units in Bitcoin applications.
-nav_order: 5
+nav_order: 4
 parent: Payments
 permalink: /guide/payments/units-and-symbols/
 main_classes: -no-top-padding
@@ -203,17 +203,17 @@ Trailing zeros can help more easily compare amounts in right-aligned tables.
    height = 198
 %}
 
-Complex use cases often require users to interact with addresses, public keys, and other encrypted data, where it is important that each character is easily identifyable. Slashed zeros can help distinguish 0 (the number zero) and O (the uppercase letter "O"), which can look very similar in some typefaces.
+Complex use cases often require users to interact with addresses, public keys, and other encrypted data, where it is important that each character is easily identifiable. Slashed zeros can help distinguish 0 (the number zero) and O (the uppercase letter "O"), which can look very similar in some typefaces.
 
 Note that uppercase letter "O", uppercase letter "I", lowercase letter "l", and the number "0" are not valid characters in addresses, in order to prevent mistakes. As users may not be aware of this, using slashed zeros may still be a helpful design choice.
 
 ---
 
-The next section explores common product designs via [case studies]({{ '/guide/case-studies/' | relative_url }}).
+Next we to a technical deep dive into out [transactions]({{ '/guide/payments/transaction' | relative_url }}) on bitcoin work.
 
 {% include next-previous.html
    previousUrl = "/guide/payments/privacy"
    previousName = "Transaction privacy"
-   nextUrl = "/guide/case-studies/"
-   nextName = "Case studies"
+   nextUrl = "/guide/Payments/transactions"
+   nextName = "Transaction overview"
 %}

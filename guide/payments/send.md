@@ -4,7 +4,6 @@ title: Sending bitcoin
 description: Best practices and design guidelines for designing user experiences for sending bitcoin in wallet applications
 nav_order: 2
 parent: Payments
-has_children: true
 permalink: /guide/payments/send/
 main_classes: -no-top-padding
 image: /assets/images/guide/payments/send/bitcoin-payments-social.jpg
@@ -128,7 +127,7 @@ Below are visualizations of some of these entry points.
 
 Since users cannot control how a payment request is presented to them, wallets should be highly flexible in terms of input options and [interoperability]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }}). If your wallet does not support a particular payment request, users should be presented with a human readable [error]({{ '/guide/payments/send/#errors' | relative_url }}).
 
-Payment information can be shared in many formats and over diverse communication channels. Each has its own advantages and limitations. More details on the [payment request formats]({{ '/guide/payments/send/payment-request-formats/' | relative_url }}) page.
+Payment information can be shared in many formats and over diverse communication channels. Each has its own advantages and limitations. More details on the [payment request formats]({{ '/guide/payments/request/payment-request-formats/' | relative_url }}) page.
 
 ## Presenting payment requests
 
@@ -146,7 +145,7 @@ When responding to an invoice that contains all relevent information, the user c
 
 The most convenient option for choosing a recipient is from previously saved contacts. Alternatively, users can enter on-chain addresses, Lightning addresses, Lightning node IDs, or other static identifies that are supported by the wallet.
 
-There are also static [invoice types]({{ '/guide/payments/send/payment-request-formats/' | relative_url }}) that can receive payments repeatedly. These are less intuitive overall due to their appearance, but could also be considered payment endpoints.
+There are also static [invoice types]({{ '/guide/payments/request/payment-request-formats/' | relative_url }}) that can receive payments repeatedly. These are less intuitive overall due to their appearance, but could also be considered payment endpoints.
 
 **Amount**
 
@@ -282,7 +281,7 @@ There are situations in which users may want to make more complex adjustments to
 
 **Coin selection**
 
-Some users may prefer to choose which of their bitcoin (UTXOs to be precise) to send, in order to protect their privacy. More on this topic on the [Coin selection page]({{ '/guide/payments/send/coin-selection/' | relative_url }}) page.
+Some users may prefer to choose which of their bitcoin (UTXOs to be precise) to send, in order to protect their privacy. More on this topic on the [Coin selection page]({{ '/guide/glossary/coin-selection/' | relative_url }}) page.
 
 **Lightning routing options**
 
@@ -290,11 +289,11 @@ Routing is a probabilistic endeavor. For example, a routing algorithm may identi
 
 ---
 
-Sending is one side of the process. Let's look at things from the [requester's perspective](/guide/payments/request).
+Next we go cover [privacy considerations]({{ '/guide/payments/privacy' | relative_url }}) when to consider when making bitcoin payments.
 
 {% include next-previous.html
-   previousUrl = "/guide/payments/transactions/"
-   previousName = "Transactions overview"
-   nextUrl = "/guide/payments/request"
-   nextName = "Requesting bitcoin"
+   previousUrl = "/guide/payments/request/payment-request-formats"
+   previousName = "Requesting bitcoin"
+   nextUrl = "/guide/payments/privacy/"
+   nextName = "Payments privacy"
 %}
