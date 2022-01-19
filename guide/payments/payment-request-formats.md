@@ -129,11 +129,11 @@ Each request format has its own unique approach to bundle payment information fo
 
 ---
 
-Sending is one side of the process. Let's look at things from the [receiver's perspective](/guide/payments/receive).
+Sending is one side of the process. Let's look at things from the [receiver's perspective](/guide/payments/request).
 
 {% include next-previous.html
    previousUrl = "/guide/payments/transactions/"
    previousName = "Transactions overview"
-   nextUrl = "/guide/payments/receive"
+   nextUrl = "/guide/payments/request"
    nextName = "Receiving bitcoin"
 %}
