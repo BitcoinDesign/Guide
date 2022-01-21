@@ -296,6 +296,52 @@ function setupUnitsAndSymbolsFormatter() {
   }
 }
 
+function handleModalImageLinkClick(e) {
+    e.preventDefault();
+
+    var img = e.target.closest('.modal-image-link').getAttribute('href');
+    var caption = e.target.closest('.modal-image-link').dataset.caption;
+    var windowAspectRatio = window.innerWidth / window.innerHeight;
+    var imageAspectRatio = e.target.getAttribute('width') / e.target.getAttribute('height');
+
+    if( !document.getElementById('modal-image-container') ) {
+        ref.modalImageContainer = document.createElement('div');
+        ref.modalImageContainer.classList.add('modal-image-container', 'hidden');
+        ref.modalImageContainer.setAttribute('id', 'modal-image-container');
+        var modalImageInner = document.createElement('div');
+        modalImageInner.classList.add('modal-image-inner');
+        ref.modalImage = document.createElement('img');
+        ref.modalImage.classList.add('modal-image');
+        var modalClose = document.createElement('span');
+        modalClose.classList.add('modal-image-close');
+        var modalOverlay = document.createElement('div');
+        modalOverlay.classList.add('modal-image-overlay');
+        ref.modalCaption = document.createElement('div');
+        ref.modalCaption.classList.add('modal-image-caption');
+        ref.modalImageContainer.appendChild(modalOverlay);
+        modalImageInner.appendChild(ref.modalImage);
+        modalImageInner.appendChild(ref.modalCaption);
+        modalImageInner.appendChild(modalClose);
+        ref.modalImageContainer.appendChild(modalImageInner);
+        document.getElementById('top').appendChild(ref.modalImageContainer);
+        modalClose.addEventListener('click', closeModal);
+        modalOverlay.addEventListener('click', closeModal);
+    }
+
+    if(imageAspectRatio < windowAspectRatio) ref.modalImageContainer.classList.add('portrait');
+    else ref.modalImageContainer.classList.remove('portrait');
+
+    ref.modalImage.setAttribute('src', img);
+    ref.modalCaption.innerHTML = caption;
+    setTimeout(function(){
+        ref.modalImageContainer.classList.remove('hidden');
+    }, 100);
+}
+
+function closeModal(){
+    ref.modalImageContainer.classList.add('hidden');
+}
+
 window.addEventListener("resize", function(event) {
   resizeFigmaEmbeds();
 })
@@ -308,6 +354,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   ref.searchInput = document.getElementById("search-input");
   ref.searchTrigger = document.getElementById("search-trigger");
   ref.searchResults = document.getElementById('search-results');
+  ref.modalImageLinks = document.querySelectorAll('.modal-image-link');
 
   updateNavAccessibility();
 
@@ -323,9 +370,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
   for(var i=0; i<secondaryNavListExpander.length; i++) {
     secondaryNavListExpander[i].addEventListener('click', toggleSecondaryNav);
   }
-  
+
   captureFigmaEmbeds();
   resizeFigmaEmbeds();
 
   setupUnitsAndSymbolsFormatter();
+
+  for(var i = 0; i < ref.modalImageLinks.length; i++) {
+      ref.modalImageLinks[i].addEventListener('click', handleModalImageLinkClick);
+  }
 });

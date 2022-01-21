@@ -175,6 +175,36 @@ Let's start with a very wide image that extends beyond the content width on desk
    height = 800
 %}
 
+#### Image viewable in larger modal
+
+{% raw %}
+```liquid
+{% include picture.html
+   image = "/assets/images/guide/contribute/formatting/example-optional-image-modal.png"
+   retina = "/assets/images/guide/contribute/formatting/example-optional-image-modal@2x.png"
+   mobile = "/assets/images/guide/contribute/formatting/example-optional-image-modal-mobile.png"
+   mobileRetina = "/assets/images/guide/contribute/formatting/example-optional-image-modal-mobile@2x.png"
+   modalImage = "/assets/images/guide/contribute/formatting/example-optional-image-modal@2x.png"
+   modalCaption = "An optional caption to display with the image"
+   alt-text = "Optional image modal"
+   width = 1600
+   height = 800
+%}
+```
+{% endraw %}
+
+{% include picture.html
+   image = "/assets/images/guide/contribute/formatting/example-optional-image-modal.png"
+   retina = "/assets/images/guide/contribute/formatting/example-optional-image-modal@2x.png"
+   mobile = "/assets/images/guide/contribute/formatting/example-optional-image-modal-mobile.png"
+   mobileRetina = "/assets/images/guide/contribute/formatting/example-optional-image-modal-mobile@2x.png"
+   modalImage = "/assets/images/guide/contribute/formatting/example-optional-image-modal@2x.png"
+   modalCaption = "An optional caption to display with the image"
+   alt-text = "Optional image modal"
+   width = 1600
+   height = 800
+%}
+
 #### Image inline with the content
 
 Images can also be inline with the content. This one is inline on desktop, but takes the full screen width on mobile.
