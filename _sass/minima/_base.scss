@@ -423,34 +423,34 @@ ul.task-list {
   background: #000;
   border-radius: 1rem;
   font-size: 1rem;
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   cursor: pointer;
   transform: rotateZ(-45deg);
 
   @include media-query(large) {
-    right: -1rem;
-    top: -1rem;
+    right: -0.75rem;
+    top: -0.75rem;
   }
 
   &:before, &:after {
     content: '';
-    background: $link-base-color;
+    background: $background-color;
     border-radius: 1rem;
     position: absolute;
   }
 
   &:before {
-    width: 0.25rem;
-    height: 1.5rem;
-    left: 0.875rem;
+    width: 0.125rem;
+    height: 1rem;
+    left: 0.6875rem;
     top: 0.25rem;
   }
 
   &:after {
-    height: 0.25rem;
-    width: 1.5rem;
-    top: 0.875rem;
+    height: 0.125rem;
+    width: 1rem;
+    top: 0.6875rem;
     left: 0.25rem;
   }
 }
