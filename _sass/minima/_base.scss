@@ -426,7 +426,8 @@ ul.task-list {
   width: 1.5rem;
   height: 1.5rem;
   cursor: pointer;
-  transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg) scale(1.0);
+  transition: transform 0.25s ease;
 
   @include media-query(large) {
     right: -0.75rem;
@@ -452,6 +453,11 @@ ul.task-list {
     width: 1rem;
     top: 0.6875rem;
     left: 0.25rem;
+  }
+
+  &:hover {
+    transform: rotateZ(-45deg) scale(1.15);
+    transition: transform 0.25s ease;
   }
 }
 
