@@ -301,8 +301,7 @@ function handleModalImageLinkClick(e) {
 
     var img = e.target.closest('.modal-image-link').getAttribute('href');
     var caption = e.target.closest('.modal-image-link').dataset.caption;
-    var windowAspectRatio = window.innerWidth / window.innerHeight;
-    var imageAspectRatio = e.target.getAttribute('width') / e.target.getAttribute('height');
+
 
     if( !document.getElementById('modal-image-container') ) {
         ref.modalImageContainer = document.createElement('div');
@@ -328,8 +327,8 @@ function handleModalImageLinkClick(e) {
         modalOverlay.addEventListener('click', closeModal);
     }
 
-    if(imageAspectRatio < windowAspectRatio) ref.modalImageContainer.classList.add('portrait');
-    else ref.modalImageContainer.classList.remove('portrait');
+    ref.imageAspectRatio = e.target.getAttribute('width') / e.target.getAttribute('height');
+    resizeModal(true);
 
     ref.modalImage.setAttribute('src', img);
     ref.modalCaption.innerHTML = caption;
@@ -338,12 +337,20 @@ function handleModalImageLinkClick(e) {
     }, 100);
 }
 
+function resizeModal(force = false) {
+    if(ref.modalImageContainer && (force || !ref.modalImageContainer.classList.contains('hidden'))){
+        if(ref.imageAspectRatio < (window.innerWidth / window.innerHeight)) ref.modalImageContainer.classList.add('portrait');
+        else ref.modalImageContainer.classList.remove('portrait');
+    }
+}
+
 function closeModal(){
     ref.modalImageContainer.classList.add('hidden');
 }
 
 window.addEventListener("resize", function(event) {
   resizeFigmaEmbeds();
+  resizeModal();
 })
 
 document.addEventListener("DOMContentLoaded", function(event) {
