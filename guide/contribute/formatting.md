@@ -209,6 +209,7 @@ This image can be clicked on to view it in a modal overlay. If the modal image n
    height = 541
    modalWidth = 250
    modalHeight = 541
+   layout = "center"
 %}
 
 #### Image viewable in larger modal with alternate mobile image
