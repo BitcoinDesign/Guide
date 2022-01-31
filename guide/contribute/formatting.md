@@ -177,6 +177,44 @@ Let's start with a very wide image that extends beyond the content width on desk
 
 #### Image viewable in larger modal
 
+This image can be clicked on to view it in a modal overlay. If the modal image needs to use different dimensions than the main image, this can be defined using the optional `modalWidth` and `modalHeight` attributes together.
+
+{% raw %}
+```liquid
+{% include picture.html
+   image = "/assets/images/guide/contribute/formatting/example-image-mobile-screen-modal.png"
+   retina = "/assets/images/guide/contribute/formatting/example-image-mobile-screen-modal@2x.png"
+   mobile = "/assets/images/guide/contribute/formatting/example-image-mobile-screen-modal.png"
+   mobileRetina = "/assets/images/guide/contribute/formatting/example-image-mobile-screen-modal@2x.png"
+   modalImage = "/assets/images/guide/contribute/formatting/example-image-mobile-screen-modal@2x.png"
+   caption = "This image has some small details, so click on it to see it in a modal window."
+   alt-text = "Optional image modal"
+   width = 250
+   height = 541
+   modalWidth = 250
+   modalHeight = 541
+%}
+```
+{% endraw %}
+
+{% include picture.html
+   image = "/assets/images/guide/contribute/formatting/example-image-mobile-screen-modal.png"
+   retina = "/assets/images/guide/contribute/formatting/example-image-mobile-screen-modal@2x.png"
+   mobile = "/assets/images/guide/contribute/formatting/example-image-mobile-screen-modal.png"
+   mobileRetina = "/assets/images/guide/contribute/formatting/example-image-mobile-screen-modal@2x.png"
+   modalImage = "/assets/images/guide/contribute/formatting/example-image-mobile-screen-modal@2x.png"
+   caption = "This image has some small details, so click on it to see it in a modal window."
+   alt-text = "Optional image modal"
+   width = 250
+   height = 541
+   modalWidth = 250
+   modalHeight = 541
+%}
+
+#### Image viewable in larger modal with alternate mobile image
+
+Modal image can also have an alternate image defined for mobile devices. This is useful for situations where the mobile image uses a different aspect ratio than the main image. The mobile image's dimensions can be defined using the optional `modalWidthMobile` and `modalHeightMobile` attributes.
+
 {% raw %}
 ```liquid
 {% include picture.html
@@ -185,10 +223,13 @@ Let's start with a very wide image that extends beyond the content width on desk
    mobile = "/assets/images/guide/contribute/formatting/example-optional-image-modal-mobile.png"
    mobileRetina = "/assets/images/guide/contribute/formatting/example-optional-image-modal-mobile@2x.png"
    modalImage = "/assets/images/guide/contribute/formatting/example-optional-image-modal@2x.png"
-   modalCaption = "An optional caption to display with the image"
+   modalImageMobile = "/assets/images/guide/contribute/formatting/example-optional-image-modal-mobile@2x.png"
+   caption = "This image has some small details, so click on it to see it in a modal window."
    alt-text = "Optional image modal"
    width = 1600
    height = 800
+   modalWidthMobile = 400
+   modalHeightMobile = 400
 %}
 ```
 {% endraw %}
@@ -199,10 +240,13 @@ Let's start with a very wide image that extends beyond the content width on desk
    mobile = "/assets/images/guide/contribute/formatting/example-optional-image-modal-mobile.png"
    mobileRetina = "/assets/images/guide/contribute/formatting/example-optional-image-modal-mobile@2x.png"
    modalImage = "/assets/images/guide/contribute/formatting/example-optional-image-modal@2x.png"
-   modalCaption = "An optional caption to display with the image"
+   modalImageMobile = "/assets/images/guide/contribute/formatting/example-optional-image-modal-mobile@2x.png"
+   caption = "This image has some small details, so click on it to see it in a modal window."
    alt-text = "Optional image modal"
    width = 1600
    height = 800
+   modalWidthMobile = 400
+   modalHeightMobile = 400
 %}
 
 #### Image inline with the content

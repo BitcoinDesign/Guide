@@ -1,5 +1,13 @@
 <figure{% if include.layout %} class="-{{ include.layout }}"{% endif %}>
-	{% if include.modalImage %}<a href="{{ include.modalImage }}" class="modal-image-link"{% if include.modalCaption %} data-caption="{{ include.modalCaption }}"{% endif %}>{% endif %}
+	{% if include.modalImage %}
+        <a
+            href="{{ include.modalImage }}"
+            class="modal-image-link"
+            {% if include.modalImageMobile %}
+                data-modal-image-mobile="{{ include.modalImageMobile }}"
+            {% endif %}
+        >
+    {% endif %}
 	<picture>
 		<source
 			media="(max-width: 639px)"
@@ -17,6 +25,14 @@
 	    	alt="{{ include.alt-text }}"
 	    	width="{{ include.width }}"
 	    	height="{{ include.height }}"
+            {% if include.modalWidth && include.modalHeight %}
+                data-modal-width="{{ include.modalWidth }}"
+                data-modal-height="{{ include.modalHeight }}"
+            {% endif %}
+            {% if include.modalWidthMobile && include.modalHeightMobile %}
+                data-modal-width-mobile="{{ include.modalWidthMobile }}"
+                data-modal-height-mobile="{{ include.modalHeightMobile }}"
+            {% endif %}
     		loading="lazy"
 	    >
 	</picture>
