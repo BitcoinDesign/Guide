@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Transaction privacy
+title: Payment privacy
 description: An overview of how to help users maintain their financial privacy while using Bitcoin.
 nav_order: 4
 parent: Payments
@@ -21,7 +21,7 @@ image: /assets/images/guide/payments/privacy/privacy-preview.jpg
 %}
 
 
-# Transaction privacy
+# Payment privacy
 
 <!--
 This page should inform about what information is made public when sending or receiving, how the application can help minimize unnecessary privacy leaks, basic application functionality to help, and when we can, more advanced options.
@@ -34,35 +34,39 @@ This page should inform about what information is made public when sending or re
 @TODO: address reuse / write glossary term about Gap limit  
 -->
 
-It’s a common misconception that Bitcoin payments are anonymous. Instead, they can be referred to as pseudonymous, this means that who owns a freshly generated addresses is not public knowledge. Unless your ownership is revealed, whether directly by yourself or indirectly by some third-party you are able to remain anonymous.
+It’s a common misconception that Bitcoin payments are anonymous. Rather, bitcoin payments are pseudonymous , meaning no identifiable information is tied to transactions.. Unless ownership is revealed, whether by the parties involved or some third-party, payments remain anonymous.
 
-Transactions, their signatures, and addresses added to the Bitcoin blockchain remain public forever. This means that looking up any address or transaction is trivial, as demonstrated by going back to the very first block mined on [January 3, 2009](https://blockstream.info/tx/4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b).
-
-While all transactions are public, there is no personal identification about the address owners stored on the blockchain itself.
+Transactions, their signatures, and addresses added to the Bitcoin blockchain remain public forever. This means that looking up any address or transaction is trivial, as demonstrated by going back to the very first block mined on [January 3, 2009](https://blockstream.info/tx/4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b). The key to keeping your transactions private is to prevent others from determining which addresses you own[^1]. Since Satoshi let others know that they had mined the first block, which contained a single transaction, one can deduce that both the address that received the block reward and the sender address in the transaction belongs to Satoshi. This illustrates the permanence of associations between addresses and identity. While it’s possible to break assumptions of ownership going forward, the challenge is to recover privacy once an association is made public. That being said, in this case the pseudonym “Satoshi Nakamoto” has yet to be associated with any personal identity.
 
 > Each Bitcoin transaction contains at least one input and at least one output. This means that once a single address is known, there is a trail to follow the bitcoin.
 >
 > <cite>As documented by <a href="https://docs.wasabiwallet.io/FAQ/FAQ-GeneralBitcoinPrivacy.html#how-is-bitcoin-bad-in-terms-of-privacy">Wasabi Wallet</a></cite>
 
-The key to keeping your transactions private is to prevent others from determining which addresses you own[^2]. Since Satoshi let others know that they had mined the first block, which contained a single transaction, one can deduce that both the address that received the block reward and the sender address in the transaction belongs to Satoshi. This illustrates the permanence of associations between addresses and identity. While it's possible to break assumptions of ownership going forward, the challenge is to recover privacy once an association is made public. That being said, in this case the pseudonym “Satoshi Nakamoto” has yet to be associated with any personal identity.
+On the Lightning network, a payment is only stored by the respective sender and receiver, and only as long as the channel in which the payment was made is open. However, opening and closing channels requires entries on the Bitcoin blockchain, and those are also publicly stored forever. Additionally, Lightning nodes are always online and usually directly tied to a single wallet, providing another data point. For a detailed analysis of privacy on Lighting, see the [Security and privacy chapter](https://github.com/lnbook/lnbook/blob/develop/16_security_privacy_ln.asciidoc) in the Mastering the Lightning Network book.
+
+These are just some of the interactions through which we leave traces of data that diligent observers can connect and build user profiles around. For the rest of this page, we focus on what product builders and users can do to improve their payment privacy.
 
 <!-- TODO: add graphic and heading that demonstrate points of compromise when transacting with bitcoin -->
 
 ## Methods to preserve privacy
 
-There are many ways your identity might get connected to your addresses[^1],so keeping Bitcoin payments private takes diligent work but is not impossible. Let’s explore some practices that help preserve privacy of your users' Bitcoin payments.
+There are many ways your identity might get connected to your wallet[^2] and payments, so keeping Bitcoin payments private takes diligent work, but is not impossible. Let’s explore some practices that help preserve privacy of Bitcoin payments.
 
 <!-- talk about the problem as you are talking about the solution -->
 
-### Generate a new address for each payment
+### Be intentional when sharing static Lightning identifiers
 
-A new address should be generated by the wallet application any time the user wants to receive bitcoin. This is achieved by using [HD Wallets]({{ "/guide/glossary/wallet/#hd-wallet" | relative_url }}), a standard in modern Bitcoin applications that can generate and manage an infinite number of addresses without revealing their common root. This allows each incoming transaction to use a new address that is unconnected to any other in the wallet, making it difficult to associate with the owner.
+Lighting node Ids, Lightning addresses, and LNURL-Pay invoices (see [Payment request formats](https://bitcoin.design/guide/payments/send/payment-request-formats/)) are examples of endpoints that can be used to over and over and generate Lightning invoices. While this is convenient for users, it is bad for privacy. For example, placing a Lightning address on a website or social media profile makes it trivial to create a direct connection between the Lightning node and the owner of the website or profile.
 
-Address re-use degrades the privacy of both the [sending](/guide/payments/send/) and [receiving](/guide/payments/request) parties. Re-using an address on the receivers side means that anyone with whom that address is shared can see previous payments and the amount of bitcoin controlled by that address.
+### Generate a new address for each on-chain payment
+
+A new address should be generated by the wallet application any time the user wants to receive bitcoin on-chain. This is achieved by using [HD Wallets]({{ "/guide/glossary/wallet/#hd-wallet" | relative_url }}), a standard in modern Bitcoin applications that can generate and manage an infinite number of addresses without revealing their common root. This allows each incoming transaction to use a new address that is unconnected to any other in the wallet, making it difficult to associate with the owner.
+
+Address re-use degrades the privacy of both the [sending](/guide/payments/send/) and [receiving](/guide/payments/request) parties. Re-using an address on the receiver's side means that anyone with whom that address is shared can see previous payments and the amount of bitcoin controlled by that address.
 
 > If bad actors can see your income, holdings, and spending, they can use this information to [target and exploit you](https://docs.wasabiwallet.io/why-wasabi/TransactionSurveillanceCompanies.html#attempt-to-invade-privacy)
 
-By _sending_ to an address that is being reused, the sender is now traceable and connected to any previous transactions the receiver has made with that address. This increases the risk of exposure to an adversary.
+By sending to an address that is being reused, the sender is now traceable and connected to any previous transactions the receiver has made with that address. This increases the risk of exposure to an adversary.
 
 <!--
 TODO: Link / mention gap limit
@@ -78,7 +82,6 @@ TODO: Graphic / consider how to get the ui generating multiple addresses. make i
 
 -->
 
-
 {% include fact/dos.html %}
 - Generate a new address any time the user wants to receive bitcoin
 - Make it easy to generate as many addresses as the receiver needs
@@ -89,7 +92,7 @@ TODO: Graphic / consider how to get the ui generating multiple addresses. make i
 - Make it easy to reuse an address.
 {% include fact/close.html %}
 
-### Keep track of who knows about an address
+### Keep track of who knows about on-chain addresses
 
 <div class="center" markdown="1">
 
@@ -103,14 +106,13 @@ TODO: Graphic / consider how to get the ui generating multiple addresses. make i
    caption = "Labeling of receiving addresses can help minimize privacy leaks when spending the coins in the future."
 %}
 
-If the application supports it, the user can [add additional details]({{ "/guide/payments/request/#inputting-additional-payment-details" | relative_url }}) to a payment when receiving bitcoin. This practice is often called address labeling. Not only does this help to remember what payments were for, it also enables preventative measures for preserving privacy. Labeling receiving addresses([UTXOs]({{ "/guide/glossary/#unspent-transaction-output-utxo" | relative_url }})) with the sender's name can inform decisions for which UTXOs are selected as inputs in future transactions, this is often referred to as [coin control]({{ "/guide/glossary/#coin-control" | relative_url }}).
+If the application supports it, the user can [add additional details]({{ "/guide/payments/request/#inputting-additional-payment-details" | relative_url }}) to a payment when receiving bitcoin. This practice is often called address labeling. Not only does this help to remember what payments were for, it also enables preventative measures for preserving privacy. Labeling receiving addresses([UTXOs]({{ "/guide/glossary/#unspent-transaction-output-utxo" | relative_url }})) with the sender’s name can inform decisions for which UTXOs are selected as inputs in future transactions, this is often referred to as [coin control]({{ "/guide/glossary/#coin-control" | relative_url }}).
 
 Some applications make it possible to filter UTXOs by label to make such selections easier.
 
-
 </div>
 
-### Increase anonymity by collaborating with others
+### Increase anonymity through obfuscation
 
 <div class="center" markdown="1">
 
@@ -129,6 +131,10 @@ Some applications make it possible to filter UTXOs by label to make such selecti
 Users still have to be mindful of how the UTXOs they received from the CoinJoin are spent. For instance, spending them together in a single transaction would unravel the anonymity gains from participating in the CoinJoin.
 
 </div>
+
+### Use multiple wallets or applications
+
+A simple way to avoid data points from being connected is for users to set up and use multiple wallets or accounts for different purposes. For example, if a user wants to set up a page to collect tips on their website, they can set up a dedicated wallet. Anyone analyzing the activity around the wallet would only see incoming tips and none of the other activity that happens in other wallets the user controls. Users just need to be careful with cross-wallet transfers, as those can allow observers to connect the activity again.
 
 ### Design with privacy in mind
 
