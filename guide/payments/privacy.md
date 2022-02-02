@@ -34,9 +34,11 @@ This page should inform about what information is made public when sending or re
 @TODO: address reuse / write glossary term about Gap limit  
 -->
 
-It’s a common misconception that Bitcoin payments are anonymous. Rather, bitcoin payments are pseudonymous , meaning no identifiable information is tied to transactions.. Unless ownership is revealed, whether by the parties involved or some third-party, payments remain anonymous.
+It’s a common misconception that Bitcoin payments are anonymous. Rather, bitcoin payments are [pseudonymous](https://en.wikipedia.org/wiki/Pseudonym), meaning no identifiable information is tied to transactions. Unless ownership is revealed, whether by the parties involved or some third-party, payments remain anonymous.
 
-Transactions, their signatures, and addresses added to the Bitcoin blockchain remain public forever. This means that looking up any address or transaction is trivial, as demonstrated by going back to the very first block mined on [January 3, 2009](https://blockstream.info/tx/4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b). The key to keeping your transactions private is to prevent others from determining which addresses you own[^1]. Since Satoshi let others know that they had mined the first block, which contained a single transaction, one can deduce that both the address that received the block reward and the sender address in the transaction belongs to Satoshi. This illustrates the permanence of associations between addresses and identity. While it’s possible to break assumptions of ownership going forward, the challenge is to recover privacy once an association is made public. That being said, in this case the pseudonym “Satoshi Nakamoto” has yet to be associated with any personal identity.
+It is important to differentiate between privacy on the Bitcoin network and Lightning network. Their differences in technical architecture results in different privacy considerations.
+
+Transactions, their signatures, and addresses added to the Bitcoin blockchain remain public forever. This means that looking up any address or transaction is trivial, as demonstrated by going back to the very first block mined on [January 3, 2009](https://blockstream.info/tx/4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b). The key to keeping your transactions private is to prevent others from determining which addresses you own[^1]. Since [Satoshi](https://en.wikipedia.org/wiki/Satoshi_Nakamoto) let others know that they had mined the first block, which contained a single transaction, one can deduce that both the address that received the block reward and the sender address in the transaction belongs to Satoshi. This illustrates the permanence of associations between addresses and identity. While it’s possible to break assumptions of ownership going forward, the challenge is to recover privacy once an association is made public. That being said, in this case the pseudonym “Satoshi Nakamoto” has yet to be associated with any personal identity.
 
 > Each Bitcoin transaction contains at least one input and at least one output. This means that once a single address is known, there is a trail to follow the bitcoin.
 >
@@ -54,9 +56,13 @@ There are many ways your identity might get connected to your wallet[^2] and pay
 
 <!-- talk about the problem as you are talking about the solution -->
 
+### Use multiple wallets or applications
+
+A simple way to avoid data points from being connected is for users to set up and use multiple wallets or accounts for different purposes. For example, if a user wants to set up a page to collect tips on their website, they can set up a dedicated wallet. Anyone analyzing the activity around the wallet would only see incoming tips and none of the other activity that happens in other wallets the user controls. Users just need to be careful with cross-wallet transfers, as those can allow observers to connect the activity again.
+
 ### Be intentional when sharing static Lightning identifiers
 
-Lighting node Ids, Lightning addresses, and LNURL-Pay invoices (see [Payment request formats](https://bitcoin.design/guide/payments/send/payment-request-formats/)) are examples of endpoints that can be used to over and over and generate Lightning invoices. While this is convenient for users, it is bad for privacy. For example, placing a Lightning address on a website or social media profile makes it trivial to create a direct connection between the Lightning node and the owner of the website or profile.
+Lighting node Ids, Lightning addresses, and LNURL-Pay invoices (see [Payment request formats](https://bitcoin.design/guide/payments/send/payment-request-formats/)) are examples of endpoints that can be used to generate many Lightning invoices. While this is convenient for users, it is bad for privacy. For example, placing a Lightning address on a website or social media profile makes it trivial to create a direct connection between the Lightning node and the owner of the website or profile.
 
 ### Generate a new address for each on-chain payment
 
@@ -126,15 +132,11 @@ Some applications make it possible to filter UTXOs by label to make such selecti
    caption = "CoinJoin transactions attempt to make payments more private by mixing inputs from many senders and outputs to many receivers."
 %}
 
-[CoinJoins]({{ "/guide/glossary/#coinjoin" | relative_url }}) is an advanced technique where multiple participants collaborate on a transaction to break the "common input ownership" heuristic[^3], which assumes that all inputs in a transaction likely belong to the same owner. In a CoinJoin transaction all the outputs tend to be of the same amount. This makes it harder to define which input paid which output, somewhat breaking the absolute traceability of bitcoin transactions. As with any other anonymity network, a large and diverse group of participants will be more effective in disassociating the connections. CoinJoin transactions are not yet widely supported by Bitcoin applications.
+A [CoinJoin]({{ "/guide/glossary/#coinjoin" | relative_url }}) is an advanced technique where multiple participants collaborate on a transaction to break the "common input ownership" heuristic[^3], which assumes that all inputs in a transaction likely belong to the same owner. In a CoinJoin transaction all the outputs tend to be of the same amount. This makes it harder to define which input paid which output, somewhat breaking the absolute traceability of bitcoin transactions. As with any other anonymity network, a large and diverse group of participants will be more effective in disassociating the connections. CoinJoin transactions are not yet widely supported by Bitcoin applications.
 
 Users still have to be mindful of how the UTXOs they received from the CoinJoin are spent. For instance, spending them together in a single transaction would unravel the anonymity gains from participating in the CoinJoin.
 
 </div>
-
-### Use multiple wallets or applications
-
-A simple way to avoid data points from being connected is for users to set up and use multiple wallets or accounts for different purposes. For example, if a user wants to set up a page to collect tips on their website, they can set up a dedicated wallet. Anyone analyzing the activity around the wallet would only see incoming tips and none of the other activity that happens in other wallets the user controls. Users just need to be careful with cross-wallet transfers, as those can allow observers to connect the activity again.
 
 ### Design with privacy in mind
 
