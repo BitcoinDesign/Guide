@@ -8,7 +8,7 @@ permalink: /guide/designing-products/getting-to-know-your-users/
 redirect_from:
  - /guide/onboarding/getting-to-know-your-users/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/designing-products/getting-to-know-your-users/getting-to-know-your-users-preview.png
+image: https://bitcoin.design/assets/images/guide/designing-products/getting-to-know-your-users/getting-to-know-your-users-preview.jpg
 ---
 
 <!--
@@ -17,15 +17,15 @@ Editor's notes
 
 Illustration sources
 
-- Sources needed
+header: https://www.figma.com/file/eepTzz238Jkb5WAt5DTWw8/getting-to-know-your-users?node-id=12%3A1
 
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/designing-products/getting-to-know-your-users/getting-to-know-your-users.png"
-   retina = "/assets/images/guide/designing-products/getting-to-know-your-users/getting-to-know-your-users@2x.png"
-   mobile = "/assets/images/guide/designing-products/getting-to-know-your-users/getting-to-know-your-users-mobile.png"
-   mobileRetina = "/assets/images/guide/designing-products/getting-to-know-your-users/getting-to-know-your-users-mobile@2x.png"
+   image = "/assets/images/guide/designing-products/getting-to-know-your-users/getting-to-know-your-users.jpg"
+   retina = "/assets/images/guide/designing-products/getting-to-know-your-users/getting-to-know-your-users@2x.jpg"
+   mobile = "/assets/images/guide/designing-products/getting-to-know-your-users/getting-to-know-your-users-mobile.jpg"
+   mobileRetina = "/assets/images/guide/designing-products/getting-to-know-your-users/getting-to-know-your-users-mobile@2x.jpg"
    alt-text = "Getting to know your users chapter header image"
    width = 1600
    height = 600
