@@ -7,30 +7,6 @@ parent: Case studies
 permalink: /guide/case-studies/cloud-backup/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/case-studies/cloud-backup/daily-spending-preview.jpg
-image_base: /assets/images/guide/case-studies/cloud-backup/
-images:
-    - file: first
-      alt:
-      caption: Offer clear options to create and import wallets.
-    - file: second
-      alt:
-      caption: Explain what is about to happen. Be transparent about how the private key is stored and the risks. Advanced options can be placed on a separate page.
-    - file: more-information
-      alt:
-      caption: Explain how private keys are managed if you cannot fit it all on the previous screen. Link to general Bitcoin information to help users get up to speed.
-    - file: balance
-      alt:
-      caption: As key creation and backup is automated, users can immediately be navigated to the home screen.
-importImages:
-    - file: import-wallet
-      alt:
-      caption: Explain what importing a wallet means and what is required. Point out features or functions your wallet does not support if users may expect them.
-    - file: input-recovery-phrase
-      alt:
-      caption: Let users enter one word at a time and make it easy to see what order they should go in.
-    - file: backup-info
-      alt:
-      caption: Inform the user about how the private key is managed, and if you have options let users decide here.
 ---
 
 <!--
