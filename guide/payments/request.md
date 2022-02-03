@@ -458,7 +458,7 @@ For in-person payments, showing the confirmation screen to the sender will likel
 
 ---
 
-Next we go over the different types of [payment request formats](/guide/payments/request/payment-request-formats/) available in bitcoin.
+Next, we go over the different [payment request formats](/guide/payments/request/payment-request-formats/) available in bitcoin.
 
 {% include next-previous.html
    previousUrl = "/guide/payments"
