@@ -5,6 +5,7 @@ description: A mobile Bitcoin wallet case study using automatic cloud backup as 
 nav_order: 1
 parent: Case studies
 permalink: /guide/case-studies/cloud-backup/
+main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/case-studies/cloud-backup/cloud-backup-preview.jpg
 image_base: /assets/images/guide/case-studies/cloud-backup/
 images:
@@ -43,47 +44,34 @@ https://www.figma.com/community/file/968416729557947210
 
 -->
 
+{% include picture.html
+   image = "/assets/images/guide/case-studies/cloud-backup/daily-spending-header.jpg"
+   retina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-header@2x.jpg"
+   mobile = "/assets/images/guide/case-studies/cloud-backup/daily-spending-header-mobile.jpg"
+   mobileRetina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-header-mobile@2x.jpg"
+   alt-text = "Various screens from a mobile bitcoin wallet"
+   caption = ""
+   width = 1600
+   height = 600
+   layout = "full-width"
+%}
+
 # Cash account / Daily spending
 
 Imagine a product which tries to solve the problem of quickly and easily sending smaller amounts of money to friends and family, or paying for [small purchases]({{ '/guide/designing-products/personal-finance/#day-to-day-spending' | relative_url }}). Ease and speed of use will be important as usage is likely to be on mobile devices and on the go. Users are not expected to be well versed in Bitcoin technology or advanced private key management, which makes it reasonable to worry more about self-inflicted loss than from theft.
 
 This product connects to the Lightning network, allowing the user to send and receive bitcoin almost instantly. This means that automatic cloud backup will be a necessity for this product in order to backup the user's Lightning channel state. The user's private key can also be backed up to the cloud. For more advanced users, you could offer the option to opt-out of cloud backup of the private key and instead use a [recovery phrase]({{ '/guide/private-key-management/manual-backup/' | relative_url }}).
 
-<div class="image-slide-gallery">
-
-{% include image.html
-   image = "assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-features-main.png"
-   retina = "assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-features-main@2x.png"
-   width = 250
-   height = 541
-   caption = "This wallet has the option to send, receive, and scan QR codes from the home screen."
-   alt-text = "Home screen of the wallet app"
-   layout = "shadow"
+{% include prototype.html
+   link = "https://www.figma.com/proto/dXSeWwzKoVvS0Xm9VT9HuJ/Daily-Spending-Case-Study---Bitcoin-Design-Guide?page-id=43%3A2796&node-id=43%3A2797&viewport=343%2C48%2C0.5&scaling=min-zoom&starting-point-node-id=43%3A2797&show-proto-sidebar=1"
+   image = "/assets/images/guide/case-studies/cloud-backup/daily-spending-prototype.jpg"
+   retina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-prototype@2x.jpg"
+   mobile = "/assets/images/guide/case-studies/cloud-backup/daily-spending-prototype-mobile.jpg"
+   mobileRetina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-prototype-mobile@2x.jpg"
+   alt-text = "Image of case study prototype"
+   width = 800
+   height = 500
 %}
-
-{% include image.html
-   image = "assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-features-send.png"
-   retina = "assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-features-send@2x.png"
-   width = 250
-   height = 541
-   caption = "The user can send bitcoin."
-   alt-text = "The sending screen of the app."
-   layout = "shadow"
-%}
-
-{% include image.html
-   image = "assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-features-receive.png"
-   retina = "assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-features-receive@2x.png"
-   width = 250
-   height = 541
-   caption = "The user can create payment requests to receive bitcoin."
-   alt-text = "The receiving screen of the app."
-   layout = "shadow"
-%}
-
-
-
-</div>
 
 #### Design considerations
 - Most users will be bitcoin beginners
@@ -107,8 +95,8 @@ The wireframe screens below show the main onboarding sequence that guides users 
 <div class="image-slide-gallery">
 
 {% include image.html
-   image = "/assets/images/guide/onboarding/first-use/onboarding-welcome-screen.png"
-   retina = "/assets/images/guide/onboarding/first-use/onboarding-welcome-screen@2x.png"
+   image = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-onboarding-begin.png"
+   retina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-onboarding-begin@2x.png"
    width = 250
    height = 541
    caption = "Offer clear options to create and restore wallets."
@@ -117,8 +105,8 @@ The wireframe screens below show the main onboarding sequence that guides users 
 %}
 
 {% include image.html
-   image = "assets/images/guide/onboarding/first-use/product-intro-1.png"
-   retina = "assets/images/guide/onboarding/first-use/product-intro-1@2x.png"
+   image = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-onboarding-benefits.png"
+   retina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-onboarding-benefits@2x.png"
    width = 250
    height = 541
    caption = "Talk about ownership"
@@ -127,8 +115,8 @@ The wireframe screens below show the main onboarding sequence that guides users 
 %}
 
 {% include image.html
-   image = "assets/images/guide/onboarding/first-use/product-intro-2.png"
-   retina = "assets/images/guide/onboarding/first-use/product-intro-2@2x.png"
+   image = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-onboarding-cloud.png"
+   retina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-onboarding-cloud@2x.png"
    width = 250
    height = 541
    caption = "Talk about recovery"
@@ -137,8 +125,8 @@ The wireframe screens below show the main onboarding sequence that guides users 
 %}
 
 {% include image.html
-   image = "assets/images/guide/onboarding/first-use/product-intro-3.png"
-   retina = "assets/images/guide/onboarding/first-use/product-intro-3@2x.png"
+   image = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-onboarding-security.png"
+   retina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-onboarding-security@2x.png"
    width = 250
    height = 541
    caption = "Talk about security"
@@ -165,8 +153,8 @@ The recovery flow guides the user through restoring their wallet on a new device
 <div class="image-slide-gallery">
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/restoring-a-wallet/import-options.png"
-   retina = "/assets/images/guide/onboarding/restoring-a-wallet/import-options@2x.png"
+   image = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-menu.png"
+   retina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-menu@2x.png"
    width = 250
    height = 600
    alt-text = "Showing wallet import options."
@@ -175,22 +163,12 @@ The recovery flow guides the user through restoring their wallet on a new device
 %}
 
 {% include picture.html
-   image = "assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-searching.png"
-   retina = "assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-searching@2x.png"
+   image = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-searching.png"
+   retina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-searching.png"
    width = 250
    height = 600
    alt-text = "Showing the app searching for the user's wallet recovery data."
    caption = "The app keeps the user informed of progress."
-   layout = "shadow"
-%}
-
-{% include picture.html
-   image = "assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-found.png"
-   retina = "assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-found@2x.png"
-   width = 250
-   height = 600
-   alt-text = "Showing app ready to restore the user's wallet."
-   caption = "The app finds the user's recovery data."
    layout = "shadow"
 %}
 
@@ -205,8 +183,18 @@ The recovery flow guides the user through restoring their wallet on a new device
 %}
 
 {% include picture.html
-   image = "assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-finish.png"
-   retina = "assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-finish@2x.png"
+   image = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-restored.png"
+   retina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-restored@2x.png"
+   width = 250
+   height = 600
+   alt-text = "Showing the app having completed restoration of the wallet."
+   caption = "The app notifies the user that the wallet is fully restored"
+   layout = "shadow"
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-finish.png"
+   retina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-finish@2x.png"
    width = 250
    height = 600
    alt-text = "Showing the user's wallet balance after restoration is complete."
@@ -218,7 +206,8 @@ The recovery flow guides the user through restoring their wallet on a new device
 
 **Case study resources**
 
-- [Figma design file](https://www.figma.com/file/dXSeWwzKoVvS0Xm9VT9HuJ/Daily-Spending-Case-Study---Bitcoin-Design-Guide?node-id=0%3A1)
+- [Prototype](https://www.figma.com/proto/dXSeWwzKoVvS0Xm9VT9HuJ/Daily-Spending-Case-Study---Bitcoin-Design-Guide?page-id=43%3A2796&node-id=43%3A2797&viewport=343%2C48%2C0.5&scaling=min-zoom&starting-point-node-id=43%3A2797&show-proto-sidebar=1)
+- [Figma design file](https://www.figma.com/file/dXSeWwzKoVvS0Xm9VT9HuJ/Daily-Spending-Case-Study---Bitcoin-Design-Guide?node-id=43%3A2797)
 - [Use case]({{ '/guide/designing-products/personal-finance/#day-to-day-spending' | relative_url }})
 - [Private key scheme]({{ '/guide/private-key-management/cloud-backup/' | relative_url }})
 - [Backup guidance for users]({{ '/guide/private-key-management/backups/#encrypted-cloud-backup' | relative_url }})
