@@ -6,9 +6,10 @@ nav_order: 1
 grand_parent: Payments
 parent: Requesting bitcoin
 permalink: /guide/payments/request/payment-request-formats/
+redirect_from:
+ - /guide/payments/send/payment-request-formats/
 main_classes: -no-top-padding
 image: /assets/images/guide/payments/send/bitcoin-payments-social.jpg
-
 image_base: /assets/images/guide/payments/send/
 images:
     - file: home

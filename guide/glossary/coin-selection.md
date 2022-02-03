@@ -5,6 +5,8 @@ description: A primer on how UTXOs are chosen to fund new bitcoin transactions.
 nav_order: 4
 parent: Glossary
 permalink: /guide/glossary/coin-selection/
+redirect_from:
+ - /guide/payments/send/coin-selection/
 main_classes: -no-top-padding
 ---
 
