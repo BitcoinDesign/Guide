@@ -296,8 +296,118 @@ function setupUnitsAndSymbolsFormatter() {
   }
 }
 
+function handleModalImageLinkClick(e) {
+    e.preventDefault();
+
+    var caption;
+
+    e.target.closest('figure').childNodes.forEach(function(child){
+        if(child.tagName === 'FIGCAPTION') caption = child.innerHTML;
+    });
+
+    if( !document.getElementById('modal-image-container') ) {
+        ref.modalImageContainer = document.createElement('div');
+        ref.modalImageContainer.classList.add('modal-image-container', 'hidden', 'loading');
+        ref.modalImageContainer.setAttribute('id', 'modal-image-container');
+        var modalImageInner = document.createElement('div');
+        modalImageInner.classList.add('modal-image-inner');
+        ref.modalImage = document.createElement('img');
+        ref.modalImage.classList.add('modal-image');
+        var modalTop = document.createElement('div');
+        modalTop.classList.add('modal-image-top');
+        var modalBottom = document.createElement('div');
+        modalBottom.classList.add('modal-image-bottom');
+        var modalClose = document.createElement('span');
+        modalClose.classList.add('modal-image-close');
+        var modalOverlay = document.createElement('div');
+        modalOverlay.classList.add('modal-image-overlay');
+        ref.modalCaption = document.createElement('div');
+        ref.modalCaption.classList.add('modal-image-caption');
+        ref.modalImageLoading = document.createElement('div');
+        ref.modalImageLoading.classList.add('modal-image-loading');
+        ref.modalImageContainer.appendChild(modalOverlay);
+        modalImageInner.appendChild(ref.modalImage);
+        modalImageInner.appendChild(ref.modalCaption);
+        modalTop.appendChild(modalClose);
+        ref.modalImageContainer.appendChild(modalTop);
+        modalImageInner.appendChild(ref.modalImageLoading);
+        ref.modalImageContainer.appendChild(modalImageInner);
+        ref.modalImageContainer.appendChild(modalBottom);
+        document.getElementById('top').appendChild(ref.modalImageContainer);
+        [modalClose, modalTop, modalBottom, modalOverlay].forEach(function(element){
+            element.addEventListener('click', closeModal);
+        });
+    }
+
+    var mobile = window.innerWidth < 640;
+
+    ref.modalImageContainer.classList.add('loading');
+    if(mobile && e.target.dataset.modalWidthMobile && e.target.dataset.modalHeightMobile) ref.modalImageDimensions = [e.target.dataset.modalWidthMobile, e.target.dataset.modalHeightMobile];
+    else if(e.target.dataset.modalWidth && e.target.dataset.modalHeight) ref.modalImageDimensions = [e.target.dataset.modalWidth, e.target.dataset.modalHeight];
+    else ref.modalImageDimensions = [e.target.getAttribute('width'), e.target.getAttribute('height')];
+    ref.modalImage.setAttribute('width', ref.modalImageDimensions[0]);
+    ref.modalImage.setAttribute('height', ref.modalImageDimensions[1]);
+
+    if(caption) {
+        ref.modalCaption.innerHTML = caption;
+        ref.modalCaption.classList.remove('hidden');
+    }
+    else {
+        ref.modalCaption.innerHTML = '';
+        ref.modalCaption.classList.add('hidden');
+    }
+
+    ref.modalImageAspectRatio = ref.modalImageDimensions[0] / ref.modalImageDimensions[1];
+    resizeModal(true);
+
+    setTimeout(function(){
+        ref.modalImageContainer.classList.remove('hidden');
+    }, 100);
+
+    var img,
+        modalLink = e.target.closest('.modal-image-link');
+    if(mobile && modalLink.dataset.modalImageMobile) img = modalLink.dataset.modalImageMobile;
+    else img = modalLink.getAttribute('href');
+
+    var request = new Request(img);
+    fetch(request)
+        .then(response => {
+            return response.blob()
+        })
+        .then(blob => {
+            ref.modalImage.setAttribute('src', URL.createObjectURL(blob));
+            setTimeout(function(){
+                ref.modalImageContainer.classList.remove('loading');
+            }, 100);
+        });
+}
+
+function resizeModal(force = false) {
+    if(ref.modalImageContainer && (force || !ref.modalImageContainer.classList.contains('hidden'))){
+        var width, height;
+        var margins = window.innerWidth < 1024 ? 30 : 60;
+        if(ref.modalImageAspectRatio < (window.innerWidth / (window.innerHeight - 120))) {
+            ref.modalImageContainer.classList.add('portrait');
+            height = window.innerHeight - 120 - document.getElementsByClassName('modal-image-caption')[0].offsetHeight;
+            width = height * ref.modalImageAspectRatio;
+        }
+        else {
+            ref.modalImageContainer.classList.remove('portrait');
+            width = window.innerWidth - margins;
+            height = width / ref.modalImageAspectRatio;
+        }
+        ref.modalImage.style.width = width + 'px';
+        ref.modalImage.style.height = height + 'px';
+    }
+}
+
+function closeModal(){
+    ref.modalImageContainer.classList.add('hidden');
+}
+
 window.addEventListener("resize", function(event) {
   resizeFigmaEmbeds();
+  resizeModal();
 })
 
 document.addEventListener("DOMContentLoaded", function(event) {
@@ -308,6 +418,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   ref.searchInput = document.getElementById("search-input");
   ref.searchTrigger = document.getElementById("search-trigger");
   ref.searchResults = document.getElementById('search-results');
+  ref.modalImageLinks = document.querySelectorAll('.modal-image-link');
 
   updateNavAccessibility();
 
@@ -323,9 +434,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
   for(var i=0; i<secondaryNavListExpander.length; i++) {
     secondaryNavListExpander[i].addEventListener('click', toggleSecondaryNav);
   }
-  
+
   captureFigmaEmbeds();
   resizeFigmaEmbeds();
 
   setupUnitsAndSymbolsFormatter();
+
+  for(var i = 0; i < ref.modalImageLinks.length; i++) {
+      ref.modalImageLinks[i].addEventListener('click', handleModalImageLinkClick);
+  }
 });
