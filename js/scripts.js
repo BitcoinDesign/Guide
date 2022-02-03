@@ -366,6 +366,10 @@ function handleModalImageLinkClick(e) {
     resizeModal(true);
 
     setTimeout(function(){
+        ref.body = document.getElementsByTagName('body')[0];
+        ref.body.addEventListener('scroll', preventScroll, {passive: false});
+        ref.body.addEventListener('mousewheel', preventScroll, {passive: false});
+        ref.body.addEventListener('touchmove', preventScroll, {passive: false});
         ref.modalImageContainer.classList.remove('hidden');
     }, 100);
 
@@ -408,6 +412,15 @@ function resizeModal(force = false) {
 
 function closeModal(){
     ref.modalImageContainer.classList.add('hidden');
+    ref.body.removeEventListener('scroll', preventScroll);
+    ref.body.removeEventListener('mousewheel', preventScroll);
+    ref.body.removeEventListener('touchmove', preventScroll);
+}
+
+function preventScroll(e){
+    e.preventDefault();
+    e.stopPropagation();
+    return false;
 }
 
 window.addEventListener("resize", function(event) {
