@@ -209,7 +209,7 @@ Note that uppercase letter "O", uppercase letter "I", lowercase letter "l", and 
 
 ---
 
-Next we to a technical deep dive into out [transactions]({{ '/guide/payments/transaction' | relative_url }}) on bitcoin work.
+Next, we do a technical deep dive into how [transactions]({{ '/guide/payments/transaction' | relative_url }}) on bitcoin work.
 
 {% include next-previous.html
    previousUrl = "/guide/payments/privacy"
