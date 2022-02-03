@@ -62,7 +62,7 @@ The basics on units and currency symbols, how to format them and what options to
 
 ### [Transactions overview]({{ '/guide/payments/transactions/' | relative_url }})
 
-An overview of Bitcoin payments, common concepts and the transaction lifecycle.
+An overview of Bitcoin payments, common concepts, and the transaction lifecycle.
 
 ---
 
