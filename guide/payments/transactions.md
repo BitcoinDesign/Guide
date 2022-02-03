@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Transactions overview
-description: An overview of Bitcoin transaction, common concepts and the transaction lifecycle.
+description: An overview of Bitcoin transactions, common concepts, and the transaction lifecycle.
 nav_order: 5
 parent: Payments
 permalink: /guide/payments/transactions/
