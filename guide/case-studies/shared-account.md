@@ -54,6 +54,12 @@ A common real-world use case for shared accounts are couples managing their mont
 - 1-of-2 [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}) - either party can spend without the other's approval
 - 2-of-3 multi-key - either party can spend with approval from one additional key
 
+{% include tip/open.html color="blue" icon="info" label="Lightning support" %}
+
+Multi-key on Lightning is still in development. This page will focus on on-chain wallets for the time being.
+
+{% include tip/close.html %}
+
 The other person does not need to co-sign every transaction, but we might want a *spending limit*, above which both parties need to approve the transaction. All multi-key setups are represented by Bitcoin scripts on the blockchain, and the spending limit can be introduced as a conditional for both the 1-of-2 or 2-of-3 scheme.
 
 Although the 1-of-2 scheme could work here, it offers lower protection against both theft and self-inflicted loss, unless rigorous [manual backups]({{ '/guide/private-key-management/manual-backup/' | relative_url }}) are implemented. For this example we will choose the 2-of-3 scheme, but still have to decide on who will hold the third key, and the location of the other two.
