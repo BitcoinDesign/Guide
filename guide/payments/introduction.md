@@ -9,6 +9,14 @@ main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/payments/payments-preview.jpg
 ---
 
+<!--
+
+Illustration source
+
+-
+
+-->
+
 {% include picture.html
    image = "/assets/images/guide/payments/introduction.svg"
    mobile = "/assets/images/guide/payments/introduction-mobile.svg"
@@ -28,9 +36,9 @@ We have already established that [Bitcoin is money]({{ '/guide/getting-started/w
 
 ---
 
-### [Transactions overview]({{ '/guide/payments/transactions/' | relative_url }})
+### [Requesting bitcoin]({{ '/guide/payments/request/' | relative_url }})
 
-An overview of Bitcoin payments, common concepts and the transaction lifecycle.
+An introduction to how requesting and receiving bitcoin works.
 
 ---
 
@@ -40,13 +48,7 @@ An introduction to how sending bitcoin works.
 
 ---
 
-### [Requesting bitcoin]({{ '/guide/payments/request/' | relative_url }})
-
-An introduction to how requesting and receiving bitcoin works.
-
----
-
-### [Transaction privacy]({{ '/guide/payments/privacy/' | relative_url }})
+### [Privacy]({{ '/guide/payments/privacy/' | relative_url }})
 
 An overview of how to help users maintain transaction privacy with Bitcoin.
 
@@ -58,15 +60,15 @@ The basics on units and currency symbols, how to format them and what options to
 
 ---
 
-### Managing funds (coming soon)
+### [Transactions overview]({{ '/guide/payments/transactions/' | relative_url }})
 
-How to help users organize and manage their transaction data and holdings.
+An overview of Bitcoin payments, common concepts, and the transaction lifecycle.
 
 ---
 
 {% include next-previous.html
    previousUrl = "/guide/private-key-management/backups/"
    previousName = "Bitcoin backups"
-   nextUrl = "/guide/payments/transactions/"
-   nextName = "Transactions overview"
+   nextUrl = "/guide/payments/request/"
+   nextName = "Requesting bitcoin"
 %}
