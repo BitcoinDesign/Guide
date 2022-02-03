@@ -215,5 +215,5 @@ Next, we do a technical deep dive into how [transactions]({{ '/guide/payments/tr
    previousUrl = "/guide/payments/privacy"
    previousName = "Transaction privacy"
    nextUrl = "/guide/Payments/transactions"
-   nextName = "Transaction overview"
+   nextName = "Transactions overview"
 %}
