@@ -128,7 +128,7 @@ Each request format has its own unique approach to bundle payment information fo
 
 ---
 
-Next we will look at how a [sender](/guide/payments/send) pays these payment requests.
+Next, we will look at how a [sender](/guide/payments/send) pays these payment requests.
 
 {% include next-previous.html
    previousUrl = "/guide/payments/request/"
