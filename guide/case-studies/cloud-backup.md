@@ -54,10 +54,12 @@ This product connects to the Lightning network, allowing the user to send and re
 - Quick and easy to send and receive
 - Onboarding with as little friction as possible
 - Help the user to get liquidity
+- User should not need to understand the difference between Lightning and on-chain
 
 #### Technical considerations
 - Back up encrypted recovery phrase automatically
 - Defaults to using the Lightning network
+- A submarine swap provider helps the user to send to and receive from on-chain addresses
 - Back up Lightning channel state automatically
 - Use a platform-appropriate storage location (keychain with iCloud, Google Drive)
 - Additional user authentication to consider: biometrics, PIN
