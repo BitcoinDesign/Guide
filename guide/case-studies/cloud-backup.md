@@ -6,7 +6,7 @@ nav_order: 1
 parent: Case studies
 permalink: /guide/case-studies/cloud-backup/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/case-studies/cloud-backup/cloud-backup-preview.jpg
+image: https://bitcoin.design/assets/images/guide/case-studies/cloud-backup/daily-spending-preview.jpg
 image_base: /assets/images/guide/case-studies/cloud-backup/
 images:
     - file: first
