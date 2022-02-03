@@ -299,10 +299,15 @@ function setupUnitsAndSymbolsFormatter() {
 function handleModalImageLinkClick(e) {
     e.preventDefault();
 
-    var caption;
+    var caption, imgTag;
 
-    e.target.closest('figure').childNodes.forEach(function(child){
-        if(child.tagName === 'FIGCAPTION') caption = child.innerHTML;
+    if(e.target.closest('svg')) imgTag = e.target.closest('figure').querySelector('img');
+    else imgTag = e.target;
+
+    imgTag.closest('figure').childNodes.forEach(function(child){
+        if(child.tagName === 'FIGCAPTION') {
+            if(child.querySelector('p').innerHTML !== 'Expand image') caption = child.querySelector('p').outerHTML;
+        }
     });
 
     if( !document.getElementById('modal-image-container') ) {
@@ -342,9 +347,9 @@ function handleModalImageLinkClick(e) {
     var mobile = window.innerWidth < 640;
 
     ref.modalImageContainer.classList.add('loading');
-    if(mobile && e.target.dataset.modalWidthMobile && e.target.dataset.modalHeightMobile) ref.modalImageDimensions = [e.target.dataset.modalWidthMobile, e.target.dataset.modalHeightMobile];
-    else if(e.target.dataset.modalWidth && e.target.dataset.modalHeight) ref.modalImageDimensions = [e.target.dataset.modalWidth, e.target.dataset.modalHeight];
-    else ref.modalImageDimensions = [e.target.getAttribute('width'), e.target.getAttribute('height')];
+    if(mobile && imgTag.dataset.modalWidthMobile && imgTag.dataset.modalHeightMobile) ref.modalImageDimensions = [imgTag.dataset.modalWidthMobile, imgTag.dataset.modalHeightMobile];
+    else if(imgTag.dataset.modalWidth && imgTag.dataset.modalHeight) ref.modalImageDimensions = [imgTag.dataset.modalWidth, imgTag.dataset.modalHeight];
+    else ref.modalImageDimensions = [imgTag.getAttribute('width'), imgTag.getAttribute('height')];
     ref.modalImage.setAttribute('width', ref.modalImageDimensions[0]);
     ref.modalImage.setAttribute('height', ref.modalImageDimensions[1]);
 
@@ -365,7 +370,7 @@ function handleModalImageLinkClick(e) {
     }, 100);
 
     var img,
-        modalLink = e.target.closest('.modal-image-link');
+        modalLink = imgTag.closest('.modal-image-link');
     if(mobile && modalLink.dataset.modalImageMobile) img = modalLink.dataset.modalImageMobile;
     else img = modalLink.getAttribute('href');
 
@@ -418,7 +423,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   ref.searchInput = document.getElementById("search-input");
   ref.searchTrigger = document.getElementById("search-trigger");
   ref.searchResults = document.getElementById('search-results');
-  ref.modalImageLinks = document.querySelectorAll('.modal-image-link');
+  ref.modalImageLinks = document.querySelectorAll('.modal-image-link, .modal-indicator svg');
 
   updateNavAccessibility();
 
