@@ -37,5 +37,12 @@
 	    >
 	</picture>
     {% if include.modalImage %}</a>{% endif %}
-	{% if include.caption %}<figcaption markdown="1">{{ include.caption | markdownify }}</figcaption>{% endif %}
+	{% if include.caption %}
+        <figcaption markdown="1"{% if include.modalImage %} class="modal-indicator"{% endif %}>{{ include.caption | markdownify }}{% if include.modalImage %}<svg viewBox="0 0 32 32" class="expand-icon"><filter id="shadow"><feDropShadow dx="1" dy="1" stdDeviation="1" flood-opacity="0.3"/></filter><use xlink:href="#svg-expand" style="filter:url('#shadow')" x="4" y="4"></use></svg>{% endif %}</figcaption>
+    {% elsif include.modalImage %}
+        <figcaption class="modal-indicator">
+            <p>Expand image</p>
+            <svg viewBox="0 0 32 32" class="expand-icon"><filter id="shadow"><feDropShadow dx="1" dy="1" stdDeviation="1" flood-opacity="0.3"/></filter><use xlink:href="#svg-expand" style="filter:url('#shadow')" x="4" y="4"></use></svg>
+        </figcaption>
+    {% endif %}
 </figure>

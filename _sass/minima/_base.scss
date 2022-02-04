@@ -520,3 +520,21 @@ ul.task-list {
     margin: 0;
   }
 }
+
+figcaption {
+  &.modal-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 32px;
+      height: 32px;
+      display: inline;
+      color: $grey-dk-000;
+      margin-top: $spacing-unit / 2;
+      margin-left: $spacing-unit / 4;
+      cursor: pointer;
+    }
+  }
+}
