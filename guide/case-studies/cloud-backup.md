@@ -134,7 +134,7 @@ The recovery flow guides the user through restoring their wallet on a new device
    image = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-menu.png"
    retina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-menu@2x.png"
    width = 250
-   height = 600
+   height = 541
    alt-text = "Showing wallet import options."
    caption = "The user chooses how to recover their wallet."
    layout = "shadow"
@@ -144,17 +144,17 @@ The recovery flow guides the user through restoring their wallet on a new device
    image = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-searching.png"
    retina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-searching.png"
    width = 250
-   height = 600
+   height = 541
    alt-text = "Showing the app searching for the user's wallet recovery data."
    caption = "The app keeps the user informed of progress."
    layout = "shadow"
 %}
 
 {% include picture.html
-   image = "assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-restoring.png"
-   retina = "assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-restoring@2x.png"
+   image = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-restoring.png"
+   retina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-restoring@2x.png"
    width = 250
-   height = 600
+   height = 541
    alt-text = "Showing the app restoring the wallet."
    caption = "The app restores the wallet and lets the user know something is happening."
    layout = "shadow"
@@ -164,7 +164,7 @@ The recovery flow guides the user through restoring their wallet on a new device
    image = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-restored.png"
    retina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-restored@2x.png"
    width = 250
-   height = 600
+   height = 541
    alt-text = "Showing the app having completed restoration of the wallet."
    caption = "The app notifies the user that the wallet is fully restored"
    layout = "shadow"
@@ -174,7 +174,7 @@ The recovery flow guides the user through restoring their wallet on a new device
    image = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-finish.png"
    retina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-finish@2x.png"
    width = 250
-   height = 600
+   height = 541
    alt-text = "Showing the user's wallet balance after restoration is complete."
    caption = "After restoring the wallet, the app takes the user to their balance so that they can confirm their funds are in place."
    layout = "shadow"
