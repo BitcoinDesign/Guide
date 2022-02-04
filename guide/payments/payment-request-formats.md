@@ -1,15 +1,15 @@
 ---
 layout: guide
 title: Payment request formats
-description: An introduction to how sending bitcoin works.
+description: An introduction to the different Bitcoin payment request formats.
 nav_order: 1
 grand_parent: Payments
-parent: Sending bitcoin
-has_children: false
-permalink: /guide/payments/send/payment-request-formats/
+parent: Requesting bitcoin
+permalink: /guide/payments/request/payment-request-formats/
+redirect_from:
+ - /guide/payments/send/payment-request-formats/
 main_classes: -no-top-padding
 image: /assets/images/guide/payments/send/bitcoin-payments-social.jpg
-
 image_base: /assets/images/guide/payments/send/
 images:
     - file: home
@@ -129,11 +129,11 @@ Each request format has its own unique approach to bundle payment information fo
 
 ---
 
-Sending is one side of the process. Let's look at things from the [receiver's perspective](/guide/payments/request).
+Next, we will look at how a [sender](/guide/payments/send) pays these payment requests.
 
 {% include next-previous.html
-   previousUrl = "/guide/payments/transactions/"
-   previousName = "Transactions overview"
-   nextUrl = "/guide/payments/request"
-   nextName = "Receiving bitcoin"
+   previousUrl = "/guide/payments/request/"
+   previousName = "Requesting bitcoin"
+   nextUrl = "/guide/payments/send"
+   nextName = "Sending bitcoin"
 %}

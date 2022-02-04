@@ -1,8 +1,8 @@
 ---
 layout: guide
-title: Payment privacy
+title: Privacy
 description: An overview of how to help users maintain their financial privacy while using Bitcoin.
-nav_order: 4
+nav_order: 3
 parent: Payments
 permalink: /guide/payments/privacy/
 main_classes: -no-top-padding
@@ -156,11 +156,11 @@ There is no perfect solution to guarantee 100% privacy that lasts forever becaus
 
 ---
 
-Next, let's look at [units & symbols]({{ '/guide/payments/units-and-symbols/' | relative_url }}).
+Next, let's dive into how to display various [units & symbols]({{ '/guide/payments//units-and-symbols/' | relative_url }}) in bitcoin applications.
 
 {% include next-previous.html
-   previousUrl = "/guide/payments/request"
-   previousName = "Requesting bitcoin"
-   nextUrl = "/guide/payments/units-and-symbols/"
+   previousUrl = "/guide/payments/send/"
+   previousName = "Sending bitcoin"
+   nextUrl = "/guide/payments//units-and-symbols/"
    nextName = "Units & Symbols"
 %}

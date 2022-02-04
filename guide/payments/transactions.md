@@ -1,8 +1,8 @@
 ---
 layout: guide
-title: Transactions
-description: An overview of Bitcoin payments, common concepts and the transaction lifecycle.
-nav_order: 1
+title: Transactions overview
+description: An overview of Bitcoin transactions, common concepts, and the transaction lifecycle.
+nav_order: 5
 parent: Payments
 permalink: /guide/payments/transactions/
 main_classes: -no-top-padding
@@ -183,11 +183,11 @@ Blocks are also limited in size and new ones are created every 10 minutes on ave
 
 ---
 
-Next we will cover [sending bitcoin]({{ '/guide/payments/send/' | relative_url }}).
+The next section explores common product designs via [case studies]({{ '/guide/case-studies/' | relative_url }}).
 
 {% include next-previous.html
-   previousUrl = "/guide/payments/"
-   previousName = "Payments"
-   nextUrl = "/guide/payments/send/"
-   nextName = "Sending bitcoin"
+   previousUrl = "/guide/payments/units-and-symbols"
+   previousName = "Units & Symbols"
+   nextUrl = "/guide/case-studies"
+   nextName = "Case studies"
 %}

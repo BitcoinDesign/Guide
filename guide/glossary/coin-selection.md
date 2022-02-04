@@ -2,10 +2,11 @@
 layout: guide
 title: Coin Selection
 description: A primer on how UTXOs are chosen to fund new bitcoin transactions.
-nav_order: 2
-grand_parent: Payments
-parent: Sending bitcoin
-permalink: /guide/payments/send/coin-selection/
+nav_order: 4
+parent: Glossary
+permalink: /guide/glossary/coin-selection/
+redirect_from:
+ - /guide/payments/send/coin-selection/
 main_classes: -no-top-padding
 ---
 
@@ -82,6 +83,7 @@ Automatic selection strategies can provide a near frictionless user experience a
 %}
 
 ### How it works
+
 A user chooses to send a payment to one of their contacts. They enter the amount of bitcoin they wish to send, select their transaction fee rate, and approve the outgoing payment request. During this process, their wallet **automatically** selects which coins to use to fund the transaction’s inputs, making sure it can fulfill the payment request.
 
 <div class="image-slide-gallery">
@@ -133,35 +135,45 @@ A user chooses to send a payment to one of their contacts. They enter the amount
 Below are some popular algorithms currently implemented by Bitcoin wallets that optimize for speed and lower fees:
 
 #### First In First Out (FIFO) / Last In, First Out (LIFO)
+
 The default strategy spends the oldest/youngest coins first.
 
 #### Pruned FIFO
+
 Similiar to FIFO, but smallest coins filtered out in post-selection step.
 
 #### High Priority First
+
 Coins selected by priority (calculated by value x age). Up until February 2016, a portion of each block (50kB) was reserved for high-priority transactions by default. This algorithm therefore optimised for transaction speed.
 
 #### Minimize Fees (Optimize Size)
+
 Spending the lowest number of coins to reduce the byte size of the transaction, resulting in a lower fee.
 
 #### Minimize Future Fees (Merge Coins)
+
 Spending the maximum number of inputs to merge coins as a single change output for future use. This strategy can optimise for speed as the transaction size (and therefore cost) is increased. However, merging coins can also lead to a loss of privacy as coins, their addresses, balances, and historical transaction data are intertwined.
 
 Below are algoorithms that optimize for privacy
 
 #### Target Sized Change
+
 Wallet aims to minimize the value difference of target input and change output.
 
 #### Branch & Bound (BnB)/Exact Change
+
 Wallet finds an input set that is equal in value to the target, avoiding change outputs. If the wallet cannot find an exact match, it refers back to a “knapsack” solver which selects inputs that minimise the change output to within 0.01 BTC.
 
 #### Blackjack
+
 Accumulates inputs until the target value (+fees) is matched, does not accumulate inputs that go over the target value (within a threshold).
 
 #### Accumulative
+
 Accumulates inputs until the target value (+fees) is reached, skipping detrimental inputs.
 
 #### Freezing Coins
+
 Freezes certain coins or clusters from their wallet’s UTXO pool to either prioritize or avoid using when funding outgoing payment requests. This technique aids automatic selection strategies to become more private but also relies on the practice of successfully labeling coins.
 
 {% include picture.html
@@ -191,14 +203,17 @@ Freezes certain coins or clusters from their wallet’s UTXO pool to either prio
 ### Best practice
 
 #### When to use
+
 - New users or introductory level wallets
 - Wallets specifically optimizing for either cost, speed, or privacy
 
 #### When not to use
+
 - When privacy is a top priority to users
 - When wanting to provide a more custom experience for Bitcoin transactions
 
 #### Products that use this scheme
+
 {% include fact/products.html %}
 [BitcoinJ and Bitcoin Wallet for Android](https://bitcoinj.org/), [Bitcoin Core](https://bitcoin.org/en/bitcoin-core/), [Bread Wallet](https://brd.com/), [Electrum](https://electrum.org/#home), [Hexa Wallet](https://hexawallet.io/), and [Mycelium](https://wallet.mycelium.com/)
 {% include fact/close.html %}

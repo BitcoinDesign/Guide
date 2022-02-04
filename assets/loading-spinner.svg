@@ -1,0 +1,51 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="loading-spinner">
+    <style>
+        .o1, .i1 {
+            transform: rotate(180deg);
+            transform-origin: 50%;
+        }
+        .o {
+            transform-origin: 50%;
+            animation: spinOuter 3s linear infinite;
+        }
+        .i {
+            transform-origin: 50%;
+            animation: spinInner 3s linear infinite;
+        }
+        path {
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+        }
+        @keyframes spinOuter {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes spinInner {
+            from {
+                transform: rotate(90deg);
+            }
+            to {
+                transform: rotate(-270deg);
+            }
+        }
+    </style>
+    <symbol viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" id="o">
+        <path d="M35.7166 17.0019C35.0189 13.3446 33.0676 10.0451 30.1988 7.67179C27.33 5.29849 23.7233 4 20 4C16.2767 4 12.67 5.29849 9.80122 7.67179C6.93239 10.0451 4.98107 13.3446 4.2834 17.0019"/>
+    </symbol>
+    <symbol viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" id="i">
+        <path d="M31.7874 17.7514C31.2642 15.0084 29.8007 12.5338 27.6491 10.7538C25.4975 8.97387 22.7924 8 20 8C17.2076 8 14.5025 8.97387 12.3509 10.7538C10.1993 12.5338 8.73581 15.0084 8.21255 17.7514"/>
+    </symbol>
+    <g class="o">
+        <use href="#o" class="o0" />
+        <use href="#o" class="o1" />
+    </g>
+    <g class="i">
+        <use href="#i" class="i0" />
+        <use href="#i" class="i1" />
+    </g>
+</svg>
