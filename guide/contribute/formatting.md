@@ -225,7 +225,6 @@ Modal image can also have an alternate image defined for mobile devices. This is
    mobileRetina = "/assets/images/guide/contribute/formatting/example-optional-image-modal-mobile@2x.png"
    modalImage = "/assets/images/guide/contribute/formatting/example-optional-image-modal@2x.png"
    modalImageMobile = "/assets/images/guide/contribute/formatting/example-optional-image-modal-mobile@2x.png"
-   caption = "This image has some small details, so click on it to see it in a modal window."
    alt-text = "Optional image modal"
    width = 1600
    height = 800
@@ -242,7 +241,6 @@ Modal image can also have an alternate image defined for mobile devices. This is
    mobileRetina = "/assets/images/guide/contribute/formatting/example-optional-image-modal-mobile@2x.png"
    modalImage = "/assets/images/guide/contribute/formatting/example-optional-image-modal@2x.png"
    modalImageMobile = "/assets/images/guide/contribute/formatting/example-optional-image-modal-mobile@2x.png"
-   caption = "This image has some small details, so click on it to see it in a modal window."
    alt-text = "Optional image modal"
    width = 1600
    height = 800
