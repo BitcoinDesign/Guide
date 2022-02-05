@@ -72,9 +72,10 @@ The wireframe screens below show the main onboarding sequence that guides users 
 
 <div class="image-slide-gallery">
 
-{% include image.html
+{% include picture.html
    image = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-onboarding-begin.png"
    retina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-onboarding-begin@2x.png"
+   modalImage = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-onboarding-begin@2x.png"
    width = 250
    height = 541
    caption = "Offer clear options to create and restore wallets."
@@ -82,9 +83,10 @@ The wireframe screens below show the main onboarding sequence that guides users 
    layout = "shadow"
 %}
 
-{% include image.html
+{% include picture.html
    image = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-onboarding-benefits.png"
    retina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-onboarding-benefits@2x.png"
+   modalImage = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-onboarding-benefits@2x.png"
    width = 250
    height = 541
    caption = "Talk about ownership"
@@ -92,9 +94,10 @@ The wireframe screens below show the main onboarding sequence that guides users 
    layout = "shadow"
 %}
 
-{% include image.html
+{% include picture.html
    image = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-onboarding-cloud.png"
    retina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-onboarding-cloud@2x.png"
+   modalImage = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-onboarding-cloud@2x.png"
    width = 250
    height = 541
    caption = "Talk about recovery"
@@ -102,9 +105,10 @@ The wireframe screens below show the main onboarding sequence that guides users 
    layout = "shadow"
 %}
 
-{% include image.html
+{% include picture.html
    image = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-onboarding-security.png"
    retina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-onboarding-security@2x.png"
+   modalImage = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-onboarding-security@2x.png"
    width = 250
    height = 541
    caption = "Talk about security"
@@ -112,9 +116,10 @@ The wireframe screens below show the main onboarding sequence that guides users 
    layout = "shadow"
 %}
 
-{% include image.html
+{% include picture.html
    image = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-onboarding-home.png"
    retina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-onboarding-home@2x.png"
+   modalImage = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-onboarding-home@2x.png"
    width = 250
    height = 541
    caption = "As key creation and backup is automated, users can immediately be navigated to the home screen."
@@ -133,6 +138,7 @@ The recovery flow guides the user through restoring their wallet on a new device
 {% include picture.html
    image = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-menu.png"
    retina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-menu@2x.png"
+   modalImage = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-menu@2x.png"
    width = 250
    height = 541
    alt-text = "Showing wallet import options."
@@ -142,7 +148,8 @@ The recovery flow guides the user through restoring their wallet on a new device
 
 {% include picture.html
    image = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-searching.png"
-   retina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-searching.png"
+   retina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-searching@2x.png"
+   modalImage = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-searching@2x.png"
    width = 250
    height = 541
    alt-text = "Showing the app searching for the user's wallet recovery data."
@@ -153,6 +160,7 @@ The recovery flow guides the user through restoring their wallet on a new device
 {% include picture.html
    image = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-restoring.png"
    retina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-restoring@2x.png"
+   modalImage = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-restoring@2x.png"
    width = 250
    height = 541
    alt-text = "Showing the app restoring the wallet."
@@ -163,6 +171,7 @@ The recovery flow guides the user through restoring their wallet on a new device
 {% include picture.html
    image = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-restored.png"
    retina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-restored@2x.png"
+   modalImage = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-restored@2x.png"
    width = 250
    height = 541
    alt-text = "Showing the app having completed restoration of the wallet."
@@ -173,6 +182,7 @@ The recovery flow guides the user through restoring their wallet on a new device
 {% include picture.html
    image = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-finish.png"
    retina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-finish@2x.png"
+   modalImage = "/assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-finish@2x.png"
    width = 250
    height = 541
    alt-text = "Showing the user's wallet balance after restoration is complete."

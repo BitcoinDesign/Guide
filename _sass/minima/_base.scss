@@ -527,7 +527,12 @@ figcaption {
     align-items: center;
     justify-content: center;
 
+    p {
+      max-width: calc(100% - 39.5px);
+    }
+
     svg {
+      flex-basis: 32px;
       width: 32px;
       height: 32px;
       display: inline;
