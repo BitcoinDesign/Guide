@@ -20,13 +20,13 @@ files:
     retina: /assets/images/guide/designing-products/design-resources/bitcoin-icons@2x.jpg
     width: 400
     height: 210
-  - caption: <a href="https://www.figma.com/community/file/972290772932533325/Art-Meets-bitcoin">Art meets bitcoin</a>
+  - caption: <a href="https://www.figma.com/community/file/972290772932533325/Art-Meets-Bitcoin">Art meets bitcoin</a>
     alt: Collage of bitcoin related illustration elements
     image: /assets/images/guide/designing-products/design-resources/art-meets-bitcoin.jpg
     retina: /assets/images/guide/designing-products/design-resources/art-meets-bitcoin@2x.jpg
     width: 400
     height: 210
-  - caption: <a href="https://www.figma.com/community/file/946807598525782935/bitcoin-hardware-%26-accessories">Hardware illustrations</a>
+  - caption: <a href="https://www.figma.com/community/file/946807598525782935/Bitcoin-hardware-%26-accessories">Hardware illustrations</a>
     alt: Collction of bitcoin hardware outline illustrations
     image: /assets/images/guide/designing-products/design-resources/bitcoin-hardware-illustrations.jpg
     retina: /assets/images/guide/designing-products/design-resources/bitcoin-hardware-illustrations@2x.jpg

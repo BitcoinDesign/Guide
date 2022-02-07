@@ -215,7 +215,7 @@ Freezes certain coins or clusters from their wallet’s UTXO pool to either prio
 #### Products that use this scheme
 
 {% include fact/products.html %}
-[BitcoinJ and bitcoin Wallet for Android](https://bitcoinj.org/), [Bitcoin Core](https://bitcoin.org/en/bitcoin-core/), [Bread Wallet](https://brd.com/), [Electrum](https://electrum.org/#home), [Hexa Wallet](https://hexawallet.io/), and [Mycelium](https://wallet.mycelium.com/)
+[BitcoinJ and bitcoin wallet for Android](https://bitcoinj.org/), [Bitcoin Core](https://bitcoin.org/en/bitcoin-core/), [Bread Wallet](https://brd.com/), [Electrum](https://electrum.org/#home), [Hexa Wallet](https://hexawallet.io/), and [Mycelium](https://wallet.mycelium.com/)
 {% include fact/close.html %}
 
 ## Manual coin selection (a.k.a coin control)

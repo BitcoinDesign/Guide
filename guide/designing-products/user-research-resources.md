@@ -121,7 +121,7 @@ _2021 by Valentine._
 
 Research on users new to crypto around whether they are confident in their ability to safely hold and keep track of seed phrases. This research aimed to discover whether automatic cloud backups could empower users to confidently secure their own bitcoin wallets.
 
-#### [A study on how Bitcoin is perceived by no-coiners (non-holders of Bitcoin)](https://github.com/MickMorucci/bitcoin_perception)
+#### [A study on how Bitcoin is perceived by no-coiners (non-holders of Bitcoin)](https://github.com/MickMorucci/Bitcoin_perception)
 
 _2021 by Morucci._
 

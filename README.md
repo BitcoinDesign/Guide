@@ -2,7 +2,7 @@
 
 This is the repository for the [Bitcoin Design Guide](https://bitcoin.design/guide/), and the [bitcoin.design](https://bitcoin.design) community website.
 
-Discussion and collaboration is taking place in the [Bitcoin design Slack](http://bitcoindesigners.org) (#bitcoin-design-guide).
+Discussion and collaboration is taking place in the [Bitcoin Design Slack](http://bitcoindesigners.org) (#bitcoin-design-guide).
 
 The [Bitcoin Design Guide](https://bitcoin.design/guide/) is a free open-source community resource that helps designers, developers and others working on non-custodial bitcoin-products to create better experiences faster. We hope that, over time, it will cover all relevant types of products, including consumer wallets, merchant interactions, exchanges and more. Better products and experiences should ultimately make it more appealing for anyone to own and use bitcoin.
 

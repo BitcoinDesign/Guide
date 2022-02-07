@@ -49,7 +49,7 @@ Illustration sources
 
 It can take many years to understand bitcoin in every detail, but luckily you don't need to know everything to design great products. Let's look at the most important ideas and technologies behind bitcoin by answering some basic questions.
 
-## Bitcoin the currency
+## Bitcoin, the currency
 
 <div class="center" markdown="1">
 
@@ -68,7 +68,7 @@ Therefore, owning a bitcoin means being in control of one or more addresses that
 
 </div>
 
-## Bitcoin the network
+## Bitcoin, the network
 
 <div class="center" markdown="1">
 
