@@ -22,7 +22,7 @@ A future addition could be user flows related to merchant and other applications
 
 Illustration sources
 
-- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/bitcoin-Design-Guide-Illustrations-CO?node-id=862%3A2982
+- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=862%3A2982
 
 -->
 
@@ -116,7 +116,7 @@ The App Store landing page includes screenshots, a description, updates in the l
    layout = "float-left"
 %}
 
-bitcoin is complex, and so it is recommended to think through and carefully shape the first experience users have in your product. Without being overwhelming or getting into too much detail, this user flow should explain core concepts and features that allow users to create mental models on how they will use the application.
+Bitcoin is complex, and so it is recommended to think through and carefully shape the first experience users have in your product. Without being overwhelming or getting into too much detail, this user flow should explain core concepts and features that allow users to create mental models on how they will use the application.
 
 Onboarding may be purely informational based on the content, but it also includes an initial setup that helps personalize the software towards the users' specific needs and context. After onboarding, users are mostly on their own, so the goal is to leave users with a clear idea of achieving what they came for.
 
@@ -342,7 +342,7 @@ While we all prefer to receive bitcoin, there are times when we need to send the
 
 </div>
 
-bitcoin can be sent two ways; on the primary base layer, or the secondary [Lightning network](/guide/glossary/#lightning-network) layer.
+Bitcoin can be sent two ways; on the primary base layer, or the secondary [Lightning network](/guide/glossary/#lightning-network) layer.
 
 On the base layer, once a transaction is broadcast from a wallet, the bitcoin network starts processing it. Users may want to stay informed about this progress, particularly when a transaction takes longer than expected. The average transaction time on the base layer is 10 minutes, but this can vary a lot depending on the fee the sender was willing to pay. In extreme cases, it is possible to retroactively increase the transaction fee to get validated faster with a [Replace-by-Fee](/guide/glossary/#replace-by-fee-rbf) technique.
 

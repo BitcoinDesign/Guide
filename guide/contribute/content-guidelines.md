@@ -23,7 +23,7 @@ image: https://bitcoin.design/assets/images/guide/contribute/content-guidelines/
 
 # Content guidelines
 
-The bitcoin Design Guide is the work of many authors with different backgrounds, each with their own unique voice and perspective. To help us ensure a consistent written voice throughout the guide, follow these content guidelines.
+The Bitcoin Design Guide is the work of many authors with different backgrounds, each with their own unique voice and perspective. To help us ensure a consistent written voice throughout the guide, follow these content guidelines.
 
 ### Know your reader
 
@@ -47,7 +47,7 @@ Address the reader directly. Whenever possible, try using active instead of pass
 
 ### Use simple language
 
-bitcoin is a global currency. Not everyone using this guide is a native English speaker. Make sure you are writing in plain, easy to follow English. If you're still not sure, try using a readability tool to analyze your text and make recommendations. We like [Hemingway](http://www.hemingwayapp.com).
+Bitcoin is a global currency. Not everyone using this guide is a native English speaker. Make sure you are writing in plain, easy to follow English. If you're still not sure, try using a readability tool to analyze your text and make recommendations. We like [Hemingway](http://www.hemingwayapp.com).
 
 ### Be concise
 

@@ -26,7 +26,7 @@ it should be considered whether to include it or link to external resources.
 
 Illustration sources
 
-- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/bitcoin-Design-Guide-Illustrations-CO?node-id=288%3A652
+- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=288%3A652
 
 -->
 
@@ -90,17 +90,17 @@ Most digital products start with a specific country, culture, language, or legal
 
 Diverse online communities rapidly formed around bitcoin. Vast amounts of public conversation can help designers and developers comprehend what is possible and what is needed from bitcoin. These communities are great for brainstorming ideas, getting feedback, and involving users actively in the design process.
 
-- [bitcoin on GitHub](https://github.com/bitcoin)
-- [bitcoin mailing list](https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev)
-- [bitcointalk](https://bitcointalk.org/)
-- [bitcoin Core dev meeting logs](http://www.erisian.com.au/meetbot/bitcoin-core-dev/)
-- [bitcoin subreddit](https://www.reddit.com/r/bitcoin)
+- [Bitcoin on GitHub](https://github.com/bitcoin)
+- [Bitcoin mailing list](https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev)
+- [Bitcointalk](https://bitcointalk.org/)
+- [Bitcoin Core dev meeting logs](http://www.erisian.com.au/meetbot/bitcoin-core-dev/)
+- [Bitcoin subreddit](https://www.reddit.com/r/bitcoin)
 
 </div>
 
 ### An unknowable userbase
 
-bitcoin only knows its users through pseudonymous addresses. We can analyze on-chain metrics for things like fundamental transaction behaviors, but analysis of addresses and transactions beyond this can be complicated. While the privacy bitcoin provides is a fundamental aspect, it can make things challenging for user researchers.
+Bitcoin only knows its users through pseudonymous addresses. We can analyze on-chain metrics for things like fundamental transaction behaviors, but analysis of addresses and transactions beyond this can be complicated. While the privacy bitcoin provides is a fundamental aspect, it can make things challenging for user researchers.
 
 ### Transparent and extensible
 
@@ -115,7 +115,7 @@ bitcoin only knows its users through pseudonymous addresses. We can analyze on-c
    layout = "float-left"
 %}
 
-bitcoin is a protocol with [layers](https://bitcoin.design/guide/getting-started/technology-primer/#do-all-transactions-have-to-be-this-secure) built on top of it.
+Bitcoin is a protocol with [layers](https://bitcoin.design/guide/getting-started/technology-primer/#do-all-transactions-have-to-be-this-secure) built on top of it.
 
 The base layer is a public record of transactions that can easily be analyzed. However, layers built on top, such as [Lightning network](/guide/getting-started/technology-primer/#the-lightning-payment-network) make analysis of specific transaction impossible, thanks to [payment channels](/guide/getting-started/technology-primer/#what-is-a-payment-channel).
 
@@ -192,7 +192,7 @@ Links to:
 
 ## Resources
 
-Join the discussion in the [#research channel](https://bitcoindesign.slack.com/archives/C015DQEPCHJ) on the bitcoin Design Slack.
+Join the discussion in the [#research channel](https://bitcoindesign.slack.com/archives/C015DQEPCHJ) on the Bitcoin Design Slack.
 
 <!--
 

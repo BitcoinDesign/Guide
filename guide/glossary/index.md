@@ -73,7 +73,7 @@ An open-source project that maintains and releases the bitcoin client of the sam
 - [Bitcoin Core website](https://bitcoincore.org/)
 - [Bitcoin Core wiki entry](https://en.bitcoin.it/wiki/Bitcoin_Core)
 
-### BIP - bitcoin improvement proposal
+### BIP - Bitcoin Improvement Proposal
 
 A standardized technical document format for suggesting improvements to bitcoin. They are hosted on Github [here](https://github.com/bitcoin/bips). Some important proposals to be aware of:
 
@@ -83,7 +83,7 @@ A standardized technical document format for suggesting improvements to bitcoin.
 - [BIP84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki): Derivation scheme for HD wallets using SegWit
 - [BIP141](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki): SegWit, changes to transaction structure
 - [BIP173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki): *Bech32* standard for native SegWit addresses
-- [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki): Partially Signed bitcoin Transaction Format
+- [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki): Partially Signed Bitcoin Transaction Format
 - [BIP380](https://github.com/bitcoin/bips/blob/master/bip-0380.mediawiki): Output Script Descriptors General Operation
 
 ### Block
@@ -379,7 +379,7 @@ A file format for bitcoin transactions that are not fully signed yet. Allows for
 
 **References:**
 
-- [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki): Partially Signed bitcoin Transaction Format
+- [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki): Partially Signed Bitcoin Transaction Format
 
 
 ###  Passphrase

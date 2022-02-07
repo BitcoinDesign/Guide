@@ -20,7 +20,7 @@ areas, as it is extremely likely that users interact with multiple applications 
 
 Illustration sources
 
-https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/bitcoin-Design-Guide-Illustrations-CO?node-id=1024%3A6795
+https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=1024%3A6795
 https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=112%3A612
 
 -->
@@ -59,7 +59,7 @@ You should ensure your application is interoperable with the various techniques 
 
 You may want to also support more experimental Lightning payment options such as [Lightning addresses](https://lightningaddress.com/), [BOLT 12 offers](https://bolt12.org/), [Keysend](https://lightning.readthedocs.io/lightning-keysend.7.html), and [LNURL](https://github.com/fiatjaf/lnurl-rfc). If your application does not support these, you should be sure to include a human-readable failure state.
 
-bitcoin payment links and the underlying data should also be readable by your application. Forms should be automatically opened and filled in your application when a user clicks a payment link or button. Payment metadata is defined in [BIP 21](https://bips.xyz/21) for on-chain addresses and [BOLT 11](https://github.com/lightningnetwork/lightning-rfc/blob/master/11-payment-encoding.md) for Lightning invoices.
+Bitcoin payment links and the underlying data should also be readable by your application. Forms should be automatically opened and filled in your application when a user clicks a payment link or button. Payment metadata is defined in [BIP 21](https://bips.xyz/21) for on-chain addresses and [BOLT 11](https://github.com/lightningnetwork/lightning-rfc/blob/master/11-payment-encoding.md) for Lightning invoices.
 
 </div>
 
@@ -209,7 +209,7 @@ Your application should support interfacing with the various [hardware wallets](
    layout = "float-right-desktop"
 %}
 
-Your application should support constructing and managing transaction files, also known as [Partially Signed bitcoin Transactions (PSBTs)](/guide/glossary/#partially-signed-bitcoin-transaction-psbt). This type of file allows for storage and transfer of transactions that are not finalized. PSBTs allow signing wallets to be offline, as the transaction data can be transferred via USB or animated QR codes. This is particularly useful if users want to open a payment channel directly from their cold storage.
+Your application should support constructing and managing transaction files, also known as [Partially Signed Bitcoin Transactions (PSBTs)](/guide/glossary/#partially-signed-bitcoin-transaction-psbt). This type of file allows for storage and transfer of transactions that are not finalized. PSBTs allow signing wallets to be offline, as the transaction data can be transferred via USB or animated QR codes. This is particularly useful if users want to open a payment channel directly from their cold storage.
 
 </div>
 

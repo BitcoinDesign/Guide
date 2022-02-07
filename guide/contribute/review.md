@@ -39,7 +39,7 @@ The review process requires only a GitHub account and no additional software. It
 
 ### Identifying what to review
 
-A change is proposed in a form of a pull request[^1]. To preview a list of all proposals visit this [link](https://github.com/bitcoinDesign/Guide/pulls) or go to bitcoin Design Guide [repository](https://github.com/bitcoinDesign/Guide/) and click on the `Pull requests` tab.
+A change is proposed in a form of a pull request[^1]. To preview a list of all proposals visit this [link](https://github.com/BitcoinDesign/Guide/pulls) or go to Bitcoin Design Guide [repository](https://github.com/BitcoinDesign/Guide/) and click on the `Pull requests` tab.
 
 Pull requests with the `Draft` status, or marked as **WIP (Work in progress)**, usually require structural feedback and do not need a thorough evaluation yet. If the WIP pull request description doesn't specify the required feedback type, feel free to ask the author by leaving a comment.
 
@@ -94,9 +94,9 @@ When you're done with leaving individual feedback, you can submit it. Click on t
 ### Testing a pull request
 Previewing a proposed change in the split-screen may be handy for quickly taking a glance at the changes and leaving feedback, but previewing them directly on the website gives a better feeling on how content, code, and visuals fit together. Testing a pull request is the last step of a review process.
 
-There are two ways to test a pull request in the bitcoin Design Guide repository:
+There are two ways to test a pull request in the Bitcoin Design Guide repository:
 - Previewing the Netlify link (easy)
-- [Testing locally](https://github.com/bitcoinDesign/Guide#how-to-build-and-run-the-site-locally) (advanced)
+- [Testing locally](https://github.com/BitcoinDesign/Guide#how-to-build-and-run-the-site-locally) (advanced)
 
 #### Testing a pull request via Netlify
 

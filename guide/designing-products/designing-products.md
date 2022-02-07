@@ -36,7 +36,7 @@ A brief introduction and summary of all pages in this section. The idea is that 
 
 ### [Why design for bitcoin]({{ '/guide/designing-products/why-design-for-bitcoin/' | relative_url }})
 
-bitcoin is fundamentally open and participatory and allows designers and creators to explore and shape experiences for users around the globe.
+Bitcoin is fundamentally open and participatory and allows designers and creators to explore and shape experiences for users around the globe.
 
 ---
 
@@ -48,7 +48,7 @@ Open design is about global collaboration that balances the free exchange of des
 
 ### [bitcoin design principles]({{ '/guide/designing-products/principles/' | relative_url }})
 
-Core bitcoin design principles recommended by the bitcoin Design Community.
+Core bitcoin design principles recommended by the Bitcoin Design Community.
 
 ---
 

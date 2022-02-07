@@ -125,7 +125,7 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 
 # Projects
 
-We don't just chat about design. We also actively improve design in the bitcoin ecosystem. Projects launched by community members often focus on creating design resources. With collaborations, we try to help other bitcoin projects improve their products' design and user experience. For more details, see our [Collaboration](https://github.com/bitcoinDesign/Meta/blob/master/Collaboration.md) and [Project](https://github.com/bitcoinDesign/Meta/blob/master/Projects.md) documents. If you are interested in getting involved, reach out directly to the projects below, or reach out in our [Slack]({{ site.slack_invite_url }}).
+We don't just chat about design. We also actively improve design in the bitcoin ecosystem. Projects launched by community members often focus on creating design resources. With collaborations, we try to help other bitcoin projects improve their products' design and user experience. For more details, see our [Collaboration](https://github.com/BitcoinDesign/Meta/blob/master/Collaboration.md) and [Project](https://github.com/BitcoinDesign/Meta/blob/master/Projects.md) documents. If you are interested in getting involved, reach out directly to the projects below, or reach out in our [Slack]({{ site.slack_invite_url }}).
 
 ## Community projects
 
@@ -150,7 +150,7 @@ These are design projects we have initiated ourselves.
 
 ## Collaborations
 
-For a full list, see our [collaboration board](https://github.com/bitcoinDesign/Meta/projects/2).
+For a full list, see our [collaboration board](https://github.com/BitcoinDesign/Meta/projects/2).
 
 <div class="project-grid">
 {% for item in page.collaborations %}

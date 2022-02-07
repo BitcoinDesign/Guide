@@ -17,8 +17,8 @@ This page provides a rough framework for how to think about transactions in the 
 
 Illustration sources
 
-- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/bitcoin-Design-Guide-Illustrations-CO?node-id=288%3A394
-- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/bitcoin-Design-Guide-Illustrations-CO?node-id=862%3A3081
+- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=288%3A394
+- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=862%3A3081
 
 -->
 
@@ -122,7 +122,7 @@ Higher value payments such as rent, utilities, car payments, and groceries are s
 
 For recurring payments, some of these mechanisms let businesses regularly deduct money from accounts without customers approving each transaction.
 
-bitcoin is different: since the sender must initiate all transactions, automated deductions are impossible for non-custodial wallets. However, the sender's wallet may support automatically sending recurring payments, which the sender would need to configure on their own.
+Bitcoin is different: since the sender must initiate all transactions, automated deductions are impossible for non-custodial wallets. However, the sender's wallet may support automatically sending recurring payments, which the sender would need to configure on their own.
 
 {% include picture.html
    image = "/assets/images/guide/designing-products/personal-finance/monthly-budget-wallet-setup.jpg"

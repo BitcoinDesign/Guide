@@ -39,7 +39,7 @@ Imagine a product which tries to solve the problem of quickly and easily sending
 This product connects to the Lightning network, allowing the user to send and receive bitcoin almost instantly. This means that automatic cloud backup will be a necessity for this product in order to backup the user's Lightning channel state. The user's private key can also be backed up to the cloud. For more advanced users, you could offer the option to opt-out of cloud backup of the private key and instead use a [recovery phrase]({{ '/guide/private-key-management/manual-backup/' | relative_url }}).
 
 {% include prototype.html
-   link = "https://www.figma.com/proto/dXSeWwzKoVvS0Xm9VT9HuJ/Daily-Spending-Case-Study---bitcoin-Design-Guide?page-id=43%3A2796&node-id=43%3A2797&viewport=343%2C48%2C0.5&scaling=min-zoom&starting-point-node-id=43%3A2797&show-proto-sidebar=1"
+   link = "https://www.figma.com/proto/dXSeWwzKoVvS0Xm9VT9HuJ/Daily-Spending-Case-Study---Bitcoin-Design-Guide?page-id=43%3A2796&node-id=43%3A2797&viewport=343%2C48%2C0.5&scaling=min-zoom&starting-point-node-id=43%3A2797&show-proto-sidebar=1"
    image = "/assets/images/guide/case-studies/cloud-backup/daily-spending-prototype.jpg"
    retina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-prototype@2x.jpg"
    mobile = "/assets/images/guide/case-studies/cloud-backup/daily-spending-prototype-mobile.jpg"

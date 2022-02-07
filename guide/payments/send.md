@@ -90,7 +90,7 @@ Header: Illustration was sketched first, then designed in Adobe Illustrator, and
 Photoshop. The Dropbox link contains the AI and PSD files.
 
 - https://www.dropbox.com/sh/z5qnj2rna7rclae/AAB0dOuiJ3OmJuk7ZXkpbz5ua?dl=0\
-- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/bitcoin-Design-Guide-Illustrations-CO?node-id=1329%3A564
+- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=1329%3A564
 - https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=3%3A471
 
 -->

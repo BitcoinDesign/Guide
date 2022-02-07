@@ -100,17 +100,17 @@ Below are the variable used to configure a theme. These are located in [themes.j
     flipLayoutOnMobile: false,
     author: {
         name: "Template",
-        link: "https://github.com/bitcoinDesign/Guide/pull/27"
+        link: "https://github.com/BitcoinDesign/Guide/pull/27"
     }
 ```
 
 ## Getting hands-on
 
-Once you have an idea for your theme and want to make it real, then the best way to start is by duplicating this [Figma community file](https://www.figma.com/community/file/891254324897262700/bitcoin-Design-Community-Website-Banner-Template){:target="_blank"}. It includes a template overview and some examples. If you are familiar with Figma (or Sketch), it is hopefully easy to get started with.
+Once you have an idea for your theme and want to make it real, then the best way to start is by duplicating this [Figma community file](https://www.figma.com/community/file/891254324897262700/Bitcoin-Design-Community-Website-Banner-Template){:target="_blank"}. It includes a template overview and some examples. If you are familiar with Figma (or Sketch), it is hopefully easy to get started with.
 
 
 {% include prototype.html
-   link = "https://www.figma.com/community/file/891254324897262700/bitcoin-Design-Community-Website-Banner-Template"
+   link = "https://www.figma.com/community/file/891254324897262700/Bitcoin-Design-Community-Website-Banner-Template"
    image = "/assets/images/home/banner/figma-preview.png"
    retina = "/assets/images/home/banner/figma-preview@2x.png"
    mobile = "/assets/images/home/banner/figma-preview-mobile.png"
@@ -121,9 +121,9 @@ Once you have an idea for your theme and want to make it real, then the best way
    label = "View Figma file"
 %}
 
-Once your design is in good shape and you'd like to get some first feedback from the bitcoin Design community, you have two options. You can either post a link or screenshot with some background information to the #design-review channel in our Slack workspace. Or you can [create a Github issue](https://github.com/bitcoinDesign/Guide/issues){:target="_blank"}. Or you can do both, as you prefer.
+Once your design is in good shape and you'd like to get some first feedback from the Bitcoin Design Community, you have two options. You can either post a link or screenshot with some background information to the #design-review channel in our Slack workspace. Or you can [create a Github issue](https://github.com/BitcoinDesign/Guide/issues){:target="_blank"}. Or you can do both, as you prefer.
 
-Please note that not all designs will make it to the live site. You need rough consensus (see our general [project life cycle](https://github.com/bitcoinDesign/Meta/blob/master/Projects.md)) from the community. So before you start implementing your theme, it is a good idea to get some feedback first. Please also make sure you respect any copyrights and licenses if you are using resources from others.
+Please note that not all designs will make it to the live site. You need rough consensus (see our general [project life cycle](https://github.com/BitcoinDesign/Meta/blob/master/Projects.md)) from the community. So before you start implementing your theme, it is a good idea to get some feedback first. Please also make sure you respect any copyrights and licenses if you are using resources from others.
 
 Once you have implemented your design, submit a pull request for another round of review. If you'd like support with this process, reach out in #website-dev channel on Slack.
 

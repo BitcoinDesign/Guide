@@ -20,7 +20,7 @@ reality of contributing.
 
 Illustration sources
 
-- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/bitcoin-Design-Guide-Illustrations-CO?node-id=257%3A3260
+- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=257%3A3260
 
 -->
 
@@ -38,7 +38,7 @@ Illustration sources
 
 # Why design for bitcoin
 
-bitcoin lets designers seeking the next big challenge build a new kind of money and how we send, spend, save, and store that money. Since [bitcoin’s brand]({{ '/guide/getting-started/visual-language/' | relative_url }}) has no owner to set it in stone, you can still have a big impact on bitcoin even if you aren’t a product designer. And that’s just for starters.
+Bitcoin lets designers seeking the next big challenge build a new kind of money and how we send, spend, save, and store that money. Since [bitcoin’s brand]({{ '/guide/getting-started/visual-language/' | relative_url }}) has no owner to set it in stone, you can still have a big impact on bitcoin even if you aren’t a product designer. And that’s just for starters.
 
 ## It’s the internet of money
 
@@ -46,7 +46,7 @@ Even though it was released in 2008, bitcoin is still in its infancy. Working on
 
 ## Build what you want
 
-bitcoin is permissionless; this means that there are no individual, corporate, or governmental gatekeepers deciding what’s allowed, so anything that you build has the potential to grow beyond what even the most well-funded can imagine.
+Bitcoin is permissionless; this means that there are no individual, corporate, or governmental gatekeepers deciding what’s allowed, so anything that you build has the potential to grow beyond what even the most well-funded can imagine.
 
 ## Blaze trails one pixel at a time
 
@@ -60,7 +60,7 @@ Many design projects start by identifying an unmet need, and then design somethi
 
 ## Work in public
 
-bitcoin development is open-source. Designing for bitcoin is no different. It lets you learn, grow, and exchange ideas in the same open and collaborative way. Learn more about the [open design]({{ '/guide/designing-products/open-design/' | relative_url }}) philosophy.
+Bitcoin development is open-source. Designing for bitcoin is no different. It lets you learn, grow, and exchange ideas in the same open and collaborative way. Learn more about the [open design]({{ '/guide/designing-products/open-design/' | relative_url }}) philosophy.
 
 ## Design money
 

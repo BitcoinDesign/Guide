@@ -34,7 +34,7 @@ Artwork Source: https://www.figma.com/file/xQ5eWVSOLbNGLmcls3qz7d/Principles?nod
 
 As a new technology, bitcoin offers the opportunity of a decentralized open financial system, where participants share the role of securing the network. This is important to give everyone equal and direct access to economic opportunities without fearing seizure or needing intermediaries. To make this a reality, we encourage everyone working on products to deliberately support the core principles of designing for bitcoin.
 
-These are principles we in the bitcoin Design Community identified and stand behind. Some of these come from the technology itself and others from the community's behavior and ethos. Although every use case and product is different, applications should strive to follow these principles. Diverging from them should only be done with very good reason.
+These are principles we in the Bitcoin Design Community identified and stand behind. Some of these come from the technology itself and others from the community's behavior and ethos. Although every use case and product is different, applications should strive to follow these principles. Diverging from them should only be done with very good reason.
 
 ---
 
@@ -182,7 +182,7 @@ layout="float-left"
 
 </div>
 
-bitcoin is an open-source protocol, operating in a decentralized manner. This has led to a number of standards being developed to ensure compatibility between products. It should be easy to switch and move your bitcoin wallet to a different application, should you wish. Ensuring that your product supports as many of these standards as possible is best practice and builds trust. More on [wallet interoperability]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }}).
+Bitcoin is an open-source protocol, operating in a decentralized manner. This has led to a number of standards being developed to ensure compatibility between products. It should be easy to switch and move your bitcoin wallet to a different application, should you wish. Ensuring that your product supports as many of these standards as possible is best practice and builds trust. More on [wallet interoperability]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }}).
 
 **Do**
 - Support import and export of wallet data
