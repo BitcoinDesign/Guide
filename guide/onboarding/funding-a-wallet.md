@@ -101,7 +101,7 @@ Once the user has sent their bitcoin, the next screen should show the wallet UI 
 
 #### Network sync
 
-If your wallet uses a Bitcoin network sync method like compact block filters (BIP157/158) that may initially take some time to sync, it should be clear to the user that funds will not appear until this sync is complete. Starting the network sync as soon as the user opens your wallet will limit wait times.
+If your wallet uses a bitcoin network sync method like compact block filters (BIP157/158) that may initially take some time to sync, it should be clear to the user that funds will not appear until this sync is complete. Starting the network sync as soon as the user opens your wallet will limit wait times.
 
 <div class="image-slide-gallery">
 

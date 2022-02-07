@@ -32,7 +32,7 @@ Illustration sources:
 
 <div class="center" markdown="1">
 
-There are several reasons why a user might need to restore their Bitcoin wallet. They may have lost their device, be migrating from a different application or have deleted their wallet application. Regardless of why, it’s important that your wallet application has an easy way for users to recover their funds.
+There are several reasons why a user might need to restore their bitcoin wallet. They may have lost their device, be migrating from a different application or have deleted their wallet application. Regardless of why, it’s important that your wallet application has an easy way for users to recover their funds.
 
 However, not all wallets from one application can be recovered in another, depending on what standards they support, as covered in the [wallet interoperability]({{ 'guide/designing-products/wallet-interoperability' | relative_url }}) section. Lack of interoperability and vendor dependance is an issue for wallets holding bitcoin on the Lightning network. Lightning network wallets can currently only be restored in the application originally used. It's also worth noting that restoring from a recovery phrase only restores the private keys, but no user data like transaction notes, contacts etc.
 
@@ -42,7 +42,7 @@ However, not all wallets from one application can be recovered in another, depen
    width = 250
    height = 600
    alt-text = "Showing wallet import options"
-   caption = "Wallet import options from [Wallet UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1227%3A27425)"
+   caption = "Wallet import options from [Wallet UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/bitcoin-Wallet-UI-Kit?node-id=1227%3A27425)"
    layout = "float-desktop -background -shadow"
 %}
 
@@ -70,7 +70,7 @@ Be clear to users what you support and what wallet specifications they can expec
 
 {% include tip/close.html %}
 
-Some less popular methods for restoring a wallet include importing a file with all the information required to recover funds such as public keys and key metadata. A wallet.dat file from Bitcoin Core is one example of such a file scheme. If you are developing a watch-only wallet, you would import an [extended public key](/guide/glossary/#extended-public-key-xpub-ypub-zpub) instead of the recovery phrase, this tends to be for technically minded users however.
+Some less popular methods for restoring a wallet include importing a file with all the information required to recover funds such as public keys and key metadata. A wallet.dat file from bitcoin Core is one example of such a file scheme. If you are developing a watch-only wallet, you would import an [extended public key](/guide/glossary/#extended-public-key-xpub-ypub-zpub) instead of the recovery phrase, this tends to be for technically minded users however.
 
 ---
 

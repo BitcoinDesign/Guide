@@ -22,7 +22,7 @@ Illustration source
 
 # Requesting bitcoin
 
-To request bitcoin, the receiver must provide the sender with a payment request. Several payment request formats are available, both with Bitcoin and Lightning, each having its unique use cases and trade-offs. Payment requests can be single-use or reusable. This page covers the design considerations around generating, presenting, and sharing payment requests as well as receiving bitcoin.
+To request bitcoin, the receiver must provide the sender with a payment request. Several payment request formats are available, both with bitcoin and Lightning, each having its unique use cases and trade-offs. Payment requests can be single-use or reusable. This page covers the design considerations around generating, presenting, and sharing payment requests as well as receiving bitcoin.
 
 ## Requesting entry points
 
@@ -282,7 +282,7 @@ Once a user has generated a payment request the next action to take is sharing i
 
 ### Plaintext
 
-Sharing a payment request as plaintext involves simply copying and sharing it with a sender. It is typical for Bitcoin wallets to provide a share button that allows receivers to share a payment request in this manner conveniently. Both reusable and single-use requests should be shareable as plaintext.
+Sharing a payment request as plaintext involves simply copying and sharing it with a sender. It is typical for bitcoin wallets to provide a share button that allows receivers to share a payment request in this manner conveniently. Both reusable and single-use requests should be shareable as plaintext.
 
 ### Payment link
 
@@ -450,7 +450,7 @@ Wallet applications should clearly indicate once a payment has been received by 
    layout = "float-right-desktop -background -shadow"
 %}
 
-Users should have the option to share a confirmation that the payment has been received with the sender. For on-chain, the confirmed transaction on a Bitcoin block explorer can be shared. For Lightning, a preimage can be shared to show proof of payment.
+Users should have the option to share a confirmation that the payment has been received with the sender. For on-chain, the confirmed transaction on a bitcoin block explorer can be shared. For Lightning, a preimage can be shared to show proof of payment.
 
 For in-person payments, showing the confirmation screen to the sender will likely suffice.
 

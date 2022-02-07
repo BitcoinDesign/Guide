@@ -1,9 +1,9 @@
 ---
 layout: guide
 title: Open design
-description: What it means to participate in open design in the Bitcoin ecosystem.
+description: What it means to participate in open design in the bitcoin ecosystem.
 nav_order: 2
-parent: Designing Bitcoin products
+parent: Designing bitcoin products
 permalink: /guide/designing-products/open-design/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/designing-products/open-design/open-design-preview.jpg
@@ -24,17 +24,17 @@ Levels
 - Publishing something for others to use
 - Cross-project collaboration
 - Project-specific collaboration
-Examples in Bitcoin Design
+Examples in bitcoin Design
 - Guide
 - Johns exploring CoinJoins with Wasabi and wider bitcoin audience (cross-project)
-- Bosch working with Bitcoin Core GUI (project-specific)
+- Bosch working with bitcoin Core GUI (project-specific)
 
 Ideas
 - Add quotes and stories from designers
 
 Illustration sources
 
-- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=881%3A1051
+- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/bitcoin-Design-Guide-Illustrations-CO?node-id=881%3A1051
 
 -->
 
@@ -72,19 +72,19 @@ Open design communities can have multidisciplinary teams with designers, develop
 - Teamwork
 - Openness & transparency
 
-## Bitcoin has a spirit of openness
+## bitcoin has a spirit of openness
 
-We could argue Bitcoin needs open design to stay true to its mission.
+We could argue bitcoin needs open design to stay true to its mission.
 
-* Bitcoin is public and open source
+* bitcoin is public and open source
 * It has public and unrestricted network participation
 * It allows permissionless transfer of value
 
-Thousands of projects have borrowed ideas, techniques, and code from Bitcoin. Countless open-source experiments have arisen. To a designer, Bitcoin is a robust foundation for collaboration. A foundation that comes with a responsibility toward the benefit of society.
+Thousands of projects have borrowed ideas, techniques, and code from bitcoin. Countless open-source experiments have arisen. To a designer, bitcoin is a robust foundation for collaboration. A foundation that comes with a responsibility toward the benefit of society.
 
-This ethical responsibility encompasses application design. Most people interact with applications instead of the underlying Bitcoin technical protocol. If someone controls access to an application, it won't matter if the protocol is open. It is up to the global community to build [principled Bitcoin applications](guide/designing-products/principles/)
+This ethical responsibility encompasses application design. Most people interact with applications instead of the underlying bitcoin technical protocol. If someone controls access to an application, it won't matter if the protocol is open. It is up to the global community to build [principled bitcoin applications](guide/designing-products/principles/)
 
-Bitcoin is a protocol created to give access to anyone. Access and accessibility go hand in hand. Designing Bitcoin products means working on removing barriers of entry. It means making decisions to create a unique
+bitcoin is a protocol created to give access to anyone. Access and accessibility go hand in hand. Designing bitcoin products means working on removing barriers of entry. It means making decisions to create a unique
 balance of features for ease of use.
 
 ## Values
@@ -117,28 +117,28 @@ Open-source software development has existed for decades. Public review and deba
 - Fulfill the open design group's goals through actions
 - Create functional elements that have a positive influence on how people feel and think
 
-## Discover the Bitcoin Design Community
+## Discover the bitcoin Design Community
 
-**Our focus is on exploring best practices to improve Bitcoin product design.**
+**Our focus is on exploring best practices to improve bitcoin product design.**
 
 - Join the conversation on [Slack]({{site.slack_invite_url}}). Navigate toward the channels that interest you. Dive into topics and conversations that draw you in.
-- Identify your strengths and goals. Figure out how they may fit within the community's vision. A good place to start is listening to a [Community Call](https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+Community+Call) or reading our [newsletter](https://bitcoindesign.substack.com/).  
+- Identify your strengths and goals. Figure out how they may fit within the community's vision. A good place to start is listening to a [Community Call](https://github.com/bitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+Community+Call) or reading our [newsletter](https://bitcoindesign.substack.com/).  
 - Feel free to ask questions or ask for help in solving bitcoin design issues.
 - See some of the community [Projects](https://bitcoin.design/projects/).
 - Visit our [Contribute](https://bitcoin.design/contribute/) page.
 - Follow us on [Twitter](https://twitter.com/bitcoin_design)
-- Subscribe to [our YouTube](https://www.youtube.com/c/BitcoinDesign)
+- Subscribe to [our YouTube](https://www.youtube.com/c/bitcoinDesign)
 
 ### Test, redesign, and engage in feedback
 
-- Experiment with Bitcoin and Lightning. Download a wallet and test small amounts. You can also test network features without using real bitcoin on Testnet. It works with some wallets.
+- Experiment with bitcoin and Lightning. Download a wallet and test small amounts. You can also test network features without using real bitcoin on Testnet. It works with some wallets.
 - Redesign a bitcoin and/or lightning application or focus on a user experience issue that interests you. Even as a brief exercise, a redesign is a great way to develop understanding of how something works.
-- Join a [Design Review](https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+Design+Review+Call+). A call focusing on giving feedback to improve a specific bitcoin product. Products vary by call.
-- Join the [Wallet Improvement Project](https://github.com/BitcoinDesign/Guide/issues/493). It tests a list of real world Bitcoin projects and suggests redesigns to their makers.  
+- Join a [Design Review](https://github.com/bitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+Design+Review+Call+). A call focusing on giving feedback to improve a specific bitcoin product. Products vary by call.
+- Join the [Wallet Improvement Project](https://github.com/bitcoinDesign/Guide/issues/493). It tests a list of real world bitcoin projects and suggests redesigns to their makers.  
 
 ### Continuous learning
 
-Read, watch, listen, and test. You can discover great material about Bitcoin and related topics (like finance). You may not find as much material on the design side of bitcoin applications.
+Read, watch, listen, and test. You can discover great material about bitcoin and related topics (like finance). You may not find as much material on the design side of bitcoin applications.
 
 ### Open up resources
 
@@ -152,7 +152,7 @@ Open-source licenses ensure freedom of access to information and resources. Thei
 
 The open-source movement has created a variety of licenses.
 
-This Bitcoin Design Guide uses three licenses ([MIT license]({{site.github_repository_url}}blob/master/LICENSE-MIT), [Apache 2.0]({{site.github_repository_url}}blob/master/LICENSE-APACHE), and [CC by 4.0]({{site.github_repository_url}}blob/master/LICENSE-CC-BY)). It is an educational resource, and some items may be subject to their own licenses. Anyone who wants to remix it, or parts of it, may choose which license to publish their work under. You can read the full license text [here]({{site.github_repository_url}}blob/master/LICENSE).
+This bitcoin Design Guide uses three licenses ([MIT license]({{site.github_repository_url}}blob/master/LICENSE-MIT), [Apache 2.0]({{site.github_repository_url}}blob/master/LICENSE-APACHE), and [CC by 4.0]({{site.github_repository_url}}blob/master/LICENSE-CC-BY)). It is an educational resource, and some items may be subject to their own licenses. Anyone who wants to remix it, or parts of it, may choose which license to publish their work under. You can read the full license text [here]({{site.github_repository_url}}blob/master/LICENSE).
 
 ## Resources
 
@@ -167,7 +167,7 @@ Wondering where to start? Check out the next section about [design principles]({
 
 {% include next-previous.html
    previousUrl = "/guide/designing-products/why-design-for-bitcoin/"
-   previousName = "Why design for Bitcoin"
+   previousName = "Why design for bitcoin"
    nextUrl = "/guide/designing-products/principles/"
    nextName = "Design principles"
 %}

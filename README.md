@@ -6,27 +6,27 @@ Discussion and collaboration is taking place in the [bitcoin design Slack](http:
 
 The [Bitcoin Design Guide](https://bitcoin.design/guide/) is a free open-source community resource that helps designers, developers and others working on non-custodial bitcoin-products to create better experiences faster. We hope that, over time, it will cover all relevant types of products, including consumer wallets, merchant interactions, exchanges and more. Better products and experiences should ultimately make it more appealing for anyone to own and use bitcoin.
 
-An equally important goal is that the process of creating this guide nurtures an open-source Bitcoin design community that can carry this, and other projects forward longer term. The [Bitcoin Design Slack](http://bitcoindesigners.org) and the [bitcoin.design](https://bitcoin.design) website are the first steps in this direction.
+An equally important goal is that the process of creating this guide nurtures an open-source bitcoin design community that can carry this, and other projects forward longer term. The [bitcoin Design Slack](http://bitcoindesigners.org) and the [bitcoin.design](https://bitcoin.design) website are the first steps in this direction.
 
 ---
 
 ## Process and how to contribute
 
-The process of creating the guide is meant to be as open and decentralized as possible, resulting in a sustainable model to run projects with the community. Most of the discussion happens in the [Bitcoin Design Slack](http://bitcoindesigners.org), in the #bitcoin-design-guide, and here on GitHub in [Issues](https://github.com/BitcoinDesign/Guide/issues), [Pull requests](https://github.com/BitcoinDesign/Guide/pulls) and [Discussions](https://github.com/BitcoinDesign/Guide/discussions).
+The process of creating the guide is meant to be as open and decentralized as possible, resulting in a sustainable model to run projects with the community. Most of the discussion happens in the [bitcoin Design Slack](http://bitcoindesigners.org), in the #bitcoin-design-guide, and here on GitHub in [Issues](https://github.com/bitcoinDesign/Guide/issues), [Pull requests](https://github.com/bitcoinDesign/Guide/pulls) and [Discussions](https://github.com/bitcoinDesign/Guide/discussions).
 
 You can read more about [how to contribute](https://bitcoin.design/guide/contribute/).
 
 ## Guide Content
 
-The guide is meant to be a simple starting-point for anyone looking to build Bitcoin-based applications, while providing deeper topics and value for more experienced Bitcoin designers. Bitcoin is the platform, and the guide should provide information and resources that should be consistent across applications built on top of it.
+The guide is meant to be a simple starting-point for anyone looking to build bitcoin-based applications, while providing deeper topics and value for more experienced bitcoin designers. bitcoin is the platform, and the guide should provide information and resources that should be consistent across applications built on top of it.
 
 The guide is still being created and should be seen as an evolving resource. Similar to the iterative design process, it starts with core parts then grows in ambition based on community support.
 
 Here is the content that is currently live:
 
-[The Bitcoin Design Guide](https://bitcoin.design/guide/)
+[The bitcoin Design Guide](https://bitcoin.design/guide/)
 *   [Getting started](https://bitcoin.design/guide/getting-started/introduction/)
-*   [Designing Bitcoin products](https://bitcoin.design/guide/designing-products/introduction/)
+*   [Designing bitcoin products](https://bitcoin.design/guide/designing-products/introduction/)
 *   [Onboarding](https://bitcoin.design/guide/onboarding/introduction/)
 *   [Private key management](https://bitcoin.design/guide/private-key-management/introduction/)
 *   [Payments](https://bitcoin.design/guide/payments/)

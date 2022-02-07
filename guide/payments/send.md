@@ -17,13 +17,13 @@ imagesEntryPoints:
       alt: A screen showing a list of contacts to choose from
       caption: Storing contact information makes consecutive payments convenient.
     - file: donation-page-copy
-      alt: A website with a list of donation options for a Bitcoin designer
+      alt: A website with a list of donation options for a bitcoin designer
       caption: Users may be required to copy & paste payment requests.
     - file: donation-page-link
-      alt: A website with a single donation option for a Bitcoin designer
+      alt: A website with a single donation option for a bitcoin designer
       caption: Applications can initiate payment flows when users click specifically formatted links.
     - file: donation-qr-code
-      alt: A sheet of paper with donation information for a Bitcoin designer
+      alt: A sheet of paper with donation information for a bitcoin designer
       caption: Scanning a QR code is a common way to initiate a payment in a real-world setting.
 imagesEntryScreens:
     - file: lightning-address-options
@@ -90,7 +90,7 @@ Header: Illustration was sketched first, then designed in Adobe Illustrator, and
 Photoshop. The Dropbox link contains the AI and PSD files.
 
 - https://www.dropbox.com/sh/z5qnj2rna7rclae/AAB0dOuiJ3OmJuk7ZXkpbz5ua?dl=0\
-- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=1329%3A564
+- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/bitcoin-Design-Guide-Illustrations-CO?node-id=1329%3A564
 - https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=3%3A471
 
 -->
@@ -108,7 +108,7 @@ layout = "full-width"
 
 # Sending bitcoin
 
-Sending bitcoin is one of the most essential user activities in a Bitcoin application, and also one of the least structured ones. People may want to send bitcoin to a known contact, transfer it to another wallet on a different device, or make a purchase via a [payment processor]({{ '/guide/getting-started/software/#payment-processors' | relative_url }}).
+Sending bitcoin is one of the most essential user activities in a bitcoin application, and also one of the least structured ones. People may want to send bitcoin to a known contact, transfer it to another wallet on a different device, or make a purchase via a [payment processor]({{ '/guide/getting-started/software/#payment-processors' | relative_url }}).
 
 ## Payment entry points
 
@@ -250,7 +250,7 @@ Completion of a payment should be clearly indicated to the user.
 
 It should also be simple to share a proof that the payment was made. In-person, it may suffice to show the screen to the receiver. Additional options like sharing the confirmation via chat or email may also be useful.
 
-As on-chain transactions can be globally verified by anyone, a link to a [Bitcoin explorer]({{ '/guide/getting-started/software/#explorers' | relative_url }}) can be shared as a payment confirmation. For Lightning transactions, the so-called `preimage` can be considered a proof of payment.
+As on-chain transactions can be globally verified by anyone, a link to a [bitcoin explorer]({{ '/guide/getting-started/software/#explorers' | relative_url }}) can be shared as a payment confirmation. For Lightning transactions, the so-called `preimage` can be considered a proof of payment.
 
 </div>
 

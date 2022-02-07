@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Manual backup
-description: How to manually back up the recovery phrase of a Bitcoin wallet.
+description: How to manually back up the recovery phrase of a bitcoin wallet.
 grand_parent: Onboarding
 parent: Backing up a wallet
 nav_order: 2
@@ -58,7 +58,7 @@ This user flow usually requires users to manually back up their 12 to 24 word re
 
 {% include tip/open.html label="Printable Template" %}
 
-You could help the user by providing them with a printable template for writing down their recovery phrase. Some non-sensitive data (such as the name of your wallet or the derivation path) could be included pre-filled in the template. An [output script descriptor]({{'/guide/glossary/#output-script-descriptor' | relative_url}}) could be included as a QR code to ensure the wallet software knows how to restore the wallet properly. The user should be required to write in the sensitive data by hand. Here is an [example template](https://www.figma.com/file/sJYnyi2amehFJ2JpDgj978/Bitcoin-Wallet---Paper-Backup-Template?node-id=1%3A535).
+You could help the user by providing them with a printable template for writing down their recovery phrase. Some non-sensitive data (such as the name of your wallet or the derivation path) could be included pre-filled in the template. An [output script descriptor]({{'/guide/glossary/#output-script-descriptor' | relative_url}}) could be included as a QR code to ensure the wallet software knows how to restore the wallet properly. The user should be required to write in the sensitive data by hand. Here is an [example template](https://www.figma.com/file/sJYnyi2amehFJ2JpDgj978/bitcoin-Wallet---Paper-Backup-Template?node-id=1%3A535).
 
 {% include tip/close.html %}
 
@@ -136,7 +136,7 @@ Drilling in the larger consequences of what it means to interact with a self-cus
 
 {% include /tip/open.html label="Tip: Give users access to printable templates" icon="info" color="blue" %}
 
-Providing users with printable, designated materials to write down their recovery phrase can instill a sense of trust, organization (especially if they have multiple wallets), and guidance. It may also encourage them to treat this designated paper with importance rather than quickly scribbling it down on a random scrap. Check out an example template from the Wallet UI Kit [here](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1523%3A34106).
+Providing users with printable, designated materials to write down their recovery phrase can instill a sense of trust, organization (especially if they have multiple wallets), and guidance. It may also encourage them to treat this designated paper with importance rather than quickly scribbling it down on a random scrap. Check out an example template from the Wallet UI Kit [here](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/bitcoin-Wallet-UI-Kit?node-id=1523%3A34106).
 
 {% include /tip/close.html %}
 
@@ -158,7 +158,7 @@ Regardless of the option you decide to run with, it’s important that you expli
    width = 250
    height = 600
    alt-text = "Showing recovery phrase one word at a time"
-   caption = "One by One UI from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A0)"
+   caption = "One by One UI from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/bitcoin-Wallet-UI-Kit?node-id=1230%3A0)"
    layout = "float-right-desktop -background -shadow"
 %}
 
@@ -180,7 +180,7 @@ This would be a time consuming step if one’s recovery phrase is 24 words. This
    width = 250
    height = 600
    alt-text = "Showing recovery phrase one word at a time"
-   caption = "Column/Groups UI from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A131)"
+   caption = "Column/Groups UI from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/bitcoin-Wallet-UI-Kit?node-id=1230%3A131)"
    layout = "float-left-desktop -background -shadow"
 %}
 
@@ -202,7 +202,7 @@ Depending on how you show these groups of words, there is room for users to fals
    width = 250
    height = 600
    alt-text = "Reveal option where words are not readable by default"
-   caption = "Hold down to reveal UI from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A223)"
+   caption = "Hold down to reveal UI from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/bitcoin-Wallet-UI-Kit?node-id=1230%3A223)"
    layout = "float-right-desktop -background -shadow"
 %}
 
@@ -222,7 +222,7 @@ By creating this design interaction, it drills in how viewing, storing, and mana
    width = 250
    height = 600
    alt-text = "Show all 12 words at once"
-   caption = "All words at once UI from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A305)"
+   caption = "All words at once UI from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/bitcoin-Wallet-UI-Kit?node-id=1230%3A305)"
    layout = "float-left-desktop -background -shadow"
 %}
 
@@ -256,7 +256,7 @@ Try to make sure users understand your team cannot access their recovery phrase 
    width = 250
    height = 600
    alt-text = "Confirming a recovery phrase by tapping"
-   caption = "Word bank UI from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A408)"
+   caption = "Word bank UI from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/bitcoin-Wallet-UI-Kit?node-id=1230%3A408)"
    layout = "float-left-desktop -background -shadow"
 %}
 
@@ -274,7 +274,7 @@ A common design for confirming a manual backup is to present users with a scramb
    width = 250
    height = 600
    alt-text = "Typing a recovery phrase"
-   caption = "Typing it out UI from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A538)"
+   caption = "Typing it out UI from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/bitcoin-Wallet-UI-Kit?node-id=1230%3A538)"
    layout = "float-right-desktop -background -shadow"
 %}
 
@@ -298,7 +298,7 @@ Because typing each word out comes with more room for error, create a visual ind
    width = 250
    height = 600
    alt-text = "Identify specific recovery phrase words"
-   caption = "Word recall from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A828)"
+   caption = "Word recall from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/bitcoin-Wallet-UI-Kit?node-id=1230%3A828)"
    layout = "float-right-desktop -background -shadow"
 %}
 

@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Privacy
-description: An overview of how to help users maintain their financial privacy while using Bitcoin.
+description: An overview of how to help users maintain their financial privacy while using bitcoin.
 nav_order: 3
 parent: Payments
 permalink: /guide/payments/privacy/
@@ -34,17 +34,17 @@ This page should inform about what information is made public when sending or re
 @TODO: address reuse / write glossary term about Gap limit  
 -->
 
-It’s a common misconception that Bitcoin payments are anonymous. Rather, bitcoin payments are [pseudonymous](https://en.wikipedia.org/wiki/Pseudonym), meaning no identifiable information is tied to transactions. Unless ownership is revealed, whether by the parties involved or some third-party, payments remain anonymous.
+It’s a common misconception that bitcoin payments are anonymous. Rather, bitcoin payments are [pseudonymous](https://en.wikipedia.org/wiki/Pseudonym), meaning no identifiable information is tied to transactions. Unless ownership is revealed, whether by the parties involved or some third-party, payments remain anonymous.
 
-It is important to differentiate between Bitcoin and Lightning network privacy. Their differences in technical architecture result in different privacy considerations.
+It is important to differentiate between bitcoin and Lightning network privacy. Their differences in technical architecture result in different privacy considerations.
 
-Transactions, their signatures, and addresses added to the Bitcoin blockchain remain public forever. This means that looking up any address or transaction is trivial, as demonstrated by going back to the very first block mined on [January 3, 2009](https://blockstream.info/tx/4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b). The key to keeping your transactions private is to prevent others from determining which addresses you own[^1]. Since [Satoshi](https://en.wikipedia.org/wiki/Satoshi_Nakamoto) let others know that they had mined the first block, which contained a single transaction, one can deduce that both the address that received the block reward and the sender address in the transaction belongs to Satoshi. This illustrates the permanence of associations between addresses and identity. While it’s possible to break assumptions of ownership going forward, the challenge is to recover privacy once an association is made public. That being said, in this case the pseudonym “Satoshi Nakamoto” has yet to be associated with any personal identity.
+Transactions, their signatures, and addresses added to the bitcoin blockchain remain public forever. This means that looking up any address or transaction is trivial, as demonstrated by going back to the very first block mined on [January 3, 2009](https://blockstream.info/tx/4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b). The key to keeping your transactions private is to prevent others from determining which addresses you own[^1]. Since [Satoshi](https://en.wikipedia.org/wiki/Satoshi_Nakamoto) let others know that they had mined the first block, which contained a single transaction, one can deduce that both the address that received the block reward and the sender address in the transaction belongs to Satoshi. This illustrates the permanence of associations between addresses and identity. While it’s possible to break assumptions of ownership going forward, the challenge is to recover privacy once an association is made public. That being said, in this case the pseudonym “Satoshi Nakamoto” has yet to be associated with any personal identity.
 
-> Each Bitcoin transaction contains at least one input and at least one output. This means that once a single address is known, there is a trail to follow the bitcoin.
+> Each bitcoin transaction contains at least one input and at least one output. This means that once a single address is known, there is a trail to follow the bitcoin.
 >
-> <cite>As documented by <a href="https://docs.wasabiwallet.io/FAQ/FAQ-GeneralBitcoinPrivacy.html#how-is-bitcoin-bad-in-terms-of-privacy">Wasabi Wallet</a></cite>
+> <cite>As documented by <a href="https://docs.wasabiwallet.io/FAQ/FAQ-GeneralbitcoinPrivacy.html#how-is-bitcoin-bad-in-terms-of-privacy">Wasabi Wallet</a></cite>
 
-On the Lightning network, a payment is only stored by the respective sender and receiver, and only as long as the channel in which the payment was made is open. However, opening and closing channels requires entries on the Bitcoin blockchain, and those are also publicly stored forever. Additionally, Lightning nodes are always online and usually directly tied to a single wallet, providing another data point. For a detailed analysis of privacy on Lighting, see the [Security and privacy chapter](https://github.com/lnbook/lnbook/blob/develop/16_security_privacy_ln.asciidoc) in the Mastering the Lightning Network book.
+On the Lightning network, a payment is only stored by the respective sender and receiver, and only as long as the channel in which the payment was made is open. However, opening and closing channels requires entries on the bitcoin blockchain, and those are also publicly stored forever. Additionally, Lightning nodes are always online and usually directly tied to a single wallet, providing another data point. For a detailed analysis of privacy on Lighting, see the [Security and privacy chapter](https://github.com/lnbook/lnbook/blob/develop/16_security_privacy_ln.asciidoc) in the Mastering the Lightning Network book.
 
 These are just some of the interactions through which we leave traces of data that diligent observers can connect and build user profiles around. For the rest of this page, we focus on what product builders and users can do to improve their payment privacy.
 
@@ -52,7 +52,7 @@ These are just some of the interactions through which we leave traces of data th
 
 ## Methods to preserve privacy
 
-There are many ways your identity might get connected to your wallet[^2] and payments, so keeping Bitcoin payments private takes diligent work, but is not impossible. Let’s explore some practices that help preserve privacy of Bitcoin payments.
+There are many ways your identity might get connected to your wallet[^2] and payments, so keeping bitcoin payments private takes diligent work, but is not impossible. Let’s explore some practices that help preserve privacy of bitcoin payments.
 
 <!-- talk about the problem as you are talking about the solution -->
 
@@ -66,7 +66,7 @@ Lighting node Ids, Lightning addresses, and LNURL-Pay invoices (see [Payment req
 
 ### Generate a new address for each on-chain payment
 
-A new address should be generated by the wallet application any time the user wants to receive bitcoin on-chain. This is achieved by using [HD Wallets]({{ "/guide/glossary/wallet/#hd-wallet" | relative_url }}), a standard in modern Bitcoin applications that can generate and manage an infinite number of addresses without revealing their common root. This allows each incoming transaction to use a new address that is unconnected to any other in the wallet, making it difficult to associate with the owner.
+A new address should be generated by the wallet application any time the user wants to receive bitcoin on-chain. This is achieved by using [HD Wallets]({{ "/guide/glossary/wallet/#hd-wallet" | relative_url }}), a standard in modern bitcoin applications that can generate and manage an infinite number of addresses without revealing their common root. This allows each incoming transaction to use a new address that is unconnected to any other in the wallet, making it difficult to associate with the owner.
 
 Address re-use degrades the privacy of both the [sending](/guide/payments/send/) and [receiving](/guide/payments/request) parties. Re-using an address on the receiver's side means that anyone with whom that address is shared can see previous payments and the amount of bitcoin controlled by that address.
 
@@ -132,7 +132,7 @@ Some applications make it possible to filter UTXOs by label to make such selecti
    caption = "CoinJoin transactions attempt to make payments more private by mixing inputs from many senders and outputs to many receivers."
 %}
 
-A [CoinJoin]({{ "/guide/glossary/#coinjoin" | relative_url }}) is an advanced technique where multiple participants collaborate on a transaction to break the "common input ownership" heuristic[^3], which assumes that all inputs in a transaction likely belong to the same owner. In a CoinJoin transaction all the outputs tend to be of the same amount. This makes it harder to define which input paid which output, somewhat breaking the absolute traceability of bitcoin transactions. As with any other anonymity network, a large and diverse group of participants will be more effective in disassociating the connections. CoinJoin transactions are not yet widely supported by Bitcoin applications.
+A [CoinJoin]({{ "/guide/glossary/#coinjoin" | relative_url }}) is an advanced technique where multiple participants collaborate on a transaction to break the "common input ownership" heuristic[^3], which assumes that all inputs in a transaction likely belong to the same owner. In a CoinJoin transaction all the outputs tend to be of the same amount. This makes it harder to define which input paid which output, somewhat breaking the absolute traceability of bitcoin transactions. As with any other anonymity network, a large and diverse group of participants will be more effective in disassociating the connections. CoinJoin transactions are not yet widely supported by bitcoin applications.
 
 Users still have to be mindful of how the UTXOs they received from the CoinJoin are spent. For instance, spending them together in a single transaction would unravel the anonymity gains from participating in the CoinJoin.
 
@@ -140,18 +140,18 @@ Users still have to be mindful of how the UTXOs they received from the CoinJoin 
 
 ### Design with privacy in mind
 
-Thinking about privacy is critical during the design process. Your users will not have the same level of knowledge of how to use Bitcoin privately.
+Thinking about privacy is critical during the design process. Your users will not have the same level of knowledge of how to use bitcoin privately.
 
 It is especially important to help them understand any actions that might impact their privacy. Most of the risks occur at the point of creating a transaction or requesting a payment, and we should try to design solutions that reduce the risk of unknowingly degrading privacy.
 
 While there is no perfect solution that will guarantee 100% privacy, try to minimize how much information gets shared to the most essential. Consider ways to inform and prevent user actions that negatively impact their privacy as they use your product.
 
 <!--
-There is no perfect solution to guarantee 100% privacy that lasts forever because things can be revealed over time. Since transactions are forever public, even if all precautions are taken at the time of payment to ensure the highest degree of anonymity, future behaviors of the wallet owner or transacting parties can still degrade previously attained privacy. A high amount of diligence is necessary whenever users are transacting with Bitcoin. The product should be able to guide, inform, and prevent them against privacy degrading actions.
+There is no perfect solution to guarantee 100% privacy that lasts forever because things can be revealed over time. Since transactions are forever public, even if all precautions are taken at the time of payment to ensure the highest degree of anonymity, future behaviors of the wallet owner or transacting parties can still degrade previously attained privacy. A high amount of diligence is necessary whenever users are transacting with bitcoin. The product should be able to guide, inform, and prevent them against privacy degrading actions.
 -->
 
 [^1]: [Bitcoin.org - Protecting your privacy](https://bitcoin.org/en/protect-your-privacy)
-[^2]: [Top Seven Ways Your Identity Can Be Linked to Your Bitcoin Address](https://99bitcoins.com/know-more-top-seven-ways-your-identity-can-be-linked-to-your-bitcoin-address/)
+[^2]: [Top Seven Ways Your Identity Can Be Linked to Your bitcoin Address](https://99bitcoins.com/know-more-top-seven-ways-your-identity-can-be-linked-to-your-bitcoin-address/)
 [^3]: [Bitcoin Wiki / Privacy](https://en.bitcoin.it/wiki/Privacy#Common-input-ownership_heuristic)
 
 ---

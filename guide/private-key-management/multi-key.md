@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Multi-key
-description: Learn the basics of multi-signature Bitcoin wallets.
+description: Learn the basics of multi-signature bitcoin wallets.
 nav_order: 6
 parent: Private key management
 permalink: /guide/private-key-management/multi-key/
@@ -54,7 +54,7 @@ The keys used by a Lightning node cannot be controlled by a multi-key setup, as 
 {% include tip/close.html %}
 
 ### How it works
-A software wallet application or coordination software initiates a multi-sig wallet, choosing the number of total keys, and the number required to sign transactions. You then add private keys from other wallets generated elsewhere to the multisig after which the software wallet can complete the creation process. For any future transaction from the multi-sig wallet the required amount of co-signers need to sign (using Partially Signed Bitcoin Transactions - PSBT from [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki)) before any transaction is valid.
+A software wallet application or coordination software initiates a multi-sig wallet, choosing the number of total keys, and the number required to sign transactions. You then add private keys from other wallets generated elsewhere to the multisig after which the software wallet can complete the creation process. For any future transaction from the multi-sig wallet the required amount of co-signers need to sign (using Partially Signed bitcoin Transactions - PSBT from [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki)) before any transaction is valid.
 
 {% include fact/pros.html %}
 
@@ -105,11 +105,11 @@ A software wallet application or coordination software initiates a multi-sig wal
 
 ---
 
-OK, to end this chapter let's have a look at how to do safe [Bitcoin backups]({{ '/guide/private-key-management/backups/' | relative_url }}).
+OK, to end this chapter let's have a look at how to do safe [bitcoin backups]({{ '/guide/private-key-management/backups/' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/private-key-management/external-signers/"
    previousName = "External signing devices"
    nextUrl = "/guide/private-key-management/backups/"
-   nextName = "Bitcoin backups"
+   nextName = "bitcoin backups"
 %}

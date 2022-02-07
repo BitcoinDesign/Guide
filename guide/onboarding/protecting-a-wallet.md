@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Protecting a wallet
-description: How extra layers of security can be added to Bitcoin applications via PINs, Face Id, and other techniques.
+description: How extra layers of security can be added to bitcoin applications via PINs, Face Id, and other techniques.
 parent: Onboarding
 nav_order: 4
 permalink: /guide/onboarding/protecting-a-wallet/
@@ -19,7 +19,7 @@ technical things like watch towers for Lightning wallets.
 
 Illustration sources
 
-- https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-UI-Kit?node-id=2600%3A66326
+- https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/bitcoin-UI-Kit?node-id=2600%3A66326
 - https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=0%3A1
 
 -->
@@ -133,7 +133,7 @@ A common practice for wallets is to have a barrier (fingerprint scan, PIN entry,
    width = 250
    height = 541
    alt-text = "Face ID screen"
-   caption = "Face ID UI from [Wallet UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1228%3A27860)"
+   caption = "Face ID UI from [Wallet UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/bitcoin-Wallet-UI-Kit?node-id=1228%3A27860)"
    layout = "float-left-desktop -background -shadow"
 %}
 

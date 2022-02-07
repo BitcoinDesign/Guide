@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Backing up a wallet
-description: An overview of the data and considerations for backing up Bitcoin wallets.
+description: An overview of the data and considerations for backing up bitcoin wallets.
 parent: Onboarding
 has_children: true
 nav_order: 3
@@ -39,7 +39,7 @@ Illustration sources
 
 # Backing up a wallet
 
-When a user generates a new Bitcoin wallet, they will soon need to create a backup of their wallet in order to ensure that funds are not lost.
+When a user generates a new bitcoin wallet, they will soon need to create a backup of their wallet in order to ensure that funds are not lost.
 
 Two main types of information need to be backed up: the user's wallet recovery data and their Lightning channel state. While the wallet recovery data may be used to restore the wallet using another wallet application, the channel state is typically only restorable within the same application.
 
@@ -48,7 +48,7 @@ Two main types of information need to be backed up: the user's wallet recovery d
    retina = "/assets/images/guide/onboarding/backing-up-a-wallet/wallet-backup@2x.png"
    mobile = "/assets/images/guide/onboarding/backing-up-a-wallet/wallet-backup-mobile.png"
    mobileRetina = "/assets/images/guide/onboarding/backing-up-a-wallet/wallet-backup-mobile@2x.png"
-   alt-text = "A diagram of data required to back up a Bitcoin wallet"
+   alt-text = "A diagram of data required to back up a bitcoin wallet"
    width = 1200
    height = 680
    layout = "full-width"

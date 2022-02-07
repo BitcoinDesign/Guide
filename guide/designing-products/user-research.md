@@ -3,7 +3,7 @@ layout: guide
 title: User research
 description: Bitcoin user research is unique due to the decentralized and public nature of the network.
 nav_order: 4
-parent: Designing Bitcoin products
+parent: Designing bitcoin products
 has_children: true
 permalink: /guide/designing-products/user-research/
 main_classes: -no-top-padding
@@ -26,7 +26,7 @@ it should be considered whether to include it or link to external resources.
 
 Illustration sources
 
-- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=288%3A652
+- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/bitcoin-Design-Guide-Illustrations-CO?node-id=288%3A652
 
 -->
 
@@ -69,9 +69,9 @@ User research allows us to effectively connect these dots and highlight the quic
 
 </div>
 
-## User research is different with Bitcoin
+## User research is different with bitcoin
 
-In some ways, research and development are the same from industry to industry. But that’s not always the case with Bitcoin. To avoid repeating what has already been said about doing product R&D elsewhere, we’ll look at how it’s different on planet Bitcoin.
+In some ways, research and development are the same from industry to industry. But that’s not always the case with bitcoin. To avoid repeating what has already been said about doing product R&D elsewhere, we’ll look at how it’s different on planet bitcoin.
 
 ### Global audiences and use cases
 
@@ -86,21 +86,21 @@ In some ways, research and development are the same from industry to industry. B
    layout = "float-right-desktop"
 %}
 
-Most digital products start with a specific country, culture, language, or legal framework in mind. This is especially true for financial applications, which are typically highly regulated and need to slowly and strategically evolve. While Bitcoin did start with a single language, its use case was not tied to any particular context, resulting in a much more diverse user base from the start.
+Most digital products start with a specific country, culture, language, or legal framework in mind. This is especially true for financial applications, which are typically highly regulated and need to slowly and strategically evolve. While bitcoin did start with a single language, its use case was not tied to any particular context, resulting in a much more diverse user base from the start.
 
-Diverse online communities rapidly formed around Bitcoin. Vast amounts of public conversation can help designers and developers comprehend what is possible and what is needed from Bitcoin. These communities are great for brainstorming ideas, getting feedback, and involving users actively in the design process.
+Diverse online communities rapidly formed around bitcoin. Vast amounts of public conversation can help designers and developers comprehend what is possible and what is needed from bitcoin. These communities are great for brainstorming ideas, getting feedback, and involving users actively in the design process.
 
-- [Bitcoin on GitHub](https://github.com/bitcoin)
-- [Bitcoin mailing list](https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev)
-- [Bitcointalk](https://bitcointalk.org/)
-- [Bitcoin Core dev meeting logs](http://www.erisian.com.au/meetbot/bitcoin-core-dev/)
-- [Bitcoin subreddit](https://www.reddit.com/r/bitcoin)
+- [bitcoin on GitHub](https://github.com/bitcoin)
+- [bitcoin mailing list](https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev)
+- [bitcointalk](https://bitcointalk.org/)
+- [bitcoin Core dev meeting logs](http://www.erisian.com.au/meetbot/bitcoin-core-dev/)
+- [bitcoin subreddit](https://www.reddit.com/r/bitcoin)
 
 </div>
 
 ### An unknowable userbase
 
-Bitcoin only knows its users through pseudonymous addresses. We can analyze on-chain metrics for things like fundamental transaction behaviors, but analysis of addresses and transactions beyond this can be complicated. While the privacy Bitcoin provides is a fundamental aspect, it can make things challenging for user researchers.
+bitcoin only knows its users through pseudonymous addresses. We can analyze on-chain metrics for things like fundamental transaction behaviors, but analysis of addresses and transactions beyond this can be complicated. While the privacy bitcoin provides is a fundamental aspect, it can make things challenging for user researchers.
 
 ### Transparent and extensible
 
@@ -115,7 +115,7 @@ Bitcoin only knows its users through pseudonymous addresses. We can analyze on-c
    layout = "float-left"
 %}
 
-Bitcoin is a protocol with [layers](https://bitcoin.design/guide/getting-started/technology-primer/#do-all-transactions-have-to-be-this-secure) built on top of it.
+bitcoin is a protocol with [layers](https://bitcoin.design/guide/getting-started/technology-primer/#do-all-transactions-have-to-be-this-secure) built on top of it.
 
 The base layer is a public record of transactions that can easily be analyzed. However, layers built on top, such as [Lightning network](/guide/getting-started/technology-primer/#the-lightning-payment-network) make analysis of specific transaction impossible, thanks to [payment channels](/guide/getting-started/technology-primer/#what-is-a-payment-channel).
 
@@ -138,9 +138,9 @@ No other currency in history has offered such a transparent way to analyze netwo
    layout = "float-right-desktop"
 %}
 
-New technologies can take decades to reach mainstream adoption. Bitcoin is, in our opinion, still on its way up the adoption curve, which means it and we are early. This affects research in multiple ways. Early adopters have different use cases and needs than users who adopt Bitcoin ten years from now. Products designed today could be outdated by the time that the early majority embraced Bitcoin.
+New technologies can take decades to reach mainstream adoption. bitcoin is, in our opinion, still on its way up the adoption curve, which means it and we are early. This affects research in multiple ways. Early adopters have different use cases and needs than users who adopt bitcoin ten years from now. Products designed today could be outdated by the time that the early majority embraced bitcoin.
 
-Secondly, as Bitcoin matures, its capabilities will evolve. Scaling and performance improvements will make transactions more affordable, private, and secure. These improvements will make people more comfortable embracing Bitcoin as both a store of value and medium of exchange.
+Secondly, as bitcoin matures, its capabilities will evolve. Scaling and performance improvements will make transactions more affordable, private, and secure. These improvements will make people more comfortable embracing bitcoin as both a store of value and medium of exchange.
 
 There is an interplay between the size of the user base and the maturity of the technology. For user research, this means that as development accelerates, so will the obsoletion of past user research.
 
@@ -155,7 +155,7 @@ Links to:
 
 ### Open source and open design
 
-While there are plenty of private companies that build on Bitcoin, but this guide focuses on open-source. In open-source, collaboration is based on communal efforts that mostly happen in public. Find out more on our dedicated page on [open design]({{ '/guide/designing-products/open-design/' | relative_url }}).
+While there are plenty of private companies that build on bitcoin, but this guide focuses on open-source. In open-source, collaboration is based on communal efforts that mostly happen in public. Find out more on our dedicated page on [open design]({{ '/guide/designing-products/open-design/' | relative_url }}).
 
 <!--
 
@@ -192,7 +192,7 @@ Links to:
 
 ## Resources
 
-Join the discussion in the [#research channel](https://bitcoindesign.slack.com/archives/C015DQEPCHJ) on the Bitcoin Design Slack.
+Join the discussion in the [#research channel](https://bitcoindesign.slack.com/archives/C015DQEPCHJ) on the bitcoin Design Slack.
 
 <!--
 

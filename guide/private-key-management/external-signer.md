@@ -38,9 +38,9 @@ https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=261%3A1837
 
 # External signers
 
-External signers use, store, and manage private keys and other sensitive info, such as the user's recovery phrase, externally from the user's wallet application. The most common external signers used today are hardware wallets. Software-only external signing applications also exist, but are less secure than their hardware counterparts. 
+External signers use, store, and manage private keys and other sensitive info, such as the user's recovery phrase, externally from the user's wallet application. The most common external signers used today are hardware wallets. Software-only external signing applications also exist, but are less secure than their hardware counterparts.
 
-A wallet application supporting external signers removes the need for storing private keys locally by the wallet application. This decreases the theft risk as the keys can be isolated from the internet and/or a potentially malicious device. 
+A wallet application supporting external signers removes the need for storing private keys locally by the wallet application. This decreases the theft risk as the keys can be isolated from the internet and/or a potentially malicious device.
 
 ### How it works
 
@@ -50,15 +50,15 @@ The external signer generates and stores private keys externally, and preferably
 
 To sign a transaction, the primary wallet application submits a unsigned transaction or a partially signed bitcoin transaction ([PSBT](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki)) to the external signer.
 
-The external signer then signs the transaction or PSBT and sends it back to the primary wallet application. The users primary wallet application now broadcasts this now signed transaction to the Bitcoin network for processing. This process can also happen fully air-gapped using QR codes or memory cards instead of cables or wireless connections, to keep the device offline at all times.
+The external signer then signs the transaction or PSBT and sends it back to the primary wallet application. The users primary wallet application now broadcasts this now signed transaction to the bitcoin network for processing. This process can also happen fully air-gapped using QR codes or memory cards instead of cables or wireless connections, to keep the device offline at all times.
 
-PSBT's can be passed between the primary wallet application and external signer in many ways such as email, messenger, QR, SD card etc. With PSBTs external signers can be completely air-gapped meaning they never have to be plugged into another device or connect to any network to sign. Signers that do not support PSBTs need to communicate transaction data over USB which is less secure as the device has to be plugged into another, potentially malicious, device to sign. 
+PSBT's can be passed between the primary wallet application and external signer in many ways such as email, messenger, QR, SD card etc. With PSBTs external signers can be completely air-gapped meaning they never have to be plugged into another device or connect to any network to sign. Signers that do not support PSBTs need to communicate transaction data over USB which is less secure as the device has to be plugged into another, potentially malicious, device to sign.
 
 </div>
 
 ### Lightning signers
 
-Lightning signers are an experimental type of external signers interacting with the Lightning network. Like regular external signers, Lightning signers isolate private keys from the user's primary wallet application. However, these signers need to remain online and connected 24/7 to the user's primary wallet application to update payment channel states. These, in effect, have some of the security benefits of regular external signers by isolating private keys from the internet and/or potential malicious device. Learn more [here](https://gitlab.com/lightning-signer/docs/-/blob/master/README.md). 
+Lightning signers are an experimental type of external signers interacting with the Lightning network. Like regular external signers, Lightning signers isolate private keys from the user's primary wallet application. However, these signers need to remain online and connected 24/7 to the user's primary wallet application to update payment channel states. These, in effect, have some of the security benefits of regular external signers by isolating private keys from the internet and/or potential malicious device. Learn more [here](https://gitlab.com/lightning-signer/docs/-/blob/master/README.md).
 
 {% include fact/pros.html %}
 
@@ -83,7 +83,7 @@ Lightning signers are an experimental type of external signers interacting with 
 - When target audience is likely to be very knowledgeable or motivated to learn good manual backup schemes
 
 #### When not to use
-- When most users are new to Bitcoin and unlikely to implement good backup schemes
+- When most users are new to bitcoin and unlikely to implement good backup schemes
 - When transactions are likely to be frequent and low value
 
 #### Variations

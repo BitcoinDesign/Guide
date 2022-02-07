@@ -24,7 +24,7 @@ image: https://bitcoin.design/assets/images/contribute/contribute-preview.jpg
 
 **So you’re interested in contributing? Fantastic! We welcome, appreciate and encourage new contributions.**
 
-Depending on your skills and interest, you can help in a number of ways. We design, illustrate, write copy and code, do technical research, discuss and answer questions, run workshops and community calls, and more. Design is a multidisciplinary activity and there are many different ways to be part of this community and help improve how we interact with the Bitcoin protocol.
+Depending on your skills and interest, you can help in a number of ways. We design, illustrate, write copy and code, do technical research, discuss and answer questions, run workshops and community calls, and more. Design is a multidisciplinary activity and there are many different ways to be part of this community and help improve how we interact with the bitcoin protocol.
 
 ## Learn how we work
 

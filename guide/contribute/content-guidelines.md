@@ -14,7 +14,7 @@ image: https://bitcoin.design/assets/images/guide/contribute/content-guidelines/
    retina = "/assets/images/guide/contribute/content-guidelines/content-guidelines@2x.jpg"
    mobile = "/assets/images/guide/contribute/content-guidelines/content-guidelines-mobile.jpg"
    mobileRetina = "/assets/images/guide/contribute/content-guidelines/content-guidelines-mobile@2x.jpg"
-   alt-text = "How to correctly spell and capitalize Bitcoin"
+   alt-text = "How to correctly spell and capitalize bitcoin"
    width = 1600
    height = 800
    layout = "full-width"
@@ -23,15 +23,15 @@ image: https://bitcoin.design/assets/images/guide/contribute/content-guidelines/
 
 # Content guidelines
 
-The Bitcoin Design Guide is the work of many authors with different backgrounds, each with their own unique voice and perspective. To help us ensure a consistent written voice throughout the guide, follow these content guidelines.
+The bitcoin Design Guide is the work of many authors with different backgrounds, each with their own unique voice and perspective. To help us ensure a consistent written voice throughout the guide, follow these content guidelines.
 
 ### Know your reader
 
-This guide is crafted for anyone interested in building an effective Bitcoin application. A large part of this group are designers and creatives, but also front-end developers, project managers, and others who actively shape the end-user experience. Consider their perspectives and needs first and avoid going into topics that are not relevant to these readers' goals.
+This guide is crafted for anyone interested in building an effective bitcoin application. A large part of this group are designers and creatives, but also front-end developers, project managers, and others who actively shape the end-user experience. Consider their perspectives and needs first and avoid going into topics that are not relevant to these readers' goals.
 
-### Apply Bitcoin design principles
+### Apply bitcoin design principles
 
-When creating content for the guide make sure to apply the [Bitcoin design principles](/guide/designing-products/principles/) to what you create. These include self-custody, interoperability, decentralization, security, transparency, inclusion, and privacy. 
+When creating content for the guide make sure to apply the [bitcoin design principles](/guide/designing-products/principles/) to what you create. These include self-custody, interoperability, decentralization, security, transparency, inclusion, and privacy.
 
 ### Speak to the reader
 
@@ -47,7 +47,7 @@ Address the reader directly. Whenever possible, try using active instead of pass
 
 ### Use simple language
 
-Bitcoin is a global currency. Not everyone using this guide is a native English speaker. Make sure you are writing in plain, easy to follow English. If you're still not sure, try using a readability tool to analyze your text and make recommendations. We like [Hemingway](http://www.hemingwayapp.com).
+bitcoin is a global currency. Not everyone using this guide is a native English speaker. Make sure you are writing in plain, easy to follow English. If you're still not sure, try using a readability tool to analyze your text and make recommendations. We like [Hemingway](http://www.hemingwayapp.com).
 
 ### Be concise
 
@@ -88,7 +88,7 @@ A picture is worth a thousand words, but so are videos, interactive prototypes, 
 
 ### Be humble
 
-The guide is a work in progress and needs to evolve to stay relevant. What we write today may not be applicable tomorrow. Have fun. Don't overthink things. Bitcoin, and therefore this guide, is the ultimate work-in-progress.
+The guide is a work in progress and needs to evolve to stay relevant. What we write today may not be applicable tomorrow. Have fun. Don't overthink things. bitcoin, and therefore this guide, is the ultimate work-in-progress.
 
 ### Write in the open
 

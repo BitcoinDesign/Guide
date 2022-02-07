@@ -1,7 +1,7 @@
 ---
 layout: guide
-title: Designing Bitcoin products
-description: Learn fundamentals, techniques and best practices for designing great Bitcoin UX.
+title: Designing bitcoin products
+description: Learn fundamentals, techniques and best practices for designing great bitcoin UX.
 nav_order: 3
 has_children: true
 permalink: /guide/designing-products/introduction/
@@ -22,21 +22,21 @@ A brief introduction and summary of all pages in this section. The idea is that 
    retina = "/assets/images/guide/designing-products/designing-bitcoin-products/designing-bitcoin-products-web@2x.png"
    mobile = "/assets/images/guide/designing-products/designing-bitcoin-products/designing-bitcoin-products-mobile.png"
    mobileRetina = "/assets/images/guide/designing-products/designing-bitcoin-products/designing-bitcoin-products-mobile@2x.png"
-   alt-text = "Gear, light bulb, and box icons with the Bitcoin symbol overlaid"
+   alt-text = "Gear, light bulb, and box icons with the bitcoin symbol overlaid"
    width = 1600
    height = 600
    layout = "full-width"
 %}
 
-# Designing Bitcoin products
+# Designing bitcoin products
 
 
 
 ---
 
-### [Why design for Bitcoin]({{ '/guide/designing-products/why-design-for-bitcoin/' | relative_url }})
+### [Why design for bitcoin]({{ '/guide/designing-products/why-design-for-bitcoin/' | relative_url }})
 
-Bitcoin is fundamentally open and participatory and allows designers and creators to explore and shape experiences for users around the globe.
+bitcoin is fundamentally open and participatory and allows designers and creators to explore and shape experiences for users around the globe.
 
 ---
 
@@ -46,9 +46,9 @@ Open design is about global collaboration that balances the free exchange of des
 
 ---
 
-### [Bitcoin design principles]({{ '/guide/designing-products/principles/' | relative_url }})
+### [bitcoin design principles]({{ '/guide/designing-products/principles/' | relative_url }})
 
-Core bitcoin design principles recommended by the Bitcoin Design Community.
+Core bitcoin design principles recommended by the bitcoin Design Community.
 
 ---
 
@@ -60,25 +60,25 @@ All products begin with user needs and end in those same users hands. User resea
 
 ### [Usage life cycle]({{ '/guide/designing-products/usage-life-cycle/' | relative_url }})
 
-All users start without any knowledge of Bitcoin or your particular product. As we learn more, our understanding and needs change. As designers, it is essential to guide users through this experience.
+All users start without any knowledge of bitcoin or your particular product. As we learn more, our understanding and needs change. As designers, it is essential to guide users through this experience.
 
 ---
 
 ### [Personal finance]({{ '/guide/designing-products/personal-finance/' | relative_url }})
 
-If we consider Bitcoin money, we need to consider how Bitcoin users think about their finances. This page provides a simple framework that can serve as a starting point, deriving bitcoin software and hardware setups from common budgeting categories.
+If we consider bitcoin money, we need to consider how bitcoin users think about their finances. This page provides a simple framework that can serve as a starting point, deriving bitcoin software and hardware setups from common budgeting categories.
 
 ---
 
 ### [Getting to know your users]({{ '/guide/designing-products/getting-to-know-your-users/' | relative_url }})
 
-This section will give you some tips on how best to understand and develop knowledge about your users. 
+This section will give you some tips on how best to understand and develop knowledge about your users.
 
 ---
 
 ### [Common user flows]({{ '/guide/designing-products/common-user-flows/' | relative_url }})
 
-Most Bitcoin applications share certain user activities, from initial setup to making a transaction. It is vital to follow users' expected patterns and behaviors to reduce mistakes and enable seamless switching between products.
+Most bitcoin applications share certain user activities, from initial setup to making a transaction. It is vital to follow users' expected patterns and behaviors to reduce mistakes and enable seamless switching between products.
 
 ---
 
@@ -98,6 +98,5 @@ Shared design source files and a suggested process for collaborating on creative
    previousUrl = "/guide/getting-started/hardware/"
    previousName = "Hardware overview"
    nextUrl = "/guide/designing-products/why-design-for-bitcoin/"
-   nextName = "Why design for Bitcoin"
+   nextName = "Why design for bitcoin"
 %}
-

@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Case studies
-description: A range of case study designs for Bitcoin applications.
+description: A range of case study designs for bitcoin applications.
 nav_order: 8
 has_children: true
 permalink: /guide/case-studies/

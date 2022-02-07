@@ -1,51 +1,51 @@
 ---
 layout: guide
 title: Design resources
-description: Design files by and for the Bitcoin Design Community
+description: Design files by and for the bitcoin Design Community
 nav_order: 10
-parent: Designing Bitcoin products
+parent: Designing bitcoin products
 permalink: /guide/designing-products/design-resources/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/designing-products/design-resources/design-resources-preview.jpg
 files:
-  - caption: <a href="https://www.bitcoinuikit.com/">Bitcoin UI Kit</a>
-    alt: Home images of several mobile Bitcoin apps
+  - caption: <a href="https://www.bitcoinuikit.com/">bitcoin UI Kit</a>
+    alt: Home images of several mobile bitcoin apps
     image: /assets/images/guide/designing-products/design-resources/bitcoin-ui-kit.jpg
     retina: /assets/images/guide/designing-products/design-resources/bitcoin-ui-kit@2x.jpg
     width: 400
     height: 210
-  - caption: <a href="https://bitcoinicons.com/">Bitcoin icons</a>
+  - caption: <a href="https://bitcoinicons.com/">bitcoin icons</a>
     alt: A grid of diverse interface icons
     image: /assets/images/guide/designing-products/design-resources/bitcoin-icons.jpg
     retina: /assets/images/guide/designing-products/design-resources/bitcoin-icons@2x.jpg
     width: 400
     height: 210
-  - caption: <a href="https://www.figma.com/community/file/972290772932533325/Art-Meets-Bitcoin">Art meets Bitcoin</a>
-    alt: Collage of Bitcoin related illustration elements
+  - caption: <a href="https://www.figma.com/community/file/972290772932533325/Art-Meets-bitcoin">Art meets bitcoin</a>
+    alt: Collage of bitcoin related illustration elements
     image: /assets/images/guide/designing-products/design-resources/art-meets-bitcoin.jpg
     retina: /assets/images/guide/designing-products/design-resources/art-meets-bitcoin@2x.jpg
     width: 400
     height: 210
-  - caption: <a href="https://www.figma.com/community/file/946807598525782935/Bitcoin-hardware-%26-accessories">Hardware illustrations</a>
-    alt: Collction of Bitcoin hardware outline illustrations
+  - caption: <a href="https://www.figma.com/community/file/946807598525782935/bitcoin-hardware-%26-accessories">Hardware illustrations</a>
+    alt: Collction of bitcoin hardware outline illustrations
     image: /assets/images/guide/designing-products/design-resources/bitcoin-hardware-illustrations.jpg
     retina: /assets/images/guide/designing-products/design-resources/bitcoin-hardware-illustrations@2x.jpg
     width: 400
     height: 210
-  - caption: <a href="https://www.figma.com/community/file/862622015964353400/Bitcoin-Designers-site">bitcoin.design website</a>
+  - caption: <a href="https://www.figma.com/community/file/862622015964353400/bitcoin-Designers-site">bitcoin.design website</a>
     alt: Landing page of the bitcoin.design website
     image: /assets/images/guide/designing-products/design-resources/bitcoin-design-site.jpg
     retina: /assets/images/guide/designing-products/design-resources/bitcoin-design-site@2x.jpg
     width: 400
     height: 210
-  - caption: <a href="https://www.figma.com/community/file/972067335916375043/Bitcoin-Design-Slide-Template">Slide template</a>
+  - caption: <a href="https://www.figma.com/community/file/972067335916375043/bitcoin-Design-Slide-Template">Slide template</a>
     alt: Slide template cover screen
     image: /assets/images/guide/designing-products/design-resources/slide-template.jpg
     retina: /assets/images/guide/designing-products/design-resources/slide-template@2x.jpg
     width: 400
     height: 210
-  - caption: <a href="https://www.figma.com/community/file/1040606190770628557/Bitcoin-Design-Community-seal">Bitcoin Design Community seal</a><br/><a href="/assets/images/guide/designing-products/design-resources/bitcoin-design-community.zip" download>Download images</a>
-    alt: Bitcoin Design Community seal
+  - caption: <a href="https://www.figma.com/community/file/1040606190770628557/bitcoin-Design-Community-seal">bitcoin Design Community seal</a><br/><a href="/assets/images/guide/designing-products/design-resources/bitcoin-design-community.zip" download>Download images</a>
+    alt: bitcoin Design Community seal
     image: /assets/images/guide/designing-products/design-resources/bitcoin-design-community-seal.jpg
     retina: /assets/images/guide/designing-products/design-resources/bitcoin-design-community-seal@2x.jpg
     width: 400

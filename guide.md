@@ -3,7 +3,7 @@ layout: guide
 nav_order: 1
 title: Guide
 secondary_nav_title: Introduction
-description: The Bitcoin Design Guide is a reference for the design of Bitcoin applications.
+description: The Bitcoin Design Guide is a reference for the design of bitcoin applications.
 permalink: /guide/
 main_nav: true
 secondary_nav: true
@@ -39,13 +39,13 @@ Illustration sources
 
 # The Bitcoin design guide
 
-**Bitcoin is a global payment protocol that anyone with Internet access can participate in and contribute to. However, because Bitcoin’s use cases are as vast as its user base, building Bitcoin applications can be complicated.**
+**bitcoin is a global payment protocol that anyone with Internet access can participate in and contribute to. However, because bitcoin’s use cases are as vast as its user base, building bitcoin applications can be complicated.**
 
 We designed this guide to help anyone navigate those complexities—regardless of where they live or work. We can’t imagine every possible use case, but we can help you build for them.
 
 {% include tip/tip.html %}
 
-This guide is a work in progress. We are currently adding information about the [Lightning Network]({{ '/guide/glossary/#lightning-network' | relative_url }}) on all relevant pages. 
+This guide is a work in progress. We are currently adding information about the [Lightning Network]({{ '/guide/glossary/#lightning-network' | relative_url }}) on all relevant pages.
 
 You can track the progress on this [Github issue]({{ 'https://github.com/BitcoinDesign/Guide/issues/478' }}).
 
@@ -59,7 +59,7 @@ Provides top-level overviews of common visual language, technology, software, an
 
 ---
 
-### [Designing Bitcoin products]({{ '/guide/designing-products/introduction/' | relative_url }})
+### [Designing bitcoin products]({{ '/guide/designing-products/introduction/' | relative_url }})
 
 A close look at the design process, from the concept of open design to use cases and frameworks like the usage life cycle.
 
@@ -91,7 +91,7 @@ Explores approaches to diverse uses cases with wireframes, designs and prototype
 
 ### [Glossary]({{ '/guide/glossary/' | relative_url }})
 
-Helps you learn the most need-to-know Bitcoin terminology from Address to ZPUB
+Helps you learn the most need-to-know bitcoin terminology from Address to ZPUB
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Wallet
-description: This term is often used interchangeably for very different things relating to Bitcoin key and fund management.
+description: This term is often used interchangeably for very different things relating to bitcoin key and fund management.
 parent: Glossary
 nav_order: 2
 permalink: /guide/glossary/wallet/

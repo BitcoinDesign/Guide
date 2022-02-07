@@ -52,7 +52,7 @@ Finally, wallet owners need to label their incoming and outgoing (change) coins.
 
 ### Optimizations
 
-Whether an automated or manual process, coin selection is important when understanding how to optimize our Bitcoin payments for either cost, speed, or privacy. Below is a breakdown of the three most common effects of coin selection.
+Whether an automated or manual process, coin selection is important when understanding how to optimize our bitcoin payments for either cost, speed, or privacy. Below is a breakdown of the three most common effects of coin selection.
 
 #### Cost
 
@@ -64,13 +64,13 @@ Higher fees will increase the likelihood of your transaction being prioritized b
 
 #### Privacy
 
-Because each UTXO can be traced backward on a public ledger, we can unearth the digital footprints of Bitcoin payments. Privacy is often lost due to the exposure of unknown coins, addresses, balances, and economic activity to unrecognized trading partners. Privacy can be optimized by selecting transaction inputs from an anonymity set (CoinJoins or mixers) or a recognized label or cluster or reducing the size of change outputs.
+Because each UTXO can be traced backward on a public ledger, we can unearth the digital footprints of bitcoin payments. Privacy is often lost due to the exposure of unknown coins, addresses, balances, and economic activity to unrecognized trading partners. Privacy can be optimized by selecting transaction inputs from an anonymity set (CoinJoins or mixers) or a recognized label or cluster or reducing the size of change outputs.
 
 ## Automatic coin selection
 
-This strategy has arguably become the most popular form of coin selection used in Bitcoin wallets and applications. The application selects the coins on behalf of users to fulfill a payment request. As mentioned above, “fractions (of bitcoins) are retrieved by an algorithm to fulfill the payment amount”. This algorithm varies from wallet to wallet, and is dependent upon the desired outcome of optimisation.
+This strategy has arguably become the most popular form of coin selection used in bitcoin wallets and applications. The application selects the coins on behalf of users to fulfill a payment request. As mentioned above, “fractions (of bitcoins) are retrieved by an algorithm to fulfill the payment amount”. This algorithm varies from wallet to wallet, and is dependent upon the desired outcome of optimisation.
 
-Automatic selection strategies can provide a near frictionless user experience and are suitable for most introductory level Bitcoin wallets.
+Automatic selection strategies can provide a near frictionless user experience and are suitable for most introductory level bitcoin wallets.
 
 {% include picture.html
    image = "/assets/images/guide/payments/coin-selection/automatic-coin-selection.jpg"
@@ -132,7 +132,7 @@ A user chooses to send a payment to one of their contacts. They enter the amount
 
 ### Examples
 
-Below are some popular algorithms currently implemented by Bitcoin wallets that optimize for speed and lower fees:
+Below are some popular algorithms currently implemented by bitcoin wallets that optimize for speed and lower fees:
 
 #### First In First Out (FIFO) / Last In, First Out (LIFO)
 
@@ -210,21 +210,21 @@ Freezes certain coins or clusters from their wallet’s UTXO pool to either prio
 #### When not to use
 
 - When privacy is a top priority to users
-- When wanting to provide a more custom experience for Bitcoin transactions
+- When wanting to provide a more custom experience for bitcoin transactions
 
 #### Products that use this scheme
 
 {% include fact/products.html %}
-[BitcoinJ and Bitcoin Wallet for Android](https://bitcoinj.org/), [Bitcoin Core](https://bitcoin.org/en/bitcoin-core/), [Bread Wallet](https://brd.com/), [Electrum](https://electrum.org/#home), [Hexa Wallet](https://hexawallet.io/), and [Mycelium](https://wallet.mycelium.com/)
+[bitcoinJ and bitcoin Wallet for Android](https://bitcoinj.org/), [bitcoin Core](https://bitcoin.org/en/bitcoin-core/), [Bread Wallet](https://brd.com/), [Electrum](https://electrum.org/#home), [Hexa Wallet](https://hexawallet.io/), and [Mycelium](https://wallet.mycelium.com/)
 {% include fact/close.html %}
 
 ## Manual coin selection (a.k.a coin control)
 
 Manual coin selection gives users full control over exactly which coins or clusters they use to fund a transaction input for an outgoing payment request.
 
-Manual coin control is often an “opt-in” strategy, agreed to by users as they enter “Private Mode” or select “Manual Coin Selection” when creating an outgoing payment request. However, it is also possible for Bitcoin wallets to use manual coin control as their default coin selection strategy.
+Manual coin control is often an “opt-in” strategy, agreed to by users as they enter “Private Mode” or select “Manual Coin Selection” when creating an outgoing payment request. However, it is also possible for bitcoin wallets to use manual coin control as their default coin selection strategy.
 
-This strategy gives users the ability to choose what they wish to optimize for in Bitcoin transactions (cost, speed, or privacy). However, it’s worth noting that manual coin control, whilst beneficial to many, could also lead to expensive, slow, or revealing transactions if misused. Manual coin selection is an advanced feature and should be used (and designed) with caution.
+This strategy gives users the ability to choose what they wish to optimize for in bitcoin transactions (cost, speed, or privacy). However, it’s worth noting that manual coin control, whilst beneficial to many, could also lead to expensive, slow, or revealing transactions if misused. Manual coin selection is an advanced feature and should be used (and designed) with caution.
 
 {% include picture.html
    image = "/assets/images/guide/payments/coin-selection/manual-coin-selection.jpg"
