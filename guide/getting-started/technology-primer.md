@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Technology primer
-description: Learn the basics of Bitcoin technology in a series of simple explanations.
+description: Learn the basics of bitcoin technology in a series of simple explanations.
 nav_order: 10
 parent: Getting started
 permalink: /guide/getting-started/technology-primer/
@@ -47,26 +47,9 @@ Illustration sources
 
 # Bitcoin technology primer
 
-It can take many years to understand Bitcoin in every detail, but luckily you don't need to know everything to design great products. Let's look at the most important ideas and technologies behind Bitcoin by answering some basic questions.
+It can take many years to understand bitcoin in every detail, but luckily you don't need to know everything to design great products. Let's look at the most important ideas and technologies behind bitcoin by answering some basic questions.
 
-## Is it Bitcoin or bitcoin?
-
-<div class="center" markdown="1">
-
-{% include image.html
-   image = "/assets/images/guide/getting-started/technology/bitcoin-capitalization.jpg"
-   retina = "/assets/images/guide/getting-started/technology/bitcoin-capitalization@2x.jpg"
-   alt-text = "Bitcoin with lowercase and uppercase spelling"
-   width = 400
-   height = 400
-   layout = "float-right-desktop"
-%}
-
-It's both. Lowercase bitcoin refers to the currency. So you may have 1 bitcoin in your [wallet]({{ '/guide/getting-started/software/#wallets' | relative_url }}). Capitalized Bitcoin refers to the protocol and payment network.
-
-</div>
-
-## What is a bitcoin?
+## Bitcoin, the currency
 
 <div class="center" markdown="1">
 
@@ -79,13 +62,13 @@ It's both. Lowercase bitcoin refers to the currency. So you may have 1 bitcoin i
    layout = "float-right-desktop"
 %}
 
-You can own [fractions of 1 bitcoin]({{ '/guide/payments/units-and-symbols/' | relative_url }}), they are just numbers in a digital ledger of transactions. We call that ledger the Bitcoin blockchain. Transactions are used to assign bitcoin from one [address]({{ '/guide/glossary/address' | relative_url }}) to another. This process reduces the available balance of the sending address and increases the balance of the receiving address. A small amount has to be added as the fee to pay for the verification.
+You can own [fractions of 1 bitcoin]({{ '/guide/payments/units-and-symbols/' | relative_url }}), they are just numbers in a digital ledger of transactions. We call that ledger the bitcoin blockchain. Transactions are used to assign bitcoin from one [address]({{ '/guide/glossary/address' | relative_url }}) to another. This process reduces the available balance of the sending address and increases the balance of the receiving address. A small amount has to be added as the fee to pay for the verification.
 
 Therefore, owning a bitcoin means being in control of one or more addresses that have received bitcoin.
 
 </div>
 
-## What is the Bitcoin network?
+## Bitcoin, the network
 
 <div class="center" markdown="1">
 
@@ -98,7 +81,7 @@ Therefore, owning a bitcoin means being in control of one or more addresses that
    layout = "float-right-desktop"
 %}
 
-Just as the internet allows computers to exchange information, the Bitcoin network enables participants to exchange value. By running the [Bitcoin software]({{ '/guide/getting-started/software/#nodes' | relative_url }}), you are running a node connected to the Bitcoin network. Some nodes use [powerful computers]({{ '/guide/getting-started/hardware/#nodes' | relative_url }}) that compete to [verify transactions]({{'/guide/payments/transactions/' | relative_url }}) and update the blockchain for a reward. These nodes are called miners. Others are run by businesses like exchanges or merchants. They are also used by individuals making payments from mobile applications. Since [January 3rd, 2009](https://blockstream.info/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f){:target="_blank"}, every transfer of bitcoin has been permanently recorded in its shared global ledger.
+Just as the internet allows computers to exchange information, the bitcoin network enables participants to exchange value. By running the [bitcoin software]({{ '/guide/getting-started/software/#nodes' | relative_url }}), you are running a node connected to the bitcoin network. Some nodes use [powerful computers]({{ '/guide/getting-started/hardware/#nodes' | relative_url }}) that compete to [verify transactions]({{'/guide/payments/transactions/' | relative_url }}) and update the blockchain for a reward. These nodes are called miners. Others are run by businesses like exchanges or merchants. They are also used by individuals making payments from mobile applications. Since [January 3rd, 2009](https://blockstream.info/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f){:target="_blank"}, every transfer of bitcoin has been permanently recorded in its shared global ledger.
 
 </div>
 
@@ -115,7 +98,7 @@ Just as the internet allows computers to exchange information, the Bitcoin netwo
    layout = "float-right-desktop"
 %}
 
-Imagine a global spreadsheet where all transactions get recorded, and all entries are publicly accessible. With Bitcoin, each participant can [verify a transaction for themselves]({{ '/guide/getting-started/software/#explorers' | relative_url }}) in their copy of the spreadsheet. In comparison, traditional banks keep their spreadsheets private from each other and their customers. Besides opportunities for fraud, there are many points of failure due to this, so you can't guarantee a payment will always happen. Even though all transactions are stored publicly on Bitcoin, there is no personally identifiable information attached to them.
+Imagine a global spreadsheet where all transactions get recorded, and all entries are publicly accessible. With bitcoin, each participant can [verify a transaction for themselves]({{ '/guide/getting-started/software/#explorers' | relative_url }}) in their copy of the spreadsheet. In comparison, traditional banks keep their spreadsheets private from each other and their customers. Besides opportunities for fraud, there are many points of failure due to this, so you can't guarantee a payment will always happen. Even though all transactions are stored publicly on bitcoin, there is no personally identifiable information attached to them.
 
 With thousands of nodes and tens of millions of users worldwide, it becomes implausible to manipulate or corrupt the previously agreed-upon transactions stored in the blockchain. To do so would require a majority of nodes to accept such a change.
 </div>
@@ -133,7 +116,7 @@ With thousands of nodes and tens of millions of users worldwide, it becomes impl
    layout = "float-right-desktop"
 %}
 
-Instead of processing each transaction individually, the Bitcoin network bundles them into [blocks]({{'/guide/glossary/#block' | relative_url }}). A new block is created roughly every 10 minutes. A strict file size limit results in the transactions with the highest fees typically getting chosen first. Every new block must link to the one before it. Since this is a continuous process, a chain of blocks forms, hence the name blockchain.
+Instead of processing each transaction individually, the bitcoin network bundles them into [blocks]({{'/guide/glossary/#block' | relative_url }}). A new block is created roughly every 10 minutes. A strict file size limit results in the transactions with the highest fees typically getting chosen first. Every new block must link to the one before it. Since this is a continuous process, a chain of blocks forms, hence the name blockchain.
 
 Once a transaction is in a block that the network has accepted, it is considered to have one confirmation. With every new block created, the number of [confirmations]({{ '/guide/payments/transactions/#7-confirmations' | relative_url }}) increases.
 </div>
@@ -153,7 +136,7 @@ Once a transaction is in a block that the network has accepted, it is considered
 
 While miners check that the transactions included in the block are valid, they must also be kept accountable that the information they are submitting is correct. After a miner constructs a block transactions, it must race against other miners to solve a cryptographic puzzle, which incentivizes them to only include valid transactions in the block. This process is called Proof of Work, and it is fundamental to the security of the blockchain. The first miner to solve the puzzle and submit a valid block to the network will earn all the fees from the transactions in the block and a [block reward]({{ '/guide/glossary/#block-reward' | relative_url }}) as compensation; however, if they submit an invalid block, it will be rejected by the network.
 
-We also call the Bitcoin blockchain "base layer" as it provides strong security, and is the foundation for other things to be built on top.
+We also call the bitcoin blockchain "base layer" as it provides strong security, and is the foundation for other things to be built on top.
 
 **More info**
 - Mining [software]({{ '/guide/getting-started/software/#mining-software' | relative_url }}) and [hardware]({{ '/guide/getting-started/hardware/#mining-hardware' | relative_url }})
@@ -166,15 +149,15 @@ We also call the Bitcoin blockchain "base layer" as it provides strong security,
 {% include image.html
    image = "/assets/images/guide/getting-started/technology/layers.jpg"
    retina = "/assets/images/guide/getting-started/technology/layers@2x.jpg"
-   alt-text = "Other networks connected to the Bitcoin blockchain"
+   alt-text = "Other networks connected to the bitcoin blockchain"
    width = 400
    height = 400
    layout = "float-right-desktop"
 %}
 
-Layers in Bitcoin serve to provide alternative settlement rules. Bitcoin's block generation time of 10 minutes and the 1 MB size means that the blockchain can handle around 300 000 transactions per day or 4.6 transactions per second. Layer 1, the base layer, is the most secure, so it has the most time-consuming verification process.
+Layers in bitcoin serve to provide alternative settlement rules. Bitcoin's block generation time of 10 minutes and the 1 MB size means that the blockchain can handle around 300 000 transactions per day or 4.6 transactions per second. Layer 1, the base layer, is the most secure, so it has the most time-consuming verification process.
 
-To scale as a currency of the internet and meet the demands of the global economy, Bitcoin needs a way to handle fast and frequent payments. Such payments don't all need to be secured by every node and be added to the blockchain immediately. That is why a second layer is necessary to allow the delay of the base layer settlement.
+To scale as a currency of the internet and meet the demands of the global economy, bitcoin needs a way to handle fast and frequent payments. Such payments don't all need to be secured by every node and be added to the blockchain immediately. That is why a second layer is necessary to allow the delay of the base layer settlement.
 </div>
 
 ## How can you build on the base layer?
@@ -192,9 +175,9 @@ To scale as a currency of the internet and meet the demands of the global econom
 
 Transactions get verified and stored by the entire network of nodes and miners who must constantly verify, exchange, and secure transactions they receive from wallets and other services.
 
-While creating a transaction to move your funds from one address to another is common, setting up more complex spending rules is also possible. Such rules could require multiple parties to agree before moving funds, how much each is entitled to, and even the amount of time that must pass before a transfer. These transaction features make Bitcoin customizable so that it's possible to build other applications and even networks on top of the base layer.
+While creating a transaction to move your funds from one address to another is common, setting up more complex spending rules is also possible. Such rules could require multiple parties to agree before moving funds, how much each is entitled to, and even the amount of time that must pass before a transfer. These transaction features make bitcoin customizable so that it's possible to build other applications and even networks on top of the base layer.
 
-There are multiple scaling solutions built on top of Bitcoin's base layer, but we will be focusing on the Lightning Network in this guide.
+There are multiple scaling solutions built on top of bitcoin's base layer, but we will be focusing on the Lightning Network in this guide.
 
 **More info**
 - [Transaction lifecycle](/guide/payments/transactions/)
@@ -212,7 +195,7 @@ There are multiple scaling solutions built on top of Bitcoin's base layer, but w
 {% include image.html
    image = "/assets/images/guide/getting-started/technology/payment-channel.jpg"
    retina = "/assets/images/guide/getting-started/technology/payment-channel@2x.jpg"
-   alt-text = "Several payment channels settling on the Bitcoin blockchain"
+   alt-text = "Several payment channels settling on the bitcoin blockchain"
    width = 400
    height = 400
    layout = "float-right-desktop"
@@ -235,7 +218,7 @@ A payment channel is a [joint account]({{'/guide/glossary/#multi-signature-walle
    layout = "float-right-desktop"
 %}
 
-The Lightning network is a network of payment channels. Lightning nodes allow you to have multiple channels with different parties to route payments through. This new network forms a second layer on top of Bitcoin and has some privacy benefits too since payments are not individually recorded on the blockchain. Only when the channel is opened and the final settlement transaction gets broadcasted when closing the payment channel.
+The Lightning network is a network of payment channels. Lightning nodes allow you to have multiple channels with different parties to route payments through. This new network forms a second layer on top of bitcoin and has some privacy benefits too since payments are not individually recorded on the blockchain. Only when the channel is opened and the final settlement transaction gets broadcasted when closing the payment channel.
 </div>
 
 ## What are ways to receive bitcoin?
@@ -310,20 +293,20 @@ Lightning node private keys are referred to as hot as they are stored on a devic
 
 ### There's a lot more
 
-These are some of the basic technical concepts that make Bitcoin work. Each one individually is complex, and the interplay between them is a whole other area of interest. Dive into the other chapters in this guide to explore the technology and its applications in more detail.
+These are some of the basic technical concepts that make bitcoin work. Each one individually is complex, and the interplay between them is a whole other area of interest. Dive into the other chapters in this guide to explore the technology and its applications in more detail.
 
 <div class="center" markdown="1">
 
 {% include image.html
    image = "/assets/images/guide/getting-started/technology/whitepaper.jpg"
    retina = "/assets/images/guide/getting-started/technology/whitepaper@2x.jpg"
-   alt-text = "Illustration of the first page of the Bitcoin white paper"
+   alt-text = "Illustration of the first page of the bitcoin white paper"
    width = 400
    height = 400
    layout = "float-right-desktop"
 %}
 
-Now, if you'd like to go all the way to the beginning of Bitcoin, the most fundamental read is the [Bitcoin whitepaper](https://bitcoin.org/bitcoin.pdf){:target="_blank"}. Published on October 31, 2008, by the mysterious Satoshi Nakamoto, it lays out the fundamental system design in only nine short pages. It is not necessarily an easy read, but still highly recommended reading.
+Now, if you'd like to go all the way to the beginning of bitcoin, the most fundamental read is the [bitcoin whitepaper](https://bitcoin.org/bitcoin.pdf){:target="_blank"}. Published on October 31, 2008, by the mysterious Satoshi Nakamoto, it lays out the fundamental system design in only nine short pages. It is not necessarily an easy read, but still highly recommended reading.
 </div>
 
 ---

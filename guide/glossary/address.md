@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Address
-description: A Bitcoin address is an identifier of 26-35 alphanumeric characters that is used to receive bitcoin
+description: A bitcoin address is an identifier of 26-35 alphanumeric characters that is used to receive bitcoin
 parent: Glossary
 nav_order: 1
 permalink: /guide/glossary/address/
@@ -31,7 +31,7 @@ https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=25%3A2
 %}
 
 # Address
-A Bitcoin address is an 26-35 alphanumeric character identifier that is used to receive bitcoin. There are [several address formats](https://en.bitcoin.it/wiki/Invoice_address) based on different specifications.
+A bitcoin address is an 26-35 alphanumeric character identifier that is used to receive bitcoin. There are [several address formats](https://en.bitcoin.it/wiki/Invoice_address) based on different specifications.
 
 When users enter an address, these formats have specific prefixes so it is possible to determine which format is being used.
 
@@ -39,7 +39,7 @@ Below are common address formats used today:
 
 ### Legacy address - [P2PKH](https://en.bitcoin.it/wiki/Transaction#Pay-to-PubkeyHash)
 
-A pay-to-pubkey-hash (P2PKH), or legacy address, is the oldest and original Bitcoin address format. This address format is not widely used today as transaction costs are higher using this format. However, support for this in applications is still encouraged as to be compatible with older legacy wallets that have not upgraded to new address formats.
+A pay-to-pubkey-hash (P2PKH), or legacy address, is the oldest and original bitcoin address format. This address format is not widely used today as transaction costs are higher using this format. However, support for this in applications is still encouraged as to be compatible with older legacy wallets that have not upgraded to new address formats.
 
 Legacy addresses begin with the number 1, can contain upper and lowercase characters, and are case sensitive.
 
@@ -65,9 +65,9 @@ Example: `bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq`
 
 ### Taproot address - [P2TR](https://en.bitcoin.it/wiki/Bech32)
 
-A pay-to-taproot (P2TR), also known as a Taproot or Bech32m address, is the most recent and advanced Bitcoin address format. Taproot introduces more advanced security, privacy, flexibility and scaling to Bitcoin. Like SegWit, Taproot addresses are opt-in and they are not currently widely supported. Taproot adoption can be tracked [here](https://en.bitcoin.it/wiki/Bech32_adoption).
+A pay-to-taproot (P2TR), also known as a Taproot or Bech32m address, is the most recent and advanced bitcoin address format. Taproot introduces more advanced security, privacy, flexibility and scaling to bitcoin. Like SegWit, Taproot addresses are opt-in and they are not currently widely supported. Taproot adoption can be tracked [here](https://en.bitcoin.it/wiki/Bech32_adoption).
 
-Benefits of Taproot include the ability to use Schnorr Signatures offering better security, lower fees, and more flexible [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}) transactions. Multi-key addresses using P2TR look the same as single-key addresses giving users of multi-key increased privacy. Taproot also enables more advanced scripting which enables more complex smart contracts to be built on Bitcoin.
+Benefits of Taproot include the ability to use Schnorr Signatures offering better security, lower fees, and more flexible [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}) transactions. Multi-key addresses using P2TR look the same as single-key addresses giving users of multi-key increased privacy. Taproot also enables more advanced scripting which enables more complex smart contracts to be built on bitcoin.
 
 Taproot addresses start with `bc1p` and are case insensitive.
 
@@ -75,7 +75,7 @@ Example: `bc1pmzfrwwndsqmk5yh69yjr5lfgfg4ev8c0tsc06e`
 
 ### Change address
 
-When the output of a transaction is used as the input of another transaction, it must be spent entirely. Sometimes the value of the output is higher than what the user wishes to pay. In this case, the bitcoin client generates a new Bitcoin address, and sends the difference back to this address. This is known as *change address*. The change address format used will usually be the default format used by the wallet application.
+When the output of a transaction is used as the input of another transaction, it must be spent entirely. Sometimes the value of the output is higher than what the user wishes to pay. In this case, the bitcoin client generates a new bitcoin address, and sends the difference back to this address. This is known as *change address*. The change address format used will usually be the default format used by the wallet application.
 
 ## Address compatibility
 
@@ -101,7 +101,7 @@ The receiver should then have the ability to switch to a Script or Taproot addre
 
 ---
 
-Next, learn about the different kinds of [wallets]({{ '/guide/glossary/wallet/' | relative_url }}) that exist with Bitcoin.
+Next, learn about the different kinds of [wallets]({{ '/guide/glossary/wallet/' | relative_url }}) that exist with bitcoin.
 
 {% include next-previous.html
    previousUrl = "/guide/glossary/"

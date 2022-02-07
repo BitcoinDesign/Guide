@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Multi-key
-description: Learn the basics of multi-signature Bitcoin wallets.
+description: Learn the basics of multi-signature bitcoin wallets.
 nav_order: 6
 parent: Private key management
 permalink: /guide/private-key-management/multi-key/
@@ -105,7 +105,7 @@ A software wallet application or coordination software initiates a multi-sig wal
 
 ---
 
-OK, to end this chapter let's have a look at how to do safe [Bitcoin backups]({{ '/guide/private-key-management/backups/' | relative_url }}).
+OK, to end this chapter let's have a look at how to do safe [bitcoin backups]({{ '/guide/private-key-management/backups/' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/private-key-management/external-signers/"

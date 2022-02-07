@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Payment request formats
-description: An introduction to the different Bitcoin payment request formats.
+description: An introduction to the different bitcoin payment request formats.
 nav_order: 1
 grand_parent: Payments
 parent: Requesting bitcoin

@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Units & Symbols
-description: How to display and format bitcoin and currency units in Bitcoin applications.
+description: How to display and format bitcoin and currency units in bitcoin applications.
 nav_order: 4
 parent: Payments
 permalink: /guide/payments/units-and-symbols/
@@ -9,7 +9,7 @@ main_classes: -no-top-padding
 image_base: /assets/images/guide/payments/units-and-symbols/
 images_app:
     - file: settings
-      alt: Mobile phone screen showing settings of a Bitcoin application
+      alt: Mobile phone screen showing settings of a bitcoin application
       caption: Customizing balance display should be available in the app settings.
     - file: settings-bitcoin-units
       alt: Mobile phone screen showing unit options for the display of bitcoin amounts.

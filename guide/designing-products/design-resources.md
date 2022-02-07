@@ -3,13 +3,13 @@ layout: guide
 title: Design resources
 description: Design files by and for the Bitcoin Design Community
 nav_order: 10
-parent: Designing Bitcoin products
+parent: Designing bitcoin products
 permalink: /guide/designing-products/design-resources/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/designing-products/design-resources/design-resources-preview.jpg
 files:
   - caption: <a href="https://www.bitcoinuikit.com/">Bitcoin UI Kit</a>
-    alt: Home images of several mobile Bitcoin apps
+    alt: Home images of several mobile bitcoin apps
     image: /assets/images/guide/designing-products/design-resources/bitcoin-ui-kit.jpg
     retina: /assets/images/guide/designing-products/design-resources/bitcoin-ui-kit@2x.jpg
     width: 400
@@ -20,14 +20,14 @@ files:
     retina: /assets/images/guide/designing-products/design-resources/bitcoin-icons@2x.jpg
     width: 400
     height: 210
-  - caption: <a href="https://www.figma.com/community/file/972290772932533325/Art-Meets-Bitcoin">Art meets Bitcoin</a>
-    alt: Collage of Bitcoin related illustration elements
+  - caption: <a href="https://www.figma.com/community/file/972290772932533325/Art-Meets-Bitcoin">Art meets bitcoin</a>
+    alt: Collage of bitcoin related illustration elements
     image: /assets/images/guide/designing-products/design-resources/art-meets-bitcoin.jpg
     retina: /assets/images/guide/designing-products/design-resources/art-meets-bitcoin@2x.jpg
     width: 400
     height: 210
   - caption: <a href="https://www.figma.com/community/file/946807598525782935/Bitcoin-hardware-%26-accessories">Hardware illustrations</a>
-    alt: Collction of Bitcoin hardware outline illustrations
+    alt: Collction of bitcoin hardware outline illustrations
     image: /assets/images/guide/designing-products/design-resources/bitcoin-hardware-illustrations.jpg
     retina: /assets/images/guide/designing-products/design-resources/bitcoin-hardware-illustrations@2x.jpg
     width: 400

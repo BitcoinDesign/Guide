@@ -28,7 +28,7 @@ Join our open community and help us improve the Bitcoin Design Guide. Here’s w
 
 ### [Slack channel]({{ site.slack_invite_url }})
 
-Head over to the Bitcoin [Bitcoin Design Slack community]({{ site.slack_invite_url }}) and join the #bitcoin-design-guide channel. If you don’t have Slack, you can [download it here](https://slack.com/intl/en-rs/downloads) or on the App Store.
+Head over to the [Bitcoin Design Slack community]({{ site.slack_invite_url }}) and join the #bitcoin-design-guide channel. If you don’t have Slack, you can [download it here](https://slack.com/intl/en-rs/downloads) or on the App Store.
 
 
 ---

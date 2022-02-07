@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Upgradeable account
-description: UX case study for a Bitcoin wallet with multiple private key management schemes.
+description: UX case study for a bitcoin wallet with multiple private key management schemes.
 nav_order: 3
 parent: Case studies
 permalink: /guide/case-studies/upgradeable-wallet/

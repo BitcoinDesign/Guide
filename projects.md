@@ -9,7 +9,7 @@ main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/projects/projects-preview.jpg
 projects:
   - name: Bitcoin Design Guide
-    description: The primary project we are working on, a resource for designers to create better Bitcoin products faster.
+    description: The primary project we are working on, a resource for designers to create better bitcoin products faster.
     image:
       url: /assets/images/contribute/bitcoin-design-guide.svg
       width: 75
@@ -20,7 +20,7 @@ projects:
       - name: How to contribute
         link: https://bitcoin.design/guide/contribute/
   - name: Bitcoin icon set
-    description: Icons for typical needs of Bitcoin applications. Includes common generic icons like arrows, and more unique ones like a wallet, keys, mining, and Bitcoin symbols.
+    description: Icons for typical needs of bitcoin applications. Includes common generic icons like arrows, and more unique ones like a wallet, keys, mining, and bitcoin symbols.
     image:
       url: /assets/images/contribute/bitcoin-icon-set.svg
       width: 75
@@ -125,7 +125,7 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 
 # Projects
 
-We don't just chat about design. We also actively improve design in the Bitcoin ecosystem. Projects launched by community members often focus on creating design resources. With collaborations, we try to help other Bitcoin projects improve their products' design and user experience. For more details, see our [Collaboration](https://github.com/BitcoinDesign/Meta/blob/master/Collaboration.md) and [Project](https://github.com/BitcoinDesign/Meta/blob/master/Projects.md) documents. If you are interested in getting involved, reach out directly to the projects below, or reach out in our [Slack]({{ site.slack_invite_url }}).
+We don't just chat about design. We also actively improve design in the bitcoin ecosystem. Projects launched by community members often focus on creating design resources. With collaborations, we try to help other bitcoin projects improve their products' design and user experience. For more details, see our [Collaboration](https://github.com/BitcoinDesign/Meta/blob/master/Collaboration.md) and [Project](https://github.com/BitcoinDesign/Meta/blob/master/Projects.md) documents. If you are interested in getting involved, reach out directly to the projects below, or reach out in our [Slack]({{ site.slack_invite_url }}).
 
 ## Community projects
 

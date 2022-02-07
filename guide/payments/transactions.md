@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Transactions overview
-description: An overview of Bitcoin transactions, common concepts, and the transaction lifecycle.
+description: An overview of bitcoin transactions, common concepts, and the transaction lifecycle.
 nav_order: 5
 parent: Payments
 permalink: /guide/payments/transactions/
@@ -38,23 +38,23 @@ Illustration sources
 
 # Transactions overview
 
-This page is meant to help you understand how users' transactions get created and processed by the Bitcoin and Lightning networks. Bitcoin is a peer-to-peer push-payment system. This means that you can send, or push, bitcoin at any time, without passing through a trusted third party.
+This page is meant to help you understand how users' transactions get created and processed by the bitcoin and Lightning networks. Bitcoin is a peer-to-peer push-payment system. This means that you can send, or push, bitcoin at any time, without passing through a trusted third party.
 
 This is radically different from the traditional financial system, where it is often possible for others to pull and withdraw money from your account (utility companies, financial institutions, merchants, etc.). When you make a payment, it will pass through systems that might delay, control or block the payment.
 
 {% include tip/open.html color="blue" icon="info" label="A note about terminology" %}
 
-In most places in the Guide, the term **"transaction"** and **"payment"** are used interchangeably. For the remainder of this page, the term transaction refers specifically to on-chain Bitcoin transactions, and the term payment refers specifically to payments routed over the Lightning network.
+In most places in the Guide, the term **"transaction"** and **"payment"** are used interchangeably. For the remainder of this page, the term transaction refers specifically to on-chain bitcoin transactions, and the term payment refers specifically to payments routed over the Lightning network.
 
 {% include tip/close.html %}
 
-## Comparing Bitcoin and Lightning
+## Comparing bitcoin and Lightning
 
 | Bitcoin          | Lightning |
 |-------------|------------------|
-| Users send Bitcoin *[transactions]({{'/guide/glossary/#transaction' | relative_url}})*. | Users send Lightning *[payments]({{'/guide/glossary/#payment' | relative_url}})*.  |
+| Users send bitcoin *[transactions]({{'/guide/glossary/#transaction' | relative_url}})*. | Users send Lightning *[payments]({{'/guide/glossary/#payment' | relative_url}})*.  |
 | Bitcoin transactions are settled on average every 10 minutes. | Lightning payments are settled almost instantly.  |
-| A valid Bitcoin transaction will always be mined, but may be delayed if the fee is too low. | A successful Lightning payment depends on Lightning network liquidity and finding a path to the recipient. |
+| A valid bitcoin transaction will always be mined, but may be delayed if the fee is too low. | A successful Lightning payment depends on Lightning network liquidity and finding a path to the recipient. |
 | Bitcoin is typically better for larger amounts of funds and less frequent transactions. | Lightning is typically better for smaller amounts of funds and more frequent payments. |
 
 For a more detailed look, see the [Technology Primer]({{'/guide/getting-started/technology-primer/' | relative_url}}).
@@ -112,7 +112,7 @@ Some things are accomplished better on-chain. For example, the user's wallet app
 %}
 
 ### 1. Get recipient address
-The sender needs a valid address to send the Bitcoin transaction to. The recipient can share the address as a QR code, over NFC, in plain text, or as a payment link.
+The sender needs a valid address to send the bitcoin transaction to. The recipient can share the address as a QR code, over NFC, in plain text, or as a payment link.
 
 Note that the recipient does not always need to produce the address manually. For example, an ecommerce site could generate addresses automatically on behalf of the recipient. The recipient could rely on a static address QR code, but this is not recommended for good transaction privacy.
 
@@ -123,7 +123,7 @@ The wallet application guides the sender through collecting the required informa
 The transaction needs to be signed by the [private key(s)]({{ '/guide/glossary/#private-key' | relative_url }}) of the input [address(es)]({{ '/guide/glossary/address' | relative_url }}) to be valid. The signing is often done in the same application after the transaction has been created and configured, but this does not have to be the case.
 
 ### 4. Broadcasting
-The transaction is broadcasted to a Bitcoin node, normally the one the wallet is connected to.
+The transaction is broadcasted to a bitcoin node, normally the one the wallet is connected to.
 
 ### 5. Validation
 The receiving node checks that the transaction is valid. In practice, this means confirming that it was signed by the private key of the relevant address.
@@ -135,7 +135,7 @@ Once validated, the node passes the transaction on to other nodes in the network
 ### 7. Confirmations
 Given that you know [how transactions are confirmed]({{ '/guide/getting-started/technology-primer/#how-is-the-blockchain-secured' | relative_url }}), lets look at how the number of confirmations affects the transaction settlement.
 
-Not every miner creates the new block with the same transactions, so some nodes may have a different version of the blockchain than others for a short time. The Bitcoin protocol's main function is to bring all nodes to the same version of the blockchain. Through a process called chain reorganization, nodes remove their incorrect block and update with the winning block as determined by the majority of other nodes.
+Not every miner creates the new block with the same transactions, so some nodes may have a different version of the blockchain than others for a short time. The bitcoin protocol's main function is to bring all nodes to the same version of the blockchain. Through a process called chain reorganization, nodes remove their incorrect block and update with the winning block as determined by the majority of other nodes.
 
 There is a slight risk that a transaction with 1 confirmation may revert to 0 confirmations when a chain reorganization occurs. Due to this, some parties may require more confirmations for the transaction before providing the product or service.
 
@@ -145,7 +145,7 @@ It is widely accepted that after 6 confirmations, no other reorganizations can a
 
 ## Transaction structure
 
-Think of a Bitcoin transaction as a file that contains the authorizations to spend some bitcoin, as well as the payment details of the recipient(s). Once miners get the transaction they check all the details once more before they include it into a block.
+Think of a bitcoin transaction as a file that contains the authorizations to spend some bitcoin, as well as the payment details of the recipient(s). Once miners get the transaction they check all the details once more before they include it into a block.
 
 The principal properties are:
 
@@ -157,7 +157,7 @@ The principal properties are:
 
 ### Input and outputs
 
-In a Bitcoin wallet, funds are often not held in a single address, but more commonly in one address per transaction where you previously received bitcoin. When you are creating a transaction you need to specify which of your addresses you would like to use to fund it. If you need to spend more than what a single address holds, you can specify several. These are called *inputs* to the transaction.
+In a bitcoin wallet, funds are often not held in a single address, but more commonly in one address per transaction where you previously received bitcoin. When you are creating a transaction you need to specify which of your addresses you would like to use to fund it. If you need to spend more than what a single address holds, you can specify several. These are called *inputs* to the transaction.
 
 Likewise, you need to specify the destination address or addresses for the transaction. These are called *outputs*. Should there be more bitcoin in the inputs than are needed for the payment, a new address will be created in your wallet for the remaining change, often called a *change output*.
 

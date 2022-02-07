@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Manual backup
-description: An explainer of manual backup for recovery phrases of Bitcoin wallets.
+description: An explainer of manual backup for recovery phrases of bitcoin wallets.
 nav_order: 3
 parent: Private key management
 permalink: /guide/private-key-management/manual-backup/
@@ -35,7 +35,7 @@ https://www.figma.com/community/file/995256542920917246/BDG---Private-key-manage
 
 # Manual backup / Recovery phrase
 
-Manual backup of the [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) has been the most common private key management scheme by far since its proposal with [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) in 2013. If you have used any [non-custodial]({{ '/guide/glossary/wallet/#non-custodial--custodial-wallet' | relative_url }}) Bitcoin application, you are likely to have experienced the onboarding requirements of manual backups.
+Manual backup of the [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) has been the most common private key management scheme by far since its proposal with [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) in 2013. If you have used any [non-custodial]({{ '/guide/glossary/wallet/#non-custodial--custodial-wallet' | relative_url }}) bitcoin application, you are likely to have experienced the onboarding requirements of manual backups.
 
 When creating a new wallet, users will be asked to manually write down a backup of a 12 or 24 word recovery phrase to a *safe place*. Often, as the next step, it will ask you to verify that you did save it by having you input the recovery phrase in the correct order. Additionally, some wallets may use a [passphrase]({{'/guide/glossary/#passphrase' | relative_url}}) that can be defined by the user.
 
@@ -46,7 +46,7 @@ The wallet application will generate a 12 or 24 word [recovery phrase]({{ '/guid
 
 This can be an effective way to reduce the risk of loss from theft if the backup is offline in a safe place, but puts more of the burden on the individual user. The security and risk will only be as good as how they backup the recovery phrase.
 
-Safe backups can be made fairly simple. Take a look at our [Bitcoin backups]({{ '/guide/private-key-management/backups/' | relative_url }}) guide as a good starting point.
+Safe backups can be made fairly simple. Take a look at our [bitcoin backups]({{ '/guide/private-key-management/backups/' | relative_url }}) guide as a good starting point.
 
 {% include fact/pros.html %}
 

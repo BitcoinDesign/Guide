@@ -28,11 +28,11 @@ Illustration source
 
 # Payments
 
-At its core, Bitcoin enables payments between people without intermediaries, regardless of where in the world they are.
+At its core, bitcoin enables payments between people without intermediaries, regardless of where in the world they are.
 
 This chapter covers bitcoin payment design considerations when building mobile bitcoin applications. Including what they are, how they work and the best practices for designing these user flows.
 
-We have already established that [Bitcoin is money]({{ '/guide/getting-started/why-bitcoin-is-unique/#its-money-but-digital' | relative_url }}), so let's dive into how it can be used to make payments.
+We have already established that [bitcoin is money]({{ '/guide/getting-started/why-bitcoin-is-unique/#its-money-but-digital' | relative_url }}), so let's dive into how it can be used to make payments.
 
 ---
 
@@ -50,7 +50,7 @@ An introduction to how sending bitcoin works.
 
 ### [Privacy]({{ '/guide/payments/privacy/' | relative_url }})
 
-An overview of how to help users maintain transaction privacy with Bitcoin.
+An overview of how to help users maintain transaction privacy with bitcoin.
 
 ---
 
@@ -62,7 +62,7 @@ The basics on units and currency symbols, how to format them and what options to
 
 ### [Transactions overview]({{ '/guide/payments/transactions/' | relative_url }})
 
-An overview of Bitcoin payments, common concepts, and the transaction lifecycle.
+An overview of bitcoin payments, common concepts, and the transaction lifecycle.
 
 ---
 

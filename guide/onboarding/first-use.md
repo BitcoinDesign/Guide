@@ -50,9 +50,9 @@ Alternative approaches can be to wait and prompt the user only once there are fu
 
 ### Creating a wallet
 
-[Bitcoin wallets]({{ 'guide/glossary/#wallet' | relative_url }}) contain the private keys to a user’s bitcoin. Private keys let users access bitcoin associated with those keys. If the user does not have a Bitcoin wallet already that they want to restore, it is necessary to create a new one.
+[Bitcoin wallets]({{ 'guide/glossary/#wallet' | relative_url }}) contain the private keys to a user’s bitcoin. Private keys let users access bitcoin associated with those keys. If the user does not have a bitcoin wallet already that they want to restore, it is necessary to create a new one.
 
-Like regular keys on a keychain, Bitcoin private keys can be copied. This makes [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) one of the most important considerations of any bitcoin owner. Bitcoin wallet applications should automatically generate the user’s private keys locally, meaning they are only generated and stored on the device and not by the wallet provider, during onboarding.
+Like regular keys on a keychain, bitcoin private keys can be copied. This makes [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) one of the most important considerations of any bitcoin owner. Bitcoin wallet applications should automatically generate the user’s private keys locally, meaning they are only generated and stored on the device and not by the wallet provider, during onboarding.
 
 <div class="center" markdown="1">
 
@@ -83,7 +83,7 @@ While this may sound daunting to first-time users, these caveats mustn't be hidd
 
 Ideally your application supports both the base layer and the Lightning network. When talking about backups, you should be clear on what is possible and required in terms of restoring the user’s wallet from a backup.
 
-Some studies suggest that users struggled greatly with technical terminology and feeling as though they had a lack of guidance during wallet setup. By walking users through single steps that clearly frame the features of self-custodial Bitcoin wallets, users will feel well-equipped to navigate and use the wallet confidently.
+Some studies suggest that users struggled greatly with technical terminology and feeling as though they had a lack of guidance during wallet setup. By walking users through single steps that clearly frame the features of self-custodial bitcoin wallets, users will feel well-equipped to navigate and use the wallet confidently.
 
 > Users reported that they often felt like they lacked guidance and understanding during wallet setup
 >

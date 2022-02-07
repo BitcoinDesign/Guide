@@ -2,7 +2,7 @@
 layout: guide
 title: Getting to know your users
 description: How best to understand and develop knowledge about your users.
-parent: Designing Bitcoin products
+parent: Designing bitcoin products
 nav_order: 7
 permalink: /guide/designing-products/getting-to-know-your-users/
 redirect_from:
@@ -33,22 +33,22 @@ header: https://www.figma.com/file/eepTzz238Jkb5WAt5DTWw8/getting-to-know-your-u
 %}
 
 # Getting to know your users
-When building Bitcoin applications, it is important to understand and develop knowledge about your users upfront. Within the Bitcoin ecosystem, there is a wide range in the level of expertise. Identifying who you are building for is crucial, as these user groups value and understand varying characteristics of coin and key management tools. For example, [research](https://voskart.de/pdf/bits_under_mattress.pdf) suggests “rookies” often favor convenient, easy-to-use wallets, while well-versed bitcoin owners tend to prioritize security.
+When building bitcoin applications, it is important to understand and develop knowledge about your users upfront. Within the bitcoin ecosystem, there is a wide range in the level of expertise. Identifying who you are building for is crucial, as these user groups value and understand varying characteristics of coin and key management tools. For example, [research](https://voskart.de/pdf/bits_under_mattress.pdf) suggests “rookies” often favor convenient, easy-to-use wallets, while well-versed bitcoin owners tend to prioritize security.
 
 
 ## Observe your potential users
 This observation could take the form of [user research]({{ 'guide/designing-products/user-research/' | relative_url }}), user interviews and surveys aimed at a range of participants to observe and identify what they do, how they think, and what they want. Let’s consider some things you might want to ask yourself when improving the experience for new users:
 
 
-* [What is their perception of Bitcoin?](https://docs.google.com/forms/d/e/1FAIpQLSdzT8cb54NgT7hGUnC_5ow6rDy-A9p_CA-5ptiQxrG8wQWvzQ/viewform)
-* Why do they intend to use Bitcoin, investment, savings or spending?
+* [What is their perception of bitcoin?](https://docs.google.com/forms/d/e/1FAIpQLSdzT8cb54NgT7hGUnC_5ow6rDy-A9p_CA-5ptiQxrG8wQWvzQ/viewform)
+* Why do they intend to use bitcoin, investment, savings or spending?
 * Where do they prefer to store most of their value, mobile or desktop wallets?
 * Where do they experience frustration?
 * Where does the first experience take place?
 * How did they hear about my application? Word of mouth? App store search?
 * Do first-time users have specific needs or goals?
 
-Perhaps after research, you identify your users as "cypherpunks" with sound knowledge of Bitcoin, but they are new to your app. You might build an experience that preserves as much of their [privacy](/guide/designing-products/principles/#privacy) as possible and is super customizable from the outset.
+Perhaps after research, you identify your users as "cypherpunks" with sound knowledge of bitcoin, but they are new to your app. You might build an experience that preserves as much of their [privacy](/guide/designing-products/principles/#privacy) as possible and is super customizable from the outset.
 
 Aim to gather as much information and observations as possible in order to empathize with your users.
 
@@ -66,7 +66,7 @@ The uncovering of this scenario could be the result of a [user interview](https:
 
 Barriers are anything that the user perceives as preventing them from achieving their desired goals.
 
-Motivators are specific user wants that are driving the user to seek out Bitcoin in the first place.
+Motivators are specific user wants that are driving the user to seek out bitcoin in the first place.
 
 ### Barriers
 
@@ -180,7 +180,7 @@ Savings is a big motivator for Josh and so you should have a big focus on securi
 This is a good opportunity to circle back and find out deeper things about a user like Josh:
  - How big is the amount he's likely to save?
  - What are the unique security concerns in this cultural context?
- - How do Nigerians typically convert their fiat to Bitcoin?
+ - How do Nigerians typically convert their fiat to bitcoin?
 
 It's important to allow you and your team to be as free and creative about how you might solve these unmet needs. No idea is too "out there". Gather as many ideas as possible and build upon each other's ideas as you move along. Also, look for existing research and findings to compare against what you have found and check for any similarities.
 

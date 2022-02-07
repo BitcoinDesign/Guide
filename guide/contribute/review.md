@@ -24,7 +24,7 @@ main_classes: -no-top-padding
 
 Peer-review is fundamental for open-source projects. The review process happens in the open, and anyone can preview and assess proposed changes.
 
-Reviewing is a great entry point for new contributors. By inspecting others' work, you can get a better insight into the project, familiarize yourself with our processes and learn about Bitcoin.
+Reviewing is a great entry point for new contributors. By inspecting others' work, you can get a better insight into the project, familiarize yourself with our processes and learn about bitcoin.
 
 {% include youtube.html id="OXPReIz9HMs" %}
 

@@ -10,7 +10,7 @@ image: https://bitcoin.design/assets/images/submit-header-design-preview.jpg
 
 # How to submit a home page banner theme design
 
-If you have arrived on this page, you probably noticed that the banner of the home page of the Bitcoin Design community features a series of different designs. Those were all created by different community members, like you. It is important for us to show that Bitcoin is not just one idea, or has to follow one style, or have one specific personality. That's why we decided to create this open canvas right on the top of our home page.
+If you have arrived on this page, you probably noticed that the banner of the home page of the Bitcoin Design community features a series of different designs. Those were all created by different community members, like you. It is important for us to show that bitcoin is not just one idea, or has to follow one style, or have one specific personality. That's why we decided to create this open canvas right on the top of our home page.
 
 {% include image.html
    image = "/assets/images/home/banner/examples.jpg"
@@ -121,7 +121,7 @@ Once you have an idea for your theme and want to make it real, then the best way
    label = "View Figma file"
 %}
 
-Once your design is in good shape and you'd like to get some first feedback from the Bitcoin Design community, you have two options. You can either post a link or screenshot with some background information to the #design-review channel in our Slack workspace. Or you can [create a Github issue](https://github.com/BitcoinDesign/Guide/issues){:target="_blank"}. Or you can do both, as you prefer.
+Once your design is in good shape and you'd like to get some first feedback from the Bitcoin Design Community, you have two options. You can either post a link or screenshot with some background information to the #design-review channel in our Slack workspace. Or you can [create a Github issue](https://github.com/BitcoinDesign/Guide/issues){:target="_blank"}. Or you can do both, as you prefer.
 
 Please note that not all designs will make it to the live site. You need rough consensus (see our general [project life cycle](https://github.com/BitcoinDesign/Meta/blob/master/Projects.md)) from the community. So before you start implementing your theme, it is a good idea to get some feedback first. Please also make sure you respect any copyrights and licenses if you are using resources from others.
 

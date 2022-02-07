@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Protecting a wallet
-description: How extra layers of security can be added to Bitcoin applications via PINs, Face Id, and other techniques.
+description: How extra layers of security can be added to bitcoin applications via PINs, Face Id, and other techniques.
 parent: Onboarding
 nav_order: 4
 permalink: /guide/onboarding/protecting-a-wallet/

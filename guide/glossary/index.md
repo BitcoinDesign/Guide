@@ -41,7 +41,7 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 ---
 
 ### [Address]({{ "/guide/glossary/address" | relative_url }})
-A Bitcoin address is an identifier of 26-35 alphanumeric characters that is used to receive bitcoin. There are [several address formats](https://en.bitcoin.it/wiki/List_of_address_prefixes) based on different specifications. Users need to know this information during backup for future recovery so applications should inform users which format it uses as support varies across applications.
+A bitcoin address is an identifier of 26-35 alphanumeric characters that is used to receive bitcoin. There are [several address formats](https://en.bitcoin.it/wiki/List_of_address_prefixes) based on different specifications. Users need to know this information during backup for future recovery so applications should inform users which format it uses as support varies across applications.
 
 [Read more]({{ "/guide/glossary/address" | relative_url }})
 
@@ -54,32 +54,28 @@ Differentiate between
 - Bitcoin wallet account
 - Service account
 
-### Bitcoin / bitcoin
-
-Bitcoin with a capital *B* is typically associated with Bitcoin the protocol and payment network. It is also often used to refer to as the ecosystem as a whole when writing about it in general terms. Bitcoin with a lowercase “b” written as “bitcoin” is usually associated specifically with bitcoin as the currency.
-
 ### Bitcoin client
 
-Software that runs and/or connects to the Bitcoin network.
+Software that runs and/or connects to the bitcoin network.
 
 ### Bitcoin Core (client)
 
-Software considered the reference implementation for the Bitcoin protocol. It is the continuation of Satoshi Nakamoto's original Bitcoin client released 9th January, 2009.
+Software considered the reference implementation for the bitcoin protocol. It is the continuation of Satoshi Nakamoto's original bitcoin client released 9th January, 2009.
 
 - [Bitcoin Core client download](https://bitcoincore.org/en/download/)
 - [Bitcoin Core source code](https://github.com/bitcoin/bitcoin)
 
 ### Bitcoin Core (project)
 
-An open-source project that maintains and releases the Bitcoin client of the same name.
+An open-source project that maintains and releases the bitcoin client of the same name.
 
 - [Bitcoin Core GitHub](https://github.com/bitcoin-core)
 - [Bitcoin Core website](https://bitcoincore.org/)
 - [Bitcoin Core wiki entry](https://en.bitcoin.it/wiki/Bitcoin_Core)
 
-### BIP - Bitcoin improvement proposal
+### BIP - Bitcoin Improvement Proposal
 
-A standardized technical document format for suggesting improvements to Bitcoin. They are hosted on Github [here](https://github.com/bitcoin/bips). Some important proposals to be aware of:
+A standardized technical document format for suggesting improvements to bitcoin. They are hosted on Github [here](https://github.com/bitcoin/bips). Some important proposals to be aware of:
 
 - [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki): Mnemonic code for generating deterministic keys
 - [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki): Multi-account hierarchy for HD wallets
@@ -102,14 +98,14 @@ A standardized technical document format for suggesting improvements to Bitcoin.
    layout = "float-right-desktop"
 %}
 
-Instead of processing each transaction individually, the Bitcoin network bundles them into blocks. Blocks are created roughly every 10 minutes and can only contain a certain amount of transactions due to a strict file size limit. Once a block is accepted and has several confirmations, it can never be changed again.
+Instead of processing each transaction individually, the bitcoin network bundles them into blocks. Blocks are created roughly every 10 minutes and can only contain a certain amount of transactions due to a strict file size limit. Once a block is accepted and has several confirmations, it can never be changed again.
 
 </div>
 ### Block reward
 
 Block rewards (also known as block subsidy) are the newly minted bitcoins awarded to miners for broadcasting a new block of verified transactions. The only way for a miner to participate in this process is by spending energy in the attempt to guess an incredibly large random number. In this sense, getting the block reward presents an important financial incentive for the miners to keep doing this work and securing the network.
 
-The described process is part of Bitcoins hard-coded monetary policy, which follows an autonomous and programmatic schedule. The block reward given to Bitcoin miners for processing transactions is cut in half after every 210,000 blocks, or around every four years. This is one of the mechanisms that allows us to know that there will never be more than 21M units. The last halving is expected to happen around the year 2,140.
+The described process is part of bitcoins hard-coded monetary policy, which follows an autonomous and programmatic schedule. The block reward given to bitcoin miners for processing transactions is cut in half after every 210,000 blocks, or around every four years. This is one of the mechanisms that allows us to know that there will never be more than 21M units. The last halving is expected to happen around the year 2,140.
 
 ### BOLT - Basis of Lightning Technology
 
@@ -206,7 +202,7 @@ Same as ypub though the z denotes it is an extended public key from a segregated
    height = 400
 %}
 
-Hashing is a fundamental technique to cryptography and Bitcoin. It is the process of taking data and applying a function that creates a unique identifier for it. This is called a hash and can be thought of as a fingerprint.
+Hashing is a fundamental technique to cryptography and bitcoin. It is the process of taking data and applying a function that creates a unique identifier for it. This is called a hash and can be thought of as a fingerprint.
 
 Unlike encryption, a hash does not contain the original data, and the hashing process cannot be reversed. Since hashes are small in size, they are a great way to verify the information's authenticity.
 
@@ -226,11 +222,11 @@ Bitcoin wallets and addresses are have both [public](#public-key) and [private k
 
 ### Lightning invoice
 
-Users of the Lightning network use a Lightning invoice to request a payment. It is defined by [BOLT 11](https://github.com/lightningnetwork/lightning-rfc/blob/master/11-payment-encoding.md) and includes an amount to be paid, destination of the payment, and an optional message. Unlike Bitcoin addresses, Lightning invoice's expire after a set amount of time.
+Users of the Lightning network use a Lightning invoice to request a payment. It is defined by [BOLT 11](https://github.com/lightningnetwork/lightning-rfc/blob/master/11-payment-encoding.md) and includes an amount to be paid, destination of the payment, and an optional message. Unlike bitcoin addresses, Lightning invoice's expire after a set amount of time.
 
 ### Lightning network
 
-The [Lightning Network]({{ 'https://lightning.network' }}) extends Bitcoin with payment channels to increase transaction speed and lower costs. It is becoming widely adopted and accepted as the preferred way to scale Bitcoin.
+The [Lightning Network]({{ 'https://lightning.network' }}) extends bitcoin with payment channels to increase transaction speed and lower costs. It is becoming widely adopted and accepted as the preferred way to scale bitcoin.
 
 ### Mempool
 
@@ -245,13 +241,13 @@ The [Lightning Network]({{ 'https://lightning.network' }}) extends Bitcoin with 
    layout = "float-right-desktop"
 %}
 
-Every transaction needs to be confirmed before the recipient can consider the involved bitcoin theirs. This waiting line for new transactions is called the mempool. The Bitcoin network can only process a certain amount of transactions per day, so it may take longer to process your transactions during busy times. Transactions that involve higher fees are typically processed faster.
+Every transaction needs to be confirmed before the recipient can consider the involved bitcoin theirs. This waiting line for new transactions is called the mempool. The bitcoin network can only process a certain amount of transactions per day, so it may take longer to process your transactions during busy times. Transactions that involve higher fees are typically processed faster.
 
 </div>
 
 ### Miniscript
 
-A language for writing certain types of Bitcoin Scripts in a structured way. Miniscript is easier to read by developers, and also allows for various build-tools to help ensure that scripts are safe, valid, and efficient.
+A language for writing certain types of bitcoin Scripts in a structured way. Miniscript is easier to read by developers, and also allows for various build-tools to help ensure that scripts are safe, valid, and efficient.
 
 **References:**
 
@@ -272,7 +268,7 @@ A standard for multi-signature that uses Schnorr signatures. Previously, the mor
 
 ### [Node]({{ '/guide/glossary/node/' | relative_url }})
 
-Node refers to software that participates in the Bitcoin network. It exchanges transaction data with other nodes, stores some or all of it, and verifies that transactions are valid. There is also dedicated [node hardware]({{ '/guide/getting-started/hardware/#nodes' | relative_url }}).
+Node refers to software that participates in the bitcoin network. It exchanges transaction data with other nodes, stores some or all of it, and verifies that transactions are valid. There is also dedicated [node hardware]({{ '/guide/getting-started/hardware/#nodes' | relative_url }}).
 
 [Read more]({{ '/guide/glossary/node/' | relative_url }})
 
@@ -296,7 +292,7 @@ A small piece of data that has all the information needed to generate a specific
 
 ### Payment
 
-A payment is a transaction that occurs over the Lightning network. Payments are routed through Lightning payment channels and are not recorded in the Bitcoin blockchain.
+A payment is a transaction that occurs over the Lightning network. Payments are routed through Lightning payment channels and are not recorded in the bitcoin blockchain.
 
 ### Private key
 
@@ -348,7 +344,7 @@ An algorithm to generate cryptographic signatures. One of the benefits is that t
 
 ### Segregated witness (SegWit)
 
-Segregated Witness, or SegWit, is the name for a soft fork change in the transaction format of Bitcoin. It was described in [BIP141](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki). It was intended to mitigate a blockchain size limitation problem that reduces bitcoin transaction speed. It does this by splitting the transaction into two segments, removing the unlocking signature (*witness* data) from the original portion and appending it as a separate structure at the end. The original section hold the sender and receiver data, and the new *witness* structure contain scripts and signatures.
+Segregated Witness, or SegWit, is the name for a soft fork change in the transaction format of bitcoin. It was described in [BIP141](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki). It was intended to mitigate a blockchain size limitation problem that reduces bitcoin transaction speed. It does this by splitting the transaction into two segments, removing the unlocking signature (*witness* data) from the original portion and appending it as a separate structure at the end. The original section hold the sender and receiver data, and the new *witness* structure contain scripts and signatures.
 
 ### Signature
 <div class="center" markdown="1">
@@ -364,7 +360,7 @@ Segregated Witness, or SegWit, is the name for a soft fork change in the transac
 
 Since a [private key](#private-key) can be used to prove that the holder controls a specific address, it can therefore authorize transactions from the address. This is called a digital signature.
 
-One of the most important activities of the Bitcoin network is to verify that signatures are valid.
+One of the most important activities of the bitcoin network is to verify that signatures are valid.
 </div>
 
 ### Taproot
@@ -373,7 +369,7 @@ A technique that makes complex multisig transactions look the same as standard t
 
 ### Transaction
 
-A transaction is a transfer of value over the Bitcoin network. While transactions can be complicated, one of the simplest forms of a transaction would be sending bitcoin from one address to another. A transaction is not considered final until it has been included in a valid block by a miner.
+A transaction is a transfer of value over the bitcoin network. While transactions can be complicated, one of the simplest forms of a transaction would be sending bitcoin from one address to another. A transaction is not considered final until it has been included in a valid block by a miner.
 
 ### Unspent transaction output (UTXO)
 An output that has not been sent to another address. The bitcoin wallet balance is calculated from adding up unspent outputs.
