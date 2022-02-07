@@ -88,7 +88,7 @@ A picture is worth a thousand words, but so are videos, interactive prototypes, 
 
 ### Be humble
 
-The guide is a work in progress and needs to evolve to stay relevant. What we write today may not be applicable tomorrow. Have fun. Don't overthink things. bitcoin, and therefore this guide, is the ultimate work-in-progress.
+The guide is a work in progress and needs to evolve to stay relevant. What we write today may not be applicable tomorrow. Have fun. Don't overthink things. Bitcoin, and therefore this guide, is the ultimate work-in-progress.
 
 ### Write in the open
 

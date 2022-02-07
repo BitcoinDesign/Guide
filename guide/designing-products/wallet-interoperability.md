@@ -80,7 +80,7 @@ Wallet backups generated in one wallet application should be able to be easily r
 
 Backing up payment channels that are part of the Lightning network can be more difficult. Currently no standards exist for this, nor is it possible to have a static backup method like you can with on-chain bitcoin. Payment channels states regularly change and thus need to be regularly updated. Some applications make use of static-channel-backup (SCB) files, though this is still an evolving standard.
 
-It should be convenient for users to back up the relevant information they need for recovery with other applications. An example solution is to provide a [printable template or downloadable PDF](https://www.figma.com/file/sJYnyi2amehFJ2JpDgj978/bitcoin-Wallet---Paper-Backup-Template?node-id=1%3A535) with the wallet name, software name and version, address type, wallet descriptors, and other non-standard information. If your application makes use of the Lightning network this could be done in conjunction with regular, encrypted SCB cloud backups.
+It should be convenient for users to back up the relevant information they need for recovery with other applications. An example solution is to provide a [printable template or downloadable PDF](https://www.figma.com/file/sJYnyi2amehFJ2JpDgj978/Bitcoin-Wallet---Paper-Backup-Template?node-id=1%3A535) with the wallet name, software name and version, address type, wallet descriptors, and other non-standard information. If your application makes use of the Lightning network this could be done in conjunction with regular, encrypted SCB cloud backups.
 
 </div>
 

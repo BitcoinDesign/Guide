@@ -30,7 +30,7 @@ Artwork Source: https://www.figma.com/file/xQ5eWVSOLbNGLmcls3qz7d/Principles?nod
    layout = "full-width"
 %}
 
-# bitcoin design principles
+# Bitcoin design principles
 
 As a new technology, bitcoin offers the opportunity of a decentralized open financial system, where participants share the role of securing the network. This is important to give everyone equal and direct access to economic opportunities without fearing seizure or needing intermediaries. To make this a reality, we encourage everyone working on products to deliberately support the core principles of designing for bitcoin.
 
@@ -279,7 +279,7 @@ layout="float-left"
 
 </div>
 
-Unlike traditional banking systems, the bitcoin economy does not require new users to seek permission from anyone. bitcoin has no central point of control. No one person or entity is in charge. Connecting to any [node]({{ '/guide/glossary/#node' | relative_url }}) on the network gives you the same rights and responsibilities, ensuring no single point of failure.
+Unlike traditional banking systems, the bitcoin economy does not require new users to seek permission from anyone. Bitcoin has no central point of control. No one person or entity is in charge. Connecting to any [node]({{ '/guide/glossary/#node' | relative_url }}) on the network gives you the same rights and responsibilities, ensuring no single point of failure.
 
 **Do**
 - Design products that encourage people to run a full bitcoin node

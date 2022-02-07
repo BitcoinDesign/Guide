@@ -138,7 +138,7 @@ No other currency in history has offered such a transparent way to analyze netwo
    layout = "float-right-desktop"
 %}
 
-New technologies can take decades to reach mainstream adoption. bitcoin is, in our opinion, still on its way up the adoption curve, which means it and we are early. This affects research in multiple ways. Early adopters have different use cases and needs than users who adopt bitcoin ten years from now. Products designed today could be outdated by the time that the early majority embraced bitcoin.
+New technologies can take decades to reach mainstream adoption. Bitcoin is, in our opinion, still on its way up the adoption curve, which means it and we are early. This affects research in multiple ways. Early adopters have different use cases and needs than users who adopt bitcoin ten years from now. Products designed today could be outdated by the time that the early majority embraced bitcoin.
 
 Secondly, as bitcoin matures, its capabilities will evolve. Scaling and performance improvements will make transactions more affordable, private, and secure. These improvements will make people more comfortable embracing bitcoin as both a store of value and medium of exchange.
 

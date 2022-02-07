@@ -46,7 +46,7 @@ Open design is about global collaboration that balances the free exchange of des
 
 ---
 
-### [bitcoin design principles]({{ '/guide/designing-products/principles/' | relative_url }})
+### [Bitcoin design principles]({{ '/guide/designing-products/principles/' | relative_url }})
 
 Core bitcoin design principles recommended by the Bitcoin Design Community.
 

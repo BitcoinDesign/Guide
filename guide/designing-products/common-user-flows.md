@@ -92,7 +92,7 @@ Here are two different examples of webpages for downloading bitcoin wallet softw
 {% include image.html
    image = "/assets/images/guide/designing-products/common-user-flows/bitcoincore-com.jpg"
    retina = "/assets/images/guide/designing-products/common-user-flows/bitcoincore-com@2x.jpg"
-   alt-text = "bitcoincore.org download page"
+   alt-text = "Bitcoincore.org download page"
    caption = '<a href="https://bitcoincore.org/" target="_blank">bitcoincore.org</a>'
    width = 400
    height = 480
@@ -324,7 +324,7 @@ While we all prefer to receive bitcoin, there are times when we need to send the
    image = "/assets/images/guide/designing-products/common-user-flows/sending-ui-basic.png"
    retina = "/assets/images/guide/designing-products/common-user-flows/sending-ui-basic@2x.png"
    alt-text = "Example of a basic send screen"
-   caption = "A UI for sending bitcoin with just the basic information ([source](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/bitcoin-Wallet-UI-Kit?node-id=1374%3A33577))."
+   caption = "A UI for sending bitcoin with just the basic information ([source](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1374%3A33577))."
    width = 400
    height = 243
    layout = "shadow"
@@ -334,7 +334,7 @@ While we all prefer to receive bitcoin, there are times when we need to send the
    image = "/assets/images/guide/designing-products/common-user-flows/sending-ui-complex.png"
    retina = "/assets/images/guide/designing-products/common-user-flows/sending-ui-complex@2x.png"
    alt-text = "Example of a complex send screen"
-   caption = "An overly complex interface with advanced send options ([source](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/bitcoin-Wallet-UI-Kit?node-id=1374%3A33792))."
+   caption = "An overly complex interface with advanced send options ([source](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1374%3A33792))."
    width = 400
    height = 690
    layout = "shadow"

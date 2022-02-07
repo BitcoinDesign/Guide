@@ -27,7 +27,7 @@ Levels
 Examples in Bitcoin Design
 - Guide
 - Johns exploring CoinJoins with Wasabi and wider bitcoin audience (cross-project)
-- Bosch working with bitcoin Core GUI (project-specific)
+- Bosch working with Bitcoin Core GUI (project-specific)
 
 Ideas
 - Add quotes and stories from designers
@@ -72,7 +72,7 @@ Open design communities can have multidisciplinary teams with designers, develop
 - Teamwork
 - Openness & transparency
 
-## bitcoin has a spirit of openness
+## Bitcoin has a spirit of openness
 
 We could argue bitcoin needs open design to stay true to its mission.
 
@@ -127,7 +127,7 @@ Open-source software development has existed for decades. Public review and deba
 - See some of the community [Projects](https://bitcoin.design/projects/).
 - Visit our [Contribute](https://bitcoin.design/contribute/) page.
 - Follow us on [Twitter](https://twitter.com/bitcoin_design)
-- Subscribe to [our YouTube](https://www.youtube.com/c/bitcoinDesign)
+- Subscribe to [our YouTube](https://www.youtube.com/c/BitcoinDesign)
 
 ### Test, redesign, and engage in feedback
 

@@ -62,7 +62,7 @@ For the sake of simplicity let's focus on one hypothetical user.
 
 > Joshua Akinsola is a 21-year old Nigerian studying economics in the large city of Lagos. Growing up, his family struggled to save any money due to a lack of financial education, high unemployment, and a local currency inflating at 15% per year. There is a lack of reliable [savings]({{ 'guide/designing-products/personal-finance/#savings' | relative_url }}) technology in his country, so he opts to save money for the future using bitcoin.
 
-The uncovering of this scenario could be the result of a [user interview](https://github.com/patestevao/bitcoin-UX-interviews/blob/main/call-for-participants.md) or found in various channels such as chats, issues, or even Twitter. We can then take quotes from the participant to understand their emotions and infer their specific needs. This then helps us identify barriers and motivators.
+The uncovering of this scenario could be the result of a [user interview](https://github.com/patestevao/Bitcoin-UX-interviews/blob/main/call-for-participants.md) or found in various channels such as chats, issues, or even Twitter. We can then take quotes from the participant to understand their emotions and infer their specific needs. This then helps us identify barriers and motivators.
 
 Barriers are anything that the user perceives as preventing them from achieving their desired goals.
 
@@ -114,7 +114,7 @@ Motivators are specific user wants that are driving the user to seek out bitcoin
    layout = "float-left"
 %}
 
-*"bitcoin is still new, will people think I'm weird for saving like this?"*
+*"Bitcoin is still new, will people think I'm weird for saving like this?"*
 
 </div>
 
@@ -188,7 +188,7 @@ It's important to allow you and your team to be as free and creative about how y
 ## Prototype & Test
 Next, you can think about prototyping a subset of these ideas and understanding your ideas' feasibility through feedback on these prototypes. Put your prototypes in front of real users and test to verify the solution meets the users' needs.
 
-You might choose to lean on something like the [bitcoin Wallet UI Kit](https://www.bitcoinuikit.com/), which gives you several components that you can piece together for a specific [use case]({{ 'guide/case-studies/' | relative_url }}). This would allow you to prototype rapidly and get a feel for if the UI flow makes sense before committing to more detailed designs.
+You might choose to lean on something like the [Bitcoin Wallet UI Kit](https://www.bitcoinuikit.com/), which gives you several components that you can piece together for a specific [use case]({{ 'guide/case-studies/' | relative_url }}). This would allow you to prototype rapidly and get a feel for if the UI flow makes sense before committing to more detailed designs.
 
 Ultimately the goal of getting to know your users is to build trust in the application, feel comfortable using it, and are set up for success. They should have an idea of how this application is going to fit into their lives and take care of certain needs. It’s also ideal if they can already envision the next time they will use it.
 

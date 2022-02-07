@@ -8,13 +8,13 @@ permalink: /guide/designing-products/design-resources/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/designing-products/design-resources/design-resources-preview.jpg
 files:
-  - caption: <a href="https://www.bitcoinuikit.com/">bitcoin UI Kit</a>
+  - caption: <a href="https://www.bitcoinuikit.com/">Bitcoin UI Kit</a>
     alt: Home images of several mobile bitcoin apps
     image: /assets/images/guide/designing-products/design-resources/bitcoin-ui-kit.jpg
     retina: /assets/images/guide/designing-products/design-resources/bitcoin-ui-kit@2x.jpg
     width: 400
     height: 210
-  - caption: <a href="https://bitcoinicons.com/">bitcoin icons</a>
+  - caption: <a href="https://bitcoinicons.com/">Bitcoin icons</a>
     alt: A grid of diverse interface icons
     image: /assets/images/guide/designing-products/design-resources/bitcoin-icons.jpg
     retina: /assets/images/guide/designing-products/design-resources/bitcoin-icons@2x.jpg

@@ -68,7 +68,7 @@ An overview of bitcoin payments, common concepts, and the transaction lifecycle.
 
 {% include next-previous.html
    previousUrl = "/guide/private-key-management/backups/"
-   previousName = "bitcoin backups"
+   previousName = "Bitcoin backups"
    nextUrl = "/guide/payments/request/"
    nextName = "Requesting bitcoin"
 %}

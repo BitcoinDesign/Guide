@@ -82,7 +82,7 @@ Bitcoin is most commonly expressed as BTC (bitcoin) or sat (satoshi), with 1 bit
 | satoshi      | sat          | 0.000 000 01      |
 | millisatoshi | msat         | 0.000 000 000 01  |
 
-For more information, see the bitcoin Wiki:
+For more information, see the Bitcoin Wiki:
 
 - [Units](https://en.bitcoin.it/wiki/Units)
 - [Satoshi](https://en.bitcoin.it/wiki/Satoshi_(unit))

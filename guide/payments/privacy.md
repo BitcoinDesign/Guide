@@ -42,7 +42,7 @@ Transactions, their signatures, and addresses added to the bitcoin blockchain re
 
 > Each bitcoin transaction contains at least one input and at least one output. This means that once a single address is known, there is a trail to follow the bitcoin.
 >
-> <cite>As documented by <a href="https://docs.wasabiwallet.io/FAQ/FAQ-GeneralbitcoinPrivacy.html#how-is-bitcoin-bad-in-terms-of-privacy">Wasabi Wallet</a></cite>
+> <cite>As documented by <a href="https://docs.wasabiwallet.io/FAQ/FAQ-GeneralBitcoinPrivacy.html#how-is-bitcoin-bad-in-terms-of-privacy">Wasabi Wallet</a></cite>
 
 On the Lightning network, a payment is only stored by the respective sender and receiver, and only as long as the channel in which the payment was made is open. However, opening and closing channels requires entries on the bitcoin blockchain, and those are also publicly stored forever. Additionally, Lightning nodes are always online and usually directly tied to a single wallet, providing another data point. For a detailed analysis of privacy on Lighting, see the [Security and privacy chapter](https://github.com/lnbook/lnbook/blob/develop/16_security_privacy_ln.asciidoc) in the Mastering the Lightning Network book.
 
@@ -151,7 +151,7 @@ There is no perfect solution to guarantee 100% privacy that lasts forever becaus
 -->
 
 [^1]: [Bitcoin.org - Protecting your privacy](https://bitcoin.org/en/protect-your-privacy)
-[^2]: [Top Seven Ways Your Identity Can Be Linked to Your bitcoin Address](https://99bitcoins.com/know-more-top-seven-ways-your-identity-can-be-linked-to-your-bitcoin-address/)
+[^2]: [Top Seven Ways Your Identity Can Be Linked to Your Bitcoin Address](https://99bitcoins.com/know-more-top-seven-ways-your-identity-can-be-linked-to-your-bitcoin-address/)
 [^3]: [Bitcoin Wiki / Privacy](https://en.bitcoin.it/wiki/Privacy#Common-input-ownership_heuristic)
 
 ---

@@ -111,5 +111,5 @@ OK, to end this chapter let's have a look at how to do safe [bitcoin backups]({{
    previousUrl = "/guide/private-key-management/external-signers/"
    previousName = "External signing devices"
    nextUrl = "/guide/private-key-management/backups/"
-   nextName = "bitcoin backups"
+   nextName = "Bitcoin backups"
 %}
