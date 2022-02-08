@@ -47,7 +47,7 @@ Below is a collection of published user research findings around bitcoin, from a
 
 ## Journal articles
 
-#### [Bits Under the Mattress: Understanding Different Risk Perceptions and Security Behaviours of Crypto-Asset Users](https://voskart.de/pdf/bits_under_mattress.pdf)
+#### [Bits Under the Mattress: Understanding Different Risk Perceptions and Security Behaviours of Crypto-Asset Users](https://dl.acm.org/doi/pdf/10.1145/3411764.3445679)
 
 _2021 by Abramova, Voskobojnikov, Beznosov, and Böhme._
 
