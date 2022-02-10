@@ -82,7 +82,7 @@ We could argue bitcoin needs open design to stay true to its mission.
 
 Thousands of projects have borrowed ideas, techniques, and code from bitcoin. Countless open-source experiments have arisen. To a designer, bitcoin is a robust foundation for collaboration. A foundation that comes with a responsibility toward the benefit of society.
 
-This ethical responsibility encompasses application design. Most people interact with applications instead of the underlying bitcoin technical protocol. If someone controls access to an application, it won't matter if the protocol is open. It is up to the global community to build [principled bitcoin applications](guide/designing-products/principles/)
+This ethical responsibility encompasses application design. Most people interact with applications instead of the underlying bitcoin technical protocol. If someone controls access to an application, it won't matter if the protocol is open. It is up to the global community to build [principled bitcoin applications](/guide/designing-products/principles/)
 
 Bitcoin is a protocol created to give access to anyone. Access and accessibility go hand in hand. Designing bitcoin products means working on removing barriers of entry. It means making decisions to create a unique
 balance of features for ease of use.
