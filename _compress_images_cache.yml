@@ -1557,16 +1557,12 @@ assets/images/guide/payments/request/withdrawal-qr.png: withdrawal-qr.png
 assets/images/guide/payments/request/withdrawal-qr@2x.png: withdrawal-qr@2x.png
 assets/images/guide/payments/request/contact-card.png: contact-card.png
 assets/images/guide/payments/request/contact-card@2x.png: contact-card@2x.png
-assets/images/guide/payments/request/contactless.png: contactless.png
-assets/images/guide/payments/request/contactless@2x.png: contactless@2x.png
 assets/images/guide/payments/request/plaintext-single-use.png: plaintext-single-use.png
 assets/images/guide/payments/request/plaintext-single-use@2x.png: plaintext-single-use@2x.png
 assets/images/guide/payments/request/single-use-address-type.png: single-use-address-type.png
 assets/images/guide/payments/request/single-use-address-type@2x.png: single-use-address-type@2x.png
 assets/images/guide/payments/request/single-use-payment-request-settings.png: single-use-payment-request-settings.png
 assets/images/guide/payments/request/single-use-payment-request-settings@2x.png: single-use-payment-request-settings@2x.png
-assets/images/guide/payments/request/single-use-payment-request.png: single-use-payment-request.png
-assets/images/guide/payments/request/single-use-payment-request@2x.png: single-use-payment-request@2x.png
 assets/images/guide/payments/request/single-use-transaction-request-settings.png: single-use-transaction-request-settings.png
 assets/images/guide/payments/request/single-use-transaction-request-settings@2x.png: single-use-transaction-request-settings@2x.png
 assets/images/guide/payments/request/single-use-transaction-request.png: single-use-transaction-request.png
@@ -1619,3 +1615,9 @@ assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-fini
 assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-restored.png: daily-spending-wallet-restore-restored.png
 assets/images/guide/case-studies/cloud-backup/daily-spending-wallet-restore-restoring.png: daily-spending-wallet-restore-restoring.png
 assets/images/guide/case-studies/cloud-backup/daily-spending-header@2x.jpg: daily-spending-header@2x.jpg
+assets/images/guide/payments/request/contactless.png: contactless.png
+assets/images/guide/payments/request/contactless@2x.png: contactless@2x.png
+assets/images/guide/payments/request/long-expiry.png: long-expiry.png
+assets/images/guide/payments/request/long-expiry@2x.png: long-expiry@2x.png
+assets/images/guide/payments/request/single-use-payment-request.png: single-use-payment-request.png
+assets/images/guide/payments/request/single-use-payment-request@2x.png: single-use-payment-request@2x.png
