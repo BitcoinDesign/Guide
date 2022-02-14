@@ -146,7 +146,7 @@ If using a small expiry time, it's recommended a new invoice is generated automa
 
 #### Long expiry times
 
-Longer expiry times are useful for when a payment can not be made immediately. Longer times expose users to price volatility which may result in incorrect payment amounts being sent or received. It is recommended that when using a longer expiry amount that the sender defines the amount to limit exposure to price volatility.
+Longer expiry times are useful for when a payment can not be made immediately. Longer times expose users to price volatility, which may result in incorrect payment amounts being sent or received. When using a longer expiry, it is recommended the sender defines the amount to limit exposure to price volatility.
 
 A hybrid approach your application could take is when an invoice with a defined amount is generated it uses a short expiry time. If this invoice is shared externally the amount is set to zero and a larger expiration time is used. If a invoice is generated with no amount it automatically uses a longer expiry time.
 
