@@ -174,7 +174,7 @@ A hybrid approach your application could take is when an invoice with a defined 
 
 </div>
 
-Some other invoice expiry design considerations to consider include; Allowing advanced users to set their own custom expiration times in the settings. Or make invoice expirations a thing of the past and adopt static [Bolt 12](https://bolt12.org/) offers in your application. Offers are not yet a BOLT or widely supported by wallets so interoperability will be an issue adopting it.
+Another design considerations could include allowing users to set their own custom expiration times in the settings. Or alternatively, invoice expirations could be made a thing of the past via the adoption of static [Bolt 12](https://bolt12.org/) offers in your application. Offers are not yet an accepted standard, or widely supported by wallets, so interoperability will be an issue when adopting it.
 
 ### Address types
 
