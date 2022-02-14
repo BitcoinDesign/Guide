@@ -171,7 +171,7 @@ While the details for Lightning and on-chain payments look very similary, there 
    layout = "float-right-desktop -background -shadow"
 %}
 
-Status indicators are important for on-chain transactions, since they take longer to confirm, as well as when things go wrong. While a completed transactions generally doesn't need a status indicator, it should be shown if the transaction completes while the user is watching. Error messages should be clear and provide access to details and options to remedy the problem.
+Status indicators are important for on-chain transactions since they take longer to confirm, as well as when things go wrong. While a completed transaction generally doesn't need a status indicator, it should be shown if the transaction completes while the user is watching. Error messages should be clear and provide access to details and options to remedy the problem.
 
 </div>
 
