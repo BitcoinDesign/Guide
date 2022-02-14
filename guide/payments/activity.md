@@ -89,7 +89,7 @@ On a technical level, a transaction is a transfer of a specific amount between t
    layout = "float-right-desktop -background -shadow"
 %}
 
-Since we already offer users a chronological list of events, it is a small step to go beyond transaction and also include other relevant wallet activity.
+Since we already offer users a chronological list of events, it is a small step to go beyond transactions and also include other relevant wallet activity.
 
 ##### User activity
 
