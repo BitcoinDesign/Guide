@@ -20,7 +20,7 @@ projects:
       - name: How to contribute
         link: https://bitcoin.design/guide/contribute/
 
-  - name: Bitcoin icon set
+  - name: Bitcoin Icon set
     description: Icons for typical needs of bitcoin applications. Includes common generic icons like arrows, and more unique ones like a wallet, keys, mining, and bitcoin symbols.
     image:
       url: /assets/images/contribute/bitcoin-icon-set.svg
@@ -48,15 +48,15 @@ projects:
       - name: Github
         link: https://github.com/GBKS/bitcoin-wallet-ui-kit
 
-  - name: Wallet design improvement project
+  - name: Bitcoin Design Sprints
     description: Improving Lightning network wallets through applying the design guide, design thinking and problem solving.
     image:
-      url: /assets/images/contribute/wallt-design-imporvement.png
+      url: /assets/images/contribute/wallet-design-sprints.png
       width: 75
       height: 75
     links:
-      - name: Site
-        link: https://github.com/BitcoinDesign/Guide/issues/493
+      - name: More info
+        link: https://github.com/BitcoinDesign/Meta/issues/244
       - name: Slack
         link: https://bitcoindesign.slack.com/archives/C02VCHSQECT
 
