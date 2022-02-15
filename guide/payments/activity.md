@@ -11,10 +11,16 @@ image_base: /assets/images/guide/payments/activity/
 imagesBasics:
     - file: activity
       alt:
-      caption: A purely technical perspective of a transaction list.
+      caption: A minimal transaction list that avoids the display of technical details.
     - file: annotated-activity
       alt:
-      caption: Annotated transactions capture a much richer story for users.
+      caption: If users annotate transactions well, they see much richer history.
+    - file: semi-annotated-activity
+      alt:
+      caption: Unless a user is thorough about organization, they will see a mix of annotated activity and raw transaction information.
+    - file: activity-ids
+      alt:
+      caption: If your users are likely to rely on addresses or Lightning invoice IDs to identify payments, you may decide to show them. Always consider your users.
 imagesGrouping:
     - file: micropayments
       alt:
@@ -29,6 +35,12 @@ imagesSearch:
     - file: tips
       alt:
       caption: Wallets can support users in organizing transactions more easily.
+    - file: invoice
+      alt:
+      caption: If an invoice includes a description or other useful data (e.g. [BOLT 11](https://github.com/lightning/bolts/blob/master/11-payment-encoding.md#rationale-2)), make sure to store it.
+    - file: sending
+      alt:
+      caption: Make it easy to add meta data when a user sends or receives a transaction, as it is top-of-mind at that moment.
 imagesReceive:
     - file: receive-transaction
       alt:
@@ -74,6 +86,19 @@ Every wallet includes a list of transactions that allow the users to see who the
 On a technical level, a transaction is a transfer of a specific amount between two addresses at a given time. But as human beings, we think of a transaction as a grocery store purchase, a mortgage payment, or paying back a friend for lunch. We should strive to let users capture these additional layers of meaning so they can more intuitively navigate and work with their transaction history.
 
 {% include image-gallery.html pages = page.imagesBasics %}
+
+##### Design considerations
+
+Activity is a utility screen where a user wants to quickly browse a data set to see what's new, find something specific, identify patterns, etc. Be deliberate with every detail and avoid adding anything that adds visual interest without signal, unless you have good reason to.
+
+Following are some of the design decisions in the screens above:
+
+- Received amounts are green, which is typically a positive connotation. Highlighting sent amounts red seems like a logical follow-on decisions, but this is not necessary as there is enough contrast already. Red can remain the color associated with errors.
+- Adding a plus or minus next to amounts is helpful for the color-blind, as well as general readability & usability.
+- Fallback icons are designed to be subtle and useful by indicating whether bitcoin was sent or received, and the status of the transaction. When they are not shown, because there's a contact image displayed instead, no information is lost. Showing a bitcoin symbol instead, for example, would be visually distracting without providing any useful information.
+- The formatting guidelines in [Units & Symbols]({{ '/guide/payments/units-and-symbols/' | relative_url }}) are applied.
+
+Not carefully weighing these decisions can easily result in a cluttered appearance.
 
 ### Beyond transactions
 
@@ -147,7 +172,7 @@ The activity list focuses on summarizing the top-level information, so users can
 
 ##### A payment received on-chain
 
-As with the activity list, transaction details screens should also only highlight relevant informationand options, and hide tertiary details behind extra taps.
+As with the activity list, transaction details screens should also only highlight relevant information and options, and hide tertiary details behind extra taps.
 
 {% include image-gallery.html pages = page.imagesReceive %}
 
@@ -189,7 +214,9 @@ Status indicators are important for on-chain transactions since they take longer
    layout = "float-right-desktop -background -shadow"
 %}
 
-Most intuitive for users is likely when a transaction is directly linked to a person or business. As this requires the user to tag transactions accordingly, there need to be fallback approaches that try to communicate the available technical information in ways that users can relate to. This can be in the form of text labels, or even uniquely generated icons like [Jazzicons](https://github.com/danfinlay/jazzicon).
+Most intuitive for users is likely when a transaction is directly linked to a person or business. As this requires the user to tag transactions accordingly, there need to be fallback approaches that try to communicate the available technical information in ways that users can relate to.
+
+This can be in the form of text labels, or even uniquely generated icons like [Jazzicons](https://github.com/danfinlay/jazzicon). When using visual fallbacks, be deliberate about their impact. If they draw visual attention, but don't communicate any useful information, you may want to avoid them.
 
 </div>
 
@@ -202,7 +229,7 @@ As mentioned at the top of the page, there is a lot of nuance in the display of 
 Next, we cover [privacy considerations]({{ '/guide/payments/privacy' | relative_url }}) when to consider when making bitcoin payments.
 
 {% include next-previous.html
-   previousUrl = "/guide/payments/request/send"
+   previousUrl = "/guide/payments/send/"
    previousName = "Sending bitcoin"
    nextUrl = "/guide/payments/privacy/"
    nextName = "Payments privacy"
