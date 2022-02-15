@@ -12,10 +12,6 @@ assets/images/contribute/contribute-mobile@2x.jpg: contribute-mobile@2x.jpg
 assets/images/contribute/contribute-preview.jpg: contribute-preview.jpg
 assets/images/contribute/contribute.jpg: contribute.jpg
 assets/images/contribute/contribute@2x.jpg: contribute@2x.jpg
-assets/images/contribute/photon-lib.png: photon-lib.png
-assets/images/contribute/specter.png: specter.png
-assets/images/contribute/wasabi-wallet.png: wasabi-wallet.png
-assets/images/contribute/zeus.png: zeus.png
 assets/images/error/404.png: 404.png
 assets/images/guide/bitcoin-island-mobile.jpg: bitcoin-island-mobile.jpg
 assets/images/guide/bitcoin-island-mobile@2x.jpg: bitcoin-island-mobile@2x.jpg
@@ -1307,7 +1303,6 @@ assets/images/guide/glossary/signature.jpg: signature.jpg
 assets/images/guide/glossary/signature@2x.jpg: signature@2x.jpg
 assets/images/contribute/alby.png: alby.png
 assets/images/contribute/bitcoin-smiles.png: bitcoin-smiles.png
-assets/images/contribute/hello-bitcoin.png: hello-bitcoin.png
 assets/images/guide/designing-products/wallet-interoperability/hardware-wallets.jpg: hardware-wallets.jpg
 assets/images/guide/designing-products/wallet-interoperability/hardware-wallets@2x.jpg: hardware-wallets@2x.jpg
 assets/images/guide/designing-products/wallet-interoperability/user-interface.jpg: user-interface.jpg
@@ -1654,3 +1649,9 @@ assets/images/guide/payments/activity/activity-header@2x.png: activity-header@2x
 assets/images/guide/payments/activity/activity-header-mobile.jpg: activity-header-mobile.jpg
 assets/images/guide/payments/activity/activity-header-mobile.png: activity-header-mobile.png
 assets/images/guide/payments/activity/activity-header-mobile@2x.png: activity-header-mobile@2x.png
+assets/images/contribute/joinmarket.png: joinmarket.png
+assets/images/contribute/bitcoin-core.png: bitcoin-core.png
+assets/images/contribute/hello-bitcoin.png: hello-bitcoin.png
+assets/images/contribute/wallt-design-imporvement.png: wallt-design-imporvement.png
+assets/images/contribute/design-guide.png: design-guide.png
+assets/images/contribute/zeus.png: zeus.png
