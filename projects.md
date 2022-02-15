@@ -138,6 +138,8 @@ collaborations:
         link: https://zeusln.app/
       - name: Collaboration
         link: https://github.com/BitcoinDesign/Meta/issues/70
+      - name: Telegram
+        link: https://t.me/zeusLN
 ---
 
 <!--
