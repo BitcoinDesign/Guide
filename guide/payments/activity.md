@@ -10,53 +10,53 @@ image: /assets/images/guide/payments/activity/activity-preview.jpg
 image_base: /assets/images/guide/payments/activity/
 imagesBasics:
     - file: activity
-      alt:
+      alt: Smartphone screen showing a list of user transactions with minimal information
       caption: A minimal transaction list that avoids the display of technical details.
     - file: annotated-activity
-      alt:
+      alt: Smartphone screen showing a list of user transactions with rich information like descriptions, tags, and contacts
       caption: If users annotate transactions well, they see much richer history.
     - file: semi-annotated-activity
-      alt:
+      alt: Smartphone screen showing a mix of user transactions with minimal and rich information
       caption: Unless a user is thorough about organization, they will see a mix of annotated activity and raw transaction information.
     - file: activity-ids
-      alt:
+      alt: Smartphone screen showing a list of user transactions with minimal information and invoice IDs
       caption: If your users are likely to rely on addresses or Lightning invoice IDs to identify payments, you may decide to show them. Always consider your users.
 imagesGrouping:
     - file: micropayments
-      alt:
+      alt: Smartphone screen showing a long list of highly similar micro payments
       caption: Micropayments can easily flood an activity screen and make it hard to use.
     - file: grouped-micropayments
-      alt:
+      alt: Smartphone screen showing a many micro payments grouped together
       caption: Smart grouping can help keep the list easy to parse.
 imagesSearch:
     - file: search
-      alt:
+      alt: Smartphone screen showing a search and export options for a list of payments
       caption: An example UI for search, filtering and export.
     - file: tips
-      alt:
+      alt: Smartphone screen showing a list of payments with a user prompt to organize them
       caption: Wallets can support users in organizing transactions more easily.
     - file: invoice
-      alt:
+      alt: Smartphone screen showing a payment screen with rich invoice information
       caption: If an invoice includes a description or other useful data (e.g. [BOLT 11](https://github.com/lightning/bolts/blob/master/11-payment-encoding.md#rationale-2)), make sure to store it.
     - file: sending
-      alt:
+      alt: Smartphone screen showing a payment that is in the process of being sent
       caption: Make it easy to add meta data when a user sends or receives a transaction, as it is top-of-mind at that moment.
 imagesReceive:
     - file: receive-transaction
-      alt:
+      alt: Smartphone screen showing a completed on-chain payment
       caption: A received on-chain transaction without annotations.
     - file: receive-transaction-expanded
-      alt:
+      alt: Smartphone screen showing an on-chain payment with expanded technical details
       caption: The same transaction with an assigned contact, tags, and description, as well as expanded details.
     - file: receive-transaction-id-details
-      alt:
+      alt: Smartphone screen showing an on-chain payment with extended details and an additional modal for further technical details
       caption: Tapping list items can quickly bring up further details and options.
 imagesSend:
     - file: send-transaction
-      alt:
+      alt: Smartphone screen showing a completed Lightning payment
       caption: On-chain and Lightning payments look structurally similar, but differ in subtle ways.
     - file: send-transaction-expanded
-      alt:
+      alt: Smartphone screen showing a completed Lightning payment with extended technical details
       caption: Expanded details of Lightning payment.
 ---
 
@@ -65,7 +65,7 @@ imagesSend:
     retina = "/assets/images/guide/payments/activity/activity-header@2x.png"
     mobile = "/assets/images/guide/payments/activity/activity-header-mobile.png"
     mobileRetina = "/assets/images/guide/payments/activity/activity-header-mobile@2x.png"
-    alt-text = ""
+    alt-text = "Illustration showing scattered positive and negative numbers"
     width = 1600
     height = 600
     layout = "full-width"
@@ -107,7 +107,7 @@ Not carefully weighing these decisions can easily result in a cluttered appearan
 {% include image.html
    image = "/assets/images/guide/payments/activity/non-payment-activity.png"
    retina = "/assets/images/guide/payments/activity/non-payment-activity@2x.png"
-   alt-text = ""
+   alt-text = "Smartphone screen of a transaction list mixing payments and other user activity"
    caption = "A list that includes non-payment activity."
    width = 250
    height = 541
@@ -151,8 +151,7 @@ Closely linked to search is export, which can serve several purposes. For one, a
 {% include image.html
    image = "/assets/images/guide/payments/activity/budgeting.png"
    retina = "/assets/images/guide/payments/activity/budgeting@2x.png"
-   alt-text = ""
-   caption = ""
+   alt-text = "Smartphone screen showing a balance chart and spending category breakdown"
    width = 250
    height = 541
    layout = "float-right-desktop -background -shadow"
@@ -189,8 +188,7 @@ While the details for Lightning and on-chain payments look very similary, there 
 {% include image.html
    image = "/assets/images/guide/payments/activity/status-field.png"
    retina = "/assets/images/guide/payments/activity/status-field@2x.png"
-   alt-text = ""
-   caption = ""
+   alt-text = "A list of payment statuses with different design treatments"
    width = 250
    height = 219
    layout = "float-right-desktop -background -shadow"
@@ -207,8 +205,7 @@ Status indicators are important for on-chain transactions since they take longer
 {% include image.html
    image = "/assets/images/guide/payments/activity/to-field.png"
    retina = "/assets/images/guide/payments/activity/to-field@2x.png"
-   alt-text = ""
-   caption = ""
+   alt-text = "A list of sender and recipient fields with varying amount of detail"
    width = 250
    height = 304
    layout = "float-right-desktop -background -shadow"
