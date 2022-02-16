@@ -147,7 +147,7 @@ The activity list focuses on summarizing the top-level information, so users can
 
 ##### A payment received on-chain
 
-As with the activity list, transaction details screens should also only highlight relevant informationand options, and hide tertiary details behind extra taps.
+As with the activity list, transaction details screens should also only highlight relevant information and options, and hide tertiary details behind extra taps.
 
 {% include image-gallery.html pages = page.imagesReceive %}
 
