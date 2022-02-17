@@ -199,11 +199,11 @@ As mentioned at the top of the page, there is a lot of nuance in the display of 
 
 ---
 
-Next, we cover [privacy considerations]({{ '/guide/payments/privacy' | relative_url }}) when to consider when making bitcoin payments.
+Next, let's look further into [contacts]({{ '/guide/payments/privacy' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/payments/request/send"
    previousName = "Sending bitcoin"
-   nextUrl = "/guide/payments/privacy/"
-   nextName = "Payments privacy"
+   nextUrl = "/guide/payments/contacts/"
+   nextName = "Contacts"
 %}

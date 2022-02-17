@@ -48,6 +48,12 @@ An introduction to how sending bitcoin works.
 
 ---
 
+### [Contacts]({{ '/guide/payments/contacts/' | relative_url }})
+
+Simplifing how users work with invoices, addresses and payments via contacts.
+
+---
+
 ### [Privacy]({{ '/guide/payments/privacy/' | relative_url }})
 
 An overview of how to help users maintain transaction privacy with bitcoin.
