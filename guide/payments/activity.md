@@ -223,7 +223,7 @@ As mentioned at the top of the page, there is a lot of nuance in the display of 
 
 ---
 
-Next, let's look further into [contacts]({{ '/guide/payments/privacy' | relative_url }}).
+Next, let's look further into [contacts]({{ '/guide/payments/contacts' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/payments/send/"

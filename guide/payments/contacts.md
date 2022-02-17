@@ -8,54 +8,43 @@ permalink: /guide/payments/contacts/
 main_classes: -no-top-padding
 image: /assets/images/guide/payments/activity/contacts-preview.jpg
 image_base: /assets/images/guide/payments/contacts/
-imagesBasics:
-    - file: activity
+imagesNames:
+    - file: contact
       alt:
-      caption: A purely technical perspective of a transaction list.
-    - file: annotated-activity
+      caption:
+    - file: contact-minimal
       alt:
-      caption: Annotated transactions capture a much richer story for users.
-imagesGrouping:
-    - file: micropayments
+      caption:
+    - file: contact-company
       alt:
-      caption: Micropayments can easily flood an activity screen and make it hard to use.
+      caption:
+imagesAssignment:
+    - file: contact-minimal
+      alt:
+      caption:
     - file: grouped-micropayments
       alt:
-      caption: Smart grouping can help keep the list easy to parse.
-imagesSearch:
-    - file: search
+      caption:
+imagesSending:
+    - file: sending-home
       alt:
-      caption: An example UI for search, filtering and export.
-    - file: tips
+      caption: In this scenario, the send flow starts on the home screen by entering an amount. Then the user taps "Pay".
+    - file: sending-pick-contact
       alt:
-      caption: Wallets can support users in organizing transactions more easily.
-imagesReceive:
-    - file: receive-transaction
+      caption: The user chooses from an existing contact (or creates a new one).
+    - file: sending-review
       alt:
-      caption: A received on-chain transaction without annotations.
-    - file: receive-transaction-expanded
-      alt:
-      caption: The same transaction with an assigned contact, tags, and description, as well as expanded details.
-    - file: receive-transaction-id-details
-      alt:
-      caption: Tapping list items can quickly bring up further details and options.
-imagesSend:
-    - file: send-transaction
-      alt:
-      caption: On-chain and Lightning payments look structurally similar, but differ in subtle ways.
-    - file: send-transaction-expanded
-      alt:
-      caption: Expanded details of Lightning payment.
+      caption: The contact is carried through to the payment review and later the payment history.
 ---
 
 {% include picture.html
-    image = "/assets/images/guide/payments/contacts/contacts-header.png"
-    retina = "/assets/images/guide/payments/contacts/contacts-header@2x.png"
-    mobile = "/assets/images/guide/payments/contacts/contacts-header-mobile.png"
-    mobileRetina = "/assets/images/guide/payments/contacts/contacts-header-mobile@2x.png"
+    image = "/assets/images/guide/payments/contacts/contacts-header.jpg"
+    retina = "/assets/images/guide/payments/contacts/contacts-header@2x.jpg"
+    mobile = "/assets/images/guide/payments/contacts/contacts-header-mobile.jpg"
+    mobileRetina = "/assets/images/guide/payments/contacts/contacts-header-mobile@2x.jpg"
     alt-text = ""
     width = 1600
-    height = 600
+    height = 400
     layout = "full-width"
 %}
 
@@ -71,7 +60,16 @@ Whether we’re sending emails, physical mail, or following someone on social me
 
 ### The basics
 
-[Screen example inline with the next paragraph]
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/payments/contacts/contact.png"
+   retina = "/assets/images/guide/payments/contacts/contact@2x.png"
+   alt-text = ""
+   width = 250
+   height = 541
+   layout = "float-right-desktop -background -shadow"
+%}
 
 On the surface, a contact entry represents a person, business or other entity that the user sends payment to, or receives payments from.
 
@@ -89,11 +87,13 @@ Typical user flows involving contacts are:
 - Browsing the wallet payment history (contacts help identify payments)
 - Organizing contacts (merging duplicates, deletion, etc)
 
+</div>
+
 Let’s go over each of these.
 
 ### Contact names & images
 
-[Screen examples]
+{% include image-gallery.html pages = page.imagesNames %}
 
 Various payment requests may include labels and descriptions that may be interpreted as contact names. Similarly, Lightning nodes may have aliases assigned to serve as more human-friendly identifiers. Since all of these are optional, a contact system cannot fully rely on automatically detecting and organizing contacts for the user.
 
@@ -103,16 +103,36 @@ When we think of traditional contacts, we think of phone numbers, emails, and ph
 
 ##### On-chain identifiers
 
-[Screen example inline with the next paragraph]
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/payments/contacts/on-chain-identifiers.png"
+   retina = "/assets/images/guide/payments/contacts/on-chain-identifiers@2x.png"
+   alt-text = ""
+   width = 250
+   height = 116
+   layout = "float-right-desktop -background -shadow"
+%}
 
 There are no good options for re-usable identifiers for on-chain payments, primarily due to privacy concerns.
 
 - An on-chain bitcoin address can technically be reused and receive multiple payments. This is highly discouraged, since it allows participants and observers to trace the activity.
 - Extended public keys allow for the generation of many on-chain addresses. A user could share this key with others so they can generate addresses as needed. This is also discouraged, as anyone with this key can observe all transactions in the wallet.
 
+</div>
+
 ##### Lightning identifiers
 
-[Screen example inline with the next paragraph]
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/payments/contacts/lightning-identifiers.png"
+   retina = "/assets/images/guide/payments/contacts/lightning-identifiers@2x.png"
+   alt-text = ""
+   width = 250
+   height = 273
+   layout = "float-right-desktop -background -shadow"
+%}
 
 Lightning invoices expire and can only be used once. However, Lightning nodes are always online, and can generate and serve invoices on-demand.
 
@@ -124,44 +144,80 @@ Lightning invoices expire and can only be used once. However, Lightning nodes ar
 
 As we’ve now seen, there are no great options on-chain, and most of the techniques around Lightning are still either in the specification phase, or not widely implemented in standardized, convenient ways. While this will change over time, wallets are currently limited in how convenient contact features can be made.
 
+</div>
+
 ### User flows
 
 ##### Choosing a contact to send bitcoin to
 
 In an ideal flow, a user simply taps a contact and enters an amount to make a payment. Due to the complexities around identifiers outlined above, a more likely scenario is that users need to manually assign a contact to an invoice or completed payment. This should be made as convenient as possible.
 
-[Screen examples]
+{% include image-gallery.html pages = page.imagesSending %}
 
-References
+Related:
 
-- Sending bitcoin - [payment entry points]({{ '/guide/payments/request/payment-request-formats/' | relative_url }})
+- [Sending bitcoin &middot; Payment entry points]({{ '/guide/payments/request/payment-request-formats/' | relative_url }})
 
 ##### Assigning a contact to a generated payment request
 
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/payments/contacts/receive.png"
+   retina = "/assets/images/guide/payments/contacts/receive@2x.png"
+   alt-text = ""
+   width = 250
+   height = 541
+   layout = "float-right-desktop -background -shadow"
+%}
+
 When a user generates an invoice to receive bitcoin from another party, it is helpful to be able to assign a contact. Generally, this information is stored only for the wallet owner, and not shared with the desired sender.
 
-[Screen examples]
+Related:
 
-References
-- Requesting bitcoin - [entry points]({{ '/guide/payments/request/#requesting-entry-points' | relative_url }})
-- Requesting bitcoin - [contact cards]({{ '/guide/payments/request/#contact-cards' | relative_url }})
+- [Requesting bitcoin &middot; Entry points]({{ '/guide/payments/request/#requesting-entry-points' | relative_url }})
+- [Requesting bitcoin &middot; Contact cards]({{ '/guide/payments/request/#contact-cards' | relative_url }})
 
-##### Browsing the wallet payment history (contacts help identify payments)
+</div>
+
+##### Browsing the wallet payment history
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/payments/contacts/annotated-activity.png"
+   retina = "/assets/images/guide/payments/contacts/annotated-activity@2x.png"
+   alt-text = ""
+   width = 250
+   height = 541
+   layout = "float-right-desktop -background -shadow"
+%}
 
 As discussed in the Activity page, assigning contacts to payments can help users better understand their financial activity.
 
-[Screen examples]
+Related:
 
-References
-- Activity page - [What is a transaction?]({{ '/guide/payments/activity/#what-is-a-transaction' | relative_url }})
-- Activity page - [/guide/payments/activity/#the-recipient-field]({{ '/guide/payments/request/payment-request-formats/' | relative_url }})
+- [Activity page &middot; What is a transaction?]({{ '/guide/payments/activity/#what-is-a-transaction' | relative_url }})
+- [Activity page &middot; The recipient field]({{ '/guide/payments/activity/#the-recipient-field' | relative_url }})
+
+</div>
 
 ##### Organizing contacts
 
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/payments/contacts/contact-options.png"
+   retina = "/assets/images/guide/payments/contacts/contact-options@2x.png"
+   alt-text = ""
+   width = 250
+   height = 541
+   layout = "float-right-desktop -background -shadow"
+%}
+
 Basic organizational features should be available, like search, merging duplicate contacts, deleting unused ones, etc.
 
-[Screen examples]
-
+</div>
 
 ---
 
