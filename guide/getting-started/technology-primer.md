@@ -62,7 +62,7 @@ It can take many years to understand bitcoin in every detail, but luckily you do
    layout = "float-right-desktop"
 %}
 
-You can own [fractions of 1 bitcoin]({{ '/guide/payments/units-and-symbols/' | relative_url }}), they are just numbers in a digital ledger of transactions. We call that ledger the bitcoin blockchain. Transactions are used to assign bitcoin from one [address]({{ '/guide/glossary/address' | relative_url }}) to another. This process reduces the available balance of the sending address and increases the balance of the receiving address. A small amount has to be added as the fee to pay for the verification.
+You can own [fractions of 1 bitcoin]({{ '/guide/payments/units-and-symbols/' | relative_url }}). They are just numbers in a digital ledger of transactions. We call that ledger the bitcoin blockchain. Transactions are used to assign bitcoin from one [address]({{ '/guide/glossary/address' | relative_url }}) to another. This process reduces the available balance of the sending address and increases the balance of the receiving address. A small amount has to be added as the fee to pay for the verification.
 
 Therefore, owning a bitcoin means being in control of one or more addresses that have received bitcoin.
 
@@ -100,7 +100,7 @@ Just as the internet allows computers to exchange information, the bitcoin netwo
 
 Imagine a global spreadsheet where all transactions get recorded, and all entries are publicly accessible. With bitcoin, each participant can [verify a transaction for themselves]({{ '/guide/getting-started/software/#explorers' | relative_url }}) in their copy of the spreadsheet. In comparison, traditional banks keep their spreadsheets private from each other and their customers. Besides opportunities for fraud, there are many points of failure due to this, so you can't guarantee a payment will always happen. Even though all transactions are stored publicly on bitcoin, there is no personally identifiable information attached to them.
 
-With thousands of nodes and tens of millions of users worldwide, it becomes implausible to manipulate or corrupt the previously agreed-upon transactions stored in the blockchain. To do so would require a majority of nodes to accept such a change.
+With thousands of nodes and tens of millions of users worldwide, it becomes implausible to manipulate or corrupt the previously agreed-upon transactions stored in the blockchain. Doing so would require a majority of nodes to accept such a change.
 </div>
 
 ## What is a blockchain?
@@ -134,7 +134,7 @@ Once a transaction is in a block that the network has accepted, it is considered
    layout = "float-right-desktop"
 %}
 
-While miners check that the transactions included in the block are valid, they must also be kept accountable that the information they are submitting is correct. After a miner constructs a block transactions, it must race against other miners to solve a cryptographic puzzle, which incentivizes them to only include valid transactions in the block. This process is called Proof of Work, and it is fundamental to the security of the blockchain. The first miner to solve the puzzle and submit a valid block to the network will earn all the fees from the transactions in the block and a [block reward]({{ '/guide/glossary/#block-reward' | relative_url }}) as compensation; however, if they submit an invalid block, it will be rejected by the network.
+While miners check that the transactions included in the block are valid, they must also be kept accountable that the information they are submitting is correct. After a miner constructs a block of transactions, it must race against other miners to solve a cryptographic puzzle, which incentivizes them to only include valid transactions in the block. This process is called Proof of Work, and it is fundamental to the security of the blockchain. The first miner to solve the puzzle and submit a valid block to the network will earn all the fees from the transactions in the block and a [block reward]({{ '/guide/glossary/#block-reward' | relative_url }}) as compensation; however, if they submit an invalid block, it will be rejected by the network.
 
 We also call the bitcoin blockchain "base layer" as it provides strong security, and is the foundation for other things to be built on top.
 
@@ -218,7 +218,7 @@ A payment channel is a [joint account]({{'/guide/glossary/#multi-signature-walle
    layout = "float-right-desktop"
 %}
 
-The Lightning network is a network of payment channels. Lightning nodes allow you to have multiple channels with different parties to route payments through. This new network forms a second layer on top of bitcoin and has some privacy benefits too since payments are not individually recorded on the blockchain. Only when the channel is opened and the final settlement transaction gets broadcasted when closing the payment channel.
+The Lightning network is a network of payment channels. Lightning nodes allow you to have multiple channels with different parties to route payments through. This new network forms a second layer on top of bitcoin. This has some privacy benefits too: payment information is only recorded to the blockchain when the payment channel is opened and closed. Every payment that happens in between the opening and closing is not stored “on-chain”.
 </div>
 
 ## What are ways to receive bitcoin?
