@@ -84,7 +84,7 @@ Typical user flows involving contacts are:
 
 - Choosing a contact to send bitcoin to
 - Assigning a contact to a generated payment request
-- Browsing the wallet payment history (contacts help identify payments)
+- Browsing the wallet payment history
 - Organizing contacts (merging duplicates, deletion, etc)
 
 </div>
