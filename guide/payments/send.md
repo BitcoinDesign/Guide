@@ -216,7 +216,12 @@ Particularly with payments for larger amounts, it is good practice to allow user
 
 Payments initiated via invoices which don't require any additional input by the user can avoid this review step, as the whole user interaction is one of review and confirmation.
 
-Wallets that offer features for [spending limits]({{ '/guide/onboarding/protecting-a-wallet/#wallet-limits' | relative_url }}) or support [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}) schemes for additional security may ask users to go through additional confirmation steps here.
+The review and confirm screen is a great place to include an additional security step. For example:
+- A wallet that supports [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}) schemes may ask for a signature from one of the user's other keys.
+- A wallet that supports [spending limits]({{ '/guide/onboarding/protecting-a-wallet/#wallet-limits' | relative_url }}) may remind the user of these limits.
+- A [daily spending]({{ '/guide/designing-products/personal-finance/#day-to-day-spending' | relative_url }}) wallet may ask the user to input biometric data or a PIN to proceed.
+
+These security steps should come after the user has selected all other options regarding the payment. This final security step represents the user's final consent to the payment they are making.
 
 </div>
 
