@@ -112,7 +112,7 @@ TODO: Graphic / consider how to get the ui generating multiple addresses. make i
    caption = "Labeling of receiving addresses can help minimize privacy leaks when spending the coins in the future."
 %}
 
-If the application supports it, the user can [add additional details]({{ "/guide/payments/request/#inputting-additional-payment-details" | relative_url }}) to a payment when receiving bitcoin. This practice is often called address labeling. Not only does this help to remember what payments were for, it also enables preventative measures for preserving privacy. Labeling receiving addresses([UTXOs]({{ "/guide/glossary/#unspent-transaction-output-utxo" | relative_url }})) with the sender’s name can inform decisions for which UTXOs are selected as inputs in future transactions, this is often referred to as [coin control]({{ "/guide/glossary/#coin-control" | relative_url }}).
+If the application supports it, the user can [add additional details]({{ "/guide/payments/send/#manual-payment-initiation" | relative_url }}) to a payment when receiving bitcoin. This practice is often called address labeling. Not only does this help to remember what payments were for, it also enables preventative measures for preserving privacy. Labeling receiving addresses([UTXOs]({{ "/guide/glossary/#unspent-transaction-output-utxo" | relative_url }})) with the sender’s name can inform decisions for which UTXOs are selected as inputs in future transactions, this is often referred to as [coin control]({{ "/guide/glossary/#coin-control" | relative_url }}).
 
 Some applications make it possible to filter UTXOs by label to make such selections easier.
 
@@ -159,8 +159,8 @@ There is no perfect solution to guarantee 100% privacy that lasts forever becaus
 Next, let's dive into how to display various [units & symbols]({{ '/guide/payments//units-and-symbols/' | relative_url }}) in bitcoin applications.
 
 {% include next-previous.html
-   previousUrl = "/guide/payments/send/"
-   previousName = "Sending bitcoin"
+   previousUrl = "/guide/payments/activity/"
+   previousName = "Activity"
    nextUrl = "/guide/payments//units-and-symbols/"
    nextName = "Units & Symbols"
 %}

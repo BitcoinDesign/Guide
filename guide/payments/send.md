@@ -289,11 +289,11 @@ Routing is a probabilistic endeavor. For example, a routing algorithm may identi
 
 ---
 
-Next, we cover [privacy considerations]({{ '/guide/payments/privacy' | relative_url }}) when to consider when making bitcoin payments.
+Now that we've tackled sending and receiving, let's look at how we can summarize this [activity]({{ '/guide/payments/activity' | relative_url }}) and make it useful.
 
 {% include next-previous.html
    previousUrl = "/guide/payments/request/payment-request-formats"
    previousName = "Requesting bitcoin"
-   nextUrl = "/guide/payments/privacy/"
-   nextName = "Payments privacy"
+   nextUrl = "/guide/payments/activity/"
+   nextName = "Activity"
 %}
