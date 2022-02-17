@@ -449,7 +449,7 @@ While the bitcoin network only stores transactions, a wallet is more than just a
 
 Wallet software can support users and make this easier by offering organizational features and automated organization as it is possible.
 
-This is not only helpful to users but can also help improve privacy. Since the individual transaction history can be traced, it is helpful to isolate transactions by the sender and/or recipient. If I receive bitcoin from an exchange and then pay a store, then there is a chance that personal information about myself can be uncovered by making that connection. With well-labeled transactions, wallets can help users avoid this type of situation.
+This is not only helpful to users but can also help improve privacy. Since the individual transaction history can be traced, it is helpful to isolate transactions by the sender and/or recipient. If I receive bitcoin from an exchange and then pay a store, then there is a chance that personal information about myself can be uncovered by making that connection. With well-labeled transactions, wallets can help users avoid this type of situation. For more, see the [Activity]({{ '/guide/payments/activity/' | relative_url }}) page.
 
 ## Switching wallets
 

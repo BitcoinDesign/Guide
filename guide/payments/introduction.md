@@ -48,6 +48,12 @@ An introduction to how sending bitcoin works.
 
 ---
 
+### [Activity]({{ '/guide/payments/activity/' | relative_url }})
+
+A look at how we can let users conveniently browse and work with their payment history and other application activity.
+
+---
+
 ### [Contacts]({{ '/guide/payments/contacts/' | relative_url }})
 
 Simplifing how users work with invoices, addresses and payments via contacts.
