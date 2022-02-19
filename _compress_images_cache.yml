@@ -1667,3 +1667,5 @@ assets/images/guide/payments/activity/sending.png: sending.png
 assets/images/guide/payments/activity/sending@2x.png: sending@2x.png
 assets/images/guide/payments/activity/activity-bad-example.png: activity-bad-example.png
 assets/images/guide/payments/activity/activity-bad-example@2x.png: activity-bad-example@2x.png
+assets/images/guide/payments/send/enter-pin-before-payment.png: enter-pin-before-payment.png
+assets/images/guide/payments/send/enter-pin-before-payment@2x.png: enter-pin-before-payment@2x.png
