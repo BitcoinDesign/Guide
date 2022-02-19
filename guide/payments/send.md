@@ -281,7 +281,7 @@ There are situations in which users may want to make more complex adjustments to
 
 **Coin selection**
 
-Some users may prefer to choose which of their bitcoin (UTXOs to be precise) to send, in order to protect their privacy. More on this topic on the [Coin selection page]({{ '/guide/glossary/coin-selection/' | relative_url }}) page.
+Some users may prefer to choose which of their bitcoin (UTXOs to be precise) to send, in order to protect their privacy. More on this topic on the [Coin selection page]({{ '/guide/glossary/coin-selection/' | relative_url }}).
 
 **Lightning routing options**
 
