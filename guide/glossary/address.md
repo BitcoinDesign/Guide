@@ -101,7 +101,7 @@ The receiver should then have the ability to switch to a Script or Taproot addre
 
 ## Address reuse
 
-Address reuse is the practice of receiving more than one transaction to a single Bitcoin address. Although there are obvious usability benefits of reusing an address, this practice is not recommended due to the negative impact on privacy and security. Reusing an address makes it easier to correlate transactions with a particular user, thus hurting the pseudonymity of the user and thus the overall censorship resistance of the network. More on address re-use [here](https://en.bitcoin.it/wiki/Address_reuse)
+Address reuse is the practice of receiving more than one transaction to a single bitcoin address. Although there are obvious usability benefits of reusing an address, this practice is not recommended due to the negative impact on privacy and security. Reusing an address makes it easier to correlate transactions with a particular user, thus hurting the pseudonymity of the user and thus the overall censorship resistance of the network. More on address re-use [here](https://en.bitcoin.it/wiki/Address_reuse)
 
 ---
 
