@@ -134,7 +134,7 @@ When denominating invoices in fiat, custom expiry times should be used to preven
 
 **Irrespective of amount, invoice is shared externally:** Set a zero amount and use a long (24h) expiry
 
-**Set amount, denominated in bitcoin:** Use a large (24h) expiry
+**Set amount, denominated in bitcoin:** Use a long (24h) expiry
 
 **Advanced users:** Allow to set their own expirations to suit their unique use case
 
