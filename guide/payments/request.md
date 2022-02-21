@@ -28,9 +28,9 @@ To request bitcoin, a receiver must provide the sender with a payment request. T
 
 When a user requests bitcoin, there are three general ways in which this can be done:
 
-- Single-use payment requests, for one-time and in-person payments
-- Reusable payment requests, for receiving recurring payments
-- Withdraw requests, when a pull payment is required such as refunding someone
+- Single-use payment requests
+- Reusable payment requests
+- Withdraw requests
 
 <div class="image-slide-gallery">
 
