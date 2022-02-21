@@ -112,7 +112,7 @@ Zero amount invoices were [exploitable](https://github.com/ottosuess/ottosuess.g
 
 ### Invoice expirations
 
-Single-use lightning invoices aren't permanent; [they expire over time]({{ "/guide/glossary/#lightning-invoice" | relative_url }}). However, this expiration time can be modified unlocking unique use cases and improving usability in some situations.
+Single-use lightning invoices aren't permanent; [they expire over time]({{ "/guide/glossary/#lightning-invoice" | relative_url }}). However, this expiration time can be modified, unlocking unique use cases and improving usability in some situations.
 
 <div class="center" markdown="1">
 
