@@ -78,7 +78,6 @@ imagesErrors:
       alt: A screen showing error details
       caption: Access to error details for problem-solving.
 imagesReview:
-imagesReview:
     - file: confirm
       alt: Invoice approval screen
       caption: A compact summary to confirm the information is accurate.
