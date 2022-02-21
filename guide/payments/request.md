@@ -106,7 +106,7 @@ Units must be toggleable between bitcoin, satoshi and the users local currency. 
 
 {% include /tip/open.html label="Did you know?" icon="info" color="blue" %}
 
-Zero amount invoices use to be able to [be exploited](https://github.com/ottosuess/ottosuess.github.io/blob/master/zero-amount-payments.md) by intermediate routing nodes to steal a senders bitcoin. This has since been patched and it's recommended that all lightning enabled wallets allow sending and receiving to zero amount invoices.
+Zero amount invoices were [exploitable](https://github.com/ottosuess/ottosuess.github.io/blob/master/zero-amount-payments.md) by intermediate routing nodes to steal a senders bitcoin. This has since been patched and it's recommended that all lightning enabled wallets allow sending and receiving to zero amount invoices.
 
 {% include /tip/close.html %}
 
