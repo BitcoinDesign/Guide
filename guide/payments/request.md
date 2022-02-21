@@ -102,7 +102,7 @@ When generating single-use payment requests, the receiver may want to add an amo
 
 Zero amount single-use payment requests should also be easily generated from the home screen by tapping request without an amount entered. By allowing the sender to set the amount when they are ready to pay, reduces both parties exposure to price volatility, as the amount paid in bitcoin will be more accurate in dollars.
 
-Units must be toggleable between bitcoin, satoshi and the users local currency. Ensure the unit being entered is clear to prevent entering of the wrong unit amount. More on the [Units & Symbols page]({{ "/guide/payments/units-and-symbols/" | relative_url }}).
+Units must be toggleable between bitcoin, satoshi and the users local currency. Ensure the unit being entered is clearly visible, to prevent entering the wrong unit amount. More on the [Units & Symbols page]({{ "/guide/payments/units-and-symbols/" | relative_url }}).
 
 {% include /tip/open.html label="Did you know?" icon="info" color="blue" %}
 
