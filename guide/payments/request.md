@@ -192,7 +192,9 @@ This meta data should also be able to be [backed up]({{ "/guide/onboarding/backi
 
 ## Reusable payment requests
 
-Reusable payment requests offer an improved user experience, more flexibility, and enable unique use cases compared to single-use payment requests. Reusable payment requests avoids users having to manually generate a payment request each time they need to receive bitcoin.
+Reusable payment requests offer an improved user experience, more flexibility, and enable unique use cases compared to single-use payment requests. Reusable payment requests avoid users having to manually generate a payment request each time they need to receive bitcoin.
+
+Currently there are limited reusable payment request options available. However, several are being worked on or are in the early stages of adoption. For Lightning, there are [BOLT12 offers](https://bolt12.org/) and AMP invoices. For on-chain, [reusable payment codes](https://bips.xyz/47) can be used to privately receive bitcoin in a reusable way on-chain. Learn more about these on our [payment request formats]({{ "/guide/payments/request/payment-request-formats/" | relative_url }}) page.
 
 ### Lightning address
 
@@ -257,10 +259,6 @@ Having the option to quickly generate a personalised QR code of your node ID fro
 This form of reusable payment request is not widely supported but offer a unique, way for users to make payments, tip users, and send messages over the Lightning network.
 
 </div>
-
-Several not widely supported reusable payments request formats exist. For Lightning, there are [BOLT12 offers](https://bolt12.org/) and AMP invoices.
-
-On-chain there are reusable payment codes [BIP 47](https://bips.xyz/47) and [xpubs]({{ "/guide/glossary/#extended-public-key-xpub-ypub-zpub" | relative_url }}), which can be used to generate addresses for receiving bitcoin on-chain. Standard addresses can be used but this is advised against due to [privacy concerns]({{ "/guide/payments/privacy/#generate-a-new-address-for-each-on-chain-payment" | relative_url }}). Learn more about these on our [payment request formats]({{ "/guide/payments/request/payment-request-formats/" | relative_url }}) page.
 
 ## Withdrawal request
 

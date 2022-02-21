@@ -35,6 +35,12 @@ Addresses are used for transactions on the base layer. More details on the [addr
 
 Lightning invoices are the basic payment mechanism on the Lightning network. They are usually set to expire after 1 hour and should only be paid once for best security and privacy. Invoices must be created by the recipient and shared with the sender, who then makes the payment.
 
+{% include tip/open.html color="red" icon="forbid" label="Lightning invoices are not addresses" %}
+
+It could be tempting to refer to a Lightning invoice as a “lightning address.” Doing so could be confused with the [lightning address]({{'/guide/payments/request/payment-request-formats/#lightning-addresses' | relative_url}}) protocol described below. Therefore, avoid calling an invoice an address. A “payment request” would be a better synonym for “invoice.”
+
+{% include tip/close.html %}
+
 ### Offers ([BOLT 12](https://bolt12.org))
 
 This draft specification has similarities with to LNURL-Pay and LNURL-Withdraw, but uses the Lightning network itself as the communication channel.

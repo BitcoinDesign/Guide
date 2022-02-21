@@ -48,6 +48,12 @@ An introduction to how sending bitcoin works.
 
 ---
 
+### [Activity]({{ '/guide/payments/activity/' | relative_url }})
+
+A look at how we can let users conveniently browse and work with their payment history and other application activity.
+
+---
+
 ### [Privacy]({{ '/guide/payments/privacy/' | relative_url }})
 
 An overview of how to help users maintain transaction privacy with bitcoin.

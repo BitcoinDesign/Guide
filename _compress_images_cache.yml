@@ -1646,6 +1646,17 @@ assets/images/contribute/wallt-design-imporvement.png: wallt-design-imporvement.
 assets/images/contribute/design-guide.png: design-guide.png
 assets/images/contribute/zeus.png: zeus.png
 assets/images/contribute/wallet-design-sprints.png: wallet-design-sprints.png
+assets/images/guide/payments/activity/semi-annotated-activity.png: semi-annotated-activity.png
+assets/images/guide/payments/activity/semi-annotated-activity@2x.png: semi-annotated-activity@2x.png
+assets/images/guide/payments/activity/activity-ids.png: activity-ids.png
+assets/images/guide/payments/activity/activity-ids@2x.png: activity-ids@2x.png
+assets/images/guide/payments/activity/activity-preview.jpg: activity-preview.jpg
+assets/images/guide/payments/activity/invoice.png: invoice.png
+assets/images/guide/payments/activity/invoice@2x.png: invoice@2x.png
+assets/images/guide/payments/activity/sending.png: sending.png
+assets/images/guide/payments/activity/sending@2x.png: sending@2x.png
+assets/images/guide/payments/activity/activity-bad-example.png: activity-bad-example.png
+assets/images/guide/payments/activity/activity-bad-example@2x.png: activity-bad-example@2x.png
 assets/images/guide/payments/request/long-expiry.png: long-expiry.png
 assets/images/guide/payments/request/long-expiry@2x.png: long-expiry@2x.png
 assets/images/guide/payments/request/single-use-payment-request.png: single-use-payment-request.png
