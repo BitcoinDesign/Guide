@@ -308,7 +308,7 @@ Plaintext involves simply copying and sharing a payment request with a sender.
 
 #### Payment link
 
-Payment links are hypertext that contain a bitcoin payment request. They often contain a [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier), **bitcoin:** for an on-chain and **lightning:** for Lightning, so they can be identified by the device clicking them. Other data is also usually included in these payment links alongside the request such as a note or label.
+Payment links are hypertext that contain a bitcoin payment request. They often contain a [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier), `bitcoin:` for an on-chain and `lightning:` for Lightning, so they can be identified by the device clicking them. Other data is also usually included in these payment links, alongside the request such as a note or label.
 
 #### QR code
 
