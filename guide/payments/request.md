@@ -130,7 +130,7 @@ When denominating invoices in fiat, custom expiry times should be used to preven
 
 **Set amount, denominated in fiat:** Use a short expiry and have the invoice refresh each time it expires
 
-**No amount, denominated in fiat:** Use a large (24h) expiry
+**No amount, denominated in fiat:** Use a long (24h) expiry
 
 **Irrespective of amount, invoice is shared externally:** Set a zero amount and use a large (24h) expiry
 
