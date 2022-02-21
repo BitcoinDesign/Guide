@@ -170,7 +170,7 @@ More on the [address types]({{ "/guide/glossary/address/" | relative_url }}) and
 
 ### Meta data
 
-A payment request with only standard data like an amount and date communicates little to both parties about the payment.
+A payment request with only standard data, like an amount and date, communicates little to both parties about purpose and context of the payment.
 
 <div class="center" markdown="1">
 
