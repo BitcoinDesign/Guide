@@ -75,8 +75,8 @@ Single-use payment requests are convenient for one-time or in-person payments. G
 <div class="image-slide-gallery">
 
 {% include picture.html
-   image = "/assets/images/guide/payments/request/Home.png"
-   retina = "/assets/images/guide/payments/request/Home@2x.png"
+   image = "/assets/images/guide/payments/request/home.png"
+   retina = "/assets/images/guide/payments/request/home@2x.png"
    layout = "shadow"
    caption = "Hiding the balance and making it easy to generate a single-use payment request from the home page is recommended."
    alt-text = "Screen showing home screen number pad entry."
