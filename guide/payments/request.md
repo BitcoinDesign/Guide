@@ -70,7 +70,7 @@ When a user requests bitcoin, there are three general ways in which this can be 
 
 The most common way bitcoin is requested is in the form of single-use payment requests. Lightning payments use [BOLT11](https://github.com/lightning/bolts/blob/master/11-payment-encoding.md) invoices. On-chain uses [addresses of various types]({{ "/guide/glossary/address/" | relative_url }}). These two formats can be combined into a single payment request so senders can use what is most convenient for them.
 
-Single-use payment requests are convenient for one-time or in-person payments. Generating them should be fast and convenient from the users home screen. Wallet balances should not be shown when generating single-use payment requests. This is due to the users funds being visible to near by third-parties negatively impacting their privacy and putting the user at risk of theft.
+Single-use payment requests are convenient for one-time or in-person payments. Generating them should be fast and convenient from the users home screen. Wallet balances should not be shown when generating single-use payment requests. This is due to the users funds being visible to nearby third-parties, which negatively impacts their privacy and puts the user at risk of theft.
 
 <div class="image-slide-gallery">
 
