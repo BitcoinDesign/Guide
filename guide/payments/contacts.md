@@ -35,7 +35,7 @@ imagesAddContact:
       caption: A contact with a Lightning address associated.
     - file: manual-add-contact-with-on-chain-address
       alt: A contact with an on-chain address assigned
-      caption: A contact with an on-chain. Once a paymen is made to the address, it disappears from this list.
+      caption: A contact with an on-chain address attached. Once a payment is made to the address, it disappears from this list.
 imagesMultiAddressContact:
     - file: multi-address-contact
       alt: Contact screen with multiple transactions and addresses
