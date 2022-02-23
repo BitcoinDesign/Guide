@@ -11,7 +11,7 @@ image_base: /assets/images/guide/payments/contacts/
 imagesAddContact:
     - file: manual-add-empty
       alt: Empty contact list screen
-      caption: Initially, a walllets contact list is empty. Importing them from the device can be made available.
+      caption: Initially, a walllet's contact list is empty. Importing them from the device can be made available.
     - file: manual-add-first-contact-name
       alt: Screen asking the user to enter a name for a new contact
       caption: All a new contact needs is a name. Other information can be added later.
