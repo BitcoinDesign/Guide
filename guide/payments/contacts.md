@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Contacts
-description: An overview of how to help users maintain their financial privacy while using bitcoin.
+description: Design reference for a contacts feature in bitcoin wallets.
 nav_order: 4
 parent: Payments
 permalink: /guide/payments/contacts/
@@ -10,109 +10,109 @@ image: /assets/images/guide/payments/activity/contacts-preview.jpg
 image_base: /assets/images/guide/payments/contacts/
 imagesAddContact:
     - file: manual-add-empty
-      alt:
-      caption: Initially, a walllets contact list is empty.
+      alt: Empty contact list screen
+      caption: Initially, a walllets contact list is empty. Importing them from the device can be made available.
     - file: manual-add-first-contact-name
-      alt:
+      alt: Screen asking the user to enter a name for a new contact
       caption: All a new contact needs is a name. Other information can be added later.
     - file: manual-add-contact-no-addresses
-      alt:
+      alt: A contact with no added information
       caption: New contacts can already be assigned to outgoing invoices. But since no address is assigned, no outgoing payments can be made yet.
     - file: manual-add-contact-add-address
-      alt:
+      alt: Screen asking the user to enter a bitcoin address
       caption: Users can manually enter addresses to add.
     - file: manual-add-contact-add-address-details
-      alt:
+      alt: Address entry screen with expanded information about supported addresses
       caption: Information about supported address formats should be readily available.
     - file: manual-add-contact-add-address-valid
-      alt:
+      alt: Address entry screen with inline validation for a Lightning address
       caption: Inline validation lets users know about if addresses are accepted.
     - file: manual-add-contact-add-address-valid-on-chain
-      alt:
+      alt: Address entry screen with inline validation for an on-chain address
       caption: Particular properties of address types can be pointed out right away.
     - file: manual-add-contact-with-address
-      alt:
+      alt: A contact with a Lightning address assigned
       caption: A contact with a Lightning address associated.
     - file: manual-add-contact-with-on-chain-address
-      alt:
+      alt: A contact with an on-chain address assigned
       caption: A contact with an on-chain. Once a paymen is made to the address, it disappears from this list.
 imagesMultiAddressContact:
     - file: multi-address-contact
-      alt:
+      alt: Contact screen with multiple transactions and addresses
       caption: Example of a contact with multiple transactions and addresses.
     - file: multi-address-contact-options
-      alt:
+      alt: Options for editing a contacts screen
       caption: Options for editing and organizing the contact.
     - file: multi-address-contact-edit-labels
-      alt:
+      alt: Contacts screen in edit mode
       caption: Edit mode allows for re-ordering, deleting and renaming addresses.
     - file: multi-address-contact-address-detail
-      alt:
+      alt: Contact screen with an address details modal
       caption: Address details and options can be available on tap.
 imagesImportAddress:
     - file: lightning-address-input
-      alt:
+      alt: Modal showing that a Lightning address was detected on the clipboard
       caption: A modal is shown when an address has been imported via the clipboard, QR code scan, link click, etc.
     - file: lightning-address-input-add-contact
-      alt:
+      alt: Modal showing that a Lightning address was detected, with the 'Add contact' tab active
       caption: The user has switched to the "Add contact" tab.
     - file: lightning-address-input-new-contact
-      alt:
+      alt: Contact screen with the Lightning address assigned
       caption: The new contact is created with the address associated.
 imagesPayInvoice:
     - file: pay-invoice-with-details
-      alt:
+      alt: Invoice modal with rich details
       caption: This invoice includes rich data and the included address was automatically matched to an existing contact.
     - file: pay-invoice
-      alt:
+      alt: Invoice modal with minimal payment details
       caption: This is a minimal invoice, no matching contact could be identified.
     - file: sending-pick-contact
-      alt:
+      alt: Screen with a list of contacts to choose from
       caption: Tapping "Add contact" presents the user with a contact list modal.
     - file: pay-invoice-with-contact
-      alt:
+      alt: Invoice screen with a contact assigned
       caption: A basic invoice with an assigned contact.
     - file: pay-invoice-contact-with-tx
-      alt:
+      alt: Contact with a single transaction assigned
       caption: A contact with an assigned transaction, but no re-usable addresses.
     - file: pay-invoice-contact-with-tx-and-address
-      alt:
+      alt: Contact with a transaction and an address assigned
       caption: A contact with an assigned transaction and a re-usable address.
 imagesHome:
     - file: sending-home
-      alt:
+      alt: Home screen with amount input
       caption: The user enters an amount and taps "Pay".
     - file: sending-pick-contact
-      alt:
+      alt: Screen with a list of contacts to choose from
       caption: Next, the user is asked to choose a contact to send to.
     - file: sending-review
-      alt:
+      alt: Invoice screen with a contact assigned
       caption: Final review of the payment before sending it.
 imagesReceive:
     - file: receive-home
-      alt:
+      alt: Home screen with amount input
       caption: The user enters an amount and taps "Request".
     - file: receive-qr
-      alt:
+      alt: Payment request screen
       caption: An invoice screen with minimal information.
     - file: receive-qr-with-contact
-      alt:
+      alt: Payment request screen with a contact assigned
       caption: The same invoice with a contact assigned.
 imagesActivity:
     - file: activity
-      alt:
+      alt: Activity screen showing transactions with minimal information
       caption: By default, payments contain little to no contextual information.
     - file: activity-annotated
-      alt:
+      alt: Activity screen showing transactions with assigned contacts
       caption: Assigning contacts to payment makes them much easier to understand and work with.
     - file: activity-transaction
-      alt:
+      alt: Transaction details
       caption: Transaction detail screens should have convenient options to assign a contact.
     - file: sending-pick-contact
-      alt:
+      alt: Screen with a list of contacts to choose from
       caption: The user picks a contact in a slide-up modal.
     - file: activity-transaction-annotated
-      alt:
+      alt: Transaction details with assigned contact
       caption: A payment with an assigned contact.
 
 ---
@@ -122,7 +122,7 @@ imagesActivity:
     retina = "/assets/images/guide/payments/contacts/contacts-header@2x.jpg"
     mobile = "/assets/images/guide/payments/contacts/contacts-header-mobile.jpg"
     mobileRetina = "/assets/images/guide/payments/contacts/contacts-header-mobile@2x.jpg"
-    alt-text = ""
+    alt-text = "Illustration of large contact cards"
     width = 1600
     height = 400
     layout = "full-width"
