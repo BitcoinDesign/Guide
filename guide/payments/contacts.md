@@ -46,6 +46,9 @@ imagesMultiAddressContact:
     - file: multi-address-contact-edit-labels
       alt:
       caption: Edit mode allows for re-ordering, deleting and renaming addresses.
+    - file: multi-address-contact-address-detail
+      alt:
+      caption: Address details and options can be available on tap.
 imagesImportAddress:
     - file: lightning-address-input
       alt:
@@ -135,7 +138,7 @@ imagesActivity:
 
 Whether we’re sending emails, physical mail, or following someone on social media, we primarily think in terms of names and faces, and not the respective address or user ID.
 
-Invoices, node IDs and other transaction endpoints in bitcoin and Lightning are highly unintuitive. Abstracting them via a contact list can create a much smoother user experience. There are many [payment request formats]({{ '/guide/payments/request/payment-request-formats/' | relative_url }}), each with unique properties, requiring unique design solutions. This page uses the more approachable term "address", along with various UI techniques, to abstract these complexities for users.
+Invoices, node IDs and other transaction endpoints in bitcoin and Lightning are highly unintuitive. Abstracting them via a contact list can create a much smoother user experience. There are many [payment request formats]({{ '/guide/payments/request/payment-request-formats/' | relative_url }}), each with unique properties and varying levels of maturity and adoption, requiring unique design solutions. This page uses the more approachable term "address", along with various UI techniques, to abstract these complexities for users.
 
 Let's go over common user interactions around contacts. This will illustrate how such a feature could work, and helps explain the underlying design problems and decisions.
 
@@ -165,13 +168,13 @@ Here, the user has scanned a payment request and assigns a contact to the paymen
 
 Some payment request formats may include an address that can receive payments repeatedly. In this case, the address is added to the contact for future use. Otherwise, only the payment is linked.
 
-Invoices may also contain recipient names. These can be used to suggest the name for a new contact to the user. Names can be spoofed, so they should not be automatically assigned.
+Invoices may also contain recipient names. These can be used to suggest the name for a new contact to the user. Names can be spoofed, so they should not be automatically assigned without user approval.
 
 {% include image-gallery.html pages = page.imagesPayInvoice %}
 
 ### Sending from the home screen
 
-Initiating a payment can be as simple as entering an amount and tapping a contact that has a re-usable address associated. For other contacts, an extra step is needed to manually enter a destination address.
+Initiating a payment can be as simple as entering an amount and tapping a contact that has a re-usable address associated. Otherwise, an extra step is needed to manually enter a destination address.
 
 {% include image-gallery.html pages = page.imagesHome %}
 
