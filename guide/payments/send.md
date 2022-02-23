@@ -77,6 +77,9 @@ imagesErrors:
     - file: generic-error-details
       alt: A screen showing error details
       caption: Access to error details for problem-solving.
+    - file: offline-error
+      alt: A screen showing error details
+      caption: If the receiving Lightning wallet is offline, let the user know how to address this problem.
 imagesReview:
     - file: confirm
       alt: Invoice approval screen
