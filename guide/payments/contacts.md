@@ -104,7 +104,7 @@ imagesActivity:
       caption: By default, payments contain little to no contextual information.
     - file: activity-annotated
       alt: Activity screen showing transactions with assigned contacts
-      caption: Assigning contacts to payment makes them much easier to understand and work with.
+      caption: Assigning contacts to payments makes them much easier to understand and work with.
     - file: activity-transaction
       alt: Transaction details
       caption: Transaction detail screens should have convenient options to assign a contact.
