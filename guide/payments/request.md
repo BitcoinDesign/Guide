@@ -384,7 +384,7 @@ Without Lightning services, a user will need to obtain some inbound liquidity be
 
 {% include picture.html
    image = "/assets/images/guide/onboarding/funding-a-wallet/opening-channel.png"
-   retina = "/assets/images/guide/onboarding/funding-a-wallet/opening-channel@2x.png.png"
+   retina = "/assets/images/guide/onboarding/funding-a-wallet/opening-channel@2x.png"
    layout = "shadow"
    caption = "Using Lightning services, a channel can be opened on-demand if there is no inbound liquidity when a payment is received."
    alt-text = "Screen showing channel being opened."
