@@ -444,7 +444,7 @@ On the Lightning network, receiving bitcoin requires an invoice. This makes it e
    layout = "float-left"
 %}
 
-While the bitcoin network only stores transactions, a wallet is more than just a list of bitcoin sent and received. Behind each transaction is an interaction between people and companies (or software). To make sense and work with transactions, they typically need to apply an organizational system. This could be a list of contacts they assign addresses to, tags like "allowance" or "business expenses," or simply describing what a transaction was for.
+While the bitcoin network only stores transactions, a wallet is more than just a list of bitcoin sent and received. Behind each transaction is an interaction between people and companies (or software). To make sense and work with transactions, they typically need to apply an organizational system. This could be a list of [contacts]({{ '/guide/payments/contacts/' | relative_url }}) they assign addresses to, tags like "allowance" or "business expenses," or simply describing what a transaction was for.
 </div>
 
 Wallet software can support users and make this easier by offering organizational features and automated organization as it is possible.
