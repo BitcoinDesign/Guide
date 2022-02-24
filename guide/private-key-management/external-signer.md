@@ -38,7 +38,7 @@ https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=261%3A1837
 
 # External signers
 
-External signers use, store, and manage private keys and other sensitive info, such as the user's recovery phrase, externally from the user's wallet application. The most common external signers used today are hardware wallets. Software-only external signing applications also exist, but are less secure than their hardware counterparts.
+External signers use, store, and manage private keys and other sensitive info, such as the user's [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}), externally from the user's wallet application. The most common external signers used today are hardware wallets. Software-only external signing applications also exist, but are less secure than their hardware counterparts.
 
 A wallet application supporting external signers removes the need for storing private keys locally by the wallet application. This decreases the theft risk as the keys can be isolated from the internet and/or a potentially malicious device.
 

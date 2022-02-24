@@ -44,7 +44,7 @@ Manual backups of Lightning channel state should only be performed with careful 
 ## Backing up wallet recovery data
 
 Manual backup should be used primarily for wallet recovery data. Wallet recovery data includes:
-- The recovery phrase
+- The [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }})
   - Type - BIP39, Electrum, Shamir Shares (SLIP39), AEZEED
   - Passphrase (optional)
 - Derivation path
