@@ -44,7 +44,7 @@ There are a number of common tasks a user might want to achieve the first time t
 
 While the first two, creating or restoring a wallet, normally need to be tackled straight away, the last two can be designed to fit the flow and capability of your application.
 
-It is common to see onboarding flows that implore the user to do a manual backup of their recovery phrase straight away, often before they have even gotten to see the main screen of the application. While this can make sure the user is aware of the need to backup, their motivation and ability to safely do this at that exact moment might be limited.
+It is common to see onboarding flows that implore the user to do a manual backup of their [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) straight away, often before they have even gotten to see the main screen of the application. While this can make sure the user is aware of the need to backup, their motivation and ability to safely do this at that exact moment might be limited.
 
 Alternative approaches can be to wait and prompt the user only once there are funds in the wallet, at regular intervals, or to use an automatic cloud backup for small amounts. It is up to you as the application designer to decide what works best in your users’ use case.
 

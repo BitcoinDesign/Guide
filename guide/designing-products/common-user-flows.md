@@ -282,7 +282,7 @@ Like fiat currencies, securely storing funds can be as simple as storing some co
 
 ## Backing up a wallet
 
-To enable recovery of a wallet that uses the manual backup scheme for private key management, we should ask users to securely back up their keys with their recovery phrase (and for full compatibility, [derivation path](/guide/glossary/#derivation-path) and [output descriptors](/guide/glossary/#output-script-descriptor)) when they create new wallets.  See also, [Wallet interoperability](/guide/designing-products/wallet-interoperability/) and [bitcoin backups](/guide/private-key-management/backups/).
+To enable recovery of a wallet that uses the manual backup scheme for private key management, we should ask users to securely back up their keys with their [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) (and for full compatibility, [derivation path](/guide/glossary/#derivation-path) and [output descriptors](/guide/glossary/#output-script-descriptor)) when they create new wallets.  See also, [Wallet interoperability](/guide/designing-products/wallet-interoperability/) and [bitcoin backups](/guide/private-key-management/backups/).
 
 ## Importing an existing wallet
 

@@ -37,7 +37,7 @@ layout = "full-width"
 
 ### How it works
 
-The user's wallet recovery data and channel states are backed up on their respective cloud storage provider. The recovery phrase only needs to be backed up once. However, channel states may need to be backed up frequently because they change every time the user's wallet sends, receives, or routes a payment; therefore, the channel state should be backed up automatically.
+The user's wallet recovery data and channel states are backed up on their respective cloud storage provider. The [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) only needs to be backed up once. However, channel states may need to be backed up frequently because they change every time the user's wallet sends, receives, or routes a payment; therefore, the channel state should be backed up automatically.
 
 If the user's device is lost, stolen, or broken, they can use the backup from their cloud storage account (such as Apple iCloud or Google Drive) to regain access to their funds. To learn more about the technical details, hop over to the [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) section on this topic.
 
