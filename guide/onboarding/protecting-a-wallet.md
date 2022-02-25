@@ -47,7 +47,7 @@ Illustration sources
 
 ---
 
-Bitcoin wallets contain sensitive information such as recovery phrases, balances, transaction histories, and more. Therefore, it is crucial to add extra layers of security to keep private data, and access to sensitive functionality, out of bad actors' hands. Additional protection may also be necessary for users who share devices, such as parents with children.
+Bitcoin wallets contain sensitive information such as [recovery phrases]({{ '/guide/glossary/#recovery-phrase' | relative_url }}), balances, transaction histories, and more. Therefore, it is crucial to add extra layers of security to keep private data, and access to sensitive functionality, out of bad actors' hands. Additional protection may also be necessary for users who share devices, such as parents with children.
 
 ## Proactive support
 

@@ -42,7 +42,7 @@ General purpose hardware, like personal computers and smartphones, work great fo
 
 ## Physical backups
 
-Recovery phrases and other important recovery data such as descriptors are often backed up physically. Many simple, cheap, and robust physical backup solutions for bitcoin exist.
+[Recovery phrases]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) and other important recovery data such as descriptors are often backed up physically. Many simple, cheap, and robust physical backup solutions for bitcoin exist.
 
 {% include picture.html
    image = "/assets/images/guide/getting-started/hardware/hardware-seed-storage.jpg"

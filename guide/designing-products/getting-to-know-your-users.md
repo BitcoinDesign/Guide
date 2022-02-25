@@ -173,7 +173,7 @@ Motivators are specific user wants that are driving the user to seek out bitcoin
 ## Brainstorm solutions with your team
 With this information, you can craft solutions based on these barriers and motivators to create the best experience for a user like Josh.
 
-To weaken Josh's "Fear of losing a private key," a [wallet]({{ 'guide/getting-started/software/#wallets' | relative_url }}) might opt to initially backup an encrypted version of his recovery phrase to a cloud provider and educate him over time on how to take more control of his private key.
+To weaken Josh's "Fear of losing a private key," a [wallet]({{ 'guide/getting-started/software/#wallets' | relative_url }}) might opt to initially backup an encrypted version of his [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) to a cloud provider and educate him over time on how to take more control of his private key.
 
 Savings is a big motivator for Josh and so you should have a big focus on security and making sure a loss of funds over a long period of time is virtually impossible. Given that control is also a motivator, a wallet could aim to provide as much customizability as possible such as fee selection or coin selection.
 
