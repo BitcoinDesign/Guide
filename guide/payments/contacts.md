@@ -68,7 +68,7 @@ imagesPayInvoice:
       caption: This is a minimal invoice, no matching contact could be identified.
     - file: sending-pick-contact
       alt: Screen with a list of contacts to choose from
-      caption: Tapping "Add contact" presents the user with a contact list modal.
+      caption: Tapping "Link contact" presents the user with a contact list modal.
     - file: pay-invoice-with-contact
       alt: Invoice screen with a contact assigned
       caption: A basic invoice with an assigned contact.
