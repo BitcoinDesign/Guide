@@ -27,15 +27,22 @@ imagesAddContact:
     - file: manual-add-contact-add-address-valid
       alt: Address entry screen with inline validation for a Lightning address
       caption: Inline validation lets users know about if addresses are accepted.
-    - file: manual-add-contact-add-address-valid-on-chain
-      alt: Address entry screen with inline validation for an on-chain address
-      caption: Particular properties of address types can be pointed out right away.
     - file: manual-add-contact-with-address
       alt: A contact with a Lightning address assigned
       caption: A contact with a Lightning address associated.
+imagesSupportedFormats:
+    - file: manual-add-contact-add-address-valid-on-chain
+      alt: Address entry screen with inline validation for an on-chain address
+      caption: Particular properties of address types can be pointed out right away.
     - file: manual-add-contact-with-on-chain-address
       alt: A contact with an on-chain address assigned
       caption: A contact with an on-chain address attached. Once a payment is made to the address, it disappears from this list.
+    - file: manual-add-contact-add-address-xpub-toggle
+      alt:
+      caption: You may want to support certain address formats to give users flexibility, but ensure they understand the implications.
+    - file: manual-add-contact-add-address-xpub-error
+      alt:
+      caption: Alternatively, you may not want to support certain formats. Be conscious not to lock users out of making important payments when they need to.
 imagesMultiAddressContact:
     - file: multi-address-contact
       alt: Contact screen with multiple transactions and addresses
@@ -130,6 +137,7 @@ imagesActivity:
 
 
 # Contacts
+{:.no_toc}
 
 <!--
 
@@ -142,11 +150,26 @@ Invoices, node IDs and other transaction endpoints in bitcoin and Lightning are 
 
 Let's go over common user interactions around contacts. This will illustrate how such a feature could work, and helps explain the underlying design problems and decisions.
 
+---
+
+<div class="glossary-toc" markdown="1">
+* Table of contents
+{:toc}
+</div>
+
+---
+
 ### Adding a contact
 
 The most basic interaction is that a user manually adds a contact by entering their name and an address. This is likely not the most common user flow, as most contacts will be added to incoming payment requests, as illustrated further below. But wallets should generally support manual options, as users may not be able to avoid them.
 
 {% include image-gallery.html pages = page.imagesAddContact %}
+
+### Supporting various payment request formats
+
+Based on your use case, your application may choose to only support certain payment request formats. It should still recognize all formats, and provide the user with appropriate feedback. You may also choose to add warnings before permitting use of certain formats if there are privacy and security risks the user should be aware of.
+
+{% include image-gallery.html pages = page.imagesSupportedFormats %}
 
 ### Contact editing
 
