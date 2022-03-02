@@ -126,7 +126,13 @@ Single-use lightning invoices aren't permanent; [they expire over time]({{ "/gui
    height = 541
 %}
 
-When denominating invoices in fiat, custom expiry times should be used to prevent exposure to price volatility. Below are some [recommendations](https://d.elor.me/2022/01/lightning-invoice-expiration-ux-considerations/) from UX researcher Stephen DeLorme for invoice expirations:
+When denominating invoices in fiat, custom expiries should be used to prevent exposure to price volatility.
+
+If requesting a specific amount denominated in fiat, use a shorter expiry and have the invoice refresh each time it expiries. For a wallet designed for in-person payments, a 30 - 60 second expiry works well.
+
+If there is no amount defined on the invoice, the invoice is denominated in bitcoin, or the invoice needs to be shared in a message, then use a longer expiry, like 24 hours.
+
+While it is good to allow users to define their own custom expiries, remember that only advanced users will do this. Choose a sensible default that makes sense for your user-base and how the wallet is intended to be used.
 
 **Set amount, denominated in fiat:** Use a short expiry and have the invoice refresh each time it expires
 
