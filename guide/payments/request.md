@@ -22,7 +22,7 @@ Illustration source
 
 # Requesting bitcoin
 
-To request bitcoin, a receiver must provide the sender with a payment request. There are many ways to do this and [payment request formats]({{ "/guide/payments/request/payment-request-formats/" | relative_url }}) that can be used. This page covers generating, presenting, and sharing payment requests. We also cover receiving bitcoin.
+To request bitcoin, the receiver must provide the sender with a payment request. There are many ways to do this and [payment request formats]({{ "/guide/payments/request/payment-request-formats/" | relative_url }}) that can be used. This page covers generating, presenting, and sharing payment requests. We also cover receiving bitcoin.
 
 ## Ways to request
 
