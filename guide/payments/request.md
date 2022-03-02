@@ -120,7 +120,7 @@ Single-use lightning invoices aren't permanent; [they expire over time]({{ "/gui
    image = "/assets/images/guide/payments/request/single-use-payment-request-settings.png"
    retina = "/assets/images/guide/payments/request/single-use-payment-request-settings@2x.png"
    layout = "float-left-desktop -background -shadow"
-   caption = "Invoice expiry times should be adjusted for the users use case."
+   caption = "Invoice expiries should be adjusted for the users use case."
    alt-text = "Screen showing single payment request settings."
    width = 250
    height = 541
