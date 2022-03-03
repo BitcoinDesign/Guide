@@ -98,6 +98,7 @@ Below is an example of some carousel screens that might be useful in helping a u
    retina = "/assets/images/guide/onboarding/first-use/product-intro-1@2x.png"
    alt-text = "Introduction screen explaining ownership"
    caption = "Talk about ownership"
+   layout = "shadow"
    width = 250
    height = 541
 %}
@@ -107,6 +108,7 @@ Below is an example of some carousel screens that might be useful in helping a u
    retina = "/assets/images/guide/onboarding/first-use/product-intro-2@2x.png"
    alt-text = "Introduction screen explaining recovery"
    caption = "Talk about recovery"
+   layout = "shadow"
    width = 250
    height = 541
 %}
@@ -116,6 +118,7 @@ Below is an example of some carousel screens that might be useful in helping a u
    retina = "/assets/images/guide/onboarding/first-use/product-intro-3@2x.png"
    alt-text = "Introduction screen explaining security"
    caption = "Talk about security"
+   layout = "shadow"
    width = 250
    height = 541
 %}
