@@ -38,11 +38,14 @@ imagesSupportedFormats:
       alt: A contact with an on-chain address assigned
       caption: A contact with an on-chain address attached. Once a payment is made to the address, it disappears from this list.
     - file: manual-add-contact-add-address-xpub-toggle
-      alt:
+      alt: Add address screen with a warning users need to accept
       caption: You may want to support certain address formats to give users flexibility, but ensure they understand the implications.
     - file: manual-add-contact-add-address-xpub-error
-      alt:
+      alt: Add address screen showing that an address can't be used
       caption: Alternatively, you may not want to support certain formats. Be conscious not to lock users out of making important payments when they need to.
+    - file: manual-add-contact-add-address-not-supported
+      alt: Add address screen indicating that an address format is not supported
+      caption: Make sure to recognize unsupported formats with appropriate messaging.
 imagesMultiAddressContact:
     - file: multi-address-contact
       alt: Contact screen with multiple transactions and addresses
@@ -59,10 +62,10 @@ imagesMultiAddressContact:
 imagesImportAddress:
     - file: lightning-address-input
       alt: Modal showing that a Lightning address was detected on the clipboard
-      caption: A modal is shown when an address has been imported via the clipboard, QR code scan, link click, etc.
+      caption: A modal is shown when an address has been imported via the clipboard or other methods.
     - file: lightning-address-input-add-contact
-      alt: Modal showing that a Lightning address was detected, with the 'Add contact' tab active
-      caption: The user has switched to the "Add contact" tab.
+      alt: Scren for selecting a contact
+      caption: The user has tapped "Add contact" and then taps "+" to add a new contact.
     - file: lightning-address-input-new-contact
       alt: Contact screen with the Lightning address assigned
       caption: The new contact is created with the address associated.
@@ -141,6 +144,13 @@ imagesActivity:
 
 <!--
 
+This page describes a UI system and user flows to handle contacts in a mobile bitcoin wallet.
+Contacts are used as a mean to abstract dealing with complex addresses and other payment
+formats. Focus is on user interactions, with the technical underpinnings relegated to
+other pages.
+
+Figma source for screen mock-ups:
+https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-UI-Kit?node-id=3120%3A75611
 
 -->
 
@@ -164,6 +174,8 @@ Let's go over common user interactions around contacts. This will illustrate how
 The most basic interaction is that a user manually adds a contact by entering their name and an address. This is likely not the most common user flow, as most contacts will be created with incoming payment requests, as illustrated further below. But wallets should generally support manual options, as users may not be able to avoid them.
 
 {% include image-gallery.html pages = page.imagesAddContact %}
+
+You may choose to require [user verification]({{ '/guide/onboarding/protecting-a-wallet/#preventing-unwanted-access' | relative_url }}) (like PIN entry) when adding or updating contacts. This reduces the risk that contact information is tampered with and payments are sent to wrong addresses.
 
 ### Supporting various payment request formats
 
@@ -216,6 +228,8 @@ When browsing the [activity]({{ '/guide/payments/activity/' | relative_url }}) s
 ---
 
 Contacts are closely intertwined with [sending]({{ '/guide/payments/send/' | relative_url }}), [requesting]({{ '/guide/payments/request/' | relative_url }}), and the [activity]({{ '/guide/payments/activity/' | relative_url }}) screen. When designing these user flows, pay close attention to how they connect. The less convenient it is for users to assign contacts, the less likely they are to use this feature and the higher the chance that they are exposed to the complexities of the various payment request formats.
+
+Your application should also try to provide convenient backup for contacts, for example, via [automatic cloud backup]({{ '/guide/onboarding/backing-up-a-wallet/cloud-backup/' | relative_url }}).
 
 ---
 
