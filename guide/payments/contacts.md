@@ -189,7 +189,7 @@ This flow can also be initiated by scanning a QR code or tapping a payment link.
 
 Here, the user has scanned a payment request and assigns a contact to the payment.
 
-Some payment request formats may include an address that can receive payments repeatedly. In this case, the address is added to the contact for future use. Otherwise, only the payment is linked.
+Some payment request formats may include an address that can [receive payments repeatedly]({{ '/guide/payments/request/#reusable-payment-requests' | relative_url }}). In this case, the address is added to the contact for future use. For [single use payment requests]({{ '/guide/payments/request/#single-use-payment-requests' | relative_url }}), only the payment is linked.
 
 Invoices may also contain recipient names. These can be used to suggest the name for a new contact to the user. Names can be spoofed, so they should not be automatically assigned without user approval.
 
