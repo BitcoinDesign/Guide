@@ -161,7 +161,7 @@ Let's go over common user interactions around contacts. This will illustrate how
 
 ### Adding a contact
 
-The most basic interaction is that a user manually adds a contact by entering their name and an address. This is likely not the most common user flow, as most contacts will be added to incoming payment requests, as illustrated further below. But wallets should generally support manual options, as users may not be able to avoid them.
+The most basic interaction is that a user manually adds a contact by entering their name and an address. This is likely not the most common user flow, as most contacts will be created with incoming payment requests, as illustrated further below. But wallets should generally support manual options, as users may not be able to avoid them.
 
 {% include image-gallery.html pages = page.imagesAddContact %}
 
