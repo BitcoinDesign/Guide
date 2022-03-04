@@ -27,7 +27,7 @@ This term is often used interchangeably for very different things. A user can *d
 
 #### Bitcoin wallet
 
-All bitcoin-related data derived from and associated with a single recovery phrase. Most modern bitcoin wallets are HD wallets.
+All bitcoin-related data derived from and associated with a single [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}). Most modern bitcoin wallets are HD wallets.
 
 #### HD wallet
 

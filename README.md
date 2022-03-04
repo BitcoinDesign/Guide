@@ -12,7 +12,7 @@ An equally important goal is that the process of creating this guide nurtures an
 
 ## Process and how to contribute
 
-The process of creating the guide is meant to be as open and decentralized as possible, resulting in a sustainable model to run projects with the community. Most of the discussion happens in the [Bitcoin Design Slack](http://bitcoindesigners.org), in the #bitcoin-design-guide, and here on GitHub in [Issues](https://github.com/BitcoinDesign/Guide/issues), [Pull requests](https://github.com/BitcoinDesign/Guide/pulls) and [Discussions](https://github.com/BitcoinDesign/Guide/discussions).
+The process of creating the guide is meant to be as open and decentralized as possible, resulting in a sustainable model to run projects with the community. Most of the discussion happens in the [Bitcoin Design Slack](http://bitcoindesigners.org), in the #bitcoin-design-guide channel, and here on GitHub in [Issues](https://github.com/BitcoinDesign/Guide/issues), [Pull requests](https://github.com/BitcoinDesign/Guide/pulls) and [Discussions](https://github.com/BitcoinDesign/Guide/discussions). Also see the [roadmap](https://github.com/orgs/BitcoinDesign/projects/2) for an overview of current and upcoming activities.
 
 You can read more about [how to contribute](https://bitcoin.design/guide/contribute/).
 
@@ -41,6 +41,8 @@ Here is the content that is currently live:
 The process to create the guide started in the summer of 2020. The first draft outlines of the guide first existed as Google Docs, here are [Version 1](https://docs.google.com/document/d/1omAxwvCSRlo_u5UL3ThTXFhNccDuN7GJOi4RlZfk--w/edit#heading=h.75nvyav1r98b) and [Version 2](https://docs.google.com/document/d/1YiYeRIybGmxmErCOI4Jc8Qajz3JGM1JYVfUtpzyCzSk/edit?usp=sharing) for reference.
 
 On June 2, 2021, the community [announced](https://bitcoindesign.medium.com/announcing-the-bitcoin-design-guide-c4955d859fda) the launch of the initial version of the Bitcoin Design Guide to the public.
+
+On February 9, 2022, the community [announced](https://bitcoindesign.medium.com/design-better-lightning-wallets-with-the-bitcoin-design-guide-v2-2669f610ebc7) the completion of a major revision of the guide to include content about the Lightning network.
 
 ---
 
