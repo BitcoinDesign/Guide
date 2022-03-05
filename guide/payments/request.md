@@ -68,7 +68,7 @@ When a user requests bitcoin, there are three general ways in which this can be 
 
 ## Single-use payment requests
 
-The most common way bitcoin is requested is in the form of single-use payment requests. Lightning payments use [BOLT11](https://github.com/lightning/bolts/blob/master/11-payment-encoding.md) invoices. On-chain uses [addresses of various types]({{ "/guide/glossary/address/" | relative_url }}). These two formats can be combined into a single payment request so senders can use what is most convenient for them.
+The most common way bitcoin is requested is in the form of single-use payment requests. Lightning payments use [BOLT11](https://github.com/lightning/bolts/blob/master/11-payment-encoding.md) invoices. On-chain uses [BIP21](https://bips.xyz/21) and [addresses of various types]({{ "/guide/glossary/address/" | relative_url }}). A BOLT11 invoice can be [embedded into a BIP21 URI](https://github.com/sbddesign/bip21-site) to form a single payment request so senders can use what is most convenient for them and requesters do not have to be worried about requesting from on-chain or lightning.
 
 Single-use payment requests are convenient for one-time or in-person payments. Generating them should be fast and convenient from the users home screen. Wallet balances should not be shown when generating single-use payment requests. This is due to the users funds being visible to nearby third-parties, which negatively impacts their privacy and puts the user at risk of theft.
 
@@ -104,12 +104,6 @@ Zero amount single-use payment requests should also be easily generated from the
 
 Units must be toggleable between bitcoin, satoshi and the users local currency. Ensure the unit being entered is clearly visible, to prevent entering the wrong unit amount. More on the [Units & Symbols page]({{ "/guide/payments/units-and-symbols/" | relative_url }}).
 
-{% include /tip/open.html label="Did you know?" icon="info" color="blue" %}
-
-Zero amount invoices were [exploitable](https://github.com/ottosuess/ottosuess.github.io/blob/master/zero-amount-payments.md) by intermediate routing nodes to steal a senders bitcoin. This has since been patched and it's recommended that all lightning enabled wallets allow sending and receiving to zero amount invoices.
-
-{% include /tip/close.html %}
-
 ### Invoice expirations
 
 Single-use lightning invoices aren't permanent; [they expire over time]({{ "/guide/glossary/#lightning-invoice" | relative_url }}). However, this expiration time can be modified, unlocking unique use cases and improving usability in some situations.
@@ -134,17 +128,9 @@ If there is no amount defined on the invoice, the invoice is denominated in bitc
 
 While it is good to allow users to define their own custom expiries, remember that only advanced users will do this. Choose a sensible default that makes sense for your user-base and how the wallet is intended to be used.
 
-**Set amount, denominated in fiat:** Use a short expiry and have the invoice refresh each time it expires
+For some background on situations the user might encounter with different invoice expiries, see this [blog post](https://d.elor.me/2022/01/lightning-invoice-expiration-ux-considerations/) from designer Stephen DeLorme.
 
-**No amount, denominated in fiat:** Use a long (24h) expiry
-
-**Irrespective of amount, invoice is shared externally:** Set a zero amount and use a long (24h) expiry
-
-**Set amount, denominated in bitcoin:** Use a long (24h) expiry
-
-**Advanced users:** Allow to set their own expirations to suit their unique use case
-
-Using [Bolt 12](https://bolt12.org/) offers, invoice expirations will no longer be a point of user friction. Offers are not yet an accepted standard, or widely supported by wallets, so interoperability will be an issue if adopting it.
+Using [BOLT12](https://bolt12.org/) offers, invoice expirations will no longer be a point of user friction. Offers are not yet an accepted standard, or widely supported by wallets, so interoperability will be an issue if adopting it.
 
 </div>
 
@@ -198,7 +184,7 @@ This meta data should also be able to be [backed up]({{ "/guide/onboarding/backi
 
 ## Reusable payment requests
 
-Reusable payment requests offer an improved user experience, more flexibility, and enable unique use cases compared to single-use payment requests. Reusable payment requests avoid users having to manually generate a payment request each time they need to receive bitcoin.
+Reusable payment requests offer an improved user experience, more flexibility, and enable unique use cases, as they don't need to be re-generated every time the user wants to receive bitcoin.
 
 Currently there are limited reusable payment request options available. However, several are being worked on or are in the early stages of adoption. For Lightning, there are [BOLT12 offers](https://bolt12.org/) and AMP invoices. For on-chain, [reusable payment codes](https://bips.xyz/47) can be used to privately receive bitcoin in a reusable way on-chain. Learn more about these on our [payment request formats]({{ "/guide/payments/request/payment-request-formats/" | relative_url }}) page.
 
