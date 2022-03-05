@@ -1659,6 +1659,8 @@ assets/images/guide/payments/activity/activity-bad-example.png: activity-bad-exa
 assets/images/guide/payments/activity/activity-bad-example@2x.png: activity-bad-example@2x.png
 assets/images/guide/payments/send/enter-pin-before-payment.png: enter-pin-before-payment.png
 assets/images/guide/payments/send/enter-pin-before-payment@2x.png: enter-pin-before-payment@2x.png
+assets/images/guide/payments/send/offline-error.png: offline-error.png
+assets/images/guide/payments/send/offline-error@2x.png: offline-error@2x.png
 assets/images/guide/payments/request/long-expiry.png: long-expiry.png
 assets/images/guide/payments/request/long-expiry@2x.png: long-expiry@2x.png
 assets/images/guide/payments/request/single-use-payment-request.png: single-use-payment-request.png
