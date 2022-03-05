@@ -77,6 +77,9 @@ imagesErrors:
     - file: generic-error-details
       alt: A screen showing error details
       caption: Access to error details for problem-solving.
+    - file: offline-error
+      alt: A screen showing error details
+      caption: If the receiving Lightning wallet is offline, let the user know how to address this problem.
 imagesReview:
     - file: confirm
       alt: Invoice approval screen
@@ -114,8 +117,18 @@ layout = "full-width"
 %}
 
 # Sending bitcoin
+{:.no_toc}
 
 Sending bitcoin is one of the most essential user activities in a bitcoin application, and also one of the least structured ones. People may want to send bitcoin to a known contact, transfer it to another wallet on a different device, or make a purchase via a [payment processor]({{ '/guide/getting-started/software/#payment-processors' | relative_url }}).
+
+---
+
+<div class="glossary-toc" markdown="1">
+* Table of contents
+{:toc}
+</div>
+
+---
 
 ## Payment entry points
 
