@@ -222,7 +222,9 @@ Bitcoin wallets and addresses are have both [public](#public-key) and [private k
 
 ### Lightning invoice
 
-Users of the Lightning network use a Lightning invoice to request a payment. It is defined by [BOLT 11](https://github.com/lightningnetwork/lightning-rfc/blob/master/11-payment-encoding.md) and includes an amount to be paid, destination of the payment, and an optional message. Unlike bitcoin addresses, Lightning invoice's expire after a set amount of time.
+Users of the Lightning network use a Lightning invoice to request a payment. It is defined by [BOLT 11](https://github.com/lightningnetwork/lightning-rfc/blob/master/11-payment-encoding.md) and includes an amount to be paid, destination of the payment, and an optional message. Unlike bitcoin addresses, Lightning invoice's expire after a set amount of time. By default this is set to 60 minutes.
+
+Why do invoices expire? If invoices had no expiry, recipients would likely to run into memory / storage issues as the number of locally stored preimages grows with each payment attempt. Rene Pickhardt explains this further [here](https://bitcoin.stackexchange.com/questions/85981/why-do-lightning-invoices-expire/85999#85999).
 
 ### Lightning network
 
