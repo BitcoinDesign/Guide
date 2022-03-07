@@ -2,7 +2,7 @@
 layout: guide
 title: Privacy
 description: An overview of how to help users maintain their financial privacy while using bitcoin.
-nav_order: 3
+nav_order: 5
 parent: Payments
 permalink: /guide/payments/privacy/
 main_classes: -no-top-padding
