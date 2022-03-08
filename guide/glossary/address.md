@@ -84,7 +84,7 @@ Since "legacy" addresses are still in use, some older applications have yet to u
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/glossary/address/single-use-address-type.png"
+   image = "/assets/images/guide/payments/request/single-use-payment-request-settings-address@2x.png"
    retina = "/assets/images/guide/payments/request/single-use-payment-request-settings-address@2x.png"
    width = 250
    height = 541
