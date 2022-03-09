@@ -191,7 +191,7 @@ The contacts screen should offer various features for editing and organization. 
 
 ### Importing an address
 
-In this scenario, the user has copied a Lightning address to the clipboard and opened the app. The clipboard is automatically scanned, the app identifies the addres and offers the user appropriate options. Here, the user adds the address as a new contact.
+In this scenario, the user has copied a Lightning address to the clipboard and opened the app. The clipboard is automatically scanned, the app identifies the address and offers the user appropriate options. Here, the user adds the address as a new contact.
 
 {% include image-gallery.html pages = page.imagesImportAddress %}
 
