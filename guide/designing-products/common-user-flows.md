@@ -71,7 +71,7 @@ This step is often overlooked, but before anyone uses your product, they first n
    layout = "float-left"
 %}
 
-Mobile app stores do a good job at providing previews of what using an app will be like. Through copy, videos, images, and reviews, users can make informed decisions about the product they are evaluating. Open-source software is typically downloaded via a website or from Github, and each project decides what information to present.
+Mobile app stores do a good job of providing previews of what using an app will be like. Through copy, videos, images, and reviews, users can make informed decisions about the product they are evaluating. Open-source software is typically downloaded via a website or from Github, and each project decides what information to present.
 
 </div>
 
@@ -257,7 +257,7 @@ By _wallet_, we normally mean the [_wallet application_](/guide/glossary/wallet/
 
 A good starting point today is an [HD wallet](/guide/glossary/wallet/#hd-wallet) implemented according to [BIP](/guide/glossary/#bip---bitcoin-improvement-proposal) [32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki), [39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki), [43](https://github.com/bitcoin/bips/blob/master/bip-0043.mediawiki), [44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki), [49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki), [84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki) and [380](https://github.com/bitcoin/bips/blob/master/bip-0380.mediawiki).
 
-Some older software may create wallets with outdated technical formats, while others allow users to choose specific formats for their particular needs. Generally, this is difficult to understand for regular users and should either be automatically handled with good default settings, or explained in layman terms. [Wallets Recovery](https://walletsrecovery.org) provides a great overview of different implementations and how nuanced some of the differences are.
+Some older software may create wallets with outdated technical formats, while others allow users to choose specific formats for their particular needs. Generally, this is difficult to understand for regular users and should either be automatically handled with good default settings, or explained in layman's terms. [Wallets Recovery](https://walletsrecovery.org) provides a great overview of different implementations and how nuanced some of the differences are.
 
 Most modern wallet applications should aim to support the Lightning network in addition to the base layer. While there are different options for how the applications interact with a Lightning network node, an HD wallet works fine for storing the required keys.
 
@@ -314,7 +314,7 @@ If the user is in possession of the [recovery phrase](/guide/glossary/#recovery-
    layout = "float-left"
 %}
 
-While we all prefer to receive bitcoin, there are times when we need to send them to others. At the core, sending bitcoin can be a very simple matter of entering an address, amount and tapping “Send”. It can also scale up to a much more complex interaction when batching transactions or using a multi-signature wallet.
+While we all prefer to receive bitcoin, there are times when we need to send them to others. At the core, sending bitcoin can be a very simple matter of entering an address, amount, and tapping “Send”. It can also scale up to a much more complex interaction when batching transactions or using a multi-signature wallet.
 
 </div>
 
@@ -411,7 +411,7 @@ For requests on the Lightning network, the receiver needs to create a lightning 
    layout = "float-left"
 %}
 
-Once a user has requested payment, they are naturally interested in knowing when sent and confirmed. Even when the request was not specifically made, it is nice to know when you receive money. This can ideally be communicated via push notifications or similar mechanisms. Since the bitcoin network does not have native functionality to push updates to wallet clients, this requires wallet software to regularly check for new transactions or the use of trusted third-party service.
+Once a user has requested payment, they are naturally interested in knowing when sent and confirmed. Even when the request was not specifically made, it is nice to know when you receive money. This can ideally be communicated via push notifications or similar mechanisms. Since the bitcoin network does not have native functionality to push updates to wallet clients, this requires wallet software to regularly check for new transactions or the use of a trusted third-party service.
 </div>
 
 <div class="center" markdown="1">
@@ -425,7 +425,7 @@ Once a user has requested payment, they are naturally interested in knowing when
    layout = "float-right"
 %}
 
-A user may also want to check in and see if any previous requests have not been completed yet. This is easily possible if the user has initiated all requests on the same wallet and used a new address for each one. In this case, a request can be considered fulfilled if at least one payment has been received with the total amount the user asked for. It is not as clear if addresses are getting re-used (how to tell which payment was for which purpose?) or the request has been made with another wallet (as this meta data is not stored and synced via the bitcoin network).
+A user may also want to check in and see if any previous requests have not been completed yet. This is easily possible if the user has initiated all requests on the same wallet and used a new address for each one. In this case, a request can be considered fulfilled if at least one payment has been received with the total amount the user asked for. It is not as clear if addresses are getting re-used (how to tell which payment was for which purpose?) or the request has been made with another wallet (as this metadata is not stored and synced via the bitcoin network).
 
 On the Lightning network, receiving bitcoin requires an invoice. This makes it easy to track if payments have been completed or not.
 
@@ -470,7 +470,7 @@ A different wallet application might have features they need, or be better suppo
 
 The owner may want to increase the security of their wallet, either by using a single-key wallet with a [passphrase](/guide/glossary/#passphrase), or a [multi-key](/guide/private-key-management/multi-key/) wallet. As both of these include transferring funds to a new bitcoin wallet, there will be fees to pay.
 
-In the worst case scenario the wallet might have been compromised, and funds should be saved by sending them all to a different bitcoin wallet.
+In the worst-case scenario, the wallet might have been compromised, and funds should be saved by sending them all to a different bitcoin wallet.
 
 Whatever the reason may be, the import and backup of wallets is a vital function for users that applications should support. While it is easy to send all funds to a new address, additional meta and state data stored in wallet applications also need to be considered for full compatibility. It's not recommended to switch wallets that include funds on the Lightning network, as standards for backing up channel state have yet to emerge. See also, [Wallet interoperability](/guide/designing-products/wallet-interoperability/).
 
