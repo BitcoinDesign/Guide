@@ -1780,3 +1780,7 @@ assets/images/guide/payments/request/node-id.png: node-id.png
 assets/images/guide/payments/request/node-id@2x.png: node-id@2x.png
 assets/images/guide/payments/request/contactless.png: contactless.png
 assets/images/guide/payments/request/contactless@2x.png: contactless@2x.png
+assets/images/guide/payments/contacts/owner-entry.png: owner-entry.png
+assets/images/guide/payments/contacts/owner-entry@2x.png: owner-entry@2x.png
+assets/images/guide/payments/contacts/owner-list.png: owner-list.png
+assets/images/guide/payments/contacts/owner-list@2x.png: owner-list@2x.png
