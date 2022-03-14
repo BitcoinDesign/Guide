@@ -22,7 +22,7 @@ images:
       caption: Changing the key management scheme is accessed via settings.
     - file: change-private-key-scheme
       alt: Private key security options screen
-      caption: Schemes are clearly explained and changes should guide users through the steps involved.
+      caption: Schemes are clearly explained, and changes should guide users through the steps involved.
 ---
 
 <!--
@@ -68,7 +68,7 @@ The solution in this case could be a wallet that enables the user to upgrade the
 
 ### Onboarding & upgrading
 
-The screens below show how this architecture allows users to get onboarded quickly with upgrade options easily accessible.
+The screens below show how this architecture allows users to get onboarded quickly, with upgrade options easily accessible.
 
 <div class="image-slide-gallery">
 
