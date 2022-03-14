@@ -58,11 +58,11 @@ You can then use this research to identify where potential problems may exist. T
 
 ### Example
 
-For the sake of simplicity let's focus on one hypothetical user.
+For the sake of simplicity, let's focus on one hypothetical user.
 
 > Joshua Akinsola is a 21-year old Nigerian studying economics in the large city of Lagos. Growing up, his family struggled to save any money due to a lack of financial education, high unemployment, and a local currency inflating at 15% per year. There is a lack of reliable [savings]({{ 'guide/designing-products/personal-finance/#savings' | relative_url }}) technology in his country, so he opts to save money for the future using bitcoin.
 
-The uncovering of this scenario could be the result of a [user interview](https://github.com/patestevao/Bitcoin-UX-interviews/blob/main/call-for-participants.md) or found in various channels such as chats, issues, or even Twitter. We can then take quotes from the participant to understand their emotions and infer their specific needs. This then helps us identify barriers and motivators.
+The uncovering of this scenario could result from [user interview](https://github.com/patestevao/Bitcoin-UX-interviews/blob/main/call-for-participants.md) or found in various channels such as chats, issues, or even Twitter. We can then take quotes from the participant to understand their emotions and infer their specific needs. This then helps us identify barriers and motivators.
 
 Barriers are anything that the user perceives as preventing them from achieving their desired goals.
 
