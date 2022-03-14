@@ -54,7 +54,7 @@ Core bitcoin design principles recommended by the Bitcoin Design Community.
 
 ### [User research]({{ '/guide/designing-products/user-research/' | relative_url }})
 
-All products begin with user needs and end in those same users hands. User research is a fundamental activity that helps us focus on things people care about.
+All products begin with user needs and end in those same user's hands. User research is a fundamental activity that helps us focus on things people care about.
 
 ---
 
@@ -72,7 +72,7 @@ If we consider bitcoin money, we need to consider how bitcoin users think about 
 
 ### [Getting to know your users]({{ '/guide/designing-products/getting-to-know-your-users/' | relative_url }})
 
-This section will give you some tips on how best to understand and develop knowledge about your users.
+This section will give you some tips on understanding and developing knowledge about your users.
 
 ---
 

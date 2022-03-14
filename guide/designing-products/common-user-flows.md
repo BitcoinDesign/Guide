@@ -41,7 +41,7 @@ Illustration sources
 # Common user flows
 {:.no_toc}
 
-Some applications are like Swiss Army Knives. They provide many different individual tools, and it is up to each user to find the right one for their job and use it effectively. Other software is highly optimized for clear use cases and provides specific, more linear workflows for each one. And many applications use both approaches at different times. Particularly for new users and for initial software setup, offering linear workflows (also known as wizards) can help complete tasks.
+Some applications are like Swiss Army Knives. They provide many different individual tools, and it is up to each user to find the right one for their job and use it effectively. Other software is highly optimized for clear use cases and provides specific, more linear workflows for each one. And many applications use both approaches at different times. Particularly for new users and initial software setup, offering linear workflows (also known as wizards) can help complete tasks.
 
 Let's take a look at some common user needs and workflows that can be created for them.
 
@@ -56,7 +56,7 @@ Let's take a look at some common user needs and workflows that can be created fo
 
 ## Orientation
 
-This step is often overlooked, but before anyone uses your product, they first need to find out that it exists, understand and develop interest and decide to start using it. If users cannot quickly learn the application's purpose and benefits, they are less likely to use it. Also see the first three phases of the [usage life cycle]({% link guide/designing-products/usage-life-cycle.md %}).
+This step is often overlooked, but before anyone uses your product, they first need to find out it exists, understand and develop interest and decide to start using it. If users cannot quickly learn the application's purpose and benefits, they are less likely to use it. Also see the first three phases of the [usage life cycle]({% link guide/designing-products/usage-life-cycle.md %}).
 
 ## Software download & installation
 
@@ -101,7 +101,7 @@ Here are two different examples of webpages for downloading bitcoin wallet softw
 
 </div>
 
-The App Store landing page includes screenshots, a description, updates in the latest version and user reviews, and information about the developer. The bitcoincore.org landing page does not allow me to get an idea of how the product works, what it looks like, or what others think of it. Instead, it provides multiple download links, requirements, and information about how to verify that it is indeed the software I am looking for. The two approaches are for different phases of the usage life cycle. One is for the aware user who wants to determine whether they are interested in the product. The other is for the interested user who wants to start using the product. Make sure to satisfy both of these users.
+The App Store landing page includes screenshots, a description, user reviews, updates to the latest version, and information about the developer. The bitcoincore.org landing page does not allow me to get an idea of how the product works, what it looks like, or what others think of it. Instead, it provides multiple download links, requirements, and information about how to verify that it is indeed the software I am looking for. The two approaches are for different phases of the usage life cycle. One is for the aware user who wants to determine whether they are interested in the product. The other is for interested users who want to start using the product. Make sure to satisfy both of these users.
 
 ## Software onboarding
 
@@ -472,7 +472,7 @@ The owner may want to increase the security of their wallet, either by using a s
 
 In the worst-case scenario, the wallet might have been compromised, and funds should be saved by sending them all to a different bitcoin wallet.
 
-Whatever the reason may be, the import and backup of wallets is a vital function for users that applications should support. While it is easy to send all funds to a new address, additional meta and state data stored in wallet applications also need to be considered for full compatibility. It's not recommended to switch wallets that include funds on the Lightning network, as standards for backing up channel state have yet to emerge. See also, [Wallet interoperability](/guide/designing-products/wallet-interoperability/).
+Whatever the reason, the import and backup of wallets is a vital function for users that applications should support. While it is easy to send all funds to a new address, additional meta and state data stored in wallet applications also need to be considered for full compatibility. It's not recommended to switch wallets that include funds on the Lightning network, as standards for backing up channel state have yet to emerge. See also, [Wallet interoperability](/guide/designing-products/wallet-interoperability/).
 
 
 </div>
@@ -508,7 +508,7 @@ It is not necessarily intuitive that a wallet may need maintenance, but there ar
    layout = "float-left"
 %}
 
-This is similar to exchanging many small coins into bills (like exchanging 100 one-dollar bills to a single one-hundred dollar bill). Dust refers to small amounts of unspent bitcoin in a wallet. If they add up, future transaction fees can become costly. That's because fees are partially based on transaction size. This size increases with every output from a previous transaction that is included. Sweeping dust helps by making a transaction to yourself that turns the many outputs with small amounts into a single output with a larger amount. This is typically done at a time when few transactions are being done on the bitcoin network, which is another factor in fee calculation (senders choose how much they want to pay in fees, and the network prioritizes transactions that pay more).
+This is similar to exchanging many small coins into bills (like exchanging 100 one-dollar bills to a single one-hundred dollar bill). Dust refers to small amounts of unspent bitcoin in a wallet. If they add up, future transaction fees can become costly. That's because fees are partially based on transaction size. This size increases with every output from a previous transaction that is included. Sweeping dust helps by making a transaction to yourself that turns the many outputs with small amounts into a single output with a larger amount. This is typically done when few transactions are being done on the bitcoin network, which is another factor in fee calculation (senders choose how much they want to pay in fees, and the network prioritizes transactions that pay more).
 
 </div>
 
@@ -544,7 +544,7 @@ Mixing coins is a technique to improve transaction privacy by making a special t
    layout = "float-left"
 %}
 
-Whether it's to ensure a hardware wallet still works, or to install a software update, it is recommended to verify that everything still operates as expected regularly. If a hardware wallet is exclusively used with a particular application, then the application can offer users support with this task (for example, by reminding users to check the hardware wallet every six months). The higher the amount stored, the more important it is to check on the health of the setup regularly.
+Whether it's to ensure a hardware wallet still works, or to install a software update, it is recommended to verify that everything still operates as expected regularly. If a hardware wallet is exclusively used with a particular application, then the application can offer users support with this task (for example, by reminding users to check the hardware wallet every six months). The higher the amount stored, the more important it is to regularly check the setup's health.
 
 </div>
 

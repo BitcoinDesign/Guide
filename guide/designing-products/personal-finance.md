@@ -13,7 +13,7 @@ image: https://bitcoin.design/assets/images/guide/designing-products/personal-fi
 
 Editor's notes
 
-This page provides a rough framework for how to think about transactions in the general context of typical personal finances. It can provide a great jumping-off point into different other pages like private key management solutions, payment types and hardware wallets.
+This page provides a rough framework for how to think about transactions in the general context of typical personal finances. It can provide a great jumping-off point into similar pages like private key management solutions, payment types and hardware wallets.
 
 Illustration sources
 
@@ -41,7 +41,7 @@ Illustration sources
 
 Money is complex and can play many different roles in our lives. Buying a new shirt is quite different from buying a house or setting aside savings for retirement. Taking a payment as a store owner is very different from a child receiving an allowance from parents. On a global scale, the differences multiply across countries and cultures.
 
-It still is possible to create simplified mental models that help us better understand user needs and behaviors. A single model might be oversimplified, but if we combine a few different lenses we can narrow in on a more complete picture that allows us to create more focused experiences, have better product differentiation, and make it easier for contributors to collaborate to make decisions.
+It still is possible to create simplified mental models that help us better understand user needs and behaviors. A single model might be oversimplified, but if we combine a few different lenses, we can narrow in on a more complete picture that allows us to create more focused experiences, have better product differentiation, and make it easier for contributors to collaborate to make decisions.
 
 This section uses the traditional personal finance lens to think about what type of bitcoin products we may need. Because of bitcoin's unique properties, we cannot imitate conventional financial products and assume that the same solutions apply. And even if we could, this might be an excellent opportunity to take a fresh look and design new solutions for today's world. Bitcoin is also global by nature, so consider the unique circumstances of your users' lives.
 
@@ -138,7 +138,7 @@ The higher-value of these payments necessitates a greater level of security than
 
 At the moment, a good solution is a desktop application which relies on a hardware device to sign transactions. This reduces the risk of keeping funds on a mobile wallet configuration but adds acceptable friction for transactions that occur less frequently. See the [savings account case study]({{ '/guide/case-studies/savings-account/' | relative_url }}) for an exploration of this user experience.
 
-A disadvantage to this solution is that it does not use the Lightning network, meaning that the user will need to wait longer for their [transaction to confirm]({{'/guide/payments/transactions/#7-confirmations' | relative_url}}) as well as pay an on-chain transaction fee. However, this will likely not be always be the case: in the future, projects such as [Lightning Signer](https://gitlab.com/lightning-signer/docs) may solve this issue by allowing the private keys to be stored separately from the Lightning node on hardware that is security-hardened.
+A disadvantage to this solution is that it does not use the Lightning network, meaning that the user will need to wait longer for their [transaction to confirm]({{'/guide/payments/transactions/#7-confirmations' | relative_url}}) as well as pay an on-chain transaction fee. However, this will likely not always be the case: in the future, projects such as [Lightning Signer](https://gitlab.com/lightning-signer/docs) may solve this issue by allowing the private keys to be stored separately from the Lightning node on hardware that is security-hardened.
 
 ## Emergency funds
 
@@ -153,7 +153,7 @@ A disadvantage to this solution is that it does not use the Lightning network, m
    layout = "float-left"
 %}
 
-Financial experts recommend that you keep 3–6 months of salary available for when you are faced with costly problems like medical bills, home repairs, and sudden loss of employment.
+Financial experts recommend that you keep 3–6 months of salary available for when faced with costly problems like medical bills, home repairs, and sudden loss of employment.
 
 </div>
 
@@ -169,7 +169,7 @@ In traditional finance, this money might get parked in a high-interest savings a
    height = 800
 %}
 
-A bitcoiner may want to set up a cold storage multi-signature wallet. In this type of setup, there are multiple applications or hardware devices required to make transactions. Even if one device gets stolen or locked, the rightful owner still has access to all their funds. Since transactions are infrequent, security is prioritized over convenience.
+A bitcoiner may want to set up a cold storage multi-signature wallet. In this type of setup, multiple applications or hardware devices are required to make transactions. Even if one device gets stolen or locked, the rightful owner still has access to all their funds. Since transactions are infrequent, security is prioritized over convenience.
 
 ## Sinking funds
 
@@ -221,7 +221,7 @@ For example, [Glacier Protocol](https://glacierprotocol.org){:target="_blank"} i
    height = 800
 %}
 
-Of course, many prefer that banks and other custodial financial service providers secure and invest funds for them. Savings accounts and related products may also incentivize customers with low interest rates that may or may not be high enough to keep up with inflation.
+Of course, many prefer that banks and other custodial financial service providers secure and invest funds for them. Savings accounts and related products may also incentivize customers with low-interest rates that may or may not be high enough to keep up with inflation.
 
 ## Investing
 
