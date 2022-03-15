@@ -59,7 +59,7 @@ Tips on how to write for the guide. The goal is to achieve a consistent tone acr
 
 ### [Illustration guidelines]({{ '/guide/contribute/illustration-guidelines/' | relative_url }})
 
-Creating visuals for the Bitcoin Design Guide? We recommend following these best practices for file naming, image sizing, and on.
+Creating visuals for the Bitcoin Design Guide? We recommend following these best practices for file naming, image sizing, etc.
 
 ---
 
