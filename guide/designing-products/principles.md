@@ -217,11 +217,11 @@ layout="float-left"
 
 </div>
 
-While an open and decentralized financial system that users can connect with directly is great, it puts a burden on them to choose a product that they trust and like to use. We can make this easier by freely sharing information about how our products work and what technologies they use/rely on. By open-sourcing your code, you can let people verify that your claims are true, ultimately building more trust with your users. It is important to be transparent with users about the risks that come with self-custodying funds. Be sure to educate them about scenarios where they may risk losing access to their funds along with best practices for avoiding this.
+While an open and decentralized financial system that users can connect with directly is great, it puts a burden on them to choose a product that they trust and like to use. We can make this easier by freely sharing information about how our products work and what technologies they use/rely on. By open-sourcing your code, you can let people verify that your claims are true, ultimately building more trust with your users. It is important to be transparent with users about the risks that come with self-custodying funds. Be sure to educate them about scenarios where they may risk losing access to their funds, along with best practices for avoiding this.
 
 **Do**
 - Be open and transparent with how your product works
-    -  For wallets, inform users on the fees your application charges
+    -  For wallets, inform users of the fees your application charges
 - Let people verify your claims by open-sourcing your code when possible
 - Explain what risks the user is taking on, and how best to mitigate them
 

@@ -157,7 +157,7 @@ We also call the bitcoin blockchain "base layer" as it provides strong security,
 
 Layers in bitcoin serve to provide alternative settlement rules. Bitcoin's block generation time of 10 minutes and the 1 MB size means that the blockchain can handle around 300 000 transactions per day or 4.6 transactions per second. Layer 1, the base layer, is the most secure, so it has the most time-consuming verification process.
 
-To scale as a currency of the internet and meet the demands of the global economy, bitcoin needs a way to handle fast and frequent payments. Such payments don't all need to be secured by every node and be added to the blockchain immediately. That is why a second layer is necessary to allow the delay of the base layer settlement.
+In order to scale as a currency of the internet and meet the demands of the global economy, bitcoin needs a way to handle fast and frequent payments. Such payments don't all need to be secured by every node and be added to the blockchain immediately. That is why a second layer is necessary to allow the delay of the base layer settlement.
 </div>
 
 ## How can you build on the base layer?
@@ -183,7 +183,7 @@ There are multiple scaling solutions built on top of bitcoin's base layer, but w
 - [Transaction lifecycle](/guide/payments/transactions/)
 
 <!--
-   While the base layer needs to have high integrity of decentralization, high security guarantees, and solid monetary principals...
+   While the base layer needs to have high integrity of decentralization, high security guarantees, and solid monetary principles...
 -->
 
 </div>
@@ -254,17 +254,17 @@ To transfer bitcoin, the recipient needs to provide the sender with the destinat
 To make a Lightning payment, you don't need to open a channel with everyone you transact with. Lightning nodes talk to one another and declare their payment channels. It's typical for nodes to have multiple channels to access different parts of the network for better routing. With an invoice, the sender finds a path to the receiver, and the payment hops from channel to channel until it reaches the destination.
 
 <!--
-   While the blockchain the transaction is broadcasted to a node which propogates it to the rest of the network to be incldued in a block, on lightning network a payment is routed through a set of predefined nodes and channels.
+   While the blockchain the transaction is broadcasted to a node which propagates it to the rest of the network to be included in a block, on lightning network a payment is routed through a set of predefined nodes and channels.
 
    ## actions
-   passees things to a bitcoin node
-   broadcast the channel open/close transaactions to the blockchain
-   look for block information to make sure its a valid utxo
+   passes things to a bitcoin node
+   broadcast the channel open/close transactions to the blockchain
+   look for block information to make sure it's a valid utxo
 
    ## ln node
    graphing and routing
    builds local copy of graph
-   tries to send paxments through routes
+   tries to send payments through routes
    uses the base layer as the source of truth.
    has nothing to do with the bitcoin protocol level
 -->

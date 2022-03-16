@@ -6,7 +6,7 @@ nav_order: 4
 parent: Payments
 permalink: /guide/payments/contacts/
 main_classes: -no-top-padding
-image: /assets/images/guide/payments/activity/contacts-preview.jpg
+image: https://bitcoin.design/assets/images/guide/payments/activity/contacts-preview.jpg
 image_base: /assets/images/guide/payments/contacts/
 imagesAddContact:
     - file: manual-add-empty
@@ -124,6 +124,13 @@ imagesActivity:
     - file: activity-transaction-annotated
       alt: Transaction details with assigned contact
       caption: A payment with an assigned contact.
+imagesOwner:
+    - file: owner-list
+      alt: Contact list screen
+      caption: The wallet owners contact card is shown at the top of the contact list.
+    - file: owner-entry
+      alt: Contact card with internal and external addresses
+      caption: The card lists addresses provided by the wallet, and allows the user to track external addresses for sharing.
 
 ---
 
@@ -191,7 +198,7 @@ The contacts screen should offer various features for editing and organization.
 
 ### Importing an address
 
-In this scenario, the user has copied a Lightning address to the clipboard and opened the app. The clipboard is automatically scanned, the app identifies the addres and offers the user appropriate options. Here, the user adds the address as a new contact.
+In this scenario, the user has copied a Lightning address to the clipboard and opened the app. The clipboard is automatically scanned, the app identifies the address and offers the user appropriate options. Here, the user adds the address as a new contact.
 
 {% include image-gallery.html pages = page.imagesImportAddress %}
 
@@ -224,6 +231,12 @@ Contacts can also be assigned to invoices that will be paid by others.
 When browsing the [activity]({{ '/guide/payments/activity/' | relative_url }}) screen, users may come across payments they want to assign contacts to. While applications should try to automatically make connections between payments and contacts by matching addresses, this is not possible oftentimes.
 
 {% include image-gallery.html pages = page.imagesActivity %}
+
+### A contact card for the wallet owner
+
+Most contact books include a special card for the user. It is typically shown at the top of the contact list, and used for quick sharing with others. In addition to listing any addresses your wallet provides, you might choose to let users enter external addresses from other wallets for convenience.
+
+{% include image-gallery.html pages = page.imagesOwner %}
 
 ---
 

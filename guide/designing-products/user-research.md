@@ -14,7 +14,7 @@ image: https://bitcoin.design/assets/images/guide/designing-products/user-resear
 
 Editor's notes
 
-Goal of this page is to frame user research in the bitcoin ecosystem.
+The goal of this page is to frame user research in the bitcoin ecosystem.
 - The role, importance, and value of user research
 - Unique aspects of the space
 - Starting points for getting involved
@@ -155,7 +155,7 @@ Links to:
 
 ### Open source and open design
 
-While there are plenty of private companies that build on bitcoin, but this guide focuses on open-source. In open-source, collaboration is based on communal efforts that mostly happen in public. Find out more on our dedicated page on [open design]({{ '/guide/designing-products/open-design/' | relative_url }}).
+While there are plenty of private companies that build on bitcoin, this guide focuses on open-source. In open-source, collaboration is based on communal efforts that mostly happen in public. Find out more on our dedicated page on [open design]({{ '/guide/designing-products/open-design/' | relative_url }}).
 
 <!--
 

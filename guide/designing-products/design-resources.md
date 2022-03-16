@@ -64,7 +64,7 @@ This page is about design source files the community maintains for the site, gui
 
 In the spirit of [open design]({{ '/guide/designing-products/open-design/' | relative_url }}), the community maintains several design files for this guide and related projects. You can duplicate, use and modify them as you like.
 
-There is no design tool yet that provides public, open, and communal collaboration platform. At the moment, many of us use [Figma](https://www.figma.com/), as it comes closest, with [Penpot](https://penpot.app/) being the best open-source alternative. You can also use other design tools and workflows of your choice.
+There is no design tool yet that provides a public, open, and communal collaboration platform. At the moment, many of us use [Figma](https://www.figma.com/), as it comes closest, with [Penpot](https://penpot.app/) being the best open-source alternative. You can also use other design tools and workflows of your choice.
 
 These files are licensed under [CC-BY](https://creativecommons.org/licenses/by/4.0/) and you may use them freely for personal and commercial purposes. It would be fantastic if you could also help improve the work with comments, feedback and edits.
 
@@ -98,11 +98,11 @@ During this process, it is always good to be in communication with the file owne
 
 ## Collaborating
 
-Figma has several useful collaboration features. They do not force a specific workflow, so it may not be always clear what the best way is to work together. Here are some tips:
+Figma has several useful collaboration features. They do not force a specific workflow, so it may not always be clear what the best way is to work together. Here are some tips:
 
 **Sharing**
 
-Sharing is one of the most powerful features of Figma, as it works on all platforms as well as in the browser, and does not require accounts for viewing design files.
+Sharing is one of the most powerful features of Figma, as it works on all platforms and in the browser, and does not require accounts for viewing design files.
 
 **Comments**
 

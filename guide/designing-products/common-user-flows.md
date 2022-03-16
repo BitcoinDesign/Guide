@@ -41,7 +41,7 @@ Illustration sources
 # Common user flows
 {:.no_toc}
 
-Some applications are like Swiss Army Knives. They provide many different individual tools, and it is up to each user to find the right one for their job and use it effectively. Other software is highly optimized for clear use cases and provides specific, more linear workflows for each one. And many applications use both approaches at different times. Particularly for new users and for initial software setup, offering linear workflows (also known as wizards) can help complete tasks.
+Some applications are like Swiss Army Knives. They provide many different individual tools, and it is up to each user to find the right one for their job and use it effectively. Other software is highly optimized for clear use cases and provides specific, more linear workflows for each one. And many applications use both approaches at different times. Particularly for new users and initial software setup, offering linear workflows (also known as wizards) can help complete tasks.
 
 Let's take a look at some common user needs and workflows that can be created for them.
 
@@ -56,7 +56,7 @@ Let's take a look at some common user needs and workflows that can be created fo
 
 ## Orientation
 
-This step is often overlooked, but before anyone uses your product, they first need to find out that it exists, understand and develop interest and decide to start using it. If users cannot quickly learn the application's purpose and benefits, they are less likely to use it. Also see the first three phases of the [usage life cycle]({% link guide/designing-products/usage-life-cycle.md %}).
+This step is often overlooked, but before anyone uses your product, they first need to find out it exists, understand and develop interest and decide to start using it. If users cannot quickly learn the application's purpose and benefits, they are less likely to use it. Also see the first three phases of the [usage life cycle]({% link guide/designing-products/usage-life-cycle.md %}).
 
 ## Software download & installation
 
@@ -71,7 +71,7 @@ This step is often overlooked, but before anyone uses your product, they first n
    layout = "float-left"
 %}
 
-Mobile app stores do a good job at providing previews of what using an app will be like. Through copy, videos, images, and reviews, users can make informed decisions about the product they are evaluating. Open-source software is typically downloaded via a website or from Github, and each project decides what information to present.
+Mobile app stores do a good job of providing previews of what using an app will be like. Through copy, videos, images, and reviews, users can make informed decisions about the product they are evaluating. Open-source software is typically downloaded via a website or from Github, and each project decides what information to present.
 
 </div>
 
@@ -101,7 +101,7 @@ Here are two different examples of webpages for downloading bitcoin wallet softw
 
 </div>
 
-The App Store landing page includes screenshots, a description, updates in the latest version and user reviews, and information about the developer. The bitcoincore.org landing page does not allow me to get an idea of how the product works, what it looks like, or what others think of it. Instead, it provides multiple download links, requirements, and information about how to verify that it is indeed the software I am looking for. The two approaches are for different phases of the usage life cycle. One is for the aware user who wants to determine whether they are interested in the product. The other is for the interested user who wants to start using the product. Make sure to satisfy both of these users.
+The App Store landing page includes screenshots, a description, user reviews, updates to the latest version, and information about the developer. The bitcoincore.org landing page does not allow me to get an idea of how the product works, what it looks like, or what others think of it. Instead, it provides multiple download links, requirements, and information about how to verify that it is indeed the software I am looking for. The two approaches are for different phases of the usage life cycle. One is for the aware user who wants to determine whether they are interested in the product. The other is for interested users who want to start using the product. Make sure to satisfy both of these users.
 
 ## Software onboarding
 
@@ -257,7 +257,7 @@ By _wallet_, we normally mean the [_wallet application_](/guide/glossary/wallet/
 
 A good starting point today is an [HD wallet](/guide/glossary/wallet/#hd-wallet) implemented according to [BIP](/guide/glossary/#bip---bitcoin-improvement-proposal) [32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki), [39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki), [43](https://github.com/bitcoin/bips/blob/master/bip-0043.mediawiki), [44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki), [49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki), [84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki) and [380](https://github.com/bitcoin/bips/blob/master/bip-0380.mediawiki).
 
-Some older software may create wallets with outdated technical formats, while others allow users to choose specific formats for their particular needs. Generally, this is difficult to understand for regular users and should either be automatically handled with good default settings, or explained in layman terms. [Wallets Recovery](https://walletsrecovery.org) provides a great overview of different implementations and how nuanced some of the differences are.
+Some older software may create wallets with outdated technical formats, while others allow users to choose specific formats for their particular needs. Generally, this is difficult to understand for regular users and should either be automatically handled with good default settings, or explained in layman's terms. [Wallets Recovery](https://walletsrecovery.org) provides a great overview of different implementations and how nuanced some of the differences are.
 
 Most modern wallet applications should aim to support the Lightning network in addition to the base layer. While there are different options for how the applications interact with a Lightning network node, an HD wallet works fine for storing the required keys.
 
@@ -314,7 +314,7 @@ If the user is in possession of the [recovery phrase](/guide/glossary/#recovery-
    layout = "float-left"
 %}
 
-While we all prefer to receive bitcoin, there are times when we need to send them to others. At the core, sending bitcoin can be a very simple matter of entering an address, amount and tapping “Send”. It can also scale up to a much more complex interaction when batching transactions or using a multi-signature wallet.
+While we all prefer to receive bitcoin, there are times when we need to send them to others. At the core, sending bitcoin can be a very simple matter of entering an address, amount, and tapping “Send”. It can also scale up to a much more complex interaction when batching transactions or using a multi-signature wallet.
 
 </div>
 
@@ -411,7 +411,7 @@ For requests on the Lightning network, the receiver needs to create a lightning 
    layout = "float-left"
 %}
 
-Once a user has requested payment, they are naturally interested in knowing when sent and confirmed. Even when the request was not specifically made, it is nice to know when you receive money. This can ideally be communicated via push notifications or similar mechanisms. Since the bitcoin network does not have native functionality to push updates to wallet clients, this requires wallet software to regularly check for new transactions or the use of trusted third-party service.
+Once a user has requested payment, they are naturally interested in knowing when sent and confirmed. Even when the request was not specifically made, it is nice to know when you receive money. This can ideally be communicated via push notifications or similar mechanisms. Since the bitcoin network does not have native functionality to push updates to wallet clients, this requires wallet software to regularly check for new transactions or the use of a trusted third-party service.
 </div>
 
 <div class="center" markdown="1">
@@ -425,7 +425,7 @@ Once a user has requested payment, they are naturally interested in knowing when
    layout = "float-right"
 %}
 
-A user may also want to check in and see if any previous requests have not been completed yet. This is easily possible if the user has initiated all requests on the same wallet and used a new address for each one. In this case, a request can be considered fulfilled if at least one payment has been received with the total amount the user asked for. It is not as clear if addresses are getting re-used (how to tell which payment was for which purpose?) or the request has been made with another wallet (as this meta data is not stored and synced via the bitcoin network).
+A user may also want to check in and see if any previous requests have not been completed yet. This is easily possible if the user has initiated all requests on the same wallet and used a new address for each one. In this case, a request can be considered fulfilled if at least one payment has been received with the total amount the user asked for. It is not as clear if addresses are getting re-used (how to tell which payment was for which purpose?) or the request has been made with another wallet (as this metadata is not stored and synced via the bitcoin network).
 
 On the Lightning network, receiving bitcoin requires an invoice. This makes it easy to track if payments have been completed or not.
 
@@ -470,9 +470,9 @@ A different wallet application might have features they need, or be better suppo
 
 The owner may want to increase the security of their wallet, either by using a single-key wallet with a [passphrase](/guide/glossary/#passphrase), or a [multi-key](/guide/private-key-management/multi-key/) wallet. As both of these include transferring funds to a new bitcoin wallet, there will be fees to pay.
 
-In the worst case scenario the wallet might have been compromised, and funds should be saved by sending them all to a different bitcoin wallet.
+In the worst-case scenario, the wallet might have been compromised, and funds should be saved by sending them all to a different bitcoin wallet.
 
-Whatever the reason may be, the import and backup of wallets is a vital function for users that applications should support. While it is easy to send all funds to a new address, additional meta and state data stored in wallet applications also need to be considered for full compatibility. It's not recommended to switch wallets that include funds on the Lightning network, as standards for backing up channel state have yet to emerge. See also, [Wallet interoperability](/guide/designing-products/wallet-interoperability/).
+Whatever the reason, the import and backup of wallets is a vital function for users that applications should support. While it is easy to send all funds to a new address, additional meta and state data stored in wallet applications also need to be considered for full compatibility. It's not recommended to switch wallets that include funds on the Lightning network, as standards for backing up channel state have yet to emerge. See also, [Wallet interoperability](/guide/designing-products/wallet-interoperability/).
 
 
 </div>
@@ -508,7 +508,7 @@ It is not necessarily intuitive that a wallet may need maintenance, but there ar
    layout = "float-left"
 %}
 
-This is similar to exchanging many small coins into bills (like exchanging 100 one-dollar bills to a single one-hundred dollar bill). Dust refers to small amounts of unspent bitcoin in a wallet. If they add up, future transaction fees can become costly. That's because fees are partially based on transaction size. This size increases with every output from a previous transaction that is included. Sweeping dust helps by making a transaction to yourself that turns the many outputs with small amounts into a single output with a larger amount. This is typically done at a time when few transactions are being done on the bitcoin network, which is another factor in fee calculation (senders choose how much they want to pay in fees, and the network prioritizes transactions that pay more).
+This is similar to exchanging many small coins into bills (like exchanging 100 one-dollar bills to a single one-hundred dollar bill). Dust refers to small amounts of unspent bitcoin in a wallet. If they add up, future transaction fees can become costly. That's because fees are partially based on transaction size. This size increases with every output from a previous transaction that is included. Sweeping dust helps by making a transaction to yourself that turns the many outputs with small amounts into a single output with a larger amount. This is typically done when few transactions are being done on the bitcoin network, which is another factor in fee calculation (senders choose how much they want to pay in fees, and the network prioritizes transactions that pay more).
 
 </div>
 
@@ -544,7 +544,7 @@ Mixing coins is a technique to improve transaction privacy by making a special t
    layout = "float-left"
 %}
 
-Whether it's to ensure a hardware wallet still works, or to install a software update, it is recommended to verify that everything still operates as expected regularly. If a hardware wallet is exclusively used with a particular application, then the application can offer users support with this task (for example, by reminding users to check the hardware wallet every six months). The higher the amount stored, the more important it is to check on the health of the setup regularly.
+Whether it's to ensure a hardware wallet still works, or to install a software update, it is recommended to verify that everything still operates as expected regularly. If a hardware wallet is exclusively used with a particular application, then the application can offer users support with this task (for example, by reminding users to check the hardware wallet every six months). The higher the amount stored, the more important it is to regularly check the setup's health.
 
 </div>
 

@@ -13,7 +13,7 @@ image: https://bitcoin.design/assets/images/guide/designing-products/usage-life-
 
 Editor's notes
 
-An introduction to the main phases users of a product go through. This is a helpful
+An introduction to the main phases users of a product goes through. This is a helpful
 framework for user research and decision making.
 
 Illustration sources
@@ -56,7 +56,7 @@ It is helpful to think through each phase and consider what the current user nee
    layout = "float-left"
 %}
 
-This is where everyone starts, and most remain. At this point, they have never seen or heard of your product before. They may or may not be familiar with bitcoin, its use cases and benefits.
+This is where everyone starts, and most remain. At this point, they have never seen or heard of your product before. They may or may not be familiar with bitcoin, its use cases and its benefits.
 
 </div>
 

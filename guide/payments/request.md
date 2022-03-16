@@ -6,11 +6,25 @@ nav_order: 1
 parent: Payments
 has_children: true
 permalink: /guide/payments/request/
+image: /assets/images/guide/payments/request/request-banner-preview(1200x630).jpg
+image_base: /assets/images/guide/payments/request/
 redirect_from:
  - /guide/payments/receive/
 main_classes: -no-top-padding
 # image: /assets/images/guide/payments/request/header.svg
 ---
+
+{% include picture.html
+    image = "/assets/images/guide/payments/request/request-banner(1600x600).png"
+    retina = "/assets/images/guide/payments/request/request-banner(3200x1200).png"
+    mobile = "/assets/images/guide/payments/request/request-banner(400x200).png"
+    mobileRetina = "/assets/images/guide/payments/request/request-banner(800x400).png"
+    alt-text = "Image: Text balloon containing a bitcoin."
+    width = 1600
+    height = 600
+    layout = "full-width"
+%}
+
 
 <!--
 
@@ -100,7 +114,7 @@ Single-use payment requests are convenient for one-time or in-person payments. G
 
 When generating single-use payment requests, the receiver may want to add an amount to be paid. Entering an amount from the home screen is recommended.
 
-Zero amount single-use payment requests should also be easily generated from the home screen by tapping request without an amount entered. By allowing the sender to set the amount when they are ready to pay, reduces both parties exposure to price volatility, as the amount paid in bitcoin will be more accurate in dollars.
+Zero amount single-use payment requests should also be easily generated from the home screen by tapping request without an amount entered. By allowing the sender to set the amount when they are ready to pay, reduces both parties exposure to price volatility, as the amount paid in bitcoin will be more accurate in fiat terms.
 
 Units must be toggleable between bitcoin, satoshi and the users local currency. Ensure the unit being entered is clearly visible, to prevent entering the wrong unit amount. More on the [Units & Symbols page]({{ "/guide/payments/units-and-symbols/" | relative_url }}).
 
