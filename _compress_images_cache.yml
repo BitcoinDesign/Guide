@@ -1667,3 +1667,8 @@ assets/images/guide/payments/activity/sending.png: sending.png
 assets/images/guide/payments/activity/sending@2x.png: sending@2x.png
 assets/images/guide/payments/activity/activity-bad-example.png: activity-bad-example.png
 assets/images/guide/payments/activity/activity-bad-example@2x.png: activity-bad-example@2x.png
+assets/images/guide/payments/request/request-banner(1600x600).png: request-banner(1600x600).png
+assets/images/guide/payments/request/request-banner(3200x1200).png: request-banner(3200x1200).png
+assets/images/guide/payments/request/request-banner(400x200).png: request-banner(400x200).png
+assets/images/guide/payments/request/request-banner(800x400).png: request-banner(800x400).png
+assets/images/guide/payments/request/request-banner-preview(1200x630).png: request-banner-preview(1200x630).png
