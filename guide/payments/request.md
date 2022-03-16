@@ -6,11 +6,25 @@ nav_order: 1
 parent: Payments
 has_children: true
 permalink: /guide/payments/request/
+image: /assets/images/guide/payments/request/request-banner-preview(1200x630).jpg
+image_base: /assets/images/guide/payments/request/
 redirect_from:
  - /guide/payments/receive/
 main_classes: -no-top-padding
 # image: /assets/images/guide/payments/request/header.svg
 ---
+
+{% include picture.html
+    image = "/assets/images/guide/payments/request/request-banner(1600x600).png"
+    retina = "/assets/images/guide/payments/request/request-banner(3200x1200).png"
+    mobile = "/assets/images/guide/payments/request/request-banner(400x200).png"
+    mobileRetina = "/assets/images/guide/payments/request/request-banner(800x400).png"
+    alt-text = "Image: Text balloon containing a bitcoin."
+    width = 1600
+    height = 600
+    layout = "full-width"
+%}
+
 
 <!--
 
