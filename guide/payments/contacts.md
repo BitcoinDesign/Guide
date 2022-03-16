@@ -192,7 +192,7 @@ Based on your use case, your application may choose to only support certain paym
 
 ### Contact editing
 
-The contacts screen should offer various features for editing and organization. Also see [Requesting bitcoin &middot; Contact cards]({{ '/guide/payments/request/#contact-cards' | relative_url }}).
+The contacts screen should offer various features for editing and organization.
 
 {% include image-gallery.html pages = page.imagesMultiAddressContact %}
 
