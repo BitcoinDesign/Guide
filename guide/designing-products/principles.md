@@ -102,7 +102,7 @@ layout="float-left"
 
 Self-custody often leaves the end-user responsible for the security of their private keys. They can only do a good job of that if we provide them with appropriate tools and awareness of best practices.
 
-Security is especially important when onboarding people who are new to bitcoin. For example, new users are likely to start by only storing small amounts. After a while, they may become more comfortable with the idea of self-custody and begin to store larger amounts. The concept of progressive security is a good idea here, starting with [automatic cloud backups]({{'/guide/onboarding/backing-up-a-wallet/cloud-backup/' | relative_url}}). This would let a user upgrade their security and private key management scheme as their savings grow. Although common, recovery phrases that require [manual backup]({{'/guide/onboarding/backing-up-a-wallet/manual-backup/' | relative_url}}) might backfire for new users not yet familiar with safe backup practices.
+Security is especially important when onboarding people who are new to bitcoin. For example, new users are likely to start by only storing small amounts. After a while, they may become more comfortable with the idea of self-custody and begin to store larger amounts. The concept of progressive security is a good idea here, starting with [automatic cloud backups]({{'/guide/onboarding/backing-up-a-wallet/cloud-backup/' | relative_url}}). This would let a user upgrade their security and private key management scheme as their savings grow. Although common, [recovery phrases]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) that require [manual backup]({{'/guide/onboarding/backing-up-a-wallet/manual-backup/' | relative_url}}) might backfire for new users not yet familiar with safe backup practices.
 
 Education and awareness are a big part of security, as they can protect users from bad actors and potentially their own security mistakes. It is unrealistic to expect beginners to take in all the knowledge acquired by advanced users in one go, for example, while [onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}) to a bitcoin product. We should therefore consider how to continuously educate and level up user awareness of best practices and risks.
 
@@ -217,11 +217,11 @@ layout="float-left"
 
 </div>
 
-While an open and decentralized financial system that users can connect with directly is great, it puts a burden on them to choose a product that they trust and like to use. We can make this easier by freely sharing information about how our products work and what technologies they use/rely on. By open-sourcing your code, you can let people verify that your claims are true, ultimately building more trust with your users. It is important to be transparent with users about the risks that come with self-custodying funds. Be sure to educate them about scenarios where they may risk losing access to their funds along with best practices for avoiding this.
+While an open and decentralized financial system that users can connect with directly is great, it puts a burden on them to choose a product that they trust and like to use. We can make this easier by freely sharing information about how our products work and what technologies they use/rely on. By open-sourcing your code, you can let people verify that your claims are true, ultimately building more trust with your users. It is important to be transparent with users about the risks that come with self-custodying funds. Be sure to educate them about scenarios where they may risk losing access to their funds, along with best practices for avoiding this.
 
 **Do**
 - Be open and transparent with how your product works
-    -  For wallets, inform users on the fees your application charges
+    -  For wallets, inform users of the fees your application charges
 - Let people verify your claims by open-sourcing your code when possible
 - Explain what risks the user is taking on, and how best to mitigate them
 

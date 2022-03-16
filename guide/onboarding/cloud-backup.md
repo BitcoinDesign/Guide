@@ -37,7 +37,7 @@ layout = "full-width"
 
 ### How it works
 
-The user's wallet recovery data and channel states are backed up on their respective cloud storage provider. The recovery phrase only needs to be backed up once. However, channel states may need to be backed up frequently because they change every time the user's wallet sends, receives, or routes a payment; therefore, the channel state should be backed up automatically.
+The user's wallet recovery data and channel states are backed up on their respective cloud storage provider. The [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) only needs to be backed up once. However, channel states may need to be backed up frequently because they change every time the user's wallet sends, receives, or routes a payment; therefore, the channel state should be backed up automatically.
 
 If the user's device is lost, stolen, or broken, they can use the backup from their cloud storage account (such as Apple iCloud or Google Drive) to regain access to their funds. To learn more about the technical details, hop over to the [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) section on this topic.
 
@@ -74,7 +74,7 @@ height = 541
 {% include picture.html
      image = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-PIN.png"
    retina = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-PIN@2x.png"
-   class = "shadow"
+   layout = "shadow"
    caption = "Allows the user to set a PIN used for authentication."
    alt-text = "The user can set a PIN which will be used to authenticate and access the wallet"
    width = 250
@@ -84,7 +84,7 @@ height = 541
 {% include picture.html
      image = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-service.png"
    retina = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-service@2x.png"
-   class = "shadow"
+   layout = "shadow"
    caption = "Give the user different cloud provider options, others such as Dropbox might also be included."
    alt-text = "Screen showing saving a password to encrypt the recovery phrase"
    width = 250
@@ -94,7 +94,7 @@ height = 541
 {% include picture.html
      image = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-provider.png"
    retina = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-provider@2x.png"
-   class = "shadow"
+   layout = "shadow"
    caption = "This UI will be very different depending on the cloud provider and what permissions are required."
    alt-text = "Screen of placeholder where cloud provider UI would be"
    width = 250
@@ -104,7 +104,7 @@ height = 541
 {% include picture.html
    image = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-confirmation.png"
    retina = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-confirmation@2x.png"
-   class = "shadow"
+   layout = "shadow"
    caption = "Once the upload is complete it's a good idea to show a success screen and give some reassurances."
    alt-text = "Screen showing completing a cloud backup"
    width = 250

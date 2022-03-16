@@ -77,6 +77,16 @@ imagesErrors:
     - file: generic-error-details
       alt: A screen showing error details
       caption: Access to error details for problem-solving.
+    - file: offline-error
+      alt: A screen showing error details
+      caption: If the receiving Lightning wallet is offline, let the user know how to address this problem.
+imagesReview:
+    - file: confirm
+      alt: Invoice approval screen
+      caption: A compact summary to confirm the information is accurate.
+    - file: enter-pin-before-payment
+      alt: Enter PIN screen
+      caption: Optionally, this wallet is asking the user to enter their PIN as the final step before paying.
 ---
 
 <!--
@@ -107,8 +117,18 @@ layout = "full-width"
 %}
 
 # Sending bitcoin
+{:.no_toc}
 
-Sending bitcoin is one of the most essential user activities in a bitcoin application, and also one of the least structured ones. People may want to send bitcoin to a known contact, transfer it to another wallet on a different device, or make a purchase via a [payment processor]({{ '/guide/getting-started/software/#payment-processors' | relative_url }}).
+Sending bitcoin is one of the most essential user activities in a bitcoin application, and also one of the least structured ones. People may want to send bitcoin to a known [contact]({{ '/guide/payments/contacts/' | relative_url }}), transfer it to another wallet on a different device, or make a purchase via a [payment processor]({{ '/guide/getting-started/software/#payment-processors' | relative_url }}).
+
+---
+
+<div class="glossary-toc" markdown="1">
+* Table of contents
+{:toc}
+</div>
+
+---
 
 ## Payment entry points
 
@@ -200,25 +220,15 @@ This fee is dependent on how many other transactions are currently waiting to be
 
 ## Review & approval
 
-<div class="center" markdown="1">
+Always give the user an opportunity to review and confirm the details of their payment before sending.
 
-{% include image.html
-   image = "/assets/images/guide/payments/send/confirm.png"
-   retina = "/assets/images/guide/payments/send/confirm@2x.png"
-   alt-text = "Invoice approval screen"
-   caption = "A compact summary to confirm the information is accurate."
-   width = 250
-   height = 541
-   layout = "float-right-desktop -background -shadow"
-%}
+When a payment is initiated via an invoice or payment link and doesn't require any additional input by the user, the whole user interaction is one of review and confirmation.
 
-Particularly with payments for larger amounts, it is good practice to allow users to review and confirm the information before it is sent.
+This can be a good place for an additional security step, depending on the security paradigm of your app. For example, a wallet might provide the security step if the payment amount hits a threshold or if the wallet has a spending limit defined. Some wallets forego a security step when opening the app, but require it when spending. For more information on the nuances of building your security model, see the [Protecting a wallet]({{'/guide/onboarding/protecting-a-wallet/' | relative_url}}) page.
 
-Payments initiated via invoices which don't require any additional input by the user can avoid this review step, as the whole user interaction is one of review and confirmation.
+If using a security step here, it should come after the user has selected all other options regarding the payment. This final security step represents the user's final consent to the payment they are making.
 
-Wallets that offer features for [spending limits]({{ '/guide/onboarding/protecting-a-wallet/#wallet-limits' | relative_url }}) or support [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}) schemes for additional security may ask users to go through additional confirmation steps here.
-
-</div>
+{% include image-gallery.html pages = page.imagesReview %}
 
 ## Transaction processing
 
@@ -281,7 +291,7 @@ There are situations in which users may want to make more complex adjustments to
 
 **Coin selection**
 
-Some users may prefer to choose which of their bitcoin (UTXOs to be precise) to send, in order to protect their privacy. More on this topic on the [Coin selection page]({{ '/guide/glossary/coin-selection/' | relative_url }}) page.
+Some users may prefer to choose which of their bitcoin (UTXOs to be precise) to send, in order to protect their privacy. More on this topic on the [Coin selection page]({{ '/guide/glossary/coin-selection/' | relative_url }}).
 
 **Lightning routing options**
 

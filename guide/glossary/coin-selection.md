@@ -84,7 +84,7 @@ Automatic selection strategies can provide a near frictionless user experience a
 
 ### How it works
 
-A user chooses to send a payment to one of their contacts. They enter the amount of bitcoin they wish to send, select their transaction fee rate, and approve the outgoing payment request. During this process, their wallet **automatically** selects which coins to use to fund the transaction’s inputs, making sure it can fulfill the payment request.
+A user chooses to send a payment to one of their [contacts]({{ '/guide/payments/contacts/' | relative_url }}). They enter the amount of bitcoin they wish to send, select their transaction fee rate, and approve the outgoing payment request. During this process, their wallet **automatically** selects which coins to use to fund the transaction’s inputs, making sure it can fulfill the payment request.
 
 <div class="image-slide-gallery">
 

@@ -39,13 +39,13 @@ The review process requires only a GitHub account and no additional software. It
 
 ### Identifying what to review
 
-A change is proposed in a form of a pull request[^1]. To preview a list of all proposals visit this [link](https://github.com/BitcoinDesign/Guide/pulls) or go to Bitcoin Design Guide [repository](https://github.com/BitcoinDesign/Guide/) and click on the `Pull requests` tab.
+A change is proposed in the form of a pull request[^1]. To preview a list of all proposals, visit this [link](https://github.com/BitcoinDesign/Guide/pulls) or go to Bitcoin Design Guide [repository](https://github.com/BitcoinDesign/Guide/) and click on the `Pull requests` tab.
 
 Pull requests with the `Draft` status, or marked as **WIP (Work in progress)**, usually require structural feedback and do not need a thorough evaluation yet. If the WIP pull request description doesn't specify the required feedback type, feel free to ask the author by leaving a comment.
 
 ### Reviewing pull requests
 
-From the list of pull requests select the one you want to review. Read the description of a pull request, and if it references an issue, check the issue to get the context. To begin the review process click on the `Files Changed` tab.
+From the list of pull requests, select the one you want to review. Read the description of a pull request, and if it references an issue, check the issue to get the context. To begin the review process click on the `Files Changed` tab.
 
 The tab is split into two sections. The section on the left represents the current code/content. The section on the right represents the proposed changes. If you see the single column screen, you can switch from unified to split view by clicking on the gear icon.
 
@@ -102,7 +102,7 @@ There are two ways to test a pull request in the Bitcoin Design Guide repository
 
 Netlify is a platform that allows us to quickly preview how our pull request will look in production. It provides a unique permanent URL for every pull request. To preview a pull request you have to click on the `Details` deploy link at the bottom of every pull request.
 
-Once you visited the URL, locate the page(s) to which proposed changes refer and preview them. Test the overall experience, links, images, preview website on a mobile device.
+Once you visit the URL, locate the page(s) to which proposed changes refer and preview them. Test the overall experience, links, images, preview website on a mobile device.
 
 {% include picture.html
    image = "/assets/images/guide/contribute/review/test-pull-request-netlify.png"

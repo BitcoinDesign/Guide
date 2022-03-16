@@ -2,7 +2,7 @@
 layout: guide
 title: Units & Symbols
 description: How to display and format bitcoin and currency units in bitcoin applications.
-nav_order: 4
+nav_order: 6
 parent: Payments
 permalink: /guide/payments/units-and-symbols/
 main_classes: -no-top-padding

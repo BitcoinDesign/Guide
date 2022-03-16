@@ -58,11 +58,11 @@ You can then use this research to identify where potential problems may exist. T
 
 ### Example
 
-For the sake of simplicity let's focus on one hypothetical user.
+For the sake of simplicity, let's focus on one hypothetical user.
 
 > Joshua Akinsola is a 21-year old Nigerian studying economics in the large city of Lagos. Growing up, his family struggled to save any money due to a lack of financial education, high unemployment, and a local currency inflating at 15% per year. There is a lack of reliable [savings]({{ 'guide/designing-products/personal-finance/#savings' | relative_url }}) technology in his country, so he opts to save money for the future using bitcoin.
 
-The uncovering of this scenario could be the result of a [user interview](https://github.com/patestevao/Bitcoin-UX-interviews/blob/main/call-for-participants.md) or found in various channels such as chats, issues, or even Twitter. We can then take quotes from the participant to understand their emotions and infer their specific needs. This then helps us identify barriers and motivators.
+The uncovering of this scenario could result from [user interview](https://github.com/patestevao/Bitcoin-UX-interviews/blob/main/call-for-participants.md) or found in various channels such as chats, issues, or even Twitter. We can then take quotes from the participant to understand their emotions and infer their specific needs. This then helps us identify barriers and motivators.
 
 Barriers are anything that the user perceives as preventing them from achieving their desired goals.
 
@@ -173,7 +173,7 @@ Motivators are specific user wants that are driving the user to seek out bitcoin
 ## Brainstorm solutions with your team
 With this information, you can craft solutions based on these barriers and motivators to create the best experience for a user like Josh.
 
-To weaken Josh's "Fear of losing a private key," a [wallet]({{ 'guide/getting-started/software/#wallets' | relative_url }}) might opt to initially backup an encrypted version of his recovery phrase to a cloud provider and educate him over time on how to take more control of his private key.
+To weaken Josh's "Fear of losing a private key," a [wallet]({{ 'guide/getting-started/software/#wallets' | relative_url }}) might opt to initially backup an encrypted version of his [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) to a cloud provider and educate him over time on how to take more control of his private key.
 
 Savings is a big motivator for Josh and so you should have a big focus on security and making sure a loss of funds over a long period of time is virtually impossible. Given that control is also a motivator, a wallet could aim to provide as much customizability as possible such as fee selection or coin selection.
 
