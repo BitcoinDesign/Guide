@@ -2,17 +2,17 @@
 
 This is the repository for the [Bitcoin Design Guide](https://bitcoin.design/guide/), and the [bitcoin.design](https://bitcoin.design) community website.
 
-Discussion and collaboration is taking place in the [Bitcoin Design Slack](http://bitcoindesigners.org) (#bitcoin-design-guide).
+Discussion and collaboration is taking place in the [Bitcoin Design Slack](https://join.slack.com/t/bitcoindesign/shared_invite/zt-10sxfovaq-isViijl4RThKRs_TsAQnuA) (#bitcoin-design-guide).
 
 The [Bitcoin Design Guide](https://bitcoin.design/guide/) is a free open-source community resource that helps designers, developers and others working on non-custodial bitcoin-products to create better experiences faster. We hope that, over time, it will cover all relevant types of products, including consumer wallets, merchant interactions, exchanges and more. Better products and experiences should ultimately make it more appealing for anyone to own and use bitcoin.
 
-An equally important goal is that the process of creating this guide nurtures an open-source bitcoin design community that can carry this, and other projects forward longer term. The [Bitcoin Design Slack](http://bitcoindesigners.org) and the [bitcoin.design](https://bitcoin.design) website are the first steps in this direction.
+An equally important goal is that the process of creating this guide nurtures an open-source bitcoin design community that can carry this, and other projects forward longer term. The [Bitcoin Design Slack](https://join.slack.com/t/bitcoindesign/shared_invite/zt-10sxfovaq-isViijl4RThKRs_TsAQnuA) and the [bitcoin.design](https://bitcoin.design) website are the first steps in this direction.
 
 ---
 
 ## Process and how to contribute
 
-The process of creating the guide is meant to be as open and decentralized as possible, resulting in a sustainable model to run projects with the community. Most of the discussion happens in the [Bitcoin Design Slack](http://bitcoindesigners.org), in the #bitcoin-design-guide channel, and here on GitHub in [Issues](https://github.com/BitcoinDesign/Guide/issues), [Pull requests](https://github.com/BitcoinDesign/Guide/pulls) and [Discussions](https://github.com/BitcoinDesign/Guide/discussions). Also see the [roadmap](https://github.com/orgs/BitcoinDesign/projects/2) for an overview of current and upcoming activities.
+The process of creating the guide is meant to be as open and decentralized as possible, resulting in a sustainable model to run projects with the community. Most of the discussion happens in the [Bitcoin Design Slack](https://join.slack.com/t/bitcoindesign/shared_invite/zt-10sxfovaq-isViijl4RThKRs_TsAQnuA), in the #bitcoin-design-guide channel, and here on GitHub in [Issues](https://github.com/BitcoinDesign/Guide/issues), [Pull requests](https://github.com/BitcoinDesign/Guide/pulls) and [Discussions](https://github.com/BitcoinDesign/Guide/discussions). Also see the [roadmap](https://github.com/orgs/BitcoinDesign/projects/2) for an overview of current and upcoming activities.
 
 You can read more about [how to contribute](https://bitcoin.design/guide/contribute/).
 
