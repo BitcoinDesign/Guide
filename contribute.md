@@ -42,7 +42,7 @@ If you are not familiar with the concepts of open design, we have a [great intro
 ## How to get involved in projects
 
 1. See the projects we are either involved in or recommend on the [projects]({{ 'projects' | relative_url }}) page
-1. Browse [issues labeled as projects](https://github.com/BitcoinDesign/Meta/issues?q=is%3Aopen+is%3Aissue+label%3Aproject)
+1. Browse [issues labeled as collaborations](https://github.com/BitcoinDesign/Meta/issues?q=is%3Aopen+is%3Aissue+label%3Acollaboration)
 2. Browse the various Slack channels to see what projects are being discussed and chime in. Open-source relies on pro-active contributions.
 1. Contribute to the [Bitcoin Design Guide]({{ '/guide/' | relative_url }})
 
