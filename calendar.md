@@ -55,7 +55,7 @@ Join community calls, design reviews, project discussions and other events. Our 
     title = "Learning bitcoin & design"
     description = "A series focused on open discussion of the fundamentals."
     last = true
-    url = "https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+Learning+"
+    url = "https://github.com/BitcoinDesign/Meta/issues/269"
 %}
 
 {% include emoji-box.html
