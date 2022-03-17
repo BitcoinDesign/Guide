@@ -45,16 +45,17 @@ Join community calls, design reviews, project discussions and other events. Our 
 
 {% include emoji-box.html
     emoji = "⚡️"
-    title = "Wallet improvement project"
-    description = "Designs review of mobile Lightning wallets. Every 3 weeks on Jitsi."
-    url = "https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+%22Wallet+improvement%22+"
+    title = "Bitcoin design sprints"
+    description = "Our collaborative design sessions with Lightning wallet projects."
+    url = "https://github.com/BitcoinDesign/Meta/issues/244"
 %}
 
 {% include emoji-box.html
-    emoji = "👀"
-    title = "Design review calls"
-    description = "A project team presents their work and design challenges and we provide feedback. Scheduled as requested."
-    url = "https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+%22design+review%22+"
+    emoji = "👩🏽‍🎓"
+    title = "Learning bitcoin & design"
+    description = "A series focused on open discussion of the fundamentals."
+    last = true
+    url = "https://github.com/BitcoinDesign/Meta/issues/269"
 %}
 
 {% include emoji-box.html
@@ -63,6 +64,13 @@ Join community calls, design reviews, project discussions and other events. Our 
     description = "Individual projects organize their own calls to hang out and discuss progress. Peek in if you’re curious."
     last = true
     url = "https://github.com/BitcoinDesign/Meta/issues"
+%}
+
+{% include emoji-box.html
+    emoji = "👀"
+    title = "Design review calls"
+    description = "A project team presents their work and design challenges and we provide feedback. Scheduled as requested."
+    url = "https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+%22design+review%22+"
 %}
 </div>
 
