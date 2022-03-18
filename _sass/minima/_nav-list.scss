@@ -19,8 +19,8 @@
     a.nav-list-link {
       display: block;
       font-size: 15px;
-      line-height: 34px;
-      margin-left: 34px;
+      line-height: 30px;
+      margin-left: 30px;
       color: black;
 
       &:visited {
@@ -37,6 +37,10 @@
         }
       }
 
+      &:hover {
+        color: $primary-color;
+      }
+
       &:hover,
       &.-active {
         text-decoration: none;
@@ -49,8 +53,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 34px;
-      height: 34px;
+      width: 30px;
+      height: 30px;
       background-color: transparent;
       border-width: 0;
       appearance: none;
@@ -76,10 +80,6 @@
           color: $primary-color;
         }
       }
-
-      & + .nav-list-link {
-
-      }
     }
 
     > .nav-list {
@@ -89,31 +89,36 @@
 
       .nav-list-item {
         position: relative;
+        cursor: pointer;
 
-        .nav-list-link {
-          // color: $primary-color;
+        > .nav-list {
+          display: block;
         }
 
-        .nav-list-expander {
-          // color: $primary-color;
+        > a.nav-list-link {
+          color: #474747;
+
+          &:hover {
+            color: $primary-color;
+          }
         }
       }
     }
 
     &.-active {
       > a.nav-list-link {
-          color: $primary-color;
+        color: $primary-color;
 
-          &:visited {
-            color: $primary-color;
-          }
+        &:visited {
+          color: $primary-color;
+        }
       }
 
       > .nav-list-expander {
-          svg {
-            transform: rotate(90deg);
-            color: $primary-color;
-          }
+        svg {
+          transform: rotate(90deg);
+          color: $primary-color;
+        }
       }
 
       > .nav-list {

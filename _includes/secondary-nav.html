@@ -38,9 +38,6 @@
                   {%- if page.url == child.url or page.parent == child.title -%}
                     {%- assign second_level_url = child.url | relative_url -%}
                   {%- endif -%}
-                  {%- if child.has_children -%}
-                    <button class="nav-list-expander" title="Toggle list"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></button>
-                  {%- endif -%}
                   <a href="{{ child.url | relative_url }}" class="nav-list-link{% if page.url == child.url %} -active{% endif %}">{{ child.title }}</a>
                   {%- if child.has_children -%}
                     {%- assign grand_children_list = pages_list | where: "parent", child.title | where: "grand_parent", node.title -%}
