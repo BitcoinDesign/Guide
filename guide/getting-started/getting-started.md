@@ -35,7 +35,7 @@ Illustration sources
 
 # Getting started
 
-Welcome to the Bitcoin Design Guide! You’re in for an adventure. This chapter is all about the big concepts that are helpful to be familiar with when creating bitcoin products. You’ll find a summary of concepts on this page, click through if you would like to dig deeper into a specific topic. The guide isn't a comprehensive overview of all bitcoin topics, but only the ones you should know as a designer working in this space.
+Welcome to the Bitcoin Design Guide! You’re in for an adventure. This chapter is all about the big concepts that are helpful to be familiar with when creating bitcoin products. You’ll find a summary of concepts on this page. Click through if you would like to dig deeper into a specific topic. The guide isn't a comprehensive overview of all bitcoin topics, but only the ones you should know as a designer working in this space.
 
 ---
 
@@ -65,7 +65,7 @@ Bitcoin applications roughly fall into a defined set of categories, from consume
 
 ### [Hardware overview]({{ '/guide/getting-started/hardware/' | relative_url }})
 
-Whether it's for security or participating in the network, bitcoin hardware is an essential part of the ecosystem and user experience.
+Whether for security or participating in the network, bitcoin hardware is an essential part of the ecosystem and user experience.
 
 ---
 
