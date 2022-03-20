@@ -13,7 +13,7 @@ image: https://bitcoin.design/assets/images/guide/getting-started/hardware/hardw
 
 Editor's notes
 
-This page provides an overview of the different types of hardware that interact with the bitcoin network. It is only a top-level summary. An idea for future expansion would be create sub-pages
+This page provides an overview of the different types of hardware that interact with the bitcoin network. It is only a top-level summary. An idea for future expansion would be creating sub-pages
 to more thoroughly discuss each hardware type.
 
 Illustration sources
@@ -54,17 +54,17 @@ General purpose hardware, like personal computers and smartphones, work great fo
    height = 400
 %}
 
-Many users back up their wallet using metal plates that have their recovery phrase etched into them. This protects the recovery phrase from physical destruction from fire and  water. [Seedplate](https://seedplate.com/) is an example of such a product.
+Many users back up their wallet using metal plates that have their recovery phrase etched into them. This protects the recovery phrase from physical destruction from fire and water. [Seedplate](https://seedplate.com/) is an example of such a product.
 
-A simpler option is writing your recovery phrase on a piece of paper. Compared to steel, paper can be easily destroyed, making this option less secure.
+A simpler option is writing your recovery phrase on a piece of paper. Paper can be easily destroyed compared to steel, making this option less secure.
 
-Some applications such as [Muun](https://blog.muun.com/why-not-just-a-mnemonic/) have users print out encrypted PDF backups that contain all the required recovery data, not just the recovery phrase.
+Some applications, such as [Muun](https://blog.muun.com/why-not-just-a-mnemonic/) have users print out encrypted PDF backups that contain all the required recovery data, not just the recovery phrase.
 
 See [bitcoin backups]({{ '/guide/private-key-management/backups/' | relative_url }}) for more details.
 
 ## Hardware wallets
 
-You may already be familiar with physical security keys from your bank or work. They are small devices with built-in authentication that control and secure access to a device or service. Security keys are not connected to the Internet (air-gapped), or any other network so they are difficult to tamper with.
+You may already be familiar with physical security keys from your bank or work. They are small devices with built-in authentication that control and secure access to a device or service. Security keys are not connected to the Internet (air-gapped) or any other network, so they are difficult to tamper with.
 
 {% include picture.html
    image = "/assets/images/guide/getting-started/hardware/hardware-wallets.jpg"
@@ -77,13 +77,13 @@ You may already be familiar with physical security keys from your bank or work. 
    height = 400
 %}
 
-Bitcoin hardware wallets, also known as external signers, act like bitcoin centric security keys. They isolate the recovery phrase and private keys from the internet and other devices.
+Bitcoin hardware wallets, also known as external signers, act like bitcoin-centric security keys. They isolate the recovery phrase and private keys from the internet and other devices.
 
-Hardware wallets only exchange non-sensitive information with external devices. Sensitive processes, such as signing a transaction to open a Lightning network payment channel, happen on the device. Most interactions with hardware wallets happen via desktop [software, like wallets]({{ '/guide/getting-started/software/#wallets' | relative_url }}).
+Hardware wallets only exchange non-sensitive information with external devices. Sensitive processes happen on the device, such as signing a transaction to open a Lightning network payment channel. Most interactions with hardware wallets happen via desktop [software, like wallets]({{ '/guide/getting-started/software/#wallets' | relative_url }}).
 
 ## Nodes
 
-A node is a device that participates in a network. There are two types of nodes to understand: A bitcoin node which participates in the bitcoin network, and a Lightning node which participates in the Lightning network. For a deeper dive into what purpose these nodes serve check out the [technology primer]({{ '/guide/getting-started/technology-primer/' | relative_url }}).
+A node is a device that participates in a network. There are two types of nodes to understand: A bitcoin node that participates in the bitcoin network and a Lightning node that participates in the Lightning network. For a deeper dive into what purpose these nodes serve check out the [technology primer]({{ '/guide/getting-started/technology-primer/' | relative_url }}).
 
 {% include picture.html
    image = "/assets/images/guide/getting-started/hardware/node-hardware.jpg"
@@ -95,7 +95,7 @@ A node is a device that participates in a network. There are two types of nodes 
    height = 400
 %}
 
-It is quite common to have dedicated hardware to run bitcoin [node software]({{ '/guide/getting-started/software/#nodes' | relative_url }}). This ensures your node stays in sync with the network and is regularly verifying the network rules, increasing bitcoin’s security. Some node software also comes packaged with other third-party applications which may benefit from dedicated hardware and more regular uptime.
+It is quite common to have dedicated hardware to run bitcoin [node software]({{ '/guide/getting-started/software/#nodes' | relative_url }}). This ensures your node stays in sync with the network and is regularly verifying the network rules, increasing bitcoin’s security. Some node software also comes packaged with other third-party applications, which may benefit from dedicated hardware and more regular uptime.
 
 Lightning node software can be run on a smartphone. Though, this often comes with trusting a third-party for certain node functions such as payment path construction. For this reason, dedicated hardware Lightning nodes may be a better option for those who do not want a trust-minimized setup.
 
@@ -107,7 +107,7 @@ See [nodes]({{ '/guide/glossary/node/' | relative_url }}) for more details.
 
 ## Mining hardware
 
-Miners are the backbone of bitcoin generating new blocks, which creates new bitcoin. Dedicated mining hardware, which runs dedicated [mining software]({{ '/guide/getting-started/software/#mining-software' | relative_url }}), exists for mining bitcoin. Various billion dollar industries have developed around the manufacture and deployment of such hardware.
+Miners are the backbone of bitcoin generating new blocks, which creates new bitcoin. Dedicated mining hardware, which runs dedicated [mining software]({{ '/guide/getting-started/software/#mining-software' | relative_url }}), exists for mining bitcoin. Various billion-dollar industries have developed around the manufacture and deployment of such hardware.
 
 {% include picture.html
    image = "/assets/images/guide/getting-started/hardware/mining-hardware.jpg"
@@ -137,9 +137,9 @@ Bitcoin Automated Teller Machines (ATM) are a convenient way to buy or sell bitc
    height = 400
 %}
 
-Much like traditional ATMs, bitcoin ATMs allow the deposit and withdrawal of money. Bitcoin ATMs however allow someone to deposit fiat currencies in exchange for bitcoin.
+Much like traditional ATMs, bitcoin ATMs allow the deposit and withdrawal of money. Bitcoin ATMs, however allow someone to deposit fiat currencies in exchange for bitcoin.
 
-Modern bitcoin ATMs take advantage of the bitcoin Lightning network. This enables almost instant withdrawals and cheaper fees, which makes the purchase experience more friendly and cost effective.
+Modern bitcoin ATMs take advantage of the bitcoin Lightning network. This enables almost instant withdrawals and cheaper fees, making the purchase experience more friendly and cost-effective.
 
 Bitcoin ATMs are usually bound to local money transmission laws and regulations, such as Know Your Customer (KYC) and Anti-Money Laundering (AML) regulations. More on [Wikipedia](https://en.wikipedia.org/wiki/Bitcoin_ATM).
 
