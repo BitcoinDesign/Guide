@@ -281,6 +281,53 @@ let themes = [
         name: "Jessica Wolff",
         link: "https://github.com/BitcoinDesign/Guide/issues/289"
     }
+  },
+  {
+    // The Ongoing Development of Bitcoin
+    logo: {
+        path: "/assets/bitcoin-design-community-banner.svg",
+        fillColor: "#E0E0E0",
+        outlineColor: "#000"
+    },
+    title: {
+        fillColor: "#ADAAAA",
+        outlineColor: "#000"
+    },
+    description: {
+        fillColor: "#000"
+    },
+    button1: {
+        fillColor: "#F7931A",
+        outlineColor: "",
+        labelFillColor: "#00"
+    },
+    button2: {
+        fillColor: "#FFF",
+        outlineColor: "#000",
+        labelFillColor: "#000"
+    },
+    background: {
+        path: '',
+        pathRetina: '',
+        pathMobile: '',
+        pathMobileRetina: '',
+        backgroundColor: "#F4F4F4"
+    },
+    copy: {
+        backgroundColor: ""
+    },
+    image: {
+        path: 'url("/assets/images/home/banner/ongoing-development.png")',
+        pathRetina: 'url("/assets/images/home/banner/ongoing-development@2x.png")',
+        pathMobile: 'url("/assets/images/home/banner/ongoing-development-mobile.png")',
+        pathMobileRetina: 'url("/assets/images/home/banner/ongoing-development-mobile@2x.png")',
+        backgroundColor: ""
+    },
+    flipLayoutOnMobile: false,
+    author: {
+        name: "Susrita Chatterjee",
+        link: "https://github.com/BitcoinDesign/Guide/issues/688"
+    }
   }
 ];
 
