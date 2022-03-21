@@ -13,7 +13,7 @@ image: https://bitcoin.design/assets/images/guide/getting-started/technology/tec
 
 Editor's notes
 
-This is the second version of the tech primer that introduces the lightning
+This is the second version of the tech primer that introduces the Lightning
 network to the reader. It's an introduction to bitcoin tech concepts
 based on simple questions readers might have, like "What is a bitcoin"
 and "How do I own bitcoin" but also sets up the foundations about
@@ -23,7 +23,7 @@ With further reading, more concepts are introduced and connections
 between concepts are made.
 
 This is only meant as an overview. As this is a design guide,
-future additions to this content should weigh off whether to add it
+future additions to this content should weigh-off whether to add it
 here, create sub-pages or reference external
 resources.
 
@@ -98,7 +98,7 @@ Just as the internet allows computers to exchange information, the bitcoin netwo
    layout = "float-right-desktop"
 %}
 
-Imagine a global spreadsheet where all transactions get recorded, and all entries are publicly accessible. With bitcoin, each participant can [verify a transaction for themselves]({{ '/guide/getting-started/software/#explorers' | relative_url }}) in their copy of the spreadsheet. In comparison, traditional banks keep their spreadsheets private from each other and their customers. Besides opportunities for fraud, there are many points of failure due to this, so you can't guarantee a payment will always happen. Even though all transactions are stored publicly on bitcoin, there is no personally identifiable information attached to them.
+Imagine a global spreadsheet where all transactions get recorded and all entries are publicly accessible. With bitcoin, each participant can [verify a transaction for themselves]({{ '/guide/getting-started/software/#explorers' | relative_url }}) in their copy of the spreadsheet. In comparison, traditional banks keep their spreadsheets private from each other and their customers. Besides opportunities for fraud, there are many points of failure due to this, so you can't guarantee a payment will always happen. Even though all transactions are stored publicly on bitcoin, there is no personally identifiable information attached to them.
 
 With thousands of nodes and tens of millions of users worldwide, it becomes implausible to manipulate or corrupt the previously agreed-upon transactions stored in the blockchain. Doing so would require a majority of nodes to accept such a change.
 </div>
@@ -134,7 +134,7 @@ Once a transaction is in a block that the network has accepted, it is considered
    layout = "float-right-desktop"
 %}
 
-While miners check that the transactions included in the block are valid, they must also be kept accountable that the information they are submitting is correct. After a miner constructs a block of transactions, it must race against other miners to solve a cryptographic puzzle, which incentivizes them to only include valid transactions in the block. This process is called Proof of Work, and it is fundamental to the security of the blockchain. The first miner to solve the puzzle and submit a valid block to the network will earn all the fees from the transactions in the block and a [block reward]({{ '/guide/glossary/#block-reward' | relative_url }}) as compensation; however, if they submit an invalid block, it will be rejected by the network.
+While miners check that the transactions included in the block are valid, they must also be kept accountable that they are submitting correct information. After a miner constructs a block of transactions, it must race against other miners to solve a cryptographic puzzle, incentivizing them to only include valid transactions in the block. This process is called Proof of Work, and it is fundamental to the security of the blockchain. The first miner to solve the puzzle and submit a valid block to the network will earn all the fees from the transactions in the block and a [block reward]({{ '/guide/glossary/#block-reward' | relative_url }}) as compensation; however, if they submit an invalid block, it will be rejected by the network.
 
 We also call the bitcoin blockchain "base layer" as it provides strong security, and is the foundation for other things to be built on top.
 
@@ -183,7 +183,7 @@ There are multiple scaling solutions built on top of bitcoin's base layer, but w
 - [Transaction lifecycle](/guide/payments/transactions/)
 
 <!--
-   While the base layer needs to have high integrity of decentralization, high security guarantees, and solid monetary principles...
+   While the base layer needs to have high integrity of decentralization, high-security guarantees, and solid monetary principles...
 -->
 
 </div>
@@ -201,7 +201,7 @@ There are multiple scaling solutions built on top of bitcoin's base layer, but w
    layout = "float-right-desktop"
 %}
 
-A payment channel is a [joint account]({{'/guide/glossary/#multi-signature-wallet-multisig' | relative_url }}) where two parties agree to bypass recording their payments on the blockchain. Opening a payment channel involves them locking up funds in a transaction. This enables faster and cheaper subsequent payments between the two parties as they only update their balances in the payment channel. For each update, a  new transaction is created, but it is only published when the parties agree to close the channel.
+A payment channel is a [joint account]({{'/guide/glossary/#multi-signature-wallet-multisig' | relative_url }}) where two parties agree to bypass recording their payments on the blockchain. Opening a payment channel involves them locking up funds in a transaction. This enables faster and cheaper subsequent payments between the two parties as they only update their balances in the payment channel. A new transaction is created for each update, but it is only published when the parties agree to close the channel.
 
 </div>
 
@@ -218,7 +218,7 @@ A payment channel is a [joint account]({{'/guide/glossary/#multi-signature-walle
    layout = "float-right-desktop"
 %}
 
-The Lightning network is a network of payment channels. Lightning nodes allow you to have multiple channels with different parties to route payments through. This new network forms a second layer on top of bitcoin. This has some privacy benefits too: payment information is only recorded to the blockchain when the payment channel is opened and closed. Every payment that happens in between the opening and closing is not stored “on-chain”.
+The Lightning network is a network of payment channels. Lightning nodes allow you to have multiple channels with different parties to route payments through. This new network forms a second layer on top of bitcoin. This has some privacy benefits, too: payment information is only recorded to the blockchain when the payment channel is opened and closed. Every payment that happens in between the opening and closing is not stored “on-chain”.
 </div>
 
 ## What are ways to receive bitcoin?

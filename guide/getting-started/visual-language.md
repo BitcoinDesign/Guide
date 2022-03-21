@@ -141,7 +141,7 @@ The Unicode symbol for bitcoin (₿) was introduced in [Unicode 10.0.0](http://w
 
 As the price of bitcoin has increased, and the [Lightning network]({{ '/guide/glossary/#lightning-network' | relative_url }}) has facilitated low-value payments, it has become common for people to denominate bitcoin with the "satoshi". See the [Units & Symbols]({{ '/guide/payments/units-and-symbols/' | relative_url }}) section for more detailed information about bitcoin units.
 
-There is currently not an agreed upon symbol to represent the satoshi (or if there should even be one), however, many ideas are in circulation.
+There is currently not an agreed-upon symbol to represent the satoshi (or if there should even be one). However, many ideas are in circulation.
 
 <div class="image-gallery" markdown="1">
 
@@ -246,7 +246,7 @@ height = 584
 
 ## Should Lightning be distinct from bitcoin?
 
-While Lightning branding can be fun and expressive, it may give new bitcoin users the impression that Lightning is different from bitcoin. More accurately, Lightning should be thought of as a different way of using bitcoin, not as a different currency than bitcoin.
+While Lightning branding can be fun and expressive, it may give new bitcoin users the impression that Lightning is different from bitcoin. More accurately, Lightning should be considered a different way of using bitcoin, not as a different currency than bitcoin.
 
 #### Consider your audience
 

@@ -36,7 +36,7 @@ Illustration sources
 
 # Software overview
 
-The unique history and architecture of bitcoin has resulted in several categories of software, with each one serving a distinct purpose. Provided below is an overview of standard and specialized application categories.
+The unique history and architecture of bitcoin has resulted in several software categories, with each one serving a distinct purpose. Provided below is an overview of standard and specialized application categories.
 
 ## Wallets
 
@@ -67,7 +67,7 @@ Due to bitcoin’s open-source nature, anyone with the technical skills can deve
 
 <div class="center" markdown="1">
 
-Exchanges let users swap between currencies and networks (for example USD to bitcoin, or from the base layer to the Lightning network). They typically fall in three general categories.
+Exchanges let users swap between currencies and networks (for example USD to bitcoin, or from the base layer to the Lightning network). They typically fall into three general categories.
 
 
 {% include image.html
@@ -84,7 +84,7 @@ Consumer-focused exchanges let users buy and sell directly with the exchange. Th
 
 Exchanges focused on investors and traders usually list many different cryptocurrencies. They allow users to trade with each other by submitting buy and sell orders on currency pairs. These products are generally for experienced users. They offer complex trading features and ways to analyze price movements.
 
-Decentralized exchanges focus on occasional use or trading, and are, as their name implies, based on an open marketplace without a central authority.
+Decentralized exchanges focus on occasional use or trading and are, as their name implies, based on an open marketplace without a central authority.
 
 </div>
 
@@ -92,7 +92,7 @@ Decentralized exchanges focus on occasional use or trading, and are, as their na
 
 If the blockchain is a public database, explorers are simply windows into that database.
 
-For bitcoin, block explorers let users view transaction data, latest blocks, block height, and so on. They also provide insight into bigger picture activity on the bitcoin network, such as daily transaction numbers. For example, there are typically fewer transactions on weekends, resulting in lower fees, ideal for low-priority transactions.
+For bitcoin, block explorers let users view transaction data, latest blocks, block height, etc. They also provide insight into bigger picture activity on the bitcoin network, such as daily transaction numbers. For example, there are typically fewer transactions on weekends, resulting in lower fees, ideal for low-priority transactions.
 
 As transactions in Lightning payment channels are not recorded on the blockchain, there are also Lightning network explorers. These let you see public information about the nodes and the network, such as channel count, capacity and status. Only participant nodes can look up specific transaction information in a channel.
 
@@ -139,15 +139,15 @@ Payment processing applications offer easy-to-use online stores and point-of-sal
 
 Bitcoin [node]({{ '/guide/glossary/node/' | relative_url }}) software connects to and participates in the bitcoin network. Nodes typically download and broadcast user transactions, and optionally help verify blockchain data more broadly. Some wallet software comes with built-in node capabilities, such as [Bitcoin Core]({{ '/guide/glossary/#bitcoin-core-client' | relative_url }}), but most wallet software connects to external nodes. Learn more on the [Node page]({{ '/guide/glossary/node/' | relative_url }}) in the glossary.
 
-Lightning node software connects to and participates in the Lightning network, which extends bitcoin with payment channels to increase transaction speed and lower costs. It is becoming widely adopted and accepted as the preferred way to scale bitcoin.
+Lightning node software connects to and participates in the Lightning network, extending bitcoin with payment channels to increase transaction speed and lower costs. It is becoming widely adopted and accepted as the preferred way to scale bitcoin.
 
-It’s common to use node management software, separate from the node software itself. This simplifies the setup, management and monitoring of nodes by providing graphical user interfaces to interact with the lower level node software instead of CLIs.
+It’s common to use node management software separate from the node software itself. This simplifies the setup, management and monitoring of nodes by providing graphical user interfaces to interact with the lower level node software instead of CLIs.
 
 </div>
 
 ## Command-line interfaces (CLI)
 
-Primarily used by developers, CLIs offer feature-rich ways to interact with nodes and other bitcoin software. They can be thought of as general-purpose toolboxes, so they require certain technical knowledge and are not optimized for specific use cases. New features are often first included in a CLI and then later added to graphical user interfaces (GUI).
+Primarily used by developers, CLIs offer feature-rich ways to interact with nodes and other bitcoin software. They can be thought of as general-purpose toolboxes, so they require certain technical knowledge and are not optimized for specific use cases. New features are often first included in a CLI and later added to graphical user interfaces (GUI).
 
 {% include image.html
    image = "/assets/images/guide/getting-started/software/cli-example.jpg"
@@ -176,7 +176,7 @@ Bitcoin [mining]({{ '/guide/getting-started/technology-primer/#how-is-the-blockc
 
 Mining has become primarily a professional undertaking with dedicated software to manage racks of [mining hardware]({{ '/guide/getting-started/hardware/#mining-hardware' | relative_url }}). However, some wallets still offer mining features, and there are also cloud mining providers that allow customers to rent mining capacity.
 
-Mining does not exist for transactions on the Lightning network, so there is no equivalent software. However, opening and closing payment channels on Lightning involve transactions, that need to be mined on the bitcoin network.
+Mining does not exist for transactions on the Lightning network, so there is no equivalent software. However, opening and closing payment channels on Lightning involve transactions that need to be mined on the bitcoin network.
 
 </div>
 
