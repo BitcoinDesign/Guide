@@ -41,13 +41,13 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 ---
 
 ### [Address]({{ "/guide/glossary/address" | relative_url }})
-A bitcoin address is an identifier of 26-35 alphanumeric characters that is used to receive bitcoin. There are [several address formats](https://en.bitcoin.it/wiki/List_of_address_prefixes) based on different specifications. Users need to know this information during backup for future recovery so applications should inform users which format it uses as support varies across applications.
+A bitcoin address is an identifier of 26-35 alphanumeric characters that is used to receive bitcoin. There are [several address formats](https://en.bitcoin.it/wiki/List_of_address_prefixes) based on different specifications. Users need to know this information during backup for future recovery, so applications should inform users which format it uses as support varies across applications.
 
 [Read more]({{ "/guide/glossary/address" | relative_url }})
 
 ### Account
 
-Just like wallet, the term account can also be used for very different things. In bitcoin wallets that follow the hierarchy described in [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki), a bitcoin wallet can have multiple accounts, with each one having its own addresses. However, account is also oftentimes used for accounts with third-party service providers.
+Just like wallet, the term account can also be used for very different things. In bitcoin wallets that follow the hierarchy described in [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki), a bitcoin wallet can have multiple accounts, with each one having its own addresses. However, an account is also oftentimes used for accounts with third-party service providers.
 
 Differentiate between
 
@@ -105,11 +105,11 @@ Instead of processing each transaction individually, the bitcoin network bundles
 
 Block rewards (also known as block subsidy) are the newly minted bitcoins awarded to miners for broadcasting a new block of verified transactions. The only way for a miner to participate in this process is by spending energy in the attempt to guess an incredibly large random number. In this sense, getting the block reward presents an important financial incentive for the miners to keep doing this work and securing the network.
 
-The described process is part of bitcoins hard-coded monetary policy, which follows an autonomous and programmatic schedule. The block reward given to bitcoin miners for processing transactions is cut in half after every 210,000 blocks, or around every four years. This is one of the mechanisms that allows us to know that there will never be more than 21M units. The last halving is expected to happen around the year 2,140.
+The described process is part of bitcoins hard-coded monetary policy, which follows an autonomous and programmatic schedule. The block reward given to bitcoin miners for processing transactions is cut in half after every 210,000 blocks or around every four years. This is one of the mechanisms that allows us to know that there will never be more than 21M units. The last halving is expected to happen around the year 2,140.
 
 ### BOLT - Basis of Lightning Technology
 
-A standardized technical document format for the Lightning network protocol specifications. They are hosted on Github [here](https://github.com/lightningnetwork/lightning-rfc). The various Lightning implementations must adhere to the BOLTs in order to be interoperable. However, some Lightning implementations may have features which are not defined in BOLTs.
+A standardized technical document format for the Lightning network protocol specifications. They are hosted on Github [here](https://github.com/lightningnetwork/lightning-rfc). The various Lightning implementations must adhere to the BOLTs in order to be interoperable. However, some Lightning implementations may have features that are not defined in BOLTs.
 
 ### Coin control
 
@@ -182,7 +182,7 @@ The master public key of a bitcoin account. All public addresses are generated f
 
 #### ypub
 
-Same as xpub however the y denotes that this xpub belongs to a wallet that is following the [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki) standard that details the derivation scheme for wrapped-segwit addresses (P2WPKH-nested-in-P2SH).
+Same as xpub, however the y denotes that this xpub belongs to a wallet that is following the [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki) standard that details the derivation scheme for wrapped-segwit addresses (P2WPKH-nested-in-P2SH).
 
 #### zpub
 
@@ -218,13 +218,13 @@ When an address receives bitcoin from another address, this is called an input. 
 
 ### Keys
 
-Bitcoin wallets and addresses are have both [public](#public-key) and [private keys](#private-key) associated to them. The private key controls access to funds and the ability to sign (approve) transactions.
+Bitcoin wallets and addresses have both [public](#public-key) and [private keys](#private-key) associated to them. The private key controls access to funds and the ability to sign (approve) transactions.
 
 ### Lightning invoice
 
-Users of the Lightning network use a Lightning invoice to request a payment. It is defined by [BOLT 11](https://github.com/lightningnetwork/lightning-rfc/blob/master/11-payment-encoding.md) and includes an amount to be paid, destination of the payment, and an optional message. Unlike bitcoin addresses, Lightning invoice's expire after a set amount of time. By default this is set to 60 minutes.
+Users of the Lightning network use a Lightning invoice to request a payment. It is defined by [BOLT 11](https://github.com/lightningnetwork/lightning-rfc/blob/master/11-payment-encoding.md) and includes an amount to be paid, destination of the payment, and an optional message. Unlike bitcoin addresses, Lightning invoice's expire after a set amount of time. By default, this is set to 60 minutes.
 
-Why do invoices expire? If invoices had no expiry, recipients would likely to run into memory / storage issues as the number of locally stored preimages grows with each payment attempt. Rene Pickhardt explains this further [here](https://bitcoin.stackexchange.com/questions/85981/why-do-lightning-invoices-expire/85999#85999).
+Why do invoices expire? If invoices had no expiry, recipients would likely run into memory / storage issues as the number of locally stored preimages grows with each payment attempt. Rene Pickhardt explains this further [here](https://bitcoin.stackexchange.com/questions/85981/why-do-lightning-invoices-expire/85999#85999).
 
 ### Lightning network
 
@@ -258,7 +258,7 @@ A language for writing certain types of bitcoin Scripts in a structured way. Min
 
 ### Multi-signature wallet (Multisig)
 
-Multi-signature wallets are bitcoin wallets that are controlled by more than one keypair. They can be defined by bitcoin scripts and use P2SH addresses. Common usecases and setups include *2-of-3*, or *3-of-5* multi-signature wallets that require a subset of the controlling keypairs to sign a transaction.
+Multi-signature wallets are bitcoin wallets that are controlled by more than one keypair. They can be defined by bitcoin scripts and use P2SH addresses. Common use-cases and setups include *2-of-3*, or *3-of-5* multi-signature wallets that require a subset of the controlling keypairs to sign a transaction.
 
 ### MuSig
 
@@ -298,7 +298,7 @@ A payment is a transaction that occurs over the Lightning network. Payments are 
 
 ### Private key
 
-Every bitcoin address has a public key and a corresponding private key, together they are called a keypair. If you have access to both the public and private key, you effectively control the funds in the address. As with HD Wallets there are also keypairs that control *branches* in the hierarchical tree of the wallet, and at the very top is the extended keypair (x-pub and x-prv for short) that control all the addresses in the wallet.
+Every bitcoin address has a public key and a corresponding private key, together they are called a keypair. If you have access to both the public and private key, you effectively control the funds in the address. As with HD wallets there are also keypairs that control *branches* in the hierarchical tree of the wallet, and at the very top is the extended keypair (x-pub and x-prv for short) that control all the addresses in the wallet.
 
 The private key is a 64 hexadecimal (or 256 if described in binary 1’s and 0’s) character string generated by the encryption algorithm. They look something like this in hexadecimal form:
 
@@ -314,17 +314,17 @@ A bitcoin address' public key can be derived from the private key. The address i
 
 ### Replace-by-fee (RBF)
 
-A node policy that allows an unconfirmed transaction to be replaced with a different transaction that spends at least one of the same inputs and which pays a higher transaction fee. This can sometimes be useful if a transaction has got *stuck* during times of higher-than-normal network-fees.
+A node policy that allows an unconfirmed transaction to be replaced with a different transaction that spends at least one of the same inputs and which pays a higher transaction fee. This can sometimes be useful if a transaction has got *stuck* during times of higher-than-normal network fees.
 
 ### Recovery phrase
 
 _Also referred to as Seed, Mnemonic, and Backup phrase._
 
-The controlling keypair of a bitcoin wallet can be derived from a *recovery phrase* of 12 words (it can also be 18 or 24 words, which is less common and not recommended as it does not provide better security) from a standardized list, defined in [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki). The recovery phrase provides full access to a bitcoin wallet as it contains the private key and is therefore very valuable. It’s extremely important to keep it safe, both from other people getting access to it and for yourself not to lose it by creating one or several backups of the phrase. In many applications most of this work falls on the user and it’s important to acknowledge the responsibility here of the makers of the application to ensure that the user is able and aware of how to securely store a recovery phrase backup.
+The controlling keypair of a bitcoin wallet can be derived from a *recovery phrase* of 12 words (it can also be 18 or 24 words, which is less common and not recommended as it does not provide better security) from a standardized list, defined in [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki). The recovery phrase provides full access to a bitcoin wallet as it contains the private key and is therefore very valuable. It’s extremely important to keep it safe, both from other people getting access to it and for yourself not to lose it by creating one or several backups of the phrase. In many applications, most of this work falls on the user, and it’s important to acknowledge the responsibility here of the makers of the application to ensure that the user is able and aware of how to securely store a recovery phrase backup.
 
-Many wallet-applications work with HD Wallets and recovery phrases, and are interoperable, meaning you can change the application that can control your wallet should you wish (although there are some caveats depending on if they support just BIP32 or also BIP44).
+Many wallet-applications work with HD wallets and recovery phrases, and are interoperable, meaning you can change the application that can control your wallet should you wish (although there are some caveats depending on if they support just BIP32 or also BIP44).
 
-**Technicalities** - Recovery of multisig-wallets needs both the extended public key and the recovery phrase of all paticipating keys as well as the master key fingerprint as defined by BIP32 concatenated with the derivation path of the public key. The derivation path is represented as 32-bit little endian unsigned integer indexes concatenated with each other. The number of 32 bit unsigned integer indexes must match the depth provided in the extended public key.
+**Technicalities** - Recovery of multisig-wallets needs both the extended public key and the recovery phrase of all participating keys as well as the master key fingerprint as defined by BIP32 concatenated with the derivation path of the public key. The derivation path is represented as 32-bit little endian unsigned integer indexes concatenated with each other. The number of 32 bit unsigned integer indexes must match the depth provided in the extended public key.
 
 ### Simplified payment verification (SPV)
 
@@ -336,7 +336,7 @@ A type of [CoinJoin](#coinjoin) for direct transactions between two parties that
 
 ### Schnorr signature
 
-An algorithm to generate cryptographic signatures. One of the benefits is that the size of multi signature transactions can be reduced, resulting in lower fees, and that multisignature transactions will appear equal to single signature, increasing privacy (see [MuSig](#musig)). The code for this improvement was merged in Bitcoin Core in September 2020.
+An algorithm to generate cryptographic signatures. One of the benefits is that the size of multi-signature transactions can be reduced, resulting in lower fees, and that multi-signature transactions will appear equal to single signature, increasing privacy (see [MuSig](#musig)). The code for this improvement was merged in Bitcoin Core in September 2020.
 
 **References:**
 
@@ -346,7 +346,7 @@ An algorithm to generate cryptographic signatures. One of the benefits is that t
 
 ### Segregated witness (SegWit)
 
-Segregated Witness, or SegWit, is the name for a soft fork change in the transaction format of bitcoin. It was described in [BIP141](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki). It was intended to mitigate a blockchain size limitation problem that reduces bitcoin transaction speed. It does this by splitting the transaction into two segments, removing the unlocking signature (*witness* data) from the original portion and appending it as a separate structure at the end. The original section hold the sender and receiver data, and the new *witness* structure contain scripts and signatures.
+Segregated Witness, or SegWit, is the name for a soft fork change in the transaction format of bitcoin. It was described in [BIP141](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki). It was intended to mitigate a blockchain size limitation problem that reduces bitcoin transaction speed. It does this by splitting the transaction into two segments, removing the unlocking signature (*witness* data) from the original portion and appending it as a separate structure at the end. The original section holds the sender and receiver data, and the new *witness* structure contains scripts and signatures.
 
 ### Signature
 <div class="center" markdown="1">
@@ -377,7 +377,7 @@ A transaction is a transfer of value over the bitcoin network. While transaction
 An output that has not been sent to another address. The bitcoin wallet balance is calculated from adding up unspent outputs.
 
 ###  Partially signed bitcoin transaction (PSBT)
-A file format for bitcoin transactions that are not fully signed yet. Allows for passing around a transaction to other applications or devices for signing, for example in a multi signature wallet setup.
+A file format for bitcoin transactions that are not fully signed yet. Allows for passing around a transaction to other applications or devices for signing, for example in a multi-signature wallet setup.
 
 **References:**
 
@@ -386,7 +386,7 @@ A file format for bitcoin transactions that are not fully signed yet. Allows for
 
 ###  Passphrase
 A passphrase can be added to the [recovery phrase](#recovery-phrase) for extra security.
-Technically, all recovery phrases have a pass phrase. If it’s not set by the user, an empty string (“”) will be used by default. Using the recovery phrase with or without the user-defined pass phrase will recover two DIFFERENT wallets. Pass phrases are sometimes referred to as the password, the extra word, or the 13th/25th word.
+Technically, all recovery phrases have a passphrase. If it’s not set by the user, an empty string (“”) will be used by default. Using the recovery phrase with or without the user-defined passphrase will recover two DIFFERENT wallets. Passphrases are sometimes referred to as the password, the extra word, or the 13th/25th word.
 
 **References:**
 
