@@ -84,7 +84,7 @@ Automatic selection strategies can provide a near frictionless user experience a
 
 ### How it works
 
-A user chooses to send a payment to one of their [contacts]({{ '/guide/payments/contacts/' | relative_url }}). They enter the amount of bitcoin they wish to send, select their transaction fee rate, and approve the outgoing payment request. During this process, their wallet **automatically** selects which coins to use to fund the transaction’s inputs, making sure it can fulfill the payment request.
+A user chooses to send a payment to one of their [contacts]({{ '/guide/payments/contacts/' | relative_url }}). They enter the amount of bitcoin they wish to send, select their transaction fee rate, and approve the outgoing payment request. During this process, their wallet **automatically** selects which coins to use to fund the transaction’s inputs, ensuring it can fulfill the payment request.
 
 <div class="image-slide-gallery">
 
@@ -140,11 +140,11 @@ The default strategy spends the oldest/youngest coins first.
 
 #### Pruned FIFO
 
-Similiar to FIFO, but smallest coins filtered out in post-selection step.
+Similar to FIFO, but smallest the coins are filtered out in the post-selection step.
 
 #### High Priority First
 
-Coins selected by priority (calculated by value x age). Up until February 2016, a portion of each block (50kB) was reserved for high-priority transactions by default. This algorithm therefore optimised for transaction speed.
+Coins selected by priority (calculated by value x age). Up until February 2016, a portion of each block (50kB) was reserved for high-priority transactions by default. This algorithm, therefore optimised for transaction speed.
 
 #### Minimize Fees (Optimize Size)
 
@@ -154,7 +154,7 @@ Spending the lowest number of coins to reduce the byte size of the transaction, 
 
 Spending the maximum number of inputs to merge coins as a single change output for future use. This strategy can optimise for speed as the transaction size (and therefore cost) is increased. However, merging coins can also lead to a loss of privacy as coins, their addresses, balances, and historical transaction data are intertwined.
 
-Below are algoorithms that optimize for privacy
+Below are algorithms that optimize for privacy
 
 #### Target Sized Change
 
@@ -162,7 +162,7 @@ Wallet aims to minimize the value difference of target input and change output.
 
 #### Branch & Bound (BnB)/Exact Change
 
-Wallet finds an input set that is equal in value to the target, avoiding change outputs. If the wallet cannot find an exact match, it refers back to a “knapsack” solver which selects inputs that minimise the change output to within 0.01 BTC.
+Wallet finds an input set equal in value to the target, avoiding change outputs. If the wallet cannot find an exact match, it refers back to a “knapsack” solver which selects inputs that minimise the change output to within 0.01 BTC.
 
 #### Blackjack
 
@@ -224,7 +224,7 @@ Manual coin selection gives users full control over exactly which coins or clust
 
 Manual coin control is often an “opt-in” strategy, agreed to by users as they enter “Private Mode” or select “Manual Coin Selection” when creating an outgoing payment request. However, it is also possible for bitcoin wallets to use manual coin control as their default coin selection strategy.
 
-This strategy gives users the ability to choose what they wish to optimize for in bitcoin transactions (cost, speed, or privacy). However, it’s worth noting that manual coin control, whilst beneficial to many, could also lead to expensive, slow, or revealing transactions if misused. Manual coin selection is an advanced feature and should be used (and designed) with caution.
+This strategy allows users the ability to choose what they wish to optimize for in bitcoin transactions (cost, speed, or privacy). However, it’s worth noting that manual coin control, whilst beneficial to many, could also lead to expensive, slow, or revealing transactions if misused. Manual coin selection is an advanced feature and should be used (and designed) with caution.
 
 {% include picture.html
    image = "/assets/images/guide/payments/coin-selection/manual-coin-selection.jpg"
@@ -302,7 +302,7 @@ A user chooses to send a payment to one of their contacts. They enter the amount
 
 #### When to use
 
-- Wallets oriented towards advanced, privacy focused bitcoiners
+- Wallets-oriented towards advanced, privacy focused bitcoiners
 - When wanting to give users full control of selecting transaction inputs
 - When paired with good labeling practises
 
