@@ -129,6 +129,24 @@ Try entering different amounts in the interactive formatter below (which uses yo
     <div id="units-and-symbols-formatter-table"></div>
 </div>
 
+##### Formatting very small amounts
+
+Satoshi values can sometimes be less than the smallest fiat unit, making the display of the value difficult. For example, `€0.0000431` is rounded to `€0.00` by most formatting libraries (include the one referenced above). To avoid this problem, you may need to implement custom rounding and formattic logic, based on the exchange rate of the local currency of your application.
+
+For round values, you can show additional digits after the separator:
+
+- `$0.3 -> $0.30` (at least 2 digits because cent are based on 100)
+- `$0.03 -> $0.03`
+- `$0.003 -> $0.003` (always show the digit if lower than 1/100)
+- `$0.0003 -> $0.0003`
+
+For uneven values, you can round to two non-zero digits and add ~ to indicate rounding.
+
+- `$0.38878830 -> ~$0.39`
+- `$0.038878830 -> ~$0.039`
+- `$0.0038878830 -> ~$0.0039`
+- `$0.00038878830 -> ~$0.00039`
+
 ##### Satcomma
 
 The "Satcomma standard" (well explained by [Mark Nugent](https://medium.com/@mark.nugent.iv/grouping-bitcoins-fractional-digits-an-idea-whose-time-has-come-22d9dad8ac51) and [ProgrammableTX](https://medium.com/coinmonks/the-satcomma-standard-89f1e7c2aede)) is a proposal that suggests adjustment of digit group separators for better readability of small bitcoin fractions, as follows:
