@@ -28,7 +28,7 @@ There are multiple aspects that differentiate nodes:
 - Is it controlled by you or someone else? How much trust is involved?
 - Does it verify the data it receives?
 - Does it store all transaction data or only data relevant to you?
-- Does the node have a local hot wallet or does it simply connect to wallet applications? How exactly does it connect?
+- Does the node have a local hot wallet, or does it simply connect to wallet applications? How exactly does it connect?
 - Security considerations, such as the risk of receiving manipulated data
 - Privacy considerations, such as tracing your transaction behavior
 
@@ -144,7 +144,7 @@ Based on use case and context, some nodes are very thorough and store and verify
 
 #### Full nodes
 
-A full node is bitcoin software that fully verifies and enforce the rules of the bitcoin network. An example of a rule is that there will never be more than 21 million bitcoin.
+A full node is bitcoin software that fully verifies and enforces the rules of the bitcoin network. An example of a rule is that there will never be more than 21 million bitcoin.
 
 <div class="center" markdown="1">
 
@@ -157,7 +157,7 @@ A full node is bitcoin software that fully verifies and enforce the rules of the
    layout = "float-left"
 %}
 
-**Archival full nodes** store the entire bitcoin blockchain locally, and send historical data to other nodes. These are sometimes referred to as listening nodes.
+**Archival full nodes** store the entire bitcoin blockchain locally and send historical data to other nodes. These are sometimes referred to as listening nodes.
 
 </div>
 
@@ -211,7 +211,7 @@ For more information:
    layout = "float-left"
 %}
 
-**Neutrino light nodes** use the Neutrino protocol which uses compact block filters to query and download condensed representations of blocks that contain transaction data relevant to the user.
+**Neutrino light nodes** use the Neutrino protocol, which uses compact block filters to query and download condensed representations of blocks that contain transaction data relevant to the user.
 
 For more information:
    - [Bitcoin Optech - block filters](https://bitcoinops.org/en/topics/compact-block-filters/)
