@@ -31,9 +31,9 @@ https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=25%3A2
 %}
 
 # Address
-A bitcoin address is an 26-35 alphanumeric character identifier that is used to receive bitcoin. There are [several address formats](https://en.bitcoin.it/wiki/Invoice_address) based on different specifications.
+A bitcoin address is a 26-35 alphanumeric character identifier that is used to receive bitcoin. There are [several address formats](https://en.bitcoin.it/wiki/Invoice_address) based on different specifications.
 
-When users enter an address, these formats have specific prefixes so it is possible to determine which format is being used.
+When users enter an address, these formats have specific prefixes, so it is possible to determine which format is being used.
 
 Below are common address formats used today:
 
@@ -47,7 +47,7 @@ Example: `1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2`
 
 ### Script address - [P2SH](https://en.bitcoin.it/wiki/Pay_to_script_hash)
 
-A pay-to-script-hash (P2SH), or script address, can have additional rules and functionality attached to the address. Script addresses are commonly used for multi-sig addresses which can specify that signatures from several keys are required to authorize the transaction.
+A pay-to-script-hash (P2SH), or script address, can have additional rules and functionality attached to the address. Script addresses are commonly used for multi-sig addresses, which can specify that signatures from several keys are required to authorize the transaction.
 
 Script addresses start with the number 3, can contain upper and lowercase characters, and are case sensitive.
 
@@ -55,7 +55,7 @@ Example: `3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy`
 
 ### SegWit address - [P2WPKH](https://en.bitcoin.it/wiki/Bech32)
 
-A pay-to-witness-public-key-hash (P2WPKH), also known as native SegWit or Bech32 address, is a modern more efficient address format. SegWit addresses are opt-in so not every application supports them but the majority do, and should, today. SegWit adoption can be tracked on [here](https://en.bitcoin.it/wiki/Bech32_adoption).
+A pay-to-witness-public-key-hash (P2WPKH), also known as native SegWit or Bech32 address, is a modern, more efficient address format. SegWit addresses are opt-in, so not every application supports them, but the majority do, and should, today. SegWit adoption can be tracked on [here](https://en.bitcoin.it/wiki/Bech32_adoption).
 
 Benefits of SegWit addresses include more resistance to input errors (as they are case insensitive and use error-correcting codes), and lower transaction fees. The fee saving will depend on the type of transaction but for a common transfer of funds it can be 30-40%.
 
@@ -65,9 +65,9 @@ Example: `bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq`
 
 ### Taproot address - [P2TR](https://en.bitcoin.it/wiki/Bech32)
 
-A pay-to-taproot (P2TR), also known as a Taproot or Bech32m address, is the most recent and advanced bitcoin address format. Taproot introduces more advanced security, privacy, flexibility and scaling to bitcoin. Like SegWit, Taproot addresses are opt-in and they are not currently widely supported. Taproot adoption can be tracked [here](https://en.bitcoin.it/wiki/Bech32_adoption).
+A pay-to-taproot (P2TR), also known as a Taproot or Bech32m address, is the most recent and advanced bitcoin address format. Taproot introduces more advanced security, privacy, flexibility and scaling to bitcoin. Like SegWit, Taproot addresses are opt-in and not currently widely supported. Taproot adoption can be tracked [here](https://en.bitcoin.it/wiki/Bech32_adoption).
 
-Benefits of Taproot include the ability to use Schnorr Signatures offering better security, lower fees, and more flexible [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}) transactions. Multi-key addresses using P2TR look the same as single-key addresses giving users of multi-key increased privacy. Taproot also enables more advanced scripting which enables more complex smart contracts to be built on bitcoin.
+Benefits of Taproot include the ability to use Schnorr Signatures offering better security, lower fees, and more flexible [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}) transactions. Multi-key addresses using P2TR look the same as single-key addresses giving users of multi-key increased privacy. Taproot also enables more advanced scripting, enabling more complex smart contracts to be built on bitcoin.
 
 Taproot addresses start with `bc1p` and are case insensitive.
 
