@@ -22,7 +22,7 @@ main_classes: -no-top-padding
 
 # Formatting
 
-This page showcases the various formatting and layout options available for content. This allows editors to better understand their toolbox and access reference code. It also allows for designers to see the design system in one place.
+This page showcases the various formatting and layout options available for content. This allows editors to better understand their toolbox and access reference code. It also allows designers to see the design system in one place.
 
 The design source file is a public Figma community file you can find [here](https://www.figma.com/community/file/862622015964353400/Bitcoin-Designers-site). To improve the design, please start with the Figma file and make a proposal in Slack or Github before implementing.
 
@@ -175,6 +175,79 @@ Let's start with a very wide image that extends beyond the content width on desk
    height = 800
 %}
 
+#### Image viewable in larger modal
+
+This image can be clicked on to view it in a modal overlay. If the modal image needs to use different dimensions than the main image, this can be defined using the optional `modalWidth` and `modalHeight` attributes together.
+
+{% raw %}
+```liquid
+{% include picture.html
+   image = "/assets/images/guide/contribute/formatting/example-image-mobile-screen-modal.png"
+   retina = "/assets/images/guide/contribute/formatting/example-image-mobile-screen-modal@2x.png"
+   mobile = "/assets/images/guide/contribute/formatting/example-image-mobile-screen-modal.png"
+   mobileRetina = "/assets/images/guide/contribute/formatting/example-image-mobile-screen-modal@2x.png"
+   modalImage = "/assets/images/guide/contribute/formatting/example-image-mobile-screen-modal@2x.png"
+   caption = "This image has some small details, so click on it to see it in a modal window."
+   alt-text = "Optional image modal"
+   width = 250
+   height = 541
+   modalWidth = 250
+   modalHeight = 541
+%}
+```
+{% endraw %}
+
+{% include picture.html
+   image = "/assets/images/guide/contribute/formatting/example-image-mobile-screen-modal.png"
+   retina = "/assets/images/guide/contribute/formatting/example-image-mobile-screen-modal@2x.png"
+   mobile = "/assets/images/guide/contribute/formatting/example-image-mobile-screen-modal.png"
+   mobileRetina = "/assets/images/guide/contribute/formatting/example-image-mobile-screen-modal@2x.png"
+   modalImage = "/assets/images/guide/contribute/formatting/example-image-mobile-screen-modal@2x.png"
+   caption = "This image has some small details, so click on it to see it in a modal window."
+   alt-text = "Optional image modal"
+   width = 250
+   height = 541
+   modalWidth = 250
+   modalHeight = 541
+   layout = "center"
+%}
+
+#### Image viewable in larger modal with alternate mobile image
+
+Modal image can also have an alternate image defined for mobile devices. This is useful for situations where the mobile image uses a different aspect ratio than the main image. The mobile image's dimensions can be defined using the optional `modalWidthMobile` and `modalHeightMobile` attributes.
+
+{% raw %}
+```liquid
+{% include picture.html
+   image = "/assets/images/guide/contribute/formatting/example-optional-image-modal.png"
+   retina = "/assets/images/guide/contribute/formatting/example-optional-image-modal@2x.png"
+   mobile = "/assets/images/guide/contribute/formatting/example-optional-image-modal-mobile.png"
+   mobileRetina = "/assets/images/guide/contribute/formatting/example-optional-image-modal-mobile@2x.png"
+   modalImage = "/assets/images/guide/contribute/formatting/example-optional-image-modal@2x.png"
+   modalImageMobile = "/assets/images/guide/contribute/formatting/example-optional-image-modal-mobile@2x.png"
+   alt-text = "Optional image modal"
+   width = 1600
+   height = 800
+   modalWidthMobile = 400
+   modalHeightMobile = 400
+%}
+```
+{% endraw %}
+
+{% include picture.html
+   image = "/assets/images/guide/contribute/formatting/example-optional-image-modal.png"
+   retina = "/assets/images/guide/contribute/formatting/example-optional-image-modal@2x.png"
+   mobile = "/assets/images/guide/contribute/formatting/example-optional-image-modal-mobile.png"
+   mobileRetina = "/assets/images/guide/contribute/formatting/example-optional-image-modal-mobile@2x.png"
+   modalImage = "/assets/images/guide/contribute/formatting/example-optional-image-modal@2x.png"
+   modalImageMobile = "/assets/images/guide/contribute/formatting/example-optional-image-modal-mobile@2x.png"
+   alt-text = "Optional image modal"
+   width = 1600
+   height = 800
+   modalWidthMobile = 400
+   modalHeightMobile = 400
+%}
+
 #### Image inline with the content
 
 Images can also be inline with the content. This one is inline on desktop, but takes the full screen width on mobile.
@@ -205,7 +278,7 @@ Images can also be inline with the content. This one is inline on desktop, but t
    layout = "float-left-desktop"
 %}
 
-Mobile app stores do a good job at providing previews of what using an app will be like. Through copy, videos, images and reviews, users can make informed decisions about the product they are evaluating. Open-source software is typically downloaded via a website or from Github and each project decides what information to present.
+Mobile app stores do a good job of providing previews of what using an app will be like. Through copy, videos, images and reviews, users can make informed decisions about the product they are evaluating. Open-source software is typically downloaded via a website or Github, and each project decides what information to present.
 
 </div>
 
@@ -226,7 +299,7 @@ This next image is inline on both mobile and desktop.
    layout = "float-left"
 %}
 
-Mobile app stores do a good job at providing previews of what using an app will be like. Through copy, videos, images and reviews, users can make informed decisions about the product they are evaluating. Open-source software is typically downloaded via a website or from Github and each project decides what information to present.
+Mobile app stores do a good job of providing previews of what using an app will be like. Through copy, videos, images and reviews, users can make informed decisions about the product they are evaluating. Open-source software is typically downloaded via a website or Github, and each project decides what information to present.
 
 </div>
 ```
@@ -243,7 +316,7 @@ Mobile app stores do a good job at providing previews of what using an app will 
    layout = "float-left"
 %}
 
-Mobile app stores do a good job at providing previews of what using an app will be like. Through copy, videos, images and reviews, users can make informed decisions about the product they are evaluating. Open-source software is typically downloaded via a website or from Github and each project decides what information to present.
+Mobile app stores do a good job of providing previews of what using an app will be like. Through copy, videos, images and reviews, users can make informed decisions about the product they are evaluating. Open-source software is typically downloaded via a website or Github, and each project decides what information to present.
 
 </div>
 
@@ -472,7 +545,7 @@ Explains to users what a recovery phrase **is**.
 
 {% include dl/item-open.html color="yellow" %}
 
-“Your recovery phrase is the only way to acess your wallet if your phone is lost or stolen.”
+“Your recovery phrase is the only way to access your wallet if your phone is lost or stolen.”
 
 {% include dl/item-middle.html color="yellow" %}
 
@@ -486,7 +559,7 @@ Explains to users what the **purpose** of a recovery phrase is and why it’s im
 
 {% include dl/item-middle.html color="green" %}
 
-Explains to users what the **consequences** of their behavior is, and how it can affect the safety of their funds.
+Explains to users what the **consequences** of their behavior are, and how it can affect the safety of their funds.
 
 {% include dl/item-close.html %}
 
@@ -600,7 +673,7 @@ Ensure that your images provide a good overview of the prototype content, so use
 
 ### Tips & recommendations
 
-For additional information that is useful, but does not fit into the main flow of the content. This component has two presets, but can also be customized. Here are the presets:
+For additional useful information, but does not fit into the main flow of the content. This component has two presets, but can also be customized. Here are the presets:
 
 #### Tips
 
@@ -622,7 +695,7 @@ Sed in lacus vitae turpis lobortis ultrices. Aenean hendrerit nec elit in sagitt
 
 #### Recommendations
 
-For highlighting moments when we think there is a particular approach or solution that the reader should strongly connsider following.
+For highlighting moments when we think there is a particular approach or solution that the reader should strongly consider following.
 
 {% raw %}
 ```liquid
@@ -701,7 +774,7 @@ Require precise coordination of key-shares when signing, few advantages over mul
 
 {% include fact/dos.html %}
 
-When target audience is knowledgeable and risk of theft is higher than negligance.
+When the target audience is knowledgeable, and risk of theft is higher than negligence.
 
 {% include fact/close.html %}
 
@@ -785,7 +858,7 @@ Write overly complex error messages that require deep technical knowledge.
 
 ### Footnotes
 
-With footnotes you can add notes and references without them appearing on page.
+With footnotes, you can add notes and references without them appearing on page.
 
 ```markdown
 Here's a simple footnote[^1]
@@ -799,7 +872,7 @@ Here's a simple footnote[^1]
 
 ---
 
-Next, let's move on to the [Glossary]({{ '/guide/glossary/' | relative_url }}) which explains common Bitcoin terms you may come across.
+Next, let's move on to the [Glossary]({{ '/guide/glossary/' | relative_url }}) which explains common bitcoin terms you may come across.
 
 {% include next-previous.html
    previousUrl = "/guide/contribute/illustration-guidelines/"

@@ -1,9 +1,9 @@
 ---
 layout: guide
 title: Personal finance
-description: How Bitcoin applications and usage overlap with traditional personal finance management.
+description: How bitcoin applications and usage overlap with traditional personal finance management.
 nav_order: 6
-parent: Designing Bitcoin products
+parent: Designing bitcoin products
 permalink: /guide/designing-products/personal-finance/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/designing-products/personal-finance/personal-finance-preview.jpg
@@ -13,7 +13,7 @@ image: https://bitcoin.design/assets/images/guide/designing-products/personal-fi
 
 Editor's notes
 
-This page provides a rough framework for how to think about transactions in the general context of typical personal finances. It can provide a great jumping-off point into different other pages like private key management solutions, payment types and hardware wallets.
+This page provides a rough framework for how to think about transactions in the general context of typical personal finances. It can provide a great jumping-off point into similar pages like private key management solutions, payment types and hardware wallets.
 
 Illustration sources
 
@@ -37,13 +37,13 @@ Illustration sources
 # Personal finance
 {:.no_toc}
 
-**If we consider Bitcoin a new form of money, it’s only natural that we compare it to existing forms of currency. This section views Bitcoin through the lens of traditional finance to help us build mental models, define behavioral patterns, and ultimately better understand what kind of products we should be making.**
+**If we consider bitcoin a new form of money, it’s only natural that we compare it to existing forms of currency. This section views bitcoin through the lens of traditional finance to help us build mental models, define behavioral patterns, and ultimately better understand what kind of products we should be making.**
 
 Money is complex and can play many different roles in our lives. Buying a new shirt is quite different from buying a house or setting aside savings for retirement. Taking a payment as a store owner is very different from a child receiving an allowance from parents. On a global scale, the differences multiply across countries and cultures.
 
-It still is possible to create simplified mental models that help us better understand user needs and behaviors. A single model might be oversimplified, but if we combine a few different lenses we can narrow in on a more complete picture that allows us to create more focused experiences, have better product differentiation, and make it easier for contributors to collaborate to make decisions.
+It still is possible to create simplified mental models that help us better understand user needs and behaviors. A single model might be oversimplified, but if we combine a few different lenses, we can narrow in on a more complete picture that allows us to create more focused experiences, have better product differentiation, and make it easier for contributors to collaborate to make decisions.
 
-This section uses the traditional personal finance lens to think about what type of Bitcoin products we may need. Because of Bitcoin's unique properties, we cannot imitate conventional financial products and assume that the same solutions apply. And even if we could, this might be an excellent opportunity to take a fresh look and design new solutions for today's world. Bitcoin is also global by nature, so consider the unique circumstances of your users' lives.
+This section uses the traditional personal finance lens to think about what type of bitcoin products we may need. Because of bitcoin's unique properties, we cannot imitate conventional financial products and assume that the same solutions apply. And even if we could, this might be an excellent opportunity to take a fresh look and design new solutions for today's world. Bitcoin is also global by nature, so consider the unique circumstances of your users' lives.
 
 Assuming that a user wants to [self-custody](/guide/designing-products/principles/#self-custody) their bitcoin,while balancing [security](/guide/designing-products/principles/#security) and [privacy](/guide/designing-products/principles/#privacy) here are six ways that they can organize finances:
 
@@ -79,7 +79,7 @@ Section structure
    layout = "float-left"
 %}
 
-This is the “cash”—or in this case of Bitcoin, the “sats”—that we use to make small purchases such as coffee, lunch, etc. While some countries fully embrace credit cards and smartphones for daily spending, others, such as Germany, still prefer cash for its better privacy.
+This is the “cash”—or in this case of bitcoin, the “sats”—that we use to make small purchases such as coffee, lunch, etc. While some countries fully embrace credit cards and smartphones for daily spending, others, such as Germany, still prefer cash for its better privacy.
 </div>
 
 Nearly all of these payments happen outside of our homes. This makes mobile wallet apps for smartphones ideal replacements for physical cash. Convenient camera access allows for payment via QR code, and NFC support ([Near-Field Communication](https://en.wikipedia.org/wiki/Near-field_communication){:target="_blank"}) lets us pay by holding our phones next to card readers.
@@ -97,9 +97,9 @@ For small, frequent payments, we generally accept greater risk in exchange for c
    height = 800
 %}
 
-Most stores (online and offline) don’t currently accept bitcoin. When they do, users who already pay with smartphones or NFC-enabled credit cards can easily transition to Bitcoin apps.
+Most stores (online and offline) don’t currently accept bitcoin. When they do, users who already pay with smartphones or NFC-enabled credit cards can easily transition to bitcoin apps.
 
-A typical scenario could be that users create dedicated mobile Bitcoin wallets for on-the-go payments, in addition to having separate wallets for larger amounts. Similar to having a bank account and regularly taking out cash at an ATM, users could refill their mobile wallets. The mobile wallet is connected to the Lightning network, which allows the user to make very fast (almost instant) payments. This wallet may use [automatic cloud backup]({{ '/guide/private-key-management/cloud-backup/' | relative_url }}) for the private key as well as the Lightning channel state. The user's primary wallet however, would be more strongly secured with a [hardware wallet]({% link guide/getting-started/hardware.md %}#hardware-wallets) or even a [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}) configuration. This would mirror the primary focus of convenience over security. Beyond key management, payment interactions could be identical to what users are already familiar with.
+A typical scenario could be that users create dedicated mobile bitcoin wallets for on-the-go payments, in addition to having separate wallets for larger amounts. Similar to having a bank account and regularly taking out cash at an ATM, users could refill their mobile wallets. The mobile wallet is connected to the Lightning network, which allows the user to make very fast (almost instant) payments. This wallet may use [automatic cloud backup]({{ '/guide/private-key-management/cloud-backup/' | relative_url }}) for the private key as well as the Lightning channel state. The user's primary wallet however, would be more strongly secured with a [hardware wallet]({% link guide/getting-started/hardware.md %}#hardware-wallets) or even a [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}) configuration. This would mirror the primary focus of convenience over security. Beyond key management, payment interactions could be identical to what users are already familiar with.
 
 For more on this use case, see the [daily spending case study]({{ '/guide/case-studies/cloud-backup/' | relative_url }}).
 
@@ -138,7 +138,7 @@ The higher-value of these payments necessitates a greater level of security than
 
 At the moment, a good solution is a desktop application which relies on a hardware device to sign transactions. This reduces the risk of keeping funds on a mobile wallet configuration but adds acceptable friction for transactions that occur less frequently. See the [savings account case study]({{ '/guide/case-studies/savings-account/' | relative_url }}) for an exploration of this user experience.
 
-A disadvantage to this solution is that it does not use the Lightning network, meaning that the user will need to wait longer for their [transaction to confirm]({{'/guide/payments/transactions/#7-confirmations' | relative_url}}) as well as pay an on-chain transaction fee. However, this will likely not be always be the case: in the future, projects such as [Lightning Signer](https://gitlab.com/lightning-signer/docs) may solve this issue by allowing the private keys to be stored separately from the Lightning node on hardware that is security-hardened.
+A disadvantage to this solution is that it does not use the Lightning network, meaning that the user will need to wait longer for their [transaction to confirm]({{'/guide/payments/transactions/#7-confirmations' | relative_url}}) as well as pay an on-chain transaction fee. However, this will likely not always be the case: in the future, projects such as [Lightning Signer](https://gitlab.com/lightning-signer/docs) may solve this issue by allowing the private keys to be stored separately from the Lightning node on hardware that is security-hardened.
 
 ## Emergency funds
 
@@ -153,7 +153,7 @@ A disadvantage to this solution is that it does not use the Lightning network, m
    layout = "float-left"
 %}
 
-Financial experts recommend that you keep 3–6 months of salary available for when you are faced with costly problems like medical bills, home repairs, and sudden loss of employment.
+Financial experts recommend that you keep 3–6 months of salary available for when faced with costly problems like medical bills, home repairs, and sudden loss of employment.
 
 </div>
 
@@ -169,7 +169,7 @@ In traditional finance, this money might get parked in a high-interest savings a
    height = 800
 %}
 
-A bitcoiner may want to set up a cold storage multi-signature wallet. In this type of setup, there are multiple applications or hardware devices required to make transactions. Even if one device gets stolen or locked, the rightful owner still has access to all their funds. Since transactions are infrequent, security is prioritized over convenience.
+A bitcoiner may want to set up a cold storage multi-signature wallet. In this type of setup, multiple applications or hardware devices are required to make transactions. Even if one device gets stolen or locked, the rightful owner still has access to all their funds. Since transactions are infrequent, security is prioritized over convenience.
 
 ## Sinking funds
 
@@ -221,7 +221,7 @@ For example, [Glacier Protocol](https://glacierprotocol.org){:target="_blank"} i
    height = 800
 %}
 
-Of course, many prefer that banks and other custodial financial service providers secure and invest funds for them. Savings accounts and related products may also incentivize customers with low interest rates that may or may not be high enough to keep up with inflation.
+Of course, many prefer that banks and other custodial financial service providers secure and invest funds for them. Savings accounts and related products may also incentivize customers with low-interest rates that may or may not be high enough to keep up with inflation.
 
 ## Investing
 
@@ -240,13 +240,13 @@ Investing is about turning the money you have into more money over time. From in
 
 </div>
 
-Since Bitcoin continues to increase in value over time, many see the act of “HODLing” as investing. In the last ten years, an increasing number of financial advisors and institutions have come to see bitcoin as a necessary component of any sufficiently diversified portfolio.
+Since bitcoin continues to increase in value over time, many see the act of “HODLing” as investing. In the last ten years, an increasing number of financial advisors and institutions have come to see bitcoin as a necessary component of any sufficiently diversified portfolio.
 
 
 ## Summary
 {:.no_toc}
 
-When designing a Bitcoin product or service, it is vital to consider what role it will play in the bigger picture of how we tend to manage our finances. A clear focus can be expressed in the technical features and how they are communicated, and how users interact with them.
+When designing a bitcoin product or service, it is vital to consider what role it will play in the bigger picture of how we tend to manage our finances. A clear focus can be expressed in the technical features and how they are communicated, and how users interact with them.
 
 This section described one of many lenses through which we can investigate bitcoin. Based on your goals, this lens may or may not be relevant to you. Make sure to pick the right perspectives for your product and back up your assumptions with user research and testing.
 
@@ -267,7 +267,7 @@ Considering your product, ask yourself these questions:
 
 ---
 
-Next we will look at why it is important to [get to know your users]({{ '/guide/designing-products/getting-to-know-your-users/' | relative_url }}) when desiging Bitcoin applications.
+Next we will look at why it is important to [get to know your users]({{ '/guide/designing-products/getting-to-know-your-users/' | relative_url }}) when designing bitcoin applications.
 
 {% include next-previous.html
    previousUrl = "/guide/designing-products/usage-life-cycle/"

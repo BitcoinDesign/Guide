@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Protecting a wallet
-description: How extra layers of security can be added to Bitcoin applications via PINs, Face Id, and other techniques.
+description: How extra layers of security can be added to bitcoin applications via PINs, Face Id, and other techniques.
 parent: Onboarding
 nav_order: 4
 permalink: /guide/onboarding/protecting-a-wallet/
@@ -20,6 +20,7 @@ technical things like watch towers for Lightning wallets.
 Illustration sources
 
 - https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-UI-Kit?node-id=2600%3A66326
+- https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=0%3A1
 
 -->
 
@@ -46,7 +47,7 @@ Illustration sources
 
 ---
 
-Bitcoin wallets contain sensitive information such as recovery phrases, balances, transaction histories, and more. Therefore, it is crucial to add extra layers of security to keep private data, and access to sensitive functionality, out of bad actors' hands. Additional protection may also be necessary for users who share devices, such as parents with children.
+Bitcoin wallets contain sensitive information such as [recovery phrases]({{ '/guide/glossary/#recovery-phrase' | relative_url }}), balances, transaction histories, and more. Therefore, it is crucial to add extra layers of security to keep private data, and access to sensitive functionality, out of bad actors' hands. Additional protection may also be necessary for users who share devices, such as parents with children.
 
 ## Proactive support
 
@@ -359,11 +360,11 @@ By including UX patterns for hiding information pattern wallets, we give users a
 
 ---
 
-Now let's look at the different ways a user might go about [funding a wallet]({{ '/guide/onboarding/funding-a-wallet/' | relative_url }}).
+The next section looks at options for adding extra layers of security and [restoring a wallet]({{ '/guide/onboarding/restoring-a-wallet/' | relative_url }}).
 
 {% include next-previous.html
-   previousUrl = "/guide/onboarding/restoring-a-wallet/"
-   previousName = "Restoring a wallet"
-   nextUrl = "/guide/onboarding/funding-a-wallet/"
-   nextName = "Funding a wallet"
+   previousUrl = "/guide/onboarding/backing-up-a-wallet/manual-backup/"
+   previousName = "Manual backup"
+   nextUrl = "/guide/onboarding/restoring-a-wallet/"
+   nextName = "Restoring a wallet"
 %}

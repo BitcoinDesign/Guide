@@ -1,15 +1,15 @@
 ---
 layout: guide
 title: Units & Symbols
-description: How to display and format bitcoin and currency units in Bitcoin applications.
-nav_order: 5
+description: How to display and format bitcoin and currency units in bitcoin applications.
+nav_order: 6
 parent: Payments
 permalink: /guide/payments/units-and-symbols/
 main_classes: -no-top-padding
 image_base: /assets/images/guide/payments/units-and-symbols/
 images_app:
     - file: settings
-      alt: Mobile phone screen showing settings of a Bitcoin application
+      alt: Mobile phone screen showing settings of a bitcoin application
       caption: Customizing balance display should be available in the app settings.
     - file: settings-bitcoin-units
       alt: Mobile phone screen showing unit options for the display of bitcoin amounts.
@@ -129,6 +129,24 @@ Try entering different amounts in the interactive formatter below (which uses yo
     <div id="units-and-symbols-formatter-table"></div>
 </div>
 
+##### Formatting very small amounts
+
+Satoshi values can sometimes be less than the smallest fiat unit, making the display of the value difficult. For example, `€0.0000431` is rounded to `€0.00` by most formatting libraries (include the one referenced above). To avoid this problem, you may need to implement custom rounding and formattic logic, based on the exchange rate of the local currency of your application.
+
+For round values, you can show additional digits after the separator:
+
+- `$0.3 -> $0.30` (at least 2 digits because cent are based on 100)
+- `$0.03 -> $0.03`
+- `$0.003 -> $0.003` (always show the digit if lower than 1/100)
+- `$0.0003 -> $0.0003`
+
+For uneven values, you can round to two non-zero digits and add ~ to indicate rounding.
+
+- `$0.38878830 -> ~$0.39`
+- `$0.038878830 -> ~$0.039`
+- `$0.0038878830 -> ~$0.0039`
+- `$0.00038878830 -> ~$0.00039`
+
 ##### Satcomma
 
 The "Satcomma standard" (well explained by [Mark Nugent](https://medium.com/@mark.nugent.iv/grouping-bitcoins-fractional-digits-an-idea-whose-time-has-come-22d9dad8ac51) and [ProgrammableTX](https://medium.com/coinmonks/the-satcomma-standard-89f1e7c2aede)) is a proposal that suggests adjustment of digit group separators for better readability of small bitcoin fractions, as follows:
@@ -203,17 +221,17 @@ Trailing zeros can help more easily compare amounts in right-aligned tables.
    height = 198
 %}
 
-Complex use cases often require users to interact with addresses, public keys, and other encrypted data, where it is important that each character is easily identifyable. Slashed zeros can help distinguish 0 (the number zero) and O (the uppercase letter "O"), which can look very similar in some typefaces.
+Complex use cases often require users to interact with addresses, public keys, and other encrypted data, where it is important that each character is easily identifiable. Slashed zeros can help distinguish 0 (the number zero) and O (the uppercase letter "O"), which can look very similar in some typefaces.
 
 Note that uppercase letter "O", uppercase letter "I", lowercase letter "l", and the number "0" are not valid characters in addresses, in order to prevent mistakes. As users may not be aware of this, using slashed zeros may still be a helpful design choice.
 
 ---
 
-The next section explores common product designs via [case studies]({{ '/guide/case-studies/' | relative_url }}).
+Next, we do a technical deep dive into how [transactions]({{ '/guide/payments/transactions' | relative_url }}) on bitcoin work.
 
 {% include next-previous.html
    previousUrl = "/guide/payments/privacy"
    previousName = "Transaction privacy"
-   nextUrl = "/guide/case-studies/"
-   nextName = "Case studies"
+   nextUrl = "/guide/Payments/transactions"
+   nextName = "Transactions overview"
 %}

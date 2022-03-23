@@ -22,17 +22,17 @@ main_classes: -no-top-padding
 
 # Illustration guidelines
 
-As this is a design guide, it is only natural that much of our content uses imagery to communicate. Not only is it more appealing, some concepts can also be more effectively communicated visually. Whether it's flow charts, interface mock-ups, interactive prototypes, animations or videos, feel free to explore to find the best way to capture your ideas.
+As this is a design guide, it is only natural that much of our content uses imagery to communicate. Not only is it more appealing, but some concepts can also be more effectively communicated visually. Whether it's flow charts, interface mock-ups, interactive prototypes, animations or videos, feel free to explore to find the best way to capture your ideas.
 
 ## Creative direction
 
-The basic design of this website was intentionally kept minimal, so authors have more freedom to express their own creative ideas in the content they create. Experiment and express yourself, just keep in mind that the total experience of the guide should still be coherent to readers and allow for easy absorption of the content. Visuals should primarily be used for communicating content, not solely for decoration. Regularly discussing your ideas with others and getting feedback is the best way to ensure we can achieve this. Also make sure to look around and take inspiration from what others have done.
+The basic design of this website was intentionally kept minimal, so authors have more freedom to express their own creative ideas in the content they create. Experiment and express yourself, just keep in mind that the total experience of the guide should still be coherent to readers and allow for easy absorption of the content. Visuals should primarily be used for communicating content, not solely for decoration. Regularly discussing your ideas with others and getting feedback is the best way to ensure we can achieve this. Also, make sure to look around and take inspiration from what others have done.
 
 ## Image sources
 
-We collaborate on visuals the same way we collaborate on text. Please make the source files for your illustrations publicly accessible. For file-based visuals (Sketch, Photoshop, etc), use cloud hosting like a Github repository, Dropbox folder or other similar service. For Figma file, share a link to the source file.
+We collaborate on visuals the same way we collaborate on text. Please make the source files for your illustrations publicly accessible. For file-based visuals (Sketch, Photoshop, etc.), use cloud hosting like a Github repository, Dropbox folder or another similar service. For Figma file, share a link to the source file.
 
-Each markdown file should contain a comment at the top that include links to these source files. For [example](https://raw.githubusercontent.com/BitcoinDesign/Guide/master/guide/designing-products/common-user-flows.md):
+Each markdown file should contain a comment at the top that includes links to these source files. For [example](https://raw.githubusercontent.com/BitcoinDesign/Guide/master/guide/designing-products/common-user-flows.md):
 
 {% raw %}
 ```
@@ -95,9 +95,9 @@ For short animations, use GIFs. Be aware that GIFs can easily bloat in file size
 
 This ensures images render crisp and clear while keeping file download size and speed reasonable.
 
-Overall, there are five layout options for images, each one resulting in a different image size. Aditionally, desktop and mobile layout logic differs, and we also need to support regular and retina screen resolutions. Result is that each image needs to be exported at four different sizes. For examples, view the [Formatting](/guide/contribute/formatting/#images) page.
+Overall, there are five layout options for images, each one resulting in a different image size. Additionally, desktop and mobile layout logic differ, and we also need to support regular and retina screen resolutions. The result is that each image needs to be exported at four different sizes. For examples, view the [Formatting](/guide/contribute/formatting/#images) page.
 
-Pay attention to the image width when you export. Image height is up you, based on the image content.
+Pay attention to the image width when you export. Image height is up to you, based on the image content.
 
 Image width specifications are as follows, with widths provided in pixels. 2x images are for retina screens and always double the size of the regular image.
 
@@ -154,7 +154,7 @@ Create and specify differently laid out images for desktop and mobile as needed.
 
 ## File size optimization
 
-Optimize your images before committing them. The easiest way is to [build and run this repository locally](https://github.com/BitcoinDesign/Guide#how-to-build-and-run-the-site-locally). Images will be automatically compressed as you add them. After compression, ensure that the quality is still acceptable. Heavily textured images are sometimes heavily compressed resulting in visible compression crystals, blurry lines and other visual artefacts.
+Optimize your images before committing them. The easiest way is to [build and run this repository locally](https://github.com/BitcoinDesign/Guide#how-to-build-and-run-the-site-locally). Images will be automatically compressed as you add them. After compression, ensure that the quality is still acceptable. Heavily textured images are sometimes heavily compressed, resulting in visible compression crystals, blurry lines and other visual artefacts.
 
 ## Link preview images
 

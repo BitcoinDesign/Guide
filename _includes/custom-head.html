@@ -5,6 +5,12 @@
   2. Customize default _includes/custom-head.html in your source directory and insert the given code snippet.
 {% endcomment %}
 
+{% if page.video %}<meta property="og:video" content="{{ page.video | absolute_url }}">{% endif %}
+{% if page.videoSecure %}<meta property="og:video:secure_url" content="{{ page.videoSecure }}">{% endif %}
+{% if page.videoType %}<meta property="og:video:type" content="{{ page.videoType }}">{% endif %}
+{% if page.videoWidth %}<meta property="og:video:width" content="{{ page.videoWidth }}">{% endif %}
+{% if page.videoHeight %}<meta property="og:video:height" content="{{ page.videoHeight }}">{% endif %}
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/apple-touch-icon.png" | relative_url }}">
@@ -12,5 +18,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/favicon-16x16.png" | relative_url }}">
 <link rel="manifest" href="{{ "/site.webmanifest" | relative_url }}">
 <link rel="mask-icon" href="{{ "/assets/safari-pinned-tab.svg" | relative_url }}" color="#f2a900">
+
 <meta name="msapplication-TileColor" content="#f2a900">
 <meta name="theme-color" content="#f2a900">
+

@@ -1,0 +1,59 @@
+article.guide {
+    .emoji-box {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        border: 1px solid #BBBBBB;
+        border-radius: 5px;
+        padding: 15px 25px;
+
+        &__emoji {
+            font-size: 40px;
+        }
+
+        &__copy {
+            h5 {
+                margin: 0;
+                font-size: 22px;
+                transition: color 100ms $ease;
+
+                &:before {
+                    display: none;
+                }
+            }
+
+            p {
+                margin: 2px 0 0 0;
+                color: rgba(var(--front), 0.72);
+            }
+        }
+    }
+
+    a.emoji-box {
+        &:hover {
+            text-decoration: none;
+
+            .emoji-box__copy {
+                h5 {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    .emoji-boxes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 20px;
+
+        @include media-query(medium-up) {
+            max-width: 1024px;
+
+            .emoji-box {
+                flex-basis: 35%;
+                flex-grow: 1;
+            }
+        }
+    }
+}

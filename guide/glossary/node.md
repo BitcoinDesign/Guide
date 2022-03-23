@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Node
-description: A node refers to a Bitcoin client that participates in the Bitcoin network.
+description: A node refers to a bitcoin client that participates in the bitcoin network.
 parent: Glossary
 nav_order: 3
 permalink: /guide/glossary/node/
@@ -14,7 +14,7 @@ image: https://bitcoin.design/assets/images/guide/glossary/node/node-preview.jpg
    retina = "/assets/images/guide/glossary/node/node@2x.jpg"
    mobile = "/assets/images/guide/glossary/node/node-mobile.jpg"
    mobileRetina = "/assets/images/guide/glossary/node/node-mobile@2x.jpg"
-   alt-text = "Network graph of Bitcoin node connections"
+   alt-text = "Network graph of bitcoin node connections"
    width = 1600
    height = 500
    layout = "full-width"
@@ -22,13 +22,13 @@ image: https://bitcoin.design/assets/images/guide/glossary/node/node-preview.jpg
 
 # Node
 
-A node refers to software that participates in the Bitcoin network. Any Bitcoin application that wants to show and send transaction data needs a way to connect to a node.
+A node refers to software that participates in the bitcoin network. Any bitcoin application that wants to show and send transaction data needs a way to connect to a node.
 
 There are multiple aspects that differentiate nodes:
 - Is it controlled by you or someone else? How much trust is involved?
 - Does it verify the data it receives?
 - Does it store all transaction data or only data relevant to you?
-- Does the node have a local hot wallet or does it simply connect to wallet applications? How exactly does it connect? 
+- Does the node have a local hot wallet, or does it simply connect to wallet applications? How exactly does it connect?
 - Security considerations, such as the risk of receiving manipulated data
 - Privacy considerations, such as tracing your transaction behavior
 
@@ -49,7 +49,7 @@ From complete control, to fully trusting a single third party, there are a varie
    layout = "float-left"
 %}
 
-Hardware nodes are dedicated devices, usually Raspberry Pi's, that run a Bitcoin node. Hardware nodes can come with local wallet functionality or simply be connected to by users external wallets as a source of trusted block data. Several 'plug-and-play' hardware node options exist such as [Umbrel](https://getumbrel.com/), [MyNode](https://mynodebtc.com/), [RoninDojo](https://ronindojo.io/), and [Raspiblitz](https://raspiblitz.org/).
+Hardware nodes are dedicated devices, usually Raspberry Pi's, that run a bitcoin node. Hardware nodes can come with local wallet functionality or simply be connected to by users external wallets as a source of trusted block data. Several 'plug-and-play' hardware node options exist such as [Umbrel](https://getumbrel.com/), [MyNode](https://mynodebtc.com/), [RoninDojo](https://ronindojo.io/), and [Raspiblitz](https://raspiblitz.org/).
 
 </div>
 
@@ -140,11 +140,11 @@ Third-party APIs should be avoided. These are custom connection mechanisms built
 
 ## Block data management
 
-Based on use case and context, some nodes are very thorough and store and verify the complete Bitcoin blockchain, while others are optimized for efficiency and may accept slight security and privacy tradeoffs.
+Based on use case and context, some nodes are very thorough and store and verify the complete bitcoin blockchain, while others are optimized for efficiency and may accept slight security and privacy tradeoffs.
 
 #### Full nodes
 
-A full node is Bitcoin software that fully verifies and enforce the rules of the Bitcoin network. An example of a rule is that there will never be more than 21 million bitcoin.
+A full node is bitcoin software that fully verifies and enforces the rules of the bitcoin network. An example of a rule is that there will never be more than 21 million bitcoin.
 
 <div class="center" markdown="1">
 
@@ -157,7 +157,7 @@ A full node is Bitcoin software that fully verifies and enforce the rules of the
    layout = "float-left"
 %}
 
-**Archival full nodes** store the entire Bitcoin blockchain locally, and send historical data to other nodes. These are sometimes referred to as listening nodes.
+**Archival full nodes** store the entire bitcoin blockchain locally and send historical data to other nodes. These are sometimes referred to as listening nodes.
 
 </div>
 
@@ -172,13 +172,13 @@ A full node is Bitcoin software that fully verifies and enforce the rules of the
    layout = "float-left"
 %}
 
-**Pruned full nodes** only store a portion of recent block data locally. The amount of recent block data that can be stored can be modified by users depending on their storage capacity. 
+**Pruned full nodes** only store a portion of recent block data locally. The amount of recent block data that can be stored can be modified by users depending on their storage capacity.
 
 </div>
 
 #### Light nodes
 
-A light node is Bitcoin software that does not verify or enforce the rules of the Bitcoin network. Light nodes trust third parties to receive block data. 
+A light node is bitcoin software that does not verify or enforce the rules of the bitcoin network. Light nodes trust third parties to receive block data.
 
 <div class="center" markdown="1">
 
@@ -211,7 +211,7 @@ For more information:
    layout = "float-left"
 %}
 
-**Neutrino light nodes** use the Neutrino protocol which uses compact block filters to query and download condensed representations of blocks that contain transaction data relevant to the user.
+**Neutrino light nodes** use the Neutrino protocol, which uses compact block filters to query and download condensed representations of blocks that contain transaction data relevant to the user.
 
 For more information:
    - [Bitcoin Optech - block filters](https://bitcoinops.org/en/topics/compact-block-filters/)

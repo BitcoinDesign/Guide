@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Case studies
-description: A range of case study designs for Bitcoin applications.
+description: A range of case study designs for bitcoin applications.
 nav_order: 8
 has_children: true
 permalink: /guide/case-studies/
@@ -46,13 +46,13 @@ Explores a simple mobile wallet design that relies on automated cloud backup to 
 
 ### [Savings account]({{ '/guide/case-studies/savings-account/' | relative_url }})
 
-A mobile wallet based on 2-of-3 multi-key setup that balances both low-friction daily spending and stricter security practices for medium amounts.
+A mobile wallet based on 2 of 3 multi-key setup that balances both low-friction daily spending and stricter security practices for medium amounts.
 
 ---
 
 ### [Upgradeable account]({{ '/guide/case-studies/upgradeable-wallet/' | relative_url }})
 
-A mobile experience that starts users off with a simple cloud backup solution and allows them to upgrade the security model progressively as their needs change.
+A mobile experience that starts users off with a simple cloud backup solution and allows them to progressively upgrade the security model as their needs change.
 
 ---
 

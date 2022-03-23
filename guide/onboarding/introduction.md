@@ -16,6 +16,10 @@ Editor's notes
 A brief introduction and summary of all pages in this section. The idea is that readers
 scan this page to get an overview of the section and then decide which topics to dive into.
 
+Illustration sources:
+
+- https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=0%3A1
+
 -->
 
 {% include picture.html
@@ -33,7 +37,7 @@ scan this page to get an overview of the section and then decide which topics to
 
 Onboarding, the first use, can make or break someone’s experience of a product. Therefore it is important to identify your target audience and design specifically with its context, expectations, and needs in mind.
 
-Some new users bring years of traditional financial experience to Bitcoin. They have bank accounts, debit cards, and ingrained ideas about what money is. This makes onboarding tricky, as the user might assume that the patterns and habits from prior experience will apply. If you design a user experience that is superior to the traditional system, convincing users to switch to a different financial system will be a lot easier.
+Some new users bring years of traditional financial experience to bitcoin. They have bank accounts, debit cards, and ingrained ideas about what money is. This makes onboarding tricky, as the user might assume that the patterns and habits from prior experience will apply. If you design a user experience that is superior to the traditional system, convincing users to switch to a different financial system will be a lot easier.
 
 On the other hand, close to [two billion](https://globalfindex.worldbank.org/sites/globalfindex/files/chapters/2017%20Findex%20full%20report_chapter2.pdf) people have no exposure to traditional financial institutions. This, along with designing for younger people whose ideas about money aren’t fully formed, represents a very different challenge.
 
@@ -49,15 +53,15 @@ An overview of common tasks when using a wallet application for the first time.
 
 ---
 
-### [Backing up a wallet]({{ 'guide/onboarding/backing-up-a-wallet' | relative_url }})
+### [Funding a wallet]({{ 'guide/onboarding/funding-a-wallet' | relative_url }})
 
-An overview of the tradeoffs between using [manual backup]({{ 'guide/onboarding/backing-up-a-wallet/manual-backup' | relative_url }}) vs [automatic cloud backup]({{ 'guide/onboarding/backing-up-a-wallet/cloud-backup' | relative_url }}).
+An overview of how users are likely to fund their wallets
 
 ---
 
-### [Restoring a wallet]({{ 'guide/onboarding/restoring-a-wallet' | relative_url }})
+### [Backing up a wallet]({{ 'guide/onboarding/backing-up-a-wallet' | relative_url }})
 
-What options to consider if a user has lost their device, had it stolen or deleted and redownloaded a particular wallet application.
+An overview of the tradeoffs between using [manual backup]({{ 'guide/onboarding/backing-up-a-wallet/manual-backup' | relative_url }}) vs [automatic cloud backup]({{ 'guide/onboarding/backing-up-a-wallet/cloud-backup' | relative_url }}).
 
 ---
 
@@ -67,9 +71,9 @@ An overview of how to add extra layers of securtiy to protect sensitive user dat
 
 ---
 
-### [Funding a wallet]({{ 'guide/onboarding/funding-a-wallet' | relative_url }})
+### [Restoring a wallet]({{ 'guide/onboarding/restoring-a-wallet' | relative_url }})
 
-An overview of how users are likely to fund their wallets
+What options to consider if a user has lost their device, had it stolen or deleted and redownloaded a particular wallet application.
 
 ---
 

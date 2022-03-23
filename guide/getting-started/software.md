@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Software overview
-description: List of the main categories of Bitcoin software, from wallets to nodes.
+description: List of the main categories of bitcoin software, from wallets to nodes.
 nav_order: 11
 parent: Getting started
 permalink: /guide/getting-started/software/
@@ -36,7 +36,7 @@ Illustration sources
 
 # Software overview
 
-The unique history and architecture of Bitcoin has resulted in several categories of software, with each one serving a distinct purpose. Provided below is an overview of standard and specialized application categories.
+The unique history and architecture of bitcoin has resulted in several software categories, with each one serving a distinct purpose. Provided below is an overview of standard and specialized application categories.
 
 ## Wallets
 
@@ -52,14 +52,14 @@ The unique history and architecture of Bitcoin has resulted in several categorie
    layout = "float-right-desktop"
 %}
 
-Wallets are perhaps the most important Bitcoin applications. They provide easy-to-use graphical user interfaces (GUIs) designed for broad audiences that let bitcoin owners [send]({{ '/guide/payments/send/' | relative_url }}), [receive]({{ '/guide/payments/receive/' | relative_url }}), store and manage their coins.
+Wallets are perhaps the most important bitcoin applications. They provide easy-to-use graphical user interfaces (GUIs) designed for broad audiences that let bitcoin owners [send]({{ '/guide/payments/send/' | relative_url }}), [receive]({{ '/guide/payments/request/' | relative_url }}), store and manage their coins.
 
-Wallet features vary by application but always include [wallet setup]({{ '/guide/designing-products/common-user-flows/#software-onboarding' | relative_url }}), balance and transaction records, and the ability to [send]({{ '/guide/payments/send/' | relative_url }}) and [receive]({{ '/guide/payments/receive/' | relative_url }}) bitcoin. The full range of features that wallets may support is broad and includes security and [privacy]({{ '/guide/payments/privacy/' | relative_url }}) options, currency exchange features, accounting tools, [interoperability]({{ '/guide/designing-products/principles/#interoperability' | relative_url }}), accessibility, and localization options.
+Wallet features vary by application but always include [wallet setup]({{ '/guide/designing-products/common-user-flows/#software-onboarding' | relative_url }}), balance and transaction records, and the ability to [send]({{ '/guide/payments/send/' | relative_url }}) and [receive]({{ '/guide/payments/request/' | relative_url }}) bitcoin. The full range of features that wallets may support is broad and includes security and [privacy]({{ '/guide/payments/privacy/' | relative_url }}) options, currency exchange features, accounting tools, [interoperability]({{ '/guide/designing-products/principles/#interoperability' | relative_url }}), accessibility, and localization options.
 
 Few wallets support the full range of features. The reasons for this can vary from; standards not being available when the wallet was first developed (newer [address formats]({{ '/guide/glossary/address/' | relative_url }}) or [HD wallets]({{ '/guide/glossary/wallet/#hd-wallet' | relative_url }}) for example), the choice to not include anything that implies trusting a third party, or simply because it does not fit the intended use case for the software.
-The features you include should be based on the needs of your users. Try to maximize interoperability with other Bitcoin products by supporting modern standards and emerging technologies. For example, a wallet project started today should almost certainly support the Lightning network.
+The features you include should be based on the needs of your users. Try to maximize interoperability with other bitcoin products by supporting modern standards and emerging technologies. For example, a wallet project started today should almost certainly support the Lightning network.
 
-Due to Bitcoin’s open-source nature, anyone with the technical skills can develop a Bitcoin wallet. Many code libraries are available to simplify this task.
+Due to bitcoin’s open-source nature, anyone with the technical skills can develop a bitcoin wallet. Many code libraries are available to simplify this task.
 
 </div>
 
@@ -67,7 +67,7 @@ Due to Bitcoin’s open-source nature, anyone with the technical skills can deve
 
 <div class="center" markdown="1">
 
-Exchanges let users swap between currencies and networks (for example USD to bitcoin, or from the base layer to the Lightning network). They typically fall in three general categories.
+Exchanges let users swap between currencies and networks (for example USD to bitcoin, or from the base layer to the Lightning network). They typically fall into three general categories.
 
 
 {% include image.html
@@ -84,7 +84,7 @@ Consumer-focused exchanges let users buy and sell directly with the exchange. Th
 
 Exchanges focused on investors and traders usually list many different cryptocurrencies. They allow users to trade with each other by submitting buy and sell orders on currency pairs. These products are generally for experienced users. They offer complex trading features and ways to analyze price movements.
 
-Decentralized exchanges focus on occasional use or trading, and are, as their name implies, based on an open marketplace without a central authority.
+Decentralized exchanges focus on occasional use or trading and are, as their name implies, based on an open marketplace without a central authority.
 
 </div>
 
@@ -92,7 +92,7 @@ Decentralized exchanges focus on occasional use or trading, and are, as their na
 
 If the blockchain is a public database, explorers are simply windows into that database.
 
-For Bitcoin, block explorers let users view transaction data, latest blocks, block height, and so on. They also provide insight into bigger picture activity on the Bitcoin network, such as daily transaction numbers. For example, there are typically fewer transactions on weekends, resulting in lower fees, ideal for low-priority transactions.
+For bitcoin, block explorers let users view transaction data, latest blocks, block height, etc. They also provide insight into bigger picture activity on the bitcoin network, such as daily transaction numbers. For example, there are typically fewer transactions on weekends, resulting in lower fees, ideal for low-priority transactions.
 
 As transactions in Lightning payment channels are not recorded on the blockchain, there are also Lightning network explorers. These let you see public information about the nodes and the network, such as channel count, capacity and status. Only participant nodes can look up specific transaction information in a channel.
 
@@ -100,7 +100,7 @@ As transactions in Lightning payment channels are not recorded on the blockchain
    image = "/assets/images/guide/getting-started/software/explorer-example.jpg"
    retina = "/assets/images/guide/getting-started/software/explorer-example@2x.jpg"
    alt-text = "Illustrative interface for block explorer software"
-   caption = 'Explorers offer insight into activity on the Bitcoin and Lightning networks. Texture by [Mike van den Bos](https://unsplash.com/@mike_van_den_bos){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
+   caption = 'Explorers offer insight into activity on the bitcoin and Lightning networks. Texture by [Mike van den Bos](https://unsplash.com/@mike_van_den_bos){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}.'
    width = 800
    height = 492
 %}
@@ -137,17 +137,17 @@ Payment processing applications offer easy-to-use online stores and point-of-sal
    layout = "float-right-desktop"
 %}
 
-Bitcoin [node]({{ '/guide/glossary/node/' | relative_url }}) software connects to and participates in the Bitcoin network. Nodes typically download and broadcast user transactions, and optionally help verify blockchain data more broadly. Some wallet software comes with built-in node capabilities, such as [Bitcoin Core]({{ '/guide/glossary/#bitcoin-core-client' | relative_url }}), but most wallet software connects to external nodes. Learn more on the [Node page]({{ '/guide/glossary/node/' | relative_url }}) in the glossary.
+Bitcoin [node]({{ '/guide/glossary/node/' | relative_url }}) software connects to and participates in the bitcoin network. Nodes typically download and broadcast user transactions, and optionally help verify blockchain data more broadly. Some wallet software comes with built-in node capabilities, such as [Bitcoin Core]({{ '/guide/glossary/#bitcoin-core-client' | relative_url }}), but most wallet software connects to external nodes. Learn more on the [Node page]({{ '/guide/glossary/node/' | relative_url }}) in the glossary.
 
-Lightning node software connects to and participates in the Lightning network, which extends Bitcoin with payment channels to increase transaction speed and lower costs. It is becoming widely adopted and accepted as the preferred way to scale Bitcoin.
+Lightning node software connects to and participates in the Lightning network, extending bitcoin with payment channels to increase transaction speed and lower costs. It is becoming widely adopted and accepted as the preferred way to scale bitcoin.
 
-It’s common to use node management software, separate from the node software itself. This simplifies the setup, management and monitoring of nodes by providing graphical user interfaces to interact with the lower level node software instead of CLIs.
+It’s common to use node management software separate from the node software itself. This simplifies the setup, management and monitoring of nodes by providing graphical user interfaces to interact with the lower level node software instead of CLIs.
 
 </div>
 
 ## Command-line interfaces (CLI)
 
-Primarily used by developers, CLIs offer feature-rich ways to interact with nodes and other Bitcoin software. They can be thought of as general-purpose toolboxes, so they require certain technical knowledge and are not optimized for specific use cases. New features are often first included in a CLI and then later added to graphical user interfaces (GUI).
+Primarily used by developers, CLIs offer feature-rich ways to interact with nodes and other bitcoin software. They can be thought of as general-purpose toolboxes, so they require certain technical knowledge and are not optimized for specific use cases. New features are often first included in a CLI and later added to graphical user interfaces (GUI).
 
 {% include image.html
    image = "/assets/images/guide/getting-started/software/cli-example.jpg"
@@ -176,7 +176,7 @@ Bitcoin [mining]({{ '/guide/getting-started/technology-primer/#how-is-the-blockc
 
 Mining has become primarily a professional undertaking with dedicated software to manage racks of [mining hardware]({{ '/guide/getting-started/hardware/#mining-hardware' | relative_url }}). However, some wallets still offer mining features, and there are also cloud mining providers that allow customers to rent mining capacity.
 
-Mining does not exist for transactions on the Lightning network, so there is no equivalent software. However, opening and closing payment channels on Lightning involve transactions, that need to be mined on the Bitcoin network.
+Mining does not exist for transactions on the Lightning network, so there is no equivalent software. However, opening and closing payment channels on Lightning involve transactions that need to be mined on the bitcoin network.
 
 </div>
 

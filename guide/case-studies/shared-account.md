@@ -49,22 +49,28 @@ https://www.figma.com/community/file/968416729557947210
 
 # Shared account
 
-A common real-world use case for shared accounts are couples managing their monthly spending, with both parties being able to spend from the account. For this situation we could consider the following private key management schemes:
+A common real-world use case for shared accounts are couples managing their monthly spending, with both parties being able to spend from the account. For this situation, we could consider the following private key management schemes:
 
 - 1-of-2 [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}) - either party can spend without the other's approval
 - 2-of-3 multi-key - either party can spend with approval from one additional key
 
-The other person does not need to co-sign every transaction, but we might want a *spending limit*, above which both parties need to approve the transaction. All multi-key setups are represented by Bitcoin scripts on the blockchain, and the spending limit can be introduced as a conditional for both the 1-of-2 or 2-of-3 scheme.
+{% include tip/open.html color="blue" icon="info" label="Lightning support" %}
+
+Multi-key on Lightning is still in development. This page will focus on on-chain wallets for the time being.
+
+{% include tip/close.html %}
+
+The other person does not need to co-sign every transaction, but we might want a *spending limit*, above which both parties need to approve the transaction. All multi-key setups are represented by bitcoin scripts on the blockchain, and the spending limit can be introduced as a conditional for both the 1-of-2 or 2-of-3 scheme.
 
 Although the 1-of-2 scheme could work here, it offers lower protection against both theft and self-inflicted loss, unless rigorous [manual backups]({{ '/guide/private-key-management/manual-backup/' | relative_url }}) are implemented. For this example we will choose the 2-of-3 scheme, but still have to decide on who will hold the third key, and the location of the other two.
 
-Depending on how tailor-made or interoperable we want this setup could be we have many options for the location of the three keys, including:
+Depending on how tailor-made or interoperable we want this setup could be, we have many options for the location of the three keys, including:
 
 - Individual mobile keys for the two users, plus one held by the co-manager (the product maker) for recovery and co-signing
 - Individual mobile keys for the two users, plus a shared external signing device
 - Each user can choose their own key location (mobile, external device, etc.), plus a shared external signing device
 
-We are looking for a low friction, easy-to-manage solution that could work for beginners so in this case we'll go with the two mobile keys and the third key held by the co-manager.
+We are looking for a low friction, easy-to-manage solution that could work for beginners, so in this case, we'll go with the two mobile keys and the third key held by the co-manager.
 
 Try the prototype below to see what such a user experience could be like.
 

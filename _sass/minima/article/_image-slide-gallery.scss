@@ -26,6 +26,12 @@ article.guide {
         p {
           margin-top: 0;
         }
+
+        &.modal-indicator {
+          p {
+            margin-top: $spacing-unit / 2;
+          }
+        }
       }
     }
 

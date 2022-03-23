@@ -3,8 +3,6 @@
 ## Content publishing checklist
 When you are ready for your pull request to be reviewed, make sure to go through this list so the reviewer can focus on giving feedback on the content and not have to nitpick.
 
-- [ ] Bitcoin is capitalized B when referring to the protocol
-- [ ] Bitcoin is lowercase b when referring to the currency
 - [ ] Spelling is US English
 - [ ] Image and pictures have alt text
 - [ ] Page has a link to the next page if it is within a chapter

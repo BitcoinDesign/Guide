@@ -3,11 +3,19 @@ layout: guide
 title: Restoring a wallet
 description: Options for restoring a wallet, from automatic cloud backup to recovery phrases, and more.
 parent: Onboarding
-nav_order: 3
+nav_order: 5
 permalink: /guide/onboarding/restoring-a-wallet/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/onboarding/restoring-a-wallet/restoring-a-wallet-preview.png
 ---
+
+<!--
+
+Illustration sources:
+
+- https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=0%3A1
+
+-->
 
 {% include picture.html
    image = "/assets/images/guide/onboarding/restoring-a-wallet/restoring-a-wallet.png"
@@ -24,9 +32,9 @@ image: https://bitcoin.design/assets/images/guide/onboarding/restoring-a-wallet/
 
 <div class="center" markdown="1">
 
-There are several reasons why a user might need to restore their Bitcoin wallet. They may have lost their device, be migrating from a different application or have deleted their wallet application. Regardless of why, it’s important that your wallet application has an easy way for users to recover their funds.
+There are several reasons why a user might need to restore their bitcoin wallet. They may have lost their device, be migrating from a different application or have deleted their wallet application. Regardless of why, it’s important that your wallet application has an easy way for users to recover their funds.
 
-However, not all wallets from one application can be recovered in another, depending on what standards they support, as covered in the [wallet interoperability]({{ 'guide/designing-products/wallet-interoperability' | relative_url }}) section. Lack of interoperability and vendor dependance is an issue for wallets holding bitcoin on the Lightning network. Lightning network wallets can currently only be restored in the application originally used. It's also worth noting that restoring from a recovery phrase only restores the private keys, but no user data like transaction notes, contacts etc.
+However, not all wallets from one application can be recovered in another, depending on what standards they support, as covered in the [wallet interoperability]({{ 'guide/designing-products/wallet-interoperability' | relative_url }}) section. Lack of interoperability and vendor dependance is an issue for wallets holding bitcoin on the Lightning network. Lightning network wallets can currently only be restored in the application originally used. It's also worth noting that restoring from a [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) only restores the private keys, but no user data like transaction notes, [contacts]({{ '/guide/payments/contacts/' | relative_url }}) etc.
 
 {% include picture.html
    image = "/assets/images/guide/onboarding/restoring-a-wallet/import-options.png"
@@ -66,12 +74,11 @@ Some less popular methods for restoring a wallet include importing a file with a
 
 ---
 
-The next section looks at options for adding extra layers of security and [protecting a wallet]({{ '/guide/onboarding/protecting-a-wallet/' | relative_url }}).
+Next, let’s look at [private key management]({{ '/guide/private-key-management/introduction/' | relative_url }}) to consider for your bitcoin application.
 
 {% include next-previous.html
-   previousUrl = "/guide/onboarding/backing-up-a-wallet/manual-backup/"
-   previousName = "Manual backups"
-   nextUrl = "/guide/onboarding/protecting-a-wallet/"
-   nextName = "Protecting a wallet"
+   previousUrl = "/guide/onboarding/protecting-a-wallet/"
+   previousName = "Protecting a wallet"
+   nextUrl = "/guide/private-key-management/introduction/"
+   nextName = "Private key management"
 %}
-

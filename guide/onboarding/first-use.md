@@ -8,14 +8,25 @@ permalink: /guide/onboarding/first-use/
 redirect_from:
  - /guide/onboarding/creating-a-new-wallet/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/onboarding/creating-a-new-wallet/creating-a-new-wallet-preview.png
+image: https://bitcoin.design/assets/images/guide/onboarding/first-use/first-use-preview.png
 ---
 
+<!--
+
+Editor's notes
+
+This chapter covers backing up wallet data via a cloud provider.
+
+Illustration sources
+- https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=0%3A1
+
+-->
+
 {% include picture.html
-   image = "/assets/images/guide/onboarding/creating-a-new-wallet/creating-a-new-wallet.png"
-   retina = "/assets/images/guide/onboarding/creating-a-new-wallet/creating-a-new-wallet@2x.png"
-   mobile = "/assets/images/guide/onboarding/creating-a-new-wallet/creating-a-new-wallet-mobile.png"
-   mobileRetina = "/assets/images/guide/onboarding/creating-a-new-wallet/creating-a-new-wallet-mobile@2x.png"
+   image = "/assets/images/guide/onboarding/first-use/first-use.png"
+   retina = "/assets/images/guide/onboarding/first-use/first-use@2x.png"
+   mobile = "/assets/images/guide/onboarding/first-use/first-use-mobile.png"
+   mobileRetina = "/assets/images/guide/onboarding/first-use/first-use-mobile@2x.png"
    alt-text = "Creating a new wallet chapter header image"
    width = 1600
    height = 600
@@ -33,21 +44,21 @@ There are a number of common tasks a user might want to achieve the first time t
 
 While the first two, creating or restoring a wallet, normally need to be tackled straight away, the last two can be designed to fit the flow and capability of your application.
 
-It is common to see onboarding flows that implore the user to do a manual backup of their recovery phrase straight away, often before they have even gotten to see the main screen of the application. While this can make sure the user is aware of the need to backup, their motivation and ability to safely do this at that exact moment might be limited.
+It is common to see onboarding flows that implore the user to do a manual backup of their [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) straight away, often before they have even gotten to see the main screen of the application. While this can make sure the user is aware of the need to backup, their motivation and ability to safely do this at that exact moment might be limited.
 
 Alternative approaches can be to wait and prompt the user only once there are funds in the wallet, at regular intervals, or to use an automatic cloud backup for small amounts. It is up to you as the application designer to decide what works best in your users’ use case.
 
 ### Creating a wallet
 
-[Bitcoin wallets]({{ 'guide/glossary/#wallet' | relative_url }}) contain the private keys to a user’s bitcoin. Private keys let users access bitcoin associated with those keys. If the user does not have a Bitcoin wallet already that they want to restore, it is necessary to create a new one.
+[Bitcoin wallets]({{ 'guide/glossary/#wallet' | relative_url }}) contain the private keys to a user’s bitcoin. Private keys let users access bitcoin associated with those keys. If the user does not have a bitcoin wallet already that they want to restore, it is necessary to create a new one.
 
-Like regular keys on a keychain, Bitcoin private keys can be copied. This makes [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) one of the most important considerations of any bitcoin owner. Bitcoin wallet applications should automatically generate the user’s private keys locally, meaning they are only generated and stored on the device and not by the wallet provider, during onboarding.
+Like regular keys on a keychain, bitcoin private keys can be copied. This makes [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) one of the most important considerations of any bitcoin owner. Bitcoin wallet applications should automatically generate the user’s private keys locally, meaning they are only generated and stored on the device and not by the wallet provider, during onboarding.
 
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/onboarding/creating-a-new-wallet/onboarding-welcome-screen.png"
-   retina = "/assets/images/guide/onboarding/creating-a-new-wallet/onboarding-welcome-screen@2x.png"
+   image = "/assets/images/guide/onboarding/first-use/onboarding-welcome-screen.png"
+   retina = "/assets/images/guide/onboarding/first-use/onboarding-welcome-screen@2x.png"
    width = 250
    height = 541
    caption = "It is good practice to clearly highlight the primary user action, which is 'Create a new wallet' in this case."
@@ -72,7 +83,7 @@ While this may sound daunting to first-time users, these caveats mustn't be hidd
 
 Ideally your application supports both the base layer and the Lightning network. When talking about backups, you should be clear on what is possible and required in terms of restoring the user’s wallet from a backup.
 
-Some studies suggest that users struggled greatly with technical terminology and feeling as though they had a lack of guidance during wallet setup. By walking users through single steps that clearly frame the features of self-custodial Bitcoin wallets, users will feel well-equipped to navigate and use the wallet confidently.
+Some studies suggest that users struggled greatly with technical terminology and feeling as though they had a lack of guidance during wallet setup. By walking users through single steps that clearly frame the features of self-custodial bitcoin wallets, users will feel well-equipped to navigate and use the wallet confidently.
 
 > Users reported that they often felt like they lacked guidance and understanding during wallet setup
 >
@@ -83,28 +94,31 @@ Below is an example of some carousel screens that might be useful in helping a u
 <div class="image-slide-gallery">
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/creating-a-new-wallet/product-intro-1.png"
-   retina = "/assets/images/guide/onboarding/creating-a-new-wallet/product-intro-1@2x.png"
+   image = "/assets/images/guide/onboarding/first-use/product-intro-1.png"
+   retina = "/assets/images/guide/onboarding/first-use/product-intro-1@2x.png"
    alt-text = "Introduction screen explaining ownership"
    caption = "Talk about ownership"
+   layout = "shadow"
    width = 250
    height = 541
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/creating-a-new-wallet/product-intro-2.png"
-   retina = "/assets/images/guide/onboarding/creating-a-new-wallet/product-intro-2@2x.png"
+   image = "/assets/images/guide/onboarding/first-use/product-intro-2.png"
+   retina = "/assets/images/guide/onboarding/first-use/product-intro-2@2x.png"
    alt-text = "Introduction screen explaining recovery"
    caption = "Talk about recovery"
+   layout = "shadow"
    width = 250
    height = 541
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/creating-a-new-wallet/product-intro-3.png"
-   retina = "/assets/images/guide/onboarding/creating-a-new-wallet/product-intro-3@2x.png"
+   image = "/assets/images/guide/onboarding/first-use/product-intro-3.png"
+   retina = "/assets/images/guide/onboarding/first-use/product-intro-3@2x.png"
    alt-text = "Introduction screen explaining security"
    caption = "Talk about security"
+   layout = "shadow"
    width = 250
    height = 541
 %}
@@ -115,11 +129,11 @@ Below is an example of some carousel screens that might be useful in helping a u
 
 ---
 
-Ok, now let's look at [backing up a recovery phrase.]({{ '/guide/onboarding/backing-up-a-wallet/' | relative_url }})
+Ok, now let's look at [funding a wallet.]({{ '/guide/onboarding/funding-a-wallet/' | relative_url }})
 
 {% include next-previous.html
    previousUrl = "/guide/onboarding/introduction/"
-   previousName = "Getting to know your users"
-   nextUrl = "/guide/onboarding/backing-up-a-wallet/"
-   nextName = "Backing up a recovery phrase"
+   previousName = "Onboarding introduction"
+   nextUrl = "/guide/onboarding/funding-a-wallet/"
+   nextName = "Funding a wallet"
 %}

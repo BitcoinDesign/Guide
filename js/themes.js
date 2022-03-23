@@ -93,6 +93,54 @@ let themes = [
         link: "https://github.com/BitcoinDesign/Guide/issues/45"
     }
   },
+
+  {
+    // Rutuja bitcoin page theme banner
+    logo: {
+        path: "/assets/bitcoin-design-community-banner.svg",
+        fillColor: "#FEE78D",
+        outlineColor: "#5A4C4C"
+    },
+    title: {
+        fillColor: "#FEE78D",
+        outlineColor: "#FEE78D"
+    },
+    description: {
+        fillColor: "#E4CBCB"
+    },
+    button1: {
+        fillColor: "#FEE78D",
+        outlineColor: "#FEE78D",
+        labelFillColor: "#5A4C4C"
+    },
+    button2: {
+        fillColor: "#5A4C4C",
+        outlineColor: "#FEE78D",
+        labelFillColor: "#FEE78D"
+    },
+    image: {
+        path: '',
+        pathRetina: '',
+        pathMobile: '',
+        pathMobileRetina: '',
+        backgroundColor: ''
+    },
+    copy: {
+        backgroundColor: ""
+    },
+    background: {
+        path: 'url("/assets/images/home/banner/rutuja_bitcoin_theme_banner_web.jpg")',
+        pathRetina: 'url("/assets/images/home/banner/rutuja_bitcoin_theme_banner_web@2x.jpg")',
+        pathMobile: 'url("/assets/images/home/banner/themeBG_mobile.jpg")',
+        pathMobileRetina: 'url("/assets/images/home/banner/themeBG_mobile@2x.jpg")',
+        backgroundColor: "#5A4C4C"
+    },
+    flipLayoutOnMobile: false,
+    author: {
+        name: "Rutuja Kelkar",
+        link: "https://github.com/BitcoinDesign/Guide/issues/592"
+    }
+  },
   {
     // 3D abstract
     logo: {
@@ -232,6 +280,53 @@ let themes = [
     author: {
         name: "Jessica Wolff",
         link: "https://github.com/BitcoinDesign/Guide/issues/289"
+    }
+  },
+  {
+    // The Ongoing Development of Bitcoin
+    logo: {
+        path: "/assets/bitcoin-design-community-banner.svg",
+        fillColor: "#E0E0E0",
+        outlineColor: "#000"
+    },
+    title: {
+        fillColor: "#ADAAAA",
+        outlineColor: "#000"
+    },
+    description: {
+        fillColor: "#000"
+    },
+    button1: {
+        fillColor: "#F7931A",
+        outlineColor: "",
+        labelFillColor: "#00"
+    },
+    button2: {
+        fillColor: "#FFF",
+        outlineColor: "#000",
+        labelFillColor: "#000"
+    },
+    background: {
+        path: '',
+        pathRetina: '',
+        pathMobile: '',
+        pathMobileRetina: '',
+        backgroundColor: "#F4F4F4"
+    },
+    copy: {
+        backgroundColor: ""
+    },
+    image: {
+        path: 'url("/assets/images/home/banner/ongoing-development.png")',
+        pathRetina: 'url("/assets/images/home/banner/ongoing-development@2x.png")',
+        pathMobile: 'url("/assets/images/home/banner/ongoing-development-mobile.png")',
+        pathMobileRetina: 'url("/assets/images/home/banner/ongoing-development-mobile@2x.png")',
+        backgroundColor: ""
+    },
+    flipLayoutOnMobile: false,
+    author: {
+        name: "Susrita Chatterjee",
+        link: "https://github.com/BitcoinDesign/Guide/issues/688"
     }
   }
 ];

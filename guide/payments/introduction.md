@@ -1,13 +1,21 @@
 ---
 layout: guide
 title: Payments
-description: Diving into the user experience of moving Bitcoin
+description: Diving into the user experience of mobile bitcoin payments.
 nav_order: 6
 has_children: true
 permalink: /guide/payments/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/payments/payments-preview.jpg
 ---
+
+<!--
+
+Illustration source
+
+-
+
+-->
 
 {% include picture.html
    image = "/assets/images/guide/payments/introduction.svg"
@@ -18,19 +26,19 @@ image: https://bitcoin.design/assets/images/guide/payments/payments-preview.jpg
    layout = "full-width"
 %}
 
-# Payments and transactions
+# Payments
 
-At its core, the Bitcoin protocol enables transactions between people without intermediaries, regardless of where in the world they are.
+At its core, bitcoin enables payments between people without intermediaries, regardless of where in the world they are.
 
-This chapter is meant to give an overview of bitcoin transactions, including sending, receiving, and transaction privacy, with advice and best practices. After this chapter, you should be able to design payment solutions that are well suited to your product's use case and understand best-practices for its implementation.
+This chapter covers bitcoin payment design considerations when building mobile bitcoin applications. Including what they are, how they work and the best practices for designing these user flows.
 
-We have already established that [Bitcoin is money]({{ '/guide/getting-started/why-bitcoin-is-unique/#its-money-but-digital' | relative_url }}), so let's dive into how it can be used to facilitate payments.
+We have already established that [bitcoin is money]({{ '/guide/getting-started/why-bitcoin-is-unique/#its-money-but-digital' | relative_url }}), so let's dive into how it can be used to make payments.
 
 ---
 
-### [Transactions overview]({{ '/guide/payments/transactions/' | relative_url }})
+### [Requesting bitcoin]({{ '/guide/payments/request/' | relative_url }})
 
-An overview of Bitcoin payments, common concepts and the transaction lifecycle.
+An introduction to how requesting and receiving bitcoin works.
 
 ---
 
@@ -40,15 +48,21 @@ An introduction to how sending bitcoin works.
 
 ---
 
-### [Receiving bitcoin]({{ '/guide/payments/receive/' | relative_url }})
+### [Activity]({{ '/guide/payments/activity/' | relative_url }})
 
-An introduction to how receiving and requesting bitcoin works.
+A look at how we can let users conveniently browse and work with their payment history and other application activity.
 
 ---
 
-### [Transaction privacy]({{ '/guide/payments/privacy/' | relative_url }})
+### [Contacts]({{ '/guide/payments/contacts/' | relative_url }})
 
-An overview of how to help users maintain transaction privacy with Bitcoin.
+Simplifing how users work with invoices, addresses and payments via contacts.
+
+---
+
+### [Privacy]({{ '/guide/payments/privacy/' | relative_url }})
+
+An overview of how to help users maintain transaction privacy with bitcoin.
 
 ---
 
@@ -58,16 +72,15 @@ The basics on units and currency symbols, how to format them and what options to
 
 ---
 
-### Managing funds (coming soon)
+### [Transactions overview]({{ '/guide/payments/transactions/' | relative_url }})
 
-How to help users organize and manage their transaction data and holdings.
+An overview of bitcoin payments, common concepts, and the transaction lifecycle.
 
 ---
 
 {% include next-previous.html
    previousUrl = "/guide/private-key-management/backups/"
    previousName = "Bitcoin backups"
-   nextUrl = "/guide/payments/transactions/"
-   nextName = "Transactions overview"
+   nextUrl = "/guide/payments/request/"
+   nextName = "Requesting bitcoin"
 %}
-

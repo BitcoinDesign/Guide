@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Savings account
-description: A UX case study for a multi-key Bitcoin wallet designed for both daily spending and storing medium amounts.
+description: A UX case study for a multi-key bitcoin wallet designed for both daily spending and storing medium amounts.
 nav_order: 2
 parent: Case studies
 permalink: /guide/case-studies/savings-account/
@@ -35,7 +35,7 @@ images_onboarding:
       caption: Success message when Key 1 is created and secured.
     - file: onboarding/key-2-connection-type
       alt:
-      caption: Choice of cconnection method to the signing device.
+      caption: Choice of connection method to the signing device.
     - file: onboarding/key-2-device-type
       alt:
       caption: Choice of signing device for Key 2 to provide accurate instructions.
@@ -47,7 +47,7 @@ images_onboarding:
       caption: Step 1 is to export the XPUB on the ColdCard.
     - file: onboarding/key-2-step-3
       alt:
-      caption: Step 2 is to connect the SD card from thae ColdCard to the phone.
+      caption: Step 2 is to connect the SD card from the ColdCard to the phone.
     - file: onboarding/key-2-step-4
       alt:
       caption: The card was detected and the XPUB copied.
@@ -63,10 +63,10 @@ images_onboarding:
 images_send_auto:
     - file: send/home
       alt:
-      caption: Basic home screen to access send and receive functionality.
+      caption: Basic home screen to access, send, and receive functionality.
     - file: send/amount-low
       alt:
-      caption: The user has entered an amount that is within the auto-signing limits.
+      caption: The user has entered an amount within the auto-signing limits.
     - file: send/amount-low-confirm
       alt:
       caption: Once the user taps “Send”, the auto-signer approves and broadcasts the transaction.
@@ -76,10 +76,10 @@ images_send_auto:
 images_send_manual:
     - file: send/amount-high
       alt:
-      caption: The user has entered an amount that is beyond the auto-signing limits, and a note appears about manual approval.
+      caption: The user has entered an amount beyond the auto-signing limits, and a note appears about manual approval.
     - file: send/amount-high-step-1
       alt:
-      caption: Prepare the user for the signing steps that are specific to their device type.
+      caption: Prepare the user for the signing steps specific to their device type.
     - file: send/amount-high-step-2
       alt:
       caption: Connect the SD card to save the PSBT file.
@@ -126,7 +126,7 @@ images_recovery_cloud:
       caption: Several options for key backup are available.
     - file: recovery/options-cloud-step-2
       alt:
-      caption: The followinng steps depend on the user choice of backup method.
+      caption: The following steps depend on the user choice of backup method.
 images_limits:
     - file: limits/settings
       alt:
@@ -171,7 +171,7 @@ https://www.figma.com/community/file/968416729557947210
 
 # Savings account
 
-In this case study, we look at a product that balances daily spending with what a bank would call a [savings]({{ '/guide/designing-products/personal-finance/#savings' | relative_url }}) account where the user might store wealth long term. Safeguards against loss will be a higher priority than with a frequent spending product, and we might therefore accept more friction both when setting up the wallet and when transacting. If users have no prior Bitcoin knowledge we should expect to spend a significant effort educating them to put them in a position to safely operate the wallet product.
+In this case study, we look at a product that balances daily spending with what a bank would call a [savings]({{ '/guide/designing-products/personal-finance/#savings' | relative_url }}) account where the user might store wealth long term. Safeguards against loss will be a higher priority than with a frequent spending product, and we might therefore accept more friction both when setting up the wallet and when transacting. If users have no prior bitcoin knowledge, we should expect to spend a significant effort educating them to put them in a position to safely operate the wallet product.
 
 The following [prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=1%3A55974&viewport=-304%2C225%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=1%3A55974&show-proto-sidebar=1) includes initial onboarding, sending bitcoin, and key replacement, which are explained in detail further below.
 
@@ -188,7 +188,7 @@ The following [prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Sav
 
 ### Private key management
 
-A 2-of-3 [multi-key setup]({{ '/guide/private-key-management/multi-key/' | relative_url }}) would seem the most appropriate here, although it will be a significant hurdle in [onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}). Other schemes could be considered but come with distinct downsides for amounts of value we can expect users to store in this use case. A single-key scheme with an [automatic cloud backup]({{ '/guide/private-key-management/multi-key/' | relative_url }}), [recovery phrase]({{ '/guide/private-key-management/manual-backup/' | relative_url }}) or single [signing device]({{ '/guide/private-key-management/external-signing-device/' | relative_url }}) could work at the lower end of the value scale, but start to look like less responsible recommendations with higher values due to their single points of failure.
+A 2-of-3 [multi-key setup]({{ '/guide/private-key-management/multi-key/' | relative_url }}) would seem the most appropriate here, although it will be a significant hurdle in [onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}). Other schemes could be considered but come with distinct downsides for amounts of value we can expect users to store in this use case. A single-key scheme with an [automatic cloud backup]({{ '/guide/private-key-management/multi-key/' | relative_url }}), [recovery phrase]({{ '/guide/private-key-management/manual-backup/' | relative_url }}) or single [signing device]({{ '/guide/private-key-management/external-signers/' | relative_url }}) could work at the lower end of the value scale, but start to look like less responsible recommendations with higher values due to their single points of failure.
 
 An important question is the combination of key-storage devices and their distribution. We have many options here, and it might come down to the experience of the target audience and their expected access to the necessary hardware;
 
@@ -197,7 +197,7 @@ An important question is the combination of key-storage devices and their distri
 - Full sovereignty (one or more purpose-built signing devices)
 - All keys off-line (two or more purpose-built signing devices)
 
-For this case study we will go with the middle ground option which will require one purpose-built signing device such as a [hardware wallet]({{ '/guide/getting-started/hardware/#hardware-wallets' | relative_url }}). The second key will be created on the user’s main mobile device and automatically backed up to their cloud storage provider. The third key will be held by the wallet application provider on a server for wallet recovery, key replacement and automatic approval of low-value transactions (auto-signing). Neither of the two keys in the user’s control (mobile and signing device) will require recovery phrase backups, although this could be offered as an option.
+For this case study, we will go with the middle ground option, which will require one purpose-built signing device such as a [hardware wallet]({{ '/guide/getting-started/hardware/#hardware-wallets' | relative_url }}). The second key will be created on the user’s main mobile device and automatically backed up to their cloud storage provider. The wallet application provider will hold the third key on a server for wallet recovery, key replacement, and automatic approval of low-value transactions (auto-signing). Neither of the two keys in the user’s control (mobile and signing device) will require recovery phrase backups, although this could be offered as an option.
 
 ### The onboarding experience
 
@@ -221,7 +221,7 @@ For larger transactions, the wallet application provider will no longer automati
 
 ### Signing device key replacement
 
-Should they lose either their main mobile device, or the purpose-built signing device they can replace the lost key (rotate in a new key) with the help of the recovery key held by the auto-signer. However, if they lose both the mobile and signing device they will not be able to recover their funds, unless they had also backed up either of the respective recovery phrases. [View prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=15%3A59302&viewport=-304%2C225%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=1%3A56799&show-proto-sidebar=1).
+Should they lose either their main mobile device or the purpose-built signing device, they can replace the lost key (rotate in a new key) with the help of the recovery key held by the auto-signer. However, if they lose both the mobile and signing device, they will not be able to recover their funds unless they had also backed up either of the respective recovery phrases. [View prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=15%3A59302&viewport=-304%2C225%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=1%3A56799&show-proto-sidebar=1).
 
 {% include image-gallery.html pages = page.images_recovery %}
 

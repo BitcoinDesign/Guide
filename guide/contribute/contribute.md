@@ -22,13 +22,13 @@ image: https://bitcoin.design/assets/images/guide/contribute/contribute-preview.
 
 # Contribute to the Guide
 
-Join our open community and help us improve the Bitcoin Design Guide. Here’s where you can get involved and contribute.
+Join our open community and help us improve the Bitcoin Design Guide. For a big-picture view of what we are working on right now, see the [roadmap](https://github.com/orgs/BitcoinDesign/projects/2). Here’s where you can get involved and contribute.
 
 ---
 
 ### [Slack channel]({{ site.slack_invite_url }})
 
-Head over to the Bitcoin [Bitcoin Design Slack community]({{ site.slack_invite_url }}) and join the #bitcoin-design-guide channel. If you don’t have Slack, you can [download it here](https://slack.com/intl/en-rs/downloads) or on the App Store.
+Head over to the [Bitcoin Design Slack community]({{ site.slack_invite_url }}) and join the #bitcoin-design-guide channel. If you don’t have Slack, you can [download it here](https://slack.com/intl/en-rs/downloads) or on the App Store.
 
 
 ---
@@ -59,7 +59,7 @@ Tips on how to write for the guide. The goal is to achieve a consistent tone acr
 
 ### [Illustration guidelines]({{ '/guide/contribute/illustration-guidelines/' | relative_url }})
 
-Creating visuals for the Bitcoin Design Guide? We recommend following these best practices for file naming, image sizing, and on.
+Creating visuals for the Bitcoin Design Guide? We recommend following these best practices for file naming, image sizing, etc.
 
 ---
 

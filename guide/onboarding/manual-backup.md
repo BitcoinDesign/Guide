@@ -1,20 +1,28 @@
 ---
 layout: guide
 title: Manual backup
-description: How to manually back up the recovery phrase of a Bitcoin wallet.
+description: How to manually back up the recovery phrase of a bitcoin wallet.
 grand_parent: Onboarding
 parent: Backing up a wallet
 nav_order: 2
 permalink: /guide/onboarding/backing-up-a-wallet/manual-backup/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase-preview.png
+image: https://bitcoin.design/assets/images/guide/onboarding/backing-up-a-wallet/manual-backup/backing-up-a-wallet-manual-preview.png
 ---
 
+<!--
+
+Illustration sources:
+
+- https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=0%3A1
+
+-->
+
 {% include picture.html
-image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase.png"
-retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase@2x.png"
-mobile = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase-mobile.png"
-mobileRetina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase-mobile@2x.png"
+image = "/assets/images/guide/onboarding/backing-up-a-wallet/manual-backup/backing-up-a-wallet-manual.png"
+retina = "/assets/images/guide/onboarding/backing-up-a-wallet/manual-backup/backing-up-a-wallet-manual@2x.png"
+mobile = "/assets/images/guide/onboarding/backing-up-a-wallet/manual-backup/backing-up-a-wallet-manual-mobile.png"
+mobileRetina = "/assets/images/guide/onboarding/backing-up-a-wallet/manual-backup/backing-up-a-wallet-manual-mobile@2x.png"
 alt-text = "Backing up a recovery phrase chapter header image"
 width = 1600
 height = 600
@@ -36,7 +44,7 @@ Manual backups of Lightning channel state should only be performed with careful 
 ## Backing up wallet recovery data
 
 Manual backup should be used primarily for wallet recovery data. Wallet recovery data includes:
-- The recovery phrase
+- The [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }})
   - Type - BIP39, Electrum, Shamir Shares (SLIP39), AEZEED
   - Passphrase (optional)
 - Derivation path
@@ -145,8 +153,8 @@ Regardless of the option you decide to run with, it’s important that you expli
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-single-word.png"
-   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-single-word@2x.png"
+   image = "/assets/images/guide/onboarding/backing-up-a-wallet/manual-backup/copy-recovery-phrase-single-word.png"
+   retina = "/assets/images/guide/onboarding/backing-up-a-wallet/manual-backup/copy-recovery-phrase-single-word@2x.png"
    width = 250
    height = 600
    alt-text = "Showing recovery phrase one word at a time"
@@ -167,8 +175,8 @@ This would be a time consuming step if one’s recovery phrase is 24 words. This
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-columns.png"
-   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-columns@2x.png"
+   image = "/assets/images/guide/onboarding/backing-up-a-wallet/manual-backup/copy-recovery-phrase-columns.png"
+   retina = "/assets/images/guide/onboarding/backing-up-a-wallet/manual-backup/copy-recovery-phrase-columns@2x.png"
    width = 250
    height = 600
    alt-text = "Showing recovery phrase one word at a time"
@@ -189,8 +197,8 @@ Depending on how you show these groups of words, there is room for users to fals
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-reveal.png"
-   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-reveal@2x.png"
+   image = "/assets/images/guide/onboarding/backing-up-a-wallet/manual-backup/copy-recovery-phrase-reveal.png"
+   retina = "/assets/images/guide/onboarding/backing-up-a-wallet/manual-backup/copy-recovery-phrase-reveal@2x.png"
    width = 250
    height = 600
    alt-text = "Reveal option where words are not readable by default"
@@ -209,8 +217,8 @@ By creating this design interaction, it drills in how viewing, storing, and mana
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-all-at-once.png"
-   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/copy-recovery-phrase-all-at-once@2x.png"
+   image = "/assets/images/guide/onboarding/backing-up-a-wallet/manual-backup/copy-recovery-phrase-all-at-once.png"
+   retina = "/assets/images/guide/onboarding/backing-up-a-wallet/manual-backup/copy-recovery-phrase-all-at-once@2x.png"
    width = 250
    height = 600
    alt-text = "Show all 12 words at once"
@@ -243,8 +251,8 @@ Try to make sure users understand your team cannot access their recovery phrase 
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/confirm-recovery-phrase.png"
-   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/confirm-recovery-phrase@2x.png"
+   image = "/assets/images/guide/onboarding/backing-up-a-wallet/manual-backup/confirm-recovery-phrase.png"
+   retina = "/assets/images/guide/onboarding/backing-up-a-wallet/manual-backup/confirm-recovery-phrase@2x.png"
    width = 250
    height = 600
    alt-text = "Confirming a recovery phrase by tapping"
@@ -261,8 +269,8 @@ A common design for confirming a manual backup is to present users with a scramb
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/confirm-recovery-phrase-entry.png"
-   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/confirm-recovery-phrase-entry@2x.png"
+   image = "/assets/images/guide/onboarding/backing-up-a-wallet/manual-backup/confirm-recovery-phrase-entry.png"
+   retina = "/assets/images/guide/onboarding/backing-up-a-wallet/manual-backup/confirm-recovery-phrase-entry@2x.png"
    width = 250
    height = 600
    alt-text = "Typing a recovery phrase"
@@ -285,8 +293,8 @@ Because typing each word out comes with more room for error, create a visual ind
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/confirm-recovery-phrase-columns.png"
-   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/manual-backup/confirm-recovery-phrase-columns@2x.png"
+   image = "/assets/images/guide/onboarding/backing-up-a-wallet/manual-backup/confirm-recovery-phrase-columns.png"
+   retina = "/assets/images/guide/onboarding/backing-up-a-wallet/manual-backup/confirm-recovery-phrase-columns@2x.png"
    width = 250
    height = 600
    alt-text = "Identify specific recovery phrase words"
@@ -302,11 +310,11 @@ You could also ask users to select (or manually type out) a random word from the
 
 ---
 
-The next section will highlight some options for [restoring a wallet]({{ '/guide/onboarding/restoring-a-wallet/' | relative_url }}).
+The next section will highlight some options for [protecting a wallet]({{ '/guide/onboarding/protecting-a-wallet/' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/onboarding/backing-up-a-wallet/cloud-backup/"
    previousName = "Automatic cloud backups"
-   nextUrl = "/guide/onboarding/restoring-a-wallet/"
-   nextName = "Restoring a wallet"
+   nextUrl = "/guide/onboarding/protecting-a-wallet/"
+   nextName = "Protecting a wallet"
 %}

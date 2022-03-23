@@ -1,42 +1,43 @@
 ---
 layout: guide
-title: Cloud backup
+title: Automatic cloud backup
 description: How to backup bitcoin wallet data via cloud storage service providers.
 grand_parent: Onboarding
 parent: Backing up a wallet
 nav_order: 1
 permalink: /guide/onboarding/backing-up-a-wallet/cloud-backup/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase-preview.png
+image: https://bitcoin.design/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/backing-up-a-wallet-cloud-preview.png
 ---
 
 <!--
 
 Editor's notes
 
-This chapter covers backing up wallat data via a cloud provider.
+This chapter covers backing up wallet data via a cloud provider.
 
 Illustration sources
 - https://www.figma.com/file/q9EgLqOKcIVc0Cq7khtpNm/Onboarding-%3E-Backups?node-id=0%3A1
+- https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=0%3A1
 
 -->
 
 {% include picture.html
-image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase.png"
-retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase@2x.png"
-mobile = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase-mobile.png"
-mobileRetina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/backing-up-a-recovery-phrase-mobile@2x.png"
+image = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/backing-up-a-wallet-cloud.png"
+retina = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/backing-up-a-wallet-cloud@2x.png"
+mobile = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/backing-up-a-wallet-cloud-mobile.png"
+mobileRetina = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/backing-up-a-wallet-cloud-mobile@2x.png"
 alt-text = "Backing up a recovery phrase chapter header image"
 width = 1600
 height = 600
 layout = "full-width"
 %}
 
-# Cloud backup
+# Automatic cloud backup
 
 ### How it works
 
-The user's wallet recovery data and channel states are backed up on their respective cloud storage provider. The recovery phrase only needs to be backed up once. However, channel states may need to be backed up frequently because they change every time the user's wallet sends, receives, or routes a payment; therefore, the channel state should be backed up automatically.
+The user's wallet recovery data and channel states are backed up on their respective cloud storage provider. The [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) only needs to be backed up once. However, channel states may need to be backed up frequently because they change every time the user's wallet sends, receives, or routes a payment; therefore, the channel state should be backed up automatically.
 
 If the user's device is lost, stolen, or broken, they can use the backup from their cloud storage account (such as Apple iCloud or Google Drive) to regain access to their funds. To learn more about the technical details, hop over to the [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) section on this topic.
 
@@ -46,13 +47,13 @@ If the user's device is lost, stolen, or broken, they can use the backup from th
 
 This method provides users with the feeling that they can rely on their cloud provider to regain access to their funds rather than putting the responsibility on themselves.
 
-Below is an example of what the user interface might look like for a cloud backup that significantly reduces friction during onboarding. An optimal phase to show this may be after the wallet has received funds for the first time, so that the user has an incentive to back up their wallet.
+Below is an example of what the user interface might look like for an automatic cloud backup that significantly reduces friction during onboarding. An optimal phase to show this may be after the wallet has received funds for the first time, so that the user has an incentive to back up their wallet.
 
 <div class="image-slide-gallery">
 
 {% include picture.html
-image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-prompt.png"
-retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-prompt@2x.png"
+image = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-prompt.png"
+retina = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-prompt@2x.png"
 layout = "shadow"
 caption = "Prompt the user to back up when they have funds in the wallet"
 alt-text = "Screen prompting the user to back up after they have received a payment"
@@ -61,8 +62,8 @@ height = 541
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-intro.png"
-   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-intro@2x.png"
+   image = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-intro.png"
+   retina = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-intro@2x.png"
    layout = "shadow"
    caption = "Describe to the user know what is about to happen and how it works."
    alt-text = "Screen explaining automatic cloud backups"
@@ -71,9 +72,9 @@ height = 541
 %}
 
 {% include picture.html
-     image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-PIN.png"
-   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-PIN@2x.png"
-   class = "shadow"
+     image = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-PIN.png"
+   retina = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-PIN@2x.png"
+   layout = "shadow"
    caption = "Allows the user to set a PIN used for authentication."
    alt-text = "The user can set a PIN which will be used to authenticate and access the wallet"
    width = 250
@@ -81,9 +82,9 @@ height = 541
 %}
 
 {% include picture.html
-     image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-service.png"
-   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-service@2x.png"
-   class = "shadow"
+     image = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-service.png"
+   retina = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-service@2x.png"
+   layout = "shadow"
    caption = "Give the user different cloud provider options, others such as Dropbox might also be included."
    alt-text = "Screen showing saving a password to encrypt the recovery phrase"
    width = 250
@@ -91,9 +92,9 @@ height = 541
 %}
 
 {% include picture.html
-     image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-provider.png"
-   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-provider@2x.png"
-   class = "shadow"
+     image = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-provider.png"
+   retina = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-provider@2x.png"
+   layout = "shadow"
    caption = "This UI will be very different depending on the cloud provider and what permissions are required."
    alt-text = "Screen of placeholder where cloud provider UI would be"
    width = 250
@@ -101,9 +102,9 @@ height = 541
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-confirmation.png"
-   retina = "/assets/images/guide/onboarding/backing-up-a-recovery-phrase/automatic-cloud-backup/cloud-backup-confirmation@2x.png"
-   class = "shadow"
+   image = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-confirmation.png"
+   retina = "/assets/images/guide/onboarding/backing-up-a-wallet/automatic-cloud-backup/cloud-backup-confirmation@2x.png"
+   layout = "shadow"
    caption = "Once the upload is complete it's a good idea to show a success screen and give some reassurances."
    alt-text = "Screen showing completing a cloud backup"
    width = 250
@@ -114,7 +115,7 @@ height = 541
 
 ### How to discuss/explain it
 
-One approach is to explicitly explain within onboarding carousels that a user’s wallet backup is stored on the cloud; this means that if they lose or break their device, they can regain access to their funds on another device using their respective cloud account and Bitcoin wallet app.
+One approach is to explicitly explain within onboarding carousels that a user’s wallet backup is stored on the cloud; this means that if they lose or break their device, they can regain access to their funds on another device using their respective cloud account and bitcoin wallet app.
 
 On a similar note, it’s crucial that you also explain that if someone else knows their cloud account information, they can gain access to their funds, too.
 
@@ -126,11 +127,11 @@ Before creating a wallet backup via cloud backup, make sure the user knows what 
 
 ### Tradeoffs
 
-By not making users manually backup, you decrease the risk of self-inflicted loss of funds. Cloud backups put less pressure and responsibility on the user.
+By not making users manually backup, you decrease the risk of self-inflicted loss of funds. Automatic cloud backups put less pressure and responsibility on the user.
 
 While this is an easier way for users to set up a wallet, it brings in the potential threat of malicious third-party access. If a user's cloud account is hacked, their funds could be compromised. This can be mitigated by encrypting the wallet recovery data before sending it to the cloud provider. However, the user could still lose access to funds if they forget their cloud login information or the cloud provider blocks their access.
 
-By bringing cloud storage providers into the equation, we assume that users trust their providers. This also raises the question of [decentralization]({{ 'guide/designing-products/principles/#decentralization' | relative_url }}): a guiding principle of the Bitcoin space and could be considered in conflict with the popular saying, “not your keys, not your coins”.
+By bringing cloud storage providers into the equation, we assume that users trust their providers. This also raises the question of [decentralization]({{ 'guide/designing-products/principles/#decentralization' | relative_url }}): a guiding principle of the bitcoin space and could be considered in conflict with the popular saying, “not your keys, not your coins”.
 
 {% include tip/open.html color="red" icon="forbid" label="Don’t: Use for High Value Amounts" %}
 

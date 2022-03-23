@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Bitcoin backups
-description: A beginner's guide to Bitcoin backups.
+description: A beginner's guide to bitcoin backups.
 nav_order: 8
 parent: Private key management
 permalink: /guide/private-key-management/backups/
@@ -34,9 +34,9 @@ https://www.figma.com/community/file/995256542920917246/BDG---Private-key-manage
 
 # Bitcoin backups
 
-The self-custody of Bitcoin is an important right, but also a financial responsibility that can scale from pocket money to life savings, and take practice getting used to.
+The self-custody of bitcoin is an important right, but also a financial responsibility that can scale from pocket money to life savings, and take practice getting used to.
 
-This guide is a straightforward starting point for simple Bitcoin backups, aimed at users of Bitcoin products using the base layer.
+This guide is a straightforward starting point for simple bitcoin backups, aimed at users of bitcoin products using the base layer.
 
 If you are a designer or developer, make sure you offer guidance to your users so they can secure their bitcoin with an appropriate backup.
 
@@ -56,7 +56,7 @@ The main risks that backups need to protect against are:
 
 {% include tip/tip.html %}
 
-Lightning wallets also need to back up the full channel state history to be restored properly. See [Backing up a wallet](/guide/onboarding/backing-up-a-wallet/) in the Onboarding chapter to learn more. The guide on this page is only suitable for base layer wallets. 
+Lightning wallets also need to back up the full channel state history to be restored properly. See [Backing up a wallet](/guide/onboarding/backing-up-a-wallet/) in the Onboarding chapter to learn more. The guide on this page is only suitable for base layer wallets.
 
 {% include tip/close.html %}
 
@@ -261,7 +261,7 @@ For any backup setup, sufficient information and understandable instructions for
 
 Even though it might feel uncomfortable (or unnecessary if you are young and single), it is never too early to document your wallets. If you don’t, there is a very high chance that next-of-kin will not be able to inherit your funds.
 
-At a minimum, document each wallet with a given name (Bob’s Bitcoin wallet 1), how to recover it, when it was created and what application was used to create the wallet. Ideally this document has all the instructions required to recover the wallet, but not the information itself (*recovery-phrase*, *passphrase* etc.), as that might expose you to theft on discovery risks.
+At a minimum, document each wallet with a given name (Bob’s bitcoin wallet 1), how to recover it, when it was created and what application was used to create the wallet. Ideally this document has all the instructions required to recover the wallet, but not the information itself (*recovery-phrase*, *passphrase* etc.), as that might expose you to theft on discovery risks.
 
 **Do**
 - Make next-of-kin aware of the existence of any wallets
@@ -286,4 +286,3 @@ Next, let's look at [payments]({{ '/guide/payments/' | relative_url }}).
    nextUrl = "/guide/payments/"
    nextName = "Payments"
 %}
-

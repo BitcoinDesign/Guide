@@ -69,7 +69,7 @@ Now that you have a clear picture of your use case, target audience and risk vec
 
 If your product supports the **Lightning network** by running a local node, the *automatic cloud backup* scheme is often the best fit. This is due to the need for continuously backing up accurate channel states. It is possible, but more complicated for the user to achieve this with a *manual backup*.
 
-It is not yet possible to use *external signing device* or *multi-key* schemes for Lightning. This is due to the need for the private key(s) to be available to the Lightning node at all times. 
+It is not yet possible to use *external signer* or *multi-key* schemes for Lightning. This is due to the need for the private key(s) to be available to the Lightning node at all times.
 
 {% include tip/close.html %}
 
@@ -109,14 +109,14 @@ Now let's dive in and look at the various schemes that might be suitable for a p
    image = "/assets/images/guide/private-key-management/schemes/personal-schemes.jpg"
    retina = "/assets/images/guide/private-key-management/schemes/personal-schemes@2x.jpg"
    alt-text = ""
-   caption = "Cloud backup, manual backup , signing-device and multi-key."
+   caption = "Automatic cloud backup, manual backup, signing-device and multi-key."
    width = 2012
    height = 400
 %}
 
 - [Automatic cloud backup](/guide/private-key-management/cloud-backup/) - no user action required for backup
 - [Manual backup / Recovery phrase](/guide/private-key-management/manual-backup/) - manual backup of a phrase of words
-- [External signing device](/guide/private-key-management/external-signing-device/) - keys are held on a separate device
+- [External signers](/guide/private-key-management/external-signers/) - keys are held on a separate device
 - [Multi-key](/guide/private-key-management/multi-key/) - several keys jointly control the wallet
 
 ### Shared schemes
@@ -126,6 +126,14 @@ While multi-key setups can be used for personal use, if several people need to s
 The use cases for shared schemes include spouses managing a joint account, groups, organizations or companies managing their funds, as well as inheritance planning. It can also be used for governance of an organization, with transactions used not to transfer funds but to record, or vote, for decisions.
 
 - [Multi-key](/guide/private-key-management/multi-key/) - several keys and several people control the wallet
+
+### Non-recommended schemes
+
+There are also several non-recommended private key schemes not detailed in this guide that are not widely used due to their poor security, lack of interoperability and unnecessary complexity. Below are schemes not recommended to be used in your bitcoin applications and why.
+
+- Key sharding (Shamir's secret sharing): Sometimes referred to as an alternative to multi-key setups, but the security risks are much greater. Its major drawbacks are a single point of failure, no key invalidation, no widely used implementation (though [SLIP-0039](https://github.com/satoshilabs/slips/blob/master/slip-0039.md) does exist), and poor auditability. Read more about the issues with key sharding [here](https://docs.keys.casa/wealth-security-protocol/rejected-key-schemes/key-sharding-shamirs-secret-sharing).
+- DAT files: A legacy form of backing up bitcoin private keys that use the generic .dat file type. These are still used today by [Bitcoin Core](https://bitcoincore.org/) due to [security concerns](https://bitcoin.stackexchange.com/questions/92716/why-keys-generated-in-bitcoin-core-mismatch-that-from-online-generators-despite) with non-hardened key derivation. This form of private key scheme is not widely adopted due to its lack of interoperability among wallets, not being human readable like a recovery phrase, and being potentially insecure if the user does not encrypt the keys contained within the file.
+- 1-of-2 multi-key: This multi-key scheme may prevent users from misplacing a private key but offers no security benefits with added complexity to the scheme. Making multiple redundant copies of a single sig key offers the same benefits around key misplacement without the added complexity. Learn more [here](https://docs.keys.casa/wealth-security-protocol/rejected-key-schemes/1-of-2).
 
 ---
 
