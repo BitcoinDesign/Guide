@@ -8,7 +8,7 @@ permalink: /guide/resources/design-research/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/resources/design-research/user-research-resources-preview.jpg
 redirect_from:
- - /guide/designing-products/user-research/resources
+ - /guide/designing-products/user-research/resources/
 ---
 
 <!--
