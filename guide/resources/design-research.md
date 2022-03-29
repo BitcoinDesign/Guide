@@ -1,36 +1,36 @@
 ---
 layout: guide
-title: User research resources
-description: Surveys, academic papers, articles and other resources on bitcoin user research.
-nav_order: 1
-parent: User research
-grand_parent: Designing bitcoin products
-permalink: /guide/designing-products/user-research/resources
+title: Design research
+description: Bitcoin design related journal articles, independent research, case studies, and blog posts & write-ups.
+nav_order: 2
+parent: Resources
+permalink: /guide/resources/design-research/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/designing-products/user-research-resources/user-research-resources-preview.jpg
+image: https://bitcoin.design/assets/images/guide/resources/design-research/user-research-resources-preview.jpg
+redirect_from:
+ - /guide/designing-products/user-research/resources
 ---
 
 <!--
 
 Editor's notes
 
-This page is a simple collection of user research references.
-A useful future addition would be to add short summaries of each reference.
+Illustration source:
 
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/designing-products/user-research-resources/user-research-resources.jpg"
-   retina = "/assets/images/guide/designing-products/user-research-resources/user-research-resources@2x.jpg"
-   mobile = "/assets/images/guide/designing-products/user-research-resources/user-research-resources-mobile.jpg"
-   mobileRetina = "/assets/images/guide/designing-products/user-research-resources/user-research-resources-mobile@2x.jpg"
+   image = "/assets/images/guide/resources/design-research/user-research-resources.jpg"
+   retina = "/assets/images/guide/resources/design-research/user-research-resources@2x.jpg"
+   mobile = "/assets/images/guide/resources/design-research/user-research-resources-mobile.jpg"
+   mobileRetina = "/assets/images/guide/resources/design-research/user-research-resources-mobile@2x.jpg"
    alt-text = "Printed bitcoin survey results on a desk"
    width = 1600
    height = 600
    layout = "full-width"
 %}
 
-# User research resources
+# Design research
 
 Below is a collection of published user research findings around bitcoin, from academic papers to surveys and blog posts.
 
@@ -207,8 +207,8 @@ A blog post by icons8 that covers the usability issues bitcoin has. The main iss
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/designing-products/user-research/"
-   previousName = "User research"
-   nextUrl = "/guide/designing-products/usage-life-cycle/"
-   nextName = "Usage life cycle"
+   previousUrl = "/guide/resources/design-files/"
+   previousName = "Design files"
+   nextUrl = "/guide/contribute/"
+   nextName = "Contribute to guide"
 %}

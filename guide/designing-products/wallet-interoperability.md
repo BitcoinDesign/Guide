@@ -232,11 +232,11 @@ Your application should support constructing and managing transaction files, als
 
 ---
 
-To kickstart your design work, take a look at [design resources]({{ '/guide/designing-products/design-resources/' | relative_url }}).
+Next, we cover how to onboard new users to a bitcoin daily spending wallet [onboarding]({{ '/guide/onboarding/' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/designing-products/common-user-flows/"
    previousName = "Common user flows"
-   nextUrl = "/guide/designing-products/design-resources/"
-   nextName = "Design resources"
+   nextUrl = "/guide/onboarding/introduction/"
+   nextName = "Onboarding"
 %}

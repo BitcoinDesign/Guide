@@ -118,6 +118,6 @@ The wireframe screens below show the main [onboarding]({{ '/guide/onboarding/int
 {% include next-previous.html
    previousUrl = "/guide/case-studies/upgradeable-wallet/"
    previousName = "Upgradeable wallet"
-   nextUrl = "/guide/contribute/"
-   nextName = "Contribute"
+   nextUrl = "/guide/resources/"
+   nextName = "Resources"
 %}

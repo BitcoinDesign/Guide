@@ -78,8 +78,8 @@ What options to consider if a user has lost their device, had it stolen or delet
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/designing-products/design-resources/"
-   previousName = "Design resources"
+   previousUrl = "/guide/designing-products/wallet-interoperability/"
+   previousName = "Interoperability"
    nextUrl = "/guide/onboarding/first-use/"
    nextName = "First use"
 %}
