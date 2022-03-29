@@ -75,7 +75,7 @@ These contribution guidelines are for the Bitcoin Design Guide project. To get i
 
 {% include next-previous.html
    previousUrl = "/guide/resources/"
-   previousName = "Shared account"
+   previousName = "Resources"
    nextUrl = "/guide/contribute/propose-a-change/"
    nextName = "Proposing a change"
 %}
