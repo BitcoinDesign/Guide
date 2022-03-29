@@ -88,9 +88,9 @@ Get to know the points of interaction and overlap connecting payment links, wall
 
 ---
 
-### [Lightning services]({{ '/guide/designing-products/lightning-services/' | relative_url }})
+### [Lightning service providers]({{ '/guide/designing-products/lightning-service-providers/' | relative_url }})
 
-Lightning services and their role in Bitcoin applications.
+Common user experience problems of the Lightning network that can be resolved by third-party services.
 
 ---
 

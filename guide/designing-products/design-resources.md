@@ -2,13 +2,8 @@
 layout: guide
 title: Design resources
 description: Design files by and for the Bitcoin Design Community
-<<<<<<< HEAD
 nav_order: 11
-parent: Designing Bitcoin products
-=======
-nav_order: 10
 parent: Designing bitcoin products
->>>>>>> upstream/master
 permalink: /guide/designing-products/design-resources/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/designing-products/design-resources/design-resources-preview.jpg
@@ -130,8 +125,8 @@ The right-hand panel has an “Inspect” tab that is a great companion for deve
 That's it for this section. Keep reading to learn about [onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}).
 
 {% include next-previous.html
-   previousUrl = "/guide/designing-products/lightning-services/"
-   previousName = "Lightning services"
+   previousUrl = "/guide/designing-products/lightning-service-providers/"
+   previousName = "Lightning service providers"
    nextUrl = "/guide/onboarding/introduction/"
    nextName = "Onboarding"
 %}

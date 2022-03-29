@@ -237,6 +237,6 @@ Next we will go over additional [Lightning services]({{ '/guide/designing-produc
 {% include next-previous.html
    previousUrl = "/guide/designing-products/common-user-flows/"
    previousName = "Common user flows"
-   nextUrl = "/guide/designing-products/lightning-services/"
-   nextName = "Lightning services"
+   nextUrl = "/guide/designing-products/lightning-service-providers/"
+   nextName = "Lightning service providers"
 %}
