@@ -39,7 +39,7 @@ The goal of LSPs, [as put by Roy Sheinfeld](https://medium.com/breez-technology/
 
 Lightning services are offered by LSPs to solve a particular pain point when using a non-custodial bitcoin lightning wallet.
 
-Lightning services allow the lightning protocol to be flexible at a peer level, whilst staying compliant with the protocol on a network level. Each service comes with unique trade-offs, of which should be clearly communicated to users when used. Services should also be opt-out, and only used when necessary.
+Lightning services allow the lightning protocol to be flexible at a peer level while staying compliant with the protocol on a network level. Each service comes with unique trade-offs, which should be clearly communicated to users when used. Services should also be opt-out and only used when necessary.
 
 Below are some lightning services, the paint points they solve, their trade-offs and the applications that use them.
 
