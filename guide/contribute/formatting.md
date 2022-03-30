@@ -85,7 +85,7 @@ There should be whitespace between paragraphs.
 ```markdown
 > The details are not the details. They make the design.
 >
-> This is a blockquote
+> <cite>By <a href="https://bitcoin.design ">Charles Eames</a></cite
 ```
 
 > The details are not the details. They make the design.
