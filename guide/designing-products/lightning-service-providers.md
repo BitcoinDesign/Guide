@@ -290,7 +290,7 @@ Lightning nodes need to stay online in order to monitor for potential cheating a
 
 A [watchtower](https://bitcoinops.org/en/topics/watchtowers/) service prevents this by monitoring the users node for cheating attempts. If one is detected, a watchtower broadcasts a justice transaction which gives the cheating parties bitcoin to the honest user. Watchtowers sometimes take a small fee for offering this service.
 
-When using a watchtower and a LSP for other services, it's important to have users connect to one that isn't the LSP. This is due to the LSP likely being the only counterparty so having a watchtower with them would not safeguard the users bitcoin.
+When using a watchtower and a LSP for other services, it's important to have users connect to one that isn't the LSP. This is due to the LSP likely being the only counterparty, so having a watchtower with them would not safeguard the users bitcoin.
 
 </div>
 
