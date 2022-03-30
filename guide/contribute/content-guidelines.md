@@ -31,7 +31,7 @@ This guide is crafted for anyone interested in building an effective bitcoin app
 
 ### Apply bitcoin design principles
 
-When creating content for the guide, make sure to apply the [bitcoin design principles](/guide/designing-products/principles/) to what you create. These include self-custody, interoperability, decentralization, security, transparency, inclusion, and privacy.
+When creating content for the guide, make sure to apply the [bitcoin design principles](/guide/getting-started/principles/) to what you create. These include self-custody, interoperability, decentralization, security, transparency, inclusion, and privacy.
 
 ### Speak to the reader
 

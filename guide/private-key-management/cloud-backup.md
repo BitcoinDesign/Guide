@@ -39,7 +39,7 @@ By using an automatic cloud backup for the private key the user is NOT required 
 
 This scheme can be a good fit for wallets meant for storing smaller amounts of bitcoin, such as a Lightning wallet that is used for daily spending. A daily spending wallet might also be referred to as a [*hot wallet*]({{'/guide/glossary/wallet/#hot--cold-wallet' | relative_url}}), where the convenience of accessing funds is more important than maximum security.
 
-These types of wallets may be good for novices who would find manually backing up a recovery phrase during onboarding confusing, possibly leading to unsafe backups. It could also be a starting point for a [progressive security model]({{'/guide/designing-products/principles/#security' | relative_url}}) that lets customers upgrade when they start accumulating more funds.
+These types of wallets may be good for novices who would find manually backing up a recovery phrase during onboarding confusing, possibly leading to unsafe backups. It could also be a starting point for a [progressive security model]({{'/guide/getting-started/principles/#security' | relative_url}}) that lets customers upgrade when they start accumulating more funds.
 
 The automatic cloud backup scheme gives users reasonable security against theft, while providing low risk for self-inflicted losses.
 

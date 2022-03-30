@@ -37,7 +37,7 @@ A channel state backup is typically a file which includes information about the 
 
 {% include tip/open.html color="red" icon="forbid" label="Manual channel state backups are for advanced users" %}
 
-Manual backups of Lightning channel state should only be performed with careful consideration. This is because the channel state backup may become outdated very quickly, and attempting to restore from an outdated backup could harm the user's funds. In the interest of adhering to the principles of [self-custody]({{ '/guide/designing-products/principles/#self-custody' | relative_url }}) and [transparency]({{ '/guide/designing-products/principles/#transparency' | relative_url }}), you may choose to allow your user to perform a manual channel state backup. However, this is not recommended for the majority of users. If this option is available, keep it tucked away in a settings menu and prepend a warning that the option is only for advanced users.
+Manual backups of Lightning channel state should only be performed with careful consideration. This is because the channel state backup may become outdated very quickly, and attempting to restore from an outdated backup could harm the user's funds. In the interest of adhering to the principles of [self-custody]({{ '/guide/getting-started/principles/#self-custody' | relative_url }}) and [transparency]({{ '/guide/getting-started/principles/#transparency' | relative_url }}), you may choose to allow your user to perform a manual channel state backup. However, this is not recommended for the majority of users. If this option is available, keep it tucked away in a settings menu and prepend a warning that the option is only for advanced users.
 
 {% include tip/close.html %}
 

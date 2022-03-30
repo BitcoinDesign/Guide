@@ -47,13 +47,13 @@ We designed this guide to help anyone navigate those complexities—regardless o
 
 ### [Getting started]({{ '/guide/getting-started/introduction/' | relative_url }})
 
-Provides top-level overviews of common visual language, technology, software, and hardware.
+Provides top-level overviews of open design, common visual language, technology, software, and hardware.
 
 ---
 
 ### [Designing bitcoin products]({{ '/guide/designing-products/introduction/' | relative_url }})
 
-A close look at the design process, from the concept of open design to use cases and frameworks like the usage life cycle.
+A close look at the design process, from conducting user research to use cases and frameworks like the usage life cycle.
 
 ---
 

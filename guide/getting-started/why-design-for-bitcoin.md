@@ -2,11 +2,12 @@
 layout: guide
 title: Why design for bitcoin
 description: Be on the cutting-edge of technology and open-design by working in the bitcoin ecosystem.
-nav_order: 1
-parent: Designing bitcoin products
-permalink: /guide/designing-products/why-design-for-bitcoin/
+nav_order: 2
+parent: Getting started
+permalink: /guide/getting-started/why-design-for-bitcoin/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/designing-products/why-design-for-bitcoin/why-design-for-bitcoin-preview.jpg
+image: https://bitcoin.design/assets/images/guide/getting-started/why-design-for-bitcoin/why-design-for-bitcoin-preview.jpg
+redirect_from: /guide/designing-products/why-design-for-bitcoin/
 ---
 
 <!--
@@ -25,10 +26,10 @@ Illustration sources
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/designing-products/why-design-for-bitcoin/why-design-for-bitcoin.jpg"
-   retina = "/assets/images/guide/designing-products/why-design-for-bitcoin/why-design-for-bitcoin@2x.jpg"
-   mobile = "/assets/images/guide/designing-products/why-design-for-bitcoin/why-design-for-bitcoin-mobile.jpg"
-   mobileRetina = "/assets/images/guide/designing-products/why-design-for-bitcoin/why-design-for-bitcoin-mobile@2x.jpg"
+   image = "/assets/images/guide/getting-started/why-design-for-bitcoin/why-design-for-bitcoin.jpg"
+   retina = "/assets/images/guide/getting-started/why-design-for-bitcoin/why-design-for-bitcoin@2x.jpg"
+   mobile = "/assets/images/guide/getting-started/why-design-for-bitcoin/why-design-for-bitcoin-mobile.jpg"
+   mobileRetina = "/assets/images/guide/getting-started/why-design-for-bitcoin/why-design-for-bitcoin-mobile@2x.jpg"
    alt-text = "A white bitcoin symbol with paint drawn on the right half"
    caption = 'Paint texture by [Geordanna Cordero](https://unsplash.com/@geordannatheartist){:target="_blank" rel="nofollow"} on [Unsplash](https://unsplash.com){:target="_blank" rel="nofollow"}'
    width = 1600
@@ -50,7 +51,7 @@ Bitcoin is permissionless; this means that there are no individual, corporate, o
 
 ## Blaze trails one pixel at a time
 
-Few [open designers]({{ '/guide/designing-products/open-design/' | relative_url }}) currently work full-time on bitcoin. Most have 9–5 jobs, and like most of bitcoin’s open-source developers, contribute when they can. As the ecosystem grows, more opportunities to be among the first full-time bitcoin designers are bound to open up.
+Few [open designers]({{ '/guide/getting-started/open-design/' | relative_url }}) currently work full-time on bitcoin. Most have 9–5 jobs, and like most of bitcoin’s open-source developers, contribute when they can. As the ecosystem grows, more opportunities to be among the first full-time bitcoin designers are bound to open up.
 
 So if you’re looking for the next big thing in design, you found it.
 
@@ -60,7 +61,7 @@ Many design projects start by identifying an unmet need, and then design somethi
 
 ## Work in public
 
-Bitcoin development is open-source. Designing for bitcoin is no different. It lets you learn, grow, and exchange ideas in the same open and collaborative way. Learn more about the [open design]({{ '/guide/designing-products/open-design/' | relative_url }}) philosophy.
+Bitcoin development is open-source. Designing for bitcoin is no different. It lets you learn, grow, and exchange ideas in the same open and collaborative way. Learn more about the [open design]({{ '/guide/getting-started/open-design/' | relative_url }}) philosophy.
 
 ## Design money
 
@@ -72,11 +73,11 @@ Design and build experiences with friends and strangers. [Participate]({{ '/cont
 
 ---
 
-Dive deeper into what [open design]({{ '/guide/designing-products/open-design/' | relative_url }}) means.
+Dive deeper into what [open design]({{ '/guide/getting-started/open-design/' | relative_url }}) means.
 
 {% include next-previous.html
-   previousUrl = "/guide/designing-products/introduction/"
-   previousName = "Designing bitcoin products"
-   nextUrl = "/guide/designing-products/open-design/"
+   previousUrl = "/guide/getting-started/why-bitcoin-is-unique/"
+   previousName = "Why bitcoin is unique"
+   nextUrl = "/guide/getting-started/open-design/"
    nextName = "Open design"
 %}

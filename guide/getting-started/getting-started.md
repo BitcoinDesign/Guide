@@ -45,6 +45,18 @@ The internet has opened an infinite design space for information and communicati
 
 ---
 
+### [Why design for bitcoin]({{ '/guide/getting-started/why-design-for-bitcoin/' | relative_url }})
+
+Bitcoin is fundamentally open and participatory and allows designers and creators to explore and shape experiences for users around the globe.
+
+---
+
+### [Open design]({{ '/guide/getting-started/open-design/' | relative_url }})
+
+Open design is about global collaboration that balances the free exchange of design information, the independence of individual designers and the collective power of collaboration.
+
+---
+
 ### [The visual language of bitcoin]({{ '/guide/getting-started/visual-language/' | relative_url }})
 
 As an open and public protocol, bitcoin does not have a strictly defined brand. Yet there is a recognizable symbol that has evolved and remixed endlessly.
@@ -57,6 +69,11 @@ Learn the basics behind the technologies that make bitcoin work, from what a bit
 
 ---
 
+### [Bitcoin design principles]({{ '/guide/getting-started/principles/' | relative_url }})
+
+Core bitcoin design principles recommended by the Bitcoin Design Community.
+
+---
 ### [Software overview]({{ '/guide/getting-started/software/' | relative_url }})
 
 Bitcoin applications roughly fall into a defined set of categories, from consumer-friendly wallets, to merchant tools, and more.

@@ -2,7 +2,7 @@
 layout: guide
 title: Technology primer
 description: Learn the basics of bitcoin technology in a series of simple explanations.
-nav_order: 10
+nav_order: 5
 parent: Getting started
 permalink: /guide/getting-started/technology-primer/
 main_classes: -no-top-padding
@@ -316,6 +316,6 @@ Take a look at how these technologies are implemented in the various types of [b
 {% include next-previous.html
    previousUrl = "/guide/getting-started/visual-language/"
    previousName = "Visual language"
-   nextUrl = "/guide/getting-started/software/"
-   nextName = "Software overview"
+   nextUrl = "/guide/getting-started/principles/"
+   nextName = "Design principles"
 %}

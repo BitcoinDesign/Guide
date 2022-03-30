@@ -155,7 +155,7 @@ Links to:
 
 ### Open source and open design
 
-While there are plenty of private companies that build on bitcoin, this guide focuses on open-source. In open-source, collaboration is based on communal efforts that mostly happen in public. Find out more on our dedicated page on [open design]({{ '/guide/designing-products/open-design/' | relative_url }}).
+While there are plenty of private companies that build on bitcoin, this guide focuses on open-source. In open-source, collaboration is based on communal efforts that mostly happen in public. Find out more on our dedicated page on [open design]({{ '/guide/getting-started/open-design/' | relative_url }}).
 
 <!--
 
@@ -206,7 +206,7 @@ Links to:
 Frameworks are helpful tools to organize user behavior. Our next section introduces one with a focus on the [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/' | relative_url }}).
 
 {% include next-previous.html
-   previousUrl = "/guide/designing-products/principles/"
+   previousUrl = "/guide/getting-started/principles/"
    previousName = "Design principles"
    nextUrl = "/guide/designing-products/usage-life-cycle/"
    nextName = "Usage life cycle"

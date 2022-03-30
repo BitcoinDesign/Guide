@@ -99,7 +99,7 @@ A potential user is interested in your product. Maybe they have heard about it b
 - “Can I get out if something goes wrong?”
 - “What can I lose?”
 
-These are questions they might have, and if they can be answered positively, might propel them to take the next step. This is especially important for [self-custodial]({{ '/guide/designing-products/principles/#self-custody' | relative_url }}) products, in which the user assumes full responsibility and needs extra assurance that they are in good hands.
+These are questions they might have, and if they can be answered positively, might propel them to take the next step. This is especially important for [self-custodial]({{ '/guide/getting-started/principles/#self-custody' | relative_url }}) products, in which the user assumes full responsibility and needs extra assurance that they are in good hands.
 
 </div>
 

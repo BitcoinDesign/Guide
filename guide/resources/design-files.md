@@ -64,7 +64,7 @@ This page is about design source files the community maintains for the site, gui
 
 # Design source files
 
-In the spirit of [open design]({{ '/guide/designing-products/open-design/' | relative_url }}), the community maintains several design files for this guide and related projects. You can duplicate, use and modify them as you like.
+In the spirit of [open design]({{ '/guide/getting-started/open-design/' | relative_url }}), the community maintains several design files for this guide and related projects. You can duplicate, use and modify them as you like.
 
 There is no design tool yet that provides a public, open, and communal collaboration platform. At the moment, many of us use [Figma](https://www.figma.com/), as it comes closest, with [Penpot](https://penpot.app/) being the best open-source alternative. You can also use other design tools and workflows of your choice.
 

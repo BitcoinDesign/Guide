@@ -2,11 +2,12 @@
 layout: guide
 title: Open design
 description: What it means to participate in open design in the bitcoin ecosystem.
-nav_order: 2
-parent: Designing bitcoin products
-permalink: /guide/designing-products/open-design/
+nav_order: 3
+parent: Getting started
+permalink: /guide/getting-started/open-design/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/designing-products/open-design/open-design-preview.jpg
+image: https://bitcoin.design/assets/images/guide/getting-started/open-design/open-design-preview.jpg
+redirect_from: /guide/designing-products/open-design/
 ---
 
 <!--
@@ -39,10 +40,10 @@ Illustration sources
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/designing-products/open-design/open-design.jpg"
-   retina = "/assets/images/guide/designing-products/open-design/open-design@2x.jpg"
-   mobile = "/assets/images/guide/designing-products/open-design/open-design-mobile.jpg"
-   mobileRetina = "/assets/images/guide/designing-products/open-design/open-design-mobile@2x.jpg"
+   image = "/assets/images/guide/getting-started/open-design/open-design.jpg"
+   retina = "/assets/images/guide/getting-started/open-design/open-design@2x.jpg"
+   mobile = "/assets/images/guide/getting-started/open-design/open-design-mobile.jpg"
+   mobileRetina = "/assets/images/guide/getting-started/open-design/open-design-mobile@2x.jpg"
    alt-text = "Diverse people lingering and conversing in an open space"
    caption = 'Character designs by [Open Peeps](https://www.openpeeps.com/){:target="_blank" rel="nofollow"}'
    width = 1600
@@ -82,7 +83,7 @@ We could argue bitcoin needs open design to stay true to its mission.
 
 Thousands of projects have borrowed ideas, techniques, and code from bitcoin. Countless open-source experiments have arisen. To a designer, bitcoin is a robust foundation for collaboration. A foundation that comes with a responsibility toward the benefit of society.
 
-This ethical responsibility encompasses application design. Most people interact with applications instead of the underlying bitcoin technical protocol. If someone controls access to an application, it won't matter if the protocol is open. It is up to the global community to build [principled bitcoin applications](/guide/designing-products/principles/)
+This ethical responsibility encompasses application design. Most people interact with applications instead of the underlying bitcoin technical protocol. If someone controls access to an application, it won't matter if the protocol is open. It is up to the global community to build [principled bitcoin applications](/guide/getting-started/principles/)
 
 Bitcoin is a protocol created to give access to anyone. Access and accessibility go hand in hand. Designing bitcoin products means working on removing barriers of entry. It means making decisions to create a unique
 balance of features for ease of use.
@@ -163,11 +164,11 @@ This Bitcoin Design Guide uses three licenses ([MIT license]({{site.github_repos
 
 ---
 
-Wondering where to start? Check out the next section about [design principles]({{ '/guide/designing-products/principles/' | relative_url }}).
+Wondering where to start? Check out the next section about [design principles]({{ '/guide/getting-started/principles/' | relative_url }}).
 
 {% include next-previous.html
-   previousUrl = "/guide/designing-products/why-design-for-bitcoin/"
+   previousUrl = "/guide/getting-started/why-design-for-bitcoin/"
    previousName = "Why design for bitcoin"
-   nextUrl = "/guide/designing-products/principles/"
-   nextName = "Design principles"
+   nextUrl = "/guide/getting-started/visual-language/"
+   nextName = "Visual language"
 %}
