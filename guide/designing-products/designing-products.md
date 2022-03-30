@@ -88,12 +88,6 @@ Get to know the points of interaction and overlap connecting payment links, wall
 
 ---
 
-### [Design resources]({{ '/guide/designing-products/design-resources/' | relative_url }})
-
-Shared design source files and a suggested process for collaborating on creative work.
-
----
-
 {% include next-previous.html
    previousUrl = "/guide/getting-started/hardware/"
    previousName = "Hardware overview"

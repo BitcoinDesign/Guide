@@ -1,53 +1,55 @@
 ---
 layout: guide
-title: Design resources
-description: Design files by and for the Bitcoin Design Community
-nav_order: 10
-parent: Designing bitcoin products
-permalink: /guide/designing-products/design-resources/
+title: Design files
+description: Design files by, and for the Bitcoin Design Community.
+nav_order: 1
+parent: Resources
+permalink: /guide/resources/design-files/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/designing-products/design-resources/design-resources-preview.jpg
+image: https://bitcoin.design/assets/images/guide/resources/design-files/design-resources-preview.jpg
+redirect_from:
+ - /guide/designing-products/design-resources/
 files:
   - caption: <a href="https://www.bitcoinuikit.com/">Bitcoin UI Kit</a>
     alt: Home images of several mobile bitcoin apps
-    image: /assets/images/guide/designing-products/design-resources/bitcoin-ui-kit.jpg
-    retina: /assets/images/guide/designing-products/design-resources/bitcoin-ui-kit@2x.jpg
+    image: /assets/images/guide/resources/design-files/bitcoin-ui-kit.jpg
+    retina: /assets/images/guide/resources/design-files/bitcoin-ui-kit@2x.jpg
     width: 400
     height: 210
   - caption: <a href="https://bitcoinicons.com/">Bitcoin icons</a>
     alt: A grid of diverse interface icons
-    image: /assets/images/guide/designing-products/design-resources/bitcoin-icons.jpg
-    retina: /assets/images/guide/designing-products/design-resources/bitcoin-icons@2x.jpg
+    image: /assets/images/guide/resources/design-files/bitcoin-icons.jpg
+    retina: /assets/images/guide/resources/design-files/bitcoin-icons@2x.jpg
     width: 400
     height: 210
   - caption: <a href="https://www.figma.com/community/file/972290772932533325/Art-Meets-Bitcoin">Art meets bitcoin</a>
     alt: Collage of bitcoin related illustration elements
-    image: /assets/images/guide/designing-products/design-resources/art-meets-bitcoin.jpg
-    retina: /assets/images/guide/designing-products/design-resources/art-meets-bitcoin@2x.jpg
+    image: /assets/images/guide/resources/design-files/art-meets-bitcoin.jpg
+    retina: /assets/images/guide/resources/design-files/art-meets-bitcoin@2x.jpg
     width: 400
     height: 210
   - caption: <a href="https://www.figma.com/community/file/946807598525782935/Bitcoin-hardware-%26-accessories">Hardware illustrations</a>
     alt: Collction of bitcoin hardware outline illustrations
-    image: /assets/images/guide/designing-products/design-resources/bitcoin-hardware-illustrations.jpg
-    retina: /assets/images/guide/designing-products/design-resources/bitcoin-hardware-illustrations@2x.jpg
+    image: /assets/images/guide/resources/design-files/bitcoin-hardware-illustrations.jpg
+    retina: /assets/images/guide/resources/design-files/bitcoin-hardware-illustrations@2x.jpg
     width: 400
     height: 210
   - caption: <a href="https://www.figma.com/community/file/862622015964353400/Bitcoin-Designers-site">bitcoin.design website</a>
     alt: Landing page of the bitcoin.design website
-    image: /assets/images/guide/designing-products/design-resources/bitcoin-design-site.jpg
-    retina: /assets/images/guide/designing-products/design-resources/bitcoin-design-site@2x.jpg
+    image: /assets/images/guide/resources/design-files/bitcoin-design-site.jpg
+    retina: /assets/images/guide/resources/design-files/bitcoin-design-site@2x.jpg
     width: 400
     height: 210
   - caption: <a href="https://www.figma.com/community/file/972067335916375043/Bitcoin-Design-Slide-Template">Slide template</a>
     alt: Slide template cover screen
-    image: /assets/images/guide/designing-products/design-resources/slide-template.jpg
-    retina: /assets/images/guide/designing-products/design-resources/slide-template@2x.jpg
+    image: /assets/images/guide/resources/design-files/slide-template.jpg
+    retina: /assets/images/guide/resources/design-files/slide-template@2x.jpg
     width: 400
     height: 210
-  - caption: <a href="https://www.figma.com/community/file/1040606190770628557/Bitcoin-Design-Community-seal">Bitcoin Design Community seal</a><br/><a href="/assets/images/guide/designing-products/design-resources/bitcoin-design-community.zip" download>Download images</a>
+  - caption: <a href="https://www.figma.com/community/file/1040606190770628557/Bitcoin-Design-Community-seal">Bitcoin Design Community seal</a><br/><a href="/assets/images/guide/resources/design-files/bitcoin-design-community.zip" download>Download images</a>
     alt: Bitcoin Design Community seal
-    image: /assets/images/guide/designing-products/design-resources/bitcoin-design-community-seal.jpg
-    retina: /assets/images/guide/designing-products/design-resources/bitcoin-design-community-seal@2x.jpg
+    image: /assets/images/guide/resources/design-files/bitcoin-design-community-seal.jpg
+    retina: /assets/images/guide/resources/design-files/bitcoin-design-community-seal@2x.jpg
     width: 400
     height: 210
 ---
@@ -60,7 +62,7 @@ This page is about design source files the community maintains for the site, gui
 
 -->
 
-# Collaboration on design source files
+# Design source files
 
 In the spirit of [open design]({{ '/guide/designing-products/open-design/' | relative_url }}), the community maintains several design files for this guide and related projects. You can duplicate, use and modify them as you like.
 
@@ -100,33 +102,33 @@ During this process, it is always good to be in communication with the file owne
 
 Figma has several useful collaboration features. They do not force a specific workflow, so it may not always be clear what the best way is to work together. Here are some tips:
 
-**Sharing**
+### Sharing
 
 Sharing is one of the most powerful features of Figma, as it works on all platforms and in the browser, and does not require accounts for viewing design files.
 
-**Comments**
+### Comments
 
 Commenting is great for asynchronous workflows across time zones and work hours. Once resolved, comments disappear. So discussions that should be archived need to be handled elsewhere (on Github most likely).
 
-**Embedding**
+### Embedding
 
 Figma files can be embedded on websites to allow for live previews and interaction with the design and prototypes. Github does not support embedding due to privacy reasons.
 
-**Prototypes**
+### Prototypes
 
 Sequences of interactive screens can often be more effectively evaluated through prototypes, as they provide a more realistic experience.
 
-**Inspecting**
+### Inspecting
 
 The right-hand panel has an “Inspect” tab that is a great companion for development. Clicking any element will reveal layout and style information under this tab. More on [Figma for developers](https://www.figma.com/best-practices/tips-on-developer-handoff/an-overview-of-figma-for-developers/).
 
 ---
 
-That's it for this section. Keep reading to learn about [onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}).
+Next, view our [design research]({{ '/guide/resources/design-research' | relative_url }}) resources.
 
 {% include next-previous.html
-   previousUrl = "/guide/designing-products/wallet-interoperability/"
-   previousName = "Wallet interoperability"
-   nextUrl = "/guide/onboarding/introduction/"
-   nextName = "Onboarding"
+   previousUrl = "/guide/resources/"
+   previousName = "Resources"
+   nextUrl = "/guide/resources/design-research/"
+   nextName = "Design research"
 %}
