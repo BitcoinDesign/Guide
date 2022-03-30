@@ -152,7 +152,7 @@ Dual funding is only applicable when funding a wallet with on-chain bitcoin, the
 
 When a channel is opened, the bitcoin can not be spent until the on-chain channel open transaction is confirmed. If the mempool is congested, this wait could take a long time.
 
-A channel open service using spend-unconfirmed, sometimes called turbo channels, allows users to spend their bitcoin instantly without having to wait for the channel transaction to confirm.
+A channel open service using spend-unconfirmed, sometimes called turbo channels or zero-confirmation channels allows users to spend their bitcoin instantly without having to wait for the channel transaction to confirm.
 
 A spend-unconfirmed channel is trusted until the transaction is confirmed. Users should have the option to disable these type of channel opens if they are used. Some LSPs may batch their channel opens meaning a users channel will be trusted until this is done.
 
