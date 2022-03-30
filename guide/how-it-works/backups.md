@@ -102,7 +102,7 @@ By storing the recovery-phrase in an online location that is encrypted (not in p
 
 **Do**
 - Use an encrypted password manager like 1Password, LastPass, iCloud Keychain
-- Alternatively, use a wallet application with [automatic cloud backup]({{ '/guide/private-key-management/cloud-backup/' | relative_url }})
+- Alternatively, use a wallet application with [automatic cloud backup]({{ '/guide/how-it-works/private-key-management/cloud-backup/' | relative_url }})
 
 **Don’t**
 - Screenshot the recovery-phrase and save it in Google Photos, iCloud photos
@@ -278,11 +278,11 @@ At a minimum, document each wallet with a given name (Bob’s bitcoin wallet 1),
 
 ---
 
-Next, let's look at [payments]({{ '/guide/payments/' | relative_url }}).
+Next, let's look at how [coin selection]({{ '/guide/how-it-works/coin-selection/' | relative_url }}) works.
 
 {% include next-previous.html
-   previousUrl = "/guide/private-key-management/multi-key/"
-   previousName = "Multi-key"
-   nextUrl = "/guide/payments/"
-   nextName = "Payments"
+   previousUrl = "/guide/how-it-works/"
+   previousName = "How it works"
+   nextUrl = "/guide/how-it-works/coin-selection/"
+   nextName = "Coin selection"
 %}

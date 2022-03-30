@@ -49,7 +49,7 @@ The wallet application will generate a 12 or 24 word [recovery phrase]({{ '/guid
 
 This can be an effective way to reduce the risk of loss from theft if the backup is offline in a safe place, but puts more of the burden on the individual user. The security and risk will only be as good as how they backup the recovery phrase.
 
-Safe backups can be made fairly simple. Take a look at our [bitcoin backups]({{ '/guide/private-key-management/backups/' | relative_url }}) guide as a good starting point.
+Safe backups can be made fairly simple. Take a look at our [bitcoin backups]({{ '/guide/how-it-works/backups/' | relative_url }}) guide as a good starting point.
 
 {% include fact/pros.html %}
 
@@ -93,11 +93,11 @@ Most bitcoin wallets, including:
 
 ---
 
-Next, let's look at [external signers]({{ '/guide/private-key-management/external-signers/' | relative_url }}).
+Next, let's look at [external signers]({{ '/guide/how-it-works/private-key-management/external-signers/' | relative_url }}).
 
 {% include next-previous.html
-   previousUrl = "/guide/private-key-management/cloud-backup/"
+   previousUrl = "/guide/how-it-works/private-key-management/cloud-backup/"
    previousName = "Automatic cloud backup"
-   nextUrl = "/guide/private-key-management/external-signers/"
+   nextUrl = "/guide/how-it-works/private-key-management/external-signers/"
    nextName = "External signers"
 %}

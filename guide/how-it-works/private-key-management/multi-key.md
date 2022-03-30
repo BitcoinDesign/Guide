@@ -108,11 +108,11 @@ A software wallet application or coordination software initiates a multi-sig wal
 
 ---
 
-OK, to end this chapter let's have a look at how to do safe [bitcoin backups]({{ '/guide/private-key-management/backups/' | relative_url }}).
+Next, we do a technical deep dive into how [transactions]({{ '/guide/how-it-works/transactions/' | relative_url }}) on bitcoin work.
 
 {% include next-previous.html
-   previousUrl = "/guide/private-key-management/external-signers/"
-   previousName = "External signing devices"
-   nextUrl = "/guide/private-key-management/backups/"
-   nextName = "Bitcoin backups"
+   previousUrl = "/guide/how-it-works/private-key-management/external-signers/"
+   previousName = "External signers"
+   nextUrl = "/guide/how-it-works/transactions/"
+   nextName = "Transactions"
 %}

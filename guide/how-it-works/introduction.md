@@ -20,45 +20,45 @@ This section provides practical explorations of common user experiences with wir
 
 ---
 
-### [Bitcoin backups]({{ '/guide/how-it-works/cloud-backup/' | relative_url }})
+### [Bitcoin backups]({{ '/guide/how-it-works/backups/' | relative_url }})
 
-Explores a simple mobile wallet design that relies on automated cloud backup to store private keys. A common use case for this technique are wallets for daily spending on-the-go.
-
----
-
-### [Coin selection]({{ '/guide/how-it-works/savings-account/' | relative_url }})
-
-A mobile wallet based on 2 of 3 multi-key setup that balances both low-friction daily spending and stricter security practices for medium amounts.
+A straightforward guide to safe manual backups.
 
 ---
 
-### [Nodes]({{ '/guide/how-it-works/upgradeable-wallet/' | relative_url }})
+### [Coin selection]({{ '/guide/how-it-works/coin-selection/' | relative_url }})
 
-A mobile experience that starts users off with a simple cloud backup solution and allows them to progressively upgrade the security model as their needs change.
-
----
-
-### [Payment request formats]({{ '/guide/how-it-works/shared-account/' | relative_url }})
-
-An onboarding experience for a mobile wallet shared by a couple who want to access and manage funds together.
+Learn how coin selection is used to choose which UTXOs (or “coins”) to use as inputs when making an on-chain bitcoin payment.
 
 ---
 
-### [Private key management]({{ '/guide/how-it-works/upgradeable-wallet/' | relative_url }})
+### [Nodes]({{ '/guide/how-it-works/nodes/' | relative_url }})
 
-A mobile experience that starts users off with a simple cloud backup solution and allows them to progressively upgrade the security model as their needs change.
+Learn about how nodes help keep bitcoin decentralized and enforce its rules.
 
 ---
 
-### [Transactions]({{ '/guide/how-it-works/shared-account/' | relative_url }})
+### [Payment request formats]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }})
 
-An onboarding experience for a mobile wallet shared by a couple who want to access and manage funds together.
+Learn about the different types of payment request formats, arom a standard on-chain address to a Lightning address, that exist in bitcoin.
+
+---
+
+### [Private key management]({{ '/guide/how-it-works/private-key-management/introduction/' | relative_url }})
+
+Learn about the different schemes used to control and manage bitcoin private keys.
+
+---
+
+### [Transactions]({{ '/guide/how-it-works/transactions/' | relative_url }})
+
+An overview of bitcoin payments, common concepts, and the transaction lifecycle.
 
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/payments/units-and-symbols/"
-   previousName = "Units & Symbols"
-   nextUrl = "/guide/case-studies/cloud-backup/"
-   nextName = "Daily spending"
+   previousUrl = "/guide/case-studies/shared-account/"
+   previousName = "Shared account"
+   nextUrl = "/guide/how-it-works/backups/"
+   nextName = "Bitcoin backups"
 %}

@@ -1,10 +1,10 @@
 ---
 layout: guide
-title: Node
+title: Nodes
 description: A node refers to a bitcoin client that participates in the bitcoin network.
 parent: How it works
 nav_order: 3
-permalink: /guide/how-it-works/node/
+permalink: /guide/how-it-works/nodes/
 redirect_from:
  - /guide/glossary/node/
 main_classes: -no-top-padding
@@ -22,7 +22,7 @@ image: https://bitcoin.design/assets/images/guide/how-it-works/node/node-preview
    layout = "full-width"
 %}
 
-# Node
+# Nodes
 
 A node refers to software that participates in the bitcoin network. Any bitcoin application that wants to show and send transaction data needs a way to connect to a node.
 
@@ -220,3 +220,14 @@ For more information:
    - [GitHub Neutrino repo](https://github.com/lightninglabs/neutrino)
 
 </div>
+
+---
+
+Next, let's learn about the different bitcoin [payment request formats]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }}) that exist.
+
+{% include next-previous.html
+   previousUrl = "/guide/how-it-works/coin-selection/"
+   previousName = "Coin selection"
+   nextUrl = "/guide/how-it-works/payment-request-formats/"
+   nextName = "Payment request formats"
+%}

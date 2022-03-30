@@ -75,12 +75,6 @@ A wallet that is managed by multiple independent keys of which at least one is s
 
 ---
 
-### [Bitcoin backups]({{ '/guide/how-it-works/private-key-management/backups/' | relative_url }})
-
-A straightforward guide to safe manual backups.
-
----
-
 {% include next-previous.html
    previousUrl = "/guide/onboarding/restoring-a-wallet/"
    previousName = "Restoring a wallet"

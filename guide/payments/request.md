@@ -463,11 +463,11 @@ For in-person payments, showing the confirmation screen to the sender will likel
 
 ---
 
-Next, we go over the different [payment request formats](/guide/payments/request/payment-request-formats/) available in bitcoin.
+Next, we go over the design considerations for [sending]({{ "/guide/payments/send/" | relative_url }}) bitcoin.
 
 {% include next-previous.html
    previousUrl = "/guide/payments"
    previousName = "Payments"
-   nextUrl = "/guide/payments/request/payment-request-formats"
-   nextName = "Payment request formats"
+   nextUrl = "/guide/payments/send/"
+   nextName = "Sending bitcoin"
 %}

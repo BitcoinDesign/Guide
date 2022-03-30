@@ -185,11 +185,11 @@ Blocks are also limited in size and new ones are created every 10 minutes on ave
 
 ---
 
-The next section explores common product designs via [case studies]({{ '/guide/case-studies/' | relative_url }}).
+Next, view our [resources]({{ '/guide/resources/' | relative_url }}) that can help you build better bitcoin products.
 
 {% include next-previous.html
-   previousUrl = "/guide/payments/units-and-symbols"
-   previousName = "Units & Symbols"
-   nextUrl = "/guide/case-studies"
-   nextName = "Case studies"
+   previousUrl = "/guide/how-it-works/private-key-management/multi-key/"
+   previousName = "Multi-key"
+   nextUrl = "/guide/resources/"
+   nextName = "Resources"
 %}

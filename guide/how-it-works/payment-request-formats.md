@@ -37,7 +37,7 @@ Lightning invoices are the basic payment mechanism on the Lightning network. The
 
 {% include tip/open.html color="red" icon="forbid" label="Lightning invoices are not addresses" %}
 
-It could be tempting to refer to a Lightning invoice as a “lightning address.” Doing so could be confused with the [lightning address]({{'/guide/how-it-works/node/#lightning-addresses' | relative_url}}) protocol described below. Therefore, avoid calling an invoice an address. A “payment request” would be a better synonym for “invoice.”
+It could be tempting to refer to a Lightning invoice as a “lightning address.” Doing so could be confused with the [lightning address]({{'/guide/how-it-works/payment-request-formats/#lightning-addresses' | relative_url}}) protocol described below. Therefore, avoid calling an invoice an address. A “payment request” would be a better synonym for “invoice.”
 
 {% include tip/close.html %}
 
@@ -135,11 +135,11 @@ Each request format has its own unique approach to bundle payment information fo
 
 ---
 
-Next, we will look at how a [sender](/guide/payments/send) pays these payment requests.
+Next, we will learn about the different [private key schemes]({{ '/guide/how-it-works/private-key-management/introduction/' | relative_url }}) used to secure your bitcoin.
 
 {% include next-previous.html
-   previousUrl = "/guide/payments/request/"
-   previousName = "Requesting bitcoin"
-   nextUrl = "/guide/payments/send"
-   nextName = "Sending bitcoin"
+   previousUrl = "/guide/how-it-works/nodes/"
+   previousName = "Nodes"
+   nextUrl = "/guide/how-it-works/private-key-management/introduction/"
+   nextName = "Private key management"
 %}

@@ -198,7 +198,7 @@ The recovery flow guides the user through restoring their wallet on a new device
 - [Figma design file](https://www.figma.com/file/dXSeWwzKoVvS0Xm9VT9HuJ/Daily-Spending-Case-Study---Bitcoin-Design-Guide?node-id=43%3A2797)
 - [Use case]({{ '/guide/designing-products/personal-finance/#day-to-day-spending' | relative_url }})
 - [Private key scheme]({{ '/guide/private-key-management/cloud-backup/' | relative_url }})
-- [Backup guidance for users]({{ '/guide/private-key-management/backups/#encrypted-cloud-backup' | relative_url }})
+- [Backup guidance for users]({{ '/guide/how-it-works/backups/#encrypted-cloud-backup' | relative_url }})
 
 ---
 

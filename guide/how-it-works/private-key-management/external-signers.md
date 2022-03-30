@@ -105,11 +105,11 @@ Lightning signers are an experimental type of external signers interacting with 
 
 ---
 
-Next, let's look at [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}).
+Next, let's look at [multi-key]({{ '/guide/how-it-works/private-key-management/multi-key/' | relative_url }}).
 
 {% include next-previous.html
-   previousUrl = "/guide/private-key-management/manual-backup/"
+   previousUrl = "/guide/how-it-works/private-key-management/manual-backup/"
    previousName = "Manual backups"
-   nextUrl = "/guide/private-key-management/multi-key/"
+   nextUrl = "/guide/how-it-works/private-key-management/multi-key/"
    nextName = "Multi-key"
 %}

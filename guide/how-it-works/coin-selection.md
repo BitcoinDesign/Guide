@@ -316,3 +316,14 @@ A user chooses to send a payment to one of their contacts. They enter the amount
 {% include fact/products.html %}
 [Bitcoin Core](https://bitcoincore.org), [BTCPay Server](https://btcpayserver.org), [Chaincase](https://chaincase.app), [Samourai](https://samouraiwallet.com), and [Wasabi](https://wasabiwallet.io)
 {% include fact/close.html %}
+
+---
+
+Next, let's look at how [nodes]({{ '/guide/how-it-works/nodes/' | relative_url }}) works.
+
+{% include next-previous.html
+   previousUrl = "/guide/how-it-works/backups"
+   previousName = "Bitcoin backups"
+   nextUrl = "/guide/how-it-works/nodes/"
+   nextName = "Nodes"
+%}

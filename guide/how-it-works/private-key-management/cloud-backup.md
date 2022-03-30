@@ -2,7 +2,7 @@
 layout: guide
 title: Automatic cloud backup
 description: Overview of how recovery phrases and other wallet data can be securely stored with cloud storage service providers.
-nav_order: 1
+nav_order: 2
 parent: Private key management
 grand_parent: How it works
 permalink: /guide/how-it-works/private-key-management/cloud-backup/
@@ -101,11 +101,11 @@ To see what a user experience with this scheme could look like, see the [daily s
 
 ---
 
-Next, let's look at [manual backups]({{ '/guide/private-key-management/manual-backup/' | relative_url }}).
+Next, let's look at [manual backups]({{ '/guide/how-it-works/private-key-management/manual-backup/' | relative_url }}).
 
 {% include next-previous.html
-   previousUrl = "/guide/private-key-management/overview/"
+   previousUrl = "/guide/how-it-works/private-key-management/overview/"
    previousName = "Overview"
-   nextUrl = "/guide/private-key-management/manual-backup/"
+   nextUrl = "/guide/how-it-works/private-key-management/manual-backup/"
    nextName = "Manual backups"
 %}

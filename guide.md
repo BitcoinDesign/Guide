@@ -63,12 +63,6 @@ Familiarizes designers with the products, features, and terms needed to create b
 
 ---
 
-### [Private key management]({{ '/guide/private-key-management/introduction/' | relative_url }})
-
-Details the many techniques that can be used to store private keys.
-
----
-
 ### [Payments]({{ '/guide/payments/' | relative_url }})
 
 Covers the complexities encountered when sending and receiving bitcoin.
@@ -81,9 +75,27 @@ Explores approaches to diverse uses cases with wireframes, designs and prototype
 
 ---
 
+### [How it works]({{ '/guide/how-it-works/' | relative_url }})
+
+Learn about how bitcoin works under the hood.
+
+---
+
+### [Resources]({{ '/guide/resources/' | relative_url }})
+
+Resources to help you build better bitcoin products.
+
+---
+
+### [Contribute to the guide]({{ '/guide/contribute/' | relative_url }})
+
+Join our open community and help us improve the Bitcoin Design Guide.
+
+---
+
 ### [Glossary]({{ '/guide/glossary/' | relative_url }})
 
-Helps you learn the most need-to-know bitcoin terminology from Address to ZPUB
+Helps you learn the most need-to-know bitcoin terminology from Address to zpub.
 
 ---
 
