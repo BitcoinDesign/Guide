@@ -20,7 +20,7 @@ Illustration sources: https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id
    image = "/assets/images/guide/designing-products/lightning-service-providers/lightning-service-providers.jpg"
    retina = "/assets/images/guide/designing-products/lightning-service-providers/lightning-service-providers@2x.jpg"
    mobile = "/assets/images/guide/designing-products/lightning-service-providers/lightning-service-providers-mobile.jpg"
-   mobileRetina = "/assets/images/guide/designing-products/lightning-service-providers/lightning-service-providers@2x.jpg"
+   mobileRetina = "/assets/images/guide/designing-products/lightning-service-providers/lightning-service-providers-mobile@2x.jpg"
    alt-text = "Lightning service providers header image."
    width = 1600
    height = 740
