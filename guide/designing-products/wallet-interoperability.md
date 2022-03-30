@@ -232,7 +232,7 @@ Your application should support constructing and managing transaction files, als
 
 ---
 
-Next, we cover how to onboard new users to a bitcoin daily spending wallet [onboarding]({{ '/guide/onboarding/' | relative_url }}).
+Next, we cover how to onboard new users to a bitcoin daily spending wallet [onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/designing-products/common-user-flows/"
