@@ -76,7 +76,7 @@ A wallet that is managed by multiple independent keys of which at least one is s
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/onboarding/restoring-a-wallet/"
+   previousUrl = "/guide/how-it-works/payment-request-formats/"
    previousName = "Restoring a wallet"
    nextUrl = "/guide/how-it-works/private-key-management/overview/"
    nextName = "Overview"
