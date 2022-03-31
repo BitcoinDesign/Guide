@@ -74,13 +74,13 @@ Learn the basics behind the technologies that make bitcoin work, from what a bit
 Core bitcoin design principles recommended by the Bitcoin Design Community.
 
 ---
-### [Software overview]({{ '/guide/getting-started/software/' | relative_url }})
+### [Software categories]({{ '/guide/getting-started/software/' | relative_url }})
 
 Bitcoin applications roughly fall into a defined set of categories, from consumer-friendly wallets, to merchant tools, and more.
 
 ---
 
-### [Hardware overview]({{ '/guide/getting-started/hardware/' | relative_url }})
+### [Hardware categories]({{ '/guide/getting-started/hardware/' | relative_url }})
 
 Whether for security or participating in the network, bitcoin hardware is an essential part of the ecosystem and user experience.
 
