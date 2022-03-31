@@ -164,7 +164,7 @@ This Bitcoin Design Guide uses three licenses ([MIT license]({{site.github_repos
 
 ---
 
-Wondering where to start? Check out the next section about [design principles]({{ '/guide/getting-started/principles/' | relative_url }}).
+Wondering where to start? Check out the next section about [the visual language of bitcoin]({{ '/guide/getting-started/visual-language/' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/getting-started/why-design-for-bitcoin/"

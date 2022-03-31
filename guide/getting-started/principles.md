@@ -294,11 +294,11 @@ Unlike traditional banking systems, the bitcoin economy does not require new use
 
 ---
 
-Continue on to learn about [user research]({{ '/guide/designing-products/user-research/' | relative_url }}) in the bitcoin ecosystem.
+Take a look at how these design principles and technologies are implemented in the various types of [bitcoin software]({{ '/guide/getting-started/software/' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/getting-started/technology-primer/"
    previousName = "Technology primer"
-   nextUrl = "/guide/getting-started/hardware/"
-   nextName = "Hardware categories"
+   nextUrl = "/guide/getting-started/software/"
+   nextName = "Software categories"
 %}

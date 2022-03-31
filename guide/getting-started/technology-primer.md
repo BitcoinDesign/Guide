@@ -311,7 +311,7 @@ Now, if you'd like to go all the way to the beginning of bitcoin, the most funda
 
 ---
 
-Take a look at how these technologies are implemented in the various types of [bitcoin software]({{ '/guide/getting-started/software/' | relative_url }}).
+A good bitcoin product isn't just about using specific technologies: it should also be shaped by specific [design principles]({{ '/guide/getting-started/principles/' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/getting-started/visual-language/"
