@@ -71,6 +71,6 @@ Get to know the points of interaction and overlap connecting payment links, wall
 {% include next-previous.html
    previousUrl = "/guide/getting-started/hardware/"
    previousName = "Hardware overview"
-   nextUrl = "/guide/getting-started/why-design-for-bitcoin/"
-   nextName = "Why design for bitcoin"
+   nextUrl = "/guide/getting-started/user-research/"
+   nextName = "User research"
 %}
