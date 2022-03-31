@@ -299,6 +299,6 @@ Continue on to learn about [user research]({{ '/guide/designing-products/user-re
 {% include next-previous.html
    previousUrl = "/guide/getting-started/technology-primer/"
    previousName = "Technology primer"
-   nextUrl = "/guide/getting-started/software/"
-   nextName = "Software categories"
+   nextUrl = "/guide/getting-started/hardware/"
+   nextName = "Hardware categories"
 %}
