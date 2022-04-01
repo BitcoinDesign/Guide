@@ -35,8 +35,8 @@ A list of bitcoin design related journal articles, independent research, case st
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/case-studies/"
-   previousName = "Case studies"
+   previousUrl = "/guide/how-it-works/transactions/"
+   previousName = "Transactions"
    nextUrl = "/guide/resources/design-files/"
    nextName = "Design files"
 %}
