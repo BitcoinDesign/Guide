@@ -90,7 +90,7 @@ There should be whitespace between paragraphs.
 
 > The details are not the details. They make the design.
 >
-> <cite>By <a href="#">Charles Eames</a></cite>
+> <cite>By <a href="https://bitcoin.design">Charles Eames</a></cite>
 
 ### Links
 

@@ -131,7 +131,7 @@ By not making users manually backup, you decrease the risk of self-inflicted los
 
 While this is an easier way for users to set up a wallet, it brings in the potential threat of malicious third-party access. If a user's cloud account is hacked, their funds could be compromised. This can be mitigated by encrypting the wallet recovery data before sending it to the cloud provider. However, the user could still lose access to funds if they forget their cloud login information or the cloud provider blocks their access.
 
-By bringing cloud storage providers into the equation, we assume that users trust their providers. This also raises the question of [decentralization]({{ 'guide/designing-products/principles/#decentralization' | relative_url }}): a guiding principle of the bitcoin space and could be considered in conflict with the popular saying, “not your keys, not your coins”.
+By bringing cloud storage providers into the equation, we assume that users trust their providers. This also raises the question of [decentralization]({{ 'guide/getting-started/principles/#decentralization' | relative_url }}): a guiding principle of the bitcoin space and could be considered in conflict with the popular saying, “not your keys, not your coins”.
 
 {% include tip/open.html color="red" icon="forbid" label="Don’t: Use for High Value Amounts" %}
 

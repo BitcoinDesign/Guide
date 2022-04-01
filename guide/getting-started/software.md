@@ -1,8 +1,8 @@
 ---
 layout: guide
-title: Software overview
+title: Software categories
 description: List of the main categories of bitcoin software, from wallets to nodes.
-nav_order: 11
+nav_order: 7
 parent: Getting started
 permalink: /guide/getting-started/software/
 main_classes: -no-top-padding
@@ -34,7 +34,7 @@ Illustration sources
    layout = "full-width"
 %}
 
-# Software overview
+# Software categories
 
 The unique history and architecture of bitcoin has resulted in several software categories, with each one serving a distinct purpose. Provided below is an overview of standard and specialized application categories.
 
@@ -54,7 +54,7 @@ The unique history and architecture of bitcoin has resulted in several software 
 
 Wallets are perhaps the most important bitcoin applications. They provide easy-to-use graphical user interfaces (GUIs) designed for broad audiences that let bitcoin owners [send]({{ '/guide/payments/send/' | relative_url }}), [receive]({{ '/guide/payments/request/' | relative_url }}), store and manage their coins.
 
-Wallet features vary by application but always include [wallet setup]({{ '/guide/designing-products/common-user-flows/#software-onboarding' | relative_url }}), balance and transaction records, and the ability to [send]({{ '/guide/payments/send/' | relative_url }}) and [receive]({{ '/guide/payments/request/' | relative_url }}) bitcoin. The full range of features that wallets may support is broad and includes security and [privacy]({{ '/guide/payments/privacy/' | relative_url }}) options, currency exchange features, accounting tools, [interoperability]({{ '/guide/designing-products/principles/#interoperability' | relative_url }}), accessibility, and localization options.
+Wallet features vary by application but always include [wallet setup]({{ '/guide/designing-products/common-user-flows/#software-onboarding' | relative_url }}), balance and transaction records, and the ability to [send]({{ '/guide/payments/send/' | relative_url }}) and [receive]({{ '/guide/payments/request/' | relative_url }}) bitcoin. The full range of features that wallets may support is broad and includes security and [privacy]({{ '/guide/payments/privacy/' | relative_url }}) options, currency exchange features, accounting tools, [interoperability]({{ '/guide/getting-started/principles/#interoperability' | relative_url }}), accessibility, and localization options.
 
 Few wallets support the full range of features. The reasons for this can vary from; standards not being available when the wallet was first developed (newer [address formats]({{ '/guide/glossary/address/' | relative_url }}) or [HD wallets]({{ '/guide/glossary/wallet/#hd-wallet' | relative_url }}) for example), the choice to not include anything that implies trusting a third party, or simply because it does not fit the intended use case for the software.
 The features you include should be based on the needs of your users. Try to maximize interoperability with other bitcoin products by supporting modern standards and emerging technologies. For example, a wallet project started today should almost certainly support the Lightning network.
@@ -185,8 +185,8 @@ Mining does not exist for transactions on the Lightning network, so there is no 
 Some bitcoin features and functionality are best handled by [dedicated hardware]({{ '/guide/getting-started/hardware/' | relative_url }}).
 
 {% include next-previous.html
-   previousUrl = "/guide/getting-started/technology-primer/"
-   previousName = "Technology primer"
+   previousUrl = "/guide/getting-started/principles/"
+   previousName = "Design principles"
    nextUrl = "/guide/getting-started/hardware/"
-   nextName = "Hardware overview"
+   nextName = "Hardware categories"
 %}

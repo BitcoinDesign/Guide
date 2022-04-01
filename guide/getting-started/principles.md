@@ -1,12 +1,14 @@
 ---
 layout: guide
-title: Principles
+title: Design principles
 description: The key principles to follow when designing bitcoin products.
-nav_order: 3
-parent: Designing bitcoin products
-permalink: /guide/designing-products/principles/
+nav_order: 6
+parent: Getting started
+permalink: /guide/getting-started/principles/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/designing-products/principles/principles-preview.png
+image: https://bitcoin.design/assets/images/guide/getting-started/principles/principles-preview.png
+permalink: /guide/getting-started/principles/
+redirect_from: /guide/designing-products/principles/
 ---
 
 <!--
@@ -20,10 +22,10 @@ Artwork Source: https://www.figma.com/file/xQ5eWVSOLbNGLmcls3qz7d/Principles?nod
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/designing-products/principles/principles.png"
-   retina = "/assets/images/guide/designing-products/principles/principles@2x.png"
-   mobile = "/assets/images/guide/designing-products/principles/principles-mobile.png"
-   mobileRetina = "/assets/images/guide/designing-products/principles/principles-mobile@2x.png"
+   image = "/assets/images/guide/getting-started/principles/principles.png"
+   retina = "/assets/images/guide/getting-started/principles/principles@2x.png"
+   mobile = "/assets/images/guide/getting-started/principles/principles-mobile.png"
+   mobileRetina = "/assets/images/guide/getting-started/principles/principles-mobile@2x.png"
    alt-text = "Principles header illustration, five white circles in a horizontal line on black background"
    width = 1600
    height = 600
@@ -57,8 +59,8 @@ These are principles we in the Bitcoin Design Community identified and stand beh
 <div class="center flex principle" markdown="1">
 
 {% include image.html
-image = "/assets/images/guide/designing-products/principles/principle-self-custody.png"
-retina = "/assets/images/guide/designing-products/principles/principle-self-custody@2x.png"
+image = "/assets/images/guide/getting-started/principles/principle-self-custody.png"
+retina = "/assets/images/guide/getting-started/principles/principle-self-custody@2x.png"
 alt-text = "Artwork depicting self custody"
 width = 150
 height = 150
@@ -88,8 +90,8 @@ Our existing mental models of access to digital services are usernames and passw
 <div class="center flex principle" markdown="1">
 
 {% include image.html
-image = "/assets/images/guide/designing-products/principles/principle-security.png"
-retina = "/assets/images/guide/designing-products/principles/principle-security@2x.png"
+image = "/assets/images/guide/getting-started/principles/principle-security.png"
+retina = "/assets/images/guide/getting-started/principles/principle-security@2x.png"
 alt-text = "Artwork depicting security"
 width = 150
 height = 150
@@ -132,8 +134,8 @@ Security can also be a feeling. A polished, good-looking, easy-to-use product th
 <div class="center flex principle" markdown="1">
 
 {% include image.html
-image = "/assets/images/guide/designing-products/principles/principle-inclusion.png"
-retina = "/assets/images/guide/designing-products/principles/principle-inclusion@2x.png"
+image = "/assets/images/guide/getting-started/principles/principle-inclusion.png"
+retina = "/assets/images/guide/getting-started/principles/principle-inclusion@2x.png"
 alt-text = "Artwork depicting inclusion"
 width = 150
 height = 150
@@ -170,8 +172,8 @@ While bitcoin is already used by a large number of people, it pales in compariso
 <div class="center flex principle" markdown="1">
 
 {% include image.html
-image = "/assets/images/guide/designing-products/principles/principle-interoperability.png"
-retina = "/assets/images/guide/designing-products/principles/principle-interoperability@2x.png"
+image = "/assets/images/guide/getting-started/principles/principle-interoperability.png"
+retina = "/assets/images/guide/getting-started/principles/principle-interoperability@2x.png"
 alt-text = "Artwork depicting interoperability"
 width = 150
 height = 150
@@ -205,8 +207,8 @@ Bitcoin is an open-source protocol, operating in a decentralized manner. This ha
 <div class="center flex principle" markdown="1">
 
 {% include image.html
-image = "/assets/images/guide/designing-products/principles/principle-transparency.png"
-retina = "/assets/images/guide/designing-products/principles/principle-transparency@2x.png"
+image = "/assets/images/guide/getting-started/principles/principle-transparency.png"
+retina = "/assets/images/guide/getting-started/principles/principle-transparency@2x.png"
 alt-text = "Artwork depicting transparency"
 width = 150
 height = 150
@@ -235,8 +237,8 @@ While an open and decentralized financial system that users can connect with dir
 <div class="center flex principle" markdown="1">
 
 {% include image.html
-image = "/assets/images/guide/designing-products/principles/principle-privacy.png"
-retina = "/assets/images/guide/designing-products/principles/principle-privacy@2x.png"
+image = "/assets/images/guide/getting-started/principles/principle-privacy.png"
+retina = "/assets/images/guide/getting-started/principles/principle-privacy@2x.png"
 alt-text = "Artwork depicting privacy"
 width = 150
 height = 150
@@ -267,8 +269,8 @@ The bitcoin network doesn’t need to know your name for you to use it. Strive t
 <div class="center flex principle" markdown="1">
 
 {% include image.html
-image = "/assets/images/guide/designing-products/principles/principle-decentralization.png"
-retina = "/assets/images/guide/designing-products/principles/principle-decentralization@2x.png"
+image = "/assets/images/guide/getting-started/principles/principle-decentralization.png"
+retina = "/assets/images/guide/getting-started/principles/principle-decentralization@2x.png"
 alt-text = "Artwork depicting decentralization"
 width = 150
 height = 150
@@ -292,11 +294,11 @@ Unlike traditional banking systems, the bitcoin economy does not require new use
 
 ---
 
-Continue on to learn about [user research]({{ '/guide/designing-products/user-research/' | relative_url }}) in the bitcoin ecosystem.
+Take a look at how these design principles and technologies are implemented in the various types of [bitcoin software]({{ '/guide/getting-started/software/' | relative_url }}).
 
 {% include next-previous.html
-   previousUrl = "/guide/designing-products/open-design/"
-   previousName = "Open design"
-   nextUrl = "/guide/designing-products/user-research/"
-   nextName = "User research"
+   previousUrl = "/guide/getting-started/technology-primer/"
+   previousName = "Technology primer"
+   nextUrl = "/guide/getting-started/software/"
+   nextName = "Software categories"
 %}

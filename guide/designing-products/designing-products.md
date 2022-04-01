@@ -30,26 +30,6 @@ A brief introduction and summary of all pages in this section. The idea is that 
 
 # Designing bitcoin products
 
-
-
----
-
-### [Why design for bitcoin]({{ '/guide/designing-products/why-design-for-bitcoin/' | relative_url }})
-
-Bitcoin is fundamentally open and participatory and allows designers and creators to explore and shape experiences for users around the globe.
-
----
-
-### [Open design]({{ '/guide/designing-products/open-design/' | relative_url }})
-
-Open design is about global collaboration that balances the free exchange of design information, the independence of individual designers and the collective power of collaboration.
-
----
-
-### [Bitcoin design principles]({{ '/guide/designing-products/principles/' | relative_url }})
-
-Core bitcoin design principles recommended by the Bitcoin Design Community.
-
 ---
 
 ### [User research]({{ '/guide/designing-products/user-research/' | relative_url }})
@@ -91,6 +71,6 @@ Get to know the points of interaction and overlap connecting payment links, wall
 {% include next-previous.html
    previousUrl = "/guide/getting-started/hardware/"
    previousName = "Hardware overview"
-   nextUrl = "/guide/designing-products/why-design-for-bitcoin/"
-   nextName = "Why design for bitcoin"
+   nextUrl = "/guide/designing-products/user-research/"
+   nextName = "User research"
 %}
