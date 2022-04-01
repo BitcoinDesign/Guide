@@ -3,7 +3,7 @@ layout: guide
 title: Getting to know your users
 description: How best to understand and develop knowledge about your users.
 parent: Designing bitcoin products
-nav_order: 7
+nav_order: 3
 permalink: /guide/designing-products/getting-to-know-your-users/
 redirect_from:
  - /guide/onboarding/getting-to-know-your-users/
@@ -197,8 +197,8 @@ Ultimately the goal of getting to know your users is to build trust in the appli
 Next, we will cover [common user flows]({{ '/guide/designing-products/common-user-flows/' | relative_url }}).
 
 {% include next-previous.html
-   previousUrl = "/guide/designing-products/personal-finance/"
-   previousName = "Personal finance"
+   previousUrl = "/guide/designing-products/user-research/"
+   previousName = "Conducting research"
    nextUrl = "/guide/designing-products/common-user-flows/"
    nextName = "Common user flows"
 %}

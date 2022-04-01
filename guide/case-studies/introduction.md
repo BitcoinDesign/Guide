@@ -63,7 +63,7 @@ An onboarding experience for a mobile wallet shared by a couple who want to acce
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/payments/units-and-symbols/"
+   previousUrl = "/guide/designing-products/units-and-symbols/"
    previousName = "Units & Symbols"
    nextUrl = "/guide/case-studies/cloud-backup/"
    nextName = "Daily spending"

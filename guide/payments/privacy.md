@@ -31,7 +31,7 @@ This page should inform about what information is made public when sending or re
 - Coin join / Pay join
 
 @TODO: address reuse / there should be something in here about also mindfully not giving the same unused address to different persons
-@TODO: address reuse / write glossary term about Gap limit  
+@TODO: address reuse / write glossary term about Gap limit
 -->
 
 It’s a common misconception that bitcoin payments are anonymous. Rather, bitcoin payments are [pseudonymous](https://en.wikipedia.org/wiki/Pseudonym), meaning no identifiable information is tied to transactions. Unless ownership is revealed, whether by the parties involved or some third-party, payments remain anonymous.
@@ -161,6 +161,6 @@ Next, let's dive into how to display various [units & symbols]({{ '/guide/paymen
 {% include next-previous.html
    previousUrl = "/guide/payments/contacts/"
    previousName = "Contacts"
-   nextUrl = "/guide/payments/units-and-symbols/"
+   nextUrl = "/guide/designing-products/units-and-symbols/"
    nextName = "Units & Symbols"
 %}

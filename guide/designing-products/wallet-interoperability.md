@@ -2,7 +2,7 @@
 layout: guide
 title: Interoperability
 description: Designing for seamless experiences across bitcoin applications.
-nav_order: 9
+nav_order: 7
 parent: Designing bitcoin products
 permalink: /guide/designing-products/wallet-interoperability/
 main_classes: -no-top-padding
@@ -156,7 +156,7 @@ Most bitcoin applications rely on external data sources (like currency conversio
    layout = "float-right-desktop"
 %}
 
-Although every application will have its own unique interface, there are certain elements that are beneficial to keep consistent across applications, in order to improve the overall user experience. This includes things like [naming conventions](/guide/glossary/), [icons](https://bitcoinicons.com), [unit formatting](/guide/payments/units-and-symbols/), etc. We have many suggestions throughout this design guide to help you.
+Although every application will have its own unique interface, there are certain elements that are beneficial to keep consistent across applications, in order to improve the overall user experience. This includes things like [naming conventions](/guide/glossary/), [icons](https://bitcoinicons.com), [unit formatting](/guide/designing-products/units-and-symbols/), etc. We have many suggestions throughout this design guide to help you.
 
 </div>
 
@@ -235,8 +235,8 @@ Your application should support constructing and managing transaction files, als
 Next, we cover how to onboard new users to a bitcoin daily spending wallet [onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}).
 
 {% include next-previous.html
-   previousUrl = "/guide/designing-products/common-user-flows/"
-   previousName = "Common user flows"
+   previousUrl = "/guide/designing-products/units-and-symbols/"
+   previousName = "Units and symbols"
    nextUrl = "/guide/onboarding/introduction/"
    nextName = "Onboarding"
 %}
