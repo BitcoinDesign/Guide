@@ -159,8 +159,8 @@ There is no perfect solution to guarantee 100% privacy that lasts forever becaus
 Next, let's dive into how to display various [units & symbols]({{ '/guide/payments//units-and-symbols/' | relative_url }}) in bitcoin applications.
 
 {% include next-previous.html
-   previousUrl = "/guide/payments/activity/"
-   previousName = "Activity"
-   nextUrl = "/guide/payments//units-and-symbols/"
+   previousUrl = "/guide/payments/contacts/"
+   previousName = "Contacts"
+   nextUrl = "/guide/payments/units-and-symbols/"
    nextName = "Units & Symbols"
 %}

@@ -188,7 +188,7 @@ The following [prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Sav
 
 ### Private key management
 
-A 2-of-3 [multi-key setup]({{ '/guide/private-key-management/multi-key/' | relative_url }}) would seem the most appropriate here, although it will be a significant hurdle in [onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}). Other schemes could be considered but come with distinct downsides for amounts of value we can expect users to store in this use case. A single-key scheme with an [automatic cloud backup]({{ '/guide/private-key-management/multi-key/' | relative_url }}), [recovery phrase]({{ '/guide/private-key-management/manual-backup/' | relative_url }}) or single [signing device]({{ '/guide/private-key-management/external-signers/' | relative_url }}) could work at the lower end of the value scale, but start to look like less responsible recommendations with higher values due to their single points of failure.
+A 2-of-3 [multi-key setup]({{ '/guide/how-it-works/private-key-management/multi-key/' | relative_url }}) would seem the most appropriate here, although it will be a significant hurdle in [onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}). Other schemes could be considered but come with distinct downsides for amounts of value we can expect users to store in this use case. A single-key scheme with an [automatic cloud backup]({{ '/guide/how-it-works/private-key-management/multi-key/' | relative_url }}), [recovery phrase]({{ '/guide/how-it-works/private-key-management/manual-backup/' | relative_url }}) or single [signing device]({{ '/guide/how-it-works/private-key-management/external-signers/' | relative_url }}) could work at the lower end of the value scale, but start to look like less responsible recommendations with higher values due to their single points of failure.
 
 An important question is the combination of key-storage devices and their distribution. We have many options here, and it might come down to the experience of the target audience and their expected access to the necessary hardware;
 
@@ -251,7 +251,7 @@ Daily and per-transaction spending limits are a unique aspect of this applicatio
 - [Protoype](https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=6%3A11&viewport=333%2C41%2C0.37497082352638245&scaling=scale-down)
 - [Figma design file](https://www.figma.com/file/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?node-id=1%3A55973)
 - [Use case]({{ '/guide/designing-products/personal-finance/#savings' | relative_url }})
-- [Private key scheme]({{ '/guide/private-key-management/multi-key/' | relative_url }})
+- [Private key scheme]({{ '/guide/how-it-works/private-key-management/multi-key/' | relative_url }})
 
 ---
 
