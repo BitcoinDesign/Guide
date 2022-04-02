@@ -3,10 +3,11 @@ layout: guide
 title: Units & Symbols
 description: How to display and format bitcoin and currency units in bitcoin applications.
 nav_order: 6
-parent: Payments
-permalink: /guide/payments/units-and-symbols/
+parent: Designing bitcoin products
+permalink: /guide/designing-products/units-and-symbols/
+redirect_from: /guide/payments/units-and-symbols/
 main_classes: -no-top-padding
-image_base: /assets/images/guide/payments/units-and-symbols/
+image_base: /assets/images/guide/designing-products/units-and-symbols/
 images_app:
     - file: settings
       alt: Mobile phone screen showing settings of a bitcoin application
@@ -33,7 +34,7 @@ images_home:
     - file: enter-amount
       alt: Screen for entering an amount of funds to send.
       caption: When entering amounts, a dedicated UI element may be needed to switch between units.
-image: /assets/images/guide/payments/units-and-symbols/units-and-symbols-preview.jpg
+image: /assets/images/guide/designing-products/units-and-symbols/units-and-symbols-preview.jpg
 
 ---
 
@@ -55,10 +56,10 @@ Content images
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/payments/units-and-symbols/units-and-symbols.png"
-   retina = "/assets/images/guide/payments/units-and-symbols/units-and-symbols@2x.png"
-   mobile = "/assets/images/guide/payments/units-and-symbols/units-and-symbols-mobile.png"
-   mobileRetina = "/assets/images/guide/payments/units-and-symbols/units-and-symbols-mobile@2x.png"
+   image = "/assets/images/guide/designing-products/units-and-symbols/units-and-symbols.png"
+   retina = "/assets/images/guide/designing-products/units-and-symbols/units-and-symbols@2x.png"
+   mobile = "/assets/images/guide/designing-products/units-and-symbols/units-and-symbols-mobile.png"
+   mobileRetina = "/assets/images/guide/designing-products/units-and-symbols/units-and-symbols-mobile@2x.png"
    alt-text = "The amount 1,027 bitcoin in large letters."
    width = 1600
    height = 600
@@ -108,8 +109,8 @@ User should always be able to change unit contextually. Additionally, for the va
 ## Formatting units
 
 {% include picture.html
-   image = "/assets/images/guide/payments/units-and-symbols/formatting-elements.png"
-   retina = "/assets/images/guide/payments/units-and-symbols/formatting-elements@2x.png"
+   image = "/assets/images/guide/designing-products/units-and-symbols/formatting-elements.png"
+   retina = "/assets/images/guide/designing-products/units-and-symbols/formatting-elements@2x.png"
    alt-text = "Bitcoin island travel map"
    width = 800
    height = 300
@@ -170,10 +171,10 @@ Type choices, spacing, color, and other details also affect the ease at which us
 ### Digit groups
 
 {% include picture.html
-   image = "/assets/images/guide/payments/units-and-symbols/formatting-digit-groups.png"
-   retina = "/assets/images/guide/payments/units-and-symbols/formatting-digit-groups@2x.png"
-   mobile = "/assets/images/guide/payments/units-and-symbols/formatting-digit-groups-mobile.png"
-   mobileRetina = "/assets/images/guide/payments/units-and-symbols/formatting-digit-groups-mobile@2x.png"
+   image = "/assets/images/guide/designing-products/units-and-symbols/formatting-digit-groups.png"
+   retina = "/assets/images/guide/designing-products/units-and-symbols/formatting-digit-groups@2x.png"
+   mobile = "/assets/images/guide/designing-products/units-and-symbols/formatting-digit-groups-mobile.png"
+   mobileRetina = "/assets/images/guide/designing-products/units-and-symbols/formatting-digit-groups-mobile@2x.png"
    alt-text = "Bitcoin amounts with and without digit group spacing."
    width = 800
    height = 198
@@ -184,10 +185,10 @@ Clearly separating digit groups with spacing and/or color can help more quickly 
 ### Monospace fonts
 
 {% include picture.html
-   image = "/assets/images/guide/payments/units-and-symbols/formatting-monospace.png"
-   retina = "/assets/images/guide/payments/units-and-symbols/formatting-monospace@2x.png"
-   mobile = "/assets/images/guide/payments/units-and-symbols/formatting-monospace-mobile.png"
-   mobileRetina = "/assets/images/guide/payments/units-and-symbols/formatting-monospace-mobile@2x.png"
+   image = "/assets/images/guide/designing-products/units-and-symbols/formatting-monospace.png"
+   retina = "/assets/images/guide/designing-products/units-and-symbols/formatting-monospace@2x.png"
+   mobile = "/assets/images/guide/designing-products/units-and-symbols/formatting-monospace-mobile.png"
+   mobileRetina = "/assets/images/guide/designing-products/units-and-symbols/formatting-monospace-mobile@2x.png"
    alt-text = "Bitcoin amounts with proportional and monospace fonts."
    width = 800
    height = 198
@@ -198,10 +199,10 @@ Proportional fonts adjust the spacing of characters for legibility, which is ide
 ### Trailing zeros
 
 {% include picture.html
-   image = "/assets/images/guide/payments/units-and-symbols/formatting-trailing-zeros.png"
-   retina = "/assets/images/guide/payments/units-and-symbols/formatting-trailing-zeros@2x.png"
-   mobile = "/assets/images/guide/payments/units-and-symbols/formatting-trailing-zeros-mobile.png"
-   mobileRetina = "/assets/images/guide/payments/units-and-symbols/formatting-trailing-zeros-mobile@2x.png"
+   image = "/assets/images/guide/designing-products/units-and-symbols/formatting-trailing-zeros.png"
+   retina = "/assets/images/guide/designing-products/units-and-symbols/formatting-trailing-zeros@2x.png"
+   mobile = "/assets/images/guide/designing-products/units-and-symbols/formatting-trailing-zeros-mobile.png"
+   mobileRetina = "/assets/images/guide/designing-products/units-and-symbols/formatting-trailing-zeros-mobile@2x.png"
    alt-text = "Bitcoin amounts with trimmed zeros and trailing zeros."
    width = 800
    height = 198
@@ -212,10 +213,10 @@ Trailing zeros can help more easily compare amounts in right-aligned tables.
 ### Slashed zeros
 
 {% include picture.html
-   image = "/assets/images/guide/payments/units-and-symbols/formatting-slashed-zeros.png"
-   retina = "/assets/images/guide/payments/units-and-symbols/formatting-slashed-zeros@2x.png"
-   mobile = "/assets/images/guide/payments/units-and-symbols/formatting-slashed-zeros-mobile.png"
-   mobileRetina = "/assets/images/guide/payments/units-and-symbols/formatting-slashed-zeros-mobile@2x.png"
+   image = "/assets/images/guide/designing-products/units-and-symbols/formatting-slashed-zeros.png"
+   retina = "/assets/images/guide/designing-products/units-and-symbols/formatting-slashed-zeros@2x.png"
+   mobile = "/assets/images/guide/designing-products/units-and-symbols/formatting-slashed-zeros-mobile.png"
+   mobileRetina = "/assets/images/guide/designing-products/units-and-symbols/formatting-slashed-zeros-mobile@2x.png"
    alt-text = "Balances, addresses and public keys with and without slashed zeros."
    width = 800
    height = 198
@@ -227,11 +228,13 @@ Note that uppercase letter "O", uppercase letter "I", lowercase letter "l", and 
 
 ---
 
-Next, we dive into some bitcoin [case studies]({{ '/guide/case-studies/' | relative_url }}).
+On to [interoperability]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }}) which is essential for smooth interaction and migration between bitcoin products.
+
+
 
 {% include next-previous.html
-   previousUrl = "/guide/payments/privacy/"
-   previousName = "Payment privacy"
-   nextUrl = "/guide/case-studies/"
-   nextName = "Case studies"
+   previousUrl = "/guide/designing-products/usage-life-cycle/"
+   previousName = "Usage life cycle"
+   nextUrl = "/guide/designing-products/wallet-interoperability/"
+   nextName = "Interoperability"
 %}

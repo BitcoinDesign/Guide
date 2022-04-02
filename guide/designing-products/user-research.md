@@ -1,8 +1,8 @@
 ---
 layout: guide
-title: User research
+title: Conducting research
 description: Bitcoin user research is unique due to the decentralized and public nature of the network.
-nav_order: 4
+nav_order: 2
 parent: Designing bitcoin products
 has_children: true
 permalink: /guide/designing-products/user-research/
@@ -42,7 +42,7 @@ Illustration sources
    layout = "full-width"
 %}
 
-# User research
+# Conducting research
 
 We design products to benefit users. That’s why it is necessary to understand their needs, desires, and behaviors. A comprehensive design strategy balances user needs with considerations around the technology, business models, societal and economic impact, and other factors. In this section, we focus on understanding the users better.
 
@@ -203,11 +203,13 @@ Links to:
 
 ---
 
-Frameworks are helpful tools to organize user behavior. Our next section introduces one with a focus on the [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/' | relative_url }}).
+Frameworks are helpful tools to organize user behavior. Our next section introduces one with a focus on the .
+
+Next we will look at why it is important to [get to know your users]({{ '/guide/designing-products/getting-to-know-your-users/' | relative_url }}) when designing bitcoin applications.
 
 {% include next-previous.html
-   previousUrl = "guide/designing-products/introduction/"
-   previousName = "Designing bitcoin products"
-   nextUrl = "/guide/designing-products/usage-life-cycle/"
-   nextName = "Usage life cycle"
+   previousUrl = "/guide/designing-products/personal-finance/"
+   previousName = "Personal finance"
+   nextUrl = "/guide/designing-products/getting-to-know-your-users/"
+   nextName = "Getting to know your users"
 %}

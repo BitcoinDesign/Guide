@@ -96,7 +96,7 @@ Following are some of the design decisions in the screens above:
 - Received amounts are green, which is typically a positive connotation. Highlighting sent amounts red seems like a logical follow-on decisions, but this is not necessary as there is enough contrast already. Red can remain the color associated with errors.
 - Adding a plus or minus next to amounts is helpful for the color-blind, as well as general readability & usability.
 - Fallback icons are designed to be subtle and useful by indicating whether bitcoin was sent or received, and the status of the transaction. When they are not shown, because there's a contact image displayed instead, no information is lost. Showing a bitcoin symbol instead, for example, would be visually distracting without providing any useful information.
-- The formatting guidelines in [Units & Symbols]({{ '/guide/payments/units-and-symbols/' | relative_url }}) are applied.
+- The formatting guidelines in [Units & Symbols]({{ '/guide/designing-products/units-and-symbols/' | relative_url }}) are applied.
 
 Not carefully weighing these decisions can easily result in a cluttered appearance.
 

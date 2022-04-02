@@ -32,21 +32,15 @@ A brief introduction and summary of all pages in this section. The idea is that 
 
 ---
 
-### [User research]({{ '/guide/designing-products/user-research/' | relative_url }})
-
-All products begin with user needs and end in those same user's hands. User research is a fundamental activity that helps us focus on things people care about.
-
----
-
-### [Usage life cycle]({{ '/guide/designing-products/usage-life-cycle/' | relative_url }})
-
-All users start without any knowledge of bitcoin or your particular product. As we learn more, our understanding and needs change. As designers, it is essential to guide users through this experience.
-
----
-
 ### [Personal finance]({{ '/guide/designing-products/personal-finance/' | relative_url }})
 
 If we consider bitcoin money, we need to consider how bitcoin users think about their finances. This page provides a simple framework that can serve as a starting point, deriving bitcoin software and hardware setups from common budgeting categories.
+
+---
+
+### [Conducting research]({{ '/guide/designing-products/user-research/' | relative_url }})
+
+All products begin with user needs and end in those same user's hands. User research is a fundamental activity that helps us focus on things people care about.
 
 ---
 
@@ -62,6 +56,18 @@ Most bitcoin applications share certain user activities, from initial setup to m
 
 ---
 
+### [Usage life cycle]({{ '/guide/designing-products/usage-life-cycle/' | relative_url }})
+
+All users start without any knowledge of bitcoin or your particular product. As we learn more, our understanding and needs change. As designers, it is essential to guide users through this experience.
+
+---
+
+### [Units & Symbols]({{ '/guide/designing-products/units-and-symbols/' | relative_url }})
+
+The basics on units and currency symbols, how to format them and what options to provide users with.
+
+---
+
 ### [Interoperability]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }})
 
 Get to know the points of interaction and overlap connecting payment links, wallet recovery, node configurations, and more.
@@ -71,6 +77,6 @@ Get to know the points of interaction and overlap connecting payment links, wall
 {% include next-previous.html
    previousUrl = "/guide/getting-started/hardware/"
    previousName = "Hardware overview"
-   nextUrl = "/guide/designing-products/user-research/"
-   nextName = "User research"
+   nextUrl = "/guide/designing-products/personal-finance/"
+   nextName = "Personal finance"
 %}

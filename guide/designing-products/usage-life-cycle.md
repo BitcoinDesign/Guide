@@ -181,11 +181,11 @@ There are various [user research]({{ '/guide/designing-products/user-research/' 
 
 ---
 
-The usage life cycle is based on product familiarity. Another helpful way of thinking about user experiences is to consider user needs, for example from [personal finance]({{ '/guide/designing-products/personal-finance/' | relative_url }}).
+Next, let’s dive into how to display various [units & symbols]({{ '/guide/designing-products/units-and-symbols/' | relative_url }}) in bitcoin applications.
 
 {% include next-previous.html
-   previousUrl = "/guide/designing-products/user-research/"
-   previousName = "User research"
-   nextUrl = "/guide/designing-products/personal-finance/"
-   nextName = "Personal finance"
+   previousUrl = "/guide/designing-products/common-user-flows/"
+   previousName = "Common user flows"
+   nextUrl = "/guide/designing-products/units-and-symbols/"
+   nextName = "Units and symbols"
 %}

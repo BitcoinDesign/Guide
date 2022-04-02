@@ -2,7 +2,7 @@
 layout: guide
 title: Personal finance
 description: How bitcoin applications and usage overlap with traditional personal finance management.
-nav_order: 6
+nav_order: 1
 parent: Designing bitcoin products
 permalink: /guide/designing-products/personal-finance/
 main_classes: -no-top-padding
@@ -267,11 +267,11 @@ Considering your product, ask yourself these questions:
 
 ---
 
-Next we will look at why it is important to [get to know your users]({{ '/guide/designing-products/getting-to-know-your-users/' | relative_url }}) when designing bitcoin applications.
+Continue on to learn about [conducting user research]({{ '/guide/designing-products/user-research/' | relative_url }}) in the bitcoin ecosystem.
 
 {% include next-previous.html
-   previousUrl = "/guide/designing-products/usage-life-cycle/"
-   previousName = "Usage life cycle"
-   nextUrl = "/guide/designing-products/getting-to-know-your-users/"
-   nextName = "Getting to know your users"
+   previousUrl = "/guide/designing-products/introduction/"
+   previousName = "Designing bitcoin products"
+   nextUrl = "/guide/designing-products/user-research/"
+   nextName = "Conducting research"
 %}

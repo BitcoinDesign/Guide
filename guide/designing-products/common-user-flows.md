@@ -2,7 +2,7 @@
 layout: guide
 title: Common user flows
 description: Overview of the most common user activities in bitcoin applications.
-nav_order: 8
+nav_order: 4
 parent: Designing bitcoin products
 permalink: /guide/designing-products/common-user-flows/
 main_classes: -no-top-padding
@@ -567,11 +567,11 @@ This can be a tricky experience to address. For one, non-custodial cryptocurrenc
 
 ---
 
-On to [interoperability]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }}) which is essential for smooth interaction and migration between bitcoin products.
+Our next section introduces a framework with a focus on the [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/designing-products/getting-to-know-your-users/"
    previousName = "Getting to know your users"
-   nextUrl = "/guide/designing-products/wallet-interoperability/"
-   nextName = "Interoperability"
+   nextUrl = "/guide/designing-products/usage-life-cycle/"
+   nextName = "Usage life cycle"
 %}

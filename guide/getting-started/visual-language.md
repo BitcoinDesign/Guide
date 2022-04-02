@@ -139,7 +139,7 @@ The Unicode symbol for bitcoin (₿) was introduced in [Unicode 10.0.0](http://w
 
 ## The Satoshi symbol
 
-As the price of bitcoin has increased, and the [Lightning network]({{ '/guide/glossary/#lightning-network' | relative_url }}) has facilitated low-value payments, it has become common for people to denominate bitcoin with the "satoshi". See the [Units & Symbols]({{ '/guide/payments/units-and-symbols/' | relative_url }}) section for more detailed information about bitcoin units.
+As the price of bitcoin has increased, and the [Lightning network]({{ '/guide/glossary/#lightning-network' | relative_url }}) has facilitated low-value payments, it has become common for people to denominate bitcoin with the "satoshi". See the [Units & Symbols]({{ '/guide/designing-products/units-and-symbols/' | relative_url }}) section for more detailed information about bitcoin units.
 
 There is currently not an agreed-upon symbol to represent the satoshi (or if there should even be one). However, many ideas are in circulation.
 

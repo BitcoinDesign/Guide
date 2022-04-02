@@ -62,7 +62,7 @@ It can take many years to understand bitcoin in every detail, but luckily you do
    layout = "float-right-desktop"
 %}
 
-You can own [fractions of 1 bitcoin]({{ '/guide/payments/units-and-symbols/' | relative_url }}). They are just numbers in a digital ledger of transactions. We call that ledger the bitcoin blockchain. Transactions are used to assign bitcoin from one [address]({{ '/guide/glossary/address' | relative_url }}) to another. This process reduces the available balance of the sending address and increases the balance of the receiving address. A small amount has to be added as the fee to pay for the verification.
+You can own [fractions of 1 bitcoin]({{ '/guide/designing-products/units-and-symbols/' | relative_url }}). They are just numbers in a digital ledger of transactions. We call that ledger the bitcoin blockchain. Transactions are used to assign bitcoin from one [address]({{ '/guide/glossary/address' | relative_url }}) to another. This process reduces the available balance of the sending address and increases the balance of the receiving address. A small amount has to be added as the fee to pay for the verification.
 
 Therefore, owning a bitcoin means being in control of one or more addresses that have received bitcoin.
 
