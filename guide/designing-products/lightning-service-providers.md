@@ -62,7 +62,7 @@ A backup & recovery service has an LSP automatically backup and store users chan
 
 Using an LSP as a backup requires trusting they will securely store this data and will hand it over to the user when recovering. To prevent censorship and users relying too much on the LSP, an option to backup wallets [manually]({{ '/guide/onboarding/backing-up-a-wallet/manual-backup/' | relative_url }}) or [automatically]({{ '/guide/onboarding/backing-up-a-wallet/cloud-backup/' | relative_url }}) with a cloud provider should be available.
 
-Using a recovery phrase to encrypt the channel states makes the recovery phrase wallet dependent making things less [interoperable]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }}).
+Using a recovery phrase to encrypt the channel states makes the recovery phrase wallet-dependent, making things less [interoperable]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }}).
 
 [ACINQ](https://medium.com/@ACINQ/phoenix-wallet-part-3-backup-f63a9470d4e7) is an example of a LSP using a backup and recovery service for its wallet Phoenix. [Backpack](https://github.com/synonymdev/backpack-client) is an open-source client enabling this service.
 
