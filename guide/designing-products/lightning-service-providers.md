@@ -106,7 +106,7 @@ Below, we cover the different ways in which a channel open service can be offere
 
 Lightning wallets can not receive payments without inbound liquidity in a channel. This is primarily the case with new wallets, but may also occur when channels are imbalanced on funded wallets.
 
-Offering inbound liquidity with a channel open service addresses this situation. When a user receives a payment without enough inbound liquidity, a channel is automatically opened with some. The network, and sometimes a service, fee for opening the channel is typically deducted from the payment amount.
+Offering inbound liquidity with a channel open service addresses this situation. When a user receives a payment without enough inbound liquidity, a channel is automatically opened. The network fee, and sometimes an additional service fee, for opening the channel is typically deducted from the payment amount.
 
 A channel open with inbound liquidity allows users to fund their wallets with a lightning payment, or combined with a [swap-in]({{ '/guide/designing-products/lightning-service-providers/#swap-in' | relative_url }}) or [dual funding]({{ '/guide/designing-products/lightning-service-providers/#dual-funding' | relative_url }}) service can allow funding via on-chain.
 
