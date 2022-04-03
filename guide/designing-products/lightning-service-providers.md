@@ -129,7 +129,7 @@ A channel open with inbound liquidity allows users to fund their wallets with a 
    layout = "float-right"
 %}
 
-Using a channel open service requires a LSP to open a channel for the user on their behalf which requires trust. An LSP could refuse to open a channel for a user or require invasive privacy practices leading to application level censorship.
+Using a channel open service requires a LSP to open a channel for the user on their behalf, which requires trust. An LSP could refuse to open a channel for a user or require invasive privacy practices, leading to application-level censorship.
 
 A [dual-funding](https://bitcoinops.org/en/topics/dual-funding/) channel open service solves this issue of trust by having users cooperatively open a channel with the LSP. Users get the benefits of having both inbound and outbound liquidity without having to trust the LSP.
 
