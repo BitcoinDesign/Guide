@@ -156,7 +156,7 @@ A channel open service using spend-unconfirmed, sometimes called turbo channels 
 
 A spend-unconfirmed channel is trusted until the transaction is confirmed. Users should have the option to disable these types of channel opens if they are used. Some LSPs may batch their channel opens meaning a users channel will be trusted until this is done.
 
-[Breez](https://breez.technology/) is an bitcoin wallet that uses this service.
+[Breez](https://breez.technology/) is a bitcoin wallet that provides this service.
 
 </div>
 
