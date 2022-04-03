@@ -198,7 +198,7 @@ The client [Loop](https://lightning.engineering/loop/) and the non-custodial lig
 
 Payment channels require a channel reserve of 1% to be set aside to prevent theft. When a user opens a channel, they will not be able to spend this reserve. This can confuse many users who may think an incorrect payment amount was sent to them.
 
-A zero-reserve channel open service solves this issue by allowing channels opened by the LSP to have a zero-reserve on the users side. The LSP still has a reserve as it is connected to the wider network. This also prevents them from attempting to steal the users bitcoin.
+A zero-reserve channel open service solves this issue by allowing channels opened by the LSP to have a zero-reserve on the users side. The LSP still has a reserve as it is connected to the wider network. This also prevents them from attempting to steal the user's bitcoin.
 
 This service has an asymmetric trust model as it is more in favour of the user, who has nothing at stake if attempting to cheat the LSP. This can be useful when combined with other services, as it balances the trust between the user and LSP.
 
