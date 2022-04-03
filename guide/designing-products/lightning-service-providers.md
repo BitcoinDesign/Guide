@@ -56,7 +56,7 @@ Below are some lightning services, the paint points they solve, their trade-offs
    layout = "float-right-desktop"
 %}
 
-Lightning wallets require both a recovery phrase and up to date payment channel states to be recovered. Payment channel states need to be backed up each time a payment is received or sent. Users can make these backups, though if done incorrectly or stored insecurely, users are at risk of losing their bitcoin.
+Lightning wallets require both a recovery phrase and up-to-date payment channel states to be recovered. Payment channel states need to be backed up each time a payment is received or sent. Users can make these backups, though if done incorrectly or stored insecurely, users are at risk of losing their bitcoin.
 
 A backup & recovery service has an LSP automatically backup and store users channel states. These are encrypted, usually by the user’s recovery phrase, before being sent to the LSP. When a user recovers their wallet, they enter their recovery phrase, the LSP sends them the encrypted channel states, these are decrypted by the user, and the wallet is restored.
 
