@@ -265,7 +265,7 @@ A payment forwarding service solves these issues by acting as an non-custodial i
 
 Making a payment directly from lightning to on-chain is not possible. A user may want to move funds from their lightning channel to on-chain for more secure storage.
 
-A swap-out service allows users to send bitcoin from lightning to on-chain. Users send their lightning bitcoin to the LSP. They then make the on-chain payment on the users behalf. This can have added privacy benefits as the user is receiving one of the LSPs UTXOs and not the ones in their channel.
+A swap-out service allows users to send bitcoin from lightning to on-chain. Users send their lightning bitcoin to the LSP. They then make the on-chain payment on the user's behalf. This can have added privacy benefits as the user is receiving one of the LSPs UTXOs and not the ones in their channel.
 
 Swap-outs can be done in a non-custodial, trust-minimized way using [Submarine swaps](https://blog.muun.com/a-closer-look-at-submarine-swaps-in-the-lightning-network/). They can also be done in a trusted way where the LSP has temporary custody of the funds. This is not recommended, as the LSP could steal the user's bitcoin, or censor their payment.
 
