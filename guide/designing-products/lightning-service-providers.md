@@ -60,7 +60,7 @@ Lightning wallets require both a recovery phrase and up to date payment channel 
 
 A backup & recovery service has an LSP automatically backup and store users channel states. These are encrypted, usually by the user’s recovery phrase, before being sent to the LSP. When a user recovers their wallet, they enter their recovery phrase, the LSP sends them the encrypted channel states, these are decrypted by the user, and the wallet is restored.
 
-Using an LSP as a backup requires trusting they will securely store this data and will hand it over to the user when recovering. To prevent censorship and users relying too much on the LSP, an option to backup wallets [manually]({{ '/guide/onboarding/backing-up-a-wallet/manual-backup/' | relative_url }}) or [automatically]({{ '/guide/onboarding/backing-up-a-wallet/cloud-backup/' | relative_url }}) with a cloud provider should be available.
+Using an LSP as a backup requires trusting they will securely store this data and hand it over to the user when recovering. To prevent censorship and users relying too much on the LSP, an option to backup wallets [manually]({{ '/guide/onboarding/backing-up-a-wallet/manual-backup/' | relative_url }}) or [automatically]({{ '/guide/onboarding/backing-up-a-wallet/cloud-backup/' | relative_url }}) with a cloud provider should be available.
 
 Using a recovery phrase to encrypt the channel states makes the recovery phrase wallet-dependent, making things less [interoperable]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }}).
 
