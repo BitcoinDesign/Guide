@@ -242,7 +242,7 @@ Lightning addresses use a non-custodial, trusted third-party server to forward p
 
 Lightning payments require a route through the network to be calculated for sending, and a user must be online for receiving. Mobile nodes, especially ones running on lower end devices, may have difficulties calculating a route which can result in higher network fees. They are also regularly offline meaning a user will have to be online to receive a payment.
 
-A payment forwarding service solves these issues by acting as an non-custodial intermediary for payments. The route calculation for sending bitcoin can be conducted by the LSPs node on behalf of the user. And for receiving, if the user is offline, the LSP can hold the payment and forward it once the user comes back online.
+A payment forwarding service solves these issues by acting as a non-custodial intermediary for payments. The route calculation for sending bitcoin can be conducted by the LSPs node on behalf of the user. And for receiving, if the user is offline, the LSP can hold the payment and forward it once the user comes back online.
 
 [Trampoline payments](https://bitcoinops.org/en/topics/trampoline-payments/) remove the need for a single third-party node to calculate a payment route for a user. However, these are currently not widely supported.
 
