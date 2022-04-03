@@ -133,7 +133,7 @@ Using a channel open service requires a LSP to open a channel for the user on th
 
 A [dual-funding](https://bitcoinops.org/en/topics/dual-funding/) channel open service solves this issue of trust by having users cooperatively open a channel with the LSP. Users get the benefits of having both inbound and outbound liquidity without having to trust the LSP.
 
-Dual funding is only applicable when funding a wallet with on-chain bitcoin, the issue of trusting the LSP still exists if funding with a lightning payment.
+Dual funding is only applicable when funding a wallet with on-chain bitcoin. The issue of trusting the LSP still exists if funding with a lightning payment.
 
 </div>
 
