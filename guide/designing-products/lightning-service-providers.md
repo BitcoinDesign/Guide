@@ -112,7 +112,7 @@ A channel open with inbound liquidity allows users to fund their wallets with a 
 
 [Blocktank](https://blocktank.synonym.to/) and [Dunder](https://github.com/hsjoberg/dunder-lsp) are two open source LSP clients that help applications offer inbound liquidity to their users.
 
-[Liquidity ads](https://medium.com/blockstream/setting-up-liquidity-ads-in-c-lightning-54e4c59c091d) are a protocol level way for anyone to act as an LSP and advertise their willingness to offer liquidity to other users.
+[Liquidity ads](https://medium.com/blockstream/setting-up-liquidity-ads-in-c-lightning-54e4c59c091d) are a protocol-level way for anyone to act as an LSP and advertise their willingness to offer liquidity to other users.
 
 </div>
 
