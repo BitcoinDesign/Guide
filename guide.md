@@ -47,25 +47,19 @@ We designed this guide to help anyone navigate those complexities—regardless o
 
 ### [Getting started]({{ '/guide/getting-started/introduction/' | relative_url }})
 
-Provides top-level overviews of common visual language, technology, software, and hardware.
+Provides top-level overviews of open design, common visual language, technology, software, and hardware.
 
 ---
 
 ### [Designing bitcoin products]({{ '/guide/designing-products/introduction/' | relative_url }})
 
-A close look at the design process, from the concept of open design to use cases and frameworks like the usage life cycle.
+A close look at the design process, from conducting user research to use cases and frameworks like the usage life cycle.
 
 ---
 
 ### [Onboarding]({{ '/guide/onboarding/introduction/' | relative_url }})
 
 Familiarizes designers with the products, features, and terms needed to create better experiences for first time users.
-
----
-
-### [Private key management]({{ '/guide/private-key-management/introduction/' | relative_url }})
-
-Details the many techniques that can be used to store private keys.
 
 ---
 
@@ -81,9 +75,27 @@ Explores approaches to diverse uses cases with wireframes, designs and prototype
 
 ---
 
+### [How it works]({{ '/guide/how-it-works/' | relative_url }})
+
+Learn about how bitcoin works under the hood.
+
+---
+
+### [Resources]({{ '/guide/resources/' | relative_url }})
+
+Resources to help you build better bitcoin products.
+
+---
+
+### [Contribute to the guide]({{ '/guide/contribute/' | relative_url }})
+
+Join our open community and help us improve the Bitcoin Design Guide.
+
+---
+
 ### [Glossary]({{ '/guide/glossary/' | relative_url }})
 
-Helps you learn the most need-to-know bitcoin terminology from Address to ZPUB
+Helps you learn the most need-to-know bitcoin terminology from Address to zpub.
 
 ---
 

@@ -30,43 +30,17 @@ A brief introduction and summary of all pages in this section. The idea is that 
 
 # Designing bitcoin products
 
-
-
----
-
-### [Why design for bitcoin]({{ '/guide/designing-products/why-design-for-bitcoin/' | relative_url }})
-
-Bitcoin is fundamentally open and participatory and allows designers and creators to explore and shape experiences for users around the globe.
-
----
-
-### [Open design]({{ '/guide/designing-products/open-design/' | relative_url }})
-
-Open design is about global collaboration that balances the free exchange of design information, the independence of individual designers and the collective power of collaboration.
-
----
-
-### [Bitcoin design principles]({{ '/guide/designing-products/principles/' | relative_url }})
-
-Core bitcoin design principles recommended by the Bitcoin Design Community.
-
----
-
-### [User research]({{ '/guide/designing-products/user-research/' | relative_url }})
-
-All products begin with user needs and end in those same user's hands. User research is a fundamental activity that helps us focus on things people care about.
-
----
-
-### [Usage life cycle]({{ '/guide/designing-products/usage-life-cycle/' | relative_url }})
-
-All users start without any knowledge of bitcoin or your particular product. As we learn more, our understanding and needs change. As designers, it is essential to guide users through this experience.
-
 ---
 
 ### [Personal finance]({{ '/guide/designing-products/personal-finance/' | relative_url }})
 
 If we consider bitcoin money, we need to consider how bitcoin users think about their finances. This page provides a simple framework that can serve as a starting point, deriving bitcoin software and hardware setups from common budgeting categories.
+
+---
+
+### [Conducting research]({{ '/guide/designing-products/user-research/' | relative_url }})
+
+All products begin with user needs and end in those same user's hands. User research is a fundamental activity that helps us focus on things people care about.
 
 ---
 
@@ -82,27 +56,27 @@ Most bitcoin applications share certain user activities, from initial setup to m
 
 ---
 
+### [Usage life cycle]({{ '/guide/designing-products/usage-life-cycle/' | relative_url }})
+
+All users start without any knowledge of bitcoin or your particular product. As we learn more, our understanding and needs change. As designers, it is essential to guide users through this experience.
+
+---
+
+### [Units & Symbols]({{ '/guide/designing-products/units-and-symbols/' | relative_url }})
+
+The basics on units and currency symbols, how to format them and what options to provide users with.
+
+---
+
 ### [Interoperability]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }})
 
 Get to know the points of interaction and overlap connecting payment links, wallet recovery, node configurations, and more.
 
 ---
 
-### [Lightning service providers]({{ '/guide/designing-products/lightning-service-providers/' | relative_url }})
-
-Common user experience problems of the Lightning network that can be resolved by third-party services.
-
----
-
-### [Design resources]({{ '/guide/designing-products/design-resources/' | relative_url }})
-
-Shared design source files and a suggested process for collaborating on creative work.
-
----
-
 {% include next-previous.html
    previousUrl = "/guide/getting-started/hardware/"
    previousName = "Hardware overview"
-   nextUrl = "/guide/designing-products/why-design-for-bitcoin/"
-   nextName = "Why design for bitcoin"
+   nextUrl = "/guide/designing-products/personal-finance/"
+   nextName = "Personal finance"
 %}

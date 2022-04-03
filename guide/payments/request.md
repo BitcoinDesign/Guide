@@ -116,7 +116,7 @@ When generating single-use payment requests, the receiver may want to add an amo
 
 Zero amount single-use payment requests should also be easily generated from the home screen by tapping request without an amount entered. By allowing the sender to set the amount when they are ready to pay, reduces both parties exposure to price volatility, as the amount paid in bitcoin will be more accurate in fiat terms.
 
-Units must be toggleable between bitcoin, satoshi and the users local currency. Ensure the unit being entered is clearly visible, to prevent entering the wrong unit amount. More on the [Units & Symbols page]({{ "/guide/payments/units-and-symbols/" | relative_url }}).
+Units must be toggleable between bitcoin, satoshi and the users local currency. Ensure the unit being entered is clearly visible, to prevent entering the wrong unit amount. More on the [Units & Symbols page]({{ "/guide/designing-products/units-and-symbols/" | relative_url }}).
 
 ### Invoice expirations
 
@@ -463,11 +463,11 @@ For in-person payments, showing the confirmation screen to the sender will likel
 
 ---
 
-Next, we go over the different [payment request formats](/guide/payments/request/payment-request-formats/) available in bitcoin.
+Next, we go over the design considerations for [sending]({{ "/guide/payments/send/" | relative_url }}) bitcoin.
 
 {% include next-previous.html
    previousUrl = "/guide/payments"
    previousName = "Payments"
-   nextUrl = "/guide/payments/request/payment-request-formats"
-   nextName = "Payment request formats"
+   nextUrl = "/guide/payments/send/"
+   nextName = "Sending bitcoin"
 %}

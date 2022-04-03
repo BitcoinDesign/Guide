@@ -169,7 +169,7 @@ There are also static [invoice types]({{ '/guide/payments/request/payment-reques
 
 **Amount**
 
-If no amount is provided via a payment request, manual entry should be simple and convenient so users don’t accidentally send an incorrect amount. The amount should be displayed in bitcoin or satoshi value, as well as the user’s local currency. Options to quickly toggle between them should be available. More on the [Units & Symbols page]({{ '/guide/payments/units-and-symbols/' | relative_url }}).
+If no amount is provided via a payment request, manual entry should be simple and convenient so users don’t accidentally send an incorrect amount. The amount should be displayed in bitcoin or satoshi value, as well as the user’s local currency. Options to quickly toggle between them should be available. More on the [Units & Symbols page]({{ '/guide/designing-products/units-and-symbols/' | relative_url }}).
 
 **Meta data**
 
@@ -289,11 +289,11 @@ Effectively supporting users when problems occur can build trust and confidence,
 
 There are situations in which users may want to make more complex adjustments to the payment.
 
-**Coin selection**
+### Coin selection
 
-Some users may prefer to choose which of their bitcoin (UTXOs to be precise) to send, in order to protect their privacy. More on this topic on the [Coin selection page]({{ '/guide/glossary/coin-selection/' | relative_url }}).
+Some users may prefer to choose which of their bitcoin (UTXOs to be precise) to send, in order to protect their privacy. More on this topic on the [Coin selection page]({{ '/guide/how-it-works/coin-selection/' | relative_url }}).
 
-**Lightning routing options**
+### Lightning routing options
 
 Routing is a probabilistic endeavor. For example, a routing algorithm may identify two routes. The first one has a low fee but is also less likely to succeed. The second route has a higher fee, but is more likely to succeed. Due to the technical complexity and unknowns, there is [ongoing conversation](https://github.com/BitcoinDesign/Guide/issues/585) whether routing options are relevant for users to be aware of and make decisions on.
 
@@ -302,8 +302,8 @@ Routing is a probabilistic endeavor. For example, a routing algorithm may identi
 Now that we've tackled sending and receiving, let's look at how we can summarize this [activity]({{ '/guide/payments/activity' | relative_url }}) and make it useful.
 
 {% include next-previous.html
-   previousUrl = "/guide/payments/request/payment-request-formats"
-   previousName = "Requesting bitcoin"
+   previousUrl = "/guide/payments/send/"
+   previousName = "Sending bitcoin"
    nextUrl = "/guide/payments/activity/"
    nextName = "Activity"
 %}

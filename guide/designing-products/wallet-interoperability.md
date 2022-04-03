@@ -2,7 +2,7 @@
 layout: guide
 title: Interoperability
 description: Designing for seamless experiences across bitcoin applications.
-nav_order: 9
+nav_order: 7
 parent: Designing bitcoin products
 permalink: /guide/designing-products/wallet-interoperability/
 main_classes: -no-top-padding
@@ -156,7 +156,7 @@ Most bitcoin applications rely on external data sources (like currency conversio
    layout = "float-right-desktop"
 %}
 
-Although every application will have its own unique interface, there are certain elements that are beneficial to keep consistent across applications, in order to improve the overall user experience. This includes things like [naming conventions](/guide/glossary/), [icons](https://bitcoinicons.com), [unit formatting](/guide/payments/units-and-symbols/), etc. We have many suggestions throughout this design guide to help you.
+Although every application will have its own unique interface, there are certain elements that are beneficial to keep consistent across applications, in order to improve the overall user experience. This includes things like [naming conventions](/guide/glossary/), [icons](https://bitcoinicons.com), [unit formatting](/guide/designing-products/units-and-symbols/), etc. We have many suggestions throughout this design guide to help you.
 
 </div>
 
@@ -173,7 +173,7 @@ Although every application will have its own unique interface, there are certain
    layout = "float-right-desktop"
 %}
 
-Connecting to the bitcoin and/or Lightning network should be as trust-minimized and privacy preserving as possible. While it is convenient when applications provide their own node connection, it is beneficial to allow users to connect to a trusted node or their own self-hosted bitcoin and/or Lightning node. Having the option to choose how that data is queried, say using [Neutrino over SPV](https://bitcoin.design/guide/glossary/node/#light-nodes), should also be an option. This results in better network [decentralization](https://bitcoin.design/guide/designing-products/principles/#decentralization), and has privacy and [security](https://bitcoin.design/guide/designing-products/principles/#security) benefits for users.
+Connecting to the bitcoin and/or Lightning network should be as trust-minimized and privacy preserving as possible. While it is convenient when applications provide their own node connection, it is beneficial to allow users to connect to a trusted node or their own self-hosted bitcoin and/or Lightning node. Having the option to choose how that data is queried, say using [Neutrino over SPV](https://bitcoin.design/guide/glossary/node/#light-nodes), should also be an option. This results in better network [decentralization](https://bitcoin.design/guide/getting-started/principles/#decentralization), and has privacy and [security](https://bitcoin.design/guide/getting-started/principles/#security) benefits for users.
 
 If your application uses the Lightning network, users should be running their own Lightning node. However, there are certain aspects of a Lightning node that can be outsourced, such as creating inbound liquidity from an LSP or constructing payment paths. Your application should give users the options as to what, if any, services they want to trust a third-party to conduct. Your application should try to avoid having users locked into your application and give them various options for outsourcing Lightning services.
 
@@ -232,11 +232,11 @@ Your application should support constructing and managing transaction files, als
 
 ---
 
-Next we will go over additional [Lightning services]({{ '/guide/designing-products/lightning-services/' | relative_url }}) you can offer in your Bitcoin applications to improve the overall user expereience.
+Next, we cover how to onboard new users to a bitcoin daily spending wallet [onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}).
 
 {% include next-previous.html
-   previousUrl = "/guide/designing-products/common-user-flows/"
-   previousName = "Common user flows"
-   nextUrl = "/guide/designing-products/lightning-service-providers/"
-   nextName = "Lightning service providers"
+   previousUrl = "/guide/designing-products/units-and-symbols/"
+   previousName = "Units and symbols"
+   nextUrl = "/guide/onboarding/introduction/"
+   nextName = "Onboarding"
 %}

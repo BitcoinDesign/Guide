@@ -74,11 +74,11 @@ Some less popular methods for restoring a wallet include importing a file with a
 
 ---
 
-Next, let’s look at [private key management]({{ '/guide/private-key-management/introduction/' | relative_url }}) to consider for your bitcoin application.
+Next, let’s take a deep dive into bitcoin [payments]({{ '/guide/payments/' | relative_url }}) to consider for your bitcoin application.
 
 {% include next-previous.html
    previousUrl = "/guide/onboarding/protecting-a-wallet/"
    previousName = "Protecting a wallet"
-   nextUrl = "/guide/private-key-management/introduction/"
-   nextName = "Private key management"
+   nextUrl = "/guide/payments/"
+   nextName = "Payments"
 %}

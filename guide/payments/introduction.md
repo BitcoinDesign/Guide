@@ -2,7 +2,7 @@
 layout: guide
 title: Payments
 description: Diving into the user experience of mobile bitcoin payments.
-nav_order: 6
+nav_order: 5
 has_children: true
 permalink: /guide/payments/
 main_classes: -no-top-padding
@@ -63,12 +63,6 @@ Simplifing how users work with invoices, addresses and payments via contacts.
 ### [Privacy]({{ '/guide/payments/privacy/' | relative_url }})
 
 An overview of how to help users maintain transaction privacy with bitcoin.
-
----
-
-### [Units & Symbols]({{ '/guide/payments/units-and-symbols/' | relative_url }})
-
-The basics on units and currency symbols, how to format them and what options to provide users with.
 
 ---
 
