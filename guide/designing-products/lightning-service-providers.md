@@ -177,7 +177,7 @@ Lightning wallet need local on-chain bitcoin to open a payment channel. Having t
 
 A swap-in channel open service solves this by allowing users to fund a lightning wallet with an on-chain payment. The user sends their on-chain bitcoin to the LSP who opens a channel for the user.
 
-Swap-ins can be done in a trusted way, or trust-minimized way using [submarine swaps](https://blog.muun.com/a-closer-look-at-submarine-swaps-in-the-lightning-network/). A [dual-funded]({{ '/guide/designing-products/lightning-service-providers/#dual-funding' | relative_url }}) channel open is a more trust-minimized way to resolve this issue.
+Swap-ins can be done in a trusted way or a trust-minimized way using [submarine swaps](https://blog.muun.com/a-closer-look-at-submarine-swaps-in-the-lightning-network/). A [dual-funded]({{ '/guide/designing-products/lightning-service-providers/#dual-funding' | relative_url }}) channel open is a more trust-minimized way to resolve this issue.
 
 The client [Loop](https://lightning.engineering/loop/) and the non-custodial lightning wallet [Phoenix](https://phoenix.acinq.co/) offer this service.
 
