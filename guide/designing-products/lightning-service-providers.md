@@ -173,7 +173,7 @@ A spend-unconfirmed channel is trusted until the transaction is confirmed. Users
    layout = "float-right"
 %}
 
-Lightning wallet need local on-chain bitcoin to open a payment channel. Having to fund a lightning wallet on-chain, then use those bitcoin to open a channel adds a lot of friction to onboarding. This is particularly the case for new users who likely only have on-chain bitcoin.
+Funding a lightning wallet typically consists of two steps. First, the user needs to deposit on-chain funds. Second, a lightning channel needs to be opened. This adds a lot of friction, particularly for new users.
 
 A swap-in channel open service solves this by allowing users to fund a lightning wallet with an on-chain payment. The user sends their on-chain bitcoin to the LSP who opens a channel for the user.
 
