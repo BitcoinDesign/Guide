@@ -85,7 +85,7 @@ To use a lightning wallet, users first need a payment channel. Manually opening 
 
 All of this can be complex for users to deal with. A channel opening service automatically opens a channel to the LSP for the user when necessary.
 
-Users should always have the option to manually open channels as to not completely rely on a LSP.
+Users should always have the option to manually open channels, as to not completely rely on a LSP.
 
 Below, we cover the different ways in which a channel open service can be offered, depending on user needs and the trade-offs they are willing to make.
 
