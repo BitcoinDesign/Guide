@@ -29,7 +29,7 @@ Illustration sources: https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id
 
 # Lightning Service Providers
 
-The lightning network is our best solution to bitcoins lack of scalability. However, using the lightning network self-custodially brings about many new usability issues, such as complex channel management and backups.
+The lightning network is our best solution to bitcoin's lack of scalability. However, using the lightning network self-custodially brings about many new usability issues, such as complex channel management and backups.
 
 Lightning service providers (LSPs) aim to solve these issues. They act as non-custodial third parties that bitcoin lightning wallets can connect to and use services to automate various lightning operations.
 
