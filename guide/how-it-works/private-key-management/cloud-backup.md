@@ -61,7 +61,7 @@ When encrypting the user's private key for a cloud backup, one option would be f
 
 {% include tip/close.html %}
 
-To see what a user experience with this scheme could look like, see the [daily spending case study]({{ '/guide/case-studies/cloud-backup/' | relative_url }}).
+To see what a user experience with this scheme could look like, see the [daily spending reference design]({{ '/guide/reference-design/cloud-backup/' | relative_url }}).
 
 {% include fact/pros.html %}
 

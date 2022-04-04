@@ -69,7 +69,7 @@ Covers the complexities encountered when sending and receiving bitcoin.
 
 ---
 
-### [Case studies]({{ '/guide/case-studies/' | relative_url }})
+### [Reference design]({{ '/guide/reference-design/' | relative_url }})
 
 Explores approaches to diverse uses cases with wireframes, designs and prototypes.
 

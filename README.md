@@ -30,7 +30,7 @@ Here is the content that is currently live:
 *   [Onboarding](https://bitcoin.design/guide/onboarding/introduction/)
 *   [Private key management](https://bitcoin.design/guide/private-key-management/introduction/)
 *   [Payments](https://bitcoin.design/guide/payments/)
-*   [Case studies](https://bitcoin.design/guide/case-studies/)
+*   [Reference design](https://bitcoin.design/guide/reference-design/)
 *   [Contribute to guide](https://bitcoin.design/guide/contribute/)
 *   [Glossary](https://bitcoin.design/guide/glossary/)
 

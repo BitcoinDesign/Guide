@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Design research
-description: Bitcoin design related journal articles, independent research, case studies, and blog posts & write-ups.
+description: Bitcoin design related journal articles, independent research, case studys, and blog posts & write-ups.
 nav_order: 2
 parent: Resources
 permalink: /guide/resources/design-research/
@@ -39,7 +39,7 @@ Below is a collection of published user research findings around bitcoin, from a
 <div class="glossary-toc" markdown="1">
 - [Journal Articles](#journal-articles)
 - [Independent research](#independent-research)
-- [Case studies](#case-studies)
+- [Reference design](#reference-design)
 - [Blog posts & write-ups](#blog-posts--write-ups)
 </div>
 
@@ -164,15 +164,15 @@ _2018 by Rauchs, Blandin, Klein, Pieters, Recanatini, Zhang._
 
 Insights into the current state of the cryptoasset industry. The study gathers survey data from more than 180 cryptoasset companies and individuals, covering 47 countries across five world regions, focusing on the following four key industry segments: mining, exchange, storage, and payments.
 
-## Case studies
+## Reference design
 
-#### [How Coinbase works](https://builtformars.com/case-studies/how-coinbase-works)
+#### [How Coinbase works](https://builtformars.com/reference-design/how-coinbase-works)
 
 _2020 by Ramsey._
 
 A UX case case study by [built for mars](https://builtformars.com/) that covers the experience of buying, storing, trading and selling cryptocurrency's like bitcoin on Coinbase.
 
-#### [Breaking down Bitcoin: A UX Design Case Study](https://medium.com/@ngqunzhao/breaking-down-bitcoin-a-ux-design-case-study-7fdefbe7e1b8)
+#### [Breaking down Bitcoin: A UX Design Case study](https://medium.com/@ngqunzhao/breaking-down-bitcoin-a-ux-design-case-study-7fdefbe7e1b8)
 
 _2019 by Zhao._
 
@@ -184,7 +184,7 @@ The study conducted to look into the interactions between users and the Lightnin
 
 _2019 by Estevão._
 
-#### [Making design better for crypto apps: Abra UX Case study](https://medium.com/@kagakawa/abra-app-ux-case-study-2eb2a6e09c70)
+#### [Making design better for crypto apps: Abra UX Reference design](https://medium.com/@kagakawa/abra-app-ux-case-study-2eb2a6e09c70)
 
 _2018 by Kawabata._
 

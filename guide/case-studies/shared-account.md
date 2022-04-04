@@ -1,13 +1,13 @@
 ---
 layout: guide
 title: Shared account
-description: Bitcoin wallet design case study for accounts managed together by multiple owners.
+description: Bitcoin wallet design reference design for accounts managed together by multiple owners.
 nav_order: 4
-parent: Case studies
-permalink: /guide/case-studies/shared-account/
+parent: Reference design
+permalink: /guide/reference-design/shared-account/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/case-studies/shared-account/shared-account-preview.jpg
-image_base: /assets/images/guide/case-studies/shared-account/
+image: https://bitcoin.design/assets/images/guide/reference-design/shared-account/shared-account-preview.jpg
+image_base: /assets/images/guide/reference-design/shared-account/
 images:
     - file: first
       alt: App cover screen with a logo, intro and primary call-to-action.
@@ -39,7 +39,7 @@ images:
 
 Editor's notes
 
-Shared account case study.
+Shared account reference design.
 
 Illustration sources
 
@@ -76,11 +76,11 @@ Try the prototype below to see what such a user experience could be like.
 
 {% include prototype.html
    link = "https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A824&viewport=333%2C41%2C0.37497082352638245&scaling=scale-down"
-   image = "/assets/images/guide/case-studies/shared-account/case-shared.png"
-   retina = "/assets/images/guide/case-studies/shared-account/case-shared@2x.png"
-   mobile = "/assets/images/guide/case-studies/shared-account/case-shared-mobile.png"
-   mobileRetina = "/assets/images/guide/case-studies/shared-account/case-shared-mobile@2x.png"
-   alt-text = "Image of case study prototype"
+   image = "/assets/images/guide/reference-design/shared-account/case-shared.png"
+   retina = "/assets/images/guide/reference-design/shared-account/case-shared@2x.png"
+   mobile = "/assets/images/guide/reference-design/shared-account/case-shared-mobile.png"
+   mobileRetina = "/assets/images/guide/reference-design/shared-account/case-shared-mobile@2x.png"
+   alt-text = "Image of reference design prototype"
    width = 800
    height = 500
 %}
@@ -109,14 +109,14 @@ The wireframe screens below show the main [onboarding]({{ '/guide/onboarding/int
 
 </div>
 
-**Case study resources**
+**Reference design resources**
 - [Protoype](https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A824&viewport=333%2C41%2C0.37497082352638245&scaling=scale-down)
 - [Figma design file](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A822)
 
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/case-studies/upgradeable-wallet/"
+   previousUrl = "/guide/reference-design/upgradeable-wallet/"
    previousName = "Upgradeable wallet"
    nextUrl = "/guide/how-it-works/"
    nextName = "How it works"

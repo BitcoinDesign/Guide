@@ -30,7 +30,7 @@ Shared design source files and a suggested process for collaborating on creative
 
 ### [Design research]({{ '/guide/resources/design-research/' | relative_url }})
 
-A list of bitcoin design related journal articles, independent research, case studies, and blog posts & write-ups.
+A list of bitcoin design related journal articles, independent research, reference designs, and blog posts & write-ups.
 
 ---
 

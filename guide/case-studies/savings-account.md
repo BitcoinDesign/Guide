@@ -1,13 +1,13 @@
 ---
 layout: guide
 title: Savings account
-description: A UX case study for a multi-key bitcoin wallet designed for both daily spending and storing medium amounts.
+description: A UX reference design for a multi-key bitcoin wallet designed for both daily spending and storing medium amounts.
 nav_order: 2
-parent: Case studies
-permalink: /guide/case-studies/savings-account/
+parent: Reference design
+permalink: /guide/reference-design/savings-account/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/case-studies/multisig-wallet/multisig-wallet-preview.jpg
-image_base: /assets/images/guide/case-studies/multisig-wallet/
+image: https://bitcoin.design/assets/images/guide/reference-design/multisig-wallet/multisig-wallet-preview.jpg
+image_base: /assets/images/guide/reference-design/multisig-wallet/
 images_onboarding:
     - file: onboarding/cover
       alt:
@@ -149,7 +149,7 @@ images_limits:
 
 Editor's notes
 
-Savings account case study.
+Savings account reference design.
 
 Illustration sources
 
@@ -158,10 +158,10 @@ https://www.figma.com/community/file/968416729557947210
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/case-studies/multisig-wallet/savings-account-header.jpg"
-   retina = "/assets/images/guide/case-studies/multisig-wallet/savings-account-header@2x.jpg"
-   mobile = "/assets/images/guide/case-studies/multisig-wallet/savings-account-header-mobile.jpg"
-   mobileRetina = "/assets/images/guide/case-studies/multisig-wallet/savings-account-header-mobile@2x.jpg"
+   image = "/assets/images/guide/reference-design/multisig-wallet/savings-account-header.jpg"
+   retina = "/assets/images/guide/reference-design/multisig-wallet/savings-account-header@2x.jpg"
+   mobile = "/assets/images/guide/reference-design/multisig-wallet/savings-account-header-mobile.jpg"
+   mobileRetina = "/assets/images/guide/reference-design/multisig-wallet/savings-account-header-mobile@2x.jpg"
    alt-text = "Bar chart showing various spending categories"
    caption = ""
    width = 1600
@@ -171,17 +171,17 @@ https://www.figma.com/community/file/968416729557947210
 
 # Savings account
 
-In this case study, we look at a product that balances daily spending with what a bank would call a [savings]({{ '/guide/designing-products/personal-finance/#savings' | relative_url }}) account where the user might store wealth long term. Safeguards against loss will be a higher priority than with a frequent spending product, and we might therefore accept more friction both when setting up the wallet and when transacting. If users have no prior bitcoin knowledge, we should expect to spend a significant effort educating them to put them in a position to safely operate the wallet product.
+In this reference design, we look at a product that balances daily spending with what a bank would call a [savings]({{ '/guide/designing-products/personal-finance/#savings' | relative_url }}) account where the user might store wealth long term. Safeguards against loss will be a higher priority than with a frequent spending product, and we might therefore accept more friction both when setting up the wallet and when transacting. If users have no prior bitcoin knowledge, we should expect to spend a significant effort educating them to put them in a position to safely operate the wallet product.
 
 The following [prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=1%3A55974&viewport=-304%2C225%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=1%3A55974&show-proto-sidebar=1) includes initial onboarding, sending bitcoin, and key replacement, which are explained in detail further below.
 
 {% include prototype.html
    link = "https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=1%3A55974&viewport=-304%2C225%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=1%3A55974&show-proto-sidebar=1"
-   image = "/assets/images/guide/case-studies/multisig-wallet/case-current.jpg"
-   retina = "/assets/images/guide/case-studies/multisig-wallet/case-current@2x.jpg"
-   mobile = "/assets/images/guide/case-studies/multisig-wallet/case-current-mobile.jpg"
-   mobileRetina = "/assets/images/guide/case-studies/multisig-wallet/case-current-mobile@2x.jpg"
-   alt-text = "Three stacked screens of the case study prototype"
+   image = "/assets/images/guide/reference-design/multisig-wallet/case-current.jpg"
+   retina = "/assets/images/guide/reference-design/multisig-wallet/case-current@2x.jpg"
+   mobile = "/assets/images/guide/reference-design/multisig-wallet/case-current-mobile.jpg"
+   mobileRetina = "/assets/images/guide/reference-design/multisig-wallet/case-current-mobile@2x.jpg"
+   alt-text = "Three stacked screens of the reference design prototype"
    width = 800
    height = 500
 %}
@@ -197,7 +197,7 @@ An important question is the combination of key-storage devices and their distri
 - Full sovereignty (one or more purpose-built signing devices)
 - All keys off-line (two or more purpose-built signing devices)
 
-For this case study, we will go with the middle ground option, which will require one purpose-built signing device such as a [hardware wallet]({{ '/guide/getting-started/hardware/#hardware-wallets' | relative_url }}). The second key will be created on the user’s main mobile device and automatically backed up to their cloud storage provider. The wallet application provider will hold the third key on a server for wallet recovery, key replacement, and automatic approval of low-value transactions (auto-signing). Neither of the two keys in the user’s control (mobile and signing device) will require recovery phrase backups, although this could be offered as an option.
+For this reference design, we will go with the middle ground option, which will require one purpose-built signing device such as a [hardware wallet]({{ '/guide/getting-started/hardware/#hardware-wallets' | relative_url }}). The second key will be created on the user’s main mobile device and automatically backed up to their cloud storage provider. The wallet application provider will hold the third key on a server for wallet recovery, key replacement, and automatic approval of low-value transactions (auto-signing). Neither of the two keys in the user’s control (mobile and signing device) will require recovery phrase backups, although this could be offered as an option.
 
 ### The onboarding experience
 
@@ -205,7 +205,7 @@ The screens below show the sequence of actions the user is guided through to set
 
 {% include image-gallery.html pages = page.images_onboarding %}
 
-Note that this experience could be designed in a progressive way. Users would start with a simple single-key wallet and upgrade to a multi-key configuration as needed. This design is explored in the [upgradeable wallet]({{ '/guide/case-studies/upgradeable-wallet/' | relative_url }}) case study.
+Note that this experience could be designed in a progressive way. Users would start with a simple single-key wallet and upgrade to a multi-key configuration as needed. This design is explored in the [upgradeable wallet]({{ '/guide/reference-design/upgradeable-wallet/' | relative_url }}) reference design.
 
 ### Making small payments
 
@@ -247,7 +247,7 @@ Daily and per-transaction spending limits are a unique aspect of this applicatio
 - Implement thorough backup code and instructions for users
 - Usage could be simplified by having hardware devices designed/customized by the software maker (compare banks and their digital token signers common in Europe)
 
-**Case study resources**
+**Reference design resources**
 - [Protoype](https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=6%3A11&viewport=333%2C41%2C0.37497082352638245&scaling=scale-down)
 - [Figma design file](https://www.figma.com/file/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?node-id=1%3A55973)
 - [Use case]({{ '/guide/designing-products/personal-finance/#savings' | relative_url }})
@@ -256,8 +256,8 @@ Daily and per-transaction spending limits are a unique aspect of this applicatio
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/case-studies/cloud-backup/"
+   previousUrl = "/guide/reference-design/cloud-backup/"
    previousName = "Daily spending"
-   nextUrl = "/guide/case-studies/upgradeable-wallet/"
+   nextUrl = "/guide/reference-design/upgradeable-wallet/"
    nextName = "Upgradeable wallet"
 %}

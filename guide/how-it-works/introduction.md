@@ -57,7 +57,7 @@ An overview of bitcoin payments, common concepts, and the transaction lifecycle.
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/case-studies/shared-account/"
+   previousUrl = "/guide/reference-design/shared-account/"
    previousName = "Shared account"
    nextUrl = "/guide/how-it-works/backups/"
    nextName = "Bitcoin backups"
