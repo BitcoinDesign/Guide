@@ -2,7 +2,7 @@
 layout: guide
 title: Case studies
 description: A range of case study designs for bitcoin applications.
-nav_order: 6
+nav_order: 5
 has_children: true
 permalink: /guide/case-studies/
 main_classes: -no-top-padding
@@ -63,8 +63,8 @@ An onboarding experience for a mobile wallet shared by a couple who want to acce
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/designing-products/units-and-symbols/"
-   previousName = "Units & Symbols"
+   previousUrl = "/guide/daily-spending-wallet/privacy/"
+   previousName = "Daily spending wallet privacy"
    nextUrl = "/guide/case-studies/cloud-backup/"
    nextName = "Daily spending"
 %}

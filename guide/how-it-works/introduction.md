@@ -2,7 +2,7 @@
 layout: guide
 title: How it works
 description: Find out about the complexities
-nav_order: 7
+nav_order: 6
 has_children: true
 permalink: /guide/how-it-works/
 main_classes: -no-top-padding
