@@ -312,11 +312,11 @@ You could also ask users to select (or manually type out) a random word from the
 
 ---
 
-The next section will highlight some options for [protecting a wallet]({{ '/guide/onboarding/protecting-a-wallet/' | relative_url }}).
+Next, we cover how to use these backups to [recover a wallet]({{ '/guide/daily-spending-wallet/backup-and-recovery/recovery/' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/daily-spending-wallet/backup-and-recovery/cloud-backup/"
    previousName = "Automatic cloud backups"
-   nextUrl = "daily-spending-wallet/backup-and-recovery/recovery/"
+   nextUrl = "/guide/daily-spending-wallet/backup-and-recovery/recovery/"
    nextName = "Recovery"
 %}

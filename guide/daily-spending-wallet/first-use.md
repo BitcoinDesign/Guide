@@ -39,9 +39,9 @@ Illustration sources
 There are a number of common tasks a user might want to achieve the first time they open a wallet application:
 
 - [Create a new wallet](/guide/daily-spending-wallet/first-use/#creating-a-wallet), or
-- [Restore an existing wallet](/guide/daily-spending-wallet//restoring-a-wallet/)
-- [Backup a wallet](/guide/daily-spending-wallet/backing-up-a-wallet/)
-- [Fund a wallet](/guide/daily-spending-wallet/funding-a-wallet/)
+- [Recover an existing wallet](/guide/daily-spending-wallet/backup-and-recovery/recovery/)
+- [Backup a wallet](/guide/daily-spending-wallet/backup-and-recovery/landing-page/)
+- [Fund a wallet](/guide/daily-spending-wallet/funding/)
 
 While the first two, creating or restoring a wallet, normally need to be tackled straight away, the last two can be designed to fit the flow and capability of your application.
 

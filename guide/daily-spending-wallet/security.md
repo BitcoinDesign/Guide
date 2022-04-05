@@ -37,7 +37,7 @@ Illustration sources
    layout = "full-width"
 %}
 
-# Security
+# Wallet security
 {: .no_toc }
 
 ---

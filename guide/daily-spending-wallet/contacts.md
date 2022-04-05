@@ -248,10 +248,10 @@ Your application should also try to provide convenient backup for contacts, for 
 
 ---
 
-Next, we cover [security considerations]({{ '/guide/daily-spending-wallet/privacy/' | relative_url }}) when to consider when making bitcoin payments.
+The next section looks at [security considerations]({{ '/guide/daily-spending-wallet/privacy/' | relative_url }}) when designing a daily spending wallet.
 
 {% include next-previous.html
-   previousUrl = "/guide/daily-spending-wallet/activity"
+   previousUrl = "/guide/daily-spending-wallet/activity/"
    previousName = "Activity"
    nextUrl = "/guide/daily-spending-wallet/security/"
    nextName = "Security"

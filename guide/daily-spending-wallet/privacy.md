@@ -23,7 +23,7 @@ image: /assets/images/guide/daily-spending-wallet/privacy/privacy-preview.jpg
 %}
 
 
-# Privacy
+# Wallet privacy
 
 <!--
 This page should inform about what information is made public when sending or receiving, how the application can help minimize unnecessary privacy leaks, basic application functionality to help, and when we can, more advanced options.
@@ -158,7 +158,7 @@ There is no perfect solution to guarantee 100% privacy that lasts forever becaus
 
 ---
 
-Next, let's dive into how to [secure]({{ '/guide/daily-spending-wallet/security/' | relative_url }}) your bitcoin when using a daily spending wallet.
+Next, let's dive into some [case studies]({{ '/guide/case-studies/' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/daily-spending-wallet/security/"

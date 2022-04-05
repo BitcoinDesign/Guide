@@ -330,11 +330,11 @@ Offering on-demand channels as a Lightning service allows users to receive Light
 
 ---
 
-Now that your wallet has some bitcoin, it's time to consider how [backups & recovery]({{ '/guide/daily-spending-wallet/backup-and-recovery/' | relative_url }}).
+Now that your wallet has some bitcoin, it's time to consider how [backups & recovery]({{ '/guide/daily-spending-wallet/backup-and-recovery/landing-page/' | relative_url }}) work.
 
 {% include next-previous.html
    previousUrl = "/guide/daily-spending-wallet/first-use/"
    previousName = "First use"
-   nextUrl = "/guide/daily-spending-wallet/backup-and-recovery/"
-   nextName = "Backing up a wallet"
+   nextUrl = "/guide/daily-spending-wallet/backup-and-recovery/landing-page/"
+   nextName = "Backup & recovery"
 %}

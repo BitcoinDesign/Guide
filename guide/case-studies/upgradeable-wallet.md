@@ -60,7 +60,7 @@ The solution in this case could be a wallet that enables the user to upgrade the
 %}
 
 #### Design considerations
-- Low friction [onboarding]({{ '/guide/onboarding/introduction/' | relative_url }})
+- Low friction onboarding
 - Guide the user through scheme upgrades as funds grow
 
 #### Technical considerations
@@ -97,7 +97,7 @@ The screens below show how this architecture allows users to get onboarded quick
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/case-studies/savings-account/"
+   previousUrl = "/guide/case-studies/savings-wallet/"
    previousName = "Savings account"
    nextUrl = "/guide/case-studies/shared-account/"
    nextName = "Shared account"

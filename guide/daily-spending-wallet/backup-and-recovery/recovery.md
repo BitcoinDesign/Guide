@@ -77,7 +77,7 @@ Some less popular methods for restoring a wallet include importing a file with a
 
 ---
 
-Next, let’s take a deep dive into [requesting]({{ '/guide/daily-spending-wallet/request' | relative_url }}) bitcoin.
+Next, let’s take a deep dive into [requesting]({{ '/guide/daily-spending-wallet/requesting/' | relative_url }}) bitcoin.
 
 {% include next-previous.html
    previousUrl = "/guide/daily-spending-wallet/backup-and-recovery/manual-backup/"

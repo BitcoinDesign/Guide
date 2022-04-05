@@ -1,13 +1,15 @@
 ---
 layout: guide
-title: Savings account
+title: Savings wallet
 description: A UX case study for a multi-key bitcoin wallet designed for both daily spending and storing medium amounts.
 nav_order: 2
 parent: Case studies
-permalink: /guide/case-studies/savings-account/
+permalink: /guide/case-studies/savings-wallet/
+redirect_from:
+ - /guide/case-studies/multisig-wallet/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/case-studies/multisig-wallet/multisig-wallet-preview.jpg
-image_base: /assets/images/guide/case-studies/multisig-wallet/
+image: https://bitcoin.design/assets/images/guide/case-studies/savings-wallet/multisig-wallet-preview.jpg
+image_base: /assets/images/guide/case-studies/savings-wallet/
 images_onboarding:
     - file: onboarding/cover
       alt:
@@ -23,7 +25,7 @@ images_onboarding:
       caption: Overview of the key setup process.
     - file: onboarding/key-1-intro
       alt:
-      caption: Explanation of how Key 1 is set up. More on [automatic cloud backup](/guide/onboarding/backing-up-a-wallet/cloud-backup/).
+      caption: Explanation of how Key 1 is set up. More on [automatic cloud backup](/guide/daily-spending-wallet/backup-and-recovery/cloud-backup/).
     - file: onboarding/key-1-service
       alt:
       caption: Choice of cloud storage provider.
@@ -113,7 +115,7 @@ images_recovery:
       caption: Additional messaging about recovery costs.
     - file: recovery/device-registration
       alt:
-      caption: Repeat the device registration flow from the onboarding sequencc.
+      caption: Repeat the device registration flow from the onboarding sequence.
     - file: recovery/complete
       alt:
       caption: A confirmation that the recovery is complete and the new wallet is ready for use.
@@ -158,10 +160,10 @@ https://www.figma.com/community/file/968416729557947210
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/case-studies/multisig-wallet/savings-account-header.jpg"
-   retina = "/assets/images/guide/case-studies/multisig-wallet/savings-account-header@2x.jpg"
-   mobile = "/assets/images/guide/case-studies/multisig-wallet/savings-account-header-mobile.jpg"
-   mobileRetina = "/assets/images/guide/case-studies/multisig-wallet/savings-account-header-mobile@2x.jpg"
+   image = "/assets/images/guide/case-studies/savings-wallet/savings-account-header.jpg"
+   retina = "/assets/images/guide/case-studies/savings-wallet/savings-account-header@2x.jpg"
+   mobile = "/assets/images/guide/case-studies/savings-wallet/savings-account-header-mobile.jpg"
+   mobileRetina = "/assets/images/guide/case-studies/savings-wallet/savings-account-header-mobile@2x.jpg"
    alt-text = "Bar chart showing various spending categories"
    caption = ""
    width = 1600
@@ -169,7 +171,7 @@ https://www.figma.com/community/file/968416729557947210
    layout = "full-width"
 %}
 
-# Savings account
+# Savings wallet
 
 In this case study, we look at a product that balances daily spending with what a bank would call a [savings]({{ '/guide/designing-products/personal-finance/#savings' | relative_url }}) account where the user might store wealth long term. Safeguards against loss will be a higher priority than with a frequent spending product, and we might therefore accept more friction both when setting up the wallet and when transacting. If users have no prior bitcoin knowledge, we should expect to spend a significant effort educating them to put them in a position to safely operate the wallet product.
 
@@ -177,10 +179,10 @@ The following [prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Sav
 
 {% include prototype.html
    link = "https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=1%3A55974&viewport=-304%2C225%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=1%3A55974&show-proto-sidebar=1"
-   image = "/assets/images/guide/case-studies/multisig-wallet/case-current.jpg"
-   retina = "/assets/images/guide/case-studies/multisig-wallet/case-current@2x.jpg"
-   mobile = "/assets/images/guide/case-studies/multisig-wallet/case-current-mobile.jpg"
-   mobileRetina = "/assets/images/guide/case-studies/multisig-wallet/case-current-mobile@2x.jpg"
+   image = "/assets/images/guide/case-studies/savings-wallet/case-current.jpg"
+   retina = "/assets/images/guide/case-studies/savings-wallet/case-current@2x.jpg"
+   mobile = "/assets/images/guide/case-studies/savings-wallet/case-current-mobile.jpg"
+   mobileRetina = "/assets/images/guide/case-studies/savings-wallet/case-current-mobile@2x.jpg"
    alt-text = "Three stacked screens of the case study prototype"
    width = 800
    height = 500
@@ -188,7 +190,7 @@ The following [prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Sav
 
 ### Private key management
 
-A 2-of-3 [multi-key setup]({{ '/guide/how-it-works/private-key-management/multi-key/' | relative_url }}) would seem the most appropriate here, although it will be a significant hurdle in [onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}). Other schemes could be considered but come with distinct downsides for amounts of value we can expect users to store in this use case. A single-key scheme with an [automatic cloud backup]({{ '/guide/how-it-works/private-key-management/multi-key/' | relative_url }}), [recovery phrase]({{ '/guide/how-it-works/private-key-management/manual-backup/' | relative_url }}) or single [signing device]({{ '/guide/how-it-works/private-key-management/external-signers/' | relative_url }}) could work at the lower end of the value scale, but start to look like less responsible recommendations with higher values due to their single points of failure.
+A 2-of-3 [multi-key setup]({{ '/guide/how-it-works/private-key-management/multi-key/' | relative_url }}) would seem the most appropriate here, although it will be a significant hurdle in [first use]({{ '/guide/daily-spending-wallet/first-use/' | relative_url }}). Other schemes could be considered but come with distinct downsides for amounts of value we can expect users to store in this use case. A single-key scheme with an [automatic cloud backup]({{ '/guide/how-it-works/private-key-management/multi-key/' | relative_url }}), [recovery phrase]({{ '/guide/how-it-works/private-key-management/manual-backup/' | relative_url }}) or single [signing device]({{ '/guide/how-it-works/private-key-management/external-signers/' | relative_url }}) could work at the lower end of the value scale, but start to look like less responsible recommendations with higher values due to their single points of failure.
 
 An important question is the combination of key-storage devices and their distribution. We have many options here, and it might come down to the experience of the target audience and their expected access to the necessary hardware;
 
@@ -256,8 +258,8 @@ Daily and per-transaction spending limits are a unique aspect of this applicatio
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/case-studies/cloud-backup/"
-   previousName = "Daily spending"
+   previousUrl = "/guide/case-studies/"
+   previousName = "Case studies"
    nextUrl = "/guide/case-studies/upgradeable-wallet/"
    nextName = "Upgradeable wallet"
 %}

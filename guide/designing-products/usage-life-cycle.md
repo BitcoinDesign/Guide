@@ -116,9 +116,9 @@ These are questions they might have, and if they can be answered positively, mig
    layout = "float-left"
 %}
 
-The user decides to move forward with your product. They are still not familiar with exactly how it works, and their expectations may not match what your product offers. Therefore, it is crucial to pay close attention to the design of the [onboarding experience]({{ '/guide/onboarding/introduction/' | relative_url }}). Your product should make it easy for users to quickly and successfully solve problems while being introduced to your product's basics and best practices. This sets expectations for future interactions. If the first use is frustrating, users are less likely to use your product again—or to recommend it.
+The user decides to move forward with your product. They are still not familiar with exactly how it works, and their expectations may not match what your product offers. Therefore, it is crucial to pay close attention to the design of the [onboarding experience]({{ '/guide/daily-spending-wallet/first-use/' | relative_url }}). Your product should make it easy for users to quickly and successfully solve problems while being introduced to your product's basics and best practices. This sets expectations for future interactions. If the first use is frustrating, users are less likely to use your product again—or to recommend it.
 
-For bitcoin wallets, the first use can be a difficult balance between creating a simple, seamless experience and ensuring good security practices. A second aspect is to consider how you can set users up for repeat use. An empty wallet is not that useful, so try to offer simple ways to [fund it]({{ '/guide/onboarding/funding-a-wallet/' | relative_url }}) or [receive]({{ '/guide/payments/request/' | relative_url }}) bitcoin.
+For bitcoin wallets, the first use can be a difficult balance between creating a simple, seamless experience and ensuring good security practices. A second aspect is to consider how you can set users up for repeat use. An empty wallet is not that useful, so try to offer simple ways to [fund it]({{ '/guide/daily-spending-wallet/funding/' | relative_url }}) or [receive]({{ '/guide/daily-spending-wallet/requesting/' | relative_url }}) bitcoin.
 
 </div>
 

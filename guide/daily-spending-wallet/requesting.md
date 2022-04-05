@@ -205,7 +205,7 @@ Currently there are limited reusable payment request options available. However,
 
 [Lightning addresses](https://lightningaddress.com/), which look like regular emails (jane@domain.com), are reusable ways users can receive Lightning payments. These are not native to the Lightning network itself, but rather offered by a trusted server often ran by the wallet provider.
 
-Generating a Lightning address should be simple for users and done within a profile page or during [onboarding]({{ "/guide/onboarding/introduction/" | relative_url }}). At a minimum, your wallet should support sending to Lightning addresses, so it's interoperable with other wallets.
+Generating a Lightning address should be simple for users and done within a profile page or during the users [first use]({{ "/guide/daily-spending-wallet/first-use/" | relative_url }}). At a minimum, your wallet should support sending to Lightning addresses, so it's interoperable with other wallets.
 
 <div class="image-slide-gallery">
 

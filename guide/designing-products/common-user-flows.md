@@ -236,7 +236,7 @@ You can find more screenshots [here](https://www.figma.com/file/rPyJ0Y8xg0kN4FrH
 
 </div>
 
-See the [onboarding section](/guide/onboarding/introduction/) to learn more on this topic.
+See the [first use](/guide/daily-spending-wallet/first-use/) to learn more on this topic.
 
 ## Creating a new wallet
 
