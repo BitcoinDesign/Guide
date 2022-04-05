@@ -98,7 +98,7 @@ The screens below show how this architecture allows users to get onboarded quick
 
 {% include next-previous.html
    previousUrl = "/guide/case-studies/savings-wallet/"
-   previousName = "Savings account"
+   previousName = "Savings wallet"
    nextUrl = "/guide/case-studies/shared-account/"
    nextName = "Shared account"
 %}
