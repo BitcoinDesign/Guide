@@ -4,7 +4,7 @@ title: Daily spending wallet
 description: Learn fundamentals, techniques and best practices for designing great bitcoin UX.
 nav_order: 4
 has_children: true
-permalink: /guide/daily-spending-wallet/landing-page/
+permalink: /guide/daily-spending-wallet/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/case-studies/cloud-backup/daily-spending-preview.jpg
 ---
