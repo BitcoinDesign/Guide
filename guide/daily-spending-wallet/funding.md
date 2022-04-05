@@ -32,7 +32,7 @@ Illustration source
    layout = "full-width"
 %}
 
-# Funding
+# Funding a wallet
 
 The user will need to fund their wallet with some bitcoin to begin using it. When the user funds a wallet for the first time, they are likely to be introduced to new concepts that need to be clearly explained. The design flows around funding a wallet can range from simple to complex, depending on your wallets target audience and which services you offer to streamline the process.
 
