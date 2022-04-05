@@ -1,6 +1,15 @@
-# Bitcoin Design Guide: Merchant Section
+---
+layout: guide
+title: Merchant Section
+description: A summary, by quarter, of goals for user research and plans improving tools for designers and developers.
+nav_order: 
+has_children: true
+permalink: /guide/merchant-section/
+image: 
+main_classes: -no-top-padding
+---
 
-A summary, by quarter, of goals for user research and plans improving tools for designers and developers.
+
 
 ## Q1:
 - _Overview_: Learning from the past to inform the future
