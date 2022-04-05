@@ -114,7 +114,7 @@ Offering inbound liquidity with a channel open service addresses this situation.
 
 A channel open with inbound liquidity allows users to fund their wallets with a lightning payment, or combined with a [swap-in]({{ '/guide/how-it-works/lightning-service-providers/#swap-in' | relative_url }}) or [dual funding]({{ '/guide/how-it-works/lightning-service-providers/#dual-funding' | relative_url }}) service can allow funding with an on-chain payment.
 
-[Blocktank](https://blocktank.synonym.to/) and [Dunder](https://github.com/hsjoberg/dunder-lsp) are two open source LSP clients that help applications offer inbound liquidity to users.
+[Dunder](https://github.com/hsjoberg/dunder-lsp) is an open source LSP client that help applications offer inbound liquidity to users.
 
 [Liquidity ads](https://medium.com/blockstream/setting-up-liquidity-ads-in-c-lightning-54e4c59c091d) are a protocol-level way for anyone to act as an LSP and advertise their willingness to offer inbound liquidity to other users.
 
