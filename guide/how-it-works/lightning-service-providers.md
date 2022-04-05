@@ -1,4 +1,4 @@
-how-it-works/lightning-service-providers---
+---
 layout: guide
 title: Lightning Service Providers
 description: Common user experience problems of the lightning network that can be resolved by third-party services.
