@@ -59,7 +59,7 @@ A close look at the design process, from conducting user research to use cases a
 
 ### [Daily spending wallet]({{ '/guide/daily-spending-wallet/landing-page/' | relative_url }})
 
-Familiarizes designers with the products, features, and terms needed to create better experiences for first time users.
+This section is an in-depth design exploration and reference design of a daily spending bitcoin wallet.
 
 ---
 

@@ -6,7 +6,7 @@ nav_order: 2
 parent: Case studies
 permalink: /guide/case-studies/savings-wallet/
 redirect_from:
- - /guide/case-studies/multisig-wallet/
+ - /guide/case-studies/savings-account/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/case-studies/savings-wallet/multisig-wallet-preview.jpg
 image_base: /assets/images/guide/case-studies/savings-wallet/

@@ -1,12 +1,12 @@
 ---
 layout: guide
 title: Daily spending wallet
-description: Learn fundamentals, techniques and best practices for designing great bitcoin UX.
+description: An in depth reference design for a daily spending mobile bitcoin wallet.
 nav_order: 4
 has_children: true
 permalink: /guide/daily-spending-wallet/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/case-studies/cloud-backup/daily-spending-preview.jpg
+image: https://bitcoin.design/assets/images/guide/daily-spending-wallet/daily-spending-preview.jpg
 ---
 
 <!--
@@ -16,10 +16,10 @@ Illustration source:
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/case-studies/cloud-backup/daily-spending-header.jpg"
-   retina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-header@2x.jpg"
-   mobile = "/assets/images/guide/case-studies/cloud-backup/daily-spending-header-mobile.jpg"
-   mobileRetina = "/assets/images/guide/case-studies/cloud-backup/daily-spending-header-mobile@2x.jpg"
+   image = "/assets/images/guide/daily-spending-wallet/daily-spending-header.jpg"
+   retina = "/assets/images/guide/daily-spending-wallet/daily-spending-header@2x.jpg"
+   mobile = "/assets/images/guide/daily-spending-wallet/daily-spending-header-mobile.jpg"
+   mobileRetina = "/assets/images/guide/daily-spending-wallet/daily-spending-header-mobile@2x.jpg"
    alt-text = "Various screens from a mobile bitcoin wallet"
    caption = ""
    width = 1600
