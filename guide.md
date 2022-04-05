@@ -132,20 +132,20 @@ Explanations of various technical aspects of bitcoin and Lightning.
 <div class="columns-desktop -two -how">
 <div class="column" markdown="1">
 
-[Private key management]({{ '/guide/private-key-management/introduction/' | relative_url }})<br />
-[Automatic cloud backup]({{ '/guide/private-key-management/cloud-backup/' | relative_url }})<br />
-[Manual backup]({{ '/guide/private-key-management/manual-backup/' | relative_url }})<br />
-[External signers]({{ '/guide/private-key-management/external-signers/' | relative_url }})<br />
-[Multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }})
+[Private key management]({{ '/guide/how-it-works/private-key-management/introduction/' | relative_url }})<br />
+[Automatic cloud backup]({{ '/guide/how-it-works/private-key-management/cloud-backup/' | relative_url }})<br />
+[Manual backup]({{ '/guide/how-it-works/private-key-management/manual-backup/' | relative_url }})<br />
+[External signers]({{ '/guide/how-it-works/private-key-management/external-signers/' | relative_url }})<br />
+[Multi-key]({{ '/guide/how-it-works/private-key-management/multi-key/' | relative_url }})
 
 </div>
 <div class="column" markdown="1">
 
-[Bitcoin backups]({{ '/guide/private-key-management/backups/' | relative_url }})<br />
-[Payment request formats]({{ '/guide/payments/request/payment-request-formats/' | relative_url }})<br />
-[Coin selection]({{ '/guide/glossary/coin-selection/' | relative_url }})<br />
-[Nodes]({{ '/guide/glossary/node/' | relative_url }})<br />
-[Transaction lifecycle]({{ '/guide/payments/transactions/' | relative_url }})
+[Bitcoin backups]({{ '/guide/how-it-works/backups/' | relative_url }})<br />
+[Payment request formats]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }})<br />
+[Coin selection]({{ '/guide/how-it-works/coin-selection/' | relative_url }})<br />
+[Nodes]({{ '/guide/how-it-works/nodes/' | relative_url }})<br />
+[Transactions]({{ '/guide/how-it-works/transactions/' | relative_url }})
 
 </div>
 </div>
