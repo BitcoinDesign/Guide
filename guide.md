@@ -26,6 +26,17 @@ Illustration sources
 
 -->
 
+{% include picture.html
+   image = "/assets/images/guide/bitcoin-island.jpg"
+   retina = "/assets/images/guide/bitcoin-island@2x.jpg"
+   mobile = "/assets/images/guide/bitcoin-island-mobile.jpg"
+   mobileRetina = "/assets/images/guide/bitcoin-island-mobile@2x.jpg"
+   alt-text = "Bitcoin island travel map"
+   width = 1600
+   height = 600
+   layout = "full-width"
+%}
+
 # The Bitcoin design guide
 
 **Bitcoin is a global payment protocol that anyone with Internet access can participate in and contribute to. However, because bitcoin’s use cases are as vast as its user base, building bitcoin applications can be complicated.**
