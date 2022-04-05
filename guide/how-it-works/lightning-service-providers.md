@@ -39,7 +39,7 @@ Roy Sheinfeld from [Breez](https://breez.technology/) explains LSPs in more dept
 
 Lightning services are trust-minimized offerings by LSPs that solve user pain points when using a non-custodial bitcoin lightning wallet.
 
-A lightning service should always non-custodial, be opt-out, only used when necessary and any trade-offs should be clearly communicated to users.
+A lightning service should always be non-custodial and opt-out, with trade-offs clearly communicated to users.
 
 Below are some lightning services, the pain points they solve, their trade-offs, and the applications that use them.
 
