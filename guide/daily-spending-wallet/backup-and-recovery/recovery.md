@@ -31,7 +31,7 @@ Illustration sources:
    layout = "full-width"
 %}
 
-# Recovery
+# Wallet recovery
 
 <div class="center" markdown="1">
 
