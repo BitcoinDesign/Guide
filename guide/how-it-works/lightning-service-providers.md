@@ -158,7 +158,7 @@ The bitcoin in a payment channel can not be spent until the on-chain transaction
 
 A channel open service using spend-unconfirmed, sometimes called turbo channels or zero-confirmation channels, allows users to spend their bitcoin instantly without having to wait for the channel transaction to confirm.
 
-A spend-unconfirmed channel is trusted until the transaction is confirmed. Users should have the option to disable these type of channel opens if they are being used. Some LSPs may batch their channel opens, meaning a users channel will be trusted until that batch process is complete.
+A spend-unconfirmed channel is trusted until the transaction is confirmed. Users should have the option to disable these types of channel opens if they are being used. Some LSPs may batch their channel opens, meaning a user's channel will be trusted until that batch process is complete.
 
 [Breez](https://breez.technology/) is a bitcoin wallet that provides this service.
 
