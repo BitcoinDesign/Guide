@@ -45,21 +45,40 @@ We designed this guide to help anyone navigate those complexities—regardless o
 
 ---
 
-<div class="columns-desktop -two">
-<div class="column" markdown="1">
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/getting-started.png"
+   retina = "/assets/images/guide/getting-started@2x.png"
+   alt-text = ""
+   width = 100
+   height = 100
+   layout = "float-left"
+%}
 
 <h2 class="h3" markdown="1">[Getting started]({{ '/guide/getting-started/introduction/' | relative_url }})</h2>
 
 New to bitcoin? This section provides top-level overviews of [open design]({{ '/guide/designing-products/open-design/' | relative_url }}), [visual language]({{ '/guide/getting-started/visual-language/' | relative_url }}), [design principles]({{ '/guide/designing-products/principles/' | relative_url }}), a [technology primer]({{ '/guide/getting-started/technology-primer/' | relative_url }}) and more.
 
 </div>
-<div class="column" markdown="1">
+
+---
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/designing-bitcoin-products.png"
+   retina = "/assets/images/guide/designing-bitcoin-products@2x.png"
+   alt-text = ""
+   width = 100
+   height = 100
+   layout = "float-left"
+%}
 
 <h2 class="h3" markdown="1">[Designing bitcoin products]({{ '/guide/designing-products/introduction/' | relative_url }})</h2>
 
-A closer look at the design process and framworks, from [personal finance use cases]({{ '/guide/designing-products/personal-finance/' | relative_url }}) to [units & symbols]({{ '/guide/payments/units-and-symbols/' | relative_url }}), the [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/' | relative_url }}), [user research]({{ '/guide/designing-products/user-research/' | relative_url }}), and more.
+A closer look at the design process and frameworks, from [personal finance use cases]({{ '/guide/designing-products/personal-finance/' | relative_url }}) to [units & symbols]({{ '/guide/payments/units-and-symbols/' | relative_url }}), the [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/' | relative_url }}), [user research]({{ '/guide/designing-products/user-research/' | relative_url }}), and more.
 
-</div>
 </div>
 
 ---
