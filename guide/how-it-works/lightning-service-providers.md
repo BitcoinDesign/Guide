@@ -31,7 +31,7 @@ Illustration sources: https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id
 
 The [lightning network]({{ '/guide/getting-started/technology-primer/#the-lightning-payment-network/' | relative_url }}) is currently bitcoins best solution at [scaling]({{ '/guide/getting-started/technology-primer/#do-all-transactions-have-to-be-this-secure/' | relative_url }}) to billions of people. However, using the lightning network self-custodially brings about many new usability issues, such as channel management, routing, uptime requirements and backups.
 
-Lightning service providers (LSPs) solve these user friction points by providing services that make it easy to access and use the lightning network. They act as trust-minimized third parties that make it easy to onboard new user into lightning.
+Lightning service providers (LSPs) solve these user friction points by providing services that make it easy to access and use the lightning network. They act as trust-minimized third parties that make it easy to onboard new users into lightning.
 
 Roy Sheinfeld from [Breez](https://breez.technology/) explains LSPs in more depth in his [introducing lightning service providers](https://medium.com/breez-technology/introducing-lightning-service-providers-fe9fb1665d5f) and [envisioning LSPs in the lightning economy](https://medium.com/breez-technology/envisioning-lsps-in-the-lightning-economy-832b45871992) articles.
 
@@ -56,17 +56,17 @@ Below are some lightning services, the pain points they solve, their trade-offs,
    layout = "float-right-desktop"
 %}
 
-A Lightning wallet requires both a recovery phrase and up-to-date payment channel states to be recovered. Payment channel states need to be backed up each time a payment is received or sent. Users can make these backups, though if done incorrectly or stored insecurely, users are at risk of losing their bitcoin.
+A Lightning wallet requires both a [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) and up-to-date payment channel states to be recovered. Payment channel states need to be [backed up]({{ '/guide/daily-spending-wallet/backup-and-recovery/' | relative_url }}) each time a payment is received or sent. Users can make these backups, though if done incorrectly or stored insecurely, users are at risk of losing their bitcoin.
 
-A backup & recovery service automatically backs up and stores a user’s channel states with the LSP when a payment is sent or received. These backups are encrypted, usually by the user’s recovery phrase, before being sent to the LSP.
+A backup & recovery service automatically backs up and stores a user’s channel states with the LSP when a lightning payment is sent or received. These backups are encrypted, usually by the user’s recovery phrase, before being sent to the LSP.
 
 When a user recovers their wallet, they enter their recovery phrase, the LSP sends them the encrypted channel states, these are decrypted by the user, and the wallet is restored.
 
 This service requires trust that the LSP accurately and securely stores the users channel state backups. Entrusting backups with a single third-party like this is also a security risk and makes users reliant on the LSP.
 
-As the users recovery phrase is required to recover the channel states stored by the LSP, this makes the recovery phrase wallet-dependent. Users will be unable to recover their funds in wallet that was not the one who generated it, making things less [interoperable]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }}).
+As the users recovery phrase is required to recover the channel states stored by the LSP, this makes the recovery phrase wallet-dependent. Users will be unable to recover their bitcoin in a wallet that was not the one who generated it, making things less [interoperable]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }}).
 
-Users should have the option to backup payment channel states [manually]({{ '/guide/onboarding/backing-up-a-wallet/manual-backup/' | relative_url }}) or [automatically]({{ '/guide/onboarding/backing-up-a-wallet/cloud-backup/' | relative_url }}).
+Users should have the option to backup payment channel states [manually]({{ '/guide/daily-spending-wallet/backup-and-recovery/manual-backup/' | relative_url }}) or [automatically]({{ '/guide/daily-spending-wallet/backup-and-recovery/cloud-backup/' | relative_url }}).
 
 [ACINQ](https://medium.com/@ACINQ/phoenix-wallet-part-3-backup-f63a9470d4e7) is an example of a LSP using a backup and recovery service for its wallet Phoenix. [Backpack](https://github.com/synonymdev/backpack-client) is an open-source client enabling this service.
 
@@ -85,13 +85,13 @@ Users should have the option to backup payment channel states [manually]({{ '/gu
    layout = "float-right-desktop"
 %}
 
-To use a lightning wallet, users first need a payment channel. Manually opening a payment channel involves finding a suitable peer, having on-chain bitcoin in your wallet to put in the channel, and broadcasting a transaction. Once this channel is opened, it needs to be managed.
+To use a lightning wallet, users first need a [payment channel]({{ '/guide/getting-started/technology-primer/#what-is-a-payment-channel' | relative_url }}). Manually opening a payment channel involves finding a suitable peer, having on-chain bitcoin in your wallet to put in the channel, and broadcasting a transaction. Once this channel is opened, it needs to be managed.
 
 All of this can be complex for users to deal with. A channel opening service automatically opens a channel to the LSP for the user when necessary.
 
-Users should always have the option to manually open channels, as to not completely rely on a LSP.
+Users should always have the option to manually open channels, as to not completely rely on a LSP. Any trade-offs involved with using a channel open service should be clearly communicated to users in the UI.
 
-Below, we cover the different ways in which a channel open service can be offered, depending on user needs and the trade-offs they are willing to make.
+Below, we cover the different ways in which a channel open service can be offered, depending on user needs and the trade-offs they are willing to make. These channel open types can be offered together, and in fact, in some cases work better when offered together.
 
 </div>
 
@@ -110,13 +110,13 @@ Below, we cover the different ways in which a channel open service can be offere
 
 Lightning wallets can not receive payments without inbound liquidity in a channel. This is primarily the case with new wallets, but may also occur when channels are imbalanced on funded wallets.
 
-Offering inbound liquidity with a channel open service addresses this situation. When a user receives a payment without enough inbound liquidity, a channel is automatically opened. The network fee, and sometimes an additional service fee, for opening the channel is typically deducted from the payment amount.
+Offering inbound liquidity with a channel open service addresses this situation. When a user receives a payment without enough inbound liquidity, a new channel is automatically opened containing inbound liquidity. The network fee, and sometimes an additional service fee, for opening the channel is typically deducted from the payment amount.
 
-A channel open with inbound liquidity allows users to fund their wallets with a lightning payment, or combined with a [swap-in]({{ '/guide/how-it-works/lightning-service-providers/#swap-in' | relative_url }}) or [dual funding]({{ '/guide/how-it-works/lightning-service-providers/#dual-funding' | relative_url }}) service can allow funding via on-chain.
+A channel open with inbound liquidity allows users to fund their wallets with a lightning payment, or combined with a [swap-in]({{ '/guide/how-it-works/lightning-service-providers/#swap-in' | relative_url }}) or [dual funding]({{ '/guide/how-it-works/lightning-service-providers/#dual-funding' | relative_url }}) service can allow funding with an on-chain payment.
 
-[Blocktank](https://blocktank.synonym.to/) and [Dunder](https://github.com/hsjoberg/dunder-lsp) are two open source LSP clients that help applications offer inbound liquidity to their users.
+[Blocktank](https://blocktank.synonym.to/) and [Dunder](https://github.com/hsjoberg/dunder-lsp) are two open source LSP clients that help applications offer inbound liquidity to users.
 
-[Liquidity ads](https://medium.com/blockstream/setting-up-liquidity-ads-in-c-lightning-54e4c59c091d) are a protocol-level way for anyone to act as an LSP and advertise their willingness to offer liquidity to other users.
+[Liquidity ads](https://medium.com/blockstream/setting-up-liquidity-ads-in-c-lightning-54e4c59c091d) are a protocol-level way for anyone to act as an LSP and advertise their willingness to offer inbound liquidity to other users.
 
 </div>
 
@@ -133,11 +133,11 @@ A channel open with inbound liquidity allows users to fund their wallets with a 
    layout = "float-right"
 %}
 
-Using a channel open service requires a LSP to open a channel for the user on their behalf, which requires trust. An LSP could refuse to open a channel for a user or require invasive privacy practices, leading to application-level censorship.
+Using a channel open service requires a LSP to open a channel for the user on their behalf, which requires trust. An LSP could refuse to open a channel for a user, or require invasive privacy practices, leading to application-level censorship.
 
 A [dual-funding](https://bitcoinops.org/en/topics/dual-funding/) channel open service solves this issue of trust by having users cooperatively open a channel with the LSP. Users get the benefits of having both inbound and outbound liquidity without having to trust the LSP.
 
-Dual funding is only applicable when funding a wallet with on-chain bitcoin. The issue of trusting the LSP still exists if funding with a lightning payment.
+Dual funding is only applicable when funding a wallet with on-chain bitcoin. The issue of trusting the LSP opening the channel for the user still exists when funding with a lightning payment.
 
 </div>
 
@@ -181,9 +181,9 @@ Funding a lightning wallet typically consists of two steps. First, the user need
 
 A swap-in channel open service solves this by allowing users to fund a lightning wallet with an on-chain payment. The user sends their on-chain bitcoin to the LSP who opens a channel for the user.
 
-Swap-ins can be done in a trusted, or a trust-minimized way using [submarine swaps](https://blog.muun.com/a-closer-look-at-submarine-swaps-in-the-lightning-network/). A [dual-funded]({{ '/guide/how-it-works/lightning-service-providers/#dual-funding' | relative_url }}) channel open requires less trust  and equally solves this issue.
+Swap-ins should be done in a trust-minimized, non-custodial way using a [submarine swap](https://blog.muun.com/a-closer-look-at-submarine-swaps-in-the-lightning-network/). A [dual-funded]({{ '/guide/how-it-works/lightning-service-providers/#dual-funding' | relative_url }}) channel open requires less trust and equally solves this issue.
 
-The client [Loop](https://lightning.engineering/loop/) and the non-custodial lightning wallet [Phoenix](https://phoenix.acinq.co/) offer this service.
+The client [Loop](https://lightning.engineering/loop/) and the non-custodial lightning wallet [Phoenix](https://phoenix.acinq.co/) both offer a swap-in service.
 
 </div>
 
@@ -200,7 +200,7 @@ The client [Loop](https://lightning.engineering/loop/) and the non-custodial lig
    layout = "float-right"
 %}
 
-Payment channels require a channel reserve to be set aside to prevent theft. When a user opens a channel, they will not be able to spend this reserve. This can confuse many users who may think an incorrect payment amount was sent to them.
+Payment channels require a channel reserve to be set aside to prevent theft. When a user opens a channel, they will not be able to spend this reserve. This can confuse new users who are likely not familiar with this.
 
 A zero-reserve channel open service solves this issue by allowing channels opened by the LSP to not have a zero-reserve on the users side. The LSP still has a reserve as it is connected to the wider network. This also prevents them from attempting to steal the user's bitcoin.
 
@@ -229,6 +229,8 @@ A [Lightning address](https://lightningaddress.com/) service gives users a reusa
 
 Lightning addresses require a non-custodial, trusted third-party server ran by a LSP to forward payment requests. This opens up the possibility that the LSP could censor user payments on the application layer by not relaying them between the parties.
 
+Lightning addresses build on top of the [LNURL](https://github.com/fiatjaf/lnurl-rfc) standard which is another way to create reusable payment requests.
+
 </div>
 
 ## Payment forwarding
@@ -246,7 +248,9 @@ Lightning addresses require a non-custodial, trusted third-party server ran by a
 
 Lightning payments require a route through the network to be calculated for sending, and a user must be online for receiving. Mobile nodes, especially ones running on lower-end devices, may have difficulties calculating a route, resulting in higher network fees. They are also regularly offline, meaning a user will have to be online to receive a payment.
 
-A payment forwarding service solves these issues by acting as a non-custodial intermediary for payments. The route calculation for sending bitcoin can be conducted by the LSPs node on behalf of the user. And for receiving, if the user is offline, the LSP can hold the payment and forward it once the user comes back online.
+A payment forwarding service solves these issues by acting as a non-custodial intermediary for payments. The route calculation for sending bitcoin can be conducted by the LSP on behalf of the user.
+
+For receiving, if the user is offline, the LSP can hold the payment and forward it once the user comes back online.
 
 [Trampoline payments](https://bitcoinops.org/en/topics/trampoline-payments/) remove the need for a single third-party node to calculate a payment route for a user. However, these are currently not widely supported.
 
@@ -269,9 +273,11 @@ A payment forwarding service solves these issues by acting as a non-custodial in
 
 Making a payment directly from lightning to on-chain is not possible. A user may want to move funds from their lightning channel to on-chain for more secure storage.
 
-A swap-out service allows users to send bitcoin from lightning to on-chain. Users send their lightning bitcoin to the LSP. They then make the on-chain payment on the user's behalf. This can have added privacy benefits as the user is receiving one of the LSPs UTXOs and not the ones in their channel.
+A swap-out service allows users to send bitcoin from lightning to on-chain. Users send their lightning bitcoin to the LSP. They then make the on-chain payment on the user's behalf.
 
-Swap-outs can be done in a non-custodial, trust-minimized way using [Submarine swaps](https://blog.muun.com/a-closer-look-at-submarine-swaps-in-the-lightning-network/). They can also be done in a trusted way where the LSP has temporary custody of the funds. This is not recommended, as the LSP could steal the user's bitcoin, or censor their payment.
+This also has added privacy benefits as the user is receiving one of the LSPs UTXOs and not the ones in their channel.
+
+Swap-outs should be done in a non-custodial, trust-minimized way using [Submarine swaps](https://blog.muun.com/a-closer-look-at-submarine-swaps-in-the-lightning-network/).
 
 [Lightning Labs](https://lightning.engineering/loop/) is an example of an LSP using a submarine swap-out service called loop.
 
@@ -294,13 +300,15 @@ Lightning nodes need to stay online in order to monitor for potential cheating a
 
 A [watchtower](https://bitcoinops.org/en/topics/watchtowers/) service prevents this by monitoring the user's node for cheating attempts. If one is detected, a watchtower broadcasts a justice transaction which gives the cheating parties bitcoin to the honest user. Watchtowers sometimes take a small fee for offering this service.
 
-When using a watchtower and a LSP for other services, it's important to have users connect to one that isn't the LSP. This is due to the LSP likely being the only counterparty, so having a watchtower with them would not safeguard the user's bitcoin.
+When using a watchtower and a LSP for [opening channels]({{ '/guide/how-it-works/lightning-service-providers/#channel-opens' | relative_url }}), it's important a watchtower is not that same LSP. This is due to that LSP being the users counterparty, so having a watchtower with them would not safeguard their bitcoin.
+
+The [lightningnetwork+ watchtower](https://lightningnetwork.plus/watchtower) is an example of an LSP offering a watchtower client that users can use.
 
 </div>
 
 ---
 
-Now that you have a good grasp of what an LSP and lightning services are, it's time to kickstart your design work by taking a look at our [design resources]({{ '/guide/designing-products/lightning-services/' | relative_url }}).
+Now, lets learn how [nodes]({{ '/guide/how-it-works/nodes/' | relative_url }}) on bitcoin work.
 
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/coin-selection/"
