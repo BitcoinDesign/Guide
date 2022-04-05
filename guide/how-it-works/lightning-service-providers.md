@@ -62,7 +62,7 @@ A backup & recovery service automatically backs up and stores a user’s channel
 
 When a user recovers their wallet, they enter their recovery phrase, the LSP sends them the encrypted channel states, these are decrypted by the user, and the wallet is restored.
 
-This service requires trust that the LSP will make accurate, and securely store, the users channel state backups. Trusting your backups with a single third-party like this is also a security risk and makes users reliant on the LSP.
+This service requires trust that the LSP accurately and securely stores the users channel state backups. Entrusting backups with a single third-party like this is also a security risk and makes users reliant on the LSP.
 
 As the users recovery phrase is required to recover the channel states stored by the LSP, this makes the recovery phrase wallet-dependent. Users will be unable to recover their funds in wallet that was not the one who generated it, making things less [interoperable]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }}).
 
