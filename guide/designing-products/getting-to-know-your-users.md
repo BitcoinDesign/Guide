@@ -3,7 +3,7 @@ layout: guide
 title: Getting to know your users
 description: How best to understand and develop knowledge about your users.
 parent: Designing bitcoin products
-nav_order: 7
+nav_order: 3
 permalink: /guide/designing-products/getting-to-know-your-users/
 redirect_from:
  - /guide/onboarding/getting-to-know-your-users/
@@ -48,7 +48,7 @@ This observation could take the form of [user research]({{ 'guide/designing-prod
 * How did they hear about my application? Word of mouth? App store search?
 * Do first-time users have specific needs or goals?
 
-Perhaps after research, you identify your users as "cypherpunks" with sound knowledge of bitcoin, but they are new to your app. You might build an experience that preserves as much of their [privacy](/guide/designing-products/principles/#privacy) as possible and is super customizable from the outset.
+Perhaps after research, you identify your users as "cypherpunks" with sound knowledge of bitcoin, but they are new to your app. You might build an experience that preserves as much of their [privacy](/guide/getting-started/principles/#privacy) as possible and is super customizable from the outset.
 
 Aim to gather as much information and observations as possible in order to empathize with your users.
 
@@ -197,8 +197,8 @@ Ultimately the goal of getting to know your users is to build trust in the appli
 Next, we will cover [common user flows]({{ '/guide/designing-products/common-user-flows/' | relative_url }}).
 
 {% include next-previous.html
-   previousUrl = "/guide/designing-products/personal-finance/"
-   previousName = "Personal finance"
+   previousUrl = "/guide/designing-products/user-research/"
+   previousName = "Conducting research"
    nextUrl = "/guide/designing-products/common-user-flows/"
    nextName = "Common user flows"
 %}

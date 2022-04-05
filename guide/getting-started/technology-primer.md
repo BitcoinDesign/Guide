@@ -2,7 +2,7 @@
 layout: guide
 title: Technology primer
 description: Learn the basics of bitcoin technology in a series of simple explanations.
-nav_order: 10
+nav_order: 5
 parent: Getting started
 permalink: /guide/getting-started/technology-primer/
 main_classes: -no-top-padding
@@ -62,7 +62,7 @@ It can take many years to understand bitcoin in every detail, but luckily you do
    layout = "float-right-desktop"
 %}
 
-You can own [fractions of 1 bitcoin]({{ '/guide/payments/units-and-symbols/' | relative_url }}). They are just numbers in a digital ledger of transactions. We call that ledger the bitcoin blockchain. Transactions are used to assign bitcoin from one [address]({{ '/guide/glossary/address' | relative_url }}) to another. This process reduces the available balance of the sending address and increases the balance of the receiving address. A small amount has to be added as the fee to pay for the verification.
+You can own [fractions of 1 bitcoin]({{ '/guide/designing-products/units-and-symbols/' | relative_url }}). They are just numbers in a digital ledger of transactions. We call that ledger the bitcoin blockchain. Transactions are used to assign bitcoin from one [address]({{ '/guide/glossary/address' | relative_url }}) to another. This process reduces the available balance of the sending address and increases the balance of the receiving address. A small amount has to be added as the fee to pay for the verification.
 
 Therefore, owning a bitcoin means being in control of one or more addresses that have received bitcoin.
 
@@ -81,7 +81,7 @@ Therefore, owning a bitcoin means being in control of one or more addresses that
    layout = "float-right-desktop"
 %}
 
-Just as the internet allows computers to exchange information, the bitcoin network enables participants to exchange value. By running the [bitcoin software]({{ '/guide/getting-started/software/#nodes' | relative_url }}), you are running a node connected to the bitcoin network. Some nodes use [powerful computers]({{ '/guide/getting-started/hardware/#nodes' | relative_url }}) that compete to [verify transactions]({{'/guide/payments/transactions/' | relative_url }}) and update the blockchain for a reward. These nodes are called miners. Others are run by businesses like exchanges or merchants. They are also used by individuals making payments from mobile applications. Since [January 3rd, 2009](https://blockstream.info/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f){:target="_blank"}, every transfer of bitcoin has been permanently recorded in its shared global ledger.
+Just as the internet allows computers to exchange information, the bitcoin network enables participants to exchange value. By running the [bitcoin software]({{ '/guide/getting-started/software/#nodes' | relative_url }}), you are running a node connected to the bitcoin network. Some nodes use [powerful computers]({{ '/guide/getting-started/hardware/#nodes' | relative_url }}) that compete to [verify transactions]({{'/guide/how-it-works/transactions/' | relative_url }}) and update the blockchain for a reward. These nodes are called miners. Others are run by businesses like exchanges or merchants. They are also used by individuals making payments from mobile applications. Since [January 3rd, 2009](https://blockstream.info/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f){:target="_blank"}, every transfer of bitcoin has been permanently recorded in its shared global ledger.
 
 </div>
 
@@ -118,7 +118,7 @@ With thousands of nodes and tens of millions of users worldwide, it becomes impl
 
 Instead of processing each transaction individually, the bitcoin network bundles them into [blocks]({{'/guide/glossary/#block' | relative_url }}). A new block is created roughly every 10 minutes. A strict file size limit results in the transactions with the highest fees typically getting chosen first. Every new block must link to the one before it. Since this is a continuous process, a chain of blocks forms, hence the name blockchain.
 
-Once a transaction is in a block that the network has accepted, it is considered to have one confirmation. With every new block created, the number of [confirmations]({{ '/guide/payments/transactions/#7-confirmations' | relative_url }}) increases.
+Once a transaction is in a block that the network has accepted, it is considered to have one confirmation. With every new block created, the number of [confirmations]({{ '/guide/how-it-works/transactions/#7-confirmations' | relative_url }}) increases.
 </div>
 
 ## How is the blockchain secured?
@@ -180,7 +180,7 @@ While creating a transaction to move your funds from one address to another is c
 There are multiple scaling solutions built on top of bitcoin's base layer, but we will be focusing on the Lightning Network in this guide.
 
 **More info**
-- [Transaction lifecycle](/guide/payments/transactions/)
+- [Transaction lifecycle](/guide/how-it-works/transactions/)
 
 <!--
    While the base layer needs to have high integrity of decentralization, high-security guarantees, and solid monetary principles...
@@ -311,11 +311,11 @@ Now, if you'd like to go all the way to the beginning of bitcoin, the most funda
 
 ---
 
-Take a look at how these technologies are implemented in the various types of [bitcoin software]({{ '/guide/getting-started/software/' | relative_url }}).
+A good bitcoin product isn't just about using specific technologies: it should also be shaped by specific [design principles]({{ '/guide/getting-started/principles/' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/getting-started/visual-language/"
    previousName = "Visual language"
-   nextUrl = "/guide/getting-started/software/"
-   nextName = "Software overview"
+   nextUrl = "/guide/getting-started/principles/"
+   nextName = "Design principles"
 %}

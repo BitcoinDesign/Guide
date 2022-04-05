@@ -2,7 +2,7 @@
 layout: guide
 title: Personal finance
 description: How bitcoin applications and usage overlap with traditional personal finance management.
-nav_order: 6
+nav_order: 1
 parent: Designing bitcoin products
 permalink: /guide/designing-products/personal-finance/
 main_classes: -no-top-padding
@@ -45,7 +45,7 @@ It still is possible to create simplified mental models that help us better unde
 
 This section uses the traditional personal finance lens to think about what type of bitcoin products we may need. Because of bitcoin's unique properties, we cannot imitate conventional financial products and assume that the same solutions apply. And even if we could, this might be an excellent opportunity to take a fresh look and design new solutions for today's world. Bitcoin is also global by nature, so consider the unique circumstances of your users' lives.
 
-Assuming that a user wants to [self-custody](/guide/designing-products/principles/#self-custody) their bitcoin,while balancing [security](/guide/designing-products/principles/#security) and [privacy](/guide/designing-products/principles/#privacy) here are six ways that they can organize finances:
+Assuming that a user wants to [self-custody](/guide/getting-started/principles/#self-custody) their bitcoin,while balancing [security](/guide/getting-started/principles/#security) and [privacy](/guide/getting-started/principles/#privacy) here are six ways that they can organize finances:
 
 ---
 
@@ -138,7 +138,7 @@ The higher-value of these payments necessitates a greater level of security than
 
 At the moment, a good solution is a desktop application which relies on a hardware device to sign transactions. This reduces the risk of keeping funds on a mobile wallet configuration but adds acceptable friction for transactions that occur less frequently. See the [savings account case study]({{ '/guide/case-studies/savings-account/' | relative_url }}) for an exploration of this user experience.
 
-A disadvantage to this solution is that it does not use the Lightning network, meaning that the user will need to wait longer for their [transaction to confirm]({{'/guide/payments/transactions/#7-confirmations' | relative_url}}) as well as pay an on-chain transaction fee. However, this will likely not always be the case: in the future, projects such as [Lightning Signer](https://gitlab.com/lightning-signer/docs) may solve this issue by allowing the private keys to be stored separately from the Lightning node on hardware that is security-hardened.
+A disadvantage to this solution is that it does not use the Lightning network, meaning that the user will need to wait longer for their [transaction to confirm]({{'/guide/how-it-works/transactions/#7-confirmations' | relative_url}}) as well as pay an on-chain transaction fee. However, this will likely not always be the case: in the future, projects such as [Lightning Signer](https://gitlab.com/lightning-signer/docs) may solve this issue by allowing the private keys to be stored separately from the Lightning node on hardware that is security-hardened.
 
 ## Emergency funds
 
@@ -267,11 +267,11 @@ Considering your product, ask yourself these questions:
 
 ---
 
-Next we will look at why it is important to [get to know your users]({{ '/guide/designing-products/getting-to-know-your-users/' | relative_url }}) when designing bitcoin applications.
+Continue on to learn about [conducting user research]({{ '/guide/designing-products/user-research/' | relative_url }}) in the bitcoin ecosystem.
 
 {% include next-previous.html
-   previousUrl = "/guide/designing-products/usage-life-cycle/"
-   previousName = "Usage life cycle"
-   nextUrl = "/guide/designing-products/getting-to-know-your-users/"
-   nextName = "Getting to know your users"
+   previousUrl = "/guide/designing-products/introduction/"
+   previousName = "Designing bitcoin products"
+   nextUrl = "/guide/designing-products/user-research/"
+   nextName = "Conducting research"
 %}

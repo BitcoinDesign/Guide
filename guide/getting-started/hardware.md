@@ -1,8 +1,8 @@
 ---
 layout: guide
-title: Hardware overview
+title: Hardware categories
 description: List of the main categories of bitcoin hardware, from wallets to miners.
-nav_order: 12
+nav_order: 8
 parent: Getting started
 permalink: /guide/getting-started/hardware/
 main_classes: -no-top-padding
@@ -36,7 +36,7 @@ Illustration sources
    layout = "full-width"
 %}
 
-# Hardware overview
+# Hardware categories
 
 General purpose hardware, like personal computers and smartphones, work great for most basic bitcoin operations. In some circumstances, dedicated hardware devices are optimized for the nuances of bitcoin. We’ll explore them and how they work here.
 
