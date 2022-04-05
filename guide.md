@@ -57,15 +57,9 @@ A close look at the design process, from conducting user research to use cases a
 
 ---
 
-### [Onboarding]({{ '/guide/onboarding/introduction/' | relative_url }})
+### [Daily spending wallet]({{ '/guide/daily-spending-wallet/landing-page/' | relative_url }})
 
-Familiarizes designers with the products, features, and terms needed to create better experiences for first time users.
-
----
-
-### [Payments]({{ '/guide/payments/' | relative_url }})
-
-Covers the complexities encountered when sending and receiving bitcoin.
+This section is an in-depth design exploration and reference design of a daily spending bitcoin wallet.
 
 ---
 

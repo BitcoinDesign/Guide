@@ -102,7 +102,7 @@ This sounds like a complicated process; however, steps 3 - 5 are handled by soft
 
 ## Bitcoin transaction lifecycle
 
-Some things are accomplished better on-chain. For example, the user's wallet application may have difficulty finding a suitable path to route a larger Lightning payment, or the user may prefer to send their funds to a [multi-sig storage vault]({{'/guide/case-studies/savings-account/' | relative_url}}).
+Some things are accomplished better on-chain. For example, the user's wallet application may have difficulty finding a suitable path to route a larger Lightning payment, or the user may prefer to send their funds to a [multi-sig storage vault]({{'/guide/case-studies/savings-wallet/' | relative_url}}).
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/transactions/tx-lifecycle-simplified.svg"
