@@ -154,9 +154,6 @@ Explanations of various technical aspects of bitcoin and Lightning.
 
 <h2 class="h3" markdown="1">[Resources]({{ '/guide/resources/' | relative_url }})</h2>
 
-### [Payments]({{ '/guide/payments/' | relative_url }})
-
-
 [Research references]({{ '/guide/designing-products/user-research/resources' | relative_url }}), [shared design files]({{ '/guide/designing-products/design-resources/' | relative_url }}), and other useful assets.
 
 ---
@@ -167,32 +164,9 @@ Helps you learn the most need-to-know bitcoin terminology, from [Address]({{ '/g
 
 ---
 
-
 <h2 class="h3" markdown="1">[Contribute]({{ '/guide/contribute/' | relative_url }})</h2>
 
 Join our open community and help us improve the Bitcoin Design Guide. Here’s where you can get involved and [contribute]({{ '/guide/contribute/' | relative_url }}).
-
-### [How it works]({{ '/guide/how-it-works/' | relative_url }})
-
-Learn about how bitcoin works under the hood.
-
----
-
-### [Resources]({{ '/guide/resources/' | relative_url }})
-
-Resources to help you build better bitcoin products.
-
----
-
-### [Contribute to the guide]({{ '/guide/contribute/' | relative_url }})
-
-Join our open community and help us improve the Bitcoin Design Guide.
-
----
-
-### [Glossary]({{ '/guide/glossary/' | relative_url }})
-
-Helps you learn the most need-to-know bitcoin terminology from Address to zpub.
 
 
 ---
