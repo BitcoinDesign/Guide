@@ -51,7 +51,7 @@ https://www.figma.com/community/file/968416729557947210
 
 A common real-world use case for shared accounts are couples managing their monthly spending, with both parties being able to spend from the account. For this situation, we could consider the following private key management schemes:
 
-- 1-of-2 [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}) - either party can spend without the other's approval
+- 1-of-2 [multi-key]({{ '/guide/how-it-works/private-key-management/multi-key/' | relative_url }}) - either party can spend without the other's approval
 - 2-of-3 multi-key - either party can spend with approval from one additional key
 
 {% include tip/open.html color="blue" icon="info" label="Lightning support" %}
@@ -62,7 +62,7 @@ Multi-key on Lightning is still in development. This page will focus on on-chain
 
 The other person does not need to co-sign every transaction, but we might want a *spending limit*, above which both parties need to approve the transaction. All multi-key setups are represented by bitcoin scripts on the blockchain, and the spending limit can be introduced as a conditional for both the 1-of-2 or 2-of-3 scheme.
 
-Although the 1-of-2 scheme could work here, it offers lower protection against both theft and self-inflicted loss, unless rigorous [manual backups]({{ '/guide/private-key-management/manual-backup/' | relative_url }}) are implemented. For this example we will choose the 2-of-3 scheme, but still have to decide on who will hold the third key, and the location of the other two.
+Although the 1-of-2 scheme could work here, it offers lower protection against both theft and self-inflicted loss, unless rigorous [manual backups]({{ '/guide/how-it-works/private-key-management/manual-backup/' | relative_url }}) are implemented. For this example we will choose the 2-of-3 scheme, but still have to decide on who will hold the third key, and the location of the other two.
 
 Depending on how tailor-made or interoperable we want this setup could be, we have many options for the location of the three keys, including:
 
@@ -87,7 +87,7 @@ Try the prototype below to see what such a user experience could be like.
 
 ### Onboarding experience
 
-The wireframe screens below show the main [onboarding]({{ '/guide/onboarding/introduction/' | relative_url }}) sequence that guides users through wallet creation.
+The wireframe screens below show the main onboarding sequence that guides users through wallet creation.
 
 <div class="image-slide-gallery">
 

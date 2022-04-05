@@ -2,7 +2,7 @@
 layout: guide
 title: Case studies
 description: A range of case study designs for bitcoin applications.
-nav_order: 6
+nav_order: 5
 has_children: true
 permalink: /guide/case-studies/
 main_classes: -no-top-padding
@@ -38,13 +38,7 @@ This section provides practical explorations of common user experiences with wir
 
 ---
 
-### [Daily spending]({{ '/guide/case-studies/cloud-backup/' | relative_url }})
-
-Explores a simple mobile wallet design that relies on automated cloud backup to store private keys. A common use case for this technique are wallets for daily spending on-the-go.
-
----
-
-### [Savings account]({{ '/guide/case-studies/savings-account/' | relative_url }})
+### [Savings wallet]({{ '/guide/case-studies/savings-wallet/' | relative_url }})
 
 A mobile wallet based on 2 of 3 multi-key setup that balances both low-friction daily spending and stricter security practices for medium amounts.
 
@@ -63,8 +57,8 @@ An onboarding experience for a mobile wallet shared by a couple who want to acce
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/designing-products/units-and-symbols/"
-   previousName = "Units & Symbols"
-   nextUrl = "/guide/case-studies/cloud-backup/"
-   nextName = "Daily spending"
+   previousUrl = "/guide/daily-spending-wallet/privacy/"
+   previousName = "Daily spending wallet privacy"
+   nextUrl = "/guide/case-studies/savings-wallet/"
+   nextName = "Savings wallet"
 %}

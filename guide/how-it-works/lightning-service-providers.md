@@ -29,7 +29,7 @@ Illustration sources: https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id
 
 # Lightning Service Providers
 
-The [lightning network]({{ '/guide/getting-started/technology-primer/#the-lightning-payment-network/' | relative_url }}) is currently bitcoins best solution at [scaling]({{ '/guide/getting-started/technology-primer/#do-all-transactions-have-to-be-this-secure/' | relative_url }}) to billions of people. However, using the lightning network self-custodially brings about many new usability issues, such as channel management, routing, uptime requirements and backups.
+The [lightning network]({{ '/guide/getting-started/technology-primer/#the-lightning-payment-network' | relative_url }}) is currently bitcoins best solution at [scaling]({{ '/guide/getting-started/technology-primer/#do-all-transactions-have-to-be-this-secure' | relative_url }}) to billions of people. However, using the lightning network self-custodially brings about many new usability issues, such as channel management, routing, uptime requirements and backups.
 
 Lightning service providers (LSPs) solve these user friction points by providing services that make it easy to access and use the lightning network. They act as trust-minimized third parties that make it easy to onboard new users into lightning.
 
@@ -56,7 +56,7 @@ Below are some lightning services, the pain points they solve, their trade-offs,
    layout = "float-right-desktop"
 %}
 
-A Lightning wallet requires both a [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) and up-to-date payment channel states to be recovered. Payment channel states need to be [backed up]({{ '/guide/daily-spending-wallet/backup-and-recovery/' | relative_url }}) each time a payment is received or sent. Users can make these backups, though if done incorrectly or stored insecurely, users are at risk of losing their bitcoin.
+A Lightning wallet requires both a [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) and up-to-date payment channel states to be recovered. Payment channel states need to be [backed up]({{ '/guide/daily-spending-wallet/backup-and-recovery/landing-page/' | relative_url }}) each time a payment is received or sent. Users can make these backups, though if done incorrectly or stored insecurely, users are at risk of losing their bitcoin.
 
 A backup & recovery service automatically backs up and stores a user’s channel states with the LSP when a lightning payment is sent or received. These backups are encrypted, usually by the user’s recovery phrase, before being sent to the LSP.
 
@@ -154,7 +154,7 @@ Dual funding is only applicable when funding a wallet with on-chain bitcoin. The
    layout = "float-right"
 %}
 
-The bitcoin in a payment channel can not be spent until the on-chain transaction that opened the channel is confirmed. If a [mempool]({{ '/guide/glossary/#mempool/' | relative_url }}) is congested, this could take a long time.
+The bitcoin in a payment channel can not be spent until the on-chain transaction that opened the channel is confirmed. If a [mempool]({{ '/guide/glossary/#mempool' | relative_url }}) is congested, this could take a long time.
 
 A channel open service using spend-unconfirmed, sometimes called turbo channels or zero-confirmation channels, allows users to spend their bitcoin instantly without having to wait for the channel transaction to confirm.
 
@@ -223,7 +223,7 @@ This service has an asymmetric trust model as it is more in favour of the user, 
    layout = "float-right-desktop"
 %}
 
-Lightning [payment requests]({{ '/guide/payments/request/payment-request-formats/' | relative_url }}) are not very human-readable and are mostly [single-use]({{ '/guide/payments/request/#single-use-payment-requests/' | relative_url }}). Sharing an invoice for every payment adds a lot of friction when sending and requesting payments.
+Lightning [payment requests]({{ '/guide/payments/request/payment-request-formats/' | relative_url }}) are not very human-readable and are mostly [single-use]({{ '/guide/daily-spending-wallet/requesting/#single-use-payment-requests' | relative_url }}). Sharing an invoice for every payment adds a lot of friction when sending and requesting payments.
 
 A [Lightning address](https://lightningaddress.com/) service gives users a reusable, human-readable way to receive lightning payments, such as bosch@bitcoin.design.
 
