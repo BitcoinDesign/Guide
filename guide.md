@@ -125,7 +125,7 @@ An overview and considerations for bitcoin wallets that are managed by multiple 
 
 ---
 
-<h2 class="h3" markdown="1">[How it works]({{ '/how-it-works/' | relative_url }})</h2>
+<h2 class="h3" markdown="1">[How it works]({{ '/guide/how-it-works/' | relative_url }})</h2>
 
 Explanations of various technical aspects of bitcoin and Lightning.
 
