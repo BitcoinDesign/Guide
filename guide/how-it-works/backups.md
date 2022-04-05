@@ -112,7 +112,7 @@ By storing the recovery-phrase in an online location that is encrypted (not in p
 - For small amounts (less than a months salary)
 - When you can't wait to set up a new wallet until you are at home
 
-For more on this user experience, see the [daily spending case study]({{ '/guide/case-studies/cloud-backup/' | relative_url }}).
+For more on this user experience, see the [daily spending reference design]({{ '/guide/daily-spending-wallet/backup-and-recovery/cloud-backup/' | relative_url }}).
 
 <br>
 
