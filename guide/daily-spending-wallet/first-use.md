@@ -9,7 +9,7 @@ redirect_from:
  - /guide/onboarding/creating-a-new-wallet/
  - /guide/onboarding/first-use/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/daily-spending-wallet//first-use/first-use-preview.png
+image: https://bitcoin.design/assets/images/guide/daily-spending-wallet/first-use/first-use-preview.png
 ---
 
 <!--
