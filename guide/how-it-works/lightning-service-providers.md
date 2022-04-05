@@ -154,7 +154,7 @@ Dual funding is only applicable when funding a wallet with on-chain bitcoin. The
    layout = "float-right"
 %}
 
-The bitcoin in a payment channel can not be spent until the on-chain transaction that opened the channel is confirmed. If the Mempool is congested, this could take a long time.
+The bitcoin in a payment channel can not be spent until the on-chain transaction that opened the channel is confirmed. If a [mempool]({{ '/guide/glossary/#mempool/' | relative_url }}) is congested, this could take a long time.
 
 A channel open service using spend-unconfirmed, sometimes called turbo channels or zero-confirmation channels, allows users to spend their bitcoin instantly without having to wait for the channel transaction to confirm.
 
