@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: How it works
-description: Find out about the complexities
+description: Find out about the complexities of how bitcoin works. 
 nav_order: 6
 has_children: true
 permalink: /guide/how-it-works/
