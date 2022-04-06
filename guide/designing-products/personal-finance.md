@@ -101,7 +101,7 @@ Most stores (online and offline) don’t currently accept bitcoin. When they do,
 
 A typical scenario could be that users create dedicated mobile bitcoin wallets for on-the-go payments, in addition to having separate wallets for larger amounts. Similar to having a bank account and regularly taking out cash at an ATM, users could refill their mobile wallets. The mobile wallet is connected to the Lightning network, which allows the user to make very fast (almost instant) payments. This wallet may use [automatic cloud backup]({{ '/guide/how-it-works/private-key-management/cloud-backup/' | relative_url }}) for the private key as well as the lightning channel state. The user's primary wallet however, would be more strongly secured with a [hardware wallet]({% link guide/getting-started/hardware.md %}#hardware-wallets) or even a [multi-key]({{ '/guide/how-it-works/private-key-management/multi-key/' | relative_url }}) configuration. This would mirror the primary focus of convenience over security. Beyond key management, payment interactions could be identical to what users are already familiar with.
 
-For more on this use case, see the [daily spending reference design]({{ '/guide/daily-spending-wallet/landing-page/' | relative_url }}).
+For more on this use case, see the [daily spending reference design]({{ '/guide/daily-spending-wallet' | relative_url }}).
 
 ## Monthly budgeting
 

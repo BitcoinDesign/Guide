@@ -133,7 +133,7 @@ Below is an example of some carousel screens that might be useful in helping a u
 Ok, now let's look at [funding a daily spending wallet.]({{ '/guide/daily-spending-wallet/funding/' | relative_url }})
 
 {% include next-previous.html
-   previousUrl = "/guide/daily-spending-wallet/landing-page/"
+   previousUrl = "/guide/daily-spending-wallet/"
    previousName = "Daily spending wallet"
    nextUrl = "/guide/daily-spending-wallet/funding/"
    nextName = "Funding"

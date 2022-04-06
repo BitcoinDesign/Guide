@@ -32,6 +32,12 @@ Learn how coin selection is used to choose which UTXOs (or “coins”) to use a
 
 ---
 
+### [Lightning service providers]({{ '/guide/how-it-works/lightning-service-providers/' | relative_url }})
+
+Common user experience problems of the Lightning network that can be resolved by third-party service providers.
+
+---
+
 ### [Nodes]({{ '/guide/how-it-works/nodes/' | relative_url }})
 
 Learn about how nodes help keep bitcoin decentralized and enforce its rules.

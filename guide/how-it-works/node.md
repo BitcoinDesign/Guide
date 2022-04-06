@@ -226,8 +226,8 @@ For more information:
 Next, let's learn about the different bitcoin [payment request formats]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }}) that exist.
 
 {% include next-previous.html
-   previousUrl = "/guide/how-it-works/coin-selection/"
-   previousName = "Coin selection"
+   previousUrl = "/guide/how-it-works/lightning-service-providers/"
+   previousName = "Lightning service providers"
    nextUrl = "/guide/how-it-works/payment-request-formats/"
    nextName = "Payment request formats"
 %}

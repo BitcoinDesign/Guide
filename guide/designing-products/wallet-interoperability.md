@@ -232,11 +232,11 @@ Your application should support constructing and managing transaction files, als
 
 ---
 
-Next, we jump into how to design a [daily spending wallet]({{ '/guide/daily-spending-wallet/landing-page/' | relative_url }}).
+Next, we jump into how to design a [daily spending wallet]({{ '/guide/daily-spending-wallet/' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/designing-products/units-and-symbols/"
    previousName = "Units and symbols"
-   nextUrl = "/guide/daily-spending-wallet/landing-page/"
+   nextUrl = "/guide/daily-spending-wallet/"
    nextName = "Daily spending wallet"
 %}
