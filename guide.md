@@ -7,7 +7,7 @@ description: The Bitcoin Design Guide is a reference for the design of bitcoin a
 permalink: /guide/
 main_nav: true
 secondary_nav: true
-main_classes: -no-top-padding
+main_classes: guide-page -no-top-padding
 image: https://bitcoin.design/assets/images/guide/bitcoin-island-preview.jpg
 ---
 
@@ -26,17 +26,6 @@ Illustration sources
 
 -->
 
-{% include picture.html
-   image = "/assets/images/guide/bitcoin-island.jpg"
-   retina = "/assets/images/guide/bitcoin-island@2x.jpg"
-   mobile = "/assets/images/guide/bitcoin-island-mobile.jpg"
-   mobileRetina = "/assets/images/guide/bitcoin-island-mobile@2x.jpg"
-   alt-text = "Bitcoin island travel map"
-   width = 1600
-   height = 900
-   layout = "full-width"
-%}
-
 # The Bitcoin design guide
 
 **Bitcoin is a global payment protocol that anyone with Internet access can participate in and contribute to. However, because bitcoin’s use cases are as vast as its user base, building bitcoin applications can be complicated.**
@@ -45,51 +34,163 @@ We designed this guide to help anyone navigate those complexities—regardless o
 
 ---
 
-### [Getting started]({{ '/guide/getting-started/introduction/' | relative_url }})
+<div class="center" markdown="1">
 
-Provides top-level overviews of open design, common visual language, technology, software, and hardware.
+{% include image.html
+   image = "/assets/images/guide/getting-started.png"
+   retina = "/assets/images/guide/getting-started@2x.png"
+   alt-text = ""
+   width = 100
+   height = 100
+   layout = "float-left"
+   link-url = "/guide/getting-started/introduction/"
+%}
 
----
+<h2 class="h3" markdown="1">[Getting started]({{ '/guide/getting-started/introduction/' | relative_url }})</h2>
 
-### [Designing bitcoin products]({{ '/guide/designing-products/introduction/' | relative_url }})
+New to bitcoin? This section provides top-level overviews of [open design]({{ '/guide/designing-products/open-design/' | relative_url }}), [visual language]({{ '/guide/getting-started/visual-language/' | relative_url }}), [design principles]({{ '/guide/designing-products/principles/' | relative_url }}), a [technology primer]({{ '/guide/getting-started/technology-primer/' | relative_url }}) and more.
 
-A close look at the design process, from conducting user research to use cases and frameworks like the usage life cycle.
-
----
-
-### [Daily spending wallet]({{ '/guide/daily-spending-wallet/landing-page/' | relative_url }})
-
-This section is an in-depth design exploration and reference design of a daily spending bitcoin wallet.
-
----
-
-### [Case studies]({{ '/guide/case-studies/' | relative_url }})
-
-Explores approaches to diverse uses cases with wireframes, designs and prototypes.
+</div>
 
 ---
 
-### [How it works]({{ '/guide/how-it-works/' | relative_url }})
+<div class="center" markdown="1">
 
-Learn about how bitcoin works under the hood.
+{% include image.html
+   image = "/assets/images/guide/designing-bitcoin-products.png"
+   retina = "/assets/images/guide/designing-bitcoin-products@2x.png"
+   alt-text = ""
+   width = 100
+   height = 100
+   layout = "float-left"
+   link-url = "/guide/designing-products/introduction/"
+%}
+
+<h2 class="h3" markdown="1">[Designing bitcoin products]({{ '/guide/designing-products/introduction/' | relative_url }})</h2>
+
+A closer look at the design process and frameworks, from [personal finance use cases]({{ '/guide/designing-products/personal-finance/' | relative_url }}) to [units & symbols]({{ '/guide/payments/units-and-symbols/' | relative_url }}), the [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/' | relative_url }}), [user research]({{ '/guide/designing-products/user-research/' | relative_url }}), and more.
+
+</div>
 
 ---
 
-### [Resources]({{ '/guide/resources/' | relative_url }})
+<h4 class="h3" markdown="1">Reference designs</h4>
 
-Resources to help you build better bitcoin products.
+{% include image.html
+   image = "/assets/images/guide/daily-spending.png"
+   retina = "/assets/images/guide/daily-spending@2x.png"
+   alt-text = "Three mobile screens mock-ups of a bitcoin app for spending"
+   width = 1600
+   height = 840
+   link-url = "/guide/daily-spending-wallet/"
+%}
+
+<h2 class="h3" markdown="1">[Daily spending wallet]({{ '/guide/daily-spending-wallet/' | relative_url }})</h2>
+
+An in-depth exploration of a mobile wallet for a Lightning-first, on-the-go use case. Covers primary user flows like [first use]({{ '/guide/onboarding/first-use/' | relative_url }}), [sending]({{ '/guide/payments/send/' | relative_url }}) and [requesting]({{ '/guide/payments/request/' | relative_url }}), features like [backup]({{ '/guide/onboarding/backing-up-a-wallet/' | relative_url }}) and [contacts]({{ '/guide/payments/contacts/' | relative_url }}), and more.
+
+<div class="columns-desktop -two -ref">
+<div class="column" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/savings-account.png"
+   retina = "/assets/images/guide/savings-account@2x.png"
+   alt-text = "Mobile screen mock-up of a bitcoin app for savings"
+   width = 400
+   height = 210
+   link-url = "/guide/case-studies/savings-account/"
+%}
+
+<h2 class="h3" markdown="1">[Savings wallet]({{ '/guide/case-studies/savings-account/' | relative_url }})</h2>
+
+A multi-key mobile wallet design that provides great security for larger amounts, and low-friction for smaller transactions.
+
+</div>
+<div class="column" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/upgradeable-account.png"
+   retina = "/assets/images/guide/upgradeable-account@2x.png"
+   alt-text = "Three mobile mock-ups of a user flow for account security upgrades"
+   width = 400
+   height = 210
+   link-url = "/guide/case-studies/upgradeable-wallet/"
+%}
+
+<h2 class="h3" markdown="1">[Upgradeable account]({{ '/guide/case-studies/upgradeable-wallet/' | relative_url }})</h2>
+
+Exploring the concept of progressive security, in which applications help users navigate varying security configurations appropriate to their holdings and use case.
+
+</div>
+</div>
+
+<div class="columns-desktop -two -ref">
+<div class="column" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/shared-accounts.png"
+   retina = "/assets/images/guide/shared-accounts@2x.png"
+   alt-text = "Three mobile mock-ups of a user flow for sharing accounts between multiple users"
+   width = 400
+   height = 210
+   link-url = "/guide/case-studies/shared-account/"
+%}
+
+<h2 class="h3" markdown="1">[Shared accounts]({{ '/guide/case-studies/shared-account/' | relative_url }})</h2>
+
+An overview and considerations for bitcoin wallets that are managed by multiple owners.
+
+</div>
+<div class="column -blank" markdown="1">
+
+</div>
+</div>
 
 ---
 
-### [Contribute to the guide]({{ '/guide/contribute/' | relative_url }})
+<h2 class="h3" markdown="1">[How it works]({{ '/guide/how-it-works/' | relative_url }})</h2>
 
-Join our open community and help us improve the Bitcoin Design Guide.
+Explanations of various technical aspects of bitcoin and Lightning.
+
+<div class="columns-desktop -two -how">
+<div class="column" markdown="1">
+
+[Private key management]({{ '/guide/how-it-works/private-key-management/introduction/' | relative_url }})<br />
+[Automatic cloud backup]({{ '/guide/how-it-works/private-key-management/cloud-backup/' | relative_url }})<br />
+[Manual backup]({{ '/guide/how-it-works/private-key-management/manual-backup/' | relative_url }})<br />
+[External signers]({{ '/guide/how-it-works/private-key-management/external-signers/' | relative_url }})<br />
+[Multi-key]({{ '/guide/how-it-works/private-key-management/multi-key/' | relative_url }})
+
+</div>
+<div class="column" markdown="1">
+
+[Bitcoin backups]({{ '/guide/how-it-works/backups/' | relative_url }})<br />
+[Payment request formats]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }})<br />
+[Coin selection]({{ '/guide/how-it-works/coin-selection/' | relative_url }})<br />
+[Nodes]({{ '/guide/how-it-works/nodes/' | relative_url }})<br />
+[Transactions]({{ '/guide/how-it-works/transactions/' | relative_url }})
+
+</div>
+</div>
 
 ---
 
-### [Glossary]({{ '/guide/glossary/' | relative_url }})
+<h2 class="h3" markdown="1">[Resources]({{ '/guide/resources/' | relative_url }})</h2>
 
-Helps you learn the most need-to-know bitcoin terminology from Address to zpub.
+[Research references]({{ '/guide/designing-products/user-research/resources' | relative_url }}), [shared design files]({{ '/guide/designing-products/design-resources/' | relative_url }}), and other useful assets.
+
+---
+
+<h2 class="h3" markdown="1">[Glossary]({{ '/guide/glossary/' | relative_url }})</h2>
+
+Helps you learn the most need-to-know bitcoin terminology, from [Address]({{ '/guide/glossary/#address' | relative_url }}) to [ZPUB]({{ '/guide/glossary/#zpub' | relative_url }}).
+
+---
+
+<h2 class="h3" markdown="1">[Contribute]({{ '/guide/contribute/' | relative_url }})</h2>
+
+Join our open community and help us improve the Bitcoin Design Guide. Here’s where you can get involved and [contribute]({{ '/guide/contribute/' | relative_url }}).
+
 
 ---
 
