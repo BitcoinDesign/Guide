@@ -41,7 +41,7 @@ https://www.figma.com/community/file/995256542920917246/BDG---Private-key-manage
 
 Protecting a user's private keys comes with no less responsibility than safeguarding their bank accounts. That puts [private key]({{ '/guide/glossary/#private-key' | relative_url }}){:target="_blank"} management at the center of all bitcoin application design considerations. It also presents a problem: if your application is not secure enough, you risk losing the user's funds. But if it's not convenient enough, you risk losing the user.
 
-This chapter is an overview of private key management schemes, including descriptions of available approaches, advice, and best practices. After this chapter, you should be able to choose a solution that is suited to your users.
+This chapter is an overview of private key management schemes, including descriptions of available approaches, advice, and best practices. After this chapter, you should be able to choose a solution suited to your users.
 
 ---
 
@@ -71,7 +71,7 @@ Private keys that are not stored on the same device as the wallet application.
 
 ### [Multi-key]({{ '/guide/how-it-works/private-key-management/multi-key/' | relative_url }})
 
-A wallet that is managed by multiple independent keys of which at least one is stored on a separate device from the wallet application. The keys can be owned by one person, or several people in a shared setup.
+A wallet that is managed by multiple independent keys, of which at least one is stored on a separate device from the wallet application. The keys can be owned by one person, or several people in a shared setup.
 
 ---
 
