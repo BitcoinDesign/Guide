@@ -98,10 +98,10 @@ An in-depth exploration of a mobile wallet for a Lightning-first, on-the-go use 
    alt-text = "Mobile screen mock-up of a bitcoin app for savings"
    width = 400
    height = 210
-   link-url = "/guide/case-studies/savings-account/"
+   link-url = "/guide/savings-wallet/"
 %}
 
-<h2 class="h3" markdown="1">[Savings wallet]({{ '/guide/case-studies/savings-account/' | relative_url }})</h2>
+<h2 class="h3" markdown="1">[Savings wallet]({{ '/guide/savings-wallet/' | relative_url }})</h2>
 
 A multi-key mobile wallet design that provides great security for larger amounts, and low-friction for smaller transactions.
 
@@ -114,10 +114,10 @@ A multi-key mobile wallet design that provides great security for larger amounts
    alt-text = "Three mobile mock-ups of a user flow for account security upgrades"
    width = 400
    height = 210
-   link-url = "/guide/case-studies/upgradeable-wallet/"
+   link-url = "/guide/upgradeable-wallet/"
 %}
 
-<h2 class="h3" markdown="1">[Upgradeable account]({{ '/guide/case-studies/upgradeable-wallet/' | relative_url }})</h2>
+<h2 class="h3" markdown="1">[Upgradeable account]({{ '/guide/upgradeable-wallet/' | relative_url }})</h2>
 
 Exploring the concept of progressive security, in which applications help users navigate varying security configurations appropriate to their holdings and use case.
 
@@ -133,10 +133,10 @@ Exploring the concept of progressive security, in which applications help users 
    alt-text = "Three mobile mock-ups of a user flow for sharing accounts between multiple users"
    width = 400
    height = 210
-   link-url = "/guide/case-studies/shared-account/"
+   link-url = "/guide/shared-account/"
 %}
 
-<h2 class="h3" markdown="1">[Shared accounts]({{ '/guide/case-studies/shared-account/' | relative_url }})</h2>
+<h2 class="h3" markdown="1">[Shared accounts]({{ '/guide/shared-account/' | relative_url }})</h2>
 
 An overview and considerations for bitcoin wallets that are managed by multiple owners.
 
