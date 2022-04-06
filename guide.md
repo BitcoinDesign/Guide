@@ -79,7 +79,7 @@ A closer look at the design process and frameworks, from [personal finance use c
 {% include image.html
    image = "/assets/images/guide/daily-spending.png"
    retina = "/assets/images/guide/daily-spending@2x.png"
-   alt-text = "Strong handshake"
+   alt-text = "Three mobile screens mock-ups of a bitcoin app for spending"
    width = 1600
    height = 840
    link-url = "/guide/daily-spending-wallet/"
@@ -95,7 +95,7 @@ An in-depth exploration of a mobile wallet for a Lightning-first, on-the-go use 
 {% include image.html
    image = "/assets/images/guide/savings-account.png"
    retina = "/assets/images/guide/savings-account@2x.png"
-   alt-text = "Strong handshake"
+   alt-text = "Mobile screen mock-up of a bitcoin app for savings"
    width = 400
    height = 210
    link-url = "/guide/case-studies/savings-account/"
@@ -111,7 +111,7 @@ A multi-key mobile wallet design that provides great security for larger amounts
 {% include image.html
    image = "/assets/images/guide/upgradeable-account.png"
    retina = "/assets/images/guide/upgradeable-account@2x.png"
-   alt-text = "Strong handshake"
+   alt-text = "Three mobile mock-ups of a user flow for account security upgrades"
    width = 400
    height = 210
    link-url = "/guide/case-studies/upgradeable-wallet/"
@@ -130,7 +130,7 @@ Exploring the concept of progressive security, in which applications help users 
 {% include image.html
    image = "/assets/images/guide/shared-accounts.png"
    retina = "/assets/images/guide/shared-accounts@2x.png"
-   alt-text = "Strong handshake"
+   alt-text = "Three mobile mock-ups of a user flow for sharing accounts between multiple users"
    width = 400
    height = 210
    link-url = "/guide/case-studies/shared-account/"
