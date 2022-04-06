@@ -77,8 +77,8 @@ A closer look at the design process and frameworks, from [personal finance use c
 <h4 class="h3" markdown="1">Reference designs</h4>
 
 {% include image.html
-   image = "/assets/images/guide/daily-spending-mobile.png"
-   retina = "/assets/images/guide/daily-spending-mobile@2x.png"
+   image = "/assets/images/guide/daily-spending.png"
+   retina = "/assets/images/guide/daily-spending@2x.png"
    alt-text = "Strong handshake"
    width = 1600
    height = 840
