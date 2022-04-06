@@ -97,6 +97,12 @@ A survey and follow-up interview of 990 bitcoin users to determine bitcoin manag
 
 ## Independent research
 
+#### [Real Talk: Women x Crypto 2.0 survey](https://blockfi.com/female-crypto-investor-research)
+
+_2022 by BlockFi_
+
+Female Americans were asked about their current motivations, behaviors and dispositions around crypto investing, financial wellness, and career aspirations. 24% reported owning crypto, with 71% of those owning bitcoin. 70% have only bought and never sold.
+
 #### [The state of Lightning](https://www.research.arcane.no/the-state-of-lightning)
 
 _2021 by Arcane research_
