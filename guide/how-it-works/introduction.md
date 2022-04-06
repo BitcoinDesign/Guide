@@ -2,7 +2,7 @@
 layout: guide
 title: How it works
 description: Find out about the complexities of how bitcoin works. 
-nav_order: 6
+nav_order: 8
 has_children: true
 permalink: /guide/how-it-works/
 main_classes: -no-top-padding
@@ -63,7 +63,7 @@ An overview of bitcoin payments, common concepts, and the transaction lifecycle.
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/case-studies/shared-account/"
+   previousUrl = "/guide/shared-account/"
    previousName = "Shared account"
    nextUrl = "/guide/how-it-works/backups/"
    nextName = "Bitcoin backups"

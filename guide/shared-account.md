@@ -2,9 +2,10 @@
 layout: guide
 title: Shared account
 description: Bitcoin wallet design case study for accounts managed together by multiple owners.
-nav_order: 4
-parent: Case studies
-permalink: /guide/case-studies/shared-account/
+nav_order: 7
+permalink: /guide/shared-account/
+redirect_from:
+ - /guide/case-studies/shared-account/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/case-studies/shared-account/shared-account-preview.jpg
 image_base: /assets/images/guide/case-studies/shared-account/
@@ -116,7 +117,7 @@ The wireframe screens below show the main onboarding sequence that guides users 
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/case-studies/upgradeable-wallet/"
+   previousUrl = "/guide/upgradeable-wallet/"
    previousName = "Upgradeable wallet"
    nextUrl = "/guide/how-it-works/"
    nextName = "How it works"

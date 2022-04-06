@@ -1,10 +1,12 @@
 ---
 layout: guide
 title: Upgradeable account
-description: UX case study for a bitcoin wallet with multiple private key management schemes.
-nav_order: 3
-parent: Case studies
-permalink: /guide/case-studies/upgradeable-wallet/
+description: UX reference design for a bitcoin wallet with multiple private key management schemes.
+nav_order: 6
+permalink: /guide/upgradeable-wallet/
+redirect_from:
+ - /guide/case-studies/upgradeable-wallet/
+main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/case-studies/upgradeable-wallet/upgradeable-wallet-preview.jpg
 image_base: /assets/images/guide/case-studies/upgradeable-wallet/
 images:
@@ -29,7 +31,7 @@ images:
 
 Editor's notes
 
-Upgradeable wallet case study.
+Upgradeable wallet reference design.
 
 Illustration sources
 
@@ -54,7 +56,7 @@ The solution in this case could be a wallet that enables the user to upgrade the
    retina = "/assets/images/guide/case-studies/upgradeable-wallet/case-upgradeable@2x.png"
    mobile = "/assets/images/guide/case-studies/upgradeable-wallet/case-upgradeable-mobile.png"
    mobileRetina = "/assets/images/guide/case-studies/upgradeable-wallet/case-upgradeable-mobile@2x.png"
-   alt-text = "Image of case study prototype"
+   alt-text = "Image of reference design prototype"
    width = 800
    height = 500
 %}
@@ -90,15 +92,15 @@ The screens below show how this architecture allows users to get onboarded quick
 
 </div>
 
-**Case study resources**
+**Resources**
 - [Protoype](https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A270&viewport=861%2C146%2C0.44897958636283875&scaling=scale-down)
 - [Figma design file](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A269)
 
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/case-studies/savings-wallet/"
+   previousUrl = "/guide/savings-wallet/"
    previousName = "Savings wallet"
-   nextUrl = "/guide/case-studies/shared-account/"
+   nextUrl = "/guide/shared-account/"
    nextName = "Shared account"
 %}
