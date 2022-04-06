@@ -17,7 +17,7 @@ main_classes: -no-top-padding
 
 Editor's notes
 
-Description of what an external signers are and what the scheme consists of.
+Description of what external signers are and what the scheme consists of.
 
 Illustration sources
 
@@ -48,13 +48,13 @@ A wallet application supporting external signers removes the need for storing pr
 
 <div class="center" markdown="1">
 
-The external signer generates and stores private keys externally, and preferably offline, from the users primary wallet application.
+The external signer generates and stores private keys externally, and preferably offline, from the user's primary wallet application.
 
-To sign a transaction, the primary wallet application submits a unsigned transaction or a partially signed bitcoin transaction ([PSBT](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki)) to the external signer.
+To sign a transaction, the primary wallet application submits an unsigned transaction or a partially signed bitcoin transaction ([PSBT](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki)) to the external signer.
 
-The external signer then signs the transaction or PSBT and sends it back to the primary wallet application. The users primary wallet application now broadcasts this now signed transaction to the bitcoin network for processing. This process can also happen fully air-gapped using QR codes or memory cards instead of cables or wireless connections, to keep the device offline at all times.
+The external signer then signs the transaction or PSBT and sends it back to the primary wallet application. The user's primary wallet application now broadcasts this now signed transaction to the bitcoin network for processing. This process can also happen fully air-gapped using QR codes or memory cards instead of cables or wireless connections, to keep the device offline at all times.
 
-PSBT's can be passed between the primary wallet application and external signer in many ways such as email, messenger, QR, SD card etc. With PSBTs external signers can be completely air-gapped meaning they never have to be plugged into another device or connect to any network to sign. Signers that do not support PSBTs need to communicate transaction data over USB which is less secure as the device has to be plugged into another, potentially malicious, device to sign.
+PSBT's can be passed between the primary wallet application and external signer in many ways such as email, messenger, QR, SD card etc. With PSBTs external signers can be completely air-gapped, meaning they never have to be plugged into another device or connect to any network to sign. Signers that do not support PSBTs need to communicate transaction data over USB, which is less secure as the device has to be plugged into another, potentially malicious, device to sign.
 
 </div>
 

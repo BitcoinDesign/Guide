@@ -38,7 +38,7 @@ https://www.figma.com/community/file/995256542920917246/BDG---Private-key-manage
 # Private key schemes
 The private key controls the bitcoin [wallet]({{ '/guide/glossary/#wallet' | relative_url }}){:target="_blank"}, and the *scheme* is simply a way to describe how the key is stored and kept secure.
 
-Important aspects to consider when choosing a private key management scheme is what you expect your users to use the wallet application for, who they are, how much bitcoin they might store in your product and what layers they need to transact on. For example:
+Important aspects to consider when choosing a private key management scheme are what you expect your users to use the wallet application for, who they are, how much bitcoin they might store in your product and what layers they need to transact on. For example:
 
 
 * **Target audience** - Are your users completely new to bitcoin and its concepts, or well versed in all the technological underpinnings?
@@ -55,9 +55,9 @@ The trick to picking a private key management scheme is finding the appropriate 
 
 There are many potential threat-vectors for users of non-custodial wallet applications. People will be exposed differently to these vectors, and be more or less comfortable with their risk in each.
 
-As a simplification we can characterize the main potentials for loss of funds as;
+As a simplification, we can characterize the main potentials for loss of funds as;
 
-* **Self inflicted** - you lose access to your own private key
+* **Self-inflicted** - you lose access to your own private key
 * **Theft** - a third party gains access to your private key
 
 So your goal is to make it hard for users to lose their keys, and at the same time, make it hard for a third party to get to them.
@@ -66,7 +66,7 @@ Casa's [wealth security protocol]({{ 'https://github.com/Casa/wealth-security-pr
 
 ## Picking a scheme for your product
 
-Now that you have a clear picture of your use case, target audience and risk vectors we can consider which schemes might be suitable for your product.
+Now that you have a clear picture of your use case, target audience and risk vectors, we can consider which schemes might be suitable for your product.
 
 {% include tip/recommendation.html %}
 
@@ -124,7 +124,7 @@ Now let's dive in and look at the various schemes that might be suitable for a p
 
 ### Shared schemes
 
-While multi-key setups can be used for personal use, if several people need to share funds multiple keys become a necessity. You will often see this referred to as *multi-sig* setups, stemming from the fact that multiple keys are needed to sign a transaction in order for it to go through and be valid.
+While multi-key setups can be used for personal use, if several people need to share funds, multiple keys become a necessity. You will often see this referred to as *multi-sig* setups, stemming from the fact that multiple keys are needed to sign a transaction in order for it to go through and be valid.
 
 The use cases for shared schemes include spouses managing a joint account, groups, organizations or companies managing their funds, as well as inheritance planning. It can also be used for governance of an organization, with transactions used not to transfer funds but to record, or vote, for decisions.
 
@@ -135,7 +135,7 @@ The use cases for shared schemes include spouses managing a joint account, group
 There are also several non-recommended private key schemes not detailed in this guide that are not widely used due to their poor security, lack of interoperability and unnecessary complexity. Below are schemes not recommended to be used in your bitcoin applications and why.
 
 - Key sharding (Shamir's secret sharing): Sometimes referred to as an alternative to multi-key setups, but the security risks are much greater. Its major drawbacks are a single point of failure, no key invalidation, no widely used implementation (though [SLIP-0039](https://github.com/satoshilabs/slips/blob/master/slip-0039.md) does exist), and poor auditability. Read more about the issues with key sharding [here](https://docs.keys.casa/wealth-security-protocol/rejected-key-schemes/key-sharding-shamirs-secret-sharing).
-- DAT files: A legacy form of backing up bitcoin private keys that use the generic .dat file type. These are still used today by [Bitcoin Core](https://bitcoincore.org/) due to [security concerns](https://bitcoin.stackexchange.com/questions/92716/why-keys-generated-in-bitcoin-core-mismatch-that-from-online-generators-despite) with non-hardened key derivation. This form of private key scheme is not widely adopted due to its lack of interoperability among wallets, not being human readable like a recovery phrase, and being potentially insecure if the user does not encrypt the keys contained within the file.
+- DAT files: A legacy form of backing up bitcoin private keys that use the generic .dat file type. These are still used today by [Bitcoin Core](https://bitcoincore.org/) due to [security concerns](https://bitcoin.stackexchange.com/questions/92716/why-keys-generated-in-bitcoin-core-mismatch-that-from-online-generators-despite) with non-hardened key derivation. This form of private key scheme is not widely adopted due to its lack of interoperability among wallets, not being human-readable like a recovery phrase, and being potentially insecure if the user does not encrypt the keys contained within the file.
 - 1-of-2 multi-key: This multi-key scheme may prevent users from misplacing a private key but offers no security benefits with added complexity to the scheme. Making multiple redundant copies of a single sig key offers the same benefits around key misplacement without the added complexity. Learn more [here](https://docs.keys.casa/wealth-security-protocol/rejected-key-schemes/1-of-2).
 
 ---

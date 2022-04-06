@@ -49,9 +49,9 @@ The automatic cloud backup scheme gives users reasonable security against theft,
 If a wallet supports Lightning, it may already have automatic cloud backup [enabled for the channel state]({{'/guide/daily-spending-wallet/backup-and-recovery/cloud-backup/' | relative_url}}). If you have implemented automatic cloud backups in your app for Lightning channel state, wallet data, or anything else, you could also use this same connection with the cloud provider to store a backup of the user's private key.
 
 ### How it works
-First the application generates a wallet with a private key. Then, the private key is encrypted and backed up to a location convenient and safe for the user, yet hard for a malicious third-party to gain access to.
+First, the application generates a wallet with a private key. Then, the private key is encrypted and backed up to a location convenient and safe for the user, yet hard for a malicious third-party to gain access to.
 
-With most implementations so far, the private key's location will be the keychain or a user-specific key-value-store on a mobile device that is also backed up by the OS provider. The most common would be iOS (iCloud) and Android (Google Drive) which both have secure data storage that is backed up and synced between a user's devices.
+With most implementations so far, the private key's location will be the keychain or a user-specific key-value-store on a mobile device that is also backed up by the OS provider. The most common would be iOS (iCloud) and Android (Google Drive), which have secure data storage that is backed up and synced between a user's devices.
 
 This makes the backup accessible by the user on a new device, should they lose the original, but only accessible by someone that can log into the user’s Apple or Google account.
 
@@ -72,9 +72,9 @@ To see what a user experience with this scheme could look like, see the [daily s
 
 {% include fact/cons.html %}
 
-- Private key in cloud storage increases risk of malicious third party access
+- Private key in cloud storage increases risk of malicious third-party access
 - User needs to trust their OS and cloud storage provider
-- Unless the backup includes the recovery phrase users will not be able to export their wallet to another product
+- Unless the backup includes the recovery phrase, users will not be able to export their wallet to another product
 
 {% include fact/close.html %}
 
