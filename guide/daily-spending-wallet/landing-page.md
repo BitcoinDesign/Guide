@@ -6,6 +6,7 @@ nav_order: 4
 has_children: true
 permalink: /guide/daily-spending-wallet/
 main_classes: -no-top-padding
+first_reference_design: true
 image: https://bitcoin.design/assets/images/guide/daily-spending-wallet/daily-spending-preview.jpg
 ---
 

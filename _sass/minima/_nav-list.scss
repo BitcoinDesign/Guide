@@ -12,6 +12,22 @@
   margin-left: 0;
   list-style: none;
 
+  .nav-list-divider {
+    height: 1px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #dedede;
+    box-sizing: border-box;
+  }
+
+  .nav-list-category {
+    padding-left: 30px;
+    font-size: 15px;
+    line-height: 30px;
+    color: #707070;
+  }
+
   .nav-list-item {
     position: relative;
     margin: 0;
