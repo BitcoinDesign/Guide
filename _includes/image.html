@@ -9,5 +9,5 @@
         	loading="lazy"
     	>
     {% if include.link-url %}</a>{% endif %}
-    {% if include.caption %}<figcaption markdown="1">{{ include.caption | markdownify }}</figcaption>{% endif %}
+    {% if include.caption %}<figcaption markdown="1">{{ include.caption | no_runts | markdownify }}</figcaption>{% endif %}
 </figure>
