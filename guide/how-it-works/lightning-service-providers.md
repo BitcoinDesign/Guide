@@ -114,7 +114,7 @@ Offering inbound liquidity with a channel open service addresses this situation.
 
 A channel open with inbound liquidity allows users to fund their wallets with a lightning payment, or combined with a [swap-in]({{ '/guide/how-it-works/lightning-service-providers/#swap-in' | relative_url }}) or [dual funding]({{ '/guide/how-it-works/lightning-service-providers/#dual-funding' | relative_url }}) service can allow funding with an on-chain payment.
 
-[Dunder](https://github.com/hsjoberg/dunder-lsp) is an open source LSP client that help applications offer inbound liquidity to users.
+[Dunder](https://github.com/hsjoberg/dunder-lsp) is an open-source LSP client that helps applications offer inbound liquidity to users.
 
 [Liquidity ads](https://medium.com/blockstream/setting-up-liquidity-ads-in-c-lightning-54e4c59c091d) are a protocol-level way for anyone to act as an LSP and advertise their willingness to offer inbound liquidity to other users.
 
@@ -137,7 +137,7 @@ Using a channel open service requires a LSP to open a channel for the user on th
 
 A [dual-funding](https://bitcoinops.org/en/topics/dual-funding/) channel open service solves this issue of trust by having users cooperatively open a channel with the LSP. Users get the benefits of having both inbound and outbound liquidity without having to trust the LSP.
 
-Dual funding is only applicable when funding a wallet with on-chain bitcoin. The issue of trusting the LSP opening the channel for the user still exists when funding with a lightning payment.
+Dual funding is only applicable when funding a wallet with on-chain bitcoin. The issue of trusting the LSP to open the channel for the user still exists when funding with a lightning payment.
 
 </div>
 
@@ -227,9 +227,9 @@ Lightning [payment requests]({{ '/guide/payments/request/payment-request-formats
 
 A [Lightning address](https://lightningaddress.com/) service gives users a reusable, human-readable way to receive lightning payments, such as bosch@bitcoin.design.
 
-Lightning addresses require a non-custodial, trusted third-party server ran by a LSP to forward payment requests. This opens up the possibility that the LSP could censor user payments on the application layer by not relaying them between the parties.
+Lightning addresses require a non-custodial, trusted third-party server run by a LSP to forward payment requests. This opens up the possibility that the LSP could censor user payments on the application layer by not relaying them between the parties.
 
-Lightning addresses build on top of the [LNURL](https://github.com/fiatjaf/lnurl-rfc) standard which is another way to create reusable payment requests.
+Lightning addresses build on top of the [LNURL](https://github.com/fiatjaf/lnurl-rfc) standard, which is another way to create reusable payment requests.
 
 </div>
 
@@ -300,7 +300,7 @@ Lightning nodes need to stay online in order to monitor for potential cheating a
 
 A [watchtower](https://bitcoinops.org/en/topics/watchtowers/) service prevents this by monitoring the user's node for cheating attempts. If one is detected, a watchtower broadcasts a justice transaction which gives the cheating parties bitcoin to the honest user. Watchtowers sometimes take a small fee for offering this service.
 
-When using a watchtower and a LSP for [opening channels]({{ '/guide/how-it-works/lightning-service-providers/#channel-opens' | relative_url }}), it's important a watchtower is not that same LSP. This is due to that LSP being the users counterparty, so having a watchtower with them would not safeguard their bitcoin.
+When using a watchtower and a LSP for [opening channels]({{ '/guide/how-it-works/lightning-service-providers/#channel-opens' | relative_url }}), it's important a watchtower is not that same LSP. This is because LSP is the users counterparty, so having a watchtower with them would not safeguard their bitcoin.
 
 The [lightningnetwork+ watchtower](https://lightningnetwork.plus/watchtower) is an example of an LSP offering a watchtower client that users can use.
 
