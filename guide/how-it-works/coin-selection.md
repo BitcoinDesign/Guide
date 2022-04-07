@@ -141,7 +141,7 @@ The default strategy spends the oldest/youngest coins first.
 
 #### Pruned FIFO
 
-Similar to FIFO, but smallest the coins are filtered out in the post-selection step.
+Similar to FIFO, but the smallest coins are filtered out in the post-selection step.
 
 #### High Priority First
 
@@ -303,9 +303,9 @@ A user chooses to send a payment to one of their contacts. They enter the amount
 
 #### When to use
 
-- Wallets-oriented towards advanced, privacy focused bitcoiners
+- Wallets-oriented towards advanced, privacy-focused bitcoiners
 - When wanting to give users full control of selecting transaction inputs
-- When paired with good labeling practises
+- When paired with good labeling practices
 
 #### When not to use
 
