@@ -158,7 +158,7 @@ There is no perfect solution to guarantee 100% privacy that lasts forever becaus
 
 ---
 
-Next, let's dive into the [savings wallet case study]({{ '/guide/savings-wallet/' | relative_url }}).
+Next, let's dive into the [savings wallet reference design]({{ '/guide/savings-wallet/' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/daily-spending-wallet/security/"
