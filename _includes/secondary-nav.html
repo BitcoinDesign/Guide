@@ -21,6 +21,13 @@
 
       {%- if node.parent == nil and node.title and node.secondary_nav != false -%}
 
+        {%- if node.first_reference_design == true -%}
+
+        <li class="nav-list-divider"></li>
+        <li class="nav-list-category">Reference designs</li>
+
+        {%- endif -%}
+
         <li class="nav-list-item{% if page.url == node.url or page.parent == node.title or page.grand_parent == node.title %} -active{% endif %}">
           {%- if page.parent == node.title or page.grand_parent == node.title -%}
             {%- assign first_level_url = node.url | relative_url -%}
@@ -55,6 +62,12 @@
             </ul>
           {%- endif -%}
         </li>
+
+        {%- if node.last_reference_design == true -%}
+
+        <li class="nav-list-divider"></li>
+
+        {%- endif -%}
       {%- endif -%}
 
   {%- endfor -%}

@@ -7,6 +7,7 @@ permalink: /guide/shared-account/
 redirect_from:
  - /guide/case-studies/shared-account/
 main_classes: -no-top-padding
+last_reference_design: true
 image: https://bitcoin.design/assets/images/guide/case-studies/shared-account/shared-account-preview.jpg
 image_base: /assets/images/guide/case-studies/shared-account/
 images:
