@@ -51,7 +51,7 @@ From complete control, to fully trusting a single third party, there are a varie
    layout = "float-left"
 %}
 
-Hardware nodes are dedicated devices, usually Raspberry Pi's, that run a bitcoin node. Hardware nodes can come with local wallet functionality or simply be connected to by users external wallets as a source of trusted block data. Several 'plug-and-play' hardware node options exist such as [Umbrel](https://getumbrel.com/), [MyNode](https://mynodebtc.com/), [RoninDojo](https://ronindojo.io/), and [Raspiblitz](https://raspiblitz.org/).
+Hardware nodes are dedicated devices, usually Raspberry Pi's, that run a bitcoin node. Hardware nodes can come with local wallet functionality or simply be connected to users external wallets as a source of trusted block data. Several 'plug-and-play' hardware node options exist such as [Umbrel](https://getumbrel.com/), [MyNode](https://mynodebtc.com/), [RoninDojo](https://ronindojo.io/), and [Raspiblitz](https://raspiblitz.org/).
 
 </div>
 
@@ -193,7 +193,7 @@ A light node is bitcoin software that does not verify or enforce the rules of th
    layout = "float-left"
 %}
 
-**Simplified payment verification (SPV) light nodes** query and download block headers from full nodes making it possible for users to verify transactions without running a full node.
+**Simplified payment verification (SPV) light nodes** query and download block headers from full nodes, making it possible for users to verify transactions without running a full node.
 
 For more information:
 

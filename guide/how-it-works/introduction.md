@@ -16,7 +16,7 @@ Illustration sources:
 
 # How it works
 
-This section provides practical explorations of common user experiences with wireframes, design mock-ups, prototypes and more.
+This section provides practical explorations of common user experiences with wireframes, design mock-ups, prototypes, etc.
 
 ---
 
@@ -46,7 +46,7 @@ Learn about how nodes help keep bitcoin decentralized and enforce its rules.
 
 ### [Payment request formats]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }})
 
-Learn about the different types of payment request formats, arom a standard on-chain address to a Lightning address, that exist in bitcoin.
+Learn about the different types of payment request formats, from a standard on-chain address to a Lightning address, that exist in bitcoin.
 
 ---
 

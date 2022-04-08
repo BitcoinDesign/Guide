@@ -34,7 +34,7 @@ Illustration sources: https://www.figma.com/community/file/995256542920917246/BD
 
 # Bitcoin backups
 
-The self-custody of bitcoin is an important right, but also a financial responsibility that can scale from pocket money to life savings, and take practice getting used to.
+The self-custody of bitcoin is not only an important right, but also a financial responsibility that can scale from pocket money to life savings, and takes practice getting used to.
 
 This guide is a straightforward starting point for simple bitcoin backups, aimed at users of bitcoin products using the base layer.
 
@@ -64,7 +64,7 @@ Lightning wallets also need to back up the full channel state history to be rest
 
 A basic backup can be done in a few minutes, while more advanced setups can require more time and effort, like the purchase of dedicated material.
 
-Let’s look at some real life examples of backup methods for single-key wallets and what they protect against.
+Let’s look at some real-life examples of backup methods for single-key wallets and what they protect against.
 
 <br>
 
@@ -79,9 +79,9 @@ Let’s look at some real life examples of backup methods for single-key wallets
 
 {% include tip/recommendation.html %}
 
-Level 0 and 1 are good when getting started, and require very little effort.
+Levels 0 and 1 are good when getting started, and require very little effort.
 
-Level 2, 3 or 4 are recommended for storing larger amounts.
+Levels 2, 3 or 4 are recommended for storing larger amounts.
 
 {% include tip/close.html %}
 
@@ -90,7 +90,7 @@ Level 2, 3 or 4 are recommended for storing larger amounts.
 #### Level 0
 ## Encrypted cloud backup
 
-By storing the recovery-phrase in an online location that is encrypted (not in plain text) and hard to access by anyone other than yourself, you are protected against *loss of wallet*. This is the absolute minimum you should do and only takes a few minutes.
+By storing the recovery-phrase in an encrypted online location (not in plain text) and hard to access by anyone other than yourself, you are protected against *loss of wallet*. This is the absolute minimum you should do and only takes a few minutes.
 
 {% include image.html
    image = "/assets/images/guide/how-it-works/backups/cloud-backup.jpg"
@@ -141,7 +141,7 @@ By storing the recovery-phrase written down on paper in your own home you have p
 - Stick it on the fridge, or other visible locations
 
 **Suitable**
-- For small amounts (less than a months salary)
+- For small amounts (less than a month's salary)
 - When you are setting up a new wallet at home
 
 <br>
@@ -206,8 +206,8 @@ It's worth noting that most hardware wallets support passphrases, while most sof
 
 **Do**
 - Use a secure passphrase, it is case sensitive and can include numbers and special characters
-- Have redundant and secure backups of both the recovery-phrase and the passphrase, they are equally important for successful wallet recovery
-- Understand you now have two distinct wallets, (one each from the recovery-phrase with or without the passphrase), this can be useful to fool a bad actor, or a risk if next-of-kin is unaware of the passphrase
+- Have redundant and secure backups of both the recovery-phrase and the passphrase. They are equally important for successful wallet recovery
+- Understand you now have two distinct wallets (one each from the recovery-phrase with or without the passphrase). This can be useful to fool a bad actor, or a risk if next-of-kin is unaware of the passphrase
 
 **Don’t**
 - Store the recovery-phrase and passphrase together
@@ -219,19 +219,19 @@ It's worth noting that most hardware wallets support passphrases, while most sof
 
 **Alternatives**
 
-Set up a hardware wallet from the recovery and passphrase that uses a PIN to protect usage. The PIN now becomes the protection against theft on discovery and should be saved somewhere safe just like the passphrase.
+Set up a hardware wallet from the recovery and passphrase that uses a PIN to protect usage. The PIN now becomes the protection against theft on discovery and should be saved somewhere safe, just like the passphrase.
 
-Another alternative is to split the recovery phrase into several parts and storing them separately, often called [Shamir's Secret Sharing](https://en.wikipedia.org/wiki/Shamir's_Secret_Sharing) or *sharding*. However, this is not recommended as it introduces more fragility by multiplying the potential failure points.
+Another alternative is to split the recovery phrase into several parts and store them separately, often called [Shamir's Secret Sharing](https://en.wikipedia.org/wiki/Shamir's_Secret_Sharing) or *sharding*. However, this is not recommended as it introduces more fragility by multiplying the potential failure points.
 
 <br>
 
 #### Level 4
 ## Multiple backups with discovery protection
-One remaining flaw with the single offline backup levels is that severe damage to the one location where they are stored, could lead to the backup not being usable. This could be a fire, flood, earthquake or similar, all more or less likely depending on where you live.
+One remaining flaw with the single offline backup levels is that severe damage to the one location where they are stored could lead to the backup not being usable. This could be a fire, flood, earthquake or similar, all more or less likely depending on where you live.
 
-To protect against such a *catastrophic event* we can create multiple backups, and distribute them to other locations. This could be a second home, trusted family and friends or a safe deposit box.
+To protect against such a *catastrophic event* we can create multiple backups and distribute them to other locations. This could be a second home, trusted family and friends or a safe deposit box.
 
-As the risk of discovery increases with the multiplying backups, it's best to maintain the protection against theft on discovery with a passphrase, or hardware wallets with a PIN.
+As the risk of discovery increases with the multiplying backups, it's best to maintain the protection against theft on discovery with a passphrase or hardware wallets with a PIN.
 
 {% include image.html
    image = "/assets/images/guide/how-it-works/backups/multiple-discoveryprotection.jpg"
@@ -242,7 +242,7 @@ As the risk of discovery increases with the multiplying backups, it's best to ma
 %}
 
 **Do**
-- Make sure you have reduntant copies of all parts of the backup in several locations
+- Make sure you have redundant copies of all parts of the backup in several locations
 - Document your setup well for next-of-kin now that complexity has increased
 
 **Don’t**
@@ -250,7 +250,7 @@ As the risk of discovery increases with the multiplying backups, it's best to ma
 
 **Suitable for**
 - Large amounts
-- In locations where catastrophic events are common, or likely to cause severe damage
+- In locations where catastrophic events are common or likely to cause severe damage
 
 <br>
 
@@ -261,7 +261,7 @@ For any backup setup, sufficient information and understandable instructions for
 
 Even though it might feel uncomfortable (or unnecessary if you are young and single), it is never too early to document your wallets. If you don’t, there is a very high chance that next-of-kin will not be able to inherit your funds.
 
-At a minimum, document each wallet with a given name (Bob’s bitcoin wallet 1), how to recover it, when it was created and what application was used to create the wallet. Ideally this document has all the instructions required to recover the wallet, but not the information itself (*recovery-phrase*, *passphrase* etc.), as that might expose you to theft on discovery risks.
+At a minimum, document each wallet with a given name (Bob’s bitcoin wallet 1), how to recover it, when it was created and what application was used to create the wallet. Ideally, this document has all the instructions required to recover the wallet, but not the information itself (*recovery-phrase*, *passphrase* etc.), as that might expose you to theft on discovery risks.
 
 **Do**
 - Make next-of-kin aware of the existence of any wallets
