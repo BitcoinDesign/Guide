@@ -42,7 +42,7 @@ All of the previous schemes have relied on a single private key to control the w
 
 This is often called multi-signature, or multisig for short, but is also sometimes referred to as a *vault*. A multi-key setup is described as *n-of-n* to indicate how many keys are needed to sign a transaction out of the issued number. For example, a *2-of-3* setup requires two of the three private keys to sign a transaction for it to be valid.
 
-In the case of a personal wallet, one individual will control all the keys but hold them on different devices for increased security. See the [savings wallet case study]({{ '/guide/savings-wallet/' | relative_url }}) for a UX exploration of this use case.
+In the case of a personal wallet, one individual will control all the keys but hold them on different devices for increased security. See the [savings wallet reference design]({{ '/guide/savings-wallet/' | relative_url }}) for a UX exploration of this use case.
 
 In the case of a shared wallet, different people will control the keys. The number of keys and required co-signers will depend on the use case. With spouses sharing a *joint account*, a simple 1-of-2 multi-key setup might suffice, meaning there are two keys but only one is required to sign for a transaction to be valid. At the other end of the spectrum, a company might require a more complex 3-of-5 setup, requiring three of the five co-signers to approve any transaction.
 
