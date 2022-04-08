@@ -47,6 +47,50 @@ let themes = [
   //   }
   // },
   {
+    // Lottie test
+    logo: {
+        path: "/assets/bitcoin-design-community-banner.svg",
+        fillColor: "#FFF",
+        outlineColor: "#000"
+    },
+    title: {
+        fillColor: "#000",
+        outlineColor: "transparent"
+    },
+    description: {
+        fillColor: "#000"
+    },
+    button1: {
+        fillColor: "#FFF",
+        outlineColor: "#000",
+        labelFillColor: "#000"
+    },
+    button2: {
+        fillColor: "",
+        outlineColor: "#000",
+        labelFillColor: "#000"
+    },
+    background: {
+        path: '',
+        pathRetina: '',
+        pathMobile: '',
+        pathMobileRetina: '',
+        backgroundColor: '#EBDBC2'
+    },
+    copy: {
+        backgroundColor: ""
+    },
+    image: {
+        lottie: '/assets/animations/astronaut/data.json',
+        backgroundColor: ""
+    },
+    flipLayoutOnMobile: true,
+    author: {
+        name: "Alexa Aker",
+        link: "https://github.com/BitcoinDesign/Guide/issues/45"
+    }
+  },
+  {
     // Bridging bitcoin
     logo: {
         path: "/assets/bitcoin-design-community-banner.svg",
@@ -341,7 +385,7 @@ var shuffleArray = function(array) {
     }
 };
 
-shuffleArray(themes);
+// shuffleArray(themes);
 
 var currentThemeIndex = null;
 var applyNextTheme = function() {
@@ -465,6 +509,25 @@ function docReady(fn) {
         setTimeout(fn, 1);
     } else {
         document.addEventListener("DOMContentLoaded", fn);
+    }
+
+    this.startLottie()
+}
+
+function startLottie() {
+    if(window.lottie) {
+        var image = document.getElementsByClassName('home-banner-image')[0];
+
+        console.log('test', image);
+        lottie.loadAnimation({
+          container: image, // the dom element that will contain the animation
+          renderer: 'svg',
+          loop: true,
+          autoplay: true,
+          path: '/assets/animations/astronaut/data.json' // the path to the animation json
+        });
+    } else {
+        setTimeout(startLottie, 50);
     }
 }
 
