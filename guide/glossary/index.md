@@ -113,7 +113,7 @@ A standardized technical document format for the Lightning network protocol spec
 
 ### Child-pays-for-parent (CPFP)
 
-Allows the recipient of a pending transaction to speed up confirmation. They create a new transaction spending the to-be-received bitcoin with a higher fee than the original transaction. This signals to miners to process both transactions, for which they will be rewarded with the higher fee.
+Allows the recipient of a pending transaction to speed up confirmation. They create a new transaction (child) spending the to-be-received bitcoin with a higher fee than the original transaction (parent). This signals to miners to process both transactions, for which they will be rewarded with the higher fee.
 
 ### Coin control
 
