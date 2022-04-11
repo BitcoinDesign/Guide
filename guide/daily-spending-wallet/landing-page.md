@@ -34,7 +34,7 @@ This section is an in-depth design exploration of a bitcoin wallet for on-the-go
 
 - Bitcoin-only
 - Non-custodial
-- Mobile 
+- Mobile
 - Lightning first
 
 Imagine a product which tries to solve the problem of quickly and easily sending smaller amounts of money to friends and family, or paying for [small purchases]({{ '/guide/designing-products/personal-finance/#day-to-day-spending' | relative_url }}). Ease and speed of use will be important as usage is likely to be on mobile devices and on the go. Users are not expected to be well-versed in bitcoin technology or advanced private key management, making it reasonable to worry more about self-inflicted loss than theft.
@@ -96,7 +96,7 @@ An overview of how to help users maintain transaction privacy with bitcoin.
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/designing-products/wallet-interoperability/"
+   previousUrl = "/guide/designing-products/interoperability/"
    previousName = "Interoperability"
    nextUrl = "/guide/daily-spending-wallet/first-use/"
    nextName = "First use"

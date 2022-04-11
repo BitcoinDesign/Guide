@@ -147,7 +147,7 @@ Below are visualizations of some of these entry points.
 
 {% include image-gallery.html pages = page.imagesEntryPoints %}
 
-Since users cannot control how a payment request is presented to them, wallets should be highly flexible in terms of input options and [interoperability]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }}). If your wallet does not support a particular payment request, users should be presented with a human readable [error]({{ '/guide/daily-spending-wallet/sending/#errors' | relative_url }}).
+Since users cannot control how a payment request is presented to them, wallets should be highly flexible in terms of input options and [interoperability]({{ '/guide/designing-products/interoperability/' | relative_url }}). If your wallet does not support a particular payment request, users should be presented with a human readable [error]({{ '/guide/daily-spending-wallet/sending/#errors' | relative_url }}).
 
 Payment information can be shared in many formats and over diverse communication channels. Each has its own advantages and limitations. More details on the [payment request formats]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }}) page.
 

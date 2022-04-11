@@ -68,7 +68,7 @@ The basics on units and currency symbols, how to format them and what options to
 
 ---
 
-### [Interoperability]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }})
+### [Interoperability]({{ '/guide/designing-products/interoperability/' | relative_url }})
 
 Get to know the points of interaction and overlap connecting payment links, wallet recovery, node configurations, and more.
 
