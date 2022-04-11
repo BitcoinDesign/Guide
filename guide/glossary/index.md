@@ -188,6 +188,10 @@ Same as xpub, however the y denotes that this xpub belongs to a wallet that is f
 
 Same as ypub though the z denotes it is an extended public key from a segregated witness enabled wallet following [BIP84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki).
 
+### Gap limit
+
+Wallets generally create 20 addresses and watch them for incoming transactions. As addresses are used, new ones are generated. If a wallet is imported into an application and it has received bitcoin on addresses 21 and higher, then those will not be found initially. This may cause problems for users. For more, see [BIP 44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki#Address_gap_limit).
+
 ### Hash
 
 <div class="center" markdown="1">
