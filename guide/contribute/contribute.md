@@ -22,7 +22,41 @@ image: https://bitcoin.design/assets/images/guide/contribute/contribute-preview.
 
 # Contribute to the Guide
 
-Join our open community and help us improve the Bitcoin Design Guide. For a big-picture view of what we are working on right now, see the [roadmap](https://github.com/orgs/BitcoinDesign/projects/2). Here’s where you can get involved and contribute.
+Join our open community and help us improve the Bitcoin Design Guide.
+
+### Our current tasks
+
+<div class="emoji-boxes">
+{% include emoji-box.html
+    emoji = "📅"
+    title = "Roadmap"
+    description = "The big goals and milestones we're working towards."
+    first = true
+    url = "https://github.com/orgs/BitcoinDesign/projects/2"
+%}
+
+{% include emoji-box.html
+    emoji = "🆕"
+    title = "Good first issues"
+    description = "Looking for something easy to get started?"
+    url = "https://github.com/BitcoinDesign/Guide/issues?q=is%3Aissue+is%3Aopen+label%3A%22Good+first+issue%22"
+%}
+
+{% include emoji-box.html
+    emoji = "✍"
+    title = "Writing"
+    description = "Help write informative, clear design information."
+    url = "https://github.com/BitcoinDesign/Guide/issues?q=is%3Aissue+is%3Aopen+label%3ACopy"
+%}
+
+{% include emoji-box.html
+    emoji = "‍🎨"
+    title = "Design"
+    description = "Illustration, screen mock-ups, and all that fun stuff."
+    last = true
+    url = "https://github.com/BitcoinDesign/Guide/issues?q=is%3Aissue+is%3Aopen+label%3ADesign"
+%}
+</div>
 
 ---
 
