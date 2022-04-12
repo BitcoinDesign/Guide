@@ -16,7 +16,7 @@ function toggleMenu() {
 };
 
 function updateNavAccessibility() {
-  var isMobile = window.innerWidth <= 375;
+  var isMobile = window.innerWidth <= 1024;
 
   ref.navTrigger.setAttribute("aria-hidden", !isMobile);
   ref.siteNav.setAttribute("aria-hidden", isMobile);
@@ -34,10 +34,13 @@ function showMenu() {
 
   // Update nav menu accessibility properties
   ref.siteNav.removeAttribute("hidden");
+  ref.siteNav.setAttribute("aria-hidden", false);
 
   setTimeout(function() {
     ref.header.classList.add('-active');
-  }, 5);
+    ref.siteNav.focus();
+    console.log('stufo');
+  }, 500);
 
   if(searchOverlayVisible) {
     hideSearchOverlay();
@@ -53,6 +56,7 @@ function hideMenu() {
 
   setTimeout(function() {
     ref.siteNav.setAttribute("hidden", "hidden");
+    ref.siteNav.setAttribute("aria-hidden", true);
   }, 400);
 };
 
@@ -195,10 +199,10 @@ function toggleSecondaryNav(event) {
 
   if(navListItem.classList.contains('-active')) {
     navListItem.classList.remove('-active');
-    navListItem.setAttribute('aria-expanded', false);
+    event.currentTarget.setAttribute('aria-expanded', false);
   } else {
     navListItem.classList.add('-active');
-    navListItem.setAttribute('aria-expanded', true);
+    event.currentTarget.setAttribute('aria-expanded', true);
   }
 }
 

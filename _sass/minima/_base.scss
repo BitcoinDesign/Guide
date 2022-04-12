@@ -69,7 +69,11 @@ main {
   display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
 }
 
-
+a:focus-visible,
+button:focus-visible {
+  outline: 4px solid rgba($primary-color, 0.6);
+  outline-offset: 1px;
+}
 
 /**
  * Images
@@ -540,5 +544,19 @@ figcaption {
       margin-left: $spacing-unit / 4;
       cursor: pointer;
     }
+  }
+}
+
+a.skip-to-content-link {
+  background: #e77e23;
+  height: 30px;
+  left: 50%;
+  padding: 8px;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+
+  &:focus {
+    transform: translateY(0%);
   }
 }

@@ -5,6 +5,10 @@
 
   <body class="{% if page.path contains 'guide' %}sidebar{% endif %}">
 
+    <a class="skip-to-content-link" href="#main">
+      Skip to content
+    </a>
+
     {%- include svgs.html -%}
     {%- include header.html -%}
 
@@ -33,7 +37,7 @@
         </div>
         {%- endif -%}
 
-        <div class="main{% if page.path contains 'guide' %} sidebar{% endif %}{% if page.main_classes %} {{ page.main_classes }}{% endif %}" id="top">
+        <div class="main{% if page.path contains 'guide' %} sidebar{% endif %}{% if page.main_classes %} {{ page.main_classes }}{% endif %}" id="main">
 
           {{ content }}
 
