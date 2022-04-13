@@ -189,9 +189,19 @@ A payment request with only standard data, like an amount and date, communicates
    height = 541
 %}
 
-Users should have the option to attach a note for record-keeping and for the sender to read, tags, labels and any other metadata that may be relevant to give more context to the payment.
+Users should have the option to attach a note for record-keeping and for the sender to read, tags, labels and any other meta data that may be relevant to give more context to the payment.
 
 This meta data should also be able to be [backed up]({{ "/guide/onboarding/backing-up-a-wallet/" | relative_url }}) in case the user loses access to their wallet and has to restore it.
+
+#### Add a requester name with NameDesc
+
+You can also convey the name of the user requesting the payment. For example, suppose the user is able to define their name in the settings of their wallet app. The app could then append the user's name to the beginning of the description field in a BOLT11 invoice. For example, if Alice makes an invoice with a memo that says "For design work", then the description in the BOLT11 invoice would become:
+
+```
+Alice:  For design work
+```
+
+This description is human-readable, but wallets that support [bLIP-0011 NameDesc](https://github.com/lightning/blips/pull/11/) will parse this as a name and a description.
 
 </div>
 
