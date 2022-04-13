@@ -105,7 +105,7 @@ Heavy users of the Lightning Network, such as routing node operators, often run 
 
 [Plug-and-play hardware nodes](https://samouraiwallet.com/nodl) exist and make it simple to set up a dedicated hardware node. The most common way people run dedicated hardware nodes is installing a node OS, like [Umbrel](https://getumbrel.com/) or [MyNode](https://mynodebtc.com/), on a hardware device.
 
-See our [nodes]({{ '/guide/glossary/node/' | relative_url }}) for more details on how these work.
+See our [nodes]({{ '/guide/glossary/node/' | relative_url }}) page for more details on how they work.
 
 ## Mining hardware
 
