@@ -54,15 +54,17 @@ General purpose hardware, like personal computers and smartphones, work great fo
    height = 400
 %}
 
-Many users back up their wallet using metal plates that have their recovery phrase etched into them. This protects the recovery phrase from physical destruction from fire and water. [Seedplate](https://seedplate.com/) is an example of such a product.
+Many users back up their wallet using stainless steel metal plates that have their recovery phrase etched into them. This protects the recovery phrase from [various forms](https://blog.lopp.net/metal-bitcoin-seed-storage-stress-test-iv/) of physical destruction. [Seedplate](https://seedplate.com/) is an example of such a product.
 
-A simpler option is writing your recovery phrase on a piece of paper. Paper can be easily destroyed compared to steel, making this option less secure.
+A simpler option is writing a recovery phrase on a piece of paper. Paper can be easily destroyed compared to steel, making this option less secure.
 
 Some applications, such as [Muun](https://blog.muun.com/why-not-just-a-mnemonic/) have users print out encrypted PDF backups that contain all the required recovery data, not just the recovery phrase.
 
 See [bitcoin backups]({{ '/guide/private-key-management/backups/' | relative_url }}) for more details.
 
-## Hardware wallets
+## External signers
+
+_Also known as external signers_
 
 You may already be familiar with physical security keys from your bank or work. They are small devices with built-in authentication that control and secure access to a device or service. Security keys are not connected to the Internet (air-gapped) or any other network, so they are difficult to tamper with.
 
@@ -77,7 +79,7 @@ You may already be familiar with physical security keys from your bank or work. 
    height = 400
 %}
 
-Bitcoin hardware wallets, also known as external signers, act like bitcoin-centric security keys. They isolate the recovery phrase and private keys from the internet and other devices.
+Bitcoin hardware wallets act like bitcoin-centric security keys. They isolate the recovery phrase, private keys and other sensitive data from the internet and other devices.
 
 Hardware wallets only exchange non-sensitive information with external devices. Sensitive processes happen on the device, such as signing a transaction to open a Lightning network payment channel. Most interactions with hardware wallets happen via desktop [software, like wallets]({{ '/guide/getting-started/software/#wallets' | relative_url }}).
 
@@ -99,11 +101,11 @@ It is quite common to have dedicated hardware to run bitcoin [node software]({{ 
 
 Lightning node software can be run on a smartphone. Though, this often comes with trusting a third-party for certain node functions such as payment path construction. For this reason, dedicated hardware Lightning nodes may be a better option for those who do not want a trust-minimized setup.
 
-Heavy users of the Lightning Network, such as routing node operators, often run Lightning nodes on dedicated hardware. Lightning nodes require 24/7 uptime, which is much easier to achieve with dedicated hardware. Lightning nodes also require the private keys to be stored on the same device. Dedicated hardware reduces the attack surface and makes it easier to secure these keys.
+Heavy users of the Lightning Network, such as routing node operators, often run Lightning nodes on dedicated hardware. Lightning nodes require 24/7 uptime, which is much easier to achieve with dedicated hardware. Lightning nodes also require the private keys to be stored on the same device. Dedicated hardware reduces the attack surface and makes it easier to secure private keys.
 
 [Plug-and-play hardware nodes](https://samouraiwallet.com/nodl) exist and make it simple to set up a dedicated hardware node. The most common way people run dedicated hardware nodes is installing a node OS, like [Umbrel](https://getumbrel.com/) or [MyNode](https://mynodebtc.com/), on a hardware device.
 
-See [nodes]({{ '/guide/glossary/node/' | relative_url }}) for more details.
+See our [nodes]({{ '/guide/glossary/node/' | relative_url }}) for more details on how these work.
 
 ## Mining hardware
 
@@ -121,7 +123,7 @@ Miners are the backbone of bitcoin generating new blocks, which creates new bitc
 
 When bitcoin was first launched back in 2009, mining hardware was mostly conducted by CPUs and GPUs. As the network grew in size, and the market around mining grew, more specialized and powerful hardware known as application-specific integrated circuits (ASICs) became the standard mining hardware.
 
-Today, most bitcoin miners are SHA-256 ASICs. They are optimized to continuously execute the SHA-256 hashing algorithm with the goal of finding a suitable hash and thus mining a new bitcoin block. Modern miners (2021) are capable of producing 100 trillion hashes per second.
+Today, most bitcoin miners use SHA-256 Application-Specific Integrated Circuit (ASICs). These are optimized to continuously execute the SHA-256 hashing algorithm, which bitcoin uses to find new blocks, with the goal of finding a suitable hash and thus mining a new bitcoin block. Modern miners (2021) are capable of producing 100 trillion hashes per second.
 
 ## ATMs
 
@@ -132,7 +134,7 @@ Bitcoin Automated Teller Machines (ATM) are a convenient way to buy or sell bitc
    retina = "/assets/images/guide/getting-started/hardware/atm@2x.jpg"
    mobile = "/assets/images/guide/getting-started/hardware/atm-mobile.jpg"
    mobileRetina = "/assets/images/guide/getting-started/hardware/atm-mobile@2x.jpg"
-   alt-text = "Examples of hardware wallets"
+   alt-text = "Examples of hardware wallets."
    width = 800
    height = 400
 %}
@@ -144,6 +146,26 @@ Modern bitcoin ATMs take advantage of the bitcoin Lightning network. This enable
 Bitcoin ATMs are usually bound to local money transmission laws and regulations, such as Know Your Customer (KYC) and Anti-Money Laundering (AML) regulations. More on [Wikipedia](https://en.wikipedia.org/wiki/Bitcoin_ATM).
 
 You can find local ATMs using services like [coinatmradar](https://coinatmradar.com/).
+
+## Point of sale
+
+People looking to accept bitcoin payments, especially when using the lightning network, sometimes use dedicated point of sale (POS) terminals when selling goods and services.
+
+{% include picture.html
+   image = "/assets/images/guide/getting-started/hardware/point-of-sale.jpg"
+   retina = "/assets/images/guide/getting-started/hardware/point-of-sale@2x.jpg"
+   mobile = "/assets/images/guide/getting-started/hardware/point-of-sale-mobile.jpg"
+   mobileRetina = "/assets/images/guide/getting-started/hardware/point-of-sale-mobile@2x.jpg"
+   alt-text = "Examples of point of sale hardware devices."
+   width = 800
+   height = 400
+%}
+
+Dedicated bitcoin POS hardware is used to request and receive bitcoin payments in-person. These act very similar to traditional POS systems but present to payees a bitcoin on-chain, lightning, or [unified](https://bitcoinqr.dev/) payment request. Payments can also be received over NFC.
+
+As a user needs to be online to receive a lightning payment, POS terminals can act as a always on lightning node allowing lightning payments to be received easily.
+
+Accepting lightning payments with POS hardware can also be offline using a standard like [LNURL](https://github.com/fiatjaf/lnurl-rfc) to easily receive payments. An example of this is [LNURLPoS](https://github.com/arcbtc/LNURLPoS)
 
 ---
 
