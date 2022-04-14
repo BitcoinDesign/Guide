@@ -173,7 +173,7 @@ More on the [address types]({{ "/guide/glossary/address/" | relative_url }}) and
 
 </div>
 
-### Meta data
+### Metadata
 
 A payment request with only standard data, like an amount and date, communicates little to both parties about purpose and context of the payment.
 
@@ -183,15 +183,15 @@ A payment request with only standard data, like an amount and date, communicates
    image = "/assets/images/guide/daily-spending-wallet/requesting/single-use-payment-request-settings.png"
    retina = "/assets/images/guide/daily-spending-wallet/requesting/single-use-payment-request-settings@2x.png"
    layout = "float-left-desktop -background -shadow"
-   caption = "Let users attach payment meta data to single-use payment requests."
+   caption = "Let users attach payment metadata to single-use payment requests."
    alt-text = "Screen showing single payment request settings."
    width = 250
    height = 541
 %}
 
-Users should have the option to attach a note for record-keeping and for the sender to read, tags, labels and any other meta data that may be relevant to give more context to the payment.
+Users should have the option to attach a note for record-keeping and for the sender to read, tags, labels and any other metadata that may be relevant to give more context to the payment.
 
-This meta data should also be able to be [backed up]({{ "/guide/onboarding/backing-up-a-wallet/" | relative_url }}) in case the user loses access to their wallet and has to restore it.
+This metadata should also be able to be [backed up]({{ "/guide/onboarding/backing-up-a-wallet/" | relative_url }}) in case the user loses access to their wallet and has to restore it.
 
 #### Add a requester name with NameDesc
 
