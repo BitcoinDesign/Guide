@@ -195,7 +195,7 @@ This meta data should also be able to be [backed up]({{ "/guide/onboarding/backi
 
 #### Add a requester name with NameDesc
 
-You can also convey the name of the user requesting the payment. For example, suppose the user is able to define their name in the settings of their wallet app. The app could then append the user's name to the beginning of the description field in a BOLT11 invoice. For example, if Alice makes an invoice with a memo that says "For design work", then the description in the BOLT11 invoice would become:
+You can convey the name of the user requesting the payment. Suppose the user is able to define their name in the settings of their wallet app. The app could then append the user's name to the beginning of the description field in a BOLT11 invoice. For example, if Alice makes an invoice with a memo that says "For design work", then the description in the BOLT11 invoice would become:
 
 ```
 Alice:  For design work
