@@ -134,7 +134,7 @@ Bitcoin Automated Teller Machines (ATM) are a convenient way to buy or sell bitc
    retina = "/assets/images/guide/getting-started/hardware/atm@2x.jpg"
    mobile = "/assets/images/guide/getting-started/hardware/atm-mobile.jpg"
    mobileRetina = "/assets/images/guide/getting-started/hardware/atm-mobile@2x.jpg"
-   alt-text = "Examples of hardware wallets."
+   alt-text = "Example of a bitcoin ATM."
    width = 800
    height = 400
 %}
