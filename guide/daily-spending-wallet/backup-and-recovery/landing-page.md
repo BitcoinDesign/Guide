@@ -50,7 +50,7 @@ Two main types of information need to be backed up: the user's wallet recovery d
    alt-text = "A diagram of data required to back up a bitcoin wallet"
    width = 1200
    height = 680
-   layout = "full-width"
+  
 %}
 
 - The _[Recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }})_ is the fundamental information (consisting of 12 or 24 words) used to construct a wallet
