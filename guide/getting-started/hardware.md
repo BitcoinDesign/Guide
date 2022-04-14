@@ -62,7 +62,7 @@ Some applications, such as [Muun](https://blog.muun.com/why-not-just-a-mnemonic/
 
 See [bitcoin backups]({{ '/guide/private-key-management/backups/' | relative_url }}) for more details.
 
-## External signers
+## Hardware wallets
 
 _Also known as external signers_
 
