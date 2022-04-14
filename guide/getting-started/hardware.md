@@ -54,7 +54,7 @@ General purpose hardware, like personal computers and smartphones, work great fo
    height = 400
 %}
 
-Many users back up their wallet using stainless steel metal plates that have their recovery phrase etched into them. This protects the recovery phrase from [various forms](https://blog.lopp.net/metal-bitcoin-seed-storage-stress-test-iv/) of physical destruction. [Seedplate](https://seedplate.com/) is an example of such a product.
+Many users back up their wallet using metal plates that have their recovery phrase etched into them. This protects the recovery phrase from [various forms](https://blog.lopp.net/metal-bitcoin-seed-storage-stress-test-iv/) of physical destruction. [Seedplate](https://seedplate.com/) is an example of such a product.
 
 A simpler option is writing a recovery phrase on a piece of paper. Paper can be easily destroyed compared to steel, making this option less secure.
 
