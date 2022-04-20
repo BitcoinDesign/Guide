@@ -55,7 +55,7 @@ imagesInfo:
       caption: Amount and recipient entry should be simple and convenient.
     - file: review-with-label-and-tags
       alt: A payment form with all information completed
-      caption: Adding additional meta data makes it easier for users to organize their spending.
+      caption: Adding additional metadata makes it easier for users to organize their spending.
 imagesProcessing:
     - file: processing
       alt: Payment screen showing the transaction is being sent
@@ -173,9 +173,9 @@ There are also static [invoice types]({{ '/guide/how-it-works/payment-request-fo
 
 If no amount is provided via a payment request, manual entry should be simple and convenient so users don’t accidentally send an incorrect amount. The amount should be displayed in bitcoin or satoshi value, as well as the user’s local currency. Options to quickly toggle between them should be available. More on the [Units & Symbols page]({{ '/guide/designing-products/units-and-symbols/' | relative_url }}).
 
-**Meta data**
+**Metadata**
 
-A transaction history is hard to make sense of when it only shows amounts, dates, and identifiers. Users should be allowed to add descriptions, tags, and other meta data to add context. This context can separately be used for helpful tools like visual spending breakdowns.
+A transaction history is hard to make sense of when it only shows amounts, dates, and identifiers. Users should be allowed to add descriptions, tags, and other metadata to add context. This context can separately be used for helpful tools like visual spending breakdowns.
 
 ## Fees
 
