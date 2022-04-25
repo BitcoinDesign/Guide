@@ -190,7 +190,7 @@ Same as ypub though the z denotes it is an extended public key from a segregated
 
 ### Gap limit
 
-Wallets generally create 20 addresses and watch them for incoming transactions. As addresses are used, new ones are generated. If a wallet is imported into an application and it has received bitcoin on addresses 21 and higher, then those will not be found initially. This may cause problems for users. For more, see [BIP 44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki#Address_gap_limit).
+For performance reasons, on-chain wallets generally only create 20 addresses and watch them for incoming transactions. As addresses are used, new ones are generated and watched. As only 20 consecutive unused addresses are being watched, incoming transactions on the 21st address and beyond will not be detected. This may cause problems for users when importing wallets. For more, see [BIP 44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki#Address_gap_limit) and [this article](https://blog.lopp.net/mind-the-bitcoin-address-gap/).
 
 ### Hash
 
