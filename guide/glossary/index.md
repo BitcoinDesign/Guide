@@ -326,7 +326,7 @@ Many wallet-applications work with HD wallets and recovery phrases, and are inte
 
 **Technicalities** - Recovery of multisig-wallets needs both the extended public key and the recovery phrase of all participating keys as well as the master key fingerprint as defined by BIP32 concatenated with the derivation path of the public key. The derivation path is represented as 32-bit little endian unsigned integer indexes concatenated with each other. The number of 32 bit unsigned integer indexes must match the depth provided in the extended public key.
 
-**Language considerations** - The recovery phrase consists of English-language words, which may not be intuitive to recognize, remember, or write for many users around the world. If this applies to your user base, it may be more appropriate to use [output descriptors]({{ '/guide/glossary/#output-script-descriptor' | relative_url }}) or other techniques.
+**Language considerations** - Recovery phrases typically consists of English-language words, which may not be intuitive to recognize, remember, or write for many users around the world. Consider supporting multiple languages (see [BIP39 wordlists](https://github.com/bitcoin/bips/blob/master/bip-0039/bip-0039-wordlists.md)), or an alternate backup technique like [output descriptors]({{ '/guide/glossary/#output-script-descriptor' | relative_url }}).
 
 ### Simplified payment verification (SPV)
 

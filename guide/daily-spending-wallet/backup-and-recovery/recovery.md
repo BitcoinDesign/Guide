@@ -57,7 +57,7 @@ As outlined earlier in the chapter, we consider an [automatic cloud backup](/gui
 
 ### Restore manually with a recovery phrase
 
-Users may have created a wallet with another wallet application. In this case, they should be able to import that wallet into yours by entering their 12 or 24-word recovery phrase. There are several options for the UI when entering a recovery phase, as outlined earlier in the [manual backup]({{ '/guide/daily-spending-wallet/backup-and-recovery/manual-backup/' | relative_url }}) section of this chapter.
+Users may have created a wallet with another wallet application. In this case, they should be able to import that wallet into yours by entering their 12 or 24-word recovery phrase. There are several options for the UI when entering a recovery phase, as outlined earlier in the [manual backup]({{ '/guide/daily-spending-wallet/backup-and-recovery/manual-backup/' | relative_url }}) section of this chapter. Consider supporting recovery phrases in [multiple languages](https://github.com/bitcoin/bips/blob/master/bip-0039/bip-0039-wordlists.md) for better global accessibility.
 
 ### Restore from an encrypted QR code backup
 
