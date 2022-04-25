@@ -1,4 +1,4 @@
-let themes = [
+var themes = [
   // {
   //   // Template
   //   logo: {
@@ -47,50 +47,6 @@ let themes = [
   //   }
   // },
   {
-    // Lottie test
-    logo: {
-        path: "/assets/bitcoin-design-community-banner.svg",
-        fillColor: "#FFF",
-        outlineColor: "#000"
-    },
-    title: {
-        fillColor: "#000",
-        outlineColor: "transparent"
-    },
-    description: {
-        fillColor: "#000"
-    },
-    button1: {
-        fillColor: "#FFF",
-        outlineColor: "#000",
-        labelFillColor: "#000"
-    },
-    button2: {
-        fillColor: "",
-        outlineColor: "#000",
-        labelFillColor: "#000"
-    },
-    background: {
-        path: '',
-        pathRetina: '',
-        pathMobile: '',
-        pathMobileRetina: '',
-        backgroundColor: '#EBDBC2'
-    },
-    copy: {
-        backgroundColor: ""
-    },
-    image: {
-        lottie: '/assets/animations/astronaut/data.json',
-        backgroundColor: ""
-    },
-    flipLayoutOnMobile: true,
-    author: {
-        name: "Alexa Aker",
-        link: "https://github.com/BitcoinDesign/Guide/issues/45"
-    }
-  },
-  {
     // Bridging bitcoin
     logo: {
         path: "/assets/bitcoin-design-community-banner.svg",
@@ -110,7 +66,7 @@ let themes = [
         labelFillColor: "#000"
     },
     button2: {
-        fillColor: "",
+        fillColor: '',
         outlineColor: "#000",
         labelFillColor: "#000"
     },
@@ -170,7 +126,7 @@ let themes = [
         backgroundColor: ''
     },
     copy: {
-        backgroundColor: ""
+        backgroundColor: ''
     },
     background: {
         path: 'url("/assets/images/home/banner/rutuja_bitcoin_theme_banner_web.jpg")',
@@ -271,7 +227,7 @@ let themes = [
         pathRetina: '',
         pathMobile: '',
         pathMobileRetina: '',
-        backgroundColor: ""
+        backgroundColor: ''
     },
     flipLayoutOnMobile: false,
     author: {
@@ -316,9 +272,10 @@ let themes = [
     image: {
         path: '',
         pathRetina: '',
-        pathMobile: 'url("/assets/images/home/banner/bits-and-pieces-mobile.png")',
-        pathMobileRetina: 'url("/assets/images/home/banner/bits-and-pieces-mobile@2x.png")',
-        backgroundColor: ""
+        pathMobile: '',
+        pathMobileRetina: '',
+        backgroundColor: '',
+        lottie: "/assets/animations/banner-jessica.json"
     },
     flipLayoutOnMobile: false,
     author: {
@@ -342,7 +299,7 @@ let themes = [
     },
     button1: {
         fillColor: "#F7931A",
-        outlineColor: "",
+        outlineColor: '',
         labelFillColor: "#00"
     },
     button2: {
@@ -358,7 +315,7 @@ let themes = [
         backgroundColor: "#F4F4F4"
     },
     copy: {
-        backgroundColor: ""
+        backgroundColor: ''
     },
     image: {
         path: 'url("/assets/images/home/banner/ongoing-development.png")',
@@ -375,6 +332,10 @@ let themes = [
   }
 ];
 
+var lottieLoading = false;
+var lottieLoaded = false;
+var lottiePath = null;
+
 var shuffleArray = function(array) {
     var i = array.length - 1;
     for(; i > 0; i--){
@@ -385,7 +346,7 @@ var shuffleArray = function(array) {
     }
 };
 
-// shuffleArray(themes);
+shuffleArray(themes);
 
 var currentThemeIndex = null;
 var applyNextTheme = function() {
@@ -432,6 +393,8 @@ var applyTheme = function(themeIndex) {
     currentThemeIndex = themeIndex;
 
     var theme = themes[themeIndex];
+
+    // Del
 
     // Document-wide property.
     var documentProperties = [
@@ -482,6 +445,17 @@ var applyTheme = function(themeIndex) {
         }
     }
 
+    // Lottie animation.
+    if(lottieLoaded && lottiePath) {
+        lottie.destroy();
+    }
+    if(theme.image.lottie) {
+        lottiePath = theme.image.lottie;
+        this.startLottie();
+    } else {
+        lottiePath = null;
+    }
+
     // Banner properties.
     var banner = document.getElementById('home-banner');
     if(banner) {
@@ -510,24 +484,42 @@ function docReady(fn) {
     } else {
         document.addEventListener("DOMContentLoaded", fn);
     }
+}
 
-    this.startLottie()
+function onLottieLoaded() {
+    lottieLoaded = true;
+
+    if(lottiePath) {
+        startLottie();
+    }
 }
 
 function startLottie() {
-    if(window.lottie) {
+    // Load lottie if not available and not loading.
+    if(!lottieLoaded && !lottieLoading) {
+        lottieLoading = true;
+
+        var script = document.createElement('script');
+        script.setAttribute('src', '/js/lottie-5-9-1.min.js');
+        script.onload = onLottieLoaded;
+
+        var footer = document.getElementsByClassName('site-footer')[0];
+        footer.appendChild(script);
+    }
+
+    if(lottieLoaded && lottiePath) {
         var image = document.getElementsByClassName('home-banner-image')[0];
 
-        console.log('test', image);
+        // Delete old animations.
+        lottie.destroy();
+
         lottie.loadAnimation({
           container: image, // the dom element that will contain the animation
           renderer: 'svg',
           loop: true,
           autoplay: true,
-          path: '/assets/animations/astronaut/data.json' // the path to the animation json
+          path: lottiePath // the path to the animation json
         });
-    } else {
-        setTimeout(startLottie, 50);
     }
 }
 
