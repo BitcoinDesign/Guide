@@ -42,7 +42,7 @@ imagesSearch:
       caption: If an invoice includes a description or other useful data (e.g. [BOLT 11](https://github.com/lightning/bolts/blob/master/11-payment-encoding.md#rationale-2)), make sure to store it.
     - file: sending
       alt: Smartphone screen showing a payment that is in the process of being sent
-      caption: Make it easy to add meta data when a user sends or receives a transaction, as it is top-of-mind at that moment.
+      caption: Make it easy to add metadata when a user sends or receives a transaction, as it is top-of-mind at that moment.
 imagesReceive:
     - file: receive-transaction
       alt: Smartphone screen showing a completed on-chain payment
@@ -140,7 +140,7 @@ The Lightning network makes micropayments economically and technically viable. F
 
 ### Search & export
 
-Search is helpful for anyone using a wallet somewhat regularly, especially if micropayments become more common. Since this functionality relies strongly on quality data, it should be very simple for users to add relevant meta data to transactions.
+Search is helpful for anyone using a wallet somewhat regularly, especially if micropayments become more common. Since this functionality relies strongly on quality data, it should be very simple for users to add relevant metadata to transactions.
 
 Closely linked to search is export, which can serve several purposes. For one, a user may want to migrate to a new wallet and take their transaction history with them. Second, it is useful for accounting and tax purposes, especially for merchants.
 
@@ -221,7 +221,7 @@ This can be in the form of text labels, or even uniquely generated icons like [J
 
 ### Wrapping up
 
-As mentioned at the top of the page, there is a lot of nuance in the display of user activity. While this allows for many different small design decisions, users overall benefit if wallets take similar approaches. Particularly when it comes to the addition of meta data that is not stored on-chain or by Lightning nodes, it would be helpful if wallets can converge on standardized data formats to allow for interoperability and data portability.
+As mentioned at the top of the page, there is a lot of nuance in the display of user activity. While this allows for many different small design decisions, users overall benefit if wallets take similar approaches. Particularly when it comes to the addition of metadata that is not stored on-chain or by Lightning nodes, it would be helpful if wallets can converge on standardized data formats to allow for interoperability and data portability.
 
 ---
 
