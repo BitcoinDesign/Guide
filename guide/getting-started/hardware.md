@@ -79,7 +79,7 @@ You may already be familiar with physical security keys from your bank or work. 
    height = 400
 %}
 
-Bitcoin hardware wallets act like bitcoin-centric security keys. They isolate the recovery phrase, private keys, and other sensitive data from the internet and other devices.
+Bitcoin hardware wallets act like bitcoin-centric security keys. They isolate the recovery phrase, private keys, and other sensitive data like output descriptors from the internet and other devices.
 
 Hardware wallets only exchange non-sensitive information with external devices. Sensitive processes happen on the device, such as signing a transaction to open a Lightning network payment channel. Most interactions with hardware wallets happen via desktop [software, like wallets]({{ '/guide/getting-started/software/#wallets' | relative_url }}).
 
@@ -149,7 +149,7 @@ You can find local ATMs using services like [coinatmradar](https://coinatmradar.
 
 ## Point of sale
 
-People looking to accept bitcoin payments, especially when using the lightning network, sometimes use dedicated point of sale (POS) terminals when selling goods and services.
+People looking to accept bitcoin payments, especially when using the lightning network, sometimes use dedicated point of sale (POS) hardware terminals when selling goods and services.
 
 {% include picture.html
    image = "/assets/images/guide/getting-started/hardware/point-of-sale.jpg"
@@ -161,11 +161,11 @@ People looking to accept bitcoin payments, especially when using the lightning n
    height = 400
 %}
 
-Dedicated bitcoin POS hardware is used to request and receive bitcoin payments in-person. These act very similar to traditional POS systems but present to payees a bitcoin on-chain, lightning, or [unified](https://bitcoinqr.dev/) payment request. Payments can also be received over NFC.
+Dedicated bitcoin POS hardware is used to request and receive bitcoin payments in-person. These act very similar to traditional POS systems but present to payees a bitcoin on-chain, lightning, or [unified](https://bitcoinqr.dev/) payment request. Payment requests can also be shared and paid over NFC.
 
-As a user needs to be online to receive a lightning payment, POS terminals can act as a always on lightning node allowing lightning payments to be received easily.
+When accepting lightning payments, these POS terminals often connect to a remote always on lightning node. An example of is a merchant using a dedicated iPad to connect to [BTCPay Server](https://btcpayserver.org/) instance.
 
-Accepting lightning payments with POS hardware can also be offline using a standard like [LNURL](https://github.com/fiatjaf/lnurl-rfc) to easily receive payments. An example of this is [LNURLPoS](https://github.com/arcbtc/LNURLPoS)
+Accepting lightning payments with POS hardware can also be fully offline using a standard like [LNURL](https://github.com/fiatjaf/lnurl-rfc) to easily receive payments. An example of this is [LNURLPoS](https://github.com/arcbtc/LNURLPoS)
 
 ---
 
