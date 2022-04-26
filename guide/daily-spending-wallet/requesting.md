@@ -169,7 +169,7 @@ You should encourage users to use the latest, more feature rich address types. H
 
 Older address types should always be supported for backwards compatibility with older wallets.
 
-More on the [address types]({{ "/guide/glossary/address/" | relative_url }}) and [interoperability]({{ "/guide/designing-products/wallet-interoperability/" | relative_url }}) page.
+More on the [address types]({{ "/guide/glossary/address/" | relative_url }}) and [interoperability]({{ "/guide/designing-products/interoperability/" | relative_url }}) page.
 
 </div>
 

@@ -228,13 +228,13 @@ Note that uppercase letter "O", uppercase letter "I", lowercase letter "l", and 
 
 ---
 
-On to [interoperability]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }}) which is essential for smooth interaction and migration between bitcoin products.
+On to [interoperability]({{ '/guide/designing-products/interoperability/' | relative_url }}) which is essential for smooth interaction and migration between bitcoin products.
 
 
 
 {% include next-previous.html
    previousUrl = "/guide/designing-products/usage-life-cycle/"
    previousName = "Usage life cycle"
-   nextUrl = "/guide/designing-products/wallet-interoperability/"
+   nextUrl = "/guide/designing-products/interoperability/"
    nextName = "Interoperability"
 %}

@@ -174,7 +174,7 @@ BIP44 introduced the following structure, which BIP49 and BIP84 follow:<br/>
 The path to the first address in a bitcoin-wallet using BIP84 will look like this:<br/>
 `m/84h/0h/0h/0/0`
 
-For full [interoperability](/guide/getting-started/principles/#interoperability) a wallet should support all of these standards. More information can be found [here](/guide/designing-products/wallet-interoperability/#wallet-backups) and [here](https://learnmeabitcoin.com/technical/derivation-paths).
+For full [interoperability](/guide/getting-started/principles/#interoperability) a wallet should support all of these standards. More information can be found [here](/guide/designing-products/interoperability/#wallet-backups) and [here](https://learnmeabitcoin.com/technical/derivation-paths).
 
 ### Extended private key (xpriv)
 

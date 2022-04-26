@@ -64,7 +64,7 @@ When a user recovers their wallet, they enter their recovery phrase, the LSP sen
 
 This service requires trust that the LSP accurately and securely stores the users channel state backups. Entrusting backups with a single third-party like this is also a security risk and makes users reliant on the LSP.
 
-As the users recovery phrase is required to recover the channel states stored by the LSP, this makes the recovery phrase wallet-dependent. Users will be unable to recover their bitcoin in a wallet that was not the one who generated it, making things less [interoperable]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }}).
+As the users recovery phrase is required to recover the channel states stored by the LSP, this makes the recovery phrase wallet-dependent. Users will be unable to recover their bitcoin in a wallet that was not the one who generated it, making things less [interoperable]({{ '/guide/designing-products/interoperability/' | relative_url }}).
 
 Users should have the option to backup payment channel states [manually]({{ '/guide/daily-spending-wallet/backup-and-recovery/manual-backup/' | relative_url }}) or [automatically]({{ '/guide/daily-spending-wallet/backup-and-recovery/cloud-backup/' | relative_url }}).
 

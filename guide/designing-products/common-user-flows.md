@@ -282,7 +282,7 @@ Like fiat currencies, securely storing funds can be as simple as storing some co
 
 ## Backing up a wallet
 
-To enable recovery of a wallet that uses the manual backup scheme for private key management, we should ask users to securely back up their keys with their [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) (and for full compatibility, [derivation path](/guide/glossary/#derivation-path) and [output descriptors](/guide/glossary/#output-script-descriptor)) when they create new wallets.  See also, [Wallet interoperability](/guide/designing-products/wallet-interoperability/) and [bitcoin backups](/guide/private-key-management/backups/).
+To enable recovery of a wallet that uses the manual backup scheme for private key management, we should ask users to securely back up their keys with their [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) (and for full compatibility, [derivation path](/guide/glossary/#derivation-path) and [output descriptors](/guide/glossary/#output-script-descriptor)) when they create new wallets.  See also, [Wallet interoperability](/guide/designing-products/interoperability/) and [bitcoin backups](/guide/private-key-management/backups/).
 
 ## Importing an existing wallet
 
@@ -297,7 +297,7 @@ To enable recovery of a wallet that uses the manual backup scheme for private ke
    layout = "float-left"
 %}
 
-If the user is in possession of the [recovery phrase](/guide/glossary/#recovery-phrase) for a bitcoin wallet, they should be able to import it into any application that supports the same standards. Some technical caveats apply, generally users are best advised to attempt recovery of a wallet with the same application as the wallet was created with for full compatibility. See also, [Wallet interoperability](/guide/designing-products/wallet-interoperability/) and [Restoring a wallet](/guide/onboarding/restoring-a-wallet/).
+If the user is in possession of the [recovery phrase](/guide/glossary/#recovery-phrase) for a bitcoin wallet, they should be able to import it into any application that supports the same standards. Some technical caveats apply, generally users are best advised to attempt recovery of a wallet with the same application as the wallet was created with for full compatibility. See also, [Wallet interoperability](/guide/designing-products/interoperability/) and [Restoring a wallet](/guide/onboarding/restoring-a-wallet/).
 
 </div>
 
@@ -472,7 +472,7 @@ The owner may want to increase the security of their wallet, either by using a s
 
 In the worst-case scenario, the wallet might have been compromised, and funds should be saved by sending them all to a different bitcoin wallet.
 
-Whatever the reason, the import and backup of wallets is a vital function for users that applications should support. While it is easy to send all funds to a new address, additional meta and state data stored in wallet applications also need to be considered for full compatibility. It's not recommended to switch wallets that include funds on the Lightning network, as standards for backing up channel state have yet to emerge. See also, [Wallet interoperability](/guide/designing-products/wallet-interoperability/).
+Whatever the reason, the import and backup of wallets is a vital function for users that applications should support. While it is easy to send all funds to a new address, additional meta and state data stored in wallet applications also need to be considered for full compatibility. It's not recommended to switch wallets that include funds on the Lightning network, as standards for backing up channel state have yet to emerge. See also, [Wallet interoperability](/guide/designing-products/interoperability/).
 
 
 </div>
