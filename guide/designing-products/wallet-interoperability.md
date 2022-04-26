@@ -55,11 +55,19 @@ Below are areas within your bitcoin application where interoperability should be
    layout = "float-right-desktop"
 %}
 
-You should ensure your application is interoperable with the various techniques for sending and receiving bitcoin payments. For base-layer, this means supporting various [address formats](/guide/glossary/address/), such as legacy (P2PKH), compatibility (P2SH), Segwit (Bech32), and Taproot (P2TR). For Lightning payments, your application should be able to read and generate invoices according to the [BOLT 11](/guide/glossary/#bolt---basis-of-lightning-technology) standard.
+You should ensure your application is interoperable with the various techniques for sending and requesting bitcoin.
 
-You may want to also support more experimental Lightning payment options such as [Lightning addresses](https://lightningaddress.com/), [BOLT 12 offers](https://bolt12.org/), [Keysend](https://lightning.readthedocs.io/lightning-keysend.7.html), and [LNURL](https://github.com/fiatjaf/lnurl-rfc). If your application does not support these, you should be sure to include a human-readable failure state.
+Supporting generating and reading as many [payment request formats]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }}) as possible in your application will make your wallet more interoperable with others.
 
-Bitcoin payment links and the underlying data should also be readable by your application. Forms should be automatically opened and filled in your application when a user clicks a payment link or button. Payment metadata is defined in [BIP 21](https://bips.xyz/21) for on-chain addresses and [BOLT 11](https://github.com/lightningnetwork/lightning-rfc/blob/master/11-payment-encoding.md) for Lightning invoices.
+It also matters how these formats are generated. Your applications should be able to read, and generate, [BIP 21](https://bips.xyz/21) encoded payment requests.
+
+An evolving standard that improves payment usability between on-chain and lightning is being able to read and generate [unified bitcoin payment requests](https://bitcoinqr.dev/) that contain an on-chain address and lightning invoice inside a BIP 21 URI.
+
+When dealing with lightning invoice [amounts]({{ '/guide/daily-spending-wallet/requesting/#amounts' | relative_url }}), your application should be able to read and generate zero amount invoices.
+
+Payment links, often using BIP 21, should be readable by your application. Forms should be automatically opened and filled when a user clicks a payment link or button.
+
+[Near-field communication](https://en.wikipedia.org/wiki/Near-field_communication) (NFC) should be supported for paying and sharing payment requests.
 
 </div>
 
@@ -76,7 +84,9 @@ Bitcoin payment links and the underlying data should also be readable by your ap
    layout = "float-right-desktop"
 %}
 
-Wallet backups generated in one wallet application should be able to be easily restored in another. Over the years, bitcoin wallets have implemented various features in different ways, partly because standards take time to evolve. Standards such as [BIP39 recovery phrases](/guide/glossary/#recovery-phrase) and [wallet descriptors](/guide/glossary/#output-script-descriptor) should be used to create wallet backups within your applications. See [Wallets Recovery](https://walletsrecovery.org) as an illustration of the problem when standards are not set.
+Wallet backups generated in one wallet application should be able to be easily restored in another.
+
+Over the years, bitcoin wallets have implemented various features in different ways, partly because standards take time to evolve. Standards such as [BIP39 recovery phrases](/guide/glossary/#recovery-phrase) and [wallet descriptors](/guide/glossary/#output-script-descriptor) should be used to create wallet backups within your applications.
 
 Backing up payment channels that are part of the Lightning network can be more difficult. Currently, no standards exist for this, nor is it possible to have a static backup method like you can with on-chain bitcoin. Payment channels states regularly change and thus need to be regularly updated. Some applications make use of static-channel-backup (SCB) files, though this is still an evolving standard.
 
@@ -97,7 +107,9 @@ It should be convenient for users to back up the relevant information they need 
    layout = "float-right-desktop"
 %}
 
-Data that users create, such as [contacts]({{ '/guide/payments/contacts/' | relative_url }}), payment descriptions, notes, etc., should be interoperable between different bitcoin applications. Transaction data is stored on the bitcoin blockchain and available in any wallet a user has set up. However, transaction data does not contain any information about: the reasons why a transaction was made, who owns each address, which node a Lightning payment was made to, etc.
+Data that users create, such as [contacts]({{ '/guide/daily-spending-wallet/contacts/' | relative_url }}), payment descriptions, notes, etc., should be interoperable between different bitcoin applications.
+
+Transaction data is stored on the bitcoin blockchain and available in any wallet a user has set up. However, transaction data does not contain any information about: the reasons why a transaction was made, who owns each address, which node a Lightning payment was made to, etc.
 
 To better understand and organize their finances, users typically enrich transaction data by assigning contacts, notes, labels, and other useful information. This data should be stored in standardized, open formats and easily synced between applications. This is especially useful for users who rely on multiple devices.
 
@@ -116,13 +128,15 @@ To better understand and organize their finances, users typically enrich transac
    layout = "float-right-desktop"
 %}
 
-For the same reasons outlined in payments above, your application should be able to scan and read bitcoin related QR codes. QR codes are visual representations of data. Since most devices today feature cameras with built-in support for reading QR codes, this technique has become a convenient method to transfer data from one device to another, even if those devices are offline.
+Your application should be able to scan and read bitcoin related QR codes.
 
-Some bitcoin use cases include payments, importing wallet keys from a backup, or constructing a multisig-wallet.
+QR codes are visual representations of data. Since most devices today feature cameras with built-in support for reading QR codes, this technique has become a convenient method to transfer data from one device to another, even if those devices are offline.
+
+Some bitcoin use cases for QR codes include sending and requesting payments, backing up and recovering wallets, sharing partially signed bitcoin transactions PSBTs or constructing a multisig-wallet.
 
 Although QR codes are a well-established and standardized format, there are details to consider. For example, it is [more efficient](https://bitcoinops.org/en/bech32-sending-support/#creating-more-efficient-qr-codes-with-bech32-addresses) to encode uppercase characters. So it is recommended to uppercase data that is not case sensitive, such as bitcoin addresses.
 
-Static QR codes can only contain small amounts of information. If you need to include more information, you can use an animated QR code. This  splits up the data over multiple static QR codes. Animated QR codes are often used for transferring partially signed bitcoin transactions (PSBTs) which can be quite large. You should ensure your application can read animated QRs if relevant.
+Static QR codes can only contain small amounts of information. If you need to include more information, you can use an animated QR code. This splits up the data over multiple static QR codes. Animated QR codes are often used for transferring partially PSBTs which can be quite large. You should ensure your application can read animated QRs if relevant.
 
 </div>
 
@@ -139,7 +153,9 @@ Static QR codes can only contain small amounts of information. If you need to in
    layout = "float-right-desktop"
 %}
 
-Most bitcoin applications rely on external data sources (like currency conversion data) and may also have integrations with third parties (like an external block or Lightning explorer). Whenever possible, it should be easy for users to learn about these dependencies and choose alternatives.
+Most bitcoin applications rely on external data sources (like currency conversion data) and may also have integrations with third parties (like an external block or Lightning explorer).
+
+Whenever possible, it should be easy for users to learn about these dependencies and choose alternatives.
 
 </div>
 
@@ -173,9 +189,13 @@ Although every application will have its own unique interface, there are certain
    layout = "float-right-desktop"
 %}
 
-Connecting to the bitcoin and/or Lightning network should be as trust-minimized and privacy preserving as possible. While it is convenient when applications provide their own node connection, it is beneficial to allow users to connect to a trusted node or their own self-hosted bitcoin and/or Lightning node. Having the option to choose how that data is queried, say using [Neutrino over SPV](https://bitcoin.design/guide/glossary/node/#light-nodes), should also be an option. This results in better network [decentralization](https://bitcoin.design/guide/getting-started/principles/#decentralization), and has privacy and [security](https://bitcoin.design/guide/getting-started/principles/#security) benefits for users.
+Connecting to the bitcoin and/or Lightning network should be as trust-minimized and privacy preserving as possible. While it is convenient when applications provide their own node connection, it is beneficial to allow users to connect to a trusted node or their own self-hosted bitcoin and/or Lightning node.
 
-If your application uses the Lightning network, users should be running their own Lightning node. However, there are certain aspects of a Lightning node that can be outsourced, such as creating inbound liquidity from an LSP or constructing payment paths. Your application should give users the options as to what, if any, services they want to trust a third-party to conduct. Your application should try to avoid having users locked into your application and give them various options for outsourcing Lightning services.
+Having the option to choose how that data is queried, say using [Neutrino over SPV](https://bitcoin.design/guide/glossary/node/#light-nodes), should also be an option. This results in better network [decentralization](https://bitcoin.design/guide/getting-started/principles/#decentralization), and has privacy and [security](https://bitcoin.design/guide/getting-started/principles/#security) benefits for users.
+
+If your application uses the Lightning network, users should be running their own Lightning node. However, there are certain aspects of a Lightning node that can be outsourced, such as creating inbound liquidity from an LSP or constructing payment paths.
+
+Your application should give users the options as to what, if any, services they want to trust a third-party to conduct. Your application should try to avoid having users locked into your application and give them various options for outsourcing Lightning services.
 
 </div>
 
@@ -192,7 +212,7 @@ If your application uses the Lightning network, users should be running their ow
    layout = "float-right-desktop"
 %}
 
-Your application should support interfacing with the various [hardware wallets](/guide/getting-started/hardware/#hardware-wallets) (HWW) that exist on the market. This can be different from one hardware wallet to the next and can mean supporting things like PSBTs, animated QR codes, and the hardware wallet interface (HWI).
+Your application should support interfacing with the various [hardware wallets](/guide/getting-started/hardware/#hardware-wallets) (HWW) that exist on the market. This can be different from one hardware wallet to the next and can mean supporting things like NFC, PSBTs, animated QR codes, and the hardware wallet interface (HWI).
 
 </div>
 
@@ -209,7 +229,11 @@ Your application should support interfacing with the various [hardware wallets](
    layout = "float-right-desktop"
 %}
 
-Your application should support constructing and managing transaction files, also known as [Partially Signed Bitcoin Transactions (PSBTs)](/guide/glossary/#partially-signed-bitcoin-transaction-psbt). This type of file allows for storage and transfer of transactions that are not finalized. PSBTs allow signing wallets to be offline, as the transaction data can be transferred via USB or animated QR codes. This is particularly useful if users want to open a payment channel directly from their cold storage.
+Your application should support constructing, sharing, and managing transaction files, also known as [Partially Signed Bitcoin Transactions (PSBTs)](/guide/glossary/#partially-signed-bitcoin-transaction-psbt).
+
+PSBTS allow for storage and transfer of transactions that are not yet finalized. They allow signing wallets to be offline, as the transaction data can be transferred via USB, NFC or animated QR codes.
+
+This is particularly useful if users want to open a payment channel directly from their cold storage.
 
 </div>
 
@@ -226,7 +250,7 @@ Your application should support constructing and managing transaction files, als
    layout = "float-right-desktop"
 %}
 
-[Multi-signature wallets]({{ '/guide/private-key-management/multi-key' | relative_url }}) require interaction between all cosigners and therefore interoperability between users of different software (or hardware) setups is crucial. Especially when there are multiple cosigners (rather than one owner using multiple signing devices), there should be strong design considerations to how the cosigners exchange keystores and transaction data.
+[Multi-signature wallets]({{ '/guide/how-it-works/private-key-management/multi-key/' | relative_url }}) require interaction between all cosigners and therefore interoperability between users of different [software]({{ '/guide/getting-started/software/' | relative_url }}), or [hardware]({{ '/guide/getting-started/hardware/' | relative_url }}) setups is crucial. Especially when there are multiple cosigners (rather than one owner using multiple signing devices), there should be strong design considerations to how the cosigners exchange keystores and transaction data.
 
 </div>
 
