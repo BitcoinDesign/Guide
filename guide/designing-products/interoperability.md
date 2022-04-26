@@ -11,13 +11,18 @@ image: https://bitcoin.design/assets/images/guide/designing-products/interoperab
 ---
 
 <!--
+
 Editor's notes
 An overview of important interaction points between bitcoin applications and user experiences.
+
 Designers should think beyond the software they are working on and strongly consider these
 areas, as it is extremely likely that users interact with multiple applications over time.
+
 Illustration sources
+
 https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=1024%3A6795
 https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=112%3A612
+
 -->
 
 {% include picture.html
