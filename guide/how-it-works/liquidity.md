@@ -240,7 +240,7 @@ Lori, Lamar, and Lindsay can open channels with as many other nodes as they like
    layout = "full-width"
 %}
 
-Getting liquidity is not a one time issue on the lightning network. Routing nodes are constantly rebalancing their channels so that they have the right amount of liquidity in the right places.
+Getting liquidity is not a one time issue on the lightning network. Routing nodes are constantly rebalancing their channels so that they have the right amount of liquidity in the right places. They do this by essentially sending themselves payments through the lightning network. 
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/liquidity/liquidity-07.png"
