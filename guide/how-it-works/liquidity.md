@@ -160,7 +160,7 @@ Before going further, it's important to make a distinction between different use
    </table>
 </div>
 
-Currently, most of the thinking in the Design Guide is focused on mobile wallet users such as Wagner. However, it is helpful to understand that routing nodes play a very important role in getting user funds across the lightning network.
+Currently, most of the thinking in the Design Guide is focused on [mobile wallet]({{'/guide/daily-spending-wallet/' | relative_url}}) users such as Wagner. However, it is helpful to understand that routing nodes play a very important role in getting user funds across the lightning network.
 
 ## Liquidity examples
 
