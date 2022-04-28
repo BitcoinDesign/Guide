@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Liquidity
+title: Lightning liquidity
 description: A primer on lightning network liquidity
 nav_order: 3
 parent: How it works
