@@ -121,7 +121,7 @@ Before going further, it's important to make a distinction between different use
             <td>Wagner is sometimes the origin and sometimes the endpoint for lightning payments</td>
          </tr>
          <tr>
-            <td>Where does it run?</td>
+            <td>Where does the node run?</td>
             <td>Runs on dedicated hardware, like a Raspberry Pi or rack-mounted server</td>
             <td>Runs on a cloud service provider</td>
             <td>Runs on Wagner's phone</td>
