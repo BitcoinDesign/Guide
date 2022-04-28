@@ -127,10 +127,10 @@ Before going further, it's important to make a distinction between different use
             <td>Runs on Wagner's phone</td>
          </tr>
          <tr>
-            <td>When is it online?</td>
-            <td>Always online</td>
-            <td>Always online</td>
-            <td>Only online when Wagner opens the app</td>
+            <td>When is the node online?</td>
+            <td>Always</td>
+            <td>Always</td>
+            <td>Only when Wagner opens his mobile wallet</td>
          </tr>
          <tr>
             <td>How many lightning channels?</td>
