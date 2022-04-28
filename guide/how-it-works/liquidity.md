@@ -62,7 +62,7 @@ If your app offers the user visibility into the channel management process, you 
 
 Liquidity directly impacts the user experience. If a user has no outbound liquidity, they can not send bitcoin over lightning. Conversely, if a user has no inbound liquidity, they can not receive bitcoin over lightning.
 
-Sourcing inbound liquidity is very important for onboarding a user to a lightning wallet. Imagine if you were brand new to bitcoin. You download your first wallet, a lightning wallet. Because there is no inbound liquidity, you can not receive any bitcoin. Would you understand what to do next? Would the wallet still seem useful to you?
+Sourcing inbound liquidity is very important for [funding]({{'/guide/daily-spending-wallet/funding/' | relative_url}}) and onboarding a user to a lightning wallet. Imagine if you were brand new to bitcoin. You download your first wallet, a lightning wallet. Because there is no inbound liquidity, you can not receive any bitcoin. Would you understand what to do next? Would the wallet still seem useful to you?
 
 Helping the user to find inbound liquidity will remove friction from onboarding and make their overall experience with bitcoin easier.
 
