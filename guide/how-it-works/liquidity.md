@@ -110,7 +110,7 @@ Before going further, it's important to make a distinction between different use
       <tbody>
          <tr>
             <td>What is their incentive?</td>
-            <td>Rachel operates a lightning node so she can earn routing fees for providing liquidity to the network</td>
+            <td>Rachel operates a lightning node so she can earn routing fees for routing payments or lease inbound liquidity to other lightning nodes</td>
             <td>Miguel operates a lightning node so he can receive payments at his business</td>
             <td>Wagner uses a mobile bitcoin wallet that supports lightning to send and receive payments</td>
          </tr>
