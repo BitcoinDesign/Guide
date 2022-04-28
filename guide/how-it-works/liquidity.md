@@ -134,21 +134,21 @@ Before going further, it's important to make a distinction between different use
          </tr>
          <tr>
             <td>How many lightning channels?</td>
-            <td>Many lightning channels</td>
-            <td>Several lightning channels</td>
-            <td>Few lightning channels</td>
+            <td>Many</td>
+            <td>Several</td>
+            <td>Few</td>
          </tr>
          <tr>
             <td>How much liquidity?</td>
-            <td>Massive liquidity</td>
-            <td>Medium liquidity</td>
-            <td>Less liquidity</td>
+            <td>Massive</td>
+            <td>Medium</td>
+            <td>Less</td>
          </tr>
          <tr>
             <td>Where does the liquidity come from?</td>
             <td>Liquidity is self-funded</td>
-            <td>Liquidity is usually sourced externally (from an LSP, for example)</td>
-            <td>Liquidity is usually sourced externally (from an LSP, for example)</td>
+            <td>Usually sourced externally (from an LSP, for example)</td>
+            <td>Usually sourced externally (from an LSP, for example)</td>
          </tr>
          <tr>
             <td>How much do they know about lightning?</td>
