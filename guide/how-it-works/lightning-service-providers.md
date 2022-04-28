@@ -5,7 +5,7 @@ description: Common user experience problems of the lightning network that can b
 nav_order: 4
 parent: How it works
 permalink: /guide/how-it-works/lightning-service-providers/
-main_classes: -no-top-padding
+main_classes: -no-top-padding -liquidity-page
 ---
 
 <!--
