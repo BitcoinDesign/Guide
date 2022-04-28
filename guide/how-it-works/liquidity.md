@@ -28,7 +28,7 @@ Figma file: https://www.figma.com/file/ZwRT4mZZ4UNGtsfLz22m8M/Liquidity?node-id=
 
 -->
 
-# Liquidity
+# Lightning liquidity
 
 Liquidity is a core concept to understand when working with the lightning network, although tricky. Ideally, we are able to design products that are easy enough to use so that users do not need to concern themselves with liquidity. However, product designers need to understand liquidity in order to build effectively on lightning.
 
