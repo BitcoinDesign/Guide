@@ -57,7 +57,7 @@ Below are areas within your bitcoin application where interoperability should be
 
 You should ensure your application is interoperable with the various techniques for sending and requesting bitcoin.
 
-Supporting generating and reading as many [payment request formats]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }}) as possible in your application will make your wallet more interoperable with others.
+Supporting, generating, and reading as many [payment request formats]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }}) as possible in your application will make it more interoperable with others.
 
 It also matters how these formats are generated. Your applications should be able to read, and generate, [BIP 21](https://bips.xyz/21) encoded payment requests.
 
