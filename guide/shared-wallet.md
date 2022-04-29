@@ -1,15 +1,16 @@
 ---
 layout: guide
-title: Shared account
-description: Bitcoin wallet design reference design for accounts managed together by multiple owners.
+title: Shared wallet
+description: Bitcoin wallet design reference design for wallets managed together by multiple owners.
 nav_order: 7
-permalink: /guide/shared-account/
+permalink: /guide/shared-wallet/
 redirect_from:
  - /guide/case-studies/shared-account/
+ - /guide/shared-account/
 main_classes: -no-top-padding
 last_reference_design: true
-image: https://bitcoin.design/assets/images/guide/case-studies/shared-account/shared-account-preview.jpg
-image_base: /assets/images/guide/case-studies/shared-account/
+image: https://bitcoin.design/assets/images/guide/shared-wallet/shared-account-preview.jpg
+image_base: /assets/images/guide/shared-wallet/
 images:
     - file: first
       alt: App cover screen with a logo, intro and primary call-to-action.
@@ -21,10 +22,10 @@ images:
       alt: 3-step screen with 'Create your key' highlighted.
       caption: The first key is created directly on the device and stored via automatic cloud backup.
     - file: create-signing-key
-      alt: 3-step screen with 'Invite account-holder' highlighted.
-      caption: The second key is created and stored by the account co-holder, which requires exchange of keys outside of the app.
+      alt: 3-step screen with 'Invite wallet-holder' highlighted.
+      caption: The second key is created and stored by the wallet co-holder, which requires exchange of keys outside of the app.
     - file: create-recovery-key
-      alt: 3-step screen with 'Account activation' highlighted.
+      alt: 3-step screen with 'wallet activation' highlighted.
       caption: The third key is stored with the wallet provider.
     - file: recovery-key-setup
       alt: Summary screen of the recovery key setup process.
@@ -41,7 +42,7 @@ images:
 
 Editor's notes
 
-Shared account reference design.
+Shared wallet reference design.
 
 Illustration sources
 
@@ -49,9 +50,9 @@ https://www.figma.com/community/file/968416729557947210
 
 -->
 
-# Shared account
+# Shared wallet
 
-A common real-world use case for shared accounts are couples managing their monthly spending, with both parties being able to spend from the account. For this situation, we could consider the following private key management schemes:
+A common real-world use case for shared wallets are couples managing their monthly spending, with both parties being able to spend from the wallet. For this situation, we could consider the following private key management schemes:
 
 - 1-of-2 [multi-key]({{ '/guide/how-it-works/private-key-management/multi-key/' | relative_url }}) - either party can spend without the other's approval
 - 2-of-3 multi-key - either party can spend with approval from one additional key
@@ -78,10 +79,10 @@ Try the prototype below to see what such a user experience could be like.
 
 {% include prototype.html
    link = "https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A824&viewport=333%2C41%2C0.37497082352638245&scaling=scale-down"
-   image = "/assets/images/guide/case-studies/shared-account/case-shared.png"
-   retina = "/assets/images/guide/case-studies/shared-account/case-shared@2x.png"
-   mobile = "/assets/images/guide/case-studies/shared-account/case-shared-mobile.png"
-   mobileRetina = "/assets/images/guide/case-studies/shared-account/case-shared-mobile@2x.png"
+   image = "/assets/images/guide/shared-wallet/case-shared.png"
+   retina = "/assets/images/guide/shared-wallet/case-shared@2x.png"
+   mobile = "/assets/images/guide/shared-wallet/case-shared-mobile.png"
+   mobileRetina = "/assets/images/guide/shared-wallet/case-shared-mobile@2x.png"
    alt-text = "Image of reference design prototype"
    width = 800
    height = 500

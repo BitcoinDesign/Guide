@@ -4,15 +4,15 @@ title: Interoperability
 description: Designing for seamless experiences across bitcoin applications.
 nav_order: 7
 parent: Designing bitcoin products
-permalink: /guide/designing-products/wallet-interoperability/
+permalink: /guide/designing-products/interoperability/
+redirect_from: /guide/designing-products/wallet-interoperability/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/designing-products/wallet-interoperability/wallet-interoperability-preview.jpg
+image: https://bitcoin.design/assets/images/guide/designing-products/interoperability/wallet-interoperability-preview.jpg
 ---
 
 <!--
 
 Editor's notes
-
 An overview of important interaction points between bitcoin applications and user experiences.
 
 Designers should think beyond the software they are working on and strongly consider these
@@ -26,10 +26,10 @@ https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=112%3A612
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/designing-products/wallet-interoperability/wallet-interoperability.jpg"
-   retina = "/assets/images/guide/designing-products/wallet-interoperability/wallet-interoperability@2x.jpg"
-   mobile = "/assets/images/guide/designing-products/wallet-interoperability/wallet-interoperability-mobile.jpg"
-   mobileRetina = "/assets/images/guide/designing-products/wallet-interoperability/wallet-interoperability-mobile@2x.jpg"
+   image = "/assets/images/guide/designing-products/interoperability/wallet-interoperability.jpg"
+   retina = "/assets/images/guide/designing-products/interoperability/wallet-interoperability@2x.jpg"
+   mobile = "/assets/images/guide/designing-products/interoperability/wallet-interoperability-mobile.jpg"
+   mobileRetina = "/assets/images/guide/designing-products/interoperability/wallet-interoperability-mobile@2x.jpg"
    alt-text = "Several devices exchanging data"
    width = 1600
    height = 700
@@ -47,8 +47,8 @@ Below are areas within your bitcoin application where interoperability should be
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/designing-products/wallet-interoperability/payment-links.jpg"
-   retina = "/assets/images/guide/designing-products/wallet-interoperability/payment-links@2x.jpg"
+   image = "/assets/images/guide/designing-products/interoperability/payment-links.jpg"
+   retina = "/assets/images/guide/designing-products/interoperability/payment-links@2x.jpg"
    alt-text = "Click a link to launch bitcoin software"
    width = 400
    height = 300
@@ -68,8 +68,8 @@ Bitcoin payment links and the underlying data should also be readable by your ap
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/designing-products/wallet-interoperability/key-import-export.jpg"
-   retina = "/assets/images/guide/designing-products/wallet-interoperability/key-import-export@2x.jpg"
+   image = "/assets/images/guide/designing-products/interoperability/key-import-export.jpg"
+   retina = "/assets/images/guide/designing-products/interoperability/key-import-export@2x.jpg"
    alt-text = "Transfer of wallet data between applications"
    width = 400
    height = 300
@@ -89,8 +89,8 @@ It should be convenient for users to back up the relevant information they need 
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/designing-products/wallet-interoperability/user-data-import-export.jpg"
-   retina = "/assets/images/guide/designing-products/wallet-interoperability/user-data-import-export@2x.jpg"
+   image = "/assets/images/guide/designing-products/interoperability/user-data-import-export.jpg"
+   retina = "/assets/images/guide/designing-products/interoperability/user-data-import-export@2x.jpg"
    alt-text = "Transfer of user data between applications"
    width = 400
    height = 300
@@ -108,8 +108,8 @@ To better understand and organize their finances, users typically enrich transac
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/designing-products/wallet-interoperability/qr-code.jpg"
-   retina = "/assets/images/guide/designing-products/wallet-interoperability/qr-code@2x.jpg"
+   image = "/assets/images/guide/designing-products/interoperability/qr-code.jpg"
+   retina = "/assets/images/guide/designing-products/interoperability/qr-code@2x.jpg"
    alt-text = "A smartphone camera scanning a QR code"
    width = 400
    height = 300
@@ -131,8 +131,8 @@ Static QR codes can only contain small amounts of information. If you need to in
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/designing-products/wallet-interoperability/integrations.jpg"
-   retina = "/assets/images/guide/designing-products/wallet-interoperability/integrations@2x.jpg"
+   image = "/assets/images/guide/designing-products/interoperability/integrations.jpg"
+   retina = "/assets/images/guide/designing-products/interoperability/integrations@2x.jpg"
    alt-text = "Application reliance on external data and services"
    width = 400
    height = 300
@@ -148,8 +148,8 @@ Most bitcoin applications rely on external data sources (like currency conversio
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/designing-products/wallet-interoperability/user-interface.jpg"
-   retina = "/assets/images/guide/designing-products/wallet-interoperability/user-interface@2x.jpg"
+   image = "/assets/images/guide/designing-products/interoperability/user-interface.jpg"
+   retina = "/assets/images/guide/designing-products/interoperability/user-interface@2x.jpg"
    alt-text = "Application reliance on external data and services"
    width = 400
    height = 300
@@ -165,8 +165,8 @@ Although every application will have its own unique interface, there are certain
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/designing-products/wallet-interoperability/node-options.jpg"
-   retina = "/assets/images/guide/designing-products/wallet-interoperability/node-options@2x.jpg"
+   image = "/assets/images/guide/designing-products/interoperability/node-options.jpg"
+   retina = "/assets/images/guide/designing-products/interoperability/node-options@2x.jpg"
    alt-text = "Node options"
    width = 400
    height = 300
@@ -184,8 +184,8 @@ If your application uses the Lightning network, users should be running their ow
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/designing-products/wallet-interoperability/hardware-wallets.jpg"
-   retina = "/assets/images/guide/designing-products/wallet-interoperability/hardware-wallets@2x.jpg"
+   image = "/assets/images/guide/designing-products/interoperability/hardware-wallets.jpg"
+   retina = "/assets/images/guide/designing-products/interoperability/hardware-wallets@2x.jpg"
    alt-text = "Application reliance on external data and services"
    width = 400
    height = 300
@@ -201,8 +201,8 @@ Your application should support interfacing with the various [hardware wallets](
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/designing-products/wallet-interoperability/transaction-file.jpg"
-   retina = "/assets/images/guide/designing-products/wallet-interoperability/transaction-file@2x.jpg"
+   image = "/assets/images/guide/designing-products/interoperability/transaction-file.jpg"
+   retina = "/assets/images/guide/designing-products/interoperability/transaction-file@2x.jpg"
    alt-text = "Transfer of transaction files between applications"
    width = 400
    height = 300
@@ -218,8 +218,8 @@ Your application should support constructing and managing transaction files, als
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/designing-products/wallet-interoperability/multi-signature.jpg"
-   retina = "/assets/images/guide/designing-products/wallet-interoperability/multi-signature@2x.jpg"
+   image = "/assets/images/guide/designing-products/interoperability/multi-signature.jpg"
+   retina = "/assets/images/guide/designing-products/interoperability/multi-signature@2x.jpg"
    alt-text = "Cosigner wallets interacting with a multi signature wallet"
    width = 400
    height = 300
