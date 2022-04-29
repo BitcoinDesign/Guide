@@ -231,7 +231,7 @@ Your application should support interfacing with the various [hardware wallets](
 
 Your application should support constructing, sharing, and managing transaction files, also known as [Partially Signed Bitcoin Transactions (PSBTs)](/guide/glossary/#partially-signed-bitcoin-transaction-psbt).
 
-PSBTS allow for storage and transfer of transactions that are not yet finalized. They allow signing wallets to be offline, as the transaction data can be transferred via USB, NFC or animated QR codes.
+PSBTS allow for storage and transfer of transactions that are not yet finalized. They allow signing wallets to be offline, as the transaction data can be transferred via USB, NFC, or animated QR codes.
 
 This is particularly useful if users want to open a payment channel directly from their cold storage.
 
