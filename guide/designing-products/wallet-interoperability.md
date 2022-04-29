@@ -195,7 +195,7 @@ Having the option to choose how that data is queried, say using [Neutrino over S
 
 If your application uses the Lightning network, users should be running their own Lightning node. However, there are certain aspects of a Lightning node that can be outsourced, such as creating inbound liquidity from an LSP or constructing payment paths.
 
-Your application should give users the options as to what, if any, services they want to trust a third-party to conduct. Your application should try to avoid having users locked into your application and give them various options for outsourcing Lightning services.
+Your application should give users options as to which services (if any) they want to trust a third party to conduct. Your application should try to avoid having users locked into your application and give them various options for outsourcing Lightning services.
 
 </div>
 
