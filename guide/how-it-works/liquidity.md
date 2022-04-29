@@ -284,9 +284,9 @@ One way to help your users receive inbound liquidity is through LSPs (Lightning 
 
 There may be some situations where you need to help your user with outbound liquidity. An example of this would be a user who already owns bitcoin and wants to spend it using their lightning wallet.
 
-#### Automatic Channel Opens
+#### Instant open
 
-One way to accomplish this could be through an automatic channel open. If the user has bitcoin in an on-chain wallet, you could have them send bitcoin on-chain to the wallet, and then automatically use those funds to open a lightning channel with a well-connected node. An example of a wallet that does this is [Blixt](https://blixtwallet.github.io/).
+One way to accomplish this could be through an [instant channel open]({{'/guide/daily-spending-wallet/funding/#instant-open' | relative_url}}). If the user has bitcoin in an on-chain wallet, you could have them send bitcoin on-chain to the wallet, and then automatically use those funds to open a lightning channel with a well-connected node. An example of a wallet that does this is [Blixt](https://blixtwallet.github.io/). Read more [about this here]({{'/guide/daily-spending-wallet/funding/#instant-open' | relative_url}}).
 
 #### LSP Swap-In
 
