@@ -1337,3 +1337,9 @@ assets/images/projects/projects@2x.jpg: projects@2x.jpg
 assets/images/search-preview.jpg: search-preview.jpg
 assets/images/submit-header-design-preview.jpg: submit-header-design-preview.jpg
 assets/mstile-150x150.png: mstile-150x150.png
+assets/images/guide/how-it-works/node/merchant-node.png: merchant-node.png
+assets/images/guide/how-it-works/node/merchant-node@2x.png: merchant-node@2x.png
+assets/images/guide/how-it-works/node/payments-node.png: payments-node.png
+assets/images/guide/how-it-works/node/payments-node@2x.png: payments-node@2x.png
+assets/images/guide/how-it-works/node/routing-node.png: routing-node.png
+assets/images/guide/how-it-works/node/routing-node@2x.png: routing-node@2x.png
