@@ -132,7 +132,7 @@ Your application should be able to scan and read bitcoin related QR codes.
 
 QR codes are visual representations of data. Since most devices today feature cameras with built-in support for reading QR codes, this technique has become a convenient method to transfer data from one device to another, even if those devices are offline.
 
-Some bitcoin use cases for QR codes include sending and requesting payments, backing up and recovering wallets, sharing partially signed bitcoin transactions PSBTs or constructing a multisig-wallet.
+Some bitcoin use cases for QR codes include sending and requesting payments, backing up and recovering wallets, sharing PSBTs (partially signed bitcoin transactions), or constructing a multisig-wallet.
 
 Although QR codes are a well-established and standardized format, there are details to consider. For example, it is [more efficient](https://bitcoinops.org/en/bech32-sending-support/#creating-more-efficient-qr-codes-with-bech32-addresses) to encode uppercase characters. So it is recommended to uppercase data that is not case sensitive, such as bitcoin addresses.
 
