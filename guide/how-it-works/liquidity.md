@@ -266,6 +266,12 @@ While the example thus far has focused on routing nodes, mobile nodes also fit i
    layout = "full-width"
 %}
 
+{% include tip/open.html color="blue" icon="info" label="Further reading" %}
+
+This is a simplified overview of the lightning network. In reality, lightning is a fast-moving technology with a variety of different techniques for managing channels and liquidity. Recent innovations like [dual-funded channels](https://medium.com/blockstream/c-lightning-opens-first-dual-funded-mainnet-lightning-channel-ada6b32a527c) allow both channel partners to contribute to the liquidity from the start, and [channel-splicing](https://bitcoinops.org/en/topics/splicing/) is a promising idea may help make channel balancing easier.
+
+{% include tip/close.html %}
+
 ## Handling liquidity for wallet users
 
 The above examples were designed to help you understand liquidity on a conceptual level. Ideally, the user of a mobile [daily spending wallet]({{'/guide/daily-spending-wallet/' | relative_url}}) never has to consider any of the liquidity sourcing that happens behind the scenes. Consider how you might design a bitcoin product that doesn't require the user to understand lightning channel management.
