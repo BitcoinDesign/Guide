@@ -136,7 +136,7 @@ Some bitcoin use cases for QR codes include sending and requesting payments, bac
 
 Although QR codes are a well-established and standardized format, there are details to consider. For example, it is [more efficient](https://bitcoinops.org/en/bech32-sending-support/#creating-more-efficient-qr-codes-with-bech32-addresses) to encode uppercase characters. So it is recommended to uppercase data that is not case sensitive, such as bitcoin addresses.
 
-Static QR codes can only contain small amounts of information. If you need to include more information, you can use an animated QR code. This splits up the data over multiple static QR codes. Animated QR codes are often used for transferring partially PSBTs which can be quite large. You should ensure your application can read animated QRs if relevant.
+Static QR codes can only contain small amounts of information. If you need to include more information, you can use an animated QR code. This splits up the data over multiple static QR codes. Animated QR codes are often used for transferring PSBTs which can be quite large. You should ensure your application can read animated QRs if relevant.
 
 </div>
 
