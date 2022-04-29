@@ -163,7 +163,7 @@ People looking to accept bitcoin payments, especially when using the lightning n
 
 Dedicated bitcoin POS hardware is used to request and receive bitcoin payments in-person. These act very similar to traditional POS systems but present to payees a bitcoin on-chain, lightning, or [unified](https://bitcoinqr.dev/) payment request. Payment requests can also be shared and paid over NFC.
 
-When accepting lightning payments, these POS terminals often connect to a remote always on lightning node. An example of is a merchant using a dedicated iPad to connect to [BTCPay Server](https://btcpayserver.org/) instance.
+When accepting lightning payments, these POS terminals often connect to a remote, always-on lightning node. For example, a merchant may use a dedicated iPad to connect to a [BTCPay Server](https://btcpayserver.org/) instance.
 
 Accepting lightning payments with POS hardware can also be fully offline using a standard like [LNURL](https://github.com/fiatjaf/lnurl-rfc) to easily receive payments. An example of this is [LNURLPoS](https://github.com/arcbtc/LNURLPoS)
 
