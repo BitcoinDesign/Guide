@@ -172,6 +172,12 @@ Insights into the current state of the cryptoasset industry. The study gathers s
 
 ## Case studies
 
+#### [How Women Across the World View Bitcoin](https://spiral.xyz/how-women-across-the-world-view-bitcoin.pdf)
+
+_2022 by Vongphrachanh and Berkoe._
+
+A research initiative to understand how women outside the U.S who never engaged with bitcoin felt about it and how their perceptions differed from men's. The findings highlight roadblocks faced by would-be adopters.
+
 #### [How Coinbase works](https://builtformars.com/case-studies/how-coinbase-works)
 
 _2020 by Ramsey._
