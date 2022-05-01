@@ -2,7 +2,7 @@
 layout: guide
 title: Lightning Service Providers
 description: Common user experience problems of the lightning network that can be resolved by third-party services.
-nav_order: 3
+nav_order: 4
 parent: How it works
 permalink: /guide/how-it-works/lightning-service-providers/
 main_classes: -no-top-padding
@@ -72,7 +72,7 @@ Users should have the option to backup payment channel states [manually]({{ '/gu
 
 </div>
 
-## Channel opens  
+## Channel opens
 
 <div class="center" markdown="1">
 
@@ -311,8 +311,8 @@ The [lightningnetwork+ watchtower](https://lightningnetwork.plus/watchtower) is 
 Now, lets learn how [nodes]({{ '/guide/how-it-works/nodes/' | relative_url }}) on bitcoin work.
 
 {% include next-previous.html
-   previousUrl = "/guide/how-it-works/coin-selection/"
-   previousName = "Coin selection"
+   previousUrl = "/guide/how-it-works/liquidity/"
+   previousName = "Liquidity"
    nextUrl = "/guide/how-it-works/nodes/"
    nextName = "Nodes"
 %}

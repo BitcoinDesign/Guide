@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: How it works
-description: Find out about the complexities of how bitcoin works. 
+description: Find out about the complexities of how bitcoin works.
 nav_order: 8
 has_children: true
 permalink: /guide/how-it-works/
@@ -29,6 +29,12 @@ A straightforward guide to safe manual backups.
 ### [Coin selection]({{ '/guide/how-it-works/coin-selection/' | relative_url }})
 
 Learn how coin selection is used to choose which UTXOs (or “coins”) to use as inputs when making an on-chain bitcoin payment.
+
+---
+
+### [Lightning liquidity]({{ '/guide/how-it-works/liquidity/' | relative_url }})
+
+A primer on liquidity in the lightning network.
 
 ---
 

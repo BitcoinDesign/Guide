@@ -2,7 +2,7 @@
 layout: guide
 title: Transactions
 description: An overview of bitcoin transactions, common concepts, and the transaction lifecycle.
-nav_order: 6
+nav_order: 8
 parent: How it works
 permalink: /guide/how-it-works/transactions/
 redirect_from:

@@ -1,0 +1,110 @@
+.-liquidity-page {
+  .nodes {
+    padding: $sp-4;
+
+    table {
+      max-width: 1400px;
+
+      tr {
+        margin-bottom: $sp-4;
+        display: block;
+      }
+
+      th {
+        text-align: center;
+        display: block;
+      }
+
+      td {
+        display: block;
+
+        &:first-child {
+          font-weight: bold;
+        }
+
+        &:nth-child(2) {
+          &:before {
+            content: 'Rachel';
+            background-color: #FF9500;
+          }
+        }
+
+        &:nth-child(3) {
+          &:before {
+            content: 'Miguel';
+            background-color: #25B74E;
+          }
+        }
+
+        &:nth-child(4) {
+          &:before {
+            content: 'Wagner';
+            background-color: #24B2EF;
+          }
+        }
+
+        &:nth-child(n + 1) {
+          &:before {
+            font-weight: bold;
+            margin-right: $sp-2;
+            padding: $sp-1;
+            border-radius: 2px;
+            display: inline-block;
+            font-size: $small-font-size;
+          }
+        }
+      }
+
+      td,th {
+        border-bottom: 1px solid #e5e5e5;
+      }
+    }
+
+    @include media-query('medium-up') {
+      thead {
+        tr {
+          display: flex;
+          flex-direction: row;
+        }
+
+        th {
+          //display: table-cell;
+          width: 33.333%;
+
+          &:first-child {
+            display: none;
+          }
+        }
+      }
+    }
+
+    @include media-query('huge') {
+      table {
+        tr {
+          margin-bottom: auto;
+          display: table-row;
+        }
+
+        th {
+          display: table-cell;
+          width: 25%;
+
+          &:first-child {
+            display: table-cell;
+          }
+        }
+
+        td {
+          display: table-cell;
+          width: 25%;
+
+          &:nth-child(n + 1) {
+            &:before {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
