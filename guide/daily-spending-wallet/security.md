@@ -9,6 +9,17 @@ redirect_from:
  - /guide/onboarding/protecting-a-wallet/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/daily-spending-wallet/security/protecting-a-wallet-preview.png
+image_base: /assets/images/guide/daily-spending-wallet/security/
+images_watchtower:
+    - file: lightning-network-settings
+      alt:
+      caption: A sample settings page for the lightning network.
+    - file: watchtower-details
+      alt:
+      caption: Here, a default watchtower service is chosen.
+    - file: watchtower-details-custom
+      alt:
+      caption: The user has defined a custom watchtower.
 ---
 
 <!--
@@ -351,14 +362,24 @@ An advantage here is the risk of an unauthorized person revealing their informat
 
 </div>
 
----
-
 ## Why is this important to designers?
 {: .no_toc }
 
 Privacy in bitcoin payments goes far beyond hiding balances and other sensitive information. The [privacy by design framework](https://www.ipc.on.ca/wp-content/uploads/Resources/7foundationalprinciples.pdf) states that privacy should be incorporated and built into products by default. This way, whether or not the user is concerned with their data privacy, they would always be protected through good UX and UI.
 
 By including UX patterns for hiding information pattern wallets, we give users a greater sense of control and comfort in any situation. They have the freedom to decide whether or not they want their information visible.
+
+---
+
+## Preventing theft when offline
+
+Mobile wallets may frequently be offline, either due to a poor connection or because the application is not running. To improve battery live, mobile operating systems tend to prevent applications the user is not actively using from running code in the background. This can prevent mobile wallets from being reliable monitors of its payment channels. Malicious actors who share channels with the user may take advantage of these moments to try to steal funds by closing channels with incorrect data.
+
+A simple technique to reduce this risk is to notify the user when the application has been offline for an extended period of time. [Forced channel closes](https://wiki.ion.radar.tech/tech/channels/channel-closing#force-close) have an agreed upon delay built-in. Notifications should be sent early enough so that users have time to appropriately respond.
+
+[Watchtowers](https://wiki.ion.radar.tech/tech/research/watchtowers) address this problem by continuously monitoring wallets and securely acting on the owners behalf when a problematic situation occurs. Watchtowers services should be provided by a different party than the wallet and payment channels, to reduce the risk of collusion.
+
+{% include image-gallery.html pages = page.images_watchtower %}
 
 ---
 

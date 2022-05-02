@@ -425,6 +425,10 @@ This term is often used interchangeably for very different things. A user can *d
 
 [Read more]({{ "/guide/glossary/wallet" | relative_url }})
 
+### Watchtower
+
+Services that monitor lightning nodes for [fraudulent channel closes](https://wiki.ion.radar.tech/tech/channels/channel-closing#fraudulent-force-close). If one occurs, they broadcast a [penalty transaction](https://river.com/learn/terms/p/penalty-transaction/). For design guidance, see the [security page]({{ "/guide/daily-spending-wallet/security/#preventing-theft-when-offline" | relative_url }}).
+
 
 ### Additional resources
 
