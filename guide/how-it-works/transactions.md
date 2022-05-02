@@ -2,7 +2,7 @@
 layout: guide
 title: Transactions
 description: An overview of bitcoin transactions, common concepts, and the transaction lifecycle.
-nav_order: 6
+nav_order: 8
 parent: How it works
 permalink: /guide/how-it-works/transactions/
 redirect_from:
@@ -28,7 +28,7 @@ image: /assets/images/guide/how-it-works/transactions/tx-preview.jpg
 Editor's notes
 
 This page describes the structure of bitcoin transactions. It is not meant to be an extensive technical resource, but
-more of a primer on the subject. As bitcoin transactions are fundamentally different than traditional financial
+rather a primer on the subject. As bitcoin transactions are fundamentally different than traditional financial
 transactions, it's important for designers to understand these differences when creating for bitcoin.
 
 Illustration sources
@@ -147,7 +147,7 @@ It is widely accepted that after 6 confirmations, no other reorganizations can a
 
 ## Transaction structure
 
-Think of a bitcoin transaction as a file that contains the authorizations to spend some bitcoin, as well as the payment details of the recipient(s). Once miners get the transaction they check all the details once more before they include it into a block.
+Think of a bitcoin transaction as a file that contains the authorizations to spend some bitcoin, as well as the payment details of the recipient(s). Once miners get the transaction, they check all the details once more before they include it into a block.
 
 The principal properties are:
 
@@ -155,11 +155,11 @@ The principal properties are:
 - **Inputs** -- the source of funds
 - **Outputs** -- the recipient or change destination(s)
 - **Lock time** -- the earliest the transaction can be broadcasted (optional)
-<!-- Purposfully left out RBF as I don't think this format would guide the reader to understanding how it works. Will add in v2 of the page -->
+<!-- Purposefully left out RBF as I don't think this format would guide the reader to understanding how it works. Will add in v2 of the page -->
 
 ### Input and outputs
 
-In a bitcoin wallet, funds are often not held in a single address, but more commonly in one address per transaction where you previously received bitcoin. When you are creating a transaction you need to specify which of your addresses you would like to use to fund it. If you need to spend more than what a single address holds, you can specify several. These are called *inputs* to the transaction.
+In a bitcoin wallet, funds are often not held in a single address, but more commonly in one address per transaction where you previously received bitcoin. When you are creating a transaction, you need to specify which of your addresses you would like to use to fund it. If you need to spend more than a single address holds, you can specify several. These are called *inputs* to the transaction.
 
 Likewise, you need to specify the destination address or addresses for the transaction. These are called *outputs*. Should there be more bitcoin in the inputs than are needed for the payment, a new address will be created in your wallet for the remaining change, often called a *change output*.
 
@@ -181,7 +181,7 @@ The sender's wallet uses both of these as inputs in the transaction, meaning tha
 
 Every transaction needs to pay a fee to incentivize miners to include it in a block. There is no fixed fee for making a transaction as it depends on the amount of data it includes, the amount of other transactions that are trying to get verified, and how much each submitter is prepared to pay. Miners typically pick the transactions that will earn them the highest reward to include in a block.
 
-Blocks are also limited in size and new ones are created every 10 minutes on average. This means that if you want a transaction to be confirmed in the next block you might have to pay a relatively high price.
+Blocks are also limited in size, and new ones are created every 10 minutes on average. This means that if you want a transaction to be confirmed in the next block, you might have to pay a relatively high price.
 
 ---
 

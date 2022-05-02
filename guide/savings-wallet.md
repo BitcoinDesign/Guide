@@ -1,15 +1,15 @@
 ---
 layout: guide
 title: Savings wallet
-description: A UX case study for a multi-key bitcoin wallet designed for both daily spending and storing medium amounts.
+description: A UX reference design for a multi-key bitcoin wallet designed for both daily spending and storing medium amounts.
 nav_order: 5
 permalink: /guide/savings-wallet/
 redirect_from:
  - /guide/case-studies/savings-account/
  - /guide/case-studies/savings-wallet/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/case-studies/savings-wallet/multisig-wallet-preview.jpg
-image_base: /assets/images/guide/case-studies/savings-wallet/
+image: https://bitcoin.design/assets/images/guide/savings-wallet/multisig-wallet-preview.jpg
+image_base: /assets/images/guide/savings-wallet/
 images_onboarding:
     - file: onboarding/cover
       alt:
@@ -151,7 +151,7 @@ images_limits:
 
 Editor's notes
 
-Savings account reference design.
+Savings wallet reference design.
 
 Illustration sources
 
@@ -160,10 +160,10 @@ https://www.figma.com/community/file/968416729557947210
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/case-studies/savings-wallet/savings-account-header.jpg"
-   retina = "/assets/images/guide/case-studies/savings-wallet/savings-account-header@2x.jpg"
-   mobile = "/assets/images/guide/case-studies/savings-wallet/savings-account-header-mobile.jpg"
-   mobileRetina = "/assets/images/guide/case-studies/savings-wallet/savings-account-header-mobile@2x.jpg"
+   image = "/assets/images/guide/savings-wallet/savings-account-header.jpg"
+   retina = "/assets/images/guide/savings-wallet/savings-account-header@2x.jpg"
+   mobile = "/assets/images/guide/savings-wallet/savings-account-header-mobile.jpg"
+   mobileRetina = "/assets/images/guide/savings-wallet/savings-account-header-mobile@2x.jpg"
    alt-text = "Bar chart showing various spending categories"
    caption = ""
    width = 1600
@@ -173,16 +173,16 @@ https://www.figma.com/community/file/968416729557947210
 
 # Savings wallet
 
-In this reference design, we look at a product that balances daily spending with what a bank would call a [savings]({{ '/guide/designing-products/personal-finance/#savings' | relative_url }}) account where the user might store wealth long term. Safeguards against loss will be a higher priority than with a frequent spending product, and we might therefore accept more friction both when setting up the wallet and when transacting. If users have no prior bitcoin knowledge, we should expect to spend a significant effort educating them to put them in a position to safely operate the wallet product.
+In this reference design, we look at a product that balances daily spending with what a bank would call a [savings]({{ '/guide/designing-products/personal-finance/#savings' | relative_url }}) wallet where the user might store wealth long term. Safeguards against loss will be a higher priority than with a frequent spending product, and we might therefore accept more friction both when setting up the wallet and when transacting. If users have no prior bitcoin knowledge, we should expect to spend a significant effort educating them to put them in a position to safely operate the wallet product.
 
 The following [prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=1%3A55974&viewport=-304%2C225%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=1%3A55974&show-proto-sidebar=1) includes initial onboarding, sending bitcoin, and key replacement, which are explained in detail further below.
 
 {% include prototype.html
    link = "https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=1%3A55974&viewport=-304%2C225%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=1%3A55974&show-proto-sidebar=1"
-   image = "/assets/images/guide/case-studies/savings-wallet/case-current.jpg"
-   retina = "/assets/images/guide/case-studies/savings-wallet/case-current@2x.jpg"
-   mobile = "/assets/images/guide/case-studies/savings-wallet/case-current-mobile.jpg"
-   mobileRetina = "/assets/images/guide/case-studies/savings-wallet/case-current-mobile@2x.jpg"
+   image = "/assets/images/guide/savings-wallet/case-current.jpg"
+   retina = "/assets/images/guide/savings-wallet/case-current@2x.jpg"
+   mobile = "/assets/images/guide/savings-wallet/case-current-mobile.jpg"
+   mobileRetina = "/assets/images/guide/savings-wallet/case-current-mobile@2x.jpg"
    alt-text = "Three stacked screens of the reference design prototype"
    width = 800
    height = 500

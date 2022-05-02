@@ -2,7 +2,7 @@
 layout: guide
 title: Private key management
 description: An overview of private key management schemes, including descriptions of available approaches, some advice and best practices.
-nav_order: 5
+nav_order: 7
 parent: How it works
 has_children: true
 permalink: /guide/how-it-works/private-key-management/introduction/

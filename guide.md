@@ -93,8 +93,8 @@ An in-depth exploration of a mobile wallet for a Lightning-first, on-the-go use 
 <div class="column" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/savings-account.png"
-   retina = "/assets/images/guide/savings-account@2x.png"
+   image = "/assets/images/guide/savings-wallet.png"
+   retina = "/assets/images/guide/savings-wallet@2x.png"
    alt-text = "Mobile screen mock-up of a bitcoin app for savings"
    width = 400
    height = 210
@@ -109,15 +109,15 @@ A multi-key mobile wallet design that provides great security for larger amounts
 <div class="column" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/upgradeable-account.png"
-   retina = "/assets/images/guide/upgradeable-account@2x.png"
-   alt-text = "Three mobile mock-ups of a user flow for account security upgrades"
+   image = "/assets/images/guide/upgradeable-wallet.png"
+   retina = "/assets/images/guide/upgradeable-wallet@2x.png"
+   alt-text = "Three mobile mock-ups of a user flow for wallet security upgrades"
    width = 400
    height = 210
    link-url = "/guide/upgradeable-wallet/"
 %}
 
-<h2 class="h3" markdown="1">[Upgradeable account]({{ '/guide/upgradeable-wallet/' | relative_url }})</h2>
+<h2 class="h3" markdown="1">[Upgradeable wallet]({{ '/guide/upgradeable-wallet/' | relative_url }})</h2>
 
 Exploring the concept of progressive security, in which applications help users navigate varying security configurations appropriate to their holdings and use case.
 
@@ -128,15 +128,15 @@ Exploring the concept of progressive security, in which applications help users 
 <div class="column" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/shared-accounts.png"
-   retina = "/assets/images/guide/shared-accounts@2x.png"
-   alt-text = "Three mobile mock-ups of a user flow for sharing accounts between multiple users"
+   image = "/assets/images/guide/shared-wallet.png"
+   retina = "/assets/images/guide/shared-wallet@2x.png"
+   alt-text = "Three mobile mock-ups of a user flow for sharing wallets between multiple users"
    width = 400
    height = 210
-   link-url = "/guide/shared-account/"
+   link-url = "/guide/shared-wallet/"
 %}
 
-<h2 class="h3" markdown="1">[Shared accounts]({{ '/guide/shared-account/' | relative_url }})</h2>
+<h2 class="h3" markdown="1">[Shared wallet]({{ '/guide/shared-wallet/' | relative_url }})</h2>
 
 An overview and considerations for bitcoin wallets that are managed by multiple owners.
 

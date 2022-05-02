@@ -1,14 +1,14 @@
 ---
 layout: guide
-title: Upgradeable account
+title: Upgradeable wallet
 description: UX reference design for a bitcoin wallet with multiple private key management schemes.
 nav_order: 6
 permalink: /guide/upgradeable-wallet/
 redirect_from:
  - /guide/case-studies/upgradeable-wallet/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/case-studies/upgradeable-wallet/upgradeable-wallet-preview.jpg
-image_base: /assets/images/guide/case-studies/upgradeable-wallet/
+image: https://bitcoin.design/assets/images/guide/upgradeable-wallet/upgradeable-wallet-preview.jpg
+image_base: /assets/images/guide/upgradeable-wallet/
 images:
     - file: first
       alt: App landing screen
@@ -52,10 +52,10 @@ The solution in this case could be a wallet that enables the user to upgrade the
 
 {% include prototype.html
    link = "https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A270&viewport=861%2C146%2C0.44897958636283875&scaling=scale-down"
-   image = "/assets/images/guide/case-studies/upgradeable-wallet/case-upgradeable.png"
-   retina = "/assets/images/guide/case-studies/upgradeable-wallet/case-upgradeable@2x.png"
-   mobile = "/assets/images/guide/case-studies/upgradeable-wallet/case-upgradeable-mobile.png"
-   mobileRetina = "/assets/images/guide/case-studies/upgradeable-wallet/case-upgradeable-mobile@2x.png"
+   image = "/assets/images/guide/upgradeable-wallet/case-upgradeable.png"
+   retina = "/assets/images/guide/upgradeable-wallet/case-upgradeable@2x.png"
+   mobile = "/assets/images/guide/upgradeable-wallet/case-upgradeable-mobile.png"
+   mobileRetina = "/assets/images/guide/upgradeable-wallet/case-upgradeable-mobile@2x.png"
    alt-text = "Image of reference design prototype"
    width = 800
    height = 500
@@ -101,6 +101,6 @@ The screens below show how this architecture allows users to get onboarded quick
 {% include next-previous.html
    previousUrl = "/guide/savings-wallet/"
    previousName = "Savings wallet"
-   nextUrl = "/guide/shared-account/"
-   nextName = "Shared account"
+   nextUrl = "/guide/shared-wallet/"
+   nextName = "Shared wallet"
 %}

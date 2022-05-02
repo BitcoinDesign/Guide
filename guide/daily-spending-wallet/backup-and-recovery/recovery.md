@@ -37,7 +37,7 @@ Illustration sources:
 
 There are several reasons why a user might need to restore their bitcoin wallet. They may have lost their device, be migrating from a different application or have deleted their wallet application. Regardless of why, it’s important that your wallet application has an easy way for users to recover their funds.
 
-However, not all wallets from one application can be recovered in another, depending on what standards they support, as covered in the [wallet interoperability]({{ 'guide/designing-products/wallet-interoperability' | relative_url }}) section. Lack of interoperability and vendor dependance is an issue for wallets holding bitcoin on the Lightning network. Lightning network wallets can currently only be restored in the application originally used. It's also worth noting that restoring from a [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) only restores the private keys, but no user data like transaction notes, [contacts]({{ '/guide/daily-spending-wallet/contacts/' | relative_url }}) etc.
+However, not all wallets from one application can be recovered in another, depending on what standards they support, as covered in the [wallet interoperability]({{ 'guide/designing-products/interoperability' | relative_url }}) section. Lack of interoperability and vendor dependance is an issue for wallets holding bitcoin on the Lightning network. Lightning network wallets can currently only be restored in the application originally used. It's also worth noting that restoring from a [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) only restores the private keys, but no user data like transaction notes, [contacts]({{ '/guide/daily-spending-wallet/contacts/' | relative_url }}) etc.
 
 {% include picture.html
    image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/import-options.png"
@@ -57,7 +57,7 @@ As outlined earlier in the chapter, we consider an [automatic cloud backup](/gui
 
 ### Restore manually with a recovery phrase
 
-Users may have created a wallet with another wallet application. In this case, they should be able to import that wallet into yours by entering their 12 or 24-word recovery phrase. There are several options for the UI when entering a recovery phase, as outlined earlier in the [manual backup]({{ '/guide/daily-spending-wallet/backup-and-recovery/manual-backup/' | relative_url }}) section of this chapter.
+Users may have created a wallet with another wallet application. In this case, they should be able to import that wallet into yours by entering their 12 or 24-word recovery phrase. There are several options for the UI when entering a recovery phase, as outlined earlier in the [manual backup]({{ '/guide/daily-spending-wallet/backup-and-recovery/manual-backup/' | relative_url }}) section of this chapter. Consider supporting recovery phrases in [multiple languages](https://github.com/bitcoin/bips/blob/master/bip-0039/bip-0039-wordlists.md) for better global accessibility.
 
 ### Restore from an encrypted QR code backup
 

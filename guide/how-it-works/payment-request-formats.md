@@ -2,7 +2,7 @@
 layout: guide
 title: Payment request formats
 description: An introduction to the different bitcoin payment request formats.
-nav_order: 4
+nav_order: 6
 parent: How it works
 permalink: /guide/how-it-works/payment-request-formats/
 redirect_from:
@@ -43,7 +43,7 @@ It could be tempting to refer to a Lightning invoice as a â€œlightning address.â
 
 ### Offers ([BOLT 12](https://bolt12.org))
 
-This draft specification has similarities with to LNURL-Pay and LNURL-Withdraw, but uses the Lightning network itself as the communication channel.
+This draft specification has similarities to LNURL-Pay and LNURL-Withdraw, but uses the Lightning network itself as the communication channel.
 
 ### [Lightning AMP invoices](https://docs.lightning.engineering/lightning-network-tools/lnd/amp) (Atomic Multi-Path)
 
@@ -71,7 +71,7 @@ This identifier builds on top of LNURL-Pay and introduces the familiar format of
 
 ## Examples
 
-Each request format has its own unique approach to bundle payment information for transmission. Unique are Lightning addresses, which are easily readable and memorizable by users.
+Each request format has its own unique approach to bundling payment information for transmission. Unique are Lightning addresses, which are easily readable and memorizable by users.
 
 {% include fact/open.html color="blue" label="On-chain address" icon="triangle" %}
 
