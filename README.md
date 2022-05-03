@@ -58,10 +58,11 @@ You'll want to run the site locally to test your changes.
 
 **Clone the source code, build, and serve:**
 
-3. Clone this repository and `cd` into it.
-4. Run `bundle install`
-5. Run `bundle exec jekyll serve`
-6. Browse the site at http://127.0.0.1:4000/
+3. Clone this repository `git clone https://github.com/BitcoinDesign/Guide.git` 
+4. Change into the cloned directory `cd guide`
+5. Run `bundle install`
+6. Run `bundle exec jekyll serve`
+7. Browse the site at http://127.0.0.1:4000/
 
 To run on gh-pages, uncomment the `base_url` variable in `_config.yml`.
 ```
