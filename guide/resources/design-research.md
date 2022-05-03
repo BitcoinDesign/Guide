@@ -227,6 +227,6 @@ A blog post by icons8 that covers the usability issues bitcoin has. The main iss
 {% include next-previous.html
    previousUrl = "/guide/resources/design-files/"
    previousName = "Design files"
-   nextUrl = "/guide/contribute/"
-   nextName = "Contribute to guide"
+   nextUrl = "/guide/resources/design-challenges/"
+   nextName = "Design challenges"
 %}
