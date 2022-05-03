@@ -373,11 +373,15 @@ By including UX patterns for hiding information pattern wallets, we give users a
 
 ## Preventing theft when offline
 
-Mobile wallets may frequently be offline, either due to a poor connection or because the application is not running. To improve battery live, mobile operating systems tend to prevent applications the user is not actively using from running code in the background. This can prevent mobile wallets from being reliable monitors of its payment channels. Malicious actors who share channels with the user may take advantage of these moments to try to steal funds by closing channels with incorrect data.
+Lightning wallets need to be online to monitor their payment channels to prevent their counter parties from attempting to steal their bitcoin. Mobile wallets however are frequently offline. This is usually due to a poor connection or the user not having the wallet open on their device. 
 
-A simple technique to reduce this risk is to notify the user when the application has been offline for an extended period of time. [Forced channel closes](https://wiki.ion.radar.tech/tech/channels/channel-closing#force-close) have an agreed upon delay built-in. Notifications should be sent early enough so that users have time to appropriately respond.
+Most major mobile operating systems do not allow apps open in the background to run tasks, such as monitoring a lightning node. This is to improve battery life as well as prevent apps acting maliciously in the background. 
 
-[Watchtowers](https://wiki.ion.radar.tech/tech/research/watchtowers) address this problem by continuously monitoring wallets and securely acting on the owners behalf when a problematic situation occurs. Watchtowers services should be provided by a different party than the wallet and payment channels, to reduce the risk of collusion.
+This prevents mobile lightning wallets from being reliable monitors of its payment channels. Malicious actors could take advantage of this and attempt to steal the mobile wallet users bitcoin by closing channels with incorrect data.
+
+A technique to reduce this risk is to notify the user when the application has been offline for an extended period of time to open the app so their channels can be checked. [Forced channel closes](https://wiki.ion.radar.tech/tech/channels/channel-closing#force-close) have an agreed upon delay built-in. Notifications should be sent earlier than this delay so that users have time to appropriately respond.
+
+[Watchtowers](https://wiki.ion.radar.tech/tech/research/watchtowers) can also be used. These are third-parties that continuously monitor wallets and punish bad actors who attempt to cheat the wallet they are monitoring. Watchtowers should be provided by a different party than the wallet and payment channels, to reduce the risk of collusion.
 
 {% include image-gallery.html pages = page.images_watchtower %}
 
