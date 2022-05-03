@@ -2,7 +2,7 @@
 layout: guide
 title: Payment request formats
 description: An introduction to the different bitcoin payment request formats.
-nav_order: 4
+nav_order: 6
 parent: How it works
 permalink: /guide/how-it-works/payment-request-formats/
 redirect_from:

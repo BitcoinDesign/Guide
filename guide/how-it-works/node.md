@@ -3,7 +3,7 @@ layout: guide
 title: Nodes
 description: A node refers to a bitcoin client that participates in the bitcoin network.
 parent: How it works
-nav_order: 3
+nav_order: 5
 permalink: /guide/how-it-works/nodes/
 redirect_from:
  - /guide/glossary/node/

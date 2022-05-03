@@ -79,6 +79,7 @@ Safe backups can be made fairly simple. Take a look at our [bitcoin backups]({{ 
 
 #### Do's
 - Explain what a recovery phrase is, and provide guidance on how to do *safe offline backups* BEFORE the user is exposed to the recovery phrase
+- Consider supporting recovery phrases in [multiple languages](https://github.com/bitcoin/bips/blob/master/bip-0039/bip-0039-wordlists.md) for better global accessibility
 
 #### Products that use this scheme
 

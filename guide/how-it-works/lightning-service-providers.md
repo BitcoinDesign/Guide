@@ -2,7 +2,7 @@
 layout: guide
 title: Lightning Service Providers
 description: Common user experience problems of the lightning network that can be resolved by third-party services.
-nav_order: 3
+nav_order: 4
 parent: How it works
 permalink: /guide/how-it-works/lightning-service-providers/
 main_classes: -no-top-padding
@@ -64,7 +64,7 @@ When a user recovers their wallet, they enter their recovery phrase, the LSP sen
 
 This service requires trust that the LSP accurately and securely stores the users channel state backups. Entrusting backups with a single third-party like this is also a security risk and makes users reliant on the LSP.
 
-As the users recovery phrase is required to recover the channel states stored by the LSP, this makes the recovery phrase wallet-dependent. Users will be unable to recover their bitcoin in a wallet that was not the one who generated it, making things less [interoperable]({{ '/guide/designing-products/wallet-interoperability/' | relative_url }}).
+As the users recovery phrase is required to recover the channel states stored by the LSP, this makes the recovery phrase wallet-dependent. Users will be unable to recover their bitcoin in a wallet that was not the one who generated it, making things less [interoperable]({{ '/guide/designing-products/interoperability/' | relative_url }}).
 
 Users should have the option to backup payment channel states [manually]({{ '/guide/daily-spending-wallet/backup-and-recovery/manual-backup/' | relative_url }}) or [automatically]({{ '/guide/daily-spending-wallet/backup-and-recovery/cloud-backup/' | relative_url }}).
 
@@ -72,7 +72,7 @@ Users should have the option to backup payment channel states [manually]({{ '/gu
 
 </div>
 
-## Channel opens  
+## Channel opens
 
 <div class="center" markdown="1">
 
@@ -311,8 +311,8 @@ The [lightningnetwork+ watchtower](https://lightningnetwork.plus/watchtower) is 
 Now, lets learn how [nodes]({{ '/guide/how-it-works/nodes/' | relative_url }}) on bitcoin work.
 
 {% include next-previous.html
-   previousUrl = "/guide/how-it-works/coin-selection/"
-   previousName = "Coin selection"
+   previousUrl = "/guide/how-it-works/liquidity/"
+   previousName = "Liquidity"
    nextUrl = "/guide/how-it-works/nodes/"
    nextName = "Nodes"
 %}
