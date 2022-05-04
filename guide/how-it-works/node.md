@@ -209,7 +209,7 @@ Merchant nodes are primarily used for receiving lightning payments. Business ope
    layout = "float-left"
 %}
 
-Payment nodes are used by end-users to make and receive lightning payments. These are usually built in to mobile wallets and are only online when the user has the app open. As they are not always online, they need to be periodically checked or use a [watchtower](https://bitcoinops.org/en/topics/watchtowers/) to prevent theft from their payment channel counterparties.
+Payment nodes are used by end-users to send and receive lightning payments. These are usually built in to mobile wallets and are only online when the user has the app open. As they are not always online, they need to be periodically checked or use a [watchtower](https://bitcoinops.org/en/topics/watchtowers/) to prevent theft from their payment channel counterparties.
 
 </div>
 
