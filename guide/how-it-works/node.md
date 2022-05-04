@@ -160,7 +160,7 @@ Third-party APIs should be avoided. These are custom connection mechanisms built
 
 Depending on the use case, lightning nodes can be operated in different ways. Some need perfect uptime, large amounts of liquidity, and to be well connected with other lightning nodes. Others are only sometimes online or interacting with the network.
 
-Their main purpose is tracking payment channel states and calculating routes for payments to take through the lightning network. To use lightning non-custodially, every user must run a node and stay online to monitor their payment channels to prevent counter-parties from stealing their funds.
+Their main purpose is to track payment channel states and calculate routes for payments to take through the lightning network. To use non-custodial lightning, a user must run a node and stay online to monitor their payment channels to prevent counter-parties from stealing their funds.
 
 ### Routing nodes
 
