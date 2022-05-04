@@ -175,7 +175,7 @@ Their main purpose is to track payment channel states and calculate routes for p
    layout = "float-left"
 %}
 
-Routing nodes are the backbone of the lightning network. They serve as hubs that route payments between users. They usually have perfect uptime, large amounts of liquidity, run on [dedicated hardware]({{ '/guide/how-it-works/nodes/#hardware' | relative_url }}) and are well connected with other nodes in the network. In many cases, these node operators aim to make a profit by taking fees for routing payments, or leasing their liquidity out to other users.
+Routing nodes are the backbone of the lightning network. They serve as hubs that route payments between users. They usually have perfect uptime, large amounts of liquidity, run on [dedicated hardware]({{ '/guide/how-it-works/nodes/#hardware' | relative_url }}), and are well connected with other nodes in the network. In many cases, these node operators aim to profit by taking fees for routing payments or leasing their liquidity out to other users.
 
 </div>
 
