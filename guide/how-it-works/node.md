@@ -63,7 +63,7 @@ From complete control, to fully trusting a single third party, there are a varie
    layout = "float-left"
 %}
 
-Hardware nodes are dedicated devices, usually Raspberry Pi's, that run a bitcoin and or lightning node. Hardware nodes can come with local wallet functionality, or simply be connected to users external wallets. These are ideal for lightning [routing nodes]({{ '/guide/how-it-works/nodes/#routing-nodes' | relative_url }}) that need near perfect uptime.
+Hardware nodes are dedicated devices, usually Raspberry Pi's, that run a bitcoin node, a lightning node, or both. Hardware nodes can come with local wallet functionality, or simply be connected to users external wallets. These are ideal for lightning [routing nodes]({{ '/guide/how-it-works/nodes/#routing-nodes' | relative_url }}) that need near perfect uptime.
 
 Several _plug-and-play_ hardware node options exist such as [Umbrel](https://getumbrel.com/), [MyNode](https://mynodebtc.com/), [RoninDojo](https://ronindojo.io/), and [Raspiblitz](https://raspiblitz.org/).
 
