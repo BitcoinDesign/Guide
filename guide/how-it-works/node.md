@@ -192,7 +192,7 @@ Routing nodes are the backbone of the lightning network. They serve as hubs that
    layout = "float-left"
 %}
 
-Merchant nodes are primarily used for receiving lightning payments. Business operators often run these so they can accept payments at their store. The liquidity in these nodes is mostly inbound, they are usually always online, and hosted in the cloud with a [trusted third-party]({{ '/guide/how-it-works/nodes/#third-party' | relative_url }}).
+Merchant nodes are primarily used for receiving lightning payments. Business operators often run these so they can accept payments at their stores. These nodes are almost always online and are frequently hosted by a [trusted third party]({{ '/guide/how-it-works/nodes/#third-party' | relative_url }}). Typically, their liquidity is mostly inbound.
 
 </div>
 
