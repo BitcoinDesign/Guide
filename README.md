@@ -58,7 +58,7 @@ You'll want to run the site locally to test your changes.
 
 **Clone the source code, build, and serve:**
 
-3. Clone this repository `git clone https://github.com/BitcoinDesign/Guide.git` 
+3. Clone this repository `git clone "your fork of the repo"` 
 4. Change into the cloned directory `cd guide`
 5. Run `bundle install`
 6. Run `bundle exec jekyll serve`
