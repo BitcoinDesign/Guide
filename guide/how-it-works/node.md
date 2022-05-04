@@ -99,7 +99,7 @@ Local nodes run on local devices. For example, a bitcoin node could be the [Bitc
    layout = "float-left"
 %}
 
-Hosted nodes are when users run their node on a trusted third-party server. This puts full trust in the third-party that they will not tamper with your transaction data. This also exposes your transaction history to them, which is a privacy risk. This is common with merchants using [BTCPay Server](https://btcpayserver.org/).
+Hosted nodes are run on third-party servers and are common with merchants using [BTCPay Server](https://btcpayserver.org/). While you have some degree of control over a hosted node, using a hosted node can expose your transaction history to the hosting provider and involves trusting them not to tamper with your transaction data.
 
 [Greenlight](https://blockstream.com/lightning/greenlight/) and [Validating Lightning Signer (VLS)](https://gitlab.com/lightning-signer) are experimental ways to run a hosted lightning node whilst users keep custody of their private keys.
 
