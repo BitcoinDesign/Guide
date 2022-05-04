@@ -35,7 +35,7 @@ Illustration sources:
 
 # Nodes
 
-A node refers to software that participates in a network. A bitcoin node participates in the bitcoin network. A lightning node participates in the lightning network. Any bitcoin application that wants to show, send or receive transactions needs a way to connect to a node.
+A node refers to software that participates in a network. A bitcoin node participates in the bitcoin network. A lightning node participates in the lightning network. Any bitcoin application that wants to show, send, or receive transactions needs a way to connect to a node.
 
 There are multiple aspects that differentiate nodes:
 - Is it controlled by you or someone else? How much trust is involved?
