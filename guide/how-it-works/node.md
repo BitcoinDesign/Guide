@@ -82,7 +82,7 @@ Several _plug-and-play_ hardware node options exist such as [Umbrel](https://get
    layout = "float-left"
 %}
 
-Local nodes are run on your local device such as desktop and mobile. A way to run a local bitcoin node is software such as [Bitcoin Core](https://bitcoincore.org/). Lightning nodes are often run locally on mobile devices with wallets like [Breez](https://breez.technology/) and are required to be run by the user to use lightning non-custodially.
+Local nodes run on local devices. For example, a bitcoin node could be the [Bitcoin Core](https://bitcoincore.org/) software running on a desktop computer, or a non-custodial lightning node could run on a user's mobile phone, like [Breez](https://bitcoincore.org/) wallet.
 
 </div>
 
