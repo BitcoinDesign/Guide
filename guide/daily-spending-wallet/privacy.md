@@ -169,8 +169,8 @@ It's more common for wallets to protect private keys, but not much is done for o
 <div class="center" markdown="1">
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/security/quick-hide-access.png"
-   retina = "/assets/images/guide/daily-spending-wallet/security/quick-hide-access@2x.png"
+   image = "/assets/images/guide/daily-spending-wallet/privacy/quick-hide-access.png"
+   retina = "/assets/images/guide/daily-spending-wallet/privacy/quick-hide-access@2x.png"
    alt-text = "A gif of a mobile interface for hiding user information"
    caption = "Home screen with a hidden balance and a quick reveal toggle."
    width = 250
@@ -189,8 +189,8 @@ This is an easy and convenient way to switch between revealed and hidden states,
 <div class="center" markdown="1">
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/security/hidden-balance-pin-reveal.png"
-   retina = "/assets/images/guide/daily-spending-wallet/security/hidden-balance-pin-reveal@2x.png"
+   image = "/assets/images/guide/daily-spending-wallet/privacy/hidden-balance-pin-reveal.png"
+   retina = "/assets/images/guide/daily-spending-wallet/privacy/hidden-balance-pin-reveal@2x.png"
    alt-text = "A gif showing a mobile interface where hidden information is revealed with a PIN"
    caption = "Revealing the balance could require PIN entry."
    width = 250
@@ -209,8 +209,8 @@ In this example the risk of an unauthorized person revealing their information i
 <div class="center" markdown="1">
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/security/hidden-balance-reveal-timer.png"
-   retina = "/assets/images/guide/daily-spending-wallet/security/hidden-balance-reveal-timer@2x.png"
+   image = "/assets/images/guide/daily-spending-wallet/privacy/hidden-balance-reveal-timer.png"
+   retina = "/assets/images/guide/daily-spending-wallet/privacy/hidden-balance-reveal-timer@2x.png"
    alt-text = "A gif showing a mobile interface where sensitive information is hidden by default"
    caption = "A timer could also be used before automatic balance reveal."
    width = 250
@@ -229,8 +229,8 @@ This gives users some time to assess their environment before their info is disp
 <div class="center" markdown="1">
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/security/privacy-and-security-settings.png"
-   retina = "/assets/images/guide/daily-spending-wallet/security/privacy-and-security-settings@2x.png"
+   image = "/assets/images/guide/daily-spending-wallet/privacy/privacy-and-security-settings.png"
+   retina = "/assets/images/guide/daily-spending-wallet/privacy/privacy-and-security-settings@2x.png"
    alt-text = "A gif showing a mobile interface where the toggle for hiding information is moved to settings"
    caption = "Hiding sensitive data could be toggle in the settings."
    width = 250
