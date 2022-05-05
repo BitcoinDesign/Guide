@@ -34,6 +34,12 @@ A list of bitcoin design related journal articles, independent research, case st
 
 ---
 
+### [Design challenges]({{ '/guide/resources/design-challenges/' | relative_url }})
+
+Get hands-on with these take-home bitcoin design challenges to practice and play with.
+
+---
+
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/transactions/"
    previousName = "Transactions"
