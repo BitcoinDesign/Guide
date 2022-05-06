@@ -9,6 +9,17 @@ redirect_from:
  - /guide/onboarding/protecting-a-wallet/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/daily-spending-wallet/security/protecting-a-wallet-preview.png
+image_base: /assets/images/guide/daily-spending-wallet/security/
+images_watchtower:
+    - file: lightning-network-settings
+      alt:
+      caption: A sample settings page for the lightning network.
+    - file: watchtower-details
+      alt:
+      caption: Here, a default watchtower service is chosen.
+    - file: watchtower-details-custom
+      alt:
+      caption: The user has defined a custom watchtower.
 ---
 
 <!--
@@ -256,6 +267,20 @@ To further prevent unwanted spending, wallet limits can be established. These ca
 After a user has backed up their recovery phrase, an option to delete it may be useful. This only makes the recovery phrase inaccessible to application users. The app itself continues to store the keys and data it requires to function.
 
 </div>
+
+## Preventing theft when offline
+
+Lightning wallets need to be online to monitor their payment channels to prevent their counterparties from attempting to steal their bitcoin. Mobile wallets, however, are frequently offline, usually due to a poor connection or the user not having the wallet open on their device.
+
+Most major mobile operating systems do not allow apps open in the background to run tasks, such as monitoring a lightning node. This restriction is intended to improve battery life and prevent apps from acting maliciously in the background.
+
+However, this prevents mobile lightning wallets from being reliable monitors of their payment channels. Malicious actors could take advantage of this and attempt to steal a mobile wallet user's bitcoin by closing channels with incorrect data.
+
+One technique to reduce this risk is to notify the user when the application has been offline for an extended period. This way, they can open the app and thereby enable it to check their channels. Forced channel closes have a built-in, agreed-upon delay. Send notifications earlier than this delay so that users have time to respond appropriately.
+
+Another technique is to use [watchtowers](https://wiki.ion.radar.tech/tech/research/watchtowers). These are third parties that continuously monitor wallets and punish bad actors who attempt to cheat the wallet they are monitoring. Watchtowers should be provided by a different party than the wallet and payment channels to reduce the risk of collusion.
+
+{% include image-gallery.html pages = page.images_watchtower %}
 
 ---
 
