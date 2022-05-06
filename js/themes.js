@@ -393,8 +393,6 @@ var applyTheme = function(themeIndex) {
 
     var theme = themes[themeIndex];
 
-    // Del
-
     // Document-wide property.
     var documentProperties = [
         ['--copy-background-color', 'copy.backgroundColor'],
