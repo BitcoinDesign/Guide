@@ -272,10 +272,9 @@ var themes = [
     image: {
         path: '',
         pathRetina: '',
-        pathMobile: '',
-        pathMobileRetina: '',
-        backgroundColor: '',
-        lottie: "/assets/animations/banner-jessica.json"
+        pathMobile: 'url("/assets/images/home/banner/bits-and-pieces-mobile.png")',
+        pathMobileRetina: 'url("/assets/images/home/banner/bits-and-pieces-mobile@2x.png")',
+        backgroundColor: ""
     },
     flipLayoutOnMobile: false,
     author: {
