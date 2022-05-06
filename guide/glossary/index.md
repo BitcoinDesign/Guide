@@ -425,6 +425,10 @@ This term is often used interchangeably for very different things. A user can *d
 
 [Read more]({{ "/guide/glossary/wallet" | relative_url }})
 
+### Watchtower
+
+A lightning [service]({{ "/guide/how-it-works/lightning-service-providers/#watchtowers" | relative_url }}) that monitors lightning nodes for [fraudulent channel closes](https://wiki.ion.radar.tech/tech/channels/channel-closing#fraudulent-force-close). If one occurs, they broadcast a [penalty transaction](https://river.com/learn/terms/p/penalty-transaction/). They sometimes take a small fee for offering this service. For design guidance on using Watchtowers in your application, see the [security page]({{ "/guide/daily-spending-wallet/security/#preventing-theft-when-offline" | relative_url }}).
+
 
 ### Additional resources
 
