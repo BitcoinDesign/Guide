@@ -375,6 +375,12 @@ Since a [private key](#private-key) can be used to prove that the holder control
 One of the most important activities of the bitcoin network is to verify that signatures are valid.
 </div>
 
+### Signer
+
+A signer, also known as a signing device or hardware wallet, is a device or app that is primarily used to sign bitcoin transactions. The reason a user would use a signer is to separate [wallet]({{ '/guide/glossary/wallet/' | relative_url }}) functionality from their private keys for added security. 
+
+Signers can range from dedicated bitcoin-only devices like a [coldcard](https://coldcard.com/), to a simple mobile or desktop app like [bluewallet](https://bluewallet.io/). Signer are commonly used for [savings]({{ '/guide/savings-wallet/' | relative_url }}) and multi-signature wallets.
+
 ### Taproot
 
 A technique that makes complex multisig transactions look the same as standard transactions on the blockchain. This improves both efficiency and privacy, as multiple signatures are combined into a single one.
