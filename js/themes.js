@@ -93,7 +93,6 @@ var themes = [
         link: "https://github.com/BitcoinDesign/Guide/issues/45"
     }
   },
-
   {
     // Rutuja bitcoin page theme banner
     logo: {
@@ -332,10 +331,6 @@ var themes = [
   }
 ];
 
-var lottieLoading = false;
-var lottieLoaded = false;
-var lottiePath = null;
-
 var shuffleArray = function(array) {
     var i = array.length - 1;
     for(; i > 0; i--){
@@ -445,17 +440,6 @@ var applyTheme = function(themeIndex) {
         }
     }
 
-    // Lottie animation.
-    if(lottieLoaded && lottiePath) {
-        lottie.destroy();
-    }
-    if(theme.image.lottie) {
-        lottiePath = theme.image.lottie;
-        this.startLottie();
-    } else {
-        lottiePath = null;
-    }
-
     // Banner properties.
     var banner = document.getElementById('home-banner');
     if(banner) {
@@ -472,9 +456,28 @@ var applyTheme = function(themeIndex) {
         author.innerText = getProperty(theme, 'author.name');
         author.setAttribute('href', getProperty(theme, 'author.link'));
     }
-};
 
-applyTheme(0);
+    // Lottie properties.
+    var homeBannerImage = document.querySelector('.home-banner-image');
+    if(theme.image.lottie) {
+        homeBannerImage.classList.add('lottie');
+        homeBannerImage.dataset.lottie = theme.image.lottie;
+        findLotties();
+
+        var lottieEvent = new CustomEvent('startlottie', {
+            detail: {
+                start: true
+            }
+        });
+
+        document.dispatchEvent(lottieEvent);
+    }
+    else {
+        homeBannerImage.classList.remove('lottie');
+        homeBannerImage.dataset.lottie = '';
+        stopLottie();
+    }
+};
 
 function docReady(fn) {
     // see if DOM is already available
@@ -486,45 +489,12 @@ function docReady(fn) {
     }
 }
 
-function onLottieLoaded() {
-    lottieLoaded = true;
-
-    if(lottiePath) {
-        startLottie();
-    }
-}
-
-function startLottie() {
-    // Load lottie if not available and not loading.
-    if(!lottieLoaded && !lottieLoading) {
-        lottieLoading = true;
-
-        var script = document.createElement('script');
-        script.setAttribute('src', '/js/lottie-5-9-1.min.js');
-        script.onload = onLottieLoaded;
-
-        var footer = document.getElementsByClassName('site-footer')[0];
-        footer.appendChild(script);
-    }
-
-    if(lottieLoaded && lottiePath) {
-        var image = document.getElementsByClassName('home-banner-image')[0];
-
-        // Delete old animations.
-        lottie.destroy();
-
-        lottie.loadAnimation({
-          container: image, // the dom element that will contain the animation
-          renderer: 'svg',
-          loop: true,
-          autoplay: true,
-          path: lottiePath // the path to the animation json
-        });
-    }
-}
-
 docReady(function() {
     var banner = document.getElementById('home-banner');
+
+    document.addEventListener('startlottie', function(e){
+        startLottie();
+    });
 
     if(banner) {
         applyTheme(0);

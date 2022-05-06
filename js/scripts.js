@@ -423,6 +423,67 @@ function preventScroll(e){
     return false;
 }
 
+function startLottie() {
+    // Load lottie if not available and not loading.
+    if(!ref.lottieLoaded && !ref.lottieLoading) {
+
+        ref.lottieLoading = true;
+
+        var script = document.createElement('script');
+        script.setAttribute('src', '/js/lottie-5-9-1.min.js');
+
+        script.onload = function(){
+            ref.lottieLoaded = true;
+
+            if(ref.lottiePath) {
+                startLottie();
+            }
+        };
+
+        var footer = document.getElementsByClassName('site-footer')[0];
+        footer.appendChild(script);
+    }
+
+    if(ref.lottieLoaded && ref.lottiePath) {
+        // Delete old animations.
+        stopLottie();
+
+        ref.lottiePath.forEach(function(item){
+            lottie.loadAnimation({
+                container: item, // the dom element that will contain the animation
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: item.dataset.lottie // the path to the animation json
+            });
+        });
+    }
+}
+
+function stopLottie() {
+    if(typeof lottie !== 'undefined') lottie.destroy();
+}
+
+function onLottieLoaded() {
+    ref.lottieLoaded = true;
+
+    if(ref.lottiePath) {
+        startLottie();
+    }
+}
+
+function findLotties(){
+    var lotties = document.querySelectorAll('.lottie');
+
+    if(lotties.length > 0) {
+        ref.lottiePath = [];
+        lotties.forEach(function(lottie){
+            if(lottie.dataset.lottie) ref.lottiePath.push(lottie);
+        });
+    }
+    else ref.lottiePath = null;
+}
+
 window.addEventListener("resize", function(event) {
   resizeFigmaEmbeds();
   resizeModal();
@@ -437,7 +498,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
   ref.searchTrigger = document.getElementById("search-trigger");
   ref.searchResults = document.getElementById('search-results');
   ref.modalImageLinks = document.querySelectorAll('.modal-image-link, .modal-indicator svg');
-
+  ref.lottieLoading = false;
+  ref.lottieLoaded = false;
+  ref.lottiePath = null;
+  findLotties();
+  startLottie();
   updateNavAccessibility();
 
   if(ref.searchInput) {

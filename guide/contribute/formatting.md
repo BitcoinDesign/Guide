@@ -34,6 +34,7 @@ The design source file is a public Figma community file you can find [here](http
 - [Blockquotes](#blockquote)
 - [Links](#links)
 - [Images](#images)
+- [Animations](#animations)
 - [Gallery](#image-slide-gallery)
 - [Lists](#lists)
 - [Tables](#tables)
@@ -391,6 +392,34 @@ A horizontal slide show of images. When the content is too wide for the screen, 
 %}
 
 </div>
+
+### Animations
+
+{% raw %}
+```liquid
+{% include lottie.html
+   lottie-path = "/assets/animations/contribute/formatting/bitcoin-design-seal.json"
+   width = 400
+   height = 400
+%}
+```
+{% endraw %}
+
+Animations can be used to help communicate complicated information, or simply to add some fun effects to a page. Your animation should be a [lottie](https://github.com/airbnb/lottie-web) format JSON file.
+
+{% include lottie.html
+   lottie-path = "/assets/animations/contribute/formatting/bitcoin-design-seal.json"
+   width = 400
+   height = 400
+%}
+
+You can create lottie animations using software like Adobe AfterEffects.
+
+{% include lottie.html
+lottie-path = "/assets/animations/contribute/formatting/bitcoin-design-seal-miami-edition.json"
+width = 400
+height = 400
+%}
 
 ### Lists
 
