@@ -375,7 +375,7 @@ Since a [private key](#private-key) can be used to prove that the holder control
 One of the most important activities of the bitcoin network is to verify that signatures are valid.
 </div>
 
-### Signer
+### Signing device
 
 A signer, also known as a signing device or hardware wallet, is a device or app that is primarily used to sign bitcoin transactions. The reason a user would use a signer is to separate [wallet]({{ '/guide/glossary/wallet/' | relative_url }}) functionality from their private keys for added security. 
 
