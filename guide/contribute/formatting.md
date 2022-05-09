@@ -423,6 +423,7 @@ Animations can be used to help communicate complicated information, or simply to
    lottie-path = "/assets/animations/contribute/formatting/bitcoin-design-seal-miami-edition.json"
    alt-text = "Example animation"
    caption = "Bitcoin Design Community - Miami Edition"
+   controls = true
 %}
 ```
 {% endraw %}
@@ -431,6 +432,29 @@ Animations can be used to help communicate complicated information, or simply to
    lottie-path = "/assets/animations/contribute/formatting/bitcoin-design-seal-miami-edition.json"
    alt-text = "Example animation"
    caption = "Bitcoin Design Community - Miami Edition"
+   controls = true
+%}
+
+#### Animation controls
+
+By default, animations loop continuously. You can override this by setting `loop` to "false", and providing a play/pause toggle by setting `controls` to "true".
+
+{% raw %}
+```liquid
+{% include lottie.html
+   lottie-path = "/assets/animations/contribute/formatting/bitcoin-design-seal-miami-edition.json"
+   alt-text = "Example animation"
+   loop = false
+   controls = true
+%}
+```
+{% endraw %}
+
+{% include lottie.html
+   lottie-path = "/assets/animations/contribute/formatting/bitcoin-design-seal-miami-edition.json"
+   alt-text = "Example animation"
+   loop = false
+   controls = true
 %}
 
 #### Animation inline with content

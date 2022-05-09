@@ -521,7 +521,7 @@ ul.task-list {
 }
 
 figcaption {
-  &.modal-indicator {
+  &.modal-indicator, &.animation-controls {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -539,6 +539,21 @@ figcaption {
       margin-top: $spacing-unit / 2;
       margin-left: $spacing-unit / 4;
       cursor: pointer;
+    }
+  }
+
+  &.animation-controls {
+    cursor: pointer;
+
+    &.pause {
+      .play {
+        display: none;
+      }
+    }
+    &.play {
+      .pause {
+        display: none;
+      }
     }
   }
 }

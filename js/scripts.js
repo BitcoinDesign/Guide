@@ -447,15 +447,25 @@ function startLottie() {
     if(ref.lottieLoaded && ref.lottiePath) {
         // Delete old animations.
         stopLottie();
-
+        var i = 0;
         ref.lottiePath.forEach(function(item){
-            lottie.loadAnimation({
+            if(!item.dataset.name) item.dataset.name = 'animation' + i
+            var anim =lottie.loadAnimation({
                 container: item, // the dom element that will contain the animation
+                name: item.dataset.name,
                 renderer: 'svg',
-                loop: true,
+                loop: item.dataset.loop && item.dataset.loop === "false" ? false : true,
                 autoplay: true,
                 path: item.dataset.lottie // the path to the animation json
             });
+            i++;
+
+            anim.addEventListener('complete', function(e){
+                lottie.stop(item.dataset.name);
+                var btn = item.closest('figure').querySelector('.animation-controls');
+                btn.classList.remove('pause');
+                btn.classList.add('play');
+            })
         });
     }
 }
@@ -480,8 +490,37 @@ function findLotties(){
         lotties.forEach(function(lottie){
             if(lottie.dataset.lottie) ref.lottiePath.push(lottie);
         });
+
+        var lottieControls = document.querySelectorAll('.animation-controls');
+
+        if(lottieControls.length > 0) {
+            lottieControls.forEach(function(controls){
+                controls.addEventListener('click', function(e){
+                    var btn = e.target.closest('.animation-controls');
+                    var element = btn.closest('figure').querySelector('.lottie');
+                    if(btn.classList.contains('pause')) {
+                        btn.classList.remove('pause');
+                        btn.classList.add('play');
+                        toggleLottie('pause', element);
+                    }
+                    else {
+                        btn.classList.add('pause');
+                        btn.classList.remove('play');
+                        toggleLottie('play', element);
+                    }
+                });
+            });
+        }
+        else ref.lottiePath = null;
     }
     else ref.lottiePath = null;
+}
+
+function toggleLottie(action, element){
+    if(typeof lottie !== 'undefined') {
+        if(action === 'play') lottie.play(element.dataset.name);
+        else lottie.pause(element.dataset.name);
+    }
 }
 
 window.addEventListener("resize", function(event) {
