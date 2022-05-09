@@ -463,14 +463,6 @@ var applyTheme = function(themeIndex) {
         homeBannerImage.classList.add('lottie');
         homeBannerImage.dataset.lottie = theme.image.lottie;
         findLotties();
-
-        var lottieEvent = new CustomEvent('startlottie', {
-            detail: {
-                start: true
-            }
-        });
-
-        document.dispatchEvent(lottieEvent);
     }
     else {
         homeBannerImage.classList.remove('lottie');
@@ -491,10 +483,6 @@ function docReady(fn) {
 
 docReady(function() {
     var banner = document.getElementById('home-banner');
-
-    document.addEventListener('startlottie', function(e){
-        startLottie();
-    });
 
     if(banner) {
         applyTheme(0);

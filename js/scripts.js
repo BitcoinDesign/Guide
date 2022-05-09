@@ -511,6 +511,8 @@ function findLotties(){
                 });
             });
         }
+
+        startLottie();
     }
     else ref.lottiePath = null;
 }
@@ -540,7 +542,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   ref.lottieLoaded = false;
   ref.lottiePath = null;
   findLotties();
-  startLottie();
   updateNavAccessibility();
 
   if(ref.searchInput) {
