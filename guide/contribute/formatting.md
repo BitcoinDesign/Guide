@@ -395,31 +395,111 @@ A horizontal slide show of images. When the content is too wide for the screen, 
 
 ### Animations
 
+Animations can be used to help communicate complicated information, or simply to add some fun effects to a page. Your animation should be a [lottie](https://github.com/airbnb/lottie-web) format JSON file. You can create lottie animations using software like Adobe AfterEffects. Animations follow a similar code structure to images and can be formatted in many of the same ways.
+
+#### Animation extends beyond content width
+
 {% raw %}
 ```liquid
 {% include lottie.html
-   lottie-path = "/assets/animations/contribute/formatting/bitcoin-design-seal.json"
-   width = 400
-   height = 400
+   lottie-path = "/assets/animations/contribute/formatting/bitcoin-design-seal-miami-edition.json"
+   alt-text = "Example animation"
+   layout = "full-width"
 %}
 ```
 {% endraw %}
 
-Animations can be used to help communicate complicated information, or simply to add some fun effects to a page. Your animation should be a [lottie](https://github.com/airbnb/lottie-web) format JSON file.
+{% include lottie.html
+   lottie-path = "/assets/animations/contribute/formatting/bitcoin-design-seal-miami-edition.json"
+   alt-text = "Example animation"
+   layout = "full-width"
+%}
+
+#### Animation fits content width
+
+{% raw %}
+```liquid
+{% include lottie.html
+   lottie-path = "/assets/animations/contribute/formatting/bitcoin-design-seal-miami-edition.json"
+   alt-text = "Example animation"
+   caption = "Bitcoin Design Community - Miami Edition"
+%}
+```
+{% endraw %}
+
+{% include lottie.html
+   lottie-path = "/assets/animations/contribute/formatting/bitcoin-design-seal-miami-edition.json"
+   alt-text = "Example animation"
+   caption = "Bitcoin Design Community - Miami Edition"
+%}
+
+#### Animation inline with content
+
+Animations can also be inline with the content. This one is inline on desktop, but takes the full screen width on mobile.
+
+{% raw %}
+```liquid
+<div class="center" markdown="1">
 
 {% include lottie.html
    lottie-path = "/assets/animations/contribute/formatting/bitcoin-design-seal.json"
+   alt-text = "Example animation"
    width = 400
-   height = 400
+   layout = "float-left-desktop"
 %}
 
-You can create lottie animations using software like Adobe AfterEffects.
+Bitcoin ipsum dolor sit amet. Peer-to-peer segwit mempool sats SHA-256, transaction satoshis halvening double-spend problem. Satoshi Nakamoto, peer-to-peer halvening hash, block height SHA-256 address Bitcoin Improvement Proposal full node? Full node, satoshis double-spend problem bitcoin soft fork! Satoshis UTXO double-spend problem halvening nonce private key halvening. Genesis block sats nonce, outputs, halvening hard fork block height halvening? Proof-of-work double-spend problem hash nonce SHA-256 sats, hash! Mining transaction, Merkle Tree, satoshis wallet.
+
+</div>
+```
+{% endraw %}
+
+<div class="center" markdown="1">
 
 {% include lottie.html
-lottie-path = "/assets/animations/contribute/formatting/bitcoin-design-seal-miami-edition.json"
-width = 400
-height = 400
+   lottie-path = "/assets/animations/contribute/formatting/bitcoin-design-seal.json"
+   alt-text = "Example animation"
+   width = 400
+   layout = "float-left-desktop"
 %}
+
+Bitcoin ipsum dolor sit amet. Peer-to-peer segwit mempool sats SHA-256, transaction satoshis halvening double-spend problem. Satoshi Nakamoto, peer-to-peer halvening hash, block height SHA-256 address Bitcoin Improvement Proposal full node? Full node, satoshis double-spend problem bitcoin soft fork! Satoshis UTXO double-spend problem halvening nonce private key halvening. Genesis block sats nonce, outputs, halvening hard fork block height halvening? Proof-of-work double-spend problem hash nonce SHA-256 sats, hash! Mining transaction, Merkle Tree, satoshis wallet.
+
+</div>
+
+#### Animation inline on mobile and desktop
+
+This next animation is inline on both mobile and desktop.
+
+{% raw %}
+```liquid
+<div class="center" markdown="1">
+
+{% include lottie.html
+   lottie-path = "/assets/animations/contribute/formatting/bitcoin-design-seal.json"
+   alt-text = "Example animation"
+   width = 148
+   layout = "float-left"
+%}
+
+Bitcoin ipsum dolor sit amet. Peer-to-peer segwit mempool sats SHA-256, transaction satoshis halvening double-spend problem. Satoshi Nakamoto, peer-to-peer halvening hash, block height SHA-256 address Bitcoin Improvement Proposal full node? Full node, satoshis double-spend problem bitcoin soft fork! Satoshis UTXO double-spend problem halvening nonce private key halvening. Genesis block sats nonce, outputs, halvening hard fork block height halvening? Proof-of-work double-spend problem hash nonce SHA-256 sats, hash! Mining transaction, Merkle Tree, satoshis wallet.
+
+</div>
+```
+{% endraw %}
+
+<div class="center" markdown="1">
+
+{% include lottie.html
+   lottie-path = "/assets/animations/contribute/formatting/bitcoin-design-seal.json"
+   alt-text = "Example animation"
+   width = 148
+   layout = "float-left"
+%}
+
+Bitcoin ipsum dolor sit amet. Public key, peer-to-peer miner satoshis Bitcoin Improvement Proposal hashrate, inputs, block height. Cryptocurrency transaction cryptocurrency hard fork nonce consensus inputs. Wallet blockchain satoshis, private key public key Satoshi Nakamoto hash. Cryptocurrency soft fork UTXO soft fork.
+
+</div>
 
 ### Lists
 
