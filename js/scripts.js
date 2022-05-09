@@ -511,7 +511,6 @@ function findLotties(){
                 });
             });
         }
-        else ref.lottiePath = null;
     }
     else ref.lottiePath = null;
 }
