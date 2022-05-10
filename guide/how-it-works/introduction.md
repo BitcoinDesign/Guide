@@ -38,7 +38,7 @@ A primer on liquidity in the lightning network.
 
 ---
 
-### [Lightning service providers]({{ '/guide/how-it-works/lightning-service-providers/' | relative_url }})
+### [Lightning services]({{ '/guide/how-it-works/lightning-services/' | relative_url }})
 
 Common user experience problems of the Lightning network that can be resolved by third-party service providers.
 

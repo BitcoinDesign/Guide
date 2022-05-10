@@ -310,11 +310,11 @@ By combining the business incentives of an LSP, clever engineering, and good des
 
 ---
 
-Next, let's look at how [lightning service providers]({{ '/guide/how-it-works/lightning-service-providers/' | relative_url }}) work.
+Next, let's look at how [lightning-services]({{ '/guide/how-it-works/lightning-services/' | relative_url }}) work.
 
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/coin-selection/"
    previousName = "Coin selection"
-   nextUrl = "/guide/how-it-works/lightning-service-providers/"
-   nextName = "Lightning service providers"
+   nextUrl = "/guide/how-it-works/lightning-services/"
+   nextName = "Lightning services"
 %}
