@@ -34,7 +34,7 @@ Illustration sources: https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id
 
 [Scaling]({{ '/guide/getting-started/technology-primer/#do-all-transactions-have-to-be-this-secure' | relative_url }}) bitcoin to billions of people non-custodially with the lightning network creates many new usability issues. Including liquidity and uptime requirements, channel management, routing, and more complex backups. Lightning services offered by third-parties aim to solve these issues.
 
-In this section, we cover two categories of lightning services. Lightning service providers (LSPs), which focus on onboarding and providing connectivity to lightning users, and [Lightning wallet servers]({{ '/guide/how-it-works/lightning-services/#lightning-wallet-servers' | relative_url }}), which provide additional services not relating to connectivity.
+In this section, we cover two categories of lightning services. Lightning service providers (LSPs), which focus on onboarding and providing connectivity to lightning users, and [Lightning wallet servers]({{ '/guide/how-it-works/lightning-services/#what-are-lightning-wallet-servers' | relative_url }}), which provide additional services not relating to connectivity.
 
 ## What is a Lightning service provider?
 
@@ -44,7 +44,7 @@ They do this by being well connected in the network, opening channels, and offer
 
 You can learn more about how liquidity works on our [liquidity]({{ '/guide/how-it-works/liquidity/' | relative_url }}) page.
 
-Some LSPs may also offer channel management, routing, backups and [other services]({{ '/guide/how-it-works/lightning-services/#lightning-wallet-servers' | relative_url }}), but these are not limited to being offered by LSPs.
+Some LSPs may also offer channel management, routing, backups and [other services]({{ '/guide/how-it-works/lightning-services/#what-are-lightning-wallet-servers' | relative_url }}), but these are not limited to being offered by LSPs.
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/lightning-services/Inbound-liquidity-as-a-service.png"
@@ -84,7 +84,7 @@ A [Collaborative fund](https://bitcoinops.org/en/topics/dual-funding), previousl
 
 {% include tip/open.html color="blue" icon="info" label="Other options" %}
 
-A channel with bitcoin on both sides of the channel can also be achieved by using [swaps]({{ '/guide/how-it-works/lightning-services/#submarine-swap' | relative_url }}), or a trusted way by coming directly from the LSP.
+A channel with bitcoin on both sides of the channel can also be achieved by using [swaps]({{ '/guide/how-it-works/lightning-services/#swaps' | relative_url }}), or a trusted way by coming directly from the LSP.
 
 {% include tip/close.html %}
 
@@ -170,7 +170,7 @@ As mentioned above, LSPs makes it easy for users to connect to and use lightning
 
 If your application uses an LSP ensure users can switch, opt out, or use multiple LSPs. This ensures they have choice and can choose the LSPs that have the trade offs they are comfortable with.
 
-It also prevents everyone using the same LSP, improving [decentralization](({{ '/guide/getting-started/principles/#decentralization' | relative_url }})).
+It also prevents everyone using the same LSP, improving [decentralization]({{ '/guide/getting-started/principles/#decentralization' | relative_url }}).
 
 {% include tip/close.html %}
 
