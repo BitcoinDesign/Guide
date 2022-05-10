@@ -34,7 +34,7 @@ Illustration sources: https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id
 
 [Scaling]({{ '/guide/getting-started/technology-primer/#do-all-transactions-have-to-be-this-secure' | relative_url }}) bitcoin to billions of people non-custodially with the lightning network creates many new usability issues. Including liquidity and uptime requirements, channel management, routing, and more complex backups. Lightning services offered by third-parties aim to solve these issues.
 
-In this section, we cover two categories of lightning services. Lightning service providers (LSPs), which focus on onboarding and providing connectivity to lightning users, and [Lightning wallet servers]({{ '/guide/how-it-works/lightning-services/#what-are-lightning-wallet-servers' | relative_url }}), which provide additional services not relating to connectivity.
+In this section, we cover two categories of lightning services. Lightning service providers (LSPs), which focus on onboarding and providing connectivity to lightning users, and [lightning wallet servers]({{ '/guide/how-it-works/lightning-services/#what-are-lightning-wallet-servers' | relative_url }}), which provide additional services not relating to connectivity.
 
 ## What is a Lightning service provider?
 
