@@ -111,6 +111,10 @@ The described process is part of bitcoins hard-coded monetary policy, which foll
 
 A standardized technical document format for the Lightning network protocol specifications. They are hosted on Github [here](https://github.com/lightningnetwork/lightning-rfc). The various Lightning implementations must adhere to the BOLTs in order to be interoperable. However, some Lightning implementations may have features that are not defined in BOLTs.
 
+### Channel Reserve
+
+A channel reserve works as a type of insurance against theft. If a peer tries to cheat in a channel then the other party can submit a penalty transaction. This transaction will then take away all the funds from the other user's channel. Having the channel reserve in place ensures that there are funds available to take away should this occur.
+
 ### Child-pays-for-parent (CPFP)
 
 Allows the recipient of a pending transaction to speed up confirmation. They create a new transaction (child) spending the to-be-received bitcoin with a higher fee than the original transaction (parent). This signals to miners to process both transactions, for which they will be rewarded with the higher fee.
