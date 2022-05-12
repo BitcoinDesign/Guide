@@ -169,11 +169,11 @@ https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=612%3A5994
 
 We don't just chat about design. We also actively improve design in the bitcoin ecosystem. Projects launched by community members often focus on creating design resources.
 
-With collaborations, we try to help other bitcoin projects improve their products' design and user experience. For more details, see our [Collaboration](https://github.com/BitcoinDesign/Meta/blob/master/Collaboration.md) and [Project](https://github.com/BitcoinDesign/Meta/blob/master/Projects.md) documents. If you are interested in getting involved, reach out directly to the projects below, or reach out in our [Slack]({{ site.slack_invite_url }}).
+With collaborations, some of us try to help other bitcoin projects improve their products' design and user experience. For more details, see our [Collaboration](https://github.com/BitcoinDesign/Meta/blob/master/Collaboration.md) and [Project](https://github.com/BitcoinDesign/Meta/blob/master/Projects.md) documents. If you are interested in getting involved, reach out directly to the projects below, or reach out in our [Slack]({{ site.slack_invite_url }}).
 
 ## Community projects
 
-These are design projects we have initiated ourselves.
+These are some of the design projects we have initiated ourselves.
 
 <div class="project-grid">
 {% for item in page.projects %}
@@ -194,7 +194,7 @@ These are design projects we have initiated ourselves.
 
 ## Collaborations
 
-For a full list of current and past collaborations, see our [collaboration board](https://github.com/BitcoinDesign/Meta/projects/2).
+For a more complete list of current and past collaborations, see our [collaboration board](https://github.com/BitcoinDesign/Meta/projects/2).
 
 <div class="project-grid">
 {% for item in page.collaborations %}
@@ -212,3 +212,7 @@ For a full list of current and past collaborations, see our [collaboration board
       </div>
 {% endfor %}
 </div>
+
+#### Adding a project or collaboration
+
+The Bitcoin Design Community is intentionally only loosely organized. This makes it difficult to define specific rules of what is a community effort and what isn't. Best approach is to get consensus by asking in the [#general](https://bitcoindesign.slack.com/archives/C014J9ZKXB4) channel in Slack or opening an issue in the [meta repo](https://github.com/BitcoinDesign/Meta/issues) on Github.
