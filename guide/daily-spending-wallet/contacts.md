@@ -38,7 +38,7 @@ imagesSupportedFormats:
       caption: Particular properties of address types can be pointed out right away.
     - file: manual-add-contact-with-on-chain-address
       alt: A contact with an on-chain address assigned
-      caption: A contact with an on-chain address attached. Once a payment is made to the address, it disappears from this list.
+      caption: A contact with an on-chain address attached. Once a payment is made to the address, it disappears from this list as it should only be used once for best privacy.
     - file: manual-add-contact-add-address-xpub-toggle
       alt: Add address screen with a warning users need to accept
       caption: You may want to support certain address formats to give users flexibility, but ensure they understand the implications.
@@ -167,7 +167,7 @@ Whether we’re sending emails, physical mail, or following someone on social me
 
 Invoices, node IDs and other transaction endpoints in bitcoin and Lightning are highly unintuitive. Abstracting them via a contact list can create a much smoother user experience. There are many [payment request formats]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }}), each with unique properties and varying levels of maturity and adoption, requiring unique design solutions. This page uses the more approachable term "address", along with various UI techniques, to abstract these complexities for users.
 
-Let's go over common user interactions around contacts. This will illustrate how such a feature could work, and helps explain the underlying design problems and decisions.
+Let's go over common user interactions around managing contacts. This will illustrate how such a feature could work, and helps explain the underlying design problems and decisions.
 
 ---
 
@@ -186,12 +186,6 @@ The most basic interaction is that a user manually adds a contact by entering th
 
 You may choose to require [user verification]({{ '/guide/daily-spending-wallet/security/#preventing-unwanted-access' | relative_url }}) (like PIN entry) when adding or updating contacts. This reduces the risk that contact information is tampered with and payments are sent to wrong addresses.
 
-### Supporting various payment request formats
-
-Based on your use case, your application may choose to only support certain payment request formats. It should still recognize all formats, and provide the user with appropriate feedback. You may also choose to add warnings before permitting use of certain formats if there are privacy and security risks the user should be aware of.
-
-{% include image-gallery.html pages = page.imagesSupportedFormats %}
-
 ### Contact editing
 
 The contacts screen should offer various features for editing and organization.
@@ -200,21 +194,21 @@ The contacts screen should offer various features for editing and organization.
 
 ### Importing an address
 
-In this scenario, the user has copied a Lightning address to the clipboard and opened the app. The clipboard is automatically scanned, the app identifies the address and offers the user appropriate options. Here, the user adds the address as a new contact.
+This scenario can be initiated by copying a Lightning address to the clipboard, scanning a QR code, or tapping a payment link (see [payment entry points]({{ '/guide/daily-spending-wallet/sending/#payment-entry-points' | relative_url }})). An address is passed into the application and, where it's recognized and appropriate options are shown to the user. In the example below, the user adds the address as a new contact.
 
 {% include image-gallery.html pages = page.imagesImportAddress %}
 
-This flow can also be initiated by scanning a QR code or tapping a payment link. For more, see [Sending bitcoin &middot; Payment entry points]({{ '/guide/daily-spending-wallet/sending/#payment-entry-points' | relative_url }}).
-
 ### Importing an invoice
 
-Here, the user has scanned a payment request and assigns a contact to the payment.
+This sequence is similar to the one above. The difference is that a payment request was passed into the application, which contains different data and also includes a specific user action, and therefore requires different user flows. The one below shows how a user has scanned a payment request and assigns a contact to the payment.
 
-Some payment request formats may include an address that can [receive daily-spending-wallet repeatedly]({{ '/guide/daily-spending-wallet/requesting/#reusable-payment-requests' | relative_url }}). In this case, the address is added to the contact for future use. For [single use payment requests]({{ '/guide/daily-spending-wallet/requesting/#single-use-payment-requests' | relative_url }}), only the payment is linked.
+Some payment request formats may include an address that can [receive repeatedly]({{ '/guide/daily-spending-wallet/requesting/#reusable-payment-requests' | relative_url }}). In this case, the address is added to the contact for future use. For [single use payment requests]({{ '/guide/daily-spending-wallet/requesting/#single-use-payment-requests' | relative_url }}), only the payment is linked.
 
 Invoices may also contain recipient names. These can be used to suggest the name for a new contact to the user. Names can be spoofed, so they should not be automatically assigned without user approval.
 
 {% include image-gallery.html pages = page.imagesPayInvoice %}
+
+Note that automating matching of contacts to payment requests is a sensitive matter. If it cannot be based on unspoofable identifiers, then users should have to review and approve the match.
 
 ### Sending from the home screen
 
@@ -240,11 +234,19 @@ Most contact books include a special card for the user. It is typically shown at
 
 {% include image-gallery.html pages = page.imagesOwner %}
 
----
+### Using contacts in context
 
 Contacts are closely intertwined with [sending]({{ '/guide/daily-spending-wallet/sending/' | relative_url }}), [requesting]({{ '/guide/daily-spending-wallet/requesting/' | relative_url }}), and the [activity]({{ '/guide/daily-spending-wallet/activity/' | relative_url }}) screen. When designing these user flows, pay close attention to how they connect. The less convenient it is for users to assign contacts, the less likely they are to use this feature and the higher the chance that they are exposed to the complexities of the various payment request formats.
 
 Your application should also try to provide convenient backup for contacts, for example, via [automatic cloud backup]({{ '/guide/daily-spending-wallet/backup-and-recovery/cloud-backup/' | relative_url }}).
+
+### Supporting various payment request formats
+
+Based on your use case, your application may choose to only support certain payment request formats. It should still recognize all formats, and provide the user with appropriate feedback. You may also choose to add warnings before permitting use of certain formats if there are privacy and security risks the user should be aware of.
+
+Below are different examples of how you can communicate around the type of support your application provides for different formats.
+
+{% include image-gallery.html pages = page.imagesSupportedFormats %}
 
 ---
 
