@@ -257,7 +257,7 @@ A [Lightning address](https://lightningaddress.com/) LWS service gives users a h
 
 ### Receive payments offline
 
-Non-custodial lightning wallets need to be online to receive payments. [Daily spending wallets]({{ '/guide/daily-spending-wallet/' | relative_url }}) in particular are regularly offline so receiving payments can be difficult.
+Non-custodial lightning wallets need to be online to receive payments. [Daily spending wallets]({{ '/guide/daily-spending-wallet/' | relative_url }}), in particular, are regularly offline, so receiving payments can be difficult.
 
 LWSs can hold onto a payment (without assuming custody) and forward it to the user once they come online. A product that offers this for users is [Greenlight](https://blockstream.com/lightning/greenlight/).
 
