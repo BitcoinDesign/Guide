@@ -44,7 +44,7 @@ This section covers two categories of lightning services: Lightning service prov
 
 ## What is a Lightning service provider?
 
-Similar to how Internet service providers (ISPs) help users connect to and use the internet, Lightning service providers (LSPs) help users connect to and use lightning [non-custodially]({{ '/guide/getting-started/principles/#self-custody' | relative_url }}).
+Internet service providers (ISPs) help users connect to the internet. Similarly, Lightning service providers (LSPs) help users connect to the lightning network while maintaining [self-custody]({{ '/guide/getting-started/principles/#self-custody' | relative_url }}).
 
 They do this by being well connected in the network, opening channels, and offering inbound liquidity to users. They often charge a fee for their services.
 
