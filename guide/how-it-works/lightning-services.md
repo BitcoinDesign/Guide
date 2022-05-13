@@ -215,7 +215,7 @@ Below are some LWS services and the user friction points they solve.
 
 ### Backups
 
-A lightning wallet require a [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) and up-to-date payment channel states to be [backed up]({{ '/guide/daily-spending-wallet/backup-and-recovery/landing-page/' | relative_url }}).
+[Backing up]({{ '/guide/daily-spending-wallet/backup-and-recovery/landing-page/' | relative_url }}) a lightning wallet requires a [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) and up-to-date payment channel states.
 
 Payment channel states need to be backed up each time a payment is received or sent. Users can make these backups, though if done incorrectly or stored insecurely, users are at risk of losing their bitcoin.
 
