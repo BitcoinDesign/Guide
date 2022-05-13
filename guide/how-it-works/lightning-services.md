@@ -40,7 +40,7 @@ Some of those issues include:
 - complex backups
 Lightning services offered by third-parties aim to solve these issues.
 
-In this section, we cover two categories of lightning services. Lightning service providers (LSPs), which focus on onboarding and providing connectivity to lightning users, and [lightning wallet servers]({{ '/guide/how-it-works/lightning-services/#what-are-lightning-wallet-servers' | relative_url }}), which provide additional services not relating to connectivity.
+This section covers two categories of lightning services: Lightning service providers (LSPs), which focus on onboarding and providing connectivity to lightning users, and [lightning wallet servers]({{ '/guide/how-it-works/lightning-services/#what-are-lightning-wallet-servers' | relative_url }}), which provide additional services not relating to connectivity.
 
 ## What is a Lightning service provider?
 
