@@ -86,7 +86,7 @@ Below we dive into the different ways an LSP can open a channel and the unique u
 
 Channels are usually only funded on one side, meaning that initially, one party won't be able to send, and the other won't be able to receive.
 
-A [Collaborative fund](https://bitcoinops.org/en/topics/dual-funding), previously called dual funding, allows both parties to contribute bitcoin to the channel. This means both parties can send and receive once the channel is open.
+A [collaborative fund](https://bitcoinops.org/en/topics/dual-funding), previously called dual funding, allows both parties to contribute bitcoin to the channel. This means both parties can send and receive once the channel is open.
 
 {% include tip/open.html color="blue" icon="info" label="Other options" %}
 
