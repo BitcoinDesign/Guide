@@ -219,7 +219,7 @@ Below are some LWS services and the user friction points they solve.
 
 Payment channel states need to be backed up each time a payment is received or sent. Users can make these backups, though if done incorrectly or stored insecurely, users are at risk of losing their bitcoin.
 
-An LWS backup service can automatically backups and store a users channel states each time they are updated. These backups should be encrypted by the user to prevent the LWS having custody.
+An LWS backup service can automatically back up and store a user's channel states whenever they are updated. Giving the user the option to encrypt their backup prevents the LWS from stealing funds.
 
 {% include tip/open.html color="blue" icon="info" label="Non-freezability" %}
 
