@@ -78,7 +78,7 @@ Finding someone offering inbound liquidity and opening a channel with them can b
    height = 348
 %}
 
-LSPs can alter how they open channels for to achieve unique user experiences. These can come with additional trust or privacy trade offs, so users should be made aware of these, and be able to opt out if used.
+LSPs can alter how they open channels to achieve unique user experiences. These can come with additional trust or privacy trade-offs, so users should be made aware of these and be able to opt out if used.
 
 Below we dive into the different ways an LSP can open a channel and the unique user experiences they can offer.
 
