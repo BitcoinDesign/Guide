@@ -297,7 +297,7 @@ A [watchtower](https://bitcoinops.org/en/topics/watchtowers/) LWS service monito
 
 {% include tip/open.html color="blue" icon="info" label="Using watchtowers" %}
 
-A watchtower should be a different user than the one the user has channels with, such as an LSP, as they have nothing at stake to attempt to cheat the user.
+It's best practice to use a watchtower that is not controlled by the user's LSP. This way, the watchtower has no incentive to cheat the user.
 
 Multiple watchtowers can be used to limit the chances a users counterparty will collude with the watchtower.
 
