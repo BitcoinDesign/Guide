@@ -174,7 +174,7 @@ As mentioned above, LSPs makes it easy for users to connect to and use lightning
 
 {% include tip/open.html color="blue" icon="info" label="Avoid LSP lock-in" %}
 
-If your application uses an LSP ensure users can switch, opt out, or use multiple LSPs. This ensures they have choice and can choose the LSPs that have the trade offs they are comfortable with.
+If your application uses an LSP, ensure users can switch, opt-out, or use multiple LSPs. This ensures they can choose the LSPs that have trade-offs they are comfortable with.
 
 It also prevents everyone using the same LSP, improving [decentralization]({{ '/guide/getting-started/principles/#decentralization' | relative_url }}).
 
