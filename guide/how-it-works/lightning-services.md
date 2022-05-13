@@ -32,7 +32,7 @@ Illustration sources: https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id
 
 # Lightning services
 
-[Scaling]({{ '/guide/getting-started/technology-primer/#do-all-transactions-have-to-be-this-secure' | relative_url }}) bitcoin to billions of people non-custodially with the lightning network creates many new usability issues. 
+[Scaling]({{ '/guide/getting-started/technology-primer/#do-all-transactions-have-to-be-this-secure' | relative_url }}) bitcoin to billions of self-custodial users with the lightning network creates many new usability issues. 
 Some of those issues include:
 - liquidity and uptime requirements
 - channel management
