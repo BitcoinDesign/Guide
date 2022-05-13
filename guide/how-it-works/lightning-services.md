@@ -108,7 +108,7 @@ A channel with bitcoin on both sides of the channel can also be achieved by usin
 
 If a user tries to receive a payment without enough inbound liquidity, the payment will fail.
 
-On-demand liquidity is when an LSP automatically opens a new channel containing inbound liquidity to the user when an incoming payment is higher than the users current inbound liquidity.
+On-demand liquidity is when an LSP automatically opens a new channel containing inbound liquidity to the user when an incoming payment is higher than the user's current inbound liquidity.
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/lightning-services/On-demand-channel.png"
