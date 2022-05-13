@@ -181,7 +181,7 @@ LSPs makes it easy for users to connect to and use lightning by offering inbound
 
 If your application uses an LSP, ensure users can switch, opt-out, or use multiple LSPs. This ensures they can choose the LSPs that have trade-offs they are comfortable with.
 
-It also prevents everyone using the same LSP, improving [decentralization]({{ '/guide/getting-started/principles/#decentralization' | relative_url }}).
+It also prevents everyone from using the same LSP, improving [decentralization]({{ '/guide/getting-started/principles/#decentralization' | relative_url }}).
 
 {% include tip/close.html %}
 
