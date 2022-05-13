@@ -199,7 +199,7 @@ It also prevents everyone from using the same LSP, improving [decentralization](
 
 Once a user is connected to the lightning network, likely through an LSP, lightning wallet servers (LWS) offer services that make using lightning easier for users. LSPs sometimes offer LWS services as part of their offering but this is not exclusive to LSPs.
 
-LWSs act as trust-minimized third-parties, so when possible users should be able to opt-out and operate their lightning wallet manually.
+LWSs act as trust-minimized third parties, so when possible, users should be able to opt out and operate their lightning wallet manually.
 
 Below are some LWS services and the user friction points they solve.
 
