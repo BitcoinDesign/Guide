@@ -140,7 +140,7 @@ LSPs will need to provide enough inbound liquidity to forward the payment to the
 
 Opening a payment channel first requires an on-chain transaction to be confirmed, which leaves users having to wait to spend the bitcoin in their channel.
 
-A Zero-confirmation channel allows users to use the channel without it being confirmed on chain. This makes it faster to onboard users, though comes with trust that the LSP will not cancel the transaction after payments are made.
+A zero-confirmation channel allows users to use the channel without it being confirmed on chain. This makes it faster to onboard users, though comes with trust that the LSP will not cancel the transaction after payments are made.
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/lightning-services/Spend-unconfirmed.png"
