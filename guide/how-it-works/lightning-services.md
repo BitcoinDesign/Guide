@@ -106,7 +106,7 @@ A channel with bitcoin on both sides of the channel can also be achieved by usin
 
 ### On-demand liquidity
 
-A user attempting to receive a payment without enough inbound liquidity will result in a failed payment.
+If a user tries to receive a payment without enough inbound liquidity, the payment will fail.
 
 On-demand liquidity is when an LSP automatically opens a new channel containing inbound liquidity to the user when an incoming payment is higher than the users current inbound liquidity.
 
