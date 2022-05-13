@@ -254,7 +254,7 @@ A [Lightning address](https://lightningaddress.com/) LWS service gives users a h
 
 Non-custodial lightning wallets need to be online to receive payments. [Daily spending wallets]({{ '/guide/daily-spending-wallet/' | relative_url }}) in particular are regularly offline so receiving payments can be difficult.
 
-LWS can act as third parties that non-custodially hold onto a payment and forward it to the user once they come online. A product that offers this for users is [Greenlight](https://blockstream.com/lightning/greenlight/).
+LWSs can hold onto a payment (without assuming custody) and forward it to the user once they come online. A product that offers this for users is [Greenlight](https://blockstream.com/lightning/greenlight/).
 
 This service is usually required to be offered alongside an LSP. Read more about this [here](https://medium.com/breez-technology/get-ready-for-a-fresh-breez-multiple-apps-one-node-optimal-ux-519c4daf2536).
 
