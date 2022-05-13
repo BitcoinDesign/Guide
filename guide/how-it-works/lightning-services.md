@@ -170,7 +170,12 @@ An example is combining a collaborative fund with a zero-confirmation channel op
 
 ## Where do LSPs offer this service?
 
-As mentioned above, LSPs makes it easy for users to connect to and use lightning by offering inbound liquidity as a service. There are various ways LSPs offer this service which range in complexity. From being in-built into wallets like [Breez](https://breez.technology/), web portals like [Blocktank](https://synonym.to/blocktank/), P2P marketplaces like [Magma](https://amboss.space/magma), to protocol level methods such as [liquidity advertisements](https://bitcoinops.org/en/topics/liquidity-advertisements/).
+LSPs makes it easy for users to connect to and use lightning by offering inbound liquidity . There are various ways LSPs offer this service which range in complexity. 
+
+- Built-in to wallets like [Breez](https://breez.technology/)
+- Web portals like [Blocktank](https://synonym.to/blocktank/)
+- P2P marketplaces like [Magma](https://amboss.space/magma)
+- Protocol level methods like [liquidity advertisements](https://bitcoinops.org/en/topics/liquidity-advertisements/)
 
 {% include tip/open.html color="blue" icon="info" label="Avoid LSP lock-in" %}
 
