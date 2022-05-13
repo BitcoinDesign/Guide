@@ -64,7 +64,7 @@ Some LSPs may also offer channel management, routing, backups, and [other servic
 
 ## How do LSPs connect users to lightning?
 
-To connect to and use the lightning non-custodially, a user needs a [payment channel]({{ '/guide/getting-started/technology-primer/#what-is-a-payment-channel' | relative_url }}). To send payments, this channel needs outbound liquidity, which the user usually provides. And to receive payments, this channel needs inbound liquidity, which needs to be provided by someone else.
+To use lightning, a self-custodial user needs at least one  [payment channel]({{ '/guide/getting-started/technology-primer/#what-is-a-payment-channel' | relative_url }}). To send payments, this channel needs outbound liquidity, which the user usually provides. And to receive payments, this channel needs inbound liquidity, which needs to be provided by someone else.
 
 Finding someone offering inbound liquidity and opening a channel with them can be difficult, especially for new users. LSPs provide inbound liquidity and open channels for users.
 
