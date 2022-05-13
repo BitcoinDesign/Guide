@@ -50,7 +50,7 @@ They do this by being well connected in the network, opening channels, and offer
 
 You can learn more about how liquidity works on our [liquidity]({{ '/guide/how-it-works/liquidity/' | relative_url }}) page.
 
-Some LSPs may also offer channel management, routing, backups and [other services]({{ '/guide/how-it-works/lightning-services/#what-are-lightning-wallet-servers' | relative_url }}), but these are not limited to being offered by LSPs.
+Some LSPs may also offer channel management, routing, backups, and [other services]({{ '/guide/how-it-works/lightning-services/#what-are-lightning-wallet-servers' | relative_url }}), but these are not limited to being offered by LSPs.
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/lightning-services/Inbound-liquidity-as-a-service.png"
