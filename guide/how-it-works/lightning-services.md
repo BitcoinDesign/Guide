@@ -32,12 +32,13 @@ Illustration sources: https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id
 
 # Lightning services
 
-[Scaling]({{ '/guide/getting-started/technology-primer/#do-all-transactions-have-to-be-this-secure' | relative_url }}) bitcoin to billions of self-custodial users with the lightning network creates many new usability issues. 
+[Scaling]({{ '/guide/getting-started/technology-primer/#do-all-transactions-have-to-be-this-secure' | relative_url }}) bitcoin to billions of self-custodial users with the lightning network creates many new usability issues.
 Some of those issues include:
 - liquidity and uptime requirements
 - channel management
-- routing 
+- routing
 - complex backups
+
 Lightning services offered by third-parties aim to solve these issues.
 
 This section covers two categories of lightning services: Lightning service providers (LSPs), which focus on onboarding and providing connectivity to lightning users, and [lightning wallet servers]({{ '/guide/how-it-works/lightning-services/#what-are-lightning-wallet-servers' | relative_url }}), which provide additional services not relating to connectivity.
@@ -57,7 +58,7 @@ Some LSPs may also offer channel management, routing, backups, and [other servic
    retina = "/assets/images/guide/how-it-works/lightning-services/Inbound-liquidity-as-a-service@2x.png"
    mobile = "/assets/images/guide/how-it-works/lightning-services/Inbound-liquidity-as-a-service-mobile.png"
    mobileRetina = "/assets/images/guide/how-it-works/lightning-services/Inbound-liquidity-as-a-service-mobile@2x.png"
-   alt-text = "Graphic depicting how LSPs offer liquidity as a service"
+   alt-text = "How LSPs offer liquidity as a service"
    width = 800
    height = 348
 %}
@@ -73,7 +74,7 @@ Finding someone offering inbound liquidity and opening a channel with them can b
    retina = "/assets/images/guide/how-it-works/lightning-services/How-is-service-offered@2x.png"
    mobile = "/assets/images/guide/how-it-works/lightning-services/How-is-service-offered-mobile.png"
    mobileRetina = "/assets/images/guide/how-it-works/lightning-services/How-is-service-offered-mobile@2x.png"
-   alt-text = "Graphic depicting how LSPs offer inbound liquidity as a service to users"
+   alt-text = "How LSPs offer inbound liquidity as a service to users"
    width = 800
    height = 348
 %}
@@ -88,18 +89,12 @@ Channels are usually only funded on one side, meaning that initially, one party 
 
 A [collaborative fund](https://bitcoinops.org/en/topics/dual-funding), previously called dual funding, allows both parties to contribute bitcoin to the channel. This means both parties can send and receive once the channel is open.
 
-{% include tip/open.html color="blue" icon="info" label="Other options" %}
-
-A channel with bitcoin on both sides of the channel can also be achieved by using [swaps]({{ '/guide/how-it-works/lightning-services/#swaps' | relative_url }}), or a trusted way by coming directly from the LSP.
-
-{% include tip/close.html %}
-
 {% include picture.html
    image = "/assets/images/guide/how-it-works/lightning-services/Collaborative-funding.png"
    retina = "/assets/images/guide/how-it-works/lightning-services/Collaborative-funding@2x.png"
    mobile = "/assets/images/guide/how-it-works/lightning-services/Collaborative-funding-mobile.png"
    mobileRetina = "/assets/images/guide/how-it-works/lightning-services/Collaborative-funding-mobile@2x.png"
-   alt-text = "Graphic depicting a collaborative fund of a lightning payment channel"
+   alt-text = "How a collaborative fund of a lightning payment channel is opened by an LSP"
    width = 800
    height = 348
 %}
@@ -108,14 +103,14 @@ A channel with bitcoin on both sides of the channel can also be achieved by usin
 
 If a user tries to receive a payment without enough inbound liquidity, the payment will fail.
 
-On-demand liquidity is when an LSP automatically opens a new channel containing inbound liquidity to the user when an incoming payment is higher than the user's current inbound liquidity.
+In these situations, an LSP can fix this with on-demand liquidity. They open a new channel with the user, giving the user enough inbound liquidity to receive the payment.
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/lightning-services/On-demand-channel.png"
    retina = "/assets/images/guide/how-it-works/lightning-services/On-demand-channel@2x.png"
    mobile = "/assets/images/guide/how-it-works/lightning-services/On-demand-channel-mobile.png"
    mobileRetina = "/assets/images/guide/how-it-works/lightning-services/On-demand-channel-mobile@2x.png"
-   alt-text = "Graphic depicting how an LSP opens a channel with inbound liquidity on-demand for users"
+   alt-text = "How an LSP opens a channel with inbound liquidity on-demand for users"
    width = 800
    height = 348
 %}
@@ -131,7 +126,7 @@ LSPs will need to provide enough inbound liquidity to forward the payment to the
    retina = "/assets/images/guide/how-it-works/lightning-services/OnChain-funding@2x.png"
    mobile = "/assets/images/guide/how-it-works/lightning-services/OnChain-funding-mobile.png"
    mobileRetina = "/assets/images/guide/how-it-works/lightning-services/OnChain-funding-mobile@2x.png"
-   alt-text = "Graphic depicting an LSP conducting a swap that opens a new payment channel to a user"
+   alt-text = "An LSP conducting a swap that opens a new payment channel to a user"
    width = 800
    height = 348
 %}
@@ -147,7 +142,7 @@ A zero-confirmation channel allows users to use the channel without it being con
    retina = "/assets/images/guide/how-it-works/lightning-services/Spend-unconfirmed@2x.png"
    mobile = "/assets/images/guide/how-it-works/lightning-services/Spend-unconfirmed-mobile.png"
    mobileRetina = "/assets/images/guide/how-it-works/lightning-services/Spend-unconfirmed-mobile@2x.png"
-   alt-text = "Graphic depicting inbound liquidity flowing towards a lightning node and outbound liquidity flowing away from a lightning node"
+   alt-text = "How a zero-confirmation channel is created with an LSP"
    width = 800
    height = 348
 %}
@@ -163,14 +158,14 @@ An example is combining a collaborative fund with a zero-confirmation channel op
    retina = "/assets/images/guide/how-it-works/lightning-services/Combining-channel-opens@2x.png"
    mobile = "/assets/images/guide/how-it-works/lightning-services/Combining-channel-opens-mobile.png"
    mobileRetina = "/assets/images/guide/how-it-works/lightning-services/Combining-channel-opens-mobile@2x.png"
-   alt-text = "Graphic depicting combining a collaborative fund and zero-confirmation channel open technique"
+   alt-text = "Combining a collaborative fund and zero-confirmation channel open technique"
    width = 800
    height = 348
 %}
 
 ## Where do LSPs offer this service?
 
-LSPs makes it easy for users to connect to and use lightning by offering inbound liquidity . There are various ways LSPs offer this service which range in complexity. 
+LSPs makes it easy for users to connect to and use lightning by offering inbound liquidity . There are various ways LSPs offer this service which range in complexity.
 
 - Built-in to wallets like [Breez](https://breez.technology/)
 - Web portals like [Blocktank](https://synonym.to/blocktank/)
@@ -190,7 +185,7 @@ It also prevents everyone from using the same LSP, improving [decentralization](
    retina = "/assets/images/guide/how-it-works/lightning-services/where-is-this-serviced-offered@2x.png"
    mobile = "/assets/images/guide/how-it-works/lightning-services/where-is-this-serviced-offered-mobile.png"
    mobileRetina = "/assets/images/guide/how-it-works/lightning-services/where-is-this-serviced-offered-mobile@2x.png"
-   alt-text = "Graphic depicting where LSP services are offered"
+   alt-text = "Where LSP services are offered"
    width = 800
    height = 348
 %}
@@ -208,7 +203,7 @@ Below are some LWS services and the user friction points they solve.
    retina = "/assets/images/guide/how-it-works/lightning-services/what-are-lightning-wallet-servers@2x.png"
    mobile = "/assets/images/guide/how-it-works/lightning-services/what-are-lightning-wallet-servers-mobile.png"
    mobileRetina = "/assets/images/guide/how-it-works/lightning-services/what-are-lightning-wallet-servers-mobile@2x.png"
-   alt-text = "Graphic depicting what an LWS offers users"
+   alt-text = "What is a lightning wallet server (LWS)?"
    width = 800
    height = 348
 %}
@@ -234,7 +229,7 @@ To prevent this, ensure your users can [manually backup their channel]({{ '//gui
    retina = "/assets/images/guide/how-it-works/lightning-services/Backups@2x.png"
    mobile = "/assets/images/guide/how-it-works/lightning-services/Backups-mobile.png"
    mobileRetina = "/assets/images/guide/how-it-works/lightning-services/Backups-mobile@2x.png"
-   alt-text = "Graphic depicting how a LWS backups a users channel state as they change"
+   alt-text = "How a LWS backups a users channel state as they change"
    width = 800
    height = 348
 %}
@@ -250,7 +245,7 @@ A [Lightning address](https://lightningaddress.com/) LWS service gives users a h
    retina = "/assets/images/guide/how-it-works/lightning-services/Lightning-address@2x.png"
    mobile = "/assets/images/guide/how-it-works/lightning-services/Lightning-address-mobile.png"
    mobileRetina = "/assets/images/guide/how-it-works/lightning-services/Lightning-address-mobile@2x.png"
-   alt-text = "Graphic depicting examples of lightning addresses"
+   alt-text = "Examples of lightning addresses"
    width = 800
    height = 348
 %}
@@ -268,7 +263,7 @@ This service is usually required to be offered alongside an LSP. Read more about
    retina = "/assets/images/guide/how-it-works/lightning-services/Offline-payment@2x.png"
    mobile = "/assets/images/guide/how-it-works/lightning-services/Offline-payment-mobile.png"
    mobileRetina = "/assets/images/guide/how-it-works/lightning-services/Offline-payment-mobile@2x.png"
-   alt-text = "Graphic depicting how an LWS helps users accept payments whilst offline"
+   alt-text = "How an LWS helps users accept payments whilst offline"
    width = 800
    height = 348
 %}
@@ -284,16 +279,16 @@ LWSs can offer [submarine swaps](https://blog.muun.com/a-closer-look-at-submarin
    retina = "/assets/images/guide/how-it-works/lightning-services/Submarine-swaps@2x.png"
    mobile = "/assets/images/guide/how-it-works/lightning-services/Submarine-swaps-mobile.png"
    mobileRetina = "/assets/images/guide/how-it-works/lightning-services/Submarine-swaps-mobile@2x.png"
-   alt-text = "Graphic depicting how an LWS can conduct swaps moving bitcoin between on-chain and lightning"
+   alt-text = "How an LWS can conduct swaps moving bitcoin between on-chain and lightning"
    width = 800
    height = 348
 %}
 
 ### Watchtowers
 
-Users need to regularly be online to monitor their payment channels to prevent cheating attempts. [Daily spending wallets]({{ '/guide/daily-spending-wallet/' | relative_url }}) in particular are regularly offline and so cheating attempts are more likely.
+A lightning wallet must be online on a regular basis to track it's payment channels for cheating attempts. A [daily spending wallet]({{ '/guide/daily-spending-wallet/' | relative_url }}), in particular, is offline whenever the user stops using the app. This means there is a greater risk of cheating attempts.
 
-A [watchtower](https://bitcoinops.org/en/topics/watchtowers/) LWS service monitors payment channels of users who are offline and can punish their counterparties if they attempt to steal the users funds.
+A [watchtower](https://bitcoinops.org/en/topics/watchtowers/) service can fix this. Watchtowers monitor the payment channels of offline users. If a counterparty attempts to steal a user's funds, the watchtower can step in to help. The watchtower can prevent the theft by submitting a justice transaction.
 
 {% include tip/open.html color="blue" icon="info" label="Using watchtowers" %}
 
@@ -308,7 +303,7 @@ Multiple watchtowers can be used to limit the chances a users counterparty will 
    retina = "/assets/images/guide/how-it-works/lightning-services/Watchtowers@2x.png"
    mobile = "/assets/images/guide/how-it-works/lightning-services/Watchtowers-mobile.png"
    mobileRetina = "/assets/images/guide/how-it-works/lightning-services/Watchtowers-mobile@2x.png"
-   alt-text = "Graphic depicting watchtowers monitoring offline lightning users"
+   alt-text = "Watchtowers monitoring offline lightning users"
    width = 800
    height = 348
 %}
