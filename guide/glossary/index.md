@@ -113,7 +113,7 @@ A standardized technical document format for the Lightning network protocol spec
 
 ### Channel Reserve
 
-A channel reserve works as a type of insurance against theft. If a peer tries to cheat in a channel then the other party can submit a penalty transaction. This transaction will then take away all the funds from the other user's channel. Having the channel reserve in place ensures that there are funds available to take away should this occur.
+A channel reserve works as a type of insurance against theft. If a peer tries to cheat in a lightning payment channel, then the other party can submit a penalty transaction. This transaction will then take away all the funds from the other user's channel. Having the channel reserve in place ensures that there are funds available to take away should this occur.
 
 ### Child-pays-for-parent (CPFP)
 
