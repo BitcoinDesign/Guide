@@ -297,7 +297,7 @@ Routing is a probabilistic endeavor. For example, a routing algorithm may identi
 
 ### Coin selection
 
-Some users may prefer to choose which of their on-chain bitcoin (UTXOs to be precise) to send, in order to protect their privacy. More on this topic on the [Coin selection page]({{ '/guide/how-it-works/coin-selection/' | relative_url }}).
+On-chain wallets may offer experienced users the option to choose which of their on-chain bitcoin (UTXOs to be precise) to send, in order to protect their privacy. More on this topic on the [Coin selection page]({{ '/guide/how-it-works/coin-selection/' | relative_url }}).
 
 ---
 
