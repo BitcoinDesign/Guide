@@ -198,7 +198,7 @@ This scenario can be initiated by copying a Lightning address to the clipboard, 
 
 {% include image-gallery.html pages = page.imagesImportAddress %}
 
-### Importing an invoice
+### Importing a payment request
 
 This sequence is similar to the one above. The difference is that a payment request was passed into the application, which contains different data and also includes a specific user action, and therefore requires different user flows. The one below shows how a user has scanned a payment request and assigns a contact to the payment.
 
