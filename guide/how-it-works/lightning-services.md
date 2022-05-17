@@ -8,7 +8,7 @@ permalink: /guide/how-it-works/lightning-services/
 redirect_from:
  - /guide/payments/send/lightning-service-providers/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/how-it-works/lightning-services/lightning-services-preview.jpg 
+image: https://bitcoin.design/assets/images/guide/how-it-works/lightning-services/lightning-services-preview.jpg
 ---
 
 <!--
@@ -273,7 +273,7 @@ This service is usually required to be offered alongside an LSP. Read more about
 
 Moving bitcoin between lightning and on-chain can be costly and complicated if done by opening and closing payment channels.
 
-LWSs can offer [submarine swaps](https://blog.muun.com/a-closer-look-at-submarine-swaps-in-the-lightning-network/) to allow users to easily move bitcoin between lightning and on-chain without having to manage and deal with payment channels.
+[Submarine swaps](https://blog.muun.com/a-closer-look-at-submarine-swaps-in-the-lightning-network/) allow users to easily move bitcoin between lightning and on-chain without having to manage and deal with payment channels.
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/lightning-services/Submarine-swaps.png"
