@@ -264,7 +264,7 @@ This service is usually required to be offered alongside an LSP. Read more about
    retina = "/assets/images/guide/how-it-works/lightning-services/Offline-payment@2x.png"
    mobile = "/assets/images/guide/how-it-works/lightning-services/Offline-payment-mobile.png"
    mobileRetina = "/assets/images/guide/how-it-works/lightning-services/Offline-payment-mobile@2x.png"
-   alt-text = "How an LWS helps users accept payments whilst offline"
+   alt-text = "How an LWS helps users accept payments while offline"
    width = 800
    height = 348
 %}
