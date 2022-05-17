@@ -165,7 +165,7 @@ When responding to an invoice that contains all relevent information, the user c
 
 **Recipient**
 
-The most convenient option for choosing a recipient is from previously saved contacts. Alternatively, users can enter on-chain addresses, Lightning addresses, Lightning node IDs, or other static identifies that are supported by the wallet.
+The most convenient option for choosing a recipient is from previously saved [contacts]({{ '/guide/daily-spending-wallet/contacts/' | relative_url }}). Alternatively, users can enter Lightning addresses, Lightning node IDs, on-chain addresses, or other static identifies that are supported by the wallet.
 
 There are also static [invoice types]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }}) that can receive payments repeatedly. These are less intuitive overall due to their appearance, but could also be considered payment endpoints.
 
@@ -175,7 +175,7 @@ If no amount is provided via a payment request, manual entry should be simple an
 
 **Metadata**
 
-A transaction history is hard to make sense of when it only shows amounts, dates, and identifiers. Users should be allowed to add descriptions, tags, and other metadata to add context. This context can separately be used for helpful tools like visual spending breakdowns.
+A [transaction history]({{ '/guide/daily-spending-wallet/activity/' | relative_url }}) is hard to make sense of when it only shows amounts, dates, and identifiers. Users should be allowed to add descriptions, tags, and other metadata to add context. This context can separately be used for helpful tools like visual spending breakdowns.
 
 ## Fees
 
@@ -198,7 +198,7 @@ On the Lightning network, payments are passed between nodes to get from the send
 
 **Lightning service provider fees**
 
-In certain situations, the Lightning wallet may not have enough channel liquidity to send a payment. Wallet providers may offer to alleviate these friction points, and earn additional fees. A common scenario is the automatic opening of a payment channel when a wallet attempts to send a payment larger than their outbound capacity.
+In certain situations, the Lightning wallet may not have enough channel [liquidity]({{ '/guide/how-it-works/liquidity/' | relative_url }}) to send a payment. [Wallet providers]({{ '/guide/how-it-works/lightning-service-providers/' | relative_url }}) may offer to alleviate these friction points, and earn additional fees. A common scenario is the automatic opening of a payment channel when a wallet attempts to send a payment larger than their outbound capacity.
 
 </div>
 
@@ -216,7 +216,7 @@ In certain situations, the Lightning wallet may not have enough channel liquidit
    layout = "float-right-desktop -background -shadow"
 %}
 
-This fee is dependent on how many other transactions are currently waiting to be processed on the base layer as a whole. The [average fee](https://ycharts.com/indicators/bitcoin_average_transaction_fee) in January 2021 was $0.63, and $28.60 in April 2021.
+This fee is dependent on how many other transactions are currently [waiting]({{ '/guide/glossary/#mempool' | relative_url }}) to be processed on the base layer as a whole. The [average fee](https://ycharts.com/indicators/bitcoin_average_transaction_fee) in January 2021 was $0.63, and $28.60 in April 2021.
 
 </div>
 
@@ -291,13 +291,13 @@ Effectively supporting users when problems occur can build trust and confidence,
 
 There are situations in which users may want to make more complex adjustments to the payment.
 
-### Coin selection
-
-Some users may prefer to choose which of their bitcoin (UTXOs to be precise) to send, in order to protect their privacy. More on this topic on the [Coin selection page]({{ '/guide/how-it-works/coin-selection/' | relative_url }}).
-
 ### Lightning routing options
 
 Routing is a probabilistic endeavor. For example, a routing algorithm may identify two routes. The first one has a low fee but is also less likely to succeed. The second route has a higher fee, but is more likely to succeed. Due to the technical complexity and unknowns, there is [ongoing conversation](https://github.com/BitcoinDesign/Guide/issues/585) whether routing options are relevant for users to be aware of and make decisions on.
+
+### Coin selection
+
+Some users may prefer to choose which of their on-chain bitcoin (UTXOs to be precise) to send, in order to protect their privacy. More on this topic on the [Coin selection page]({{ '/guide/how-it-works/coin-selection/' | relative_url }}).
 
 ---
 
