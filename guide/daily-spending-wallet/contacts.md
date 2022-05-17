@@ -204,7 +204,7 @@ This sequence is similar to the one above. The difference is that a payment requ
 
 Some payment request formats may include an address that can [receive repeatedly]({{ '/guide/daily-spending-wallet/requesting/#reusable-payment-requests' | relative_url }}). In this case, the address is added to the contact for future use. For [single use payment requests]({{ '/guide/daily-spending-wallet/requesting/#single-use-payment-requests' | relative_url }}), only the payment is linked.
 
-Invoices may also contain recipient names. These can be used to suggest the name for a new contact to the user. Names can be spoofed, so they should not be automatically assigned without user approval.
+Payment requests may also contain recipient names. These can be used to suggest the name for a new contact to the user. Names can be spoofed, so they should not be automatically assigned without user approval.
 
 {% include image-gallery.html pages = page.imagesPayInvoice %}
 
