@@ -8,6 +8,7 @@ permalink: /guide/how-it-works/lightning-services/
 redirect_from:
  - /guide/payments/send/lightning-service-providers/
 main_classes: -no-top-padding
+image: https://bitcoin.design/assets/images/guide/how-it-works/lightning-services/lightning-services-preview.jpg 
 ---
 
 <!--
