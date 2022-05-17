@@ -220,7 +220,7 @@ This fee is dependent on how many other transactions are currently waiting to be
 
 Unfortunately, it is common for users to overpay on-chain fees by mistake. Wallets should have mechanisms in place to avoid this happening.
 
-Recommendation: warn users if they are preparing a transaction with an amount that is too low relative to the fee they would pay to broadcast it. There are no standards regarding the threshold percentage to trigger such an alert. But we consider that it is reasonable that a notice pops-up if a user must pay a fee that is 50% or more than the value of the transaction itself, for example. This kind of procedure should be enough to make sure that users do not overpay on-chain fees unintentionally.
+If a user's transaction amount is low compared to the fee they would pay to broadcast, warn them. There are no standards regarding the threshold percentage to trigger such an alert. A good benchmark is to warn the user if their fee is 50% or more than the value of the transaction itself. You might choose a different threshold for your app. Procedures like this should be enough to ensure users do not overpay on-chain fees unintentionally.
 
 </div>
 
