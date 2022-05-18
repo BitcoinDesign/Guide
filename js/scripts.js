@@ -366,7 +366,6 @@ function handleModalImageLinkClick(e) {
     resizeModal(true);
 
     setTimeout(function(){
-        ref.body = document.getElementsByTagName('body')[0];
         ref.body.addEventListener('scroll', preventScroll, {passive: false});
         ref.body.addEventListener('mousewheel', preventScroll, {passive: false});
         ref.body.addEventListener('touchmove', preventScroll, {passive: false});
@@ -424,6 +423,9 @@ function preventScroll(e){
 }
 
 function startLottie() {
+    // Check for existing lottie fallbacks and remove if so
+    removeLottieFallbacks();
+
     // Load lottie if not available and not loading.
     if(!ref.lottieLoaded && !ref.lottieLoading) {
 
@@ -447,10 +449,11 @@ function startLottie() {
     if(ref.lottieLoaded && ref.lottiePath) {
         // Delete old animations.
         stopLottie();
+        ref.body.classList.add('lottie-active');
         var i = 0;
         ref.lottiePath.forEach(function(item){
             if(!item.dataset.name) item.dataset.name = 'animation' + i
-            var anim =lottie.loadAnimation({
+            var anim = lottie.loadAnimation({
                 container: item, // the dom element that will contain the animation
                 name: item.dataset.name,
                 renderer: 'svg',
@@ -471,7 +474,17 @@ function startLottie() {
 }
 
 function stopLottie() {
+    ref.body.classList.remove('lottie-active');
     if(typeof lottie !== 'undefined') lottie.destroy();
+}
+
+function removeLottieFallbacks() {
+    var lottieFallbacks = document.querySelectorAll('div.lottie-image');
+    if(lottieFallbacks) {
+        lottieFallbacks.forEach(function(element){
+            element.remove();
+        });
+    }
 }
 
 function onLottieLoaded() {
@@ -495,20 +508,8 @@ function findLotties(){
 
         if(lottieControls.length > 0) {
             lottieControls.forEach(function(controls){
-                controls.addEventListener('click', function(e){
-                    var btn = e.target.closest('.animation-controls');
-                    var element = btn.closest('figure').querySelector('.lottie');
-                    if(btn.classList.contains('pause')) {
-                        btn.classList.remove('pause');
-                        btn.classList.add('play');
-                        toggleLottie('pause', element);
-                    }
-                    else {
-                        btn.classList.add('pause');
-                        btn.classList.remove('play');
-                        toggleLottie('play', element);
-                    }
-                });
+                controls.classList.remove('deactivated');
+                controls.addEventListener('click', handleClickLottieControls);
             });
         }
 
@@ -517,10 +518,53 @@ function findLotties(){
     else ref.lottiePath = null;
 }
 
+function handleClickLottieControls(e){
+    var btn = e.target.closest('.animation-controls');
+    var element = btn.closest('figure').querySelector('.lottie');
+    if(btn.classList.contains('pause')) {
+        btn.classList.remove('pause');
+        btn.classList.add('play');
+        toggleLottie('pause', element);
+    }
+    else {
+        btn.classList.add('pause');
+        btn.classList.remove('play');
+        toggleLottie('play', element);
+    }
+}
+
 function toggleLottie(action, element){
     if(typeof lottie !== 'undefined') {
         if(action === 'play') lottie.play(element.dataset.name);
         else lottie.pause(element.dataset.name);
+    }
+}
+
+function decideIfLottie(){
+    if(!ref.reduceMotion || ref.reduceMotion.matches) {
+        stopLottie();
+
+        var lotties = document.querySelectorAll('.lottie-fallback noscript');
+
+        if(lotties.length > 0) {
+            lotties.forEach(function (lottie) {
+                var element = document.createElement('div');
+                element.classList.add('lottie-image');
+                element.innerHTML = lottie.textContent;
+                lottie.closest('.lottie-fallback').appendChild(element);
+
+                var controls = lottie.closest('figure').querySelector('.animation-controls');
+
+                if(controls) {
+                    controls.classList.remove('play');
+                    controls.classList.add('deactivated', 'pause');
+                    controls.removeEventListener('click', handleClickLottieControls);
+                }
+            });
+        }
+    }
+    else {
+        findLotties();
     }
 }
 
@@ -537,11 +581,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
   ref.searchInput = document.getElementById("search-input");
   ref.searchTrigger = document.getElementById("search-trigger");
   ref.searchResults = document.getElementById('search-results');
+  ref.body = document.getElementsByTagName('body')[0];
   ref.modalImageLinks = document.querySelectorAll('.modal-image-link, .modal-indicator svg');
   ref.lottieLoading = false;
   ref.lottieLoaded = false;
   ref.lottiePath = null;
-  findLotties();
+
+  ref.reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  decideIfLottie();
+  ref.reduceMotion.addEventListener('change', function(){
+      decideIfLottie();
+  });
+
   updateNavAccessibility();
 
   if(ref.searchInput) {

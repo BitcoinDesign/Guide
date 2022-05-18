@@ -550,8 +550,15 @@ figcaption {
         display: none;
       }
     }
+
     &.play {
       .pause {
+        display: none;
+      }
+    }
+
+    &.deactivated {
+      &.default, svg {
         display: none;
       }
     }

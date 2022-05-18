@@ -397,12 +397,16 @@ A horizontal slide show of images. When the content is too wide for the screen, 
 
 Animations can be used to help communicate complicated information, or simply to add some fun effects to a page. Your animation should be a [lottie](https://github.com/airbnb/lottie-web) format JSON file. You can create lottie animations using software like Adobe AfterEffects. Animations follow a similar code structure to images and can be formatted in many of the same ways.
 
+When creating animations for the Guide, you must provide a fallback image for accessibility. If a user has javascript disabled or [prefers reduced motion](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion), then the image will be displayed instead of the animation.
+
 #### Animation extends beyond content width
 
 {% raw %}
 ```liquid
 {% include lottie.html
    lottie-path = "/assets/animations/contribute/formatting/bitcoin-design-seal-miami-edition.json"
+   image = "/assets/animations/contribute/formatting/bitcoin-design-seal-miami-edition.png"
+   retina = "/assets/animations/contribute/formatting/bitcoin-design-seal-miami-edition@2x.png"
    alt-text = "Example animation"
    layout = "full-width"
 %}
@@ -411,6 +415,8 @@ Animations can be used to help communicate complicated information, or simply to
 
 {% include lottie.html
    lottie-path = "/assets/animations/contribute/formatting/bitcoin-design-seal-miami-edition.json"
+   image = "/assets/animations/contribute/formatting/bitcoin-design-seal-miami-edition.png"
+   retina = "/assets/animations/contribute/formatting/bitcoin-design-seal-miami-edition@2x.png"
    alt-text = "Example animation"
    layout = "full-width"
 %}
@@ -421,6 +427,8 @@ Animations can be used to help communicate complicated information, or simply to
 ```liquid
 {% include lottie.html
    lottie-path = "/assets/animations/contribute/formatting/bitcoin-design-seal-miami-edition.json"
+   image = "/assets/animations/contribute/formatting/bitcoin-design-seal-miami-edition.png"
+   retina = "/assets/animations/contribute/formatting/bitcoin-design-seal-miami-edition@2x.png"
    alt-text = "Example animation"
    caption = "Bitcoin Design Community - Miami Edition"
    controls = true
@@ -430,6 +438,8 @@ Animations can be used to help communicate complicated information, or simply to
 
 {% include lottie.html
    lottie-path = "/assets/animations/contribute/formatting/bitcoin-design-seal-miami-edition.json"
+   image = "/assets/animations/contribute/formatting/bitcoin-design-seal-miami-edition.png"
+   retina = "/assets/animations/contribute/formatting/bitcoin-design-seal-miami-edition@2x.png"
    alt-text = "Example animation"
    caption = "Bitcoin Design Community - Miami Edition"
    controls = true
@@ -443,6 +453,8 @@ By default, animations loop continuously. You can override this by setting `loop
 ```liquid
 {% include lottie.html
    lottie-path = "/assets/animations/contribute/formatting/bitcoin-design-seal-miami-edition.json"
+   image = "/assets/animations/contribute/formatting/bitcoin-design-seal-miami-edition.png"
+   retina = "/assets/animations/contribute/formatting/bitcoin-design-seal-miami-edition@2x.png"
    alt-text = "Example animation"
    loop = false
    controls = true
@@ -452,6 +464,8 @@ By default, animations loop continuously. You can override this by setting `loop
 
 {% include lottie.html
    lottie-path = "/assets/animations/contribute/formatting/bitcoin-design-seal-miami-edition.json"
+   image = "/assets/animations/contribute/formatting/bitcoin-design-seal-miami-edition.png"
+   retina = "/assets/animations/contribute/formatting/bitcoin-design-seal-miami-edition@2x.png"
    alt-text = "Example animation"
    loop = false
    controls = true
@@ -467,6 +481,8 @@ Animations can also be inline with the content. This one is inline on desktop, b
 
 {% include lottie.html
    lottie-path = "/assets/animations/contribute/formatting/bitcoin-design-seal.json"
+   image = "/assets/animations/contribute/formatting/bitcoin-design-seal.png"
+   retina = "/assets/animations/contribute/formatting/bitcoin-design-seal@2x.png"
    alt-text = "Example animation"
    width = 400
    layout = "float-left-desktop"
@@ -482,6 +498,8 @@ Bitcoin ipsum dolor sit amet. Peer-to-peer segwit mempool sats SHA-256, transact
 
 {% include lottie.html
    lottie-path = "/assets/animations/contribute/formatting/bitcoin-design-seal.json"
+   image = "/assets/animations/contribute/formatting/bitcoin-design-seal.png"
+   retina = "/assets/animations/contribute/formatting/bitcoin-design-seal@2x.png"
    alt-text = "Example animation"
    width = 400
    layout = "float-left-desktop"
@@ -501,6 +519,8 @@ This next animation is inline on both mobile and desktop.
 
 {% include lottie.html
    lottie-path = "/assets/animations/contribute/formatting/bitcoin-design-seal.json"
+   image = "/assets/animations/contribute/formatting/bitcoin-design-seal.png"
+   retina = "/assets/animations/contribute/formatting/bitcoin-design-seal@2x.png"
    alt-text = "Example animation"
    width = 148
    layout = "float-left"
@@ -516,6 +536,8 @@ Bitcoin ipsum dolor sit amet. Peer-to-peer segwit mempool sats SHA-256, transact
 
 {% include lottie.html
    lottie-path = "/assets/animations/contribute/formatting/bitcoin-design-seal.json"
+   image = "/assets/animations/contribute/formatting/bitcoin-design-seal.png"
+   retina = "/assets/animations/contribute/formatting/bitcoin-design-seal@2x.png"
    alt-text = "Example animation"
    width = 148
    layout = "float-left"

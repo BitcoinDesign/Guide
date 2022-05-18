@@ -269,10 +269,10 @@ var themes = [
         backgroundColor: ""
     },
     image: {
-        path: '',
-        pathRetina: '',
-        pathMobile: '',
-        pathMobileRetina: '',
+        path: 'url("/assets/images/home/banner/bits-and-pieces-fallback.png")',
+        pathRetina: 'url("/assets/images/home/banner/bits-and-pieces-fallback@2x.png")',
+        pathMobile: 'url("/assets/images/home/banner/bits-and-pieces-mobile.png")',
+        pathMobileRetina: 'url("/assets/images/home/banner/bits-and-pieces-mobile@2x.png")',
         backgroundColor: '',
         lottie: "/assets/animations/banner-jessica.json"
     },
@@ -459,10 +459,10 @@ var applyTheme = function(themeIndex) {
 
     // Lottie properties.
     var homeBannerImage = document.querySelector('.home-banner-image');
-    if(theme.image.lottie) {
+    if(theme.image.lottie && ref.reduceMotion && !ref.reduceMotion.matches) {
         homeBannerImage.classList.add('lottie');
         homeBannerImage.dataset.lottie = theme.image.lottie;
-        findLotties();
+        decideIfLottie();
     }
     else {
         homeBannerImage.classList.remove('lottie');

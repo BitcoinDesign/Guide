@@ -256,3 +256,12 @@
   }
 }
 
+.lottie-active {
+  .home-banner {
+    .home-banner-image {
+      &.lottie {
+        background-image: none;
+      }
+    }
+  }
+}

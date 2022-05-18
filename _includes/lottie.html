@@ -1,4 +1,19 @@
 <figure class="-{{ include.layout }}">
+    <div class="lottie-fallback">
+        <noscript>
+            <img
+                src="{{ include.image | relative_url }}"
+                {% if include.retina %}
+                srcset="{{ include.image | relative_url }} 1x, {{ include.retina | relative_url }} 2x"
+                {% endif %}
+                alt="{{ include.alt-text }}"
+                width="{{ include.width }}"
+                height="{{ include.height }}"
+                loading="lazy"
+            >
+        </noscript>
+    </div>
+
     <div
         class="lottie"
         data-lottie="{{include.lottie-path}}"
@@ -11,7 +26,7 @@
     {% if include.caption %}
     <figcaption markdown="1"{% if include.controls %} class="animation-controls pause"{% endif %}>{{ include.caption | no_runts | markdownify }}{% if include.controls %}<svg viewBox="0 0 32 32" class="toggle-icon pause"><filter id="shadow"><feDropShadow dx="1" dy="1" stdDeviation="1" flood-opacity="0.3"/></filter><use xlink:href="#svg-pause" style="filter:url('#shadow')" x="4" y="4"></use></svg><svg viewBox="0 0 32 32" class="toggle-icon play"><filter id="shadow"><feDropShadow dx="1" dy="1" stdDeviation="1" flood-opacity="0.3"/></filter><use xlink:href="#svg-play" style="filter:url('#shadow')" x="4" y="4"></use></svg>{% endif %}</figcaption>
     {% elsif include.controls %}
-    <figcaption class="animation-controls pause">
+    <figcaption class="animation-controls pause default">
         <p class="pause">Pause animation</p>
         <p class="play">Play animation</p>
         <svg viewBox="0 0 32 32" class="toggle-icon pause"><filter id="shadow"><feDropShadow dx="1" dy="1" stdDeviation="1" flood-opacity="0.3"/></filter><use xlink:href="#svg-pause" style="filter:url('#shadow')" x="4" y="4"></use></svg>
