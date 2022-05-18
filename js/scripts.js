@@ -464,7 +464,7 @@ function startLottie() {
             i++;
 
             anim.addEventListener('complete', function(e){
-                lottie.stop(item.dataset.name);
+                lottie.goToAndStop(0, false, item.dataset.name);
                 var btn = item.closest('figure').querySelector('.animation-controls');
                 btn.classList.remove('pause');
                 btn.classList.add('play');
