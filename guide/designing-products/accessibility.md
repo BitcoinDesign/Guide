@@ -11,13 +11,13 @@ image_base: /assets/images/guide/designing-products/accessibility/
 exampleImages:
     - file: annotations-bad
       alt:
-      caption: An example of a screen with missing button labels.
+      caption: An example of a screen with missing button labels. The small overlays indicate the information provided to a screen reader.
     - file: annotations-bad-isolated
       alt:
-      caption: What is accessible to a visually impaired person.
+      caption: The same screen without UI elements to better highlight what is accessible to a visually impaired person.
     - file: annotations-good
       alt:
-      caption: All elements selectable, well-ordered and described. User has multiple options to share the address, based on their needs.
+      caption: Here, all elements are selectable, well-ordered and labelled. The user has multiple options to share the address, based on their needs.
     - file: annotations-good-isolated
       alt:
       caption: Well annotated content is understandable even when the screen cannot be seen.
@@ -37,7 +37,7 @@ exampleImagesThree:
       caption: Ensure the layout still works with larger text sizes. Respect other user preferences like reducing motion and increased contrast.
     - file: color-vision-defficiencies
       alt:
-      caption: Ensure the information can be understood by those with color vision defficiences. For example, by not only relying on red and green to indicate withdrawals and deposits.
+      caption: Ensure the information can be understood by those with color vision defficiences. For example, by using "+" and "-" indicate withdrawals and deposits instead of green and red coloration only.
 ---
 
 <!--
@@ -66,7 +66,7 @@ Illustration sources
 # Accessibility
 {:.no_toc}
 
-Accessibility is an aspect of inclusive design and covers creating products that enable people of all backgrounds and abilities to use them effectively. With financial inclusion being an important value in the bitcoin ethos we need to also extend this into bitcoin products being more inclusive for all people, this includes people with disabilities. Disabilities are not limited to permanent disabilities. We also have temporary situations (situational disabilities) where accessibility is applicable. For example, a woman carrying a baby who as a result is only able to use one hand on her mobile phone. Socio-economic restrictions like poor bandwidth also fall under accessibility. When done well,  an accessible product that can be used by all users regardless of the impairment they have. Can all users have the same user experience and fully enjoy your product? 
+Accessibility is an aspect of inclusive design and covers creating products that enable people of all backgrounds and abilities to use them effectively. With financial inclusion being an important value in the bitcoin ethos we need to also extend this into bitcoin products being more inclusive for all people, this includes people with disabilities. Disabilities are not limited to permanent disabilities. We also have temporary situations (situational disabilities) where accessibility is applicable. For example, a woman carrying a baby who as a result is only able to use one hand on her mobile phone. Socio-economic restrictions like poor bandwidth also fall under accessibility. When done well, an accessible product that can be used by all users, regardless of the impairment they have. Can all users have the same user experience and fully enjoy your product?
 
 > "One billion people, or 15% of the world's population, experience some form of disability."
 >
@@ -74,25 +74,32 @@ Accessibility is an aspect of inclusive design and covers creating products that
 
 ## Why is it important?
 
-As a payment network, bitcoin was designed to be borderless and permissionless. But if the applications people use to interact with the network are not versatile enough to accommodate diverse needs, then many of us will still not be able to take advantage of the benefits bitcoin provides. Products should be able to be used and accessed by all people regardless of their social status and so this should also extend into people with disabilities. [Developing nations](https://en.wikipedia.org/wiki/List_of_countries_by_literacy_rate) and demographics are the ones who seek to benefit the most from bitcoin. We want to improve usability for all people so they can easily navigate and move with ease through the applications. This means designing products that use plain language, support users with complex tasks, respect user preferences, work well with assistive technologies, and more.
+As a payment network, bitcoin was designed to be borderless and permissionless. But if the applications people use to interact with the network are not versatile enough to accommodate diverse needs, then many of us will still not be able to take advantage of the benefits bitcoin provides. Products should be able to be used and accessed by all people, regardless of their social status, and so this should also extend into people with disabilities. [Developing nations](https://en.wikipedia.org/wiki/List_of_countries_by_literacy_rate) are the ones who seek to benefit the most from bitcoin. We want to improve usability for all people so they can easily navigate and move with ease through the applications. This means designing products that use plain language, support users with complex tasks, respect user preferences, work well with assistive technologies, and more.
 
-A product designed with accessibility in mind is also easier to use for the part of the audience without impairments. This is referred to as the "[curb-cut](https://en.wikipedia.org/wiki/Curb_cut_effect)" effect. For example, many hearing people use closed captioning.
+A great side-effect is that a product designed with accessibility in mind is also easier to use for the part of the audience without impairments. This is referred to as the "[curb-cut](https://en.wikipedia.org/wiki/Curb_cut_effect)" effect. For example, many hearing people use closed captioning.
 
-As a wider community we also have a moral obligation to make products [inclusive]({{ '/guide/getting-started/principles/#inclusion' | relative_url }}) for everyone and to ensure that the experience they have with our product is suitable to them regardless of their physical, mental abilities.
+As a wider community we also have a moral obligation to make products [inclusive]({{ '/guide/getting-started/principles/#inclusion' | relative_url }}) for everyone and to ensure that the experience they have with our product is suitable to them, regardless of their physical, mental abilities.
 
-## Common disabilities
+## Categories of accessibility needs
 
 #### Vision
+
 Full or partial blindness, color blindness and other visual disabilities. Three million people in the US alone have vision impairment and one million people are blind ([source](https://www.afb.org/research-and-initiatives/statistics)). See how a [blind person uses an iPhone](https://youtu.be/fjdcKioHb5w).
 
 #### Physical
-A physical disability can effect a person temporarily or permanently. On a practical level this affects a their ability to use a keyboard or mouse. Tapping a screen or holding a phone still to scan a QR code could pose as  a challenge. Seventy-five million people across the world need a wheel chair on a daily basis. ([source](https://www.inclusivecitymaker.com/disabled-people-in-the-world-in-2021-facts-and-figures/)) [A quadriplegic talking about accessibility](https://youtu.be/fjdcKioHb5w)
+
+A physical disability can effect a person temporarily or permanently. On a practical level this affects a their ability to use a keyboard or mouse. Tapping a screen or holding a phone still to scan a QR code could pose as  a challenge. Seventy-five million people across the world need a wheel chair on a daily basis ([source](https://www.inclusivecitymaker.com/disabled-people-in-the-world-in-2021-facts-and-figures/)). Listen to a [quadriplegic talking about accessibility](https://www.youtube.com/watch?v=eMFrcJBX0pA).
 
 #### Intellectual
-Learning difficulties refer to a lower ability to understand new or complex information. Someone with intellectual difficulties also struggles with learning and applying new skills and can also have difficulty reading or understanding things. Over two hundred million people have some form of intellectual disability. ([source](https://www.inclusivecitymaker.com/disabled-people-in-the-world-in-2021-facts-and-figures/))
+
+Learning difficulties refer to a lower ability to understand new or complex information. Someone with intellectual difficulties also struggles with learning and applying new skills and can also have difficulty reading or understanding things. Over two hundred million people have some form of intellectual disability ([source](https://www.inclusivecitymaker.com/disabled-people-in-the-world-in-2021-facts-and-figures/)).
 
 #### Hearing
-Hearing difficulty such as being partly deaf, this can affect one or both ears. Any hearing loss below 20 decibels is considered a hearing loss. 400 million people have some form of deafness or hearing loss. [A deaf person making a call](https://youtu.be/Qg0Mspqj2TA)
+
+Hearing difficulty such as being partly deaf, this can affect one or both ears. Any hearing loss below 20 decibels is considered a hearing loss. 400 million people have some form of deafness or hearing loss.([source](https://www.inclusivecitymaker.com/disabled-people-in-the-world-in-2021-facts-and-figures/))
+
+#### Literacy
+Illiteracy is the inability of a person to read/write or understand a simple statement that is related to his/her everyday life. There are over 700 million illiterate adults around the world and more than half of them are women. ([source](http://uis.unesco.org/en/topic/literacy))
 
 ## Tips and examples
 
@@ -100,33 +107,35 @@ Improving accessibility may seem like an overwhelming task. The most important t
 
 {% include image-gallery.html pages = page.exampleImages %}
 
+It is impossible to know what a button does when it is only labelled as "button", and not with its function. Testing has shown that QR codes are often not selectable at all, which makes them invisible to users reliant on screen readers. A good solution is a label such as "QR code to copy the receive address".
+
 Also important is that elements are correctly ordered. Otherwise users reliant on the keyboard, or other linear navigation techniques, will not be able to easily understand what is on the screen.
 
 {% include image-gallery.html pages = page.exampleImagesTwo %}
 
-Providing alternate interaction methods and respecting a users accessibility settings are also important. A user with impaired motor skills may not be able to scan a QR code, a color blind user may not recognize red text as an error message, and a blind user benefits from the use of sounds or vibrations for interactive feedback.
+Providing alternate interaction methods and respecting a users accessibility settings are also important. A user with impaired motor skills may not be able to scan a QR code, a color blind user may not recognize red text as an error message, and a blind user benefits from the use of sound or vibration for interactive feedback.
 
 {% include image-gallery.html pages = page.exampleImagesThree %}
 
 ## Accessibility tools
 
-Operating systems and certain software provide built-in tools to help with accessibility. needs, such as screen readers ([VoiceOver](https://en.wikipedia.org/wiki/VoiceOver), [Narrator](https://en.wikipedia.org/wiki/Narrator_(Windows)), [TalkBack](https://support.google.com/accessibility/android/answer/6283677?hl=en&ref_topic=10601571)), [keyboard navigation](https://webaim.org/techniques/keyboard/), and voice control.
+Operating systems and certain software provide built-in tools to help with accessibility needs, such as screen readers ([VoiceOver](https://en.wikipedia.org/wiki/VoiceOver), [Narrator](https://en.wikipedia.org/wiki/Narrator_(Windows)), [TalkBack](https://support.google.com/accessibility/android/answer/6283677?hl=en&ref_topic=10601571)), [keyboard navigation](https://webaim.org/techniques/keyboard/), eye-tracking support, and voice control.
 
-The [Apple accessibility page](https://www.apple.com/accessibility/) provides a great overview of the various needs and features. Many of these features work mostly out of the box for applications, but they do rely on elements on screen to be well organized and marked up, so the operating system can interpret and translate them correctly.
+The accessibility pages by [Apple](https://www.apple.com/accessibility/), [Microsoft](https://www.microsoft.com/en-us/accessibility), and [Android](https://www.android.com/accessibility/) provide great overviews of the various needs and features. Many of these work mostly out of the box for applications, but they do rely on elements on screen to be well organized and marked up, so the operating system can interpret and translate them correctly.
 
 ### Sources of information
 
-- [What is Accessibility?](https://www.interaction-design.org/literature/topics/accessibility)
+- [What is accessibility?](https://www.interaction-design.org/literature/topics/accessibility)
+- [Web accessibility](https://en.wikipedia.org/wiki/Web_accessibility)
 - [Material design accessibility tips](https://material.io/design/usability/accessibility.html#understanding-accessibility)
 
 ### Usability testing resources
 
+- [Setup iPhone or iPad for iOS mobile accessibility testing](https://www.youtube.com/watch?v=Ca1H6wF348g)
 - [Accessibility testing on android devices](https://www2.stardust-testing.com/en/how-to-perform-accessibility-testing-for-android-devices)
 - [Usability studies for accessibility](https://www.nngroup.com/reports/how-to-conduct-usability-studies-accessibility/)
-- <https://www.worldbank.org/en/topic/disability#1>
-https://developer.android.com/guide/topics/ui/accessibility/testing
-- [Test your app's accessibility](https://www.nngroup.com/reports/how-to-conduct-usability-studies-accessibility/)
-- <https://www.worldbank.org/en/topic/disability#1>
+- [Test your app's accessibility](https://developer.android.com/guide/topics/ui/accessibility/testing)
+
 ---
 
 Next, we jump into how to design a [daily spending wallet]({{ '/guide/daily-spending-wallet/' | relative_url }}).
