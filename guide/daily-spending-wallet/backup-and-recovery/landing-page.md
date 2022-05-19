@@ -48,9 +48,8 @@ Two main types of information need to be backed up: the user's wallet recovery d
    mobile = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/wallet-backup-mobile.png"
    mobileRetina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/wallet-backup-mobile@2x.png"
    alt-text = "A diagram of data required to back up a bitcoin wallet"
-   width = 1200
-   height = 680
-  
+   width = 800
+   height = 453
 %}
 
 - The _[Recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }})_ is the fundamental information (consisting of 12 or 24 words) used to construct a wallet
