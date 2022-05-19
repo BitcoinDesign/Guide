@@ -284,7 +284,7 @@ If the user does not have bitcoin in their wallet, they do not need outbound liq
 
 One way to help your users receive inbound liquidity is through LSPs (Lightning Service Providers). You could run your own LSP service or integrate your product with an existing LSP.
 
-[Read the LSP section]({{'/guide/how-it-works/lightning-service-providers/#inbound-liquidity' | relative_url}}) to learn more. [Breez](https://breez.technology/) is an example of a wallet that does this.
+[Read the LSP section]({{'/guide/how-it-works/lightning-services/#what-is-a-lightning-service-provider' | relative_url}}) to learn more. [Breez](https://breez.technology/) is an example of a wallet that does this.
 
 ### Outbound liquidity
 
@@ -296,7 +296,7 @@ One way to accomplish this could be through an [instant channel open]({{'/guide/
 
 #### LSP Swap-In
 
-Another way to handle this would be through a swap-in service, where the user sends on-chain funds to an LSP and the LSP opens a channel for them. [Read the LSP section]({{'/guide/how-it-works/lightning-service-providers/#swap-in' | relative_url}}) to learn more. [Phoenix](https://phoenix.acinq.co/) is an example of a wallet that does this.
+Another way to handle this would be through a swap-in service, where the user sends on-chain funds to an LSP and the LSP opens a channel for them. [Read the LSP section]({{'/guide/how-it-works/lightning-services/#on-chain-funding' | relative_url}}) to learn more. [Phoenix](https://phoenix.acinq.co/) is an example of a wallet that does this.
 
 ### Channel Management
 
@@ -310,11 +310,11 @@ By combining the business incentives of an LSP, clever engineering, and good des
 
 ---
 
-Next, let's look at how [lightning service providers]({{ '/guide/how-it-works/lightning-service-providers/' | relative_url }}) work.
+Next, let's look at how [lightning-services]({{ '/guide/how-it-works/lightning-services/' | relative_url }}) work.
 
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/coin-selection/"
    previousName = "Coin selection"
-   nextUrl = "/guide/how-it-works/lightning-service-providers/"
-   nextName = "Lightning service providers"
+   nextUrl = "/guide/how-it-works/lightning-services/"
+   nextName = "Lightning services"
 %}
