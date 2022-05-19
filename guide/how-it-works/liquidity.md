@@ -306,6 +306,49 @@ Consider how you can help the user with channel management without them even kno
 
 By combining the business incentives of an LSP, clever engineering, and good design, you can build a bitcoin product that makes using the lightning network very easy for the user.
 
+## Channel reserve
+
+### What is a channel reserve?
+
+The lightning network enforces that to protect users we should have a reserve, called the channel reserve. It is an amount that will be held in a channel and cannot be spent.
+A channel reserve works as a type of insurance against theft. If a peer tries to cheat in a channel then the other party can submit a penalty transaction. This transaction will then take away all the funds from the other user's channel. Having the channel reserve in place ensures that there are funds available to take away should this occur.
+Each side of a channel maintains the channel reserve, and the protocol ensures that there is always progress being made towards meeting this reserve amount. The channel reserve capacity is the amount of both sides of the parties combined.  
+
+### Channel reserve amount
+
+The channel reserve amount is dynamic and unique to the user.
+BOLT 2 defined that the channel reserve amount should be 1% with a minimum value of the dust limit (which is currently [354 sats](https://github.com/lightning/bolts/blob/master/02-peer-protocol.md))
+
+If a user has a larger amount in the channel, then the reserve amount being held has a greater effect on them, especially if they want to use all the funds they placed in the channel straight away.
+To give an example, if a user opens a channel with a total capacity of 100,000 sats, their part of the channel reserve is 1,000 sats (1% of 100,000 sats), and only 99,000 sats are spendable.
+
+Both sides independently have a channel reserve. So if one side is 100,000 sats their reserve will be 1,000 sats. If the other side is 150,000 sats, their reserve will be 1,500 sats. The total channel wide reserve capacity will then be 2,500 sats.
+The 1% mentioned above is also dynamically adjusted over the channel's lifespan. So if a 100k sats channel receives 50,000 sats, this reserve will adjust to 1500. This adds further complexity for users as it will look like they are constantly losing sats. If a user has many channels open then the dynamic form of adjusting can become confusing.
+
+### Effect of Channel Reserve on users
+
+If a user funds a channel and they are unable to spend the full amount they have put into the channel this can be confusing to them.
+
+From a UX standpoint we would need to consider the following:
+
+<td>Adding funds</td>
+We should ensure that the user is educated so that
+1) When they are adding funds they know that a small amount will be held as a reserve.
+2) They understand that although they cannot spend 100% of their balance they still own all of their funds.
+
+### Additional Considerations
+
+<td>Multiple channels</td>
+Each additional channel has its own channel reserve. For example, a user with 20 channels may have more funds locked in reserve than a user with only one channel.
+<td>Onboarding</td>
+During onboarding when a user opens their first channel and when trying to send all their funds.
+In general the channel reserve itself adds an additional layer of complexity to mobile users who just want to make payments.
+
+There are however other, much more fool-proof ways to prevent theft such as:
+1) [Using watchtowers](https://bitcoin.design/guide/how-it-works/lightning-services/)
+2) Ensuring users regularly check their apps.
+
+
 <small><em>Avatar illustrations credit to [Vitaliy Gorbachev](https://www.flaticon.com/packs/avatars-93).</em></small>
 
 ---
