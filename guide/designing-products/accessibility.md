@@ -11,7 +11,7 @@ image_base: /assets/images/guide/designing-products/accessibility/
 exampleImages:
     - file: annotations-bad
       alt:
-      caption:
+      caption: An example of a screen with missing button labels.
     - file: annotations-bad-isolated
       alt:
       caption: What is accessible to a visually impaired person.
