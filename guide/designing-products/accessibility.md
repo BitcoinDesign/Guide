@@ -20,7 +20,7 @@ exampleImages:
       caption: All elements selectable, well-ordered and described. User has multiple options to share the address, based on their needs.
     - file: annotations-good-isolated
       alt:
-      caption:
+      caption: Well annotated content is understandable even when the screen cannot be seen. 
 exampleImagesTwo:
     - file: ordering-bad
       alt:
