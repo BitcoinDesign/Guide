@@ -99,6 +99,7 @@ Learning difficulties refer to a lower ability to understand new or complex info
 Hearing difficulty such as being partly deaf, this can affect one or both ears. Any hearing loss below 20 decibels is considered a hearing loss. 400 million people have some form of deafness or hearing loss.([source](https://www.inclusivecitymaker.com/disabled-people-in-the-world-in-2021-facts-and-figures/))
 
 #### Literacy
+
 Illiteracy is the inability of a person to read/write or understand a simple statement that is related to his/her everyday life. There are over 700 million illiterate adults around the world and more than half of them are women. ([source](http://uis.unesco.org/en/topic/literacy))
 
 ## Tips and examples
