@@ -465,9 +465,10 @@ function startLottie() {
 
             anim.addEventListener('complete', function(e){
                 lottie.goToAndStop(0, false, item.dataset.name);
-                var btn = item.closest('figure').querySelector('.animation-controls');
+                var btn = item.closest('figure').querySelector('.animation-controls button');
                 btn.classList.remove('pause');
                 btn.classList.add('play');
+                btn.setAttribute('aria-label', btn.dataset.playLabel);
             })
         });
     }
@@ -504,12 +505,14 @@ function findLotties(){
             if(lottie.dataset.lottie) ref.lottiePath.push(lottie);
         });
 
-        var lottieControls = document.querySelectorAll('.animation-controls');
+        var lottieControls = document.querySelectorAll('.animation-controls button');
 
         if(lottieControls.length > 0) {
-            lottieControls.forEach(function(controls){
+            lottieControls.forEach(function(btn){
+                var controls = btn.closest('.animation-controls');
                 controls.classList.remove('deactivated');
-                controls.addEventListener('click', handleClickLottieControls);
+                controls.setAttribute('aria-hidden', false);
+                btn.addEventListener('click', handleClickLottieControls);
             });
         }
 
@@ -519,16 +522,18 @@ function findLotties(){
 }
 
 function handleClickLottieControls(e){
-    var btn = e.target.closest('.animation-controls');
+    var btn = e.target.closest('.animation-controls button');
     var element = btn.closest('figure').querySelector('.lottie');
     if(btn.classList.contains('pause')) {
         btn.classList.remove('pause');
         btn.classList.add('play');
+        btn.setAttribute('aria-label', btn.dataset.playLabel);
         toggleLottie('pause', element);
     }
     else {
         btn.classList.add('pause');
         btn.classList.remove('play');
+        btn.setAttribute('aria-label', btn.dataset.pauseLabel);
         toggleLottie('play', element);
     }
 }
@@ -554,11 +559,14 @@ function decideIfLottie(){
                 lottie.closest('.lottie-fallback').appendChild(element);
 
                 var controls = lottie.closest('figure').querySelector('.animation-controls');
+                var btn = lottie.closest('figure').querySelector('.animation-controls button');
 
-                if(controls) {
-                    controls.classList.remove('play');
+                if(btn) {
+                    btn.classList.remove('play');
+                    btn.classList.add('pause');
                     controls.classList.add('deactivated', 'pause');
-                    controls.removeEventListener('click', handleClickLottieControls);
+                    controls.setAttribute('aria-hidden', true);
+                    btn.removeEventListener('click', handleClickLottieControls);
                 }
             });
         }

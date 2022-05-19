@@ -1,3 +1,7 @@
+{% assign min = 1 %}
+{% assign max = 1000 %}
+{% assign diff = max | minus: min %}
+{% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
 <figure class="-{{ include.layout }}">
     <div class="lottie-fallback">
         <noscript>
@@ -13,24 +17,34 @@
             >
         </noscript>
     </div>
-
     <div
         class="lottie"
+        id="lottie-{{randomNumber}}"
+        data-name="lottie-{{randomNumber}}"
         data-lottie="{{include.lottie-path}}"
         data-loop="{{include.loop}}"
+        aria-describedby="lottie-{{randomNumber}}-description"
         {% if include.width %}
         style="max-width:{{include.width}}px;"
         {% endif %}
     ></div>
-    <p class="sr-only">{{include.alt}}</p>
-    {% if include.caption %}
-    <figcaption markdown="1"{% if include.controls %} class="animation-controls pause"{% endif %}>{{ include.caption | no_runts | markdownify }}{% if include.controls %}<svg viewBox="0 0 32 32" class="toggle-icon pause"><filter id="shadow"><feDropShadow dx="1" dy="1" stdDeviation="1" flood-opacity="0.3"/></filter><use xlink:href="#svg-pause" style="filter:url('#shadow')" x="4" y="4"></use></svg><svg viewBox="0 0 32 32" class="toggle-icon play"><filter id="shadow"><feDropShadow dx="1" dy="1" stdDeviation="1" flood-opacity="0.3"/></filter><use xlink:href="#svg-play" style="filter:url('#shadow')" x="4" y="4"></use></svg>{% endif %}</figcaption>
-    {% elsif include.controls %}
-    <figcaption class="animation-controls pause default">
-        <p class="pause">Pause animation</p>
-        <p class="play">Play animation</p>
-        <svg viewBox="0 0 32 32" class="toggle-icon pause"><filter id="shadow"><feDropShadow dx="1" dy="1" stdDeviation="1" flood-opacity="0.3"/></filter><use xlink:href="#svg-pause" style="filter:url('#shadow')" x="4" y="4"></use></svg>
-        <svg viewBox="0 0 32 32" class="toggle-icon play"><filter id="shadow"><feDropShadow dx="1" dy="1" stdDeviation="1" flood-opacity="0.3"/></filter><use xlink:href="#svg-play" style="filter:url('#shadow')" x="4" y="4"></use></svg>
+    <p class="sr-only" id="lottie-{{randomNumber}}-description">{{include.alt-text}}</p>
+    {% if include.caption or include.controls %}
+    <figcaption{% if include.controls %} class="animation-controls default"{% endif %}>
+        {% if include.controls %}
+        <button class="pause" aria-label="Pause animation" data-pause-label="Pause animation" data-play-label="Play animation" aria-controls="lottie-{{randomNumber}}">
+        {% endif %}
+            {% if include.caption %}
+                {{ include.caption | no_runts | markdownify }}
+            {% elsif include.controls %}
+                <span class="pause" aria-hidden="true">Pause animation</span>
+                <span class="play" aria-hidden="true">Play animation</span>
+            {% endif %}
+        {% if include.controls %}
+            <svg viewBox="0 0 32 32" aria-hidden="true" class="toggle-icon pause"><filter id="shadow"><feDropShadow dx="1" dy="1" stdDeviation="1" flood-opacity="0.3"/></filter><use xlink:href="#svg-pause" style="filter:url('#shadow')" x="4" y="4"></use></svg>
+            <svg viewBox="0 0 32 32" aria-hidden="true" class="toggle-icon play"><filter id="shadow"><feDropShadow dx="1" dy="1" stdDeviation="1" flood-opacity="0.3"/></filter><use xlink:href="#svg-play" style="filter:url('#shadow')" x="4" y="4"></use></svg>
+        </button>
+        {% endif %}
     </figcaption>
     {% endif %}
 </figure>
