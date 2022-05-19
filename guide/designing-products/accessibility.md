@@ -20,7 +20,7 @@ exampleImages:
       caption: All elements selectable, well-ordered and described. User has multiple options to share the address, based on their needs.
     - file: annotations-good-isolated
       alt:
-      caption: Well annotated content is understandable even when the screen cannot be seen. 
+      caption: Well annotated content is understandable even when the screen cannot be seen.
 exampleImagesTwo:
     - file: ordering-bad
       alt:
@@ -85,10 +85,14 @@ As a wider community we also have a moral obligation to make products [inclusive
 #### Vision
 Full or partial blindness, color blindness and other visual disabilities. Three million people in the US alone have vision impairment and one million people are blind ([source](https://www.afb.org/research-and-initiatives/statistics)). See how a [blind person uses an iPhone](https://youtu.be/fjdcKioHb5w).
 
-- Physical: Difficulty using a keyboard or mouse, tapping a screen or holding a phone still (for example, for scanning a QR code), [Video](https://www.youtube.com/watch?v=eMFrcJBX0pA)
-- Intellectual: Learning difficulties
-- Literacy: Difficulty reading or understanding things
-- Hearing: Hearing difficulty such as being partly deaf, [Video](https://youtu.be/Qg0Mspqj2TA)
+#### Physical
+A physical disability can effect a person temporarily or permanently. On a practical level this affects a their ability to use a keyboard or mouse. Tapping a screen or holding a phone still to scan a QR code could pose as  a challenge. Seventy-five million people across the world need a wheel chair on a daily basis. ([source](https://www.inclusivecitymaker.com/disabled-people-in-the-world-in-2021-facts-and-figures/)) [A quadriplegic talking about accessibility](https://youtu.be/fjdcKioHb5w)
+
+#### Intellectual
+Learning difficulties refer to a lower ability to understand new or complex information. Someone with intellectual difficulties also struggles with learning and applying new skills and can also have difficulty reading or understanding things. Over two hundred million people have some form of intellectual disability. ([source](https://www.inclusivecitymaker.com/disabled-people-in-the-world-in-2021-facts-and-figures/))
+
+#### Hearing
+Hearing difficulty such as being partly deaf, this can affect one or both ears. Any hearing loss below 20 decibels is considered a hearing loss. 400 million people have some form of deafness or hearing loss. [A deaf person making a call](https://youtu.be/Qg0Mspqj2TA)
 
 ## Tips and examples
 
@@ -120,8 +124,9 @@ The [Apple accessibility page](https://www.apple.com/accessibility/) provides a 
 - [Accessibility testing on android devices](https://www2.stardust-testing.com/en/how-to-perform-accessibility-testing-for-android-devices)
 - [Usability studies for accessibility](https://www.nngroup.com/reports/how-to-conduct-usability-studies-accessibility/)
 - <https://www.worldbank.org/en/topic/disability#1>
-
-
+https://developer.android.com/guide/topics/ui/accessibility/testing
+- [Test your app's accessibility](https://www.nngroup.com/reports/how-to-conduct-usability-studies-accessibility/)
+- <https://www.worldbank.org/en/topic/disability#1>
 ---
 
 Next, we jump into how to design a [daily spending wallet]({{ '/guide/daily-spending-wallet/' | relative_url }}).
