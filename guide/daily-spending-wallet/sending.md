@@ -192,11 +192,11 @@ Payment fees can drastically differ based on a few attributes:
    layout = "float-right-desktop"
 %}
 
-**Lightning routing fees**
+#### Lightning routing fees
 
 On the Lightning network, payments are passed between nodes to get from the sender to the receiver. Each of those nodes may charge a base fee and a second fee based on a percentage of the amount forwarded. Fees paid can vary, but are typically in the single-digit or double-digit Satoshi range (a small fraction of on-chain fees).
 
-**Lightning service provider fees**
+#### Lightning service fees
 
 In certain situations, the Lightning wallet may not have enough channel [liquidity]({{ '/guide/how-it-works/liquidity/' | relative_url }}) to send a payment. [Wallet providers]({{ '/guide/how-it-works/lightning-service-providers/' | relative_url }}) may offer to alleviate these friction points, and earn additional fees. A common scenario is the automatic opening of a payment channel when a wallet attempts to send a payment larger than their outbound capacity.
 
@@ -204,7 +204,7 @@ In certain situations, the Lightning wallet may not have enough channel [liquidi
 
 <div class="center" markdown="1">
 
-**On-chain fees**
+#### On-chain fees
 
 {% include image.html
    image = "/assets/images/guide/daily-spending-wallet/sending/confirm-fees.png"
