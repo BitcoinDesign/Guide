@@ -165,7 +165,7 @@ When responding to an invoice that contains all relevent information, the user c
 
 **Recipient**
 
-The most convenient option for choosing a recipient is from previously saved [contacts]({{ '/guide/daily-spending-wallet/contacts/' | relative_url }}). Alternatively, users can enter Lightning addresses, Lightning node IDs, on-chain addresses, or other static identifies that are supported by the wallet.
+The most convenient option for choosing a recipient is from a previously saved [contact]({{ '/guide/daily-spending-wallet/contacts/' | relative_url }}). Alternatively, users can enter Lightning addresses, Lightning node IDs, on-chain addresses, or other addresses that are supported by the wallet.
 
 There are also static [invoice types]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }}) that can receive payments repeatedly. These are less intuitive overall due to their appearance, but could also be considered payment endpoints.
 
@@ -198,7 +198,7 @@ On the Lightning network, payments are passed between nodes to get from the send
 
 **Lightning service provider fees**
 
-In certain situations, the Lightning wallet may not have enough channel [liquidity]({{ '/guide/how-it-works/liquidity/' | relative_url }}) to send a payment. [Wallet providers]({{ '/guide/how-it-works/lightning-service-providers/' | relative_url }}) may offer to alleviate these friction points, and earn additional fees. A common scenario is the automatic opening of a payment channel when a wallet attempts to send a payment larger than their outbound capacity.
+Lightning wallets may require [additional services]({{ '/guide/how-it-works/lightning-services/' | relative_url }}) to solve certain usability issues. An example being a lightning service provider (LSP) opening payment channels and providing [inbound liquidity]({{ '/guide/how-it-works/liquidity/' | relative_url }}) for the user, so they can receive payments. As these services are offered by third parties, additional fees may be charged.
 
 </div>
 
