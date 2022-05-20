@@ -218,6 +218,10 @@ In certain situations, the Lightning wallet may not have enough channel liquidit
 
 This fee is dependent on how many other transactions are currently waiting to be processed on the base layer as a whole. The [average fee](https://ycharts.com/indicators/bitcoin_average_transaction_fee) in January 2021 was $0.63, and $28.60 in April 2021.
 
+Unfortunately, it is common for users to overpay on-chain fees by mistake. Wallets should have mechanisms in place to avoid this happening.
+
+If a user's transaction amount is low compared to the fee they would pay to broadcast, warn them. There are no standards regarding the threshold percentage to trigger such an alert. A good benchmark is to warn the user if their fee is 50% or more than the value of the transaction itself. You might choose a different threshold for your app. Procedures like this should be enough to ensure users do not overpay on-chain fees unintentionally.
+
 </div>
 
 ## Review & approval
