@@ -6,6 +6,14 @@ parent: Glossary
 nav_order: 1
 permalink: /guide/glossary/address/
 main_classes: -no-top-padding
+image_base: /assets/images/guide/glossary/address/
+images_validation:
+    - file: address-valid
+      alt: Send confirmation screen with a checkbox next to the address
+      caption: Confirmation that an address is valid can be subtle.
+    - file: address-invalid
+      alt: Send confirmation screen with the address highlighted in red and disabled send button
+      caption: Invalid addresses should be clearly highlighted and sending should not be possible.
 ---
 
 <!--
@@ -98,6 +106,33 @@ To illustrate the problem, suppose the sender is using a legacy wallet and payin
 The receiver should then have the ability to switch to a Script or Taproot address that does not have all the benefits of SegWit, like cheaper transactions and more advanced features, but will be compatible with the sender's wallet.
 
 </div>
+
+## Visual formatting
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/glossary/address/address-expanded.png"
+   retina = "/assets/images/guide/glossary/address/address-expanded@2x.png"
+   width = 250
+   height = 541
+   caption = "Visual formatting can make it easier to compare addresses character by character."
+   alt-text = "Screen showing a modal with a bitcoin address in large type."
+   layout = "float-right-desktop -background -shadow"
+%}
+
+Handling addresses can be stressful when sending bitcoin. Transactions cannot be reversed, and sending to an incorrect address may mean loss of funds. While address formats are what they are, visual formatting can make it easier for users to compare addresses and ensure their accuracy.
+
+Especially when addresses are displayed in a compacted way, make sure to offer a more easily readable alternative.
+
+</div>
+
+## Address validation
+
+Validation with visual feedback can reduce user anxiety about making mistakes. While addresses look like randomly assembled characters, there are patterns that can be used to identify whether an address is valid or not. It may be possible to even identify which characters are incorrect, based on the format. There are limits to this, as too many mistakes may result in a valid address, except it is a different one that the user intended to enter.
+
+{% include image-gallery.html pages = page.images_validation %}
+
 
 ## Address reuse
 
