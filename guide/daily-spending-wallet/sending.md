@@ -167,7 +167,7 @@ When responding to an invoice that contains all relevent information, the user c
 
 The most convenient option for choosing a recipient is from a previously saved [contact]({{ '/guide/daily-spending-wallet/contacts/' | relative_url }}). Alternatively, users can enter Lightning addresses, Lightning node IDs, on-chain addresses, or other addresses that are supported by the wallet.
 
-There are also static [invoice types]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }}) that can receive payments repeatedly. These are less intuitive overall due to their appearance, but could also be considered payment endpoints.
+There are also static [payment requests]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }}) that can receive payments repeatedly. These are less intuitive overall due to their appearance, but could also be considered payment endpoints.
 
 **Amount**
 
