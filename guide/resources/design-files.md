@@ -52,6 +52,12 @@ files:
     retina: /assets/images/guide/resources/design-files/bitcoin-design-community-seal@2x.jpg
     width: 400
     height: 210
+  - caption: <a href="https://bitcoinforlocalbusiness.com">Bitcoin for local business trifold website</a>
+    alt: Bitcoin for local business trifold
+    image: /assets/images/guide/resources/design-files/bitcoin-for-local-business-trifold.png
+    retina: /assets/images/guide/resources/design-files/bitcoin-for-local-business-trifold@2x.png
+    width: 400
+    height: 210
 ---
 
 <!--
