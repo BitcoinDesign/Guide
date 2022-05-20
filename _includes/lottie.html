@@ -41,8 +41,8 @@
                 <span class="play" aria-hidden="true">Play animation</span>
             {% endif %}
         {% if include.controls %}
-            <svg viewBox="0 0 32 32" aria-hidden="true" class="toggle-icon pause"><filter id="shadow"><feDropShadow dx="1" dy="1" stdDeviation="1" flood-opacity="0.3"/></filter><use xlink:href="#svg-pause" style="filter:url('#shadow')" x="4" y="4"></use></svg>
-            <svg viewBox="0 0 32 32" aria-hidden="true" class="toggle-icon play"><filter id="shadow"><feDropShadow dx="1" dy="1" stdDeviation="1" flood-opacity="0.3"/></filter><use xlink:href="#svg-play" style="filter:url('#shadow')" x="4" y="4"></use></svg>
+            <svg viewBox="0 0 32 32" aria-hidden="true" class="toggle-icon pause"><use xlink:href="#svg-pause" x="4" y="4"></use></svg>
+            <svg viewBox="0 0 32 32" aria-hidden="true" class="toggle-icon play"><use xlink:href="#svg-play" x="4" y="4"></use></svg>
         </button>
         {% endif %}
     </figcaption>
