@@ -136,7 +136,21 @@ Validation with visual feedback can reduce user anxiety about making mistakes. W
 
 ## Address reuse
 
-Address reuse is the practice of receiving more than one transaction to a single bitcoin address. Although there are obvious usability benefits of reusing an address, this practice is not recommended due to the negative impact on privacy and security. Reusing an address makes it easier to correlate transactions with a particular user, thus hurting the pseudonymity of the user and thus the overall censorship resistance of the network. More on address re-use [here](https://en.bitcoin.it/wiki/Address_reuse)
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/glossary/address/address-reuse.png"
+   retina = "/assets/images/guide/glossary/address/address-reuse@2x.png"
+   width = 250
+   height = 541
+   caption = "Address reuse can be highlighted and explained to users so they can make an informed decision."
+   alt-text = "Screen showing a modal advising against bitcoin address re-use."
+   layout = "float-right-desktop -background -shadow"
+%}
+
+Address reuse is the practice of receiving more than one transaction to a single bitcoin address. Although there are obvious usability benefits of reusing an address, this practice is not recommended due to the negative impact on privacy and security. Reusing an address makes it easier to correlate transactions with a particular user, thus hurting the pseudonymity of the user and thus the overall censorship resistance of the network. More on address reuse [here](https://en.bitcoin.it/wiki/Address_reuse).
+
+</div>
 
 ---
 
