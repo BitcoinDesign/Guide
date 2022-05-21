@@ -86,6 +86,9 @@ imagesReview:
     - file: confirm
       alt: Invoice approval screen
       caption: A compact summary to confirm the information is accurate.
+    - file: confirm-high-fees
+      alt: Confirmation screen with note about high fees
+      caption: Highlight information the user should consciously approve, like high fees.
     - file: enter-pin-before-payment
       alt: Enter PIN screen
       caption: Optionally, this wallet is asking the user to enter their PIN as the final step before paying.
