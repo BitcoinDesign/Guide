@@ -78,7 +78,7 @@ As a payment network, bitcoin was designed to be borderless and permissionless. 
 
 A great side-effect is that a product designed with accessibility in mind is also easier to use for the part of the audience without impairments. This is referred to as the "[curb-cut](https://en.wikipedia.org/wiki/Curb_cut_effect)" effect. For example, many hearing people use closed captioning.
 
-As a wider community we also have a moral obligation to make products [inclusive]({{ '/guide/getting-started/principles/#inclusion' | relative_url }}) for everyone and to ensure that the experience they have with our product is suitable to them, regardless of their physical, mental abilities.
+As a wider community, we also have a moral obligation to make products [inclusive]({{ '/guide/getting-started/principles/#inclusion' | relative_url }}) for everyone and ensure that their experiences with our products are suitable, regardless of their physical and mental abilities.
 
 ## Categories of accessibility needs
 
