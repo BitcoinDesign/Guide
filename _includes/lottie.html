@@ -1,0 +1,50 @@
+{% assign min = 1 %}
+{% assign max = 1000 %}
+{% assign diff = max | minus: min %}
+{% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
+<figure class="-{{ include.layout }}">
+    <div class="lottie-fallback">
+        <noscript>
+            <img
+                src="{{ include.image | relative_url }}"
+                {% if include.retina %}
+                srcset="{{ include.image | relative_url }} 1x, {{ include.retina | relative_url }} 2x"
+                {% endif %}
+                alt="{{ include.alt-text }}"
+                width="{{ include.width }}"
+                height="{{ include.height }}"
+                loading="lazy"
+            >
+        </noscript>
+    </div>
+    <div
+        class="lottie"
+        id="lottie-{{randomNumber}}"
+        data-name="lottie-{{randomNumber}}"
+        data-lottie="{{include.lottie-path}}"
+        data-loop="{{include.loop}}"
+        aria-describedby="lottie-{{randomNumber}}-description"
+        {% if include.width %}
+        style="max-width:{{include.width}}px;"
+        {% endif %}
+    ></div>
+    <p class="sr-only" id="lottie-{{randomNumber}}-description">{{include.alt-text}}</p>
+    {% if include.caption or include.controls %}
+    <figcaption{% if include.controls %} class="animation-controls default"{% endif %}>
+        {% if include.controls %}
+        <button class="pause" aria-label="Pause animation" data-pause-label="Pause animation" data-play-label="Play animation" aria-controls="lottie-{{randomNumber}}">
+        {% endif %}
+            {% if include.caption %}
+                {{ include.caption | no_runts | markdownify }}
+            {% elsif include.controls %}
+                <span class="pause" aria-hidden="true">Pause animation</span>
+                <span class="play" aria-hidden="true">Play animation</span>
+            {% endif %}
+        {% if include.controls %}
+            <svg viewBox="0 0 32 32" aria-hidden="true" class="toggle-icon pause"><use xlink:href="#svg-pause" x="4" y="4"></use></svg>
+            <svg viewBox="0 0 32 32" aria-hidden="true" class="toggle-icon play"><use xlink:href="#svg-play" x="4" y="4"></use></svg>
+        </button>
+        {% endif %}
+    </figcaption>
+    {% endif %}
+</figure>

@@ -94,6 +94,15 @@
     background-repeat:   no-repeat;
     background-position: center center;
     transition: background-color 150ms $ease;
+    position: relative;
+
+    svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
 
     @include retina() {
       background-image: var(--banner-image-path-mobile-retina);
@@ -247,3 +256,12 @@
   }
 }
 
+.lottie-active {
+  .home-banner {
+    .home-banner-image {
+      &.lottie {
+        background-image: none;
+      }
+    }
+  }
+}
