@@ -316,14 +316,11 @@ Channel reserves make cheating attempts less economical. When one channel party 
 
 ### What is the reserve amount?
 
-The channel reserve amount is dynamic and unique to the user.
-BOLT 2 defined that the channel reserve amount should be 1% with a minimum value of the dust limit (which is currently [354 sats](https://github.com/lightning/bolts/blob/master/02-peer-protocol.md))
+The channel reserve amount is dynamic and unique to each channel participant. As defined in [BOLT 2](https://github.com/lightning/bolts/blob/master/02-peer-protocol.md), the channel reserve amount dynamically trends towards 1% of the users local channel capacity. The channel reserve can not be lower than the current 354 sats minimum.
 
-If a user has a larger amount in the channel, then the reserve amount being held has a greater effect on them, especially if they want to use all the funds they placed in the channel straight away.
-To give an example, if a user opens a channel with a total capacity of 100,000 sats, their part of the channel reserve is 1,000 sats (1% of 100,000 sats), and only 99,000 sats are spendable.
+So if a user has 100,000 sats of local capacity, their channel reserve will be 1000 sats (1% of 100,000). This means the user can only spend 99,000 sats of the local capacity. The channel counter party also has their own channel reserve which aims for a 1% reserve. This means the total channels capacity will have around 2% put aside and undependable as a reserve. 
 
-Both sides independently have a channel reserve. So if one side is 100,000 sats their reserve will be 1,000 sats. If the other side is 150,000 sats, their reserve will be 1,500 sats. The total channel wide reserve capacity will then be 2,500 sats.
-The 1% mentioned above is also dynamically adjusted over the channel's lifespan. So if a 100k sats channel receives 50,000 sats, this reserve will adjust to 1500. This adds further complexity for users as it will look like they are constantly losing sats. If a user has many channels open then the dynamic form of adjusting can become confusing.
+As users send and receive funds the channel reserve will dynamically adjust so its always close to 1%. If a users spends 10,000 sats of their 100,000 sats local capacity, their new channel reserve will dynamically adjust from 1000 sats (1% of 100,000 sats) to 900 sats (1% of 90,000). This adjust upwards if the user receive funds. 
 
 ### Effect of Channel Reserve on users
 
