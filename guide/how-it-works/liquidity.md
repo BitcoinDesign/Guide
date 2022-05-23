@@ -310,9 +310,9 @@ By combining the business incentives of an LSP, clever engineering, and good des
 
 ### What is a channel reserve?
 
-The lightning network enforces that to protect users we should have a reserve, called the channel reserve. It is an amount that will be held in a channel and cannot be spent.
-A channel reserve works as a type of insurance against theft. If a peer tries to cheat in a channel then the other party can submit a penalty transaction. This transaction will then take away all the funds from the other user's channel. Having the channel reserve in place ensures that there are funds available to take away should this occur.
-Each side of a channel maintains the channel reserve, and the protocol ensures that there is always progress being made towards meeting this reserve amount. The channel reserve capacity is the amount of both sides of the parties combined.  
+A channel reserve is an amount that is set aside by each channel participant which ensures neither have 'nothing at stake' if a cheating attempt occurs. This reserve can not be spent, and is held aside for the entirety of the channels lifetime. 
+
+Channel reserves make cheating attempts less economical. When one channel party attempts to cheat the other and they are caught, a [penalty transaction](https://fiatjaf.com/73095980.html) can be used to steal all the cheating parties bitcoin as punishment. Channel reserves makes it so cheating attempts always have something at stake making this less likely to occur. 
 
 ### Channel reserve amount
 
