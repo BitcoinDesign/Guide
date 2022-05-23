@@ -314,7 +314,7 @@ A channel reserve is an amount that is set aside by each channel participant whi
 
 Channel reserves make cheating attempts less economical. When one channel party attempts to cheat the other and they are caught, a [penalty transaction](https://fiatjaf.com/73095980.html) can be used to steal all the cheating parties bitcoin as punishment. Channel reserves makes it so cheating attempts always have something at stake making this less likely to occur. 
 
-### Channel reserve amount
+### What is the reserve amount?
 
 The channel reserve amount is dynamic and unique to the user.
 BOLT 2 defined that the channel reserve amount should be 1% with a minimum value of the dust limit (which is currently [354 sats](https://github.com/lightning/bolts/blob/master/02-peer-protocol.md))
