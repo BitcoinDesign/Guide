@@ -123,7 +123,7 @@ The receiver should then have the ability to switch to a Script or Taproot addre
 
 Handling addresses can be stressful when sending bitcoin. Transactions cannot be reversed, and sending to an incorrect address may mean loss of funds. While address formats are what they are, visual formatting can make it easier for users to compare addresses and ensure their accuracy.
 
-Especially when addresses are displayed in a compacted way, make sure to offer a more easily readable alternative.
+Especially when addresses are displayed in a compacted way, make sure to offer a more easily readable alternative. Spacing, subtle coloration, and use of mono-space fonts help users identify chunks of the address to compare, and distinguish characters better.
 
 </div>
 
