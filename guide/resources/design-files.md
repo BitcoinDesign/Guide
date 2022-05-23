@@ -46,10 +46,16 @@ files:
     retina: /assets/images/guide/resources/design-files/slide-template@2x.jpg
     width: 400
     height: 210
-  - caption: <a href="https://www.figma.com/community/file/1040606190770628557/Bitcoin-Design-Community-seal">Bitcoin Design Community seal</a><br/><a href="/assets/images/guide/resources/design-files/bitcoin-design-community.zip" download>Download images</a>
+  - caption: <a href="https://www.figma.com/community/file/1040606190770628557/Bitcoin-Design-Community-seal">Bitcoin Design Community seal</a><br/><a href="/assets/images/guide/resources/design-files/bitcoin-design-community.zip" download>Download images</a><br/><a href="#community-seal-usage">Usage note</a>
     alt: Bitcoin Design Community seal
     image: /assets/images/guide/resources/design-files/bitcoin-design-community-seal.jpg
     retina: /assets/images/guide/resources/design-files/bitcoin-design-community-seal@2x.jpg
+    width: 400
+    height: 210
+  - caption: <a href="https://bitcoinforlocalbusiness.com">Bitcoin for local business trifold website</a>
+    alt: Bitcoin for local business trifold
+    image: /assets/images/guide/resources/design-files/bitcoin-for-local-business-trifold.png
+    retina: /assets/images/guide/resources/design-files/bitcoin-for-local-business-trifold@2x.png
     width: 400
     height: 210
 ---
@@ -121,6 +127,12 @@ Sequences of interactive screens can often be more effectively evaluated through
 ### Inspecting
 
 The right-hand panel has an “Inspect” tab that is a great companion for development. Clicking any element will reveal layout and style information under this tab. More on [Figma for developers](https://www.figma.com/best-practices/tips-on-developer-handoff/an-overview-of-figma-for-developers/).
+
+---
+
+## Community seal usage
+
+Feel free to use and remix the seal. Before attaching it more formally to a project or initiative, be sure to ask the broader community. Not everyone might be OK with it. You can post in the [#general](https://bitcoindesign.slack.com/archives/C014J9ZKXB4) channel in Slack or open an issue in the [meta repo](https://github.com/BitcoinDesign/Meta/issues) on github.
 
 ---
 

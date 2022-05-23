@@ -111,6 +111,10 @@ The described process is part of bitcoins hard-coded monetary policy, which foll
 
 A standardized technical document format for the Lightning network protocol specifications. They are hosted on Github [here](https://github.com/lightningnetwork/lightning-rfc). The various Lightning implementations must adhere to the BOLTs in order to be interoperable. However, some Lightning implementations may have features that are not defined in BOLTs.
 
+### Channel Reserve
+
+A channel reserve works as a type of insurance against theft. If a peer tries to cheat in a lightning payment channel, then the other party can submit a penalty transaction. This transaction will then take away all the funds from the other user's channel. Having the channel reserve in place ensures that there are funds available to take away should this occur.
+
 ### Child-pays-for-parent (CPFP)
 
 Allows the recipient of a pending transaction to speed up confirmation. They create a new transaction (child) spending the to-be-received bitcoin with a higher fee than the original transaction (parent). This signals to miners to process both transactions, for which they will be rewarded with the higher fee.
@@ -424,6 +428,10 @@ This term is often used interchangeably for very different things. A user can *d
 </div>
 
 [Read more]({{ "/guide/glossary/wallet" | relative_url }})
+
+### Watchtower
+
+A lightning [service]({{ "/guide/how-it-works/lightning-service-providers/#watchtowers" | relative_url }}) that monitors lightning nodes for [fraudulent channel closes](https://wiki.ion.radar.tech/tech/channels/channel-closing#fraudulent-force-close). If one occurs, they broadcast a [penalty transaction](https://river.com/learn/terms/p/penalty-transaction/). They sometimes take a small fee for offering this service. For design guidance on using Watchtowers in your application, see the [security page]({{ "/guide/daily-spending-wallet/security/#preventing-theft-when-offline" | relative_url }}).
 
 
 ### Additional resources
