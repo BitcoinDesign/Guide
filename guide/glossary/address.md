@@ -129,7 +129,7 @@ Especially when addresses are displayed in a compacted way, make sure to offer a
 
 ## Address validation
 
-Validation with visual feedback can reduce user anxiety about making mistakes. While addresses look like randomly assembled characters, there are patterns that can be used to identify whether an address is valid or not. It may be possible to even identify which characters are incorrect, based on the format. There are limits to this, as too many mistakes may result in a valid address, except it is a different one that the user intended to enter.
+Validation with visual feedback can reduce user anxiety about making mistakes. While addresses look like randomly assembled characters, there are patterns that can be used to identify whether an address is valid or not. For [segwit]({{'/guide/glossary/address/#segwit-address---p2wpkh' | relative_url}}) and [taproot]({{'/guide/glossary/address/#taproot-address---p2tr' | relative_url}}) addresses, it may be possible to identify which characters are incorrect. However, there are limits to this. Too many mistakes may result in an address that is valid but different from what the user intended to enter.
 
 {% include image-gallery.html pages = page.images_validation %}
 
