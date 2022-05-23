@@ -88,7 +88,7 @@ This includes full or partial blindness, color blindness, and other visual disab
 
 #### Physical
 
-A physical disability can effect a person temporarily or permanently. On a practical level this affects a their ability to use a keyboard or mouse. Tapping a screen or holding a phone still to scan a QR code could pose as  a challenge. Seventy-five million people across the world need a wheel chair on a daily basis ([source](https://www.inclusivecitymaker.com/disabled-people-in-the-world-in-2021-facts-and-figures/)). Listen to a [quadriplegic talking about accessibility](https://www.youtube.com/watch?v=eMFrcJBX0pA).
+A physical disability can effect a person temporarily or permanently. On a practical level this affects their ability to use a keyboard or mouse. Tapping a screen or holding a phone still to scan a QR code could pose as  a challenge. Seventy-five million people across the world need a wheel chair on a daily basis ([source](https://www.inclusivecitymaker.com/disabled-people-in-the-world-in-2021-facts-and-figures/)). Listen to a [quadriplegic talking about accessibility](https://www.youtube.com/watch?v=eMFrcJBX0pA).
 
 #### Intellectual
 
