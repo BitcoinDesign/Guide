@@ -342,6 +342,7 @@ During onboarding when a user opens their first channel and when trying to send 
 In general the channel reserve itself adds an additional layer of complexity to mobile users who just want to make payments.
 
 There are however other, much more fool-proof ways to prevent theft such as:
+
 1) [Using watchtowers](https://bitcoin.design/guide/how-it-works/lightning-services/)
 2) Ensuring users regularly check their apps.
 
