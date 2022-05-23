@@ -96,7 +96,7 @@ Learning difficulties refer to a lower ability to understand new or complex info
 
 #### Hearing
 
-Hearing difficulty such as being partly deaf, this can affect one or both ears. Any hearing loss below 20 decibels is considered a hearing loss. 400 million people have some form of deafness or hearing loss.([source](https://www.inclusivecitymaker.com/disabled-people-in-the-world-in-2021-facts-and-figures/))
+This includes hearing difficulties such as being completely or partly deaf, affecting one or both ears. Any hearing loss below 20 decibels is considered a hearing loss. 400 million people have some form of deafness or hearing loss ([source](https://www.inclusivecitymaker.com/disabled-people-in-the-world-in-2021-facts-and-figures/)).
 
 #### Literacy
 
