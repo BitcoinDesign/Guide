@@ -84,7 +84,7 @@ As a wider community, we also have a moral obligation to make products [inclusiv
 
 #### Vision
 
-Full or partial blindness, color blindness and other visual disabilities. Three million people in the US alone have vision impairment and one million people are blind ([source](https://www.afb.org/research-and-initiatives/statistics)). See how a [blind person uses an iPhone](https://youtu.be/fjdcKioHb5w).
+This includes full or partial blindness, color blindness, and other visual disabilities. Three million people in the US alone have vision impairment, and one million people are blind ([source](https://www.afb.org/research-and-initiatives/statistics)). See how a [blind person uses an iPhone](https://youtu.be/fjdcKioHb5w).
 
 #### Physical
 
