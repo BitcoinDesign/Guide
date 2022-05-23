@@ -10,33 +10,51 @@ image: https://bitcoin.design/assets/images/guide/designing-products/accessibili
 image_base: /assets/images/guide/designing-products/accessibility/
 exampleImages:
     - file: annotations-bad
-      alt:
+      modalImage: annotations-bad-big
+      modalWidth: 750
+      modalHeight: 1624
+      alt: Request screen with lacking voice control overlays
       caption: An example of a screen with missing button labels. The small overlays indicate the information provided to a screen reader.
     - file: annotations-bad-isolated
-      alt:
+      modalImage: annotations-bad-isolated-big
+      modalWidth: 750
+      modalHeight: 1624
+      alt: Blacked-out screen with voice control overlays
       caption: The same screen without UI elements to better highlight what is accessible to a visually impaired person.
     - file: annotations-good
-      alt:
+      modalImage: annotations-good-big
+      modalWidth: 750
+      modalHeight: 1624
+      alt: Request screen with good voice control overlays
       caption: Here, all elements are selectable, well-ordered and labelled. The user has multiple options to share the address, based on their needs.
     - file: annotations-good-isolated
-      alt:
+      modalImage: annotations-good-isolated-big
+      modalWidth: 750
+      modalHeight: 1624
+      alt: Blacked-out screen with good voice control overlays
       caption: Well annotated content is understandable even when the screen cannot be seen.
 exampleImagesTwo:
     - file: ordering-bad
-      alt:
+      modalImage: ordering-bad-big
+      modalWidth: 750
+      modalHeight: 1624
+      alt: Blacked-out screen with poorly ordered voice control overlays
       caption: When the order of elements on the screen is not correctly defined, users have a harder time making sense of them.
     - file: ordering-good
-      alt:
+      modalImage: ordering-good-big
+      modalWidth: 750
+      modalHeight: 1624
+      alt: Blacked-out screen with well ordered voice control overlays
       caption: A correct order guides users logically through the UI.
 exampleImagesThree:
     - file: multi-sensory-feedback
-      alt:
+      alt: Request screen showing visual feedback for the Copy address function
       caption: Make sure to offer alternate interaction methods and provide multi-sensory feedback for user actions.
     - file: dynamic-type
-      alt:
+      alt: Request screen with large text than normal
       caption: Ensure the layout still works with larger text sizes. Respect other user preferences like reducing motion and increased contrast.
     - file: color-vision-defficiencies
-      alt:
+      alt: Request screen in greyscale
       caption: Ensure the information can be understood by those with color vision defficiences. For example, by using "+" and "-" indicate withdrawals and deposits instead of green and red coloration only.
 ---
 
