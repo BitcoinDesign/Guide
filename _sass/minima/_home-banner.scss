@@ -188,12 +188,14 @@
     max-width: 800px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
 
     > p {
       font-size: 12px;
-      line-height: 24px;
+      line-height: 18px;
       margin: 0;
+      flex-basis: 50%;
+      padding-right: 12px;
 
       a {
         color: black;
@@ -207,13 +209,15 @@
 
     .home-banner-info-options {
       display: flex;
-      align-items: center;
+      align-items: start;
+      flex-basis: 50%;
+      justify-content: end;
 
       a,
       button {
         display: block;
         font-size: 12px;
-        line-height: 24px;
+        line-height: 18px;
         color: black;
         text-decoration: underline;
 
@@ -238,6 +242,7 @@
     .home-banner-info-wrapper {
       > p {
         font-size: 10px;
+        line-height: 16px;
       }
 
       .home-banner-info-options {
@@ -245,7 +250,7 @@
         a,
         button {
           font-size: 10px;
-          line-height: 20px;
+          line-height: 16px;
         }
 
         a + button {
