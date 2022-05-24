@@ -319,11 +319,11 @@ A user chooses to send a payment to one of their contacts. They enter the amount
 
 ---
 
-Next, let's look at how [lightning service providers]({{ '/guide/how-it-works/lightning-service-providers/' | relative_url }}) work.
+Next, let's look at how [liquidity]({{ '/guide/how-it-works/liquidity/' | relative_url }}) works on the lightning network.
 
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/backups"
    previousName = "Bitcoin backups"
-   nextUrl = "/guide/how-it-works/lightning-service-providers/"
-   nextName = "Lightning service providers"
+   nextUrl = "/guide/how-it-works/liquidity/"
+   nextName = "Liquidity"
 %}

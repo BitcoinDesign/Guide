@@ -30,6 +30,9 @@ imagesGrouping:
     - file: grouped-micropayments
       alt: Smartphone screen showing a many micro payments grouped together
       caption: Smart grouping can help keep the list easy to parse.
+    - file: expanded-micropayments
+      alt: Smartphone screen showing a list of condensed micro payments
+      caption: When expanded, the micropayment information can be kept to a minimum.
 imagesSearch:
     - file: search
       alt: Smartphone screen showing a search and export options for a list of payments
@@ -42,7 +45,7 @@ imagesSearch:
       caption: If an invoice includes a description or other useful data (e.g. [BOLT 11](https://github.com/lightning/bolts/blob/master/11-payment-encoding.md#rationale-2)), make sure to store it.
     - file: sending
       alt: Smartphone screen showing a payment that is in the process of being sent
-      caption: Make it easy to add meta data when a user sends or receives a transaction, as it is top-of-mind at that moment.
+      caption: Make it easy to add metadata when a user sends or receives a transaction, as it is top-of-mind at that moment.
 imagesReceive:
     - file: receive-transaction
       alt: Smartphone screen showing a completed on-chain payment
@@ -78,14 +81,15 @@ imagesSend:
 
 <!--
 
+This page explains a feature for allowing users to review and organize their payment activity.
 
 -->
 
-Every wallet includes a list of transactions that allow the users to see who they sent bitcoin to and who they received bitcoin from. This sounds straightforward, but there are many detailed design decisions to consider.
+Every wallet includes a list of transactions that allow the users to see who they [sent]({{ '/guide/daily-spending-wallet/sending/' | relative_url }}) bitcoin to and who they [received]({{ '/guide/daily-spending-wallet/requesting/#receiving-a-payment' | relative_url }}) bitcoin from. This sounds straightforward, but there are many detailed design decisions to consider.
 
 ### What is a transaction?
 
-On a technical level, a transaction is a transfer of a specific amount between two addresses at a given time. But as human beings, we think of a transaction as a grocery store purchase, a mortgage payment, or paying back a friend for lunch. We should strive to let users capture these additional layers of meaning so they can more intuitively navigate and work with their transaction history.
+On a technical level, a [transaction]({{ '/guide/how-it-works/transactions/' | relative_url }}) is a transfer of a specific amount between two addresses at a given time. But as human beings, we think of a transaction as a grocery store purchase, a mortgage payment, or paying back a friend for lunch. We should strive to let users capture these additional layers of meaning so they can more intuitively navigate and work with their transaction history.
 
 {% include image-gallery.html pages = page.imagesBasics %}
 
@@ -140,7 +144,7 @@ The Lightning network makes micropayments economically and technically viable. F
 
 ### Search & export
 
-Search is helpful for anyone using a wallet somewhat regularly, especially if micropayments become more common. Since this functionality relies strongly on quality data, it should be very simple for users to add relevant meta data to transactions.
+Search is helpful for anyone using a wallet somewhat regularly, especially if micropayments become more common. Since this functionality relies strongly on quality data, it should be very simple for users to add relevant metadata to transactions.
 
 Closely linked to search is export, which can serve several purposes. For one, a user may want to migrate to a new wallet and take their transaction history with them. Second, it is useful for accounting and tax purposes, especially for merchants.
 
@@ -171,17 +175,17 @@ It's recommended to approach this type of view based on the unique use case and 
 
 The activity list focuses on summarizing the top-level information, so users can quickly scan the screen to get an overview. If they identify a transaction they want to take a closer look at or interact with, the following screens become relevant.
 
-##### A payment received on-chain
-
-As with the activity list, transaction details screens should also only highlight relevant information and options, and hide tertiary details behind extra taps.
-
-{% include image-gallery.html pages = page.imagesReceive %}
-
 ##### A payment made on Lightning
 
-While the details for Lightning and on-chain payments look very similary, there are subtle differences. Most noticeable for the user is the difference in fees, as well as the fast processing time.
+As with the activity list, transaction details screens should also only highlight relevant information and options, and make secondary details easily accessible.
 
 {% include image-gallery.html pages = page.imagesSend %}
+
+##### A payment received on-chain
+
+While the details for Lightning and on-chain payments look very similary, there are subtle differences. Most noticeable for the user is the difference in fees and processing time.
+
+{% include image-gallery.html pages = page.imagesReceive %}
 
 ### Status display
 
@@ -196,7 +200,7 @@ While the details for Lightning and on-chain payments look very similary, there 
    layout = "float-right-desktop -background -shadow"
 %}
 
-Status indicators are important for on-chain transactions since they take longer to confirm, as well as when things go wrong. While a completed transaction generally doesn't need a status indicator, it should be shown if the transaction completes while the user is watching. Error messages should be clear and provide access to details and options to remedy the problem.
+Status indicators are important for on-chain transactions since they take longer to confirm, as well as when things go wrong. While a completed transaction generally doesn't need a status indicator, it should be shown if the transaction completes while the user is watching. [Error messages]({{ '/guide/daily-spending-wallet/sending/#errors' | relative_url }}) should be clear and provide access to details and options to remedy the problem.
 
 </div>
 
@@ -221,11 +225,11 @@ This can be in the form of text labels, or even uniquely generated icons like [J
 
 ### Wrapping up
 
-As mentioned at the top of the page, there is a lot of nuance in the display of user activity. While this allows for many different small design decisions, users overall benefit if wallets take similar approaches. Particularly when it comes to the addition of meta data that is not stored on-chain or by Lightning nodes, it would be helpful if wallets can converge on standardized data formats to allow for interoperability and data portability.
+As mentioned at the top of the page, there is a lot of nuance in the display of user activity. While this allows for many different small design decisions, users overall benefit if wallets take similar approaches. Particularly when it comes to the addition of metadata that is not stored on-chain or by Lightning nodes, it would be helpful if wallets can converge on standardized data formats to allow for [interoperability]({{ '/guide/getting-started/principles/#interoperability' | relative_url }}) and data portability.
 
 ---
 
-Next, let's look further into [contacts]({{ '/guide/daily-spending-wallet/contacts' | relative_url }}).
+Closely related to activity is the next page about [contacts]({{ '/guide/daily-spending-wallet/contacts' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/daily-spending-wallet/sending/"

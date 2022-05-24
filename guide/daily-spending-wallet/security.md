@@ -9,6 +9,17 @@ redirect_from:
  - /guide/onboarding/protecting-a-wallet/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/daily-spending-wallet/security/protecting-a-wallet-preview.png
+image_base: /assets/images/guide/daily-spending-wallet/security/
+images_watchtower:
+    - file: lightning-network-settings
+      alt:
+      caption: A sample settings page for the lightning network.
+    - file: watchtower-details
+      alt:
+      caption: Here, a default watchtower service is chosen.
+    - file: watchtower-details-custom
+      alt:
+      caption: The user has defined a custom watchtower.
 ---
 
 <!--
@@ -257,108 +268,19 @@ After a user has backed up their recovery phrase, an option to delete it may be 
 
 </div>
 
-## Hiding Sensitive Information
+## Preventing theft when offline
 
-Imagine this scenario. The user is in a public place, and they need to make a payment using their bitcoin wallet. They open the wallet on their phone, but they don’t feel comfortable having their address and balance information clearly visible to strangers who may be looking over their shoulder, persons lurking, or video surveillance. Hence by giving users the ability to hide sensitive information in their wallet, but only when desired, they gain an added sense of physical privacy and security when using the app in public.
+Lightning wallets need to be online to monitor their payment channels to prevent their counterparties from attempting to steal their bitcoin. Mobile wallets, however, are frequently offline, usually due to a poor connection or the user not having the wallet open on their device.
 
-#### What information is considered sensitive?
+Most major mobile operating systems do not allow apps open in the background to run tasks, such as monitoring a lightning node. This restriction is intended to improve battery life and prevent apps from acting maliciously in the background.
 
-Sensitive information in wallet applications include the wallet balance, addresses, private keys and previous transactions information.
-- Wallet Balance - shows how much is owned
-- Addresses - can be used to track on-chain transaction history
-- Invoices - can be used to track Lightning payment history
-- Private keys - can be used to access and transfer bitcoins
+However, this prevents mobile lightning wallets from being reliable monitors of their payment channels. Malicious actors could take advantage of this and attempt to steal a mobile wallet user's bitcoin by closing channels with incorrect data.
 
-It's more common for wallets to protect private keys, but not much is done for other sensitive information like the balance, addresses, and previous transactions. A few wallets like [Bitcoin Core](https://bitcoin.org/en/bitcoin-core/), [Wasabi](https://wasabiwallet.io/), [Muun](https://muun.com/), and others have made it work, though. Below are patterns and considerations for hiding and revealing sensitive information.
+One technique to reduce this risk is to notify the user when the application has been offline for an extended period. This way, they can open the app and thereby enable it to check their channels. Forced channel closes have a built-in, agreed-upon delay. Send notifications earlier than this delay so that users have time to respond appropriately.
 
-### Quickly hiding balances
+Another technique is to use [watchtowers](https://wiki.ion.radar.tech/tech/research/watchtowers). These are third parties that continuously monitor wallets and punish bad actors who attempt to cheat the wallet they are monitoring. Watchtowers should be provided by a different party than the wallet and payment channels to reduce the risk of collusion.
 
-<div class="center" markdown="1">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/security/quick-hide-access.png"
-   retina = "/assets/images/guide/daily-spending-wallet/security/quick-hide-access@2x.png"
-   alt-text = "A gif of a mobile interface for hiding user information"
-   caption = "Home screen with a hidden balance and a quick reveal toggle."
-   width = 250
-   height = 541
-   layout = "float-right-desktop -background -shadow"
-%}
-
-The hide icon/button, which is usually displayed within close reach of the balance itself, is used to quickly and easily hide wallet information by tapping, and revealing it again by tapping and holding.
-
-This is an easy and convenient way to switch between revealed and hidden states, but still makes it relatively easy for anyone else to reveal user information if they have access to the device.
-
-</div>
-
-### Entering a PIN to reveal information
-
-<div class="center" markdown="1">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/security/hidden-balance-pin-reveal.png"
-   retina = "/assets/images/guide/daily-spending-wallet/security/hidden-balance-pin-reveal@2x.png"
-   alt-text = "A gif showing a mobile interface where hidden information is revealed with a PIN"
-   caption = "Revealing the balance could require PIN entry."
-   width = 250
-   height = 541
-   layout = "float-right-desktop -background -shadow"
-%}
-
-With this method, it's as easy to reverse the hidden state as enabling it. This is good for convenience's sake. However, for protection against unauthorized access, perhaps the user should only be able to unhide their information if a PIN or password has been entered. This could therefore reaffirm the identity of the wallet owner for extra security.
-
-In this example the risk of an unauthorized person revealing their information is minimal due to the PIN required. However, it might not be convenient for the users to repeatedly put in their PIN when ever they want to reveal their information especially if they do so often.
-
-</div>
-
-### Hiding when inactive
-
-<div class="center" markdown="1">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/security/hidden-balance-reveal-timer.png"
-   retina = "/assets/images/guide/daily-spending-wallet/security/hidden-balance-reveal-timer@2x.png"
-   alt-text = "A gif showing a mobile interface where sensitive information is hidden by default"
-   caption = "A timer could also be used before automatic balance reveal."
-   width = 250
-   height = 541
-   layout = "float-right-desktop -background -shadow"
-%}
-
-Another solution is to invoke the wallet’s hidden state as a default when the app is opened, to protect against prying eyes during initial display. The pre-hidden state can be unveiled after a tap, PIN entry, or perhaps a short 5-second timer.
-
-This gives users some time to assess their environment before their info is displayed but could leave them frustrated, having to wait for their information to be revealed especially in an urgent situation.
-
-</div>
-
-### An application-wide setting
-
-<div class="center" markdown="1">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/security/privacy-and-security-settings.png"
-   retina = "/assets/images/guide/daily-spending-wallet/security/privacy-and-security-settings@2x.png"
-   alt-text = "A gif showing a mobile interface where the toggle for hiding information is moved to settings"
-   caption = "Hiding sensitive data could be toggle in the settings."
-   width = 250
-   height = 541
-   layout = "float-right-desktop -background -shadow"
-%}
-
-Having the show/hide button right on the main screen makes things quite obvious for someone who has access to a user's device to press unhide. A solution would be to move the hide toggle away from the home screen and into the [app settings](https://medium.com/@olanrewajusodiq64/the-ui-ux-of-hide-balance-designing-to-improve-asset-security-e4b20668f315). This way, if someone has access to their device and opens the app, they may not immediately know how to reveal the balance, transaction, or addresses as it is not made obvious as the previous solutions.
-
-An advantage here is the risk of an unauthorized person revealing their information is minimal due to the fact that the toggle isn't immediately visible on the home screen. The downside is that a user cannot quickly hide their information if the need arises.
-
-</div>
-
----
-
-## Why is this important to designers?
-{: .no_toc }
-
-Privacy in bitcoin payments goes far beyond hiding balances and other sensitive information. The [privacy by design framework](https://www.ipc.on.ca/wp-content/uploads/Resources/7foundationalprinciples.pdf) states that privacy should be incorporated and built into products by default. This way, whether or not the user is concerned with their data privacy, they would always be protected through good UX and UI.
-
-By including UX patterns for hiding information pattern wallets, we give users a greater sense of control and comfort in any situation. They have the freedom to decide whether or not they want their information visible.
+{% include image-gallery.html pages = page.images_watchtower %}
 
 ---
 

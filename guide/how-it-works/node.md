@@ -3,7 +3,7 @@ layout: guide
 title: Nodes
 description: A node refers to a bitcoin client that participates in the bitcoin network.
 parent: How it works
-nav_order: 3
+nav_order: 5
 permalink: /guide/how-it-works/nodes/
 redirect_from:
  - /guide/glossary/node/
@@ -226,8 +226,8 @@ For more information:
 Next, let's learn about the different bitcoin [payment request formats]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }}) that exist.
 
 {% include next-previous.html
-   previousUrl = "/guide/how-it-works/lightning-service-providers/"
-   previousName = "Lightning service providers"
+   previousUrl = "/guide/how-it-works/lightning-services/"
+   previousName = "Lightning services"
    nextUrl = "/guide/how-it-works/payment-request-formats/"
    nextName = "Payment request formats"
 %}

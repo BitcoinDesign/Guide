@@ -4,7 +4,7 @@
 
 {% capture imageURL %}{{ page.image_base }}{{ item.file }}.png{% endcapture %}
 {% capture imageURLRetina %}{{ page.image_base }}{{ item.file }}@2x.png{% endcapture %}
-{% capture captionText %}{{ item.caption | markdownify }}{% endcapture %}
+{% capture captionText %}{{ item.caption | no_runts | markdownify }}{% endcapture %}
 
 {% include picture.html
    image = imageURL

@@ -111,6 +111,10 @@ The described process is part of bitcoins hard-coded monetary policy, which foll
 
 A standardized technical document format for the Lightning network protocol specifications. They are hosted on Github [here](https://github.com/lightningnetwork/lightning-rfc). The various Lightning implementations must adhere to the BOLTs in order to be interoperable. However, some Lightning implementations may have features that are not defined in BOLTs.
 
+### Channel Reserve
+
+A channel reserve works as a type of insurance against theft. If a peer tries to cheat in a lightning payment channel, then the other party can submit a penalty transaction. This transaction will then take away all the funds from the other user's channel. Having the channel reserve in place ensures that there are funds available to take away should this occur.
+
 ### Child-pays-for-parent (CPFP)
 
 Allows the recipient of a pending transaction to speed up confirmation. They create a new transaction (child) spending the to-be-received bitcoin with a higher fee than the original transaction (parent). This signals to miners to process both transactions, for which they will be rewarded with the higher fee.
@@ -174,7 +178,7 @@ BIP44 introduced the following structure, which BIP49 and BIP84 follow:<br/>
 The path to the first address in a bitcoin-wallet using BIP84 will look like this:<br/>
 `m/84h/0h/0h/0/0`
 
-For full [interoperability](/guide/getting-started/principles/#interoperability) a wallet should support all of these standards. More information can be found [here](/guide/designing-products/wallet-interoperability/#wallet-backups) and [here](https://learnmeabitcoin.com/technical/derivation-paths).
+For full [interoperability](/guide/getting-started/principles/#interoperability) a wallet should support all of these standards. More information can be found [here](/guide/designing-products/interoperability/#wallet-backups) and [here](https://learnmeabitcoin.com/technical/derivation-paths).
 
 ### Extended private key (xpriv)
 
@@ -191,6 +195,10 @@ Same as xpub, however the y denotes that this xpub belongs to a wallet that is f
 #### zpub
 
 Same as ypub though the z denotes it is an extended public key from a segregated witness enabled wallet following [BIP84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki).
+
+### Gap limit
+
+For performance reasons, on-chain wallets generally only create 20 addresses and watch them for incoming transactions. As addresses are used, new ones are generated and watched. As only 20 consecutive unused addresses are being watched, incoming transactions on the 21st address and beyond will not be detected. This may cause problems for users when importing wallets. For more, see [BIP 44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki#Address_gap_limit) and [this article](https://blog.lopp.net/mind-the-bitcoin-address-gap/).
 
 ### Hash
 
@@ -330,6 +338,8 @@ Many wallet-applications work with HD wallets and recovery phrases, and are inte
 
 **Technicalities** - Recovery of multisig-wallets needs both the extended public key and the recovery phrase of all participating keys as well as the master key fingerprint as defined by BIP32 concatenated with the derivation path of the public key. The derivation path is represented as 32-bit little endian unsigned integer indexes concatenated with each other. The number of 32 bit unsigned integer indexes must match the depth provided in the extended public key.
 
+**Language considerations** - Recovery phrases typically consists of English-language words, which may not be intuitive to recognize, remember, or write for many users around the world. Consider supporting multiple languages (see [BIP39 wordlists](https://github.com/bitcoin/bips/blob/master/bip-0039/bip-0039-wordlists.md)), or an alternate backup technique like [output descriptors]({{ '/guide/glossary/#output-script-descriptor' | relative_url }}).
+
 ### Simplified payment verification (SPV)
 
  It is possible to verify bitcoin payments without running a full network node. This is called simplified payment verification, or SPV. A user’s bitcoin spv wallet only needs a copy of the block headers of the longest chain, which are available by querying network nodes until it is apparent that the longest chain has been obtained. SPV lets you validate your transactions without having to worry about anybody else’s transactions. It ensures your transactions are in a block, and it provides confirmations that additional blocks are being added to the chain. An SPV wallet is a type of bitcoin wallet that works this way.
@@ -418,6 +428,10 @@ This term is often used interchangeably for very different things. A user can *d
 </div>
 
 [Read more]({{ "/guide/glossary/wallet" | relative_url }})
+
+### Watchtower
+
+A lightning [service]({{ "/guide/how-it-works/lightning-service-providers/#watchtowers" | relative_url }}) that monitors lightning nodes for [fraudulent channel closes](https://wiki.ion.radar.tech/tech/channels/channel-closing#fraudulent-force-close). If one occurs, they broadcast a [penalty transaction](https://river.com/learn/terms/p/penalty-transaction/). They sometimes take a small fee for offering this service. For design guidance on using Watchtowers in your application, see the [security page]({{ "/guide/daily-spending-wallet/security/#preventing-theft-when-offline" | relative_url }}).
 
 
 ### Additional resources
