@@ -99,9 +99,11 @@ Local nodes run on local devices. For example, a bitcoin node could be the [Bitc
    layout = "float-left"
 %}
 
-Hosted nodes are run on third-party servers and are common with merchants using [BTCPay Server](https://btcpayserver.org/). While you have some degree of control over a hosted node, using a hosted node can expose your transaction history to the hosting provider and involves trusting them not to tamper with your transaction data.
+Hosted nodes are run on third-party servers. These are common with merchants using [BTCPay Server](https://btcpayserver.org/) and provide good uptime and stability compared to self-hosting.
 
-[Greenlight](https://blockstream.com/lightning/greenlight/) and [Validating Lightning Signer (VLS)](https://gitlab.com/lightning-signer) are experimental ways to run a hosted lightning node whilst users keep custody of their private keys.
+While you have some degree of control over a hosted node, they expose your transaction history to the host and involves trusting them not to give you incorrect transaction data.
+
+[Greenlight](https://blockstream.com/lightning/greenlight/) and [Validating Lightning Signer (VLS)](https://gitlab.com/lightning-signer) are experimental ways to run a hosted lightning node whilst users keep custody of their bitcoin.
 
 </div>
 
@@ -175,7 +177,7 @@ Their main purpose is to track payment channel states and calculate routes for p
    layout = "float-left"
 %}
 
-Routing nodes are the backbone of the lightning network. They serve as hubs that route payments between users. They usually have perfect uptime, large amounts of liquidity, run on [dedicated hardware]({{ '/guide/how-it-works/nodes/#hardware' | relative_url }}), and are well connected with other nodes in the network. In many cases, these node operators aim to profit by taking fees for routing payments or leasing their liquidity out to other users.
+Routing nodes are the backbone of the lightning network. They serve as hubs that route payments between users. They usually have good uptime, large amounts of liquidity, run on [dedicated hardware]({{ '/guide/how-it-works/nodes/#hardware' | relative_url }}), and are well connected with other nodes in the network. In many cases, these node operators aim to profit by taking fees for routing payments or leasing their liquidity out to other users.
 
 </div>
 
