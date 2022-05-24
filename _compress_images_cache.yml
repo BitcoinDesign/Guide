@@ -1472,3 +1472,9 @@ assets/images/guide/resources/design-files/bitcoin-for-local-business-trifold.pn
 assets/images/guide/resources/design-files/bitcoin-for-local-business-trifold@2x.png: bitcoin-for-local-business-trifold@2x.png
 assets/images/guide/daily-spending-wallet/sending/confirm-high-fees.png: confirm-high-fees.png
 assets/images/guide/daily-spending-wallet/sending/confirm-high-fees@2x.png: confirm-high-fees@2x.png
+assets/images/guide/daily-spending-wallet/sending/review-onchain-tx.png: review-onchain-tx.png
+assets/images/guide/daily-spending-wallet/sending/scan-onchain-qr-code.png: scan-onchain-qr-code.png
+assets/images/guide/daily-spending-wallet/sending/onchain-warning@2x.png: onchain-warning@2x.png
+assets/images/guide/daily-spending-wallet/sending/scan-onchain-qr-code@2x.png: scan-onchain-qr-code@2x.png
+assets/images/guide/daily-spending-wallet/sending/onchain-warning.png: onchain-warning.png
+assets/images/guide/daily-spending-wallet/sending/review-onchain-tx@2x.png: review-onchain-tx@2x.png

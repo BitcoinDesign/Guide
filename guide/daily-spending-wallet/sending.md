@@ -92,6 +92,19 @@ imagesReview:
     - file: enter-pin-before-payment
       alt: Enter PIN screen
       caption: Optionally, this wallet is asking the user to enter their PIN as the final step before paying.
+imagesLightning:
+    - file: home
+      alt: Wallet home screen with amount input, pay and request options
+      caption: The user taps the scan button on the home screen.
+    - file: scan-onchain-qr-code
+      alt: Scanning screen as the user scans a QR code of an on-chain address
+      caption: The user scans a QR code, unaware that it is an on-chain address.
+    - file: onchain-warning
+      alt: Warning screen informing that the payment will take longer to confirm and cost a higher fee
+      caption: A warning is triggered to inform the user of longer confirmation time and a higher fee.
+    - file: review-onchain-tx
+      alt: Payment review screen for a higher-fee, on-chain payment
+      caption: The user may choose to proceed with the on-chain payment anyways.
 ---
 
 <!--
@@ -291,6 +304,20 @@ It is ideal when the application can automatically identify and fix or avoid the
 - The app can likely automatically fix the problem with negligible impact on the user
 
 Effectively supporting users when problems occur can build trust and confidence, and essential aspect for financial applications.
+
+### Encouraging lightning network
+
+For the majority of payments a user makes, Lightning is likely to be the best option. It will be faster, more private, and cost less. An ideal scenario would be one where the user does not spend time considering whether to pay on-chain or Lightning — it's all bitcoin to them.
+
+However, this can be challenging with the variety of different payment formats between on-chain and Lightning. What happens when the user is trying to pay somebody, but the receiving party has given them an on-chain address instead of a Lightning invoice?
+
+If your wallet is Lightning-only, the user will not be able to proceed with making payment. However, even if your wallet allows the user to send on-chain payments, this payment could still result in a higher transaction fee than they would have incurred over Lightning. If it's in the users best interest to pay over Lightning, then let them know and help them determine what to do next.
+
+{% include image-gallery.html pages = page.imagesLightning %}
+
+In this example, the user is scanning a QR to make a payment. This wallet recognizes it as an on-chain address. It is capable of making the on-chain payment with submarine swaps. However, that would involve a longer confirmation time and higher fee for such a small payment. It immediately pulls up a modal notification to warn the user that they will have to wait longer for the payment to settle, and pay a higher fee. It informs them they can pay instantly if they can get a different type of QR code from the sender.
+
+If the user has already had this problem before, they will know to ask the recipient for a different type of QR code. If not, they can use the "help me" screen to get more information.
 
 ---
 
