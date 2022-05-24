@@ -278,7 +278,7 @@ var themes = [
     },
     flipLayoutOnMobile: false,
     author: {
-        name: "Jessica Wolff",
+        name: "Jessica Wolff and Andy Ribetz",
         link: "https://github.com/BitcoinDesign/Guide/issues/289"
     }
   },
