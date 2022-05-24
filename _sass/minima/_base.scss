@@ -521,7 +521,7 @@ ul.task-list {
 }
 
 figcaption {
-  &.modal-indicator {
+  &.modal-indicator, &.animation-controls {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -541,4 +541,50 @@ figcaption {
       cursor: pointer;
     }
   }
+
+  &.animation-controls {
+    cursor: pointer;
+
+    .pause {
+      .play {
+        display: none;
+      }
+    }
+
+    .play {
+      .pause {
+        display: none;
+      }
+    }
+
+    &.deactivated {
+      &.default, svg {
+        display: none;
+      }
+    }
+
+    button {
+      border: 0;
+      background: none;
+      color: $grey-dk-000;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      p {
+        margin: 0;
+      }
+
+      svg {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.sr-only {
+  position: absolute;
+  left: -999rem;
 }

@@ -53,6 +53,10 @@ You can upload a custom image for mobile. Plus there is one extra option, you ca
 
 </div>
 
+## Animation
+
+Header banners can also be animated using [lottie](https://github.com/airbnb/lottie-web). You may provide a background image for the right side of the banner and a lottie file with a fallback image for the right side of the banner.
+
 ## How it looks in code
 
 Below are the variable used to configure a theme. These are located in [themes.js](/js/themes.js){:target="_blank"}.
@@ -95,7 +99,8 @@ Below are the variable used to configure a theme. These are located in [themes.j
         pathRetina: 'url("/assets/images/home/banner/template@2x.jpg")',
         pathMobile: 'url("/assets/images/home/banner/template-mobile.jpg")',
         pathMobileRetina: 'url("/assets/images/home/banner/template-mobile@2x.jpg")',
-        backgroundColor: "#fbfbfb"
+        backgroundColor: "#fbfbfb",
+        lottie: '/assets/animations/my-banner.json'
     },
     flipLayoutOnMobile: false,
     author: {
