@@ -3,7 +3,7 @@ layout: guide
 title: Nodes
 description: A node refers to a bitcoin client that participates in the bitcoin network.
 parent: How it works
-nav_order: 3
+nav_order: 5
 permalink: /guide/how-it-works/nodes/
 redirect_from:
  - /guide/glossary/node/
@@ -99,11 +99,9 @@ Local nodes run on local devices. For example, a bitcoin node could be the [Bitc
    layout = "float-left"
 %}
 
-Hosted nodes are run on third-party servers. These are common with merchants using [BTCPay Server](https://btcpayserver.org/) and provide good uptime and stability compared to self-hosting.
+Hosted nodes are run on third-party servers. These provide good uptime and stability compared to self hosted options. While you have some degree of control over hosted nodes, they know your transaction history and could potentially give you incorrect information which is bad for security and privacy.
 
-While you have some degree of control over a hosted node, they expose your transaction history to the host and involves trusting them not to give you incorrect transaction data.
-
-[Greenlight](https://blockstream.com/lightning/greenlight/) and [Validating Lightning Signer (VLS)](https://gitlab.com/lightning-signer) are experimental ways to run a hosted lightning node whilst users keep custody of their bitcoin.
+[Greenlight](https://blockstream.com/lightning/greenlight/) and [Validating Lightning Signer (VLS)](https://gitlab.com/lightning-signer) are experimental ways to run a hosted lightning node whilst users keep custody of their bitcoin. Hosted lightning nodes that custody the users private keys are not recommended.
 
 </div>
 
@@ -160,9 +158,11 @@ Third-party APIs should be avoided. These are custom connection mechanisms built
 
 ## Lightning nodes
 
-Depending on the use case, lightning nodes can be operated in different ways. Some need perfect uptime, large amounts of liquidity, and to be well connected with other lightning nodes. Others are only sometimes online or interacting with the network.
+Depending on the use case, lightning nodes can be operated in different ways. Some need consistent uptime, large amounts of [liquidity]({{ '/guide/how-it-works/liquidity/' | relative_url }}), and to be well connected with other lightning nodes. Others are only periodically online or interacting with the network.
 
-Their main purpose is to track payment channel states and calculate routes for payments to take through the lightning network. To use non-custodial lightning, a user must run a node and stay online to monitor their payment channels to prevent counter-parties from stealing their funds.
+A lightning nodes primary purpose is to track payment channel states, and calculate routes for payments to take through lightning. A lightning node needs to be online to receive and send payments.
+
+Currently, Self-custody on lightning requires a user to run their own node and regularly come online to monitor their payment channels for cheating attempts. Work is being done to separate custody and node operation with projects like [Greenlight](https://blockstream.com/lightning/greenlight/) and [Validating Lightning Signer (VLS)](https://gitlab.com/lightning-signer).
 
 ### Routing nodes
 
@@ -177,7 +177,9 @@ Their main purpose is to track payment channel states and calculate routes for p
    layout = "float-left"
 %}
 
-Routing nodes are the backbone of the lightning network. They serve as hubs that route payments between users. They usually have good uptime, large amounts of liquidity, run on [dedicated hardware]({{ '/guide/how-it-works/nodes/#hardware' | relative_url }}), and are well connected with other nodes in the network. In many cases, these node operators aim to profit by taking fees for routing payments or leasing their liquidity out to other users.
+Routing nodes are the backbone of lightning. They serve as hubs that route payments between users. They have regular uptime, large amounts of liquidity, usually run on [dedicated hardware]({{ '/guide/how-it-works/nodes/#hardware' | relative_url }}), and are well connected with other lightning nodes.
+
+In many cases, these node operators aim to profit by taking fees for routing payments or leasing their liquidity out to other users.
 
 </div>
 
@@ -194,7 +196,7 @@ Routing nodes are the backbone of the lightning network. They serve as hubs that
    layout = "float-left"
 %}
 
-Merchant nodes are primarily used for receiving lightning payments. Business operators often run these so they can accept payments at their stores. These nodes are almost always online and are frequently hosted by a [trusted third party]({{ '/guide/how-it-works/nodes/#third-party' | relative_url }}). Typically, their liquidity is mostly inbound.
+Merchant nodes are primarily used for receiving lightning payments. Merchants run these so they can accept payments at their stores. These nodes need to be online regularly as they receive constant payments. Many merchants use [dedicated hardware]({{ '/guide/how-it-works/nodes/#hardware' | relative_url }}) to run their merchant nodes.
 
 </div>
 
@@ -211,7 +213,9 @@ Merchant nodes are primarily used for receiving lightning payments. Business ope
    layout = "float-left"
 %}
 
-Payment nodes are used by end-users to send and receive lightning payments. These are usually built in to mobile wallets and are only online when the user has the app open. As they are not always online, they need to be periodically checked or use a [watchtower](https://bitcoinops.org/en/topics/watchtowers/) to prevent theft from their payment channel counterparties.
+Payment nodes are used by end-users to send and receive lightning payments. These usually run on the users mobile as part of their lightning wallet and are only online when the app is open. 
+
+As they are not always online, they need to be periodically checked or use a [watchtower](https://bitcoinops.org/en/topics/watchtowers/) to prevent theft from their payment channel counterparties.
 
 </div>
 
@@ -309,8 +313,8 @@ For more information:
 Next, let's learn about the different bitcoin [payment request formats]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }}) that exist.
 
 {% include next-previous.html
-   previousUrl = "/guide/how-it-works/lightning-service-providers/"
-   previousName = "Lightning service providers"
+   previousUrl = "/guide/how-it-works/lightning-services/"
+   previousName = "Lightning services"
    nextUrl = "/guide/how-it-works/payment-request-formats/"
    nextName = "Payment request formats"
 %}

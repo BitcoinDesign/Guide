@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: How it works
-description: Find out about the complexities of how bitcoin works. 
+description: Find out about the complexities of how bitcoin works.
 nav_order: 8
 has_children: true
 permalink: /guide/how-it-works/
@@ -32,7 +32,13 @@ Learn how coin selection is used to choose which UTXOs (or “coins”) to use a
 
 ---
 
-### [Lightning service providers]({{ '/guide/how-it-works/lightning-service-providers/' | relative_url }})
+### [Lightning liquidity]({{ '/guide/how-it-works/liquidity/' | relative_url }})
+
+A primer on liquidity in the lightning network.
+
+---
+
+### [Lightning services]({{ '/guide/how-it-works/lightning-services/' | relative_url }})
 
 Common user experience problems of the Lightning network that can be resolved by third-party service providers.
 

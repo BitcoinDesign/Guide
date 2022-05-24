@@ -97,6 +97,12 @@ A survey and follow-up interview of 990 bitcoin users to determine bitcoin manag
 
 ## Independent research
 
+#### [Are Cryptocurrencies Currencies? Bitcoin as Legal Tender in El Salvador](https://www.davidargente.com/_files/ugd/b05023_7825615207654784864b4c4cc4ec6550.pdf)
+
+_2022 by Alvarez and Argente_ 
+
+A representative national survey was conducted to obtain information on bitcoin’s usage and effects. The authors rely on survey data gathered from face-to-face interviews with 1,800 Salvadorean households. This papers goal is to study the potential of a cryptocurrency to become a medium of exchange.
+
 #### [Real Talk: Women x Crypto 2.0 survey](https://blockfi.com/female-crypto-investor-research)
 
 _2022 by BlockFi_
@@ -172,6 +178,12 @@ Insights into the current state of the cryptoasset industry. The study gathers s
 
 ## Case studies
 
+#### [How Women Across the World View Bitcoin](https://spiral.xyz/how-women-across-the-world-view-bitcoin.pdf)
+
+_2022 by Vongphrachanh and Berkoe._
+
+A research initiative to understand how women outside the U.S who never engaged with bitcoin felt about it and how their perceptions differed from men's. The findings highlight roadblocks faced by would-be adopters.
+
 #### [How Coinbase works](https://builtformars.com/case-studies/how-coinbase-works)
 
 _2020 by Ramsey._
@@ -215,6 +227,6 @@ A blog post by icons8 that covers the usability issues bitcoin has. The main iss
 {% include next-previous.html
    previousUrl = "/guide/resources/design-files/"
    previousName = "Design files"
-   nextUrl = "/guide/contribute/"
-   nextName = "Contribute to guide"
+   nextUrl = "/guide/resources/design-challenges/"
+   nextName = "Design challenges"
 %}
