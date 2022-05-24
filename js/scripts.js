@@ -6,6 +6,7 @@ var searchOverlayVisible = false;
 var mobileMenuVisible = false;
 var figmaEmbeds = [];
 var ref = {};
+var isMobile = window.innerWidth <= 1024;
 
 function toggleMenu() {
   if(mobileMenuVisible) {
@@ -16,8 +17,6 @@ function toggleMenu() {
 };
 
 function updateNavAccessibility() {
-  var isMobile = window.innerWidth <= 1024;
-
   ref.navTrigger.setAttribute("aria-hidden", !isMobile);
   ref.siteNav.setAttribute("aria-hidden", isMobile);
 
@@ -38,9 +37,13 @@ function showMenu() {
 
   setTimeout(function() {
     ref.header.classList.add('-active');
-    ref.siteNav.focus();
-    console.log('stufo');
-  }, 500);
+
+    // Focus on the first nav item
+    var links = ref.siteNav.getElementsByTagName('a');
+    if(links.length > 0) {
+        links[0].focus();
+    }
+  }, 50);
 
   if(searchOverlayVisible) {
     hideSearchOverlay();
@@ -348,10 +351,8 @@ function handleModalImageLinkClick(e) {
         });
     }
 
-    var mobile = window.innerWidth < 640;
-
     ref.modalImageContainer.classList.add('loading');
-    if(mobile && imgTag.dataset.modalWidthMobile && imgTag.dataset.modalHeightMobile) ref.modalImageDimensions = [imgTag.dataset.modalWidthMobile, imgTag.dataset.modalHeightMobile];
+    if(isMobile && imgTag.dataset.modalWidthMobile && imgTag.dataset.modalHeightMobile) ref.modalImageDimensions = [imgTag.dataset.modalWidthMobile, imgTag.dataset.modalHeightMobile];
     else if(imgTag.dataset.modalWidth && imgTag.dataset.modalHeight) ref.modalImageDimensions = [imgTag.dataset.modalWidth, imgTag.dataset.modalHeight];
     else ref.modalImageDimensions = [imgTag.getAttribute('width'), imgTag.getAttribute('height')];
     ref.modalImage.setAttribute('width', ref.modalImageDimensions[0]);
@@ -378,7 +379,7 @@ function handleModalImageLinkClick(e) {
 
     var img,
         modalLink = imgTag.closest('.modal-image-link');
-    if(mobile && modalLink.dataset.modalImageMobile) img = modalLink.dataset.modalImageMobile;
+    if(isMobile && modalLink.dataset.modalImageMobile) img = modalLink.dataset.modalImageMobile;
     else img = modalLink.getAttribute('href');
 
     var request = new Request(img);
@@ -581,11 +582,53 @@ function decideIfLottie(){
 }
 
 window.addEventListener("resize", function(event) {
+  isMobile = window.innerWidth <= 1024;
+
   resizeFigmaEmbeds();
   resizeModal();
 })
 
+// Adds keyup listeners to links in the mobile nav.
+setupMobileNavLinkKeyboardNavigation = function() {
+    var navLinks = ref.siteNav.getElementsByTagName('a');
+    if(navLinks.length > 0) {
+        for(var i=0; i<navLinks.length; i++) {
+            navLinks[i].setAttribute('data-index', i);
+            navLinks[i].addEventListener('keyup', onMobileNavLinkKeyUp);
+        }
+    }
+};
+
+// Handles arrow up/down and escape for mobile nav links.
+onMobileNavLinkKeyUp = function(event) {
+    if(isMobile && mobileMenuVisible) {
+        if(event.which == 38 || event.which == 40) {
+            // Select previous or next menu option.
+            event.preventDefault();
+            var index = parseInt(event.target.getAttribute('data-index'));
+            var navLinks = ref.siteNav.getElementsByTagName('a');
+            var direction = event.which == 38 ? -1 : 1;
+            var newIndex = index + direction;
+            if(newIndex < 0) newIndex = navLinks.length - 1;
+            if(newIndex >= navLinks.length) newIndex = 0;
+            var newLink = navLinks[newIndex];
+            while(newLink.offsetParent === null) {
+                newIndex += direction;
+                if(newIndex < 0) newIndex = navLinks.length - 1;
+                if(newIndex >= navLinks.length) newIndex = 0;
+                newLink = navLinks[newIndex];
+            }
+            newLink.focus();
+        } else if(event.which == 27) {
+            // Escape closes the menu
+            hideMenu();
+        }
+    }
+};
+
 document.addEventListener("DOMContentLoaded", function(event) {
+  isMobile = window.innerWidth <= 1024;
+
   ref.header =  document.getElementById("site-header");
   ref.siteNav =  document.getElementById('site-nav');
   ref.navTrigger = document.getElementById("nav-trigger");
@@ -613,6 +656,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   if(ref.navTrigger) {
     ref.navTrigger.addEventListener('click', toggleMenu);
+
+    setupMobileNavLinkKeyboardNavigation();
   }
 
   var secondaryNavListExpander = document.getElementsByClassName("nav-list-expander");
@@ -625,7 +670,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   setupUnitsAndSymbolsFormatter();
 
-  for(var i = 0; i < ref.modalImageLinks.length; i++) {
-      ref.modalImageLinks[i].addEventListener('click', handleModalImageLinkClick);
+  for(var k=0; i<ref.modalImageLinks.length; k++) {
+      ref.modalImageLinks[k].addEventListener('click', handleModalImageLinkClick);
   }
 });
