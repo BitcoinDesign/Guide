@@ -27,7 +27,7 @@ article.guide {
           margin-top: 0;
         }
 
-        &.modal-indicator {
+        &.modal-indicator, &.animation-controls {
           p {
             margin-top: $spacing-unit / 2;
           }

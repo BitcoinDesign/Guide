@@ -1,4 +1,4 @@
-let themes = [
+var themes = [
   // {
   //   // Template
   //   logo: {
@@ -66,7 +66,7 @@ let themes = [
         labelFillColor: "#000"
     },
     button2: {
-        fillColor: "",
+        fillColor: '',
         outlineColor: "#000",
         labelFillColor: "#000"
     },
@@ -93,7 +93,6 @@ let themes = [
         link: "https://github.com/BitcoinDesign/Guide/issues/45"
     }
   },
-
   {
     // Rutuja bitcoin page theme banner
     logo: {
@@ -126,7 +125,7 @@ let themes = [
         backgroundColor: ''
     },
     copy: {
-        backgroundColor: ""
+        backgroundColor: ''
     },
     background: {
         path: 'url("/assets/images/home/banner/rutuja_bitcoin_theme_banner_web.jpg")',
@@ -227,7 +226,7 @@ let themes = [
         pathRetina: '',
         pathMobile: '',
         pathMobileRetina: '',
-        backgroundColor: ""
+        backgroundColor: ''
     },
     flipLayoutOnMobile: false,
     author: {
@@ -270,11 +269,12 @@ let themes = [
         backgroundColor: ""
     },
     image: {
-        path: '',
-        pathRetina: '',
+        path: 'url("/assets/images/home/banner/bits-and-pieces-fallback.png")',
+        pathRetina: 'url("/assets/images/home/banner/bits-and-pieces-fallback@2x.png")',
         pathMobile: 'url("/assets/images/home/banner/bits-and-pieces-mobile.png")',
         pathMobileRetina: 'url("/assets/images/home/banner/bits-and-pieces-mobile@2x.png")',
-        backgroundColor: ""
+        backgroundColor: '',
+        lottie: "/assets/animations/banner-jessica.json"
     },
     flipLayoutOnMobile: false,
     author: {
@@ -298,7 +298,7 @@ let themes = [
     },
     button1: {
         fillColor: "#F7931A",
-        outlineColor: "",
+        outlineColor: '',
         labelFillColor: "#00"
     },
     button2: {
@@ -314,7 +314,7 @@ let themes = [
         backgroundColor: "#F4F4F4"
     },
     copy: {
-        backgroundColor: ""
+        backgroundColor: ''
     },
     image: {
         path: 'url("/assets/images/home/banner/ongoing-development.png")',
@@ -389,6 +389,8 @@ var applyTheme = function(themeIndex) {
 
     var theme = themes[themeIndex];
 
+    // Del
+
     // Document-wide property.
     var documentProperties = [
         ['--copy-background-color', 'copy.backgroundColor'],
@@ -454,9 +456,20 @@ var applyTheme = function(themeIndex) {
         author.innerText = getProperty(theme, 'author.name');
         author.setAttribute('href', getProperty(theme, 'author.link'));
     }
-};
 
-applyTheme(0);
+    // Lottie properties.
+    var homeBannerImage = document.querySelector('.home-banner-image');
+    if(theme.image.lottie && ref.reduceMotion && !ref.reduceMotion.matches) {
+        homeBannerImage.classList.add('lottie');
+        homeBannerImage.dataset.lottie = theme.image.lottie;
+        decideIfLottie();
+    }
+    else {
+        homeBannerImage.classList.remove('lottie');
+        homeBannerImage.dataset.lottie = '';
+        stopLottie();
+    }
+};
 
 function docReady(fn) {
     // see if DOM is already available

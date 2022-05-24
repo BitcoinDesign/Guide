@@ -58,6 +58,12 @@ files:
     retina: /assets/images/guide/resources/design-files/bitcoin-for-local-business-trifold@2x.png
     width: 400
     height: 210
+  - caption: <a href="https://www.figma.com/community/file/1110806582648546839">Wallet backup print template</a>
+    alt: Wallet backup print template
+    image: /assets/images/guide/resources/design-files/bitcoin-wallet-backup-print-template.jpg
+    retina: /assets/images/guide/resources/design-files/bitcoin-wallet-backup-print-template@2x.jpg
+    width: 400
+    height: 210
 ---
 
 <!--

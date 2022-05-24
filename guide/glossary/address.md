@@ -6,6 +6,14 @@ parent: Glossary
 nav_order: 1
 permalink: /guide/glossary/address/
 main_classes: -no-top-padding
+image_base: /assets/images/guide/glossary/address/
+images_validation:
+    - file: address-valid
+      alt: Send confirmation screen with a checkbox next to the address
+      caption: Confirmation that an address is valid can be subtle.
+    - file: address-invalid
+      alt: Send confirmation screen with the address highlighted in red and disabled send button
+      caption: Invalid addresses should be clearly highlighted and sending should not be possible.
 ---
 
 <!--
@@ -99,9 +107,50 @@ The receiver should then have the ability to switch to a Script or Taproot addre
 
 </div>
 
+## Visual formatting
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/glossary/address/address-expanded.png"
+   retina = "/assets/images/guide/glossary/address/address-expanded@2x.png"
+   width = 250
+   height = 541
+   caption = "Visual formatting can make it easier to compare addresses character by character."
+   alt-text = "Screen showing a modal with a bitcoin address in large type."
+   layout = "float-right-desktop -background -shadow"
+%}
+
+Handling addresses can be stressful when sending bitcoin. Transactions cannot be reversed, and sending to an incorrect address may mean loss of funds. While address formats are what they are, visual formatting can make it easier for users to compare addresses and ensure their accuracy.
+
+Especially when addresses are displayed in a compacted way, make sure to offer a more easily readable alternative. Spacing, subtle coloration, and use of mono-space fonts help users identify chunks of the address to compare, and distinguish characters better.
+
+</div>
+
+## Address validation
+
+Validation with visual feedback can reduce user anxiety about making mistakes. While addresses look like randomly assembled characters, there are patterns that can be used to identify whether an address is valid or not. For [segwit]({{'/guide/glossary/address/#segwit-address---p2wpkh' | relative_url}}) and [taproot]({{'/guide/glossary/address/#taproot-address---p2tr' | relative_url}}) addresses, it may be possible to identify which characters are incorrect. However, there are limits to this. Too many mistakes may result in an address that is valid but different from what the user intended to enter.
+
+{% include image-gallery.html pages = page.images_validation %}
+
+
 ## Address reuse
 
-Address reuse is the practice of receiving more than one transaction to a single bitcoin address. Although there are obvious usability benefits of reusing an address, this practice is not recommended due to the negative impact on privacy and security. Reusing an address makes it easier to correlate transactions with a particular user, thus hurting the pseudonymity of the user and thus the overall censorship resistance of the network. More on address re-use [here](https://en.bitcoin.it/wiki/Address_reuse)
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/glossary/address/address-reuse.png"
+   retina = "/assets/images/guide/glossary/address/address-reuse@2x.png"
+   width = 250
+   height = 541
+   caption = "Address reuse can be highlighted and explained to users so they can make an informed decision."
+   alt-text = "Screen showing a modal advising against bitcoin address re-use."
+   layout = "float-right-desktop -background -shadow"
+%}
+
+Address reuse is the practice of receiving more than one transaction to a single bitcoin address. Although there are obvious usability benefits of reusing an address, this practice is not recommended due to the negative impact on privacy and security. Reusing an address makes it easier to correlate transactions with a particular user, thus hurting the pseudonymity of the user and thus the overall censorship resistance of the network. More on address reuse [here](https://en.bitcoin.it/wiki/Address_reuse).
+
+</div>
 
 ---
 
