@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Accessibility
-description: ...
+description: Overview and practical tips for making bitcoin applications more accessible
 nav_order: 8
 parent: Designing bitcoin products
 permalink: /guide/designing-products/accessibility/
@@ -147,6 +147,8 @@ The accessibility pages by [Apple](https://www.apple.com/accessibility/), [Micro
 - [What is accessibility?](https://www.interaction-design.org/literature/topics/accessibility)
 - [Web accessibility](https://en.wikipedia.org/wiki/Web_accessibility)
 - [Material design accessibility tips](https://material.io/design/usability/accessibility.html#understanding-accessibility)
+- [Web content accessibility guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/)
+- [Accessibility guidelines for non-web applications (WCAG2ICT)](https://www.w3.org/TR/wcag2ict/)
 
 ### Usability testing resources
 
