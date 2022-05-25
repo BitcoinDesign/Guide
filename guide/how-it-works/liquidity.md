@@ -339,7 +339,7 @@ We should ensure that the user is educated so that:
 #### Multiple channels
 Each additional channel has its own channel reserve. For example, a user with 20 channels may have more funds locked in reserve than a user with only one channel.
 #### Onboarding
-During onboarding when a user opens their first channel and when trying to send all their funds.
+During onboarding, when a user opens their first channel and when trying to send all their funds.
 In general the channel reserve itself adds an additional layer of complexity to mobile users who just want to make payments.
 
 There are however other, much more fool-proof ways to prevent theft such as:
