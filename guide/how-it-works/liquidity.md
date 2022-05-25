@@ -316,7 +316,7 @@ Channel reserves make cheating attempts less economical. When one channel party 
 
 ### What is the reserve amount?
 
-The channel reserve amount is dynamic and unique to each channel participant. As defined in [BOLT 2](https://github.com/lightning/bolts/blob/master/02-peer-protocol.md), the channel reserve amount dynamically trends towards 1% of the users local channel capacity. The channel reserve can not be lower than the current 354 sats minimum.
+The channel reserve amount is dynamic and unique to each channel participant. As defined in [BOLT 2](https://github.com/lightning/bolts/blob/master/02-peer-protocol.md), the channel reserve amount dynamically trends towards 1% of the users local channel capacity. The channel reserve can not be lower than the current 354 sats minimum ([dust limit](https://github.com/lightning/bolts/blob/master/03-transactions.md#dust-limits)).
 
 So if a user has 100,000 sats of local capacity, their channel reserve will be 1000 sats (1% of 100,000). This means the user can only spend 99,000 sats of the local capacity. The channel counter party also has their own channel reserve which aims for a 1% reserve. This means the total channels capacity will have around 2% put aside and undependable as a reserve.
 
