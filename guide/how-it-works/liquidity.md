@@ -322,7 +322,7 @@ So if a user has 100,000 sats of local capacity, their channel reserve will be 1
 
 As users send and receive funds the channel reserve will dynamically adjust so its always close to 1%. If a users spends 10,000 sats of their 100,000 sats local capacity, their new channel reserve will dynamically adjust from 1000 sats (1% of 100,000 sats) to 900 sats (1% of 90,000). This adjust upwards if the user receive funds.
 
-### How does this effect users?
+### How does this affect users?
 
 If a user funds a channel and they are unable to spend the full amount they have put into the channel this can be confusing to them.
 
