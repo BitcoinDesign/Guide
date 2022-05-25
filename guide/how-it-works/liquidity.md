@@ -326,7 +326,7 @@ As users send and receive funds the channel reserve will dynamically adjust so i
 
 Users can be confused when having funded a channel, but being unable to spend the full amount they have put in.
 
-From a UX standpoint we would need to consider the following:
+From a UX standpoint, we need to consider the following:
 
 #### Adding funds
 We should ensure that the user is educated so that:
