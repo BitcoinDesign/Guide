@@ -45,21 +45,15 @@ When users enter an address, these formats have specific prefixes, so it is poss
 
 Below are common address formats used today:
 
-### Legacy address - [P2PKH](https://en.bitcoin.it/wiki/Transaction#Pay-to-PubkeyHash)
+### Taproot address - [P2TR](https://en.bitcoin.it/wiki/Bech32)
 
-A pay-to-pubkey-hash (P2PKH), or legacy address, is the oldest and original bitcoin address format. This address format is not widely used today as transaction costs are higher using this format. However, support for this in applications is still encouraged as to be compatible with older legacy wallets that have not upgraded to new address formats.
+A pay-to-taproot (P2TR), also known as a Taproot or Bech32m address, is the most recent and advanced bitcoin address format. Taproot introduces more advanced security, privacy, flexibility and scaling to bitcoin. Like SegWit, Taproot addresses are opt-in and not currently widely supported. Taproot adoption can be tracked [here](https://en.bitcoin.it/wiki/Bech32_adoption).
 
-Legacy addresses begin with the number 1, can contain upper and lowercase characters, and are case sensitive.
+Benefits of Taproot include the ability to use Schnorr Signatures offering better security, lower fees, and more flexible [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}) transactions. Multi-key addresses using P2TR look the same as single-key addresses giving users of multi-key increased privacy. Taproot also enables more advanced scripting, enabling more complex smart contracts to be built on bitcoin.
 
-Example: `1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2`
+Taproot addresses start with `bc1p` and are case insensitive.
 
-### Script address - [P2SH](https://en.bitcoin.it/wiki/Pay_to_script_hash)
-
-A pay-to-script-hash (P2SH), or script address, can have additional rules and functionality attached to the address. Script addresses are commonly used for multi-sig addresses, which can specify that signatures from several keys are required to authorize the transaction.
-
-Script addresses start with the number 3, can contain upper and lowercase characters, and are case sensitive.
-
-Example: `3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy`
+Example: `bc1pmzfrwwndsqmk5yh69yjr5lfgfg4ev8c0tsc06e`
 
 ### SegWit address - [P2WPKH](https://en.bitcoin.it/wiki/Bech32)
 
@@ -71,15 +65,21 @@ SegWit addresses start with `bc1q` and are case insensitive.
 
 Example: `bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq`
 
-### Taproot address - [P2TR](https://en.bitcoin.it/wiki/Bech32)
+### Script address - [P2SH](https://en.bitcoin.it/wiki/Pay_to_script_hash)
 
-A pay-to-taproot (P2TR), also known as a Taproot or Bech32m address, is the most recent and advanced bitcoin address format. Taproot introduces more advanced security, privacy, flexibility and scaling to bitcoin. Like SegWit, Taproot addresses are opt-in and not currently widely supported. Taproot adoption can be tracked [here](https://en.bitcoin.it/wiki/Bech32_adoption).
+A pay-to-script-hash (P2SH), or script address, can have additional rules and functionality attached to the address. Script addresses are commonly used for multi-sig addresses, which can specify that signatures from several keys are required to authorize the transaction.
 
-Benefits of Taproot include the ability to use Schnorr Signatures offering better security, lower fees, and more flexible [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}) transactions. Multi-key addresses using P2TR look the same as single-key addresses giving users of multi-key increased privacy. Taproot also enables more advanced scripting, enabling more complex smart contracts to be built on bitcoin.
+Script addresses start with the number 3, can contain upper and lowercase characters, and are case sensitive.
 
-Taproot addresses start with `bc1p` and are case insensitive.
+Example: `3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy`
 
-Example: `bc1pmzfrwwndsqmk5yh69yjr5lfgfg4ev8c0tsc06e`
+### Legacy address - [P2PKH](https://en.bitcoin.it/wiki/Transaction#Pay-to-PubkeyHash)
+
+A pay-to-pubkey-hash (P2PKH), or legacy address, is the oldest and original bitcoin address format. This address format is not widely used today as transaction costs are higher using this format. However, support for this in applications is still encouraged as to be compatible with older legacy wallets that have not upgraded to new address formats.
+
+Legacy addresses begin with the number 1, can contain upper and lowercase characters, and are case sensitive.
+
+Example: `1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2`
 
 ### Change address
 
@@ -129,7 +129,7 @@ Especially when addresses are displayed in a compacted way, make sure to offer a
 
 ## Address validation
 
-Validation with visual feedback can reduce user anxiety about making mistakes. While addresses look like randomly assembled characters, there are patterns that can be used to identify whether an address is valid or not. For [segwit]({{'/guide/glossary/address/#segwit-address---p2wpkh' | relative_url}}) and [taproot]({{'/guide/glossary/address/#taproot-address---p2tr' | relative_url}}) addresses, it may be possible to identify which characters are incorrect. However, there are limits to this. Too many mistakes may result in an address that is valid but different from what the user intended to enter.
+Validation with visual feedback can reduce user anxiety about making mistakes. While addresses look like randomly assembled characters, there are patterns that can be used to identify whether an address is valid or not. For [segwit]({{'/guide/glossary/address/#segwit-address---p2wpkh' | relative_url}}) and [taproot]({{'/guide/glossary/address/#taproot-address---p2tr' | relative_url}}) addresses, it may be possible to identify which characters are incorrect. However, there are limits to this. Too many mistakes may result in an address that is valid but different from what the user intended to enter. You can try [this interactive validator](https://bitcoin.sipa.be/bech32/demo/demo.html).
 
 {% include image-gallery.html pages = page.images_validation %}
 
