@@ -344,8 +344,9 @@ In general the channel reserve itself adds an additional layer of complexity to 
 
 There are however other, much more fool-proof ways to prevent theft such as:
 
-1. [Using watchtowers](https://bitcoin.design/guide/how-it-works/lightning-services/)
-2. Ensuring users regularly check their apps.
+[Using watchtowers](https://bitcoin.design/guide/how-it-works/lightning-services/)
+
+Ensuring users regularly check their apps.
 
 
 <small><em>Avatar illustrations credit to [Vitaliy Gorbachev](https://www.flaticon.com/packs/avatars-93).</em></small>
