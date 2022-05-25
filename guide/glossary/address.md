@@ -49,7 +49,7 @@ Below are common address formats used today:
 
 A pay-to-taproot (P2TR), also known as a Taproot or Bech32m address, is the most recent and advanced bitcoin address format. Taproot introduces more advanced security, privacy, flexibility and scaling to bitcoin. Like SegWit, Taproot addresses are opt-in and not currently widely supported. Taproot adoption can be tracked [here](https://en.bitcoin.it/wiki/Bech32_adoption).
 
-Benefits of Taproot include the ability to use Schnorr Signatures offering better security, lower fees, and more flexible [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}) transactions. Multi-key addresses using P2TR look the same as single-key addresses giving users of multi-key increased privacy. Taproot also enables more advanced scripting, enabling more complex smart contracts to be built on bitcoin.
+Benefits of Taproot include the ability to use Schnorr Signatures, offering better security, lower fees, and more flexible [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}) transactions. Multi-key addresses using P2TR look the same as single-key addresses giving users of multi-key increased privacy. Taproot also enables more advanced scripting, enabling more complex smart contracts to be built on bitcoin.
 
 Taproot addresses start with `bc1p` and are case insensitive.
 
@@ -75,7 +75,7 @@ Example: `3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy`
 
 ### Legacy address - [P2PKH](https://en.bitcoin.it/wiki/Transaction#Pay-to-PubkeyHash)
 
-A pay-to-pubkey-hash (P2PKH), or legacy address, is the oldest and original bitcoin address format. This address format is not widely used today as transaction costs are higher using this format. However, support for this in applications is still encouraged as to be compatible with older legacy wallets that have not upgraded to new address formats.
+A pay-to-pubkey-hash (P2PKH), or legacy address, is the oldest and original bitcoin address format. This address format is not widely used today as transaction costs are higher using this format. However, support for this in applications is still encouraged to be compatible with older legacy wallets that have not upgraded to new address formats.
 
 Legacy addresses begin with the number 1, can contain upper and lowercase characters, and are case sensitive.
 
