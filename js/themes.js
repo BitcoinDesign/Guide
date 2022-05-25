@@ -298,7 +298,7 @@ var themes = [
     },
     button1: {
         fillColor: "#F7931A",
-        outlineColor: '',
+        outlineColor: '#F7931A',
         labelFillColor: "#00"
     },
     button2: {
