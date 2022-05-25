@@ -324,7 +324,7 @@ As users send and receive funds the channel reserve will dynamically adjust so i
 
 ### How does this affect users?
 
-If a user funds a channel and they are unable to spend the full amount they have put into the channel this can be confusing to them.
+Users can be confused when having funded a channel, but being unable to spend the full amount they have put in.
 
 From a UX standpoint we would need to consider the following:
 
