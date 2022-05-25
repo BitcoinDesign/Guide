@@ -328,7 +328,7 @@ If a user funds a channel and they are unable to spend the full amount they have
 
 From a UX standpoint we would need to consider the following:
 
-<td>Adding funds</td>
+#### Adding funds
 We should ensure that the user is educated so that:
 
 1) When they are adding funds they know that a small amount will be held as a reserve.
