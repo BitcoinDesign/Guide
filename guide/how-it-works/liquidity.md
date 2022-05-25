@@ -332,7 +332,7 @@ From a UX standpoint we would need to consider the following:
 We should ensure that the user is educated so that:
 
 1. When they are adding funds they know that a small amount will be held as a reserve.
-2) They understand that although they cannot spend 100% of their balance they still own all of their funds.
+2. They understand that although they cannot spend 100% of their balance they still own all of their funds.
 
 ### Additional Considerations
 
