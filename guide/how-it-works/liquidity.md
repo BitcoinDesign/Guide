@@ -322,6 +322,8 @@ So if a user has 100,000 sats of local capacity, their channel reserve will be 1
 
 As users send and receive funds, the channel reserve will dynamically adjust so that it's always close to 1%. If a user spends 10,000 sats of their 100,000 sats local capacity, their new channel reserve will dynamically adjust from 1,000 sats (1% of 100,000 sats) to 900 sats (1% of 90,000). This amount adjusts upwards if the user receives funds.
 
+Each additional channel has its own channel reserve. For example, a user with 20 channels may have more funds locked in reserve than a user with only one channel.
+
 ### How does this affect users?
 
 Users can be confused when having funded a channel, but being unable to spend the full amount they have put in.
@@ -364,14 +366,6 @@ We should ensure that the user is educated so that:
 %}
 
 </div>
-
-### Additional Considerations
-
-#### Multiple channels
-Each additional channel has its own channel reserve. For example, a user with 20 channels may have more funds locked in reserve than a user with only one channel.
-#### Onboarding
-During onboarding, when a user opens their first channel and when trying to send all their funds.
-In general the channel reserve itself adds an additional layer of complexity to mobile users who just want to make payments.
 
 However, there are other much more fool-proof ways to prevent theft, such as:
 
