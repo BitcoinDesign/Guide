@@ -334,6 +334,37 @@ We should ensure that the user is educated so that:
 1. When they are adding funds they know that a small amount will be held as a reserve.
 2. They understand that although they cannot spend 100% of their balance they still own all of their funds.
 
+<div class="image-slide-gallery">
+
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/liquidity/channel-reserve-screen.png"
+   retina = "/assets/images/guide/how-it-works/liquidity/channel-reserve-screen@2x.png"
+   alt-text = "Channel status screen"
+   caption = "Channel reserve amount is indicated on the balance screen which includes a fee overview."
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/liquidity/channel-reserve-notification.png"
+   retina = "/assets/images/guide/how-it-works/liquidity/channel-reserve-notification@2x.png"
+   alt-text = "Channel notification screen"
+   caption = "Channel reserve notification is indicated screen as a modal"
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/liquidity/send-limit-screen.png"
+   retina = "/assets/images/guide/how-it-works/liquidity/send-limit-screen@2x.png"
+   alt-text = "Send limit screen"
+   caption = "Send limit is indicated on home screen"
+   width = 250
+   height = 541
+%}
+
+</div>
+
 ### Additional Considerations
 
 #### Multiple channels
