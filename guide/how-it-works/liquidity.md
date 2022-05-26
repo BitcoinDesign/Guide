@@ -30,6 +30,16 @@ Figma file for channel reserve UI's: https://www.figma.com/file/6iJpftEbajA3y1yl
 -->
 
 # Lightning liquidity
+{:.no_toc}
+
+---
+
+<div class="glossary-toc" markdown="1">
+* Table of contents
+{:toc}
+</div>
+
+---
 
 Liquidity is a core concept to understand when working with the lightning network, although tricky. Ideally, we are able to design products that are easy enough to use so that users do not need to concern themselves with liquidity. However, product designers need to understand liquidity in order to build effectively on lightning.
 
