@@ -318,9 +318,9 @@ Channel reserves make cheating attempts less economical. When one channel party 
 
 The channel reserve amount is dynamic and unique to each channel participant. As defined in [BOLT 2](https://github.com/lightning/bolts/blob/master/02-peer-protocol.md), the channel reserve amount dynamically trends towards 1% of the users local channel capacity. The channel reserve can not be lower than the current 354 sats minimum ([dust limit](https://github.com/lightning/bolts/blob/master/03-transactions.md#dust-limits)).
 
-So if a user has 100,000 sats of local capacity, their channel reserve will be 1000 sats (1% of 100,000). The user can only spend 99,000 sats of the local capacity. The channel counter party also has their own channel reserve which aims for a 1% reserve. This means the total channels capacity will have around 2% put aside and unspendable as a reserve.
+So if a user has 100,000 sats of local capacity, their channel reserve will be 1,000 sats (1% of 100,000). The user can only spend 99,000 sats of the local capacity. The channel counterparty also has their own channel reserve which aims for a 1% reserve. This means the total channels capacity will have around 2% put aside and unspendable as a reserve.
 
-As users send and receive funds the channel reserve will dynamically adjust so its always close to 1%. If a users spends 10,000 sats of their 100,000 sats local capacity, their new channel reserve will dynamically adjust from 1000 sats (1% of 100,000 sats) to 900 sats (1% of 90,000). This adjust upwards if the user receives funds.
+As users send and receive funds, the channel reserve will dynamically adjust so that it's always close to 1%. If a user spends 10,000 sats of their 100,000 sats local capacity, their new channel reserve will dynamically adjust from 1,000 sats (1% of 100,000 sats) to 900 sats (1% of 90,000). This amount adjusts upwards if the user receives funds.
 
 ### How does this affect users?
 
@@ -342,11 +342,10 @@ Each additional channel has its own channel reserve. For example, a user with 20
 During onboarding, when a user opens their first channel and when trying to send all their funds.
 In general the channel reserve itself adds an additional layer of complexity to mobile users who just want to make payments.
 
-There are however other, much more fool-proof ways to prevent theft such as:
+However, there are other much more fool-proof ways to prevent theft, such as:
 
-[Using watchtowers](https://bitcoin.design/guide/how-it-works/lightning-services/)
-
-Ensuring users regularly check their apps.
+- [Using watchtowers](https://bitcoin.design/guide/how-it-works/lightning-services/).
+- Ensuring users regularly check their apps.
 
 
 <small><em>Avatar illustrations credit to [Vitaliy Gorbachev](https://www.flaticon.com/packs/avatars-93).</em></small>
