@@ -413,7 +413,7 @@ We should ensure that the user is educated so that:
 However, there are other much more fool-proof ways to prevent theft, such as:
 
 - [Using watchtowers](https://bitcoin.design/guide/how-it-works/lightning-services/).
-- Ensuring users regularly check their apps.
+- Encouraging users to regularly open their lightning wallet, giving the wallet's node a chance to come online and check its channel state.
 
 
 <small><em>Avatar illustrations credit to [Vitaliy Gorbachev](https://www.flaticon.com/packs/avatars-93).</em></small>
