@@ -321,7 +321,39 @@ The channel reserve amount is dynamic and unique to each channel participant. As
 
 So if a user has 100,000 sats of local capacity, their channel reserve will be 1,000 sats (1% of 100,000). The user can only spend 99,000 sats of the local capacity. The channel counterparty also has their own channel reserve which aims for a 1% reserve. This means the total channels capacity will have around 2% put aside and unspendable as a reserve.
 
-As users send and receive funds, the channel reserve will dynamically adjust so that it's always close to 1%. If a user spends 10,000 sats of their 100,000 sats local capacity, their new channel reserve will dynamically adjust from 1,000 sats (1% of 100,000 sats) to 900 sats (1% of 90,000). This amount adjusts upwards if the user receives funds.
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/liquidity/channel-reserve-01.png"
+   retina = "/assets/images/guide/how-it-works/liquidity/channel-reserve-01@2x.png"
+   mobile = "/assets/images/guide/how-it-works/liquidity/channel-reserve-01-mobile.png"
+   mobileRetina = "/assets/images/guide/how-it-works/liquidity/channel-reserve-01-mobile@2x.png"
+   alt-text = "Lori has 100,000 sats on her side of the channel with 1,000 sats in reserve"
+   width = 800
+   height = 348
+%}
+
+As users send and receive funds, the channel reserve will dynamically adjust so that it's always close to 1%.
+
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/liquidity/channel-reserve-02.png"
+   retina = "/assets/images/guide/how-it-works/liquidity/channel-reserve-02@2x.png"
+   mobile = "/assets/images/guide/how-it-works/liquidity/channel-reserve-02-mobile.png"
+   mobileRetina = "/assets/images/guide/how-it-works/liquidity/channel-reserve-02-mobile@2x.png"
+   alt-text = "Lori routes a 100,000 sats payment through the channel"
+   width = 800
+   height = 348
+%}
+
+If a user spends 10,000 sats of their 100,000 sats local capacity, their new channel reserve will dynamically adjust from 1,000 sats (1% of 100,000 sats) to 900 sats (1% of 90,000 sats). This amount adjusts upwards if the user receives funds.
+
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/liquidity/channel-reserve-03.png"
+   retina = "/assets/images/guide/how-it-works/liquidity/channel-reserve-03@2x.png"
+   mobile = "/assets/images/guide/how-it-works/liquidity/channel-reserve-03-mobile.png"
+   mobileRetina = "/assets/images/guide/how-it-works/liquidity/channel-reserve-03-mobile@2x.png"
+   alt-text = "Lori has 90,000 sats on her side of the channel with 900 sats in reserve"
+   width = 800
+   height = 348
+%}
 
 Each additional channel has its own channel reserve. For example, a user with 20 channels may have more funds locked in reserve than a user with only one channel.
 
