@@ -25,6 +25,7 @@ image: https://bitcoin.design/assets/images/guide/how-it-works/liquidity/liquidi
 Editor's notes
 
 Figma file: https://www.figma.com/file/ZwRT4mZZ4UNGtsfLz22m8M/Liquidity?node-id=0%3A1
+Figma file for channel reserve UI's: https://www.figma.com/file/6iJpftEbajA3y1ylXQxsrl/Channel-reserve
 
 -->
 
