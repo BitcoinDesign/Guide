@@ -45,16 +45,16 @@
 
       &.-active {
         font-weight: 500;
-        color: $primary-color;
+        color: $link-base-color;
         text-decoration: none;
 
         &:visited {
-          color: $primary-color;
+          color: $link-visited-color;
         }
       }
 
       &:hover {
-        color: $primary-color;
+        color: $link-hover-color;
       }
 
       &:hover,
@@ -115,7 +115,7 @@
           color: #474747;
 
           &:hover {
-            color: $primary-color;
+            color: $link-hover-color;
           }
         }
       }
@@ -123,17 +123,17 @@
 
     &.-active {
       > a.nav-list-link {
-        color: $primary-color;
+        color: $link-base-color;
 
         &:visited {
-          color: $primary-color;
+          color: $link-base-color;
         }
       }
 
       > .nav-list-expander {
         svg {
           transform: rotate(90deg);
-          color: $primary-color;
+          color: $link-base-color;
         }
       }
 

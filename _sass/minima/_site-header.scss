@@ -51,11 +51,11 @@
             }
 
             &:hover {
-                color: $primary-color;
+                color: $link-hover-color-lg;
                 text-decoration: none;
 
                 svg {
-                    color: $primary-color;
+                    color: $link-hover-color-lg;
                 }
             }
         }
@@ -71,12 +71,12 @@
                 font-weight: 500;
 
                 &:hover {
-                    color: $primary-color;
+                    color: $link-hover-color;
                     text-decoration: none;
                 }
 
                 &.active {
-                    color: $primary-color;
+                    color: $link-base-color;
                 }
             }
 
@@ -109,13 +109,13 @@
 
             &:hover {
                 svg {
-                    color: $primary-color;
+                    color: $link-hover-color-lg;
                 }
             }
 
             &.-active {
                 svg {
-                    color: $primary-color;
+                    color: $link-base-color-lg;
                 }
             }
         }
@@ -214,7 +214,7 @@
                             background-color: rgba($primary-color, 0.05);
 
                             h3 {
-                                color: $primary-color;
+                                color: $link-hover-color-lg;
                             }
                         }
                     }
@@ -265,7 +265,7 @@
                 }
 
                 &:hover {
-                    color: $primary-color;
+                    color: $link-hover-color;
                 }
             }
 
@@ -345,7 +345,7 @@
                     height: calc(100vh - 60px);
                 }
 
-                .nav-trigger {                    
+                .nav-trigger {
                     svg {
                         fill: $primary-color;
                     }

@@ -20,7 +20,7 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-  color: rgba(var(--front), 0.72);
+  color: var(--front);
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
@@ -142,6 +142,18 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $heavy-font-weight;
   line-height: 1.4;
   color: var(--frontHex);
+
+  a {
+    color: $link-base-color-lg;
+
+    &:visited {
+      color: $link-visited-color-lg;
+    }
+
+    &:hover {
+      color: $link-hover-color-lg;
+    }
+  }
 }
 
 h1 {
@@ -156,6 +168,10 @@ a {
   color: $link-base-color;
   text-decoration: none;
   transition: color 100ms $ease;
+
+  @media(prefers-contrast: more) {
+    text-decoration: underline;
+  }
 
   &:visited {
     color: $link-visited-color;
