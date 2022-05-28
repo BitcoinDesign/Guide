@@ -52,7 +52,7 @@ An invoice is the basis of payment requests on lightning. Most other lightning p
 
 Invoices are single use payment requests which have built-in expiries, set to 60 minutes by default. Invoice expiration times can be configured for different use cases such as [Hold invoices](https://bitcoinops.org/en/topics/hold-invoices/). These have long expiration times that allow a receiver to accept the payment at a later time.
 
-Invoices can also contain other pieces of meta data useful for users. They can have a description added by the requester detailing what the invoice is for. A name can also be added to an invoice using [NameDesc](https://github.com/lightning/blips/pull/11), which lets the sender know who they are paying.
+Invoices can also contain other pieces of meta data useful for users, like a description detailing what the invoice is for. A name can be included in the description via [NameDesc](https://github.com/lightning/blips/pull/11), which lets the sender know who they are paying.
 
 Requesters node public keys are included in their generated invoices, so they should not be shared publicly to preserve privacy.
 
