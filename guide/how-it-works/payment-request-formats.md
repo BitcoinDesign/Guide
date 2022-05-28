@@ -91,7 +91,7 @@ Offer can also generate pull payments, say for refunds, and have the ability to 
 
 Unlike other invoice protocols, offers use native communication to share invoices. This means the invoices are shared within lightning and not out of band over private communication channels or through a web server (like [LNURL]({{ '/guide/how-it-works/payment-request-formats/#lnurl' | relative_url }})) making it more private, censorship resistant, and convenient.
 
-Offers do not need as much information as a standard invoice for a payment to be made. This has usability improvements such as smaller, easier to scan, QR codes.
+Offers do not need as much information as a standard invoice for a payment to be made. This has usability improvements, such as smaller, easier-to-scan QR codes.
 
 Another feature that is a work in progress with offers is blinded paths. These will enable a user to not reveal the public information about their lightning node improving privacy.
 
