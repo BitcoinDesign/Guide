@@ -111,7 +111,7 @@ LNRURL is broken up into several sub-protocols, which have different use cases. 
 
 ##### Pay
 
-LNURL-Pay is a static way that lets senders dynamically request an invoice from the receiver to be paid.
+LNURL-Pay allows senders to dynamically request an invoice from the receiver to be paid, based on a static identifier.
 
 ##### Lightning address
 
