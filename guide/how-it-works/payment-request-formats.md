@@ -228,7 +228,7 @@ Bitcoin leverages this technology when dealing with payment requests. The techni
 
 This scheme is extensible and allows for the addition of other useful meta data that give more context to a payment request. This includes things like an amount, labels, messages and other useful data. It also allows more than one type of payment request format to be included in a payment request. We explore this in the next section on unified payment requests.
 
-## Unified payment requests
+### Unified payment requests
 
 <div class="center" markdown="1">
 
