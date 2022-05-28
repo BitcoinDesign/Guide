@@ -60,7 +60,7 @@ Requesters node public keys are included in their generated invoices, so they sh
 
 {% include tip/open.html color="red" icon="forbid" label="Lightning invoices are not addresses" %}
 
-It could be tempting to refer to a Lightning invoice as a “lightning address.” Doing so could be confused with the [lightning address]({{'/guide/how-it-works/payment-request-formats/#lightning-addresses' | relative_url}}) protocol described below. Therefore, avoid calling an invoice an address. A “payment request” would be a better synonym for “invoice.”
+It could be tempting to refer to a lightning invoice as a “lightning address.” Doing so could be confused with the [lightning address]({{'/guide/how-it-works/payment-request-formats/#lightning-addresses' | relative_url}}) protocol described below. Therefore, avoid calling an invoice an address. A “payment request” would be a better synonym for “invoice.”
 
 {% include tip/close.html %}
 
