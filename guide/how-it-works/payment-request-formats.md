@@ -66,7 +66,7 @@ It could be tempting to refer to a lightning invoice as a â€œlightning address.â
 
 ### Invoice protocols
 
-Invoice protocols are static payment requests that dynamically generate and share [invoices]({{ '/guide/how-it-works/payment-request-formats/#invoice' | relative_url }}). When a sender scans or imports an invoice protocol request into their application, rather than the invoice being part of the imported data, the payer dynamically fetches a standard invoice from the user who created the invoice protocol request.
+Invoice protocols are static payment requests that generate and share [invoices]({{ '/guide/how-it-works/payment-request-formats/#invoice' | relative_url }}). These payment requests do not actually contain invoices. Instead, the payer scans or imports the request's data. This contains all the information they need to fetch a new invoice from the recipient.
 
 The various types of invoice protocols offer flexibility and unique use cases not possible with single-use, standard invoices.
 
