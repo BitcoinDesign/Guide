@@ -103,7 +103,7 @@ Another feature that is a work in progress with offers is blinded paths. These w
 
 LNURL uses a web server, which allows it to have much richer data attached to its requests. An example is the ability to add an image, say of your merchant store, to a payment or request.
 
-Subscriptions are a [work in progres](https://github.com/fiatjaf/lnurl-rfc/issues/77) on the LNURL standard.
+Subscriptions are a [work in progress](https://github.com/fiatjaf/lnurl-rfc/issues/77) on the LNURL standard.
 
 With LNURL it's not possible to prove an invoice has been requested and paid such as with a standard invoice or offers. This can be an issue when paying merchants.
 
