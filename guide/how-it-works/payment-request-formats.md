@@ -216,7 +216,7 @@ A downside to payment codes is that they require an additional on-chain transact
 
 ### Silent payment
 
-Silent payments is a [newly proposed format](https://gist.github.com/RubenSomsen/c43b79517e7cb701ebf77eec6dbb46b8?permalink_comment_id=4113680) that allows two users to privately make an on-chain payment between them. This is similar to payment codes however does not need to establish a relationship between users limiting their on-chain footprint.
+Silent payments is a [newly proposed format](https://gist.github.com/RubenSomsen/c43b79517e7cb701ebf77eec6dbb46b8?permalink_comment_id=4113680) that allows two users to privately make an on-chain payment between them. This is similar to payment codes, however it does not need to establish a relationship between users, limiting the overall transaction on-chain footprint.
 
 The trade-off that silent payments require is that receivers of silent payments need extra bandwidth to scan the bitcoin UTXO set, to find payments made to them. This could be problematic on mobile and other less powerful devices.
 
