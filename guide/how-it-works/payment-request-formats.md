@@ -54,7 +54,7 @@ Invoices are single use payment requests which have built-in expiries, set to 60
 
 Invoices can also contain other pieces of meta data useful for users, like a description detailing what the invoice is for. A name can be included in the description via [NameDesc](https://github.com/lightning/blips/pull/11), which lets the sender know who they are paying.
 
-Requesters node public keys are included in their generated invoices, so they should not be shared publicly to preserve privacy.
+Requesters' node public keys are included in their generated invoices, so they should not be shared publicly to preserve privacy.
 
 </div>
 
