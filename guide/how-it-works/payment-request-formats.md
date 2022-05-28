@@ -29,7 +29,7 @@ Payment information can be shared in many formats and over diverse communication
 
 {% include tip/open.html color="blue" icon="info" label="Test your apps for compatibility" %}
 
-If you need to test if your application supports a payment request type you can try scanning the examples shown on this page. If you're application does not support a particular format it should give the user friendly error message.
+If you need to test whether your application supports a payment request type, you can try scanning the examples shown on this page. If your application does not support a particular format, it should show the user a friendly error message.
 
 {% include tip/close.html %}
 
