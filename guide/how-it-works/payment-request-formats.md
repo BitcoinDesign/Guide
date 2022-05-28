@@ -148,7 +148,7 @@ A users node ID can be used as a payment request format when a sender is paying 
 
 Node IDs can act as static payment end points. This means the user does not have to generate a request each time they want to receive a payment.
 
-Requesting a payment with your node ID can leak your public information which is bad for privacy. Keysend payments are also unable to provide proof of payment like an invoice payment which could be problematic in some situations.
+Requesting a payment with your node ID can leak your public information, which is bad for privacy. Keysend payments are also unable to provide proof of payment, like an invoice payment, which could be problematic in some situations.
 
 </div>
 
