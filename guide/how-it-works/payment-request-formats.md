@@ -50,7 +50,7 @@ If you need to test whether your application supports a payment request type, yo
 
 An invoice is the basis of payment requests on lightning. Most other lightning payment request formats build on top of invoices. How they work on a technical level is defined in [BOLT 11](https://github.com/lightning/bolts/blob/master/11-payment-encoding.md).
 
-Invoices are single use payment requests which have in built expiries which by default is set to 60 minutes. Invoice expiration times can be configured for different use cases such as [Hold invoices](https://bitcoinops.org/en/topics/hold-invoices/). These have long expiration times that allow a receiver to accept the payment at a later time.
+Invoices are single use payment requests which have built-in expiries, set to 60 minutes by default. Invoice expiration times can be configured for different use cases such as [Hold invoices](https://bitcoinops.org/en/topics/hold-invoices/). These have long expiration times that allow a receiver to accept the payment at a later time.
 
 Invoices can also contain other pieces of meta data useful for users. They can have a description added by the requester detailing what the invoice is for. A name can also be added to an invoice using [NameDesc](https://github.com/lightning/blips/pull/11), which lets the sender know who they are paying.
 
