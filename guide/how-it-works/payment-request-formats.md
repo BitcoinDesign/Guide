@@ -25,7 +25,7 @@ Illustration source: https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=
 
 # Payment request formats
 
-Payment information can be shared in many formats and over diverse communication channels. Each has its advantages and limitations, these formats seen together allow for broad flexibility in initiating payments, both on lightning and on-chain. Some of them are still maturing and have varying support across applications.
+Payment information can be shared in many formats and over diverse communication channels. Each has its advantages and limitations. These formats seen together allow for broad flexibility in initiating payments, both on lightning and on-chain. Some of them are still maturing and have varying support across applications.
 
 {% include tip/open.html color="blue" icon="info" label="Test your apps for compatibility" %}
 
