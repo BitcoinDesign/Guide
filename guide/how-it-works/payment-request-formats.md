@@ -167,7 +167,7 @@ Requesting a payment with your node ID can leak your public information, which i
 
 AMP invoice build on top of Keysends and makes use of [atomic multi-path payments](https://docs.lightning.engineering/lightning-network-tools/lnd/amp). Multi-path payments make it harder to correlate payments, which has privacy benefits as its harder for third parties to know who paid who. They also increase the likelihood of larger payments succeeding.
 
-Unlike Keysends, AMP allows for generating of static invoices. This can be useful for creating static payment requests that can be used for donation or subscription type services.
+Unlike Keysends, AMP allows for generation of static invoices. This can be useful for creating static payment requests that can be used for donation or subscription type services.
 
 Like Keysends, AMP invoices can not provide proof of payments so they may not be viable in some situations such as paying a merchant. [Simplified multipath payments](https://bitcoinops.org/en/topics/multipath-payments/) (SMPs) can resolve this issue, though at the expense of payments being easier to correlate reducing privacy benefits.
 
