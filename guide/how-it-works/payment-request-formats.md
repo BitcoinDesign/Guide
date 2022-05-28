@@ -101,7 +101,7 @@ Another feature that is a work in progress with offers is blinded paths. These w
 
 [LNURL](https://www.advancingbitcoin.com/blog/lnurl/) is an invoice protocol that leverages HTTP servers to dynamically generate various types of requests. This comes with privacy and censorship resistance trade-offs, as users are relying on a third-party server to act honestly.
 
-As LNURL uses a web server this allows it to have much richer data attached to its requests. An example is the ability to add an image, say of your merchant store, to a payment or request.
+LNURL uses a web server, which allows it to have much richer data attached to its requests. An example is the ability to add an image, say of your merchant store, to a payment or request.
 
 Subscriptions are a [work in progres](https://github.com/fiatjaf/lnurl-rfc/issues/77) on the LNURL standard.
 
