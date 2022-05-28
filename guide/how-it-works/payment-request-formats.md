@@ -171,7 +171,7 @@ Unlike Keysends, AMP allows for generation of static invoices. This can be usefu
 
 Like Keysends, AMP invoices can not provide proof of payments, so they may not be viable in some situations, such as paying a merchant. [Simplified multipath payments](https://bitcoinops.org/en/topics/multipath-payments/) (SMPs) can resolve this issue, though at the expense of payments being easier to correlate, reducing privacy benefits.
 
-AMP invoices do not allow senders to attach a description for the receiver to their payment. This makes it difficult for receivers to know who paid them and what it was for.
+AMP invoices do not allow senders to attach a description for the receiver to their payment. This makes it difficult for receivers to know who paid them, and what it was for.
 
 </div>
 
