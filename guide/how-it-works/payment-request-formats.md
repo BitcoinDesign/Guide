@@ -222,7 +222,7 @@ The trade-off that silent payments require is receivers of silent payments requi
 
 ## Bitcoin uniform resource identifiers (URIs)
 
-A [Uniform Resource Identifier](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) (URI) is a web technology uses unique prefixes to identify anything. This can be real-world objects, websites, information, etc.
+A [Uniform Resource Identifier](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) (URI) is a web technology that uses unique prefixes to identify anything. This can be real-world objects, websites, information, etc.
 
 Bitcoin leverages this technology when dealing with payment requests. The technical details about how this is done is detailed in [BIP 21](https://bips.xyz/21). But essentially bitcoin payment requests use a `bitcoin:` URI scheme to identify and help applications manage bitcoin payment requests.
 
