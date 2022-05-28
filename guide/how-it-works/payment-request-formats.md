@@ -115,7 +115,7 @@ LNURL-Pay allows senders to dynamically request an invoice from the receiver to 
 
 ##### Lightning address
 
-A [Lightning addresses](https://lightningaddress.com) builds on top of LNURL-Pay and gives users a more human readable payment address. They use the very familiar email format (user@bitcoin.design) to request payments.
+[Lightning addresses](https://lightningaddress.com) build on top of LNURL-Pay and give users a more human-readable payment address. They use the very familiar email format (user@bitcoin.design) to request payments.
 
 ##### Withdraw
 
