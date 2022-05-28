@@ -105,7 +105,7 @@ LNURL uses a web server, which allows it to have much richer data attached to it
 
 Subscriptions are a [work in progress](https://github.com/fiatjaf/lnurl-rfc/issues/77) on the LNURL standard.
 
-With LNURL it's not possible to prove an invoice has been requested and paid such as with a standard invoice or offers. This can be an issue when paying merchants.
+With LNURL, it's not possible to prove an invoice has been requested and paid, as it is with a standard invoice or offers. This can be an issue when paying merchants.
 
 LNRURL can be broken up into several sub-protocols which have different use cases. Three of these sub-protocols are focused on making or requesting payments (pay, lightning address, and withdraw). LNURL-auth and channel are also available, but are for authenticating a user and opening payment channels.
 
