@@ -179,7 +179,7 @@ AMP invoices do not allow senders to attach a description for the receiver to th
 
 ### Addresses
 
-An address is the standard format used for on-chain payment requests. There are many address types that offer different functionality and improvements, such as lower fees or more complex multi-sig setups. We go into detail on these on our [address page]({{ '/guide/glossary/address/' | relative_url }}).
+An address is the standard format used for on-chain payment requests. There are many address types that offer different functionality and improvements, such as lower fees or more complex multi-sig setups. We go into detail about these on our [address page]({{ '/guide/glossary/address/' | relative_url }}).
 
 Below we have listed the primary address types available to so you can test if your application supports them.
 
