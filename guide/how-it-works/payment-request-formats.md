@@ -93,7 +93,7 @@ Unlike other invoice protocols, offers use native communication to share invoice
 
 Offers do not need as much information as a standard invoice for a payment to be made. This has usability improvements, such as smaller, easier-to-scan QR codes.
 
-Another feature that is a work in progress with offers is blinded paths. These will enable a user to not reveal the public information about their lightning node improving privacy.
+Another feature that is a work in progress with offers is blinded paths. These will enable a user to not reveal the public information about their lightning node, improving privacy.
 
 </div>
 
