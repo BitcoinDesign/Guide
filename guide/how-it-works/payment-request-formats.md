@@ -210,7 +210,7 @@ A payment code is a static payment request type that can receive multiple paymen
 
 Payment codes have been popularised in wallets such as [Samourai](https://samouraiwallet.com/) and [Sparrow](https://sparrowwallet.com/). These wallets abstract away the payment codes into a more user friendly payment addresses called [PayNyms](https://paynym.is/).
 
-A downside to payment codes is they require an additional on-chain transaction each time two users want to connect and use them.
+A downside to payment codes is that they require an additional on-chain transaction each time two users want to connect and use them.
 
 </div>
 
