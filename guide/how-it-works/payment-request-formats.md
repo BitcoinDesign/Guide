@@ -89,7 +89,7 @@ Offers can contain a wider range of meta data compared to standard invoices. Thi
 
 Offer can also generate pull payments, say for refunds, and have the ability to create subscriptions. A subscription has the offer generate and share invoices with a subscriber as they need them.
 
-Unlike other invoice protocols, offers use native communication to share invoices. This means the invoices are shared within lightning and not out of band over private communication channels or through a web server (like [LNURL]({{ '/guide/how-it-works/payment-request-formats/#lnurl' | relative_url }})) making it more private, censorship resistant, and convenient.
+Unlike other invoice protocols, offers use native communication to share invoices. This means the invoices are shared within lightning and not out of band over private communication channels, or through a web server (like [LNURL]({{ '/guide/how-it-works/payment-request-formats/#lnurl' | relative_url }})), making it more private, censorship resistant, and convenient.
 
 Offers do not need as much information as a standard invoice for a payment to be made. This has usability improvements, such as smaller, easier-to-scan QR codes.
 
