@@ -249,7 +249,7 @@ When transactions take longer than expected, users need to be clearly informed a
 
 In case a user needs to briefly wait, the application should not block the interface, but offer other useful actions to perform, such as labelling and tagging the payment, or adding the recipient to the contact list.
 
-On-chain, you may offer users the options to cancel (via [replace-by-fee](https://bitcoinops.org/en/topics/replace-by-fee/) (RBF)) or speed-up (via [child-pays-for-parent](https://bitcoinops.org/en/topics/cpfp/) (CPFP)) a transaction. This is only possible after the transaction has been broadcast, but before it has been included in a block.
+On-chain, you may offer users the options to cancel (via [replace-by-fee](https://bitcoinops.org/en/topics/replace-by-fee/) (RBF)) or speed-up (via [child-pays-for-parent](https://bitcoinops.org/en/topics/cpfp/) (CPFP)) a stuck transaction. This is only possible after the transaction has been broadcast, but before it has been included in a block.
 
 ## Success
 
