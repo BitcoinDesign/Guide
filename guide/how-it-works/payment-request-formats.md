@@ -105,8 +105,6 @@ LNURL uses a web server, which allows it to have much richer data attached to it
 
 Subscriptions are a [work in progress](https://github.com/fiatjaf/lnurl-rfc/issues/77) on the LNURL standard.
 
-With LNURL, it's not possible to prove an invoice has been requested and paid, as it is with a standard invoice or offers. This can be an issue when paying merchants.
-
 LNRURL is broken up into several sub-protocols, which have different use cases. Three of these sub-protocols are focused on making or requesting payments (pay, lightning address, and withdraw). LNURL-auth and channel are also available, but are for authenticating a user and opening payment channels.
 
 ##### Pay
@@ -208,17 +206,13 @@ Below we have listed the primary address types available to so you can test if y
 
 A payment code is a static payment request type that can receive multiple payments. The technical details of how these work is defined in [BIP 47](https://bips.xyz/47).
 
-Payment codes have been popularised in wallets such as [Samourai](https://samouraiwallet.com/) and [Sparrow](https://sparrowwallet.com/). These wallets abstract away the payment codes into a more user friendly payment addresses called [PayNyms](https://paynym.is/).
+Payment codes have been popularised in wallets such as [Samourai](https://samouraiwallet.com/) and [Sparrow](https://sparrowwallet.com/).
 
-A downside to payment codes is that they require an additional on-chain transaction each time two users want to connect and use them.
+A downside to payment codes is that they require an additional on-chain transaction each time two users want to connect and use them. [Silent payments](https://gist.github.com/RubenSomsen/c43b79517e7cb701ebf77eec6dbb46b8?permalink_comment_id=4113680) are a new experimental proposal that prevents the need for this additional on-chain transaction at the cost of extra bandwidth for receivers.
+
+Some wallets use what is called a [PayNym](https://paynym.is/) to abstract payment codes into more human readable payment request formats. However, this is not standardized, directories are not open-source, and currently Samourai is the only operator running a directory.
 
 </div>
-
-### Silent payment
-
-Silent payments is a [newly proposed format](https://gist.github.com/RubenSomsen/c43b79517e7cb701ebf77eec6dbb46b8?permalink_comment_id=4113680) that allows two users to privately make an on-chain payment between them. This is similar to payment codes, however it does not need to establish a relationship between users, limiting the overall transaction on-chain footprint.
-
-The trade-off that silent payments require is that receivers of silent payments need extra bandwidth to scan the bitcoin UTXO set, to find payments made to them. This could be problematic on mobile and other less powerful devices.
 
 ## Bitcoin uniform resource identifiers (URIs)
 
