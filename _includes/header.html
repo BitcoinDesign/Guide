@@ -18,7 +18,7 @@
               {%- if my_page.title -%}
                 {% assign current_page = page.url | replace:'/',' ' | truncatewords: 1,"" %}
                 {% assign menu_page = my_page.url | replace:'/',' ' | truncatewords: 1,"" %}
-                <a class="page-link{% if current_page == menu_page %} active{% endif %}" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                <a class="page-link{% if current_page == menu_page %} active{% endif %}" href="{{ my_page.url | relative_url }}"{% if page.url == my_page.url %} aria-current="page"{% endif %}>{{ my_page.title | escape }}</a>
 
                 {%- if my_page.title contains 'Guide' -%}
                   {% include secondary-nav.html id="top" %}
@@ -32,7 +32,7 @@
         <svg viewBox="0 0 44 44" class="search-icon"><use xlink:href="#svg-search"></use></svg>
       </button>
 
-      <button aria-label="Toggle menu" id="nav-trigger" class="nav-trigger" aria-controls="site-nav" aria-expanded="false">
+      <button aria-label="Toggle menu" id="nav-trigger" class="nav-trigger" aria-controls="site-nav" aria-expanded="false" aria-haspopup="true">
         <svg viewBox="0 0 44 44"><use xlink:href="#svg-menu"></use></svg>
       </button>
 

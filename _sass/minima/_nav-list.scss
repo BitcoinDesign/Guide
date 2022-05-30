@@ -73,7 +73,6 @@
       height: 30px;
       background-color: transparent;
       border-width: 0;
-      appearance: none;
 
       svg {
         width: 15px;
@@ -85,7 +84,6 @@
       &:active,
       &:focus {
         border-width: 0;
-        outline: none;
         background-color: rgba($primary-color, 0.1);
       }
 
