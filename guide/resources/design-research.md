@@ -170,11 +170,11 @@ _2019 by Foundation for Interwallet Operability (FIO)._
 
 A survey of over 200 crypto holders regarding their frequency and experiences in transacting crypto, with the goal of unearthing some of the common issues they’ve faced.
 
-#### [2nd Global Cryptoasset Benchmarking Study](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2nd-global-cryptoasset-benchmark-study/#.X_1mxi1h1qs)
+#### [3nd Global Cryptoasset Benchmarking Study](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/3rd-global-cryptoasset-benchmarking-study/)
 
-_2018 by Rauchs, Blandin, Klein, Pieters, Recanatini, Zhang._
+_2020 by Blandin, Pieters, Wu, Eisermann, Dek, Taylor and Njoki._
 
-Insights into the current state of the cryptoasset industry. The study gathers survey data from more than 180 cryptoasset companies and individuals, covering 47 countries across five world regions, focusing on the following four key industry segments: mining, exchange, storage, and payments.
+A review of the changes in the industry since the 2nd report in 2018. The study gathers survey data from more than 280 cryptoasset companies in 59 countries, focusing on the following four key industry segments: exchanges, payments, custody and mining.
 
 ## Case studies
 
