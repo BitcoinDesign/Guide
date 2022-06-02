@@ -97,8 +97,7 @@ A survey and follow-up interview of 990 bitcoin users to determine bitcoin manag
 
 ## Independent research
 
-#### [Bitcoin: Knowledge and Perceptions]
-(https://block.xyz/2022/btc-report.pdf)
+#### [Bitcoin: Knowledge and Perceptions](https://block.xyz/2022/btc-report.pdf)
 
 _2022 by Block, Inc._ 
 
