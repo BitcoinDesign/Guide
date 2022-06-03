@@ -97,6 +97,12 @@ A survey and follow-up interview of 990 bitcoin users to determine bitcoin manag
 
 ## Independent research
 
+#### [Bitcoin: Knowledge and Perceptions](https://block.xyz/2022/btc-report.pdf)
+
+_2022 by Block, Inc._ 
+
+In early 2022, Block, Inc. partnered with Wakefield Research to survey 9,500 people in 14 countries across the Americas, EMEA, and APAC. The pool of respondents spread not only across geographies, but also a wide range of ages and gender. The resulting report is a valuable resource to better understand people’s knowledge and perceptions of bitcoin.
+
 #### [Are Cryptocurrencies Currencies? Bitcoin as Legal Tender in El Salvador](https://www.davidargente.com/_files/ugd/b05023_7825615207654784864b4c4cc4ec6550.pdf)
 
 _2022 by Alvarez and Argente_ 
