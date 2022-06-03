@@ -256,11 +256,11 @@ This is particularly useful if users want to open a payment channel directly fro
 
 ---
 
-Next, we jump into how to design a [daily spending wallet]({{ '/guide/daily-spending-wallet/' | relative_url }}).
+Our next page deals with [accessibility]({{ '/guide/designing-products/accessibility/' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/designing-products/units-and-symbols/"
    previousName = "Units and symbols"
-   nextUrl = "/guide/daily-spending-wallet/"
-   nextName = "Daily spending wallet"
+   nextUrl = "/guide/designing-products/accessibility/"
+   nextName = "Accessibility"
 %}
