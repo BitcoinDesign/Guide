@@ -97,6 +97,12 @@ A survey and follow-up interview of 990 bitcoin users to determine bitcoin manag
 
 ## Independent research
 
+#### [The State of Lightning Volume 2](https://arcane.no/research/reports/the-state-of-lightning-volume-2)
+
+_2022 by Arcane research_
+
+In this second edition, Arcane Research delivers valuable insights into the growth of Bitcoin's main payment layer. The report helps quantify and visualize what's happening right now with Lightning. Not only that, it also shows how it is solving real problems for people around the world.
+
 #### [Bitcoin: Knowledge and Perceptions](https://block.xyz/2022/btc-report.pdf)
 
 _2022 by Block, Inc._ 
