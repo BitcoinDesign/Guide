@@ -99,12 +99,12 @@ imagesLightning:
     - file: scan-onchain-qr-code
       alt: Scanning screen as the user scans a QR code of an on-chain address
       caption: The user scans a QR code, unaware that it is an on-chain address.
-    - file: onchain-warning
-      alt: Warning screen informing that the payment will take longer to confirm and cost a higher fee
-      caption: A warning is triggered to inform the user of longer confirmation time and a higher fee.
     - file: review-onchain-tx
       alt: Payment review screen for a higher-fee, on-chain payment
-      caption: The user may choose to proceed with the on-chain payment anyways.
+      caption: The payment review screen draws attention to the higher on-chain fee and offers the user a way to save on fees and confirmation time.
+    - file: onchain-warning
+      alt: Information screen that details the payment taking 10 minutes to an hour to confirm with a fee of 1,023 sats, and suggests asking the recipient for a lightning compatible format.
+      caption: The user may choose to proceed with the on-chain payment anyways, but has been informed they may be able to save time and fees by asking for a different payment format.
 ---
 
 <!--
