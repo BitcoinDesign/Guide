@@ -9,12 +9,8 @@ redirect_from:
  - /guide/payments/send/payment-request-formats/
  - /guide/payments/request/payment-request-formats/
 main_classes: -no-top-padding
-image: /assets/images/guide/payments/send/bitcoin-payments-social.jpg
-image_base: /assets/images/guide/payments/send/
-images:
-    - file: home
-      alt:
-      caption:
+image: /assets/images/guide/how-it-works/payment-request-formats/payment-request-formats-preview.jpg
+
 ---
 
 <!--
@@ -22,6 +18,17 @@ images:
 Illustration source: https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=937%3A6451
 
 -->
+
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/payment-request-formats/payment-request-formats.jpg"
+   retina = "/assets/images/guide/how-it-works/payment-request-formats/payment-request-formats@2x.jpg"
+   mobile = "/assets/images/guide/how-it-works/payment-request-formats/payment-request-formats-mobile.jpg"
+   mobileRetina = "/assets/images/guide/how-it-works/payment-request-formats/payment-request-formats-mobile@2x.jpg"
+   alt-text = "Header image of the payment request formats page"
+   width = 1600
+   height = 500
+   layout = "full-width"
+%}
 
 # Payment request formats
 
@@ -31,7 +38,22 @@ Payment information can be shared in many formats and over diverse communication
 
 If you need to test whether your application supports a payment request type, you can try scanning the examples shown on this page. If your application does not support a particular format, it should show the user a friendly error message.
 
-{% include tip/close.html %}
+{% include tip/close.html %}  
+
+## Uniform resource identifier (URIs) schemes
+
+A [Uniform Resource Identifier](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) (URI) is a web technology that uses unique prefixes to identify anything. This can be real-world objects, websites, information, etc.
+
+Bitcoin uses URIs to help apps identify payment requests. The technical details of this scheme are detailed in [BIP 21](https://bips.xyz/21).
+
+BIP 21 uses a `bitcoin:` URI scheme to identify and help applications manage bitcoin payment requests. Applications should support this if they want to be [interoperable]({{'/guide/getting-started/principles/#interoperability' | relative_url}}) with other bitcoin products. Some other less common, non-standardized, URI schemes used for bitcoin payment requests include:
+
+- `BITCOIN:`
+- `lightning:`
+- `LIGHTNING:`
+- `lnurl:`
+
+BIP 21 is extensible and allows for the addition of other useful meta data that give more context to a payment request. This includes things like an amount, labels, messages, and other useful data. It also allows [more than one type of payment]({{'/guide/how-it-works/payment-request-formats/#unified-payment-requests' | relative_url}}) request format to be included in a payment request.
 
 ## Lightning payment request formats
 
@@ -214,15 +236,7 @@ Some wallets use what is called a [PayNym](https://paynym.is/) to abstract payme
 
 </div>
 
-## Bitcoin uniform resource identifiers (URIs)
-
-A [Uniform Resource Identifier](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) (URI) is a web technology that uses unique prefixes to identify anything. This can be real-world objects, websites, information, etc.
-
-Bitcoin uses this technology when dealing with payment requests. The technical details about how this is done is detailed in [BIP 21](https://bips.xyz/21). But essentially bitcoin payment requests use a `bitcoin:` URI scheme to identify and help applications manage bitcoin payment requests.
-
-This scheme is extensible and allows for the addition of other useful meta data that give more context to a payment request. This includes things like an amount, labels, messages, and other useful data. It also allows more than one type of payment request format to be included in a payment request. We explore this in the next section on unified payment requests.
-
-### Unified payment requests
+## Unified payment requests
 
 <div class="center" markdown="1">
 
