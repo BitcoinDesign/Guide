@@ -97,6 +97,12 @@ A survey and follow-up interview of 990 bitcoin users to determine bitcoin manag
 
 ## Independent research
 
+#### [Bitcoin: Knowledge and Perceptions](https://block.xyz/2022/btc-report.pdf)
+
+_2022 by Block, Inc._ 
+
+In early 2022, Block, Inc. partnered with Wakefield Research to survey 9,500 people in 14 countries across the Americas, EMEA, and APAC. The pool of respondents spread not only across geographies, but also a wide range of ages and gender. The resulting report is a valuable resource to better understand people’s knowledge and perceptions of bitcoin.
+
 #### [Are Cryptocurrencies Currencies? Bitcoin as Legal Tender in El Salvador](https://www.davidargente.com/_files/ugd/b05023_7825615207654784864b4c4cc4ec6550.pdf)
 
 _2022 by Alvarez and Argente_ 
@@ -170,11 +176,11 @@ _2019 by Foundation for Interwallet Operability (FIO)._
 
 A survey of over 200 crypto holders regarding their frequency and experiences in transacting crypto, with the goal of unearthing some of the common issues they’ve faced.
 
-#### [2nd Global Cryptoasset Benchmarking Study](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2nd-global-cryptoasset-benchmark-study/#.X_1mxi1h1qs)
+#### [3rd Global Cryptoasset Benchmarking Study](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/3rd-global-cryptoasset-benchmarking-study/)
 
-_2018 by Rauchs, Blandin, Klein, Pieters, Recanatini, Zhang._
+_2020 by Blandin, Pieters, Wu, Eisermann, Dek, Taylor and Njoki._
 
-Insights into the current state of the cryptoasset industry. The study gathers survey data from more than 180 cryptoasset companies and individuals, covering 47 countries across five world regions, focusing on the following four key industry segments: mining, exchange, storage, and payments.
+A review of the changes in the industry since the 2nd report in 2018. The study gathers survey data from more than 280 cryptoasset companies in 59 countries, focusing on the following four key industry segments: exchanges, payments, custody, and mining.
 
 ## Case studies
 
