@@ -53,7 +53,7 @@ BIP 21 uses a `bitcoin:` URI scheme to identify and help applications manage bit
 - `LIGHTNING:`
 - `lnurl:`
 
-BIP 21 is extensible and allows for the addition of other useful meta data that give more context to a payment request. This includes things like an amount, labels, messages, and other useful data. It also allows [more than one type of payment]({{'/guide/how-it-works/payment-request-formats/#unified-payment-requests' | relative_url}}) request format to be included in a payment request.
+BIP 21 is extensible and allows for the addition of other useful meta data that give more context to a payment request. This includes things like an amount, labels, messages, and other useful data. It also allows [more than one type]({{'/guide/how-it-works/payment-request-formats/#unified-payment-requests' | relative_url}}) of payment request format to be included in a payment request.
 
 ## Lightning payment request formats
 
@@ -72,23 +72,23 @@ BIP 21 is extensible and allows for the addition of other useful meta data that 
 
 An invoice is the basis of payment requests on lightning. Most other lightning payment request formats build on top of invoices. How they work on a technical level is defined in [BOLT 11](https://github.com/lightning/bolts/blob/master/11-payment-encoding.md).
 
-Invoices are single use payment requests which have built-in expiries, set to 60 minutes by default. Invoice expiration times can be configured for different use cases such as [Hold invoices](https://bitcoinops.org/en/topics/hold-invoices/). These have long expiration times that allow a receiver to accept the payment at a later time.
+Invoices are single-use payment requests which have built-in expiries, set to 60 minutes by default. Invoice expiration times can be configured for different use cases such as [Hold invoices](https://bitcoinops.org/en/topics/hold-invoices/). These have long expiration times that allow a receiver to accept the payment at a later time.
 
 Invoices can also contain other pieces of meta data useful for users, like a description detailing what the invoice is for. A name can be included in the description via [NameDesc](https://github.com/lightning/blips/pull/11), which lets the sender know who they are paying.
 
-Requesters' node public keys are included in their generated invoices, so they should not be shared publicly to preserve privacy.
+Requesters' node public keys are included in their generated invoices, so invoices should not be shared publicly to preserve privacy.
 
 </div>
 
 {% include tip/open.html color="red" icon="forbid" label="Lightning invoices are not addresses" %}
 
-It could be tempting to refer to a lightning invoice as a “lightning address.” Doing so could be confused with the [lightning address]({{'/guide/how-it-works/payment-request-formats/#lightning-addresses' | relative_url}}) protocol described below. Therefore, avoid calling an invoice an address. A “payment request” would be a better synonym for “invoice.”
+It could be tempting to refer to a lightning invoice as a “lightning address.” Doing so could be confused with the [lightning address]({{'/guide/how-it-works/payment-request-formats/#lightning-addresses' | relative_url}}) protocol described below. Therefore, avoid calling an invoice an address. “Payment request” is a better synonym for “invoice.”
 
 {% include tip/close.html %}
 
 ### Invoice protocols
 
-Invoice protocols are static payment requests that generate and share [invoices]({{ '/guide/how-it-works/payment-request-formats/#invoice' | relative_url }}). These payment requests do not actually contain invoices. Instead, the payer scans or imports the request's data. This contains all the information they need to fetch a new invoice from the recipient.
+Invoice protocols are static payment requests that generate and share [invoices]({{ '/guide/how-it-works/payment-request-formats/#invoice' | relative_url }}). These payment requests do not actually contain invoices. Instead, the payer scans or imports the request data. It contains all the information they need to fetch a new invoice from the recipient.
 
 The various types of invoice protocols offer flexibility and unique use cases not possible with single-use, standard invoices.
 
@@ -109,7 +109,7 @@ Offers are an experimental invoice protocol developed by [Core Lightning](https:
 
 Offers can contain a wider range of meta data compared to standard invoices. This includes fiat currencies, requester names, payment limits (minimum and maximum), and recurrences (how often can a new request be generated). Some examples are outlined [here](https://bootstrap.bolt12.org/examples).
 
-Offer can also generate pull payments, say for refunds, and have the ability to create subscriptions. A subscription has the offer generate and share invoices with a subscriber as they need them.
+Offers can also generate pull payments, say for refunds, and have the ability to create subscriptions. A subscription has the offer generate and share invoices with a subscriber as they need them.
 
 Unlike other invoice protocols, offers use native communication to share invoices. This means the invoices are shared within lightning and not out of band over private communication channels, or through a web server (like [LNURL]({{ '/guide/how-it-works/payment-request-formats/#lnurl' | relative_url }})), making it more private, censorship resistant, and convenient.
 
@@ -127,7 +127,7 @@ LNURL uses a web server, which allows it to have much richer data attached to it
 
 Subscriptions are a [work in progress](https://github.com/fiatjaf/lnurl-rfc/issues/77) on the LNURL standard.
 
-LNRURL is broken up into several sub-protocols, which have different use cases. Three of these sub-protocols are focused on making or requesting payments (pay, lightning address, and withdraw). LNURL-auth and channel are also available, but are for authenticating a user and opening payment channels.
+LNRURL is broken up into several sub-protocols, which have different use cases. Three of these sub-protocols are focused on making or requesting payments (pay, lightning address, and withdraw). LNURL-auth and channel are also available for authenticating a user and opening payment channels.
 
 ##### Pay
 
@@ -201,7 +201,7 @@ AMP invoices do not allow senders to attach a description for the receiver to th
 
 An address is the standard format used for on-chain payment requests. There are many address types that offer different functionality and improvements, such as lower fees or more complex multi-sig setups. We go into detail about these on our [address page]({{ '/guide/glossary/address/' | relative_url }}).
 
-Below we have listed the primary address types available to so you can test if your application supports them.
+Below are the primary address types available to test if your application supports them.
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/payment-request-formats/adresses.jpg"
