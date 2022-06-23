@@ -97,6 +97,12 @@ A survey and follow-up interview of 990 bitcoin users to determine bitcoin manag
 
 ## Independent research
 
+#### [The Lightning Network: Bitcoin’s Evolution to Medium of Exchange](https://kraken.docsend.com/view/vdtb2nfy3m9m3d6g)
+
+_2022 by Kraken Intelligence._ 
+
+This report provides an overview of the Lightning protocol and its technical design. It also reveals its historical background and gives some interesting insights into the state of the network.
+
 #### [Bitcoin: Knowledge and Perceptions](https://block.xyz/2022/btc-report.pdf)
 
 _2022 by Block, Inc._ 
