@@ -58,6 +58,10 @@ Two main types of information need to be backed up: the user's wallet recovery d
 - A _Fingerprint_ allows for verification that the wallet was reconstructed correctly after import
 - _Static channel backups_ contain all basic information about active Lightning channels
 - A _Channels database_ contains data on payments made in active Lightning channels
+- _[Activity]({{'/guide/daily-spending-wallet/activity/' | relative_url }})_ includes transaction memos, categories, tags, or any other metadata that helps the user keep track of their transaction history
+  - There is no industry standard format for activity metadata, so this format may only be recoverable to the user within your software
+- _[Contacts]({{'/guide/daily-spending-wallet/activity/' | relative_url }})_ includes any metadata that helps to abstract transaction endpoints into a contacts list for the user.
+  - Like activity, there is no industry standard format for contact metadata, so this format may only be recoverable to the user within your software
 
 Users who lose both their wallet access and their backup permanently lose their bitcoin. Arguably, this creates one of the most challenging design problems within the space.
 
