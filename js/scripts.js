@@ -670,7 +670,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   setupUnitsAndSymbolsFormatter();
 
-  for(var k=0; i<ref.modalImageLinks.length; k++) {
+  for(var k=0; k<ref.modalImageLinks.length; k++) {
       ref.modalImageLinks[k].addEventListener('click', handleModalImageLinkClick);
   }
 });
