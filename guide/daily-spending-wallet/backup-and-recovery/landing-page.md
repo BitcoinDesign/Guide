@@ -40,7 +40,7 @@ Illustration sources
 
 When a user generates and [funds]({{ '/guide/daily-spending-wallet/funding/' | relative_url }}) a new daily spending wallet, they will then need to create a backup of their wallet in order to ensure their bitcoin are not lost.
 
-Two main types of information need to be backed up: the user's wallet recovery data and their Lightning channel state. While the wallet recovery data may be used to restore the wallet using another wallet application, the channel state is typically only restorable within the same application.
+Three main types of information need to be backed up: the user's wallet recovery data, their Lightning channel state, and any other user metadata. While the wallet recovery data may be used to restore the wallet using another wallet application, the channel state is typically only restorable within the same application. Similarly, most user metadata can only be restored within the wallet in which it was created since there is not an industry-standard format for such data.
 
 {% include picture.html
    image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/wallet-backup.png"
@@ -59,19 +59,14 @@ Two main types of information need to be backed up: the user's wallet recovery d
 - _Static channel backups_ contain all basic information about active Lightning channels
 - A _Channels database_ contains data on payments made in active Lightning channels
 - _[Activity]({{'/guide/daily-spending-wallet/activity/' | relative_url }})_ includes transaction memos, categories, tags, or any other metadata that helps the user keep track of their transaction history
-  - There is no industry standard format for activity metadata, so this format may only be recoverable to the user within your software
 - _[Contacts]({{'/guide/daily-spending-wallet/activity/' | relative_url }})_ includes any metadata that helps to abstract transaction endpoints into a contacts list for the user.
-  - Like activity, there is no industry standard format for contact metadata, so this format may only be recoverable to the user within your software
 
 Users who lose both their wallet access and their backup permanently lose their bitcoin. Arguably, this creates one of the most challenging design problems within the space.
 
 Backups could be handled automatically by the software, manually by the user, or a mix of these two methods. Regardless of the type of scheme you decide to go with, it’s crucial to be explicit about how your product handles backups and private key management.
 
-{% include tip/recommendation.html %}
-
-We recommend that the optimal phase to hint the user to perform the backup should be after the wallet has received funds for the first time. This way, we avoid overwhelming the user with an unnecessary task, as it makes more sense to backup a wallet with funds on it.
-
-{% include tip/close.html %}
+This daily spending wallet reference design encourages the user to configure an automatic cloud backup for their recovery phrase and lightning channel state. It also provides manual backup as a fallback.
+This wallet signals to the user to perform the backup immediately after they receive funds for the first time. This way, we avoid overwhelming the user with an unnecessary task, as it makes more sense to backup a wallet with funds on it.
 
 Recent [studies](https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445679) show users are often confused or unaware of where their private keys are being stored, ultimately causing inadequate risk assessment and poor storage behavior. This risk of user negligence may be avoided with transparent messaging around the scheme your wallet is using.
 
