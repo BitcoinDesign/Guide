@@ -99,7 +99,7 @@ A survey and follow-up interview of 990 bitcoin users to determine bitcoin manag
 
 #### [The State of Lightning Volume 2](https://arcane.no/research/reports/the-state-of-lightning-volume-2)
 
-_2022 by Arcane research_
+_Login required to access. 2022 by Arcane research_
 
 In this second edition, Arcane Research delivers valuable insights into the growth of bitcoin's lightning network. The report helps quantify and visualize what's happening right now with lightning. Not only that, it also shows how it is solving real problems for people around the world.
 
