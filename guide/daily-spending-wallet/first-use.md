@@ -36,14 +36,14 @@ Illustration sources
 
 # First use
 
-There are a number of common tasks a user might want to achieve the first time they open a wallet application:
+Using an application for the first time is a particularly sensitive moment in the [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/#first-use' | relative_url }}). We form a mental model of the features and experience, and how well they address our needs. It can be a make-or-break moment. As designers, our goals are to gently guide users through this initial setup to the point where they are comfortable using the application in the future.
 
-- [Create a new wallet](/guide/daily-spending-wallet/first-use/#creating-a-wallet), or
-- [Recover an existing wallet](/guide/daily-spending-wallet/backup-and-recovery/recovery/)
-- [Backup a wallet](/guide/daily-spending-wallet/backup-and-recovery/landing-page/)
-- [Fund a wallet](/guide/daily-spending-wallet/funding/)
+For new users, this sequence typically includes:
+- [Wallet creation]({{ '/guide/daily-spending-wallet/first-use/#creating-a-wallet' | relative_url }}) and [backup]({{ '/guide/daily-spending-wallet/backup-and-recovery/landing-page/' | relative_url }})
+- Adjusting [security]({{ '/guide/daily-spending-wallet/security/' | relative_url }}) settings
+- [Depositing]({{ '/guide/daily-spending-wallet/funding/' | relative_url }}) or [requesting]({{ '/guide/daily-spending-wallet/requesting/' | relative_url }}) bitcoin
 
-While the first two, creating or restoring a wallet, normally need to be tackled straight away, the last two can be designed to fit the flow and capability of your application.
+A second, just as important, user flow is the [recovery of an existing wallet]({{ '/guide/daily-spending-wallet/backup-and-recovery/recovery/' | relative_url }}) and its funds.
 
 It is common to see onboarding flows that implore the user to do a manual backup of their [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) straight away, often before they have even gotten to see the main screen of the application. While this can make sure the user is aware of the need to backup, their motivation and ability to safely do this at that exact moment might be limited.
 
@@ -51,7 +51,7 @@ Alternative approaches can be to wait and prompt the user only once there are fu
 
 ### Creating a wallet
 
-[Bitcoin wallets]({{ 'guide/glossary/#wallet' | relative_url }}) contain the private keys to a user’s bitcoin. Private keys let users access bitcoin associated with those keys. If the user does not have a bitcoin wallet already that they want to restore, it is necessary to create a new one.
+[Bitcoin wallets]({{ '/guide/glossary/#wallet' | relative_url }}) contain the private keys to a user’s bitcoin. Private keys let users access bitcoin associated with those keys. If the user does not have a bitcoin wallet already that they want to restore, it is necessary to create a new one.
 
 Like regular keys on a keychain, bitcoin private keys can be copied. This makes [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) one of the most important considerations of any bitcoin owner. Bitcoin wallet applications should automatically generate the user’s private keys locally, meaning they are only generated and stored on the device and not by the wallet provider, during onboarding.
 
