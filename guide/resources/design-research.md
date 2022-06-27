@@ -103,6 +103,12 @@ _2022 by Arcane research_
 
 In this second edition, Arcane Research delivers valuable insights into the growth of bitcoin's lightning network. The report helps quantify and visualize what's happening right now with lightning. Not only that, it also shows how it is solving real problems for people around the world.
 
+#### [The Lightning Network: Bitcoin’s Evolution to Medium of Exchange](https://kraken.docsend.com/view/vdtb2nfy3m9m3d6g)
+
+_2022 by Kraken Intelligence._
+
+This report provides an overview of the Lightning protocol and its technical design. It also reveals its historical background and gives some interesting insights into the state of the network.
+
 #### [Bitcoin: Knowledge and Perceptions](https://block.xyz/2022/btc-report.pdf)
 
 _2022 by Block, Inc._ 
