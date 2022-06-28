@@ -315,7 +315,7 @@ If your wallet is Lightning-only, the user will be unable to proceed with making
 
 {% include image-gallery.html pages = page.imagesLightning %}
 
-In this example, the user is scanning a QR to make a payment. This wallet recognizes it as an on-chain address. It is capable of making the on-chain payment with submarine swaps. However, that would involve a longer confirmation time and higher fee for such a small payment. It immediately pulls up a modal notification to warn the user that they will have to wait longer for the payment to settle, and pay a higher fee. It informs them they can pay instantly if they can get a different type of QR code from the sender.
+In this example, the user scans a QR to make a payment. This wallet recognizes it as an on-chain address. It is capable of making the on-chain payment with submarine swaps. However, that would involve a longer confirmation time and a higher fee for such a small payment. It immediately pulls up a modal notification to warn the user that they will have to wait longer for the payment to settle and pay a higher fee. It informs them they can pay instantly if they can get a different type of QR code from the sender.
 
 If the user has already had this problem before, they will know to ask the recipient for a different type of QR code. If not, they can use the "help me" screen to get more information.
 
