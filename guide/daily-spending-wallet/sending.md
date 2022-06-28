@@ -311,7 +311,7 @@ Lightning is likely to be the best option for the majority of payments a user ma
 
 However, this can be challenging with the variety of different payment formats between on-chain and Lightning. What happens when the user is trying to pay somebody, but the receiving party has given them an on-chain address instead of a Lightning invoice?
 
-If your wallet is Lightning-only, the user will not be able to proceed with making payment. However, even if your wallet allows the user to send on-chain payments, this payment could still result in a higher transaction fee than they would have incurred over Lightning. If it's in the users best interest to pay over Lightning, then let them know and help them determine what to do next.
+If your wallet is Lightning-only, the user will be unable to proceed with making payment. However, even if your wallet allows the user to send on-chain payments, this payment could still result in a higher transaction fee than they would have incurred over Lightning. If it's in the user's best interest to pay over Lightning, then let them know and help them determine what to do next.
 
 {% include image-gallery.html pages = page.imagesLightning %}
 
