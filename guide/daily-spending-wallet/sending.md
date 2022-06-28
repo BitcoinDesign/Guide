@@ -307,7 +307,7 @@ Effectively supporting users when problems occur can build trust and confidence,
 
 ### Encouraging lightning network
 
-For the majority of payments a user makes, Lightning is likely to be the best option. It will be faster, more private, and cost less. An ideal scenario would be one where the user does not spend time considering whether to pay on-chain or Lightning — it's all bitcoin to them.
+Lightning is likely to be the best option for the majority of payments a user makes. It will be faster, more private, and cost less. An ideal scenario would be where the user does not spend time considering whether to pay on-chain or Lightning — it's all bitcoin to them.
 
 However, this can be challenging with the variety of different payment formats between on-chain and Lightning. What happens when the user is trying to pay somebody, but the receiving party has given them an on-chain address instead of a Lightning invoice?
 
