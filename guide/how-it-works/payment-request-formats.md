@@ -46,12 +46,7 @@ A [Uniform Resource Identifier](https://en.wikipedia.org/wiki/Uniform_Resource_I
 
 Bitcoin uses URIs to help apps identify payment requests. The technical details of this scheme are detailed in [BIP 21](https://bips.xyz/21).
 
-BIP 21 uses a `bitcoin:` URI scheme to identify and help applications manage bitcoin payment requests. Applications should support this if they want to be [interoperable]({{'/guide/getting-started/principles/#interoperability' | relative_url}}) with other bitcoin products. Some other less common, non-standardized, URI schemes used for bitcoin payment requests include:
-
-- `BITCOIN:`
-- `lightning:`
-- `LIGHTNING:`
-- `lnurl:`
+BIP 21 uses a `bitcoin:` URI scheme to identify and help applications manage bitcoin payment requests. Applications should support this if they want to be [interoperable]({{'/guide/getting-started/principles/#interoperability' | relative_url}}) with other bitcoin products. Some other URI schemes used for bitcoin payment requests include `lightning` and LNURL schemes such as `lnurlp`. Note that a URI scheme can be presented as lowercase or uppercase.
 
 BIP 21 is extensible and allows for the addition of other useful meta data that give more context to a payment request. This includes things like an amount, labels, messages, and other useful data. It also allows [more than one type]({{'/guide/how-it-works/payment-request-formats/#unified-payment-requests' | relative_url}}) of payment request format to be included in a payment request.
 
