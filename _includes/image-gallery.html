@@ -6,9 +6,18 @@
 {% capture imageURLRetina %}{{ page.image_base }}{{ item.file }}@2x.png{% endcapture %}
 {% capture captionText %}{{ item.caption | no_runts | markdownify }}{% endcapture %}
 
+{%- if item.modalImage != nil -%}
+   {% capture modalImage %}{{ page.image_base }}{{ item.modalImage }}.png{% endcapture %}
+{% else %}
+   {% assign modalImage = nil %}
+{%- endif -%}
+
 {% include picture.html
    image = imageURL
    retina = imageURLRetina
+   modalImage = modalImage
+   modalWidth = item.modalWidth
+   modalHeight = item.modalHeight
    alt-text = item.alt
    caption = captionText
    width = 250

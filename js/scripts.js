@@ -6,6 +6,7 @@ var searchOverlayVisible = false;
 var mobileMenuVisible = false;
 var figmaEmbeds = [];
 var ref = {};
+var isMobile = window.innerWidth <= 1024;
 
 function toggleMenu() {
   if(mobileMenuVisible) {
@@ -16,8 +17,6 @@ function toggleMenu() {
 };
 
 function updateNavAccessibility() {
-  var isMobile = window.innerWidth <= 375;
-
   ref.navTrigger.setAttribute("aria-hidden", !isMobile);
   ref.siteNav.setAttribute("aria-hidden", isMobile);
 
@@ -34,10 +33,17 @@ function showMenu() {
 
   // Update nav menu accessibility properties
   ref.siteNav.removeAttribute("hidden");
+  ref.siteNav.setAttribute("aria-hidden", false);
 
   setTimeout(function() {
     ref.header.classList.add('-active');
-  }, 5);
+
+    // Focus on the first nav item
+    var links = ref.siteNav.getElementsByTagName('a');
+    if(links.length > 0) {
+        links[0].focus();
+    }
+  }, 50);
 
   if(searchOverlayVisible) {
     hideSearchOverlay();
@@ -53,6 +59,7 @@ function hideMenu() {
 
   setTimeout(function() {
     ref.siteNav.setAttribute("hidden", "hidden");
+    ref.siteNav.setAttribute("aria-hidden", true);
   }, 400);
 };
 
@@ -195,10 +202,10 @@ function toggleSecondaryNav(event) {
 
   if(navListItem.classList.contains('-active')) {
     navListItem.classList.remove('-active');
-    navListItem.setAttribute('aria-expanded', false);
+    event.currentTarget.setAttribute('aria-expanded', false);
   } else {
     navListItem.classList.add('-active');
-    navListItem.setAttribute('aria-expanded', true);
+    event.currentTarget.setAttribute('aria-expanded', true);
   }
 }
 
@@ -338,16 +345,14 @@ function handleModalImageLinkClick(e) {
         modalImageInner.appendChild(ref.modalImageLoading);
         ref.modalImageContainer.appendChild(modalImageInner);
         ref.modalImageContainer.appendChild(modalBottom);
-        document.getElementById('top').appendChild(ref.modalImageContainer);
+        document.getElementById('main').appendChild(ref.modalImageContainer);
         [modalClose, modalTop, modalBottom, modalOverlay].forEach(function(element){
             element.addEventListener('click', closeModal);
         });
     }
 
-    var mobile = window.innerWidth < 640;
-
     ref.modalImageContainer.classList.add('loading');
-    if(mobile && imgTag.dataset.modalWidthMobile && imgTag.dataset.modalHeightMobile) ref.modalImageDimensions = [imgTag.dataset.modalWidthMobile, imgTag.dataset.modalHeightMobile];
+    if(isMobile && imgTag.dataset.modalWidthMobile && imgTag.dataset.modalHeightMobile) ref.modalImageDimensions = [imgTag.dataset.modalWidthMobile, imgTag.dataset.modalHeightMobile];
     else if(imgTag.dataset.modalWidth && imgTag.dataset.modalHeight) ref.modalImageDimensions = [imgTag.dataset.modalWidth, imgTag.dataset.modalHeight];
     else ref.modalImageDimensions = [imgTag.getAttribute('width'), imgTag.getAttribute('height')];
     ref.modalImage.setAttribute('width', ref.modalImageDimensions[0]);
@@ -366,7 +371,6 @@ function handleModalImageLinkClick(e) {
     resizeModal(true);
 
     setTimeout(function(){
-        ref.body = document.getElementsByTagName('body')[0];
         ref.body.addEventListener('scroll', preventScroll, {passive: false});
         ref.body.addEventListener('mousewheel', preventScroll, {passive: false});
         ref.body.addEventListener('touchmove', preventScroll, {passive: false});
@@ -375,7 +379,7 @@ function handleModalImageLinkClick(e) {
 
     var img,
         modalLink = imgTag.closest('.modal-image-link');
-    if(mobile && modalLink.dataset.modalImageMobile) img = modalLink.dataset.modalImageMobile;
+    if(isMobile && modalLink.dataset.modalImageMobile) img = modalLink.dataset.modalImageMobile;
     else img = modalLink.getAttribute('href');
 
     var request = new Request(img);
@@ -423,12 +427,208 @@ function preventScroll(e){
     return false;
 }
 
+function startLottie() {
+    // Check for existing lottie fallbacks and remove if so
+    removeLottieFallbacks();
+
+    // Load lottie if not available and not loading.
+    if(!ref.lottieLoaded && !ref.lottieLoading) {
+
+        ref.lottieLoading = true;
+
+        var script = document.createElement('script');
+        script.setAttribute('src', '/js/lottie-5-9-1.min.js');
+
+        script.onload = function(){
+            ref.lottieLoaded = true;
+
+            if(ref.lottiePath) {
+                startLottie();
+            }
+        };
+
+        var footer = document.getElementsByClassName('site-footer')[0];
+        footer.appendChild(script);
+    }
+
+    if(ref.lottieLoaded && ref.lottiePath) {
+        // Delete old animations.
+        stopLottie();
+        ref.body.classList.add('lottie-active');
+        var i = 0;
+        ref.lottiePath.forEach(function(item){
+            if(!item.dataset.name) item.dataset.name = 'animation' + i
+            var anim = lottie.loadAnimation({
+                container: item, // the dom element that will contain the animation
+                name: item.dataset.name,
+                renderer: 'svg',
+                loop: item.dataset.loop && item.dataset.loop === "false" ? false : true,
+                autoplay: true,
+                path: item.dataset.lottie // the path to the animation json
+            });
+            i++;
+
+            anim.addEventListener('complete', function(e){
+                lottie.goToAndStop(0, false, item.dataset.name);
+                var btn = item.closest('figure').querySelector('.animation-controls button');
+                btn.classList.remove('pause');
+                btn.classList.add('play');
+                btn.setAttribute('aria-label', btn.dataset.playLabel);
+            })
+        });
+    }
+}
+
+function stopLottie() {
+    ref.body.classList.remove('lottie-active');
+    if(typeof lottie !== 'undefined') lottie.destroy();
+}
+
+function removeLottieFallbacks() {
+    var lottieFallbacks = document.querySelectorAll('div.lottie-image');
+    if(lottieFallbacks) {
+        lottieFallbacks.forEach(function(element){
+            element.remove();
+        });
+    }
+}
+
+function onLottieLoaded() {
+    ref.lottieLoaded = true;
+
+    if(ref.lottiePath) {
+        startLottie();
+    }
+}
+
+function findLotties(){
+    var lotties = document.querySelectorAll('.lottie');
+
+    if(lotties.length > 0) {
+        ref.lottiePath = [];
+        lotties.forEach(function(lottie){
+            if(lottie.dataset.lottie) ref.lottiePath.push(lottie);
+        });
+
+        var lottieControls = document.querySelectorAll('.animation-controls button');
+
+        if(lottieControls.length > 0) {
+            lottieControls.forEach(function(btn){
+                var controls = btn.closest('.animation-controls');
+                controls.classList.remove('deactivated');
+                controls.setAttribute('aria-hidden', false);
+                btn.addEventListener('click', handleClickLottieControls);
+            });
+        }
+
+        startLottie();
+    }
+    else ref.lottiePath = null;
+}
+
+function handleClickLottieControls(e){
+    var btn = e.target.closest('.animation-controls button');
+    var element = btn.closest('figure').querySelector('.lottie');
+    if(btn.classList.contains('pause')) {
+        btn.classList.remove('pause');
+        btn.classList.add('play');
+        btn.setAttribute('aria-label', btn.dataset.playLabel);
+        toggleLottie('pause', element);
+    }
+    else {
+        btn.classList.add('pause');
+        btn.classList.remove('play');
+        btn.setAttribute('aria-label', btn.dataset.pauseLabel);
+        toggleLottie('play', element);
+    }
+}
+
+function toggleLottie(action, element){
+    if(typeof lottie !== 'undefined') {
+        if(action === 'play') lottie.play(element.dataset.name);
+        else lottie.pause(element.dataset.name);
+    }
+}
+
+function decideIfLottie(){
+    if(!ref.reduceMotion || ref.reduceMotion.matches) {
+        stopLottie();
+
+        var lotties = document.querySelectorAll('.lottie-fallback noscript');
+
+        if(lotties.length > 0) {
+            lotties.forEach(function (lottie) {
+                var element = document.createElement('div');
+                element.classList.add('lottie-image');
+                element.innerHTML = lottie.textContent;
+                lottie.closest('.lottie-fallback').appendChild(element);
+
+                var controls = lottie.closest('figure').querySelector('.animation-controls');
+                var btn = lottie.closest('figure').querySelector('.animation-controls button');
+
+                if(btn) {
+                    btn.classList.remove('play');
+                    btn.classList.add('pause');
+                    controls.classList.add('deactivated', 'pause');
+                    controls.setAttribute('aria-hidden', true);
+                    btn.removeEventListener('click', handleClickLottieControls);
+                }
+            });
+        }
+    }
+    else {
+        findLotties();
+    }
+}
+
 window.addEventListener("resize", function(event) {
+  isMobile = window.innerWidth <= 1024;
+
   resizeFigmaEmbeds();
   resizeModal();
 })
 
+// Adds keyup listeners to links in the mobile nav.
+setupMobileNavLinkKeyboardNavigation = function() {
+    var navLinks = ref.siteNav.getElementsByTagName('a');
+    if(navLinks.length > 0) {
+        for(var i=0; i<navLinks.length; i++) {
+            navLinks[i].setAttribute('data-index', i);
+            navLinks[i].addEventListener('keyup', onMobileNavLinkKeyUp);
+        }
+    }
+};
+
+// Handles arrow up/down and escape for mobile nav links.
+onMobileNavLinkKeyUp = function(event) {
+    if(isMobile && mobileMenuVisible) {
+        if(event.which == 38 || event.which == 40) {
+            // Select previous or next menu option.
+            event.preventDefault();
+            var index = parseInt(event.target.getAttribute('data-index'));
+            var navLinks = ref.siteNav.getElementsByTagName('a');
+            var direction = event.which == 38 ? -1 : 1;
+            var newIndex = index + direction;
+            if(newIndex < 0) newIndex = navLinks.length - 1;
+            if(newIndex >= navLinks.length) newIndex = 0;
+            var newLink = navLinks[newIndex];
+            while(newLink.offsetParent === null) {
+                newIndex += direction;
+                if(newIndex < 0) newIndex = navLinks.length - 1;
+                if(newIndex >= navLinks.length) newIndex = 0;
+                newLink = navLinks[newIndex];
+            }
+            newLink.focus();
+        } else if(event.which == 27) {
+            // Escape closes the menu
+            hideMenu();
+        }
+    }
+};
+
 document.addEventListener("DOMContentLoaded", function(event) {
+  isMobile = window.innerWidth <= 1024;
+
   ref.header =  document.getElementById("site-header");
   ref.siteNav =  document.getElementById('site-nav');
   ref.navTrigger = document.getElementById("nav-trigger");
@@ -436,7 +636,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
   ref.searchInput = document.getElementById("search-input");
   ref.searchTrigger = document.getElementById("search-trigger");
   ref.searchResults = document.getElementById('search-results');
+  ref.body = document.getElementsByTagName('body')[0];
   ref.modalImageLinks = document.querySelectorAll('.modal-image-link, .modal-indicator svg');
+  ref.lottieLoading = false;
+  ref.lottieLoaded = false;
+  ref.lottiePath = null;
+
+  ref.reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  decideIfLottie();
+  ref.reduceMotion.addEventListener('change', function(){
+      decideIfLottie();
+  });
 
   updateNavAccessibility();
 
@@ -446,6 +656,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   if(ref.navTrigger) {
     ref.navTrigger.addEventListener('click', toggleMenu);
+
+    setupMobileNavLinkKeyboardNavigation();
   }
 
   var secondaryNavListExpander = document.getElementsByClassName("nav-list-expander");
@@ -458,7 +670,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   setupUnitsAndSymbolsFormatter();
 
-  for(var i = 0; i < ref.modalImageLinks.length; i++) {
-      ref.modalImageLinks[i].addEventListener('click', handleModalImageLinkClick);
+  for(var k=0; k<ref.modalImageLinks.length; k++) {
+      ref.modalImageLinks[k].addEventListener('click', handleModalImageLinkClick);
   }
 });

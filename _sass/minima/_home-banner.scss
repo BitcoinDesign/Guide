@@ -94,6 +94,15 @@
     background-repeat:   no-repeat;
     background-position: center center;
     transition: background-color 150ms $ease;
+    position: relative;
+
+    svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
 
     @include retina() {
       background-image: var(--banner-image-path-mobile-retina);
@@ -179,12 +188,14 @@
     max-width: 800px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
 
     > p {
       font-size: 12px;
-      line-height: 24px;
+      line-height: 18px;
       margin: 0;
+      flex-basis: 50%;
+      padding-right: 12px;
 
       a {
         color: black;
@@ -198,13 +209,15 @@
 
     .home-banner-info-options {
       display: flex;
-      align-items: center;
+      align-items: start;
+      flex-basis: 50%;
+      justify-content: flex-end;
 
       a,
       button {
         display: block;
         font-size: 12px;
-        line-height: 24px;
+        line-height: 18px;
         color: black;
         text-decoration: underline;
 
@@ -217,6 +230,8 @@
         appearance: none;
         background-color: transparent;
         border-width: 0;
+        margin-top:0;
+        padding-top: 0;
       }
 
       a + button {
@@ -229,6 +244,7 @@
     .home-banner-info-wrapper {
       > p {
         font-size: 10px;
+        line-height: 16px;
       }
 
       .home-banner-info-options {
@@ -236,7 +252,7 @@
         a,
         button {
           font-size: 10px;
-          line-height: 20px;
+          line-height: 16px;
         }
 
         a + button {
@@ -247,3 +263,12 @@
   }
 }
 
+.lottie-active {
+  .home-banner {
+    .home-banner-image {
+      &.lottie {
+        background-image: none;
+      }
+    }
+  }
+}

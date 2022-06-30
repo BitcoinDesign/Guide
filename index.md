@@ -4,6 +4,8 @@
 
 layout: home
 permalink: /
+title: Bitcoin Design. Open-source design for bitcoin products.
+description: Bitcoin Design is a free open-source community resource that helps designers and developers working on bitcoin-products to create better experiences, faster.
 video: /assets/images/bitcoin-design-preview.mp4
 videoType: 'video/mp4'
 videoWidth: 1600
@@ -11,7 +13,6 @@ videoHeight: 840
 ---
 
 ## We are helping make [bitcoin](https://bitcoin.org) more intuitive and accessible.
-
 
 As bitcoin’s popularity continues to rise, it is essential that everyone be able to participate in this new economy regardless of technical expertise or geography. That can only happen if creators everywhere have the resources and community necessary to foster better bitcoin experiences.
 

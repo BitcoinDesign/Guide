@@ -28,8 +28,12 @@
             letter-spacing: -0.5px;
             color: var(--frontHex);
             transition: color 100ms $ease;
-            outline: none;
+            // outline: none;
             white-space: nowrap;
+
+            &:focus {
+                outline: 2px solid $primary-color;
+            }
 
             svg {
                 width: 40px;
@@ -75,6 +79,10 @@
                     text-decoration: none;
                 }
 
+                &:focus {
+                    background-color: rgba($primary-color, 0.1);
+                }
+
                 &.active {
                     color: $primary-color;
                 }
@@ -93,8 +101,6 @@
             background-color: transparent;
             padding: 0;
             width: 60px;
-            outline: none;
-            margin-left: 10px;
 
             svg {
                 width: 44px;
@@ -132,7 +138,6 @@
             box-shadow: 0 10px 25px -5px rgba(var(--front), 0.1);
             border-bottom-left-radius: 3px;
             border-bottom-right-radius: 3px;
-            // border-bottom: 1px solid rgba(var(--front), 0.1);
 
             form {
                 position: relative;
@@ -152,7 +157,6 @@
 
                     &:focus {
                         outline: none;
-
                     }
                 }
             }
@@ -163,16 +167,6 @@
 
                 form {
                     border: 1px solid rgba(var(--front), 0.05);
-                    // &:before {
-                    //     display: block;
-                    //     content: '';
-                    //     position: absolute;
-                    //     top: 0;
-                    //     left: 0;
-                    //     width: 100%;
-                    //     height: 100%;
-                    //     border: 1px solid $primary-color;
-                    // }
                 }
             }
 
@@ -253,7 +247,7 @@
                 background-color: transparent;
                 padding: 0;
                 border-width: 0;
-                outline: none;
+                // outline: none;
 
                 svg {
                     width: 44px;
@@ -367,9 +361,11 @@
             .site-nav {
                 display: flex;
                 margin-left: auto;
+                gap: 20px;
 
                 .page-link {
-                    margin-left: 40px;
+                    padding-left: 10px;
+                    padding-right: 10px;
 
                     &:after {
                         display: block;
