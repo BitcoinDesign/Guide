@@ -11,13 +11,6 @@ redirect_from:
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/daily-spending-wallet/first-use/first-use-preview.png
 image_base: /assets/images/guide/daily-spending-wallet/first-use/
-images_discovery:
-    - file: app-store-listing
-      alt:
-      caption:
-    - file: onboarding-welcome-screen
-      alt:
-      caption: It is good practice to clearly highlight the primary user action, which is "Create a new wallet" in this case.
 images_create:
     - file: onboarding-welcome-screen
       alt:
@@ -25,37 +18,30 @@ images_create:
     - file: responsibility-disclaimer
       alt:
       caption: Bitcoin wallets function is such a unique way that it is recommended to inform users about their responsibilities.
-images_onboarding:
-    - file: cloud-backup
-      alt:
-      caption:
-    - file: security-setup
-      alt:
-      caption:
 images_funding:
     - file: funding-options
       alt:
-      caption:
+      caption: Provide options for users who don't have any bitcoin yet, and for users who do.
     - file: funding-address
       alt:
-      caption:
+      caption: Make the first deposit convenient, but also explain potential fees to avoid confusion.
 images_deposit:
     - file: home-receiving
       alt:
-      caption:
+      caption: Indicate incoming payments as soon as they can be detected.
     - file: initial-receive
       alt:
-      caption:
+      caption: Seeing the first successful payment completed can be a moment of relief for users.
     - file: initial-receive-fees
       alt:
-      caption:
+      caption: Provide clear descriptions for fees, especially ones that may be unexpected.
 images_reminders:
     - file: security-reminder
       alt:
-      caption:
+      caption: Remind users to review adjust their security settings.
     - file: home-security-reminder
       alt:
-      caption:
+      caption: Reminders can also be more discrete, especially if the potential risks are lower.
 ---
 
 <!--
@@ -92,24 +78,26 @@ Illustration sources
 
 ---
 
-Installing and trying an application for the first time is a particularly sensitive moment in the [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/#first-use' | relative_url }}). We form a mental model of the features and experience, and how well they address our needs. It can be a make-or-break moment. As designers, our goals are to gently guide users through this initial setup to the point where they are comfortable using the application in the future.
-
-One of the difficulty aspects of designing this experience is that users may have very different starting points and needs. Someone brand new to bitcoin may want to explore the application thoroughly before committing to it. Another user may already be very comfortable and just wants to quickly receive funds.
+Installing and trying an application for the first time is a particularly sensitive moment in the [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/#first-use' | relative_url }}). We form a mental model of the features and experience, and how well they address our needs. It can be a make-or-break moment. As designers, our goal is to gently guide users through this initial setup to the point where they are comfortable using the application in the future.
 
 Overall, onboarding typically involves:
 - Discovery, download and launch
 - [Wallet creation]({{ '/guide/daily-spending-wallet/first-use/#creating-a-wallet' | relative_url }}) and [backup]({{ '/guide/daily-spending-wallet/backup-and-recovery/landing-page/' | relative_url }}), or [wallet recovery]({{ '/guide/daily-spending-wallet/backup-and-recovery/recovery/' | relative_url }})
 - [Depositing]({{ '/guide/daily-spending-wallet/funding/' | relative_url }}) or [requesting]({{ '/guide/daily-spending-wallet/requesting/' | relative_url }}) bitcoin
 
-To account for various user types, we recommend a flexible first-use design that guides users towards a good setup (the "happy path"), but allows them to skip parts they don't care about, or dive deeper into what's relevant to them. If skipped parts are highly important, the application can still remind users about them at a later point.
+#### How to approach this user flow
 
-Some studies suggest that users struggled greatly with technical terminology and feeling as though they had a lack of guidance during wallet setup. By walking users through single steps that clearly frame the features of self-custodial bitcoin wallets, users will feel well-equipped to navigate and use the wallet confidently.
+One of the difficult aspects of designing this experience is that users may start out with very different [expectations and needs]({{ '/guide/designing-products/getting-to-know-your-users/' | relative_url }}). Someone brand new to bitcoin may want to explore the application thoroughly before committing to it. Another user may already be comfortable and just wants to quickly share a QR code to receive funds.
 
-> Users reported that they often felt like they lacked guidance and understanding during wallet setup
+We recommend designing a flexible first-use experience that guides users towards best practices (the "happy path"). Whenever possible, options should be available to skip parts individual users may not find relevant, or dive deeper and personalize settings. If skipped parts are highly important, the application should remind users about them at a later point.
+
+Some [studies]({{ '/guide/resources/design-research/' | relative_url }}) suggest that users struggled greatly with [technical terminology]({{ '/guide/glossary/' | relative_url }}) and feeling as though they had a lack of guidance during wallet setup. By walking users through simple steps that clearly frame the features of self-custodial bitcoin wallets, users will feel well-equipped to navigate and use the wallet confidently.
+
+> Users reported that they often felt like they lacked guidance and understanding during wallet setup.
 >
 > <cite>As researched by <a href="https://arxiv.org/pdf/1802.04351.pdf">Eskandari et al</a></cite>
 
-The details of this experience can vastly differ based on your technical architecture and use case. For this reference design, we focus on a lightning-first mobile wallet that automates channel management via a lightning service provider.
+The details of this experience can vastly differ based on your technical architecture and use case. For this reference design, we focus on a lightning-first mobile wallet that automates channel management via a [lightning service]({{ '/guide/how-it-works/lightning-services/' | relative_url }}) provider.
 
 ## Discovery and installation
 
@@ -155,7 +143,7 @@ While this may sound daunting to first-time users, these caveats mustn't be hidd
    layout = "float-right-desktop -background -shadow"
 %}
 
-Regularly backing up wallet and user data in a secure manner is essential for bitcoin applications. For small amounts of funds, encrypted cloud backups are a convenient choice with a good tradeoff between security and convenience.
+Regularly [backing up wallet]({{ '/guide/daily-spending-wallet/backup-and-recovery/landing-page/' | relative_url }}) and user data in a secure manner is essential for bitcoin applications. For small amounts of funds, [encrypted cloud backups]({{ '/guide/daily-spending-wallet/backup-and-recovery/cloud-backup/' | relative_url }}) are a convenient choice with a good tradeoff between security and convenience.
 
 Frequent backups are important for lightning wallets, as channel states frequently change and need to be updated.
 
@@ -171,41 +159,41 @@ Frequent backups are important for lightning wallets, as channel states frequent
    width = 250
    height = 541
    alt-text = ""
-   caption = ""
+   caption = "Additional security measures are appropriate since bitcoin wallets handle user funds."
    layout = "float-right-desktop -background -shadow"
 %}
 
-While smartphones typically already require authentication to get past their lock screens, it is appropriate for bitcoin applications to introduce further security measures. For example, a user may only require Face ID to access their device, but then set up a unique PIN to access the wallet and send payments.
+While smartphones typically already require authentication to get past their lock screens, it is appropriate for bitcoin applications to introduce further security measures. For example, a user may only require [Touch ID or Face ID]({{ '/guide/daily-spending-wallet/security/#biometrics-touch-id--face-id' | relative_url }}) to access their device, but then set up a [unique PIN]({{ '/guide/daily-spending-wallet/security/#pin-protection' | relative_url }}) to access the wallet and send payments.
 
-PINs can also be used to encrypt backup data.
+PINs can also be used to encrypt backup data, both locally and in cloud storage.
 
 </div>
 
 ## Initial deposit
 
-Any new wallet starts empty and requires funding to become useful, typically via purchase of bitcoin, or deposit of already owned bitcoin. Both on-chain and lightning deposits should be supported, with on-chain funds automatically getting swapped to lightning. Swap fees should be explained in advance to prevent user frustration.
+Any new wallet starts empty and requires funding to become useful, typically via purchase of bitcoin, or deposit of already owned bitcoin. Both on-chain and lightning deposits should be supported, with on-chain funds automatically getting swapped to lightning. Swap fees should be explained in advance to prevent user frustration. For more on this, see [funding]({{ '/guide/daily-spending-wallet/funding/' | relative_url }}).
 
 {% include image-gallery.html pages = page.images_funding %}
 
-## Receiving a first payment
+## Receiving the first payment
 
-The first deposit can be a sensitive moment, so users should be informed as soon as it is detected. There is a high chance that additional fees had to be paid in order to swap bitcoin to lightning or open a new channel. These should be clearly explained so users don't assume that high fees are the norm.
+The first deposit can be a sensitive moment, so users should be informed as soon as it is detected. There is a high chance that additional fees had to be paid in order to swap bitcoin to lightning or open a new channel. These should be clearly explained so users don't assume that high fees are the norm. For more detail, see [receiving]({{ '/guide/daily-spending-wallet/requesting/#receiving-a-payment' | relative_url }}).
 
 {% include image-gallery.html pages = page.images_deposit %}
 
 ## Security reminders
 
-If funds have been deposited and the user has not set up backup and security settings properly, it may be a good time to remind them to do so. This is particularly relevant if large amounts have been deposited, making loss more painful to the user.
+If funds have been deposited and the user has not set up [backup]({{ '/guide/daily-spending-wallet/backup-and-recovery/landing-page/' | relative_url }}), [privacy]({{ '/guide/daily-spending-wallet/privacy/' | relative_url }}), and [security]({{ '/guide/daily-spending-wallet/security/' | relative_url }}) settings properly, it may be a good time to remind them to do so. This is particularly relevant if large amounts have been deposited, making potential loss more painful for the user.
 
 {% include image-gallery.html pages = page.images_reminders %}
 
 ## What's next
 
-After the first use, users are typically on their own to use the application as they desire. Features that are typically only relevant at later stages of the usage life cycle may benefit from their own onboarding flows. Key is to present introductory information at the time it becomes relevant to the user.
+After the first use, users are typically on their own to use the application as it fits their needs, and everything should be set up appropriately. Features that are typically only relevant at later stages of the [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/#first-use' | relative_url }}) may benefit from their own onboarding flows. Key is to present introductory information at the time it becomes relevant to the user.
 
 ---
 
-Ok, now let's look at [funding a daily spending wallet.]({{ '/guide/daily-spending-wallet/funding/' | relative_url }})
+Ok, now let's look closer at [funding a daily spending wallet.]({{ '/guide/daily-spending-wallet/funding/' | relative_url }})
 
 {% include next-previous.html
    previousUrl = "/guide/daily-spending-wallet/"
