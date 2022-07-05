@@ -48,10 +48,12 @@ images_reminders:
 
 Editor's notes
 
-This chapter covers backing up wallet data via a cloud provider.
+This page provides best practices and designers for the first-use experience of the
+daily spending wallet reference design.
 
 Illustration sources
 - https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=0%3A1
+- https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-UI-Kit?node-id=3573%3A92556
 
 -->
 
