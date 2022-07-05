@@ -1506,3 +1506,9 @@ assets/images/home/banner/bits-and-pieces-fallback.png: bits-and-pieces-fallback
 assets/images/home/banner/bits-and-pieces-fallback@2x.png: bits-and-pieces-fallback@2x.png
 assets/images/guide/resources/design-files/bitcoin-wallet-backup-print-template.jpg: bitcoin-wallet-backup-print-template.jpg
 assets/images/guide/resources/design-files/bitcoin-wallet-backup-print-template@2x.jpg: bitcoin-wallet-backup-print-template@2x.jpg
+assets/images/guide/daily-spending-wallet/sending/review-onchain-tx.png: review-onchain-tx.png
+assets/images/guide/daily-spending-wallet/sending/scan-onchain-qr-code.png: scan-onchain-qr-code.png
+assets/images/guide/daily-spending-wallet/sending/onchain-warning@2x.png: onchain-warning@2x.png
+assets/images/guide/daily-spending-wallet/sending/scan-onchain-qr-code@2x.png: scan-onchain-qr-code@2x.png
+assets/images/guide/daily-spending-wallet/sending/onchain-warning.png: onchain-warning.png
+assets/images/guide/daily-spending-wallet/sending/review-onchain-tx@2x.png: review-onchain-tx@2x.png
