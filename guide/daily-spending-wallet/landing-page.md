@@ -96,8 +96,8 @@ An overview of how to help users maintain transaction privacy with bitcoin.
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/designing-products/interoperability/"
-   previousName = "Interoperability"
+   previousUrl = "/guide/designing-products/accessibility/"
+   previousName = "Accessibility"
    nextUrl = "/guide/daily-spending-wallet/first-use/"
    nextName = "First use"
 %}

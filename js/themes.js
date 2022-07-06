@@ -278,7 +278,7 @@ var themes = [
     },
     flipLayoutOnMobile: false,
     author: {
-        name: "Jessica Wolff",
+        name: "Jessica Wolff and Andy Ribetz",
         link: "https://github.com/BitcoinDesign/Guide/issues/289"
     }
   },
@@ -298,7 +298,7 @@ var themes = [
     },
     button1: {
         fillColor: "#F7931A",
-        outlineColor: '',
+        outlineColor: '#F7931A',
         labelFillColor: "#00"
     },
     button2: {
