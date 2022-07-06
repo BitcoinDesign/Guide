@@ -108,7 +108,7 @@ Some [studies]({{ '/guide/resources/design-research/' | relative_url }}) suggest
 >
 > <cite>As researched by <a href="https://arxiv.org/pdf/1802.04351.pdf">Eskandari et al</a></cite>
 
-The details of this experience can vastly differ based on your technical architecture and use case. For this reference design, we focus on a lightning-first mobile wallet that automates channel management via a [lightning service]({{ '/guide/how-it-works/lightning-services/' | relative_url }}) provider.
+The details of this experience can vastly differ based on your technical architecture and use case. For this reference design, we focus on a non-custodial, lightning-first mobile wallet that uses various [lightning services]({{ '/guide/how-it-works/lightning-services/' | relative_url }}) to automate some operations, such as channel management.
 
 ## Discovery and installation
 
