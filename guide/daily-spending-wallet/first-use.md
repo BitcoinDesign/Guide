@@ -185,7 +185,7 @@ PINs can also be used to encrypt backup data, both locally and in cloud storage.
 
 ## Initial deposit
 
-Any new wallet starts empty and requires funding to become useful, typically via purchase of bitcoin, or deposit of already owned bitcoin. Both on-chain and lightning deposits should be supported, with on-chain funds automatically getting swapped to lightning. Swap fees should be explained in advance to prevent user frustration. For more on this, see [funding]({{ '/guide/daily-spending-wallet/funding/' | relative_url }}).
+New wallets start empty and require funding to become useful. Typically, bitcoin is purchased and sent from an exchange, or from another wallet the user controls. Both on-chain and lightning deposits should be supported. On-chain deposits should be automatically [swapped]({{ '/guide/how-it-works/lightning-services/#swaps' | relative_url }}) to lightning. To prevent user frustration, swap fees should be explained when creating the deposit request. For more on this, see [funding]({{ '/guide/daily-spending-wallet/funding/' | relative_url }}).
 
 {% include image-gallery.html pages = page.images_funding %}
 
