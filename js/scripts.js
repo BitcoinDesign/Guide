@@ -345,7 +345,7 @@ function handleModalImageLinkClick(e) {
         modalImageInner.appendChild(ref.modalImageLoading);
         ref.modalImageContainer.appendChild(modalImageInner);
         ref.modalImageContainer.appendChild(modalBottom);
-        document.getElementById('top').appendChild(ref.modalImageContainer);
+        document.getElementById('main').appendChild(ref.modalImageContainer);
         [modalClose, modalTop, modalBottom, modalOverlay].forEach(function(element){
             element.addEventListener('click', closeModal);
         });
@@ -670,7 +670,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   setupUnitsAndSymbolsFormatter();
 
-  for(var k=0; i<ref.modalImageLinks.length; k++) {
+  for(var k=0; k<ref.modalImageLinks.length; k++) {
       ref.modalImageLinks[k].addEventListener('click', handleModalImageLinkClick);
   }
 });

@@ -45,7 +45,7 @@ If the user's device is lost, stolen, or broken, they can use the backup from th
 
 > Crypto rookies perceive themselves as “incapable of self-managing keys”.
 >
-> <cite>As researched by <a href="https://voskart.de/pdf/u_in_crypto.pdf">Abramova et al</a></cite>
+> <cite>As researched by <a href="https://informationsecurity.uibk.ac.at/pdfs/ECIS21_Non-Adoption_of_Crypto-Assets.pdf">Abramova et al</a></cite>
 
 This method provides users with the feeling that they can rely on their cloud provider to regain access to their funds rather than putting the responsibility on themselves.
 

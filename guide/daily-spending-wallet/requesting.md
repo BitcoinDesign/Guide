@@ -201,7 +201,7 @@ You can convey the name of the user requesting the payment. Suppose the user is 
 Alice:  For design work
 ```
 
-This description is human-readable, and wallets that support [bLIP-0011 NameDesc](https://github.com/lightning/blips/pull/11/) will parse this as a name and a description.
+This description is human-readable, and wallets that support [bLIP-0011 NameDesc](https://github.com/lightning/blips/blob/master/blip-0011.md) will parse this as a name and a description.
 
 </div>
 

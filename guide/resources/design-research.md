@@ -59,13 +59,13 @@ _2021 by Nadeem, Liu, Beznosov, and Pitafi._
 
 A survey of 385 Chinese residents that aims to investigate the adoption factors influencing bitcoin. Results reveal that perceived ease of use and the perceived usefulness have a positive relationship with the intention to use bitcoin.
 
-#### [Non-adoption of crypto-assets: Exploring the role of trust, self-efficacy, and risk](https://voskart.de/pdf/crypto_adoption.pdf)
+#### [Non-adoption of crypto-assets: Exploring the role of trust, self-efficacy, and risk](https://informationsecurity.uibk.ac.at/pdfs/ECIS21_Non-Adoption_of_Crypto-Assets.pdf)
 
 _2021 by Voskobojnikov, Abramova, Beznosov, and Böhme._
 
 A survey of 200 users and 204 non-users of crypto-assets about the roles of trust, self-efficacy, and risk on adoption intention. Results found that trust is a critical factor affecting adoption intention.
 
-#### [The U in Crypto Stands for Usable: An Empirical Study of User Experience with Mobile Cryptocurrency Wallets](https://voskart.de/pdf/u_in_crypto.pdf)
+#### [The U in Crypto Stands for Usable: An Empirical Study of User Experience with Mobile Cryptocurrency Wallets](https://dl.acm.org/doi/pdf/10.1145/3411764.3445407)
 
 _2021 by Voskobojnikov, Wiese, M. Koushki, Roth, and Beznosov._
 
@@ -97,15 +97,27 @@ A survey and follow-up interview of 990 bitcoin users to determine bitcoin manag
 
 ## Independent research
 
+#### [The State of Lightning Volume 2](https://arcane.no/research/reports/the-state-of-lightning-volume-2)
+
+_Login required to access. 2022 by Arcane research_
+
+In this second edition, Arcane Research delivers valuable insights into the growth of bitcoin's lightning network. The report helps quantify and visualize what's happening right now with lightning. Not only that, it also shows how it is solving real problems for people around the world.
+
+#### [The Lightning Network: Bitcoin’s Evolution to Medium of Exchange](https://kraken.docsend.com/view/vdtb2nfy3m9m3d6g)
+
+_2022 by Kraken Intelligence._
+
+This report provides an overview of the Lightning protocol and its technical design. It also reveals its historical background and gives some interesting insights into the state of the network.
+
 #### [Bitcoin: Knowledge and Perceptions](https://block.xyz/2022/btc-report.pdf)
 
-_2022 by Block, Inc._ 
+_2022 by Block, Inc._
 
 In early 2022, Block, Inc. partnered with Wakefield Research to survey 9,500 people in 14 countries across the Americas, EMEA, and APAC. The pool of respondents spread not only across geographies, but also a wide range of ages and gender. The resulting report is a valuable resource to better understand people’s knowledge and perceptions of bitcoin.
 
 #### [Are Cryptocurrencies Currencies? Bitcoin as Legal Tender in El Salvador](https://www.davidargente.com/_files/ugd/b05023_7825615207654784864b4c4cc4ec6550.pdf)
 
-_2022 by Alvarez and Argente_ 
+_2022 by Alvarez and Argente_
 
 A representative national survey was conducted to obtain information on bitcoin’s usage and effects. The authors rely on survey data gathered from face-to-face interviews with 1,800 Salvadorean households. This papers goal is to study the potential of a cryptocurrency to become a medium of exchange.
 
