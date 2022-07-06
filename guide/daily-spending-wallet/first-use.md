@@ -177,7 +177,7 @@ Frequent backups are important for lightning wallets, as channel states frequent
    layout = "float-right-desktop -background -shadow"
 %}
 
-While smartphones typically already require authentication to get past their lock screens, it is appropriate for bitcoin applications to introduce further security measures. For example, a user may only require [Touch ID or Face ID]({{ '/guide/daily-spending-wallet/security/#biometrics-touch-id--face-id' | relative_url }}) to access their device, but then set up a [unique PIN]({{ '/guide/daily-spending-wallet/security/#pin-protection' | relative_url }}) to access the wallet and send payments.
+While smartphones typically already require authentication to get past their lock screens, it is appropriate for bitcoin applications to introduce further security measures. For example, a user may only require [Touch ID or Face ID]({{ '/guide/daily-spending-wallet/security/#biometrics-touch-id--face-id' | relative_url }}) to access their device, but then set up a [unique PIN]({{ '/guide/daily-spending-wallet/security/#pin-protection' | relative_url }}) to access their wallet and send payments.
 
 PINs can also be used to encrypt backup data, both locally and in cloud storage.
 
@@ -189,7 +189,7 @@ Any new wallet starts empty and requires funding to become useful, typically via
 
 {% include image-gallery.html pages = page.images_funding %}
 
-## Receiving the first payment
+## Receiving the deposit
 
 The first deposit can be a sensitive moment, so users should be informed as soon as it is detected. There is a high chance that additional fees had to be paid in order to swap bitcoin to lightning or open a new channel. These should be clearly explained so users don't assume that high fees are the norm. For more detail, see [receiving]({{ '/guide/daily-spending-wallet/requesting/#receiving-a-payment' | relative_url }}).
 
