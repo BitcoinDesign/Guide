@@ -13,34 +13,43 @@ image: https://bitcoin.design/assets/images/guide/daily-spending-wallet/first-us
 image_base: /assets/images/guide/daily-spending-wallet/first-use/
 images_create:
     - file: onboarding-welcome-screen
-      alt:
+      modalImage: onboarding-welcome-screen-full
+      alt: Initial app landing screen
       caption: It is good practice to clearly highlight the primary user action, which is ‘Create a new wallet’ in this case.
     - file: responsibility-disclaimer
-      alt:
+      modalImage: responsibility-disclaimer-full
+      alt: Screen with two options for the user to confirm about controlling the wallets private keys
       caption: Bitcoin wallets function is such a unique way that it is recommended to inform users about their responsibilities.
 images_funding:
     - file: funding-options
-      alt:
+      modalImage: funding-options-full
+      alt: Screen with receive and buy bitcoin options for funding the wallet
       caption: Provide options for users who don't have any bitcoin yet, and for users who do.
     - file: funding-address
-      alt:
+      modalImage: funding-address-full
+      alt: Screen showing a receive address, QR code, and share options
       caption: Make the first deposit convenient, but also explain potential fees to avoid confusion.
 images_deposit:
     - file: home-receiving
-      alt:
+      modalImage: home-receiving-full
+      alt: Home screen with notification about incoming payment of 10,000,000 sats
       caption: Indicate incoming payments as soon as they can be detected.
     - file: initial-receive
-      alt:
+      modalImage: initial-receive-full
+      alt: Payment receipt screen
       caption: Seeing the first successful payment completed can be a moment of relief for users.
     - file: initial-receive-fees
-      alt:
+      modalImage: initial-receive-fees-full
+      alt: Payment receipt screen with fee modal overlaid
       caption: Provide clear descriptions for fees, especially ones that may be unexpected.
 images_reminders:
     - file: security-reminder
-      alt:
+      modalImage: security-reminder
+      alt: Screen with options and a reminder to adjust security and private settings
       caption: Remind users to review adjust their security settings.
     - file: home-security-reminder
-      alt:
+      modalImage: home-security-reminder-full
+      alt: Small reminder on the home screen about backing up the wallet
       caption: Reminders can also be more discrete, especially if the potential risks are lower.
 ---
 
@@ -61,8 +70,8 @@ Illustration sources
    image = "/assets/images/guide/daily-spending-wallet/first-use/first-use.png"
    retina = "/assets/images/guide/daily-spending-wallet/first-use/first-use@2x.png"
    mobile = "/assets/images/guide/daily-spending-wallet/first-use/first-use-mobile.png"
-   mobileRetina = "/assets/images/guide/daily-spending-wallet//first-use/first-use-mobile@2x.png"
-   alt-text = "Creating a new wallet chapter header image"
+   mobileRetina = "/assets/images/guide/daily-spending-wallet/first-use/first-use-mobile@2x.png"
+   alt-text = "First-use flow diagram with the first section highlighted"
    width = 1600
    height = 600
    layout = "full-width"
@@ -108,9 +117,10 @@ The details of this experience can vastly differ based on your technical archite
 {% include image.html
    image = "/assets/images/guide/daily-spending-wallet/first-use/app-store-listing.png"
    retina = "/assets/images/guide/daily-spending-wallet/first-use/app-store-listing@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/first-use/app-store-listing-full.png"
    width = 250
    height = 541
-   alt-text = ""
+   alt-text = "App store listing of the wallet application"
    caption = "Our impressions of app store listings already inform our expectations and attitudes towards applications."
    layout = "float-right-desktop -background -shadow"
 %}
@@ -138,9 +148,10 @@ While this may sound daunting to first-time users, these caveats mustn't be hidd
 {% include image.html
    image = "/assets/images/guide/daily-spending-wallet/first-use/cloud-backup.png"
    retina = "/assets/images/guide/daily-spending-wallet/first-use/cloud-backup@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/first-use/cloud-backup-full.png"
    width = 250
    height = 541
-   alt-text = ""
+   alt-text = "Cloud backup explainer screen with options for different services"
    caption = "Offer different options to accomodate various user behaviors."
    layout = "float-right-desktop -background -shadow"
 %}
@@ -158,9 +169,10 @@ Frequent backups are important for lightning wallets, as channel states frequent
 {% include image.html
    image = "/assets/images/guide/daily-spending-wallet/first-use/security-setup.png"
    retina = "/assets/images/guide/daily-spending-wallet/first-use/security-setup@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/first-use/security-setup-full.png"
    width = 250
    height = 541
-   alt-text = ""
+   alt-text = "Security options explainer screen with PIN and Face ID options"
    caption = "Additional security measures are appropriate since bitcoin wallets handle user funds."
    layout = "float-right-desktop -background -shadow"
 %}
