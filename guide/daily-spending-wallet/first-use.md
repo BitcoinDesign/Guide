@@ -131,13 +131,13 @@ Before using an application, a user needs to become aware of it, become interest
 
 ## Creating a wallet
 
-[Bitcoin wallets]({{ '/guide/glossary/#wallet' | relative_url }}) contain the private keys to a user’s bitcoin. Private keys let users access bitcoin associated with those keys. If the user does not have a bitcoin wallet already that they want to restore, it is necessary to create a new one.
+[Bitcoin wallets]({{ '/guide/glossary/#wallet' | relative_url }}) contain the private keys (derived from the [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }})) to a user’s bitcoin. Private keys let users access bitcoin associated with those keys. If the user does not have a bitcoin wallet already that they want to restore, it is necessary to create a new one.
 
-Like regular keys on a keychain, bitcoin private keys can be copied. This makes [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) one of the most important considerations of any bitcoin owner. Bitcoin wallet applications should automatically generate the user’s private keys locally, meaning they are only generated and stored on the device and not by the wallet provider, during onboarding.
+Like regular keys on a keychain, private keys can be copied. This makes [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) one of the most important considerations of any bitcoin owner. Bitcoin wallet applications should automatically generate the user’s private keys locally, meaning they are only generated and stored on the device and not by the wallet provider, during onboarding.
 
 {% include image-gallery.html pages = page.images_create %}
 
-Bitcoin owners can directly access their funds as long as they have access to their private keys or recovery phrase. You should help your users understand that your team does not have the ability to recover their funds in the event they lose their private keys. A self-custodial wallet means the user will have to take on greater responsibility to safely protect their private key so they can always access their funds.
+Bitcoin owners can directly access their funds as long as they have access to their private keys or recovery phrase. You should help your users understand that your team does not have the ability to recover their funds in the event they lose this access. A self-custodial wallet means the user will have to take on greater responsibility to safely protect their recovery phrase so they can always access their funds.
 
 While this may sound daunting to first-time users, these caveats mustn't be hidden. Doing so may severely compromise their funds' safety, as their default assumptions and behaviors could potentially mimic how they typically use centralized applications (for example, feeling like it is OK if they forget their account information because they can contact customer support to help them recover it).
 
