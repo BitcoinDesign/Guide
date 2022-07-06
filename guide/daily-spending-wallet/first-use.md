@@ -114,7 +114,7 @@ The details of this experience can vastly differ based on your technical archite
 
 <div class="center" markdown="1">
 
-{% include image.html
+{% include picture.html
    image = "/assets/images/guide/daily-spending-wallet/first-use/app-store-listing.png"
    retina = "/assets/images/guide/daily-spending-wallet/first-use/app-store-listing@2x.png"
    modalImage = "/assets/images/guide/daily-spending-wallet/first-use/app-store-listing-full.png"
@@ -145,7 +145,7 @@ While this may sound daunting to first-time users, these caveats mustn't be hidd
 
 <div class="center" markdown="1">
 
-{% include image.html
+{% include picture.html
    image = "/assets/images/guide/daily-spending-wallet/first-use/cloud-backup.png"
    retina = "/assets/images/guide/daily-spending-wallet/first-use/cloud-backup@2x.png"
    modalImage = "/assets/images/guide/daily-spending-wallet/first-use/cloud-backup-full.png"
@@ -166,7 +166,7 @@ Frequent backups are important for lightning wallets, as channel states frequent
 
 <div class="center" markdown="1">
 
-{% include image.html
+{% include picture.html
    image = "/assets/images/guide/daily-spending-wallet/first-use/security-setup.png"
    retina = "/assets/images/guide/daily-spending-wallet/first-use/security-setup@2x.png"
    modalImage = "/assets/images/guide/daily-spending-wallet/first-use/security-setup-full.png"
