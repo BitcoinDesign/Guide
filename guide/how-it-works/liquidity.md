@@ -25,10 +25,21 @@ image: https://bitcoin.design/assets/images/guide/how-it-works/liquidity/liquidi
 Editor's notes
 
 Figma file: https://www.figma.com/file/ZwRT4mZZ4UNGtsfLz22m8M/Liquidity?node-id=0%3A1
+Figma file for channel reserve UI's: https://www.figma.com/file/6iJpftEbajA3y1ylXQxsrl/Channel-reserve
 
 -->
 
 # Lightning liquidity
+{:.no_toc}
+
+---
+
+<div class="glossary-toc" markdown="1">
+* Table of contents
+{:toc}
+</div>
+
+---
 
 Liquidity is a core concept to understand when working with the lightning network, although tricky. Ideally, we are able to design products that are easy enough to use so that users do not need to concern themselves with liquidity. However, product designers need to understand liquidity in order to build effectively on lightning.
 
@@ -305,6 +316,105 @@ Helping the user get liquidity is just the beginning. As they continue to use th
 Consider how you can help the user with channel management without them even knowing it's happening. For example, you could automatically open a new channel for them if they try to create an invoice that exceeds their inbound capacity.
 
 By combining the business incentives of an LSP, clever engineering, and good design, you can build a bitcoin product that makes using the lightning network very easy for the user.
+
+## Channel reserve
+
+### What is a channel reserve?
+
+A channel reserve is an amount that is set aside by each channel participant which ensures neither have 'nothing at stake' if a cheating attempt occurs. This reserve can not be spent, and is held aside for the entirety of the channels lifetime.
+
+Channel reserves make cheating attempts less economical. When one channel party attempts to cheat the other and they are caught, a [penalty transaction](https://fiatjaf.com/73095980.html) can be used to steal all the cheating parties bitcoin as punishment. Channel reserves makes it so cheating attempts always have something at stake making this less likely to occur.
+
+### What is the reserve amount?
+
+The channel reserve amount is dynamic and unique to each channel participant. As defined in [BOLT 2](https://github.com/lightning/bolts/blob/master/02-peer-protocol.md), the channel reserve amount dynamically trends towards 1% of the users local channel capacity. The channel reserve can not be lower than the current 354 sats minimum ([dust limit](https://github.com/lightning/bolts/blob/master/03-transactions.md#dust-limits)).
+
+So if a user has 100,000 sats of local capacity, their channel reserve will be 1,000 sats (1% of 100,000). The user can only spend 99,000 sats of the local capacity. The channel counterparty also has their own channel reserve which aims for a 1% reserve. This means the total channels capacity will have around 2% put aside and unspendable as a reserve.
+
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/liquidity/channel-reserve-01.png"
+   retina = "/assets/images/guide/how-it-works/liquidity/channel-reserve-01@2x.png"
+   mobile = "/assets/images/guide/how-it-works/liquidity/channel-reserve-01-mobile.png"
+   mobileRetina = "/assets/images/guide/how-it-works/liquidity/channel-reserve-01-mobile@2x.png"
+   alt-text = "Lori has 100,000 sats on her side of the channel with 1,000 sats in reserve"
+   width = 800
+   height = 348
+%}
+
+As users send and receive funds, the channel reserve will dynamically adjust so that it's always close to 1%.
+
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/liquidity/channel-reserve-02.png"
+   retina = "/assets/images/guide/how-it-works/liquidity/channel-reserve-02@2x.png"
+   mobile = "/assets/images/guide/how-it-works/liquidity/channel-reserve-02-mobile.png"
+   mobileRetina = "/assets/images/guide/how-it-works/liquidity/channel-reserve-02-mobile@2x.png"
+   alt-text = "Lori routes a 100,000 sats payment through the channel"
+   width = 800
+   height = 348
+%}
+
+If a user spends 10,000 sats of their 100,000 sats local capacity, their new channel reserve will dynamically adjust from 1,000 sats (1% of 100,000 sats) to 900 sats (1% of 90,000 sats). This amount adjusts upwards if the user receives funds.
+
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/liquidity/channel-reserve-03.png"
+   retina = "/assets/images/guide/how-it-works/liquidity/channel-reserve-03@2x.png"
+   mobile = "/assets/images/guide/how-it-works/liquidity/channel-reserve-03-mobile.png"
+   mobileRetina = "/assets/images/guide/how-it-works/liquidity/channel-reserve-03-mobile@2x.png"
+   alt-text = "Lori has 90,000 sats on her side of the channel with 900 sats in reserve"
+   width = 800
+   height = 348
+%}
+
+Each additional channel has its own channel reserve. For example, a user with 20 channels may have more funds locked in reserve than a user with only one channel.
+
+### How does this affect users?
+
+Users can be confused when having funded a channel, but being unable to spend the full amount they have put in.
+
+From a UX standpoint, we need to consider the following:
+
+#### Adding funds
+We should ensure that the user is educated so that:
+
+1. When they are adding funds they know that a small amount will be held as a reserve.
+2. They understand that although they cannot spend 100% of their balance they still own all of their funds.
+
+<div class="image-slide-gallery">
+
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/liquidity/channel-reserve-screen.png"
+   retina = "/assets/images/guide/how-it-works/liquidity/channel-reserve-screen@2x.png"
+   alt-text = "Channel status screen"
+   caption = "Channel reserve amount is indicated on the balance screen which includes a fee overview."
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/liquidity/channel-reserve-notification.png"
+   retina = "/assets/images/guide/how-it-works/liquidity/channel-reserve-notification@2x.png"
+   alt-text = "Channel notification screen"
+   caption = "Channel reserve notification is indicated screen as a modal"
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/liquidity/send-limit-screen.png"
+   retina = "/assets/images/guide/how-it-works/liquidity/send-limit-screen@2x.png"
+   alt-text = "Send limit screen"
+   caption = "Send limit is indicated on home screen"
+   width = 250
+   height = 541
+%}
+
+</div>
+
+However, there are other much more fool-proof ways to prevent theft, such as:
+
+- [Using watchtowers](https://bitcoin.design/guide/how-it-works/lightning-services/).
+- Encouraging users to regularly open their lightning wallet, giving the wallet's node a chance to come online and check its channel state.
+
 
 <small><em>Avatar illustrations credit to [Vitaliy Gorbachev](https://www.flaticon.com/packs/avatars-93).</em></small>
 
