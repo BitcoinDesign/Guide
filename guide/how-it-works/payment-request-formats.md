@@ -77,7 +77,7 @@ Requesters' node public keys are included in their generated invoices, so invoic
 
 {% include tip/open.html color="red" icon="forbid" label="Lightning invoices are not addresses" %}
 
-It could be tempting to refer to a lightning invoice as a “lightning address.” Doing so could be confused with the [lightning address]({{'/guide/how-it-works/payment-request-formats/#lightning-addresses' | relative_url}}) protocol described below. Therefore, avoid calling an invoice an address. “Payment request” is a better synonym for “invoice.”
+It could be tempting to refer to a lightning invoice as a “lightning address.” Doing so could be confused with the [lightning address]({{'/guide/how-it-works/payment-request-formats/#lightning-address' | relative_url}}) protocol described below. Therefore, avoid calling an invoice an address. “Payment request” is a better synonym for “invoice.”
 
 {% include tip/close.html %}
 
@@ -159,7 +159,7 @@ LNURL-withdraw allows a user to pull a payment from another user. These are usef
    layout = "float-right-desktop"
 %}
 
-A users node ID can be used as a payment request format when a sender is paying via [Keysend](https://lightning.readthedocs.io/lightning-keysend.7.html) or an [Atomic multi-path (AMP)]({{ '/guide/how-it-works/payment-request-formats/#atomic-multi-path-amp' | relative_url }}) payment request.
+A users node ID can be used as a payment request format when a sender is paying via [Keysend](https://lightning.readthedocs.io/lightning-keysend.7.html) or an [Atomic multi-path (AMP)]({{ '/guide/how-it-works/payment-request-formats/#atomic-multi-path-amp-invoice' | relative_url }}) payment request.
 
 Node IDs can act as static payment end points. This means the user does not have to generate a request each time they want to receive a payment.
 

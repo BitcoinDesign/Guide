@@ -27,10 +27,12 @@ Here is the content that is currently live:
 [The Bitcoin Design Guide](https://bitcoin.design/guide/)
 *   [Getting started](https://bitcoin.design/guide/getting-started/introduction/)
 *   [Designing bitcoin products](https://bitcoin.design/guide/designing-products/introduction/)
-*   [Onboarding](https://bitcoin.design/guide/onboarding/introduction/)
-*   [Private key management](https://bitcoin.design/guide/private-key-management/introduction/)
-*   [Payments](https://bitcoin.design/guide/payments/)
-*   [Case studies](https://bitcoin.design/guide/case-studies/)
+*   [Daily spending wallet](https://bitcoin.design/guide/daily-spending-wallet/)
+*   [Savings wallet](https://bitcoin.design/guide/savings-wallet/)
+*   [Upgradeable wallet](https://bitcoin.design/guide/upgradeable-wallet/)
+*   [Shared wallet](https://bitcoin.design/guide/shared-wallet/)
+*   [How it works](https://bitcoin.design/guide/how-it-works/)
+*   [Resources](https://bitcoin.design/guide/resources/)
 *   [Contribute to guide](https://bitcoin.design/guide/contribute/)
 *   [Glossary](https://bitcoin.design/guide/glossary/)
 
@@ -43,6 +45,8 @@ The process to create the guide started in the summer of 2020. The first draft o
 On June 2, 2021, the community [announced](https://bitcoindesign.medium.com/announcing-the-bitcoin-design-guide-c4955d859fda) the launch of the initial version of the Bitcoin Design Guide to the public.
 
 On February 9, 2022, the community [announced](https://bitcoindesign.medium.com/design-better-lightning-wallets-with-the-bitcoin-design-guide-v2-2669f610ebc7) the completion of a major revision of the guide to include content about the Lightning network.
+
+See the [roadmap](https://github.com/orgs/BitcoinDesign/projects/2) for what we're currently working on.
 
 ---
 
