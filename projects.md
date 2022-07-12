@@ -60,6 +60,16 @@ projects:
       - name: Slack
         link: https://bitcoindesign.slack.com/archives/C02VCHSQECT
 
+  - name: Bitcoin QR
+    description: Help get unified QR codes adopted for smoother payment flows.
+    image:
+      url: /assets/images/contribute/bitcoinqr.png
+      width: 75
+      height: 75
+    links:
+      - name: More info
+        link: https://bitcoinqr.dev
+
 collaborations:
   - name: Alby
     description: Alby brings Bitcoin to the web with in-browser payments and identity, no account required.
@@ -140,6 +150,16 @@ collaborations:
         link: https://github.com/BitcoinDesign/Meta/issues/70
       - name: Telegram
         link: https://t.me/zeusLN
+
+  - name: Bolt.fun
+    description: Learn about the Lightning Network, post your apps on the market, and join our hackathons.
+    image:
+      url: /assets/images/contribute/bolt-fun.png
+      width: 75
+      height: 75
+    links:
+      - name: Site
+        link: https://bolt.fun/
 ---
 
 <!--

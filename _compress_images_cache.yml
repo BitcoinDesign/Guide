@@ -1561,3 +1561,5 @@ assets/images/guide/how-it-works/node/payments-node.png: payments-node.png
 assets/images/guide/how-it-works/node/payments-node@2x.png: payments-node@2x.png
 assets/images/guide/how-it-works/node/routing-node.png: routing-node.png
 assets/images/guide/how-it-works/node/routing-node@2x.png: routing-node@2x.png
+assets/images/contribute/bitcoinqr.png: bitcoinqr.png
+assets/images/contribute/bolt-fun.png: bolt-fun.png
