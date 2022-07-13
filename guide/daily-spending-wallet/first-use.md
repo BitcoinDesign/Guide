@@ -19,7 +19,7 @@ images_create:
     - file: responsibility-disclaimer
       modalImage: responsibility-disclaimer-full
       alt: Screen with two options for the user to confirm about controlling the wallets private keys
-      caption: Bitcoin wallets function is such a unique way that it is recommended to inform users about their responsibilities.
+      caption: Bitcoin wallets function in such a unique way that it is recommended to inform users about their responsibilities.
 images_funding:
     - file: funding-options
       modalImage: funding-options-full
@@ -100,7 +100,7 @@ Overall, onboarding typically involves:
 
 One of the difficult aspects of designing this experience is that users may start out with very different [expectations and needs]({{ '/guide/designing-products/getting-to-know-your-users/' | relative_url }}). Someone brand new to bitcoin may want to explore the application thoroughly before committing to it. Another user may already be comfortable and just wants to quickly share a QR code to receive funds.
 
-We recommend designing a flexible first-use experience that guides users towards best practices (the "happy path"). Whenever possible, options should be available to skip parts individual users may not find relevant, or dive deeper and personalize settings. If skipped parts are highly important, the application should remind users about them at a later point.
+We recommend designing a flexible first-use experience that guides users towards best practices (the "happy path"). Whenever possible, options should be available to skip parts individual users may not find relevant or dive deeper and personalize settings. If skipped parts are highly important, the application should remind users about them at a later point.
 
 Some [studies]({{ '/guide/resources/design-research/' | relative_url }}) suggest that users struggled greatly with [technical terminology]({{ '/guide/glossary/' | relative_url }}) and feeling as though they had a lack of guidance during wallet setup. By walking users through simple steps that clearly frame the features of self-custodial bitcoin wallets, users will feel well-equipped to navigate and use the wallet confidently.
 
@@ -108,7 +108,7 @@ Some [studies]({{ '/guide/resources/design-research/' | relative_url }}) suggest
 >
 > <cite>As researched by <a href="https://arxiv.org/pdf/1802.04351.pdf">Eskandari et al</a></cite>
 
-The details of this experience can vastly differ based on your technical architecture and use case. For this reference design, we focus on a non-custodial, lightning-first mobile wallet that uses various [lightning services]({{ '/guide/how-it-works/lightning-services/' | relative_url }}) to automate some operations, such as channel management.
+The details of this experience can differ vastly based on your technical architecture and use case. For this reference design, we focus on a non-custodial, lightning-first mobile wallet that uses various [lightning services]({{ '/guide/how-it-works/lightning-services/' | relative_url }}) to automate some operations, such as channel management.
 
 ## Discovery and installation
 
@@ -133,7 +133,7 @@ Before using an application, a user needs to become aware of it, become interest
 
 [Bitcoin wallets]({{ '/guide/glossary/#wallet' | relative_url }}) contain the private keys (derived from the [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }})) to a user’s bitcoin. Private keys let users access bitcoin associated with those keys. If the user does not have a bitcoin wallet already that they want to restore, it is necessary to create a new one.
 
-Like regular keys on a keychain, private keys can be copied. This makes [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) one of the most important considerations of any bitcoin owner. Bitcoin wallet applications should automatically generate the user’s private keys locally, meaning they are only generated and stored on the device and not by the wallet provider, during onboarding.
+Like regular keys on a keychain, private keys can be copied. This makes [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) one of the most important considerations of any bitcoin owner. During onboarding, bitcoin wallet applications should automatically generate the user's keys locally. This means the keys are generated and stored on the device only, not by the wallet provider.
 
 {% include image-gallery.html pages = page.images_create %}
 
