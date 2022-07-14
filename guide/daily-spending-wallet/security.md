@@ -32,16 +32,6 @@ images_reminders:
       modalImage: home-security-reminder-big
       alt: Wallet home screen with a reminder to review security settings
       caption: A more subtle inline reminder that takes users to the security checklist.
-images_watchtower:
-    - file: lightning-network-settings
-      alt:
-      caption: A sample settings page for the lightning network.
-    - file: watchtower-details
-      alt:
-      caption: Here, a default watchtower service is chosen.
-    - file: watchtower-details-custom
-      alt:
-      caption: The user has defined a custom watchtower.
 images_pin:
     - file: choose-pin
       modalImage: choose-pin-big
@@ -53,11 +43,26 @@ images_pin:
       caption: PIN entry could be limited to a certain amount of unsuccessful attempts per day.
 images_limits:
     - file: privacy-and-security-settings
+      modalImage: privacy-and-security-settings-big
       alt: A gif showing a mobile interface where the toggle for hiding information is moved to settings
       caption: App settings with user options to set limits on transaction size and frequency.
     - file: wallet-limit-reached
+      modalImage: wallet-limit-reached-big
       alt: Wallet home screen with an overlay explaining that the daily spending limit was reached
       caption: Users are notified when they reach the wallet limits.
+images_watchtower:
+    - file: lightning-network-settings
+      modalImage: lightning-network-settings-big
+      alt: Settings screen for lightning network options
+      caption: A sample settings page for the lightning network.
+    - file: watchtower-details
+      modalImage: watchtower-details-big
+      alt: Watchtower settings screen
+      caption: Here, a default watchtower service is chosen.
+    - file: watchtower-details-custom
+      modalImage: watchtower-details-custom-big
+      alt: Customized watchtower settings
+      caption: The user has defined a custom watchtower.
 ---
 
 <!--
@@ -133,7 +138,7 @@ A common practice for wallets is to have a barrier (fingerprint scan, PIN entry,
    width = 250
    height = 541
    alt-text = "Face ID screen"
-   caption = "Face ID UI from [Wallet UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1228%3A27860)"
+   caption = "Face ID UI from [Bitcoin UI Kit](https://www.bitcoinuikit.com/)"
    layout = "float-left-desktop -background -shadow"
 %}
 
@@ -176,6 +181,7 @@ During PIN creation, tell your users what a good, secure PIN is (e.g. not their 
 {% include picture.html
    image = "/assets/images/guide/daily-spending-wallet/security/choose-fake-wallet-pin.png"
    retina = "/assets/images/guide/daily-spending-wallet/security/choose-fake-wallet-pin@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/security/choose-fake-wallet-pin-big.png"
    alt-text = "PIN entry screen for a wallet with dummy data"
    caption = "The user chooses a second PIN to load the wallet with fake data instead."
    width = 250
@@ -202,6 +208,7 @@ To further prevent unwanted spending, wallet limits can be established. These ca
 {% include picture.html
    image = "/assets/images/guide/daily-spending-wallet/security/delete-recovery-phrase.png"
    retina = "/assets/images/guide/daily-spending-wallet/security/delete-recovery-phrase@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/security/delete-recovery-phrase-big.png"
    alt-text = "App settings screen for wallet backup with an option to delete the recovery phrase"
    caption = "A user can choose to delete the recovery phrase from the user-facing interface."
    width = 250

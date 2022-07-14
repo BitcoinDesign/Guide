@@ -1569,9 +1569,15 @@ assets/images/guide/daily-spending-wallet/security/privacy-checklist-big.png: pr
 assets/images/guide/daily-spending-wallet/security/security-checklist-big.png: security-checklist-big.png
 assets/images/guide/daily-spending-wallet/security/home-security-reminder-big.png: home-security-reminder-big.png
 assets/images/guide/daily-spending-wallet/security/face-id-info-big.png: face-id-info-big.png
-assets/images/guide/daily-spending-wallet/security/security-reminder-modal-full.png: security-reminder-modal-full.png
 assets/images/guide/daily-spending-wallet/security/security-reminder-modal.png: security-reminder-modal.png
 assets/images/guide/daily-spending-wallet/security/security-reminder-modal@2x.png: security-reminder-modal@2x.png
 assets/images/guide/daily-spending-wallet/security/choose-pin-big.png: choose-pin-big.png
 assets/images/guide/daily-spending-wallet/security/enter-pin-big.png: enter-pin-big.png
 assets/images/guide/daily-spending-wallet/security/wallet-limit-reached-big.png: wallet-limit-reached-big.png
+assets/images/guide/daily-spending-wallet/security/choose-fake-wallet-pin-big.png: choose-fake-wallet-pin-big.png
+assets/images/guide/daily-spending-wallet/security/privacy-and-security-settings-big.png: privacy-and-security-settings-big.png
+assets/images/guide/daily-spending-wallet/security/delete-recovery-phrase-big.png: delete-recovery-phrase-big.png
+assets/images/guide/daily-spending-wallet/security/lightning-network-settings-big.png: lightning-network-settings-big.png
+assets/images/guide/daily-spending-wallet/security/watchtower-details-big.png: watchtower-details-big.png
+assets/images/guide/daily-spending-wallet/security/watchtower-details-custom-big.png: watchtower-details-custom-big.png
+assets/images/guide/daily-spending-wallet/security/security-reminder-modal-big.png: security-reminder-modal-big.png
