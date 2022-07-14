@@ -10,6 +10,28 @@ redirect_from:
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/daily-spending-wallet/security/protecting-a-wallet-preview.png
 image_base: /assets/images/guide/daily-spending-wallet/security/
+images_checklists:
+    - file: security-checklist
+      modalImage: security-checklist-big
+      alt: A security checklist screen
+      caption: An example checklist for security settings.
+    - file: inadequate-security
+      modalImage: inadequate-security-big
+      alt: A security checklist screen with a note about the users security not being appropriate to their funds stored
+      caption: In clear situations, strong recommendations can be made to switch to a better security configuration.
+    - file: checklist-option-details
+      modalImage: checklist-option-details-big
+      alt: An app screen with detailed information about how cloud backups work.
+      caption: Users should be able to easily access information about how critical features work.
+images_reminders:
+    - file: security-reminder-modal
+      modalImage: security-reminder-modal-big
+      alt: Screen recommending user to enable wallet spend limits
+      caption: A full-scren modal with a specific recommendation.
+    - file: home-security-reminder
+      modalImage: home-security-reminder-big
+      alt: Wallet home screen with a reminder to review security settings
+      caption: A more subtle inline reminder that takes users to the security checklist.
 images_watchtower:
     - file: lightning-network-settings
       alt:
@@ -20,6 +42,22 @@ images_watchtower:
     - file: watchtower-details-custom
       alt:
       caption: The user has defined a custom watchtower.
+images_pin:
+    - file: choose-pin
+      modalImage: choose-pin-big
+      alt: Choosing a pin screen
+      caption: When choosing a PIN, the user is also informed about how it is used.
+    - file: enter-pin
+      modalImage: enter-pin-big
+      alt: Enter pin screen
+      caption: PIN entry could be limited to a certain amount of unsuccessful attempts per day.
+images_limits:
+    - file: privacy-and-security-settings
+      alt: A gif showing a mobile interface where the toggle for hiding information is moved to settings
+      caption: App settings with user options to set limits on transaction size and frequency.
+    - file: wallet-limit-reached
+      alt: Wallet home screen with an overlay explaining that the daily spending limit was reached
+      caption: Users are notified when they reach the wallet limits.
 ---
 
 <!--
@@ -64,73 +102,21 @@ Bitcoin wallets contain sensitive information such as [recovery phrases]({{ '/gu
 
 ## Proactive support
 
-"Usable security & privacy" has become its own topic because it is not enough to simply implement features, it is just as important that users can easily and effectively use them. A highly effective security setting is of no use if users do not realize it exists. So applications should do their best to guide and inform users to adapt appropriate habits and practices, based on where users are in the [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/' | relative_url }}) and the application use case.
+"Usable security & privacy" has become its own topic because it is not enough to simply implement features, it is just as important that users can easily and effectively use them. A highly effective security setting is of no use if users do not realize it exists. So applications should do their best to guide and inform users to adapt appropriate habits and practices, based on where users are in the [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/' | relative_url }}), as well as the application use case.
 
-### Security & privacy checklists
-
-It can be easy to get overwhelmed by long lists of settings. Checklist screens can abstract away detailed settings and provide simplified feedback and recommendations, based on the users previous choices and the current wallet state.
-
-<div class="image-slide-gallery">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/security/security-checklist.png"
-   retina = "/assets/images/guide/daily-spending-wallet/security/security-checklist@2x.png"
-   alt-text = "A security checklist screen"
-   caption = "An example checklist for security settings."
-   width = 250
-   height = 541
-   layout = "shadow"
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/security/privacy-checklist.png"
-   retina = "/assets/images/guide/daily-spending-wallet/security/privacy-checklist@2x.png"
-   alt-text = "A privacy checklist screen"
-   caption = "An example checklist for privacy settings."
-   width = 250
-   height = 541
-   layout = "shadow"
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/security/checklist-option-details.png"
-   retina = "/assets/images/guide/daily-spending-wallet/security/checklist-option-details@2x.png"
-   alt-text = "An app screen with detailed information about how cloud backups work."
-   caption = "Users should be able to easily access information about how critical features work."
-   width = 250
-   height = 541
-   layout = "shadow"
-%}
-
-</div>
+It all starts with a well-designed [first-use]({{ '/guide/daily-spending-wallet/first-use/' | relative_url }}) experience that introduces users to the most important security options and sets them up for success. Later, users may want to make their own adjustments, or the application can make appropriate suggestions.
 
 ### Reminders & recommendations
 
-As a user's behavior and application usage change, the current security settings may no longer be appropriate. A life-changing amount of funds for one user may be pocket change for another, so it is hard to know what is appropriate. However, applications can still proactively make recommendations and remind users to review their setup regularly.
+As a user's behavior and application usage change, the current security settings may no longer be appropriate. A life-changing amount of funds for one user may be pocket change for another, so it is hard to know what is appropriate. Still, applications can proactively make recommendations and remind users to review their setup regularly. This can be based on [spaced repetition](https://en.wikipedia.org/wiki/Spaced_repetition) to encourage good habits, or situationally when user behavior changes. Make sure to allow users to disable this feature.
 
-<div class="image-slide-gallery">
+{% include image-gallery.html pages = page.images_reminders %}
 
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/security/home-security-reminder.png"
-   retina = "/assets/images/guide/daily-spending-wallet/security/home-security-reminder@2x.png"
-   alt-text = "Wallet home screen with a reminder to review security settings"
-   caption = "Applications may regularly remind users to review their security settings."
-   width = 250
-   height = 541
-   layout = "shadow"
-%}
+### Security checklist
 
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/security/inadequate-security.png"
-   retina = "/assets/images/guide/daily-spending-wallet/security/inadequate-security@2x.png"
-   alt-text = "A security checklist screen with a note about the users security not being appropriate to their funds stored"
-   caption = "In clear situations, strong recommendations can be made to switch to a better security configuration."
-   width = 250
-   height = 541
-   layout = "shadow"
-%}
+It can be easy to get overwhelmed by long lists of settings. A checklist screen can abstract away detailed settings (which are also typically spread across various screens) and provide simplified feedback and recommendations, based on the users previous choices and the current wallet state.
 
-</div>
+{% include image-gallery.html pages = page.images_checklists %}
 
 ## Preventing unwanted access
 
@@ -140,9 +126,10 @@ A common practice for wallets is to have a barrier (fingerprint scan, PIN entry,
 
 <div class="center" markdown="1">
 
-{% include image.html
+{% include picture.html
    image = "/assets/images/guide/daily-spending-wallet/security/face-id-info.png"
    retina = "/assets/images/guide/daily-spending-wallet/security/face-id-info@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/security/face-id-info-big.png"
    width = 250
    height = 541
    alt-text = "Face ID screen"
@@ -166,33 +153,13 @@ Bitcoin wallet users may feel hesitant about the privacy implications of your pr
 
 ### PIN protection
 
-A PIN is one of the most common and traditional methods for securing a mobile application. This setup requires that users create a 4-6 digit PIN that they must enter when opening their wallet application or viewing sensitive information, such as their recovery phrase.
+A [PIN](https://en.wikipedia.org/wiki/Personal_identification_number) (Personal identification number) is one of the most common and traditional methods for securing a mobile application. This setup requires users to choose a 4-6 digit number. They must enter it when opening their wallet application, or viewing sensitive information, such as their recovery phrase.
 
-<div class="image-slide-gallery">
+Other application activity can also be secured via PIN entry, like approving high-value transactions, editing contacts, deleting the recovery phrase, and more.
 
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/security/choose-pin.png"
-   retina = "/assets/images/guide/daily-spending-wallet/security/choose-pin@2x.png"
-   alt-text = "Choosing a pin screen"
-   caption = "When choosing a PIN, the user is also informed about how it is used."
-   width = 250
-   height = 541
-   layout = "shadow"
-%}
+{% include image-gallery.html pages = page.images_pin %}
 
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/security/enter-pin.png"
-   retina = "/assets/images/guide/daily-spending-wallet/security/enter-pin@2x.png"
-   alt-text = "Enter pin screen"
-   caption = "PIN entry could be limited to a certain amount of unsuccessful attempts per day."
-   width = 250
-   height = 541
-   layout = "shadow"
-%}
-
-</div>
-
-All devices can support the PIN-based approach, which makes it more accessible. A PIN can also be used to encrypt data within a wallet, making any locally stored information on the device inaccessible. Additionally, some users prefer this type of security measure because they use the same or similar PINs on multiple applications/devices, making it easy to remember.
+All devices can support the PIN-based approach, which makes it more accessible. A PIN can also be used to encrypt data within a wallet or a cloud backup, making any stored information inaccessible. If you decide to do this, ensure users understand that their wallet cannot be recovered if they lose their PIN and no other recovery mechanism is implemented.
 
 However, users with poor security practices might create easy-to-guess PINs (such as 1234), which would provide a false sense of security. This design also relies on users to remember their PIN correctly.
 
@@ -226,29 +193,7 @@ There may be situations in which users do not want to show their real balances a
 
 To further prevent unwanted spending, wallet limits can be established. These can limit the size of single transactions, or impose daily limits. Limits should be changeable at any time, but they should only apply after a certain amount of time has passed. Alternatively, a dedicated password could be required to change limits instantly. So even if a third-party manages to access the wallet, the pace at which they could steal the funds would be drastically slowed down.
 
-<div class="image-slide-gallery">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/security/privacy-and-security-settings.png"
-   retina = "/assets/images/guide/daily-spending-wallet/security/privacy-and-security-settings@2x.png"
-   alt-text = "A gif showing a mobile interface where the toggle for hiding information is moved to settings"
-   caption = "App settings with user options to set limits on transaction size and frequency."
-   width = 250
-   height = 541
-   layout = "shadow"
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/security/wallet-limit-reached.png"
-   retina = "/assets/images/guide/daily-spending-wallet/security/wallet-limit-reached@2x.png"
-   alt-text = "Wallet home screen with an overlay explaining that the daily spending limit was reached"
-   caption = "Users are notified when they reach the wallet limits."
-   width = 250
-   height = 541
-   layout = "shadow"
-%}
-
-</div>
+{% include image-gallery.html pages = page.images_limits %}
 
 ### Deleting the recovery phrase
 
@@ -264,7 +209,7 @@ To further prevent unwanted spending, wallet limits can be established. These ca
    layout = "float-right-desktop -background -shadow"
 %}
 
-After a user has backed up their recovery phrase, an option to delete it may be useful. This only makes the recovery phrase inaccessible to application users. The app itself continues to store the keys and data it requires to function.
+After a user has backed up their recovery phrase, an option to delete it may be useful. This only makes the recovery phrase inaccessible to application users. The app itself continues to store the private keys and data it requires to function. For an example, see [Blixt](https://blixtwallet.github.io/).
 
 </div>
 
