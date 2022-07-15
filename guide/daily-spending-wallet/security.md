@@ -107,7 +107,7 @@ Bitcoin wallets contain sensitive information such as [recovery phrases]({{ '/gu
 
 ## Proactive support
 
-"Usable security & privacy" has become its own topic because it is not enough to simply implement features, it is just as important that users can easily and effectively use them. A highly effective security setting is of no use if users do not realize it exists. So applications should do their best to guide and inform users to adapt appropriate habits and practices, based on where users are in the [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/' | relative_url }}), as well as the application use case.
+"Usable security & privacy" has become a topic of its own because it is not enough to simply implement features, it is just as important that users can easily and effectively use them. A highly effective security setting is of no use if users do not realize it exists. So applications should do their best to guide and inform users to adapt appropriate habits and practices, based on where users are in the [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/' | relative_url }}), as well as the application use case.
 
 It all starts with a well-designed [first-use]({{ '/guide/daily-spending-wallet/first-use/' | relative_url }}) experience that introduces users to the most important security options and sets them up for success. Later, users may want to make their own adjustments, or the application can make appropriate suggestions.
 
@@ -125,7 +125,7 @@ It can be easy to get overwhelmed by long lists of settings. A checklist screen 
 
 ## Preventing unwanted access
 
-A common practice for wallets is to have a barrier (fingerprint scan, PIN entry, etc.) that must be unlocked to open a wallet application. Creating robust and challenging-to-crack passwords and PIN codes isn't something that everyone excels at. To decrease the chance of someone’s wallet getting hacked because of poor security decisions, you can implement the following into your design:
+A common practice for wallets is to have a barrier (fingerprint scan, PIN entry, etc.) that must be unlocked to open a wallet application. To decrease the chance of someone’s wallet getting hacked, you can implement the following features into your design.
 
 ### Biometrics (touch ID & face ID)
 
@@ -137,8 +137,8 @@ A common practice for wallets is to have a barrier (fingerprint scan, PIN entry,
    modalImage = "/assets/images/guide/daily-spending-wallet/security/face-id-info-big.png"
    width = 250
    height = 541
-   alt-text = "Face ID screen"
-   caption = "Face ID UI from [Bitcoin UI Kit](https://www.bitcoinuikit.com/)"
+   alt-text = "Screen for enabling Face ID authentication"
+   caption = "Face ID can be a convenient authentication mechanism."
    layout = "float-left-desktop -background -shadow"
 %}
 
@@ -230,7 +230,7 @@ However, this prevents mobile lightning wallets from being reliable monitors of 
 
 One technique to reduce this risk is to notify the user when the application has been offline for an extended period. This way, they can open the app and thereby enable it to check their channels. Forced channel closes have a built-in, agreed-upon delay. Send notifications earlier than this delay so that users have time to respond appropriately.
 
-Another technique is to use [watchtowers](https://wiki.ion.radar.tech/tech/research/watchtowers). These are third parties that continuously monitor wallets and punish bad actors who attempt to cheat the wallet they are monitoring. Watchtowers should be provided by a different party than the wallet and payment channels to reduce the risk of collusion.
+Another technique is to use [watchtowers](https://wiki.ion.radar.tech/tech/research/watchtowers). These are third parties that continuously monitor wallets and punish bad actors who attempt to cheat the wallet they are monitoring. Watchtowers should be provided by a different party than the wallet and payment channels, to reduce the risk of collusion.
 
 {% include image-gallery.html pages = page.images_watchtower %}
 
