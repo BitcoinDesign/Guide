@@ -170,7 +170,9 @@ However, users with poor security practices might create easy-to-guess PINs (suc
 
 {% include tip/open.html color="green" icon="check" label="Do: Educate on good security practices" %}
 
-During PIN creation, tell your users what a good, secure PIN is (e.g. not their birthday). Recommend against (or even make it impossible) to create a PIN such as 1234 or 1111.
+During PIN creation, tell your users what a good, secure PIN is (e.g. not their birthday). Recommend against (or even make it impossible) to create one such as 1234 or 1111.
+
+Alternative methods to PIN protection include passwords, as well as swipe patterns.
 
 {% include tip/close.html %}
 
