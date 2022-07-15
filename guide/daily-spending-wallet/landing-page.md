@@ -43,7 +43,7 @@ Imagine a product which tries to solve the problem of quickly and easily sending
 
 ### [First use]({{ '/guide/daily-spending-wallet/first-use/' | relative_url }})
 
-An overview of common tasks when using a wallet application for the first time.
+Making users comfortable with the application, helping them set it up to their needs and complete their first actions.
 
 ---
 
