@@ -41,6 +41,10 @@ images_pin:
       modalImage: enter-pin-big
       alt: Enter pin screen
       caption: PIN entry could be limited to a certain amount of unsuccessful attempts per day.
+    - file: enter-pin-scrambled
+      modalImage: enter-pin-scrambled-big
+      alt: Enter pin screen with scrambled numbers
+      caption: Scrambling numbers can make it harder for bystanders to see what was typed.
 images_limits:
     - file: privacy-and-security-settings
       modalImage: privacy-and-security-settings-big
@@ -172,7 +176,7 @@ However, users with poor security practices might create easy-to-guess PINs (suc
 
 During PIN creation, tell your users what a good, secure PIN is (e.g. not their birthday). Recommend against (or even make it impossible) to create one such as 1234 or 1111.
 
-Alternative methods to PIN protection include passwords, as well as swipe patterns.
+Alternative methods to PIN protection include passwords (which are harder to crack than PINs), as well as swipe patterns.
 
 {% include tip/close.html %}
 
