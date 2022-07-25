@@ -226,6 +226,27 @@ After a user has backed up their recovery phrase, an option to delete it may be 
 
 </div>
 
+## Deleting wallet data
+
+<div class="center" markdown="1">
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/security/delete-wallet.png"
+   retina = "/assets/images/guide/daily-spending-wallet/security/delete-wallet@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/security/delete-wallet.png"
+   alt-text = "Screen to confirm wallet deletion"
+   caption = "Tapping continue should show another modal for a final confirmation."
+   width = 250
+   height = 541
+   layout = "float-right-desktop -background -shadow"
+%}
+
+Whether it is after migrating to a new device, or during an emergency situation, a user may want to delete all wallet data, ensuring that it cannot be easily recovered on the device. Note that this is specific to the device. Data stored in a cloud backup will stay untouched.
+
+Also consider allowing the user to choose a unique PIN to quickly delete wallet data in case of an emergency.
+
+</div>
+
 ## Preventing theft when offline
 
 Lightning wallets need to be online to monitor their payment channels to prevent their counterparties from attempting to steal their bitcoin. Mobile wallets, however, are frequently offline, usually due to a poor connection or the user not having the wallet open on their device.
