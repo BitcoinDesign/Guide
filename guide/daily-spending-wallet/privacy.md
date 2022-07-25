@@ -275,28 +275,6 @@ As it is complex for users to manually keep track of this, most wallets automate
 
 </div>
 
-#### Increase anonymity through obfuscation
-
-<div class="center" markdown="1">
-
-{% include image.html
-   image = "/assets/images/guide/daily-spending-wallet/privacy/coin-join.jpg"
-   retina = "/assets/images/guide/daily-spending-wallet/privacy/coin-join@2x.jpg"
-   alt-text = "Example CoinJoin transaction with 3 participants with 1 input each, which get broken up into 5 equal outputs."
-   width = 400
-   height = 400
-   layout = "float-right-desktop"
-   caption = "CoinJoin transactions attempt to make payments more private by mixing inputs from many senders and outputs to many receivers."
-%}
-
-A [CoinJoin]({{ "/guide/glossary/#coinjoin" | relative_url }}) is an advanced technique where multiple participants collaborate on a transaction to break the "common input ownership" [heuristic](https://en.bitcoin.it/wiki/Privacy#Common-input-ownership_heuristic), which assumes that all inputs in a transaction likely belong to the same owner. In a CoinJoin transaction, all the outputs tend to be of the same amount. This makes it harder to define which input paid which output, somewhat breaking the absolute traceability of bitcoin transactions. Users still have to be mindful of how the UTXOs they received from the CoinJoin are spent. For instance, spending them together in a single transaction would unravel the anonymity gains from participating in the CoinJoin.
-
-As with any other anonymity network, a large and diverse group of participants will be more effective in disassociating the connections. CoinJoin transactions are not yet widely supported by bitcoin applications.
-
-Privacy on the lightning network can be improved by opening channels right after CoinJoin transactions.
-
-</div>
-
 ---
 
 #### More information
