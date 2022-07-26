@@ -111,7 +111,7 @@ Bitcoin wallets contain sensitive information such as [recovery phrases]({{ '/gu
 
 ## Proactive support
 
-"Usable security & privacy" has become a topic of its own because it is not enough to simply implement features, it is just as important that users can easily and effectively use them. A highly effective security setting is of no use if users do not realize it exists. So applications should do their best to guide and inform users to adapt appropriate habits and practices, based on where users are in the [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/' | relative_url }}), as well as the application use case.
+"Usable security & privacy" has become a topic of its own because it is not enough to simply implement features. It is just as important that users can easily and effectively use them. A highly effective security setting is of no use if users do not realize it exists. So applications should do their best to guide and inform users to adapt appropriate habits and practices, based on where users are in the [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/' | relative_url }}), as well as the application use case.
 
 It all starts with a well-designed [first-use]({{ '/guide/daily-spending-wallet/first-use/' | relative_url }}) experience that introduces users to the most important security options and sets them up for success. Later, users may want to make their own adjustments, or the application can make appropriate suggestions.
 
