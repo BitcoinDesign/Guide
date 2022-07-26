@@ -162,7 +162,7 @@ Bitcoin wallet users may feel hesitant about the privacy implications of your pr
 
 ### PIN protection
 
-A [PIN](https://en.wikipedia.org/wiki/Personal_identification_number) (Personal identification number) is one of the most common and traditional methods for securing a mobile application. This setup requires users to choose a 4-6 digit number. They must enter it when opening their wallet application, or viewing sensitive information, such as their recovery phrase.
+A [PIN](https://en.wikipedia.org/wiki/Personal_identification_number) (Personal Identification Number) is one of the most common and traditional methods for securing a mobile application. This setup requires users to choose a 4-6 digit number. They must enter it when opening their wallet application, or viewing sensitive information, such as their recovery phrase.
 
 Other application activity can also be secured via PIN entry, like approving high-value transactions, editing contacts, deleting the recovery phrase, and more.
 
