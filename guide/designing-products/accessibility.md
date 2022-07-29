@@ -152,6 +152,12 @@ The accessibility pages by [Apple](https://www.apple.com/accessibility/), [Micro
 
 ### Usability testing resources
 
+---
+
+{% include video.html youtubeId="dQc2YWxOB6A" image="/assets/images/guide/designing-products/accessibility/learning-bitcoin-and-design-accessibility.jpg" retina="/assets/images/guide/designing-products/accessibility/learning-bitcoin-and-design-accessibility@2x.jpg" caption="Learning bitcoin & design call on mobile accessibility testing" %}
+
+---
+
 - [Setup iPhone or iPad for iOS mobile accessibility testing](https://www.youtube.com/watch?v=Ca1H6wF348g)
 - [Accessibility testing on android devices](https://www2.stardust-testing.com/en/how-to-perform-accessibility-testing-for-android-devices)
 - [Usability studies for accessibility](https://www.nngroup.com/reports/how-to-conduct-usability-studies-accessibility/)
