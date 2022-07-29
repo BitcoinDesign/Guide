@@ -84,8 +84,8 @@ However, there may be times when it is necessary to use a manual backup alternat
 The next sections will look at some UI considerations for [cloud backups]({{ '/guide/daily-spending-wallet/backup-and-recovery/cloud-backup/' | relative_url }}) and [manual backups]({{ 'guide/daily-spending-wallet/backup-and-recovery/manual-backup/' | relative_url }}).
 
 {% include next-previous.html
-   previousUrl = "/guide/daily-spending-wallet/funding/"
-   previousName = "First use"
+   previousUrl = "/guide/daily-spending-wallet/receiving/"
+   previousName = "Receiving bitcoin"
    nextUrl = "/guide/daily-spending-wallet/backup-and-recovery/cloud-backup/"
    nextName = "Automatic cloud backups"
 %}

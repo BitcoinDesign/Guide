@@ -207,11 +207,11 @@ After the first use, users are typically on their own to use the application as 
 
 ---
 
-Ok, now let's look closer at [funding a daily spending wallet.]({{ '/guide/daily-spending-wallet/funding/' | relative_url }})
+Ok, now let's look closer at [receiving to a daily spending wallet.]({{ '/guide/daily-spending-wallet/receiving/' | relative_url }})
 
 {% include next-previous.html
    previousUrl = "/guide/daily-spending-wallet/"
    previousName = "Daily spending wallet"
-   nextUrl = "/guide/daily-spending-wallet/funding/"
-   nextName = "Funding"
+   nextUrl = "/guide/daily-spending-wallet/receiving/"
+   nextName = "Receiving bitcoin"
 %}

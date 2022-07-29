@@ -47,9 +47,9 @@ Making users comfortable with the application, helping them set it up to their n
 
 ---
 
-### [Funding]({{ '/guide/daily-spending-wallet/funding/' | relative_url }})
+### [Receiving]({{ '/guide/daily-spending-wallet/receiving/' | relative_url }})
 
-An overview of how users are likely to fund their wallets.
+How receiving works for a daily spending bitcoin wallet.
 
 ---
 
