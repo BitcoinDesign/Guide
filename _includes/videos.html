@@ -1,0 +1,19 @@
+<div class="small-video-link-gallery">
+
+{% for item in include.videos %}
+
+{% capture captionText %}{{ item.caption | no_runts | markdownify }}{% endcapture %}
+{% capture imageURL %}{{ page.video_base }}{{ item.file }}.jpg{% endcapture %}
+{% capture imageURLRetina %}{{ page.video_base }}{{ item.file }}@2x.jpg{% endcapture %}
+
+{% include video.html
+    image = imageURL
+    retina = imageURLRetina
+    youtubeId = item.youtubeId
+    bitcointvId = item.bitcointvId
+    alt = item.alt
+    caption = captionText
+%}
+{% endfor %}
+
+</div>
