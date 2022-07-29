@@ -1,0 +1,21 @@
+<div class="small-video-link">
+    <a href="{% if include.youtubeId != nil %}https://www.youtube.com/watch?v={{ include.youtubeId }}{% else %}https://bitcointv.com/w/{{ include.bitcointvId }}{% endif %}" >
+        <span class="small-video-link__image">
+            <img
+                src="{{ include.image | relative_url }}"
+                {% if include.retina %}
+                    srcset="{{ include.image | relative_url }} 1x, {{ include.retina | relative_url }} 2x"
+                {% endif %}
+                {% if include.alt != nil %}
+                    alt="{{ include.alt }}"
+                {% endif %}
+                width="180"
+                height="100"
+            >
+            <svg viewBox="0 0 62 62">
+                <use xlink:href="#svg-video"></use>
+            </svg>
+        </span>
+        <span class="small-video-link__caption">{{ include.caption }}</span>
+    </a>
+</div>

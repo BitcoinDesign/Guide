@@ -7,6 +7,14 @@ parent: Contribute to guide
 permalink: /guide/contribute/formatting/
 image: https://bitcoin.design/assets/images/guide/contribute/formatting/formatting-preview.jpg
 main_classes: -no-top-padding
+video_base: /assets/images/guide/contribute/formatting/
+videos:
+    - youtubeId: MyaflySHp9U
+      file: supporting-open-design-in-bitcoin
+      caption: How we support open design in bitcoin
+    - bitcointvId: tkAGb56c7qE7g1fMbaASBW
+      file: user-research-call-1-user-personas
+      caption: Discussion on personas in user research
 ---
 
 {% include picture.html
@@ -787,11 +795,35 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 
 {% raw %}
 ```liquid
-{% include youtube.html id="zKMRSLbQEqk" %}
+{% include youtube.html id="MyaflySHp9U" %}
 ```
 {% endraw %}
 
-{% include youtube.html id="zKMRSLbQEqk" %}
+{% include youtube.html id="MyaflySHp9U" %}
+
+#### Small video link
+
+For smaller thumbnails that are less intrusive to the page layout. Supports YouTube and BitcoinTV videos. Export thumbnails at 180x100px (360x200px for retina).
+
+{% raw %}
+```liquid
+{% include video.html youtubeId="zKMRSLbQEqk" image="/assets/images/guide/contribute/formatting/supporting-open-design-in-bitcoin.jpg" retina="/assets/images/guide/contribute/formatting/supporting-open-design-in-bitcoin@2x.jpg" caption="Watch a 10-minute summary video on this topic." %}
+```
+{% endraw %}
+
+{% include video.html youtubeId="zKMRSLbQEqk" image="/assets/images/guide/contribute/formatting/supporting-open-design-in-bitcoin.jpg" retina="/assets/images/guide/contribute/formatting/supporting-open-design-in-bitcoin@2x.jpg" caption="Watch a 10-minute summary video on this topic." %}
+
+#### Multiple small video links
+
+For grids of 2 or more videos.
+
+{% raw %}
+```liquid
+{% include videos.html video_base = page.video_base videos = page.videos %}
+```
+{% endraw %}
+
+{% include videos.html video_base = page.video_base videos = page.videos %}
 
 #### Prototypes
 
