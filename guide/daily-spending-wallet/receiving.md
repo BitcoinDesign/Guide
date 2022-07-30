@@ -19,7 +19,7 @@ main_classes: -no-top-padding
     retina = "/assets/images/guide/daily-spending-wallet/requesting/request-banner(3200x1200).png"
     mobile = "/assets/images/guide/daily-spending-wallet/requesting/request-banner(400x200).png"
     mobileRetina = "/assets/images/guide/daily-spending-wallet/requesting/request-banner(800x400).png"
-    alt-text = "Image: Text balloon containing a bitcoin."
+    alt-text = "Text balloon containing a bitcoin."
     width = 1600
     height = 600
     layout = "full-width"
@@ -35,17 +35,17 @@ Illustration source
 
 # Receiving bitcoin
 
-Once a user has shared a payment request, the next step is receiving the payment. Ideally, there is little to no actions for a user to take at this stage of the payment flow. 
+Once a user has shared a payment request, the next step is receiving the payment. Ideally, there are little to no actions to take at this stage of the payment flow. 
 
-There are however several things to consider as a product designer to make this step as frictionless as possible. For instance, users need to be online and have a payment channel with inbound liquidity to receive a payment. 
+There are, however, several things to consider as a product designer to make this step as frictionless as possible. For instance, users need to be online and have a payment channel with inbound liquidity to receive a payment. 
 
-This page covers how to design with these constraints in mind, as well as give an overview of how receiving a payment works.
+This page covers how to design with these constraints in mind, and gives an overview of how receiving a payment works.
 
 ## Receiving offline
 
-Users can not receive lightning payments non-custodially offline. This is problematic for mobile users who are regularly offline. This means there will be times when a payment can not be received.
+Users can not receive lightning payments in a non-custodial manner when offline. This is problematic for mobile users who are regularly offline. This means there will be times when a payment can not be received.
 
-With a [lightning wallet server]({{ '/guide/how-it-works/lightning-services/#receive-payments-offline' | relative_url }}) a payment can be intercepted and held for a user until they open their wallet. A push notification can be sent to the user so they can open their wallet and receive the payment. 
+With a [lightning wallet server]({{ '/guide/how-it-works/lightning-services/#receive-payments-offline' | relative_url }}), a payment can be intercepted and held for a user until they open their wallet. A push notification can be sent to the user so they can open their wallet and receive the payment. 
 
 Another option is to educate users to keep their wallet open. This can be explained during [first use]({{ '/guide/daily-spending-wallet/first-use/' | relative_url }}) or when the user attempts to close their wallet.
 
@@ -83,13 +83,13 @@ Another option is to educate users to keep their wallet open. This can be explai
 
 Once the user is online, a payment channel with [inbound liquidity]({{ '/guide/how-it-works/liquidity/'| relative_url }}) is also required to receive the payment. If the user already has a payment channel with enough inbound liquidity the payment will be [received]({{ '/guide/daily-spending-wallet/receiving/#received-payment'| relative_url }}).
 
-If the user does not have a channel open, or one with enough inbound liquidity, a new channel needs to be opened. Any additional fees required to open a channel needs to be communicated to users when [creating a payment request]({{ '/guide/daily-spending-wallet/requesting/'| relative_url }}) before they share it.
+If the user does not have a channel open, or one with enough inbound liquidity, a new channel needs to be opened. Any additional fees required to open a channel need to be communicated to users when [creating a payment request]({{ '/guide/daily-spending-wallet/requesting/'| relative_url }}), and before they share it.
 
-Channel opens should be done by a lightning service provider (LSP). Channels should be opened [on-demand]({{ '/guide/how-it-works/lightning-services/#on-demand-liquidity'| relative_url }}) and use [zero-confirmation]({{ '/guide/how-it-works/lightning-services/#zero-confirmation'| relative_url }}) so users can receive and spend their bitcoin instantly.
+Channel opens should be done by a lightning service provider (LSP). Channels should be opened [on-demand]({{ '/guide/how-it-works/lightning-services/#on-demand-liquidity'| relative_url }}) and require [zero confirmations]({{ '/guide/how-it-works/lightning-services/#zero-confirmation'| relative_url }}) so users can receive and spend their bitcoin instantly.
 
 ## Receiving on-chain payments
 
-To receive on-chain payments and maintain a single lightning balance a [lightning wallet server (LWS)]({{ '/guide/how-it-works/lightning-services/#what-are-lightning-wallet-servers'| relative_url }}) is required to conduct [submarine swaps](https://blog.muun.com/a-closer-look-at-submarine-swaps-in-the-lightning-network/) on the users behalf. Submarine swaps move bitcoin between on-chain and lightning.
+To receive on-chain payments and maintain a single lightning balance a [lightning wallet server (LWS)]({{ '/guide/how-it-works/lightning-services/#what-are-lightning-wallet-servers'| relative_url }}) is required to conduct [submarine swaps](https://blog.muun.com/a-closer-look-at-submarine-swaps-in-the-lightning-network/) on the users behalf. Submarine swaps move bitcoin between the bitcoin and lightning networks.
 
 {% include tip/open.html color="blue" icon="info" label="Experimental options" %}
 
@@ -101,7 +101,7 @@ Experimental options such as [Peerswap](https://www.peerswap.dev/) and [Collabor
 
 There may be scenarios where a submarine swap is not completed successfully such as the LWS being offline. In these cases the users will need to temporarily have a refunded on-chain balance of which they can claim to an on-chain address they control. 
 
-It's recommended to keep this separate from the users main lightning balance in order to prevent confusion. 
+It's recommended to keep this separate from the users main lightning balance, in order to prevent confusion. 
 
 <div class="image-slide-gallery">
 
@@ -148,9 +148,9 @@ It's recommended to keep this separate from the users main lightning balance in 
 
 ## Received payment
 
-Once a payment is received it should be clearly indicated to the user and their balance should be updated. Ensure fees charged, if any, are clear to the user when viewing the payments details. More information on presenting payment history on our [activity]({{ '/guide/daily-spending-wallet/activity/'| relative_url }}) page. 
+Once a payment is received it should be clearly indicated to the user and their balance should be updated. Ensure fees charged, if any, are clear to the user when viewing the payments details. Find more information on presenting a payment history on our [activity]({{ '/guide/daily-spending-wallet/activity/'| relative_url }}) page. 
 
-The option to share a receipt that the payment has been received with the sender should be available and easily shared.
+The option to save and share a receipt should be readily available.
 
 <div class="image-slide-gallery">
 
