@@ -499,8 +499,8 @@ Provide clear error messages that tell users how to solve the problem.
 Write overly complex error messages that require deep technical knowledge.
 
 {% include image.html
-   image = "/assets/images/guide/contribute/formatting/example-image-square.jpg"
-   retina = "/assets/images/guide/contribute/formatting/example-image-square@2x.jpg"
+   image = "/assets/images/guide/contribute/formatting/media/example-image-square.jpg"
+   retina = "/assets/images/guide/contribute/formatting/media/example-image-square@2x.jpg"
    alt-text = "Example image"
    width = 400
    height = 400
@@ -515,8 +515,8 @@ Write overly complex error messages that require deep technical knowledge.
 Provide clear error messages that tell users how to solve the problem.
 
 {% include image.html
-   image = "/assets/images/guide/contribute/formatting/example-image-square.jpg"
-   retina = "/assets/images/guide/contribute/formatting/example-image-square@2x.jpg"
+   image = "/assets/images/guide/contribute/formatting/media/example-image-square.jpg"
+   retina = "/assets/images/guide/contribute/formatting/media/example-image-square@2x.jpg"
    alt-text = "Example image"
    width = 400
    height = 400
@@ -527,8 +527,8 @@ Provide clear error messages that tell users how to solve the problem.
 Write overly complex error messages that require deep technical knowledge.
 
 {% include image.html
-   image = "/assets/images/guide/contribute/formatting/example-image-square.jpg"
-   retina = "/assets/images/guide/contribute/formatting/example-image-square@2x.jpg"
+   image = "/assets/images/guide/contribute/formatting/media/example-image-square.jpg"
+   retina = "/assets/images/guide/contribute/formatting/media/example-image-square@2x.jpg"
    alt-text = "Example image"
    width = 400
    height = 400
