@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Calendar
-description: Design reviews, community calls, project sessions, and other events planned by the Bitcoin Design Community
+description: Design crits, community calls, project sessions, and other events planned by the Bitcoin Design Community
 permalink: /calendar/
 main_nav: true
 nav_order: 3
@@ -39,7 +39,7 @@ Join community calls, design reviews, project discussions and other events. Our 
 {% include emoji-box.html
     emoji = "🎨"
     title = "Design guide jam sessions"
-    description = "We discuss the ongoing work on the guide. Every 3 weeks on Jitsi."
+    description = "We discuss the ongoing work on the guide. Every 2 weeks on Jitsi."
     url = "https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+%22jam+session%22+"
 %}
 
@@ -67,10 +67,10 @@ Join community calls, design reviews, project discussions and other events. Our 
 %}
 
 {% include emoji-box.html
-    emoji = "👀"
-    title = "Design review calls"
-    description = "A project team presents their work and design challenges and we provide feedback. Scheduled as requested."
-    url = "https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+%22design+review%22+"
+    emoji = "🎯"
+    title = "Bitcoin Design Crits"
+    description = "Weekly design reviews of bitcoin products by the community."
+    url = "https://github.com/BitcoinDesign/Meta/blob/master/Bitcoin-Design-Crits.md"
 %}
 </div>
 
