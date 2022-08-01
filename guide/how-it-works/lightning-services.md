@@ -221,7 +221,7 @@ An LWS backup service can automatically back up and store a user's channel state
 
 Backing up your lightning wallet with a single LWS breaks non-freezability, meaning they can refuse to hand over your channel states when recovering.
 
-To prevent this, ensure your users can [manually backup their channel]({{ '//guide/daily-spending-wallet/backup-and-recovery/manual-backup/' | relative_url }}) states or use multiple LWSs for backups.
+To prevent this, ensure your users can [manually backup their channel]({{ '/guide/daily-spending-wallet/backup-and-recovery/manual-backup/' | relative_url }}) states or use multiple LWSs for backups.
 
 {% include tip/close.html %}
 
