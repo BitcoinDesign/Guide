@@ -5,6 +5,8 @@ article.guide {
     flex-wrap: wrap;
     background-color: #f8f8f8;
     @include responsive('padding', 20, 30);
+    align-items: center;
+    align-content: flex-start;
 
     .icon {
       flex-grow: 0;
