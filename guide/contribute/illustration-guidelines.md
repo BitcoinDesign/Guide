@@ -95,7 +95,7 @@ For short animations, use GIFs. Be aware that GIFs can easily bloat in file size
 
 This ensures images render crisp and clear while keeping file download size and speed reasonable.
 
-Overall, there are five layout options for images, each one resulting in a different image size. Additionally, desktop and mobile layout logic differ, and we also need to support regular and retina screen resolutions. The result is that each image needs to be exported at four different sizes. For examples, view the [Formatting](/guide/contribute/formatting/#images) page.
+Overall, there are five layout options for images, each one resulting in a different image size. Additionally, desktop and mobile layout logic differ, and we also need to support regular and retina screen resolutions. The result is that each image needs to be exported at four different sizes. For examples, view the [Media](/guide/contribute/formatting/media/#images) page.
 
 Pay attention to the image width when you export. Image height is up to you, based on the image content.
 
