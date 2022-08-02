@@ -64,6 +64,12 @@ files:
     retina: /assets/images/guide/resources/design-files/bitcoin-wallet-backup-print-template@2x.jpg
     width: 400
     height: 210
+  - caption: <a href="https://www.figma.com/community/file/1132217809152964057">Bitcoin Design Stickers</a>
+    alt: A laptop with bitcoin design stickers on it
+    image: /assets/images/guide/resources/design-files/bitcoin-design-stickers.jpg
+    retina: /assets/images/guide/resources/design-files/bitcoin-design-stickers@2x.jpg
+    width: 400
+    height: 210
 ---
 
 <!--
