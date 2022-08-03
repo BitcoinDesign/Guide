@@ -46,7 +46,7 @@ This page should inform about what information is made public when sending or re
 
 ---
 
-Privacy is about the ability to control what information is available to others, and what they can do with it. On this page we will look at the real-world and digital privacy challenges unique to the scope of this reference design, with a focus on what product builders and users can do to improve their payment privacy.
+Privacy is about the ability to control what information is available to others, and what they can do with it. It is a highly complex topic, so on this page we will just look at some of the real-world and digital privacy challenges unique to the scope of this [reference design]({{ "/guide/daily-spending-wallet/" | relative_url }}). We will keep a focus on what product builders and users can do to improve their payment privacy.
 
 #### Design with privacy in mind
 
@@ -159,11 +159,11 @@ An advantage here is the risk of an unauthorized person revealing their informat
 
 #### Use multiple wallets or applications
 
-A simple way to avoid data points from being connected is for users to set up and use multiple wallets or accounts for different purposes. For example, if a user wants to set up a page to collect tips on their website, they can set up a dedicated wallet. Anyone analyzing the activity around the wallet would only see incoming tips and none of the other activity that happens in other wallets the user controls. Users just need to be careful with cross-wallet transfers, as those can allow observers to connect the activity again.
+A simple way to avoid data points from being connected is for users to set up and use multiple wallets or accounts for [different purposes]({{ "/guide/designing-products/personal-finance/" | relative_url }}). For example, if a user wants to set up a page to collect tips on their website, they can set up a dedicated wallet. Anyone analyzing the activity around the wallet would only see incoming tips and none of the other activity that happens in other wallets the user controls. Users just need to be careful with on-chain cross-wallet transfers, as those can allow observers to connect the wallets again.
 
 ## Third-party services
 
-Whether it is for retrieving exchange rates or using lightning services, interacting with centralized third-parties can leak user data. You may want to allow users to disable those features, or choose the services they use. It is also essential to only expose your users to services that you have vetted and deemed trustworthy.
+Whether it is for retrieving exchange rates or using [lightning services]({{ "/guide/how-it-works/lightning-services/" | relative_url }}), interacting with centralized third-parties can leak user data. You may want to allow users to disable those features, choose the services they use, or use another method of anonymizing requests. It is also essential to only expose your users to services that you have vetted and deemed trustworthy.
 
 ## Data transfer
 
@@ -180,7 +180,7 @@ Whether it is for retrieving exchange rates or using lightning services, interac
    layout = "float-right-desktop -background -shadow"
 %}
 
-Internet service providers and similar services that handle data in transit may be able to gather or infer information about the user from the traffic. Tools like [VPNs](https://en.wikipedia.org/wiki/Virtual_private_network) and [Tor](https://en.wikipedia.org/wiki/Tor_(network)) can prevent this by adding additional layers of encryption and masking user activity. Keep in mind that using Tor provides better privacy, but can noticeably slow slow down the experience (especially initial startup).
+Internet service providers and similar services that handle data in transit may be able to gather or infer information about the user from the traffic. Tools like [VPNs](https://en.wikipedia.org/wiki/Virtual_private_network) and [Tor](https://en.wikipedia.org/wiki/Tor_(network)) can prevent this by adding additional layers of encryption and masking user activity. Keep in mind that using Tor provides better privacy, but can noticeably slow down the experience (especially initial startup).
 
 </div>
 
