@@ -1,17 +1,12 @@
 ---
 layout: guide
 title: Sign in with bitcoin
-description: A UX reference design for a multi-key bitcoin wallet designed for both daily spending and storing medium amounts.
+description: An introduction to how lightning wallets can support authentication and payments with external applications and web services.
 nav_order: 8
 permalink: /guide/sign-in-with-bitcoin/
 main_classes: -no-top-padding
 last_reference_design: true
-image: https://bitcoin.design/assets/images/guide/savings-wallet/multisig-wallet-preview.jpg
-image_base: /assets/images/guide/sign-in-with-bitcoin/
-images_onboarding:
-    - file: onboarding/cover
-      alt:
-      caption:
+image: https://bitcoin.design/assets/images/guide/sign-in-with-bitcoin/sign-in-with-bitcoin-preview.jpg
 ---
 
 <!--
