@@ -20,7 +20,7 @@ Editor's notes
    retina = "/assets/images/guide/sign-in-with-bitcoin/sign-in-with-bitcoin@2x.jpg"
    mobile = "/assets/images/guide/sign-in-with-bitcoin/sign-in-with-bitcoin-mobile.jpg"
    mobileRetina = "/assets/images/guide/sign-in-with-bitcoin/sign-in-with-bitcoin-mobile@2x.jpg"
-   alt-text = "Bar chart showing various spending categories"
+   alt-text = "Hand cursor hovering over a big 'Sign in' button"
    caption = ""
    width = 1600
    height = 600
@@ -41,7 +41,7 @@ Editor's notes
 
 Identity is at the core of bitcoin, as it is a requirement to create what we refer to as ownership. Owning bitcoin means being solely in control of the private keys (see [public-key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography)) from which the addresses are generated to which the bitcoin are assigned.
 
-The cryptography involved in this can also be used to generate public keys for other purposes, like a unique identifier that websites and applications can use for their account systems. This is similar to approaches like [Passkeys](https://developer.apple.com/passkeys/), which also look at replacing email & password combos with unique identifiers.
+The cryptography involved in this can also be used to generate public keys for other purposes, like a unique identifier that websites and applications can use for their account systems. This is similar to approaches like [Passkeys](https://developer.apple.com/passkeys/), which also look at replacing email & password combos with unique identifiers. [Decentralized identities](https://en.wikipedia.org/wiki/Decentralized_identifier) (DID) are another emerging approach.
 
 In the context of bitcoin, this allows users to sign in to services with the wallets, and also use this connection to make low-friction payments.
 
@@ -54,32 +54,32 @@ On this page we only focus on lightning wallets, as it lends itself much better 
 #### Support
 {:.no_toc}
 
-“Sign in with bitcoin” is not widely supported. It uses new technologies like [webLN](https://webln.dev/#/) and [LNURL-auth](https://github.com/fiatjaf/lnurl-rfc/blob/luds/04.md) that are still maturing and looking for broader adoption. To try this out, you can use the [Alby](https://getalby.com/) browser extension wallet with a service like [Stacker News](https://stacker.news/).
+“Sign in with bitcoin” is not widely supported. It uses new technologies like [webLN](https://webln.dev/#/) and [LNURL-auth](https://github.com/fiatjaf/lnurl-rfc/blob/luds/04.md) that are still maturing and looking for broader adoption. To try this out, you can use the [Alby](https://getalby.com/) browser extension wallet with a service like [Stacker News](https://stacker.news/) that allows you to spend satoshi to upvote news stories (more lightning apps can be found in the [bolt.fun maker directory](https://makers.bolt.fun/products)).
 
 ### Wallet-service communication
 
-Your service and the user wallet need to be able to communicate with each other to exchange information. There are two basic ways to handle this - directly and bridged.
+Your service and the user wallet need to be able to communicate with each other to exchange information. There are two basic ways to handle this - direct and bridged.
 
-#### Direct connection
+#### Direct communication
 
-The smoothest user experience is when the wallet and the service can directly communicate with each other. For example, a browser wallet and a website can send messages back and forth. This allows for convenient features like allowances for automatic approval of payments for trusted services.
+The smoothest user experience is when the wallet and the service can directly communicate with each other. For example, a browser wallet and a website can send messages back and forth (see [webLN](https://www.webln.guide/introduction/readme)). This allows for convenient features like allowances for automatic approval of payments for services the user trusts.
 
 {% include picture.html
    image = "/assets/images/guide/sign-in-with-bitcoin/direct-connection.png"
    retina = "/assets/images/guide/sign-in-with-bitcoin/direct-connection@2x.png"
-   alt-text = "Placeholder image"
+   alt-text = "Browser window with a wallet extension installed"
    width = 800
    height = 411
 %}
 
-#### Bridged connection
+#### Bridged communication
 
 There is more friction if the user needs to be involved in this communication. However, this extra friction provides more user control and better security. In the visualization below, the service and user wallet cannot directly communicate with each other. Instead, the web application presents instructions as QR codes that the user needs to scan with their (mobile) wallet. The wallet then send instructions to the application server, which updates the web application.
 
 {% include picture.html
    image = "/assets/images/guide/sign-in-with-bitcoin/bridged-connection.png"
    retina = "/assets/images/guide/sign-in-with-bitcoin/bridged-connection@2x.png"
-   alt-text = "Placeholder image"
+   alt-text = "Communication flow between a browser window and a smart phone wallet"
    width = 800
    height = 411
 %}
@@ -88,12 +88,12 @@ This does not necessarily have to be done via QR code. The most basic method cou
 
 ## Signing in
 
-The biggest hurdle at this stage is that most users will not be familiar with this authentication method and are likely not to have a wallet they can readily use. Ensure that there are concise explanations and tips to get users started.
+The biggest hurdle at this stage is that most users will not be familiar with this authentication method and are not likely to have a wallet they can readily use. Ensure that there are concise explanations and tips to get users started.
 
 {% include picture.html
    image = "/assets/images/guide/sign-in-with-bitcoin/signin-info.png"
    retina = "/assets/images/guide/sign-in-with-bitcoin/signin-info@2x.png"
-   alt-text = "Placeholder image"
+   alt-text = "Sign in screen with tips for wallets to use and general information"
    width = 800
    height = 411
 %}
@@ -103,14 +103,16 @@ Authentication is a simple process in which the service sends a message to the w
 {% include picture.html
    image = "/assets/images/guide/sign-in-with-bitcoin/signin-request.png"
    retina = "/assets/images/guide/sign-in-with-bitcoin/signin-request@2x.png"
-   alt-text = "Placeholder image"
+   alt-text = "Browser window with a modal for approving web service authentication"
    width = 800
    height = 411
 %}
 
+Keep in mind that your service will not be able to retrieve user names, emails, balances, transactions or other information from the wallet. Only the minimal information to identify the user is communicated. If you need to communicate with users about their accounts or activity, make sure you request an email or other contact point.
+
 ## Signing out
 
-Ensuring users are signed out is important because the account may have payment allowances (or other problematic permissions) that could be abused by others.
+Ensuring users are signed out (manually or via session time-outs) is important. The account may have payment allowances, or other problematic permissions, that could otherwise be abused by third-parties.
 
 ## Making payments
 
@@ -119,14 +121,14 @@ A payment is typically initiated by your service, as the user wants to take an a
 {% include picture.html
    image = "/assets/images/guide/sign-in-with-bitcoin/payment-request.png"
    retina = "/assets/images/guide/sign-in-with-bitcoin/payment-request@2x.png"
-   alt-text = "Placeholder image"
+   alt-text = "Browser window with a modal for confirming a payment of 100 satoshi"
    width = 800
    height = 411
 %}
 
-Allowances allow for automatic approval of payments by wallets up to certain amounts. This reduces friction for users that frequently transact. With an allowance, the modal window in the visualization above would not be shown.
+Allowances allow for automatic approval of payments by wallets up to certain amounts. This reduces friction for users that frequently transact. With an allowance, the modal window in the visualization above would not be needed. Ensure your interface provides user feedback when payments are confirmed.
 
-An alternative to reducing friction for frequent payments is to let users deposit satoshi into their account (and later withdraw them). This puts the service into a custodial position, but it result in smoother payments because they only involve database updates.
+An alternative to reducing friction for frequent payments is to let users deposit satoshi into their accounts (and later withdraw them). This puts the service into a custodial position, for the benefit of smoother payments (since they only involve database updates and not actual lightning payments).
 
 ## Connecting multiple wallets
 
@@ -135,14 +137,14 @@ Users may migrate wallets and want to link their existing account to a new walle
 {% include picture.html
    image = "/assets/images/guide/sign-in-with-bitcoin/connected-wallets.png"
    retina = "/assets/images/guide/sign-in-with-bitcoin/connected-wallets@2x.png"
-   alt-text = "Placeholder image"
+   alt-text = "Browser window showing an account screen with a list of linked wallets"
    width = 800
    height = 411
 %}
 
 ## Recovery
 
-If a user loses their wallet, they also lose their access to your service. Ensure you have a recovery mechanism in place. This could be a single-use recovery code, or a traditional email & password setup that you can also use for other communication with the user.
+If a user loses their wallet, they also lose their access to your service. Ensure you have a recovery mechanism in place. This could be a single-use recovery code (as is a common pattern with [multi-factor authentication](https://en.wikipedia.org/wiki/Multi-factor_authentication)), or a traditional email & password setup that you can also use for other communication with the user.
 
 ---
 
