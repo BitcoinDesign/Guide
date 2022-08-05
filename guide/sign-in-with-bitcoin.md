@@ -13,6 +13,9 @@ image: https://bitcoin.design/assets/images/guide/sign-in-with-bitcoin/sign-in-w
 
 Editor's notes
 
+This page provides a top-level overview of the interactions around signing in
+and making payments on a web application via a lightning wallet.
+
 -->
 
 {% include picture.html
