@@ -8,7 +8,6 @@ redirect_from:
  - /guide/case-studies/shared-account/
  - /guide/shared-account/
 main_classes: -no-top-padding
-last_reference_design: true
 image: https://bitcoin.design/assets/images/guide/shared-wallet/shared-account-preview.jpg
 image_base: /assets/images/guide/shared-wallet/
 images:
@@ -121,6 +120,6 @@ The wireframe screens below show the main onboarding sequence that guides users 
 {% include next-previous.html
    previousUrl = "/guide/upgradeable-wallet/"
    previousName = "Upgradeable wallet"
-   nextUrl = "/guide/how-it-works/"
-   nextName = "How it works"
+   nextUrl = "/guide/sign-in-with-bitcoin/"
+   nextName = "Sign in with bitcoin"
 %}

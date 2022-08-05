@@ -2,7 +2,7 @@
 layout: guide
 title: Resources
 description: Resources to help you build better bitcoin products.
-nav_order: 9
+nav_order: 10
 has_children: true
 permalink: /guide/resources/
 main_classes: -no-top-padding
