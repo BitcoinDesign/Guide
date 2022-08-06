@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Lightning Services
-description: Third party services that solve common user experience problems when connecting to and using the lightning network.
+description: Third party services that solve common user experience problems when connecting to and using the Lightning Network.
 nav_order: 4
 parent: How it works
 permalink: /guide/how-it-works/lightning-services/
@@ -33,7 +33,7 @@ Illustration sources: https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id
 
 # Lightning services
 
-[Scaling]({{ '/guide/getting-started/technology-primer/#do-all-transactions-have-to-be-this-secure' | relative_url }}) bitcoin to billions of self-custodial users with the lightning network creates many new usability issues.
+[Scaling]({{ '/guide/getting-started/technology-primer/#do-all-transactions-have-to-be-this-secure' | relative_url }}) bitcoin to billions of self-custodial users with the Lightning Network creates many new usability issues.
 Some of those issues include:
 - liquidity and uptime requirements
 - channel management
@@ -46,7 +46,7 @@ This section covers two categories of lightning services: Lightning service prov
 
 ## What is a Lightning service provider?
 
-Internet service providers (ISPs) help users connect to the internet. Similarly, Lightning service providers (LSPs) help users connect to the lightning network while maintaining [self-custody]({{ '/guide/getting-started/principles/#self-custody' | relative_url }}).
+Internet service providers (ISPs) help users connect to the internet. Similarly, Lightning service providers (LSPs) help users connect to the Lightning Network while maintaining [self-custody]({{ '/guide/getting-started/principles/#self-custody' | relative_url }}).
 
 They do this by being well connected in the network, opening channels, and offering inbound liquidity to users. They often charge a fee for their services.
 
@@ -193,7 +193,7 @@ It also prevents everyone from using the same LSP, improving [decentralization](
 
 ## What are Lightning wallet servers?
 
-Once a user is connected to the lightning network, likely through an LSP, lightning wallet servers (LWS) offer services that make using lightning easier for users. LSPs sometimes offer LWS services as part of their offering but this is not exclusive to LSPs.
+Once a user is connected to the Lightning Network, likely through an LSP, lightning wallet servers (LWS) offer services that make using lightning easier for users. LSPs sometimes offer LWS services as part of their offering but this is not exclusive to LSPs.
 
 LWSs act as trust-minimized third parties, so when possible, users should be able to opt out and operate their lightning wallet manually.
 

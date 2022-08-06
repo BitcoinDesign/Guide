@@ -40,13 +40,13 @@ Illustration sources
 
 # Transactions
 
-This page is meant to help you understand how users' transactions get created and processed by the bitcoin and Lightning networks. Bitcoin is a peer-to-peer push-payment system. This means that you can send, or push, bitcoin at any time, without passing through a trusted third party.
+This page is meant to help you understand how users' transactions get created and processed by the bitcoin and Lightning Networks. Bitcoin is a peer-to-peer push-payment system. This means that you can send, or push, bitcoin at any time, without passing through a trusted third party.
 
 This is radically different from the traditional financial system, where it is often possible for others to pull and withdraw money from your account (utility companies, financial institutions, merchants, etc.). When you make a payment, it will pass through systems that might delay, control or block the payment.
 
 {% include tip/open.html color="blue" icon="info" label="A note about terminology" %}
 
-In most places in the Guide, the term **"transaction"** and **"payment"** are used interchangeably. For the remainder of this page, the term transaction refers specifically to on-chain bitcoin transactions, and the term payment refers specifically to payments routed over the Lightning network.
+In most places in the Guide, the term **"transaction"** and **"payment"** are used interchangeably. For the remainder of this page, the term transaction refers specifically to on-chain bitcoin transactions, and the term payment refers specifically to payments routed over the Lightning Network.
 
 {% include tip/close.html %}
 
@@ -56,14 +56,14 @@ In most places in the Guide, the term **"transaction"** and **"payment"** are us
 |-------------|------------------|
 | Users send bitcoin *[transactions]({{'/guide/glossary/#transaction' | relative_url}})*. | Users send Lightning *[payments]({{'/guide/glossary/#payment' | relative_url}})*.  |
 | Bitcoin transactions are settled on average every 10 minutes. | Lightning payments are settled almost instantly.  |
-| A valid bitcoin transaction will always be mined, but may be delayed if the fee is too low. | A successful Lightning payment depends on Lightning network liquidity and finding a path to the recipient. |
+| A valid bitcoin transaction will always be mined, but may be delayed if the fee is too low. | A successful Lightning payment depends on Lightning Network liquidity and finding a path to the recipient. |
 | Bitcoin is typically better for larger amounts of funds and less frequent transactions. | Lightning is typically better for smaller amounts of funds and more frequent payments. |
 
 For a more detailed look, see the [Technology Primer]({{'/guide/getting-started/technology-primer/' | relative_url}}).
 
 ## Lightning payment lifecycle
 
-For most use cases, the Lightning network is the best option, as it will enable the recipient to receive their bitcoin quicker and the sender to pay less in fees.
+For most use cases, the Lightning Network is the best option, as it will enable the recipient to receive their bitcoin quicker and the sender to pay less in fees.
 
 {% include picture.html
 image = "/assets/images/guide/how-it-works/transactions/payment-lifecycle.svg"
@@ -86,7 +86,7 @@ The sender loads the invoice into their wallet application. After reviewing that
 
 ### 3. Pathfinding & routing
 
-The wallet application attempts to route the Lightning payment to the recipient. In order to do this, it must attempt to construct a path through the Lightning network. Pathfinding is a complex, probabilistic process, which means that the routing fees shown in the prior step are only an estimate.
+The wallet application attempts to route the Lightning payment to the recipient. In order to do this, it must attempt to construct a path through the Lightning Network. Pathfinding is a complex, probabilistic process, which means that the routing fees shown in the prior step are only an estimate.
 
 If the payment fails along a particular path, the wallet application will repeatedly attempt the payment again with a different path until the payment succeeds.
 

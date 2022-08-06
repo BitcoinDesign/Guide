@@ -34,13 +34,13 @@ Learn how coin selection is used to choose which UTXOs (or “coins”) to use a
 
 ### [Lightning liquidity]({{ '/guide/how-it-works/liquidity/' | relative_url }})
 
-A primer on liquidity in the lightning network.
+A primer on liquidity in the Lightning Network.
 
 ---
 
 ### [Lightning services]({{ '/guide/how-it-works/lightning-services/' | relative_url }})
 
-Common user experience problems of the Lightning network that can be resolved by third-party service providers.
+Common user experience problems of the Lightning Network that can be resolved by third-party service providers.
 
 ---
 

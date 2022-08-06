@@ -138,7 +138,7 @@ Wallets can also independently keep an eye on user funds, data traffic, and othe
 
 ### Smart organization
 
-The Lightning network makes micropayments economically and technically viable. For example, as a user listens to a podcast, they may stream 10 sats per minute to the host as a thank you. This can easily result in a cluttered activity list, which can be remedied via automatic grouping.
+The Lightning Network makes micropayments economically and technically viable. For example, as a user listens to a podcast, they may stream 10 sats per minute to the host as a thank you. This can easily result in a cluttered activity list, which can be remedied via automatic grouping.
 
 {% include image-gallery.html pages = page.imagesGrouping %}
 

@@ -94,7 +94,7 @@ There will never be more than 21 million bitcoin. The creation of new bitcoin is
 
 When you take cash out of your bank account, it becomes your responsibility. If you lose it, it’s lost. If you transact with it, no middleman can block or reverse the transaction. Either way, you are its custodian—this is bitcoin in a nutshell. It’s digital, [self-custodial]({{ '/guide/getting-started/principles/#self-custody' | relative_url }}) cash.
 
-Bitcoin combines the custodial benefits of physical cash with the convenience of online banking and payment processing. But unlike your bank, bitcoin has never been hacked. So as long as you responsibly [manage your private keys]({{ '/guide/private-key-management/introduction/' | relative_url }}), not only do you own your bitcoin, no one can take them away.
+Bitcoin combines the custodial benefits of physical cash with the convenience of online banking and payment processing. But unlike banks, bitcoin has never been hacked. So as long as you responsibly [manage your private keys]({{ '/guide/private-key-management/introduction/' | relative_url }}), not only do you own your bitcoin, no one can take them away.
 
 ## Global by default
 

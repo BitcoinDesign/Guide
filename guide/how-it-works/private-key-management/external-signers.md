@@ -60,7 +60,7 @@ PSBT's can be passed between the primary wallet application and external signer 
 
 ### Lightning signers
 
-Lightning signers are an experimental type of external signers interacting with the Lightning network. Like regular external signers, Lightning signers isolate private keys from the user's primary wallet application. However, these signers need to remain online and connected 24/7 to the user's primary wallet application to update payment channel states. These, in effect, have some of the security benefits of regular external signers by isolating private keys from the internet and/or potential malicious device. Learn more [here](https://gitlab.com/lightning-signer/docs/-/blob/master/README.md).
+Lightning signers are an experimental type of external signers interacting with the Lightning Network. Like regular external signers, Lightning signers isolate private keys from the user's primary wallet application. However, these signers need to remain online and connected 24/7 to the user's primary wallet application to update payment channel states. These, in effect, have some of the security benefits of regular external signers by isolating private keys from the internet and/or potential malicious device. Learn more [here](https://gitlab.com/lightning-signer/docs/-/blob/master/README.md).
 
 {% include fact/pros.html %}
 

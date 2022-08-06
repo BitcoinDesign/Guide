@@ -213,7 +213,7 @@ Currently there are limited reusable payment request options available. However,
 
 ### Lightning address
 
-[Lightning addresses](https://lightningaddress.com/), which look like regular emails (jane@domain.com), are reusable ways users can receive Lightning payments. These are not native to the Lightning network itself, but rather offered by a trusted server often ran by the wallet provider.
+[Lightning addresses](https://lightningaddress.com/), which look like regular emails (jane@domain.com), are reusable ways users can receive Lightning payments. These are not native to the Lightning Network itself, but rather offered by a trusted server often ran by the wallet provider.
 
 Generating a Lightning address should be simple for users and done within a profile page or during the users [first use]({{ "/guide/daily-spending-wallet/first-use/" | relative_url }}). At a minimum, your wallet should support sending to Lightning addresses, so it's interoperable with other wallets.
 
@@ -271,7 +271,7 @@ If a sender supports Keysends they can make recurring payments with attached mes
 
 Having the option to quickly generate a personalised QR code of your node ID from the home screen is recommended.
 
-This form of reusable payment request is not widely supported but offer a unique, way for users to make payments, tip users, and send messages over the Lightning network.
+This form of reusable payment request is not widely supported but offer a unique, way for users to make payments, tip users, and send messages over the Lightning Network.
 
 </div>
 

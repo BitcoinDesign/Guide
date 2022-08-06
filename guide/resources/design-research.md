@@ -101,7 +101,7 @@ A survey and follow-up interview of 990 bitcoin users to determine bitcoin manag
 
 _Login required to access. 2022 by Arcane research_
 
-In this second edition, Arcane Research delivers valuable insights into the growth of bitcoin's lightning network. The report helps quantify and visualize what's happening right now with lightning. Not only that, it also shows how it is solving real problems for people around the world.
+In this second edition, Arcane Research delivers valuable insights into the growth of bitcoin's Lightning Network. The report helps quantify and visualize what's happening right now with lightning. Not only that, it also shows how it is solving real problems for people around the world.
 
 #### [The Lightning Network: Bitcoin’s Evolution to Medium of Exchange](https://kraken.docsend.com/view/vdtb2nfy3m9m3d6g)
 
@@ -131,7 +131,7 @@ Female Americans were asked about their current motivations, behaviors and dispo
 
 _2021 by Arcane research_
 
-The State of Lightning provides a comprehensive overview of usage on the Lightning network seen to date (October 2021). The report highlights and explains the growth in network metrics, provides estimates of mainstream adoption, and looks into the future of the Lightning network.
+The State of Lightning provides a comprehensive overview of usage on the Lightning Network seen to date (October 2021). The report highlights and explains the growth in network metrics, provides estimates of mainstream adoption, and looks into the future of the Lightning Network.
 
 #### [Bitcoin UX Research](https://patestevao.com/work/bitcoin-ux-research/)
 

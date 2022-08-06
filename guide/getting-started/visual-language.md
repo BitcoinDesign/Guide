@@ -139,7 +139,7 @@ The Unicode symbol for bitcoin (₿) was introduced in [Unicode 10.0.0](http://w
 
 ## The Satoshi symbol
 
-As the price of bitcoin has increased, and the [Lightning network]({{ '/guide/glossary/#lightning-network' | relative_url }}) has facilitated low-value payments, it has become common for people to denominate bitcoin with the "satoshi". See the [Units & Symbols]({{ '/guide/designing-products/units-and-symbols/' | relative_url }}) section for more detailed information about bitcoin units.
+As the price of bitcoin has increased, and the [Lightning Network]({{ '/guide/glossary/#lightning-network' | relative_url }}) has facilitated low-value payments, it has become common for people to denominate bitcoin with the "satoshi". See the [Units & Symbols]({{ '/guide/designing-products/units-and-symbols/' | relative_url }}) section for more detailed information about bitcoin units.
 
 There is currently not an agreed-upon symbol to represent the satoshi (or if there should even be one). However, many ideas are in circulation.
 
@@ -226,10 +226,10 @@ Think about bitcoin’s visual language as a scale that ranges from muted to hig
 
 In digital product design, there are times when a minimally expressive approach is what’s needed. For example, when a user makes a transaction, we want them to focus. At other times, illustrations and stronger visual elements are more appropriate, and this is where we can take advantage of the creative freedom bitcoin affords.
 
-## The Lightning network
+## The Lightning Network
 
 
-Since the first Lightning implementation in 2018, a distinct visual identity has developed around the Lightning network based on a simple yellow lightning bolt icon. Sometimes, Lightning software and services completely forego common elements of bitcoin branding (the color orange, the bitcoin symbol, etc.) and instead use the color yellow, a lightning bolt symbol, and metaphors for electricity.
+Since the first Lightning implementation in 2018, a distinct visual identity has developed around the Lightning Network based on a simple yellow lightning bolt icon. Sometimes, Lightning software and services completely forego common elements of bitcoin branding (the color orange, the bitcoin symbol, etc.) and instead use the color yellow, a lightning bolt symbol, and metaphors for electricity.
 
 <div class="image-gallery" markdown="1">
 

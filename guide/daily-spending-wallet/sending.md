@@ -210,7 +210,7 @@ Payment fees can drastically differ based on a few attributes:
 
 **Lightning routing fees**
 
-On the Lightning network, payments are passed between nodes to get from the sender to the receiver. Each of those nodes may charge a base fee and a second fee based on a percentage of the amount forwarded. Fees paid can vary, but are typically in the single-digit or double-digit Satoshi range (a small fraction of on-chain fees).
+On the Lightning Network, payments are passed between nodes to get from the sender to the receiver. Each of those nodes may charge a base fee and a second fee based on a percentage of the amount forwarded. Fees paid can vary, but are typically in the single-digit or double-digit Satoshi range (a small fraction of on-chain fees).
 
 **Lightning service fees**
 
@@ -254,7 +254,7 @@ If using a security step here, it should come after the user has selected all ot
 
 ## Transaction processing
 
-Processing times may also differ between on-chain and Lightning network payments. On-chain, pending transactions are bundled into a [new block]({{ '/guide/getting-started/technology-primer/#what-is-a-blockchain' | relative_url }}) roughly every 10 minutes. On the Lightning network, [payment routing]({{ '/guide/getting-started/technology-primer/#how-are-payments-routed' | relative_url }}) happens instantly and is largely dependent on the number of nodes involved, as well as their liquidity and processing speeds.
+Processing times may also differ between on-chain and Lightning Network payments. On-chain, pending transactions are bundled into a [new block]({{ '/guide/getting-started/technology-primer/#what-is-a-blockchain' | relative_url }}) roughly every 10 minutes. On the Lightning Network, [payment routing]({{ '/guide/getting-started/technology-primer/#how-are-payments-routed' | relative_url }}) happens instantly and is largely dependent on the number of nodes involved, as well as their liquidity and processing speeds.
 
 When transactions take longer than expected, users need to be clearly informed about the status. In scenarios like in-store payments, speedy confirmation is of the essence, as the user wants to move on, and the merchant may have other customers waiting. In-app status updates can be coupled with notifications to ensure that both parties are confident that everything is in order. For a framework on timing, see [this article on response time limits](https://www.nngroup.com/articles/response-times-3-important-limits/).
 
@@ -305,7 +305,7 @@ It is ideal when the application can automatically identify and fix or avoid the
 
 Effectively supporting users when problems occur can build trust and confidence, and essential aspect for financial applications.
 
-### Encouraging lightning network
+### Encouraging Lightning Network
 
 Lightning is likely to be the best option for the majority of payments a user makes. It will be faster, more private, and cost less. An ideal scenario would be where the user does not spend time considering whether to pay on-chain or Lightning — it's all bitcoin to them.
 

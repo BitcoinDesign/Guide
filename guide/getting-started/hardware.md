@@ -79,11 +79,11 @@ You may already be familiar with physical security keys from your bank or work. 
 
 Bitcoin hardware wallets, also called signers, act like bitcoin-centric security keys. They isolate the recovery phrase, private keys, and other sensitive data like output descriptors from the internet and other devices.
 
-Hardware wallets only exchange non-sensitive information with external devices. Sensitive processes happen on the device, such as signing a transaction to open a Lightning network payment channel. Most interactions with hardware wallets happen via desktop [software, like wallets]({{ '/guide/getting-started/software/#wallets' | relative_url }}).
+Hardware wallets only exchange non-sensitive information with external devices. Sensitive processes happen on the device, such as signing a transaction to open a Lightning Network payment channel. Most interactions with hardware wallets happen via desktop [software, like wallets]({{ '/guide/getting-started/software/#wallets' | relative_url }}).
 
 ## Nodes
 
-A node is a device that participates in a network. There are two types of nodes to understand: A bitcoin node that participates in the bitcoin network and a Lightning node that participates in the Lightning network. For a deeper dive into what purpose these nodes serve check out the [technology primer]({{ '/guide/getting-started/technology-primer/' | relative_url }}).
+A node is a device that participates in a network. There are two types of nodes to understand: A bitcoin node that participates in the bitcoin network and a Lightning node that participates in the Lightning Network. For a deeper dive into what purpose these nodes serve check out the [technology primer]({{ '/guide/getting-started/technology-primer/' | relative_url }}).
 
 {% include picture.html
    image = "/assets/images/guide/getting-started/hardware/node-hardware.jpg"
@@ -139,7 +139,7 @@ Bitcoin Automated Teller Machines (ATM) are a convenient way to buy or sell bitc
 
 Much like traditional ATMs, bitcoin ATMs allow the deposit and withdrawal of money. Bitcoin ATMs, however allow someone to deposit fiat currencies in exchange for bitcoin.
 
-Modern bitcoin ATMs take advantage of the bitcoin Lightning network. This enables almost instant withdrawals and cheaper fees, making the purchase experience more friendly and cost-effective.
+Modern bitcoin ATMs take advantage of the bitcoin Lightning Network. This enables almost instant withdrawals and cheaper fees, making the purchase experience more friendly and cost-effective.
 
 Bitcoin ATMs are usually bound to local money transmission laws and regulations, such as Know Your Customer (KYC) and Anti-Money Laundering (AML) regulations. More on [Wikipedia](https://en.wikipedia.org/wiki/Bitcoin_ATM).
 
@@ -147,7 +147,7 @@ You can find local ATMs using services like [coinatmradar](https://coinatmradar.
 
 ## Point of sale
 
-People looking to accept bitcoin payments, especially when using the lightning network, sometimes use dedicated point of sale (POS) hardware terminals when selling goods and services.
+People looking to accept bitcoin payments, especially when using the Lightning Network, sometimes use dedicated point of sale (POS) hardware terminals when selling goods and services.
 
 {% include picture.html
    image = "/assets/images/guide/getting-started/hardware/point-of-sale.jpg"

@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Lightning liquidity
-description: A primer on lightning network liquidity
+description: A primer on Lightning Network liquidity
 nav_order: 3
 parent: How it works
 permalink: /guide/how-it-works/liquidity/
@@ -41,11 +41,11 @@ Figma file for channel reserve UI's: https://www.figma.com/file/6iJpftEbajA3y1yl
 
 ---
 
-Liquidity is a core concept to understand when working with the lightning network, although tricky. Ideally, we are able to design products that are easy enough to use so that users do not need to concern themselves with liquidity. However, product designers need to understand liquidity in order to build effectively on lightning.
+Liquidity is a core concept to understand when working with the Lightning Network, although tricky. Ideally, we are able to design products that are easy enough to use so that users do not need to concern themselves with liquidity. However, product designers need to understand liquidity in order to build effectively on lightning.
 
 ## What is liquidity?
 
-Put simply, liquidity on the lightning network is the ability to send or receive bitcoin. In the context of an individual user, liquidity is a measurement of their wallet's ability to send and receive bitcoin over lightning.
+Put simply, liquidity on the Lightning Network is the ability to send or receive bitcoin. In the context of an individual user, liquidity is a measurement of their wallet's ability to send and receive bitcoin over lightning.
 
 ### Inbound vs Outbound Liquidity
 
@@ -126,7 +126,7 @@ Before going further, it's important to make a distinction between different use
             <td>Wagner uses a mobile bitcoin wallet that supports lightning to send and receive payments</td>
          </tr>
          <tr>
-            <td>What's their role in the lightning network?</td>
+            <td>What's their role in the Lightning Network?</td>
             <td>Rachel acts more like a hub for routing other's lightning payments, and is rarely the origin or endpoint</td>
             <td>Miguel is usually the endpoint for lightning payments</td>
             <td>Wagner is sometimes the origin and sometimes the endpoint for lightning payments</td>
@@ -171,11 +171,11 @@ Before going further, it's important to make a distinction between different use
    </table>
 </div>
 
-Currently, most of the thinking in the Design Guide is focused on [mobile wallet]({{'/guide/daily-spending-wallet/' | relative_url}}) users such as Wagner. However, it is helpful to understand that routing nodes play a very important role in getting user funds across the lightning network.
+Currently, most of the thinking in the Design Guide is focused on [mobile wallet]({{'/guide/daily-spending-wallet/' | relative_url}}) users such as Wagner. However, it is helpful to understand that routing nodes play a very important role in getting user funds across the Lightning Network.
 
 ## Liquidity examples
 
-The following examples are designed to help you understand how liquidity works on the lightning network.
+The following examples are designed to help you understand how liquidity works on the Lightning Network.
 
 Lori and Lamar, two routing node operators, open a channel together. Lori initiates the channel opening with 1,000,000 sats. This is the amount she makes available for transactions in the channel. Her initial outbound liquidity is the full amount of 1,000,000 sats, and her initial inbound liquidity is 0 sats (since Lamar has not committed any sats to the channel).
 
@@ -238,27 +238,27 @@ Lori and Lamar can also change their liquidity by forming channels with other li
    height = 800
 %}
 
-Lori, Lamar, and Lindsay can open channels with as many other nodes as they like -- the only limitation is how much bitcoin they are willing to put into lightning channels. This interconnected web of channels is effectively “the lightning network”.
+Lori, Lamar, and Lindsay can open channels with as many other nodes as they like -- the only limitation is how much bitcoin they are willing to put into lightning channels. This interconnected web of channels is effectively “the Lightning Network”.
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/liquidity/liquidity-06.png"
    retina = "/assets/images/guide/how-it-works/liquidity/liquidity-06@2x.png"
    mobile = "/assets/images/guide/how-it-works/liquidity/liquidity-06-mobile.png"
    mobileRetina = "/assets/images/guide/how-it-works/liquidity/liquidity-06-mobile@2x.png"
-   alt-text = "Lori, Lamar, Lindsay, and the lightning network"
+   alt-text = "Lori, Lamar, Lindsay, and the Lightning Network"
    width = 1200
    height = 800
    layout = "full-width"
 %}
 
-Getting liquidity is not a one time issue on the lightning network. Routing nodes are constantly rebalancing their channels so that they have the right amount of liquidity in the right places. They do this by essentially sending themselves payments through the lightning network.
+Getting liquidity is not a one time issue on the Lightning Network. Routing nodes are constantly rebalancing their channels so that they have the right amount of liquidity in the right places. They do this by essentially sending themselves payments through the Lightning Network.
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/liquidity/liquidity-07.png"
    retina = "/assets/images/guide/how-it-works/liquidity/liquidity-07@2x.png"
    mobile = "/assets/images/guide/how-it-works/liquidity/liquidity-07-mobile.png"
    mobileRetina = "/assets/images/guide/how-it-works/liquidity/liquidity-07-mobile@2x.png"
-   alt-text = "Rebalancing channels on the lightning network"
+   alt-text = "Rebalancing channels on the Lightning Network"
    width = 1200
    height = 800
    layout = "full-width"
@@ -271,7 +271,7 @@ While the example thus far has focused on routing nodes, mobile nodes also fit i
    retina = "/assets/images/guide/how-it-works/liquidity/liquidity-08@2x.png"
    mobile = "/assets/images/guide/how-it-works/liquidity/liquidity-08-mobile.png"
    mobileRetina = "/assets/images/guide/how-it-works/liquidity/liquidity-08-mobile@2x.png"
-   alt-text = "Rebalancing channels on the lightning network"
+   alt-text = "Rebalancing channels on the Lightning Network"
    width = 1200
    height = 800
    layout = "full-width"
@@ -279,7 +279,7 @@ While the example thus far has focused on routing nodes, mobile nodes also fit i
 
 {% include tip/open.html color="blue" icon="info" label="Further reading" %}
 
-This is a simplified overview of the lightning network. In reality, lightning is a fast-moving technology with a variety of different techniques for managing channels and liquidity. Recent innovations like [dual-funded channels](https://medium.com/blockstream/c-lightning-opens-first-dual-funded-mainnet-lightning-channel-ada6b32a527c) allow both channel partners to contribute to the liquidity from the start, and [channel-splicing](https://bitcoinops.org/en/topics/splicing/) is a promising idea may help make channel balancing easier.
+This is a simplified overview of the Lightning Network. In reality, lightning is a fast-moving technology with a variety of different techniques for managing channels and liquidity. Recent innovations like [dual-funded channels](https://medium.com/blockstream/c-lightning-opens-first-dual-funded-mainnet-lightning-channel-ada6b32a527c) allow both channel partners to contribute to the liquidity from the start, and [channel-splicing](https://bitcoinops.org/en/topics/splicing/) is a promising idea may help make channel balancing easier.
 
 {% include tip/close.html %}
 
@@ -315,7 +315,7 @@ Helping the user get liquidity is just the beginning. As they continue to use th
 
 Consider how you can help the user with channel management without them even knowing it's happening. For example, you could automatically open a new channel for them if they try to create an invoice that exceeds their inbound capacity.
 
-By combining the business incentives of an LSP, clever engineering, and good design, you can build a bitcoin product that makes using the lightning network very easy for the user.
+By combining the business incentives of an LSP, clever engineering, and good design, you can build a bitcoin product that makes using the Lightning Network very easy for the user.
 
 ## Channel reserve
 

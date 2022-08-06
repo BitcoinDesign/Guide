@@ -218,7 +218,7 @@ A payment channel is a [joint account]({{'/guide/glossary/#multi-signature-walle
    layout = "float-right-desktop"
 %}
 
-The Lightning network is a network of payment channels. Lightning nodes allow you to have multiple channels with different parties to route payments through. This new network forms a second layer on top of bitcoin. This has some privacy benefits, too: payment information is only recorded to the blockchain when the payment channel is opened and closed. Every payment that happens in between the opening and closing is not stored “on-chain”.
+The Lightning Network is a network of payment channels. Lightning nodes allow you to have multiple channels with different parties to route payments through. This new network forms a second layer on top of bitcoin. This has some privacy benefits, too: payment information is only recorded to the blockchain when the payment channel is opened and closed. Every payment that happens in between the opening and closing is not stored “on-chain”.
 </div>
 
 ## What are ways to receive bitcoin?
@@ -254,7 +254,7 @@ To transfer bitcoin, the recipient needs to provide the sender with the destinat
 To make a Lightning payment, you don't need to open a channel with everyone you transact with. Lightning nodes talk to one another and declare their payment channels. It's typical for nodes to have multiple channels to access different parts of the network for better routing. With an invoice, the sender finds a path to the receiver, and the payment hops from channel to channel until it reaches the destination.
 
 <!--
-   While the blockchain the transaction is broadcasted to a node which propagates it to the rest of the network to be included in a block, on lightning network a payment is routed through a set of predefined nodes and channels.
+   While the blockchain the transaction is broadcasted to a node which propagates it to the rest of the network to be included in a block, on Lightning Network a payment is routed through a set of predefined nodes and channels.
 
    ## actions
    passes things to a bitcoin node

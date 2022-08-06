@@ -49,7 +49,7 @@ projects:
         link: https://github.com/GBKS/bitcoin-wallet-ui-kit
 
   - name: Bitcoin Design Sprints
-    description: Improving Lightning network wallets through applying the design guide, design thinking and problem solving.
+    description: Improving Lightning Network wallets through applying the design guide, design thinking and problem solving.
     image:
       url: /assets/images/contribute/wallet-design-sprints.png
       width: 75

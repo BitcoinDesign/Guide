@@ -88,9 +88,9 @@ Wallet backups generated in one wallet application should be able to be easily r
 
 Over the years, bitcoin wallets have implemented various features in different ways, partly because standards take time to evolve. Standards such as [BIP39 recovery phrases](/guide/glossary/#recovery-phrase) and [wallet descriptors](/guide/glossary/#output-script-descriptor) should be used to create wallet backups within your applications.
 
-Backing up payment channels that are part of the Lightning network can be more difficult. Currently, no standards exist for this, nor is it possible to have a static backup method like you can with on-chain bitcoin. Payment channels states regularly change and thus need to be regularly updated. Some applications make use of static-channel-backup (SCB) files, though this is still an evolving standard.
+Backing up payment channels that are part of the Lightning Network can be more difficult. Currently, no standards exist for this, nor is it possible to have a static backup method like you can with on-chain bitcoin. Payment channels states regularly change and thus need to be regularly updated. Some applications make use of static-channel-backup (SCB) files, though this is still an evolving standard.
 
-It should be convenient for users to back up the relevant information they need for recovery with other applications. An example solution is to provide a [printable template or downloadable PDF](https://www.figma.com/file/sJYnyi2amehFJ2JpDgj978/Bitcoin-Wallet---Paper-Backup-Template?node-id=1%3A535) with the wallet name, software name and version, address type, wallet descriptors, and other non-standard information. If your application makes use of the Lightning network this could be done in conjunction with regular, encrypted SCB cloud backups.
+It should be convenient for users to back up the relevant information they need for recovery with other applications. An example solution is to provide a [printable template or downloadable PDF](https://www.figma.com/file/sJYnyi2amehFJ2JpDgj978/Bitcoin-Wallet---Paper-Backup-Template?node-id=1%3A535) with the wallet name, software name and version, address type, wallet descriptors, and other non-standard information. If your application makes use of the Lightning Network this could be done in conjunction with regular, encrypted SCB cloud backups.
 
 </div>
 
@@ -189,11 +189,11 @@ Although every application will have its own unique interface, there are certain
    layout = "float-right-desktop"
 %}
 
-Connecting to the bitcoin or Lightning network should be as trust-minimized and privacy preserving as possible. While it is convenient when applications provide their own node connection, it is beneficial to allow users to connect to a trusted node or their own self-hosted bitcoin or Lightning node.
+Connecting to the bitcoin or Lightning Network should be as trust-minimized and privacy preserving as possible. While it is convenient when applications provide their own node connection, it is beneficial to allow users to connect to a trusted node or their own self-hosted bitcoin or Lightning node.
 
 Having the option to choose how that data is queried, say using [Neutrino over SPV](https://bitcoin.design/guide/glossary/node/#light-nodes), should also be an option. This results in better network [decentralization](https://bitcoin.design/guide/getting-started/principles/#decentralization), and has privacy and [security](https://bitcoin.design/guide/getting-started/principles/#security) benefits for users.
 
-If your application uses the Lightning network, users should be running their own Lightning node. However, there are certain aspects of a Lightning node that can be outsourced, such as creating inbound liquidity from an LSP or constructing payment paths.
+If your application uses the Lightning Network, users should be running their own Lightning node. However, there are certain aspects of a Lightning node that can be outsourced, such as creating inbound liquidity from an LSP or constructing payment paths.
 
 Your application should give users options as to which services (if any) they want to trust a third party to conduct. Your application should try to avoid having users locked into your application and give them various options for outsourcing Lightning services.
 

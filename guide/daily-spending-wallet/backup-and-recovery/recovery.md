@@ -37,7 +37,7 @@ Illustration sources:
 
 There are several reasons why a user might need to restore their bitcoin wallet. They may have lost their device, be migrating from a different application or have deleted their wallet application. Regardless of why, it’s important that your wallet application has an easy way for users to recover their funds.
 
-However, not all wallets from one application can be recovered in another, depending on what standards they support, as covered in the [wallet interoperability]({{ 'guide/designing-products/interoperability' | relative_url }}) section. Lack of interoperability and vendor dependance is an issue for wallets holding bitcoin on the Lightning network. Lightning network wallets can currently only be restored in the application originally used. It's also worth noting that restoring from a [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) only restores the private keys, but no user data like transaction notes, [contacts]({{ '/guide/daily-spending-wallet/contacts/' | relative_url }}) etc.
+However, not all wallets from one application can be recovered in another, depending on what standards they support, as covered in the [wallet interoperability]({{ 'guide/designing-products/interoperability' | relative_url }}) section. Lack of interoperability and vendor dependance is an issue for wallets holding bitcoin on the Lightning Network. Lightning Network wallets can currently only be restored in the application originally used. It's also worth noting that restoring from a [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) only restores the private keys, but no user data like transaction notes, [contacts]({{ '/guide/daily-spending-wallet/contacts/' | relative_url }}) etc.
 
 {% include picture.html
    image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/import-options.png"
@@ -63,9 +63,9 @@ Users may have created a wallet with another wallet application. In this case, t
 
 Some applications  also provide an option for users to scan an encrypted proprietary QR code version of their recovery phrase. For a more detailed explanation of this recovery technique, check out this [blog post](https://blog.keys.casa/product-update-transaction-memos-encrypted-backups/) by Casa.
 
-### Restore a wallet with funds on the Lightning network
+### Restore a wallet with funds on the Lightning Network
 
-To fully restore a wallet with funds on the [Lightning network]({{ '/guide/getting-started/technology-primer/#the-lightning-payment-network' | relative_url }}), the state and history of the payment channels are needed in addition to the recovery phrase. As there are no standards for this yet, wallet applications need to have their own format for backing this up, and subsequently restoring. Due to the amount of information, a QR code of the encrypted data, like in the previous example, can be appropriate.
+To fully restore a wallet with funds on the [Lightning Network]({{ '/guide/getting-started/technology-primer/#the-lightning-payment-network' | relative_url }}), the state and history of the payment channels are needed in addition to the recovery phrase. As there are no standards for this yet, wallet applications need to have their own format for backing this up, and subsequently restoring. Due to the amount of information, a QR code of the encrypted data, like in the previous example, can be appropriate.
 
 {% include tip/recommendation.html %}
 

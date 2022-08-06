@@ -24,7 +24,7 @@ main_classes: -no-top-padding
 
 # Coin selection
 
-Coin selection is the process of choosing which [UTXOs](https://bitcoin.design/guide/glossary/#unspent-transaction-output-utxo) (or “coins”) to use as inputs when making an on-chain bitcoin payment. For payments on the Lightning network, coin selection is only relevant for the transaction that opens the lightning channel.
+Coin selection is the process of choosing which [UTXOs](https://bitcoin.design/guide/glossary/#unspent-transaction-output-utxo) (or “coins”) to use as inputs when making an on-chain bitcoin payment. For payments on the Lightning Network, coin selection is only relevant for the transaction that opens the lightning channel.
 
 Coin selection can be [**automatic**](#automatic-coin-selection), and handled by the wallet application. Or it can be [**manual**](#manual-coin-selection-aka-coin-control), letting the user control which coins are used.
 
@@ -319,7 +319,7 @@ A user chooses to send a payment to one of their contacts. They enter the amount
 
 ---
 
-Next, let's look at how [liquidity]({{ '/guide/how-it-works/liquidity/' | relative_url }}) works on the lightning network.
+Next, let's look at how [liquidity]({{ '/guide/how-it-works/liquidity/' | relative_url }}) works on the Lightning Network.
 
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/backups"

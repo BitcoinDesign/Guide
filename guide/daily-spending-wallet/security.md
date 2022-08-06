@@ -13,7 +13,7 @@ image_base: /assets/images/guide/daily-spending-wallet/security/
 images_watchtower:
     - file: lightning-network-settings
       alt:
-      caption: A sample settings page for the lightning network.
+      caption: A sample settings page for the Lightning Network.
     - file: watchtower-details
       alt:
       caption: Here, a default watchtower service is chosen.
