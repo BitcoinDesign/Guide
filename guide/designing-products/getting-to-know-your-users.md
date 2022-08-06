@@ -40,7 +40,7 @@ When building bitcoin applications, it is important to understand and develop kn
 This observation could take the form of [user research]({{ 'guide/designing-products/user-research/' | relative_url }}), user interviews and surveys aimed at a range of participants to observe and identify what they do, how they think, and what they want. Let’s consider some things you might want to ask yourself when improving the experience for new users:
 
 
-* [What is their perception of bitcoin?](https://docs.google.com/forms/d/e/1FAIpQLSdzT8cb54NgT7hGUnC_5ow6rDy-A9p_CA-5ptiQxrG8wQWvzQ/viewform)
+* What is their perception of bitcoin?
 * Why do they intend to use bitcoin, investment, savings or spending?
 * Where do they prefer to store most of their value, mobile or desktop wallets?
 * Where do they experience frustration?

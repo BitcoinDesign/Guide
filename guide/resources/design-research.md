@@ -99,7 +99,7 @@ A survey and follow-up interview of 990 bitcoin users to determine bitcoin manag
 
 #### [The State of Lightning Volume 2](https://arcane.no/research/reports/the-state-of-lightning-volume-2)
 
-_Login required to access. 2022 by Arcane research_
+_Login required to access. 2022 by Arcane research._
 
 In this second edition, Arcane Research delivers valuable insights into the growth of bitcoin's Lightning Network. The report helps quantify and visualize what's happening right now with lightning. Not only that, it also shows how it is solving real problems for people around the world.
 
@@ -117,13 +117,13 @@ In early 2022, Block, Inc. partnered with Wakefield Research to survey 9,500 peo
 
 #### [Are Cryptocurrencies Currencies? Bitcoin as Legal Tender in El Salvador](https://www.davidargente.com/_files/ugd/b05023_7825615207654784864b4c4cc4ec6550.pdf)
 
-_2022 by Alvarez and Argente_
+_2022 by Alvarez and Argente._
 
 A representative national survey was conducted to obtain information on bitcoin’s usage and effects. The authors rely on survey data gathered from face-to-face interviews with 1,800 Salvadorean households. This papers goal is to study the potential of a cryptocurrency to become a medium of exchange.
 
 #### [Real Talk: Women x Crypto 2.0 survey](https://blockfi.com/female-crypto-investor-research)
 
-_2022 by BlockFi_
+_2022 by BlockFi._
 
 Female Americans were asked about their current motivations, behaviors and dispositions around crypto investing, financial wellness, and career aspirations. 24% reported owning crypto, with 71% of those owning bitcoin. 70% have only bought and never sold.
 
@@ -135,13 +135,13 @@ The State of Lightning provides a comprehensive overview of usage on the Lightni
 
 #### [Bitcoin UX Research](https://patestevao.com/work/bitcoin-ux-research/)
 
-_2021 by Estevão_
+_2021 by Estevão._
 
 The goal of the research was to provide an in-depth qualitative knowledge of how people use or perceive bitcoin.
 
 #### [A Deep Dive Into Lightning as a Bitcoin Scaling Solution](https://downloads.coindesk.com/research/Lightning+Network+-+CoinDesk+Research+-+2021.09.pdf)
 
-_2021 by Kaloudis, CoinDesk research_
+_2021 by Kaloudis, CoinDesk research._
 
 The research looks at the Lightning Network from a perspective of the scaling solution and pinpoints the basic architecture that powers it and outlines the potential attact vectors.
 
@@ -151,15 +151,15 @@ _2021 by Valentine._
 
 Research on users new to crypto around whether they are confident in their ability to safely hold and keep track of seed phrases. This research aimed to discover whether automatic cloud backups could empower users to confidently secure their own bitcoin wallets.
 
-#### [A study on how Bitcoin is perceived by no-coiners (non-holders of Bitcoin)](https://github.com/MickMorucci/Bitcoin_perception)
+#### [A study on how Bitcoin is perceived by no-coiners (non-holders of Bitcoin)](https://github.com/MickMorucci/Bitcoin_perception/blob/main/Bitcoin%20Perception%20Survey%20-%20Results.pdf)
 
 _2021 by Morucci._
 
-A currently active survey of 65 on the perception and beliefs of bitcoin users and non-users.
+A pilot survey of 62 on the perception and beliefs of bitcoin users and non-users.
 
 #### [Bitcoin is (Still) a Demographic Mega-trend: Data Update](https://medium.com/blockchain-capital-blog/bitcoin-is-still-a-demographic-mega-trend-data-update-c50df59a6cb3)
 
-_2021 by Morucci._
+_2021 by Spencer Bogart._
 
 An online survey of over 2,000 US adults by Blockchain Capital to gauge the progression of the general population through the crypto adoption funnel, including awareness, familiarity, perception, conviction, relative preference rates and propensity to purchase crypto.
 
