@@ -77,7 +77,7 @@ The smoothest user experience is when the wallet and the service can directly co
 
 #### Bridged communication
 
-There is more friction if the user needs to be involved in this communication. However, this extra friction provides more user control and better security. In the visualization below, the service and user wallet cannot directly communicate with each other. Instead, the web application presents instructions as QR codes that the user needs to scan with their (mobile) wallet. The wallet then send instructions to the application server, which updates the web application.
+There is more friction if the user needs to be involved in this communication. However, this extra friction provides more user control and better security. In the visualization below, the service and user wallet cannot directly communicate with each other. Instead, the web application presents instructions as QR codes that the user needs to scan with their (mobile) wallet. The wallet then sends instructions to the application server, which updates the web application.
 
 {% include picture.html
    image = "/assets/images/guide/sign-in-with-bitcoin/bridged-connection.png"
@@ -119,7 +119,7 @@ Ensuring users are signed out (manually or via session time-outs) is important. 
 
 ## Making payments
 
-A payment is typically initiated by your service, as the user wants to take an action. Show the most appropriate option right away based on how the user has previously interacted with their wallet (direct or bridged, see above).
+A payment is typically initiated by your service when the user wants to take an action. Show the most appropriate option right away based on how the user has previously interacted with their wallet (direct or bridged, [see above]({{ '#wallet-service-communication' | relative_url }})).
 
 {% include picture.html
    image = "/assets/images/guide/sign-in-with-bitcoin/payment-request.png"
@@ -135,7 +135,7 @@ An alternative to reducing friction for frequent payments is to let users deposi
 
 ## Connecting multiple wallets
 
-Users may migrate wallets and want to link their existing account to a new wallet. They may also want to connect multiple wallets to the same account. This could be for convenience, like signing in with both a desktop and a mobile wallet. Or it could be for security, like logging in with one wallet, but making payments with another.
+Users may migrate wallets and want to link their existing account to a new wallet. They may also want to connect multiple wallets to the same account. This could be for convenience, like signing in with both a desktop and a mobile wallet. Or it could be for security, like logging in with one wallet, but making payments with another. It may also be necessary on order to accomodate different implementations and lack of [interoperability]({{ '/guide/designing-products/interoperability/' | relative_url }})).
 
 {% include picture.html
    image = "/assets/images/guide/sign-in-with-bitcoin/connected-wallets.png"
