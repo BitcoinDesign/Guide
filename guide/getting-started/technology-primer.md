@@ -7,6 +7,11 @@ parent: Getting started
 permalink: /guide/getting-started/technology-primer/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/getting-started/technology/technology-primer-preview.jpg
+video_base: /assets/images/guide/getting-started/technology/
+videos:
+    - youtubeId: 6c-t4IDy8dg
+      file: learning-bitcoin-and-design-lightning-primer
+      caption: Lightning primer for designers call
 ---
 
 <!--
@@ -308,6 +313,12 @@ These are some of the basic technical concepts that make bitcoin work. Each one 
 
 Now, if you'd like to go all the way to the beginning of bitcoin, the most fundamental read is the [bitcoin whitepaper](https://bitcoin.org/bitcoin.pdf){:target="_blank"}. Published on October 31, 2008, by the mysterious Satoshi Nakamoto, it lays out the fundamental system design in only nine short pages. It is not necessarily an easy read, but still highly recommended reading.
 </div>
+
+### Resources
+
+---
+
+{% include videos.html video_base = page.video_base videos = page.videos %}
 
 ---
 

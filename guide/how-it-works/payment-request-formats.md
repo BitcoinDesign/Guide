@@ -112,6 +112,12 @@ Offers do not need as much information as a standard invoice for a payment to be
 
 Another feature that is a work in progress with offers is blinded paths. These will enable a user to not reveal the public information about their lightning node, improving privacy.
 
+---
+
+{% include video.html youtubeId="fezdm8hFUjY" image="/assets/images/guide/how-it-works/payment-request-formats/learning-bitcoin-and-design-bolt12.jpg" retina="/assets/images/guide/how-it-works/payment-request-formats/learning-bitcoin-and-design-bolt12@2x.jpg" caption="Learning bitcoin & design call on BOLT 12 offers" %}
+
+---
+
 </div>
 
 #### LNURL
