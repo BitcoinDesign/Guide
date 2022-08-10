@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Requesting bitcoin
-description: An introduction to request bitcoin with a daily spending wallet.
+description: An introduction to requesting bitcoin with a daily spending wallet.
 nav_order: 4
 parent: Daily spending wallet
 permalink: /guide/daily-spending-wallet/requesting/
@@ -34,104 +34,383 @@ Illustration source
 -->
 
 # Requesting bitcoin
+{:.no_toc} 
 
-To request bitcoin, the receiver must provide the sender with a payment request. There are many ways to do this and [payment request formats]({{ "/guide/how-it-works/payment-request-formats/" | relative_url }}) that can be used. This page covers generating, presenting, and sharing payment requests. We also cover receiving bitcoin.
+Requesting bitcoin involves creating and sharing a payment request with a sender. A payment request is a piece of information that tells a sender where and how much bitcoin to send someone. This page covers design considerations when requesting bitcoin with a [Daily Spending Wallet]({{ "/guide/daily-spending-wallet/" | relative_url }}).
 
-## Ways to request
+{% include /tip/open.html label="Payment request formats" icon="info" color="blue" %}
 
-When a user requests bitcoin, there are three general ways in which this can be done:
+Payment request formats are different types of payment requests. Many exist and each has unique properties and use cases. This page does not cover individual formats. For that, check out our  [payment request formats]({{ "/guide/how-it-works/payment-request-formats/" | relative_url }}) page.
 
-- Single-use payment requests
-- Reusable payment requests
-- Withdraw requests
+{% include /tip/close.html %}
+
+---
+
+<div class="glossary-toc" markdown="1">
+* Table of contents
+{:toc}
+</div>
+
+---
+
+## Requesting entry point
+
+Creating payment requests should be simple and fast. Having it possible to initiate the creation process from the users home screen is recommended as they can open their app and instantly begin the process. 
+
+Having the users able to enter an amount from the home page will make initiating a request even faster as they can jump straight into a requesting flow.
+
+{% include tip/recommendation.html %}
+
+Avoid showing the users balance on the users home or requesting page. When requesting payments in person this could reveal the users balance to near by on-lookers negatively affecting the users privacy. More on this [here](https://d.elor.me/2021/11/hiding-wallet-balances/)
+
+{% include tip/close.html %}
 
 <div class="image-slide-gallery">
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/single-use-payment-request.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/single-use-payment-request@2x.png"
+   image = "/assets/images/guide/daily-spending-wallet/requesting/HomeBalance.png"
+   retina = "/assets/images/guide/daily-spending-wallet/requesting/HomeBalance@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/HomeBalance@2x.png"
    layout = "shadow"
-   caption = "Single-use payment requests are useful for one-time, or in-person payments."
-   alt-text = "Screen showing single-use invoice."
+   caption = "Do not show the users balance on the same page they request from. This can reveal the users balance to nearby on-lookers when requesting in-person affecting their privacy."
+   alt-text = "Screen showing home screen showing the users balance."
    width = 250
    height = 541
+   modalWidth = 250
+   modalHeight = 541
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/my-profile.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/my-profile@2x.png"
+   image = "/assets/images/guide/daily-spending-wallet/requesting/Home.png"
+   retina = "/assets/images/guide/daily-spending-wallet/requesting/Home@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/Home@2x.png"
    layout = "shadow"
-   caption = "Reusable payment requests, like lightning addresses, are useful for receiving recurring payments."
-   alt-text = "Screen showing reusable Lightning address."
+   caption = "Make initiating a request simple and fast such as from the users home screen. Putting a number pad on the home screen can make the process even faster as users jump straight into a flow."
+   alt-text = "Screen showing the users home page with a number pad that can be used to initiate a request."
    width = 250
    height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/withdraw-request.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/withdraw-request@2x.png"
-   layout = "shadow"
-   caption = "A withdraw request is a unique way a user can receive bitcoin over lightning."
-   alt-text = "Screen showing withdraw request UI."
-   width = 250
-   height = 541
+   modalWidth = 250
+   modalHeight = 541
 %}
 
 </div>
 
-## Single-use payment requests
+## Entering an amount
 
-The most common way bitcoin is requested is in the form of single-use payment requests. Lightning payments use [BOLT11](https://github.com/lightning/bolts/blob/master/11-payment-encoding.md) invoices. On-chain uses [BIP21](https://bips.xyz/21) and [addresses of various types]({{ "/guide/glossary/address/" | relative_url }}). A BOLT11 invoice can be [embedded into a BIP21 URI](https://github.com/sbddesign/bip21-site) to form a single payment request so senders can use what is most convenient for them and requesters do not have to be worried about requesting from on-chain or lightning.
+Once the user is on the page they can initiate a request from, the next thing to do is add an amount to be requested. Users should be able easily toggle between entering amounts in sats, bitcoin, or the users local currency. If the user has an amount entered and they switch units the input should be cleared to prevent users requesting an incorrect amount. More on entering amounts on our [Units & Symbols page]({{ "/guide/designing-products/units-and-symbols/" | relative_url }}).
 
-Single-use payment requests are convenient for one-time or in-person payments. Generating them should be fast and convenient from the users home screen. Wallet balances should not be shown when generating single-use payment requests. This is due to the users funds being visible to nearby third-parties, which negatively impacts their privacy and puts the user at risk of theft.
+It should also be possible for users to enter a zero-amount as there may be scenarios where the sender is deciding the amount to send. Zero-amount requests also limit both parties exposure to price volatility as the bitcoin price in fiat terms could change between requesting and payment being sent.
 
 <div class="image-slide-gallery">
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/home.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/home@2x.png"
+   image = "/assets/images/guide/daily-spending-wallet/requesting/HomeEuro.png"
+   retina = "/assets/images/guide/daily-spending-wallet/requesting/HomeEuro@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/HomeEuro@2x.png"
    layout = "shadow"
-   caption = "Hiding the balance and making it easy to generate a single-use payment request from the home page is recommended."
-   alt-text = "Screen showing home screen number pad entry."
+   caption = "Let users request in their local currency."
+   alt-text = "Screen showing home screen with a fiat euro input selected."
    width = 250
    height = 541
+   modalWidth = 250
+   modalHeight = 541
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/single-use-payment-request.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/single-use-payment-request@2x.png"
+   image = "/assets/images/guide/daily-spending-wallet/requesting/HomeBTC.png"
+   retina = "/assets/images/guide/daily-spending-wallet/requesting/HomeBTC@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/HomeBTC@2x.png"
    layout = "shadow"
-   caption = "A newly generated single-use payment request containing both an invoice and a on-chain address."
-   alt-text = "Screen showing single-use payment request."
+   caption = "Let users request in bitcoin."
+   alt-text = "Screen showing home screen with a bitcoin input selected."
    width = 250
    height = 541
+   modalWidth = 250
+   modalHeight = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/requesting/Home.png"
+   retina = "/assets/images/guide/daily-spending-wallet/requesting/Home@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/Home@2x.png"
+   layout = "shadow"
+   caption = "Requesting with a zero-amount should be possible."
+   alt-text = "Screen showing home screen with a zero-amount inputted."
+   width = 250
+   height = 541
+   modalWidth = 250
+   modalHeight = 541
 %}
 
 </div>
 
-### Amounts
+## Creating the request
 
-When generating single-use payment requests, the receiver may want to add an amount to be paid. Entering an amount from the home screen is recommended.
+Once an amount is entered, the next action a user will take is creating the request. When the user clicks the request button the next screen they should see is the generated payment request.
 
-Zero amount single-use payment requests should also be easily generated from the home screen by tapping request without an amount entered. By allowing the sender to set the amount when they are ready to pay, reduces both parties exposure to price volatility, as the amount paid in bitcoin will be more accurate in fiat terms.
+So users can request both with lightning and on-chain, a [unified payment request]({{ "/guide/how-it-works/payment-request-formats/#unified-payment-requests" | relative_url }}) should be used. These combine a [lightning invoice]({{ "/guide/how-it-works/payment-request-formats/#invoice" | relative_url }}) and a [on-chain address]({{ "/guide/how-it-works/payment-request-formats/#addresses" | relative_url }}) into a single payment request using BIP21. 
 
-Units must be toggleable between bitcoin, satoshi and the users local currency. Ensure the unit being entered is clearly visible, to prevent entering the wrong unit amount. More on the [Units & Symbols page]({{ "/guide/designing-products/units-and-symbols/" | relative_url }}).
+Unified requests remove the friction of having users need to choose between requesting with lightning or on-chain, which can be confusing especially for new users. 
 
-### Invoice expirations
+Unified requests should use swap-addresses for their on-chain address so users can maintain a single balance and not have a separate lightning and on-chain balance. Swap-addresses moves received bitcoin into the users lightning balance in a trust-minimized, non-custodial manner using [submarine swaps](https://thebitcoinmanual.com/articles/btc-submarine-swaps/). We cover how these more in our [lightning services]({{ "/guide/how-it-works/lightning-services/#swaps" | relative_url }}) and receiving page.
 
-Single-use lightning invoices aren't permanent; [they expire over time]({{ "/guide/glossary/#lightning-invoice" | relative_url }}). However, this expiration time can be modified, unlocking unique use cases and improving usability in some situations.
+As unified requests [aren't widely supported yet](https://bitcoinqr.dev/), and users may want to request just from lightning or on-chain, it should be possible to share the invoice or on-chain address individually. 
+
+<div class="image-slide-gallery">
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/requesting/RequestToggle.png"
+   retina = "/assets/images/guide/daily-spending-wallet/requesting/RequestToggle@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/RequestToggle@2x.png"
+   layout = "shadow"
+   caption = "Toggling between a lightning and on-chain request adds friction to the requesting flow. Users shouldn't have to choose."
+   alt-text = "Screen showing a toggle between lightning and on-chain request."
+   width = 250
+   height = 541
+   modalWidth = 250
+   modalHeight = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/requesting/Unified.png"
+   retina = "/assets/images/guide/daily-spending-wallet/requesting/Unified@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/Unified@2x.png"
+   layout = "shadow"
+   caption = "Unified payment requests combine lightning and on-chain requests so users don't have to worry about which to request with."
+   alt-text = "Screen showing a unified payment request in QR format."
+   width = 250
+   height = 541
+   modalWidth = 250
+   modalHeight = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/requesting/Invoice.png"
+   retina = "/assets/images/guide/daily-spending-wallet/requesting/Invoice@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/Invoice@2x.png"
+   layout = "shadow"
+   caption = "Let users share lightning invoices separately as not all senders may be able to read unified requests."
+   alt-text = "Screen showing an invoice that is part of a unified request in QR format."
+   width = 250
+   height = 541
+   modalWidth = 250
+   modalHeight = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/requesting/address.png"
+   retina = "/assets/images/guide/daily-spending-wallet/requesting/address@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/address@2x.png"
+   layout = "shadow"
+   caption = "On-chain addresses should also be able to be shared individually."
+   alt-text = "Screen showing an on-chain address that is part of a unified request in QR format."
+   width = 250
+   height = 541
+   modalWidth = 250
+   modalHeight = 541
+%}
+
+</div>
+
+## Fees and staying online
+
+Any fees the user may incur should be communicated alongside the generated payment request so they will know in advance if they will be charged before receiving a payment. To receive lightning payments users also need to be online. Telling the user to keep their app open when they create a request will prevent payment failures by from being offline.
+
+If the user has no channels open, meaning no [inbound liquidity]({{ "/guide/how-it-works/liquidity/" | relative_url }}), a channel open fee will be incurred. Additional fees for a [lightning service provider]({{ "/guide/how-it-works/lightning-services/#what-is-a-lightning-service-provider" | relative_url }}) providing inbound liquidity may also be incurred.
+
+If the user has a channel open, meaning they have some inbound liquidity, they can only receive up to the amount of inbound they have before incurring more fees. The amount of inbound liquidity a user has left can be communicated to users as their receive limit.
+
+If the user has entered an amount and it's lower than their receive limit then no fee message is required though it should still indicate to users that they need to keep their app open to receive the payment.
+ 
+<div class="image-slide-gallery">
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/requesting/FeeNoChannel@2x.png"
+   retina = "/assets/images/guide/daily-spending-wallet/requesting/FeeNoChannel@2x@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/FeeNoChannel@2x@2x.png"
+   layout = "shadow"
+   caption = "If the user has no channels open, a fee to open a new channel is required."
+   alt-text = "Screen showing a payment request with setup fees."
+   width = 250
+   height = 541
+   modalWidth = 250
+   modalHeight = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/requesting/FeeWithChannel.png"
+   retina = "/assets/images/guide/daily-spending-wallet/requesting/FeeWithChannel@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/FeeWithChannel@2x.png"
+   layout = "shadow"
+   caption = "If the user has a channel open, they will have a receive limit before fees are charged."
+   alt-text = "Screen showing fees that will be charged to the user if going over their receive limit."
+   width = 250
+   height = 541
+   modalWidth = 250
+   modalHeight = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/requesting/NoFee.png"
+   retina = "/assets/images/guide/daily-spending-wallet/requesting/NoFee@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/NoFee@2x.png"
+   layout = "shadow"
+   caption = "If the user enters an amount below their receive limit, no fees need to be communicated."
+   alt-text = "Screen showing no fees being charged for this payment request as its lower than their receive limit."
+   width = 250
+   height = 541
+   modalWidth = 250
+   modalHeight = 541
+%}
+
+</div>
+
+## Metadata
+
+Metadata is additional information that can be added to a payment request. This can include an amount, note, or name for the sender. Or for the requester, labels, tags, or [assigning a contact]({{ "/guide/daily-spending-wallet/contacts/#adding-a-contact-to-an-outgoing-invoice" | relative_url }}).
 
 <div class="center" markdown="1">
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/single-use-payment-request-settings.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/single-use-payment-request-settings@2x.png"
-   layout = "float-left-desktop -background -shadow"
-   caption = "Invoice expiries should be adjusted for the users use case."
-   alt-text = "Screen showing single payment request settings."
+   image = "/assets/images/guide/daily-spending-wallet/requesting/metadata.png"
+   retina = "/assets/images/guide/daily-spending-wallet/requesting/metadata@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/metadata@2x.png"
    width = 250
    height = 541
+   caption = "Let users add metadata to their created payment requests."
+   alt-text = "Screen showing a menu with various metadata options for a payment request."
+   layout = "float-left-desktop -background -shadow"
 %}
+
+Ensure users can [backup]({{ "/guide/daily-spending-wallet/backup-and-recovery/landing-page/" | relative_url }}) this metadata to prevent them losing their transaction history.
+
+## Sharing the request
+
+Once the request is created, the next action is to share it. Below are ways in which bitcoin requests are commonly shared.
+
+### QR code
+
+[Quick response codes (QR)](https://en.wikipedia.org/wiki/QR_code) encode a payment request into a scannable graphic. QR codes should be large enough and have high contrast with your application's background so they can be easily scanned.
+
+Uppercasing payment request data will result in less complex, more easily scannable, QR codes. Another option to make QR codes easier to scan is having users screen brightness turn up when on the screen.
+
+### Plaintext
+
+Plaintext involves copying and sharing a payment request in text form. These should be shared over secure communication channels.
+
+### Contactless
+
+A contactless, or [Near-field communication](https://en.wikipedia.org/wiki/Near-field_communication) (NFC) allows requests to be shared wirelesses over short distances.
+
+### Payment link
+
+Payment links use a BIP21 [URI]({{ "/guide/how-it-works/payment-request-formats/#uniform-resource-identifier-uris-schemes" | relative_url }}) `bitcoin:` which makes these readable by other bitcoin applications. These can be included as part of a button or hypertext.
+
+As mentioned in the [fees and staying online]({{ "/guide/daily-spending-wallet/requesting/#fees-and-staying-online" | relative_url }}) section, it's important users keep their app open so the payment can be received. 
+
+<div class="image-slide-gallery">
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/requesting/Unified.png"
+   retina = "/assets/images/guide/daily-spending-wallet/requesting/Unified@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/Unified@2x.png"
+   layout = "shadow"
+   caption = "QR codes are common ways payment requests are shared."
+   alt-text = "Screen showing a unified payment request in QR format."
+   width = 250
+   height = 541
+   modalWidth = 250
+   modalHeight = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/requesting/Plaintext.png"
+   retina = "/assets/images/guide/daily-spending-wallet/requesting/Plaintext@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/Plaintext@2x.png"
+   layout = "shadow"
+   caption = "Plaintext sharing is great for sharing over the web."
+   alt-text = "Screen showing a payment request being shared in plaintext."
+   width = 250
+   height = 541
+   modalWidth = 250
+   modalHeight = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/requesting/Contactless.png"
+   retina = "/assets/images/guide/daily-spending-wallet/requesting/Contactless@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/Contactless@2x.png"
+   layout = "shadow"
+   caption = "Contactless payments and quick and convenient ways to share a payment request in-person."
+   alt-text = "Screen showing a payment request being shared contactlessly with NFC."
+   width = 250
+   height = 541
+   modalWidth = 250
+   modalHeight = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/requesting/PaymentLink.png"
+   retina = "/assets/images/guide/daily-spending-wallet/requesting/PaymentLink@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/PaymentLink@2x.png"
+   layout = "shadow"
+   caption = "Payment links make it simple for senders to import a payment request into their app."
+   alt-text = "Screen showing a payment link being opened by a wallet."
+   width = 250
+   height = 541
+   modalWidth = 250
+   modalHeight = 541
+%}
+
+</div>
+
+## Payment addresses
+
+Payment addresses, also known as [reusable payment requests]({{ "/guide/how-it-works/payment-request-formats/#invoice-protocols" | relative_url }}), are requests that can receive more than a single payment. These are not widely supported but offer unique use cases, features, and improved usability. 
+
+Due to the unique use cases of payment addresses, its recommended having a separate area within your app to create, manage, and share these.
+
+An example of how a payment address could be used is as quickly shared request from a users profile, say to receive tips on their website. If you are using payment addresses you should let users know that other wallets may not support sending to them and that the user needs to be online to receive payments.
+
+<div class="image-slide-gallery">
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/requesting/PaymentAddress.png"
+   retina = "/assets/images/guide/daily-spending-wallet/requesting/PaymentAddress@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/PaymentAddress@2x.png"
+   layout = "shadow"
+   caption = "An example of a payment address use case is being able to quickly share it from your profile page."
+   alt-text = "Screen showing the users settings with a QR icon in the top left that opens a payment address."
+   width = 250
+   height = 541
+   modalWidth = 250
+   modalHeight = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/requesting/PaymentAddressQR.png"
+   retina = "/assets/images/guide/daily-spending-wallet/requesting/PaymentAddressQR@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/PaymentAddressQR@2x.png"
+   layout = "shadow"
+   caption = "If supporting payment addresses, warn users that other apps may not be able to pay it and that they need to have their app open to receive payments."
+   alt-text = "Screen showing QR code of a payment address."
+   width = 250
+   height = 541
+   modalWidth = 250
+   modalHeight = 541
+%}
+
+</div>
+
+---
+
+## Advanced requesting options
+
+When requesting bitcoin there is some options that can offer unique experiences but are more suited for advanced users who know what they are doing.
+
+### Invoice expirations
+
+Lightning invoices aren't permanent; [they expire over time]({{ "/guide/glossary/#lightning-invoice" | relative_url }}). However, this expiration time can be modified, unlocking unique use cases and improving usability in some situations.
 
 When denominating invoices in fiat, custom expiries should be used to prevent exposure to price volatility.
 
@@ -143,330 +422,33 @@ While it is good to allow users to define their own custom expiries, remember th
 
 For some background on situations the user might encounter with different invoice expiries, see this [blog post](https://d.elor.me/2022/01/lightning-invoice-expiration-ux-considerations/) from designer Stephen DeLorme.
 
-Using [BOLT12](https://bolt12.org/) offers, invoice expirations will no longer be a point of user friction. Offers are not yet an accepted standard, or widely supported by wallets, so interoperability will be an issue if adopting it.
-
-</div>
-
-### Address types
-
-For on-chain, there are several address types that can be used for single-use payment requests.
-
-<div class="center" markdown="1">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/single-use-payment-request-settings-address.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/single-use-payment-request-settings-address@2x.png"
-   layout = "float-right-desktop -background -shadow"
-   caption = "Supporting every address type benefits users and makes your wallet more interoperable."
-   alt-text = "Screen showing different address types."
-   width = 250
-   height = 541
-%}
-
-Each address type has unique benefits, such as SegWit saving on network fees and Taproot offering Lightning users increased privacy.
-
-You should encourage users to use the latest, more feature rich address types. Having an option in the payment request settings to set which address type to be used by default is recommended.
-
-Older address types should always be supported for backwards compatibility with older wallets.
-
-More on the [address types]({{ "/guide/glossary/address/" | relative_url }}) and [interoperability]({{ "/guide/designing-products/interoperability/" | relative_url }}) page.
-
-</div>
-
-### Metadata
-
-A payment request with only standard data, like an amount and date, communicates little to both parties about purpose and context of the payment.
-
-<div class="center" markdown="1">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/single-use-payment-request-settings.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/single-use-payment-request-settings@2x.png"
-   layout = "float-left-desktop -background -shadow"
-   caption = "Let users attach payment metadata to single-use payment requests."
-   alt-text = "Screen showing single payment request settings."
-   width = 250
-   height = 541
-%}
-
-Users should have the option to attach a note for record-keeping and for the sender to read, tags, labels and any other metadata that may be relevant to give more context to the payment.
-
-This metadata should also be able to be [backed up]({{ "/guide/onboarding/backing-up-a-wallet/" | relative_url }}) in case the user loses access to their wallet and has to restore it.
-
-#### Add a requester name with NameDesc
-
-You can convey the name of the user requesting the payment. Suppose the user is able to define their name in the settings of their wallet app. The app could then append the user's name to the beginning of the description field in a BOLT11 invoice. For example, if Alice makes an invoice with a memo that says "For design work", then the description in the BOLT11 invoice would become:
-
-```
-Alice:  For design work
-```
-
-This description is human-readable, and wallets that support [bLIP-0011 NameDesc](https://github.com/lightning/blips/blob/master/blip-0011.md) will parse this as a name and a description.
-
-</div>
-
-## Reusable payment requests
-
-Reusable payment requests offer an improved user experience, more flexibility, and enable unique use cases, as they don't need to be re-generated every time the user wants to receive bitcoin.
-
-Currently there are limited reusable payment request options available. However, several are being worked on or are in the early stages of adoption. For Lightning, there are [BOLT12 offers](https://bolt12.org/) and AMP invoices. For on-chain, [reusable payment codes](https://bips.xyz/47) can be used to privately receive bitcoin in a reusable way on-chain. Learn more about these on our [payment request formats]({{ "/guide/how-it-works/payment-request-formats/" | relative_url }}) page.
-
-### Lightning address
-
-[Lightning addresses](https://lightningaddress.com/), which look like regular emails (jane@domain.com), are reusable ways users can receive Lightning payments. These are not native to the Lightning network itself, but rather offered by a trusted server often ran by the wallet provider.
-
-Generating a Lightning address should be simple for users and done within a profile page or during the users [first use]({{ "/guide/daily-spending-wallet/first-use/" | relative_url }}). At a minimum, your wallet should support sending to Lightning addresses, so it's interoperable with other wallets.
-
 <div class="image-slide-gallery">
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/my-profile-empty.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/my-profile-empty@2x.png"
+   image = "/assets/images/guide/daily-spending-wallet/requesting/Metadata.png"
+   retina = "/assets/images/guide/daily-spending-wallet/requesting/Metadata@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/Metadata@2x.png"
    layout = "shadow"
-   caption = "A users profile is a great place to generate a new Lightning address."
-   alt-text = "Screen showing users profile."
+   caption = "Lightning invoices expire after a set amount of time. This can be adjusted for different use cases."
+   alt-text = "Screen showing metadata options with expiration option at the bottom."
    width = 250
    height = 541
+   modalWidth = 250
+   modalHeight = 541
 %}
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/generate-lightning-address.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/generate-lightning-address@2x.png"
+   image = "/assets/images/guide/daily-spending-wallet/requesting/InvoiceExpiration.png"
+   retina = "/assets/images/guide/daily-spending-wallet/requesting/InvoiceExpiration@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/InvoiceExpiration@2x.png"
    layout = "shadow"
-   caption = "Make generating a Lightning address simple."
-   alt-text = "Screen showing generation of a Lightning address."
+   caption = "Let advanced users adjust their own expiration times in an advanced settings section of your app."
+   alt-text = "Screen showing settings where users can change their invoice expiration times."
    width = 250
    height = 541
+   modalWidth = 250
+   modalHeight = 541
 %}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/my-profile.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/my-profile@2x.png"
-   layout = "shadow"
-   caption = "A newly generated reusable Lightning address used to receive regular payments to."
-   alt-text = "Screen showing newly generated Lightning address."
-   width = 250
-   height = 541
-%}
-
-</div>
-
-### Node ID
-
-A users Lightning node ID, which every non-custodial Lightning wallet has, can be a reusable way to receive Lightning payments using [Keysends](https://bitcoinops.org/en/topics/spontaneous-payments/).
-
-<div class="center" markdown="1">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/node-id.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/node-id@2x.png"
-   layout = "float-left-desktop -background -shadow"
-   caption = "Node ID's are a convenient, reusable way to receive Keysend payments."
-   alt-text = "Screen showing single payment request settings."
-   width = 250
-   height = 541
-%}
-
-If a sender supports Keysends they can make recurring payments with attached messages to a users node ID without an invoice.
-
-Having the option to quickly generate a personalised QR code of your node ID from the home screen is recommended.
-
-This form of reusable payment request is not widely supported but offer a unique, way for users to make payments, tip users, and send messages over the Lightning network.
-
-</div>
-
-## Withdrawal request
-
-Another way a user can request bitcoin is from a withdrawal request. A withdrawal request is a payment request that lets the receiver withdraw bitcoin from another wallet. Unlike previously mentioned payment requests, withdrawal requests are generated by the sender. These can be useful for merchants providing refunds to customers.
-
-We explore generating a withdrawal request in our [sending bitcoin]({{ "/guide/payments/send/" | relative_url }}) section. Wallets that do not support withdrawal requests should provide users with a human readable error if an attempt is made to use one. Our [payments format page]({{ "/guide/how-it-works/payment-request-formats/" | relative_url }}) goes into more detail on withdrawal requests.
-
-<div class="image-slide-gallery">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/withdrawal-qr.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/withdrawal-qr@2x.png"
-   layout = "shadow"
-   caption = "A withdrawal request is another way a user can receive bitcoin."
-   alt-text = "Screen showing withdraw request QR code."
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/withdraw-request.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/withdraw-request@2x.png"
-   layout = "shadow"
-   caption = "With withdrawal requests the user is “pulling” bitcoin from another users wallet."
-   alt-text = "Screen showing withdraw request UI."
-   width = 250
-   height = 541
-%}
-
-</div>
-
-The more payment request formats a wallet supports generating and receiving to, the more interoperable it will be. Some wallets may not support sending to a particular format so having several options makes it easier to request bitcoin.
-
-## Sharing payment requests
-
-Once a user has generated or stored reusable payment request, the next action to take is sharing it with the sender. There are several ways in which this can be done. Supporting all methods of sharing across payment formats makes it easier for users to request bitcoin.
-
-#### Contact card
-
-A users contact card is a great way to store and share reusable payment requests. Learn more about contacts on our contacts page.
-
-#### Plaintext
-
-Plaintext involves simply copying and sharing a payment request with a sender.
-
-#### Payment link
-
-Payment links are hypertext that contain a bitcoin payment request. They often contain a [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier), `bitcoin:` for an on-chain and `lightning:` for Lightning, so they can be identified by the device clicking them. Other data is also usually included in these payment links, alongside the request such as a note or label.
-
-#### QR code
-
-QR can be used to encode and share any kind of payment request. Ensure QR codes generated in your wallet are large enough, and have high contrast with the application's background, to be easily scanned.
-
-{% include /tip/open.html label="Uppercase QR code data" icon="info" color="blue" %}
-
-Using uppercased payment requests in QR codes results in less complex, more easily scannable, QR codes.
-
-{% include /tip/close.html %}
-
-#### Contactless
-
-Payment requests should be shareable via contactless share, also known as near field communication (NFC), with nearby physical devices.
-
-<div class="image-slide-gallery">
-
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/reusable-share.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/reusable-share@2x.png"
-   layout = "shadow"
-   caption = "Plantext is a convenient way to share payment requests."
-   alt-text = "Screen showing plaintext share."
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/single-use-payment-request.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/single-use-payment-request@2x.png"
-   layout = "shadow"
-   caption = "A QR code can encode any type of payment request."
-   alt-text = "Screen showing QR code share."
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/payment-link.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/payment-link@2x.png"
-   layout = "shadow"
-   caption = "Payment links are encoded so they open directly in local bitcoin applications."
-   alt-text = "Screen showing payment link UI."
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/contactless.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/contactless@2x.png"
-   layout = "shadow"
-   caption = "Sharing a payment request contactlessly is a quick way to request a payment in-person."
-   alt-text = "Screen showing contactless UI."
-   width = 250
-   height = 541
-%}
-
-</div>
-
-## Receiving a payment
-
-Once a request has been shared, the sender then needs to send bitcoin to the request. We cover the design considerations and user flows for sending bitcoin in our [sending bitcoin]({{ "/guide/payments/send/" | relative_url }}) page.
-
-### Lightning
-
-Receiving a payment is something that involves a lot of background complexity. How a wallet application manages this, has a major impact on the end user's experience.
-
-To receive a payment, the receiver needs a payment channel with inbound liquidity and also has to be online. Some wallets offer services that allow channels to be opened on-demand if a user has no inbound liquidity when receiving an incoming payment. They may also hold payments for a user until they are online to forward it to them. These services require a wallet to be solely connected to the peer that offers these services. We cover what services are commonly offered and how they work on our Lightning services page.
-
-Without Lightning services, a user will need to obtain some inbound liquidity before receiving a payment. This can be done by opening a channel with a peer that offers inbound liquidity and/or sending payments moving outbound to inbound capacity. It is recommended to let users know if they do not have any inbound liquidity before they share a payment request to prevent a payment failure.
-
-<div class="image-slide-gallery">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/funding/opening-channel.png"
-   retina = "/assets/images/guide/daily-spending-wallet/funding/opening-channel@2x.png"
-   layout = "shadow"
-   caption = "Using Lightning services, a channel can be opened on-demand if there is no inbound liquidity when a payment is received."
-   alt-text = "Screen showing channel being opened."
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/funding/channel-opened.png"
-   retina = "/assets/images/guide/daily-spending-wallet/funding/channel-opened@2x.png"
-   layout = "shadow"
-   caption = "Indicate to users that, if they have no inbound liquidity, they should get some before requesting a payment."
-   alt-text = "Screen showing that inbound liquidity is required."
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/funding/no-inbound.png"
-   retina = "/assets/images/guide/daily-spending-wallet/funding/no-inbound@2x.png"
-   layout = "shadow"
-   caption = "Guide users as to how to obtain inbound liquidity so they can receive payments."
-   alt-text = "Screen showing options to receive inbound liquidity."
-   width = 250
-   height = 541
-%}
-
-</div>
-
-### On-chain
-
-Receiving on-chain involves the sender broadcasting a transaction to the network for it to be confirmed.
-
-<div class="center" markdown="1">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/confirming.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/confirming@2x.png"
-   layout = "float-left-desktop -background -shadow"
-   caption = "For on-chain, keep users updated on incoming pending transactions."
-   alt-text = "Screen showing on-chain transaction being confirmed."
-   width = 250
-   height = 541
-%}
-
-As on-chain transaction confirmation times vary based on network congestion and fees being paid, it is uncertain exactly when a on-chain payment will be considered complete. Keep users informed of the state of their incoming transactions.
-
-</div>
-
-## Success
-
-Wallet applications should clearly indicate once a payment has been received by the user.
-
-<div class="center" markdown="1">
-
-{% include image.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/received.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/received@2x.png"
-   width = 250
-   height = 541
-   caption = "Notify the user once their incoming payment is complete."
-   alt-text = "Screen showing a payment has been received."
-   layout = "float-right-desktop -background -shadow"
-%}
-
-Users should have the option to share a confirmation that the payment has been received with the sender. For on-chain, the confirmed transaction on a bitcoin block explorer can be shared. For Lightning, a preimage can be shared to show proof of payment.
-
-For in-person payments, showing the confirmation screen to the sender will likely suffice.
 
 </div>
 
