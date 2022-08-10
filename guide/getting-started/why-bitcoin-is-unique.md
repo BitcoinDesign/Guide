@@ -7,6 +7,14 @@ parent: Getting started
 permalink: /guide/getting-started/why-bitcoin-is-unique/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/getting-started/why-bitcoin-is-unique/why-bitcoin-is-unique-preview.jpg
+video_base: /assets/images/guide/getting-started/why-bitcoin-is-unique/
+videos:
+    - youtubeId: oubZGyDY4Dc
+      file: bitcoin-is-for-everyone-hello-bitcoin
+      caption: Bitcoin is for everyone via Hello Bitcoin
+    - youtubeId: l1si5ZWLgy0
+      file: what-is-bitcoin-and-why-does-it-matter
+      caption: What is bitcoin and why does it matter?
 ---
 
 <!--
@@ -128,6 +136,12 @@ However, because bitcoin is unbiased, open, and public, it can serve communities
 ## It is open-source
 
 It's only appropriate that the bitcoin ecosystem is being developed by teams and individuals worldwide. Not many financial institutions allow anyone to participate and contribute to them. So it’s fitting that bitcoin almost exclusively relies on [collaboration]({{ '/guide/getting-started/open-design/' | relative_url }}) between volunteers from around the world to keep it running and evolving.
+
+## Resources
+
+---
+
+{% include videos.html video_base = page.video_base videos = page.videos %}
 
 ---
 
