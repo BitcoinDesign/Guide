@@ -8,6 +8,14 @@ has_children: true
 permalink: /guide/designing-products/user-research/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/designing-products/user-research/user-research-preview.jpg
+video_base: /assets/images/guide/designing-products/user-research/
+videos:
+    - youtubeId: 6c-t4IDy8dg
+      file: ux-research-call-1-user-personas
+      caption: UX research call on user personas
+    - youtubeId: HFhpH30A6xA
+      file: ux-research-call-2-user-stories
+      caption: UX research call on user stories
 ---
 
 <!--
@@ -191,6 +199,12 @@ Links to:
 -->
 
 ## Resources
+
+---
+
+{% include videos.html video_base = page.video_base videos = page.videos %}
+
+---
 
 Join the discussion in the [#research channel](https://bitcoindesign.slack.com/archives/C015DQEPCHJ) on the Bitcoin Design Slack.
 
