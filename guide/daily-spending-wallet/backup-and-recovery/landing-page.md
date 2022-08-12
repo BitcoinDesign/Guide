@@ -38,9 +38,31 @@ Illustration sources
 
 # Backup & recovery
 
-When a user generates and [funds]({{ '/guide/daily-spending-wallet/funding/' | relative_url }}) a new daily spending wallet, they will then need to create a backup of their wallet in order to ensure their bitcoin are not lost.
+It's important to help the user backup their wallet. If their phone is lost or stolen, they will need a backup to restore access to their bitcoin.
 
-Two main types of information need to be backed up: the user's wallet recovery data and their Lightning channel state. While the wallet recovery data may be used to restore the wallet using another wallet application, the channel state is typically only restorable within the same application.
+With [self-custodial]({{'/guide/getting-started/principles/#self-custody' | relative_url}}) bitcoin, users who lose both their wallet access and their backup permanently lose their bitcoin. Arguably, this creates one of the most challenging design problems within the space.
+
+> New-to-crypto users often expect a recovery mechanism that allows them to “regain access to their funds in the case that they lose their seed phrase.”
+>
+> <cite>As researched by <a href="https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445679">Voskobojnikov et al</a></cite>
+
+Recent [studies](https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445679) show users are often confused or unaware of where their private keys are being stored, ultimately causing inadequate risk assessment and poor storage behavior. The daily spending wallet described in this reference design attempts to prevent the risk of user negligence with transparent messaging around how the backup works.
+
+## When to talk about backup
+
+Because backup is so important, this wallet prompts the user to make a backup during the [user's first use]({{'/guide/daily-spending-wallet/first-use/' | relative_url}}). However, they are given the option to opt-out at this point. Many users may skip the backup during their first use. This is fine, as they may simply want to try out the wallet and see if it has the features they want before fully committing to using it.
+
+However, once they have [received funds for the first time]({{ '/guide/daily-spending-wallet/funding/' | relative_url }}), they certainly have an incentive to perform a backup at that point. This wallet reminds the user to make their backup once they have received funds.
+
+## The unique needs of a lightning wallet
+
+Unlike on-chain wallets, it is not easy to restore lightning wallets using other bitcoin apps. This wallet is running its own lightning node. It will have at least one payment channel, perhaps more, connected to a [Lightning service provider]({{'/guide/how-it-works/lightning-services/#what-is-a-lightning-service-provider' | relative_url}}) (LSP). The user's bitcoin are locked in these channels.
+
+Recovering funds will require restoring the node with proper channel state, or asking the LSP to force close the channels. For predictable results, this is best accomplished within the same app.
+
+A wallet such as this could publish a "recovery tool" that would allow the user to recover their funds without the app, in the event that something bad happens to the app provider or LSP. This would be a fantastic way of upholding the design principles of interoperability, security, and transparency. However, the following sections will focus on user flows within this wallet app.
+
+## Anatomy of this wallet's backup
 
 {% include picture.html
    image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/wallet-backup.png"
@@ -52,32 +74,27 @@ Two main types of information need to be backed up: the user's wallet recovery d
    height = 453
 %}
 
-- The _[Recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }})_ is the fundamental information (consisting of 12 or 24 words) used to construct a wallet
-- The _Passphrase_ is an optional password for additional security
-- The _[Derivation path]({{ '/guide/glossary/#derivation-path' | relative_url }})_ includes information on how to construct the wallet
-- A _Fingerprint_ allows for verification that the wallet was reconstructed correctly after import
-- _Static channel backups_ contain all basic information about active Lightning channels
-- A _Channels database_ contains data on payments made in active Lightning channels
+### Recovery Phrase
 
-Users who lose both their wallet access and their backup permanently lose their bitcoin. Arguably, this creates one of the most challenging design problems within the space.
+The _[recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }})_ is the fundamental information (consisting of 12 or 24 words) used to construct a wallet. This can be encrypted and automatically backed up to the cloud, or manually backed up on paper by the user.
 
-Backups could be handled automatically by the software, manually by the user, or a mix of these two methods. Regardless of the type of scheme you decide to go with, it’s crucial to be explicit about how your product handles backups and private key management.
+### Channel State
 
-{% include tip/recommendation.html %}
+This contains data on payments made in active Lightning channels. This is important to maintain. While it may be possible to recover without this data, the user has to trust that the LSP is acting in their best interest. This data must be backed up automatically to the cloud.
 
-We recommend that the optimal phase to hint the user to perform the backup should be after the wallet has received funds for the first time. This way, we avoid overwhelming the user with an unnecessary task, as it makes more sense to backup a wallet with funds on it.
+### User metadata
 
-{% include tip/close.html %}
+This includes things like contacts, activity, and other helpful metadata for the user. While having access to this data isn't a strict requirement for protecting the funds, it's good to consider how you might retain this data. Imagine if the user recovered their wallet to find the names and memos associated with transactions to be gone! The wallet activity would certainly be less useful to them. Like channel state, this should be automatically backed up to a cloud provider.
 
-Recent [studies](https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445679) show users are often confused or unaware of where their private keys are being stored, ultimately causing inadequate risk assessment and poor storage behavior. This risk of user negligence may be avoided with transparent messaging around the scheme your wallet is using.
+### Other data is omitted
 
-> New-to-crypto users often expect a recovery mechanism that allows them to “regain access to their funds in the case that they lose their seed phrase.”
->
-> <cite>As researched by <a href="https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445679">Voskobojnikov et al</a></cite>
+There are other pieces of data common among bitcoin wallet backups which this wallet specifically omits. For example, since the user must restore their funds within the same app, the derivation path will always be the same. Asking the user to write down their derivation path is a redundant step in this context. Also, a dedicated lightning node operator may want to have a "Static Channel Backup". But since the user's wallet is getting its liquidity from an LSP, there is no need for that in this scenario. The LSP will already have this information on their end.
 
-Cloud backups may be preferable in many situations. They speed up the onboarding process, are easier for newer users, and protect the user from mishandling their recovery phrase and potentially losing funds. They can also be automated to help ensure an up-to-date backup of channel state if the user loses their wallet. This type of gateway gives a beginner security without overwhelming them with unfamiliar onboarding actions.
+## How this wallet's backup works
 
-However, there may be times when it is necessary to use a manual backup alternative, as it can be low tech and easily accessible.
+This wallet prioritizes cloud backup. It's quicker for the user and it also safeguards them from accidental loss of their backup, which could arguably be a higher risk than actual theft. That's a design decision for this daily spending wallet and other apps may choose different threat models.
+
+However, some users may not feel comfortable with cloud storage. Perhaps they have started using the wallet so much that they now have a lot of funds on the wallet, or perhaps they have been using bitcoin for longer and feel more comfortable with a manual backup on paper. Regardless of the reason, this wallet accommodates this by allowing the user to create a manual backup of their private key instead of or in addition to the auto cloud backup.
 
 ---
 
