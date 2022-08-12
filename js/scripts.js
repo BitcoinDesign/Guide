@@ -266,7 +266,7 @@ function handleUnitsAndSymbolsFormatterInput() {
 
   var formats = [
     ['Germany', 'de-DE', 'EUR'],
-    ['Poland', 'pl', 'PLN'],
+    ['Polen', 'pl', 'EUR'],
     ['Liechtenstein', 'el-LI', 'CHF'],
     ['Switzerland', 'de-CH', 'CHF'],
     ['United States', 'en-US', 'USD'],
