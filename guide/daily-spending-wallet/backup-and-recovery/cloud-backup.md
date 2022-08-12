@@ -52,6 +52,7 @@ Below is what this wallet’s automatic cloud backup user interface looks like.
 {% include picture.html
    image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-prompt.png"
    retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-prompt@2x.png"
+   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-prompt@2x.png"
    layout = "shadow"
    caption = "Prompt the user to back up when they have funds in the wallet"
    alt-text = "Screen prompting the user to back up after they have received a payment"
@@ -62,6 +63,7 @@ Below is what this wallet’s automatic cloud backup user interface looks like.
 {% include picture.html
    image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-intro.png"
    retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-intro@2x.png"
+   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-intro@2x.png"
    layout = "shadow"
    caption = "Describe to the user know what is about to happen and how it works."
    alt-text = "Screen explaining automatic cloud backups"
@@ -72,6 +74,7 @@ Below is what this wallet’s automatic cloud backup user interface looks like.
 {% include picture.html
    image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-PIN.png"
    retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-PIN@2x.png"
+   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-PIN@2x.png"
    layout = "shadow"
    caption = "Allows the user to set a PIN used for authentication."
    alt-text = "The user can set a PIN which will be used to authenticate and access the wallet"
@@ -82,6 +85,7 @@ Below is what this wallet’s automatic cloud backup user interface looks like.
 {% include picture.html
    image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-service.png"
    retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-service@2x.png"
+   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-service@2x.png"
    layout = "shadow"
    caption = "Give the user different cloud provider options, others such as Dropbox might also be included."
    alt-text = "Screen showing saving a password to encrypt the recovery phrase"
@@ -92,6 +96,7 @@ Below is what this wallet’s automatic cloud backup user interface looks like.
 {% include picture.html
    image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-provider.png"
    retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-provider@2x.png"
+   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-provider@2x.png"
    layout = "shadow"
    caption = "This UI will be very different depending on the cloud provider and what permissions are required."
    alt-text = "Screen of placeholder where cloud provider UI would be"
@@ -102,6 +107,7 @@ Below is what this wallet’s automatic cloud backup user interface looks like.
 {% include picture.html
    image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-confirmation.png"
    retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-confirmation@2x.png"
+   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-confirmation@2x.png"
    layout = "shadow"
    caption = "Once the upload is complete it's a good idea to show a success screen and give some reassurances."
    alt-text = "Screen showing completing a cloud backup"
