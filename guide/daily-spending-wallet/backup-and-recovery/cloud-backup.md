@@ -87,8 +87,8 @@ Below is what this wallet’s automatic cloud backup user interface looks like.
    retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-service@2x.png"
    modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-service@2x.png"
    layout = "shadow"
-   caption = "Give the user different cloud provider options, others such as Dropbox might also be included."
-   alt-text = "Screen showing saving a password to encrypt the recovery phrase"
+   caption = "Allow the user to select their cloud provider for backup."
+   alt-text = "Screen showing different options for cloud providers"
    width = 250
    height = 541
 %}
