@@ -41,7 +41,7 @@ Illustration sources
 
 The user’s wallet recovery data and channel states are backed up on their respective cloud storage provider. The [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) only needs to be backed up once. However, channel states need to be backed up frequently because they change every time this wallet sends or receives a payment; therefore, the channel state is backed up in the cloud automatically every time it is changed.
 
-If the user’s device is lost, stolen, or broken, they can use the backup from their cloud storage account (such as Apple iCloud or Google Drive) to regain access to their funds. To learn more about the technical details, hop over to the [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) section on this topic.
+If the user’s device is lost, stolen, or broken, they can use the backup from their cloud storage account to regain access to their funds. uThis could include common ones like Apple iCloud and Google Drive, open source ones like NextCloud, or even a [Lightning Wallet Server]({{'/guide/how-it-works/lightning-services/#backups' | relative_url}}).  To learn more about the technical details, hop over to the [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) section on this topic.
 
 This method provides users with the feeling that they can rely on their cloud provider to regain access to their funds rather than putting the responsibility entirely on themselves. It also significantly reduces friction during onboarding.
 

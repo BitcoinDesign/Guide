@@ -38,7 +38,7 @@ Illustration sources
 
 # Backup & recovery
 
-It's important to help the user backup their wallet. If their phone is lost or stolen, they will need a backup to restore access to their bitcoin.
+It's important to help the user backup their wallet. If their phone is lost or stolen, they will need a backup of their wallet to restore access to their bitcoin.
 
 With [self-custodial]({{'/guide/getting-started/principles/#self-custody' | relative_url}}) bitcoin, users who lose both their wallet access and their backup permanently lose their bitcoin. Arguably, this creates one of the most challenging design problems within the space.
 
@@ -80,7 +80,7 @@ The _[recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }})_
 
 ### Channel State
 
-This contains data on payments made in active Lightning channels. This is important to maintain. While it may be possible to recover without this data, the user has to trust that the LSP is acting in their best interest. This data must be backed up automatically to the cloud.
+This contains data on payments made in active Lightning channels. Think of this as sort of like the most recent snapshot of all the activity in the user's Lightning channels. This is important to maintain. While it may be possible to recover without this data, the user has to trust that the LSP is acting in their best interest. This data must be backed up automatically to the cloud every time a payment is sent or received.
 
 ### User metadata
 
@@ -92,7 +92,7 @@ There are other pieces of data common among bitcoin wallet backups which this wa
 
 ## How this wallet's backup works
 
-This wallet prioritizes cloud backup. It's quicker for the user and it also safeguards them from accidental loss of their backup, which could arguably be a higher risk than actual theft. That's a design decision for this daily spending wallet and other apps may choose different threat models.
+This wallet prioritizes cloud backup. It's quicker for the user and it also safeguards them from accidental loss of their backup, which could arguably be a higher risk than actual theft. That's a design decision for this daily spending wallet, which is designed for smaller amounts of money. Other apps may choose different threat models.
 
 However, some users may not feel comfortable with cloud storage. Perhaps they have started using the wallet so much that they now have a lot of funds on the wallet, or perhaps they have been using bitcoin for longer and feel more comfortable with a manual backup on paper. Regardless of the reason, this wallet accommodates this by allowing the user to create a manual backup of their private key instead of or in addition to the auto cloud backup.
 
