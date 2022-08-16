@@ -208,6 +208,8 @@ This wallet also offers the user a printable template they can use to write down
 
 Some non-sensitive data (such as the name of your wallet or the derivation path) could be included pre-filled in the template. An output script descriptor could be included as a QR code to ensure the wallet software knows how to restore the wallet properly. However, the user should always be required to write in sensitive data such as the recovery phrase by hand.
 
+[Printable Template Figma File](https://www.figma.com/community/file/1110806582648546839){: .button }
+
 <div class="image-slide-gallery">
 
 {% include picture.html
