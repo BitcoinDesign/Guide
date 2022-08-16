@@ -72,7 +72,7 @@ Avoid showing the users balance on the users home or requesting page. When reque
    retina = "/assets/images/guide/daily-spending-wallet/requesting/HomeBalance@2x.png"
    modalImage = "/assets/images/guide/daily-spending-wallet/requesting/HomeBalance@2x.png"
    layout = "shadow"
-   caption = "Do not show the users balance on the same page they request from. This can reveal the users balance to nearby on-lookers when requesting in-person affecting their privacy."
+   caption = "Showing wallet balance on the same users request from affects their privacy by revealing it to nearby on-lookers"
    alt-text = "Screen showing home screen showing the users balance."
    width = 250
    height = 541
