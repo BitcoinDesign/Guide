@@ -84,7 +84,7 @@ This contains data on payments made in active Lightning channels. Think of this 
 
 ### User metadata
 
-This includes things like contacts, activity, and other helpful metadata for the user. While having access to this data isn't a strict requirement for protecting the funds, it's good to consider how you might retain this data. Imagine if the user recovered their wallet to find the names and memos associated with transactions to be gone! The wallet activity would certainly be less useful to them. Like channel state, this should be automatically backed up to a cloud provider.
+This includes things like [contacts]({{'/guide/daily-spending-wallet/contacts/' | relative_url}}), [activity]({{'/guide/daily-spending-wallet/activity/' | relative_url}}), and other helpful metadata for the user. While having access to this data isn't a strict requirement for protecting the funds, it's good to consider how you might retain this data. Imagine if the user recovered their wallet to find the names and memos associated with transactions to be gone! The wallet activity would certainly be less useful to them. Like channel state, this should be automatically backed up to a cloud provider.
 
 ### Other data is omitted
 
