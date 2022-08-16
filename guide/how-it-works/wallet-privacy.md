@@ -10,12 +10,11 @@ image: /assets/images/guide/how-it-works/wallet-privacy/wallet-privacy-preview.j
 ---
 
 {% include picture.html
-    image = "/assets/images/guide/daily-spending-wallet/privacy/privacy-header.jpg"
-    retina = "/assets/images/guide/daily-spending-wallet/privacy/privacy-header@2x.jpg"
-    mobile = "/assets/images/guide/daily-spending-wallet/privacy/privacy-header-mobile.jpg"
-    mobileRetina = "/assets/images/guide/daily-spending-wallet/privacy/privacy-header-mobile@2x.jpg"
+    image = "/assets/images/guide/how-it-works/wallet-privacy/wallet-privacy.jpg"
+    retina = "/assets/images/guide/how-it-works/wallet-privacy/wallet-privacy@2x.jpg"
+    mobile = "/assets/images/guide/how-it-works/wallet-privacy/wallet-privacy-mobile.jpg"
+    mobileRetina = "/assets/images/how-it-works/wallet-privacy/wallet-privacy-mobile@2x.jpg"
     alt-text = "Illustration of an eye, with a cross on top of an ink blot background"
-    caption = 'Illustration via <a href="https://www.freepik.com/free-vector/hidden-person-concept-illustration_24237636.htm">storyset</a>.'
     width = 1600
     height = 600
     layout = "full-width"
@@ -44,7 +43,7 @@ This page should inform about what information is made public when sending or re
 
 ---
 
-Privacy is about the ability to control what information is available to others, and what they can do with it. It is a highly complex topic, so on this page we will just look at some of the real-world and digital privacy challenges unique to the scope of this [reference design]({{ "/guide/daily-spending-wallet/" | relative_url }}). We will keep a focus on what product builders and users can do to improve their payment privacy.
+Privacy is about the ability to control what information is available to others, and what they can do with it. On this page, we will provide a soft introduction to the topic, with a focus on what product builders and users can do to improve their payment privacy.
 
 #### Design with privacy in mind
 
@@ -60,21 +59,14 @@ There is no perfect solution to guarantee 100% privacy that lasts forever becaus
 
 ## Real-world privacy
 
-Imagine this scenario. The user is in a public place, and they need to make a payment using their bitcoin wallet. They open the wallet on their phone, but they don’t feel comfortable having their address and balance information clearly visible to strangers who may be looking over their shoulder, persons lurking, or video surveillance. Hence by giving users the ability to hide sensitive information in their wallet, but only when desired, they gain an added sense of physical privacy and security when using the app in public.
+Exposing wallet information to others around you can be a problem in terms of security and privacy, as well as personal comfort. Sensitive information includes:
 
-#### What information is considered sensitive?
-
-Sensitive information in wallet applications include the wallet balance, addresses, private keys and previous transactions information.
 - Wallet Balance - shows how much is owned
 - Addresses - can be used to track on-chain transaction history
 - Invoices - can be used to track lightning payment history
 - Private keys - can be used to access and transfer bitcoins
 
-It's more common for wallets to protect private keys, but not much is done for other sensitive information like the balance, addresses, and previous transactions. A few wallets like [Bitcoin Core](https://bitcoin.org/en/bitcoin-core/), [Wasabi](https://wasabiwallet.io/), [Muun](https://muun.com/), and others have made it work, though. Below are patterns and considerations for hiding and revealing sensitive information.
-
-#### Use multiple wallets or applications
-
-A simple way to avoid data points from being connected is for users to set up and use multiple wallets or accounts for [different purposes]({{ "/guide/designing-products/personal-finance/" | relative_url }}). For example, if a user wants to set up a page to collect tips on their website, they can set up a dedicated wallet. Anyone analyzing the activity around the wallet would only see incoming tips and none of the other activity that happens in other wallets the user controls. Users just need to be careful with on-chain cross-wallet transfers, as those can allow observers to connect the wallets again.
+It's more common for wallets to protect private keys, but not much is done for other sensitive information like the balance, addresses, and previous transactions. A few wallets like [Bitcoin Core](https://bitcoin.org/en/bitcoin-core/), [Wasabi](https://wasabiwallet.io/), [Muun](https://muun.com/), and others have made it work, though. For patterns and considerations for hiding and revealing sensitive information, see the [privacy page]({{ "/guide/daily-spending-wallet/privacy/" | relative_url }}) in the daily spending wallet reference design.
 
 ## Third-party services
 
@@ -85,9 +77,9 @@ Whether it is for retrieving exchange rates or using [lightning services]({{ "/g
 <div class="center" markdown="1">
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/privacy/network-settings.png"
-   retina = "/assets/images/guide/daily-spending-wallet/privacy/network-settings@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/privacy/network-settings-big.png"
+   image = "/assets/images/guide/how-it-works/wallet-privacy/network-settings.png"
+   retina = "/assets/images/guide/how-it-works/wallet-privacy/network-settings@2x.png"
+   modalImage = "/assets/images/guide/how-it-works/wallet-privacy/network-settings-big.png"
    alt-text = "Application network settings"
    caption = "Option to enable Tor in settings."
    width = 250
@@ -112,9 +104,9 @@ Lightning node Ids, lightning addresses, and LNURL-Pay invoices (see [Payment re
 <div class="center" markdown="1">
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/privacy/activity-pseudonymous.png"
-   retina = "/assets/images/guide/daily-spending-wallet/privacy/activity-pseudonymous@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/privacy/activity-pseudonymous-big.png"
+   image = "/assets/images/guide/how-it-works/wallet-privacy/activity-pseudonymous.png"
+   retina = "/assets/images/guide/how-it-works/wallet-privacy/activity-pseudonymous@2x.png"
+   modalImage = "/assets/images/guide/how-it-works/wallet-privacy/activity-pseudonymous-big.png"
    alt-text = "A list of unlabelled transactions"
    caption = "By default, data is pseudonymous on the bitcoin networks."
    width = 250
@@ -134,16 +126,14 @@ Transactions, their signatures, and addresses added to the bitcoin blockchain re
 
 There are [many ways](https://99bitcoins.com/know-more-top-seven-ways-your-identity-can-be-linked-to-your-bitcoin-address/) your identity might get connected to your wallet and payments, so keeping bitcoin payments private takes diligent work, but is not impossible. Let’s explore some practices that help preserve privacy of bitcoin payments.
 
-<!-- talk about the problem as you are talking about the solution -->
-
 #### Generate a new address for each on-chain payment
 
 <div class="center" markdown="1">
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/privacy/request-address.png"
-   retina = "/assets/images/guide/daily-spending-wallet/privacy/request-address@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/privacy/request-address-big.png"
+   image = "/assets/images/guide/how-it-works/wallet-privacy/request-address.png"
+   retina = "/assets/images/guide/how-it-works/wallet-privacy/request-address@2x.png"
+   modalImage = "/assets/images/guide/how-it-works/wallet-privacy/request-address-big.png"
    alt-text = "Payment request screen"
    caption = "A new address should be generated for every payment."
    width = 250
@@ -174,9 +164,9 @@ By sending to an address that is being reused, the sender is now traceable and c
 <div class="center" markdown="1">
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/privacy/activity-labeling.png"
-   retina = "/assets/images/guide/daily-spending-wallet/privacy/activity-labeling@2x.png"
-   modelImage = "/assets/images/guide/daily-spending-wallet/privacy/activity-labeling-big.png"
+   image = "/assets/images/guide/how-it-works/wallet-privacy/activity-labeling.png"
+   retina = "/assets/images/guide/how-it-works/wallet-privacy/activity-labeling@2x.png"
+   modelImage = "/assets/images/guide/how-it-works/wallet-privacy/activity-labeling-big.png"
    alt-text = "Screen showing a transaction list with contacts and descriptions."
    caption = "A well-annotated transaction list can simplify privacy management."
    width = 250
@@ -190,6 +180,10 @@ As it is complex for users to manually keep track of this, most wallets automate
 
 </div>
 
+#### Using multiple wallet applications
+
+Another simple way to avoid data points from being connected is for users to set up and use multiple wallets or accounts for [different purposes]({{ "/guide/designing-products/personal-finance/" | relative_url }}). For example, if a user wants to set up a page to collect tips on their website, they can set up a dedicated wallet. Anyone analyzing the activity around the wallet would only see incoming tips and none of the other activity that happens in other wallets the user controls. Users just need to be careful with on-chain cross-wallet transfers, as those can allow observers to connect the wallets again.
+
 ---
 
 #### More information
@@ -199,7 +193,6 @@ As it is complex for users to manually keep track of this, most wallets automate
 - [Lightning privacy (Concerns and Solutions)](https://www.youtube.com/watch?v=Cjxc9ERz2mU) (presentation at Bitcoin Miami 2022)
 - [Lightning Service Providers and Liquidity](https://www.youtube.com/watch?v=jXjsxvuxByc) (presentation at Bitcoin Miami 2022)
 - [State of Lightning Privacy in 2021](https://abytesjourney.com/lightning-privacy/) (A Byte's Journey)
-
 
 ---
 

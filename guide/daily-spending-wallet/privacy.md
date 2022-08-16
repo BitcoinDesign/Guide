@@ -46,7 +46,7 @@ This page should inform about what information is made public when sending or re
 
 ---
 
-Privacy is about the ability to control what information is available to others, and what they can do with it. It is a highly complex topic, so on this page we will just look at some of the real-world privacy challenges unique to the scope of the [daily spending wallet]({{ "/guide/daily-spending-wallet/" | relative_url }}). For an introduction and more general information, see the [wallet privacy]({{ "/guide/how-it-works/wallet-privacy/" | relative_url }}) page.
+Privacy is highly complex topic, so on this page we will just look at some of the real-world privacy challenges unique to the scope of the [daily spending wallet]({{ "/guide/daily-spending-wallet/" | relative_url }}). For an introduction and more general information, see the page about [privacy]({{ "/guide/how-it-works/wallet-privacy/" | relative_url }}) in the "How it works" section.
 
 #### The daily spending context
 
@@ -67,33 +67,11 @@ Imagine this scenario. The user is in a public place, and they need to make a pa
    layout = "float-right-desktop -background -shadow"
 %}
 
-The hide icon/button, which is usually displayed within close reach of the balance itself, is used to quickly and easily hide wallet information by tapping, and revealing it again by tapping and holding.
+The button to quickly hide sensitive information is displayed within close reach of the balance itself. One tap hides it, and the next tap reveals it again.
 
-This is an easy and convenient way to switch between revealed and hidden states, but still makes it relatively easy for anyone else to reveal user information if they have access to the device.
-
-</div>
-
-#### An application-wide setting
-
-<div class="center" markdown="1">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/privacy/privacy-and-security-settings.png"
-   retina = "/assets/images/guide/daily-spending-wallet/privacy/privacy-and-security-settings@2x.png"
-   alt-text = "Mobile screen with a toggle for hiding information in settings"
-   caption = "Hiding sensitive data can be toggled in the settings."
-   width = 250
-   height = 541
-   layout = "float-right-desktop -background -shadow"
-%}
-
-Having the show/hide button right on the main screen makes things quite obvious for someone who has access to a user's device to press unhide. A solution would be to move the hide toggle away from the home screen and into the [app settings](https://medium.com/@olanrewajusodiq64/the-ui-ux-of-hide-balance-designing-to-improve-asset-security-e4b20668f315). This way, if someone has access to their device and opens the app, they may not immediately know how to reveal the balance, transaction, or addresses as it is not made obvious as the previous solutions.
-
-An advantage here is the risk of an unauthorized person revealing their information is minimal due to the fact that the toggle isn't immediately visible on the home screen. The downside is that a user cannot quickly hide their information if the need arises.
+This is an easy and convenient way to switch between revealed and hidden states. On the downside, it makes it relatively easy for anyone else to reveal user information if they have access to the device.
 
 </div>
-
-## Alternative designs
 
 #### Entering a PIN to reveal information
 
@@ -104,17 +82,38 @@ An advantage here is the risk of an unauthorized person revealing their informat
    retina = "/assets/images/guide/daily-spending-wallet/privacy/hidden-balance-pin-reveal@2x.png"
    modalImage = "/assets/images/guide/daily-spending-wallet/privacy/hidden-balance-pin-reveal-big.png"
    alt-text = "A mobile interface where hidden information is revealed with a PIN"
-   caption = "Revealing the balance requires PIN entry."
+   caption = "Users can enable PIN entry before the balance is revealed."
    width = 250
    height = 541
    layout = "float-right-desktop -background -shadow"
 %}
 
-With this method, it's as easy to reverse the hidden state as enabling it. This is good for convenience's sake. However, for protection against unauthorized access, perhaps the user should only be able to unhide their information if a [PIN]({{ "/guide/daily-spending-wallet/security/#pin-protection" | relative_url }}) or password has been entered. This reaffirms the identity of the wallet owner for extra security.
-
-In this example the risk of an unauthorized person revealing their information is minimal due to the PIN required. However, it might not be convenient for the users to repeatedly put in their PIN when ever they want to reveal their information especially if they do so often.
+To prevent this problem, users can optionally enable an additional setting to require [PIN]({{ "/guide/daily-spending-wallet/security/#pin-protection" | relative_url }}) entry for unhiding sensitive information. This reaffirms the identity of the wallet owner for extra security. Making this optional allows users to find their own balance between convenience and security.
 
 </div>
+
+#### An application-wide setting
+
+<div class="center" markdown="1">
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/privacy/privacy-settings.png"
+   retina = "/assets/images/guide/daily-spending-wallet/privacy/privacy-settings@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/privacy/privacy-settings-big.png"
+   alt-text = "Mobile screen with a toggle for hiding information in settings"
+   caption = "Hiding sensitive data can be toggled in the settings."
+   width = 250
+   height = 541
+   layout = "float-right-desktop -background -shadow"
+%}
+
+Both settings, whether sensitive information is hidden and whether PIN entry is required, are accessible from the privacy section in the application settings.
+
+</div>
+
+## Alternative designs
+
+An alternative design approach is to make the show/hide toggle only available in settings. Having it right on the main screen makes things quite obvious for someone who has access to a user's device. If it is only available from settings, a third party who has access to the device may not immediately know how to reveal information. The downside is that a user cannot quickly hide their information if the need arises.
 
 #### Hiding when inactive
 
@@ -139,9 +138,9 @@ This gives users some time to assess their environment before their info is disp
 
 ## Other privacy aspects
 
-On-chain address re-use is a common privacy problem due to the tracability across transactions. Addresses this wallet uses are swap addresses generated by a lightning service provider. This lifts the responsibility for address management out of the hands of the user.
-
 Just like any other application, privacy can be impacted by the use of third-party services (analytics, currency exchange rates, etc) and data transfer itself, as well as any services provided by the application developer. For more on this, view the [wallet privacy]({{ "/guide/how-it-works/wallet-privacy/" | relative_url }}) page.
+
+On-chain address re-use is a common privacy problem due to the tracability across transactions. Addresses this wallet uses are swap addresses generated by a lightning service provider. This lifts the responsibility for address management out of the hands of the user.
 
 ---
 
