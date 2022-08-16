@@ -36,7 +36,7 @@ Illustration source
 # Requesting bitcoin
 {:.no_toc} 
 
-Requesting bitcoin involves creating and sharing a payment request with a sender. A payment request is a piece of information that tells a sender where and how much bitcoin to send someone. This page covers design considerations when requesting bitcoin with a [Daily Spending Wallet]({{ "/guide/daily-spending-wallet/" | relative_url }}).
+Requesting bitcoin involves creating and sharing a payment request with a sender. A payment request is a piece of information that tells a sender where and how much bitcoin to send someone. This page covers design considerations when requesting bitcoin with a [daily spending wallet]({{ "/guide/daily-spending-wallet/" | relative_url }}).
 
 {% include /tip/open.html label="Payment request formats" icon="info" color="blue" %}
 
@@ -55,13 +55,13 @@ Payment request formats are different types of payment requests. Many exist and 
 
 ## Requesting entry point
 
-Creating payment requests should be simple and fast. Having it possible to initiate the creation process from the users home screen is recommended as they can open their app and instantly begin the process. 
+Creating payment requests should be simple and fast. In this wallet, users can initiate the send process from the home screen directly after entering the app. 
 
-Having the users able to enter an amount from the home page will make initiating a request even faster as they can jump straight into a requesting flow.
+Users can directly enter an amount to send from the home screen to initiate the request.
 
 {% include tip/recommendation.html %}
 
-Avoid showing the users balance on the users home or requesting page. When requesting payments in person this could reveal the users balance to near by on-lookers negatively affecting the users privacy. More on this [here](https://d.elor.me/2021/11/hiding-wallet-balances/)
+Avoid showing the users balance on the users home or requesting page. When requesting payments in person, this could reveal the users balance to near by on-lookers, negatively affecting the users privacy. More on this [here](https://d.elor.me/2021/11/hiding-wallet-balances/).
 
 {% include tip/close.html %}
 
