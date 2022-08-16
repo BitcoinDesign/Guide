@@ -408,7 +408,7 @@ A more complicated and unlikely scenario is one in which the channel's backup ha
 
 In a situation where the app provider or LSP is offline or uncooperative, the user will have no assistance in getting their funds. While this situation is unlikely, it should be prepared for.
 
-This wallet offers an open source wallet recovery tool. This tool is available on GItHub and linked to from their website. In the event that the app is taken down from app stores or the LSP's node is down for an extended period of time, the user can use their backup to force close their channels and have all their bitcoin sent to an on-chain address.
+This wallet offers an open source wallet recovery tool. This tool is available on GitHub and linked to from their website. In the event that the app is taken down from app stores or the LSP's node is down for an extended period of time, the user can use their backup to force close their channels and have all their bitcoin sent to an on-chain address.
 
 {% include picture.html
    image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/recovery-tool-home.png"
