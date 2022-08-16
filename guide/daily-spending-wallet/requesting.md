@@ -99,7 +99,7 @@ Avoid showing the users balance on the users home or requesting page. When reque
 
 Once the user is on the page they can initiate a request from, the next thing to do is add an amount to be requested. Users should be able easily toggle between entering amounts in sats, bitcoin, or the users local currency. If the user has an amount entered and they switch units the input should be cleared to prevent users requesting an incorrect amount. More on entering amounts on our [Units & Symbols page]({{ "/guide/designing-products/units-and-symbols/" | relative_url }}).
 
-It should also be possible for users to enter a zero-amount as there may be scenarios where the sender is deciding the amount to send. Zero-amount requests also limit both parties exposure to price volatility as the bitcoin price in fiat terms could change between requesting and payment being sent.
+Users can also skip entering an amount, as there are scenarios where the sender is deciding the amount to send. Zero-amount requests also limit both parties exposure to price volatility as the bitcoin price in fiat terms could change between requesting and the payment being sent.
 
 <div class="image-slide-gallery">
 
@@ -146,15 +146,15 @@ It should also be possible for users to enter a zero-amount as there may be scen
 
 ## Creating the request
 
-Once an amount is entered, the next action a user will take is creating the request. When the user clicks the request button the next screen they should see is the generated payment request.
+Once an amount is entered, the next action a user will take is creating the request. When the user clicks the request button the next screen they see is the generated payment request.
 
-So users can request both with lightning and on-chain, a [unified payment request]({{ "/guide/how-it-works/payment-request-formats/#unified-payment-requests" | relative_url }}) should be used. These combine a [lightning invoice]({{ "/guide/how-it-works/payment-request-formats/#invoice" | relative_url }}) and a [on-chain address]({{ "/guide/how-it-works/payment-request-formats/#addresses" | relative_url }}) into a single payment request using BIP21. 
+By default, a [unified payment request]({{ "/guide/how-it-works/payment-request-formats/#unified-payment-requests" | relative_url }}) is used. It combines a [lightning invoice]({{ "/guide/how-it-works/payment-request-formats/#invoice" | relative_url }}) and an [on-chain address]({{ "/guide/how-it-works/payment-request-formats/#addresses" | relative_url }}) into a single payment request, using BIP21. 
 
-Unified requests remove the friction of having users need to choose between requesting with lightning or on-chain, which can be confusing especially for new users. 
+Unified requests remove the friction of users having to choose between requesting with lightning or on-chain, which can be confusing especially for new users. 
 
-Unified requests should use swap-addresses for their on-chain address so users can maintain a single balance and not have a separate lightning and on-chain balance. Swap-addresses moves received bitcoin into the users lightning balance in a trust-minimized, non-custodial manner using [submarine swaps](https://thebitcoinmanual.com/articles/btc-submarine-swaps/). We cover how these more in our [lightning services]({{ "/guide/how-it-works/lightning-services/#swaps" | relative_url }}) and receiving page.
+The on-chain addresses used are swap-addresses, to simplify users maintaining a single lightning balance and avoid having an additional on-chain balance. Swap-addresses move received bitcoin into the users lightning balance in a trust-minimized, non-custodial manner using [submarine swaps](https://thebitcoinmanual.com/articles/btc-submarine-swaps/). We cover these more in our [lightning services]({{ "/guide/how-it-works/lightning-services/#swaps" | relative_url }}) and receiving page.
 
-As unified requests [aren't widely supported yet](https://bitcoinqr.dev/), and users may want to request just from lightning or on-chain, it should be possible to share the invoice or on-chain address individually. 
+As unified requests [aren't widely supported yet](https://bitcoinqr.dev/), and users may want to request just from lightning or on-chain, they can share the lightning invoice or on-chain address independently. 
 
 <div class="image-slide-gallery">
 
@@ -220,7 +220,7 @@ If the user has no channels open, meaning no [inbound liquidity]({{ "/guide/how-
 
 If the user has a channel open, meaning they have some inbound liquidity, they can only receive up to the amount of inbound they have before incurring more fees. The amount of inbound liquidity a user has left can be communicated to users as their receive limit.
 
-If the user has entered an amount and it's lower than their receive limit then no fee message is required though it should still indicate to users that they need to keep their app open to receive the payment.
+If no fee message is shown, the app should still indicate to users that they need to keep the app open to receive the payment.
  
 <div class="image-slide-gallery">
 
@@ -368,7 +368,7 @@ As mentioned in the [fees and staying online]({{ "/guide/daily-spending-wallet/r
 
 Payment addresses, also known as [reusable payment requests]({{ "/guide/how-it-works/payment-request-formats/#invoice-protocols" | relative_url }}), are requests that can receive more than a single payment. These are not widely supported but offer unique use cases, features, and improved usability. 
 
-Due to the unique use cases of payment addresses, its recommended having a separate area within your app to create, manage, and share these.
+Due to the unique use cases of payment addresses, they are created, managed and shared in a separate area within the app.
 
 An example of how a payment address could be used is as quickly shared request from a users profile, say to receive tips on their website. If you are using payment addresses you should let users know that other wallets may not support sending to them and that the user needs to be online to receive payments.
 
@@ -404,7 +404,7 @@ An example of how a payment address could be used is as quickly shared request f
 
 ---
 
-## Advanced requesting options
+## Advanced options
 
 When requesting bitcoin there is some options that can offer unique experiences but are more suited for advanced users who know what they are doing.
 
