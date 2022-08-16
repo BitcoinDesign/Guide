@@ -88,7 +88,7 @@ This includes things like [contacts]({{'/guide/daily-spending-wallet/contacts/' 
 
 ### Other data is omitted
 
-There are other pieces of data common among bitcoin wallet backups which this wallet specifically omits. For example, since the user must restore their funds within the same app, the derivation path will always be the same. Asking the user to write down their derivation path is a redundant step in this context. Also, a dedicated lightning node operator may want to have a "Static Channel Backup". But since the user's wallet is getting its liquidity from an LSP, there is no need for that in this scenario. The LSP will already have this information on their end.
+There are other pieces of data common among bitcoin wallet backups which this wallet specifically omits. For example, since the user must restore their funds within the same app, the [derivation path]({{'/guide/glossary/#derivation-path' | relative_url}}) will always be the same. Asking the user to write down their derivation path is a redundant step in this context. Also, a dedicated lightning node operator may want to have a ["Static Channel Backup"]({{'/guide/glossary/#static-channel-backup' | relative_url}}). But since the user's wallet is getting its liquidity from an LSP, there is no need for that in this scenario. The LSP will already have this information on their end.
 
 ## How this wallet's backup works
 
