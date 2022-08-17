@@ -95,7 +95,7 @@ Internet service providers and similar services that handle data in transit may 
 
 On the lightning network, a payment is only stored by the respective sender and receiver, and only as long as the channel in which the payment was made is open. However, opening and closing channels requires entries on the bitcoin blockchain, and those are also publicly stored forever. Additionally, lightning nodes are always online and usually directly tied to a single wallet, providing another data point. For a detailed analysis of privacy on lightning, see the [Security and privacy chapter](https://github.com/lnbook/lnbook/blob/develop/16_security_privacy_ln.asciidoc) in the Mastering the Lightning Network book.
 
-#### Be intentional when sharing static lightning identifiers
+#### Sharing static lightning identifiers
 
 Lightning node Ids, lightning addresses, and LNURL-Pay invoices (see [Payment request formats](https://bitcoin.design/guide/how-it-works/payment-request-formats/)) are examples of endpoints that can be used to generate many lightning invoices. While this is convenient for users, it is bad for privacy. For example, placing a lightning address on a website or social media profile makes it trivial to create a direct connection between the lightning node and the owner of the website or profile.
 
