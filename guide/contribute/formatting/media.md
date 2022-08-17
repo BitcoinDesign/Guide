@@ -186,6 +186,10 @@ Images can also be inline with the content. This one is inline on desktop, but t
    height = 400
    layout = "float-left-desktop"
 %}
+
+Mobile app stores do a good job of providing previews of what using an app will be like. Through copy, videos, images and reviews, users can make informed decisions about the product they are evaluating. Open-source software is typically downloaded via a website or Github, and each project decides what information to present.
+
+</div>
 ```
 {% endraw %}
 
