@@ -131,7 +131,7 @@ Before creating a wallet backup via cloud backup, make sure the user knows what 
 
 ## Tradeoffs
 
-By not making users manually backup, you decrease the risk of self-inflicted loss of funds. Automatic cloud backups put less pressure and responsibility on the user.
+By not making users [manually backup]({{ '/guide/daily-spending-wallet/backup-and-recovery/manual-backup/' | relative_url }}), you decrease the risk of self-inflicted loss of funds. Automatic cloud backups put less pressure and responsibility on the user.
 
 While this is an easier way for users to set up a wallet, it brings in the potential threat of malicious third-party access. If a user’s cloud account is hacked, their funds could be compromised. This can be mitigated by encrypting the wallet recovery data before sending it to the cloud provider. However, the user could still lose access to funds if they forget their cloud login information or the cloud provider blocks their access.
 
