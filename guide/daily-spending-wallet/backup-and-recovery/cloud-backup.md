@@ -39,7 +39,7 @@ Illustration sources
 
 ## How it works
 
-The user’s wallet recovery data and channel states are backed up on their respective cloud storage provider. The [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) only needs to be backed up once. However, channel states need to be backed up frequently because they change every time this wallet sends or receives a payment; therefore, the channel state is backed up in the cloud automatically every time it is changed.
+This wallet’s recovery data and channel states are backed up on their respective cloud storage provider. The [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) only needs to be backed up once. However, channel states need to be backed up frequently because they change every time this wallet sends or receives a payment; therefore, the channel state is backed up in the cloud automatically every time it is changed.
 
 If the user’s device is lost, stolen, or broken, they can use the backup from their cloud storage account to regain access to their funds. This could include common ones like Apple iCloud and Google Drive, open source ones like NextCloud, or even a [Lightning Wallet Server]({{'/guide/how-it-works/lightning-services/#backups' | relative_url}}).  To learn more about the technical details, hop over to the [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) section on this topic.
 
@@ -128,6 +128,25 @@ The wallet explains to the user that their backup is stored on the cloud, and th
 Before creating a wallet backup via cloud backup, make sure the user knows what they are about to do. Once the backup is complete, provide a summary and some reassurances before moving on. Let them know where in their cloud storage they can find their backup, and give the file an understandable name. For example, a filename like `BitcoinWalletBackup_Samantha` conveys far more meaning than a randomly generated number.
 
 {% include tip/close.html %}
+
+## Error Handling
+
+<div class="center" markdown="1">
+
+{% include picture.html
+image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-error.png"
+retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-error@2x.png"
+modalImage = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-error@2x.png"
+alt-text = "Screen showing an error message for a failed auto cloud backup"
+caption = "This wallet notifies the user when there is a backup error and provides next steps"
+width = 250
+height = 541
+layout = "float-right-desktop -background -shadow"
+%}
+
+In normal conditions, this wallet performs an automatic cloud backup after sending or receiving any payment. However, there could be situations where this fails to happen, such as an error or outage on the side of the cloud provider. Regardless of the reason, it's good to notify the user if there is a problem. This wallet offers a list of common issues and solutions, and also offers the ability to submit a support request.
+
+</div>
 
 ## Tradeoffs
 
