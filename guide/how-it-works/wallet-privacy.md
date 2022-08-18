@@ -21,14 +21,9 @@ image: /assets/images/guide/how-it-works/wallet-privacy/wallet-privacy-preview.j
 %}
 
 <!--
-This page should inform about what information is made public when sending or receiving, how the application can help minimize unnecessary privacy leaks, basic application functionality to help, and when we can, more advanced options.
 
-- Single-use addresses (avoiding address reuse)
-- Coin selection / labelling
-- Coin join / Pay join
+This page provides a general overview of privacy issues in bitcoin wallets.
 
-@TODO: address reuse / there should be something in here about also mindfully not giving the same unused address to different persons
-@TODO: address reuse / write glossary term about Gap limit
 -->
 
 # Wallet privacy
@@ -53,18 +48,15 @@ However, it still is important to help users understand any actions that might i
 
 While there is no perfect solution that will guarantee 100% privacy, try to minimize how much information gets shared to the most essential. Consider ways to inform and prevent user actions that negatively impact their privacy as they use your product.
 
-<!--
-There is no perfect solution to guarantee 100% privacy that lasts forever because things can be revealed over time. Since transactions are forever public, even if all precautions are taken at the time of payment to ensure the highest degree of anonymity, future behaviors of the wallet owner or transacting parties can still degrade previously attained privacy. A high amount of diligence is necessary whenever users are transacting with bitcoin. The product should be able to guide, inform, and prevent them against privacy degrading actions.
--->
-
 ## Real-world privacy
 
 Exposing wallet information to others around you can be a problem in terms of security and privacy, as well as personal comfort. Sensitive information includes:
 
 - Wallet Balance - shows how much is owned
+- Transaction history - reveals payment partners and purposes
 - Addresses - can be used to track on-chain transaction history
 - Invoices - can be used to track lightning payment history
-- Private keys - can be used to access and transfer bitcoins
+- Recovery phrase - can be used to access and transfer bitcoins
 
 It's more common for wallets to protect private keys, but not much is done for other sensitive information like the balance, addresses, and previous transactions. A few wallets like [Bitcoin Core](https://bitcoin.org/en/bitcoin-core/), [Wasabi](https://wasabiwallet.io/), [Muun](https://muun.com/), and others have made it work, though. For patterns and considerations for hiding and revealing sensitive information, see the [privacy page]({{ "/guide/daily-spending-wallet/privacy/" | relative_url }}) in the daily spending wallet reference design.
 

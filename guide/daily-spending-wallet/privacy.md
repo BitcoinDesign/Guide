@@ -24,14 +24,9 @@ image: /assets/images/guide/daily-spending-wallet/privacy/privacy-preview.jpg
 %}
 
 <!--
-This page should inform about what information is made public when sending or receiving, how the application can help minimize unnecessary privacy leaks, basic application functionality to help, and when we can, more advanced options.
 
-- Single-use addresses (avoiding address reuse)
-- Coin selection / labelling
-- Coin join / Pay join
+This page showcases the options users have to improve their privacy in the daily spending wallet.
 
-@TODO: address reuse / there should be something in here about also mindfully not giving the same unused address to different persons
-@TODO: address reuse / write glossary term about Gap limit
 -->
 
 # Wallet privacy
@@ -50,7 +45,7 @@ Privacy is highly complex topic, so on this page we will just look at some of th
 
 #### The daily spending context
 
-Imagine this scenario. The user is in a public place, and they need to make a payment using their bitcoin wallet. They open the wallet on their phone, but they don’t feel comfortable having their address and balance information clearly visible to strangers who may be looking over their shoulder, persons lurking, or video surveillance. Hence, by giving users the ability to hide sensitive information in their wallet, but only when desired, they gain an added sense of physical privacy and security when using the app in public.
+Imagine this scenario. The user is in a public place, and they need to make a payment using their bitcoin wallet. They open the wallet on their phone, but they don’t feel comfortable having their payment and balance information clearly visible to strangers who may be looking over their shoulder, persons lurking, or video surveillance. Hence, by giving users the ability to hide sensitive information in their wallet, but only when desired, they gain an added sense of physical privacy and security when using the app in public.
 
 #### Quickly hiding balances
 
