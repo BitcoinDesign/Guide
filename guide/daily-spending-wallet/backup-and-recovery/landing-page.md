@@ -94,7 +94,7 @@ There are other pieces of data common among bitcoin wallet backups which this wa
 
 This wallet prioritizes cloud backup. It's quicker for the user and it also safeguards them from accidental loss of their backup, which could arguably be a higher risk than actual theft. That's a design decision for this daily spending wallet, which is designed for smaller amounts of money. Other apps may choose different threat models.
 
-However, some users may not feel comfortable with cloud storage. Perhaps they have started using the wallet so much that they now have a lot of funds on the wallet, or perhaps they have been using bitcoin for longer and feel more comfortable with a manual backup on paper. Regardless of the reason, this wallet accommodates this by allowing the user to create a manual backup of their private key instead of or in addition to the auto cloud backup.
+However, some users may not feel comfortable with cloud storage. Perhaps they have started using the wallet so much that they now have a lot of funds on the wallet, or perhaps they have been using bitcoin for longer and feel more comfortable with a manual backup on paper. Regardless of the reason, this wallet accommodates this by allowing the user to create a manual backup of their recovery phrase instead of or in addition to the auto cloud backup.
 
 ---
 
