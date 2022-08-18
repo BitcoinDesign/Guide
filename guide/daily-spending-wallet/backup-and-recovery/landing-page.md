@@ -38,7 +38,7 @@ Illustration sources
 
 # Backup & recovery
 
-It's important to help the user backup their wallet. If their phone is lost or stolen, they will need a backup of their wallet to restore access to their bitcoin.
+It's important to help the user backup their wallet. If their phone is lost or stolen, they will need this backup of their wallet to restore access to their bitcoin.
 
 With [self-custodial]({{'/guide/getting-started/principles/#self-custody' | relative_url}}) bitcoin, users who lose both their wallet access and their backup permanently lose their bitcoin. Arguably, this creates one of the most challenging design problems within the space.
 
