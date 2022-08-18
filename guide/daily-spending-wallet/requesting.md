@@ -40,7 +40,7 @@ Requesting bitcoin involves creating and sharing a payment request with a sender
 
 {% include /tip/open.html label="Payment request formats" icon="info" color="blue" %}
 
-Payment request formats are different types of payment requests. Many exist and each has unique properties and use cases. This page does not cover individual formats. For that, check out our  [payment request formats]({{ "/guide/how-it-works/payment-request-formats/" | relative_url }}) page.
+Payment requests come in many different formats. Each has unique properties and use cases. To learn more about these formats, see the [payment request formats]({{ "/guide/how-it-works/payment-request-formats/" | relative_url }}) page.
 
 {% include /tip/close.html %}
 
@@ -93,7 +93,7 @@ Avoid showing the users balance alongside your requesting entry point. When requ
 
 Once the user is on the requesting entry point, the next thing to do is add an amount to be requested. Users should be able easily toggle between entering amounts in sats, bitcoin, or the users local currency by single tapping the amount field. More on entering amounts on our [Units & Symbols page]({{ "/guide/designing-products/units-and-symbols/" | relative_url }}).
 
-Users can also skip entering an amount, as there are scenarios where the sender is deciding the amount to send. No amount requests also limit both parties exposure to price volatility as the bitcoin price in fiat terms could change between requesting and the payment being sent.
+Users can also skip entering an amount, as there are scenarios where the sender is deciding the amount to send. Requests without an amount also limit both parties exposure to price volatility, as the bitcoin price in fiat terms could change between requesting and the payment being sent.
 
 <div class="image-slide-gallery">
 
@@ -127,15 +127,15 @@ Users can also skip entering an amount, as there are scenarios where the sender 
 
 ## Creating the request
 
-Once an amount to be requested is decided, the next action a user will take is creating the request. When the user clicks the request button the next screen they see is the generated payment request.
+Once an amount is decided, the user clicks the `Request` button and is navigated to the next screen for sharing the generated payment request.
 
-This wallet uses a [unified payment request]({{ "/guide/how-it-works/payment-request-formats/#unified-payment-requests" | relative_url }}). These combine a [lightning invoice]({{ "/guide/how-it-works/payment-request-formats/#invoice" | relative_url }}) and an [on-chain address]({{ "/guide/how-it-works/payment-request-formats/#addresses" | relative_url }}) into a single payment request using BIP21. 
+This wallet defaults to a [unified payment request]({{ "/guide/how-it-works/payment-request-formats/#unified-payment-requests" | relative_url }}). These combine a [lightning invoice]({{ "/guide/how-it-works/payment-request-formats/#invoice" | relative_url }}) and an [on-chain address]({{ "/guide/how-it-works/payment-request-formats/#addresses" | relative_url }}) into a single payment request using BIP21. 
 
 Unified requests remove the friction of users having to choose between requesting with lightning or on-chain, which can be confusing, especially for new users. 
 
-The on-chain addresses used in this wallet are swap-addresses. Swap-addresses move received bitcoin into the users payment channels in a trust-minimized, non-custodial manner using [submarine swaps](https://thebitcoinmanual.com/articles/btc-submarine-swaps/). This is so users can avoid having both an on-chain and lightning balance. We cover these more in our [lightning services]({{ "/guide/how-it-works/lightning-services/#swaps" | relative_url }}) and receiving page.
+The on-chain addresses used in this wallet are swap-addresses. They move received bitcoin into the users payment channels in a trust-minimized, non-custodial manner using [submarine swaps](https://thebitcoinmanual.com/articles/btc-submarine-swaps/). This is so users can avoid having both an on-chain and lightning balance. We cover these more in our [lightning services]({{ "/guide/how-it-works/lightning-services/#swaps" | relative_url }}) and receiving page.
 
-As unified requests [aren't widely supported yet](https://bitcoinqr.dev/), and users may want to request just from lightning or on-chain, they can share the lightning invoice or on-chain address independently. 
+As unified requests [aren't widely supported yet](https://bitcoinqr.dev/), and users may want to request just from lightning or on-chain, they have options to share the lightning invoice or on-chain address independently. 
 
 {% include tip/recommendation.html %}
 
@@ -296,7 +296,7 @@ Metadata is additional information that is part of or can be added to a payment 
 
 Expiration times are something unique to lightning invoices. We cover modifying these [here]({{ "/guide/daily-spending-wallet/requesting/#invoice-expirations" | relative_url }}).
 
-Ensure users can [backup]({{ "/guide/daily-spending-wallet/backup-and-recovery/landing-page/" | relative_url }}) this metadata to prevent them losing their transaction history.
+Ensure users can [backup]({{ "/guide/daily-spending-wallet/backup-and-recovery/landing-page/" | relative_url }}) this metadata to prevent them from losing their transaction history.
 
 </div>
 
@@ -308,7 +308,7 @@ Once the request is created, the next action is to share it. Below are ways in w
 
 [Quick response codes (QR)](https://en.wikipedia.org/wiki/QR_code) encode a payment request into a scannable graphic. QR codes should be large enough and have high contrast with your application's background so they can be easily scanned.
 
-Uppercasing payment request data will result in less complex, more easily scannable, QR codes. Another option to make QR codes easier to scan is having users screen brightness turn up when on the screen.
+Uppercasing `bech32` strings in the payment request data will result in less complex, more easily scannable QR codes. Automatically increasing screen brightness when displaying the QR code further improves scannability.
 
 ### Plaintext
 
@@ -316,7 +316,7 @@ Plaintext involves copying and sharing a payment request in text form. These sho
 
 ### Contactless
 
-A contactless, or [Near-field communication](https://en.wikipedia.org/wiki/Near-field_communication) (NFC) allows requests to be shared wirelesses over short distances.
+Requests can be shared wirelessly over short distances using [near-field communication](https://en.wikipedia.org/wiki/Near-field_communication) (NFC). This is more commonly known as a “contactless payment.”
 
 ### Payment link
 
@@ -355,7 +355,7 @@ Payment links use a BIP21 [URI]({{ "/guide/how-it-works/payment-request-formats/
    retina = "/assets/images/guide/daily-spending-wallet/requesting/Contactless@2x.png"
    modalImage = "/assets/images/guide/daily-spending-wallet/requesting/Contactless@2x.png"
    layout = "shadow"
-   caption = "Contactless payments and quick and convenient ways to share a payment request in-person."
+   caption = "Contactless payments are a quick and convenient way to share a payment request in-person."
    alt-text = "Screen showing a payment request being shared contactlessly with NFC."
    width = 250
    height = 541
@@ -439,7 +439,7 @@ Payment addresses are not yet widely supported. If supporting these it should be
 
 ## Advanced options
 
-When requesting bitcoin there is some options that can offer unique experiences but are more suited for advanced users who know what they are doing.
+When requesting bitcoin, there are some options that can offer unique experiences but are more suited for advanced users who know what they are doing.
 
 ### Invoice expirations
 
@@ -447,7 +447,7 @@ Lightning invoices aren't permanent; [they expire over time]({{ "/guide/glossary
 
 When denominating invoices in fiat, custom expiries should be used to prevent exposure to price volatility.
 
-If requesting a specific amount denominated in fiat, use a shorter expiry and have the invoice refresh each time it expiries. For a wallet designed for in-person payments, a 30 - 60 second expiry works well.
+If requesting a specific amount denominated in fiat, use a shorter expiry and have the invoice refresh each time it expires. For a wallet designed for in-person payments, a 30 - 60 second expiry works well.
 
 If there is no amount defined on the invoice, the invoice is denominated in bitcoin, or the invoice needs to be shared in a message, then use a longer expiry, like 24 hours.
 
