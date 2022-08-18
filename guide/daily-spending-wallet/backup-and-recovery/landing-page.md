@@ -56,7 +56,7 @@ However, once they have [received funds for the first time]({{ '/guide/daily-spe
 
 ## The unique needs of a lightning wallet
 
-This wallet is runs its own lightning node. It will have at least one payment channel, perhaps more, connected to a [Lightning service provider]({{'/guide/how-it-works/lightning-services/#what-is-a-lightning-service-provider' | relative_url}}) (LSP). The user's bitcoin are locked in these channels.
+This wallet runs its own lightning node. It will have at least one payment channel, perhaps more, connected to a [Lightning service provider]({{'/guide/how-it-works/lightning-services/#what-is-a-lightning-service-provider' | relative_url}}) (LSP). The user's bitcoin are locked in these channels.
 
 Unlike on-chain wallets, it is not easy to restore lightning wallets using other bitcoin apps. Recovering a lightning wallet requires restoring the node with proper channel state, or asking the LSP to force close the channels. For predictable results, this is best accomplished within the same app.
 
