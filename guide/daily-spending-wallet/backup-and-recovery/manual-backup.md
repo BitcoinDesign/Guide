@@ -35,7 +35,7 @@ Illustration sources:
 
 The daily spending wallet described in this reference design is designed to make backup as easy as possible for the user. As a result, the default flow is one where the user opts-in to a cloud backup.
 
-However, some users may not be comfortable with the idea of their private key on a cloud server. So in accordance with the design principles of [self-custody]({{ '/guide/getting-started/principles/#self-custody' | relative_url }}) and [transparency]({{ '/guide/getting-started/principles/#transparency' | relative_url }}), this wallet also offers a manual backup option.
+However, some users may not be comfortable with the idea of their recovery phrase on a cloud server. So in accordance with the design principles of [self-custody]({{ '/guide/getting-started/principles/#self-custody' | relative_url }}) and [transparency]({{ '/guide/getting-started/principles/#transparency' | relative_url }}), this wallet also offers a manual backup option.
 
 ## A note about channel state
 
