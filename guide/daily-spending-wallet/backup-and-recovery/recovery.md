@@ -166,12 +166,23 @@ This involves a few more steps, but should work just as well as the auto cloud b
 %}
 
 {% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-recovery-phrase-error.png"
+   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-recovery-phrase-error@2x.png"
+   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-recovery-phrase-error@2x.png"
+   layout = "shadow"
+   caption = "User enters their recovery phrase. The app can notify them if a word is incorrect before they have finished typing it."
+   alt-text = "Screen showing an incorrectly typed word highlighed in red."
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
    image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-recovery-phrase-progress.png"
    retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-recovery-phrase-progress@2x.png"
    modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-recovery-phrase-progress@2x.png"
    layout = "shadow"
-   caption = "User enters their recovery phrase. The app notifies them if they have typed a word incorrectly."
-   alt-text = "Screen showing an incorrectly typed word highlighed in red."
+   caption = "User enters their recovery phrase. The app can autocomplete words for the user."
+   alt-text = "Screen showing an incorrectly typed word highlighted in red."
    width = 250
    height = 541
 %}
@@ -222,6 +233,11 @@ This involves a few more steps, but should work just as well as the auto cloud b
 
 </div>
 
+{% include tip/open.html color="green" icon="check" label="Use autocomplete" %}
+
+This wallet makes the recovery process easier for the user by autocompleting the words of their recovery phrase as they type. Since recovery phrases are comprised of words from a predefined dictionary of 2,048 words, the app is able usually able to autocomplete or detect a typo with only 3 or 4 letters typed.
+
+{% include tip/close.html %}
 
 ## Other situations
 
