@@ -41,7 +41,7 @@ However, some users may not be comfortable with the idea of their recovery phras
 
 The lightning channel state is subject to change frequently, particularly if the user truly uses the daily spending wallet every day as the name would imply. As a result, we can’t think about the channel state as being a one-time backup. Channel state must be backed-up everytime the state is updated.
 
-As a result, this wallet requires channel state to be backed up automatically to a cloud provider. Allowing for it to be backed up manually would create a false sense of security.
+As a result, this wallet requires channel state to be backed up automatically to a cloud provider on each payment. Allowing for it to be backed up manually would create a false sense of security and will likely result in user error.
 
 This trade-off is designed to protect the user. In the event that a 3rd party manages to obtain and decrypt the channel state from the cloud storage, there is not a lot they can do; they have no way of stealing the funds without the keys.
 
