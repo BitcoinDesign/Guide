@@ -56,7 +56,7 @@ However, once they have [received funds for the first time]({{ '/guide/daily-spe
 
 ## The unique needs of a lightning wallet
 
-This wallet runs its own lightning node. It will have at least one payment channel, perhaps more, connected to a [Lightning service provider]({{'/guide/how-it-works/lightning-services/#what-is-a-lightning-service-provider' | relative_url}}) (LSP). The user's bitcoin are locked in these channels.
+This wallet runs its own lightning node. It will have at least one payment channel, perhaps more, connected to a [lightning service provider]({{'/guide/how-it-works/lightning-services/#what-is-a-lightning-service-provider' | relative_url}}) (LSP). The user's bitcoin are locked in these channels.
 
 Unlike on-chain wallets, it is not easy to restore lightning wallets using other bitcoin apps. Recovering a lightning wallet requires restoring the node with proper channel state, or asking the LSP to force close the channels. For predictable results, this is best accomplished within the same app.
 
@@ -80,7 +80,7 @@ The _[recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }})_
 
 ### Channel State
 
-This contains data on payments made in active Lightning channels. Think of this as sort of like the most recent snapshot of all the activity in the user's Lightning channels. This is important to maintain. While it may be possible to recover without this data, the user has to trust that the LSP is acting in their best interest. This data must be backed up automatically to the cloud every time a payment is sent or received.
+This contains data on payments made in active lightning channels. Think of this as sort of like the most recent snapshot of all the activity in the user's lightning channels. This is important to maintain. While it may be possible to recover without this data, the user has to trust that the LSP is acting in their best interest. This data must be backed up automatically to the cloud every time a payment is sent or received.
 
 ### User metadata
 
