@@ -43,7 +43,7 @@ The lightning channel state is subject to change frequently, particularly if the
 
 As a result, this wallet requires channel state to be backed up automatically to a cloud provider on each payment. Allowing for it to be backed up manually would create a false sense of security and will likely result in user error.
 
-This requirement is designed to protect the user. In the event that a 3rd party manages to obtain and decrypt the channel state from the cloud storage, there is not a lot they can do; they have no way of stealing the funds without the recovery phrase.
+This requirement is designed to protect the user. In the event that a 3rd party manages to obtain the channel state from the cloud storage, there is not a lot they can do because it is encrypted using the user's recovery phrase.
 
 So when we talk about “manual backup” in regard to this wallet, we are strictly talking about manual backup of the [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}).
 
