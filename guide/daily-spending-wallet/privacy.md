@@ -66,6 +66,8 @@ The button to quickly hide sensitive information is displayed within close reach
 
 This is an easy and convenient way to switch between revealed and hidden states. On the downside, it makes it relatively easy for anyone else to reveal user information if they have access to the device.
 
+Unhiding the balance requires tapping and holding for a few seconds to prevent accidental reveals.
+
 </div>
 
 #### Entering a PIN to reveal information
