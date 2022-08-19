@@ -76,8 +76,19 @@ Below is what this wallet’s automatic cloud backup user interface looks like.
    retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-PIN@2x.png"
    modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-PIN@2x.png"
    layout = "shadow"
-   caption = "Allows the user to set a PIN used for authentication."
-   alt-text = "The user can set a PIN which will be used to authenticate and access the wallet"
+   caption = "Allows the user to set a PIN used for authentication, as well as encryption of the recovery phrase."
+   alt-text = "Screen showing a number pad for selecting a PIN"
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-PIN-verify.png"
+   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-PIN-verify@2x.png"
+   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-PIN-verify@2x.png"
+   layout = "shadow"
+   caption = "Verify the PIN to help ensure the user remembers what they just typed"
+   alt-text = "Screen showing a number pad for verifying the PIN"
    width = 250
    height = 541
 %}
@@ -121,7 +132,7 @@ Below is what this wallet’s automatic cloud backup user interface looks like.
 
 As mentioned in the previous section, this wallet prompts the user to backup during [First Use](https://bitcoin.design/guide/daily-spending-wallet/first-use/) and, if they opt-out, reminds them again once they have received funds.
 
-The wallet explains to the user that their backup is stored on the cloud, and that they can regain access to their funds on another device using their respective cloud account and bitcoin wallet app. The app also explains that if somebody else gains access to your cloud account information, they can also gain access to your funds.
+The wallet explains to the user that their backup is stored on the cloud, and that they can regain access to their funds on another device using their respective cloud account and bitcoin wallet app. The app also explains that the backup is encrypted with their PIN and requires the user to verify the PIN by entering it a second time.
 
 {% include tip/open.html color="green" icon="check" label="Do: Inform your Users" %}
 
