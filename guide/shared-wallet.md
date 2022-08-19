@@ -3,6 +3,7 @@ layout: guide
 title: Shared wallet
 description: Bitcoin wallet design reference design for wallets managed together by multiple owners.
 nav_order: 7
+last_reference_design: true
 permalink: /guide/shared-wallet/
 redirect_from:
  - /guide/case-studies/shared-account/
@@ -117,9 +118,11 @@ The wireframe screens below show the main onboarding sequence that guides users 
 
 ---
 
+That's it for reference designs. The next section covers practical explanations of bitcoin technologies and features that are good to know for product builders.
+
 {% include next-previous.html
    previousUrl = "/guide/upgradeable-wallet/"
    previousName = "Upgradeable wallet"
-   nextUrl = "/guide/sign-in-with-bitcoin/"
-   nextName = "Sign in with bitcoin"
+   nextUrl = "/guide/how-it-works/"
+   nextName = "How it works"
 %}

@@ -68,6 +68,12 @@ An overview of bitcoin payments, common concepts, and the transaction lifecycle.
 
 ---
 
+### [Sign in with bitcoin]({{ '/guide/how-it-works/sign-in-with-bitcoin/' | relative_url }})
+
+How lightning wallets can support authentication and payments with external applications and web services.
+
+---
+
 {% include next-previous.html
    previousUrl = "/guide/sign-in-with-bitcoin/"
    previousName = "Sign in with bitcoin"

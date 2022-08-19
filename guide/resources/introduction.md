@@ -41,8 +41,8 @@ Get hands-on with these take-home bitcoin design challenges to practice and play
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/how-it-works/transactions/"
-   previousName = "Transactions"
+   previousUrl = "/guide/how-it-works/sign-in-with-bitcoin/"
+   previousName = "Sign in with bitcoin"
    nextUrl = "/guide/resources/design-files/"
    nextName = "Design files"
 %}

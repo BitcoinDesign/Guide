@@ -2,11 +2,11 @@
 layout: guide
 title: Sign in with bitcoin
 description: An introduction to how lightning wallets can support authentication and payments with external applications and web services.
-nav_order: 8
-permalink: /guide/sign-in-with-bitcoin/
+nav_order: 9
+parent: How it works
+permalink: /guide/how-it-works/sign-in-with-bitcoin/
 main_classes: -no-top-padding
-last_reference_design: true
-image: https://bitcoin.design/assets/images/guide/sign-in-with-bitcoin/sign-in-with-bitcoin-preview.jpg
+image: https://bitcoin.design/assets/images/guide/how-it-works/sign-in-with-bitcoin/sign-in-with-bitcoin-preview.jpg
 ---
 
 <!--
@@ -19,10 +19,10 @@ and making payments on a web application via a lightning wallet.
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/sign-in-with-bitcoin/sign-in-with-bitcoin.jpg"
-   retina = "/assets/images/guide/sign-in-with-bitcoin/sign-in-with-bitcoin@2x.jpg"
-   mobile = "/assets/images/guide/sign-in-with-bitcoin/sign-in-with-bitcoin-mobile.jpg"
-   mobileRetina = "/assets/images/guide/sign-in-with-bitcoin/sign-in-with-bitcoin-mobile@2x.jpg"
+   image = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/sign-in-with-bitcoin.jpg"
+   retina = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/sign-in-with-bitcoin@2x.jpg"
+   mobile = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/sign-in-with-bitcoin-mobile.jpg"
+   mobileRetina = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/sign-in-with-bitcoin-mobile@2x.jpg"
    alt-text = "Hand cursor hovering over a big 'Sign in' button"
    caption = ""
    width = 1600
@@ -68,8 +68,8 @@ Your service and the user wallet need to be able to communicate with each other 
 The smoothest user experience is when the wallet and the service can directly communicate with each other. For example, a browser wallet and a website can send messages back and forth (see [webLN](https://www.webln.guide/introduction/readme)). This allows for convenient features like allowances for automatic approval of payments for services the user trusts.
 
 {% include picture.html
-   image = "/assets/images/guide/sign-in-with-bitcoin/direct-connection.png"
-   retina = "/assets/images/guide/sign-in-with-bitcoin/direct-connection@2x.png"
+   image = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/direct-connection.png"
+   retina = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/direct-connection@2x.png"
    alt-text = "Browser window with a wallet extension installed"
    width = 800
    height = 411
@@ -80,8 +80,8 @@ The smoothest user experience is when the wallet and the service can directly co
 There is more friction if the user needs to be involved in this communication. However, this extra friction provides more user control and better security. In the visualization below, the service and user wallet cannot directly communicate with each other. Instead, the web application presents instructions as QR codes that the user needs to scan with their (mobile) wallet. The wallet then sends instructions to the application server, which updates the web application.
 
 {% include picture.html
-   image = "/assets/images/guide/sign-in-with-bitcoin/bridged-connection.png"
-   retina = "/assets/images/guide/sign-in-with-bitcoin/bridged-connection@2x.png"
+   image = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/bridged-connection.png"
+   retina = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/bridged-connection@2x.png"
    alt-text = "Communication flow between a browser window and a smart phone wallet"
    width = 800
    height = 411
@@ -94,8 +94,8 @@ This does not necessarily have to be done via QR code. The most basic method cou
 The biggest hurdle at this stage is that most users will not be familiar with this authentication method and are not likely to have a wallet they can readily use. Ensure that there are concise explanations and tips to get users started.
 
 {% include picture.html
-   image = "/assets/images/guide/sign-in-with-bitcoin/signin-info.png"
-   retina = "/assets/images/guide/sign-in-with-bitcoin/signin-info@2x.png"
+   image = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/signin-info.png"
+   retina = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/signin-info@2x.png"
    alt-text = "Sign in screen with tips for wallets to use and general information"
    width = 800
    height = 411
@@ -104,8 +104,8 @@ The biggest hurdle at this stage is that most users will not be familiar with th
 Authentication is a simple process in which the service sends a message to the wallet. The wallet then uses cryptography to generate a unique identifier from the message, which it sends back to the service. This identifier can then be used to establish an account.
 
 {% include picture.html
-   image = "/assets/images/guide/sign-in-with-bitcoin/signin-request.png"
-   retina = "/assets/images/guide/sign-in-with-bitcoin/signin-request@2x.png"
+   image = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/signin-request.png"
+   retina = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/signin-request@2x.png"
    alt-text = "Browser window with a modal for approving web service authentication"
    width = 800
    height = 411
@@ -122,8 +122,8 @@ Ensuring users are signed out (manually or via session time-outs) is important. 
 A payment is typically initiated by your service when the user wants to take an action. Show the most appropriate option right away based on how the user has previously interacted with their wallet (direct or bridged, [see above]({{ '#wallet-service-communication' | relative_url }})).
 
 {% include picture.html
-   image = "/assets/images/guide/sign-in-with-bitcoin/payment-request.png"
-   retina = "/assets/images/guide/sign-in-with-bitcoin/payment-request@2x.png"
+   image = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/payment-request.png"
+   retina = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/payment-request@2x.png"
    alt-text = "Browser window with a modal for confirming a payment of 100 satoshi"
    width = 800
    height = 411
@@ -138,8 +138,8 @@ An alternative to reducing friction for frequent payments is to let users deposi
 Users may migrate wallets and want to link their existing account to a new wallet. They may also want to connect multiple wallets to the same account. This could be for convenience, like signing in with both a desktop and a mobile wallet. Or it could be for security, like logging in with one wallet, but making payments with another. It may also be necessary on order to accomodate different implementations and lack of [interoperability]({{ '/guide/designing-products/interoperability/' | relative_url }})).
 
 {% include picture.html
-   image = "/assets/images/guide/sign-in-with-bitcoin/connected-wallets.png"
-   retina = "/assets/images/guide/sign-in-with-bitcoin/connected-wallets@2x.png"
+   image = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/connected-wallets.png"
+   retina = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/connected-wallets@2x.png"
    alt-text = "Browser window showing an account screen with a list of linked wallets"
    width = 800
    height = 411
@@ -151,9 +151,11 @@ If a user loses their wallet, they also lose their access to your service. Ensur
 
 ---
 
+Next, view our [resources]({{ '/guide/resources/' | relative_url }}) that can help you build better bitcoin products.
+
 {% include next-previous.html
-   previousUrl = "/guide/shared-wallet/"
-   previousName = "Shared wallet"
-   nextUrl = "/guide/upgradeable-wallet/"
-   nextName = "Upgradeable wallet"
+   previousUrl = "/guide/how-it-works/transactions/"
+   previousName = "Transactions"
+   nextUrl = "/guide/resources/"
+   nextName = "Resources"
 %}
