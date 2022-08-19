@@ -1,0 +1,194 @@
+---
+layout: guide
+title: Settings
+description: An overview of how to help users maintain their financial privacy while using a bitcoin daily spending wallet.
+nav_order: 10
+parent: Daily spending wallet
+permalink: /guide/daily-spending-wallet/settings/
+redirect_from:
+ - /guide/payments/settings/
+main_classes: -no-top-padding
+image: /assets/images/guide/daily-spending-wallet/settings/settings-preview.jpg
+image_base: /assets/images/guide/daily-spending-wallet/settings/
+images_general:
+    - file: general
+      alt:
+      caption:
+    - file: local-currency
+      alt:
+      caption:
+    - file: bitcoin-unit
+      alt:
+      caption:
+images_security:
+    - file: security
+      alt:
+      caption:
+    - file: delete-wallet
+      alt:
+      caption:
+images_network:
+    - file: network
+      alt:
+      caption:
+    - file: bitcoin-network
+      alt:
+      caption:
+    - file: lightning-network
+      alt:
+      caption:
+    - file: watchtower
+      alt:
+      caption:
+---
+
+{% include picture.html
+    image = "/assets/images/guide/daily-spending-wallet/settings/settings.jpg"
+    retina = "/assets/images/guide/daily-spending-wallet/settings/settings@2x.jpg"
+    mobile = "/assets/images/guide/daily-spending-wallet/settings/settings-mobile.jpg"
+    mobileRetina = "/assets/images/guide/daily-spending-wallet/settings/settings-mobile@2x.jpg"
+    caption = "How AI thinks Matisse would have visualized bitcoin settings."
+    width = 1600
+    height = 600
+    layout = "full-width"
+%}
+
+<!--
+
+
+-->
+
+# Settings
+{: .no_toc }
+
+---
+
+<div class="glossary-toc" markdown="1">
+ * Table of contents
+{:toc}
+</div>
+
+---
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/daily-spending-wallet/settings/overview.png"
+   retina = "/assets/images/guide/daily-spending-wallet/settings/overview@2x.png"
+   alt-text = ""
+   width = 250
+   height = 541
+   layout = "float-right-desktop -background -shadow"
+   caption = "The overview screen provides an easy-to-understand grouping of settings."
+%}
+
+As you probably noticed in previous pages, various settings can be configured contextually throughout the app experience (like [hiding and unhiding the balance]({{ '/guide/daily-spending-wallet/privacy/#hiding-sensitive-information' | relative_url }})). All these options, and a few extra ones, are bundled in the settings area.
+
+While not the most frequently visited part of an application, it fills an important functional role by giving users precise control over their experience.
+
+</div>
+
+## General
+
+This sub-section includes various non-essential settings that are not covered in the other categories and let users adjust the application to their context and personal preferences.
+
+{% include image-gallery.html pages = page.images_general %}
+
+## Fees
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/daily-spending-wallet/settings/fees.png"
+   retina = "/assets/images/guide/daily-spending-wallet/settings/fees@2x.png"
+   alt-text = ""
+   width = 250
+   height = 541
+   layout = "float-right-desktop -background -shadow"
+   caption = "Stuff"
+%}
+
+Paying fees for transactions is unavoidable and typically not something users appreciate. Being transparent and communicating them clearly in context (e.g. when [reviewing a payment]({{ '/guide/daily-spending-wallet/sending/#review--approval' | relative_url }}) before sending it) is crucial. Since contextual information is selective, this fee screen in settings is needed to provide a concise summary of all the types of fees that may be charged.
+
+During regular use, only lightning network fees will apply to transactions in this wallet. An additional fee may be charged for opening new channels to increase liquidity.
+
+If the users send to an on-chain address, a swap fee applies. This fee also applies if the user receives to an on-chain (swap) address, which may cause confusion as typically the sender is reponsible for paying fees.
+
+</div>
+
+## Privacy
+
+[Privacy]({{ '/guide/daily-spending-wallet/privacy/' | relative_url }}) settings are straightforward and focused on whether balances are visible or hidden.
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/daily-spending-wallet/settings/privacy.png"
+   retina = "/assets/images/guide/daily-spending-wallet/settings/privacy@2x.png"
+   alt-text = ""
+   width = 250
+   height = 541
+   layout = "float-right-desktop -background -shadow"
+   caption = "Stuff"
+%}
+
+</div>
+
+## Security
+
+[Security]({{ '/guide/daily-spending-wallet/security/' | relative_url }}) is all about preventing unwanted access to the application. Basic access options (PIN, FaceID) are configured during [first use]({{ '/guide/daily-spending-wallet/first-use/' | relative_url }}) and users receive regular reminders to review them. Wallet limits are an addition options only available in the settings to block potentially unwanted high-value payments.
+
+{% include image-gallery.html pages = page.images_security %}
+
+## Wallet backup
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/daily-spending-wallet/settings/wallet-backup.png"
+   retina = "/assets/images/guide/daily-spending-wallet/settings/wallet-backup@2x.png"
+   alt-text = ""
+   width = 250
+   height = 541
+   layout = "float-right-desktop -background -shadow"
+   caption = "Stuff"
+%}
+
+[First use]({{ '/guide/daily-spending-wallet/first-use/' | relative_url }}) also guides users towards appropriate [backup]({{ '/guide/daily-spending-wallet/backup-and-recovery/' | relative_url }}) options, and users may never need to access this screen. A unique piece of information is when the last cloud backup was performed. This can give users peace of mind that their information is securely backed up.
+
+</div>
+
+## Network
+
+Most users will not need or want to change network settings, but it is important to offer these features for those who do. While it may be personal preference for some, it may be a privacy or security matter for others to connect through services they personally maintain or trust. Interoperability is a core [design principle]({{ '/guide/getting-started/principles/#interoperability' | relative_url }}), and also makes the application more versatile.
+
+{% include image-gallery.html pages = page.images_network %}
+
+## Help & support
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/daily-spending-wallet/settings/help.png"
+   retina = "/assets/images/guide/daily-spending-wallet/settings/help@2x.png"
+   alt-text = ""
+   width = 250
+   height = 541
+   layout = "float-right-desktop -background -shadow"
+   caption = "Stuff"
+%}
+
+Blah.
+
+</div>
+
+---
+
+Next, let's dive into the [savings wallet reference design]({{ '/guide/savings-wallet/' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/daily-spending-wallet/privacy/"
+   previousName = "Privacy"
+   nextUrl = "/guide/savings-wallet/"
+   nextName = "Savings wallet"
+%}
