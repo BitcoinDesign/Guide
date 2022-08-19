@@ -145,14 +145,14 @@ Before creating a wallet backup via cloud backup, make sure the user knows what 
 <div class="center" markdown="1">
 
 {% include picture.html
-image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-error.png"
-retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-error@2x.png"
-modalImage = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-error@2x.png"
-alt-text = "Screen showing an error message for a failed auto cloud backup"
-caption = "This wallet notifies the user when there is a backup error and provides next steps"
-width = 250
-height = 541
-layout = "float-right-desktop -background -shadow"
+   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-error.png"
+   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-error@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-error@2x.png"
+   alt-text = "Screen showing an error message for a failed auto cloud backup"
+   caption = "This wallet notifies the user when there is a backup error and provides next steps"
+   width = 250
+   height = 541
+   layout = "float-right-desktop -background -shadow"
 %}
 
 In normal conditions, this wallet performs an automatic cloud backup after sending or receiving any payment. However, there could be situations where this fails to happen, such as an error or outage on the side of the cloud provider. Regardless of the reason, it's good to notify the user if there is a problem. This wallet offers a list of common issues and solutions, and also offers the ability to submit a support request.
