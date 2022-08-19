@@ -33,9 +33,9 @@ Illustration sources:
 
 # Wallet recovery
 
-There are several reasons why a user might need to restore their bitcoin wallet. They may have lost their device or accidentally deleted their wallet application. Perhaps they have simply bought a new phone and wish to migrate their wallet over. Regardless of why, it’s important that your wallet application has an easy way for users to recover their funds.
+There are several reasons why a user might need to restore their bitcoin wallet. They may have lost their phone or accidentally deleted their wallet application. Perhaps they have simply bought a new phone and wish to migrate their wallet over. Regardless of why, it’s important that your wallet application has an easy way for users to recover their funds.
 
-This wallet is designed to make the recovery process as easy as possible for the user. It can pull the user's channel state from cloud backup, allowing the user to pick up right where they left off. It will also sync contacts and metadata from the cloud backup, so there is no loss of useful transaction history. The private key can be pulled from a cloud backup or manually provided by the user.
+This wallet is designed to make the recovery process as easy as possible for the user. It can pull the user's channel state from the cloud backup, allowing the user to pick up right where they left off. It will also sync contacts and metadata from the cloud backup, so there is no loss of useful transaction history. The recovery phrase can be pulled from a cloud backup or manually provided by the user.
 
 ## Recovery Scenarios
 
