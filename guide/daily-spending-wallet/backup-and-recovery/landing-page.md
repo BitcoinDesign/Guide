@@ -50,7 +50,7 @@ Recent [studies](https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445679) show u
 
 ## When to talk about backup
 
-Because backup is so important, this wallet prompts the user to make a backup during the [user's first use]({{'/guide/daily-spending-wallet/first-use/' | relative_url}}). However, they are given the option to opt-out at this point. Many users may skip the backup during their first use. This is fine, as they may simply want to try out the wallet and see if it has the features they want before fully committing to using it.
+Because backup is so important, this wallet prompts the user to make a backup during their [first use]({{'/guide/daily-spending-wallet/first-use/' | relative_url}}). However, they are given the option to opt-out at this point. Many users may skip the backup during their first use. This is fine, as they may simply want to try out the wallet and see if it has the features they want before fully committing to using it.
 
 However, once they have [received funds for the first time]({{ '/guide/daily-spending-wallet/first-use/#receiving-the-deposit' | relative_url }}), they certainly have an incentive to perform a backup at that point. This wallet reminds the user to make their backup once they have received funds.
 
