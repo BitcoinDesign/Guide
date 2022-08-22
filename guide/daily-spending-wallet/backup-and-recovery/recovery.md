@@ -235,7 +235,7 @@ This involves a few more steps, but should work just as well as the auto cloud b
 
 {% include tip/open.html color="green" icon="check" label="Use autocomplete" %}
 
-This wallet makes the recovery process easier for the user by autocompleting the words of their recovery phrase as they type. Since recovery phrases are comprised of words from a predefined dictionary of 2,048 words, the app is able usually able to autocomplete or detect a typo with only 3 or 4 letters typed.
+This wallet makes the recovery process easier for the user by autocompleting the words of their recovery phrase as they type. Since recovery phrases are comprised of words from a predefined dictionary of 2,048 words, the app is usually able to autocomplete or detect a typo with only 3 or 4 letters typed.
 
 {% include tip/close.html %}
 
