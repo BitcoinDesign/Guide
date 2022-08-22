@@ -243,7 +243,7 @@ This wallet makes the recovery process easier for the user by autocompleting the
 
 ### Cloud backup screws up
 
-While this wallet will attempt to pull channel state from a cloud backup, there may be situations in which this does not work automatically. A simple example would be if the user setup the wallet on iOS but is migrating to Android. This could be remedied by allowing the user to specify another cloud account to use.
+While this wallet will attempt to pull channel state from a cloud backup, there may be situations in which this does not work automatically. A simple example would be if the user set up the wallet on iOS, but is migrating to Android. This could be remedied by allowing the user to specify another cloud account to use.
 
 <div class="image-slide-gallery">
 
