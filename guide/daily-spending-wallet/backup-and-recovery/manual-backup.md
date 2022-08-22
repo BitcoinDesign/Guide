@@ -251,7 +251,7 @@ Some non-sensitive data (such as the name of your wallet or the derivation path)
 
 This step is a great way to ensure and test that the user in question actually stored their recovery phrase in a way that allows them to access and recount it. This typically entails prompting them to recall the words, which can be done in multiple ways that are laid out below.
 
-{% include /tip/open.html label="Tip: Confirm User Understanding" icon="info" color="blue" %}
+{% include /tip/open.html label="Tip: Confirm user understanding" icon="info" color="blue" %}
 
 Try to make sure users understand your team cannot access their recovery phrase if they lose it. This drills in the importance of properly and securely storing it, reiterating that access to their funds is always in their own hands.
 
