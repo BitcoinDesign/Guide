@@ -12,33 +12,42 @@ image: /assets/images/guide/daily-spending-wallet/settings/settings-preview.jpg
 image_base: /assets/images/guide/daily-spending-wallet/settings/
 images_general:
     - file: general
-      alt:
+      modalImage: general-big
+      alt: Mobile screen showing a list of settings categories
       caption: General is a catch-all category for options that don't clearly fit elsewhere.
     - file: local-currency
-      alt:
+      modalImage: local-currency-big
+      alt: Mobile screen with a list of currencies to choose from
       caption: While it should be automatically detected, users can change their local currency.
     - file: bitcoin-unit
-      alt:
+      modalImage: bitcoin-unit-big
+      alt: Mobile screen with automatic, bitcoin, and satoshi options
       caption: The bitcoin unit can also be switched contextually in the send screen.
 images_security:
     - file: security
-      alt:
+      modalImage: security-big
+      alt: Mobile screen with PIN, FaceID, wallet deletion and wallet limit options
       caption: Options to limit unwanted access and payments.
     - file: delete-wallet
-      alt:
+      modalImage: delete-wallet-big
+      alt: Confirmation modal for deleting the wallet from the device
       caption: This screen requires very clear language to ensure users understand the implications.
 images_network:
     - file: network
-      alt:
+      modalImage: network-big
+      alt: Mobile screen with bitcoin and lightning network, as well as Tor options
       caption: Overview screen for network options.
     - file: bitcoin-network
-      alt:
+      modalImage: bitcoin-network-big
+      alt: Mobile screen with bitcoin network customization options
       caption: Users can choose their own node to connect to.
     - file: lightning-network
-      alt:
+      modalImage: lightning-network-big
+      alt: Mobile screen with lightning network customization options
       caption: Information about the users node, and additional security options.
     - file: watchtower
-      alt:
+      modalImage: watchtower-big
+      alt: Mobile screen with lightning network watchtower options
       caption: Users can enable watchtower functionality to protect their funds.
 ---
 
@@ -47,6 +56,7 @@ images_network:
     retina = "/assets/images/guide/daily-spending-wallet/settings/settings@2x.jpg"
     mobile = "/assets/images/guide/daily-spending-wallet/settings/settings-mobile.jpg"
     mobileRetina = "/assets/images/guide/daily-spending-wallet/settings/settings-mobile@2x.jpg"
+    alt-text = "An oil painting of a big, clunky machine with a big bitcoin gear"
     caption = "How AI thinks Matisse would have visualized bitcoin settings."
     width = 1600
     height = 600
@@ -55,6 +65,8 @@ images_network:
 
 <!--
 
+This is more of a summary page that bring together all the application settings that
+the user encounters throughout the app experience into a single, concise form.
 
 -->
 
@@ -72,9 +84,10 @@ images_network:
 
 <div class="center" markdown="1">
 
-{% include image.html
+{% include picture.html
    image = "/assets/images/guide/daily-spending-wallet/settings/overview.png"
    retina = "/assets/images/guide/daily-spending-wallet/settings/overview@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/settings/overview-big.png"
    alt-text = ""
    width = 250
    height = 541
@@ -98,9 +111,10 @@ This sub-section includes various non-essential settings that are not covered in
 
 <div class="center" markdown="1">
 
-{% include image.html
+{% include picture.html
    image = "/assets/images/guide/daily-spending-wallet/settings/fees.png"
    retina = "/assets/images/guide/daily-spending-wallet/settings/fees@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/settings/fees-big.png"
    alt-text = ""
    width = 250
    height = 541
@@ -112,7 +126,7 @@ Paying fees for transactions is unavoidable and typically not something users ap
 
 During regular use, only lightning network fees will apply to transactions in this wallet. An additional fee may be charged for opening new channels to increase liquidity.
 
-When users send to an on-chain address, a swap fee applies. This fee also applies if the user receives to an on-chain (swap) address, which may cause confusion as typically the sender is reponsible for paying fees.
+When users send to an on-chain address, a swap fee applies. This fee also applies if the user receives to an on-chain (swap) address. This may cause confusion, as typically the sender is reponsible for paying fees.
 
 </div>
 
@@ -120,9 +134,10 @@ When users send to an on-chain address, a swap fee applies. This fee also applie
 
 <div class="center" markdown="1">
 
-{% include image.html
+{% include picture.html
    image = "/assets/images/guide/daily-spending-wallet/settings/privacy.png"
    retina = "/assets/images/guide/daily-spending-wallet/settings/privacy@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/settings/privacy-big.png"
    alt-text = ""
    width = 250
    height = 541
@@ -130,7 +145,7 @@ When users send to an on-chain address, a swap fee applies. This fee also applie
    caption = "Privay options focus on the display of sensitive data."
 %}
 
-[Privacy]({{ '/guide/daily-spending-wallet/privacy/' | relative_url }}) settings are straightforward and focused on whether balances are visible or hidden. Much of the responsibility to ensure good privacy rests in the hands of the developers.
+[Privacy]({{ '/guide/daily-spending-wallet/privacy/' | relative_url }}) settings are straightforward and focused on whether balances are visible or hidden. While there are some best practices for users, much of the responsibility to ensure good privacy rests in the hands of the developers.
 
 </div>
 
@@ -144,9 +159,10 @@ When users send to an on-chain address, a swap fee applies. This fee also applie
 
 <div class="center" markdown="1">
 
-{% include image.html
+{% include picture.html
    image = "/assets/images/guide/daily-spending-wallet/settings/wallet-backup.png"
    retina = "/assets/images/guide/daily-spending-wallet/settings/wallet-backup@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/settings/wallet-backup-big.png"
    alt-text = ""
    width = 250
    height = 541
@@ -168,9 +184,10 @@ Most users will not need or want to change network settings, but it is important
 
 <div class="center" markdown="1">
 
-{% include image.html
+{% include picture.html
    image = "/assets/images/guide/daily-spending-wallet/settings/help.png"
    retina = "/assets/images/guide/daily-spending-wallet/settings/help@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/settings/help-big.png"
    alt-text = ""
    width = 250
    height = 541
