@@ -13,33 +13,33 @@ image_base: /assets/images/guide/daily-spending-wallet/settings/
 images_general:
     - file: general
       alt:
-      caption:
+      caption: General is a catch-all category for options that don't clearly fit elsewhere.
     - file: local-currency
       alt:
-      caption:
+      caption: While it should be automatically detected, users can change their local currency.
     - file: bitcoin-unit
       alt:
-      caption:
+      caption: The bitcoin unit can also be switched contextually in the send screen.
 images_security:
     - file: security
       alt:
-      caption:
+      caption: Options to limit unwanted access and payments.
     - file: delete-wallet
       alt:
-      caption:
+      caption: This screen requires very clear language to ensure users understand the implications.
 images_network:
     - file: network
       alt:
-      caption:
+      caption: Overview screen for network options.
     - file: bitcoin-network
       alt:
-      caption:
+      caption: Users can choose their own node to connect to.
     - file: lightning-network
       alt:
-      caption:
+      caption: Information about the users node, and additional security options.
     - file: watchtower
       alt:
-      caption:
+      caption: Users can enable watchtower functionality to protect their funds.
 ---
 
 {% include picture.html
@@ -105,20 +105,18 @@ This sub-section includes various non-essential settings that are not covered in
    width = 250
    height = 541
    layout = "float-right-desktop -background -shadow"
-   caption = "Stuff"
+   caption = "The fees screen provides a clear overview of all fees that may be charged."
 %}
 
 Paying fees for transactions is unavoidable and typically not something users appreciate. Being transparent and communicating them clearly in context (e.g. when [reviewing a payment]({{ '/guide/daily-spending-wallet/sending/#review--approval' | relative_url }}) before sending it) is crucial. Since contextual information is selective, this fee screen in settings is needed to provide a concise summary of all the types of fees that may be charged.
 
 During regular use, only lightning network fees will apply to transactions in this wallet. An additional fee may be charged for opening new channels to increase liquidity.
 
-If the users send to an on-chain address, a swap fee applies. This fee also applies if the user receives to an on-chain (swap) address, which may cause confusion as typically the sender is reponsible for paying fees.
+When users send to an on-chain address, a swap fee applies. This fee also applies if the user receives to an on-chain (swap) address, which may cause confusion as typically the sender is reponsible for paying fees.
 
 </div>
 
 ## Privacy
-
-[Privacy]({{ '/guide/daily-spending-wallet/privacy/' | relative_url }}) settings are straightforward and focused on whether balances are visible or hidden.
 
 <div class="center" markdown="1">
 
@@ -129,14 +127,16 @@ If the users send to an on-chain address, a swap fee applies. This fee also appl
    width = 250
    height = 541
    layout = "float-right-desktop -background -shadow"
-   caption = "Stuff"
+   caption = "Privay options focus on the display of sensitive data."
 %}
+
+[Privacy]({{ '/guide/daily-spending-wallet/privacy/' | relative_url }}) settings are straightforward and focused on whether balances are visible or hidden. Much of the responsibility to ensure good privacy rests in the hands of the developers.
 
 </div>
 
 ## Security
 
-[Security]({{ '/guide/daily-spending-wallet/security/' | relative_url }}) is all about preventing unwanted access to the application. Basic access options (PIN, FaceID) are configured during [first use]({{ '/guide/daily-spending-wallet/first-use/' | relative_url }}) and users receive regular reminders to review them. Wallet limits are an addition options only available in the settings to block potentially unwanted high-value payments.
+[Security]({{ '/guide/daily-spending-wallet/security/' | relative_url }}) is all about preventing unwanted access to the application. Basic access options (PIN, FaceID) are configured during [first use]({{ '/guide/daily-spending-wallet/first-use/' | relative_url }}) and users receive regular reminders to review them. Wallet limits are an additional option, only available in settings, to block potentially unwanted high-value payments.
 
 {% include image-gallery.html pages = page.images_security %}
 
@@ -151,10 +151,10 @@ If the users send to an on-chain address, a swap fee applies. This fee also appl
    width = 250
    height = 541
    layout = "float-right-desktop -background -shadow"
-   caption = "Stuff"
+   caption = "Backup options are typically configured in first use and rarely need to be accessed."
 %}
 
-[First use]({{ '/guide/daily-spending-wallet/first-use/' | relative_url }}) also guides users towards appropriate [backup]({{ '/guide/daily-spending-wallet/backup-and-recovery/' | relative_url }}) options, and users may never need to access this screen. A unique piece of information is when the last cloud backup was performed. This can give users peace of mind that their information is securely backed up.
+[First use]({{ '/guide/daily-spending-wallet/first-use/' | relative_url }}) also guides users towards appropriate [backup]({{ '/guide/daily-spending-wallet/backup-and-recovery/' | relative_url }}) options, and users may never need to access this screen. A unique piece of information here is when the last cloud backup was performed. This can give users peace of mind that their information is securely backed up.
 
 </div>
 
@@ -175,10 +175,10 @@ Most users will not need or want to change network settings, but it is important
    width = 250
    height = 541
    layout = "float-right-desktop -background -shadow"
-   caption = "Stuff"
+   caption = "Help & support options ensure users can get the right information when they need it."
 %}
 
-Blah.
+Open-source projects do not have large support teams, but instead often rely on their communities and forum discussion to allow users to help each other. Contributors are also part of this activity, but usually cannot dedicate time to address all support needs. Therefore it is important to provide several different methods to get help, it distributes the burden of support across documentation, community, and contributors.
 
 </div>
 
