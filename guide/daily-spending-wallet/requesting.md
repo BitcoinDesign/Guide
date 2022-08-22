@@ -55,9 +55,9 @@ Payment requests come in many different formats. Each has unique properties and 
 
 ## Requesting entry point
 
-Creating payment requests should be simple and fast. In this wallet, users can initiate the send process from the home screen directly after entering the app. Users can directly enter an amount to request from the home screen to initiate the flow.
+The wallet described in this reference design is for daily spending. That means creating payments should be simple and fast. As a result, this wallet lets the user send bitcoin directly from the home screen.
 
-Avoid showing the users balance alongside your requesting entry point. When requesting payments in person, this could reveal the users balance to near by on-lookers, negatively affecting the users privacy. More on this [here](https://d.elor.me/2021/11/hiding-wallet-balances/).
+Avoid showing the user’s balance on the home or requesting page. When requesting payments in person, this could reveal the user’s balance to nearby on-lookers, negatively affecting the user’s privacy. More on this [here](https://d.elor.me/2021/11/hiding-wallet-balances/).
 
 <div class="image-slide-gallery">
 
@@ -66,7 +66,7 @@ Avoid showing the users balance alongside your requesting entry point. When requ
    retina = "/assets/images/guide/daily-spending-wallet/requesting/Home@2x.png"
    modalImage = "/assets/images/guide/daily-spending-wallet/requesting/Home@2x.png"
    layout = "shadow"
-   caption = "Users can start the request flow as soon as they open their app."
+   caption = "Putting a number pad on the home screen makes the requesting process simple and fast."
    alt-text = "Screen showing the users home page with a number pad that can be used to initiate a request."
    width = 250
    height = 541
@@ -79,8 +79,8 @@ Avoid showing the users balance alongside your requesting entry point. When requ
    retina = "/assets/images/guide/daily-spending-wallet/requesting/HomeBalance@2x.png"
    modalImage = "/assets/images/guide/daily-spending-wallet/requesting/HomeBalance@2x.png"
    layout = "shadow"
-   caption = "Avoid showing the users balance alongside the requesting entry point to prevent privacy and security issues."
-   alt-text = "Screen showing home screen showing the users balance."
+   caption = "❌ Showing a wallet balance on the requesting screen affects the user’s privacy by revealing it to nearby on-lookers."
+   alt-text = "Screen showing home screen with the users balance also shown."
    width = 250
    height = 541
    modalWidth = 250
@@ -91,9 +91,9 @@ Avoid showing the users balance alongside your requesting entry point. When requ
 
 ## Entering an amount
 
-Once the user is on the requesting entry point, the next thing to do is add an amount to be requested. Users should be able easily toggle between entering amounts in sats, bitcoin, or the users local currency by single tapping the amount field. More on entering amounts on our [Units & Symbols page]({{ "/guide/designing-products/units-and-symbols/" | relative_url }}).
+From the requesting page, the user types in an amount. This wallet allows the user to easily toggle between entering amounts in sats, bitcoin, or their local currency. If the user has an amount entered and switches units, it clears the input field. This prevents the user from requesting an amount they didn't intend. Read more on entering amounts on our [Units & Symbols page]({{ "/guide/designing-products/units-and-symbols/" | relative_url }}).
 
-Users can also skip entering an amount, as there are scenarios where the sender is deciding the amount to send. Requests without an amount also limit both parties exposure to price volatility, as the bitcoin price in fiat terms could change between requesting and the payment being sent.
+Users can also skip entering an amount, as there are scenarios where the user may want the sender to decide the amount. Zero-amount requests also limit both parties exposure to price volatility as the bitcoin price in fiat terms could change between requesting and the payment being sent.
 
 <div class="image-slide-gallery">
 
@@ -127,13 +127,13 @@ Users can also skip entering an amount, as there are scenarios where the sender 
 
 ## Creating the request
 
-Once an amount is decided, the user clicks the `Request` button and is navigated to the next screen for sharing the generated payment request.
+After entering an amount, the user taps the request button. The app generates and presents a payment request.
 
 This wallet defaults to a [unified payment request]({{ "/guide/how-it-works/payment-request-formats/#unified-payment-requests" | relative_url }}). These combine a [lightning invoice]({{ "/guide/how-it-works/payment-request-formats/#invoice" | relative_url }}) and an [on-chain address]({{ "/guide/how-it-works/payment-request-formats/#addresses" | relative_url }}) into a single payment request using BIP21. 
 
 Unified requests remove the friction of users having to choose between requesting with lightning or on-chain, which can be confusing, especially for new users. 
 
-The on-chain addresses used in this wallet are swap-addresses. They move received bitcoin into the users payment channels in a trust-minimized, non-custodial manner using [submarine swaps](https://thebitcoinmanual.com/articles/btc-submarine-swaps/). This is so users can avoid having both an on-chain and lightning balance. We cover these more in our [lightning services]({{ "/guide/how-it-works/lightning-services/#swaps" | relative_url }}) and receiving page.
+This wallet’s on-chain addresses are all swap addresses. These help with moving received bitcoin into the user’s lightning balance. This results in a single lightning balance and avoids a separate on-chain balance. This simplified experience is trust-minimized and non-custodial thanks to [submarine swaps](https://thebitcoinmanual.com/articles/btc-submarine-swaps/). We cover these more in our [lightning services]({{ "/guide/how-it-works/lightning-services/#swaps" | relative_url }}) and receiving pages.
 
 As unified requests [aren't widely supported yet](https://bitcoinqr.dev/), and users may want to request just from lightning or on-chain, they have options to share the lightning invoice or on-chain address independently. 
 
@@ -150,7 +150,7 @@ Receive lightning payments requires a user to be online. To keep users online an
    retina = "/assets/images/guide/daily-spending-wallet/requesting/Unified@2x.png"
    modalImage = "/assets/images/guide/daily-spending-wallet/requesting/Unified@2x.png"
    layout = "shadow"
-   caption = "Unified payment requests combine a lightning and on-chain request into a single payment request."
+   caption = "Unified payment requests combine lightning and on-chain requests, so users don’t have to worry about which to use."
    alt-text = "Screen showing a unified payment request in QR format."
    width = 250
    height = 541
@@ -189,13 +189,38 @@ Receive lightning payments requires a user to be online. To keep users online an
    retina = "/assets/images/guide/daily-spending-wallet/requesting/RequestToggle@2x.png"
    modalImage = "/assets/images/guide/daily-spending-wallet/requesting/RequestToggle@2x.png"
    layout = "shadow"
-   caption = "Avoid users having to choose between requesting with lightning or on-chain."
+   caption = "❌ Avoid users having to choose between requesting with lightning or on-chain."
    alt-text = "Screen showing a toggle between lightning and on-chain request."
    width = 250
    height = 541
    modalWidth = 250
    modalHeight = 541
 %}
+
+</div>
+
+## Metadata
+
+<div class="center" markdown="1">
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/requesting/Fees@2x.png"
+   retina = "/assets/images/guide/daily-spending-wallet/requesting/Fees@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/Fees@2x.png"
+   layout = "float-left-desktop -background -shadow"
+   caption = "Let users know if fees will be charged."
+   alt-text = "Screen showing a payment request with setup fees shown."
+   width = 250
+   height = 541
+   modalWidth = 250
+   modalHeight = 541
+%}
+
+Metadata is additional information that is part of or can be added to a payment request. This can include an amount, note, or name for the sender. Or for the requester, labels, or [assigning a contact]({{ "/guide/daily-spending-wallet/contacts/#adding-a-contact-to-an-outgoing-invoice" | relative_url }}).
+
+Expiration times are something unique to lightning invoices. We cover modifying these [here]({{ "/guide/daily-spending-wallet/requesting/#invoice-expirations" | relative_url }}).
+
+Ensure users can [backup]({{ "/guide/daily-spending-wallet/backup-and-recovery/landing-page/" | relative_url }}) this metadata to prevent them from losing their transaction history.
 
 </div>
 
@@ -277,29 +302,6 @@ Any fees the user may incur should be communicated alongside payment requests so
 
 </div>
 
-## Metadata
-
-<div class="center" markdown="1">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/metadata.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/metadata@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/metadata@2x.png"
-   width = 250
-   height = 541
-   caption = "Let users add metadata to their created payment requests."
-   alt-text = "Screen showing a menu with various metadata options for a payment request."
-   layout = "float-left-desktop -background -shadow"
-%}
-
-Metadata is additional information that is part of or can be added to a payment request. This can include an amount, note, or name for the sender. Or for the requester, labels, or [assigning a contact]({{ "/guide/daily-spending-wallet/contacts/#adding-a-contact-to-an-outgoing-invoice" | relative_url }}).
-
-Expiration times are something unique to lightning invoices. We cover modifying these [here]({{ "/guide/daily-spending-wallet/requesting/#invoice-expirations" | relative_url }}).
-
-Ensure users can [backup]({{ "/guide/daily-spending-wallet/backup-and-recovery/landing-page/" | relative_url }}) this metadata to prevent them from losing their transaction history.
-
-</div>
-
 ## Sharing the request
 
 Once the request is created, the next action is to share it. Below are ways in which bitcoin requests are commonly shared.
@@ -320,7 +322,7 @@ Requests can be shared wirelessly over short distances using [near-field communi
 
 ### Payment link
 
-Payment links use a BIP21 [URI]({{ "/guide/how-it-works/payment-request-formats/#uniform-resource-identifier-uris-schemes" | relative_url }}) `bitcoin:` which makes these readable by other bitcoin applications. These can be included as part of a button or hypertext link.
+Payment links use a BIP21 [URI]({{ "/guide/how-it-works/payment-request-formats/#uniform-resource-identifier-uris-schemes" | relative_url }}) `bitcoin:` which makes these readable by other bitcoin applications. These can be included as part of a button or hyperlink.
 
 <div class="image-slide-gallery">
 
@@ -378,63 +380,6 @@ Payment links use a BIP21 [URI]({{ "/guide/how-it-works/payment-request-formats/
 
 </div>
 
-## Payment addresses
-
-Payment addresses, also known as [reusable payment requests]({{ "/guide/how-it-works/payment-request-formats/#invoice-protocols" | relative_url }}), are requests that can receive more than a single payment and can offer unique use cases, features, and improved usability. 
-
-This wallet auto-generates a [BOLT-12]({{ "/guide/how-it-works/payment-request-formats/#offers" | relative_url }}) payment address that users can quickly open and share from their settings page to receive once of payments of recurring payments, say for tipping on the users website.
-
-Due to the unique use cases of payment addresses, they are created, managed and shared in a separate area within this wallet.
-
-{% include /tip/open.html label="Payment address adoption" icon="info" color="blue" %}
-
-Payment addresses are not yet widely supported. If supporting these it should be clear to users that they are experimental and that not all wallets may be able to send to the payment address chosen.
-
-{% include /tip/close.html %}
-
-<div class="image-slide-gallery">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/PaymentAddress.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/PaymentAddress@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/PaymentAddress@2x.png"
-   layout = "shadow"
-   caption = "Payment addresses should are managed in the settings."
-   alt-text = "Screen showing the users settings with a QR icon in the top left that opens a payment address."
-   width = 250
-   height = 541
-   modalWidth = 250
-   modalHeight = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/PaymentAddressQR.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/PaymentAddressQR@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/PaymentAddressQR@2x.png"
-   layout = "shadow"
-   caption = "This wallet can quickly open and share a payment address by clicking the QR code in the top left of the settings page."
-   alt-text = "Screen showing QR code of a payment address."
-   width = 250
-   height = 541
-   modalWidth = 250
-   modalHeight = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/PaymentAddresses.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/PaymentAddresses@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/PaymentAddresses@2x.png"
-   layout = "shadow"
-   caption = "Allow users to manage payment addresses separately  if your app supports multiple."
-   alt-text = "Screen showing list of different payment addresses."
-   width = 250
-   height = 541
-   modalWidth = 250
-   modalHeight = 541
-%}
-
-</div>
-
 ---
 
 ## Advanced options
@@ -458,12 +403,12 @@ For some background on situations the user might encounter with different invoic
 <div class="image-slide-gallery">
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/Metadata.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/Metadata@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/Metadata@2x.png"
+   image = "/assets/images/guide/daily-spending-wallet/requesting/Fees@2x.png"
+   retina = "/assets/images/guide/daily-spending-wallet/requesting/Fees@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/Fees@2x.png"
    layout = "shadow"
-   caption = "Lightning invoices expire after a set amount of time. This can be adjusted for different use cases."
-   alt-text = "Screen showing metadata options with expiration option at the bottom."
+   caption = "Let users know if fees will be charged."
+   alt-text = "Screen showing a payment request with setup fees shown."
    width = 250
    height = 541
    modalWidth = 250
