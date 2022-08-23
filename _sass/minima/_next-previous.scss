@@ -3,12 +3,86 @@
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   &.--end {
     justify-content: flex-end;
   }
 
-  a {
+  &--feedback {
+    position: relative;
+
+    button {
+      appearance: none;
+      background-color: transparent;
+      border-width: 0;
+      font-size: 18px;
+      color: rgba(black, 0.72);
+      transition: all 150ms $ease;
+
+      &:hover {
+        color: $primary-color;
+        text-decoration: underline;
+      }
+    }
+
+    &__wrap {
+      position: relative;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: 14px;
+        height: 14px;
+        transform:  translate(-50%, 8px) rotate(-45deg);
+        border-bottom: 1px solid black;
+        border-left: 1px solid black;
+        background-color: white;
+      }
+    }
+
+    &__options {
+      position: absolute;
+      left: 50%;
+      bottom: 130%;
+      transform: translate(-50%, 0);
+      background-color: white;
+      border: 1px solid black;
+      padding: 15px;
+
+      a {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        font-size: 18px;
+        white-space: nowrap;
+        color: rgba(black, 0.72);
+        transition: all 150ms $ease;
+
+        svg {
+          transition: all 150ms $ease;
+        }
+
+        &:hover {
+          color: $primary-color;
+          text-decoration: none;
+
+          svg {
+            fill: $primary-color !important;
+          }
+        }
+
+        & + a {
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  > a {
     display: flex;
     border: 1px solid black;
     color: black;
@@ -47,6 +121,18 @@
     &:hover {
       color: $primary-color;
       border-color: $primary-color;
+    }
+  }
+
+  @include media-query(small) {
+    flex-wrap: wrap;
+
+    .next-previous--feedback {
+      display: flex;
+      order: 3;
+      flex-basis: 100%;
+      justify-content: center;
+      padding-top: 25px;
     }
   }
 }
