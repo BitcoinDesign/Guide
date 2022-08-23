@@ -139,7 +139,7 @@ As unified requests [aren't widely supported yet](https://bitcoinqr.dev/), and u
 
 {% include tip/recommendation.html %}
 
-Receive lightning payments requires a user to be online. To keep users online and prevent payment failures, inform them to keep their app open until the payment is received when they create a request. [Receiving payments offline]({{ "/guide/how-it-works/lightning-services/#receive-payments-offline" | relative_url }}) is still a work in progress.
+Receiving lightning payments requires a user to be online. To keep users online and prevent payment failures, inform them to keep their app open until the payment is received when they create a request. [Receiving payments offline]({{ "/guide/how-it-works/lightning-services/#receive-payments-offline" | relative_url }}) is still a work in progress.
 
 {% include tip/close.html %}
 
@@ -220,7 +220,7 @@ Metadata is additional information that is part of or can be added to a payment 
 
 Expiration times are something unique to lightning invoices. We cover modifying these [here]({{ "/guide/daily-spending-wallet/requesting/#invoice-expirations" | relative_url }}).
 
-Ensure users can [backup]({{ "/guide/daily-spending-wallet/backup-and-recovery/landing-page/" | relative_url }}) this metadata to prevent them from losing their transaction history.
+Ensure users can [back up]({{ "/guide/daily-spending-wallet/backup-and-recovery/landing-page/" | relative_url }}) this metadata to prevent them from losing their transaction history.
 
 </div>
 
@@ -403,12 +403,12 @@ For some background on situations the user might encounter with different invoic
 <div class="image-slide-gallery">
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/Fees@2x.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/Fees@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/Fees@2x.png"
+   image = "/assets/images/guide/daily-spending-wallet/requesting/Settings.png"
+   retina = "/assets/images/guide/daily-spending-wallet/requesting/Settings@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/Settings@2x.png"
    layout = "shadow"
-   caption = "Let users know if fees will be charged."
-   alt-text = "Screen showing a payment request with setup fees shown."
+   caption = "Changing the expiration time should be done in an advanced settings menu option."
+   alt-text = "Screen showing the users settings."
    width = 250
    height = 541
    modalWidth = 250
