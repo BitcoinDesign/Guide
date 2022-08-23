@@ -44,7 +44,7 @@ images_network:
     - file: lightning-network
       modalImage: lightning-network-big
       alt: Mobile screen with lightning network customization options
-      caption: Information about the users node, and additional security options.
+      caption: Information about the user’s node, and additional security options.
     - file: watchtower
       modalImage: watchtower-big
       alt: Mobile screen with lightning network watchtower options
@@ -128,7 +128,7 @@ Paying fees for transactions is unavoidable and typically not something users ap
 
 During regular use, only lightning network fees will apply to transactions in this wallet. An additional fee may be charged for opening new channels to increase liquidity.
 
-When users send to an on-chain address, a swap fee applies. This fee also applies if the user receives to an on-chain (swap) address. This may cause confusion, as typically the sender is reponsible for paying fees.
+When users send to an on-chain address, a swap fee applies. This fee also applies if the user receives to an on-chain (swap) address. This may cause confusion, as typically, the sender is responsible for paying fees.
 
 </div>
 
@@ -144,7 +144,7 @@ When users send to an on-chain address, a swap fee applies. This fee also applie
    width = 250
    height = 541
    layout = "float-right-desktop -background -shadow"
-   caption = "Privay options focus on the display of sensitive data."
+   caption = "Privacy options focus on the display of sensitive data."
 %}
 
 [Privacy]({{ '/guide/daily-spending-wallet/privacy/' | relative_url }}) settings are straightforward and focused on whether balances are visible or hidden. While there are some best practices for users, much of the responsibility to ensure good privacy rests in the hands of the developers.
@@ -153,7 +153,7 @@ When users send to an on-chain address, a swap fee applies. This fee also applie
 
 ## Security
 
-[Security]({{ '/guide/daily-spending-wallet/security/' | relative_url }}) is all about preventing unwanted access to the application. Basic access options (PIN, FaceID) are configured during [first use]({{ '/guide/daily-spending-wallet/first-use/' | relative_url }}) and users receive regular reminders to review them. Wallet limits are an additional option, only available in settings, to block potentially unwanted high-value payments.
+[Security]({{ '/guide/daily-spending-wallet/security/' | relative_url }}) is all about preventing unwanted access to the application. Basic access options (PIN, FaceID) are configured during [first use]({{ '/guide/daily-spending-wallet/first-use/' | relative_url }}), and users receive regular reminders to review them. Wallet limits are an additional option, only available in settings, to block potentially unwanted high-value payments.
 
 {% include image-gallery.html pages = page.images_security %}
 
@@ -172,13 +172,13 @@ When users send to an on-chain address, a swap fee applies. This fee also applie
    caption = "Backup options are typically configured in first use and rarely need to be accessed."
 %}
 
-[First use]({{ '/guide/daily-spending-wallet/first-use/' | relative_url }}) also guides users towards appropriate [backup]({{ '/guide/daily-spending-wallet/backup-and-recovery/' | relative_url }}) options, and users may never need to access this screen. A unique piece of information here is when the last cloud backup was performed. This can give users peace of mind that their information is securely backed up.
+[First use]({{ '/guide/daily-spending-wallet/first-use/' | relative_url }}) also guides users towards appropriate [backup]({{ '/guide/daily-spending-wallet/backup-and-recovery/' | relative_url }}) options, and users may never need to access this screen. A unique piece of information here is when the last cloud backup was performed. This can give users peace of mind that their information is securely being backed up.
 
 </div>
 
 ## Network
 
-Most users will not need or want to change network settings, but it is important to offer these features for those who do. While it may be personal preference for some, it may be a privacy or security matter for others to connect through services they personally maintain or trust. Interoperability is a core [design principle]({{ '/guide/getting-started/principles/#interoperability' | relative_url }}), and also makes the application more versatile.
+Most users will not need or want to change network settings, but it is important to offer these features for those who do. While it may be personal preference for some, it may be a privacy or security matter for others to connect through services they personally maintain or trust. Interoperability is a core [design principle]({{ '/guide/getting-started/principles/#interoperability' | relative_url }}) and also makes the application more versatile.
 
 {% include image-gallery.html pages = page.images_network %}
 
@@ -197,7 +197,7 @@ Most users will not need or want to change network settings, but it is important
    caption = "Help & support options ensure users can get the right information when they need it."
 %}
 
-Open-source projects do not have large support teams, but instead often rely on their communities and forum discussion to allow users to help each other. Contributors are also part of this activity, but usually cannot dedicate time to address all support needs. Therefore it is important to provide several different methods to get help, it distributes the burden of support across documentation, community, and contributors.
+Open-source projects do not have large support teams but instead often rely on their communities and forum discussion to allow users to help each other. Contributors are also part of this activity but usually cannot dedicate time to address all support needs. Therefore it is important to provide several different methods to get help. It distributes the burden of support across documentation, community, and contributors.
 
 </div>
 
