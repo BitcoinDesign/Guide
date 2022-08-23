@@ -147,7 +147,7 @@ Users may migrate wallets and want to link their existing account to a new walle
 
 ## Recovery
 
-If a user loses their wallet, they also lose their access to your service. Ensure you have a recovery mechanism in place. This could be a single-use recovery code (as is a common pattern with [multi-factor authentication](https://en.wikipedia.org/wiki/Multi-factor_authentication)) or a traditional email & password setup that you can also use for other communication with the user.
+If a user loses their wallet, they also lose their access to your service. Ensure you have a recovery mechanism in place. This could be a single-use recovery code (as is a common pattern with [multi-factor authentication](https://en.wikipedia.org/wiki/Multi-factor_authentication)) or a traditional email that you can also use for other communication with the user.
 
 ---
 
