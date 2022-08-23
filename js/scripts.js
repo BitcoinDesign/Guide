@@ -313,14 +313,15 @@ function setupFeedbackModal() {
                 var self = event.currentTarget;
                 var container = self.parentElement;
                 var options = container.querySelector('.next-previous--feedback__options');
-                if(container.classList.contains('-active')) {
-                    options.setAttribute("hidden", "hidden");
-                    options.setAttribute("aria-expanded", false);
-                    self.setAttribute("aria-expanded", true);
-                } else {
+                console.log('attr', options.hasAttribute('hidden'));
+                if(options.hasAttribute('hidden')) {
                     options.removeAttribute("hidden");
                     options.setAttribute("aria-expanded", true);
                     self.setAttribute("aria-expanded", false);
+                } else {
+                    options.setAttribute("hidden", "hidden");
+                    options.setAttribute("aria-expanded", false);
+                    self.setAttribute("aria-expanded", true);
                 }
             })
         }

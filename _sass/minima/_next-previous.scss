@@ -47,8 +47,8 @@
     &__options {
       position: absolute;
       left: 50%;
-      bottom: 130%;
-      transform: translate(-50%, 0);
+      bottom: 100%;
+      transform: translate(-50%, -15px);
       background-color: white;
       border: 1px solid black;
       padding: 15px;
@@ -133,6 +133,10 @@
       flex-basis: 100%;
       justify-content: center;
       padding-top: 25px;
+
+      &__options {
+        transform: translate(-50%, 5px);
+      }
     }
   }
 }
