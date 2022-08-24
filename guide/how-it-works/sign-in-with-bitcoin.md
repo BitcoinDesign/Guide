@@ -136,6 +136,15 @@ Typically, your service will prompt the user for a payment when the user tries t
 
 Allowances (requiring a direct connection) allow for automatic approval of payments by wallets up to certain amounts. This reduces friction for users that frequently transact. With an allowance, the modal window in the visualization above would not be needed. Ensure your interface provides user feedback when payments are confirmed.
 
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/bridged-payment-request.png"
+   retina = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/bridged-payment-request@2x.png"
+   alt-text = "Bridged payment flow between a website and a mobile device via QR code scan"
+   caption = "Making payments via a bridged connection has more friction."
+   width = 800
+   height = 411
+%}
+
 An alternative to reducing friction for frequent payments is to let users deposit satoshi into their accounts (and later withdraw them). This puts the service into a custodial position for the benefit of smoother payments (since they only involve database updates and not actual lightning payments).
 
 ## Connecting multiple wallets
