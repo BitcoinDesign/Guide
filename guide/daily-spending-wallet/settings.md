@@ -124,7 +124,7 @@ This sub-section includes various non-essential settings that are not covered in
    caption = "The fees screen provides a clear overview of all fees that may be charged."
 %}
 
-Paying fees for transactions is unavoidable and typically not something users appreciate. Being transparent and communicating them clearly in context (e.g. when [reviewing a payment]({{ '/guide/daily-spending-wallet/sending/#review--approval' | relative_url }}) before sending it) is crucial. Since contextual information is selective, this fee screen in settings is needed to provide a concise summary of all the types of fees that may be charged.
+Paying fees for transactions is unavoidable and typically not something users enjoy. Being transparent and communicating them clearly in context (e.g. when [reviewing a payment]({{ '/guide/daily-spending-wallet/sending/#review--approval' | relative_url }}) before sending it) is crucial. Since contextual information is selective, this fee screen in settings is needed to provide a concise summary of all the types of fees that may be charged.
 
 During regular use, only lightning network fees will apply to transactions in this wallet. An additional fee may be charged for opening new channels to increase liquidity.
 
