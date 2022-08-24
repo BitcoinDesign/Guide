@@ -21,64 +21,39 @@ Illustration sources:
 -->
 
 {% include picture.html
-image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/backing-up-a-wallet-manual.png"
-retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/backing-up-a-wallet-manual@2x.png"
-mobile = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/backing-up-a-wallet-manual-mobile.png"
-mobileRetina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/backing-up-a-wallet-manual-mobile@2x.png"
-alt-text = "Backing up a recovery phrase chapter header image"
-width = 1600
-height = 600
-layout = "full-width"
+   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/backing-up-a-wallet-manual.png"
+   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/backing-up-a-wallet-manual@2x.png"
+   mobile = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/backing-up-a-wallet-manual-mobile.png"
+   mobileRetina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/backing-up-a-wallet-manual-mobile@2x.png"
+   alt-text = "Backing up a recovery phrase chapter header image"
+   width = 1600
+   height = 600
+   layout = "full-width"
 %}
 
 # Manual backup
 
-## Backing up channel state
+The daily spending wallet described in this reference design is designed to make backup as easy as possible for the user. As a result, the default flow is one where the user opts-in to a cloud backup.
 
-A channel state backup is typically a file which includes information about the user's channel balances. This file can be downloaded onto the user's device and used to restore the Lightning channel state on another device. This could be a database of the most current channel balance information, or a static backup (as an absolute last resort).
+However, some users may not be comfortable with the idea of their recovery phrase on a cloud server. So in accordance with the design principles of [self-custody]({{ '/guide/getting-started/principles/#self-custody' | relative_url }}) and [transparency]({{ '/guide/getting-started/principles/#transparency' | relative_url }}), this wallet also offers a manual backup option.
 
-{% include tip/open.html color="red" icon="forbid" label="Manual channel state backups are for advanced users" %}
+## A note about channel state
 
-Manual backups of Lightning channel state should only be performed with careful consideration. This is because the channel state backup may become outdated very quickly, and attempting to restore from an outdated backup could harm the user's funds. In the interest of adhering to the principles of [self-custody]({{ '/guide/getting-started/principles/#self-custody' | relative_url }}) and [transparency]({{ '/guide/getting-started/principles/#transparency' | relative_url }}), you may choose to allow your user to perform a manual channel state backup. However, this is not recommended for the majority of users. If this option is available, keep it tucked away in a settings menu and prepend a warning that the option is only for advanced users.
+The lightning channel state is subject to change frequently, particularly if the user truly uses the daily spending wallet every day as the name would imply. As a result, we can’t think about the channel state as being a one-time backup. Channel state must be backed-up everytime the state is updated.
 
-{% include tip/close.html %}
+As a result, this wallet requires channel state to be backed up automatically to a cloud provider on each payment. Allowing for it to be backed up manually would create a false sense of security and will likely result in user error.
 
-## Backing up wallet recovery data
+This requirement is designed to protect the user. In the event that a 3rd party manages to obtain the channel state from the cloud storage, there is not a lot they can do because it is encrypted using the user's recovery phrase.
 
-Manual backup should be used primarily for wallet recovery data. Wallet recovery data includes:
-- The [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }})
-  - Type - BIP39, Electrum, Shamir Shares (SLIP39), AEZEED
-  - Passphrase (optional)
-- Derivation path
-- Fingerprint
+So when we talk about “manual backup” in regard to this wallet, we are strictly talking about manual backup of the [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}).
 
-
-
-By far, the most important piece of the wallet recovery data is the recovery phrase. While the derivation path and fingerprint are not required in all situations (for example, when recovering a wallet using the same app that it was created with), it is good to make sure the user has this information stored in order to prevent potential loss of funds.
+## Backing up the recovery phrase
 
 This user flow usually requires users to manually back up their 12 to 24 word recovery phrase by writing it down on a piece of paper and storing it in a safe (but memorable location). In the case that a user’s device breaks or is stolen, the user can recover their funds and wallet by correctly entering their recovery phrase. The [private key management]({{ '/guide/private-key-management/manual-backup/' | relative_url }}) section dives further into the technical details of this scheme.
 
-{% include tip/open.html label="Printable Template" %}
-
-You could help the user by providing them with a printable template for writing down their recovery phrase. Some non-sensitive data (such as the name of your wallet or the derivation path) could be included pre-filled in the template. An [output script descriptor]({{'/guide/glossary/#output-script-descriptor' | relative_url}}) could be included as a QR code to ensure the wallet software knows how to restore the wallet properly. The user should be required to write in the sensitive data by hand. Here is an [example template](https://www.figma.com/file/sJYnyi2amehFJ2JpDgj978/Bitcoin-Wallet---Paper-Backup-Template?node-id=1%3A535).
-
-{% include tip/close.html %}
-
-If you are designing an application that opts to use manual backups, the following sections outline how to best go about this with new users in mind.
-
-### When to reveal a recovery phrase
-
-Onboarding carousels are a great place to prep and explain to users that they will be given a recovery phrase. While some wallets skip this step, it might be appropriate to display it early on in some scenarios. Doing so in the initial onboarding process allows users to pause, internalize what a recovery phrase is, and ensures that they do not neglect this step later.
-
-{% include /tip/open.html label="Tip: Let users transact even when not backed up" icon="info" color="blue" %}
-
-If you really want to skip showing a user their recovery phrase during the initial onboarding process, create an interaction (i.e. a vibration, modal pop-up, or similar) that prompts users to “back up” their recovery phrase at a later time. Perhaps before making any transactions or after several transactions.
-
-{% include /tip/close.html %}
-
 ### How to talk about a recovery phrase
 
-When introducing the concept of a recovery phrase within the onboarding process, be succinct and clear in explaining what it is, how to store it, and how to use it. Examples of some microcopy that you might include before unveiling a user’s recovery phrase can be found below:
+When introducing the concept of a recovery phrase, be succinct and clear in explaining what it is, how to store it, and how to use it. Examples of some microcopy that you might include before unveiling a user’s recovery phrase can be found below:
 
 {% include dl/open.html %}
 
@@ -134,108 +109,141 @@ Guides and gives users actionable items on how to safely **handle** their recove
 
 {% include dl/close.html %}
 
-Drilling in the larger consequences of what it means to interact with a self-custodial product is important during these first interactions with a wallet. Education within these beginning stages will empower users to make smart decisions, furthermore informing how they understand and handle the safety of their funds.
-
-{% include /tip/open.html label="Tip: Give users access to printable templates" icon="info" color="blue" %}
-
-Providing users with printable, designated materials to write down their recovery phrase can instill a sense of trust, organization (especially if they have multiple wallets), and guidance. It may also encourage them to treat this designated paper with importance rather than quickly scribbling it down on a random scrap. Check out an example template from the Wallet UI Kit [here](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1523%3A34106).
-
-{% include /tip/close.html %}
+Drilling in the larger consequences of what it means to interact with a self-custodial product is important during these first interactions with a wallet. Education within these beginning stages will empower users to make smart decisions, further informing how they understand and handle the safety of their funds.
 
 ### How to display a recovery phrase
 
-The goal is to encourage users to write down their recovery phrase on a physical piece of paper. You can discourage users from taking a screenshot by showing a warning modal or disabling the functionality altogether.
+The goal of the following flow is to encourage users to write down their recovery phrase on a physical piece of paper. This app disables screenshots on any screens that display a recovery phrase and, to be safe, also warns the user against screenshotting or photographing their recovery phrase.
 
 {% include /tip/open.html label="Tip: Be Clear about Numbering" icon="info" color="blue" %}
 
-Regardless of the option you decide to run with, it’s important that you explicitly instruct users to number each word (i.e. 1. sand 2. purple 3. flower). Typically, a manual recovery phrase backup scheme will ask users to recount, for example, the fifth word. It’s a bit of a pain for users to count which word corresponds to a particular number if they are not numbered initially.
+Note that this wallet explicitly instructs users to number each word (e.g. 1. sand 2. purple 3. flower). This is important because they will be asked to confirm their recovery phrase in a later step. It’s a bit of a pain for users to count which word corresponds to a particular number if they are not numbered initially.
 
 {% include /tip/close.html %}
 
-<div class="center" markdown="1">
+<div class="image-slide-gallery">
 
-{% include image.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/copy-recovery-phrase-single-word.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/copy-recovery-phrase-single-word@2x.png"
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-choice.png"
+   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-choice@2x.png"
+   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-choice@2x.png"
+   layout = "shadow"
+   caption = "Wallet prompts the user to setup a backup, and the user selects the manual backup toggle."
+   alt-text = "Screen prompting the user to back up after they have received a payment, with a manual backup toggle at the bottom"
    width = 250
-   height = 600
-   alt-text = "Showing recovery phrase one word at a time"
-   caption = "One by One UI from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A0)"
-   layout = "float-right-desktop -background -shadow"
+   height = 541
 %}
 
-**Option 1: One by One**
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-notes.png"
+   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-notes@2x.png"
+   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-notes@2x.png"
+   layout = "shadow"
+   caption = "Explain what the manual backup is before proceeding, and give user the option to back out."
+   alt-text = "Screen describing how manual backup differs, with an option to proceed or go back."
+   width = 250
+   height = 541
+%}
 
-In a one by one design, users are given their recovery phrase one word at a time. Users are then prompted to swipe/click through each word to complete their viewing.
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-cloud-choice.png"
+   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-cloud-choice@2x.png"
+   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-cloud-choice@2x.png"
+   layout = "shadow"
+   caption = "Allow the user to select their cloud provider for channel state backup."
+   alt-text = "Screen showing different options for cloud providers"
+   width = 250
+   height = 541
+%}
 
-By forcing users to go through a physical action of viewing the next word, the chance of someone accidentally skipping over a word decreases. Giving a user time on each word encourages them to ruminate on it, potentially increasing their chance of writing it down. Additionally, it discourages users from screenshotting or copying and pasting.
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-cloud-provider.png"
+   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-cloud-provider@2x.png"
+   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-cloud-provider@2x.png"
+   layout = "shadow"
+   caption = "This UI will be very different depending on the cloud provider and what permissions are required."
+   alt-text = "Screen of placeholder where cloud provider UI would be"
+   width = 250
+   height = 541
+%}
 
-This would be a time consuming step if one’s recovery phrase is 24 words. This length could cause frustration.
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-recovery-phrase-intro.png"
+   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-recovery-phrase-intro@2x.png"
+   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-recovery-phrase-intro@2x.png"
+   layout = "shadow"
+   caption = "Explain what a recovery phrase is."
+   alt-text = "Screen with a description of what a recovery phrase is"
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-next-steps.png"
+   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-next-steps@2x.png"
+   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-next-steps@2x.png"
+   layout = "shadow"
+   caption = "Explain what is about to happen and what the user should do."
+   alt-text = "Screen explaining that the recovery phrase will be shown next and how to write it down"
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-recovery-phrase.png"
+   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-recovery-phrase@2x.png"
+   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-recovery-phrase@2x.png"
+   layout = "shadow"
+   caption = "Displays the recovery phrase with numbering."
+   alt-text = "Screen displaying a 12 word recovery phrase"
+   width = 250
+   height = 541
+%}
 
 </div>
 
-<div class="center" markdown="1">
+### Print template
 
-{% include image.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/copy-recovery-phrase-columns.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/copy-recovery-phrase-columns@2x.png"
+This wallet also offers the user a printable template they can use to write down their recovery phrase. This can help instill a sense of trust, guidance, and organization (especially if they have multiple wallets). It may also encourage them to treat this designated paper with importance rather than quickly scribbling it down on a random scrap. Here is an example template.
+
+Some non-sensitive data (such as the name of your wallet or the derivation path) could be included pre-filled in the template. An output script descriptor could be included as a QR code to ensure the wallet software knows how to restore the wallet properly. However, the user should always be required to write in sensitive data such as the recovery phrase by hand.
+
+[Printable Template Figma File](https://www.figma.com/community/file/1110806582648546839){: .button }
+
+<div class="image-slide-gallery">
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-recovery-phrase.png"
+   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-recovery-phrase@2x.png"
+   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-recovery-phrase@2x.png"
+   layout = "shadow"
+   caption = "Give the user an option to download a print template."
+   alt-text = "Screen displaying a 12 word recovery phrase and option to get a print template"
    width = 250
-   height = 600
-   alt-text = "Showing recovery phrase one word at a time"
-   caption = "Column/Groups UI from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A131)"
-   layout = "float-left-desktop -background -shadow"
+   height = 541
 %}
 
-**Option 2: In Columns/Groups**
-
-Another technique is to use batches or groups. In this design, the wallet splits the 12 or 24 word recovery phrase into ~3-4 groups, each group containing 3-12 words.
-
-If your wallet uses 24 words, splitting it into groups can be more digestible and less overwhelming. Organizing into smaller chunks could also help with word association, as a user might remember the smaller batches of words.
-
-Depending on how you show these groups of words, there is room for users to falsely number the order. For example, some wallets put these groups into columns, which could trip up a user if they are writing their words from left to right, or up and down. To avoid this, be sure to explicitly number the words.
-
-</div>
-
-<div class="center" markdown="1">
-
-{% include image.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/copy-recovery-phrase-reveal.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/copy-recovery-phrase-reveal@2x.png"
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-print.png"
+   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-print@2x.png"
+   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-print@2x.png"
+   layout = "shadow"
+   caption = "Explain how to use the print template and give the option to print it or download it."
+   alt-text = "Screen showing a picture of a print template with print and download buttons"
    width = 250
-   height = 600
-   alt-text = "Reveal option where words are not readable by default"
-   caption = "Hold down to reveal UI from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A223)"
-   layout = "float-right-desktop -background -shadow"
+   height = 541
 %}
 
-**Option 3: Using Interactions to “Uncover” or “Reveal”**
-
-A clever way to give a user their recovery phrase is by creating an interaction where they have to “uncover” it. This can entail hovering over a blurred word to reveal it, or holding down a button to show it.
-
-By creating this design interaction, it drills in how viewing, storing, and managing recovery phrases should be a private and secret matter.
-
-</div>
-
-<div class="center" markdown="1">
-
-{% include image.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/copy-recovery-phrase-all-at-once.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/copy-recovery-phrase-all-at-once@2x.png"
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-print-download.png"
+   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-print-download@2x.png"
+   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-print-download@2x.png"
+   layout = "shadow"
+   caption = "User continues down OS specific flow for printing or downloading a file."
+   alt-text = "Screen showing a placeholder for a mobile printing UI"
    width = 250
-   height = 600
-   alt-text = "Show all 12 words at once"
-   caption = "All words at once UI from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A305)"
-   layout = "float-left-desktop -background -shadow"
+   height = 541
 %}
-
-**Option 4: All at Once**
-
-Lastly, another design is to give a user the words all at once. In this design, all words are shown on one screen.
-
-
-Here, there are no surprises in how long it is and does not require them to take any further action in revealing it.
-
-Throwing 12 or 24 words at a user all at once can potentially overwhelm them if they are not familiar with recovery phrases in general. This also introduces the possibility of a user skipping over this one screen with contents that inherently determines the safety of their funds.
 
 </div>
 
@@ -243,70 +251,68 @@ Throwing 12 or 24 words at a user all at once can potentially overwhelm them if 
 
 This step is a great way to ensure and test that the user in question actually stored their recovery phrase in a way that allows them to access and recount it. This typically entails prompting them to recall the words, which can be done in multiple ways that are laid out below.
 
+{% include /tip/open.html label="Tip: Confirm user understanding" icon="info" color="blue" %}
 
-{% include /tip/open.html label="Tip: Confirm User Understanding" icon="info" color="blue" %}
-
-Try to make sure users understand your team cannot access their recovery phrase if they lose it. This drills in the importance of them properly and securely storing it, reiterating that access to their funds is always in their own hands.
-
-{% include /tip/close.html %}
-
-<div class="center" markdown="1">
-
-{% include image.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/confirm-recovery-phrase.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/confirm-recovery-phrase@2x.png"
-   width = 250
-   height = 600
-   alt-text = "Confirming a recovery phrase by tapping"
-   caption = "Word bank UI from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A408)"
-   layout = "float-left-desktop -background -shadow"
-%}
-
-**Option 1: Selecting Words from a Bank**
-
-A common design for confirming a manual backup is to present users with a scrambled word bank consisting of the words that make up their recovery phrase. Users are then prompted to select the words in the correct order.
-
-</div>
-
-<div class="center" markdown="1">
-
-{% include image.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/confirm-recovery-phrase-entry.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/confirm-recovery-phrase-entry@2x.png"
-   width = 250
-   height = 600
-   alt-text = "Typing a recovery phrase"
-   caption = "Typing it out UI from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A538)"
-   layout = "float-right-desktop -background -shadow"
-%}
-
-**Option 2: Manually Typing it Out**
-
-One way to present this is by giving them numbered fields (12 or 24 words depending on the length of the respective scheme) so that users can make sure they are entering it in the correct order.
-
-</div>
-
-{% include /tip/open.html label="Tip: Tell Users if they’re on the Right Track" icon="info" color="blue" %}
-
-Because typing each word out comes with more room for error, create a visual indicator that shows if the user is on the right track (i.e., make the box green if it is correct, make it red if it is incorrect). Since the words in recovery phrases come from a pre-defined dictionary, your app could also offer to auto-complete words as the user types them in. It can be frustrating for a user to get a general warning that a word is not correct after having them manually type it out and force them to sleuth out where a misspelled word or wrong order occurred.
+Try to make sure users understand your team cannot access their recovery phrase if they lose it. This drills in the importance of properly and securely storing it, reiterating that access to their funds is always in their own hands.
 
 {% include /tip/close.html %}
 
-<div class="center" markdown="1">
+<div class="image-slide-gallery">
 
-{% include image.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/confirm-recovery-phrase-columns.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/confirm-recovery-phrase-columns@2x.png"
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-validation-intro.png"
+   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-validation-intro@2x.png"
+   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-validation-intro@2x.png"
+   layout = "shadow"
+   caption = "Explain to the user that they need to verify they wrote down their recovery phrase properly."
+   alt-text = "Screen explaining the verification process"
    width = 250
-   height = 600
-   alt-text = "Identify specific recovery phrase words"
-   caption = "Word recall from the [UI Kit](https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=1230%3A828)"
-   layout = "float-right-desktop -background -shadow"
+   height = 541
 %}
 
-**Option 3: Recall a Random Word**
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-validation-start.png"
+   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-validation-start@2x.png"
+   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-validation-start@2x.png"
+   layout = "shadow"
+   caption = "Prompt the user to tap the words of their recovery phrase in the correct order."
+   alt-text = "Screen showing the user's recovery phrase out of order"
+   width = 250
+   height = 541
+%}
 
-You could also ask users to select (or manually type out) a random word from their recovery phrase. For example, you would ask them to “type out word number 5”, or “type out word number 11”. To ensure maximum security, make sure you do this with 3-4 different words. This design is less cumbersome for users, but might be a pain if they did not number the words.
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-validation-progress.png"
+   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-validation-progress@2x.png"
+   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-validation-progress@2x.png"
+   layout = "shadow"
+   caption = "Let the user know when they get the order incorrect."
+   alt-text = "Screen showing an error when user taps in the recovery phrase in the wrong sequence"
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-validation-complete.png"
+   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-validation-complete@2x.png"
+   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-validation-complete@2x.png"
+   layout = "shadow"
+   caption = "The user finishes tapping in their recovery phrase in the correct order."
+   alt-text = "Screen showing that the recovery phrase has been tapped in the correct order"
+   width = 250
+   height = 541
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-complete.png"
+   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-complete@2x.png"
+   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-complete@2x.png"
+   layout = "shadow"
+   caption = "Remind the user to store their recovery phrase safely."
+   alt-text = "Screen that says the backup is complete"
+   width = 250
+   height = 541
+%}
 
 </div>
 
