@@ -61,7 +61,7 @@ On this page, we only focus on lightning wallets, as they lend themselves much b
 
 ### Wallet-service communication
 
-Your service and the user wallet need to be able to communicate with each other to exchange information. There are two basic ways to handle this—direct and bridged.
+Your service and the user's wallet need to be able to communicate with each other to exchange information. There are two basic ways to handle this—direct and bridged.
 
 #### Direct communication
 
@@ -89,7 +89,7 @@ There is more friction if the user needs to be involved in this communication. H
    height = 411
 %}
 
-This does not necessarily have to be done via QR code. The most basic method could even involve manually copying and pasting messages and identifiers back and forth.
+This does not necessarily have to be done via a QR code. The most basic method could even involve manually copying and pasting messages and identifiers back and forth.
 
 ## Signing in
 
