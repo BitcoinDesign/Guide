@@ -38,7 +38,7 @@ This page provides a general overview of privacy issues in bitcoin wallets.
 
 ---
 
-Privacy is about the ability to control what information is available to others, and what they can do with it. On this page, we will provide a soft introduction to the topic, with a focus on what product builders and users can do to improve their payment privacy.
+Privacy is about the ability to control what information is available to others and what they can do with it. On this page, we will provide a soft introduction to the topic, with a focus on what product builders and users can do to improve their payment privacy.
 
 #### Design with privacy in mind
 
@@ -62,7 +62,7 @@ It's more common for wallets to protect private keys, but not much is done for o
 
 ## Third-party services
 
-Whether it is for retrieving exchange rates or using [lightning services]({{ "/guide/how-it-works/lightning-services/" | relative_url }}), interacting with centralized third-parties can leak user data. You may want to allow users to disable those features, choose the services they use, or use another method of anonymizing requests. It is also essential to only expose your users to services that you have vetted and deemed trustworthy.
+Whether it is for retrieving exchange rates or using [lightning services]({{ "/guide/how-it-works/lightning-services/" | relative_url }}), interacting with centralized third parties can leak user data. You may want to allow users to disable those features, choose the services they use, or use another method of anonymizing requests. It is also essential to only expose your users to services that you have vetted and deemed trustworthy.
 
 ## Data transfer
 
@@ -79,7 +79,7 @@ Whether it is for retrieving exchange rates or using [lightning services]({{ "/g
    layout = "float-right-desktop -background -shadow"
 %}
 
-Internet service providers and similar services that handle data in transit may be able to gather or infer information about the user from the traffic. Tools like [VPNs](https://en.wikipedia.org/wiki/Virtual_private_network) and [Tor](https://en.wikipedia.org/wiki/Tor_(network)) can prevent this by adding additional layers of encryption and masking user activity. Keep in mind that using Tor provides better privacy, but can noticeably slow down the experience (especially initial startup).
+Internet service providers and similar services that handle data in transit may be able to gather or infer information about the user from the traffic. Tools like [VPNs](https://en.wikipedia.org/wiki/Virtual_private_network) and [Tor](https://en.wikipedia.org/wiki/Tor_(network)) can prevent this by adding additional layers of encryption and masking user activity. Keep in mind that using Tor provides better privacy but can noticeably slow down the experience (especially initial startup).
 
 </div>
 
@@ -110,13 +110,13 @@ It’s a common misconception that bitcoin payments are anonymous. Rather, bitco
 
 </div>
 
-Transactions, their signatures, and addresses added to the bitcoin blockchain remain public forever. This means that looking up any address or transaction is trivial, as demonstrated by going back to the very first block mined on [January 3, 2009](https://blockstream.info/tx/4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b). The key to keeping your transactions private is to prevent others from determining which addresses you own. Since [Satoshi](https://en.wikipedia.org/wiki/Satoshi_Nakamoto) let others know that they had mined the first block, which contained a single transaction, one can deduce that both the address that received the block reward and the sender address in the transaction belongs to Satoshi. This illustrates the permanence of associations between addresses and identity. While it’s possible to break assumptions of ownership going forward, the challenge is to recover privacy once an association is made public. That being said, in this case the pseudonym “Satoshi Nakamoto” has yet to be associated with any personal identity.
+Transactions, their signatures, and addresses added to the bitcoin blockchain remain public forever. This means that looking up any address or transaction is trivial, as demonstrated by going back to the very first block mined on [January 3, 2009](https://blockstream.info/tx/4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b). The key to keeping your transactions private is to prevent others from determining which addresses you own. Since [Satoshi](https://en.wikipedia.org/wiki/Satoshi_Nakamoto) let others know that they had mined the first block, which contained a single transaction, one can deduce that both the address that received the block reward and the sender address in the transaction belongs to Satoshi. This illustrates the permanence of associations between addresses and identity. While it’s possible to break assumptions of ownership going forward, the challenge is to recover privacy once an association is made public. That being said, in this case, the pseudonym “Satoshi Nakamoto” has yet to be associated with any personal identity.
 
 > Each bitcoin transaction contains at least one input and at least one output. This means that once a single address is known, there is a trail to follow the bitcoin.
 >
 > <cite>As documented by <a href="https://docs.wasabiwallet.io/FAQ/FAQ-GeneralBitcoinPrivacy.html#how-is-bitcoin-bad-in-terms-of-privacy">Wasabi Wallet</a></cite>
 
-There are [many ways](https://99bitcoins.com/know-more-top-seven-ways-your-identity-can-be-linked-to-your-bitcoin-address/) your identity might get connected to your wallet and payments, so keeping bitcoin payments private takes diligent work, but is not impossible. Let’s explore some practices that help preserve privacy of bitcoin payments.
+There are [many ways](https://99bitcoins.com/know-more-top-seven-ways-your-identity-can-be-linked-to-your-bitcoin-address/) your identity might get connected to your wallet and payments, so keeping bitcoin payments private takes diligent work but is not impossible. Let’s explore some practices that help preserve the privacy of bitcoin payments.
 
 #### Generate a new address for each on-chain payment
 
@@ -139,7 +139,7 @@ This allows each incoming transaction to use a new address that is unconnected t
 
 </div>
 
-Address re-use degrades the privacy of both the [sending](/guide/daily-spending-wallet/sending/) and [receiving](/guide/daily-spending-wallet/requesting) parties. Re-using an address on the receiver's side means that anyone with whom that address is shared can see previous payments and the amount of bitcoin controlled by that address.
+Address reuse degrades the privacy of both the [sending](/guide/daily-spending-wallet/sending/) and [receiving](/guide/daily-spending-wallet/requesting) parties. Reusing an address on the receiver's side means that anyone with whom that address is shared can see previous payments and the amount of bitcoin controlled by that address.
 
 > If bad actors can see your income, holdings, and spending, they can use this information to [target and exploit you](https://docs.wasabiwallet.io/why-wasabi/TransactionSurveillanceCompanies.html#attempt-to-invade-privacy).
 
@@ -166,7 +166,7 @@ By sending to an address that is being reused, the sender is now traceable and c
    layout = "float-right-desktop -background -shadow"
 %}
 
-There are multiple benefits to users adding [contacts]({{ "/guide/daily-spending-wallet/contacts/" | relative_url }}) and [additional details]({{ "/guide/daily-spending-wallet/activity/" | relative_url }}) to transactions. It helps remember what payments were for, and also enables preventative measures for preserving privacy. In future transactions, it becomes easier to send coins ([UTXOs]({{ "/guide/glossary/#unspent-transaction-output-utxo" | relative_url }})) that do not reveal parts of the users transaction history that they are uncomfortable being public knowledge. This is often referred to as [coin control]({{ "/guide/glossary/#coin-control" | relative_url }}).
+There are multiple benefits to users adding [contacts]({{ "/guide/daily-spending-wallet/contacts/" | relative_url }}) and [additional details]({{ "/guide/daily-spending-wallet/activity/" | relative_url }}) to transactions. It helps remember what payments were for and also enables preventative measures for preserving privacy. In future transactions, it becomes easier to send coins ([UTXOs]({{ "/guide/glossary/#unspent-transaction-output-utxo" | relative_url }})) that do not reveal parts of the user’s transaction history that they are uncomfortable being public knowledge. This is often referred to as [coin control]({{ "/guide/glossary/#coin-control" | relative_url }}).
 
 As it is complex for users to manually keep track of this, most wallets automate the process and offer access via non-default settings.
 
