@@ -115,6 +115,10 @@ A standardized technical document format for the Lightning network protocol spec
 
 A channel reserve works as a type of insurance against theft. If a peer tries to cheat in a lightning payment channel, then the other party can submit a penalty transaction. This transaction will then take away all the funds from the other user's channel. Having the channel reserve in place ensures that there are funds available to take away should this occur.
 
+### Channel State
+
+This refers to the state of a lightning channel, i.e. the balances of the local and remote sides of the channel. The channel state changes everytime a payment is routed through a channel.
+
 ### Child-pays-for-parent (CPFP)
 
 Allows the recipient of a pending transaction to speed up confirmation. They create a new transaction (child) spending the to-be-received bitcoin with a higher fee than the original transaction (parent). This signals to miners to process both transactions, for which they will be rewarded with the higher fee.
@@ -384,6 +388,10 @@ Since a [private key](#private-key) can be used to prove that the holder control
 
 One of the most important activities of the bitcoin network is to verify that signatures are valid.
 </div>
+
+### Static Channel Backup
+
+A static channel backup can be used to recover funds from the lightning network. While it does not contain a copy of the most current channel state, it does contain enough information for a lightning node to request its remote peers to force close the channels. This will result in a delay in accessing funds, but is a viable option if the lightning node's channel state is corrupted or missing.
 
 ### Taproot
 
