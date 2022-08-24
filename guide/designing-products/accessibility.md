@@ -149,6 +149,7 @@ The accessibility pages by [Apple](https://www.apple.com/accessibility/), [Micro
 - [Material design accessibility tips](https://material.io/design/usability/accessibility.html#understanding-accessibility)
 - [Web content accessibility guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/)
 - [Accessibility guidelines for non-web applications (WCAG2ICT)](https://www.w3.org/TR/wcag2ict/)
+- Securing recovery phrases in braille via [New mnemonics](https://medium.com/@thorbjoernkoenig/new-mnemonics-48f00b8bb68)
 
 ### Usability testing resources
 

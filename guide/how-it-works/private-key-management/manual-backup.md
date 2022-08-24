@@ -92,6 +92,10 @@ Most bitcoin wallets, including:
 - [Coinbase Wallet](https://wallet.coinbase.com)
 - [Rise](https://www.risewallet.com)
 
+#### Resources
+
+- Unique approaches to storing recovery phrases via [New mnemonics](https://medium.com/@thorbjoernkoenig/new-mnemonics-48f00b8bb68)
+
 ---
 
 Next, let's look at [external signers]({{ '/guide/how-it-works/private-key-management/external-signers/' | relative_url }}).
