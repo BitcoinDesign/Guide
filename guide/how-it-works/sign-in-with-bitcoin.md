@@ -71,6 +71,7 @@ The smoothest user experience is when the wallet and the service can directly co
    image = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/direct-connection.png"
    retina = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/direct-connection@2x.png"
    alt-text = "Browser window with a wallet extension installed"
+   caption = "The wallet and service can directly communicate."
    width = 800
    height = 411
 %}
@@ -83,6 +84,7 @@ There is more friction if the user needs to be involved in this communication. H
    image = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/bridged-connection.png"
    retina = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/bridged-connection@2x.png"
    alt-text = "Communication flow between a browser window and a smart phone wallet"
+   caption = "Manual user action is required to bridge communication between the wallet and the service."
    width = 800
    height = 411
 %}
@@ -97,6 +99,7 @@ The biggest hurdle at this stage is that most users will not be familiar with th
    image = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/signin-info.png"
    retina = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/signin-info@2x.png"
    alt-text = "Sign in screen with tips for wallets to use and general information"
+   caption = "Provide clear information and tips as users are likely not to be familiar with these interactions."
    width = 800
    height = 411
 %}
@@ -107,6 +110,7 @@ Authentication is a simple process in which the service sends a message to the w
    image = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/signin-request.png"
    retina = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/signin-request@2x.png"
    alt-text = "Browser window with a modal for approving web service authentication"
+   caption = "Confirmation modal to approve sign-in via a browser-extension wallet."
    width = 800
    height = 411
 %}
@@ -125,22 +129,24 @@ Typically, your service will prompt the user for a payment when the user tries t
    image = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/payment-request.png"
    retina = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/payment-request@2x.png"
    alt-text = "Browser window with a modal for confirming a payment of 100 satoshi"
+   caption = "Approval modal to approve a payment via a browser-extension wallet."
    width = 800
    height = 411
 %}
 
-Allowances allow for automatic approval of payments by wallets up to certain amounts. This reduces friction for users that frequently transact. With an allowance, the modal window in the visualization above would not be needed. Ensure your interface provides user feedback when payments are confirmed.
+Allowances (requiring a direct connection) allow for automatic approval of payments by wallets up to certain amounts. This reduces friction for users that frequently transact. With an allowance, the modal window in the visualization above would not be needed. Ensure your interface provides user feedback when payments are confirmed.
 
 An alternative to reducing friction for frequent payments is to let users deposit satoshi into their accounts (and later withdraw them). This puts the service into a custodial position for the benefit of smoother payments (since they only involve database updates and not actual lightning payments).
 
 ## Connecting multiple wallets
 
-Users may migrate wallets and want to link their existing account to a new wallet. They may also want to connect multiple wallets to the same account. This could be for convenience, like signing in with both a desktop and a mobile wallet. Or it could be for security, like logging in with one wallet but making payments with another. It may also be necessary in order to accommodate different implementations and lack of [interoperability]({{ '/guide/designing-products/interoperability/' | relative_url }})).
+Users may migrate wallets and want to link their existing account to a new wallet. They may also want to connect multiple wallets to the same account. This could be for convenience, like signing in with both a desktop and a mobile wallet. Or it could be for security, like logging in with one wallet but making payments with another. It may also be necessary in order to accommodate different implementations and lack of [interoperability]({{ '/guide/designing-products/interoperability/' | relative_url }}).
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/connected-wallets.png"
    retina = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/connected-wallets@2x.png"
    alt-text = "Browser window showing an account screen with a list of linked wallets"
+   caption = "Account screen showing multiple wallets linked to an account."
    width = 800
    height = 411
 %}
