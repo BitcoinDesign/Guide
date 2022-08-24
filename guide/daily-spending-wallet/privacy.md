@@ -141,11 +141,11 @@ Just like any other application, privacy can be impacted by the use of third-par
 
 ---
 
-Next, let's dive into the [savings wallet reference design]({{ '/guide/savings-wallet/' | relative_url }}).
+Next, we look at [settings]({{ '/guide/savings-wallet/settings/' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/daily-spending-wallet/security/"
-   previousName = "Contacts"
-   nextUrl = "/guide/savings-wallet/"
-   nextName = "Savings wallet"
+   previousName = "Security"
+   nextUrl = "/guide/daily-spending-wallet/settings/"
+   nextName = "Settings"
 %}
