@@ -89,23 +89,9 @@ When the output of a transaction is used as the input of another transaction, it
 
 Since "legacy" addresses are still in use, some older applications have yet to upgrade. Script addresses can be used to resolve incompatibility issues that can arise when the sender's application does not recognize the SegWit address provided by the receiver.
 
-<div class="center" markdown="1">
-
-{% include image.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/single-use-payment-request-settings-address@2x.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/single-use-payment-request-settings-address@2x.png"
-   width = 250
-   height = 541
-   caption = "Allow the receiver to switch to different address types."
-   alt-text = "Screen showing adress type settings."
-   layout = "float-left-desktop -background -shadow"
-%}
-
 To illustrate the problem, suppose the sender is using a legacy wallet and paying to the receiver's SegWit address. In this case, the sender's wallet may incorrectly warn them that the address is invalid or not supported. This can confuse the sender’s end, leading them to think that the receiver provided an incorrect address.
 
 The receiver should then have the ability to switch to a Script or Taproot address that does not have all the benefits of SegWit, like cheaper transactions and more advanced features, but will be compatible with the sender's wallet.
-
-</div>
 
 ## Visual formatting
 

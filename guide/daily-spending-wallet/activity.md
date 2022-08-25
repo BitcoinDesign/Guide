@@ -96,7 +96,7 @@ This page explains a feature for allowing users to review and organize their pay
 
 -->
 
-Every wallet includes a list of transactions that allow the users to see who they [sent]({{ '/guide/daily-spending-wallet/sending/' | relative_url }}) bitcoin to and who they [received]({{ '/guide/daily-spending-wallet/requesting/#receiving-a-payment' | relative_url }}) bitcoin from. This sounds straightforward, but there are many detailed design decisions to consider.
+Every wallet includes a list of transactions that allow the users to see who they [sent]({{ '/guide/daily-spending-wallet/sending/' | relative_url }}) bitcoin to and who they [received]({{ '/guide/daily-spending-wallet/requesting/' | relative_url }}) bitcoin from. This sounds straightforward, but there are many detailed design decisions to consider.
 
 ### What is a transaction?
 
@@ -141,6 +141,7 @@ Events can include user activity related to unique wallet features. For example:
 - [Blixt](https://blixtwallet.github.io) allows for manual control over Lightning channels. The list can show when channels were opened and closed.
 - [Breez](https://breez.technology) includes a podcast player. New subscriptions and episodes could be listed.
 - [Hexa](https://hexawallet.io) allows users to have multiple wallets. The list can show when new wallets were created.
+- Authentication to third-party services via [sign in with bitcoin]({{ '/guide/how-it-works/sign-in-with-bitcoin/' | relative_url }}).
 
 ##### Software notifications
 

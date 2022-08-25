@@ -63,7 +63,7 @@ It also matters how these formats are generated. Your applications should be abl
 
 An evolving standard that improves payment usability between on-chain and lightning is being able to read and generate [unified bitcoin payment requests](https://bitcoinqr.dev/) that contain an on-chain address and lightning invoice inside a BIP 21 URI.
 
-When dealing with lightning invoice [amounts]({{ '/guide/daily-spending-wallet/requesting/#amounts' | relative_url }}), your application should be able to read and generate zero amount invoices.
+When dealing with lightning invoice [amounts]({{ '/guide/daily-spending-wallet/requesting/#entering-an-amount' | relative_url }}), your application should be able to read and generate zero amount invoices.
 
 Payment links, often using BIP 21, should be readable by your application. Forms should be automatically opened and filled when a user clicks a payment link or button.
 
