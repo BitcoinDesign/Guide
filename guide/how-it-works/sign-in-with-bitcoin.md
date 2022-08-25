@@ -2,7 +2,7 @@
 layout: guide
 title: Sign in with bitcoin
 description: An introduction to how lightning wallets can support authentication and payments with external applications and web services.
-nav_order: 9
+nav_order: 10
 parent: How it works
 permalink: /guide/how-it-works/sign-in-with-bitcoin/
 main_classes: -no-top-padding
@@ -169,8 +169,8 @@ If a user loses their wallet, they also lose their access to your service. Ensur
 Next, view our [resources]({{ '/guide/resources/' | relative_url }}) that can help you build better bitcoin products.
 
 {% include next-previous.html
-   previousUrl = "/guide/how-it-works/transactions/"
-   previousName = "Transactions"
+   previousUrl = "/guide/how-it-works/wallet-privacy/"
+   previousName = "Wallet privacy"
    nextUrl = "/guide/resources/"
    nextName = "Resources"
 %}

@@ -68,6 +68,12 @@ An overview of bitcoin payments, common concepts, and the transaction lifecycle.
 
 ---
 
+### [Wallet privacy]({{ '/guide/how-it-works/wallet-privacy/' | relative_url }})
+
+Basic aspects and best practices for protecting the privacy of wallet users.
+
+---
+
 ### [Sign in with bitcoin]({{ '/guide/how-it-works/sign-in-with-bitcoin/' | relative_url }})
 
 How lightning wallets can support authentication and payments with external applications and web services.
