@@ -2,7 +2,7 @@
 layout: guide
 title: How it works
 description: Find out about the complexities of how bitcoin works.
-nav_order: 8
+nav_order: 9
 has_children: true
 permalink: /guide/how-it-works/
 main_classes: -no-top-padding
@@ -68,9 +68,15 @@ An overview of bitcoin payments, common concepts, and the transaction lifecycle.
 
 ---
 
+### [Sign in with bitcoin]({{ '/guide/how-it-works/sign-in-with-bitcoin/' | relative_url }})
+
+How lightning wallets can support authentication and payments with external applications and web services.
+
+---
+
 {% include next-previous.html
-   previousUrl = "/guide/shared-account/"
-   previousName = "Shared account"
+   previousUrl = "/guide/sign-in-with-bitcoin/"
+   previousName = "Sign in with bitcoin"
    nextUrl = "/guide/how-it-works/backups/"
    nextName = "Bitcoin backups"
 %}

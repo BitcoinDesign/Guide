@@ -185,11 +185,11 @@ Blocks are also limited in size, and new ones are created every 10 minutes on av
 
 ---
 
-Next, view our [resources]({{ '/guide/resources/' | relative_url }}) that can help you build better bitcoin products.
+Next, learn how bitcoin wallets can offer authentication and payments to other applications and web services via [sign in with bitcoin]({{ '/guide/how-it-works/sign-in-with-bitcoin/' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/private-key-management/multi-key/"
    previousName = "Multi-key"
-   nextUrl = "/guide/resources/"
-   nextName = "Resources"
+   nextUrl = "/guide/how-it-works/sign-in-with-bitcoin/"
+   nextName = "Sign in with bitcoin"
 %}
