@@ -123,7 +123,7 @@ Ensuring users are signed out (manually or via session time-outs) is important. 
 
 ## Making payments
 
-Typically, your service will prompt the user for a payment when the user tries to interact with the service. Show the most appropriate option right away based on how the user has previously used your service (direct or bridged, [see above]({{ '/guide/how-it-works/sign-in-with-bitcoin/#making-payments' | relative_url }}).
+Typically, your service will prompt the user for a payment when the user tries to interact with the service. Show the most appropriate option right away based on how the user has previously used your service (direct or bridged, [see above]({{ '/guide/how-it-works/sign-in-with-bitcoin/#wallet-service-communication' | relative_url }}).
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/sign-in-with-bitcoin/payment-request.png"
