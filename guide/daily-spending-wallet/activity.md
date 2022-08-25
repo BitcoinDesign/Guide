@@ -141,6 +141,7 @@ Events can include user activity related to unique wallet features. For example:
 - [Blixt](https://blixtwallet.github.io) allows for manual control over Lightning channels. The list can show when channels were opened and closed.
 - [Breez](https://breez.technology) includes a podcast player. New subscriptions and episodes could be listed.
 - [Hexa](https://hexawallet.io) allows users to have multiple wallets. The list can show when new wallets were created.
+- Authentication to third-party services via [sign in with bitcoin]({{ '/guide/how-it-works/sign-in-with-bitcoin/' | relative_url }}).
 
 ##### Software notifications
 
