@@ -38,7 +38,7 @@ This page provides a general overview of privacy issues in bitcoin wallets.
 
 ---
 
-Privacy is about the ability to control what information is available to others and what they can do with it. On this page, we will provide a soft introduction to the topic, with a focus on what product builders and users can do to improve their payment privacy.
+Privacy is about the ability to control what information is available to others. On this page, we will provide a soft introduction to the topic, with a focus on what product builders and users can do to improve their payment privacy.
 
 #### Design with privacy in mind
 
