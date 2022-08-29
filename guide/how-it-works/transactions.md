@@ -185,11 +185,11 @@ Blocks are also limited in size, and new ones are created every 10 minutes on av
 
 ---
 
-Next, learn how bitcoin wallets can offer authentication and payments to other applications and web services via [sign in with bitcoin]({{ '/guide/how-it-works/sign-in-with-bitcoin/' | relative_url }}).
+Now let's discuss [wallet privacy]({{ '/guide/how-it-works/wallet-privacy/' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/private-key-management/multi-key/"
    previousName = "Multi-key"
-   nextUrl = "/guide/how-it-works/sign-in-with-bitcoin/"
-   nextName = "Sign in with bitcoin"
+   nextUrl = "/guide/how-it-works/wallet-privacy/"
+   nextName = "Wallet privacy"
 %}
