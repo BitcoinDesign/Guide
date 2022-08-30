@@ -64,21 +64,21 @@ Users can not receive lightning payments in a non-custodial manner when offline.
 
 With a [lightning wallet server]({{ '/guide/how-it-works/lightning-services/#receive-payments-offline' | relative_url }}), a payment can be intercepted and held for a user until they open their wallet. A push notification can be sent to the user so they can open their wallet and receive the payment. 
 
-Another option is to educate users to keep their wallet open. This can be explained during [first use]({{ '/guide/daily-spending-wallet/first-use/' | relative_url }}) or when the user attempts to close their wallet.
+Another option is to educate users to keep their wallet open. This can be explained during [first use]({{ '/guide/daily-spending-wallet/first-use/' | relative_url }}), or when the user attempts to close their wallet.
 
 </div>
 
 ## Receiving lightning payments 
 
-Once the user is online, a payment channel with [inbound liquidity]({{ '/guide/how-it-works/liquidity/'| relative_url }}) is also required to receive the payment. If the user already has a payment channel with enough inbound liquidity the payment will be [received]({{ '/guide/daily-spending-wallet/receiving/#received-payment'| relative_url }}).
+Once the user is online, a payment channel with [inbound liquidity]({{ '/guide/how-it-works/liquidity/'| relative_url }}) is also required to receive the payment. If the user already has a payment channel with enough inbound liquidity, the payment will be [received]({{ '/guide/daily-spending-wallet/receiving/#received-payment'| relative_url }}).
 
 If the user does not have a channel open, or one with enough inbound liquidity, a new channel needs to be opened. Any additional fees required to open a channel need to be communicated to users when [creating a payment request]({{ '/guide/daily-spending-wallet/requesting/'| relative_url }}), and before they share it.
 
-Channel opens should be done by a lightning service provider (LSP). Channels should be opened [on-demand]({{ '/guide/how-it-works/lightning-services/#on-demand-liquidity'| relative_url }}) and require [zero confirmations]({{ '/guide/how-it-works/lightning-services/#zero-confirmation'| relative_url }}) so users can receive and spend their bitcoin instantly.
+Channel opens are handled by a lightning service provider (LSP). This happens [on-demand]({{ '/guide/how-it-works/lightning-services/#on-demand-liquidity'| relative_url }}) and requires [zero confirmations]({{ '/guide/how-it-works/lightning-services/#zero-confirmation'| relative_url }}), so users can receive and spend their bitcoin instantly.
 
 ## Receiving on-chain payments
 
-To receive on-chain payments and maintain a single lightning balance a [lightning wallet server (LWS)]({{ '/guide/how-it-works/lightning-services/#what-are-lightning-wallet-servers'| relative_url }}) is required to conduct [submarine swaps](https://blog.muun.com/a-closer-look-at-submarine-swaps-in-the-lightning-network/) on the users behalf. Submarine swaps move bitcoin between the bitcoin and lightning networks.
+To receive on-chain payments and maintain a single lightning balance, a [lightning wallet server (LWS)]({{ '/guide/how-it-works/lightning-services/#what-are-lightning-wallet-servers'| relative_url }}) conducts [submarine swaps](https://blog.muun.com/a-closer-look-at-submarine-swaps-in-the-lightning-network/) on the users behalf. Submarine swaps move bitcoin between the bitcoin and lightning networks.
 
 {% include tip/open.html color="blue" icon="info" label="Experimental options" %}
 
@@ -88,7 +88,7 @@ Experimental options such as [Peerswap](https://www.peerswap.dev/) and [Collabor
 
 ### Refunds
 
-There may be scenarios where a submarine swap is not completed successfully, such as when the wallets LSP is offline. In these cases, the users will need to claim the on-chain funds that failed to be swapped by sending them to a on-chain address. 
+There may be scenarios where a submarine swap is not completed successfully, such as when the wallets LSP is offline. In these cases, the users needs to claim the on-chain funds that failed to be swapped by sending them to a on-chain address. 
 
 <div class="image-slide-gallery">
 
@@ -135,9 +135,9 @@ There may be scenarios where a submarine swap is not completed successfully, suc
 
 ## Received payment
 
-Once a payment is received it should be clearly indicated to the user and their balance should be updated. Ensure fees charged, if any, are clear to the user when viewing the payments details. Find more information on presenting a payment history on our [activity]({{ '/guide/daily-spending-wallet/activity/'| relative_url }}) page. 
+Received payment are clearly indicated to the user, and their balance is updated. Charged fees, if any, are clear to the user when viewing the payments details. Find more information on presenting a payment history on our [activity]({{ '/guide/daily-spending-wallet/activity/'| relative_url }}) page. 
 
-The option to save and share a receipt should be readily available.
+The option to save and share a receipt is readily available.
 
 <div class="image-slide-gallery">
 
