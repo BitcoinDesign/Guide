@@ -291,16 +291,41 @@ function handleUnitsAndSymbolsFormatterInput() {
 };
 
 function setupUnitsAndSymbolsFormatter() {
-  ref.unitsAndSymbolsFormatter =  document.getElementById("units-and-symbols-formatter");
+  ref.unitsAndSymbolsFormatter = document.getElementById("units-and-symbols-formatter");
 
   if(ref.unitsAndSymbolsFormatter) {
-    ref.unitsAndSymbolsFormatterInput =  document.getElementById("units-and-symbols-formatter-input");
-    ref.unitsAndSymbolsFormatterTable =  document.getElementById("units-and-symbols-formatter-table");
+    ref.unitsAndSymbolsFormatterInput = document.getElementById("units-and-symbols-formatter-input");
+    ref.unitsAndSymbolsFormatterTable = document.getElementById("units-and-symbols-formatter-table");
 
     ref.unitsAndSymbolsFormatterInput.addEventListener('keyup', handleUnitsAndSymbolsFormatterInput);
 
     handleUnitsAndSymbolsFormatterInput();
   }
+}
+
+function setupFeedbackModal() {
+    var buttons = document.querySelectorAll('.next-previous--feedback button');
+    if(buttons && buttons.length > 0) {
+        var i, button;
+        for(i=0; i<buttons.length; i++) {
+            button = buttons[i];
+            button.addEventListener('click', function(event) {
+                var self = event.currentTarget;
+                var container = self.parentElement;
+                var options = container.querySelector('.next-previous--feedback__options');
+                console.log('attr', options.hasAttribute('hidden'));
+                if(options.hasAttribute('hidden')) {
+                    options.removeAttribute("hidden");
+                    options.setAttribute("aria-expanded", true);
+                    self.setAttribute("aria-expanded", false);
+                } else {
+                    options.setAttribute("hidden", "hidden");
+                    options.setAttribute("aria-expanded", false);
+                    self.setAttribute("aria-expanded", true);
+                }
+            })
+        }
+    }
 }
 
 function handleModalImageLinkClick(e) {
@@ -669,6 +694,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   resizeFigmaEmbeds();
 
   setupUnitsAndSymbolsFormatter();
+  setupFeedbackModal();
 
   for(var k=0; k<ref.modalImageLinks.length; k++) {
       ref.modalImageLinks[k].addEventListener('click', handleModalImageLinkClick);
