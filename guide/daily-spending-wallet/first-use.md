@@ -191,7 +191,7 @@ New wallets start empty and require funding to become useful. Typically, bitcoin
 
 ## Receiving the deposit
 
-The first deposit can be a sensitive moment, so users should be informed as soon as it is detected. There is a high chance that additional fees had to be paid in order to swap bitcoin to lightning or open a new channel. These should be clearly explained so users don't assume that high fees are the norm. For more detail, see [receiving]({{ '/guide/daily-spending-wallet/requesting/#receiving-a-payment' | relative_url }}).
+The first deposit can be a sensitive moment, so users should be informed as soon as it is detected. There is a high chance that additional fees had to be paid in order to swap bitcoin to lightning or open a new channel. These should be clearly explained so users don't assume that high fees are the norm. For more detail, see [receiving]({{ '/guide/daily-spending-wallet/receiving/' | relative_url }}).
 
 {% include image-gallery.html pages = page.images_deposit %}
 
@@ -212,6 +212,6 @@ Ok, now let's look closer at [receiving to a daily spending wallet.]({{ '/guide/
 {% include next-previous.html
    previousUrl = "/guide/daily-spending-wallet/"
    previousName = "Daily spending wallet"
-   nextUrl = "/guide/daily-spending-wallet/receiving/"
-   nextName = "Receiving bitcoin"
+   nextUrl = "/guide/daily-spending-wallet/backup-and-recovery/landing-page/"
+   nextName = "Backup & recovery"
 %}

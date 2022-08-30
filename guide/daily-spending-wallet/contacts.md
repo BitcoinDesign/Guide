@@ -2,7 +2,7 @@
 layout: guide
 title: Contacts
 description: Design reference for a contacts feature in bitcoin wallets.
-nav_order: 7
+nav_order: 6
 parent: Daily spending wallet
 permalink: /guide/daily-spending-wallet/contacts/
 redirect_from:
@@ -202,7 +202,7 @@ This scenario can be initiated by copying a Lightning address to the clipboard, 
 
 This sequence is similar to the one above. The difference is that a payment request was passed into the application, which contains different data and also includes a specific user action, and therefore requires different user flows. The one below shows how a user has scanned a payment request and assigns a contact to the payment.
 
-Some payment request formats may include an address that can [receive repeatedly]({{ '/guide/daily-spending-wallet/requesting/#reusable-payment-requests' | relative_url }}). In this case, the address is added to the contact for future use. For [single use payment requests]({{ '/guide/daily-spending-wallet/requesting/#single-use-payment-requests' | relative_url }}), only the payment is linked.
+Some payment request formats may include an address that can receive repeatedly. In this case, the address is added to the contact for future use. For [single use payment requests]({{ '/guide/daily-spending-wallet/requesting/' | relative_url }}), only the payment is linked.
 
 Payment requests may also contain recipient names. These can be used to suggest the name for a new contact to the user. Names can be spoofed, so they should not be automatically assigned without user approval.
 

@@ -185,11 +185,11 @@ Blocks are also limited in size, and new ones are created every 10 minutes on av
 
 ---
 
-Next, view our [resources]({{ '/guide/resources/' | relative_url }}) that can help you build better bitcoin products.
+Now let's discuss [wallet privacy]({{ '/guide/how-it-works/wallet-privacy/' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/private-key-management/multi-key/"
    previousName = "Multi-key"
-   nextUrl = "/guide/resources/"
-   nextName = "Resources"
+   nextUrl = "/guide/how-it-works/wallet-privacy/"
+   nextName = "Wallet privacy"
 %}

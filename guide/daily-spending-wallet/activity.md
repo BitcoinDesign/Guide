@@ -2,7 +2,7 @@
 layout: guide
 title: Activity
 description: An overview of how to help users maintain their financial privacy while using a daily spending bitcoin wallet.
-nav_order: 6
+nav_order: 5
 parent: Daily spending wallet
 permalink: /guide/daily-spending-wallet/activity/
 redirect_from:
@@ -12,38 +12,49 @@ image: /assets/images/guide/daily-spending-wallet/activity/activity-preview.jpg
 image_base: /assets/images/guide/daily-spending-wallet/activity/
 imagesBasics:
     - file: activity
+      modalImage: activity-big
       alt: Smartphone screen showing a list of user transactions with minimal information
       caption: A minimal transaction list that avoids the display of technical details.
     - file: annotated-activity
+      modalImage: annotated-activity-big
       alt: Smartphone screen showing a list of user transactions with rich information like descriptions, tags, and contacts
       caption: If users annotate transactions well, they see much richer history.
     - file: semi-annotated-activity
+      modalImage: semi-annotated-activity-big
       alt: Smartphone screen showing a mix of user transactions with minimal and rich information
       caption: Unless a user is thorough about organization, they will see a mix of annotated activity and raw transaction information.
     - file: activity-ids
+      modalImage: activity-ids-big
       alt: Smartphone screen showing a list of user transactions with minimal information and invoice IDs
       caption: If your users are likely to rely on addresses or Lightning invoice IDs to identify payments, you may decide to show them. Always consider your users.
 imagesGrouping:
     - file: micropayments
+      modalImage: micropayments-big
       alt: Smartphone screen showing a long list of highly similar micro payments
       caption: Micropayments can easily flood an activity screen and make it hard to use.
     - file: grouped-micropayments
+      modalImage: grouped-micropayments-big
       alt: Smartphone screen showing a many micro payments grouped together
       caption: Smart grouping can help keep the list easy to parse.
     - file: expanded-micropayments
+      modalImage: expanded-micropayments-big
       alt: Smartphone screen showing a list of condensed micro payments
       caption: When expanded, the micropayment information can be kept to a minimum.
 imagesSearch:
     - file: search
+      modalImage: search-big
       alt: Smartphone screen showing a search and export options for a list of payments
       caption: An example UI for search, filtering and export.
     - file: tips
+      modalImage: tips-big
       alt: Smartphone screen showing a list of payments with a user prompt to organize them
       caption: Wallets can support users in organizing transactions more easily.
     - file: invoice
+      modalImage: invoice-big
       alt: Smartphone screen showing a payment screen with rich invoice information
       caption: If an invoice includes a description or other useful data (e.g. [BOLT 11](https://github.com/lightning/bolts/blob/master/11-payment-encoding.md#rationale-2)), make sure to store it.
     - file: sending
+      modalImage: sending-big
       alt: Smartphone screen showing a payment that is in the process of being sent
       caption: Make it easy to add metadata when a user sends or receives a transaction, as it is top-of-mind at that moment.
 imagesReceive:
@@ -85,7 +96,7 @@ This page explains a feature for allowing users to review and organize their pay
 
 -->
 
-Every wallet includes a list of transactions that allow the users to see who they [sent]({{ '/guide/daily-spending-wallet/sending/' | relative_url }}) bitcoin to and who they [received]({{ '/guide/daily-spending-wallet/requesting/#receiving-a-payment' | relative_url }}) bitcoin from. This sounds straightforward, but there are many detailed design decisions to consider.
+Every wallet includes a list of transactions that allow the users to see who they [sent]({{ '/guide/daily-spending-wallet/sending/' | relative_url }}) bitcoin to and who they [received]({{ '/guide/daily-spending-wallet/requesting/' | relative_url }}) bitcoin from. This sounds straightforward, but there are many detailed design decisions to consider.
 
 ### What is a transaction?
 
@@ -110,9 +121,10 @@ Not carefully weighing these decisions can easily result in a cluttered appearan
 
 <div class="center" markdown="1">
 
-{% include image.html
+{% include picture.html
    image = "/assets/images/guide/daily-spending-wallet/activity/non-payment-activity.png"
    retina = "/assets/images/guide/daily-spending-wallet/activity/non-payment-activity@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/activity/non-payment-activity-big.png"
    alt-text = "Smartphone screen of a transaction list mixing payments and other user activity"
    caption = "A list that includes non-payment activity."
    width = 250
@@ -129,6 +141,7 @@ Events can include user activity related to unique wallet features. For example:
 - [Blixt](https://blixtwallet.github.io) allows for manual control over Lightning channels. The list can show when channels were opened and closed.
 - [Breez](https://breez.technology) includes a podcast player. New subscriptions and episodes could be listed.
 - [Hexa](https://hexawallet.io) allows users to have multiple wallets. The list can show when new wallets were created.
+- Authentication to third-party services via [sign in with bitcoin]({{ '/guide/how-it-works/sign-in-with-bitcoin/' | relative_url }}).
 
 ##### Software notifications
 
@@ -157,7 +170,9 @@ Closely linked to search is export, which can serve several purposes. For one, a
 {% include image.html
    image = "/assets/images/guide/daily-spending-wallet/activity/budgeting.png"
    retina = "/assets/images/guide/daily-spending-wallet/activity/budgeting@2x.png"
+   mobileImage = "/assets/images/guide/daily-spending-wallet/activity/budgeting-big.png"
    alt-text = "Smartphone screen showing a balance chart and spending category breakdown"
+   caption = "Example of a screen summarizing the users spending and receiving categories."
    width = 250
    height = 541
    layout = "float-right-desktop -background -shadow"

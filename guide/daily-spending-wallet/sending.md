@@ -2,7 +2,7 @@
 layout: guide
 title: Sending bitcoin
 description: Best practices and design guidelines for designing user experiences for sending bitcoin in daily spending wallet application.
-nav_order: 5
+nav_order: 4
 parent: Daily spending wallet
 permalink: /guide/daily-spending-wallet/sending/
 redirect_from:
@@ -338,8 +338,8 @@ On-chain wallets may offer experienced users the option to choose which of their
 Now that we've tackled sending and receiving, let's look at how we can summarize this [activity]({{ '/guide/daily-spending-wallet/activity/' | relative_url }}) and make it useful.
 
 {% include next-previous.html
-   previousUrl = "/guide/daily-spending-wallet/requesting/"
-   previousName = "Sending bitcoin"
+   previousUrl = "/guide/daily-spending-wallet/requesting/receiving/"
+   previousName = "Receiving bitcoin"
    nextUrl = "/guide/daily-spending-wallet/activity/"
    nextName = "Activity"
 %}

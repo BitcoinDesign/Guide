@@ -2,7 +2,7 @@
 layout: guide
 title: Glossary
 permalink: /guide/glossary/
-nav_order: 11
+nav_order: 12
 has_children: true
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/glossary/glossary-preview.jpg
@@ -115,6 +115,10 @@ A standardized technical document format for the Lightning network protocol spec
 
 A channel reserve works as a type of insurance against theft. If a peer tries to cheat in a lightning payment channel, then the other party can submit a penalty transaction. This transaction will then take away all the funds from the other user's channel. Having the channel reserve in place ensures that there are funds available to take away should this occur.
 
+### Channel State
+
+This refers to the state of a lightning channel, i.e. the balances of the local and remote sides of the channel. The channel state changes everytime a payment is routed through a channel.
+
 ### Child-pays-for-parent (CPFP)
 
 Allows the recipient of a pending transaction to speed up confirmation. They create a new transaction (child) spending the to-be-received bitcoin with a higher fee than the original transaction (parent). This signals to miners to process both transactions, for which they will be rewarded with the higher fee.
@@ -153,7 +157,13 @@ As it is possible to trace the history of coins and see how they were previously
    height = 400
 %}
 
-Allow for combining multiple payments from multiple spenders into a single transaction to make it harder to determine which spender paid which recipient(s). See also [PayJoin](#payjoin-p2ep).
+A CoinJoin is an advanced technique where multiple participants collaborate on a transaction to break the "common input ownership" [heuristic](https://en.bitcoin.it/wiki/Privacy#Common-input-ownership_heuristic), which assumes that all inputs in a transaction likely belong to the same owner. In a CoinJoin transaction, all the outputs tend to be of the same amount. This makes it harder to define which input paid which output, somewhat breaking the absolute traceability of bitcoin transactions. Users still have to be mindful of how the UTXOs they received from the CoinJoin are spent. For instance, spending them together in a single transaction would unravel the anonymity gains from participating in the CoinJoin.
+
+As with any other anonymity network, a large and diverse group of participants will be more effective in disassociating the connections. CoinJoin transactions are not yet widely supported by bitcoin applications.
+
+Privacy on the lightning network can be improved by opening channels right after CoinJoin transactions.
+
+See also [PayJoin](#payjoin-p2ep).
 
  **References:**
 
@@ -378,6 +388,10 @@ Since a [private key](#private-key) can be used to prove that the holder control
 
 One of the most important activities of the bitcoin network is to verify that signatures are valid.
 </div>
+
+### Static Channel Backup
+
+A static channel backup can be used to recover funds from the lightning network. While it does not contain a copy of the most current channel state, it does contain enough information for a lightning node to request its remote peers to force close the channels. This will result in a delay in accessing funds, but is a viable option if the lightning node's channel state is corrupted or missing.
 
 ### Taproot
 

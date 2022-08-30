@@ -8,6 +8,14 @@ permalink: /guide/getting-started/open-design/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/getting-started/open-design/open-design-preview.jpg
 redirect_from: /guide/designing-products/open-design/
+video_base: /assets/images/guide/getting-started/open-design/
+videos:
+    - youtubeId: MyaflySHp9U
+      file: supporting-open-design-fosdem
+      caption: FOSDEM 2022 presentation on open design
+    - youtubeId: 1FYruvp4Cbo
+      file: learning-bitcoin-and-design-open-design
+      caption: Learning bitcoin & design call on open design
 ---
 
 <!--
@@ -156,6 +164,12 @@ The open-source movement has created a variety of licenses.
 This Bitcoin Design Guide uses three licenses ([MIT license]({{site.github_repository_url}}blob/master/LICENSE-MIT), [Apache 2.0]({{site.github_repository_url}}blob/master/LICENSE-APACHE), and [CC by 4.0]({{site.github_repository_url}}blob/master/LICENSE-CC-BY)). It is an educational resource, and some items may be subject to their own licenses. Anyone who wants to remix it, or parts of it, may choose which license to publish their work under. You can read the full license text [here]({{site.github_repository_url}}blob/master/LICENSE).
 
 ## Resources
+
+---
+
+{% include videos.html video_base = page.video_base videos = page.videos %}
+
+---
 
 - [Open-design movement](https://en.wikipedia.org/wiki/Open-design_movement) on Wikipedia
 - [Open Source Design](https://opensourcedesign.net/) community

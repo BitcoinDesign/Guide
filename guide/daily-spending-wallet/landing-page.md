@@ -47,12 +47,6 @@ Making users comfortable with the application, helping them set it up to their n
 
 ---
 
-### [Receiving]({{ '/guide/daily-spending-wallet/receiving/' | relative_url }})
-
-How receiving works for a daily spending bitcoin wallet.
-
----
-
 ### [Backup & recovery]({{ '/guide/daily-spending-wallet/backup-and-recovery/landing-page/' | relative_url }})
 
 An overview of different ways to backup a daily spending wallet and how these backups are used to recover a wallet.
