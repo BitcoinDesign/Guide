@@ -81,8 +81,8 @@ How lightning wallets can support authentication and payments with external appl
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/sign-in-with-bitcoin/"
-   previousName = "Sign in with bitcoin"
+   previousUrl = "/guide/shared-wallet/"
+   previousName = "Shared wallet"
    nextUrl = "/guide/how-it-works/backups/"
    nextName = "Bitcoin backups"
 %}

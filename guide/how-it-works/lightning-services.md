@@ -237,7 +237,7 @@ To prevent this, ensure your users can [manually backup their channel]({{ '/guid
 
 ### Lightning address
 
-Lightning [payment requests]({{ '/guide/payments/request/payment-request-formats/' | relative_url }}) are not very human-readable and are mostly [single-use]({{ '/guide/daily-spending-wallet/requesting/#single-use-payment-requests' | relative_url }}).
+Lightning [payment requests]({{ '/guide/payments/request/payment-request-formats/' | relative_url }}) are not very human-readable and are mostly [single-use]({{ '/guide/daily-spending-wallet/requesting/' | relative_url }}).
 
 A [Lightning address](https://lightningaddress.com/) LWS service gives users a human-readable address that can be re-used to receive lightning payments. An example is bosch@bitcoin.design.
 

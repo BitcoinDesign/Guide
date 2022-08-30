@@ -172,7 +172,7 @@ When users send to an on-chain address, a swap fee applies. This fee also applie
    caption = "Backup options are typically configured in first use and rarely need to be accessed."
 %}
 
-[First use]({{ '/guide/daily-spending-wallet/first-use/' | relative_url }}) also guides users towards appropriate [backup]({{ '/guide/daily-spending-wallet/backup-and-recovery/' | relative_url }}) options, and users may never need to access this screen. A unique piece of information here is when the last cloud backup was performed. This can give users peace of mind that their information is securely being backed up.
+[First use]({{ '/guide/daily-spending-wallet/first-use/' | relative_url }}) also guides users towards appropriate [backup]({{ '/guide/daily-spending-wallet/backup-and-recovery/landing-page/' | relative_url }}) options, and users may never need to access this screen. A unique piece of information here is when the last cloud backup was performed. This can give users peace of mind that their information is securely being backed up.
 
 </div>
 

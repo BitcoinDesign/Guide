@@ -96,7 +96,7 @@ This page explains a feature for allowing users to review and organize their pay
 
 -->
 
-Every wallet includes a list of transactions that allow the users to see who they [sent]({{ '/guide/daily-spending-wallet/sending/' | relative_url }}) bitcoin to and who they [received]({{ '/guide/daily-spending-wallet/requesting/#receiving-a-payment' | relative_url }}) bitcoin from. This sounds straightforward, but there are many detailed design decisions to consider.
+Every wallet includes a list of transactions that allow the users to see who they [sent]({{ '/guide/daily-spending-wallet/sending/' | relative_url }}) bitcoin to and who they [received]({{ '/guide/daily-spending-wallet/requesting/' | relative_url }}) bitcoin from. This sounds straightforward, but there are many detailed design decisions to consider.
 
 ### What is a transaction?
 
