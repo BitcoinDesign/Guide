@@ -303,7 +303,7 @@ There may be some situations where you need to help your user with outbound liqu
 
 #### Instant open
 
-One way to accomplish this could be through an [instant channel open]({{'/guide/daily-spending-wallet/funding/#instant-open' | relative_url}}). If the user has bitcoin in an on-chain wallet, you could have them send bitcoin on-chain to the wallet, and then automatically use those funds to open a lightning channel with a well-connected node. An example of a wallet that does this is [Blixt](https://blixtwallet.github.io/). Read more [about this here]({{'/guide/daily-spending-wallet/funding/#instant-open' | relative_url}}).
+One way to accomplish this could be through an [instant channel open]({{'/guide/how-it-works/lightning-services/#on-demand-liquidity' | relative_url}}). If the user has bitcoin in an on-chain wallet, you could have them send bitcoin on-chain to the wallet, and then automatically use those funds to open a lightning channel with a well-connected node. An example of a wallet that does this is [Blixt](https://blixtwallet.github.io/).
 
 #### LSP Swap-In
 

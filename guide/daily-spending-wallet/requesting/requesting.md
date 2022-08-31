@@ -138,11 +138,7 @@ This wallet’s on-chain addresses are all swap addresses. These help with movin
 
 As unified requests [aren't widely supported yet](https://bitcoinqr.dev/), and users may want to request just from lightning or on-chain, they have options to share the lightning invoice or on-chain address independently. 
 
-{% include tip/recommendation.html %}
-
-Receiving lightning payments requires a user to be online. To keep users online and prevent payment failures, inform them to keep their app open until the payment is received when they create a request. [Receiving payments offline]({{ "/guide/how-it-works/lightning-services/#receive-payments-offline" | relative_url }}) is still a work in progress.
-
-{% include tip/close.html %}
+Receiving payments to this wallet requires users to be online. This wallet notifies users that their wallet should remain open until the payment is received. We cover this more on our [receiving]({{ "/guide/daily-spending-wallet/requesting/receiving/#receiving-offline" | relative_url }}) and [lighting services]({{ "/guide/how-it-works/lightning-services/#receive-payments-offline" | relative_url }}) pages.
 
 <div class="image-slide-gallery">
 

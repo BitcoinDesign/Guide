@@ -36,16 +36,22 @@ Illustration source
 -->
 
 # Receiving bitcoin
+{:.no_toc} 
 
-Once a user has shared a payment request, the next step is receiving the payment. Ideally, there are little to no actions to take at this stage of the payment flow. 
+Once a user has shared a payment request, the next step is receiving the payment. Ideally there is no user action to take at this stage of the payment flow. However, there are things to consider and edge cases to deal with. This page covers how to design with these constraints in mind, and gives an overview of how receiving a payment works. 
 
-There are, however, several things to consider as a product designer to make this step as frictionless as possible. For instance, users need to be online and have a payment channel with inbound liquidity to receive a payment. 
+---
 
-This page covers how to design with these constraints in mind, and gives an overview of how receiving a payment works.
+<div class="glossary-toc" markdown="1">
+* Table of contents
+{:toc}
+</div>
+
+---
 
 ## Receiving offline
 
-Users can not receive lightning payments in a non-custodial manner when offline. This is problematic for mobile users who are regularly offline. This means there will be times when a payment can not be received.
+Users can not receive lightning payments in a non-custodial manner when offline. This is problematic for a mobile wallet like this which is regularly offline. This means there will be times when a payment can not be received.
 
 <div class="center" markdown="1">
 
@@ -62,33 +68,45 @@ Users can not receive lightning payments in a non-custodial manner when offline.
    modalHeight = 541
 %}
 
-With a [lightning wallet server]({{ '/guide/how-it-works/lightning-services/#receive-payments-offline' | relative_url }}), a payment can be intercepted and held for a user until they open their wallet. A push notification can be sent to the user so they can open their wallet and receive the payment. 
+This wallet uses a [lightning wallet server (LWS)]({{ 'guide/how-it-works/lightning-services/#what-are-lightning-wallet-servers' | relative_url }}) to intercept and hold payments for offline users until they come online. The LWS sends a push notification to the user to open their wallet so the payment can be received.
 
-Another option is to educate users to keep their wallet open. This can be explained during [first use]({{ '/guide/daily-spending-wallet/first-use/' | relative_url }}), or when the user attempts to close their wallet.
+To avoid payment failures, when generating a request it's indicated to the user that they should keep their wallet open until the payment is received. More on this [here]({{ '/guide/daily-spending-wallet/requesting/#creating-the-request' | relative_url }}).
 
 </div>
 
+{% include tip/open.html color="blue" icon="info" label="Offline payments" %}
+
+Offline, also known as async payments, are still not standards in the lightning ecosystem. Keep this in mind when developing your product. More on this on a [lightning services page]({{ '/guide/how-it-works/lightning-services/#receive-payments-offline' | relative_url }}).
+
+{% include tip/close.html %}
+
 ## Receiving lightning payments 
 
-Once the user is online, a payment channel with [inbound liquidity]({{ '/guide/how-it-works/liquidity/'| relative_url }}) is also required to receive the payment. If the user already has a payment channel with enough inbound liquidity, the payment will be [received]({{ '/guide/daily-spending-wallet/receiving/#received-payment'| relative_url }}).
+Once the user is online, a payment channel with [inbound liquidity]({{ '/guide/how-it-works/liquidity/'| relative_url }}) is required to receive a payment. If the user already has a payment channel with enough inbound liquidity, the payment will be [received]/guide/daily-spending-wallet/requesting/receiving/#received-payment.
 
-If the user does not have a channel open, or one with enough inbound liquidity, a new channel needs to be opened. Any additional fees required to open a channel need to be communicated to users when [creating a payment request]({{ '/guide/daily-spending-wallet/requesting/'| relative_url }}), and before they share it.
+If the user does not have a channel open, or one with enough inbound liquidity, a new channel needs to be opened. Any additional fees required to open a channel need to be communicated to users when [creating a payment request]({{ '/guide/daily-spending-wallet/requesting/#fees'| relative_url }}), and before they share it.
 
-Channel opens are handled by a lightning service provider (LSP). This happens [on-demand]({{ '/guide/how-it-works/lightning-services/#on-demand-liquidity'| relative_url }}) and requires [zero confirmations]({{ '/guide/how-it-works/lightning-services/#zero-confirmation'| relative_url }}), so users can receive and spend their bitcoin instantly.
+In this wallet channel opens and management are done by a lightning service provider (LSP). Channel opens happen [on-demand]({{ '/guide/how-it-works/lightning-services/#on-demand-liquidity'| relative_url }}) and use [zero confirmation channel opens]({{ '/guide/how-it-works/lightning-services/#zero-confirmation'| relative_url }}) so users can receive and spend their bitcoin instantly.
 
 ## Receiving on-chain payments
 
-To receive on-chain payments and maintain a single lightning balance, a [lightning wallet server (LWS)]({{ '/guide/how-it-works/lightning-services/#what-are-lightning-wallet-servers'| relative_url }}) conducts [submarine swaps](https://blog.muun.com/a-closer-look-at-submarine-swaps-in-the-lightning-network/) on the users behalf. Submarine swaps move bitcoin between the bitcoin and lightning networks.
+This wallet maintains a single lightning balance. To do this but still allow on-chain sending and requesting, a LWS is used that conducts [submarine swaps](https://blog.muun.com/a-closer-look-at-submarine-swaps-in-the-lightning-network/) between lightning and on-chain.
 
 {% include tip/open.html color="blue" icon="info" label="Experimental options" %}
 
-Experimental options such as [Peerswap](https://www.peerswap.dev/) and [Collaborative funding](https://bitcoinops.org/en/topics/dual-funding/) may be more trustless options that could be used to receive on-chain payments whilst maintaining a single lightning balance.
+[Peerswap](https://www.peerswap.dev/) or [Collaborative funding](https://bitcoinops.org/en/topics/dual-funding/) may be more trustless options that do not require a third-party LWS to receive and send on-chain payments. Though these are not currently widely adopted.
 
 {% include tip/close.html %}
 
 ### Refunds
 
-There may be scenarios where a submarine swap is not completed successfully, such as when the wallets LSP is offline. In these cases, the users needs to claim the on-chain funds that failed to be swapped by sending them to a on-chain address. 
+Refunds are required in some scenarios when a submarine swap can not be completed successfully. A refund is when a swap fails and the incoming on-chain bitcoin is now in control by the LWS. Users will need to claim these on-chain funds as a refund.
+
+Reasons for refunds will vary based on how the LWS swap service is implemented but below are some common scenarios:
+
+- LWS swap service is offline
+- Receiving more than the users inbound capacity 
+- Re-using a swap-address to receive an on-chain payment
 
 <div class="image-slide-gallery">
 
@@ -135,9 +153,9 @@ There may be scenarios where a submarine swap is not completed successfully, suc
 
 ## Received payment
 
-Received payment are clearly indicated to the user, and their balance is updated. Charged fees, if any, are clear to the user when viewing the payments details. Find more information on presenting a payment history on our [activity]({{ '/guide/daily-spending-wallet/activity/'| relative_url }}) page. 
+Received payments to this wallet are clearly indicated to the user. Fees paid, if any, are clear to the user when viewing the payments details. Users can save and share a receipt.
 
-The option to save and share a receipt is readily available.
+More information on presenting a payment history on our [activity]({{ '/guide/daily-spending-wallet/activity/'| relative_url }}) page.
 
 <div class="image-slide-gallery">
 

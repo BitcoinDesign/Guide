@@ -97,7 +97,7 @@ the user encounters throughout the app experience into a single, concise form.
    caption = "The overview screen provides an easy-to-understand grouping of settings."
 %}
 
-As you probably noticed in previous pages, various settings can be configured contextually throughout the app experience (like [hiding and unhiding the balance]({{ '/guide/daily-spending-wallet/privacy/#hiding-sensitive-information' | relative_url }})). All these options, and a few extra ones, are bundled in the settings area.
+As you probably noticed in previous pages, various settings can be configured contextually throughout the app experience (like [hiding and unhiding the balance]({{ '/guide/daily-spending-wallet/privacy/#quickly-hiding-balances' | relative_url }})). All these options, and a few extra ones, are bundled in the settings area.
 
 While not the most frequently visited part of an application, it fills an important functional role by giving users precise control over their experience.
 
