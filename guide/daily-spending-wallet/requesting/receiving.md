@@ -63,9 +63,9 @@ Users can not receive lightning payments in a non-custodial manner when offline.
    caption = "Notify the user that they have a payment incoming and that they should open their app to receive it."
    alt-text = "Screen showing a notification that is asking the user to open their wallet so they can receive their payment."
    width = 250
-   height = 541
+   height = 542
    modalWidth = 250
-   modalHeight = 541
+   modalHeight = 542
 %}
 
 This wallet uses a [lightning wallet server (LWS)]({{ 'guide/how-it-works/lightning-services/#what-are-lightning-wallet-servers' | relative_url }}) to intercept and hold payments for offline users until they come online. The LWS sends a push notification to the user to open their wallet so the payment can be received.
@@ -118,9 +118,9 @@ Reasons for refunds will vary based on how the LWS swap service is implemented b
    caption = "If a submarine swap fails, notify the user that they need to claim the refunded payment."
    alt-text = "Screen showing a warning error notification prompting the user to claim a refund of their failed submarine swap."
    width = 250
-   height = 541
+   height = 542
    modalWidth = 250
-   modalHeight = 541
+   modalHeight = 542
 %}
 
 {% include picture.html
@@ -131,9 +131,9 @@ Reasons for refunds will vary based on how the LWS swap service is implemented b
    caption = "The activity page is another place where you can indicate to a user that they need to claim their refund."
    alt-text = "Screen showing the activity menu with an entry for the user to claim their refunded payment."
    width = 250
-   height = 541
+   height = 542
    modalWidth = 250
-   modalHeight = 541
+   modalHeight = 542
 %}
 
 {% include picture.html
@@ -144,9 +144,9 @@ Reasons for refunds will vary based on how the LWS swap service is implemented b
    caption = "Make it simple for a user to claim their refund."
    alt-text = "Screen showing a form to claim the refund to an on-chain address."
    width = 250
-   height = 541
+   height = 542
    modalWidth = 250
-   modalHeight = 541
+   modalHeight = 542
 %}
 
 </div>
@@ -167,9 +167,9 @@ More information on presenting a payment history on our [activity]({{ '/guide/da
    caption = "Notify the user once their incoming payment is received."
    alt-text = "Screen showing a payment has been received."
    width = 250
-   height = 541
+   height = 542
    modalWidth = 250
-   modalHeight = 541
+   modalHeight = 542
 %}
 
 {% include picture.html
@@ -180,9 +180,9 @@ More information on presenting a payment history on our [activity]({{ '/guide/da
    caption = "Make it clear if extra fees were incurred, such as from a new channel open, to the user."
    alt-text = "Screen showing an activity entry of a received payment with details on extra fees incurred for opening a channel."
    width = 250
-   height = 541
+   height = 542
    modalWidth = 250
-   modalHeight = 541
+   modalHeight = 542
 %}
 
 </div>
