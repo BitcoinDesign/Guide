@@ -65,6 +65,12 @@ Safe backups can be made fairly simple. Take a look at our [bitcoin backups]({{ 
 
 {% include fact/close.html %}
 
+{% include tip/open.html color="blue" label="You can be creative" icon="info" %}
+
+Humans have many ways of memorizing and decoding information, from braille to sound and visual patterns, and beyond. Recovery phrases do not have to be secured as written words on paper. For more on this, see [New mnemoics](https://medium.com/@thorbjoernkoenig/new-mnemonics-48f00b8bb68).
+
+{% include tip/close.html %}
+
 ### Best practice
 
 #### When to use
@@ -91,6 +97,10 @@ Most bitcoin wallets, including:
 - [Blockstream Green](https://blockstream.com/green/)
 - [Coinbase Wallet](https://wallet.coinbase.com)
 - [Rise](https://www.risewallet.com)
+
+#### Resources
+
+- Unique approaches to storing recovery phrases via [New mnemonics](https://medium.com/@thorbjoernkoenig/new-mnemonics-48f00b8bb68)
 
 ---
 

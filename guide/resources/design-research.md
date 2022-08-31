@@ -97,6 +97,12 @@ A survey and follow-up interview of 990 bitcoin users to determine bitcoin manag
 
 ## Independent research
 
+#### [New Mnemonics](https://medium.com/@thorbjoernkoenig/new-mnemonics-48f00b8bb68)
+
+_2022 by Thorbjoern Koenig._
+
+An exploration of new approaches to securing mnemonics ([recovery phrases]({{ '/guide/glossary/#recovery-phrase' | relative_url }})) based on the unique capabilities of our bains and different personality types.
+
 #### [The State of Lightning Volume 2](https://arcane.no/research/reports/the-state-of-lightning-volume-2)
 
 _Login required to access. 2022 by Arcane research._
