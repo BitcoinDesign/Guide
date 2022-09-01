@@ -204,12 +204,12 @@ Receiving lightning payments requires a user to be online. To keep users online 
 <div class="center" markdown="1">
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/Fees@2x.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/Fees@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/Fees@2x.png"
+   image = "/assets/images/guide/daily-spending-wallet/requesting/SetupFee.png"
+   retina = "/assets/images/guide/daily-spending-wallet/requesting/SetupFee@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/SetupFee@2x.png"
    layout = "float-left-desktop -background -shadow"
-   caption = "Let users know if fees will be charged."
-   alt-text = "Screen showing a payment request with setup fees shown."
+   caption = "Allow users to add various forms of metadata to payment requests."
+   alt-text = "Screen showing a form with various metadata field options."
    width = 250
    height = 541
    modalWidth = 250
