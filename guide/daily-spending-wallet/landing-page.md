@@ -157,7 +157,7 @@ The daily spending wallet has a flexible first-use experience that guides users 
 
 ### [Backup & recovery]({{ '/guide/daily-spending-wallet/backup-and-recovery/landing-page/' | relative_url }})
 
-As a self-custodial wallet, this app places control of the private key in the hands of the user. To make this easier, it provides an easy automatic cloud backup option. Users may opt to perform a manual backup instead or in addition. This app has recovery flows that guide the user in restoring access to their wallet.
+As a self-custodial wallet, this app places control of the private key in the hands of the user. To make this easier, it provides an easy [automatic cloud backup]({{'/guide/daily-spending-wallet/backup-and-recovery/cloud-backup/' | relative_url}}) option. Users may opt to perform a [manual backup]({{'/guide/daily-spending-wallet/backup-and-recovery/manual-backup/' | relative_url}}) instead or in addition. This app has [recovery]({{'/guide/daily-spending-wallet/backup-and-recovery/recovery/' | relative_url}}) flows that guide the user in restoring access to their wallet.
 
 ---
 
