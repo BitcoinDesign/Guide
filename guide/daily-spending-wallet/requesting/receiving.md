@@ -38,7 +38,7 @@ Illustration source
 # Receiving bitcoin
 {:.no_toc} 
 
-Once a user has shared a payment request, the next step is receiving the payment. Ideally there is no user action to take at this stage of the payment flow. However, there are things to consider and edge cases to deal with. This page covers how to design with these constraints in mind, and gives an overview of how receiving a payment works. 
+Once a user has shared a payment request, the next step is receiving the payment. Ideally, there is no user action to take at this stage of the payment flow. However, there are things to consider and edge cases to deal with. This page covers how to design with these constraints in mind and gives an overview of how receiving a payment works.
 
 ---
 
@@ -70,19 +70,19 @@ Users can not receive lightning payments in a non-custodial manner when offline.
 
 This wallet uses a [lightning wallet server (LWS)]({{ 'guide/how-it-works/lightning-services/#what-are-lightning-wallet-servers' | relative_url }}) to intercept and hold payments for offline users until they come online. The LWS sends a push notification to the user to open their wallet so the payment can be received.
 
-To avoid payment failures, when generating a request it's indicated to the user that they should keep their wallet open until the payment is received. More on this [here]({{ '/guide/daily-spending-wallet/requesting/#creating-the-request' | relative_url }}).
+To avoid payment failures, when generating a request, it's indicated to the user that they should keep their wallet open until the payment is received. More on this [here]({{ '/guide/daily-spending-wallet/requesting/#creating-the-request' | relative_url }}).
 
 </div>
 
 {% include tip/open.html color="blue" icon="info" label="Offline payments" %}
 
-Offline, also known as async payments, are still not standards in the lightning ecosystem. Keep this in mind when developing your product. More on this on a [lightning services page]({{ '/guide/how-it-works/lightning-services/#receive-payments-offline' | relative_url }}).
+Offline payments, also known as async payments, are still not standards in the lightning ecosystem. Keep this in mind when developing your product. More on this on a [lightning services page]({{ '/guide/how-it-works/lightning-services/#receive-payments-offline' | relative_url }}).
 
 {% include tip/close.html %}
 
 ## Receiving lightning payments 
 
-Once the user is online, a payment channel with [inbound liquidity]({{ '/guide/how-it-works/liquidity/'| relative_url }}) is required to receive a payment. If the user already has a payment channel with enough inbound liquidity, the payment will be [received]/guide/daily-spending-wallet/requesting/receiving/#received-payment.
+Once the user is online, a payment channel with [inbound liquidity]({{ '/guide/how-it-works/liquidity/'| relative_url }}) is required to receive a payment. If the user already has a payment channel with enough inbound liquidity, the payment will be [received]({{ '/guide/daily-spending-wallet/requesting/receiving/#received-payment'| relative_url }}).
 
 If the user does not have a channel open, or one with enough inbound liquidity, a new channel needs to be opened. Any additional fees required to open a channel need to be communicated to users when [creating a payment request]({{ '/guide/daily-spending-wallet/requesting/#fees'| relative_url }}), and before they share it.
 
@@ -94,7 +94,7 @@ This wallet maintains a single lightning balance. To do this but still allow on-
 
 {% include tip/open.html color="blue" icon="info" label="Experimental options" %}
 
-[Peerswap](https://www.peerswap.dev/) or [Collaborative funding](https://bitcoinops.org/en/topics/dual-funding/) may be more trustless options that do not require a third-party LWS to receive and send on-chain payments. Though these are not currently widely adopted.
+[Peerswap](https://www.peerswap.dev/) or [collaborative funding](https://bitcoinops.org/en/topics/dual-funding/) may be more trustless options that do not require a third-party LWS to receive and send on-chain payments. However, these are not currently widely adopted.
 
 {% include tip/close.html %}
 
@@ -153,7 +153,7 @@ Reasons for refunds will vary based on how the LWS swap service is implemented b
 
 ## Received payment
 
-Received payments to this wallet are clearly indicated to the user. Fees paid, if any, are clear to the user when viewing the payments details. Users can save and share a receipt.
+When this wallet receives a payment, it notifies the user. If any fees are paid, they are clear to the user when viewing the payment details. Users can save and share a receipt.
 
 More information on presenting a payment history on our [activity]({{ '/guide/daily-spending-wallet/activity/'| relative_url }}) page.
 
@@ -177,7 +177,7 @@ More information on presenting a payment history on our [activity]({{ '/guide/da
    retina = "/assets/images/guide/daily-spending-wallet/receiving/ReceivedPaymentActivity@2x.png"
    modalImage = "/assets/images/guide/daily-spending-wallet/receiving/ReceivedPaymentActivity@2x.png"
    layout = "shadow"
-   caption = "Make it clear if extra fees were incurred, such as from a new channel open, to the user."
+   caption = "Make it clear to the user if extra fees were incurred, such as from a new channel open."
    alt-text = "Screen showing an activity entry of a received payment with details on extra fees incurred for opening a channel."
    width = 250
    height = 542
