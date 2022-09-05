@@ -102,7 +102,7 @@ This wallet maintains a single lightning balance. To do this but still allow on-
 
 Refunds are required in some scenarios when a submarine swap can not be completed successfully. A refund is when a swap fails and the incoming on-chain bitcoin is now in control by the LWS. Users will need to claim these on-chain funds as a refund.
 
-Reasons for refunds will vary based on how the LWS swap service is implemented but below are some common scenarios:
+Below are examples of when a refund will be triggered:
 
 - LWS swap service is offline
 - Receiving more than the users inbound capacity 
