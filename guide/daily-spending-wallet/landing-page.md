@@ -133,10 +133,10 @@ Speed of use is important for this wallet. As such, this wallet maintains a sing
 
 ### See it in action
 
-Here’s a prototype of the Daily Spending Wallet, which outlines a few of the paths a user could take [update this sentence later to accurately reflect the prototype we end up laying out in Figma]. Try it out below.
+Here’s a prototype of the daily spending wallet, which will outline a few of the paths a user could take through this app. The prototype is still under construction, but it will be comprised of the screens found in the following chapters. You can track the progress of the prototype [here](https://github.com/BitcoinDesign/Guide/issues/800).
 
 {% include prototype.html
-   link = "https://www.figma.com/proto/dXSeWwzKoVvS0Xm9VT9HuJ/Daily-Spending-Case-Study---Bitcoin-Design-Guide?page-id=43%3A2796&node-id=43%3A2797&viewport=343%2C48%2C0.5&scaling=min-zoom&starting-point-node-id=43%3A2797&show-proto-sidebar=1"
+   link = "https://www.figma.com/file/1Lffm4lwEZQ3b3xlajJWYG/Daily-spending-wallet-prototype?node-id=10%3A2"
    image = "/assets/images/guide/daily-spending-wallet/daily-spending-prototype.jpg"
    retina = "/assets/images/guide/daily-spending-wallet/daily-spending-prototype@2x.jpg"
    mobile = "/assets/images/guide/daily-spending-wallet/daily-spending-prototype-mobile.jpg"
