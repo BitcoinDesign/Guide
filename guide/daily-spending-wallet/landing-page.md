@@ -33,9 +33,11 @@ Illustration source: https://www.figma.com/file/1Lffm4lwEZQ3b3xlajJWYG/Daily-spe
 The daily spending wallet is an app designed to quickly and easily send small amounts of bitcoin. It focuses on the following:
 
 <div class="center product-feature" markdown="1">
-   {% include image.html
+   {% include picture.html
       image = "/assets/images/guide/daily-spending-wallet/bitcoin.png"
       retina = "/assets/images/guide/daily-spending-wallet/bitcoin@2x.png"
+      mobile = "/assets/images/guide/daily-spending-wallet/bitcoin-mobile.png"
+      mobileRetina = "/assets/images/guide/daily-spending-wallet/bitcoin-mobile@2x.png"
       alt-text = "Bitcoin logo"
       width = 100
       height = 100
@@ -48,9 +50,11 @@ The daily spending wallet is an app designed to quickly and easily send small am
 </div>
 
 <div class="center product-feature" markdown="1">
-   {% include image.html
+   {% include picture.html
       image = "/assets/images/guide/daily-spending-wallet/private-key.png"
       retina = "/assets/images/guide/daily-spending-wallet/private-key@2x.png"
+      mobile = "/assets/images/guide/daily-spending-wallet/private-key-mobile.png"
+      mobileRetina = "/assets/images/guide/daily-spending-wallet/private-key-mobile@2x.png"
       alt-text = "Graphic of a key"
       width = 100
       height = 100
@@ -63,9 +67,11 @@ The daily spending wallet is an app designed to quickly and easily send small am
 </div>
 
 <div class="center product-feature" markdown="1">
-   {% include image.html
+   {% include picture.html
       image = "/assets/images/guide/daily-spending-wallet/mobile-phone.png"
       retina = "/assets/images/guide/daily-spending-wallet/mobile-phone@2x.png"
+      mobile = "/assets/images/guide/daily-spending-wallet/mobile-phone-mobile.png"
+      mobileRetina = "/assets/images/guide/daily-spending-wallet/mobile-phone-mobile@2x.png"
       alt-text = "Graphic of a mobile phone"
       width = 100
       height = 100
@@ -78,9 +84,11 @@ The daily spending wallet is an app designed to quickly and easily send small am
 </div>
 
 <div class="center product-feature" markdown="1">
-   {% include image.html
+   {% include picture.html
       image = "/assets/images/guide/daily-spending-wallet/lightning.png"
       retina = "/assets/images/guide/daily-spending-wallet/lightning@2x.png"
+      mobile = "/assets/images/guide/daily-spending-wallet/lightning-mobile.png"
+      mobileRetina = "/assets/images/guide/daily-spending-wallet/lightning-mobile@2x.png"
       alt-text = "Graphic of a lightning bolt"
       width = 100
       height = 100
