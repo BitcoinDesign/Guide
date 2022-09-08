@@ -211,6 +211,8 @@ An overview of how users are likely to fund their wallets. While the daily spend
 
 ---
 
+Ready to begin? Let's look at the [first use]({{ '/guide/daily-spending-wallet/first-use/' | relative_url }}) of the daily spending wallet.
+
 {% include next-previous.html
    previousUrl = "/guide/designing-products/accessibility/"
    previousName = "Accessibility"
