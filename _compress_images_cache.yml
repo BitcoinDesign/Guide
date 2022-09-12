@@ -1621,10 +1621,6 @@ assets/images/guide/daily-spending-wallet/receiving/ReceiveOfflineNotification.p
 assets/images/guide/daily-spending-wallet/receiving/ReceiveOfflineNotification@2x.png: ReceiveOfflineNotification@2x.png
 assets/images/guide/daily-spending-wallet/receiving/ReceivedPaymentActivity.png: ReceivedPaymentActivity.png
 assets/images/guide/daily-spending-wallet/receiving/ReceivedPaymentActivity@2x.png: ReceivedPaymentActivity@2x.png
-assets/images/guide/daily-spending-wallet/receiving/RefundActivity.png: RefundActivity.png
-assets/images/guide/daily-spending-wallet/receiving/RefundActivity@2x.png: RefundActivity@2x.png
-assets/images/guide/daily-spending-wallet/receiving/RefundOnChain.png: RefundOnChain.png
-assets/images/guide/daily-spending-wallet/receiving/RefundOnChain@2x.png: RefundOnChain@2x.png
 assets/images/guide/daily-spending-wallet/privacy/quick-hide-access-big.png: quick-hide-access-big.png
 assets/images/guide/daily-spending-wallet/privacy/hidden-balance-pin-reveal-big.png: hidden-balance-pin-reveal-big.png
 assets/images/guide/daily-spending-wallet/privacy/hidden-balance-reveal-timer-big.png: hidden-balance-reveal-timer-big.png
@@ -1877,3 +1873,9 @@ assets/images/guide/daily-spending-wallet/receiving/received.png: received.png
 assets/images/guide/daily-spending-wallet/receiving/received@2x.png: received@2x.png
 assets/images/guide/daily-spending-wallet/receiving/ClaimRefund.png: ClaimRefund.png
 assets/images/guide/daily-spending-wallet/receiving/ClaimRefund@2x.png: ClaimRefund@2x.png
+assets/images/guide/daily-spending-wallet/receiving/RefundOnChain.png: RefundOnChain.png
+assets/images/guide/daily-spending-wallet/receiving/RefundOnChain@2x.png: RefundOnChain@2x.png
+assets/images/guide/daily-spending-wallet/receiving/RefundActivity.png: RefundActivity.png
+assets/images/guide/daily-spending-wallet/receiving/RefundActivity@2x.png: RefundActivity@2x.png
+assets/images/guide/daily-spending-wallet/receiving/SwapFail.png: SwapFail.png
+assets/images/guide/daily-spending-wallet/receiving/SwapFail@2x.png: SwapFail@2x.png

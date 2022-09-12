@@ -98,15 +98,17 @@ This wallet maintains a single lightning balance. To do this but still allow on-
 
 {% include tip/close.html %}
 
-### Refunds
+### Failed swaps
 
-Refunds are required in some scenarios when a submarine swap can not be completed successfully. A refund is when a swap fails and the incoming on-chain bitcoin is now in control by the LWS. Users will need to claim these on-chain funds as a refund.
-
-Below are examples of when a refund will be triggered:
+In the vast majority of scenarios, the submarine swap succeeds and the user is able to receive on-chain bitcoin to their lightning wallet without even thinking about this complex process happening behind the scenes. However, in some edge cases, the swap can fail for various reasons.
 
 - LWS swap service is offline
-- Receiving more than the users inbound capacity 
-- Re-using a swap-address to receive an on-chain payment
+- Receiving more than the users inbound capacity
+- Re-using a swap-address to receive another on-chain payment
+
+When this occurs, the funds will show up as "pending" in the user's activity and give them a prompt on the home page that action needs to be taken. The user is given two options to deal with this. Either re-trying the swap or sending to an external on-chain address.
+ 
+If the swap fails again, the wallet can open a new channel locally without using the LWS. The pending message can be the same as the user doesn't need to know the complexities of what is happening behind the scenes.
 
 <div class="image-slide-gallery">
 
@@ -115,8 +117,8 @@ Below are examples of when a refund will be triggered:
    retina = "/assets/images/guide/daily-spending-wallet/receiving/RefundOnChain@2x.png"
    modalImage = "/assets/images/guide/daily-spending-wallet/receiving/RefundOnChain@2x.png"
    layout = "shadow"
-   caption = "If a submarine swap fails, notify the user that they need to claim the refunded payment."
-   alt-text = "Screen showing a warning error notification prompting the user to claim a refund of their failed submarine swap."
+   caption = "If a swap fails, let the user know they need to take action with a persistent notification."
+   alt-text = "Screen showing a warning error notification prompting the user to take action on their failed submarine swap."
    width = 250
    height = 542
    modalWidth = 250
@@ -128,8 +130,21 @@ Below are examples of when a refund will be triggered:
    retina = "/assets/images/guide/daily-spending-wallet/receiving/RefundActivity@2x.png"
    modalImage = "/assets/images/guide/daily-spending-wallet/receiving/RefundActivity@2x.png"
    layout = "shadow"
-   caption = "The activity page is another place where you can indicate to a user that they need to claim their refund."
-   alt-text = "Screen showing the activity menu with an entry for the user to claim their refunded payment."
+   caption = "The activity menu is place where you can indicate to a user that their swap failed."
+   alt-text = "Screen showing the activity menu with an entry for the user to deal with their failed swap."
+   width = 250
+   height = 542
+   modalWidth = 250
+   modalHeight = 542
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/receiving/SwapFail.png"
+   retina = "/assets/images/guide/daily-spending-wallet/receiving/SwapFail@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/receiving/SwapFail@2x.png"
+   layout = "shadow"
+   caption = "Make it easy for users to retry the swap or have a channel opened locally if the swap fails again."
+   alt-text = "Screen showing an option for the user to retry the swap."
    width = 250
    height = 542
    modalWidth = 250
@@ -141,8 +156,8 @@ Below are examples of when a refund will be triggered:
    retina = "/assets/images/guide/daily-spending-wallet/receiving/ClaimRefund@2x.png"
    modalImage = "/assets/images/guide/daily-spending-wallet/receiving/ClaimRefund@2x.png"
    layout = "shadow"
-   caption = "Make it simple for a user to claim their refund."
-   alt-text = "Screen showing a form to claim the refund to an on-chain address."
+   caption = "Users should have an option to withdraw to an external address if they wish."
+   alt-text = "Screen showing a form to send to an external on-chain address."
    width = 250
    height = 542
    modalWidth = 250
