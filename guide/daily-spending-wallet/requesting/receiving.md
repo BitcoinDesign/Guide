@@ -76,7 +76,7 @@ To avoid payment failures, when generating a request, it's indicated to the user
 
 {% include tip/open.html color="blue" icon="info" label="Offline payments" %}
 
-Offline payments, also known as async payments, are still not standards in the lightning ecosystem. Keep this in mind when developing your product. More on this on a [lightning services page]({{ '/guide/how-it-works/lightning-services/#receive-payments-offline' | relative_url }}).
+Offline payments, also known as async payments, are still not standards in the lightning ecosystem. Keep this in mind when developing your product. More on this on the [lightning services page]({{ '/guide/how-it-works/lightning-services/#receive-payments-offline' | relative_url }}).
 
 {% include tip/close.html %}
 
@@ -90,7 +90,7 @@ In this wallet channel opens and management are done by a lightning service prov
 
 ## Receiving on-chain payments
 
-This wallet maintains a single lightning balance. To do this but still allow on-chain sending and requesting, a LWS is used that conducts [submarine swaps](https://blog.muun.com/a-closer-look-at-submarine-swaps-in-the-lightning-network/) between lightning and on-chain.
+This wallet maintains a single lightning balance. To do this, while still allowing for on-chain sending and requesting, a LWS is used that conducts [submarine swaps](https://blog.muun.com/a-closer-look-at-submarine-swaps-in-the-lightning-network/) between lightning and on-chain.
 
 {% include tip/open.html color="blue" icon="info" label="Experimental options" %}
 
@@ -106,9 +106,9 @@ In the vast majority of scenarios, the submarine swap succeeds and the user is a
 - Receiving more than the users inbound capacity
 - Re-using a swap-address to receive another on-chain payment
 
-When this occurs, the funds will show up as "pending" in the user's activity and give them a prompt on the home page that action needs to be taken. The user is given two options to deal with this. Either re-trying the swap or sending to an external on-chain address.
+When this occurs, the funds will show up as "pending" in the user's activity, and a prompt on the home screen appears that lets the user know that an action needs to be taken. They are given two options to deal with this, either re-trying the swap or sending to an external on-chain address.
  
-If the swap fails again, the wallet can open a new channel locally without using the LWS. The pending message can be the same as the user doesn't need to know the complexities of what is happening behind the scenes.
+If the swap fails again, the wallet can open a new channel locally without using the LWS. The pending message can be the same, as the user doesn't need to know the complexities of what is happening behind the scenes.
 
 <div class="image-slide-gallery">
 
