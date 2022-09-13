@@ -59,12 +59,12 @@ imagesInfo:
 imagesProcessing:
     - file: processing
       alt: Payment screen showing the transaction is being sent
-      caption: Lighning transactions typically complete in seconds and don't require loaders.
+      caption: Lightning transactions typically complete in seconds and don't require loaders.
     - file: processing-longer-wait
       alt: Payment screen showing that the transaction is taking longer than expected
       caption: If a transaction takes uncharacteristically long, users should be informed.
     - file: processing-on-chain
-      alt: Payment screen showing showing pending status for an on-chain transaction
+      alt: Payment screen showing pending status for an on-chain transaction
       caption: More detailed status updates are helpful for on-chain transactions, as they can take 10+ minutes to confirm.
     - file: processing-transactions
       alt: Transaction history screen showing payments with various different statuses
@@ -175,7 +175,7 @@ Once the application has imported a payment request, it should provide clear ins
 
 ## Manual payment initiation
 
-When responding to an invoice that contains all relevent information, the user can quickly review and approve it. In other scenarios, it may be required to manually enter or edit various details.
+When responding to an invoice that contains all relevant information, the user can quickly review and approve it. In other scenarios, it may be required to manually enter or edit various details.
 
 {% include image-gallery.html pages = page.imagesInfo %}
 
@@ -303,7 +303,7 @@ It is ideal when the application can automatically identify and fix or avoid the
 - The problem can be automatically fixed, but the user needs to choose which solution to use
 - The app can likely automatically fix the problem with negligible impact on the user
 
-Effectively supporting users when problems occur can build trust and confidence, and essential aspect for financial applications.
+Effectively supporting users when problems occur can build trust and confidence, an essential aspect for financial applications.
 
 ### Encouraging lightning network
 
