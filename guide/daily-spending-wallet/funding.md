@@ -158,7 +158,7 @@ At this stage the wallet is ready to be used as a standard on-chain bitcoin wall
 
 Having it possible for the user to instantly open a channel without having to manually find peers offers a much simpler user experience.
 
-If your application offers instant channel opens the channel should be opened unannounced to a Lightning node ran by your service. Mobile Lightning nodes have inconsistent uptimes and a random peer may close a channel performing like this. Having the channel open unannounced has some privacy benefits for users and avoids payments being routed through the users wallet, which may confuse some users.
+If your application offers instant channel opens the channel should be opened unannounced to a Lightning node run by your service. Mobile Lightning nodes have inconsistent uptimes and a random peer may close a channel performing like this. Having the channel open unannounced has some privacy benefits for users and avoids payments being routed through the users wallet, which may confuse some users.
 
 <div class="image-slide-gallery">
 
@@ -285,7 +285,7 @@ Manually opening a channel involves finding a suitable peer to open a channel wi
    retina = "/assets/images/guide/daily-spending-wallet/funding/channel-opened@2x.png"
    layout = "shadow"
    caption = "A channel has been opened."
-   alt-text = "Screen shwoing a channel has been opened."
+   alt-text = "Screen showing a channel has been opened."
    width = 250
    height = 541
 %}
