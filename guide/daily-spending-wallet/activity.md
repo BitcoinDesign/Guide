@@ -34,7 +34,7 @@ imagesGrouping:
       caption: Micropayments can easily flood an activity screen and make it hard to use.
     - file: grouped-micropayments
       modalImage: grouped-micropayments-big
-      alt: Smartphone screen showing a many micro payments grouped together
+      alt: Smartphone screen showing many micro payments grouped together
       caption: Smart grouping can help keep the list easy to parse.
     - file: expanded-micropayments
       modalImage: expanded-micropayments-big
@@ -43,7 +43,7 @@ imagesGrouping:
 imagesSearch:
     - file: search
       modalImage: search-big
-      alt: Smartphone screen showing a search and export options for a list of payments
+      alt: Smartphone screen showing search and export options for a list of payments
       caption: An example UI for search, filtering and export.
     - file: tips
       modalImage: tips-big
@@ -198,7 +198,7 @@ As with the activity list, transaction details screens should also only highligh
 
 ##### A payment received on-chain
 
-While the details for Lightning and on-chain payments look very similary, there are subtle differences. Most noticeable for the user is the difference in fees and processing time.
+While the details for Lightning and on-chain payments look very similar, there are subtle differences. Most noticeable for the user is the difference in fees and processing time.
 
 {% include image-gallery.html pages = page.imagesReceive %}
 
