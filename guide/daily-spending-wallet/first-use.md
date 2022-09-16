@@ -152,7 +152,7 @@ While this may sound daunting to first-time users, these caveats mustn't be hidd
    width = 250
    height = 541
    alt-text = "Cloud backup explainer screen with options for different services"
-   caption = "Offer different options to accomodate various user behaviors."
+   caption = "Offer different options to accommodate various user behaviors."
    layout = "float-right-desktop -background -shadow"
 %}
 

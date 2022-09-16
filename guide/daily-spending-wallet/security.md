@@ -27,7 +27,7 @@ images_reminders:
     - file: security-reminder-modal
       modalImage: security-reminder-modal-big
       alt: Screen recommending user to enable wallet spend limits
-      caption: A full-scren modal with a specific recommendation.
+      caption: A full-screen modal with a specific recommendation.
     - file: home-security-reminder
       modalImage: home-security-reminder-big
       alt: Wallet home screen with a reminder to review security settings
