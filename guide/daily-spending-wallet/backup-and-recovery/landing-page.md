@@ -4,7 +4,7 @@ title: Backup & recovery
 description: An overview of the data and considerations for backing up a daily spending bitcoin wallet.
 parent: Daily spending wallet
 has_children: true
-nav_order: 3
+nav_order: 2
 permalink: /guide/daily-spending-wallet/backup-and-recovery/landing-page/
 redirect_from:
  - /guide/onboarding/backing-up-a-recovery-phrase/
@@ -101,8 +101,8 @@ However, some users may not feel comfortable with cloud storage. Perhaps they ha
 The next sections will look at some UI considerations for [cloud backups]({{ '/guide/daily-spending-wallet/backup-and-recovery/cloud-backup/' | relative_url }}) and [manual backups]({{ 'guide/daily-spending-wallet/backup-and-recovery/manual-backup/' | relative_url }}).
 
 {% include next-previous.html
-   previousUrl = "/guide/daily-spending-wallet/funding/"
-   previousName = "First use"
+   previousUrl = "/guide/daily-spending-wallet/receiving/"
+   previousName = "Receiving bitcoin"
    nextUrl = "/guide/daily-spending-wallet/backup-and-recovery/cloud-backup/"
    nextName = "Automatic cloud backups"
 %}

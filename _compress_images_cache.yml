@@ -367,6 +367,10 @@ assets/images/guide/daily-spending-wallet/first-use/product-intro-2.png: product
 assets/images/guide/daily-spending-wallet/first-use/product-intro-2@2x.png: product-intro-2@2x.png
 assets/images/guide/daily-spending-wallet/first-use/product-intro-3.png: product-intro-3.png
 assets/images/guide/daily-spending-wallet/first-use/product-intro-3@2x.png: product-intro-3@2x.png
+assets/images/guide/daily-spending-wallet/privacy/address-labeling.jpg: address-labeling.jpg
+assets/images/guide/daily-spending-wallet/privacy/address-labeling@2x.jpg: address-labeling@2x.jpg
+assets/images/guide/daily-spending-wallet/privacy/coin-join.jpg: coin-join.jpg
+assets/images/guide/daily-spending-wallet/privacy/coin-join@2x.jpg: coin-join@2x.jpg
 assets/images/guide/daily-spending-wallet/first-use/responsibility-disclaimer-full.png: responsibility-disclaimer-full.png
 assets/images/guide/daily-spending-wallet/first-use/responsibility-disclaimer.png: responsibility-disclaimer.png
 assets/images/guide/daily-spending-wallet/first-use/responsibility-disclaimer@2x.png: responsibility-disclaimer@2x.png
@@ -1611,6 +1615,12 @@ assets/images/projects/projects@2x.jpg: projects@2x.jpg
 assets/images/search-preview.jpg: search-preview.jpg
 assets/images/submit-header-design-preview.jpg: submit-header-design-preview.jpg
 assets/mstile-150x150.png: mstile-150x150.png
+assets/images/guide/daily-spending-wallet/receiving/CloseWalletNotification.png: CloseWalletNotification.png
+assets/images/guide/daily-spending-wallet/receiving/CloseWalletNotification@2x.png: CloseWalletNotification@2x.png
+assets/images/guide/daily-spending-wallet/receiving/ReceiveOfflineNotification.png: ReceiveOfflineNotification.png
+assets/images/guide/daily-spending-wallet/receiving/ReceiveOfflineNotification@2x.png: ReceiveOfflineNotification@2x.png
+assets/images/guide/daily-spending-wallet/receiving/ReceivedPaymentActivity.png: ReceivedPaymentActivity.png
+assets/images/guide/daily-spending-wallet/receiving/ReceivedPaymentActivity@2x.png: ReceivedPaymentActivity@2x.png
 assets/images/guide/daily-spending-wallet/privacy/quick-hide-access-big.png: quick-hide-access-big.png
 assets/images/guide/daily-spending-wallet/privacy/hidden-balance-pin-reveal-big.png: hidden-balance-pin-reveal-big.png
 assets/images/guide/daily-spending-wallet/privacy/hidden-balance-reveal-timer-big.png: hidden-balance-reveal-timer-big.png
@@ -1859,3 +1869,13 @@ assets/images/guide/daily-spending-wallet/requesting/SetupFee.png: SetupFee.png
 assets/images/guide/daily-spending-wallet/requesting/SetupFee@2x.png: SetupFee@2x.png
 assets/images/guide/daily-spending-wallet/requesting/Unified.png: Unified.png
 assets/images/guide/daily-spending-wallet/requesting/Unified@2x.png: Unified@2x.png
+assets/images/guide/daily-spending-wallet/receiving/received.png: received.png
+assets/images/guide/daily-spending-wallet/receiving/received@2x.png: received@2x.png
+assets/images/guide/daily-spending-wallet/receiving/ClaimRefund.png: ClaimRefund.png
+assets/images/guide/daily-spending-wallet/receiving/ClaimRefund@2x.png: ClaimRefund@2x.png
+assets/images/guide/daily-spending-wallet/receiving/RefundOnChain.png: RefundOnChain.png
+assets/images/guide/daily-spending-wallet/receiving/RefundOnChain@2x.png: RefundOnChain@2x.png
+assets/images/guide/daily-spending-wallet/receiving/RefundActivity.png: RefundActivity.png
+assets/images/guide/daily-spending-wallet/receiving/RefundActivity@2x.png: RefundActivity@2x.png
+assets/images/guide/daily-spending-wallet/receiving/SwapFail.png: SwapFail.png
+assets/images/guide/daily-spending-wallet/receiving/SwapFail@2x.png: SwapFail@2x.png

@@ -2,7 +2,8 @@
 layout: guide
 title: Requesting bitcoin
 description: An overview of requesting bitcoin with a daily spending wallet.
-nav_order: 4
+has_children: true
+nav_order: 3
 parent: Daily spending wallet
 permalink: /guide/daily-spending-wallet/requesting/
 image: /assets/images/guide/daily-spending-wallet/requesting/request-banner-preview(1200x630).jpg
@@ -36,7 +37,7 @@ Illustration source
 # Requesting bitcoin
 {:.no_toc} 
 
-Requesting bitcoin involves creating and sharing a payment request with a sender. A payment request is a piece of information that tells a sender where and how much bitcoin to send someone. This page covers design considerations when requesting bitcoin with a [daily spending wallet]({{ "/guide/daily-spending-wallet/" | relative_url }}).
+Requesting bitcoin involves creating and sharing a [payment request]({{ "guide/daily-spending-wallet/requesting/" | relative_url }}) with a sender. A payment request is a piece of information that tells a sender where and how much bitcoin to send someone. This page covers design considerations when requesting bitcoin with a [daily spending wallet]({{ "/guide/daily-spending-wallet/" | relative_url }}).
 
 {% include /tip/open.html label="Payment request formats" icon="info" color="blue" %}
 
@@ -137,11 +138,7 @@ This wallet’s on-chain addresses are all swap addresses. These help with movin
 
 As unified requests [aren't widely supported yet](https://bitcoinqr.dev/), and users may want to request just from lightning or on-chain, they have options to share the lightning invoice or on-chain address independently. 
 
-{% include tip/recommendation.html %}
-
-Receiving lightning payments requires a user to be online. To keep users online and prevent payment failures, inform them to keep their app open until the payment is received when they create a request. [Receiving payments offline]({{ "/guide/how-it-works/lightning-services/#receive-payments-offline" | relative_url }}) is still a work in progress.
-
-{% include tip/close.html %}
+Receiving payments to this wallet requires users to be online. This wallet notifies users that their wallet should remain open until the payment is received. We cover this more on our [receiving]({{ "/guide/daily-spending-wallet/requesting/receiving/#receiving-offline" | relative_url }}) and [lighting services]({{ "/guide/how-it-works/lightning-services/#receive-payments-offline" | relative_url }}) pages.
 
 <div class="image-slide-gallery">
 
@@ -432,11 +429,11 @@ For some background on situations the user might encounter with different invoic
 
 ---
 
-Next, we go over the design considerations for [sending]({{ "/guide/daily-spending-wallet/sending/" | relative_url }}) bitcoin.
+Next, we go over the design considerations for [receiving bitcoin]({{ "/guide/daily-spending-wallet/requesting/receiving/" | relative_url }}) bitcoin.
 
 {% include next-previous.html
    previousUrl = "/guide/daily-spending-wallet/backup-and-recovery/recovery/"
    previousName = "Recovery"
-   nextUrl = "/guide/daily-spending-wallet/sending/"
-   nextName = "Sending"
+   nextUrl = "/guide/daily-spending-wallet/requesting/receiving/"
+   nextName = "Receiving bitcoin"
 %}
