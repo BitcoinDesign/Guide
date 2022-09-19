@@ -2,7 +2,7 @@
 layout: guide
 title: Contacts
 description: Design reference for a contacts feature in bitcoin wallets.
-nav_order: 7
+nav_order: 6
 parent: Daily spending wallet
 permalink: /guide/daily-spending-wallet/contacts/
 redirect_from:
