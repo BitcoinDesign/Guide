@@ -22,6 +22,22 @@ Everyone is welcome to join and [participate]({{ '/contribute' | relative_url }}
 
 [Join on Slack]({{ site.slack_invite_url }}){: .button }
 
+### Join the [Bitcoin Designathon](https://event.bitcoin.design)
+
+{% include picture.html
+   image = "/assets/images/home/designathon.png"
+   retina = "/assets/images/home/designathon@2x.png"
+   mobile = "/assets/images/home/designathon-mobile.png"
+   mobileRetina = "/assets/images/home/designathon-mobile@2x.png"
+   alt-text = "Bitcoin Designathon promo banner"
+   width = 800
+   height = 367
+%}
+
+We are organizing a designathon. Imagine a traditional hackathon, but this time focused only on design. Our goal is to motivate designers and builders to get together and collaboratively explore ideas and concepts in and around the bitcoin ecosystem. Come join us.
+
+[Find out more](https://event.bitcoin.design){: .button }
+
 ### The Bitcoin Design Guide
 
 Our first community project, the [Bitcoin Design Guide]({{ '/guide' | relative_url }}) is a free, open-source repository for anyone building non-custodial bitcoin products. The guide will eventually cover consumer wallets, merchant interactions, financial applications, and much more.
