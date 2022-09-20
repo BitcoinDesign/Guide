@@ -34,7 +34,7 @@ Everyone is welcome to join and [participate]({{ '/contribute' | relative_url }}
    height = 367
 %}
 
-We are organizing a designathon. Imagine a traditional hackathon, but this time focused only on design. Our goal is to motivate designers and builders to get together and collaboratively explore ideas and concepts in and around the bitcoin ecosystem. Come join us.
+We are organizing a designathon! Imagine a traditional hackathon, but this time focused only on design. Our goal is to motivate designers and builders to get together and collaboratively explore ideas and concepts in and around the bitcoin ecosystem. Come join us!
 
 [Find out more](https://event.bitcoin.design){: .button }
 
