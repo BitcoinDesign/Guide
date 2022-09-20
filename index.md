@@ -24,15 +24,14 @@ Everyone is welcome to join and [participate]({{ '/contribute' | relative_url }}
 
 ### Join the [Bitcoin Designathon](https://event.bitcoin.design)
 
-{% include picture.html
-   image = "/assets/images/home/designathon.png"
-   retina = "/assets/images/home/designathon@2x.png"
-   mobile = "/assets/images/home/designathon-mobile.png"
-   mobileRetina = "/assets/images/home/designathon-mobile@2x.png"
-   alt-text = "Bitcoin Designathon promo banner"
-   width = 800
-   height = 367
-%}
+<figure>
+    <a href="https://event.bitcoin.design" target="_blank">
+        <picture>
+            <source media="(max-width: 639px)" srcset="/assets/images/home/designathon-mobile.png 1x, /assets/images/home/designathon-mobile@2x.png 2x">
+            <img src="/assets/images/home/designathon.png" srcset="/assets/images/home/designathon.png 1x, /assets/images/home/designathon@2x.png 2x" alt="Bitcoin Designathon promo banner" width="800" height="367" loading="lazy">
+        </picture>
+    </a>
+</figure>
 
 We are organizing a designathon! Imagine a traditional hackathon, but this time focused only on design. Our goal is to motivate designers and builders to get together and collaboratively explore ideas and concepts in and around the bitcoin ecosystem. Come join us!
 
