@@ -22,6 +22,12 @@ Everyone is welcome to join and [participate]({{ '/contribute' | relative_url }}
 
 [Join on Slack]({{ site.slack_invite_url }}){: .button }
 
+<!--
+
+A temporary insertion to promo the designathon.
+Using HTML instead of markdown to make the image a link.
+
+-->
 ### Join the [Bitcoin Designathon](https://event.bitcoin.design)
 
 <figure>
