@@ -62,7 +62,7 @@ The daily spending wallet is an app designed to quickly and easily send small am
 
    <div>
       <h2 class="h4">Self-custodial</h2>
-      <p>With this wallet, the user manages their own private key. As a result, the user has full custody over their bitcoin. No third party, not even the app developer, can access the user’s funds.</p>
+      <p>With this wallet, the user manages their own private key. As a result, the user has <a href="/guide/getting-started/principles/#self-custody">full custody</a> over their bitcoin. No third party, not even the app developer, can access the user’s funds.</p>
    </div>
 </div>
 
@@ -96,7 +96,7 @@ The daily spending wallet is an app designed to quickly and easily send small am
 
    <div>
       <h2 class="h4">Lightning-first</h2>
-      <p>This wallet runs its own lightning node. This means the user is directly connected to the lightning network. They can transact instantly and cheaply without having to set up any additional hardware or software.</p>
+      <p>This wallet runs its own lightning node. This means the user is directly connected to the <a href="/guide/getting-started/technology-primer/#the-lightning-payment-network">lightning network.</a> They can transact instantly and cheaply without having to set up any additional hardware or software.</p>
    </div>
 </div>
 
@@ -125,9 +125,9 @@ The daily spending wallet is an app designed to quickly and easily send small am
 A reference design is a complete design for a bitcoin product. It goes beyond just demonstrating individual user flows -- rather, it shows you how all of the user flows fit together and serve a purpose in the user’s life. You can use this open-source reference design to help you build your own similar bitcoin product!
 
 ## What we are building
-Imagine a product that tries to solve the problem of quickly and easily sending smaller amounts of bitcoin to friends and family or paying for small purchases. Ease and speed of use will be important as usage will likely be on mobile devices and on the go. Users are not expected to be well-versed in bitcoin technology or advanced private key management, making it reasonable to worry more about self-inflicted loss than theft.
+Imagine a product that tries to solve the problem of quickly and easily [sending smaller amounts of bitcoin]({{'/guide/designing-products/personal-finance/#day-to-day-spending' | relative_url}}) to friends and family or paying for small purchases. Ease and speed of use will be important as usage will likely be on mobile devices and on the go. Users are not expected to be well-versed in bitcoin technology or advanced [private key management]({{'/guide/how-it-works/private-key-management/introduction/' | relative_url}}), making it reasonable to worry more about self-inflicted loss than theft.
 
-Since it’s designed for ease, this wallet abstracts away channel management for the user. It can do this by integrating with a lightning service provider (LSP). This way, the user never has to consider their lightning channels.
+Since it’s designed for ease, this wallet abstracts away channel management for the user. It can do this by integrating with a [lightning service provider (LSP)]({{'/guide/how-it-works/lightning-services/' | relative_url}}). This way, the user never has to consider their [lightning channels.]({{'/guide/how-it-works/liquidity/' |relative_url}})
 
 Speed of use is important for this wallet. As such, this wallet maintains a single lightning balance. This means that all the user’s funds are quickly spendable over lightning. The wallet uses submarine swaps so the user can send and receive bitcoin on-chain when needed.
 
