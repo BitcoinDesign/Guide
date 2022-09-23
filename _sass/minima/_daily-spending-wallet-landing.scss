@@ -32,3 +32,19 @@ article.guide {
     }
   }
 }
+
+.daily-spending-wallet-landing article.guide {
+  h2, h3 {
+    margin-top: 30px;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  .-float-left {
+    img {
+      border-radius: 8px;
+    }
+  }
+}
