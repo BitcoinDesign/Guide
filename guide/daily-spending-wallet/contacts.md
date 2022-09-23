@@ -2,7 +2,7 @@
 layout: guide
 title: Contacts
 description: Design reference for a contacts feature in bitcoin wallets.
-nav_order: 7
+nav_order: 6
 parent: Daily spending wallet
 permalink: /guide/daily-spending-wallet/contacts/
 redirect_from:
@@ -13,7 +13,7 @@ image_base: /assets/images/guide/daily-spending-wallet/contacts/
 imagesAddContact:
     - file: manual-add-empty
       alt: Empty contact list screen
-      caption: Initially, a walllet's contact list is empty. Importing them from the device can be made available.
+      caption: Initially, a wallet's contact list is empty. Importing them from the device can be made available.
     - file: manual-add-first-contact-name
       alt: Screen asking the user to enter a name for a new contact
       caption: All a new contact needs is a name. Other information can be added later.
@@ -66,7 +66,7 @@ imagesImportAddress:
       alt: Modal showing that a Lightning address was detected on the clipboard
       caption: A modal is shown when an address has been imported via the clipboard or other methods.
     - file: lightning-address-input-add-contact
-      alt: Scren for selecting a contact
+      alt: Screen for selecting a contact
       caption: The user has tapped "Add contact" and then taps "+" to add a new contact.
     - file: lightning-address-input-new-contact
       alt: Contact screen with the Lightning address assigned

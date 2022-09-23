@@ -2,7 +2,7 @@
 layout: guide
 title: Privacy
 description: An overview of how to help users maintain their financial privacy while using a bitcoin daily spending wallet.
-nav_order: 9
+nav_order: 8
 parent: Daily spending wallet
 permalink: /guide/daily-spending-wallet/privacy/
 redirect_from:

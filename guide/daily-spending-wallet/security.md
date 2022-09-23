@@ -3,7 +3,7 @@ layout: guide
 title: Security
 description: How extra layers of security can be added to bitcoin daily spending wallets via PINs, face Id, and other techniques.
 parent: Daily spending wallet
-nav_order: 8
+nav_order: 7
 permalink: /guide/daily-spending-wallet/security/
 redirect_from:
  - /guide/onboarding/protecting-a-wallet/
@@ -27,7 +27,7 @@ images_reminders:
     - file: security-reminder-modal
       modalImage: security-reminder-modal-big
       alt: Screen recommending user to enable wallet spend limits
-      caption: A full-scren modal with a specific recommendation.
+      caption: A full-screen modal with a specific recommendation.
     - file: home-security-reminder
       modalImage: home-security-reminder-big
       alt: Wallet home screen with a reminder to review security settings
