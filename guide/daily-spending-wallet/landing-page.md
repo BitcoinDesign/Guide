@@ -38,7 +38,7 @@ The daily spending wallet is an app designed to quickly and easily send small am
       retina = "/assets/images/guide/daily-spending-wallet/bitcoin@2x.png"
       mobile = "/assets/images/guide/daily-spending-wallet/bitcoin-mobile.png"
       mobileRetina = "/assets/images/guide/daily-spending-wallet/bitcoin-mobile@2x.png"
-      alt-text = "Bitcoin logo"
+      alt-text = ""
       width = 100
       height = 100
    %}
@@ -55,7 +55,7 @@ The daily spending wallet is an app designed to quickly and easily send small am
       retina = "/assets/images/guide/daily-spending-wallet/private-key@2x.png"
       mobile = "/assets/images/guide/daily-spending-wallet/private-key-mobile.png"
       mobileRetina = "/assets/images/guide/daily-spending-wallet/private-key-mobile@2x.png"
-      alt-text = "Graphic of a key"
+      alt-text = ""
       width = 100
       height = 100
    %}
@@ -72,7 +72,7 @@ The daily spending wallet is an app designed to quickly and easily send small am
       retina = "/assets/images/guide/daily-spending-wallet/mobile-phone@2x.png"
       mobile = "/assets/images/guide/daily-spending-wallet/mobile-phone-mobile.png"
       mobileRetina = "/assets/images/guide/daily-spending-wallet/mobile-phone-mobile@2x.png"
-      alt-text = "Graphic of a mobile phone"
+      alt-text = ""
       width = 100
       height = 100
    %}
@@ -89,7 +89,7 @@ The daily spending wallet is an app designed to quickly and easily send small am
       retina = "/assets/images/guide/daily-spending-wallet/lightning@2x.png"
       mobile = "/assets/images/guide/daily-spending-wallet/lightning-mobile.png"
       mobileRetina = "/assets/images/guide/daily-spending-wallet/lightning-mobile@2x.png"
-      alt-text = "Graphic of a lightning bolt"
+      alt-text = ""
       width = 100
       height = 100
    %}
