@@ -87,7 +87,7 @@ A closer look at the design process and frameworks, from [personal finance use c
 
 <h2 class="h3" markdown="1">[Daily spending wallet]({{ '/guide/daily-spending-wallet/' | relative_url }})</h2>
 
-An in-depth exploration of a mobile wallet for a Lightning-first, on-the-go use case. Covers primary user flows like [first use]({{ '/guide/onboarding/first-use/' | relative_url }}), [sending]({{ '/guide/payments/send/' | relative_url }}) and [requesting]({{ '/guide/payments/request/' | relative_url }}), features like [backup]({{ '/guide/onboarding/backing-up-a-wallet/' | relative_url }}) and [contacts]({{ '/guide/payments/contacts/' | relative_url }}), and more.
+An in-depth exploration of a mobile wallet for a lightning-first, on-the-go use case. Covers primary user flows like [first use]({{ '/guide/onboarding/first-use/' | relative_url }}), [sending]({{ '/guide/payments/send/' | relative_url }}) and [requesting]({{ '/guide/payments/request/' | relative_url }}), features like [backup]({{ '/guide/onboarding/backing-up-a-wallet/' | relative_url }}) and [contacts]({{ '/guide/payments/contacts/' | relative_url }}), and more.
 
 <div class="columns-desktop -two -ref">
 <div class="column" markdown="1">
@@ -150,7 +150,7 @@ An overview and considerations for bitcoin wallets that are managed by multiple 
 
 <h2 class="h3" markdown="1">[How it works]({{ '/guide/how-it-works/' | relative_url }})</h2>
 
-Explanations of various technical aspects of bitcoin and Lightning.
+Explanations of various technical aspects of bitcoin and lightning.
 
 <div class="columns-desktop -two -how">
 <div class="column" markdown="1">

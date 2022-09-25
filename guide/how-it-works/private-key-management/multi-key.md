@@ -52,7 +52,7 @@ Multi-key schemes can raise the security, since anyone needs access to more than
 
 {% include tip/tip.html %}
 
-The keys used by a Lightning node cannot be controlled by a multi-key setup, as they need to be continuously available to the node.
+The keys used by a lightning node cannot be controlled by a multi-key setup, as they need to be continuously available to the node.
 
 {% include tip/close.html %}
 
@@ -70,7 +70,7 @@ A software wallet application or coordination software initiates a multi-sig wal
 {% include fact/cons.html %}
 
 - Has significant complexity and op-sec burden for multiple private keys, each of which needs a good backup scheme
-- Not compatible with Lightning node wallets
+- Not compatible with lightning node wallets
 
 {% include fact/close.html %}
 
@@ -86,7 +86,7 @@ A software wallet application or coordination software initiates a multi-sig wal
 **When not to use**
 - For small amounts
 - When users are likely to be new to bitcoin
-- When controlling a Lightning node
+- When controlling a lightning node
 
 **Variations**
 - Number of total and co-signing keys

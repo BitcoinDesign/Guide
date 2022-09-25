@@ -44,7 +44,7 @@ Important aspects to consider when choosing a private key management scheme are 
 * **Target audience** - Are your users completely new to bitcoin and its concepts, or well versed in all the technological underpinnings?
 * **Use case** - Are you building a [personal finance]({{ '/guide/designing-products/personal-finance/' | relative_url }}) product for daily payments, or a long-term life-saving storage solution?
 * **Value stored** - While we always strive for no loss of funds, how critical to their financial situation would it be if your user lost access to their funds?
-* **Transaction layers** - Do your users need to transact on both the base layer and the Lightning network?
+* **Transaction layers** - Do your users need to transact on both the base layer and the lightning network?
 
 
 The narrower you can define your answer to these questions, the easier it will be to pick the right private key management scheme, and provide a great user experience. If you find yourself wanting to target a wide range, it might be a good idea to use a progressive scheme that changes as the user’s funds and familiarity with bitcoin grows.
@@ -70,9 +70,9 @@ Now that you have a clear picture of your use case, target audience and risk vec
 
 {% include tip/recommendation.html %}
 
-If your product supports the **Lightning network** by running a local node, the *automatic cloud backup* scheme is often the best fit. This is due to the need for continuously backing up accurate channel states. It is possible, but more complicated for the user to achieve this with a *manual backup*.
+If your product supports the **lightning network** by running a local node, the *automatic cloud backup* scheme is often the best fit. This is due to the need for continuously backing up accurate channel states. It is possible, but more complicated for the user to achieve this with a *manual backup*.
 
-It is not yet possible to use *external signer* or *multi-key* schemes for Lightning. This is due to the need for the private key(s) to be available to the Lightning node at all times.
+It is not yet possible to use *external signer* or *multi-key* schemes for lightning. This is due to the need for the private key(s) to be available to the lightning node at all times.
 
 {% include tip/close.html %}
 

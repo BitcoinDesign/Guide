@@ -109,7 +109,7 @@ The described process is part of bitcoins hard-coded monetary policy, which foll
 
 ### BOLT - Basis of Lightning Technology
 
-A standardized technical document format for the Lightning network protocol specifications. They are hosted on Github [here](https://github.com/lightningnetwork/lightning-rfc). The various Lightning implementations must adhere to the BOLTs in order to be interoperable. However, some Lightning implementations may have features that are not defined in BOLTs.
+A standardized technical document format for the lightning network protocol specifications. They are hosted on Github [here](https://github.com/lightningnetwork/lightning-rfc). The various lightning implementations must adhere to the BOLTs in order to be interoperable. However, some lightning implementations may have features that are not defined in BOLTs.
 
 ### Channel Reserve
 
@@ -244,13 +244,13 @@ Bitcoin wallets and addresses have both [public](#public-key) and [private keys]
 
 ### Lightning invoice
 
-Users of the Lightning network use a Lightning invoice to request a payment. It is defined by [BOLT 11](https://github.com/lightningnetwork/lightning-rfc/blob/master/11-payment-encoding.md) and includes an amount to be paid, destination of the payment, and an optional message. Unlike bitcoin addresses, Lightning invoice's expire after a set amount of time. By default, this is set to 60 minutes.
+Users of the lightning network use a lightning invoice to request a payment. It is defined by [BOLT 11](https://github.com/lightningnetwork/lightning-rfc/blob/master/11-payment-encoding.md) and includes an amount to be paid, destination of the payment, and an optional message. Unlike bitcoin addresses, lightning invoice's expire after a set amount of time. By default, this is set to 60 minutes.
 
 Why do invoices expire? If invoices had no expiry, recipients would likely run into memory / storage issues as the number of locally stored preimages grows with each payment attempt. Rene Pickhardt explains this further [here](https://bitcoin.stackexchange.com/questions/85981/why-do-lightning-invoices-expire/85999#85999).
 
 ### Lightning network
 
-The [Lightning Network]({{ 'https://lightning.network' }}) extends bitcoin with payment channels to increase transaction speed and lower costs. It is becoming widely adopted and accepted as the preferred way to scale bitcoin.
+The [lightning network]({{ 'https://lightning.network' }}) extends bitcoin with payment channels to increase transaction speed and lower costs. It is becoming widely adopted and accepted as the preferred way to scale bitcoin.
 
 ### Mempool
 
@@ -316,7 +316,7 @@ A small piece of data that has all the information needed to generate a specific
 
 ### Payment
 
-A payment is a transaction that occurs over the Lightning network. Payments are routed through Lightning payment channels and are not recorded in the bitcoin blockchain.
+A payment is a transaction that occurs over the lightning network. Payments are routed through lightning payment channels and are not recorded in the bitcoin blockchain.
 
 ### Private key
 

@@ -77,7 +77,7 @@ In addition, six fundamental properties define whether or not a currency can act
 
 Although bitcoin is purely digital, it meets every classical definition of what makes something money. Instead of relying on physical properties (like gold and silver) or central authorities (like government-issued fiat currencies), bitcoin relies on the world’s most powerful [computer network]({{ '/guide/glossary/node/' | relative_url }}) to mathematically enforce the rules that make it the first truly digital form of cash.
 
-Natively digital money can also be extended in previously unthinkable ways. From smart contracts to Layer 2 solutions like the Lightning Network that enable faster and cheaper payments, bitcoin can get built upon to enable new and evolving use cases.
+Natively digital money can also be extended in previously unthinkable ways. From smart contracts to Layer 2 solutions like the lightning network that enable faster and cheaper payments, bitcoin can get built upon to enable new and evolving use cases.
 </div>
 
 ## There's a limited supply

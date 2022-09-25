@@ -189,7 +189,7 @@ Bitcoin is an open-source protocol, operating in a decentralized manner. This ha
 **Do**
 - Support import and export of wallet data
     - For on-chain wallets, allow users to export and import wallets directly
-    - For Lightning wallets, offer a clear path for the user to move their Lightning funds to another wallet
+    - For lightning wallets, offer a clear path for the user to move their lightning funds to another wallet
 - Support as many relevant [BIPs]({{'/guide/glossary/#bip---bitcoin-improvement-proposal' | relative_url}}) and [BOLTs]({{'/guide/glossary/#bolt---basis-of-lightning-technology' | relative_url}}) as possible
     - Be transparent with which ones you do and don’t support
 - Maximize backwards compatibility
@@ -255,7 +255,7 @@ The bitcoin network doesn’t need to know your name for you to use it. Strive t
 
 **Do**
 - Minimize the personal information you collect
-- Encourage usage of the Lightning network for improved privacy
+- Encourage usage of the lightning network for improved privacy
 - Avoid address reuse
 - Embrace privacy-preserving options when relevant (running a full node, compact block filters, Tor, coin selection, schnorr signatures, payjoin, coinswap, etc.)
 

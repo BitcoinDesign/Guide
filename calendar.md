@@ -46,7 +46,7 @@ Join community calls, design reviews, project discussions and other events. Our 
 {% include emoji-box.html
     emoji = "⚡️"
     title = "Bitcoin design sprints"
-    description = "Our collaborative design sessions with Lightning wallet projects."
+    description = "Our collaborative design sessions with lightning wallet projects."
     url = "https://github.com/BitcoinDesign/Meta/issues/244"
 %}
 

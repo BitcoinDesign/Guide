@@ -40,13 +40,13 @@ https://www.figma.com/community/file/995256542920917246/BDG---Private-key-manage
 
 By using an automatic cloud backup for the private key the user is NOT required to manually backup anything when setting up a new [bitcoin wallet]({{ '/guide/glossary/wallet/#bitcoin-wallet' | relative_url }}). This is sometimes also called *seedless*, as the user is never exposed to the traditional *seed*, or [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) that is used to initiate a wallet.
 
-This scheme can be a good fit for wallets meant for storing smaller amounts of bitcoin, such as a Lightning wallet that is used for daily spending. A daily spending wallet might also be referred to as a [*hot wallet*]({{'/guide/glossary/wallet/#hot--cold-wallet' | relative_url}}), where the convenience of accessing funds is more important than maximum security.
+This scheme can be a good fit for wallets meant for storing smaller amounts of bitcoin, such as a lightning wallet that is used for daily spending. A daily spending wallet might also be referred to as a [*hot wallet*]({{'/guide/glossary/wallet/#hot--cold-wallet' | relative_url}}), where the convenience of accessing funds is more important than maximum security.
 
 These types of wallets may be good for novices who would find manually backing up a recovery phrase during onboarding confusing, possibly leading to unsafe backups. It could also be a starting point for a [progressive security model]({{'/guide/getting-started/principles/#security' | relative_url}}) that lets customers upgrade when they start accumulating more funds.
 
 The automatic cloud backup scheme gives users reasonable security against theft, while providing low risk for self-inflicted losses.
 
-If a wallet supports Lightning, it may already have automatic cloud backup [enabled for the channel state]({{'/guide/daily-spending-wallet/backup-and-recovery/cloud-backup/' | relative_url}}). If you have implemented automatic cloud backups in your app for Lightning channel state, wallet data, or anything else, you could also use this same connection with the cloud provider to store a backup of the user's private key.
+If a wallet supports lightning, it may already have automatic cloud backup [enabled for the channel state]({{'/guide/daily-spending-wallet/backup-and-recovery/cloud-backup/' | relative_url}}). If you have implemented automatic cloud backups in your app for lightning channel state, wallet data, or anything else, you could also use this same connection with the cloud provider to store a backup of the user's private key.
 
 ### How it works
 First, the application generates a wallet with a private key. Then, the private key is encrypted and backed up to a location convenient and safe for the user, yet hard for a malicious third-party to gain access to.
@@ -97,7 +97,7 @@ To see what a user experience with this scheme could look like, see the [daily s
 #### Products that use this scheme
 - [Photon SDK](https://photonsdk.org) - for use by other wallets, in development
 - [Casa](https://keys.casa)
-- [Pine](https://pine.pm ) - Lightning, beta
+- [Pine](https://pine.pm ) - lightning, beta
 
 ---
 

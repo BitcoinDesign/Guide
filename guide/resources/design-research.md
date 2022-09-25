@@ -113,7 +113,7 @@ In this second edition, Arcane Research delivers valuable insights into the grow
 
 _2022 by Kraken Intelligence._
 
-This report provides an overview of the Lightning protocol and its technical design. It also reveals its historical background and gives some interesting insights into the state of the network.
+This report provides an overview of the lightning protocol and its technical design. It also reveals its historical background and gives some interesting insights into the state of the network.
 
 #### [Bitcoin: Knowledge and Perceptions](https://block.xyz/2022/btc-report.pdf)
 
@@ -133,11 +133,11 @@ _2022 by BlockFi._
 
 Female Americans were asked about their current motivations, behaviors and dispositions around crypto investing, financial wellness, and career aspirations. 24% reported owning crypto, with 71% of those owning bitcoin. 70% have only bought and never sold.
 
-#### [The state of Lightning](https://www.research.arcane.no/the-state-of-lightning)
+#### [The State of Lightning](https://www.research.arcane.no/the-state-of-lightning)
 
 _2021 by Arcane research._
 
-The State of Lightning provides a comprehensive overview of usage on the Lightning network seen to date (October 2021). The report highlights and explains the growth in network metrics, provides estimates of mainstream adoption, and looks into the future of the Lightning network.
+The State of lightning provides a comprehensive overview of usage on the lightning network seen to date (October 2021). The report highlights and explains the growth in network metrics, provides estimates of mainstream adoption, and looks into the future of the lightning network.
 
 #### [Bitcoin UX Research](https://patestevao.com/work/bitcoin-ux-research/)
 
@@ -145,11 +145,11 @@ _2021 by Estevão._
 
 The goal of the research was to provide an in-depth qualitative knowledge of how people use or perceive bitcoin.
 
-#### [A Deep Dive Into Lightning as a Bitcoin Scaling Solution](https://downloads.coindesk.com/research/Lightning+Network+-+CoinDesk+Research+-+2021.09.pdf)
+#### [A Deep Dive Into Lightning as a Bitcoin Scaling Solution](https://downloads.coindesk.com/research/lightning+Network+-+CoinDesk+Research+-+2021.09.pdf)
 
 _2021 by Kaloudis, CoinDesk research_
 
-The research looks at the Lightning Network from a perspective of the scaling solution and pinpoints the basic architecture that powers it and outlines the potential attact vectors.
+The research looks at the lightning network from a perspective of the scaling solution and pinpoints the basic architecture that powers it and outlines the potential attact vectors.
 
 #### [Automatic Cloud Backup (Seedless) Wallet Research](https://docs.google.com/document/d/11KbQnor7kQPdzHKmycBLPwOKyVo3t99nUEQYpVsik_o/edit?usp=sharing)
 
@@ -222,7 +222,7 @@ Documentation of the user research, redesign and testing process of Coinhako, a 
 
 #### [Lightning Network UX Research](https://patestevao.com/work/lightning-network-ux-research/)
 
-The study conducted to look into the interactions between users and the Lightning payments. It also reviewes three well-known projects at that time and looks through their user-experience.
+The study conducted to look into the interactions between users and the lightning payments. It also reviewes three well-known projects at that time and looks through their user-experience.
 
 _2019 by Estevão._
 

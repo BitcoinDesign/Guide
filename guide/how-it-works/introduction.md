@@ -40,7 +40,7 @@ A primer on liquidity in the lightning network.
 
 ### [Lightning services]({{ '/guide/how-it-works/lightning-services/' | relative_url }})
 
-Common user experience problems of the Lightning network that can be resolved by third-party service providers.
+Common user experience problems of the lightning network that can be resolved by third-party service providers.
 
 ---
 
@@ -52,7 +52,7 @@ Learn about how nodes help keep bitcoin decentralized and enforce its rules.
 
 ### [Payment request formats]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }})
 
-Learn about the different types of payment request formats, from a standard on-chain address to a Lightning address, that exist in bitcoin.
+Learn about the different types of payment request formats, from a standard on-chain address to a lightning address, that exist in bitcoin.
 
 ---
 

@@ -42,11 +42,11 @@ Some of those issues include:
 
 Lightning services offered by third-parties aim to solve these issues.
 
-This section covers two categories of lightning services: Lightning service providers (LSPs), which focus on onboarding and providing connectivity to lightning users, and [lightning wallet servers]({{ '/guide/how-it-works/lightning-services/#what-are-lightning-wallet-servers' | relative_url }}), which provide additional services not relating to connectivity.
+This section covers two categories of lightning services: lightning service providers (LSPs), which focus on onboarding and providing connectivity to lightning users, and [lightning wallet servers]({{ '/guide/how-it-works/lightning-services/#what-are-lightning-wallet-servers' | relative_url }}), which provide additional services not relating to connectivity.
 
-## What is a Lightning service provider?
+## What is a lightning service provider?
 
-Internet service providers (ISPs) help users connect to the internet. Similarly, Lightning service providers (LSPs) help users connect to the lightning network while maintaining [self-custody]({{ '/guide/getting-started/principles/#self-custody' | relative_url }}).
+Internet service providers (ISPs) help users connect to the internet. Similarly, lightning service providers (LSPs) help users connect to the lightning network while maintaining [self-custody]({{ '/guide/getting-started/principles/#self-custody' | relative_url }}).
 
 They do this by being well connected in the network, opening channels, and offering inbound liquidity to users. They often charge a fee for their services.
 
@@ -191,7 +191,7 @@ It also prevents everyone from using the same LSP, improving [decentralization](
    height = 348
 %}
 
-## What are Lightning wallet servers?
+## What are lightning wallet servers?
 
 Once a user is connected to the lightning network, likely through an LSP, lightning wallet servers (LWS) offer services that make using lightning easier for users. LSPs sometimes offer LWS services as part of their offering but this is not exclusive to LSPs.
 
@@ -239,13 +239,13 @@ To prevent this, ensure your users can [manually backup their channel]({{ '/guid
 
 Lightning [payment requests]({{ '/guide/payments/request/payment-request-formats/' | relative_url }}) are not very human-readable and are mostly [single-use]({{ '/guide/daily-spending-wallet/requesting/' | relative_url }}).
 
-A [Lightning address](https://lightningaddress.com/) LWS service gives users a human-readable address that can be re-used to receive lightning payments. An example is bosch@bitcoin.design.
+A [lightning address](https://lightningaddress.com/) LWS service gives users a human-readable address that can be re-used to receive lightning payments. An example is bosch@bitcoin.design.
 
 {% include picture.html
-   image = "/assets/images/guide/how-it-works/lightning-services/Lightning-address.png"
-   retina = "/assets/images/guide/how-it-works/lightning-services/Lightning-address@2x.png"
-   mobile = "/assets/images/guide/how-it-works/lightning-services/Lightning-address-mobile.png"
-   mobileRetina = "/assets/images/guide/how-it-works/lightning-services/Lightning-address-mobile@2x.png"
+   image = "/assets/images/guide/how-it-works/lightning-services/lightning-address.png"
+   retina = "/assets/images/guide/how-it-works/lightning-services/lightning-address@2x.png"
+   mobile = "/assets/images/guide/how-it-works/lightning-services/lightning-address-mobile.png"
+   mobileRetina = "/assets/images/guide/how-it-works/lightning-services/lightning-address-mobile@2x.png"
    alt-text = "Examples of lightning addresses"
    width = 800
    height = 348
@@ -320,7 +320,7 @@ Now, lets learn how [nodes]({{ '/guide/how-it-works/nodes/' | relative_url }}) w
 
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/liquidity/"
-   previousName = "Lightning liquidity"
+   previousName = "lightning liquidity"
    nextUrl = "/guide/how-it-works/nodes/"
    nextName = "Nodes"
 %}

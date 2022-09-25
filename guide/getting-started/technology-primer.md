@@ -18,7 +18,7 @@ videos:
 
 Editor's notes
 
-This is the second version of the tech primer that introduces the Lightning
+This is the second version of the tech primer that introduces the lightning
 network to the reader. It's an introduction to bitcoin tech concepts
 based on simple questions readers might have, like "What is a bitcoin"
 and "How do I own bitcoin" but also sets up the foundations about
@@ -182,7 +182,7 @@ Transactions get verified and stored by the entire network of nodes and miners w
 
 While creating a transaction to move your funds from one address to another is common, setting up more complex spending rules is also possible. Such rules could require multiple parties to agree before moving funds, how much each is entitled to, and even the amount of time that must pass before a transfer. These transaction features make bitcoin customizable so that it's possible to build other applications and even networks on top of the base layer.
 
-There are multiple scaling solutions built on top of bitcoin's base layer, but we will be focusing on the Lightning Network in this guide.
+There are multiple scaling solutions built on top of bitcoin's base layer, but we will be focusing on the lightning network in this guide.
 
 **More info**
 - [Transaction lifecycle](/guide/how-it-works/transactions/)
@@ -210,20 +210,20 @@ A payment channel is a [joint account]({{'/guide/glossary/#multi-signature-walle
 
 </div>
 
-## The Lightning payment network
+## The lightning payment network
 
 <div class="center" markdown="1">
 
 {% include image.html
    image = "/assets/images/guide/getting-started/technology/lightning-network.jpg"
    retina = "/assets/images/guide/getting-started/technology/lightning-network@2x.jpg"
-   alt-text = "Lightning nodes connected to one another"
+   alt-text = "lightning nodes connected to one another"
    width = 400
    height = 400
    layout = "float-right-desktop"
 %}
 
-The Lightning network is a network of payment channels. Lightning nodes allow you to have multiple channels with different parties to route payments through. This new network forms a second layer on top of bitcoin. This has some privacy benefits, too: payment information is only recorded to the blockchain when the payment channel is opened and closed. Every payment that happens in between the opening and closing is not stored “on-chain”.
+The lightning network is a network of payment channels. Lightning nodes allow you to have multiple channels with different parties to route payments through. This new network forms a second layer on top of bitcoin. This has some privacy benefits, too: payment information is only recorded to the blockchain when the payment channel is opened and closed. Every payment that happens in between the opening and closing is not stored “on-chain”.
 </div>
 
 ## What are ways to receive bitcoin?
@@ -239,7 +239,7 @@ The Lightning network is a network of payment channels. Lightning nodes allow yo
    layout = "float-right-desktop"
 %}
 
-To transfer bitcoin, the recipient needs to provide the sender with the destination for the payment. On the base layer, this is typically done in the recipient's wallet application by generating and sharing an address. For Lightning payments, an invoice is used. While base layer transactions update balances on the public ledger, Lightning invoices contain information for a payment to be routed through the network of payment channels.
+To transfer bitcoin, the recipient needs to provide the sender with the destination for the payment. On the base layer, this is typically done in the recipient's wallet application by generating and sharing an address. For lightning payments, an invoice is used. While base layer transactions update balances on the public ledger, lightning invoices contain information for a payment to be routed through the network of payment channels.
 
 </div>
 
@@ -256,7 +256,7 @@ To transfer bitcoin, the recipient needs to provide the sender with the destinat
    layout = "float-right-desktop"
 %}
 
-To make a Lightning payment, you don't need to open a channel with everyone you transact with. Lightning nodes talk to one another and declare their payment channels. It's typical for nodes to have multiple channels to access different parts of the network for better routing. With an invoice, the sender finds a path to the receiver, and the payment hops from channel to channel until it reaches the destination.
+To make a lightning payment, you don't need to open a channel with everyone you transact with. Lightning nodes talk to one another and declare their payment channels. It's typical for nodes to have multiple channels to access different parts of the network for better routing. With an invoice, the sender finds a path to the receiver, and the payment hops from channel to channel until it reaches the destination.
 
 <!--
    While the blockchain the transaction is broadcasted to a node which propagates it to the rest of the network to be included in a block, on lightning network a payment is routed through a set of predefined nodes and channels.
@@ -288,7 +288,7 @@ To make a Lightning payment, you don't need to open a channel with everyone you 
    layout = "float-right-desktop"
 %}
 
-Just like a key for a door, a private key gives you access to your bitcoin. Private keys authorize the movement of bitcoin on the base layer as well as Lightning.
+Just like a key for a door, a private key gives you access to your bitcoin. Private keys authorize the movement of bitcoin on the base layer as well as lightning.
 
 Lightning node private keys are referred to as hot as they are stored on a device that is connected to the internet. This is not typically advised for storing large amounts as it is possible for a remote attacker to get access to that device. A more secure way to store private keys is cold storage, which is not connected to the internet.
 

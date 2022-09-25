@@ -42,7 +42,7 @@ imagesEntryScreens:
       caption: Invoices can also offer the user to withdraw bitcoin.
     - file: error-invoice-expired
       alt: A home screen with a modal explaining an invoice has expired
-      caption: Basic Lightning invoices expire, typically after one hour.
+      caption: Basic lightning invoices expire, typically after one hour.
     - file: error-incompatibility
       alt: A home screen with an informational modal around invoice compatibility
       caption: Compatibility problems are not uncommon due to the many formats.
@@ -59,7 +59,7 @@ imagesInfo:
 imagesProcessing:
     - file: processing
       alt: Payment screen showing the transaction is being sent
-      caption: Lightning transactions typically complete in seconds and don't require loaders.
+      caption: lightning transactions typically complete in seconds and don't require loaders.
     - file: processing-longer-wait
       alt: Payment screen showing that the transaction is taking longer than expected
       caption: If a transaction takes uncharacteristically long, users should be informed.
@@ -81,7 +81,7 @@ imagesErrors:
       caption: Access to error details for problem-solving.
     - file: offline-error
       alt: A screen showing error details
-      caption: If the receiving Lightning wallet is offline, let the user know how to address this problem.
+      caption: If the receiving lightning wallet is offline, let the user know how to address this problem.
 imagesReview:
     - file: confirm
       alt: Invoice approval screen
@@ -92,7 +92,7 @@ imagesReview:
     - file: enter-pin-before-payment
       alt: Enter PIN screen
       caption: Optionally, this wallet is asking the user to enter their PIN as the final step before paying.
-imagesLightning:
+imageslightning:
     - file: home
       alt: Wallet home screen with amount input, pay and request options
       caption: The user taps the scan button on the home screen.
@@ -181,7 +181,7 @@ When responding to an invoice that contains all relevant information, the user c
 
 **Recipient**
 
-The most convenient option for choosing a recipient is from a previously saved [contact]({{ '/guide/daily-spending-wallet/contacts/' | relative_url }}). Alternatively, users can enter Lightning addresses, Lightning node IDs, on-chain addresses, or other addresses that are supported by the wallet.
+The most convenient option for choosing a recipient is from a previously saved [contact]({{ '/guide/daily-spending-wallet/contacts/' | relative_url }}). Alternatively, users can enter lightning addresses, lightning node IDs, on-chain addresses, or other addresses that are supported by the wallet.
 
 There are also static [payment requests]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }}) that can receive payments repeatedly. These are less intuitive overall due to their appearance, but could also be considered payment endpoints.
 
@@ -202,7 +202,7 @@ Payment fees can drastically differ based on a few attributes:
 {% include image.html
    image = "/assets/images/guide/daily-spending-wallet/sending/fee-options.png"
    retina = "/assets/images/guide/daily-spending-wallet/sending/fee-options@2x.png"
-   alt-text = "Examples of on-chain, Lightning and Lightning routing fees"
+   alt-text = "Examples of on-chain, lightning and lightning routing fees"
    width = 400
    height = 417
    layout = "float-right-desktop"
@@ -210,7 +210,7 @@ Payment fees can drastically differ based on a few attributes:
 
 **Lightning routing fees**
 
-On the Lightning network, payments are passed between nodes to get from the sender to the receiver. Each of those nodes may charge a base fee and a second fee based on a percentage of the amount forwarded. Fees paid can vary, but are typically in the single-digit or double-digit Satoshi range (a small fraction of on-chain fees).
+On the lightning network, payments are passed between nodes to get from the sender to the receiver. Each of those nodes may charge a base fee and a second fee based on a percentage of the amount forwarded. Fees paid can vary, but are typically in the single-digit or double-digit Satoshi range (a small fraction of on-chain fees).
 
 **Lightning service fees**
 
@@ -254,7 +254,7 @@ If using a security step here, it should come after the user has selected all ot
 
 ## Transaction processing
 
-Processing times may also differ between on-chain and Lightning network payments. On-chain, pending transactions are bundled into a [new block]({{ '/guide/getting-started/technology-primer/#what-is-a-blockchain' | relative_url }}) roughly every 10 minutes. On the Lightning network, [payment routing]({{ '/guide/getting-started/technology-primer/#how-are-payments-routed' | relative_url }}) happens instantly and is largely dependent on the number of nodes involved, as well as their liquidity and processing speeds.
+Processing times may also differ between on-chain and lightning network payments. On-chain, pending transactions are bundled into a [new block]({{ '/guide/getting-started/technology-primer/#what-is-a-blockchain' | relative_url }}) roughly every 10 minutes. On the lightning network, [payment routing]({{ '/guide/getting-started/technology-primer/#how-are-payments-routed' | relative_url }}) happens instantly and is largely dependent on the number of nodes involved, as well as their liquidity and processing speeds.
 
 When transactions take longer than expected, users need to be clearly informed about the status. In scenarios like in-store payments, speedy confirmation is of the essence, as the user wants to move on, and the merchant may have other customers waiting. In-app status updates can be coupled with notifications to ensure that both parties are confident that everything is in order. For a framework on timing, see [this article on response time limits](https://www.nngroup.com/articles/response-times-3-important-limits/).
 
@@ -282,7 +282,7 @@ Completion of a payment should be clearly indicated to the user.
 
 It should also be simple to share a proof that the payment was made. In-person, it may suffice to show the screen to the receiver. Additional options like sharing the confirmation via chat or email may also be useful.
 
-As on-chain transactions can be globally verified by anyone, a link to a [bitcoin explorer]({{ '/guide/getting-started/software/#explorers' | relative_url }}) can be shared as a payment confirmation. For Lightning transactions, the so-called `preimage` can be considered a proof of payment.
+As on-chain transactions can be globally verified by anyone, a link to a [bitcoin explorer]({{ '/guide/getting-started/software/#explorers' | relative_url }}) can be shared as a payment confirmation. For lightning transactions, the so-called `preimage` can be considered a proof of payment.
 
 </div>
 
@@ -307,13 +307,13 @@ Effectively supporting users when problems occur can build trust and confidence,
 
 ### Encouraging lightning network
 
-Lightning is likely to be the best option for the majority of payments a user makes. It will be faster, more private, and cost less. An ideal scenario would be where the user does not spend time considering whether to pay on-chain or Lightning — it's all bitcoin to them.
+Lightning is likely to be the best option for the majority of payments a user makes. It will be faster, more private, and cost less. An ideal scenario would be where the user does not spend time considering whether to pay on-chain or lightning — it's all bitcoin to them.
 
-However, this can be challenging with the variety of different payment formats between on-chain and Lightning. What happens when the user is trying to pay somebody, but the receiving party has given them an on-chain address instead of a Lightning invoice?
+However, this can be challenging with the variety of different payment formats between on-chain and lightning. What happens when the user is trying to pay somebody, but the receiving party has given them an on-chain address instead of a lightning invoice?
 
-If your wallet is Lightning-only, the user will be unable to proceed with making payment. However, even if your wallet allows the user to send on-chain payments, this payment could still result in a higher transaction fee than they would have incurred over Lightning. If it's in the user's best interest to pay over Lightning, then let them know and help them determine what to do next.
+If your wallet is lightning-only, the user will be unable to proceed with making payment. However, even if your wallet allows the user to send on-chain payments, this payment could still result in a higher transaction fee than they would have incurred over lightning. If it's in the user's best interest to pay over lightning, then let them know and help them determine what to do next.
 
-{% include image-gallery.html pages = page.imagesLightning %}
+{% include image-gallery.html pages = page.imageslightning %}
 
 In this example, the user scans a QR to make a payment. This wallet recognizes it as an on-chain address. It is capable of making the on-chain payment with submarine swaps. However, that would involve a longer confirmation time and a higher fee for such a small payment. It immediately pulls up a modal notification to warn the user that they will have to wait longer for the payment to settle and pay a higher fee. It informs them they can pay instantly if they can get a different type of QR code from the sender.
 

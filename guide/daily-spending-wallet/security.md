@@ -75,7 +75,7 @@ Editor's notes
 
 This page narrowly focuses on user actions to set up and maintain good security
 and privacy for their wallets. It does not cover key setup and management, or
-technical things like watch towers for Lightning wallets.
+technical things like watch towers for lightning wallets.
 
 Illustration sources
 
