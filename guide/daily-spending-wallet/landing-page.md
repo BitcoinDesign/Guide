@@ -164,7 +164,7 @@ We try to highlight other design approaches throughout and discuss their pros an
    width = 100
    height = 100
    layout = "float-left"
-   link-url = "/guide/getting-started/introduction/"
+   link-url = "/guide/daily-spending-wallet/first-use/"
 %}
 
 ### [First use]({{ '/guide/daily-spending-wallet/first-use/' | relative_url }})
@@ -184,7 +184,7 @@ The daily spending wallet has a flexible first-use experience that guides users 
    width = 100
    height = 100
    layout = "float-left"
-   link-url = "/guide/getting-started/introduction/"
+   link-url = "/guide/daily-spending-wallet/backup-and-recovery/landing-page/"
 %}
 
 ### [Backup & recovery]({{ '/guide/daily-spending-wallet/backup-and-recovery/landing-page/' | relative_url }})
@@ -204,7 +204,7 @@ As a self-custodial wallet, this app places control of the private key in the ha
    width = 100
    height = 100
    layout = "float-left"
-   link-url = "/guide/getting-started/introduction/"
+   link-url = "/guide/daily-spending-wallet/requesting/"
 %}
 
 ### [Requesting]({{ '/guide/daily-spending-wallet/requesting/' | relative_url }})
@@ -224,7 +224,7 @@ This wallet lets the user quickly request bitcoin directly from the app's home s
    width = 100
    height = 100
    layout = "float-left"
-   link-url = "/guide/getting-started/introduction/"
+   link-url = "/guide/daily-spending-wallet/sending/"
 %}
 
 ### [Sending]({{ '/guide/daily-spending-wallet/sending/' | relative_url }})
@@ -244,7 +244,7 @@ Similar to requesting bitcoin, sending bitcoin is one of the most commonly used 
    width = 100
    height = 100
    layout = "float-left"
-   link-url = "/guide/getting-started/introduction/"
+   link-url = "/guide/daily-spending-wallet/activity/"
 %}
 
 ### [Activity]({{ '/guide/daily-spending-wallet/activity/' | relative_url }})
@@ -264,7 +264,7 @@ For an app the user may rely on daily, transaction history is more than just a l
    width = 100
    height = 100
    layout = "float-left"
-   link-url = "/guide/getting-started/introduction/"
+   link-url = "/guide/daily-spending-wallet/contacts/"
 %}
 
 ### [Contacts]({{ '/guide/daily-spending-wallet/contacts/' | relative_url }})
@@ -284,7 +284,7 @@ Things like invoices, node IDs, and bitcoin addresses can be unintuitive. This w
    width = 100
    height = 100
    layout = "float-left"
-   link-url = "/guide/getting-started/introduction/"
+   link-url = "/guide/daily-spending-wallet/security/"
 %}
 
 ### [Security]({{ '/guide/daily-spending-wallet/security/' | relative_url }})
@@ -304,7 +304,7 @@ Good security is critical for a bitcoin wallet. Whether it’s simply helping to
    width = 100
    height = 100
    layout = "float-left"
-   link-url = "/guide/getting-started/introduction/"
+   link-url = "/guide/daily-spending-wallet/privacy/"
 %}
 
 ### [Privacy]({{ '/guide/daily-spending-wallet/privacy/' | relative_url }})
@@ -324,7 +324,7 @@ Privacy in bitcoin is a complicated topic. While much of this can be considered 
    width = 100
    height = 100
    layout = "float-left"
-   link-url = "/guide/getting-started/introduction/"
+   link-url = "/guide/daily-spending-wallet/settings/"
 %}
 
 ### [Settings]({{ '/guide/daily-spending-wallet/settings/' | relative_url }})
