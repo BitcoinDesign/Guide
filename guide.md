@@ -26,7 +26,7 @@ Illustration sources
 
 -->
 
-# The Bitcoin design guide
+# The bitcoin design guide
 
 **Bitcoin is a global payment protocol that anyone with Internet access can participate in and contribute to. However, because bitcoin’s use cases are as vast as its user base, building bitcoin applications can be complicated.**
 
