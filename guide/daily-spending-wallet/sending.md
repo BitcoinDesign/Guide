@@ -59,7 +59,7 @@ imagesInfo:
 imagesProcessing:
     - file: processing
       alt: Payment screen showing the transaction is being sent
-      caption: lightning transactions typically complete in seconds and don't require loaders.
+      caption: Lightning transactions typically complete in seconds and don't require loaders.
     - file: processing-longer-wait
       alt: Payment screen showing that the transaction is taking longer than expected
       caption: If a transaction takes uncharacteristically long, users should be informed.
