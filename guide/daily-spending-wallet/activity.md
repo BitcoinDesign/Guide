@@ -106,6 +106,8 @@ On a technical level, a [transaction]({{ '/guide/how-it-works/transactions/' | r
 
 ##### Design considerations
 
+[Research](https://blog.getalby.com/rethinking-transaction-lists/) by the team at [Alby](https://getalby.com) has indicated that most users rarely visit a transaction list. The most common reasons to do so are to confirm payment status, budgeting, and to analyze payment behavior. The biggest challenges are navigating through endless lists to find a specific transaction and unavailable metadata, leaving users guessing who the payment was sent to and what for.	
+
 Activity is a utility screen where a user wants to quickly browse a data set to see what's new, find something specific, identify patterns, etc. Be deliberate with every detail and avoid adding anything that adds visual interest without signal, unless you have good reason to.
 
 Following are some of the design decisions in the screens above:

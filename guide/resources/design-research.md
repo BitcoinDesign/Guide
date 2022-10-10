@@ -97,6 +97,12 @@ A survey and follow-up interview of 990 bitcoin users to determine bitcoin manag
 
 ## Independent research
 
+#### [Rethinking Transaction Lists](https://blog.getalby.com/rethinking-transaction-lists/)
+
+_2022 by Alby._
+
+A survey on transaction list usage, common use cases, and suggested solutions.
+
 #### [New Mnemonics](https://medium.com/@thorbjoernkoenig/new-mnemonics-48f00b8bb68)
 
 _2022 by Thorbjoern Koenig._
