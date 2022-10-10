@@ -30,7 +30,7 @@ Anyone can make a difference and become a contributor. This page explains how to
 
 The entire source code and content of the guide are hosted in a cloud, [on GitHub](https://github.com/BitcoinDesign/Guide/). GitHub is a collaborative platform which at its core, has a distributed version control system called [Git](https://git-scm.com/). GitHub doesn't just host the code, it also allows smooth collaboration and interaction between contributors.
 
-A complete course in using GitHub is beyond the scope of this guide. If you are looking to learn more, Github has created a series of self-guided tutorials called [Github Skills](https://skills.github.com).
+A complete course in using GitHub is beyond the scope of this guide. If you are looking to learn more, GitHub has created a series of self-guided tutorials called [GitHub Skills](https://skills.github.com).
 
 {% include youtube.html id="JnXVzE_V7kw" %}
 
