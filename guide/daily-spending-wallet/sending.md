@@ -92,7 +92,7 @@ imagesReview:
     - file: enter-pin-before-payment
       alt: Enter PIN screen
       caption: Optionally, this wallet is asking the user to enter their PIN as the final step before paying.
-imageslightning:
+imagesLightning:
     - file: home
       alt: Wallet home screen with amount input, pay and request options
       caption: The user taps the scan button on the home screen.
@@ -313,7 +313,7 @@ However, this can be challenging with the variety of different payment formats b
 
 If your wallet is lightning-only, the user will be unable to proceed with making payment. However, even if your wallet allows the user to send on-chain payments, this payment could still result in a higher transaction fee than they would have incurred over lightning. If it's in the user's best interest to pay over lightning, then let them know and help them determine what to do next.
 
-{% include image-gallery.html pages = page.imageslightning %}
+{% include image-gallery.html pages = page.imagesLightning %}
 
 In this example, the user scans a QR to make a payment. This wallet recognizes it as an on-chain address. It is capable of making the on-chain payment with submarine swaps. However, that would involve a longer confirmation time and a higher fee for such a small payment. It immediately pulls up a modal notification to warn the user that they will have to wait longer for the payment to settle and pay a higher fee. It informs them they can pay instantly if they can get a different type of QR code from the sender.
 

@@ -217,7 +217,7 @@ A payment channel is a [joint account]({{'/guide/glossary/#multi-signature-walle
 {% include image.html
    image = "/assets/images/guide/getting-started/technology/lightning-network.jpg"
    retina = "/assets/images/guide/getting-started/technology/lightning-network@2x.jpg"
-   alt-text = "lightning nodes connected to one another"
+   alt-text = "Lightning nodes connected to one another"
    width = 400
    height = 400
    layout = "float-right-desktop"

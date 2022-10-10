@@ -42,7 +42,7 @@ Some of those issues include:
 
 Lightning services offered by third-parties aim to solve these issues.
 
-This section covers two categories of lightning services: lightning service providers (LSPs), which focus on onboarding and providing connectivity to lightning users, and [lightning wallet servers]({{ '/guide/how-it-works/lightning-services/#what-are-lightning-wallet-servers' | relative_url }}), which provide additional services not relating to connectivity.
+This section covers two categories of lightning services: Lightning service providers (LSPs), which focus on onboarding and providing connectivity to lightning users, and [lightning wallet servers]({{ '/guide/how-it-works/lightning-services/#what-are-lightning-wallet-servers' | relative_url }}), which provide additional services not relating to connectivity.
 
 ## What is a lightning service provider?
 
@@ -242,10 +242,10 @@ Lightning [payment requests]({{ '/guide/payments/request/payment-request-formats
 A [lightning address](https://lightningaddress.com/) LWS service gives users a human-readable address that can be re-used to receive lightning payments. An example is bosch@bitcoin.design.
 
 {% include picture.html
-   image = "/assets/images/guide/how-it-works/lightning-services/lightning-address.png"
-   retina = "/assets/images/guide/how-it-works/lightning-services/lightning-address@2x.png"
-   mobile = "/assets/images/guide/how-it-works/lightning-services/lightning-address-mobile.png"
-   mobileRetina = "/assets/images/guide/how-it-works/lightning-services/lightning-address-mobile@2x.png"
+   image = "/assets/images/guide/how-it-works/lightning-services/Lightning-address.png"
+   retina = "/assets/images/guide/how-it-works/lightning-services/Lightning-address@2x.png"
+   mobile = "/assets/images/guide/how-it-works/lightning-services/Lightning-address-mobile.png"
+   mobileRetina = "/assets/images/guide/how-it-works/lightning-services/Lightning-address-mobile@2x.png"
    alt-text = "Examples of lightning addresses"
    width = 800
    height = 348
@@ -320,7 +320,7 @@ Now, lets learn how [nodes]({{ '/guide/how-it-works/nodes/' | relative_url }}) w
 
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/liquidity/"
-   previousName = "lightning liquidity"
+   previousName = "Lightning liquidity"
    nextUrl = "/guide/how-it-works/nodes/"
    nextName = "Nodes"
 %}

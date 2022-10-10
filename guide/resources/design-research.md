@@ -145,7 +145,7 @@ _2021 by Estevão._
 
 The goal of the research was to provide an in-depth qualitative knowledge of how people use or perceive bitcoin.
 
-#### [A Deep Dive Into Lightning as a Bitcoin Scaling Solution](https://downloads.coindesk.com/research/lightning+Network+-+CoinDesk+Research+-+2021.09.pdf)
+#### [A Deep Dive Into Lightning as a Bitcoin Scaling Solution](https://downloads.coindesk.com/research/Lightning+Network+-+CoinDesk+Research+-+2021.09.pdf)
 
 _2021 by Kaloudis, CoinDesk research_
 
