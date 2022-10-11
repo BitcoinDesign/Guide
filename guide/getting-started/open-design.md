@@ -140,7 +140,7 @@ Open-source software development has existed for decades. Public review and deba
 
 ### Test, redesign, and engage in feedback
 
-- Experiment with bitcoin and Lightning. Download a wallet and test small amounts. You can also test network features without using real bitcoin on Testnet. It works with some wallets.
+- Experiment with bitcoin and lightning. Download a wallet and test small amounts. You can also test network features without using real bitcoin on Testnet. It works with some wallets.
 - Redesign a bitcoin and/or lightning application or focus on a user experience issue that interests you. Even as a brief exercise, a redesign is a great way to develop understanding of how something works.
 - Join a [Design Review](https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+Design+Review+Call+). A call focusing on giving feedback to improve a specific bitcoin product. Products vary by call.
 - Join the [Wallet Improvement Project](https://github.com/BitcoinDesign/Guide/issues/493). It tests a list of real world bitcoin projects and suggests redesigns to their makers.

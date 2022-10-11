@@ -59,7 +59,7 @@ A common real-world use case for shared wallets are couples managing their month
 
 {% include tip/open.html color="blue" icon="info" label="Lightning support" %}
 
-Multi-key on Lightning is still in development. This page will focus on on-chain wallets for the time being.
+Multi-key on lightning is still in development. This page will focus on on-chain wallets for the time being.
 
 {% include tip/close.html %}
 

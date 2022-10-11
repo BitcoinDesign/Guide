@@ -43,7 +43,7 @@ Alice paid for Bob’s lunch. Bob wants to pay Alice back in bitcoin, but she ha
 
 This challenge is based on a [bounty](https://hrf.org/strike-hrf-bounty) by the Human Rights Foundation. Here’s the task:
 
-_Integrates [BOLT 12](https://bolt12.org) functionality to a wallet so that any user can simply generate a QR code from their wallet that can be shared with the world as a receive address or Lightning tip jar. The QR can be pinned to a Twitter profile, printed out and displayed in a store, for example. [Senders]({{ '/guide/daily-spending-wallet/sending/' | relative_url }}) scanning the QR should be able to pay X amount and that amount should arrive in the user’s [self-custodial]({{ '/guide/getting-started/principles/#self-custody' | relative_url }}) wallet. The QR code should not reveal the public key or IP address of the user._
+_Integrates [BOLT 12](https://bolt12.org) functionality to a wallet so that any user can simply generate a QR code from their wallet that can be shared with the world as a receive address or lightning tip jar. The QR can be pinned to a Twitter profile, printed out and displayed in a store, for example. [Senders]({{ '/guide/daily-spending-wallet/sending/' | relative_url }}) scanning the QR should be able to pay X amount and that amount should arrive in the user’s [self-custodial]({{ '/guide/getting-started/principles/#self-custody' | relative_url }}) wallet. The QR code should not reveal the public key or IP address of the user._
 
 ## Challenge 3: Bitcoin ATM
 

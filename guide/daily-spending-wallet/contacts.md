@@ -27,11 +27,11 @@ imagesAddContact:
       alt: Address entry screen with expanded information about supported addresses
       caption: Information about supported address formats should be readily available.
     - file: manual-add-contact-add-address-valid
-      alt: Address entry screen with inline validation for a Lightning address
+      alt: Address entry screen with inline validation for a lightning address
       caption: Inline validation lets users know about if addresses are accepted.
     - file: manual-add-contact-with-address
-      alt: A contact with a Lightning address assigned
-      caption: A contact with a Lightning address associated.
+      alt: A contact with a lightning address assigned
+      caption: A contact with a lightning address associated.
 imagesSupportedFormats:
     - file: manual-add-contact-add-address-valid-on-chain
       alt: Address entry screen with inline validation for an on-chain address
@@ -63,13 +63,13 @@ imagesMultiAddressContact:
       caption: Address details and options can be available on tap.
 imagesImportAddress:
     - file: lightning-address-input
-      alt: Modal showing that a Lightning address was detected on the clipboard
+      alt: Modal showing that a lightning address was detected on the clipboard
       caption: A modal is shown when an address has been imported via the clipboard or other methods.
     - file: lightning-address-input-add-contact
       alt: Screen for selecting a contact
       caption: The user has tapped "Add contact" and then taps "+" to add a new contact.
     - file: lightning-address-input-new-contact
-      alt: Contact screen with the Lightning address assigned
+      alt: Contact screen with the lightning address assigned
       caption: The new contact is created with the address associated.
 imagesPayInvoice:
     - file: pay-invoice-with-details
@@ -165,7 +165,7 @@ https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-UI-Kit?node-id=3120%3A
 
 Whether we’re sending emails, physical mail, or following someone on social media, we primarily think in terms of names and faces, and not the respective address or user ID.
 
-Invoices, node IDs and other transaction endpoints in bitcoin and Lightning are highly unintuitive. Abstracting them via a contact list can create a much smoother user experience. There are many [payment request formats]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }}), each with unique properties and varying levels of maturity and adoption, requiring unique design solutions. This page uses the more approachable term "address", along with various UI techniques, to abstract these complexities for users.
+Invoices, node IDs and other transaction endpoints in bitcoin and lightning are highly unintuitive. Abstracting them via a contact list can create a much smoother user experience. There are many [payment request formats]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }}), each with unique properties and varying levels of maturity and adoption, requiring unique design solutions. This page uses the more approachable term "address", along with various UI techniques, to abstract these complexities for users.
 
 Let's go over common user interactions around managing contacts. This will illustrate how such a feature could work, and helps explain the underlying design problems and decisions.
 
@@ -194,7 +194,7 @@ The contacts screen should offer various features for editing and organization.
 
 ### Importing an address
 
-This scenario can be initiated by copying a Lightning address to the clipboard, scanning a QR code, or tapping a payment link (see [payment entry points]({{ '/guide/daily-spending-wallet/sending/#payment-entry-points' | relative_url }})). An address is passed into the application and, where it's recognized and appropriate options are shown to the user. In the example below, the user adds the address as a new contact.
+This scenario can be initiated by copying a lightning address to the clipboard, scanning a QR code, or tapping a payment link (see [payment entry points]({{ '/guide/daily-spending-wallet/sending/#payment-entry-points' | relative_url }})). An address is passed into the application and, where it's recognized and appropriate options are shown to the user. In the example below, the user adds the address as a new contact.
 
 {% include image-gallery.html pages = page.imagesImportAddress %}
 

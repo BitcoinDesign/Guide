@@ -259,7 +259,7 @@ A good starting point today is an [HD wallet](/guide/glossary/wallet/#hd-wallet)
 
 Some older software may create wallets with outdated technical formats, while others allow users to choose specific formats for their particular needs. Generally, this is difficult to understand for regular users and should either be automatically handled with good default settings, or explained in layman's terms. [Wallets Recovery](https://walletsrecovery.org) provides a great overview of different implementations and how nuanced some of the differences are.
 
-Most modern wallet applications should aim to support the Lightning network in addition to the base layer. While there are different options for how the applications interact with a Lightning network node, an HD wallet works fine for storing the required keys.
+Most modern wallet applications should aim to support the lightning network in addition to the base layer. While there are different options for how the applications interact with a lightning network node, an HD wallet works fine for storing the required keys.
 
 Wallets can also be created with control shared between several other wallets, so called [multi-key wallets](/guide/private-key-management/multi-key/) (or multi-signature / multi-sig). This is typically done to increase security.
 
@@ -342,11 +342,11 @@ While we all prefer to receive bitcoin, there are times when we need to send the
 
 </div>
 
-Bitcoin can be sent two ways; on the primary base layer, or the secondary [Lightning network](/guide/glossary/#lightning-network) layer.
+Bitcoin can be sent two ways; on the primary base layer, or the secondary [lightning network](/guide/glossary/#lightning-network) layer.
 
 On the base layer, once a transaction is broadcast from a wallet, the bitcoin network starts processing it. Users may want to stay informed about this progress, particularly when a transaction takes longer than expected. The average transaction time on the base layer is 10 minutes, but this can vary a lot depending on the fee the sender was willing to pay. In extreme cases, it is possible to retroactively increase the transaction fee to get validated faster with a [Replace-by-Fee](/guide/glossary/#replace-by-fee-rbf) technique.
 
-On the Lightning network, transactions happen inside payment channels that are established on the base layer between two participants. The state of ownership of the bitcoin within the channel is maintained by the participant Lightning network nodes. Transactions on this layer are almost instant, and have negligible fees. However, there are fees to open and close channels, as this is recorded on the base layer.
+On the lightning network, transactions happen inside payment channels that are established on the base layer between two participants. The state of ownership of the bitcoin within the channel is maintained by the participant lightning network nodes. Transactions on this layer are almost instant, and have negligible fees. However, there are fees to open and close channels, as this is recorded on the base layer.
 
 To find out more, visit the [Sending bitcoin](/guide/payments/send/) page.
 
@@ -396,7 +396,7 @@ While it is possible to re-use the same receiving address repeatedly, this pract
 
 For more information-rich base layer requests, [BIP 21](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki) describes a URI scheme to turn requests into links that can be shared like any other link. On click, wallets that support this scheme can immediately show the send screen with the correct information pre-filled. Links can also be encoded and transmitted via QR code. Since the scheme also allows for the inclusion of an address label and transaction description, it allows both sender and recipient to stay organized.
 
-For requests on the Lightning network, the receiver needs to create a lightning invoice that includes the amount, and then share the invoice with the sender.
+For requests on the lightning network, the receiver needs to create a lightning invoice that includes the amount, and then share the invoice with the sender.
 
 ## Receiving bitcoin
 
@@ -427,7 +427,7 @@ Once a user has requested payment, they are naturally interested in knowing when
 
 A user may also want to check in and see if any previous requests have not been completed yet. This is easily possible if the user has initiated all requests on the same wallet and used a new address for each one. In this case, a request can be considered fulfilled if at least one payment has been received with the total amount the user asked for. It is not as clear if addresses are getting re-used (how to tell which payment was for which purpose?) or the request has been made with another wallet (as this metadata is not stored and synced via the bitcoin network).
 
-On the Lightning network, receiving bitcoin requires an invoice. This makes it easy to track if payments have been completed or not.
+On the lightning network, receiving bitcoin requires an invoice. This makes it easy to track if payments have been completed or not.
 
 </div>
 
@@ -472,7 +472,7 @@ The owner may want to increase the security of their wallet, either by using a s
 
 In the worst-case scenario, the wallet might have been compromised, and funds should be saved by sending them all to a different bitcoin wallet.
 
-Whatever the reason, the import and backup of wallets is a vital function for users that applications should support. While it is easy to send all funds to a new address, additional meta and state data stored in wallet applications also need to be considered for full compatibility. It's not recommended to switch wallets that include funds on the Lightning network, as standards for backing up channel state have yet to emerge. See also, [Wallet interoperability](/guide/designing-products/interoperability/).
+Whatever the reason, the import and backup of wallets is a vital function for users that applications should support. While it is easy to send all funds to a new address, additional meta and state data stored in wallet applications also need to be considered for full compatibility. It's not recommended to switch wallets that include funds on the lightning network, as standards for backing up channel state have yet to emerge. See also, [Wallet interoperability](/guide/designing-products/interoperability/).
 
 
 </div>

@@ -40,35 +40,35 @@ Illustration sources
 
 # Transactions
 
-This page is meant to help you understand how users' transactions get created and processed by the bitcoin and Lightning networks. Bitcoin is a peer-to-peer push-payment system. This means that you can send, or push, bitcoin at any time, without passing through a trusted third party.
+This page is meant to help you understand how users' transactions get created and processed by the bitcoin and lightning networks. Bitcoin is a peer-to-peer push-payment system. This means that you can send, or push, bitcoin at any time, without passing through a trusted third party.
 
 This is radically different from the traditional financial system, where it is often possible for others to pull and withdraw money from your account (utility companies, financial institutions, merchants, etc.). When you make a payment, it will pass through systems that might delay, control or block the payment.
 
 {% include tip/open.html color="blue" icon="info" label="A note about terminology" %}
 
-In most places in the Guide, the term **"transaction"** and **"payment"** are used interchangeably. For the remainder of this page, the term transaction refers specifically to on-chain bitcoin transactions, and the term payment refers specifically to payments routed over the Lightning network.
+In most places in the Guide, the term **"transaction"** and **"payment"** are used interchangeably. For the remainder of this page, the term transaction refers specifically to on-chain bitcoin transactions, and the term payment refers specifically to payments routed over the lightning network.
 
 {% include tip/close.html %}
 
-## Comparing bitcoin and Lightning
+## Comparing bitcoin and lightning
 
 | Bitcoin          | Lightning |
 |-------------|------------------|
-| Users send bitcoin *[transactions]({{'/guide/glossary/#transaction' | relative_url}})*. | Users send Lightning *[payments]({{'/guide/glossary/#payment' | relative_url}})*.  |
+| Users send bitcoin *[transactions]({{'/guide/glossary/#transaction' | relative_url}})*. | Users send lightning *[payments]({{'/guide/glossary/#payment' | relative_url}})*.  |
 | Bitcoin transactions are settled on average every 10 minutes. | Lightning payments are settled almost instantly.  |
-| A valid bitcoin transaction will always be mined, but may be delayed if the fee is too low. | A successful Lightning payment depends on Lightning network liquidity and finding a path to the recipient. |
+| A valid bitcoin transaction will always be mined, but may be delayed if the fee is too low. | A successful lightning payment depends on lightning network liquidity and finding a path to the recipient. |
 | Bitcoin is typically better for larger amounts of funds and less frequent transactions. | Lightning is typically better for smaller amounts of funds and more frequent payments. |
 
 For a more detailed look, see the [Technology Primer]({{'/guide/getting-started/technology-primer/' | relative_url}}).
 
 ## Lightning payment lifecycle
 
-For most use cases, the Lightning network is the best option, as it will enable the recipient to receive their bitcoin quicker and the sender to pay less in fees.
+For most use cases, the lightning network is the best option, as it will enable the recipient to receive their bitcoin quicker and the sender to pay less in fees.
 
 {% include picture.html
 image = "/assets/images/guide/how-it-works/transactions/payment-lifecycle.svg"
 mobile = "/assets/images/guide/how-it-works/transactions/payment-lifecycle-mobile.svg"
-alt-text = "Flow chart of the process of a Lightning payment from invoice creation through successful payment"
+alt-text = "Flow chart of the process of a lightning payment from invoice creation through successful payment"
 width = 1300
 height = 240
 layout = "full-width"
@@ -76,17 +76,17 @@ layout = "full-width"
 
 ### 1. Create invoice
 
-To make a Lightning payment, the sender requires an invoice created by the recipient. The recipient's wallet application creates a preimage, or payment secret, which is then used to create an invoice for one-time use. The recipient can share the invoice with the sender as a QR code, over NFC, in plain text, or as a payment link.
+To make a lightning payment, the sender requires an invoice created by the recipient. The recipient's wallet application creates a preimage, or payment secret, which is then used to create an invoice for one-time use. The recipient can share the invoice with the sender as a QR code, over NFC, in plain text, or as a payment link.
 
 Note that the recipient does not always need to produce the invoice manually. For example, an ecommerce site could generate invoices automatically on behalf of the recipient, or the recipient could rely on a static QR code that allows the sender's wallet to retrieve the invoice or necessary data dynamically.
 
 ### 2. Confirm payment
 
-The sender loads the invoice into their wallet application. After reviewing that the amount looks correct and the fee estimate is satisfactory, the sender confirms that they would like to make the Lightning payment.
+The sender loads the invoice into their wallet application. After reviewing that the amount looks correct and the fee estimate is satisfactory, the sender confirms that they would like to make the lightning payment.
 
 ### 3. Pathfinding & routing
 
-The wallet application attempts to route the Lightning payment to the recipient. In order to do this, it must attempt to construct a path through the Lightning network. Pathfinding is a complex, probabilistic process, which means that the routing fees shown in the prior step are only an estimate.
+The wallet application attempts to route the lightning payment to the recipient. In order to do this, it must attempt to construct a path through the lightning network. Pathfinding is a complex, probabilistic process, which means that the routing fees shown in the prior step are only an estimate.
 
 If the payment fails along a particular path, the wallet application will repeatedly attempt the payment again with a different path until the payment succeeds.
 
@@ -102,7 +102,7 @@ This sounds like a complicated process; however, steps 3 - 5 are handled by soft
 
 ## Bitcoin transaction lifecycle
 
-Some things are accomplished better on-chain. For example, the user's wallet application may have difficulty finding a suitable path to route a larger Lightning payment, or the user may prefer to send their funds to a [multi-sig storage vault]({{'/guide/savings-wallet/' | relative_url}}).
+Some things are accomplished better on-chain. For example, the user's wallet application may have difficulty finding a suitable path to route a larger lightning payment, or the user may prefer to send their funds to a [multi-sig storage vault]({{'/guide/savings-wallet/' | relative_url}}).
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/transactions/tx-lifecycle-simplified.svg"

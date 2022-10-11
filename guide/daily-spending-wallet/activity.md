@@ -26,7 +26,7 @@ imagesBasics:
     - file: activity-ids
       modalImage: activity-ids-big
       alt: Smartphone screen showing a list of user transactions with minimal information and invoice IDs
-      caption: If your users are likely to rely on addresses or Lightning invoice IDs to identify payments, you may decide to show them. Always consider your users.
+      caption: If your users are likely to rely on addresses or lightning invoice IDs to identify payments, you may decide to show them. Always consider your users.
 imagesGrouping:
     - file: micropayments
       modalImage: micropayments-big
@@ -69,11 +69,11 @@ imagesReceive:
       caption: Tapping list items can quickly bring up further details and options.
 imagesSend:
     - file: send-transaction
-      alt: Smartphone screen showing a completed Lightning payment
-      caption: On-chain and Lightning payments look structurally similar, but differ in subtle ways.
+      alt: Smartphone screen showing a completed lightning payment
+      caption: On-chain and lightning payments look structurally similar, but differ in subtle ways.
     - file: send-transaction-expanded
-      alt: Smartphone screen showing a completed Lightning payment with extended technical details
-      caption: Expanded details of Lightning payment.
+      alt: Smartphone screen showing a completed lightning payment with extended technical details
+      caption: Expanded details of lightning payment.
 ---
 
 {% include picture.html
@@ -140,7 +140,7 @@ Since we already offer users a chronological list of events, it is a small step 
 
 Events can include user activity related to unique wallet features. For example:
 
-- [Blixt](https://blixtwallet.github.io) allows for manual control over Lightning channels. The list can show when channels were opened and closed.
+- [Blixt](https://blixtwallet.github.io) allows for manual control over lightning channels. The list can show when channels were opened and closed.
 - [Breez](https://breez.technology) includes a podcast player. New subscriptions and episodes could be listed.
 - [Hexa](https://hexawallet.io) allows users to have multiple wallets. The list can show when new wallets were created.
 - Authentication to third-party services via [sign in with bitcoin]({{ '/guide/how-it-works/sign-in-with-bitcoin/' | relative_url }}).
@@ -153,7 +153,7 @@ Wallets can also independently keep an eye on user funds, data traffic, and othe
 
 ### Smart organization
 
-The Lightning network makes micropayments economically and technically viable. For example, as a user listens to a podcast, they may stream 10 sats per minute to the host as a thank you. This can easily result in a cluttered activity list, which can be remedied via automatic grouping.
+The lightning network makes micropayments economically and technically viable. For example, as a user listens to a podcast, they may stream 10 sats per minute to the host as a thank you. This can easily result in a cluttered activity list, which can be remedied via automatic grouping.
 
 {% include image-gallery.html pages = page.imagesGrouping %}
 
@@ -184,7 +184,7 @@ Alternative approaches to the basic list view can give users different perspecti
 
 The example shown here uses traditional categories borrowed from [personal household finance]({{ '/guide/designing-products/personal-finance/' | relative_url }}). As users tag transactions, the categories update.
 
-It's recommended to approach this type of view based on the unique use case and feature set of the application. For example, a wallet that is focused on interaction with Lightning applications may instead group payments by the services they were made with.
+It's recommended to approach this type of view based on the unique use case and feature set of the application. For example, a wallet that is focused on interaction with lightning applications may instead group payments by the services they were made with.
 
 </div>
 
@@ -192,7 +192,7 @@ It's recommended to approach this type of view based on the unique use case and 
 
 The activity list focuses on summarizing the top-level information, so users can quickly scan the screen to get an overview. If they identify a transaction they want to take a closer look at or interact with, the following screens become relevant.
 
-##### A payment made on Lightning
+##### A payment made on lightning
 
 As with the activity list, transaction details screens should also only highlight relevant information and options, and make secondary details easily accessible.
 
@@ -200,7 +200,7 @@ As with the activity list, transaction details screens should also only highligh
 
 ##### A payment received on-chain
 
-While the details for Lightning and on-chain payments look very similar, there are subtle differences. Most noticeable for the user is the difference in fees and processing time.
+While the details for lightning and on-chain payments look very similar, there are subtle differences. Most noticeable for the user is the difference in fees and processing time.
 
 {% include image-gallery.html pages = page.imagesReceive %}
 
@@ -242,7 +242,7 @@ This can be in the form of text labels, or even uniquely generated icons like [J
 
 ### Wrapping up
 
-As mentioned at the top of the page, there is a lot of nuance in the display of user activity. While this allows for many different small design decisions, users overall benefit if wallets take similar approaches. Particularly when it comes to the addition of metadata that is not stored on-chain or by Lightning nodes, it would be helpful if wallets can converge on standardized data formats to allow for [interoperability]({{ '/guide/getting-started/principles/#interoperability' | relative_url }}) and data portability.
+As mentioned at the top of the page, there is a lot of nuance in the display of user activity. While this allows for many different small design decisions, users overall benefit if wallets take similar approaches. Particularly when it comes to the addition of metadata that is not stored on-chain or by lightning nodes, it would be helpful if wallets can converge on standardized data formats to allow for [interoperability]({{ '/guide/getting-started/principles/#interoperability' | relative_url }}) and data portability.
 
 ---
 
