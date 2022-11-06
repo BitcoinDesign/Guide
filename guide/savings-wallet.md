@@ -250,7 +250,7 @@ Daily and per-transaction spending limits are a unique aspect of this applicatio
 - Usage could be simplified by having hardware devices designed/customized by the software maker (compare banks and their digital token signers common in Europe)
 
 **Resources**
-- [Protoype](https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=6%3A11&viewport=333%2C41%2C0.37497082352638245&scaling=scale-down)
+- [Prototype](https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=6%3A11&viewport=333%2C41%2C0.37497082352638245&scaling=scale-down)
 - [Figma design file](https://www.figma.com/file/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?node-id=1%3A55973)
 - [Use case]({{ '/guide/designing-products/personal-finance/#savings' | relative_url }})
 - [Private key scheme]({{ '/guide/how-it-works/private-key-management/multi-key/' | relative_url }})
