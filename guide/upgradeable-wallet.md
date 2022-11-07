@@ -93,7 +93,7 @@ The screens below show how this architecture allows users to get onboarded quick
 </div>
 
 **Resources**
-- [Protoype](https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A270&viewport=861%2C146%2C0.44897958636283875&scaling=scale-down)
+- [Prototype](https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A270&viewport=861%2C146%2C0.44897958636283875&scaling=scale-down)
 - [Figma design file](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A269)
 
 ---

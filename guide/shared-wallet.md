@@ -113,7 +113,7 @@ The wireframe screens below show the main onboarding sequence that guides users 
 </div>
 
 **Resources**
-- [Protoype](https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A824&viewport=333%2C41%2C0.37497082352638245&scaling=scale-down)
+- [Prototype](https://www.figma.com/proto/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A824&viewport=333%2C41%2C0.37497082352638245&scaling=scale-down)
 - [Figma design file](https://www.figma.com/file/SRWlaxbDulsacpPQn2TTri/Case-study-prototypes?node-id=15%3A822)
 
 ---
