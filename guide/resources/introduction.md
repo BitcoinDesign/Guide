@@ -2,7 +2,7 @@
 layout: guide
 title: Resources
 description: Resources to help you build better bitcoin products.
-nav_order: 10
+nav_order: 11
 has_children: true
 permalink: /guide/resources/
 main_classes: -no-top-padding
@@ -41,8 +41,8 @@ Get hands-on with these take-home bitcoin design challenges to practice and play
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/how-it-works/sign-in-with-bitcoin/"
-   previousName = "Sign in with bitcoin"
+   previousUrl = "/guide/case-studies"
+   previousName = "Case studies"
    nextUrl = "/guide/resources/design-files/"
    nextName = "Design files"
 %}
