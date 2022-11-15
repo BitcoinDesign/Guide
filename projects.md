@@ -70,6 +70,16 @@ projects:
       - name: More info
         link: https://bitcoinqr.dev
 
+  - name: Designathon
+    description: We organized a hackathon for designers.
+    image:
+      url: /assets/images/contribute/designathon.png
+      width: 75
+      height: 75
+    links:
+      - name: Event site
+        link: https://event.bitcoin.design
+
 collaborations:
   - name: Alby
     description: Alby brings Bitcoin to the web with in-browser payments and identity, no account required.
@@ -196,20 +206,22 @@ With collaborations, some of us try to help other bitcoin projects improve their
 These are some of the design projects we have initiated ourselves.
 
 <div class="project-grid">
-{% for item in page.projects %}
-      <div class="project-grid-item">
-        <div class="project-grid-item-image">
-          <img src="{{ item.image.url | relative_url }}" width="{{ item.image.width }}" height="{{ item.image.height }}" alt="" />
-        </div>
-        <h3>{{- item.name -}}</h3>
-        <p>{{- item.description -}}</p>
-        <div class="links">
-          {% for link in item.links %}
-            <a href="{{- link.link -}}" target="_blank" rel="noopener">{{ link.name }}</a>
-          {% endfor %}
-        </div>
+  {% for item in page.projects %}
+    <div class="project-grid-item">
+      <a class="project-grid-item-image" href="{{- item.links[0].link -}}" target="_blank" rel="noopener">
+        <img src="{{ item.image.url | relative_url }}" width="{{ item.image.width }}" height="{{ item.image.height }}" alt="" />
+      </a>
+      <h3>
+        <a href="{{- item.links[0].link -}}" target="_blank" rel="noopener">{{- item.name -}}</a>
+      </h3>
+      <p>{{- item.description -}}</p>
+      <div class="links">
+        {% for link in item.links %}
+          <a href="{{- link.link -}}" target="_blank" rel="noopener">{{ link.name }}</a>
+        {% endfor %}
       </div>
-{% endfor %}
+    </div>
+  {% endfor %}
 </div>
 
 ## Collaborations
@@ -217,20 +229,22 @@ These are some of the design projects we have initiated ourselves.
 For a more complete list of current and past collaborations, see our [collaboration board](https://github.com/BitcoinDesign/Meta/projects/2).
 
 <div class="project-grid">
-{% for item in page.collaborations %}
-      <div class="project-grid-item">
-        <div class="project-grid-item-image">
-          <img src="{{ item.image.url | relative_url }}" width="{{ item.image.width }}" height="{{ item.image.height }}" alt="" />
-        </div>
-        <h3>{{- item.name -}}</h3>
-        <p>{{- item.description -}}</p>
-        <div class="links">
-          {% for link in item.links %}
-            <a href="{{- link.link -}}" target="_blank" rel="noopener">{{ link.name }}</a>
-          {% endfor %}
+  {% for item in page.collaborations %}
+    <div class="project-grid-item">
+      <a class="project-grid-item-image" href="{{- item.links[0].link -}}" target="_blank" rel="noopener">
+        <img src="{{ item.image.url | relative_url }}" width="{{ item.image.width }}" height="{{ item.image.height }}" alt="" />
+      </a>
+      <h3>
+        <a href="{{- item.links[0].link -}}" target="_blank" rel="noopener">{{- item.name -}}</a>
+      </h3>
+      <p>{{- item.description -}}</p>
+      <div class="links">
+        {% for link in item.links %}
+          <a href="{{- link.link -}}" target="_blank" rel="noopener">{{ link.name }}</a>
+        {% endfor %}
       </div>
-      </div>
-{% endfor %}
+    </div>
+  {% endfor %}
 </div>
 
 #### Adding a project or collaboration
