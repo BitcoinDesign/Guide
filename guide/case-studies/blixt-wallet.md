@@ -34,14 +34,14 @@ Illustration sources: https://www.figma.com/file/eyQDCaMoQvnRVcHzSsgrzs/Blixt-UX
 
 The [Bitcoin Design Community](https://bitcoindesign.slack.com/join/shared_invite/zt-10sxfovaq-isViijl4RThKRs_TsAQnuA#/shared-invite/email) ran a design sprint on an open-source lightning wallet and during this sprint we collaboratively focused on re-designing one aspect of the user flow, the **onboarding journey**. During this collaborative effort, [we got together](https://www.youtube.com/watch?v=nctibe_a4rM&list=PLpV0KfVOMojYywq1Blp3SGx62cSyoRfHt&index=3) and as a group of designers and researchers we aimed to improve the user experience by using good design principles incorporating as much feedback from users as possible. 
 
-<p class="h3">Blixt Wallet is a non-custodial open-source Bitcoin Lightning Wallet for Android and iOS and aims to serve users who are new to lightning, but are familiar with bitcoin and want to try out the lightning network for the first time.</p>
+<p class="h3">Blixt Wallet is a non-custodial open-source bitcoin lightning wallet for Android and iOS and aims to serve users who are new to lightning, but are familiar with bitcoin and want to try out the lightning network for the first time.</p>
 
-The current user base of Blixt tends to be more advanced users and Blixt would like to move towards catering more to users who want to try out the lightning network as well. 
+The current user base of Blixt tends to be more advanced and Blixt would like to move towards catering to beginners. 
 
 What does Blixt do?
 
 - Onboard someone quickly over lightning so they can have a channel already provisioned to receive funds
-- Automatically open channels anytime the user has on-chain funds (Auto pilot)
+- Automatically open channels anytime the user has on-chain funds - [Auto pilot](https://bitcoin.design/guide/how-it-works/lightning-services/#on-chain-funding)
 - Automatic channel creation (using [Dunder LSP](https://github.com/hsjoberg/dunder-lsp)) during initial deposit of funds
 - Support for custom LSP
 
@@ -67,7 +67,7 @@ What does Blixt do?
    height = 929
 %}
 
-Since Blixt is an open source wallet we collected user research simply by going on their Discord channel and collecting comments and questions from users.
+Since Blixt is an open source wallet, we collected user research simply by going on their Discord channel and collecting user comments and questions.
 
 ## We discovered that Blixt users were struggling to open lightning channels.
 
@@ -76,7 +76,7 @@ We created a lot of different user flows to find a solution for the best method 
 
 ## One of the biggest challenges we faced was…
 
-Explaining the concept of channel opening to people who are new to lightning. The concept of opening a channel to make a transaction is totally new to them. Next to this, some users might not be native English speakers and so using words and terms that communicate clearly to a larger group of people was essential.  
+Explaining the concept of channel opening to people who are new to lightning. The concept of opening a channel to make a transaction is totally new to them. Next, some users might not be native English speakers, so using words and terms that communicate clearly to a larger group of people was essential.
 
 ## After re-designing the interface we tested the new design by doing usability tests. Here’s the process we followed:
 
@@ -123,7 +123,7 @@ To open a channel first we will need to add some bitcoin to it. Once that is don
 
 ## Here’s what we learned about educating users…
 
-- Providing users with educational screenstates is a good idea. It’s always nice to keep the text as short as possible and keep the explanation easy as well. Through the usability testing we learned that we could further simplify the text in this educational part.
+- Providing users with educational screenstates is a good idea. It’s always nice to keep the text as short as possible and the explanation easy. Through the usability testing, we learned that we could further simplify the text in this educational part.
 - We also learned that when providing educational screenstates we should allow users the option of going back, so that they can read the text from the previous screen.
 
 {% include picture.html
