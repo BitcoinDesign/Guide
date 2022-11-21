@@ -115,8 +115,8 @@ To open a channel first we will need to add some bitcoin to it. Once that is don
    image = "/assets/images/guide/case-studies/blixt-wallet/blixt-usability-test.png"
    retina = "/assets/images/guide/case-studies/blixt-wallet/blixt-usability-test@2x.png"
    mobile = "/assets/images/guide/case-studies/blixt-wallet/blixt-usability-test-mobile.jpngpg"
-   mobileRetina = "/assets/images/guide/case-studies/blixt-wallet/blixt-usability-test.png"
-   alt-text = "Diagram of Blixt usability test"
+   mobileRetina = "/assets/images/guide/case-studies/blixt-wallet/blixt-usability-test-mobile@2x.png"
+   alt-text = "Diagram showing comments from users and which section of the UI they were commenting on"
    width = 800
    height = 751
 %}
@@ -129,9 +129,9 @@ To open a channel first we will need to add some bitcoin to it. Once that is don
 {% include picture.html
    image = "/assets/images/guide/case-studies/blixt-wallet/blixt-usability-test-2.png"
    retina = "/assets/images/guide/case-studies/blixt-wallet/blixt-usability-test-2@2x.png"
-   mobile = "/assets/images/guide/case-studies/blixt-wallet/blixt-usability-test-2-mobile.jpngpg"
-   mobileRetina = "/assets/images/guide/case-studies/blixt-wallet/blixt-usability-2-test.png"
-   alt-text = "Diagram of Blixt usability test"
+   mobile = "/assets/images/guide/case-studies/blixt-wallet/blixt-usability-test-2-mobile.png"
+   mobileRetina = "/assets/images/guide/case-studies/blixt-wallet/blixt-usability-test-2-mobile@2x.png"
+   alt-text = "Diagram showing comments from users and which section of the UI they were commenting on"
    width = 800
    height = 751
 %}
