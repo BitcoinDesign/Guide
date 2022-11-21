@@ -73,6 +73,16 @@ Since Blixt is an open source wallet, we collected user research simply by going
 
 We created a lot of different user flows to find a solution for the best method to open a channel for a user new to lightning, and eventually settled on this one. We decided on this user flow as it educates users first and then takes them to setting up the channel itself. 
 
+{% include picture.html
+   image = "/assets/images/guide/case-studies/blixt-wallet/blixt-wallet-user-flow.png"
+   retina = "/assets/images/guide/case-studies/blixt-wallet/blixt-wallet-user-flow@2x.png"
+   mobile = "/assets/images/guide/case-studies/blixt-wallet/blixt-wallet-user-flow-mobile.png"
+   mobileRetina = "/assets/images/guide/case-studies/blixt-wallet/blixt-wallet-user-flow-mobile@2x.png"
+   alt-text = "Diagram of the Blixt user flow, from initial onboarding through setting up channels, backing up the wallet, scanning a QR, and sending first payment."
+   width = 1600
+   height = 644
+   layout = "full-width"
+%}
 
 ## One of the biggest challenges we faced was
 
