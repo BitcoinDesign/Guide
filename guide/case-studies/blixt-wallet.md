@@ -69,12 +69,12 @@ What does Blixt do?
 
 Since Blixt is an open source wallet, we collected user research simply by going on their Discord channel and collecting user comments and questions.
 
-## We discovered that Blixt users were struggling to open lightning channels.
+## We discovered that Blixt users were struggling to open lightning channels
 
 We created a lot of different user flows to find a solution for the best method to open a channel for a user new to lightning, and eventually settled on this one. We decided on this user flow as it educates users first and then takes them to setting up the channel itself. 
 
 
-## One of the biggest challenges we faced was…
+## One of the biggest challenges we faced was
 
 Explaining the concept of channel opening to people who are new to lightning. The concept of opening a channel to make a transaction is totally new to them. Next, some users might not be native English speakers, so using words and terms that communicate clearly to a larger group of people was essential.
 
@@ -88,7 +88,7 @@ Explaining the concept of channel opening to people who are new to lightning. Th
 
 After watching the users testing the wallet we made some observations. Those observations were then grouped into different parts of the user flow. All of the data from the tests can be found [here](https://docs.google.com/document/d/1NuYAQX2c_AAnHq6VPMXrg3IxuzL6Pa517SY1Jx6wAs8/edit?usp=sharing). (We have not included the names of the testers to protect their privacy). 
 
-## Here’s what we learned…
+## Here’s what we learned
 
 {% include picture.html
    image = "/assets/images/guide/case-studies/blixt-wallet/blixt-wallet-usability-testing-data-overview.png"
@@ -121,7 +121,7 @@ To open a channel first we will need to add some bitcoin to it. Once that is don
    height = 751
 %}
 
-## Here’s what we learned about educating users…
+## Here’s what we learned about educating users
 
 - Providing users with educational screenstates is a good idea. It’s always nice to keep the text as short as possible and the explanation easy. Through the usability testing, we learned that we could further simplify the text in this educational part.
 - We also learned that when providing educational screenstates we should allow users the option of going back, so that they can read the text from the previous screen.
@@ -136,7 +136,7 @@ To open a channel first we will need to add some bitcoin to it. Once that is don
    height = 751
 %}
 
-## In the end…
+## In the end
 
 We had a grand time re-designing this wallet interface. We learned a lot about the mechanics behind running a design sprint. Thanks to [Hampus](https://twitter.com/hampus_s), the developer at Blixt for his input during the redesign. A big thank you to everyone from the Bitcoin Design Community who put in their time, effort and knowledge during this process. The joy of open source is that we get to join forces and do good work together, completely out in the open. If you’d like to get involved in Blixt, feel free to check out their [Github](https://github.com/hsjoberg/blixt-wallet) or join their [Telegram group](https://t.me/BlixtWallet). 
 
