@@ -49,7 +49,7 @@ What does Blixt do?
 {% include picture.html
    image = "/assets/images/guide/case-studies/blixt-wallet/blixt-users.jpg"
    retina = "/assets/images/guide/case-studies/blixt-wallet/blixt-users@2x.jpg"
-   mobile = "/assets/images/guide/case-studies/blixt-wallet/blixt-users-mobile.jpg"
+   mobile = "/assets/images/guide/case-studies/blixt-wallet/blixt-users-mobile.png"
    mobileRetina = "/assets/images/guide/case-studies/blixt-wallet/blixt-users.jpg"
    alt-text = "Characters representing Blixt's users"
    caption = "Illustrations: [OpenPeeps](https://www.openpeeps.com/) by Pablo Stanley"
@@ -127,7 +127,7 @@ To open a channel first we will need to add some bitcoin to it. Once that is don
 {% include picture.html
    image = "/assets/images/guide/case-studies/blixt-wallet/blixt-usability-test.png"
    retina = "/assets/images/guide/case-studies/blixt-wallet/blixt-usability-test@2x.png"
-   mobile = "/assets/images/guide/case-studies/blixt-wallet/blixt-usability-test-mobile.jpngpg"
+   mobile = "/assets/images/guide/case-studies/blixt-wallet/blixt-usability-test-mobile.png"
    mobileRetina = "/assets/images/guide/case-studies/blixt-wallet/blixt-usability-test-mobile@2x.png"
    alt-text = "Diagram showing comments from users and which section of the UI they were commenting on"
    width = 800
@@ -136,7 +136,7 @@ To open a channel first we will need to add some bitcoin to it. Once that is don
 
 ## Here’s what we learned about educating users
 
-- Providing users with educational screenstates is a good idea. It’s always nice to keep the text as short as possible and the explanation easy. Through the usability testing, we learned that we could further simplify the text in this educational part.
+- Providing users with educational screen states is a good idea. It’s always nice to keep the text as short as possible, and the explanation easy. Through the usability testing, we learned that we could further simplify the text in this educational part.
 - We also learned that when providing educational screen states, we should allow users the option of going back, so that they can read the text from the previous screen.
 
 {% include picture.html
