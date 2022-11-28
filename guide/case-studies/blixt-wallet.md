@@ -34,7 +34,7 @@ Illustration sources: https://www.figma.com/file/eyQDCaMoQvnRVcHzSsgrzs/Blixt-UX
 
 The [Bitcoin Design Community]({{ site.slack_invite_url }}) ran a design sprint on an open-source lightning wallet.  During this sprint, we collaboratively focused on re-designing one aspect of the user flow, the **onboarding journey**. In this collaborative effort, [we got together](https://www.youtube.com/watch?v=nctibe_a4rM&list=PLpV0KfVOMojYywq1Blp3SGx62cSyoRfHt&index=3) as a group of designers and researchers,  and aimed to improve the user experience using good design principles, and incorporating as much feedback from users as possible. 
 
-<p class="h3">Blixt Wallet is a non-custodial open-source bitcoin lightning wallet for Android and iOS and aims to serve users who are new to lightning, but are familiar with bitcoin and want to try out the lightning network for the first time.</p>
+<p class="h3">Blixt Wallet is a non-custodial, open-source, bitcoin and lightning wallet for Android and iOS. It aims to serve users who are familiar with bitcoin, but new to lightning and want to try it out for the first time.</p>
 
 The current user base of Blixt tends to be more advanced and Blixt would like to move towards catering to beginners. 
 
