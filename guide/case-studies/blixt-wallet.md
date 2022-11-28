@@ -67,7 +67,7 @@ What does Blixt do?
    height = 929
 %}
 
-Since Blixt is an open source wallet, we collected user research simply by going on their Discord channel and collecting user comments and questions.
+Since Blixt is an open source wallet, we collected user feedback simply by going on their [Telegram channel](https://t.me/BlixtWallet) and collecting user comments and questions.
 
 ## We discovered that Blixt users were struggling to open lightning channels
 
