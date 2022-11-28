@@ -77,10 +77,8 @@ This page narrowly focuses on user actions to set up and maintain good security
 and privacy for their wallets. It does not cover key setup and management, or
 technical things like watch towers for lightning wallets.
 
-Illustration sources
-
-- https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-UI-Kit?node-id=2600%3A66326
-- https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=0%3A1
+The source design for screen mockups on this page is here:
+https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototype?node-id=4152%3A306968&t=boEAgdyqfi39SBoF-1
 
 -->
 
