@@ -116,7 +116,7 @@ After watching the users testing the wallet we made some observations. Those obs
 *For more information on channels, see the [Technology Primer]({{'/guide/getting-started/technology-primer/#what-is-a-payment-channel' | relative_url}}) and [Lightning Liquidity]({{'/guide/how-it-works/liquidity/' | relative_url}}) section.*
 - Explaining to users how long it takes to open a channel sets a clear expectation around the process. This would be best done early on during the onboarding journey.
 
-Opening channels is a process unique to lightning wallets and an essential first step during the onboarding process. For users brand-new to lightning, opening a channel in itself is something that is new and unique to them. It is then helpful to explain to users why a channel should be opened before presenting them with the channel opening screen An example of the text could read:
+Opening channels is a process unique to lightning wallets and an essential first step during the onboarding process. For users brand-new to lightning, opening a channel in itself is something that is new and unique to them. It is then helpful to explain to users why this is necessary, before making them go through this process. An example of the text could read:
 
 ### Explaining the concept of opening a channel to a user that has never used a lightning wallet
 
