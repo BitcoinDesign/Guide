@@ -41,7 +41,7 @@ The current user base of Blixt tends to be more advanced and Blixt would like to
 What does Blixt do?
 
 - Onboard someone quickly over lightning so they can have a channel already provisioned to receive funds
-- Automatically open channels anytime the user has on-chain funds - [Auto pilot](https://bitcoin.design/guide/how-it-works/lightning-services/#on-chain-funding)
+- Automatically open channels anytime the user has on-chain funds - [Auto pilot]({{ '/guide/how-it-works/lightning-services/#on-chain-funding' | relative_url }})
 - Automatic channel creation (using [Dunder LSP](https://github.com/hsjoberg/dunder-lsp)) during initial deposit of funds
 - Support for custom LSP
 
