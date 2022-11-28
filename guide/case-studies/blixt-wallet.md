@@ -154,10 +154,10 @@ We had a grand time re-designing this wallet interface. We learned a lot about t
 
 ## Resources
 
-- [Remote design sprint](https://www.figma.com/file/spI8SQHoHA174tmnEH16aS/Blixt-Design-Sprint)
+- [Remote design sprint](https://www.figma.com/file/PVCUllULh4qYyarjHQaLTv/Blixt-Design-Sprint-(Case-Study)?t=mMj3XtrbakGA4VGF-0)
 - [Interview with core developer](https://www.youtube.com/watch?v=nctibe_a4rM)
 - [Transcript of Interview](https://docs.google.com/document/d/1E6XhRxF292pCkBKxTWNmDucwVaaxddaQEiNUsUu-_5k/edit?usp=sharing)
-- [Project Overview document](https://docs.google.com/document/d/1bgd1uI0PKAn0GFZTtqLY_rzlMdYxEk-7g6KiP0QzkLU/edit#heading=h.qbzoxhysypzv)
+- [Project Overview document](https://docs.google.com/document/d/1d3oIpSLWp6EYuh18MSXUK9ahYLNHWHPgFoe-2K-1S3U/edit?usp=sharing)
 - [Affinity diagram](https://www.figma.com/file/yqC9MYgBxG3QNF1CzxY7uf/Blixt-Affinity-Diagram?node-id=0%3A1)
 
 
