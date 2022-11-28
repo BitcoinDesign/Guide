@@ -144,7 +144,7 @@ To open a channel first we will need to add some bitcoin to it. Once that is don
    mobileRetina = "/assets/images/guide/case-studies/blixt-wallet/blixt-usability-test-2-mobile@2x.png"
    alt-text = "Diagram showing comments from users and which section of the UI they were commenting on"
    width = 800
-   height = 751
+   height = 1053
 %}
 
 ## In the end
