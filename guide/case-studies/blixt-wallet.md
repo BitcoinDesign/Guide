@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Blixt Wallet
-description: This was a collaboration between Blixt wallet and the Bitcoin Design Community to help new users establish lightning channels quicker with Blixt wallet.
+description: This was a collaboration between Blixt wallet and the Bitcoin Design Community to help new users establish lightning channels quicker during onboarding.
 nav_order: 5
 parent: Case studies
 permalink: /guide/case-studies/blixt-wallet/
