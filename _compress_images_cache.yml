@@ -1921,10 +1921,8 @@ assets/images/guide/daily-spending-wallet/icon-privacy@2x.png: icon-privacy@2x.p
 assets/images/guide/daily-spending-wallet/icon-security@2x.png: icon-security@2x.png
 assets/images/guide/daily-spending-wallet/icon-settings.png: icon-settings.png
 assets/images/guide/daily-spending-wallet/icon-first-use@2x.png: icon-first-use@2x.png
-assets/images/guide/case-studies/blixt-wallet/blixt-wallet-header.jpg: blixt-wallet-header.jpg
 assets/images/guide/case-studies/blixt-wallet/blixt-wallet-header-mobile.jpg: blixt-wallet-header-mobile.jpg
 assets/images/guide/case-studies/blixt-wallet/blixt-wallet-header-mobile@2x.jpg: blixt-wallet-header-mobile@2x.jpg
-assets/images/guide/case-studies/blixt-wallet/blixt-wallet-header@2x.jpg: blixt-wallet-header@2x.jpg
 assets/images/guide/case-studies/blixt-wallet/blixt-users-mobile.png: blixt-users-mobile.png
 assets/images/guide/case-studies/blixt-wallet/blixt-users.jpg: blixt-users.jpg
 assets/images/guide/case-studies/blixt-wallet/blixt-users@2x.jpg: blixt-users@2x.jpg
@@ -1949,3 +1947,5 @@ assets/images/guide/case-studies/blixt-wallet/blixt-wallet-user-flow@2x.png: bli
 assets/images/guide/case-studies/blixt-wallet/blixt-wallet-user-flow-mobile@2x.png: blixt-wallet-user-flow-mobile@2x.png
 assets/images/guide/case-studies/blixt-wallet/blixt-wallet-user-flow.png: blixt-wallet-user-flow.png
 assets/images/guide/case-studies/blixt-wallet/blixt-wallet-user-flow-mobile.png: blixt-wallet-user-flow-mobile.png
+assets/images/guide/case-studies/blixt-wallet/blixt-wallet-header.jpg: blixt-wallet-header.jpg
+assets/images/guide/case-studies/blixt-wallet/blixt-wallet-header@2x.jpg: blixt-wallet-header@2x.jpg
