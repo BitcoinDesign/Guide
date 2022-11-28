@@ -112,7 +112,7 @@ After watching the users testing the wallet we made some observations. Those obs
    height = 759
 %}
 
-- Users new to lightning are missing a crucial step, the why. They often lack understanding on why they need to open a channel before being presented with a screen to open one. Once this is clear it becomes easy for a user to understand that this step is necessary before transacting.
+- Users new to lightning are missing a crucial step, the why. They often lack understanding on why they need to open a channel, before being presented with a screen to open one. Once this is clear, it becomes easy for a user to understand that this step is necessary before transacting.
 *For more information on channels, see the [Technology Primer]({{'/guide/getting-started/technology-primer/#what-is-a-payment-channel' | relative_url}}) and [Lightning Liquidity]({{'/guide/how-it-works/liquidity/' | relative_url}}) section.*
 - Explaining to users how long it takes to open a channel sets a clear expectation around the process. This would be best done early on during the onboarding journey.
 
