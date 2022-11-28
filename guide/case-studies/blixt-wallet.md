@@ -41,7 +41,7 @@ The current user base of Blixt tends to be more advanced and Blixt would like to
 What does Blixt do?
 
 - Onboard someone quickly over lightning so they can have a channel already provisioned to receive funds
-- Automatically open channels anytime the user has on-chain funds - [Auto pilot](https://bitcoin.design/guide/how-it-works/lightning-services/#on-chain-funding)
+- Automatically open channels anytime the user has on-chain funds - [Auto pilot]({{ '/guide/how-it-works/lightning-services/#on-chain-funding' | relative_url }})
 - Automatic channel creation (using [Dunder LSP](https://github.com/hsjoberg/dunder-lsp)) during initial deposit of funds
 - Support for custom LSP
 
@@ -49,7 +49,7 @@ What does Blixt do?
 {% include picture.html
    image = "/assets/images/guide/case-studies/blixt-wallet/blixt-users.jpg"
    retina = "/assets/images/guide/case-studies/blixt-wallet/blixt-users@2x.jpg"
-   mobile = "/assets/images/guide/case-studies/blixt-wallet/blixt-users-mobile.jpg"
+   mobile = "/assets/images/guide/case-studies/blixt-wallet/blixt-users-mobile.png"
    mobileRetina = "/assets/images/guide/case-studies/blixt-wallet/blixt-users.jpg"
    alt-text = "Characters representing Blixt's users"
    caption = "Illustrations: [OpenPeeps](https://www.openpeeps.com/) by Pablo Stanley"
@@ -88,8 +88,9 @@ We created a lot of different user flows to find a solution for the best method 
 
 Explaining the concept of channel opening to people who are new to lightning. The concept of opening a channel to make a transaction is totally new to them. Next, some users might not be native English speakers, so using words and terms that communicate clearly to a larger group of people was essential.
 
+## Usability tests
 
-## After re-designing the interface we tested the new design by doing usability tests. Here’s the process we followed:
+After re-designing the interface, we tested the new design by doing usability tests. Here’s the process we followed:
 
 - **Plan:** We set out clear goals of what we wanted to understand and learn by conducting the tests. We also decided at this stage who we wanted to interview, as well as who we did not want to interview.
 - **User scenario:** We then went on to create a realistic user journey which the tester would walk through, with a clear goal that they would achieve in the end.
@@ -108,14 +109,14 @@ After watching the users testing the wallet we made some observations. Those obs
    mobileRetina = "/assets/images/guide/case-studies/blixt-wallet/blixt-wallet-usability-testing-data-overview-mobile@2x.png"
    alt-text = "Chart depicting an overview of the data from the usability tests, showing user confusion about usernames, opening channels, the copywriting, and how to fund the wallet by copying a QR code."
    width = 800
-   height = 751
+   height = 759
 %}
 
 - Users new to lightning are missing a crucial step, the why. They often lack understanding on why they need to open a channel before being presented with a screen to open one. Once this is clear it becomes easy for a user to understand that this step is necessary before transacting.
 *For more information on channels, see the [Technology Primer]({{'/guide/getting-started/technology-primer/#what-is-a-payment-channel' | relative_url}}) and [Lightning Liquidity]({{'/guide/how-it-works/liquidity/' | relative_url}}) section.*
 - Explaining to users how long it takes to open a channel sets a clear expectation around the process. This would be best done early on during the onboarding journey.
 
-Opening channels is a process unique to lightning wallets and an essential first step during the onboarding process. For users brand-new to lightning, opening a channel in itself is something that is new and unique to them. It is then helpful to explain to users why a channel should be opened before presenting them with the channel opening screen An example of the text could read:
+Opening channels is a process unique to lightning wallets and an essential first step during the onboarding process. For users brand-new to lightning, opening a channel in itself is something that is new and unique to them. It is then helpful to explain to users why this is necessary, before making them go through this process. An example of the text could read:
 
 ### Explaining the concept of opening a channel to a user that has never used a lightning wallet
 
@@ -126,7 +127,7 @@ To open a channel first we will need to add some bitcoin to it. Once that is don
 {% include picture.html
    image = "/assets/images/guide/case-studies/blixt-wallet/blixt-usability-test.png"
    retina = "/assets/images/guide/case-studies/blixt-wallet/blixt-usability-test@2x.png"
-   mobile = "/assets/images/guide/case-studies/blixt-wallet/blixt-usability-test-mobile.jpngpg"
+   mobile = "/assets/images/guide/case-studies/blixt-wallet/blixt-usability-test-mobile.png"
    mobileRetina = "/assets/images/guide/case-studies/blixt-wallet/blixt-usability-test-mobile@2x.png"
    alt-text = "Diagram showing comments from users and which section of the UI they were commenting on"
    width = 800
@@ -135,7 +136,7 @@ To open a channel first we will need to add some bitcoin to it. Once that is don
 
 ## Here’s what we learned about educating users
 
-- Providing users with educational screenstates is a good idea. It’s always nice to keep the text as short as possible and the explanation easy. Through the usability testing, we learned that we could further simplify the text in this educational part.
+- Providing users with educational screen states is a good idea. It’s always nice to keep the text as short as possible, and the explanation easy. Through the usability testing, we learned that we could further simplify the text in this educational part.
 - We also learned that when providing educational screen states, we should allow users the option of going back, so that they can read the text from the previous screen.
 
 {% include picture.html
