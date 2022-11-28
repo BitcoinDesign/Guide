@@ -109,7 +109,7 @@ After watching the users testing the wallet we made some observations. Those obs
    mobileRetina = "/assets/images/guide/case-studies/blixt-wallet/blixt-wallet-usability-testing-data-overview-mobile@2x.png"
    alt-text = "Chart depicting an overview of the data from the usability tests, showing user confusion about usernames, opening channels, the copywriting, and how to fund the wallet by copying a QR code."
    width = 800
-   height = 751
+   height = 759
 %}
 
 - Users new to lightning are missing a crucial step, the why. They often lack understanding on why they need to open a channel before being presented with a screen to open one. Once this is clear it becomes easy for a user to understand that this step is necessary before transacting.
