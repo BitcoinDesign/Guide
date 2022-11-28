@@ -59,19 +59,24 @@ imagesSearch:
       caption: Make it easy to add metadata when a user sends or receives a transaction, as it is top-of-mind at that moment.
 imagesReceive:
     - file: receive-transaction
+      modalImage: receive-transaction-big
       alt: Smartphone screen showing a completed on-chain payment
       caption: A received on-chain transaction without annotations.
     - file: receive-transaction-expanded
+      modalImage: receive-transaction-expanded-big
       alt: Smartphone screen showing an on-chain payment with expanded technical details
       caption: The same transaction with an assigned contact, tags, and description, as well as expanded details.
     - file: receive-transaction-id-details
+      modalImage: receive-transaction-id-details-big
       alt: Smartphone screen showing an on-chain payment with extended details and an additional modal for further technical details
       caption: Tapping list items can quickly bring up further details and options.
 imagesSend:
     - file: send-transaction
+      modalImage: send-transaction-big
       alt: Smartphone screen showing a completed lightning payment
       caption: On-chain and lightning payments look structurally similar, but differ in subtle ways.
     - file: send-transaction-expanded
+      modalImage: send-transaction-expanded-big
       alt: Smartphone screen showing a completed lightning payment with extended technical details
       caption: Expanded details of lightning payment.
 ---
@@ -93,6 +98,9 @@ imagesSend:
 <!--
 
 This page explains a feature for allowing users to review and organize their payment activity.
+
+Source design for screen mock-ups are in this file:
+https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototype?node-id=4152%3A306968&t=boEAgdyqfi39SBoF-1
 
 -->
 
