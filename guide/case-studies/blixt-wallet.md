@@ -88,7 +88,9 @@ We created a lot of different user flows to find a solution for the best method 
 
 Explaining the concept of channel opening to people who are new to lightning. The concept of opening a channel to make a transaction is totally new to them. Next, some users might not be native English speakers, so using words and terms that communicate clearly to a larger group of people was essential.
 
-## After re-designing the interface we tested the new design by doing usability tests. Here’s the process we followed:
+## Usability tests
+
+After re-designing the interface, we tested the new design by doing usability tests. Here’s the process we followed:
 
 - **Plan:** We set out clear goals of what we wanted to understand and learn by conducting the tests. We also decided at this stage who we wanted to interview, as well as who we did not want to interview.
 - **User scenario:** We then went on to create a realistic user journey which the tester would walk through, with a clear goal that they would achieve in the end.
