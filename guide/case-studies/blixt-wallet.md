@@ -84,9 +84,10 @@ We created a lot of different user flows to find a solution for the best method 
    layout = "full-width"
 %}
 
-## One of the biggest challenges we faced was
+## One of the biggest challenges we faced was:
 
 Explaining the concept of channel opening to people who are new to lightning. The concept of opening a channel to make a transaction is totally new to them. Next, some users might not be native English speakers, so using words and terms that communicate clearly to a larger group of people was essential.
+
 
 ## After re-designing the interface we tested the new design by doing usability tests. Here’s the process we followed:
 
