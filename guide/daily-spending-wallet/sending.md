@@ -13,96 +13,125 @@ image: /assets/images/guide/daily-spending-wallet/sending/bitcoin-payments-socia
 image_base: /assets/images/guide/daily-spending-wallet/sending/
 imagesEntryPoints:
     - file: home
+      modalImage: home-big
       alt: Wallet home screen with amount input, pay and request options
       caption: Home screens provide quick access to entering payment flows.
     - file: pick-contact
+      modalImage: pick-contact-big
       alt: A screen showing a list of contacts to choose from
       caption: Storing contact information makes consecutive payments convenient.
     - file: donation-page-copy
+      modalImage: donation-page-copy-big
       alt: A website with a list of donation options for a bitcoin designer
       caption: Users may be required to copy & paste payment requests.
     - file: donation-page-link
+      modalImage: donation-page-link-big
       alt: A website with a single donation option for a bitcoin designer
       caption: Applications can initiate payment flows when users click specifically formatted links.
     - file: donation-qr-code
+      modalImage: donation-qr-code-big
       alt: A sheet of paper with donation information for a bitcoin designer
       caption: Scanning a QR code is a common way to initiate a payment in a real-world setting.
 imagesEntryScreens:
     - file: lightning-address-options
+      modalImage: lightning-address-options-big
       alt: A payment request screen with options to send, request, and add to contacts
       caption: If no action type (pay, withdraw) is provided, users need to choose.
     - file: pay-invoice-without-amount
+      modalImage: pay-invoice-without-amount-big
       alt: A payment request screen with the recipient pre-filled
       caption: The minimum amount of information in an invoice is the recipient.
     - file: pay-invoice-with-details
+      modalImage: pay-invoice-with-details-big
       alt: A payment request screen with complex pre-filled information
       caption: Invoices can also include more complex information, especially the LNURL format.
     - file: withdraw-invoice
+      modalImage: withdraw-invoice-big
       alt: A payment request screen for withdrawing bitcoin
       caption: Invoices can also offer the user to withdraw bitcoin.
     - file: error-invoice-expired
+      modalImage: error-invoice-expired-big
       alt: A home screen with a modal explaining an invoice has expired
       caption: Basic lightning invoices expire, typically after one hour.
     - file: error-incompatibility
+      modalImage: error-incompatibility-big
       alt: A home screen with an informational modal around invoice compatibility
       caption: Compatibility problems are not uncommon due to the many formats.
 imagesInfo:
     - file: home
+      modalImage: home-big
       alt: Wallet home screen with amount input, pay and request options
       caption: Payment flows can typically also be initiated from the wallet home screen.
     - file: review
+      modalImage: review-big
       alt: A payment form with basic information completed
       caption: Amount and recipient entry should be simple and convenient.
     - file: review-with-label-and-tags
+      modalImage: review-with-label-and-tags-big
       alt: A payment form with all information completed
       caption: Adding additional metadata makes it easier for users to organize their spending.
 imagesProcessing:
     - file: processing
+      modalImage: processing-big
       alt: Payment screen showing the transaction is being sent
       caption: Lightning transactions typically complete in seconds and don't require loaders.
     - file: processing-longer-wait
+      modalImage: processing-longer-wait-big
       alt: Payment screen showing that the transaction is taking longer than expected
       caption: If a transaction takes uncharacteristically long, users should be informed.
     - file: processing-on-chain
+      modalImage: processing-on-chain-big
       alt: Payment screen showing pending status for an on-chain transaction
       caption: More detailed status updates are helpful for on-chain transactions, as they can take 10+ minutes to confirm.
     - file: processing-transactions
+      modalImage: processing-transactions-big
       alt: Transaction history screen showing payments with various different statuses
       caption: Users should not be forced to wait until transaction completion to keep using the wallet, and be able to review the status at any time.
 imagesErrors:
     - file: routing-error
+      modalImage: routing-error-big
       alt: A screen describing a specific error with options to address it
       caption: Example of an identifiable error with known solutions.
     - file: generic-error
+      modalImage: generic-error-big
       alt: A screen describing a generic error with options to self-help
       caption: A generic error with tips for the user to try.
     - file: generic-error-details
+      modalImage: generic-error-details-big
       alt: A screen showing error details
       caption: Access to error details for problem-solving.
     - file: offline-error
+      modalImage: offline-error-big
       alt: A screen showing error details
       caption: If the receiving lightning wallet is offline, let the user know how to address this problem.
 imagesReview:
     - file: confirm
+      modalImage: confirm-big
       alt: Invoice approval screen
       caption: A compact summary to confirm the information is accurate.
     - file: confirm-high-fees
+      modalImage: confirm-high-fees-big
       alt: Confirmation screen with note about high fees
       caption: Highlight information the user should consciously approve, like high fees.
     - file: enter-pin-before-payment
+      modalImage: enter-pin-before-payment-big
       alt: Enter PIN screen
       caption: Optionally, this wallet is asking the user to enter their PIN as the final step before paying.
 imagesLightning:
     - file: home
+      modalImage: home-big
       alt: Wallet home screen with amount input, pay and request options
       caption: The user taps the scan button on the home screen.
     - file: scan-onchain-qr-code
+      modalImage: scan-onchain-qr-code-big
       alt: Scanning screen as the user scans a QR code of an on-chain address
       caption: The user scans a QR code, unaware that it is an on-chain address.
     - file: review-onchain-tx
+      modalImage: review-onchain-tx-big
       alt: Payment review screen for a higher-fee, on-chain payment
       caption: The payment review screen draws attention to the higher on-chain fee and offers the user a way to save on fees and confirmation time.
     - file: onchain-warning
+      modalImage: onchain-warning-big
       alt: Information screen that details the payment taking 10 minutes to an hour to confirm with a fee of 1,023 sats, and suggests asking the recipient for a lightning compatible format.
       caption: The user may choose to proceed with the on-chain payment anyways, but has been informed they may be able to save time and fees by asking for a different payment format.
 ---
@@ -117,21 +146,23 @@ Page artwork: created in Figma.
 Header: Illustration was sketched first, then designed in Adobe Illustrator, and finally textured and resized in Adobe
 Photoshop. The Dropbox link contains the AI and PSD files.
 
-- https://www.dropbox.com/sh/z5qnj2rna7rclae/AAB0dOuiJ3OmJuk7ZXkpbz5ua?dl=0\
-- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=1329%3A564
-- https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=3%3A471
+Source for the header image:
+https://www.dropbox.com/sh/z5qnj2rna7rclae/AAB0dOuiJ3OmJuk7ZXkpbz5ua?dl=0\
+
+Source for the screen mock-ups:
+https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototype?node-id=4152%3A306968&t=8U4BRjRiKW9VvZzI-1
 
 -->
 
 {% include picture.html
-image = "/assets/images/guide/daily-spending-wallet/sending/bitcoin-payments.jpg"
-retina = "/assets/images/guide/daily-spending-wallet/sending/bitcoin-payments@2x.jpg"
-mobile = "/assets/images/guide/daily-spending-wallet/sending/bitcoin-payments-mobile.jpg"
-mobileRetina = "/assets/images/guide/daily-spending-wallet/sending/bitcoin-payments-mobile@2x.jpg"
-alt-text = "Illustration of a man and woman exchanging a bitcoin"
-width = 1600
-height = 600
-layout = "full-width"
+    image = "/assets/images/guide/daily-spending-wallet/sending/bitcoin-payments.jpg"
+    retina = "/assets/images/guide/daily-spending-wallet/sending/bitcoin-payments@2x.jpg"
+    mobile = "/assets/images/guide/daily-spending-wallet/sending/bitcoin-payments-mobile.jpg"
+    mobileRetina = "/assets/images/guide/daily-spending-wallet/sending/bitcoin-payments-mobile@2x.jpg"
+    alt-text = "Illustration of a man and woman exchanging a bitcoin"
+    width = 1600
+    height = 600
+    layout = "full-width"
 %}
 
 # Sending bitcoin
@@ -222,9 +253,10 @@ Lightning wallets may require [additional services]({{ '/guide/how-it-works/ligh
 
 #### On-chain fees
 
-{% include image.html
+{% include picture.html
    image = "/assets/images/guide/daily-spending-wallet/sending/confirm-fees.png"
    retina = "/assets/images/guide/daily-spending-wallet/sending/confirm-fees@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/sending/confirm-fees-big.png"
    alt-text = "Screen showing fee options for a transaction"
    caption = "On-chain fees can vary drastically and should be easy to edit."
    width = 250
@@ -268,9 +300,10 @@ On-chain, you may offer users the options to cancel (via [replace-by-fee](https:
 
 <div class="center" markdown="1">
 
-{% include image.html
+{% include picture.html
    image = "/assets/images/guide/daily-spending-wallet/sending/success.png"
    retina = "/assets/images/guide/daily-spending-wallet/sending/success@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/sending/success-big.png"
    alt-text = "Screen showing a completed transaction"
    caption = "A brief transaction summary with access to further details."
    width = 250
