@@ -60,9 +60,8 @@ Editor's notes
 This page provides best practices and designers for the first-use experience of the
 daily spending wallet reference design.
 
-Illustration sources
-- https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=0%3A1
-- https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-UI-Kit?node-id=3573%3A92556
+Source designs for all screens can be found in this Figma file:
+https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototype?node-id=4152%3A306968&t=boEAgdyqfi39SBoF-1
 
 -->
 
