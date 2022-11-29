@@ -2,7 +2,7 @@
 layout: guide
 title: Glossary
 permalink: /guide/glossary/
-nav_order: 12
+nav_order: 13
 has_children: true
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/glossary/glossary-preview.jpg
