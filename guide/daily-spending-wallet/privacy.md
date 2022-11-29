@@ -27,6 +27,9 @@ image: /assets/images/guide/daily-spending-wallet/privacy/privacy-preview.jpg
 
 This page showcases the options users have to improve their privacy in the daily spending wallet.
 
+Design source for the screen mock-ups:
+https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototype?node-id=4152%3A306968&t=boEAgdyqfi39SBoF-1
+
 -->
 
 # Wallet privacy
