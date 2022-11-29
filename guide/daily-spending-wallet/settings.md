@@ -69,6 +69,9 @@ images_network:
 This is more of a summary page that bring together all the application settings that
 the user encounters throughout the app experience into a single, concise form.
 
+The design source for screen mock-ups on this page can be found here:
+https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototype?node-id=4152%3A306968&t=boEAgdyqfi39SBoF-1
+
 
 -->
 
