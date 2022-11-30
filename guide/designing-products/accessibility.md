@@ -56,6 +56,20 @@ exampleImagesThree:
     - file: color-vision-defficiencies
       alt: Request screen in greyscale
       caption: Ensure the information can be understood by those with color vision defficiences. For example, by using "+" and "-" indicate withdrawals and deposits instead of green and red coloration only.
+video_base: /assets/images/guide/designing-products/accessibility/
+videos:
+    - youtubeId: dQc2YWxOB6A
+      file: learning-bitcoin-and-design-accessibility
+      caption: Learning bitcoin & design call on testing
+    - youtubeId: n9FvI5SfpoU
+      file: quick-accessibility-test
+      caption: Basic test example
+    - youtubeId: Ho8oD-WrNY8
+      file: phoenix-accessibility-test
+      caption: Test summary of Phoenix wallet
+    - youtubeId: 17mwm5x1Wa8
+      file: wallet-of-satoshi-accessibility-test
+      caption: Test summary for Wallet of Satoshi
 ---
 
 <!--
@@ -155,7 +169,7 @@ The accessibility pages by [Apple](https://www.apple.com/accessibility/), [Micro
 
 ---
 
-{% include video.html youtubeId="dQc2YWxOB6A" image="/assets/images/guide/designing-products/accessibility/learning-bitcoin-and-design-accessibility.jpg" retina="/assets/images/guide/designing-products/accessibility/learning-bitcoin-and-design-accessibility@2x.jpg" caption="Learning bitcoin & design call on mobile accessibility testing" %}
+{% include videos.html video_base = page.video_base videos = page.videos %}
 
 ---
 
