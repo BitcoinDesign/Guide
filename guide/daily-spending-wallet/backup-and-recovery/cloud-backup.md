@@ -10,6 +10,36 @@ redirect_from:
  - /guide/onboarding/backing-up-a-wallet/cloud-backup/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/backing-up-a-wallet-cloud-preview.png
+image_base: /assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/
+images_flow:
+    - file: cloud-backup-prompt
+      modalImage: cloud-backup-prompt-full
+      alt: Screen prompting the user to back up after they have received a payment
+      caption: Prompt the user to back up when they have funds in the wallet.
+    - file: cloud-backup-intro
+      modalImage: cloud-backup-intro-full
+      alt: Screen explaining automatic cloud backups
+      caption: Describe to the user know what is about to happen and how it works.
+    - file: cloud-backup-PIN
+      modalImage: cloud-backup-PIN-full
+      alt: Screen showing a number pad for selecting a PIN
+      caption: Allows the user to set a PIN used for authentication, as well as encryption of the recovery phrase.
+    - file: cloud-backup-PIN-verify
+      modalImage: cloud-backup-PIN-verify-full
+      alt: Screen showing a number pad for verifying the PIN
+      caption: Verify the PIN to help ensure the user remembers what they just typed.
+    - file: cloud-backup-service
+      modalImage: cloud-backup-service-full
+      alt: Screen showing different options for cloud providers
+      caption: Allow the user to select their cloud provider for backup.
+    - file: cloud-backup-provider
+      modalImage: cloud-backup-provider-full
+      alt: Screen of placeholder where cloud provider UI would be
+      caption: This UI will be very different depending on the cloud provider and what permissions are required.
+    - file: cloud-backup-confirmation
+      modalImage: cloud-backup-confirmation-full
+      alt: Screen showing completing a cloud backup
+      caption: Once the upload is complete it's a good idea to show a success screen and give some reassurances.
 ---
 
 <!--
@@ -18,9 +48,11 @@ Editor's notes
 
 This chapter covers backing up wallet data via a cloud provider.
 
-Illustration sources
-- https://www.figma.com/file/q9EgLqOKcIVc0Cq7khtpNm/Onboarding-%3E-Backups?node-id=0%3A1
-- https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=0%3A1
+Design source for the header image.
+https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/Design-Guide-Bosch?node-id=643%3A5911&t=cxnZk34h7BzPxxUu-1
+
+Design source for screen mock-ups on this page.
+https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototype?node-id=4152%3A306968&t=F7xyHM3gzQ2lqzSv-1
 
 -->
 
@@ -47,86 +79,7 @@ This method provides users with the feeling that they can rely on their cloud pr
 
 Below is what this wallet’s automatic cloud backup user interface looks like.
 
-<div class="image-slide-gallery">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-prompt.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-prompt@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-prompt@2x.png"
-   layout = "shadow"
-   caption = "Prompt the user to back up when they have funds in the wallet"
-   alt-text = "Screen prompting the user to back up after they have received a payment"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-intro.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-intro@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-intro@2x.png"
-   layout = "shadow"
-   caption = "Describe to the user know what is about to happen and how it works."
-   alt-text = "Screen explaining automatic cloud backups"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-PIN.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-PIN@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-PIN@2x.png"
-   layout = "shadow"
-   caption = "Allows the user to set a PIN used for authentication, as well as encryption of the recovery phrase."
-   alt-text = "Screen showing a number pad for selecting a PIN"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-PIN-verify.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-PIN-verify@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-PIN-verify@2x.png"
-   layout = "shadow"
-   caption = "Verify the PIN to help ensure the user remembers what they just typed"
-   alt-text = "Screen showing a number pad for verifying the PIN"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-service.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-service@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-service@2x.png"
-   layout = "shadow"
-   caption = "Allow the user to select their cloud provider for backup."
-   alt-text = "Screen showing different options for cloud providers"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-provider.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-provider@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-provider@2x.png"
-   layout = "shadow"
-   caption = "This UI will be very different depending on the cloud provider and what permissions are required."
-   alt-text = "Screen of placeholder where cloud provider UI would be"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-confirmation.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-confirmation@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-confirmation@2x.png"
-   layout = "shadow"
-   caption = "Once the upload is complete it's a good idea to show a success screen and give some reassurances."
-   alt-text = "Screen showing completing a cloud backup"
-   width = 250
-   height = 541
-%}
-
-</div>
+{% include image-gallery.html pages = page.images_flow %}
 
 ## How to explain it
 
@@ -147,7 +100,7 @@ Before creating a wallet backup via cloud backup, make sure the user knows what 
 {% include picture.html
    image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-error.png"
    retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-error@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-error@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-error-full.png"
    alt-text = "Screen showing an error message for a failed auto cloud backup"
    caption = "This wallet notifies the user when there is a backup error and provides next steps"
    width = 250
