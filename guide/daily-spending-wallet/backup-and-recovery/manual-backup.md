@@ -10,13 +10,76 @@ redirect_from:
  - /guide/onboarding/backing-up-a-wallet/manual-backup/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/backing-up-a-wallet-manual-preview.png
+image_base: /assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/
+images_phrase:
+    - file: manual-backup-choice
+      modalImage: manual-backup-choice-full
+      alt: Screen prompting the user to back up after they have received a payment, with a manual backup toggle at the bottom
+      caption: Wallet prompts the user to setup a backup, and the user selects the manual backup toggle.
+    - file: manual-backup-notes
+      modalImage: manual-backup-notes-full
+      alt: Screen describing how manual backup differs, with an option to proceed or go back.
+      caption: Explain what the manual backup is before proceeding, and give user the option to back out.
+    - file: manual-backup-cloud-choice
+      modalImage: manual-backup-cloud-choice-full
+      alt: Screen showing different options for cloud providers
+      caption: Allow the user to select their cloud provider for channel state backup.
+    - file: manual-backup-cloud-provider
+      modalImage: manual-backup-cloud-provider-full
+      alt: Screen of placeholder where cloud provider UI would be
+      caption: This UI will be very different depending on the cloud provider and what permissions are required.
+    - file: manual-backup-recovery-phrase-intro
+      modalImage: manual-backup-recovery-phrase-intro-full
+      alt: Screen with a description of what a recovery phrase is
+      caption: Explain what a recovery phrase is.
+    - file: manual-backup-next-steps
+      modalImage: manual-backup-next-steps-full
+      alt: Screen explaining that the recovery phrase will be shown next and how to write it down
+      caption: Explain what is about to happen and what the user should do.
+    - file: manual-backup-recovery-phrase
+      modalImage: manual-backup-recovery-phrase-full
+      alt: Screen displaying a 12 word recovery phrase
+      caption: Displays the recovery phrase with numbering.
+images_template:
+    - file: manual-backup-recovery-phrase
+      modalImage: manual-backup-recovery-phrase-full
+      alt: Screen displaying a 12 word recovery phrase and option to get a print template
+      caption: Give the user an option to download a print template.
+    - file: manual-backup-print
+      modalImage: manual-backup-print-full
+      alt: Screen showing a picture of a print template with print and download buttons
+      caption: Explain how to use the print template and give the option to print it or download it.
+    - file: manual-backup-print-download
+      modalImage: manual-backup-print-download-full
+      alt: Screen showing a placeholder for a mobile printing UI
+      caption: User continues down OS specific flow for printing or downloading a file.
+images_confirm:
+    - file: manual-backup-validation-intro
+      modalImage: manual-backup-validation-intro-full
+      alt: Screen explaining the verification process
+      caption: Explain to the user that they need to verify they wrote down their recovery phrase properly.
+    - file: manual-backup-validation-start
+      modalImage: manual-backup-validation-start-full
+      alt: Screen showing the user's recovery phrase out of order
+      caption: Prompt the user to tap the words of their recovery phrase in the correct order.
+    - file: manual-backup-validation-progress
+      modalImage: manual-backup-validation-progress-full
+      alt: Screen showing an error when user taps in the recovery phrase in the wrong sequence
+      caption: Let the user know when they get the order incorrect.
+    - file: manual-backup-validation-complete
+      modalImage: manual-backup-validation-complete-full
+      alt: Screen showing that the recovery phrase has been tapped in the correct order
+      caption: The user finishes tapping in their recovery phrase in the correct order.
+    - file: manual-backup-complete
+      modalImage: manual-backup-complete-full
+      alt: Screen that says the backup is complete
+      caption: Remind the user to store their recovery phrase safely.
 ---
 
 <!--
 
-Illustration sources:
-
-- https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=0%3A1
+Design source for mock-ups used in this page.
+https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototype?node-id=4152%3A306968&t=F7xyHM3gzQ2lqzSv-1
 
 -->
 
@@ -121,86 +184,7 @@ Note that this wallet explicitly instructs users to number each word (e.g. 1. sa
 
 {% include /tip/close.html %}
 
-<div class="image-slide-gallery">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-choice.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-choice@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-choice@2x.png"
-   layout = "shadow"
-   caption = "Wallet prompts the user to setup a backup, and the user selects the manual backup toggle."
-   alt-text = "Screen prompting the user to back up after they have received a payment, with a manual backup toggle at the bottom"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-notes.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-notes@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-notes@2x.png"
-   layout = "shadow"
-   caption = "Explain what the manual backup is before proceeding, and give user the option to back out."
-   alt-text = "Screen describing how manual backup differs, with an option to proceed or go back."
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-cloud-choice.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-cloud-choice@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-cloud-choice@2x.png"
-   layout = "shadow"
-   caption = "Allow the user to select their cloud provider for channel state backup."
-   alt-text = "Screen showing different options for cloud providers"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-cloud-provider.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-cloud-provider@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-cloud-provider@2x.png"
-   layout = "shadow"
-   caption = "This UI will be very different depending on the cloud provider and what permissions are required."
-   alt-text = "Screen of placeholder where cloud provider UI would be"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-recovery-phrase-intro.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-recovery-phrase-intro@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-recovery-phrase-intro@2x.png"
-   layout = "shadow"
-   caption = "Explain what a recovery phrase is."
-   alt-text = "Screen with a description of what a recovery phrase is"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-next-steps.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-next-steps@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-next-steps@2x.png"
-   layout = "shadow"
-   caption = "Explain what is about to happen and what the user should do."
-   alt-text = "Screen explaining that the recovery phrase will be shown next and how to write it down"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-recovery-phrase.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-recovery-phrase@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-recovery-phrase@2x.png"
-   layout = "shadow"
-   caption = "Displays the recovery phrase with numbering."
-   alt-text = "Screen displaying a 12 word recovery phrase"
-   width = 250
-   height = 541
-%}
-
-</div>
+{% include image-gallery.html pages = page.images_phrase %}
 
 ### Print template
 
@@ -210,42 +194,7 @@ Some non-sensitive data (such as the name of your wallet or the derivation path)
 
 [Printable Template Figma File](https://www.figma.com/community/file/1110806582648546839){: .button }
 
-<div class="image-slide-gallery">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-recovery-phrase.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-recovery-phrase@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-recovery-phrase@2x.png"
-   layout = "shadow"
-   caption = "Give the user an option to download a print template."
-   alt-text = "Screen displaying a 12 word recovery phrase and option to get a print template"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-print.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-print@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-print@2x.png"
-   layout = "shadow"
-   caption = "Explain how to use the print template and give the option to print it or download it."
-   alt-text = "Screen showing a picture of a print template with print and download buttons"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-print-download.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-print-download@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-print-download@2x.png"
-   layout = "shadow"
-   caption = "User continues down OS specific flow for printing or downloading a file."
-   alt-text = "Screen showing a placeholder for a mobile printing UI"
-   width = 250
-   height = 541
-%}
-
-</div>
+{% include image-gallery.html pages = page.images_template %}
 
 ### Confirming a backup
 
@@ -257,64 +206,7 @@ Try to make sure users understand your team cannot access their recovery phrase 
 
 {% include /tip/close.html %}
 
-<div class="image-slide-gallery">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-validation-intro.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-validation-intro@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-validation-intro@2x.png"
-   layout = "shadow"
-   caption = "Explain to the user that they need to verify they wrote down their recovery phrase properly."
-   alt-text = "Screen explaining the verification process"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-validation-start.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-validation-start@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-validation-start@2x.png"
-   layout = "shadow"
-   caption = "Prompt the user to tap the words of their recovery phrase in the correct order."
-   alt-text = "Screen showing the user's recovery phrase out of order"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-validation-progress.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-validation-progress@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-validation-progress@2x.png"
-   layout = "shadow"
-   caption = "Let the user know when they get the order incorrect."
-   alt-text = "Screen showing an error when user taps in the recovery phrase in the wrong sequence"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-validation-complete.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-validation-complete@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-validation-complete@2x.png"
-   layout = "shadow"
-   caption = "The user finishes tapping in their recovery phrase in the correct order."
-   alt-text = "Screen showing that the recovery phrase has been tapped in the correct order"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-complete.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-complete@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-complete@2x.png"
-   layout = "shadow"
-   caption = "Remind the user to store their recovery phrase safely."
-   alt-text = "Screen that says the backup is complete"
-   width = 250
-   height = 541
-%}
-
-</div>
+{% include image-gallery.html pages = page.images_confirm %}
 
 ---
 
