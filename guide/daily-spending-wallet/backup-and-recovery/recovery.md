@@ -10,13 +10,128 @@ redirect_from:
  - /guide/onboarding/restoring-a-wallet/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restoring-a-wallet-preview.png
+image_base: /assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/
+images_cloud_recovery:
+    - file: restore-menu
+      modalImage: restore-menu-full
+      alt: Screen that describes restoring the wallet from a cloud backup
+      caption: Beginning of the restore flow.
+    - file: restore-cloud-searching
+      modalImage: restore-cloud-searching-full
+      alt: Screen shows an animation while the cloud backup is found
+      caption: App searches for the cloud backup.
+    - file: restore-restoring
+      modalImage: restore-restoring-full
+      alt: Screen shows an animation while the wallet is being restored
+      caption: Wallet restores from cloud backup.
+    - file: restore-restored
+      modalImage: restore-restored-full
+      alt: Screen showing that the wallet has been restored.
+      caption: Wallet is finished being restored.
+    - file: restore-finish
+      modalImage: restore-finish-full
+      alt: Screen showing a home screen with funds
+      caption: The wallet has been successfully restored.
+images_manual_recovery:
+    - file: restore-manual
+      modalImage: restore-manual-full
+      alt: Screen showing description of manual restore
+      caption: User selects \"advanced\" from the restore screen, and is taken here.
+    - file: restore-manual-recovery-phrase-error
+      modalImage: restore-manual-recovery-phrase-error-full
+      alt: Screen showing an incorrectly typed word highlighed in red.
+      caption: User enters their recovery phrase. The app can notify them if a word is incorrect before they have finished typing it.
+    - file: restore-manual-recovery-phrase-progress
+      modalImage: restore-manual-recovery-phrase-progress-full
+      alt: Screen showing an incorrectly typed word highlighted in red.
+      caption: User enters their recovery phrase. The app can autocomplete words for the user.
+    - file: restore-manual-recovery-phrase-complete
+      modalImage: restore-manual-recovery-phrase-complete-full
+      alt: Screen showing a 12 word recovery phrase in green text
+      caption: User successfully enters their entire recovery phrase.
+    - file: restore-restoring
+      modalImage: restore-restoring-full
+      alt: Screen showing an animation as the wallet is being restored
+      caption: App begins to restore, pulling the channels backup automatically from the cloud.
+    - file: restore-restored
+      modalImage: restore-restored-full
+      alt: Screen showing that the wallet has been restored.
+      caption: Wallet is finished being restored.
+    - file: restore-finish
+      modalImage: restore-finish-full
+      alt: Screen showing a home screen with funds
+      caption: The wallet has been successfully restored.
+images_other:
+    - file: restore-manual-recovery-phrase-complete
+      modalImage: restore-manual-recovery-phrase-complete-full
+      alt: Screen showing a 12 word recovery phrase in green text
+      caption: The user has finished entering their recovery phrase and taps \"Next\".
+    - file: restore-manual-channel-selection
+      modalImage: restore-manual-channel-selection-full
+      alt: Screen describing how a channel backup couldn't be found, with a list of options
+      caption: The app fails to automatically find a channel state backup in the user's cloud account. User chooses to try another cloud account.
+    - file: restore-manual-cloud-select
+      modalImage: restore-manual-cloud-select-full
+      alt: Screen showing a list of cloud provider choices.
+      caption: User chooses their cloud provider.
+    - file: restore-manual-cloud-ui
+      modalImage: restore-manual-cloud-ui-full
+      alt: Screen showing a placeholder image for a cloud provider UI
+      caption: User authenticats with the cloud provider, finds the backup file, etc.
+    - file: restore-manual-checking-file
+      modalImage: restore-manual-checking-file-full
+      alt: Screen showing a backup file being checked
+      caption: The app checks the backup file the user has selected.
+    - file: restore-manual-checking-complete
+      modalImage: restore-manual-checking-complete-full
+      alt: Screen showing that the backup file is good
+      caption: The app determines this is a valid channel state backup.
+    - file: restore-restoring
+      modalImage: restore-restoring-full
+      alt: Screen showing an animation as the wallet is being restored
+      caption: App begins to restore, pulling the channels backup automatically from the cloud.
+    - file: restore-restored
+      modalImage: restore-restored-full
+      alt: Screen showing that the wallet has been restored.
+      caption: Wallet is finished being restored.
+    - file: restore-finish
+      modalImage: restore-finish-full
+      alt: Screen showing a home screen with funds
+      caption: The wallet has been successfully restored.
+images_other_two:
+    - file: restore-manual-channel-selection
+      modalImage: restore-manual-channel-selection-full
+      alt: Screen describing how a channel backup couldn't be found, with a list of options
+      caption: The app fails to automatically find a channel state backup in the user's cloud account. User chooses \"I can't find it\".
+    - file: restore-manual-missing-channels
+      modalImage: restore-manual-missing-channels-full
+      alt:
+      caption: The app offers to help the user restore anyways, but warns that there will be a delay in accessing funds.
+    - file: restore-manual-force-close-attempt
+      modalImage: restore-manual-force-close-attempt-full
+      alt: Screen showing an animation while the app attempts to restore
+      caption: App sends a signal back to the LSP to attempt to force close the channels.
+    - file: restore-manual-force-close-success
+      modalImage: restore-manual-force-close-success-full
+      alt: Screen showing that the restore worked.
+      caption: The force close has been initiated, so the restore has effectively worked.
+    - file: restore-manual-pending-notice
+      modalImage: restore-manual-pending-notice-full
+      alt: Screen describing the delay in accessing funds
+      caption: App reminds the user of the delay in accessing funds.
+    - file: restore-manual-finish-pending
+      modalImage: restore-manual-finish-pending-full
+      alt: Screen showing the wallet homescreen with pending indicators
+      caption: The delay is also indicated on the homescreen of the app.
 ---
 
 <!--
 
-Illustration sources:
+Design source for the header image:
+https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=0%3A1
 
-- https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=0%3A1
+Design source for mock-ups used on this page:
+https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototype?node-id=4152%3A306968&t=F7xyHM3gzQ2lqzSv-1
 
 -->
 
@@ -89,149 +204,13 @@ While this may seem outside the scope of normal thinking for a product, it is re
 
 This is by far the simplest way to recover the wallet. The user opts to restore from their cloud backup. The app checks the cloud account for a backup and restores the lightning node on the user's device. This works great for [basic recovery scenarios](#basic-recovery).
 
-<div class="image-slide-gallery">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-menu.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-menu@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-menu@2x.png"
-   layout = "shadow"
-   caption = "Beginning of the restore flow."
-   alt-text = "Screen that describes restoring the wallet from a cloud backup"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-cloud-searching.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-cloud-searching@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-cloud-searching@2x.png"
-   layout = "shadow"
-   caption = "App searches for the cloud backup."
-   alt-text = "Screen shows an animation while the cloud backup is found"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-restoring.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-restoring@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-restoring@2x.png"
-   layout = "shadow"
-   caption = "Wallet restores from cloud backup."
-   alt-text = "Screen shows an animation while the wallet is being restored"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-restored.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-restored@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-restored@2x.png"
-   layout = "shadow"
-   caption = "Wallet is finished being restored."
-   alt-text = "Screen showing that the wallet has been restored."
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-finish.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-finish@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-finish@2x.png"
-   layout = "shadow"
-   caption = "The wallet has been successfully restored."
-   alt-text = "Screen showing a home screen with funds"
-   width = 250
-   height = 541
-%}
-
-</div>
+{% include image-gallery.html pages = page.images_cloud_recovery %}
 
 ## Recovering with a manual backup
 
 This involves a few more steps, but should work just as well as the auto cloud backup. This works great for [basic recovery scenarios](#basic-recovery). In the manual restore, the primary difference is that the app asks the user to type in their recovery phrase. It will attempt to automatically pull their lightning channel state from cloud backup.
 
-<div class="image-slide-gallery">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual@2x.png"
-   layout = "shadow"
-   caption = "User selects \"advanced\" from the restore screen, and is taken here."
-   alt-text = "Screen showing description of manual restore"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-recovery-phrase-error.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-recovery-phrase-error@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-recovery-phrase-error@2x.png"
-   layout = "shadow"
-   caption = "User enters their recovery phrase. The app can notify them if a word is incorrect before they have finished typing it."
-   alt-text = "Screen showing an incorrectly typed word highlighed in red."
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-recovery-phrase-progress.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-recovery-phrase-progress@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-recovery-phrase-progress@2x.png"
-   layout = "shadow"
-   caption = "User enters their recovery phrase. The app can autocomplete words for the user."
-   alt-text = "Screen showing an incorrectly typed word highlighted in red."
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-recovery-phrase-complete.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-recovery-phrase-complete@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-recovery-phrase-complete@2x.png"
-   layout = "shadow"
-   caption = "User successfully enters their entire recovery phrase."
-   alt-text = "Screen showing a 12 word recovery phrase in green text"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-restoring.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-restoring@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-restoring@2x.png"
-   layout = "shadow"
-   caption = "App begins to restore, pulling the channels backup automatically from the cloud."
-   alt-text = "Screen showing an animation as the wallet is being restored"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-restored.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-restored@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-restored@2x.png"
-   layout = "shadow"
-   caption = "Wallet is finished being restored."
-   alt-text = "Screen showing that the wallet has been restored."
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-finish.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-finish@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-finish@2x.png"
-   layout = "shadow"
-   caption = "The wallet has been successfully restored."
-   alt-text = "Screen showing a home screen with funds"
-   width = 250
-   height = 541
-%}
-
-</div>
+{% include image-gallery.html pages = page.images_manual_recovery %}
 
 {% include tip/open.html color="green" icon="check" label="Use autocomplete" %}
 
@@ -245,180 +224,11 @@ This wallet makes the recovery process easier for the user by autocompleting the
 
 While this wallet will attempt to pull channel state from a cloud backup, there may be situations in which this does not work automatically. A simple example would be if the user set up the wallet on iOS, but is migrating to Android. This could be remedied by allowing the user to specify another cloud account to use.
 
-<div class="image-slide-gallery">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-recovery-phrase-complete.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-recovery-phrase-complete@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-recovery-phrase-complete@2x.png"
-   layout = "shadow"
-   caption = "The user has finished entering their recovery phrase and taps \"Next\"."
-   alt-text = "Screen showing a 12 word recovery phrase in green text"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-channel-selection.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-channel-selection@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-channel-selection@2x.png"
-   layout = "shadow"
-   caption = "The app fails to automatically find a channel state backup in the user's cloud account. User chooses to try another cloud account."
-   alt-text = "Screen describing how a channel backup couldn't be found, with a list of options"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-cloud-select.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-cloud-select@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-cloud-select@2x.png"
-   layout = "shadow"
-   caption = "User chooses their cloud provider."
-   alt-text = "Screen showing a list of cloud provider choices."
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-cloud-ui.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-cloud-ui@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-cloud-ui@2x.png"
-   layout = "shadow"
-   caption = "User authenticats with the cloud provider, finds the backup file, etc."
-   alt-text = "Screen showing a placeholder image for a cloud provider UI"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-checking-file.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-checking-file@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-checking-file@2x.png"
-   layout = "shadow"
-   caption = "The app checks the backup file the user has selected."
-   alt-text = "Screen showing a backup file being checked"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-checking-complete.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-checking-complete@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-checking-complete@2x.png"
-   layout = "shadow"
-   caption = "The app determines this is a valid channel state backup."
-   alt-text = "Screen showing that the backup file is good"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-restoring.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-restoring@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-restoring@2x.png"
-   layout = "shadow"
-   caption = "App begins to restore, pulling the channels backup automatically from the cloud."
-   alt-text = "Screen showing an animation as the wallet is being restored"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-restored.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-restored@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-restored@2x.png"
-   layout = "shadow"
-   caption = "Wallet is finished being restored."
-   alt-text = "Screen showing that the wallet has been restored."
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-finish.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-finish@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-finish@2x.png"
-   layout = "shadow"
-   caption = "The wallet has been successfully restored."
-   alt-text = "Screen showing a home screen with funds"
-   width = 250
-   height = 541
-%}
-
-</div>
+{% include image-gallery.html pages = page.images_other %}
 
 A more complicated and unlikely scenario is one in which the channel's backup has gotten corrupted in the user's cloud account or deleted somehow. In this situation, the LSP can force close the channels for the user. This would send the user's funds to an on-chain address. Once those funds are confirmed on-chain, the wallet will then automatically use those funds to open fresh channels with the LSP for the user. However, this will take some time, so the wallet is very clear in letting the user know that this will take longer.
 
-<div class="image-slide-gallery">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-channel-selection.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-channel-selection@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-channel-selection@2x.png"
-   layout = "shadow"
-   caption = "The app fails to automatically find a channel state backup in the user's cloud account. User chooses \"I can't find it\"."
-   alt-text = "Screen describing how a channel backup couldn't be found, with a list of options"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-missing-channels.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-missing-channels@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-missing-channels@2x.png"
-   layout = "shadow"
-   caption = "The app offers to help the user restore anyways, but warns that there will be a delay in accessing funds."
-   alt-text = "Screen "
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-force-close-attempt.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-force-close-attempt@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-force-close-attempt@2x.png"
-   layout = "shadow"
-   caption = "App sends a signal back to the LSP to attempt to force close the channels."
-   alt-text = "Screen showing an animation while the app attempts to restore"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-force-close-success.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-force-close-success@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-force-close-success@2x.png"
-   layout = "shadow"
-   caption = "The force close has been initiated, so the restore has effectively worked."
-   alt-text = "Screen showing that the restore worked."
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-pending-notice.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-pending-notice@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-pending-notice@2x.png"
-   layout = "shadow"
-   caption = "App reminds the user of the delay in accessing funds."
-   alt-text = "Screen describing the delay in accessing funds"
-   width = 250
-   height = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-finish-pending.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-finish-pending@2x.png"
-   modalImage="/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-finish-pending@2x.png"
-   layout = "shadow"
-   caption = "The delay is also indicated on the homescreen of the app."
-   alt-text = "Screen showing the wallet homescreen with pending   indicators"
-   width = 250
-   height = 541
-%}
-
-</div>
+{% include image-gallery.html pages = page.images_other_two %}
 
 ### Handling emergency scenarios
 
