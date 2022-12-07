@@ -69,7 +69,7 @@ Join community calls, design reviews, project discussions and other events. Our 
 {% include emoji-box.html
     emoji = "🎯"
     title = "Bitcoin Design Crits"
-    description = "Weekly design reviews of bitcoin products by the community."
+    description = "Design reviews of bitcoin products by the community."
     url = "https://github.com/BitcoinDesign/Meta/blob/master/Bitcoin-Design-Crits.md"
 %}
 </div>
