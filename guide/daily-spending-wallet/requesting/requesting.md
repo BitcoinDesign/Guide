@@ -6,12 +6,94 @@ has_children: true
 nav_order: 3
 parent: Daily spending wallet
 permalink: /guide/daily-spending-wallet/requesting/
-image: /assets/images/guide/daily-spending-wallet/requesting/request-banner-preview(1200x630).jpg
-image_base: /assets/images/guide/daily-spending-wallet/requesting/
 redirect_from:
  - /guide/payments/receive/
  - /guide/payments/request/
 main_classes: -no-top-padding
+image: /assets/images/guide/daily-spending-wallet/requesting/request-banner-preview(1200x630).jpg
+image_base: /assets/images/guide/daily-spending-wallet/requesting/
+images_entry:
+    - file: Home
+      modalImage: Home-full
+      alt: Screen showing the users home page with a number pad that can be used to initiate a request.
+      caption: Putting a number pad on the home screen makes the requesting process simple and fast.
+    - file: HomeBalance
+      modalImage: HomeBalance-full
+      alt: Screen showing home screen with the users balance also shown.
+      caption: ❌ Showing a wallet balance on the requesting screen affects the user’s privacy by revealing it to nearby on-lookers.
+images_amount:
+    - file: HomeEuro
+      modalImage: HomeEuro-full
+      alt: Screen showing home screen with a fiat euro input selected.
+      caption: Let users request in fiat currency.
+    - file: HomeBTC
+      modalImage: HomeBTC-full
+      alt: Screen showing home screen with a bitcoin input selected.
+      caption: Let users request in bitcoin.
+images_request:
+    - file: Unified
+      modalImage: Unified-full
+      alt: Screen showing a unified payment request in QR format.
+      caption: Unified payment requests combine lightning and on-chain requests, so users don’t have to worry about which to use.
+    - file: Invoice
+      modalImage: Invoice-full
+      alt: Screen showing an invoice that is part of a unified request in QR format.
+      caption: Let users share the lightning invoice independently.
+    - file: address
+      modalImage: address-full
+      alt: Screen showing an on-chain address that is part of a unified request in QR format.
+      caption: Let users share the on-chain address independently.
+    - file: RequestToggle
+      modalImage: RequestToggle-full
+      alt: Screen showing a toggle between lightning and on-chain request.
+      caption: ❌ Avoid users having to choose between requesting with lightning or on-chain.
+images_fees:
+    - file: Fees
+      modalImage: Fees-full
+      alt: Screen showing a payment request with setup fees shown.
+      caption: Let users know if fees will be charged.
+    - file: SetupFee
+      modalImage: SetupFee-full
+      alt: Screen showing fees that will be charged to the user if going over their receive limit.
+      caption: Communicating fees if the user has no channel.
+    - file: NoAmountFee
+      modalImage: NoAmountFee-full
+      alt: Screen showing no fees being charged for this payment request as its lower than their receive limit.
+      caption: Communicating fees if the user has entered no amount.
+    - file: AmountFee
+      modalImage: AmountFee-full
+      alt: Screen showing no fees being charged for this payment request as its lower than their receive limit.
+      caption: Communicating fees if the user is requesting an amount higher than their receive limit.
+    - file: AmountNoFee
+      modalImage: AmountNoFee-full
+      alt: Screen showing no fees being charged for this payment request as its lower than their receive limit.
+      caption: Communicating fees if the user is requesting an amount lower than their receive limit.
+images_link:
+    - file: Unified
+      modalImage: Unified-full
+      alt: Screen showing a unified payment request in QR format.
+      caption: QR codes are common ways payment requests are shared.
+    - file: Plaintext
+      modalImage: Plaintext-full
+      alt: Screen showing a payment request being shared in plaintext.
+      caption: Plaintext sharing is great for sharing over the web.
+    - file: Contactless
+      modalImage: Contactless-full
+      alt: Screen showing a payment request being shared contactlessly with NFC.
+      caption: Contactless payments are a quick and convenient way to share a payment request in-person.
+    - file: PaymentLink
+      modalImage: PaymentLink-full
+      alt: Screen showing a payment link being opened by a wallet.
+      caption: Payment links make it simple for senders to import a payment request into their app.
+images_expiration:
+    - file: Settings
+      modalImage: Settings-full
+      alt: Screen showing the users settings.
+      caption: Changing the expiration time should be done in an advanced settings menu option.
+    - file: InvoiceExpiration
+      modalImage: InvoiceExpiration-full
+      alt: Screen showing settings where users can change their invoice expiration times.
+      caption: Let advanced users adjust their own expiration times in an advanced settings section of your app.
 ---
 
 {% include picture.html
@@ -19,7 +101,7 @@ main_classes: -no-top-padding
     retina = "/assets/images/guide/daily-spending-wallet/requesting/request-banner(3200x1200).png"
     mobile = "/assets/images/guide/daily-spending-wallet/requesting/request-banner(400x200).png"
     mobileRetina = "/assets/images/guide/daily-spending-wallet/requesting/request-banner(800x400).png"
-    alt-text = "Image: Text balloon containing a bitcoin."
+    alt-text = "Text balloon containing a bitcoin."
     width = 1600
     height = 600
     layout = "full-width"
@@ -28,9 +110,8 @@ main_classes: -no-top-padding
 
 <!--
 
-Illustration source
-
-- https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=337%3A2159
+Source designs for all screens can be found in this Figma file:
+https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototype?node-id=4152%3A306968&t=1tNtjcOBPcJ5JH1v-1
 
 -->
 
@@ -60,35 +141,7 @@ The wallet described in this reference design is for daily spending. That means 
 
 Avoid showing the user’s balance on the home or requesting page. When requesting payments in person, this could reveal the user’s balance to nearby on-lookers, negatively affecting the user’s privacy. More on this [here](https://d.elor.me/2021/11/hiding-wallet-balances/).
 
-<div class="image-slide-gallery">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/Home.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/Home@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/Home@2x.png"
-   layout = "shadow"
-   caption = "Putting a number pad on the home screen makes the requesting process simple and fast."
-   alt-text = "Screen showing the users home page with a number pad that can be used to initiate a request."
-   width = 250
-   height = 541
-   modalWidth = 250
-   modalHeight = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/HomeBalance.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/HomeBalance@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/HomeBalance@2x.png"
-   layout = "shadow"
-   caption = "❌ Showing a wallet balance on the requesting screen affects the user’s privacy by revealing it to nearby on-lookers."
-   alt-text = "Screen showing home screen with the users balance also shown."
-   width = 250
-   height = 541
-   modalWidth = 250
-   modalHeight = 541
-%}
-
-</div>
+{% include image-gallery.html pages = page.images_entry %}
 
 ## Entering an amount
 
@@ -96,35 +149,7 @@ From the requesting page, the user types in an amount. This wallet allows the us
 
 Users can also skip entering an amount, as there are scenarios where the user may want the sender to decide the amount. Zero-amount requests also limit both parties exposure to price volatility as the bitcoin price in fiat terms could change between requesting and the payment being sent.
 
-<div class="image-slide-gallery">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/HomeEuro.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/HomeEuro@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/HomeEuro@2x.png"
-   layout = "shadow"
-   caption = "Let users request in fiat currency."
-   alt-text = "Screen showing home screen with a fiat euro input selected."
-   width = 250
-   height = 541
-   modalWidth = 250
-   modalHeight = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/HomeBTC.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/HomeBTC@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/HomeBTC@2x.png"
-   layout = "shadow"
-   caption = "Let users request in bitcoin."
-   alt-text = "Screen showing home screen with a bitcoin input selected."
-   width = 250
-   height = 541
-   modalWidth = 250
-   modalHeight = 541
-%}
-
-</div>
+{% include image-gallery.html pages = page.images_amount %}
 
 ## Creating the request
 
@@ -140,61 +165,7 @@ As unified requests [aren't widely supported yet](https://bitcoinqr.dev/), and u
 
 Receiving payments to this wallet requires users to be online. This wallet notifies users that their wallet should remain open until the payment is received. We cover this more on our [receiving]({{ "/guide/daily-spending-wallet/requesting/receiving/#receiving-offline" | relative_url }}) and [lighting services]({{ "/guide/how-it-works/lightning-services/#receive-payments-offline" | relative_url }}) pages.
 
-<div class="image-slide-gallery">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/Unified.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/Unified@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/Unified@2x.png"
-   layout = "shadow"
-   caption = "Unified payment requests combine lightning and on-chain requests, so users don’t have to worry about which to use."
-   alt-text = "Screen showing a unified payment request in QR format."
-   width = 250
-   height = 541
-   modalWidth = 250
-   modalHeight = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/Invoice.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/Invoice@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/Invoice@2x.png"
-   layout = "shadow"
-   caption = "Let users share the lightning invoice independently."
-   alt-text = "Screen showing an invoice that is part of a unified request in QR format."
-   width = 250
-   height = 541
-   modalWidth = 250
-   modalHeight = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/address.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/address@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/address@2x.png"
-   layout = "shadow"
-   caption = "Let users share the on-chain address independently."
-   alt-text = "Screen showing an on-chain address that is part of a unified request in QR format."
-   width = 250
-   height = 541
-   modalWidth = 250
-   modalHeight = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/RequestToggle.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/RequestToggle@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/RequestToggle@2x.png"
-   layout = "shadow"
-   caption = "❌ Avoid users having to choose between requesting with lightning or on-chain."
-   alt-text = "Screen showing a toggle between lightning and on-chain request."
-   width = 250
-   height = 541
-   modalWidth = 250
-   modalHeight = 541
-%}
-
-</div>
+{% include image-gallery.html pages = page.images_request %}
 
 ## Metadata
 
@@ -229,75 +200,8 @@ Any fees the user may incur should be communicated alongside payment requests so
 - A fee may be charged when requesting a zero-amount invoice if the received amount is higher than their [inbound liquidity]({{ "/guide/how-it-works/liquidity/" | relative_url }}), also known as their receive limit.
 - A fee is charged if the user is requesting an amount higher than their receive limit.
 - No fee is charged if the user is requesting an amount lower than their receive limit.
- 
-<div class="image-slide-gallery">
 
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/Fees@2x.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/Fees@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/Fees@2x.png"
-   layout = "shadow"
-   caption = "Let users know if fees will be charged."
-   alt-text = "Screen showing a payment request with setup fees shown."
-   width = 250
-   height = 541
-   modalWidth = 250
-   modalHeight = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/SetupFee.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/SetupFee@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/SetupFee@2x.png"
-   layout = "shadow"
-   caption = "Communicating fees if the user has no channel."
-   alt-text = "Screen showing fees that will be charged to the user if going over their receive limit."
-   width = 250
-   height = 541
-   modalWidth = 250
-   modalHeight = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/NoAmountFee.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/NoAmountFee@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/NoAmountFee@2x.png"
-   layout = "shadow"
-   caption = "Communicating fees if the user has entered no amount."
-   alt-text = "Screen showing no fees being charged for this payment request as its lower than their receive limit."
-   width = 250
-   height = 541
-   modalWidth = 250
-   modalHeight = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/AmountFee.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/AmountFee@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/AmountFee@2x.png"
-   layout = "shadow"
-   caption = "Communicating fees if the user is requesting an amount higher than their receive limit."
-   alt-text = "Screen showing no fees being charged for this payment request as its lower than their receive limit."
-   width = 250
-   height = 541
-   modalWidth = 250
-   modalHeight = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/AmountNoFee.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/AmountNoFee@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/AmountNoFee@2x.png"
-   layout = "shadow"
-   caption = "Communicating fees if the user is requesting an amount lower than their receive limit."
-   alt-text = "Screen showing no fees being charged for this payment request as its lower than their receive limit."
-   width = 250
-   height = 541
-   modalWidth = 250
-   modalHeight = 541
-%}
-
-</div>
+{% include image-gallery.html pages = page.images_fees %}
 
 ## Sharing the request
 
@@ -321,61 +225,7 @@ Requests can be shared wirelessly over short distances using [near-field communi
 
 Payment links use a BIP21 [URI]({{ "/guide/how-it-works/payment-request-formats/#uniform-resource-identifier-uris-schemes" | relative_url }}) `bitcoin:` which makes these readable by other bitcoin applications. These can be included as part of a button or hyperlink.
 
-<div class="image-slide-gallery">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/Unified.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/Unified@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/Unified@2x.png"
-   layout = "shadow"
-   caption = "QR codes are common ways payment requests are shared."
-   alt-text = "Screen showing a unified payment request in QR format."
-   width = 250
-   height = 541
-   modalWidth = 250
-   modalHeight = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/Plaintext.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/Plaintext@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/Plaintext@2x.png"
-   layout = "shadow"
-   caption = "Plaintext sharing is great for sharing over the web."
-   alt-text = "Screen showing a payment request being shared in plaintext."
-   width = 250
-   height = 541
-   modalWidth = 250
-   modalHeight = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/Contactless.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/Contactless@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/Contactless@2x.png"
-   layout = "shadow"
-   caption = "Contactless payments are a quick and convenient way to share a payment request in-person."
-   alt-text = "Screen showing a payment request being shared contactlessly with NFC."
-   width = 250
-   height = 541
-   modalWidth = 250
-   modalHeight = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/PaymentLink.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/PaymentLink@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/PaymentLink@2x.png"
-   layout = "shadow"
-   caption = "Payment links make it simple for senders to import a payment request into their app."
-   alt-text = "Screen showing a payment link being opened by a wallet."
-   width = 250
-   height = 541
-   modalWidth = 250
-   modalHeight = 541
-%}
-
-</div>
+{% include image-gallery.html pages = page.images_link %}
 
 ---
 
@@ -397,35 +247,7 @@ While it is good to allow users to define their own custom expiries, remember th
 
 For some background on situations the user might encounter with different invoice expiries, see this [blog post](https://d.elor.me/2022/01/lightning-invoice-expiration-ux-considerations/) from designer Stephen DeLorme.
 
-<div class="image-slide-gallery">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/Settings.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/Settings@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/Settings@2x.png"
-   layout = "shadow"
-   caption = "Changing the expiration time should be done in an advanced settings menu option."
-   alt-text = "Screen showing the users settings."
-   width = 250
-   height = 541
-   modalWidth = 250
-   modalHeight = 541
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/requesting/InvoiceExpiration.png"
-   retina = "/assets/images/guide/daily-spending-wallet/requesting/InvoiceExpiration@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/requesting/InvoiceExpiration@2x.png"
-   layout = "shadow"
-   caption = "Let advanced users adjust their own expiration times in an advanced settings section of your app."
-   alt-text = "Screen showing settings where users can change their invoice expiration times."
-   width = 250
-   height = 541
-   modalWidth = 250
-   modalHeight = 541
-%}
-
-</div>
+{% include image-gallery.html pages = page.images_expiration %}
 
 ---
 
