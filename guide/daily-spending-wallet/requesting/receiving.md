@@ -6,14 +6,40 @@ nav_order: 1
 parent: Requesting bitcoin
 grand_parent: Daily spending wallet
 permalink: /guide/daily-spending-wallet/requesting/receiving/
-image: /assets/images/guide/daily-spending-wallet/requesting/request-banner-preview(1200x630).jpg
-image_base: /assets/images/guide/daily-spending-wallet/receiving/
 redirect_from:
  - /guide/payments/receive/
  - /guide/daily-spending-wallet/funding/
  - /guide/onboarding/funding-a-wallet/
  - /guide/daily-spending-wallet/receiving/
 main_classes: -no-top-padding
+image: /assets/images/guide/daily-spending-wallet/requesting/request-banner-preview(1200x630).jpg
+image_base: /assets/images/guide/daily-spending-wallet/receiving/
+images_fail:
+    - file: RefundOnChain
+      modalImage: RefundOnChain-full
+      alt: Screen showing a warning error notification prompting the user to take action on their failed submarine swap.
+      caption: If a swap fails, let the user know they need to take action with a persistent notification.
+    - file: RefundActivity
+      modalImage: RefundActivity-full
+      alt: Screen showing the activity menu with an entry for the user to deal with their failed swap.
+      caption: The activity menu is place where you can indicate to a user that their swap failed.
+    - file: SwapFail
+      modalImage: SwapFail-full
+      alt: Screen showing an option for the user to retry the swap.
+      caption: Make it easy for users to retry the swap or have a channel opened locally if the swap fails again.
+    - file: ClaimRefund
+      modalImage: ClaimRefund-full
+      alt: Screen showing a form to send to an external on-chain address.
+      caption: Users should have an option to withdraw to an external address if they wish.
+images_payment:
+    - file: received
+      modalImage: received-full
+      alt: Screen showing a payment has been received.
+      caption: Notify the user once their incoming payment is received.
+    - file: ReceivedPaymentActivity
+      modalImage: ReceivedPaymentActivity-full
+      alt: Screen showing an activity entry of a received payment with details on extra fees incurred for opening a channel.
+      caption: Make it clear to the user if extra fees were incurred, such as from a new channel open.
 ---
 
 {% include picture.html
@@ -29,9 +55,8 @@ main_classes: -no-top-padding
 
 <!--
 
-Illustration source
-
-- https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/Design-Guide-Bosch?node-id=201%3A687
+Source designs for all screens can be found in this Figma file:
+https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototype?node-id=4152%3A306968&t=boEAgdyqfi39SBoF-1
 
 -->
 
@@ -110,61 +135,7 @@ When this occurs, the funds will show up as "pending" in the user's activity, an
  
 If the swap fails again, the wallet can open a new channel locally without using the LWS. The pending message can be the same, as the user doesn't need to know the complexities of what is happening behind the scenes.
 
-<div class="image-slide-gallery">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/receiving/RefundOnChain.png"
-   retina = "/assets/images/guide/daily-spending-wallet/receiving/RefundOnChain@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/receiving/RefundOnChain@2x.png"
-   layout = "shadow"
-   caption = "If a swap fails, let the user know they need to take action with a persistent notification."
-   alt-text = "Screen showing a warning error notification prompting the user to take action on their failed submarine swap."
-   width = 250
-   height = 542
-   modalWidth = 250
-   modalHeight = 542
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/receiving/RefundActivity.png"
-   retina = "/assets/images/guide/daily-spending-wallet/receiving/RefundActivity@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/receiving/RefundActivity@2x.png"
-   layout = "shadow"
-   caption = "The activity menu is place where you can indicate to a user that their swap failed."
-   alt-text = "Screen showing the activity menu with an entry for the user to deal with their failed swap."
-   width = 250
-   height = 542
-   modalWidth = 250
-   modalHeight = 542
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/receiving/SwapFail.png"
-   retina = "/assets/images/guide/daily-spending-wallet/receiving/SwapFail@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/receiving/SwapFail@2x.png"
-   layout = "shadow"
-   caption = "Make it easy for users to retry the swap or have a channel opened locally if the swap fails again."
-   alt-text = "Screen showing an option for the user to retry the swap."
-   width = 250
-   height = 542
-   modalWidth = 250
-   modalHeight = 542
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/receiving/ClaimRefund.png"
-   retina = "/assets/images/guide/daily-spending-wallet/receiving/ClaimRefund@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/receiving/ClaimRefund@2x.png"
-   layout = "shadow"
-   caption = "Users should have an option to withdraw to an external address if they wish."
-   alt-text = "Screen showing a form to send to an external on-chain address."
-   width = 250
-   height = 542
-   modalWidth = 250
-   modalHeight = 542
-%}
-
-</div>
+{% include image-gallery.html pages = page.images_fail %}
 
 ## Received payment
 
@@ -172,35 +143,7 @@ When this wallet receives a payment, it notifies the user. If any fees are paid,
 
 More information on presenting a payment history on our [activity]({{ '/guide/daily-spending-wallet/activity/'| relative_url }}) page.
 
-<div class="image-slide-gallery">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/receiving/received.png"
-   retina = "/assets/images/guide/daily-spending-wallet/receiving/received@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/receiving/received@2x.png"
-   layout = "shadow"
-   caption = "Notify the user once their incoming payment is received."
-   alt-text = "Screen showing a payment has been received."
-   width = 250
-   height = 542
-   modalWidth = 250
-   modalHeight = 542
-%}
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/receiving/ReceivedPaymentActivity.png"
-   retina = "/assets/images/guide/daily-spending-wallet/receiving/ReceivedPaymentActivity@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/receiving/ReceivedPaymentActivity@2x.png"
-   layout = "shadow"
-   caption = "Make it clear to the user if extra fees were incurred, such as from a new channel open."
-   alt-text = "Screen showing an activity entry of a received payment with details on extra fees incurred for opening a channel."
-   width = 250
-   height = 542
-   modalWidth = 250
-   modalHeight = 542
-%}
-
-</div>
+{% include image-gallery.html pages = page.images_payment %}
 
 ---
 
