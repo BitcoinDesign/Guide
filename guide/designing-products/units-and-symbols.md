@@ -226,6 +226,25 @@ Complex use cases often require users to interact with addresses, public keys, a
 
 Note that uppercase letter "O", uppercase letter "I", lowercase letter "l", and the number "0" are not valid characters in addresses, in order to prevent mistakes. As users may not be aware of this, using slashed zeros may still be a helpful design choice.
 
+### Pluralization
+
+{% include picture.html
+   image = "/assets/images/guide/designing-products/units-and-symbols/formatting-pluralization.png"
+   retina = "/assets/images/guide/designing-products/units-and-symbols/formatting-pluralization@2x.png"
+   mobile = "/assets/images/guide/designing-products/units-and-symbols/formatting-pluralization-mobile.png"
+   mobileRetina = "/assets/images/guide/designing-products/units-and-symbols/formatting-pluralization-mobile@2x.png"
+   alt-text = "Examples of different pluralization schemes for bitcoin and satoshis"
+   width = 800
+   height = 278
+   caption = "Examples of different pluralization schemes for bitcoin and satoshis"
+%}
+
+Consider the best way to pluralize bitcoin units in your product. Treatment of plurals can differ between languages and cultures. When choosing a pluralization scheme, consider what your users are likely to be accustomed to.
+
+Typically, the word "bitcoin" can mean a singular or a plural. In the early days of bitcoin, it was common to see people use the word "bitcoins" as a plural. This has become a less commonly used word, though it's still grammatically correct. However, it's far more common to see the satoshi (sat) expressed as "satoshis" (sats) when plural.
+
+Whatever pluralization scheme you choose, it's good to be consistent with this choice throughout your product.
+
 ---
 
 On to [interoperability]({{ '/guide/designing-products/interoperability/' | relative_url }}) which is essential for smooth interaction and migration between bitcoin products.
