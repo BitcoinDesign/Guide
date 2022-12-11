@@ -21,7 +21,8 @@ Source for the header image:
 https://www.dropbox.com/sh/zqnc7dbg8j5as8d/AAACidCqqJ_R11_jl0-HcA4ta?dl=0
 
 Source for images used on the page:
-https://www.figma.com/file/ceVqp2xyQttnGc2h0AbZ8g/Bitcoin-Visual-Language?node-id=191%3A233&t=zLzHdkwveWgvIbRs-1
+- https://www.figma.com/file/ceVqp2xyQttnGc2h0AbZ8g/Bitcoin-Visual-Language?node-id=191%3A233&t=zLzHdkwveWgvIbRs-1
+- https://www.figma.com/file/3RmrEH8560q4IgzVsvDm65/Bitcoin-Visual-Language-SBD?node-id=0%3A1&t=y51xXOeaaL1Y2JWB-1
 
 -->
 
