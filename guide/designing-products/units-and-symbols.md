@@ -239,7 +239,7 @@ Note that uppercase letter "O", uppercase letter "I", lowercase letter "l", and 
    caption = "Examples of different pluralization schemes for bitcoin and satoshis"
 %}
 
-Consider the best way to pluralize bitcoin units in your product. Treatment of plurals can differ between languages and cultures. When choosing a pluralization scheme, consider what your users are likely to be accustomed to.
+Consider the best way to pluralize bitcoin units in your product. Treatment of plurals can differ between languages and cultures. When choosing a pluralization scheme, consider what your users are likely to be accustomed to. You can take the guess work out of this by using a pluralization ruleset, such as [`Intl.PluralRules`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules#examples).
 
 Typically, the word "bitcoin" can mean a singular or a plural. In the early days of bitcoin, it was common to see people use the word "bitcoins" as a plural. This has become a less commonly used word, though it's still grammatically correct. However, it's far more common to see the satoshi (sat) expressed as "satoshis" (sats) when plural.
 
