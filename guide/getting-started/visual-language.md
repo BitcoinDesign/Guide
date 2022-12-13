@@ -17,10 +17,12 @@ A brief history of bitcoin "branding" and the visual culture around bitcoin.
 
 A good addition would be a summary of the basic brand elements (color, symbol...).
 
-Illustration sources
+Source for the header image:
+https://www.dropbox.com/sh/zqnc7dbg8j5as8d/AAACidCqqJ_R11_jl0-HcA4ta?dl=0
 
-- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=887%3A151
-- https://www.dropbox.com/sh/zqnc7dbg8j5as8d/AAACidCqqJ_R11_jl0-HcA4ta?dl=0
+Source for images used on the page:
+- https://www.figma.com/file/ceVqp2xyQttnGc2h0AbZ8g/Bitcoin-Visual-Language?node-id=191%3A233&t=zLzHdkwveWgvIbRs-1
+- https://www.figma.com/file/3RmrEH8560q4IgzVsvDm65/Bitcoin-Visual-Language-SBD?node-id=0%3A1&t=y51xXOeaaL1Y2JWB-1
 
 -->
 
@@ -146,12 +148,12 @@ There is currently not an agreed-upon symbol to represent the satoshi (or if the
 <div class="image-gallery" markdown="1">
 
 {% include image.html
-image = "/assets/images/guide/getting-started/visual-language/satoshi-symbols.png"
-retina = "/assets/images/guide/getting-started/visual-language/satoshi-symbols@2x.png"
-alt-text = "Sequence of images showing proposals for satoshi symbols"
-caption = "References from top left to bottom right, Keith, <a href='http://satbase.org/' target='_blank'>2</a>, <a href='https://www.reddit.com/r/Bitcoin/comments/ku9nl8/design_proposal_for_the_satoshi_symbol/' target='_blank'>3</a>, <a href='https://twitter.com/PLK5280/status/1326347333219606528' target='_blank'>4</a>, <a href='https://www.reddit.com/r/Bitcoin/comments/ku9nl8/design_proposal_for_the_satoshi_symbol/' target='_blank'>5</a>, Jeremiah, Alexa, <a href='https://satsymbol.com/' target='_blank'>8</a>, <a href='https://twitter.com/BitkoYinowsky' target='_blank'>9</a>, <a href='https://twitter.com/sbtlaln/status/1361368643238567951' target='_blank'>10</a>, <a href='https://www.reddit.com/r/Bitcoin/comments/k0e98n/my_proposal_for_the_satish_symbol_still_looks/' target='_blank'>11</a>, and <a href='https://www.reddit.com/r/Bitcoin/comments/ku9nl8/design_proposal_for_the_satoshi_symbol/' target='_blank'>12</a>."
-width = 800
-height = 504
+   image = "/assets/images/guide/getting-started/visual-language/satoshi-symbols.png"
+   retina = "/assets/images/guide/getting-started/visual-language/satoshi-symbols@2x.png"
+   alt-text = "Sequence of images showing proposals for satoshi symbols"
+   caption = "References from top left to bottom right, unknown author, <a href='http://satbase.org/' target='_blank'>2</a>, <a href='https://www.reddit.com/r/Bitcoin/comments/ku9nl8/design_proposal_for_the_satoshi_symbol/' target='_blank'>3</a>, <a href='https://twitter.com/PLK5280/status/1326347333219606528' target='_blank'>4</a>, <a href='https://www.reddit.com/r/Bitcoin/comments/ku9nl8/design_proposal_for_the_satoshi_symbol/' target='_blank'>5</a>, Jeremiah, Alexa, <a href='https://satsymbol.com/' target='_blank'>8</a>, <a href='https://twitter.com/BitkoYinowsky' target='_blank'>9</a>, <a href='https://twitter.com/sbtlaln/status/1361368643238567951' target='_blank'>10</a>, <a href='https://www.reddit.com/r/Bitcoin/comments/k0e98n/my_proposal_for_the_satish_symbol_still_looks/' target='_blank'>11</a>, and <a href='https://www.reddit.com/r/Bitcoin/comments/ku9nl8/design_proposal_for_the_satoshi_symbol/' target='_blank'>12</a>."
+   width = 800
+   height = 570
 %}
 
 </div>
@@ -234,12 +236,12 @@ Since the first lightning implementation in 2018, a distinct visual identity has
 <div class="image-gallery" markdown="1">
 
 {% include image.html
-image = "/assets/images/guide/getting-started/visual-language/bitcoin-lightning-branding.jpg"
-retina = "/assets/images/guide/getting-started/visual-language/bitcoin-lightning-branding@2x.jpg"
-alt-text = "Sequence of images showing examples of logos and brands for lightning software and services"
-caption = "References from top top bottom, left to right: <a href='https://www.walletofsatoshi.com/' target='_blank'>1</a>, <a href='https://shop.fulmo.org/raspiblitz/' target='_blank'>2</a>, <a href='https://www.lightningnetworkstores.com/' target='_blank'>3</a>, <a href='https://zeusln.app/' target='_blank'>4</a>, and <a href='https://lightning.store/product/bitcoin-rtl-t-shirt/' target='_blank'>5</a>."
-width = 800
-height = 584
+   image = "/assets/images/guide/getting-started/visual-language/bitcoin-lightning-branding.jpg"
+   retina = "/assets/images/guide/getting-started/visual-language/bitcoin-lightning-branding@2x.jpg"
+   alt-text = "Sequence of images showing examples of logos and brands for lightning software and services"
+   caption = "References from top top bottom, left to right: <a href='https://www.walletofsatoshi.com/' target='_blank'>1</a>, <a href='https://shop.fulmo.org/raspiblitz/' target='_blank'>2</a>, <a href='https://www.lightningnetworkstores.com/' target='_blank'>3</a>, <a href='https://zeusln.app/' target='_blank'>4</a>, and <a href='https://lightning.store/product/bitcoin-rtl-t-shirt/' target='_blank'>5</a>."
+   width = 800
+   height = 584
 %}
 
 </div>
