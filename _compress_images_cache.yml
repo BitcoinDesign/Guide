@@ -193,11 +193,6 @@ assets/images/guide/daily-spending-wallet/activity/tips.png: tips.png
 assets/images/guide/daily-spending-wallet/activity/tips@2x.png: tips@2x.png
 assets/images/guide/daily-spending-wallet/activity/to-field.png: to-field.png
 assets/images/guide/daily-spending-wallet/activity/to-field@2x.png: to-field@2x.png
-assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/backing-up-a-wallet-cloud-mobile.png: backing-up-a-wallet-cloud-mobile.png
-assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/backing-up-a-wallet-cloud-mobile@2x.png: backing-up-a-wallet-cloud-mobile@2x.png
-assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/backing-up-a-wallet-cloud-preview.png: backing-up-a-wallet-cloud-preview.png
-assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/backing-up-a-wallet-cloud.png: backing-up-a-wallet-cloud.png
-assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/backing-up-a-wallet-cloud@2x.png: backing-up-a-wallet-cloud@2x.png
 assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-confirmation.png: cloud-backup-confirmation.png
 assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-confirmation@2x.png: cloud-backup-confirmation@2x.png
 assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-intro.png: cloud-backup-intro.png
@@ -2108,3 +2103,8 @@ assets/images/guide/designing-products/personal-finance/emergency-wallet-setup-m
 assets/images/guide/designing-products/personal-finance/emergency-wallet-setup-mobile@2x.jpg: emergency-wallet-setup-mobile@2x.jpg
 assets/images/guide/designing-products/personal-finance/emergency-wallet-setup.jpg: emergency-wallet-setup.jpg
 assets/images/guide/designing-products/personal-finance/emergency-wallet-setup@2x.jpg: emergency-wallet-setup@2x.jpg
+assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/backing-up-a-wallet-cloud-mobile@2x.jpg: backing-up-a-wallet-cloud-mobile@2x.jpg
+assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/backing-up-a-wallet-cloud.jpg: backing-up-a-wallet-cloud.jpg
+assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/backing-up-a-wallet-cloud-preview.jpg: backing-up-a-wallet-cloud-preview.jpg
+assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/backing-up-a-wallet-cloud@2x.jpg: backing-up-a-wallet-cloud@2x.jpg
+assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/backing-up-a-wallet-cloud-mobile.jpg: backing-up-a-wallet-cloud-mobile.jpg
