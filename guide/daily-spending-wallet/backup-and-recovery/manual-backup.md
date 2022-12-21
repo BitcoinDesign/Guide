@@ -199,7 +199,7 @@ Note that this wallet explicitly instructs users to number each word (e.g. 1. sa
    caption = "The print template, pre-populated with non-sensitive information"
    width = 400
    height = 486
-   layout = "float-left-desktop"
+   layout = "float-right-desktop"
 %}
 
 This wallet also offers the user a printable template they can use to write down their recovery phrase. This can help instill a sense of trust, guidance, and organization (especially if they have multiple wallets). It may also encourage them to treat this designated paper with importance rather than quickly scribbling it down on a random scrap. Here is an example template.
