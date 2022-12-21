@@ -12,7 +12,11 @@ image: https://bitcoin.design/assets/images/guide/daily-spending-wallet/daily-sp
 
 <!--
 
-Illustration source: https://www.figma.com/file/1Lffm4lwEZQ3b3xlajJWYG/Daily-spending-wallet-prototype?node-id=70%3A723
+The design source for images, UI mock-ups and the prototype can be found on Figma community here:
+https://www.figma.com/community/file/1186631213810803207
+
+And here is the direct link to the design file:
+https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototype
 
 -->
 
@@ -133,10 +137,10 @@ Speed of use is important for this wallet. As such, this wallet maintains a sing
 
 ### See it in action
 
-Here’s a prototype of the daily spending wallet, which will outline a few of the paths a user could take through this app. The prototype is still under construction, but it will be comprised of the screens found in the following chapters. You can track the progress of the prototype [here](https://github.com/BitcoinDesign/Guide/issues/800).
+Below is a prototype of the daily spending wallet, which outlines a few of the paths a user could take through this app. Click through to get a sense of the actual end-user experience.
 
 {% include prototype.html
-   link = "https://www.figma.com/file/1Lffm4lwEZQ3b3xlajJWYG/Daily-spending-wallet-prototype?node-id=10%3A2"
+   link = "https://www.figma.com/proto/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototype?page-id=4167%3A92515&node-id=4167%3A92516&viewport=253%2C104%2C0.08&scaling=min-zoom&starting-point-node-id=4167%3A92516&show-proto-sidebar=1"
    image = "/assets/images/guide/daily-spending-wallet/daily-spending-prototype.jpg"
    retina = "/assets/images/guide/daily-spending-wallet/daily-spending-prototype@2x.jpg"
    mobile = "/assets/images/guide/daily-spending-wallet/daily-spending-prototype-mobile.jpg"
@@ -145,6 +149,8 @@ Here’s a prototype of the daily spending wallet, which will outline a few of t
    width = 800
    height = 500
 %}
+
+You can find the prototype source files on [Figma community](https://www.figma.com/community/file/1186631213810803207), and a direct link to the design file [here](https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototype?node-id=4167%3A92515).
 
 ### Alternate Options
 The chapters below will walk you through the different sections of this example product and help you understand the design considerations for why this product is built this way.

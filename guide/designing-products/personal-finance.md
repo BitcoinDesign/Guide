@@ -136,7 +136,7 @@ Bitcoin is different: since the sender must initiate all transactions, automated
 
 The higher-value of these payments necessitates a greater level of security than the daily spending wallet (which is a ["hot wallet"]({{'/guide/glossary/wallet/#hot--cold-wallet' | relative_url}}), meaning that the private key is on a device connected to the internet).
 
-At the moment, a good solution is a desktop application which relies on a hardware device to sign transactions. This reduces the risk of keeping funds on a mobile wallet configuration but adds acceptable friction for transactions that occur less frequently. See the [savings wallet reference design]({{ '/guide/savings-wallet/' | relative_url }}) for an exploration of this user experience.
+At the moment, a good solution is a desktop application which relies on a hardware device to sign transactions. This reduces the risk of keeping funds on a mobile wallet configuration but adds acceptable friction for transactions that occur less frequently.
 
 A disadvantage to this solution is that it does not use the lightning network, meaning that the user will need to wait longer for their [transaction to confirm]({{'/guide/how-it-works/transactions/#7-confirmations' | relative_url}}) as well as pay an on-chain transaction fee. However, this will likely not always be the case: in the future, projects such as [Lightning Signer](https://gitlab.com/lightning-signer/docs) may solve this issue by allowing the private keys to be stored separately from the lightning node on hardware that is security-hardened.
 
@@ -160,16 +160,16 @@ Financial experts recommend that you keep 3–6 months of salary available for w
 In traditional finance, this money might get parked in a high-interest savings account that allows for quick, low-risk withdrawal but still provides some long-term return.
 
 {% include picture.html
-   image = "/assets/images/guide/designing-products/personal-finance/savings-wallet-setup.jpg"
-   retina = "/assets/images/guide/designing-products/personal-finance/savings-wallet-setup@2x.jpg"
-   mobile = "/assets/images/guide/designing-products/personal-finance/savings-wallet-setup-mobile.jpg"
-   mobileRetina = "/assets/images/guide/designing-products/personal-finance/savings-wallet-setup-mobile@2x.jpg"
-   alt-text = "Three hardware wallets and a laptop"
+   image = "/assets/images/guide/designing-products/personal-finance/emergency-wallet-setup.jpg"
+   retina = "/assets/images/guide/designing-products/personal-finance/emergency-wallet-setup@2x.jpg"
+   mobile = "/assets/images/guide/designing-products/personal-finance/emergency-wallet-setup-mobile.jpg"
+   mobileRetina = "/assets/images/guide/designing-products/personal-finance/emergency-wallet-setup-mobile@2x.jpg"
+   alt-text = "A desktop wallet and 2 hardware signers"
    width = 1600
    height = 800
 %}
 
-A bitcoiner may want to set up a cold storage multi-signature wallet. In this type of setup, multiple applications or hardware devices are required to make transactions. Even if one device gets stolen or locked, the rightful owner still has access to all their funds. Since transactions are infrequent, security is prioritized over convenience.
+A bitcoiner may want to set up a [multi-key wallet]({{ '/guide/savings-wallet/' | relative_url }}). In this type of setup, multiple applications or hardware devices are required to make transactions. Even if one device gets stolen or locked, the rightful owner still has access to all their funds. Since transactions are infrequent, security is prioritized over convenience.
 
 ## Sinking funds
 
@@ -204,24 +204,23 @@ Sinking funds do not necessarily require a dedicated wallet. The amount secured 
    layout = "float-left"
 %}
 
-HODLing is more than a meme. Many bitcoiners create highly secure setups to store their savings over long periods of time. Ideally, these wallets are very safe but not very convenient.
-
-For example, [Glacier Protocol](https://glacierprotocol.org){:target="_blank"} is highly secure, but requires about $600 and eight hours to set up. While it comes with a step-by-step guide, some areas are quite complex. It is an extreme example, but it illustrates how complex great security can be.
+[HODLing](https://knowyourmeme.com/memes/hodl) is more than a meme. Many bitcoiners create highly secure setups to store their savings over long periods of time. These wallets optimize for safety from theft and recoverability in case of loss, and may in return sacrifice some convenience.
 
 </div>
 
+See the [savings wallet reference design]({{ '/guide/savings-wallet/' | relative_url }}) for an exploration of this user experience. The wallet is based on 3 keys, with 2 of them required to transact. 2 keys are in control of the user, and the third one is held by a custodian to help with critical scenarios like key rotation in case the user loses a device.
+
 {% include picture.html
-   image = "/assets/images/guide/designing-products/personal-finance/glacier-protocol-wallet-setup.jpg"
-   retina = "/assets/images/guide/designing-products/personal-finance/glacier-protocol-wallet-setup@2x.jpg"
-   mobile = "/assets/images/guide/designing-products/personal-finance/glacier-protocol-wallet-setup-mobile.jpg"
-   mobileRetina = "/assets/images/guide/designing-products/personal-finance/glacier-protocol-wallet-setup-mobile@2x.jpg"
-   alt-text = "6 laptops, 1 smartphone and 6 USB drives"
-   caption="The Glacier prototcol requires a complex hardware setup that involves 6 different computers, 6 USB drives, a smartphone, printer and various other equipment."
+   image = "/assets/images/guide/designing-products/personal-finance/savings-wallet-setup.jpg"
+   retina = "/assets/images/guide/designing-products/personal-finance/savings-wallet-setup@2x.jpg"
+   mobile = "/assets/images/guide/designing-products/personal-finance/savings-wallet-setup-mobile.jpg"
+   mobileRetina = "/assets/images/guide/designing-products/personal-finance/savings-wallet-setup-mobile@2x.jpg"
+   alt-text = "Smartphone key, hardware signer, and a custodied key"
    width = 1600
    height = 800
 %}
 
-Of course, many prefer that banks and other custodial financial service providers secure and invest funds for them. Savings accounts and related products may also incentivize customers with low-interest rates that may or may not be high enough to keep up with inflation.
+For very high amounts, technically savvy users may also choose more complex setups. An example of the extreme end is [Glacier Protocol](https://glacierprotocol.org/). Other users may prefer to keep their funds with dedicated bitcoin custody service providers or even traditional financial institutions offering similar services. Certain types of savings accounts and related products may even incentivize customers with low interest rates. Users should always consider the risk involved in such trust relationships.
 
 ## Investing
 
