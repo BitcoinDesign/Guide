@@ -188,11 +188,27 @@ Note that this wallet explicitly instructs users to number each word (e.g. 1. sa
 
 ### Print template
 
+<div class="center" markdown="1">
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-print-detail.png"
+   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-print-detail@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-print-detail-full.png"
+   modalImageMobile = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-print-detail@2x.png"
+   alt-text = "Print backup template"
+   caption = "The print template, pre-populated with non-sensitive information"
+   width = 400
+   height = 486
+   layout = "float-right-desktop"
+%}
+
 This wallet also offers the user a printable template they can use to write down their recovery phrase. This can help instill a sense of trust, guidance, and organization (especially if they have multiple wallets). It may also encourage them to treat this designated paper with importance rather than quickly scribbling it down on a random scrap. Here is an example template.
+
+[Printable Template Figma File](https://www.figma.com/file/ljHoASy3tHYy0M4qt4oTPG/Daily-spending-wallet---Printable-template?node-id=0%3A1&t=W7b46LDrd2AbgeMS-1){: .button }
 
 Some non-sensitive data (such as the name of your wallet or the derivation path) could be included pre-filled in the template. An output script descriptor could be included as a QR code to ensure the wallet software knows how to restore the wallet properly. However, the user should always be required to write in sensitive data such as the recovery phrase by hand.
 
-[Printable Template Figma File](https://www.figma.com/community/file/1110806582648546839){: .button }
+</div>
 
 {% include image-gallery.html pages = page.images_template %}
 
