@@ -63,6 +63,9 @@ daily spending wallet reference design.
 Source designs for all screens can be found in this Figma file:
 https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototype?node-id=4152%3A306968&t=boEAgdyqfi39SBoF-1
 
+Source file for header image:
+https://www.figma.com/file/NjtMNQiJtoVkedEHgwD0A9/BTC-DSN-Guide-Header-Images?node-id=0%3A1&t=JzVvsbPdFpjhNTGF-1
+
 -->
 
 {% include picture.html
