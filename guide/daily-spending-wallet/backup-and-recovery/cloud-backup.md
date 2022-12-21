@@ -9,7 +9,7 @@ permalink: /guide/daily-spending-wallet/backup-and-recovery/cloud-backup/
 redirect_from:
  - /guide/onboarding/backing-up-a-wallet/cloud-backup/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/backing-up-a-wallet-cloud-preview.png
+image: https://bitcoin.design/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/backing-up-a-wallet-cloud-preview.jpg
 image_base: /assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/
 images_flow:
     - file: cloud-backup-prompt
@@ -57,10 +57,10 @@ https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototyp
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/backing-up-a-wallet-cloud.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/backing-up-a-wallet-cloud@2x.png"
-   mobile = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/backing-up-a-wallet-cloud-mobile.png"
-   mobileRetina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/backing-up-a-wallet-cloud-mobile@2x.png"
+   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/backing-up-a-wallet-cloud.jpg"
+   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/backing-up-a-wallet-cloud@2x.jpg"
+   mobile = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/backing-up-a-wallet-cloud-mobile.jpg"
+   mobileRetina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/backing-up-a-wallet-cloud-mobile@2x.jpg"
    alt-text = "Backing up a recovery phrase chapter header image"
    width = 1600
    height = 600
