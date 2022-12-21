@@ -233,11 +233,6 @@ assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/copy
 assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/copy-recovery-phrase-single-word@2x.png: copy-recovery-phrase-single-word@2x.png
 assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/import-options.png: import-options.png
 assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/import-options@2x.png: import-options@2x.png
-assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restoring-a-wallet-mobile.png: restoring-a-wallet-mobile.png
-assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restoring-a-wallet-mobile@2x.png: restoring-a-wallet-mobile@2x.png
-assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restoring-a-wallet-preview.png: restoring-a-wallet-preview.png
-assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restoring-a-wallet.png: restoring-a-wallet.png
-assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restoring-a-wallet@2x.png: restoring-a-wallet@2x.png
 assets/images/guide/daily-spending-wallet/backup-and-recovery/wallet-backup-mobile.png: wallet-backup-mobile.png
 assets/images/guide/daily-spending-wallet/backup-and-recovery/wallet-backup-mobile@2x.png: wallet-backup-mobile@2x.png
 assets/images/guide/daily-spending-wallet/backup-and-recovery/wallet-backup.png: wallet-backup.png
@@ -2111,3 +2106,8 @@ assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-ba
 assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-print-detail@2x.png: manual-backup-print-detail@2x.png
 assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-print-detail.png: manual-backup-print-detail.png
 assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-print-detail-full.png: manual-backup-print-detail-full.png
+assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restoring-a-wallet-mobile.jpg: restoring-a-wallet-mobile.jpg
+assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restoring-a-wallet@2x.jpg: restoring-a-wallet@2x.jpg
+assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restoring-a-wallet.jpg: restoring-a-wallet.jpg
+assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restoring-a-wallet-mobile@2x.jpg: restoring-a-wallet-mobile@2x.jpg
+assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restoring-a-wallet-preview.jpg: restoring-a-wallet-preview.jpg

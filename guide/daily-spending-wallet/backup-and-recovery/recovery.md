@@ -9,7 +9,7 @@ permalink: /guide/daily-spending-wallet/backup-and-recovery/recovery/
 redirect_from:
  - /guide/onboarding/restoring-a-wallet/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restoring-a-wallet-preview.png
+image: https://bitcoin.design/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restoring-a-wallet-preview.jpg
 image_base: /assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/
 images_cloud_recovery:
     - file: restore-menu
@@ -136,10 +136,10 @@ https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototyp
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restoring-a-wallet.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restoring-a-wallet@2x.png"
-   mobile = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restoring-a-wallet-mobile.png"
-   mobileRetina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restoring-a-wallet-mobile@2x.png"
+   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restoring-a-wallet.jpg"
+   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restoring-a-wallet@2x.jpg"
+   mobile = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restoring-a-wallet-mobile.jpg"
+   mobileRetina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restoring-a-wallet-mobile@2x.jpg"
    alt-text = "Restoring a wallet chapter header image"
    width = 1600
    height = 600
