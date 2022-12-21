@@ -206,7 +206,7 @@ This wallet also offers the user a printable template they can use to write down
 
 [Printable Template Figma File](https://www.figma.com/file/ljHoASy3tHYy0M4qt4oTPG/Daily-spending-wallet---Printable-template?node-id=0%3A1&t=W7b46LDrd2AbgeMS-1){: .button }
 
-Some non-sensitive data (such as the name of your wallet or the derivation path) could be included pre-filled in the template. An output script descriptor could be included as a QR code to ensure the wallet software knows how to restore the wallet properly. However, the user should always be required to write in sensitive data such as the recovery phrase by hand.
+Some non-sensitive data (such as the name of your wallet or the derivation path) could be included pre-filled in the template. An [output script descriptor]({{'/guide/glossary/#output-script-descriptor' | relative_url}}) could be included as a QR code to ensure the wallet software knows how to restore the wallet properly. However, the user should always be required to write in sensitive data such as the recovery phrase by hand.
 
 </div>
 
