@@ -57,7 +57,7 @@ So if you’re looking for the next big thing in design, you found it.
 
 ## Design for your needs
 
-Many design projects start by identifying an unmet need, and then design something that meets it. Unlike traditional finance, the barriers to entry into bitcoin are shallow. So if you feel like your needs aren’t being met by your bank or service provider, here’s your chance to shape something better.
+Many design projects start by identifying an unmet need, and then designing something that meets it. Unlike traditional finance, the barriers to entry into bitcoin are shallow. So if you feel like your needs aren’t being met by your bank or service provider, here’s your chance to shape something better.
 
 ## Work in public
 
@@ -69,7 +69,7 @@ Central authorities tightly control Government-issued currencies. This means tha
 
 ## Join a global community
 
-Design and build experiences with friends and strangers. [Participate]({{ '/contribute/' | relative_url }}) in or even help lead one of the fastest growing design ecosystems in the world.
+Design and build experiences with friends and strangers. [Participate]({{ '/contribute/' | relative_url }}) in or even help lead one of the fastest-growing design ecosystems in the world.
 
 ---
 
