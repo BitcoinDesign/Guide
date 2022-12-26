@@ -170,6 +170,18 @@ collaborations:
     links:
       - name: Site
         link: https://bolt.fun/
+
+  - name: Stratum V2
+    description: Stratum V2 is the next generation protocol for pooled mining.
+    image:
+      url: /assets/images/contribute/stratum-v2.png
+      width: 75
+      height: 75
+    links:
+      - name: Site
+        link: https://stratumprotocol.org/
+      - name: Twitter
+        link: https://twitter.com/StratumV2
 ---
 
 <!--
