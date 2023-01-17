@@ -24,7 +24,7 @@ image: https://bitcoin.design/assets/images/newsletter/newsletter-preview.jpg
 
 Don't have the time to keep up with all the activity of bitcoin designers in and around Slack? Quickly catch up with [the newsletter](https://bitcoindesign.substack.com). Every 3 weeks, you get a concise summary of recent activity in your inbox.
 
-<iframe src="https://bitcoindesign.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white; width: 100%;" frameborder="0" scrolling="no"></iframe>
+[View the newsletter](https://bitcoindesign.substack.com){: .button }
 
 ## Previous issue
 The newsletter has been published since [October 2020](https://bitcoindesign.substack.com/p/genesis-update-0). Here are a few special issues:
