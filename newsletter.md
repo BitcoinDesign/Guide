@@ -26,7 +26,7 @@ Don't have the time to keep up with all the activity of bitcoin designers in and
 
 [View the newsletter](https://bitcoindesign.substack.com){: .button }
 
-## Previous issue
+## Previous issues
 The newsletter has been published since [October 2020](https://bitcoindesign.substack.com/p/genesis-update-0). Here are a few special issues:
 - [#38: The first issue in 2023](https://bitcoindesign.substack.com/p/bitcoin-design-newsletter-38)
 - [#34.5: The Bitcoin Designathon 2022 review](https://bitcoindesign.substack.com/p/the-bitcoin-designathon-2022)
