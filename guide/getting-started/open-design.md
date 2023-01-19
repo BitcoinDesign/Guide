@@ -131,7 +131,7 @@ Open-source software development has existed for decades. Public review and deba
 **Our focus is on exploring best practices to improve bitcoin product design.**
 
 - Join the conversation on [Slack]({{site.slack_invite_url}}). Navigate toward the channels that interest you. Dive into topics and conversations that draw you in.
-- Identify your strengths and goals. Figure out how they may fit within the community's vision. A good place to start is listening to a [Community Call](https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+Community+Call) or reading our [newsletter](https://bitcoindesign.substack.com/).
+- Identify your strengths and goals. Figure out how they may fit within the community's vision. A good place to start is listening to a [Community Call](https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+Community+Call) or reading our [newsletter]({{ '/newsletter/' | relative_url }}).
 - Feel free to ask questions or ask for help in solving bitcoin design issues.
 - See some of the community [Projects](https://bitcoin.design/projects/).
 - Visit our [Contribute](https://bitcoin.design/contribute/) page.

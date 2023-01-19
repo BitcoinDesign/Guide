@@ -18,7 +18,7 @@ As bitcoin’s popularity continues to rise, it is essential that everyone be ab
 
 The Bitcoin Design Community [Slack]({{ site.slack_invite_url }}) is an open space to discuss and explore everything bitcoin and design. Open standards are part of our foundation, so all of our work can also be found on [Github](https://github.com/BitcoinDesign).
 
-Everyone is welcome to join and [participate]({{ '/contribute' | relative_url }}). You can also follow along via our [newsletter](https://bitcoindesign.substack.com), [calendar]({{ '/calendar' | relative_url }}), [Twitter](https://twitter.com/bitcoin_design), [BitcoinTV](https://bitcointv.com/a/bitcoin_design/video-channels) & [YouTube](https://www.youtube.com/c/BitcoinDesign).
+Everyone is welcome to join and [participate]({{ '/contribute' | relative_url }}). You can also follow along via our [newsletter]({{ '/newsletter' | relative_url }}), [calendar]({{ '/calendar' | relative_url }}), [Twitter](https://twitter.com/bitcoin_design), [BitcoinTV](https://bitcointv.com/a/bitcoin_design/video-channels) & [YouTube](https://www.youtube.com/c/BitcoinDesign).
 
 [Join on Slack]({{ site.slack_invite_url }}){: .button }
 
