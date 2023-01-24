@@ -223,7 +223,13 @@ For larger transactions, the wallet application provider will no longer automati
 
 ### Signing device key replacement
 
-Should they lose either their main mobile device or the purpose-built signing device, they can replace the lost key (rotate in a new key) with the help of the recovery key held by the auto-signer. However, if they lose both the mobile and signing device, they will not be able to recover their funds unless they had also backed up either of the respective recovery phrases. [View prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=15%3A59302&viewport=-304%2C225%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=1%3A56799&show-proto-sidebar=1).
+Earlier we mentioned that one of the keys is saved on the user's mobile device and backed up to the cloud. To prevent unauthorized access to this backup, a PIN is created during wallet set-up and used to encrypt and decrypt the backup.
+
+If a user loses their mobile device but still has their cloud backup and signing device, they can use their PIN to unlock the cloud key. Then, with the help of the signing device, they can recover their wallet.
+
+Given they still have access to their mobile device but they lost their purpose-built signing device, they can replace the lost key (rotate in a new key) with the help of the recovery key held by the auto-signer.
+
+However, if they lose both the mobile and signing device, they will only be able to recover their funds if they have also backed up either of the respective recovery phrases. [View prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=15%3A59302&viewport=-304%2C225%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=1%3A56799&show-proto-sidebar=1).
 
 {% include image-gallery.html pages = page.images_recovery %}
 
