@@ -80,6 +80,9 @@ exclude:
   - README.md
   - _compress_images_cache.yml
 
+include:
+- .well-known
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
