@@ -2,7 +2,7 @@
 layout: guide
 title: Common user flows
 description: Overview of the most common user activities in bitcoin applications.
-nav_order: 4
+nav_order: 5
 parent: Designing bitcoin products
 permalink: /guide/designing-products/common-user-flows/
 main_classes: -no-top-padding
@@ -570,8 +570,8 @@ This can be a tricky experience to address. For one, non-custodial cryptocurrenc
 Our next section introduces a framework with a focus on the [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/' | relative_url }}).
 
 {% include next-previous.html
-   previousUrl = "/guide/designing-products/getting-to-know-your-users/"
-   previousName = "Getting to know your users"
+   previousUrl = "/guide/designing-products/user-personas/"
+   previousName = "User personas"
    nextUrl = "/guide/designing-products/usage-life-cycle/"
    nextName = "Usage life cycle"
 %}

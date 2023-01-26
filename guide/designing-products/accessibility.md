@@ -2,7 +2,7 @@
 layout: guide
 title: Accessibility
 description: Overview and practical tips for making bitcoin applications more accessible
-nav_order: 8
+nav_order: 9
 parent: Designing bitcoin products
 permalink: /guide/designing-products/accessibility/
 main_classes: -no-top-padding

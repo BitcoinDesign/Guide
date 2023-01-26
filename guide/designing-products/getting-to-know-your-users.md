@@ -194,11 +194,11 @@ Ultimately the goal of getting to know your users is to build trust in the appli
 
 ---
 
-Next, we will cover [common user flows]({{ '/guide/designing-products/common-user-flows/' | relative_url }}).
+Next, we will cover [user personas]({{ '/guide/designing-products/user-personas/' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/designing-products/user-research/"
    previousName = "Conducting research"
-   nextUrl = "/guide/designing-products/common-user-flows/"
-   nextName = "Common user flows"
+   nextUrl = "/guide/designing-products/user-personas/"
+   nextName = "User Personas"
 %}
