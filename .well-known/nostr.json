@@ -1,0 +1,14 @@
+{
+  "names": {
+    "community": "8c29b321d0f3c61343882ea49623e84771690cd0566e40b90f08e5d34336aaa0"
+  },
+  "relays": {
+    "8c29b321d0f3c61343882ea49623e84771690cd0566e40b90f08e5d34336aaa0": [
+      "wss://relay.snort.social",
+      "wss://relay.damus.io",
+      "wss://brb.io",
+      "wss://relay.nostr.info",
+      "wss://nostr.zebedee.cloud"
+    ]
+  }
+}
