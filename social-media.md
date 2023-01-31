@@ -40,7 +40,7 @@ These are our current writing guidelines for social media.
 
 - FOR things, promote solutions, use positive language
 - Not AGAINST things, don’t use negative language
-- Informe & educate
+- Inform & educate
 - High signal-to-noise ratio
 - Friendly & approachable
 - Succinct
@@ -48,8 +48,8 @@ These are our current writing guidelines for social media.
 
 ##### Content ideas
 
-- Guide highlights: When new content is added to the guide, create a new thread on the additions (or re-post the authors threads - probably better).
-- Designer spotlight: highlight a designer in the community and share a short story about them / why they like bitcoin / what they work on etc.
+- Guide highlights: When new content is added to the guide, create a new thread on the additions (or re-post the authors threads - probably better)
+- Designer spotlight: Highlight a designer in the community and share a short story about them / why they like bitcoin / what they work on etc.
 - Announce calls and call recordings (learning bitcoin & design, design review, community call…)
 - Quick user research and polls for community projects
 - Respond to current design-related conversations (e.g. post a link to the Units & Symbols page if there’s a thread somewhere around unit formatting)
@@ -64,14 +64,14 @@ These are our current writing guidelines for social media.
 - Criticize projects or people (if you must, use your personal accounts)
 - Promote a specific product over others (if you must, use your personal accounts)
 
-##### Good
+##### Good examples
 
 - ABC Wallet just launched a new version with an improved UI. It's a perfect example of techniques from the Onboarding section of the Guide!
 - Just wrapped up another awesome design sprint with XYZ Wallet. Thanks for being so open to collaboration with the Bitcoin Design Community!
 - Several members of the Design Community participated in this podcast about DEF Wallet to talk about Lightning backups. What do you think about this topic?
 - MNO Exchange just launched an initiative to provide grant funding to people working on open source bitcoin projects. Calling all designers!
 
-##### Bad
+##### Bad examples
 
 - GHI Wallet has a pretty bad UI. Shame they haven't read the Guide.
 - Gee, JKL Wallet, would it kill you to join a Design Review call?
