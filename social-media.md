@@ -22,15 +22,18 @@ image: https://bitcoin.design/assets/images/social-media/social-media-preview.jp
 
 # Bitcoin Design on social media
 
-We have a Twitter account for the Bitcoin Design Community at [@bitcoin_design](https://twitter.com/bitcoin_design). We highlight project activity, design work and discussions from the community, announce [newsletter]({{ '/newsletter/' | relative_url }}) releases and host our [community calls](https://www.youtube.com/playlist?list=PLpV0KfVOMoja_zmmFNSJXREVKE4PSU0M1) via Twitter Spaces.
+We have Twitter and [Nostr](https://nostr-resources.com/) accounts for the Bitcoin Design Community at [@bitcoin_design](https://twitter.com/bitcoin_design) and [@bitcoin.design](nostr:npub13s5mxgws70rpxsug96jfvglggackjrxs2ehypwg0prjaxsek42sqd9l03e) (link only works if you have a Nostr client installed) respectively. We highlight project activity, design work and discussions from the community, announce [newsletter]({{ '/newsletter/' | relative_url }}) releases and host our [community calls](https://www.youtube.com/playlist?list=PLpV0KfVOMoja_zmmFNSJXREVKE4PSU0M1) via Twitter Spaces.
 
 [Follow on Twitter](http://twitter.com/bitcoin_design){: .button }
 
+Find us on Nostr via [@bitcoin.design](nostr:npub13s5mxgws70rpxsug96jfvglggackjrxs2ehypwg0prjaxsek42sqd9l03e) or our public key:
+`npub13s5mxgws70rpxsug96jfvglggackjrxs2ehypwg0prjaxsek42sqd9l03e`
+
 ## Contribute
 
-The Twitter account is currently loosely managed by [Mo](https://twitter.com/MogashniNaidoo) and [Christoph](https://twitter.com/GBKS). We’d love to have more contributors. If you’d like to help out, reach out in [#spread-the-word](https://bitcoindesign.slack.com/archives/C01PRLDBCBA).
+The accounts are currently loosely managed by [Mo](https://twitter.com/MogashniNaidoo) and [Christoph](https://twitter.com/GBKS). We’d love to have more contributors. If you’d like to help out, reach out in [#spread-the-word](https://bitcoindesign.slack.com/archives/C01PRLDBCBA).
 
-Shout-out to our previous Tweeters [Alexa](https://twitter.com/AlexaAker) and [Doc Sharp](https://twitter.com/_Bosch_).
+Shout-out to our previous posters [Alexa](https://twitter.com/AlexaAker) and [Doc Sharp](https://twitter.com/_Bosch_).
 
 ## Format
 
