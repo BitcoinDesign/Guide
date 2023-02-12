@@ -87,6 +87,8 @@
     nav.footer-nav {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
       order: 5;
       flex-basis: 100%;
       border-top: 1px solid black;
