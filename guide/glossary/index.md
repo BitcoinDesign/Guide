@@ -208,7 +208,7 @@ Same as ypub though the z denotes it is an extended public key from a segregated
 
 ### Fiat
 
-Fiat money is a type of currency that is issued and backed by a government. It has value because the government says it does, and people are willing to accept it as payment for goods and services. Examples of fiat money include the US dollar, Indian rupees, the euro, and the Japanese yen. Unlike physical commodities like gold, silver or copper, fiat money is not backed by a physical commodity and its value is not directly tied to the value of a commodity. Instead, it is based on trust in the issuing government and its ability to maintain a stable currency. To learn more, visit [Wikipedia](https://en.wikipedia.org/wiki/Fiat_money).
+Fiat money is a type of legal tender that is issued by a government. The value of fiat money is not backed by, or tied to a commodity such as gold, silver or copper, instead it is derived from the relationship between supply and demand and the stability of the issuing government. Examples of fiat money include the US dollar, Indian rupees, the euro, and the Japanese yen. To learn more, visit [Wikipedia](https://en.wikipedia.org/wiki/Fiat_money).
 
 ### Gap limit
 
