@@ -52,7 +52,7 @@ One could imagine a wallet for a non-native English speaker based in El Salvador
 - They ensure that we, as designers, create products for real users and not design for ourselves.
 
 ## How to build user personas
-User personas can be created by simply speaking to users of our product. We can connect to these people by doing:
+User personas can be created by simply speaking to users of our product. We can connect to these people by doing user interviews and surveys.
 - Structured user interviews
 - Surveys
 
