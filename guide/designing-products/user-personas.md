@@ -53,8 +53,6 @@ One could imagine a wallet for a non-native English speaker based in El Salvador
 
 ## How to build user personas
 User personas can be created by simply speaking to users of our product. We can connect to these people by doing user interviews and surveys.
-- Structured user interviews
-- Surveys
 
 A list of questions we can ask:
 - What is your perception of bitcoin?
@@ -67,12 +65,10 @@ A list of questions we can ask:
 - What’s important to you when using a financial application or bitcoin wallet?
 - What are some of the things that caused you the most frustration when using bitcoin wallets?
 
-_The above questions around bitcoin personas were created during a UX Research community call focused on personas._
+_The above questions around bitcoin personas were created during a UX Research [community call](https://www.youtube.com/watch?v=PSHJzIsEzKA) focused on personas and captured in a [Figma file](https://www.figma.com/file/7g3FRoxzXnNJwzY1lbKzU2/Bitcoin-Design-guide-Personas?node-id=0%3A1)._
 
-[Figma file](https://www.figma.com/file/7g3FRoxzXnNJwzY1lbKzU2/Bitcoin-Design-guide-Personas?node-id=0%3A1)
-[Community call](https://www.youtube.com/watch?v=PSHJzIsEzKA)
 
-## Bitcoin user personas
+# Bitcoin user personas
 Patrícia Estevão developed several personas of bitcoin users based on 1-1 interview sessions. You can read about her full [process here](https://patestevao.com/work/bitcoin-ux-research). These personas can be a great inspiration and foundation for your own work. Here we provide short summaries for you to get started with.
 
 ### Musa: The one for whom Bitcoin fits right in
