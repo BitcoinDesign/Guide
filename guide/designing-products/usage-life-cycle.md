@@ -2,7 +2,7 @@
 layout: guide
 title: Usage life cycle
 description: A framework for how users learn about bitcoin and gain expertise with bitcoin applications.
-nav_order: 5
+nav_order: 6
 parent: Designing bitcoin products
 permalink: /guide/designing-products/usage-life-cycle/
 main_classes: -no-top-padding
