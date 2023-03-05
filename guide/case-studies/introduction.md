@@ -26,6 +26,11 @@ This was a collaboration between Blixt wallet and the Bitcoin Design Community t
 
 ---
 
+### [Payments with Payjoin]({{ '/guide/case-studies/payjoin/' | relative_url }})
+
+This was an exploration and analysis of design for Payjoin.
+
+---
 
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/sign-in-with-bitcoin/"
