@@ -4,7 +4,7 @@ title: Payjoin case study
 description: <>
 nav_order: 5
 parent: Case studies
-permalink: /guide/case-studies/payjoin-case-study/
+permalink: /guide/case-studies/payjoin/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/case-studies/blixt-wallet/blixt-wallet-preview.jpg
 ---
