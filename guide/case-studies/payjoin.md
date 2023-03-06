@@ -28,20 +28,6 @@ Conversion notes:
 
 ----->
 
-
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 0; ALERTS: 5.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-<a href="#gdcalert2">alert2</a>
-<a href="#gdcalert3">alert3</a>
-<a href="#gdcalert4">alert4</a>
-<a href="#gdcalert5">alert5</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
-
-
 ## BITCOIN DESIGN COMMUNITY
 
 
@@ -70,10 +56,8 @@ The sender on the other hand needs little-to-no setup (apart from using a suppor
 
 ##
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
-![alt_text](images/image1.png "image_tooltip")
+![alt_text](file:///Users/yashraj/Documents%20-%20local/GitHub/Guide/assets/images/guide/case-studies/payjoin%20case%20study/BIP-78%20process.png "image_tooltip")
 
 
 A bitcoin transaction where the sender and receiver construct a transaction together by contributing inputs is called a Payjoin.
@@ -110,7 +94,6 @@ Technically, everyone conducting transactions on the Bitcoin blockchain can use 
 
 
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image2.png "image_tooltip")
@@ -187,9 +170,6 @@ Participating in payjoin transactions is relatively straightforward for a sender
 
 This is the payjoin flow in BlueWallet:
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image3.jpg "image_tooltip")
 
 
@@ -226,11 +206,6 @@ The above steps are not important to the users involved in the transaction, and 
 ##### Prototypes for the Payjoin sender flow
 
 <p class="h3">The intention is to keep the user-flow as close to the default flow as possible. Where it becomes necessary to deviate, we educate and help the user to navigate the UI.</p>
-
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![alt_text](images/image4.png "image_tooltip")
 
@@ -315,10 +290,6 @@ Here we will devise user flows for a POS system that can always be online. This 
 A receiver should be able to set up payjoin during onboarding on the platform (app or POS system) or any time after that. The following is a standalone payjoin setup flow.
 
 
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image5.png "image_tooltip")
 
 
@@ -346,8 +317,6 @@ A dedicated section in the settings page might be a good idea to provide dedicat
 
 We learnt many things over the course of this case study, and the user flows we have designed already use many of these insights.
 
-
-
 - Payjoins are a great way to consolidate UTXOs so they pay lower fees in the long run – this can be especially useful to exchanges, trading desks who need this the most and possess technical ability to implement a robust setup
 - Due to the back-&-forth between parties which can extend over multiple iterations/rounds, this case study introduces the term ‘payjoin handshake’ to encompass all the events between user actions
 - Maintaining an always-online endpoint seems to be the biggest hurdle for payjoin implementation, we list some alternatives here
@@ -362,8 +331,6 @@ We learnt many things over the course of this case study, and the user flows we 
 Payjoins can be complicated to understand or implement given the multiple parties and moving parts (such as the endpoint) involved, but this also opens the door for multiple features and services.
 
 Here are some examples:
-
-
 
 - Third party endpoints could be used by receivers (turning-off address substitution), trading some privacy for convenience
 - There is exciting work underway around [serverless](https://gist.github.com/DanGould/243e418752fff760c9f6b23bba8a32f9) payjoin implementation that would work great on platforms with both bitcoin & lightning
