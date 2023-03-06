@@ -4,7 +4,7 @@ title: Payjoin case study
 description: <>
 nav_order: 5
 parent: Case studies
-permalink: /guide/case-studies/blixt-wallet/
+permalink: /guide/case-studies/payjoin-case-study/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/case-studies/blixt-wallet/blixt-wallet-preview.jpg
 ---
@@ -187,8 +187,6 @@ Participating in payjoin transactions is relatively straightforward for a sender
 
 This is the payjoin flow in BlueWallet:
 
-
-
 <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
@@ -201,8 +199,8 @@ Here are the findings:
 
 
 
-* The fee rate drops once transaction size increases during the payjoin process,  which may change estimated confirmation time
-* The flow results in a transaction that has a round amount fee-rate after removing one input, which may be used by chain analysis firms to spot payjoins
+- The fee rate drops once transaction size increases during the payjoin process,  which may change estimated confirmation time
+- The flow results in a transaction that has a round amount fee-rate after removing one input, which may be used by chain analysis firms to spot payjoins
 
 
 #### The Payjoin Sender Flow
@@ -300,12 +298,12 @@ The author successfully tested receiving payjoins (BTCPay 1.7.12) in Feb 2023.
 
 Here are problems identified:
 
-* Generating a payjoin-enabled payment link is automatic once it is setup
-* If the user chooses to add an existing hot wallet, BTCPay does not provide an option to enable payjoin on the same page like it does during new hot wallet creation
-* If a user opts for a watch-only (cold) wallet during setup (new or existing), they will never encounter payjoin (because a wallet is required in order to sign the payjoin transactions)
-* Only one bitcoin wallet can be connected to the store (except through [BTCPay Vault](https://docs.btcpayserver.org/HardwareWalletIntegration/)) so using a cold wallet precludes setting up a hot wallet (and Payjoin)
-* BTCPay does not prompt or warn the user if there are no funds in the hot wallet to perform a payjoin, resulting in failed payments
-* There is no dedicated space to manage and monitor Payjoin
+- Generating a payjoin-enabled payment link is automatic once it is setup
+- If the user chooses to add an existing hot wallet, BTCPay does not provide an option to enable payjoin on the same page like it does during new hot wallet creation
+- If a user opts for a watch-only (cold) wallet during setup (new or existing), they will never encounter payjoin (because a wallet is required in order to sign the payjoin transactions)
+- Only one bitcoin wallet can be connected to the store (except through [BTCPay Vault](https://docs.btcpayserver.org/HardwareWalletIntegration/)) so using a cold wallet precludes setting up a hot wallet (and Payjoin)
+- BTCPay does not prompt or warn the user if there are no funds in the hot wallet to perform a payjoin, resulting in failed payments
+- There is no dedicated space to manage and monitor Payjoin
 
 Read the full analysis on [receiving payjoin payments on BTCPay](https://docs.google.com/document/d/1_de2pkMREGpZQwOefQdH-MZNSUPazObgRK1cruiWBmo/edit?usp=sharing) here.
 
@@ -339,9 +337,9 @@ A dedicated section in the settings page might be a good idea to provide dedicat
 
 
 
-* Payjoin setup workflow
-* Additional payjoin features like third party endpoints, address substitution, cold-wallet backfill
-* Monitor payjoin readiness: hot wallet status, pj-endpoint status etc.
+- Payjoin setup workflow
+- Additional payjoin features like third party endpoints, address substitution, cold-wallet backfill
+- Monitor payjoin readiness: hot wallet status, pj-endpoint status etc.
 
 
 ## Insights
@@ -350,13 +348,13 @@ We learnt many things over the course of this case study, and the user flows we 
 
 
 
-* Payjoins are a great way to consolidate UTXOs so they pay lower fees in the long run – this can be especially useful to exchanges, trading desks who need this the most and possess technical ability to implement a robust setup
-* Due to the back-&-forth between parties which can extend over multiple iterations/rounds, this case study introduces the term ‘payjoin handshake’ to encompass all the events between user actions
-* Maintaining an always-online endpoint seems to be the biggest hurdle for payjoin implementation, we list some alternatives here
-* Payjoin burdens the receiver with more requirements but also provides more benefits and opportunities
-* Address substitution is a powerful idea from BIP-78: it is a risk that can become a powerful ally for the payjoiner
-* Payjoins receivers can leverage their daily spending wallet-saving wallet setup, where the daily spending is used by the receiver as the payjoin hot wallet
-* Payjoin implementations should be mindful of the round-fee-rate heuristic for identifying payjoins, handle it without need for user decisions
+- Payjoins are a great way to consolidate UTXOs so they pay lower fees in the long run – this can be especially useful to exchanges, trading desks who need this the most and possess technical ability to implement a robust setup
+- Due to the back-&-forth between parties which can extend over multiple iterations/rounds, this case study introduces the term ‘payjoin handshake’ to encompass all the events between user actions
+- Maintaining an always-online endpoint seems to be the biggest hurdle for payjoin implementation, we list some alternatives here
+- Payjoin burdens the receiver with more requirements but also provides more benefits and opportunities
+- Address substitution is a powerful idea from BIP-78: it is a risk that can become a powerful ally for the payjoiner
+- Payjoins receivers can leverage their daily spending wallet-saving wallet setup, where the daily spending is used by the receiver as the payjoin hot wallet
+- Payjoin implementations should be mindful of the round-fee-rate heuristic for identifying payjoins, handle it without need for user decisions
 
 
 ## New Horizons
@@ -367,11 +365,11 @@ Here are some examples:
 
 
 
-* Third party endpoints could be used by receivers (turning-off address substitution), trading some privacy for convenience
-* There is exciting work underway around [serverless](https://gist.github.com/DanGould/243e418752fff760c9f6b23bba8a32f9) payjoin implementation that would work great on platforms with both bitcoin & lightning
-* Receiver-side implementations could use address substitution to let users make payments of their own
-* Payjoin coordination over NFC (or other wireless near-range communication technology)
-* BIP-78 could to allow 1 more iteration where sender can adjust fees post-handshake & send it back to receiver to broadcast
+- Third party endpoints could be used by receivers (turning-off address substitution), trading some privacy for convenience
+- There is exciting work underway around [serverless](https://gist.github.com/DanGould/243e418752fff760c9f6b23bba8a32f9) payjoin implementation that would work great on platforms with both bitcoin & lightning
+- Receiver-side implementations could use address substitution to let users make payments of their own
+- Payjoin coordination over NFC (or other wireless near-range communication technology)
+- BIP-78 could to allow 1 more iteration where sender can adjust fees post-handshake & send it back to receiver to broadcast
 
 This case study not only tackles the design aspects around Payjoin, it hopes to boost interest in the various use cases and benefits.
 
