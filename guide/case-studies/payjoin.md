@@ -90,73 +90,16 @@ Technically, everyone conducting transactions on the Bitcoin blockchain can use 
 1. Institutions (businesses, bitcoin exchanges etc.) and individuals
 2. sender and receiver of a payment
 
+**ADD IMAGE HERE**
 
+<div markdown="1">
 
+|       | Requirements          | Benefits |
+|:-------------|:------------------|:------|
+| Sender           | <ul><li>Wallet support</li><li>Internet connection</li></ul> | <ul><li>Improved Privacy</li></ul>  |
+| Receiver (includes merchants) | <ul><li>Hot wallet (for signing transactions)</li><li>Serve/maintain secure web endpoint</li><li>Wallet support</li><li>Funds in hot wallet</li></ul>   | <ul><li>Privacy</li><li>UTXO consolidation</li><li>Fee savings</li></ul> |
 
-
-![alt_text](images/image2.png "image_tooltip")
-
-
-
-<table>
-  <tr>
-   <td>
-   </td>
-   <td><strong>Requirements</strong>
-   </td>
-   <td><strong>Benefits</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Sender</strong>
-   </td>
-   <td>
-<ul>
-
-<li>Wallet support
-
-<li>Internet connection
-</li>
-</ul>
-   </td>
-   <td>
-<ul>
-
-<li>Improved Privacy
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Receiver (includes merchants)</strong>
-   </td>
-   <td>
-<ul>
-
-<li>Hot wallet (for signing transactions)
-
-<li>Serve/maintain secure web endpoint
-
-<li>Wallet support
-
-<li>Funds in hot wallet
-</li>
-</ul>
-   </td>
-   <td>
-<ul>
-
-<li>Privacy
-
-<li>UTXO consolidation
-
-<li>Fee savings
-</li>
-</ul>
-   </td>
-  </tr>
-</table>
-
+</div>
 
 
 ### Sending Payjoins
@@ -168,18 +111,14 @@ Participating in payjoin transactions is relatively straightforward for a sender
 
 This is the payjoin flow in BlueWallet:
 
-![alt_text](images/image3.jpg "image_tooltip")
-
+**ADD IMAGE HERE**
 
 We analyzed the payjoin user flow in Blue Wallet. Read the detailed investigation [here](https://docs.google.com/document/d/1_de2pkMREGpZQwOefQdH-MZNSUPazObgRK1cruiWBmo/edit#bookmark=id.jamlvi37p922).
 
 Here are the findings:
 
-
-
 - The fee rate drops once transaction size increases during the payjoin process,  which may change estimated confirmation time
 - The flow results in a transaction that has a round amount fee-rate after removing one input, which may be used by chain analysis firms to spot payjoins
-
 
 #### The Payjoin Sender Flow
 
@@ -187,7 +126,7 @@ We designed a sender flow that attempts to address the issues identified above.
 
 For the purpose of creating the sender flow, we will assume that the receiver only contributes UTXOs but does not contribute to the fees since this allows a simple, automated process for both parties.
 
-<p class="h3">In short, the sender flow outlined here asks the user to choose a fee-range instead of a fee-amount (or fee-rate) while keeping the rest of the user flow almost exactly the same. We use it to set 3 optional parameters specified in BIP-78, which can be used to construct a simple but effective payjoin implementation.</p>
+### In short, the sender flow outlined here asks the user to choose a fee-range instead of a fee-amount (or fee-rate) while keeping the rest of the user flow almost exactly the same. We use it to set 3 optional parameters specified in BIP-78, which can be used to construct a simple but effective payjoin implementation.
 
 The detailed thought process can be read [here](https://docs.google.com/document/d/1IPCQsdoVBGEceUnWhOeEhi-xcNF049RG1tRAchz-Iuc/edit?usp=sharing).
 
@@ -203,10 +142,9 @@ The above steps are not important to the users involved in the transaction, and 
 
 ##### Prototypes for the Payjoin sender flow
 
-<p class="h3">The intention is to keep the user-flow as close to the default flow as possible. Where it becomes necessary to deviate, we educate and help the user to navigate the UI.</p>
+### The intention is to keep the user-flow as close to the default flow as possible. Where it becomes necessary to deviate, we educate and help the user to navigate the UI.
 
-![alt_text](images/image4.png "image_tooltip")
-
+**ADD IMAGE HERE**
 
 These mockups are adapted from existing mockups created by Christoph and the Bitcoin Design Community according to the Bitcoin Wallet UI Kit & Design System.
 
@@ -218,52 +156,10 @@ A detailed explainer of each screen can be viewed [here](https://docs.google.com
 Based on the BIP-78 protocol, the receiver has higher requirements than the sender does. See below table for details:
 
 
-<table>
-  <tr>
-   <td><strong>Receiver requirement/User type</strong>
-   </td>
-   <td><strong>Individual on mobile wallet</strong>
-   </td>
-   <td><strong>Merchant on a payment processor</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Hot wallet
-   </td>
-   <td>Yes
-   </td>
-   <td>Generally: No
-   </td>
-  </tr>
-  <tr>
-   <td>Funds in hot wallet
-   </td>
-   <td>Generally: Yes
-   </td>
-   <td>Not Applicable
-   </td>
-  </tr>
-  <tr>
-   <td>Endpoint
-   </td>
-   <td>No
-   </td>
-   <td>Maybe
-   </td>
-  </tr>
-  <tr>
-   <td>Platform support for payjoins
-   </td>
-   <td>Maybe
-   </td>
-   <td>Maybe
-   </td>
-  </tr>
-</table>
+**Table removed here, consider revising nearby sentences**
 
 
-<p class="h3">While practically every mobile wallet is a hot wallet and it is trivial to fund it, having an online server where the payjoin handshake can be performed is difficult for technical and practical reasons. This might be the biggest impediment to payjoin support and adoption so far. </p>
-
+### While practically every mobile wallet is a hot wallet and it is trivial to fund it, having an online server where the payjoin handshake can be performed is difficult for technical and practical reasons. This might be the biggest impediment to payjoin support and adoption so far.
 
 #### Investigation: BTCPay merchant/receiving
 
@@ -287,24 +183,18 @@ Here we will devise user flows for a POS system that can always be online. This 
 
 A receiver should be able to set up payjoin during onboarding on the platform (app or POS system) or any time after that. The following is a standalone payjoin setup flow.
 
-
-![alt_text](images/image5.png "image_tooltip")
-
+**ADD IMAGE HERE**
 
 A detailed process flow integrated with onboarding is available in this [Figjam file](https://www.figma.com/file/NzMvwyzP7x5jfGmwNUKRov/PayJoin-Process-Flows?node-id=0%3A1&t=wSwewTOkQddWhagl-1).
-
 
 ##### Requesting payjoin
 
 Once the payjoin setup is functional, all payment requests (BIP-21 payment links or encoded as QRs) should contain the necessary information (including endpoint address) to perform the payjoin transaction. No separate user action should be required.
 
 
-#####  \
-Payjoin Status/Settings
+#####  Payjoin Status/Settings
 
 A dedicated section in the settings page might be a good idea to provide dedicated space in the UI to manage Payjoin settings and monitor its status. This would also provide UI space for users using a cold wallet to discover and set up payjoin. This section could contain:
-
-
 
 - Payjoin setup workflow
 - Additional payjoin features like third party endpoints, address substitution, cold-wallet backfill
@@ -341,12 +231,8 @@ This case study not only tackles the design aspects around Payjoin, it hopes to 
 
 ## Resources
 
-[BIP-78](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki)
-
-[Payjoin Process Flows](https://www.figma.com/file/NzMvwyzP7x5jfGmwNUKRov/PayJoin-Process-Flows?node-id=0%3A1&t=wSwewTOkQddWhagl-1)
-
-[Payjoin User Flows](https://www.figma.com/file/69uUDWVc8N9t5Bej8pZEsF/PayJoin-User-Flows?node-id=0%3A1&t=8F4jOa71i6X1Slbz-1)
-
-[Investigation: Petting Payjoins in the wild](https://docs.google.com/document/d/1_de2pkMREGpZQwOefQdH-MZNSUPazObgRK1cruiWBmo/edit?usp=sharing)
-
-[BTCPay Server Payjoin Guide](https://docs.btcpayserver.org/Payjoin/#btcpay-server-payjoin-guide)
+- [BIP-78](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki)
+- [Payjoin Process Flows](https://www.figma.com/file/NzMvwyzP7x5jfGmwNUKRov/PayJoin-Process-Flows?node-id=0%3A1&t=wSwewTOkQddWhagl-1)
+- [Payjoin User Flows](https://www.figma.com/file/69uUDWVc8N9t5Bej8pZEsF/PayJoin-User-Flows?node-id=0%3A1&t=8F4jOa71i6X1Slbz-1)
+- [Investigation: Petting Payjoins in the wild](https://docs.google.com/document/d/1_de2pkMREGpZQwOefQdH-MZNSUPazObgRK1cruiWBmo/edit?usp=sharing)
+- [BTCPay Server Payjoin Guide](https://docs.btcpayserver.org/Payjoin/#btcpay-server-payjoin-guide)
