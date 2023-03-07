@@ -28,9 +28,6 @@ Conversion notes:
 
 ----->
 
-## BITCOIN DESIGN COMMUNITY
-
-
 # Payments with Payjoin: A Case Study
 
 
@@ -38,7 +35,7 @@ Conversion notes:
 
 Payjoin transactions can be a powerful tool that can provide privacy, fee-savings and UTXO consolidation benefits to users. They also present challenges and trade-offs due to their synchronous, multi-party nature.
 
-<p class="h3">Payjoin transactions break some of the chain analysis [heuristics](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki#motivation) during the course of making a payment. However,  real time coordination between the sender & receiver mediated through an endpoint is required to construct them.</p>
+<p class="h3">Payjoin transactions break some of the chain analysis [heuristics](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki#motivation) during the course of making a payment. However, real time coordination between the sender & receiver mediated through an endpoint is required to construct them.</p>
 
 The case study:
 
@@ -104,7 +101,7 @@ Technically, everyone conducting transactions on the Bitcoin blockchain can use 
   <tr>
    <td>
    </td>
-   <td><strong>Requirements/</strong>
+   <td><strong>Requirements</strong>
    </td>
    <td><strong>Benefits</strong>
    </td>
