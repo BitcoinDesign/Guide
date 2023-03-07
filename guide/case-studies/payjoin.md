@@ -54,7 +54,7 @@ The sender on the other hand needs little-to-no setup (apart from using a suppor
 ##
 
 
-![alt_text](file:///Users/yashraj/Documents%20-%20local/GitHub/Guide/assets/images/guide/case-studies/payjoin%20case%20study/BIP-78%20process.png "image_tooltip")
+![alt_text](/Guide/assets/images/guide/case-studies/payjoin%20case%20study/BIP-78%20process.png "image_tooltip")
 
 
 A bitcoin transaction where the sender and receiver construct a transaction together by contributing inputs is called a Payjoin.
