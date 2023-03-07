@@ -35,7 +35,7 @@ Conversion notes:
 
 Payjoin transactions can be a powerful tool that can provide privacy, fee-savings and UTXO consolidation benefits to users. They also present challenges and trade-offs due to their synchronous, multi-party nature.
 
-<p class="h3">Payjoin transactions break some of the chain analysis [heuristics](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki#motivation) during the course of making a payment. However, real time coordination between the sender & receiver mediated through an endpoint is required to construct them.</p>
+### Payjoin transactions break some of the chain analysis [heuristics](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki#motivation) during the course of making a payment. However, real time coordination between the sender & receiver mediated through an endpoint is required to construct them.
 
 The case study:
 
@@ -50,12 +50,13 @@ The sender on the other hand needs little-to-no setup (apart from using a suppor
 
 ### What is a Payjoin?
 
-
-##
-
-
-![alt_text](/Guide/assets/images/guide/case-studies/payjoin%20case%20study/BIP-78%20process.png "image_tooltip")
-
+{% include picture.html
+   image = "assets/images/guide/case-studies/payjoin case study/payjoin-bip78-process.png"
+   retina = "assets/images/guide/case-studies/payjoin case study/payjoin-bip78-process@2x.png"
+   alt-text = "Diagram of a BIP-78 payjoin process"
+   width = 800
+   height = 683
+%}
 
 A bitcoin transaction where the sender and receiver construct a transaction together by contributing inputs is called a Payjoin.
 
