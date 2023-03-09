@@ -42,7 +42,7 @@ Conversion notes:
 
 ## Introduction
 
-Payjoin transactions can be a powerful tool that can provide privacy, fee-savings and UTXO consolidation benefits to users. They also present challenges and trade-offs due to their synchronous, multi-party nature.
+Payjoin transactions can be a powerful tool providing privacy, fee-savings and UTXO consolidation benefits to users. They also present challenges and trade-offs due to their synchronous, multi-party nature.
 
 ### Payjoin transactions break some of the chain analysis [heuristics](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki#motivation) during the course of making a payment. However, real time coordination between the sender & receiver mediated through an endpoint is required to construct them.
 
@@ -147,6 +147,14 @@ For the purpose of creating the sender flow, we will assume that the receiver on
 
 ### In short, the sender flow outlined here asks the user to choose a fee-range instead of a fee-amount (or fee-rate) while keeping the rest of the user flow almost exactly the same. We use it to set 3 optional parameters specified in BIP-78, which can be used to construct a simple but effective payjoin implementation.
 
+{% include picture.html
+   image = "assets/images/guide/case-studies/payjoin case study/payjoin sender flow.png"
+   retina = "assets/images/guide/case-studies/payjoin case study/payjoin sender flow@2x.png"
+   alt-text = "payjoin sender flow"
+   width = 800
+   height = 374
+%}
+
 The detailed thought process can be read [here](https://docs.google.com/document/d/1IPCQsdoVBGEceUnWhOeEhi-xcNF049RG1tRAchz-Iuc/edit?usp=sharing).
 
 View this flow in [Figjam here](https://www.figma.com/file/69uUDWVc8N9t5Bej8pZEsF/PayJoin-User-Flows?node-id=0%3A1&t=8eOBQa7JofjZ3p3z-1). The detailed process and considerations can be reviewed in this [FigJam file](https://www.figma.com/file/NzMvwyzP7x5jfGmwNUKRov/PayJoin-Process-Flows?node-id=336%3A619&t=BhGymSWCzl2Xm2oO-1).
@@ -164,14 +172,13 @@ The above steps are not important to the users involved in the transaction, and 
 ### The intention is to keep the user-flow as close to the default flow as possible. Where it becomes necessary to deviate, we educate and help the user to navigate the UI.
 
 {% include picture.html
-   image = "assets/images/guide/case-studies/payjoin case study/payjoin sender flow.png"
-   retina = "assets/images/guide/case-studies/payjoin case study/payjoin sender flow@2x.png"
-   alt-text = "payjoin sender flow"
+   image = "assets/images/guide/case-studies/payjoin case study/sender-flow-prototype.png"
+   retina = "assets/images/guide/case-studies/payjoin case study/sender-flow-prototype@2x.png"
+   alt-text = "sender flow prototype"
+   caption = "These mockups are adapted from existing mockups created by Christoph and the Bitcoin Design Community according to the Bitcoin Wallet UI Kit & Design System."
    width = 800
-   height = 374
+   height = 754
 %}
-
-These mockups are adapted from existing mockups created by Christoph and the Bitcoin Design Community according to the Bitcoin Wallet UI Kit & Design System.
 
 A detailed explainer of each screen can be viewed [here](https://docs.google.com/document/d/1laHP3TqU6zzf0ajpQfQ5qaP0wUUQXNNnoMvVrVVU7K0/edit?usp=sharing). The figma file with the designs is [here](https://www.figma.com/file/hCHA4qjxQGiX06ddnWADyW/%5Byashraj's-copy%5D-Bitcoin-Wallet-UI-Kit-%26-Design-System?node-id=4331%3A66395&t=uV0lFmRXrQiv2AAB-1).
 
