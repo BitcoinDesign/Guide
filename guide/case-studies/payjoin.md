@@ -29,7 +29,16 @@ Conversion notes:
 ----->
 
 # Payments with Payjoin: A Case Study
+{:.no_toc}
 
+---
+
+<div class="glossary-toc" markdown="1">
+* Table of contents
+{:toc}
+</div>
+
+---
 
 ## Introduction
 
@@ -79,7 +88,7 @@ At this point in early 2023, payjoins have not achieved significant adoption in 
 This case study follows these tentative steps:
 
 - Understanding users & technical requirements for senders & receivers
-- Exploring the payjoin implementations: Blue Wallet (sending) and BTCPay Server (receiving)
+- Exploring the payjoin implementations: BlueWallet (sending) and BTCPay Server (receiving)
 - Creating user flows for senders & receivers based on the above
 
 
@@ -195,7 +204,13 @@ Here we will devise user flows for a POS system that can always be online. This 
 
 A receiver should be able to set up payjoin during onboarding on the platform (app or POS system) or any time after that. The following is a standalone payjoin setup flow.
 
-**ADD IMAGE HERE**
+{% include picture.html
+   image = "assets/images/guide/case-studies/payjoin case study/payjoin-receiver-flow@2x.png"
+   retina = "assets/images/guide/case-studies/payjoin case study/payjoin-receiver-flow@2x.png"
+   alt-text = "payjoin receiver flow"
+   width = 800
+   height = 458
+%}
 
 A detailed process flow integrated with onboarding is available in this [Figjam file](https://www.figma.com/file/NzMvwyzP7x5jfGmwNUKRov/PayJoin-Process-Flows?node-id=0%3A1&t=wSwewTOkQddWhagl-1).
 
