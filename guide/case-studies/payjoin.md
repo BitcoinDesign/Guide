@@ -4,7 +4,7 @@ title: Payments with Payjoin
 description: <>
 nav_order: 5
 parent: Case studies
-permalink: /guide/case-studies/payjoin-case study/
+permalink: /guide/case-studies/payjoin-case-study/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/case-studies/blixt-wallet/blixt-wallet-preview.jpg
 ---
@@ -90,7 +90,13 @@ Technically, everyone conducting transactions on the Bitcoin blockchain can use 
 1. Institutions (businesses, bitcoin exchanges etc.) and individuals
 2. sender and receiver of a payment
 
-**ADD IMAGE HERE**
+{% include picture.html
+   image = "assets/images/guide/case-studies/payjoin case study/users, goals and stories.png"
+   retina = "assets/images/guide/case-studies/payjoin case study/users, goals and stories@2x.png"
+   alt-text = "Payjoin users, goals and stories"
+   width = 800
+   height = 939
+%}
 
 <div markdown="1">
 
@@ -109,11 +115,15 @@ Participating in payjoin transactions is relatively straightforward for a sender
 
 #### Investigation: Blue Wallet [Video](https://www.youtube.com/watch?v=xowwF2yFSZ8) Breakdown
 
-This is the payjoin flow in BlueWallet:
+We analyzed the payjoin user flow in BlueWallet. Read the detailed investigation [here](https://docs.google.com/document/d/1_de2pkMREGpZQwOefQdH-MZNSUPazObgRK1cruiWBmo/edit#bookmark=id.jamlvi37p922).
 
-**ADD IMAGE HERE**
-
-We analyzed the payjoin user flow in Blue Wallet. Read the detailed investigation [here](https://docs.google.com/document/d/1_de2pkMREGpZQwOefQdH-MZNSUPazObgRK1cruiWBmo/edit#bookmark=id.jamlvi37p922).
+{% include picture.html
+   image = "assets/images/guide/case-studies/payjoin case study/bluewallet-sender-flow.png"
+   retina = "assets/images/guide/case-studies/payjoin case study/bluewallet-sender-flow@2x.png"
+   alt-text = "bluewallet sender flow"
+   width = 800
+   height = 54
+%}
 
 Here are the findings:
 
@@ -144,7 +154,13 @@ The above steps are not important to the users involved in the transaction, and 
 
 ### The intention is to keep the user-flow as close to the default flow as possible. Where it becomes necessary to deviate, we educate and help the user to navigate the UI.
 
-**ADD IMAGE HERE**
+{% include picture.html
+   image = "assets/images/guide/case-studies/payjoin case study/payjoin sender flow.png"
+   retina = "assets/images/guide/case-studies/payjoin case study/payjoin sender flow@2x.png"
+   alt-text = "payjoin sender flow"
+   width = 800
+   height = 374
+%}
 
 These mockups are adapted from existing mockups created by Christoph and the Bitcoin Design Community according to the Bitcoin Wallet UI Kit & Design System.
 
@@ -153,11 +169,7 @@ A detailed explainer of each screen can be viewed [here](https://docs.google.com
 
 ### Receiving Payjoins
 
-Based on the BIP-78 protocol, the receiver has higher requirements than the sender does. See below table for details:
-
-
-**Table removed here, consider revising nearby sentences**
-
+Based on the BIP-78 protocol, [the receiver has higher requirements](http://0.0.0.0:4000/guide/case-studies/payjoin-case-study/#understanding-users--requirements) than the sender does. While senders need a compatible mobile wallet, they cannot serve an always-online endpoint. Businesses & institutions on other hand could implement a payjoin receiver setup easily, but avoid hot wallets due to security concerns.
 
 ### While practically every mobile wallet is a hot wallet and it is trivial to fund it, having an online server where the payjoin handshake can be performed is difficult for technical and practical reasons. This might be the biggest impediment to payjoin support and adoption so far.
 
@@ -177,7 +189,7 @@ Here are problems identified:
 Read the full analysis on [receiving payjoin payments on BTCPay](https://docs.google.com/document/d/1_de2pkMREGpZQwOefQdH-MZNSUPazObgRK1cruiWBmo/edit?usp=sharing) here.
 
 
-#### Proposed Receiver FlowPayJoin Receiver Flows
+#### Proposed Receiver Flow
 
 Here we will devise user flows for a POS system that can always be online. This excludes mobile wallets.
 
