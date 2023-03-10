@@ -172,6 +172,8 @@ We analyzed the payjoin user flow in BlueWallet. Read the detailed investigation
 {% include picture.html
    image = "assets/images/guide/case-studies/payjoin case study/bluewallet-sender-flow.png"
    retina = "assets/images/guide/case-studies/payjoin case study/bluewallet-sender-flow@2x.png"
+   mobile = "assets/images/guide/case-studies/payjoin case study/bluewallet-sender-flow-mobile.png"
+   mobileRetina = "assets/images/guide/case-studies/payjoin case study/bluewallet-sender-flow-mobile@2x.png"
    alt-text = "bluewallet sender flow"
    width = 800
    height = 54
