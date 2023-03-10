@@ -108,12 +108,55 @@ Technically, everyone conducting transactions on the Bitcoin blockchain can use 
 %}
 
 <div markdown="1">
-
-|       | Requirements          | Benefits |
-|:-------------|:------------------|:------|
-| Sender           | <ul><li>Wallet support</li><li>Internet connection</li></ul> | <ul><li>Improved Privacy</li></ul>  |
-| Receiver (includes merchants) | <ul><li>Hot wallet (for signing transactions)</li><li>Serve/maintain secure web endpoint</li><li>Wallet support</li><li>Funds in hot wallet</li></ul>   | <ul><li>Privacy</li><li>UTXO consolidation</li><li>Fee savings</li></ul> |
-
+   <table>
+   <thead>
+      <tr>
+         <th>
+            Party
+         </th>
+         <th>
+            Requirements
+         </th>
+         <th>
+            Benefits
+         </th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Sender</td>
+         <td>
+            <ul>
+               <li>Wallet support</li>
+               <li>Internet connection</li>
+            </ul>
+         </td>
+         <td>
+            <ul>
+               <li>Improved Privacy</li>
+            </ul>
+         </td>
+      </tr>
+      <tr>
+         <td>Receiver (includes merchants)</td>
+         <td>
+            <ul>
+               <li>Hot wallet (for signing transactions)</li>
+               <li>Serve/maintain secure web endpoint</li>
+               <li>Wallet support</li>
+               <li>Funds in hot wallet</li>
+            </ul>
+         </td>
+         <td>
+            <ul>
+               <li>Privacy</li>
+               <li>UTXO consolidation</li>
+               <li>Fee savings</li>
+            </ul>
+         </td>
+      </tr>
+   </tbody>
+</table>
 </div>
 
 
