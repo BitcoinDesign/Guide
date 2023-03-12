@@ -5,8 +5,33 @@ description: <>
 nav_order: 5
 parent: Case studies
 permalink: /guide/case-studies/payjoin-case-study/
+redirect_from:
+ - /guide/payments/contacts/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/case-studies/blixt-wallet/blixt-wallet-preview.jpg
+image_base: /assets/images/guide/case-studies/payjoin-case-study/sender-flow-screens/
+sender-flow-screens:
+    - file: create-payjoin-tx
+      modalImage: create-payjoin-tx
+      alt: create-payjoin-tx
+      caption: create-payjoin-tx
+    - file: send-fee-range-selection
+      modalImage: send-fee-range-selection
+      alt: send-fee-range-selection
+      caption: send-fee-range-selection
+    - file: payjoin-handshake-transition
+      modalImage: payjoin-handshake-transition
+      alt: payjoin-handshake-transition
+      caption: payjoin-handshake-transition
+    - file: send-review
+      modalImage: send-review
+      alt: send-review
+      caption: send-review
+    - file: send-payjoin-success
+      modalImage: send-review
+      alt: send-review
+      caption: send-review
+
 ---
 
 <!--
@@ -60,8 +85,8 @@ The sender on the other hand needs little-to-no setup (apart from using a suppor
 ### What is a Payjoin?
 
 {% include picture.html
-   image = "assets/images/guide/case-studies/payjoin case study/payjoin-bip78-process.png"
-   retina = "assets/images/guide/case-studies/payjoin case study/payjoin-bip78-process@2x.png"
+   image = "assets/images/guide/case-studies/- /payjoin-bip78-process.png"
+   retina = "assets/images/guide/case-studies/payjoin-case-study/payjoin-bip78-process@2x.png"
    alt-text = "Diagram of a BIP-78 payjoin process"
    width = 800
    height = 683
@@ -100,8 +125,8 @@ Technically, everyone conducting transactions on the Bitcoin blockchain can use 
 2. sender and receiver of a payment
 
 {% include picture.html
-   image = "assets/images/guide/case-studies/payjoin case study/users, goals and stories.png"
-   retina = "assets/images/guide/case-studies/payjoin case study/users, goals and stories@2x.png"
+   image = "assets/images/guide/case-studies/payjoin-case-study/users, goals and stories.png"
+   retina = "assets/images/guide/case-studies/payjoin-case-study/users, goals and stories@2x.png"
    alt-text = "Payjoin users, goals and stories"
    width = 800
    height = 939
@@ -170,10 +195,10 @@ Participating in payjoin transactions is relatively straightforward for a sender
 We analyzed the payjoin user flow in BlueWallet. Read the detailed investigation [here](https://docs.google.com/document/d/1_de2pkMREGpZQwOefQdH-MZNSUPazObgRK1cruiWBmo/edit#bookmark=id.jamlvi37p922).
 
 {% include picture.html
-   image = "assets/images/guide/case-studies/payjoin case study/bluewallet-sender-flow.png"
-   retina = "assets/images/guide/case-studies/payjoin case study/bluewallet-sender-flow@2x.png"
-   mobile = "assets/images/guide/case-studies/payjoin case study/bluewallet-sender-flow-mobile.png"
-   mobileRetina = "assets/images/guide/case-studies/payjoin case study/bluewallet-sender-flow-mobile@2x.png"
+   image = "assets/images/guide/case-studies/payjoin-case-study/bluewallet-sender-flow.png"
+   retina = "assets/images/guide/case-studies/payjoin-case-study/bluewallet-sender-flow@2x.png"
+   mobile = "assets/images/guide/case-studies/payjoin-case-study/bluewallet-sender-flow-mobile.png"
+   mobileRetina = "assets/images/guide/case-studies/payjoin-case-study/bluewallet-sender-flow-mobile@2x.png"
    alt-text = "bluewallet sender flow"
    width = 800
    height = 54
@@ -193,8 +218,8 @@ For the purpose of creating the sender flow, we will assume that the receiver on
 ### In short, the sender flow outlined here asks the user to choose a fee-range instead of a fee-amount (or fee-rate) while keeping the rest of the user flow almost exactly the same. We use it to set 3 optional parameters specified in BIP-78, which can be used to construct a simple but effective payjoin implementation.
 
 {% include picture.html
-   image = "assets/images/guide/case-studies/payjoin case study/payjoin sender flow.png"
-   retina = "assets/images/guide/case-studies/payjoin case study/payjoin sender flow@2x.png"
+   image = "assets/images/guide/case-studies/payjoin-case-study/payjoin sender flow.png"
+   retina = "assets/images/guide/case-studies/payjoin-case-study/payjoin sender flow@2x.png"
    alt-text = "payjoin sender flow"
    width = 800
    height = 374
@@ -216,16 +241,14 @@ The above steps are not important to the users involved in the transaction, and 
 
 ### The intention is to keep the user-flow as close to the default flow as possible. Where it becomes necessary to deviate, we educate and help the user to navigate the UI.
 
-{% include picture.html
-   image = "assets/images/guide/case-studies/payjoin case study/sender-flow-prototype.png"
-   retina = "assets/images/guide/case-studies/payjoin case study/sender-flow-prototype@2x.png"
-   alt-text = "sender flow prototype"
-   caption = "These mockups are adapted from existing mockups created by Christoph and the Bitcoin Design Community according to the Bitcoin Wallet UI Kit & Design System."
-   width = 800
-   height = 754
-%}
+<div class="image-slide-gallery">
+
+{% include image-gallery.html pages = page.sender-flow-screens %}
+
+</div>
 
 A detailed explainer of each screen can be viewed [here](https://docs.google.com/document/d/1laHP3TqU6zzf0ajpQfQ5qaP0wUUQXNNnoMvVrVVU7K0/edit?usp=sharing). The figma file with the designs is [here](https://www.figma.com/file/hCHA4qjxQGiX06ddnWADyW/%5Byashraj's-copy%5D-Bitcoin-Wallet-UI-Kit-%26-Design-System?node-id=4331%3A66395&t=uV0lFmRXrQiv2AAB-1).
+
 
 
 ### Receiving Payjoins
@@ -257,8 +280,8 @@ Here we will devise user flows for a POS system that can always be online. This 
 A receiver should be able to set up payjoin during onboarding on the platform (app or POS system) or any time after that. The following is a standalone payjoin setup flow.
 
 {% include picture.html
-   image = "assets/images/guide/case-studies/payjoin case study/payjoin-receiver-flow@2x.png"
-   retina = "assets/images/guide/case-studies/payjoin case study/payjoin-receiver-flow@2x.png"
+   image = "assets/images/guide/case-studies/payjoin-case-study/payjoin-receiver-flow@2x.png"
+   retina = "assets/images/guide/case-studies/payjoin-case-study/payjoin-receiver-flow@2x.png"
    alt-text = "payjoin receiver flow"
    width = 800
    height = 458
