@@ -262,7 +262,7 @@ If the user lost their mobile device as well, they will not be able to replace t
 
 {% include image-gallery.html pages = page.images_recovery_cloud %}
 
-#### The user forgets their PIN
+#### The user forgot their PIN
 
 As previously stated, if a user misplaces their mobile device and can't remember their PIN, they won't be able to recover their wallet.
 
