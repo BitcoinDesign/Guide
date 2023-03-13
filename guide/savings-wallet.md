@@ -238,7 +238,7 @@ For them to recover their wallet again, they would need the following:
 
 They can use their PIN to unlock the cloud key and, with the help of the signing device, recover their wallet. If the user loses any 1 of these 3 things, they will not be able to recover their wallet again. 
 
-#### The user loses their signing device
+#### The user lost their signing device
 
 It is less likely, but possible, that a user may misplace or lose their signing device, for example, in the event of a fire.
 
