@@ -233,7 +233,7 @@ At some point, users are likely to either lose their mobile device, purchase a n
 
 For them to recover their wallet again, they would need the following:
 1. The sign-in details of the cloud account that contains the backup key 
-2. Remember the PIN they created on the wallet set up to decrypt the cloud key
+2. The PIN they created when setting up the wallet, to decrypt the cloud key
 3. Have access to their signing device
 
 They can use their PIN to unlock the cloud key and, with the help of the signing device, recover their wallet. If the user loses any 1 of these 3 things, they will not be able to recover their wallet again. 
