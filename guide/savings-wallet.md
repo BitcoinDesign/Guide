@@ -232,7 +232,7 @@ Here are different scenarios where users may lose access to their wallet or keys
 At some point, users are likely to either lose their mobile device, purchase a new one, or delete the wallet app.
 
 For them to recover their wallet again, they would need the following:
-1. Remember the sign-in details of the cloud account that contains the backup key 
+1. The sign-in details of the cloud account that contains the backup key 
 2. Remember the PIN they created on the wallet set up to decrypt the cloud key
 3. Have access to their signing device
 
