@@ -227,7 +227,7 @@ Restoring a bitcoin wallet or replacing keys may be necessary for various reason
 
 Here are different scenarios where users may lose access to their wallet or keys and potential methods to resolve the problem:
 
-#### The user loses their mobile device
+#### The user lost their mobile device
 
 At some point, users are likely to either lose their mobile device, purchase a new one, or delete the wallet app.
 
