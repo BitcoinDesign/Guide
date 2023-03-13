@@ -223,7 +223,7 @@ For larger transactions, the wallet application provider will no longer automati
 
 ### Wallet Recovery and Key Replacement
 
-Restoring a bitcoin wallet or replacing keys may be necessary for various reasons. The user may have lost their mobile or signing device, or they might have lost access to their backup cloud account. Regardless of the reason, wallet applications must offer a straightforward recovery option for users to regain access to their funds.
+Restoring a bitcoin wallet or replacing keys may be necessary for various reasons. The user may have lost their mobile phone, signing device, or access to their cloud account backup. Regardless of the reason, wallet applications must offer a straightforward recovery option for users to regain access to their funds.
 
 Here are different scenarios where users may lose access to their wallet or keys and potential methods to resolve the problem:
 
