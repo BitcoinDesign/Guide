@@ -250,7 +250,7 @@ With these 2 things in place, they can simply rotate in a new key. However, if t
 
 {% include image-gallery.html pages = page.images_recovery %}
 
-#### The user loses access to their cloud account
+#### The user lost access to their cloud account
 
 Occasionally, users may forget their cloud account sign-in credentials or, on rare occasions, accidentally delete the backup file.
 
