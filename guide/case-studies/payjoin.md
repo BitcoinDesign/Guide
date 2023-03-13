@@ -13,24 +13,24 @@ image_base: /assets/images/guide/case-studies/payjoin-case-study/sender-flow-scr
 sender-flow-screens:
     - file: create-payjoin-tx
       modalImage: create-payjoin-tx
-      alt: create-payjoin-tx
-      caption: create-payjoin-tx
+      alt: A wallet supporting payjoin presents a screen with payjoin already enabled.
+      caption: A wallet supporting payjoin presents a screen with payjoin already enabled.
     - file: send-fee-range-selection
       modalImage: send-fee-range-selection
-      alt: send-fee-range-selection
-      caption: send-fee-range-selection
+      alt: The user is presented with options of fee-ranges to choose from, in an interface very close to the default.
+      caption: The user is presented with options of fee-ranges to choose from, in an interface very close to the default.
     - file: payjoin-handshake-transition
       modalImage: payjoin-handshake-transition
-      alt: payjoin-handshake-transition
-      caption: payjoin-handshake-transition
+      alt: A transition screen is displayed indicating the payjoin construction and signing process.
+      caption: A transition screen is displayed indicating the payjoin construction and signing process.
     - file: send-review
       modalImage: send-review
-      alt: send-review
-      caption: send-review
+      alt: The pre-broadcast review screen with the finalised fee after the payjoin handshake is completed.
+      caption: The pre-broadcast review screen with the finalised fee after the payjoin handshake is completed.
     - file: send-payjoin-success
-      modalImage: send-review
-      alt: send-review
-      caption: send-review
+      modalImage: send-payjoin-success
+      alt: A payment success screen informs the user that the Payjoin transaction has been broadcast.
+      caption: A payment success screen informs the user that the Payjoin transaction has been broadcast.
 
 ---
 
@@ -163,7 +163,7 @@ Technically, everyone conducting transactions on the Bitcoin blockchain can use 
          </td>
       </tr>
       <tr>
-         <td>Receiver (includes merchants)</td>
+         <td>Receiver</td>
          <td>
             <ul>
                <li>Hot wallet (for signing transactions)</li>
@@ -328,8 +328,12 @@ Here are some examples:
 - Payjoin coordination over NFC (or other wireless near-range communication technology)
 - BIP-78 could to allow 1 more iteration where sender can adjust fees post-handshake & send it back to receiver to broadcast
 
-This case study not only tackles the design aspects around Payjoin, it hopes to boost interest in the various use cases and benefits.
+This case study not only tackles the design aspects around Payjoin, it hopes to boost interest in the various use cases and benefits. Please get in touch with the Bitcoin Design Community for seeking or giving advice or help about designing for Payjoin.
 
+*Gratitude:*
+- *[Pavlenex](https://pavlenex.com/) from BTCPay for providing access to a Payjoin-capable btcpay instance to test receiving*
+- *[Nicolas Dorier](https://twitter.com/nicolasdorier) for reviewing the case study content and engaging on Payjoin in general*
+- *Finally, thanks [Dan Gould](https://twitter.com/bitgould) for invaluable guidance, patience and passion*
 
 ## Resources
 
