@@ -12,23 +12,23 @@ image: https://bitcoin.design/assets/images/guide/case-studies/blixt-wallet/blix
 image_base: /assets/images/guide/case-studies/payjoin-case-study/sender-flow-screens/
 sender-flow-screens:
     - file: create-payjoin-tx
-      modalImage: create-payjoin-tx
+      modalImage: create-payjoin-tx@2x
       alt: A wallet supporting payjoin presents a screen with payjoin already enabled.
       caption: A wallet supporting payjoin presents a screen with payjoin already enabled.
     - file: send-fee-range-selection
-      modalImage: send-fee-range-selection
+      modalImage: send-fee-range-selection@2x
       alt: The user is presented with options of fee-ranges to choose from, in an interface very close to the default.
       caption: The user is presented with options of fee-ranges to choose from, in an interface very close to the default.
     - file: payjoin-handshake-transition
-      modalImage: payjoin-handshake-transition
+      modalImage: payjoin-handshake-transition@2x
       alt: A transition screen is displayed indicating the payjoin construction and signing process.
       caption: A transition screen is displayed indicating the payjoin construction and signing process.
     - file: send-review
-      modalImage: send-review
+      modalImage: send-review@2x
       alt: The pre-broadcast review screen with the finalised fee after the payjoin handshake is completed.
       caption: The pre-broadcast review screen with the finalised fee after the payjoin handshake is completed.
     - file: send-payjoin-success
-      modalImage: send-payjoin-success
+      modalImage: send-payjoin-success@2x
       alt: A payment success screen informs the user that the Payjoin transaction has been broadcast.
       caption: A payment success screen informs the user that the Payjoin transaction has been broadcast.
 
