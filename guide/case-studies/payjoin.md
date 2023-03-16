@@ -67,7 +67,7 @@ Conversion notes:
 
 ## Introduction
 
-Payjoin transactions can be a powerful tool providing privacy, fee-savings and UTXO consolidation benefits to users. They also present challenges and trade-offs due to their synchronous, multi-party nature.
+Payjoin transactions can be a powerful tool providing privacy, fee-savings and UTXO consolidation benefits to users. They also present challenges and trade-offs due to their interactive & synchronous, multi-party nature.
 
 ### Payjoin transactions break some of the chain analysis [heuristics](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki#motivation) during the course of making a payment. However, real time coordination between the sender & receiver mediated through an endpoint is required to construct them.
 
@@ -96,7 +96,7 @@ A bitcoin transaction where the sender and receiver construct a transaction toge
 
 It is also called pay-to-endpoint (P2EP) since the coordination is mediated through an endpoint run by the receiver. The endpoint address is communicated through a BIP-21 URI along with the payment address and amount.
 
-In the payjoin process, parties edit, sign and pass iterations of the transaction between each other before a final version is broadcasted. [BIP-78](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki#user-content-Respecting_the_minimum_relay_fee_policy) codifies a protocol with 2 iterations, as shown in the visual here.
+In the payjoin process, parties edit, sign and pass iterations of the transaction between each other before a final version is broadcasted. [BIP-78](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki#user-content-Respecting_the_minimum_relay_fee_policy) codifies a protocol with 2 iterations (or one round of interaction beyond address sharing), as shown in the visual here.
 
 
 ### Background
@@ -259,7 +259,7 @@ Based on the BIP-78 protocol, [the receiver has higher requirements](http://0.0.
 
 #### Investigation: BTCPay merchant/receiving
 
-The author successfully tested receiving payjoins (BTCPay 1.7.12) in Feb 2023.
+The author successfully tested receiving payjoins (BTCPay v1.7.12) in Feb 2023.
 
 Here are problems identified:
 
