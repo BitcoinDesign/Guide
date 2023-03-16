@@ -61,7 +61,7 @@ Conversion notes:
    layout = "full-width"
 %}
 
-# The Payjoin Experience: A Case Study
+# The Payjoin Experience
 {:.no_toc}
 
 ---
@@ -240,7 +240,7 @@ View this flow in [Figjam here](https://www.figma.com/file/69uUDWVc8N9t5Bej8pZEs
 
 ##### The Payjoin handshake
 
-<p class="h3">The term ‘Payjoin handshake’ is being introduced to succinctly describe the process of sending a original PSBT to receiver’s endpoint, receiver contributing their inputs, modifying the transaction as needed and signing the new draft of the transaction.</p>
+### The term ‘Payjoin handshake’ is being introduced to succinctly describe the process of sending a original PSBT to receiver’s endpoint, receiver contributing their inputs, modifying the transaction as needed and signing the new draft of the transaction.</p>
 
 The above steps are not important to the users involved in the transaction, and do not need specific user action from either the sender or receiver. More generally, the transacting parties need not even be aware that this is occurring.
 
