@@ -123,7 +123,7 @@ As a user's behavior and application usage change, the current security settings
 
 {% include image-gallery.html pages = page.images_reminders %}
 
-Here are some starting considerations for designing these behavior:
+Here are some starting considerations for designing these behaviors:
 
 - Purpose: Should the user remember their PIN, perform a general security check-up, or adjust their security based on context?
 - Trigger event: Has a certain time interval passed (fixed or spaced), a threshold been exceeded, or a certain action been taken (e.g. first deposit)?
