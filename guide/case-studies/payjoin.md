@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Payments with Payjoin
+title: The Payjoin Experience
 description: <>
 nav_order: 5
 parent: Case studies
@@ -53,7 +53,7 @@ Conversion notes:
 
 ----->
 
-# Payments with Payjoin: A Case Study
+# The Payjoin Experience: A Case Study
 {:.no_toc}
 
 ---
