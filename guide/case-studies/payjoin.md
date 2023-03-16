@@ -52,6 +52,14 @@ Conversion notes:
 * This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
 
 ----->
+{% include picture.html
+   image = "assets/images/guide/case-studies/payjoin-case-study/header-graphic-metaphor-banner.png"
+   retina = "assets/images/guide/case-studies/payjoin-case-study/header-graphic-metaphor-banner@2x.png"
+   alt-text = "Payjoin case study banner image"
+   width = 1600
+   height = 600
+   layout = "full-width"
+%}
 
 # The Payjoin Experience: A Case Study
 {:.no_toc}
@@ -85,7 +93,7 @@ The sender on the other hand needs little-to-no setup (apart from using a suppor
 ### What is a Payjoin?
 
 {% include picture.html
-   image = "assets/images/guide/case-studies/- /payjoin-bip78-process.png"
+   image = "assets/images/guide/case-studies/payjoin-case-study/payjoin-bip78-process.png"
    retina = "assets/images/guide/case-studies/payjoin-case-study/payjoin-bip78-process@2x.png"
    alt-text = "Diagram of a BIP-78 payjoin process"
    width = 800
