@@ -75,7 +75,7 @@ Conversion notes:
 
 ## Introduction
 
-Payjoin transactions can be a powerful tool providing privacy, fee-savings and UTXO consolidation benefits to users. They also present challenges and trade-offs due to their interactive & synchronous, multi-party nature.
+Payjoin transactions can be a powerful tool providing privacy, fee-savings and UTXO consolidation benefits to users. They also present challenges and trade-offs due to their interactive & synchronous nature.
 
 ### Payjoin transactions break some of the chain analysis [heuristics](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki#motivation) during the course of making a payment. However, real time coordination between the sender & receiver mediated through an endpoint is required to construct them.
 
@@ -226,8 +226,8 @@ For the purpose of creating the sender flow, we will assume that the receiver on
 ### In short, the sender flow outlined here asks the user to choose a fee-range instead of a fee-amount (or fee-rate) while keeping the rest of the user flow almost exactly the same. We use it to set 3 optional parameters specified in BIP-78, which can be used to construct a simple but effective payjoin implementation.
 
 {% include picture.html
-   image = "assets/images/guide/case-studies/payjoin-case-study/payjoin sender flow.png"
-   retina = "assets/images/guide/case-studies/payjoin-case-study/payjoin sender flow@2x.png"
+   image = "assets/images/guide/case-studies/payjoin-case-study/payjoin-sender-flow.png"
+   retina = "assets/images/guide/case-studies/payjoin-case-study/payjoin-sender-flow@2x.png"
    alt-text = "payjoin sender flow"
    width = 800
    height = 374
