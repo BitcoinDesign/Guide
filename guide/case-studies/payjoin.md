@@ -1,34 +1,32 @@
 ---
 layout: guide
 title: The Payjoin experience
-description: <>
+description: This case study is an analysis and exploration of payjoin's audience, implementations, features and proposes specific user flows.
 nav_order: 6
 parent: Case studies
-permalink: /guide/case-studies/payjoin-case-study/
-redirect_from:
- - /guide/payments/contacts/
+permalink: /guide/case-studies/payjoin/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/case-studies/blixt-wallet/blixt-wallet-preview.jpg
 image_base: /assets/images/guide/case-studies/payjoin-case-study/sender-flow-screens/
 sender-flow-screens:
     - file: create-payjoin-tx
-      modalImage: create-payjoin-tx@2x
-      alt: A wallet supporting payjoin presents a screen with payjoin already enabled.
+      modalImage: create-payjoin-tx-big
+      alt: A create transaction screen displaying an address, amount, a payjoin toggle enabled by default with a Proceed to Fee Estimate button.
       caption: A wallet supporting payjoin presents a screen with payjoin already enabled.
     - file: send-fee-range-selection
-      modalImage: send-fee-range-selection@2x
-      alt: The user is presented with options of fee-ranges to choose from, in an interface very close to the default.
+      modalImage: send-fee-range-selection-big
+      alt: A fee range selection screen presenting 3 options with associated confirmation estimates. Help text informs the user that the fees will be finalized once the payjoin process is done.
       caption: The user is presented with options of fee-ranges to choose from, in an interface very close to the default.
     - file: payjoin-handshake-transition
-      modalImage: payjoin-handshake-transition@2x
-      alt: A transition screen is displayed indicating the payjoin construction and signing process.
+      modalImage: payjoin-handshake-transition-big
+      alt: A transition screen shown informing  the user that the payjoin process is in process.
       caption: A transition screen is displayed indicating the payjoin construction and signing process.
     - file: send-review
-      modalImage: send-review@2x
-      alt: The pre-broadcast review screen with the finalised fee after the payjoin handshake is completed.
+      modalImage: send-review-big
+      alt: A pre-sending review screen showing the finalised fee after the payjoin handshake is completed.
       caption: The pre-broadcast review screen with the finalised fee after the payjoin handshake is completed.
     - file: send-payjoin-success
-      modalImage: send-payjoin-success@2x
+      modalImage: send-payjoin-success-big
       alt: A payment success screen informs the user that the Payjoin transaction has been broadcast.
       caption: A payment success screen informs the user that the Payjoin transaction has been broadcast.
 
@@ -42,16 +40,6 @@ Illustration sources: <>
 
 -->
 
-<!-----
-Conversion notes:
-
-* Docs to Markdown version 1.0β34
-* Sun Mar 05 2023 13:50:07 GMT-0800 (PST)
-* Source doc: [restructure] Payments with Payjoin: A Case Study
-* Tables are currently converted to HTML tables.
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
-
------>
 {% include picture.html
    image = "assets/images/guide/case-studies/payjoin-case-study/header-graphic-metaphor-banner.png"
    retina = "assets/images/guide/case-studies/payjoin-case-study/header-graphic-metaphor-banner@2x.png"
@@ -61,9 +49,9 @@ Conversion notes:
    layout = "full-width"
 %}
 
+
 # The Payjoin Experience
 {:.no_toc}
-
 ---
 
 <div class="glossary-toc" markdown="1">
@@ -73,13 +61,11 @@ Conversion notes:
 
 ---
 
-## Introduction
+A bitcoin transaction where the sender and receiver collaboratively construct a transaction is called a Payjoin. Payjoin transactions can be a powerful tool providing privacy, fee-savings and UTXO consolidation benefits to users. They also present challenges and trade-offs due to their interactive & synchronous nature.
 
-Payjoin transactions can be a powerful tool providing privacy, fee-savings and UTXO consolidation benefits to users. They also present challenges and trade-offs due to their interactive & synchronous nature.
+**Payjoin transactions break some of the chain analysis [heuristics](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki#motivation) during the course of making a payment. However, real time coordination between the sender & receiver mediated through an endpoint is required to construct them.**
 
-### Payjoin transactions break some of the chain analysis [heuristics](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki#motivation) during the course of making a payment. However, real time coordination between the sender & receiver mediated through an endpoint is required to construct them.
-
-The case study:
+This case study:
 
 - Outlines the incentives and objectives for both senders & receivers
 - Analyses the Payjoin UX on both sides and proposes approaches to design Payjoin experiences.
@@ -92,6 +78,10 @@ The sender on the other hand needs little-to-no setup (apart from using a suppor
 
 ### What is a Payjoin?
 
+In a payjoin, both the sender and receiver contribute inputs to the transaction in a coordinated manner. The payjoin mechanism is also called pay-to-endpoint (P2EP) since the coordination is mediated through an endpoint run by the receiver. The endpoint address is communicated through a [BIP-21](https://bitcoinqr.dev) URI along with the payment address and amount.
+
+In the payjoin process, parties edit, sign and pass iterations of the transaction between each other before a final version is broadcasted. [BIP-78](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki#user-content-Respecting_the_minimum_relay_fee_policy) codifies a protocol with 2 iterations (or one round of interaction beyond address sharing), as shown in the visual here.
+
 {% include picture.html
    image = "assets/images/guide/case-studies/payjoin-case-study/payjoin-bip78-process.png"
    retina = "assets/images/guide/case-studies/payjoin-case-study/payjoin-bip78-process@2x.png"
@@ -100,16 +90,9 @@ The sender on the other hand needs little-to-no setup (apart from using a suppor
    height = 683
 %}
 
-A bitcoin transaction where the sender and receiver construct a transaction together by contributing inputs is called a Payjoin.
-
-It is also called pay-to-endpoint (P2EP) since the coordination is mediated through an endpoint run by the receiver. The endpoint address is communicated through a BIP-21 URI along with the payment address and amount.
-
-In the payjoin process, parties edit, sign and pass iterations of the transaction between each other before a final version is broadcasted. [BIP-78](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki#user-content-Respecting_the_minimum_relay_fee_policy) codifies a protocol with 2 iterations (or one round of interaction beyond address sharing), as shown in the visual here.
-
-
 ### Background
 
-The payjoin case study has its origins in a [design challenge]({{ '/guide/resources/design-challenges/#challenge-6-private-purchase' | relative_url }}), which entailed creating a sender flow for payment using a Payjoin transaction.
+This case study has its origins in a [design challenge]({{ '/guide/resources/design-challenges/#challenge-6-private-purchase' | relative_url }}), which entailed creating a sender flow for payment using a Payjoin transaction.
 
 While payjoin provides privacy improvements and potential fee-savings, they present the challenge of coordination between transacting parties and may require new user flows to implement features enabled through [BIP-78](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki).
 
@@ -198,9 +181,9 @@ Technically, everyone conducting transactions on the Bitcoin blockchain can use 
 Participating in payjoin transactions is relatively straightforward for a sender. They only need a supporting wallet and have to be online during the process.
 
 
-#### Investigation: Blue Wallet [Video](https://www.youtube.com/watch?v=xowwF2yFSZ8) Breakdown
+#### Investigation: BlueWallet Breakdown
 
-We analyzed the payjoin user flow in BlueWallet. Read the detailed investigation [here](https://docs.google.com/document/d/1_de2pkMREGpZQwOefQdH-MZNSUPazObgRK1cruiWBmo/edit#bookmark=id.jamlvi37p922).
+We analyzed the payjoin user flow in BlueWallet's pioneering implementation from 2020. Read the [detailed investigation](https://docs.google.com/document/d/1_de2pkMREGpZQwOefQdH-MZNSUPazObgRK1cruiWBmo/edit#bookmark=id.jamlvi37p922).
 
 {% include picture.html
    image = "assets/images/guide/case-studies/payjoin-case-study/bluewallet-sender-flow.png"
@@ -223,7 +206,7 @@ We designed a sender flow that attempts to address the issues identified above.
 
 For the purpose of creating the sender flow, we will assume that the receiver only contributes UTXOs but does not contribute to the fees since this allows a simple, automated process for both parties.
 
-** In short, the sender flow outlined here asks the user to choose a fee-range instead of a fee-amount (or fee-rate) while keeping the rest of the user flow almost exactly the same. We use it to set 3 optional parameters specified in BIP-78, which can be used to construct a simple but effective payjoin implementation.**
+**In short, the sender flow outlined here asks the user to choose a fee-range instead of a fee-amount (or fee-rate) while keeping the rest of the user flow almost exactly the same. We use it to set 3 optional parameters specified in BIP-78, which can be used to construct a simple but effective payjoin implementation.**
 
 {% include picture.html
    image = "assets/images/guide/case-studies/payjoin-case-study/payjoin-sender-flow.png"
@@ -247,12 +230,11 @@ The above steps are not important to the users involved in the transaction, and 
 
 ##### Prototypes for the Payjoin sender flow
 
-### The intention is to keep the user-flow as close to the default flow as possible. Where it becomes necessary to deviate, we educate and help the user to navigate the UI.
+**The intention is to keep the user-flow as close to the default flow as possible. Where it becomes necessary to deviate, we educate and help the user to navigate the UI.**
 
 
 {% include image-gallery.html pages = page.sender-flow-screens %}
 
-</div>
 
 A detailed explainer of each screen can be viewed [here](https://docs.google.com/document/d/1laHP3TqU6zzf0ajpQfQ5qaP0wUUQXNNnoMvVrVVU7K0/edit?usp=sharing). The figma file with the designs is [here](https://www.figma.com/file/hCHA4qjxQGiX06ddnWADyW/%5Byashraj's-copy%5D-Bitcoin-Wallet-UI-Kit-%26-Design-System?node-id=4331%3A66395&t=uV0lFmRXrQiv2AAB-1).
 
@@ -268,7 +250,7 @@ Based on the BIP-78 protocol, [the receiver has higher requirements]({{ '/guide/
 
 The author successfully tested receiving payjoins (BTCPay v1.7.12) in Feb 2023.
 
-Here are problems identified:
+Here are the insights:
 
 - Generating a payjoin-enabled payment link is automatic once it is setup
 - If the user chooses to add an existing hot wallet, BTCPay does not provide an option to enable payjoin on the same page like it does during new hot wallet creation
@@ -330,12 +312,12 @@ Payjoins can be complicated to understand or implement given the multiple partie
 Here are some examples:
 
 - Third-party endpoints could be used by receivers (turning off address substitution), trading some privacy for convenience
-- There is exciting work underway around [serverless](https://gist.github.com/DanGould/243e418752fff760c9f6b23bba8a32f9) payjoin implementation that would work great on platforms with both bitcoin & lightning
+- There is exciting work underway around [serverless](https://gist.github.com/DanGould/243e418752fff760c9f6b23bba8a32f9) payjoin implementation that would work great on platforms implementing both bitcoin & lightning
 - Receiver-side implementations could use address substitution to let users make payments of their own
 - Payjoin coordination over NFC (or other wireless near-range communication technology)
 - BIP-78 could to allow 1 more iteration where sender can adjust fees post-handshake & send it back to receiver to broadcast
 
-This case study not only tackles the design aspects around Payjoin, it hopes to boost interest in the various use cases and benefits. Please get in touch with the Bitcoin Design Community for seeking or giving advice or help about designing for Payjoin.
+This case study tackles the design aspects around payjoin and it hopes to boost interest in it's various use cases and benefits.
 
 *Gratitude:*
 - *[Pavlenex](https://pavlenex.com/) from BTCPay for providing access to a Payjoin-capable btcpay instance to test receiving*

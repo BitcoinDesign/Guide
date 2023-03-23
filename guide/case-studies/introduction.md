@@ -26,9 +26,9 @@ This was a collaboration between Blixt wallet and the Bitcoin Design Community t
 
 ---
 
-### [The Payjoin Experience]({{ '/guide/case-studies/payjoin-case-study/' | relative_url }})
+### [The Payjoin Experience]({{ '/guide/case-studies/payjoin' | relative_url }})
 
-This was an exploration and analysis of design and features of Payjoin.
+This case study is an analysis and exploration of payjoin's audience, implementations, features and proposes specific user flows.
 
 ---
 
