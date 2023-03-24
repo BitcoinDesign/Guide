@@ -198,7 +198,7 @@ We analyzed the payjoin user flow in BlueWallet's pioneering implementation from
 Here are the findings:
 
 - The fee rate drops once transaction size increases during the payjoin process, which may change estimated confirmation time
-- The flow results in a transaction that has a round amount fee-rate after removing one input, which may be used by chain analysis firms to spot payjoins
+- The flow results in a transaction that has a round fee-rate after removing one input, which may be used by chain analysis firms to spot payjoins
 
 #### The Payjoin Sender Flow
 
@@ -223,9 +223,9 @@ View this flow in [Figjam here](https://www.figma.com/file/69uUDWVc8N9t5Bej8pZEs
 
 ##### The Payjoin handshake
 
-** The term ‘Payjoin handshake’ is being introduced to succinctly describe the process of sending a original PSBT to receiver’s endpoint, receiver contributing their inputs, modifying the transaction as needed and signing the new draft of the transaction.**
+**This term is being introduced to succinctly describe the automated back-and-forth process between the sender and the receiver – where the original [PSBT]({{ '/guide/glossary/#partially-signed-bitcoin-transaction-psbt' | relative_url }}) containing only the sender's inputs is transformed into a signed, broadcastable transaction containing inputs from both parties.**
 
-The above steps are not important to the users involved in the transaction, and do not need specific user action from either the sender or receiver. More generally, the transacting parties need not even be aware that this is occurring.
+The above steps are not important to the users involved in the transaction, and do not require specific user action from either the sender or receiver. More generally, the transacting parties need not even be aware that this is occurring, but must ensure they remain online during the process.
 
 
 ##### Prototypes for the Payjoin sender flow
@@ -301,7 +301,7 @@ We learnt many things over the course of this case study, and the user flows we 
 - Maintaining an always-online endpoint seems to be the biggest hurdle for payjoin implementation, we list some alternatives here
 - Payjoin burdens the receiver with more requirements, but also provides more benefits and opportunities
 - Address substitution is a powerful idea from BIP-78: it is a risk that can become a powerful ally for the payjoiner
-- Payjoins receivers can leverage their daily spending wallet-saving wallet setup, where the daily spending is used by the receiver as the payjoin hot wallet
+- Instead of setting up another wallet, Payjoin receivers can leverage their daily spending wallet, which is used by the receiver as the Payjoin hot wallet
 - Payjoin implementations should be mindful of the round-fee-rate heuristic for identifying payjoins, handle it without need for user decisions
 
 
@@ -315,7 +315,7 @@ Here are some examples:
 - There is exciting work underway around [serverless](https://gist.github.com/DanGould/243e418752fff760c9f6b23bba8a32f9) payjoin implementation that would work great on platforms implementing both bitcoin & lightning
 - Receiver-side implementations could use address substitution to let users make payments of their own
 - Payjoin coordination over NFC (or other wireless near-range communication technology)
-- BIP-78 could to allow 1 more iteration where sender can adjust fees post-handshake & send it back to receiver to broadcast
+- BIP-78 could to allow 1 more iteration where the sender can adjust fees post-handshake & send it back to the receiver to broadcast
 
 This case study tackles the design aspects around payjoin and it hopes to boost interest in it's various use cases and benefits.
 
