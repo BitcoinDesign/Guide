@@ -6,8 +6,8 @@ nav_order: 6
 parent: Case studies
 permalink: /guide/case-studies/payjoin/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/case-studies/blixt-wallet/blixt-wallet-preview.jpg
-image_base: /assets/images/guide/case-studies/payjoin-case-study/sender-flow-screens/
+image: /assets/images/guide/case-studies/payjoin/header-graphic-metaphor-preview-image.png
+image_base: /assets/images/guide/case-studies/payjoin/sender-flow-screens/
 sender-flow-screens:
     - file: create-payjoin-tx
       modalImage: create-payjoin-tx-big
@@ -19,8 +19,8 @@ sender-flow-screens:
       caption: The user is presented with options of fee-ranges to choose from, in an interface very close to the default.
     - file: payjoin-handshake-transition
       modalImage: payjoin-handshake-transition-big
-      alt: A transition screen shown informing  the user that the payjoin process is in process.
-      caption: A transition screen is displayed indicating the payjoin construction and signing process.
+      alt: A transition screen shown informing the user that the payjoin process is in process.
+      caption: A transition screen is displayed indicating that payjoin construction and signing process.
     - file: send-review
       modalImage: send-review-big
       alt: A pre-sending review screen showing the finalised fee after the payjoin handshake is completed.
@@ -41,8 +41,8 @@ Illustration sources: <>
 -->
 
 {% include picture.html
-   image = "assets/images/guide/case-studies/payjoin-case-study/header-graphic-metaphor-banner.png"
-   retina = "assets/images/guide/case-studies/payjoin-case-study/header-graphic-metaphor-banner@2x.png"
+   image = "assets/images/guide/case-studies/payjoin/header-graphic-metaphor-banner.png"
+   retina = "assets/images/guide/case-studies/payjoin/header-graphic-metaphor-banner@2x.png"
    alt-text = "Payjoin case study banner image"
    width = 1600
    height = 600
@@ -83,8 +83,8 @@ In a payjoin, both the sender and receiver contribute inputs to the transaction 
 In the payjoin process, parties edit, sign and pass iterations of the transaction between each other before a final version is broadcasted. [BIP-78](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki#user-content-Respecting_the_minimum_relay_fee_policy) codifies a protocol with 2 iterations (or one round of interaction beyond address sharing), as shown in the visual here.
 
 {% include picture.html
-   image = "assets/images/guide/case-studies/payjoin-case-study/payjoin-bip78-process.png"
-   retina = "assets/images/guide/case-studies/payjoin-case-study/payjoin-bip78-process@2x.png"
+   image = "assets/images/guide/case-studies/payjoin/payjoin-bip78-process.png"
+   retina = "assets/images/guide/case-studies/payjoin/payjoin-bip78-process@2x.png"
    alt-text = "Diagram of a BIP-78 payjoin process"
    width = 800
    height = 683
@@ -112,12 +112,12 @@ This case study followed these steps:
 
 Technically, everyone conducting transactions on the Bitcoin blockchain can use payjoin. This case study categorises users in the following ways:
 
-1. Institutions (businesses, bitcoin exchanges etc.) and individuals
+1. Institutions (businesses, exchanges etc.) and individuals
 2. sender and receiver of a payment
 
 {% include picture.html
-   image = "assets/images/guide/case-studies/payjoin-case-study/users, goals and stories.png"
-   retina = "assets/images/guide/case-studies/payjoin-case-study/users, goals and stories@2x.png"
+   image = "assets/images/guide/case-studies/payjoin/users-goals-stories.png"
+   retina = "assets/images/guide/case-studies/payjoin/users-goals-stories@2x.png"
    alt-text = "Payjoin users, goals and stories"
    width = 800
    height = 939
@@ -186,10 +186,10 @@ Participating in payjoin transactions is relatively straightforward for a sender
 We analyzed the payjoin user flow in BlueWallet's pioneering implementation from 2020. Read the [detailed investigation](https://docs.google.com/document/d/1_de2pkMREGpZQwOefQdH-MZNSUPazObgRK1cruiWBmo/edit#bookmark=id.jamlvi37p922).
 
 {% include picture.html
-   image = "assets/images/guide/case-studies/payjoin-case-study/bluewallet-sender-flow.png"
-   retina = "assets/images/guide/case-studies/payjoin-case-study/bluewallet-sender-flow@2x.png"
-   mobile = "assets/images/guide/case-studies/payjoin-case-study/bluewallet-sender-flow-mobile.png"
-   mobileRetina = "assets/images/guide/case-studies/payjoin-case-study/bluewallet-sender-flow-mobile@2x.png"
+   image = "assets/images/guide/case-studies/payjoin/bluewallet-sender-flow.png"
+   retina = "assets/images/guide/case-studies/payjoin/bluewallet-sender-flow@2x.png"
+   mobile = "assets/images/guide/case-studies/payjoin/bluewallet-sender-flow-mobile.png"
+   mobileRetina = "assets/images/guide/case-studies/payjoin/bluewallet-sender-flow-mobile@2x.png"
    alt-text = "bluewallet sender flow"
    width = 800
    height = 54
@@ -209,8 +209,8 @@ For the purpose of creating the sender flow, we will assume that the receiver on
 **In short, the sender flow outlined here asks the user to choose a fee-range instead of a fee-amount (or fee-rate) while keeping the rest of the user flow almost exactly the same. We use it to set 3 optional parameters specified in BIP-78, which can be used to construct a simple but effective payjoin implementation.**
 
 {% include picture.html
-   image = "assets/images/guide/case-studies/payjoin-case-study/payjoin-sender-flow.png"
-   retina = "assets/images/guide/case-studies/payjoin-case-study/payjoin-sender-flow@2x.png"
+   image = "assets/images/guide/case-studies/payjoin/payjoin-sender-flow.png"
+   retina = "assets/images/guide/case-studies/payjoin/payjoin-sender-flow@2x.png"
    alt-text = "payjoin sender flow"
    width = 800
    height = 374
@@ -242,7 +242,7 @@ A detailed explainer of each screen can be viewed [here](https://docs.google.com
 
 ### Receiving Payjoins
 
-Based on the BIP-78 protocol, [the receiver has higher requirements]({{ '/guide/case-studies/payjoin-case-study/#understanding-users--requirements' | relative_url }}) than the sender does. While senders need a compatible mobile wallet, they cannot serve an always-online endpoint. Businesses & institutions on other hand could implement a payjoin receiver setup easily, but avoid hot wallets due to security concerns.
+Based on the BIP-78 protocol, [the receiver has higher requirements]({{ '/guide/case-studies/payjoin/#understanding-users--requirements' | relative_url }}) than the sender does. While senders need a compatible mobile wallet, they cannot serve an always-online endpoint. Businesses & institutions on other hand could implement a payjoin receiver setup easily, but avoid hot wallets due to security concerns.
 
 **While practically every mobile wallet is a hot wallet and it is trivial to fund it, having an online server where the payjoin handshake can be performed is difficult for technical and practical reasons. This might be the biggest impediment to payjoin support and adoption so far.**
 
@@ -269,8 +269,8 @@ Here we will devise user flows for a point-of-sale (POS) system that can always 
 A receiver should be able to set up payjoin during onboarding on the platform (app or POS system) or any time after that. The following is a standalone payjoin setup flow.
 
 {% include picture.html
-   image = "assets/images/guide/case-studies/payjoin-case-study/payjoin-receiver-flow.png"
-   retina = "assets/images/guide/case-studies/payjoin-case-study/payjoin-receiver-flow@2x.png"
+   image = "assets/images/guide/case-studies/payjoin/payjoin-receiver-flow.png"
+   retina = "assets/images/guide/case-studies/payjoin/payjoin-receiver-flow@2x.png"
    alt-text = "payjoin receiver flow"
    width = 800
    height = 458
