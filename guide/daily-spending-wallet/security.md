@@ -32,6 +32,10 @@ images_reminders:
       modalImage: home-security-reminder-big
       alt: Wallet home screen with a reminder to review security settings
       caption: A more subtle inline reminder that takes users to the security checklist.
+    - file: home-pin-reminder
+      modalImage: home-pin-reminder-big
+      alt: Mobile screen requesting the user to enter their PIN
+      caption: Users can enable regular PIN reminders so they don't forget it.
 images_pin:
     - file: choose-pin
       modalImage: choose-pin-big
@@ -115,9 +119,16 @@ It all starts with a well-designed [first-use]({{ '/guide/daily-spending-wallet/
 
 ### Reminders & recommendations
 
-As a user's behavior and application usage change, the current security settings may no longer be appropriate. A life-changing amount of funds for one user may be pocket change for another, so it is hard to know what is appropriate. Still, applications can proactively make recommendations and remind users to review their setup regularly. This can be based on [spaced repetition](https://en.wikipedia.org/wiki/Spaced_repetition) to encourage good habits, or situationally when user behavior changes. Make sure to allow users to disable this feature.
+As a user's behavior and application usage change, the current security settings may no longer be appropriate. A life-changing amount of funds for one user may be pocket change for another, so it is hard to know what is appropriate. Still, applications can proactively make recommendations and remind users to review their setup regularly. This can be based on [spaced repetition](https://en.wikipedia.org/wiki/Spaced_repetition) to encourage good habits, or situationally when user behavior changes. These features can be set up during [first use]({{ '/guide/daily-spending-wallet/first-use/#security-setup' | relative_url }}), controls can be put on the security checklist, and should be easily disabled in [settings]({{ '/guide/daily-spending-wallet/settings/' | relative_url }}).
 
 {% include image-gallery.html pages = page.images_reminders %}
+
+Here are some starting considerations for designing these behaviors:
+
+- Purpose: Should the user remember their PIN, perform a general security check-up, or adjust their security based on context?
+- Trigger event: Has a certain time interval passed (fixed or spaced), a threshold been exceeded, or a certain action been taken (e.g. first deposit)?
+- Presentation: From OS notification to dismissable modals and contextual banners, there are various options.
+- Etiquette: Do not alarm the user, but be helpful. Don't bother them unless necessary and not during other sensitive activities (e.g. sending).
 
 ### Security checklist
 

@@ -221,23 +221,52 @@ For larger transactions, the wallet application provider will no longer automati
 
 {% include image-gallery.html pages = page.images_send_manual %}
 
-### Signing device key replacement
+### Wallet Recovery and Key Replacement
 
-Earlier we mentioned that one of the keys is saved on the user's mobile device and backed up to the cloud. To prevent unauthorized access to this backup, a PIN is created during wallet set-up and used to encrypt and decrypt the backup.
+Restoring a bitcoin wallet or replacing keys may be necessary for various reasons. The user may have lost their mobile phone, signing device, or access to their cloud account backup. Regardless of the reason, wallet applications must offer a straightforward recovery option for users to regain access to their funds.
 
-If a user loses their mobile device but still has their cloud backup and signing device, they can use their PIN to unlock the cloud key. Then, with the help of the signing device, they can recover their wallet.
+Here are different scenarios where users may lose access to their wallet or keys and potential methods to resolve the problem:
 
-If they still have access to their mobile device but lost their purpose-built signing device, they can replace the lost key (rotate in a new key) with the help of the recovery key held by the auto-signer.
+#### The user lost their mobile device
 
-However, if they lose both the mobile and signing device, they will only be able to recover their funds if they have also backed up either of the respective recovery phrases. [View prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=15%3A59302&viewport=-304%2C225%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=1%3A56799&show-proto-sidebar=1).
+At some point, users are likely to either lose their mobile device, purchase a new one, or delete the wallet app.
+
+For them to recover their wallet again, they would need the following:
+1. The sign-in details of the cloud account that contains the backup key 
+2. The PIN they created when setting up the wallet, to decrypt the cloud key
+3. Access to their signing device
+
+They can use their PIN to unlock the cloud key and, with the help of the signing device, recover their wallet. If the user loses any 1 of these 3 things, they will not be able to recover their wallet again. 
+
+#### The user lost their signing device
+
+It is less likely, but possible, that a user may misplace or lose their signing device, for example, in the event of a fire.
+
+In these cases, they would need to have access to the following:
+1. The mobile device that set up the wallet
+2. The recovery key held by the auto-signer
+
+With these 2 things in place, they can simply rotate in a new key. However, if the user lost their mobile device as well, they would not be able to access their wallet again. [View prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=15%3A59302&viewport=-304%2C225%2C0.19710054993629456&scaling=scale-down&starting-point-node-id=1%3A56799&show-proto-sidebar=1).
 
 {% include image-gallery.html pages = page.images_recovery %}
 
-### Cloud storage key recovery & replacement
+#### The user lost access to their cloud account
 
-If a user loses access to their cloud storage, or accidentally deletes the backup file, they can easily restore the backup. If they no longer want to use cloud storage, alternative options should be available. [View prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=50%3A58938&viewport=-1473%2C-1193%2C0.35678958892822266&scaling=scale-down&starting-point-node-id=50%3A58938&show-proto-sidebar=1).
+Occasionally, users may forget their cloud account sign-in credentials or, on rare occasions, accidentally delete the backup file.
+
+If this happens, they would need to have the following to replace their cloud key again:
+1. The mobile device that set up the wallet
+2. Their signing device
+
+If the user lost their mobile device as well, they will not be able to replace their cloud key. However, if they still have access to their mobile device, but no longer want to use cloud storage, they should have other options available. [View prototype](https://www.figma.com/proto/hwispqET5MzsKUpn3i9iqD/Savings-account-case-study?page-id=1%3A55973&node-id=50%3A58938&viewport=-1473%2C-1193%2C0.35678958892822266&scaling=scale-down&starting-point-node-id=50%3A58938&show-proto-sidebar=1).
 
 {% include image-gallery.html pages = page.images_recovery_cloud %}
+
+#### The user forgot their PIN
+
+As previously stated, if a user misplaces their mobile device and can't remember their PIN, they won't be able to recover their wallet.
+
+To reduce the chances of this happening, spaced repetition could help the user remember their PIN. However, if they realise that they forgot their PIN during a spaced repetition exercise, they should be able to simply change their PIN given they also have access to the recovery key held by the auto-signer.
 
 ### Changing spending limits
 
