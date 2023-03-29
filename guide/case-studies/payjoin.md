@@ -123,57 +123,26 @@ Technically, everyone conducting transactions on the bitcoin blockchain can use 
    height = 939
 %}
 
-<div markdown="1">
-   <table>
-   <thead>
-      <tr>
-         <th>
-            Party
-         </th>
-         <th>
-            Requirements
-         </th>
-         <th>
-            Benefits
-         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>Sender</td>
-         <td>
-            <ul>
-               <li>Wallet support</li>
-               <li>Internet connection</li>
-            </ul>
-         </td>
-         <td>
-            <ul>
-               <li>Improved Privacy</li>
-            </ul>
-         </td>
-      </tr>
-      <tr>
-         <td>Receiver</td>
-         <td>
-            <ul>
-               <li>Hot wallet (for signing transactions)</li>
-               <li>Serve/maintain secure web endpoint</li>
-               <li>Wallet support</li>
-               <li>Funds in hot wallet</li>
-            </ul>
-         </td>
-         <td>
-            <ul>
-               <li>Privacy</li>
-               <li>UTXO consolidation</li>
-               <li>Fee savings</li>
-            </ul>
-         </td>
-      </tr>
-   </tbody>
-</table>
-</div>
+**Sender requirements**
+
+The sender needs:
+- an application that supports sending payjoin
+- to be online during the course of the payjoin process
+
+The sender gains a privacy benefit from payjoin, generally at the cost of higher transaction fees.
+
+**Receiver Requirements**
+
+The receiver needs:
+- hot wallet
+- funds in that hot wallet
+- an application that supports receiving payjoin
+- an endpoint that is online at the time of the transaction
+
+The receiver stands to gain the following benefits:
+- improved transaction privacy
+- consolidated UTXO set
+- fee savings
 
 
 ### Sending payjoins
