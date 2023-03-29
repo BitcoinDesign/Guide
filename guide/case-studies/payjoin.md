@@ -43,7 +43,7 @@ Illustration sources: <>
 {% include picture.html
    image = "assets/images/guide/case-studies/payjoin/header-graphic-metaphor-banner.png"
    retina = "assets/images/guide/case-studies/payjoin/header-graphic-metaphor-banner@2x.png"
-   alt-text = "Payjoin case study banner image"
+   alt-text = "A banner image with a pink-ish background depicting from left to right: eye and magnifying glass emoji followed by a payjoin create transaction screen. Emerging out of this screen, to the right, are various zig-zag lines ending at question marks."
    width = 1600
    height = 600
    layout = "full-width"
@@ -85,7 +85,7 @@ In the payjoin process, parties edit, sign and pass iterations of the transactio
 {% include picture.html
    image = "assets/images/guide/case-studies/payjoin/payjoin-bip78-process.png"
    retina = "assets/images/guide/case-studies/payjoin/payjoin-bip78-process@2x.png"
-   alt-text = "Diagram of a BIP-78 payjoin process"
+   alt-text = "The sender and the receiver are depicted by two vertical, parallel axes on each end of the graphic. The payment information, along with the endpoint flows from the receiver to the sender. The first iteration of the transaction, the original PSBT is relayed by the sender to the receiver. The payjoin-ed-PSBT is then relayed by the receiver back to the sender. Finally, the sender the broadcasts the fully signed transaction to the bitcoin network, which is depicted by a horizontal axis at the bottom of the graphic."
    width = 800
    height = 683
 %}
@@ -131,7 +131,7 @@ The sender needs:
 
 The sender gains a privacy benefit from payjoin, generally at the cost of higher transaction fees.
 
-**Receiver Requirements**
+**Receiver requirements**
 
 The receiver needs:
 - hot wallet
@@ -159,7 +159,7 @@ We analyzed the payjoin user flow in BlueWallet's pioneering implementation from
    retina = "assets/images/guide/case-studies/payjoin/bluewallet-sender-flow@2x.png"
    mobile = "assets/images/guide/case-studies/payjoin/bluewallet-sender-flow-mobile.png"
    mobileRetina = "assets/images/guide/case-studies/payjoin/bluewallet-sender-flow-mobile@2x.png"
-   alt-text = "BlueWallet sender flow"
+   alt-text = "A simple user flow with 4 steps: enter payment information, choose fee-rate, enable payjoin toggle, send transaction."
    width = 800
    height = 54
 %}
@@ -257,7 +257,7 @@ Once the payjoin setup is functional, all payment requests (BIP-21 payment links
 A dedicated section in the settings page might be a good idea to provide dedicated space in the UI to manage payjoin settings and monitor its status. This would also provide UI space for users using a cold wallet to discover and set up payjoins. This section could contain:
 
 - Payjoin setup workflow
-- Additional payjoin features like third party endpoints, address substitution, cold-wallet backfill
+- Additional payjoin features like third party endpoints, address/output substitution, cold-wallet backfill
 - Monitor payjoin readiness: hot wallet status, pj-endpoint status etc.
 
 
@@ -296,6 +296,7 @@ This case study tackles the design aspects around payjoin and it hopes to boost 
 ## Resources
 
 - [BIP-78](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki)
+- [Bitcoin Optech topics: Payjoin](https://bitcoinops.org/en/topics/payjoin)
 - [Payjoin Process Flows](https://www.figma.com/file/NzMvwyzP7x5jfGmwNUKRov/PayJoin-Process-Flows?node-id=0%3A1&t=wSwewTOkQddWhagl-1)
 - [Payjoin User Flows](https://www.figma.com/file/69uUDWVc8N9t5Bej8pZEsF/PayJoin-User-Flows?node-id=0%3A1&t=8F4jOa71i6X1Slbz-1)
 - [Investigation: Petting Payjoins in the wild](https://docs.google.com/document/d/1_de2pkMREGpZQwOefQdH-MZNSUPazObgRK1cruiWBmo/edit?usp=sharing)
