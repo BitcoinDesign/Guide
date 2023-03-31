@@ -82,15 +82,15 @@ Design source for mock-ups used in this page.
 https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototype?node-id=4152%3A306968&t=F7xyHM3gzQ2lqzSv-1
 
 Design source to header.
-https://www.figma.com/file/0iHTB8w3Zr8k0MjYbdsJpc/Manual-Backup-Header?node-id=0-1&t=JTiYGk4h0jxigYgW-0
+https://www.figma.com/file/NjtMNQiJtoVkedEHgwD0A9/BTC-DSN-Guide-Header-Images?node-id=0%3A1&t=JzVvsbPdFpjhNTGF-1
 
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-image.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-image@2x.png"
-   mobile = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-image-mobile.png"
-   mobileRetina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-image-mobile@2x.png"
+   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/backing-up-a-wallet-manual.png"
+   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/backing-up-a-wallet-manual@2x.png"
+   mobile = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/backing-up-a-wallet-manual-mobile.png"
+   mobileRetina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/backing-up-a-wallet-manual-mobile@2x.png"
    alt-text = "Backing up a recovery phrase chapter header image"
    width = 1600
    height = 600
