@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: The Payjoin experience
+title: The Payjoin Experience
 description: This case study is an analysis and exploration of payjoin's audience, implementations, features and proposes specific user flows.
 nav_order: 6
 parent: Case studies
@@ -99,7 +99,7 @@ While payjoin provides privacy improvements and potential fee-savings, they pres
 At this point in early 2023, payjoins have not achieved significant adoption in the bitcoin ecosystem.
 
 
-## Our Approach
+## Our approach
 
 This case study followed these steps:
 
@@ -125,7 +125,6 @@ Technically, everyone conducting transactions on the bitcoin blockchain can use 
 
 **Sender requirements**
 
-The sender needs:
 - an application that supports sending payjoin
 - to be online during the course of the payjoin process
 
@@ -133,7 +132,6 @@ The sender gains a privacy benefit from payjoin, generally at the cost of higher
 
 **Receiver requirements**
 
-The receiver needs:
 - hot wallet
 - funds in that hot wallet
 - an application that supports receiving payjoin
@@ -265,16 +263,17 @@ A dedicated section in the settings page might be a good idea to provide dedicat
 
 We learnt many things over the course of this case study, and the user flows we have designed already use many of these insights.
 
-- Payjoins are a great way to consolidate UTXOs so participants pay lower fees in the long run. This can be especially useful for trading desks at exchanges who need this the most, and possess the technical ability to implement a robust setup
+- Payjoins allow receivers to consolidate UTXOs so participants pay lower fees in the long run. This can be especially useful for exchanges who need this the most, and possess the technical ability to implement a robust setup
 - Due to the back-&-forth between parties which can extend over multiple iterations/rounds, this case study introduces the term ‘payjoin handshake’ to encompass all the events between user actions
 - Maintaining an always-online endpoint seems to be the biggest hurdle for payjoin implementation, we list some alternatives here
 - Payjoin burdens the receiver with more requirements, but also provides more benefits and opportunities
-- Address substitution is a powerful idea from BIP-78: it is a risk that can become a powerful ally for the payjoiner
+- Output substitution: this is a powerful idea from BIP-78: it is a risk that can become a powerful ally for the payjoiner
+- Output substitution: payjoin can enable recipients to post static payment information, but get paid to a different addresses, avoiding address reuse
 - Instead of setting up another wallet, payjoin receivers can leverage their daily spending wallet, which is used by the receiver as the payjoin hot wallet
 - Payjoin implementations should be mindful of the round-fee-rate heuristic for identifying payjoins, handle it without need for user decisions
 
 
-## New Horizons
+## New horizons
 
 Payjoins can be complicated to understand or implement given the multiple parties and moving parts (such as the endpoint) involved, but this also opens the door for multiple features and services.
 
@@ -299,5 +298,5 @@ This case study tackles the design aspects around payjoin and it hopes to boost 
 - [Bitcoin Optech topics: Payjoin](https://bitcoinops.org/en/topics/payjoin)
 - [Payjoin Process Flows](https://www.figma.com/file/NzMvwyzP7x5jfGmwNUKRov/PayJoin-Process-Flows?node-id=0%3A1&t=wSwewTOkQddWhagl-1)
 - [Payjoin User Flows](https://www.figma.com/file/69uUDWVc8N9t5Bej8pZEsF/PayJoin-User-Flows?node-id=0%3A1&t=8F4jOa71i6X1Slbz-1)
-- [Investigation: Petting Payjoins in the wild](https://docs.google.com/document/d/1_de2pkMREGpZQwOefQdH-MZNSUPazObgRK1cruiWBmo/edit?usp=sharing)
+- [Investigation: Petting Payjoins in the Wild](https://docs.google.com/document/d/1_de2pkMREGpZQwOefQdH-MZNSUPazObgRK1cruiWBmo/edit?usp=sharing)
 - [BTCPay Server Payjoin Guide](https://docs.btcpayserver.org/Payjoin/#btcpay-server-payjoin-guide)
