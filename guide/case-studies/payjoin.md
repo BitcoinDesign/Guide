@@ -300,3 +300,12 @@ This case study tackles the design aspects around payjoin and it hopes to boost 
 - [Payjoin User Flows](https://www.figma.com/file/69uUDWVc8N9t5Bej8pZEsF/PayJoin-User-Flows?node-id=0%3A1&t=8F4jOa71i6X1Slbz-1)
 - [Investigation: Petting Payjoins in the Wild](https://docs.google.com/document/d/1_de2pkMREGpZQwOefQdH-MZNSUPazObgRK1cruiWBmo/edit?usp=sharing)
 - [BTCPay Server Payjoin Guide](https://docs.btcpayserver.org/Payjoin/#btcpay-server-payjoin-guide)
+
+Next, view the [resources]({{ '/guide/resources' | relative_url }}) that can help you build better bitcoin products.
+
+{% include next-previous.html
+   previousUrl = "/guide/case-studies/blixt-wallet"
+   previousName = "Case studies"
+   nextUrl = "/guide/resources"
+   nextName = "Resources"
+%}
