@@ -233,7 +233,7 @@ Read the full analysis on [receiving payjoin payments on BTCPay](https://docs.go
 
 Here we will devise user flows for a point-of-sale (POS) system that can always be online. This excludes mobile wallets.
 
-A receiver should be able to set up payjoin during onboarding on the platform (app or POS system) or any time after that. The following is a standalone payjoin setup flow.
+A receiver should be able to set up payjoins during onboarding on the platform (app or POS system), or any time after that. The following is a standalone payjoin setup flow.
 
 {% include picture.html
    image = "assets/images/guide/case-studies/payjoin/payjoin-receiver-flow.png"
