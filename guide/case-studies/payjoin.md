@@ -94,7 +94,7 @@ In the payjoin process, parties edit, sign and pass iterations of the transactio
 
 This case study has its origins in a [design challenge]({{ '/guide/resources/design-challenges/#challenge-6-private-purchase' | relative_url }}), which entailed creating a sender flow for payment using a payjoin transaction.
 
-While payjoin provides privacy improvements and potential fee-savings, they present the challenge of coordination between transacting parties and may require new user flows to implement features enabled through [BIP-78](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki).
+Payjoins present a somewhat unique challenge of real time coordination between transacting parties and require new user flows for robust and elegant implementation of features enabled by [BIP-78](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki).
 
 At this point in early 2023, payjoins have not achieved significant adoption in the bitcoin ecosystem.
 
