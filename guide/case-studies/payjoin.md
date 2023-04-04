@@ -173,7 +173,7 @@ We designed a sender flow that attempts to address the issues identified above.
 
 For the purpose of creating the sender flow, we will assume that the receiver only contributes UTXOs, but does not contribute to the fees, since this allows a simple, automated process for both parties.
 
-**In short, the sender flow outlined here asks the user to choose a fee-range instead of a fee-amount (or fee-rate) while keeping the rest of the user flow almost exactly the same. We use it to set 3 optional parameters specified in BIP-78, which can be used to construct a simple but effective payjoin implementation.**
+**In short, the sender flow outlined here asks the user to choose a fee range instead of a fee amount (or fee rate), while keeping the rest of the user flow almost exactly the same. We use it to set 3 optional parameters specified in BIP-78, which can be used to construct a simple but effective payjoin implementation.**
 
 {% include picture.html
    image = "assets/images/guide/case-studies/payjoin/payjoin-sender-flow.png"
