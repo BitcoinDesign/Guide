@@ -25,7 +25,7 @@ main_classes: -no-top-padding
 
 This page showcases the various formatting and layout options available for content. Note that there is a [separate page]({{ '/guide/contribute/formatting/media/' | relative_url }}) for formatting images, videos, animations and prototypes. This allows editors to better understand their toolbox and access reference code. It also allows designers to see the design system in one place.
 
-The design source file is a public Figma community file you can find [here](https://www.figma.com/community/file/862622015964353400/Bitcoin-Designers-site). To improve the design, please start with the Figma file and make a proposal in Slack or Github before implementing.
+The design source file is a public Figma community file you can find [here](https://www.figma.com/community/file/862622015964353400/Bitcoin-Designers-site). To improve the design, please start with the Figma file and make a proposal in Discord or Github before implementing.
 
 ---
 
