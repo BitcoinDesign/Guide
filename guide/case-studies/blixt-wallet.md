@@ -36,7 +36,7 @@ The [Bitcoin Design Community]({{ site.discord_invite_url }}) ran a design sprin
 
 <p class="h3">Blixt Wallet is a non-custodial, open-source, bitcoin and lightning wallet for Android and iOS. It aims to serve users who are familiar with bitcoin, but new to lightning and want to try it out for the first time.</p>
 
-The current user base of Blixt tends to be more advanced and Blixt would like to move towards catering to beginners. 
+The current user base of Blixt tends to be more advanced and Blixt would like to move towards catering to beginners.
 
 What does Blixt do?
 
@@ -71,7 +71,7 @@ Since Blixt is an open source wallet, we collected user feedback simply by going
 
 ## We discovered that Blixt users were struggling to open lightning channels
 
-We created a lot of different user flows to find a solution for the best method to open a channel for a user new to lightning, and eventually settled on this one. We decided on this user flow as it educates users first and then takes them to setting up the channel itself. 
+We created a lot of different user flows to find a solution for the best method to open a channel for a user new to lightning, and eventually settled on this one. We decided on this user flow as it educates users first and then takes them to setting up the channel itself.
 
 {% include picture.html
    image = "/assets/images/guide/case-studies/blixt-wallet/blixt-wallet-user-flow.png"
@@ -98,7 +98,7 @@ After re-designing the interface, we tested the new design by doing usability te
 - **Test script:** We then created a pre-screening questionnaire as well as a test script which we would use during the testing process.
 - **Testing:** The prototype was then tested on 4 people. During the usability test, they clicked through the prototype and we observed how they interacted with it.
 
-After watching the users testing the wallet we made some observations. Those observations were then grouped into different parts of the user flow. All of the data from the tests can be found [here](https://docs.google.com/document/d/1NuYAQX2c_AAnHq6VPMXrg3IxuzL6Pa517SY1Jx6wAs8/edit?usp=sharing). (We have not included the names of the testers to protect their privacy). 
+After watching the users testing the wallet we made some observations. Those observations were then grouped into different parts of the user flow. All of the data from the tests can be found [here](https://docs.google.com/document/d/1NuYAQX2c_AAnHq6VPMXrg3IxuzL6Pa517SY1Jx6wAs8/edit?usp=sharing). (We have not included the names of the testers to protect their privacy).
 
 ## Here’s what we learned
 
@@ -151,7 +151,7 @@ To open a channel first we will need to add some bitcoin to it. Once that is don
 
 ## In the end
 
-We had a grand time re-designing this wallet interface. We learned a lot about the mechanics behind running a design sprint. Thanks to [Hampus](https://twitter.com/hampus_s), the developer at Blixt for his input during the redesign. A big thank you to everyone from the Bitcoin Design Community who put in their time, effort and knowledge during this process. The joy of open source is that we get to join forces and do good work together, completely out in the open. If you’d like to get involved in Blixt, feel free to check out their [Github](https://github.com/hsjoberg/blixt-wallet) or join their [Telegram group](https://t.me/BlixtWallet). 
+We had a grand time re-designing this wallet interface. We learned a lot about the mechanics behind running a design sprint. Thanks to [Hampus](https://twitter.com/hampus_s), the developer at Blixt for his input during the redesign. A big thank you to everyone from the Bitcoin Design Community who put in their time, effort and knowledge during this process. The joy of open source is that we get to join forces and do good work together, completely out in the open. If you’d like to get involved in Blixt, feel free to check out their [Github](https://github.com/hsjoberg/blixt-wallet) or join their [Telegram group](https://t.me/BlixtWallet).
 
 
 ## Resources
@@ -165,11 +165,11 @@ We had a grand time re-designing this wallet interface. We learned a lot about t
 
 ---
 
-Next, view our [resources]({{ '/guide/resources/' | relative_url }}) that can help you build better bitcoin products.
+Next, view the [The Payjoin Experience case study]({{ '/guide/case-studies/payjoin' | relative_url }}) that analyzes and explores the state of and possibilities for Payjoin.
 
 {% include next-previous.html
    previousUrl = "/guide/case-studies"
    previousName = "Case studies"
-   nextUrl = "/guide/resources/"
-   nextName = "Resources"
+   nextUrl = "/guide/case-studies/payjoin/"
+   nextName = "The Payjoin Experience"
 %}
