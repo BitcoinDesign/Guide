@@ -8,7 +8,7 @@ permalink: /guide/daily-spending-wallet/security/
 redirect_from:
  - /guide/onboarding/protecting-a-wallet/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/daily-spending-wallet/security/protecting-a-wallet-preview.png
+image: https://bitcoin.design/assets/images/guide/daily-spending-wallet/security/security-preview.png
 image_base: /assets/images/guide/daily-spending-wallet/security/
 images_checklists:
     - file: security-checklist
