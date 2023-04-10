@@ -136,10 +136,10 @@ https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototyp
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restoring-a-wallet.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restoring-a-wallet@2x.png"
-   mobile = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restoring-a-wallet-mobile.png"
-   mobileRetina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restoring-a-wallet-mobile@2x.png"
+   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/recovery-header.png"
+   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/recovery-header@2x.png"
+   mobile = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/recovery-header-mobile.png"
+   mobileRetina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/recovery-header-mobile@2x.png"
    alt-text = "Restoring a wallet chapter header image"
    width = 1600
    height = 600
