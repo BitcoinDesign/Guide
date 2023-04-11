@@ -53,7 +53,7 @@ Benefits of Taproot include the ability to use Schnorr Signatures, offering bett
 
 Taproot addresses start with `bc1p` and are case insensitive.
 
-Example: `bc1pmzfrwwndsqmk5yh69yjr5lfgfg4ev8c0tsc06e`
+Example: `bc1p5d7rjq7g6rdk2yhzks9smlaqtedr4dekq08ge8ztwac72sfr9rusxg3297`
 
 ### SegWit address - [P2WPKH](https://en.bitcoin.it/wiki/Bech32)
 
