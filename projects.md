@@ -261,4 +261,4 @@ For a more complete list of current and past collaborations, see our [collaborat
 
 #### Adding a project or collaboration
 
-The Bitcoin Design Community is intentionally only loosely organized. This makes it difficult to define specific rules of what is a community effort and what isn't. Best approach is to get consensus by asking in the [#general](https://discord.com/channels/903125802726596648/956386942788980766) channel in Slack or opening an issue in the [meta repo](https://github.com/BitcoinDesign/Meta/issues) on Github.
+The Bitcoin Design Community is intentionally only loosely organized. This makes it difficult to define specific rules of what is a community effort and what isn't. Best approach is to get consensus by asking in the [#general](https://discord.com/channels/903125802726596648/956386942788980766) channel in Discord or opening an issue in the [meta repo](https://github.com/BitcoinDesign/Meta/issues) on Github.
