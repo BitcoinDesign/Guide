@@ -10,7 +10,7 @@ redirect_from:
  - /guide/onboarding/backing-up-a-recovery-phrase/
  - /guide/onboarding/backing-up-a-wallet/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/daily-spending-wallet/backup-and-recovery/backing-up-a-wallet-preview.png
+image: https://bitcoin.design/assets/images/guide/daily-spending-wallet/backup-and-recovery/backup-recovery-image-preview.png
 ---
 
 <!--
@@ -25,11 +25,16 @@ Illustration sources
 
 -->
 
+<!-- 
+Design source to header:
+https://www.figma.com/file/0iHTB8w3Zr8k0MjYbdsJpc/Backup-Recovery-Header?node-id=0-1&t=CnY92nnQa0nw3DY2-0
+ -->
+
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/backing-up-a-wallet.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/backing-up-a-wallet@2x.png"
-   mobile = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/backing-up-a-wallet-mobile.png"
-   mobileRetina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/backing-up-a-wallet-mobile@2x.png"
+   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/backup-recovery-image.png"
+   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/backup-recovery-image@2x.png"
+   mobile = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/backup-recovery-image-mobile.png"
+   mobileRetina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/backup-recovery-image-mobile@2x.png"
    alt-text = "Backing up a recovery phrase chapter header image"
    width = 1600
    height = 600
