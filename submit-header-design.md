@@ -126,7 +126,7 @@ Once you have an idea for your theme and want to make it real, then the best way
    label = "View Figma file"
 %}
 
-Once your design is in good shape and you'd like to get some first feedback from the Bitcoin Design Community, you have two options. You can either post a link or screenshot with some background information to the #design-crits channel in our Discord workspace. Or you can [create a Github issue](https://github.com/BitcoinDesign/Guide/issues){:target="_blank"}. Or you can do both, as you prefer.
+Once your design is in good shape and you'd like to get some first feedback from the Bitcoin Design Community, you have two options. You can either post a link or screenshot with some background information to the #design-reviews channel in our Discord workspace. Or you can [create a Github issue](https://github.com/BitcoinDesign/Guide/issues){:target="_blank"}. Or you can do both, as you prefer.
 
 Please note that not all designs will make it to the live site. You need rough consensus (see our general [project life cycle](https://github.com/BitcoinDesign/Meta/blob/master/Projects.md)) from the community. So before you start implementing your theme, it is a good idea to get some feedback first. Please also make sure you respect any copyrights and licenses if you are using resources from others.
 
