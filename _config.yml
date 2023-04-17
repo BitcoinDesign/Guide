@@ -70,6 +70,13 @@ twitter:
   username: bitcoin_design
   card: summary
 
+social:
+  name: Bitcoin Design
+  links:
+    github: bitcoindesign
+    slack: bitcoindesign
+    discord: bitcoindesign
+
 exclude:
   - README.md
   - _compress_images_cache.yml
