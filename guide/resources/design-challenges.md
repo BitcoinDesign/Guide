@@ -61,7 +61,7 @@ Bob Jr wants to receive his weekly allowance in bitcoin. Design a low-fidelity a
 
 Bob wants to buy an engagement ring to surprise Alice. He has to pay on-chain because it's a large expense. Alice recently sent him sats, so she has a view into the sats in Bob's wallet. Design a low-fidelity flow Bob might follow to spend his sats using [PayJoin](https://en.bitcoin.it/wiki/PayJoin). In contrast to a naïve transaction, thanks to PayJoin, even if Alice sees the resulting transaction on-chain she won't be able to discern whether it is a small transfer, output consolidation, or the large purchase that would spoil the surprise.
 
-[Get started with these design-oriented notes](https://docs.google.com/document/d/1y5qiKEX2WXMoDgdNclKcZ2RHDIM8wX5OkhREA-Hmc0k/edit?usp=sharing). For more details, check out the bitcoin design [call](https://bitcointv.com/w/3cZH5KVZwsxU6X9iNzDkBE), [FigJam File with in-call notes](https://www.figma.com/file/YC1rjRo3xYvkqJPL4vlg4r/Learning-Bitcoin-and-Design---PayJoins?node-id=0%3A1&t=I3u9Sbe7iMp6WbjV-1), mention this challenge in [slack]({{ site.slack_invite_url }}) or email d at ngould dot dev for help.
+[Get started with these design-oriented notes](https://docs.google.com/document/d/1y5qiKEX2WXMoDgdNclKcZ2RHDIM8wX5OkhREA-Hmc0k/edit?usp=sharing). For more details, check out the bitcoin design [call](https://bitcointv.com/w/3cZH5KVZwsxU6X9iNzDkBE), [FigJam File with in-call notes](https://www.figma.com/file/YC1rjRo3xYvkqJPL4vlg4r/Learning-Bitcoin-and-Design---PayJoins?node-id=0%3A1&t=I3u9Sbe7iMp6WbjV-1), mention this challenge in [Discord]({{ site.discord_invite_url }}) or email d at ngould dot dev for help.
 
 ## Tips
 

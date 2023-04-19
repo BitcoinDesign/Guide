@@ -22,7 +22,7 @@ image: https://bitcoin.design/assets/images/newsletter/newsletter-preview.jpg
 
 # The Bitcoin Design Newsletter
 
-Don't have the time to keep up with all the activity of bitcoin designers in and around Slack? Quickly catch up with [the newsletter](https://bitcoindesign.substack.com). Every 3 weeks, you get a concise summary of recent activity in your inbox.
+Don't have the time to keep up with all the activity of bitcoin designers in and around Discord? Quickly catch up with [the newsletter](https://bitcoindesign.substack.com). Every 3 weeks, you get a concise summary of recent activity in your inbox.
 
 [View the newsletter](https://bitcoindesign.substack.com){: .button }
 
@@ -36,9 +36,9 @@ The newsletter has been published since [October 2020](https://bitcoindesign.sub
 
 ## Contribute
 
-We use the [#spread-the-word](https://bitcoindesign.slack.com/archives/C01PRLDBCBA) channel in Slack to coordinate around the newsletter. We keep a draft document ([template](https://docs.google.com/document/d/1P8PRgcHgLiriieGZr33P1YLbIBigXBg9rXj42B1TXnQ/edit?usp=sharing)) around with public editing rights that everyone can add content to. A few days before publishing, the editors review the draft and start working on the final version. Note that it is up to the discretion of the editors to decide what will be posted.
+We use the [#spread-the-word](https://discord.com/channels/903125802726596648/956367257930453042) channel in Discord to coordinate around the newsletter. We keep a draft document ([template](https://docs.google.com/document/d/1P8PRgcHgLiriieGZr33P1YLbIBigXBg9rXj42B1TXnQ/edit?usp=sharing)) around with public editing rights that everyone can add content to. A few days before publishing, the editors review the draft and start working on the final version. Note that it is up to the discretion of the editors to decide what will be posted.
 
-Once posted, the newsletter is shared in [#general](https://bitcoindesign.slack.com/archives/C014J9ZKXB4) and on [Twitter](https://twitter.com/bitcoin_design). We also discuss the content in more detail in our [community calls](https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+%22community+call%22) ([example recording](https://www.youtube.com/watch?v=BPYQKgrjoj0)), which are scheduled the same day of the newsletter release.
+Once posted, the newsletter is shared in [#general](https://discord.com/channels/903125802726596648/956386942788980766) and on [Twitter](https://twitter.com/bitcoin_design). We also discuss the content in more detail in our [community calls](https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+%22community+call%22) ([example recording](https://www.youtube.com/watch?v=BPYQKgrjoj0)), which are scheduled the same day of the newsletter release.
 
 The newsletter is currently managed by [Mo](https://twitter.com/MogashniNaidoo) and [Christoph](https://twitter.com/GBKS). Anyone is welcome to join. Shout-out to previous editors [Johns](https://twitter.com/johnsBeharry) and [Conor](https://twitter.com/ConorOkus) for their contributions.
 
