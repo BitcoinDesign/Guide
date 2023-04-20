@@ -128,7 +128,7 @@ images_other_two:
 <!--
 
 Design source for the header image:
-https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=0%3A1
+https://www.figma.com/file/T5bOl3TW1MxNHXqEx4H0PX/recovery-header?node-id=0%3A1&t=KLd988t7N9kKhCRH-1
 
 Design source for mock-ups used on this page:
 https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototype?node-id=4152%3A306968&t=F7xyHM3gzQ2lqzSv-1
