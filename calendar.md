@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Calendar
-description: Design crits, community calls, project sessions, and other events planned by the Bitcoin Design Community
+description: Design reviews, community calls, project sessions, and other events planned by the Bitcoin Design Community
 permalink: /calendar/
 main_nav: true
 nav_order: 3
@@ -44,10 +44,10 @@ Join community calls, design reviews, project discussions and other events. Our 
 %}
 
 {% include emoji-box.html
-    emoji = "⚡️"
-    title = "Bitcoin design sprints"
-    description = "Our collaborative design sessions with lightning wallet projects."
-    url = "https://github.com/BitcoinDesign/Meta/issues/244"
+    emoji = "🔎"
+    title = "UX research calls"
+    description = "Discuss research topics and collaborate on the UX research kit."
+    url = "https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+%22UX+research%22"
 %}
 
 {% include emoji-box.html
@@ -68,9 +68,9 @@ Join community calls, design reviews, project discussions and other events. Our 
 
 {% include emoji-box.html
     emoji = "🎯"
-    title = "Bitcoin Design Crits"
-    description = "Design reviews of bitcoin products by the community."
-    url = "https://github.com/BitcoinDesign/Meta/blob/master/Bitcoin-Design-Crits.md"
+    title = "Design Reviews"
+    description = "Reviews of bitcoin products by the community."
+    url = "https://github.com/BitcoinDesign/Meta/blob/master/Design-Reviews.md"
 %}
 </div>
 
