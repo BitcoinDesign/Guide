@@ -409,7 +409,8 @@ A transaction is a transfer of value over the bitcoin network. While transaction
 An output that has not been sent to another address. The bitcoin wallet balance is calculated from adding up unspent outputs.
 
 ###  Partially signed bitcoin transaction (PSBT)
-A portable transaction data format that enables discrete participants to contribute to a single transaction. For example, psbt fascilitates contribution from both software and hardware wallet in multi-signature and between the sender and recipient of a payjoin.
+
+A portable data format for transactions before they are verified by the network. Often, the same application constructs the transaction and signs it. But there are applications where this is not the case, like when using a [hardware wallet](https://bitcoin.design/guide/glossary/#wallet), [multisig](https://bitcoin.design/guide/glossary/#multi-signature-wallet-multisig) or [payjoin](https://bitcoin.design/guide/glossary/#payjoin-p2ep). Parties to these applications share transaction data by communicating PSBTs.
 
 **References:**
 
