@@ -409,12 +409,14 @@ A transaction is a transfer of value over the bitcoin network. While transaction
 An output that has not been sent to another address. The bitcoin wallet balance is calculated from adding up unspent outputs.
 
 ###  Partially signed bitcoin transaction (PSBT)
-A file format for bitcoin transactions that are not fully signed yet. Allows for passing around a transaction to other applications or devices for signing, for example in a multi-signature wallet setup.
+
+A portable data format for transactions before they are verified by the network. Often, the same application constructs the transaction and signs it. But there are applications where this is not the case, like when using a [hardware wallet]({{ '/guide/glossary/#wallet' | relative_url }}), [multisig]({{ '/guide/glossary/#multi-signature-wallet-multisig' | relative_url }}) or [payjoin]({{ '/guide/glossary/#payjoin-p2ep' | relative_url }}). Parties to these applications share transaction data by communicating PSBTs.
 
 **References:**
 
 - [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki): Partially Signed Bitcoin Transaction Format
-
+- [BIP370](https://github.com/bitcoin/bips/blob/master/bip-0370.mediawiki): PSBT Version 2
+- [PSBT Versions Deep Dive](https://chaincase.app/words/interactive-transactions-psbt)
 
 ###  Passphrase
 A passphrase can be added to the [recovery phrase](#recovery-phrase) for extra security.
