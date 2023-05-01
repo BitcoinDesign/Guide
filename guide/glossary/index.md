@@ -410,7 +410,7 @@ An output that has not been sent to another address. The bitcoin wallet balance 
 
 ###  Partially signed bitcoin transaction (PSBT)
 
-A portable data format for transactions before they are verified by the network. Often, the same application constructs the transaction and signs it. But there are applications where this is not the case, like when using a [hardware wallet](https://bitcoin.design/guide/glossary/#wallet), [multisig](https://bitcoin.design/guide/glossary/#multi-signature-wallet-multisig) or [payjoin](https://bitcoin.design/guide/glossary/#payjoin-p2ep). Parties to these applications share transaction data by communicating PSBTs.
+A portable data format for transactions before they are verified by the network. Often, the same application constructs the transaction and signs it. But there are applications where this is not the case, like when using a [hardware wallet]({{ '/guide/glossary/#wallet' | relative_url }}), [multisig]({{ '/guide/glossary/#multi-signature-wallet-multisig' | relative_url }}) or [payjoin]({{ '/guide/glossary/#payjoin-p2ep' | relative_url }}). Parties to these applications share transaction data by communicating PSBTs.
 
 **References:**
 
