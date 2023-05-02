@@ -206,7 +206,7 @@ Links to:
 
 ---
 
-Join the discussion in the [#research channel](https://bitcoindesign.slack.com/archives/C015DQEPCHJ) on the Bitcoin Design Slack.
+Join the discussion in the [#research channel](https://discord.com/channels/903125802726596648/903126614236360764) on the Bitcoin Design Discord.
 
 <!--
 

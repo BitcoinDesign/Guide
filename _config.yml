@@ -28,6 +28,7 @@ github_username:  jekyll
 
 github_repository_url: "https://github.com/BitcoinDesign/Guide/"
 slack_invite_url: "https://join.slack.com/t/bitcoindesign/shared_invite/zt-1rxp55chx-dH6pWlTtWBqRw7VztgvBGA"
+discord_invite_url: "https://discord.gg/K7aQ5PErht"
 youtube_url: "https://www.youtube.com/c/BitcoinDesign"
 twitter_url: "https://twitter.com/bitcoin_design"
 
@@ -69,12 +70,12 @@ twitter:
   username: bitcoin_design
   card: summary
 
-
 social:
   name: Bitcoin Design
   links:
     github: bitcoindesign
     slack: bitcoindesign
+    discord: bitcoindesign
 
 exclude:
   - README.md
