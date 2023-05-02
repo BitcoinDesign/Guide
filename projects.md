@@ -48,6 +48,48 @@ projects:
       - name: Github
         link: https://github.com/GBKS/bitcoin-wallet-ui-kit
 
+  - name: When Taproot
+    description: Promote broader adoption of Taproot.
+    image:
+      url: /assets/images/contribute/whentaproot.png
+      width: 75
+      height: 75
+    links:
+      - name: More info
+        link: https://whentaproot.org
+      - name: Collaboration
+        link: https://github.com/BitcoinDesign/Meta/issues/347
+
+  - name: Bitcoin QR
+    description: Help get unified QR codes adopted for smoother payment flows.
+    image:
+      url: /assets/images/contribute/bitcoinqr.png
+      width: 75
+      height: 75
+    links:
+      - name: More info
+        link: https://bitcoinqr.dev
+
+  - name: BOLT 12
+    description: Promoting adoption of BOLT 12 and Async Payments for better lightning experiences.
+    image:
+      url: /assets/images/contribute/bolt12.png
+      width: 75
+      height: 75
+    links:
+      - name: Discord
+        link: https://discord.gg/ZTM6qHSsJt
+
+  - name: Designathon
+    description: We organized a hackathon for designers.
+    image:
+      url: /assets/images/contribute/designathon.png
+      width: 75
+      height: 75
+    links:
+      - name: Event site
+        link: https://event.bitcoin.design
+
   - name: Bitcoin Design Sprints
     description: This project from 2022 was about improving lightning network wallets through applying the design guide, design thinking and problem solving.
     image:
@@ -60,27 +102,39 @@ projects:
       - name: Slack (Archive)
         link: https://bitcoindesign.slack.com/archives/C02VCHSQECT
 
-  - name: Bitcoin QR
-    description: Help get unified QR codes adopted for smoother payment flows.
+collaborations:
+  - name: Wallet Scrutiny
+    description: Redesign of an important security resource.
     image:
-      url: /assets/images/contribute/bitcoinqr.png
+      url: /assets/images/contribute/wallet-scrutiny.png
       width: 75
       height: 75
     links:
       - name: More info
-        link: https://bitcoinqr.dev
+        link: https://walletscrutiny.com
+      - name: Collaboration
+        link: https://github.com/BitcoinDesign/Meta/issues/415
 
-  - name: Designathon
-    description: We organized a hackathon for designers.
+  - name: Saving Satoshi
+    description: A sci-fi epic that teaches you bitcoin coding.
     image:
-      url: /assets/images/contribute/designathon.png
+      url: /assets/images/contribute/saving-satoshi.png
       width: 75
       height: 75
     links:
-      - name: Event site
-        link: https://event.bitcoin.design
+      - name: More info
+        link: http://savingsatoshi.com
 
-collaborations:
+  - name: Summer of Bitcoin
+    description: We support and mentor students in this educational initiative.
+    image:
+      url: /assets/images/contribute/summer-of-bitcoin.png
+      width: 75
+      height: 75
+    links:
+      - name: More info
+        link: http://summerofbitcoin.org
+
   - name: Alby
     description: Alby brings Bitcoin to the web with in-browser payments and identity, no account required.
     image:
@@ -102,8 +156,8 @@ collaborations:
       width: 75
       height: 75
     links:
-      - name: Site
-        link: https://github.com/BitcoinDesign/Bitcoin-Core-App
+      - name: Design docs
+        link: http://bitcoincore.app
       - name: Collaboration
         link: https://github.com/BitcoinDesign/Meta/issues/238
 
@@ -119,29 +173,15 @@ collaborations:
       - name: Twitter
         link: https://twitter.com/BitcoinSmiles
 
-  - name: Hello Bitcoin
-    description: Hello Bitcoin is a volunteer-run project with the simple goal of helping people learn about bitcoin in a way that is friendly and accessible.
-    image:
-      url: /assets/images/contribute/hello-bitcoin.png
-      width: 75
-      height: 75
-    links:
-      - name: Site
-        link: https://hellobitco.in/
-      - name: Collaboration
-        link: https://github.com/BitcoinDesign/Meta/issues/170
-      - name: Discord
-        link: https://discord.gg/j64t8xdwEA
-
-  - name: JoinMarket
-    description: Building a web UI for JoinMarket which is software used to create private bitcoin transactions called CoinJoins.
+  - name: Jam
+    description: A web UI for JoinMarket, for creating private bitcoin transactions called CoinJoins.
     image:
       url: /assets/images/contribute/joinmarket.png
       width: 75
       height: 75
     links:
       - name: Site
-        link: https://github.com/joinmarket-webui/joinmarket-webui
+        link: http://jamapp.org
       - name: Collaboration
         link: https://github.com/BitcoinDesign/Meta/issues/239
       - name: Telegram
@@ -182,6 +222,20 @@ collaborations:
         link: https://stratumprotocol.org/
       - name: Twitter
         link: https://twitter.com/StratumV2
+
+  - name: Hello Bitcoin
+    description: Hello Bitcoin is a volunteer-run project with the simple goal of helping people learn about bitcoin in a way that is friendly and accessible.
+    image:
+      url: /assets/images/contribute/hello-bitcoin.png
+      width: 75
+      height: 75
+    links:
+      - name: Site
+        link: https://hellobitco.in/
+      - name: Collaboration
+        link: https://github.com/BitcoinDesign/Meta/issues/170
+      - name: Discord
+        link: https://discord.gg/j64t8xdwEA
 ---
 
 <!--
