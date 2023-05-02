@@ -31,7 +31,7 @@ Find us on Nostr via [@bitcoin.design](nostr:npub13s5mxgws70rpxsug96jfvglggackjr
 
 ## Contribute
 
-The accounts are currently loosely managed by [Mo](https://twitter.com/MogashniNaidoo) and [Christoph](https://twitter.com/GBKS). We’d love to have more contributors. If you’d like to help out, reach out in [#spread-the-word](https://bitcoindesign.slack.com/archives/C01PRLDBCBA).
+The accounts are currently loosely managed by [Mo](https://twitter.com/MogashniNaidoo) and [Christoph](https://twitter.com/GBKS). We’d love to have more contributors. If you’d like to help out, reach out in [#spread-the-word](https://discord.com/channels/903125802726596648/956367257930453042).
 
 Shout-out to our previous posters [Alexa](https://twitter.com/AlexaAker) and [Doc Sharp](https://twitter.com/_Bosch_).
 

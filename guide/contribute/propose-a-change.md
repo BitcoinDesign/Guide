@@ -48,7 +48,7 @@ If you're looking to help, but not sure where to begin:
 
 - Check issues labeled as [Good first issue](https://github.com/BitcoinDesign/Guide/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
 - Check issues labeled as [Design](https://github.com/BitcoinDesign/Guide/issues?q=is%3Aissue+is%3Aopen+label%3Adesign)
-- Consult the community [on Slack]({{ site.slack_invite_url }}) or start a [GitHub discussion](https://github.com/BitcoinDesign/Guide/discussions/new) with your proposal
+- Consult the community [on Discord]({{ site.discord_invite_url }}) or start a [GitHub discussion](https://github.com/BitcoinDesign/Guide/discussions/new) with your proposal
 - Browse [bitcoin.design](https://bitcoin.design/guide) test it and try to identify issues yourself
 
 For more challenging pieces of work, a new page, or a new chapter, it's a good idea to talk to the community and seek consensus before you begin working on it. This helps avoid work duplication and ensures your efforts are aligned with the community-determined goals.

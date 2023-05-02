@@ -32,7 +32,7 @@ If you are not familiar with the concepts of open design, we have a [great intro
 
 ## How to get involved in the community
 
-1. [Join the community on Slack]({{ site.slack_invite_url }}) and say hi in the [#introductions](https://bitcoindesign.slack.com/archives/C0162PV1810) channnel
+1. [Join the community on Discord]({{ site.discord_invite_url }}) and say hi in the [#introductions](https://discord.com/channels/903125802726596648/903126234232422411) channnel
 1. [Subscribe to the newsletter]({{ '/newsletter/' | relative_url }}) and follow on [social media]({{ '/social-media' | relative_url }}), like [Twitter](https://twitter.com/bitcoin_design), to stay up-to-date
 1. Subscribe and watch recordings of calls we organized on [BitcoinTV](https://bitcointv.com/a/bitcoin_design/videos) and [YouTube](https://www.youtube.com/c/BitcoinDesign/videos)
 1. Read up on our [project life cycle](https://github.com/BitcoinDesign/Meta/blob/master/Projects.md)
@@ -43,7 +43,7 @@ If you are not familiar with the concepts of open design, we have a [great intro
 
 1. See the projects we are either involved in or recommend on the [projects]({{ 'projects' | relative_url }}) page
 1. Browse [issues labeled as collaborations](https://github.com/BitcoinDesign/Meta/issues?q=is%3Aopen+is%3Aissue+label%3Acollaboration)
-2. Browse the various Slack channels to see what projects are being discussed and chime in. Open-source relies on pro-active contributions.
+2. Browse the various Discord channels to see what projects are being discussed and chime in. Open-source relies on pro-active contributions.
 1. Contribute to the [Bitcoin Design Guide]({{ '/guide/' | relative_url }})
 
 ## Bitcoin Design Guide
@@ -53,7 +53,7 @@ Our first community project is a free, open-source repository for anyone buildin
 - [View the guide]({{ 'guide' | relative_url }})
 - Follow progress on the [roadmap](https://github.com/orgs/BitcoinDesign/projects/2)
 - We have a whole section on [how to contribute]({{ 'guide/contribute/' | relative_url }})
-- Discuss on the [#bitcoin-design-guide](https://bitcoindesign.slack.com/archives/C015856BDME) Slack channel
+- Discuss on the [#bitcoin-design-guide](https://discord.com/channels/903125802726596648/903126089512153088) Discord channel
 - Join a [Design Guide Jam Session](https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+%22jam+session%22+) where we discuss what is being worked on. We organize them every third Monday
 - Review code and content on the [Github repository](https://github.com/BitcoinDesign/Guide)
 - Read the original [project intro](https://docs.google.com/document/d/1YiYeRIybGmxmErCOI4Jc8Qajz3JGM1JYVfUtpzyCzSk/edit?usp=sharing) document

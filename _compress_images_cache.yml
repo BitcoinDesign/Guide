@@ -205,11 +205,6 @@ assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-ba
 assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-provider@2x.png: cloud-backup-provider@2x.png
 assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-service.png: cloud-backup-service.png
 assets/images/guide/daily-spending-wallet/backup-and-recovery/automatic-cloud-backup/cloud-backup-service@2x.png: cloud-backup-service@2x.png
-assets/images/guide/daily-spending-wallet/backup-and-recovery/backing-up-a-wallet-mobile.png: backing-up-a-wallet-mobile.png
-assets/images/guide/daily-spending-wallet/backup-and-recovery/backing-up-a-wallet-mobile@2x.png: backing-up-a-wallet-mobile@2x.png
-assets/images/guide/daily-spending-wallet/backup-and-recovery/backing-up-a-wallet-preview.png: backing-up-a-wallet-preview.png
-assets/images/guide/daily-spending-wallet/backup-and-recovery/backing-up-a-wallet.png: backing-up-a-wallet.png
-assets/images/guide/daily-spending-wallet/backup-and-recovery/backing-up-a-wallet@2x.png: backing-up-a-wallet@2x.png
 assets/images/guide/daily-spending-wallet/backup-and-recovery/copy-recovery-phrase.png: copy-recovery-phrase.png
 assets/images/guide/daily-spending-wallet/backup-and-recovery/copy-recovery-phrase@2x.png: copy-recovery-phrase@2x.png
 assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/backing-up-a-wallet-manual-mobile.png: backing-up-a-wallet-manual-mobile.png
@@ -2189,3 +2184,8 @@ assets/images/guide/daily-spending-wallet/security/security-header-mobile@2x.png
 assets/images/guide/daily-spending-wallet/security/security-header.png: security-header.png
 assets/images/guide/daily-spending-wallet/security/security-header@2x.png: security-header@2x.png
 assets/images/guide/daily-spending-wallet/security/security-preview.png: security-preview.png
+assets/images/guide/daily-spending-wallet/backup-and-recovery/backup-recovery-image.png: backup-recovery-image.png
+assets/images/guide/daily-spending-wallet/backup-and-recovery/backup-recovery-image@2x.png: backup-recovery-image@2x.png
+assets/images/guide/daily-spending-wallet/backup-and-recovery/backup-recovery-image-mobile.png: backup-recovery-image-mobile.png
+assets/images/guide/daily-spending-wallet/backup-and-recovery/backup-recovery-image-mobile@2x.png: backup-recovery-image-mobile@2x.png
+assets/images/guide/daily-spending-wallet/backup-and-recovery/backup-recovery-image-preview.png: backup-recovery-image-preview.png

@@ -144,7 +144,7 @@ The right-hand panel has an “Inspect” tab that is a great companion for deve
 
 ## Community seal usage
 
-Feel free to use and remix the seal. Before attaching it more formally to a project or initiative, be sure to ask the broader community. Not everyone might be OK with it. You can post in the [#general](https://bitcoindesign.slack.com/archives/C014J9ZKXB4) channel in Slack or open an issue in the [meta repo](https://github.com/BitcoinDesign/Meta/issues) on github.
+Feel free to use and remix the seal. Before attaching it more formally to a project or initiative, be sure to ask the broader community. Not everyone might be OK with it. You can post in the [#general](https://discord.com/channels/903125802726596648/956386942788980766) channel in Discord or open an issue in the [meta repo](https://github.com/BitcoinDesign/Meta/issues) on github.
 
 ---
 
