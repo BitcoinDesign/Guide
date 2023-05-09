@@ -8,7 +8,7 @@ permalink: /guide/daily-spending-wallet/security/
 redirect_from:
  - /guide/onboarding/protecting-a-wallet/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/daily-spending-wallet/security/protecting-a-wallet-preview.png
+image: https://bitcoin.design/assets/images/guide/daily-spending-wallet/security/security-preview.png
 image_base: /assets/images/guide/daily-spending-wallet/security/
 images_checklists:
     - file: security-checklist
@@ -81,16 +81,19 @@ This page narrowly focuses on user actions to set up and maintain good security
 and privacy for their wallets. It does not cover key setup and management, or
 technical things like watch towers for lightning wallets.
 
+The source design for header images of this page:
+https://www.figma.com/file/95gJ0esWcAoKAdULBmIAZT/Security-header?node-id=0%3A1&t=bPk8gEzBKbIGWCIG-1
+
 The source design for screen mockups on this page is here:
 https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototype?node-id=4152%3A306968&t=boEAgdyqfi39SBoF-1
 
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/security/protecting-a-wallet.png"
-   retina = "/assets/images/guide/daily-spending-wallet/security/protecting-a-wallet@2x.png"
-   mobile = "/assets/images/guide/daily-spending-wallet/security/protecting-a-wallet-mobile.png"
-   mobileRetina = "/assets/images/guide/daily-spending-wallet/security/protecting-a-wallet-mobile@2x.png"
+   image = "/assets/images/guide/daily-spending-wallet/security/security-header.png"
+   retina = "/assets/images/guide/daily-spending-wallet/security/security-header@2x.png"
+   mobile = "/assets/images/guide/daily-spending-wallet/security/security-header-mobile.png"
+   mobileRetina = "/assets/images/guide/daily-spending-wallet/security/security-header-mobile@2x.png"
    alt-text = "Protecting a wallet chapter header image"
    width = 1600
    height = 600

@@ -457,11 +457,6 @@ assets/images/guide/daily-spending-wallet/security/privacy-and-security-settings
 assets/images/guide/daily-spending-wallet/security/privacy-checklist-big.png: privacy-checklist-big.png
 assets/images/guide/daily-spending-wallet/security/privacy-checklist.png: privacy-checklist.png
 assets/images/guide/daily-spending-wallet/security/privacy-checklist@2x.png: privacy-checklist@2x.png
-assets/images/guide/daily-spending-wallet/security/protecting-a-wallet-mobile.png: protecting-a-wallet-mobile.png
-assets/images/guide/daily-spending-wallet/security/protecting-a-wallet-mobile@2x.png: protecting-a-wallet-mobile@2x.png
-assets/images/guide/daily-spending-wallet/security/protecting-a-wallet-preview.png: protecting-a-wallet-preview.png
-assets/images/guide/daily-spending-wallet/security/protecting-a-wallet.png: protecting-a-wallet.png
-assets/images/guide/daily-spending-wallet/security/protecting-a-wallet@2x.png: protecting-a-wallet@2x.png
 assets/images/guide/daily-spending-wallet/security/security-checklist-big.png: security-checklist-big.png
 assets/images/guide/daily-spending-wallet/security/security-checklist.png: security-checklist.png
 assets/images/guide/daily-spending-wallet/security/security-checklist@2x.png: security-checklist@2x.png
@@ -2184,6 +2179,11 @@ assets/images/guide/daily-spending-wallet/security/home-pin-reminder@2x.png: hom
 assets/images/guide/daily-spending-wallet/security/security-big.png: security-big.png
 assets/images/guide/daily-spending-wallet/security/security.png: security.png
 assets/images/guide/daily-spending-wallet/security/security@2x.png: security@2x.png
+assets/images/guide/daily-spending-wallet/security/security-header-mobile.png: security-header-mobile.png
+assets/images/guide/daily-spending-wallet/security/security-header-mobile@2x.png: security-header-mobile@2x.png
+assets/images/guide/daily-spending-wallet/security/security-header.png: security-header.png
+assets/images/guide/daily-spending-wallet/security/security-header@2x.png: security-header@2x.png
+assets/images/guide/daily-spending-wallet/security/security-preview.png: security-preview.png
 assets/images/guide/daily-spending-wallet/backup-and-recovery/backup-recovery-image.png: backup-recovery-image.png
 assets/images/guide/daily-spending-wallet/backup-and-recovery/backup-recovery-image@2x.png: backup-recovery-image@2x.png
 assets/images/guide/daily-spending-wallet/backup-and-recovery/backup-recovery-image-mobile.png: backup-recovery-image-mobile.png
