@@ -45,16 +45,16 @@
 
       &.-active {
         font-weight: 500;
-        color: $primary-color;
+        color: var(--primary-color);
         text-decoration: none;
 
         &:visited {
-          color: $primary-color;
+          color: var(--primary-color);
         }
       }
 
       &:hover {
-        color: $primary-color;
+        color: var(--primary-color);
       }
 
       &:hover,
@@ -77,21 +77,21 @@
       svg {
         width: 15px;
         height: 15px;
-        color: $link-base-color;
+        color: var(--link-base-color);
         transition: all 150ms $ease;
       }
 
       &:active,
       &:focus {
         border-width: 0;
-        background-color: rgba($primary-color, 0.1);
+        background-color: rgba(var(--primary-color-rgb), 0.1);
       }
 
       &:hover {
-        background-color: rgba($primary-color, 0.1);
+        background-color: rgba(var(--primary-color-rgb), 0.1);
 
         svg {
-          color: $primary-color;
+          color: var(--primary-color);
         }
       }
     }
@@ -113,7 +113,7 @@
           color: #474747;
 
           &:hover {
-            color: $primary-color;
+            color: var(--primary-color);
           }
         }
       }
@@ -121,17 +121,17 @@
 
     &.-active {
       > a.nav-list-link {
-        color: $primary-color;
+        color: var(--primary-color);
 
         &:visited {
-          color: $primary-color;
+          color: var(--primary-color);
         }
       }
 
       > .nav-list-expander {
         svg {
           transform: rotate(90deg);
-          color: $primary-color;
+          color: var(--primary-color);
         }
       }
 

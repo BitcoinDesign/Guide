@@ -202,7 +202,7 @@
         text-decoration: underline;
 
         &:hover {
-          color: $primary-color;
+          color: var(--primary-color);
         }
       }
     }
@@ -222,7 +222,7 @@
         text-decoration: underline;
 
         &:hover {
-          color: $primary-color;
+          color: var(--primary-color);
         }
       }
 

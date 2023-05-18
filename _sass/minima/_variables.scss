@@ -25,19 +25,13 @@ $small_width:              640px;
 $large_width:              1024px;
 $huge_width:               1440px;
 
-
-
-
-
 $yellow: #FFF75C;
 $bitcoin-yellow: #F7931A;
+$bitcoin-yellow-contrast: #DB821A;
 $blue: #6490E3;
 $green: #6FCF97;
 $red: #DE5E57;
 $primary-color: $bitcoin-yellow;
-
-
-
 
 :root {
   --back: 251, 251, 251;
@@ -45,6 +39,26 @@ $primary-color: $bitcoin-yellow;
 
   --backHex: #fbfbfb;
   --frontHex: #000000;
+
+  --primary-color: #F7931A;
+  --primary-color-rgb: 247, 147, 26;
+  --primary-color-h: 33;
+  --primary-color-s: 93%;
+  --primary-color-l: 54%;
+  --primary-color-l-darker: 44%;
+
+  --link-base-color: var(--primary-color);
+  --link-hover-color: hsl(var(--primary-color-h), var(--primary-color-s), var(--primary-color-l-darker));
+  --link-visited-color: hsl(var(--primary-color-h), var(--primary-color-s), var(--primary-color-l-darker));
+
+  @media (prefers-contrast: more) {
+    --primary-color: #DB821A;
+    --primary-color-rgb: 219, 130, 26;
+    --primary-color-h: 32;
+    --primary-color-s: 79%;
+    --primary-color-l: 48%;
+    --primary-color-l-darker: 38%;
+  }
 }
 
 .theme--dark {

@@ -31,7 +31,7 @@
 
       &:hover {
         svg {
-          color: $primary-color;
+          color: var(--primary-color);
         }
       }
     }
@@ -51,7 +51,7 @@
         font-size: 16px;
 
         &:hover {
-          color: $primary-color;
+          color: var(--primary-color);
         }
       }
     }
@@ -74,7 +74,7 @@
 
         &:hover {
           svg {
-            fill: $primary-color !important;
+            fill: var(--primary-color) !important;
           }
         }
 
@@ -101,7 +101,7 @@
         font-size: 16px;
 
         &:hover {
-          color: $primary-color;
+          color: var(--primary-color);
         }
       }
 
