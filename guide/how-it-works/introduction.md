@@ -6,6 +6,7 @@ nav_order: 9
 has_children: true
 permalink: /guide/how-it-works/
 main_classes: -no-top-padding
+image: https://bitcoin.design/assets/images/guide/how-it-works/how-it-works-preview.png
 ---
 
 {% include picture.html
