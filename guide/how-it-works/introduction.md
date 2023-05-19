@@ -14,7 +14,7 @@ image: https://bitcoin.design/assets/images/guide/how-it-works/how-it-works-prev
    retina = "/assets/images/guide/how-it-works/how-it-works-@2x.png"
    mobile = "/assets/images/guide/how-it-works/how-it-works-mobile.png"
    mobileRetina = "/assets/images/guide/how-it-works/how-it-works-mobile@2x.png"
-   alt-text = "How it works header image."
+   alt-text = "Multiple interlocking gears, center gear has a bitcoin symbol on it"
    width = 1600
    height = 520
    layout = "full-width"
