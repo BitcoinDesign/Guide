@@ -9,6 +9,7 @@ main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/resources/design-files/design-source-files-preview.jpg
 redirect_from:
  - /guide/designing-products/design-resources/
+---
 
 <!--
 
