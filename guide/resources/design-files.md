@@ -78,6 +78,8 @@ Editor's notes
 
 This page contains specific files and resources which the community has been building. Each with links, so that anyone can utilise in their own projects in the Bitcoin space.
 
+Link to header image source file - https://www.figma.com/file/kmZVLnU6Bfwc01K7hCS7Qd/Banner-image-%7C-Design-source-files?type=design&node-id=453%3A1053&t=04N8RiCzKdbVgYZp-1
+
 -->
 
 {% include picture.html
