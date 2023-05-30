@@ -6,9 +6,29 @@ nav_order: 1
 parent: Resources
 permalink: /guide/resources/design-files/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/resources/design-files/design-resources-preview.jpg
+image: https://bitcoin.design/assets/images/guide/resources/design-files/design-source-files-preview.jpg
 redirect_from:
  - /guide/designing-products/design-resources/
+
+<!--
+
+Editor's notes
+
+This page contains specific files and resources which the community has been building. Each with links, so that anyone can utilise in their own projects in the Bitcoin space.
+
+-->
+
+{% include picture.html
+   image = "/assets/images/guide/resources/design-challenges/design-source-files.jpg"
+   retina = "/assets/images/guide/resources/design-challenges/design-source-files@2x.jpg"
+   mobile = "/assets/images/guide/resources/design-challenges/design-source-files-mobile.jpg"
+   mobileRetina = "/assets/images/guide/resources/design-challenges/design-source-files-mobile@2x.jpg"
+   alt-text = "A group of filing cabinets filled with resources on a solar system backdrop"
+   width = 1600
+   height = 625
+   layout = "full-width"
+%}
+
 files:
   - caption: <a href="https://www.bitcoinuikit.com/">Bitcoin UI Kit</a>
     alt: Home images of several mobile bitcoin apps
