@@ -6,7 +6,7 @@ nav_order: 1
 parent: Resources
 permalink: /guide/resources/design-files/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/resources/design-files/design-resources-preview.jpg
+image: https://bitcoin.design/assets/images/guide/resources/design-files/design-source-files-preview.jpg
 redirect_from:
  - /guide/designing-products/design-resources/
 files:
@@ -76,9 +76,22 @@ files:
 
 Editor's notes
 
-This page is about design source files the community maintains for the site, guide and other community needs (like the slide template).
+This page contains specific files and resources which the community has been building. Each with links, so that anyone can utilise in their own projects in the Bitcoin space.
+
+Link to header image source file - https://www.figma.com/file/kmZVLnU6Bfwc01K7hCS7Qd/Banner-image-%7C-Design-source-files?type=design&node-id=453%3A1053&t=04N8RiCzKdbVgYZp-1
 
 -->
+
+{% include picture.html
+   image = "/assets/images/guide/resources/design-files/design-source-files.jpg"
+   retina = "/assets/images/guide/resources/design-files/design-source-files@2x.jpg"
+   mobile = "/assets/images/guide/resources/design-files/design-source-files-mobile.jpg"
+   mobileRetina = "/assets/images/guide/resources/design-files/design-source-files-mobile@2x.jpg"
+   alt-text = "A group of filing cabinets filled with resources on a solar system backdrop"
+   width = 1600
+   height = 625
+   layout = "full-width"
+%}
 
 # Design source files
 
