@@ -67,7 +67,7 @@ The other person does not need to co-sign every transaction, but we might want a
 
 Although the 1-of-2 scheme could work here, it offers lower protection against both theft and self-inflicted loss, unless rigorous [manual backups]({{ '/guide/how-it-works/private-key-management/manual-backup/' | relative_url }}) are implemented. For this example we will choose the 2-of-3 scheme, but still have to decide on who will hold the third key, and the location of the other two.
 
-Depending on how tailor-made or interoperable we want this setup could be, we have many options for the location of the three keys, including:
+Depending on how tailor-made or interoperable we want this setup to be, we have many options for the location of the three keys, including:
 
 - Individual mobile keys for the two users, plus one held by the co-manager (the product maker) for recovery and co-signing
 - Individual mobile keys for the two users, plus a shared external signing device
