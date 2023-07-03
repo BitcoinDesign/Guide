@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Wallet selector
-description: This case study is an analysis and exploration of payjoin's audience, implementations, features and proposes specific user flows.
+description: An interface pattern for letting users choose which external wallet to use when withdrawing, sending, or receiving in a bitcoin application.
 nav_order: 3
 parent: Case studies
 permalink: /guide/case-studies/wallet-selector/
@@ -11,15 +11,15 @@ image_base: /assets/images/guide/case-studies/wallet-selector/
 example-screens:
     - file: thndr-games
       modalImage: thndr-games-big
-      alt:
+      alt: Screenshot of a mobile app showing a withdraw balance and a list of wallets.
       caption: 'Withdrawing sats in a <a href="https://www.thndr.games/" target="_blank" rel="nofollow noopener noreferrer">THNDR Games</a> app.'
     - file: the-bitcoin-company
       modalImage: the-bitcoin-company-big
-      alt:
+      alt: A lightning payment screen with an overal for selecting a lightnig wallet from a list.
       caption: 'Choosing a wallet for payment in <a href="https://thebitcoincompany.com" target="_blank" rel="nofollow noopener noreferrer">The Bitcoin Company</a> app.'
     - file: damus
       modalImage: damus-big
-      alt:
+      alt: A mobile screen showing a lightning invoice and a list of wallets to choose from.
       caption: 'Choosing a wallet for invoice payment in <a href="http://damus.io" target="_blank" rel="nofollow noopener noreferrer">Damus</a>.'
 
 ---
@@ -104,7 +104,7 @@ While this is practical for users, there is no automated discovery process. Deve
    image = "/assets/images/guide/case-studies/wallet-selector/simple-bitcoin.png"
    retina = "/assets/images/guide/case-studies/wallet-selector/simple-bitcoin@2x.png"
    mobileRetina = "/assets/images/guide/case-studies/wallet-selector/simple-bitcoin-big.png"
-   alt-text = ""
+   alt-text = "A mobile screen showing a categorized list of wallets by installation status."
    caption = 'Highlighting of installed wallets in the  <a href="https://www.simple-bitcoin.app" target="_blank">Simple Bitcoin</a> app.'
    width = 250
    height = 541
