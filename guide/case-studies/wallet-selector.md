@@ -103,9 +103,8 @@ While this is practical for users, there is no automated discovery process. Deve
 {% include picture.html
    image = "/assets/images/guide/case-studies/wallet-selector/simple-bitcoin.png"
    retina = "/assets/images/guide/case-studies/wallet-selector/simple-bitcoin@2x.png"
-   mobileRetina = "/assets/images/guide/case-studies/wallet-selector/simple-bitcoin-big.png"
    alt-text = "A mobile screen showing a categorized list of wallets by installation status."
-   caption = 'Highlighting of installed wallets in the  <a href="https://www.simple-bitcoin.app" target="_blank">Simple Bitcoin</a> app.'
+   caption = 'Highlighting of installed wallets in the  <a href="https://www.simple-bitcoin.app" target="_blank" rel="nofollow noopener noreferrer">Simple Bitcoin</a> app.'
    width = 250
    height = 541
    layout = "float-right-desktop -background"
@@ -117,7 +116,21 @@ Some operating systems (see [iOS documentation](https://developer.apple.com/docu
 
 ## Only ask once
 
+<div class="center" markdown="1">
+
+{% include picture.html
+   image = "/assets/images/guide/case-studies/wallet-selector/plebstr.png"
+   retina = "/assets/images/guide/case-studies/wallet-selector/plebstr@2x.png"
+   alt-text = "A mobile settings screen showing dropdown for choosing a default wallet."
+   caption = 'Default wallet setting in the <a href="https://plebstr.com/" target="_blank" rel="nofollow noopener noreferrer">Plebstr</a> app.'
+   width = 250
+   height = 250
+   layout = "float-right-desktop -background"
+%}
+
 When a user has chosen their preferred wallet to use for a specific action, you can set it as the default option for future actions. Make sure to provide the option to change this default.
+
+</div>
 
 ## Beyond URI schemes
 
