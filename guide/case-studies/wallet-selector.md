@@ -28,7 +28,11 @@ example-screens:
 
 Editor's notes
 
-Illustration sources: <>
+This page narrowly focuses on the UI pattern of letting users choose from a list of wallets,
+in order to make a payment, withdrawal, etc.
+
+Header image source:
+https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?type=design&node-id=3324%3A24043&mode=design&t=GbcNUdc0VUnSOQi2-1
 
 -->
 
