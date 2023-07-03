@@ -55,13 +55,13 @@ It's a common scenario that a user wants to transfer bitcoin between apps and we
 - Having a method to communicate
 - Speaking the same language
 
-The first is provided by environment (typically the operating system), the second is about protocols and [interoperability]({{ '/guide/getting-started/principles/#interoperability' | relative_url }}) in the bitcoin application ecosystem.
+The first is provided by the environment (typically the operating system), and the second is about protocols and [interoperability]({{ '/guide/getting-started/principles/#interoperability' | relative_url }}) in the bitcoin application ecosystem.
 
-Let’s say a user has won satoshis in a mobile gaming app and wants to transfer them to their wallet on the same device. The ideal user flow is that when a user presses a withdraw button, their wallet automatically becomes active and shows a screen to confirm the withdrawal. The user approves and the funds are transferred. It’s a simple two-tap process.
+Let’s say a user has won satoshis in a mobile gaming app and wants to transfer them to their wallet on the same device. The ideal user flow is that when a user presses a withdraw button, their wallet automatically becomes active and shows a screen to confirm the withdrawal. The user approves, and the funds are transferred. It’s a simple two-tap process.
 
 Common issues are:
 - The gaming app and wallet use different [payment request formats]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }}). For example, the gaming app relies on [LNURL]({{ '/guide/how-it-works/payment-request-formats/#lnurl' | relative_url }}), which the wallet does not support.
-- The user has multiple wallets installed. The gaming app uses functionality provided by the operating system to open the default wallet. But the default is not what the user wants.
+- The user has multiple wallets installed. The gaming app uses functionality provided by the operating system to open the default wallet, but the default is not what the user wants.
 
 ## The wallet selector
 
@@ -95,7 +95,7 @@ If you have a bitcoin wallet installed on your device, you can try it here:
 
 Wallets can also define their own unique URI schemes (like `walletname:`, see the [documentation](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app) for Apple devices). On installation, the operating system registers the new URI scheme, and any links that follow this scheme will be opened in the respective wallet.
 
-For example, the following URI would be opened in an imaginary “Design Wallet”, since it would have registered the `designwallet:` URI scheme upon installation:
+For example, the following URI would be opened in an imaginary “Design Wallet” since it would have registered the `designwallet:` URI scheme upon installation:
 `designwallet:bitcoin:16AgmhoCVSJoGeEkERPdrsdvJG3RWmum6T`
 
 While this is practical for users, there is no automated discovery process. Developers are required to manually track and implement custom schemes.
@@ -114,7 +114,7 @@ While this is practical for users, there is no automated discovery process. Deve
    layout = "float-right-desktop -background"
 %}
 
-Some operating systems (see [iOS documentation](https://developer.apple.com/documentation/uikit/uiapplication/1622952-canopenurl)) provide a way to detect if the device can handle specific URI schemes. This allows for detection of whether specific wallets are installed. You can use this feature to highlight installed wallets to the user and deprioritize others (or even offering installation links for those). On the technical side, you can pass on customized payment information for each one, based on supported features.
+Some operating systems (see [iOS documentation](https://developer.apple.com/documentation/uikit/uiapplication/1622952-canopenurl)) provide a way to detect if the device can handle specific URI schemes. This allows for detection of whether specific wallets are installed. You can use this feature to highlight installed wallets to the user and deprioritize others (or even offer installation links for those). On the technical side, you can pass on customized payment information for each one based on supported features.
 
 </div>
 
@@ -138,21 +138,21 @@ When a user has chosen their preferred wallet to use for a specific action, you 
 
 ## Beyond URI schemes
 
-There are several other techniques for websites and applications to communicate with each other. Each has its own use cases, benefits and limitations.
+There are several other techniques for websites and applications to communicate with each other. Each has its own use cases, benefits, and limitations.
 
 ### [Web Share API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API#)
 
-Allows websites to prompt a share mechanism provided by the operating system. Supports sharing of URLs, text, and files. The benefit is that the operating system can show an array of applications for the user to choose from, based on what is installed and prior usage.
+The Web Share API allows websites to prompt a share mechanism provided by the operating system. It supports the sharing of URLs, text, and files. The benefit is that the operating system can show an array of applications for the user to choose from, based on what is installed and prior usage.
 
 ### Share sheets
 
-As described above, operating systems provide UIs for letting users choose with applications to send shared information to.
+As described above, operating systems provide UIs to let users choose which applications to send shared information to.
 - [Activity views](https://developer.apple.com/design/human-interface-guidelines/activity-views#app-top) (Apple operating systems)
 - [Android sharesheet](https://developer.android.com/training/sharing/send)
 
 ### Browser extensions
 
-Browser extensions can inject code into websites to simplify sharing. This mechanism is also generally described in the [Sign in with bitcoin page]({{ '/guide/resources' | relative_url }}).
+Browser extensions can inject code into websites to simplify sharing. This mechanism is also generally described in the [Sign in with bitcoin page]({{ '/guide/how-it-works/sign-in-with-bitcoin/' | relative_url }}).
 - [Safari app extensions](https://developer.apple.com/documentation/safariservices/safari_app_extensions/building_a_safari_app_extension)
 - [Firefox addons](https://addons.mozilla.org/en-US/developers/)
 - [Chrome extensions](https://developer.chrome.com/docs/extensions/)
