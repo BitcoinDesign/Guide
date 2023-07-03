@@ -32,6 +32,12 @@ This case study is an analysis and exploration of payjoin's audience, implementa
 
 ---
 
+### [Wallet selector]({{ '/guide/case-studies/wallet-selector' | relative_url }})
+
+Documentation of an interface pattern for letting users choose which external wallet to use when withdrawing, sending, or receiving in a bitcoin application.
+
+---
+
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/sign-in-with-bitcoin/"
    previousName = "Sign in with bitcoin"

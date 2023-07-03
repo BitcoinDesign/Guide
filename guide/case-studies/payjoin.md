@@ -2,7 +2,7 @@
 layout: guide
 title: The Payjoin Experience
 description: This case study is an analysis and exploration of payjoin's audience, implementations, features and proposes specific user flows.
-nav_order: 6
+nav_order: 2
 parent: Case studies
 permalink: /guide/case-studies/payjoin/
 main_classes: -no-top-padding
@@ -306,6 +306,6 @@ Next, view the [resources]({{ '/guide/resources' | relative_url }}) that can hel
 {% include next-previous.html
    previousUrl = "/guide/case-studies/blixt-wallet"
    previousName = "Blixt wallet case study"
-   nextUrl = "/guide/resources"
-   nextName = "Resources"
+   nextUrl = "/guide/case-studies/wallet-selector"
+   nextName = "Wallet selector"
 %}
