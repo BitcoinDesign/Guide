@@ -171,6 +171,6 @@ Next, view our [case studies]({{ '/guide/case-studies/' | relative_url }}) to se
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/wallet-privacy/"
    previousName = "Wallet privacy"
-   nextUrl = "/guide/case-studies/"
-   nextName = "Case studies"
+   nextUrl = "/guide/how-it-works/wallet-selector"
+   nextName = "Wallet selector"
 %}

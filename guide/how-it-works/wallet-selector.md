@@ -2,12 +2,12 @@
 layout: guide
 title: Wallet selector
 description: An interface pattern for letting users choose which external wallet to use when withdrawing, sending, or receiving in a bitcoin application.
-nav_order: 3
-parent: Case studies
-permalink: /guide/case-studies/wallet-selector/
+nav_order: 11
+parent: How it works
+permalink: /guide/how-it-works/wallet-selector/
 main_classes: -no-top-padding
-image: /assets/images/guide/case-studies/wallet-selector/wallet-selector-preview.jpg
-image_base: /assets/images/guide/case-studies/wallet-selector/
+image: /assets/images/guide/how-it-works/wallet-selector/wallet-selector-preview.jpg
+image_base: /assets/images/guide/how-it-works/wallet-selector/
 example-screens:
     - file: thndr-games
       modalImage: thndr-games-big
@@ -37,8 +37,8 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 -->
 
 {% include picture.html
-   image = "assets/images/guide/case-studies/wallet-selector/wallet-selector.jpg"
-   retina = "assets/images/guide/case-studies/wallet-selector/wallet-selector@2x.jpg"
+   image = "assets/images/guide/how-it-works/wallet-selector/wallet-selector.jpg"
+   retina = "assets/images/guide/how-it-works/wallet-selector/wallet-selector@2x.jpg"
    alt-text = ""
    width = 1600
    height = 600
@@ -82,7 +82,7 @@ We’ll outline each of those below.
 
 ### 1. Opening the default wallet
 
-A widely supported standard is [BIP 21](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki#Examples), which defines a URI scheme for passing bitcoin payment information to other applications.
+A widely supported standard is [BIP 21](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki#Examples) (also see [Payment request formats](/guide/how-it-works/payment-request-formats/#uniform-resource-identifier-uris-schemes)), which defines a URI scheme for passing bitcoin payment information to other applications.
 
 For example, clicking a link or button with the following URI is opened in the default bitcoin wallet (if there is one installed):
 `bitcoin:16AgmhoCVSJoGeEkERPdrsdvJG3RWmum6T`
@@ -105,8 +105,8 @@ While this is practical for users, there is no automated discovery process. Deve
 <div class="center" markdown="1">
 
 {% include picture.html
-   image = "/assets/images/guide/case-studies/wallet-selector/simple-bitcoin.png"
-   retina = "/assets/images/guide/case-studies/wallet-selector/simple-bitcoin@2x.png"
+   image = "/assets/images/guide/how-it-works/wallet-selector/simple-bitcoin.png"
+   retina = "/assets/images/guide/how-it-works/wallet-selector/simple-bitcoin@2x.png"
    alt-text = "A mobile screen showing a categorized list of wallets by installation status."
    caption = 'Highlighting of installed wallets in the  <a href="https://www.simple-bitcoin.app" target="_blank" rel="nofollow noopener noreferrer">Simple Bitcoin</a> app.'
    width = 250
@@ -123,8 +123,8 @@ Some operating systems (see [iOS documentation](https://developer.apple.com/docu
 <div class="center" markdown="1">
 
 {% include picture.html
-   image = "/assets/images/guide/case-studies/wallet-selector/plebstr.png"
-   retina = "/assets/images/guide/case-studies/wallet-selector/plebstr@2x.png"
+   image = "/assets/images/guide/how-it-works/wallet-selector/plebstr.png"
+   retina = "/assets/images/guide/how-it-works/wallet-selector/plebstr@2x.png"
    alt-text = "A mobile settings screen showing dropdown for choosing a default wallet."
    caption = 'Default wallet setting in the <a href="https://plebstr.com/" target="_blank" rel="nofollow noopener noreferrer">Plebstr</a> app.'
    width = 250
@@ -159,11 +159,11 @@ Browser extensions can inject code into websites to simplify sharing. This mecha
 
 ---
 
-Next, view the [resources]({{ '/guide/resources' | relative_url }}) that can help you build better bitcoin products.
+Next, view the [case studies]({{ '/guide/case-studies/' | relative_url }}) that can help you build better bitcoin products.
 
 {% include next-previous.html
-   previousUrl = "/guide/case-studies/payjoin"
-   previousName = "Payjoin"
-   nextUrl = "/guide/resources"
-   nextName = "Resources"
+   previousUrl = "/guide/how-it-works/sign-in-with-bitcoin/"
+   previousName = "Sign in with bitcoin"
+   nextUrl = "/guide/case-studies/"
+   nextName = "Case studies"
 %}

@@ -41,8 +41,8 @@ Get hands-on with these take-home bitcoin design challenges to practice and play
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/case-studies/wallet-selector/"
-   previousName = "Wallet selector"
+   previousUrl = "/guide/case-studies/payjoin/"
+   previousName = "The Payjoin Experience"
    nextUrl = "/guide/resources/design-files/"
    nextName = "Design files"
 %}

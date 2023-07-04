@@ -80,6 +80,12 @@ How lightning wallets can support authentication and payments with external appl
 
 ---
 
+### [Wallet selector]({{ '/guide/how-it-works/wallet-selector' | relative_url }})
+
+Documentation of an interface pattern for letting users choose which external wallet to use when withdrawing, sending, or receiving in a bitcoin application.
+
+---
+
 {% include next-previous.html
    previousUrl = "/guide/shared-wallet/"
    previousName = "Shared wallet"

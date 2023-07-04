@@ -304,8 +304,8 @@ This case study tackles the design aspects around payjoin and it hopes to boost 
 Next, view the [resources]({{ '/guide/resources' | relative_url }}) that can help you build better bitcoin products.
 
 {% include next-previous.html
-   previousUrl = "/guide/case-studies/blixt-wallet"
+   previousUrl = "/guide/case-studies/blixt-wallet/"
    previousName = "Blixt wallet case study"
-   nextUrl = "/guide/case-studies/wallet-selector"
-   nextName = "Wallet selector"
+   nextUrl = "/guide/resources/"
+   nextName = "Resources"
 %}
