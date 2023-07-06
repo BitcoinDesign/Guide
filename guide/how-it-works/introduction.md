@@ -6,13 +6,19 @@ nav_order: 9
 has_children: true
 permalink: /guide/how-it-works/
 main_classes: -no-top-padding
+image: https://bitcoin.design/assets/images/guide/how-it-works/how-it-works-preview.png
 ---
 
-<!--
-
-Illustration sources:
-
--->
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/how-it-works.png"
+   retina = "/assets/images/guide/how-it-works/how-it-works-@2x.png"
+   mobile = "/assets/images/guide/how-it-works/how-it-works-mobile.png"
+   mobileRetina = "/assets/images/guide/how-it-works/how-it-works-mobile@2x.png"
+   alt-text = "Multiple interlocking gears, center gear has a bitcoin symbol on it"
+   width = 1600
+   height = 520
+   layout = "full-width"
+%}
 
 # How it works
 
