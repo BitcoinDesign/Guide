@@ -10,17 +10,17 @@ image: https://bitcoin.design/assets/images/guide/contribute/contribute-preview.
 ---
 
 {% include picture.html
-   image = "/assets/images/guide/contribute/contribute.png"
-   retina = "/assets/images/guide/contribute/contribute@2x.png"
-   mobile = "/assets/images/guide/contribute/contribute-mobile.png"
-   mobileRetina = "/assets/images/guide/contribute/contribute-mobile@2x.png"
-   alt-text = "Twisting lines"
+   image = "assets/images/guide/contribute/case-studies/CasestudiesHeader.png"
+   retina = "assets/images/guide/contribute/case-studies/CaseStudiesHeader2X.png"
+   mobile = "assets/images/guide/contribute/case-studies/CaseStudiesHeaderMobile.png"
+   mobileRetina = "assets/images/guide/contribute/case-studies/CasestudiesHeaderMobile2X.png"
+   alt-text = "Image of people reading books"
    width = 1600
    height = 800
    layout = "full-width"
 %}
 
-# Process Study Guidelines
+# Case Study Guidelines
 
 There are various types of case studies. Some document proven solutions in the ecosystem, others are short, to the point stories of how a designer or team solved a particular challenge. This document is intended to help you write one of the latter. Ideally a case study that is digestible for a wider audience would be in the range of 1-4 pages in length.
 
@@ -56,13 +56,11 @@ Most applications have a specific type of user or use case they are optimized fo
 
 Example of user persona Blixt wallet case study
 {% include picture.html
-   image = "/assets/images/guide/contribute/formatting/example-optional-image-modal.png"
-   retina = "/assets/images/guide/contribute/formatting/example-optional-image-modal@2x.png"
-   mobile = "/assets/images/guide/contribute/formatting/example-optional-image-modal-mobile.png"
-   mobileRetina = "/assets/images/guide/contribute/formatting/example-optional-image-modal-mobile@2x.png"
-   modalImage = "/assets/images/guide/contribute/formatting/example-optional-image-modal@2x.png"
-   modalImageMobile = "/assets/images/guide/contribute/formatting/example-optional-image-modal-mobile@2x.png"
-   alt-text = "Optional image modal"
+   image = "assets/images/guide/contribute/case-studies/UserPersonasExampleBlixt.png"
+   retina = "assets/images/guide/contribute/case-studies/UserPersonasExampleBlixtX2.png"
+   mobile = "assets/images/guide/contribute/case-studies/UserPersonasExampleBlixtMobile.png"
+   mobileRetina = "assets/images/guide/contribute/case-studies/UserPersonasExampleBlixtMobileX2.png"
+   alt-text = "User personas example"
    width = 1600
    height = 800
    modalWidthMobile = 400
@@ -109,8 +107,8 @@ The below 2 case studies were put together roughly using the above guidelines.
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/formatting/"
-   previousName = "Formatting"
-   nextUrl = "/guide/glossary/"
-   nextName = "Glossary"
+   previousUrl = "/guide/review/"
+   previousName = "Review"
+   nextUrl = "/guide/daily-spending-wallet/"
+   nextName = "Daily spending wallet"
 %}
