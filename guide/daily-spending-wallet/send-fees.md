@@ -7,7 +7,7 @@ parent: Sending bitcoin
 grand_parent: Daily spending wallet
 permalink: /guide/daily-spending-wallet/sending/send-fees/
 main_classes: -no-top-padding
-image: /assets/images/guide/daily-spending-wallet/sending/bitcoin-payments-social.jpg
+image: /assets/images/guide/daily-spending-wallet/sending/send-fees/send-fees-preview.jpg
 image_base: /assets/images/guide/daily-spending-wallet/sending/send-fees/
 images_breakdown:
     - file: fee-breakdown
