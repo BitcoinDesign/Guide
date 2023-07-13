@@ -50,6 +50,8 @@ BIP 21 uses a `bitcoin:` URI scheme to identify and help applications manage bit
 
 BIP 21 is extensible and allows for the addition of other useful meta data that give more context to a payment request. This includes things like an amount, labels, messages, and other useful data. It also allows [more than one type]({{'/guide/how-it-works/payment-request-formats/#unified-payment-requests' | relative_url}}) of payment request format to be included in a payment request.
 
+A common pattern using URIs for inter-app payments is detailed in the [wallet selector page]({{'/guide/how-it-works/wallet-selector/' | relative_url}}).
+
 ## Lightning payment request formats
 
 ### Invoice

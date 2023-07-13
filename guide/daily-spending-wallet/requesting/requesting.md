@@ -223,7 +223,7 @@ Requests can be shared wirelessly over short distances using [near-field communi
 
 ### Payment link
 
-Payment links use a BIP21 [URI]({{ "/guide/how-it-works/payment-request-formats/#uniform-resource-identifier-uris-schemes" | relative_url }}) `bitcoin:` which makes these readable by other bitcoin applications. These can be included as part of a button or hyperlink.
+Payment links use a BIP21 [URI]({{ "/guide/how-it-works/payment-request-formats/#uniform-resource-identifier-uris-schemes" | relative_url }}) `bitcoin:` which makes these readable by other bitcoin applications. These can be included as part of a button or hyperlink. Also see the [wallet selector UI pattern]({{ "/guide/how-it-works/wallet-selector/" | relative_url }}).
 
 {% include image-gallery.html pages = page.images_link %}
 
