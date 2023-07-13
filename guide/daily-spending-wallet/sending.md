@@ -2,6 +2,7 @@
 layout: guide
 title: Sending bitcoin
 description: Best practices and design guidelines for designing user experiences for sending bitcoin in daily spending wallet application.
+has_children: true
 nav_order: 4
 parent: Daily spending wallet
 permalink: /guide/daily-spending-wallet/sending/
@@ -112,7 +113,7 @@ imagesReview:
     - file: confirm-high-fees
       modalImage: confirm-high-fees-big
       alt: Confirmation screen with note about high fees
-      caption: Highlight information the user should consciously approve, like high fees.
+      caption: Highlight information the user should be aware of, like high fees (See <a href="/guide/daily-spending-wallet/sending/send-fees/">send fees</a>)
     - file: enter-pin-before-payment
       modalImage: enter-pin-before-payment-big
       alt: Enter PIN screen
@@ -226,51 +227,7 @@ A [transaction history]({{ '/guide/daily-spending-wallet/activity/' | relative_u
 
 ## Fees
 
-Payment fees can drastically differ based on a few attributes:
-
-<div class="center" markdown="1">
-
-{% include image.html
-   image = "/assets/images/guide/daily-spending-wallet/sending/fee-options.png"
-   retina = "/assets/images/guide/daily-spending-wallet/sending/fee-options@2x.png"
-   alt-text = "Examples of on-chain, lightning and lightning routing fees"
-   width = 400
-   height = 417
-   layout = "float-right-desktop"
-%}
-
-**Lightning routing fees**
-
-On the lightning network, payments are passed between nodes to get from the sender to the receiver. Each of those nodes may charge a base fee and a second fee based on a percentage of the amount forwarded. Fees paid can vary, but are typically in the single-digit or double-digit Satoshi range (a small fraction of on-chain fees).
-
-**Lightning service fees**
-
-Lightning wallets may require [additional services]({{ '/guide/how-it-works/lightning-services/' | relative_url }}) to solve certain usability issues. An example being a lightning service provider (LSP) opening payment channels and providing [inbound liquidity]({{ '/guide/how-it-works/liquidity/' | relative_url }}) for the user, so they can receive payments. As these services are offered by third parties, additional fees may be charged.
-
-</div>
-
-<div class="center" markdown="1">
-
-#### On-chain fees
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/sending/confirm-fees.png"
-   retina = "/assets/images/guide/daily-spending-wallet/sending/confirm-fees@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/sending/confirm-fees-big.png"
-   alt-text = "Screen showing fee options for a transaction"
-   caption = "On-chain fees can vary drastically and should be easy to edit."
-   width = 250
-   height = 541
-   layout = "float-right-desktop -background -shadow"
-%}
-
-This fee is dependent on how many other transactions are currently [waiting]({{ '/guide/glossary/#mempool' | relative_url }}) to be processed on the base layer as a whole. The [average fee](https://ycharts.com/indicators/bitcoin_average_transaction_fee) in January 2021 was $0.63, and $28.60 in April 2021.
-
-Unfortunately, it is common for users to overpay on-chain fees by mistake. Wallets should have mechanisms in place to avoid this happening.
-
-If a user's transaction amount is low compared to the fee they would pay to broadcast, warn them. There are no standards regarding the threshold percentage to trigger such an alert. A good benchmark is to warn the user if their fee is 50% or more than the value of the transaction itself. You might choose a different threshold for your app. Procedures like this should be enough to ensure users do not overpay on-chain fees unintentionally.
-
-</div>
+Fees are a sensitive topic for users and should always be presented transparently with appropriate information and options for users to choose what works for them. The network itself charges fees for payment processing, and a service provider might also charge fees for services they provide in addition (like providing lightning liquidity). For more details, see the [send fees page]({{ '/guide/daily-spending-wallet/sending/send-fees/' | relative_url }}).
 
 ## Review & approval
 
@@ -368,11 +325,11 @@ On-chain wallets may offer experienced users the option to choose which of their
 
 ---
 
-Now that we've tackled sending and receiving, let's look at how we can summarize this [activity]({{ '/guide/daily-spending-wallet/activity/' | relative_url }}) and make it useful.
+Let's look a closer look at [send feed]({{ '/guide/daily-spending-wallet/sending/send-fees/' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/daily-spending-wallet/requesting/receiving/"
    previousName = "Receiving bitcoin"
-   nextUrl = "/guide/daily-spending-wallet/activity/"
-   nextName = "Activity"
+   nextUrl = "/guide/daily-spending-wallet/sending/send-fees"
+   nextName = "Send fees"
 %}
