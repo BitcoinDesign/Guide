@@ -43,6 +43,18 @@ The Bitcoin UI Kit is a great resource for designing bitcoin products. While the
 
 Several different projects are building on the reference designs from the guide. They all have slightly different goals and are at different stages, but are all fantastic learning resources for other people wanting to build a wallet.
 
+### Etta wallet
+
+A description of the project here.
+
+### BDG wallet
+
+A description of the project here.
+
+### BDK Swift example wallet
+
+A description of the project here.
+
 ---
 
 {% include next-previous.html
