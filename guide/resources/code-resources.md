@@ -36,8 +36,8 @@ Although mostly focused on design, some members of the community also have their
 
 The Bitcoin UI Kit is a great resource for designing bitcoin products. While the main effort is on the design components and Figma files, there are a couple of code implementations that make adopting the designs in the guide much easier.
 
-- Bitcoin UI Kit for Swift
-- Bitcoin UI Kit for Flutter
+- Bitcoin UI Kit for [Swift](https://github.com/reez/WalletUI)
+- Bitcoin UI Kit for [Flutter](https://pub.dev/packages/bitcoin_ui_kit)
 
 ## Wallet implementations
 
