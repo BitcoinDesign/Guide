@@ -71,7 +71,7 @@ Example of user persona Payjoin case study
 
 
 ## Methodology
-What steps led to the final solution? While the specific steps don't need to be detailed extensively, it's important to highlight the one that provided the most valuable insights. Feel free to mention any challenges faced, key decision points regarding the chosen steps or tools.
+What steps led to the final solution? While the specific steps don't need to be detailed extensively, it's important to highlight the ones that provided the most valuable insights. Feel free to mention any challenges faced, key decision points regarding the chosen steps or tools.
 
 ### Visuals
 * Images of userflows or snapshots of research done. Anything visual can go here that helps to tell a bit of a story. These can be messy.
@@ -94,7 +94,7 @@ This is a final wrap-up where we close off the story. Share what happened after 
 * Make sure to thank everyone who participated or helped
 
 ## Resources
-This is the last section of the case study where it’s nice to share links to all the parts; or rather the puzzle pieces. Here you can add in simple titles such as; Figma file or link to research conducted. Add all the artefacts that were used in the entire design process to give the reader the option to dive in and keep learning from your experience.
+This is the last section of the case study where it’s nice to share links to all the parts; or rather the puzzle pieces. Here you can add in simple titles such as a Figma file or links to research conducted. Add all the artefacts that were used in the entire design process to give the reader the option to dive in and keep learning from your experience.
 
 ## Acknowledgements/Gratitude
 It is a good idea to acknowledge people, projects or organisations that provided resources, input, feedback etc. for the case study.
