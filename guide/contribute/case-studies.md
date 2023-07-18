@@ -14,7 +14,7 @@ image: https://bitcoin.design/assets/images/guide/contribute/contribute-preview.
    retina = "assets/images/guide/contribute/case-studies/CaseStudiesHeader2X.png"
    mobile = "assets/images/guide/contribute/case-studies/CaseStudiesHeaderMobile.png"
    mobileRetina = "assets/images/guide/contribute/case-studies/CasestudiesHeaderMobile2X.png"
-   alt-text = "Image of people reading books"
+   alt-text = "people reading books"
    width = 1600
    height = 800
    layout = "full-width"
@@ -40,7 +40,7 @@ Start by sharing how this particular project/effort started.
 
 ### Content ideas
 * What problem were you trying to solve?
-* How did this problem come to the source? What was the background?
+* How did this problem come to the surface? What was the background?
 * How did the team collaborate (or perhaps this was a solo project)?
 * Share some background of the product itself
 
@@ -60,34 +60,30 @@ Example of user persona Blixt wallet case study
    retina = "assets/images/guide/contribute/case-studies/UserPersonasExampleBlixtX2.png"
    mobile = "assets/images/guide/contribute/case-studies/UserPersonasExampleBlixtMobile.png"
    mobileRetina = "assets/images/guide/contribute/case-studies/UserPersonasExampleBlixtMobileX2.png"
-   alt-text = "User personas example"
+   alt-text = "User personas example from Blixt wallet showing the needs of users Blixt would like to serve"
    width = 1600
    height = 800
    modalWidthMobile = 400
    modalHeightMobile = 400
 %}
 
-Example of user persona Payjoin case study
-
-
 ## Methodology
 What steps led to the final solution? While the specific steps don't need to be detailed extensively, it's important to highlight the ones that provided the most valuable insights. Feel free to mention any challenges faced, key decision points regarding the chosen steps or tools.
 
 ### Visuals
-* Images of userflows or snapshots of research done. Anything visual can go here that helps to tell a bit of a story. These can be messy.
-* An image showing the main insights, if you have one.
+* Images of userflows or snapshots of research done.
+* Images showing annotated screenshots or other material.
+Anything visual can go here that helps to tell a bit of a story. These can be messy.
 
 ## Insights
-After completing all the steps to solve the particular design challenge, you likely discovered some key insights. Share them here.
+Next go onto describing what you learnt. These could be learnings that are directly related to the images shared above.
 
 ### Content ideas
-* A blurb summarising what was learnt.
-* Bullet points highlighting the main insights.
+In this section you can then take the insights from the above section and convert them into improvement suggestions. So for example for each part of the user flow you could have a main heading and under the main heading bullet points with suggestions.
 
 ## Conclusion
 This is a final wrap-up where we close off the story. Share what happened after the case study/research was completed.
 
-### Content ideas
 * What was the impact of the solution? Add in qualitative and quantitative data if you have it.
 * Was the solution implemented by the project?
 * What were the next steps after completing this process?
@@ -101,14 +97,14 @@ It is a good idea to acknowledge people, projects or organisations that provided
 
 Related resources:
 The below 2 case studies were put together roughly using the above guidelines.
-* [Blixt](/guide/case-studies/blixt-wallet/)
-* [The Payjoin experience](/guide/case-studies/payjoin/)
+* [Blixt]({{ '/guide/case-studies/blixt-wallet/' | relative_url }})
+* [The Payjoin experience]({{ '/guide/case-studies/payjoin/' | relative_url }})
 
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/review/"
-   previousName = "Review"
-   nextUrl = "/guide/daily-spending-wallet/"
-   nextName = "Daily spending wallet"
+   previousUrl = "/guide/contribute/formatting/media/"
+   previousName = "Media"
+   nextUrl = "/guide/glossary/"
+   nextName = "Glossary"
 %}
