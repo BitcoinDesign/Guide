@@ -10,10 +10,11 @@ image: https://bitcoin.design/assets/images/guide/contribute/contribute-preview.
 ---
 
 {% include picture.html
-   image = "assets/images/guide/contribute/case-studies/CasestudiesHeader.png"
-   retina = "assets/images/guide/contribute/case-studies/CaseStudiesHeader2X.png"
-   mobile = "assets/images/guide/contribute/case-studies/CaseStudiesHeaderMobile.png"
-   mobileRetina = "assets/images/guide/contribute/case-studies/CasestudiesHeaderMobile2X.png"
+   image = "assets/images/guide/contribute/casestudies-header.jpg"
+   retina = "assets/images/guide/contribute/contribute/casestudies-header@2X.jpg"
+   mobile = "assets/images/guide/contribute/casestudies-header-mobile.jpg"
+   mobileRetina = "assets/images/guide/contribute/casestudies-header-mobile@2X.jpg"
+   customImage = "assets/images/guide/contribute/casestudy-contribute-custom-image.jpg
    alt-text = "people reading books"
    width = 1600
    height = 268
@@ -63,13 +64,13 @@ Most applications have a specific type of user or use case they are optimized fo
 
 Here's an example of a user persona from the [Blixt wallet case study]({{ '/guide/case-studies/blixt-wallet/' | relative_url }}).
 {% include picture.html
-   image = "assets/images/guide/contribute/case-studies/UserPersonasExampleBlixt.png"
-   retina = "assets/images/guide/contribute/case-studies/UserPersonasExampleBlixtX2.png"
-   mobile = "assets/images/guide/contribute/case-studies/UserPersonasExampleBlixtMobile.png"
-   mobileRetina = "assets/images/guide/contribute/case-studies/UserPersonasExampleBlixtMobileX2.png"
+   image = "assets/images/guide/contribute/case-studies/user-persona-example-blixt.jpg"
+   retina = "assets/images/guide/contribute/case-studies/user-persona-example-blixt@2X.jpg"
+   mobile = "assets/images/guide/contribute/case-studies/user-persona-example-blixt-mobile.jpg"
+   mobileRetina = "assets/images/guide/contribute/case-studies/user-persona-example-blixt-mobile@X2.jpg"
    alt-text = "User personas example from Blixt wallet showing the needs of users Blixt would like to serve"
    width = 1600
-   height = 800
+   height = 1080
    modalWidthMobile = 400
    modalHeightMobile = 271
 %}
