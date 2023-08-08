@@ -16,7 +16,7 @@ image: https://bitcoin.design/assets/images/guide/contribute/contribute-preview.
    mobileRetina = "assets/images/guide/contribute/case-studies/CasestudiesHeaderMobile2X.png"
    alt-text = "people reading books"
    width = 1600
-   height = 800
+   height = 268
    layout = "full-width"
 %}
 
@@ -69,7 +69,7 @@ Here's an example of a user persona from the [Blixt wallet case study]({{ '/guid
    width = 1600
    height = 800
    modalWidthMobile = 400
-   modalHeightMobile = 400
+   modalHeightMobile = 271
 %}
 
 ## Methodology
