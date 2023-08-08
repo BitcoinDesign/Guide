@@ -20,6 +20,11 @@ image: https://bitcoin.design/assets/images/guide/contribute/contribute-preview.
    layout = "full-width"
 %}
 
+<div class="glossary-toc" markdown="1">
+* Table of contents
+{:toc}
+</div>
+
 # Case study guidelines
 
 There are various types of case studies. Some document proven solutions in the ecosystem, others are short, to the point stories of how a designer or team solved a particular challenge. This document is intended to help you write one of the latter. Ideally, a case study that is digestible for a wider audience, would be in the range of 1-4 pages in length.
