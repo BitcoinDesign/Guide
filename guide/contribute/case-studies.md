@@ -6,15 +6,14 @@ nav_order: 10
 parent: Contribute to guide
 permalink: /guide/contribute/case-studies/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/contribute/contribute-preview.jpg
+image: https://bitcoin.design/assets/images/guide/contribute/case-studies/case-study-preview.jpg
 ---
 
 {% include picture.html
-   image = "assets/images/guide/contribute/casestudies-header.jpg"
-   retina = "assets/images/guide/contribute/contribute/casestudies-header@2X.jpg"
-   mobile = "assets/images/guide/contribute/casestudies-header-mobile.jpg"
-   mobileRetina = "assets/images/guide/contribute/casestudies-header-mobile@2X.jpg"
-   customImage = "assets/images/guide/contribute/casestudy-contribute-custom-image.jpg
+   image = "assets/images/guide/contribute/case-studies/case-study-header.jpg"
+   retina = "assets/images/guide/contribute/case-studies/case-study-header@2x.jpg"
+   mobile = "assets/images/guide/contribute/case-studies/case-study-header-mobile.jpg"
+   mobileRetina = "assets/images/guide/contribute/case-studies/case-study-header-mobile@2x.jpg"
    alt-text = "people reading books"
    width = 1600
    height = 268
@@ -64,15 +63,11 @@ Most applications have a specific type of user or use case they are optimized fo
 
 Here's an example of a user persona from the [Blixt wallet case study]({{ '/guide/case-studies/blixt-wallet/' | relative_url }}).
 {% include picture.html
-   image = "assets/images/guide/contribute/case-studies/user-persona-example-blixt.jpg"
-   retina = "assets/images/guide/contribute/case-studies/user-persona-example-blixt@2X.jpg"
-   mobile = "assets/images/guide/contribute/case-studies/user-persona-example-blixt-mobile.jpg"
-   mobileRetina = "assets/images/guide/contribute/case-studies/user-persona-example-blixt-mobile@X2.jpg"
-   alt-text = "User personas example from Blixt wallet showing the needs of users Blixt would like to serve"
-   width = 1600
-   height = 1080
-   modalWidthMobile = 400
-   modalHeightMobile = 271
+   image = "assets/images/guide/contribute/case-studies/user-persona-example-blixt.png"
+   retina = "assets/images/guide/contribute/case-studies/user-persona-example-blixt@2x.png"
+   alt-text = "Two people with text descriptions of their needs for lightning wallets"
+   width = 800
+   height = 542
 %}
 
 ## Methodology
