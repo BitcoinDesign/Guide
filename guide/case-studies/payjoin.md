@@ -2,7 +2,7 @@
 layout: guide
 title: The Payjoin Experience
 description: This case study is an analysis and exploration of payjoin's audience, implementations, features and proposes specific user flows.
-nav_order: 6
+nav_order: 2
 parent: Case studies
 permalink: /guide/case-studies/payjoin/
 main_classes: -no-top-padding
@@ -304,8 +304,8 @@ This case study tackles the design aspects around payjoin and it hopes to boost 
 Next, view the [resources]({{ '/guide/resources' | relative_url }}) that can help you build better bitcoin products.
 
 {% include next-previous.html
-   previousUrl = "/guide/case-studies/blixt-wallet"
+   previousUrl = "/guide/case-studies/blixt-wallet/"
    previousName = "Blixt wallet case study"
-   nextUrl = "/guide/resources"
+   nextUrl = "/guide/resources/"
    nextName = "Resources"
 %}

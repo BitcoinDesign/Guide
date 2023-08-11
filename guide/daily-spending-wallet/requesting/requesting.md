@@ -145,21 +145,21 @@ Avoid showing the user’s balance on the home or requesting page. When requesti
 
 ## Entering an amount
 
-From the requesting page, the user types in an amount. This wallet allows the user to easily toggle between entering amounts in sats, bitcoin, or their local currency. If the user has an amount entered and switches units, it clears the input field. This prevents the user from requesting an amount they didn't intend. Read more on entering amounts on our [Units & Symbols page]({{ "/guide/designing-products/units-and-symbols/" | relative_url }}).
+From the request page, the user inputs an amount. This wallet offers an easy toggle feature, allowing the user to switch between entering amounts in sats, bitcoin, or their local currency. However, if a user has already entered an amount and then changes the unit, the input field will clear. This precautionary measure prevents users from requesting an amount they didn't initially intend. For more details on entering amounts, refer to our [Units & Symbols page]({{ "/guide/designing-products/units-and-symbols/" | relative_url }}) page.
 
-Users can also skip entering an amount, as there are scenarios where the user may want the sender to decide the amount. Zero-amount requests also limit both parties exposure to price volatility as the bitcoin price in fiat terms could change between requesting and the payment being sent.
+Moreover, users have the option to skip entering an amount. This flexibility caters to situations where the user might want the sender to determine the amount. Zero-amount requests also reduce the exposure of both parties to price volatility. This is because the bitcoin price in fiat terms could fluctuate between the time of the request and the actual sending of payment.
 
 {% include image-gallery.html pages = page.images_amount %}
 
 ## Creating the request
 
-After entering an amount, the user taps the request button. The app generates and presents a payment request.
+After entering an amount, the user taps the 'Request' button. The app then generates and presents a payment request.
 
 This wallet defaults to a [unified payment request]({{ "/guide/how-it-works/payment-request-formats/#unified-payment-requests" | relative_url }}). These combine a [lightning invoice]({{ "/guide/how-it-works/payment-request-formats/#invoice" | relative_url }}) and an [on-chain address]({{ "/guide/how-it-works/payment-request-formats/#addresses" | relative_url }}) into a single payment request using BIP21. 
 
-Unified requests remove the friction of users having to choose between requesting with lightning or on-chain, which can be confusing, especially for new users. 
+Unified requests eliminate the hassle for users of choosing between requesting payment via the lightning network or on-chain. This choice can often be confusing, particularly for newcomers. 
 
-This wallet’s on-chain addresses are all swap addresses. These help with moving received bitcoin into the user’s lightning balance. This results in a single lightning balance and avoids a separate on-chain balance. This simplified experience is trust-minimized and non-custodial thanks to [submarine swaps](https://thebitcoinmanual.com/articles/btc-submarine-swaps/). We cover these more in our [lightning services]({{ "/guide/how-it-works/lightning-services/#swaps" | relative_url }}) and receiving pages.
+This wallet utilizes 'swap addresses' for all on-chain transactions. These are used to facilitate the transfer of received Bitcoin into the user's Lightning balance. Consequently, the wallet maintains a single Lightning balance, avoiding the need for a separate on-chain balance. This simplifies the user experience and is trust-minimized and non-custodial, courtesy of [submarine swaps](https://thebitcoinmanual.com/articles/btc-submarine-swaps/). We cover these more in our [lightning services]({{ "/guide/how-it-works/lightning-services/#swaps" | relative_url }}) and receiving pages.
 
 As unified requests [aren't widely supported yet](https://bitcoinqr.dev/), and users may want to request just from lightning or on-chain, they have options to share the lightning invoice or on-chain address independently. 
 
@@ -223,7 +223,7 @@ Requests can be shared wirelessly over short distances using [near-field communi
 
 ### Payment link
 
-Payment links use a BIP21 [URI]({{ "/guide/how-it-works/payment-request-formats/#uniform-resource-identifier-uris-schemes" | relative_url }}) `bitcoin:` which makes these readable by other bitcoin applications. These can be included as part of a button or hyperlink.
+Payment links use a BIP21 [URI]({{ "/guide/how-it-works/payment-request-formats/#uniform-resource-identifier-uris-schemes" | relative_url }}) `bitcoin:` which makes these readable by other bitcoin applications. These can be included as part of a button or hyperlink. Also see the [wallet selector UI pattern]({{ "/guide/how-it-works/wallet-selector/" | relative_url }}).
 
 {% include image-gallery.html pages = page.images_link %}
 
@@ -235,17 +235,17 @@ When requesting bitcoin, there are some options that can offer unique experience
 
 ### Invoice expirations
 
-Lightning invoices aren't permanent; [they expire over time]({{ "/guide/glossary/#lightning-invoice" | relative_url }}). However, this expiration time can be modified, unlocking unique use cases and improving usability in some situations.
+Lightning invoices aren't permanent; [they expire over time]({{ "/guide/glossary/#lightning-invoice" | relative_url }}). However, this expiration period can be adjusted, enabling unique use cases and enhancing usability in certain situations.
 
-When denominating invoices in fiat, custom expiries should be used to prevent exposure to price volatility.
+When denominating invoices in fiat currencies, it is advisable to use custom expiry durations to mitigate the risk of price volatility.
 
-If requesting a specific amount denominated in fiat, use a shorter expiry and have the invoice refresh each time it expires. For a wallet designed for in-person payments, a 30 - 60 second expiry works well.
+If you are requesting a specific amount denominated in a fiat currency, opt for a shorter expiry period, refreshing the invoice each time it expires. For a wallet intended for in-person payments, an expiry duration of 30 to 60 seconds is effective.
 
-If there is no amount defined on the invoice, the invoice is denominated in bitcoin, or the invoice needs to be shared in a message, then use a longer expiry, like 24 hours.
+In cases where the invoice does not define an amount, the invoice is denominated in bitcoin, or the invoice needs to be shared in a message, it is more suitable to use a longer expiry duration, such as 24 hours.
 
-While it is good to allow users to define their own custom expiries, remember that only advanced users will do this. Choose a sensible default that makes sense for your user-base and how the wallet is intended to be used.
+Although it is beneficial to allow users to set their own custom expiry durations, bear in mind that only advanced users will likely utilize this feature. Select a default duration that best serves your user base and aligns with the intended use of the wallet.
 
-For some background on situations the user might encounter with different invoice expiries, see this [blog post](https://d.elor.me/2022/01/lightning-invoice-expiration-ux-considerations/) from designer Stephen DeLorme.
+For further insight into the scenarios users might face with different invoice expiry durations, refer to this [blog post](https://d.elor.me/2022/01/lightning-invoice-expiration-ux-considerations/) by designer Stephen DeLorme.
 
 {% include image-gallery.html pages = page.images_expiration %}
 
