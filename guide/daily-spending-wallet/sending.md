@@ -227,7 +227,7 @@ A [transaction history]({{ '/guide/daily-spending-wallet/activity/' | relative_u
 
 ## Fees
 
-Fees are a sensitive topic for users and should always be presented transparently with appropriate information and options for users to choose what works for them. The network itself charges fees for payment processing, and a service provider might also charge fees for services they provide in addition (like providing lightning liquidity). For more details, see the [send fees page]({{ '/guide/daily-spending-wallet/sending/send-fees/' | relative_url }}).
+Fees are a sensitive topic for users and should always be presented transparently with appropriate information and options for users to choose what works for them. The network itself charges fees for payment processing, and a service provider might also charge fees for additional services they provide such as lightning liquidity. For more details, see the [send fees page]({{ '/guide/daily-spending-wallet/sending/send-fees/' | relative_url }}).
 
 ## Review & approval
 
@@ -325,7 +325,7 @@ On-chain wallets may offer experienced users the option to choose which of their
 
 ---
 
-Let's look a closer look at [send feed]({{ '/guide/daily-spending-wallet/sending/send-fees/' | relative_url }}).
+Let's look a closer look at [send fees]({{ '/guide/daily-spending-wallet/sending/send-fees/' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/daily-spending-wallet/requesting/receiving/"

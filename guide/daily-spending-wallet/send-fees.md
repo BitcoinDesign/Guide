@@ -122,7 +122,7 @@ Lightning wallets may require [additional services]({{ '/guide/how-it-works/ligh
 
 This fee is largely dependent on how many other transactions are currently [waiting]({{ '/guide/glossary/#mempool' | relative_url }}) to be processed on the base layer as a whole. The [average fee](https://ycharts.com/indicators/bitcoin_average_transaction_fee) in January 2021 was $0.63, and $28.60 in April 2021.
 
-A new block of transactions is confirmed roughly every 10 minutes. Blocks have size limits, which places a limit on the number of transactions they can contain. Transactions size itself varies with complexity. A complex multi-key transaction with many inputs and outputs involves more data, and therefore carries a higher fee, than a simple one that involves only one input and output. An organic fee market emerges from these dynamics, as miners try to earn as much as they can from fees, and transacting users try to optimize for time, fee rate, or other priorities.
+A new block of transactions is confirmed roughly every 10 minutes. Blocks have size limits, which places a limit on the number of transactions they can contain. Transaction size varies depending on the complexity. A complex multi-key transaction with many inputs and outputs involves more data, and therefore carries a higher fee, compared to a simple one that involves only one input and output. An organic fee market emerges from these dynamics, as miners try to earn as much as they can from fees, and transacting users try to optimize for time, fee rate, or other priorities.
 
 </div>
 
