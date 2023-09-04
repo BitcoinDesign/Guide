@@ -122,7 +122,7 @@ Lightning wallets may require [additional services]({{ '/guide/how-it-works/ligh
 
 This fee is largely dependent on how many other transactions are currently [waiting]({{ '/guide/glossary/#mempool' | relative_url }}) to be processed on the base layer as a whole. The [average fee](https://ycharts.com/indicators/bitcoin_average_transaction_fee) in January 2021 was $0.63, and $28.60 in April 2021.
 
-A new block of transactions is confirmed roughly every 10 minutes. Blocks have size limits, which places a limit on the number of transactions they can contain. Transaction size varies depending on the complexity. A complex multi-key transaction with many inputs and outputs involves more data, and therefore carries a higher fee, compared to a simple one that involves only one input and output. An organic fee market emerges from these dynamics, as miners try to earn as much as they can from fees, and transacting users try to optimize for time, fee rate, or other priorities.
+A new block of transactions is confirmed roughly every 10 minutes. Blocks have a size limit, which places a limit on the number of transactions they can contain. Transaction size varies depending on the complexity. A complex multi-key transaction with many inputs and outputs involves more data, and therefore carries a higher fee, compared to a simple one that involves only one input and output. An organic fee market emerges from these dynamics, as miners try to earn as much as they can from fees, and transacting users try to optimize for time, fee rate, or other priorities.
 
 </div>
 
@@ -147,9 +147,10 @@ Generally, it is best to dynamically calculate a reasonable fee range and provid
 
 <div class="center" markdown="1">
 
-{% include image.html
+{% include picture.html
    image = "/assets/images/guide/daily-spending-wallet/sending/send-fees/fee-options-high.png"
    retina = "/assets/images/guide/daily-spending-wallet/sending/send-fees/fee-options-high@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/sending/send-fees/fee-options-high-big.png"
    alt-text = "Screen showing a fee picker for an onchain transaction with high fee options marked in red"
    width = 250
    height = 541
@@ -183,7 +184,7 @@ The most common scenario is that sender and receiver have an understanding of ho
 2. The sender balance is enough to cover the amount to pay, but not the fee
 3. The sender wants to clear out the wallet, possibly to migrate
 
-To accomodate these, the interface also needs to provide manual customization options, although they can be placed into secondary location.
+To accomodate these, the interface also needs to provide manual customization options, although they can be placed into secondary location (see below).
 
 </div>
 
