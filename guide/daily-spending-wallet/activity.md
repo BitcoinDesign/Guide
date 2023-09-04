@@ -108,21 +108,21 @@ Every wallet includes a list of transactions that allow the users to see who the
 
 ### What is a transaction?
 
-On a technical level, a [transaction]({{ '/guide/how-it-works/transactions/' | relative_url }}) is a transfer of a specific amount between two addresses at a given time. But as human beings, we think of a transaction as a grocery store purchase, a mortgage payment, or paying back a friend for lunch. We should strive to let users capture these additional layers of meaning so they can more intuitively navigate and work with their transaction history.
+On a technical level, a [transaction]({{ '/guide/how-it-works/transactions/' | relative_url }}) is a transfer of a specific amount between two addresses at a specific time. However, as human beings, we often perceive transactions in practical terms, such as grocery store purchases, mortgage payments, or repaying a friend for lunch. It is important that we enable users to incorporate these additional layers of meaning so that they can more intuitively navigate and engage with their transaction history.
 
 {% include image-gallery.html pages = page.imagesBasics %}
 
 ##### Design considerations
 
-[Research](https://blog.getalby.com/rethinking-transaction-lists/) by the team at [Alby](https://getalby.com) has indicated that most users rarely visit a transaction list. The most common reasons to do so are to confirm payment status, budgeting, and to analyze payment behavior. The biggest challenges are navigating through endless lists to find a specific transaction and unavailable metadata, leaving users guessing who the payment was sent to and what for.	
+[Research](https://blog.getalby.com/rethinking-transaction-lists/) by the team at [Alby](https://getalby.com) has indicated that most users rarely visit a transaction list. The most frequent reasons for doing so are to confirm payment status, manage budgeting, and to analyze payment behavior. The most significant challenges users face are navigating through long lists to find a specific transaction and the lack of available metadata, leaving users unsure as to who the payment was sent to and for what purpose.
 
-Activity is a utility screen where a user wants to quickly browse a data set to see what's new, find something specific, identify patterns, etc. Be deliberate with every detail and avoid adding anything that adds visual interest without signal, unless you have good reason to.
+The Activity screen is a utility page where a user can quickly browse a dataset to see what's new, locate something specific, identify patterns, and so on. Every detail should be thoughtfully considered to avoid adding elements that only increase visual interest without providing meaningful information, unless there is a good reason for doing so.
 
 Following are some of the design decisions in the screens above:
 
-- Received amounts are green, which is typically a positive connotation. Highlighting sent amounts red seems like a logical follow-on decisions, but this is not necessary as there is enough contrast already. Red can remain the color associated with errors.
+- Received amounts are displayed in green, which typically carries a positive connotation. While it might seem logical to highlight sent amounts in red, this isn't necessary as there is sufficient contrast already. Red can continue to be the color associated with errors.
 - Adding a plus or minus next to amounts is helpful for the color-blind, as well as general readability & usability.
-- Fallback icons are designed to be subtle and useful by indicating whether bitcoin was sent or received, and the status of the transaction. When they are not shown, because there's a contact image displayed instead, no information is lost. Showing a bitcoin symbol instead, for example, would be visually distracting without providing any useful information.
+- Fallback icons have been designed to subtly and usefully indicate whether Bitcoin was sent or received, and the status of the transaction. If they are not displayed, for example when a contact image is shown instead, no information is lost. Displaying a Bitcoin symbol, on the other hand, could be visually distracting without providing any useful information.
 - The formatting guidelines in [Units & Symbols]({{ '/guide/designing-products/units-and-symbols/' | relative_url }}) are applied.
 
 Not carefully weighing these decisions can easily result in a cluttered appearance.
@@ -155,7 +155,7 @@ Events can include user activity related to unique wallet features. For example:
 
 ##### Software notifications
 
-Wallets can also independently keep an eye on user funds, data traffic, and other aspects, and highlight activity that the user should be aware of right away, or be able to reference in the future. Especially with security and privacy, users rely on the software to keep an eye out for them.
+Wallets can also independently monitor user funds, data traffic, and other aspects, highlighting any activity that users should be immediately aware of, or may need to reference in the future. Particularly in terms of security and privacy, users depend on the software to be vigilant on their behalf.
 
 </div>
 
@@ -167,9 +167,9 @@ The lightning network makes micropayments economically and technically viable. F
 
 ### Search & export
 
-Search is helpful for anyone using a wallet somewhat regularly, especially if micropayments become more common. Since this functionality relies strongly on quality data, it should be very simple for users to add relevant metadata to transactions.
+Search functionality within a digital wallet is incredibly useful for anyone frequently using it, especially as micropayments become more prevalent. Given that this function relies heavily on high-quality data, it's important to make it easy for users to add relevant metadata to their transactions.
 
-Closely linked to search is export, which can serve several purposes. For one, a user may want to migrate to a new wallet and take their transaction history with them. Second, it is useful for accounting and tax purposes, especially for merchants.
+Another feature closely linked to the search function in digital wallets is data export, which can serve several purposes. For one, a user may wish to migrate to a new wallet and bring their transaction history along with them. Additionally, export functionality is beneficial for accounting and tax purposes, especially for merchants.
 
 {% include image-gallery.html pages = page.imagesSearch %}
 
@@ -250,7 +250,7 @@ This can be in the form of text labels, or even uniquely generated icons like [J
 
 ### Wrapping up
 
-As mentioned at the top of the page, there is a lot of nuance in the display of user activity. While this allows for many different small design decisions, users overall benefit if wallets take similar approaches. Particularly when it comes to the addition of metadata that is not stored on-chain or by lightning nodes, it would be helpful if wallets can converge on standardized data formats to allow for [interoperability]({{ '/guide/getting-started/principles/#interoperability' | relative_url }}) and data portability.
+As mentioned earlier, there is significant nuance involved in displaying user activity. Although this permits a multitude of minor design decisions, users typically benefit when wallets adopt similar strategies. This is especially important in relation to the addition of metadata, which is not stored either on-chain or by lightning nodes. To ensure [interoperability]({{ '/guide/getting-started/principles/#interoperability' | relative_url }}) and data portability, it would be advantageous if wallets could agree on standardized data formats.
 
 ---
 
