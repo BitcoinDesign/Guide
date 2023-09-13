@@ -4,15 +4,20 @@ layout: null
 {
   {%- assign content_pages = site.html_pages -%}
   {%- assign content = site.posts | concat: content_pages -%}
+  {% assign counter = 0 %}
 
   {% for page in content %}
-    "{{ page.url }}": {
-      "title": "{{ page.title | xml_escape }}",
-      "author": "{{ page.author | xml_escape }}",
-      "category": "{{ page.category | xml_escape }}",
-      "content": {{ page.content | markdownify | strip_html | strip_newlines | jsonify }},
-      "url": "{{ page.url | relative_url | xml_escape }}"
-    }
-    {% unless forloop.last %},{% endunless %}
+    {% assign titleLength = page.title.size %}
+    {% if titleLength > 3 and page.exclude_from_search != true %}
+      {% if counter > 0 %},{% endif %}
+      "{{ page.url }}": {
+        "title": "{{ page.title | xml_escape }}",
+        "author": "{{ page.author | xml_escape }}",
+        "category": "{{ page.category | xml_escape }}",
+        "content": {{ page.content | markdownify | strip_html | strip_newlines | jsonify }},
+        "url": "{{ page.url | relative_url | xml_escape }}"
+      }
+      {% assign counter = counter | plus:1 %}
+    {% endif %}
   {% endfor %}
 }

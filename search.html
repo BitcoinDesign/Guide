@@ -3,32 +3,55 @@ title: Search
 description: Search the Bitcoin Design Guide
 layout: search
 image: /assets/images/search-preview.jpg
+exclude_from_search: true
 ---
 
-<form action="/search.html" msethod="get">
-  <input type="text" id="search-page-input" name="query">
+<form action="/search" method="get">
+  <input aria-label="Search the guide" type="text" id="search-page-input" name="query" placeholder="Search the guide...">
 </form>
 
 <ul id="search-page-results"></ul>
 
+<div id="search-tips">
+  <button aria-expanded="false" aria-controls="search-tips-content">
+    <svg viewBox="0 0 24 24">
+      <use xlink:href="#svg-arrow-right"></use>
+    </svg>Search tips</button>
+  <div id="search-tips-content" hidden>
+    <p>Search supports several tricks to help you find what you’re looking for:</p>
+    <ul>
+      <li>“<em>wallet backup</em>” means at least one of the two terms have to be found</li>
+      <li>“<em>wallet~1</em>” will find slight misspellings like “wollet” (increase the number to broaden further)</li>
+      <li>“<em>+wallet -backup</em>” means “wallet” has to be found, and “backup” cannot be found</li>
+      <li>“<em>wallet^5 backup</em>” puts 5 times more emphasis on finding the term “wallet”</li>
+    </ul>
+    <p>You can also try combining these commands. If you still cannot find anything, ask in <a href="{{ site.discord_invite_url }}" target="_blank" rel="me">Discord</a>.</p>
+  </div>
+</div>
+
 <script>
   window.store = {
-
     {%- assign content_pages = site.html_pages -%}
     {%- assign content = site.posts | concat: content_pages -%}
+    {% assign counter = 0 %}
 
     {% for page in content %}
-      "{{ page.url | slugify }}": {
-        "title": "{{ page.title | xml_escape }}",
-        "author": "{{ page.author | xml_escape }}",
-        "category": "{{ page.category | xml_escape }}",
-        "content": {{ page.content | markdownify | strip_html | strip_newlines | jsonify }},
-        "url": "{{ page.url | xml_escape }}"
-      }
-      {% unless forloop.last %},{% endunless %}
+      {% assign titleLength = page.title.size %}
+
+      {% if titleLength > 3 and page.exclude_from_search != true %}
+        {% if counter > 0 %},{% endif %}
+
+        "{{ page.url | slugify }}": {
+          "title": "{{ page.title | xml_escape }}",
+          "author": "{{ page.author | xml_escape }}",
+          "category": "{{ page.category | xml_escape }}",
+          "content": {{ page.content | markdownify | strip_html | strip_newlines | jsonify }},
+          "url": "{{ page.url | xml_escape }}"
+        }
+
+        {% assign counter = counter | plus:1 %}
+      {% endif %}
     {% endfor %}
-
-
   };
 </script>
 <script src="/js/lunr.min.js"></script>

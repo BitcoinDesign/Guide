@@ -120,17 +120,17 @@ function loadSearchData() {
 	      this.field('author');
 	      this.field('category');
 	      this.field('content');
-	    });
 
-	    for (var key in searchData) { // Add the data to lunr
-	      searchIndex.add({
-	        'id': key,
-	        'title': searchData[key].title,
-	        'author': searchData[key].author,
-	        'category': searchData[key].category,
-	        'content': searchData[key].content
-	      });
-	    }
+  	    for (var key in searchData) { // Add the data to lunr
+  	      this.add({
+  	        'id': key,
+  	        'title': searchData[key].title,
+  	        'author': searchData[key].author,
+  	        'category': searchData[key].category,
+  	        'content': searchData[key].content
+  	      });
+  	    }
+      });
 		}
 	};
 
@@ -139,30 +139,59 @@ function loadSearchData() {
 };
 
 function handleSearchInput(event) {
+  var searchInput = document.getElementById("search-input");
+  var term = searchInput.value;
+
   if(event.key == 'Escape') {
     hideSearchOverlay();
   } else {
     if(searchDataLoading === false) {
       searchDataLoading = true;
       loadSearchData();
-    } else if(searchIndex) {
-      var results = searchIndex.search(ref.searchInput.value); // Get lunr to perform a search
-      displaySearchResults(ref.searchInput.value, results);
+    } else if(searchIndex && term.length > 0) {
+      try {
+        // Make search fuzzy for simple terms
+        if(term.indexOf(' ') === -1) {
+          term = term + '~1'
+        }
+
+        var results = searchIndex.search(term); // Get lunr to perform a search
+
+        var highestScore, lowestScore
+        if(results.length > 2) {
+          highestScore = results[0].score;
+          lowestScore = results[results.length - 1].score;
+
+          var medianScore = results[Math.round(results.length/2)].score;
+          var scoreSum = 0;
+          for(var i=0; i<results.length; i++) {
+            scoreSum += results[i].score;
+          }
+          var averageScore = scoreSum / results.length;
+        }
+
+        displaySearchResults(term, results, lowestScore, highestScore);
+      } catch(error) {
+        console.log('Search error', term, error);
+      }
     }
 
     var form = ref.searchBox.getElementsByTagName('form')[0];
-    form.action = '/search.html?query=' + encodeURIComponent(ref.searchInput);
+    form.action = '/search?query=' + encodeURIComponent(term);
   }
 }
 
-function displaySearchResults(searchInput, results) {
+function displaySearchResults(searchInput, results, lowestScore, highestScore) {
   if (results.length) { // Are there any results?
     var appendString = '';
-    var item;
+    var item, result;
     var maxVisible = 5;
+    var green = [0, 166, 82]
+    var gray = [222, 222, 222]
 
     var content, contentBits, k, index;
     for(var i = 0; i < Math.min(maxVisible, results.length); i++) {  // Iterate over the results
+      result = results[i];
       item = searchData[results[i].ref];
 
       // Strip Jekyll includes.
@@ -173,21 +202,41 @@ function displaySearchResults(searchInput, results) {
           contentBits[k] = contentBits[k].substring(index+2);
         }
       }
-      content = contentBits.join('').substring(0, 150);
+      content = contentBits.join('').substring(0, 150).trim();
 
-      appendString += '<li><a href="' + item.url + '">';
-      appendString += '<h3>' + item.title + '</h3>';
+      // Content includes the page title at the start. Remove it.
+      if(content.indexOf(item.title) === 0) {
+        content = content.substr(item.title.length)
+      }
+
+      // Calculate a color of how good of a match it is
+      // Green - best match
+      // Grey - worst match
+      // Result can also be somewhere in between
+      colorPosition = (result.score - lowestScore)/(highestScore - lowestScore)
+      color = {
+        r: Math.round(gray[0] - Math.abs(gray[0] - green[0])*colorPosition),
+        g: Math.round(gray[1] - Math.abs(gray[1] - green[1])*colorPosition),
+        b: Math.round(gray[2] - Math.abs(gray[2] - green[2])*colorPosition)
+      }
+
+      appendString += '<li><a href="' + item.url + '#:~:text=' + encodeURIComponent(searchInput) + '">';
+      appendString += '<h3>' + item.title;
+      if(lowestScore && highestScore) {
+        appendString += '<span style="background-color: rgba('+color.r+','+color.g+','+color.b+');"></span>';
+      }
+      appendString += '</h3>';
       appendString += '<p>' + content + '...</p>';
       appendString += '</a></li>';
     }
 
     if(results.length > maxVisible) {
-      appendString += '<li><a href="/search.html?query=' + encodeURIComponent(searchInput) + '"><h3>View all ' + results.length + ' results</h3></a></li>';
+      appendString += '<li><a href="/search?query=' + encodeURIComponent(searchInput) + '"><h3>View all ' + results.length + ' results</h3></a></li>';
     }
 
     ref.searchResults.innerHTML = appendString;
   } else {
-    ref.searchResults.innerHTML = '<li><h3>Sorry, no results...</h3></li>';
+    ref.searchResults.innerHTML = '<li class="no-results"><h3>Sorry, no results...</h3></li>';
   }
 
   ref.searchResults.style.display = 'block';
@@ -313,7 +362,6 @@ function setupFeedbackModal() {
                 var self = event.currentTarget;
                 var container = self.parentElement;
                 var options = container.querySelector('.next-previous--feedback__options');
-                console.log('attr', options.hasAttribute('hidden'));
                 if(options.hasAttribute('hidden')) {
                     options.removeAttribute("hidden");
                     options.setAttribute("aria-expanded", true);
