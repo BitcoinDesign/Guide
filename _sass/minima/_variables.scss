@@ -52,12 +52,12 @@ $primary-color: $bitcoin-yellow;
   --link-visited-color: hsl(var(--primary-color-h), var(--primary-color-s), var(--primary-color-l-darker));
 
   @media (prefers-contrast: more) {
-    --primary-color: #DB821A;
-    --primary-color-rgb: 219, 130, 26;
-    --primary-color-h: 32;
-    --primary-color-s: 79%;
-    --primary-color-l: 48%;
-    --primary-color-l-darker: 38%;
+    --primary-color: #9c5c19;
+    --primary-color-rgb: 156, 92, 25;
+    --primary-color-h: 31;
+    --primary-color-s: 72%;
+    --primary-color-l: 35%;
+    --primary-color-l-darker: 25%;
   }
 }
 
