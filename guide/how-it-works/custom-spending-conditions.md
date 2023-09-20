@@ -1,10 +1,10 @@
 ---
 layout: guide
-title: Wallet selector
+title: Custom Spending Conditions
 description: An interface pattern for letting users choose which external wallet to use when withdrawing, sending, or receiving in a bitcoin application.
 nav_order: 11
 parent: How it works
-permalink: /guide/how-it-works/wallet-selector/
+permalink: /guide/how-it-works/custom-spending-conditions/
 main_classes: -no-top-padding
 image: /assets/images/guide/how-it-works/wallet-selector/wallet-selector-preview.jpg
 image_base: /assets/images/guide/how-it-works/wallet-selector/
@@ -46,116 +46,150 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 %}
 
 
-# Wallet selector
+# Custom Spending Conditions
 {:.no_toc}
 ---
 
-It's a common scenario that a user wants to transfer bitcoin between apps and websites. This requires a way for those clients to communicate with each other. Two things are essential to this process:
+Spending conditions encode the rules that need to be followed by a wallet to spend funds. Most bitcoin wallets have only one spending path. For example, in a single-key wallet there is only one key that can sign transactions. Or, in a 2-of-3 multi-key wallet, you need any two of the three keys to sign transactions.
 
-- Having a method to communicate
-- Speaking the same language
+In addition to these standard configurations it is also possible to create more flexible wallets by defining custom spending paths. There is a wide variety of use cases, where this flexibility can be helpful, like personal or family self-custody, inheritance or company treasuries.
 
-The first is provided by the environment (typically the operating system), and the second is about protocols and [interoperability]({{ '/guide/getting-started/principles/#interoperability' | relative_url }}) in the bitcoin application ecosystem.
+## Use cases
 
-Let’s say a user has won satoshis in a mobile gaming app and wants to transfer them to their wallet on the same device. The ideal user flow is that when a user presses a withdraw button, their wallet automatically becomes active and shows a screen to confirm the withdrawal. The user approves, and the funds are transferred. It’s a simple two-tap process.
+Custom spending paths can be helpful to decrease the risk of losing funds in personal self-custody context. In a savings wallet context where you are the only key holder, you could unlock a recovery spending path after a certain time of wallet inactivity. This path could contain an additional key held in a different location. Such a setup does not decrease the wallet security, because the second key is locked under normal circumstances of using the wallet. 
 
-Common issues are:
-- The gaming app and wallet use different [payment request formats]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }}). For example, the gaming app relies on [LNURL]({{ '/guide/how-it-works/payment-request-formats/#lnurl' | relative_url }}), which the wallet does not support.
-- The user has multiple wallets installed. The gaming app uses functionality provided by the operating system to open the default wallet, but the default is not what the user wants.
+Custom spending paths can also be useful in an organizational context. Companies need to make sure that they retain access to funds even if one or more employees lose their keys, are compromised or try to obstruct the deployment of funds. Or they might want to implement company-specific processes for corporate spending. For example, they would want the CEO and CFO to always have to co-sign transactions over a specific amount. 
 
-## The wallet selector
 
-A solution various applications have adopted is that of a wallet selector. It is an additional step in the user flow when sending or receiving. It prompts the user to select the wallet to use in the current interaction.
+## Building blocks
 
-{% include image-gallery.html pages = page.example-screens %}
+There are currently two main building blocks that can help us construct custom spending paths: timelocks and veto keys.
 
-This allows the application to specifically communicate which wallets are supported, and then format the information transfer accordingly. If the user's wallet is not listed, they can still use the “default wallet” option in the hope that it works.
+### Timelocks
 
-## How wallet selection is made
+Timelocks use the passing of time to define additional rules for how funds can be spent from a wallet.
 
-[URI schemes](https://en.wikipedia.org/wiki/List_of_URI_schemes) are how operating systems determine which applications to pass information to when a link is activated. There are 2 types of URI schemes:
+- Unlock additional spending or recovery paths after a certain amount of time has passed.
+- Restrict individual transactions to not be processed immediately but only at a certain point of time in the future (pre-signed transactions).
 
-- General-purpose ones
-- Application-specific ones
+Timelocks can be relative (e.g. “1 year after the wallet has been last used”) or absolute (e.g. “on January 3rd, 2024”). They can reach up to a maximum of 65535 blocks into the future, which is about 455 days.
 
-We’ll outline each of those below.
+### Veto keys
 
-### 1. Opening the default wallet
+In a multi-key setup it is possible to define a hierarchy of keys. This means that you can define keys that are required in every transaction. This technique is sometimes also called a “sovereign veto”, as it grants a key holder the power to veto any transaction, even if the required amount of signatures would have been otherwise reached.
 
-A widely supported standard is [BIP 21](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki#Examples) (also see [Payment request formats](/guide/how-it-works/payment-request-formats/#uniform-resource-identifier-uris-schemes)), which defines a URI scheme for passing bitcoin payment information to other applications.
+### Powered by Miniscript
 
-For example, clicking a link or button with the following URI is opened in the default bitcoin wallet (if there is one installed):
-`bitcoin:16AgmhoCVSJoGeEkERPdrsdvJG3RWmum6T`
+Wallets that support these kinds of configurations typically rely on Miniscript to implement them. Miniscript is a simplified version of Bitcoin Script which helps to reduce the complexity of Bitcoin Script, the native programming language for Bitcoin. Miniscript is easier to read by developers, and also allows for various build-tools to help ensure that scripts are safe, valid, and efficient.
 
-If you have a bitcoin wallet installed on your device, you can try it here:
+## Practical example
 
-[Open bitcoin wallet](bitcoin:16AgmhoCVSJoGeEkERPdrsdvJG3RWmum6T){: .button }
+Imagine a multi-key wallet with a 2-of-3 signing threshold that should turn into a 1-of-3 after six months of inactivity. In order to have an additional safety layer, we also want the wallet to have a fourth key which should activate after one year.
 
-### 2. Opening a specific wallet
+This wallet has three layers of spending conditions and uses relative timelocks to unlock layers two and three: 
 
-Wallets can also define their own unique URI schemes (like `walletname:`, see the [documentation](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app) for Apple devices). On installation, the operating system registers the new URI scheme, and any links that follow this scheme will be opened in the respective wallet.
-
-For example, the following URI would be opened in an imaginary “Design Wallet” since it would have registered the `designwallet:` URI scheme upon installation:
-`designwallet:bitcoin:16AgmhoCVSJoGeEkERPdrsdvJG3RWmum6T`
-
-While this is practical for users, there is no automated discovery process. Developers are required to manually track and implement custom schemes.
-
-## Detecting installed wallets
+- Condition 1 (primary): The primary spending condition defines that two out of three keys are required to sign a transaction.
+- Condition 2 (recovery): After 6 months of wallet inactivity, unlock a second spending condition which only requires one of the three keys to sign transactions.
+- Condition 3 (catastrophe): After 12 months of wallet inactivity, unlock a third spending condition which activates one additional key.
 
 <div class="center" markdown="1">
 
 {% include picture.html
-   image = "/assets/images/guide/how-it-works/wallet-selector/simple-bitcoin.png"
-   retina = "/assets/images/guide/how-it-works/wallet-selector/simple-bitcoin@2x.png"
-   alt-text = "A mobile screen showing a categorized list of wallets by installation status."
+   image = "/assets/images/guide/how-it-works/custom-spending-conditions/unlock-scheme.png"
+   retina = "/assets/images/guide/how-it-works/custom-spending-conditions/unlock-scheme@2x.png"
+   alt-text = "An illustration showing the unlocking scheme of the spending conditions."
    caption = 'Highlighting of installed wallets in the  <a href="https://www.simple-bitcoin.app" target="_blank" rel="nofollow noopener noreferrer">Simple Bitcoin</a> app.'
    width = 250
    height = 541
    layout = "float-right-desktop -background"
 %}
 
-Some operating systems (see [iOS documentation](https://developer.apple.com/documentation/uikit/uiapplication/1622952-canopenurl)) provide a way to detect if the device can handle specific URI schemes. This allows for detection of whether specific wallets are installed. You can use this feature to highlight installed wallets to the user and deprioritize others (or even offer installation links for those). On the technical side, you can pass on customized payment information for each one based on supported features.
-
 </div>
 
-## Only ask once
+One important thing to note is that the paths are additive. This means that, once unlocked, any given condition remains active even if additional one gets unlocked. In the above scenario, you can sign a transaction with two keys (condition 1) but also with any one key after six months (condition 2).
 
-<div class="center" markdown="1">
+## How it works
 
-{% include picture.html
-   image = "/assets/images/guide/how-it-works/wallet-selector/plebstr.png"
-   retina = "/assets/images/guide/how-it-works/wallet-selector/plebstr@2x.png"
-   alt-text = "A mobile settings screen showing dropdown for choosing a default wallet."
-   caption = 'Default wallet setting in the <a href="https://plebstr.com/" target="_blank" rel="nofollow noopener noreferrer">Plebstr</a> app.'
-   width = 250
-   height = 250
-   layout = "float-right-desktop -background"
-%}
+### Wallet creation and setup
 
-When a user has chosen their preferred wallet to use for a specific action, you can set it as the default option for future actions. Make sure to provide the option to change this default.
+Similar to regular multi-key wallets, a software wallet application or coordination software initiates a multi-key wallet, choosing the number of total keys, and the number of keys required to sign transactions (called threshold). You then add public keys from other wallets generated elsewhere to the multisig after which the software wallet can complete the creation process. See the Multi-key wallet page for more information.
 
-</div>
+Notice that all paths need to be configured during wallet creation. Therefore, you will need to have all the public keys ready upfront. If you need to make any changes at a later point in time, you will need to create a new wallet with the desired configuration and move the funds to that wallet.
 
-## Beyond URI schemes
+After the wallet has been created, it needs to be registered on all of the involved signing devices. To do this, you will need the wallet descriptor, which is basically the “map” of the wallet. Each signing device needs to import this map to be able to sign transactions. This process is specific to each signing device and works in the same way as with regular multi-key wallets.
 
-There are several other techniques for websites and applications to communicate with each other. Each has its own use cases, benefits, and limitations.
+### Timelocks
 
-### [Web Share API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API#)
+#### Relative timelocks
 
-The Web Share API allows websites to prompt a share mechanism provided by the operating system. It supports the sharing of URLs, text, and files. The benefit is that the operating system can show an array of applications for the user to choose from, based on what is installed and prior usage.
+An important aspect of timelocks is that they are applied to each unspent transaction output (UTXO) in the wallet individually, not to the wallet as a whole. If a wallet uses relative timelocks, this means that the timelocks expire at different times for each UTXO, based on the time and date on which they were deposited into the wallet.
 
-### Share sheets
+Let’s have a look at a concrete example. Figure 2 shows a wallet that contains three UTXOs with a total value of 0,40 BTC.
 
-As described above, operating systems provide UIs to let users choose which applications to send shared information to.
-- [Activity views](https://developer.apple.com/design/human-interface-guidelines/activity-views#app-top) (Apple operating systems)
-- [Android sharesheet](https://developer.android.com/training/sharing/send)
+The first UTXO of 0,10 BTC was received well ahead of the other two. And since it was not spent for six months, path 2 was unlocked for this UTXO. Path three will activate very soon, if the UTXO is not spent. As you can see, we are actually dealing with three timelocks, rather than one.
 
-### Browser extensions
+Understanding the concept of UTXOs and having to manage one timelock per UTXO is likely to be counterintuitive for many users. It can also become increasingly cumbersome and potentially costly, if you have many UTXOs in the wallet. Therefore, wallet providers need to make sure to educate users about how this works and build robust processes and features that make it easy for them to understand and manage timelocks.
 
-Browser extensions can inject code into websites to simplify sharing. This mechanism is also generally described in the [Sign in with bitcoin page]({{ '/guide/how-it-works/sign-in-with-bitcoin/' | relative_url }}).
-- [Safari app extensions](https://developer.apple.com/documentation/safariservices/safari_app_extensions/building_a_safari_app_extension)
-- [Firefox addons](https://addons.mozilla.org/en-US/developers/)
-- [Chrome extensions](https://developer.chrome.com/docs/extensions/)
+#### Absolute timelocks
+
+Absolute timelocks use a specific calendar date or block height as their reference point. Since timelocks are applied to each UTXO in the wallet, absolute timelocks have the advantage that they expire for all UTXOs in the wallet at the same time. This means that users only have to keep track of one deadline, which can make the management of the wallet easier and less demanding.
+
+#### Resetting timelocks
+
+To reset a timelock or “refresh” a UTXO, you need to spend that UTXO. This can be achieved through a self-transfer to a new address within the same wallet. Wallet applications can make this process easy for users by implementing the corresponding functionality.
+
+Note that an on-chain transaction is required to reset a timelock, along with the respective transaction fees. This can become costly if you have many UTXOs in the wallet. Therefore, it is recommended to consolidate smaller amounts into larger UTXOs in order to reduce the costs of resetting timelocks.
+
+To reset a timelock or “refresh” a UTXO, you need to spend that UTXO. This can be achieved through a self-transfer to a new address within the same wallet. Wallet applications can make this process easy for users by implementing the corresponding functionality. 
+
+### Flexibility vs. complexity
+
+Spending conditions based on Miniscript are composable. This means that you can create as many spending paths as you want. You can even have one of the keys in one wallet be a multi-key wallet itself. Or you can combine time locked spending paths with veto keys. However, these kinds of setups can become complex very quickly and should not be used in most personal setups or by users who are new to bitcoin.
+
+### Backups
+
+In terms of securing the wallet, backing up the individual private keys is not enough. The wallet configuration, also known as the wallet descriptor, needs to be backed up as well. Without this “map”, you will not be able to restore any multi-key wallet.
+
+## Pros & cons
+
+### Pros
+
+- Can increase fault tolerance, thereby reducing the risk of lost funds.
+- Can reduce the risk of theft.
+- Enables non-custodial social recovery and inheritance workflows.
+- Can improve security and flexibility for shared wallet usage in organizational settings.
+
+### Cons
+
+- Miniscript is not yet widely supported by software and hardware wallets.
+- More complex setup and backup processes.
+- It can be cumbersome to manage timelocks, if the wallet contains many UTXOs.
+
+## Best practice
+
+### When to use
+
+- When storing large amounts.
+- When funds need to be accessed by several people or an organization.
+- When the target audience is likely to own hardware wallets.
+- When users are likely to be very knowledgeable or be guided through setup and use
+
+### When not to use
+
+- For small amounts.
+- When users are likely to be new to bitcoin.
+
+### Do
+
+- Provide real-world examples or ready-made templates for common setups to help users choose and implement the right configuration for their needs.
+- Provide informational content to help users guide through the setup process and educate them about how to properly use a time-based wallet. They can be powerful tools to achieve very robust setups. However, with an increasing number of conditions, setups become complex very quickly, which might actually decrease their security.
+- Educate users that composing condition layers is only one aspect of their setup. Make them aware that they should think through the adjacent topics before implementing a specific scheme. These topics include aspects like the trust relationships with other users, key backups and wallet configuration backups. The more layers people use, the more complicated the entire setup gets.
+- If possible, provide a way to save unfinished wallet configurations during the setup process. As the creation process may involve many steps and/or users might not have all the necessary signing keys available, they would need to start from scratch at a different point in time, which could cause frustration.
+- Use Taproot in your product, as it adds many privacy benefits to the users, especially in a multi-sig context. First, using multi-sig on its own reduces the anonymity set. Taproot helps mitigate this aspect, because only the executed part is revealed on-chain. Second, spending conditions that are not used in a Taproot transaction are not revealed on-chain. This means that inactive keys or conditions cannot be detected through chain-surveillance tools. Third, Taproot transactions have a smaller on-chain footprint. Therefore, they are more economical.
+
+
+
+
 
 ---
 
