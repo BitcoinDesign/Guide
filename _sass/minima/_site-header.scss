@@ -32,7 +32,7 @@
             white-space: nowrap;
 
             &:focus {
-                outline: 2px solid $primary-color;
+                outline: 2px solid var(--primary-color);
             }
 
             svg {
@@ -51,15 +51,15 @@
             }
 
             &:focus {
-                background-color: rgba($primary-color, 0.05);
+                background-color: rgba(var(--primary-color), 0.05);
             }
 
             &:hover {
-                color: $primary-color;
+                color: var(--primary-color);
                 text-decoration: none;
 
                 svg {
-                    color: $primary-color;
+                    color: var(--primary-color);
                 }
             }
         }
@@ -75,16 +75,16 @@
                 font-weight: 500;
 
                 &:hover {
-                    color: $primary-color;
+                    color: var(--primary-color);
                     text-decoration: none;
                 }
 
                 &:focus {
-                    background-color: rgba($primary-color, 0.1);
+                    background-color: rgba(var(--primary-color), 0.1);
                 }
 
                 &.active {
-                    color: $primary-color;
+                    color: var(--primary-color);
                 }
             }
 
@@ -110,18 +110,18 @@
             }
 
             &:focus {
-                background-color: rgba($primary-color, 0.05);
+                background-color: rgba(var(--primary-color), 0.05);
             }
 
             &:hover {
                 svg {
-                    color: $primary-color;
+                    color: var(--primary-color);
                 }
             }
 
             &.-active {
                 svg {
-                    color: $primary-color;
+                    color: var(--primary-color);
                 }
             }
         }
@@ -205,10 +205,10 @@
 
                         &:hover {
                             text-decoration: none;
-                            background-color: rgba($primary-color, 0.05);
+                            background-color: rgba(var(--primary-color), 0.05);
 
                             h3 {
-                                color: $primary-color;
+                                color: var(--primary-color);
                             }
                         }
                     }
@@ -255,11 +255,11 @@
                 }
 
                 &:focus {
-                    background-color: rgba($primary-color, 0.05);
+                    background-color: rgba(var(--primary-color), 0.05);
                 }
 
                 &:hover {
-                    color: $primary-color;
+                    color: var(--primary-color);
                 }
             }
 
@@ -341,7 +341,7 @@
 
                 .nav-trigger {                    
                     svg {
-                        fill: $primary-color;
+                        fill: var(--primary-color);
                     }
                 }
             }
@@ -376,7 +376,7 @@
                         bottom: -1px;
                         height: 1px;
                         opacity: 0;
-                        background-color: $primary-color;
+                        background-color: var(--primary-color);
                     }
 
                     &.active {

@@ -71,7 +71,7 @@ main {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 4px solid rgba($primary-color, 0.6);
+  outline: 4px solid rgba(var(--primary-color-rgb), 0.6);
   outline-offset: 1px;
 }
 
@@ -157,16 +157,16 @@ h1 {
  * Links
  */
 a {
-  color: $link-base-color;
+  color: var(--link-base-color);
   text-decoration: none;
   transition: color 100ms $ease;
 
   &:visited {
-    color: $link-visited-color;
+    color: var(--link-visited-color);
   }
 
   &:hover {
-    color: $link-hover-color;
+    color: var(--link-hover-color);
     text-decoration: underline;
   }
 
