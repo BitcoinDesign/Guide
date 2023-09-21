@@ -41,7 +41,7 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
    retina = "assets/images/guide/how-it-works/custom-spending-conditions/header@2x.png"
    alt-text = ""
    width = 1600
-   height = 600
+   height = 400
    layout = "full-width"
 %}
 
@@ -97,8 +97,8 @@ This wallet has three layers of spending conditions and uses relative timelocks 
 <div class="center" markdown="1">
 
 {% include picture.html
-   image = "/assets/images/guide/how-it-works/custom-spending-conditions/unlock-scheme.png"
-   retina = "/assets/images/guide/how-it-works/custom-spending-conditions/unlock-scheme@2x.png"
+   image = "/assets/images/guide/how-it-works/custom-spending-conditions/unlock-schedule.png"
+   retina = "/assets/images/guide/how-it-works/custom-spending-conditions/unlock-schedule@2x.png"
    alt-text = "An illustration showing the unlocking scheme of the spending conditions."
    caption = 'Highlighting of installed wallets in the  <a href="https://www.simple-bitcoin.app" target="_blank" rel="nofollow noopener noreferrer">Simple Bitcoin</a> app.'
    width = 250
