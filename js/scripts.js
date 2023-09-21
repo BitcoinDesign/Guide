@@ -151,11 +151,12 @@ function handleSearchInput(event) {
     } else if(searchIndex && term.length > 0) {
       try {
         // Make search fuzzy for simple terms
+        var adjustedTerm = term;
         if(term.indexOf(' ') === -1) {
-          term = term + '~1'
+          adjustedTerm = term + '~1'
         }
 
-        var results = searchIndex.search(term); // Get lunr to perform a search
+        var results = searchIndex.search(adjustedTerm); // Get lunr to perform a search
 
         var highestScore, lowestScore
         if(results.length > 2) {
