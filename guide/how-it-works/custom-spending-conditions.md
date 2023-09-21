@@ -54,13 +54,17 @@ Spending conditions encode the rules that need to be followed by a wallet to spe
 
 In addition to these standard configurations it is also possible to create more flexible wallets by defining custom spending paths. There is a wide variety of use cases, where this flexibility can be helpful, like personal or family self-custody, inheritance or company treasuries.
 
-## Use cases
+## Use case examples
 
-Custom spending paths can be helpful to decrease the risk of losing funds in personal self-custody context. In a savings wallet context where you are the only key holder, you could unlock a recovery spending path after a certain time of wallet inactivity. This path could contain an additional key held in a different location. Such a setup does not decrease the wallet security, because the second key is locked under normal circumstances of using the wallet. 
+#### Self-custody
+
+Custom spending conditions can be helpful to decrease the risk of losing funds in personal self-custody context. In a savings wallet context where you are the only key holder, you could unlock a recovery spending path after a certain time of wallet inactivity. This path could contain an additional key held in a different location. Such a setup does not decrease the wallet security, because the second key is locked under normal circumstances of using the wallet. 
 
 In a multi-key context, the recovery path could require only one instead of two keys to spend funds after 6 months of inactivity. This will help mitigate the risk of one key holder losing a key.
 
-Custom spending paths can also be useful in an organizational context. Companies need to make sure that they retain access to funds even if one or more employees lose their keys, are compromised or try to obstruct the deployment of funds. Or they might want to implement company-specific processes for corporate spending. For example, they would want the CEO and CFO to always have to co-sign transactions over a specific amount. 
+#### Company treasuries
+
+Custom spending conditions can also be useful in an organizational context. Companies need to make sure that they retain access to funds even if one or more employees lose their keys, are compromised or try to obstruct the deployment of funds. Or they might want to implement company-specific processes for corporate spending. For example, they would want the CEO and CFO to always have to co-sign transactions over a specific amount. 
 
 
 ## Building blocks
