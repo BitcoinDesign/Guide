@@ -6,21 +6,8 @@ nav_order: 11
 parent: How it works
 permalink: /guide/how-it-works/custom-spending-conditions/
 main_classes: -no-top-padding
-image: /assets/images/guide/how-it-works/custom-spending-conditions/header.png
+image: /assets/images/guide/how-it-works/custom-spending-conditions/header.jpg
 image_base: /assets/images/guide/how-it-works/custom-spending-conditions/
-example-screens:
-    - file: thndr-games
-      modalImage: thndr-games-big
-      alt: Screenshot of a mobile app showing a withdraw balance and a list of wallets.
-      caption: 'Withdrawing sats in a <a href="https://www.thndr.games/" target="_blank" rel="nofollow noopener noreferrer">THNDR Games</a> app.'
-    - file: the-bitcoin-company
-      modalImage: the-bitcoin-company-big
-      alt: A lightning payment screen with an overal for selecting a lightnig wallet from a list.
-      caption: 'Choosing a wallet for payment in <a href="https://thebitcoincompany.com" target="_blank" rel="nofollow noopener noreferrer">The Bitcoin Company</a> app.'
-    - file: damus
-      modalImage: damus-big
-      alt: A mobile screen showing a lightning invoice and a list of wallets to choose from.
-      caption: 'Choosing a wallet for invoice payment in <a href="http://damus.io" target="_blank" rel="nofollow noopener noreferrer">Damus</a>.'
 
 ---
 
@@ -37,11 +24,11 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 -->
 
 {% include picture.html
-   image = "assets/images/guide/how-it-works/custom-spending-conditions/header.png"
-   retina = "assets/images/guide/how-it-works/custom-spending-conditions/header@2x.png"
+   image = "assets/images/guide/how-it-works/custom-spending-conditions/header.jpg"
+   retina = "assets/images/guide/how-it-works/custom-spending-conditions/header@2x.jpg"
    alt-text = ""
    width = 1600
-   height = 400
+   height = 600
    layout = "full-width"
 %}
 
@@ -94,7 +81,7 @@ This wallet has three layers of spending conditions and uses relative timelocks 
 
 - **Condition 1 (primary):** The primary spending condition defines that two out of three keys are required to sign a transaction.
 - **Condition 2 (recovery):** After 6 months of wallet inactivity, unlock a second spending condition which only requires one of the three keys to sign transactions.
-- **Condition 3 (emergency):** After 12 months of wallet inactivity, unlock a third spending condition which activates one additional key that is not part of the first two conditions.
+- **Condition 3 (emergency):** After 12 months of wallet inactivity, unlock a third spending condition which activates a fourth key that is not part of the first two conditions.
 
 
 <div class="center" markdown="1">
