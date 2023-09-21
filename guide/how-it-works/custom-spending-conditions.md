@@ -141,7 +141,9 @@ An important aspect of timelocks is that they are applied to each unspent transa
    layout = "float-right-desktop"
 %}
 
-Let’s have a look at a concrete example. Figure 2 shows a wallet that contains three UTXOs with a total value of 0,40 BTC. The first UTXO of 0,10 BTC was received well ahead of the other two. And since it was not spent for six months, the recovery condition was unlocked. Condition three will activate very soon, if the UTXO is not spent. As you can see, we are actually dealing with three timelocks, rather than one.
+Let’s have a look at a concrete example. Figure 2 shows a wallet that contains three UTXOs with a total value of 0,40 BTC. The first UTXO of 0,10 BTC was received well ahead of the other two. And since it was not spent for six months, the recovery condition was unlocked. The emergency condition will unlock very soon, if the UTXO is not spent. 
+
+As you can see, we are actually dealing with three timelocks, rather than one.
 
 </div>
 
