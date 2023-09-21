@@ -71,7 +71,7 @@ Custom spending conditions can also be useful in an organizational context. Comp
 
 There are currently two main building blocks that can help us construct custom spending paths: timelocks and veto keys.
 
-### Timelocks
+#### Timelocks
 
 Timelocks use the passing of time to define additional rules for how funds can be spent from a wallet.
 
@@ -80,11 +80,11 @@ Timelocks use the passing of time to define additional rules for how funds can b
 
 Timelocks can be relative (e.g. “1 year after the wallet has been last used”) or absolute (e.g. “on January 3rd, 2024”). They can reach up to a maximum of 65535 blocks into the future, which is about 455 days.
 
-### Veto keys
+#### Veto keys
 
 In a multi-key setup it is possible to define a hierarchy of keys. This means that you can define keys that are required in every transaction. This technique is sometimes also called a “sovereign veto”, as it grants a key holder the power to veto any transaction, even if the required amount of signatures would have been otherwise reached.
 
-### Powered by Miniscript
+#### Powered by Miniscript
 
 Wallets that support these kinds of configurations typically rely on Miniscript to implement them. Miniscript is a simplified version of Bitcoin Script which helps to reduce the complexity of Bitcoin Script, the native programming language for Bitcoin. Miniscript is easier to read by developers, and also allows for various build-tools to help ensure that scripts are safe, valid, and efficient.
 
@@ -94,9 +94,9 @@ Imagine a multi-key wallet with a 2-of-3 signing threshold that should turn into
 
 This wallet has three layers of spending conditions and uses relative timelocks to unlock layers two and three: 
 
-- Condition 1 (primary): The primary spending condition defines that two out of three keys are required to sign a transaction.
-- Condition 2 (recovery): After 6 months of wallet inactivity, unlock a second spending condition which only requires one of the three keys to sign transactions.
-- Condition 3 (catastrophe): After 12 months of wallet inactivity, unlock a third spending condition which activates one additional key.
+- **Condition 1 (primary):** The primary spending condition defines that two out of three keys are required to sign a transaction.
+- **Condition 2 (recovery):** After 6 months of wallet inactivity, unlock a second spending condition which only requires one of the three keys to sign transactions.
+- **Condition 3 (emergency):** After 12 months of wallet inactivity, unlock a third spending condition which activates one additional key.
 
 
 <div class="center" markdown="1">
@@ -118,7 +118,7 @@ One important thing to note is that the paths are additive. This means that, onc
 
 ## How it works
 
-### Wallet creation and setup
+#### Wallet creation and setup
 
 Similar to regular multi-key wallets, a software wallet application or coordination software initiates a multi-key wallet, choosing the number of total keys, and the number of keys required to sign transactions (called threshold). You then add public keys from other wallets generated elsewhere to the multisig after which the software wallet can complete the creation process. See the Multi-key wallet page for more information.
 
@@ -126,9 +126,9 @@ Notice that all paths need to be configured during wallet creation. Therefore, y
 
 After the wallet has been created, it needs to be registered on all of the involved signing devices. To do this, you will need the wallet descriptor, which is basically the “map” of the wallet. Each signing device needs to import this map to be able to sign transactions. This process is specific to each signing device and works in the same way as with regular multi-key wallets.
 
-### Timelocks
+#### Timelocks
 
-#### Relative timelocks
+##### Relative timelocks
 
 An important aspect of timelocks is that they are applied to each unspent transaction output (UTXO) in the wallet individually, not to the wallet as a whole. If a wallet uses relative timelocks, this means that the timelocks expire at different times for each UTXO, based on the time and date on which they were deposited into the wallet.
 
@@ -175,14 +175,14 @@ In terms of securing the wallet, backing up the individual private keys is not e
 
 ## Pros & cons
 
-### Pros
+#### Pros
 
 - Can increase fault tolerance, thereby reducing the risk of lost funds.
 - Can reduce the risk of theft.
 - Enables non-custodial social recovery and inheritance workflows.
 - Can improve security and flexibility for shared wallet usage in organizational settings.
 
-### Cons
+#### Cons
 
 - Miniscript is not yet widely supported by software and hardware wallets.
 - More complex setup and backup processes.
@@ -190,19 +190,19 @@ In terms of securing the wallet, backing up the individual private keys is not e
 
 ## Best practice
 
-### When to use
+#### When to use
 
 - When storing large amounts.
 - When funds need to be accessed by several people or an organization.
 - When the target audience is likely to own hardware wallets.
 - When users are likely to be very knowledgeable or be guided through setup and use
 
-### When not to use
+#### When not to use
 
 - For small amounts.
 - When users are likely to be new to bitcoin.
 
-### Do
+#### Do
 
 - Provide real-world examples or ready-made templates for common setups to help users choose and implement the right configuration for their needs.
 - Provide informational content to help users guide through the setup process and educate them about how to properly use a time-based wallet. They can be powerful tools to achieve very robust setups. However, with an increasing number of conditions, setups become complex very quickly, which might actually decrease their security.
