@@ -24,7 +24,7 @@
 
       &:active,
       &:focus {
-        border-color: $primary-color;
+        border-color: var(--primary-color);
         outline: none;
       }
 
@@ -67,25 +67,21 @@
         transition: background-color 100ms $ease;
 
         p {
-          margin-top: 5px;
-          margin-bottom: 0;
-          font-size: 16px;
-          line-height: 1.4;
-          color: rgba(var(--front), 0.7);
+            margin-top: 5px;
+            margin-bottom: 0;
+            font-size: 16px;
+            line-height: 1.4;
+            color: rgba(var(--front), 0.7);
         }
 
         &:hover {
-          text-decoration: none;
-          background-color: rgba($primary-color, 0.05);
+            text-decoration: none;
+            background-color: rgba(var(--primary-color-rgb), 0.05);
 
-          h3 {
-            color: $primary-color;
-          }
+            h3 {
+                color: var(--primary-color);
+            }
         }
-      }
-
-      > h3 {
-        // padding: 15px 0 0 0;
       }
 
       &.no-results {
@@ -115,7 +111,7 @@
       }
 
       &:hover {
-        color: $primary-color;
+        color: var(--primary-color);
         cursor: pointer;
       }
 

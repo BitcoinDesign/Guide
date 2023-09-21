@@ -22,12 +22,6 @@ files:
     retina: /assets/images/guide/resources/design-files/bitcoin-icons@2x.jpg
     width: 400
     height: 210
-  - caption: <a href="https://www.figma.com/community/file/972290772932533325/Art-Meets-Bitcoin">Art meets bitcoin</a>
-    alt: Collage of bitcoin related illustration elements
-    image: /assets/images/guide/resources/design-files/art-meets-bitcoin.jpg
-    retina: /assets/images/guide/resources/design-files/art-meets-bitcoin@2x.jpg
-    width: 400
-    height: 210
   - caption: <a href="https://www.figma.com/community/file/946807598525782935/Bitcoin-hardware-%26-accessories">Hardware illustrations</a>
     alt: Collction of bitcoin hardware outline illustrations
     image: /assets/images/guide/resources/design-files/bitcoin-hardware-illustrations.jpg

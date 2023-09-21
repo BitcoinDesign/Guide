@@ -257,8 +257,8 @@ As mentioned earlier, there is significant nuance involved in displaying user ac
 Closely related to activity is the next page about [contacts]({{ '/guide/daily-spending-wallet/contacts' | relative_url }}).
 
 {% include next-previous.html
-   previousUrl = "/guide/daily-spending-wallet/sending/"
-   previousName = "Sending bitcoin"
+   previousUrl = "/guide/daily-spending-wallet/sending/send-fees/"
+   previousName = "Send fees"
    nextUrl = "/guide/daily-spending-wallet/contacts/"
    nextName = "Contacts"
 %}
