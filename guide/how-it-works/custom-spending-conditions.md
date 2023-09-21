@@ -141,11 +141,9 @@ An important aspect of timelocks is that they are applied to each unspent transa
    layout = "float-right-desktop"
 %}
 
-Let’s have a look at a concrete example. Figure 2 shows a wallet that contains three UTXOs with a total value of 0,40 BTC.
+Let’s have a look at a concrete example. Figure 2 shows a wallet that contains three UTXOs with a total value of 0,40 BTC. The first UTXO of 0,10 BTC was received well ahead of the other two. And since it was not spent for six months, path 2 was unlocked for this UTXO. Path three will activate very soon, if the UTXO is not spent. As you can see, we are actually dealing with three timelocks, rather than one.
 
 </div>
-
-The first UTXO of 0,10 BTC was received well ahead of the other two. And since it was not spent for six months, path 2 was unlocked for this UTXO. Path three will activate very soon, if the UTXO is not spent. As you can see, we are actually dealing with three timelocks, rather than one.
 
 Understanding the concept of UTXOs and having to manage one timelock per UTXO is likely to be counterintuitive for many users. It can also become increasingly cumbersome and potentially costly, if you have many UTXOs in the wallet. Therefore, wallet providers need to make sure to educate users about how this works and build robust processes and features that make it easy for them to understand and manage timelocks.
 
