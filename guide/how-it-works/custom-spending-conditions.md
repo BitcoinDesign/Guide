@@ -78,8 +78,6 @@ Timelocks use the passing of time to define additional rules for how funds can b
 - Unlock additional spending or recovery paths after a certain amount of time has passed.
 - Restrict individual transactions to not be processed immediately but only at a certain point of time in the future (pre-signed transactions).
 
-Timelocks can be relative (e.g. “1 year after the wallet has been last used”) or absolute (e.g. “on January 3rd, 2024”). They can reach up to a maximum of 65535 blocks into the future, which is about 455 days.
-
 #### Veto keys
 
 In a multi-key setup it is possible to define a hierarchy of keys. This means that you can define keys that are required in every transaction. This technique is sometimes also called a “sovereign veto”, as it grants a key holder the power to veto any transaction, even if the required amount of signatures would have been otherwise reached.
@@ -118,7 +116,7 @@ One important thing to note is that the paths are additive. This means that, onc
 
 ## How it works
 
-#### Wallet creation and setup
+### Wallet creation and setup
 
 Similar to regular multi-key wallets, a software wallet application or coordination software initiates a multi-key wallet, choosing the number of total keys, and the number of keys required to sign transactions (called threshold). You then add public keys from other wallets generated elsewhere to the multisig after which the software wallet can complete the creation process. See the Multi-key wallet page for more information.
 
@@ -126,7 +124,9 @@ Notice that all paths need to be configured during wallet creation. Therefore, y
 
 After the wallet has been created, it needs to be registered on all of the involved signing devices. To do this, you will need the wallet descriptor, which is basically the “map” of the wallet. Each signing device needs to import this map to be able to sign transactions. This process is specific to each signing device and works in the same way as with regular multi-key wallets.
 
-#### Timelocks
+### Timelocks
+
+Timelocks can be relative (e.g. “1 year after the wallet has been last used”) or absolute (e.g. “on January 3rd, 2024”). They can reach up to a maximum of 65535 blocks into the future, which is about 455 days.
 
 ##### Relative timelocks
 
