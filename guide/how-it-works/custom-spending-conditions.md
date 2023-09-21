@@ -94,17 +94,21 @@ This wallet has three layers of spending conditions and uses relative timelocks 
 - Condition 2 (recovery): After 6 months of wallet inactivity, unlock a second spending condition which only requires one of the three keys to sign transactions.
 - Condition 3 (catastrophe): After 12 months of wallet inactivity, unlock a third spending condition which activates one additional key.
 
+
 <div class="center" markdown="1">
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/custom-spending-conditions/unlock-schedule.png"
    retina = "/assets/images/guide/how-it-works/custom-spending-conditions/unlock-schedule@2x.png"
+   mobile = "/assets/images/guide/how-it-works/custom-spending-conditions/unlock-schedule-mobile.png"
+   mobileRetina = "/assets/images/guide/how-it-works/custom-spending-conditions/unlock-schedule-mobile@2x.png"
    alt-text = "An illustration showing the unlocking scheme of the spending conditions."
    width = 1600
    height = 800
 %}
 
 </div>
+
 
 One important thing to note is that the paths are additive. This means that, once unlocked, any given condition remains active even if additional one gets unlocked. In the above scenario, you can sign a transaction with two keys (condition 1) but also with any one key after six months (condition 2).
 
