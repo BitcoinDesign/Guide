@@ -128,8 +128,6 @@ After the wallet has been created, it needs to be registered on all of the invol
 
 An important aspect of timelocks is that they are applied to each unspent transaction output (UTXO) in the wallet individually, not to the wallet as a whole. If a wallet uses relative timelocks, this means that the timelocks expire at different times for each UTXO, based on the time and date on which they were deposited into the wallet.
 
-Let’s have a look at a concrete example. Figure 2 shows a wallet that contains three UTXOs with a total value of 0,40 BTC.
-
 <div class="center" markdown="1">
 
 {% include picture.html
@@ -142,6 +140,8 @@ Let’s have a look at a concrete example. Figure 2 shows a wallet that contains
    height = 400
    layout = "float-right-desktop"
 %}
+
+Let’s have a look at a concrete example. Figure 2 shows a wallet that contains three UTXOs with a total value of 0,40 BTC.
 
 </div>
 
