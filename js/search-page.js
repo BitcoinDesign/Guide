@@ -107,7 +107,7 @@ function displaySearchPageResults(searchInput, results, lowestScore, highestScor
     var green = [0, 166, 82]
     var gray = [222, 222, 222]
 
-    var content, contentBits, k, index, colorPosition, color;
+    var content, contentBits, k, index, colorPosition, color, scoreTip;
     for(var i = 0; i < results.length; i++) {  // Iterate over the results
       result = results[i];
       item = searchData[result.ref];
@@ -131,21 +131,29 @@ function displaySearchPageResults(searchInput, results, lowestScore, highestScor
         content = content.substr(item.title.length)
       }
 
-      // Calculate a color of how good of a match it is
-      // Green - best match
-      // Grey - worst match
-      // Result can also be somewhere in between
-      colorPosition = (result.score - lowestScore)/(highestScore - lowestScore)
-      color = {
-        r: Math.round(gray[0] - Math.abs(gray[0] - green[0])*colorPosition),
-        g: Math.round(gray[1] - Math.abs(gray[1] - green[1])*colorPosition),
-        b: Math.round(gray[2] - Math.abs(gray[2] - green[2])*colorPosition)
-      }
-
       appendString += '<li><a href="' + item.url + '#:~:text=' + encodeURIComponent(searchInput.value) + '">';
       appendString += '<h3>' + item.title;
       if(lowestScore && highestScore) {
-        appendString += '<span style="background-color: rgba('+color.r+','+color.g+','+color.b+');"></span>';
+        // Calculate a color of how good of a match it is
+        // Green - best match
+        // Grey - worst match
+        // Result can also be somewhere in between
+        colorPosition = (result.score - lowestScore)/(highestScore - lowestScore)
+        color = {
+          r: Math.round(gray[0] - Math.abs(gray[0] - green[0])*colorPosition),
+          g: Math.round(gray[1] - Math.abs(gray[1] - green[1])*colorPosition),
+          b: Math.round(gray[2] - Math.abs(gray[2] - green[2])*colorPosition)
+        }
+
+        if(colorPosition > 0.66) {
+          scoreTip = 'Great match';
+        } else if(colorPosition > 0.33) {
+          scoreTip = 'Good match';
+        } else {
+          scoreTip = 'OK match';
+        }
+
+        appendString += '<span style="background-color: rgba('+color.r+','+color.g+','+color.b+');" title="'+scoreTip+'"></span>';
       }
       appendString += '</h3>';
       appendString += '<p>' + content + '...</p>';
