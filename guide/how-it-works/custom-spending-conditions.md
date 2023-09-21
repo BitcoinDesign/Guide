@@ -100,7 +100,6 @@ This wallet has three layers of spending conditions and uses relative timelocks 
    image = "/assets/images/guide/how-it-works/custom-spending-conditions/unlock-schedule.png"
    retina = "/assets/images/guide/how-it-works/custom-spending-conditions/unlock-schedule@2x.png"
    alt-text = "An illustration showing the unlocking scheme of the spending conditions."
-   caption = 'Highlighting of installed wallets in the  <a href="https://www.simple-bitcoin.app" target="_blank" rel="nofollow noopener noreferrer">Simple Bitcoin</a> app.'
    width = 1600
    height = 800
 %}
