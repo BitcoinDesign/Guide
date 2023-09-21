@@ -94,7 +94,7 @@ This wallet has three layers of spending conditions and uses relative timelocks 
 
 - **Condition 1 (primary):** The primary spending condition defines that two out of three keys are required to sign a transaction.
 - **Condition 2 (recovery):** After 6 months of wallet inactivity, unlock a second spending condition which only requires one of the three keys to sign transactions.
-- **Condition 3 (emergency):** After 12 months of wallet inactivity, unlock a third spending condition which activates one additional key.
+- **Condition 3 (emergency):** After 12 months of wallet inactivity, unlock a third spending condition which activates one additional key that is not part of the first two conditions.
 
 
 <div class="center" markdown="1">
