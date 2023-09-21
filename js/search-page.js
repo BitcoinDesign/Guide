@@ -22,12 +22,9 @@ function loadSearchPageData() {
 
   request.onreadystatechange = function() {
     if (request.readyState === 4) {
-      // console.log('request', request.responseText)
-
       var start = 578680
       var offset = 500
       var bits = request.responseText.substr(start-offset, start+offset);
-      console.log('bits', bits)
       searchData = JSON.parse(request.responseText);
 
       searchPageIndex = lunr(function () {
