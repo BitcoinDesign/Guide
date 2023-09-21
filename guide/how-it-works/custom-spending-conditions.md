@@ -6,8 +6,8 @@ nav_order: 11
 parent: How it works
 permalink: /guide/how-it-works/custom-spending-conditions/
 main_classes: -no-top-padding
-image: /assets/images/guide/how-it-works/wallet-selector/wallet-selector-preview.jpg
-image_base: /assets/images/guide/how-it-works/wallet-selector/
+image: /assets/images/guide/how-it-works/custom-spending-conditions/header.png
+image_base: /assets/images/guide/how-it-works/custom-spending-conditions/
 example-screens:
     - file: thndr-games
       modalImage: thndr-games-big
@@ -37,8 +37,8 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 -->
 
 {% include picture.html
-   image = "assets/images/guide/how-it-works/wallet-selector/wallet-selector.jpg"
-   retina = "assets/images/guide/how-it-works/wallet-selector/wallet-selector@2x.jpg"
+   image = "assets/images/guide/how-it-works/custom-spending-conditions/header.png"
+   retina = "assets/images/guide/how-it-works/custom-spending-conditions/header@2x.png"
    alt-text = ""
    width = 1600
    height = 600
@@ -57,6 +57,8 @@ In addition to these standard configurations it is also possible to create more 
 ## Use cases
 
 Custom spending paths can be helpful to decrease the risk of losing funds in personal self-custody context. In a savings wallet context where you are the only key holder, you could unlock a recovery spending path after a certain time of wallet inactivity. This path could contain an additional key held in a different location. Such a setup does not decrease the wallet security, because the second key is locked under normal circumstances of using the wallet. 
+
+In a multi-key context, the recovery path could require only one instead of two keys to spend funds after 6 months of inactivity. This will help mitigate the risk of one key holder losing a key.
 
 Custom spending paths can also be useful in an organizational context. Companies need to make sure that they retain access to funds even if one or more employees lose their keys, are compromised or try to obstruct the deployment of funds. Or they might want to implement company-specific processes for corporate spending. For example, they would want the CEO and CFO to always have to co-sign transactions over a specific amount. 
 
