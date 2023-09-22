@@ -2,7 +2,7 @@
 layout: guide
 title: Custom Spending Conditions
 description: An interface pattern for letting users choose which external wallet to use when withdrawing, sending, or receiving in a bitcoin application.
-nav_order: 11
+nav_order: 12
 parent: How it works
 permalink: /guide/how-it-works/custom-spending-conditions/
 main_classes: -no-top-padding
