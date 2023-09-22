@@ -188,6 +188,16 @@
                         line-height: 1.2;
                         color: var(--frontHex);
                         transition: color 100ms $ease;
+
+                        span {
+                            margin-left: 5px;
+                            vertical-align: middle;
+                            display: inline-block;
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 4px;
+                            transform: translateY(-1px);
+                        }
                     }
 
                     a {
