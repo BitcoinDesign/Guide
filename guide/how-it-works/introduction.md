@@ -90,9 +90,11 @@ How lightning wallets can support authentication and payments with external appl
 
 Documentation of an interface pattern for letting users choose which external wallet to use when withdrawing, sending, or receiving in a bitcoin application.
 
+---
+
 ### [Custom Spending Conditions]({{ '/guide/how-it-works/custom-spending-conditions' | relative_url }})
 
-Overview about advanced capabilities that enable users to create more flexible bitcoin wallets.
+Overview about advanced    capabilities that enable users to create more flexible bitcoin wallets.
 
 ---
 
