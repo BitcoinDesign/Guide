@@ -15,8 +15,7 @@ image_base: /assets/images/guide/how-it-works/custom-spending-conditions/
 
 Editor's notes
 
-This page narrowly focuses on the UI pattern of letting users choose from a list of wallets,
-in order to make a payment, withdrawal, etc.
+This page focuses on the advanced wallet configurations which are enabled by Miniscript.
 
 Header image source:
 https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?type=design&node-id=3324%3A24043&mode=design&t=GbcNUdc0VUnSOQi2-1
@@ -28,7 +27,7 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
    retina = "assets/images/guide/how-it-works/custom-spending-conditions/header@2x.jpg"
    alt-text = ""
    width = 1600
-   height = 600
+   height = 800
    layout = "full-width"
 %}
 
@@ -37,17 +36,17 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 {:.no_toc}
 ---
 
-Spending conditions encode the rules that need to be followed by a wallet to spend funds. Most bitcoin wallets have only one spending path. For example, in a single-key wallet there is only one key that can sign transactions. Or, in a 2-of-3 multi-key wallet, you need any two of the three keys to sign transactions.
+Spending conditions encode the rules that need to be followed by a wallet to spend funds. Most bitcoin wallets have only one spending condition. For example, in a single-key wallet there is only one key that can sign transactions. Or, in a 2-of-3 multi-key wallet, you need any two of the three keys to sign transactions.
 
-In addition to these standard configurations it is also possible to create more flexible wallets by defining custom spending paths. There is a wide variety of use cases, where this flexibility can be helpful, like personal or family self-custody, inheritance or company treasuries.
+In addition to these standard configurations it is also possible to create more flexible wallets by defining custom spending conditions. There is a wide variety of use cases, where this flexibility can be helpful, like personal or family self-custody, inheritance or company treasuries.
 
 ## Use case examples
 
 #### Self-custody
 
-Custom spending conditions can be helpful to decrease the risk of losing funds in personal self-custody context. In a savings wallet context where you are the only key holder, you could unlock a recovery spending path after a certain time of wallet inactivity. This path could contain an additional key held in a different location. Such a setup does not decrease the wallet security, because the second key is locked under normal circumstances of using the wallet. 
+Custom spending conditions can be helpful to decrease the risk of losing funds in personal self-custody context. In a savings wallet context where you are the only key holder, you could unlock a recovery spending condition after a certain time of wallet inactivity. This condition could contain an additional key held in a different location. Such a setup does not decrease the wallet security, because the second key is locked under normal circumstances of using the wallet. 
 
-In a multi-key context, the recovery path could require only one instead of two keys to spend funds after 6 months of inactivity. This will help mitigate the risk of one key holder losing a key.
+In a multi-key context, the recovery condition could require only one instead of two keys to spend funds after 6 months of inactivity. This will help mitigate the risk of loss of funds in case one key holder loses a key.
 
 #### Company treasuries
 
@@ -56,22 +55,22 @@ Custom spending conditions can also be useful in an organizational context. Comp
 
 ## Building blocks
 
-There are currently two main building blocks that can help us construct custom spending paths: timelocks and veto keys.
+There are currently two main building blocks that can help us construct custom spending conditions: timelocks and veto keys.
 
 #### Timelocks
 
 Timelocks use the passing of time to define additional rules for how funds can be spent from a wallet.
 
-- Unlock additional spending or recovery paths after a certain amount of time has passed.
+- Unlock additional spending or recovery condition after a certain amount of time has passed.
 - Restrict individual transactions to not be processed immediately but only at a certain point of time in the future (pre-signed transactions).
 
 #### Veto keys
 
-In a multi-key setup it is possible to define a hierarchy of keys. This means that you can define keys that are required in every transaction. This technique is sometimes also called a “sovereign veto”, as it grants a key holder the power to veto any transaction, even if the required amount of signatures would have been otherwise reached.
+In a multi-key setup it is possible to define a key hierarchy. This means that you can define keys that are required in every transaction. This technique is sometimes also called a “sovereign veto”, as it grants the holder of a certain key the power to veto any transaction, even if the required amount of signatures would have been otherwise reached.
 
 #### Powered by Miniscript
 
-Wallets that support these kinds of configurations typically rely on Miniscript to implement them. Miniscript is a simplified version of Bitcoin Script which helps to reduce the complexity of Bitcoin Script, the native programming language for Bitcoin. Miniscript is easier to read by developers, and also allows for various build-tools to help ensure that scripts are safe, valid, and efficient.
+Wallets that support these kinds of configurations typically rely on [Miniscript](/guide/glossary/#miniscript) to implement them. Miniscript is a simplified version of Bitcoin Script which helps to reduce the complexity of Bitcoin Script, the native programming language for Bitcoin. Miniscript is easier to read by developers, and also allows for various build-tools to help ensure that scripts are safe, valid, and efficient.
 
 ## Practical example
 
@@ -99,15 +98,15 @@ This wallet has three layers of spending conditions and uses relative timelocks 
 </div>
 
 
-One important thing to note is that the paths are additive. This means that, once unlocked, any given condition remains active even if additional one gets unlocked. In the above scenario, you can sign a transaction with two keys (condition 1) but also with any one key after six months (condition 2).
+One important thing to note is that the conditions are additive. This means that, once unlocked, any given condition remains active even if additional one gets unlocked. In the above scenario, you can sign a transaction with two keys (condition 1) but also with any one key after six months (condition 2).
 
 ## How it works
 
 ### Wallet creation and setup
 
-Similar to regular multi-key wallets, a software wallet application or coordination software initiates a multi-key wallet, choosing the number of total keys, and the number of keys required to sign transactions (called threshold). You then add public keys from other wallets generated elsewhere to the multisig after which the software wallet can complete the creation process. See the Multi-key wallet page for more information.
+Similar to regular multi-key wallets, a software wallet application or coordination software initiates a multi-key wallet, choosing the number of total keys, and the number of keys required to sign transactions (called threshold). You then add public keys from other wallets generated elsewhere to the multisig after which the software wallet can complete the creation process. Please refer to the [Multi-key](/guide/how-it-works/private-key-management/multi-key/) page for a more detailed overview about how multi-key wallets work.
 
-Notice that all paths need to be configured during wallet creation. Therefore, you will need to have all the public keys ready upfront. If you need to make any changes at a later point in time, you will need to create a new wallet with the desired configuration and move the funds to that wallet.
+Notice that all conditions need to be configured during wallet creation. Therefore, you will need to have all public keys ready upfront. If you need to make any changes at a later point in time, you will need to create a new wallet with the desired configuration and move the funds to that wallet.
 
 After the wallet has been created, it needs to be registered on all of the involved signing devices. To do this, you will need the wallet descriptor, which is basically the “map” of the wallet. Each signing device needs to import this map to be able to sign transactions. This process is specific to each signing device and works in the same way as with regular multi-key wallets.
 
@@ -117,7 +116,7 @@ Timelocks can be relative (e.g. “1 year after the wallet has been last used”
 
 ##### Relative timelocks
 
-An important aspect of timelocks is that they are applied to each unspent transaction output (UTXO) in the wallet individually, not to the wallet as a whole. If a wallet uses relative timelocks, this means that the timelocks expire at different times for each UTXO, based on the time and date on which they were deposited into the wallet.
+An important aspect of timelocks is that they are applied to each [unspent transaction output (UTXO)](/guide/glossary/#unspent-transaction-output-utxo) in the wallet individually, not to the wallet as a whole. If a wallet uses relative timelocks, this means that the timelocks expire at different times for each UTXO, based on the time and date on which they were deposited into the wallet.
 
 <div class="center" markdown="1">
 
@@ -126,7 +125,7 @@ An important aspect of timelocks is that they are applied to each unspent transa
    retina = "/assets/images/guide/how-it-works/custom-spending-conditions/uunlock-status@2x.png"
    mobile = "/assets/images/guide/how-it-works/custom-spending-conditions/unlock-status-mobile.png"
    mobileRetina = "/assets/images/guide/how-it-works/custom-spending-conditions/unlock-status-mobile@2x.png"
-   alt-text = "An illustration showing the unlocking scheme of the spending conditions."
+   alt-text = "An illustration showing the status of which spending conditions are available for each UTXO."
    width = 400
    height = 400
    layout = "float-right-desktop"
@@ -154,7 +153,7 @@ To reset a timelock or “refresh” a UTXO, you need to spend that UTXO. This c
 
 ### Flexibility vs. complexity
 
-Spending conditions based on Miniscript are composable. This means that you can create as many spending paths as you want. You can even have one of the keys in one wallet be a multi-key wallet itself. Or you can combine time locked spending paths with veto keys. However, these kinds of setups can become complex very quickly and should not be used in most personal setups or by users who are new to bitcoin.
+Spending conditions based on Miniscript are composable. This means that you can create as many spending conditions as you like. You can even have one of the keys in one wallet be a multi-key wallet itself. Or you can combine time locked spending conditions with veto keys. However, these kinds of setups can become complex very quickly and should not be used in most personal setups or by users who are new to bitcoin.
 
 ### Backups
 
@@ -191,12 +190,15 @@ In terms of securing the wallet, backing up the individual private keys is not e
 
 #### Do
 
-- Provide real-world examples or ready-made templates for common setups to help users choose and implement the right configuration for their needs.
-- Provide informational content to help users guide through the setup process and educate them about how to properly use a time-based wallet. They can be powerful tools to achieve very robust setups. However, with an increasing number of conditions, setups become complex very quickly, which might actually decrease their security.
-- Educate users that composing condition layers is only one aspect of their setup. Make them aware that they should think through the adjacent topics before implementing a specific scheme. These topics include aspects like the trust relationships with other users, key backups and wallet configuration backups. The more layers people use, the more complicated the entire setup gets.
-- If possible, provide a way to save unfinished wallet configurations during the setup process. As the creation process may involve many steps and/or users might not have all the necessary signing keys available, they would need to start from scratch at a different point in time, which could cause frustration.
-- Use Taproot in your product, as it adds many privacy benefits to the users, especially in a multi-sig context. First, using multi-sig on its own reduces the anonymity set. Taproot helps mitigate this aspect, because only the executed part is revealed on-chain. Second, spending conditions that are not used in a Taproot transaction are not revealed on-chain. This means that inactive keys or conditions cannot be detected through chain-surveillance tools. Third, Taproot transactions have a smaller on-chain footprint. Therefore, they are more economical.
+- **Provide real-world examples or templates** for common setups to help users choose and implement the right configuration for their needs.
+- **Provide informational content to help users guide through the setup process** and educate them about how to properly use a time-based wallet. They can be powerful tools to achieve very robust setups. However, with an increasing number of conditions, setups become complex very quickly, which might actually decrease their security.
+- **Educate users that composing condition layers is only one aspect of their setup.** Make them aware that they should think through the adjacent topics before implementing a specific scheme. These topics include aspects like the trust relationships with other users, key backups and wallet configuration backups. The more layers people use, the more complicated the entire setup gets.
+- **If possible, provide a way to save unfinished wallet configurations during the setup process.** As the creation process may involve many steps and/or users might not have all the necessary signing keys available, they would need to start from scratch at a different point in time, which could cause frustration.
+- **Use Taproot in your product**, as it adds many privacy benefits to the users, especially in a multi-sig context. First, using multi-sig on its own reduces the anonymity set. Taproot helps mitigate this aspect, because only the executed part is revealed on-chain. Second, spending conditions that are not used in a Taproot transaction are not revealed on-chain. This means that inactive keys or conditions cannot be detected through chain-surveillance tools. Third, Taproot transactions have a smaller on-chain footprint. Therefore, they are more economical.
 
+## Miniscript resources
+
+If you want to get into more detail about Miniscript, [Rob Hamilton](https://twitter.com/rob1ham) keeps a good list of resources in this [Google doc file](https://docs.google.com/document/d/1yWEvNRajwHYP6QAJQcnVjgpq5SEkS5wczibG_ICvEuc/edit?pli=1#heading=h.cv4kzykcgq0x).
 
 
 
