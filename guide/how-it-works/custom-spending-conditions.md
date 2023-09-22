@@ -122,7 +122,7 @@ An important aspect of timelocks is that they are applied to each [unspent trans
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/custom-spending-conditions/unlock-status.png"
-   retina = "/assets/images/guide/how-it-works/custom-spending-conditions/uunlock-status@2x.png"
+   retina = "/assets/images/guide/how-it-works/custom-spending-conditions/unlock-status@2x.png"
    mobile = "/assets/images/guide/how-it-works/custom-spending-conditions/unlock-status-mobile.png"
    mobileRetina = "/assets/images/guide/how-it-works/custom-spending-conditions/unlock-status-mobile@2x.png"
    alt-text = "An illustration showing the status of which spending conditions are available for each UTXO."
