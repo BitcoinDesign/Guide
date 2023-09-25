@@ -50,7 +50,7 @@ In a multi-key context, the recovery condition could require only one instead of
 
 #### Company treasuries
 
-Custom spending conditions can also be useful in an organizational context. Companies need to make sure that they retain access to funds even if one or more employees lose their keys, are compromised or try to obstruct the deployment of funds. Or they might want to implement company-specific processes for corporate spending. For example, they would want the CEO and CFO to always have to co-sign transactions over a specific amount. 
+Custom spending conditions can also be useful in an organizational context. Companies need to make sure that they retain access to funds even if one or more employees lose their keys, are compromised or try to obstruct the deployment of funds. Or they might want to implement company-specific processes for corporate spending. For example, they would want to create a rule that the CFO must sign transactions for treasury management. 
 
 
 ## Building blocks
@@ -61,7 +61,7 @@ There are currently two main building blocks that can help us construct custom s
 
 Timelocks use the passing of time to define additional rules for how funds can be spent from a wallet.
 
-- Unlock additional spending or recovery condition after a certain amount of time has passed.
+- Unlock additional spending conditions after a certain amount of time has passed.
 - Restrict individual transactions to not be processed immediately but only at a certain point of time in the future (pre-signed transactions).
 
 #### Veto keys
@@ -112,9 +112,11 @@ After the wallet has been created, it needs to be registered on all of the invol
 
 ### Timelocks
 
-Timelocks can be relative (e.g. “1 year after the wallet has been last used”) or absolute (e.g. “on January 3rd, 2024”). They can reach up to a maximum of 65535 blocks into the future, which is about 455 days.
+Timelocks can be relative (e.g. “1 year after the wallet has been last used”) or absolute (e.g. “on January 3rd, 2024”). 
 
 ##### Relative timelocks
+
+Relative timelocks can reach up to a maximum of 65535 blocks into the future, which is about 455 days. 
 
 An important aspect of timelocks is that they are applied to each [unspent transaction output (UTXO)](/guide/glossary/#unspent-transaction-output-utxo) in the wallet individually, not to the wallet as a whole. If a wallet uses relative timelocks, this means that the timelocks expire at different times for each UTXO, based on the time and date on which they were deposited into the wallet.
 
@@ -126,6 +128,7 @@ An important aspect of timelocks is that they are applied to each [unspent trans
    mobile = "/assets/images/guide/how-it-works/custom-spending-conditions/unlock-status-mobile.png"
    mobileRetina = "/assets/images/guide/how-it-works/custom-spending-conditions/unlock-status-mobile@2x.png"
    alt-text = "An illustration showing the status of which spending conditions are available for each UTXO."
+   caption = "Figure 2"
    width = 400
    height = 400
    layout = "float-right-desktop"
@@ -137,23 +140,30 @@ As you can see, we are actually dealing with three timelocks, rather than one.
 
 </div>
 
-Understanding the concept of UTXOs and having to manage one timelock per UTXO is likely to be counterintuitive for many users. It can also become increasingly cumbersome and potentially costly, if you have many UTXOs in the wallet. Therefore, wallet providers need to make sure to educate users about how this works and build robust processes and features that make it easy for them to understand and manage timelocks.
+{% include tip/open.html color="blue" icon="info" label="Educate users" %}
 
-#### Absolute timelocks
+Understanding the concept of UTXOs and having to manage one timelock per UTXO is likely to be counterintuitive for many users. It can also become increasingly cumbersome and potentially costly, if the wallet contains many UTXOs. Therefore, wallet providers need to make sure to educate users about how this works and build robust processes and features that make it easy for them to understand and manage timelocks.
 
-Absolute timelocks use a specific calendar date or block height as their reference point. Since timelocks are applied to each UTXO in the wallet, absolute timelocks have the advantage that they expire for all UTXOs in the wallet at the same time. This means that users only have to keep track of one deadline, which can make the management of the wallet easier and less demanding.
+{% include tip/close.html %}
 
-#### Resetting timelocks
-
-To reset a timelock or “refresh” a UTXO, you need to spend that UTXO. This can be achieved through a self-transfer to a new address within the same wallet. Wallet applications can make this process easy for users by implementing the corresponding functionality.
+**To reset a relative timelock or “refresh” a UTXO, you need to spend that UTXO.** This can be achieved through a self-transfer to a new address within the same wallet. Wallet applications can make this process easy for users by implementing the corresponding functionality.
 
 Note that an on-chain transaction is required to reset a timelock, along with the respective transaction fees. This can become costly if you have many UTXOs in the wallet. Therefore, it is recommended to consolidate smaller amounts into larger UTXOs in order to reduce the costs of resetting timelocks.
 
-To reset a timelock or “refresh” a UTXO, you need to spend that UTXO. This can be achieved through a self-transfer to a new address within the same wallet. Wallet applications can make this process easy for users by implementing the corresponding functionality. 
+#### Absolute timelocks
+
+Absolute timelocks use a specific calendar date or block height as their reference point. In contrast to relative timelocks, absolute timelocks can go out as far as you want (the technical limit is 500 million blocks). 
+
+Absolute timelocks apply the same timelock is for each UTXO in the wallet. This has the advantage that they expire for all UTXOs in the wallet at the same time. This means that users only have to keep track of one deadline, which can make the management of the wallet easier and less demanding.
+
+**Resetting an absolute timelock requires sending the funds to a brand new wallet,** because a self-transfer to the same wallet would re-apply the same absolute timelock to the newly created UTXO. If your product uses absolute timelocks, it is therefore recommended to provide features that help streamline this process for your users. 
+
 
 ### Flexibility vs. complexity
 
-Spending conditions based on Miniscript are composable. This means that you can create as many spending conditions as you like. You can even have one of the keys in one wallet be a multi-key wallet itself. Or you can combine time locked spending conditions with veto keys. However, these kinds of setups can become complex very quickly and should not be used in most personal setups or by users who are new to bitcoin.
+Spending conditions based on Miniscript are composable. This means that you can create as many spending conditions as you like. You can even have one of the keys in one wallet be a multi-key wallet itself. Or you can combine time locked spending conditions with veto keys. It is also possible to combine relative and absolute timelocks. 
+
+However, these kinds of setups can become complex very quickly and should not be used in most personal setups or by users who are new to bitcoin.
 
 ### Backups
 
