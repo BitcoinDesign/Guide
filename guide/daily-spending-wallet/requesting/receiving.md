@@ -12,7 +12,7 @@ redirect_from:
  - /guide/onboarding/funding-a-wallet/
  - /guide/daily-spending-wallet/receiving/
 main_classes: -no-top-padding
-image: /assets/images/guide/daily-spending-wallet/requesting/request-banner-preview(1200x630).jpg
+image: https://bitcoin.design/assets/assets/images/guide/daily-spending-wallet/receiving/receiving-bitcoin-preview.jpg
 image_base: /assets/images/guide/daily-spending-wallet/receiving/
 images_fail:
     - file: RefundOnChain
@@ -43,13 +43,13 @@ images_payment:
 ---
 
 {% include picture.html
-    image = "/assets/images/guide/daily-spending-wallet/requesting/request-banner(1600x600).png"
-    retina = "/assets/images/guide/daily-spending-wallet/requesting/request-banner(3200x1200).png"
-    mobile = "/assets/images/guide/daily-spending-wallet/requesting/request-banner(400x200).png"
-    mobileRetina = "/assets/images/guide/daily-spending-wallet/requesting/request-banner(800x400).png"
-    alt-text = "Text balloon containing a bitcoin."
+    image = "/assets/images/guide/daily-spending-wallet/receiving/receiving-bitcoin.jpg"
+    retina = "/assets/images/guide/daily-spending-wallet/receiving/receiving-bitcoin@2x.jpg"
+    mobile = "/assets/images/guide/daily-spending-wallet/receiving/receiving-bitcoin-mobile.jpg"
+    mobileRetina = "/assets/images/guide/daily-spending-wallet/receiving/receiving-bitcoin-mobile@2x.jpg"
+    alt-text = "Smartphone notification showing received bitcoin"
     width = 1600
-    height = 600
+    height = 550
     layout = "full-width"
 %}
 
@@ -57,6 +57,9 @@ images_payment:
 
 Source designs for all screens can be found in this Figma file:
 https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototype?node-id=4152%3A306968&t=boEAgdyqfi39SBoF-1
+
+And for the header illustration:
+https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?type=design&node-id=3438%3A4437&mode=design&t=DJV0Bj15I88Zu9ih-1
 
 -->
 
