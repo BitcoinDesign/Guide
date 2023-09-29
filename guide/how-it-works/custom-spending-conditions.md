@@ -154,7 +154,7 @@ Note that an on-chain transaction is required to reset a timelock, along with th
 
 Absolute timelocks use a specific calendar date or block height as their reference point. In contrast to relative timelocks, absolute timelocks can go out as far as you want (the technical limit is 500 million blocks). 
 
-Absolute timelocks apply the same timelock is for each UTXO in the wallet. This has the advantage that they expire for all UTXOs in the wallet at the same time. This means that users only have to keep track of one deadline, which can make the management of the wallet easier and less demanding.
+Absolute timelocks apply the same timelock for each UTXO in the wallet. This has the advantage that they expire for all UTXOs in the wallet at the same time. This means that users only have to keep track of one deadline, which can make the management of the wallet easier and less demanding.
 
 **Resetting an absolute timelock requires sending the funds to a brand new wallet,** because a self-transfer to the same wallet would re-apply the same absolute timelock to the newly created UTXO. If your product uses absolute timelocks, it is therefore recommended to provide features that help streamline this process for your users. 
 
