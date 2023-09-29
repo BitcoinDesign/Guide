@@ -36,7 +36,7 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 {:.no_toc}
 ---
 
-Spending conditions encode the rules that need to be followed by a wallet to spend funds. Most bitcoin wallets have only one spending condition. For example, in a single-key wallet there is only one key that can sign transactions. Or, in a 2-of-3 multi-key wallet, you need any two of the three keys to sign transactions.
+Spending conditions encode the rules that need to be followed by a wallet to spend funds. Most bitcoin wallets have only one spending condition. For example, in a single-key wallet there is only one key that can sign transactions. Whereas in a 2-of-3 multi-key wallet, you need any two of the three keys to sign transactions.
 
 In addition to these standard configurations it is also possible to create more flexible wallets by defining custom spending conditions. There is a wide variety of use cases, where this flexibility can be helpful, like personal or family self-custody, inheritance or company treasuries.
 
