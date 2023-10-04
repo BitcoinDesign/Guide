@@ -50,7 +50,7 @@ In a multi-key context, the recovery condition could require only one instead of
 
 #### Company treasuries
 
-Custom spending conditions can also be useful in an organizational context. Companies need to make sure that they retain access to funds even if one or more employees lose their keys, are compromised or try to obstruct the deployment of funds. Or they might want to implement company-specific processes for corporate spending. For example, they would want to create a rule that the CFO must sign transactions for treasury management. 
+Custom spending conditions can also be useful in an organizational context. Companies need to make sure that they retain access to funds even if one or more employees lose their keys. Not only that, employees could also be compromised by a third party or try to obstruct the deployment of funds for their own benefit. Another use case is that a company needs to implement company-specific processes for corporate spending. For example, they would want to create a rule that the CFO must sign transactions for treasury management. 
 
 
 ## Building blocks
