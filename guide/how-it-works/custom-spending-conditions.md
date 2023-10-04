@@ -44,7 +44,7 @@ In addition to these standard configurations it is also possible to create more 
 
 #### Self-custody
 
-Custom spending conditions can be helpful to decrease the risk of losing funds in personal self-custody context. In a savings wallet context where you are the only key holder, you could unlock a recovery spending condition after a certain time of wallet inactivity. This condition could contain an additional key held in a different location. Such a setup does not decrease the wallet security, because the second key is locked under normal circumstances of using the wallet. 
+Custom spending conditions can be helpful to decrease the risk of losing funds in personal self-custody context. Let's say that you have a wallet that you use regularly on a weekly basis. You could unlock a recovery spending condition automatically if that wallet has not been used for more than six months, because it's likely that you have lost access to your primary key. The recovery condition could contain an additional key held in a different location. Such a setup does not decrease the wallet security, because the second key is locked under normal circumstances of using the wallet. 
 
 In a multi-key context, the recovery condition could require only one instead of two keys to spend funds after 6 months of inactivity. This will help mitigate the risk of loss of funds in case one key holder loses a key.
 
