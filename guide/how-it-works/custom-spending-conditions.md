@@ -98,7 +98,7 @@ This wallet has three layers of spending conditions and uses relative timelocks 
 </div>
 
 
-One important thing to note is that the conditions are additive. This means that, once unlocked, any given condition remains active even if additional one gets unlocked. In the above scenario, you can sign a transaction with two keys (condition 1) but also with any one key after six months (condition 2).
+One important thing to note is that, once unlocked, spending conditions always remain active even if additional ones get unlocked. In the above scenario, you can sign a transaction with two keys (condition 1) but also with any one key after six months (condition 2).
 
 ## How it works
 
