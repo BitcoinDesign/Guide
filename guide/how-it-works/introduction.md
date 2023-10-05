@@ -94,7 +94,7 @@ Documentation of an interface pattern for letting users choose which external wa
 
 ### [Custom Spending Conditions]({{ '/guide/how-it-works/custom-spending-conditions' | relative_url }})
 
-Overview about advanced    capabilities that enable users to create more flexible bitcoin wallets.
+Overview about advanced capabilities that enable users to create more flexible bitcoin wallets.
 
 ---
 
