@@ -32,7 +32,7 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 %}
 
 
-# Custom Spending Conditions
+# Custom spending conditions
 {:.no_toc}
 ---
 
