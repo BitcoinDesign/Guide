@@ -25,6 +25,8 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 {% include picture.html
    image = "assets/images/guide/how-it-works/custom-spending-conditions/header.jpg"
    retina = "assets/images/guide/how-it-works/custom-spending-conditions/header@2x.jpg"
+   mobile = "assets/images/guide/how-it-works/custom-spending-conditions/header-mobile.jpg"
+   mobileRetina = "assets/images/guide/how-it-works/custom-spending-conditions/header-mobile@2x.jpg"
    alt-text = ""
    width = 1600
    height = 800
@@ -204,7 +206,7 @@ In terms of securing the wallet, backing up the individual private keys is not e
 - **Provide informational content to help users guide through the setup process** and educate them about how to properly use a time-based wallet. They can be powerful tools to achieve very robust setups. However, with an increasing number of conditions, setups become complex very quickly, which might actually decrease their security.
 - **Educate users that composing condition layers is only one aspect of their setup.** Make them aware that they should think through the adjacent topics before implementing a specific scheme. These topics include aspects like the trust relationships with other users, key backups and wallet configuration backups. The more layers people use, the more complicated the entire setup gets.
 - **If possible, provide a way to save unfinished wallet configurations during the setup process.** As the creation process may involve many steps and/or users might not have all the necessary signing keys available, they would need to start from scratch at a different point in time, which could cause frustration.
-- **Use Taproot in your product**, as it adds many privacy benefits to the users, especially in a multi-key context. First, using multi-key on its own reduces the anonymity set. Taproot helps mitigate this aspect, because only the executed part is revealed on-chain. Second, spending conditions that are not used in a Taproot transaction are not revealed on-chain. This means that inactive keys or conditions cannot be detected through chain-surveillance tools. Third, Taproot transactions have a smaller on-chain footprint. Therefore, they are more economical.
+- **Use [Taproot](https://bitcoin.design/guide/glossary/#taproot) in your product**, as it adds many privacy benefits to the users, especially in a multi-key context. First, using multi-key on its own reduces the anonymity set. Taproot helps mitigate this aspect, because only the executed part is revealed on-chain. Second, spending conditions that are not used in a Taproot transaction are not revealed on-chain. This means that inactive keys or conditions cannot be detected through chain-surveillance tools. Third, Taproot transactions have a smaller on-chain footprint. Therefore, they are more economical.
 
 ## Miniscript resources
 
