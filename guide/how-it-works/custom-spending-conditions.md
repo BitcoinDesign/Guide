@@ -219,8 +219,8 @@ If you want to get into more detail about Miniscript, [Rob Hamilton](https://twi
 Next, view the [case studies]({{ '/guide/case-studies/' | relative_url }}) that can help you build better bitcoin products.
 
 {% include next-previous.html
-   previousUrl = "/guide/how-it-works/sign-in-with-bitcoin/"
-   previousName = "Sign in with bitcoin"
+   previousUrl = "/guide/how-it-works/wallet-selector/"
+   previousName = "Wallet selector"
    nextUrl = "/guide/case-studies/"
    nextName = "Case studies"
 %}
