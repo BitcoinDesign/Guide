@@ -20,6 +20,20 @@ projects:
       - name: How to contribute
         link: https://bitcoin.design/guide/contribute/
 
+  - name: Bitcoin UI Kit
+    description: A complete design system to serve as a foundation for wallet concepts, prototypes and application development.
+    image:
+      url: /assets/images/contribute/bitcoin-ui-kit.svg
+      width: 75
+      height: 75
+    links:
+      - name: Site
+        link: https://bitcoinuikit.com
+      - name: Figma
+        link: https://www.figma.com/community/file/916680391812923706/Bitcoin-Wallet-UI-Kit-(work-in-progress)
+      - name: Github
+        link: https://github.com/GBKS/bitcoin-wallet-ui-kit
+
   - name: Bitcoin Icon set
     description: Icons for typical needs of bitcoin applications. Includes common generic icons like arrows, and more unique ones like a wallet, keys, mining, and bitcoin symbols.
     image:
@@ -34,19 +48,15 @@ projects:
       - name: Github
         link: https://github.com/BitcoinDesign/Bitcoin-Icons
 
-  - name: Bitcoin UI Kit
-    description: A complete design system to serve as a foundation for wallet concepts, prototypes and application development.
+  - name: Bitcoin UX Research Toolkit
+    description: Build human-centric bitcoin products for everyone with this practical guide and toolbox for user research.
     image:
-      url: /assets/images/contribute/bitcoin-ui-kit.svg
+      url: /assets/images/contribute/research-kit.svg
       width: 75
       height: 75
     links:
       - name: Site
-        link: https://bitcoinuikit.com
-      - name: Figma
-        link: https://www.figma.com/community/file/916680391812923706/Bitcoin-Wallet-UI-Kit-(work-in-progress)
-      - name: Github
-        link: https://github.com/GBKS/bitcoin-wallet-ui-kit
+        link: https://bitcoinresearch.xyz
 
   - name: When Taproot
     description: Promote broader adoption of Taproot.
