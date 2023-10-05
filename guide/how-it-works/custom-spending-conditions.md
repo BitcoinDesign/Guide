@@ -72,7 +72,7 @@ In a multi-key setup it is possible to define a key hierarchy. This means that y
 
 #### Powered by Miniscript
 
-Wallets that support these kinds of configurations typically rely on [Miniscript](/guide/glossary/#miniscript) to implement them. Miniscript is a simplified version of Bitcoin Script which helps to reduce the complexity of Bitcoin Script, the native programming language for Bitcoin. Miniscript is easier to read by developers, and also allows for various build-tools to help ensure that scripts are safe, valid, and efficient.
+You can achieve all of these configuration with regular Bitcoin Script, the native programming language for Bitcoin. However, wallets that support these more complex kinds of configurations typically rely on [Miniscript](/guide/glossary/#miniscript) for implementation. Miniscript is a simplified version of Bitcoin Script which helps to reduce the complexity of Bitcoin Script. It is easier to read by developers and allows for various build-tools to help ensure that scripts are safe, valid, and efficient.
 
 ## Practical example
 
@@ -106,11 +106,11 @@ One important thing to note is that, once unlocked, spending conditions always r
 
 ### Wallet creation and setup
 
-Similar to regular multi-key wallets, a software wallet application or coordination software initiates a multi-key wallet, choosing the number of total keys, and the number of keys required to sign transactions (called threshold). You then add public keys from other wallets generated elsewhere to the multisig after which the software wallet can complete the creation process. Please refer to the [Multi-key](/guide/how-it-works/private-key-management/multi-key/) page for a more detailed overview about how multi-key wallets work.
+Similar to regular multi-key wallets, a software wallet application or coordination software initiates a multi-key wallet, choosing the number of total keys, and the number of keys required to sign transactions (called threshold). You then add [extended public keys](https://bitcoin.design/guide/glossary/#extended-public-key-xpub-ypub-zpub) (XPUBs) from other wallets generated elsewhere to the multisig after which the software wallet can complete the creation process. Please refer to the [Multi-key](/guide/how-it-works/private-key-management/multi-key/) page for a more detailed overview about how multi-key wallets work.
 
-Notice that all conditions need to be configured during wallet creation. Therefore, you will need to have all public keys ready upfront. If you need to make any changes at a later point in time, you will need to create a new wallet with the desired configuration and move the funds to that wallet.
+Notice that all conditions need to be configured during wallet creation. Therefore, you will need to have all XPUBs ready upfront. If you need to make any changes at a later point in time, you will need to create a new wallet with the desired configuration and move the funds to that wallet.
 
-After the wallet has been created, it needs to be registered on all of the involved signing devices. To do this, you will need the wallet descriptor, which is basically the “map” of the wallet. Each signing device needs to import this map to be able to sign transactions. This process is specific to each signing device and works in the same way as with regular multi-key wallets.
+After the wallet has been created, it needs to be registered on all of the involved signing devices. To do this, you will need the [wallet descriptor](https://bitcoin.design/guide/glossary/#output-script-descriptor), which is basically the “map” of the wallet. Each signing device needs to import this map to be able to sign transactions. This process is specific to each signing device and works in the same way as with regular multi-key wallets.
 
 ### Timelocks
 
@@ -136,7 +136,7 @@ An important aspect of timelocks is that they are applied to each [unspent trans
    layout = "float-right-desktop"
 %}
 
-Let’s have a look at a concrete example. Figure 2 shows a wallet that contains three UTXOs with a total value of 0,40 BTC. The first UTXO of 0,10 BTC was received well ahead of the other two. And since it was not spent for six months, the recovery condition was unlocked. The emergency condition will unlock very soon, if the UTXO is not spent. 
+Let’s have a look at a concrete example. This image shows a wallet that contains three UTXOs with a total value of 0,40 BTC. The first UTXO of 0,10 BTC was received well ahead of the other two. And since it was not spent for six months, the recovery condition was unlocked. The emergency condition will unlock very soon, if the UTXO is not spent. 
 
 As you can see, we are actually dealing with three timelocks, rather than one.
 
