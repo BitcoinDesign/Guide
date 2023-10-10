@@ -6,7 +6,7 @@ nav_order: 8
 last_reference_design: true
 permalink: /guide/multiple-wallets/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/multiple-wallets/multiple-wallets-preview.jpg
+image: https://bitcoin.design/assets/images/guide/multiple-wallets/multi-wallet-preview.jpg
 image_base: /assets/images/guide/multiple-wallets/
 images_unified:
     - file: activity-unified
@@ -53,10 +53,10 @@ Illustration sources
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/multiple-wallets/multiple-wallets-header.jpg"
-   retina = "/assets/images/guide/multiple-wallets/multiple-wallets-header@2x.jpg"
-   mobile = "/assets/images/guide/multiple-wallets/multiple-wallets-header-mobile.jpg"
-   mobileRetina = "/assets/images/guide/multiple-wallets/multiple-wallets-header-mobile@2x.jpg"
+   image = "/assets/images/guide/multiple-wallets/multi-wallet.jpg"
+   retina = "/assets/images/guide/multiple-wallets/multi-wallet@2x.jpg"
+   mobile = "/assets/images/guide/multiple-wallets/multi-wallet-mobile.jpg"
+   mobileRetina = "/assets/images/guide/multiple-wallets/multi-wallet-mobile@2x.jpg"
    alt-text = ""
    width = 1600
    height = 600
