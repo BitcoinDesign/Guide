@@ -1,12 +1,11 @@
 ---
 layout: guide
 title: Code resources
-description: Bitcoin Design Guide related code resources.
+description: Bitcoin Design Guide code resources.
 nav_order: 4
 parent: Resources
 permalink: /guide/resources/code-resources/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/resources/design-research/user-research-resources-preview.jpg
 ---
 
 <!--
@@ -38,10 +37,6 @@ Several different projects are building on the reference designs from the guide.
 [Etta Wallet](https://github.com/EttaWallet/EttaWallet) is a resource for experimenting with non-custodial lightning with a strong bias towards usability, accessibility and good UX. Built with React Native.
 The project is strongly inspired by the [daily spending wallet]('/guide/daily-spending-wallet/').
 
-### BDG (Bitcoin Design Guide) wallet
-
-The [BDG Wallet](https://github.com/bdgwallet) is a work in process project for implementing the reference designs from the guide in Swift and Flutter.
-
 ### Monday wallet
 
 The [Monday wallet](https://github.com/reez/Monday) is an example iOS app using LDK Node.
@@ -49,6 +44,10 @@ The [Monday wallet](https://github.com/reez/Monday) is an example iOS app using 
 ### BDK Swift example wallet
 
 The [BDK Swift example wallet](https://github.com/reez/BDKSwiftExampleWallet) is an iOS app using BDK.
+
+### BDG (Bitcoin Design Guide) wallet
+
+The [BDG Wallet](https://github.com/bdgwallet) is a work in process project for implementing the reference designs from the guide in Swift and Flutter.
 
 ---
 
