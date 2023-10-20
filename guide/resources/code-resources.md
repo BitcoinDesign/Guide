@@ -17,17 +17,6 @@ Illustration source:
 
 -->
 
-{% include picture.html
-   image = "/assets/images/guide/resources/design-research/user-research-resources.jpg"
-   retina = "/assets/images/guide/resources/design-research/user-research-resources@2x.jpg"
-   mobile = "/assets/images/guide/resources/design-research/user-research-resources-mobile.jpg"
-   mobileRetina = "/assets/images/guide/resources/design-research/user-research-resources-mobile@2x.jpg"
-   alt-text = "Printed bitcoin survey results on a desk"
-   width = 1600
-   height = 600
-   layout = "full-width"
-%}
-
 # Code resources
 
 Although mostly focused on design, some members of the community also have their hands in various code resources that are based on, or influenced by the Bitcoin Design Guide. They are all open source and free to use, modify and contribute to.
