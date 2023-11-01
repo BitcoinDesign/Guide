@@ -8,54 +8,81 @@ permalink: /guide/multiple-wallets/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/multiple-wallets/multi-wallet-preview.jpg
 image_base: /assets/images/guide/multiple-wallets/
+images_custom_backup:
+    - file: customize-backup
+      modalImage: customize-backup-big
+      alt: Screen showing intro copy for setting up a new savings wallets.
+      caption: Provide clear guidance when setting up new wallets for users.
+    - file: customize-backup-expanded
+      modalImage: customize-backup-expanded-big
+      alt: A modal explaining when customizing backups is a good idea.
+      caption: Allow customization and help users make informed decisions.
 images_payments:
     - file: payments
-      alt:
-      caption:
+      modalImage: payments-big
+      alt: Payments screen with amount input
+      caption: The currently selected wallet is clearly indicated.
     - file: payments-picker
-      alt:
-      caption:
+      modalImage: payments-picker-big
+      alt: Wallet payments screen with expanded list wallet of wallets
+      caption: The wallet selector modal for quickly switching context.
 images_activity:
     - file: activity
-      alt:
-      caption:
+      modalImage: activity-big
+      alt: Activity screen with indicator for the current wallet
+      caption: The activity screen also includes a wallet switcher.
     - file: activity-multi-select
-      alt:
-      caption:
+      modalImage: activity-multi-select-big
+      alt: Wallet selector overlay with two selected wallets
+      caption: Multiple wallets can be selected.
     - file: activity-search
-      alt:
-      caption:
+      modalImage: activity-search-big
+      alt: Activity search, filtered by two wallets
+      caption: Search also allows for multi-wallet selection.
+images_transfer:
+    - file: transfer
+      modalImage: transfer-big
+      alt: Payment screen showing funds being sent to another of the users wallets
+      caption: Sending to another user-owned wallets makes it a transfer.
+    - file: transfer-pick-wallet
+      modalImage: transfer-pick-wallet-big
+      alt: Contact list including other wallets managed in the application
+      caption: Choosing a payment destination also lists other wallets as options.
+images_receive:
+    - file: payment-request
+      modalImage: payment-request-big
+      alt: Payment request screen with a wallet indicator
+      caption: Payment requests indicate the selected wallet.
+    - file: notification
+      modalImage: notification-big
+      alt: Lock screen with a payment notification that includes the wallet name
+      caption: Notifications include the wallet funds were received to.
+    - file: receive-in-app
+      modalImage: receive-in-app-big
+      alt: Payments screen with notification for an incoming transaction on an inactive wallet
+      caption: In-app notifications also include cross-wallet receipts.
+images_archive:
+    - file: archive
+      modalImage: archive-big
+      alt: Screen for confirming archival of a wallet
+      caption: Archival and fund migration confirmation screen.
+    - file: archive-receive
+      modalImage: archive-receive-big
+      alt: Screen showing receipt of funds to an archived wallet
+      caption: Users are notified when receiving funds to an archived wallet.
 images_visuals:
     - file: visual-horizontal-cards
+      modalImage: visual-horizontal-cards-big
       alt:
       caption: Rectangular cards that are also used to switch wallets.
     - file: visual-card-screen
+      modalImage: visual-card-screen-big
       alt:
       caption: Square cards are more compact. Note the indicators of layer and wallet type.
     - file: visual-customization
+      modalImage: visual-customization-big
       alt:
       caption: Some wallets allow for customizing each wallets visual for personalization.
-images_receive:
-    - file: notification
-      alt:
-      caption:
-    - file: receive-in-app
-      alt:
-      caption:
-images_transfer:
-    - file: transfer
-      alt:
-      caption:
-    - file: transfer-pick-wallet
-      alt:
-      caption:
-images_archive:
-    - file: archive
-      alt:
-      caption:
-    - file: archive-receive
-      alt:
-      caption:
 ---
 
 <!--
@@ -74,7 +101,7 @@ Illustration sources
    retina = "/assets/images/guide/multiple-wallets/multi-wallet@2x.jpg"
    mobile = "/assets/images/guide/multiple-wallets/multi-wallet-mobile.jpg"
    mobileRetina = "/assets/images/guide/multiple-wallets/multi-wallet-mobile@2x.jpg"
-   alt-text = ""
+   alt-text = "Several tacks of leather wallets on a wooden table"
    width = 1600
    height = 600
    layout = "full-width"
@@ -97,13 +124,14 @@ Illustration sources
    image = "/assets/images/guide/multiple-wallets/sample.png"
    retina = "/assets/images/guide/multiple-wallets/sample@2x.png"
    modalImage = "/assets/images/guide/multiple-wallets/sample-big.png"
-   alt-text = ""
+   alt-text = "Wallet payments screen with expanded list wallet of wallets"
+   caption = "The wallet selector modal for quickly switching context."
    width = 250
    height = 541
    layout = "float-right-desktop -background -shadow"
 %}
 
-Bitcoin applications may want to offer their users the ability to actively manage multiple wallets. We will look at a scenario about a user with a partner and child, where all family funds are managed in bitcoin. Family funds are split up, to better suit different use cases and ownership dynamics, and separately managed within the same application.
+Bitcoin applications may want to offer their users the ability to actively manage multiple wallets. To guide this reference design, we will look at a scenario of a user who has a partner and child, with all family funds being held in bitcoin. The funds are split up across multiple wallets based on different use cases, security needs, and ownership dynamics. However, all wallets are managed in the same application.
 
 Let's assume the user has the following wallets set up:
 
@@ -121,21 +149,22 @@ Let's assume the user has the following wallets set up:
 
 </div>
 
-Other scenarios for separate wallets could include additional layers like Ecash, or features like separate stablecoins balances.
+Other scenarios for separate wallets could include additional layers like Ecash, or features like separate stablecoins balances. Unless you are intentionally designing a general-purpose application, try to design with specific use cases in mind that you can derive decisions from.
 
-## Separate, with overlap
+## Degrees of separation
 
-A big part of constructing a multi-wallet application are considerations around separating or combining elements across wallets. This should be strongly informed by your [target audience]({{ '/guide/designing-products/user-personas/' | relative_url }}) and their [use cases]({{ '/guide/designing-products/personal-finance/' | relative_url }}).
+A big part of constructing a multi-wallet application are considerations around separating or combining elements across wallets. Again, this should be strongly informed by your [target audience]({{ '/guide/designing-products/user-personas/' | relative_url }}) and their [use cases]({{ '/guide/designing-products/personal-finance/' | relative_url }}).
 
 The [daily spending wallet]({{ '/guide/daily-spending-wallet/' | relative_url }}) is optimized for lightning payments by a single user. This focus leads us to decisions like a unified balance and automated swaps of incoming onchain funds to the lightning network.
 
-In our application, we optimize for users who want to (or need to) explicitly split up funds and manage them separately. This leads us to:
+In this reference design, we optimize for users who want to (or need to) explicitly split up funds and manage them separately. This leads us to:
 
+- Different combinations of keys per wallet
 - Separate balances and activity lists per wallet
 - Wallet-specific settings
 - Wallet switchers, conveniently placed
 
-However, we guide users towards using a single, primary private key to construct several wallets, which simplifies the backup process. This is acceptable from a security perspective, because the wallets with larger amounts are either view-only (keys are external), or additionally protected by requiring multiple signatures (from the partner, hardware wallet, or assisted custody provider respectively). Remember to guide users during wallet setup towards best practices around [progressive security]({{ '/guide/getting-started/principles/#security' | relative_url }}).
+However, we guide users towards using a single, primary private key to construct several wallets. This simplifies the [backup process]({{ '/guide/how-it-works/backups/' | relative_url }}) to reduce the risk of loss of wallet. This is acceptable from a security perspective, because the wallets with larger amounts are either view-only (keys are external), or additionally protected by requiring multiple signatures (from the partner, hardware wallet, or assisted custody provider respectively).
 
 {% include picture.html
    image = "/assets/images/guide/multiple-wallets/key-distribution.png"
@@ -145,23 +174,27 @@ However, we guide users towards using a single, primary private key to construct
    height = 398
 %}
 
-We also keep a single [contact book]({{ '/guide/daily-spending-wallet/contacts/' | relative_url }}) across wallets. And for balance and transactions, we default to separate views by default, with the option for a unified view.
+Remember to guide users during wallet setup towards best practices around [progressive security]({{ '/guide/getting-started/principles/#security' | relative_url }}). Even with strong guidance, you often still want to allow users to deviate, to accomodate their unique use case and context.
 
-Certain aspects of the application need to be flexible. For example, when a user scans a QR code of an invoice, an appropriate wallet can be automatically chosen. But this might not match the user intent, so they should be able to easily switch.
+{% include image-gallery.html pages = page.images_custom_backup %}
 
-Let's look at the most important screens and user flows.
+We also keep a single [contact book]({{ '/guide/daily-spending-wallet/contacts/' | relative_url }}) across wallets. And for balance and transactions, we default to separate views by default, with the option for a unified view. More on that below.
+
+Certain aspects of the application need to be flexible. For example, when a user scans a [QR code]({{ '/guide/daily-spending-wallet/requesting/#qr-code' | relative_url }}) of an invoice, an appropriate wallet can be automatically chosen. But this might not match the user intent, so they should be able to easily switch.
+
+Let's take a closer look at some of the important screens and user flows.
 
 ## Payments screen
 
-Compared to the [daily spending wallet]({{ '/guide/daily-spending-wallet/' | relative_url }}), the only addition to the payments screen is an indicator for the currently selected wallet, right above the amount input. This indicator also functions as a button to expand the wallet selector modal.
+Compared to the [daily spending wallet]({{ '/guide/daily-spending-wallet/requesting/#requesting-entry-point' | relative_url }}), the only addition to the payments screen is an indicator for the currently selected wallet, right above the amount input. This indicator also functions as a button to expand the wallet selector modal.
 
-The modal lists all available wallets, along with their balance. The balance for the inheritance wallet is not visible, since the user has set up a separate PIN for it. They are concerned about accidentally exposing this information to bystanders.
+The modal lists all available wallets, along with their balances. In our scenario, the balance of the inheritance wallet is not visible, since the user has set up a [separate PIN]({{ '/guide/daily-spending-wallet/privacy/#entering-a-pin-to-reveal-information' | relative_url }}) for it. They are concerned about accidentally exposing this information to bystanders.
 
 {% include image-gallery.html pages = page.images_payments %}
 
 ## Balance & activity
 
-Balance and activity list by default only show information from the currently selected wallet. A wallet switcher is available again right above the balance. This switcher includes the option to select multiple (or all) wallets, so users can more easily get an overview of all their funds. This selection carries through to the search functionality.
+By default, balance and [activity]({{ '/guide/daily-spending-wallet/activity/' | relative_url }}) only include information from the currently selected wallet. A wallet switcher is available again right above the balance. This switcher includes the option to select multiple (or all) wallets, so users can more easily get an overview of all their funds. This selection carries through to the search functionality.
 
 {% include image-gallery.html pages = page.images_activity %}
 
@@ -173,16 +206,18 @@ Balance and activity list by default only show information from the currently se
    image = "/assets/images/guide/multiple-wallets/send.png"
    retina = "/assets/images/guide/multiple-wallets/send@2x.png"
    modalImage = "/assets/images/guide/multiple-wallets/send-big.png"
-   alt-text = ""
-   caption = ""
+   alt-text = "Send screen with a wallet selector option"
+   caption = "Users can choose which wallet to send from"
    width = 250
    height = 541
    layout = "float-right-desktop -background -shadow"
 %}
 
-A wallet indicator and switcher in the send flow is a necessity to keep users informed about which funds will be transferred. Applications may automatically switch wallets to match given payment information. For example, if the user selects a contact that only has a lightning address, the application should switch to the lightning wallet.
+A wallet indicator and switcher in the [send flow]({{ '/guide/daily-spending-wallet/sending/' | relative_url }}) is a necessity to keep users informed about which funds will be transferred. Applications may automatically switch wallets to match given payment information. For example, if the user selects a contact that only has a lightning address, the application should switch to the lightning wallet.
 
 Users should be able to easily override these if they want to act differently based on their current needs and goals. For example, an application may decide that the on-chain wallet is most appropriate for a payment because the lightning wallet is low on liquidity. But the user might be in a rush and prefers to use lightning even if it means paying a swap fee for the additional liquidity.
+
+Note that it is not possible in this design to transfer funds from multiple wallets at once.
 
 </div>
 
@@ -190,13 +225,13 @@ Users should be able to easily override these if they want to act differently ba
 
 In addition to the new "from" selector, the "to" field also needs to be become more flexible to allow for transfers.
 
-Transfers between wallets on different layers include additional complexity and may require either an involved manual process, or use of a third party service (like a [lightning service provider]({{ '/guide/how-it-works/lightning-services/' | relative_url }})).
+Transfers between wallets on different layers include additional complexity and may require either an involved manual process, or use of a third-party service (like a [lightning service provider]({{ '/guide/how-it-works/lightning-services/' | relative_url }})).
 
 {% include image-gallery.html pages = page.images_transfer %}
 
 ## Receiving
 
-When receiving bitcoin, ensure users can easily see which wallet the payment was received to, and navigate there.
+Payment requests the user shares include the currently selected wallet as well. And when receiving bitcoin, ensure users can easily see which wallet the payment was received to, and navigate there with a tap.
 
 {% include image-gallery.html pages = page.images_receive %}
 
@@ -208,14 +243,14 @@ When receiving bitcoin, ensure users can easily see which wallet the payment was
    image = "/assets/images/guide/multiple-wallets/settings.png"
    retina = "/assets/images/guide/multiple-wallets/settings@2x.png"
    modalImage = "/assets/images/guide/multiple-wallets/settings-big.png"
-   alt-text = ""
-   caption = ""
+   alt-text = "A settings screen with a list of wallets at the top"
+   caption = "Application and wallet-specific settings are clearly separated."
    width = 250
    height = 541
    layout = "float-right-desktop -background -shadow"
 %}
 
-Settings are organized into application-wide settings and wallet-specific settings.
+[Settings]({{ '/guide/daily-spending-wallet/settings/' | relative_url }}) are organized into application-wide settings and wallet-specific settings.
 
 A user may choose different security options across wallets, for example, to reduce friction for small lightning payments, and better security for wallets that store larger amounts.
 
