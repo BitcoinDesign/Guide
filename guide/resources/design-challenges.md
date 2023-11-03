@@ -72,7 +72,7 @@ It is completely up to you to decide how you want to go about each challenge. If
 - What requirements and assumptions do you have in mind for your design? What are the design tradeoffs you’re making, and why?
 - Communicate the design and thought process. The methodology and workflow is as important as the finished product.
 - Bring in your own personal touch. Find a way to make your challenge unique.
-If you’d like, share your challenge with the community, we’re always curious to see new approaches.
+  If you’d like, share your challenge with the community, we’re always curious to see new approaches.
 
 ## General resources
 
@@ -89,6 +89,6 @@ Now let's look at how to [contribute to the guide]({{ '/guide/contribute/' | rel
 {% include next-previous.html
    previousUrl = "/guide/resources/design-research/"
    previousName = "Design research"
-   nextUrl = "/guide/contribute/"
-   nextName = "Contribute to guide"
+   nextUrl = "/guide/resources/code-resources/"
+   nextName = "Code resources"
 %}
