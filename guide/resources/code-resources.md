@@ -20,13 +20,17 @@ Illustration source:
 
 Although mostly focused on design, some members of the community also have their hands in various code resources that are based on, or influenced by the Bitcoin Design Guide. They are all open source and free to use, modify and contribute to.
 
-## Bitcoin UI Kit packages
+## Bitcoin UI Kit
 
 The [Bitcoin UI Kit](https://www.bitcoinuikit.com) is a great resource for designing bitcoin products. While the main effort is on the design components and design source files, there are a couple of code implementations by community members that make adopting the designs in the guide much easier.
 
 - Bitcoin UI for [Swift](https://github.com/reez/WalletUI)
 - Bitcoin UI for [Flutter](https://github.com/bdgwallet/bitcoinui-flutter)
 - Bitcoin UI for [React Native](https://github.com/EttaWallet/etta-ui) (Etta UI)
+
+## Bitcoin Icons
+
+The [Bitcoin Icons](https://bitcoinicons.com) project is a handy way to include commonly needed icons for bitcoin products. There are a number of code implementations for Node, React and Vue over on the [Github page](https://github.com/BitcoinDesign/Bitcoin-Icons).
 
 ## Wallet implementations
 
