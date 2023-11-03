@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Code resources
-description: Bitcoin Design Guide code resources.
+description: Code implementations of reference designs and other resources from the Bitcoin Design Guide, created by the community.
 nav_order: 4
 parent: Resources
 permalink: /guide/resources/code-resources/
