@@ -8,6 +8,23 @@ permalink: /guide/multiple-wallets/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/multiple-wallets/multi-wallet-preview.jpg
 image_base: /assets/images/guide/multiple-wallets/
+images_setup:
+    - file: setup-1-create-or-import
+      modalImage: setup-1-create-or-import-big
+      alt: Option screen for choosing to create or import a wallet
+      caption: Each option takes the user down a different path.
+    - file: setup-2-amount
+      modalImage: setup-2-amount-big
+      alt: Screen for choosing whether the user wants to store small, medium or large amounts
+      caption: The amount to store impacts recommendations on the number of keys.
+    - file: setup-3-ownership
+      modalImage: setup-3-ownership-big
+      alt: Screen for choosing a single or multiple wallet owners
+      caption: Users can choose a shared model where custody is split across several people.
+    - file: setup-4-recommendation
+      modalImage: setup-4-recommendation-big
+      alt: Screen showing a wallet recommendation
+      caption: Based on previous choices, a wallet configuration is provided.
 images_custom_backup:
     - file: customize-backup
       modalImage: customize-backup-big
@@ -150,6 +167,10 @@ Let's assume the user has the following wallets set up:
 </div>
 
 Other scenarios for separate wallets could include additional layers like Ecash, or features like separate stablecoins balances. Unless you are intentionally designing a general-purpose application, try to design with specific use cases in mind that you can derive decisions from.
+
+Whichever types of wallets you decide to include in your product, try to guide users towards ones that best fit their needs. Below is an in-complete example for structuring a series of questions that result in a recommended wallet configuration. Users still have the option to adjust before committing.
+
+{% include image-gallery.html pages = page.images_setup %}
 
 ## Degrees of separation
 
