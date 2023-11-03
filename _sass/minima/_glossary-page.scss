@@ -14,7 +14,7 @@
                 color: rgba(var(--front), 0.72);
 
                 &:hover {
-                    color: $primary-color;
+                    color: var(--primary-color);
                     text-decoration: none;
                 }
             }

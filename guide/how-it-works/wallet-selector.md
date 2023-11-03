@@ -164,6 +164,6 @@ Next, view the [case studies]({{ '/guide/case-studies/' | relative_url }}) that 
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/sign-in-with-bitcoin/"
    previousName = "Sign in with bitcoin"
-   nextUrl = "/guide/case-studies/"
-   nextName = "Case studies"
+   nextUrl = "/guide/how-it-works/custom-spending-conditions"
+   nextName = "Custom Spending Conditions"
 %}

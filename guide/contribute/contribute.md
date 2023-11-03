@@ -102,7 +102,11 @@ Creating visuals for the Bitcoin Design Guide? We recommend following these best
 Layout and formatting options from headers and blockquotes to images and embeds.
 
 ---
+### [Case studies]({{ '/guide/contribute/case-studies/' | relative_url }})
 
+Tips and tricks on how to share your design or research process in the form of a case study.
+
+---
 These contribution guidelines are for the Bitcoin Design Guide project. To get involved with the broader Bitcoin Design Community and projects, check out [general contribution guidelines]({{ '/contribute/' | relative_url }}).
 
 ---

@@ -33,8 +33,8 @@ This case study is an analysis and exploration of payjoin's audience, implementa
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/how-it-works/wallet-selector/"
-   previousName = "Wallet selector"
+   previousUrl = "/guide/how-it-works/custom-spending-conditions/"
+   previousName = "Custom spending conditions"
    nextUrl = "/guide/case-studies/blixt-wallet/"
    nextName = "Blixt wallet"
 %}

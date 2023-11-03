@@ -21,7 +21,7 @@
       transition: all 150ms $ease;
 
       &:hover {
-        color: $primary-color;
+        color: var(--primary-color);
         text-decoration: underline;
       }
     }
@@ -67,11 +67,11 @@
         }
 
         &:hover {
-          color: $primary-color;
+          color: var(--primary-color);
           text-decoration: none;
 
           svg {
-            fill: $primary-color !important;
+            fill: var(--primary-color) !important;
           }
         }
 
@@ -119,8 +119,8 @@
     }
 
     &:hover {
-      color: $primary-color;
-      border-color: $primary-color;
+      color: var(--primary-color);
+      border-color: var(--primary-color);
     }
   }
 
