@@ -35,7 +35,7 @@ Several different projects are building on the reference designs from the guide.
 ### Etta wallet
 
 [Etta Wallet](https://github.com/EttaWallet/EttaWallet) is a resource for experimenting with non-custodial lightning with a strong bias towards usability, accessibility and good UX. Built with React Native.
-The project is strongly inspired by the [daily spending wallet]('/guide/daily-spending-wallet/').
+The project is strongly inspired by the [daily spending wallet]({{ '/guide/daily-spending-wallet/' | relative_url }}).
 
 ### Monday wallet
 
