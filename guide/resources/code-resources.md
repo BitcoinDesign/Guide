@@ -43,15 +43,22 @@ The project is strongly inspired by the [daily spending wallet]({{ '/guide/daily
 
 ### Monday wallet
 
-The [Monday wallet](https://github.com/reez/Monday) is an example iOS app using LDK Node.
+The [Monday wallet](https://github.com/reez/Monday) is an example iOS app using [LDK Node](https://lightningdevkit.org), an easy to use implementation of the Lightning Dev Kit.
 
 ### BDK Swift example wallet
 
-The [BDK Swift example wallet](https://github.com/reez/BDKSwiftExampleWallet) is an iOS app using BDK.
+The [BDK Swift example wallet](https://github.com/reez/BDKSwiftExampleWallet) is an iOS app using [BDK](https://bitcoindevkit.org), the Bitcoin Dev Kit.
 
 ### BDG (Bitcoin Design Guide) wallet
 
-The [BDG Wallet](https://github.com/bdgwallet) is a work in process project for implementing the reference designs from the guide in Swift and Flutter.
+The [BDG Wallet](https://github.com/bdgwallet) is a work in process project for implementing the reference designs from the guide in Swift and Flutter. It is also built using [LDK Node](https://lightningdevkit.org).
+
+## Guides and blog posts
+
+Various guides on how to build bitcoin wallets that are related to the Bitcoin Design Community.
+
+- [Build a bitcoin wallet with SwiftUI - Part 1, BDK](https://bdgwallet.notion.site/Build-a-bitcoin-wallet-with-SwiftUI-a9b09fef617143948babf0641086c353?pvs=4)
+- [Build a bitcoin wallet with SwiftUI - Part 2, UI Styling](https://bdgwallet.notion.site/Build-a-bitcoin-wallet-with-SwiftUI-Part-2-UI-Styling-905e4db372ca48a4ad9d926449bcbc78?pvs=4)
 
 ---
 
