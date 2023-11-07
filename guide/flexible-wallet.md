@@ -15,19 +15,25 @@ images_onboarding:
       alt:
       caption:
 images_default-keys:
-    - file: send/home
+    - file: 
       alt:
       caption: Basic home screen to access, send, and receive functionality.
 images_recovery-keys:
-    - file: send/amount-high
+    - file: 0-initial
       alt:
-      caption: The user has entered an amount beyond the auto-signing limits, and a note appears about manual approval.
+      caption: The user has not yet added a recovery key set.
+    - file: 2-add-overview
+      alt:
+      caption: The add recovery key set sheet sets smart defaults based on the default key set. If needed, the user can override the configuration.
+    - file: 3-recovery-keyset
+      alt:
+      caption: The recovery key set has been added and can still be edited.
 images_backup:
-    - file: recovery/settings
+    - file: 
       alt:
       caption: A simplified settings screen to access key recovery.
 images_cosigner:
-    - file: recovery/options-cloud
+    - file: 
       alt:
       caption: The user has lost access to their cloud storage.
 images_recovery:
@@ -85,11 +91,7 @@ During onboarding, users will be guided through the following high-level steps:
 
 #### Creating the default key set
 
-{% include image-gallery.html pages = page.images_onboarding %}
-
 In order to determine the best setup for Bob's situation, the application runs him through a series of questions
-
-{% include image-gallery.html pages = page.images_default-keys %}
 
 #### Creating the recovery key set
 
@@ -97,14 +99,13 @@ In order to determine the best setup for Bob's situation, the application runs h
 
 ### Wallet backup
 
-{% include image-gallery.html pages = page.images_backup %}
+
 
 ### Setting up the co-signer application on Alice's phone
 
-{% include image-gallery.html pages = page.images_cosigner %}
 
 
-### Managing recovery key sets
+### Refreshing recovery key sets
 
 To prevent the recovery key set to be activated, Bob has to spend regularly from the wallet. See the [custom spending conditions page]() for more in-depth information. 
 
@@ -116,7 +117,7 @@ Here are different scenarios where users may lose access to their wallet or keys
 
 ### Wallet recovery
 
-{% include image-gallery.html pages = page.images_backup %}
+
 
 #### Design considerations
 - Preventing recovery key sets from activating unnecessarily is an important aspect.
