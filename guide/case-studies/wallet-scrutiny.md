@@ -63,7 +63,7 @@ Copy design: How can we improve the copy of the website?
 How can we create an experience that is easy to navigate and allows the user to perform their main goal when visiting the website?
 
 #### 3. User groups
-Three distinct user groups were identified. These user groups were identified by sitting together with the project members and ideating on who was the audience that they were intending to serve.
+Three distinct user groups were identified. These user groups were [identified](https://www.figma.com/file/47ybO7dGvHSkEBUXrplQ8b/Wallet-Scrutiny-Personas?type=whiteboard&t=ZYUaLjqseDukLlZR-0) by sitting together with the project members and ideating on who was the audience that they were intending to serve.
 
 - **Wallet end users**: Generally refers to an individual or entity who uses a digital wallet for personal or business purposes.
 
@@ -75,9 +75,9 @@ One of the goals of the redesign was to ensure that the website served the needs
 
 #### 4. Baseline Testing
 
-We started off by looking at the current user experience. To understand how people were using the website, we decided to sit down with them and provide them with a task to complete on the website itself. This would reveal the main friction points in the website as well as how the website is used by people. To do this we decided to do some usability testing.
+We started off by looking at the current user experience. To understand how people were using the website, we decided to sit down with them and provide them with a task to complete on the website itself. This would reveal the main friction points in the website as well as how the website is used by people. To do this we decided to do some [usability testing](https://docs.google.com/document/d/1qgRNRS89crQMPPmMQPyuSxh4pu8J55a0u-fdTWhbnOg/edit#heading=h.jp30k554ssst).
 
-Usability tests were done with 5 people, wallet security was important to every person that was interviewed. We rallied in the help of the bitcoin design community and scheduled calls. We then shared the research findings with the team.
+Usability tests were done with 5 people, wallet security was important to every person that was interviewed. We rallied in the help of the bitcoin design community and scheduled calls. We then shared the research findings [research findings](https://www.figma.com/file/uVpHzUkddKjKbzXv3CV1dh/Present-UX-Research?type=design&mode=design&t=JBpvSJ0IybnQb696-0) with the team.
 
 Some of the key findings that came up in the user interviews was the following:
 - **Educate**: We needed to educate users on understanding why wallet security is important.
@@ -152,7 +152,7 @@ The about page showcases the team behind the project as well as any public   int
 The goal of the about page is to create a sense of credibility and trust for the user visiting the website. Showing the supporters of the project as well as a human element showing the team is intentional to create this.
 
 #### 7. Re-testing
-The second round of usability tests were carried out after the redesign of the website to see if the new design allowed for an easier user journey. The research findings can be viewed here.
+The second round of [usability tests](https://github.com/BitcoinDesign/Meta/issues/415#issuecomment-1597285016) were carried out after the redesign of the website to see if the new design allowed for an easier user journey. The research findings can be viewed [here](https://www.figma.com/file/wea86Tp0kqJihuBwoXGGkm/Post-Design-User-feedback?type=design&node-id=0-1&mode=design&t=ZYUaLjqseDukLlZR-0).
 
 The redesign was appreciated with a lot of enthusiasm. The comments were:
 - **Clean design:** They loved the clean and neutral design. People felt they could relate to the content more this way.
@@ -182,19 +182,19 @@ Moving forward we will continue to support the project to bring more awareness t
 
 ## Resources
 Previous case studies:
-- Blixt wallet
-- Payjoin
+- [Blixt wallet](https://bitcoin.design/guide/case-studies/blixt-wallet/)
+- [Payjoin](https://bitcoin.design/guide/case-studies/payjoin/)
 
 Links to project resources:
-- Figma file
-- Case Study Guidelines
-- Case Study Guideline questions
-- Call recordings
+- [Figma file](https://www.figma.com/file/afzvWhwhxIwhoMans8lQg9/Wallet-Scrutiny?type=design&node-id=1690%3A71714&mode=design&t=rHRO9up7hGZqM3gf-1)
+- [Case Study Guidelines](https://docs.google.com/document/d/1lkipBAdo-re_TCIXgMhddFpGnZU3u6f1svJ06ctjkrk/edit#heading=h.rpf7ryqjg7i5)
+- [Case Study Guideline questions](https://docs.google.com/document/d/1B6qcry5Wb-jjtMpTyuTk5WqGvF8WKScc4NAIK-SK1go/edit)
+- [Call recordings](https://www.youtube.com/playlist?list=PLpV0KfVOMojbYu2i1zRjGcJw9fA1cj0eY)
 
 
 ---
 
-Next, view the [Resources]({{\guide\resources}}) a collection of design resources to that can help you design and build better bitcoin products.
+Next, view the [resources]({{\guide\resources}}) a collection of design resources to that can help you design and build better bitcoin products.
 
 {% include next-previous.html
    previousUrl = "/guide/case-studies"
