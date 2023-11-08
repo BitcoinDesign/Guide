@@ -61,9 +61,9 @@ Satoshi Nakamoto created this lettered golden coin for the original Bitcoin clie
 <div class="image-gallery" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/visual-language/early-bitcoin-core-wallet.jpg"
-   alt-text = "Screenshot of an early version of the Bitcoin Core application"
-   caption = "The original logo in an early version of the Bitcoin Core wallet."
+   image = "/assets/images/guide/getting-started/visual-language/early-bitcoin-wallet.jpg"
+   alt-text = "Screenshot of an early version of the Bitcoin client"
+   caption = "The original logo in an early version of the Bitcoin client."
    width = 640
    height = 300
 %}
