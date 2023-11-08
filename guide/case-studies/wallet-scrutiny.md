@@ -132,12 +132,22 @@ The feeling that a user would get when arriving at the homepage would largely be
 ##### Homepage:
 The copy and UI design was something that we focused a lot on for the homepage. Copy being an essential part of design was tricky with a project like Wallet Scrutiny. We had the help of a copy ninja and he helped us to create a catchy headline as well as revise all the copy on the homepage and methodology page. The homepage was designed with a strong call to action with the search bar as well as a nice tile overview of the wallets on which reviews have been done. Showing the wallets that passed all the tests right from the homepage and allowing  a filter option to sort through the reviews.
 
----Add in Image---
+<div class="center" markdown="1">
 
-**Why**:
-The strong call to action of typing into the green search box was intentional to allow the user to search straight away for the wallet they are using or were thinking of using.
+{% include image.html
+   image = "/assets/images/guide/case-studies/wallet-scrutiny/homepage-before-after-wallet-scrutiny.png"
+   retina = "/assets/images/guide/case-studies/wallet-scrutiny/homepage-before-after-wallet-scrutiny@2x.png"
+   alt-text = "Two side by side images. The first image is the homepage before the re-design, the second page is the homepage after the re-design."
+   width = 400
+   height = 89
+   layout = "float-left-desktop"
+%}
+
+**Why**:The strong call to action of typing into the green search box was intentional to allow the user to search straight away for the wallet they are using or were thinking of using.
 
 Essentially there are 4 main categories in which wallets would fit in; android, iphone, hardware and bearer. We wanted to create a quick filter option of this as well as present a default view of the wallets that passed all the tests.
+
+</div>
 
 ##### Methodology page:
 The methodology page was revised with a focus on 2 directions. We revised the copy as well as the navigation structure. The page was broken up into 3 sections. Introduction, tests we run as well as FAQ’s.
