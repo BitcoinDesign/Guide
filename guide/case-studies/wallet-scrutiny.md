@@ -69,11 +69,11 @@ Three distinct user groups were identified. These user groups were [identified](
 
 - **Security experts**: People with technical knowledge as to what it entails to look at the code of a wallet and determine if it is reproducible
 
-- **Wallet Providers**: A wallet provider is an entity or organization that offers services and tools for individuals and businesses to store, manage, and transact with cryptocurrencies and digital assets. These providers offer various types of wallets, including software wallets, hardware wallets, and online wallets, to cater to different preferences and security needs.
+- **Wallet providers**: A wallet provider is an entity or organization that offers services and tools for individuals and businesses to store, manage, and transact with cryptocurrencies and digital assets. These providers offer various types of wallets, including software wallets, hardware wallets, and online wallets, to cater to different preferences and security needs.
 
 One of the goals of the redesign was to ensure that the website served the needs of these 3 user groups
 
-#### 4. Baseline Testing
+#### 4. Baseline testing
 
 We started off by looking at the current user experience. To understand how people were using the website, we decided to sit down with them and provide them with a task to complete on the website itself. This would reveal the main friction points in the website as well as how the website is used by people. To do this we decided to do some [usability testing](https://docs.google.com/document/d/1qgRNRS89crQMPPmMQPyuSxh4pu8J55a0u-fdTWhbnOg/edit#heading=h.jp30k554ssst).
 
@@ -102,7 +102,7 @@ We wanted to help the project with its own unique brand and feel, this would inv
 
 We did a branding exercise with the team to identify the brand personality, project values as well as the feel that they would like users to experience when landing on the website.
 
-- **Brand Personality**: A brand personality that felt formal, conventional, functional, inclusive and conservative
+- **Brand personality**: A brand personality that felt formal, conventional, functional, inclusive and conservative
 
 - **Strong values**: Transparency,  Approachable, Inviting
 
