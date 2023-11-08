@@ -19,13 +19,13 @@ images_default-keys:
       alt:
       caption: Basic home screen to access, send, and receive functionality.
 images_recovery-keys:
-    - file: recover-keys/0-initial
+    - file: recovery-keys/initial
       alt:
       caption: The user has not yet added a recovery key set.
-    - file: recover-keys/2-add-overview
+    - file: recovery-keys/add-overview
       alt:
       caption: The add recovery key set sheet sets smart defaults based on the default key set. If needed, the user can override the configuration.
-    - file: recover-keys/3-recovery-keyset
+    - file: recovery-keys/done
       alt:
       caption: The recovery key set has been added and can still be edited.
 images_backup:
@@ -68,7 +68,7 @@ https://www.figma.com/community/file/968416729557947210
 
 # Savings wallet with recovery key set
 
-In this reference design, we look at a variation of the [savings wallet](). Specifically, we design a wallet application that allows users to create recovery key sets that help them recover their funds more easily if they lose some of their keys.
+In this reference design, we look at a variation of the [savings wallet](). Specifically, we design a wallet application that allows users to create additional key sets that help them recover their funds more easily if they lose some of their keys.
 
 ### Use case
 
@@ -95,7 +95,7 @@ In order to determine the best setup for Bob's situation, the application runs h
 
 #### Creating the recovery key set
 
-{% include image-gallery.html pages = page.images_recovery-keys %}
+{% include image-gallery.html pages = page.images_recovery-keys_auto %}
 
 ### Wallet backup
 
