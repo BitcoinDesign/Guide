@@ -206,7 +206,7 @@ Links to:
 
 ---
 
-Join the discussion in the [#research channel](https://discord.com/channels/903125802726596648/903126614236360764) on the Bitcoin Design Discord.
+For practical guidance, use the [Bitcoin UX Research Toolkit](https://bitcoinresearch.xyz) and join the discussion in the [#research channel](https://discord.com/channels/903125802726596648/903126614236360764) on the Bitcoin Design Discord.
 
 <!--
 
@@ -216,8 +216,6 @@ Links to:
 -->
 
 ---
-
-Frameworks are helpful tools to organize user behavior. Our next section introduces one with a focus on the .
 
 Next we will look at why it is important to [get to know your users]({{ '/guide/designing-products/getting-to-know-your-users/' | relative_url }}) when designing bitcoin applications.
 
