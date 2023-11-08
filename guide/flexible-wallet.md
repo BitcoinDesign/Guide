@@ -19,13 +19,13 @@ images_default-keys:
       alt:
       caption: Basic home screen to access, send, and receive functionality.
 images_recovery-keys:
-    - file: 0-initial
+    - file: recover-keys/0-initial
       alt:
       caption: The user has not yet added a recovery key set.
-    - file: 2-add-overview
+    - file: recover-keys/2-add-overview
       alt:
       caption: The add recovery key set sheet sets smart defaults based on the default key set. If needed, the user can override the configuration.
-    - file: 3-recovery-keyset
+    - file: recover-keys/3-recovery-keyset
       alt:
       caption: The recovery key set has been added and can still be edited.
 images_backup:
