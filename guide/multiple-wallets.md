@@ -168,7 +168,7 @@ Let's assume the user has the following wallets set up:
 
 Other scenarios for separate wallets could include additional layers like Ecash, or features like separate stablecoins balances. Unless you are intentionally designing a general-purpose application, try to design with specific use cases in mind that you can derive decisions from.
 
-Whichever types of wallets you decide to include in your product, try to guide users towards ones that best fit their needs. Below is an in-complete example for structuring a series of questions that result in a recommended wallet configuration. Users still have the option to adjust before committing.
+Whichever types of wallets you decide to include in your product, try to guide users towards ones that best fit their use case. Below is an in-complete example for structuring a series of questions that result in a recommended wallet configuration. Users still have the option to adjust before committing.
 
 {% include image-gallery.html pages = page.images_setup %}
 
@@ -183,7 +183,7 @@ In this reference design, we optimize for users who want to (or need to) explici
 - Different combinations of keys per wallet
 - Separate balances and activity lists per wallet
 - Wallet-specific settings
-- Wallet switchers, conveniently placed
+- Conveniently allow switching between wallets
 
 However, we guide users towards using a single, primary private key to construct several wallets. This simplifies the [backup process]({{ '/guide/how-it-works/backups/' | relative_url }}) to reduce the risk of loss of wallet. This is acceptable from a security perspective, because the wallets with larger amounts are either view-only (keys are external), or additionally protected by requiring multiple signatures (from the partner, hardware wallet, or assisted custody provider respectively).
 
@@ -199,7 +199,7 @@ Remember to guide users during wallet setup towards best practices around [progr
 
 {% include image-gallery.html pages = page.images_custom_backup %}
 
-We also keep a single [contact book]({{ '/guide/daily-spending-wallet/contacts/' | relative_url }}) across wallets. And for balance and transactions, we default to separate views by default, with the option for a unified view. More on that below.
+We also keep a single [contact book]({{ '/guide/daily-spending-wallet/contacts/' | relative_url }}) across wallets. Whereas for balance and transactions, we default to separate views by default, with the option for a unified view. More on that below.
 
 Certain aspects of the application need to be flexible. For example, when a user scans a [QR code]({{ '/guide/daily-spending-wallet/requesting/#qr-code' | relative_url }}) of an invoice, an appropriate wallet can be automatically chosen. But this might not match the user intent, so they should be able to easily switch.
 
@@ -207,7 +207,7 @@ Let's take a closer look at some of the important screens and user flows.
 
 ## Payments screen
 
-Compared to the [daily spending wallet]({{ '/guide/daily-spending-wallet/requesting/#requesting-entry-point' | relative_url }}), the only addition to the payments screen is an indicator for the currently selected wallet, right above the amount input. This indicator also functions as a button to expand the wallet selector modal.
+Compared to the [daily spending wallet]({{ '/guide/daily-spending-wallet/requesting/#requesting-entry-point' | relative_url }}), the only addition to the payments screen is an indicator for the currently selected wallet, right above the amount input. This indicator also functions as a button to expand the wallet switcher modal.
 
 The modal lists all available wallets, along with their balances. In our scenario, the balance of the inheritance wallet is not visible, since the user has set up a [separate PIN]({{ '/guide/daily-spending-wallet/privacy/#entering-a-pin-to-reveal-information' | relative_url }}) for it. They are concerned about accidentally exposing this information to bystanders.
 
@@ -234,9 +234,9 @@ By default, balance and [activity]({{ '/guide/daily-spending-wallet/activity/' |
    layout = "float-right-desktop -background -shadow"
 %}
 
-A wallet indicator and switcher in the [send flow]({{ '/guide/daily-spending-wallet/sending/' | relative_url }}) is a necessity to keep users informed about which funds will be transferred. Applications may automatically switch wallets to match given payment information. For example, if the user selects a contact that only has a lightning address, the application should switch to the lightning wallet.
+A wallet indicator and switcher in the [send flow]({{ '/guide/daily-spending-wallet/sending/' | relative_url }}) is a necessity to keep users informed about which funds will be transferred. Applications may automatically switch wallets to match the given payment information. For example, if the user selects a contact that only has a lightning address, the application should switch to the lightning wallet.
 
-Users should be able to easily override these if they want to act differently based on their current needs and goals. For example, an application may decide that the on-chain wallet is most appropriate for a payment because the lightning wallet is low on liquidity. But the user might be in a rush and prefers to use lightning even if it means paying a swap fee for the additional liquidity.
+Users should be able to easily override these if they want to act differently based on their current needs and goals. For example, an application may decide that the on-chain wallet is most appropriate for a payment because the lightning wallet is low on liquidity. However the user might be in a rush and prefers to use lightning even if it means paying a swap fee for the additional liquidity.
 
 Note that it is not possible in this design to transfer funds from multiple wallets at once.
 
@@ -246,7 +246,7 @@ Note that it is not possible in this design to transfer funds from multiple wall
 
 In addition to the new "from" selector, the "to" field also needs to be become more flexible to allow for transfers.
 
-Transfers between wallets on different layers include additional complexity and may require either an involved manual process, or use of a third-party service (like a [lightning service provider]({{ '/guide/how-it-works/lightning-services/' | relative_url }})).
+Transfers between wallets on different layers include additional complexity and may require either a manual process, or the use of a third-party service (like a [lightning service provider]({{ '/guide/how-it-works/lightning-services/' | relative_url }})).
 
 {% include image-gallery.html pages = page.images_transfer %}
 
