@@ -18,16 +18,21 @@ images_default-keys:
     - file: 
       alt:
       caption: Basic home screen to access, send, and receive functionality.
-images_recovery-keys:
-    - file: recovery-keys/initial
+images_recovery-keyset:
+    - file: recovery-keyset/initial
       alt:
       caption: The user has not yet added a recovery key set.
-    - file: recovery-keys/add-overview
+    - file: recovery-keyset/add-overview
       alt:
-      caption: The add recovery key set sheet sets smart defaults based on the default key set. If needed, the user can override the configuration.
-    - file: recovery-keys/done
+      caption: The add recovery key set sheet sets smart defaults based on the default key set. This allows users to create recovery key sets with one tap.
+    - file: recovery-keyset/done
       alt:
       caption: The recovery key set has been added and can still be edited.
+images_recovery-keyset_edit:
+    - file: recovery-keyset/edit-name
+    - file: recovery-keyset/edit-scheme
+    - file: recovery-keyset/edit-schedule-relative
+    - file: recovery-keyset/edit-reminders-on
 images_backup:
     - file: 
       alt:
@@ -78,24 +83,34 @@ We will follow the use case outlined as part of the [custom spending conditions 
 2. The **recovery key set** uses the same signing keys as the default key set, but it requires only one signature to spend funds. The recovery key set is unlocked after 6 months of wallet inactivity.
 3. A fourth **emergency key** that only Bob knows about is always available to sweep the wallet in case of an emergency.  
 
-### Wallet creation and onboarding
+### Wallet creation
 
-During onboarding, users will be guided through the following high-level steps:
+During wallet creation, the user needs to be guided through the following high-level steps which involve multiple sub-tasks:
 
-1. Choose default key scheme (2-of-3 in our case).
-2. Choose recovery key scheme (1-0f-3 after 6 months).
-3. Wallet backup
+1. Choose the primary key scheme used for spending under normal circumstances (2-of-3 in our case).
+2. Register the three corresponding signing keys on the application.
+3. Add the first recovery key scheme that unlocks after a certain amount of wallet inactivity (1-of-3 after 6 months).
+4. Add the emergency key set that is available immediately (1-of-1 in our case).
+5. Register the corresponding signing key.
 
-#### Onboarding
-
+One thing to consider is the fact that the wallet is created only after these steps are completed In our example, this means completing quite a lot of tasks both in the wallet application itself as well as on the hardware signing devices. For this reason we want the application to be able to save the current state of the wallet creation progress locally, so that users can finish the process later on, if they need to. 
 
 #### Creating the default key set
 
-In order to determine the best setup for Bob's situation, the application runs him through a series of questions
+In order to determine the best setup for Bob's situation, the application runs him through a series of questions. We are not going to  
 
 #### Creating the recovery key set
 
-{% include image-gallery.html pages = page.images_recovery-keys_auto %}
+Although recovery key sets are a great way to improve fault tolerance, and thus prevent loss of funds, they should be treated as an optional feature that is not forced on users.
+
+If the user chooses to create a recovery key set, the application uses smart defaults to propose recovery key sets that are based on the primary key set. This allows users to add recovery key sets with one tap. However, it is easy to change the settings and configuration of the key set.
+{% include image-gallery.html pages = page.images_recovery-keyset %}
+
+Users can change the settings of the recovery key set like giving it a more relevant name, changing the key scheme or define a different unlock schedule that is more tailored to their specific needs. They are also able to set up reminders so that the application sends them a push notification before the key set unlocks. 
+
+{% include image-gallery.html pages = page.images_recovery-keyset_edit %}
+
+
 
 ### Wallet backup
 
