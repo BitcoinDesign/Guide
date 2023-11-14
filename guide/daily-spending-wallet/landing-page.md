@@ -129,6 +129,7 @@ The daily spending wallet is an app designed to quickly and easily send small am
 A reference design is a complete design for a bitcoin product. It goes beyond just demonstrating individual user flows -- rather, it shows you how all of the user flows fit together and serve a purpose in the user’s life. You can use this open-source reference design to help you build your own similar bitcoin product!
 
 ## What we are building
+
 Imagine a product that tries to solve the problem of quickly and easily [sending smaller amounts of bitcoin]({{'/guide/designing-products/personal-finance/#day-to-day-spending' | relative_url}}) to friends and family or paying for small purchases. Ease and speed of use will be important as usage will likely be on mobile devices and on the go. Users are not expected to be well-versed in bitcoin technology or advanced [private key management]({{'/guide/how-it-works/private-key-management/introduction/' | relative_url}}), making it reasonable to worry more about self-inflicted loss than theft.
 
 Since it’s designed for ease, this wallet abstracts away channel management for the user. It can do this by integrating with a [lightning service provider (LSP)]({{'/guide/how-it-works/lightning-services/' | relative_url}}). This way, the user never has to consider their [lightning channels.]({{'/guide/how-it-works/liquidity/' |relative_url}})
@@ -150,9 +151,10 @@ Below is a prototype of the daily spending wallet, which outlines a few of the p
    height = 500
 %}
 
-You can find the prototype source files on [Figma community](https://www.figma.com/community/file/1186631213810803207), and a direct link to the design file [here](https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototype?node-id=4167%3A92515).
+You can find the prototype source files on [Figma community](https://www.figma.com/community/file/1186631213810803207), and a direct link to the design file [here](https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototype?node-id=4167%3A92515). There are also some [code resources]({{ '/guide/resources/code-resources/' | relative_url }}) available, such as UI libraries and example wallet builds.
 
 ### Alternate Options
+
 The chapters below will walk you through the different sections of this example product and help you understand the design considerations for why this product is built this way.
 
 In the interest of being a fully realized product, this reference design makes assumptions about technologies, specifications, and the kind of person we’re building this for. As you build your own bitcoin product, you may decide that you need to build things differently.

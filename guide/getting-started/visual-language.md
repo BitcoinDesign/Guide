@@ -54,16 +54,16 @@ Since bitcoin answers to no central authority, there is no single symbol or logo
    layout = "float-left"
 %}
 
-Satoshi Nakamoto created this lettered golden coin for the original Bitcoin Core client, [released on January 9, 2009](https://web.archive.org/web/20140326174921/http://www.mail-archive.com/cryptography@metzdowd.com/msg10142.html).
+Satoshi Nakamoto created this lettered golden coin for the original Bitcoin client, [released on January 9, 2009](https://web.archive.org/web/20140326174921/http://www.mail-archive.com/cryptography@metzdowd.com/msg10142.html).
 
 </div>
 
 <div class="image-gallery" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/getting-started/visual-language/early-bitcoin-core-wallet.jpg"
-   alt-text = "Screenshot of an early version of the Bitcoin Core application"
-   caption = "The original logo in an early version of the Bitcoin Core wallet."
+   image = "/assets/images/guide/getting-started/visual-language/early-bitcoin-wallet.jpg"
+   alt-text = "Screenshot of an early version of the Bitcoin client"
+   caption = "The original logo in an early version of the Bitcoin client."
    width = 640
    height = 300
 %}

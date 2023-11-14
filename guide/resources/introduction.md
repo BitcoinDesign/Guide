@@ -22,7 +22,7 @@ This section of the guide is a collection of design resources to that can help y
 
 ---
 
-###  [Design files]({{ '/guide/resources/design-files/' | relative_url }})
+### [Design files]({{ '/guide/resources/design-files/' | relative_url }})
 
 Shared design source files and a suggested process for collaborating on creative work.
 
@@ -37,6 +37,12 @@ A list of bitcoin design related journal articles, independent research, case st
 ### [Design challenges]({{ '/guide/resources/design-challenges/' | relative_url }})
 
 Get hands-on with these take-home bitcoin design challenges to practice and play with.
+
+---
+
+### [Code resources]({{ '/guide/resources/code-resources/' | relative_url }})
+
+Code resources that are based on, or influenced by the Bitcoin Design Guide and the Bitcoin UI Kit.
 
 ---
 
