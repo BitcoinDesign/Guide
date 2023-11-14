@@ -141,7 +141,20 @@ Exploring the concept of progressive security, in which applications help users 
 An overview and considerations for bitcoin wallets that are managed by multiple owners.
 
 </div>
-<div class="column -blank" markdown="1">
+<div class="column" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/multiple-wallets.png"
+   retina = "/assets/images/guide/multiple-wallets@2x.png"
+   alt-text = "Three mobile mock-ups of a user flow for managing multiple wallets in an application"
+   width = 400
+   height = 210
+   link-url = "/guide/multiple-wallets/"
+%}
+
+<h2 class="h3" markdown="1">[Multiple wallets]({{ '/guide/multiple-wallets/' | relative_url }})</h2>
+
+How to design for use cases where it is important to manage multiple wallets in a single application.
 
 </div>
 </div>
