@@ -98,7 +98,7 @@ The interviews also revealed the search terminology as well as the current place
 %}
 
 #### 5. Re-brand
-We wanted to help the project with its own unique brand and feel, this would involve a new logo as well as colors and fonts as well as the overall feel of the website.
+We wanted to help the project with its own unique brand and feel. This would involve a new logo as well as colors, fonts and the overall feel of the website.
 
 We did a branding exercise with the team to identify the brand personality, project values as well as the feel that they would like users to experience when landing on the website.
 
