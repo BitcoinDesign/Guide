@@ -54,7 +54,7 @@ The designers were not familiar with reproducibility and security review methodo
 #### 2. UX plan
 We came up with a plan of how to best approach the redesign process. The process was bucketed into 3 main areas.
 
-- **Branding**: How can we create a visual experience and tone of voice for people who visit the website and that reflects the ethos of the project?
+- **Branding**: How can we create an appealing visual experience and tone of voice that reflects the ethos of the project for the people who visit the website?
 
 - **Webdesign**: UI design: How can we redesign the website to meet the needs of the 3 user groups?
 Copy design: How can we improve the copy of the website?
