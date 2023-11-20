@@ -58,3 +58,8 @@ Our first community project is a free, open-source repository for anyone buildin
 - Review code and content on the [Github repository](https://github.com/BitcoinDesign/Guide)
 - Read the original [project intro](https://docs.google.com/document/d/1YiYeRIybGmxmErCOI4Jc8Qajz3JGM1JYVfUtpzyCzSk/edit?usp=sharing) document
 - Watch the [How To Contribute to the Bitcoin Design Guide](https://www.youtube.com/playlist?list=PLPZzDjXV0FTZwILz4uyqiJNjUX-kHWP0k) video series
+
+## Bitcoin Design Foundation
+
+This initiative was created to ensure long-term sustainability of the efforts of the Bitcoin Design Community. The foundation engages in fundraising and accepts donations, which are then used to financially support individuals and projects for their open-source bitcoin design contributions. For more information visit the [foundation website](http://opencollective.com/bitcoin-design-foundation).
+
