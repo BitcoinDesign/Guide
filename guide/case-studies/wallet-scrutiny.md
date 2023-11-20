@@ -130,7 +130,7 @@ The brand direction was designed to feel functional and inclusive yet trustworth
 The feeling that a user would get when arriving at the homepage would largely be determined by the tagline as well as the overall feel and branding. We wanted to use color and copy to create an inviting and trustworthy feel for users.
 
 ##### Homepage:
-The copy and UI design was something that we focused a lot on for the homepage. Copy being an essential part of design was tricky with a project like Wallet Scrutiny. We had the help of a copy ninja and he helped us to create a catchy headline as well as revise all the copy on the homepage and methodology page. The homepage was designed with a strong call to action with the search bar as well as a nice tile overview of the wallets on which reviews have been done. Showing the wallets that passed all the tests right from the homepage and allowing  a filter option to sort through the reviews.
+The copy and UI design was something that we focused on a lot for the homepage. Copy, being an essential part of design, was tricky with a project like Wallet Scrutiny. We had the help of a copy ninja who helped us to create a catchy headline as well as revise all the copy on the homepage and methodology page. The homepage was designed with a strong call to action with the search bar as well as a nice tile overview of the wallets on which reviews have been done. Showing the wallets that passed all the tests right from the homepage and allowing  a filter option to sort through the reviews.
 
 <div class="center" markdown="1">
 
