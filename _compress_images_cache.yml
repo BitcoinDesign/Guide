@@ -1,4 +1,3 @@
----
 assets/android-chrome-192x192.png: android-chrome-192x192.png
 assets/android-chrome-512x512.png: android-chrome-512x512.png
 assets/animations/astronaut/images/img_0.png: img_0.png
@@ -2314,8 +2313,7 @@ assets/images/guide/daily-spending-wallet/receiving/receiving-bitcoin@2x.jpg: re
 assets/images/guide/daily-spending-wallet/receiving/receiving-bitcoin-mobile.jpg: receiving-bitcoin-mobile.jpg
 assets/images/guide/daily-spending-wallet/receiving/receiving-bitcoin-mobile@2x.jpg: receiving-bitcoin-mobile@2x.jpg
 assets/images/guide/daily-spending-wallet/receiving/receiving-bitcoin-preview.jpg: receiving-bitcoin-preview.jpg
-assets/images/guide/case-studies/wallet-scrutiny/banner-header-wallet-scrutiny @2x.png: banner-header-wallet-scrutiny
-  @2x.png
+assets/images/guide/case-studies/wallet-scrutiny/banner-header-wallet-scrutiny @2x.png: banner-header-wallet-scrutiny@2x.png
 assets/images/guide/case-studies/wallet-scrutiny/banner-header-wallet-scrutiny.png: banner-header-wallet-scrutiny.png
 assets/images/guide/case-studies/wallet-scrutiny/homepage-before-after-wallet-scrutiny.png: homepage-before-after-wallet-scrutiny.png
 assets/images/guide/case-studies/wallet-scrutiny/homepage-before-after-wallet-scrutiny@2x.png: homepage-before-after-wallet-scrutiny@2x.png
