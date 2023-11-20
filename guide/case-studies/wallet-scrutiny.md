@@ -23,7 +23,7 @@ image: https://bitcoin.design/assets/images/guide/case-studies/blixt-wallet/blix
 
 ## How it started
 
-In November 2022 the Wallet Scrutiny project was introduced to the Bitcoin design Community. They are a small team producing an extensive amount of work and are on a mission to improve their website and increase their reach in the ecosystem. The Bitcoin Design community kicked off a redesign process with the project to help them reach their goals. The overarching goal was to redesign the website with the goal of improving the user experience.
+In November 2022 the Wallet Scrutiny project was introduced to the Bitcoin design Community. Wallet Scrutiny is a small team producing an extensive amount of work and are on a mission to improve their website and increase their reach in the ecosystem. The Bitcoin Design community kicked off a redesign process with the project to help them reach their goals. The overarching goal was to redesign the website with the goal of improving the user experience.
 
 ## What does Wallet Scrutiny do?
 
@@ -42,7 +42,7 @@ They:
    image = "assets/images/guide/case-studies/wallet-scrutiny/process-wallet-scrutiny.png"
    retina = "assets/images/guide/case-studies/wallet-scrutiny/process-header-wallet-scrutiny@2x.png"
    mobile = "assets/images/guide/case-studies/wallet-scrutiny/process-header-wallet-scrutiny-mobile.png"
-   alt-text = "An image of the seven steps that were taken during the re-design process. Those steps were discovery, ux plan, user groups, baseline testing, re-branding, re-design, re-testing"
+   alt-text = "An image of the seven steps that were taken during the re-design process. Those steps were discovery, UX plan, user groups, baseline testing, rebranding, redesign, retesting"
    width = 800
    height = 225
    layout = "full-width"
@@ -57,7 +57,7 @@ We came up with a plan of how to best approach the redesign process. The process
 - **Branding**: How can we create an appealing visual experience and tone of voice that reflects the ethos of the project for the people who visit the website?
 
 - **Webdesign**: UI design: How can we redesign the website to meet the needs of the 3 user groups?
-Copy design: How can we improve the copy of the website?
+Copywriting: How can we improve the copy of the website?
 
 - **Information design**: How can we go into the methodology and best communicate the result of the security reviews?
 How can we create an experience that is easy to navigate and allows the user to perform their main goal when visiting the website?
@@ -97,7 +97,7 @@ The interviews also revealed the search terminology as well as the current place
    layout = "full-width"
 %}
 
-#### 5. Re-brand
+#### 5. Rebrand
 We wanted to help the project with its own unique brand and feel. This would involve a new logo as well as colors, fonts and the overall feel of the website.
 
 We did a branding exercise with the team to identify the brand personality, project values as well as the feel that they would like users to experience when landing on the website.
@@ -120,7 +120,7 @@ We did a branding exercise with the team to identify the brand personality, proj
    layout = "full-width"
 %}
 
-#### 6. Re-design
+#### 6. Redesign
 A new home page design was then created and shared with the team. The new design had the following elements.
 
 ##### Branding:
@@ -161,7 +161,7 @@ The about page showcases the team behind the project as well as any public   int
 **Why**:
 The goal of the about page is to create a sense of credibility and trust for the user visiting the website. Showing the supporters of the project as well as a human element showing the team is intentional to create this.
 
-#### 7. Re-testing
+#### 7. Retest
 The second round of [usability tests](https://github.com/BitcoinDesign/Meta/issues/415#issuecomment-1597285016) were carried out after the redesign of the website to see if the new design allowed for an easier user journey. The research findings can be viewed [here](https://www.figma.com/file/wea86Tp0kqJihuBwoXGGkm/Post-Design-User-feedback?type=design&node-id=0-1&mode=design&t=ZYUaLjqseDukLlZR-0).
 
 The redesign was appreciated with a lot of enthusiasm. The comments were:
