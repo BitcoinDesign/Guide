@@ -121,7 +121,7 @@ We did a branding exercise with the team to identify the brand personality, proj
 %}
 
 #### 6. Re-design
-A new home page design was then created and shared with the team. The new design had the following elements. Below we will describe the biggest revisions as well as the rationale behind them:
+A new home page design was then created and shared with the team. The new design had the following elements.
 
 ##### Branding:
 The brand direction was designed to feel functional and inclusive yet trustworthy. The logo of the dog with its ears up came about from an idea that the Wallet Scrutiny team/website would bark when they spotted a wallet that they tested which did not pass all the tests.
