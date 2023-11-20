@@ -58,6 +58,18 @@ projects:
       - name: Site
         link: https://bitcoinresearch.xyz
 
+  - name: Bitcoin Design Foundation
+    description: An initiative to make the community and its efforts sustainable.
+    image:
+      url: /assets/images/contribute/foundation.png
+      width: 75
+      height: 75
+    links:
+      - name: Website
+        link: http://opencollective.com/bitcoin-design-foundation
+      - name: Discord
+        link: https://discord.gg/V4xwxTBett
+
   - name: When Taproot
     description: Promote broader adoption of Taproot.
     image:
