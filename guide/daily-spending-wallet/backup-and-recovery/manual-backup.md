@@ -9,7 +9,7 @@ permalink: /guide/daily-spending-wallet/backup-and-recovery/manual-backup/
 redirect_from:
  - /guide/onboarding/backing-up-a-wallet/manual-backup/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/backing-up-a-wallet-manual-preview.png
+image: https://bitcoin.design/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-preview.jpg
 image_base: /assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/
 images_phrase:
     - file: manual-backup-choice
@@ -87,13 +87,13 @@ https://www.figma.com/file/NjtMNQiJtoVkedEHgwD0A9/BTC-DSN-Guide-Header-Images?no
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/backing-up-a-wallet-manual.png"
-   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/backing-up-a-wallet-manual@2x.png"
-   mobile = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/backing-up-a-wallet-manual-mobile.png"
-   mobileRetina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/backing-up-a-wallet-manual-mobile@2x.png"
+   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup.jpg"
+   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup@2x.jpg"
+   mobile = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-mobile.jpg"
+   mobileRetina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-mobile@2x.jpg"
    alt-text = "Backing up a recovery phrase chapter header image"
    width = 1600
-   height = 600
+   height = 550
    layout = "full-width"
 %}
 

@@ -303,11 +303,6 @@ assets/images/guide/daily-spending-wallet/backup-and-recovery/backup-recovery-im
 assets/images/guide/daily-spending-wallet/backup-and-recovery/backup-recovery-image@2x.png: backup-recovery-image@2x.png
 assets/images/guide/daily-spending-wallet/backup-and-recovery/copy-recovery-phrase.png: copy-recovery-phrase.png
 assets/images/guide/daily-spending-wallet/backup-and-recovery/copy-recovery-phrase@2x.png: copy-recovery-phrase@2x.png
-assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/backing-up-a-wallet-manual-mobile.png: backing-up-a-wallet-manual-mobile.png
-assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/backing-up-a-wallet-manual-mobile@2x.png: backing-up-a-wallet-manual-mobile@2x.png
-assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/backing-up-a-wallet-manual-preview.png: backing-up-a-wallet-manual-preview.png
-assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/backing-up-a-wallet-manual.png: backing-up-a-wallet-manual.png
-assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/backing-up-a-wallet-manual@2x.png: backing-up-a-wallet-manual@2x.png
 assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/confirm-recovery-phrase-columns.png: confirm-recovery-phrase-columns.png
 assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/confirm-recovery-phrase-columns@2x.png: confirm-recovery-phrase-columns@2x.png
 assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/confirm-recovery-phrase-entry.png: confirm-recovery-phrase-entry.png
@@ -2331,4 +2326,9 @@ assets/images/guide/how-it-works/custom-spending-conditions/header-mobile@2x.jpg
 assets/images/guide/getting-started/visual-language/early-bitcoin-wallet.jpg: early-bitcoin-wallet.jpg
 assets/images/guide/how-it-works/custom-spending-conditions/header-mobile.jpg: header-mobile.jpg
 assets/images/guide/how-it-works/custom-spending-conditions/header-mobile@2x.jpg: header-mobile@2x.jpg
+assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-mobile.jpg: manual-backup-mobile.jpg
+assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-mobile@2x.jpg: manual-backup-mobile@2x.jpg
+assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-preview.jpg: manual-backup-preview.jpg
+assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup.jpg: manual-backup.jpg
+assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup@2x.jpg: manual-backup@2x.jpg
 assets/images/contribute/foundation.png: foundation.png
