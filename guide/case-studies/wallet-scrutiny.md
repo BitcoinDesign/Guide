@@ -1,7 +1,7 @@
 ---
 layout: guide
-title: Wallet Scrutiny
-description: This was a collaboration between Wallet Scrutiny and the Bitcoin Design Community to help with the redesign of the website.
+title: WalletScrutiny
+description: This was a collaboration between WalletScrutiny and the Bitcoin Design Community to help with the redesign of the website.
 nav_order: 4
 parent: Case studies
 permalink: /guide/case-studies/wallet-scrutiny/
@@ -19,7 +19,7 @@ image: https://bitcoin.design/assets/images/guide/case-studies/blixt-wallet/blix
    layout = "full-width"
 %}
 
-# Wallet Scrutiny
+# WalletScrutiny
 
 ## How it started
 
@@ -27,7 +27,7 @@ In November 2022 the WalletScrutiny project was introduced to the Bitcoin design
 
 ## What does WalletScrutiny do?
 
-WalletScrutiny is a website that helps everyday bitcoin users verify whether or not their wallet is truly open-source and secure. They aim to improve the security of all bitcoin wallets by open sourcing the evaluation of their source code. They do this by focusing on the reproducibility of wallets, which ensures that the wallet a regular user uses actually matches with the code published online.
+WalletScrutiny is a website that helps everyday bitcoin users verify whether their chosen wallet is truly open-source and secure. They do this by focusing on the reproducibility of wallets, ensuring the code published online actually matches an end user's wallet. Through evaluating and verifying the source code of various wallets, WalletScrutiny aims to raise the bar in quality for all Bitcoin wallets.
 
 They:
 - Produce security verdicts on 6000+ mobile and hardware products
@@ -75,11 +75,11 @@ One of the goals of the redesign was to ensure that the website served the needs
 
 #### 4. Baseline testing
 
-We started off by looking at the current user experience. To understand how people were using the website, we decided to sit down with them and provide them with a task to complete on the website itself. This would reveal the main friction points in the website as well as how the website is used by people. To do this we decided to do some [usability testing](https://docs.google.com/document/d/1qgRNRS89crQMPPmMQPyuSxh4pu8J55a0u-fdTWhbnOg/edit#heading=h.jp30k554ssst).
+We began by examining the existing user experience on the website. To gain insights into user interactions, we conducted [usability testing](https://docs.google.com/document/d/1qgRNRS89crQMPPmMQPyuSxh4pu8J55a0u-fdTWhbnOg/edit#heading=h.jp30k554ssst) where participants were given specific tasks to complete on the site. This approach helped us identify key friction points and understand how users typically navigate the website.
 
-Usability tests were done with 5 people, wallet security was important to every person that was interviewed. We rallied in the help of the bitcoin design community and scheduled calls. We then shared the [research findings](https://www.figma.com/file/uVpHzUkddKjKbzXv3CV1dh/Present-UX-Research?type=design&mode=design&t=JBpvSJ0IybnQb696-0) with the team.
+We interviewed five individuals, all of which found the concept of WalletScrutiny useful. Their responses, combined with various feedback from the Bitcoin Design Community's perspective, resulted in useful [insights](https://www.figma.com/file/uVpHzUkddKjKbzXv3CV1dh/Present-UX-Research?type=design&mode=design&t=JBpvSJ0IybnQb696-0).
 
-Some of the key findings that came up in the user interviews was the following:
+Some of the key insights that came up in the user interviews was the following:
 - **Educate**: We needed to educate users on understanding why wallet security is important.
 
 - **Build trust**: We needed to build trust on the homepage for users so that they feel 100% comfortable and confident on choosing a wallet.
@@ -150,10 +150,10 @@ Essentially there are 4 main categories that wallets fall into; Android, iPhone,
 </div>
 
 ##### Methodology page:
-The methodology page was revised with a focus on 2 directions. We revised the copy as well as the navigation structure. The page was broken up into 3 sections. Introduction, tests we run as well as FAQ’s.
+The methodology page was revised with a focus on two directions. We revised the copy as well as the navigation structure. The page was broken up into three sections. Introduction, tests we run as well as FAQ’s.
 
 **Why**:
-The original methodology page was a single page outlining the full process.  Trying to find a simple, easy-to-read structure for this diverse mix of security data and test results was a unique challenge. Since the process to evaluate wallets is a lengthy one we decided to break this up into 3 distinct sections. This change allowed for easier readability and navigation. The copy of the methodology page was also worked on to improve readability by looking for opportunities to simplify the content.
+The original methodology page was a single page outlining the full process.  Trying to find a simple, easy-to-read structure for this diverse mix of security data and test results was a unique challenge. Since the process to evaluate wallets is a lengthy one we decided to break this up into three distinct sections. This change allowed for easier readability and navigation. The copy of the methodology page was also worked on to improve readability by looking for opportunities to simplify the content.
 
 ##### About:
 The about page showcases the team behind the project as well as any public   interviews or podcasts as well as who the sponsors are of the project.
@@ -181,7 +181,7 @@ The redesign was appreciated with a lot of enthusiasm. The comments were:
 **Trust**: Creating trust throughout the user experience was something that we tried to incorporate using design. This was essential to keeping the user engaged and trusting the reviews.
 
 ## Conclusion
-As a community we really enjoyed working with this project and sprinting towards the redesign of the website. The entire process took about 6 months in total and we jumped on weekly or bi-weekly calls to keep up the momentum. The redesign of a website is an intricate process that requires a team effort as well as understanding the needs and goals of the people using the website.
+As a community we really enjoyed working with this project and sprinting towards the redesign of the website. The entire process took about six months in total and we jumped on weekly or bi-weekly calls to keep up the momentum. The redesign of a website is an intricate process that requires a team effort as well as understanding the needs and goals of the people using the website.
 
 With that said this project is not finished. While we made a lot of changes in the redesign process the next steps with this project are to get the project in front of the world, gather feedback and speak with users and continue to iterate. There is more work to be done on the expert opinions, how the project could integrate Nostr and so contributions to that effort would be much appreciated.
 
