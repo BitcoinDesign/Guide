@@ -52,7 +52,7 @@ They:
 The designers were not familiar with reproducibility and security review methodologies. So we had several calls discussing with the whole team, and spent study time becoming familiar with the subject matter. This was a necessary foundation for then being able to guide an informed design process.
 
 #### 2. UX plan
-We came up with a plan of how to best approach the redesign process. The process was bucketed into 3 main areas.
+We came up with a plan of how to best approach the redesign process. The process was bucketed into three main areas.
 
 - **Branding**: How can we create an appealing visual experience and tone of voice that reflects the ethos of the project for the people who visit the website?
 
@@ -145,7 +145,7 @@ The copy and UI design was something that we focused on a lot for the homepage. 
 
 **Why**:The strong call to action of typing into the green search box was intentional to allow the user to search straight away for the wallet they are using or were thinking of using.
 
-Essentially there are 4 main categories that wallets fall into; Android, iPhone, hardware and bearer. We wanted to create a quick filter option of this as well as present a default view of the wallets that passed all the tests.
+Essentially there are four main categories that wallets fall into; Android, iPhone, hardware and bearer. We wanted to create a quick filter option of this as well as present a default view of the wallets that passed all the tests.
 
 </div>
 
@@ -156,7 +156,7 @@ The methodology page was revised with a focus on two directions. We revised the 
 The original methodology page was a single page outlining the full process.  Trying to find a simple, easy-to-read structure for this diverse mix of security data and test results was a unique challenge. Since the process to evaluate wallets is a lengthy one we decided to break this up into three distinct sections. This change allowed for easier readability and navigation. The copy of the methodology page was also worked on to improve readability by looking for opportunities to simplify the content.
 
 ##### About:
-The about page showcases the team behind the project as well as any public   interviews or podcasts as well as who the sponsors are of the project.
+The about page showcases the team behind the project as well as any public interviews or podcasts as well as who the sponsors are of the project.
 
 **Why**:
 The goal of the about page is to create a sense of credibility and trust for the user visiting the website. Showing the supporters of the project as well as a human element showing the team is intentional to create this.
