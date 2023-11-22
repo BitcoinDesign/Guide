@@ -81,10 +81,18 @@ https://www.figma.com/community/file/968416729557947210
 %}
 
 # Flexible multi-key wallet with recovery key sets
+{: .no_toc }
 
-In this reference design, we look at a variation of the [savings wallet](). Specifically, we design a wallet application that allows users to create additional key sets that help them recover their funds more easily if they lose some of their keys.
+---
 
-It is important that users understand that they need to choose a wallet application that supports [Miniscript](). 
+<div class="glossary-toc" markdown="1">
+ * Table of contents
+{:toc}
+</div>
+
+---
+
+In this reference design, we look at a variation of the [savings wallet](). Specifically, we design a wallet application that allows users to create additional key sets that help them recover their funds more easily if they lose some of their keys. 
 
 ### Use case
 
@@ -110,6 +118,14 @@ One thing to consider is the fact that the wallet is created only after these st
 
 In order to determine the best setup for Bob's situation, the application runs him through a series of questions. We are not going to  
 
+<!--
+
+TO DO's:
+
+Add gallery of key setupfrom savings wallet reference design OR just provide a link to it.
+
+-->
+
 #### Creating the recovery key set
 
 Although recovery key sets are a great way to improve fault tolerance, and thus prevent loss of funds, they should be treated as an optional feature that is not forced on users.
@@ -128,7 +144,15 @@ Apart from backing up their private keys, users will need the wallet configurati
 
 The wallet descriptor does not contain any private key data. This means that it's. However, since it contains extented the public keys, anybody who finds this file can potentially monitor all incoming and outgoing transactions. 
 
-### Setting up the co-signer application on Alice's phone
+<!--
+
+TO DO's:
+
+Reference relevant content in existing reference designs and maybe link to the backups page.
+
+-->
+
+### Co-signer onboarding
 
 The next step the co-signers set up the wallet on their end. To make this experience easy and seamless, the application allows Bob to invite Alice in a variety of ways:
 
@@ -136,9 +160,25 @@ The next step the co-signers set up the wallet on their end. To make this experi
 2. By sending an invite, which contains the wallet descriptor, over email, Nostr, or any messenger app.  
 3. By providing Alice with a copy of the wallet configuration file that was saved as a backup.
 
+<!--
+
+TO DO's:
+
+Add image gallery starting with QR code display on Bob's phone.
+
+-->
+
 ##### Setting up from QR Code
 
-Alice scans the QR code from Bob's phone and... 
+The easiest and moste secure way for Alice to get set up is to scan the QR code from Bob's with her phone. If the wallet application is already installed, it will autamatically launch and start the wallet import flow. If it's not installed, Alice will get taken to the app's page on the app store.
+
+<!--
+
+TO DO's:
+
+Add mockup of the share sheet on Bob's phone.
+
+-->
 
 ##### Setting up from invite
 
@@ -150,40 +190,115 @@ Because a specific parameter is passed along in the invite link, Alice is direct
 
 If Alice wanted to set up the wallet by using the backup file, she would either use a microSD card connector or NFC capabilities to import the file to the phone.
 
-### Resetting activation locks
+### Spending from the wallet
 
-Here is where it gets tricky. Technically, every UTXO has its own timelock. To prevent the recovery key from being activated, a UTXO has to be spent from the wallet or re-deposited into the wallet. You can check out the [custom spending conditions page]() for more in-depth information about how timelocks work. 
+Creating transactions and spending from the wallet works like with any other multi-key wallet. We have covered how this works on the [savings wallet reference design](/guide/savings-wallet/#making-small-payments), if you ware curious about that.  
 
-So if Bob has three UTXOs in his wallet, he needs to refresh the timelock three times. This can quickly become cumbersome and costly, as every such transfer implies on-chain transaction fees. 
+### Managing key sets
 
-To reduce this complexity for users, our application only looks at the UTXO that is closest to being unlocked as the trigger. In the background, however, all UTXOs are batched together in one self-transfer transaction. This allows us to show one timelock, which makes it easier to understand for users and is more in line with their expectations. 
+Technically, every UTXO has its own timelock. To prevent the recovery key from being activated, a UTXO has to be spent and re-deposited into the wallet. So if Bob has three UTXOs in his wallet that he received at different times, he then needs to refresh the timelock three times. This can quickly become cumbersome and costly, as every such transfer implies on-chain transaction fees. You can check out the [custom spending conditions page]() for more in-depth information about how timelocks work.
 
-An added benefit of this approach is that, as a result, Bob now has only one UTXO in his wallet after the timelock refresh.
+##### Preventing key set activation
 
-To allow for additional flexibility, the application allows users to change the settings of this behavior. They can enable coin control, if they wish to selectively manage timelocks for one or more UTXOs. 
+To reduce this complexity for users, our application offers a "unified" timelock experience. This simply means that it uses the UTXO that is closest to being unlocked as the trigger to start the process. In the background, however, all UTXOs are automatically batched together. This allows us to show one timelock, which makes it easier to understand for users and is more in line with their expectations. An added benefit of this approach is that, as a result, Bob now has only one UTXO in his wallet after the timelock refresh.
 
 {% include image-gallery.html pages = page.images_lock-reset %}
 
+To allow for additional flexibility, our application allows users to change the settings of this behavior. They can enable coin control if they wish to selectively manage timelocks for one or more UTXOs. 
+
+<!--
+
+NOTE: should we include a mockup for this or just mention it?
+
+-->
+
+##### Resetting activated key sets
+
+Just because a recovery key set has been activated does not mean that it's too late. You can "deactivate" recovery key sets simply by creating a self-transfer like mentioned above. In our example, the application uses a unified timelock experience that allows the user to reset all UTXOs to their original state in three taps.
+
+<!--
+
+TO DO's:
+
+- Visual of the before/after state.
+- Image gallery of the process to reset activated key set. Starting with showing available key sets on the wallet home screen.
+
+-->
+
 ### Wallet recovery
 
-Wallet recovery might be necessary for various reasons. However, the most likely one is that users switch to a new phone or computer. The wallet recovery works the same way as setting up the co-signer applicaiton on Alice's phone, shown above. The user imports the wallet configuration file into the software application of their choice. 
+
+##### Switching to a new phone or computer
+
+One of the most likely use cases to recover a wallet is that users switch to a new phone or computer. This means that they have to re-install the wallet application and recover the wallet itself. As long as Alice is using the same signing device, all she has to do is to import the wallet in the same way as when she originally got set up, as described above. 
+
+##### Replacing a new signing device
+
+If Bob wants to replace one of the signing devices he can use the new device with the same wallet, as long as it uses it with the same private key. This might become necessary because the original device is broken or Bob just wants to use a newer model. To do that, he would need to:
+
+1. Restore the the private key on the hardware wallet using the seed phrase backup.
+2. Enable the wallet on the new signing device.  
+
+<!--
+
+TO DO's:
+
+- Image gallery of the process of activating a new signing device (same sub-steps as in the initial setup).
+
+-->
 
 ### Wallet migration
 
-If users lose any of their keys or signing devices, it is probably necessary to migrate to a fresh wallet with a fresh set of signing keys. In this scenario we have two primary objectives:
+There are several reasons why it might become necessary to migrate to a new wallet. Bob might want to upgrade to a configuration of key setsor replace signing keys. Whatever the reason is, the process looks something like this:
 
-1. Make the experience of creating a new wallet as seamless as possible.
-2. We need to make sure that users don't throw away their remaining keys for the current wallet, because it is still possible that there will be some funds incoming. 
+1. Create a new wallet B.
+2. Move the funds from the current wallet (wallet A) to wallet B.
+3. Archive wallet A, either by keeping it around in the same wallet application or by setting up somewhere else (petentially as a watch-only wallet).
 
+We also want to make sure that Bob doesn't throw away the backups of the wallet descriptor and the signing keys to wallet A. There still might be funds incoming because someone still has an old address. 
+
+##### Creating the new wallet and moving the funds
+
+To make the wallet creation as seamless as possible, our application offers the option to migrate the wallet. It asks Bob whether he wants to create an entirely new setup or use the same configuration with new signing keys.
+
+<!---
+TO DO:
+
+Image gallery of the migration process, starting with the
+
+Note: this could also live in the upgradeable wallet reference design
+
+ --->
+
+
+##### Archiving the old wallet
+
+Bitcoin ipsum dolor sit amet. Whitepaper key pair segwit mining stacking sats soft fork hard fork private key. Address block reward outputs digital signature inputs, key pair blocksize. Halvening transaction.
+
+<!---
+TO DO:
+
+Image gallery of the archival process, including where to find archived wallets.
+
+Note: this could also live in the upgradeable wallet reference design
+
+ --->
 
 #### Design considerations
+
 - Preventing recovery key sets from activating unnecessarily is an important aspect.
-- 
+- Understanding the concept of timelocks and UTXOs, as well as how they relate to each other, is a challenging topic for most users.
+- Guide users to not create overly complex setups with too many key sets or activation rules.
+- Allow for unified timelock reset experience.
+- Provide templates for easy access to common key set configurations.
+
 
 #### Technical considerations
-- Complexities of multi-key setups
-- Save not completed setups on the application layer
-- 
+
+- Complexities of multi-key setups.
+- Saving not yet created wallet configurations on the application layer.
+- Using Taproot for better privacy and transaction economics.
+- Batching transactions to consolidate UTXOs vs. coin control and selective timelock refresh.
 
 **Resources**
 - [Prototype]()
