@@ -23,17 +23,17 @@ image: https://bitcoin.design/assets/images/guide/case-studies/blixt-wallet/blix
 
 ## How it started
 
-In November 2022 the WalletScrutiny project was introduced to the Bitcoin Design Community. WalletScrutiny is a small team producing an extensive amount of work and are on a mission to improve their website and increase their reach in the ecosystem. The Bitcoin Design Community kicked off a redesign process with the project to help them reach their goals. The overarching goal was to redesign the website with the goal of improving the user experience.
+In November 2022, the [WalletScrutiny](https://walletscrutiny.com/) project was introduced to the Bitcoin Design Community. WalletScrutiny is a small team producing an extensive amount of work and are on a mission to improve their website and increase their reach in the ecosystem. The Bitcoin Design Community kicked off a redesign process with the project. to help them reach their goal of a more polished appearance and improved usability.
 
 ## What does WalletScrutiny do?
 
-WalletScrutiny is a website that helps everyday bitcoin users verify whether their chosen wallet is truly open-source and secure. They do this by focusing on the reproducibility of wallets, ensuring the code published online actually matches an end user's wallet. Through evaluating and verifying the source code of various wallets, WalletScrutiny aims to raise the bar in quality for all Bitcoin wallets.
+WalletScrutiny is a website that helps everyday bitcoin users verify whether their chosen wallet is truly open-source and secure. The project focuses on the reproducibility of wallets, ensuring the code published online actually matches an end user's wallet. Through evaluating and verifying the source code of various wallets, WalletScrutiny aims to raise the bar in quality for all bitcoin wallets.
 
 They:
 - Produce security verdicts on 6000+ mobile and hardware products
 - Write in-depth documentation on the analysis of each wallet
 - Maintain a high-quality security review methodology
-- Provide navigation of wallets and verdicts via search
+- Provide easy navigation through wallets and verdicts via a search function
 
 
 ## The process
@@ -49,7 +49,7 @@ They:
 %}
 
 #### 1. Discovery
-The designers were not familiar with reproducibility and security review methodologies. So we had several calls discussing with the whole team, and spent study time becoming familiar with the subject matter. This was a necessary foundation for then being able to guide an informed design process.
+The designers were not familiar with reproducibility and security review methodologies. So we had several calls discussing with the whole team, and spent study time to become familiar with the subject matter. This was a necessary foundation for then being able to guide an informed design process.
 
 #### 2. UX plan
 We came up with a plan of how to best approach the redesign process. The process was bucketed into three main areas.
@@ -64,7 +64,7 @@ We came up with a plan of how to best approach the redesign process. The process
 How can we create an experience that is easy to navigate and allows the user to perform their main goal when visiting the website?
 
 #### 3. User groups
-Three distinct user groups were identified. These user groups were [identified](https://www.figma.com/file/47ybO7dGvHSkEBUXrplQ8b/Wallet-Scrutiny-Personas?type=whiteboard&t=ZYUaLjqseDukLlZR-0) by sitting together with the project members and ideating on who was the audience that they were intending to serve.
+Three distinct user groups were [identified](https://www.figma.com/file/47ybO7dGvHSkEBUXrplQ8b/Wallet-Scrutiny-Personas?type=whiteboard&t=ZYUaLjqseDukLlZR-0) by sitting together with the project members and ideating on who the audience was that they were intending to serve.
 
 - **Wallet end users**: Generally refers to an individual or entity who uses a digital wallet for personal or business purposes.
 
@@ -80,7 +80,7 @@ We began by examining the existing user experience on the website. To gain insig
 
 We interviewed five individuals, all of which found the concept of WalletScrutiny useful. Their responses, combined with various feedback from the Bitcoin Design Community's perspective, resulted in useful [insights](https://www.figma.com/file/uVpHzUkddKjKbzXv3CV1dh/Present-UX-Research?type=design&mode=design&t=JBpvSJ0IybnQb696-0).
 
-Some of the key insights that came up in the user interviews was the following:
+Some of the key insights that came out of the user interviews were the following:
 - **Educate**: We needed to educate users on understanding why wallet security is important.
 
 - **Build trust**: We needed to build trust on the homepage for users so that they feel 100% comfortable and confident on choosing a wallet.
@@ -92,7 +92,7 @@ The interviews also revealed the search terminology as well as the current place
    image = "assets/images/guide/case-studies/wallet-scrutiny/research-findings-wallet-scrutiny.png"
    retina = "assets/images/guide/case-studies/wallet-scrutiny/research-findings-wallet-scrutiny@2x.png"
    mobile = "assets/images/guide/case-studies/wallet-scrutiny/research-findings-wallet-scrutiny-mobile.png"
-   alt-text = "An image of the research findings showing the search methods and seo terminology used by people"
+   alt-text = "Research findings showing the search methods and seo terminology used by people"
    width = 800
    height = 220
    layout = "full-width"
@@ -105,11 +105,11 @@ We did a branding exercise with the team to identify the brand personality, proj
 
 - **Brand personality**: A brand personality that felt formal, conventional, functional, inclusive and conservative
 
-- **Strong values**: Transparent,  Approachable, Inviting
+- **Strong values**: Transparent, approachable, inviting
 
 - **Would like users to feel:** Respect for wallet privacy, care about wallet security
 
-- **Colors:** White, Black, warm tones
+- **Colors:** White, black, warm tones
 
 {% include picture.html
    image = "assets/images/guide/case-studies/wallet-scrutiny/logo-wallet-scrutiny.png"
@@ -131,7 +131,7 @@ The brand direction was designed to feel functional and inclusive yet trustworth
 The feeling that a user would get when arriving at the homepage would largely be determined by the tagline as well as the overall feel and branding. We wanted to use color and copy to create an inviting and trustworthy feel for users.
 
 ##### Homepage:
-The copy and UI design was something that we focused on a lot for the homepage. Copy, being an essential part of design, was tricky with a project like Wallet Scrutiny. We had the help of a copy ninja who helped us to create a catchy headline as well as revise all the copy on the homepage and methodology page. The homepage was designed with a strong call to action with the search bar as well as a nice tile overview of the wallets on which reviews have been done. Showing the wallets that passed all the tests right from the homepage and allowing  a filter option to sort through the reviews.
+We focused a lot on copy writing and UI design for the homepage. Copy, being an essential part of design, was tricky with a project like Wallet Scrutiny due to the technical complexity. We had the help of a pseudonymous copy ninja who helped us to create catchy, yet precise and informative, headlines as well as revise all the copy on the homepage and methodology page. The homepage was designed with a strong call to action, search bar, and a nice tile overview of reviewed wallets. Wallets that passed all the tests were shown right on the homepage, with filter options to sort through the reviews.
 
 <div class="center" markdown="1">
 
@@ -140,27 +140,27 @@ The copy and UI design was something that we focused on a lot for the homepage. 
    retina = "/assets/images/guide/case-studies/wallet-scrutiny/homepage-before-after-wallet-scrutiny@2x.png"
    alt-text = "Two side by side images. The first image is the homepage before the re-design, the second page is the homepage after the re-design."
    width = 400
-   height = 89
+   height = 495
    layout = "float-left-desktop"
 %}
 
 **Why**:The strong call to action of typing into the green search box was intentional to allow the user to search straight away for the wallet they are using or were thinking of using.
 
-Essentially there are four main categories that wallets fall into; Android, iPhone, hardware and bearer. We wanted to create a quick filter option of this as well as present a default view of the wallets that passed all the tests.
+There are four main wallet categories; Android, iPhone, hardware and bearer. We wanted to provide a quick filter option as well as a default view of the wallets that passed all the tests.
 
 </div>
 
 ##### Methodology page:
-The methodology page was revised with a focus on two directions. We revised the copy as well as the navigation structure. The page was broken up into three sections. Introduction, tests we run as well as FAQ’s.
+The methodology page was revised with a focus on two directions. We revised the copy as well as the navigation structure. The page was broken up into three sections. Introduction, Tests we run, as well as FAQ’s.
 
 **Why**:
-The original methodology page was a single page outlining the full process.  Trying to find a simple, easy-to-read structure for this diverse mix of security data and test results was a unique challenge. Since the process to evaluate wallets is a lengthy one we decided to break this up into three distinct sections. This change allowed for easier readability and navigation. The copy of the methodology page was also worked on to improve readability by looking for opportunities to simplify the content.
+The original methodology page was a single page outlining the full process. Trying to find a simple, easy-to-read structure for this diverse mix of security data and test results was a unique challenge. Since the process to evaluate wallets is a lengthy one, we decided to break it up into three distinct sections. This change allowed for better readability and navigation. The copy of the methodology page was also worked on to improve readability, by looking for opportunities to simplify the content.
 
 ##### About:
-The about page showcases the team behind the project as well as any public interviews or podcasts as well as who the sponsors are of the project.
+The about page showcases the team behind the project, public interviews and podcasts, and project sponsors.
 
 **Why**:
-The goal of the about page is to create a sense of credibility and trust for the user visiting the website. Showing the supporters of the project as well as a human element showing the team is intentional to create this.
+The goal of the about page is to create a sense of credibility and trust for the user visiting the website. Showing the supporters of the project, as well as a human element showing the team, can help to achieve this.
 
 #### 7. Retest
 The second round of [usability tests](https://github.com/BitcoinDesign/Meta/issues/415#issuecomment-1597285016) were carried out after the redesign of the website to see if the new design allowed for an easier user journey. The research findings can be viewed [here](https://www.figma.com/file/wea86Tp0kqJihuBwoXGGkm/Post-Design-User-feedback?type=design&node-id=0-1&mode=design&t=ZYUaLjqseDukLlZR-0).
@@ -173,23 +173,23 @@ The redesign was appreciated with a lot of enthusiasm. The comments were:
 - **Details:** Developers liked the in depth explanations and the details of what went wrong.
 
 ## Insights
-- **Consensus**: Design is an iterative process that requires the team being on board with the direction of the design as well as the UX strategy. Building consensus was an essential part of the collaborative process.
+- **Consensus**: Design is an iterative process that requires the team to be on board with the design direction and UX strategy. Building consensus was an essential part of the collaboration process.
 
-- **UX research**: Understanding the current user experience during the redesign process helped us to understand the main user flow as well as which areas of the website created the most friction.
+- **UX research**: Understanding the current user experience during the redesign process helped us understand the main user flow and which areas of the website created the most friction.
 
 - **Consider the users goals**: Understanding the user groups who would visit the website helped us to understand the shortest user journey that would help them to meet their main goals. This helped with the information architecture.
 
 - **Trust**: Creating trust throughout the user experience was something that we tried to incorporate using design. This was essential to keeping the user engaged and trusting the reviews.
 
 ## Conclusion
-As a community we really enjoyed working with this project and sprinting towards the redesign of the website. The entire process took about six months in total and we jumped on weekly or bi-weekly calls to keep up the momentum. The redesign of a website is an intricate process that requires a team effort as well as understanding the needs and goals of the people using the website.
+As a community we really enjoyed working with this project and sprinting towards the redesign of the website. The entire process took about six months in total and we jumped on weekly or bi-weekly calls to keep up the momentum. A website redesign is an intricate process that requires a team effort, and truly understanding user needs and goals.
 
-With that said this project is not finished. While we made a lot of changes in the redesign process the next steps with this project are to get the project in front of the world, gather feedback and speak with users and continue to iterate. There is more work to be done on the expert opinions, how the project could integrate Nostr and so contributions to that effort would be much appreciated.
+With that said, this project is not finished. While we made a lot of changes in the redesign process, the next steps are to get the project in front of the world, gather feedback and speak with users and continue to iterate. There is more work to be done on the expert opinions feature and how the project could integrate Nostr. Contributions to that effort would be much appreciated.
 
-## Acknowledgements/Gratitude
-We would like to thank the WalletScrutiny team for their willingness to collaborate as well as members of the Bitcoin Design Community, who rallied together to make the redesign happen. Christoph and Mogashni worked with the team over a longer period of time to make the redesign a reality. We’d also like to give a shout out to our anonymous copy guy. He spent a lot of time rewriting all content for length and clarity and came up with some headlines that really capture what Wallet Scrutiny does, while still being catchy and approachable.
+## Acknowledgements
+We would like to thank the WalletScrutiny team for their willingness to collaborate, as well as members of the Bitcoin Design Community, who rallied together to make the redesign happen. Christoph and Mogashni worked with the team over a longer period of time to make the redesign a reality. We’d also like to give a shout-out to our anonymous copy guy. He spent a lot of time revising all content for length and clarity and came up with some headlines that really capture what Wallet Scrutiny does, while still being catchy and approachable.
 
-Moving forward we will continue to support the project in order to bring more awareness to wallet reproducibility in the form of education as well as support in the design.
+Moving forward, we will continue to support the project in order to bring more awareness to wallet reproducibility in the form of education and design support.
 
 ## Resources
 Previous case studies:
