@@ -144,15 +144,23 @@ Alice scans the QR code from Bob's phone and...
 
 Bob can also send an invite to Alice via the sharing options provided natively by his phone's operating system. If Alice does not have the same application installed that was used to create the wallet, she will be taken to the Apple App Store or the Google Play store. 
 
-Because a specific parameter is passed along in the invite, Alice is directly taken to the wallet import flow for Bob's wallet as soon as the app is installed on her phone.
+Because a specific parameter is passed along in the invite link, Alice is directly taken to the wallet import flow for Bob's wallet, as soon as the app is installed on her phone.
 
 ##### Setting up from file
 
-Lorem ipsum dolor sit amet...
+If Alice wanted to set up the wallet by using the backup file, she would either use a microSD card connector or NFC capabilities to import the file to the phone.
 
-### Refreshing key sets
+### Resetting activation locks
 
-To prevent the recovery key set to be activated, Bob has to spend regularly from the wallet. See the [custom spending conditions page]() for more in-depth information. 
+Here is where it gets tricky. Technically, every UTXO has its own timelock. To prevent the recovery key from being activated, a UTXO has to be spent from the wallet or re-deposited into the wallet. You can check out the [custom spending conditions page]() for more in-depth information about how timelocks work. 
+
+So if Bob has three UTXOs in his wallet, he needs to refresh the timelock three times. This can quickly become cumbersome and costly, as every such transfer implies on-chain transaction fees. 
+
+To reduce this complexity for users, our application only looks at the UTXO that is closest to being unlocked as the trigger. In the background, however, all UTXOs are batched together in one self-transfer transaction. This allows us to show one timelock, which makes it easier to understand for users and is more in line with their expectations. 
+
+An added benefit of this approach is that, as a result, Bob now has only one UTXO in his wallet after the timelock refresh.
+
+To allow for additional flexibility, the application allows users to change the settings of this behavior. They can enable coin control, if they wish to selectively manage timelocks for one or more UTXOs. 
 
 {% include image-gallery.html pages = page.images_lock-reset %}
 
