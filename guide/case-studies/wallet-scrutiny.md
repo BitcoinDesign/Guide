@@ -58,7 +58,7 @@ We came up with a plan of how to best approach the redesign process. The process
 
 - **Webdesign**: UI design: How can we redesign the website to meet the needs of three different user groups?
 
-**Copywriting:** How can we improve the copy of the website?
+- **Copywriting:** How can we improve the copy of the website?
 
 - **Information design**: How can we go into the methodology and best communicate the result of the security reviews?
 How can we create an experience that is easy to navigate and allows the user to perform their main goal when visiting the website?

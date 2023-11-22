@@ -1,3 +1,4 @@
+---
 assets/android-chrome-192x192.png: android-chrome-192x192.png
 assets/android-chrome-512x512.png: android-chrome-512x512.png
 assets/animations/astronaut/images/img_0.png: img_0.png
@@ -2324,11 +2325,10 @@ assets/images/guide/case-studies/wallet-scrutiny/research-fndings-wallet-scrutin
 assets/images/guide/how-it-works/custom-spending-conditions/header-mobile.jpg: header-mobile.jpg
 assets/images/guide/how-it-works/custom-spending-conditions/header-mobile@2x.jpg: header-mobile@2x.jpg
 assets/images/guide/getting-started/visual-language/early-bitcoin-wallet.jpg: early-bitcoin-wallet.jpg
-assets/images/guide/how-it-works/custom-spending-conditions/header-mobile.jpg: header-mobile.jpg
-assets/images/guide/how-it-works/custom-spending-conditions/header-mobile@2x.jpg: header-mobile@2x.jpg
 assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-mobile.jpg: manual-backup-mobile.jpg
 assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-mobile@2x.jpg: manual-backup-mobile@2x.jpg
 assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup-preview.jpg: manual-backup-preview.jpg
 assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup.jpg: manual-backup.jpg
 assets/images/guide/daily-spending-wallet/backup-and-recovery/manual-backup/manual-backup@2x.jpg: manual-backup@2x.jpg
 assets/images/contribute/foundation.png: foundation.png
+assets/images/guide/case-studies/wallet-scrutiny/banner-header-wallet-scrutiny@2x.png: banner-header-wallet-scrutiny@2x.png
