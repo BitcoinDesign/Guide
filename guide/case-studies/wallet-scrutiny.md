@@ -173,13 +173,13 @@ The redesign was appreciated with a lot of enthusiasm. The comments were:
 - **Details:** Developers liked the in depth explanations and the details of what went wrong.
 
 ## Insights
-**Consensus**: Design is an iterative process that requires the team being on board with the direction of the design as well as the UX strategy. Building consensus was an essential part of the collaborative process.
+- **Consensus**: Design is an iterative process that requires the team being on board with the direction of the design as well as the UX strategy. Building consensus was an essential part of the collaborative process.
 
-**UX research**: Understanding the current user experience during the redesign process helped us to understand the main user flow as well as which areas of the website created the most friction.
+- **UX research**: Understanding the current user experience during the redesign process helped us to understand the main user flow as well as which areas of the website created the most friction.
 
-**Consider the users goals**: Understanding the user groups who would visit the website helped us to understand the shortest user journey that would help them to meet their main goals. This helped with the information architecture.
+- **Consider the users goals**: Understanding the user groups who would visit the website helped us to understand the shortest user journey that would help them to meet their main goals. This helped with the information architecture.
 
-**Trust**: Creating trust throughout the user experience was something that we tried to incorporate using design. This was essential to keeping the user engaged and trusting the reviews.
+- **Trust**: Creating trust throughout the user experience was something that we tried to incorporate using design. This was essential to keeping the user engaged and trusting the reviews.
 
 ## Conclusion
 As a community we really enjoyed working with this project and sprinting towards the redesign of the website. The entire process took about six months in total and we jumped on weekly or bi-weekly calls to keep up the momentum. The redesign of a website is an intricate process that requires a team effort as well as understanding the needs and goals of the people using the website.
