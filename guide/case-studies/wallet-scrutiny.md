@@ -23,7 +23,7 @@ image: https://bitcoin.design/assets/images/guide/case-studies/blixt-wallet/blix
 
 ## How it started
 
-In November 2022 the WalletScrutiny project was introduced to the Bitcoin design Community. WalletScrutiny is a small team producing an extensive amount of work and are on a mission to improve their website and increase their reach in the ecosystem. The Bitcoin Design Community kicked off a redesign process with the project to help them reach their goals. The overarching goal was to redesign the website with the goal of improving the user experience.
+In November 2022 the WalletScrutiny project was introduced to the Bitcoin Design Community. WalletScrutiny is a small team producing an extensive amount of work and are on a mission to improve their website and increase their reach in the ecosystem. The Bitcoin Design Community kicked off a redesign process with the project to help them reach their goals. The overarching goal was to redesign the website with the goal of improving the user experience.
 
 ## What does WalletScrutiny do?
 
@@ -57,7 +57,8 @@ We came up with a plan of how to best approach the redesign process. The process
 - **Branding**: How can we create an appealing visual experience and tone of voice that reflects the ethos of the project for the people who visit the website?
 
 - **Webdesign**: UI design: How can we redesign the website to meet the needs of three different user groups?
-Copywriting: How can we improve the copy of the website?
+
+**Copywriting:** How can we improve the copy of the website?
 
 - **Information design**: How can we go into the methodology and best communicate the result of the security reviews?
 How can we create an experience that is easy to navigate and allows the user to perform their main goal when visiting the website?
@@ -75,7 +76,7 @@ One of the goals of the redesign was to ensure that the website served the needs
 
 #### 4. Baseline testing
 
-We began by examining the existing user experience on the website. To gain insights into user interactions, we conducted [usability testing](https://docs.google.com/document/d/1qgRNRS89crQMPPmMQPyuSxh4pu8J55a0u-fdTWhbnOg/edit#heading=h.jp30k554ssst) where participants were given specific tasks to complete on the site. This approach helped us identify key friction points and understand how users typically navigate the website.
+We began by examining the existing user experience on the website. To gain insights into user interactions, we conducted [usability tests](https://docs.google.com/document/d/1qgRNRS89crQMPPmMQPyuSxh4pu8J55a0u-fdTWhbnOg/edit#heading=h.jp30k554ssst) where participants were given specific tasks to complete on the site. This approach helped us identify key friction points and understand how users typically navigate the website.
 
 We interviewed five individuals, all of which found the concept of WalletScrutiny useful. Their responses, combined with various feedback from the Bitcoin Design Community's perspective, resulted in useful [insights](https://www.figma.com/file/uVpHzUkddKjKbzXv3CV1dh/Present-UX-Research?type=design&mode=design&t=JBpvSJ0IybnQb696-0).
 
