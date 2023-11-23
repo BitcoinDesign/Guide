@@ -16,16 +16,32 @@ images_onboarding:
       caption:
 images_primary-keyset:
     - file: primary-keyset/add-wallet-sheet
+      alt:
+      caption: Users create a new wallet or import an existing one.
     - file: primary-keyset/wallet-type
+      alt:
+      caption: The application suggest common setups. If users are unsure, they can go through a guided set of questions to determine a suitable setup. 
     - file: primary-keyset/how-it-works
       alt:
-      caption: Basic home screen to access, send, and receive functionality.
+      caption: Before starting the wallet creation process, the application tells users what the process will look like.
     - file: primary-keyset/choose-pin
+      alt:
+      caption: Users can choose a PIN to protect the wallet in the application.
     - file: primary-keyset/key1-name
+      alt:
+      caption: You can enter a friendly name for this key. This helps to identify them later and also see which keys signed which transactions.
     - file: primary-keyset/key1-import
+      alt:
+      caption: The exact import flow will vary, depending on the specific signing device that is being used.
     - file: primary-keyset/key1-done
+      alt:
+      caption: After a key is imported, the app shows a summary of the current state of the key set. Tapping on the key will show it's details.
     - file: primary-keyset/key-rest-import
+      alt:
+      caption: Repeat the import step for keys number two and three.
     - file: primary-keyset/keyset-review
+      alt:
+      caption: All three keys for the primary key set have been imported.
 images_recovery-keyset:
     - file: recovery-keyset/recovery-keyset-optin
       alt:
@@ -127,17 +143,19 @@ One thing to consider is the fact that the wallet is created only after these st
 
 #### Creating the primary key set
 
-This process is very similar to the one that is covered in the [savings wallet reference design](). The only difference that we will make here is that all signing keys are hardware wallets, whereas the savings wallet one key is held on the mobile device.
+This process for creating the primary key set is very similar to the one that is covered in the [savings wallet reference design](). The only difference that we will make here is that all signing keys are hardware wallets (external signers), whereas in the savings wallet reference design one key is a mobile key.
+
+It's important to think about the target audience to determine the options that you offer. In our example, we assume our users have a basic understanding of how bitcoin wallets work. The application lets them choose from a couple of the most common key schemes. 
+
+However, some users may need help deciding on the best solution for them. Our application gives them an option to run through a set of questions about their specific needs and suggests a setup based on the answers. Power users will find a "Custom" option, which gives them the freedom to define a key scheme from scratch.  
 
 {% include image-gallery.html pages = page.images_primary-keyset %}
 
-<!--
+#### Save for later
 
-TO DO's:
+As you can see, creating a multi-key wallet involves a lot of steps in the wallet application as well as on the signing devices. This can take quite a while, especially if you are creating not only one, but multiple key sets. It also requires that you have all signing keys ready and available beforehand.  
 
-Add gallery of key setup from savings wallet reference design OR just provide a link to it.
-
--->
+To account for this fact, our application offers a feature called "Save for later". This feature allows the user to pause the wallet creation process at any time and pick it up at a later point in time. The current state of the user's progress can be saved locally in the app until the wallet is actually created on-chain.
 
 #### Creating the recovery key set
 
@@ -147,7 +165,7 @@ If the user chooses to create a recovery key set, the application uses smart def
 
 {% include image-gallery.html pages = page.images_recovery-keyset %}
 
-Users can change the settings of the recovery key set like giving it a more relevant name, changing the key scheme or define a different unlock schedule that is more tailored to their specific needs. They are also able to set up reminders so that the application sends them a push notification before the key set unlocks. 
+Users can change the settings of the recovery key set. They might want to give it a more relevant name, change the key scheme or define a different unlock schedule that is more tailored to their specific needs. They are also able to set up reminders so that the application sends them a push notification before the key set unlocks. 
 
 {% include image-gallery.html pages = page.images_recovery-keyset_edit %}
 
