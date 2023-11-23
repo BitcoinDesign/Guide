@@ -192,10 +192,6 @@ We would like to thank the WalletScrutiny team for their willingness to collabor
 Moving forward, we will continue to support the project in order to bring more awareness to wallet reproducibility in the form of education and design support.
 
 ## Resources
-Previous case studies:
-- [Blixt wallet](https://bitcoin.design/guide/case-studies/blixt-wallet/)
-- [Payjoin](https://bitcoin.design/guide/case-studies/payjoin/)
-
 Links to project resources:
 - [Figma file](https://www.figma.com/file/afzvWhwhxIwhoMans8lQg9/Wallet-Scrutiny?type=design&node-id=1690%3A71714&mode=design&t=rHRO9up7hGZqM3gf-1)
 - [Case Study Guidelines](https://docs.google.com/document/d/1lkipBAdo-re_TCIXgMhddFpGnZU3u6f1svJ06ctjkrk/edit#heading=h.rpf7ryqjg7i5)
