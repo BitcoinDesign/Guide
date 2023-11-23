@@ -27,13 +27,16 @@ images_primary-keyset:
     - file: primary-keyset/key-rest-import
     - file: primary-keyset/keyset-review
 images_recovery-keyset:
-    - file: recovery-keyset/initial
+    - file: recovery-keyset/recovery-keyset-optin
       alt:
-      caption: The user has not yet added a recovery key set.
-    - file: recovery-keyset/add-overview
+      caption: Users can choose to create a recovery key set.
+    - file: recovery-keyset/recovery-keyset-empty
+      alt:
+      caption: The next screen shows the primary key set and lets users add additional ones.
+    - file: recovery-keyset/recovery-keyset-add
       alt:
       caption: The add recovery key set sheet sets smart defaults based on the default key set. This allows users to create recovery key sets with one tap.
-    - file: recovery-keyset/done
+    - file: recovery-keyset/recovery-keyset-done
       alt:
       caption: The recovery key set has been added and can still be edited.
 images_recovery-keyset_edit:
