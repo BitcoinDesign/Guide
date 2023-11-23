@@ -116,7 +116,7 @@ We did a branding exercise with the team to identify the brand personality, proj
    retina = "assets/images/guide/case-studies/wallet-scrutiny/logo-wallet-scrutiny@2x.png"
    mobile = "assets/images/guide/case-studies/wallet-scrutiny/logo-wallet-scrutiny-mobile.png"
    alt-text = "A before and after showing the original logo of the project as well as the logo after the re-design"
-   width = 800
+   width = 794
    height = 186
    layout = "full-width"
 %}
