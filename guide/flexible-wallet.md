@@ -15,9 +15,17 @@ images_onboarding:
       alt:
       caption:
 images_primary-keyset:
-    - file: 
+    - file: primary-keyset/add-wallet-sheet
+    - file: primary-keyset/wallet-type
+    - file: primary-keyset/how-it-works
       alt:
       caption: Basic home screen to access, send, and receive functionality.
+    - file: primary-keyset/choose-pin
+    - file: primary-keyset/key1-name
+    - file: primary-keyset/key1-import
+    - file: primary-keyset/key1-done
+    - file: primary-keyset/key-rest-import
+    - file: primary-keyset/keyset-review
 images_recovery-keyset:
     - file: recovery-keyset/initial
       alt:
@@ -114,21 +122,23 @@ During wallet creation, the user needs to be guided through the following high-l
 
 One thing to consider is the fact that the wallet is created only after these steps are completed In our example, this means completing quite a lot of tasks both in the wallet application itself as well as on the hardware signing devices. For this reason we want the application to be able to save the current state of the wallet creation progress locally, so that users can finish the process later on, if they need to. 
 
-#### Creating the default key set
+#### Creating the primary key set
 
-In order to determine the best setup for Bob's situation, the application runs him through a series of questions. We are not going to  
+This process is very similar to the one that is covered in the [savings wallet reference design](). The only difference that we will make here is that all signing keys are hardware wallets, whereas the savings wallet one key is held on the mobile device.
+
+{% include image-gallery.html pages = page.images_primary-keyset %}
 
 <!--
 
 TO DO's:
 
-Add gallery of key setupfrom savings wallet reference design OR just provide a link to it.
+Add gallery of key setup from savings wallet reference design OR just provide a link to it.
 
 -->
 
 #### Creating the recovery key set
 
-Although recovery key sets are a great way to improve fault tolerance, and thus prevent loss of funds, they should be treated as an optional feature that is not forced on users.
+Although recovery key sets are a great way to improve fault tolerance, and thus prevent loss of funds, we want this option to be treated as an optional feature that is not forced on users.
 
 If the user chooses to create a recovery key set, the application uses smart defaults to propose recovery key sets that are based on the primary key set. This allows users to add recovery key sets with one tap. However, it is easy to change the settings and configuration of the key set.
 
