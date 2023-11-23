@@ -60,10 +60,20 @@ images_recovery-keyset_edit:
     - file: recovery-keyset/edit-scheme
     - file: recovery-keyset/edit-schedule-relative
     - file: recovery-keyset/edit-reminders-on
-images_backup:
-    - file: 
+images_save-for-later:
+    - file: save-for-later/save-initial
       alt:
-      caption: A simplified settings screen to access key recovery.
+      caption: 
+    - file: save-for-later/save-sheet
+      alt:
+      caption: 
+    - file: save-for-later/save-success
+      alt:
+      caption: 
+    - file: save-for-later/save-wallets
+      alt:
+      caption: 
+
 images_cosigner:
     - file: 
       alt:
@@ -139,7 +149,7 @@ During wallet creation, the user needs to be guided through the following high-l
 4. Add the emergency key set that is available immediately (1-of-1 in our case).
 5. Register the corresponding signing key.
 
-One thing to consider is the fact that the wallet is created only after these steps are completed In our example, this means completing quite a lot of tasks both in the wallet application itself as well as on the hardware signing devices. For this reason we want the application to be able to save the current state of the wallet creation progress locally, so that users can finish the process later on, if they need to. 
+One thing to consider is the fact that the wallet is created only after these steps are completed In our example, this means completing quite a lot of tasks both in the wallet application itself as well as on the hardware signing devices. For this reason we want the application to be able to save the current state of the wallet creation progress locally, so that users can finish the process later on if they need to. 
 
 #### Creating the primary key set
 
@@ -151,11 +161,15 @@ However, some users may need help deciding on the best solution for them. Our ap
 
 {% include image-gallery.html pages = page.images_primary-keyset %}
 
+Since our application allows for creating multiple wallets, the signing keys are saved in the app and can be reused to create additional wallets in the future. 
+
 #### Save for later
 
 As you can see, creating a multi-key wallet involves a lot of steps in the wallet application as well as on the signing devices. This can take quite a while, especially if you are creating not only one, but multiple key sets. It also requires that you have all signing keys ready and available beforehand.  
 
 To account for this fact, our application offers a feature called "Save for later". This feature allows the user to pause the wallet creation process at any time and pick it up at a later point in time. The current state of the user's progress can be saved locally in the app until the wallet is actually created on-chain.
+
+{% include image-gallery.html pages = page.images_save-for-later %}
 
 #### Creating the recovery key set
 
@@ -168,6 +182,8 @@ If the user chooses to create a recovery key set, the application uses smart def
 Users can change the settings of the recovery key set. They might want to give it a more relevant name, change the key scheme or define a different unlock schedule that is more tailored to their specific needs. They are also able to set up reminders so that the application sends them a push notification before the key set unlocks. 
 
 {% include image-gallery.html pages = page.images_recovery-keyset_edit %}
+
+There is no real technical limit to how complex these wallet setups can become. Depending on your target audience, it might make sense to keep the scope of your product limited. For example, it might make sense to define a maximim number of key sets that can be created per wallet. Or maybe you only allow certain types of timelocks to be created. 
 
 ### Wallet backup
 
@@ -223,9 +239,9 @@ If Alice wanted to set up the wallet by using the backup file, she would either 
 
 ### Spending from the wallet
 
-Creating transactions and spending from the wallet works like with any other multi-key wallet. We have covered how this works on the [savings wallet reference design](/guide/savings-wallet/#making-small-payments), if you ware curious about that.  
+Creating transactions and spending from the wallet works like with any other multi-key wallet. We have covered how this works on the [savings wallet reference design](/guide/savings-wallet/#making-small-payments), if you are curious about that.  
 
-### Managing key sets
+### Key set activation and reset
 
 Technically, every UTXO has its own timelock. To prevent the recovery key from being activated, a UTXO has to be spent and re-deposited into the wallet. So if Bob has three UTXOs in his wallet that he received at different times, he then needs to refresh the timelock three times. This can quickly become cumbersome and costly, as every such transfer implies on-chain transaction fees. You can check out the [custom spending conditions page]() for more in-depth information about how timelocks work.
 
@@ -319,6 +335,7 @@ Note: this could also live in the upgradeable wallet reference design
 
 - Preventing recovery key sets from activating unnecessarily is an important aspect.
 - Understanding the concept of timelocks and UTXOs, as well as how they relate to each other, is a challenging topic for most users.
+- Well-crafted educational and help content will be critical.
 - Guide users to not create overly complex setups with too many key sets or activation rules.
 - Allow for unified timelock reset experience.
 - Provide templates for easy access to common key set configurations.
