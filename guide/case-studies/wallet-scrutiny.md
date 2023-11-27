@@ -6,13 +6,15 @@ nav_order: 4
 parent: Case studies
 permalink: /guide/case-studies/wallet-scrutiny/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/case-studies/blixt-wallet/blixt-wallet-preview.jpg
+image: https://bitcoin.design/assets/images/guide/case-studies/walletscrutiny/walletscrutiny-preview.png
 ---
 
 
 {% include picture.html
-   image = "assets/images/guide/case-studies/wallet-scrutiny/banner-header-wallet-scrutiny.png"
-   retina = "assets/images/guide/case-studies/wallet-scrutiny/banner-header-wallet-scrutiny@2x.png"
+   image = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-header.png"
+   retina = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-header@2x.png"
+   mobile = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-mobile.png"
+   mobileRetina = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-mobile@2x.jpg"
    alt-text = "A banner image with two screenshots of the redesigned homepage including the homepage and the individual wallet review page."
    width = 1600
    height = 600
