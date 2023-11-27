@@ -73,22 +73,45 @@ images_save-for-later:
     - file: save-for-later/save-wallets
       alt:
       caption: 
-
-images_cosigner:
-    - file: 
+images_migration:
+    - file: migration/migration-wallet1-settings
       alt:
-      caption: The user has lost access to their cloud storage.
-images_lock-reset:
-    - file: lock-reset/reset-notification
+      caption: 
+    - file: migration/migration-wallet1-export
+      alt:
+      caption:
+    - file: migration/migration-phone2-add-wallet
+      alt:
+      caption:
+    - file: migration/migration-phone2-import-options
+      alt:
+      caption:
+    - file: migration/migration-phone2-scan
+      alt:
+      caption:
+    - file: migration/migration-phone2-review
+      alt:
+      caption:
+    - file: migration/migration-phone2-key-details
+      alt:
+      caption:
+    - file: migration/migration-phone2-finish-import
+      alt:
+      caption:
+    - file: migration/migration-phone2-done
+      alt:
+      caption:
+images_timelock-reset:
+    - file: timelock-reset/reset-notification
       alt:
       caption: The application alerts the user based on their reminder settings.
-    - file: lock-reset/reset-home
+    - file: timelock-reset/reset-home
       alt:
       caption: On the wallet home screen, a countdown indicates when the recovery key set will be activated.
-    - file: lock-reset/reset-review
+    - file: timelock-reset/reset-review
       alt:
       caption: The application tells the user how the activation lock reset works. In the background, UTXOs will be consolidated.
-    - file: lock-reset/reset-done
+    - file: timelock-reset/reset-done
       alt:
       caption: After the reset is complete, the message disappears and the reset transaction is shown in the transaction history.
 ---
@@ -199,7 +222,7 @@ Reference relevant content in existing reference designs and maybe link to the b
 
 -->
 
-### Co-signer onboarding
+### Setting up the wallet app for co-signers
 
 The next step the co-signers set up the wallet on their end. To make this experience easy and seamless, the application allows Bob to invite Alice in a variety of ways:
 
@@ -219,13 +242,7 @@ Add image gallery starting with QR code display on Bob's phone.
 
 The easiest and moste secure way for Alice to get set up is to scan the QR code from Bob's with her phone. If the wallet application is already installed, it will autamatically launch and start the wallet import flow. If it's not installed, Alice will get taken to the app's page on the app store.
 
-<!--
-
-TO DO's:
-
-Add mockup of the share sheet on Bob's phone.
-
--->
+{% include image-gallery.html pages = page.images_migration %}
 
 ##### Setting up from invite
 
@@ -249,7 +266,7 @@ Technically, every UTXO has its own timelock. To prevent the recovery key from b
 
 To reduce this complexity for users, our application offers a "unified" timelock experience. This simply means that it uses the UTXO that is closest to being unlocked as the trigger to start the process. In the background, however, all UTXOs are automatically batched together. This allows us to show one timelock, which makes it easier to understand for users and is more in line with their expectations. An added benefit of this approach is that, as a result, Bob now has only one UTXO in his wallet after the timelock refresh.
 
-{% include image-gallery.html pages = page.images_lock-reset %}
+{% include image-gallery.html pages = page.images_timelock-reset %}
 
 To allow for additional flexibility, our application allows users to change the settings of this behavior. They can enable coin control if they wish to selectively manage timelocks for one or more UTXOs. 
 
@@ -278,6 +295,8 @@ TO DO's:
 ##### Switching to a new phone or computer
 
 One of the most likely use cases to recover a wallet is that users switch to a new phone or computer. This means that they have to re-install the wallet application and recover the wallet itself. As long as Alice is using the same signing device, all she has to do is to import the wallet in the same way as when she originally got set up, as described above. 
+
+{% include image-gallery.html pages = page.images_migration %}
 
 ##### Replacing a new signing device
 
