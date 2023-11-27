@@ -41,9 +41,10 @@ They:
 ## The process
 
 {% include picture.html
-   image = "assets/images/guide/case-studies/wallet-scrutiny/process-wallet-scrutiny.png"
-   retina = "assets/images/guide/case-studies/wallet-scrutiny/process-wallet-scrutiny@2x.png"
-   mobile = "assets/images/guide/case-studies/wallet-scrutiny/process-wallet-scrutiny-mobile.png"
+   image = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-process.png"
+   retina = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-process@2x.png"
+   mobile = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-process-mobile.png"
+   mobileRetina = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-process-mobile@2x.png"
    alt-text = "An image of the seven steps that were taken during the re-design process. Those steps were discovery, UX plan, user groups, baseline testing, rebranding, redesign, retesting"
    width = 800
    height = 225
