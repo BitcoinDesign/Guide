@@ -211,7 +211,7 @@ Links to project resources:
 Next, view the [resources]({{ '/guide/resources' | relative_url }}) a collection of design resources to that can help you design and build better bitcoin products.
 
 {% include next-previous.html
-   previousUrl = "/guide/case-studies"
+   previousUrl = "/guide/case-studies/payjoin/"
    previousName = "Case studies"
    nextUrl = "/guide/case-studies/resources/"
    nextName = "Resources"
