@@ -121,7 +121,7 @@ We did a branding exercise with the team to identify the brand personality, proj
    mobile = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-logo-mobile.png"
    mobileRetina = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-logo-mobile@2x.png"
    alt-text = "A before and after showing the original logo of the project as well as the logo after the re-design"
-   width = 794
+   width = 800
    height = 186
    layout = "full-width"
 %}
@@ -141,8 +141,10 @@ We focused a lot on copy writing and UI design for the homepage. Copy, being an 
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/case-studies/wallet-scrutiny/homepage-before-after-wallet-scrutiny.png"
-   retina = "/assets/images/guide/case-studies/wallet-scrutiny/homepage-before-after-wallet-scrutiny@2x.png"
+   image = "/assets/images/guide/case-studies/walletscrutiny/walletscrutiny-homepage-before-after.png"
+   retina = "/assets/images/guide/case-studies/walletscrutiny/walletscrutiny-homepage-before-after@2x.png"
+   mobile = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-homepage-before-after-mobile.png"
+   mobileRetina = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-homepage-before-after-mobile@2x.png"
    alt-text = "Two side by side images. The first image is the homepage before the re-design, the second page is the homepage after the re-design."
    width = 400
    height = 495
