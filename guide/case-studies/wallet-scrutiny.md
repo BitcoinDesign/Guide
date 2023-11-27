@@ -116,9 +116,10 @@ We did a branding exercise with the team to identify the brand personality, proj
 - **Colors:** White, black, warm tones
 
 {% include picture.html
-   image = "assets/images/guide/case-studies/wallet-scrutiny/logo-wallet-scrutiny.png"
-   retina = "assets/images/guide/case-studies/wallet-scrutiny/logo-wallet-scrutiny@2x.png"
-   mobile = "assets/images/guide/case-studies/wallet-scrutiny/logo-wallet-scrutiny-mobile.png"
+   image = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-logo.png"
+   retina = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-logo@2x.png"
+   mobile = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-logo-mobile.png"
+   mobileRetina = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-logo-mobile@2x.png"
    alt-text = "A before and after showing the original logo of the project as well as the logo after the re-design"
    width = 794
    height = 186
