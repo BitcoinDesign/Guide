@@ -92,9 +92,10 @@ Some of the key insights that came out of the user interviews were the following
 The interviews also revealed the search terminology as well as the current places where people were looking to understand the security of wallets.
 
 {% include picture.html
-   image = "assets/images/guide/case-studies/wallet-scrutiny/research-findings-wallet-scrutiny.png"
-   retina = "assets/images/guide/case-studies/wallet-scrutiny/research-findings-wallet-scrutiny@2x.png"
-   mobile = "assets/images/guide/case-studies/wallet-scrutiny/research-findings-wallet-scrutiny-mobile.png"
+   image = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-research-results.png"
+   retina = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-research-results@2x.png"
+   mobile = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-research-results-mobile.png"
+   mobileRetina = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-research-results-mobile@2x.png"
    alt-text = "Research findings showing the search methods and seo terminology used by people"
    width = 800
    height = 220
