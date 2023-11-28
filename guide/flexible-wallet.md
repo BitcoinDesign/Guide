@@ -176,7 +176,7 @@ One thing to consider is the fact that the wallet is created only after these st
 
 #### Creating the primary key set
 
-This process for creating the primary key set is very similar to the one that is covered in the [savings wallet reference design](). The only difference that we will make here is that all signing keys are hardware wallets (external signers), whereas in the savings wallet reference design one key is a mobile key.
+This process for creating the primary key set is very similar to the one that is covered in the [savings wallet reference design](https://bitcoin.design/guide/savings-wallet/#the-onboarding-experience). The only difference that we will make here is that all signing keys are hardware wallets (external signers), whereas in the savings wallet reference design one key is a mobile key.
 
 It's important to think about the target audience to determine the options that you offer. In our example, we assume our users have a basic understanding of how bitcoin wallets work. The application lets them choose from a couple of the most common key schemes. 
 
@@ -184,7 +184,7 @@ However, some users may need help deciding on the best solution for them. Our ap
 
 {% include image-gallery.html pages = page.images_primary-keyset %}
 
-Since our application allows for creating multiple wallets, the signing keys are saved in the app and can be reused to create additional wallets in the future. 
+Since our application allows for creating multiple wallets, the extended public keys of the signing devices are saved in the app and can be reused to create additional wallets in the future. 
 
 #### Save for later
 
@@ -210,15 +210,16 @@ There is no real technical limit to how complex these wallet setups can become. 
 
 ### Wallet backup
 
-Apart from backing up their private keys, users will need the wallet configuration file or wallet descriptor, if they should ever need to recover their wallet. The wallet descriptor functions like a map, that contains all the information necessary for a wallet application to restore the wallet. Without this map, the wallet cannot be recovered. It is, therefore, critically important that users understand this fact and create a backup of the wallet descriptor.
+Apart from backing up their private keys, users will need the wallet configuration file or [wallet descriptor](https://bitcoin.design/guide/glossary/#output-script-descriptor), if they should ever need to recover their wallet. The wallet descriptor functions like a map that contains all the information necessary for a wallet application to restore the wallet. Without this map, the wallet cannot be recovered. It is, therefore, critically important that users understand this fact and create a backup of the wallet descriptor.
 
-The wallet descriptor does not contain any private key data. This means that it's. However, since it contains extented the public keys, anybody who finds this file can potentially monitor all incoming and outgoing transactions. 
+The wallet descriptor does not contain any private key data. This means that it's not as critical to protect as your private key. However, since it contains extented the public key, anybody who finds this file can potentially monitor all incoming and outgoing transactions for all public keys involved in the wallet. 
 
 <!--
 
 TO DO's:
 
-Reference relevant content in existing reference designs and maybe link to the backups page.
+- Reference relevant content in existing reference designs and maybe link to the backups page.
+- Example wallet descriptor. 
 
 -->
 
@@ -230,19 +231,11 @@ The next step the co-signers set up the wallet on their end. To make this experi
 2. By sending an invite, which contains the wallet descriptor, over email, Nostr, or any messenger app.  
 3. By providing Alice with a copy of the wallet configuration file that was saved as a backup.
 
-<!--
-
-TO DO's:
-
-Add image gallery starting with QR code display on Bob's phone.
-
--->
+{% include image-gallery.html pages = page.images_migration %}
 
 ##### Setting up from QR Code
 
 The easiest and moste secure way for Alice to get set up is to scan the QR code from Bob's with her phone. If the wallet application is already installed, it will autamatically launch and start the wallet import flow. If it's not installed, Alice will get taken to the app's page on the app store.
-
-{% include image-gallery.html pages = page.images_migration %}
 
 ##### Setting up from invite
 
@@ -260,21 +253,17 @@ Creating transactions and spending from the wallet works like with any other mul
 
 ### Key set activation and reset
 
-Technically, every UTXO has its own timelock. To prevent the recovery key from being activated, a UTXO has to be spent and re-deposited into the wallet. So if Bob has three UTXOs in his wallet that he received at different times, he then needs to refresh the timelock three times. This can quickly become cumbersome and costly, as every such transfer implies on-chain transaction fees. You can check out the [custom spending conditions page]() for more in-depth information about how timelocks work.
+Technically, timelocks are not applied at the wallet level but at the UTXO level. This means that every UTXO has its own timelock, based on the time when it was deposited into the wallet. To prevent the recovery key set from being activated, a UTXO has to be spent and re-deposited into the wallet. 
+
+So if Bob has three UTXOs in his wallet that he received at different times, he then needs to refresh the three different timelocks in order to prevent the recovery key set to be activated. This can quickly become cumbersome and costly, as every such transfer implies on-chain transaction fees. You can check out the [custom spending conditions page]() for more in-depth information about how timelocks work.
 
 ##### Preventing key set activation
 
-To reduce this complexity for users, our application offers a "unified" timelock experience. This simply means that it uses the UTXO that is closest to being unlocked as the trigger to start the process. In the background, however, all UTXOs are automatically batched together. This allows us to show one timelock, which makes it easier to understand for users and is more in line with their expectations. An added benefit of this approach is that, as a result, Bob now has only one UTXO in his wallet after the timelock refresh.
+To reduce complexity for users, our application offers a "unified" timelock reset experience. This simply means that it uses the UTXO that is closest to being unlocked as the trigger to start the process. In the background, however, all UTXOs are automatically batched together. This allows us to show one timelock, which makes it easier to understand for users and is more in line with their expectations. An added benefit of this approach is that, as a result, Bob now has only one UTXO in his wallet after the timelock refresh.
 
 {% include image-gallery.html pages = page.images_timelock-reset %}
 
-To allow for additional flexibility, our application allows users to change the settings of this behavior. They can enable coin control if they wish to selectively manage timelocks for one or more UTXOs. 
-
-<!--
-
-NOTE: should we include a mockup for this or just mention it?
-
--->
+To allow for additional flexibility, our application also allows users to change the settings of this behavior. They can enable [coin control](https://bitcoin.design/guide/glossary/#coin-control) if they wish to selectively manage timelocks for one or more UTXOs. 
 
 ##### Resetting activated key sets
 
@@ -294,21 +283,20 @@ TO DO's:
 
 ##### Switching to a new phone or computer
 
-One of the most likely use cases to recover a wallet is that users switch to a new phone or computer. This means that they have to re-install the wallet application and recover the wallet itself. As long as Alice is using the same signing device, all she has to do is to import the wallet in the same way as when she originally got set up, as described above. 
+One of the most likely use cases to recover a wallet is that users switch to a new phone or computer. This means that they have to re-install the wallet application and recover the wallet itself. As long as Alice is using the same signing device, all she has to do is to import the wallet in the same way as when she originally got set up, as described un the co-signer onboarding section above. 
 
-{% include image-gallery.html pages = page.images_migration %}
-
-##### Replacing a new signing device
+##### Replacing a signing device
 
 If Bob wants to replace one of the signing devices he can use the new device with the same wallet, as long as it uses it with the same private key. This might become necessary because the original device is broken or Bob just wants to use a newer model. To do that, he would need to:
 
-1. Restore the the private key on the hardware wallet using the seed phrase backup.
-2. Enable the wallet on the new signing device.  
+1. Restore the the private key on the the new signing device, using the seed phrase backup.
+2. Enable/import the wallet on the new signing device.  
 
 <!--
 
 TO DO's:
 
+- Is that even feasible?
 - Image gallery of the process of activating a new signing device (same sub-steps as in the initial setup).
 
 -->
@@ -330,7 +318,7 @@ To make the wallet creation as seamless as possible, our application offers the 
 <!---
 TO DO:
 
-Image gallery of the migration process, starting with the
+Image gallery of the migration process, starting with the 
 
 Note: this could also live in the upgradeable wallet reference design
 
