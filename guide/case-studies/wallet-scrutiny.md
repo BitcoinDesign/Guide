@@ -14,7 +14,7 @@ image: https://bitcoin.design/assets/images/guide/case-studies/walletscrutiny/he
    image = "assets/images/guide/case-studies/walletscrutiny/header.png"
    retina = "assets/images/guide/case-studies/walletscrutiny/header@2x.png"
    mobile = "assets/images/guide/case-studies/walletscrutiny/header-mobile.png"
-   mobileRetina = "assets/images/guide/case-studies/walletscrutiny/header-mobile@2x.jpg"
+   mobileRetina = "assets/images/guide/case-studies/walletscrutiny/header-mobile@2x.png"
    alt-text = "The homepage of the website as well as the new logo design."
    width = 1600
    height = 600
