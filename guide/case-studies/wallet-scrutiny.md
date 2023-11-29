@@ -15,7 +15,7 @@ image: https://bitcoin.design/assets/images/guide/case-studies/walletscrutiny/he
    retina = "assets/images/guide/case-studies/walletscrutiny/header@2x.png"
    mobile = "assets/images/guide/case-studies/walletscrutiny/header-mobile.png"
    mobileRetina = "assets/images/guide/case-studies/walletscrutiny/header-mobile@2x.jpg"
-   alt-text = "A banner image with two screenshots of the redesigned homepage including the homepage and the individual wallet review page."
+   alt-text = "The homepage of the website as well as the new logo design."
    width = 1600
    height = 600
    layout = "full-width"
