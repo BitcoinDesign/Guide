@@ -90,15 +90,15 @@ images_archive:
 images_visuals:
     - file: visual-horizontal-cards
       modalImage: visual-horizontal-cards-big
-      alt:
+      alt: Screen showing a horizontal list of wallet cards with a list of payments underneath
       caption: Rectangular cards that are also used to switch wallets.
     - file: visual-card-screen
       modalImage: visual-card-screen-big
-      alt:
+      alt: Screen showing six colorful cards representing wallets
       caption: Square cards are more compact. Note the indicators of layer and wallet type.
     - file: visual-customization
       modalImage: visual-customization-big
-      alt:
+      alt: Screen for choosing name, color and emoji for a wallet
       caption: Some wallets allow for customizing each wallets visual for personalization.
 ---
 
@@ -118,7 +118,7 @@ Illustration sources
    retina = "/assets/images/guide/multiple-wallets/multi-wallet@2x.jpg"
    mobile = "/assets/images/guide/multiple-wallets/multi-wallet-mobile.jpg"
    mobileRetina = "/assets/images/guide/multiple-wallets/multi-wallet-mobile@2x.jpg"
-   alt-text = "Several tacks of leather wallets on a wooden table"
+   alt-text = "Several stacks of leather wallets on a wooden table"
    width = 1600
    height = 600
    layout = "full-width"
@@ -142,33 +142,127 @@ Illustration sources
    retina = "/assets/images/guide/multiple-wallets/sample@2x.png"
    modalImage = "/assets/images/guide/multiple-wallets/sample-big.png"
    alt-text = "Wallet payments screen with expanded list wallet of wallets"
-   caption = "The wallet selector modal for quickly switching context."
+   caption = "Visual representation of the users wallets."
    width = 250
    height = 541
    layout = "float-right-desktop -background -shadow"
 %}
 
-Bitcoin applications may want to offer their users the ability to actively manage multiple wallets. To guide this reference design, we will look at a scenario of a user who has a partner and child, with all family funds being held in bitcoin. The funds are split up across multiple wallets based on different use cases, security needs, and ownership dynamics. However, all wallets are managed in the same application.
+_Note that this page builds on the other reference designs, which are contextually linked. It may be helpful to refer to them regularly._
 
-Let's assume the user has the following wallets set up:
-
-1. A [lightning wallet]({{ '/guide/daily-spending-wallet/' | relative_url }}) used for personal day-to-day purchases.
-
-2. A [shared wallet]({{ '/guide/shared-wallet/' | relative_url }}), co-managed together with a trusted partner. Amounts are on the low side and convenience is preferred over high security. Based on a 1-of-2 multi-key setup.
-
-3. A child account, which exists on the application layer only. The actual wallet used is the daily spending wallet, so there are no extra keys to manage.
-
-4. A [savings wallet]({{ '/guide/savings-wallet/' | relative_url }}), using a 2-of-3 assisted custody model. Holds funds the user manages for the family.
-
-5. A view-only inheritance wallet. User has a separate PIN for revealing the balance and wallet details. All keys are managed externally.
-
-6. An archived single-key wallet, which the user migrated away from (see the [upgradeable wallet reference design]({{ '/guide/upgradeable-wallet/' | relative_url }})) some time ago in favor of a the savings wallet (see #4).
+Bitcoin applications may want to offer their users the ability to actively manage multiple wallets. To guide this reference design, we will look at a scenario of a user who has a partner and child, with all family funds being held in bitcoin. The funds are split up across multiple wallets, based on different use cases (each of which has unique security needs and ownership dynamics). However, all wallets are managed in the same application.
 
 </div>
 
-Other scenarios for separate wallets could include additional layers like Ecash, or features like separate stablecoins balances. Unless you are intentionally designing a general-purpose application, try to design with specific use cases in mind that you can derive decisions from.
+Let's assume the user has the following wallets set up:
 
-Whichever types of wallets you decide to include in your product, try to guide users towards ones that best fit their use case. Below is an in-complete example for structuring a series of questions that result in a recommended wallet configuration. Users still have the option to adjust before committing.
+---
+
+<div class="center" markdown="1">
+
+{% include picture.html
+  image = "/assets/images/guide/multiple-wallets/icon-spending.png"
+  retina = "/assets/images/guide/multiple-wallets/icon-spending@2x.png"
+  alt-text = "Spending wallet icon"
+  width = 50
+  height = 50
+  layout="float-left"
+%}
+
+A [spending wallet]({{ '/guide/daily-spending-wallet/' | relative_url }}) (lightning) used for personal day-to-day purchases.
+
+</div>
+
+<hr style="margin-top: 15px" />
+
+<div class="center" markdown="1">
+
+{% include picture.html
+  image = "/assets/images/guide/multiple-wallets/icon-family.png"
+  retina = "/assets/images/guide/multiple-wallets/icon-family@2x.png"
+  alt-text = "Family wallet icon"
+  width = 50
+  height = 50
+  layout="float-left"
+%}
+
+A [shared wallet]({{ '/guide/shared-wallet/' | relative_url }}), co-managed together with a trusted partner. Amounts are on the low side and convenience is priority over security. A 1-of-2 multi-key setup.
+
+</div>
+
+<hr style="margin-top: 15px" />
+
+<div class="center" markdown="1">
+
+{% include picture.html
+  image = "/assets/images/guide/multiple-wallets/icon-child.png"
+  retina = "/assets/images/guide/multiple-wallets/icon-child@2x.png"
+  alt-text = "Child wallet icon"
+  width = 50
+  height = 50
+  layout="float-left"
+%}
+
+A child account, which exists on the [application layer](#application-layer-accounts) only. The actual wallet used is the spending wallet (#1), so there are no extra keys to manage.
+
+</div>
+
+<hr style="margin-top: 15px" />
+
+<div class="center" markdown="1">
+
+{% include picture.html
+  image = "/assets/images/guide/multiple-wallets/icon-savings.png"
+  retina = "/assets/images/guide/multiple-wallets/icon-savings@2x.png"
+  alt-text = "Savings wallet icon"
+  width = 50
+  height = 50
+  layout="float-left"
+%}
+
+A [savings wallet]({{ '/guide/savings-wallet/' | relative_url }}), using a 2-of-3 assisted custody model. Holds funds the user manages for the family.
+
+</div>
+
+<hr style="margin-top: 15px" />
+
+<div class="center" markdown="1">
+
+{% include picture.html
+  image = "/assets/images/guide/multiple-wallets/icon-inheritance.png"
+  retina = "/assets/images/guide/multiple-wallets/icon-inheritance@2x.png"
+  alt-text = "Inheritance wallet icon"
+  width = 50
+  height = 50
+  layout="float-left"
+%}
+
+A view-only inheritance wallet. User has a separate [PIN]({{ '/guide/daily-spending-wallet/security/#pin-protection' | relative_url }}) for revealing the balance and wallet details. All keys are managed externally.
+
+</div>
+
+<hr style="margin-top: 15px" />
+
+<div class="center" markdown="1">
+
+{% include picture.html
+  image = "/assets/images/guide/multiple-wallets/icon-archive.png"
+  retina = "/assets/images/guide/multiple-wallets/icon-spending@2x.png"
+  alt-text = "Archive wallet icon"
+  width = 50
+  height = 50
+  layout="float-left"
+%}
+
+An archived single-key wallet, which the user migrated away from (see the [upgradeable wallet]({{ '/guide/upgradeable-wallet/' | relative_url }})) some time ago in favor of the savings wallet (#4).
+
+</div>
+
+<hr style="margin-top: 15px" />
+
+Other scenarios for separate wallets could include additional layers like [Ecash](https://en.wikipedia.org/wiki/Ecash), or features like separate [stablecoin](https://en.wikipedia.org/wiki/Stablecoin) balances. Unless you are intentionally designing a general-purpose application, try to design with specific use cases in mind that you can derive decisions from.
+
+Whichever types of wallets you decide to include in your product, try to guide users towards ones that best fit their use case. Below is an example of structuring a series of questions that result in a recommended wallet configuration. Users still have the option to adjust before committing.
 
 {% include image-gallery.html pages = page.images_setup %}
 
@@ -185,15 +279,17 @@ In this reference design, we optimize for users who want to (or need to) explici
 - Wallet-specific settings
 - Conveniently allow switching between wallets
 
-However, we guide users towards using a single, primary private key to construct several wallets. This simplifies the [backup process]({{ '/guide/how-it-works/backups/' | relative_url }}) to reduce the risk of loss of wallet. This is acceptable from a security perspective, because the wallets with larger amounts are either view-only (keys are external), or additionally protected by requiring multiple signatures (from the partner, hardware wallet, or assisted custody provider respectively).
+However, we guide users towards using a single, primary private key to construct several wallets, as shown in the diagram below.
 
 {% include picture.html
    image = "/assets/images/guide/multiple-wallets/key-distribution.png"
    retina = "/assets/images/guide/multiple-wallets/key-distribution@2x.png"
-   alt-text = ""
+   alt-text = "Diagram of how keys are distributed across wallets"
    width = 800
-   height = 398
+   height = 423
 %}
+
+This simplifies the [backup process]({{ '/guide/how-it-works/backups/' | relative_url }}) to reduce the risk of loss of wallet. This is acceptable from a security perspective, because the wallets with larger amounts are either view-only (keys are external), or additionally protected by requiring multiple signatures (from the partner, hardware wallet, or assisted custody provider respectively).
 
 Remember to guide users during wallet setup towards best practices around [progressive security]({{ '/guide/getting-started/principles/#security' | relative_url }}). Even with strong guidance, you often still want to allow users to deviate, to accomodate their unique use case and context.
 
@@ -228,7 +324,7 @@ By default, balance and [activity]({{ '/guide/daily-spending-wallet/activity/' |
    retina = "/assets/images/guide/multiple-wallets/send@2x.png"
    modalImage = "/assets/images/guide/multiple-wallets/send-big.png"
    alt-text = "Send screen with a wallet selector option"
-   caption = "Users can choose which wallet to send from"
+   caption = "Users can choose which wallet to send from."
    width = 250
    height = 541
    layout = "float-right-desktop -background -shadow"
@@ -236,7 +332,9 @@ By default, balance and [activity]({{ '/guide/daily-spending-wallet/activity/' |
 
 A wallet indicator and switcher in the [send flow]({{ '/guide/daily-spending-wallet/sending/' | relative_url }}) is a necessity to keep users informed about which funds will be transferred. Applications may automatically switch wallets to match the given payment information. For example, if the user selects a contact that only has a lightning address, the application should switch to the lightning wallet.
 
-Users should be able to easily override these if they want to act differently based on their current needs and goals. For example, an application may decide that the on-chain wallet is most appropriate for a payment because the lightning wallet is low on liquidity. However the user might be in a rush and prefers to use lightning even if it means paying a swap fee for the additional liquidity.
+Users should be able to easily override these if they want to act differently based on their current needs and goals.
+
+For example, an application may decide that the on-chain wallet is most appropriate for a payment because the lightning wallet is low on liquidity. However the user might be in a rush and prefers to use lightning even if it means paying a swap fee for the additional liquidity.
 
 Note that it is not possible in this design to transfer funds from multiple wallets at once.
 
@@ -246,7 +344,7 @@ Note that it is not possible in this design to transfer funds from multiple wall
 
 In addition to the new "from" selector, the "to" field also needs to be become more flexible to allow for transfers.
 
-Transfers between wallets on different layers include additional complexity and may require either a manual process, or the use of a third-party service (like a [lightning service provider]({{ '/guide/how-it-works/lightning-services/' | relative_url }})).
+Transfers between wallets on different layers may require some additional setup procedures and the use of a third-party service (like a [lightning service provider]({{ '/guide/how-it-works/lightning-services/' | relative_url }})).
 
 {% include image-gallery.html pages = page.images_transfer %}
 
@@ -271,31 +369,63 @@ Payment requests the user shares include the currently selected wallet as well. 
    layout = "float-right-desktop -background -shadow"
 %}
 
-[Settings]({{ '/guide/daily-spending-wallet/settings/' | relative_url }}) are organized into application-wide settings and wallet-specific settings.
+[Settings]({{ '/guide/daily-spending-wallet/settings/' | relative_url }}) are organized into application-wide settings and wallet-specific settings. It should be possible to backup all wallets at once, as well as individually.
 
 A user may choose different security options across wallets, for example, to reduce friction for small lightning payments, and better security for wallets that store larger amounts.
+
+
 
 </div>
 
 ## Archival
 
+<div class="center" markdown="1">
+
+{% include picture.html
+  image = "/assets/images/guide/multiple-wallets/icon-archive.png"
+  retina = "/assets/images/guide/multiple-wallets/icon-archive@2x.png"
+  alt-text = "Archive wallet icon"
+  width = 50
+  height = 50
+  layout="float-left"
+%}
+
 Based on the principle of [progressive security]({{ '/guide/getting-started/principles/#security' | relative_url }}), the [upgradeable wallet reference design]({{ '/guide/upgradeable-wallet/' | relative_url }}) presents an application in which users can move from one security model to another.
 
-An example is a switch from a single-key to a multi-key wallet, because the users funds have increased in value. By necessity, this requires a new wallet to be created and funds moved over. This, and other scenarios, may result in users having multiple older wallets that they no longer actively use. But, they may still want to keep an eye on those wallets in case an unexpected payment arrives.
+</div>
+
+An example is a switch from a single-key to a multi-key wallet, because the users funds have increased in value. By necessity, this requires a new wallet to be created and funds moved over.
+
+This, and other scenarios, may result in users having multiple older wallets that they no longer actively use. But, they may still want to keep an eye on those wallets in case an unexpected payment arrives.
 
 This introduces the need for a wallet archive. Wallets in this archive are tucked away and generally not accessible in the primary user flows. However, the application still looks for incoming transactions and notifies the user accordingly.
 
 {% include image-gallery.html pages = page.images_archive %}
 
-## Alternate approaches
+## Application-layer accounts
 
-#### Card-based wallet visualization
+<div class="center" markdown="1">
 
-A card format sometimes chosen to give wallets a unique look that helps users recognize what it is they are looking at. Some applications also let users customize the appearance, which helps with recognition even more. Regardless of that, it is also recommended to communicate primary properties, like the layer and wallet type (single-key, multi-key, view-only…).
+{% include picture.html
+  image = "/assets/images/guide/multiple-wallets/icon-child.png"
+  retina = "/assets/images/guide/multiple-wallets/icon-child@2x.png"
+  alt-text = "Child wallet icon"
+  width = 50
+  height = 50
+  layout="float-left"
+%}
+
+Accounts that one person completely manages for someone else (like in a child-parent relationship) do not necessarily need to be rooted in a dedicated onchain or lightning account. The application can reserve a certain amount of bitcoin and present it as a separate account. The child can request a payment to be made, which will be forwarded to the parent for approval. If you support this feature, ensure that this dynamic is clearly communicated to prevent misunderstandings and potential abuse.
+
+</div>
+
+## Visualization & personalization
+
+Because wallets are such primary organizational elements, a card format is sometimes chosen to give them a unique look that helps users recognize them even more quickly. Some applications also let users customize the appearance, which helps with recognition even more. It can also be appropriate to communicate wallet properties, like the layer and wallet type (single-key, multi-key, view-only…), if those are helpful to the user in the current context.
 
 {% include image-gallery.html pages = page.images_visuals %}
 
-#### On wallet accounts
+## On wallet accounts
 
 Different applications use the terms wallet and account to refer to different things (see the [glossary wallet page]({{ '/guide/glossary/wallet/' | relative_url }})). A specific meaning to be aware of, and decide whether to support, is that of account path levels in hierarchical deterministic wallets (see [BIP 44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki#user-content-Account)).
 
@@ -306,8 +436,8 @@ However, users should be aware that the accounts have identical security propert
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/daily-spending-wallet/settings/"
-   previousName = "Settings"
-   nextUrl = "/guide/upgradeable-wallet/"
-   nextName = "Upgradeable wallet"
+   previousUrl = "/guide/shared-wallet/"
+   previousName = "Shared wallet"
+   nextUrl = "/guide/how-it-works/"
+   nextName = "How it works"
 %}

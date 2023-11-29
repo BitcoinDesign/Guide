@@ -122,6 +122,6 @@ That's it for reference designs. The next section covers practical explanations 
 {% include next-previous.html
    previousUrl = "/guide/upgradeable-wallet/"
    previousName = "Upgradeable wallet"
-   nextUrl = "/guide/how-it-works/"
-   nextName = "How it works"
+   nextUrl = "/guide/multiple-wallets/"
+   nextName = "Multiple wallets"
 %}
