@@ -136,7 +136,7 @@ The brand direction was designed to feel functional and inclusive yet trustworth
 The feeling that a user would get when arriving at the homepage would largely be determined by the tagline as well as the overall feel and branding. We wanted to use color and copy to create an inviting and trustworthy feel for users.
 
 ##### Homepage:
-We focused a lot on copy writing and UI design for the homepage. Copy, being an essential part of design, was tricky with a project like Wallet Scrutiny due to the technical complexity. We had the help of a pseudonymous copy ninja who helped us to create catchy, yet precise and informative, headlines as well as revise all the copy on the homepage and methodology page. The homepage was designed with a strong call to action, search bar, and a nice tile overview of reviewed wallets. Wallets that passed all the tests were shown right on the homepage, with filter options to sort through the reviews.
+We focused a lot on copy writing and UI design for the homepage. Copy, being an essential part of design, was tricky with a project like WalletScrutiny due to the technical complexity. We had the help of a pseudonymous copy ninja who helped us to create catchy, yet precise and informative, headlines as well as revise all the copy on the homepage and methodology page. The homepage was designed with a strong call to action, search bar, and a nice tile overview of reviewed wallets. Wallets that passed all the tests were shown right on the homepage, with filter options to sort through the reviews.
 
 <div class="center" markdown="1">
 
@@ -158,13 +158,13 @@ There are four main wallet categories; Android, iPhone, hardware and bearer. We 
 </div>
 
 ##### Methodology page:
-The methodology page was revised with a focus on two directions. We revised the copy as well as the navigation structure. The page was broken up into three sections. Introduction, Tests we run, as well as FAQ’s.
+The [methodology page](https://walletscrutiny.com/methodology/) was revised with a focus on two directions. We revised the copy as well as the navigation structure. The page was broken up into three sections. Introduction, Tests we run, as well as FAQ’s.
 
 **Why**:
 The original methodology page was a single page outlining the full process. Trying to find a simple, easy-to-read structure for this diverse mix of security data and test results was a unique challenge. Since the process to evaluate wallets is a lengthy one, we decided to break it up into three distinct sections. This change allowed for better readability and navigation. The copy of the methodology page was also worked on to improve readability, by looking for opportunities to simplify the content.
 
 ##### About:
-The about page showcases the team behind the project, public interviews and podcasts, and project sponsors.
+The [about page](https://walletscrutiny.com/about/) showcases the team behind the project, public interviews and podcasts, and project sponsors.
 
 **Why**:
 The goal of the about page is to create a sense of credibility and trust for the user visiting the website. Showing the supporters of the project, as well as a human element showing the team, can help to achieve this.
@@ -194,7 +194,7 @@ As a community we really enjoyed working with this project and sprinting towards
 With that said, this project is not finished. While we made a lot of changes in the redesign process, the next steps are to get the project in front of the world, gather feedback and speak with users and continue to iterate. There is more work to be done on the expert opinions feature and how the project could integrate Nostr. Contributions to that effort would be much appreciated.
 
 ## Acknowledgements
-We would like to thank the WalletScrutiny team for their willingness to collaborate, as well as members of the Bitcoin Design Community, who rallied together to make the redesign happen. Christoph and Mogashni worked with the team over a longer period of time to make the redesign a reality. We’d also like to give a shout-out to our anonymous copy guy. He spent a lot of time revising all content for length and clarity and came up with some headlines that really capture what Wallet Scrutiny does, while still being catchy and approachable.
+We would like to thank the WalletScrutiny team for their willingness to collaborate, as well as members of the Bitcoin Design Community, who rallied together to make the redesign happen. Christoph and Mogashni worked with the team over a longer period of time to make the redesign a reality. We’d also like to give a shout-out to our anonymous copy guy. He spent a lot of time revising all content for length and clarity and came up with some headlines that really capture what WalletScrutiny does, while still being catchy and approachable.
 
 Moving forward, we will continue to support the project in order to bring more awareness to wallet reproducibility in the form of education and design support.
 
@@ -213,6 +213,6 @@ Next, view the [resources]({{ '/guide/resources' | relative_url }}) a collection
 {% include next-previous.html
    previousUrl = "/guide/case-studies/payjoin/"
    previousName = "Case studies"
-   nextUrl = "/guide/case-studies/resources/"
+   nextUrl = "/guide/resources/"
    nextName = "Resources"
 %}
