@@ -6,15 +6,15 @@ nav_order: 4
 parent: Case studies
 permalink: /guide/case-studies/wallet-scrutiny/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/case-studies/walletscrutiny/walletscrutiny-preview.png
+image: https://bitcoin.design/assets/images/guide/case-studies/walletscrutiny/header-preview.png
 ---
 
 
 {% include picture.html
-   image = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-header.png"
-   retina = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-header@2x.png"
-   mobile = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-mobile.png"
-   mobileRetina = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-mobile@2x.jpg"
+   image = "assets/images/guide/case-studies/walletscrutiny/header.png"
+   retina = "assets/images/guide/case-studies/walletscrutiny/header@2x.png"
+   mobile = "assets/images/guide/case-studies/walletscrutiny/header-mobile.png"
+   mobileRetina = "assets/images/guide/case-studies/walletscrutiny/header-mobile@2x.jpg"
    alt-text = "A banner image with two screenshots of the redesigned homepage including the homepage and the individual wallet review page."
    width = 1600
    height = 600
@@ -41,10 +41,10 @@ They:
 ## The process
 
 {% include picture.html
-   image = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-process.png"
-   retina = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-process@2x.png"
-   mobile = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-process-mobile.png"
-   mobileRetina = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-process-mobile@2x.png"
+   image = "assets/images/guide/case-studies/walletscrutiny/process.png"
+   retina = "assets/images/guide/case-studies/walletscrutiny/process@2x.png"
+   mobile = "assets/images/guide/case-studies/walletscrutiny/process-mobile.png"
+   mobileRetina = "assets/images/guide/case-studies/walletscrutiny/process-mobile@2x.png"
    alt-text = "An image of the seven steps that were taken during the re-design process. Those steps were discovery, UX plan, user groups, baseline testing, rebranding, redesign, retesting"
    width = 800
    height = 225
@@ -92,10 +92,10 @@ Some of the key insights that came out of the user interviews were the following
 The interviews also revealed the search terminology as well as the current places where people were looking to understand the security of wallets.
 
 {% include picture.html
-   image = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-research-results.png"
-   retina = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-research-results@2x.png"
-   mobile = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-research-results-mobile.png"
-   mobileRetina = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-research-results-mobile@2x.png"
+   image = "assets/images/guide/case-studies/walletscrutiny/research-results.png"
+   retina = "assets/images/guide/case-studies/walletscrutiny/research-results@2x.png"
+   mobile = "assets/images/guide/case-studies/walletscrutiny/research-results-mobile.png"
+   mobileRetina = "assets/images/guide/case-studies/walletscrutiny/research-results-mobile@2x.png"
    alt-text = "Research findings showing the search methods and seo terminology used by people"
    width = 800
    height = 220
@@ -116,10 +116,10 @@ We did a branding exercise with the team to identify the brand personality, proj
 - **Colors:** White, black, warm tones
 
 {% include picture.html
-   image = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-logo.png"
-   retina = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-logo@2x.png"
-   mobile = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-logo-mobile.png"
-   mobileRetina = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-logo-mobile@2x.png"
+   image = "assets/images/guide/case-studies/walletscrutiny/logo-before-after.png"
+   retina = "assets/images/guide/case-studies/walletscrutiny/logo-before-after@2x.png"
+   mobile = "assets/images/guide/case-studies/walletscrutiny/logo-before-after-mobile.png"
+   mobileRetina = "assets/images/guide/case-studies/walletscrutiny/logo-before-after-mobile@2x.png"
    alt-text = "A before and after showing the original logo of the project as well as the logo after the re-design"
    width = 800
    height = 186
@@ -141,10 +141,10 @@ We focused a lot on copy writing and UI design for the homepage. Copy, being an 
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "/assets/images/guide/case-studies/walletscrutiny/walletscrutiny-homepage-before-after.png"
-   retina = "/assets/images/guide/case-studies/walletscrutiny/walletscrutiny-homepage-before-after@2x.png"
-   mobile = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-homepage-before-after-mobile.png"
-   mobileRetina = "assets/images/guide/case-studies/walletscrutiny/walletscrutiny-homepage-before-after-mobile@2x.png"
+   image = "/assets/images/guide/case-studies/walletscrutiny/homepage-before-after.png"
+   retina = "/assets/images/guide/case-studies/walletscrutiny/homepage-before-after@2x.png"
+   mobile = "assets/images/guide/case-studies/walletscrutiny/homepage-before-after-mobile.png"
+   mobileRetina = "assets/images/guide/case-studies/walletscrutiny/homepage-before-after-mobile@2x.png"
    alt-text = "Two side by side images. The first image is the homepage before the re-design, the second page is the homepage after the re-design."
    width = 400
    height = 495
