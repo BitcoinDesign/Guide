@@ -148,9 +148,9 @@ Illustration sources
    layout = "float-right-desktop -background -shadow"
 %}
 
-_Note that this page builds on the other reference designs, which are contextually linked. It may be helpful to refer to them regularly._
-
 Bitcoin applications may want to offer their users the ability to actively manage multiple wallets. To guide this reference design, we will look at a scenario of a user who has a partner and child, with all family funds being held in bitcoin. The funds are split up across multiple wallets, based on different use cases (each of which has unique security needs and ownership dynamics). However, all wallets are managed in the same application.
+
+_Note that this page builds on the other reference designs, which are contextually linked. It may be helpful to refer to them regularly._
 
 </div>
 
@@ -164,8 +164,8 @@ Let's assume the user has the following wallets set up:
   image = "/assets/images/guide/multiple-wallets/icon-spending.png"
   retina = "/assets/images/guide/multiple-wallets/icon-spending@2x.png"
   alt-text = "Spending wallet icon"
-  width = 50
-  height = 50
+  width = 60
+  height = 60
   layout="float-left"
 %}
 
@@ -181,8 +181,8 @@ A [spending wallet]({{ '/guide/daily-spending-wallet/' | relative_url }}) (light
   image = "/assets/images/guide/multiple-wallets/icon-family.png"
   retina = "/assets/images/guide/multiple-wallets/icon-family@2x.png"
   alt-text = "Family wallet icon"
-  width = 50
-  height = 50
+  width = 60
+  height = 60
   layout="float-left"
 %}
 
@@ -198,8 +198,8 @@ A [shared wallet]({{ '/guide/shared-wallet/' | relative_url }}), co-managed toge
   image = "/assets/images/guide/multiple-wallets/icon-child.png"
   retina = "/assets/images/guide/multiple-wallets/icon-child@2x.png"
   alt-text = "Child wallet icon"
-  width = 50
-  height = 50
+  width = 60
+  height = 60
   layout="float-left"
 %}
 
@@ -215,8 +215,8 @@ A child account, which exists on the [application layer](#application-layer-acco
   image = "/assets/images/guide/multiple-wallets/icon-savings.png"
   retina = "/assets/images/guide/multiple-wallets/icon-savings@2x.png"
   alt-text = "Savings wallet icon"
-  width = 50
-  height = 50
+  width = 60
+  height = 60
   layout="float-left"
 %}
 
@@ -232,8 +232,8 @@ A [savings wallet]({{ '/guide/savings-wallet/' | relative_url }}), using a 2-of-
   image = "/assets/images/guide/multiple-wallets/icon-inheritance.png"
   retina = "/assets/images/guide/multiple-wallets/icon-inheritance@2x.png"
   alt-text = "Inheritance wallet icon"
-  width = 50
-  height = 50
+  width = 60
+  height = 60
   layout="float-left"
 %}
 
@@ -249,8 +249,8 @@ A view-only inheritance wallet. User has a separate [PIN]({{ '/guide/daily-spend
   image = "/assets/images/guide/multiple-wallets/icon-archive.png"
   retina = "/assets/images/guide/multiple-wallets/icon-spending@2x.png"
   alt-text = "Archive wallet icon"
-  width = 50
-  height = 50
+  width = 60
+  height = 60
   layout="float-left"
 %}
 
@@ -385,8 +385,8 @@ A user may choose different security options across wallets, for example, to red
   image = "/assets/images/guide/multiple-wallets/icon-archive.png"
   retina = "/assets/images/guide/multiple-wallets/icon-archive@2x.png"
   alt-text = "Archive wallet icon"
-  width = 50
-  height = 50
+  width = 60
+  height = 60
   layout="float-left"
 %}
 
@@ -410,8 +410,8 @@ This introduces the need for a wallet archive. Wallets in this archive are tucke
   image = "/assets/images/guide/multiple-wallets/icon-child.png"
   retina = "/assets/images/guide/multiple-wallets/icon-child@2x.png"
   alt-text = "Child wallet icon"
-  width = 50
-  height = 50
+  width = 60
+  height = 60
   layout="float-left"
 %}
 
