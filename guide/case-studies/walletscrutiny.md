@@ -4,7 +4,7 @@ title: WalletScrutiny
 description: This was a collaboration between WalletScrutiny and the Bitcoin Design Community to help with the redesign of the website.
 nav_order: 4
 parent: Case studies
-permalink: /guide/case-studies/wallet-scrutiny/
+permalink: /guide/case-studies/walletscrutiny/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/case-studies/walletscrutiny/header-preview.png
 ---
