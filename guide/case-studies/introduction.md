@@ -32,6 +32,12 @@ This case study is an analysis and exploration of payjoin's audience, implementa
 
 ---
 
+### [WalletScrutiny]({{ '/guide/case-studies/walletscrutiny' | relative_url }})
+
+This was a collaboration between WalletScrutiny and the Bitcoin Design Community in redesigning the website.
+
+---
+
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/custom-spending-conditions/"
    previousName = "Custom spending conditions"

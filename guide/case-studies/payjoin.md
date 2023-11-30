@@ -305,7 +305,7 @@ Next, view the [resources]({{ '/guide/resources' | relative_url }}) that can hel
 
 {% include next-previous.html
    previousUrl = "/guide/case-studies/blixt-wallet/"
-   previousName = "Blixt wallet case study"
-   nextUrl = "/guide/resources/"
-   nextName = "Resources"
+   previousName = "Blixt Wallet case study"
+   nextUrl = "/guide/case-studies/walletscrutiny/"
+   nextName = "WalletScrutiny"
 %}
