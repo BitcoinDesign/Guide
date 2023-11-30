@@ -47,8 +47,8 @@ Code resources that are based on, or influenced by the Bitcoin Design Guide and 
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/case-studies/payjoin/"
-   previousName = "The Payjoin Experience"
+   previousUrl = "/guide/case-studies/walletscrutiny/"
+   previousName = "WalletScrutiny case study"
    nextUrl = "/guide/resources/design-files/"
    nextName = "Design files"
 %}
