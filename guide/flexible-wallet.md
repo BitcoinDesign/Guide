@@ -101,19 +101,41 @@ images_migration:
     - file: migration/migration-phone2-done
       alt:
       caption:
+images_prevent-unlock:
+    - file: prevent-unlock/prevent-unlock-notification
+      alt:
+      caption: A system push notification informs the user that a key set is about to be activated.
+    - file: prevent-unlock/prevent-unlock-home
+      alt:
+      caption: The home screen shows the same message. It will be skipped, if the user taps on the push notification. 
+    - file: prevent-unlock/prevent-unlock-keyset
+      alt:
+      caption: The key set overview screen shows a list of all UTXOs, including a countdown of when they become available to spend with this key set.
+    - file: prevent-unlock/prevent-unlock-transaction
+      alt:
+      caption: The transaction review screen tells the user that an internal transaction is required to refresh the key set and provides the corresponding details.
+    - file: prevent-unlock/prevent-unlock-done
+      alt:
+      caption: All funds have been consolidated into one UTXO which expires in 180 days.
 images_timelock-reset:
     - file: timelock-reset/reset-notification
       alt:
       caption: The application alerts the user based on their reminder settings.
-    - file: timelock-reset/reset-home
+    - file: timelock-reset/reset-wallet-home
       alt:
-      caption: On the wallet home screen, a countdown indicates when the recovery key set will be activated.
+      caption: The wallet home screen shows a notification that one additional key set is active.
+    - file: timelock-reset/reset-keyset
+      alt:
+      caption: The key set overview screen shows, which funds can be spent with that key set and which ones are not yet available.
     - file: timelock-reset/reset-review
       alt:
       caption: The application tells the user how the activation lock reset works. In the background, UTXOs will be consolidated.
-    - file: timelock-reset/reset-done
+    - file: timelock-reset/reset-done-keyset
       alt:
-      caption: After the reset is complete, the message disappears and the reset transaction is shown in the transaction history.
+      caption: All funds have been consolidated into one UTXO which expires in 180 days.
+    - file: timelock-reset/reset-done-wallet-home
+      alt:
+      caption: On the wallet home screen, the reset transaction is shown in the transaction history.
 ---
 
 <!--
@@ -261,13 +283,15 @@ So if Bob has three UTXOs in his wallet that he received at different times, he 
 
 To reduce complexity for users, our application offers a "unified" timelock reset experience. This simply means that it uses the UTXO that is closest to being unlocked as the trigger to start the process. In the background, however, all UTXOs are automatically batched together. This allows us to show one timelock, which makes it easier to understand for users and is more in line with their expectations. An added benefit of this approach is that, as a result, Bob now has only one UTXO in his wallet after the timelock refresh.
 
-{% include image-gallery.html pages = page.images_timelock-reset %}
+{% include image-gallery.html pages = page.images_prevent-unlock %}
 
 To allow for additional flexibility, our application also allows users to change the settings of this behavior. They can enable [coin control](https://bitcoin.design/guide/glossary/#coin-control) if they wish to selectively manage timelocks for one or more UTXOs. 
 
 ##### Resetting activated key sets
 
 Just because a recovery key set has been activated does not mean that it's too late. You can "deactivate" recovery key sets simply by creating a self-transfer like mentioned above. In our example, the application uses a unified timelock experience that allows the user to reset all UTXOs to their original state in three taps.
+
+{% include image-gallery.html pages = page.images_timelock-reset %}
 
 <!--
 
