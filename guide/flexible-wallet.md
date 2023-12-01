@@ -160,7 +160,7 @@ We will follow the use case outlined as part of the [custom spending conditions 
 
 1. The **default key set** uses a 2-of-3 key scheme spread across three hardware signing devices. No mobile key is involved.
 2. The **recovery key set** uses the same signing keys as the default key set, but it requires only one signature to spend funds. The recovery key set is unlocked after 6 months of wallet inactivity.
-3. A fourth **emergency key** that only Bob knows about is always available to sweep the wallet in case of an emergency.  
+3. A fourth **emergency key** activates after 12 months of wallet inactivity.  
 
 ### Wallet creation
 
