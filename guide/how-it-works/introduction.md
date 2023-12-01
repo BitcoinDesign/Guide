@@ -99,8 +99,8 @@ Overview about advanced capabilities that enable users to create more flexible b
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/shared-wallet/"
-   previousName = "Shared wallet"
+   previousUrl = "/guide/multiple-wallets/"
+   previousName = "Multiple wallets"
    nextUrl = "/guide/how-it-works/backups/"
    nextName = "Bitcoin backups"
 %}
