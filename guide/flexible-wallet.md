@@ -136,6 +136,25 @@ images_timelock-reset:
     - file: timelock-reset/reset-done-wallet-home
       alt:
       caption: On the wallet home screen, the reset transaction is shown in the transaction history.
+images_device-replacement:
+    - file: device-replacement/replacement-start
+      alt:
+    - file: device-replacement/replacement-wallet-settings
+      alt:
+    - file: device-replacement/replacement-wallet-keys
+      alt:
+    - file: device-replacement/replacement-key-details
+      alt:
+    - file: device-replacement/replacement-how-it-works
+      alt:
+    - file: device-replacement/replacement-pairing-flow
+      alt:
+    - file: device-replacement/replacement-confirmation
+      alt:
+    - file: device-replacement/replacement-keys-update-needed
+      alt:
+---
+---
 ---
 
 <!--
@@ -293,15 +312,6 @@ Just because a recovery key set has been activated does not mean that it's too l
 
 {% include image-gallery.html pages = page.images_timelock-reset %}
 
-<!--
-
-TO DO's:
-
-- Visual of the before/after state.
-- Image gallery of the process to reset activated key set. Starting with showing available key sets on the wallet home screen.
-
--->
-
 ### Wallet recovery
 
 
@@ -309,33 +319,26 @@ TO DO's:
 
 One of the most likely use cases to recover a wallet is that users switch to a new phone or computer. This means that they have to re-install the wallet application and recover the wallet itself. As long as Alice is using the same signing device, all she has to do is to import the wallet in the same way as when she originally got set up, as described un the co-signer onboarding section above. 
 
-##### Replacing a signing device
+##### Replacing a signing device with the same private key
 
-If Bob wants to replace one of the signing devices he can use the new device with the same wallet, as long as it uses it with the same private key. This might become necessary because the original device is broken or Bob just wants to use a newer model. To do that, he would need to:
+If Bob wants to replace one of the signing devices he can use the new device with the same wallet, as long as it uses the same private key as the original one. This might become necessary because the original device is broken or Bob just wants to use a newer model. To do that, he will need to:
 
-1. Restore the the private key on the the new signing device, using the seed phrase backup.
-2. Enable/import the wallet on the new signing device.  
+1. Restore the private key on the new signing device, using the seed phrase backup.
+2. Pair the new signing device, since it's extended public key has changed.
+3. Update the other signing devices with the new wallet configuration.  
 
-<!--
-
-TO DO's:
-
-- Is that even feasible?
-- Image gallery of the process of activating a new signing device (same sub-steps as in the initial setup).
-
--->
+{% include image-gallery.html pages = page.images_device-replacement %}
 
 ### Wallet migration
 
-There are several reasons why it might become necessary to migrate to a new wallet. Bob might want to upgrade to a configuration of key setsor replace signing keys. Whatever the reason is, the process looks something like this:
+There are several reasons why it might become necessary to migrate to a new wallet. Bob might just want to upgrade to a new configuration of key sets. Or one of the keys was lost and the wallet needs to be replaced. Whatever the reason is, the process looks something like this:
 
 1. Create a new wallet B.
 2. Move the funds from the current wallet (wallet A) to wallet B.
 3. Archive wallet A, either by keeping it around in the same wallet application or by setting up somewhere else (petentially as a watch-only wallet).
+ 
 
-We also want to make sure that Bob doesn't throw away the backups of the wallet descriptor and the signing keys to wallet A. There still might be funds incoming because someone still has an old address. 
-
-##### Creating the new wallet and moving the funds
+##### Step 1: Creating the new wallet and moving the funds
 
 To make the wallet creation as seamless as possible, our application offers the option to migrate the wallet. It asks Bob whether he wants to create an entirely new setup or use the same configuration with new signing keys.
 
@@ -349,9 +352,9 @@ Note: this could also live in the upgradeable wallet reference design
  --->
 
 
-##### Archiving the old wallet
+##### Step 2: Archiving the old wallet
 
-Bitcoin ipsum dolor sit amet. Whitepaper key pair segwit mining stacking sats soft fork hard fork private key. Address block reward outputs digital signature inputs, key pair blocksize. Halvening transaction.
+Whenever a user moves funds to new wallet, we want to make sure that he doesn't throw away the backups of the wallet descriptor and the signing keys to wallet A. There still might be funds incoming because someone still has an old address. Especially if the wallet has been used for a longer period of time.
 
 <!---
 TO DO:
