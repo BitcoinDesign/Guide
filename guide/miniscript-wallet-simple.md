@@ -42,19 +42,16 @@ images_primary-keyset:
     - file: primary-keyset/keyset-review
       alt:
       caption: All three keys for the primary key set have been imported.
-images_recovery-keyset:
-    - file: recovery-keyset/recovery-keyset-optin
+images_recovery-path-creation:
+    - file: recovery-path-creation/creation-recovery-path-off
       alt:
-      caption: Users can choose to create a recovery key set.
-    - file: recovery-keyset/recovery-keyset-empty
+      caption: Users can choose to eanble a recovery path.
+    - file: recovery-path-creation/creation-recovery-path-on
       alt:
-      caption: The next screen shows the primary key set and lets users add additional ones.
-    - file: recovery-keyset/recovery-keyset-add
+      caption: By default, the recovery path unlocks after 6 months. Users can edit this setting, though.
+    - file: recovery-path-creation/creation-recovery-path-reminders-on
       alt:
-      caption: The add recovery key set sheet sets smart defaults based on the default key set. This allows users to create recovery key sets with one tap.
-    - file: recovery-keyset/recovery-keyset-done
-      alt:
-      caption: The recovery key set has been added and can still be edited.
+      caption: Users can also enable reminders to alert them, before the recovery path unlocks.
 images_save-for-later:
     - file: save-for-later/save-initial
       alt:
@@ -172,7 +169,7 @@ The use case for this design is relatively simple. However, we will be referenci
 
 ### Use case
 
-Our users create a 2-of-3 multi-key wallet for savings. More specifically, the final wallet will contain the following combination of key sets:
+Our users, Bob and Alice, want to create a 2-of-3 multi-key wallet for theirsavings. Bob will hold two keys and his wife, Alice, will hold one key. More specifically, the final wallet will contain the following combination of key sets:
 
 1. By default, two out of three keys are required to create a transaction.
 2. The wallet automatically lowers the amount of signatures needed, if Bob did not spend from the wallet for 6 months.   
@@ -200,7 +197,7 @@ However, some users may need help deciding on the best solution for them. Our ap
 
 As you can see, creating a multi-key wallet involves a lot of steps in the wallet application as well as on the signing devices. This can take quite a while, especially if you are creating not only one, but multiple key sets for a wallet. It also requires that Bob has all signing keys ready and available beforehand.  
 
-It is likely that not all users will be able or willing to go through the entire process in one settin. That's why our application offers a feature called "Save for later". It allows Bob to pause the wallet creation process at any time and finish it later. The application saves current state locally on the device, until the wallet is actually created on-chain.
+It is likely that not all users will be able or willing to go through the entire process in one setting. That's why our application offers a feature called "Save for later". It allows Bob to pause the wallet creation process at any time and finish it later. The application saves current state locally on the device, until the wallet is actually created on-chain.
 
 {% include image-gallery.html pages = page.images_save-for-later %}
 
@@ -208,6 +205,7 @@ It is likely that not all users will be able or willing to go through the entire
 
 Although recovery recovey paths are a great way to increase fault tolerance, and thus prevent loss of funds, we want this option to be treated as an optional feature that is not forced on users.
 
+{% include image-gallery.html pages = page.images_recovery-path-creation %}
 
 ### Wallet backup
 
