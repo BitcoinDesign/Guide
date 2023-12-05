@@ -87,23 +87,29 @@ images_prevent-unlock:
     - file: prevent-unlock/path-refresh-path-overview-after
       alt:
       caption: All funds have been consolidated into one UTXO which expires in 180 days.
-images_timelock-reset:
-    - file: timelock-reset/reset-notification
+images_path-reset:
+    - file: path-reset/path-reset-push-notification
       alt:
-      caption: The application alerts the user based on their reminder settings.
-    - file: timelock-reset/reset-wallet-home
+      caption: 
+    - file: path-reset/path-reset-app-home
       alt:
       caption: The wallet home screen shows a notification that one additional key set is active.
-    - file: timelock-reset/reset-keyset
+    - file: path-reset/path-reset-path-overview-before
       alt:
-      caption: The key set overview screen shows, which funds can be spent with that key set and which ones are not yet available.
-    - file: timelock-reset/reset-review
+      caption: It is clearly indicated which UTXOs are unlocked and which are still locked.
+    - file: path-reset/path-reset-transaction-overview
       alt:
       caption: The application tells the user how the activation lock reset works. In the background, UTXOs will be consolidated.
-    - file: timelock-reset/reset-done-keyset
+    - file: path-reset/path-reset-transaction-waiting
+      alt:
+      caption: The transaction has been sent to the other co-signers for approval.
+    - file: path-reset/path-reset-cosigner-notification
+      alt:
+      caption: As soon as the refresh transaction has been signed by a co-signer, Bob receives another push notification.
+    - file: path-reset/path-reseet-path-overview-after
       alt:
       caption: All funds have been consolidated into one UTXO which expires in 180 days.
-    - file: timelock-reset/reset-done-wallet-home
+    - file: path-reset/path-reset-transactions
       alt:
       caption: On the wallet home screen, the reset transaction is shown in the transaction history.
 images_device-replacement:
@@ -254,6 +260,8 @@ To give users additional flexibility, our application allows users to selectivel
 ##### Refreshing an activated recovery path
 
 Just because a recovery path has been activated does not mean that it's too late. Bob can always refresh it simply by creating the same self-transfer outlined above.
+
+{% include image-gallery.html pages = page.images_path-reset %}
 
 
 ### Wallet recovery
