@@ -278,9 +278,9 @@ Just because a recovery path has been activated does not mean that it's too late
 
 ##### Switching to a new phone or computer
 
-One of the most likely use cases to recover a wallet is that users switch to a new phone or computer. This means that they have to re-install the wallet application and recover the wallet itself. As long as Alice is using the same signing device, all she has to do is to import the wallet in the same way as when she originally got set up, as described un the co-signer onboarding section above. 
+One of the most likely reasons to recover a wallet is that users switch to a new phone or computer. This means that they have to re-install the wallet application and recover the wallet. As long as Alice is using the same signing device as before, all she has to do is to import the wallet in the same way as described in the co-signer onboarding section above. 
 
-##### Replacing a signing device with the same private key
+##### Replacing a signing device (using the same private key)
 
 If Bob wants to replace one of the signing devices he can use the new device with the same wallet, as long as it uses the same private key as the original one. This might become necessary because the original device is broken or Bob just wants to use a newer model. To do that, he will need to:
 
@@ -290,9 +290,7 @@ If Bob wants to replace one of the signing devices he can use the new device wit
 
 {% include image-gallery.html pages = page.images_device-replacement %}
 
-#### Further use cases
-
-So far, we have explored a very simple use case. However, it is possible to create more flexible wallets. We will explore a more advanced use case in the [wallet with emergency key set]() reference design.
+### Conclusions
 
 #### Design considerations
 
@@ -310,6 +308,10 @@ So far, we have explored a very simple use case. However, it is possible to crea
 - Saving not yet created wallet configurations on the application layer.
 - Using Taproot for better privacy and transaction economics.
 - Batching transactions to consolidate UTXOs vs. coin control and selective timelock refresh.
+
+#### Advanced wallet reference designs
+
+So far, we have explored a very simple use case. However, it is possible to create more flexible wallets. We will explore a more advanced use case in the [wallet with emergency key set]() reference design.
 
 **Resources**
 - [Prototype]()
