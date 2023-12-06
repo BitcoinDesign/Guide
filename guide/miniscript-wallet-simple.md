@@ -66,15 +66,6 @@ images_save-for-later:
       alt:
       caption:
 images_cosigner-onboarding:
-    - file: cosigner-onboarding/cosigner-wallet1-home
-      alt:
-      caption:
-    - file: cosigner-onboarding/cosigner-wallet1-settings
-      alt:
-      caption:
-    - file: cosigner-onboarding/cosigner-wallet1-export
-      alt:
-      caption:
     - file: cosigner-onboarding/cosigner-phone2-add-wallet
       alt:
       caption:
