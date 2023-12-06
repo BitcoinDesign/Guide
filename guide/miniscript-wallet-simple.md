@@ -147,7 +147,7 @@ https://www.figma.com/community/file/968416729557947210
    image = "/assets/images/guide/miniscript-wallet-simple/cover.png"
    retina = "/assets/images/guide/miniscript-wallet-simple/cover@2x.png"
    mobile = "/assets/images/guide/miniscript-wallet-simple/cover-mobile.png"
-   mobileRetina = "/assets/images/guide/miniscript-wallet-simplecover-mobile@2x.png"
+   mobileRetina = "/assets/images/guide/miniscript-wallet-simple/cover-mobile@2x.png"
    alt-text = "Image showing a wallet with recovery key sets"
    caption = ""
    width = 1600
@@ -228,7 +228,7 @@ TO DO's:
 
 -->
 
-### Setting up the wallet app for co-signers
+### Co-signer onboarding
 
 The next step the co-signers set up the wallet on their end. To make this experience easy and seamless, the application allows Bob to invite Alice in a variety of ways:
 
@@ -241,7 +241,7 @@ The next step the co-signers set up the wallet on their end. To make this experi
 
 Creating transactions and spending from the wallet works like with any other multi-key wallet. We have covered how this works on the [savings wallet reference design](/guide/savings-wallet/#making-small-payments), if you are curious about that.  
 
-### Recovery path activation and reset
+### Managing the recovery path
 
 Technically, timelocks are not applied at the wallet level but at the UTXO level. This means that every UTXO has its own timelock, based on the time when it was deposited into the wallet. To prevent the recovery path from kicking in and refreshing the timelock, a UTXO has to be spent and re-deposited back into the wallet. Please refer to the [custom spending conditions page]() for more information about how timelocks work. 
 
@@ -283,7 +283,7 @@ If Bob wants to replace one of the signing devices he can use the new device wit
 
 #### Further use cases
 
-So far, we have explored a very simple use case. However, it is possible to create more flexible wallets. We will explore a more advanced use case in the (wallet with emergency key set)[] reference design.
+So far, we have explored a very simple use case. However, it is possible to create more flexible wallets. We will explore a more advanced use case in the [wallet with emergency key set]() reference design.
 
 #### Design considerations
 
