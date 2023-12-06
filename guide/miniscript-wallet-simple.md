@@ -64,7 +64,32 @@ images_save-for-later:
       caption: 
     - file: save-for-later/save-wallets
       alt:
-      caption: 
+      caption:
+images_cosigner-onboarding:
+    - file: cosigner-onboarding/cosigner-wallet1-home
+      alt:
+      caption:
+    - file: cosigner-onboarding/cosigner-wallet1-settings
+      alt:
+      caption:
+    - file: cosigner-onboarding/cosigner-wallet1-export
+      alt:
+      caption:
+    - file: cosigner-onboarding/cosigner-phone2-add-wallet
+      alt:
+      caption:
+    - file: cosigner-onboarding/cosigner-phone2-import-options
+      alt:
+      caption:
+    - file: cosigner-onboarding/cosigner-phone2-import-scan
+      alt:
+      caption:
+    - file: cosigner-onboarding/cosigner-phone2-import-review
+      alt:
+      caption:
+    - file: cosigner-onboarding/cosigner-phone2-done
+      alt:
+      caption:
 images_prevent-unlock:
     - file: prevent-unlock/path-refresh-push-notification
       alt:
@@ -169,35 +194,35 @@ https://www.figma.com/community/file/968416729557947210
 
 In this reference design, we look at a variation of the [savings wallet](). Specifically, we design a wallet application that allows users to enable a simple recovery path that provides even more fault tolerance than a regular multi-key wallet. 
 
-### Introduction
+### Prior reading
 
 The use case for this design is relatively simple. However, we will be referencing some advanced concepts and capabilities that are provided by Miniscript. If you are unfamiliar with the topic, please read the [custom spending conditions page](), before diving deeper into this design.
 
 ### Use case
 
-Our users, Bob and Alice, want to create a 2-of-3 multi-key wallet for theirsavings. Bob will hold two keys and his wife, Alice, will hold one key. More specifically, the final wallet will contain the following combination of key sets:
+A multi-key wallet offers a number of advantages, especially for storing large amounts of funds. Our users, Bob and Alice, want to create a 2-of-3 multi-key wallet for their savings. Bob will hold the first key while his wife, Alice, will hold a second key. In addition, they have the third key locked away in a safety deposit box. 
 
-1. By default, two out of three keys are required to create a transaction.
-2. The wallet automatically lowers the amount of signatures needed, if Bob did not spend from the wallet for 6 months.   
+However, the couple worries about a situation where they lose access to two of the keys. In that case, they would lose all of their savings. To protect themselves against this scenario, our application offers them the possibility to enable a recovery path, which automatically lowers the amount of signatures needed to 1-of-3 after 6 months.   
 
 ### Wallet creation
 
-During wallet creation, the user needs to be guided through the following high-level steps which involve multiple sub-tasks:
+The process for creating the wallet is very similar to the one that is covered in the [savings wallet reference design](https://bitcoin.design/guide/savings-wallet/#the-onboarding-experience). The high-level process looks something like this:
 
 1. Choose the primary key scheme used for spending under normal circumstances (2-of-3 in our case).
 2. Import the three extended public keys keys to the application.
 3. Enable the recovery path.
+4. Download and save the wallet backup.
+
+The main differences for this design is that all signing keys are hardware wallets (external signers) and that our application offers a recovery path.
 
 
-#### Creating the primary key scheme
+#### The primary key scheme
 
-The process for creating the 2-of-3 key set is very similar to the one that is covered in the [savings wallet reference design](https://bitcoin.design/guide/savings-wallet/#the-onboarding-experience). The only difference for our use case is that all signing keys are hardware wallets (external signers).
-
-If you are designing your own product, it's important to think about the target audience to determine the options that you offer. In our example, we assume our users have a basic understanding of how bitcoin wallets work. Therefore, the application lets them choose from a couple of the most common key schemes. 
+Let's start creating the wallet. In our example, we assume our users have a basic understanding of how bitcoin wallets work. Therefore, the application lets them choose from a couple of the most common key schemes. If you are designing your own product, it's important to think about the target audience to determine the options that you offer.
 
 {% include image-gallery.html pages = page.images_primary-keyset %}
 
-However, some users may need help deciding on the best solution for them. Our application gives them an option to run through a set of questions about their specific needs and suggests a setup based on the answers. Power users will find a "Custom" option, which gives them the freedom to define a key scheme from scratch.  
+Some users may need help deciding on the best solution for them. Our application gives them an option to run through a set of questions about their specific needs and suggests a setup based on the answers. Power users will find a "Custom" option, which gives them the freedom to define a key scheme from scratch.  
 
 #### Save for later
 
@@ -219,15 +244,6 @@ Apart from backing up their private keys, users will need the wallet configurati
 
 The wallet descriptor does not contain any private key data. This means that it's not as critical to protect as your private key. However, since it contains all extended public keys, anybody who finds this file can potentially monitor all transactions in real time. 
 
-<!--
-
-TO DO's:
-
-- Reference relevant content in existing reference designs and maybe link to the backups page.
-- Example wallet descriptor. 
-
--->
-
 ### Co-signer onboarding
 
 The next step the co-signers set up the wallet on their end. To make this experience easy and seamless, the application allows Bob to invite Alice in a variety of ways:
@@ -235,6 +251,8 @@ The next step the co-signers set up the wallet on their end. To make this experi
 1. By displaying a QR code that Alice scans with her app (recommended).
 2. By sending an invite, which contains the wallet descriptor, over email, Nostr, or any messenger app.  
 3. By providing Alice with a copy of the wallet configuration file that was saved as a backup.
+
+{% include image-gallery.html pages = page.images_cosigner-onboarding %}
 
 
 ### Spending from the wallet
