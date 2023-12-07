@@ -65,6 +65,13 @@ images_save-for-later:
     - file: save-for-later/save-wallets
       alt:
       caption:
+images_backup:
+    - file: backup/backup-creation
+      alt:
+      caption: 
+    - file: backup/backup-settings
+      alt:
+      caption: 
 images_cosigner-onboarding:
     - file: cosigner-onboarding/cosigner-phone2-add-wallet
       alt:
@@ -183,24 +190,24 @@ https://www.figma.com/community/file/968416729557947210
 
 ---
 
-In this reference design, we look at a variation of the [savings wallet](). Specifically, we design a wallet application that allows users to enable a simple recovery path that provides even more fault tolerance than a regular multi-key wallet. 
+In this reference design, we look at a variation of the [savings wallet reference design](https://bitcoin.design/guide/savings-wallet/). Specifically, we design a wallet application that allows users to enable a simple recovery path in order to provide even more fault tolerance than a regular multi-key wallet. 
 
 ### Prior reading
 
-The use case for this design is relatively simple. However, we will be referencing some advanced concepts and capabilities that are provided by Miniscript. If you are unfamiliar with the topic, please read the [custom spending conditions page](), before diving deeper into this design.
+The use case for this design is relatively simple. However, we will be referencing some advanced bitcoin concepts and capabilities that are provided by [Miniscript](https://bitcoin.design/guide/glossary/#miniscript). If you are unfamiliar with the topic, please read the [custom spending conditions page](https://bitcoin.design/guide/how-it-works/custom-spending-conditions/) before diving deeper into this reference design.
 
 ### Use case
 
-A multi-key wallet offers a number of advantages, especially for storing large amounts of funds. Our users, Bob and Alice, want to create a 2-of-3 multi-key wallet for their savings. Bob will hold the first key while his wife, Alice, will hold a second key. In addition, they have the third key locked away in a safety deposit box. 
+A multi-key wallet offers a number of advantages, especially for storing large amounts of bitcoin. Therefore, Bob and Alice, want to create a 2-of-3 multi-key wallet for their savings. Bob will hold the first key while his wife, Alice, will hold a second key. In addition, they have the third key locked away in a safety deposit box. 
 
-However, the couple worries about a situation where they lose access to two of the keys. In that case, they would lose all of their savings. To protect themselves against this scenario, our application offers them the possibility to enable a recovery path, which automatically lowers the amount of signatures needed to 1-of-3 after 6 months.   
+However, the couple worries about a situation where they lose access to two of the keys. In that case, they would lose all of their savings. To protect themselves against this scenario, our application offers them the possibility to enable a recovery path, which automatically lowers the amount of signatures needed to 1-of-3 after 6 months. This will allow them to lose two keys and still be able to recover their savings. 
 
 ### Wallet creation
 
-The process for creating the wallet is very similar to the one that is covered in the [savings wallet reference design](https://bitcoin.design/guide/savings-wallet/#the-onboarding-experience). The high-level process looks something like this:
+The process for creating the wallet is very similar to the one that is covered in the [savings wallet reference design](https://bitcoin.design/guide/savings-wallet/#the-onboarding-experience). On a high level, these are the steps involved:
 
 1. Choose the primary key scheme used for spending under normal circumstances (2-of-3 in our case).
-2. Import the three extended public keys keys to the application.
+2. Import the three [extended public keys keys](https://bitcoin.design/guide/glossary/#extended-public-key-xpub-ypub-zpub) to the application.
 3. Enable the recovery path.
 4. Download and save the wallet backup.
 
@@ -209,54 +216,74 @@ The main differences for this design is that all signing keys are hardware walle
 
 #### The primary key scheme
 
-Let's start creating the wallet. In our example, we assume our users have a basic understanding of how bitcoin wallets work. Therefore, the application lets them choose from a couple of the most common key schemes. If you are designing your own product, it's important to think about the target audience to determine the options that you offer.
+Let's start creating the wallet. For our product, we assume that our users already have a basic understanding of how bitcoin wallets work. Therefore, the application lets them choose from a couple of the most common key schemes.
 
 {% include image-gallery.html pages = page.images_primary-keyset %}
 
-Some users may need help deciding on the best solution for them. Our application gives them an option to run through a set of questions about their specific needs and suggests a setup based on the answers. Power users will find a "Custom" option, which gives them the freedom to define a key scheme from scratch.  
+Some users may need help deciding on the best solution for them. Our application gives them an option to run through a set of questions about their specific needs and suggests a setup based on the answers. Power users will find a "Custom" option, which gives them the freedom to define a key scheme from scratch.
+
+If you are designing your own product, it is important to think about the target audience to determine the options that you offer.  
 
 #### Save for later
 
-As you can see, creating a multi-key wallet involves a lot of steps in the wallet application as well as on the signing devices. This can take quite a while, especially if you are creating not only one, but multiple key sets for a wallet. It also requires that Bob has all signing keys ready and available beforehand.  
+As you can see, creating a multi-key wallet involves a lot of steps in the wallet application as well as on the corresponding signing devices. This can take quite a while, depending on the chosen key scheme. It also requires that users have all extended public keys ready and available beforehand.  
 
-It is likely that not all users will be able or willing to go through the entire process in one setting. That's why our application offers a feature called "Save for later". It allows Bob to pause the wallet creation process at any time and finish it later. The application saves current state locally on the device, until the wallet is actually created on-chain.
+It is likely that not all users will be able or willing to go through the entire process in one setting. This is why our application offers a feature called "Save for later". It allows users to pause the wallet creation process at any time and pick it up later. The application saves the current state of the wallet locally on the device, until it is actually created on-chain.
 
 {% include image-gallery.html pages = page.images_save-for-later %}
 
 #### Enabling the recovery path
 
-Although recovery recovey paths are a great way to increase fault tolerance, and thus prevent loss of funds, we want this option to be treated as an optional feature that is not forced on users.
+Recovery paths are based on a concept called [timelocks](https://bitcoin.design/guide/how-it-works/custom-spending-conditions/#timelocks). Although they are a great way to increase fault tolerance, and thus prevent loss of funds, we want this option to be treated as an optional feature that is not forced on users.
+
+If the recovery path is enabled, our application uses smart defaults to propose a suitable key scheme, based on the wallet. Since Bob is creating a 2-of-3 wallet, the application will suggest a 1-of-3 recovery path. This recommendation will be different for other wallet types. 
+
+It also suggests that the recovery path will be unlocked after 6 months, if the funds have not been spent. However, Bob can choose a different timeframe.
+
+Our application also provides users to set reminders at different times before the recovery path unlocks.
 
 {% include image-gallery.html pages = page.images_recovery-path-creation %}
 
-### Wallet backup
+Note that the scope of this feature is quite narrow because it is aimed at an audience with basic knowledge of bitcoin. You might want to offer more customization options, based on your own target audience.
 
-Apart from backing up their private keys, users will need the wallet configuration file or [wallet descriptor](https://bitcoin.design/guide/glossary/#output-script-descriptor), if they should ever need to recover their wallet. The wallet descriptor functions like a map that contains all the information necessary for a wallet application to restore the wallet. Without this map, the wallet cannot be recovered. It is, therefore, critically important that users understand this fact and create a backup of the wallet descriptor.
+#### Wallet backup 
 
-The wallet descriptor does not contain any private key data. This means that it's not as critical to protect as your private key. However, since it contains all extended public keys, anybody who finds this file can potentially monitor all transactions in real time. 
+Enabling the recovery path is the final step before the wallet is created on-chain. Once it has been finalized and can be used, our application prompts the user to download the wallet backup file. 
+
+This is important, because users will need the wallet configuration file or the [wallet descriptor](https://bitcoin.design/guide/glossary/#output-script-descriptor), if they should ever need to recover their wallet. The wallet descriptor functions like a map that contains all the information necessary for a wallet application to restore the wallet. Without this map, the wallet cannot be recovered even if you have backups of all private keys. 
+
+{% include image-gallery.html pages = page.images_backup %}
+
+The backup file does not contain any private key data. This means that it is ok to store it digitally in a password manager, for example. However, since it contains all extended public keys, anybody who finds this file can potentially monitor all transactions in real time.
+
+Because they might not want to backup the wallet right away, users will find the backup file and other important information on the wallet settings page at any time. 
+
 
 ### Co-signer onboarding
 
 The next step the co-signers set up the wallet on their end. To make this experience easy and seamless, the application allows Bob to invite Alice in a variety of ways:
 
-1. By displaying a QR code that Alice scans with her app (recommended).
+1. By displaying a QR code that Alice scans with her app.
 2. By sending an invite, which contains the wallet descriptor, over email, Nostr, or any messenger app.  
-3. By providing Alice with a copy of the wallet configuration file that was saved as a backup.
+3. By providing Alice with a copy of the wallet backup file that he saved previously.
 
 {% include image-gallery.html pages = page.images_cosigner-onboarding %}
 
 
 ### Spending from the wallet
 
-Creating transactions and spending from the wallet works like with any other multi-key wallet. We have covered how this works on the [savings wallet reference design](/guide/savings-wallet/#making-small-payments), if you are curious about that.  
+Creating transactions and spending from the wallet works like with any other multi-key wallet. We have covered how this works on the [savings wallet reference design](https://bitcoin.design/guide/savings-wallet/#making-small-payments), if you would like to learn more.  
 
 ### Managing the recovery path
 
-Technically, timelocks are not applied at the wallet level but at the UTXO level. This means that every UTXO has its own timelock, based on the time when it was deposited into the wallet. To prevent the recovery path from kicking in and refreshing the timelock, a UTXO has to be spent and re-deposited back into the wallet. Please refer to the [custom spending conditions page]() for more information about how timelocks work. 
+As mentioned above, recovery paths are powered by timelocks. Technically, however, these timelocks are not applied at the wallet level but at the [UTXO](https://bitcoin.design/guide/glossary/#unspent-transaction-output-utxo) level. This means that every UTXO has its own timelock, based on the time when it was deposited into the wallet. 
 
-So if Bob has three UTXOs in his wallet that he received at different times, he needs to refresh three different timelocks in order to prevent the recovery key set to be activated. This can quickly become cumbersome and costly, as every such transfer implies on-chain transaction fees. 
+To prevent the recovery path from kicking in and refreshing the timelock, a UTXO has to be spent and re-deposited back into the wallet. Please refer to the [custom spending conditions page](https://bitcoin.design/guide/how-it-works/custom-spending-conditions/) for more information about how timelocks work. 
+ 
 
 ##### Preventing recovery path activation
+
+So if Bob has three UTXOs in his wallet which he received at different times, he actually needs to refresh three different timelocks. This can quickly become cumbersome and costly, as every refresh transaction implies on-chain transaction fees.
 
 To reduce this complexity, our application offers a "unified" timelock reset experience by default. This simply means that it uses the UTXO that is closest to being unlocked as the trigger to start the process. In the background, however, all UTXOs are automatically batched together. 
 
@@ -314,9 +341,7 @@ If Bob wants to replace one of the signing devices he can use the new device wit
 So far, we have explored a very simple use case. However, it is possible to create more flexible wallets. We will explore a more advanced use case in the [wallet with emergency key set]() reference design.
 
 **Resources**
-- [Prototype]()
-- [Figma design file]()
-- [Use case]({{ '/guide/designing-products/personal-finance/#savings' | relative_url }})
+- [Figma design file](https://www.figma.com/file/uxZMdWR2HfnKSMC9YWyr2h/Custom-Spending-Conditions?type=design&node-id=5488%3A34453&mode=design&t=V0CzXjW24hJImDHV-1)
 - [Custom spending conditions]({{ '/guide/how-it-works/custom-spending-conditions/' | relative_url }})
 
 ---
