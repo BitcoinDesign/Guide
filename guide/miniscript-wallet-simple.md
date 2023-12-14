@@ -203,17 +203,22 @@ A multi-key wallet offers a number of advantages, especially for storing large a
 
 However, the couple worries about a situation where they lose access to two of the keys. In that case, they would lose all of their savings. To protect themselves against this scenario, our application offers them the possibility to enable a recovery path, which automatically lowers the amount of signatures needed to 1-of-3 after 6 months. This will allow them to lose two keys and still be able to recover their savings. 
 
-### Wallet creation
+### Process overview
 
-The process for creating the wallet is very similar to the one that is covered in the [savings wallet reference design](https://bitcoin.design/guide/savings-wallet/#the-onboarding-experience). On a high level, these are the steps involved:
+Below is a description of the high-level phases involved in setting up and using the wallet described above. For this reference design, we will be focusing mainly on the user flows for wallet creation and recovery.
 
-1. Choose the primary key scheme used for spending under normal circumstances (2-of-3 in our case).
-2. Import the three [extended public keys keys](https://bitcoin.design/guide/glossary/#extended-public-key-xpub-ypub-zpub) to the application.
-3. Enable the recovery path.
-4. Download and save the wallet backup.
+1. Wallet creation
+    -  Choose the primary key scheme used for spending under normal circumstances (2-of-3 in our case).
+    -  Register the signing devices to the wallet by importing the three [extended public keys keys](https://bitcoin.design/guide/glossary/#extended-public-key-xpub-ypub-zpub).
+    - Enable the recovery path.
+2. Wallet backup
+3. Import the wallet to co-signer application
+4. Spending
+5. Recovery
 
-The main differences for this design is that all signing keys are hardware wallets (external signers) and that our application offers a recovery path.
+### Creating the wallet
 
+The process for creating the wallet is very similar to the one that is covered in the [savings wallet reference design](https://bitcoin.design/guide/savings-wallet/#the-onboarding-experience). The main differences for this design is that all signing keys are hardware wallets (external signers) and that our application offers a recovery path.
 
 #### The primary key scheme
 
