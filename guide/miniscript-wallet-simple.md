@@ -14,42 +14,43 @@ images_onboarding:
     - file: onboarding/cover
       alt:
       caption:
-images_primary-keyset:
-    - file: primary-keyset/add-wallet-sheet
+images_creation-wallet-basics:
+    - file: creation-wallet-basics/add-wallet-sheet
       alt:
       caption: Users create a new wallet or import an existing one.
-    - file: primary-keyset/wallet-type
+    - file: creation-wallet-basics/wallet-type
       alt:
       caption: The application suggest common setups. If users are unsure, they can go through a guided set of questions to determine a suitable setup. 
-    - file: primary-keyset/how-it-works
+    - file: creation-wallet-basics/how-it-works
       alt:
       caption: Before starting the wallet creation process, the application tells users what the process will look like.
-    - file: primary-keyset/choose-pin
+    - file: creation-wallet-basics/choose-pin
       alt:
       caption: Users can choose a PIN to protect the wallet in the application.
-    - file: primary-keyset/key1-name
+images_creation-key-import:
+    - file: creation-key-import/key1-name
       alt:
       caption: You can enter a friendly name for this key. This helps to identify them later and also see which keys signed which transactions.
-    - file: primary-keyset/key1-import
+    - file: creation-key-import/key1-import
       alt:
       caption: The exact import flow will vary, depending on the specific signing device that is being used.
-    - file: primary-keyset/key1-done
+    - file: creation-key-import/key1-done
       alt:
       caption: After a key is imported, the app shows a summary of the current state of the key set. Tapping on the key will show it's details.
-    - file: primary-keyset/key-rest-import
+    - file: creation-key-import/key-rest-import
       alt:
       caption: Repeat the import step for keys number two and three.
-    - file: primary-keyset/keyset-review
+    - file: creation-key-import/keyset-review
       alt:
       caption: All three keys for the primary key set have been imported.
-images_recovery-path-creation:
-    - file: recovery-path-creation/creation-recovery-path-off
+images_creation-recovery-path:
+    - file: creation-recovery-path/creation-recovery-path-off
       alt:
       caption: Users can choose to eanble a recovery path.
-    - file: recovery-path-creation/creation-recovery-path-on
+    - file: creation-recovery-path/creation-recovery-path-on
       alt:
       caption: By default, the recovery path unlocks after 6 months. Users can edit this setting, though.
-    - file: recovery-path-creation/creation-recovery-path-reminders-on
+    - file: creation-recovery-path/creation-recovery-path-reminders-on
       alt:
       caption: Users can also enable reminders to alert them, before the recovery path unlocks.
 images_save-for-later:
@@ -218,11 +219,31 @@ The main differences for this design is that all signing keys are hardware walle
 
 Let's start creating the wallet. For our product, we assume that our users already have a basic understanding of how bitcoin wallets work. Therefore, the application lets them choose from a couple of the most common key schemes.
 
-{% include image-gallery.html pages = page.images_primary-keyset %}
+{% include image-gallery.html pages = page.images_creation-wallet-basics %}
 
 Some users may need help deciding on the best solution for them. Our application gives them an option to run through a set of questions about their specific needs and suggests a setup based on the answers. Power users will find a "Custom" option, which gives them the freedom to define a key scheme from scratch.
 
-If you are designing your own product, it is important to think about the target audience to determine the options that you offer.  
+If you are designing your own product, it is important to think about the target audience to determine the options that you offer.
+
+#### Register co-signer keys
+
+After the basics have been defined we need to register all signing keys to the wallet. This is done by importing the extended public keys of the designated signing devices.
+
+{% include image-gallery.html pages = page.images_creation-key-import %}  
+
+#### Enabling the recovery path
+
+The final step of the wallet creation flow is to enable the recovery path. Although they are a great way to increase fault tolerance, and thus prevent loss of funds, we want this option to be treated as an optional feature that is not forced on users.
+
+If the recovery path is enabled, our application uses smart defaults to propose a suitable key scheme, based on the wallet. Since we are creating a 2-of-3 wallet, the application will suggest a 1-of-3 recovery path. This recommendation will be different for other wallet types. 
+
+It also suggests that the recovery path will be unlocked after 6 months, if the funds have not been spent. However, users can always choose a different timeframe that better suits their situation.
+
+In addition, our application also provides users with the option to set reminders at different times before the recovery path unlocks.
+
+{% include image-gallery.html pages = page.images_creation-recovery-path %}
+
+Note that the scope of this feature is quite narrow because it is aimed at an audience with basic knowledge of bitcoin. You might want to offer more customization options, based on your own target audience.
 
 #### Save for later
 
@@ -231,20 +252,6 @@ As you can see, creating a multi-key wallet involves a lot of steps in the walle
 It is likely that not all users will be able or willing to go through the entire process in one setting. This is why our application offers a feature called "Save for later". It allows users to pause the wallet creation process at any time and pick it up later. The application saves the current state of the wallet locally on the device, until it is actually created on-chain.
 
 {% include image-gallery.html pages = page.images_save-for-later %}
-
-#### Enabling the recovery path
-
-Recovery paths are based on a concept called [timelocks](https://bitcoin.design/guide/how-it-works/custom-spending-conditions/#timelocks). Although they are a great way to increase fault tolerance, and thus prevent loss of funds, we want this option to be treated as an optional feature that is not forced on users.
-
-If the recovery path is enabled, our application uses smart defaults to propose a suitable key scheme, based on the wallet. Since Bob is creating a 2-of-3 wallet, the application will suggest a 1-of-3 recovery path. This recommendation will be different for other wallet types. 
-
-It also suggests that the recovery path will be unlocked after 6 months, if the funds have not been spent. However, Bob can choose a different timeframe.
-
-Our application also provides users to set reminders at different times before the recovery path unlocks.
-
-{% include image-gallery.html pages = page.images_recovery-path-creation %}
-
-Note that the scope of this feature is quite narrow because it is aimed at an audience with basic knowledge of bitcoin. You might want to offer more customization options, based on your own target audience.
 
 #### Wallet backup 
 
