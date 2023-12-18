@@ -194,7 +194,7 @@ https://www.figma.com/file/uxZMdWR2HfnKSMC9YWyr2h/Time-based-recovery?type=desig
    layout = "full-width"
 %}
 
-# Savings wallet with recovery path 
+# Time-based recovery 
 {: .no_toc }
 
 ---
