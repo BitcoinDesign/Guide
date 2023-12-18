@@ -89,42 +89,63 @@ images_prevent-unlock:
       caption: A system push notification informs the user that a key set is about to be activated.
     - file: prevent-unlock/path-refresh-app-home
       alt:
-      caption: The home screen shows the same message. It will be skipped, if the user taps on the push notification. 
+      caption: The home screen shows the same message. It will be skipped, if the user taps on the push notification.
     - file: prevent-unlock/path-refresh-path-overview-before
       alt:
       caption: The key set overview screen shows a list of all UTXOs, including a countdown of when the recovery path will be unlocked.
-    - file: prevent-unlock/path-refresh-transaction-overview
+    - file: prevent-unlock/path-refresh-transaction-review
       alt:
       caption: The transaction review screen tells the user that an internal transaction is required to refresh the key set and provides the corresponding details.
-    - file: prevent-unlock/path-refresh-transaction-waiting
+    - file: prevent-unlock/path-refresh-transaction-created
       alt:
-      caption: The transaction needs to be signed by one additional co-signer.
+      caption: 
+    - file: prevent-unlock/path-refresh-transaction-details1
+      alt:
+      caption:
+    - file: prevent-unlock/path-refresh-sign-device
+      alt:
+      caption: 
+    - file: prevent-unlock/path-refresh-transaction-details2
+      alt:
+      caption: 
     - file: prevent-unlock/path-refresh-cosigner-notification
       alt:
       caption: As soon as the refresh transaction has been signed by a co-signer, Bob receives another push notification.
     - file: prevent-unlock/path-refresh-path-overview-after
       alt:
       caption: All funds have been consolidated into one UTXO which expires in 180 days.
+    - file: prevent-unlock/path-refresh-transactions
+      alt:
+      caption:
 images_path-reset:
     - file: path-reset/path-reset-push-notification
       alt:
       caption: 
     - file: path-reset/path-reset-app-home
       alt:
-      caption: The wallet home screen shows a notification that one additional key set is active.
+      caption: The wallet home screen shows a notification that the recover path is active.
     - file: path-reset/path-reset-path-overview-before
       alt:
       caption: It is clearly indicated which UTXOs are unlocked and which are still locked.
-    - file: path-reset/path-reset-transaction-overview
+    - file: path-reset/path-reset-transaction-review
       alt:
-      caption: The application tells the user how the activation lock reset works. In the background, UTXOs will be consolidated.
-    - file: path-reset/path-reset-transaction-waiting
+      caption: The application tells the user how the recovery path reset works. In the background, UTXOs will be consolidated.
+    - file: path-reset/path-reset-transaction-created
       alt:
-      caption: The transaction has been sent to the other co-signers for approval.
+      caption: The transaction has been created and is ready to be signed.
+    - file: path-reset/path-reset-transaction-details1
+      alt:
+      caption: The transaction has to be signed by two signing devices.
+    - file: path-reset/path-reset-sign-device
+      alt:
+      caption: Bob runs through the signing flow on his Trezor.
+    - file: path-reset/path-reset-transaction-details2
+      alt:
+      caption: Bob has signed the transaction with his Trezor.
     - file: path-reset/path-reset-cosigner-notification
       alt:
-      caption: As soon as the refresh transaction has been signed by a co-signer, Bob receives another push notification.
-    - file: path-reset/path-reseet-path-overview-after
+      caption: As soon as Alice has signed the transaction as well, Bob receives another push notification.
+    - file: path-reset/path-reset-path-overview-after
       alt:
       caption: All funds have been consolidated into one UTXO which expires in 180 days.
     - file: path-reset/path-reset-transactions
@@ -139,13 +160,13 @@ images_device-replacement:
       alt:
     - file: device-replacement/replacement-key-details
       alt:
-    - file: device-replacement/replacement-how-it-works
+    - file: device-replacement/replacement-use-case
       alt:
     - file: device-replacement/replacement-pairing-flow
       alt:
     - file: device-replacement/replacement-confirmation
       alt:
-    - file: device-replacement/replacement-keys-update-needed
+    - file: device-replacement/replacement-keys-updated
       alt:
 ---
 
