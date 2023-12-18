@@ -1,19 +1,13 @@
 ---
 layout: guide
-title: Savings wallet with recovery path
+title: Time-based recovery
 description: A UX reference design for a simple multi-key bitcoin wallet a recovery path designed for long term cold storage.
-nav_order: 5
+nav_order: 1
+parent: Savings wallet
 permalink: /guide/miniscript-wallet-simple/
-redirect_from:
- - /guide/case-studies/savings-account/
- - /guide/case-studies/savings-wallet/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/miniscript-wallet-simple/cover.jpg
 image_base: /assets/images/guide/miniscript-wallet-simple/
-images_onboarding:
-    - file: onboarding/cover
-      alt:
-      caption:
 images_creation-wallet-basics:
     - file: creation-wallet-basics/add-wallet-sheet
       alt:
@@ -163,7 +157,7 @@ Simple Miniscript wallet reference design.
 
 Illustration sources
 
-https://www.figma.com/community/file/968416729557947210
+https://www.figma.com/file/uxZMdWR2HfnKSMC9YWyr2h/Time-based-recovery?type=design&node-id=5046%3A3147&mode=design&t=5OZsga2vPqttH4Pl-1
 
 -->
 
@@ -260,16 +254,13 @@ It is likely that not all users will be able or willing to go through the entire
 
 #### Wallet backup 
 
-Enabling the recovery path is the final step before the wallet is created on-chain. Once it has been finalized and can be used, our application prompts the user to download the wallet backup file. 
+Enabling the recovery path is the final step before the wallet is created on-chain. Once it has been finalized and can be used, our application prompts the user to download the wallet backup file. This is important because, for multi-key wallets, it is not enough to back up the private key to recover the wallet. 
 
-This is important, because users will need the wallet configuration file or the [wallet descriptor](https://bitcoin.design/guide/glossary/#output-script-descriptor), if they should ever need to recover their wallet. The wallet descriptor functions like a map that contains all the information necessary for a wallet application to restore the wallet. Without this map, the wallet cannot be recovered even if you have backups of all private keys. 
+The backup file contains all the information necessary to recover the wallet, except the private keys. This means that it is ok to store the file digitally in a password manager, for example. However, since it contains all extended public keys, anybody who finds this file can potentially monitor all transactions in real time.
+
+Because users might not want to back up the wallet right away, users will also be able to access the backup file and other important information on the wallet settings page at any time. 
 
 {% include image-gallery.html pages = page.images_backup %}
-
-The backup file does not contain any private key data. This means that it is ok to store it digitally in a password manager, for example. However, since it contains all extended public keys, anybody who finds this file can potentially monitor all transactions in real time.
-
-Because they might not want to backup the wallet right away, users will find the backup file and other important information on the wallet settings page at any time. 
-
 
 ### Co-signer onboarding
 
@@ -324,8 +315,7 @@ One of the most likely reasons to recover a wallet is that users switch to a new
 If Bob wants to replace one of the signing devices he can use the new device with the same wallet, as long as it uses the same private key as the original one. This might become necessary because the original device is broken or Bob just wants to use a newer model. To do that, he will need to:
 
 1. Restore the private key on the new signing device, using the seed phrase backup.
-2. Pair the new signing device, since it's extended public key has changed.
-3. Update the other signing devices with the new wallet configuration.  
+2. Pair the new signing device, since it has not yet been used with this wallet.  
 
 {% include image-gallery.html pages = page.images_device-replacement %}
 
@@ -348,12 +338,8 @@ If Bob wants to replace one of the signing devices he can use the new device wit
 - Using Taproot for better privacy and transaction economics.
 - Batching transactions to consolidate UTXOs vs. coin control and selective timelock refresh.
 
-#### Advanced wallet reference designs
-
-So far, we have explored a very simple use case. However, it is possible to create more flexible wallets. We will explore a more advanced use case in the [wallet with emergency key set]() reference design.
-
 **Resources**
-- [Figma design file](https://www.figma.com/file/uxZMdWR2HfnKSMC9YWyr2h/Custom-Spending-Conditions?type=design&node-id=5488%3A34453&mode=design&t=V0CzXjW24hJImDHV-1)
+- [Figma design file](https://www.figma.com/file/uxZMdWR2HfnKSMC9YWyr2h/Time-based-recovery?type=design&node-id=5046%3A3147&mode=design&t=5OZsga2vPqttH4Pl-1)
 - [Custom spending conditions]({{ '/guide/how-it-works/custom-spending-conditions/' | relative_url }})
 
 ---
