@@ -153,7 +153,7 @@ images_device-replacement:
 
 Editor's notes
 
-Simple Miniscript wallet reference design.
+This page covers a multi-key wallet that uses timelocks to provide additional recovery options.  
 
 Illustration sources
 
@@ -315,7 +315,7 @@ One of the most likely reasons to recover a wallet is that users switch to a new
 If Bob wants to replace one of the signing devices he can use the new device with the same wallet, as long as it uses the same private key as the original one. This might become necessary because the original device is broken or Bob just wants to use a newer model. To do that, he will need to:
 
 1. Restore the private key on the new signing device, using the seed phrase backup.
-2. Pair the new signing device, since it has not yet been used with this wallet.  
+2. Pair the new signing device.  
 
 {% include image-gallery.html pages = page.images_device-replacement %}
 
