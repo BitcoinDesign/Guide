@@ -6,6 +6,7 @@ parent: Glossary
 nav_order: 2
 permalink: /guide/glossary/wallet/
 main_classes: -no-top-padding
+image: https://bitcoin.design/assets/images/guide/glossary/wallet-header-preview.jpg
 ---
 
 {% include picture.html
