@@ -6,7 +6,7 @@ nav_order: 1
 parent: Savings wallet
 permalink: /guide/miniscript-wallet-simple/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/miniscript-wallet-simple/cover.jpg
+image: https://bitcoin.design/assets/images/guide/miniscript-wallet-simple/preview.jpg
 image_base: /assets/images/guide/miniscript-wallet-simple/
 images_creation-wallet-basics:
     - file: creation-wallet-basics/add-wallet-sheet
