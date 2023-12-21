@@ -278,7 +278,7 @@ Note that the scope of this feature is quite narrow because it is aimed at an au
 
 As you can see, creating a multi-key wallet involves a lot of steps in the wallet application as well as on the corresponding signing devices. This can take quite a while, depending on the chosen key scheme. It also requires that users have all extended public keys ready and available beforehand.  
 
-It is likely that not all users will be able or willing to go through the entire process in one setting. This is why our application offers a feature called "Save for later". It allows users to pause the wallet creation process at any time and pick it up later. The application saves the current state of the wallet locally on the device, until it is actually created on-chain.
+It is likely that not all users will be able or willing to go through the entire process in one setting. This is why our application offers a feature called "Save for later". It allows users to pause the wallet creation process at any time and pick it up later. The application saves the current state of the wallet locally on the device.
 
 {% include image-gallery.html pages = page.images_save-for-later %}
 
