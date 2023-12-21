@@ -74,9 +74,6 @@ images_cosigner-onboarding:
     - file: cosigner-onboarding/cosigner-phone2-import-options
       alt:
       caption:
-    - file: cosigner-onboarding/cosigner-phone2-import-scan
-      alt:
-      caption:
     - file: cosigner-onboarding/cosigner-phone2-import-review
       alt:
       caption:
@@ -113,8 +110,8 @@ images_prevent-unlock:
       caption: 
     - file: prevent-unlock/path-refresh-cosigner-notification
       alt:
-      caption: As soon as the refresh transaction has been signed by a co-signer, Bob receives another push notification.
-    - file: prevent-unlock/path-refresh-path-overview-before
+      caption: As soon as the refresh transaction has been signed by Alice, Bob receives another push notification.
+    - file: prevent-unlock/path-refresh-path-overview-after
       alt:
       caption: The counter has been reset to 180 days.
     - file: prevent-unlock/path-refresh-path-details-after
@@ -254,9 +251,11 @@ Some users may need help deciding on the best solution for them. Our application
 
 If you are designing your own product, it is important to think about the target audience to determine the options that you offer.
 
-#### Connecting the signing devices
+#### Importing the co-signer public keys
 
-After the basics have been defined, all signing devices have to be connected to the wallet. This is done by importing the extended public keys (XPUBs) of the designated signing devices. First, Bob imports the XPUB from his Trezor and a ColdCard that will be placed in the safety deposit box. After that, he hands the phone to Alice, so that she can do the same with her BitBox.
+After the basics have been defined, the extended public keys (XPUBs) of the designated signing devices need to be imported to the wallet application. First, Bob imports the XPUB from his Trezor and a ColdCard that will be placed in the safety deposit box. After that, he hands the phone to Alice, so that she can do the same with her BitBox.
+
+Another way to do this would be for Alice to export her XPUB and send it to Bob over a secure channel.
 
 {% include image-gallery.html pages = page.images_creation-key-import %}  
 
