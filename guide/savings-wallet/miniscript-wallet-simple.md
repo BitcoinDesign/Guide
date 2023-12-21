@@ -4,7 +4,7 @@ title: Time-based recovery
 description: A UX reference design for a simple multi-key bitcoin wallet a recovery path designed for long term cold storage.
 nav_order: 1
 parent: Savings wallet
-permalink: /guide/miniscript-wallet-simple/
+permalink: /guide/savings-wallet/time-based-recovery/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/miniscript-wallet-simple/preview.jpg
 image_base: /assets/images/guide/miniscript-wallet-simple/
