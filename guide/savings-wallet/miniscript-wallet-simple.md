@@ -254,9 +254,9 @@ Some users may need help deciding on the best solution for them. Our application
 
 If you are designing your own product, it is important to think about the target audience to determine the options that you offer.
 
-#### Register co-signer keys
+#### Connecting the signing devices
 
-After the basics have been defined we need to register all signing keys to the wallet. This is done by importing the extended public keys of the designated signing devices.
+After the basics have been defined, all signing devices have to be connected to the wallet. This is done by importing the extended public keys (XPUBs) of the designated signing devices. First, Bob imports the XPUB from his Trezor and a ColdCard that will be placed in the safety deposit box. After that, he hands the phone to Alice, so that she can do the same with her BitBox.
 
 {% include image-gallery.html pages = page.images_creation-key-import %}  
 
@@ -292,13 +292,12 @@ Because users might not want to back up the wallet right away, users will also b
 
 {% include image-gallery.html pages = page.images_backup %}
 
-### Co-signer onboarding
+### Co-signer wallet import
 
-The next step the co-signers set up the wallet on their end. To make this experience easy and seamless, the application allows Bob to invite Alice in a variety of ways:
+There is one final step before Alice and Bob can start using their new savings wallet: Alice nees to import the newly created wallet to the wallet application on her phone. To make this experience easy and seamless, the application allows Bob to share the wallet configuration with Alice in two main ways:
 
-1. By displaying a QR code that Alice scans with her app.
-2. By sending an invite, which contains the wallet descriptor, over email, Nostr, or any messenger app.  
-3. By providing Alice with a copy of the wallet backup file that he saved previously.
+1. By displaying a QR code that Alice scans with her app.  
+2. By sharing the wallet backup file.
 
 {% include image-gallery.html pages = page.images_cosigner-onboarding %}
 
@@ -324,7 +323,7 @@ This allows us to show only one timelock, which makes it easier to understand fo
 
 {% include image-gallery.html pages = page.images_prevent-unlock %}
 
-To give users additional flexibility, our application allows users to selectively manage the refresh behavior for individual UTXOs. This is similar to the [coin control](https://bitcoin.design/guide/glossary/#coin-control) functionality available in many wallet applications. 
+To give users additional flexibility, our application allows users to selectively manage the refresh behavior for individual UTXOs via the advanced options feature. This is similar to the [coin control](https://bitcoin.design/guide/glossary/#coin-control) functionality available in many wallet applications. 
 
 ##### Resetting an activated recovery path
 
