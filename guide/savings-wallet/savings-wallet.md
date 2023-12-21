@@ -296,6 +296,6 @@ Daily and per-transaction spending limits are a unique aspect of this applicatio
 {% include next-previous.html
    previousUrl = "/guide/daily-spending-wallet/settings/"
    previousName = "Settings"
-   nextUrl = "/guide/upgradeable-wallet/"
-   nextName = "Upgradeable wallet"
+   nextUrl = "/guide/savings-wallet/time-based-recovery"
+   nextName = "Time-based recovery"
 %}
