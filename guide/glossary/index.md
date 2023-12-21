@@ -313,9 +313,19 @@ A small piece of data that has all the information needed to generate a specific
    retina = "/assets/images/guide/glossary/descriptors@2x.jpg"
    mobile = "/assets/images/guide/glossary/descriptors-mobile.jpg"
    mobileRetina = "/assets/images/glossary/descriptors-mobile@2x.jpg"
-   alt-text = ""
-   width = 1600
-   height = 400
+   alt-text = "A four-panel comic explaining how descriptors provide instructions for key and address generation"
+   width = 800
+   height = 800
+%}
+
+The image below shows an example and explains the different parts of the descriptor. For more information, see [BIP 380](https://github.com/bitcoin/bips/blob/master/bip-0380.mediawiki), [this tutorial](https://blog.summerofbitcoin.org/miniscript-policy-descriptors-hidden-powers-of-bitcoin/) and [these examples](https://github.com/bitcoin/bitcoin/blob/master/doc/descriptors.md#examples).
+
+{% include picture.html
+   image = "/assets/images/guide/glossary/descriptor-example.png"
+   retina = "/assets/images/guide/glossary/descriptor-example@2x.png"
+   alt-text = "Example code and explanation of parts of an output descriptor"
+   width = 800
+   height = 209
 %}
 
 ### Payment
