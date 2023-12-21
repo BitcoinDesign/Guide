@@ -377,7 +377,7 @@ If Bob wants to replace one of the signing devices he can use the new device wit
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/savings-wallet"
+   previousUrl = "/guide/savings-wallet/"
    previousName = "Savings wallet"
    nextUrl = "/guide/upgradeable-wallet/"
    nextName = "Upgradeable wallet"
