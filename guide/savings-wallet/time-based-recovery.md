@@ -10,170 +10,170 @@ image: https://bitcoin.design/assets/images/guide/miniscript-wallet-simple/previ
 image_base: /assets/images/guide/miniscript-wallet-simple/
 images_creation-wallet-basics:
     - file: creation-wallet-basics/add-wallet-sheet
-      alt:
+      alt: Screen for choosing whether to create a new wallet or import an existing one. Create new wallet is the selected option.
       caption: Users create a new wallet or import an existing one.
     - file: creation-wallet-basics/wallet-type
-      alt:
+      alt: Screen to choose between popular multi-key configurations.
       caption: The application suggest common setups. If users are unsure, they can go through a guided set of questions to determine a suitable setup. 
     - file: creation-wallet-basics/how-it-works
-      alt:
+      alt: Explanation screen that shows a list of the next steps.
       caption: Before starting the wallet creation process, the application tells users what the process will look like.
     - file: creation-wallet-basics/choose-pin
-      alt:
+      alt: Screen that lets users chose a wallet PIN. 
       caption: Users can choose a PIN to protect the wallet in the application.
 images_creation-key-import:
     - file: creation-key-import/key1-name
-      alt:
+      alt: Screen that let's users enter a friendly name for a signing key.
       caption: You can enter a friendly name for this key. This helps to identify them later and also see which keys signed which transactions.
     - file: creation-key-import/key1-import
-      alt:
+      alt: Placeholder screen that represents the import flow for key number one.
       caption: The exact import flow will vary, depending on the specific signing device that is being used.
     - file: creation-key-import/key1-done
-      alt:
+      alt: Overview screen that shows one signing key has been added, while two are still missing.
       caption: After a key is imported, the app shows a summary of the current state of the key set. Tapping on the key will show it's details.
     - file: creation-key-import/key-rest-import
-      alt:
+      alt: Placeholder screen that represents the import flow for keys number two and three.
       caption: Repeat the import step for keys number two and three.
     - file: creation-key-import/keyset-review
-      alt:
+      alt: Overview screen that shows that all keys have been added.
       caption: All three keys for the primary key set have been imported.
 images_creation-recovery-path:
     - file: creation-recovery-path/creation-recovery-path-off
-      alt:
+      alt: Screen that gives users the option to enable the recovery plan. The recovery plan is disabled.
       caption: Users can choose to enable a recovery path.
     - file: creation-recovery-path/creation-recovery-path-on
-      alt:
+      alt: The same screen, but with the recovery plan enabled.
       caption: By default, the recovery path unlocks after 6 months. Users can edit this setting, though.
     - file: creation-recovery-path/creation-recovery-path-reminders-on
-      alt:
+      alt: Screen that let's users set up reminders for their recovery path.
       caption: Users can also enable reminders to alert them, before the recovery path unlocks.
 images_save-for-later:
     - file: save-for-later/save-initial
-      alt:
+      alt: Overview screen that shows one signing key has been added, while two are still missing. It gives users the option to save their progress and continue later.
       caption: 
     - file: save-for-later/save-sheet
-      alt:
+      alt: Confirmation dialog asking the user to confirm saving the current state.
       caption: 
     - file: save-for-later/save-success
-      alt:
+      alt: Sucess message that informs the user that the wallet has been saved.
       caption: 
     - file: save-for-later/save-wallets
-      alt:
+      alt: Wallet overview screen showing an unfinished wallet, with the options to delete the wallet or continue with its creation.
       caption:
 images_backup:
     - file: backup/backup-creation
-      alt:
+      alt: Success screen informing the user that the wallet has been created and he should download the backup file.
       caption: 
     - file: backup/backup-settings
-      alt:
+      alt: Wallet settings screen. 
       caption: 
 images_cosigner-onboarding:
     - file: cosigner-onboarding/cosigner-phone2-add-wallet
-      alt:
+      alt: Screen for choosing whether to create a new wallet or import an existing one. Importing is the selected opton.
       caption:
     - file: cosigner-onboarding/cosigner-phone2-import-options
-      alt:
+      alt: Option screen showing different import methods for the wallet.
       caption:
     - file: cosigner-onboarding/cosigner-phone2-import-review
-      alt:
+      alt: Review screen showing the details of the wallet that is being imported.
       caption:
     - file: cosigner-onboarding/cosigner-phone2-done
-      alt:
+      alt: Wallet home screen.
       caption:
 images_prevent-unlock:
     - file: prevent-unlock/path-refresh-push-notification
-      alt:
+      alt: Smartphone lock screen showing a push notification stating that the recovery path will unlock in three days.
       caption: A system push notification informs the user that a key set is about to be activated.
     - file: prevent-unlock/path-refresh-app-home
-      alt:
+      alt: App home screen, showing a message that the recovery path will expire soon.
       caption: The home screen shows the same message. It will be skipped, if the user taps on the push notification.
     - file: prevent-unlock/path-refresh-path-overview-before
-      alt:
+      alt: Recovery path detail screen showing countdown indicating that the recovery path will activate in three days.
       caption: The recovery path overview screen shows a countdown of when the recovery path will be unlocked, along with the option for a simple reset or advanced options.
     - file: prevent-unlock/path-refresh-path-details-before
-      alt:
+      alt: Advanced option screen showing all three UTXOs (coins) in the wallet, with their respective countdown timers.
       caption: The advanced options screen shows a list of all UTXOs and a countdown of when the recovery path activates for each of them.
     - file: prevent-unlock/path-refresh-transaction-review
-      alt:
+      alt: Review screen showing the transaction details. 
       caption: The transaction review screen tells the user that an internal transaction is required to refresh the key set and provides the corresponding details.
     - file: prevent-unlock/path-refresh-transaction-created
-      alt:
+      alt: Confirmation screen indicating that the transaction has been created and is ready for signing. 
       caption: 
     - file: prevent-unlock/path-refresh-transaction-details1
-      alt:
+      alt: Transaction detail screen, showing that the transaction has not been signed by any device yet.
       caption:
     - file: prevent-unlock/path-refresh-sign-device
-      alt:
+      alt: Placeholder screen representing the signing workflow on his Trezor device.
       caption: 
     - file: prevent-unlock/path-refresh-transaction-details2
-      alt:
+      alt: Transaction detail screen, showing that the transaction has been signed by the Trezor device. Two signatures are still missing.
       caption: 
     - file: prevent-unlock/path-refresh-cosigner-notification
-      alt:
+      alt: Smartphone lock screen showing a push notification that says that Alice has just signed the transaction as well and that the recovery path has been reset.
       caption: As soon as the refresh transaction has been signed by Alice, Bob receives another push notification.
     - file: prevent-unlock/path-refresh-path-overview-after
-      alt:
+      alt: The recovery path overview screen now showing that the countdown timer has been reset. The recovery path will now unlock in 180 days.
       caption: The counter has been reset to 180 days.
     - file: prevent-unlock/path-refresh-path-details-after
-      alt:
+      alt: Advanced options screen shows one UTXO which expires in 180 days.
       caption: The advanced options screen shows that funds have been consolidated into one UTXO which expires in 180 days.
     - file: prevent-unlock/path-refresh-transactions
-      alt:
+      alt: Wallet activity screen showing the recovery path reset transaction.
       caption:
 images_path-reset:
     - file: path-reset/path-reset-push-notification
-      alt:
+      alt: Smartphone lock screen showing a push notification stating that the recovery path has been unlocked.
       caption: 
     - file: path-reset/path-reset-app-home
-      alt:
+      alt: App home screen, showing that the recovery path is active.
       caption: The wallet home screen shows a notification that the recover path is active.
     - file: path-reset/path-reset-path-overview-before
-      alt:
+      alt: Recovery path detail screen. It shows that some funds have been unlocked and can spent with just one signature, while the rest is still locked and requires two signatures to spend.
       caption: The recovery path screen shows how much of the funds can be spent under the recovery path with 1 signature.
     - file: path-reset/path-reset-path-details-before
-      alt:
+      alt: Advanced options screen showing exactly which UTXOs are unlocked and which are still locked.
       caption: The advanced options screen shows which UTXOs are unlocked and which are still locked.
     - file: path-reset/path-reset-transaction-review
-      alt:
+      alt: The transaction review screen tells the user that an internal transaction is required to refresh the key set and provides the corresponding details.
       caption: The application tells the user how the recovery path reset works. In the background, UTXOs will be consolidated.
     - file: path-reset/path-reset-transaction-created
-      alt:
+      alt: Confirmation screen indicating that the transaction has been created and is ready for signing.
       caption: The transaction has been created and is ready to be signed.
     - file: path-reset/path-reset-transaction-details1
-      alt:
+      alt: Transaction detail screen, showing that the transaction has not been signed by any device yet.
       caption: The transaction has to be signed by two signing devices.
     - file: path-reset/path-reset-sign-device
-      alt:
+      alt: Placeholder screen representing the signing workflow on his Trezor device.
       caption: Bob runs through the signing flow on his Trezor.
     - file: path-reset/path-reset-transaction-details2
-      alt:
+      alt: Transaction detail screen, showing that the transaction has been signed by the Trezor device. Two signatures are still missing.
       caption: Bob has signed the transaction with his Trezor.
     - file: path-reset/path-reset-cosigner-notification
-      alt:
+      alt: Smartphone lock screen showing a push notification that says that Alice has just signed the transaction as well and that the recovery path has been reset.
       caption: As soon as Alice has signed the transaction as well, Bob receives another push notification.
     - file: path-reset/path-reset-path-overview-after
-      alt:
+      alt: The recovery path overview screen now showing that the countdown timer has been reset. The recovery path will now unlock in 180 days.
       caption: The recovery path has been reset and activates in 180 days.
     - file: path-reset/path-reset-path-details-after
-      alt:
+      alt: The advanced options screen shows that funds have been consolidated into one UTXO which expires in 180 days.
       caption: The advanced options screen shows that all UTXOs have been consolidated into one.
 images_device-replacement:
     - file: device-replacement/replacement-start
-      alt:
+      alt: Wallet activity screen.
     - file: device-replacement/replacement-wallet-settings
-      alt:
+      alt: Wallet settings overview screen, showing a list of possible settings.
     - file: device-replacement/replacement-wallet-keys
-      alt:
+      alt: Settings detail screen showing all registered signing devices. 
     - file: device-replacement/replacement-key-details
-      alt:
+      alt: Detail screen of the Black ColdCard signing device. The user has the option to replace the device or to replace the signing key.
     - file: device-replacement/replacement-use-case
-      alt:
+      alt: Screen that let's the user chose whether to replace just the Black ColdCard device, using the same private key, or whether to replace it with a different private key. The first option is selected.
     - file: device-replacement/replacement-pairing-flow
-      alt:
+      alt: Placeholder screen representing the pairing flow for the new signing device.
     - file: device-replacement/replacement-confirmation
-      alt:
+      alt: Pairing success confirmation screen.
     - file: device-replacement/replacement-keys-updated
-      alt:
+      alt: Settings detail screen showing all registered signing devices, including the newly added device, which is called Blue Jade.
 ---
 
 <!--
