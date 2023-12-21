@@ -92,7 +92,10 @@ images_prevent-unlock:
       caption: The home screen shows the same message. It will be skipped, if the user taps on the push notification.
     - file: prevent-unlock/path-refresh-path-overview-before
       alt:
-      caption: The key set overview screen shows a list of all UTXOs, including a countdown of when the recovery path will be unlocked.
+      caption: The recovery path overview screen shows a countdown of when the recovery path will be unlocked, along with the option for a simple reset or advanced options.
+    - file: prevent-unlock/path-refresh-path-details-before
+      alt:
+      caption: The advanced options screen shows a list of all UTXOs and a countdown of when the recovery path activates for each of them.
     - file: prevent-unlock/path-refresh-transaction-review
       alt:
       caption: The transaction review screen tells the user that an internal transaction is required to refresh the key set and provides the corresponding details.
@@ -111,9 +114,12 @@ images_prevent-unlock:
     - file: prevent-unlock/path-refresh-cosigner-notification
       alt:
       caption: As soon as the refresh transaction has been signed by a co-signer, Bob receives another push notification.
-    - file: prevent-unlock/path-refresh-path-overview-after
+    - file: prevent-unlock/path-refresh-path-overview-before
       alt:
-      caption: All funds have been consolidated into one UTXO which expires in 180 days.
+      caption: The counter has been reset to 180 days.
+    - file: prevent-unlock/path-refresh-path-details-after
+      alt:
+      caption: The advanced options screen shows that funds have been consolidated into one UTXO which expires in 180 days.
     - file: prevent-unlock/path-refresh-transactions
       alt:
       caption:
