@@ -262,7 +262,7 @@ After the basics have been defined, all signing devices have to be connected to 
 
 #### Enabling the recovery path
 
-The final step of the wallet creation flow is to enable the recovery path. Although they are a great way to increase fault tolerance, and thus prevent loss of funds, we want this option to be treated as an optional feature that is not forced on users.
+The final step of the wallet creation flow is to enable the recovery path. Although they are a great way to increase fault tolerance, and thus prevent loss of funds, we want this option to be treated as an optional feature that is not forced on users. That means we need to provide users with all the information they need to make an appropriate decision.
 
 If the recovery path is enabled, our application uses smart defaults to propose a suitable key scheme, based on the wallet. Since we are creating a 2-of-3 wallet, the application will suggest a 1-of-3 recovery path. This recommendation will be different for other wallet types. 
 
