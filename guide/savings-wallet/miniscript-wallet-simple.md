@@ -40,7 +40,7 @@ images_creation-key-import:
 images_creation-recovery-path:
     - file: creation-recovery-path/creation-recovery-path-off
       alt:
-      caption: Users can choose to eanble a recovery path.
+      caption: Users can choose to enable a recovery path.
     - file: creation-recovery-path/creation-recovery-path-on
       alt:
       caption: By default, the recovery path unlocks after 6 months. Users can edit this setting, though.
