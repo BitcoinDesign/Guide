@@ -132,7 +132,10 @@ images_path-reset:
       caption: The wallet home screen shows a notification that the recover path is active.
     - file: path-reset/path-reset-path-overview-before
       alt:
-      caption: It is clearly indicated which UTXOs are unlocked and which are still locked.
+      caption: The recovery path screen shows how much of the funds can be spent under the recovery path with 1 signature.
+    - file: path-reset/path-reset-path-details-before
+      alt:
+      caption: The advanced options screen shows which UTXOs are unlocked and which are still locked.
     - file: path-reset/path-reset-transaction-review
       alt:
       caption: The application tells the user how the recovery path reset works. In the background, UTXOs will be consolidated.
@@ -153,10 +156,10 @@ images_path-reset:
       caption: As soon as Alice has signed the transaction as well, Bob receives another push notification.
     - file: path-reset/path-reset-path-overview-after
       alt:
-      caption: All funds have been consolidated into one UTXO which expires in 180 days.
-    - file: path-reset/path-reset-transactions
+      caption: The recovery path has been reset and activates in 180 days.
+    - file: path-reset/path-reset-path-details-after
       alt:
-      caption: On the wallet home screen, the reset transaction is shown in the transaction history.
+      caption: The advanced options screen shows that all UTXOs have been consolidated into one.
 images_device-replacement:
     - file: device-replacement/replacement-start
       alt:
@@ -317,15 +320,19 @@ So if Bob has three UTXOs in his wallet which he received at different times, he
 
 To reduce this complexity, our application offers a "unified" timelock reset experience by default. This simply means that it uses the UTXO that is closest to being unlocked as the trigger to start the process. In the background, however, all UTXOs are automatically batched together. 
 
-This allows us to show one timelock, which makes it easier to understand for users and is more in line with their expectations. An added benefit of this approach is that, as a result, Bob has only one UTXO in his wallet after the timelock refresh.
+This allows us to show only one timelock, which makes it easier to understand for users and is more in line with their expectations. An added benefit of this approach is that, as a result, Bob has only one UTXO in his wallet after the recovery path has been reset.
 
 {% include image-gallery.html pages = page.images_prevent-unlock %}
 
 To give users additional flexibility, our application allows users to selectively manage the refresh behavior for individual UTXOs. This is similar to the [coin control](https://bitcoin.design/guide/glossary/#coin-control) functionality available in many wallet applications. 
 
-##### Refreshing an activated recovery path
+##### Resetting an activated recovery path
 
-Just because a recovery path has been activated does not mean that it's too late. Bob can always refresh it simply by creating the same self-transfer outlined above.
+Just because a recovery path has been activated does not mean that it's too late. Bob can always refresh it simply by creating the same self-transfer outlined above. 
+
+In the screen flow below, Bob uses the unified "reset all funds" feature to reset the recovery path. This means that the corresponding transaction requires two signatures, because for some of the funds the recovery path is not yet unlocked. 
+
+If he choses to reset the unlocked funds only, he will need only one signature. However, this would not reset and consolidate all UTXOs. 
 
 {% include image-gallery.html pages = page.images_path-reset %}
 
