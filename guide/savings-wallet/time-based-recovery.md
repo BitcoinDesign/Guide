@@ -4,7 +4,7 @@ title: Time-based recovery
 description: A UX reference design for a simple multi-key bitcoin wallet a recovery path designed for long term cold storage.
 nav_order: 1
 parent: Savings wallet
-permalink: /guide/miniscript-wallet-simple/
+permalink: /guide/savings-wallet/time-based-recovery/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/miniscript-wallet-simple/preview.jpg
 image_base: /assets/images/guide/miniscript-wallet-simple/
@@ -40,7 +40,7 @@ images_creation-key-import:
 images_creation-recovery-path:
     - file: creation-recovery-path/creation-recovery-path-off
       alt:
-      caption: Users can choose to eanble a recovery path.
+      caption: Users can choose to enable a recovery path.
     - file: creation-recovery-path/creation-recovery-path-on
       alt:
       caption: By default, the recovery path unlocks after 6 months. Users can edit this setting, though.
@@ -261,7 +261,7 @@ Another way to do this would be for Alice to export her XPUB and send it to Bob 
 
 #### Enabling the recovery path
 
-The final step of the wallet creation flow is to enable the recovery path. Although they are a great way to increase fault tolerance, and thus prevent loss of funds, we want this option to be treated as an optional feature that is not forced on users.
+The final step of the wallet creation flow is to enable the recovery path. Although they are a great way to increase fault tolerance, and thus prevent loss of funds, we want this option to be treated as an optional feature that is not forced on users. That means we need to provide users with all the information they need to make an appropriate decision.
 
 If the recovery path is enabled, our application uses smart defaults to propose a suitable key scheme, based on the wallet. Since we are creating a 2-of-3 wallet, the application will suggest a 1-of-3 recovery path. This recommendation will be different for other wallet types. 
 
@@ -277,7 +277,7 @@ Note that the scope of this feature is quite narrow because it is aimed at an au
 
 As you can see, creating a multi-key wallet involves a lot of steps in the wallet application as well as on the corresponding signing devices. This can take quite a while, depending on the chosen key scheme. It also requires that users have all extended public keys ready and available beforehand.  
 
-It is likely that not all users will be able or willing to go through the entire process in one setting. This is why our application offers a feature called "Save for later". It allows users to pause the wallet creation process at any time and pick it up later. The application saves the current state of the wallet locally on the device, until it is actually created on-chain.
+It is likely that not all users will be able or willing to go through the entire process in one setting. This is why our application offers a feature called "Save for later". It allows users to pause the wallet creation process at any time and pick it up later. The application saves the current state of the wallet locally on the device.
 
 {% include image-gallery.html pages = page.images_save-for-later %}
 
