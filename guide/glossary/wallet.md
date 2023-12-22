@@ -6,7 +6,19 @@ parent: Glossary
 nav_order: 2
 permalink: /guide/glossary/wallet/
 main_classes: -no-top-padding
+image: https://bitcoin.design/assets/images/guide/glossary/wallet-header-preview.jpg
 ---
+
+{% include picture.html
+   image = "/assets/images/guide/glossary/wallet-header.jpg"
+   retina = "/assets/images/guide/glossary/wallet-header@2x.jpg"
+   mobile = "/assets/images/guide/glossary/wallet-header-mobile.jpg"
+   mobileRetina = "/assets/images/guide/glossary/wallet-header-mobile@2x.jpg"
+   alt-text = "Two leather wallets"
+   width = 1600
+   height = 600
+   layout = "full-width"
+%}
 
 # Wallet
 
