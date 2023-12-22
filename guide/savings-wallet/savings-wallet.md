@@ -2,7 +2,8 @@
 layout: guide
 title: Savings wallet
 description: A UX reference design for a multi-key bitcoin wallet designed for both daily spending and storing medium amounts.
-nav_order: 5
+nav_order: 6
+has_children: true
 permalink: /guide/savings-wallet/
 redirect_from:
  - /guide/case-studies/savings-account/
@@ -295,6 +296,6 @@ Daily and per-transaction spending limits are a unique aspect of this applicatio
 {% include next-previous.html
    previousUrl = "/guide/daily-spending-wallet/settings/"
    previousName = "Settings"
-   nextUrl = "/guide/upgradeable-wallet/"
-   nextName = "Upgradeable wallet"
+   nextUrl = "/guide/savings-wallet/time-based-recovery/"
+   nextName = "Time-based recovery"
 %}
