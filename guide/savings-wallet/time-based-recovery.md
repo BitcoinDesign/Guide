@@ -6,8 +6,8 @@ nav_order: 1
 parent: Savings wallet
 permalink: /guide/savings-wallet/time-based-recovery/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/miniscript-wallet-simple/preview.jpg
-image_base: /assets/images/guide/miniscript-wallet-simple/
+image: https://bitcoin.design/assets/images/guide/savings-wallet/time-based-recovery/preview.jpg
+image_base: /assets/images/guide/savings-wallet/time-based-recovery/
 images_creation-wallet-basics:
     - file: creation-wallet-basics/add-wallet-sheet
       alt: Screen for choosing whether to create a new wallet or import an existing one. Create new wallet is the selected option.
@@ -189,11 +189,11 @@ https://www.figma.com/file/uxZMdWR2HfnKSMC9YWyr2h/Time-based-recovery?type=desig
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/miniscript-wallet-simple/cover.png"
-   retina = "/assets/images/guide/miniscript-wallet-simple/cover@2x.png"
-   mobile = "/assets/images/guide/miniscript-wallet-simple/cover-mobile.png"
-   mobileRetina = "/assets/images/guide/miniscript-wallet-simple/cover-mobile@2x.png"
-   alt-text = "Image showing a wallet with recovery key sets"
+   image = "/assets/images/guide/savings-wallet/time-based-recovery/cover.png"
+   retina = "/assets/images/guide/savings-wallet/time-based-recovery/cover@2x.png"
+   mobile = "/assets/images/guide/savings-wallet/time-based-recovery/cover-mobile.png"
+   mobileRetina = "/assets/images/guide/savings-wallet/time-based-recovery/cover-mobile@2x.png"
+   alt-text = "A wallet with recovery key sets"
    caption = ""
    width = 1600
    height = 600
