@@ -6,6 +6,7 @@ nav_order: 11
 has_children: true
 permalink: /guide/resources/
 main_classes: -no-top-padding
+image: https://bitcoin.design/assets/images/guide/resources/preview-social.jpg
 ---
 
 <!--
@@ -15,6 +16,17 @@ Editors notes
 Illustration sources:
 
 -->
+
+{% include picture.html
+   image = "/assets/images/guide/resources/preview.jpg"
+   retina = "/assets/images/guide/resources/preview@2x.jpg"
+   mobile = "/assets/images/guide/resources/preview-mobile.jpg"
+   mobileRetina = "/assets/images/guide/resources/preview-mobile@2x.jpg"
+   alt-text = "A women at her desk, filled with design tools"
+   width = 1600
+   height = 600
+   layout = "full-width"
+%}
 
 # Resources
 
