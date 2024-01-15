@@ -63,6 +63,12 @@ Bob wants to buy an engagement ring to surprise Alice. He has to pay on-chain be
 
 [Get started with these design-oriented notes](https://docs.google.com/document/d/1y5qiKEX2WXMoDgdNclKcZ2RHDIM8wX5OkhREA-Hmc0k/edit?usp=sharing). For more details, check out the bitcoin design [call](https://bitcointv.com/w/3cZH5KVZwsxU6X9iNzDkBE), [FigJam File with in-call notes](https://www.figma.com/file/YC1rjRo3xYvkqJPL4vlg4r/Learning-Bitcoin-and-Design---PayJoins?node-id=0%3A1&t=I3u9Sbe7iMp6WbjV-1), mention this challenge in [Discord]({{ site.discord_invite_url }}) or email d at ngould dot dev for help.
 
+## Challenge 7: Covenants for Scale
+
+[Covenants](https://bitcoinops.org/en/topics/covenants/) are thought to be able to scale bitcoin by allowing multiple users to share UTXOs in constructions such as [Joinpools](https://bitcoinops.org/en/topics/joinpools/). It is not yet clear how such an experience would manifest in client software. Document a high-fidelity design to explore such a user experience (including flows, costs, time, complexity, etc.) that might relieve extreme network congestion or other challenges of scale.
+
+This idea was originally proposed [on X by @leishman](https://nitter.net/Leishman/status/1744113344729043410). One approach may be to extend the design community's [Bitcoin UI Kit](https://www.bitcoinuikit.com/).
+
 ## Tips
 
 It is completely up to you to decide how you want to go about each challenge. If you’d like a few starting points, we gathered some tips for you:
