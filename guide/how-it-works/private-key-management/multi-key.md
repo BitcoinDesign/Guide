@@ -80,7 +80,7 @@ It is possible to configure a wallet with multiple sets of keys, with each havin
 
 Alice, Robert, and Charles want to set up a multi-key wallet that has a total of 3 keys, with 2 keys required to send a transaction.
 
-In the first step, each of them independently generate a private key and a public key (technically an extended public key). They will use the private key for initiating and approving transactions, and will never share it it. The public key is used for construct the multi-key wallet for generating addresses to receive bitcoin to.
+In the first step, each of them independently generates a private key and a public key (technically an extended public key). All 3 public keys together are used to construct the multi-key wallet, for generating addresses to receive bitcoin to, and then also for constructing new transactions. The private key is never shared, and used to approve transactions initiated by themselves or others.
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/private-key-management/multi-key/multi-key-diagram-1-key-generation.png"
