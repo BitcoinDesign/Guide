@@ -40,7 +40,7 @@ https://www.figma.com/community/file/995256542920917246/BDG---Private-key-manage
 
 All of the previous schemes have relied on a single private key to control the wallet. This presents an all-or-nothing risk for loss of funds from both theft and negligence. To counter this, a wallet can have several private keys attached of which all or a subset need to sign any transactions.
 
-This is often called multi-signature, or multi-sig for short, but is also sometimes referred to as a *vault*. A multi-key setup is described as *n-of-n* to indicate how many keys are needed to sign a transaction out of the issued number. For example, a *2-of-3* setup requires two of the three private keys to sign a transaction for it to be valid.
+This is often called multi-signature, or multi-sig for short, but is also sometimes referred to as a *vault*. A multi-key setup is described as *m-of-n* to indicate how many keys are needed to sign a transaction out of the issued number. For example, a *2-of-3* setup requires two of the three private keys to sign a transaction for it to be valid.
 
 In the case of a personal wallet, one individual will control all the keys but hold them on different devices for increased security. See the [savings wallet reference design]({{ '/guide/savings-wallet/' | relative_url }}) for a UX exploration of this use case.
 
@@ -80,7 +80,7 @@ It is possible to configure a wallet with multiple sets of keys, with each havin
 
 Alice, Robert, and Charles want to set up a multi-key wallet that has a total of 3 keys, with 2 keys required to send a transaction.
 
-In the first step, each of them independently generates a private key and a public key (technically an extended public key). All 3 public keys together are used to construct the multi-key wallet, for generating addresses to receive bitcoin to, and in extension also for constructing new transactions. The private key is never shared, and used to approve transactions, initiated by themselves or others.
+In the first step, each of them independently generates a private key and a public key (technically an extended public key). All 3 public keys together are used to construct the multi-key wallet, for generating addresses to receive bitcoin to, and by extension also for constructing new transactions. The private key is never shared, and used to approve transactions, initiated by themselves or others.
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/private-key-management/multi-key/multi-key-diagram-1-key-generation.png"
