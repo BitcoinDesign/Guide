@@ -3178,3 +3178,17 @@ assets/images/social-media/social-media.jpg: social-media.jpg
 assets/images/social-media/social-media@2x.jpg: social-media@2x.jpg
 assets/images/submit-header-design-preview.jpg: submit-header-design-preview.jpg
 assets/mstile-150x150.png: mstile-150x150.png
+assets/images/guide/how-it-works/private-key-management/multi-key/multi-key-diagram-1-key-exchange.png: multi-key-diagram-1-key-exchange.png
+assets/images/guide/how-it-works/private-key-management/multi-key/multi-key-diagram-1-key-exchange@2x.png: multi-key-diagram-1-key-exchange@2x.png
+assets/images/guide/how-it-works/private-key-management/multi-key/multi-key-diagram-1-key-generation.png: multi-key-diagram-1-key-generation.png
+assets/images/guide/how-it-works/private-key-management/multi-key/multi-key-diagram-1-key-generation@2x.png: multi-key-diagram-1-key-generation@2x.png
+assets/images/guide/how-it-works/private-key-management/multi-key/multi-key-diagram-1-signing.png: multi-key-diagram-1-signing.png
+assets/images/guide/how-it-works/private-key-management/multi-key/multi-key-diagram-1-signing@2x.png: multi-key-diagram-1-signing@2x.png
+assets/images/guide/how-it-works/private-key-management/multi-key/multi-key-diagram-1-wallet-setup.png: multi-key-diagram-1-wallet-setup.png
+assets/images/guide/how-it-works/private-key-management/multi-key/multi-key-diagram-1-wallet-setup@2x.png: multi-key-diagram-1-wallet-setup@2x.png
+assets/images/guide/how-it-works/private-key-management/multi-key/multi-key-diagram-1-signing-mobile.png: multi-key-diagram-1-signing-mobile.png
+assets/images/guide/how-it-works/private-key-management/multi-key/multi-key-diagram-1-signing-mobile@2x.png: multi-key-diagram-1-signing-mobile@2x.png
+assets/images/guide/how-it-works/private-key-management/multi-key/multi-key-diagram-1-key-exchange-mobile.png: multi-key-diagram-1-key-exchange-mobile.png
+assets/images/guide/how-it-works/private-key-management/multi-key/multi-key-diagram-1-key-exchange-mobile@2x.png: multi-key-diagram-1-key-exchange-mobile@2x.png
+assets/images/guide/how-it-works/private-key-management/multi-key/multi-key-diagram-1-key-generation-mobile.png: multi-key-diagram-1-key-generation-mobile.png
+assets/images/guide/how-it-works/private-key-management/multi-key/multi-key-diagram-1-key-generation-mobile@2x.png: multi-key-diagram-1-key-generation-mobile@2x.png
