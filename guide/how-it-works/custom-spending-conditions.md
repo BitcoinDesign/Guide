@@ -211,16 +211,13 @@ In terms of securing the wallet, backing up the individual private keys is not e
 
 If you want to get into more detail about Miniscript, [Rob Hamilton](https://twitter.com/rob1ham) keeps a good list of resources in this [Google doc file](https://docs.google.com/document/d/1yWEvNRajwHYP6QAJQcnVjgpq5SEkS5wczibG_ICvEuc/edit?pli=1#heading=h.cv4kzykcgq0x).
 
-
-
-
 ---
 
-Next, view the [case studies]({{ '/guide/case-studies/' | relative_url }}) that can help you build better bitcoin products.
+On the next page, we dive into different techniques for [stabilizing bitcoin value]({{ '/guide/how-it-works/stabilizing-bitcoin-value/' | relative_url }}) against other currencies.
 
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/wallet-selector/"
    previousName = "Wallet selector"
-   nextUrl = "/guide/case-studies/"
-   nextName = "Case studies"
+   nextUrl = "/guide/how-it-works/stabilizing-bitcoin-value/"
+   nextName = "Stabilizing bitcoin value"
 %}
