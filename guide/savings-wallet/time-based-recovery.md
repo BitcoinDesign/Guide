@@ -222,7 +222,7 @@ The use case for this design is relatively simple. However, we will be referenci
 
 A multi-key wallet offers a number of advantages, especially for storing large amounts of bitcoin. Therefore, Bob and Alice, want to create a 2-of-3 multi-key wallet for their savings. Bob will hold the first key while his wife, Alice, will hold a second key. In addition, they have the third key locked away in a safe location. 
 
-However, the couple worries about a situation where they lose access to two of the keys. In that case, they would lose all of their savings. To protect themselves against this scenario, our application offers them the possibility to enable a recovery path, which automatically lowers the amount of signatures needed to 1-of-3 after 6 months. This will allow them to lose two keys and still be able to recover their savings. 
+However, the couple worries about a situation where they lose access to two of the keys. In that case, they would lose all of their savings. To protect themselves against this scenario, our application offers them the possibility to enable a recovery path, which automatically lowers the amount of signatures needed to 1-of-3 after 6 months. This will allow them to lose two keys (including their respective backups) and still be able to recover their savings. 
 
 ### Process overview
 
