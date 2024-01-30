@@ -279,7 +279,7 @@ It is likely that not all users will be able or willing to go through the entire
 
 #### Wallet backup 
 
-After the wallet has been created, our application prompts the user to download the wallet backup file. This is important because, for multi-key wallets, it is not enough to back up the individual private keys to recover the wallet. You need at least all the extended public keys as well.
+After the wallet has been created, our application prompts the user to download the wallet backup file. This is important because, for multi-key wallets, it is not enough for the user to back up their own private key to recover the wallet. They need at least all the extended public keys as well.
 
 {% include image-gallery.html pages = page.images_backup %}
 
