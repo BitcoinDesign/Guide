@@ -70,16 +70,16 @@ images_backup:
 images_cosigner-onboarding:
     - file: cosigner-onboarding/cosigner-phone2-add-wallet
       alt: Screen for choosing whether to create a new wallet or import an existing one. Importing is the selected opton.
-      caption:
+      caption: Alice chooses to import a wallet.
     - file: cosigner-onboarding/cosigner-phone2-import-options
       alt: Option screen showing different import methods for the wallet.
-      caption:
+      caption: There are various options how to import the wallet configuration. Alice simply scans the QR code from Bob's phone.
     - file: cosigner-onboarding/cosigner-phone2-import-review
       alt: Review screen showing the details of the wallet that is being imported.
-      caption:
+      caption: Her application shows the wallet configuration and information about the signing devices.
     - file: cosigner-onboarding/cosigner-phone2-done
       alt: Wallet home screen.
-      caption:
+      caption: After finishing the import, Alice sees the balance and transaction history for the wallet. 
 images_prevent-unlock:
     - file: prevent-unlock/path-refresh-push-notification
       alt: Smartphone lock screen showing a push notification stating that the recovery path will unlock in three days.
@@ -220,9 +220,9 @@ The use case for this design is relatively simple. However, we will be referenci
 
 ### Use case
 
-A multi-key wallet offers a number of advantages, especially for storing large amounts of bitcoin. Therefore, Bob and Alice, want to create a 2-of-3 multi-key wallet for their savings. Bob will hold the first key while his wife, Alice, will hold a second key. In addition, they have the third key locked away in a safety deposit box. 
+A multi-key wallet offers a number of advantages, especially for storing large amounts of bitcoin. Therefore, Bob and Alice, want to create a 2-of-3 multi-key wallet for their savings. Bob will hold the first key while his wife, Alice, will hold a second key. In addition, they have the third key locked away in a safe location. 
 
-However, the couple worries about a situation where they lose access to two of the keys. In that case, they would lose all of their savings. To protect themselves against this scenario, our application offers them the possibility to enable a recovery path, which automatically lowers the amount of signatures needed to 1-of-3 after 6 months. This will allow them to lose two keys and still be able to recover their savings. 
+However, the couple worries about a situation where they lose access to two of the keys. In that case, they would lose all of their savings. To protect themselves against this scenario, our application offers them the possibility to enable a recovery path, which automatically lowers the amount of signatures needed to 1-of-3 after 6 months. This will allow them to lose two keys (including their respective backups) and still be able to recover their savings. 
 
 ### Process overview
 
@@ -247,29 +247,25 @@ Let's start creating the wallet. For our product, we assume that our users alrea
 
 {% include image-gallery.html pages = page.images_creation-wallet-basics %}
 
-Some users may need help deciding on the best solution for them. Our application gives them an option to run through a set of questions about their specific needs and suggests a setup based on the answers. Power users will find a "Custom" option, which gives them the freedom to define a key scheme from scratch.
-
-If you are designing your own product, it is important to think about the target audience to determine the options that you offer.
+Other users may need help deciding on the best solution for them. Our application gives them an option to run through a set of questions about their specific needs and suggests a setup based on the answers. Power users will find a "Custom" option, which gives them the freedom to define a key scheme from scratch. If you are designing your own product, it is important to think about the target audience to determine the options that you offer.
 
 #### Importing the co-signer public keys
 
-After the basics have been defined, the extended public keys (XPUBs) of the designated signing devices need to be imported to the wallet application. First, Bob imports the XPUB from his Trezor and a ColdCard that will be placed in the safety deposit box. After that, he hands the phone to Alice, so that she can do the same with her BitBox.
-
-Another way to do this would be for Alice to export her XPUB and send it to Bob over a secure channel.
+After the basics have been defined, the extended public keys (XPUBs) of the signing devices need to be imported to the wallet application. First, Bob imports the XPUB from his Trezor by connecting it to his phone. He does the same with the ColdCard that will be placed in the safety deposit box. After that, he hands the phone to Alice, so that she can connect her BitBox.
 
 {% include image-gallery.html pages = page.images_creation-key-import %}  
 
+Another way to do this would be for Alice to export her XPUB and send it to Bob over a secure channel.
+
 #### Enabling the recovery path
 
-The final step of the wallet creation flow is to enable the recovery path. Although they are a great way to increase fault tolerance, and thus prevent loss of funds, we want this option to be treated as an optional feature that is not forced on users. That means we need to provide users with all the information they need to make an appropriate decision.
-
-If the recovery path is enabled, our application uses smart defaults to propose a suitable key scheme, based on the wallet. Since we are creating a 2-of-3 wallet, the application will suggest a 1-of-3 recovery path. This recommendation will be different for other wallet types. 
-
-It also suggests that the recovery path will be unlocked after 6 months, if the funds have not been spent. However, users can always choose a different timeframe that better suits their situation.
-
-In addition, our application also provides users with the option to set reminders at different times before the recovery path unlocks.
+The final step of the wallet creation flow is to enable the recovery path. Although they are a great way to increase fault tolerance, and thus prevent loss of funds, we want this option to be treated as an optional feature.
 
 {% include image-gallery.html pages = page.images_creation-recovery-path %}
+
+If the recovery path is enabled, our application uses smart defaults to propose a suitable key scheme, based on the primary wallet configuration. Since we are creating a 2-of-3 wallet, the application will suggest a 1-of-3 recovery path. 
+
+It also suggests that the recovery path will be unlocked if the wallet has not been used for 6 months. However, users can override this default with a different timeframe that better suits their situation. In addition, our application also provides users with the option to set reminders at different times before the recovery path unlocks.
 
 Note that the scope of this feature is quite narrow because it is aimed at an audience with basic knowledge of bitcoin. You might want to offer more customization options, based on your own target audience.
 
@@ -283,22 +279,24 @@ It is likely that not all users will be able or willing to go through the entire
 
 #### Wallet backup 
 
-Enabling the recovery path is the final step before the wallet is created on-chain. Once it has been finalized and can be used, our application prompts the user to download the wallet backup file. This is important because, for multi-key wallets, it is not enough to back up the private key to recover the wallet. 
-
-The backup file contains all the information necessary to recover the wallet, except the private keys. This means that it is ok to store the file digitally in a password manager, for example. However, since it contains all extended public keys, anybody who finds this file can potentially monitor all transactions in real time.
-
-Because users might not want to back up the wallet right away, users will also be able to access the backup file and other important information on the wallet settings page at any time. 
+After the wallet has been created, our application prompts the user to download the wallet backup file. This is important because, for multi-key wallets, it is not enough for the user to back up their own private key to recover the wallet. They need at least all the extended public keys as well.
 
 {% include image-gallery.html pages = page.images_backup %}
 
+The backup file contains all the information necessary to recover the wallet, except the private keys. This means that it is ok to store the file digitally in a password manager, for example. However, since it contains all extended public keys, anybody who finds this file can potentially monitor all transactions in real time.
+
+Because users might not want to back up the wallet right away, they will also be able to access the backup file and other important information on the wallet settings page at any time. 
+
 ### Co-signer wallet import
 
-There is one final step before Alice and Bob can start using their new savings wallet: Alice nees to import the newly created wallet to the wallet application on her phone. To make this experience easy and seamless, the application allows Bob to share the wallet configuration with Alice in two main ways:
+There is one final step before Alice and Bob can start using their new savings wallet: Alice needs to import wallet configuration to the wallet application on her phone. To make this experience easy, the application allows Bob to share the wallet configuration with Alice in two main ways:
 
 1. By displaying a QR code that Alice scans with her app.  
 2. By sharing the wallet backup file.
 
 {% include image-gallery.html pages = page.images_cosigner-onboarding %}
+
+A less convenient but more trustless way would be for Alice to configure the wallet on her phone herself. She would have to be careful, though, to use the exact same configuration and add the public keys in the same order as Bob did. Otherwise a different wallet would be created.
 
 
 ### Spending from the wallet
@@ -314,15 +312,15 @@ To prevent the recovery path from kicking in and refreshing the timelock, a UTXO
 
 ##### Preventing recovery path activation
 
-So if Bob has three UTXOs in his wallet which he received at different times, he actually needs to refresh three different timelocks. This can quickly become cumbersome and costly, as every refresh transaction implies on-chain transaction fees.
+So if Bob has three UTXOs in his wallet which he received at different times, he technically needs to refresh three different timelocks. This can quickly become cumbersome and costly, as every refresh transaction implies on-chain transaction fees.
 
-To reduce this complexity, our application offers a "unified" timelock reset experience by default. This simply means that it uses the UTXO that is closest to being unlocked as the trigger to start the process. In the background, however, all UTXOs are automatically batched together. 
+To reduce this complexity, our application offers a unified reset experience by default. This simply means that it uses the UTXO that is closest to being unlocked as the trigger to start the process. In the background, however, all UTXOs are automatically batched together. 
 
 This allows us to show only one timelock, which makes it easier to understand for users and is more in line with their expectations. An added benefit of this approach is that, as a result, Bob has only one UTXO in his wallet after the recovery path has been reset.
 
 {% include image-gallery.html pages = page.images_prevent-unlock %}
 
-To give users additional flexibility, our application allows users to selectively manage the refresh behavior for individual UTXOs via the advanced options feature. This is similar to the [coin control](https://bitcoin.design/guide/glossary/#coin-control) functionality available in many wallet applications. 
+To give users additional flexibility, our application allows them to selectively manage the refresh behavior for individual UTXOs via the advanced options feature. This is similar to the [coin control](https://bitcoin.design/guide/glossary/#coin-control) functionality available in many wallet applications. 
 
 ##### Resetting an activated recovery path
 
@@ -330,10 +328,9 @@ Just because a recovery path has been activated does not mean that it's too late
 
 In the screen flow below, Bob uses the unified "reset all funds" feature to reset the recovery path. This means that the corresponding transaction requires two signatures, because for some of the funds the recovery path is not yet unlocked. 
 
-If he choses to reset the unlocked funds only, he will need only one signature. However, this would not reset and consolidate all UTXOs. 
-
 {% include image-gallery.html pages = page.images_path-reset %}
 
+If he choses to reset the unlocked funds only, he will need only one signature. However, this would not reset and consolidate all UTXOs. 
 
 ### Wallet recovery
 
