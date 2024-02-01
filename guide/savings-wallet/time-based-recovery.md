@@ -226,16 +226,28 @@ However, the couple worries about a situation where they lose access to two of t
 
 ### Process overview
 
-Below is a description of the high-level phases involved in setting up and using the wallet described above. For this reference design, we will be focusing mainly on the user flows for wallet creation and recovery.
+Below is a description of the high-level phases involved in setting up and using the wallet described above. For this reference design, we will be focusing mainly on the user flows for wallet creation.
 
 1. Wallet creation
     -  Choose the primary key scheme used for spending under normal circumstances (2-of-3 in our case).
     -  Register the signing devices to the wallet by importing the three [extended public keys keys](https://bitcoin.design/guide/glossary/#extended-public-key-xpub-ypub-zpub).
     - Enable the recovery path.
 2. Wallet backup
-3. Import the wallet to co-signer application
-4. Spending
-5. Recovery
+3. Cosigner onboarding
+4. Regular recovery path refresh 
+
+The following [prototype](https://www.figma.com/proto/uxZMdWR2HfnKSMC9YWyr2h/Time-based-recovery?page-id=5470%3A8152&type=design&node-id=5622-3581&viewport=2892%2C-3029%2C0.5&t=PoE82m61aoVJ5UDK-1&scaling=scale-down&starting-point-node-id=5622%3A3581&show-proto-sidebar=1&mode=design) includes wallet creation, cosigner onboarding and recovery path refresh, which are explained in detail further below.
+
+{% include prototype.html
+   link = "https://www.figma.com/proto/uxZMdWR2HfnKSMC9YWyr2h/Time-based-recovery?page-id=5470%3A8152&type=design&node-id=5622-3581&viewport=2892%2C-3029%2C0.5&t=PoE82m61aoVJ5UDK-1&scaling=scale-down&starting-point-node-id=5622%3A3581&show-proto-sidebar=1&mode=design"
+   image = "/assets/images/guide/savings-wallet/time-based-recovery/prototype.jpg"
+   retina = "/assets/images/guide/savings-wallet/time-based-recovery/prototype@2x.jpg"
+   mobile = "/assets/images/guide/savings-wallet/time-based-recovery/prototype-mobile.jpg"
+   mobileRetina = "/assets/images/guide/savings-wallet/time-based-recovery/prototype-mobile@2x.jpg"
+   alt-text = "Three screens of the reference design prototype"
+   width = 800
+   height = 500
+%}
 
 ### Creating the wallet
 
