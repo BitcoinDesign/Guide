@@ -1,11 +1,3 @@
-GIT
-  remote: https://github.com/valerijaspasojevic/jekyll-compress-images.git
-  revision: af7c2e0527371a7b88d11d594cef9538b83230f1
-  specs:
-    jekyll-compress-images (1.2)
-      image_optim
-      image_optim_pack
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -29,12 +21,10 @@ GEM
     ethon (0.16.0)
       ffi (>= 1.15.0)
     eventmachine (1.2.7)
-    exifr (1.4.0)
     ffi (1.16.3)
     fiber-annotation (0.2.0)
     fiber-local (1.0.0)
     forwardable-extended (2.6.0)
-    fspath (3.1.2)
     hashery (2.1.2)
     html-proofer (5.0.8)
       addressable (~> 2.3)
@@ -48,23 +38,6 @@ GEM
     http_parser.rb (0.8.0)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
-    image_optim (0.31.3)
-      exifr (~> 1.2, >= 1.2.2)
-      fspath (~> 3.0)
-      image_size (>= 1.5, < 4)
-      in_threads (~> 1.3)
-      progress (~> 3.0, >= 3.0.1)
-    image_optim_pack (0.10.1)
-      fspath (>= 2.1, < 4)
-      image_optim (~> 0.19)
-    image_optim_pack (0.10.1-x86_64-darwin)
-      fspath (>= 2.1, < 4)
-      image_optim (~> 0.19)
-    image_optim_pack (0.10.1-x86_64-linux)
-      fspath (>= 2.1, < 4)
-      image_optim (~> 0.19)
-    image_size (3.4.0)
-    in_threads (1.6.0)
     io-event (1.4.3)
     jekyll (4.1.1)
       addressable (~> 2.4)
@@ -126,7 +99,6 @@ GEM
       hashery (~> 2.0)
       ruby-rc4
       ttfunk
-    progress (3.6.0)
     public_suffix (5.0.4)
     racc (1.7.3)
     rainbow (3.1.1)
@@ -161,7 +133,6 @@ PLATFORMS
 DEPENDENCIES
   html-proofer
   jekyll (~> 4.1.1)
-  jekyll-compress-images!
   jekyll-feed (~> 0.12)
   jekyll-redirect-from
   jekyll-seo-tag
