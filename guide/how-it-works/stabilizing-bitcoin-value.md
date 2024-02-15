@@ -236,7 +236,7 @@ In theory, this could even be extended to work within lightning channels. This h
 
 - The oracle goes down, so the smart contract no longer knows what the real-world price is. A default path in the DLC must be exercised and the user reclaims their original quantity of bitcoin but loses the price stability.
 - If there is extreme price volatility, exceeding the bounds of what is expressed in the DLC, the user loses stability.
-- In some market conditions, perhaps there are not enough willing counterparties to go around and match the other side of the bet, so users do not have the ability to stabilize new quantities of bitcoin
+- In some extreme market conditions, e.g. during a flash crash, there might not be a counterparty around to match the other side of the bet immediately. In this case, the user might either get a bad deal or risk devaluating their position.
 
 {% include fact/close.html %}
 
