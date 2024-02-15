@@ -196,7 +196,9 @@ Examples are [Stablesats](https://stablesats.com), [Tau Protocol](https://www.ta
 
 This technique is similar to synthetic currencies, but implemented in a different way via [Discreet Log Contracts for Difference](https://suredbits.com/settlement-of-dlcfd/) (we will call this smart contract from here on). The big change is that there's no need to trust an exchange. Anyone can be the counterparty, and all the rules that govern this special money are written into an immutable smart contract.
 
-There are three main entities in this. First, there's Alice who likes having a stable currency. Then, there's Robert (the counterparty) who is willing to enter into this financial contract with Alice (the motivation might be a bet that the price of bitcoin will go up). Finally, there's the oracle, whose job it is to provide the bitcoin to euro exchange rate to the contract, so it can enforce the rules.
+There are three main entities in this. First, there's Alice who likes having a stable currency. Then, there's Robert (the counterparty) who is willing to enter into this financial contract with Alice (the motivation might be a bet that the price of bitcoin will go up).
+
+Finally, there's the oracle, whose job it is to provide the bitcoin to euro exchange rate to the contract. Multiple oracles can be used to work around individual outages and price discrepancies. Oracles only come into play for closing the contract in case of conflict when Alice and Robert do not cooperate.
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/stabilizing-bitcoin-value/dlc-logic.png"
@@ -234,7 +236,7 @@ In theory, this could even be extended to work within lightning channels. This h
 
 {% include fact/cons.html %}
 
-- The oracle goes down, so the smart contract no longer knows what the real-world price is. A default path in the DLC must be exercised and the user reclaims their original quantity of bitcoin but loses the price stability.
+- The oracle(s) become unavailable, so the smart contract no longer knows what the real-world price is. A default path in the DLC must be exercised and the user reclaims their original quantity of bitcoin but loses the price stability.
 - If there is extreme price volatility, exceeding the bounds of what is expressed in the DLC, the user loses stability.
 - In some market conditions, perhaps there are not enough willing counterparties to go around and match the other side of the bet, so users do not have the ability to stabilize new quantities of bitcoin
 
