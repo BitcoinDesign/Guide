@@ -38,7 +38,6 @@ plugins:
   - jekyll-redirect-from
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-compress-images
   - jekyll-sitemap
 
 imageoptim:
