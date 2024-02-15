@@ -1,6 +1,6 @@
 language: ruby
 cache: bundler
-rvm: 2.5
+rvm: 3.2.3
 
 before_install:
   - gem update --system --no-document
