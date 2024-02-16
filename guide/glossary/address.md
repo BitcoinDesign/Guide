@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Address
-description: A bitcoin address is an identifier of 26-35 alphanumeric characters that is used to receive bitcoin
+description: A bitcoin address is an identifier of 26-62 alphanumeric characters that is used to receive bitcoin
 parent: Glossary
 nav_order: 1
 permalink: /guide/glossary/address/
@@ -39,13 +39,13 @@ https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=25%3A2
 %}
 
 # Address
-A bitcoin address is a 26-35 alphanumeric character identifier that is used to receive bitcoin. There are [several address formats](https://en.bitcoin.it/wiki/Invoice_address) based on different specifications.
+A bitcoin address is a 26-62 alphanumeric character identifier that is used to receive bitcoin. There are several address formats based on different specifications.
 
 When users enter an address, these formats have specific prefixes, so it is possible to determine which format is being used.
 
 Below are common address formats used today:
 
-### Taproot address - [P2TR](https://en.bitcoin.it/wiki/Bech32)
+### Taproot address - P2TR
 
 A pay-to-taproot (P2TR), also known as a Taproot or Bech32m address, is the most recent and advanced bitcoin address format. Taproot introduces more advanced security, privacy, flexibility and scaling to bitcoin. Like SegWit, Taproot addresses are opt-in and not currently widely supported. Taproot adoption can be tracked [here](https://en.bitcoin.it/wiki/Bech32_adoption).
 
