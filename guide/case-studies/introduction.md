@@ -39,8 +39,8 @@ This was a collaboration between WalletScrutiny and the Bitcoin Design Community
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/how-it-works/custom-spending-conditions/"
-   previousName = "Custom spending conditions"
+   previousUrl = "/guide/how-it-works/stabilizing-bitcoin-value/"
+   previousName = "Stabilizing bitcoin value"
    nextUrl = "/guide/case-studies/blixt-wallet/"
    nextName = "Blixt wallet"
 %}

@@ -86,15 +86,21 @@ How lightning wallets can support authentication and payments with external appl
 
 ---
 
-### [Wallet selector]({{ '/guide/how-it-works/wallet-selector' | relative_url }})
+### [Wallet selector]({{ '/guide/how-it-works/wallet-selector/' | relative_url }})
 
 Documentation of an interface pattern for letting users choose which external wallet to use when withdrawing, sending, or receiving in a bitcoin application.
 
 ---
 
-### [Custom Spending Conditions]({{ '/guide/how-it-works/custom-spending-conditions' | relative_url }})
+### [Custom Spending Conditions]({{ '/guide/how-it-works/custom-spending-conditions/' | relative_url }})
 
 Overview about advanced capabilities that enable users to create more flexible bitcoin wallets.
+
+---
+
+### [Stabilizing bitcoin value]({{ '/guide/how-it-works/stabilizing-bitcoin-value/' | relative_url }})
+
+An explainer for the different techniques for stabilizing bitcoin againts other currencies, from a basic swap at a third-party exchange, to the use of Discrete Log Contracts.
 
 ---
 
