@@ -93,3 +93,7 @@ Add our [calendar](https://raw.githubusercontent.com/BitcoinDesign/Meta/calendar
 - A maintainer needs to add the `call` label to the issue (this prevents spam)
 - The calendar auto-updates whenever a new issue is created, or an existing issue is edited
 - If you `Watch` the [BitcoinDesign/Meta repo](https://github.com/BitcoinDesign/Meta), you will also get emails when new events are created
+
+### Transcripts
+
+Transcripts of some calls are available at [btctranscripts.com](https://btctranscripts.com/bitcoin-design/). You can contribute to both creating transcripts via an [automated script](https://github.com/bitcointranscripts/tstbtc), and to [reviewing them](https://review.btctranscripts.com/).
