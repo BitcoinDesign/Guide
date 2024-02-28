@@ -6,8 +6,8 @@ nav_order: 6
 parent: Inheritance wallet
 permalink: /guide/inheritance-wallet/wallet-recovery/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/savings-wallet/family-inheritance/...
-image_base: /assets/images/guide/savings-wallet/family-inheritance/
+image: https://bitcoin.design/assets/images/guide/inheritance-wallet/...
+image_base: /assets/images/guide/inheritance-wallet/
 images_creation-wallet-basics:
     - file: 
       alt: 
@@ -29,10 +29,10 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/savings-wallet/family-inheritance/..."
-   retina = "/assets/images/guide/savings-wallet/family-inheritance/...@2x.png"
-   mobile = "/assets/images/guide/savings-wallet/family-inheritance/..."
-   mobileRetina = "/assets/images/guide/savings-wallet/family-inheritance/...@2x.png"
+   image = "/assets/images/guide/inheritance-wallet/..."
+   retina = "/assets/images/guide/inheritance-wallet/...@2x.png"
+   mobile = "/assets/images/guide/inheritance-wallet/..."
+   mobileRetina = "/assets/images/guide/inheritance-wallet/...@2x.png"
    alt-text = "..."
    caption = ""
    width = 1600

@@ -5,10 +5,10 @@ description: Reference design for creating the family inheritance wallet.
 nav_order: 1
 parent: Inheritance wallet
 grand_parent: Savings wallet
-permalink: /guide/savings-wallet/wallet-creation/
+permalink: /guide/inheritance-wallet/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/savings-wallet/family-inheritance/...
-image_base: /assets/images/guide/savings-wallet/family-inheritance/
+image: https://bitcoin.design/assets/images/guide/inheritance-wallet/...
+image_base: /assets/images/guide/inheritance-wallet/
 images_creation-wallet-basics:
     - file: 
       alt: 
@@ -30,10 +30,10 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/savings-wallet/family-inheritance/..."
-   retina = "/assets/images/guide/savings-wallet/family-inheritance/...@2x.png"
-   mobile = "/assets/images/guide/savings-wallet/family-inheritance/..."
-   mobileRetina = "/assets/images/guide/savings-wallet/family-inheritance/...@2x.png"
+   image = "/assets/images/guide/inheritance-wallet/..."
+   retina = "/assets/images/guide/inheritance-wallet/...@2x.png"
+   mobile = "/assets/images/guide/inheritance-wallet/..."
+   mobileRetina = "/assets/images/guide/inheritance-wallet/...@2x.png"
    alt-text = "..."
    caption = ""
    width = 1600
