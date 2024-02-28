@@ -136,7 +136,9 @@ We organize over 100 calls per year across many different projects and activitie
 - Project-specific calls: These are often weekly catch-ups for the team and also good places to ask questions
 - Design guide jam sessions: Anything related to the Bitcoin Design Guide and its sister projects
 - UX research calls: Discuss techniques to understand user needs and collaborate on research efforts
-Community calls: We schedule those when there are larger things to discuss that affect the whole community
+- Community calls: We schedule those when there are larger things to discuss that affect the whole community
+
+Find out about calls via the [calendar]({{ '/calendar/' | relative_url }}), the Discord events tab, and the [newsletter]({{ '/newsletter/' | relative_url }}).
 
 ## Milestone 4: Chip in
 
@@ -168,9 +170,10 @@ Some ways of contributing could be:
 - Helping a project redesign a screen of the user flow
 - Commenting on a document that is being written
 - Design an icon for [Bitcoin Icons](https://bitcoinicons.com)
-Help out with usability testing an application
-Sort through and bucket research data
-Conduct user interviews
+- Help out with usability testing an application
+- Sort through and bucket research data
+- Conduct user interviews
+
 ## Milestone 5: Become a regular
 
 <div class="center" markdown="1">
