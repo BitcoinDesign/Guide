@@ -5,7 +5,7 @@ description: Reference design for creating the family inheritance wallet.
 nav_order: 1
 parent: Inheritance wallet
 grand_parent: Savings wallet
-permalink: /guide/inheritance-wallet/
+permalink: /guide/inheritance-wallet/wallet-creation/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/inheritance-wallet/...
 image_base: /assets/images/guide/inheritance-wallet/
