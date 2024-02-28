@@ -90,14 +90,14 @@ To stay up-to-date:
    layout = "float-left"
 %}
 
-Now it’s time to learn more about all the projects and collaborations that happen in and around the community. Projects are incredibly diverse, so it may take a little bit of time to get a feel for what’s out there and what you connect with well.
+Now it’s time to learn more about all the projects and collaborations that happen in and around the community. Projects are incredibly diverse and are at varying levels of progress, so it may take a little bit of time to get a feel for what’s out there and what you connect with well.
 
 </div>
 
 Here are a few activities you can choose from (or chart your own path).
 
 - Start reading the [Bitcoin Design Guide]({{ '/guide/' | relative_url }}), if you haven’t done so already
-- Browse the [projects page]({{ '/projects/' | relative_url }}) to see some of the projects we are  involved in
+- Browse the [projects page]({{ '/projects/' | relative_url }}) to see some of the projects we are involved in
 - Review the Discord channels in the “Community projects” and “Collaborations” channels for even more projects
 - Review upcoming calls in the calendar and Discord events tab
 - Take a [design challenge]({{ '/guide/resources/design-challenges/' | relative_url }})
@@ -135,7 +135,7 @@ We organize over 100 calls per year across many different projects and activitie
 - Design reviews: Project share some of their design work and we provide feedback
 - Project-specific calls: These are often weekly catch-ups for the team and also good places to ask questions
 - Design guide jam sessions: Anything related to the Bitcoin Design Guide and its sister projects
-- UX research calls: Discuss techniques and collaborate on research efforts
+- UX research calls: Discuss techniques to understand user needs and collaborate on research efforts
 Community calls: We schedule those when there are larger things to discuss that affect the whole community
 
 ## Milestone 4: Chip in
@@ -168,7 +168,9 @@ Some ways of contributing could be:
 - Helping a project redesign a screen of the user flow
 - Commenting on a document that is being written
 - Design an icon for [Bitcoin Icons](https://bitcoinicons.com)
-
+Help out with usability testing an application
+Sort through and bucket research data
+Conduct user interviews
 ## Milestone 5: Become a regular
 
 <div class="center" markdown="1">
@@ -284,7 +286,7 @@ Our biggest community project is this free, open-source repository of best desig
    layout = "float-left"
 %}
 
-This initiative was created to ensure long-term sustainability of the efforts of the Bitcoin Design Community. The foundation engages in fundraising and accepts donations, which are then used to financially support individuals and projects for their open-source bitcoin design contributions.
+This initiative was created to ensure the long-term sustainability of the efforts of the Bitcoin Design Community. The foundation engages in fundraising and accepts donations, which are then used to financially support individuals and projects for their open-source bitcoin design contributions.
 
 For more information visit the [foundation website](https://opencollective.com/bitcoin-design-foundation). We are always thankful for donations and grant applications.
 
