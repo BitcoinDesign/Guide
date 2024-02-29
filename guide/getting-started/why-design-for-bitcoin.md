@@ -69,7 +69,7 @@ Central authorities tightly control Government-issued currencies. This means tha
 
 ## Join a global community
 
-Design and build experiences with friends and strangers. [Participate]({{ '/contribute/' | relative_url }}) in or even help lead one of the fastest-growing design ecosystems in the world.
+Design and build experiences with friends and community. [Participate]({{ '/join/' | relative_url }}) in or even help lead one of the fastest-growing design ecosystems in the world.
 
 ---
 

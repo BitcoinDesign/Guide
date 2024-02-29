@@ -11,7 +11,7 @@ projects:
   - name: Bitcoin Design Guide
     description: The primary project we are working on, a resource for designers to create better bitcoin products faster.
     image:
-      url: /assets/images/contribute/design-guide.png
+      url: /assets/images/projects/design-guide.png
       width: 75
       height: 75
     links:
@@ -23,7 +23,7 @@ projects:
   - name: Bitcoin UI Kit
     description: A complete design system to serve as a foundation for wallet concepts, prototypes and application development.
     image:
-      url: /assets/images/contribute/bitcoin-ui-kit.svg
+      url: /assets/images/projects/bitcoin-ui-kit.svg
       width: 75
       height: 75
     links:
@@ -37,7 +37,7 @@ projects:
   - name: Bitcoin Icon set
     description: Icons for typical needs of bitcoin applications. Includes common generic icons like arrows, and more unique ones like a wallet, keys, mining, and bitcoin symbols.
     image:
-      url: /assets/images/contribute/bitcoin-icon-set.svg
+      url: /assets/images/projects/bitcoin-icon-set.svg
       width: 75
       height: 75
     links:
@@ -51,7 +51,7 @@ projects:
   - name: Bitcoin UX Research Toolkit
     description: Build human-centric bitcoin products for everyone with this practical guide and toolbox for user research.
     image:
-      url: /assets/images/contribute/research-kit.svg
+      url: /assets/images/projects/research-kit.svg
       width: 75
       height: 75
     links:
@@ -61,7 +61,7 @@ projects:
   - name: Bitcoin Design Foundation
     description: An initiative to make the community and its efforts sustainable.
     image:
-      url: /assets/images/contribute/foundation.png
+      url: /assets/images/projects/foundation.png
       width: 75
       height: 75
     links:
@@ -73,7 +73,7 @@ projects:
   - name: When Taproot
     description: Promote broader adoption of Taproot.
     image:
-      url: /assets/images/contribute/whentaproot.png
+      url: /assets/images/projects/whentaproot.png
       width: 75
       height: 75
     links:
@@ -85,7 +85,7 @@ projects:
   - name: Bitcoin QR
     description: Help get unified QR codes adopted for smoother payment flows.
     image:
-      url: /assets/images/contribute/bitcoinqr.png
+      url: /assets/images/projects/bitcoinqr.png
       width: 75
       height: 75
     links:
@@ -95,7 +95,7 @@ projects:
   - name: BOLT 12
     description: Promoting adoption of BOLT 12 and Async Payments for better lightning experiences.
     image:
-      url: /assets/images/contribute/bolt12.png
+      url: /assets/images/projects/bolt12.png
       width: 75
       height: 75
     links:
@@ -105,7 +105,7 @@ projects:
   - name: Designathon
     description: We organized a hackathon for designers.
     image:
-      url: /assets/images/contribute/designathon.png
+      url: /assets/images/projects/designathon.png
       width: 75
       height: 75
     links:
@@ -115,7 +115,7 @@ projects:
   - name: Bitcoin Design Sprints
     description: This project from 2022 was about improving lightning network wallets through applying the design guide, design thinking and problem solving.
     image:
-      url: /assets/images/contribute/wallet-design-sprints.png
+      url: /assets/images/projects/wallet-design-sprints.png
       width: 75
       height: 75
     links:
@@ -128,7 +128,7 @@ collaborations:
   - name: Wallet Scrutiny
     description: Redesign of an important security resource.
     image:
-      url: /assets/images/contribute/wallet-scrutiny.png
+      url: /assets/images/projects/wallet-scrutiny.png
       width: 75
       height: 75
     links:
@@ -140,7 +140,7 @@ collaborations:
   - name: Saving Satoshi
     description: A sci-fi epic that teaches you bitcoin coding.
     image:
-      url: /assets/images/contribute/saving-satoshi.png
+      url: /assets/images/projects/saving-satoshi.png
       width: 75
       height: 75
     links:
@@ -150,7 +150,7 @@ collaborations:
   - name: Summer of Bitcoin
     description: We support and mentor students in this educational initiative.
     image:
-      url: /assets/images/contribute/summer-of-bitcoin.png
+      url: /assets/images/projects/summer-of-bitcoin.png
       width: 75
       height: 75
     links:
@@ -160,7 +160,7 @@ collaborations:
   - name: Alby
     description: Alby brings Bitcoin to the web with in-browser payments and identity, no account required.
     image:
-      url: /assets/images/contribute/alby.png
+      url: /assets/images/projects/alby.png
       width: 75
       height: 75
     links:
@@ -174,7 +174,7 @@ collaborations:
   - name: Bitcoin Core app
     description: Building an application that lets users easily run full bitcoin nodes.
     image:
-      url: /assets/images/contribute/bitcoin-core.png
+      url: /assets/images/projects/bitcoin-core.png
       width: 75
       height: 75
     links:
@@ -186,7 +186,7 @@ collaborations:
   - name: Bitcoin Smiles
     description: Raising bitcoin for dentistry treatments.
     image:
-      url: /assets/images/contribute/bitcoin-smiles.png
+      url: /assets/images/projects/bitcoin-smiles.png
       width: 75
       height: 75
     links:
@@ -198,7 +198,7 @@ collaborations:
   - name: Jam
     description: A web UI for JoinMarket, for creating private bitcoin transactions called CoinJoins.
     image:
-      url: /assets/images/contribute/joinmarket.png
+      url: /assets/images/projects/joinmarket.png
       width: 75
       height: 75
     links:
@@ -212,7 +212,7 @@ collaborations:
   - name: Zeus
     description: Zeus is an open-source, non-custodial bitcoin wallet that gives you full control over how you make payments.
     image:
-      url: /assets/images/contribute/zeus.png
+      url: /assets/images/projects/zeus.png
       width: 75
       height: 75
     links:
@@ -226,7 +226,7 @@ collaborations:
   - name: Bolt.fun
     description: Learn about the lightning network, post your apps on the market, and join our hackathons.
     image:
-      url: /assets/images/contribute/bolt-fun.png
+      url: /assets/images/projects/bolt-fun.png
       width: 75
       height: 75
     links:
@@ -236,7 +236,7 @@ collaborations:
   - name: Stratum V2
     description: Stratum V2 is the next generation protocol for pooled mining.
     image:
-      url: /assets/images/contribute/stratum-v2.png
+      url: /assets/images/projects/stratum-v2.png
       width: 75
       height: 75
     links:
@@ -248,7 +248,7 @@ collaborations:
   - name: Hello Bitcoin
     description: Hello Bitcoin is a volunteer-run project with the simple goal of helping people learn about bitcoin in a way that is friendly and accessible.
     image:
-      url: /assets/images/contribute/hello-bitcoin.png
+      url: /assets/images/projects/hello-bitcoin.png
       width: 75
       height: 75
     links:
