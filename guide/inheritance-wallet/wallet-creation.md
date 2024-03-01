@@ -2,7 +2,7 @@
 layout: guide
 title: Wallet creation
 description: Reference design for creating the family inheritance wallet.
-nav_order: 1
+nav_order: 2
 parent: Inheritance wallet
 grand_parent: Savings wallet
 permalink: /guide/inheritance-wallet/wallet-creation/
@@ -53,29 +53,57 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
 
 ---
 
-In this reference design we will build on the savings wallet and time-based recovery reference designs. We will expand on them by looking at how a family could use our application to create a non-custodial inheritance setup by using our application, which is called Transcend. 
+After we have laid out the overall setup... One Sunday afternoon the couple sits down to set it all up. 
 
-## What are we building?
+During their research, Bob and Alice came across an app called Transcend. It’s a mobile application specifically designed for long-term bitcoin custody. Alice and Bob each download the app on their phones and get started. Try out the prototype below. It covers the entire wallet creation process.
 
-Our application is designed specifically is geared towards users and their families that are living on a bitcoin standard. It lets them create flexible wallets for their family savings and offers additional features designed to help with inheritance planning and execution.  
+<!--
 
-When it comes to inheritance, however, technology is not everything. Human knowledge, practice  and social  processes are critically important for any setup to work. This is why our exploration includes not only design mockups and prototypes of the wallet application software, but also thoughts around supporting processes like backups, redundancy and human processes to ensure that funds will not be lost. For a more general introduction to the topic, you can read more about [inheritance guidelines]().
+To do: add prototype
 
-## Chapters
+-->
 
-### Onboarding
 
-### Wallet creation
+### Primary key set
 
-### Wallet backup
+Just like with the time-based recovery design, Alice and Bob start by creating the primary key set. 
 
-### Testing the wallet
+<!--
 
-### Operations
+Add designs
 
-### Managing change
+-->
 
-### Recovery & inheritance
+### Recovery path
+
+We have covered this in the time-based reference design as well. Here we show an alternative design option for this same feature.
+
+We could also call this a recovery key set, since it is technically just another key set. However, the point of the recovery path is that we want to use the same keys as for the primary key set. To make this distinction more clear, we treat recovery paths as a different feature from alternative key sets in our application. 
+
+You might want to take a different approach in your own application, based on your specific user base.
+
+<!--
+
+Add designs
+
+-->
+   
+### Inheritance key set
+
+The inheritance key set is set up in a very similar way as the primary key set, by adding the  extended public keys from David’s, Christinas and Edward’s signing devices.
+
+But our application allows Bob and Alice to explicitly designate this key set as “inheritance keys”. This feature allows David, Christina and Edward to participate in the setup from the beginning without compromising the financial privacy of the parents.
+
+<!--
+
+Add designs
+
+-->
+
+The application allows the inheritance key holders to connect their signing devices via the Transcend app on their own phones. Alternatively, they could transmit their public keys to Alice and Bob over a secure channel.
+
+The app will then keep track of whether the inheritance key set is unlocked or not and manages wallet access accordingly. This happens on the application layer, not on-chain, which allows the family to conveniently perform regular inheritance drills. 
+
 
 **Resources**
 - [Figma design file](https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type=design&node-id=5542%3A2119&mode=design&t=sBtcvrDzb8MPtWaK-1)

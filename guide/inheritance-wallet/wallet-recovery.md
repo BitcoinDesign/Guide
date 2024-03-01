@@ -2,7 +2,7 @@
 layout: guide
 title: Wallet recovery
 description: How to back up the inheritance wallet.
-nav_order: 6
+nav_order: 7
 parent: Inheritance wallet
 permalink: /guide/inheritance-wallet/wallet-recovery/
 main_classes: -no-top-padding
