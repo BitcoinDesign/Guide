@@ -1,9 +1,9 @@
 ---
 layout: guide
-title: Inntroduction
+title: Introduction
 description: An in-depth UX reference design for a multi-key bitcoin wallet with inheritance features designed for families.
 nav_order: 1
-has_children: true
+parent: Inheritance wallet
 permalink: /guide/inheritance-wallet/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/inheritance-wallet/...
@@ -49,7 +49,6 @@ In this reference design we will build on the savings wallet and time-based reco
 In this reference design we are looking at a setup for a family with two children that are familiar with and  have a significant amount of their life savings in bitcoin. 
 
 Other people might be better off with a simpler setup, based on factors such as the amount of bitcoin they hold, what their family situation looks like, where they live or how knowledgeable and comfortable they are with bitcoin in general. This line of thinking applies not only to the initial bitcoin holders themselves, but also to their heirs, as they will have to recover the funds at some point.
-
 
 ## Meet the Joneses
 Meet the Jones family: Bob, Alice and their two children Christina (24) and David (21). Bob and Alice have been saving in bitcoin for quite some time. They have been teaching their children how they should use and safeguard their own bitcoin wallets. 
