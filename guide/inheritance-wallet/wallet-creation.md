@@ -41,7 +41,7 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
    layout = "full-width"
 %}
 
-# Family inheritance wallet 
+# Wallet creation 
 {: .no_toc }
 
 ---

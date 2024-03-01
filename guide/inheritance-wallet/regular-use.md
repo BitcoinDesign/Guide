@@ -2,7 +2,7 @@
 layout: guide
 title: Regular use
 description: How to back up the inheritance wallet.
-nav_order: 4
+nav_order: 5
 parent: Inheritance wallet
 permalink: /guide/inheritance-wallet/regular-use/
 main_classes: -no-top-padding
@@ -40,7 +40,7 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
    layout = "full-width"
 %}
 
-# Family inheritance wallet 
+# Regular use 
 {: .no_toc }
 
 ---
@@ -52,29 +52,49 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
 
 ---
 
-In this reference design we will build on the savings wallet and time-based recovery reference designs. We will expand on them by looking at how a family could use our application to create a non-custodial inheritance setup by using our application, which is called Transcend. 
+An important part of a robust inheritance setup is to make sure that heirs are aware of it and know how to recover the funds, when the time comes. This part is critical, because relying on documentation alone should not be viewed as a sufficient strategy. Alice and Bob already made sure that their children are aware, because they have involved them at the wallet creation stage.
 
-## What are we building?
+## Control of funds
+Alice and Bob have a reasonable degree of protection from the risk of collusion between their children and Edward, because the inheritance keys will not be activated for 12 months after they last used their savings wallet. 
 
-Our application is designed specifically is geared towards users and their families that are living on a bitcoin standard. It lets them create flexible wallets for their family savings and offers additional features designed to help with inheritance planning and execution.  
+This means that David and Christina would have to compromise their parents’ primary key set and outright steal the funds from them.
 
-When it comes to inheritance, however, technology is not everything. Human knowledge, practice  and social  processes are critically important for any setup to work. This is why our exploration includes not only design mockups and prototypes of the wallet application software, but also thoughts around supporting processes like backups, redundancy and human processes to ensure that funds will not be lost. For a more general introduction to the topic, you can read more about [inheritance guidelines]().
+NOTE:  In the future this risk might be further reduced by using covenants to restrict the flow of funds to an intermediary address, where they remain for 30 days. During that time, Alice and Bob could recover the funds to an entirely different wallet that they control.
 
-## Chapters
+## Transaction privacy
 
-### Onboarding
+However, Bob and Alice also want to make sure that the amount of savings, and any transactions, remain private as long as they use the savings wallet. They achieve this goal by not sharing the full recovery tools with their children or their lawyer.
 
-### Wallet creation
+During the backup phase, Alice and Bob shared the passphrase to the recovery kit with Edward, their lawyer, to make sure that David and Christina can decrypt the file. 
 
-### Wallet backup
+Eric also holds one of the inheritance keys for the worst case scenario. But he can‘t access the wallet ahead of time, because he did not get set up with the wallet and he also doesn’t have access to the recovery kit or any of its contents (wallet descriptor, coordination files). 
 
-### Testing the wallet
+And even if he had access to all of the XPUBs, he would need to know the exact order in which they were initially added to the wallet as well as the rules for the delay periods. Otherwise the wallet will not generate the correct addresses that hold the funds.
 
-### Operations
+## Inheritance instructions
 
-### Managing change
+In their last will, Alice and Bob mention that it is Edward who holds the passphrase to decrypt the wallet recovery kit, mentioned in the backup section of this article. The couple gives one copy of their will to Edward and leaves one copy in their safe at home.
 
-### Recovery & inheritance
+They also make sure to tell their children about the general setup and make them aware where to find the document and how to access the shared family vault in the password manager.
+
+The inheritance instructions need to be reviewed regularly to check whether they are still up to date. If they are not, the bitcoin might be lost. Especially if the heirs have not been made aware of how the inheritance is set up. 
+
+Ideally, the wallet application that you are designing helps your users by self-documenting as much as possible. That is why Transcend offers the feature to designate inheritance keys. Any holder of such a key can download an up-to-date unencrypted recovery file after the corresponding delay period has expired. In our case this is after 12 months.
+
+## Key checks & fire drills
+
+The Joneses have heard numerous stories about people taking large amounts of bitcoin to their grave, even though they may have had very thorough instructions written out for their heirs. 
+
+The problem with instructions is that circumstances change and you have to be very diligent with updating them each time the setup changes. Another point of failure can be the people that you entrust with a piece of information. They might just forget that they have it or what to do with it, when the time comes.
+
+This is why Alice and Bob make sure to run their children through an exercise drill once a year. Together, the family:
+
+- Performs key checks for Christinas and David's inheritance keys.
+Christina and David locate the recovery kit in their family password manager.
+- Make sure the children can open the physical safe.  
+- Assess whether the current setup needs to be changed, based on the family situation.
+- Check out the wireframes and prototype below to see how this could look like.
+
 
 **Resources**
 - [Figma design file](https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type=design&node-id=5542%3A2119&mode=design&t=sBtcvrDzb8MPtWaK-1)

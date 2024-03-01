@@ -2,7 +2,7 @@
 layout: guide
 title: Managing change
 description: How to back up the inheritance wallet.
-nav_order: 5
+nav_order: 6
 parent: Inheritance wallet
 permalink: /guide/inheritance-wallet/managing-change/
 main_classes: -no-top-padding
@@ -40,7 +40,7 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
    layout = "full-width"
 %}
 
-# Family inheritance wallet 
+# Managing change 
 {: .no_toc }
 
 ---
@@ -52,29 +52,13 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
 
 ---
 
-In this reference design we will build on the savings wallet and time-based recovery reference designs. We will expand on them by looking at how a family could use our application to create a non-custodial inheritance setup by using our application, which is called Transcend. 
+There is a good chance that whichever setup you chose initially, you might need to change it because your circumstances change. That’s why it is recommended to regularly assess whether your current setup is still meeting your needs or whether you need to …
 
-## What are we building?
+## Replacing keys
 
-Our application is designed specifically is geared towards users and their families that are living on a bitcoin standard. It lets them create flexible wallets for their family savings and offers additional features designed to help with inheritance planning and execution.  
 
-When it comes to inheritance, however, technology is not everything. Human knowledge, practice  and social  processes are critically important for any setup to work. This is why our exploration includes not only design mockups and prototypes of the wallet application software, but also thoughts around supporting processes like backups, redundancy and human processes to ensure that funds will not be lost. For a more general introduction to the topic, you can read more about [inheritance guidelines]().
+## Changing the key configuration
 
-## Chapters
-
-### Onboarding
-
-### Wallet creation
-
-### Wallet backup
-
-### Testing the wallet
-
-### Operations
-
-### Managing change
-
-### Recovery & inheritance
 
 **Resources**
 - [Figma design file](https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type=design&node-id=5542%3A2119&mode=design&t=sBtcvrDzb8MPtWaK-1)

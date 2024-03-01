@@ -4,7 +4,7 @@ title: Introduction
 description: An in-depth UX reference design for a multi-key bitcoin wallet with inheritance features designed for families.
 nav_order: 1
 parent: Inheritance wallet
-permalink: /guide/inheritance-wallet/
+permalink: /guide/inheritance-wallet/introduction/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/inheritance-wallet/...
 image_base: /assets/images/guide/inheritance-wallet/
@@ -40,13 +40,13 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
    layout = "full-width"
 %}
 
-# Family inheritance wallet 
+# Introduction 
 {: .no_toc }
 
 In this reference design we will build on the savings wallet and time-based recovery reference designs. We will expand on them by looking at how a family could use our application to create a non-custodial inheritance setup by using our application, which is called Transcend. 
 
 ## Target audience
-In this reference design we are looking at a setup for a family with two children that are familiar with and  have a significant amount of their life savings in bitcoin. 
+We are looking at a setup for a family with two children that are familiar with and  have a significant amount of their life savings in bitcoin. 
 
 Other people might be better off with a simpler setup, based on factors such as the amount of bitcoin they hold, what their family situation looks like, where they live or how knowledgeable and comfortable they are with bitcoin in general. This line of thinking applies not only to the initial bitcoin holders themselves, but also to their heirs, as they will have to recover the funds at some point.
 
@@ -66,9 +66,9 @@ The couple has been thinking about what a good solution would look like for them
 
 ## Wallet configuration
 Based on these thoughts, Alice and Bob research existing solutions and best practices. Eventually they settle on the following setup for their savings wallet:
-- A 2-of-3 primary key set for normal spending. Since it is a savings wallet, Alice and Bob will spend only very infrequently.
-- A 1-of-3 recovery key set in case something very bad happens while they are still alive and need to recover their funds. This key set uses the same keys as the primary one. It is equivalent to what we cover in the time-based recovery reference design.
-- A dedicated 2-of-3 inheritance key set for David and Christie, which is unlocked after the primary key set has not been used for another 6 months after the activation of the recovery key set. Their lawyer, Edward, will hold the third inheritance key to assist them, if necessary.
+- **A 2-of-3 primary key set for normal spending**. Since it is a savings wallet, Alice and Bob will spend only very infrequently.
+- **A 1-of-3 recovery key set** in case something very bad happens while they are still alive and need to recover their funds. This key set uses the same keys as the primary one. It is equivalent to what we cover in the time-based recovery reference design.
+- **A dedicated 2-of-3 inheritance key set** for David and Christie, which is unlocked after the primary key set has not been used for another 6 months after the activation of the recovery key set. Their lawyer, Edward, will hold the third inheritance key to assist them, if necessary.
 
 The image below shows in more detail, what the wallet will look like under the hood. As you can see, the complete setup contains six keys in total. 
 

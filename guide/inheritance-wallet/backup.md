@@ -2,7 +2,7 @@
 layout: guide
 title: Backup
 description: How to back up the inheritance wallet.
-nav_order: 2
+nav_order: 3
 parent: Inheritance wallet
 permalink: /guide/inheritance-wallet/backup/
 main_classes: -no-top-padding
@@ -40,7 +40,7 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
    layout = "full-width"
 %}
 
-# Family inheritance wallet 
+# Backup 
 {: .no_toc }
 
 ---
