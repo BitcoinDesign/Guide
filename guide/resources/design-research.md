@@ -97,6 +97,12 @@ A survey and follow-up interview of 990 bitcoin users to determine bitcoin manag
 
 ## Independent research
 
+#### [Pix in Brazil: A Field Study for the Bitcoin Community](https://www.psacramento.com/pix-in-brazil-a-field-study-for-the-bitcoin-community/)
+
+_2024 by Paulo Sacramento_
+
+A field study of the Brazilian payment system Pix, with a focus on learnings for the bitcoin community.
+
 #### [Rethinking Transaction Lists](https://blog.getalby.com/rethinking-transaction-lists/)
 
 _2022 by Alby._
