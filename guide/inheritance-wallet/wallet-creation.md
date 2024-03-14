@@ -53,9 +53,7 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
 
 ---
 
-After we have laid out the overall setup... One Sunday afternoon the couple sits down to set it all up. 
-
-During their research, Bob and Alice came across an app called Transcend. It’s a mobile application specifically designed for long-term bitcoin custody. Alice and Bob each download the app on their phones and get started. Try out the prototype below. It covers the entire wallet creation process.
+One Sunday afternoon the Alice and Bob sit down to set it all up. During their research, Bob and Alice came across an app called Transcend. It’s a mobile application specifically designed for long-term bitcoin custody. Alice and Bob each download the app on their phones and get started. Try out the prototype below. It covers the entire wallet creation process.
 
 <!--
 
@@ -63,10 +61,9 @@ To do: add prototype
 
 -->
 
+### Onboarding
 
-### Primary key set
-
-Just like with the time-based recovery design, Alice and Bob start by creating the primary key set. 
+After downloading the app, the app walks the users through the purpose of the product and highlights some of the most important features. 
 
 <!--
 
@@ -74,11 +71,35 @@ Add designs
 
 -->
 
+### Creating the wallet
+
+When users create their first wallet, the app gives them an overview of how the process works and what they will need to have ready to create the wallet. It also tells them that they can pause the process at any time and finish it later.    
+
+<!--
+
+Add designs
+
+-->
+
+### Primary key set
+
+The next step is to create the primary key set. This is just a combination of signing devices that should be used to sign transactions under normal circumstances. Technically this is done by importing the extended public key (XPUB) from each device. 
+
+This sounds more complicated than it actually is. Depending on the specific device that is being used, it can be as simple as scanning a QR code, connecting it via NFC or Bluetooth, or by using a USB cable.   
+
+<!--
+
+Add designs
+
+-->
+
+After adding the primary keys, the app asks the users how many of these keys should be required to sign transactions. Our app uses smart defaults to make a suggestion based on the total amount of keys that have been added. 
+
 ### Recovery path
 
-We have covered this in the time-based reference design as well. Here we show an alternative design option for this same feature.
+After creating the primary key set. the app asks the users whether they would like to create a recovery path. We have covered this in the time-based reference design as well. Here we show an alternative design option for this same feature.
 
-We could also call this a recovery key set, since it is technically just another key set. However, the point of the recovery path is that we want to use the same keys as for the primary key set. To make this distinction more clear, we treat recovery paths as a different feature from alternative key sets in our application. 
+We could also call this a recovery key set, since it technically is just that. However, the point of the recovery path is that we want to use the same keys that are used in the primary key set. To make this distinction more clear, we treat recovery paths as a different feature from alternative key sets in our application. 
 
 You might want to take a different approach in your own application, based on your specific user base.
 
@@ -90,9 +111,11 @@ Add designs
    
 ### Inheritance key set
 
-The inheritance key set is set up in a very similar way as the primary key set, by adding the  extended public keys from David’s, Christinas and Edward’s signing devices.
+The inheritance key set is create in a very similar way as the primary key set: by adding the extended public keys from David’s, Christinas and Edward’s signing devices.
 
-But our application allows Bob and Alice to explicitly designate this key set as “inheritance keys”. This feature allows David, Christina and Edward to participate in the setup from the beginning without compromising the financial privacy of the parents.
+The main difference is that ... 
+
+In the background our application marks the keys that are added in this step as inheritance keys. This allows David, Christina and Edward to participate in the setup from the beginning without compromising the financial privacy of the parents.
 
 <!--
 
@@ -102,7 +125,9 @@ Add designs
 
 The application allows the inheritance key holders to connect their signing devices via the Transcend app on their own phones. Alternatively, they could transmit their public keys to Alice and Bob over a secure channel.
 
-The app will then keep track of whether the inheritance key set is unlocked or not and manages wallet access accordingly. This happens on the application layer, not on-chain, which allows the family to conveniently perform regular inheritance drills. 
+The app will then keep track of whether the inheritance key set is unlocked or not and manages wallet access accordingly. This happens on the application layer, not on-chain. The benefit of everybody using our application is that it allows the family to conveniently perform key checks remotely and in regular intervals. 
+
+On top of that, the children don't have to set up anything more or run through a dedicated recovery process when the time comes. The app just unlocks the wallet for them and they can move the funds to another wallet. We'll cover this topic in more detail in a later chapter.
 
 
 **Resources**
@@ -112,8 +137,8 @@ The app will then keep track of whether the inheritance key set is unlocked or n
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/time-based-recovery/"
-   previousName = "Time-based recovery"
-   nextUrl = "/guide/upgradeable-wallet/"
-   nextName = "Upgradeable wallet"
+   previousUrl = "/guide/inheritance-wallet/introduction"
+   previousName = "Introduction"
+   nextUrl = "/guide/inheritance-wallet/backup"
+   nextName = "Wallet backup"
 %}

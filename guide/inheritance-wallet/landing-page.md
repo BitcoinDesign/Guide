@@ -6,7 +6,7 @@ nav_order: 6
 has_children: true
 permalink: /guide/inheritance-wallet/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/inheritance-wallet/...
+image: https://bitcoin.design/assets/images/guide/inheritance-wallet/header.png
 image_base: /assets/images/guide/inheritance-wallet/
 images_creation-wallet-basics:
     - file: 
@@ -29,12 +29,8 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/inheritance-wallet/..."
-   retina = "/assets/images/guide/inheritance-wallet/...@2x.png"
-   mobile = "/assets/images/guide/inheritance-wallet/..."
-   mobileRetina = "/assets/images/guide/inheritance-wallet/...@2x.png"
-   alt-text = "..."
-   caption = ""
+   image = "/assets/images/guide/inheritance-wallet/header.jpg"
+   alt-text = "An image showing two parents handing bitcoin to their two children."
    width = 1600
    height = 600
    layout = "full-width"
@@ -43,13 +39,17 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
 # Family inheritance wallet 
 {: .no_toc }
 
-In this reference design we will build on the savings wallet and time-based recovery reference designs. We will expand on them by looking at how a family could use our application to create a non-custodial inheritance setup by using our application, which is called Transcend. 
+The family inheritance wallet is an app designed to create flexible wallets for family savings. It offers features designed to help with sustainable long-term storage and inheritance planning.
+
+But when it comes to inheritance, technology is not everything. Knowledge, documentation, practice  and social  processes are important for any setup to work over the long term. This exploration includes not only designs and prototypes of the wallet application, but also thoughts around social processes to ensure that funds will not be lost.
 
 ## What are we building?
 
-Our application is designed specifically for users that are living on a bitcoin standard. It lets them create flexible multi-key wallets for their family savings and offers additional features designed to help with inheritance planning and execution.  
+Imagine a product that helps you create and use a custody setup for your bitcoin savings while including your loved ones from the beginning. But because you plan to live a long and happy life, the app allows you to set up a recovery path that helps you recover your funds even in catastrophic scenarios. 
 
-When it comes to inheritance, however, technology is not everything. Human knowledge, practice  and social  processes are critically important for any setup to work. This is why our exploration includes not only design mockups and prototypes of the wallet application, but also thoughts around supporting processes like backups and human processes to ensure that funds will not be lost.
+On top of that, the app allows you to add your heirs' hardware wallets and use them to create a dedicated inheritance key set. Since it is designed for long-term storage, it also supports regular key checks and other supporting features. 
+
+All of this is done without compromising your financial privacy. You don't want anyone to know how much bitcoin you have or monitor your transactions.
 
 ## Chapters
 
