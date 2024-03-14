@@ -7,7 +7,7 @@ parent: Inheritance wallet
 permalink: /guide/inheritance-wallet/introduction/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/inheritance-wallet/...
-image_base: /assets/images/guide/inheritance-wallet/
+image_base: /assets/images/guide/inheritance-wallet/introduction/
 images_creation-wallet-basics:
     - file: 
       alt: 
@@ -83,11 +83,20 @@ Simple illustration goes here.
 
 The image below shows in more detail, what the wallet will look like under the hood. As you can see, the complete setup contains six keys in total. 
 
-<!--
 
-Detailed illustration goes here.
+<div class="center" markdown="1">
 
--->
+{% include picture.html
+   image = "/assets/images/guide/inheritance-wallet/introduction/timelock-overview.png"
+   retina = "/assets/images/guide/..."
+   mobile = "/assets/images/guide/..."
+   mobileRetina = "/assets/images/guide/..."
+   alt-text = "An illustration showing the timeline of the key sets."
+   width = 1600
+   height = 800
+
+%}
+
 
 Three are held by Alice and Bob and are used for the primary as well as the recovery key set. Christina, David and Edward each hold one key. These three keys form the inheritance key set.
 
