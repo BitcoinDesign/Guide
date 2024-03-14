@@ -28,18 +28,6 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
 
 -->
 
-{% include picture.html
-   image = "/assets/images/guide/inheritance-wallet/..."
-   retina = "/assets/images/guide/inheritance-wallet/...@2x.png"
-   mobile = "/assets/images/guide/inheritance-wallet/..."
-   mobileRetina = "/assets/images/guide/inheritance-wallet/...@2x.png"
-   alt-text = "..."
-   caption = ""
-   width = 1600
-   height = 600
-   layout = "full-width"
-%}
-
 # Introduction 
 {: .no_toc }
 
@@ -50,13 +38,17 @@ For many users, such a setup might be too advanced. When choosing a specific set
 ## Use case and personas
 Meet the Jones family: Bob, Alice and their two children Christina (24) and David (21). Bob and Alice have been saving in bitcoin for quite some time. They have been teaching their children how they should use and safeguard their own bitcoin wallets. 
 
-<!--
+{% include picture.html
+   image = "/assets/images/guide/inheritance-wallet/introduction/family-overview.png"
+   retina = "/assets/images/guide/inheritance-wallet/introduction/family-overview.png"
+   mobile = "/assets/images/guide/inheritance-wallet/introduction/family-overview.png"
+   mobileRetina = "/assets/images/guide/inheritance-wallet/introduction/family-overview.png"
+   alt-text = "An illustration showing the Jones family."
+   width = 1600
+   height = 800
+%}
 
-Family overview illustration goes here.
-
--->
-
-The couple has been using a shared multi-key wallet as a family checking account for a few years already. This wallet is used for general spending. Alice and Bob each manage their earnings, personal spending and savings using their individual single-key wallets. 
+Alice and Bod have been using a shared multi-key wallet as a family checking account for a few years already. This wallet is used for general spending. Alice and Bob each manage their earnings, personal spending and savings using their individual single-key wallets. 
 
 The couple now feels that the time is right to consolidate the family savings and to include their children in securing them. They will still keep the savings separated from their checking wallet.
 
@@ -71,34 +63,33 @@ The couple has been thinking about what a good solution would look like for them
 ## Wallet configuration
 Based on their initial requirements, Alice and Bob research existing solutions and best practices. Eventually they settle on the following setup for their savings wallet:
 
-<!--
-
-Simple illustration goes here.
-
--->
-
 - **A 2-of-3 primary key set for normal spending**. Since it is a savings wallet, Alice and Bob will spend only very infrequently.
-- **A 1-of-3 recovery key set** in case something very bad happens while they are still alive and need to recover their funds. This key set uses the same keys as the primary one. It is equivalent to what we cover in the time-based recovery reference design.
-- **A dedicated 2-of-3 inheritance key set** for David and Christina, which is unlocked after the primary key set has not been used for another 6 months after the recovery key set was unlocked. Edward will hold the third inheritance key to assist the children, if necessary.
+- **A 1-of-3 recovery key set** in case something very bad happens while they are still alive and need to recover their funds. This key set uses the same keys as the primary one.
+- **A dedicated 2-of-3 inheritance key set**, which is unlocked 6 months after the recovery key set was unlocked and has not been used. Christina and David will each hold one of the inheritance keys. Edward will hold the third key to assist the children, if necessary.
 
-The image below shows in more detail, what the wallet will look like under the hood. As you can see, the complete setup contains six keys in total. 
+As you can see, three keys are held by Alice and Bob and are used for the primary as well as the recovery key set. Christina, David and Edward each hold one key. These three keys form the inheritance key set.
 
+{% include picture.html
+   image = "/assets/images/guide/inheritance-wallet/introduction/key-scheme.png"
+   retina = "/assets/images/guide/inheritance-wallet/introduction/key-scheme.png"
+   mobile = "/assets/images/guide/inheritance-wallet/introduction/key-scheme.png"
+   mobileRetina = "/assets/images/guide/inheritance-wallet/introduction/key-scheme.png"
+   alt-text = "An illustration showing that Alice and Bob control three keys, while Christina, David and Edward control one key each."
+   width = 1600
+   height = 800
+%}
 
-<div class="center" markdown="1">
+The image below shows in more detail, how the wallet will work under the hood. 
 
 {% include picture.html
    image = "/assets/images/guide/inheritance-wallet/introduction/timelock-overview.png"
-   retina = "/assets/images/guide/..."
-   mobile = "/assets/images/guide/..."
-   mobileRetina = "/assets/images/guide/..."
+   retina = "/assets/images/guide/inheritance-wallet/introduction/timelock-overview.png"
+   mobile = "/assets/images/guide/inheritance-wallet/introduction/timelock-overview.png"
+   mobileRetina = "/assets/images/guide/inheritance-wallet/introduction/timelock-overview.png"
    alt-text = "An illustration showing the timeline of the key sets."
    width = 1600
    height = 800
-
 %}
-
-
-Three are held by Alice and Bob and are used for the primary as well as the recovery key set. Christina, David and Edward each hold one key. These three keys form the inheritance key set.
 
 ## Application scope
 Note that this configuration could be expanded almost at will. But with each additional layer of logic comes additional complexity in terms of backup and maintainability. This decision will ultimately be up to users of your application. But you will need to make sure that your application guides and educates them towards choosing and maintaining a setup that is secure enough and sustainable over the long term. 
