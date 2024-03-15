@@ -53,26 +53,148 @@ All of this is done without compromising your financial privacy. You don't want 
 
 ## Chapters
 
-### Introduction
-Before we dive into the details, we will introduce you to our main protagonists, the Jones family. We are also going to look at the big picture of how they set up their family savings and inheritance plan in general.  
+<div class="center" markdown="1">
 
-### Wallet creation
+{% include image.html
+   image = "assets/images/guide/inheritance-wallet/icon-introduction.png"
+   retina = "assets/images/guide/inheritance-wallet/icon-introduction@2x.png"
+   alt-text = ""
+   width = 80
+   height = 80
+   layout = "float-left"
+   link-url = "/guide/inheritance-wallet/introduction/"
+%}
+
+### [Overview]({{ '/guide/inheritance-wallet/introduction/' | relative_url }})
+
+Before we dive into the details, we will introduce you to our main protagonists, the Jones family. We are also going to look at how they plan set up their family savings in general. 
+
+</div>
+
+---
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "assets/images/guide/inheritance-wallet/icon-wallet-creation.png"
+   retina = "assets/images/guide/inheritance-wallet/icon-wallet-creation@2x.png"
+   alt-text = ""
+   width = 80
+   height = 80
+   layout = "float-left"
+   link-url = "/guide/inheritance-wallet/wallet-creation/"
+%}
+
+### [Wallet creation]({{ '/guide/inheritance-wallet/wallet-creation/' | relative_url }})
+
 Transcend lets users create flexible multi-key wallets with timelocked recovery paths to help them recover funds while they are still alive. On top of that, users can create and manage dedicated inheritance keys that are held by their heirs.
 
-### Wallet backup
-When backing up multi-key wallets there are more moving parts to consider than with single-key wallets. Our application helps users with that.  
+</div>
 
-### Testing the wallet
+---
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "assets/images/guide/inheritance-wallet/icon-wallet-backup.png"
+   retina = "assets/images/guide/inheritance-wallet/icon-backup@2x.png"
+   alt-text = ""
+   width = 80
+   height = 80
+   layout = "float-left"
+   link-url = "/guide/inheritance-wallet/backup/"
+%}
+
+### [Wallet backup]({{ '/guide/inheritance-wallet/backup/' | relative_url }})
+
+When backing up multi-key wallets there are more moving parts to consider than with single-key wallets. Our application helps users with that. 
+
+</div>
+
+--- 
+
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "assets/images/guide/inheritance-wallet/icon-testing.png"
+   retina = "assets/images/guide/inheritance-wallet/icon-testing@2x.png"
+   alt-text = ""
+   width = 80
+   height = 80
+   layout = "float-left"
+   link-url = "/guide/inheritance-wallet/testing/"
+%}
+
+### [Testing]({{ '/guide/inheritance-wallet/testing/' | relative_url }})
+
 To help users make sure that their wallet works as intended, Transcend offers features that let them test their setup, before they move all of their savings to their newly created wallet.
 
-### Operations
-It is good practice to involve the potential heirs in the inheritance planning process. But this also has potential implications for financial privacy and security. Our application combines built-in features with social processes to mitigate this risk. It also helps to prevent premature activation of the inheritance keys. 
+</div>
 
-### Managing change
+--- 
+
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "assets/images/guide/inheritance-wallet/icon-operations.png"
+   retina = "assets/images/guide/inheritance-wallet/icon-operations@2x.png"
+   alt-text = ""
+   width = 80
+   height = 80
+   layout = "float-left"
+   link-url = "/guide/inheritance-wallet/regular-use/"
+%}
+
+### [Operational phase]({{ '/guide/inheritance-wallet/regular-use/' | relative_url }})
+
+Involving the potential heirs early on is great, but it also has potential implications when it comes to privacy and security. Our application combines built-in features with social processes to mitigate this risk. It also helps to prevent premature activation of the inheritance keys. 
+
+</div>
+
+--- 
+
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "assets/images/guide/inheritance-wallet/icon-changing.png"
+   retina = "assets/images/guide/inheritance-wallet/icon-changing@2x.png"
+   alt-text = ""
+   width = 80
+   height = 80
+   layout = "float-left"
+   link-url = "/guide/inheritance-wallet/managing-change/"
+%}
+
+### [Managing change]({{ '/guide/inheritance-wallet/managing-change/' | relative_url }})
+
 Life changes and so it might become necessary for users to make changes to their savings wallet because someone lost a key or they want to make changes to the overall wallet configuration. Our app helps to make such changes and with updating the backup and inheritance documentation.
 
-### Recovery & inheritance
+</div>
+
+--- 
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "assets/images/guide/inheritance-wallet/icon-recovery.png"
+   retina = "assets/images/guide/inheritance-wallet/icon-recovery@2x.png"
+   alt-text = ""
+   width = 80
+   height = 80
+   layout = "float-left"
+   link-url = "/guide/inheritance-wallet/wallet-recovery/"
+%}
+
+### [Recovery & inheritance]({{ '/guide/inheritance-wallet/wallet-recovery/' | relative_url }})
+
 When it's time for the heirs to claim their inheritance, the Jones' children can use their own signing devices to recover their funds.
+
+</div>
+
+--- 
 
 **Resources**
 - [Figma design file](https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type=design&node-id=5542%3A2119&mode=design&t=sBtcvrDzb8MPtWaK-1)
