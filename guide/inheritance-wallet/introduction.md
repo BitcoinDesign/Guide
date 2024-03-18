@@ -83,18 +83,18 @@ More specifically, here is what the configuration of the savings wallet will loo
 The image below shows in more detail, how the wallet will work under the hood. 
 
 {% include picture.html
-   image = "/assets/images/guide/inheritance-wallet/introduction/timelock-overview.png"
-   retina = "/assets/images/guide/inheritance-wallet/introduction/timelock-overview.png"
-   mobile = "/assets/images/guide/inheritance-wallet/introduction/timelock-overview.png"
-   mobileRetina = "/assets/images/guide/inheritance-wallet/introduction/timelock-overview.png"
+   image = "/assets/images/guide/inheritance-wallet/introduction/wallet-overview.png"
+   retina = "/assets/images/guide/inheritance-wallet/introduction/wallet-overview@2x.png"
+   mobile = "/assets/images/guide/inheritance-wallet/introduction/wallet-overview-mobile.png"
+   mobileRetina = "/assets/images/guide/inheritance-wallet/introduction/wallet-overview-mobile@2x.png"
    alt-text = "An illustration showing the timeline of the key sets."
    width = 1600
    height = 800
 %}
 
-## Application scope
-Note that this configuration could be expanded almost at will. But with each additional layer of logic comes additional complexity in terms of backup and maintainability. This decision will ultimately be up to users of your application. But you will need to make sure that your application guides and educates them towards choosing and maintaining a setup that is secure enough and sustainable over the long term. 
+Note that this configuration could be expanded almost at will by the users. But with each additional layer of logic comes additional complexity in terms of backup and maintainability. While the decision will ultimately be up to users of your application. But you will need to make sure that your application guides and educates them towards choosing and maintaining a setup that is secure enough and sustainable over the long term. 
 
+## Defining the application scope
 Think about the scope of your application and how to incorporate supporting features beyond just letting users create such an advanced wallet. Such supporting features can be implemented on the application layer and don't necessarily need to touch the bitcoin protocol.
 
 Consider features that help users to:
@@ -106,7 +106,7 @@ Consider features that help users to:
 - Make changes to the setup over time AND make sure that its documentation is updated and distributed accordingly.
 - Provide a way to migrate to a different wallet application, in case your project is abandoned or shut down.
 
-### Interoperability
+## Interoperability
 
 An important aspect to consider is the demise of the wallet application itself. What if, during the course of the years, the developers of our application decide to abandon the project? Or if it gets removed from the app stores? To mitigate this risk, our application will create a regular bitcoin wallet that can be imported into other wallet applications, as long as they support Miniscript. 
 
