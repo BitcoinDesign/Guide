@@ -33,7 +33,7 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
 
 Our target audience are families that are familiar with bitcoin and hold the majority of their net worth in bitcoin. They want to take advantage of the security assurances of multi-key wallets and are comfortable with using more advanced technical features and human processes for inheritance planning.  
 
-For many users, such a setup might be too advanced. When choosing a specific setup, the decision should be based on factors such as the amount of bitcoin they hold, what their family situation looks like, where they live or how knowledgeable and comfortable they are with bitcoin in general. This line of thinking applies not only to the initial bitcoin holders themselves, but also to their heirs, as they will have to recover the funds at some point.
+For other users, such a setup might be too advanced. When choosing a specific setup, the decision should be based on factors such as the amount of bitcoin they hold, what their family situation looks like, where they live or how knowledgeable and comfortable they are with bitcoin in general. This line of thinking applies not only to the initial bitcoin holders themselves, but also to their heirs, as they will have to recover the funds at some point.
 
 ## Use case and personas
 Meet the Jones family: Bob, Alice and their two children Christina (24) and David (21). Bob and Alice have been saving in bitcoin for quite some time. They have been teaching their children how they should use and safeguard their own bitcoin wallets. 
@@ -61,13 +61,7 @@ The couple has been thinking about what a good solution would look like for them
 4. **Support:** Alice and Bob also want to involve Edward, their lawyer, to assist in case there are any problems between the children or their families. He will also be able to work with the legal inheritance processes in their jurisdiction.
 
 ## Wallet configuration
-Based on their initial requirements, Alice and Bob research existing solutions and best practices. Eventually they settle on the following setup for their savings wallet:
-
-- **A 2-of-3 primary key set for normal spending**. Since it is a savings wallet, Alice and Bob will spend only very infrequently.
-- **A 1-of-3 recovery key set** in case something very bad happens while they are still alive and need to recover their funds. This key set uses the same keys as the primary one.
-- **A dedicated 2-of-3 inheritance key set**, which is unlocked 6 months after the recovery key set was unlocked and has not been used. Christina and David will each hold one of the inheritance keys. Edward will hold the third key to assist the children, if necessary.
-
-As you can see, three keys are held by Alice and Bob and are used for the primary as well as the recovery key set. Christina, David and Edward each hold one key. These three keys form the inheritance key set.
+Based on their initial requirements, Alice and Bob decided on having two key sets. One primary key that they will use in times of normal operations. In addition, they want to create an inheritance key set, in which each of their children and Edward hold one key.  
 
 {% include picture.html
    image = "/assets/images/guide/inheritance-wallet/introduction/key-scheme.png"
@@ -78,6 +72,13 @@ As you can see, three keys are held by Alice and Bob and are used for the primar
    width = 1600
    height = 800
 %}
+
+More specifically, here is what the configuration of the savings wallet will look like:
+
+- **A 2-of-3 primary key set for normal spending**. Since it is a savings wallet, Alice and Bob will spend only very infrequently.
+- **A 1-of-3 recovery key set** in case something very bad happens while they are still alive and need to recover their funds. This key set uses the same keys as the primary one.
+- **A dedicated 2-of-3 inheritance key set**, which is unlocked 6 months after the recovery key set was unlocked and has not been used. Christina and David will each hold one of the inheritance keys. Edward will hold the third key to assist the children, if necessary.
+
 
 The image below shows in more detail, how the wallet will work under the hood. 
 
