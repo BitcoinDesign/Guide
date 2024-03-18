@@ -53,6 +53,8 @@ All of this is done without compromising your financial privacy. You don't want 
 
 ## Chapters
 
+### [Overview]({{ '/guide/inheritance-wallet/introduction/' | relative_url }})
+
 <div class="center" markdown="1">
 
 {% include image.html
@@ -65,13 +67,13 @@ All of this is done without compromising your financial privacy. You don't want 
    link-url = "/guide/inheritance-wallet/introduction/"
 %}
 
-### [Overview]({{ '/guide/inheritance-wallet/introduction/' | relative_url }})
-
 Before we dive into the details, we will introduce you to our main protagonists, the Jones family. We are also going to look at how they plan set up their family savings in general. 
 
 </div>
 
 ---
+
+### [Wallet creation]({{ '/guide/inheritance-wallet/wallet-creation/' | relative_url }})
 
 <div class="center" markdown="1">
 
@@ -85,13 +87,13 @@ Before we dive into the details, we will introduce you to our main protagonists,
    link-url = "/guide/inheritance-wallet/wallet-creation/"
 %}
 
-### [Wallet creation]({{ '/guide/inheritance-wallet/wallet-creation/' | relative_url }})
-
 Transcend lets users create flexible multi-key wallets with timelocked recovery paths to help them recover funds while they are still alive. On top of that, users can create and manage dedicated inheritance keys that are held by their heirs.
 
 </div>
 
 ---
+
+### [Wallet backup]({{ '/guide/inheritance-wallet/backup/' | relative_url }})
 
 <div class="center" markdown="1">
 
@@ -105,14 +107,13 @@ Transcend lets users create flexible multi-key wallets with timelocked recovery 
    link-url = "/guide/inheritance-wallet/backup/"
 %}
 
-### [Wallet backup]({{ '/guide/inheritance-wallet/backup/' | relative_url }})
-
 When backing up multi-key wallets there are more moving parts to consider than with single-key wallets. Our application helps users with that. 
 
 </div>
 
 --- 
 
+### [Testing]({{ '/guide/inheritance-wallet/testing/' | relative_url }})
 
 <div class="center" markdown="1">
 
@@ -126,14 +127,13 @@ When backing up multi-key wallets there are more moving parts to consider than w
    link-url = "/guide/inheritance-wallet/testing/"
 %}
 
-### [Testing]({{ '/guide/inheritance-wallet/testing/' | relative_url }})
-
 To help users make sure that their wallet works as intended, Transcend offers features that let them test their setup, before they move all of their savings to their newly created wallet.
 
 </div>
 
 --- 
 
+### [Operational phase]({{ '/guide/inheritance-wallet/regular-use/' | relative_url }})
 
 <div class="center" markdown="1">
 
@@ -147,14 +147,13 @@ To help users make sure that their wallet works as intended, Transcend offers fe
    link-url = "/guide/inheritance-wallet/regular-use/"
 %}
 
-### [Operational phase]({{ '/guide/inheritance-wallet/regular-use/' | relative_url }})
-
 Involving the potential heirs early on is great, but it also has potential implications when it comes to privacy and security. Our application combines built-in features with social processes to mitigate this risk. It also helps to prevent premature activation of the inheritance keys. 
 
 </div>
 
 --- 
 
+### [Managing change]({{ '/guide/inheritance-wallet/managing-change/' | relative_url }})
 
 <div class="center" markdown="1">
 
@@ -168,13 +167,13 @@ Involving the potential heirs early on is great, but it also has potential impli
    link-url = "/guide/inheritance-wallet/managing-change/"
 %}
 
-### [Managing change]({{ '/guide/inheritance-wallet/managing-change/' | relative_url }})
-
 Life changes and so it might become necessary for users to make changes to their savings wallet because someone lost a key or they want to make changes to the overall wallet configuration. Our app helps to make such changes and with updating the backup and inheritance documentation.
 
 </div>
 
 --- 
+
+### [Recovery & inheritance]({{ '/guide/inheritance-wallet/wallet-recovery/' | relative_url }})
 
 <div class="center" markdown="1">
 
@@ -187,8 +186,6 @@ Life changes and so it might become necessary for users to make changes to their
    layout = "float-left"
    link-url = "/guide/inheritance-wallet/wallet-recovery/"
 %}
-
-### [Recovery & inheritance]({{ '/guide/inheritance-wallet/wallet-recovery/' | relative_url }})
 
 When it's time for the heirs to claim their inheritance, the Jones' children can use their own signing devices to recover their funds.
 
