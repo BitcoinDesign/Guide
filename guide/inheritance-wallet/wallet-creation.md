@@ -83,9 +83,11 @@ Add designs
 
 ### Primary key set
 
-The next step is to create the primary key set. This is just a combination of signing devices that should be used to sign transactions under normal circumstances. Technically this is done by importing the extended public key (XPUB) from each device. 
+The first step is to create the primary key set. This is just a combination of signing devices that should be used to sign transactions under normal circumstances. Technically this is done by importing the extended public key (XPUB) from each device. 
 
-This sounds more complicated than it actually is. Depending on the specific device that is being used, it can be as simple as scanning a QR code, connecting it via NFC or Bluetooth, or by using a USB cable.   
+This sounds more complicated than it actually is. Depending on the specific signing devices that are being used, it can be as simple as scanning a QR code, connecting it via NFC or Bluetooth, or by using a USB cable. 
+
+The application allows the users to create the wallet collaboratively. This means that each of the primary key holders uses their own phone and signing device to create the wallet. 
 
 <!--
 
@@ -94,6 +96,13 @@ Add designs
 -->
 
 After adding the primary keys, the app asks the users how many of these keys should be required to sign transactions. Our app uses smart defaults to make a suggestion based on the total amount of keys that have been added. 
+
+<!--
+
+Add designs
+
+-->
+
 
 ### Recovery path
 
@@ -113,9 +122,7 @@ Add designs
 
 The inheritance key set is create in a very similar way as the primary key set: by adding the extended public keys from David’s, Christinas and Edward’s signing devices.
 
-The main difference is that ... 
-
-In the background our application marks the keys that are added in this step as inheritance keys. This allows David, Christina and Edward to participate in the setup from the beginning without compromising the financial privacy of the parents.
+The application allows them to use their own phones to add their signing devices to the wallet. Alternatively, they could transmit their public keys to Alice and Bob over a secure channel.
 
 <!--
 
@@ -123,11 +130,11 @@ Add designs
 
 -->
 
-The application allows the inheritance key holders to connect their signing devices via the Transcend app on their own phones. Alternatively, they could transmit their public keys to Alice and Bob over a secure channel.
+In the background, our application marks these keys as inheritance keys. The app will then keep track of whether the inheritance key set is unlocked or not and manages wallet access accordingly, on the application layer. This allows David, Christina and Edward to participate in the setup from the beginning without compromising the financial privacy of the parents. 
 
-The app will then keep track of whether the inheritance key set is unlocked or not and manages wallet access accordingly. This happens on the application layer, not on-chain. The benefit of everybody using our application is that it allows the family to conveniently perform key checks remotely and in regular intervals. 
+The benefit of everybody using our application from the beginning is that it allows the family to conveniently perform key checks remotely and in regular intervals. 
 
-On top of that, the children don't have to set up anything more or run through a dedicated recovery process when the time comes. The app just unlocks the wallet for them and they can move the funds to another wallet. We'll cover this topic in more detail in a later chapter.
+On top of that, the children don't have to set up anything more or run through a dedicated recovery process when the time comes. The app just unlocks the wallet so that they can move the funds to another wallet. We will cover this topic in more detail in a later chapter.
 
 
 **Resources**
