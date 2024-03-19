@@ -95,9 +95,7 @@ The image below shows in more detail, how the wallet will work under the hood.
 Note that this configuration could be expanded almost at will by the users. But with each additional layer of logic comes additional complexity in terms of backup and maintainability. While the decision will ultimately be up to users of your application. But you will need to make sure that your application guides and educates them towards choosing and maintaining a setup that is secure enough and sustainable over the long term. 
 
 ## Defining the application scope
-Think about the scope of your application and how to incorporate supporting features beyond just letting users create such an advanced wallet. Such supporting features can be implemented on the application layer and don't necessarily need to touch the bitcoin protocol.
-
-Consider features that help users to:
+Think about the scope of your application and how to incorporate supporting features beyond just letting users create such an advanced wallet and using it to receive and send transactions. Consider features that help users to:
 
 - Choose an adequate setup.
 - Test or simulate that the wallet and its rules work as intended.
@@ -105,6 +103,8 @@ Consider features that help users to:
 - Perform regular key checks for all keys. 
 - Make changes to the setup over time AND make sure that its documentation is updated and distributed accordingly.
 - Provide a way to migrate to a different wallet application, in case your project is abandoned or shut down.
+
+Such supporting features can be implemented on the application layer and don't necessarily need to touch the bitcoin protocol.
 
 ## Interoperability
 
