@@ -58,7 +58,7 @@ Learn about how nodes help keep bitcoin decentralized and enforce its rules.
 
 ### [Payment request formats]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }})
 
-Learn about the different types of payment request formats, from a standard on-chain address to a lightning address, that exist in bitcoin.
+Learn about the different formats for payment information that exist in bitcoin, from standard on-chain to lightning, and [human readable addresses]({{ '/guide/how-it-works/human-readable-addresses/' | relative_url }}).
 
 ---
 
