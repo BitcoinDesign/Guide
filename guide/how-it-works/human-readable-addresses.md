@@ -32,7 +32,7 @@ Editor's notes:
 # Human readable addresses
 
 
-[Bitcoin addresses]({{'/guide/glossary/address/' | relative_url}}) and [payment requests]({{'/guide/how-it-works/payment-request-formats/' | relative_url}}) are long and cryptic, and practically impossible to read, memorize, pronounce, understand, and type. Creating a separate format for human-readable addresses is a logical solution to this problem, and there have been multiple attempts at making them a reality.
+[Bitcoin addresses]({{'/guide/glossary/address/' | relative_url}}) and [payment requests]({{'/guide/how-it-works/payment-request-formats/' | relative_url}}) are long and cryptic, practically impossible to read, memorize, pronounce, understand, or type. We are used to being able to communicate our social media handles, or email addresses easily. That expectation has also extended to transacting value, with neo-banking and payment applications. There have been multiple attempts at making human-readable addresses a reality in bitcoin.
 
 The benefits to the user experience include:
 
