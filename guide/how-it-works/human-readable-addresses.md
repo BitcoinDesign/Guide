@@ -259,7 +259,7 @@ In a similar vein, [UMA](https://www.uma.me) is based on LNURL and Lightning Add
 
 ## [Paynyms](http://paynym.is)
 
-This approach relies on a centralized directory/server and [BIP-47](https://github.com/bitcoin/bips/blob/master/bip-0047.mediawiki) payment codes. Centralization allows for the omission of the global part and users can simply be referred to by their usernames. However, it is not recommended due to the problematic centralization.
+This approach relies on a single directory provider which maps a human readable name with a [BIP-47](https://github.com/bitcoin/bips/blob/master/bip-0047.mediawiki) payment code. Having a single provider allows for the omission of the global part, in this case "my.paynym.is/username" and users can simply be referred to by their usernames. However, it is not recommended due to the problem of centralization and no alternative providers.
 
 ---
 
