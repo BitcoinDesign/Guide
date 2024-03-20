@@ -39,7 +39,7 @@ The benefits to the user experience include:
 - Familiarity: A format that feels more human and familiar to users
 - Ease of sharing: A format that is easier to remember and recall and share in a social setting
 
-Note that human-readable addresses should be <b>only</b> used for direct communication. Whenever payment information is communicated digitally (copy & paste, links, QR codes, messaging, etc), regular addresses should be used for best privacy and security.
+Ideally human-readable addresses <b>should only</b> be used for direct communication. Whenever payment information is communicated digitally (copy & paste, links, QR codes, messaging, etc), cryptographic formats should be used for the best security and privacy.
 
 On this page, we focus primarily on the [DNS Payment Instructions proposal](https://github.com/bitcoin/bips/pull/1551), with some information about [Lightning Addresses](https://lightningaddress.com). They pursue similar goals, but in very different ways.
 
