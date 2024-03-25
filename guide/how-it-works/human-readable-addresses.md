@@ -13,8 +13,15 @@ image: /assets/images/guide/how-it-works/human-readable-addresses/human-readable
 
 <!--
 
-Editor's notes:
+Editor's notes
 
+This page introduces the concept and basic ideas of human readable addresses. Then it discusses
+three different approaches and how they might be surfaced in user interfaces, with different
+levels of details.
+
+Illustration source
+
+https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?type=design&node-id=3578%3A6178&mode=design&t=vOePIli83cT4breH-1
 
 -->
 
@@ -30,7 +37,6 @@ Editor's notes:
 %}
 
 # Human readable addresses
-
 
 [Bitcoin addresses]({{'/guide/glossary/address/' | relative_url}}) and [payment requests]({{'/guide/how-it-works/payment-request-formats/' | relative_url}}) are long and cryptic, practically impossible to read, memorize, pronounce, understand, or type. We are used to being able to communicate our social media handles, or email addresses easily. That expectation has also extended to transacting value, with neo-banking and payment applications. There have been multiple attempts at making human-readable addresses a reality in bitcoin.
 
@@ -80,6 +86,12 @@ For social media, users know to navigate to the respective website or app and lo
 ## DNS Payment Instructions
 
 This [proposal](https://github.com/BitcoinDesign/Meta/issues/638) only relies on the Domain Name System (DNS) to retrieve payment information. It is a decentralized hierarchical naming system used to translate human-friendly domain names (like *www.example.com*) into IP addresses (like *192.0.2.1*) that computers use to identify each other on the network. Anytime we type in a domain into a browser, we rely on this system.
+
+{% include tip/open.html color="blue" label="Note" icon="info" %}
+
+This is a new proposal for a [BIP]({{'/guide/glossary/#bip---bitcoin-improvement-proposal' | relative_url}}). It is still being discussed.
+
+{% include tip/close.html %}
 
 ### Address format
 
@@ -259,7 +271,7 @@ In a similar vein, [UMA](https://www.uma.me) is based on LNURL and Lightning Add
 
 ## [Paynyms](http://paynym.is)
 
-This approach relies on a single directory provider which maps a human readable name with a [BIP-47](https://github.com/bitcoin/bips/blob/master/bip-0047.mediawiki) payment code. Having a single provider allows for the omission of the global part, in this case "my.paynym.is/username" and users can simply be referred to by their usernames. However, it is not recommended due to the problem of centralization and no alternative providers.
+This approach relies on a single directory provider, which maps a human readable name with a [BIP-47](https://github.com/bitcoin/bips/blob/master/bip-0047.mediawiki) payment code. Having a single provider allows for the omission of the global part, in this case *"my.paynym.is/<span class="-green">username</span>"* and users can simply be referred to by their usernames. The directory code is not open-source.
 
 ---
 
