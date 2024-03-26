@@ -6,13 +6,11 @@ nav_order: 1
 parent: Inheritance wallet
 permalink: /guide/inheritance-wallet/introduction/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/inheritance-wallet/...
-image_base: /assets/images/guide/inheritance-wallet/introduction/
-images_creation-wallet-basics:
+image_base: /assets/images/guide/inheritance-wallet/
+images_introduction:
     - file: 
       alt: 
       caption: 
-
 
 ---
 
