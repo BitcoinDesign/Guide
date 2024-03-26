@@ -53,7 +53,7 @@ All of this is done without compromising your financial privacy. You don't want 
 
 ## Chapters
 
-### [Overview]({{ '/guide/inheritance-wallet/introduction/' | relative_url }})
+### [Use case & personas]({{ '/guide/inheritance-wallet/introduction/' | relative_url }})
 
 <div class="center" markdown="1">
 
@@ -87,7 +87,7 @@ Before we dive into the details, we will introduce you to our main protagonists,
    link-url = "/guide/inheritance-wallet/wallet-creation/"
 %}
 
-Transcend lets users create flexible multi-key wallets with timelocked recovery paths to help them recover funds while they are still alive. On top of that, users can create and manage dedicated inheritance keys that are held by their heirs.
+Our application lets users create flexible multi-key wallets with timelocked recovery paths to help them recover funds while they are still alive. On top of that, users can create and manage dedicated inheritance keys that are held by their heirs.
 
 </div>
 
@@ -127,7 +127,7 @@ When backing up multi-key wallets there are more moving parts to consider than w
    link-url = "/guide/inheritance-wallet/testing/"
 %}
 
-To help users make sure that their wallet works as intended, Transcend offers features that let them test their setup, before they move all of their savings to their newly created wallet.
+To help users make sure that their wallet works as intended, the app offers features that let them test their setup, before they move all of their savings to their newly created wallet.
 
 </div>
 

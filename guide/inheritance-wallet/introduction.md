@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Introduction
+title: Use case & scope
 description: An in-depth UX reference design for a multi-key bitcoin wallet with inheritance features designed for families.
 nav_order: 1
 parent: Inheritance wallet
