@@ -93,7 +93,7 @@ Transcend lets users create flexible multi-key wallets with timelocked recovery 
 
 ---
 
-### [Wallet backup]({{ '/guide/inheritance-wallet/backup/' | relative_url }})
+### Wallet backup (coming soon)
 
 <div class="center" markdown="1">
 
@@ -113,7 +113,7 @@ When backing up multi-key wallets there are more moving parts to consider than w
 
 --- 
 
-### [Testing]({{ '/guide/inheritance-wallet/testing/' | relative_url }})
+### Testing (coming soon)
 
 <div class="center" markdown="1">
 
@@ -133,7 +133,7 @@ To help users make sure that their wallet works as intended, Transcend offers fe
 
 --- 
 
-### [Operational phase]({{ '/guide/inheritance-wallet/regular-use/' | relative_url }})
+### Operational phase (coming soon)
 
 <div class="center" markdown="1">
 
@@ -153,7 +153,7 @@ Involving the potential heirs early on is great, but it also has potential impli
 
 --- 
 
-### [Managing change]({{ '/guide/inheritance-wallet/managing-change/' | relative_url }})
+### Managing change (coming soon)
 
 <div class="center" markdown="1">
 
@@ -173,7 +173,7 @@ Life changes and so it might become necessary for users to make changes to their
 
 --- 
 
-### [Recovery & inheritance]({{ '/guide/inheritance-wallet/wallet-recovery/' | relative_url }})
+### Recovery & inheritance (coming soon)
 
 <div class="center" markdown="1">
 
