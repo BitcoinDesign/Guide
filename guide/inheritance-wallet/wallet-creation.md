@@ -7,25 +7,25 @@ parent: Inheritance wallet
 permalink: /guide/inheritance-wallet/wallet-creation/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/inheritance-wallet/...
-image_base: /assets/images/guide/inheritance-wallet/wallet-creation/
+image_base: /assets/images/guide/inheritance-wallet/
 images_wallet-creation:
     - file: wallet-creation/onboarding-01
-      alt: 
-      caption: 
-   - file: wallet-creation/onboarding-02
-      alt: 
+      alt:
       caption:
-   - file: wallet-creation/onboarding-03
-      alt: 
+    - file: wallet-creation/onboarding-02
+      alt:
       caption:
-   - file: wallet-creation/onboarding-04
-      alt: 
+    - file: wallet-creation/onboarding-03
+      alt:
       caption:
-   - file: wallet-creation/onboarding-05
-      alt: 
+    - file: wallet-creation/onboarding-04
+      alt:
       caption:
-   - file: wallet-creation/home-empty
-      alt: 
+    - file: wallet-creation/onboarding-05
+      alt:
+      caption:
+    - file: wallet-creation/home-empty
+      alt:
       caption:
 
 ---

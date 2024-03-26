@@ -120,6 +120,6 @@ An important aspect to consider is the demise of the wallet application itself. 
 {% include next-previous.html
    previousUrl = "/guide/inheritance-wallet/"
    previousName = "Inheritance wallet"
-   nextUrl = "/guide/inheritance-wallet/wallet-creation"
+   nextUrl = "/guide/inheritance-wallet/wallet-creation/"
    nextName = "Wallet creation"
 %}
