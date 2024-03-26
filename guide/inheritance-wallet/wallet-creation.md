@@ -4,16 +4,29 @@ title: Wallet creation
 description: Reference design for creating the family inheritance wallet.
 nav_order: 2
 parent: Inheritance wallet
-grand_parent: Savings wallet
 permalink: /guide/inheritance-wallet/wallet-creation/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/inheritance-wallet/...
-image_base: /assets/images/guide/inheritance-wallet/
-images_creation-wallet-basics:
-    - file: 
+image_base: /assets/images/guide/inheritance-wallet/wallet-creation/
+images_wallet-creation:
+    - file: wallet-creation/onboarding-01
       alt: 
       caption: 
-
+   - file: wallet-creation/onboarding-02
+      alt: 
+      caption:
+   - file: wallet-creation/onboarding-03
+      alt: 
+      caption:
+   - file: wallet-creation/onboarding-04
+      alt: 
+      caption:
+   - file: wallet-creation/onboarding-05
+      alt: 
+      caption:
+   - file: wallet-creation/home-empty
+      alt: 
+      caption:
 
 ---
 
@@ -65,11 +78,7 @@ To do: add prototype
 
 After downloading the app, the app walks the users through the purpose of the product and highlights some of the most important features. 
 
-<!--
-
-Add designs
-
--->
+{% include image-gallery.html pages = page.images_wallet-creation %}
 
 ### Creating the wallet
 
@@ -146,6 +155,6 @@ On top of that, the children don't have to set up anything more or run through a
 {% include next-previous.html
    previousUrl = "/guide/inheritance-wallet/introduction"
    previousName = "Use case & scope"
-   nextUrl = "/guide/upgradeable-wallet"
+   nextUrl = "/guide/upgradeable-wallet/"
    nextName = "Upgradeable wallet"
 %}
