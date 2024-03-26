@@ -53,7 +53,7 @@ All of this is done without compromising your financial privacy. You don't want 
 
 ## Chapters
 
-### [Use case & personas]({{ '/guide/inheritance-wallet/introduction/' | relative_url }})
+### [Use case & scope]({{ '/guide/inheritance-wallet/introduction/' | relative_url }})
 
 <div class="center" markdown="1">
 
@@ -200,8 +200,8 @@ When it's time for the heirs to claim their inheritance, the Jones' children can
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/time-based-recovery/"
+   previousUrl = "/guide/savings-wallet/time-based-recovery/"
    previousName = "Time-based recovery"
-   nextUrl = "/guide/inheritance-wallet/introduction"
-   nextName = "Introduction"
+   nextUrl = "/guide/inheritance-wallet/introduction/"
+   nextName = "Use case & scope"
 %}

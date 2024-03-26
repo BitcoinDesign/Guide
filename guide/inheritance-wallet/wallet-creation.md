@@ -145,7 +145,7 @@ On top of that, the children don't have to set up anything more or run through a
 
 {% include next-previous.html
    previousUrl = "/guide/inheritance-wallet/introduction"
-   previousName = "Introduction"
-   nextUrl = "/guide/inheritance-wallet/backup"
-   nextName = "Wallet backup"
+   previousName = "Use case & scope"
+   nextUrl = "/guide/upgradeable-wallet"
+   nextName = "Upgradeable wallet"
 %}
