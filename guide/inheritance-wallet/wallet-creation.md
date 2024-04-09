@@ -197,15 +197,19 @@ After downloading the app, the app walks the users through the purpose of the pr
 
 {% include image-gallery.html pages = page.images_wallet-creation %}
 
-## Wallet configuration
+#### Creating the wallet
 
-The wallet creation flow consists of two main parts. The first is the wallet configuration, where Bob and Alice define the rules for the wallet. In the second part, they add all the signing keys to the wallet.
+The wallet creation flow consists of two main parts. The first is the wallet configuration, where Bob and Alice define the rules for how the wallet should work. In the second part, they add all the signing keys.
+
+### Wallet configuration
 
 #### Primary key set
 
-When users create their first wallet, the app gives them an overview of how the process works and what they will need to have ready to create the wallet. It also tells them that they can pause the process at any time and finish it later.    
+Bob starts the wallet creation process on his phone, while Alice will use the app on her own phone to add her signing key. The app gives them a choice between two of the most commonly used wallet types: a standard, single-key wallet or a 2-of-3 multi-key wallet, which is suited for larger savings. 
 
 {% include image-gallery.html pages = page.images_wallet-configuration %}
+
+There is also a third option that allows users to create their own custom setups. But Bob and Alice choose the multi-key approach.
 
 #### Recovery path
 
@@ -213,26 +217,29 @@ After configuring the primary key set, the app asks the users whether they would
 
 {% include image-gallery.html pages = page.images_recovery-path %}
 
-We could also call this a recovery key set, since it technically is just that. However, the point of the recovery path is that we want to use the same keys that are used in the primary key set. To make this distinction more clear, we treat recovery paths as a different feature from alternative key sets in our application. 
-
-You might want to take a different approach in your own application, based on your specific user base.
+We could also call the recovery path a recovery key set, since it technically is just that. However, the point of the recovery path is that we want to use the same keys that are used in the primary key set. To make this distinction more clear, we treat recovery paths as a different feature from alternative key sets in our application. You might want to take a different approach in your own application, based on your specific user base.
 
 #### Inheritance key set
+
+After enabling the recovey path, the app offers users to create a dedicated inheritance key set. This works in more or less the same way as for the primary key set.
+
+The main exception is that the inheritance key set should only be unlocked after a certain amount of time. After choosing the appropriate key set type, Bob is prompted to define the rules under which the key set should be unlocked.
 
 {% include image-gallery.html pages = page.images_inheritance-key-set %}
 
 ## Adding the signing keys
 
+The wallet is now fully configured. What is left to do is to add the necessary amount signing keys.
+
 #### Primary keys
 
-The first step is to create the primary key set. This is just a combination of signing devices that should be used to sign transactions under normal circumstances. Technically this is done by importing the extended public key (XPUB) from each device. 
+Adding a key technically means that users have to import the extended public key (XPUB) from each signing device that should be used to sign transactions. 
 
-This sounds more complicated than it actually is. Depending on the specific signing devices that are being used, it can be as simple as scanning a QR code, connecting it via NFC or Bluetooth, or by using a USB cable. 
+This sounds more complicated than it actually is. Depending on the specific signing devices that are being used, it can be as simple as scanning a QR code, connecting it via NFC or Bluetooth, or by using a USB cable. Bob does just that and imports the first two keys by himself.
 
 {% include image-gallery.html pages = page.images_primary-keys-bob %}
 
-The application allows the users to create the wallet collaboratively. This means that each of the primary key holders uses their own phone and signing device to create the wallet. So Bob creates a key request that Alice can use to add her key.
-
+Our application allows the users to create the wallet collaboratively. This means that each key holder can use their own phone and signing device to add their key. So Bob creates a key request that Alice can use.
 
 {% include image-gallery.html pages = page.images_primary-keys-alice %}
 
@@ -243,23 +250,23 @@ Once Alice has added her key, Bob gets a push notification that prompts him to a
 
 #### Inheritance keys
 
-The inheritance key set is create in a very similar way as the primary key set: by adding the extended public keys from David’s, Christinas and Edward’s signing devices.
+The inheritance keys are added in the same way. Christina, David and Edward also use their own phones to add their signing devices to the wallet. Alternatively, they could have transmitted their public keys to Alice and Bob over a secure channel.
 
-The application allows them to use their own phones to add their signing devices to the wallet. Alternatively, they could transmit their public keys to Alice and Bob over a secure channel.
-
-In the background, our application marks these keys as inheritance keys. The app will then keep track of whether the inheritance key set is unlocked or not and manages wallet access accordingly, on the application layer. This allows David, Christina and Edward to participate in the setup from the beginning without compromising the financial privacy of the parents. 
+In the background, our application marks their keys as inheritance keys. The app then keeps track of whether the inheritance key set is unlocked or not and manages wallet access accordingly, on the application layer. This allows David, Christina and Edward to participate in the setup from the beginning without compromising the financial privacy of the parents. 
 
 {% include image-gallery.html pages = page.images_add-inheritance-keys %}
 
-The benefit of everybody using our application from the beginning is that it allows the family to conveniently perform key checks remotely and in regular intervals. 
+An added benefit of everybody using our application from the beginning is that it allows the family to conveniently perform key checks remotely and in regular intervals. 
 
-On top of that, the children don't have to set up anything more or run through a dedicated recovery process when the time comes. The app just unlocks the wallet so that they can move the funds to another wallet. We will cover this topic in more detail in a later chapter.
+On top of that, the children don't have to set up anything more or run through a dedicated recovery process when the time comes. The app just unlocks the wallet so that they can move the funds to another wallet. 
+
+It is important to note, however, that it is not required for everybody to use our app. The underlying wallet can be recovered using other wallet applications. We will cover this topic in more detail in a later chapter.
 
 ## Finalizing the wallet
 
 After all of the keys have been added, Bob and Alice can proceed to create the wallet. They review it the details and hit "create wallet". 
 
-On the confirmation screen, they are asked to download the wallet backup kit. The couple doesn't want to deal with the backup right now, so they decide to skip it for now. after all, are no funds in the wallet yet. 
+On the confirmation screen, they are asked to download the wallet backup kit. The couple doesn't want to deal with the backup right now, so they decide to skip it. After all, are no funds in the wallet yet. 
 
 {% include image-gallery.html pages = page.images_finalize-wallet %}
 
