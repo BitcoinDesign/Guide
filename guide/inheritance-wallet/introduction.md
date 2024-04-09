@@ -29,6 +29,15 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
 # Use case & scope 
 {: .no_toc }
 
+---
+
+<div class="glossary-toc" markdown="1">
+ * Table of contents
+{:toc}
+</div>
+
+---
+
 Our target audience are families that are familiar with bitcoin and hold the majority of their net worth in bitcoin. They want to take advantage of the security assurances of multi-key wallets and are comfortable with using more advanced technical features and human processes for inheritance planning.  
 
 For other users, such a setup might be too advanced. When choosing a specific setup, the decision should be based on factors such as the amount of bitcoin they hold, what their family situation looks like, where they live or how knowledgeable and comfortable they are with bitcoin in general. This line of thinking applies not only to the initial bitcoin holders themselves, but also to their heirs, as they will have to recover the funds at some point.
@@ -46,7 +55,7 @@ Meet the Jones family: Bob, Alice and their two children Christina (24) and Davi
    height = 800
 %}
 
-Alice and Bod have been using a shared multi-key wallet as a family checking account for a few years already. This wallet is used for general spending. Alice and Bob each manage their earnings, personal spending and savings using their individual single-key wallets. 
+Alice and Bob have been using a shared multi-key wallet as a family checking account for a few years already. This wallet is used for general spending, while each of them manage their income, personal spending and savings using their individual single-key wallets. 
 
 The couple now feels that the time is right to consolidate the family savings and to include their children in securing them. They will still keep the savings separated from their checking wallet.
 
@@ -56,10 +65,10 @@ The couple has been thinking about what a good solution would look like for them
 1. **Privacy:** While they are alive and well, they don’t want Christina and David to be able to access the funds. The children should not even know how much they have or see their transactions.
 2. **Flexibility:** The wallet configuration needs to be relatively easy to change, in case their life circumstances change.
 3. **Interoperability:** The wallet itself should be interoperable with other applications, so that it can be easily imported into another wallet application, in case there is a critical bug or the project is no longer supported by the developers.
-4. **Support:** Alice and Bob also want to involve Edward, their lawyer, to assist in case there are any problems between the children or their families. He will also be able to work with the legal inheritance processes in their jurisdiction.
+4. **Legal support:** Alice and Bob also want to involve Edward, their lawyer, to assist in case there are any problems between the children or their families. He will also be able to work with the legal inheritance processes in their jurisdiction.
 
 ## Wallet configuration
-Based on their initial requirements, Alice and Bob decided on having two key sets. One primary key that they will use in times of normal operations. In addition, they want to create an inheritance key set, in which each of their children and Edward hold one key.  
+Based on their initial requirements, Alice and Bob decided on having two key sets. One primary key set that they will use in times of normal operations. In addition, they want to create an inheritance key set that unlocks after a certain time. Their children and Edward will each hold one these keys.  
 
 {% include picture.html
    image = "/assets/images/guide/inheritance-wallet/introduction/key-scheme.png"
@@ -71,10 +80,10 @@ Based on their initial requirements, Alice and Bob decided on having two key set
    height = 800
 %}
 
-More specifically, here is what the configuration of the savings wallet will look like:
+Below is an overview of what the configuration of the family's savings wallet will look like:
 
 - **A 2-of-3 primary key set for normal spending**. Since it is a savings wallet, Alice and Bob will spend only very infrequently.
-- **A 1-of-3 recovery key set** in case something very bad happens while they are still alive and need to recover their funds. This key set uses the same keys as the primary one.
+- **A timelocked recovery path** in case something very bad happens while they are still alive and need to recover their funds. The recovery path uses the same keys as the primary key set, but requires only one signature to spend.
 - **A dedicated 2-of-3 inheritance key set**, which is unlocked 6 months after the recovery key set was unlocked and has not been used. Christina and David will each hold one of the inheritance keys. Edward will hold the third key to assist the children, if necessary.
 
 
@@ -90,9 +99,9 @@ The image below shows in more detail, how the wallet will work under the hood.
    height = 800
 %}
 
-Note that this configuration could be expanded almost at will by the users. But with each additional layer of logic comes additional complexity in terms of backup and maintainability. While the decision will ultimately be up to users of your application. But you will need to make sure that your application guides and educates them towards choosing and maintaining a setup that is secure enough and sustainable over the long term. 
+Note that this configuration could be expanded almost at will by the users. But with each additional layer of logic comes additional complexity in terms of backup and maintainability. The decision will ultimately be up to users of your application. But you will need to make sure that your application guides and educates them towards choosing and maintaining a setup that is both, secure enough and sustainable over the long term. 
 
-## Defining the application scope
+## Application scope
 Think about the scope of your application and how to incorporate supporting features beyond just letting users create such an advanced wallet and using it to receive and send transactions. Consider features that help users to:
 
 - Choose an adequate setup.
@@ -106,7 +115,7 @@ Such supporting features can be implemented on the application layer and don't n
 
 ## Interoperability
 
-An important aspect to consider is the demise of the wallet application itself. What if, during the course of the years, the developers of our application decide to abandon the project? Or if it gets removed from the app stores? To mitigate this risk, our application will create a regular bitcoin wallet that can be imported into other wallet applications, as long as they support Miniscript. 
+An important aspect to consider is the demise of our application itself. What if, during the course of the years, the developers of our application decide to abandon the project? Or if it gets removed from the app stores? To mitigate this risk, our application will create a regular bitcoin wallet that can be imported into other wallet applications, as long as they support Miniscript. 
 
 
 **Resources**
