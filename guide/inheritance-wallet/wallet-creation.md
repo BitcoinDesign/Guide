@@ -181,14 +181,15 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
 
 One Sunday afternoon the Alice and Bob sit down to set it all up. During their research, Bob and Alice came across an interesting application that looks like it fits their needs. It’s a mobile application specifically designed for long-term bitcoin custody. Alice and Bob each download the app on their phones and get started. Try out the prototype below. It covers the entire wallet creation process.
 
-{% include picture.html
-   image = "/assets/images/guide/inheritance-wallet/wallet-creation/coming-soon-placeholder.png"
-   retina = "/assets/images/guide/inheritance-wallet/wallet-creation/coming-soon-placeholder.png"
-   mobile = "/assets/images/guide/inheritance-wallet/wallet-creation/coming-soon-placeholder.png"
-   mobileRetina = "/assets/images/guide/inheritance-wallet/wallet-creation/coming-soon-placeholder.png"
-   alt-text = "An illustration showing that the content will be added soon."
-   width = 1600
-   height = 800
+{% include prototype.html
+   link = "https://www.figma.com/proto/h5GP5v5dYfpXXfEUXf6nvC/Inheritance-wallet?page-id=5542%3A2120&type=design&node-id=5964-1892&viewport=626%2C1950%2C0.08&t=uDikx4BvdPaghMCi-1&scaling=min-zoom&starting-point-node-id=5964%3A1892&show-proto-sidebar=1&mode=design"
+   image = "/assets/images/guide/inheritance-wallet/wallet-creation/prototype.jpg"
+   retina = "/assets/images/guide/inheritance-wallet/wallet-creation/prototype@2x.jpg"
+   mobile = "/assets/images/guide/inheritance-wallet/wallet-creation/prototype-mobile.jpg"
+   mobileRetina = "/assets/images/guide/inheritance-wallet/wallet-creation/prototype-mobile@2x.jpg"
+   alt-text = "A couple of screens from the reference design prototype"
+   width = 800
+   height = 500
 %}
 
 ### Onboarding
@@ -197,11 +198,9 @@ After downloading the app, the app walks the users through the purpose of the pr
 
 {% include image-gallery.html pages = page.images_wallet-creation %}
 
-#### Creating the wallet
+### Wallet configuration
 
 The wallet creation flow consists of two main parts. The first is the wallet configuration, where Bob and Alice define the rules for how the wallet should work. In the second part, they add all the signing keys.
-
-### Wallet configuration
 
 #### Primary key set
 
