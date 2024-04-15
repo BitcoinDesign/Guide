@@ -273,7 +273,7 @@ The homescreen shows the newly created wallet. In addition, the app shows a coup
 
 {% include image-gallery.html pages = page.images_homescreen %}
 
-Christina, David and Edward only see that they hold one of the inheritance keys for the family savings wallet. But they cannot see the wallet balance or their parents public keys. If they did, they could start monitoring transactions.
+Christina, David and Edward only see that they hold one of the inheritance keys for the family savings wallet. But they cannot see the wallet balance or their parents' public keys. If they did, they could start monitoring transactions.
 
 **Resources**
 - [Figma design file](https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type=design&node-id=5542%3A2119&mode=design&t=sBtcvrDzb8MPtWaK-1)
