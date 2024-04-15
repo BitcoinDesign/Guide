@@ -255,7 +255,7 @@ In the background, our application marks their keys as inheritance keys. The app
 
 {% include image-gallery.html pages = page.images_add-inheritance-keys %}
 
-An added benefit of everybody using our application from the beginning is that it allows the family to conveniently perform key checks remotely and in regular intervals. 
+An added benefit of everybody using our application from the beginning is that it allows the family to conveniently perform key checks remotely and at regular intervals. 
 
 On top of that, the children don't have to set up anything more or run through a dedicated recovery process when the time comes. The app just unlocks the wallet so that they can move the funds to another wallet. 
 
