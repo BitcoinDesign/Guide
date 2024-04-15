@@ -47,7 +47,7 @@ But when it comes to inheritance, technology is not everything. Knowledge, docum
 
 Imagine a product that helps you create and use a custody setup for your bitcoin savings while including your loved ones from the beginning. But because you plan to live a long and happy life, the app allows you to set up a recovery path that helps you recover your funds even in catastrophic scenarios. 
 
-On top of that, the app allows you to add your heirs' hardware wallets and use them to create a dedicated inheritance key set. Since it is designed for long-term storage, it also supports regular key checks and other supporting features. 
+On top of that, the app allows you to add your heirs' hardware wallets and use them to create a dedicated inheritance key set. Since it is designed for long-term storage, it also includes regular key checks and other supporting features. 
 
 All of this is done without compromising your financial privacy. You don't want anyone to know how much bitcoin you have or monitor your transactions.
 
