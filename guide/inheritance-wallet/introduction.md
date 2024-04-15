@@ -87,7 +87,7 @@ Below is an overview of what the configuration of the family's savings wallet wi
 - **A dedicated 2-of-3 inheritance key set**, which is unlocked 6 months after the recovery key set was unlocked and has not been used. Christina and David will each hold one of the inheritance keys. Edward will hold the third key to assist the children, if necessary.
 
 
-The image below shows in more detail, how the wallet will work under the hood. 
+The image below illustrates how the wallet will work under the hood.
 
 {% include picture.html
    image = "/assets/images/guide/inheritance-wallet/introduction/wallet-overview.png"
