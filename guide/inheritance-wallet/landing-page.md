@@ -167,7 +167,7 @@ Involving the potential heirs early on is great, but it also has potential impli
    link-url = "/guide/inheritance-wallet/managing-change/"
 %}
 
-Life changes and so it might become necessary for users to make changes to their savings wallet because someone lost a key or they want to make changes to the overall wallet configuration. Our app helps to make such changes and with updating the backup and inheritance documentation.
+Over time it might become necessary for users to make changes to their savings wallet because someone lost a key or they want to make changes to the overall wallet configuration. Our app helps users to make such changes and update the backup and inheritance documentation.
 
 </div>
 
