@@ -263,7 +263,7 @@ It is important to note, however, that it is not required for everybody to use o
 
 ## Finalizing the wallet
 
-After all of the keys have been added, Bob and Alice can proceed to create the wallet. They review it the details and hit "create wallet". 
+After all of the keys have been added, Bob and Alice can proceed to create the wallet. They review the details and hit "create wallet". 
 
 On the confirmation screen, they are asked to download the wallet backup kit. The couple doesn't want to deal with the backup right now, so they decide to skip it. After all, are no funds in the wallet yet. 
 
