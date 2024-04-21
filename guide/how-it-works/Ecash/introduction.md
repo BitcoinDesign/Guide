@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Ecash
-description: An overview of private key management schemes, including descriptions of available approaches, some advice and best practices.
+description: An overview of ecash on bitcoin, including descriptions of terms, ecash operations, and some advice and best practices.
 nav_order: 7
 parent: How it works
 has_children: true
@@ -31,7 +31,7 @@ https://www.figma.com/community/file/995256542920917246/BDG---Private-key-manage
    retina = "/assets/images/guide/how-it-works/private-key-management/private-key-management@2x.jpg"
    mobile = "/assets/images/guide/how-it-works/private-key-management/private-key-management-mobile.jpg"
    mobileRetina = "/assets/images/guide/how-it-works/private-key-management/private-key-management-mobile@2x.jpg"
-   alt-text = "Private key management chapter illustration"
+   alt-text = "ecasht chapter illustration"
    width = 1600
    height = 600
    layout = "full-width"
@@ -39,13 +39,15 @@ https://www.figma.com/community/file/995256542920917246/BDG---Private-key-manage
 
 # Introduction
 
-Ecash refers to the development of cryptographic electronic money or electronic cash systems, based on a scheme proposed by David Chaum in his 1998 white paper, "Blind Signatures for Untraceable Payments." With the rise of Bitcoin, there's been a resurgence of interest in the principles underpinning Ecash, particularly its focus on privacy and security. Leveraging the Lightning Network as the connective framework, Ecash on Bitcoin introduces a method to enhance privacy by enabling users to maintain a custodial Bitcoin balance with a mint and transact anonymously. Ecash allows anyone to create or join a "mint" based on mutual trust, effectively facilitating the establishment of private, digital banks. This guide aims to elucidate Ecash on Bitcoin, its historical context, the two primary protocol implementations—Fedimint and Cashu—and the design considerations, including the differences between Ecash and Lightning, as well as best practices for Ecash design on Bitcoin.
+ecash was invented in 1982 as a method of using cash-like instruments in the digital space. An ecash system enables you to extract a piece of digital data (note) from a mint (issuer) and store it on your device, similar to how you might keep a physical banknote. If you wish to transfer money to another party, you can simply pass the data piece from your device via email, text message, or QR code. ecash allows users to use any payment rail to transport the data representing money. Once the mint issues a note—akin to physical cash—they cannot retract it. They also remain unaware of the user's interactions; you can transmit it to someone else offline via email, and the mint remains oblivious. ecash enables perfectly private digital money. Unfortunately, the system never fully materialized. However, with the growth of Bitcoin, interest has resurged in the principles behind ecash, particularly its focus on privacy and security. By using the Lightning Network as the connective tissue, ecash on Bitcoin provides a way to enhance privacy by allowing users to maintain a custodial Bitcoin balance with a mint and transact anonymously.
+
+This chapter aims to provide an overview of two primary protocol implementations, Fedimint and Cashu, detailing eCash-specific functionality, varying approaches, advice, and best practices.
 
 ---
 
 ###  [Overview]({{ '/guide/how-it-works/ecash/overview/' | relative_url }})
 
-Get to know the most common bitcoin private key management schemes, then follow our guidelines to pick the right one for your users.
+Get to know the two most common ecash protocols, then follow our guidelines to pick the right one for your users.
 
 ---
 
