@@ -28,131 +28,133 @@ images_wallet-creation:
       caption:
 images_wallet-configuration:
     - file: wallet-creation/home-empty
-      alt:
-      caption:
+      alt: Mockup of an empty home screen that prompts users to create their first wallet.
+      caption: The empty state of the home screen prompts users to add their first wallet.
     - file: wallet-creation/creation-add-wallet-sheet
-      alt:
-      caption:
+      alt: Screen showing different options for adding a wallet.
+      caption: Users can choose to create a new wallet, recover an existing one or join wallet as a co-signer.
     - file: wallet-creation/creation-wallet-name
-      alt:
-      caption:
+      alt: Screen giving users the option of giving the wallet a friendly name.
+      caption: Users can give their wallet a friendly name.
     - file: wallet-creation/creation-wallet-type
-      alt:
-      caption:
+      alt: Screen letting users choose from different wallet templates.
+      caption: Users can choose between common wallet types or create their own custom configuration.
 images_recovery-path:
     - file: wallet-creation/creation-recovery-disabled
-      alt:
-      caption:
+      alt: Screen showing a disabled recovery path.
+      caption: Users can choose to enable the recovery path. 
     - file: wallet-creation/creation-recovery-enabled
-      alt:
+      alt: Screen showing an enabled recovery path.
+      caption: By default, the recovery path will be unlocked after a delay of 6 months. Users can edit this setting. 
 images_inheritance-key-set:
     - file: wallet-creation/creation-inheritance-empty
-      alt:
-      caption:
+      alt: Screen showing the option of adding an inheritance key set.
+      caption: The inheritance key set is optional and could also be skipped.
     - file: wallet-creation/creation-inheritance-wallet-type
-      alt:
-      caption:
+      alt: Screen letting users choose from different configurations for the inheritance key set.
+      caption: Users can choose between common wallet types or create their own custom configuration.
     - file: wallet-creation/creation-inheritance-unlock-schedule
-      alt:
-      caption:
+      alt: Screen that lets users define, when the inheritance key set should be unlocked.
+      caption: Users can configure the timing of when the inheritance key set should be unlocked.
     - file: wallet-creation/creation-inheritance-done
-      alt:
+      alt: Screen showing an overview of the inheritance key set.
+      caption: The app shows an overview of the inheritance key set configuration. Users can edit or delete the key set. 
 images_primary-keys-bob:
     - file: wallet-creation/creation-signing-keys-empty
-      alt:
-      caption:
+      alt: Screen showing six empty slots for the signing keys. Users can add keys for each slot.
+      caption: Based on the wallet configuration, the app shows one empty slot for each key that needs to be added.
     - file: wallet-creation/creation-add-key-sheet
-      alt:
-      caption:
+      alt: Screen showing the options to add a key or request it from a co-signer.
+      caption: Users can add a key themselves or request it from the designated cosigner.
     - file: wallet-creation/creation-add-key-import-options
-      alt:
-      caption:
+      alt: Screen showing import options for adding the extended public key.
+      caption: Users can choose from a variety of options to import the extended public key.
     - file: wallet-creation/creation-add-key-import-flow
-      alt:
-      caption:
+      alt: Placeholder screen for the key import flow.
+      caption: The import flow depends on the specific hardware device and import method being used.
     - file: wallet-creation/creation-signing-keys-2keys
-      alt:
-      caption:
+      alt: Screen showing that two of the six required keys have been imported.
+      caption: Two out of six keys have been imported. The user can tap on any key to view its details.
 images_primary-keys-alice:
     - file: wallet-creation/creation-signing-keys-2keys
-      alt:
-      caption:
+      alt: Screen showing that two of the six required keys have been imported.
+      caption: Two out of six keys have been imported. Bob adds the third key. 
     - file: wallet-creation/creation-request-key-sheet
       alt:
-      caption:
+      caption: Bob would like to request the third key from Alice.
     - file: wallet-creation/creation-request-key-name
       alt:
-      caption:
+      caption: Bob gives this key a friendly name, so that it can be identified later on.
     - file: wallet-creation/creation-request-key-share
       alt:
-      caption:
+      caption: The app generates a QR code that can be scanned to import the key. The request can also be shared via native sharing options of the operating system.
     - file: wallet-creation/alice-add-wallet-sheet
       alt:
-      caption:
+      caption: On her end, Alice selects "Join wallet as co-signer" to add her key.
     - file: wallet-creation/alice-scan-request
       alt:
-      caption:
+      caption: The app opens the QR code scanner to import the wallet configuration. But Alice could also import it through other methods.
     - file: wallet-creation/alice-add-wallet-overview
       alt:
-      caption:
+      caption: The app shows the configuration of the wallet and shows Alice, in which key set her key will be used.
     - file: wallet-creation/alice-add-key-import-options
       alt:
-      caption:
+      caption: The app offers Alice different options to import her key and add it to the wallet.
     - file: wallet-creation/alice-add-key-import-flow
       alt:
-      caption:
+      caption: The import flow depends on the specific hardware device and import method being used.
     - file: wallet-creation/alice-add-done
       alt:
-      caption:
+      caption: The overview screen shows that Alice is now holding one of the primary keys.
 images_primary-keys-approve:
     - file: wallet-creation/creation-key-added-push-notification
       alt:
-      caption:
+      caption: Bob receives a push notification that a key has been added to the wallet.
     - file: wallet-creation/creation-key-added-overview
       alt:
-      caption:
+      caption: On the key overview screen Bob sees a new key indicated with the friendly name that he gave it.
     - file: wallet-creation/creation-key-bob-review
       alt:
-      caption:
+      caption: The detail screen shows basic information about the key for Bob to make sure that it is indeed Alice's key.
     - file: wallet-creation/creation-key-added-reviewed
       alt:
-      caption:
+      caption: After approving the key, it is indicated as reviewed on the overview screen.
     - file: wallet-creation/creation-home-reminders
       alt:
-      caption:
+      caption: Bob can always exit the wallet creation flow. The app will show the progress on the home screen. 
 images_add-inheritance-keys: 
-    - file: wallet-creation/creation-request-key-share-1
-      alt:
-      caption:
     - file: wallet-creation/heirs-add-key-overview
       alt:
-      caption:
+      caption: The wallet shows the heirs in which key set their keys will be added.
     - file: wallet-creation/heirs-add-key-import-flow
       alt:
-      caption:
+      caption: The import flow depends on the specific hardware device and import method being used.
     - file: wallet-creation/heirs-add-key-done
       alt:
+      caption: After importing a key, the app shows each of the heirs that they hold one of the three inheritance keys.
     - file: wallet-creation/heirs-add-home
       alt:
+      caption: On the app home screen, they see that they hold an inheritance key for the family savings wallet. They can view the wallet details at any time.
 images_finalize-wallet:
     - file: wallet-creation/creation-all-keys-added-push-notification
       alt:
-      caption:
+      caption: After all keys have been added to the wallet, Bob receives a notification.
     - file: wallet-creation/creation-all-keys-overview
       alt:
-      caption:
+      caption: Bob sees that all six keys have been added. 
     - file: wallet-creation/creation-wallet-final-review
       alt:
-      caption:
+      caption: The review screen shows the complete wallet configuration. There is also a tab that contains the list of all keys. 
     - file: wallet-creation/wallet-creation-success
       alt:
+      caption: On the success screen, Bob gets prompted to download the wallet backup kit. 
 images_homescreen:
     - file: wallet-creation/wallet-creation-home-reminders
       alt:
-      caption:
+      caption: The app gives Alice and Bob full access to the wallet.
     - file: wallet-creation/heirs-add-home
       alt:
-      caption:
+      caption: Christina, David and Edward have restricted access, as long as the inheritance key set is locked.
 ---
 
 <!--
