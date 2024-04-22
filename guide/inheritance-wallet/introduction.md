@@ -104,7 +104,7 @@ Note that this configuration could be expanded almost at will by the users. But 
 ## Application scope
 Think about the scope of your application and how to incorporate supporting features beyond just letting users create such an advanced wallet and using it to receive and send transactions. Consider features that help users to:
 
-- Choose an adequate setup.
+- Choose and personalize their wallet setup.
 - Test or simulate that the wallet and its rules work as intended.
 - Involve heirs early on to make them aware and comfortable with the setup. This could contain elements of gamification or educational apps and services, for example. 
 - Perform regular key checks for all keys. 
