@@ -121,7 +121,7 @@ images_primary-keys-approve:
       alt:
       caption:
 images_add-inheritance-keys: 
-    - file: wallet-creation/creation-request-key-share
+    - file: wallet-creation/creation-request-key-share-1
       alt:
       caption:
     - file: wallet-creation/heirs-add-key-overview
