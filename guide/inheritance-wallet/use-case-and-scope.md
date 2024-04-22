@@ -1,16 +1,11 @@
 ---
 layout: guide
 title: Use case & scope
-description: An in-depth UX reference design for a multi-key bitcoin wallet with inheritance features designed for families.
+description: An introduction to the use case, personas and scope of the inheritance wallet.
 nav_order: 1
 parent: Inheritance wallet
-permalink: /guide/inheritance-wallet/introduction/
+permalink: /guide/inheritance-wallet/use-case-and-scope/
 main_classes: -no-top-padding
-image_base: /assets/images/guide/inheritance-wallet/
-images_introduction:
-    - file: 
-      alt: 
-      caption: 
 
 ---
 
@@ -38,7 +33,7 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
 
 ---
 
-Our target audience are families that are familiar with bitcoin and hold the majority of their net worth in bitcoin. They want to take advantage of the security assurances of multi-key wallets and are comfortable with using more advanced technical features and human processes for inheritance planning.  
+The target audience for the inheritance wallet are families who are familiar with bitcoin and hold the majority of their net worth in bitcoin. They want to take advantage of the security assurances of multi-key wallets and are comfortable with using more advanced technical features and human processes for inheritance planning.  
 
 For other users, such a setup might be too advanced. When choosing a specific setup, the decision should be based on factors such as the amount of bitcoin they hold, what their family situation looks like, where they live or how knowledgeable and comfortable they are with bitcoin in general. This line of thinking applies not only to the initial bitcoin holders themselves, but also to their heirs, as they will have to recover the funds at some point.
 
@@ -46,10 +41,10 @@ For other users, such a setup might be too advanced. When choosing a specific se
 Meet the Jones family: Bob, Alice and their two children Christina (24) and David (21). Bob and Alice have been saving in bitcoin for quite some time. They have been teaching their children how they should use and safeguard their own bitcoin wallets. 
 
 {% include picture.html
-   image = "/assets/images/guide/inheritance-wallet/introduction/family-overview.png"
-   retina = "/assets/images/guide/inheritance-wallet/introduction/family-overview.png"
-   mobile = "/assets/images/guide/inheritance-wallet/introduction/family-overview.png"
-   mobileRetina = "/assets/images/guide/inheritance-wallet/introduction/family-overview.png"
+   image = "/assets/images/guide/inheritance-wallet/use-case-and-scope/family-overview.png"
+   retina = "/assets/images/guide/inheritance-wallet/use-case-and-scope/family-overview.png"
+   mobile = "/assets/images/guide/inheritance-wallet/use-case-and-scope/family-overview.png"
+   mobileRetina = "/assets/images/guide/inheritance-wallet/use-case-and-scope/family-overview.png"
    alt-text = "An illustration showing the Jones family."
    width = 1600
    height = 800
@@ -60,7 +55,7 @@ Alice and Bob have been using a shared multi-key wallet as a family checking acc
 The couple now feels that the time is right to consolidate the family savings and to include their children in securing them. They will still keep the savings separated from their checking wallet.
 
 ## User requirements
-The couple has been thinking about what a good solution would look like for them. Here is summary of the most important aspects:
+The couple has been thinking about what criteria would need to be met in a good solution. Here is summary of the most important aspects:
 
 1. **Privacy:** While they are alive and well, they don’t want Christina and David to be able to access the funds. The children should not even know how much they have or see their transactions.
 2. **Flexibility:** The wallet configuration needs to be relatively easy to change, in case their life circumstances change.
@@ -71,10 +66,10 @@ The couple has been thinking about what a good solution would look like for them
 Based on their initial requirements, Alice and Bob decided on having two key sets. One primary key set that they will use in times of normal operations. In addition, they want to create an inheritance key set that unlocks after a certain time. Their children and Edward will each hold one these keys.  
 
 {% include picture.html
-   image = "/assets/images/guide/inheritance-wallet/introduction/key-scheme.png"
-   retina = "/assets/images/guide/inheritance-wallet/introduction/key-scheme.png"
-   mobile = "/assets/images/guide/inheritance-wallet/introduction/key-scheme.png"
-   mobileRetina = "/assets/images/guide/inheritance-wallet/introduction/key-scheme.png"
+   image = "/assets/images/guide/inheritance-wallet/use-case-and-scope/key-scheme.png"
+   retina = "/assets/images/guide/inheritance-wallet/use-case-and-scope/key-scheme.png"
+   mobile = "/assets/images/guide/inheritance-wallet/use-case-and-scope/key-scheme.png"
+   mobileRetina = "/assets/images/guide/inheritance-wallet/use-case-and-scope/key-scheme.png"
    alt-text = "An illustration showing that Alice and Bob control three keys, while Christina, David and Edward control one key each."
    width = 1600
    height = 800
@@ -83,17 +78,17 @@ Based on their initial requirements, Alice and Bob decided on having two key set
 Below is an overview of what the configuration of the family's savings wallet will look like:
 
 - **A 2-of-3 primary key set for normal spending**. Since it is a savings wallet, Alice and Bob will spend only very infrequently.
-- **A timelocked recovery path** in case something very bad happens while they are still alive and need to recover their funds. The recovery path uses the same keys as the primary key set, but requires only one signature to spend.
+- **A timelocked [recovery path](https://bitcoin.design/guide/savings-wallet/time-based-recovery/)** in case they lose two keys and need to recover their funds. The recovery path uses the same keys as the primary key set, but requires only one signature to spend.
 - **A dedicated 2-of-3 inheritance key set**, which is unlocked 6 months after the recovery key set was unlocked and has not been used. Christina and David will each hold one of the inheritance keys. Edward will hold the third key to assist the children, if necessary.
 
 
 The image below illustrates how the wallet will work under the hood.
 
 {% include picture.html
-   image = "/assets/images/guide/inheritance-wallet/introduction/wallet-overview.png"
-   retina = "/assets/images/guide/inheritance-wallet/introduction/wallet-overview@2x.png"
-   mobile = "/assets/images/guide/inheritance-wallet/introduction/wallet-overview-mobile.png"
-   mobileRetina = "/assets/images/guide/inheritance-wallet/introduction/wallet-overview-mobile@2x.png"
+   image = "/assets/images/guide/inheritance-wallet/use-case-and-scope/wallet-overview.png"
+   retina = "/assets/images/guide/inheritance-wallet/use-case-and-scope/wallet-overview@2x.png"
+   mobile = "/assets/images/guide/inheritance-wallet/use-case-and-scope/wallet-overview-mobile.png"
+   mobileRetina = "/assets/images/guide/inheritance-wallet/use-case-and-scope/wallet-overview-mobile@2x.png"
    alt-text = "An illustration showing the timeline of the key sets."
    width = 1600
    height = 800
@@ -117,10 +112,6 @@ Such supporting features can be implemented on the application layer and don't n
 
 An important aspect to consider is the demise of our application itself. What if, during the course of the years, the developers of our application decide to abandon the project? Or if it gets removed from the app stores? To mitigate this risk, our application will create a regular bitcoin wallet that can be imported into other wallet applications, as long as they support Miniscript. 
 
-
-**Resources**
-- [Figma design file](https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type=design&node-id=5542%3A2119&mode=design&t=sBtcvrDzb8MPtWaK-1)
-- [Custom spending conditions]({{ '/guide/how-it-works/custom-spending-conditions/' | relative_url }})
 
 ---
 
