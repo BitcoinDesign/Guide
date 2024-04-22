@@ -94,7 +94,7 @@ The image below illustrates how the wallet will work under the hood.
    height = 800
 %}
 
-Note that this configuration could be expanded almost at will by the users. But with each additional layer of logic comes additional complexity in terms of backup and maintainability. The decision will ultimately be up to users of your application. But you will need to make sure that your application guides and educates them towards choosing and maintaining a setup that is both, secure enough and sustainable over the long term. 
+While this configuration can be expanded by users, every expansion would require an additional layer of complexity in terms of backup and maintenance. Ensuring that the application guides and educates users towards a secure and sustainable setup is essential. 
 
 ## Application scope
 Think about the scope of your application and how to incorporate supporting features beyond just letting users create such an advanced wallet and using it to receive and send transactions. Consider features that help users to:
