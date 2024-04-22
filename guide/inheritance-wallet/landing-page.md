@@ -67,7 +67,7 @@ All of this is done without compromising your financial privacy. You don't want 
    link-url = "/guide/inheritance-wallet/introduction/"
 %}
 
-Before we dive into the details, we will introduce you to our main protagonists, the Jones family. We are also going to look at how they plan set up their family savings in general. 
+Before we dive into the details, we will introduce you to the Jones family. We are also going to look at how they plan set up their family savings in general. 
 
 </div>
 
