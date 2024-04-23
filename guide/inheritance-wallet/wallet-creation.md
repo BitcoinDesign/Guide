@@ -181,7 +181,23 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
 
 ---
 
-One Sunday afternoon the Alice and Bob sit down to set it all up. During their research, Bob and Alice came across an interesting application that looks like it fits their needs. It’s a mobile application specifically designed for long-term bitcoin custody. Alice and Bob each download the app on their phones and get started. Try out the prototype below. It covers the entire wallet creation process.
+## Onboarding
+
+During their research, Bob and Alice came across an interesting application that looks like it fits their needs. It’s a mobile application specifically designed for long-term bitcoin custody. Alice and Bob each download the app on their phones and get started. 
+
+After downloading the app, the app walks the users through the purpose of the product and highlights some of the most important features. 
+
+{% include image-gallery.html pages = page.images_wallet-creation %}
+
+## Wallet creation
+
+After going through the app onboarding flow, Bob and Alice are ready to create their savings wallet. The wallet creation flow consists of three main tasks: 
+
+1. Configure the wallet
+2. Import the signing keys
+3. Review and finalize the wallet
+
+Try out the prototype below. It covers the entire wallet creation process.
 
 {% include prototype.html
    link = "https://www.figma.com/proto/h5GP5v5dYfpXXfEUXf6nvC/Inheritance-wallet?page-id=5542%3A2120&type=design&node-id=5964-1892&viewport=626%2C1950%2C0.08&t=uDikx4BvdPaghMCi-1&scaling=min-zoom&starting-point-node-id=5964%3A1892&show-proto-sidebar=1&mode=design"
@@ -194,17 +210,11 @@ One Sunday afternoon the Alice and Bob sit down to set it all up. During their r
    height = 500
 %}
 
-### Onboarding
+## Step 1: Wallet configuration
 
-After downloading the app, the app walks the users through the purpose of the product and highlights some of the most important features. 
+The first is the wallet configuration, where Bob and Alice define the rules for how the wallet should work. In the second part, they add all the signing keys.
 
-{% include image-gallery.html pages = page.images_wallet-creation %}
-
-### Wallet configuration
-
-The wallet creation flow consists of two main parts. The first is the wallet configuration, where Bob and Alice define the rules for how the wallet should work. In the second part, they add all the signing keys.
-
-#### Primary key set
+#### Creating the primary key set
 
 Bob starts the wallet creation process on his phone, while Alice will use the app on her own phone to add her signing key. The app gives them a choice between two of the most commonly used wallet types: a standard, single-key wallet or a 2-of-3 multi-key wallet, which is suited for larger savings. 
 
@@ -212,7 +222,7 @@ Bob starts the wallet creation process on his phone, while Alice will use the ap
 
 There is also a third option that allows users to create their own custom setups. But Bob and Alice choose the multi-key approach.
 
-#### Recovery path
+#### Enabling the recovery path
 
 After configuring the primary key set, the app asks the users whether they would like to enable a recovery path. We have covered this in the time-based reference design as well. Here we show an alternative design option for this same feature.
 
@@ -220,7 +230,7 @@ After configuring the primary key set, the app asks the users whether they would
 
 We could also call the recovery path a recovery key set, since it technically is just that. However, the point of the recovery path is that we want to use the same keys that are used in the primary key set. To make this distinction more clear, we treat recovery paths as a different feature from alternative key sets in our application. You might want to take a different approach in your own application, based on your specific user base.
 
-#### Inheritance key set
+#### Creating the inheritance key set
 
 After enabling the recovey path, the app offers users to create a dedicated inheritance key set. This works in more or less the same way as for the primary key set.
 
@@ -228,7 +238,7 @@ The main exception is that the inheritance key set should only be unlocked after
 
 {% include image-gallery.html pages = page.images_inheritance-key-set %}
 
-## Adding the signing keys
+## Step 2: Adding the signing keys
 
 The wallet is now fully configured. What is left to do is to add the necessary amount signing keys.
 
@@ -263,7 +273,7 @@ On top of that, the children don't have to set up anything more or run through a
 
 It is important to note, however, that it is not required for everybody to use our app. The underlying wallet can be recovered using other wallet applications. We will cover this topic in more detail in a later chapter.
 
-## Finalizing the wallet
+## Step 3: Finalizing the wallet
 
 After all of the keys have been added, Bob and Alice can proceed to create the wallet. They review the details and hit "create wallet". 
 
@@ -276,10 +286,6 @@ The homescreen shows the newly created wallet. In addition, the app shows a coup
 {% include image-gallery.html pages = page.images_homescreen %}
 
 Christina, David and Edward only see that they hold one of the inheritance keys for the family savings wallet. But they cannot see the wallet balance or their parents' public keys. If they did, they could start monitoring transactions.
-
-**Resources**
-- [Figma design file](https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type=design&node-id=5542%3A2119&mode=design&t=sBtcvrDzb8MPtWaK-1)
-- [Custom spending conditions]({{ '/guide/how-it-works/custom-spending-conditions/' | relative_url }})
 
 ---
 
