@@ -289,11 +289,14 @@ The wallet is now fully configured. What is left to do is to add the necessary a
 
 ### Adding the primary keys
 
-This sounds more complicated than it actually is. Depending on the specific signing devices that are being used, it can be as simple as scanning a QR code, connecting it via NFC or Bluetooth, or by using a USB cable. Bob does just that and imports the first two keys by himself.
+This sounds more complicated than it actually is. Depending on the specific signing devices that are being used, it can be as simple as scanning a QR code, connecting it via NFC or Bluetooth, or by using a USB cable. 
+
+##### Bob adds the first two keys
+Bob gets started and imports the first two keys by himself. One from his personal Trezor and one from a Coldcard that he shares with Alice.
 
 {% include image-gallery.html pages = page.images_primary-keys-bob %}
 
-##### Bob requests a key from Alice
+##### Bob requests the third key from Alice
 Next, it's time to add Alice's key, which will be imported from her Bitbox. Our app makes this process easy, because Bob can just create a key request that Alice can scan with her phone. Alternatively, he can also send it to her via a secure channel.
 
 {% include image-gallery.html pages = page.images_primary-keys-request-alice %}
@@ -308,15 +311,16 @@ But there is one additional step to take: Alice needs to transfer the informatio
 
 {% include image-gallery.html pages = page.images_primary-keys-alice-add-to-wallet %}  
 
-##### Time to take a break
+##### Time to hit pause
+All primary keys have now been added to the wallet. Next, Bob and Alice need to add the inheritance keys in the same way. They plan to do that during a family gathering which is coming up on the following weekend. For now, Bob hits "Save and finish later". The application saves the progress locally and allows Bob to continue later.
 
-All primary keys have now been added to the wallet. Next, Bob and Alice need to add the inheritance keys in the same way. They plan to do that during a family gathering which is coming up on the following weekend. For now, Bob hits "Save and finish later". The application saves the progress locally and allows Bob to resume at any later point in time.
-
-{% include image-gallery.html pages = page.images_creation-save %} 
+{% include image-gallery.html pages = page.images_creation-save %}
 
 ### Adding the inheritance keys
 
-During the family reunion, Bob opens our application and resumes the wallet creation process. They could just import and transfer their keys as described above. Bob and Alice already met with Edward, their lawyer, and imported his key. So only Christina's and David's key remain to be added to the wallet.
+Bob and Alice already met with Edward, their lawyer, ahead of the family meeting and imported his key to the wallet. So only Christina's and David's keys remain to be added to the wallet.
+
+During the family reunion, Bob opens our application and resumes the wallet creation process. Just like with Alice's key, he creates a key request.
 
 ##### Christina creates a new key in the app
 The Jones children could follow the same procedure as mentioned above. However, our app also allows the users to generate a new key in the app.
