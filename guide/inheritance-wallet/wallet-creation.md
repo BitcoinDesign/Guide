@@ -10,22 +10,19 @@ image_base: /assets/images/guide/inheritance-wallet/
 images_wallet-creation:
     - file: wallet-creation/onboarding-01
       alt:
-      caption:
+      caption: Onboarding begins with a short video that explains what the application is all about.
     - file: wallet-creation/onboarding-02
       alt:
-      caption:
+      caption: It also emphasizes the social aspect of having shared inheritance wallet.
     - file: wallet-creation/onboarding-03
       alt:
-      caption:
+      caption: One of the main features is that it's very easy to create time-based recovery options that do not compromise security.
     - file: wallet-creation/onboarding-04
       alt:
-      caption:
+      caption: Heirs can be involved from the beginning. They can even access their inheritance using their own keys when the time comes.
     - file: wallet-creation/onboarding-05
       alt:
-      caption:
-    - file: wallet-creation/home-empty
-      alt:
-      caption:
+      caption: The tutorial finishes with a call to action.
 images_wallet-configuration:
     - file: wallet-creation/home-empty
       alt: Mockup of an empty home screen that prompts users to create their first wallet.
@@ -75,7 +72,7 @@ images_primary-keys-bob:
     - file: wallet-creation/creation-signing-keys-2keys
       alt: Screen showing that two of the six required keys have been imported.
       caption: Two out of six keys have been imported. The user can tap on any key to view its details.
-images_primary-keys-alice:
+images_primary-keys-request-alice:
     - file: wallet-creation/creation-signing-keys-2keys
       alt: Screen showing that two of the six required keys have been imported.
       caption: Two out of six keys have been imported. Bob adds the third key. 
@@ -88,40 +85,57 @@ images_primary-keys-alice:
     - file: wallet-creation/creation-request-key-share
       alt:
       caption: The app generates a QR code that can be scanned to import the key. The request can also be shared via native sharing options of the operating system.
-    - file: wallet-creation/alice-add-wallet-sheet
+images_primary-keys-alice-export-key:
+    - file: wallet-creation/alice-add-sheet
       alt:
-      caption: On her end, Alice selects "Join wallet as co-signer" to add her key.
+      caption: On her end, Alice selects "Provide a key" to add her key.
+    - file: wallet-creation/alice-provide-import-config-options
+      alt:
+      caption: Alice chooses to scan the the wallet configuration from Bob's screen.
     - file: wallet-creation/alice-scan-request
       alt:
-      caption: The app opens the QR code scanner to import the wallet configuration. But Alice could also import it through other methods.
-    - file: wallet-creation/alice-add-wallet-overview
+      caption: The app opens the QR code scanner to import the wallet configuration.
+    - file: wallet-creation/alice-provide-wallet-overview
       alt:
       caption: The app shows the configuration of the wallet and shows Alice, in which key set her key will be used.
-    - file: wallet-creation/alice-add-key-import-options
+    - file: wallet-creation/alice-provide-key-hw-options
       alt:
-      caption: The app offers Alice different options to import her key and add it to the wallet.
-    - file: wallet-creation/alice-add-key-import-flow
+      caption: The app offers Alice different options to import her key.
+    - file: wallet-creation/alice-provide-key-xpub-export
       alt:
       caption: The import flow depends on the specific hardware device and import method being used.
-    - file: wallet-creation/alice-add-done
+    - file: wallet-creation/alice-provide-key-details
       alt:
-      caption: The overview screen shows that Alice is now holding one of the primary keys.
-images_primary-keys-approve:
-    - file: wallet-creation/creation-key-added-push-notification
+      caption:
+images_primary-keys-alice-add-to-wallet:
+    - file: wallet-creation/primary-key3-import-start
       alt:
-      caption: Bob receives a push notification that a key has been added to the wallet.
-    - file: wallet-creation/creation-key-added-overview
+      caption: 
+    - file: wallet-creation/primary-key3-import-options
       alt:
-      caption: On the key overview screen Bob sees a new key indicated with the friendly name that he gave it.
-    - file: wallet-creation/creation-key-bob-review
+      caption:
+    - file: wallet-creation/primary-key3-import-scan
       alt:
-      caption: The detail screen shows basic information about the key for Bob to make sure that it is indeed Alice's key.
-    - file: wallet-creation/creation-key-added-reviewed
+      caption:
+    - file: wallet-creation/primary-key3-import-details
       alt:
-      caption: After approving the key, it is indicated as reviewed on the overview screen.
-    - file: wallet-creation/creation-home-reminders
+      caption:
+    - file: wallet-creation/primary-key3-import-done
       alt:
-      caption: Bob can always exit the wallet creation flow. The app will show the progress on the home screen. 
+      caption: Alice's key has been added to the wallet. 
+images_creation-save: 
+    - file: wallet-creation/creation-save-initial
+      alt:
+      caption:
+    - file: wallet-creation/creation-save-confirmation
+      alt:
+      caption:
+    - file: wallet-creation/creation-save-success
+      alt:
+      caption:
+    - file: wallet-creation/creation-save-home
+      alt:
+      caption:
 images_add-inheritance-keys: 
     - file: wallet-creation/heirs-add-key-overview
       alt:
@@ -240,34 +254,40 @@ The main exception is that the inheritance key set should only be unlocked after
 
 ## Step 2: Adding the signing keys
 
-The wallet is now fully configured. What is left to do is to add the necessary amount signing keys.
+The wallet is now fully configured. What is left to do is to add the necessary amount signing keys. Adding a key technically means that users have to import the extended public key (XPUB) from each signing device that should be used to sign transactions. 
 
-#### Primary keys
-
-Adding a key technically means that users have to import the extended public key (XPUB) from each signing device that should be used to sign transactions. 
+#### Adding the primary keys
 
 This sounds more complicated than it actually is. Depending on the specific signing devices that are being used, it can be as simple as scanning a QR code, connecting it via NFC or Bluetooth, or by using a USB cable. Bob does just that and imports the first two keys by himself.
 
 {% include image-gallery.html pages = page.images_primary-keys-bob %}
 
-Our application allows the users to create the wallet collaboratively. This means that each key holder can use their own phone and signing device to add their key. So Bob creates a key request that Alice can use.
+Next, it's time to add Alice's key, which will be imported from her Bitbox. Our app makes this process easy, because Bob can just create a key request that Alice can scan with her phone. Alternatively, he can also send it to her via a secure channel.
 
-{% include image-gallery.html pages = page.images_primary-keys-alice %}
-
-Once Alice has added her key, Bob gets a push notification that prompts him to approve the newly added key. 
-
-{% include image-gallery.html pages = page.images_primary-keys-approve %}
+{% include image-gallery.html pages = page.images_primary-keys-request-alice %}
 
 
-#### Inheritance keys
+Alice has also downloaded the app, so she taps the big plus button on the homescreen and selects "provide a key" from the menu that pops up. On the next screen, she chooses to scan the key request. After doing that, the app displays the wallet configuration. Alice sees that her key will be used in the primary key set. She taps "provide key" and the app takes her through the same process like Bob. 
 
-The inheritance keys are added in the same way. Christina, David and Edward also use their own phones to add their signing devices to the wallet. Alternatively, they could have transmitted their public keys to Alice and Bob over a secure channel.
+{% include image-gallery.html pages = page.images_primary-keys-alice-export-key %}
+
+But there is one additional step to take: Alice needs to transfer the information about her key back to Bob, so that he can add it to the wallet configuration. Since they are in the same room together, Bob scans the QR code that is shown on Alice's screen and goes through the same process as for the first two keys. 
+
+{% include image-gallery.html pages = page.images_primary-keys-alice-add-to-wallet %}  
+
+
+All primary keys have now been added to the wallet. Next, Bob and Alice need to add the inheritance keys in the same way. They plan to do that during a family gathering which is coming up on the following weekend. For now, Bob hits "Save and finish later". The application saves the progress locally and allows Bob to resume at any later point in time.
+
+{% include image-gallery.html pages = page.images_creation-save %} 
+
+
+#### Adding the inheritance keys
+
+During the family reunion, Bob opens our application and starts adding Christina's and David's keys by connecting them via USB.
+
+They already have added their lawyer's key Alternatively, they could have transmitted their public keys to Alice and Bob over a secure channel.
 
 In the background, our application marks their keys as inheritance keys. The app then keeps track of whether the inheritance key set is unlocked or not and manages wallet access accordingly, on the application layer. This allows David, Christina and Edward to participate in the setup from the beginning without compromising the financial privacy of the parents. 
-
-{% include image-gallery.html pages = page.images_add-inheritance-keys %}
-
-An added benefit of everybody using our application from the beginning is that it allows the family to conveniently perform key checks remotely and at regular intervals. 
 
 On top of that, the children don't have to set up anything more or run through a dedicated recovery process when the time comes. The app just unlocks the wallet so that they can move the funds to another wallet. 
 
