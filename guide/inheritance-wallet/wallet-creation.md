@@ -262,24 +262,26 @@ This sounds more complicated than it actually is. Depending on the specific sign
 
 {% include image-gallery.html pages = page.images_primary-keys-bob %}
 
+##### Bob requests a key from Alice
 Next, it's time to add Alice's key, which will be imported from her Bitbox. Our app makes this process easy, because Bob can just create a key request that Alice can scan with her phone. Alternatively, he can also send it to her via a secure channel.
 
 {% include image-gallery.html pages = page.images_primary-keys-request-alice %}
 
-
+##### Alice gets her key
 Alice has also downloaded the app, so she taps the big plus button on the homescreen and selects "provide a key" from the menu that pops up. On the next screen, she chooses to scan the key request. After doing that, the app displays the wallet configuration. Alice sees that her key will be used in the primary key set. She taps "provide key" and the app takes her through the same process like Bob. 
 
 {% include image-gallery.html pages = page.images_primary-keys-alice-export-key %}
 
+##### Alice provides her key to Bob
 But there is one additional step to take: Alice needs to transfer the information about her key back to Bob, so that he can add it to the wallet configuration. Since they are in the same room together, Bob scans the QR code that is shown on Alice's screen and goes through the same process as for the first two keys. 
 
 {% include image-gallery.html pages = page.images_primary-keys-alice-add-to-wallet %}  
 
+##### Time to take a break
 
 All primary keys have now been added to the wallet. Next, Bob and Alice need to add the inheritance keys in the same way. They plan to do that during a family gathering which is coming up on the following weekend. For now, Bob hits "Save and finish later". The application saves the progress locally and allows Bob to resume at any later point in time.
 
 {% include image-gallery.html pages = page.images_creation-save %} 
-
 
 #### Adding the inheritance keys
 
