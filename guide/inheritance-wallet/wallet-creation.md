@@ -136,6 +136,44 @@ images_creation-save:
     - file: wallet-creation/creation-save-home
       alt:
       caption:
+images_christina-generate-key: 
+    - file: wallet-creation/christina-add-sheet
+      alt:
+      caption:
+    - file: wallet-creation/christina-provide-import-config-options
+      alt:
+      caption:
+    - file: wallet-creation/christina-scan-request
+      alt:
+      caption:
+    - file: wallet-creation/christina-provide-wallet-overview
+      alt:
+      caption:
+    - file: wallet-creation/christina-provide-key-options
+      alt:
+      caption:
+    - file: wallet-creation/christina-provide-key-creation
+      alt:
+      caption:
+    - file: wallet-creation/christina-provide-key-details
+      alt:
+      caption:
+images_david-send-key: 
+    - file: wallet-creation/david-invite-message
+      alt:
+      caption:
+    - file: wallet-creation/david-invite-loading-wallet
+      alt:
+      caption:
+    - file: wallet-creation/david-provide-wallet-overview
+      alt:
+      caption:
+    - file: wallet-creation/david-provide-key-xpub-export
+      alt:
+      caption:
+    - file: wallet-creation/david-xpub-message
+      alt:
+      caption:
 images_add-inheritance-keys: 
     - file: wallet-creation/heirs-add-key-overview
       alt:
@@ -150,9 +188,6 @@ images_add-inheritance-keys:
       alt:
       caption: On the app home screen, they see that they hold an inheritance key for the family savings wallet. They can view the wallet details at any time.
 images_finalize-wallet:
-    - file: wallet-creation/creation-all-keys-added-push-notification
-      alt:
-      caption: After all keys have been added to the wallet, Bob receives a notification.
     - file: wallet-creation/creation-all-keys-overview
       alt:
       caption: Bob sees that all six keys have been added. 
@@ -162,13 +197,9 @@ images_finalize-wallet:
     - file: wallet-creation/wallet-creation-success
       alt:
       caption: On the success screen, Bob gets prompted to download the wallet backup kit. 
-images_homescreen:
     - file: wallet-creation/wallet-creation-home-reminders
       alt:
-      caption: The app gives Alice and Bob full access to the wallet.
-    - file: wallet-creation/heirs-add-home
-      alt:
-      caption: Christina, David and Edward have restricted access, as long as the inheritance key set is locked.
+      caption: Bob and Alice can start using their new family savings wallet.
 ---
 
 <!--
@@ -256,7 +287,7 @@ The main exception is that the inheritance key set should only be unlocked after
 
 The wallet is now fully configured. What is left to do is to add the necessary amount signing keys. Adding a key technically means that users have to import the extended public key (XPUB) from each signing device that should be used to sign transactions. 
 
-#### Adding the primary keys
+### Adding the primary keys
 
 This sounds more complicated than it actually is. Depending on the specific signing devices that are being used, it can be as simple as scanning a QR code, connecting it via NFC or Bluetooth, or by using a USB cable. Bob does just that and imports the first two keys by himself.
 
@@ -283,31 +314,32 @@ All primary keys have now been added to the wallet. Next, Bob and Alice need to 
 
 {% include image-gallery.html pages = page.images_creation-save %} 
 
-#### Adding the inheritance keys
+### Adding the inheritance keys
 
-During the family reunion, Bob opens our application and starts adding Christina's and David's keys by connecting them via USB.
+During the family reunion, Bob opens our application and resumes the wallet creation process. They could just import and transfer their keys as described above. Bob and Alice already met with Edward, their lawyer, and imported his key. So only Christina's and David's key remain to be added to the wallet.
 
-They already have added their lawyer's key Alternatively, they could have transmitted their public keys to Alice and Bob over a secure channel.
+##### Christina creates a new key in the app
+The Jones children could follow the same procedure as mentioned above. However, our app also allows the users to generate a new key in the app.
 
-In the background, our application marks their keys as inheritance keys. The app then keeps track of whether the inheritance key set is unlocked or not and manages wallet access accordingly, on the application layer. This allows David, Christina and Edward to participate in the setup from the beginning without compromising the financial privacy of the parents. 
+Christina wants to use this option, because she does not want her existing hardware wallet from the family savings. Instead, she will buy a new one and import her newly generated key to it. The mockups below show how that process looks like.
 
-On top of that, the children don't have to set up anything more or run through a dedicated recovery process when the time comes. The app just unlocks the wallet so that they can move the funds to another wallet. 
+{% include image-gallery.html pages = page.images_christina-generate-key %}
 
-It is important to note, however, that it is not required for everybody to use our app. The underlying wallet can be recovered using other wallet applications. We will cover this topic in more detail in a later chapter.
+##### David forgot his hardware wallet
+
+Unfortunately, David forgot his hardware wallet at home, so he will have to add his key later. So Bob creates the same request as usual and sends it to David via direct message. The user flow for David is the same as for Alice and Edward. The only difference is that he sends his key back to his father over a direct message as well. 
+
+{% include image-gallery.html pages = page.images_david-send-key %}
 
 ## Step 3: Finalizing the wallet
 
-After all of the keys have been added, Bob and Alice can proceed to create the wallet. They review the details and hit "create wallet". 
+After all of the keys have been added, Bob can proceed to create the wallet. They review the details and hit "create wallet". 
 
-On the confirmation screen, they are asked to download the wallet backup kit. The couple doesn't want to deal with the backup right now, so they decide to skip it. After all, there are no funds in the wallet yet. 
+On the confirmation screen, he is asked to download the wallet backup kit. The couple doesn't want to deal with the backup right now, so they decide to skip it. After all, there are no funds in the wallet yet. 
 
 {% include image-gallery.html pages = page.images_finalize-wallet %}
 
 The homescreen shows the newly created wallet. In addition, the app shows a couple of reminders that they should still download the backup as well as scheduling a regular key check.
-
-{% include image-gallery.html pages = page.images_homescreen %}
-
-Christina, David and Edward only see that they hold one of the inheritance keys for the family savings wallet. But they cannot see the wallet balance or their parents' public keys. If they did, they could start monitoring transactions.
 
 ---
 
