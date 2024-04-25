@@ -61,7 +61,7 @@ images_primary-keys-bob:
       alt: Screen showing six empty slots for the signing keys. Users can add keys for each slot.
       caption: Based on the wallet configuration, the app shows one empty slot for each key that needs to be added.
     - file: wallet-creation/creation-add-key-sheet
-      alt: Screen showing the options to add a key or request it from a co-signer.
+      alt: Screen showing the options to add a key or request it from someone else.
       caption: Users can add a key themselves or request it from the designated cosigner.
     - file: wallet-creation/creation-add-key-import-options
       alt: Screen showing import options for adding the extended public key.
@@ -77,103 +77,103 @@ images_primary-keys-request-alice:
       alt: Screen showing that two of the six required keys have been imported.
       caption: Two out of six keys have been imported. Bob adds the third key. 
     - file: wallet-creation/creation-request-key-sheet
-      alt:
+      alt: Screen showing the options to add a key or request a key.
       caption: Bob would like to request the third key from Alice.
     - file: wallet-creation/creation-request-key-name
-      alt:
+      alt: Screen showing the option to enter a custom name for the key.
       caption: Bob gives this key a friendly name, so that it can be identified later on.
     - file: wallet-creation/creation-request-key-share
-      alt:
+      alt: Screen showing the details of the key. It also contains a QR code for easy scanning.
       caption: The app generates a QR code that can be scanned to import the key. The request can also be shared via native sharing options of the operating system.
 images_primary-keys-alice-export-key:
     - file: wallet-creation/alice-add-sheet
-      alt:
+      alt: Screen showing different options for adding a wallet, including the option to provide a key.
       caption: On her end, Alice selects "Provide a key" to add her key.
     - file: wallet-creation/alice-provide-import-config-options
-      alt:
+      alt: Screen showing different options to import the wallet configuration.
       caption: Alice chooses to scan the the wallet configuration from Bob's screen.
     - file: wallet-creation/alice-scan-request
-      alt:
+      alt: Screen showing an open QR code scanner.
       caption: The app opens the QR code scanner to import the wallet configuration.
     - file: wallet-creation/alice-provide-wallet-overview
-      alt:
+      alt: Screen displaying a visual representation of the wallet configuration.
       caption: The app shows the configuration of the wallet and shows Alice, in which key set her key will be used.
     - file: wallet-creation/alice-provide-key-hw-options
-      alt:
+      alt: Screen showing different options to import the extended public key from a hardware wallet.
       caption: The app offers Alice different options to import her key.
     - file: wallet-creation/alice-provide-key-xpub-export
-      alt:
+      alt: Placeholder screen for the key import flow.
       caption: The import flow depends on the specific hardware device and import method being used.
     - file: wallet-creation/alice-provide-key-details
-      alt:
-      caption:
+      alt: Screen showing the details of Alice's public key, including a QR code.
+      caption: Alice checks the details of her XPUB against what is shown on her hardware device. The key can also be saved locally for later use. 
 images_primary-keys-alice-add-to-wallet:
     - file: wallet-creation/primary-key3-import-start
-      alt:
-      caption: 
+      alt: Screen showing that two out of six signing keys have been added.
+      caption: Bob adds the third primary key.
     - file: wallet-creation/primary-key3-import-options
-      alt:
-      caption:
+      alt: Screen showing different options to add a key.
+      caption: He chooses to import Alice's key by scanning the QR code which is displayed on her screen.
     - file: wallet-creation/primary-key3-import-scan
-      alt:
-      caption:
+      alt: Screen showing a QR code scanner.
+      caption: Bob scans the QR code.
     - file: wallet-creation/primary-key3-import-details
-      alt:
-      caption:
+      alt: Screen showing the details of Alice's key.
+      caption: Bob reviews the XPUB and adds it to the wallet.
     - file: wallet-creation/primary-key3-import-done
-      alt:
+      alt: Screen showing that one more primary key has been added to the wallet.
       caption: Alice's key has been added to the wallet. 
 images_creation-save: 
     - file: wallet-creation/creation-save-initial
       alt:
-      caption:
+      caption: Bob taps "Save and finish later". He will resume the wallet creation at a later time.
     - file: wallet-creation/creation-save-confirmation
       alt:
-      caption:
+      caption: The app asks him to for confirmation.
     - file: wallet-creation/creation-save-success
       alt:
-      caption:
+      caption: After saving the current state of the wallet configuration, Bob goes to the overview.
     - file: wallet-creation/creation-save-home
       alt:
-      caption:
+      caption: The app home screen shows the progress of the family savings wallet.
 images_christina-generate-key: 
     - file: wallet-creation/christina-add-sheet
       alt:
-      caption:
+      caption: Christina starts to provide a key to the wallet.
     - file: wallet-creation/christina-provide-import-config-options
       alt:
-      caption:
+      caption: She chooses to import the wallet configuration by scanning the QR code.
     - file: wallet-creation/christina-scan-request
       alt:
-      caption:
+      caption: Christina scans the QR code her father has generated.
     - file: wallet-creation/christina-provide-wallet-overview
       alt:
-      caption:
+      caption: The wallet overview screen shows that Christina's key will be part of the inheritance key set. 
     - file: wallet-creation/christina-provide-key-options
       alt:
-      caption:
+      caption: Christina chooses to create an entirely new key.
     - file: wallet-creation/christina-provide-key-creation
       alt:
-      caption:
+      caption: The application generates a new private key...
     - file: wallet-creation/christina-provide-key-details
       alt:
-      caption:
+      caption: ... and derives an extended public key from the newly generated private key.
 images_david-send-key: 
     - file: wallet-creation/david-invite-message
       alt:
-      caption:
+      caption: David receives the key request from his father in a text message.
     - file: wallet-creation/david-invite-loading-wallet
       alt:
-      caption:
+      caption: Our app opens an loads the wallet configuration. If David hadn't already installed the app, he would be taken to the app store to download it.
     - file: wallet-creation/david-provide-wallet-overview
       alt:
-      caption:
+      caption: The wallet overview screen shows that David's key will be part of the inheritance key set. 
     - file: wallet-creation/david-provide-key-xpub-export
       alt:
-      caption:
+      caption: David goes through the key import flow.
     - file: wallet-creation/david-xpub-message
       alt:
-      caption:
+      caption: As soon as he has his key, David sends it via direct message back to his father.
 images_add-inheritance-keys: 
     - file: wallet-creation/heirs-add-key-overview
       alt:
@@ -301,7 +301,7 @@ Next, it's time to add Alice's key, which will be imported from her Bitbox. Our 
 
 {% include image-gallery.html pages = page.images_primary-keys-request-alice %}
 
-##### Alice gets her key
+##### Alice imports the key from her signing device
 Alice has also downloaded the app, so she taps the big plus button on the homescreen and selects "provide a key" from the menu that pops up. On the next screen, she chooses to scan the key request. After doing that, the app displays the wallet configuration. Alice sees that her key will be used in the primary key set. She taps "provide key" and the app takes her through the same process like Bob. 
 
 {% include image-gallery.html pages = page.images_primary-keys-alice-export-key %}
@@ -320,12 +320,12 @@ All primary keys have now been added to the wallet. Next, Bob and Alice need to 
 
 Bob and Alice already met with Edward, their lawyer, ahead of the family meeting and imported his key to the wallet. So only Christina's and David's keys remain to be added to the wallet.
 
-During the family reunion, Bob opens our application and resumes the wallet creation process. Just like with Alice's key, he creates a key request.
+During the family reunion, Bob opens our application and resumes the wallet creation process. Just like with Alice's key, he creates a key request for Christina and David.
 
 ##### Christina creates a new key in the app
-The Jones children could follow the same procedure as mentioned above. However, our app also allows the users to generate a new key in the app.
+Christina could follow the same procedure for importing a key from her existing signing device, as described above. However, Christina does not want to use her existing hardware wallet from the family savings. Instead, she wants to create a new key for the family savings wallet, so that she can keep it on a seperate signing device. 
 
-Christina wants to use this option, because she does not want her existing hardware wallet from the family savings. Instead, she will buy a new one and import her newly generated key to it. The mockups below show how that process looks like.
+The mockups below show how our app allows Christina to generate an entirely new key and provide it to her father.
 
 {% include image-gallery.html pages = page.images_christina-generate-key %}
 
