@@ -125,80 +125,67 @@ images_primary-keys-alice-add-to-wallet:
       caption: Alice's key has been added to the wallet. 
 images_creation-save: 
     - file: wallet-creation/creation-save-initial
-      alt:
+      alt: Screen showing that three of six keys have been added.
       caption: Bob taps "Save and finish later". He will resume the wallet creation at a later time.
     - file: wallet-creation/creation-save-confirmation
-      alt:
+      alt: Screen showing a prompt to confirm that the configuration should be saved.
       caption: The app asks him to for confirmation.
     - file: wallet-creation/creation-save-success
-      alt:
+      alt: Sreen showing a confirmation message.
       caption: After saving the current state of the wallet configuration, Bob goes to the overview.
     - file: wallet-creation/creation-save-home
-      alt:
+      alt: App home screen showing a partially completed wallet configuration with an option to resume. 
       caption: The app home screen shows the progress of the family savings wallet.
 images_christina-generate-key: 
     - file: wallet-creation/christina-add-sheet
-      alt:
+      alt: Screen showing different options for adding a wallet, including the option to provide a key.
       caption: Christina starts to provide a key to the wallet.
     - file: wallet-creation/christina-provide-import-config-options
-      alt:
+      alt: Screen showing different options to import the wallet configuration.
       caption: She chooses to import the wallet configuration by scanning the QR code.
     - file: wallet-creation/christina-scan-request
-      alt:
+      alt: Screen showing an open QR code scanner.
       caption: Christina scans the QR code her father has generated.
     - file: wallet-creation/christina-provide-wallet-overview
-      alt:
+      alt: Screen displaying a visual representation of the wallet configuration.
       caption: The wallet overview screen shows that Christina's key will be part of the inheritance key set. 
     - file: wallet-creation/christina-provide-key-options
-      alt:
+      alt: Screen showing the options to add a key from a hardware wallet or to create a new key.
       caption: Christina chooses to create an entirely new key.
     - file: wallet-creation/christina-provide-key-creation
-      alt:
+      alt: Screen showing a loading indicator.
       caption: The application generates a new private key...
     - file: wallet-creation/christina-provide-key-details
-      alt:
+      alt: Screen showing the details of the public key, including a QR code.
       caption: ... and derives an extended public key from the newly generated private key.
 images_david-send-key: 
     - file: wallet-creation/david-invite-message
-      alt:
+      alt: Screen showing a chat message with a QR code that contains the wallet configuration.
       caption: David receives the key request from his father in a text message.
     - file: wallet-creation/david-invite-loading-wallet
-      alt:
+      alt: Screen showing a loading indicator.
       caption: Our app opens an loads the wallet configuration. If David hadn't already installed the app, he would be taken to the app store to download it.
     - file: wallet-creation/david-provide-wallet-overview
-      alt:
+      alt: Screen displaying a visual representation of the wallet configuration.
       caption: The wallet overview screen shows that David's key will be part of the inheritance key set. 
     - file: wallet-creation/david-provide-key-xpub-export
-      alt:
+      alt: Placeholder screen representing the user flow for importing the public key from a hardware wallet. 
       caption: David goes through the key import flow.
     - file: wallet-creation/david-xpub-message
-      alt:
+      alt: Screen showing a chat message with a QR code that contains David's public key.
       caption: As soon as he has his key, David sends it via direct message back to his father.
-images_add-inheritance-keys: 
-    - file: wallet-creation/heirs-add-key-overview
-      alt:
-      caption: The wallet shows the heirs in which key set their keys will be added.
-    - file: wallet-creation/heirs-add-key-import-flow
-      alt:
-      caption: The import flow depends on the specific hardware device and import method being used.
-    - file: wallet-creation/heirs-add-key-done
-      alt:
-      caption: After importing a key, the app shows each of the heirs that they hold one of the three inheritance keys.
-    - file: wallet-creation/heirs-add-home
-      alt:
-      caption: On the app home screen, they see that they hold an inheritance key for the family savings wallet. They can view the wallet details at any time.
 images_finalize-wallet:
     - file: wallet-creation/creation-all-keys-overview
-      alt:
+      alt: Screen showing that all six signing keys have been added.
       caption: Bob sees that all six keys have been added. 
     - file: wallet-creation/creation-wallet-final-review
-      alt:
+      alt: Screen showing the final wallet configuration, with an option to review the details of the signing keys.
       caption: The review screen shows the complete wallet configuration. There is also a tab that contains the list of all keys. 
     - file: wallet-creation/wallet-creation-success
-      alt:
+      alt: Screen showing a success message and the option to download a wallet backup kit. 
       caption: On the success screen, Bob gets prompted to download the wallet backup kit. 
     - file: wallet-creation/wallet-creation-home-reminders
-      alt:
+      alt: App home screen showing the newly created wallet.
       caption: Bob and Alice can start using their new family savings wallet.
 ---
 
