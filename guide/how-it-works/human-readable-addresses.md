@@ -38,7 +38,7 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 
 # Human readable addresses
 
-[Bitcoin addresses]({{'/guide/glossary/address/' | relative_url}}) and [payment requests]({{'/guide/how-it-works/payment-request-formats/' | relative_url}}) are long and cryptic, practically impossible to read, memorize, pronounce, understand, or type. We are used to being able to communicate our social media handles, or email addresses easily. That expectation has also extended to transacting value, with neo-banking and payment applications. There have been multiple attempts at making human-readable addresses a reality in bitcoin.
+[Bitcoin addresses]({{'/guide/glossary/address/' | relative_url}}) and [payment requests]({{'/guide/how-it-works/payment-request-formats/' | relative_url}}) are long and cryptic, practically impossible to read, memorize, pronounce, understand, or type. We are used to being able to communicate our social media handles and email addresses easily. That expectation has also extended to transacting value with neo-banking and payment applications. There have been multiple attempts at making human-readable addresses a reality in bitcoin.
 
 The benefits to the user experience include:
 
@@ -99,7 +99,7 @@ This proposal uses the format *“₿<span class="-green">username</span>@<span 
 
 ### How it works
 
-Users create DNS entries with payment information, which can be one or more addresses of different formats, combined to a [BIP 21 URIs](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki). Since address reuse is best avoided for privacy reasons, the included addresses should only be static payment codes (like [silent payment codes](https://gist.github.com/RubenSomsen/c43b79517e7cb701ebf77eec6dbb46b8) and [BOLT12](https://bolt12.org/) offers).
+Users create DNS entries with payment information, which can be one or more addresses of different formats, combined to a [BIP 21 URI](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki). Since address reuse is best avoided for privacy reasons, the included addresses should only be static payment codes (like [silent payment codes](https://gist.github.com/RubenSomsen/c43b79517e7cb701ebf77eec6dbb46b8) and [BOLT12](https://bolt12.org/) offers).
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/human-readable-addresses/dns-payment-instructions-mapping.png"
@@ -213,7 +213,7 @@ Input fields for addresses typically need to accommodate various address types. 
    height = 334
 %}
 
-On the one hand, the input field cannot be optimized just for entering a single format. On the other hand, it is highly unlikely that users type in the more complex address types. We can find a balance of allowing diverse input, while also optimizing for entering address types that are designed for manual input.
+While it is unlikely that users will type in the more complex address types, an address input field should not be restricted to only accepting a single address type. In this example, a single input field is capable of accepting a variety of different formats, and it provides feedback to the user about what they have entered.
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/human-readable-addresses/input.png"
@@ -255,7 +255,7 @@ Compared to DNS Payment Instructions, [Lightning Addresses](http://lightningaddr
 
 ### How it works
 
-Lightning addresses look like traditional emails. Under the hood, a wallet that uses a lightning address reformats it to a URL. It then looks for information about a [LNURL](https://github.com/lnurl/luds) web-server at that location (more on that [here](https://github.com/lnurl/luds/blob/luds/16.md)). That server handles the communication with the lightning node and passes messages back and forth. This allows for complex interactions (like authentication and withdrawals), but also adds technical overhead and requires trusting the web server.
+Lightning addresses look like traditional emails. Under the hood, a wallet that uses a lightning address reformats it to a URL. It then looks for information about a [LNURL](https://github.com/lnurl/luds) web-server at that location (more on that [here](https://github.com/lnurl/luds/blob/luds/16.md)). That server handles the communication with the lightning node and passes messages back and forth. This allows for complex interactions (like authentication and withdrawals), but also requires trusting the web server.
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/human-readable-addresses/lightning-address-intermediaries.png"
