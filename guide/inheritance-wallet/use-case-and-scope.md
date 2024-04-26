@@ -94,21 +94,35 @@ The image below illustrates how the wallet will work under the hood.
    height = 800
 %}
 
-While this configuration can be expanded by users, every expansion would require an additional layer of complexity in terms of backup and maintenance. Ensuring that the application guides and educates users towards a secure and sustainable setup is essential. 
+## Design considerations
 
-## Application scope
-Think about the scope of your application and how to incorporate supporting features beyond just letting users create such an advanced wallet and using it to receive and send transactions. Consider features that help users to:
+Wallet configurations, such as the one mentioned above, can be expanded by users. However, every expansion introduces an additional layer of complexity in terms of backup and maintenance. Ensuring that the application guides and educates users towards a secure and sustainable setup is essential.
 
-- Choose and personalize their wallet setup.
+#### Application scope
+
+Think about the scope of your application and how to incorporate supporting features beyond just letting users create an advanced wallet and using it to receive and send transactions. Such supporting features can be implemented on the application layer and don't necessarily need to touch the bitcoin protocol.
+
+Consider features that help users to:
+
+- Choose and personalize their wallet setup. For some target audiences, it might also be suitable to limit the customization options. 
 - Test or simulate that the wallet and its rules work as intended.
 - Involve heirs early on to make them aware and comfortable with the setup. This could contain elements of gamification or educational apps and services, for example. 
 - Perform regular key checks for all keys. 
 - Make changes to the setup over time AND make sure that its documentation is updated and distributed accordingly.
 - Provide a way to migrate to a different wallet application, in case your project is abandoned or shut down.
 
-Such supporting features can be implemented on the application layer and don't necessarily need to touch the bitcoin protocol.
+#### Role of the wallet provider
+Your answers to the above questions as well as the vision and goals of your application will have a direct impact on the user experience. 
 
-## Interoperability
+If you want to pursue a strictly non-custodial approach, you will need to design a user experience that requires your users to perform more actions that might not be intuitive for them. 
+
+There might also be a good chance that you won't be able to make use of some features that are considered standard in other applications, such as push notifications, cross-device sync, or others, because they rely on backend servers and coordination. If this is the case, you will need to place more emphasis on user education and help content. 
+
+On the other hand, if you decide to build a product that takes some of that burden from the user, you can design a smoother, more automated user experience. But your users will have to place significantly more trust in your application.
+
+The goal for this reference design is to build an application that relies on the wallet provider as little as possible. 
+
+#### Interoperability
 
 An important aspect to consider is the demise of our application itself. What if, during the course of the years, the developers of our application decide to abandon the project? Or if it gets removed from the app stores? To mitigate this risk, our application will create a regular bitcoin wallet that can be imported into other wallet applications, as long as they support Miniscript. 
 
