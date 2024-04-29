@@ -232,7 +232,7 @@ After going through the app onboarding flow, Bob and Alice are ready to create t
 Try out the prototype below. It covers the entire wallet creation process.
 
 {% include prototype.html
-   link = "https://www.figma.com/proto/h5GP5v5dYfpXXfEUXf6nvC/Inheritance-wallet?page-id=5542%3A2120&type=design&node-id=5964-1892&viewport=626%2C1950%2C0.08&t=uDikx4BvdPaghMCi-1&scaling=min-zoom&starting-point-node-id=5964%3A1892&show-proto-sidebar=1&mode=design"
+   link = "https://www.figma.com/proto/h5GP5v5dYfpXXfEUXf6nvC/Inheritance-wallet?page-id=5542%3A2120&type=design&node-id=6227-6395&viewport=632%2C2194%2C0.09&t=GM6AiUnmOWB7jsQs-1&scaling=min-zoom&starting-point-node-id=6227%3A6395&show-proto-sidebar=1&mode=design"
    image = "/assets/images/guide/inheritance-wallet/wallet-creation/prototype.jpg"
    retina = "/assets/images/guide/inheritance-wallet/wallet-creation/prototype@2x.jpg"
    mobile = "/assets/images/guide/inheritance-wallet/wallet-creation/prototype-mobile.jpg"
