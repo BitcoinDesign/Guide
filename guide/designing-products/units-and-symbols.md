@@ -48,10 +48,10 @@ amount of different notation standards around the world, it focuses on bitcoin.
 Illustration sources
 
 Header image
-- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=1642%3A19055
+https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=1642%3A19055
 
 Content images
-- https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=2318%3A61126
+https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?type=design&node-id=2927%3A22418&mode=design&t=xChdzUaoR55o941e-1
 
 -->
 
