@@ -14,11 +14,11 @@ image_base: /assets/images/guide/inheritance-wallet/
 
 Editor's notes
 
-This page covers a multi-key wallet that uses timelocks to provide additional recovery options.  
+This page covers how users backup their wallet and an example approach of how to store the backup material.  
 
 Illustration sources
 
-https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type=design&node-id=5542%3A2119&mode=design&t=sBtcvrDzb8MPtWaK-1
+https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Inheritance-wallet?type=design&node-id=6293%3A21917&mode=design&t=I2e3qgqYRGpAGyaQ-1
 
 -->
 
@@ -71,9 +71,11 @@ Alice and Bob are not willing to trust their life savings to one application. Th
    height = 800
 %}
 
-The illustration reveals that Christina and David can access in two different ways.
+Please note that this is one of many possible ways to approach wallet backups and should not be understood as the only correct way to do it. 
 
-INFO BOX: what follows is only one of many possible ways to approach wallet backups and should not be understood as the only correct way to do it. It is important that users determine the best way to handle backups based on their specific circumstances. Factors that whill influence such decisions include the relationship between family members, the amount of funds stored, access to safe locations, and others. Based on these and other factors it can be more appropriate to chose a simpler or more advanced backup scheme. 
+It is important that users determine the best way to handle backups based on their specific circumstances. Factors that whill influence such decisions include the relationship between family members, the amount of funds stored, access to safe locations, and others. Based on these and other factors it can be more appropriate to chose a simpler or more advanced backup scheme. 
+
+The illustration reveals that Christina and David can access in two different ways.
 
 #### Self-sovereign route
 Bob and Alice want to provide the children a way to access the funds on their own, using only the backup parts that are stored in the house safe. They store the password in a tamper-evident bag, along with a USB drive. Since electronics can fail, they also place a printout of their will and the recovery PDF in it. 
