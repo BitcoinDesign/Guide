@@ -22,18 +22,6 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
 
 -->
 
-{% include picture.html
-   image = "/assets/images/guide/inheritance-wallet/..."
-   retina = "/assets/images/guide/inheritance-wallet/...@2x.png"
-   mobile = "/assets/images/guide/inheritance-wallet/..."
-   mobileRetina = "/assets/images/guide/inheritance-wallet/...@2x.png"
-   alt-text = "..."
-   caption = ""
-   width = 1600
-   height = 600
-   layout = "full-width"
-%}
-
 # Backup 
 {: .no_toc }
 
@@ -62,8 +50,8 @@ After the wallet has been created, the application prompts the Joneses to downlo
 - **Wallet backup files in various formats**, which can be used to import the wallet to other wallet applications like Sparrow, Nunchuk or others. 
 
 {% include picture.html
-   image = "/assets/images/guide/inheritance-wallet/backup/recovery-kit-contents.png"
-   retina = "/assets/images/guide/inheritance-wallet/backup/recovery-kit-contents@2x.png"
+   image = "/assets/images/guide/inheritance-wallet/backup/backup-kit-contents.png"
+   retina = "/assets/images/guide/inheritance-wallet/backup/backup-kit-contents@2x.png"
    alt-text = "An illustration showing what is included in the backup kit."
    width = 1600
    height = 800
@@ -126,8 +114,8 @@ The subsequent pages describe the key sets and the individual signing keys, incl
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/time-based-recovery/"
-   previousName = "Time-based recovery"
+   previousUrl = "/guide/inheritance-wallet/wallet-creation/"
+   previousName = "Wallet creation"
    nextUrl = "/guide/upgradeable-wallet/"
    nextName = "Upgradeable wallet"
 %}
