@@ -7,7 +7,22 @@ parent: Inheritance wallet
 permalink: /guide/inheritance-wallet/backup/
 main_classes: -no-top-padding
 image_base: /assets/images/guide/inheritance-wallet/
-
+images_wallet-backup:
+    - file: wallet-backup/app-home-backup-before
+      alt:
+      caption: 
+    - file: wallet-backup/wallet-settings-backup-kit
+      alt:
+      caption: 
+    - file: wallet-backup/backup-save-dialog
+      alt:
+      caption: 
+    - file: wallet-backup/backup-success
+      alt:
+      caption: 
+    - file: wallet-backup/app-home-backup-done
+      alt:
+      caption: 
 ---
 
 <!--
@@ -22,7 +37,7 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Inheritance-wallet?type=design
 
 -->
 
-# Backup 
+# Wallet backup 
 {: .no_toc }
 
 ---
@@ -37,8 +52,8 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Inheritance-wallet?type=design
 As we have covered in the time-based recovery [reference design](https://bitcoin.design/guide/savings-wallet/time-based-recovery/#wallet-backup) there are two parts to backing up a multi-key wallet: the private keys as well as the wallet configuration.
 
 {% include picture.html
-   image = "/assets/images/guide/inheritance-wallet/backup/multikey-backup-components.png"
-   retina = "/assets/images/guide/inheritance-wallet/backup/multikey-backup-components@2x.png"
+   image = "/assets/images/guide/inheritance-wallet/wallet-backup/multikey-backup-components.png"
+   retina = "/assets/images/guide/inheritance-wallet/wallet-backup/multikey-backup-components@2x.png"
    alt-text = "An illustration showing the two parts of a multi-key wallet backup."
    width = 1600
    height = 800
@@ -54,28 +69,36 @@ Of course, all six private keys need to be backed up properly. We describe some 
 Our app emphasizes that users should keep one of the primary keys at all times, even if they move their funds to a new wallet. The reason is simple: there is still the possibility that some bitcoins will be sent to that old wallet. Keeping one of the keys around will make sure that users will be able to spend such funds, because the recovery path will be available to them.
 
 ### Wallet configuration backup
-After the wallet has been created, the application prompts the Joneses to download the wallet backup kit. This is just a ZIP file that contains the following contents:
+After the wallet has been created, the application prompts Bob to download the wallet backup kit. 
+
+#### Bob saves the backup kit
+Bob saves the the backup kit into his password manager that he has enabled on his phone. 
+
+{% include image-gallery.html pages = page.images_wallet-backup %}
+
+Alice and Bob then encrypt the ZIP file with a strong password and both of them stores a copy of it in their personal password manager account, case they need to recover the wallet themselves.
+
+#### What is in the backup kit?
+The backup kit is just a ZIP file that contains the following contents:
 
 - **A PDF file** that contains the wallet descriptor and information about all six XPUBs. Is also contains a visual representation of the rules that are used to unlock the recovery path and the inheritance key set.
 - **Wallet backup files in various formats**, which can be used to import the wallet to other wallet applications like Sparrow, Nunchuk or others. 
 
 {% include picture.html
-   image = "/assets/images/guide/inheritance-wallet/backup/backup-kit-contents.png"
-   retina = "/assets/images/guide/inheritance-wallet/backup/backup-kit-contents@2x.png"
+   image = "/assets/images/guide/inheritance-wallet/wallet-backup/backup-kit-contents.png"
+   retina = "/assets/images/guide/inheritance-wallet/wallet-backup/backup-kit-contents@2x.png"
    alt-text = "An illustration showing what is included in the backup kit."
    width = 1600
    height = 800
-%}
-
-Alice and Bob then encrypt the ZIP file with a strong password and both of them stores a copy of it in their personal password manager account, case they need to recover the wallet themselves. 
+%} 
 
 ## Backup distribution
 
 Alice and Bob are not willing to trust their life savings to one application. That's why they carefully chose the way in which they store the above wallet backup material. The illustration below shows the chosen setup in more detail.
 
 {% include picture.html
-   image = "/assets/images/guide/inheritance-wallet/backup/recovery-tool-distribution.png"
-   retina = "/assets/images/guide/inheritance-wallet/backup/recovery-tool-distribution@2x.png"
+   image = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-tool-distribution.png"
+   retina = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-tool-distribution@2x.png"
    alt-text = "A schematic illustration showing how the backup material is distributed between the parents, their children and the lawyer."
    width = 1600
    height = 800
@@ -86,6 +109,8 @@ Please note that this is one of many possible ways to approach wallet backups an
 We would also like to reiterate the point made in the "Use case & scope" page: the complexity of the backup scheme increases with the complexity of the wallet configuration. Therefore, user education is critical during wallet creation as well as during the backup phase.
 
 It is important that users determine the best way to handle backups based on their own specific circumstances. Factors that will influence such decisions include the relationship between family members, the amount of funds stored, their access to safe locations, etc. Based on these and other factors it can be more appropriate to chose a simpler or more advanced backup scheme. 
+
+## Assembling the backup material
 
 The illustration above reveals that Christina and David can access in two different ways.
 
@@ -116,8 +141,8 @@ The reason that there are two different ways in which Christina and David can ga
 Below is an example of the backup PDF file. The first page contains the information about the wallet itself. This includes the name of the wallet as well as the [wallet descriptor](add link) in the form of a QR code as well as in clear text. It also shows a visual representation of the configuration of the key sets:
 
 {% include picture.html
-   image = "/assets/images/guide/inheritance-wallet/backup/recovery-pdf.png"
-   retina = "/assets/images/guide/inheritance-wallet/backup/recovery-pdf@2x.png"
+   image = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-pdf.png"
+   retina = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-pdf@2x.png"
    alt-text = "An example of the recovery PDF file."
    width = 1600
    height = 800
