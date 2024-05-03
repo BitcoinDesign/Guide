@@ -104,11 +104,11 @@ Alice and Bob are not willing to trust their life savings to one application. Th
    height = 800
 %}
 
-Please note that this is one of many possible ways to approach wallet backups and should not be understood as the only correct way to do it. 
-
-We would also like to reiterate the point made in the "Use case & scope" page: the complexity of the backup scheme increases with the complexity of the wallet configuration. Therefore, user education is critical during wallet creation as well as during the backup phase.
+Please note that this is one of many possible ways to approach wallet backups and should not be understood as the only correct way to do it.
 
 It is important that users determine the best way to handle backups based on their own specific circumstances. Factors that will influence such decisions include the relationship between family members, the amount of funds stored, their access to safe locations, etc. Based on these and other factors it can be more appropriate to chose a simpler or more advanced backup scheme. 
+
+We would also like to reiterate the point made in the "Use case & scope" page: the complexity of the backup scheme increases with the complexity of the wallet configuration. Therefore, user education is critical during wallet creation as well as during the backup phase.
 
 ## Assembling the backup material
 
