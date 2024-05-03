@@ -93,7 +93,7 @@ Our application lets users create flexible multi-key wallets with timelocked rec
 
 ---
 
-### Wallet backup (coming soon)
+### [Wallet backup]({{ '/guide/inheritance-wallet/backup/' | relative_url }})
 
 <div class="center" markdown="1">
 
@@ -113,26 +113,6 @@ When backing up multi-key wallets there are more moving parts to consider than w
 
 --- 
 
-### Testing (coming soon)
-
-<div class="center" markdown="1">
-
-{% include image.html
-   image = "assets/images/guide/inheritance-wallet/icon-testing.png"
-   retina = "assets/images/guide/inheritance-wallet/icon-testing@2x.png"
-   alt-text = ""
-   width = 80
-   height = 80
-   layout = "float-left"
-   link-url = "/guide/inheritance-wallet/testing/"
-%}
-
-To help users make sure that their wallet works as intended, the app offers features that let them test their setup, before they move all of their savings to their newly created wallet.
-
-</div>
-
---- 
-
 ### Operational phase (coming soon)
 
 <div class="center" markdown="1">
@@ -147,27 +127,7 @@ To help users make sure that their wallet works as intended, the app offers feat
    link-url = "/guide/inheritance-wallet/regular-use/"
 %}
 
-Involving the potential heirs early on is great, but it also has potential implications when it comes to privacy and security. Our application combines built-in features with social processes to mitigate this risk. It also helps to prevent premature activation of the inheritance keys. 
-
-</div>
-
---- 
-
-### Managing change (coming soon)
-
-<div class="center" markdown="1">
-
-{% include image.html
-   image = "assets/images/guide/inheritance-wallet/icon-changing.png"
-   retina = "assets/images/guide/inheritance-wallet/icon-changing@2x.png"
-   alt-text = ""
-   width = 80
-   height = 80
-   layout = "float-left"
-   link-url = "/guide/inheritance-wallet/managing-change/"
-%}
-
-Over time it might become necessary for users to make changes to their savings wallet because someone lost a key or they want to make changes to the overall wallet configuration. Our app helps users to make such changes and update the backup and inheritance documentation.
+Over time it might become necessary for users to make changes to their savings wallet because someone lost a key or they want to make changes to the overall wallet configuration. Our app helps users to make such changes and update the backup and inheritance documentation. It also helps with regular key checks.
 
 </div>
 

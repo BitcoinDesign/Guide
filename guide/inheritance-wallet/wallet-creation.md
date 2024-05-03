@@ -335,8 +335,8 @@ The homescreen shows the newly created wallet. In addition, the app shows a coup
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/inheritance-wallet/introduction"
+   previousUrl = "/guide/inheritance-wallet/use-case-and-scope"
    previousName = "Use case & scope"
-   nextUrl = "/guide/upgradeable-wallet/"
-   nextName = "Upgradeable wallet"
+   nextUrl = "/guide/uinheritance-wallet/backup"
+   nextName = "Backup"
 %}

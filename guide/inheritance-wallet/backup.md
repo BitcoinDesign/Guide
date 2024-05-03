@@ -18,7 +18,7 @@ This page covers how users backup their wallet and an example approach of how to
 
 Illustration sources
 
-https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Inheritance-wallet?type=design&node-id=6293%3A21917&mode=design&t=I2e3qgqYRGpAGyaQ-1
+https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Inheritance-wallet?type=design&node-id=6293%3A21917&mode=design&t=I2e3qgqYRGpAGyaQ-1 
 
 -->
 
@@ -34,7 +34,15 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Inheritance-wallet?type=design
 
 ---
 
-As we have covered in the time-based recovery [reference design](https://bitcoin.design/guide/savings-wallet/time-based-recovery/#wallet-backup) there are two parts to backing up a multi-key wallet: the private keys as well as the wallet configuration.  
+As we have covered in the time-based recovery [reference design](https://bitcoin.design/guide/savings-wallet/time-based-recovery/#wallet-backup) there are two parts to backing up a multi-key wallet: the private keys as well as the wallet configuration.
+
+{% include picture.html
+   image = "/assets/images/guide/inheritance-wallet/backup/multikey-backup-components.png"
+   retina = "/assets/images/guide/inheritance-wallet/backup/multikey-backup-components@2x.png"
+   alt-text = "An illustration showing the two parts of a multi-key wallet backup."
+   width = 1600
+   height = 800
+%}
 
 Users need not only to back up the individual private keys that are used to sign transactions. But they also have to back up the wallet configuration as such. This is needed for recovery, because the wallet application needs to know how to generate addresses and the rules that define how bitcoin can be spent from these addresses. 
 
