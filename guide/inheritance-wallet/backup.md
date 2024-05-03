@@ -7,11 +7,6 @@ parent: Inheritance wallet
 permalink: /guide/inheritance-wallet/backup/
 main_classes: -no-top-padding
 image_base: /assets/images/guide/inheritance-wallet/
-images_creation-wallet-basics:
-    - file: 
-      alt: 
-      caption: 
-
 
 ---
 
@@ -118,7 +113,13 @@ The reason that there are two different ways in which Christina and David can ga
 
 Below is an example of the backup PDF file. The first page contains the information about the wallet itself. This includes the name of the wallet as well as the [wallet descriptor](add link) in the form of a QR code as well as in clear text. It also shows a visual representation of the configuration of the key sets:
 
-{% include gallery.html %}
+{% include picture.html
+   image = "/assets/images/guide/inheritance-wallet/backup/recovery-pdf.png"
+   retina = "/assets/images/guide/inheritance-wallet/backup/recovery-pdf@2x.png"
+   alt-text = "An example of the recovery PDF file."
+   width = 1600
+   height = 800
+%}
 
 The subsequent pages describe the key sets and the individual signing keys, including the friendly names that Bob has given them. This will make it more convenient in case the wallet needs to be recovered.
 
