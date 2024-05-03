@@ -46,10 +46,12 @@ As we have covered in the time-based recovery [reference design](https://bitcoin
 
 Users need not only to back up the individual private keys that are used to sign transactions. But they also have to back up the wallet configuration as such. This is needed for recovery, because the wallet application needs to know how to generate addresses and the rules that define how bitcoin can be spent from these addresses. 
 
+This means that, in our use case, the Joneses need to safely backup and store six private keys as well as the wallet configuration. 
+
 ### Private key backups
 Of course, all six private keys need to be backed up properly. We describe some best practices on how to back up private keys on the [bitcoin backups page](https://bitcoin.design/guide/how-it-works/backups/), so we won’t be covering this topic here. 
 
-Our app emphasizes that the users should keep one of the primary keys at all times, even if they move their funds to a new wallet. The reason is simple: there is still the possibility that some bitoins will be sent to that old wallet. Keeping one of the keys around will make sure that users will be able to spend such funds, because the recovery path will be available to them.
+Our app emphasizes that users should keep one of the primary keys at all times, even if they move their funds to a new wallet. The reason is simple: there is still the possibility that some bitcoins will be sent to that old wallet. Keeping one of the keys around will make sure that users will be able to spend such funds, because the recovery path will be available to them.
 
 ### Wallet configuration backup
 After the wallet has been created, the application prompts the Joneses to download the wallet backup kit. This is just a ZIP file that contains the following contents:
@@ -81,9 +83,11 @@ Alice and Bob are not willing to trust their life savings to one application. Th
 
 Please note that this is one of many possible ways to approach wallet backups and should not be understood as the only correct way to do it. 
 
-It is important that users determine the best way to handle backups based on their specific circumstances. Factors that whill influence such decisions include the relationship between family members, the amount of funds stored, access to safe locations, and others. Based on these and other factors it can be more appropriate to chose a simpler or more advanced backup scheme. 
+We would also like to reiterate the point made in the "Use case & scope" page: the complexity of the backup scheme increases with the complexity of the wallet configuration. Therefore, user education is critical during wallet creation as well as during the backup phase.
 
-The illustration reveals that Christina and David can access in two different ways.
+It is important that users determine the best way to handle backups based on their own specific circumstances. Factors that will influence such decisions include the relationship between family members, the amount of funds stored, their access to safe locations, etc. Based on these and other factors it can be more appropriate to chose a simpler or more advanced backup scheme. 
+
+The illustration above reveals that Christina and David can access in two different ways.
 
 #### Self-sovereign route
 Bob and Alice want to provide the children a way to access the funds on their own, using only the backup parts that are stored in the house safe. They store the password in a tamper-evident bag, along with a USB drive. Since electronics can fail, they also place a printout of their will and the recovery PDF in it. 
