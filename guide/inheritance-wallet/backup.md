@@ -99,6 +99,7 @@ Alice and Bob are not willing to trust their life savings to one application. Th
 {% include picture.html
    image = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-tool-distribution.png"
    retina = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-tool-distribution@2x.png"
+   modalImage = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-tool-distribution@2x.png"
    alt-text = "A schematic illustration showing how the backup material is distributed between the parents, their children and the lawyer."
    width = 1600
    height = 800
@@ -143,6 +144,7 @@ Below is an example of the backup PDF file. The first page contains the informat
 {% include picture.html
    image = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-pdf.png"
    retina = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-pdf@2x.png"
+   modalImage = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-pdf@2x.png"
    alt-text = "An example of the recovery PDF file."
    width = 1600
    height = 800
