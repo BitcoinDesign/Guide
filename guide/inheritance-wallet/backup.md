@@ -9,20 +9,20 @@ main_classes: -no-top-padding
 image_base: /assets/images/guide/inheritance-wallet/
 images_wallet-backup:
     - file: wallet-backup/app-home-backup-before
-      alt:
-      caption: 
+      alt: Image of the app home screen showing a reminder to backup the wallet.
+      caption: The app shows a reminder to save the backup kit.
     - file: wallet-backup/wallet-settings-backup-kit
-      alt:
-      caption: 
+      alt: Screen showing instructions on how to store the wallet backup.
+      caption: The backup page highlights the most important points about the wallet backup and provides a link to learn more.
     - file: wallet-backup/backup-save-dialog
-      alt:
-      caption: 
+      alt: Placeholder screen representing the operating system native file download dialog.
+      caption: The file is saved using the native file download flow.
     - file: wallet-backup/backup-success
-      alt:
-      caption: 
+      alt: Screen showing a success message.
+      caption: The success screen reminds the user once again to not store the backup kit in the same place as the private key backups.
     - file: wallet-backup/app-home-backup-done
-      alt:
-      caption: 
+      alt: Image of the home screen that does not show the backup reminder anymore.
+      caption: The app home screen does not show the backup reminder anymore.
 ---
 
 <!--
