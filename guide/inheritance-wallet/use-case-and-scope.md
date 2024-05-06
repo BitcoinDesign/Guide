@@ -89,9 +89,12 @@ The image below illustrates how the wallet will work under the hood.
    retina = "/assets/images/guide/inheritance-wallet/use-case-and-scope/wallet-overview@2x.png"
    mobile = "/assets/images/guide/inheritance-wallet/use-case-and-scope/wallet-overview-mobile.png"
    mobileRetina = "/assets/images/guide/inheritance-wallet/use-case-and-scope/wallet-overview-mobile@2x.png"
+   modalImage = "/assets/images/guide/inheritance-wallet/use-case-and-scope/wallet-overview@2x.png"
    alt-text = "An illustration showing the timeline of when the key sets will be unlocked."
    width = 1600
    height = 800
+   modalWidth = 2226
+   modalHeight = 816
 %}
 
 ## Design considerations

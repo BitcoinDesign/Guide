@@ -103,6 +103,8 @@ Alice and Bob are not willing to trust their life savings to one application. Th
    alt-text = "A schematic illustration showing how the backup material is distributed between the parents, their children and the lawyer."
    width = 1600
    height = 800
+   modalWidth = 3324
+   modalHeight = 1850
 %}
 
 Please note that this is one of many possible ways to approach wallet backups and should not be understood as the only correct way to do it.
@@ -148,6 +150,8 @@ Below is an example of the backup PDF file. The first page contains the informat
    alt-text = "An example of the recovery PDF file."
    width = 1600
    height = 800
+   modalWidth = 4050
+   modalHeight = 2168
 %}
 
 The subsequent pages describe the key sets and the individual signing keys, including the friendly names that Bob has given them. This will make it more convenient in case the wallet needs to be recovered.
