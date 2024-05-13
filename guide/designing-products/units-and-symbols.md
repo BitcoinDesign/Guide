@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Units & Symbols
+title: Units & symbols
 description: How to display and format bitcoin and currency units in bitcoin applications.
 nav_order: 7
 parent: Designing bitcoin products

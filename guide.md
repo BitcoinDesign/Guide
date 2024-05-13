@@ -172,19 +172,32 @@ Explanations of various technical aspects of bitcoin and lightning.
 [Automatic cloud backup]({{ '/guide/how-it-works/private-key-management/cloud-backup/' | relative_url }})<br />
 [Manual backup]({{ '/guide/how-it-works/private-key-management/manual-backup/' | relative_url }})<br />
 [External signers]({{ '/guide/how-it-works/private-key-management/external-signers/' | relative_url }})<br />
-[Multi-key]({{ '/guide/how-it-works/private-key-management/multi-key/' | relative_url }})
-
-</div>
-<div class="column" markdown="1">
-
+[Multi-key]({{ '/guide/how-it-works/private-key-management/multi-key/' | relative_url }})<br />
 [Bitcoin backups]({{ '/guide/how-it-works/backups/' | relative_url }})<br />
 [Payment request formats]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }})<br />
 [Coin selection]({{ '/guide/how-it-works/coin-selection/' | relative_url }})<br />
 [Nodes]({{ '/guide/how-it-works/nodes/' | relative_url }})<br />
-[Transactions]({{ '/guide/how-it-works/transactions/' | relative_url }})
+
+</div>
+<div class="column" markdown="1">
+
+[Transactions]({{ '/guide/how-it-works/transactions/' | relative_url }})<br />
+[Wallet privacy]({{ '/guide/how-it-works/wallet-privacy/' | relative_url }})<br />
+[Wallet selector]({{ '/guide/how-it-works/wallet-selector/' | relative_url }})<br />
+[Custom spending conditions]({{ '/guide/how-it-works/custom-spending-conditions/' | relative_url }})<br />
+[Stabilizing bitcoin value]({{ '/guide/how-it-works/stabilizing-bitcoin-value/' | relative_url }})<br />
+[Lightning liquidity]({{ '/guide/how-it-works/liquidity/' | relative_url }})<br />
+[Lightning services]({{ '/guide/how-it-works/lightning-services/' | relative_url }})<br />
+[Sign in with bitcoin]({{ '/guide/how-it-works/sign-in-with-bitcoin/' | relative_url }})<br />
 
 </div>
 </div>
+
+---
+
+<h2 class="h3" markdown="1">[Case studies]({{ '/guide/case-studies/' | relative_url }})</h2>
+
+Collaboration summaries including [Blixt Wallet]({{ '/guide/case-studies/blixt-wallet/' | relative_url }}), [Payjoin]({{ '/guide/case-studies/payjoin/' | relative_url }}), [WalletScrutiny]({{ '/guide/case-studies/walletscrutiny/' | relative_url }}), and [Bitcoin Core App]({{ '/guide/case-studies/bitcoin-core-app/' | relative_url }}).
 
 ---
 
