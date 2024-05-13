@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Custom Spending Conditions
+title: Custom spending conditions
 description: An overview about advanced capabilities that enable users to create more flexible bitcoin wallets.
 nav_order: 12
 parent: How it works

@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Coin Selection
+title: Coin selection
 description: A primer on how UTXOs are chosen to fund new bitcoin transactions.
 nav_order: 2
 parent: How it works
