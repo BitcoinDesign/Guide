@@ -2,7 +2,7 @@
 layout: guide
 title: Wallet backup
 description: This page gives an overview of how the Joneses backup their savings wallet.
-nav_order: 3
+nav_order: 4
 parent: Inheritance wallet
 permalink: /guide/inheritance-wallet/backup/
 main_classes: -no-top-padding
@@ -159,8 +159,8 @@ The subsequent pages describe the key sets and the individual signing keys, incl
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/inheritance-wallet/wallet-creation/"
-   previousName = "Wallet creation"
-   nextUrl = "/guide/upgradeable-wallet/"
-   nextName = "Upgradeable wallet"
+   previousUrl = "/guide/inheritance-wallet/onboarding-cosigners/"
+   previousName = "Onboarding cosigners"
+   nextUrl = "/guide/inheritance-wallet/making-changes"
+   nextName = "Making changes"
 %}
