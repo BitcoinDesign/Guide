@@ -38,6 +38,12 @@ This was a collaboration between WalletScrutiny and the Bitcoin Design Community
 
 ---
 
+### [Bitcoin Core App]({{ '/guide/case-studies/bitcoin-core-app' | relative_url }})
+
+An iniative to redesign the first bitcoin wallet ever.
+
+---
+
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/stabilizing-bitcoin-value/"
    previousName = "Stabilizing bitcoin value"
