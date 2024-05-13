@@ -72,7 +72,7 @@ The Bitcoin Core project plays an essential role in the ecosystem. It not only s
 There are four main goals of this project:
 
 - Empower people to run a node easily on a mobile device.
-- Expand wallet features wallet with the latest best practices and developments.
+- Expand wallet features with the latest best practices and developments.
 - Provide more useful tools for experts and developers.
 - Build a solid design foundation and public blueprint.
 
@@ -89,7 +89,7 @@ There are four main goals of this project:
    height = 416
 %}
 
-A major goal is to make running a node easier and more rewarding, since that is an essential function in the bitcoin network. Running a node means actively helping to verify consensus rules, for example that coins are not spent which do not exist. Node runners also get to personally manage, verify and broadcast transactions, which is a great privacy benefit.
+A major goal is to make running a node easier and more rewarding, since that is an essential function in the bitcoin network. Running a node means actively helping to verify consensus rules, for example coins are not spent which do not exist. Node runners also get to personally manage, verify and broadcast transactions, which is a great privacy benefit.
 
 </div>
 
@@ -149,7 +149,7 @@ Contributing as a designer to Bitcoin Core is currently not a simple task. While
    height = 420
 %}
 
-And if this new application will be around for years, and possibly decades, we want to ensure it starts with as strong of a foundation as possible.
+And if this new application will be around for years, and possibly decades, we want to ensure it starts off with the strongest foundation possible.
 
 ## Process
 
@@ -238,8 +238,8 @@ If you’d like to contribute, review the design documentation and stop by the [
 Next, view the [resources]({{ '/guide/resources' | relative_url }}) that can help you build better bitcoin products.
 
 {% include next-previous.html
-   previousUrl = "/guide/case-studies/payjoin/"
-   previousName = "Payjoin"
+   previousUrl = "/guide/case-studies/walletscrutiny/"
+   previousName = "WalletScrutiny"
    nextUrl = "/guide/resources/"
    nextName = "Resources"
 %}
