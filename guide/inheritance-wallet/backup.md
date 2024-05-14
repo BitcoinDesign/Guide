@@ -69,7 +69,7 @@ We have described best practices on how to back up private keys on the [bitcoin 
 Our app emphasizes that users should keep one of the primary keys at all times, even if they move their funds to a new wallet. The reason is simple: there is still the possibility that some bitcoins will be sent to that old wallet. Keeping one of the keys around will make sure that users will be able to spend such funds, because the recovery path will be available to them.
 
 ### Wallet configuration backup
-After the wallet has been created, the application prompts Bob to download the wallet backup kit. 
+The wallet configuration is backed up in the form of a collection of files packaged into a single backup kit.
 
 #### Bob saves the backup kit
 Once the wallet is created, the application prompts Bob to download the wallet backup kit. Bob saves the backup kit into his password manager that he has enabled on his phone. 
