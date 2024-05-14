@@ -115,7 +115,7 @@ We would also like to reiterate the point made in the "Use case & scope" page: t
 
 ## Assembling the backup material
 
-The illustration above reveals that Christina and David can access in two different ways.
+The illustration above reveals that Christina and David can access the multi-key wallet in two different ways.
 
 #### Self-sovereign route
 Bob and Alice want to provide the children a way to access the funds on their own, using only the backup parts that are stored in the house safe. They store the password in a tamper-evident bag, along with a USB drive. Since electronics can fail, they also place a printout of their will and the recovery PDF in it. 
