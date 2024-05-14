@@ -72,7 +72,7 @@ Our app emphasizes that users should keep one of the primary keys at all times, 
 After the wallet has been created, the application prompts Bob to download the wallet backup kit. 
 
 #### Bob saves the backup kit
-Bob saves the the backup kit into his password manager that he has enabled on his phone. 
+Once the wallet is created, the application prompts Bob to download the wallet backup kit. Bob saves the backup kit into his password manager that he has enabled on his phone. 
 
 {% include image-gallery.html pages = page.images_wallet-backup %}
 
