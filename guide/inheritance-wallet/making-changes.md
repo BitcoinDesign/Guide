@@ -262,11 +262,7 @@ The next step is to add David's new extended public key. This works in the same 
 
 #### Onboarding Alice to the new wallet
 
-We have covered this topic in detail on the [wallet creation page](). What is different here is that our app shows a list of tasks that the users should complete to finalize the transfer to their new wallet. So Bob taps on the top task, which is to onboard his cosigner Alice.
 
-{% include image-gallery.html pages = page.images_backup-new-wallet %}
-
-Just like during her initial onboarding, Alice will scan the QR code to import the wallet into her app.
 
 #### Activating the wallet on the signing devices
 
@@ -298,21 +294,19 @@ On the app home screen, Alice now sees a reminder that a transaction is ready to
 
 After she has signed the transaction, she sees that the transaction is being confirmed by the network. Once the transaction has been confirmed, the app home screen shows a reminder that the original wallet should be archived. 
 
-### Alternative use case: editing the wallet configuration
-
-If Bob would just want to edit the wallet configurtion itself, without changing the keys, the process would be exactle the same. In the below example below, Bob changes the activation timelock for the recovery path and the inheritance key set from 6 months to 12 months. 
-
-{% include image-gallery.html pages = page.images_config-changes %} 
-
-After creating the new wallet, the process would be exactly the same as for the replacement of the keys, described above.
-
 ### Archiving the old wallet
 
 Archiving unused wallets will remove complexity and help users focus on the wallet they actively use. Archiving a wallet will not delete it from the app. It will only be removed from the home screen and from the wallets tab. The app will still watch the blockchain for incoming transactions. If there are any, the app shows them on the home screen and in the wallets tab. Users can then transfer the funds to a wallet that they actively use. This is why it is important to keep the backup kit and at least one of the primary keys of every wallet.   
 
 {% include image-gallery.html pages = page.images_archive-wallet %}
 
+### Alternative use case: editing the wallet configuration
 
+If Bob would just want to edit the wallet configuration itself, without changing the keys, the process would be the same. In the below example below, Bob changes the activation timelock for the recovery path and the inheritance key set from 6 months to 12 months. 
+
+{% include image-gallery.html pages = page.images_config-changes %} 
+
+After creating the new wallet, the process would be exactly the same as for the replacement of the keys described above.
 
 ---
 
