@@ -124,7 +124,7 @@ The PIN to the house safe is stored in the shared family vault in the password m
 
 This is an acceptable trade-off for them, since they have good relationships and trust their children. After all, this is the reason they have chosen to include them in the setup in the first place.
 
-But even if Christina and David would breach that trust and recover the wallet, they would not be able to move the funds, because their inheritance keys are timelocked. They would only be able to see the balance and monitor transactions, but they would not be able to spend any bitcoins. 
+Even if Christina and David breach that trust and recover the wallet, they would not be able to move the funds, because their inheritance keys are timelocked. They would only be able to see the balance and monitor transactions, but not spend any bitcoin. 
 
 Because Alice and Bob access their safe regularly, they would notice that the bag with the backup material has been opened. They can then safely move the funds to a new wallet, for which they would implement more restrictive security measures.
 
