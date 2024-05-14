@@ -64,7 +64,7 @@ Users need not only to back up the individual private keys that are used to sign
 This means that, in our use case, the Joneses need to safely backup and store six private keys as well as the wallet configuration. 
 
 ### Private key backups
-Of course, all six private keys need to be backed up properly. We describe some best practices on how to back up private keys on the [bitcoin backups page](https://bitcoin.design/guide/how-it-works/backups/), so we won’t be covering this topic here. 
+We have described best practices on how to back up private keys on the [bitcoin backups page](https://bitcoin.design/guide/how-it-works/backups/).
 
 Our app emphasizes that users should keep one of the primary keys at all times, even if they move their funds to a new wallet. The reason is simple: there is still the possibility that some bitcoins will be sent to that old wallet. Keeping one of the keys around will make sure that users will be able to spend such funds, because the recovery path will be available to them.
 
