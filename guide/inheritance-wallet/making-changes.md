@@ -59,46 +59,6 @@ images_key-replacement:
     - file: key-replacement/replace-keys-success
       alt: 
       caption: 
-images_config-changes:
-    - file: config-changes/app-home-initial
-      alt: 
-      caption: 
-    - file: config-changes/wallet-overview
-      alt: 
-      caption:
-    - file: config-changes/wallet-settings
-      alt: 
-      caption:
-    - file: config-changes/wallet-settings-config
-      alt: 
-      caption:
-    - file: config-changes/change-config-dialog
-      alt: 
-      caption:
-    - file: config-changes/change-config-wallet-type
-      alt: 
-      caption:
-    - file: config-changes/change-config-recovery-path
-      alt: 
-      caption:
-    - file: config-changes/change-config-recovery-path-initial
-      alt: 
-      caption:
-    - file: config-changes/change-config-recovery-path-changed
-      alt: 
-      caption:
-    - file: config-changes/change-config-recovery-path-done
-      alt: 
-      caption:
-    - file: config-changes/creation-inheritance-done
-      alt: 
-      caption:
-    - file: config-changes/change-config-recovery-review
-      alt: 
-      caption:
-    - file: config-changes/change-config-success
-      alt: 
-      caption:
 images_fund-transfer-bob:
     - file: fund-transfer/app-home-move-funds
       alt: 
@@ -146,38 +106,6 @@ images_alice-sign-transfer:
     - file: fund-transfer/move-funds-transaction-pending
       alt: 
       caption:
-images_onboard-alice:
-    - file: onboard-alice/onboard-alice-home
-      alt: 
-      caption:
-    - file: onboard-alice/onboard-alice-dialog
-      alt: 
-      caption:
-    - file: onboard-alice/onboard-alice-mark-complete
-      alt: 
-      caption:
-    - file: onboard-alice/onboard-alice-completion-dialog
-      alt: 
-      caption:
-    - file: onboard-alice/onboard-alice-done
-      alt: 
-      caption:
-images_backup-new-wallet:
-    - file: backup-new-wallet/backup-home
-      alt: 
-      caption:
-    - file: backup-new-wallet/backup-dialog
-      alt: 
-      caption:
-    - file: backup-new-wallet/backup-save-dialog
-      alt: 
-      caption:
-    - file: backup-new-wallet/backup-success
-      alt: 
-      caption:
-    - file: backup-new-wallet/backup-done
-      alt: 
-      caption:
 images_archive-wallet:
     - file: archive-wallet/archive-home
       alt: 
@@ -189,6 +117,46 @@ images_archive-wallet:
       alt: 
       caption:
     - file: archive-wallet/archive-done
+      alt: 
+      caption:
+images_config-changes:
+    - file: config-changes/app-home-initial
+      alt: 
+      caption: 
+    - file: config-changes/wallet-overview
+      alt: 
+      caption:
+    - file: config-changes/wallet-settings
+      alt: 
+      caption:
+    - file: config-changes/wallet-settings-config
+      alt: 
+      caption:
+    - file: config-changes/change-config-dialog
+      alt: 
+      caption:
+    - file: config-changes/change-config-wallet-type
+      alt: 
+      caption:
+    - file: config-changes/change-config-recovery-path
+      alt: 
+      caption:
+    - file: config-changes/change-config-recovery-path-initial
+      alt: 
+      caption:
+    - file: config-changes/change-config-recovery-path-changed
+      alt: 
+      caption:
+    - file: config-changes/change-config-recovery-path-done
+      alt: 
+      caption:
+    - file: config-changes/creation-inheritance-done
+      alt: 
+      caption:
+    - file: config-changes/change-config-recovery-review
+      alt: 
+      caption:
+    - file: config-changes/change-config-success
       alt: 
       caption:
 ---
@@ -219,7 +187,7 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Inheritance-wallet?type=design
 In this page we will take a look at two specific use cases that are likely to occur when storing bitcoin over a long enough period of time: 
 
 1. Users need to replace a key that has been lost.
-2. Users want to change the wallet configuration because their circumstances have changed.
+2. Users want to change the basic wallet configuration.
 
 ### How it works
 
@@ -260,19 +228,14 @@ The app then asks which of the keys Bob would like to replace. Bob selects David
 
 The next step is to add David's new extended public key. This works in the same way as during the initial wallet creation. On the wallet review screen, the app indicates that a new signing key has been added. Bob reviews the changes and hits "create wallet."
 
-#### Onboarding Alice to the new wallet
+### Cosigner setup, device activation and wallet backup 
+The new inheritance wallet is now created. Just like during the initial wallet creation, Alice and Bob now need to:
 
+1. Share the wallet configuration with Alice, so that she can set up the wallet on her app.
+2. Activate the new wallet on their signing devices.
+3. Save the backup kit for the new wallet.
 
-
-#### Activating the wallet on the signing devices
-
-
-
-#### Saving the new backup kit
-
-Next, Alice and Bob save the backup kit for their new wallet in the same way as during the inital wallet creation.
-
-{% include image-gallery.html pages = page.images_backup-new-wallet %}
+We have covered these topics in the previous pages of this reference design.
 
 ### Moving funds to the new wallet
 
@@ -300,7 +263,7 @@ Archiving unused wallets will remove complexity and help users focus on the wall
 
 {% include image-gallery.html pages = page.images_archive-wallet %}
 
-### Alternative use case: editing the wallet configuration
+### Editing the wallet timelocks
 
 If Bob would just want to edit the wallet configuration itself, without changing the keys, the process would be the same. In the below example below, Bob changes the activation timelock for the recovery path and the inheritance key set from 6 months to 12 months. 
 
