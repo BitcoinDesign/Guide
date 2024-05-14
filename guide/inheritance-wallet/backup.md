@@ -130,7 +130,7 @@ Because Alice and Bob access their safe regularly, they would notice that the ba
 
 #### Assisted route
 
-But what if the first route fails? In that case, Christina and David should have a way to gain access to the backup material by going through the standard legal procedures. This is why Bob and Alice give their lawyer Edward a copy of the encrypted backup kit. The password is stored in a deposit box at their bank, in a tamper-evident bag. 
+But what if the first route fails? In that case, Christina and David should have a way to gain access to the backup material by going through the standard legal procedures. This is why Bob and Alice give their lawyer Edward a copy of the encrypted backup kit. The password is stored in a deposit box at their bank, inside a tamper-evident bag. 
 
 This setup will prevent Edward from recovering the wallet, because he does not know how or where to access the backup kit password. It also prevents bank employees from doing so, because the backup kit is not stored in the deposit box along with the password. 
 
