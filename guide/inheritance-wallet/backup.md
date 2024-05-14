@@ -79,7 +79,7 @@ Bob saves the the backup kit into his password manager that he has enabled on hi
 Alice and Bob then encrypt the ZIP file with a strong password and both of them stores a copy of it in their personal password manager account, case they need to recover the wallet themselves.
 
 #### What is in the backup kit?
-The backup kit is just a ZIP file that contains the following contents:
+The backup kit is a ZIP file that contains:
 
 - **A PDF file** that contains the wallet descriptor and information about all six XPUBs. Is also contains a visual representation of the rules that are used to unlock the recovery path and the inheritance key set.
 - **Wallet backup files in various formats**, which can be used to import the wallet to other wallet applications like Sparrow, Nunchuk or others. 
