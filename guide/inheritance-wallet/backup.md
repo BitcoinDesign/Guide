@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Wallet backup
-description: This page gives an overview of how the Joneses backup their savings wallet.
+description: This page gives an overview of how the Joneses backup their inheritance wallet.
 nav_order: 3
 parent: Inheritance wallet
 permalink: /guide/inheritance-wallet/backup/
