@@ -10,66 +10,66 @@ image_base: /assets/images/guide/inheritance-wallet/onboarding-cosigners/
 images_bob-export-config:
     - file: bob-export-config/onboard-alice-home
       alt: 
-      caption:
+      caption: A contextual task list helps users to complete all the necessary steps to safely use their new wallet.
     - file: bob-export-config/onboard-alice-dialog
       alt: 
-      caption:
+      caption: Bob exports the wallet configuration, so that Alice can set up the wallet on her phone.
     - file: bob-export-config/onboard-alice-mark-complete
       alt: 
-      caption:
+      caption: After Alice has successfully set up the wallet on her end, Bob checks off the task. 
     - file: bob-export-config/onboard-alice-completion-dialog
       alt: 
-      caption:
+      caption: Bob confirms that all cosigners have been onboarded. In our use case, Bob and Alice are the only cosigners.
     - file: bob-export-config/onboard-alice-done
       alt: 
-      caption:
+      caption: The cosigner onboarding task is gone from the list and Bob can continue with the the next task.
 images_alice-import-config:
     - file: alice-import-config/app-home-initial
       alt: 
-      caption:
+      caption: Alice taps the plus button to start adding the wallet. 
     - file: alice-import-config/add-wallet-sheet
       alt: 
-      caption:
+      caption: She selects "Recover an existing wallet"
     - file: alice-import-config/alice-import-config-options
       alt: 
-      caption:
+      caption: The easiest way to import the configuration is to scan the QR code from Bob's screen.
     - file: alice-import-config/alice-scan-config
       alt: 
-      caption:
+      caption: Alice scans the QR code.
     - file: alice-import-config/alice-review-wallet
       alt: 
-      caption:
+      caption: Alice reviews the wallet configuration and finishes the import.
     - file: alice-import-config/alice-wallet-success
       alt: 
-      caption:
+      caption: On the success screen the app prompts Alice to download the wallet backup kit. She will do that later.
     - file: alice-import-config/app-home-done
       alt: 
-      caption:
+      caption: Back on the home screen, Alice sees that she should download the backup kit and enable her signing device.
 images_alice-enable-device:
     - file: alice-enable-device/enable-alice-home
       alt: 
-      caption:
+      caption: Alice is ready to enable her Bitbox to sign transactions for the wallet. 
     - file: alice-enable-device/enable-alice-dialog
       alt: 
-      caption:
+      caption: The app tells her what this step is about and how it works.
     - file: alice-enable-device/enable-alice-wallet-export
       alt: 
-      caption:
+      caption: Alice connects her Bitbox via USB-C to export the wallet configuration.
     - file: alice-enable-device/enable-alice-device-flow
       alt: 
-      caption:
+      caption: The app guides her throught the import flow on her Bitbox.
     - file: alice-enable-device/enable-alice-success
       alt: 
-      caption:
+      caption: On the success screen, the app shows the option to enable another signing device.
     - file: alice-enable-device/enable-alice-completion
       alt: 
-      caption:
+      caption: On the home screen, Alice checks off the task. 
     - file: alice-enable-device/enable-alice-completion-dialog
       alt: 
-      caption:
+      caption: The app asks whether she has enabled all signing devices.
     - file: alice-enable-device/enable-alice-done
       alt: 
-      caption:
+      caption: The last thing to do is to download the wallet backup kit.
 ---
 
 <!--
@@ -110,6 +110,8 @@ Bob shares the wallet configuration with Alice by tapping on the "onboard cosign
 {% include image-gallery.html pages = page.images_bob-export-config %}
 
 The app also shows an option to view the [wallet descriptor](https://bitcoin.design/guide/glossary/#output-script-descriptor). The wallet descriptor is a small piece of text that contains all the information that a wallet application needs to recover a multi-key wallet. We will cover this topic in more detail in the chapter about the wallet backup.
+
+After Alice has successfully set up the wallet on her end, Bob checks off the task. For our application, this is a manual step, because it does not run a server that coordinates activity between the users. This adds a bit more friction to the user experience but minimizes reliance on the wallet provider.
 
 #### Alice sets up the wallet on her app
 

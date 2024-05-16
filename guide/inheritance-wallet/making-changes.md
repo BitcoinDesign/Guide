@@ -10,155 +10,155 @@ image_base: /assets/images/guide/inheritance-wallet/making-changes/
 images_key-replacement:
     - file: key-replacement/app-home-initial
       alt: 
-      caption: 
+      caption: Bob navigates from the home screen to the wallet overview screen.
     - file: key-replacement/wallet-overview
       alt: 
-      caption: 
+      caption: He taps on the settings icon in the top right corner of the screen.
     - file: key-replacement/wallet-settings
       alt: 
-      caption: 
+      caption: In the wallet settings, he drills into the signing keys section. 
     - file: key-replacement/wallet-settings-signing-keys
       alt: 
-      caption: 
+      caption: The app shows a list of all signing keys. Bob taps the "replace" button.
     - file: key-replacement/replace-keys-dialog
       alt: 
-      caption: 
+      caption: A dialog pops up that explains how the process will work and what needs to be done. 
     - file: key-replacement/replace-keys-select-keys
       alt: 
-      caption: 
+      caption: Bob selects the key that needs to be replaced.
     - file: key-replacement/replace-keys-wallet-configuration
       alt: 
-      caption: 
+      caption: The app asks, whether Bob also wants to change the wallet configuration in addition to replacing the key.
     - file: key-replacement/replace-keys-wallet-name
       alt: 
-      caption: 
+      caption: Because a new wallet will be created, the app lets Bob change the name of the wallet.
     - file: key-replacement/replace-keys-missing-key
       alt: 
-      caption: 
+      caption: Bob starts adding David's new key.
     - file: key-replacement/replace-keys-key-name
       alt: 
-      caption: 
+      caption: David uses his new key with a Jade signing device. 
     - file: key-replacement/replace-keys-xpub-import-options
       alt: 
-      caption: 
+      caption: Bob chooses to scan the key via a QR code.
     - file: key-replacement/replace-keys-xpub-import
       alt: 
-      caption: 
+      caption: Bob scans the the extended public key that is displayed on the Jade.
     - file: key-replacement/replace-keys-xpub-details
       alt: 
-      caption: 
+      caption: Bob makes sure that the key information matches with what is displayed on the Jade.
     - file: key-replacement/replace-keys-key-added
       alt: 
-      caption: 
+      caption: The new key is now part of the inheritance key set.
     - file: key-replacement/replace-keys-review-config
       alt: 
-      caption: 
+      caption: The wallet review screen indicates that there is a new signing key.
     - file: key-replacement/replace-keys-review-keys
       alt: 
-      caption: 
+      caption: In the "signing keys" tab, the new key is clearly indicated.
     - file: key-replacement/replace-keys-success
       alt: 
-      caption: 
+      caption: The wallet has been created. 
 images_fund-transfer-bob:
     - file: fund-transfer/app-home-move-funds
       alt: 
-      caption:
+      caption: After the "Inheritance" wallet has been backed up, the app shows a new task on the "Family savings" wallet to move the funds. 
     - file: fund-transfer/move-funds-dialog
       alt: 
-      caption: 
+      caption: A short dialog pops up that explain why it is necessary to move the funds.
     - file: fund-transfer/move-funds-recipient
       alt: 
-      caption: 
+      caption: The app prefills the recipient address. It also indicates the destination wallet's name so Bob can be confident that the destination is right.
     - file: fund-transfer/move-funds-amount
       alt: 
-      caption: 
+      caption: Since all funds need to be moved, the app also prefills the amount to be sent to be the full amount.
     - file: fund-transfer/move-funds-fees
       alt: 
-      caption: 
+      caption: Bob selects the transaction speed. 
     - file: fund-transfer/move-funds-review
       alt: 
-      caption: 
+      caption: Bob creates the transaction. He could also edit the details without having to go through the entire flow again.
     - file: fund-transfer/move-funds-transaction-created
       alt: 
-      caption: 
+      caption: The success dialog lets Bob know that the transaction needs to be signed before it is final.
     - file: fund-transfer/move-funds-sign-0-signatures
       alt: 
-      caption: 
+      caption: On the transaction detail screen, Bob continues to sign the transaction with his Trezor.
     - file: fund-transfer/move-funds-sign-bob-flow
       alt: 
-      caption: 
+      caption: The app takes him through the signing flow. 
     - file: fund-transfer/move-funds-sign-bob-done
       alt: 
-      caption: 
+      caption: The transaction details screen shows that the first signature has been provided.
 images_alice-sign-transfer:
     - file: fund-transfer/move-funds-sign-alice-home
       alt: 
-      caption:
+      caption: Alice's app shows that a transaction is ready to be signed.
     - file: fund-transfer/move-funds-sign-alice-initial
       alt: 
-      caption: 
+      caption: Alice goes on to use her Bitbox to provide the second signature.
     - file: fund-transfer/move-funds-sign-alice-flow
       alt: 
-      caption: 
+      caption: The app takes her through the signing flow.
     - file: fund-transfer/move-funds-success
       alt: 
-      caption: 
+      caption: With Alice's signature the required threshold has been reached and the transaction is finalized.
     - file: fund-transfer/move-funds-transaction-pending
       alt: 
-      caption:
+      caption: Back on the home screen, the transaction is shown until it is confirmed by the network.
 images_archive-wallet:
     - file: archive-wallet/archive-home
       alt: 
-      caption:
+      caption: The home screen shows a task to archive the now empty wallet.
     - file: archive-wallet/archive-dialog
       alt: 
-      caption:
+      caption: It is important to explain what archiving means and that users should always keep their backups of the old wallet as well as of their keys.
     - file: archive-wallet/archive-success
       alt: 
-      caption:
+      caption: The success dialog explains where archived wallets can be accessed.
     - file: archive-wallet/archive-done
       alt: 
-      caption:
+      caption: The home screen now only shows the actively used wallet.
 images_config-changes:
     - file: config-changes/app-home-initial
       alt: 
-      caption: 
+      caption: Bob navigates from the home screen to the wallet overview screen.
     - file: config-changes/wallet-overview
       alt: 
-      caption:
+      caption: He taps on the settings icon in the top right corner of the screen.
     - file: config-changes/wallet-settings
       alt: 
-      caption:
+      caption: From the wallet settings he goes to the wallet configuration screen.
     - file: config-changes/wallet-settings-config
       alt: 
-      caption:
+      caption: The app shows an option to edit the wallet configuration.
     - file: config-changes/change-config-dialog
       alt: 
-      caption:
+      caption: The dialog clearly outlines how the process works and what comes after making the changes.
     - file: config-changes/change-config-wallet-type
       alt: 
-      caption:
+      caption: The app prefills the selection from the current configuration.
     - file: config-changes/change-config-recovery-path
       alt: 
-      caption:
+      caption: Bob wants to edit the timelock for the recovery path.
     - file: config-changes/change-config-recovery-path-initial
       alt: 
-      caption:
+      caption: The current configuration is preselected.
     - file: config-changes/change-config-recovery-path-changed
       alt: 
-      caption:
+      caption: Bob changes the timelock to 12 months and saves the changes.
     - file: config-changes/change-config-recovery-path-done
       alt: 
-      caption:
+      caption: The timelock is updated on the recovery path overview screen.
     - file: config-changes/creation-inheritance-done
       alt: 
-      caption:
+      caption: Bob changes the timelock for the inheritance key set from 6 to 12 months.
     - file: config-changes/change-config-recovery-review
       alt: 
-      caption:
+      caption: The review screen clearly indicates the changes that Bob has made.
     - file: config-changes/change-config-success
       alt: 
-      caption:
+      caption: The new wallet has been created and added to the home screen.
 ---
 <!--
 
@@ -259,7 +259,9 @@ After she has signed the transaction, she sees that the transaction is being con
 
 ### Archiving the old wallet
 
-Archiving unused wallets will remove complexity and help users focus on the wallet they actively use. Archiving a wallet will not delete it from the app. It will only be removed from the home screen and from the wallets tab. The app will still watch the blockchain for incoming transactions. If there are any, the app shows them on the home screen and in the wallets tab. Users can then transfer the funds to a wallet that they actively use. This is why it is important to keep the backup kit and at least one of the primary keys of every wallet.   
+Archiving unused wallets removes complexity and helps users to focus on the wallets they actively use. Archiving a wallet does not delete it from the app. It is only removed from the home screen and from the wallets tab. 
+
+The app will still watch the blockchain for incoming transactions. If there are any, they are shown on the home screen and in the wallets tab. Users can then transfer the funds to a wallet that they actively use. This is why it is important to keep the backup kit and at least one of the primary keys of every wallet.   
 
 {% include image-gallery.html pages = page.images_archive-wallet %}
 
