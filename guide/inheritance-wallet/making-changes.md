@@ -274,7 +274,7 @@ After creating the new wallet, the process would be exactly the same as for the 
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/inheritance-wallet/wallet-backup/"
+   previousUrl = "/guide/inheritance-wallet/backup/"
    previousName = "Wallet backup"
    nextUrl = "/guide/upgradeable-wallet/"
    nextName = "Upgradeable wallet"

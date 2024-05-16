@@ -57,16 +57,6 @@ All of this is done without compromising your financial privacy. You don't want 
 
 <div class="center" markdown="1">
 
-{% include image.html
-   image = "assets/images/guide/inheritance-wallet/icon-introduction.png"
-   retina = "assets/images/guide/inheritance-wallet/icon-introduction@2x.png"
-   alt-text = ""
-   width = 80
-   height = 80
-   layout = "float-left"
-   link-url = "/guide/inheritance-wallet/introduction/"
-%}
-
 Before we dive into the details, we will introduce you to the Jones family. We are also going to look at how they plan set up their family savings in general. 
 
 </div>
@@ -77,19 +67,17 @@ Before we dive into the details, we will introduce you to the Jones family. We a
 
 <div class="center" markdown="1">
 
-{% include image.html
-   image = "assets/images/guide/inheritance-wallet/icon-wallet-creation.png"
-   retina = "assets/images/guide/inheritance-wallet/icon-wallet-creation@2x.png"
-   alt-text = ""
-   width = 80
-   height = 80
-   layout = "float-left"
-   link-url = "/guide/inheritance-wallet/wallet-creation/"
-%}
-
 Our application lets users create flexible multi-key wallets with timelocked recovery paths to help them recover funds while they are still alive. On top of that, users can create and manage dedicated inheritance keys that are held by their heirs.
 
 </div>
+
+---
+
+### [Onboarding cosigners]({{ '/guide/inheritance-wallet/onboarding-cosigners/' | relative_url }})
+
+<div class="center" markdown="1">
+
+After a multi-key wallet has been created, the cosigners need to be onboarded so that they can sign transactions. Our app let's them import the wallet to their phone and then enable their hardware signing device.
 
 ---
 
@@ -97,15 +85,6 @@ Our application lets users create flexible multi-key wallets with timelocked rec
 
 <div class="center" markdown="1">
 
-{% include image.html
-   image = "assets/images/guide/inheritance-wallet/icon-wallet-backup.png"
-   retina = "assets/images/guide/inheritance-wallet/icon-backup@2x.png"
-   alt-text = ""
-   width = 80
-   height = 80
-   layout = "float-left"
-   link-url = "/guide/inheritance-wallet/backup/"
-%}
 
 When backing up multi-key wallets there are more moving parts to consider than with single-key wallets. Our application helps users with that. 
 
@@ -113,21 +92,11 @@ When backing up multi-key wallets there are more moving parts to consider than w
 
 --- 
 
-### Operational phase (coming soon)
+### [Making changes]({{ '/guide/inheritance-wallet/making-changes/' | relative_url }})
 
 <div class="center" markdown="1">
 
-{% include image.html
-   image = "assets/images/guide/inheritance-wallet/icon-operations.png"
-   retina = "assets/images/guide/inheritance-wallet/icon-operations@2x.png"
-   alt-text = ""
-   width = 80
-   height = 80
-   layout = "float-left"
-   link-url = "/guide/inheritance-wallet/regular-use/"
-%}
-
-Over time it might become necessary for users to make changes to their savings wallet because someone lost a key or they want to make changes to the overall wallet configuration. Our app helps users to make such changes and update the backup and inheritance documentation. It also helps with regular key checks.
+Over time it might become necessary for users to make changes to their savings wallet because someone lost a key or they want to make changes to the overall wallet configuration. Our app helps users to make such changes and update the backup as well as the inheritance documentation.
 
 </div>
 
@@ -136,16 +105,6 @@ Over time it might become necessary for users to make changes to their savings w
 ### Recovery & inheritance (coming soon)
 
 <div class="center" markdown="1">
-
-{% include image.html
-   image = "assets/images/guide/inheritance-wallet/icon-recovery.png"
-   retina = "assets/images/guide/inheritance-wallet/icon-recovery@2x.png"
-   alt-text = ""
-   width = 80
-   height = 80
-   layout = "float-left"
-   link-url = "/guide/inheritance-wallet/wallet-recovery/"
-%}
 
 When it's time for the heirs to claim their inheritance, the Jones' children can use their own signing devices to recover their funds.
 
