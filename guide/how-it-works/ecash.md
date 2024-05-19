@@ -70,16 +70,6 @@ Recipients of eCash can store these tokens in their ecash wallets. The tokens ca
 Redeeming ecash:
 When users want to convert their ecash tokens back into Bitcoin, they can redeem the tokens at the mint. The mint verifies the tokens and transfers the equivalent amount of Bitcoin to the user.
 
-{% include picture.html
-   image = "/assets/images/guide/how-it-works/liquidity/liquidity-inbound-outbound.png"
-   retina = "/assets/images/guide/how-it-works/liquidity/liquidity-inbound-outbound@2x.png"
-   mobile = "/assets/images/guide/how-it-works/liquidity/liquidity-inbound-outbound-mobile.png"
-   mobileRetina = "/assets/images/guide/how-it-works/liquidity/liquidity-inbound-outbound-mobile@2x.png"
-   alt-text = "Graphic depicting inbound liquidity flowing towards a lightning node and outbound liquidity flowing away from a lightning node"
-   width = 800
-   height = 348
-%}
-
 {% include tip/open.html color="blue" icon="info" label="Ecash tip" %}
 
 Insert important key insight about ecash here.
@@ -89,6 +79,12 @@ Insert important key insight about ecash here.
 ## Advantages of ecash for Bitcoin
 
 Ecash on Bitcoin offers several significant advantages:
+
+{% include tip/open.html color="blue" icon="info" label="Ecash tip" %}
+
+Include an illustration to help make it easier for a user to follow along.
+
+{% include tip/close.html %}
 
 Enhanced Privacy: ecashh uses blinded signatures, ensuring that transaction details, including user identities and amounts, remain hidden. This level of privacy is superior to traditional Bitcoin transactions.
 
@@ -167,6 +163,12 @@ Explain at a high level what Cashu is and how it works.
 ## How Cashu Works
 Cashu is a Chaumian ecash protocol on the Lightning Network. Here's a detailed breakdown of how Cashu operates:
 
+{% include tip/open.html color="blue" icon="info" label="Ecash tip" %}
+
+Include an illustration to help make it easier for a user to follow along.
+
+{% include tip/close.html %}
+
 Mint Creation:
 Cashu uses a centralized mint, which acts as the entity responsible for issuing ecash tokens. This mint can be run by an organization or an individual.
 
@@ -186,6 +188,12 @@ When users want to convert their ecash tokens back into Bitcoin, they can redeem
 Fedimint is another Chaumian ecash protocol uses both on-chain Bitcoin transactions and the Lightning Network.Unlike Cashu, Fedimint uses a federated model where multiple independent entities, known as “Guardians,” collectively operate the mint. 
 
 ## How Fedimint Works
+
+{% include tip/open.html color="blue" icon="info" label="Ecash tip" %}
+
+Include an illustration to help make it easier for a user to follow along.
+
+{% include tip/close.html %}
 
 Mint Creation:
 Cashu uses a centralized mint, which acts as the entity responsible for issuing ecash tokens. This mint can be run by an organization or an individual.
