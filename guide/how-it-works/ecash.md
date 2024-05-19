@@ -40,10 +40,6 @@ Figma file for channel reserve UI's: https://www.figma.com/file/6iJpftEbajA3y1yl
 </div>
 
 ---
-ecash was invented in 1982 as a digital equivalent of cash. The system enables users to obtain a digital note from a mint (issuer) and store it on their device, like holding a physical banknote. To transfer funds, users can simply send this digital note from their device via email, text message, or QR code. Once a mint issues an ecash note, it cannot be retracted, and the mint remains unaware of the user's transactions. With the rise of Bitcoin, there has been renewed interest in the principles behind ecash, especially its focus on privacy and security. ecash improves upon custodial Bitcoin solutions by enhancing privacy, allowing for instant and nearly cost-free transactions, and enabling offline payments.
-
-This section provides an overview of two primary ecash protocol implementations: Fedimint and Cashu. It details ecash-specific functionality, compares approaches, and offers advice and best practices.
-
 ## What is ecash?
 
 Ecash is a digital payment system that uses cryptographic techniques to ensure secure and private transactions. Developed by David Chaum in 1933, it operates through a mint that issues digital tokens in exchange for deposited funds. These tokens can be spent and received without revealing user identities or transaction details, thanks to blinded signatures. Users can redeem their tokens for the original funds at any time. Since no accounts or personal information are needed; the mint cannot see your balance, tokens, or transaction details, offering a highly private and efficient method for digital payments.
