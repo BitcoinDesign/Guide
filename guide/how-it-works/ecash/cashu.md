@@ -5,9 +5,9 @@ description: Learn the basics of multi-signature bitcoin wallets.
 nav_order: 5
 parent: Private key management
 grand_parent: How it works
-permalink: /guide/how-it-works/private-key-management/multi-key/
+permalink: /guide/how-it-works/ecash/cashu/
 redirect_from:
- - /guide/private-key-management/multi-key/
+ - /guide/ecash/cashu
 image: https://bitcoin.design/assets/images/guide/how-it-works/private-key-management/multi-key/multi-key-preview.png
 main_classes: -no-top-padding
 ---
