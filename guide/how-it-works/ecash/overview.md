@@ -4,6 +4,7 @@ title: overview
 description: A primer on ecash on bitcoin
 nav_order: 3
 parent: ecash
+grand_parent: How it works
 permalink: /guide/how-it-works/ecash/
 main_classes: -no-top-padding -ecash-page
 image: https://bitcoin.design/assets/images/guide/how-it-works/ecash/ecash.jpg
@@ -152,33 +153,6 @@ The Problems With Custodial Lightning
 </div>
 
 As you can see Ecash helps improve on Custodial Lightning.
-
-# Cashu
-Explain at a high level what Cashu is and how it works.
-
-## How Cashu Works
-Cashu is a Chaumian ecash protocol on the Lightning Network. Here's a detailed breakdown of how Cashu operates:
-
-{% include tip/open.html color="blue" icon="info" label="Ecash tip" %}
-
-Include an illustration to help make it easier for a user to follow along.
-
-{% include tip/close.html %}
-
-Mint Creation:
-Cashu uses a centralized mint, which acts as the entity responsible for issuing ecash tokens. This mint can be run by an organization or an individual.
-
-Depositing Bitcoin:
-Users deposit Bitcoin into the Cashu mint. In exchange, the mint issues ecash tokens equivalent to the deposited Bitcoin amount. These tokens are backed by the Bitcoin held in the mint.
-
-Blinded Signatures:
-To ensure privacy, the mint uses a cryptographic technique called blinded signatures. This method allows the mint to sign ecash tokens without being able to link them to specific users or transactions, maintaining user anonymity.
-
-Spending:
-Users can spend their ecash tokens for transactions within the Cashu network. These transactions are processed quickly and privately, using  the Lightning Network.
-
-Redeeming:
-When users want to convert their ecash tokens back into Bitcoin, they can redeem them at the Cashu mint. The mint verifies the tokens and releases the corresponding amount of Bitcoin to the user.
 
 # Fedimint
 Fedimint is another Chaumian ecash protocol uses both on-chain Bitcoin transactions and the Lightning Network.Unlike Cashu, Fedimint uses a federated model where multiple independent entities, known as “Guardians,” collectively operate the mint. 
