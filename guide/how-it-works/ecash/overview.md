@@ -3,7 +3,7 @@ layout: guide
 title: overview
 description: A primer on ecash on bitcoin
 nav_order: 3
-parent: How it works
+parent: ecash
 permalink: /guide/how-it-works/ecash/
 main_classes: -no-top-padding -ecash-page
 image: https://bitcoin.design/assets/images/guide/how-it-works/ecash/ecash.jpg

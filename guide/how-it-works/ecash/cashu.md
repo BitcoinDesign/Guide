@@ -3,7 +3,7 @@ layout: guide
 title: Cashu
 description: Learn the basics of multi-signature bitcoin wallets.
 nav_order: 5
-parent: Private key management
+parent: ecash
 grand_parent: How it works
 permalink: /guide/how-it-works/ecash/cashu/
 redirect_from:
