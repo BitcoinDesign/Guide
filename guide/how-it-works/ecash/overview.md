@@ -1,20 +1,20 @@
 ---
 layout: guide
-title: ecash
+title: overview
 description: A primer on ecash on bitcoin
 nav_order: 3
 parent: How it works
 permalink: /guide/how-it-works/ecash/
 main_classes: -no-top-padding -ecash-page
-image: https://bitcoin.design/assets/images/guide/how-it-works/liquidity/liquidity-preview.jpg
+image: https://bitcoin.design/assets/images/guide/how-it-works/ecash/ecash.jpg
 ---
 
 {% include picture.html
-   image = "/assets/images/guide/how-it-works/liquidity/liquidity-title.jpg"
-   retina = "/assets/images/guide/how-it-works/liquidity/liquidity-title@2x.jpg"
-   mobile = "/assets/images/guide/how-it-works/liquidity/liquidity-title-mobile.jpg"
-   mobileRetina = "/assets/images/guide/how-it-works/liquidity/liquidity-title-mobile@2x.jpg"
-   alt-text = "Photo of an ocean with the word 'Liquidity'"
+   image = "/assets/images/guide/how-it-works/ecash/ecash.jpg"
+   retina = "/assets/images/guide/how-it-works/ecash/ecash@2x.jpg"
+   mobile = "/assets/images/guide/how-it-works/ecash/ecash-mobile.jpg"
+   mobileRetina = "/assets/images/guide/how-it-works/ecash/ecash-mobile@2x.jpg"
+   alt-text = "ecash overview illustration"
    width = 1600
    height = 700
    layout = "full-width"
