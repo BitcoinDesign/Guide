@@ -52,29 +52,60 @@ Ecash is a digital payment system that uses cryptographic techniques to ensure s
 Ecash on Bitcoin works by integrating the principles of Chaumian ecash with the Bitcoin network, utilizing the Lightning Network for efficient transactions.
 
 #### Mitning ecash
-The process of crearting ecash on bitcoin is known as minting. Here is how ecash on bitcoin is created.
+The process of crearting ecash on bitcoin is known as minting. This process typically includes the following steps:
 
-* **Mint Creation** - A mint is established by an individual or organization. This mint is responsible for issuing eCash tokens, which represent Bitcoin.
+**1. User Deposits Funds** - The user deposits Bitcoin or sats into a mint. In Cashu, this is done by sending Bitcoin to the mint’s address. In Fedimint, the process is similar but involves federated entities.
 
-* **Depositing Bitcoin** - Users deposit Bitcoin into the mint. In return, the mint issues eCash tokens that are equivalent to the deposited Bitcoin amount.
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/ecash/ecash.jpg"
+   retina = "/assets/images/guide/how-it-works/ecash/ecash@2x.jpg"
+   mobile = "/assets/images/guide/how-it-works/ecash/ecash-mobile.jpg"
+   mobileRetina = "/assets/images/guide/how-it-works/ecash/ecash-mobile@2x.jpg"
+   alt-text = "Mint creation"
+   width = 800
+   height = 456
+%}
 
-* **Blinded Signatures** - To enhance privacy, the mint uses blinded signatures. This cryptographic technique ensures that the mint cannot trace the tokens it issues back to the individual users.
+**2. Blinded Token Creation** - The mint generates blinded tokens, which are cryptographic representations of the deposited funds. The blinding process ensures that the mint cannot link the tokens to the user, preserving privacy.
+
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/ecash/ecash.jpg"
+   retina = "/assets/images/guide/how-it-works/ecash/ecash@2x.jpg"
+   mobile = "/assets/images/guide/how-it-works/ecash/ecash-mobile.jpg"
+   mobileRetina = "/assets/images/guide/how-it-works/ecash/ecash-mobile@2x.jpg"
+   alt-text = "Mint creation"
+   width = 800
+   height = 456
+%}
+
+**3. Issue Tokens** - The mint signs the blinded tokens and returns them to the user. The user then unblinds these tokens, which can now be used as ecash. The process ensures that the mint can verify the validity of tokens without knowing their origins, maintaining user anonymity.
+
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/ecash/ecash.jpg"
+   retina = "/assets/images/guide/how-it-works/ecash/ecash@2x.jpg"
+   mobile = "/assets/images/guide/how-it-works/ecash/ecash-mobile.jpg"
+   mobileRetina = "/assets/images/guide/how-it-works/ecash/ecash-mobile@2x.jpg"
+   alt-text = "Mint creation"
+   width = 800
+   height = 456
+%}
 
 #### Spending ecash
+Spending ecash involves transferring digital tokens from one user to another. The process generally follows these steps:
 
-* **Spending ecash** - Users can spend their ecash tokens with merchants or other users. They can also send transactions over the Lightning Network.
+**1. Spending ecash** - Users can spend their ecash tokens with merchants or other users. They can also send transactions over the Lightning Network.
 
-* **Receiving ecash** - Recipients of eCash can store these tokens in their ecash wallets. The tokens can be used for further transactions or eventually redeemed for Bitcoin.
+**2. Receiving ecash** - Recipients of eCash can store these tokens in their ecash wallets. The tokens can be used for further transactions or eventually redeemed for Bitcoin.
 
-* **Redeeming ecash** - When users want to convert their ecash tokens back into Bitcoin, they can redeem the tokens at the mint. The mint verifies the tokens and transfers the equivalent amount of Bitcoin to the user.
+**3. Redeeming ecash** - When users want to convert their ecash tokens back into Bitcoin, they can redeem the tokens at the mint. The mint verifies the tokens and transfers the equivalent amount of Bitcoin to the user.
 
 ### Receiving ecash
 
-{% include tip/open.html color="blue" icon="info" label="Ecash tip" %}
+**1. Step 1**
 
-Insert important key insight about ecash here.
+**1. Step 2**
 
-{% include tip/close.html %}
+**1. Step 3**
 
 ## Advantages of ecash for Bitcoin
 

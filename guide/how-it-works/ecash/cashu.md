@@ -58,6 +58,40 @@ Include an illustration to help make it easier for a user to follow along.
 
 * **Redeeming** - When users want to convert their ecash tokens back into Bitcoin, they can redeem them at the Cashu mint. The mint verifies the tokens and releases the corresponding amount of Bitcoin to the user.
 
+## Backup and Restore for Cashu
+In Cashu, the backup and restoration process is designed to ensure users can securely recover their wallets and maintain access to their ecash tokens, even if they switch devices or experience data loss.
+
+{% include tip/open.html color="blue" icon="info" label="Single Use Recovery" %}
+
+Only use your recovery seed phrase once. Repeated use of the seed phrase for restoration can lead to synchronization issues and potential errors. This is because each time you restore, you might be dealing with an outdated state of your wallet, which can cause discrepancies in token balances and transactions.
+
+{% include tip/close.html %}
+
+
+### Backup Process
+1. Deterministic Wallet with Seed Phrase: Cashu employs a deterministic wallet model, where all cryptographic keys and tokens can be derived from a single seed phrase. This seed phrase is generated when the wallet is first created.
+
+2. Secure Storage: Users are advised to store their seed phrase securely. It is crucial to keep this seed phrase in a safe, physical format (such as written on paper) and stored in a secure location to prevent unauthorized access or loss.
+
+{% include tip/open.html color="blue" icon="info" label="Mint Information Needed" %}
+
+Keep a record of the mints you are connected to. During the restoration process, you will need to reconnect to these specific mints to re-verify your tokens. Without this information, you might not be able to fully restore your wallet or verify your tokens.
+
+{% include tip/close.html %}
+
+## Restoration Process
+1. Seed Phrase Entry: When restoring a wallet, users enter their seed phrase into the Cashu wallet application. This seed phrase regenerates all cryptographic keys associated with the user's account.
+
+2. Automatic Recovery: After restoration, ensure your wallet is connected to the same mint(s) you were using before. This is crucial as the mint holds the records necessary to validate your tokens.
+
+3. Verification: The mint(s) checks these proofs against its records to confirm that the tokens have not been previously spent and are still valid. This process relies on the cryptographic signatures (proofs) that were initially generated when the tokens were minted.
+
+{% include tip/open.html color="blue" icon="info" label="Privacy Considerations During Verification" %}
+
+Verifying tokens after restoration might temporarily compromise their privacy. The mint needs to revalidate the tokens, which can potentially expose the transaction istory associated with those tokens. Be mindful of this aspect if privacy is a significant concern for your use case.
+
+{% include tip/close.html %}
+
 ## When to Use Cashu
 
 * **Rapid Deployment and Simple Integration** - Great for projects that need to be launched quickly with minimal setup. This includes MVPs, prototypes, and community-based applications where speed and ease of deployment are crucial.
