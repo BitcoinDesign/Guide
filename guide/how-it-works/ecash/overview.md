@@ -51,23 +51,17 @@ Ecash is a digital payment system that uses cryptographic techniques to ensure s
 
 Ecash on Bitcoin works by integrating the principles of Chaumian ecash with the Bitcoin network, utilizing the Lightning Network for efficient transactions.
 
-Mint Creation:
-A mint is established by an individual or organization. This mint is responsible for issuing eCash tokens, which represent Bitcoin.
+* **Mint Creation** - A mint is established by an individual or organization. This mint is responsible for issuing eCash tokens, which represent Bitcoin.
 
-Depositing Bitcoin:
-Users deposit Bitcoin into the mint. In return, the mint issues eCash tokens that are equivalent to the deposited Bitcoin amount.
+* **Depositing Bitcoin** - Users deposit Bitcoin into the mint. In return, the mint issues eCash tokens that are equivalent to the deposited Bitcoin amount.
 
-Blinded Signatures:
-To enhance privacy, the mint uses blinded signatures. This cryptographic technique ensures that the mint cannot trace the tokens it issues back to the individual users.
+* **Blinded Signatures** - To enhance privacy, the mint uses blinded signatures. This cryptographic technique ensures that the mint cannot trace the tokens it issues back to the individual users.
 
-Spending ecash:
-Users can spend their ecash tokens with merchants or other users. They can also send transactions over the Lightning Network.
+* **Spending ecash** - Users can spend their ecash tokens with merchants or other users. They can also send transactions over the Lightning Network.
 
-Receiving ecash:
-Recipients of eCash can store these tokens in their ecash wallets. The tokens can be used for further transactions or eventually redeemed for Bitcoin.
+* **Receiving ecash** - Recipients of eCash can store these tokens in their ecash wallets. The tokens can be used for further transactions or eventually redeemed for Bitcoin.
 
-Redeeming ecash:
-When users want to convert their ecash tokens back into Bitcoin, they can redeem the tokens at the mint. The mint verifies the tokens and transfers the equivalent amount of Bitcoin to the user.
+* **Redeeming ecash** - When users want to convert their ecash tokens back into Bitcoin, they can redeem the tokens at the mint. The mint verifies the tokens and transfers the equivalent amount of Bitcoin to the user.
 
 {% include tip/open.html color="blue" icon="info" label="Ecash tip" %}
 
@@ -85,17 +79,17 @@ Include an illustration to help make it easier for a user to follow along.
 
 {% include tip/close.html %}
 
-Enhanced Privacy: ecashh uses blinded signatures, ensuring that transaction details, including user identities and amounts, remain hidden. This level of privacy is superior to traditional Bitcoin transactions.
+* **Enhanced Privacy** - ecash uses blinded signatures, ensuring that transaction details, including user identities and amounts, remain hidden. This level of privacy is superior to traditional Bitcoin transactions.
 
-Speed: Since transactions are processed by a centralized mint ecash transactions are fast and efficient, which helps in handling a large volume of transactions without the limitations that exist on bitcoin on-chain or the Lightning Network.
+* **Speed** -Since transactions are processed by a centralized mint ecash transactions are fast and efficient, which helps in handling a large volume of transactions without the limitations that exist on bitcoin on-chain or the Lightning Network.
 
-Low Costs: The processing of ecash transactions is inexpensive, making it a cost-effective solution for both small and large payments.
+* **Low Costs** - The processing of ecash transactions is inexpensive, making it a cost-effective solution for both small and large payments.
 
-Ease of Use: Users do not need to manage complex aspects of the Bitcoin, such as channels or liquidity, simplifying the user experience.
+* **Ease of Use** - Users do not need to manage complex aspects of the Bitcoin, such as channels or liquidity, simplifying the user experience.
 
-Flexible Mint Options: Multiple independent mints can operate, allowing users to choose mints based on their reputation, fees, and other preferences. This decentralization reduces reliance on a single entity.
+* **Flexible Mint Options** - Multiple independent mints can operate, allowing users to choose mints based on their reputation, fees, and other preferences. This decentralization reduces reliance on a single entity.
 
-Reduced Trust Assumptions: While users deposit funds with a mint, the design minimizes the level of trust required compared to traditional custodial wallets. The mint does not have access to user transaction data or balances.
+**Reduced Trust Assumptions** - While users deposit funds with a mint, the design minimizes the level of trust required compared to traditional custodial wallets. The mint does not have access to user transaction data or balances.
 
 ## Ecash compared to custodial lightning
 
@@ -155,46 +149,3 @@ The Problems With Custodial Lightning
 </div>
 
 As you can see Ecash helps improve on Custodial Lightning.
-
-# Fedimint
-Fedimint is another Chaumian ecash protocol uses both on-chain Bitcoin transactions and the Lightning Network.Unlike Cashu, Fedimint uses a federated model where multiple independent entities, known as “Guardians,” collectively operate the mint. 
-
-## How Fedimint Works
-
-{% include tip/open.html color="blue" icon="info" label="Ecash tip" %}
-
-Include an illustration to help make it easier for a user to follow along.
-
-{% include tip/close.html %}
-
-Mint Creation:
-Cashu uses a centralized mint, which acts as the entity responsible for issuing ecash tokens. This mint can be run by an organization or an individual.
-
-Depositing Bitcoin:
-Users deposit Bitcoin into the Cashu mint. In exchange, the mint issues ecash tokens equivalent to the deposited Bitcoin amount. These tokens are backed by the Bitcoin held in the mint.
-
-Blinded Signatures:
-To ensure privacy, the mint uses a cryptographic technique called blinded signatures. This method allows the mint to sign ecash tokens without being able to link them to specific users or transactions, maintaining user anonymity.
-
-Spending:
-Users can spend their ecash tokens for transactions within the Cashu network. These transactions are processed quickly and privately, using  the Lightning Network.
-
-Redeeming:
-When users want to convert their ecash tokens back into Bitcoin, they can redeem them at the Cashu mint. The mint verifies the tokens and releases the corresponding amount of Bitcoin to the user.
-
-### Unique Features of Fedimint
-
-Federated Mint:
-Fedimint’s decentralized model involves multiple Guardians managing the mint collectively. This distribution of control enhances security and reduces the risk of a single point of failure.
-
-Byzantine Fault Tolerant Consensus:
-The consensus protocol used by Fedimint ensures that the system remains robust and resilient, even in the presence of faulty or malicious Guardians.
-
-Dual Integration (On-Chain and Lightning):
-Unlike Cashu, Fedimint supports both on-chain Bitcoin transactions and Lightning Network payments, providing flexibility and scalability.
-
-{% include tip/open.html color="blue" icon="info" label="Further reading" %}
-
-Includ resources to learn more about Fedimint.
-
-{% include tip/close.html %}

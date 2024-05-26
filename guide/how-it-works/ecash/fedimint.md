@@ -1,13 +1,13 @@
 ---
 layout: guide
-title: Cashu
-description: Learn the basics of multi-signature bitcoin wallets.
+title: Fedimint
+description: Learn the basics of fedimint.
 nav_order: 5
 parent: ecash
 grand_parent: How it works
-permalink: /guide/how-it-works/ecash/cashu/
+permalink: /guide/how-it-works/ecash/fedimint/
 redirect_from:
- - /guide/ecash/cashu
+ - /guide/ecash/fedimint
 image: https://bitcoin.design/assets/images/guide/how-it-works/ecash/ecash.jpg
 main_classes: -no-top-padding
 ---
@@ -36,11 +36,10 @@ https://www.figma.com/community/file/995256542920917246/BDG---Private-key-manage
    layout = "full-width"
 %}
 
-# Cashu
-Explain at a high level what Cashu is and how it works.
+# Fedimint
+Fedimint is another Chaumian ecash protocol uses both on-chain Bitcoin transactions and the Lightning Network.Unlike Cashu, Fedimint uses a federated model where multiple independent entities, known as “Guardians,” collectively operate the mint. 
 
-## How Cashu Works
-Cashu is a Chaumian ecash protocol on the Lightning Network. Here's a detailed breakdown of how Cashu operates:
+## How Fedimint Works
 
 {% include tip/open.html color="blue" icon="info" label="Ecash tip" %}
 
@@ -48,20 +47,29 @@ Include an illustration to help make it easier for a user to follow along.
 
 {% include tip/close.html %}
 
-Mint Creation:
-Cashu uses a centralized mint, which acts as the entity responsible for issuing ecash tokens. This mint can be run by an organization or an individual.
+* **Mint creation** - Cashu uses a centralized mint, which acts as the entity responsible for issuing ecash tokens. This mint can be run by an organization or an individual.
 
-Depositing Bitcoin:
-Users deposit Bitcoin into the Cashu mint. In exchange, the mint issues ecash tokens equivalent to the deposited Bitcoin amount. These tokens are backed by the Bitcoin held in the mint.
+* **Depositing Bitcoin** - Users deposit Bitcoin into the Cashu mint. In exchange, the mint issues ecash tokens equivalent to the deposited Bitcoin amount. These tokens are backed by the Bitcoin held in the mint.
 
-Blinded Signatures:
-To ensure privacy, the mint uses a cryptographic technique called blinded signatures. This method allows the mint to sign ecash tokens without being able to link them to specific users or transactions, maintaining user anonymity.
+* **Blinded Signatures** -To ensure privacy, the mint uses a cryptographic technique called blinded signatures. This method allows the mint to sign ecash tokens without being able to link them to specific users or transactions, maintaining user anonymity.
 
-Spending:
-Users can spend their ecash tokens for transactions within the Cashu network. These transactions are processed quickly and privately, using  the Lightning Network.
+* **Spending** - Users can spend their ecash tokens for transactions within the Cashu network. These transactions are processed quickly and privately, using  the Lightning Network.
 
-Redeeming:
-When users want to convert their ecash tokens back into Bitcoin, they can redeem them at the Cashu mint. The mint verifies the tokens and releases the corresponding amount of Bitcoin to the user.
+* **Redeeming** - When users want to convert their ecash tokens back into Bitcoin, they can redeem them at the Cashu mint. The mint verifies the tokens and releases the corresponding amount of Bitcoin to the user.
+
+### Unique Features of Fedimint
+
+* **Federated Mint** - Fedimint’s decentralized model involves multiple Guardians managing the mint collectively. This distribution of control enhances security and reduces the risk of a single point of failure.
+
+* **Byzantine Fault Tolerant Consensus** - The consensus protocol used by Fedimint ensures that the system remains robust and resilient, even in the presence of faulty or malicious Guardians.
+
+* **Dual Integration (On-Chain and Lightning)** -Unlike Cashu, Fedimint supports both on-chain Bitcoin transactions and Lightning Network payments, providing flexibility and scalability.
+
+{% include tip/open.html color="blue" icon="info" label="Further reading" %}
+
+Includ resources to learn more about Fedimint.
+
+{% include tip/close.html %}
 
 ### Best practices
 
@@ -85,10 +93,10 @@ When users want to convert their ecash tokens back into Bitcoin, they can redeem
 **Do's**
 - Make sure the multi-key setup itself is backed up properly, including [extended public keys]({{ '/guide/glossary/#extended-public-key-xpub-ypub-zpub' | relative_url }}) for all the participating keys, fingerprint and derivation.
 
-**Products that use this scheme**
-- [Sparrow Wallet](https://sparrowwallet.com/)
-- [Casa](https://keys.casa) co-managed 2-of-3, or 3-of-5
-- [Electrum](https://electrum.org)
+**Products that use Fedimint**
+- [Fedi](https://sparrowwallet.com/)
+- [Mutiny](https://keys.casa)
+- [Clovyr](https://electrum.org)
 - [BlueWallet](https://bluewallet.io)
 - [Nunchuk](https://nunchuk.io)
 - [Unchained Capital/Caravan](https://unchained-capital.com) co-managed
