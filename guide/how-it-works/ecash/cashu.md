@@ -60,36 +60,25 @@ Include an illustration to help make it easier for a user to follow along.
 
 ## Strategic Use of Cashu
 
-###When to use Cashu
-- **Rapid Deployment and Simplicity** - Choose Cashu when you need a quick setup and easy integration with existing systems, particularly useful for pilot projects or MVPs in digital finance.
-* **User Autonomy and Control** - Ideal for applications where users need significant control over their funds and privacy settings, such as personal finance apps.
-- When target audience is likely to own [hardware wallets]({{ '/guide/getting-started/hardware/#hardware-wallets' | relative_url }})
-- When users are likely to be very knowledgeable or be guided through setup and use
-- When most users are likely to implement good backup schemes for multiple keys
+### When to use Cashu
 
-**When not to use**
-- For small amounts
-- When users are likely to be new to bitcoin
-- When controlling a lightning node
+* **Rapid Deployment and Simple Integration** - Great for projects that need to be launched quickly with minimal setup. This includes MVPs, prototypes, and community-based applications where speed and ease of deployment are crucial.
 
-**Variations**
-- Number of total and co-signing keys
-- Key storage devices and distribution
-- Managed or completely self-managed
+* **Quick Interoperability with the Lightning Network** - Ideal when you need to integrate with the Lightning Network for fast, low-fee transactions. Its design supports seamless integration with existing Lightning wallets and infrastructure.
 
-**Do's**
-- Make sure the multi-key setup itself is backed up properly, including [extended public keys]({{ '/guide/glossary/#extended-public-key-xpub-ypub-zpub' | relative_url }}) for all the participating keys, fingerprint and derivation.
+* **Localized or Small Community Solutions** - Implement Cashu in scenarios where independent mints operated by trusted local entities can serve a community, enhancing trust and customization based on local needs.
+
+### When to Use Fedimint Instead
+
+* **Federated Trust Models** - Use Fedimint when your application benefits from spreading trust across multiple entities, reducing reliance on any single operator and enhancing security.
 
 ## Products that use Cashu
 - [Cashu.me](https://wallet.cashu.me/)
 - [eNuts](https://www.enuts.cash/)
 - [Macadamia](https://macadamia.cash/)
+- [npub.cash] (https://npub.cash/)
 - [Nutstash](https://nutstash.app/)
 - [Minibits](https://www.minibits.cash/)
-- [Unchained Capital/Caravan](https://unchained-capital.com) co-managed
-- [Specter](https://specter.solutions)
-- [Armory](https://btcarmory.com)
-- [Revault](https://revault.dev){:target="_blank"} - in development
 
 ## Cashu resources
 Cashu Documentation - Access the official Cashu documentation for detailed information on setup, usage, and integration.
