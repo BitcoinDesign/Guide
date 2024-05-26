@@ -51,17 +51,24 @@ Ecash is a digital payment system that uses cryptographic techniques to ensure s
 
 Ecash on Bitcoin works by integrating the principles of Chaumian ecash with the Bitcoin network, utilizing the Lightning Network for efficient transactions.
 
+#### Mitning ecash
+The process of crearting ecash on bitcoin is known as minting. Here is how ecash on bitcoin is created.
+
 * **Mint Creation** - A mint is established by an individual or organization. This mint is responsible for issuing eCash tokens, which represent Bitcoin.
 
 * **Depositing Bitcoin** - Users deposit Bitcoin into the mint. In return, the mint issues eCash tokens that are equivalent to the deposited Bitcoin amount.
 
 * **Blinded Signatures** - To enhance privacy, the mint uses blinded signatures. This cryptographic technique ensures that the mint cannot trace the tokens it issues back to the individual users.
 
+#### Spending ecash
+
 * **Spending ecash** - Users can spend their ecash tokens with merchants or other users. They can also send transactions over the Lightning Network.
 
 * **Receiving ecash** - Recipients of eCash can store these tokens in their ecash wallets. The tokens can be used for further transactions or eventually redeemed for Bitcoin.
 
 * **Redeeming ecash** - When users want to convert their ecash tokens back into Bitcoin, they can redeem the tokens at the mint. The mint verifies the tokens and transfers the equivalent amount of Bitcoin to the user.
+
+### Receiving ecash
 
 {% include tip/open.html color="blue" icon="info" label="Ecash tip" %}
 

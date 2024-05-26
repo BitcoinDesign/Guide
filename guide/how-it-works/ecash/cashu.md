@@ -58,9 +58,7 @@ Include an illustration to help make it easier for a user to follow along.
 
 * **Redeeming** - When users want to convert their ecash tokens back into Bitcoin, they can redeem them at the Cashu mint. The mint verifies the tokens and releases the corresponding amount of Bitcoin to the user.
 
-## Strategic Use of Cashu
-
-### When to use Cashu
+## When to Use Cashu
 
 * **Rapid Deployment and Simple Integration** - Great for projects that need to be launched quickly with minimal setup. This includes MVPs, prototypes, and community-based applications where speed and ease of deployment are crucial.
 
@@ -76,7 +74,7 @@ Include an illustration to help make it easier for a user to follow along.
 - [Cashu.me](https://wallet.cashu.me/)
 - [eNuts](https://www.enuts.cash/)
 - [Macadamia](https://macadamia.cash/)
-- [npub.cash] (https://npub.cash/)
+- [npub.cash](https://npub.cash/)
 - [Nutstash](https://nutstash.app/)
 - [Minibits](https://www.minibits.cash/)
 
@@ -87,7 +85,7 @@ Cashu Documentation - Access the official Cashu documentation for detailed infor
 
 ---
 
-Next, we do a technical deep dive into how [Fedimint]({{ '/guide/how-it-works/transactions/' | relative_url }}) works.
+Next, we do a technical deep dive into how [Fedimint]({{ '/guide/how-it-works/ecash/fedimint' | relative_url }}) works.
 
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/ecash/overview/"
