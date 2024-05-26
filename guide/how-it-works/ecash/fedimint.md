@@ -94,23 +94,16 @@ Includ resources to learn more about Fedimint.
 - Make sure the multi-key setup itself is backed up properly, including [extended public keys]({{ '/guide/glossary/#extended-public-key-xpub-ypub-zpub' | relative_url }}) for all the participating keys, fingerprint and derivation.
 
 **Products that use Fedimint**
-- [Fedi](https://sparrowwallet.com/)
-- [Mutiny](https://keys.casa)
-- [Clovyr](https://electrum.org)
-- [BlueWallet](https://bluewallet.io)
-- [Nunchuk](https://nunchuk.io)
-- [Unchained Capital/Caravan](https://unchained-capital.com) co-managed
-- [Specter](https://specter.solutions)
-- [Armory](https://btcarmory.com)
-- [Revault](https://revault.dev){:target="_blank"} - in development
-
+- [Fedi](https://https://www.fedi.xyz)
+- [Mutiny](https://www.mutinywallet.com/)
+- [Clovyr](https://clovyr.app/)
 ---
 
-Next, we do a technical deep dive into how [transactions]({{ '/guide/how-it-works/transactions/' | relative_url }}) on bitcoin work.
+Next, we do a technical deep dive into how [best practices]({{ '/guide/how-it-works/transactions/' | relative_url }}) of ecash on bitcoin.
 
 {% include next-previous.html
-   previousUrl = "/guide/how-it-works/private-key-management/external-signers/"
-   previousName = "External signers"
-   nextUrl = "/guide/how-it-works/transactions/"
-   nextName = "Transactions"
+   previousUrl = "/guide/how-it-works/ecash/cashu/"
+   previousName = "Cashu"
+   nextUrl = "/guide/how-it-works/ecash/best-practices/"
+   nextName = "Best practices"
 %}

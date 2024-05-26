@@ -48,26 +48,21 @@ Include an illustration to help make it easier for a user to follow along.
 
 {% include tip/close.html %}
 
-Mint Creation:
-Cashu uses a centralized mint, which acts as the entity responsible for issuing ecash tokens. This mint can be run by an organization or an individual.
+* **Mint Creation** Cashu uses a centralized mint, which acts as the entity responsible for issuing ecash tokens. This mint can be run by an organization or an individual.
 
-Depositing Bitcoin:
-Users deposit Bitcoin into the Cashu mint. In exchange, the mint issues ecash tokens equivalent to the deposited Bitcoin amount. These tokens are backed by the Bitcoin held in the mint.
+* **Depositing Bitcoin** - Users deposit Bitcoin into the Cashu mint. In exchange, the mint issues ecash tokens equivalent to the deposited Bitcoin amount. These tokens are backed by the Bitcoin held in the mint.
 
-Blinded Signatures:
-To ensure privacy, the mint uses a cryptographic technique called blinded signatures. This method allows the mint to sign ecash tokens without being able to link them to specific users or transactions, maintaining user anonymity.
+* **Blinded Signatures** - To ensure privacy, the mint uses a cryptographic technique called blinded signatures. This method allows the mint to sign ecash tokens without being able to link them to specific users or transactions, maintaining user anonymity.
 
-Spending:
-Users can spend their ecash tokens for transactions within the Cashu network. These transactions are processed quickly and privately, using  the Lightning Network.
+* **Spending** - Users can spend their ecash tokens for transactions within the Cashu network. These transactions are processed quickly and privately, using  the Lightning Network.
 
-Redeeming:
-When users want to convert their ecash tokens back into Bitcoin, they can redeem them at the Cashu mint. The mint verifies the tokens and releases the corresponding amount of Bitcoin to the user.
+* **Redeeming** - When users want to convert their ecash tokens back into Bitcoin, they can redeem them at the Cashu mint. The mint verifies the tokens and releases the corresponding amount of Bitcoin to the user.
 
-### Best practices
+## Strategic Use of Cashu
 
-**When to use**
-- When storing large amounts
-- When funds need to be accessed by several people or an organization
+###When to use Cashu
+- **Rapid Deployment and Simplicity** - Choose Cashu when you need a quick setup and easy integration with existing systems, particularly useful for pilot projects or MVPs in digital finance.
+* **User Autonomy and Control** - Ideal for applications where users need significant control over their funds and privacy settings, such as personal finance apps.
 - When target audience is likely to own [hardware wallets]({{ '/guide/getting-started/hardware/#hardware-wallets' | relative_url }})
 - When users are likely to be very knowledgeable or be guided through setup and use
 - When most users are likely to implement good backup schemes for multiple keys
@@ -85,24 +80,29 @@ When users want to convert their ecash tokens back into Bitcoin, they can redeem
 **Do's**
 - Make sure the multi-key setup itself is backed up properly, including [extended public keys]({{ '/guide/glossary/#extended-public-key-xpub-ypub-zpub' | relative_url }}) for all the participating keys, fingerprint and derivation.
 
-**Products that use this scheme**
-- [Sparrow Wallet](https://sparrowwallet.com/)
-- [Casa](https://keys.casa) co-managed 2-of-3, or 3-of-5
-- [Electrum](https://electrum.org)
-- [BlueWallet](https://bluewallet.io)
-- [Nunchuk](https://nunchuk.io)
+## Products that use Cashu
+- [Cashu.me](https://wallet.cashu.me/)
+- [eNuts](https://www.enuts.cash/)
+- [Macadamia](https://macadamia.cash/)
+- [Nutstash](https://nutstash.app/)
+- [Minibits](https://www.minibits.cash/)
 - [Unchained Capital/Caravan](https://unchained-capital.com) co-managed
 - [Specter](https://specter.solutions)
 - [Armory](https://btcarmory.com)
 - [Revault](https://revault.dev){:target="_blank"} - in development
 
+## Cashu resources
+Cashu Documentation - Access the official Cashu documentation for detailed information on setup, usage, and integration.
+- [Cashu Resources](https://cashu.space/)
+- [Cashu Documentation](https://docs.cashu.space/)
+
 ---
 
-Next, we do a technical deep dive into how [transactions]({{ '/guide/how-it-works/transactions/' | relative_url }}) on bitcoin work.
+Next, we do a technical deep dive into how [Fedimint]({{ '/guide/how-it-works/transactions/' | relative_url }}) works.
 
 {% include next-previous.html
-   previousUrl = "/guide/how-it-works/private-key-management/external-signers/"
-   previousName = "External signers"
-   nextUrl = "/guide/how-it-works/transactions/"
-   nextName = "Transactions"
+   previousUrl = "/guide/how-it-works/ecash/overview/"
+   previousName = "Overview"
+   nextUrl = "/guide/how-it-works/fedimint/"
+   nextName = "Fedimint"
 %}
