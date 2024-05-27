@@ -46,6 +46,7 @@ TBD
 - [Fedi](https://https://www.fedi.xyz)
 - [Mutiny](https://www.mutinywallet.com/)
 - [Clovyr](https://clovyr.app/)
+
 ---
 
 Next, we do a technical deep dive into how [best practices]({{ '/guide/how-it-works/transactions/' | relative_url }}) of ecash on bitcoin.
