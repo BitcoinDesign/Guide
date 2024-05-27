@@ -127,17 +127,11 @@ Include an illustration to help make it easier for a user to follow along.
 
 * **Flexible Mint Options** - Multiple independent mints can operate, allowing users to choose mints based on their reputation, fees, and other preferences. This decentralization reduces reliance on a single entity.
 
-**Reduced Trust Assumptions** - While users deposit funds with a mint, the design minimizes the level of trust required compared to traditional custodial wallets. The mint does not have access to user transaction data or balances.
+* **Reduced Trust Assumptions** - While users deposit funds with a mint, the design minimizes the level of trust required compared to traditional custodial wallets. The mint does not have access to user transaction data or balances.
 
 ## Ecash compared to custodial lightning
 
-{% include tip/open.html color="blue" icon="info" label="Ecash tip" %}
-
-Include a graphic that compares ecash to custodial lightning.
-
-{% include tip/close.html %}
-
-The Problems With Custodial Lightning
+The Problems With Custodial Lightning and how ecash improves custodians on bitcoin.
 
 <div class="nodes -full-width" markdown="1">
    <table>

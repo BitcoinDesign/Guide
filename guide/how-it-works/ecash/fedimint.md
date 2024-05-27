@@ -43,7 +43,7 @@ Fedimint is another Chaumian ecash protocol uses both on-chain Bitcoin transacti
 TBD
 
 **Products that use Fedimint**
-- [Fedi](https://https://www.fedi.xyz)
+- [Fedi](https://www.fedi.xyz)
 - [Mutiny](https://www.mutinywallet.com/)
 - [Clovyr](https://clovyr.app/)
 
