@@ -40,58 +40,7 @@ https://www.figma.com/community/file/995256542920917246/BDG---Private-key-manage
 Fedimint is another Chaumian ecash protocol uses both on-chain Bitcoin transactions and the Lightning Network.Unlike Cashu, Fedimint uses a federated model where multiple independent entities, known as “Guardians,” collectively operate the mint. 
 
 ## How Fedimint Works
-
-{% include tip/open.html color="blue" icon="info" label="Ecash tip" %}
-
-Include an illustration to help make it easier for a user to follow along.
-
-{% include tip/close.html %}
-
-* **Mint creation** - Cashu uses a centralized mint, which acts as the entity responsible for issuing ecash tokens. This mint can be run by an organization or an individual.
-
-* **Depositing Bitcoin** - Users deposit Bitcoin into the Cashu mint. In exchange, the mint issues ecash tokens equivalent to the deposited Bitcoin amount. These tokens are backed by the Bitcoin held in the mint.
-
-* **Blinded Signatures** -To ensure privacy, the mint uses a cryptographic technique called blinded signatures. This method allows the mint to sign ecash tokens without being able to link them to specific users or transactions, maintaining user anonymity.
-
-* **Spending** - Users can spend their ecash tokens for transactions within the Cashu network. These transactions are processed quickly and privately, using  the Lightning Network.
-
-* **Redeeming** - When users want to convert their ecash tokens back into Bitcoin, they can redeem them at the Cashu mint. The mint verifies the tokens and releases the corresponding amount of Bitcoin to the user.
-
-### Unique Features of Fedimint
-
-* **Federated Mint** - Fedimint’s decentralized model involves multiple Guardians managing the mint collectively. This distribution of control enhances security and reduces the risk of a single point of failure.
-
-* **Byzantine Fault Tolerant Consensus** - The consensus protocol used by Fedimint ensures that the system remains robust and resilient, even in the presence of faulty or malicious Guardians.
-
-* **Dual Integration (On-Chain and Lightning)** -Unlike Cashu, Fedimint supports both on-chain Bitcoin transactions and Lightning Network payments, providing flexibility and scalability.
-
-{% include tip/open.html color="blue" icon="info" label="Further reading" %}
-
-Includ resources to learn more about Fedimint.
-
-{% include tip/close.html %}
-
-### Best practices
-
-**When to use**
-- When storing large amounts
-- When funds need to be accessed by several people or an organization
-- When target audience is likely to own [hardware wallets]({{ '/guide/getting-started/hardware/#hardware-wallets' | relative_url }})
-- When users are likely to be very knowledgeable or be guided through setup and use
-- When most users are likely to implement good backup schemes for multiple keys
-
-**When not to use**
-- For small amounts
-- When users are likely to be new to bitcoin
-- When controlling a lightning node
-
-**Variations**
-- Number of total and co-signing keys
-- Key storage devices and distribution
-- Managed or completely self-managed
-
-**Do's**
-- Make sure the multi-key setup itself is backed up properly, including [extended public keys]({{ '/guide/glossary/#extended-public-key-xpub-ypub-zpub' | relative_url }}) for all the participating keys, fingerprint and derivation.
+TBD
 
 **Products that use Fedimint**
 - [Fedi](https://https://www.fedi.xyz)
