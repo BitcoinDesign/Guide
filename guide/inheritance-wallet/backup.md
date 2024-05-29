@@ -54,14 +54,14 @@ The inheritance wallet described in this reference design is a multi-key wallet 
 {% include picture.html
    image = "/assets/images/guide/inheritance-wallet/wallet-backup/multikey-backup-components.png"
    retina = "/assets/images/guide/inheritance-wallet/wallet-backup/multikey-backup-components@2x.png"
-   alt-text = "An illustration showing the two parts of a multi-key wallet backup."
+   alt-text = "A idagram showing the two parts of a multi-key wallet backup."
    width = 1600
    height = 800
 %}
 
-Users need not only to back up the individual private keys that are used to sign transactions. But they also have to back up the wallet configuration as such. This is needed for recovery, because the wallet application needs to know how to generate addresses and the rules that define how bitcoin can be spent from these addresses. 
+The wallet configuration allows a wallet application to generate addresses and identify the rules that define how bitcoin can be spent from these addresses. The private keys are required to sign transactions & spend the bitcoin.
 
-This means that, in our use case, the Joneses need to safely backup and store six private keys as well as the wallet configuration. 
+Thus, the Joneses need to safely backup and store six private keys as well as the wallet configuration.
 
 ### Private key backups
 We have described best practices on how to back up private keys on the [bitcoin backups page](https://bitcoin.design/guide/how-it-works/backups/).
@@ -113,9 +113,9 @@ It is important that users determine the best way to handle backups based on the
 
 We would also like to reiterate the point made in the "Use case & scope" page: the complexity of the backup scheme increases with the complexity of the wallet configuration. Therefore, user education is critical during wallet creation as well as during the backup phase.
 
-## Assembling the backup material
+## Accessing the backup material
 
-The illustration above reveals that Christina and David can access the multi-key wallet in two different ways.
+Christina and David can access the multi-key wallet in two different ways.
 
 #### Self-sovereign route
 Bob and Alice want to provide the children a way to access the funds on their own, using only the backup parts that are stored in the house safe. They store the password in a tamper-evident bag, along with a USB drive. Since electronics can fail, they also place a printout of their will and the recovery PDF in it. 
