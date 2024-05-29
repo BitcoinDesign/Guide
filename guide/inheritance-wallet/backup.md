@@ -59,7 +59,7 @@ The inheritance wallet described in this reference design is a multi-key wallet 
    height = 800
 %}
 
-The wallet configuration allows a wallet application to generate addresses and identify the rules that define how bitcoin can be spent from these addresses. The private keys are required to sign transactions & spend the bitcoin.
+The wallet configuration, also called [wallet descriptor](https://bitcoin.design/guide/glossary/#output-script-descriptor), gives a wallet application all the information it needs to generate addresses and identify the rules that define how bitcoin can be spent from these addresses. The private keys are required to sign transactions and spend the bitcoin.
 
 Thus, the Joneses need to safely backup and store six private keys as well as the wallet configuration.
 
@@ -79,18 +79,25 @@ Once the wallet is created, the application prompts Bob to download the wallet b
 Alice and Bob then encrypt the ZIP file with a strong password and both of them stores a copy of it in their personal password manager account, case they need to recover the wallet themselves.
 
 #### What is in the backup kit?
-The backup kit is a ZIP file that contains:
+The backup kit is a ZIP folder that contains everything Bob and Alice might need to recover their wallet. Either because they replace their mobile phones or because they need to recover the wallet in a different wallet application:
 
-- **A PDF file** that contains the wallet descriptor and information about all six XPUBs. Is also contains a visual representation of the rules that are used to unlock the recovery path and the inheritance key set.
-- **Wallet backup files in various formats**, which can be used to import the wallet to other wallet applications like Sparrow, Nunchuk or others. 
+<div class="center" markdown="1">
 
 {% include picture.html
    image = "/assets/images/guide/inheritance-wallet/wallet-backup/backup-kit-contents.png"
    retina = "/assets/images/guide/inheritance-wallet/wallet-backup/backup-kit-contents@2x.png"
    alt-text = "An illustration showing what is included in the backup kit."
-   width = 1600
-   height = 800
+   width = 450
+   height = 450
+   layout = "float-right-desktop"
 %} 
+
+**A PDF file** that contains a QR code, the wallet descriptor and information about all six signing keys, including their XPUBs. Is also contains a visual representation of the rules that are used to unlock the recovery path and the inheritance key set. You can find an example of the recovery PDF at the bottom of this page.
+
+**Wallet backup files in various formats** which can be used to import the wallet directly into other wallet applications like Bitcoin Core, Sparrow, Specter, Nunchuk or others. 
+
+</div>
+
 
 ## Backup distribution
 

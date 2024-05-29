@@ -98,7 +98,7 @@ Our application lets users create flexible multi-key wallets with timelocked rec
 <div class="center" markdown="1">
 
 {% include image.html
-   image = "assets/images/guide/inheritance-wallet/icon-wallet-backup.png"
+   image = "assets/images/guide/inheritance-wallet/icon-backup.png"
    retina = "assets/images/guide/inheritance-wallet/icon-backup@2x.png"
    alt-text = ""
    width = 80
