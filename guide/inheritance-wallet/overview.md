@@ -42,9 +42,7 @@ Meet the Jones family: Bob, Alice and their two children Christina (24) and Davi
 
 {% include picture.html
    image = "/assets/images/guide/inheritance-wallet/overview/family-overview.png"
-   retina = "/assets/images/guide/inheritance-wallet/overview/family-overview.png"
-   mobile = "/assets/images/guide/inheritance-wallet/overview/family-overview.png"
-   mobileRetina = "/assets/images/guide/inheritance-wallet/overview/family-overview.png"
+   retina = "/assets/images/guide/inheritance-wallet/overview/family-overview@2x.png"
    alt-text = "A diagram showing the Jones family."
    width = 1600
    height = 800
@@ -67,10 +65,8 @@ Based on their initial requirements, Alice and Bob decided on having two key set
 
 {% include picture.html
    image = "/assets/images/guide/inheritance-wallet/overview/key-scheme.png"
-   retina = "/assets/images/guide/inheritance-wallet/overview/key-scheme.png"
-   mobile = "/assets/images/guide/inheritance-wallet/overview/key-scheme.png"
-   mobileRetina = "/assets/images/guide/inheritance-wallet/overview/key-scheme.png"
-   alt-text = "An illustration showing that Alice and Bob control three keys, while Christina, David and Edward control one key each."
+   retina = "/assets/images/guide/inheritance-wallet/overview/key-scheme@2x.png"
+   alt-text = "A diagram showing that Alice and Bob control three keys, while Christina, David and Edward control one key each."
    width = 1600
    height = 800
 %}
@@ -86,7 +82,7 @@ Below is an overview of what the configuration of the family's savings wallet wi
    retina = "/assets/images/guide/inheritance-wallet/overview/wallet-overview@2x.png"
    mobile = "/assets/images/guide/inheritance-wallet/overview/wallet-overview-mobile.png"
    mobileRetina = "/assets/images/guide/inheritance-wallet/overview/wallet-overview-mobile@2x.png"
-   alt-text = "An illustration showing the timeline of when the key sets will be unlocked."
+   alt-text = "A diagram showing the logic of how the key sets unlock over time."
    caption = "This is how the wallet will work under the hood."
    width = 1600
    height = 800
@@ -94,7 +90,7 @@ Below is an overview of what the configuration of the family's savings wallet wi
 
 ## Design considerations
 
-Wallet configurations, such as the one mentioned above, can be expanded by users. However, every expansion introduces an additional layer of complexity in terms of backup and maintenance. Ensuring that the application guides and educates users towards a secure and sustainable setup is essential.
+Wallet configurations, such as the one described above, can be expanded by users. However, every expansion introduces an additional layer of complexity in terms of backup and maintenance. Ensuring that the application guides and educates users towards a secure and sustainable setup is essential.
 
 #### Application scope
 

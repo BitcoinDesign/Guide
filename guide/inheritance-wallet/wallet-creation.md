@@ -248,25 +248,21 @@ The first is the wallet configuration, where Bob and Alice define the rules for 
 
 #### Creating the primary key set
 
-Bob starts the wallet creation process on his phone, while Alice will use the app on her own phone to add her signing key. The app gives them a choice between two of the most commonly used wallet types: a standard, single-key wallet or a 2-of-3 multi-key wallet, which is suited for larger savings. 
+Bob starts the wallet creation process on his phone, while Alice will use the app on her own phone to add her signing key. The app gives them a choice between two of the most commonly used wallet types: The first one is a standard, single-key wallet. The second option is a 2-of-3 multi-key wallet, which is suited for larger savings. There is also a third option that allows users to create their own custom setups. Bob and Alice choose the 2-of-3 multi-key wallet.
 
 {% include image-gallery.html pages = page.images_wallet-configuration %}
 
-There is also a third option that allows users to create their own custom setups. But Bob and Alice choose the multi-key approach.
-
 #### Enabling the recovery path
 
-After configuring the primary key set, the app asks the users whether they would like to enable a recovery path. We have covered this in the time-based reference design as well. Here we show an alternative design option for this same feature.
+After configuring the primary key set, the app asks the users whether they would like to enable a recovery path. The recovery path uses the same keys that are part of the primary key set and unlocks after 6 months of inactivity. If it is unlocked, only one signature will be required to spend bitcoin, instead of two. We have covered this in the time-based reference design as well.
 
 {% include image-gallery.html pages = page.images_recovery-path %}
 
-We could also call the recovery path a recovery key set, since it technically is just that. However, the point of the recovery path is that we want to use the same keys that are used in the primary key set. To make this distinction more clear, we treat recovery paths as a different feature from alternative key sets in our application. You might want to take a different approach in your own application, based on your specific user base.
-
 #### Creating the inheritance key set
 
-After enabling the recovey path, the app offers users to create a dedicated inheritance key set. This works in more or less the same way as for the primary key set.
+After enabling the recovery path, the app offers users to create a dedicated inheritance key set. The process of configuring the key set is almost the same as for the primary key set.
 
-The main exception is that the inheritance key set should only be unlocked after a certain amount of time. After choosing the appropriate key set type, Bob is prompted to define the rules under which the key set should be unlocked.
+The main difference is that the inheritance key set should only be unlocked after a certain amount of time. Therefore, Bob is prompted to define the rules under which the key set should be unlocked, after he has chosen the appropriate key set type.
 
 {% include image-gallery.html pages = page.images_inheritance-key-set %}
 
