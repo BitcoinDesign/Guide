@@ -49,7 +49,7 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Inheritance-wallet?type=design
 
 ---
 
-As we have covered in the time-based recovery [reference design](https://bitcoin.design/guide/savings-wallet/time-based-recovery/#wallet-backup) there are two parts to backing up a multi-key wallet: the private keys as well as the wallet configuration.
+The inheritance wallet described in this reference design is a multi-key wallet with time-based recovery. When backing up such a wallet, users must back up not only their own private keys but also the wallet configuration, as covered [here](https://bitcoin.design/guide/savings-wallet/time-based-recovery/#wallet-backup).
 
 {% include picture.html
    image = "/assets/images/guide/inheritance-wallet/wallet-backup/multikey-backup-components.png"
