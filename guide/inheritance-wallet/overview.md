@@ -45,12 +45,12 @@ Meet the Jones family: Bob, Alice and their two children Christina (24) and Davi
    retina = "/assets/images/guide/inheritance-wallet/overview/family-overview.png"
    mobile = "/assets/images/guide/inheritance-wallet/overview/family-overview.png"
    mobileRetina = "/assets/images/guide/inheritance-wallet/overview/family-overview.png"
-   alt-text = "An illustration showing the Jones family."
+   alt-text = "A diagram showing the Jones family."
    width = 1600
    height = 800
 %}
 
-Alice and Bob have been using a shared multi-key wallet as a family checking account for a few years already. This wallet is used for general spending, while each of them manage their income, personal spending and savings using their individual single-key wallets. 
+Alice and Bob have been using a [shared multi-key wallet](https://bitcoin.design/guide/shared-wallet/) as a family checking account for a few years already. This wallet is used for general spending, while each of them manage their income, personal spending and savings using their individual single-key wallets. 
 
 The couple now feels that the time is right to consolidate the family savings and to include their children in securing them. They will still keep the savings separated from their checking wallet.
 
@@ -98,13 +98,13 @@ Wallet configurations, such as the one mentioned above, can be expanded by users
 
 #### Application scope
 
-Think about the scope of your application and how to incorporate supporting features beyond just letting users create an advanced wallet and using it to receive and send transactions. Such supporting features can be implemented on the application layer and don't necessarily need to touch the bitcoin protocol.
+Think about the scope of your application and how to incorporate supporting features beyond just letting users create an advanced wallet and using it to receive and send transactions. Such supporting features can be implemented on the application layer.
 
 Consider features that help users to:
 
 - Choose and personalize their wallet setup. For some target audiences, it might also be suitable to limit the customization options. 
 - Test or simulate that the wallet and its rules work as intended.
-- Involve heirs early on to make them aware and comfortable with the setup. This could contain elements of gamification or educational apps and services, for example. 
+- Involve heirs early on to make them aware and comfortable with the setup.
 - Perform regular key checks for all keys. 
 - Make changes to the setup over time AND make sure that its documentation is updated and distributed accordingly.
 - Provide a way to migrate to a different wallet application, in case your project is abandoned or shut down.
@@ -122,7 +122,9 @@ The goal for this reference design is to build an application that relies on the
 
 #### Interoperability
 
-An important aspect to consider is the demise of our application itself. What if, during the course of the years, the developers of our application decide to abandon the project? Or if it gets removed from the app stores? To mitigate this risk, our application will create a regular bitcoin wallet that can be imported into other wallet applications, as long as they support [Miniscript]({{ '/guide/glossary/#miniscript' | relative_url }}). 
+An important aspect to consider is the demise of our application itself. What if, during the course of the years, the developers of our application decide to abandon the project? Or if it gets removed from the app stores? Ensuring a high degree of [interoperability](https://bitcoin.design/guide/getting-started/principles/#interoperability) with protocol standards will allow users to easily move their wallet to a different application.
+
+Therefore, our application will create a wallet based on broadly supported open standards, such as [Miniscript]({{ '/guide/glossary/#miniscript' | relative_url }}). 
 
 
 ---

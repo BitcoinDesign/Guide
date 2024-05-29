@@ -9,19 +9,19 @@ main_classes: -no-top-padding
 image_base: /assets/images/guide/inheritance-wallet/
 images_wallet-creation:
     - file: wallet-creation/onboarding-01
-      alt:
+      alt: Screen showing an introductory video about the app.
       caption: Onboarding begins with a short video that explains what the application is all about.
     - file: wallet-creation/onboarding-02
-      alt:
+      alt: Screen showing users collaborating to create a wallet.
       caption: It also emphasizes the social aspect of having shared inheritance wallet.
     - file: wallet-creation/onboarding-03
-      alt:
+      alt: Screen showing various time-based recovery options.
       caption: One of the main features is that it's very easy to create time-based recovery options.
     - file: wallet-creation/onboarding-04
-      alt:
+      alt: Screen showing images of users that hold inheritance keys.  
       caption: Heirs can be involved from the beginning and provide their own inheritance keys.
     - file: wallet-creation/onboarding-05
-      alt:
+      alt: Screen prompting the user to create a wallet.
       caption: The tutorial finishes with a call to action.
 images_wallet-configuration:
     - file: wallet-creation/home-empty
@@ -215,9 +215,9 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
 
 ## Onboarding
 
-During their research, Bob and Alice came across an interesting application that looks like it fits their needs. It’s a mobile application specifically designed for long-term bitcoin custody. Alice and Bob each download the app on their phones and get started. 
+Now that we have a [good understanding]({{ '/guide/inheritance-wallet/overview/' | relative_url }}) of how Bob and Alice want to set up their inheritance wallet, let's take a close look at the first use experience and wallet setup.
 
-After downloading the app, the app walks the users through the purpose of the product and highlights some of the most important features. 
+After downloading the app, the app walks them through the purpose of the product and highlights some of the most important features. 
 
 {% include image-gallery.html pages = page.images_wallet-creation %}
 

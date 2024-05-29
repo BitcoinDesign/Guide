@@ -30,9 +30,10 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
 
 {% include picture.html
    image = "/assets/images/guide/inheritance-wallet/header.jpg"
-   alt-text = "An image showing two parents handing bitcoin to their two children."
+   retina = "assets/images/guide/inheritance-wallet/header@2x.jpg"
+   alt-text = "Two parents handing bitcoin to their two children."
    width = 1600
-   height = 600
+   height = 800
    layout = "full-width"
 %}
 
@@ -194,8 +195,8 @@ When it's time for the heirs to claim their inheritance, the Jones' children can
 --- 
 
 **Resources**
-- [Figma design file](https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type=design&node-id=5542%3A2119&mode=design&t=sBtcvrDzb8MPtWaK-1)
-- [Custom spending conditions]({{ '/guide/how-it-works/custom-spending-conditions/' | relative_url }})
+- All illustrations, mockups and interactive prototypes are available in this [Figma design file](https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type=design&node-id=5542%3A2119&mode=design&t=sBtcvrDzb8MPtWaK-1)
+- The [Custom spending conditions]({{ '/guide/how-it-works/custom-spending-conditions/' | relative_url }}) page provides an introduction to how timelocks work in bitcoin.
 
 ---
 
