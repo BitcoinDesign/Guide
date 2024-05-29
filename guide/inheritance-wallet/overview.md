@@ -1,10 +1,10 @@
 ---
 layout: guide
-title: Use case & scope
+title: Overview
 description: An introduction to the use case, personas and scope of the inheritance wallet.
 nav_order: 1
 parent: Inheritance wallet
-permalink: /guide/inheritance-wallet/use-case-and-scope/
+permalink: /guide/inheritance-wallet/overview/
 main_classes: -no-top-padding
 
 ---
@@ -21,7 +21,7 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
 
 -->
 
-# Use case & scope 
+# Overview 
 {: .no_toc }
 
 ---
@@ -41,10 +41,10 @@ For other users, such a setup might be too advanced. When choosing a specific se
 Meet the Jones family: Bob, Alice and their two children Christina (24) and David (21). Bob and Alice have been saving in bitcoin for quite some time. They have been teaching their children how they should use and safeguard their own bitcoin wallets. 
 
 {% include picture.html
-   image = "/assets/images/guide/inheritance-wallet/use-case-and-scope/family-overview.png"
-   retina = "/assets/images/guide/inheritance-wallet/use-case-and-scope/family-overview.png"
-   mobile = "/assets/images/guide/inheritance-wallet/use-case-and-scope/family-overview.png"
-   mobileRetina = "/assets/images/guide/inheritance-wallet/use-case-and-scope/family-overview.png"
+   image = "/assets/images/guide/inheritance-wallet/overview/family-overview.png"
+   retina = "/assets/images/guide/inheritance-wallet/overview/family-overview.png"
+   mobile = "/assets/images/guide/inheritance-wallet/overview/family-overview.png"
+   mobileRetina = "/assets/images/guide/inheritance-wallet/overview/family-overview.png"
    alt-text = "An illustration showing the Jones family."
    width = 1600
    height = 800
@@ -66,10 +66,10 @@ The couple has been thinking about what criteria would need to be met in a good 
 Based on their initial requirements, Alice and Bob decided on having two key sets. One primary key set that they will use in times of normal operations. In addition, they want to create an inheritance key set that unlocks after a certain time. Their children and Edward will each hold one these keys.  
 
 {% include picture.html
-   image = "/assets/images/guide/inheritance-wallet/use-case-and-scope/key-scheme.png"
-   retina = "/assets/images/guide/inheritance-wallet/use-case-and-scope/key-scheme.png"
-   mobile = "/assets/images/guide/inheritance-wallet/use-case-and-scope/key-scheme.png"
-   mobileRetina = "/assets/images/guide/inheritance-wallet/use-case-and-scope/key-scheme.png"
+   image = "/assets/images/guide/inheritance-wallet/overview/key-scheme.png"
+   retina = "/assets/images/guide/inheritance-wallet/overview/key-scheme.png"
+   mobile = "/assets/images/guide/inheritance-wallet/overview/key-scheme.png"
+   mobileRetina = "/assets/images/guide/inheritance-wallet/overview/key-scheme.png"
    alt-text = "An illustration showing that Alice and Bob control three keys, while Christina, David and Edward control one key each."
    width = 1600
    height = 800
@@ -78,18 +78,16 @@ Based on their initial requirements, Alice and Bob decided on having two key set
 Below is an overview of what the configuration of the family's savings wallet will look like:
 
 - **A 2-of-3 primary key set for normal spending**. Since it is a savings wallet, Alice and Bob will spend only very infrequently.
-- **A timelocked [recovery path](https://bitcoin.design/guide/savings-wallet/time-based-recovery/)** in case they lose two keys and need to recover their funds. The recovery path uses the same keys as the primary key set, but requires only one signature to spend.
+- **A timelocked [recovery path](https://bitcoin.design/guide/savings-wallet/time-based-recovery/)** in case they lose two of the three keys. The timelock enables moving the funds with just one of the keys if no signing has occurred within a set time, in this case we'll set it to 6 months.
 - **A dedicated 2-of-3 inheritance key set**, which is unlocked 6 months after the recovery key set was unlocked and has not been used. Christina and David will each hold one of the inheritance keys. Edward will hold the third key to assist the children, if necessary.
 
-
-The image below illustrates how the wallet will work under the hood.
-
 {% include picture.html
-   image = "/assets/images/guide/inheritance-wallet/use-case-and-scope/wallet-overview.png"
-   retina = "/assets/images/guide/inheritance-wallet/use-case-and-scope/wallet-overview@2x.png"
-   mobile = "/assets/images/guide/inheritance-wallet/use-case-and-scope/wallet-overview-mobile.png"
-   mobileRetina = "/assets/images/guide/inheritance-wallet/use-case-and-scope/wallet-overview-mobile@2x.png"
+   image = "/assets/images/guide/inheritance-wallet/overview/wallet-overview.png"
+   retina = "/assets/images/guide/inheritance-wallet/overview/wallet-overview@2x.png"
+   mobile = "/assets/images/guide/inheritance-wallet/overview/wallet-overview-mobile.png"
+   mobileRetina = "/assets/images/guide/inheritance-wallet/overview/wallet-overview-mobile@2x.png"
    alt-text = "An illustration showing the timeline of when the key sets will be unlocked."
+   caption = "This is how the wallet will work under the hood."
    width = 1600
    height = 800
 %}
@@ -114,7 +112,7 @@ Consider features that help users to:
 #### Role of the wallet provider
 Your answers to the above questions as well as the vision and goals of your application will have a direct impact on the user experience. 
 
-If you want to pursue a strictly non-custodial approach, you will need to design a user experience that requires your users to perform more actions that might not be intuitive for them. 
+If you want to pursue a strictly self-custodial approach, you will need to design a user experience that requires your users to perform more actions that might not be intuitive for them. 
 
 There might also be a good chance that you won't be able to make use of some features that are considered standard in other applications, such as push notifications, cross-device sync, or others, because they rely on backend servers and coordination. If this is the case, you will need to place more emphasis on user education and help content. 
 
@@ -124,7 +122,7 @@ The goal for this reference design is to build an application that relies on the
 
 #### Interoperability
 
-An important aspect to consider is the demise of our application itself. What if, during the course of the years, the developers of our application decide to abandon the project? Or if it gets removed from the app stores? To mitigate this risk, our application will create a regular bitcoin wallet that can be imported into other wallet applications, as long as they support Miniscript. 
+An important aspect to consider is the demise of our application itself. What if, during the course of the years, the developers of our application decide to abandon the project? Or if it gets removed from the app stores? To mitigate this risk, our application will create a regular bitcoin wallet that can be imported into other wallet applications, as long as they support [Miniscript]({{ '/guide/glossary/#miniscript' | relative_url }}). 
 
 
 ---

@@ -16,10 +16,10 @@ images_wallet-creation:
       caption: It also emphasizes the social aspect of having shared inheritance wallet.
     - file: wallet-creation/onboarding-03
       alt:
-      caption: One of the main features is that it's very easy to create time-based recovery options that do not compromise security.
+      caption: One of the main features is that it's very easy to create time-based recovery options.
     - file: wallet-creation/onboarding-04
       alt:
-      caption: Heirs can be involved from the beginning. They can even access their inheritance using their own keys when the time comes.
+      caption: Heirs can be involved from the beginning and provide their own inheritance keys.
     - file: wallet-creation/onboarding-05
       alt:
       caption: The tutorial finishes with a call to action.
@@ -272,7 +272,7 @@ The main exception is that the inheritance key set should only be unlocked after
 
 ## Step 2: Adding the signing keys
 
-The wallet is now fully configured. What is left to do is to add the necessary amount signing keys. Adding a key technically means that users have to import the extended public key (XPUB) from each signing device that should be used to sign transactions. 
+The wallet is now fully configured. What is left to do is to add the signing keys. Adding a key technically means that users have to import the extended public key (XPUB) from each signing device that should be used to sign transactions. 
 
 ### Adding the primary keys
 
@@ -335,8 +335,8 @@ The homescreen shows the newly created wallet. In addition, the app shows a coup
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/inheritance-wallet/introduction"
-   previousName = "Use case & scope"
+   previousUrl = "/guide/inheritance-wallet/overview"
+   previousName = "Overview"
    nextUrl = "/guide/upgradeable-wallet/"
    nextName = "Upgradeable wallet"
 %}
