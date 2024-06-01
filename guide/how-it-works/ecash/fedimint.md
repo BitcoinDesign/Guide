@@ -3,7 +3,7 @@ layout: guide
 title: Fedimint
 description: Learn the basics of Fedimint.
 nav_order: 5
-parent: ecash
+parent: Ecash
 grand_parent: How it works
 permalink: /guide/how-it-works/ecash/fedimint/
 redirect_from:

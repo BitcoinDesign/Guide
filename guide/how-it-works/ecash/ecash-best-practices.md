@@ -3,7 +3,8 @@ layout: guide
 title: Ecash best practices
 description: An overview of best design practices for bitcoin backed ecash applications.
 nav_order: 9
-parent: How it works
+parent: Ecash
+grand_parent: How it works
 permalink: /guide/how-it-works/ecash-best-practices/
 main_classes: -no-top-padding
 image: /assets/images/guide/how-it-works/ecash/ecash.jpg

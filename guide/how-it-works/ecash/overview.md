@@ -1,9 +1,9 @@
 ---
 layout: guide
-title: overview
+title: Overview
 description: A primer on ecash on bitcoin
 nav_order: 1
-parent: ecash
+parent: Ecash
 grand_parent: How it works
 permalink: /guide/how-it-works/ecash/overview
 redirect_from:
