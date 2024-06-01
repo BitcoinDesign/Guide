@@ -102,7 +102,7 @@ Spending ecash involves transferring digital tokens from one user to another. Th
 ### Receiving ecash
 Receiving ecash in both Cashu and Fedimint is designed to be user-friendly and flexible, allowing for multiple methods to suit different transaction needs. Here’s how you can receive ecash using either protocol:
 
-#### 1. Generating Ecash by Paying a Lightning Network Invoice:
+#### Generating Ecash by Paying a Lightning Network Invoice:
 Users can receive ecash by generating it themselves through a Lightning Network (LN) transaction. This involves creating an LN invoice through the mint (either Cashu or Fedimint) and paying it. Upon successful payment, the mint issues the corresponding ecash tokens to the user.
 
 **1.**Open your Cashu or Fedimint wallet.
@@ -113,7 +113,7 @@ Users can receive ecash by generating it themselves through a Lightning Network 
 
 **4.**Upon successful payment, receive the ecash tokens in your wallet.
 
-#### 2. Scanning a QR Code with an Embedded Token:
+#### Scanning a QR Code with an Embedded Token:
 Ecash can also be received by scanning a QR code that contains an embedded token. This method is particularly useful for in-person transactions or quick transfers.
 
 **1.**Open the QR code scanner in your Cashu or Fedimint wallet.
@@ -122,7 +122,7 @@ Ecash can also be received by scanning a QR code that contains an embedded token
 
 **3.**The wallet will automatically process and add the token to your balance.
 
-#### 3. Copying and Pasting the Ecash Token:
+#### Copying and Pasting the Ecash Token:
 Another method to receive ecash is by copying and pasting the token. This is useful for online transactions or transferring tokens via text-based communication platforms.
 
 **1.**Copy the ecash token string provided by the sender.
