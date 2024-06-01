@@ -105,33 +105,33 @@ Receiving ecash in both Cashu and Fedimint is designed to be user-friendly and f
 #### 1. Generating Ecash by Paying a Lightning Network Invoice:
 Users can receive ecash by generating it themselves through a Lightning Network (LN) transaction. This involves creating an LN invoice through the mint (either Cashu or Fedimint) and paying it. Upon successful payment, the mint issues the corresponding ecash tokens to the user.
 
-**Step 1** - Open your Cashu or Fedimint wallet.
+**1.**Open your Cashu or Fedimint wallet.
 
-**Step 3** - Generate an LN invoice for the desired amount.
+**2.**Generate an LN invoice for the desired amount.
 
-**Step 3** - Pay the invoice using your Lightning-enabled wallet.
+**3.**Pay the invoice using your Lightning-enabled wallet.
 
-**Step 4** - Upon successful payment, receive the ecash tokens in your wallet.
+**4.**Upon successful payment, receive the ecash tokens in your wallet.
 
 #### 2. Scanning a QR Code with an Embedded Token:
 Ecash can also be received by scanning a QR code that contains an embedded token. This method is particularly useful for in-person transactions or quick transfers.
 
-**Step 1** - Open the QR code scanner in your Cashu or Fedimint wallet.
+**1.**Open the QR code scanner in your Cashu or Fedimint wallet.
 
-**Step 3** - Scan the provided QR code containing the ecash token.
+**2.**Scan the provided QR code containing the ecash token.
 
-**Step 3** - The wallet will automatically process and add the token to your balance.
+**3.**The wallet will automatically process and add the token to your balance.
 
 #### 3. Copying and Pasting the Ecash Token:
 Another method to receive ecash is by copying and pasting the token. This is useful for online transactions or transferring tokens via text-based communication platforms.
 
-**Step 1** - Copy the ecash token string provided by the sender.
+**1.**Copy the ecash token string provided by the sender.
 
-**Step 2** - Open your Cashu or Fedimint wallet and navigate to the receive section.
+**2.**Open your Cashu or Fedimint wallet and navigate to the receive section.
 
-**Step 3** - Paste the token into the designated field.
+**3.**Paste the token into the designated field.
 
-**Step 3** - The wallet will validate and add the token to your balance.
+**4.**The wallet will validate and add the token to your balance.
 
 Ecash on Bitcoin offers several significant advantages:
 
