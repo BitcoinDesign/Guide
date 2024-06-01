@@ -1,9 +1,9 @@
 ---
 layout: guide
 title: Cashu
-description: Learn the basics of multi-signature bitcoin wallets.
+description: Learn the basics of Cashu.
 nav_order: 5
-parent: ecash
+parent: Ecash
 grand_parent: How it works
 permalink: /guide/how-it-works/ecash/cashu/
 redirect_from:

@@ -1,29 +1,28 @@
 ---
 layout: guide
-title: Wallet privacy
-description: An overview of how to help users maintain their financial privacy while using a bitcoin daily spending wallet.
+title: Ecash best practices
+description: An overview of best design practices for bitcoin backed ecash applications.
 nav_order: 9
 parent: How it works
-permalink: /guide/how-it-works/wallet-privacy/
+permalink: /guide/how-it-works/ecash-best-practices/
 main_classes: -no-top-padding
-image: /assets/images/guide/how-it-works/wallet-privacy/wallet-privacy-preview.jpg
+image: /assets/images/guide/how-it-works/ecash/ecash.jpg
 ---
 
 {% include picture.html
-    image = "/assets/images/guide/how-it-works/wallet-privacy/wallet-privacy.jpg"
-    retina = "/assets/images/guide/how-it-works/wallet-privacy/wallet-privacy@2x.jpg"
-    mobile = "/assets/images/guide/how-it-works/wallet-privacy/wallet-privacy-mobile.jpg"
-    mobileRetina = "/assets/images/how-it-works/wallet-privacy/wallet-privacy-mobile@2x.jpg"
-    alt-text = "Illustration of an eye, with a cross on top of an ink blot background"
-    width = 1600
-    height = 600
-    layout = "full-width"
+   image = "/assets/images/guide/how-it-works/ecash/ecash.jpg"
+   retina = "/assets/images/guide/how-it-works/ecash/ecash@2x.jpg"
+   mobile = "/assets/images/guide/how-it-works/ecash/ecash-mobile.jpg"
+   mobileRetina = "/assets/images/guide/how-it-works/ecash/ecash-mobile@2x.jpg"
+   alt-text = "ecash chapter illustration"
+   width = 1600
+   height = 600
+   layout = "full-width"
 %}
 
 <!--
 
-This page provides a general overview of privacy issues in bitcoin wallets.
-
+This page provides a general overview of the best design practices for bitcoin backed ecash applications.
 -->
 
 # Wallet privacy

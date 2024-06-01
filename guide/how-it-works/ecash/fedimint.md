@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Fedimint
-description: Learn the basics of fedimint.
+description: Learn the basics of Fedimint.
 nav_order: 5
 parent: ecash
 grand_parent: How it works
