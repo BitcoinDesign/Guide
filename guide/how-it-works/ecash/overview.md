@@ -51,7 +51,7 @@ Ecash is a digital payment system that uses cryptographic techniques to ensure s
    image = "/assets/images/guide/how-it-works/ecash/custody-spectrum@1x.png"
    retina = "/assets/images/guide/how-it-works/ecash/custody-spectrum@2x.png"
    mobile = "/assets/images/guide/how-it-works/ecash/custody-spectrum@1x.png"
-   mobileRetina = "/assets/images/guide/how-it-works/ecash/custody-spectrum@2x.png""
+   mobileRetina = "/assets/images/guide/how-it-works/ecash/custody-spectrum@2x.png"
    alt-text = "An illustration of the spectrum of bitcoin custody."
    caption = "Bitcoin custody spectrum"
    width = 1600
