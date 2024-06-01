@@ -47,11 +47,11 @@ Figma file for channel reserve UI's: https://www.figma.com/file/6iJpftEbajA3y1yl
 
 Ecash is a digital payment system that uses cryptographic techniques to ensure secure and private transactions. Developed by David Chaum in 1933, it operates through a mint that issues digital tokens in exchange for deposited funds. These tokens can be spent and received without revealing user identities or transaction details, thanks to blinded signatures. Users can redeem their tokens for the original funds at any time. Since no accounts or personal information are needed; the mint cannot see your balance, tokens, or transaction details, offering a highly private and efficient method for digital payments.
 
-### How does ecash on bitcoin work?
+## How does ecash on bitcoin work?
 
 Ecash on Bitcoin works by integrating the principles of Chaumian ecash with the Bitcoin network, utilizing the Lightning Network for efficient transactions.
 
-#### Mitning ecash
+### Mitning ecash
 The process of crearting ecash on bitcoin is known as minting. This process typically includes the following steps:
 
 **1. User Deposits Funds** - The user deposits Bitcoin or sats into a mint. In Cashu, this is done by sending Bitcoin to the mint’s address. In Fedimint, the process is similar but involves federated entities.
@@ -90,24 +90,48 @@ The process of crearting ecash on bitcoin is known as minting. This process typi
    height = 456
 %}
 
-#### Spending ecash
+### Spending ecash
 Spending ecash involves transferring digital tokens from one user to another. The process generally follows these steps:
 
 **1. Spending ecash** - Users can spend their ecash tokens with merchants or other users. They can also send transactions over the Lightning Network.
 
-**2. Receiving ecash** - Recipients of eCash can store these tokens in their ecash wallets. The tokens can be used for further transactions or eventually redeemed for Bitcoin.
+**2. Receiving ecash** - Recipients of ecash can store these tokens in their ecash wallets. The tokens can be used for further transactions or eventually redeemed for Bitcoin.
 
 **3. Redeeming ecash** - When users want to convert their ecash tokens back into Bitcoin, they can redeem the tokens at the mint. The mint verifies the tokens and transfers the equivalent amount of Bitcoin to the user.
 
 ### Receiving ecash
+Receiving ecash in both Cashu and Fedimint is designed to be user-friendly and flexible, allowing for multiple methods to suit different transaction needs. Here’s how you can receive ecash using either protocol:
 
-**1. Step 1**
+#### 1. Generating Ecash by Paying a Lightning Network Invoice:
+Users can receive ecash by generating it themselves through a Lightning Network (LN) transaction. This involves creating an LN invoice through the mint (either Cashu or Fedimint) and paying it. Upon successful payment, the mint issues the corresponding ecash tokens to the user.
 
-**1. Step 2**
+**Step 1** - Open your Cashu or Fedimint wallet.
 
-**1. Step 3**
+**Step 3** - Generate an LN invoice for the desired amount.
 
-## Advantages of ecash for Bitcoin
+**Step 3** - Pay the invoice using your Lightning-enabled wallet.
+
+**Step 4** - Upon successful payment, receive the ecash tokens in your wallet.
+
+#### 2. Scanning a QR Code with an Embedded Token:
+Ecash can also be received by scanning a QR code that contains an embedded token. This method is particularly useful for in-person transactions or quick transfers.
+
+**Step 1** - Open the QR code scanner in your Cashu or Fedimint wallet.
+
+**Step 3** - Scan the provided QR code containing the ecash token.
+
+**Step 3** - The wallet will automatically process and add the token to your balance.
+
+#### 3. Copying and Pasting the Ecash Token:
+Another method to receive ecash is by copying and pasting the token. This is useful for online transactions or transferring tokens via text-based communication platforms.
+
+**Step 1** - Copy the ecash token string provided by the sender.
+
+**Step 2** - Open your Cashu or Fedimint wallet and navigate to the receive section.
+
+**Step 3** - Paste the token into the designated field.
+
+**Step 3** - The wallet will validate and add the token to your balance.
 
 Ecash on Bitcoin offers several significant advantages:
 
