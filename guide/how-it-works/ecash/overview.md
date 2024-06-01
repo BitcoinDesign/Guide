@@ -46,10 +46,18 @@ Figma file for channel reserve UI's: https://www.figma.com/file/6iJpftEbajA3y1yl
 ## What is ecash?
 Ecash is a digital payment system that uses cryptographic techniques to ensure secure and private transactions. Developed by David Chaum in 1933, it operates through a mint that issues digital tokens in exchange for deposited funds. These tokens can be spent and received without revealing user identities or transaction details, thanks to blinded signatures. Users can redeem their tokens for the original funds at any time. Since no accounts or personal information are needed; the mint cannot see your balance, tokens, or transaction details, offering a highly private and efficient method for digital payments.
 
-## How does ecash on bitcoin work?
-Ecash on Bitcoin works by integrating the principles of Chaumian ecash with the Bitcoin network, utilizing the Lightning Network for efficient transactions.
-
-## Ecash Advantages / Ecash compared to custodial lightning:
+## Ecash vs Custodial Lightning:
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/ecash/custody-spectrum@1x.png"
+   retina = "/assets/images/guide/how-it-works/ecash/custody-spectrum@2x.png"
+   mobile = "/assets/images/guide/how-it-works/ecash/custody-spectrum@1x.png"
+   mobileRetina = "/assets/images/guide/how-it-works/ecash/custody-spectrum@2x.png""
+   alt-text = "An illustration of the spectrum of bitcoin custody."
+   caption = "Bitcoin custody spectrum"
+   width = 1600
+   height = 600
+   layout = "full-width"
+%}
 
 The spectrum of decentralization and custody for Bitcoin ranges from highly decentralized to highly centralized. Holding self-custodial Bitcoin on the base layer is the least risky and most decentralized, rated at 0. Self-custodial Lightning is slightly more centralized at 2, while custodial Lightning moves further towards centralization at 7. Exchanges sit at the extreme end, being the most centralized and risky. Ecash offers improvements over custodial Lightning by providing better privacy and security.
 
