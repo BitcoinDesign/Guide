@@ -93,11 +93,11 @@ The process of crearting ecash on bitcoin is known as minting. This process typi
 ### Spending ecash
 Spending ecash involves transferring digital tokens from one user to another. The process generally follows these steps:
 
-**1. Spending ecash** - Users can spend their ecash tokens with merchants or other users. They can also send transactions over the Lightning Network.
+- Users can spend their ecash tokens with merchants or other users. They can also send transactions over the Lightning Network.
 
-**2. Receiving ecash** - Recipients of ecash can store these tokens in their ecash wallets. The tokens can be used for further transactions or eventually redeemed for Bitcoin.
+- Recipients of ecash can store these tokens in their ecash wallets. The tokens can be used for further transactions or eventually redeemed for Bitcoin.
 
-**3. Redeeming ecash** - When users want to convert their ecash tokens back into Bitcoin, they can redeem the tokens at the mint. The mint verifies the tokens and transfers the equivalent amount of Bitcoin to the user.
+- When users want to convert their ecash tokens back into Bitcoin, they can redeem the tokens at the mint. The mint verifies the tokens and transfers the equivalent amount of Bitcoin to the user.
 
 ### Receiving ecash
 Receiving ecash in both Cashu and Fedimint is designed to be user-friendly and flexible, allowing for multiple methods to suit different transaction needs. Here’s how you can receive ecash using either protocol:
