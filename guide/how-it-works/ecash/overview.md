@@ -90,6 +90,13 @@ The spectrum of decentralization and custody for Bitcoin ranges from highly dece
                Custodial Lightning
             </th>
                <th>
+                  {% include picture.html
+                  image = "/assets/images/guide/how-it-works/ecash/explanation-icon@1x.jpg"
+                  retina = "/assets/images/guide/how-it-works/ecash/explanation-icon@2x.jpg"
+                  alt-text = "Depiction of ecash"
+                  width = 236
+                  height = 236
+               %}
                Explanation
             </th>
          </tr>
@@ -99,37 +106,37 @@ The spectrum of decentralization and custody for Bitcoin ranges from highly dece
             <td>Privacy</td>
             <td>✅</td>
             <td>❌</td>
-            <td>Explanation</td>
+            <td>Ecash uses Chaumian blinding, which enhances privacy by making it difficult to trace transactions back to individuals. Custodial lightningpProvides less privacy as the custodian has visibility over transactions and user activities. </td>
          </tr>
          <tr>
-            <td>Risk of theft</td>
-            <td>✅</td>
-            <td>✅</td>
-            <td>Explanation</td>
+            <td>Secure Against Theft (Rug Pulls)</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>Operators can potentially abscond with user funds, leading to a rug pull scenario.</td>
          </tr>
          <tr>
             <td>IOU</td>
             <td>✅</td>
             <td>✅</td>
-            <td>Explanation</td>
+            <td>Both systems represent IOUs from the central operator or custodian, meaning they are not direct bitcoin ownership.</td>
          </tr>
          <tr>
             <td>Offline Settlement</td>
             <td>✅</td>
             <td>❌</td>
-            <td>Explanation</td>
+            <td>Ecash can be transferred offline, whereas custodial Lightning transactions typically require an online connection.</td>
          </tr>
          <tr>
             <td>Regulatory Risk</td>
-            <td>✅</td>
-            <td>✅</td>
-            <td>Explanation</td>
+            <td>⚠️</td>
+            <td>⚠️</td>
+            <td>Both are subject to regulatory actions that can impact their operations. The central entities could be affected by changes in laws or enforcement actions.</td>
          </tr>
          <tr>
             <td>Bearer Asset</td>
             <td>✅</td>
             <td>❌</td>
-            <td>Explanation</td>
+            <td>Ecash tokens are bearer assets, meaning the mint cannot freeze the token once issued.</td>
          </tr>
       </tbody>
    </table>
