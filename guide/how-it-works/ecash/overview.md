@@ -94,18 +94,33 @@ The spectrum of decentralization and custody for Bitcoin ranges from highly dece
       <tbody>
          <tr>
             <td>Privacy</td>
-            <td>Example</td>
-            <td>Example</td>
+            <td>✅</td>
+            <td>❌</td>
          </tr>
          <tr>
-            <td>Censorship resistence</td>
-            <td>Example</td>
-            <td>Example</td>
+            <td>Centralized Database</td>
+            <td>✅</td>
+            <td>✅</td>
          </tr>
          <tr>
-            <td>Rugability</td>
-            <td>Example</td>
-            <td>Example</td>
+            <td>IOU</td>
+            <td>✅</td>
+            <td>✅</td>
+         </tr>
+         <tr>
+            <td>Offline Settlement</td>
+            <td>✅</td>
+            <td>❌</td>
+         </tr>
+         <tr>
+            <td>Regulatory Risk</td>
+            <td>✅</td>
+            <td>✅</td>
+         </tr>
+         <tr>
+            <td>Bearer Asset</td>
+            <td>✅</td>
+            <td>❌</td>
          </tr>
       </tbody>
    </table>
