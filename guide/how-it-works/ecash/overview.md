@@ -146,13 +146,15 @@ The process of crearting ecash on bitcoin is known as minting. This process typi
 **1. User Deposits Funds** - The user deposits Bitcoin or sats into a mint. In Cashu, this is done by sending Bitcoin to the mint’s address. In Fedimint, the process is similar but involves federated entities.
 
 {% include picture.html
-   image = "/assets/images/guide/how-it-works/ecash/ecash.jpg"
-   retina = "/assets/images/guide/how-it-works/ecash/ecash@2x.jpg"
-   mobile = "/assets/images/guide/how-it-works/ecash/ecash-mobile.jpg"
-   mobileRetina = "/assets/images/guide/how-it-works/ecash/ecash-mobile@2x.jpg"
-   alt-text = "Mint creation"
+   image = "/assets/images/guide/how-it-works/ecash/how-ecash-works@1x.png"
+   retina = "/assets/images/guide/how-it-works/ecash/how-ecash-works21x.png"
+   mobile = "/assets/images/guide/how-it-works/ecash/how-ecash-works@2x.png"
+   mobileRetina = "assets/images/guide/how-it-works/ecash/how-ecash-works@2x.png"
+   alt-text = "An illustration of how ecash is generated."
+   caption = "How ecash is generated."
    width = 800
    height = 456
+   layout = "full-width"
 %}
 
 **2. Blinded Token Creation** - The mint generates blinded tokens, which are cryptographic representations of the deposited funds. The blinding process ensures that the mint cannot link the tokens to the user, preserving privacy.
