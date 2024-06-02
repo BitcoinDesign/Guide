@@ -147,7 +147,7 @@ The process of crearting ecash on bitcoin is known as minting. This process typi
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/ecash/how-ecash-works@1x.png"
-   retina = "/assets/images/guide/how-it-works/ecash/how-ecash-works21x.png"
+   retina = "/assets/images/guide/how-it-works/ecash/how-ecash-works@2x.png"
    mobile = "/assets/images/guide/how-it-works/ecash/how-ecash-works@2x.png"
    mobileRetina = "assets/images/guide/how-it-works/ecash/how-ecash-works@2x.png"
    alt-text = "An illustration of how ecash is generated."
