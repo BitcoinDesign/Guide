@@ -89,6 +89,9 @@ The spectrum of decentralization and custody for Bitcoin ranges from highly dece
                %}
                Custodial Lightning
             </th>
+               <th>
+               Explanation
+            </th>
          </tr>
       </thead>
       <tbody>
@@ -96,31 +99,37 @@ The spectrum of decentralization and custody for Bitcoin ranges from highly dece
             <td>Privacy</td>
             <td>✅</td>
             <td>❌</td>
+            <td>Explanation</td>
          </tr>
          <tr>
-            <td>Centralized Database</td>
+            <td>Risk of theft</td>
             <td>✅</td>
             <td>✅</td>
+            <td>Explanation</td>
          </tr>
          <tr>
             <td>IOU</td>
             <td>✅</td>
             <td>✅</td>
+            <td>Explanation</td>
          </tr>
          <tr>
             <td>Offline Settlement</td>
             <td>✅</td>
             <td>❌</td>
+            <td>Explanation</td>
          </tr>
          <tr>
             <td>Regulatory Risk</td>
             <td>✅</td>
             <td>✅</td>
+            <td>Explanation</td>
          </tr>
          <tr>
             <td>Bearer Asset</td>
             <td>✅</td>
             <td>❌</td>
+            <td>Explanation</td>
          </tr>
       </tbody>
    </table>
