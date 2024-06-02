@@ -176,8 +176,8 @@ The process of crearting ecash on bitcoin is known as minting. This process typi
 **2. Blinded Token Creation** - The mint generates blinded tokens, which are cryptographic representations of the deposited funds. The blinding process ensures that the mint cannot link the tokens to the user, preserving privacy.
 
 {% include picture.html
-   image = "/assets/images/guide/how-it-works/ecash/blind-signatures@1x.pngg"
-   retina = "/assets/images/guide/how-it-works/ecash/blind-signatures@2x.pngg"
+   image = "/assets/images/guide/how-it-works/ecash/blind-signatures@1x.png"
+   retina = "/assets/images/guide/how-it-works/ecash/blind-signatures@2x.png"
    mobile = "/assets/images/guide/how-it-works/ecash/ecash-mobile.jpg"
    mobileRetina = "/assets/images/guide/how-it-works/ecash/ecash-mobile@2x.jpg"
    alt-text = "Illustratin showing how a blinded signature works."
