@@ -106,7 +106,7 @@ The spectrum of decentralization and custody for Bitcoin ranges from highly dece
             <td>Privacy</td>
             <td>✅</td>
             <td>❌</td>
-            <td>Ecash uses Chaumian blinding, which enhances privacy by making it difficult to trace transactions back to individuals. Custodial lightningpProvides less privacy as the custodian has visibility over transactions and user activities. </td>
+            <td>Ecash uses Chaumian blinding, which enhances privacy by making it difficult to trace transactions back to individuals. Custodial lightning provides less privacy as the custodian has visibility over transactions and user activities. </td>
          </tr>
          <tr>
             <td>Secure Against Theft (Rug Pulls)</td>
