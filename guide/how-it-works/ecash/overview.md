@@ -106,7 +106,7 @@ The spectrum of decentralization and custody for Bitcoin ranges from highly dece
             <td>Privacy</td>
             <td>✅</td>
             <td>❌</td>
-            <td>Ecash uses Chaumian blinding, which enhances privacy by making it difficult to trace transactions back to individuals. Custodial lightning provides less privacy as the custodian has visibility over transactions and user activities. </td>
+            <td>Ecash uses Chaumian blinding, which makes it difficult to trace transactions back to individuals. Custodial lightning provides less privacy as the custodian has visibility over transactions and user activities. </td>
          </tr>
          <tr>
             <td>Secure Against Theft (Rug Pulls)</td>
@@ -176,16 +176,20 @@ The process of crearting ecash on bitcoin is known as minting. This process typi
 **2. Blinded Token Creation** - The mint generates blinded tokens, which are cryptographic representations of the deposited funds. The blinding process ensures that the mint cannot link the tokens to the user, preserving privacy.
 
 {% include picture.html
-   image = "/assets/images/guide/how-it-works/ecash/ecash.jpg"
-   retina = "/assets/images/guide/how-it-works/ecash/ecash@2x.jpg"
+   image = "/assets/images/guide/how-it-works/ecash/blind-signatures@1x.pngg"
+   retina = "/assets/images/guide/how-it-works/ecash/blind-signatures@2x.pngg"
    mobile = "/assets/images/guide/how-it-works/ecash/ecash-mobile.jpg"
    mobileRetina = "/assets/images/guide/how-it-works/ecash/ecash-mobile@2x.jpg"
-   alt-text = "Mint creation"
+   alt-text = "Illustratin showing how a blinded signature works."
    width = 800
    height = 456
 %}
 
-**3. Issue Tokens** - The mint signs the blinded tokens and returns them to the user. The user then unblinds these tokens, which can now be used as ecash. The process ensures that the mint can verify the validity of tokens without knowing their origins, maintaining user anonymity.
+**1.** Alice places their ecash token request inside an envelope. This process, known as 'blinding,' ensures that the details of the request are hidden from the mint. This means the mint cannot see the specific details of the token request.
+
+**2.** The closed envelope, now containing the blinded token request, is sent to the mint. The mint signs the outside of the envelope without ever seeing the contents inside. This way, the mint can issue a valid cryptographic signature on the ecash tokens without knowing the specific details of the request, preserving the user's privacy.
+
+**3.** Alice removes the token request from the signed envelope. The request now has the mint's cryptographic signature, validating the ecash tokens while keeping the details private and unseen by the mint. This makes the tokens valid and untraceable to the original request.
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/ecash/ecash.jpg"
