@@ -105,7 +105,7 @@ So far, the wallet has been created on Bob's app. The next step is to get Alice 
 The first step is to add the family savings wallet on Alice's app.
 
 #### Bob shares the wallet configuration
-Bob shares the wallet configuration with Alice by tapping on the "onboard cosigner" task. Just like during wallet creation, the displays a QR code that Alice can scan to import the configuration. Alternatively, Bob can share the configuration over a secure channel.
+Bob shares the wallet configuration with Alice by tapping on the "onboard cosigner" task. Just like during wallet creation, this displays a QR code that Alice can scan to import the configuration. Alternatively, Bob can share the configuration over a secure channel.
 
 {% include image-gallery.html pages = page.images_bob-export-config %}
 
