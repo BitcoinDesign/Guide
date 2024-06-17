@@ -102,7 +102,7 @@ So far, the wallet has been created on Bob's app. The next step is to get Alice 
 2. Enable her Bitbox to sign transactions. 
 
 ### Wallet onboarding
-The firs step is to add the family savings wallet on Alice's app.
+The first step is to add the family savings wallet on Alice's app.
 
 #### Bob shares the wallet configuration
 Bob shares the wallet configuration with Alice by tapping on the "onboard cosigner" task. Just like during wallet creation, the displays a QR code that Alice can scan to import the configuration. Alternatively, Bob can share the configuration over a secure channel.
