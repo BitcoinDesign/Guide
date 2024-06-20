@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: User personas
-description: How to use bitcoin user personas to build better products
+description: How to use bitcoin user personas to build better products, including several bitcoin-specific personas
 parent: Designing bitcoin products
 nav_order: 4
 permalink: /guide/designing-products/user-personas/
