@@ -47,7 +47,7 @@ The benefits to the user experience include:
 
 Ideally human-readable addresses <b>should only</b> be used for direct communication. Whenever payment information is communicated digitally (copy & paste, links, QR codes, messaging, etc), cryptographic formats should be used for the best security and privacy.
 
-On this page, we focus primarily on the [DNS Payment Instructions proposal](https://github.com/bitcoin/bips/pull/1551), with some information about [Lightning Addresses](https://lightningaddress.com). They pursue similar goals, but in very different ways.
+On this page, we focus primarily on the [BIP353 for DNS Payment Instructions](https://github.com/bitcoin/bips/blob/master/bip-0353.mediawiki), with some information about [Lightning Addresses](https://lightningaddress.com). They pursue similar goals, but in very different ways.
 
 ### The basic idea
 
@@ -69,9 +69,7 @@ There are various technical approaches to resolve addresses. We’ll learn more 
 
 Every approach requires at least one intermediary that is being contacted to serve the payment information.
 
-This brings up important questions around privacy and security. Intermediaries can potentially serve up different payment information than a user specified. Or they can track requests and metadata to build profiles of users and user behavior. If these intermediate hops are not fully controlled by the user, the address should be considered custodial (or at least semi-custodial).
-
-For the same reasons, wallets should resolve human-readable addresses only once, and then use the received payment information directly.
+This brings up important questions around privacy and security. Intermediaries can potentially serve up different payment information than a user specified. Or they can track requests and metadata to build profiles of users and user behavior. If these intermediate hops are not controlled by the user, the address should be considered custodial. To be clear, intermediaries cannot move funds at the user-provided address. They can only re-route incoming funds or prevent payment information retrieval. 
 
 ### Address format basics
 
@@ -83,23 +81,23 @@ From email and social media, we are familiar with addresses consisting of a <spa
 
 For social media, users know to navigate to the respective website or app and look up the username there. Applications rely on domains (via the [Domain Name System](https://en.wikipedia.org/wiki/Domain_Name_System), or DNS) to resolve the global part. In physical addresses, we have more hierarchical parts - country, state, city, street, house number and apartment. It is a familiar system.
 
-## DNS Payment Instructions
+## BIP353: DNS Payment Instructions
 
-This [proposal](https://github.com/BitcoinDesign/Meta/issues/638) only relies on the Domain Name System (DNS) to retrieve payment information. It is a decentralized hierarchical naming system used to translate human-friendly domain names (like *www.example.com*) into IP addresses (like *192.0.2.1*) that computers use to identify each other on the network. Anytime we type in a domain into a browser, we rely on this system.
+This [proposal](https://github.com/bitcoin/bips/blob/master/bip-0353.mediawiki) only relies on the Domain Name System (DNS) to retrieve payment information. It is a decentralized hierarchical naming system used to translate human-friendly domain names (like *www.example.com*) into IP addresses (like *192.0.2.1*) that computers use to identify each other on the network. Anytime we type in a domain into a browser, we rely on this system.
 
 {% include tip/open.html color="blue" label="Note" icon="info" %}
 
-This is a new proposal for a [BIP]({{'/guide/glossary/#bip---bitcoin-improvement-proposal' | relative_url}}). It is still being discussed.
+This is a new proposal. It is still being discussed, and not widely implemented.
 
 {% include tip/close.html %}
 
 ### Address format
 
-This proposal uses the format *“₿<span class="-green">username</span>@<span class="-blue">domain.com</span>”*. This is similar to email, which makes it familiar and easy to use. The *₿* prefix is an important addition to make it distinct from email addresses as a bitcoin payment address. This provides clarity and trust to users, which is important when it comes to financial transactions.
+This proposal uses the formats *“<span class="-green">username</span>@<span class="-blue">domain.com</span>”* and *“₿<span class="-green">username</span>@<span class="-blue">domain.com</span>”*. This is similar to the email address format, which makes it familiar and easy to use. The *₿* prefix is an important addition for display purposes, to make it distinctly a bitcoin payment address. This provides clarity and trust to users, which is important when it comes to financial transactions.
 
 ### How it works
 
-Users create DNS entries with payment information, which can be one or more addresses of different formats, combined to a [BIP 21 URI](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki). Since address reuse is best avoided for privacy reasons, the included addresses should only be static payment codes (like [silent payment codes](https://gist.github.com/RubenSomsen/c43b79517e7cb701ebf77eec6dbb46b8) and [BOLT12](https://bolt12.org/) offers).
+Users create DNS entries with payment information, which can be one or more addresses of different formats, combined to a [BIP 21 URI](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki). Since address reuse is best avoided for privacy reasons, the included addresses should only be static payment codes (like [silent payment codes](https://silentpayments.xyz/) and [BOLT12](https://bolt12.org/) offers). Single-use addresses can be used if needed, but a mechanism to rotate them should be in place.
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/human-readable-addresses/dns-payment-instructions-mapping.png"
@@ -158,7 +156,7 @@ Framing the correct use of the address should be done right away and as early in
 
 #### Setup
 
-Hosting human-readable addresses carries legal and financial responsibility, so many non-custodial wallets are unlikely to offer this feature. However, they should still make it easy to copy payment information for setting up addresses on domains owned by the user or a third party of their choice.
+Hosting human-readable addresses carries a responsibility, and non-custodial wallets that don't provide additional services outside of the software may not want to offer this feature. However, they should still make it easy to copy payment information for setting up addresses on domains owned by the user or a third party of the user's choice.
 
 It is important to provide users with a simple setup experience for human-readable addresses. They are likely to use them for a long time, and need to be able to trust that everything is set up correctly.
 
@@ -227,7 +225,7 @@ While it is unlikely that users will type in the more complex address types, an 
 
 #### Keeping users informed
 
-The payment information associated with addresses in contacts may change or even become invalid. Wallets should ensure to inform the user of updates to review or act on.
+The payment information associated with addresses in contacts may change or even become invalid. Wallets should ensure to inform the user of updates to review or act on. This is best done at the time the user wants to initiate a payment to a contact.
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/human-readable-addresses/update.png"
@@ -241,7 +239,7 @@ The payment information associated with addresses in contacts may change or even
 
 ## Lightning Address
 
-Compared to DNS Payment Instructions, [Lightning Addresses](http://lightningaddress.com) are focused on the lightning network only, bringing another intermediary into play, allowing for much more dynamic functionality.
+Compared to DNS Payment Instructions, [Lightning Addresses](http://lightningaddress.com) are focused on the lightning network only. They bring another intermediary into play, and allow for much more dynamic functionality.
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/human-readable-addresses/lightning-address-mapping.png"
