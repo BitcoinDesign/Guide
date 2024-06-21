@@ -28,12 +28,7 @@
             letter-spacing: -0.5px;
             color: var(--frontHex);
             transition: color 100ms $ease;
-            // outline: none;
             white-space: nowrap;
-
-            &:focus {
-                outline: 2px solid var(--primary-color);
-            }
 
             svg {
                 width: 40px;
@@ -50,7 +45,8 @@
                 color: $site-title-color;
             }
 
-            &:focus {
+            &:focus-visible {
+                outline: 2px solid var(--primary-color);
                 background-color: rgba(var(--primary-color), 0.05);
             }
 
