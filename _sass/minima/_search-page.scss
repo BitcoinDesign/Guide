@@ -23,7 +23,7 @@
       box-sizing: border-box;
 
       &:active,
-      &:focus {
+      &:focus-visible {
         border-color: var(--primary-color);
         outline: none;
       }

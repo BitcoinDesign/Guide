@@ -82,7 +82,7 @@
       }
 
       &:active,
-      &:focus {
+      &:focus-visible {
         border-width: 0;
         background-color: rgba(var(--primary-color-rgb), 0.1);
       }
