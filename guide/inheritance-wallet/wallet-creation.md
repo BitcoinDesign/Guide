@@ -306,7 +306,7 @@ Bob and Alice already met with Edward, their lawyer, ahead of the family meeting
 During the family reunion, Bob opens our application and resumes the wallet creation process. Just like with Alice's key, he creates a key request for Christina and David.
 
 ##### Christina creates a new key in the app
-Christina could follow the same procedure for importing a key from her existing signing device, as described above. However, Christina does not want to use her existing hardware wallet from the family savings. Instead, she wants to create a new key for the family savings wallet, so that she can keep it on a seperate signing device. 
+Christina could follow the same procedure for importing a key from her existing signing device, as described above. However, Christina does not want to use her existing hardware wallet from the family savings. Instead, she wants to create a new key for the family savings wallet, so that she can keep it on a separate signing device. 
 
 The mockups below show how our app allows Christina to generate an entirely new key and provide it to her father.
 
