@@ -217,7 +217,7 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
 
 Now that we have a [good understanding]({{ '/guide/inheritance-wallet/overview/' | relative_url }}) of how Bob and Alice want to set up their inheritance wallet, let's take a close look at the first use experience and wallet setup.
 
-After downloading the app, the app walks them through the purpose of the product and highlights some of the most important features. 
+After downloading the app, it walks them through the purpose of the product and highlights some of the most important features. 
 
 {% include image-gallery.html pages = page.images_wallet-creation %}
 
