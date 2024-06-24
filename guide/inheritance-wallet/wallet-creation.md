@@ -280,7 +280,7 @@ Bob gets started and imports the first two keys by himself. One from his persona
 {% include image-gallery.html pages = page.images_primary-keys-bob %}
 
 ##### Bob requests the third key from Alice
-Next, it's time to add Alice's key, which will be imported from her Bitbox. Our app makes this process easy, because Bob can just create a key request that Alice can scan with her phone. Alternatively, he can also send it to her via a secure channel.
+Next, it's time to add Alice's key, which will be imported from her BitBox. Our app makes this process easy, because Bob can just create a key request that Alice can scan with her phone. Alternatively, he can also send it to her via a secure channel.
 
 {% include image-gallery.html pages = page.images_primary-keys-request-alice %}
 
