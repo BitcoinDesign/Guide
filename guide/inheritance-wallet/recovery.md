@@ -114,7 +114,7 @@ One day, a couple of years later, Christina and David get sad news: their parent
 ### Accessing the backup material
 
 There, they found the PIN  to unlock the safe in their parents’ house.
-Upon opening the safe, they find the tamper-evident bags which hold the wallet recovery kit and the recovery kit password. We have covered the entire backup process [here]().
+Upon opening the safe, they find the tamper-evident bags which hold the wallet recovery kit and the recovery kit password. We have covered the entire backup process [here]({{ '/guide/inheritance-wallet/backup/' | relative_url }}).
 
 ### Recovering the wallet
 
@@ -122,7 +122,7 @@ Christina and Edward take the recovery PDF out of the bag. On the first page the
 
 {% include image-gallery.html pages = page.images_wallet-import %}
 
-However, there is a catch: they cannot spend the funds with their inheritance keys, because they have not been unlocked yet. We have covered the wallet configuration in more detail on the [use case page]().
+However, there is a catch: they cannot spend the funds with their inheritance keys, because they have not been unlocked yet. We have covered the wallet configuration in more detail on the [use case page]({{ '/guide/inheritance-wallet/use-case-and-scope/' | relative_url }}).
 Alice’s and Bob's last transaction was 4 months ago, which means that it will take another 8 months until Christina and David can use their signing devices to move their inheritance funds. They could circumvent this restriction, if they would have access to their parents’ signing devices. Unfortunately, they don’t, so they will need to wait. 
 
 ### Distributing the inheritance
