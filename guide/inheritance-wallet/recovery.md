@@ -109,25 +109,24 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
 
 ---
 
-One day, a couple of years later, Christina and David get sad news: their parents, Alice and Bob, were involved in a car accident, which none of them survived. While dealing with the inheritance proceedings, Christina and David go to their shared family vault in their password manager. 
+One day, a couple of years later, Christina and David get sad news that their parents, Alice and Bob, were involved in a deadly car accident. While dealing with the inheritance proceedings, Christina and David log in to their shared family vault in their password manager. 
 
 ### Accessing the backup material
 
-There, they found the PIN  to unlock the safe in their parents’ house.
+There, they find the PIN  to unlock the safe in their parents’ house.
 Upon opening the safe, they find the tamper-evident bags which hold the wallet recovery kit and the recovery kit password. We have covered the entire backup process [here]({{ '/guide/inheritance-wallet/backup/' | relative_url }}).
 
 ### Recovering the wallet
 
-Christina and Edward take the recovery PDF out of the bag. On the first page they see the QR code with the wallet configuration. Both of them scan the code with their phones to import the wallet. Once they have done that, they see the wallet, including the balance. 
+Christina and David open the bag and take the recovery PDF, which holds the wallet configuration as well as the information about all signing keys. On the first page they see the QR code with the wallet configuration. Both of them scan the code with their phones to import the wallet to our application. Once they have done that, they can see the wallet, including the balance and past activity. 
 
 {% include image-gallery.html pages = page.images_wallet-import %}
 
-However, there is a catch: they cannot spend the funds with their inheritance keys, because they have not been unlocked yet. We have covered the wallet configuration in more detail on the [use case page]({{ '/guide/inheritance-wallet/use-case-and-scope/' | relative_url }}).
-Alice’s and Bob's last transaction was 4 months ago, which means that it will take another 8 months until Christina and David can use their signing devices to move their inheritance funds. They could circumvent this restriction, if they would have access to their parents’ signing devices. Unfortunately, they don’t, so they will need to wait. 
+However, there is a catch: they cannot spend the funds with their inheritance keys, because they have not been unlocked yet. Alice’s and Bob's last transaction was almost 5 months ago, which means that it will take more than 7 months until Christina and David can use their inheritance keys to move the funds. We have covered the wallet configuration in more detail on the [use case page]({{ '/guide/inheritance-wallet/use-case-and-scope/' | relative_url }}). Christina and David could circumvent this restriction, if they would have access to their parents’ signing devices. Unfortunately, they don’t, so they will need to wait. 
 
 ### Distributing the inheritance
 
-After the time expires, Chrstina and David get together over dinner, and send half of the funds to Christina’s wallet and the other half to David’s wallet.
+After the timelock for the inheritance key set expires, Chrstina and David get together over dinner. They want to send half of the funds to Christina’s personal wallet and the other half to David’s wallet.
 
 {% include image-gallery.html pages = page.images_inheritance-transaction-create %}
 
