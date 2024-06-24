@@ -126,7 +126,7 @@ However, there is a catch: they cannot spend the funds with their inheritance ke
 
 ### Distributing the inheritance
 
-After the timelock for the inheritance key set expires, Chrstina and David get together over dinner. They want to send half of the funds to Christina’s personal wallet and the other half to David’s wallet.
+After the timelock for the inheritance key set expires, Christina and David get together over dinner. They want to send half of the funds to Christina’s personal wallet and the other half to David’s wallet.
 
 {% include image-gallery.html pages = page.images_inheritance-transaction-create %}
 
