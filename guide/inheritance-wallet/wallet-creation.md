@@ -244,7 +244,7 @@ Try out the prototype below. It covers the entire wallet creation process.
 
 ## Step 1: Wallet configuration
 
-The first is the wallet configuration, where Bob and Alice define the rules for how the wallet should work. In the second part, they add all the signing keys.
+We start with wallet configuration, where Bob and Alice define the rules for how the wallet should work. In the second part, they add all the signing keys.
 
 #### Creating the primary key set
 
