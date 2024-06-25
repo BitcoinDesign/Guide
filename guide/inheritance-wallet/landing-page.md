@@ -7,7 +7,6 @@ has_children: true
 permalink: /guide/inheritance-wallet/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/inheritance-wallet/preview.jpg
-image_base: /assets/images/guide/inheritance-wallet/
 
 ---
 
