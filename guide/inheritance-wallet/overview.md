@@ -48,7 +48,7 @@ Meet the Jones family: Bob, Alice and their two children Christina (24) and Davi
    height = 800
 %}
 
-Alice and Bob have been using a [shared multi-key wallet](https://bitcoin.design/guide/shared-wallet/) as a family checking account for a few years already. This wallet is used for general spending, while each of them manage their income, personal spending and savings using their individual single-key wallets. 
+Alice and Bob have been using a [shared multi-key wallet]({{ '/guide/shared-wallet/' | relative_url }}) as a family checking account for a few years already. This wallet is used for general spending, while each of them manage their income, personal spending and savings using their individual single-key wallets. 
 
 The couple now feels that the time is right to consolidate the family savings and to include their children in securing them. They will still keep the savings separated from their checking wallet.
 
@@ -74,7 +74,7 @@ Based on their initial requirements, Alice and Bob decided on having two key set
 Below is an overview of what the configuration of the family's savings wallet will look like:
 
 - **A 2-of-3 primary key set for normal spending**. Since it is a savings wallet, Alice and Bob will spend only very infrequently.
-- **A timelocked [recovery path](https://bitcoin.design/guide/savings-wallet/time-based-recovery/)** in case they lose two of the three keys. The timelock enables moving the funds with just one of the keys if no signing has occurred within a set time, in this case we'll set it to 6 months.
+- **A timelocked [recovery path]({{ 'guide/savings-wallet/time-based-recovery/' | relative_url }})** in case they lose two of the three keys. The timelock enables moving the funds with just one of the keys if no signing has occurred within a set time, in this case we'll set it to 6 months.
 - **A dedicated 2-of-3 inheritance key set**, which is unlocked 6 months after the recovery key set was unlocked and has not been used. Christina and David will each hold one of the inheritance keys. Edward will hold the third key to assist the children, if necessary.
 
 {% include picture.html
@@ -118,7 +118,7 @@ The goal for this reference design is to build an application that relies on the
 
 #### Interoperability
 
-An important aspect to consider is the demise of our application itself. What if, during the course of the years, the developers of our application decide to abandon the project? Or if it gets removed from the app stores? Ensuring a high degree of [interoperability](https://bitcoin.design/guide/getting-started/principles/#interoperability) with protocol standards will allow users to easily move their wallet to a different application.
+An important aspect to consider is the demise of our application itself. What if, during the course of the years, the developers of our application decide to abandon the project? Or if it gets removed from the app stores? Ensuring a high degree of [interoperability]({{ '/guide/getting-started/principles/#interoperability' | relative_url }}) with protocol standards will allow users to easily move their wallet to a different application.
 
 Therefore, our application will create a wallet based on broadly supported open standards, such as [Miniscript]({{ '/guide/glossary/#miniscript' | relative_url }}). 
 

@@ -45,7 +45,7 @@ Imagine a product that helps you create and use a custody setup for your bitcoin
 
 On top of that, the app allows you to add your heirs' hardware wallets and use them to create a dedicated inheritance key set. Since it is designed for long-term storage, it also includes regular key checks and other supporting features. 
 
-All of this is done without compromising your financial privacy. You don't want anyone to know how much bitcoin you have or monitor your transactions.
+All of this is done without compromising your financial privacy. You don't want anyone to know how much bitcoin you have or to monitor your transactions.
 
 ## Chapters
 
@@ -63,7 +63,7 @@ All of this is done without compromising your financial privacy. You don't want 
    link-url = "/guide/inheritance-wallet/introduction/"
 %}
 
-Before we dive into the details, we will introduce you to the Jones family. We are also going to look at how they plan set up their family savings in general. 
+Before we dive into the details, we will introduce you to the Jones family. We are also going to look at how they plan to set up their family savings in general. 
 
 </div>
 
@@ -103,7 +103,7 @@ Our application lets users create flexible multi-key wallets with timelocked rec
    link-url = "/guide/inheritance-wallet/backup/"
 %}
 
-When backing up multi-key wallets there are more moving parts to consider than with single-key wallets. Our application helps users with that. 
+When backing up multi-key wallets, there are more moving parts to consider than with single-key wallets. Our application helps users with that. 
 
 </div>
 
@@ -143,7 +143,7 @@ To help users make sure that their wallet works as intended, the app offers feat
    link-url = "/guide/inheritance-wallet/regular-use/"
 %}
 
-Involving the potential heirs early on is great, but it also has potential implications when it comes to privacy and security. Our application combines built-in features with social processes to mitigate this risk. It also helps to prevent premature activation of the inheritance keys. 
+Involving the potential heirs early on is great, but it also has implications for privacy and security. Our application combines built-in features with social processes to mitigate this risk. It also helps to prevent premature activation of the inheritance keys. 
 
 </div>
 
@@ -163,7 +163,7 @@ Involving the potential heirs early on is great, but it also has potential impli
    link-url = "/guide/inheritance-wallet/managing-change/"
 %}
 
-Over time it might become necessary for users to make changes to their savings wallet because someone lost a key or they want to make changes to the overall wallet configuration. Our app helps users to make such changes and update the backup and inheritance documentation.
+Over time, it might become necessary for users to make changes to their savings wallet because someone lost a key or they want to make changes to the overall wallet configuration. Our app helps users make such changes and update the backup and inheritance documentation.
 
 </div>
 
@@ -190,7 +190,7 @@ When it's time for the heirs to claim their inheritance, the Jones' children can
 --- 
 
 **Resources**
-- All illustrations, mockups and interactive prototypes are available in this [Figma design file](https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type=design&node-id=5542%3A2119&mode=design&t=sBtcvrDzb8MPtWaK-1)
+- All illustrations, mockups and interactive prototypes are available in this [Figma design file](https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type=design&node-id=5542%3A2119&mode=design&t=sBtcvrDzb8MPtWaK-1).
 - The [Custom spending conditions]({{ '/guide/how-it-works/custom-spending-conditions/' | relative_url }}) page provides an introduction to how timelocks work in bitcoin.
 
 ---
