@@ -20,7 +20,7 @@ images_creation-wallet-basics:
 
 Editor's notes
 
-This page covers ....  
+This page sets the context of the reference design and provides on overview of the overall scope, as well as short introductions to the individual chapters.  
 
 Illustration sources
 
@@ -40,7 +40,7 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
 # Family inheritance wallet 
 {: .no_toc }
 
-The family inheritance wallet is an app designed to create flexible wallets for family savings. It offers features designed to help with sustainable long-term storage and inheritance planning.
+The family inheritance wallet is a design exploration for an app designed to create flexible wallets for family savings. It suggests features designed to help with sustainable long-term storage and inheritance planning.
 
 But when it comes to inheritance, technology is not everything. Knowledge, documentation, practice  and social  processes are important for any setup to work over the long term. This exploration includes not only designs and prototypes of the wallet application, but also thoughts around social processes to ensure that funds will not be lost.
 

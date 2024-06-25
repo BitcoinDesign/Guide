@@ -254,7 +254,7 @@ Bob starts the wallet creation process on his phone, while Alice will use the ap
 
 #### Enabling the recovery path
 
-After configuring the primary key set, the app asks the users whether they would like to enable a recovery path. The recovery path uses the same keys that are part of the primary key set and unlocks after 6 months of inactivity. If it is unlocked, only one signature will be required to spend bitcoin, instead of two. We have covered this in the time-based reference design as well.
+After configuring the primary key set, the app asks the users whether they would like to enable a recovery path. The recovery path uses the same keys that are part of the primary key set and unlocks after 6 months of inactivity. If it is unlocked, only one signature will be required to spend bitcoin, instead of two. We have covered this in the [time-based recovery]({{ '/guide/savings-wallet/time-based-recovery/' | relative_url }}) reference design as well.
 
 {% include image-gallery.html pages = page.images_recovery-path %}
 
