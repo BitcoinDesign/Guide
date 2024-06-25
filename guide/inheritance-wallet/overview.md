@@ -13,7 +13,7 @@ main_classes: -no-top-padding
 
 Editor's notes
 
-This page covers ....  
+This page covers describes the use case and personas for this reference design.   
 
 Illustration sources
 
