@@ -157,6 +157,17 @@ The spectrum of decentralization and custody for Bitcoin ranges from highly dece
 </div>
 
 ## Advantadges of ecash on bitcoin
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/ecash/connected@1x.png"
+   retina = "/assets/images/guide/how-it-works/ecash/connected@2x.png"
+   mobile = "/assets/images/guide/how-it-works/ecash/connected@1x.png"
+   mobileRetina = "/assets/images/guide/how-it-works/ecash/connected@2x.png"
+   alt-text = "An illustration of cashu, fedimint, and lightning nodes connected in a mesh network."
+   caption = "“Lightning is the connective tissue between ecash and Bitcoin."
+   width = 800
+   height = 456
+   layout = "full-width"
+%}
 
 * **Enhanced Privacy** - Ecash uses blinded signatures, ensuring that transaction details, including user identities and amounts, remain hidden. This level of privacy is superior to traditional Bitcoin transactions.
 
@@ -215,11 +226,6 @@ The process of creating ecash on Bitcoin is known as **minting.** The process of
 %}
 Sending ecash and receiving can be done via multiple methods to suit different transaction needs. One of the advantages of ecash is that users are simply transacting pieces of data, such as a string of JSON text. These pieces of data are very flexible and can be transmitted via any medium. This means ecash can be transmitted in any way that data can be transmitted. Some unique ways that ecash can be sent and received, which are not possible with on-chain or Lightning transactions, include:
 
-1.	Text message, such as email or SMS
-2.	Bluetooth transmission
-3.	Over the Bitcoin Lightning Network
-4.	QR codes, which enable physical bearer assets like paper notes or coins
-
 #### Text message, such as email or SMS:
 Another method to send ecash is by copying and pasting the token string. This is particularly useful for online transactions or when using text-based communication platforms.
 
@@ -227,7 +233,7 @@ Another method to send ecash is by copying and pasting the token string. This is
 Most applications allow users to share a token via Bluetooth. However, more comprehensive Bluetooth sending and receiving functionalities have not yet been fully developed. As a result, when a user attempts to share an ecash token via Bluetooth, the most common outcome is that the receiving device does not know how to handle it.
 
 #### QR codes:
-Ecash can also be received by scanning a QR code that contains an embedded token. This method is particularly useful for in-person transactions or quick transfers.
+Ecash can also be received by scanning a QR code that contains an embedded token. This method is particularly useful for in-person transactions or quick transfers. QR redemption also enables physical bearer assets like paper notes or coins.
 
 #### Lightning Network:
 Users can send and receive ecash by generating a LN invoice through the mint (either Cashu or Fedimint) and paying it. Upon successful payment, the mint issues the corresponding ecash tokens to the user.
