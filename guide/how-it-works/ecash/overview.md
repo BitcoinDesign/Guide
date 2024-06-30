@@ -49,6 +49,20 @@ Ecash is a digital payment system that uses cryptographic techniques to ensure s
 ## How ecash on bitcoin works
 Ecash on Bitcoin enhances privacy and security by using tokens for transactions. This section explains how you can create, use, receive, and convert ecash back to Bitcoin. You'll learn how protocols like Cashu and Fedimint make transactions more private and reduce onboarding friction, improving the overall user experience of transacting in Bitcoin.
 
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/ecash/how-ecash-works@1x.png"
+   retina = "/assets/images/guide/how-it-works/ecash/how-ecash-works@2x.png"
+   mobile = "/assets/images/guide/how-it-works/ecash/how-ecash-works@2x.png"
+   mobileRetina = "assets/images/guide/how-it-works/ecash/how-ecash-works@2x.png"
+   alt-text = "An illustration of how ecash is generated."
+   caption = "How ecash is generated."
+   width = 800
+   height = 456
+   layout = "full-width"
+%}
+
+Ecash on Bitcoin works by using protocols like Fedimint and Cashu, which both implement blinded signatures to ensure privacy and security. Users deposit Bitcoin, and in return, they receive ecash tokens that are backed by these deposits. The blinded signatures allow the tokens to be issued without revealing transaction details, ensuring strong privacy guarantees. Users can then spend and receive these ecash tokens, which remain anonymous and unlinkable to their identity, enabling private transactions within the Bitcoin ecosystem.
+
 ## Bitcoin custody spectrum
 {% include picture.html
    image = "/assets/images/guide/how-it-works/ecash/custody-spectrum@1x.png"
@@ -160,18 +174,6 @@ The spectrum of decentralization and custody for Bitcoin ranges from highly dece
 The process of crearting ecash on bitcoin is known as minting. This process typically includes the following steps:
 
 **1. User Deposits Funds** - The user deposits Bitcoin or sats into a mint. In Cashu, this is done by sending Bitcoin to the mint’s address. In Fedimint, the process is similar but involves federated entities.
-
-{% include picture.html
-   image = "/assets/images/guide/how-it-works/ecash/how-ecash-works@1x.png"
-   retina = "/assets/images/guide/how-it-works/ecash/how-ecash-works@2x.png"
-   mobile = "/assets/images/guide/how-it-works/ecash/how-ecash-works@2x.png"
-   mobileRetina = "assets/images/guide/how-it-works/ecash/how-ecash-works@2x.png"
-   alt-text = "An illustration of how ecash is generated."
-   caption = "How ecash is generated."
-   width = 800
-   height = 456
-   layout = "full-width"
-%}
 
 **2. Blinded Token Creation** - The mint generates blinded tokens, which are cryptographic representations of the deposited funds. The blinding process ensures that the mint cannot link the tokens to the user, preserving privacy.
 
