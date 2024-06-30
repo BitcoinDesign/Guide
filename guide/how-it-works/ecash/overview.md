@@ -54,8 +54,8 @@ Ecash on Bitcoin enhances privacy and security by using tokens for transactions.
    retina = "/assets/images/guide/how-it-works/ecash/how-ecash-works@2x.png"
    mobile = "/assets/images/guide/how-it-works/ecash/how-ecash-works@2x.png"
    mobileRetina = "assets/images/guide/how-it-works/ecash/how-ecash-works@2x.png"
-   alt-text = "An illustration of how ecash is generated."
-   caption = "How ecash is generated."
+   alt-text = "An illustration of how users, ecash, and ecash mints interact."
+   caption = "How users interact with ecash mints and the lightning network."
    width = 800
    height = 456
    layout = "full-width"
@@ -170,111 +170,64 @@ The spectrum of decentralization and custody for Bitcoin ranges from highly dece
 
 * **Reduced Trust Assumptions** - While users deposit funds with a mint, the design minimizes the level of trust required compared to traditional custodial wallets. The mint does not have access to user transaction data or balances.
 
-### Mitning ecash
-The process of crearting ecash on bitcoin is known as minting. This process typically includes the following steps:
+### Creating and redeeming ecash
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/ecash/creation-and-redemption@1x.png"
+   retina = "/assets/images/guide/how-it-works/ecash/creation-and-redemption@2x.png"
+   mobile = "/assets/images/guide/how-it-works/ecash/creation-and-redemption@2x.png"
+   mobileRetina = "assets/images/guide/how-it-works/ecash/creation-and-redemption@2x.png"
+   alt-text = "An illustration of the process of creating and redeeming ecash tokens"
+   caption = "Creating and redeeming ecash tokens."
+   width = 800
+   height = 456
+   layout = "full-width"
+%}
+
+The process of creating ecash on Bitcoin is known as **minting.** The process of redeeming ecash into sats via the Lightning Network is known as **melting.** This process typically includes the following steps:
+
+#### Minting ecash
 
 **1. User Deposits Funds** - The user deposits Bitcoin or sats into a mint. In Cashu, this is done by sending Bitcoin to the mint’s address. In Fedimint, the process is similar but involves federated entities.
 
 **2. Blinded Token Creation** - The mint generates blinded tokens, which are cryptographic representations of the deposited funds. The blinding process ensures that the mint cannot link the tokens to the user, preserving privacy.
 
+**3. Mint provides Tokens to User** - The user receives a set of tokens that can be combined to create an ecash token of any amount denominated in Bitcoin.
+
+#### Melting ecash
+
+**1. User Initiates Melting** The user requests to redeem their ecash tokens for sats. This is typically done through a wallet or platform that supports melting.
+
+**2. Token destruction** The mint verifies and destroys the ecash tokens, ensuring they cannot be reused. This step confirms the authenticity of the tokens and maintains the integrity of the system.
+
+**3. Sats Transfer via Lightning Network** The user receives an equivalent amount of sats through the Lightning Network, completing the melting process and converting ecash back into spendable Bitcoin.
+
+### Sending and receiving ecash
 {% include picture.html
-   image = "/assets/images/guide/how-it-works/ecash/blind-signatures@1x.png"
-   retina = "/assets/images/guide/how-it-works/ecash/blind-signatures@2x.png"
-   mobile = "/assets/images/guide/how-it-works/ecash/ecash-mobile.jpg"
-   mobileRetina = "/assets/images/guide/how-it-works/ecash/ecash-mobile@2x.jpg"
-   alt-text = "Illustratin showing how a blinded signature works."
+   image = "/assets/images/guide/how-it-works/ecash/creation-and-redemption@1x.png"
+   retina = "/assets/images/guide/how-it-works/ecash/creation-and-redemption@2x.png"
+   mobile = "/assets/images/guide/how-it-works/ecash/creation-and-redemption@2x.png"
+   mobileRetina = "assets/images/guide/how-it-works/ecash/creation-and-redemption@2x.png"
+   alt-text = "An illustration of the process of creating and redeeming ecash tokens"
+   caption = "Creating and redeeming ecash tokens."
    width = 800
    height = 456
+   layout = "full-width"
 %}
+Sending ecash and receiving can be done via multiple methods to suit different transaction needs. One of the advantages of ecash is that users are simply transacting pieces of data, such as a string of JSON text. These pieces of data are very flexible and can be transmitted via any medium. This means ecash can be transmitted in any way that data can be transmitted. Some unique ways that ecash can be sent and received, which are not possible with on-chain or Lightning transactions, include:
 
-**1.** Alice places their ecash token request inside an envelope. This process, known as 'blinding,' ensures that the details of the request are hidden from the mint. This means the mint cannot see the specific details of the token request.
+1.	Text message, such as email or SMS
+2.	Bluetooth transmission
+3.	Over the Bitcoin Lightning Network
+4.	QR codes, which enable physical bearer assets like paper notes or coins
 
-**2.** The closed envelope, now containing the blinded token request, is sent to the mint. The mint signs the outside of the envelope without ever seeing the contents inside. This way, the mint can issue a valid cryptographic signature on the ecash tokens without knowing the specific details of the request, preserving the user's privacy.
-
-**3.** Alice removes the token request from the signed envelope. The request now has the mint's cryptographic signature, validating the ecash tokens while keeping the details private and unseen by the mint. This makes the tokens valid and untraceable to the original request.
-
-{% include picture.html
-   image = "/assets/images/guide/how-it-works/ecash/ecash.jpg"
-   retina = "/assets/images/guide/how-it-works/ecash/ecash@2x.jpg"
-   mobile = "/assets/images/guide/how-it-works/ecash/ecash-mobile.jpg"
-   mobileRetina = "/assets/images/guide/how-it-works/ecash/ecash-mobile@2x.jpg"
-   alt-text = "Mint creation"
-   width = 800
-   height = 456
-%}
-
-### Sending ecash
-Sending ecash can be done via multiple methods to suit different transaction needs. Here’s how you can receive ecash using either protocol:
-
-#### Sending an ecash Token via QR Code:
-Sending ecash can be done efficiently by using a QR code that contains the token. This method is particularly useful for in-person transactions or quick transfers.
-
-**1.** Generate a token for the desired amount in your Cashu or Fedimint wallet.
-
-**2.** Convert the generated token into a QR code within your wallet.
-
-**3.** Recipient scans the provided QR code using their Cashu or Fedimint wallet.
-
-**4.** Recipient scans the provided QR code using their Cashu or Fedimint wallet.
-
-**5.**Recipient’s wallet will automatically process and add the token to their balance, completing the transaction.
-
-#### Sending an ecash Token via Copy and Paste:
+#### Text message, such as email or SMS:
 Another method to send ecash is by copying and pasting the token string. This is particularly useful for online transactions or when using text-based communication platforms.
 
-**1.**Generate a token for the desired amount in your Cashu or Fedimint wallet.
+#### Bluetooth transmission:
+Most applications allow users to share a token via Bluetooth. However, more comprehensive Bluetooth sending and receiving functionalities have not yet been fully developed. As a result, when a user attempts to share an ecash token via Bluetooth, the most common outcome is that the receiving device does not know how to handle it.
 
-**2.**Copy the generated token string.
-
-**3.**Send the token string to the recipient through any communication channel (e.g., email, messaging app).
-
-**4.**Recipient’s wallet will automatically process and add the token to their balance, completing the transaction.
-
-**5.**Recipient copies the ecash token string provided and pastes the token into the designated field.
-
-**5.** Recipient’s wallet will validate and add the token to their balance, completing the transaction.
-
-#### Sending an ecash token via Lightning:
-Users can send ecash by paying a Lightning Network invoice generated by the recipient, or sending a a payment to a Lightning address This method integrates seamlessly with existing LN infrastructure.
-
-**1.** Obtain the LN invoice from the recipient.
-
-**2.**Open your Cashu or Fedimint wallet.
-
-**3.**Enter the invoice or lightning address details into your wallet.
-
-**4.**Confirm and send the payment. The mint will exchange your ecash tokens for Bitcoin on the Lightning Network and then send the Bitcoin to the recipient.
-
-### Receiving ecash
-Receiving ecash can be done via multiple methods to suit different transaction needs. Here’s how you can receive ecash using either protocol:
-
-#### Receiving an ecash Token via QR Code:
+#### QR codes:
 Ecash can also be received by scanning a QR code that contains an embedded token. This method is particularly useful for in-person transactions or quick transfers.
 
-**1.**Open the QR code scanner in your Cashu or Fedimint wallet.
-
-**2.**Scan the provided QR code containing the ecash token.
-
-**3.**The wallet will automatically process and add the token to your balance.
-
-#### Receiving an ecash Token via Copy and Paste:
-Another method to receive ecash is by copying and pasting the token. This is useful for online transactions or transferring tokens via text-based communication platforms.
-
-**1.**Copy the ecash token string provided by the sender.
-
-**2.**Open your Cashu or Fedimint wallet and navigate to the receive section.
-
-**3.**Paste the token into the designated field.
-
-**4.**The wallet will validate and add the token to your balance.
-
-#### Receiving ecash via Lightning Invoice:
-Users can receive ecash by generating it themselves through a Lightning Network (LN) transaction. This involves creating an LN invoice through the mint (either Cashu or Fedimint) and paying it. Upon successful payment, the mint issues the corresponding ecash tokens to the user.
-
-**1.**Open your Cashu or Fedimint wallet.
-
-**2.**Generate an LN invoice for the desired amount.
-
-**3.**Pay the invoice using your Lightning-enabled wallet.
-
-**4.**Upon successful payment, receive the ecash tokens in your wallet.
+#### Lightning Network:
+Users can send and receive ecash by generating a LN invoice through the mint (either Cashu or Fedimint) and paying it. Upon successful payment, the mint issues the corresponding ecash tokens to the user.
