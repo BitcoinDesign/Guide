@@ -163,7 +163,7 @@ The spectrum of decentralization and custody for Bitcoin ranges from highly dece
    mobile = "/assets/images/guide/how-it-works/ecash/connected@1x.png"
    mobileRetina = "/assets/images/guide/how-it-works/ecash/connected@2x.png"
    alt-text = "An illustration of cashu, fedimint, and lightning nodes connected in a mesh network."
-   caption = "“Lightning is the connective tissue between ecash and Bitcoin."
+   caption = "Lightning is the connective tissue between ecash and Bitcoin."
    width = 800
    height = 456
    layout = "full-width"
@@ -206,11 +206,11 @@ The process of creating ecash on Bitcoin is known as **minting.** The process of
 
 #### Melting ecash
 
-**1. User Initiates Melting** The user requests to redeem their ecash tokens for sats. This is typically done through a wallet or platform that supports melting.
+**1. User Initiates Melting** - The user requests to redeem their ecash tokens for sats. This is typically done through a wallet or platform that supports melting.
 
-**2. Token destruction** The mint verifies and destroys the ecash tokens, ensuring they cannot be reused. This step confirms the authenticity of the tokens and maintains the integrity of the system.
+**2. Token destruction** - The mint verifies and destroys the ecash tokens, ensuring they cannot be reused. This step confirms the authenticity of the tokens and maintains the integrity of the system.
 
-**3. Sats Transfer via Lightning Network** The user receives an equivalent amount of sats through the Lightning Network, completing the melting process and converting ecash back into spendable Bitcoin.
+**3. Sats Transfer via Lightning Network** - The user receives an equivalent amount of sats through the Lightning Network, completing the melting process and converting ecash back into spendable Bitcoin.
 
 ### Sending and receiving ecash
 {% include picture.html
