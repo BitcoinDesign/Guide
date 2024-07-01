@@ -83,7 +83,7 @@ Below is what this wallet’s automatic cloud backup user interface looks like.
 
 ## How to explain it
 
-As mentioned in the previous section, this wallet prompts the user to back up during [First Use](https://bitcoin.design/guide/daily-spending-wallet/first-use/) and, if they opt-out, reminds them again once they have received funds.
+As mentioned in the previous section, this wallet prompts the user to back up during [First Use]({{ '/guide/daily-spending-wallet/first-use/' | relative_url }}) and, if they opt-out, reminds them again once they have received funds.
 
 The wallet explains to the user that their backup is stored on the cloud, and that they can regain access to their funds on another device using their respective cloud account and bitcoin wallet app. The app also explains that the backup is encrypted with their PIN and requires the user to verify the PIN by entering it a second time.
 
@@ -122,7 +122,7 @@ By bringing cloud storage providers into the equation, we assume that users trus
 
 {% include tip/open.html color="red" icon="forbid" label="Don’t: Use for High Value Amounts" %}
 
-Automatic cloud backups should not be considered for products with users that are storing high-value amounts. This is because there are potentially more security threat vectors. Instead, consider a manual backup, hardware wallet, or a multi-sig solution like the [Savings wallet](https://bitcoin.design/guide/savings-wallet/).
+Automatic cloud backups should not be considered for products with users that are storing high-value amounts. This is because there are potentially more security threat vectors. Instead, consider a manual backup, hardware wallet, or a multi-sig solution like the [Savings wallet]({{ '/guide/savings-wallet/' | relative_url }}).
 
 {% include tip/close.html %}
 
