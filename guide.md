@@ -159,6 +159,19 @@ How to design for use cases where it is important to manage multiple wallets in 
 </div>
 </div>
 
+{% include image.html
+   image = "/assets/images/guide/inheritance-wallet.png"
+   retina = "/assets/images/guide/inheritance-wallet@2x.png"
+   alt-text = "A mobile mockup for a lng-term savings wallet with inheritance features"
+   width = 1600
+   height = 840
+   link-url = "/guide/inheritance-wallet/"
+%}
+
+<h2 class="h3" markdown="1">[Inheritance wallet]({{ '/guide/inheritance-wallet/' | relative_url }})</h2>
+
+An in-depth exploration of a multi-key wallet designed for long-term savings and inheritance. It covers everything from wallet creation, backup, change management and succession. 
+
 ---
 
 <h2 class="h3" markdown="1">[How it works]({{ '/guide/how-it-works/' | relative_url }})</h2>

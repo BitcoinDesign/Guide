@@ -99,8 +99,8 @@ The screens below show how this architecture allows users to get onboarded quick
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/savings-wallet/time-based-recovery/"
-   previousName = "Time-based recovery"
+   previousUrl = "/guide/inheritance-wallet/wallet-creation/"
+   previousName = "Wallet creation"
    nextUrl = "/guide/shared-wallet/"
    nextName = "Shared wallet"
 %}
