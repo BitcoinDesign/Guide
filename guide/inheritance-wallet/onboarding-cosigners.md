@@ -48,16 +48,16 @@ images_alice-import-config:
 images_alice-enable-device:
     - file: alice-enable-device/enable-alice-home
       alt: Home screen showing the wallet with two tasks associated.
-      caption: Alice is ready to enable her Bitbox to sign transactions for the wallet. 
+      caption: Alice is ready to enable her BitBox to sign transactions for the wallet. 
     - file: alice-enable-device/enable-alice-dialog
       alt: Scren showing an informational dialog about enabling signing devices.
       caption: The app tells her what this step is about and how it works.
     - file: alice-enable-device/enable-alice-wallet-export
       alt: Screen showing different options to export the wallet configuration.
-      caption: Alice connects her Bitbox via USB-C to export the wallet configuration.
+      caption: Alice connects her BitBox via USB-C to export the wallet configuration.
     - file: alice-enable-device/enable-alice-device-flow
       alt: Placholder screen representing the device-specific wallet activation flow.
-      caption: The app guides her throught the import flow on her Bitbox.
+      caption: The app guides her throught the import flow on her BitBox.
     - file: alice-enable-device/enable-alice-success
       alt: Success screen showing the option activate another device or go to the home screen.
       caption: On the success screen, the app shows the option to enable another signing device.
@@ -76,7 +76,7 @@ images_alice-enable-device:
 
 Editor's notes
 
-This page covers a multi-key wallet that uses timelocks to provide additional recovery options.  
+This page covers how Alice imports the savings wallet to her own app and enables her signing device to create and sign transactions.  
 
 Illustration sources
 
@@ -99,7 +99,7 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
 So far, the wallet has been created on Bob's app. The next step is to get Alice set up as a cosigner and to enable her to sign transactions. To do this Alice needs to:
 
 1. Import the wallet configuration to her app.
-2. Enable her Bitbox to sign transactions. 
+2. Enable her BitBox to sign transactions. 
 
 ### Wallet onboarding
 The first step is to add the family savings wallet on Alice's app.
@@ -121,7 +121,7 @@ Alice will scan the QR code from Bob's phone to import the wallet into her app. 
 
 On the home screen, the app shows the wallet, along with a task list that reminds her to: 
 - Save the wallet backup kit.
-- Enable her Bitbox to sign transactions.
+- Enable her BitBox to sign transactions.
 
 ### Enabling the signing devices
 
@@ -130,9 +130,9 @@ Bob and Alice's signing devices need to be enabled to sign transactions for the 
 #### Bob did it during wallet creation
 Bob has already completed this step during the creation of the wallet. When he imported the keys from his Trezor and the shared ColdCard, he did so using a wired connection. During that process the wallet was automatically activated on the devices. If Bob had used an airgapped method (e.g. via QR code or SD card) he would also need to explicitly import the wallet to these two devices. 
 
-#### Alice enables her Bitbox 
+#### Alice enables her BitBox 
 
-What is left to do is for Alice to activate the wallet on her Bitbox, so that she can sign transactions with it. 
+What is left to do is for Alice to activate the wallet on her BitBox, so that she can sign transactions with it. 
 
 {% include image-gallery.html pages = page.images_alice-enable-device %}
 
@@ -144,6 +144,6 @@ That's it. The family savings wallet is now fully functional. Alice and Bob can 
 {% include next-previous.html
    previousUrl = "/guide/inheritance-wallet/wallet-creation"
    previousName = "Wallet creation"
-   nextUrl = "/guide/inheritance-wallet/backup"
-   nextName = "Backup"
+   nextUrl = "/guide/upgradeable-wallet"
+   nextName = "Upgradeable wallet"
 %}
