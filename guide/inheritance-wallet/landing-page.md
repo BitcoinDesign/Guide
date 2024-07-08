@@ -20,7 +20,6 @@ images_creation-wallet-basics:
 
 Editor's notes
 
-This page covers ....  
 This page sets the context of the reference design and provides on overview of the overall scope, as well as short introductions to the individual chapters.
 
 Illustration sources
