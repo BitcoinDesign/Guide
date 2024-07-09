@@ -99,8 +99,8 @@ The screens below show how this architecture allows users to get onboarded quick
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/inheritance-wallet/onboarding-cosigners/"
-   previousName = "Onbarding cosigners "
+   previousUrl = "/guide/inheritance-wallet/backup/"
+   previousName = "Wallet backup"
    nextUrl = "/guide/shared-wallet/"
    nextName = "Shared wallet"
 %}

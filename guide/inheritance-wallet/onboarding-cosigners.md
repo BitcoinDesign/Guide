@@ -144,6 +144,6 @@ That's it. The family savings wallet is now fully functional. Alice and Bob can 
 {% include next-previous.html
    previousUrl = "/guide/inheritance-wallet/wallet-creation"
    previousName = "Wallet creation"
-   nextUrl = "/guide/upgradeable-wallet"
-   nextName = "Upgradeable wallet"
+   nextUrl = "/guide/inheritance-wallet/backup"
+   nextName = "Wallet backup"
 %}

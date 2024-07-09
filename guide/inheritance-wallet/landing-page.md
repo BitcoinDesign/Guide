@@ -66,7 +66,7 @@ After a multi-key wallet has been created, the cosigners need to be onboarded so
 
 ---
 
-### Wallet backup (coming soon)
+### [Wallet backup]({{ '/guide/inheritance-wallet/backup/' | relative_url }})
 
 When backing up multi-key wallets, there are more moving parts to consider than with single-key wallets. Our application helps users with that. 
 

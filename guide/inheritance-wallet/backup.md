@@ -161,6 +161,6 @@ The subsequent pages describe the key sets and the individual signing keys, incl
 {% include next-previous.html
    previousUrl = "/guide/inheritance-wallet/onboarding-cosigners/"
    previousName = "Onboarding cosigners"
-   nextUrl = "/guide/inheritance-wallet/making-changes"
-   nextName = "Making changes"
+   nextUrl = "/guide/upgradeable-wallet"
+   nextName = "Upgradeable wallet"
 %}
