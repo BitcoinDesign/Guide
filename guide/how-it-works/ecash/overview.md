@@ -213,11 +213,11 @@ The process of creating ecash on Bitcoin is known as **minting.** The process of
 
 #### Melting ecash
 
-**1. User Initiates Melting** - The user requests to redeem their ecash tokens for sats. This is typically done through a wallet or platform that supports melting.
+**4. User Initiates Melting** - The user requests to redeem their ecash tokens for sats through the Lightning Network.
 
-**2. Token destruction** - The mint verifies and destroys the ecash tokens, ensuring they cannot be reused. This step confirms the authenticity of the tokens and maintains the integrity of the system.
+**5. Token destruction** - The mint verifies and destroys the ecash tokens, ensuring they cannot be reused. This step confirms the authenticity of the tokens and maintains the integrity of the system.
 
-**3. Sats Transfer via Lightning Network** - The user receives an equivalent amount of sats through the Lightning Network, completing the melting process and converting ecash back into spendable Bitcoin.
+**6. Sats Transfer via Lightning Network** - The user receives an equivalent amount of sats through the Lightning Network, completing the melting process and converting ecash back into spendable Bitcoin.
 
 ### Sending and receiving ecash
 {% include picture.html
