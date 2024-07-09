@@ -75,6 +75,13 @@ Ecash on Bitcoin works by using protocols like Fedimint and Cashu, which both im
    height = 456
    layout = "full-width"
 %}
+
+{% include tip/open.html color="blue" icon="info" label="Ecash is a custodial solution" %}
+
+Bitcoin-backed ecash is custodial, meaning someone else holds your Bitcoin. Be aware that this subjects useres to all custodial risks.
+
+{% include tip/close.html %}
+
 The spectrum of decentralization and custody for Bitcoin ranges from highly decentralized to highly centralized. Holding self-custodial Bitcoin on the base layer is the least risky and most decentralized, rated at 0. Self-custodial Lightning is slightly more centralized at 2, while custodial Lightning moves further towards centralization at 7. Exchanges sit at the extreme end, being the most centralized and risky. Ecash offers improvements over custodial Lightning by providing better privacy and security.
 
 ### Ecash vs Custodial Lightning
