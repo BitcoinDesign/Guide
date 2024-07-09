@@ -82,7 +82,7 @@ Bitcoin-backed ecash is custodial, meaning someone else holds your Bitcoin. Be a
 
 {% include tip/close.html %}
 
-The spectrum of decentralization and custody for Bitcoin ranges from highly decentralized to highly centralized. Holding self-custodial Bitcoin on the base layer is the least risky and most decentralized, rated at 0. Self-custodial Lightning is slightly more centralized at 2, while custodial Lightning moves further towards centralization at 7. Exchanges sit at the extreme end, being the most centralized and risky. Ecash offers improvements over custodial Lightning by providing better privacy and security.
+The spectrum of decentralization and custody for Bitcoin ranges from highly decentralized to highly centralized. Holding self-custodial Bitcoin on the base layer is the least risky and most decentralized, rated at 0. Self-custodial Lightning is slightly more centralized at 2, while custodial Lightning moves further towards centralization at 7. Exchanges sit at the extreme end, being the most centralized and risky. Ecash offers improvements over custodial Lightning by providing better privacy and security. test.
 
 ### Ecash vs Custodial Lightning
 <div class="nodes -full-width" markdown="1">
