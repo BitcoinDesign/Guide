@@ -95,8 +95,8 @@ The spectrum of decentralization and custody for Bitcoin ranges from highly dece
                   image = "/assets/images/guide/how-it-works/ecash/ecash-icon@1x.jpg"
                   retina = "/assets/images/guide/how-it-works/ecash/ecash-icon@2x.jpg"
                   alt-text = "Depiction of a custodial lightning node"
-                  width = 275
-                  height = 275
+                  width = 236
+                  height = 236
                %}
                Ecash
             </th>
@@ -105,8 +105,8 @@ The spectrum of decentralization and custody for Bitcoin ranges from highly dece
                   image = "/assets/images/guide/how-it-works/ecash/custodial-lightning-icon@1x.jpg"
                   retina = "/assets/images/guide/how-it-works/ecash/custodial-lightning-icon@2x.jpg"
                   alt-text = "Depiction of ecash"
-                  width = 275
-                  height = 275
+                  width = 236
+                  height = 236
                %}
                Custodial Lightning
             </th>
@@ -115,8 +115,8 @@ The spectrum of decentralization and custody for Bitcoin ranges from highly dece
                   image = "/assets/images/guide/how-it-works/ecash/explanation-icon@1x.jpg"
                   retina = "/assets/images/guide/how-it-works/ecash/explanation-icon@2x.jpg"
                   alt-text = "Information icon"
-                  width = 275
-                  height = 275
+                  width = 236
+                  height = 236
                %}
                Explanation
             </th>
