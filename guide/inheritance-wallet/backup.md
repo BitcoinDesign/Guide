@@ -49,7 +49,7 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Inheritance-wallet?type=design
 
 ---
 
-As we have covered in the time-based recovery [reference design](https://bitcoin.design/guide/savings-wallet/time-based-recovery/#wallet-backup) there are two parts to backing up a multi-key wallet: the private keys as well as the wallet configuration.
+As we have covered in the time-based recovery [reference design]({{ '/guide/savings-wallet/time-based-recovery/' | relative_url }}) there are two parts to backing up a multi-key wallet: the private keys as well as the wallet configuration.
 
 {% include picture.html
    image = "/assets/images/guide/inheritance-wallet/wallet-backup/multikey-backup-components.png"
@@ -64,7 +64,7 @@ Users need not only to back up the individual private keys that are used to sign
 This means that, in our use case, the Joneses need to safely backup and store six private keys as well as the wallet configuration. 
 
 ### Private key backups
-Of course, all six private keys need to be backed up properly. We describe some best practices on how to back up private keys on the [bitcoin backups page](https://bitcoin.design/guide/how-it-works/backups/), so we won’t be covering this topic here. 
+Of course, all six private keys need to be backed up properly. We describe some best practices on how to back up private keys on the [bitcoin backups page]({{ '/guide/how-it-works/backups/' | relative_url }}), so we won’t be covering this topic here. 
 
 Our app emphasizes that users should keep one of the primary keys at all times, even if they move their funds to a new wallet. The reason is simple: there is still the possibility that some bitcoins will be sent to that old wallet. Keeping one of the keys around will make sure that users will be able to spend such funds, because the recovery path will be available to them.
 
@@ -100,11 +100,16 @@ Alice and Bob are not willing to trust their life savings to one application. Th
    image = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-tool-distribution.png"
    retina = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-tool-distribution@2x.png"
    modalImage = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-tool-distribution@2x.png"
+   mobile = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-tool-distribution-mobile.png"
+   mobileRetina = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-tool-distribution-mobile@2x.png"
+   modalImageMobile = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-tool-distribution-mobile@2x.png"
    alt-text = "A schematic illustration showing how the backup material is distributed between the parents, their children and the lawyer."
    width = 1600
    height = 800
    modalWidth = 3324
    modalHeight = 1850
+   modalWidthMobile = 1156
+   modalHeightMobile = 2936
 %}
 
 Please note that this is one of many possible ways to approach wallet backups and should not be understood as the only correct way to do it.
@@ -141,7 +146,7 @@ The reason that there are two different ways in which Christina and David can ga
 
 ### Example resources
 
-Below is an example of the backup PDF file. The first page contains the information about the wallet itself. This includes the name of the wallet as well as the [wallet descriptor](add link) in the form of a QR code as well as in clear text. It also shows a visual representation of the configuration of the key sets:
+Below is an example of the backup PDF file. The first page contains the information about the wallet itself. This includes the name of the wallet as well as the [wallet descriptor]({{ '/guide/glossary/#output-script-descriptor' | relative_url }}) in the form of a QR code as well as in clear text. It also shows a visual representation of the configuration of the key sets:
 
 {% include picture.html
    image = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-pdf.png"
@@ -159,7 +164,7 @@ The subsequent pages describe the key sets and the individual signing keys, incl
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/inheritance-wallet/onboarding-cosigners/"
+   previousUrl = "/guide/inheritance-wallet/onboarding-cosigners"
    previousName = "Onboarding cosigners"
    nextUrl = "/guide/upgradeable-wallet"
    nextName = "Upgradeable wallet"
