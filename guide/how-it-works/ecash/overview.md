@@ -72,7 +72,7 @@ Ecash on Bitcoin works by using protocols like Fedimint and Cashu, which both im
    alt-text = "An illustration of the spectrum of bitcoin custody."
    caption = "Bitcoin custody spectrum"
    width = 800
-   height = 456
+   height = 456b
    layout = "full-width"
 %}
 
@@ -91,33 +91,12 @@ The spectrum of decentralization and custody for Bitcoin ranges from highly dece
          <tr>
             <th>&nbsp;</th>
             <th>
-               {% include picture.html
-                  image = "/assets/images/guide/how-it-works/ecash/ecash-icon@1x.jpg"
-                  retina = "/assets/images/guide/how-it-works/ecash/ecash-icon@2x.jpg"
-                  alt-text = "Depiction of a custodial lightning node"
-                  width = 236
-                  height = 236
-               %}
                Ecash
             </th>
             <th>
-               {% include picture.html
-                  image = "/assets/images/guide/how-it-works/ecash/custodial-lightning-icon@1x.jpg"
-                  retina = "/assets/images/guide/how-it-works/ecash/custodial-lightning-icon@2x.jpg"
-                  alt-text = "Depiction of ecash"
-                  width = 236
-                  height = 236
-               %}
                Custodial Lightning
             </th>
                <th>
-                  {% include picture.html
-                  image = "/assets/images/guide/how-it-works/ecash/explanation-icon@1x.jpg"
-                  retina = "/assets/images/guide/how-it-works/ecash/explanation-icon@2x.jpg"
-                  alt-text = "Information icon"
-                  width = 236
-                  height = 236
-               %}
                Explanation
             </th>
          </tr>
