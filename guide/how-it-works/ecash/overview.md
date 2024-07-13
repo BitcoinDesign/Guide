@@ -200,12 +200,12 @@ The process of creating ecash on Bitcoin is known as **minting.** The process of
 
 ### Sending and receiving ecash
 {% include picture.html
-   image = "/assets/images/guide/how-it-works/ecash/creation-and-redemption@1x.png"
-   retina = "/assets/images/guide/how-it-works/ecash/creation-and-redemption@2x.png"
-   mobile = "/assets/images/guide/how-it-works/ecash/creation-and-redemption@2x.png"
-   mobileRetina = "assets/images/guide/how-it-works/ecash/creation-and-redemption@2x.png"
-   alt-text = "An illustration of the process of creating and redeeming ecash tokens"
-   caption = "Creating and redeeming ecash tokens."
+   image = "/assets/images/guide/how-it-works/ecash/sending-and-receiving@1x.png"
+   retina = "/assets/images/guide/how-it-works/ecash/sending-and-receiving@2x.png"
+   mobile = "/assets/images/guide/how-it-works/ecash/sending-and-receiving@2x.png"
+   mobileRetina = "assets/images/guide/how-it-works/ecash/sending-and-receiving@2x.png"
+   alt-text = "An illustration of the process of sending and receiving ecash tokens to various users"
+   caption = "Sending and receiving ecash tokens."
    width = 800
    height = 456
    layout = "full-width"
