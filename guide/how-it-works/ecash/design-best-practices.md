@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Ecash best practices
+title: Design best practices
 description: Learn the best practices of designing for ecash.
 nav_order: 5
 parent: Ecash
