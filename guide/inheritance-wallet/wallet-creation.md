@@ -333,6 +333,6 @@ The homescreen shows the newly created wallet. In addition, the app shows a coup
 {% include next-previous.html
    previousUrl = "/guide/inheritance-wallet/overview"
    previousName = "Overview"
-   nextUrl = "/guide/upgradeable-wallet/"
-   nextName = "Upgradeable wallet"
+   nextUrl = "/guide/inheritance-wallet/onboarding-cosigners"
+   nextName = "Onboarding cosigners"
 %}
