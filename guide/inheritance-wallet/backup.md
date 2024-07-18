@@ -81,8 +81,7 @@ Alice and Bob then encrypt the ZIP file with a strong password and both of them 
 #### What is in the backup kit?
 The backup kit is just a ZIP file that contains the following contents:
 
-- **A PDF file** that contains the wallet descriptor and information about all six XPUBs. Is also contains a visual representation of the rules that are used to unlock the recovery path and the inheritance key set.
-- **Wallet backup files in various formats**, which can be used to import the wallet to other wallet applications like Sparrow, Nunchuk or others. 
+<div class="center" markdown="1">
 
 {% include picture.html
    image = "/assets/images/guide/inheritance-wallet/wallet-backup/backup-kit-contents.png"
@@ -90,7 +89,14 @@ The backup kit is just a ZIP file that contains the following contents:
    alt-text = "An illustration showing what is included in the backup kit."
    width = 1600
    height = 800
+   layout = "float-right-desktop"
 %} 
+
+**A PDF file** that contains the wallet descriptor and information about all six XPUBs. Is also contains a visual representation of the rules that are used to unlock the recovery path and the inheritance key set.
+
+**Wallet backup files in various formats**, which can be used to import the wallet to other wallet applications like Sparrow, Nunchuk or others. 
+
+</div>
 
 ## Backup distribution
 
