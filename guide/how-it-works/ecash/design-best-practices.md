@@ -1,15 +1,54 @@
 ---
 layout: guide
-title: Design best practices
-description: Learn the best practices of designing for ecash.
-nav_order: 5
-parent: Ecash
-grand_parent: How it works
-permalink: /guide/how-it-works/ecash/best-practices/
+title: Settings
+description: An overview of how to help users maintain their financial privacy while using a bitcoin daily spending wallet.
+nav_order: 9
+parent: Daily spending wallet
+permalink: /guide/daily-spending-wallet/settings/
 redirect_from:
- - /guide/ecash/best-practices
-image: https://bitcoin.design/assets/images/guide/how-it-works/ecash/ecash.jpg
+ - /guide/payments/settings/
 main_classes: -no-top-padding
+image: /assets/images/guide/daily-spending-wallet/settings/settings-preview.jpg
+image_base: /assets/images/guide/daily-spending-wallet/settings/
+images_general:
+    - file: general
+      modalImage: general-big
+      alt: Mobile screen showing a list of settings categories
+      caption: General is a catch-all category for options that don't clearly fit elsewhere.
+    - file: local-currency
+      modalImage: local-currency-big
+      alt: Mobile screen with a list of currencies to choose from
+      caption: While it should be automatically detected, users can change their local currency.
+    - file: bitcoin-unit
+      modalImage: bitcoin-unit-big
+      alt: Mobile screen with automatic, bitcoin, and satoshi options
+      caption: The bitcoin unit can also be switched contextually in the send screen.
+images_security:
+    - file: security
+      modalImage: security-big
+      alt: Mobile screen with PIN, FaceID, wallet deletion and wallet limit options
+      caption: Options to limit unwanted access and payments.
+    - file: delete-wallet
+      modalImage: delete-wallet-big
+      alt: Confirmation modal for deleting the wallet from the device
+      caption: This screen requires very clear language to ensure users understand the implications.
+images_network:
+    - file: network
+      modalImage: network-big
+      alt: Mobile screen with bitcoin and lightning network, as well as Tor options
+      caption: Overview screen for network options.
+    - file: bitcoin-network
+      modalImage: bitcoin-network-big
+      alt: Mobile screen with bitcoin network customization options
+      caption: Users can choose their own node to connect to.
+    - file: lightning-network
+      modalImage: lightning-network-big
+      alt: Mobile screen with lightning network customization options
+      caption: Information about the user’s node, and additional security options.
+    - file: watchtower
+      modalImage: watchtower-big
+      alt: Mobile screen with lightning network watchtower options
+      caption: Users can enable watchtower functionality to protect their funds.
 ---
 
 {% include picture.html
