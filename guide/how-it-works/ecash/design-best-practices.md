@@ -6,7 +6,7 @@ nav_order: 9
 parent: Ecash
 permalink: /guide/how-it-works/ecash/design-best-practices
 redirect_from:
- - /guide/how-it-works/ecash/design-best-practices
+ - /guide/how-it-works/ecash/
 main_classes: -no-top-padding
 image: /assets/images/guide/daily-spending-wallet/settings/settings-preview.jpg
 image_base: /assets/images/guide/daily-spending-wallet/settings/
