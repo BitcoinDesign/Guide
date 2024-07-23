@@ -184,7 +184,7 @@ The process of creating ecash on Bitcoin is known as **minting.** The process of
 
 #### Minting ecash
 
-**1. User Deposits Funds** - The user deposits Bitcoin into a mint Typically this is done by generating a LN invoice through the mint and paying it.
+**1. User Deposits Funds** - The user deposits Bitcoin into a mint. Typically this is done by generating a LN invoice through the mint and paying it.
 
 **2. Blinded Token Creation** - Upon successful payment, the mint generates blinded tokens, which are cryptographic representations of the deposited funds. The blinding process ensures that the mint cannot link the tokens to the user, preserving privacy.
 
