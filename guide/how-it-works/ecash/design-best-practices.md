@@ -2,7 +2,7 @@
 layout: guide
 title: Design best practices
 description: An overview of how to help users maintain their financial privacy while using a bitcoin daily spending wallet.
-nav_order: 3
+nav_order: 4
 parent: Ecash
 grand_parent: How it works
 permalink: /guide/how-it-works/ecash/design-best-practices

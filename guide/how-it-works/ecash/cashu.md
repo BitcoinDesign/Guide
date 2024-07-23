@@ -2,7 +2,7 @@
 layout: guide
 title: Cashu
 description: Learn the basics of Cashu.
-nav_order: 5
+nav_order: 2
 parent: Ecash
 grand_parent: How it works
 permalink: /guide/how-it-works/ecash/cashu/
