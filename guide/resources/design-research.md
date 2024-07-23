@@ -97,6 +97,12 @@ A survey and follow-up interview of 990 bitcoin users to determine bitcoin manag
 
 ## Independent research
 
+#### [2024 American Bitcoin Survey report](https://www.thenakamotoproject.org/report)
+
+_2024 by The Nakamoto Project_
+
+A survey of 3,538 adults in the US about their "moral foundations" and sentiment towards bitcoin.
+
 #### [Pix in Brazil: A Field Study for the Bitcoin Community](https://www.psacramento.com/pix-in-brazil-a-field-study-for-the-bitcoin-community/)
 
 _2024 by Paulo Sacramento_
