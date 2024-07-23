@@ -82,7 +82,7 @@ Bitcoin-backed ecash is custodial, meaning someone else holds your Bitcoin. Be a
 
 {% include tip/close.html %}
 
-The spectrum of decentralization and custody for Bitcoin ranges from highly decentralized to highly centralized. Holding self-custodial Bitcoin on the base layer is the least risky and most decentralized, rated at 0. Self-custodial Lightning is slightly more centralized at 2, while custodial Lightning moves further towards centralization at 7. Exchanges sit at the extreme end, being the most centralized and risky. Ecash offers improvements over custodial Lightning by providing better privacy and security. test.
+The spectrum of decentralization and custody for Bitcoin ranges from highly decentralized to highly centralized. Holding self-custodial Bitcoin on the base layer is the least risky and most decentralized, rated at 0. Self-custodial Lightning is slightly more centralized at 2, while custodial Lightning moves further towards centralization at 7. ETFs sit at the extreme end, being the most centralized and risky. Ecash offers improvements over custodial Lightning by providing better privacy and security.
 
 ### Ecash vs Custodial Lightning
 <div class="nodes -full-width" markdown="1">
@@ -155,7 +155,7 @@ The spectrum of decentralization and custody for Bitcoin ranges from highly dece
    layout = "full-width"
 %}
 
-* **Enhanced Privacy** - Ecash uses blinded signatures, ensuring that transaction details, including user identities and amounts, remain hidden. This level of privacy is superior to traditional Bitcoin transactions.
+* **Enhanced Privacy** - Ecash uses blinded signatures, ensuring that transaction details, including user identities and amounts, remain hidden.
 
 * **Speed** - Since transactions are processed by a centralized mint ecash transactions are fast and efficient, which helps in handling a large volume of transactions without the limitations that exist on bitcoin on-chain or the Lightning Network.
 
@@ -184,19 +184,19 @@ The process of creating ecash on Bitcoin is known as **minting.** The process of
 
 #### Minting ecash
 
-**1. User Deposits Funds** - The user deposits Bitcoin or sats into a mint. In Cashu, this is done by sending Bitcoin to the mint’s address. In Fedimint, the process is similar but involves federated entities.
+**1. User Deposits Funds** - The user deposits Bitcoin into a mint Typically this is done by generating a LN invoice through the mint and paying it.
 
-**2. Blinded Token Creation** - The mint generates blinded tokens, which are cryptographic representations of the deposited funds. The blinding process ensures that the mint cannot link the tokens to the user, preserving privacy.
+**2. Blinded Token Creation** - Upon successful payment, the mint generates blinded tokens, which are cryptographic representations of the deposited funds. The blinding process ensures that the mint cannot link the tokens to the user, preserving privacy.
 
 **3. Mint provides Tokens to User** - The user receives a set of tokens that can be combined to create an ecash token of any amount denominated in Bitcoin.
 
 #### Melting ecash
 
-**4. User Initiates Melting** - The user requests to redeem their ecash tokens for sats through the Lightning Network.
+**4. User Initiates Melting** - The user requests to redeem their ecash tokens for Bitcoin through the Lightning Network.
 
 **5. Token destruction** - The mint verifies and destroys the ecash tokens, ensuring they cannot be reused. This step confirms the authenticity of the tokens and maintains the integrity of the system.
 
-**6. Sats Transfer via Lightning Network** - The user receives an equivalent amount of sats through the Lightning Network, completing the melting process and converting ecash back into spendable Bitcoin.
+**6. Sats Transfer via Lightning Network** - The user receives an equivalent amount of Bitcoin, completing the melting process and converting ecash back into spendable Bitcoin.
 
 ### Sending and receiving ecash
 {% include picture.html
@@ -210,16 +210,13 @@ The process of creating ecash on Bitcoin is known as **minting.** The process of
    height = 456
    layout = "full-width"
 %}
-Sending ecash and receiving can be done via multiple methods to suit different transaction needs. One of the advantages of ecash is that users are simply transacting pieces of data, such as a string of JSON text. These pieces of data are very flexible and can be transmitted via any medium. This means ecash can be transmitted in any way that data can be transmitted. Some unique ways that ecash can be sent and received, which are not possible with on-chain or Lightning transactions, include:
+Sending ecash and receiving can be done via multiple methods to suit different transaction needs. One of the advantages of ecash is that users are simply transacting pieces of data. These pieces of data are very flexible and can be transmitted via any medium or rail. Some unique ways that ecash can be sent and received, which are not possible with on-chain or Lightning transactions, include:
 
 #### Text message, such as email or SMS:
-Another method to send ecash is by copying and pasting the token string. This is particularly useful for online transactions or when using text-based communication platforms.
+Users can send ecash by copying and pasting the token string. This is particularly useful for online transactions or when using text-based communication platforms.
 
 #### Bluetooth transmission:
 Most applications allow users to share a token via Bluetooth. However, more comprehensive Bluetooth sending and receiving functionalities have not yet been fully developed. As a result, when a user attempts to share an ecash token via Bluetooth, the most common outcome is that the receiving device does not know how to handle it.
 
 #### QR codes:
 Ecash can also be received by scanning a QR code that contains an embedded token. This method is particularly useful for in-person transactions or quick transfers. QR redemption also enables physical bearer assets like paper notes or coins.
-
-#### Lightning Network:
-Users can send and receive ecash by generating a LN invoice through the mint (either Cashu or Fedimint) and paying it. Upon successful payment, the mint issues the corresponding ecash tokens to the user.
