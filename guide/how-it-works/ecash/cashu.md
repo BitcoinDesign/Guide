@@ -37,26 +37,13 @@ https://www.figma.com/community/file/995256542920917246/BDG---Private-key-manage
 %}
 
 # Cashu
-Explain at a high level what Cashu is and how it works.
+Cashu is a Chaumian ecash protocol on Bitcoin that leverages the Lightning Network for enhanced privacy and efficiency. Unlike Fedimint, which uses a federated model to distribute trust among multiple entities, Cashu operates with independent mints, offering greater flexibility and control to users. This makes Cashu distinct in providing an easy to deploy, flexible, and agile approach to managing Ecash on bitcoin.
 
-## How Cashu Works
-Cashu is a Chaumian ecash protocol on the Lightning Network. Here's a detailed breakdown of how Cashu operates:
+{% include tip/open.html color="blue" icon="info" label="User Experience Tip" %}
 
-{% include tip/open.html color="blue" icon="info" label="Ecash tip" %}
-
-Include an illustration to help make it easier for a user to follow along.
+When designing for Cashu cpmsoder prodiving options for users to set default mints and auto-swap preferences.
 
 {% include tip/close.html %}
-
-* **Mint Creation** Cashu uses a centralized mint, which acts as the entity responsible for issuing ecash tokens. This mint can be run by an organization or an individual.
-
-* **Depositing Bitcoin** - Users deposit Bitcoin into the Cashu mint. In exchange, the mint issues ecash tokens equivalent to the deposited Bitcoin amount. These tokens are backed by the Bitcoin held in the mint.
-
-* **Blinded Signatures** - To ensure privacy, the mint uses a cryptographic technique called blinded signatures. This method allows the mint to sign ecash tokens without being able to link them to specific users or transactions, maintaining user anonymity.
-
-* **Spending** - Users can spend their ecash tokens for transactions within the Cashu network. These transactions are processed quickly and privately, using  the Lightning Network.
-
-* **Redeeming** - When users want to convert their ecash tokens back into Bitcoin, they can redeem them at the Cashu mint. The mint verifies the tokens and releases the corresponding amount of Bitcoin to the user.
 
 ## Backup and Restore for Cashu
 In Cashu, the backup and restoration process is designed to ensure users can securely recover their wallets and maintain access to their ecash tokens, even if they switch devices or experience data loss.
