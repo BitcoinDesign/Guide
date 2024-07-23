@@ -37,16 +37,16 @@ https://www.figma.com/community/file/995256542920917246/BDG---Private-key-manage
 %}
 
 # Cashu
-Cashu is a Chaumian ecash protocol on Bitcoin that leverages the Lightning Network for enhanced privacy and efficiency. Unlike Fedimint, which uses a federated model to distribute trust among multiple entities, Cashu operates with independent mints, offering greater flexibility and control to users. This makes Cashu distinct in providing an easy to deploy, flexible, and agile approach to managing Ecash on bitcoin.
+Cashu is an ecash protocol on that interoperates with the Lightning Network. Unlike Fedimint, which uses a federated model to distribute trust among multiple entities, Cashu operates with independent mints, offering greater flexibility and control to users. This makes Cashu distinct in providing an easy to deploy, flexible, and agile approach to managing Ecash on bitcoin.
 
 {% include tip/open.html color="blue" icon="info" label="User Experience Tip" %}
 
-When designing for Cashu cpmsoder prodiving options for users to set default mints and auto-swap preferences.
+When designing for Cashu, consider providing options for users to set default mints and auto-swap preferences. Since Cashu mints are independently operated, users may prefer to default to a trusted mint.
 
 {% include tip/close.html %}
 
 ## Backup and Restore for Cashu
-In Cashu, the backup and restoration process is designed to ensure users can securely recover their wallets and maintain access to their ecash tokens, even if they switch devices or experience data loss.
+The Cashu backup and restoration process is designed to ensure users can securely recover their wallets and maintain access to their ecash tokens, even if they switch devices or experience data loss.
 
 {% include tip/open.html color="blue" icon="info" label="Single Use Recovery" %}
 
@@ -56,9 +56,9 @@ Only use your recovery seed phrase once. Repeated use of the seed phrase for res
 
 
 ### Backup Process
-1. Deterministic Wallet with Seed Phrase: Cashu employs a deterministic wallet model, where all cryptographic keys and tokens can be derived from a single seed phrase. This seed phrase is generated when the wallet is first created.
+1. Deterministic Wallet with Seed Phrase: Cashu uses a deterministic wallet model, where all cryptographic keys and tokens can be derived from a single seed phrase. This seed phrase is generated when the wallet is first created.
 
-2. Secure Storage: Users are advised to store their seed phrase securely. It is crucial to keep this seed phrase in a safe, physical format (such as written on paper) and stored in a secure location to prevent unauthorized access or loss.
+2. Secure Storage: Users are advised to store their seed phrase securely. It is crucial to keep this seed phrase in a safe, physical format (such as written on paper) and stored in a secure location to prevent unauthorized access or loss. The best practices in the [manual backup]({{ '/guide/private-key-management/manual-backup/' | relative_url }}) section for Lightning and on-chain wallets also apply to Cashu wallets. 
 
 {% include tip/open.html color="blue" icon="info" label="Mint Information Needed" %}
 
@@ -71,7 +71,7 @@ Keep a record of the mints you are connected to. During the restoration process,
 
 2. Automatic Recovery: After restoration, ensure your wallet is connected to the same mint(s) you were using before. This is crucial as the mint holds the records necessary to validate your tokens.
 
-3. Verification: The mint(s) checks these proofs against its records to confirm that the tokens have not been previously spent and are still valid. This process relies on the cryptographic signatures (proofs) that were initially generated when the tokens were minted.
+3. Verification: The mint(s) checks these proofs against its records to confirm that the tokens have not been previously spent and are still valid. This process relies on the signatures (proofs) that were initially generated when the tokens were minted.
 
 {% include tip/open.html color="blue" icon="info" label="Privacy Considerations During Verification" %}
 
@@ -83,7 +83,7 @@ Verifying tokens after restoration might temporarily compromise their privacy. T
 
 * **Rapid Deployment and Simple Integration** - Great for projects that need to be launched quickly with minimal setup. This includes MVPs, prototypes, and community-based applications where speed and ease of deployment are crucial.
 
-* **Quick Interoperability with the Lightning Network** - Ideal when you need to integrate with the Lightning Network for fast, low-fee transactions. Its design supports seamless integration with existing Lightning wallets and infrastructure.
+* **3Quick Interoperability with the Lightning Network** - Ideal when you need to integrate with the Lightning Network for fast, low-fee transactions. Cashu supports seamless, out of hte box integration with existing Lightning wallets and infrastructure.
 
 * **Localized or Small Community Solutions** - Implement Cashu in scenarios where independent mints operated by trusted local entities can serve a community, enhancing trust and customization based on local needs.
 
