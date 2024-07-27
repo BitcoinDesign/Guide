@@ -78,7 +78,7 @@ https://www.figma.com/file/NjtMNQiJtoVkedEHgwD0A9/BTC-DSN-Guide-Header-Images?no
    layout = "full-width"
 %}
 
-# First use
+# Silent payments
 {: .no_toc }
 
 ---
@@ -89,20 +89,13 @@ https://www.figma.com/file/NjtMNQiJtoVkedEHgwD0A9/BTC-DSN-Guide-Header-Images?no
 </div>
 
 ---
+Bitcoin addresses are only meant to be used once. Thus, transaction flows usually start with users interacting with each other to specify the on-chain address(es) to be used in the transaction, with the goal of preventing on-chain address reuse. This not only adds steps to the user flow and adds friction by way of time and mental overhead on the part of users. BIP-352 specifies a protocol called Silent Payments that allows users to avoid such an interaction altogether, while ensuring on-chain addresses are not reused through a new type of static payment addresses.
 
-Installing and trying an application for the first time is a particularly sensitive moment in the [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/#first-use' | relative_url }}). We form a mental model of the features and experience, and how well they address our needs. It can be a make-or-break moment. As designers, our goal is to gently guide users through this initial setup to the point where they are comfortable using the application in the future.
+For example, Alice, who runs an NGO, can seek bitcoin donations from her supporters by posting a static address on her website, and receive donations at unique on-chain addresses without any other interaction with the donors.
 
-Overall, onboarding typically involves:
-- Discovery, download and launch
-- [Wallet creation]({{ '/guide/daily-spending-wallet/first-use/#creating-a-wallet' | relative_url }}) and [backup]({{ '/guide/daily-spending-wallet/backup-and-recovery/landing-page/' | relative_url }}), or [wallet recovery]({{ '/guide/daily-spending-wallet/backup-and-recovery/recovery/' | relative_url }})
-- [Depositing]({{ '/guide/daily-spending-wallet/funding/' | relative_url }}) or [requesting]({{ '/guide/daily-spending-wallet/requesting/' | relative_url }}) bitcoin
+This is a significant improvement in user experience for on-chain transactions. Additionally, BIP-352 allows users to proactively add labels to their addresses that get recognised while payments are detected. This is a boost for coin control as well as the contacts features and can improve privacy.
 
-#### How to approach this user flow
-
-One of the difficult aspects of designing this experience is that users may start out with very different [expectations and needs]({{ '/guide/designing-products/getting-to-know-your-users/' | relative_url }}). Someone brand new to bitcoin may want to explore the application thoroughly before committing to it. Another user may already be comfortable and just wants to quickly share a QR code to receive funds.
-
-We recommend designing a flexible first-use experience that guides users towards best practices (the "happy path"). Whenever possible, options should be available to skip parts individual users may not find relevant or dive deeper and personalize settings. If skipped parts are highly important, the application should remind users about them at a later point.
-
+We will first look at Labels and Contacts, then delve into how they impact/improve other features.
 Some [studies]({{ '/guide/resources/design-research/' | relative_url }}) suggest that users struggled greatly with [technical terminology]({{ '/guide/glossary/' | relative_url }}) and feeling as though they had a lack of guidance during wallet setup. By walking users through simple steps that clearly frame the features of self-custodial bitcoin wallets, users will feel well-equipped to navigate and use the wallet confidently.
 
 > Users reported that they often felt like they lacked guidance and understanding during wallet setup.
@@ -130,19 +123,86 @@ Before using an application, a user needs to become aware of it, become interest
 
 </div>
 
-## Creating a wallet
+## Brief explanation
 
-[Bitcoin wallets]({{ '/guide/glossary/#wallet' | relative_url }}) contain the private keys (derived from the [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }})) to a user’s bitcoin. Private keys let users access bitcoin associated with those keys. If the user does not have a bitcoin wallet already that they want to restore, it is necessary to create a new one.
+A silent payment transaction happens in 4 broad steps:
+- The receiver shares/publishes a static payment address
+- The sender obtains & uses it to derive a unique on-chain address
+- The sender broadcasts a transaction that pays this derived address
+- The receiver identifies the payment as theirs by identifying that they control this address
 
-Like regular keys on a keychain, private keys can be copied. This makes [private key management]({{ '/guide/private-key-management/introduction' | relative_url }}) one of the most important considerations of any bitcoin owner. During onboarding, bitcoin wallet applications should automatically generate the user's keys locally. This means the keys are generated and stored on the device only, not by the wallet provider.
+
+With this new model of transacting, BIP-352 introduces new primitives and concepts for users and developers. Below is a brief summary of them:
+
 
 {% include image-gallery.html pages = page.images_create %}
 
-Bitcoin owners can directly access their funds as long as they have access to their private keys or recovery phrase. You should help your users understand that your team does not have the ability to recover their funds in the event they lose this access. A self-custodial wallet means the user will have to take on greater responsibility to safely protect their recovery phrase so they can always access their funds.
 
-While this may sound daunting to first-time users, these caveats mustn't be hidden. Doing so may severely compromise their funds' safety, as their default assumptions and behaviors could potentially mimic how they typically use centralized applications (for example, feeling like it is OK if they forget their account information because they can contact customer support to help them recover it).
+## Contacts & labels (and IDs)
 
-## Wallet backup
+### Labels
+
+BIP-352 allows users to customize their silent payment addresses on a case-by-case basis by adding labels. Users may add labels to customise their static addresses before sharing or posting them. When a payment is received, these labels can be detected and used to identify the static address used to make the payment without it being obvious on-chain.
+
+For eg: a contractor Alice can add labels to her silent payment address while sharing them with a certain client, her social media and her website. When she receives payments from any of these sources, the respective label will be detected by the wallet application in the on-chain address to infer the source of the payment as this client.
+
+
+This scheme improves label-related features since any labels added to a static address get auto-applied to all derived on-chain addresses (detectable only by the receiver), eliminating the friction in manually adding labels to addresses or transactions. This not only makes payment tracking easier for users, but also aids in coin selection when users want to spend bitcoin they received.
+
+As shown in the image below: any payments that Alice receives from a client she shared this labelled static address with, contain the label(s) she applied to the static address. This is useful for tracking payment sources, and the labels can be associated with received bitcoin and used for coin selection during any subsequent spends that Alice makes.
+
+This labelling and detection features allows for some interesting things:
+
+- Invoices: merchant software like BTCPay can make clever use of labels to match incoming payments with invoices. This is required because on-chain addresses themselves cannot be predicted on used to make the mapping
+- Static deposit addresses for exchanges: Users looking to deposit bitcoin at exchanges may get confused when they see changing/different deposit addresses. Exchanges can now share labelled, static addresses with users; this will keep deposit addresses the same while allowing the exchange to map deposit transactions to users
+
+
+### Contacts
+
+Contacts are another feature that are greatly improved with BIP-352. Since users can safely use the same silent payment address for multiple payments, it is natural for them to want to store these for future use. Contacts are a great way to store them in terms that users can intuit: names and faces/images. The Contacts page here provides good guidance about the topic.
+
+Labels help Contacts in another interesting way by enabling ‘sender contacts’ where the user can create Contacts for parties they only receive bitcoin from. This is accomplished by adding a different label for every contact.
+
+Overall, Silent payments present a great opportunity to start basing payments UX in terms of people instead of addresses, and applications.
+
+A note on privacy: wallets should create an in-app contact list and avoid storing bitcoin payment information in the operating system’s default contact list since it cannot guarantee its safety for data breaches or phone hacks.
+
+
+## Setup
+
+Applications can take a variety of approaches to set up and communicate BIP-352 wallets. Since such a wallet has a reusable address, this could be introduced and explained to users during the setup process. Some wallets may use unique or significant locations (mobile widget, custom app logos, watch faces) to house this static address for easy retrieval, and may highlight the same during setup.
+
+Since the BIP-352 comes with some new primitives (term) (spend key, scan key) & processes (like labels, backing up files), the setup process might be a good opportunity to introduce some of these as needed without overloading the user.
+
+One thing to keep in mind: since silent payments impacts UX flows around sending, syncing & scanning, backup, recovery and applications might even choose to allow users to not adopt the silent payments altogether!
+
+{% include image-gallery.html pages = page.images_deposit %}
+
+## Sending
+
+With the improvements to Contacts, send flows may start from the Contact page in addition to the usual send flow that starts from the app home screen with a Send button. When users start with obtaining a static address, the derived on-chain address is visibly different from the static address the sender started with, something potentially confusing for users. Applications should take measures such as short explainers to avoid confusion on the users part. Applications that do not support silent payment addresses should provide helpful, actionable, human readable errors.
+
+{% include image-gallery.html pages = page.images_reminders %}
+
+With labels helping so much to improve coin selection, UIs might come up with better ways to choose (automatically or by users, manually) the coins to be used in a transaction. Note that the coins chosen for a particular transaction impact the derived on-chain address and user flows should be designed based on that.
+
+### Test transactions
+
+Test transactions are another way to alleviate user anxiety for sending on-chain payments, especially with static addresses, since the on-chain address is always visibly different from the static address.
+
+After the first use, users are typically on their own to use the application as it fits their needs, and everything should be set up appropriately. Features that are typically only relevant at later stages of the [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/#first-use' | relative_url }}) may benefit from their own onboarding flows. Key is to present introductory information at the time it becomes relevant to the user.
+
+{% include image-gallery.html pages = page.images_deposit %}
+
+## Receiving & scanning
+
+Since static addresses can now be used to pay a receiver several times, receiving flows are likely to be used less often, rarely even, since static addresses can be posted in public and others can simply get it from there. So whenever the receiver is sharing a payment request, users have the opportunity to associate valuable information to it – through labels and contacts; applications should facilitate this process..
+
+Some places where people can share static addresses (and add labels) to include:
+- Social media pages
+- Donate or fundraising websites
+- Exchanges
+- Email signatures
 
 <div class="center" markdown="1">
 
@@ -163,56 +223,71 @@ Frequent backups are important for lightning wallets, as channel states frequent
 
 </div>
 
-## Security setup
+Receivers using mobile wallets, which may not be online 24x7 will encounter some delay (once they come online) as their wallet scans the blockchain and performs calculations to detect their payments. Applications should communicate this fact during setup/onboarding. While the scanning itself is taking place, applications should show progress data and estimated time to complete the scanning process.
 
-<div class="center" markdown="1">
+The time to detect a specific received payment can be minimized if the sender & receiver can communicate with each other. Some applications already allow users to detect whether an address belongs to them. This feature should, if possible, be extended to include BIP-352 functionality.
 
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/first-use/security-setup.png"
-   retina = "/assets/images/guide/daily-spending-wallet/first-use/security-setup@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/first-use/security-setup-full.png"
-   width = 250
-   height = 541
-   alt-text = "Security options explainer screen with PIN and Face ID options"
-   caption = "Additional security measures are appropriate since bitcoin wallets handle user funds."
-   layout = "float-right-desktop -background -shadow"
-%}
+## Backup
 
-While smartphones typically already require authentication to get past their lock screens, it is appropriate for bitcoin applications to introduce further security measures. For example, a user may only require [Touch ID or Face ID]({{ '/guide/daily-spending-wallet/security/#biometrics-touch-id--face-id' | relative_url }}) to access their device, but then set up a [unique PIN]({{ '/guide/daily-spending-wallet/security/#pin-protection' | relative_url }}) to access their wallet and send payments.
-
-PINs can also be used to encrypt backup data, both locally and in cloud storage.
-
-</div>
-
-## Initial deposit
-
-New wallets start empty and require funding to become useful. Typically, bitcoin is purchased and sent from an exchange, or from another wallet the user controls. Both on-chain and lightning deposits should be supported. On-chain deposits should be automatically [swapped]({{ '/guide/how-it-works/lightning-services/#swaps' | relative_url }}) to lightning (note that this is a design decision made for this reference design). To prevent user frustration, swap fees should be explained when creating the deposit request. For more on this, see [funding]({{ '/guide/daily-spending-wallet/funding/' | relative_url }}).
-
-{% include image-gallery.html pages = page.images_funding %}
-
-## Receiving the deposit
-
-The first deposit can be a sensitive moment, so users should be informed as soon as it is detected. There is a high chance that additional fees had to be paid in order to swap bitcoin to lightning or open a new channel. These should be clearly explained so users don't assume that high fees are the norm. For more detail, see [receiving]({{ '/guide/daily-spending-wallet/receiving/' | relative_url }}).
+Like lightning wallets, on-chain bitcoin wallets supporting full-featured BIP-352 wallets require file backups. These backup files may contain the following information:
+backup seed (for BIP 39 wallets)
+- Scan and/or spend keys
+- labels & even contacts
+- actual txids?
+- wallet birthday
 
 {% include image-gallery.html pages = page.images_deposit %}
 
-## Security reminders
+As a best practice, some of the above information such as seed, wallet birthday should be shown to the user in the UI itself in case they misplace the file or recovery application does not support backup files or simply a redundant manual backup.
 
-If funds have been deposited and the user has not set up [backup]({{ '/guide/daily-spending-wallet/backup-and-recovery/landing-page/' | relative_url }}), [privacy]({{ '/guide/daily-spending-wallet/privacy/' | relative_url }}), and [security]({{ '/guide/daily-spending-wallet/security/' | relative_url }}) settings properly, it may be a good time to remind them to do so. This is particularly relevant if large amounts have been deposited, making potential loss more painful for the user.
+While simply backing up the seed is sufficient, this results in longer wallet recovery times and causes loss of useful information.
 
-{% include image-gallery.html pages = page.images_reminders %}
+> Since each silent payment output address is derived independently, regular backups are recommended.” - BIP352
 
-## What's next
+## Recovery
 
-After the first use, users are typically on their own to use the application as it fits their needs, and everything should be set up appropriately. Features that are typically only relevant at later stages of the [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/#first-use' | relative_url }}) may benefit from their own onboarding flows. Key is to present introductory information at the time it becomes relevant to the user.
+A robust backup & recovery solution for BIP-352 wallets involves backup files since the wallet has important information besides just private key (recovery phrase), such as contacts and labels. Besides, wallets without a BIP-39 seed also need a backup file. On the other hand, BIP-39 wallets can be recovered with just a seed phrase, a process that can be sped up by entering the wallet creation date (wallet birthday). Thus, during wallet import (recovery), the application should provide multiple ways to restore their wallet and recover funds. This would include:
+- Backup file from cloud
+- import/upload backup file
+- enter recovery phrase (with or without wallet birthday)
+- Enter scan/spend key material
+
+These methods are similar to other wallet/address types including lightning wallets, and are explained here.
+
+{% include image-gallery.html pages = page.images_deposit %}
+
+{% include fact/pros.html %}
+
+- Significantly increases security against theft
+- Can allow several people to access and control a shared wallet
+- Can tailor requirements for multiple co-signing and access situations
+
+{% include fact/close.html %}
+
+{% include fact/cons.html %}
+
+- Has significant complexity and op-sec burden for multiple private keys, each of which needs a good backup scheme
+- Not compatible with lightning node wallets
+
+{% include fact/close.html %}
+
+## Resources
+
+- [BIP-78](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki)
+- [Bitcoin Optech topics: Payjoin](https://bitcoinops.org/en/topics/payjoin)
+- [Payjoin Process Flows](https://www.figma.com/file/NzMvwyzP7x5jfGmwNUKRov/PayJoin-Process-Flows?node-id=0%3A1&t=wSwewTOkQddWhagl-1)
+- [Payjoin User Flows](https://www.figma.com/file/69uUDWVc8N9t5Bej8pZEsF/PayJoin-User-Flows?node-id=0%3A1&t=8F4jOa71i6X1Slbz-1)
+- [Investigation: Petting Payjoins in the Wild](https://docs.google.com/document/d/1_de2pkMREGpZQwOefQdH-MZNSUPazObgRK1cruiWBmo/edit?usp=sharing)
+- [BTCPay Server Payjoin Guide](https://docs.btcpayserver.org/Payjoin/#btcpay-server-payjoin-guide)
+
 
 ---
 
 Ok, now let's look closer at [receiving to a daily spending wallet.]({{ '/guide/daily-spending-wallet/receiving/' | relative_url }})
 
 {% include next-previous.html
-   previousUrl = "/guide/daily-spending-wallet/"
-   previousName = "Daily spending wallet"
-   nextUrl = "/guide/daily-spending-wallet/backup-and-recovery/landing-page/"
-   nextName = "Backup & recovery"
+   previousUrl = "/guide/how-it-works/wallet-privacy/"
+   previousName = "Wallet privacy"
+   nextUrl = "/guide/how-it-works/wallet-selector"
+   nextName = "Wallet selector"
 %}
