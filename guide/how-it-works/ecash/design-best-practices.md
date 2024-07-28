@@ -146,10 +146,10 @@ Explain P2PK Lock in Cashu. Only a few wallets support it. But it's a powerful f
 
 {% include image-gallery.html pages = page.images_network %}
 
-### Fedimint design best practices
+## Fedimint design best practices
 Ecash general best design practices.
 
-## Guardian display 
+### Guardian display 
 Explain that the design practices below are specific to Fedimint.
 
 <div class="center" markdown="1">
@@ -165,6 +165,6 @@ Explain that the design practices below are specific to Fedimint.
    caption = "Help & support options ensure users can get the right information when they need it."
 %}
 
-Open-source projects do not have large support teams but instead often rely on their communities and forum discussion to allow users to help each other. Contributors are also part of this activity but usually cannot dedicate time to address all support needs. Therefore it is important to provide several different methods to get help. It distributes the burden of support across documentation, community, and contributors.
+Explain this
 
 </div>
