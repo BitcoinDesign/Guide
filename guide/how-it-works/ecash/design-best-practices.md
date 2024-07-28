@@ -146,6 +146,11 @@ Explain P2PK Lock in Cashu. Only a few wallets support it. But it's a powerful f
 
 {% include image-gallery.html pages = page.images_network %}
 
+### Back up and restore
+Much of the same info as the backup section in Cashu page. Except here we will highlight examples of how to encourge the user to save a list of mints and mint urls they are connected to.
+
+{% include image-gallery.html pages = page.images_network %}
+
 ## Fedimint design best practices
 Ecash general best design practices.
 
@@ -165,6 +170,6 @@ Explain that the design practices below are specific to Fedimint.
    caption = "Help & support options ensure users can get the right information when they need it."
 %}
 
-Explain this
+Explain this.
 
 </div>
