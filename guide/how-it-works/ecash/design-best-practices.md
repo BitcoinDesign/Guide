@@ -154,7 +154,7 @@ Much of the same info as the backup section in Cashu page. Except here we will h
 ## Fedimint design best practices
 Ecash general best design practices.
 
-### Guardian display 
+### Guardian list display 
 Explain that the design practices below are specific to Fedimint.
 
 <div class="center" markdown="1">
@@ -169,7 +169,4 @@ Explain that the design practices below are specific to Fedimint.
    layout = "float-right-desktop -background -shadow"
    caption = "Help & support options ensure users can get the right information when they need it."
 %}
-
-Explain this.
-
 </div>
