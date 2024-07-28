@@ -74,7 +74,7 @@ ADD Figma URL
 
 -->
 
-# Settings
+# Ecash design best practices
 {: .no_toc }
 
 ---
@@ -87,8 +87,7 @@ ADD Figma URL
 ---
 Below you will find best practices for Ecash in general, cashu specifics, and fedimint specifics.
 
-
-## Ecash best design practices
+## General ecash best practices
 Ecash general best design practices.
 
 ### Multiple mint display
@@ -119,8 +118,7 @@ A paragraph explaining the importance of displaying pending tokens.
 A paragraph introduction to cashu specific best practices.
 
 ### Meta data
-
-[Security]({{ '/guide/daily-spending-wallet/security/' | relative_url }}) is all about preventing unwanted access to the application. Basic access options (PIN, FaceID) are configured during [first use]({{ '/guide/daily-spending-wallet/first-use/' | relative_url }}), and users receive regular reminders to review them. Wallet limits are an additional option, only available in settings, to block potentially unwanted high-value payments.
+Explaing the meta data fields for cashu. Explain NUT06.
 
 {% include image-gallery.html pages = page.images_security %}
 
@@ -144,12 +142,15 @@ A paragraph explaining the importance of giving the user the ability to edit a m
 </div>
 
 ### P2PK Lock
-
-Most users will not need or want to change network settings, but it is important to offer these features for those who do. While it may be personal preference for some, it may be a privacy or security matter for others to connect through services they personally maintain or trust. Interoperability is a core [design principle]({{ '/guide/getting-started/principles/#interoperability' | relative_url }}) and also makes the application more versatile.
+Explain P2PK Lock in Cashu. Only a few wallets support it. But it's a powerful feature that allows for offline payment and should be designed for.
 
 {% include image-gallery.html pages = page.images_network %}
 
-## Help & support
+### Fedimint design best practices
+Ecash general best design practices.
+
+## Guardian display 
+Explain that the design practices below are specific to Fedimint.
 
 <div class="center" markdown="1">
 
@@ -167,14 +168,3 @@ Most users will not need or want to change network settings, but it is important
 Open-source projects do not have large support teams but instead often rely on their communities and forum discussion to allow users to help each other. Contributors are also part of this activity but usually cannot dedicate time to address all support needs. Therefore it is important to provide several different methods to get help. It distributes the burden of support across documentation, community, and contributors.
 
 </div>
-
----
-
-Next, let's dive into the [savings wallet reference design]({{ '/guide/savings-wallet/' | relative_url }}).
-
-{% include next-previous.html
-   previousUrl = "/guide/daily-spending-wallet/privacy/"
-   previousName = "Privacy"
-   nextUrl = "/guide/savings-wallet/"
-   nextName = "Savings wallet"
-%}
