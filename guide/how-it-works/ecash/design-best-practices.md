@@ -53,25 +53,23 @@ images_network:
 ---
 
 {% include picture.html
-    image = "/assets/images/guide/daily-spending-wallet/settings/settings.jpg"
-    retina = "/assets/images/guide/daily-spending-wallet/settings/settings@2x.jpg"
-    mobile = "/assets/images/guide/daily-spending-wallet/settings/settings-mobile.jpg"
-    mobileRetina = "/assets/images/guide/daily-spending-wallet/settings/settings-mobile@2x.jpg"
-    alt-text = "An oil painting of a big, clunky machine with a big bitcoin gear"
-    caption = "How AI thinks Matisse would have visualized bitcoin settings."
-    width = 1600
-    height = 600
-    layout = "full-width"
+   image = "/assets/images/guide/how-it-works/ecash/ecash.jpg"
+   retina = "/assets/images/guide/how-it-works/ecash/ecash@2x.jpg"
+   mobile = "/assets/images/guide/how-it-works/ecash/ecash-mobile.jpg"
+   mobileRetina = "/assets/images/guide/how-it-works/ecash/ecash-mobile@2x.jpg"
+   alt-text = "ecash overview illustration"
+   width = 1600
+   height = 700
+   layout = "full-width"
 %}
 
 <!--
 
 
-This is more of a summary page that bring together all the application settings that
-the user encounters throughout the app experience into a single, concise form.
+This is a summary page of best design practices for both bitcoin backed ecash.
 
 The design source for screen mock-ups on this page can be found here:
-https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototype?node-id=4152%3A306968&t=boEAgdyqfi39SBoF-1
+ADD Figma URL
 
 
 -->
@@ -87,33 +85,18 @@ https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototyp
 </div>
 
 ---
+Below you will find best practices for Ecash in general, cashu specifics, and fedimint specifics.
 
-<div class="center" markdown="1">
 
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/settings/overview.png"
-   retina = "/assets/images/guide/daily-spending-wallet/settings/overview@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/settings/overview-big.png"
-   alt-text = ""
-   width = 250
-   height = 541
-   layout = "float-right-desktop -background -shadow"
-   caption = "The overview screen provides an easy-to-understand grouping of settings."
-%}
+## Ecash best design practices
+Ecash general best design practices.
 
-As you probably noticed in previous pages, various settings can be configured contextually throughout the app experience (like [hiding and unhiding the balance]({{ '/guide/daily-spending-wallet/privacy/#quickly-hiding-balances' | relative_url }})). All these options, and a few extra ones, are bundled in the settings area.
-
-While not the most frequently visited part of an application, it fills an important functional role by giving users precise control over their experience.
-
-</div>
-
-## General
-
-This sub-section includes various non-essential settings that are not covered in the other categories and let users adjust the application to their context and personal preferences.
+### Multiple mint display
+A paragraph explaining the importance of displaying multiple mints, and some design considerations to keep in mind.
 
 {% include image-gallery.html pages = page.images_general %}
 
-## Fees
+#### Pending tokens
 
 <div class="center" markdown="1">
 
@@ -128,40 +111,20 @@ This sub-section includes various non-essential settings that are not covered in
    caption = "The fees screen provides a clear overview of all fees that may be charged."
 %}
 
-Paying fees for transactions is unavoidable and typically not something users enjoy. Being transparent and communicating them clearly in context (e.g. when [reviewing a payment]({{ '/guide/daily-spending-wallet/sending/#review--approval' | relative_url }}) before sending it) is crucial. Since contextual information is selective, this fee screen in settings is needed to provide a concise summary of all the types of fees that may be charged.
-
-During regular use, only lightning network fees will apply to transactions in this wallet. An additional fee may be charged for opening new channels to increase liquidity.
-
-When users send to an on-chain address, a swap fee applies. This fee also applies if the user receives to an on-chain (swap) address. This may cause confusion, as typically, the sender is responsible for paying fees.
+A paragraph explaining the importance of displaying pending tokens.
 
 </div>
 
-## Privacy
+## Cashu best practices
+A paragraph introduction to cashu specific best practices.
 
-<div class="center" markdown="1">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/settings/privacy.png"
-   retina = "/assets/images/guide/daily-spending-wallet/settings/privacy@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/settings/privacy-big.png"
-   alt-text = ""
-   width = 250
-   height = 541
-   layout = "float-right-desktop -background -shadow"
-   caption = "Privacy options focus on the display of sensitive data."
-%}
-
-[Privacy]({{ '/guide/daily-spending-wallet/privacy/' | relative_url }}) settings are straightforward and focused on whether balances are visible or hidden. While there are some best practices for users, much of the responsibility to ensure good privacy rests in the hands of the developers.
-
-</div>
-
-## Security
+### Meta data
 
 [Security]({{ '/guide/daily-spending-wallet/security/' | relative_url }}) is all about preventing unwanted access to the application. Basic access options (PIN, FaceID) are configured during [first use]({{ '/guide/daily-spending-wallet/first-use/' | relative_url }}), and users receive regular reminders to review them. Wallet limits are an additional option, only available in settings, to block potentially unwanted high-value payments.
 
 {% include image-gallery.html pages = page.images_security %}
 
-## Wallet backup
+### Edit mint URL / Refresh mint settings
 
 <div class="center" markdown="1">
 
@@ -176,11 +139,11 @@ When users send to an on-chain address, a swap fee applies. This fee also applie
    caption = "Backup options are typically configured in first use and rarely need to be accessed."
 %}
 
-[First use]({{ '/guide/daily-spending-wallet/first-use/' | relative_url }}) also guides users towards appropriate [backup]({{ '/guide/daily-spending-wallet/backup-and-recovery/landing-page/' | relative_url }}) options, and users may never need to access this screen. A unique piece of information here is when the last cloud backup was performed. This can give users peace of mind that their information is securely being backed up.
+A paragraph explaining the importance of giving the user the ability to edit a mint URL and refresh mint settings. Explain the connection to NUT06.
 
 </div>
 
-## Network
+### P2PK Lock
 
 Most users will not need or want to change network settings, but it is important to offer these features for those who do. While it may be personal preference for some, it may be a privacy or security matter for others to connect through services they personally maintain or trust. Interoperability is a core [design principle]({{ '/guide/getting-started/principles/#interoperability' | relative_url }}) and also makes the application more versatile.
 
