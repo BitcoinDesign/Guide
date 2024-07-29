@@ -1,8 +1,9 @@
 ---
 layout: guide
-title: Silent Payments
+title: Silent payments
 description: How silent payments impact and improve bitcoin UX
-nav_order: 1
+nav_order: 11
+parent: How it works
 permalink: /guide/how-it-works/silent-payments/
 redirect_from:
  - /guide/onboarding/creating-a-new-wallet/
