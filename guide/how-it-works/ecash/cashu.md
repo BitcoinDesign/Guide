@@ -83,7 +83,7 @@ Verifying tokens after restoration might temporarily compromise their privacy. T
 
 * **Rapid Deployment and Simple Integration** - Great for projects that need to be launched quickly with minimal setup. This includes MVPs, prototypes, and community-based applications where speed and ease of deployment are crucial.
 
-* **3Quick Interoperability with the Lightning Network** - Ideal when you need to integrate with the Lightning Network for fast, low-fee transactions. Cashu supports seamless, out of hte box integration with existing Lightning wallets and infrastructure.
+* **Quick Interoperability with the Lightning Network** - Ideal when you need to integrate with the Lightning Network for fast, low-fee transactions. Cashu supports seamless, out of the box integration with existing Lightning wallets and infrastructure.
 
 * **Localized or Small Community Solutions** - Implement Cashu in scenarios where independent mints operated by trusted local entities can serve a community, enhancing trust and customization based on local needs.
 
