@@ -142,7 +142,7 @@ The spectrum of decentralization and custody for Bitcoin ranges from highly dece
    </table>
 </div>
 
-## Advantadges of ecash on bitcoin
+## Advantages of ecash on bitcoin
 {% include picture.html
    image = "/assets/images/guide/how-it-works/ecash/connected@1x.png"
    retina = "/assets/images/guide/how-it-works/ecash/connected@2x.png"
