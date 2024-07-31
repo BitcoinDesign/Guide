@@ -97,32 +97,7 @@ For example, Alice, who runs an NGO, can seek bitcoin donations from her support
 This is a significant improvement in user experience for on-chain transactions. Additionally, BIP-352 allows users to proactively add labels to their addresses that get recognised while payments are detected. This is a boost for coin control as well as the contacts features and can improve privacy.
 
 We will first look at Labels and Contacts, then delve into how they impact/improve other features.
-Some [studies]({{ '/guide/resources/design-research/' | relative_url }}) suggest that users struggled greatly with [technical terminology]({{ '/guide/glossary/' | relative_url }}) and feeling as though they had a lack of guidance during wallet setup. By walking users through simple steps that clearly frame the features of self-custodial bitcoin wallets, users will feel well-equipped to navigate and use the wallet confidently.
 
-> Users reported that they often felt like they lacked guidance and understanding during wallet setup.
->
-> <cite>As researched by <a href="https://arxiv.org/pdf/1802.04351.pdf">Eskandari et al</a></cite>
-
-The details of this experience can differ vastly based on your technical architecture and use case. For this reference design, we focus on a non-custodial, lightning-first mobile wallet that uses various [lightning services]({{ '/guide/how-it-works/lightning-services/' | relative_url }}) to automate some operations, such as channel management.
-
-## Discovery and installation
-
-<div class="center" markdown="1">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/first-use/app-store-listing.png"
-   retina = "/assets/images/guide/daily-spending-wallet/first-use/app-store-listing@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/first-use/app-store-listing-full.png"
-   width = 250
-   height = 541
-   alt-text = "App store listing of the wallet application"
-   caption = "Our impressions of app store listings already inform our expectations and attitudes towards applications."
-   layout = "float-right-desktop -background -shadow"
-%}
-
-Before using an application, a user needs to become aware of it, become interested, and install it. Touch points like a landing page and app store listing should already allow users to generally understand what the experience will be like.
-
-</div>
 
 ## Brief explanation
 
@@ -132,9 +107,26 @@ A silent payment transaction happens in 4 broad steps:
 - The sender broadcasts a transaction that pays this derived address
 - The receiver identifies the payment as theirs by identifying that they control this address
 
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/silent-payments/how-silent-payments-work.png"
+   retina = "/assets/images/guide/how-it-works/silent-payments/how-silent-payments-work@2x.png"
+   mobile = "/assets/images/guide/how-it-works/silent-payments/how-silent-payments-work.png"
+   mobileRetina = "/assets/images/guide/how-it-works/silent-payments/how-silent-payments-work@2x.png"
+   alt-text = "An image that illustrates how silent payments work in 4 steps."
+   caption = "."
+   width = 1024
+   height = 522
+   layout = "full-width"
+%}
 
 With this new model of transacting, BIP-352 introduces new primitives and concepts for users and developers. Below is a brief summary of them:
 
+| Current terminology        | With silent payments          | Benefit |
+|:-------------|:------------------|:------|
+| Single-use on-chain address           | Static address | Reusable  |
+| Extended private key (xprv) | Spend key   |   |
+| Extended public key (xpub)           | Scan key      | Addresses cannot be deterministically derived   |
+| **Address-based model**           | **Contact-based model** | **More intuitive and familiar**  |
 
 {% include image-gallery.html pages = page.images_create %}
 
@@ -143,19 +135,44 @@ With this new model of transacting, BIP-352 introduces new primitives and concep
 
 ### Labels
 
+<div class="center" markdown="1">
+
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/silent-payments/adding-labels-to-static-address.png"
+   retina = "/assets/images/guide/how-it-works/silent-payments/adding-labels-to-static-address@2x.png"
+   modalImage = "/assets/images/guide/how-it-works/wallet-privacy/network-settings-big.png"
+   alt-text = "An application screen showing labels being added to a static address."
+   caption = "Adding labels to a static address before posting or sharing with others."
+   width = 250
+   height = 542
+   layout = "float-right-desktop -background -shadow"
+%}
+
 BIP-352 allows users to customize their silent payment addresses on a case-by-case basis by adding labels. Users may add labels to customise their static addresses before sharing or posting them. When a payment is received, these labels can be detected and used to identify the static address used to make the payment without it being obvious on-chain.
+
+</div>
+
+This scheme improves label-related features since any labels added to a static address get auto-applied to all derived on-chain addresses (detectable only by the receiver), eliminating the friction in manually adding labels to addresses or transactions. This not only makes payment tracking possible, but also useful during automatic or manual coin selection.
 
 For eg: a contractor Alice can add labels to her silent payment address while sharing them with a certain client, her social media and her website. When she receives payments from any of these sources, the respective label will be detected by the wallet application in the on-chain address to infer the source of the payment as this client.
 
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/silent-payments/how-silent-payment-labels-work.png"
+   retina = "/assets/images/guide/how-it-works/silent-payments/how-silent-payment-labels-work@2x.png"
+   mobile = "/assets/images/guide/how-it-works/silent-payments/how-silent-payment-labels-work.png"
+   mobileRetina = "/assets/images/guide/how-it-works/silent-payments/how-silent-payment-labels-work@2x.png"
+   alt-text = "An image that illustrates how labels feature in silent payments works."
+   caption = "."
+   width = 1024
+   height = 801
+   layout = "full-width"
+%}
 
-This scheme improves label-related features since any labels added to a static address get auto-applied to all derived on-chain addresses (detectable only by the receiver), eliminating the friction in manually adding labels to addresses or transactions. This not only makes payment tracking easier for users, but also aids in coin selection when users want to spend bitcoin they received.
 
-As shown in the image below: any payments that Alice receives from a client she shared this labelled static address with, contain the label(s) she applied to the static address. This is useful for tracking payment sources, and the labels can be associated with received bitcoin and used for coin selection during any subsequent spends that Alice makes.
+These labelling and detection features can also be useful for:
 
-This labelling and detection features allows for some interesting things:
-
-- Invoices: merchant software like BTCPay can make clever use of labels to match incoming payments with invoices. This is required because on-chain addresses themselves cannot be predicted on used to make the mapping
-- Static deposit addresses for exchanges: Users looking to deposit bitcoin at exchanges may get confused when they see changing/different deposit addresses. Exchanges can now share labelled, static addresses with users; this will keep deposit addresses the same while allowing the exchange to map deposit transactions to users
+- Invoices: merchant software like BTCPay can use labels to match incoming payments with invoices. This is required because on-chain addresses themselves cannot be predicted on used to make the mapping
+- Static deposit addresses for exchanges: Users looking to deposit bitcoin at exchanges may get confused when they see changing/different deposit addresses. Exchanges can now share static addresses with users; this will keep deposit addresses the same while allowing the exchange to map deposit transactions to users
 
 
 ### Contacts
@@ -208,13 +225,11 @@ Some places where people can share static addresses (and add labels) to include:
 <div class="center" markdown="1">
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/first-use/cloud-backup.png"
-   retina = "/assets/images/guide/daily-spending-wallet/first-use/cloud-backup@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/first-use/cloud-backup-full.png"
+   modalImage = "/assets/images/guide/how-it-works/silent-payments/adding-labels-to-static-address@2x.png"
    width = 250
-   height = 541
-   alt-text = "Cloud backup explainer screen with options for different services"
-   caption = "Offer different options to accommodate various user behaviors."
+   height = 522
+   alt-text = "An application screen showing labels being added to a static address."
+   caption = "."
    layout = "float-right-desktop -background -shadow"
 %}
 
@@ -223,6 +238,8 @@ Regularly [backing up wallet]({{ '/guide/daily-spending-wallet/backup-and-recove
 Frequent backups are important for lightning wallets, as channel states frequently change and need to be updated.
 
 </div>
+
+
 
 Receivers using mobile wallets, which may not be online 24x7 will encounter some delay (once they come online) as their wallet scans the blockchain and performs calculations to detect their payments. Applications should communicate this fact during setup/onboarding. While the scanning itself is taking place, applications should show progress data and estimated time to complete the scanning process.
 
