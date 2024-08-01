@@ -10,47 +10,86 @@ redirect_from:
  - /guide/onboarding/first-use/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/daily-spending-wallet/first-use/first-use-preview.png
-image_base: /assets/images/guide/daily-spending-wallet/first-use/
-images_create:
-    - file: onboarding-welcome-screen
-      modalImage: onboarding-welcome-screen-full
-      alt: Initial app landing screen
-      caption: It is good practice to clearly highlight the primary user action, which is ‘Create a new wallet’ in this case.
-    - file: responsibility-disclaimer
-      modalImage: responsibility-disclaimer-full
-      alt: Screen with two options for the user to confirm about controlling the wallets private keys
-      caption: Bitcoin wallets function in such a unique way that it is recommended to inform users about their responsibilities.
-images_funding:
-    - file: funding-options
-      modalImage: funding-options-full
-      alt: Screen with receive and buy bitcoin options for funding the wallet
-      caption: Provide options for users who don't have any bitcoin yet, and for users who do.
-    - file: funding-address
-      modalImage: funding-address-full
-      alt: Screen showing a receive address, QR code, and share options
-      caption: Make the first deposit convenient, but also explain potential fees to avoid confusion.
-images_deposit:
-    - file: home-receiving
-      modalImage: home-receiving-full
-      alt: Home screen with notification about incoming payment of 10,000,000 sats
-      caption: Indicate incoming payments as soon as they can be detected.
-    - file: initial-receive
-      modalImage: initial-receive-full
-      alt: Payment receipt screen
-      caption: Seeing the first successful payment completed can be a moment of relief for users.
-    - file: initial-receive-fees
-      modalImage: initial-receive-fees-full
-      alt: Payment receipt screen with fee modal overlaid
-      caption: Provide clear descriptions for fees, especially ones that may be unexpected.
-images_reminders:
-    - file: security-reminder
-      modalImage: security-reminder
-      alt: Screen with options and a reminder to adjust security and private settings
-      caption: Remind users to review adjust their security settings.
-    - file: home-security-reminder
-      modalImage: home-security-reminder-full
-      alt: Small reminder on the home screen about backing up the wallet
-      caption: Reminders can also be more discrete, especially if the potential risks are lower.
+image_base: /assets/images/guide/how-it-works/silent-payments/carousel-images/
+images_contacts:
+    - file: clipboard-options-add-contacts-or-pay
+      modalImage: clipboard-options-add-contacts-or-pay
+      alt: .
+      caption: .
+    - file: contact-page
+      modalImage: clipboard-options-add-contacts-or-pay
+      alt: .
+      caption: .
+    - file: contacts-list
+      modalImage: clipboard-options-add-contacts-or-pay
+      alt: .
+      caption: .
+    - file: home-screen-with-contacts
+      modalImage: clipboard-options-add-contacts-or-pay
+      alt: .
+      caption: .
+
+images_sp-onboarding:
+    - file: setup-silent-payments-onboarding-i
+      modalImage: setup-silent-payments-onboarding-i
+      alt: .
+      caption: .
+    - file: setup-silent-payments-onboarding-ii
+      modalImage: setup-silent-payments-onboarding-ii
+      alt: .
+      caption: .
+    - file: setup-silent-payments-onboarding-iii
+      modalImage: setup-silent-payments-onboarding-iii
+      alt: .
+      caption: .
+
+images_send:
+    - file: send-review-sp
+      modalImage: send-review-sp
+      alt: .
+      caption: .
+    - file: send-review-with-contact
+      modalImage: send-review-with-contact
+      alt: .
+      caption: .
+    - file: send-address-error
+      modalImage: send-address-error
+      alt: .
+      caption: .
+
+images_test-txns:
+    - file: test-txn-send-review
+      modalImage: test-txn-send-review
+      alt: .
+      caption: .
+    - file: test-txn-send-home
+      modalImage: test-txn-send-home
+      alt: .
+      caption: .
+    - file: test-txn-confirm-finalise-txn
+      modalImage: test-txn-confirm-finalise-txn
+      alt: .
+      caption: .
+
+images_backup:
+    - file: backup-cloud-backup
+      modalImage: backup-cloud-backup
+      alt: .
+      caption: .
+    - file: backup-wallet-birthday
+      modalImage: backup-wallet-birthday
+      alt: .
+      caption: .
+
+images_recovery:
+    - file: recovery-wallet-birthday-prompt
+      modalImage: recovery-wallet-birthday-prompt
+      alt: .
+      caption: .
+    - file: recovery-wallet-birthday-enter
+      modalImage: recovery-wallet-birthday-enter
+      alt: .
+      caption: .
 ---
 
 <!--
@@ -181,9 +220,15 @@ Contacts are another feature that are greatly improved with BIP-352. Since users
 
 Labels help Contacts in another interesting way by enabling ‘sender contacts’ where the user can create Contacts for parties they only receive bitcoin from. This is accomplished by adding a different label for every contact.
 
+{% include image-gallery.html pages = page.images_contacts %}
+
 Overall, Silent payments present a great opportunity to start basing payments UX in terms of people instead of addresses, and applications.
 
-A note on privacy: wallets should create an in-app contact list and avoid storing bitcoin payment information in the operating system’s default contact list since it cannot guarantee its safety for data breaches or phone hacks.
+{% include tip/recommendation.html %}
+
+Wallets should create an in-app contact list and avoid storing bitcoin payment information in the operating system’s default contact list since it cannot guarantee its safety for data breaches or phone hacks.
+
+{% include tip/close.html %}
 
 
 ## Setup
@@ -192,15 +237,17 @@ Applications can take a variety of approaches to set up and communicate BIP-352 
 
 Since the BIP-352 comes with some new primitives (term) (spend key, scan key) & processes (like labels, backing up files), the setup process might be a good opportunity to introduce some of these as needed without overloading the user.
 
+{% include image-gallery.html pages = page.images_sp-onboarding %}
+
 One thing to keep in mind: since silent payments impacts UX flows around sending, syncing & scanning, backup, recovery and applications might even choose to allow users to not adopt the silent payments altogether!
 
-{% include image-gallery.html pages = page.images_deposit %}
 
 ## Sending
 
 With the improvements to Contacts, send flows may start from the Contact page in addition to the usual send flow that starts from the app home screen with a Send button. When users start with obtaining a static address, the derived on-chain address is visibly different from the static address the sender started with, something potentially confusing for users. Applications should take measures such as short explainers to avoid confusion on the users part. Applications that do not support silent payment addresses should provide helpful, actionable, human readable errors.
 
-{% include image-gallery.html pages = page.images_reminders %}
+{% include image-gallery.html pages = page.images_send %}
+
 
 With labels helping so much to improve coin selection, UIs might come up with better ways to choose (automatically or by users, manually) the coins to be used in a transaction. Note that the coins chosen for a particular transaction impact the derived on-chain address and user flows should be designed based on that.
 
@@ -210,7 +257,7 @@ Test transactions are another way to alleviate user anxiety for sending on-chain
 
 After the first use, users are typically on their own to use the application as it fits their needs, and everything should be set up appropriately. Features that are typically only relevant at later stages of the [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/#first-use' | relative_url }}) may benefit from their own onboarding flows. Key is to present introductory information at the time it becomes relevant to the user.
 
-{% include image-gallery.html pages = page.images_deposit %}
+{% include image-gallery.html pages = page.images_test-txns %}
 
 ## Receiving & scanning
 
@@ -254,7 +301,7 @@ backup seed (for BIP 39 wallets)
 - actual txids?
 - wallet birthday
 
-{% include image-gallery.html pages = page.images_deposit %}
+{% include image-gallery.html pages = page.images_backup %}
 
 As a best practice, some of the above information such as seed, wallet birthday should be shown to the user in the UI itself in case they misplace the file or recovery application does not support backup files or simply a redundant manual backup.
 
@@ -272,7 +319,9 @@ A robust backup & recovery solution for BIP-352 wallets involves backup files si
 
 These methods are similar to other wallet/address types including lightning wallets, and are explained here.
 
-{% include image-gallery.html pages = page.images_deposit %}
+{% include image-gallery.html pages = page.images_recovery %}
+
+## Pros and cons
 
 {% include fact/pros.html %}
 
