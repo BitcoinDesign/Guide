@@ -2,7 +2,7 @@
 layout: guide
 title: Multiple wallets
 description: A UX reference design for a multi-key bitcoin wallet designed for both daily spending and storing medium amounts.
-nav_order: 8
+nav_order: 9
 last_reference_design: true
 permalink: /guide/multiple-wallets/
 main_classes: -no-top-padding

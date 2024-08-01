@@ -246,7 +246,7 @@ This backup strategy offers the Jones family a balanced approach to securing the
 {% include next-previous.html
    previousUrl = "/guide/inheritance-wallet/onboarding-cosigners"
    previousName = "Onboarding cosigners"
-   nextUrl = "/guide/upgradeable-wallet"
-   nextName = "Upgradeable wallet"
+   nextUrl = "/guide/inheritance-wallet/making-changes"
+   nextName = "Making changes"
 %}
 

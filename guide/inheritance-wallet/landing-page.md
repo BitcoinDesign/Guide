@@ -68,7 +68,7 @@ When backing up multi-key wallets, there are more moving parts to consider than 
 
 --- 
 
-### Making changes (coming soon)
+### [Making changes]({{ '/guide/inheritance-wallet/making-changes/' | relative_url }})
 
 Over time, it might become necessary for users to make changes to their savings wallet because someone lost a key or they want to make changes to the overall wallet configuration. Our app helps users make such changes and update the backup and inheritance documentation.
 
