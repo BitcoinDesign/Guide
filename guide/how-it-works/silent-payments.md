@@ -9,7 +9,7 @@ redirect_from:
  - /guide/onboarding/creating-a-new-wallet/
  - /guide/onboarding/first-use/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/daily-spending-wallet/first-use/first-use-preview.png
+image: https://bitcoin.design/assets/images/guide/how-it-works/silent-payments/silent-payments-header.png
 image_base: /assets/images/guide/how-it-works/silent-payments/carousel-images/
 images_contacts:
     - file: clipboard-options-add-contacts-or-pay
@@ -108,13 +108,13 @@ https://www.figma.com/file/NjtMNQiJtoVkedEHgwD0A9/BTC-DSN-Guide-Header-Images?no
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/first-use/first-use.png"
-   retina = "/assets/images/guide/daily-spending-wallet/first-use/first-use@2x.png"
-   mobile = "/assets/images/guide/daily-spending-wallet/first-use/first-use-mobile.png"
-   mobileRetina = "/assets/images/guide/daily-spending-wallet/first-use/first-use-mobile@2x.png"
-   alt-text = "First-use flow diagram with the first section highlighted"
+   image = "/assets/images/guide/how-it-works/silent-payments/silent-payments-header.png"
+   retina = "/assets/images/guide/how-it-works/silent-payments/silent-payments-header@2x.png"
+   mobile = "/assets/images/guide/how-it-works/silent-payments/silent-payments-header-mobile.png"
+   mobileRetina = "/assets/images/guide/daily-spending-wallet/silent-payments/silent-payments-header-mobile@2x.png"
+   alt-text = "."
    width = 1600
-   height = 600
+   height = 1000
    layout = "full-width"
 %}
 
@@ -170,7 +170,7 @@ With this new model of transacting, BIP-352 introduces new primitives and concep
 {% include image-gallery.html pages = page.images_create %}
 
 
-## Contacts & labels (and IDs)
+## Contacts & labels
 
 ### Labels
 
