@@ -340,12 +340,13 @@ These methods are similar to other wallet/address types including lightning wall
 
 ## Resources
 
-- [BIP-78](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki)
-- [Bitcoin Optech topics: Payjoin](https://bitcoinops.org/en/topics/payjoin)
-- [Payjoin Process Flows](https://www.figma.com/file/NzMvwyzP7x5jfGmwNUKRov/PayJoin-Process-Flows?node-id=0%3A1&t=wSwewTOkQddWhagl-1)
-- [Payjoin User Flows](https://www.figma.com/file/69uUDWVc8N9t5Bej8pZEsF/PayJoin-User-Flows?node-id=0%3A1&t=8F4jOa71i6X1Slbz-1)
-- [Investigation: Petting Payjoins in the Wild](https://docs.google.com/document/d/1_de2pkMREGpZQwOefQdH-MZNSUPazObgRK1cruiWBmo/edit?usp=sharing)
-- [BTCPay Server Payjoin Guide](https://docs.btcpayserver.org/Payjoin/#btcpay-server-payjoin-guide)
+- [BIP-352](https://github.com/bitcoin/bips/blob/master/bip-0352.mediawiki)
+- [https://silentpayments.xyz/](https://silentpayments.xyz/)
+
+### Wallets implementing silent payment
+
+- [Cake wallet](https://cakewallet.com/)
+- [Blue wallet] (https://bluewallet.io/) (sending only)
 
 
 ---
