@@ -325,16 +325,20 @@ These methods are similar to other wallet/address types including lightning wall
 
 {% include fact/pros.html %}
 
-- Significantly increases security against theft
-- Can allow several people to access and control a shared wallet
-- Can tailor requirements for multiple co-signing and access situations
+- Enables a better user interaction model centred around people (contacts) instead of unwieldy addresses
+- Improved on-chain privacy by eliminating on-chain address reuse
+- Improved coin-labelling and coin selection features through auto-applied labels
+- Scanning can be delegated without sharing on-chain addresses before payments are received
+- Only seed/private key is strictly necessary for full recovery, unlike BIP-47
 
 {% include fact/close.html %}
 
 {% include fact/cons.html %}
 
-- Has significant complexity and op-sec burden for multiple private keys, each of which needs a good backup scheme
-- Not compatible with lightning node wallets
+- Static address does not match on-chain addresses in the transaction, breaking conceptual model of seasaoned users
+- Scanning for payments doesn’t work well with electrum servers (widely used by wallets)
+- Label, contact information is lost without file backups, reducing benefits of silent payments
+
 
 {% include fact/close.html %}
 
@@ -343,15 +347,13 @@ These methods are similar to other wallet/address types including lightning wall
 - [BIP-352](https://github.com/bitcoin/bips/blob/master/bip-0352.mediawiki)
 - [https://silentpayments.xyz/](https://silentpayments.xyz/)
 
-### Wallets implementing silent payment
+### Wallets implementing silent payments
 
 - [Cake wallet](https://cakewallet.com/)
-- [Blue wallet] (https://bluewallet.io/) (sending only)
+- [Blue wallet](https://bluewallet.io/) (sending only)
 
 
 ---
-
-Ok, now let's look closer at [receiving to a daily spending wallet.]({{ '/guide/daily-spending-wallet/receiving/' | relative_url }})
 
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/wallet-privacy/"
