@@ -129,16 +129,16 @@ https://www.figma.com/file/NjtMNQiJtoVkedEHgwD0A9/BTC-DSN-Guide-Header-Images?no
 </div>
 
 ---
-Bitcoin addresses are only meant to be used once. Thus, transaction flows usually start with users interacting with each other to specify the on-chain address(es) to be used in the transaction, with the goal of preventing on-chain address reuse. This not only adds steps to the user flow and adds friction by way of time and mental overhead on the part of users. BIP-352 specifies a protocol called Silent Payments that allows users to avoid such an interaction altogether, while ensuring on-chain addresses are not reused through a new type of static payment addresses.
+On-chain addresses are only meant to be used once. Therefore, users have to interact with others to specify unique address(es) to be used every time they want to pay or get paid. This takes time and effort, along with the possibility of mistakes while handling on-chain addresses. [Silent payments](https://github.com/bitcoin/bips/blob/master/bip-0352.mediawiki) is a protocol involving static addresses that are used to derive unique on-chain address during every transaction. This not only prevents address reuse, but also removes the need for repeated interaction.
 
-For example, Alice, who runs an NGO, can seek bitcoin donations from her supporters by posting a static address on her website, and receive donations at unique on-chain addresses without any other interaction with the donors.
+For eg: Alice, who runs an NGO, can simply post a static address on her website, and receive bitcoin donations at unique on-chain addresses that only she can identify. The static address itself never shows up on-chain.
 
-This is a significant improvement in user experience for on-chain transactions. Additionally, BIP-352 allows users to proactively add labels to their addresses that get recognised while payments are detected. This is a boost for coin control as well as the contacts features and can improve privacy.
+Silent payments also allow users to customize their static address with labels, which are detected when payments are received. This improves features such as [coin selection](/guide/how-it-works/silent-payments/), [contacts](/guide/daily-spending-wallet/contacts/) in powerful ways while making them easier to use.
 
-We will first look at Labels and Contacts, then delve into how they impact/improve other features.
+Overall, silent payments enable a powerful, but simpler and safer payment experience centred around people.
 
 
-## Silent payments in 4 steps
+## Silent payments in brief
 
 A silent payment transaction happens in 4 broad steps:
 - The receiver shares/publishes a static payment address
