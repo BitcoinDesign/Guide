@@ -225,9 +225,10 @@ These labelling and detection features can also be useful for:
 
 Silent payments (along with bolt-12) present a great opportunity to centre payments UX in terms of people instead of addresses, something that was not advisable before due to issues with on-chain address reuse. Since senders can safely use the same silent payment address for multiple payments, it is natural for them to want to store these for future use. Contacts are a great way to store them in terms that users can intuit: names and faces/images. The [contacts](/guide/daily-spending-wallet/contacts/) page here provides good guidance about the topic.
 
-With labels and static addresses, the receiver can create contacts for parties they only receive bitcoin from, such as employers or customers. This will be useful for tracking payments from specific senders as needed.
-
 {% include image-gallery.html pages = page.images_contacts %}
+
+#### Sender-id
+With labels and static addresses, the receiver can create contacts for parties they only receive bitcoin from, such as employers or customers. This is useful for invoicing, tracking payments, coin selection and further data analysis for businesses.
 
 {% include tip/recommendation.html %}
 
