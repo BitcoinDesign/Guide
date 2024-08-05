@@ -279,13 +279,7 @@ After the first use, users are typically on their own to use the application as 
 
 ## Receiving & scanning
 
-Since static addresses can now be used to pay a receiver several times, receiving flows are likely to be used less often, rarely even, since static addresses can be posted in public and others can simply get it from there. So whenever the receiver is sharing a payment request, users have the opportunity to associate valuable information to it – through labels and contacts; applications should facilitate this process..
-
-Some places where people can share static addresses (and add labels) to include:
-- Social media pages
-- Donate or fundraising websites
-- Exchanges
-- Email signatures
+Since static addresses can now be used to pay a receiver several times, receiving flows are likely to be used less often, rarely even, since static addresses can be posted in public and others can simply get it from there. So whenever the receiver is sharing a payment request, users have the opportunity to associate valuable information to it – through labels and contacts; applications should facilitate this process.
 
 <div class="center" markdown="1">
 
@@ -298,9 +292,11 @@ Some places where people can share static addresses (and add labels) to include:
    layout = "float-right-desktop -background -shadow"
 %}
 
-Regularly [backing up wallet]({{ '/guide/daily-spending-wallet/backup-and-recovery/landing-page/' | relative_url }}) and user data in a secure manner is essential for bitcoin applications. For small amounts of funds, [encrypted cloud backups]({{ '/guide/daily-spending-wallet/backup-and-recovery/cloud-backup/' | relative_url }}) are a convenient choice with a good tradeoff between security and convenience.
-
-Frequent backups are important for lightning wallets, as channel states frequently change and need to be updated.
+Some places where people can share static addresses (and add labels) to include:
+- Social media pages
+- Donate or fundraising websites
+- Exchanges
+- Email signatures
 
 </div>
 
