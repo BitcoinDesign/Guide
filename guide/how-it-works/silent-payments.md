@@ -158,7 +158,7 @@ A silent payment transaction happens in 4 broad steps:
    layout = "full-width"
 %}
 
-Thus, silent payments introduce a new conceptual model based on new primitives and concepts which separate information based on their use. Below is a brief summary:
+Silent payments introduce a new conceptual model based on new primitives and concepts which separate information based on their use. Below is a brief summary:
 
 
 | Current terminology        | With silent payments          | Benefit |
@@ -168,7 +168,7 @@ Thus, silent payments introduce a new conceptual model based on new primitives a
 | Extended public key (xpub)           | Scan key      | Addresses cannot be deterministically derived   |
 | **Address-based model**           | **Contact-based model** | **More intuitive and familiar**  |
 
-With this model, users are able to selectively share actionable information with other parties as needed, resulting in improved security and privacy.
+With this model, users are able to selectively share relevant, actionable information with other parties as needed, resulting in improved security and privacy.
 - Static address: payment information for senders
 - Scan key: payment scanning information wallets & servers
 - Spend key: spending information for wallet owners
@@ -217,23 +217,21 @@ For eg: a contractor Alice can add labels to her silent payment address while sh
 
 These labelling and detection features can also be useful for:
 
-- Invoices: merchant software like BTCPay can use labels to match incoming payments with invoices. This is required because on-chain addresses themselves cannot be predicted on used to make the mapping
-- Static deposit addresses for exchanges: Users looking to deposit bitcoin at exchanges may get confused when they see changing/different deposit addresses. Exchanges can now share static addresses with users; this will keep deposit addresses the same while allowing the exchange to map deposit transactions to users
+- Invoices: merchant software like BTCPay can use labels to match incoming payments with invoices. This is required because on-chain addresses themselves cannot be pre-generated or mapped with invoices in advance
+- Static deposit addresses for exchanges: Users looking to deposit bitcoin at exchanges may get confused when they see changing deposit addresses. Exchanges can now share static addresses with users, keeping deposit addresses the same while allowing the exchange to map deposit transactions to users
 
 
 ### Contacts
 
-Contacts are another feature that are greatly improved with BIP-352. Since users can safely use the same silent payment address for multiple payments, it is natural for them to want to store these for future use. Contacts are a great way to store them in terms that users can intuit: names and faces/images. The Contacts page here provides good guidance about the topic.
+Silent payments (along with bolt-12) present a great opportunity to centre payments UX in terms of people instead of addresses, something that was not advisable before due to issues with on-chain address reuse. Since senders can safely use the same silent payment address for multiple payments, it is natural for them to want to store these for future use. Contacts are a great way to store them in terms that users can intuit: names and faces/images. The [contacts](/guide/daily-spending-wallet/contacts/) page here provides good guidance about the topic.
 
-Labels help Contacts in another interesting way by enabling ‘sender contacts’ where the user can create Contacts for parties they only receive bitcoin from. This is accomplished by adding a different label for every contact.
+With labels and static addresses, the receiver can create contacts for parties they only receive bitcoin from, such as employers or customers. This will be useful for tracking payments from specific senders as needed.
 
 {% include image-gallery.html pages = page.images_contacts %}
 
-Overall, Silent payments present a great opportunity to start basing payments UX in terms of people instead of addresses, and applications.
-
 {% include tip/recommendation.html %}
 
-Wallets should create an in-app contact list and avoid storing bitcoin payment information in the operating system’s default contact list since it cannot guarantee its safety for data breaches or phone hacks.
+Wallets should be very careful in safeguarding label & contact information on behalf of their users since it can be used by third parties to surveillance. For eg: create an in-app contact list and avoid storing bitcoin payment information in the operating system’s default contact list.
 
 {% include tip/close.html %}
 
