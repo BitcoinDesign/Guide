@@ -239,23 +239,35 @@ Wallets should be very careful in safeguarding label & contact information on be
 
 ## Setup
 
-Applications can take a variety of approaches to set up and communicate BIP-352 wallets. Since such a wallet has a reusable address, this could be introduced and explained to users during the setup process. Some wallets may use unique or significant locations (mobile widget, custom app logos, watch faces) to house this static address for easy retrieval, and may highlight the same during setup.
+Applications can take a variety of approaches to set up and communicate silent payment wallets. Features such as reusable address or sender-id could be introduced and explained to users during the setup process. Some wallets may use unique or significant locations (mobile widget, custom app logos, watch faces) to house this static address for easy retrieval, and may highlight the same during setup.
 
-Since the BIP-352 comes with some new primitives (term) (spend key, scan key) & processes (like labels, backing up files), the setup process might be a good opportunity to introduce some of these as needed without overloading the user.
+Since the BIP-352 introduces a new model & primitives (such as spend key, scan key), the setup process might be a good opportunity to introduce some of these as needed without overloading the user.
 
 {% include image-gallery.html pages = page.images_sp-onboarding %}
-
-One thing to keep in mind: since silent payments impacts UX flows around sending, syncing & scanning, backup, recovery and applications might even choose to allow users to not adopt the silent payments altogether!
 
 
 ## Sending
 
-With the improvements to Contacts, send flows may start from the Contact page in addition to the usual send flow that starts from the app home screen with a Send button. When users start with obtaining a static address, the derived on-chain address is visibly different from the static address the sender started with, something potentially confusing for users. Applications should take measures such as short explainers to avoid confusion on the users part. Applications that do not support silent payment addresses should provide helpful, actionable, human readable errors.
+With the improvements to Contacts, send flows may start from the Contact page in addition to the app home screen with a Send button. When users start with obtaining a static address, every on-chain address derived from it will be visibly different from the static address the sender started with, something potentially confusing for users. Applications should take measures such as short explainers to avoid confusion on the users part.
 
 {% include image-gallery.html pages = page.images_send %}
 
 
-With labels helping so much to improve coin selection, UIs might come up with better ways to choose (automatically or by users, manually) the coins to be used in a transaction. Note that the coins chosen for a particular transaction impact the derived on-chain address and user flows should be designed based on that.
+{% include tip/recommendation.html %}
+
+Applications that do not support silent payment addresses should provide helpful, actionable, human readable errors.
+
+{% include tip/close.html %}
+
+### Coin selection
+As mentioned in the introduction, coin selection can be done much better due to auto-applied label information. Applications should encourage & assist users in performing coin selection by surfacing relevant or related labels or other methods. Automatic coin selection should be improved with all the label information available.
+
+{% include tip/tip.html %}
+
+The coin(s) selected for a transaction impact the derived on-chain address due to the nature of silent payments protocol. The interface should avoid showing the on-chain address before the coin selection is done.
+
+{% include tip/close.html %}
+
 
 ### Test transactions
 
