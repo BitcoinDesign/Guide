@@ -138,13 +138,13 @@ This is a significant improvement in user experience for on-chain transactions. 
 We will first look at Labels and Contacts, then delve into how they impact/improve other features.
 
 
-## Brief explanation
+## Silent payments in 4 steps
 
 A silent payment transaction happens in 4 broad steps:
 - The receiver shares/publishes a static payment address
 - The sender obtains & uses it to derive a unique on-chain address
 - The sender broadcasts a transaction that pays this derived address
-- The receiver identifies the payment as theirs by identifying that they control this address
+- The receiver identifies the payment as theirs by verifying that they control this address
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/silent-payments/how-silent-payments-work.png"
@@ -158,7 +158,8 @@ A silent payment transaction happens in 4 broad steps:
    layout = "full-width"
 %}
 
-With this new model of transacting, BIP-352 introduces new primitives and concepts for users and developers. Below is a brief summary of them:
+Thus, silent payments introduce a new conceptual model based on new primitives and concepts which separate information based on their use. Below is a brief summary:
+
 
 | Current terminology        | With silent payments          | Benefit |
 |:-------------|:------------------|:------|
@@ -166,6 +167,12 @@ With this new model of transacting, BIP-352 introduces new primitives and concep
 | Extended private key (xprv) | Spend key   |   |
 | Extended public key (xpub)           | Scan key      | Addresses cannot be deterministically derived   |
 | **Address-based model**           | **Contact-based model** | **More intuitive and familiar**  |
+
+With this model, users are able to selectively share actionable information with other parties as needed, resulting in improved security and privacy.
+- Static address: payment information for senders
+- Scan key: payment scanning information wallets & servers
+- Spend key: spending information for wallet owners
+
 
 {% include image-gallery.html pages = page.images_create %}
 
