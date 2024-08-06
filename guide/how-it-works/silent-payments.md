@@ -241,7 +241,9 @@ Wallets should be very careful in safeguarding label & contact information on be
 
 Applications can take a variety of approaches to set up and communicate silent payment wallets. Features such as reusable address or sender-id could be introduced and explained to users during the setup process. Some wallets may use unique or significant locations (mobile widget, custom app logos, watch faces) to house this static address for easy retrieval, and may highlight the same during setup.
 
-Since the BIP-352 introduces a new model & primitives (such as spend key, scan key), the setup process might be a good opportunity to introduce some of these as needed without overloading the user.
+Silent payment wallets may or may not be set up as [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) and/or [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) HD wallets, since the protocol does not require these. The wallet setup flow can be very different for wallets using vs. not using the standards. The Bitcoin Core Qt application is a prime example of this a wallet not following these standards, and it involves wallet backup files. This is a great fit for silent payments, as we will see in Backup and Recovery section.
+
+Since silent payments introduce a new model & primitives (such as spend key, scan key), the setup process might be a good opportunity to introduce some of these as needed without overloading the user.
 
 {% include image-gallery.html pages = page.images_sp-onboarding %}
 
@@ -303,18 +305,17 @@ Some places where people can share static addresses (and add labels) to include:
 </div>
 
 
-
 Receivers using mobile wallets, which may not be online 24x7 will encounter some delay (once they come online) as their wallet scans the blockchain and performs calculations to detect their payments. Applications should communicate this fact during setup/onboarding. While the scanning itself is taking place, applications should show progress data and estimated time to complete the scanning process.
 
 The time to detect a specific received payment can be minimized if the sender & receiver can communicate with each other. Some applications already allow users to detect whether an address belongs to them. This feature should, if possible, be extended to include BIP-352 functionality.
 
 ## Backup
 
-Like lightning wallets, on-chain bitcoin wallets supporting full-featured BIP-352 wallets require file backups. These backup files may contain the following information:
+Like lightning wallets, on-chain bitcoin wallets supporting full-featured silent payments require file backups. These backup files may contain the following information:
 backup seed (for BIP 39 wallets)
 - Scan and/or spend keys
 - labels & even contacts
-- actual txids?
+- transaction id's
 - wallet birthday
 
 {% include image-gallery.html pages = page.images_backup %}
