@@ -96,15 +96,16 @@ images_recovery:
 
 Editor's notes
 
-This page provides best practices and designers for the first-use experience of the
-daily spending wallet reference design.
+Privacy is not a crime.
+
+Thanks to josie (josibake@protonmail.com) for his invaluable work and guidance.
+
+This page provides UX insights, best practices and designs for silent payments.
 
 Source designs for all screens can be found in this Figma file:
-https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototype?node-id=4152%3A306968&t=boEAgdyqfi39SBoF-1
-
+<>
 Source file for header image:
-https://www.figma.com/file/NjtMNQiJtoVkedEHgwD0A9/BTC-DSN-Guide-Header-Images?node-id=0%3A1&t=JzVvsbPdFpjhNTGF-1
-
+<>
 -->
 
 {% include picture.html
@@ -241,7 +242,7 @@ Wallets should be very careful in safeguarding label & contact information on be
 
 Applications can take a variety of approaches to set up and communicate silent payment wallets. Features such as reusable address or sender-id could be introduced and explained to users during the setup process. Some wallets may use unique or significant locations (mobile widget, custom app logos, watch faces) to house this static address for easy retrieval, and may highlight the same during setup.
 
-Silent payment wallets may or may not be set up as [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) and/or [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) HD wallets, since the protocol does not require these. The wallet setup flow can be very different for wallets using vs. not using the standards. The Bitcoin Core Qt application is a prime example of this a wallet not following these standards, and it involves wallet backup files. This is a great fit for silent payments, as we will see in Backup and Recovery section.
+Silent payment wallets may or may not be set up as [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) and/or [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) HD wallets, since the protocol does not require these. The wallet setup flow can be very different for wallets using vs. not using these standards. The Bitcoin Core Qt application is a prime example of a wallet not following these standards, and it involves wallet backup files. This is a great fit for silent payments, as we will see in Backup and Recovery section.
 
 Since silent payments introduce a new model & primitives (such as spend key, scan key), the setup process might be a good opportunity to introduce some of these as needed without overloading the user.
 
@@ -311,8 +312,8 @@ The time to detect a specific received payment can be minimized if the sender & 
 
 ## Backup
 
-Like lightning wallets, on-chain bitcoin wallets supporting full-featured silent payments require file backups. These backup files may contain the following information:
-backup seed (for BIP 39 wallets)
+Like lightning wallets, on-chain bitcoin wallets supporting full-featured silent payments require file backups since the wallet has important information such as contacts and labels, besides just private key (recovery phrase). These backup files may also contain:
+- recovery phrase (for BIP 39 wallets)
 - Scan and/or spend keys
 - labels & even contacts
 - transaction id's
@@ -322,13 +323,13 @@ backup seed (for BIP 39 wallets)
 
 As a best practice, some of the above information such as seed, wallet birthday should be shown to the user in the UI itself in case they misplace the file or recovery application does not support backup files or simply a redundant manual backup.
 
-While simply backing up the seed is sufficient, this results in longer wallet recovery times and causes loss of useful information.
+While simply backing up the seed is sufficient, but results in longer wallet recovery times and causes loss of useful information.
 
 > Since each silent payment output address is derived independently, regular backups are recommended.” - BIP352
 
 ## Recovery
 
-A robust backup & recovery solution for BIP-352 wallets involves backup files since the wallet has important information besides just private key (recovery phrase), such as contacts and labels. Besides, wallets without a BIP-39 seed also need a backup file. On the other hand, BIP-39 wallets can be recovered with just a seed phrase, a process that can be sped up by entering the wallet creation date (wallet birthday). Thus, during wallet import (recovery), the application should provide multiple ways to restore their wallet and recover funds. This would include:
+A robust backup & recovery solution for silent payment wallets involves backup files. Also, wallets without a BIP-39 seed also need a backup file anyway. On the other hand, BIP-39 wallets can be recovered with just a seed phrase, a process that can be sped up by entering the wallet creation date (wallet birthday). Thus, during wallet import (recovery), the application should provide multiple ways to restore their wallet and recover funds. This would include:
 - Backup file from cloud
 - import/upload backup file
 - enter recovery phrase (with or without wallet birthday)
