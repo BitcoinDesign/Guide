@@ -5,89 +5,86 @@ description: How silent payments impact and improve bitcoin UX
 nav_order: 11
 parent: How it works
 permalink: /guide/how-it-works/silent-payments/
-redirect_from:
- - /guide/onboarding/creating-a-new-wallet/
- - /guide/onboarding/first-use/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/how-it-works/silent-payments/silent-payments-header.png
+image: https://bitcoin.design/assets/images/guide/how-it-works/silent-payments/silent-payments-header-1200x630.png
 image_base: /assets/images/guide/how-it-works/silent-payments/carousel-images/
 images_contacts:
     - file: clipboard-options-add-contacts-or-pay
-      modalImage: clipboard-options-add-contacts-or-pay
+      modalImage: clipboard-options-add-contacts-or-pay@2x
       alt: .
       caption: .
     - file: contact-page
-      modalImage: clipboard-options-add-contacts-or-pay
+      modalImage: contact-page@2x
       alt: .
       caption: .
     - file: contacts-list
-      modalImage: clipboard-options-add-contacts-or-pay
+      modalImage: contacts-list@2x
       alt: .
       caption: .
     - file: home-screen-with-contacts
-      modalImage: clipboard-options-add-contacts-or-pay
+      modalImage: home-screen-with-contacts@2x
       alt: .
       caption: .
 
 images_sp-onboarding:
     - file: setup-silent-payments-onboarding-i
-      modalImage: setup-silent-payments-onboarding-i
+      modalImage: setup-silent-payments-onboarding-i@2x
       alt: .
       caption: .
     - file: setup-silent-payments-onboarding-ii
-      modalImage: setup-silent-payments-onboarding-ii
+      modalImage: setup-silent-payments-onboarding-ii@2x
       alt: .
       caption: .
     - file: setup-silent-payments-onboarding-iii
-      modalImage: setup-silent-payments-onboarding-iii
+      modalImage: setup-silent-payments-onboarding-iii@2x
       alt: .
       caption: .
 
 images_send:
     - file: send-review-sp
-      modalImage: send-review-sp
+      modalImage: send-review-sp@2x
       alt: .
       caption: .
     - file: send-review-with-contact
-      modalImage: send-review-with-contact
+      modalImage: send-review-with-contact@2x
       alt: .
       caption: .
-    - file: send-address-error
+    - file: send-address-error@2x
       modalImage: send-address-error
       alt: .
       caption: .
 
 images_test-txns:
     - file: test-txn-send-review
-      modalImage: test-txn-send-review
+      modalImage: test-txn-send-review@2x
       alt: .
       caption: .
     - file: test-txn-send-home
-      modalImage: test-txn-send-home
+      modalImage: test-txn-send-home@2x
       alt: .
       caption: .
     - file: test-txn-confirm-finalise-txn
-      modalImage: test-txn-confirm-finalise-txn
+      modalImage: test-txn-confirm-finalise-txn@2x
       alt: .
       caption: .
 
 images_backup:
     - file: backup-cloud-backup
-      modalImage: backup-cloud-backup
+      modalImage: backup-cloud-backup@2x
       alt: .
       caption: .
     - file: backup-wallet-birthday
-      modalImage: backup-wallet-birthday
+      modalImage: backup-wallet-birthday@2x
       alt: .
       caption: .
 
 images_recovery:
-    - file: recovery-wallet-birthday-prompt
+    - file: recovery-wallet-birthday-prompt@2x
       modalImage: recovery-wallet-birthday-prompt
       alt: .
       caption: .
     - file: recovery-wallet-birthday-enter
-      modalImage: recovery-wallet-birthday-enter
+      modalImage: recovery-wallet-birthday-enter@2x
       alt: .
       caption: .
 ---
