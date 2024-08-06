@@ -329,13 +329,13 @@ While simply backing up the seed is sufficient, but results in longer wallet rec
 
 ## Recovery
 
-A robust backup & recovery solution for silent payment wallets involves backup files. Also, wallets without a BIP-39 seed also need a backup file anyway. On the other hand, BIP-39 wallets can be recovered with just a seed phrase, a process that can be sped up by entering the wallet creation date (wallet birthday). Thus, during wallet import (recovery), the application should provide multiple ways to restore their wallet and recover funds. This would include:
+A robust backup & recovery solution for silent payment wallets involves backup files. Also, wallets without a BIP-39 seed also need a backup file anyway. On the other hand, BIP-39 wallets can be recovered with just a seed phrase, a process that can be sped up by entering the wallet creation date (wallet birthday). Thus, during wallet import (recovery), the application should provide users multiple ways to restore their wallet and recover funds. This would include:
 - Backup file from cloud
 - import/upload backup file
 - enter recovery phrase (with or without wallet birthday)
 - Enter scan/spend key material
 
-These methods are similar to other wallet/address types including lightning wallets, and are explained here.
+These methods are similar to other wallet/address types including lightning wallets, and are explained over 4 detailed pages [here](/guide/daily-spending-wallet/backup-and-recovery/landing-page/).
 
 {% include image-gallery.html pages = page.images_recovery %}
 
