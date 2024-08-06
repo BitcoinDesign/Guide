@@ -279,18 +279,20 @@ After the first use, users are typically on their own to use the application as 
 
 ## Receiving & scanning
 
-Since static addresses can now be used to pay a receiver several times, receiving flows are likely to be used less often, rarely even, since static addresses can be posted in public and others can simply get it from there. So whenever the receiver is sharing a payment request, users have the opportunity to associate valuable information to it – through labels and contacts; applications should facilitate this process.
-
 <div class="center" markdown="1">
 
 {% include picture.html
-   modalImage = "/assets/images/guide/how-it-works/silent-payments/adding-labels-to-static-address@2x.png"
+   image = "/assets/images/guide/how-it-works/silent-payments/static-address-with-customization-options.png"
+   retina = "/assets/images/guide/how-it-works/silent-payments/static-address-with-customization-options@2x.png"
+   modalImage = "/assets/images/guide/how-it-works/silent-payments/static-address-with-customization-options.png"
    width = 250
    height = 522
    alt-text = "An application screen showing labels being added to a static address."
    caption = "."
    layout = "float-right-desktop -background -shadow"
 %}
+
+Since static addresses can now be used to pay a receiver several times, receiving flows are likely to be used less often, rarely even, since static addresses can be posted in public and others can simply get it from there. So whenever the receiver is sharing a payment request, users have the opportunity to associate valuable information to it – through labels and contacts; applications should facilitate this process.
 
 Some places where people can share static addresses (and add labels) to include:
 - Social media pages
