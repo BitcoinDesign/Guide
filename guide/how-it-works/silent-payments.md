@@ -239,7 +239,7 @@ Wallets should be very careful in safeguarding label & contact information on be
 
 Applications can take a variety of approaches to set up and communicate silent payment wallets. Features such as reusable address or sender-id could be introduced and explained to users during the setup process. Some wallets may use unique or significant locations (mobile widget, custom app logos, watch faces) to house this static address for easy retrieval, and may highlight the same during setup.
 
-Silent payment wallets may or may not be set up as [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) and/or [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) HD wallets, since the protocol does not require these. The wallet setup flow can be very different for wallets using vs. not using these standards. The Bitcoin Core Qt application is a prime example of a wallet not following these standards, and it involves wallet backup files. This is a great fit for silent payments, as we will see in Backup and Recovery section.
+Silent payment wallets may or may not be set up as [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) and/or [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) HD wallets, since the protocol does not require these. The wallet setup flow can be very different for wallets using vs. not using these standards. The Bitcoin Core Qt application is a prime example of a wallet not following these standards, and it involves wallet backup files. This is a great fit for silent payments, as we will see in Backup and Recovery sections.
 
 Since silent payments introduce a new model & primitives (such as spend key, scan key), the setup process might be a good opportunity to introduce some of these as needed without overloading the user.
 
@@ -248,7 +248,7 @@ Since silent payments introduce a new model & primitives (such as spend key, sca
 
 ## Sending
 
-With the improvements to Contacts, send flows may start from the Contact page in addition to the app home screen with a Send button. When users start with obtaining a static address, every on-chain address derived from it will be visibly different from the static address the sender started with, something potentially confusing for users. Applications should take measures such as short explainers to avoid confusion on the users part.
+With the improvements to Contacts, on-chain send flows may start from a number of [entry points](/guide/daily-spending-wallet/sending/#payment-entry-points). When users start with obtaining a static address, every on-chain address derived from it will be visibly different from the static address the sender started with, something potentially confusing for users. Applications should take measures such as short explainers to avoid confusion on the users part.
 
 {% include image-gallery.html pages = page.images_send %}
 
@@ -309,7 +309,7 @@ The time to detect a specific received payment can be minimized if the sender & 
 
 ## Backup
 
-Like lightning wallets, on-chain bitcoin wallets supporting full-featured silent payments require file backups since the wallet has important information such as contacts and labels, besides just private key (recovery phrase). These backup files may also contain:
+Like [lightning wallets](guide/daily-spending-wallet/backup-and-recovery/cloud-backup/), on-chain bitcoin wallets supporting full-featured silent payments require file backups since the wallet has important information such as contacts and labels, besides just private key (recovery phrase). These backup files may also contain:
 - recovery phrase (for BIP 39 wallets)
 - Scan and/or spend keys
 - labels & even contacts
