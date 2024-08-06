@@ -6,7 +6,7 @@ nav_order: 11
 parent: How it works
 permalink: /guide/how-it-works/silent-payments/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/how-it-works/silent-payments/silent-payments-header-1200x630.png
+image: https://bitcoin.design/assets/images/guide/how-it-works/silent-payments/silent-payments-preview.png
 image_base: /assets/images/guide/how-it-works/silent-payments/carousel-images/
 images_contacts:
     - file: clipboard-options-add-contacts-or-pay
@@ -100,9 +100,9 @@ Thanks to josie (josibake@protonmail.com) for his invaluable work and guidance.
 This page provides UX insights, best practices and designs for silent payments.
 
 Source designs for all screens can be found in this Figma file:
-<>
+https://www.figma.com/design/q8IYl9UVsOWkkPhs4IkHQR/Bitcoin-Wallet-UI-Kit-%26-Design-System-(SP-updates)?node-id=5621-52155&t=4frDIaY1YrPQurMl-1
 Source file for header image:
-<>
+https://www.figma.com/design/q8IYl9UVsOWkkPhs4IkHQR/Bitcoin-Wallet-UI-Kit-%26-Design-System-(SP-updates)?node-id=5873-1050&t=4frDIaY1YrPQurMl-1
 -->
 
 {% include picture.html
@@ -112,7 +112,7 @@ Source file for header image:
    mobileRetina = "/assets/images/guide/daily-spending-wallet/silent-payments/silent-payments-header-mobile@2x.png"
    alt-text = "."
    width = 1600
-   height = 1000
+   height = 600
    layout = "full-width"
 %}
 
