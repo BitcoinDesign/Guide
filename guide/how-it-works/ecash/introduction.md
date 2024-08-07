@@ -45,10 +45,10 @@ Ecash is a digital payment system that uses cryptographic techniques to ensure s
 This section explains how you can create, use, receive, and convert ecash back to bitcoin. You'll learn how protocols like Cashu and Fedimint make transactions more private and reduce onboarding friction, improving the overall user experience of transacting in bitcoin.
 
 {% include picture.html
-   image = "/assets/images/guide/how-it-works/ecash/how-ecash-works@1x.jpg"
-   retina = "/assets/images/guide/how-it-works/ecash/how-ecash-works@2x.jpg"
-   mobile = "/assets/images/guide/how-it-works/ecash/how-ecash-works@2x.jpg"
-   mobileRetina = "assets/images/guide/how-it-works/ecash/how-ecash-works@2x.jpg"
+   image = "/assets/images/guide/how-it-works/ecash/how-ecash-works@1x.png"
+   retina = "/assets/images/guide/how-it-works/ecash/how-ecash-works@2x.png"
+   mobile = "/assets/images/guide/how-it-works/ecash/how-ecash-works@2x.png"
+   mobileRetina = "assets/images/guide/how-it-works/ecash/how-ecash-works@2x.png"
    alt-text = "An illustration of how users, ecash, and ecash mints interact."
    caption = "How users interact with ecash mints and the lightning network."
    width = 800
@@ -89,11 +89,11 @@ Understand Fedimint's federated model, which decentralizes trust by involving mu
 
 ---
 {% include picture.html
-   image = "/assets/images/guide/how-it-works/ecash/using-ecash@1x.png"
-   retina = "/assets/images/guide/how-it-works/ecash/using-ecash@2x.png"
-   mobile = "/assets/images/guide/how-it-works/ecash/using-ecash@2x.png"
-   mobileRetina = "assets/images/guide/how-it-works/ecash/using-ecash@2x.png"
-   alt-text = "An illustration showing distorted physical paper cash along with the words USING ECASH overthem."
+   image = "/assets/images/guide/how-it-works/ecash/using-ecash@1x.jpg"
+   retina = "/assets/images/guide/how-it-works/ecash/using-ecash@2x.jpg"
+   mobile = "/assets/images/guide/how-it-works/ecash/using-ecash@2x.jpg"
+   mobileRetina = "assets/images/guide/how-it-works/ecash/using-ecashjpg.png"
+   alt-text = "An illustration showing distorted physical paper cash along with the words USING ECASH."
    caption = ""
    width = 800
    height = 456
