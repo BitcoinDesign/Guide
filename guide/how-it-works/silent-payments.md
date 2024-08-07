@@ -196,9 +196,12 @@ BIP-352 allows users to customize their silent payment addresses on a case-by-ca
 
 </div>
 
-This scheme improves label-related features since any labels added to a static address get auto-applied to all derived on-chain addresses (detectable only by the receiver), eliminating the friction in manually adding labels to addresses or transactions. This not only makes payment tracking possible, but also useful during automatic or manual coin selection.
+To better understand this, consider: a contractor Alice can add labels to her silent payment address while sharing them
+-  with a certain client,
+- her social media and
+- her website.
 
-For eg: a contractor Alice can add labels to her silent payment address while sharing them with a certain client, her social media and her website. When she receives payments from any of these sources, the respective label will be detected by the wallet application in the on-chain address to infer the source of the payment as this client.
+When she receives payments from any of these sources, the respective label will be detected by the wallet application in the on-chain address to infer the source of the payment as this client.
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/silent-payments/how-silent-payment-labels-work.png"
@@ -212,8 +215,9 @@ For eg: a contractor Alice can add labels to her silent payment address while sh
    layout = "full-width"
 %}
 
+This scheme improves label-related features since any labels added to a static address get auto-applied to all derived on-chain addresses (detectable only by the receiver), eliminating the friction in manually adding labels to addresses or transactions. This not only makes payment tracking possible, but also proves useful during automatic or manual coin selection.
 
-These labelling and detection features can also be useful for:
+These label detection features can also be useful for:
 
 - Invoices: merchant software like BTCPay can use labels to match incoming payments with invoices. This is required because on-chain addresses themselves cannot be pre-generated or mapped with invoices in advance
 - Static deposit addresses for exchanges: Users looking to deposit bitcoin at exchanges may get confused when they see changing deposit addresses. Exchanges can now share static addresses with users, keeping deposit addresses the same while allowing the exchange to map deposit transactions to users
@@ -221,11 +225,13 @@ These labelling and detection features can also be useful for:
 
 ### Contacts
 
-Silent payments (along with bolt-12) present a great opportunity to centre payments UX in terms of people instead of addresses, something that was not advisable before due to issues with on-chain address reuse. Since senders can safely use the same silent payment address for multiple payments, it is natural for them to want to store these for future use. Contacts are a great way to store them in terms that users can intuit: names and faces/images. The [contacts](/guide/daily-spending-wallet/contacts/) page here provides good guidance about the topic.
+ Since senders can safely use the same silent payment address for multiple payments, it is natural for them to want to store these for future use. Contacts are a great way to store them in terms that users can intuit: names and faces/images. The [contacts](/guide/daily-spending-wallet/contacts/) page here provides good guidance about the topic.
+
+ Silent payments (along with bolt-12) present a great opportunity to centre payments UX in terms of people instead of addresses, something that was not advisable before due to issues with on-chain address reuse.
 
 {% include image-gallery.html pages = page.images_contacts %}
 
-#### Sender-id
+#### Sender-id (or sender contacts)
 With labels and static addresses, the receiver can create contacts for parties they only receive bitcoin from, such as employers or customers. This is useful for invoicing, tracking payments, coin selection and further data analysis for businesses.
 
 {% include tip/recommendation.html %}
