@@ -78,7 +78,7 @@ Bitcoin backed ecash works by using protocols like Fedimint and Cashu, which bot
 
 {% include tip/open.html color="blue" icon="info" label="Ecash is a custodial solution" %}
 
-Bitcoin-backed ecash is custodial, meaning someone else holds your bitcoin. Be aware that this subjects useres to all custodial risks.
+Bitcoin backed ecash is custodial, meaning someone else holds your bitcoin. Be aware that this subjects users to custodial risks.
 
 {% include tip/close.html %}
 

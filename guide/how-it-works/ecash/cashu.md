@@ -69,7 +69,7 @@ Keep a record of the mints you are connected to. During the restoration process,
 ## Restoration Process
 1. Seed Phrase Entry: When restoring a wallet, users enter their seed phrase into the Cashu wallet application. This seed phrase regenerates all cryptographic keys associated with the user's account.
 
-2. Automatic Recovery: After restoration, ensure your wallet is connected to the same mint(s) you were using before. This is crucial as the mint holds the records necessary to validate your tokens.
+2. Recovery: After restoration, ensure your wallet is connected to the same mint(s) you were using before. This is crucial as the mint holds the records necessary to validate your tokens.
 
 3. Verification: The mint(s) checks these proofs against its records to confirm that the tokens have not been previously spent and are still valid. This process relies on the signatures (proofs) that were initially generated when the tokens were minted.
 
@@ -111,6 +111,6 @@ Next, we do a technical deep dive into how [Fedimint]({{ '/guide/how-it-works/ec
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/ecash/overview/"
    previousName = "Overview"
-   nextUrl = "/guide/how-it-works/fedimint/"
+   nextUrl = "/guide/how-it-works/ecash/fedimint/"
    nextName = "Fedimint"
 %}
