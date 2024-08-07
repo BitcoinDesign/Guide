@@ -49,8 +49,8 @@ images_send:
       modalImage: send-review-with-contact@2x
       alt: .
       caption: .
-    - file: send-address-error@2x
-      modalImage: send-address-error
+    - file: send-address-error
+      modalImage: send-address-error@2x
       alt: .
       caption: .
 
@@ -79,8 +79,8 @@ images_backup:
       caption: .
 
 images_recovery:
-    - file: recovery-wallet-birthday-prompt@2x
-      modalImage: recovery-wallet-birthday-prompt
+    - file: recovery-wallet-birthday-prompt
+      modalImage: recovery-wallet-birthday-prompt@2x
       alt: .
       caption: .
     - file: recovery-wallet-birthday-enter
@@ -309,7 +309,7 @@ The time to detect a specific received payment can be minimized if the sender & 
 
 ## Backup
 
-Like [lightning wallets](guide/daily-spending-wallet/backup-and-recovery/cloud-backup/), on-chain bitcoin wallets supporting full-featured silent payments require file backups since the wallet has important information such as contacts and labels, besides just private key (recovery phrase). These backup files may also contain:
+Like lightning wallets, on-chain bitcoin wallets supporting full-featured silent payments require file backups (in the cloud or offline) since the wallet has important [user metadata](/guide/daily-spending-wallet/backup-and-recovery/landing-page/#user-metadata) such as contacts and labels, besides the private key (recovery phrase). These backup files may also contain:
 - recovery phrase (for BIP 39 wallets)
 - Scan and/or spend keys
 - labels & even contacts
