@@ -127,14 +127,14 @@ https://www.figma.com/design/q8IYl9UVsOWkkPhs4IkHQR/Bitcoin-Wallet-UI-Kit-%26-De
 </div>
 
 ---
-[Silent payments](https://github.com/bitcoin/bips/blob/master/bip-0352.mediawiki) is a protocol involving static addresses that are used to derive unique on-chain address during every transaction. This prevents [address reuse](/guide/glossary/address/#address-reuse) without requiring repeated user interaction, enabling an interaction model for on-chain transactions centred around users.
+[Silent payments](https://github.com/bitcoin/bips/blob/master/bip-0352.mediawiki) is a protocol involving static addresses that are used to derive unique on-chain address during every transaction. This prevents [address reuse](/guide/glossary/address/#address-reuse) without  repeated user interaction, enabling an interaction model for on-chain transactions centred around users.
 
 For eg: Alice, who runs an NGO, can simply post a static address on her website, and receive bitcoin donations at unique on-chain addresses that only she can identify. The static address itself never shows up on-chain.
 
 Silent payments also allow users to customize their static address with labels that are detected when payments are received. This is a powerful feature providing useful, actionable information in [coin control](/guide/how-it-works/silent-payments/) and [contacts](/guide/daily-spending-wallet/contacts/) while reducing manual efforts.
 
 
-## Silent payments in brief
+## How silent payments work
 
 Using the same address for multiple payments tells everybody on the network that these payments were made to the same user. Every interaction to get a new address takes time and effort, along with the possibility of mistakes while handling on-chain addresses. Silent payments circumvent both these issues by using static addresses.
 
