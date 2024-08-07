@@ -45,10 +45,10 @@ Ecash is a digital payment system that uses cryptographic techniques to ensure s
 This section explains how you can create, use, receive, and convert ecash back to bitcoin. You'll learn how protocols like Cashu and Fedimint make transactions more private and reduce onboarding friction, improving the overall user experience of transacting in bitcoin.
 
 {% include picture.html
-   image = "/assets/images/guide/how-it-works/ecash/how-ecash-works@1x.png"
-   retina = "/assets/images/guide/how-it-works/ecash/how-ecash-works@2x.png"
-   mobile = "/assets/images/guide/how-it-works/ecash/how-ecash-works@2x.png"
-   mobileRetina = "assets/images/guide/how-it-works/ecash/how-ecash-works@2x.png"
+   image = "/assets/images/guide/how-it-works/ecash/how-ecash-works@1x.jpg"
+   retina = "/assets/images/guide/how-it-works/ecash/how-ecash-works@2x.jpg"
+   mobile = "/assets/images/guide/how-it-works/ecash/how-ecash-works@2x.jpg"
+   mobileRetina = "assets/images/guide/how-it-works/ecash/how-ecash-works@2x.jpg"
    alt-text = "An illustration of how users, ecash, and ecash mints interact."
    caption = "How users interact with ecash mints and the lightning network."
    width = 800
@@ -66,10 +66,10 @@ Get an introduction to how bitcoin backed ecash enhances transaction privacy, se
 
 ---
 {% include picture.html
-   image = "/assets/images/guide/how-it-works/ecash/ecash-protocol-logos@1x.png"
-   retina = "/assets/images/guide/how-it-works/ecash/ecash-protocol-logos@2x.png"
-   mobile = "/assets/images/guide/how-it-works/ecash/ecash-protocol-logos@2x.png"
-   mobileRetina = "assets/images/guide/how-it-works/ecash/ecash-protocol-logos@2x.png"
+   image = "/assets/images/guide/how-it-works/ecash/ecash-protocol-logos@1x.jpg"
+   retina = "/assets/images/guide/how-it-works/ecash/ecash-protocol-logos@2x.jpg"
+   mobile = "/assets/images/guide/how-it-works/ecash/ecash-protocol-logos@2x.jpg"
+   mobileRetina = "assets/images/guide/how-it-works/ecash/ecash-protocol-logos@2x.jpg"
    alt-text = "An illustration showing the Cashu and Fedimint protocol logos."
    caption = "Cashu & Fediming logos"
    width = 800
