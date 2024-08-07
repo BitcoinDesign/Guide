@@ -70,6 +70,6 @@ Explore guidelines and best practices for optimizing the use of ecash on Bitcoin
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/payment-request-formats/"
    previousName = "Payment request formats"
-   nextUrl = "/guide/how-it-works/private-key-management/overview/"
+   nextUrl = "/guide/how-it-works/ecash/overview"
    nextName = "Overview"
 %}
