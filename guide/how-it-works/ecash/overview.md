@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Overview
-description: A primer on ecash on bitcoin
+description: A primer on bitcoin backed ecash
 nav_order: 1
 parent: Ecash
 grand_parent: How it works
@@ -46,7 +46,7 @@ Figma file for channel reserve UI's: https://www.figma.com/file/6iJpftEbajA3y1yl
 ## What is ecash?
 Ecash is a digital payment system that uses cryptographic techniques to ensure secure and private transactions. Developed by David Chaum in 1983, it operates through a mint that issues digital tokens in exchange for deposited funds. These tokens can be spent and received without revealing user identities or transaction details, thanks to blinded signatures. Users can redeem their tokens for the original funds at any time. Since no accounts or personal information are needed; the mint cannot see your balance, tokens, or transaction details, offering a highly private and efficient method for digital payments.
 
-## How ecash on bitcoin works
+## How bitcoin backed ecash works
 This section explains how you can create, use, receive, and convert ecash back to Bitcoin. You'll learn how protocols like Cashu and Fedimint make transactions more private and reduce onboarding friction, improving the overall user experience of transacting in Bitcoin.
 
 {% include picture.html
@@ -61,7 +61,7 @@ This section explains how you can create, use, receive, and convert ecash back t
    layout = "full-width"
 %}
 
-Ecash on Bitcoin works by using protocols like Fedimint and Cashu, which both implement blinded signatures to ensure privacy and security. Users deposit Bitcoin, and in return, they receive ecash tokens that are backed by these deposits. The blinded signatures allow the tokens to be issued without revealing transaction details, ensuring strong privacy guarantees. Users can then spend and receive these ecash tokens, which remain anonymous and unlinkable to their identity, enabling private transactions within the Bitcoin ecosystem.
+Bitcoin backed ecash works by using protocols like Fedimint and Cashu, which both implement blinded signatures to ensure privacy and security. Users deposit Bitcoin, and in return, they receive ecash tokens that are backed by these deposits. The blinded signatures allow the tokens to be issued without revealing transaction details, ensuring strong privacy guarantees. Users can then spend and receive these ecash tokens, which remain anonymous and unlinkable to their identity, enabling private transactions within the Bitcoin ecosystem.
 
 ## Bitcoin custody spectrum
 {% include picture.html
@@ -142,7 +142,7 @@ The spectrum of decentralization and custody for Bitcoin ranges from highly dece
    </table>
 </div>
 
-## Advantages of ecash on bitcoin
+## Advantages of bitcoin backed ecash
 {% include picture.html
    image = "/assets/images/guide/how-it-works/ecash/connected@1x.png"
    retina = "/assets/images/guide/how-it-works/ecash/connected@2x.png"
@@ -180,7 +180,7 @@ The spectrum of decentralization and custody for Bitcoin ranges from highly dece
    layout = "full-width"
 %}
 
-The process of creating ecash on Bitcoin is known as **minting.** The process of redeeming ecash into sats via the Lightning Network is known as **melting.** This process typically includes the following steps:
+The process of creating bitcoin backed ecash is known as **minting.** The process of redeeming ecash into sats via the Lightning Network is known as **melting.** This process typically includes the following steps:
 
 #### Minting ecash
 
