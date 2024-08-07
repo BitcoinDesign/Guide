@@ -81,8 +81,6 @@ Get an introduction to how bitcoin backed ecash enhances transaction privacy, se
 
  Learn about Cashu’s approach to ecash with independent mints, integrated with the Lightning Network.
 
----
-
 ### [Fedimint]({{ '/guide/how-it-works/ecash/fedimint' | relative_url }})
 
 Understand Fedimint's federated model, which decentralizes trust by involving multiple parties in ecash operations.
@@ -143,7 +141,21 @@ The process of creating bitcoin backed ecash is known as **minting.** The proces
    height = 456
    layout = "full-width"
 %}
-Sending ecash and receiving can be done via multiple methods to suit different transaction needs. One of the advantages of ecash is that users are simply transacting pieces of data. These pieces of data are very flexible and can be transmitted via any medium or rail. Some unique ways that ecash can be sent and received, which are not possible with on-chain or Lightning transactions, include:
+When a user sends an ecash token to another user, the wallet verifies the mint’s signature to confirm the token’s authenticity. The mint then checks its database to ensure the token has not been previously spent. If the token is valid, it is destroyed and replaced with a new token, which is then issued to the recipient. This cycle of destroying the old token and issuing a new one prevents double spending while maintaining user privacy and security.
+
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/ecash/sending-bitcoin-flow@1x.png"
+   retina = "/assets/images/guide/how-it-works/ecash/sending-bitcoin-flow@2x.png"
+   mobile = "/assets/images/guide/how-it-works/ecash/sending-bitcoin-flow@2x.png"
+   mobileRetina = "assets/images/guide/how-it-works/ecash/sending-bitcoin-flow@2x.png"
+   alt-text = "An illustration comparing how on-chain bitcoin, lightning, and ecash handle the sending of bitcoin."
+   caption = ""
+   width = 800
+   height = 456
+   layout = "full-width"
+%}
+
+Sending ecash and receiving can be done via multiple methods to suit different transaction needs. One of the advantages of bitcoin-backed ecash is that the tokens are just strings of text, which are very flexible and can be transmitted via any medium or rail. Some unique ways that ecash can be sent and received, which are not possible with on-chain or Lightning transactions, include:
 
 #### Text message, such as email or SMS:
 Users can send ecash by copying and pasting the token string. This is particularly useful for online transactions or when using text-based communication platforms.
