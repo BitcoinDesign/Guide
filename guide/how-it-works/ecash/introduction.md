@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Ecash
-description: An overview of private key management schemes, including descriptions of available approaches, some advice and best practices.
+description: An overview of bitcoin backed ecash, protocols, and design best practices.
 nav_order: 7
 parent: How it works
 has_children: true
@@ -45,7 +45,7 @@ Ecash is a digital payment system that uses cryptographic techniques to ensure s
 
 ###  [Overview]({{ '/guide/how-it-works/ecash/overview/' | relative_url }})
 
-Get an introduction to how ecash on Bitcoin enhances transaction privacy, security, and speed.
+Get an introduction to how bitcoin backed ecash enhances transaction privacy, security, and speed.
 
 ---
 
