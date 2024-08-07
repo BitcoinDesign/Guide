@@ -50,7 +50,7 @@ The Cashu backup and restoration process is designed to ensure users can securel
 
 {% include tip/open.html color="blue" icon="info" label="Single Use Recovery" %}
 
-Only use your recovery seed phrase once. Repeated use of the seed phrase for restoration can lead to synchronization issues and potential errors. This is because each time you restore, you might be dealing with an outdated state of your wallet, which can cause discrepancies in token balances and transactions.
+Only use your recovery seed phrase once. Repeated use of the seed phrase for restoration can lead to synchronization issues and potential errors. This is because each time you restore, you might be dealing with an outdated state of your wallet, which can cause discrepancies in token balances and transactions. After a user recovers their wallet they should generate a new recovery seedphrase.
 
 {% include tip/close.html %}
 
@@ -58,7 +58,7 @@ Only use your recovery seed phrase once. Repeated use of the seed phrase for res
 ### Backup Process
 1. Deterministic Wallet with Seed Phrase: Cashu uses a deterministic wallet model, where all cryptographic keys and tokens can be derived from a single seed phrase. This seed phrase is generated when the wallet is first created.
 
-2. Secure Storage: Users are advised to store their seed phrase securely. It is crucial to keep this seed phrase in a safe, physical format (such as written on paper) and stored in a secure location to prevent unauthorized access or loss. The best practices in the [manual backup]({{ '/guide/private-key-management/manual-backup/' | relative_url }}) section for Lightning and on-chain wallets also apply to Cashu wallets. 
+2. Secure Storage: Users are advised to store their seed phrase securely. It is crucial to keep this seed phrase in a safe, physical format (such as written on paper) and stored in a secure location to prevent unauthorized access or loss. The best practices in the [Backup & recovery]({{ '/guide/daily-spending-wallet/backup-and-recovery/landing-page/' | relative_url }}) section also apply to Cashu wallets. 
 
 {% include tip/open.html color="blue" icon="info" label="Mint Information Needed" %}
 
