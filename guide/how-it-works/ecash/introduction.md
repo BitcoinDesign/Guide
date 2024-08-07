@@ -65,7 +65,17 @@ Bitcoin backed ecash works by using protocols like Fedimint and Cashu, which bot
 Get an introduction to how bitcoin backed ecash enhances transaction privacy, security, and speed.
 
 ---
-## Ecash protocols
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/ecash/ecash-protocol-logos@1x.png"
+   retina = "/assets/images/guide/how-it-works/ecash/ecash-protocol-logos@2x.png"
+   mobile = "/assets/images/guide/how-it-works/ecash/ecash-protocol-logos@2x.png"
+   mobileRetina = "assets/images/guide/how-it-works/ecash/ecash-protocol-logos@2x.png"
+   alt-text = "An illustration showing the Cashu and Fedimint protocol logos."
+   caption = "Cashu & Fediming logos"
+   width = 800
+   height = 456
+   layout = "full-width"
+%}
 
 ### [Cashu]({{ '/guide/how-it-works/ecash/cashu/' | relative_url }})
 
@@ -78,7 +88,17 @@ Get an introduction to how bitcoin backed ecash enhances transaction privacy, se
 Understand Fedimint's federated model, which decentralizes trust by involving multiple parties in ecash operations.
 
 ---
-## Using ecash
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/ecash/using-ecash@1x.png"
+   retina = "/assets/images/guide/how-it-works/ecash/using-ecash@2x.png"
+   mobile = "/assets/images/guide/how-it-works/ecash/using-ecash@2x.png"
+   mobileRetina = "assets/images/guide/how-it-works/ecash/using-ecash@2x.png"
+   alt-text = "An illustration showing distorted physical paper cash along with the words USING ECASH overthem."
+   caption = ""
+   width = 800
+   height = 456
+   layout = "full-width"
+%}
 
 ### Creating and redeeming ecash
 {% include picture.html
