@@ -219,4 +219,4 @@ Users can send ecash by copying and pasting the token string. This is particular
 Most applications allow users to share a token via Bluetooth. However, more comprehensive Bluetooth sending and receiving functionalities have not yet been fully developed. As a result, when a user attempts to share an ecash token via Bluetooth, the most common outcome is that the receiving device does not know how to handle it.
 
 #### QR codes:
-Ecash can also be received by scanning a QR code that contains an embedded token. This method is particularly useful for in-person transactions or quick transfers. QR redemption also enables physical bearer assets like paper notes or coins.
+Unlike base chain and Lightning Network QR codes, which only provide directions for where to send Bitcoin, ecash tokens can be embedded within a QR code itself. This means that a user can claim the ecash token by simply scanning the QR code. This method is particularly useful for in-person transactions or quick transfers. QR redemption also enables physical bearer assets like paper notes or coins.
