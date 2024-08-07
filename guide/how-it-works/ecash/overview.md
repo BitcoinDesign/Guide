@@ -69,7 +69,7 @@ Bitcoin backed ecash works by using protocols like Fedimint and Cashu, which bot
    retina = "/assets/images/guide/how-it-works/ecash/custody-spectrum@2x.png"
    mobile = "/assets/images/guide/how-it-works/ecash/custody-spectrum@1x.png"
    mobileRetina = "/assets/images/guide/how-it-works/ecash/custody-spectrum@2x.png"
-   alt-text = “Illustration displaying different types of bitcoin custody, showcasing a range from user-held to custodial solutions."
+   alt-text = "Illustration displaying different types of bitcoin custody, showcasing a range from user-held to custodial solutions."
    caption = "Bitcoin custody spectrum"
    width = 800
    height = 456b
@@ -82,7 +82,7 @@ Bitcoin backed ecash is custodial, meaning someone else holds your bitcoin. Be a
 
 {% include tip/close.html %}
 
-The spectrum of decentralization and custody for bitcoin ranges from highly decentralized to highly centralized. Holding self-custodial Bitcoin on the base layer is the least risky and most decentralized, rated at 0. Self-custodial Lightning is slightly more centralized at 2, while custodial Lightning moves further towards centralization at 7. ETFs sit at the extreme end, being the most centralized and risky. Ecash offers improvements over custodial Lightning by providing better privacy and security.
+The spectrum of decentralization and custody for Bitcoin ranges from highly decentralized to highly centralized. Holding self-custodial Bitcoin on the base layer is the least risky and most decentralized, rated at 0. Self-custodial Lightning is slightly more centralized at 1, while custodial Lightning moves further towards centralization at 6. ETFs sit at the other extreme, being the most centralized and risky. Ecash improves over custodial Lightning by providing better privacy and security.
 
 ### Ecash vs Custodial Lightning
 <div class="nodes -full-width" markdown="1">
