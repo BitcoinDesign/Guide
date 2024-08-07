@@ -69,7 +69,7 @@ Bitcoin backed ecash works by using protocols like Fedimint and Cashu, which bot
    retina = "/assets/images/guide/how-it-works/ecash/custody-spectrum@2x.png"
    mobile = "/assets/images/guide/how-it-works/ecash/custody-spectrum@1x.png"
    mobileRetina = "/assets/images/guide/how-it-works/ecash/custody-spectrum@2x.png"
-   alt-text = "Illustration displaying different types of bitcoin custody, showcasing a range from user-held to custodial solutions."
+   alt-text = "Illustration showing different types of bitcoin custody, showcasing a range from user-held to custodial solutions."
    caption = "Bitcoin custody spectrum"
    width = 800
    height = 456b
