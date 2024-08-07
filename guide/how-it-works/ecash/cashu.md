@@ -37,7 +37,7 @@ https://www.figma.com/community/file/995256542920917246/BDG---Private-key-manage
 %}
 
 # Cashu
-Cashu is an ecash protocol on that interoperates with the Lightning Network. Unlike Fedimint, which uses a federated model to distribute trust among multiple entities, Cashu operates with independent mints, offering greater flexibility and control to users. This makes Cashu distinct in providing an easy to deploy, flexible, and agile approach to managing Ecash on bitcoin.
+Cashu is an ecash protocol on that interoperates with the Lightning Network. Unlike Fedimint, which uses a federated model to distribute trust among multiple entities, Cashu operates with independent mints, offering greater flexibility and control to users. This makes Cashu distinct in providing an easy to deploy, flexible, and agile approach to managing bitcoin backed ecash.
 
 {% include tip/open.html color="blue" icon="info" label="User Experience Tip" %}
 
