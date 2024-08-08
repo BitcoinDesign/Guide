@@ -346,20 +346,19 @@ These methods are similar to other wallet/address types including lightning wall
 
 {% include fact/pros.html %}
 
-- Enables a better user interaction model centred around people (contacts) instead of unwieldy addresses
-- Improved on-chain privacy by eliminating on-chain address reuse
-- Improved coin-labelling and coin selection features through auto-applied labels
+- Prevents address reuse without repeated user interactions
+- Enables a better user interaction model centred around users instead of unwieldy addresses
+- Reduces the possibility of mistakes while handling on-chain addresses
+- Allows users to optionally infer payment source through labels
+- Auto-applied labels improve coin-labelling and coin selection
 - Scanning can be delegated without sharing on-chain addresses before payments are received
-- Only seed/private key is strictly necessary for full recovery, unlike BIP-47
 
 {% include fact/close.html %}
 
 {% include fact/cons.html %}
 
-- Static address does not match on-chain addresses in the transaction, breaking conceptual model of seasaoned users
+- Static address does not match on-chain addresses in the transaction, breaking conceptual model for seasoned users
 - Scanning for payments doesn’t work well with electrum servers (widely used by wallets)
-- Label, contact information is lost without file backups, reducing benefits of silent payments
-
 
 {% include fact/close.html %}
 
