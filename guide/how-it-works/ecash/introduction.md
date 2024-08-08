@@ -42,8 +42,6 @@ https://www.figma.com/community/file/995256542920917246/BDG---Private-key-manage
 Ecash is a digital payment system that uses cryptographic techniques to ensure secure and private transactions. Developed by David Chaum in 1983, it operates through a mint that issues digital tokens in exchange for deposited funds. These tokens can be spent and received without revealing user identities or transaction details, thanks to blinded signatures. Users can redeem their tokens for the original funds at any time. Since no accounts or personal information are needed; the mint cannot see your balance, tokens, or transaction details, offering a highly private and efficient method for digital payments.
 
 ## How bitcoin backed ecash works
-This section explains how you can create, use, receive, and convert ecash back to bitcoin. You'll learn how protocols like Cashu and Fedimint make transactions more private and reduce onboarding friction, improving the overall user experience of transacting in bitcoin.
-
 {% include picture.html
    image = "/assets/images/guide/how-it-works/ecash/how-ecash-works@1x.png"
    retina = "/assets/images/guide/how-it-works/ecash/how-ecash-works@2x.png"
@@ -71,7 +69,7 @@ Get an introduction to how bitcoin backed ecash enhances transaction privacy, se
    mobile = "/assets/images/guide/how-it-works/ecash/ecash-protocol-logos@2x.jpg"
    mobileRetina = "assets/images/guide/how-it-works/ecash/ecash-protocol-logos@2x.jpg"
    alt-text = "An illustration showing the Cashu and Fedimint protocol logos."
-   caption = "Cashu & Fediming logos"
+   caption = ""
    width = 800
    height = 456
    layout = "full-width"
