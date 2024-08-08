@@ -144,10 +144,10 @@ The process of creating bitcoin backed ecash is known as **minting.** The proces
 When a user sends an ecash token to another user, the wallet verifies the mint’s signature to confirm the token’s authenticity. The mint then checks its database to ensure the token has not been previously spent. If the token is valid, it is destroyed and replaced with a new token, which is then issued to the recipient. This cycle of destroying the old token and issuing a new one prevents double spending while maintaining user privacy and security.
 
 {% include picture.html
-   image = "/assets/images/guide/how-it-works/ecash/sending-bitcoin-flow@1x.png"
-   retina = "/assets/images/guide/how-it-works/ecash/sending-bitcoin-flow@2x.png"
-   mobile = "/assets/images/guide/how-it-works/ecash/sending-bitcoin-flow@2x.png"
-   mobileRetina = "assets/images/guide/how-it-works/ecash/sending-bitcoin-flow@2x.png"
+   image = "/assets/images/guide/how-it-works/ecash/sending-bitcoin-flow@1x.jpg"
+   retina = "/assets/images/guide/how-it-works/ecash/sending-bitcoin-flow@2x.jpg"
+   mobile = "/assets/images/guide/how-it-works/ecash/sending-bitcoin-flow@2x.jpg"
+   mobileRetina = "assets/images/guide/how-it-works/ecash/sending-bitcoin-flow@2x.jpg"
    alt-text = "An illustration comparing how on-chain bitcoin, lightning, and ecash handle the sending of bitcoin."
    caption = ""
    width = 800
