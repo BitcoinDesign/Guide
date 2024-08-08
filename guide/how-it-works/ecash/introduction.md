@@ -181,3 +181,80 @@ Explore guidelines and best practices for optimizing the use of ecash on Bitcoin
    nextUrl = "/guide/how-it-works/ecash/overview"
    nextName = "Overview"
 %}
+
+---
+## Comparisons and considerations
+
+### Bitcoin custody spectrum
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/ecash/custody-spectrum@1x.png"
+   retina = "/assets/images/guide/how-it-works/ecash/custody-spectrum@2x.png"
+   mobile = "/assets/images/guide/how-it-works/ecash/custody-spectrum@1x.png"
+   mobileRetina = "/assets/images/guide/how-it-works/ecash/custody-spectrum@2x.png"
+   alt-text = "Illustration displaying different types of bitcoin custody, showcasing a range from user-held to custodial solutions."
+   caption = "Bitcoin custody options: evaluating decentralization and risk."
+   width = 800
+   height = 456b
+   layout = "full-width"
+%}
+
+{% include tip/open.html color="blue" icon="info" label="Ecash is a custodial solution" %}
+
+Bitcoin backed ecash is custodial, meaning someone else holds your bitcoin. Be aware that this subjects users to custodial risks.
+
+{% include tip/close.html %}
+
+The spectrum of decentralization and custody for Bitcoin ranges from highly decentralized to highly centralized. Holding self-custodial Bitcoin on the base layer is the least risky and most decentralized, rated at 0. Self-custodial Lightning is slightly more centralized at 1, while custodial Lightning moves further towards centralization at 6. ETFs sit at the other extreme, being the most centralized and risky. Ecash improves over custodial Lightning by providing better privacy and security.
+
+### Ecash vs Custodial Lightning
+<div class="nodes -full-width" markdown="1">
+   <table>
+      <thead>
+         <tr>
+            <th>&nbsp;</th>
+            <th>
+               Ecash
+            </th>
+            <th>
+               Custodial Lightning
+            </th>
+               <th>
+               Explanation
+            </th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>Privacy</td>
+            <td>✅</td>
+            <td>❌</td>
+         </tr>
+         <tr>
+            <td>Secure Against Theft (Rug Pulls)</td>
+            <td>❌</td>
+            <td>❌</td>
+         </tr>
+         <tr>
+            <td>IOU</td>
+            <td>✅</td>
+            <td>✅</td>
+         </tr>
+         <tr>
+            <td>Offline Settlement</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>Ecash can be transferred offline, whereas custodial Lightning transactions typically require an online connection.</td>
+         </tr>
+         <tr>
+            <td>Regulatory Risk</td>
+            <td>⚠️</td>
+            <td>⚠️</td>
+         </tr>
+         <tr>
+            <td>Bearer Asset</td>
+            <td>✅</td>
+            <td>❌</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
