@@ -243,7 +243,6 @@ The spectrum of decentralization and custody for Bitcoin ranges from highly dece
             <td>Offline Settlement</td>
             <td>✅</td>
             <td>❌</td>
-            <td>Ecash can be transferred offline, whereas custodial Lightning transactions typically require an online connection.</td>
          </tr>
          <tr>
             <td>Regulatory Risk</td>
