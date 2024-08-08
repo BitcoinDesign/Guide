@@ -218,9 +218,6 @@ The spectrum of decentralization and custody for Bitcoin ranges from highly dece
             <th>
                Custodial Lightning
             </th>
-               <th>
-               Explanation
-            </th>
          </tr>
       </thead>
       <tbody>
