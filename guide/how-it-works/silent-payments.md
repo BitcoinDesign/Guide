@@ -110,7 +110,7 @@ https://www.figma.com/design/q8IYl9UVsOWkkPhs4IkHQR/Bitcoin-Wallet-UI-Kit-%26-De
    retina = "/assets/images/guide/how-it-works/silent-payments/silent-payments-header@2x.png"
    mobile = "/assets/images/guide/how-it-works/silent-payments/silent-payments-header-mobile.png"
    mobileRetina = "/assets/images/guide/daily-spending-wallet/silent-payments/silent-payments-header-mobile@2x.png"
-   alt-text = "."
+   alt-text = "A header image with a purple gradient, the text Silent Payments and a network visual."
    width = 1600
    height = 600
    layout = "full-width"
@@ -234,18 +234,12 @@ These label detection features can also be useful for:
 #### Sender-id (or sender contacts)
 With labels and static addresses, the receiver can create contacts for parties they only receive bitcoin from, such as employers or customers. This is useful for invoicing, tracking payments, coin selection and further data analysis for businesses.
 
-{% include tip/recommendation.html %}
-
-Wallets should be very careful in safeguarding label & contact information on behalf of their users since it can be used by third parties to surveillance. For eg: create an in-app contact list and avoid storing bitcoin payment information in the operating system’s default contact list.
-
-{% include tip/close.html %}
-
 
 ## Setup
 
 Applications can take a variety of approaches to set up and communicate silent payment wallets. Features such as reusable address or sender-id could be introduced and explained to users during the setup process. Some wallets may use unique or significant locations (mobile widget, custom app logos, watch faces) to house this static address for easy retrieval, and may highlight the same during setup.
 
-Silent payment wallets may or may not be set up as [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) and/or [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) HD wallets, since the protocol does not require these. The wallet setup flow can be very different for wallets using vs. not using these standards. The Bitcoin Core Qt application is a prime example of a wallet not following these standards, and it involves wallet backup files. This is a great fit for silent payments, as we will see in Backup and Recovery sections.
+Silent payment wallets may or may not be set up as [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) and/or [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) HD wallets, since the protocol does not require these. The wallet setup flow can be very different for wallets using vs. not using these standards. Bitcoin Core, for example, does not support BIP-39 standard, and it involves wallet backup files. This is a great fit for silent payments, as we will see in Backup and Recovery sections.
 
 Since silent payments introduce a new model & primitives (such as spend key, scan key), the setup process might be a good opportunity to introduce some of these as needed without overloading the user.
 
@@ -270,7 +264,7 @@ As mentioned in the introduction, coin selection can be done much better due to 
 
 {% include tip/tip.html %}
 
-The coin(s) selected for a transaction impact the derived on-chain address due to the nature of silent payments protocol. The interface should avoid showing the on-chain address before the coin selection is done.
+The coin(s) selected for a transaction determine the derived on-chain address due to the nature of silent payments protocol. The interface should avoid showing the on-chain address before the coin selection is done.
 
 {% include tip/close.html %}
 
@@ -278,8 +272,6 @@ The coin(s) selected for a transaction impact the derived on-chain address due t
 ### Test transactions
 
 Test transactions are another way to alleviate user anxiety for sending on-chain payments, especially with static addresses, since the on-chain address is always visibly different from the static address.
-
-After the first use, users are typically on their own to use the application as it fits their needs, and everything should be set up appropriately. Features that are typically only relevant at later stages of the [usage life cycle]({{ '/guide/designing-products/usage-life-cycle/#first-use' | relative_url }}) may benefit from their own onboarding flows. Key is to present introductory information at the time it becomes relevant to the user.
 
 {% include image-gallery.html pages = page.images_test-txns %}
 
