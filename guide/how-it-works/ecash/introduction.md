@@ -254,3 +254,41 @@ The spectrum of decentralization and custody for Bitcoin ranges from highly dece
       </tbody>
    </table>
 </div>
+
+* **Privacy** - Ecash uses Chaumian blinding signatures, which makes it difficult to trace transactions back to users. Custodial lightning provides less privacy as the custodian has visibility over transactions and user activities.
+
+* **Secure Against Theft (Rug Pulls)** - Operators can potentially abscond with user funds, leading to a rug pull scenario.
+
+* **IOU** - Both systems represent IOUs from the central operator or custodian, meaning they are not direct bitcoin ownership.
+
+* **Offline Settlement** - Ecash can be transferred offline, whereas custodial Lightning transactions typically require an online connection.
+
+* **Regulatory Risk** - Both are subject to regulatory actions that can impact their operations. The central entities could be affected by changes in laws or enforcement actions.
+
+* **Bearer Asset** - Ecash tokens are bearer assets, meaning the mint cannot freeze the token once issued.
+
+
+## Advantages of bitcoin backed ecash
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/ecash/connected@1x.png"
+   retina = "/assets/images/guide/how-it-works/ecash/connected@2x.png"
+   mobile = "/assets/images/guide/how-it-works/ecash/connected@1x.png"
+   mobileRetina = "/assets/images/guide/how-it-works/ecash/connected@2x.png"
+   alt-text = "An illustration of cashu, fedimint, and lightning nodes connected in a mesh network."
+   caption = "Lightning is the connective tissue between ecash and bitcoin."
+   width = 800
+   height = 456
+   layout = "full-width"
+%}
+
+* **Enhanced Privacy** - Ecash uses blinded signatures, ensuring that transaction details, including user identities and amounts, remain hidden.
+
+* **Speed** - Since transactions are processed by a centralized mint ecash transactions are fast and efficient, which helps in handling a large volume of transactions without the limitations that exist on bitcoin on-chain or the Lightning Network.
+
+* **Low Costs** - The processing of ecash transactions is inexpensive, making it a cost-effective solution for both small and large payments.
+
+* **Ease of Use** - Users do not need to manage complex aspects of the bitcoin, such as channels or liquidity, simplifying the user experience.
+
+* **Flexible Mint Options** - Multiple independent mints can operate, allowing users to choose mints based on their reputation, fees, and other preferences. This decentralization reduces reliance on a single entity.
+
+* **Reduced Trust Assumptions** - While users deposit funds with a mint, the design minimizes the level of trust required compared to traditional custodial wallets. The mint does not have access to user transaction data or balances.
