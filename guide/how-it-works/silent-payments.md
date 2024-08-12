@@ -11,16 +11,16 @@ image_base: /assets/images/guide/how-it-works/silent-payments/carousel-images/
 images_contacts:
     - file: clipboard-options-add-contacts-or-pay
       modalImage: clipboard-options-add-contacts-or-pay@2x
-      alt: .
-      caption: .
+      alt: A modal that prompts the user to create or save to a Contact when it detects a static address in the clipboard.
+      caption: A modal encourages the user to save a static address when it is detected on the clipboard.
     - file: contact-page
       modalImage: contact-page@2x
-      alt: .
-      caption: .
+      alt: The wallet owner's contact page, containing their bitcoin receiving methods with a QR at the top for a selected method.
+      caption: The wallet owner's contact page allows them to view and quickly share their payment information.
     - file: contacts-list
       modalImage: contacts-list@2x
-      alt: .
-      caption: .
+      alt: A Contacts page shows the user a searchable contact list, in order quickly access saved payment information, including their won.
+      caption: A Contacts page lets the user search and quickly access saved payment information, including their own.
     - file: home-screen-with-contacts
       modalImage: home-screen-with-contacts@2x
       alt: .
