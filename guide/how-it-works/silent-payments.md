@@ -192,11 +192,11 @@ With this model, users are able to selectively share relevant, actionable inform
    layout = "float-right-desktop -background -shadow"
 %}
 
-BIP-352 allows users to customize their silent payment addresses on a case-by-case basis by adding labels. Users may add labels to customise their static addresses before sharing or posting them. When a payment is received, these labels can be detected and used to identify the static address used to make the payment without it being obvious on-chain.
+BIP-352 allows users to customize their static addresses on a case-by-case basis by adding labels. Users may add labels to customise their static addresses before sharing or posting them. When a payment is received, these labels can be detected and used to identify the static address used to make the payment without it being obvious on-chain.
 
 </div>
 
-To better understand this, consider: a contractor Alice can add labels to her silent payment address while sharing them
+To better understand this, consider: a contractor Alice can add labels to her static address while sharing them
 -  with a certain client,
 - her social media and
 - her website.
@@ -225,7 +225,7 @@ These label detection features can also be useful for:
 
 ### Contacts
 
- Since senders can safely use the same silent payment address for multiple payments, it is natural for them to want to store these for future use. Contacts are a great way to store them in terms that users can intuit: names and faces/images. The [contacts](/guide/daily-spending-wallet/contacts/) page here provides good guidance about the topic.
+ Since senders can safely use the same static address for multiple payments, it is natural for them to want to store these for future use. Contacts are a great way to store them in terms that users can intuit: names and faces/images. The [contacts](/guide/daily-spending-wallet/contacts/) page here provides good guidance about the topic.
 
  Silent payments (along with bolt-12) present a great opportunity to centre payments UX in terms of people instead of addresses, something that was not advisable before due to issues with on-chain address reuse.
 
@@ -255,7 +255,7 @@ With the improvements to Contacts, on-chain send flows may start from a number o
 
 {% include tip/recommendation.html %}
 
-Applications that do not support silent payment addresses should provide helpful, actionable, human readable errors.
+Applications that do not support static addresses should provide helpful, actionable, human readable errors.
 
 {% include tip/close.html %}
 
