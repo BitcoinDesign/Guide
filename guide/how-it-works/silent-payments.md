@@ -139,10 +139,10 @@ Silent payments also allow users to customize their static address with labels t
 Using the same address for multiple payments tells everybody on the network that these payments were made to the same user. Every interaction to get a new address takes time and effort, along with the possibility of mistakes while handling on-chain addresses. Silent payments circumvent both these issues by using static addresses.
 
 Here's how silent payments make this possible:
-- The receiver shares/publishes a static payment address
-- The sender obtains & uses it to derive a unique on-chain address
-- The sender broadcasts a transaction that pays this derived address
-- The receiver identifies the payment as theirs by verifying that they control this address
+1. The receiver shares/publishes a static payment address
+2. The sender obtains & uses it to derive a unique on-chain address
+3. The sender broadcasts a transaction that pays this derived address
+4. The receiver identifies the payment as theirs by verifying that they control this address
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/silent-payments/how-silent-payments-work.png"
@@ -175,7 +175,7 @@ With this model, users are able to selectively share relevant, actionable inform
 {% include image-gallery.html pages = page.images_create %}
 
 
-## Contacts & labels
+## Labels & contacts
 
 ### Labels
 
@@ -196,10 +196,10 @@ BIP-352 allows users to customize their static addresses on a case-by-case basis
 
 </div>
 
-To better understand this, consider: a contractor Alice can add labels to her static address while sharing them
--  with a certain client,
+To better understand this, consider: a contractor Alice can add different labels to her static address before sharing them
+- with a certain client
 - her social media and
-- her website.
+- her website
 
 When she receives payments from any of these sources, the respective label will be detected by the wallet application in the on-chain address to infer the source of the payment as this client.
 
@@ -309,7 +309,7 @@ The time to detect a specific received payment can be minimized if the sender & 
 
 Like lightning wallets, on-chain bitcoin wallets supporting full-featured silent payments require file backups (in the cloud or offline) since the wallet has important [user metadata](/guide/daily-spending-wallet/backup-and-recovery/landing-page/#user-metadata) such as contacts and labels, besides the private key (recovery phrase). These backup files may also contain:
 - recovery phrase (for BIP 39 wallets)
-- Scan and/or spend keys
+- scan and/or spend keys
 - labels & even contacts
 - transaction id's
 - wallet birthday
@@ -324,13 +324,13 @@ While simply backing up the seed is sufficient, but results in longer wallet rec
 
 ## Recovery
 
-A robust backup & recovery solution for silent payment wallets involves backup files. Also, wallets without a BIP-39 seed also need a backup file anyway. On the other hand, BIP-39 wallets can be recovered with just a seed phrase, a process that can be sped up by entering the wallet creation date (wallet birthday). Thus, during wallet import (recovery), the application should provide users multiple ways to restore their wallet and recover funds. This would include:
-- Backup file from cloud
-- import/upload backup file
-- enter recovery phrase (with or without wallet birthday)
-- Enter scan/spend key material
+A robust backup & recovery solution for silent payment wallets involves backup files. Also, wallets without a BIP-39 seed also need a backup file anyway. On the other hand, BIP-39 wallets can be recovered with just a seed phrase, a process that can be sped up by entering the wallet creation date (wallet birthday). Thus, during wallet import (recovery), the application should provide users multiple ways to restore their wallet and recover funds. This might include:
+- backup file from cloud
+- backup file from storage
+- recovery phrase (with or without wallet birthday)
+- input scan/spend key material
 
-These methods are similar to other wallet/address types including lightning wallets, and are explained over 4 detailed pages [here](/guide/daily-spending-wallet/backup-and-recovery/landing-page/).
+These methods are similar to other wallet/address types including lightning wallets, and are explained in the [Backup and recovery](/guide/daily-spending-wallet/backup-and-recovery/landing-page/) page.
 
 {% include image-gallery.html pages = page.images_recovery %}
 
