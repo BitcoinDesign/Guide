@@ -23,50 +23,50 @@ images_contacts:
       caption: A Contacts page lets the user search and quickly access saved payment information, including their own.
     - file: home-screen-with-contacts
       modalImage: home-screen-with-contacts@2x
-      alt: .
-      caption: .
+      alt: App home screen containing a pinned contacts section, which includes a self contact for the wallet owner.
+      caption: An home screen with a pinned contacts section allows quick access to frequently used payment information.
 
 images_sp-onboarding:
     - file: setup-silent-payments-onboarding-i
       modalImage: setup-silent-payments-onboarding-i@2x
-      alt: .
-      caption: .
+      alt: A carousel page introducing the static address and a brief explainer.
+      caption: An onboarding page introducing the static address its ability to be safely reused.
     - file: setup-silent-payments-onboarding-ii
       modalImage: setup-silent-payments-onboarding-ii@2x
-      alt: .
-      caption: .
+      alt: A carousel page introducing labels along with an explainer.
+      caption: An onboarding page introducing labels, explaining they are automatically applied to payments received.
     - file: setup-silent-payments-onboarding-iii
       modalImage: setup-silent-payments-onboarding-iii@2x
-      alt: .
-      caption: .
+      alt: A carousel page introducing the Contacts feature.
+      caption: An onboarding page introducing the Contacts feature.
 
 images_send:
     - file: send-review-sp
       modalImage: send-review-sp@2x
-      alt: .
-      caption: .
+      alt: The send review page displaying the on-chain address explaining that it is derived from the static address.
+      caption: A note below the on-chain address explains that it is derived from the static address.
     - file: send-review-with-contact
       modalImage: send-review-with-contact@2x
-      alt: .
-      caption: .
+      alt: The send review page with a contact item so that addresses do not have to be mentioned.
+      caption: Using contacts allows send pages to avoid mentioning addresses altogether.
     - file: send-address-error
       modalImage: send-address-error@2x
-      alt: .
-      caption: .
+      alt: A send review page with a error message under the address field informing the user about a static address not being supported.
+      caption: An error message under the address field informs the user about a static address not being supported.
 
 images_test-txns:
     - file: test-txn-send-review
       modalImage: test-txn-send-review@2x
-      alt: .
-      caption: .
+      alt: A toggle on the send review page offers to send a test transaction first.
+      caption: A toggle on the send review page offers to send a test transaction first.
     - file: test-txn-send-home
       modalImage: test-txn-send-home@2x
-      alt: .
-      caption: .
+      alt: A card on the landing page lets user review and finalise a test transaction.
+      caption: A prompt on the landing page lets the user review and finalise a test transaction.
     - file: test-txn-confirm-finalise-txn
       modalImage: test-txn-confirm-finalise-txn@2x
-      alt: .
-      caption: .
+      alt: A finalise transaction screen that allows the user to finalise or revert a test transaction.
+      caption: A finalise transaction screen allows the user to finalise or revert a test transaction.
 
 images_backup:
     - file: backup-cloud-backup
@@ -239,11 +239,11 @@ With labels and static addresses, the receiver can create contacts for parties t
 
 Applications can take a variety of approaches to set up and communicate silent payment wallets. Features such as reusable address or sender-id could be introduced and explained to users during the setup process. Some wallets may use unique or significant locations (mobile widget, custom app logos, watch faces) to house this static address for easy retrieval, and may highlight the same during setup.
 
+{% include image-gallery.html pages = page.images_sp-onboarding %}
+
 Silent payment wallets may or may not be set up as [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) and/or [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) HD wallets, since the protocol does not require these. The wallet setup flow can be very different for wallets using vs. not using these standards. Bitcoin Core, for example, does not support BIP-39 standard, and it involves wallet backup files. This is a great fit for silent payments, as we will see in Backup and Recovery sections.
 
 Since silent payments introduce a new model & primitives (such as spend key, scan key), the setup process might be a good opportunity to introduce some of these as needed without overloading the user.
-
-{% include image-gallery.html pages = page.images_sp-onboarding %}
 
 
 ## Sending
@@ -285,8 +285,8 @@ Test transactions are another way to alleviate user anxiety for sending on-chain
    modalImage = "/assets/images/guide/how-it-works/silent-payments/static-address-with-customization-options.png"
    width = 250
    height = 522
-   alt-text = "An application screen showing labels being added to a static address."
-   caption = "."
+   alt-text = "The user contact page listing their receive static address along with the ability to add labels before sharing it."
+   caption = "The user contact page allows the user to add labels to their receive static address before sharing it."
    layout = "float-right-desktop -background -shadow"
 %}
 
