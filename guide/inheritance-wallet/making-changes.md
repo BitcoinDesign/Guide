@@ -7,7 +7,7 @@ parent: Inheritance wallet
 permalink: /guide/inheritance-wallet/making-changes/
 main_classes: -no-top-padding
 image_base: /assets/images/guide/inheritance-wallet/making-changes/
-images_key-replacement:
+images_key-replacement-configuration:
     - file: key-replacement/app-home-initial
       alt: App home screen showing one wallet.
       caption: Bob navigates from the home screen to the wallet overview screen.
@@ -32,6 +32,7 @@ images_key-replacement:
     - file: key-replacement/replace-keys-wallet-name
       alt: Screen letting the user enter a wallet name.
       caption: Because a new wallet will be created, the app lets Bob change the name of the wallet.
+images_key-replacement-add-key:
     - file: key-replacement/replace-keys-missing-key
       alt: Screen showing a list of five signing keys and one empty slot. 
       caption: Bob starts adding David's new key.
@@ -203,11 +204,11 @@ Because of how bitcoin works, any of these change requires creating a new wallet
 
 ### Replacing a signing key
 
-Let's assume that David has lost his signing device. He did not lose the seed phrase backup, so he could theoretically just import his private key into a new device. But since they are dealing with their family savings, the Joneses don't want to take any chances. They decide to replace David's key, which is part of the inheritance key set, with a new one. They would follow the same approach if David had lost the seed phrase backup or had reason to believe that it had been compromised.
+Let's assume that David, one of the heirs, has lost his signing device. He did not lose the seed phrase backup, so he could theoretically just import his private key into a new device. But since they are dealing with their family savings, the Joneses don't want to take any chances. They decide to replace David's key, which is part of the inheritance key set. The family would follow the same approach if David had lost the seed phrase backup or had reason to believe that it had been compromised.
 
 #### Adding the new key
 
-After David received the new signing device, he exports the extendend public key, just like he did during the [wallet creation]() process. He then shares it with his parents via a shared chat on Signal. As soon as they receive David's XPUB, Bob opens our application and navigates to the wallet settings. The prototype below lets you click through the key replacement flow:
+After David received the new signing device, he exports the extendend public key, just like he did during the [wallet creation]({{ '/guide/inheritance-wallet/wallet-creation/#adding-the-inheritance-keys' | relative_url }}) process. He then shares it with his parents via a shared chat on Signal. As soon as they receive David's XPUB, Bob opens our application and navigates to the wallet settings. The prototype below lets you click through the key replacement flow:
 
 {% include prototype.html
    link = "https://www.figma.com/proto/h5GP5v5dYfpXXfEUXf6nvC/Inheritance-wallet?page-id=6295%3A8715&type=design&node-id=6466-13302&viewport=337%2C-87%2C0.17&t=ctQmwe5HnelSERog-1&scaling=min-zoom&starting-point-node-id=6466%3A13302&show-proto-sidebar=1&mode=design"
@@ -222,17 +223,19 @@ After David received the new signing device, he exports the extendend public key
 
 On the wallet settings page, Bob goes the signing keys page. From there the app guides him through the key replacement flow. It starts with a short explanation dialog that outlines how the process works.   
 
-{% include image-gallery.html pages = page.images_key-replacement %} 
+{% include image-gallery.html pages = page.images_key-replacement-configuration %} 
 
-The app then asks which of the keys Bob would like to replace. Bob selects David's Passport from the list of keys. On the next screen, the app gives Bob the option to change the wallet configuration as well. But Bob only needs to replace David's key, so he continues. He does, however, select a different name for the new wallet.
+The app then asks which of the keys Bob would like to replace. Bob selects David's Passport from the list of keys. On the next screen, the app gives Bob the option to change the wallet configuration as well. But Bob only needs to replace David's key, so he continues with the same configuration. He does, however, choose a different name for the new wallet.
 
 The next step is to add David's new extended public key. This works in the same way as during the initial wallet creation. On the wallet review screen, the app indicates that a new signing key has been added. Bob reviews the changes and hits "create wallet."
+
+{% include image-gallery.html pages = page.images_key-replacement-add-key %}
 
 ### Cosigner setup, device activation and wallet backup 
 The new inheritance wallet is now created. Just like during the initial wallet creation, Alice and Bob now need to:
 
 1. Share the wallet configuration with Alice, so that she can set up the wallet on her app.
-2. Activate the new wallet on their signing devices.
+2. Activate the new wallet on all of their signing devices.
 3. Save the backup kit for the new wallet.
 
 We have covered these topics in the previous pages of this reference design.
