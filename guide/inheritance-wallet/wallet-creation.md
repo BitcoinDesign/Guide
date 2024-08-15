@@ -212,10 +212,29 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
 </div>
 
 ---
+## How it works
+Now that we have a [good understanding]({{ '/guide/inheritance-wallet/overview/' | relative_url }}) of how Bob and Alice want to set up their inheritance wallet, let's examine the initial user experience and wallet setup process. To create a fully functional wallet, the Joneses need to complete the following high-level steps:
 
-## Onboarding
+<div class="center" markdown="1">
 
-Now that we have a [good understanding]({{ '/guide/inheritance-wallet/overview/' | relative_url }}) of how Bob and Alice want to set up their inheritance wallet, let's take a close look at the first use experience and wallet setup.
+{% include picture.html
+   image = "/assets/images/guide/inheritance-wallet/wallet-creation/process-overview.png"
+   retina = "/assets/images/guide/inheritance-wallet/wallet-creation/process-overview@2x.png"
+   alt-text = "A diagram showing the wallet creation and cosigner onboarding process."
+   width = 1106
+   height = 1659
+   layout = "float-right-desktop"
+%}
+
+1. Bob creates the wallet template in his app and shares it with Alice (cosigner) and Christina, David, and Edward (inheritance key holders).
+2. Everyone creates a key on their respective signing devices and provides it to Bob.
+3. Bob adds all keys to the configuration and finalizes the wallet.
+4. Bob shares the final wallet configuration with Alice, but not with the inheritance key holders.
+5. Alice imports the wallet and activates it on her signing device.
+
+</div>
+
+## App onboarding
 
 After downloading the app, it walks them through the purpose of the product and highlights some of the most important features. 
 

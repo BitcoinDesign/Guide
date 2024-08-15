@@ -136,8 +136,15 @@ What is left to do is for Alice to activate the wallet on her BitBox, so that sh
 
 {% include image-gallery.html pages = page.images_alice-enable-device %}
 
-That's it. The family savings wallet is now fully functional. Alice and Bob can now use their signing devices to create transactions and spend bitcoin. On the next page we will look into how the couple backs up the wallet. 
+#### The wallet is ready
+The family savings wallet is now fully functional: 
 
+- Bob and Alice now have access to the shared wallet.
+- They can view the wallet and its balance in their respective apps.
+- Both can initiate and sign transactions using their respective devices.
+- Neither their children nor their lawyer has access to the wallet, as the wallet configuration hasn't been imported into their respective apps.
+
+On the next page we will look into how the couple backs up the wallet. 
 
 ---
 
