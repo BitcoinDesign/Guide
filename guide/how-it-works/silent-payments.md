@@ -161,7 +161,7 @@ Silent payments introduce a new conceptual model based on new primitives and con
 
 | Current terminology        | With silent payments          | Benefit |
 |:-------------|:------------------|:------|
-| Single-use on-chain address           | Static address | Reusable  |
+| Single-use on-chain address           | Static address | Reusable & untrackable |
 | Extended private key (xprv) | Spend key   |   |
 | Extended public key (xpub)           | Scan key      | Addresses cannot be deterministically derived   |
 | **Address-based model**           | **Contact-based model** | **More intuitive and familiar**  |
