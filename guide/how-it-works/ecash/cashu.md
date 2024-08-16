@@ -38,12 +38,11 @@ images_backup:
 
 Editor's notes
 
-Explains generally how multi-key schemes work.
+Explains generally how Cashu works.
 
 Illustration sources
 
-https://www.figma.com/community/file/888680264445459448
-https://www.figma.com/community/file/995256542920917246/BDG---Private-key-management-illustrations
+TBD
 
 -->
 
@@ -89,6 +88,7 @@ Keep a record of the mints you are connected to. During the restoration process,
 {% include tip/close.html %}
 
 ## Restoration Process
+
 {% include image-gallery.html pages = page.images_backup %}
 
 1. Seed Phrase Entry: When restoring a wallet, users enter their seed phrase into the Cashu wallet application. This seed phrase regenerates all cryptographic keys associated with the user's account.
