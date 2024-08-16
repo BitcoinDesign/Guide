@@ -54,13 +54,7 @@ Ecash is a digital payment system that uses cryptographic techniques to ensure s
    layout = "full-width"
 %}
 
-Bitcoin backed ecash works by using protocols like [Fedimint] ({{ '/guide/how-it-works/ecash/fedimint/' | relative_url }}) and [Cashu] ({{ '/guide/how-it-works/ecash/cashu/' | relative_url }}), which both implement blinded signatures to ensure privacy and security. Users deposit bitcoin, and in return, they receive ecash tokens that are backed by the bitcoin deposits. Blinded signatures allow the tokens to be issued without revealing transaction details, ensuring strong privacy guarantees. Users can then spend and receive these ecash tokens, which remain anonymous and unlinkable to their identity, enabling private transactions within the bitcoin ecosystem.
-
----
-
-###  [Overview]({{ '/guide/how-it-works/ecash/overview/' | relative_url }})
-
-Get an introduction to how bitcoin backed ecash enhances transaction privacy, security, and speed.
+Bitcoin backed ecash works by using protocols like [Fedimint]({{ '/guide/how-it-works/ecash/fedimint' | relative_url }}) and [Cashu]({{ '/guide/how-it-works/ecash/cashu/' | relative_url }}), which both implement blinded signatures to ensure privacy and security. Users deposit bitcoin, and in return, they receive ecash tokens that are backed by the bitcoin deposits. Blinded signatures allow the tokens to be issued without revealing transaction details, ensuring strong privacy guarantees. Users can then spend and receive these ecash tokens, which remain anonymous and unlinkable to their identity, enabling private transactions within the bitcoin ecosystem.
 
 ---
 ### Ecash protocols

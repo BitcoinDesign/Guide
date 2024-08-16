@@ -41,16 +41,16 @@ Cashu is an ecash protocol on that interoperates with the Lightning Network. Unl
 
 {% include tip/open.html color="blue" icon="info" label="User Experience Tip" %}
 
-When designing for Cashu, consider providing options for users to set default mints and auto-swap preferences. Since Cashu mints are independently operated, users may prefer to default to a trusted mint.
+When designing for Cashu, consider providing options for users to set default mints and auto-swap preferences. Since Cashu mints are independently operated, users may prefer to default to a trusted mint. 
 
 {% include tip/close.html %}
 
 ## Backup and Restore for Cashu
-The Cashu backup and restoration process is designed to ensure users can securely recover their wallets and maintain access to their ecash tokens, even if they switch devices or experience data loss.
+The Cashu backup and restoration process is designed to ensure users can securely recover their wallets and maintain access to their ecash tokens, even if they switch devices or experience data loss. Users should only use their recovery seed phrase once. Repeated use of the seed phrase for restoration can lead to synchronization issues and potential errors. This is because each time you restore, you might be dealing with an outdated state of your wallet, which can cause discrepancies in token balances and transactions. After a user recovers their wallet they should generate a new recovery seedphrase.
 
 {% include tip/open.html color="blue" icon="info" label="Single Use Recovery" %}
 
-Only use your recovery seed phrase once. Repeated use of the seed phrase for restoration can lead to synchronization issues and potential errors. This is because each time you restore, you might be dealing with an outdated state of your wallet, which can cause discrepancies in token balances and transactions. After a user recovers their wallet they should generate a new recovery seedphrase.
+After successfully restoring your wallet using a recovery seed phrase, it is highly recommended that you generate a new recovery seed phrase immediately. This step is crucial because the original recovery phrase has now been used and could be more susceptible to synchronization risks.
 
 {% include tip/close.html %}
 
