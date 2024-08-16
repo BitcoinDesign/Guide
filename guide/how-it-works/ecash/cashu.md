@@ -10,7 +10,7 @@ redirect_from:
  - /guide/ecash/cashu
 image: https://bitcoin.design/assets/images/guide/how-it-works/ecash/ecash.jpg
 main_classes: -no-top-padding
-image_base: /assets/images/guide/how-it-works/ecash
+image_base: /assets/images/guide/how-it-works/ecash/
 images_backup:
     - file: restore-manual
       modalImage: restore-manual-full
