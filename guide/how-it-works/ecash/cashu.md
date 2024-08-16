@@ -12,10 +12,6 @@ image: https://bitcoin.design/assets/images/guide/how-it-works/ecash/ecash.jpg
 main_classes: -no-top-padding
 image_base: /assets/images/guide/how-it-works/ecash/
 images_backup:
-    - file: restore-manual
-      modalImage: restore-manual-full
-      alt: TBD
-      caption: TBD
     - file: manual-backup-recovery-phrase-intro
       modalImage: manual-backup-recovery-phrase-intro-full
       alt: TBD
@@ -30,6 +26,23 @@ images_backup:
       caption: TBD
     - file: manual-backup-mint-back-up
       modalImage: manual-backup-mint-back-up-full
+      alt: TBD
+      caption: TBD
+images_restore:
+    - file: restore-start
+      modalImage: restore-start-full
+      alt: TBD
+      caption: TBD
+    - file: restore-manual-recovery-phrase-complete
+      modalImage: restore-manual-recovery-phrase-complete-full
+      alt: TBD
+      caption: TBD
+    - file: restore-mints
+      modalImage: restore-mints-full
+      alt: TBD
+      caption: TBD
+    - file: restore-mint-info
+      modalImage: restore-mint-info-full
       alt: TBD
       caption: TBD
 ---
@@ -77,7 +90,9 @@ After successfully restoring your wallet using a recovery seed phrase, it is hig
 
 
 ### Backup Process
-1. Deterministic Wallet with Seed Phrase: Cashu uses a deterministic wallet model, where all cryptographic keys and tokens can be derived from a single seed phrase. This seed phrase is generated when the wallet is first created.
+{% include image-gallery.html pages = page.images_restore %}
+
+1. Deterministic Wallet with Seed Phrase: Cashu uses a deterministic wallet model, where all cryptographic keys and tokens can be derived from a single seed phrase. This seed phrase can be generated when the wallet is first created.
 
 2. Secure Storage: Users are advised to store their seed phrase securely. It is crucial to keep this seed phrase in a safe, physical format (such as written on paper) and stored in a secure location to prevent unauthorized access or loss. The best practices in the [Backup & recovery]({{ '/guide/daily-spending-wallet/backup-and-recovery/landing-page/' | relative_url }}) section also apply to Cashu wallets. 
 
@@ -88,12 +103,11 @@ Keep a record of the mints you are connected to. During the restoration process,
 {% include tip/close.html %}
 
 ## Restoration Process
-
 {% include image-gallery.html pages = page.images_backup %}
 
 1. Seed Phrase Entry: When restoring a wallet, users enter their seed phrase into the Cashu wallet application. This seed phrase regenerates all cryptographic keys associated with the user's account.
 
-2. Recovery: After restoration, ensure your wallet is connected to the same mint(s) you were using before. This is crucial as the mint holds the records necessary to validate your tokens.
+2. Mint(s) Entry: Users must input the mint URL for each mint they used before. This step ensures their wallet can properly reconnect and verify their tokens, maintaining the integrity of your funds.
 
 3. Verification: The mint(s) checks these proofs against its records to confirm that the tokens have not been previously spent and are still valid. This process relies on the signatures (proofs) that were initially generated when the tokens were minted.
 
