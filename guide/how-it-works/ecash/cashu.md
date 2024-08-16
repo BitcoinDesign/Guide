@@ -24,11 +24,11 @@ images_backup:
       modalImage: manual-backup-recovery-phrase-full
       alt: TBD
       caption: TBD
-   - file: manual-backup-mint-intro
+    - file: manual-backup-mint-intro
       modalImage: manual-backup-mint-intro-full
       alt: TBD
       caption: TBD
-   - file: manual-backup-mint-back-up
+    - file: manual-backup-mint-back-up
       modalImage: manual-backup-mint-back-up-full
       alt: TBD
       caption: TBD
