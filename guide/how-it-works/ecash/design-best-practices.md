@@ -197,8 +197,6 @@ Verifying tokens after restoration might temporarily compromise their privacy. T
    retina = "/assets/images/guide/how-it-works/ecash/nip-06@2x.png"
    modalImage = "/assets/images/guide/how-it-works/ecash/nip-06@2x.png"
    alt-text = ""
-   width = 800
-   height = 348
    layout = "-background -shadow"
    caption = "Example of how metadata specified in NUT06 can be displayed in a wallet interface."
 %}
@@ -206,7 +204,6 @@ Verifying tokens after restoration might temporarily compromise their privacy. T
 </div>
 
 ### Edit mint URL / refresh mint settings
-
 It’s important to provide users with the ability to manually update or refresh mint settings in their wallets. While best practices suggest that wallets should auto-refresh and update mint settings periodically, there may be cases where this isn’t supported, or a mint undergoes significant updates, such as a URL change. By allowing users to edit the mint URL or refresh settings manually, you ensure that they can always connect to the latest mint configurations, maintaining a smooth and secure user experience.
 
 ### Descriptive NUT display
