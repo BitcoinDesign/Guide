@@ -13,74 +13,79 @@ image: https://bitcoin.design/assets/images/guide/how-it-works/ecash/ecash.jpg
 image_base: /assets/images/guide/how-it-works/ecash/
 images_backup:
     - file: manual-backup-recovery-phrase-intro
-      modalImage: manual-backup-recovery-phrase-intro-full
+      modalImage: manual-backup-recovery-phrase-intro@2x
       alt: TBD
       caption: TBD
     - file: manual-backup-recovery-phrase
-      modalImage: manual-backup-recovery-phrase-full
+      modalImage: manual-backup-recovery-phrase@2x
       alt: TBD
       caption: TBD
     - file: manual-backup-mint-intro
-      modalImage: manual-backup-mint-intro-full
+      modalImage: manual-backup-mint-intro@2x
       alt: TBD
       caption: TBD
     - file: manual-backup-mint-back-up
-      modalImage: manual-backup-mint-back-up-full
+      modalImage: manual-backup-mint-back-up@2x
       alt: TBD
       caption: TBD
+
 images_restore:
     - file: restore-start
-      modalImage: restore-start-full
+      modalImage: restore-start@2x
       alt: TBD
       caption: TBD
     - file: restore-manual-recovery-phrase-complete
-      modalImage: restore-manual-recovery-phrase-complete-full
+      modalImage: restore-manual-recovery-phrase-complete@2x
       alt: TBD
       caption: TBD
     - file: restore-mints
-      modalImage: restore-mints-full
+      modalImage: restore-mints@2x
       alt: TBD
       caption: TBD
     - file: restore-mint-info
-      modalImage: restore-mint-info-full
+      modalImage: restore-mint-info@2x
       alt: TBD
       caption: TBD
+
 images_mint-list:
     - file: federation-list
-      modalImage: federation-list-full
+      modalImage: federation-list@2x
       alt: TBD
       caption: TBD
     - file: cashu-mint-list
-      modalImage: cashu-mint-list-full
+      modalImage: cashu-mint-list@2x
       alt: TBD
       caption: TBD
+
 images_pending:
     - file: pending-token
-      modalImage: pending-token-full
+      modalImage: pending-token@2x
       alt: TBD
       caption: TBD
     - file: pending-transaction-details
-      modalImage: pending-transaction-details-full
+      modalImage: pending-transaction-details@2x
       alt: TBD
       caption: TBD
     - file: pending-transaction-qr
-      modalImage: pending-transaction-qr-full
+      modalImage: pending-transaction-qr@2x
       alt: TBD
       caption: TBD
+
 images_mint-default:
     - file: cashu-mint-details
+      modalImage: cashu-mint-details@2x
       alt: TBD
       caption: TBD
     - file: cashu-mint-details-settings
-      modalImage: cashu-mint-details-settings-full
+      modalImage: cashu-mint-details-settings@2x
       alt: TBD
       caption: TBD
     - file: cashu-mint-details-default-set-confirmation
-      modalImage: cashu-mint-details-default-set-confirmation-full
+      modalImage: cashu-mint-details-default-set-confirmation@2x
       alt: TBD
       caption: TBD
     - file: cashu-default-applied
-      modalImage: cashu-default-applied-full
+      modalImage: cashu-default-applied@2x
       alt: TBD
       caption: TBD
 ---
