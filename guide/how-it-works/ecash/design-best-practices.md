@@ -45,6 +45,15 @@ images_restore:
       modalImage: restore-mint-info-full
       alt: TBD
       caption: TBD
+images_mint-list:
+    - file: federation-list
+      modalImage: federation-list-full
+      alt: TBD
+      caption: TBD
+    - file: cashu-mint-list
+      modalImage: cashu-mint-list-full
+      alt: TBD
+      caption: TBD
 ---
 
 {% include picture.html
@@ -84,6 +93,7 @@ ADD Figma URL
 When designing bitcoin backed ecash applications it’s important to prioritize clear and intuitive interfaces that allow users to easily manage their tokens, whether they are minting, sending, or redeeming them.
 
 ### Multiple mint / federation display
+{% include image-gallery.html pages = page.images_mint-list %}
 When displaying multiple mints in a Bitcoin-backed ecash application, there are several best practices to consider:
 
 1. Clear Hierarchy and Organization: Ensure that mints are organized in a way that is easy for users to navigate. Group mints by relevance, trust level, or frequency of use, and consider using sorting or filtering options to help users find the right mint quickly.
@@ -93,8 +103,6 @@ When displaying multiple mints in a Bitcoin-backed ecash application, there are 
 3. Contextual Information and Actions: Provide easy access to mint details or transaction history, directly from the mint display. This reduces friction and allows users to interact with mints more fluidly without needing to navigate through multiple screens.
 
 #### Pending tokens
-It’s useful to display generated tokens in the transaction history along with their status—whether pending or redeemed. This helps users quickly assess their transaction status and builds confidence in your application. Providing the ability to expand on a token to view details and take actions like resending or redeeming is also important. This feature becomes particularly valuable if a token was lost or never claimed.
-
 <div class="center" markdown="1">
 
 {% include picture.html
@@ -108,7 +116,7 @@ It’s useful to display generated tokens in the transaction history along with 
    caption = "The fees screen provides a clear overview of all fees that may be charged."
 %}
 
-A paragraph explaining the importance of displaying pending tokens.
+It’s useful to display generated tokens in the transaction history along with their status—whether pending or redeemed. This helps users quickly assess their transaction status and builds confidence in your application. Providing the ability to expand on a token to view details and take actions like resending or redeeming is also important. This feature becomes particularly valuable if a token was lost or never claimed.
 
 </div>
 
