@@ -191,9 +191,9 @@ Verifying tokens after restoration might temporarily compromise their privacy. T
 [NUT06] (https://github.com/cashubtc/nuts/blob/main/06.md) provides a standardized way to display important metadata fields for mints. Incorporating these metadata fields such as mint name, URL, and other relevant information, can make applicaitons more transparent and informative. Mint metadata allows users to quickly verify the authenticity and trustworthiness of mints, fostering confidence and ease of use. Consider how to visually integrate these fields through clear, accessible mint profiles or summary cards, ensuring users can easily access and understand this crucial information.
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/settings/nip-06.png"
-   retina = "/assets/images/guide/daily-spending-wallet/settings/nip-06@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/settings/nip-06@2x.png"
+   image = "/assets/images/guide/how-it-works/ecash/nip-06.png"
+   retina = "/assets/images/guide/how-it-works/ecash/nip-06@2x.png"
+   modalImage = "/assets/images/guide/how-it-works/ecash//nip-06@2x.png"
    alt-text = ""
    width = 800
    height = 500
@@ -205,7 +205,7 @@ Verifying tokens after restoration might temporarily compromise their privacy. T
 <div class="center" markdown="1">
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/settings/nip-06.png"
+   image = "/assets/images/guide/how-it-works/ecash//nip-06.png"
    retina = "/assets/images/guide/daily-spending-wallet/settings/nip-06@2x.png"
    modalImage = "/assets/images/guide/daily-spending-wallet/settings/nip-06@2x.png"
    alt-text = ""
