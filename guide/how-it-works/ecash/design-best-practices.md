@@ -88,6 +88,16 @@ images_mint-default:
       modalImage: cashu-default-applied@2x
       alt: TBD
       caption: TBD
+
+images_mint-url-edit:
+    - file: cashu-mint-details
+      modalImage: cashu-mint-details@2x
+      alt: TBD
+      caption: TBD
+    - file: cashu-mint-url-edit
+      modalImage: cashu-mint-url-edit@2x
+      alt: TBD
+      caption: TBD
 ---
 
 {% include picture.html
@@ -204,28 +214,11 @@ Verifying tokens after restoration might temporarily compromise their privacy. T
 
 </div>
 
-### Edit mint URL / refresh mint settings
+### Edit mint URL & refresh mint settings
 
-<div class="center" markdown="1">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/privacy/quick-hide-access.png"
-   retina = "/assets/images/guide/daily-spending-wallet/privacy/quick-hide-access@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/privacy/quick-hide-access-big.png"
-   alt-text = "An activity screen where balances are replaced with stars"
-   caption = "Home screen with a hidden balance and a quick reveal toggle."
-   width = 250
-   height = 541
-   layout = "float-right-desktop -background -shadow"
-%}
+{% include image-gallery.html pages = page.images_mint-url-edit %}
 
 It’s important to provide users with the ability to manually update or refresh mint settings in their wallets. While best practices suggest that wallets should auto-refresh and update mint settings periodically, there may be cases where this isn’t supported, or a mint undergoes significant updates, such as a URL change. By allowing users to edit the mint URL or refresh settings manually, you ensure that they can always connect to the latest mint configurations, maintaining a smooth and secure user experience.
-
-</div>
-
-
-
-
 
 ### Descriptive Feature display
 
@@ -234,7 +227,7 @@ It’s important to provide users with the ability to manually update or refresh
 {% include picture.html
    image = "/assets/images/guide/how-it-works/ecash/cashu-mint-features.png"
    retina = "/assets/images/guide/how-it-works/ecash/cashu-mint-features@2x.png"
-   modalImage = "/assets/images/guide/how-it-works/ecash/qcashu-mint-features@2x.png"
+   modalImage = "/assets/images/guide/how-it-works/ecash/cashu-mint-features@2x.png"
    alt-text = "An mint detail screen where supported features are displayed"
    caption = "Mint details screen with supported NUTS displayed as features."
    width = 250
