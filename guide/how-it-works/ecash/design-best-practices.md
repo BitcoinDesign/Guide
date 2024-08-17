@@ -196,28 +196,13 @@ Verifying tokens after restoration might temporarily compromise their privacy. T
    modalImage = "/assets/images/guide/how-it-works/ecash//nip-06@2x.png"
    alt-text = ""
    width = 800
-   height = 500
-   layout = "float-right-desktop -background -shadow"
+   height = 348
    caption = "Example of how metadata specified in NUT06 can be displayed in a wallet interface."
 %}
 
 ### Edit mint URL / refresh mint settings
-<div class="center" markdown="1">
-
-{% include picture.html
-   image = "/assets/images/guide/how-it-works/ecash//nip-06.png"
-   retina = "/assets/images/guide/daily-spending-wallet/settings/nip-06@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/settings/nip-06@2x.png"
-   alt-text = ""
-   width = 250
-   height = 541
-   layout = "float-right-desktop -background -shadow"
-   caption = "Example of how metadata specified in NUT06 can be displayed in a wallet interface."
-%}
 
 It’s important to provide users with the ability to manually update or refresh mint settings in their wallets. While best practices suggest that wallets should auto-refresh and update mint settings periodically, there may be cases where this isn’t supported, or a mint undergoes significant updates, such as a URL change. By allowing users to edit the mint URL or refresh settings manually, you ensure that they can always connect to the latest mint configurations, maintaining a smooth and secure user experience.
-
-</div>
 
 ### Descriptive NUT display
 When displaying [NUTs] (https://github.com/cashubtc/nuts) (Notation, Usage, and Terminology) that a mint supports, avoid simply listing NUT01, NUT02, etc. Instead, provide users with clear descriptions of what each NUT does. This approach helps users understand the features and capabilities of the mint at a glance. Since NUTs 01-06 are mandatory for Cashu protocol interoperability, focus on optional NUTs that add unique functionality. Use the descriptions provided in the official documentation to keep the information accurate.
