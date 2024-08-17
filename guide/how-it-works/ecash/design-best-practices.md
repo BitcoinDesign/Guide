@@ -190,18 +190,29 @@ Verifying tokens after restoration might temporarily compromise their privacy. T
 ### Designing with NUT06 metadata fields
 [NUT06] (https://github.com/cashubtc/nuts/blob/main/06.md) provides a standardized way to display important metadata fields for mints. Incorporating these metadata fields such as mint name, URL, and other relevant information, can make applicaitons more transparent and informative. Mint metadata allows users to quickly verify the authenticity and trustworthiness of mints, fostering confidence and ease of use. Consider how to visually integrate these fields through clear, accessible mint profiles or summary cards, ensuring users can easily access and understand this crucial information.
 
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/settings/nip-06.png"
+   retina = "/assets/images/guide/daily-spending-wallet/settings/nip-06@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/settings/nip-06@2x.png"
+   alt-text = ""
+   width = 800
+   height = 500
+   layout = "float-right-desktop -background -shadow"
+   caption = "Example of how metadata specified in NUT06 can be displayed in a wallet interface."
+%}
+
 ### Edit mint URL / refresh mint settings
 <div class="center" markdown="1">
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/settings/wallet-backup.png"
-   retina = "/assets/images/guide/daily-spending-wallet/settings/wallet-backup@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/settings/wallet-backup-big.png"
+   image = "/assets/images/guide/daily-spending-wallet/settings/nip-06.png"
+   retina = "/assets/images/guide/daily-spending-wallet/settings/nip-06@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/settings/nip-06@2x.png"
    alt-text = ""
    width = 250
    height = 541
    layout = "float-right-desktop -background -shadow"
-   caption = "Backup options are typically configured in first use and rarely need to be accessed."
+   caption = "Example of how metadata specified in NUT06 can be displayed in a wallet interface."
 %}
 
 It’s important to provide users with the ability to manually update or refresh mint settings in their wallets. While best practices suggest that wallets should auto-refresh and update mint settings periodically, there may be cases where this isn’t supported, or a mint undergoes significant updates, such as a URL change. By allowing users to edit the mint URL or refresh settings manually, you ensure that they can always connect to the latest mint configurations, maintaining a smooth and secure user experience.
