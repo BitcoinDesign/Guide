@@ -71,7 +71,7 @@ TBD
 %}
 
 # Cashu
-Cashu is an ecash protocol on that interoperates with the Lightning Network. Unlike Fedimint, which uses a federated model to distribute trust among multiple entities, Cashu operates with independent mints, offering greater flexibility and control to users. This makes Cashu distinct in providing an easy to deploy, flexible, and agile approach to managing bitcoin backed ecash.
+Cashu is an ecash protocol on that interoperates with the Lightning Network. Unlike Fedimint, which uses a federated model to distribute trust among multiple entities, Cashu operates with independent mints. This makes Cashu distinct in providing an easy to deploy, flexible, and agile approach to managing bitcoin backed ecash.
 
 {% include tip/open.html color="blue" icon="info" label="User Experience Tip" %}
 
@@ -79,43 +79,8 @@ When designing for Cashu, consider providing options for users to set default mi
 
 {% include tip/close.html %}
 
-## Backup and Restore for Cashu
-The Cashu backup and restoration process is designed to ensure users can securely recover their wallets and maintain access to their ecash tokens, even if they switch devices or experience data loss. Users should only use their recovery seed phrase once. Repeated use of the seed phrase for restoration can lead to synchronization issues and potential errors. This is because each time you restore, you might be dealing with an outdated state of your wallet, which can cause discrepancies in token balances and transactions. After a user recovers their wallet they should generate a new recovery seedphrase.
-
-{% include tip/open.html color="blue" icon="info" label="Single Use Recovery" %}
-
-After successfully restoring your wallet using a recovery seed phrase, it is highly recommended that you generate a new recovery seed phrase immediately. This step is crucial because the original recovery phrase has now been used and could be more susceptible to synchronization risks.
-
-{% include tip/close.html %}
-
-
-### Backup Process
-{% include image-gallery.html pages = page.images_restore %}
-
-1. Deterministic Wallet with Seed Phrase: Cashu uses a deterministic wallet model, where all cryptographic keys and tokens can be derived from a single seed phrase. This seed phrase can be generated when the wallet is first created.
-
-2. Secure Storage: Users are advised to store their seed phrase securely. It is crucial to keep this seed phrase in a safe, physical format (such as written on paper) and stored in a secure location to prevent unauthorized access or loss. The best practices in the [Backup & recovery]({{ '/guide/daily-spending-wallet/backup-and-recovery/landing-page/' | relative_url }}) section also apply to Cashu wallets. 
-
-{% include tip/open.html color="blue" icon="info" label="Mint Information Needed" %}
-
-Keep a record of the mints you are connected to. During the restoration process, you will need to reconnect to these specific mints to re-verify your tokens. Without this information, you might not be able to fully restore your wallet or verify your tokens.
-
-{% include tip/close.html %}
-
-## Restoration Process
-{% include image-gallery.html pages = page.images_backup %}
-
-1. Seed Phrase Entry: When restoring a wallet, users enter their seed phrase into the Cashu wallet application. This seed phrase regenerates all cryptographic keys associated with the user's account.
-
-2. Mint(s) Entry: Users must input the mint URL for each mint they used before. This step ensures their wallet can properly reconnect and verify their tokens, maintaining the integrity of your funds.
-
-3. Verification: The mint(s) checks these proofs against its records to confirm that the tokens have not been previously spent and are still valid. This process relies on the signatures (proofs) that were initially generated when the tokens were minted.
-
-{% include tip/open.html color="blue" icon="info" label="Privacy Considerations During Verification" %}
-
-Verifying tokens after restoration might temporarily compromise their privacy. The mint needs to revalidate the tokens, which can potentially expose the transaction istory associated with those tokens. Be mindful of this aspect if privacy is a significant concern for your use case.
-
-{% include tip/close.html %}
+## Design best practices
+To learn more about Cashu specific design best practices you can check out the [Design best practices]({{ '/guide/how-it-works/ecash/design-best-practices' | relative_url }}) section.
 
 ## When to Use Cashu
 

@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Design best practices
-description: An overview of how to help users maintain their financial privacy while using a bitcoin daily spending wallet.
+description: An overview on best design practices for bitcoin backed ecash.
 nav_order: 5
 parent: Ecash
 grand_parent: How it works
@@ -9,47 +9,42 @@ permalink: /guide/how-it-works/ecash/design-best-practices
 redirect_from:
  - /guide/how-it-works/ecash/
 main_classes: -no-top-padding
-image: /assets/images/guide/daily-spending-wallet/settings/settings-preview.jpg
-image_base: /assets/images/guide/daily-spending-wallet/settings/
-images_general:
-    - file: general
-      modalImage: general-big
-      alt: Mobile screen showing a list of settings categories
-      caption: General is a catch-all category for options that don't clearly fit elsewhere.
-    - file: local-currency
-      modalImage: local-currency-big
-      alt: Mobile screen with a list of currencies to choose from
-      caption: While it should be automatically detected, users can change their local currency.
-    - file: bitcoin-unit
-      modalImage: bitcoin-unit-big
-      alt: Mobile screen with automatic, bitcoin, and satoshi options
-      caption: The bitcoin unit can also be switched contextually in the send screen.
-images_security:
-    - file: security
-      modalImage: security-big
-      alt: Mobile screen with PIN, FaceID, wallet deletion and wallet limit options
-      caption: Options to limit unwanted access and payments.
-    - file: delete-wallet
-      modalImage: delete-wallet-big
-      alt: Confirmation modal for deleting the wallet from the device
-      caption: This screen requires very clear language to ensure users understand the implications.
-images_network:
-    - file: network
-      modalImage: network-big
-      alt: Mobile screen with bitcoin and lightning network, as well as Tor options
-      caption: Overview screen for network options.
-    - file: bitcoin-network
-      modalImage: bitcoin-network-big
-      alt: Mobile screen with bitcoin network customization options
-      caption: Users can choose their own node to connect to.
-    - file: lightning-network
-      modalImage: lightning-network-big
-      alt: Mobile screen with lightning network customization options
-      caption: Information about the user’s node, and additional security options.
-    - file: watchtower
-      modalImage: watchtower-big
-      alt: Mobile screen with lightning network watchtower options
-      caption: Users can enable watchtower functionality to protect their funds.
+image: https://bitcoin.design/assets/images/guide/how-it-works/ecash/ecash.jpg
+image_base: /assets/images/guide/how-it-works/ecash/
+images_backup:
+    - file: manual-backup-recovery-phrase-intro
+      modalImage: manual-backup-recovery-phrase-intro-full
+      alt: TBD
+      caption: TBD
+    - file: manual-backup-recovery-phrase
+      modalImage: manual-backup-recovery-phrase-full
+      alt: TBD
+      caption: TBD
+    - file: manual-backup-mint-intro
+      modalImage: manual-backup-mint-intro-full
+      alt: TBD
+      caption: TBD
+    - file: manual-backup-mint-back-up
+      modalImage: manual-backup-mint-back-up-full
+      alt: TBD
+      caption: TBD
+images_restore:
+    - file: restore-start
+      modalImage: restore-start-full
+      alt: TBD
+      caption: TBD
+    - file: restore-manual-recovery-phrase-complete
+      modalImage: restore-manual-recovery-phrase-complete-full
+      alt: TBD
+      caption: TBD
+    - file: restore-mints
+      modalImage: restore-mints-full
+      alt: TBD
+      caption: TBD
+    - file: restore-mint-info
+      modalImage: restore-mint-info-full
+      alt: TBD
+      caption: TBD
 ---
 
 {% include picture.html
@@ -91,7 +86,13 @@ Below you will find best practices for Ecash in general, cashu specifics, and fe
 Ecash general best design practices.
 
 ### Multiple mint display
-A paragraph explaining the importance of displaying multiple mints, and some design considerations to keep in mind.
+When displaying multiple mints in a Bitcoin-backed ecash application, there are several best practices to consider:
+
+1. Clear Hierarchy and Organization: Ensure that mints are organized in a way that is easy for users to navigate. Group mints by relevance, trust level, or frequency of use, and consider using sorting or filtering options to help users find the right mint quickly.
+
+2.	Prominent Metadata Display: Use metadata fields like mint name, icon, URL, and description, to give users insight into each mint or federations identity. Display this information prominently, so users can easily verify the authenticity and relevance of each mint or federation.
+
+3. Contextual Information and Actions: Provide easy access to mint details or transaction history, directly from the mint display. This reduces friction and allows users to interact with mints more fluidly without needing to navigate through multiple screens.
 
 {% include image-gallery.html pages = page.images_general %}
 
@@ -117,13 +118,48 @@ A paragraph explaining the importance of displaying pending tokens.
 ## Cashu best practices
 A paragraph introduction to cashu specific best practices.
 
-### Meta data
-Explaing the meta data fields for cashu. Explain NUT06.
+### Backup and Restore for Cashu
+The Cashu backup and restoration process is designed to ensure users can securely recover their wallets and maintain access to their ecash tokens, even if they switch devices or experience data loss. Users should only use their recovery seed phrase once. Repeated use of the seed phrase for restoration can lead to synchronization issues and potential errors. This is because each time you restore, you might be dealing with an outdated state of your wallet, which can cause discrepancies in token balances and transactions. After a user recovers their wallet they should generate a new recovery seedphrase.
 
-{% include image-gallery.html pages = page.images_security %}
+{% include tip/open.html color="blue" icon="info" label="Single Use Recovery" %}
 
-### Edit mint URL / Refresh mint settings
+After successfully restoring your wallet using a recovery seed phrase, it is highly recommended that you generate a new recovery seed phrase immediately. This step is crucial because the original recovery phrase has now been used and could be more susceptible to synchronization risks.
 
+{% include tip/close.html %}
+
+
+### Backup Process
+{% include image-gallery.html pages = page.images_restore %}
+
+1. Deterministic Wallet with Seed Phrase: Cashu uses a deterministic wallet model, where all cryptographic keys and tokens can be derived from a single seed phrase. This seed phrase can be generated when the wallet is first created.
+
+2. Secure Storage: Users are advised to store their seed phrase securely. It is crucial to keep this seed phrase in a safe, physical format (such as written on paper) and stored in a secure location to prevent unauthorized access or loss. The best practices in the [Backup & recovery]({{ '/guide/daily-spending-wallet/backup-and-recovery/landing-page/' | relative_url }}) section also apply to Cashu wallets. 
+
+{% include tip/open.html color="blue" icon="info" label="Mint Information Needed" %}
+
+Keep a record of the mints you are connected to. During the restoration process, you will need to reconnect to these specific mints to re-verify your tokens. Without this information, you might not be able to fully restore your wallet or verify your tokens.
+
+{% include tip/close.html %}
+
+### Restoration Process
+{% include image-gallery.html pages = page.images_backup %}
+
+1. Seed Phrase Entry: When restoring a wallet, users enter their seed phrase into the Cashu wallet application. This seed phrase regenerates all cryptographic keys associated with the user's account.
+
+2. Mint(s) Entry: Users must input the mint URL for each mint they used before. This step ensures their wallet can properly reconnect and verify their tokens, maintaining the integrity of your funds.
+
+3. Verification: The mint(s) checks these proofs against its records to confirm that the tokens have not been previously spent and are still valid. This process relies on the signatures (proofs) that were initially generated when the tokens were minted.
+
+{% include tip/open.html color="blue" icon="info" label="Privacy Considerations During Verification" %}
+
+Verifying tokens after restoration might temporarily compromise their privacy. The mint needs to revalidate the tokens, which can potentially expose the transaction istory associated with those tokens. Be mindful of this aspect if privacy is a significant concern for your use case.
+
+{% include tip/close.html %}
+
+### Designing with NUT06 Metadata Fields
+NUT06 provides a standardized way to display important metadata fields for mints. Incorporating these metadata fields such as mint name, URL, and other relevant information, can make applicaitons more transparent and informative. Mint metadata allows users to quickly verify the authenticity and trustworthiness of mints, fostering confidence and ease of use. Consider how to visually integrate these fields through clear, accessible mint profiles or summary cards, ensuring users can easily access and understand this crucial information.
+
+### Edit mint URL / refresh mint settings
 <div class="center" markdown="1">
 
 {% include picture.html
@@ -137,19 +173,15 @@ Explaing the meta data fields for cashu. Explain NUT06.
    caption = "Backup options are typically configured in first use and rarely need to be accessed."
 %}
 
-A paragraph explaining the importance of giving the user the ability to edit a mint URL and refresh mint settings. Explain the connection to NUT06.
+It’s important to provide users with the ability to manually update or refresh mint settings in their wallets. While best practices suggest that wallets should auto-refresh and update mint settings periodically, there may be cases where this isn’t supported, or a mint undergoes significant updates, such as a URL change. By allowing users to edit the mint URL or refresh settings manually, you ensure that they can always connect to the latest mint configurations, maintaining a smooth and secure user experience.
 
 </div>
 
-### P2PK Lock
-Explain P2PK Lock in Cashu. Only a few wallets support it. But it's a powerful feature that allows for offline payment and should be designed for.
+### Descriptive NUT Display
+When displaying [NUTs] (https://github.com/cashubtc/nuts) (Notation, Usage, and Terminology) that a mint supports, avoid simply listing NUT01, NUT02, etc. Instead, provide users with clear descriptions of what each NUT does. This approach helps users understand the features and capabilities of the mint at a glance. Since NUTs 01-06 are mandatory for Cashu protocol interoperability, focus on optional NUTs that add unique functionality. Use the descriptions provided in the official documentation to keep the information accurate.
 
-{% include image-gallery.html pages = page.images_network %}
-
-### Back up and restore
-Much of the same info as the backup section in Cashu page. Except here we will highlight examples of how to encourge the user to save a list of mints and mint urls they are connected to.
-
-{% include image-gallery.html pages = page.images_network %}
+### Pay to Public Key (P2PK)
+[NUT11] (https://github.com/cashubtc/nuts/blob/main/11.md) is a powerful feature that allows bitcoin backed ecash tokens to be securely locked to another user’s public key, which is generated by the recipient’s wallet. This ensures that only the intended recipient can redeem the ecash, enhancing security. NUT11 enables secure offline payments, preventing double-spending. Beyond these basics, NUT11 supports advanced use cases like timelocks and multisignature (multisig) setups, where ecash can be conditionally spent or jointly owned by multiple parties. When designing make sure these functionalities are clearly communicated to users, highlighting their practical benefits and flexibility.
 
 ## Fedimint design best practices
 Ecash general best design practices.
