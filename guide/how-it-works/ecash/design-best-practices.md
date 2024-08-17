@@ -67,7 +67,7 @@ images_pending:
       modalImage: pending-transaction-qr-full
       alt: TBD
       caption: TBD
-  images_mint-default:
+images_mint-default:
     - file: cashu-mint-details
       modalImage: cashu-mint-details-full
       alt: TBD
