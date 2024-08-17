@@ -63,6 +63,27 @@ images_pending:
       modalImage: pending-transaction-details-full
       alt: TBD
       caption: TBD
+    - file: pending-transaction-qr
+      modalImage: pending-transaction-qr-full
+      alt: TBD
+      caption: TBD
+  images_mint-default:
+    - file: cashu-mint-details
+      modalImage: cashu-mint-details-full
+      alt: TBD
+      caption: TBD
+    - file: cashu-mint-details-settings
+      modalImage: cashu-mint-details-settings-full
+      alt: TBD
+      caption: TBD
+    - file: cashu-mint-details-default-set-confirmation
+      modalImage: cashu-mint-details-default-set-confirmation-full
+      alt: TBD
+      caption: TBD
+    - file: cashu-default-applied
+      modalImage: cashu-default-applied-full
+      alt: TBD
+      caption: TBD
 ---
 
 {% include picture.html
@@ -121,6 +142,7 @@ It’s useful to display generated tokens in the transaction history along with 
 A paragraph introduction to cashu specific best practices.
 
 ### Default mint
+{% include image-gallery.html pages = page.images_mint-default %}
 When designing for Cashu, consider implementing a feature that allows users to set a default mint. Since Cashu mints are independently operated, users may prefer to consistently use a trusted mint for their transactions. By enabling them to select a default mint, you simplify their experience and build trust. Additionally, consider offering auto-swap preferences, so users can seamlessly switch mints if their default becomes unavailable or if they need to optimize privacy and transaction fees. This approach enhances both usability and user confidence.
 
 ### Backup and restore for cashu
