@@ -42,18 +42,10 @@ Fedimint is another Chaumian ecash protocol uses both on-chain Bitcoin transacti
 ## How Fedimint Works
 TBD
 
+## When to Use Fedimint
+* **Federated Trust Models** - Use Fedimint when your application benefits from spreading trust across multiple entities, reducing reliance on any single operator and enhancing security.
+
 **Products that use Fedimint**
 - [Fedi](https://www.fedi.xyz)
 - [Mutiny](https://www.mutinywallet.com/)
 - [Clovyr](https://clovyr.app/)
-
----
-
-Next, we do a technical deep dive into how [best practices]({{ '/guide/how-it-works/transactions/' | relative_url }}) of ecash on bitcoin.
-
-{% include next-previous.html
-   previousUrl = "/guide/how-it-works/ecash/cashu/"
-   previousName = "Cashu"
-   nextUrl = "/guide/how-it-works/ecash/best-practices/"
-   nextName = "Best practices"
-%}

@@ -80,12 +80,10 @@ ADD Figma URL
 </div>
 
 ---
-Below you will find best practices for Ecash in general, cashu specifics, and fedimint specifics.
-
 ## General ecash best practices
-Ecash general best design practices.
+When designing bitcoin backed ecash applications it’s important to prioritize clear and intuitive interfaces that allow users to easily manage their tokens, whether they are minting, sending, or redeeming them.
 
-### Multiple mint display
+### Multiple mint / federation display
 When displaying multiple mints in a Bitcoin-backed ecash application, there are several best practices to consider:
 
 1. Clear Hierarchy and Organization: Ensure that mints are organized in a way that is easy for users to navigate. Group mints by relevance, trust level, or frequency of use, and consider using sorting or filtering options to help users find the right mint quickly.
@@ -94,9 +92,8 @@ When displaying multiple mints in a Bitcoin-backed ecash application, there are 
 
 3. Contextual Information and Actions: Provide easy access to mint details or transaction history, directly from the mint display. This reduces friction and allows users to interact with mints more fluidly without needing to navigate through multiple screens.
 
-{% include image-gallery.html pages = page.images_general %}
-
 #### Pending tokens
+It’s useful to display generated tokens in the transaction history along with their status—whether pending or redeemed. This helps users quickly assess their transaction status and builds confidence in your application. Providing the ability to expand on a token to view details and take actions like resending or redeeming is also important. This feature becomes particularly valuable if a token was lost or never claimed.
 
 <div class="center" markdown="1">
 
@@ -118,7 +115,10 @@ A paragraph explaining the importance of displaying pending tokens.
 ## Cashu best practices
 A paragraph introduction to cashu specific best practices.
 
-### Backup and Restore for Cashu
+### Default mint
+When designing for Cashu, consider implementing a feature that allows users to set a default mint. Since Cashu mints are independently operated, users may prefer to consistently use a trusted mint for their transactions. By enabling them to select a default mint, you simplify their experience and build trust. Additionally, consider offering auto-swap preferences, so users can seamlessly switch mints if their default becomes unavailable or if they need to optimize privacy and transaction fees. This approach enhances both usability and user confidence.
+
+### Backup and restore for cashu
 The Cashu backup and restoration process is designed to ensure users can securely recover their wallets and maintain access to their ecash tokens, even if they switch devices or experience data loss. Users should only use their recovery seed phrase once. Repeated use of the seed phrase for restoration can lead to synchronization issues and potential errors. This is because each time you restore, you might be dealing with an outdated state of your wallet, which can cause discrepancies in token balances and transactions. After a user recovers their wallet they should generate a new recovery seedphrase.
 
 {% include tip/open.html color="blue" icon="info" label="Single Use Recovery" %}
@@ -128,7 +128,7 @@ After successfully restoring your wallet using a recovery seed phrase, it is hig
 {% include tip/close.html %}
 
 
-### Backup Process
+### Backup process
 {% include image-gallery.html pages = page.images_restore %}
 
 1. Deterministic Wallet with Seed Phrase: Cashu uses a deterministic wallet model, where all cryptographic keys and tokens can be derived from a single seed phrase. This seed phrase can be generated when the wallet is first created.
@@ -141,7 +141,7 @@ Keep a record of the mints you are connected to. During the restoration process,
 
 {% include tip/close.html %}
 
-### Restoration Process
+### Restoration process
 {% include image-gallery.html pages = page.images_backup %}
 
 1. Seed Phrase Entry: When restoring a wallet, users enter their seed phrase into the Cashu wallet application. This seed phrase regenerates all cryptographic keys associated with the user's account.
@@ -156,8 +156,8 @@ Verifying tokens after restoration might temporarily compromise their privacy. T
 
 {% include tip/close.html %}
 
-### Designing with NUT06 Metadata Fields
-NUT06 provides a standardized way to display important metadata fields for mints. Incorporating these metadata fields such as mint name, URL, and other relevant information, can make applicaitons more transparent and informative. Mint metadata allows users to quickly verify the authenticity and trustworthiness of mints, fostering confidence and ease of use. Consider how to visually integrate these fields through clear, accessible mint profiles or summary cards, ensuring users can easily access and understand this crucial information.
+### Designing with NUT06 metadata fields
+[NUT06] (https://github.com/cashubtc/nuts/blob/main/06.md) provides a standardized way to display important metadata fields for mints. Incorporating these metadata fields such as mint name, URL, and other relevant information, can make applicaitons more transparent and informative. Mint metadata allows users to quickly verify the authenticity and trustworthiness of mints, fostering confidence and ease of use. Consider how to visually integrate these fields through clear, accessible mint profiles or summary cards, ensuring users can easily access and understand this crucial information.
 
 ### Edit mint URL / refresh mint settings
 <div class="center" markdown="1">
@@ -177,10 +177,10 @@ It’s important to provide users with the ability to manually update or refresh
 
 </div>
 
-### Descriptive NUT Display
+### Descriptive NUT display
 When displaying [NUTs] (https://github.com/cashubtc/nuts) (Notation, Usage, and Terminology) that a mint supports, avoid simply listing NUT01, NUT02, etc. Instead, provide users with clear descriptions of what each NUT does. This approach helps users understand the features and capabilities of the mint at a glance. Since NUTs 01-06 are mandatory for Cashu protocol interoperability, focus on optional NUTs that add unique functionality. Use the descriptions provided in the official documentation to keep the information accurate.
 
-### Pay to Public Key (P2PK)
+### Pay to public key (P2PK)
 [NUT11] (https://github.com/cashubtc/nuts/blob/main/11.md) is a powerful feature that allows bitcoin backed ecash tokens to be securely locked to another user’s public key, which is generated by the recipient’s wallet. This ensures that only the intended recipient can redeem the ecash, enhancing security. NUT11 enables secure offline payments, preventing double-spending. Beyond these basics, NUT11 supports advanced use cases like timelocks and multisignature (multisig) setups, where ecash can be conditionally spent or jointly owned by multiple parties. When designing make sure these functionalities are clearly communicated to users, highlighting their practical benefits and flexibility.
 
 ## Fedimint design best practices

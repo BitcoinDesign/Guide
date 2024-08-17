@@ -73,12 +73,6 @@ TBD
 # Cashu
 Cashu is an ecash protocol on that interoperates with the Lightning Network. Unlike Fedimint, which uses a federated model to distribute trust among multiple entities, Cashu operates with independent mints. This makes Cashu distinct in providing an easy to deploy, flexible, and agile approach to managing bitcoin backed ecash.
 
-{% include tip/open.html color="blue" icon="info" label="User Experience Tip" %}
-
-When designing for Cashu, consider providing options for users to set default mints and auto-swap preferences. Since Cashu mints are independently operated, users may prefer to default to a trusted mint. 
-
-{% include tip/close.html %}
-
 ## Design best practices
 To learn more about Cashu specific design best practices you can check out the [Design best practices]({{ '/guide/how-it-works/ecash/design-best-practices' | relative_url }}) section.
 
