@@ -69,7 +69,6 @@ images_pending:
       caption: TBD
 images_mint-default:
     - file: cashu-mint-details
-      modalImage: cashu-mint-details-full
       alt: TBD
       caption: TBD
     - file: cashu-mint-details-settings

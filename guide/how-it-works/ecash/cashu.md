@@ -84,10 +84,6 @@ To learn more about Cashu specific design best practices you can check out the [
 
 * **Localized or Small Community Solutions** - Implement Cashu in scenarios where independent mints operated by trusted local entities can serve a community, enhancing trust and customization based on local needs.
 
-### When to Use Fedimint Instead
-
-* **Federated Trust Models** - Use Fedimint when your application benefits from spreading trust across multiple entities, reducing reliance on any single operator and enhancing security.
-
 ## Products that use Cashu
 - [Cashu.me](https://wallet.cashu.me/)
 - [eNuts](https://www.enuts.cash/)
