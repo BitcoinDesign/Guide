@@ -159,16 +159,16 @@ Here's how silent payments make this possible:
 Silent payments introduce a new conceptual model based on new primitives and concepts which separate information based on their use. Below is a brief summary:
 
 
-| Current terminology        | With silent payments          | Benefit |
+| Current model        | Silent payments model          | Benefit  |
 |:-------------|:------------------|:------|
-| Single-use on-chain address           | Static address | Reusable & untrackable |
-| Extended private key (xprv) | Spend key   |   |
-| Extended public key (xpub)           | Scan key      | Addresses cannot be deterministically derived   |
+| Single-use on-chain address           | Static address | Reusable & untraceable on-chain |
+| Extended private key (xprv) | Spend private key   |   |
+| Extended public key (xpub)           | Scan public key      | Allows scanning for payments but not derivation of addresses    |
 | **Address-based model**           | **Contact-based model** | **More intuitive and familiar**  |
 
-With this model, users are able to selectively share relevant, actionable information with other parties as needed, resulting in improved security and privacy.
+This model separates the ability to scan for payments from the ability to derive on-chain addresses, which are combined in the BIP-32 model with [extended public keys](/guide/glossary/#extended-public-key-xpub-ypub-zpub). This allows users to selectively share only relevant, actionable information with other parties such as light clients, resulting in improved privacy.
 - Static address: payment information for senders
-- Scan key: payment scanning information wallets & servers
+- Scan key: payment scanning information for wallets & servers
 - Spend key: spending information for wallet owners
 
 
