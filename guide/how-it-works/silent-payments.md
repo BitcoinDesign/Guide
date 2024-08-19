@@ -156,23 +156,23 @@ Here's how silent payments make this possible:
    layout = "full-width"
 %}
 
-Silent payments introduce a new conceptual model based on new primitives and concepts which separate information based on their use. Below is a brief summary:
+Silent payments introduces a new model based on new primitives/concepts that separates payment information based on its use. Below is a brief summary:
 
+| Silent payments' concept       | Purpose         | Sharing with |
+|:-------------|:------------------|:------|
+| Static address | Making payments | Senders
+| Scan key     | Payment scanning information  | Nodes & light clients
+| Spend key   | Spending bitcoin | Wallet owner
 
-| Current model        | Silent payments model          | Benefit  |
+The above model introduces a scan key that is used for payment scanning and a static address which is used for deriving on-chain addresses. This is in contrast with the BIP-32 model where [extended public keys](/guide/glossary/#extended-public-key-xpub-ypub-zpub) are used for both purposes. Below is a summary of the differences between the two models:
+
+| Current model with BIP-32       | Silent payments model          | Benefit  |
 |:-------------|:------------------|:------|
 | Single-use on-chain address           | Static address | Reusable & untraceable on-chain |
-| Extended private key (xprv) | Spend private key   |   |
-| Extended public key (xpub)           | Scan public key      | Allows scanning for payments but not derivation of addresses    |
+| Extended private key (xprv) | Spend (private) key   |   |
+| Extended public key (xpub)           | Scan (public) key      | Allows scanning for payments but not derivation of addresses    |
 | **Address-based model**           | **Contact-based model** | **More intuitive and familiar**  |
 
-This model separates the ability to scan for payments from the ability to derive on-chain addresses, which are combined in the BIP-32 model with [extended public keys](/guide/glossary/#extended-public-key-xpub-ypub-zpub). This allows users to selectively share only relevant, actionable information with other parties such as light clients, resulting in improved privacy.
-- Static address: payment information for senders
-- Scan key: payment scanning information for wallets & servers
-- Spend key: spending information for wallet owners
-
-
-{% include image-gallery.html pages = page.images_create %}
 
 
 ## Labels & contacts
