@@ -81,12 +81,12 @@ images_backup:
 images_recovery:
     - file: recovery-wallet-birthday-prompt
       modalImage: recovery-wallet-birthday-prompt@2x
-      alt: .
-      caption: .
+      alt: Application screen with a toggle to opt into and enter a wallet birthday
+      caption: Applications should allow users to enter wallet birthday and while explaining its benefits.
     - file: recovery-wallet-birthday-enter
       modalImage: recovery-wallet-birthday-enter@2x
-      alt: .
-      caption: .
+      alt: A screen with a date picker for specifying the wallet birthday.
+      caption: A date picker allows the user to enter the wallet birthday    before beginning recovery process.
 ---
 
 <!--
@@ -307,6 +307,19 @@ The time to detect a specific received payment can be minimized if the sender & 
 
 ## Backup
 
+<div class="center" markdown="1">
+
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/silent-payments/backup-wallet-birthday.png"
+   retina = "/assets/images/guide/how-it-works/silent-payments/backup-wallet-birthday@2x.png"
+   modalImage = "/assets/images/guide/how-it-works/silent-payments/backup-wallet-birthday.png"
+   width = 250
+   height = 522
+   alt-text = "The user contact page listing their receive static address along with the ability to add labels before sharing it."
+   caption = "The user contact page allows the user to add labels to their receive static address before sharing it."
+   layout = "float-right-desktop -background -shadow"
+%}
+
 Like lightning wallets, on-chain bitcoin wallets supporting full-featured silent payments require file backups (in the cloud or offline) since the wallet has important [user metadata](/guide/daily-spending-wallet/backup-and-recovery/landing-page/#user-metadata) such as contacts and labels, besides the private key (recovery phrase). These backup files may also contain:
 - recovery phrase (for BIP 39 wallets)
 - scan and/or spend keys
@@ -314,7 +327,7 @@ Like lightning wallets, on-chain bitcoin wallets supporting full-featured silent
 - transaction id's
 - wallet birthday
 
-{% include image-gallery.html pages = page.images_backup %}
+</div>
 
 As a best practice, some of the above information such as seed, wallet birthday should be shown to the user in the UI itself in case they misplace the file or recovery application does not support backup files or simply a redundant manual backup.
 
