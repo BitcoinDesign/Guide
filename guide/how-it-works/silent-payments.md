@@ -95,7 +95,7 @@ Editor's notes
 
 Privacy is not a crime.
 
-Thanks to josie (josibake@protonmail.com) for his invaluable work and guidance.
+Thanks to josie for his patience guidance as well as ruben and rearden for their reviews & counsel.
 
 This page provides UX insights, best practices and designs for silent payments.
 
@@ -156,7 +156,9 @@ Here's how silent payments make this possible:
    layout = "full-width"
 %}
 
-Silent payments introduces a new model based on new primitives/concepts that separates payment information based on its use. Below is a brief summary:
+## A new conceptual model
+
+Silent payments introduces a new technical model that separates payment information such as addresses and keys based on their purpose.
 
 | Silent payments' concept       | Purpose         | Sharing with |
 |:-------------|:------------------|:------|
@@ -170,9 +172,8 @@ The above model introduces a scan key that is used for payment scanning and a st
 |:-------------|:------------------|:------|
 | Single-use on-chain address           | Static address | Reusable & untraceable on-chain |
 | Extended private key (xprv) | Spend (private) key   |   |
-| Extended public key (xpub)           | Scan (public) key      | Allows scanning for payments but not derivation of addresses    |
+| Extended public key (xpub)           | Scan (public) key      | Nodes & light clients can scan for payments but cannot derive addresses    |
 | **Address-based model**           | **Contact-based model** | **More intuitive and familiar**  |
-
 
 
 ## Labels & contacts
@@ -192,7 +193,7 @@ The above model introduces a scan key that is used for payment scanning and a st
    layout = "float-right-desktop -background -shadow"
 %}
 
-BIP-352 allows users to customize their static addresses on a case-by-case basis by adding labels. Users may add labels to customise their static addresses before sharing or posting them. When a payment is received, these labels can be detected and used to identify the static address used to make the payment without it being obvious on-chain.
+Silent payments allows users to customize their static addresses on a case-by-case basis by adding labels. Users may add labels to customise their static addresses before sharing or posting them. When a payment is received, these labels can be detected and used to identify the static address used to make the payment without it being obvious on-chain.
 
 </div>
 
