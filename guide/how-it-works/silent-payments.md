@@ -320,31 +320,35 @@ The time to detect a specific received payment can be minimized if the sender & 
    modalImage = "/assets/images/guide/how-it-works/silent-payments/backup-wallet-birthday.png"
    width = 250
    height = 522
-   alt-text = "The user contact page listing their receive static address along with the ability to add labels before sharing it."
-   caption = "The user contact page allows the user to add labels to their receive static address before sharing it."
+   alt-text = "A backup flow screen with a calendar visual highlighting the wallet creation date and mentioning it prominently."
+   caption = "Display wallet birthday as a part of the backup flow and explain the benefit of storing it for quicker recovery."
    layout = "float-right-desktop -background -shadow"
 %}
 
-Like lightning wallets, on-chain bitcoin wallets supporting full-featured silent payments require file backups (in the cloud or offline) since the wallet has important [user metadata](/guide/daily-spending-wallet/backup-and-recovery/landing-page/#user-metadata) such as contacts and labels, besides the private key (recovery phrase). These backup files may contain:
+Like [lightning wallets](/guide/daily-spending-wallet/backup-and-recovery/cloud-backup/), on-chain bitcoin wallets supporting full-featured silent payments require file backups (in the cloud or offline) since the wallet has important [user metadata](/guide/daily-spending-wallet/backup-and-recovery/landing-page/#user-metadata) besides key material. These backup files may contain:
 - recovery phrase
 - scan and/or spend keys
-- labels & even contacts
-- transaction id's
+- tweak data
+- labels
+- contacts
+- transaction IDs
 - wallet birthday
 
 </div>
 
-As a best practice, some of the above information such as seed, wallet birthday should also be shown to the user in the UI itself in case they misplace the file or recovery application does not support backup files or simply a redundant manual backup.
+As a best practice, some of the above information such as the recovery phrase or wallet birthday should also be shown in the UI itself for partial manual backup in case the user misplaces the file or recovery application does not support backup files.
 
 While simply backing up the seed is sufficient, but results in longer wallet recovery times and causes loss of useful information.
 
-> Since each silent payment output address is derived independently, regular backups are recommended.” - BIP352
+> Since each silent payment output address is derived independently, regular backups are recommended.
+>
+> <cite> <a href="https://github.com/bitcoin/bips/blob/master/bip-0352.mediawiki">BIP-352</a></cite>
 
 ### Recovery
 
-A robust backup & recovery solution for silent payment wallets involves backup files. Even BIP-39 wallets, which usually don't require a backup file method should use file backups to enable full benefits of silent payments. Thus, during wallet recovery/import, applications should provide users multiple ways to restore their wallet and recover funds. Payment detection in silent payments require a scanning process that can be significantly sped up by entering the wallet creation date (wallet birthday).
+Applications should provide users multiple ways to restore their wallet and recover funds. Even BIP-39 wallets, which usually don't require a backup file method should use file backups to enable full benefits of silent payments. Payment detection in silent payments require a scanning process that can be significantly sped up by entering the wallet creation date (wallet birthday).
 
-In addition to recovery methods mentioned [here](/guide/daily-spending-wallet/backup-and-recovery/landing-page/), applications may need to enable recovery with scan/spend key material.
+In addition to recovery methods mentioned [here](guide/daily-spending-wallet/backup-and-recovery/recovery/), applications may need to enable recovery with scan/spend key material.
 
 {% include image-gallery.html pages = page.images_recovery %}
 
