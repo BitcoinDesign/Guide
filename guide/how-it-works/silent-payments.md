@@ -308,7 +308,9 @@ Receivers using mobile wallets, which may not be online 24x7 will encounter some
 
 The time to detect a specific received payment can be minimized if the sender & receiver can communicate with each other. Some applications already allow users to detect whether an address belongs to them. This feature should, if possible, be extended to include BIP-352 functionality.
 
-## Backup
+## Backup & Recovery
+
+### Backup
 
 <div class="center" markdown="1">
 
@@ -323,8 +325,8 @@ The time to detect a specific received payment can be minimized if the sender & 
    layout = "float-right-desktop -background -shadow"
 %}
 
-Like lightning wallets, on-chain bitcoin wallets supporting full-featured silent payments require file backups (in the cloud or offline) since the wallet has important [user metadata](/guide/daily-spending-wallet/backup-and-recovery/landing-page/#user-metadata) such as contacts and labels, besides the private key (recovery phrase). These backup files may also contain:
-- recovery phrase (for BIP 39 wallets)
+Like lightning wallets, on-chain bitcoin wallets supporting full-featured silent payments require file backups (in the cloud or offline) since the wallet has important [user metadata](/guide/daily-spending-wallet/backup-and-recovery/landing-page/#user-metadata) such as contacts and labels, besides the private key (recovery phrase). These backup files may contain:
+- recovery phrase
 - scan and/or spend keys
 - labels & even contacts
 - transaction id's
@@ -332,21 +334,17 @@ Like lightning wallets, on-chain bitcoin wallets supporting full-featured silent
 
 </div>
 
-As a best practice, some of the above information such as seed, wallet birthday should be shown to the user in the UI itself in case they misplace the file or recovery application does not support backup files or simply a redundant manual backup.
+As a best practice, some of the above information such as seed, wallet birthday should also be shown to the user in the UI itself in case they misplace the file or recovery application does not support backup files or simply a redundant manual backup.
 
 While simply backing up the seed is sufficient, but results in longer wallet recovery times and causes loss of useful information.
 
 > Since each silent payment output address is derived independently, regular backups are recommended.” - BIP352
 
-## Recovery
+### Recovery
 
-A robust backup & recovery solution for silent payment wallets involves backup files. Also, wallets without a BIP-39 seed also need a backup file anyway. On the other hand, BIP-39 wallets can be recovered with just a seed phrase, a process that can be sped up by entering the wallet creation date (wallet birthday). Thus, during wallet import (recovery), the application should provide users multiple ways to restore their wallet and recover funds. This might include:
-- backup file from cloud
-- backup file from storage
-- recovery phrase (with or without wallet birthday)
-- input scan/spend key material
+A robust backup & recovery solution for silent payment wallets involves backup files. Even BIP-39 wallets, which usually don't require a backup file method should use file backups to enable full benefits of silent payments. Thus, during wallet recovery/import, applications should provide users multiple ways to restore their wallet and recover funds. Payment detection in silent payments require a scanning process that can be significantly sped up by entering the wallet creation date (wallet birthday).
 
-These methods are similar to other wallet/address types including lightning wallets, and are explained in the [Backup and recovery](/guide/daily-spending-wallet/backup-and-recovery/landing-page/) page.
+In addition to recovery methods mentioned [here](/guide/daily-spending-wallet/backup-and-recovery/landing-page/), applications may need to enable recovery with scan/spend key material.
 
 {% include image-gallery.html pages = page.images_recovery %}
 
