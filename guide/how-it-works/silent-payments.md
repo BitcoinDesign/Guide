@@ -193,6 +193,8 @@ The above model introduces a scan key that is used for payment scanning and a st
    layout = "float-right-desktop -background -shadow"
 %}
 
+Labels or tags are brief, often one-word identifiers that are associated as metadata to all manners of information, including payments and addresses.
+
 Silent payments allows users to customize their static addresses on a case-by-case basis by adding labels. Users may add labels to customise their static addresses before sharing or posting them. When a payment is received, these labels can be detected and used to identify the static address used to make the payment without it being obvious on-chain.
 
 </div>
