@@ -195,16 +195,16 @@ The above model introduces a scan key that is used for payment scanning and a st
 
 Labels or tags are brief, often one-word identifiers that are associated as metadata to all manners of information, including payments and addresses.
 
-Silent payments allows users to customize their static addresses on a case-by-case basis by adding labels. Users may add labels to customise their static addresses before sharing or posting them. When a payment is received, these labels can be detected and used to identify the static address used to make the payment without it being obvious on-chain.
+Silent payments allows users to add labels to their static addresses on a case-by-case basis before sharing or posting them. When a payment is received, these labels can be detected and used by the receiver (but no one else) to identify the static address used to make the payment.
 
 </div>
 
-To better understand this, consider: a contractor Alice can add different labels to her static address before sharing them
+To better understand this, consider a contractor Alice who adds different labels to her static address before sharing them
 - with a certain client
 - her social media and
 - her website
 
-When she receives payments from any of these sources, the respective label will be detected by the wallet application in the on-chain address to infer the source of the payment as this client.
+When she receives payments from any of these sources, the respective label(s) will be detected in the on-chain address and used to infer the source of the payment.
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/silent-payments/how-silent-payment-labels-work.png"
@@ -218,12 +218,12 @@ When she receives payments from any of these sources, the respective label will 
    layout = "full-width"
 %}
 
-This scheme improves label-related features since any labels added to a static address get auto-applied to all derived on-chain addresses (detectable only by the receiver), eliminating the friction in manually adding labels to addresses or transactions. This not only makes payment tracking possible, but also proves useful during automatic or manual coin selection.
+This scheme improves labelling in general since these labels get auto-applied to all derived on-chain addresses. This eliminates the friction of manually adding labels to addresses or transactions while providing crucial information useful for automatic or manual coin selection.
 
-These label detection features can also be useful for:
+Labels in silent payments can also be used in other ways:
 
-- Invoices: merchant software like BTCPay can use labels to match incoming payments with invoices. This is required because on-chain addresses themselves cannot be pre-generated or mapped with invoices in advance
-- Static deposit addresses for exchanges: Users looking to deposit bitcoin at exchanges may get confused when they see changing deposit addresses. Exchanges can now share static addresses with users, keeping deposit addresses the same while allowing the exchange to map deposit transactions to users
+- Invoices: merchant software like BTCPay can use labels to match incoming payments with invoices. This is required because on-chain addresses themselves cannot be pre-generated or mapped with invoices in advance.
+- Static deposit addresses for exchanges: Users looking to sell/deposit bitcoin at exchanges may be confused/worried when they see changing deposit addresses. Exchanges can now share labelled static addresses with users so that deposit addresses look the same to them.
 
 
 ### Contacts
