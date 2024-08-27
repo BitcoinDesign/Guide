@@ -8,7 +8,7 @@ grand_parent: How it works
 permalink: /guide/how-it-works/ecash/fedimint/
 redirect_from:
  - /guide/ecash/fedimint
-image: https://bitcoin.design/assets/images/guide/how-it-works/ecash/ecash.jpg
+image: https://bitcoin.design/assets/images/guide/how-it-works/ecash/fedimint.jpg
 main_classes: -no-top-padding
 ---
 
@@ -16,20 +16,18 @@ main_classes: -no-top-padding
 
 Editor's notes
 
-Explains generally how multi-key schemes work.
+Explains generally how fedimint works
 
 Illustration sources
 
-https://www.figma.com/community/file/888680264445459448
-https://www.figma.com/community/file/995256542920917246/BDG---Private-key-management-illustrations
 
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/how-it-works/ecash/ecash.jpg"
-   retina = "/assets/images/guide/how-it-works/ecash/ecash@2x.jpg"
-   mobile = "/assets/images/guide/how-it-works/ecash/ecash-mobile.jpg"
-   mobileRetina = "/assets/images/guide/how-it-works/ecash/ecash-mobile@2x.jpg"
+   image = "/assets/images/guide/how-it-works/ecash/fedimint.jpg"
+   retina = "/assets/images/guide/how-it-works/ecash/fedimint@2x.jpg"
+   mobile = "/assets/images/guide/how-it-works/ecash/fedimint-mobile.jpg"
+   mobileRetina = "/assets/images/guide/how-it-works/ecash/fedimint-mobile@2x.jpg"
    alt-text = "ecash overview illustration"
    width = 1600
    height = 700

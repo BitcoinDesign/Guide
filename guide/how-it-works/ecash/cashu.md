@@ -8,7 +8,7 @@ grand_parent: How it works
 permalink: /guide/how-it-works/ecash/cashu/
 redirect_from:
  - /guide/ecash/cashu
-image: https://bitcoin.design/assets/images/guide/how-it-works/ecash/ecash.jpg
+image: https://bitcoin.design/assets/images/guide/how-it-works/ecash/cashu.jpg
 main_classes: -no-top-padding
 image_base: /assets/images/guide/how-it-works/ecash/
 images_backup:
@@ -60,10 +60,10 @@ TBD
 -->
 
 {% include picture.html
-   image = "/assets/images/guide/how-it-works/ecash/ecash.jpg"
-   retina = "/assets/images/guide/how-it-works/ecash/ecash@2x.jpg"
-   mobile = "/assets/images/guide/how-it-works/ecash/ecash-mobile.jpg"
-   mobileRetina = "/assets/images/guide/how-it-works/ecash/ecash-mobile@2x.jpg"
+   image = "/assets/images/guide/how-it-works/ecash/cashu.jpg"
+   retina = "/assets/images/guide/how-it-works/ecash/cashu@2x.jpg"
+   mobile = "/assets/images/guide/how-it-works/ecash/cashu-mobile.jpg"
+   mobileRetina = "/assets/images/guide/how-it-works/ecash/cashu-mobile@2x.jpg"
    alt-text = "ecash overview illustration"
    width = 1600
    height = 700
