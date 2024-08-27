@@ -9,7 +9,7 @@ permalink: /guide/how-it-works/ecash/design-best-practices
 redirect_from:
  - /guide/how-it-works/ecash/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/how-it-works/ecash/best-practices.jpg
+image: https://bitcoin.design/assets/images/guide/how-it-works/ecash/best-practicies.jpg
 image_base: /assets/images/guide/how-it-works/ecash/
 images_backup:
     - file: manual-backup-recovery-phrase-intro
@@ -123,11 +123,11 @@ images_p2pk:
 ---
 
 {% include picture.html
-   image = "/assets/images/guide/how-it-works/ecash/best-practices.jpg"
-   retina = "/assets/images/guide/how-it-works/ecash/best-practices@2x.jpg"
-   mobile = "/assets/images/guide/how-it-works/ecash/best-practices-mobile.jpg"
-   mobileRetina = "/assets/images/guide/how-it-works/ecash/best-practices-mobile@2x.jpg"
-   alt-text = "ecash overview illustration"
+   image = "/assets/images/guide/how-it-works/ecash/best-practicies.jpg"
+   retina = "/assets/images/guide/how-it-works/ecash/best-practicies@2x.jpg"
+   mobile = "/assets/images/guide/how-it-works/ecash/best-practicies-mobile.jpg"
+   mobileRetina = "/assets/images/guide/how-it-works/ecash/best-practicies-mobile@2x.jpg"
+   alt-text = "ecash best practices illustration"
    width = 1600
    height = 700
    layout = "full-width"
