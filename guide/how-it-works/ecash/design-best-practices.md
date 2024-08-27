@@ -42,6 +42,10 @@ images_restore:
       modalImage: restore-mints@2x
       alt: TBD
       caption: TBD
+    - file: restore-mint-info-add
+      modalImage: restore-mint-info-add@2x
+      alt: TBD
+      caption: TBD
     - file: restore-mint-info
       modalImage: restore-mint-info@2x
       alt: TBD
