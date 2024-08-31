@@ -76,6 +76,22 @@ Cashu is an ecash protocol on that interoperates with the Lightning Network. Unl
 ## Design best practices
 To learn more about Cashu specific design best practices you can check out the [Design best practices]({{ '/guide/how-it-works/ecash/design-best-practices' | relative_url }}) section.
 
+## Cashu Mints
+
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/ecash/cashumint@1x.jpg"
+   retina = "/assets/images/guide/how-it-works/ecash/cashumint@2x.jpg"
+   mobile = "/assets/images/guide/how-it-works/ecash/cashumint-mobile@2x.jpg"
+   mobileRetina = "/assets/images/guide/how-it-works/ecash/cashumint-mobile@2x.jpg"
+   alt-text = "An illustration of how users, ecash, and a Cashu mint interact."
+   caption = "How a Cashu mint interacts with users."
+   width = 800
+   height = 456
+   layout = "full-width"
+%}
+
+A Cashu mint operates simply and centrally. One entity (the mint) handles the entire process: issuing bitcoin backed ecash tokens when users deposit bitcoin and redeeming them when users request withdrawals. This centralized model enables fast transactions but requires trust in the mint’s integrity and security. Cashu’s design prioritizes simplicity and speed, relying on a single mint to manage all operations.
+
 ## When to Use Cashu
 
 * **Rapid Deployment and Simple Integration** - Great for projects that need to be launched quickly with minimal setup. This includes MVPs, prototypes, and community-based applications where speed and ease of deployment are crucial.

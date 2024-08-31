@@ -134,6 +134,16 @@ images_guardian-status:
       modalImage: federation-guardian-bad@2x
       alt: TBD
       caption: TBD
+
+images_guardian-expiry:
+    - file: federation-guardian-expiry
+      modalImage: federation-guardian-expiry@2x
+      alt: TBD
+      caption: Federation expiration timestamp displayed as a countdown alter when less 30 days remaining.
+    - file: federation-guardian-expiry-join
+      modalImage: federation-guardian-expiry-join@2x
+      alt: TBD
+      caption: Federation expiration timestamp displayed as a data field when more than 30 days remain or the user hasn't yet joined the federation.
 ---
 
 {% include picture.html
@@ -233,7 +243,7 @@ Verifying tokens after restoration might temporarily compromise their privacy. T
 
 {% include tip/close.html %}
 
-### Designing with NUT06 metadata fields
+### Cashu metadata fields: explanation and usage
 
 [NUT06](https://github.com/cashubtc/nuts/blob/main/06.md) provides a standardized way to display important metadata fields for Cashu mints. Incorporating these metadata fields can make applications more transparent and informative. Here's a breakdown of each field and how it can be used in wallet design:
 
@@ -357,25 +367,6 @@ By effectively incorporating these Cashu metadata fields, you can create a more 
 
 It's important to provide users with the ability to manually update or refresh mint settings in their wallets. While best practices suggest that wallets should auto-refresh and update mint settings periodically, there may be cases where this isn't supported, or a mint undergoes significant updates, such as a URL change. By allowing users to edit the mint URL or refresh settings manually, you ensure that they can always connect to the latest mint configurations, maintaining a smooth and secure user experience.
 
-### Descriptive Feature display
-
-<div class="center" markdown="1">
-
-{% include picture.html
-   image = "/assets/images/guide/how-it-works/ecash/cashu-mint-features.png"
-   retina = "/assets/images/guide/how-it-works/ecash/cashu-mint-features@2x.png"
-   modalImage = "/assets/images/guide/how-it-works/ecash/cashu-mint-features@2x.png"
-   alt-text = "An mint detail screen where supported features are displayed"
-   caption = "Mint details screen with supported NUTS displayed as features."
-   width = 250
-   height = 541
-   layout = "float-right-desktop -background -shadow"
-%}
-
-When displaying [NUTs](https://github.com/cashubtc/nuts) (Notation, Usage, and Terminology) that a mint supports, avoid simply listing NUT01, NUT02, etc. Instead, provide users with clear descriptions of what each NUT does. This approach helps users understand the features and capabilities of the mint at a glance. Since NUTs 01-06 are mandatory for Cashu protocol interoperability, focus on optional NUTs that add unique functionality. Use the descriptions provided in the official documentation to keep the information accurate.
-
-</div>
-
 ### Pay to public key (P2PK)
 
 {% include image-gallery.html pages = page.images_p2pk %}
@@ -404,6 +395,12 @@ Use a prominent, color-coded indicator to show the overall status of the federat
 
 </div>
 
+{% include tip/open.html color="red" icon="forbid" label="Don't: Show Guardian Lists for Federations User Hasen't Joined." %}
+
+This protects user and federation privacy, especially for invite-only mints. Only show guardian information to federation members to maintain security and trust.
+
+{% include tip/close.html %}
+
 ### Guardian status indicators
 {% include image-gallery.html pages = page.images_guardian-status %}
 
@@ -411,141 +408,67 @@ Display clear, real-time indicators of each guardian's status, such as whether t
 
 ### Federation metadata fields: explanation and usage
 
-#### Federation Overview and Visual Identity
+Fedimint federations can provide additional configuration and metadata to clients. These metadata fields are consensus-relevant, meaning they must be consistent across all federation members. This ensures that clients can rely on their accuracy. Let's explore the core metadata fields defined in the Fedimint protocol:
+
+#### Federation Overview and Expiry
+
+<div class="center" markdown="1">
+
+{% include image-gallery.html pages = page.images_guardian-expiry %}
+
+- `federation_name`: This field provides the human-readable name of the federation. It should be displayed prominently in the federation overview to help users quickly identify which federation they are interacting with.
+
+- `federation_expiry_timestamp`: This field contains a timestamp indicating when the federation will shut down. It's crucial to display this information clearly to users, possibly with a countdown or warning as the expiry date approaches.
+
+</div>
+
+#### User Onboarding and Information
 
 <div class="center" markdown="1">
 
 {% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/settings/help.png"
-   retina = "/assets/images/guide/daily-spending-wallet/settings/help@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/settings/help-big.png"
-   alt-text = ""
+   image = "/assets/images/guide/how-it-works/ecash/federation-welcome.png"
+   retina = "/assets/images/guide/how-it-works/ecash/federation-welcome@2x.png"
+   modalImage = "/assets/images/guide/how-it-works/ecash/federation-welcome@2x.png"
+   alt-text = "Federation welcome message display in a wallet interface."
    width = 250
-   height = 541
+   height = 321
    layout = "float-right-desktop -background -shadow"
-   caption = "Example of federation overview and visual identity display in a wallet interface."
+   caption = "Example of a user encountering the welcome message during the onboarding process after joining a federation for the first time."
 %}
 
-- `fedi:federation_icon_url`: This field provides the URL to an image file (JPG or PNG) that serves as the federation's icon. The icon is displayed prominently on the federation status page, helping users quickly identify the federation they are connected to.
-
-- `fedi:meta_external_url`: This optional field links to an external file containing overrides for metadata fields. Although this feature may be deprecated in the future, it currently allows federations to provide additional or updated metadata that can be dynamically loaded by the Fedi app.
+- `welcome_message`: This field contains a welcome message for new users joining the federation. It could be displayed during the onboarding process to provide users with important information or instructions.
 
 </div>
 
-#### User Access and Onboarding
+#### Gateway Information
 
-<div class="center" markdown="1">
+- `vetted_gateways`: This field contains a list of gateway identifiers that have been vetted by the federation. This information should be used to display trusted gateways to users, helping them make informed decisions about which gateways to use for transactions.
 
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/settings/help.png"
-   retina = "/assets/images/guide/daily-spending-wallet/settings/help@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/settings/help-big.png"
-   alt-text = ""
-   width = 250
-   height = 541
-   layout = "float-right-desktop -background -shadow"
-   caption = "Example of user access and onboarding display in a wallet interface."
-%}
+##### What is a gateway?
+A "gateway" in the context of Fedimint refers to a service that facilitates interactions between the federation (which operates largely off-chain) and the broader Lightning Network. A gateway acts as a bridge, enabling users within the federation to make payments to and receive payments on the Lightning Network.
 
-- `fedi:tos_url`: The URL provided here points to the federation's Terms of Service. Users are prompted to review this document before joining the federation, ensuring they are aware of the rules and policies governing their participation.
+##### How do gateways work
+**Role of a Gateway**: The gateway accepts Bitcoin payments on the Lightning Network and converts them into the bitcoin backed ecash tokens used within the federation. Conversely, it can also convert bitcoin backed ecash tokens into bitcoin and send them over the Lightning Network. This is crucial because it allows the users within a federation to interact with the outside bitcoin and Lightning economy.
 
-- `fedi:invite_codes_disabled`: A boolean value that, when set to true, blocks access to the federation via invite codes. If invite codes are disabled, users must be invited through other means or may be unable to join if other membership methods are not provided.
+**Vetted Gateways**: A vetted gateway is one that has been approved by the federation's guardians as reliable and trustworthy. This vetting process helps to ensure that users' transactions are handled by gateways that have a track record of reliability, reducing the likelihood of payment failures.
 
-- `fedi:new_members_disabled`: This boolean value determines whether new members can join the federation. If set to true, new membership is closed, and the "Join Federation" option will be disabled for potential new users.
+#### Why showing gateway information might not be necessary:
 
-</div>
+1. **User Overload**: Most users are not interested in the technical details of how their transactions are processed. Presenting information about gateways, especially vetted versus non-vetted ones, could lead to confusion, as users may not understand what this information means or how to act on it.
+2. **Trust in the System**: In well-designed systems, users trust that the service has selected the best pathways for their transactions. By not overwhelming users with technical details, the system can reinforce that trust—users believe that the backend will manage their transaction securely and efficiently without their intervention.
+3. **Streamlined Experience**: The goal of good UX is to make the user experience as seamless and intuitive as possible. Introducing gateway information may disrupt this flow by adding unnecessary steps or considerations that the average user doesn't need to think about.
 
-#### Feature Availability
+#### Additional Metadata
 
-<div class="center" markdown="1">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/settings/help.png"
-   retina = "/assets/images/guide/daily-spending-wallet/settings/help@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/settings/help-big.png"
-   alt-text = ""
-   width = 250
-   height = 541
-   layout = "float-right-desktop -background -shadow"
-   caption = "Example of feature availability display in a wallet interface."
-%}
-
-- `fedi:social_recovery_disabled`: This field disables the social backup and recovery features when set to true. Social recovery is typically used to help users regain access to their accounts, so disabling this feature might require users to rely solely on other recovery methods.
-
-- `fedi:offline_wallet_disabled`: When this boolean is set to true, it disables the offline e-cash generation features within the federation. This means users cannot generate e-cash for offline use, which might limit the flexibility of transactions in certain scenarios.
-
-- `fedi:onchain_deposits_disabled`: This field, when true, disables the ability to make on-chain deposits into the federation. Users will need to use alternative methods for adding funds if on-chain deposits are not supported.
-
-</div>
-
-#### Transaction and Balance Limits
-
-<div class="center" markdown="1">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/settings/help.png"
-   retina = "/assets/images/guide/daily-spending-wallet/settings/help@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/settings/help-big.png"
-   alt-text = ""
-   width = 250
-   height = 541
-   layout = "float-right-desktop -background -shadow"
-   caption = "Example of transaction and balance limits display in a wallet interface."
-%}
-
-- `fedi:max_invoice_msats`: This numeric field specifies the maximum amount, in millisatoshis, that a user can include in an invoice. It sets a cap on the size of individual transactions, helping manage liquidity within the federation.
-
-- `fedi:max_balance_msats`: This field sets a maximum balance limit for users, also in millisatoshis. If a user's balance exceeds this amount, they will be prevented from holding more funds in the federation, encouraging them to spend or withdraw excess amounts.
-
-</div>
-
-#### Default Settings and User Experience
-
-<div class="center" markdown="1">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/settings/help.png"
-   retina = "/assets/images/guide/daily-spending-wallet/settings/help@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/settings/help-big.png"
-   alt-text = ""
-   width = 250
-   height = 541
-   layout = "float-right-desktop -background -shadow"
-   caption = "Example of default settings and user experience display in a wallet interface."
-%}
-
-- `fedi:fedimods`: This field contains a stringified JSON array of objects representing the default FediMods (federation modules) that are available to users upon joining. FediMods customize the functionality and features available within the federation, enhancing the user experience based on the federation's specific goals.
-
-- `fedi:default_group_chats`: Another stringified JSON array, this field lists the IDs of group chats that all users will automatically join when they create their username in the federation. This feature fosters community engagement by immediately connecting new users to relevant discussion groups.
-
-</div>
-
-#### Time-Sensitive Access
-
-<div class="center" markdown="1">
-
-{% include picture.html
-   image = "/assets/images/guide/daily-spending-wallet/settings/help.png"
-   retina = "/assets/images/guide/daily-spending-wallet/settings/help@2x.png"
-   modalImage = "/assets/images/guide/daily-spending-wallet/settings/help-big.png"
-   alt-text = ""
-   width = 250
-   height = 541
-   layout = "float-right-desktop -background -shadow"
-   caption = "Example of time-sensitive access display in a wallet interface."
-%}
-
-- `fedi:popup_end_timestamp`: A Unix timestamp that specifies when access to the federation will be disabled. After this timestamp, the Fedi app will prevent users from interacting with the federation, which can be useful for time-limited events or transitioning users to a new federation.
-```
-</div>
+- `meta_override_url`: This field provides a URL to a file containing overrides for meta fields. While this feature will be deprecated in the future, it currently allows federations to provide additional or updated metadata that can be dynamically loaded by client applications.
 
 #### Organizing Fedimint metadata fields
+
 When designing your Fedimint wallet interface, consider organizing these metadata fields in a logical, user-friendly manner to help users understand and interact with the federation. Here are some suggestions:
 
-1. Use the `fedi:federation_icon_url` prominently in the federation overview for quick visual identification.
-2. Create a detailed federation information page incorporating `fedi:tos_url`, membership status (`fedi:new_members_disabled`, `fedi:invite_codes_disabled`), and feature availability.
-3. Display important limits like `fedi:max_invoice_msats` and `fedi:max_balance_msats` in relevant transaction screens.
-4. Use `fedi:fedimods` information to create a features list that helps users understand the federation's capabilities.
-5. Implement time-sensitive notifications based on `fedi:popup_end_timestamp` to keep users informed about access changes.
+1. Display the `federation_name` prominently in the federation overview for quick identification.
+2. Create a detailed federation information page incorporating the `welcome_message` and `federation_expiry_timestamp`, ensuring users are aware of important information and any time limitations.
+3. Implement notifications or warnings based on the `federation_expiry_timestamp` to keep users informed about the federation's lifespan.
 
-By effectively incorporating these Fedimint metadata fields, you can create a more transparent and informative experience for users, helping them understand the federation's structure, rules, and capabilities. This approach is crucial for Fedimint, as users interact with a collective entity rather than individual mints like in Cashu.
+By effectively incorporating these Fedimint metadata fields, you can create a more transparent and informative experience for users, helping them understand the federation's structure, rules, and trusted entities. This approach is crucial for Fedimint, as users interact with a collective entity rather than individual mints.
