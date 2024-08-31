@@ -120,6 +120,20 @@ images_p2pk:
       modalImage: share-ecash@2x
       alt: TBD
       caption: TBD
+
+images_guardian-status:
+    - file: federation-guardian-good
+      modalImage: federation-guardian-good@2x
+      alt: TBD
+      caption: TBD
+    - file: federation-guardian-ok
+      modalImage: federation-guardian-ok@2x
+      alt: TBD
+      caption: TBD
+    - file: federation-guardian-bad
+      modalImage: federation-guardian-bad@2x
+      alt: TBD
+      caption: TBD
 ---
 
 {% include picture.html
@@ -156,7 +170,7 @@ ADD Figma URL
 
 ---
 ## General ecash best practices
-When designing bitcoin backed ecash applications it’s important to prioritize clear and intuitive interfaces that allow users to easily manage their tokens, whether they are minting, sending, or redeeming them.
+When designing bitcoin backed ecash applications it's important to prioritize clear and intuitive interfaces that allow users to easily manage their tokens, whether they are minting, sending, or redeeming them.
 
 ### Multiple mint or federation display
 {% include image-gallery.html pages = page.images_mint-list %}
@@ -172,7 +186,7 @@ When displaying multiple mints in a Bitcoin-backed ecash application, there are 
 #### Pending tokens
 {% include image-gallery.html pages = page.images_pending %}
 
-It’s useful to display generated tokens in the transaction history along with their status—whether pending or redeemed. This helps users quickly assess their transaction status and builds confidence in your application. Providing the ability to expand on a token to view details and take actions like resending or redeeming is also important. This feature becomes particularly valuable if a token was lost or never claimed.
+It's useful to display generated tokens in the transaction history along with their status—whether pending or redeemed. This helps users quickly assess their transaction status and builds confidence in your application. Providing the ability to expand on a token to view details and take actions like resending or redeeming is also important. This feature becomes particularly valuable if a token was lost or never claimed.
 
 ## Cashu best practices
 A paragraph introduction to cashu specific best practices.
@@ -220,28 +234,128 @@ Verifying tokens after restoration might temporarily compromise their privacy. T
 {% include tip/close.html %}
 
 ### Designing with NUT06 metadata fields
-[NUT06](https://github.com/cashubtc/nuts/blob/main/06.md) provides a standardized way to display important metadata fields for mints. Incorporating these metadata fields such as mint name, URL, and other relevant information, can make applicaitons more transparent and informative. Mint metadata allows users to quickly verify the authenticity and trustworthiness of mints, fostering confidence and ease of use. Consider how to visually integrate these fields through clear, accessible mint profiles or summary cards, ensuring users can easily access and understand this crucial information.
 
-<br>
+[NUT06](https://github.com/cashubtc/nuts/blob/main/06.md) provides a standardized way to display important metadata fields for Cashu mints. Incorporating these metadata fields can make applications more transparent and informative. Here's a breakdown of each field and how it can be used in wallet design:
+
+#### Mint Identity and Version
 
 <div class="center" markdown="1">
 
 {% include picture.html
-   image = "/assets/images/guide/how-it-works/ecash/nip-06.png"
-   retina = "/assets/images/guide/how-it-works/ecash/nip-06@2x.png"
-   modalImage = "/assets/images/guide/how-it-works/ecash/nip-06@2x.png"
-   alt-text = ""
-   layout = "-background -shadow"
-   caption = "Example of how metadata specified in NUT06 can be displayed in a wallet interface."
+   image = "/assets/images/guide/how-it-works/ecash/cashu-id1.png"
+   retina = "/assets/images/guide/how-it-works/ecash/cashu-id1@2x.png"
+   modalImage = "/assets/images/guide/how-it-works/ecash/cashu-id1@2x.png"
+   alt-text = "Mint identity and version display in a wallet interface"
+   width = 250
+   height = 400
+   layout = "float-right-desktop -background -shadow"
+   caption = "Example of mint identity and version display in a wallet interface."
 %}
 
+- `name`: The recognizable name of the mint. Display this prominently in mint listings and details pages to help users quickly identify different mints.
+- `pubkey`: The hex public key of the mint. While this may not be directly displayed to users, it's crucial for security verification. Consider showing a shortened version or QR code for advanced users.
+- `version`: Shows the implementation name and software version of the mint. Display this in the mint details to inform users about the mint's current software status.
+
 </div>
+
+#### Mint Descriptions
+
+<div class="center" markdown="1">
+
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/ecash/cashu-id2.png"
+   retina = "/assets/images/guide/how-it-works/ecash/cashu-id2@2x.png"
+   modalImage = "/assets/images/guide/how-it-works/ecash/cashu-id2@2x.png"
+   alt-text = "Mint descriptions display in a wallet interface"
+   width = 250
+   height = 338
+   layout = "float-right-desktop -background -shadow"
+   caption = "Example of mint descriptions display in a wallet interface."
+%}
+
+- `description`: A short description of the mint. Use this in mint listings or as a subtitle under the mint name to give users a quick overview.
+- `description_long`: A more detailed description. This can be displayed on a dedicated mint information page or in an expandable section for users who want more details.
+
+</div>
+
+#### Contact Information
+
+<div class="center" markdown="1">
+
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/ecash/cashu-id3.png"
+   retina = "/assets/images/guide/how-it-works/ecash/cashu-id3@2x.png"
+   modalImage = "/assets/images/guide/how-it-works/ecash/cashu-id3@2x.png"
+   alt-text = ""
+   width = 250
+   height = 541
+   layout = "float-right-desktop -background -shadow"
+   caption = "Example of contact information display in a wallet interface."
+%}
+
+- `contact`: An array of contact methods for the mint operator. Design a clear contact section in the mint details, using appropriate icons for each contact method (e.g., email icon, website icon) to make it easy for users to reach out if needed.
+
+</div>
+
+#### Important Announcements
+
+<div class="center" markdown="1">
+
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/ecash/cashu-id4.png"
+   retina = "/assets/images/guide/how-it-works/ecash/cashu-id4@2x.png"
+   modalImage = "/assets/images/guide/how-it-works/ecash/cashu-id4@2x.png"
+   alt-text = "Example of important announcements display in a wallet interface"
+   width = 250
+   height = 390
+   layout = "float-right-desktop -background -shadow"
+   caption = "Example of important announcements display in a wallet interface."
+%}
+
+- `motd` (Message of the Day): Used for important announcements. Design a prominent, dismissible notification area to display this message when users interact with the mint, ensuring they don't miss critical updates.
+
+</div>
+
+#### Supported Features
+
+<div class="center" markdown="1">
+
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/ecash/cashu-id5.png"
+   retina = "/assets/images/guide/how-it-works/ecash/cashu-id5@2x.png"
+   modalImage = "/assets/images/guide/how-it-works/ecash/cashu-id5@2x.png"
+   alt-text = "Example of important announcements display in a wallet interface"
+   width = 250
+   height = 390
+   layout = "float-right-desktop -background -shadow"
+   caption = "Example of supported features display in a wallet interface."
+%}
+
+- `nuts`: Indicates which NUT specifications the mint supports and their settings. Create a "Features" or "Capabilities" section in the mint details, translating technical NUT numbers into user-friendly feature descriptions.
+
+</div>
+
+{% include tip/open.html color="green" icon="check" label="Avoid Jargon & NUTs 01-06" %}
+
+When displaying [NUTs](https://github.com/cashubtc/nuts) (Notation, Usage, and Terminology) that a mint supports, avoid simply listing NUT01, NUT02, etc. Instead, provide users with clear descriptions of what each NUT does. This approach helps users understand the features and capabilities of the mint at a glance. Since NUTs 01-06 are mandatory for Cashu protocol interoperability, focus on optional NUTs that add unique functionality. Use the descriptions provided in the official documentation to keep the information accurate.
+
+{% include tip/close.html %}
+
+#### Organizing Cashu metadata fields
+When designing your Cashu wallet interface, consider organizing these metadata fields in a logical, user-friendly manner to help users understand and interact with different mints. Here are some suggestions:
+
+1. Use the `name` and short `description` in mint listings for quick identification of Cashu mints.
+2. Create a detailed Cashu mint information page using `description_long`, `version`, and `contact` details.
+3. Display the `motd` as a prominent notification when relevant to the specific Cashu mint.
+4. Use the `nuts` information to create a features list that helps users understand each Cashu mint's capabilities.
+
+By effectively incorporating these Cashu metadata fields, you can create a more transparent and informative experience for users, helping them make informed decisions about which Cashu mints to trust and use. This approach is particularly important for Cashu, as users interact directly with individual mints rather than a federation structure like in Fedimint.
 
 ### Edit mint URL & refresh mint settings
 
 {% include image-gallery.html pages = page.images_mint-url-edit %}
 
-It’s important to provide users with the ability to manually update or refresh mint settings in their wallets. While best practices suggest that wallets should auto-refresh and update mint settings periodically, there may be cases where this isn’t supported, or a mint undergoes significant updates, such as a URL change. By allowing users to edit the mint URL or refresh settings manually, you ensure that they can always connect to the latest mint configurations, maintaining a smooth and secure user experience.
+It's important to provide users with the ability to manually update or refresh mint settings in their wallets. While best practices suggest that wallets should auto-refresh and update mint settings periodically, there may be cases where this isn't supported, or a mint undergoes significant updates, such as a URL change. By allowing users to edit the mint URL or refresh settings manually, you ensure that they can always connect to the latest mint configurations, maintaining a smooth and secure user experience.
 
 ### Descriptive Feature display
 
@@ -266,13 +380,38 @@ When displaying [NUTs](https://github.com/cashubtc/nuts) (Notation, Usage, and T
 
 {% include image-gallery.html pages = page.images_p2pk %}
 
-[NUT11](https://github.com/cashubtc/nuts/blob/main/11.md) is a powerful feature that allows bitcoin backed ecash tokens to be securely locked to another user’s public key, which is generated by the recipient’s wallet. This ensures that only the intended recipient can redeem the ecash, enhancing security. NUT11 enables secure offline payments, preventing double-spending. Beyond these basics, NUT11 supports advanced use cases like timelocks and multisignature (multisig) setups, where ecash can be conditionally spent or jointly owned by multiple parties. When designing make sure these functionalities are clearly communicated to users, highlighting their practical benefits and flexibility.
+[NUT11](https://github.com/cashubtc/nuts/blob/main/11.md) is a powerful feature that allows bitcoin backed ecash tokens to be securely locked to another user's public key, which is generated by the recipient's wallet. This ensures that only the intended recipient can redeem the ecash, enhancing security. NUT11 enables secure offline payments, preventing double-spending. Beyond these basics, NUT11 supports advanced use cases like timelocks and multisignature (multisig) setups, where ecash can be conditionally spent or jointly owned by multiple parties. When designing make sure these functionalities are clearly communicated to users, highlighting their practical benefits and flexibility.
 
 ## Fedimint design best practices
 Ecash general best design practices.
 
-### Guardian list display 
-Explain that the design practices below are specific to Fedimint.
+### Federation status display
+
+<div class="center" markdown="1">
+
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/ecash/federation-guardian-info"
+   retina = "/assets/images/guide/how-it-works/ecash/federation-guardian-info@2x.png"
+   modalImage = "/assets/images/guide/how-it-works/ecash/federation-guardian-info@2x.png"
+   alt-text = ""
+   width = 250
+   height = 541
+   layout = "float-right-desktop -background -shadow"
+   caption = "Example of a guardian status display in a wallet interface."
+%}
+
+Use a prominent, color-coded indicator to show the overall status of the federation. This should reflect whether the federation is fully operational, partially degraded, or offline, helping users quickly assess the health of the system.
+
+</div>
+
+### Guardian status indicators
+{% include image-gallery.html pages = page.images_guardian-status %}
+
+Display clear, real-time indicators of each guardian's status, such as whether they are online, their uptime percentage, and their operational health. This information builds trust by keeping users informed about the reliability and performance of the guardians managing their funds.
+
+### Federation metadata fields: explanation and usage
+
+#### Federation Overview and Visual Identity
 
 <div class="center" markdown="1">
 
@@ -284,6 +423,129 @@ Explain that the design practices below are specific to Fedimint.
    width = 250
    height = 541
    layout = "float-right-desktop -background -shadow"
-   caption = "Help & support options ensure users can get the right information when they need it."
+   caption = "Example of federation overview and visual identity display in a wallet interface."
 %}
+
+- `fedi:federation_icon_url`: This field provides the URL to an image file (JPG or PNG) that serves as the federation's icon. The icon is displayed prominently on the federation status page, helping users quickly identify the federation they are connected to.
+
+- `fedi:meta_external_url`: This optional field links to an external file containing overrides for metadata fields. Although this feature may be deprecated in the future, it currently allows federations to provide additional or updated metadata that can be dynamically loaded by the Fedi app.
+
 </div>
+
+#### User Access and Onboarding
+
+<div class="center" markdown="1">
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/settings/help.png"
+   retina = "/assets/images/guide/daily-spending-wallet/settings/help@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/settings/help-big.png"
+   alt-text = ""
+   width = 250
+   height = 541
+   layout = "float-right-desktop -background -shadow"
+   caption = "Example of user access and onboarding display in a wallet interface."
+%}
+
+- `fedi:tos_url`: The URL provided here points to the federation's Terms of Service. Users are prompted to review this document before joining the federation, ensuring they are aware of the rules and policies governing their participation.
+
+- `fedi:invite_codes_disabled`: A boolean value that, when set to true, blocks access to the federation via invite codes. If invite codes are disabled, users must be invited through other means or may be unable to join if other membership methods are not provided.
+
+- `fedi:new_members_disabled`: This boolean value determines whether new members can join the federation. If set to true, new membership is closed, and the "Join Federation" option will be disabled for potential new users.
+
+</div>
+
+#### Feature Availability
+
+<div class="center" markdown="1">
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/settings/help.png"
+   retina = "/assets/images/guide/daily-spending-wallet/settings/help@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/settings/help-big.png"
+   alt-text = ""
+   width = 250
+   height = 541
+   layout = "float-right-desktop -background -shadow"
+   caption = "Example of feature availability display in a wallet interface."
+%}
+
+- `fedi:social_recovery_disabled`: This field disables the social backup and recovery features when set to true. Social recovery is typically used to help users regain access to their accounts, so disabling this feature might require users to rely solely on other recovery methods.
+
+- `fedi:offline_wallet_disabled`: When this boolean is set to true, it disables the offline e-cash generation features within the federation. This means users cannot generate e-cash for offline use, which might limit the flexibility of transactions in certain scenarios.
+
+- `fedi:onchain_deposits_disabled`: This field, when true, disables the ability to make on-chain deposits into the federation. Users will need to use alternative methods for adding funds if on-chain deposits are not supported.
+
+</div>
+
+#### Transaction and Balance Limits
+
+<div class="center" markdown="1">
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/settings/help.png"
+   retina = "/assets/images/guide/daily-spending-wallet/settings/help@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/settings/help-big.png"
+   alt-text = ""
+   width = 250
+   height = 541
+   layout = "float-right-desktop -background -shadow"
+   caption = "Example of transaction and balance limits display in a wallet interface."
+%}
+
+- `fedi:max_invoice_msats`: This numeric field specifies the maximum amount, in millisatoshis, that a user can include in an invoice. It sets a cap on the size of individual transactions, helping manage liquidity within the federation.
+
+- `fedi:max_balance_msats`: This field sets a maximum balance limit for users, also in millisatoshis. If a user's balance exceeds this amount, they will be prevented from holding more funds in the federation, encouraging them to spend or withdraw excess amounts.
+
+</div>
+
+#### Default Settings and User Experience
+
+<div class="center" markdown="1">
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/settings/help.png"
+   retina = "/assets/images/guide/daily-spending-wallet/settings/help@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/settings/help-big.png"
+   alt-text = ""
+   width = 250
+   height = 541
+   layout = "float-right-desktop -background -shadow"
+   caption = "Example of default settings and user experience display in a wallet interface."
+%}
+
+- `fedi:fedimods`: This field contains a stringified JSON array of objects representing the default FediMods (federation modules) that are available to users upon joining. FediMods customize the functionality and features available within the federation, enhancing the user experience based on the federation's specific goals.
+
+- `fedi:default_group_chats`: Another stringified JSON array, this field lists the IDs of group chats that all users will automatically join when they create their username in the federation. This feature fosters community engagement by immediately connecting new users to relevant discussion groups.
+
+</div>
+
+#### Time-Sensitive Access
+
+<div class="center" markdown="1">
+
+{% include picture.html
+   image = "/assets/images/guide/daily-spending-wallet/settings/help.png"
+   retina = "/assets/images/guide/daily-spending-wallet/settings/help@2x.png"
+   modalImage = "/assets/images/guide/daily-spending-wallet/settings/help-big.png"
+   alt-text = ""
+   width = 250
+   height = 541
+   layout = "float-right-desktop -background -shadow"
+   caption = "Example of time-sensitive access display in a wallet interface."
+%}
+
+- `fedi:popup_end_timestamp`: A Unix timestamp that specifies when access to the federation will be disabled. After this timestamp, the Fedi app will prevent users from interacting with the federation, which can be useful for time-limited events or transitioning users to a new federation.
+```
+</div>
+
+#### Organizing Fedimint metadata fields
+When designing your Fedimint wallet interface, consider organizing these metadata fields in a logical, user-friendly manner to help users understand and interact with the federation. Here are some suggestions:
+
+1. Use the `fedi:federation_icon_url` prominently in the federation overview for quick visual identification.
+2. Create a detailed federation information page incorporating `fedi:tos_url`, membership status (`fedi:new_members_disabled`, `fedi:invite_codes_disabled`), and feature availability.
+3. Display important limits like `fedi:max_invoice_msats` and `fedi:max_balance_msats` in relevant transaction screens.
+4. Use `fedi:fedimods` information to create a features list that helps users understand the federation's capabilities.
+5. Implement time-sensitive notifications based on `fedi:popup_end_timestamp` to keep users informed about access changes.
+
+By effectively incorporating these Fedimint metadata fields, you can create a more transparent and informative experience for users, helping them understand the federation's structure, rules, and capabilities. This approach is crucial for Fedimint, as users interact with a collective entity rather than individual mints like in Cashu.
