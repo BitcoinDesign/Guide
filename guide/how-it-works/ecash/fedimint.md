@@ -35,7 +35,7 @@ Illustration sources
 %}
 
 # Fedimint
-Fedimint is the first bitcoin backed ecash protocol. Fedimint decentralizes trust across a federation of guardians, ensuring that no single entity has complete control over user funds. Fedimint allows for various configurations, each catering to different needs and priorities. These configurations include Federated Mints, Federated Single Guardian Mints, and Unfederated Mints, each with its strengths and trade-offs.
+Fedimint is the first bitcoin backed ecash protocol. Fedimint decentralizes trust across a federation of guardians, ensuring that no single entity has complete control over user funds. Fedimint allows for various Federation configurations, each catering to different needs. These configurations include **Federated Mints**, **Federated Single Guardian Mints**, and **Unfederated Mints**, each with its strengths and trade-offs.
 
 ## Design best practices
 To learn more about Fedimint specific design best practices you can check out the [Design best practices]({{ '/guide/how-it-works/ecash/design-best-practices' | relative_url }}) section.
@@ -57,17 +57,17 @@ To learn more about Fedimint specific design best practices you can check out th
    layout = "full-width"
 %}
 
-Federated Mints are the standard when it comes to security and resilience in the Fedimint ecosystem. Managed by four or more guardians, each running their own Fedimint server, this setup distributes control and minimizes risk.
+Federated Mints are the standard when it comes to security and resilience in the Fedimint protocol. Managed by four or more guardians, each running their own Fedimint server, this setup distributes control and minimizes risk.
 
 #### Pros:
 
-* **Security** - No single guardian can control the mint, drastically reducing the risk of theft or mismanagement.
+* **Security** - No single guardian can control the mint, reducing the risk of theft or mismanagement.
 
 * **High resilience** - The mint remains operational even if one or more guardians are temporarily offline, ensuring continuous access.
 
 #### Cons:
 
-* **Complex setup** - Coordinating multiple guardians adds steps and cost, but the payoff is worth it for those who prioritize security.
+* **Complex setup** - Coordinating multiple guardians adds steps and cost.
 
 
 ### Federated single guardian mints
@@ -76,7 +76,7 @@ Federated Mints are the standard when it comes to security and resilience in the
    image = "/assets/images/guide/how-it-works/ecash/single-mint@1x.jpg"
    retina = "/assets/images/guide/how-it-works/ecash/single-mint@2x.jpg"
    mobile = "/assets/images/guide/how-it-works/ecash/single-mintmobile@2x.jpg"
-   mobileRetina = "assets/images/guide/how-it-works/ecash/single-mintmobile@2x.jpg"
+   mobileRetina = "assets/images/guide/how-it-works/ecash/single-mint-mobile@2x.jpg"
    alt-text = "An illustration of how users, ecash, and a single guardian mint interact."
    caption = "How a guardian interacts with users of a single guardian mint."
    width = 800
@@ -84,17 +84,17 @@ Federated Mints are the standard when it comes to security and resilience in the
    layout = "full-width"
 %}
 
-This model offers a compromise between security and simplicity. A single guardian manages the mint but runs multiple servers, providing some level of resilience without the need for multiple independent guardians.
+This model offers a compromise between security and simplicity. A single guardian manages the mint but runs multiple servers, providing some level of resilience without the need for multiple guardians.
 
 #### Pros:
 
-* **Enhanced resilience** - Even if some servers fail, the mint stays operational, offering a good balance of security and simplicity.
+* **Enhanced Resilience** - Even if some servers fail, the mint remains operational, offering a good balance of security and simplicity.
 
-* **Simplified setup** - Easier to set up compared to a fully federated mint, making it accessible while still offering improved resilience over a solo setup.
+* **Simplified Setup** - Easier to set up compared to a fully federated mint, making it accessible while still offering improved resilience over a solo setup.
 
 #### Cons:
 
-* **Security trade-off** - With only one guardian, there’s still a single point of failure, making it less secure than a fully federated setup.
+* **Security Trade-off** - With only one guardian, there’s still a single point of failure, making it less secure than a fully federated setup.
 
 ### Unfederated Mints (Solo Mints)
 
@@ -120,10 +120,10 @@ Unfederated Mints are the simplest and most cost-effective option. Here, a singl
 
 #### Cons:
 
-* **High Risk** - With all control in the hands of one guardian, the risks of loss or theft are much higher. Additionally, if the server goes offline, users lose access to the mint until it’s restored.
+* **High Risk** - With all control in the hands of one guardian, the risks of loss or theft are much higher. Additionally, if the server goes offline, users lose access to the federation until it’s restored.
 
 ## When to Use Fedimint
-* **Federated Trust Models** - Use Fedimint when your application benefits from spreading trust across multiple entities, reducing reliance on any single operator and enhancing security.
+* **Federated Trust Models** - Use Fedimint when your application benefits from spreading trust across multiple entities.
 
 **Products that use Fedimint**
 - [Fedi](https://www.fedi.xyz)

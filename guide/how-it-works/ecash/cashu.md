@@ -55,8 +55,6 @@ Explains generally how Cashu works.
 
 Illustration sources
 
-TBD
-
 -->
 
 {% include picture.html
@@ -90,23 +88,28 @@ To learn more about Cashu specific design best practices you can check out the [
    layout = "full-width"
 %}
 
-A Cashu mint operates simply and centrally. One entity (the mint) handles the entire process: issuing bitcoin backed ecash tokens when users deposit bitcoin and redeeming them when users request withdrawals. This centralized model enables fast transactions but requires trust in the mint’s integrity and security. Cashu’s design prioritizes simplicity and speed, relying on a single mint to manage all operations.
+A Cashu mint operates simply and centrally. One entity (the mint) handles the entire process: issuing bitcoin backed ecash tokens when users deposit bitcoin and redeeming them when users request withdrawals. This centralized model enables fast transactions but requires trust in the mint’s integrity and security. Cashu’s design prioritizes simplicity and speed, relying on a single operator to manage all operations.
 
 ## When to Use Cashu
 
-* **Rapid Deployment and Simple Integration** - Great for projects that need to be launched quickly with minimal setup. This includes MVPs, prototypes, and community-based applications where speed and ease of deployment are crucial.
+* **Rapid Deployment and Simple Integration** - Great for projects that need to be launched quickly with minimal setup. This includes community-based applications where speed and ease of deployment are crucial.
 
-* **Quick Interoperability with the Lightning Network** - Ideal when you need to integrate with the Lightning Network for fast, low-fee transactions. Cashu supports seamless, out of the box integration with existing Lightning wallets and infrastructure.
+* **Quick Interoperability with the Lightning Network** - Ideal when you need to integrate with the Lightning Network for fast, low-fee transactions. Cashu supports seamless, out of the box integration with the Lightning Network.
 
-* **Localized or Small Community Solutions** - Implement Cashu in scenarios where independent mints operated by trusted local entities can serve a community, enhancing trust and customization based on local needs.
+* **Localized or Small Community Solutions** - In scenarios where independent mints operated by trusted local entities can serve a community, enhancing trust and customization based on local needs.
 
 ## Products that use Cashu
+- [Boardwalk Cash](https://boardwalkcash.com/)
 - [Cashu.me](https://wallet.cashu.me/)
 - [eNuts](https://www.enuts.cash/)
 - [Macadamia](https://macadamia.cash/)
-- [npub.cash](https://npub.cash/)
-- [Nutstash](https://nutstash.app/)
 - [Minibits](https://www.minibits.cash/)
+- [npub.cash](https://npub.cash/)
+- [Nutshell](https://github.com/cashubtc/nutshell)
+- [Nutstash](https://nutstash.app/)
+
+For a comprehensive list of products and services that use Cashu visit [Awesome Cashu](https://github.com/cashubtc/awesome-cashu).
+
 
 ## Cashu resources
 Cashu Documentation - Access the official Cashu documentation for detailed information on setup, usage, and integration.
