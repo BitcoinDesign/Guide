@@ -254,11 +254,11 @@ Keep a record of the mints you are connected to. During the restoration process,
 ### Restoration process
 {% include image-gallery.html pages = page.images_restore %}
 
-1. **Seed Phrase Entry**: When restoring a wallet, users enter their seed phrase into their wallet. This seed phrase regenerates all cryptographic keys associated with the user's account.
+1. **Seed Phrase Entry**: When restoring a wallet, users enter their seed phrase into their wallet. This seed phrase regenerates secrets that may have been used to mint ecash.
 
-2. **Mint(s) Entry**: Users must input the mint URL for each mint they used before. This ensures their wallet can properly reconnect and verify their tokens.
+2. **Mint(s) Entry**: Users must input the mint URL for each mint they used before. This ensures their wallet can properly reconnect and recreate their tokens.
 
-3. **Verification**: The mint(s) checks these proofs against its records to confirm that the bitcoin backed ecash tokens have not been previously spent and are still valid. This process relies on the signatures (proofs) that were initially generated when the tokens were minted.
+3. **Verification**: The mint(s) checks these blinded secrets against its records to confirm if it has been seen before and can reissue the signature.
 
 {% include tip/open.html color="blue" icon="info" label="Privacy Considerations During Verification" %}
 
