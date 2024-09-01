@@ -247,7 +247,7 @@ After successfully restoring your wallet using a recovery seed phrase, it is hig
 
 {% include tip/open.html color="blue" icon="info" label="Mint Information Needed" %}
 
-Keep a record of the mints you are connected to. During the restoration process, you will need to reconnect to these specific mints to re-verify your tokens. Without this information, you might not be able to fully restore your wallet or verify your tokens.
+Keep a record of the mints you are connected to. During the restoration process, you will need to reconnect to these specific mints to re-verify your tokens. Without this information, you will not be able to fully restore your wallet.
 
 {% include tip/close.html %}
 
