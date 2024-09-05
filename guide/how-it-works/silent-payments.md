@@ -151,7 +151,7 @@ Here's how silent payments make this possible:
    mobile = "/assets/images/guide/how-it-works/silent-payments/how-silent-payments-work.png"
    mobileRetina = "/assets/images/guide/how-it-works/silent-payments/how-silent-payments-work@2x.png"
    alt-text = "An image that illustrates how silent payments work in 4 steps."
-   caption = "Alice posts a static address on the website of her non-profit, Chasing Rabbits. Bob uses it to send bitcoin in a transaction that pays a derived on-chain address that Alice can identify as a donation to her."
+   caption = "Alice posts a static address on the website of her non-profit, Chasing Rabbits. Bob uses it to send bitcoin from his wallet. This transaction pays a derived on-chain address that Alice can identify as a donation to her by scanning the blockchain."
    width = 1024
    height = 522
    layout = "full-width"
@@ -161,11 +161,14 @@ Here's how silent payments make this possible:
 
 Silent payments introduces a new technical model that separates payment information such as addresses and keys based on their purpose.
 
-| Silent payments' concept       | Purpose         | Sharing with |
+
+| Silent payments' concept       | Shared with         | for: |
 |:-------------|:------------------|:------|
-| Static address | Making payments | Senders
-| Scan key     | Payment scanning information  | Nodes & light clients
-| Spend key   | Spending bitcoin | Wallet owner
+| Static address | Senders | Making payments
+| Scan key     | Nodes & light clients  | Payment scanning information
+| Spend key   | Wallet owner | Spending bitcoin
+
+For eg: the static address is only shared with senders who use it to make payments. It is not shared with nodes who only receive the scan key needed for identifying payments.
 
 The above model introduces a scan key that is used for payment scanning and a static address which is used for deriving on-chain addresses. This is in contrast with the BIP-32 model where [extended public keys](/guide/glossary/#extended-public-key-xpub-ypub-zpub) are used for both purposes. Below is a summary of the differences between the two models:
 
