@@ -165,7 +165,7 @@ Silent payments introduces a new technical model that separates payment informat
 | Silent payments' concept       | Shared with         | for: |
 |:-------------|:------------------|:------|
 | Static address | Senders | Making payments
-| Scan key     | Nodes & light clients  | Payment scanning information
+| Scan key     | Nodes & [light clients](/guide/how-it-works/nodes/#light-nodes)  | Payment scanning information
 | Spend key   | Wallet owner | Spending bitcoin
 
 For eg: the static address is only shared with senders who use it to make payments. It is not shared with nodes who only receive the scan key needed for identifying payments.
@@ -176,8 +176,8 @@ The above model introduces a scan key that is used for payment scanning and a st
 |:-------------|:------------------|:------|
 | Single-use on-chain address           | Static address | Reusable & untraceable on-chain |
 | Extended private key (xprv) | Spend (private) key   |   |
-| Extended public key (xpub)           | Scan (public) key      | Nodes & light clients can scan for payments but cannot derive addresses    |
-| **Address-based model**           | **Contact-based model** | **More intuitive and familiar**  |
+| Extended public key (xpub)           | Scan (public) key      | Nodes & [light clients](/guide/how-it-works/nodes/#light-nodes) can scan for payments but cannot derive addresses    |
+| *Address-based model*           | *Contact-based model* | *More intuitive and familiar*  |
 
 
 ## Labels & contacts
