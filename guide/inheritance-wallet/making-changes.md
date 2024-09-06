@@ -200,7 +200,7 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Inheritance-wallet?type=design
 
 ---
 
-The Jones family have been using their savings wallet for a couple of years now and everything has worked smoothly so far. On this page we will take a look at what happens if they need to make changes to their setup. If users are storing bitcoin over a long enough period of time, there are a couple of scenarios that they might run into: 
+Alice and Bob have been using their savings wallet for a couple of years now and everything has worked smoothly so far. On this page we will take a look at what happens if they need to make changes to their setup. If users are storing bitcoin over a long enough period of time, there are a couple of scenarios that they might run into: 
 
 1. They need to replace a key that has been lost.
 2. They want to change the basic wallet configuration.
@@ -219,7 +219,7 @@ When users need to make changes to their multisig wallet, such as replacing a ke
 
 ## Replacing David's signing key
 
-Let's assume that David, one of the heirs, has lost his signing device. Furtunately, it is part of the inheritance key set, which is restricted by a timelock, as we have covered [here]({{ '/guide/inheritance-wallet/wallet-creation/#creating-the-inheritance-key-set' | relative_url }}). Although David still has his seed phrase backup, the Joneses decide to replace David's key as a precautionary measure. They would follow the same approach if David had lost the seed phrase backup or suspected it had been compromised.
+Let's assume that David, one of the heirs, has lost his signing device. Fortunately, it is part of the inheritance key set, which is restricted by a timelock, as we have covered [here]({{ '/guide/inheritance-wallet/wallet-creation/#creating-the-inheritance-key-set' | relative_url }}). Although David still has his seed phrase backup, the Joneses decide to replace David's key as a precautionary measure. They would follow the same approach if David had lost the seed phrase backup or suspected it had been compromised.
 
 #### Adding the new key
 
@@ -242,7 +242,7 @@ Once he receives David's XPUB, Bob opens our application and navigates to the wa
 
 {% include image-gallery.html pages = page.images_key-replacement-configuration %} 
 
-The app then asks which of the keys Bob would like to replace. Bob selects David's Passport from the list of keys. On the next screen, the app gives Bob the option to change the wallet configuration as well. But Bob only needs to replace David's key, so he continues with the same configuration. He does, however, choose a different name for the new wallet.
+The app then asks which of the keys Bob would like to replace. Bob selects David's Passport from the list of keys. On the next screen, the app gives Bob the option to change the wallet configuration as well. But he only needs to replace David's key, so he continues with the same configuration. He does, however, choose a different name for the new wallet.
 
 The next step is to add David's new extended public key. This works in the same way as during the initial wallet creation. On the wallet review screen, the app indicates that a new signing key has been added. Bob reviews the changes and hits "create wallet."
 
@@ -270,7 +270,7 @@ Bob taps on the reminder and initiates the transaction creation process. Because
 
 The transaction is now ready for Alice to sign as well. However, there is no central server coordinating or automatically syncing transaction information between Bob and Alice's devices, because our app aims to work in the most [self-custodial way]({{ '/guide/inheritance-wallet/overview/#role-of-the-wallet-provider' | relative_url }}) possible. 
 
-This means that Bob has to manually share the partially signed transaction (PSBT) with Alice. Our app offers a variety of different sharing options. Bob chooses to generate a QR code, so that Alice can scan it conveniently.
+This means that Bob has to manually share the [partially signed bitcoin transaction]({{ '/guide/glossary/#partially-signed-bitcoin-transaction-psbt' | relative_url }}) (PSBT) with Alice. Our app offers a variety of different sharing options. Bob chooses to generate a QR code, so that Alice can scan it conveniently.
 
 #### Alice co-signs the transaction
 
@@ -295,9 +295,8 @@ The app will still monitor the Bitcoin blockchain for incoming transactions. If 
 ### Alternative approach
 As you can see, making changes to a multi-key wallet can be a tedious process. An alternative to replacing the David's key would be for David to simply import the backup of his existing private key into a new signing device. This approach has some advantages:
 
-1. **Simplicity**: It doesn't require creating a new wallet or moving funds.
-1. **Speed**: David could regain access to the wallet more quickly.
-No coordination needed: Other family members wouldn't need to be involved in the process.
+1. **Simplicity**: It doesn't require creating a new wallet or moving funds, which incurs onchain fees.
+1. **Convenience**: Other family members wouldn't need to be involved in the process.
 
 However, there are also significant downsides:
 
