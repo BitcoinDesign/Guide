@@ -224,10 +224,19 @@ When she receives payments from any of these sources, the respective label(s) wi
 
 This scheme improves labelling in general since these labels get auto-applied to all derived on-chain addresses. This eliminates the friction of manually adding labels to addresses or transactions while providing crucial information useful for automatic or manual coin selection.
 
-Labels in silent payments can also be used in other ways:
+#### Tracking payments
 
-- Invoices: merchant software like BTCPay can use labels to match incoming payments with invoices. This is required because on-chain addresses themselves cannot be pre-generated or mapped with invoices in advance.
-- Static deposit addresses for exchanges: Users looking to sell/deposit bitcoin at exchanges may be confused/worried when they see changing deposit addresses. Exchanges can now share labelled static addresses with users so that deposit addresses look the same to them.
+Without using labels, receivers have no way of knowing who may have paid them since they do not interact with the sender to provide them a on-chain address.
+
+{% include tip/recommendation.html %}
+
+Labels in silent payments are crucial where receivers such as businesses want to match payments with customers.
+
+{% include tip/close.html %}
+
+Here's how businesses such as exchanges, merchants and vendors can use labels:
+- Invoices: merchant software like [BTCPay](https://btcpayserver.org/) must use labels to match incoming payments with invoices and/or provide static addresses to repeat customers.
+- Bitcoin exchange deposits: Customers looking to sell/deposit bitcoin at exchanges encounter friction when their deposit addresses change constantly. Labelled static addresses for users fix this without address reuse while retaining the ability to match deposits to customers.
 
 
 ### Contacts
