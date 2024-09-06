@@ -143,13 +143,13 @@ Since the blockchain is public, reusing an on-chain address for payments informs
 
 Silent payments circumvent both these issues by using static addresses (starting with `sp1`).
 
-Silent payments circumvent both these issues by using static addresses (starting with sp1). This simplifies the payment experience while preserving privacy.
+## How silent payments work
 
-Here's how silent payments make this possible:
-1. The receiver shares/publishes a static payment address
-2. The sender obtains & uses it to derive a unique on-chain address
-3. The sender broadcasts a transaction that pays this derived address
-4. The receiver scans the blockchain & identifies the payment as theirs by verifying that they control this address
+Silent payments are made in 4 broad steps:
+1. The receiver shares/publishes a static payment address (manual, one-time)
+2. The sender obtains & uses it to derive a unique on-chain address (partly automated)
+3. The sender broadcasts a transaction that pays this derived address (manual)
+4. The receiver scans the blockchain & identifies their payments (automated)
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/silent-payments/how-silent-payments-work.png"
