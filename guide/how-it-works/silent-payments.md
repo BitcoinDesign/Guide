@@ -137,9 +137,11 @@ Silent payments also allow users to customize their static address with labels t
 Static addresses & labels enable robust [contacts](/guide/how-it-works/silent-payments/#contacts) features. The result is a better interaction model centred around users.
 
 
-## How silent payments work
+### Rationale
 
-Using the same address for multiple payments tells everybody on the network that these payments were made to the same user. Every interaction to get a new address takes time and effort, along with the possibility of mistakes while handling on-chain addresses. Silent payments circumvent both these issues by using static addresses (starting with *sp1*).
+Since the blockchain is public, reusing an on-chain address for payments informs the network that these payments are made to the same user. However, specifying a new address for each transaction usually requires user interaction. This is error-prone and requires time & manual effort.
+
+Silent payments circumvent both these issues by using static addresses (starting with `sp1`).
 
 Silent payments circumvent both these issues by using static addresses (starting with sp1). This simplifies the payment experience while preserving privacy.
 
