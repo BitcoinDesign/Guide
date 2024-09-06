@@ -295,7 +295,7 @@ The app will still monitor the Bitcoin blockchain for incoming transactions. If 
 ### Alternative approach
 As you can see, making changes to a multi-key wallet can be a tedious process. An alternative to replacing the David's key would be for David to simply import the backup of his existing private key into a new signing device. This approach has some advantages:
 
-1. **Simplicity**: It doesn't require creating a new wallet or moving funds, which incurs onchain fees.
+1. **Simplicity**: It doesn't require creating a new wallet or moving funds, which incurs transaction fees.
 1. **Convenience**: Other family members wouldn't need to be involved in the process.
 
 However, there are also significant downsides:
