@@ -127,18 +127,21 @@ https://www.figma.com/design/q8IYl9UVsOWkkPhs4IkHQR/Bitcoin-Wallet-UI-Kit-%26-De
 </div>
 
 ---
-Since the blockchain is public, [reusing an on-chain address](/guide/glossary/address/#address-reuse) for payments informs the network that these payments are made to the same user. However, specifying a new address for each transaction usually requires repeated user interaction, which takes time and effort, along with the possibility of mistakes with manual handling on-chain addresses.
 
-[Silent payments](https://github.com/bitcoin/bips/blob/master/bip-0352.mediawiki) circumvent both these issues by using static addresses (starting with `sp1`). This simplifies payment experience while preserving privacy.
+[Silent payments](https://github.com/bitcoin/bips/blob/master/bip-0352.mediawiki) is a protocol the uses static addresses to simplify payment experience while preserving privacy. Receivers can share the static address once, but senders can use it to derive unique on-chain addresses with every payment. This prevents [address reuse](/guide/glossary/address/#address-reuse) without repeated user interaction.
 
 For eg: Alice can simply post a static address on her website, and receive a bitcoin donations from Bob at unique on-chain addresses. The static address itself never shows up on-chain.
 
-Silent payments also allow users to customize their static address with labels that are detected when payments are received. This is a powerful tool that provides actionable information with minimal manual efforts for [coin control](/guide/how-it-works/silent-payments/).
+Silent payments also allow users to customize their static address with labels that are detected when payments are received. This is a powerful tool that provides actionable information for [coin selection](/guide/how-it-works/silent-payments/#coin-selection) with minimal manual effort.
+
+Static addresses & labels enable robust [contacts](/guide/how-it-works/silent-payments/#contacts) features. The result is a better interaction model centred around users.
+
 
 ## How silent payments work
 
 Using the same address for multiple payments tells everybody on the network that these payments were made to the same user. Every interaction to get a new address takes time and effort, along with the possibility of mistakes while handling on-chain addresses. Silent payments circumvent both these issues by using static addresses (starting with *sp1*).
 
+Silent payments circumvent both these issues by using static addresses (starting with sp1). This simplifies the payment experience while preserving privacy.
 
 Here's how silent payments make this possible:
 1. The receiver shares/publishes a static payment address
