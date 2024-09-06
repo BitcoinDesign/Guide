@@ -91,13 +91,28 @@ images_fund-transfer-bob:
     - file: fund-transfer/move-funds-sign-bob-done
       alt: Screen showing the transaction details. It shows that one of three keys has signed the transaction.
       caption: The transaction details screen shows that the first signature has been provided.
+    - file: fund-transfer/move-funds-share-transaction
+      alt: Screen showing a QR code and sharing options.
+      caption: Bob shares the partially signed transaction with Alice.
 images_alice-sign-transfer:
     - file: fund-transfer/move-funds-sign-alice-home
       alt: App home screen showing that a transaction is ready to be signed for the family savings wallet.
       caption: Alice's app shows that a transaction is ready to be signed.
+    - file: fund-transfer/move-funds-sign-alice-wallet-overview
+      alt: Wallet detail screen for the family savings wallet.
+      caption: Alic taps the pay button on the wallet overview screen.
+    - file: fund-transfer/move-funds-sign-alice-payment-sheet
+      alt: Dialog showing three different payment options.
+      caption: She selects sign transaction from the options.
+    - file: fund-transfer/move-funds-sign-alice-import-options
+      alt: Screen showing different options for how to import a transaction.
+      caption: Alice chooses the scan QR code option.
+    - file: fund-transfer/move-funds-sign-alice-import-scan
+      alt: QR code scanning screen.
+      caption: Alice scans the QR code from Bob's phone.
     - file: fund-transfer/move-funds-sign-alice-initial
       alt: Screen showing the transaction details. It shows that one of three keys has already signed the transaction.
-      caption: Alice goes on to use her Bitbox to provide the second signature.
+      caption: Alice goes on to use her BitBox to provide the second signature.
     - file: fund-transfer/move-funds-sign-alice-flow
       alt: Placeholder screen representing the transaction signing flow on Alice's hardware wallet. 
       caption: The app takes her through the signing flow.
@@ -185,30 +200,32 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Inheritance-wallet?type=design
 
 ---
 
-In this page we will take a look at two specific use cases that are likely to occur when storing bitcoin over a long enough period of time: 
+The Jones family have been using their savings wallet for a couple of years now and everything has worked smoothly so far. On this page we will take a look at what happens if they need to make changes to their setup. If users are storing bitcoin over a long enough period of time, there are a couple of scenarios that they might run into: 
 
-1. Users need to replace a key that has been lost.
-2. Users want to change the basic wallet configuration.
+1. They need to replace a key that has been lost.
+2. They want to change the basic wallet configuration.
 
 ### How it works
 
-Because of how bitcoin works, any of these change requires creating a new wallet and moving the funds to this new wallet. In both of the cases mentioned above, making the desired changes in the wallet is relatively easy. But because we design for a self-custodial application, there are some manual steps to be taken after the new wallet has been created. Here is how it works:
+When users need to make changes to their multisig wallet, such as replacing a key or modifying the wallet configuration, the process involves creating a new wallet and transferring funds. Here's how the process works from Bob's and Alice's perspective:
 
-1. Make the desired changes to the wallet configuration. This creates a new wallet.
-2. Share the new wallet with Alice, so that she can set it up in her application.
-3. Activate the new wallet on Bob and Alice's signing devices.
-4. Save the new wallet backup kit and store it in the same way as described in the backup page.
-5. Transfer the funds to the new wallet.
-6. Archive the old wallet, in case some funds still come in later.
+1. Bob makes the desired changes, which creates a new wallet.
+1. He shares the new wallet with Alice for setup in her application.
+1. Bob and Alice activate the new wallet on all three primary signing devices. 
+1. They save and store the new wallet recovery kit as described in the [backup page]({{ '/guide/inheritance-wallet/backup/#backup-strategy' | relative_url }}).
+1. Transfer all funds to the new wallet.
+1. Archive the old wallet to manage any future incoming funds.
 
 
-### Replacing a signing key
+## Replacing David's signing key
 
-Let's assume that David, one of the heirs, has lost his signing device. He did not lose the seed phrase backup, so he could theoretically just import his private key into a new device. But since they are dealing with their family savings, the Joneses don't want to take any chances. They decide to replace David's key, which is part of the inheritance key set. The family would follow the same approach if David had lost the seed phrase backup or had reason to believe that it had been compromised.
+Let's assume that David, one of the heirs, has lost his signing device. Furtunately, it is part of the inheritance key set, which is restricted by a timelock, as we have covered [here]({{ '/guide/inheritance-wallet/wallet-creation/#creating-the-inheritance-key-set' | relative_url }}). Although David still has his seed phrase backup, the Joneses decide to replace David's key as a precautionary measure. They would follow the same approach if David had lost the seed phrase backup or suspected it had been compromised.
 
 #### Adding the new key
 
-After David received the new signing device, he exports the extendend public key, just like he did during the [wallet creation]({{ '/guide/inheritance-wallet/wallet-creation/#adding-the-inheritance-keys' | relative_url }}) process. He then shares it with his parents via a shared chat on Signal. As soon as they receive David's XPUB, Bob opens our application and navigates to the wallet settings. The prototype below lets you click through the key replacement flow:
+After David received the new signing device, he exports the extendend public key (XPUB), just like he did during the [wallet creation]({{ '/guide/inheritance-wallet/wallet-creation/#adding-the-inheritance-keys' | relative_url }}) process. He then shares it with his parents via a shared chat on Signal. 
+
+The prototype below lets you click through the key replacement flow:
 
 {% include prototype.html
    link = "https://www.figma.com/proto/h5GP5v5dYfpXXfEUXf6nvC/Inheritance-wallet?page-id=6295%3A8715&type=design&node-id=6466-13302&viewport=337%2C-87%2C0.17&t=ctQmwe5HnelSERog-1&scaling=min-zoom&starting-point-node-id=6466%3A13302&show-proto-sidebar=1&mode=design"
@@ -221,7 +238,7 @@ After David received the new signing device, he exports the extendend public key
    height = 500
 %}
 
-On the wallet settings page, Bob goes the signing keys page. From there the app guides him through the key replacement flow. It starts with a short explanation dialog that outlines how the process works.   
+Once he receives David's XPUB, Bob opens our application and navigates to the wallet settings. On the wallet settings page, Bob goes the signing keys page. From there the app guides him through the key replacement flow. It starts with a short explanation dialog that outlines how the process works.   
 
 {% include image-gallery.html pages = page.images_key-replacement-configuration %} 
 
@@ -232,11 +249,12 @@ The next step is to add David's new extended public key. This works in the same 
 {% include image-gallery.html pages = page.images_key-replacement-add-key %}
 
 ### Cosigner setup, device activation and wallet backup 
+
 The new inheritance wallet is now created. Just like during the initial wallet creation, Alice and Bob now need to:
 
 1. Share the wallet configuration with Alice, so that she can set up the wallet on her app.
-2. Activate the new wallet on all of their signing devices.
-3. Save the backup kit for the new wallet.
+1. Activate the new wallet on all of their signing devices.
+1. Save the backup kit for the new wallet.
 
 We have covered these topics in the previous pages of this reference design.
 
@@ -246,35 +264,53 @@ Now that the new wallet is ready, Alice and Bob need to transfer their savings t
 
 #### Bob creates and signs the transaction
 
-Bob taps on the reminder and starts creating the transaction. Because the app knows about both wallets, it will prefill most of the information in the send flow, like the recipient address and the transaction amount. 
+Bob taps on the reminder and initiates the transaction creation process. Because the app is aware of both wallets, it can prefill most of the information in the send flow, such as the recipient address and the transaction amount. After creating the transaction, Bob signs it with his Trezor right away.
 
 {% include image-gallery.html pages = page.images_fund-transfer-bob %} 
 
-After creating the transaction, Bob directly continues to sign it with his Trezor. Once this is done, Alice will provide her signature.
+The transaction is now ready for Alice to sign as well. However, there is no central server coordinating or automatically syncing transaction information between Bob and Alice's devices, because our app aims to work in the most [self-custodial way]({{ '/guide/inheritance-wallet/overview/#role-of-the-wallet-provider' | relative_url }}) possible. 
+
+This means that Bob has to manually share the partially signed transaction (PSBT) with Alice. Our app offers a variety of different sharing options. Bob chooses to generate a QR code, so that Alice can scan it conveniently.
 
 #### Alice co-signs the transaction
 
-On the app home screen, Alice now sees a reminder that a transaction is ready to be signed. On the detail screen, she also sees that Bob has already provided a signature. Alice hits "sign" and goes through the transaction signing flow on her Bitbox. 
+Alice opens the wallet app on her phone, selects the family savings wallet and hits send. In the send sheet she taps "sign transaction" and uses the QR scanner to import the partially signed transaction from Bob's phone.
 
 {% include image-gallery.html pages = page.images_alice-sign-transfer %} 
 
-After she has signed the transaction, she sees that the transaction is being confirmed by the network. Once the transaction has been confirmed, the app home screen shows a reminder that the original wallet should be archived. 
+Once imported, Alice's app displays the transaction details, showing that it has been signed by Bob and requires her signature to complete. Alice reviews the transaction details and initiates the signing process.
+
+After she completes the signing flow  with her BitBox, the app automatically broadcasts the fully signed transaction to the Bitcoin network. If she would like to have more control and broadcast transactions manually, Alice could change this behavior in the app settings.
+
+Back on the home screen, Alice sees that the transaction is being confirmed by the network. After it has been confirmed, the app shows a reminder that the original wallet should be archived. 
 
 ### Archiving the old wallet
 
-Archiving unused wallets removes complexity and helps users to focus on the wallets they actively use. Archiving a wallet does not delete it from the app. It is only removed from the home screen and from the wallets tab. 
+Archiving unused wallets removes complexity and helps users focus on the wallets they actively use. Archiving a wallet does not delete it from the app. It is only removed from the home screen and from the wallets tab. 
 
-The app will still watch the blockchain for incoming transactions. If there are any, they are shown on the home screen and in the wallets tab. Users can then transfer the funds to a wallet that they actively use. This is why it is important to keep the backup kit and at least one of the primary keys of every wallet.   
+The app will still monitor the Bitcoin blockchain for incoming transactions. If there are any, they are shown on the home screen and in the wallets tab. Users can then transfer the funds to a wallet that they actively use. This is why it is important to keep the backup kit and at least one of the primary keys of every wallet.   
 
 {% include image-gallery.html pages = page.images_archive-wallet %}
 
-### Editing the wallet timelocks
+### Alternative approach
+As you can see, making changes to a multi-key wallet can be a tedious process. An alternative to replacing the David's key would be for David to simply import the backup of his existing private key into a new signing device. This approach has some advantages:
 
-If Bob would just want to edit the wallet configuration itself, without changing the keys, the process would be the same. In the below example below, Bob changes the activation timelock for the recovery path and the inheritance key set from 6 months to 12 months. 
+1. **Simplicity**: It doesn't require creating a new wallet or moving funds.
+1. **Speed**: David could regain access to the wallet more quickly.
+No coordination needed: Other family members wouldn't need to be involved in the process.
+
+However, there are also significant downsides:
+
+1. **Security risk**: If the original device was stolen rather than just lost, the thief might eventually gain access to the private key, putting the funds at risk.
+1. **Potential compromise**: If there's any chance the seed phrase backup was exposed or compromised, using it again could jeopardize the wallet's security.
+
+In a multi-key setup, a single compromised key doesn't immediately put the funds at risk because multiple keys are required to authorize a transaction. In addition to that, the inheritance key set is protected by the timelocks that Alice and Bob have put in place. However, it does reduce the overall security of the wallet.
+
+## Changing the wallet configuration
+
+If the Joneses would want to change only the wallet configuration the process would be the same. In the example below, Bob changes the activation timelock for the recovery path and the inheritance key set from 6 months to 12 months. After the new wallet is created, the process will be the same as described above.
 
 {% include image-gallery.html pages = page.images_config-changes %} 
-
-After creating the new wallet, the process would be exactly the same as for the replacement of the keys described above.
 
 ---
 
