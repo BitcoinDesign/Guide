@@ -197,16 +197,16 @@ The above model introduces a scan key that is used for payment scanning and a st
    layout = "float-right-desktop -background -shadow"
 %}
 
-Labels or tags are brief, often one-word identifiers that are associated as metadata to all manners of information, including payments and addresses.
+Labels or tags (such as 'business' or 'no-kyc') are brief identifiers often associated with information such as payments, transactions and addresses. They're used to organise, categorise or quickly spot items from a large set.
 
 Silent payments allows users to add labels to their static addresses on a case-by-case basis before sharing or posting them. When a payment is received, these labels can be detected and used by the receiver (but no one else) to identify the static address used to make the payment.
 
 </div>
 
-To better understand this, consider a contractor Alice who adds different labels to her static address before sharing them
+For example, Alice can add can customise her static address with different labels before sharing them
 - with a certain client
-- her social media and
-- her website
+- on nostr and
+- on her website
 
 When she receives payments from any of these sources, the respective label(s) will be detected in the on-chain address and used to infer the source of the payment.
 
