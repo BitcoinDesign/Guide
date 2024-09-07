@@ -253,9 +253,7 @@ Applications can take a variety of approaches to set up and communicate silent p
 
 {% include image-gallery.html pages = page.images_sp-onboarding %}
 
-Silent payment wallets may or may not be set up as [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) and/or [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) HD wallets, since the protocol does not require these. The wallet setup flow can be very different for wallets using vs. not using these standards. Bitcoin Core, for example, does not support BIP-39 standard, and it involves wallet backup files. This is a great fit for silent payments, as we will see in Backup and Recovery sections.
-
-Since silent payments introduce a new model & primitives (such as spend key, scan key), the setup process might be a good opportunity to introduce some of these as needed without overloading the user.
+Silent payment wallets may or may not be set up as [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) and/or [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) HD wallets, since the protocol does not require these. Since silent payments introduce a new model & primitives (such as spend key, scan key), the setup process might be a good opportunity to introduce some of these as needed without overloading the user.
 
 
 ## Sending
