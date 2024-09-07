@@ -293,20 +293,19 @@ The coin(s) selected for a transaction determine the derived on-chain address du
    layout = "float-right-desktop -background -shadow"
 %}
 
-Since static addresses can now be used to pay a receiver several times, receiving flows are likely to be used less often, rarely even, since static addresses can be posted in public and others can simply get it from there. So whenever the receiver is sharing a payment request, users have the opportunity to associate valuable information to it – through labels and contacts; applications should facilitate this process.
+Receiving flows are likely to be used less often since static addresses can be safely reused. If the receiver has publicly posted their static address, they will receive payments without any interaction with the sender. Therefore, applications should encourage users to add labels or a contact whenever they actively share a static address with a sender.
 
-Some places where people can share static addresses (and add labels) to include:
+Some places where people can share static addresses (and add labels) include:
 - Social media pages
-- Donate or fundraising websites
+- Fundraising websites
 - Exchanges
 - Email signatures
 
 </div>
 
 
-Receivers using mobile wallets, which may not be online 24x7 will encounter some delay (once they come online) as their wallet scans the blockchain and performs calculations to detect their payments. Applications should communicate this fact during setup/onboarding. While the scanning itself is taking place, applications should show progress data and estimated time to complete the scanning process.
+The tradeoff that silent payments offer for all their benefits is a higher blockchain scanning requirement. This scanning process is more computation-intensive and time-consuming than the currently-popular BIP-32 wallets. Mobile wallet users are likely to face a noticeable delay in the scanning process since they cannot be online all the time. While the scanning is takes place, applications should show progress and estimated time to complete the scanning process.
 
-The time to detect a specific received payment can be minimized if the sender & receiver can communicate with each other. Some applications already allow users to detect whether an address belongs to them. This feature should, if possible, be extended to include BIP-352 functionality.
 
 ## Backup & Recovery
 
