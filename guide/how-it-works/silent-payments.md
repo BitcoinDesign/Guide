@@ -58,20 +58,6 @@ images_send:
       alt: A send review page with a error message under the address field informing the user about a static address not being supported.
       caption: An error message under the address field informs the user about a static address not being supported.
 
-images_test-txns:
-    - file: test-txn-send-review
-      modalImage: test-txn-send-review@2x
-      alt: A toggle on the send review page offers to send a test transaction first.
-      caption: A toggle on the send review page offers to send a test transaction first.
-    - file: test-txn-send-home
-      modalImage: test-txn-send-home@2x
-      alt: A card on the landing page lets user review and finalise a test transaction.
-      caption: A prompt on the landing page lets the user review and finalise a test transaction.
-    - file: test-txn-confirm-finalise-txn
-      modalImage: test-txn-confirm-finalise-txn@2x
-      alt: A finalise transaction screen that allows the user to finalise or revert a test transaction.
-      caption: A finalise transaction screen allows the user to finalise or revert a test transaction.
-
 images_backup:
     - file: backup-cloud-backup
       modalImage: backup-cloud-backup@2x
@@ -274,7 +260,7 @@ Since silent payments introduce a new model & primitives (such as spend key, sca
 
 ## Sending
 
-With the improvements to Contacts, on-chain send flows may start from a number of [entry points](/guide/daily-spending-wallet/sending/#payment-entry-points). When users start with obtaining a static address, every on-chain address derived from it will be visibly different from the static address the sender started with, something potentially confusing for users. Applications should take measures such as short explainers to avoid confusion on the users part.
+With the improvements to Contacts, on-chain send flows may start from a number of [entry points](/guide/daily-spending-wallet/sending/#payment-entry-points). When users start with obtaining a static address, every on-chain address derived from it will be visibly different from the static address the sender started with. This is likely to be confusing for users. Applications should take measures such as short explainers to avoid confusion on the users part. Test transactions are another good way to help users deal with this.
 
 {% include image-gallery.html pages = page.images_send %}
 
@@ -293,13 +279,6 @@ As mentioned in the introduction, coin selection can be done much better due to 
 The coin(s) selected for a transaction determine the derived on-chain address due to the nature of silent payments protocol. The interface should avoid showing the on-chain address before the coin selection is done.
 
 {% include tip/close.html %}
-
-
-### Test transactions
-
-Test transactions are another way to alleviate user anxiety for sending on-chain payments, especially with static addresses, since the on-chain address is always visibly different from the static address.
-
-{% include image-gallery.html pages = page.images_test-txns %}
 
 ## Receiving & scanning
 
