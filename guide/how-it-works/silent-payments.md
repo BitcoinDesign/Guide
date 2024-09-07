@@ -45,6 +45,10 @@ images_send:
       modalImage: send-review-sp@2x
       alt: The send review page displaying the on-chain address explaining that it is derived from the static address.
       caption: A note below the on-chain address explains that it is derived from the static address.
+    - file: send-review-sp-another
+      modalImage: send-review-sp-another@2x
+      alt: The send review page displaying the static address explaining that the on-chain address is different from it.
+      caption: A note below the static address mentions that the on-chain address is different from it.
     - file: send-review-with-contact
       modalImage: send-review-with-contact@2x
       alt: The send review page with a contact item so that addresses do not have to be mentioned.
