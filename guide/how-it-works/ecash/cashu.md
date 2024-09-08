@@ -69,7 +69,7 @@ Illustration sources
 %}
 
 # Cashu
-Cashu is an ecash protocol on that interoperates with the Lightning Network. Unlike Fedimint, which uses a federated model to distribute trust among multiple entities, Cashu operates with independent mints. This makes Cashu distinct in providing an easy to deploy, flexible, and agile approach to managing bitcoin backed ecash.
+Cashu operates on a model where any user can run their own solo mint or join an existing mint. This makes Cashu an easy to deploy, flexible, and agile approach to managing bitcoin-backed ecash.
 
 ## Design best practices
 To learn more about Cashu specific design best practices you can check out the [Design best practices]({{ '/guide/how-it-works/ecash/design-best-practices' | relative_url }}) section.
@@ -88,41 +88,57 @@ To learn more about Cashu specific design best practices you can check out the [
    layout = "full-width"
 %}
 
-A Cashu mint operates simply and centrally. One entity (the mint) handles the entire process: issuing bitcoin backed ecash tokens when users deposit bitcoin and redeeming them when users request withdrawals. This centralized model enables fast transactions but requires trust in the mint’s integrity and security. Cashu’s design prioritizes simplicity and speed, relying on a single operator to manage all operations.
+A Cashu mint operates simply and centrally. One entity (the mint) handles the entire process: issuing bitcoin-backed ecash tokens when users deposit bitcoin and redeeming them when users request withdrawals. This centralized model enables fast transactions but requires trust in the mint’s integrity and security. Cashu’s design prioritizes simplicity and speed, relying on a single operator to manage all operations. Cashu currently only supports lightning payments, but in the future it will support on-chain payments as well.
+
+#### Pros:
+
+* **Quick and Easy Setup** - Ideal for those who need a simple, low-cost solution.
+
+* **Cost-Effective** - Fewer resources are required, making it an attractive option for smaller operations.
+
+#### Cons:
+
+* **High Risk** - With all control in the hands of one operator, the risks of loss or theft are much higher. Additionally, if the server goes offline, users lose access to the mint until it’s restored.
 
 ## When to Use Cashu
 
-* **Rapid Deployment and Simple Integration** - Great for projects that need to be launched quickly with minimal setup. This includes community-based applications where speed and ease of deployment are crucial.
-
-* **Quick Interoperability with the Lightning Network** - Ideal when you need to integrate with the Lightning Network for fast, low-fee transactions. Cashu supports seamless, out of the box integration with the Lightning Network.
+* **Rapid Deployment and Simple Integration** - Great for projects that need to be launched quickly with minimal setup. Cashu has a much smaller codebase and is easier to understand and modify compared to Fedimint.
 
 * **Localized or Small Community Solutions** - In scenarios where independent mints operated by trusted local entities can serve a community, enhancing trust and customization based on local needs.
 
 ## Products that use Cashu
+
+### Wallets
 - [Boardwalk Cash](https://boardwalkcash.com/)
 - [Cashu.me](https://wallet.cashu.me/)
 - [eNuts](https://www.enuts.cash/)
 - [Macadamia](https://macadamia.cash/)
 - [Minibits](https://www.minibits.cash/)
-- [npub.cash](https://npub.cash/)
 - [Nutshell](https://github.com/cashubtc/nutshell)
 - [Nutstash](https://nutstash.app/)
+- [Sovran](https://sovranbitcoin.com/)
+
+### Services
+- [npub.cash](https://npub.cash/)
+- [Shopstr](https://shopstr.store/)
+- [Cashu Decoder](https://nostrapps.github.io/cashu/)
 
 For a comprehensive list of products and services that use Cashu visit [Awesome Cashu](https://github.com/cashubtc/awesome-cashu).
 
-
 ## Cashu resources
 Cashu Documentation - Access the official Cashu documentation for detailed information on setup, usage, and integration.
-- [Cashu Resources](https://cashu.space/)
+- [Cashu Website](https://cashu.space/)
 - [Cashu Documentation](https://docs.cashu.space/)
+- [Cashu Only Mint List](https://cashumints.space/)
+- [Cashu & Fedimint Mint List](https://bitcoinmints.com)
 
 ---
 
 Next, we do a technical deep dive into how [Fedimint]({{ '/guide/how-it-works/ecash/fedimint' | relative_url }}) works.
 
 {% include next-previous.html
-   previousUrl = "/guide/how-it-works/ecash/overview/"
-   previousName = "Overview"
+   previousUrl = "/guide/how-it-works/ecash/introduction/"
+   previousName = "Introduction"
    nextUrl = "/guide/how-it-works/ecash/fedimint/"
    nextName = "Fedimint"
 %}

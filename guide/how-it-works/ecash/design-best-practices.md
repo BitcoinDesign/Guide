@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Design best practices
-description: An overview on best design practices for bitcoin backed ecash.
+description: An overview on best design practices for bitcoin-backed ecash.
 nav_order: 5
 parent: Ecash
 grand_parent: How it works
@@ -158,6 +158,69 @@ images_auto-swap:
       modalImage: trust-mint@2x
       alt: A mobile wallet interface showing a bottom sheet with the option to trust the mint that the token is being sent from, or to auto-swap the mint to their default mint.
       caption: For privacy-focused wallets, ask users to confirm trust or offer auto-swap to their default mint when receiving ecash from an unknown mint.
+
+images_federation-guardian-info:
+    - file: federation-guardian-info
+      modalImage: federation-guardian-info@2x
+      alt: Example of a guardian status display in a wallet interface.
+      caption: Example of a guardian status display in a wallet interface.
+
+images_federation-welcome:
+    - file: federation-welcome
+      modalImage: federation-welcome@2x
+      alt: Federation welcome message display in a wallet interface.
+      caption: A welcome message being used durring the new user onboarding process.
+
+images_federation-expiry:
+    - file: federation-guardian-expiry
+      modalImage: federation-guardian-expiry@2x
+      alt: A mobile wallet interface with a screen that shows a countdown timer and a message that the federation will shut down in 15 days.
+      caption: Federation expiration timestamp displayed as a countdown alter when less 30 days remaining.
+    - file: federation-guardian-expiry-join
+      modalImage: federation-guardian-expiry-join@2x
+      alt: A mobile wallet interface with a screen that shows a countdown timer and a message that the federation will shut down in 15 days.
+      caption: Federation expiration timestamp displayed as a data field when more than 30 days remain or the user hasn't yet joined the federation.
+
+images_federation-id:
+    - file: federation-id1
+      modalImage: federation-id1@2x
+      alt: Federation identity and version display in a wallet interface
+      caption: Consider the most important information to display to the user about the federation.
+    - file: federation-id2
+      modalImage: federation-id2@2x
+      alt: Federation descriptions display in a wallet interface
+      caption: Different federation operator may use the description fields differently. Consider this when designing your federation details screen.
+    - file: federation-id3
+      modalImage: federation-id3@2x
+      alt: Federation contact information display in a wallet interface
+      caption: Contact information is optional for the federation operator to include. If there is no contact information, consider not displaying this metadata.
+    - file: federation-id4
+      modalImage: federation-id4@2x
+      alt: Example of important announcements display in a wallet interface
+      caption: A message of the day can consists of anything the federation operator wants to tell the user. It can for example be used to announce a new feature or a upcoming maintenance.
+
+images_cashu-id:
+    - file: cashu-id1
+      modalImage: cashu-id1@2x
+      alt: Mint identity and version display in a wallet interface
+      caption: Consider the most important information to display to the user about the mint.
+    - file: cashu-id2
+      modalImage: cashu-id2@2x
+      alt: Mint descriptions display in a wallet interface
+      caption: Different mint operator may use the description fields differently. Consider this when designing your mint details screen.
+    - file: cashu-id3
+      modalImage: cashu-id3@2x
+      alt: Mint contact information display in a wallet interface
+      caption: Contact information is optional for the mint operator to include. If there is no contact information, consider not displaying this metadata.
+    - file: cashu-id4
+      modalImage: cashu-id4@2x
+      alt: Example of important announcements display in a wallet interface
+      caption: A message of the day can consists of anything the mint operator wants to tell the user. It can for example be used to announce a new feature or a upcoming maintenance.
+    - file: cashu-id5
+      modalImage: cashu-id5@2x
+      alt: Example of supported features display in a wallet interface
+      caption: Supported features are pulled by indexing a mints information and reading what nuts the mint has implemented.
+
 ---
 {% include picture.html
    image = "/assets/images/guide/how-it-works/ecash/best-practicies.jpg"
@@ -173,7 +236,7 @@ images_auto-swap:
 <!--
 
 
-This is a summary page of best design practices for both bitcoin backed ecash protocols: Cashu and Fedimint.
+This is a summary page of best design practices for both bitcoin-backed ecash protocols: Cashu and Fedimint.
 
 The design source for screen mock-ups on this page can be found here:
 ADD Figma URL
@@ -193,7 +256,7 @@ ADD Figma URL
 
 ---
 ## General ecash best practices
-When designing bitcoin backed ecash applications it's important to prioritize clear and intuitive interfaces that allow users to easily manage their tokens, whether they are minting, sending, or redeeming them.
+When designing bitcoin-backed ecash applications it's important to prioritize clear and intuitive interfaces that allow users to easily manage their tokens, whether they are minting, sending, or redeeming them.
 
 ### Multiple mint or federation display
 {% include image-gallery.html pages = page.images_mint-list %}
@@ -229,7 +292,7 @@ It's important to inform users that auto-swapping involves fees and that the amo
 
 
 ### Backup and restore for cashu
-The Cashu backup and restoration process is designed to ensure users can securely recover their wallets and maintain access to their bitcoin backed ecash tokens in the event they switch devices or experience data loss. **Users should only use their recovery seed phrase once.** Repeated use of the seed phrase for restoration can lead to synchronization issues and potential errors. This is due to the fact that each time you restore, you might be dealing with an outdated state of the wallet, which can cause discrepancies in token balances and transactions.
+The Cashu backup and restoration process is designed to ensure users can securely recover their wallets and maintain access to their bitcoin-backed ecash tokens in the event they switch devices or experience data loss. **Users should only use their recovery seed phrase once.** Repeated use of the seed phrase for restoration can lead to synchronization issues and potential errors. This is due to the fact that each time you restore, you might be dealing with an outdated state of the wallet, which can cause discrepancies in token balances and transactions.
 
 {% include tip/open.html color="blue" icon="info" label="Single Use Recovery" %}
 
@@ -241,7 +304,7 @@ After successfully restoring your wallet using a recovery seed phrase, it is hig
 ### Backup process
 {% include image-gallery.html pages = page.images_backup %}
 
-1. **Deterministic Wallet with Seed Phrase**: Cashu uses a deterministic wallet model, where all cryptographic keys and bitcoin backed ecashtokens can be derived from a single seed phrase. This seed phrase can be generated when the wallet is first created, or a at any point in time when the user wants to backup their wallet.
+1. **Deterministic Wallet with Seed Phrase**: Cashu uses a deterministic wallet model, where all cryptographic keys and bitcoin-backed ecash tokens can be derived from a single seed phrase. This seed phrase can be generated when the wallet is first created, or a at any point in time when the user wants to backup their wallet.
 
 2. **Secure Storage**: Users are advised to store their seed phrase securely. It is crucial to keep this seed phrase in a safe, physical format (such as written on paper) and stored in a secure location to prevent unauthorized access or loss. The best practices in the [Backup & recovery]({{ '/guide/daily-spending-wallet/backup-and-recovery/landing-page/' | relative_url }}) section also apply to Cashu wallets. 
 
@@ -394,7 +457,7 @@ It's useful to provide users with the ability to manually update or refresh mint
 
 {% include image-gallery.html pages = page.images_p2pk %}
 
-[NUT11](https://github.com/cashubtc/nuts/blob/main/11.md) is a powerful feature that allows bitcoin backed ecash tokens to be securely locked to another user's public key, which is generated by the recipient's wallet. This ensures that only the intended recipient can redeem the ecash. NUT11 enables secure offline payments, preventing double-spending. Beyond these basics, NUT11 supports advanced use cases like timelocks and multisignature (multisig) setups, where ecash can be conditionally spent or jointly owned by multiple parties. When designing make sure these functionalities are clearly communicated to users, highlighting their practical benefits and flexibility.
+[NUT11](https://github.com/cashubtc/nuts/blob/main/11.md) is a powerful feature that allows bitcoin-backed ecash tokens to be securely locked to another user's public key, which is generated by the recipient's wallet. This ensures that only the intended recipient can redeem the ecash. NUT11 enables secure offline payments, preventing double-spending. Beyond these basics, NUT11 supports advanced use cases like timelocks and multisignature (multisig) setups, where ecash can be conditionally spent or jointly owned by multiple parties. When designing make sure these functionalities are clearly communicated to users, highlighting their practical benefits and flexibility.
 
 ## Fedimint design best practices
 
@@ -472,12 +535,7 @@ Different federations may choose to display the welcome message in different con
 - `vetted_gateways`: This field contains a list of gateway identifiers that have been vetted by the federation. This information could be used to display trusted gateways to users, helping them make informed decisions about which gateways to use for transactions.
 
 ##### What is a gateway?
-A gateway refers to a service that facilitates interactions between the federation (which operates largely off-chain) and the broader Lightning Network. A gateway acts as a bridge, enabling users within the federation to make payments to and receive payments on the Lightning Network.
-
-##### How do gateways work
-**Role of a Gateway**: The gateway accepts bitcoin payments on the Lightning Network and converts them into the bitcoin backed ecash tokens used within the federation. It can also convert bitcoin backed ecash tokens into bitcoin and send them over the Lightning Network. This is crucial because it allows the users within a federation to interact with the outside bitcoin and Lightning Network.
-
-**Vetted Gateways**: A vetted gateway is one that has been approved by the federation's guardians as reliable and trustworthy. This vetting process helps to ensure that users' transactions are handled by gateways that have a track record of reliability, reducing the likelihood of payment failures.
+See the [Role of Gateways]({{ '/guide/how-it-works/ecash/fedimint/#role-of-gateways' | relative_url }}) for more information about gateways.
 
 #### Why showing gateway information might not be necessary:
 
@@ -494,3 +552,14 @@ When designing your Fedimint wallet interface, consider organizing these metadat
 3. Implement notifications or warnings based on the `federation_expiry_timestamp` to keep users informed about the federation's lifespan.
 
 By effectively incorporating these Fedimint metadata fields, you can create a more transparent and informative experience for users, helping them understand the federation's structure, rules, and trusted entities.
+
+---
+
+Next, let's learn [private key management]({{ '/guide/how-it-works/ecash/private-key-management' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/how-it-works/ecash/fedimint/"
+   previousName = "Fedimint"
+   nextUrl = "/guide/how-it-works/ecash/private-key-management/"
+   nextName = "Private key management"
+%}

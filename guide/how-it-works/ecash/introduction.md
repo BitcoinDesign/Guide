@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Ecash
-description: An overview of bitcoin backed ecash, protocols, and design best practices.
+description: An overview of bitcoin-backed ecash, protocols, and design best practices.
 nav_order: 7
 parent: How it works
 has_children: true
@@ -17,7 +17,7 @@ image: https://bitcoin.design/assets/images/guide/how-it-works/ecash/ecash.jpg
 
 Editor's notes
 
-An introduction and detailed summary of bitcoin backed ecash.
+An introduction and detailed summary of bitcoin-backed ecash.
 
 Illustration sources
 
@@ -39,7 +39,7 @@ Illustration sources
 
 Ecash is a digital payment system that uses cryptographic techniques to ensure secure and private transactions. Developed by David Chaum in 1983, it operates through a mint that issues digital tokens in exchange for deposited funds. These tokens can be spent and received without revealing user identities or transaction details, thanks to blinded signatures. Users can redeem their tokens for the original funds at any time. Since no accounts or personal information are needed; the mint cannot see your balance, tokens, or transaction details, offering a highly private and efficient method for digital payments.
 
-## How bitcoin backed ecash works
+## How Bitcoin-Backed Ecash Works
 {% include picture.html
    image = "/assets/images/guide/how-it-works/ecash/how-ecash-works@1x.png"
    retina = "/assets/images/guide/how-it-works/ecash/how-ecash-works@2x.png"
@@ -52,8 +52,19 @@ Ecash is a digital payment system that uses cryptographic techniques to ensure s
    layout = "full-width"
 %}
 
-Bitcoin backed ecash works by using protocols like [Fedimint]({{ '/guide/how-it-works/ecash/fedimint' | relative_url }}) and [Cashu]({{ '/guide/how-it-works/ecash/cashu/' | relative_url }}), which both implement blinded signatures to ensure privacy and security. Users deposit bitcoin, and in return, they receive bitcoin backed ecash tokens. Users can then spend and receive these ecash tokens, which remain anonymous and unlinkable to their identity, enabling private transactions within the bitcoin ecosystem.
+Bitcoin-backed ecash works by using protocols like [Fedimint]({{ '/guide/how-it-works/ecash/fedimint' | relative_url }}) and [Cashu]({{ '/guide/how-it-works/ecash/cashu/' | relative_url }}), which both implement blinded signatures to ensure privacy and security. Users deposit bitcoin, and in return, they receive bitcoin-backed ecash tokens. Users can then spend and receive these ecash tokens, which remain anonymous and unlinkable to their identity, enabling private transactions within the bitcoin ecosystem.
 
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/ecash/connected@1x.png"
+   retina = "/assets/images/guide/how-it-works/ecash/connected@2x.png"
+   mobile = "/assets/images/guide/how-it-works/ecash/connected@1x.png"
+   mobileRetina = "/assets/images/guide/how-it-works/ecash/connected@2x.png"
+   alt-text = "An illustration of cashu, fedimint, and lightning nodes connected in a mesh network."
+   caption = "Lightning is a popular connective tissue between ecash and bitcoin."
+   width = 800
+   height = 456
+   layout = "full-width"
+%}
 ### Key Benefits of Bitcoin-Backed Ecash
 
 * **Faster Transactions** - Ecash systems process transactions almost instantly since they rely on a centralized mint, eliminating the need for network-wide consensus or routing through multiple Lightning nodes.
@@ -62,10 +73,12 @@ Bitcoin backed ecash works by using protocols like [Fedimint]({{ '/guide/how-it-
 
 * **Simplified Processing** - Transactions are validated and settled internally within the mint, reducing complexity and avoiding potential delays associated with routing and liquidity issues in the Lightning Network.
 
-* **Consistent Speed** - Ecash systems offer consistent transaction speeds regardless of network conditions, unlike the Lightning Network, where speed can be affected by route complexity and node availability.
+* **Consistent Speed** - Ecash systems offer consistent transaction speeds regardless of network conditions, unlike the Lightning Network where transaction speeds can be affected by channel capacity, node connectivity, and node hardware.
+
+* **Enhanced Privacy** - Blinded signatures safeguard user identities and total balances. While the mint can see amounts for individual transactions (like paying an invoice or swapping proofs), it cannot associate these with specific users or determine anyone's total ecash holdings, as there are no user accounts.
 
 ---
-### Ecash protocols
+### Ecash Protocols
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/ecash/ecash-protocol-logos@1x.jpg"
@@ -79,17 +92,23 @@ Bitcoin backed ecash works by using protocols like [Fedimint]({{ '/guide/how-it-
    layout = "full-width"
 %}
 
+**Fedimint** and **Cashu** are two unqiue bitcoin-backed ecash protocols. They differ in their approach to trust and governance. 
+
+Fedimint operates through a federated model where a group of trusted entities (called "guardians") manage funds collectively. 
+
+Cashu lets users run and operate their own solo mints or place trust in a solo mint they choose to use.
+
 ---
 
 ### [Cashu]({{ '/guide/how-it-works/ecash/cashu/' | relative_url }})
 
- Learn about Cashu’s approach to ecash with independent mints, integrated with the Lightning Network.
+ Learn about Cashu's approach to bitcoin-backed ecash through the use of solo mints.
 
 ---
 
 ### [Fedimint]({{ '/guide/how-it-works/ecash/fedimint' | relative_url }})
 
-Understand Fedimint's federated model, which decentralizes trust by involving multiple parties in ecash operations.
+Learn about Fedimint's federated model, which decentralizes trust by involving multiple parties through the use of multi-sig.
 
 ---
 {% include picture.html
@@ -104,7 +123,7 @@ Understand Fedimint's federated model, which decentralizes trust by involving mu
    layout = "full-width"
 %}
 
-### Creating and redeeming ecash
+### Creating and Redeeming Ecash
 {% include picture.html
    image = "/assets/images/guide/how-it-works/ecash/creation-and-redemption@1x.png"
    retina = "/assets/images/guide/how-it-works/ecash/creation-and-redemption@2x.png"
@@ -117,25 +136,33 @@ Understand Fedimint's federated model, which decentralizes trust by involving mu
    layout = "full-width"
 %}
 
-The process of creating bitcoin backed ecash is known as **minting.** The process of redeeming ecash into sats via the Lightning Network is known as **melting.** This process typically includes the following steps:
+Cashu and Fedimint use various terms for the processes of creating, redeeming, and transferring bitcoin-backed ecash. To provide clarity, we'll use neutral terms in our explanations and provide a translation table for specific implementations.
 
-#### Minting ecash
+#### Creating Ecash
 
-**1. User Deposits Funds** - The user deposits bitcoin into a mint. Typically this is done by generating a Lightning invoice through the mint and paying it.
+**1. User Deposits Funds** - The user deposits bitcoin into a mint or federation. Typically this is done by generating a Lightning invoice through the mint and paying it.
 
-**2. Blinded Token Creation** - Upon successful payment, the mint generates blinded tokens, which are IOUs of the deposited funds. The blinding process ensures that the mint cannot link the tokens to the user, preserving privacy.
+**2. Token Creation** - Upon successful payment, the wallet generates secrets and blinds them. The wallet then sends the blinded messages to the mint or federation, which returns a blind signature on the blinded messages. The blinding process ensures that the mint cannot link the tokens to the user, preserving privacy.
 
-**3. Mint provides Tokens to User** - The user receives a set of secrets (a cryptographic value that represents ownership of a specific amount of bitcoin) that correspond to specific amounts of sats. These secrets can be combined to create an ecash token of any amount denominated in bitcoin.
+**3. Token Receipt** - The user receives a set of secrets (a cryptographic value that represents ownership of a specific amount of bitcoin) that correspond to specific amounts of sats. These secrets can be combined to create an ecash token of any amount denominated in bitcoin.
 
-#### Melting ecash
+#### Converting Ecash to Bitcoin
 
-**4. User Initiates Melting** - The user requests to redeem their ecash tokens for bitcoin, usually this is done through the Lightning Network.
+**4. User Initiates Conversion** - User initiates a conversion request with their mint or federation.
 
-**5. Token destruction** - The mint verifies and destroys the ecash tokens, ensuring they cannot be reused. This step confirms the validity of the tokens and prevents double spending.
+**5. Token Verification and Destruction** - The mint or federations verifies the validity of the ecash tokens. Upon verification, the mint or federation destroys or invalidates these tokens, ensuring they cannot be reused. This step prevents double-spending.
 
-**6. Sats Transfer via Lightning Network** - The user receives an equivalent amount of bitcoin, completing the melting process and converting ecash back into bitcoin.
+**6. Bitcoin Transfer** - Once the tokens are verified and destroyed, the provider sends an equivalent amount of bitcoin to the user. 
 
-### Sending and receiving ecash
+#### Terminology Translation Table
+
+| Action | Cashu Term | Fedimint Term |
+|-------|----------|----------|
+| Create ecash | Mint | Issue |
+| Send ecash | Swap | Reissue | 
+| Convert ecash to bitcoin | Melt | Redeem |
+
+### Sending and Receiving Ecash
 {% include picture.html
    image = "/assets/images/guide/how-it-works/ecash/sending-and-receiving@1x.png"
    retina = "/assets/images/guide/how-it-works/ecash/sending-and-receiving@2x.png"
@@ -147,7 +174,7 @@ The process of creating bitcoin backed ecash is known as **minting.** The proces
    height = 456
    layout = "full-width"
 %}
-When a user sends an ecash token to another user, the wallet verifies the mint’s signature to confirm the token’s authenticity. The mint then checks its database to ensure the token has not been previously spent. If the token is valid, it is destroyed and replaced with a new token, which is then issued to the recipient. This cycle of destroying the old token and issuing a new one prevents double spending while maintaining user privacy and security.
+When a user sends an ecash token to another user, the wallet verifies the mint's signature to confirm the token's authenticity. The mint then checks its database to ensure the token has not been previously spent. If the token is valid, it is destroyed and replaced with a new token, which is then issued to the recipient. This cycle of destroying the old token and issuing a new one prevents double spending while maintaining user privacy and security.
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/ecash/sending-bitcoin-flow@1x.jpg"
@@ -161,15 +188,15 @@ When a user sends an ecash token to another user, the wallet verifies the mint�
    layout = "full-width"
 %}
 
-Sending ecash and receiving can be done via multiple methods to suit different transaction needs. One of the advantages of bitcoin backed ecash is that the tokens are just strings of text, which are very flexible and can be transmitted via any medium or rail. Some unique ways that ecash can be sent and received, which are not possible with on-chain or Lightning transactions, include:
+Sending ecash and receiving can be done via multiple methods to suit different transaction needs. One of the advantages of bitcoin-backed ecash is that the tokens are just strings of text, which are very flexible and can be transmitted via any medium or rail. Some unique ways that ecash can be sent and received, which are not possible with on-chain or Lightning transactions, include:
 
-#### Text message, such as email or SMS:
+#### Text Message, Such as Email or SMS:
 Users can send ecash by copying and pasting the token string. This is particularly useful for online transactions or when using text based communication platforms.
 
-#### Bluetooth transmission:
+#### Bluetooth Transmission:
 Most applications allow users to share a token via Bluetooth. However, more comprehensive Bluetooth sending and receiving functionalities have not yet been fully developed.
 
-#### QR codes:
+#### QR Codes:
 Unlike base chain and Lightning Network QR codes, which only provide directions for where to send Bitcoin, ecash tokens can be embedded within a QR code itself. This means that a user can claim the ecash token by simply scanning the QR code. This method is particularly useful for in person transactions or quick transfers. QR redemption also enables physical bearer assets like paper notes.
 
 
@@ -181,9 +208,9 @@ Explore guidelines and best practices for optimizing the use of ecash on Bitcoin
 
 ---
 
-## Comparisons and considerations
+## Comparisons and Considerations
 
-### Bitcoin custody spectrum
+### Bitcoin Custody Spectrum
 {% include picture.html
    image = "/assets/images/guide/how-it-works/ecash/custody-spectrum@1x.png"
    retina = "/assets/images/guide/how-it-works/ecash/custody-spectrum@2x.png"
@@ -198,66 +225,28 @@ Explore guidelines and best practices for optimizing the use of ecash on Bitcoin
 
 {% include tip/open.html color="blue" icon="info" label="Ecash is a custodial solution" %}
 
-Bitcoin backed ecash is custodial, meaning someone else holds your bitcoin. Be aware that this subjects users to custodial risks.
+Bitcoin-backed ecash is custodial, meaning someone else holds your bitcoin. Be aware that this subjects users to custodial risks.
 
 {% include tip/close.html %}
 
 The spectrum of decentralization and custody for bitcoin ranges from highly decentralized to highly centralized. Holding self-custodial Bitcoin on the base layer is the least risky and most decentralized, rated at 0. Self-custodial Lightning is slightly more centralized at 1, while custodial Lightning moves further towards centralization at 6. ETFs sit at the other extreme, being the most centralized and risky. Ecash improves over custodial Lightning by providing better privacy and security.
 
 ### Ecash vs Custodial Lightning
-<div class="nodes -full-width" markdown="1">
-   <table>
-      <thead>
-         <tr>
-            <th>&nbsp;</th>
-            <th>
-               Ecash
-            </th>
-            <th>
-               Custodial Lightning
-            </th>
-         </tr>
-      </thead>
-      <tbody>
-         <tr>
-            <td>Privacy</td>
-            <td>✅</td>
-            <td>❌</td>
-         </tr>
-         <tr>
-            <td>Secure Against Theft (Rug Pulls)</td>
-            <td>❌</td>
-            <td>❌</td>
-         </tr>
-         <tr>
-            <td>IOUs</td>
-            <td>✅</td>
-            <td>✅</td>
-         </tr>
-         <tr>
-            <td>Offline Settlement</td>
-            <td>✅</td>
-            <td>❌</td>
-         </tr>
-         <tr>
-            <td>Regulatory Risk</td>
-            <td>⚠️</td>
-            <td>⚠️</td>
-         </tr>
-         <tr>
-            <td>Bearer Asset</td>
-            <td>✅</td>
-            <td>❌</td>
-         </tr>
-      </tbody>
-   </table>
-</div>
 
-* **Privacy** - Ecash uses Chaumian blinding signatures, which makes it difficult to trace transactions back to users. Custodial lightning provides less privacy as the custodian has visibility over transactions and user activities.
+| Feature | Ecash| Custodial Lightning |
+|-------|----------|----------|
+| Privacy | ✅ | ❌ |
+| Secure Against Theft (Rug Pulls) | ⚠️ | ❌ |
+| IOUs | ✅ | ✅ |
+| Offline Settlement | ✅ | ❌ |
+| Regulatory Risk | ⚠️ | ⚠️ |
+| Bearer Asset | ✅ | ❌ |
 
-* **Secure Against Theft (Rug Pulls)** - Operators can potentially abscond with user funds, leading to a rug pull scenario.
+* **Privacy** - Ecash uses blinding signatures, which makes it difficult to trace transactions back to users. Custodial lightning provides less privacy as the custodian has visibility over transactions and user activities.
 
-* **IOUs** - Both systems represent IOUs from the central operator or custodian, meaning they are not direct bitcoin ownership.
+* **Secure Against Theft (Rug Pulls)** - Solo mints run by a single entity are more susceptible to rug pull scenarios. Multiple-guardian federations are more secure against theft, as funds are stored in a multi-sig wallet and require multiple guardians to be malicious or compromised for theft to occur.
+
+* **IOUs** - Both systems represent IOUs from a custodian, meaning they are not direct bitcoin ownership.
 
 * **Offline Settlement** - Ecash can be transferred offline, whereas custodial Lightning transactions typically require an online connection.
 
@@ -265,26 +254,13 @@ The spectrum of decentralization and custody for bitcoin ranges from highly dece
 
 * **Bearer Asset** - Ecash tokens are bearer assets, meaning the mint cannot freeze the token once issued.
 
+---
 
-## Advantages of bitcoin backed ecash
-{% include picture.html
-   image = "/assets/images/guide/how-it-works/ecash/connected@1x.png"
-   retina = "/assets/images/guide/how-it-works/ecash/connected@2x.png"
-   mobile = "/assets/images/guide/how-it-works/ecash/connected@1x.png"
-   mobileRetina = "/assets/images/guide/how-it-works/ecash/connected@2x.png"
-   alt-text = "An illustration of cashu, fedimint, and lightning nodes connected in a mesh network."
-   caption = "Lightning is the connective tissue between ecash and bitcoin."
-   width = 800
-   height = 456
-   layout = "full-width"
+Next, we do a technical deep dive into how [Cashu]({{ '/guide/how-it-works/ecash/cashu' | relative_url }}) works.
+
+{% include next-previous.html
+   previousUrl = "/guide/how-it-works/payment-request-formats/"
+   previousName = "Payment Request Formats"
+   nextUrl = "/guide/how-it-works/ecash/cashu/"
+   nextName = "Cashu"
 %}
-
-* **Enhanced Privacy** - Ecash uses blinded signatures, ensuring that transaction details, including user identities and amounts, remain hidden. The mint does not have access to user transaction data or balances.
-
-* **Speed** - Since transactions are processed by a centralized mint ecash transactions are fast and efficient, which helps in handling a large volume of transactions without the limitations that exist on bitcoin on-chain or the Lightning Network.
-
-* **Low Costs** - The processing of ecash transactions is inexpensive, making it a cost-effective solution for both small and large payments.
-
-* **Ease of Use** - Users do not need to manage complex aspects of the bitcoin, such as channels or liquidity, simplifying the user experience.
-
-* **Flexible Mint Options** - Multiple independent mints can operate, allowing users to choose mints based on their reputation, fees, and other preferences. This decentralization reduces reliance on a single entity.

@@ -35,7 +35,17 @@ Illustration sources
 %}
 
 # Fedimint
-Fedimint is the first bitcoin backed ecash protocol. Fedimint decentralizes trust across a federation of guardians, ensuring that no single entity has complete control over user funds. Fedimint allows for various Federation configurations, each catering to different needs. These configurations include **Federated Mints**, **Federated Single Guardian Mints**, and **Unfederated Mints**, each with its strengths and trade-offs.
+Fedimint is the first bitcoin-backed ecash protocol. Fedimint decentralizes trust across a federation of guardians, ensuring that no single guardian has complete control over user funds. Fedimint allows for various Federation configurations, each catering to different needs. These configurations include **Federated Mints**, **Federated Single Guardian Mints**, and **Solo Mints (Unfederated Mints)**, each with its strengths and trade-offs.
+
+## Role of Guardians
+Guardians are participants who collaboratively manage a federations operations. They secure the federation's funds using multi-sig wallets, validate transactions through consensus, and control ecash issuance and redemption.
+
+## Role of Gateways
+A gateway is a service that facilitates interactions between the federation (which operates largely off-chain) and the Lightning Network. A gateway acts as a bridge, enabling users within the federation to make payments to and receive payments on the Lightning Network.
+
+**How Gateways Work**: The gateway accepts bitcoin payments on the Lightning Network and converts them into the bitcoin-backed ecash tokens used within the federation. It can also convert bitcoin-backed ecash tokens into bitcoin and send them over the Lightning Network. This is crucial because it allows the users within a federation to interact with the outside bitcoin and Lightning Network.
+
+**Vetted Gateways**: A vetted gateway is one that has been approved by the federation's guardians as reliable and trustworthy. This vetting process helps to ensure that users' transactions are handled by gateways that have a track record of reliability, reducing the likelihood of payment failures.
 
 ## Design best practices
 To learn more about Fedimint specific design best practices you can check out the [Design best practices]({{ '/guide/how-it-works/ecash/design-best-practices' | relative_url }}) section.
@@ -70,7 +80,7 @@ Federated Mints are the standard when it comes to security and resilience in the
 * **Complex setup** - Coordinating multiple guardians adds steps and cost.
 
 
-### Federated single guardian mints
+### Federated Single Guardian Mints
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/ecash/single-mint@1x.jpg"
@@ -88,7 +98,7 @@ This model offers a compromise between security and simplicity. A single guardia
 
 #### Pros:
 
-* **Enhanced Resilience** - Even if some servers fail, the mint remains operational, offering a good balance of security and simplicity.
+* **Enhanced Resilience** - By using servers from multiple providers, the mint remains operational even during scheduled downtime or attempts of censorship, ensuring both reliability and security.
 
 * **Simplified Setup** - Easier to set up compared to a fully federated mint, making it accessible while still offering improved resilience over a solo setup.
 
@@ -96,7 +106,7 @@ This model offers a compromise between security and simplicity. A single guardia
 
 * **Security Trade-off** - With only one guardian, there’s still a single point of failure, making it less secure than a fully federated setup.
 
-### Unfederated Mints (Solo Mints)
+### Solo Mints (Unfederated Mints)
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/ecash/solomint@1x.jpg"
@@ -110,7 +120,7 @@ This model offers a compromise between security and simplicity. A single guardia
    layout = "full-width"
 %}
 
-Unfederated Mints are the simplest and most cost-effective option. Here, a single guardian manages the entire mint, making it easy to set up but with significant trade-offs in terms of security and resilience.
+Solo mints are the simplest and most cost-effective option. Here, a single guardian manages the entire mint, making it easy to set up but with significant trade-offs in terms of security and resilience.
 
 #### Pros:
 
@@ -123,8 +133,32 @@ Unfederated Mints are the simplest and most cost-effective option. Here, a singl
 * **High Risk** - With all control in the hands of one guardian, the risks of loss or theft are much higher. Additionally, if the server goes offline, users lose access to the federation until it’s restored.
 
 ## When to Use Fedimint
-* **Federated Trust Models** - Use Fedimint when your application benefits from spreading trust across multiple entities.
+* **Federated Trust Models** - Use Fedimint whenever a, custodial Lightning and ecash wallet is required where single points of failure aren't acceptable, i.e. when larger amounts are being stored or reliability is a concern.
 
-**Products that use Fedimint**
+## Products That Use Fedimint
+
+### Wallets
 - [Fedi](https://www.fedi.xyz)
+- [Mutiny](https://www.mutinywallet.com/  )
+- [Webimint](https://github.com/elsirion/webimint-rs)
+
+### Services
 - [Clovyr](https://clovyr.app/)
+
+For a comprehensive list of products and services that use Fedimint visit [Awesome Fedimint](https://github.com/fedimint/awesome-fedimint).
+
+## Fedimint Resources
+- [Fedimint Website](https://fedimint.org/)
+- [Fedimint Documentation](https://docs.fedimint.org/)
+- [Fedimint Observer](https://observer.fedimint.org/)
+
+---
+
+Next, let's take a look at some [ecash design best practices]({{ '/guide/how-it-works/ecash/design-best-practices' | relative_url }}).
+
+{% include next-previous.html
+   previousUrl = "/guide/how-it-works/ecash/cashu/"
+   previousName = "Cashu"
+   nextUrl = "/guide/how-it-works/ecash/design-best-practices/"
+   nextName = "Ecash design best practices"
+%}
