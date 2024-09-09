@@ -361,13 +361,13 @@ In addition to recovery methods mentioned [here](guide/daily-spending-wallet/bac
 - Reduces the possibility of mistakes while handling on-chain addresses
 - Allows users to optionally infer payment source through labels
 - Auto-applied labels improve coin-labelling and coin selection
-- Scanning can be delegated without sharing on-chain addresses before payments are received
+- Scanning process is more private since sharing on-chain addresses (or xpubs) is not required
 
 {% include fact/close.html %}
 
 {% include fact/cons.html %}
 
-- Static address does not match on-chain addresses in the transaction, breaking conceptual model for seasoned users
+- Static addresses does not match on-chain addresses in the transaction, breaking conceptual model for seasoned users
 - Scanning for payments doesn’t work well with electrum servers (widely used by wallets)
 
 {% include fact/close.html %}
