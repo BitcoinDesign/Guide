@@ -324,24 +324,25 @@ The tradeoff that silent payments offer for all their benefits is a higher block
    layout = "float-right-desktop -background -shadow"
 %}
 
-Like [lightning wallets](/guide/daily-spending-wallet/backup-and-recovery/cloud-backup/), on-chain bitcoin wallets supporting full-featured silent payments require file backups (in the cloud or offline) since the wallet has important [user metadata](/guide/daily-spending-wallet/backup-and-recovery/landing-page/#user-metadata) besides key material. These backup files may contain:
-- recovery phrase
+Like [lightning wallets](/guide/daily-spending-wallet/backup-and-recovery/cloud-backup/), on-chain bitcoin wallets supporting full-featured silent payments require file backups (cloud or offline) since the wallet has important [user metadata](/guide/daily-spending-wallet/backup-and-recovery/landing-page/#user-metadata) besides key material. The following items are unique to silent payment wallets:
 - scan and/or spend keys
-- tweak data
+- [tweak data](https://github.com/bitcoin/bips/blob/master/bip-0352.mediawiki#user-content-Tweak_Data)
 - labels
 - contacts
 - transaction IDs
-- wallet birthday
+
+Allowing the user to manually note some of this information is helpful in case the user misplaces the backup file or recovery application does not support backup files.
 
 </div>
 
-As a best practice, some of the above information such as the recovery phrase or wallet birthday should also be shown in the UI itself for partial manual backup in case the user misplaces the file or recovery application does not support backup files.
+{% include tip/recommendation.html %}
 
-While simply backing up the seed is sufficient, but results in longer wallet recovery times and causes loss of useful information.
+Applications should display backup information such as recovery phrase or wallet birthday in the UI itself for partial manual backup.
 
-> Since each silent payment output address is derived independently, regular backups are recommended.
->
-> <cite> <a href="https://github.com/bitcoin/bips/blob/master/bip-0352.mediawiki">BIP-352</a></cite>
+{% include tip/close.html %}
+
+Like regular wallets, silent payment wallets can also be backed up & recovered by simply backing up the seed. However, it may result in longer recovery times as well as loss of valuable metadata.
+
 
 ### Recovery
 
