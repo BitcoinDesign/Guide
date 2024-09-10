@@ -144,8 +144,8 @@ Silent payments are made in 4 broad steps:
 {% include picture.html
    image = "/assets/images/guide/how-it-works/silent-payments/how-silent-payments-work.png"
    retina = "/assets/images/guide/how-it-works/silent-payments/how-silent-payments-work@2x.png"
-   mobile = "/assets/images/guide/how-it-works/silent-payments/how-silent-payments-work.png"
-   mobileRetina = "/assets/images/guide/how-it-works/silent-payments/how-silent-payments-work@2x.png"
+   mobile = "/assets/images/guide/how-it-works/silent-payments/how-silent-payments-work-mobile.png"
+   mobileRetina = "/assets/images/guide/how-it-works/silent-payments/how-silent-payments-work-mobile@2x.png"
    alt-text = "An image that illustrates how silent payments work in 4 steps."
    caption = "Alice posts a static address on the website of her non-profit, Chasing Rabbits. Bob uses it to send bitcoin from his wallet. This transaction pays a derived on-chain address that Alice can identify as a donation to her by scanning the blockchain."
    width = 1024
