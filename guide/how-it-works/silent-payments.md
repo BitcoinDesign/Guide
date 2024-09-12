@@ -209,8 +209,8 @@ When she receives payments from any of these sources, the respective label(s) wi
 {% include picture.html
    image = "/assets/images/guide/how-it-works/silent-payments/how-silent-payment-labels-work.png"
    retina = "/assets/images/guide/how-it-works/silent-payments/how-silent-payment-labels-work@2x.png"
-   mobile = "/assets/images/guide/how-it-works/silent-payments/how-silent-payment-labels-work.png"
-   mobileRetina = "/assets/images/guide/how-it-works/silent-payments/how-silent-payment-labels-work@2x.png"
+   mobile = "/assets/images/guide/how-it-works/silent-payments/how-silent-payment-labels-work-mobile.png"
+   mobileRetina = "/assets/images/guide/how-it-works/silent-payments/how-silent-payment-labels-mobile@2x.png"
    alt-text = "An image that illustrates how labels feature in silent payments works."
    caption = "."
    width = 1024
