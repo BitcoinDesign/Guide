@@ -320,7 +320,7 @@ The tradeoff that silent payments offer for all their benefits is a higher block
    width = 250
    height = 522
    alt-text = "A backup flow screen with a calendar visual highlighting the wallet creation date and mentioning it prominently."
-   caption = "Display wallet birthday as a part of the backup flow and explain the benefit of storing it for quicker recovery."
+   caption = "Display wallet birthday as a part of the backup flow and explain the benefit of storing it."
    layout = "float-right-desktop -background -shadow"
 %}
 
@@ -346,9 +346,12 @@ Like regular wallets, silent payment wallets can also be backed up & recovered b
 
 ### Recovery
 
-Applications should provide users multiple ways to restore their wallet and recover funds. Even BIP-39 wallets, which usually don't require a backup file method should use file backups to enable full benefits of silent payments. Payment detection in silent payments require a scanning process that can be significantly sped up by entering the wallet creation date (wallet birthday).
+In addition to recovery methods mentioned [here](/guide/daily-spending-wallet/backup-and-recovery/recovery/), applications may enable manual recovery with data unique to silent payments wallets, such as scan/spend key material.
 
-In addition to recovery methods mentioned [here](guide/daily-spending-wallet/backup-and-recovery/recovery/), applications may need to enable recovery with scan/spend key material.
+Allowing users to enter the wallet creation date (wallet birthday) during recovery can help reduce recovery time substantially.
+
+Applications should allow both backup & recovery through multiple methods. This is especially important during early stages of adoption when the backup & recovery processes are not standardised, and many wallets may not support silent payments.
+
 
 {% include image-gallery.html pages = page.images_recovery %}
 
