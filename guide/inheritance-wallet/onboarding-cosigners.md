@@ -144,7 +144,7 @@ The family savings wallet is now fully functional:
 - Bob and Alice now have access to the shared wallet.
 - They can view the wallet and its balance in their respective apps.
 - Both can initiate and sign transactions using their respective devices.
-- Neither their children nor their lawyer has access to the wallet, as the wallet configuration hasn't been imported into their respective apps.
+- Neither their children nor their lawyer have access to the wallet, as the wallet configuration hasn't been imported into their respective apps.
 
 On the next page we will look into how the couple backs up the wallet. 
 
