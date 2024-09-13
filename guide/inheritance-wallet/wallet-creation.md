@@ -287,7 +287,15 @@ The main difference is that the inheritance key set should only be unlocked afte
 
 ## Step 2: Adding the signing keys
 
-The wallet is now fully configured. What is left to do is to add the signing keys. Adding a key technically means that users have to import the extended public key (XPUB) from each signing device that should be used to sign transactions. 
+Now that the wallet rules are configured, the next step is to add the signing keys to the wallet configuration. Adding a key technically means that users have to import the extended public key (XPUB) from each signing device that should be used to sign transactions. For the Jones family, all signing keys are stored on dedicated hardware wallets.
+
+
+{% include tip/open.html color="blue" icon="info" label="Important security note" %}
+
+While it's technically possible to use smartphones or personal computers as signing devices, this is not recommended. These devices often connect to the internet, making them more vulnerable to cyber attacks. Using dedicated hardware wallets significantly enhances security.
+
+{% include tip/close.html %}
+
 
 ### Adding the primary keys
 

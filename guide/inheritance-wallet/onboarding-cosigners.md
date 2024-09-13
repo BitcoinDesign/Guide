@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Onboarding cosigners
+title: Cosigner onboarding
 description: This page describes how Alice sets up the wallet in her app and activates it on her signing device.
 nav_order: 3
 parent: Inheritance wallet
@@ -96,55 +96,50 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
 
 ---
 
-In the previous step, Bob [created the wallet]({{ '/guide/inheritance-wallet/wallet-creation/' | relative_url }}) on his device. The next step is to get Alice set up as a cosigner and to enable her to sign transactions. To do this Alice needs to:
+In the previous step, Bob used our application to [create the wallet]({{ '/guide/inheritance-wallet/wallet-creation/' | relative_url }}). The next step is to get Alice set up as a cosigner and to enable her to sign transactions. To do this Alice needs to:
 
-1. Import the wallet configuration to her app.
-2. Enable her BitBox to sign transactions. 
+1. Import the wallet configuration to her app
+2. Activate the wallet on her BitBox, so that it can sign transactions
 
-### Wallet onboarding
-The first step is to add the family savings wallet to Alice's app.
+It's important to understand that importing the wallet to the phone does not enable Alice to sign transactions yet. Her signing key is held on her BitBox, as we have covered on the [wallet creation page]({{ '/guide/inheritance-wallet/wallet-creation/#step-2-adding-the-signing-keys' | relative_url }}). Both, the wallet app on her phone and the signing device need to know about the wallet configuration, so that they can work together to sign transactions. 
 
-#### Bob shares the wallet configuration
-By tapping the "onboard cosigner" task, Bob can display a QR code that Alice scans to import the wallet configuration. Alternatively, Bob can share the configuration over a secure messaging channel if Alice is elsewhere.
+#### Bob shares the wallet configuration with Alice
+
+The first step is to import the family savings wallet to Alice's app. By tapping the "onboard cosigner" task, Bob can display a QR code that Alice scans to import the wallet configuration. Alternatively, Bob can share the configuration over a secure messaging channel if Alice is elsewhere.
 
 {% include image-gallery.html pages = page.images_bob-export-config %}
 
-The app also shows an option to view the [wallet descriptor](https://bitcoin.design/guide/glossary/#output-script-descriptor). The wallet descriptor is a small piece of text that contains all the information that a wallet application needs to recover a multi-key wallet. We will cover this topic in more detail in the chapter about the wallet backup.
+The app also shows an option to view the [wallet descriptor](https://bitcoin.design/guide/glossary/#output-script-descriptor), which is a small piece of text that contains all the information that a wallet application needs to recover a multi-key wallet. We will cover this topic in more detail in the following chapter about the wallet backup.
 
-After Alice has successfully set up the wallet on her end, Bob checks off the task. For our application, this is a manual step, because it does not run a server that coordinates activity between the users. This adds a bit more friction to the user experience but minimizes reliance on the wallet provider.
+#### Alice imports the wallet to her app
 
-#### Alice sets up the wallet on her app
-
-Alice will scan the QR code from Bob's phone to import the wallet into her app. She reviews the final wallet configuration and hits "add wallet".
+Alice scans the QR code from Bob's phone to import the wallet to her app. She reviews the final wallet configuration and hits "add wallet".
 
 {% include image-gallery.html pages = page.images_alice-import-config %}
 
-On the home screen, the app shows the wallet, along with a task list that reminds her to: 
-- Save the wallet backup kit.
-- Enable her signing device.
+After the wallet has been added, the app home screen shows the wallet, along with a task list that reminds her to:
 
-After Alice has successfully set up the wallet on her end, Bob checks off the task. For our application, this is a manual step, because it does not run a server that coordinates activity between the users. This adds a bit more friction to the user experience but minimizes reliance on the wallet provider.
+- Save the wallet recovery kit
+- Activate her signing device
 
-### Enabling the signing devices
 
-Bob and Alice's signing devices need to be enabled to sign transactions for the family savings wallet. This is done by importing the wallet configuration to each signing device.
+#### Alice activates the wallet on her BitBox 
 
-#### Bob did it during wallet creation
-Bob has already completed this step during the creation of the wallet. When he imported the keys from his Trezor and the shared ColdCard, he did so using a wired connection. During that process the wallet was automatically activated on the devices. If Bob had used an airgapped method (e.g. via QR code or SD card) he would also need to explicitly import the wallet to these two devices. 
-
-#### Alice enables her BitBox 
-
-What is left to do is for Alice to activate the wallet on her BitBox, so that she can sign transactions with it. 
+Alice taps on the reminder and imports the wallet configuration to the BitBox. 
 
 {% include image-gallery.html pages = page.images_alice-enable-device %}
 
-#### The wallet is ready
+After Alice has successfully activated the wallet on her BitBox, Bob checks off the "Onboard cosigners" task on his end. For our application, this is a manual step, because it does not run a server that coordinates activity between the users. This adds a bit more friction to the user experience but minimizes reliance on the wallet provider.
+
+While Alice was busy getting set up, Bob followed the same procedure to activate the wallet on his Trezor, as well as on the shared ColdCard, which they store in a safe location away from their home. 
+
+### The wallet is ready
 The family savings wallet is now fully functional: 
 
-- Bob and Alice now have access to the shared wallet.
-- They can view the wallet and its balance in their respective apps.
-- Both can initiate and sign transactions using their respective devices.
-- Neither their children nor their lawyer have access to the wallet, as the wallet configuration hasn't been imported into their respective apps.
+- Bob and Alice now have access to the shared wallet
+- They can view the wallet and its balance in their respective apps
+- Both can initiate and sign transactions using their respective devices
+- Neither their children nor their lawyer have access to the wallet, as the wallet configuration has not been shared with them
 
 On the next page we will look into how the couple backs up the wallet. 
 
