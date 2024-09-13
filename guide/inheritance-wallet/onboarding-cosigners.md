@@ -105,7 +105,7 @@ In the previous step, Bob [created the wallet]({{ '/guide/inheritance-wallet/wal
 The first step is to add the family savings wallet to Alice's app.
 
 #### Bob shares the wallet configuration
-Bob shares the wallet configuration with Alice by tapping on the "onboard cosigner" task. Just like during wallet creation, this displays a QR code that Alice can scan to import the configuration. Alternatively, Bob can share the configuration over a secure channel.
+By tapping the "onboard cosigner" task, Bob can display a QR code that Alice scans to import the wallet configuration. Alternatively, Bob can share the configuration over a secure messaging channel if Alice is elsewhere.
 
 {% include image-gallery.html pages = page.images_bob-export-config %}
 
