@@ -96,7 +96,7 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
 
 ---
 
-[So far]({{ '/guide/inheritance-wallet/wallet-creation/' | relative_url }}), the wallet has been created on Bob's app. The next step is to get Alice set up as a cosigner and to enable her to sign transactions. To do this Alice needs to:
+In the previous step, Bob [created the wallet]({{ '/guide/inheritance-wallet/wallet-creation/' | relative_url }}) on his device. The next step is to get Alice set up as a cosigner and to enable her to sign transactions. To do this Alice needs to:
 
 1. Import the wallet configuration to her app.
 2. Enable her BitBox to sign transactions. 
