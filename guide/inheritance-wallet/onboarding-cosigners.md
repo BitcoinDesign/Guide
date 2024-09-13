@@ -99,7 +99,7 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
 In the previous step, Bob used our application to [create the wallet]({{ '/guide/inheritance-wallet/wallet-creation/' | relative_url }}). The next step is to get Alice set up as a cosigner and to enable her to sign transactions. To do this Alice needs to:
 
 1. Import the wallet configuration to her app
-2. Activate the wallet on her BitBox, so that it can sign transactions
+2. Activate the wallet on her BitBox, by importing the wallet configuration to the device
 
 It's important to understand that importing the wallet to the phone does not enable Alice to sign transactions yet. Her signing key is held on her BitBox, as we have covered on the [wallet creation page]({{ '/guide/inheritance-wallet/wallet-creation/#step-2-adding-the-signing-keys' | relative_url }}). Both, the wallet app on her phone and the signing device need to know about the wallet configuration, so that they can work together to sign transactions. 
 
