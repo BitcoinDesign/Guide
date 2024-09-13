@@ -127,7 +127,7 @@ After Alice has successfully set up the wallet on her end, Bob checks off the ta
 
 ### Enabling the signing devices
 
-Bob and Alice's signing devices need to be enabled to sign transactions for the family savings wallet. This is done by importing the wallet configuration to each device.
+Bob and Alice's signing devices need to be enabled to sign transactions for the family savings wallet. This is done by importing the wallet configuration to each signing device.
 
 #### Bob did it during wallet creation
 Bob has already completed this step during the creation of the wallet. When he imported the keys from his Trezor and the shared ColdCard, he did so using a wired connection. During that process the wallet was automatically activated on the devices. If Bob had used an airgapped method (e.g. via QR code or SD card) he would also need to explicitly import the wallet to these two devices. 
