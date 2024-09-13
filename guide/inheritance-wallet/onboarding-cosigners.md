@@ -121,7 +121,7 @@ Alice will scan the QR code from Bob's phone to import the wallet into her app. 
 
 On the home screen, the app shows the wallet, along with a task list that reminds her to: 
 - Save the wallet backup kit.
-- Enable her BitBox to sign transactions.
+- Enable her signing device.
 
 After Alice has successfully set up the wallet on her end, Bob checks off the task. For our application, this is a manual step, because it does not run a server that coordinates activity between the users. This adds a bit more friction to the user experience but minimizes reliance on the wallet provider.
 
