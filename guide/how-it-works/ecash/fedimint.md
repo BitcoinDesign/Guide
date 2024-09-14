@@ -47,7 +47,7 @@ A gateway is a service that facilitates interactions between the federation (whi
 
 **Vetted Gateways**: A vetted gateway is one that has been approved by the federation's guardians as reliable and trustworthy. This vetting process helps to ensure that users' transactions are handled by gateways that have a track record of reliability, reducing the likelihood of payment failures.
 
-## Design best practices
+## Design Best Practices
 To learn more about Fedimint specific design best practices you can check out the [Design best practices]({{ '/guide/how-it-works/ecash/design-best-practices' | relative_url }}) section.
 
 

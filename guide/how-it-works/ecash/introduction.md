@@ -233,26 +233,25 @@ The spectrum of decentralization and custody for bitcoin ranges from highly dece
 
 ### Ecash vs Custodial Lightning
 
+##### Legend
+✅ Strongly mitigates the issue<br>
+⚠️ Mitigates the issue somewhat<br>
+❌ No impact on the issue
+
 | Feature | Ecash| Custodial Lightning |
 |-------|----------|----------|
 | Privacy | ✅ | ❌ |
 | Secure Against Theft (Rug Pulls) | ⚠️ | ❌ |
-| IOUs | ✅ | ✅ |
-| Offline Settlement | ✅ | ❌ |
-| Regulatory Risk | ⚠️ | ⚠️ |
-| Bearer Asset | ✅ | ❌ |
+| Offline Transfer | ✅ | ❌ |
+| Regulatory Risk | ❌ | ❌ |
 
 * **Privacy** - Ecash uses blinding signatures, which makes it difficult to trace transactions back to users. Custodial lightning provides less privacy as the custodian has visibility over transactions and user activities.
 
 * **Secure Against Theft (Rug Pulls)** - Solo mints run by a single entity are more susceptible to rug pull scenarios. Multiple-guardian federations are more secure against theft, as funds are stored in a multi-sig wallet and require multiple guardians to be malicious or compromised for theft to occur.
 
-* **IOUs** - Both systems represent IOUs from a custodian, meaning they are not direct bitcoin ownership.
-
-* **Offline Settlement** - Ecash can be transferred offline, whereas custodial Lightning transactions typically require an online connection.
+* **Offline Transfer** - Ecash can be transferred offline, while custodial Lightning typically requires an online connection. However, ecash needs to be redeemed online, and until then, the recipient risks double spending. In such cases, proof of double spend can help deter theft in some social situations.
 
 * **Regulatory Risk** - Both are subject to regulatory actions that can impact their operations. Mint operators could be affected by changes in laws or enforcement actions.
-
-* **Bearer Asset** - Ecash tokens are bearer assets, meaning the mint cannot freeze the token once issued.
 
 ---
 

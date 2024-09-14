@@ -71,7 +71,7 @@ Illustration sources
 # Cashu
 Cashu operates on a model where any user can run their own solo mint or join an existing mint. This makes Cashu an easy to deploy, flexible, and agile approach to managing bitcoin-backed ecash.
 
-## Design best practices
+## Design Best Practices
 To learn more about Cashu specific design best practices you can check out the [Design best practices]({{ '/guide/how-it-works/ecash/design-best-practices' | relative_url }}) section.
 
 ## Cashu Mints
@@ -106,7 +106,7 @@ A Cashu mint operates simply and centrally. One entity (the mint) handles the en
 
 * **Localized or Small Community Solutions** - In scenarios where independent mints operated by trusted local entities can serve a community, enhancing trust and customization based on local needs.
 
-## Products that use Cashu
+## Products That Use Cashu
 
 ### Wallets
 - [Boardwalk Cash](https://boardwalkcash.com/)
@@ -125,7 +125,7 @@ A Cashu mint operates simply and centrally. One entity (the mint) handles the en
 
 For a comprehensive list of products and services that use Cashu visit [Awesome Cashu](https://github.com/cashubtc/awesome-cashu).
 
-## Cashu resources
+## Cashu Resources
 Cashu Documentation - Access the official Cashu documentation for detailed information on setup, usage, and integration.
 - [Cashu Website](https://cashu.space/)
 - [Cashu Documentation](https://docs.cashu.space/)
