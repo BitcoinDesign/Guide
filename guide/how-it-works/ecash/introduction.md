@@ -111,6 +111,9 @@ Cashu lets users run and operate their own solo mints or place trust in a solo m
 Learn about Fedimint's federated model, which decentralizes trust by involving multiple parties through the use of multi-sig.
 
 ---
+
+## Using Ecash
+
 {% include picture.html
    image = "/assets/images/guide/how-it-works/ecash/using-ecash@1x.jpg"
    retina = "/assets/images/guide/how-it-works/ecash/using-ecash@2x.jpg"
