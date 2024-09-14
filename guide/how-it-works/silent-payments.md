@@ -295,6 +295,8 @@ The coin(s) selected for a transaction determine the derived on-chain address du
 
 Receiving flows are likely to be used less often since static addresses can be safely reused. If the receiver has publicly posted their static address, they will receive payments without any interaction with the sender. Therefore, applications should encourage users to add labels or a contact whenever they actively share a static address with a sender.
 
+Applications should also allow receivers to share an on-chain address itself in case the sender's wallet cannot send to static addresses.
+
 Some places where people can share static addresses (and add labels) include:
 - Social media pages
 - Fundraising websites
