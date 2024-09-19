@@ -85,7 +85,7 @@ Editor's notes
 
 Privacy is not a crime.
 
-Thanks to josie for his patience guidance as well as ruben and rearden for their reviews & counsel.
+Thanks to josie for his patience, guidance as well as ruben and rearden for their reviews & counsel.
 
 This page provides UX insights, best practices and designs for silent payments.
 
@@ -118,9 +118,9 @@ https://www.figma.com/design/q8IYl9UVsOWkkPhs4IkHQR/Bitcoin-Wallet-UI-Kit-%26-De
 
 ---
 
-[Silent payments](https://github.com/bitcoin/bips/blob/master/bip-0352.mediawiki) is a protocol the uses static addresses to simplify payment experience while preserving privacy. Receivers can share the static address once, but senders can use it to derive unique on-chain addresses with every payment. This prevents [address reuse](/guide/glossary/address/#address-reuse) without repeated user interaction.
+[Silent payments](https://github.com/bitcoin/bips/blob/master/bip-0352.mediawiki) is a protocol the uses static addresses to simplify payment experience while preserving privacy. Once the receiver shares a static address, senders derive a new unique on-chain address with it they make a payment. This prevents [address reuse](/guide/glossary/address/#address-reuse) without repeated user interaction.
 
-For eg: Alice can simply post a static address on her website, and receive a bitcoin donations from Bob at unique on-chain addresses. The static address itself never shows up on-chain.
+For eg: Alice can simply post a static address on her website, and receive bitcoin donations at unique on-chain addresses. The static address itself never shows up on-chain.
 
 Silent payments also allow users to customize their static address with labels that are detected when payments are received. This is a powerful tool that provides actionable information for [coin selection](/guide/how-it-works/silent-payments/#coin-selection) with minimal manual effort.
 
@@ -129,7 +129,7 @@ Static addresses & labels enable robust [contacts](/guide/how-it-works/silent-pa
 
 ### Rationale
 
-Since the blockchain is public, reusing an on-chain address for payments informs the network that these payments are made to the same user. However, specifying a new address for each transaction usually requires user interaction. This is error-prone and requires time & manual effort.
+Since the blockchain is public, reusing an on-chain address for payments informs the network that these payments are made to the same user. However, specifying a new address for each transaction usually requires user interaction. This is error-prone, takes time and requires manual effort.
 
 Silent payments circumvent both these issues by using static addresses (starting with `sp1`).
 
@@ -147,7 +147,7 @@ Silent payments are made in 4 broad steps:
    mobile = "/assets/images/guide/how-it-works/silent-payments/how-silent-payments-work-mobile.png"
    mobileRetina = "/assets/images/guide/how-it-works/silent-payments/how-silent-payments-work-mobile@2x.png"
    alt-text = "An image that illustrates how silent payments work in 4 steps."
-   caption = "Alice posts a static address on the website of her non-profit, Chasing Rabbits. Bob uses it to send bitcoin from his wallet. This transaction pays a derived on-chain address that Alice can identify as a donation to her by scanning the blockchain."
+   caption = "Alice posts a static address on the website of her non-profit, Chasing Rabbits. Bob uses it to send bitcoin from his wallet. This transaction pays a derived on-chain address that Alice can recognise while scanning the blockchain."
    width = 1024
    height = 522
    layout = "full-width"
@@ -155,8 +155,10 @@ Silent payments are made in 4 broad steps:
 
 ## A new conceptual model
 
-Silent payments introduces a new technical model that separates payment information such as addresses and keys based on their purpose.
+Silent payments introduce a new technical model that separates payment information based on their purpose.
 
+For eg: the static address is only shared with senders who use it to make payments.
+Below is a summary of the keys & addresses i
 
 | Silent payments' concept       | Shared with         | for: |
 |:-------------|:------------------|:------|
@@ -164,7 +166,6 @@ Silent payments introduces a new technical model that separates payment informat
 | Scan key     | Nodes & [light clients](/guide/how-it-works/nodes/#light-nodes)  | Payment scanning information
 | Spend key   | Wallet owner | Spending bitcoin
 
-For eg: the static address is only shared with senders who use it to make payments. It is not shared with nodes who only receive the scan key needed for identifying payments.
 
 The above model introduces a scan key that is used for payment scanning and a static address which is used for deriving on-chain addresses. This is in contrast with the BIP-32 model where [extended public keys](/guide/glossary/#extended-public-key-xpub-ypub-zpub) are used for both purposes. Below is a summary of the differences between the two models:
 
@@ -212,7 +213,7 @@ When she receives payments from any of these sources, the respective label(s) wi
    mobile = "/assets/images/guide/how-it-works/silent-payments/how-silent-payment-labels-work-mobile.png"
    mobileRetina = "/assets/images/guide/how-it-works/silent-payments/how-silent-payment-labels-mobile@2x.png"
    alt-text = "An image that illustrates how labels feature in silent payments works."
-   caption = "."
+   caption = "Alice customizes her static addresses with labels when shares them. Whenever she receives a payment from one of them, the label is auto-applied and detected by the wallet."
    width = 1024
    height = 801
    layout = "full-width"
@@ -237,23 +238,27 @@ Here's how businesses such as exchanges, merchants and vendors can use labels:
 
 ### Contacts
 
- Since senders can safely use the same static address for multiple payments, it is natural for them to want to store these for future use. Contacts are a great way to store them in terms that users can intuit: names and faces/images. The [contacts](/guide/daily-spending-wallet/contacts/) page here provides good guidance about the topic.
+ Since senders can safely use the same static address for multiple payments, it is natural for them to want to store these for future use. Contacts are a great way to do this in terms that users can intuit: names and faces/images. The [contacts](/guide/daily-spending-wallet/contacts/) page here provides good guidance about the topic.
 
- Silent payments (along with bolt-12) present a great opportunity to centre payments UX in terms of people instead of addresses, something that was not advisable before due to issues with on-chain address reuse.
+ Silent payments (along with bolt-12) allow applications the ability to base payments UX around people instead of addresses, something that was not advisable before due to issues with on-chain address reuse.
+
 
 {% include image-gallery.html pages = page.images_contacts %}
 
-#### Sender-id (or sender contacts)
-With labels and static addresses, the receiver can create contacts for parties they only receive bitcoin from, such as employers or customers. This is useful for invoicing, tracking payments, coin selection and further data analysis for businesses.
+{% include tip/tip.html %}
+
+ Contacts are not just for sending, the receiver can create contacts for parties they only receive bitcoin from. When they share a labelled static addresses with others, such as employers or customers, creating a contact can help invoicing, tracking payments and even coin selection data analysis.
+
+{% include tip/close.html %}
 
 
 ## Setup
 
-Applications can take a variety of approaches to set up and communicate silent payment wallets. Features such as reusable address or sender-id could be introduced and explained to users during the setup process. Some wallets may use unique or significant locations (mobile widget, custom app logos, watch faces) to house this static address for easy retrieval, and may highlight the same during setup.
+Applications can take a variety of approaches to set up and communicate silent payment wallets. Benefits of silent payments such as Contacts and auto-labelling can be explained during setup. Some wallets may use unique or significant locations (mobile widget, custom app logos, watch faces) to house this static address for easy retrieval, and may highlight the same during setup.
 
 {% include image-gallery.html pages = page.images_sp-onboarding %}
 
-Silent payment wallets may or may not be set up as [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) and/or [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) HD wallets, since the protocol does not require these. Since silent payments introduce a new model & primitives (such as spend key, scan key), the setup process might be a good opportunity to introduce some of these as needed without overloading the user.
+Silent payment wallets may or may not be set up as [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) and/or [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) HD wallets since the protocol does not require these.
 
 
 ## Sending
@@ -306,7 +311,7 @@ Some places where people can share static addresses (and add labels) include:
 </div>
 
 
-The tradeoff that silent payments offer for all their benefits is a higher blockchain scanning requirement. This scanning process is more computation-intensive and time-consuming than the currently-popular BIP-32 wallets. Mobile wallet users are likely to face a noticeable delay in the scanning process since they cannot be online all the time. While the scanning is takes place, applications should show progress and estimated time to complete the scanning process.
+The tradeoff with silent payments for all their benefits is a higher blockchain scanning requirement. This scanning process is more computation-intensive and time-consuming than popular BIP-32 wallets/addresses. Mobile wallet users are likely to face a noticeable delay in the detecting payments once they come online. While the scanning is takes place, applications should show progress and estimated time to complete the scanning process.
 
 
 ## Backup & Recovery
