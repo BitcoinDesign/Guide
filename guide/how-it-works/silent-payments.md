@@ -331,24 +331,21 @@ The tradeoff with silent payments for all their benefits is a higher blockchain 
    layout = "float-right-desktop -background -shadow"
 %}
 
-Like [lightning wallets](/guide/daily-spending-wallet/backup-and-recovery/cloud-backup/), on-chain bitcoin wallets supporting full-featured silent payments require file backups (cloud or offline) since the wallet has important [user metadata](/guide/daily-spending-wallet/backup-and-recovery/landing-page/#user-metadata) besides key material. The following items are unique to silent payment wallets:
+Like [lightning wallets](/guide/daily-spending-wallet/backup-and-recovery/cloud-backup/), on-chain wallets with robust silent payments functionality require file backups (cloud or offline). This is because such wallets have valuable [user metadata](/guide/daily-spending-wallet/backup-and-recovery/landing-page/#user-metadata) such as:
 - scan and/or spend keys
 - [tweak data](https://github.com/bitcoin/bips/blob/master/bip-0352.mediawiki#user-content-Tweak_Data)
-- labels
+- [labels](/guide/how-it-works/silent-payments/#labels)
 - contacts
-- transaction IDs
 
-Allowing the user to manually note some of this information is helpful in case the user misplaces the backup file or recovery application does not support backup files.
+Allowing the user to manually note some backup information in case the user misplaces the backup file or recovery application does not support backup files. Like regular wallets, silent payment wallets can also be backed up & restored with the recovery phrase. However, it may result in longer recovery times as well as loss of valuable metadata.
 
 </div>
 
 {% include tip/recommendation.html %}
 
-Applications should display backup information such as recovery phrase or wallet birthday in the UI itself for partial manual backup.
+Applications should display backup information such as recovery phrase or wallet birthday in the UI even if file backups are being performed. This could reuse existing functionality and serve as a partial manual backup.
 
 {% include tip/close.html %}
-
-Like regular wallets, silent payment wallets can also be backed up & recovered by simply backing up the seed. However, it may result in longer recovery times as well as loss of valuable metadata.
 
 
 ### Recovery
@@ -357,7 +354,7 @@ In addition to recovery methods mentioned [here](/guide/daily-spending-wallet/ba
 
 Allowing users to enter the wallet creation date (wallet birthday) during recovery can help reduce recovery time substantially.
 
-Applications should allow both backup & recovery through multiple methods. This is especially important during early stages of adoption when the backup & recovery processes are not standardised, and many wallets may not support silent payments.
+Applications should allow both backup & recovery through multiple methods. This is especially important when backup & recovery features are not standardised – during early stages of adoption and if wallets do not support silent payments.
 
 
 {% include image-gallery.html pages = page.images_recovery %}
@@ -396,8 +393,8 @@ Applications should allow both backup & recovery through multiple methods. This 
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/how-it-works/wallet-privacy/"
-   previousName = "Wallet privacy"
+   previousUrl = "/guide/how-it-works/sign-in-with-bitcoin/"
+   previousName = "Sign in with bitcoin"
    nextUrl = "/guide/how-it-works/wallet-selector"
    nextName = "Wallet selector"
 %}
