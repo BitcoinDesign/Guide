@@ -153,7 +153,7 @@ The diagram below provides a high-level overview of how Alice and Bob distribute
 %}
 
 
-#### Password Manager
+### Password Manager
 
 ##### Alice and Bob's personal vaults
 
@@ -177,7 +177,7 @@ To make sure that Christina and David will be able to retrieve both the recovery
 - Lawyer's contact details
 - Bank deposit box details
 
-#### Home safe
+### Home safe
 
 Bob places the following items in a tamper-evident bag and stores it in their home safe:
 
@@ -197,7 +197,7 @@ Bob places the following items in a tamper-evident bag and stores it in their ho
 
 This way, the family can access the material if needed, but any tampering would be immediately noticeable.
 
-#### Assisted inheritance material
+### Assisted inheritance material
 
 To enable the assisted inheritance route for their children, Alice and Bob provide their lawyer, Edward, with an encrypted copy of the recovery kit. They store the password separately in a bank deposit box. This way, Christina and David can access the funds through legal channels if necessary, without compromising privacy.
 
@@ -214,13 +214,13 @@ To enable the assisted inheritance route for their children, Alice and Bob provi
    height = 397
 %}
 
-#### Privacy considerations
+### Privacy considerations
 
 This approach makes a potential trade-off in terms of privacy, because the children could access the backup material and recover the wallet. This is acceptable for Alice and Bob, since they have good relationships and trust their children. After all, this is the reason they have chosen to include them in the setup in the first place.
 
 But even if Christina and David would breach their parents’ trust and import the wallet, they would not be able to move any funds, because their inheritance keys are time locked. And since Alice and Bob access their safe regularly, they would notice that the bag with the backup material has been opened. They can then safely move the funds to a new wallet, for which they would implement more restrictive security measures.
 
-#### Inheritance planning
+### Inheritance planning
 
 Alice and Bob keep a copy of their Last Will in the home safe. It references the bitcoin wallet and provides a lead to Edward, their lawyer. To ensure a smooth inheritance process, Alice and Bob also provide a sealed copy of the Will to Edward.
 
