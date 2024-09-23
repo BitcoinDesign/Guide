@@ -15,7 +15,7 @@ images_mint-list:
     - file: federation-list
       modalImage: federation-list@2x
       alt: List of federations with QR codes for easy scanning and joining.
-      caption: Federations with QR codes. Each QR code contains the federation's URL, allowing users to display, and invite another person to scan and join.
+      caption: Allow users to easily invite others to a mint/federation, by using well-placed QR codes containing the federation's URL.
     - file: cashu-mint-list
       modalImage: cashu-mint-list@2x
       alt: List of Cashu mints with mint addresses displayed.
@@ -33,7 +33,7 @@ images_pending:
     - file: pending-transaction-qr
       modalImage: pending-transaction-qr@2x
       alt: A QR code for a pending transaction with the token string available to copy to clipboard.
-      caption: QR code for a pending transaction.
+      caption: QR code for a pending token.
 
 images_mint-default:
     - file: cashu-mint-details
@@ -229,7 +229,7 @@ images_cashu-id:
    mobileRetina = "/assets/images/guide/how-it-works/ecash/best-practicies-mobile@2x.jpg"
    alt-text = "ecash best practices illustration"
    width = 1600
-   height = 700
+   height = 600
    layout = "full-width"
 %}
 
@@ -343,8 +343,8 @@ Verifying tokens after restoration might temporarily compromise their privacy. T
    retina = "/assets/images/guide/how-it-works/ecash/cashu-id1@2x.png"
    modalImage = "/assets/images/guide/how-it-works/ecash/cashu-id1@2x.png"
    alt-text = "Mint identity and version display in a wallet interface"
-   width = 250
-   height = 400
+   width = 507
+   height = 813
    layout = "float-right-desktop -background -shadow"
    caption = "Consider the most important information to display to the user about the mint."
 %}
@@ -363,8 +363,8 @@ Verifying tokens after restoration might temporarily compromise their privacy. T
    retina = "/assets/images/guide/how-it-works/ecash/cashu-id2@2x.png"
    modalImage = "/assets/images/guide/how-it-works/ecash/cashu-id2@2x.png"
    alt-text = "Mint descriptions display in a wallet interface"
-   width = 250
-   height = 338
+   width = 600
+   height = 813
    layout = "float-right-desktop -background -shadow"
    caption = "Different mint operator may use the description fields differently. Consider this when designing your mint details screen."
 %}
@@ -383,8 +383,8 @@ Verifying tokens after restoration might temporarily compromise their privacy. T
    retina = "/assets/images/guide/how-it-works/ecash/cashu-id3@2x.png"
    modalImage = "/assets/images/guide/how-it-works/ecash/cashu-id3@2x.png"
    alt-text = ""
-   width = 250
-   height = 541
+   width = 493
+   height = 813
    layout = "float-right-desktop -background -shadow"
    caption = "Contact information is optional for the mint operator to include. If there is no contact information, consider not displaying this metadata."
 %}
@@ -402,8 +402,8 @@ Verifying tokens after restoration might temporarily compromise their privacy. T
    retina = "/assets/images/guide/how-it-works/ecash/cashu-id4@2x.png"
    modalImage = "/assets/images/guide/how-it-works/ecash/cashu-id4@2x.png"
    alt-text = "Example of important announcements display in a wallet interface"
-   width = 250
-   height = 390
+   width = 521
+   height = 813
    layout = "float-right-desktop -background -shadow"
    caption = "A message of the day can consists of anything the mint operator wants to tell the user. It can for example be used to announce a new feature or a upcoming maintenance."
 %}
@@ -421,8 +421,8 @@ Verifying tokens after restoration might temporarily compromise their privacy. T
    retina = "/assets/images/guide/how-it-works/ecash/cashu-id5@2x.png"
    modalImage = "/assets/images/guide/how-it-works/ecash/cashu-id5@2x.png"
    alt-text = "Example of important announcements display in a wallet interface"
-   width = 250
-   height = 390
+   width = 515
+   height = 813
    layout = "float-right-desktop -background -shadow"
    caption = "Supported features are pulled by indexing a mints information and reading what nuts the mint has implemented."
 %}
@@ -478,8 +478,8 @@ It's important to inform users that auto-swapping involves fees and that the amo
    retina = "/assets/images/guide/how-it-works/ecash/federation-guardian-info@2x.png"
    modalImage = "/assets/images/guide/how-it-works/ecash/federation-guardian-info@2x.png"
    alt-text = ""
-   width = 250
-   height = 541
+   width = 375
+   height = 812
    layout = "float-right-desktop -background -shadow"
    caption = "Example of a guardian status display in a wallet interface."
 %}
@@ -524,8 +524,8 @@ Federations can provide configuration and metadata to users. These metadata fiel
    retina = "/assets/images/guide/how-it-works/ecash/federation-welcome@2x.png"
    modalImage = "/assets/images/guide/how-it-works/ecash/federation-welcome@2x.png"
    alt-text = "Federation welcome message display in a wallet interface."
-   width = 250
-   height = 321
+   width = 632
+   height = 812
    layout = "float-right-desktop -background -shadow"
    caption = "A welcome message being used durring the new user onboarding process."
 %}

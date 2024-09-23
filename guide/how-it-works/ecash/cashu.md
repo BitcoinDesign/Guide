@@ -64,7 +64,7 @@ Illustration sources
    mobileRetina = "/assets/images/guide/how-it-works/ecash/cashu-mobile@2x.jpg"
    alt-text = "ecash overview illustration"
    width = 1600
-   height = 700
+   height = 600
    layout = "full-width"
 %}
 
@@ -77,7 +77,7 @@ To learn more about Cashu specific design best practices you can check out the [
 ## Cashu Mints
 
 {% include picture.html
-   image = "/assets/images/guide/how-it-works/ecash/cashumint@1x.jpg"
+   image = "/assets/images/guide/how-it-works/ecash/cashumint.jpg"
    retina = "/assets/images/guide/how-it-works/ecash/cashumint@2x.jpg"
    mobile = "/assets/images/guide/how-it-works/ecash/cashumint-mobile@2x.jpg"
    mobileRetina = "/assets/images/guide/how-it-works/ecash/cashumint-mobile@2x.jpg"

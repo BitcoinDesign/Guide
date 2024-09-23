@@ -30,7 +30,7 @@ Illustration sources
    mobileRetina = "/assets/images/guide/how-it-works/ecash/fedimint-mobile@2x.jpg"
    alt-text = "ecash overview illustration"
    width = 1600
-   height = 700
+   height = 600
    layout = "full-width"
 %}
 
@@ -41,9 +41,9 @@ Fedimint is the first bitcoin-backed ecash protocol. Fedimint decentralizes trus
 Guardians are participants who collaboratively manage a federations operations. They secure the federation's funds using multi-sig wallets, validate transactions through consensus, and control ecash issuance and redemption.
 
 ## Role of Gateways
-A gateway is a service that facilitates interactions between the federation (which operates largely off-chain) and the Lightning Network. A gateway acts as a bridge, enabling users within the federation to make payments to and receive payments on the Lightning Network.
+A gateway is a service that facilitates interactions between the federation (which operates largely off-chain) and the lightning network. A gateway acts as a bridge, enabling users within the federation to make payments to and receive payments on the lightning network.
 
-**How Gateways Work**: The gateway accepts bitcoin payments on the Lightning Network and converts them into the bitcoin-backed ecash tokens used within the federation. It can also convert bitcoin-backed ecash tokens into bitcoin and send them over the Lightning Network. This is crucial because it allows the users within a federation to interact with the outside bitcoin and Lightning Network.
+**How Gateways Work**: The gateway accepts bitcoin payments on the lightning Network and converts them into the bitcoin-backed ecash tokens used within the federation. It can also convert bitcoin-backed ecash tokens into bitcoin and send them over the lightning network. This is crucial because it allows the users within a federation to interact with the outside bitcoin and lightning network.
 
 **Vetted Gateways**: A vetted gateway is one that has been approved by the federation's guardians as reliable and trustworthy. This vetting process helps to ensure that users' transactions are handled by gateways that have a track record of reliability, reducing the likelihood of payment failures.
 
@@ -56,14 +56,14 @@ To learn more about Fedimint specific design best practices you can check out th
 ### Federated Mints (4+ Guardians)
 
 {% include picture.html
-   image = "/assets/images/guide/how-it-works/ecash/federated-mint@1x.jpg"
+   image = "/assets/images/guide/how-it-works/ecash/federated-mint.jpg"
    retina = "/assets/images/guide/how-it-works/ecash/federated-mint@2x.jpg"
-   mobile = "/assets/images/guide/how-it-works/ecash/federated-mint-mobile@2x.jpg"
-   mobileRetina = "assets/images/guide/how-it-works/ecash/federated-mint-mobile@2x.jpg"
+   mobile = "/assets/images/guide/how-it-works/ecash/federated-mint-mobile.jpg"
+   mobileRetina = "/assets/images/guide/how-it-works/ecash/federated-mint-mobile@2x.jpg"
    alt-text = "An illustration of how users, ecash, and a federated mint interact."
    caption = "How guardians interact with users of federated mint."
    width = 800
-   height = 456
+   height = 500
    layout = "full-width"
 %}
 
@@ -83,14 +83,14 @@ Federated Mints are the standard when it comes to security and resilience in the
 ### Federated Single Guardian Mints
 
 {% include picture.html
-   image = "/assets/images/guide/how-it-works/ecash/single-mint@1x.jpg"
+   image = "/assets/images/guide/how-it-works/ecash/single-mint.jpg"
    retina = "/assets/images/guide/how-it-works/ecash/single-mint@2x.jpg"
-   mobile = "/assets/images/guide/how-it-works/ecash/single-mintmobile@2x.jpg"
-   mobileRetina = "assets/images/guide/how-it-works/ecash/single-mint-mobile@2x.jpg"
+   mobile = "/assets/images/guide/how-it-works/ecash/single-mintmobile.jpg"
+   mobileRetina = "/assets/images/guide/how-it-works/ecash/single-mint-mobile.jpg"
    alt-text = "An illustration of how users, ecash, and a single guardian mint interact."
    caption = "How a guardian interacts with users of a single guardian mint."
    width = 800
-   height = 456
+   height = 500
    layout = "full-width"
 %}
 
@@ -109,14 +109,14 @@ This model offers a compromise between security and simplicity. A single guardia
 ### Solo Mints (Unfederated Mints)
 
 {% include picture.html
-   image = "/assets/images/guide/how-it-works/ecash/solomint@1x.jpg"
+   image = "/assets/images/guide/how-it-works/ecash/solomint.jpg"
    retina = "/assets/images/guide/how-it-works/ecash/solomint@2x.jpg"
-   mobile = "/assets/images/guide/how-it-works/ecash/solomint-mobile@2x.jpg"
-   mobileRetina = "assets/images/guide/how-it-works/ecash/solomint-mobile@2x.jpg"
+   mobile = "/assets/images/guide/how-it-works/ecash/solomint-mobile.jpg"
+   mobileRetina = "/assets/images/guide/how-it-works/ecash/solomint-mobile.jpg"
    alt-text = "An illustration of how users, ecash, and a solo mint interact."
    caption = "How a guardian interacts with users of a solo mint."
    width = 800
-   height = 456
+   height = 500
    layout = "full-width"
 %}
 
@@ -133,7 +133,7 @@ Solo mints are the simplest and most cost-effective option. Here, a single guard
 * **High Risk** - With all control in the hands of one guardian, the risks of loss or theft are much higher. Additionally, if the server goes offline, users lose access to the federation until it’s restored.
 
 ## When to Use Fedimint
-* **Federated Trust Models** - Use Fedimint whenever a, custodial Lightning and ecash wallet is required where single points of failure aren't acceptable, i.e. when larger amounts are being stored or reliability is a concern.
+* **Federated Trust Models** - Use Fedimint whenever a, custodial lightning and ecash wallet is required where single points of failure aren't acceptable, i.e. when larger amounts are being stored or reliability is a concern.
 
 ## Products That Use Fedimint
 
