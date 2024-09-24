@@ -34,11 +34,11 @@ Illustration sources
 
 # Ecash
 
-Ecash is a digital payment system, developed by [David Chaum](https://en.wikipedia.org/wiki/David_Chaum) in 1983, that uses cryptographic techniques to ensure secure and private transactions.
+Ecash is a digital payment system, developed by [David Chaum](https://en.wikipedia.org/wiki/David_Chaum) in 1983, that uses cryptographic techniques to ensure secure and private payments.
 
-It operates through a mint that issues digital tokens in exchange for deposited funds. These tokens can be spent and received without revealing user identities or transaction details. Users can redeem their tokens for the original funds at any time.
+It operates through a mint that issues digital tokens in exchange for deposited funds. These tokens can be spent and received without revealing user identities or payment details. Users can redeem their tokens for the original funds at any time.
 
-Since no accounts or personal information are needed; the mint cannot see your balance, tokens, or transaction details, offering a highly private and efficient method for digital payments.
+Since no accounts or personal information are needed; the mint cannot see your balance, tokens, or payment details, offering a highly private and efficient method for digital payments.
 
 ## How bitcoin-backed ecash works
 {% include picture.html
@@ -46,37 +46,26 @@ Since no accounts or personal information are needed; the mint cannot see your b
    retina = "/assets/images/guide/how-it-works/ecash/how-ecash-works@2x.png"
    mobile = "/assets/images/guide/how-it-works/ecash/how-ecash-works@2x.png"
    mobileRetina = "/assets/images/guide/how-it-works/ecash/how-ecash-works@2x.png"
-   alt-text = "Diagram showing three mints (Mint 1, Mint 2, Mint 3) managing digital currency transactions with groups of users. Each mint is connected to a group of users represented by icons holding digital cash. The mints are interconnected with lightning bolts symbolizing fast or real-time transactions, and the Bitcoin symbol appears beneath each mint, indicating that the system is based on Bitcoin technology."
+   alt-text = "Diagram showing three mints (Mint 1, Mint 2, Mint 3) managing digital ecash payments with groups of users. Each mint is connected to a group of users represented by icons holding digital cash. The mints are interconnected with lightning bolts symbolizing fast or real-time payments, and the Bitcoin symbol appears beneath each mint, indicating that the system is based on Bitcoin technology."
    caption = "Three mints manage ecash tokens for users, connected by the lightning network."
    width = 800
    height = 508
    layout = "full-width"
 %}
 
-Bitcoin-backed ecash works by using protocols like [Fedimint]({{ '/guide/how-it-works/ecash/fedimint' | relative_url }}) and [Cashu]({{ '/guide/how-it-works/ecash/cashu/' | relative_url }}). Users deposit bitcoin, and in return, they receive bitcoin-backed ecash tokens. Users can then spend and receive these ecash tokens, which remain anonymous and unlinkable to their identity, enabling private transactions within the bitcoin ecosystem.
+Bitcoin-backed ecash works by using protocols like [Fedimint]({{ '/guide/how-it-works/ecash/fedimint' | relative_url }}) and [Cashu]({{ '/guide/how-it-works/ecash/cashu/' | relative_url }}). Users deposit bitcoin, and in return, they receive bitcoin-backed ecash tokens. Users can then spend and receive these ecash tokens, which remain anonymous and unlinkable to their identity, enabling private payments within the bitcoin ecosystem.
 
-{% include picture.html
-   image = "/assets/images/guide/how-it-works/ecash/connected.png"
-   retina = "/assets/images/guide/how-it-works/ecash/connected@2x.png"
-   mobile = "/assets/images/guide/how-it-works/ecash/connected.png"
-   mobileRetina = "/assets/images/guide/how-it-works/ecash/connected@2x.png"
-   alt-text = "Network diagram labeled ‘Connected through Lightning,’ showing a series of interconnected nodes represented by dots of different colors. Purple dots indicate Cashu nodes, blue dots indicate Fedimint nodes, and orange dots represent Lightning nodes. The nodes are linked by dotted lines, illustrating the network structure where various systems are connected through the Lightning Network."
-   caption = "Lightning is a popular connective tissue between ecash and bitcoin."
-   width = 800
-   height = 508
-   layout = "full-width"
-%}
 ### Key benefits
 
-* **Faster transactions** - Ecash systems process transactions almost instantly since they rely on a centralized mint. They do not require [network-wide consensus]({{ '/guide/how-it-works/nodes' | relative_url }}) or routing through multiple [lightning nodes]({{ '/guide/how-it-works/nodes/#routing-nodes' | relative_url }}).
+* **Faster payments** - Ecash systems process payments almost instantly since they rely on a centralized mint. They do not require [network-wide consensus]({{ '/guide/how-it-works/nodes' | relative_url }}) or routing through multiple [lightning nodes]({{ '/guide/how-it-works/nodes/#routing-nodes' | relative_url }}).
 
-* **Higher volume** - The centralized mint allows ecash systems to handle a larger volume of transactions efficiently. The bottlenecks typical of decentralized networks like the lightning network are avoided.
+* **Higher volume** - The centralized mint allows ecash systems to handle a larger volume of payments efficiently. The bottlenecks typical of decentralized networks like the lightning network are avoided.
 
-* **Simplified processing** - Transactions are validated and settled internally within the mint. This reduces complexity and avoids potential delays associated with routing and liquidity issues in the lightning network.
+* **Simplified processing** - payments are validated and settled internally within the mint. This reduces complexity and avoids potential delays associated with routing and liquidity issues in the lightning network.
 
-* **Consistent speed** - Ecash systems offer consistent transaction speeds regardless of network conditions. Unlike the lightning network, where transaction speeds can be affected by channel capacity, node connectivity, and node hardware.
+* **Consistent speed** - Ecash systems offer consistent payment speeds regardless of network conditions. Unlike the lightning network, where payment speeds can be affected by channel capacity, node connectivity, and node hardware.
 
-* **Enhanced privacy** - [Blinded signatures](https://en.wikipedia.org/wiki/Blind_signature) safeguard user identities and total balances. While the mint can see amounts for individual transactions (like paying an invoice or swapping proofs), it cannot associate these with specific users or determine anyone's total ecash holdings, as there are no user accounts.
+* **Enhanced privacy** - [Blinded signatures](https://en.wikipedia.org/wiki/Blind_signature) safeguard user identities and total balances. While the mint can see amounts for individual payments (like paying an invoice or swapping proofs), it cannot associate these with specific users or determine anyone's total ecash holdings, as there are no user accounts.
 
 ---
 ### Ecash protocols
@@ -140,17 +129,17 @@ Cashu and Fedimint use various terms for the processes of creating, redeeming, a
 
 **1. User deposits funds** - The user deposits bitcoin into a mint or federation. Typically this is done by generating a lightning invoice through the mint and paying it.
 
-**2. Token creation** - Upon successful payment, the wallet generates secrets and [blinds](https://en.wikipedia.org/wiki/Blinding_(cryptography)) them. The wallet then sends the blinded messages to the mint or federation, which returns [blind signature](https://en.wikipedia.org/wiki/Blind_signature) on the blinded messages. The blinding process ensures that the mint cannot link the tokens to the user, preserving privacy.
+**2. Ecash creation** - Upon successful payment, the wallet generates secrets and [blinds](https://en.wikipedia.org/wiki/Blinding_(cryptography)) them. The wallet then sends the blinded messages to the mint or federation, which returns [blind signature](https://en.wikipedia.org/wiki/Blind_signature) on the blinded messages. The blinding process ensures that the mint cannot link the tokens to the user, preserving privacy.
 
-**3. Token receipt** - The user receives a set of proofs that correspond to specific amounts of bitcoin. These proofs can be combined to create an ecash token of any amount denominated in bitcoin.
+**3. Ecash receipt** - The user receives a set of proofs that correspond to specific amounts of bitcoin. These proofs can be combined to create an ecash token of any amount denominated in bitcoin.
 
 #### Converting ecash to bitcoin
 
 **1. User initiates conversion** - User initiates a conversion request with their mint or federation.
 
-**2. Token verification and destruction** - The mint or federations verifies the validity of the ecash tokens. Upon verification, the mint or federation invalidates these tokens, ensuring they cannot be reused. This step prevents double-spending.
+**2. Ecash verification and invalidation** - The mint or federation verifies the validity of the ecash tokens. Upon verification, the mint or federation invalidates these tokens, ensuring they cannot be reused. This step prevents double-spending.
 
-**3. Bitcoin transfer** - Once the tokens are verified and invalidated, the provider sends an equivalent amount of bitcoin to the user. 
+**3. Bitcoin transfer** - Once the tokens are verified and invalidated, the mint or federation sends an equivalent amount of bitcoin to the user. 
 
 #### Terminology translation table
 
@@ -180,23 +169,23 @@ When a user sends an ecash token to another user, the wallet verifies the mint's
    retina = "/assets/images/guide/how-it-works/ecash/sending-bitcoin-flow@2x.png"
    mobile = "/assets/images/guide/how-it-works/ecash/sending-bitcoin-flow@2x.png"
    mobileRetina = "/assets/images/guide/how-it-works/ecash/sending-bitcoin-flow@2x.png"
-   alt-text = "Diagram comparing three types of transactions: On-chain bitcoin, lightning, and ecash. The On-chain bitcoin section shows Alice sending bitcoin to Bob via an address, resulting in a transaction on the network. The lightning section illustrates Alice sending bitcoin to Bob via an invoice, resulting in a transaction on the lightning network. The ecash section shows Alice sending an ecash token to Bob, who redeems it through a mint."
+   alt-text = "Diagram comparing three types of payments: On-chain bitcoin, lightning, and ecash. The On-chain bitcoin section shows Alice sending bitcoin to Bob via an address, resulting in a payment on the network. The lightning section illustrates Alice sending bitcoin to Bob via an invoice, resulting in a payment on the lightning network. The ecash section shows Alice sending an ecash token to Bob, who redeems it through a mint."
    caption = "On-chain Bitcoin uses addresses, lightning usually employs invoices, and ecash transfers are mediated by mints using tokens."
    width = 800
    height = 508
    layout = "full-width"
 %}
 
-Sending ecash and receiving can be done via multiple methods to suit different needs. One of the advantages of bitcoin-backed ecash is that the tokens are just text, which is very flexible and can be transmitted via any communication medium. Some unique ways that ecash can be sent and received, which are not possible with on-chain or Lightning transactions, include the following:
+Sending ecash and receiving can be done via multiple methods to suit different needs. One of the advantages of bitcoin-backed ecash is that the tokens are just text, which is very flexible and can be transmitted via any communication medium. Some unique ways that ecash can be sent and received, which are not possible with on-chain or Lightning payments, include the following:
 
 #### Text message, such as email or SMS
-Users can send ecash by copying and pasting the token string. This is particularly useful for online transactions or when using text based communication platforms.
+Users can send ecash by copying and pasting the token string. This is particularly useful for online payments or when using text based communication platforms.
 
 #### Bluetooth transmission
 Most applications allow users to share a token via Bluetooth. However, more comprehensive Bluetooth sending and receiving functionalities have not yet been fully developed.
 
 #### QR codes
-On the base chain and Lightning network, QR codes provide directions for where to send Bitcoin. In contrast, ecash tokens can be embedded within a QR code itself. The ecash token can be claimed by simply scanning the QR code. This method is particularly useful for in person transactions or quick transfers, and also enables physical bearer assets like paper notes.
+On the base chain and Lightning network, QR codes provide directions for where to send Bitcoin. In contrast, ecash tokens can be embedded within a QR code itself. The ecash token can be claimed by simply scanning the QR code. This method is particularly useful for in person payments or quick transfers, and also enables physical bearer assets like paper notes.
 
 ---
 
@@ -233,7 +222,7 @@ Since ecash is a custodial solution, it’s important to weigh its benefits agai
 The spectrum of decentralization and custody for bitcoin ranges from highly decentralized to highly centralized. Holding self-custodial Bitcoin on the base layer is the least risky and most decentralized. Self-custodial lightning is slightly more centralized, while custodial lightning moves further towards centralization. ETFs sit at the other extreme, being the most centralized and risky. Ecash improves over custodial lightning by providing better privacy and security.
 
 ### Ecash considerations
-* **Privacy** - Ecash enhances user privacy, making it more difficult to trace transactions back to individuals. In contrast, custodial lightning provides less privacy, as the custodians can associate transactions with user activities.
+* **Privacy** - Ecash enhances user privacy, making it more difficult to trace payments back to individuals. In contrast, custodial lightning provides less privacy, as the custodians can associate payments with user activities.
 
 * **Secure against theft (rug pulls)** - Custodial lightning and solo mints run by a single entity (such as Cashu mints) are more susceptible to rug pull scenarios. Multiple-guardian federations are more secure against theft, as funds are stored in a multi-sig wallet and require multiple guardians to be malicious or compromised for theft to occur.
 

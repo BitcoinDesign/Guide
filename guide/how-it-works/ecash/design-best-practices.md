@@ -15,7 +15,7 @@ images_mint-list:
     - file: federation-list
       modalImage: federation-list@2x
       alt: List of federations with QR codes for easy scanning and joining.
-      caption: Allow users to easily invite others to a mint/federation, by using well-placed QR codes containing the federation's URL.
+      caption: Allow users to easily invite others to a mint or federation, by using well-placed QR codes containing the federation's URL.
     - file: cashu-mint-list
       modalImage: cashu-mint-list@2x
       alt: List of Cashu mints with mint addresses displayed.
@@ -24,15 +24,15 @@ images_mint-list:
 images_pending:
     - file: pending-token
       modalImage: pending-token@2x
-      alt: A transaction history that shows received, pending, and sent transaction each with their own visual indicator.
+      alt: A payment history that shows received, pending, and sent payments each with their own visual indicator.
       caption: Received, pending, and sent transaction each with their own visual indicator.
     - file: pending-transaction-details
       modalImage: pending-transaction-details@2x
-      alt: Expanded view of a pending transaction, showing the memo, amount, and the mint that created the token.
-      caption: Expanded view of a pending transaction. While token is pending, anyone with the token string can claim it.
+      alt: Expanded view of a pending payment, showing the memo, amount, and the mint that created the token.
+      caption: Expanded view of a pending payment.
     - file: pending-transaction-qr
       modalImage: pending-transaction-qr@2x
-      alt: A QR code for a pending transaction with the token string available to copy to clipboard.
+      alt: A QR code for a pending payment with the token string available to copy to clipboard.
       caption: QR code for a pending token.
 
 images_mint-default:
@@ -106,7 +106,7 @@ images_mint-url-edit:
 images_p2pk:
     - file: generate-token
       modalImage: generate-token@2x
-      alt: A mobile wallet interface showing a transaction about to be sent. The bitcoin and fiat denominated balance is displayed at the top, along with an advance options button at the bottom.
+      alt: A mobile wallet interface showing a payment about to be sent. The bitcoin and fiat denominated balance is displayed at the top, along with an advance options button at the bottom.
       caption: P2PK is an advance feature and should not be displayed as a regular feature.
     - file: advance-settings
       modalImage: advance-settings@2x
@@ -255,44 +255,49 @@ ADD Figma URL
 </div>
 
 ---
-## General Ecash Best Practices
-When designing bitcoin-backed ecash applications it's important to prioritize clear and intuitive interfaces that allow users to easily manage their tokens, whether they are minting, sending, or redeeming them.
+## Common ecash design guidelines
 
-### Multiple Mint or Federation Display
+When designing bitcoin-backed ecash applications, it’s important to prioritize clear and intuitive interfaces that allow users to easily manage their tokens, whether minting, sending, or redeeming them.
+
+Many of the same design principles for [sending]({{ '/guide/daily-spending-wallet/sending/' | relative_url }}) and [requesting]({{ '/guide/daily-spending-wallet/requesting/' | relative_url }}) from the [lightning wallet reference design]({{ '/guide/guide/daily-spending-wallet/' | relative_url }}) apply here as well. 
+
+Since ecash is still a relatively new technology this guide focuses on best practices for managing tokens and communicating mint and federation details. As the ecash ecosystem develops we encourage designers and developers to contribute their insights and help improveme this guide.
+
+### Multiple mint or federation display
 {% include image-gallery.html pages = page.images_mint-list %}
 
 When displaying multiple mints or federations in a bitcoin-backed ecash application, there are several best practices to consider:
 
-1. **Clear Hierarchy and Organization**: Ensure that mints or federations are organized in a way that is easy for users to navigate. Group mints by relevance, trust level, or frequency of use, and consider using sorting or filtering options to help users find the right mint or federation quickly.
+1. **Clear hierarchy and organization**: Ensure that mints or federations are organized in a way that is easy for users to navigate. Group mints by relevance, trust level, or frequency of use, and consider using sorting or filtering options to help users find the right mint or federation quickly.
 
-2. **Prominent Metadata Display**: Use metadata fields like mint name, icon, URL, and description, to give users insight into each mint or federations identity. Display this information prominently, so users can easily verify the authenticity and relevance of each mint or federation.
+2. **Prominent metadata display**: Use metadata fields like mint name, icon, URL, and description, to give users insight into each mint or federations identity. Display this information prominently, so users can easily verify the authenticity and relevance of each mint or federation.
 
-3. **Quick Mint Access**: Provide easy access to mint or federation details directly from the mint or federation list. This allows users to interact with mints or federations more fluidly without needing to navigate through multiple screens.
+3. **Quick mint access**: Provide easy access to mint or federation details directly from the mint or federation list. This allows users to interact with mints or federations more fluidly without needing to navigate through multiple screens.
 
-#### Pending Tokens
+#### Pending tokens
 {% include image-gallery.html pages = page.images_pending %}
 
-It's useful to display generated tokens in the transaction history along with their status—whether pending or redeemed. This helps users quickly assess their transaction status. Providing the ability to expand on a token to view details and take actions like resending or redeeming is also important. This feature becomes particularly valuable if a token was lost or never claimed.
+It's useful to display generated tokens in the payment history along with their status—whether pending or redeemed. While token is pending, anyone with the token string can claim it. This helps users quickly assess their payment status. Providing the ability to expand on a token to view details and take actions like resending or redeeming is also important. This feature becomes particularly valuable if a token was lost or never claimed.
 
-## Cashu Best Practices
+## Cashu design guidelines
 
-### User Interface and Experience
+### User interface and experience
 
-#### Default Mint
+#### Default mint
 {% include image-gallery.html pages = page.images_mint-default %}
 
-When designing for Cashu, consider allowing users to set a default mint. Since Cashu mints are independently operated, users may prefer to use a trusted mint for their transactions. By allowing them to select a default mint, you simplify their experience and reduce the risk of exposure to a potentially malicious mint. Additionally, consider offering auto-swap preferences.
+When designing for Cashu, consider allowing users to set a default mint. Since Cashu mints are independently operated, users may prefer to use a trusted mint for their payments. By allowing them to select a default mint, you simplify their experience and reduce the risk of exposure to a potentially malicious mint. Additionally, consider offering auto-swap preferences.
 
-#### Edit Mint URL & Refresh Mint Settings
+#### Edit mint URL & refresh mint settings
 
 {% include image-gallery.html pages = page.images_mint-url-edit %}
 
 It's useful to provide users with the ability to manually update or refresh mint settings in their wallets. While best practices suggest that wallets should auto-refresh and update mint settings periodically, there may be cases where this isn't supported, or a mint undergoes significant updates, such as a URL change. By allowing users to edit the mint URL or refresh settings manually, you ensure that users always have the latest mint configurations.
 
-### Security and Privacy
+### Security and privacy
 
-#### Backup and Restore for Cashu
-The Cashu backup and restoration process is designed to ensure users can securely recover their wallets and maintain access to their bitcoin-backed ecash tokens in the event they switch devices or experience data loss. **Users should only use their recovery seed phrase once.** Repeated use of the seed phrase for restoration can lead to synchronization issues and potential errors. This is due to the fact that each time you restore, you might be dealing with an outdated state of the wallet, which can cause discrepancies in token balances and transactions.
+#### Backup and restore for Cashu
+The Cashu backup and restoration process is designed to ensure users can securely recover their wallets and maintain access to their bitcoin-backed ecash tokens in the event they switch devices or experience data loss. **Users should only use their recovery seed phrase once.** Repeated use of the seed phrase for restoration can lead to synchronization issues and potential errors. This is due to the fact that each time you restore, you might be dealing with an outdated state of the wallet, which can cause discrepancies in token balances and payments.
 
 {% include tip/open.html color="blue" icon="info" label="Single Use Recovery" %}
 
@@ -300,7 +305,7 @@ After successfully restoring your wallet using a recovery seed phrase, it is hig
 
 {% include tip/close.html %}
 
-#### Backup Process
+#### Backup process
 {% include image-gallery.html pages = page.images_backup %}
 
 1. **Deterministic Wallet with Seed Phrase**: Cashu uses a deterministic wallet model, where all cryptographic keys and bitcoin-backed ecash tokens can be derived from a single seed phrase. This seed phrase can be generated when the wallet is first created, or a at any point in time when the user wants to backup their wallet.
@@ -313,7 +318,7 @@ Keep a record of the mints you are connected to. During the restoration process,
 
 {% include tip/close.html %}
 
-#### Restoration Process
+#### Restoration process
 {% include image-gallery.html pages = page.images_restore %}
 
 1. **Seed Phrase Entry**: When restoring a wallet, users enter their seed phrase into their wallet. This seed phrase regenerates secrets that may have been used to mint ecash.
@@ -324,17 +329,17 @@ Keep a record of the mints you are connected to. During the restoration process,
 
 {% include tip/open.html color="blue" icon="info" label="Privacy Considerations During Verification" %}
 
-Verifying tokens after restoration might temporarily compromise their privacy. The mint needs to revalidate the tokens, which can potentially expose the transaction history associated with those tokens. Be mindful of this aspect if privacy is a significant concern for your use case.
+Verifying tokens after restoration might temporarily compromise their privacy. The mint needs to revalidate the tokens, which can potentially expose the payment history associated with those tokens. Be mindful of this aspect if privacy is a significant concern for your use case.
 
 {% include tip/close.html %}
 
-### Metadata and Information Management
+### Metadata and information management
 
-#### Cashu Metadata Fields: Explanation and Usage
+#### Cashu metadata fields: Explanation and Usage
 
 [NUT06](https://github.com/cashubtc/nuts/blob/main/06.md) provides a standardized way to display metadata for Cashu mints. Incorporating these metadata fields makes your application more transparent and informative. Here's a breakdown of each field and how it can be used in wallet design:
 
-#### Mint Identity and Version
+#### Mint identity and version
 
 <div class="center" markdown="1">
 
@@ -354,7 +359,7 @@ Verifying tokens after restoration might temporarily compromise their privacy. T
 
 </div>
 
-#### Mint Descriptions
+#### Mint descriptions
 
 <div class="center" markdown="1">
 
@@ -374,7 +379,7 @@ Verifying tokens after restoration might temporarily compromise their privacy. T
 
 </div>
 
-#### Contact Information
+#### Contact information
 
 <div class="center" markdown="1">
 
@@ -393,7 +398,7 @@ Verifying tokens after restoration might temporarily compromise their privacy. T
 
 </div>
 
-#### Important Announcements
+#### Important announcements
 
 <div class="center" markdown="1">
 
@@ -412,7 +417,7 @@ Verifying tokens after restoration might temporarily compromise their privacy. T
 
 </div>
 
-#### Supported Features
+#### Supported features
 
 <div class="center" markdown="1">
 
@@ -437,7 +442,7 @@ When displaying [NUTs](https://github.com/cashubtc/nuts) (Notation, Usage, and T
 
 {% include tip/close.html %}
 
-#### Organizing Cashu Metadata Fields
+#### Organizing Cashu metadata fields
 When designing your Cashu wallet, consider organizing these metadata fields in a logical, user-friendly manner to help users understand and interact with different mints. Here are some suggestions:
 
 - Use the `name` and short `description` in mint listings for quick identification of mints.
@@ -447,17 +452,23 @@ When designing your Cashu wallet, consider organizing these metadata fields in a
 
 By effectively incorporating these Cashu metadata fields, you can create a more transparent and informative experience for users, helping them make informed decisions about which Cashu mints to trust and use. This is particularly important for Cashu, as users interact directly with individual mints rather than a federation structure like in Fedimint.
 
-### Advanced Features
+### Advanced features
 
-#### Pay to Public Key (P2PK)
+#### Pay to public key (P2PK)
 
 {% include image-gallery.html pages = page.images_p2pk %}
 
 [NUT11](https://github.com/cashubtc/nuts/blob/main/11.md) is a powerful feature that allows bitcoin-backed ecash tokens to be securely locked to another user's public key, which is generated by the recipient's wallet. This ensures that only the intended recipient can redeem the ecash. NUT11 enables secure offline payments, preventing double-spending. Beyond these basics, NUT11 supports advanced use cases like timelocks and multisignature (multisig) setups, where ecash can be conditionally spent or jointly owned by multiple parties. When designing make sure these functionalities are clearly communicated to users, highlighting their practical benefits and flexibility.
 
-#### Auto-Swapping to a Default Cashu Mint
+{% include tip/open.html color="blue" icon="info" label="P2PK ecash backup limitations" %}
+
+P2PK ecash tokens are not derived from a seed phrase. This means they cannot be backed up using a seed phrase, and in the event of a recovery from seed phrase the P2PK ecash tokens will be lost.
+
+{% include tip/close.html %}
+
+#### Auto-swapping to a default Cashu mint
 {% include image-gallery.html pages = page.images_auto-swap %}
-Wallets can provide the option to automatically swap ecash from an unknown mint to their default mint. This optional feature can simplify transactions by routing all ecash transactions through the assigned default mint. An auto-swap requires a lightning payment.
+Wallets can provide the option to automatically swap ecash from an unknown mint to their default mint. This optional feature can simplify payments by routing all ecash through the assigned default mint. An auto-swap requires a lightning payment.
 
 {% include tip/open.html color="blue" icon="info" label="Auto-Swapping Involves Fees" %}
 
@@ -465,11 +476,11 @@ It's important to inform users that auto-swapping involves fees and that the amo
 
 {% include tip/close.html %}
 
-## Fedimint Design Best Practices
+## Fedimint design guidelines
 
-### User Interface and Experience
+### User interface and experience
 
-#### Federation Status Display
+#### Federation status display
 
 <div class="center" markdown="1">
 
@@ -492,18 +503,18 @@ Consider using a prominent, color-coded indicator to show the overall status of 
 
 Consider displaying real-time indicators of each guardian's status, such as the connection status and last activity. This information builds trust by keeping users informed about the reliability and performance of the guardians managing their funds.
 
-### Security and Privacy
+### Security and privacy
 
-#### Privacy Considerations in Guardian Information Display
+#### Privacy considerations in guardian information display
 Fedimint automatically generates random names for guardians during setup. While users can change these names, it’s not recommended. When displaying guardian information, consider using code names like "Guardian 1" and randomly generated identicons for each guardian. This helps protect user and federation privacy, particularly for invite-only mints. Guardian information should only be visible to users who have joined the federation.
 
-### Metadata and Information Management
+### Metadata and information management
 
-#### Federation Metadata Fields: Explanation and Usage
+#### Federation metadata fields: Explanation and usage
 
 Federations can provide configuration and metadata to users. These metadata fields are consensus-relevant, meaning they must be consistent across all federation members. This ensures that users can rely on their accuracy. Let's explore the core metadata fields defined in the Fedimint protocol:
 
-#### Federation Overview and Expiration
+#### Federation overview and expiration
 
 <div class="center" markdown="1">
 
@@ -515,7 +526,7 @@ Federations can provide configuration and metadata to users. These metadata fiel
 
 </div>
 
-#### User Onboarding and Information
+#### User onboarding and information
 
 <div class="center" markdown="1">
 
@@ -538,18 +549,20 @@ Federations can provide configuration and metadata to users. These metadata fiel
 Different federations may choose to display the welcome message in different contexts. Some may use it as a welcome message, others may use it to display the terms of service or other important information.
 {% include tip/close.html %}
 
-#### Gateway Information
+#### Gateway information
 
-- `vetted_gateways`: This field contains a list of gateway identifiers that have been vetted by the federation. This information could be used to display trusted gateways to users, helping them make informed decisions about which gateways to use for transactions.
+- `vetted_gateways`: This field contains a list of gateway identifiers that have been vetted by the federation. This information could be used to display trusted gateways to users, helping them make informed decisions about which gateways to use for payments.
 
-##### What Is a Gateway?
+##### What Is a gateway?
 See the [Role of Gateways]({{ '/guide/how-it-works/ecash/fedimint/#role-of-gateways' | relative_url }}) for more information about gateways.
+
+{% include tip/open.html color="blue" icon="info" label="Flexible Use of Welcome Message" %}
+Different federations may choose to display the welcome message in different contexts. Some may use it as a welcome message, others may use it to display the terms of service or other important information.
+{% include tip/close.html %}
 
 #### Why Showing Gateway Information Might Not Be Necessary:
 
-1. **Cognitive Overload**: Most users are not interested in the technical details of how their transactions are processed. Presenting information about gateways, especially vetted versus non-vetted ones, could lead to confusion, as users may not understand what this information means or how to act on it.
-2. **Trust in the System**: In well designed systems, users trust that the service has selected the best pathways for their transactions. By not overwhelming users with technical details, the system can reinforce trust that the backend will manage their transaction securely and efficiently without their intervention.
-3. **Streamlined Experience**: The goal of good UX is to make the user experience as seamless and intuitive as possible. Introducing gateway information may disrupt this flow by adding unnecessary steps or considerations that the average user doesn't need to think about.
+Most users don’t need technical details and showing it can create confusion. Users trust the system to handle payments securely. Adding gateway information risks introducing unnecessary complexity.
 
 #### Organizing Fedimint Metadata Fields
 
