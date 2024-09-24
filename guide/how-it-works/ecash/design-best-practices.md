@@ -43,7 +43,7 @@ images_mint-default:
     - file: cashu-mint-details-settings
       modalImage: cashu-mint-details-settings@2x
       alt: A mobile ecash wallet with a bottom sheet that lists the following actions, refresh mint settings, update mint url, set as default mint, and remove mint.
-      caption: Advance mint operations like setting a default mint, updating mint url, and removing a mint.
+      caption: Advanced mint operations like setting a default mint, updating mint url, and removing a mint.
     - file: cashu-mint-details-default-set-confirmation
       modalImage: cashu-mint-details-default-set-confirmation@2x
       alt: A success confirmation that the mint has been set as default.
