@@ -567,6 +567,6 @@ By effectively incorporating these Fedimint metadata fields you can create a mor
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/ecash/fedimint/"
    previousName = "Fedimint"
-   nextUrl = "/guide/how-it-works/ecash/private-key-management/"
-   nextName = "Private key management"
+   nextUrl = "/guide/how-it-works/transactions/"
+   nextName = "Transaction
 %}
