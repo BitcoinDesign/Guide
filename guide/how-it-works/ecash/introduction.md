@@ -26,7 +26,7 @@ Illustration sources
    retina = "/assets/images/guide/how-it-works/ecash/ecash@2x.jpg"
    mobile = "/assets/images/guide/how-it-works/ecash/ecash-mobile.jpg"
    mobileRetina = "/assets/images/guide/how-it-works/ecash/ecash-mobile@2x.jpg"
-   alt-text = "A cyborg staring a computer screen displaying a 100 dollar bill."
+   alt-text = "Futuristic scene featuring a person dressed in a glossy pink suit with a headset and visor, sitting at a desk. The person is working on a retro-styled computer with a monitor displaying dollar bills. A potted plant sits on the desk, contrasting with the vibrant, pastel-colored background."
    width = 1600
    height = 600
    layout = "full-width"
@@ -46,10 +46,10 @@ Since no accounts or personal information are needed; the mint cannot see your b
    retina = "/assets/images/guide/how-it-works/ecash/how-ecash-works@2x.png"
    mobile = "/assets/images/guide/how-it-works/ecash/how-ecash-works@2x.png"
    mobileRetina = "/assets/images/guide/how-it-works/ecash/how-ecash-works@2x.png"
-   alt-text = "An illustration of how users, ecash, and ecash mints interact."
-   caption = "How users interact with ecash mints and the lightning network."
+   alt-text = "Diagram showing three mints (Mint 1, Mint 2, Mint 3) managing digital currency transactions with groups of users. Each mint is connected to a group of users represented by icons holding digital cash. The mints are interconnected with lightning bolts symbolizing fast or real-time transactions, and the Bitcoin symbol appears beneath each mint, indicating that the system is based on Bitcoin technology."
+   caption = "Three mints manage ecash tokens for users, connected by the lightning network."
    width = 800
-   height = 822
+   height = 508
    layout = "full-width"
 %}
 
@@ -60,10 +60,10 @@ Bitcoin-backed ecash works by using protocols like [Fedimint]({{ '/guide/how-it-
    retina = "/assets/images/guide/how-it-works/ecash/connected@2x.png"
    mobile = "/assets/images/guide/how-it-works/ecash/connected.png"
    mobileRetina = "/assets/images/guide/how-it-works/ecash/connected@2x.png"
-   alt-text = "An illustration of cashu, fedimint, and lightning nodes connected in a mesh network."
+   alt-text = "Network diagram labeled ‘Connected through Lightning,’ showing a series of interconnected nodes represented by dots of different colors. Purple dots indicate Cashu nodes, blue dots indicate Fedimint nodes, and orange dots represent Lightning nodes. The nodes are linked by dotted lines, illustrating the network structure where various systems are connected through the Lightning Network."
    caption = "Lightning is a popular connective tissue between ecash and bitcoin."
    width = 800
-   height = 822
+   height = 508
    layout = "full-width"
 %}
 ### Key benefits
@@ -86,9 +86,9 @@ Bitcoin-backed ecash works by using protocols like [Fedimint]({{ '/guide/how-it-
    retina = "/assets/images/guide/how-it-works/ecash/ecash-protocol-logos@2x.jpg"
    mobile = "/assets/images/guide/how-it-works/ecash/ecash-protocol-logos@2x.jpg"
    mobileRetina = "assets/images/guide/how-it-works/ecash/ecash-protocol-logos@2x.jpg"
-   alt-text = "An illustration showing the Cashu and Fedimint protocol logos."
+   alt-text = "Split-screen image showing two open-source protocols. The left side features ‘Fedimint’ on a blue background, described as ‘An open-source protocol for creating federated ecash mints.’ The right side shows ‘Cashu’ on a purple background, described as ‘An open-source protocol for creating solo ecash mints.’ In the background, there is a computer screen with a Bitcoin logo and a retro-tech aesthetic."
    width = 800
-   height = 456
+   height = 508
    layout = "full-width"
 %}
 
@@ -114,11 +114,10 @@ Fedimint operates through a federated model where a group of trusted entities (c
    image = "/assets/images/guide/how-it-works/ecash/using-ecash.jpg"
    retina = "/assets/images/guide/how-it-works/ecash/using-ecash@2x.jpg"
    mobile = "/assets/images/guide/how-it-works/ecash/using-ecash@2x.jpg"
-   mobileRetina = "assets/images/guide/how-it-works/ecash/using-ecashjpg.png"
-   alt-text = "An illustration showing distorted physical paper cash along with the words USING ECASH."
-   caption = ""
+   mobileRetina = "/assets/images/guide/how-it-works/ecash/using-ecash@2x.jpg"
+   alt-text = "Surreal image featuring two people extending their arms from opposite sides, exchanging dollar bills in front of a retro computer. The computer, with a blank screen and an old keyboard, sits on a small desk. One person is dressed in a pink suit, while the other wears a yellow outfit, set against a vibrant pink and orange background."
    width = 800
-   height = 456
+   height = 508
    layout = "full-width"
 %}
 
@@ -128,10 +127,10 @@ Fedimint operates through a federated model where a group of trusted entities (c
    retina = "/assets/images/guide/how-it-works/ecash/creation-and-redemption@2x.png"
    mobile = "/assets/images/guide/how-it-works/ecash/creation-and-redemption@2x.png"
    mobileRetina = "/assets/images/guide/how-it-works/ecash/creation-and-redemption@2x.png"
-   alt-text = "An illustration of the process of creating and redeeming ecash tokens"
-   caption = "Creating and redeeming ecash tokens."
+   alt-text = "Diagram illustrating the creation and redemption of ecash by Alice. On the left side, under ‘Creation,’ Alice sends 100 sats to an ecash mint, which creates ecash tokens, and Alice receives 100 sats in ecash form. On the right side, under ‘Redemption,’ Alice sends 100 sats in ecash form to the mint, which burns the ecash tokens, and Alice receives 100 sats back in Bitcoin. The process flow is represented with dashed arrows and labeled steps."
+   caption = "Alice mints 100 sats into ecash through a mint and later redeems the ecash tokens to reclaim her original 100 sats in bitcoin."
    width = 800
-   height = 822
+   height = 508
    layout = "full-width"
 %}
 
@@ -139,9 +138,9 @@ Cashu and Fedimint use various terms for the processes of creating, redeeming, a
 
 #### Creating ecash
 
-**1. User Deposits Funds** - The user deposits bitcoin into a mint or federation. Typically this is done by generating a lightning invoice through the mint and paying it.
+**1. User deposits funds** - The user deposits bitcoin into a mint or federation. Typically this is done by generating a lightning invoice through the mint and paying it.
 
-**2. Token creation** - Upon successful payment, the wallet generates secrets and [blinds](https://en.wikipedia.org/wiki/Blinding_(cryptography)) them. The wallet then sends the blinded messages to the mint or federation, which returns a [blind signature](https://en.wikipedia.org/wiki/Blind_signature) on the blinded messages. The blinding process ensures that the mint cannot link the tokens to the user, preserving privacy.
+**2. Token creation** - Upon successful payment, the wallet generates secrets and [blinds](https://en.wikipedia.org/wiki/Blinding_(cryptography)) them. The wallet then sends the blinded messages to the mint or federation, which returns [blind signature](https://en.wikipedia.org/wiki/Blind_signature) on the blinded messages. The blinding process ensures that the mint cannot link the tokens to the user, preserving privacy.
 
 **3. Token receipt** - The user receives a set of proofs that correspond to specific amounts of bitcoin. These proofs can be combined to create an ecash token of any amount denominated in bitcoin.
 
@@ -151,7 +150,7 @@ Cashu and Fedimint use various terms for the processes of creating, redeeming, a
 
 **2. Token verification and destruction** - The mint or federations verifies the validity of the ecash tokens. Upon verification, the mint or federation invalidates these tokens, ensuring they cannot be reused. This step prevents double-spending.
 
-**3. Bitcoin Transfer** - Once the tokens are verified and invalidated, the provider sends an equivalent amount of bitcoin to the user. 
+**3. Bitcoin transfer** - Once the tokens are verified and invalidated, the provider sends an equivalent amount of bitcoin to the user. 
 
 #### Terminology translation table
 
@@ -168,23 +167,23 @@ Cashu and Fedimint use various terms for the processes of creating, redeeming, a
    retina = "/assets/images/guide/how-it-works/ecash/sending-and-receiving@2x.png"
    mobile = "/assets/images/guide/how-it-works/ecash/sending-and-receiving@2x.png"
    mobileRetina = "/assets/images/guide/how-it-works/ecash/sending-and-receiving@2x.png"
-   alt-text = "An illustration of the process of sending and receiving ecash tokens to various users"
-   caption = "Sending and receiving ecash tokens."
+   alt-text = "Diagram showing Alice exchanging 100 sats with an ecash mint and receiving 100 sats in ecash form. Alice then transfers 100 sats in ecash to Bob, who also interacts with an ecash mint. The process is represented with dashed arrows and labeled amounts, illustrating the flow of sats between Alice, the mint, and Bob."
+   caption = "Alice mints 100 sats into ecash then sends the ecash to Bob. The ecash mint makes sure the ecash token is valid before issuing new one to Bob."
    width = 800
-   height = 822
+   height = 508
    layout = "full-width"
 %}
-When a user sends an ecash token to another user, the wallet verifies the mint's signature to confirm the token's authenticity. The mint then checks its database to ensure the token has not been previously spent. If the token is valid, it is destroyed and replaced with a new token, which is then issued to the recipient. This cycle of destroying the old token and issuing a new one prevents double spending while maintaining user privacy and security.
+When a user sends an ecash token to another user, the wallet verifies the mint's signature to confirm the token's authenticity. The mint then checks its database to ensure the token has not been previously spent. If the token is valid, it is invalidated and replaced with a new token, which is then issued to the recipient. This cycle of invalidating the old token and issuing a new one prevents double spending while maintaining user privacy and security.
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/ecash/sending-bitcoin-flow.png"
-   retina = "/assets/images/guide/how-it-works/ecash/sending-bitcoin-flow@2x.jpg"
-   mobile = "/assets/images/guide/how-it-works/ecash/sending-bitcoin-flow@2x.jpg"
-   mobileRetina = "/assets/images/guide/how-it-works/ecash/sending-bitcoin-flow@2x.jpg"
-   alt-text = "An illustration comparing how on-chain bitcoin, lightning, and ecash handle the sending of bitcoin."
-   caption = ""
+   retina = "/assets/images/guide/how-it-works/ecash/sending-bitcoin-flow@2x.png"
+   mobile = "/assets/images/guide/how-it-works/ecash/sending-bitcoin-flow@2x.png"
+   mobileRetina = "/assets/images/guide/how-it-works/ecash/sending-bitcoin-flow@2x.png"
+   alt-text = "Diagram comparing three types of transactions: On-chain bitcoin, lightning, and ecash. The On-chain bitcoin section shows Alice sending bitcoin to Bob via an address, resulting in a transaction on the network. The lightning section illustrates Alice sending bitcoin to Bob via an invoice, resulting in a transaction on the lightning network. The ecash section shows Alice sending an ecash token to Bob, who redeems it through a mint."
+   caption = "On-chain Bitcoin uses addresses, lightning usually employs invoices, and ecash transfers are mediated by mints using tokens."
    width = 800
-   height = 822
+   height = 508
    layout = "full-width"
 %}
 
@@ -223,10 +222,10 @@ Since ecash is a custodial solution, it’s important to weigh its benefits agai
    retina = "/assets/images/guide/how-it-works/ecash/custody-spectrum@2x.png"
    mobile = "/assets/images/guide/how-it-works/ecash/custody-spectrum.png"
    mobileRetina = "/assets/images/guide/how-it-works/ecash/custody-spectrum@2x.png"
-   alt-text = "Illustration displaying different types of bitcoin custody, showcasing a range from user-held to custodial solutions."
-   caption = "Bitcoin custody options: evaluating decentralization and risk."
+   alt-text = "Horizontal scale showing different financial systems ranked from ‘Least centralized, lowest risk’ to ‘Most centralized, highest risk.’ The scale includes, from left to right: on-chain, lightning, ecash (federated mint), ecash (solo mint), custodial lightning, exchange, and ETF. Each system is represented by a dot, progressing from decentralized to more centralized."
+   caption = "Comparison of systems based on centralization and risk."
    width = 800
-   height = 822
+   height = 212
    layout = "full-width"
 %}
 
