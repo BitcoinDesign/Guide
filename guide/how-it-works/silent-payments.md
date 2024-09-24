@@ -99,7 +99,7 @@ https://www.figma.com/design/q8IYl9UVsOWkkPhs4IkHQR/Bitcoin-Wallet-UI-Kit-%26-De
    image = "/assets/images/guide/how-it-works/silent-payments/silent-payments-header.png"
    retina = "/assets/images/guide/how-it-works/silent-payments/silent-payments-header@2x.png"
    mobile = "/assets/images/guide/how-it-works/silent-payments/silent-payments-header-mobile.png"
-   mobileRetina = "/assets/images/guide/daily-spending-wallet/silent-payments/silent-payments-header-mobile@2x.png"
+   mobileRetina = "/assets/images/guide/how-it-works/silent-payments/silent-payments-header-mobile@2x.png"
    alt-text = "A header image with a purple gradient, the text Silent Payments and a network visual."
    width = 1600
    height = 600
@@ -186,7 +186,7 @@ The above model introduces a scan key that is used for payment scanning and a st
 {% include picture.html
    image = "/assets/images/guide/how-it-works/silent-payments/adding-labels-to-static-address.png"
    retina = "/assets/images/guide/how-it-works/silent-payments/adding-labels-to-static-address@2x.png"
-   modalImage = "/assets/images/guide/how-it-works/wallet-privacy/network-settings-big.png"
+   modalImage = "/assets/images/guide/how-it-works/silent-payments/adding-labels-to-static-address@2x.png"
    alt-text = "An application screen showing labels being added to a static address."
    caption = "Adding labels to a static address before posting or sharing with others."
    width = 250
@@ -211,7 +211,7 @@ When she receives payments from any of these sources, the respective label(s) wi
    image = "/assets/images/guide/how-it-works/silent-payments/how-silent-payment-labels-work.png"
    retina = "/assets/images/guide/how-it-works/silent-payments/how-silent-payment-labels-work@2x.png"
    mobile = "/assets/images/guide/how-it-works/silent-payments/how-silent-payment-labels-work-mobile.png"
-   mobileRetina = "/assets/images/guide/how-it-works/silent-payments/how-silent-payment-labels-mobile@2x.png"
+   mobileRetina = "/assets/images/guide/how-it-works/silent-payments/how-silent-payment-labels-work-mobile@2x.png"
    alt-text = "An image that illustrates how labels feature in silent payments works."
    caption = "Alice customizes her static addresses with labels when shares them. Whenever she receives a payment from one of them, the label is auto-applied and detected by the wallet."
    width = 1024
