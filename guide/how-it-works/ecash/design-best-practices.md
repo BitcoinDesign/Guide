@@ -562,11 +562,11 @@ When designing your Fedimint wallet interface, consider organizing these metadat
 By effectively incorporating these Fedimint metadata fields you can create a more transparent and informative experience for users, helping them understand the federation's structure, rules, and trusted entities.
 
 ---
-
+Next, learn how [transactions]({{ '/guide/how-it-works/transactions/' | relative_url }}) work.
 
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/ecash/fedimint/"
    previousName = "Fedimint"
    nextUrl = "/guide/how-it-works/transactions/"
-   nextName = "Transaction
+   nextName = "Transactions"
 %}
