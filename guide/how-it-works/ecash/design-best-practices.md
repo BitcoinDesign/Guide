@@ -563,7 +563,6 @@ By effectively incorporating these Fedimint metadata fields you can create a mor
 
 ---
 
-Next, let's learn [private key management]({{ '/guide/how-it-works/ecash/private-key-management' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/ecash/fedimint/"
