@@ -447,7 +447,7 @@ When designing your Cashu wallet, consider organizing these metadata fields in a
 
 By effectively incorporating these Cashu metadata fields, you can create a more transparent and informative experience for users, helping them make informed decisions about which Cashu mints to trust and use. This is particularly important for Cashu, as users interact directly with individual mints rather than a federation structure like in Fedimint.
 
-### Advance Features
+### Advanced Features
 
 #### Pay to Public Key (P2PK)
 
@@ -457,7 +457,7 @@ By effectively incorporating these Cashu metadata fields, you can create a more 
 
 #### Auto-Swapping to a Default Cashu Mint
 {% include image-gallery.html pages = page.images_auto-swap %}
-Wallets can provide the option to automatically swap ecash from an unknown mint to their a default mint. This optional feature can simplify transactions by routing all ecash transactions through the assigned default mint. An auto-swap requires a lightning payment.
+Wallets can provide the option to automatically swap ecash from an unknown mint to their default mint. This optional feature can simplify transactions by routing all ecash transactions through the assigned default mint. An auto-swap requires a lightning payment.
 
 {% include tip/open.html color="blue" icon="info" label="Auto-Swapping Involves Fees" %}
 

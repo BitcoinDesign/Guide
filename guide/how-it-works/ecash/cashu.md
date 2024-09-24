@@ -69,10 +69,10 @@ Illustration sources
 %}
 
 # Cashu
-Cashu operates on a model where any user can run their own solo mint or join an existing mint. This makes Cashu an easy to deploy, flexible, and agile approach to managing bitcoin-backed ecash.
+Cashu is an [ecash protocol]({{ '/guide/how-it-works/ecash/introduction/' | relative_url }}) that operates on a model where any user can run their own solo mint, or join existing mints run by others. This makes Cashu an easy to deploy, flexible, and agile approach to managing bitcoin-backed ecash.
 
 ## Design Best Practices
-To learn more about Cashu specific design best practices you can check out the [Design best practices]({{ '/guide/how-it-works/ecash/design-best-practices' | relative_url }}) section.
+This page is about the unique approach of Cashu to ecash. To learn more about design aspects, check out the [Design best practices]({{ '/guide/how-it-works/ecash/design-best-practices' | relative_url }}) page.
 
 ## Cashu Mints
 
@@ -88,7 +88,9 @@ To learn more about Cashu specific design best practices you can check out the [
    layout = "full-width"
 %}
 
-A Cashu mint operates simply and centrally. One entity (the mint) handles the entire process: issuing bitcoin-backed ecash tokens when users deposit bitcoin and redeeming them when users request withdrawals. This centralized model enables fast transactions but requires trust in the mint’s integrity and security. Cashu’s design prioritizes simplicity and speed, relying on a single operator to manage all operations. Cashu currently only supports lightning payments, but in the future it will support on-chain payments as well.
+A Cashu mint operates simply and centrally. One entity (the mint) handles the entire process: issuing bitcoin-backed ecash tokens when users deposit bitcoin and redeeming them when users request withdrawals. This centralized model enables fast transactions but requires trust in the mint’s integrity and security. 
+
+Cashu’s design prioritizes simplicity and speed, relying on a single operator to manage all operations. Cashu currently only supports lightning payments, but in the future it will support on-chain payments as well.
 
 #### Pros:
 
@@ -104,7 +106,7 @@ A Cashu mint operates simply and centrally. One entity (the mint) handles the en
 
 * **Rapid Deployment and Simple Integration** - Great for projects that need to be launched quickly with minimal setup. Cashu has a much smaller codebase and is easier to understand and modify compared to Fedimint.
 
-* **Localized or Small Community Solutions** - In scenarios where independent mints operated by trusted local entities can serve a community, enhancing trust and customization based on local needs.
+* **Localized or Small Community Solutions** - Independent mints can be operated by trusted local entities to serve their communities, based on existing trust relationships and customized to local needs.
 
 ## Products That Use Cashu
 

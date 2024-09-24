@@ -120,7 +120,7 @@ This model offers a compromise between security and simplicity. A single guardia
    layout = "full-width"
 %}
 
-Solo mints are the simplest and most cost-effective option. Here, a single guardian manages the entire mint, making it easy to set up but with significant trade-offs in terms of security and resilience.
+Solo mints are the simplest and most cost-effective option. Here, a single guardian manages the entire mint, making it easy to set up, but with significant trade-offs in terms of security and resilience.
 
 #### Pros:
 
