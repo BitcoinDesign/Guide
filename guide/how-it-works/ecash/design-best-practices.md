@@ -550,19 +550,11 @@ Different federations may choose to display the welcome message in different con
 {% include tip/close.html %}
 
 #### Gateway information
+See the [role of gateways]({{ '/guide/how-it-works/ecash/fedimint/#role-of-gateways' | relative_url }}) for more information about gateways.
 
-- `vetted_gateways`: This field contains a list of gateway identifiers that have been vetted by the federation. This information could be used to display trusted gateways to users, helping them make informed decisions about which gateways to use for payments.
+`vetted_gateways`: This field contains a list of gateway identifiers that have been vetted by the federation. This information could be used to display trusted gateways to users, helping them make informed decisions about which gateways to use for payments. 
 
-##### What Is a gateway?
-See the [Role of Gateways]({{ '/guide/how-it-works/ecash/fedimint/#role-of-gateways' | relative_url }}) for more information about gateways.
-
-{% include tip/open.html color="blue" icon="info" label="Flexible Use of Welcome Message" %}
-Different federations may choose to display the welcome message in different contexts. Some may use it as a welcome message, others may use it to display the terms of service or other important information.
-{% include tip/close.html %}
-
-#### Why Showing Gateway Information Might Not Be Necessary:
-
-Most users don’t need technical details and showing it can create confusion. Users trust the system to handle payments securely. Adding gateway information risks introducing unnecessary complexity.
+ Displaying gateway information is not necessary. Users trust their applications to handle payments securely. Adding gateway information risks introducing unnecessary complexity.
 
 #### Organizing Fedimint Metadata Fields
 
