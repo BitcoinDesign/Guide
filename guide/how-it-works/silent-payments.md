@@ -120,7 +120,7 @@ https://www.figma.com/design/q8IYl9UVsOWkkPhs4IkHQR/Bitcoin-Wallet-UI-Kit-%26-De
 
 [Silent payments](https://github.com/bitcoin/bips/blob/master/bip-0352.mediawiki) is a protocol the uses static addresses to simplify payment experience while preserving privacy. Once the receiver shares a static address, senders derive a new unique on-chain address with it they make a payment. This prevents [address reuse](/guide/glossary/address/#address-reuse) without repeated user interaction.
 
-For eg: Alice can simply post a static address on her website, and receive bitcoin donations at unique on-chain addresses. The static address itself never shows up on-chain.
+For e.g: Alice can simply post a static address on her website, and receive bitcoin donations at unique on-chain addresses. The static address itself never shows up on-chain.
 
 Silent payments also allow users to customize their static address with labels that are detected when payments are received. This is a powerful tool that provides actionable information for [coin selection](/guide/how-it-works/silent-payments/#coin-selection) with minimal manual effort.
 
@@ -157,8 +157,7 @@ Silent payments are made in 4 broad steps:
 
 Silent payments introduce a new technical model that separates payment information based on their purpose.
 
-For eg: the static address is only shared with senders who use it to make payments.
-Below is a summary of the keys & addresses i
+For example: the static address is only shared with senders who use it to make payments. Payment detection is done with a separate scan key and doesn't use the static address at all. Here are the main components of this new model:
 
 | Component       |Used by         | Purpose |
 |:-------------|:------------------|:------|
@@ -194,9 +193,9 @@ The above model introduces a scan key that is used for payment scanning and a st
    layout = "float-right-desktop -background -shadow"
 %}
 
-Labels or tags (such as 'business' or 'no-kyc') are brief identifiers often associated with information such as payments, transactions and addresses. They're used to organise, categorise or quickly spot items from a large set.
+Labels or tags (such as `business` or `no-kyc`) are brief identifiers often associated with information such as payments, transactions and addresses. They're used to organise, categorise or quickly spot items from a large set.
 
-Silent payments allows users to add labels to their static addresses on a case-by-case basis before sharing or posting them. When a payment is received, these labels can be detected and used by the receiver (but no one else) to identify the static address used to make the payment.
+Silent payments allow users to add labels to their static addresses on a case-by-case basis before sharing or posting them. When a payment is received, these labels can be detected by the receiver (but no one else) and used to identify the static address that was used to make the payment.
 
 </div>
 
@@ -263,7 +262,7 @@ Silent payment wallets may or may not be set up as [BIP-39](https://github.com/b
 
 ## Sending
 
-With the improvements to Contacts, on-chain send flows may start from a number of [entry points](/guide/daily-spending-wallet/sending/#payment-entry-points). When users start with obtaining a static address, every on-chain address derived from it will be visibly different from the static address the sender started with. This is likely to be confusing for users. Applications should take measures such as short explainers to avoid confusion on the users part. Test transactions are another good way to help users deal with this.
+With the improvements to contacts, on-chain send flows may start from a number of [entry points](/guide/daily-spending-wallet/sending/#payment-entry-points). When users start with obtaining a static address, every on-chain address derived from it will be visibly different from the static address the sender started with. This is likely to be confusing for users. Applications should take measures such as short explainers to avoid confusion on the users part. Test transactions are another good way to help users deal with this.
 
 {% include image-gallery.html pages = page.images_send %}
 
