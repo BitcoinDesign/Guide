@@ -274,7 +274,7 @@ Applications that do not support static addresses should provide helpful, action
 {% include tip/close.html %}
 
 ### Coin selection
-As mentioned in the introduction, coin selection can be done much better due to auto-applied label information. Applications should encourage & assist users in performing coin selection by surfacing relevant or related labels or other methods. Automatic coin selection should be improved with all the label information available.
+As mentioned in the introduction, coin selection can be significantly improved due to auto-applied label information. Applications should encourage and assist users during coin selection by surfacing relevant or related labels. Automatic coin selection should be improved with all the label information available.
 
 {% include tip/tip.html %}
 
@@ -299,9 +299,9 @@ The coin(s) selected for a transaction determine the derived on-chain address du
 
 Receiving flows are likely to be used less often since static addresses can be safely reused. If the receiver has publicly posted their static address, they will receive payments without any interaction with the sender. Therefore, applications should encourage users to add labels or a contact whenever they actively share a static address with a sender.
 
-Applications should also allow receivers to share an on-chain address itself in case the sender's wallet cannot send to static addresses.
+Applications should also allow receivers to generate and share conventional on-chain addresses in case the sender's wallet cannot send to static addresses.
 
-Some places where people can share static addresses (and add labels) include:
+Some practical examples for where users might want to share (labelled) static addresses include:
 - Social media pages
 - Fundraising websites
 - Exchanges
@@ -310,7 +310,7 @@ Some places where people can share static addresses (and add labels) include:
 </div>
 
 
-The tradeoff with silent payments for all their benefits is a higher blockchain scanning requirement. This scanning process is more computation-intensive and time-consuming than popular BIP-32 wallets/addresses. Mobile wallet users are likely to face a noticeable delay in the detecting payments once they come online. While the scanning is takes place, applications should show progress and estimated time to complete the scanning process.
+The tradeoff with silent payments, for all their benefits, is a higher blockchain scanning requirement. This scanning process is more computation-intensive and time-consuming than for popular BIP-32 wallets and addresses. Mobile wallet users are likely to face a noticeable delay in the detecting payments once they come online. While the scanning is takes place, applications should show progress and estimated time to complete the scanning process.
 
 
 ## Backup & Recovery
@@ -336,7 +336,7 @@ Like [lightning wallets](/guide/daily-spending-wallet/backup-and-recovery/cloud-
 - [labels](/guide/how-it-works/silent-payments/#labels)
 - contacts
 
-Allowing the user to manually note some backup information in case the user misplaces the backup file or recovery application does not support backup files. Like regular wallets, silent payment wallets can also be backed up & restored with the recovery phrase. However, it may result in longer recovery times as well as loss of valuable metadata.
+Applications should allow users to manually note backup information in case they misplace the backup file or the recovery application does not support backup files at all. Like regular wallets, silent payment wallets can also be backed up with restored using a recovery phrase. However, this method may result in longer recovery times as well as loss of valuable metadata.
 
 </div>
 
