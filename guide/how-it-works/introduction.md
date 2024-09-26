@@ -2,7 +2,7 @@
 layout: guide
 title: How it works
 description: Find out about the complexities of how bitcoin works.
-nav_order: 9
+nav_order: 10
 has_children: true
 permalink: /guide/how-it-works/
 main_classes: -no-top-padding
