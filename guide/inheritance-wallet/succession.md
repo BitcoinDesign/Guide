@@ -1,12 +1,12 @@
 ---
 layout: guide
-title: Wallet recovery
+title: Succession & fund transfer
 description: This page describes how Christina and Davide recover the wallet by using their inheritance keys.
 nav_order: 6
 parent: Inheritance wallet
 permalink: /guide/inheritance-wallet/wallet-recovery/
 main_classes: -no-top-padding
-image_base: /assets/images/guide/inheritance-wallet/wallet-recovery/
+image_base: /assets/images/guide/inheritance-wallet/succession/
 images_wallet-import:
     - file: wallet-import/app-home-initial
       alt: Screen showing an empty app home screen.
@@ -128,7 +128,9 @@ Christina and David open the bag and take the recovery PDF, which holds the wall
 
 {% include image-gallery.html pages = page.images_wallet-import %}
 
-However, there is a catch: they cannot spend the funds with their inheritance keys, because they have not been unlocked yet. Alice’s and Bob's last transaction was almost 5 months ago, which means that it will take more than 7 months until Christina and David can use their inheritance keys to move the funds. We have covered the wallet configuration in more detail on the [use case page]({{ '/guide/inheritance-wallet/use-case-and-scope/' | relative_url }}). Christina and David could circumvent this restriction, if they would have access to their parents’ signing devices. Unfortunately, they don’t, so they will need to wait. 
+However, there is a catch: they cannot spend the funds with their inheritance keys, because they have not been unlocked yet. Alice’s and Bob's last transaction was almost 5 months ago, which means that it will take more than 7 months until Christina and David can use their inheritance keys to move the funds. We have covered the wallet configuration in more detail on the [use case page]({{ '/guide/inheritance-wallet/overview/' | relative_url }}). 
+
+Christina and David could circumvent this restriction, if they would have access to their parents’ signing devices. Unfortunately, they don’t, so they will need to wait. 
 
 ### Distributing the inheritance
 
