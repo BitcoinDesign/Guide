@@ -30,10 +30,10 @@ images_wallet-import:
       alt: App home screen showing the family savings wallet.
       caption: The home screen reminds Christina that she should download the backup kit and enable her signing device.
 images_inheritance-transaction-create:
-    - file: inheritance-transaction-create/app-home-initial
-      alt: App home screen showing the Family savings wallet.
-      caption: Christina goes into the family savings wallet to create a transaction.
-    - file: inheritance-transaction-create/wallet-overview
+    - file: inheritance-transaction-create/move-funds-app-home-initial
+      alt: App home screen showing the inheritance wallet.
+      caption: Christina goes into the inheritance wallet to create a transaction.
+    - file: inheritance-transaction-create/move-funds-wallet-overview
       alt: Wallet overview screen.
       caption: On the wallet details page, she hits "pay".
     - file: inheritance-transaction-create/move-funds-recipient-filled
@@ -64,23 +64,30 @@ images_inheritance-transaction-sign-christina:
     - file: inheritance-transaction-sign/move-funds-sign-christina-done
       alt: Screen showing the transaction details. It shows that one of the inheritance keys has already signed the transaction.
       caption: The first signature has been provided.
+    - file: inheritance-transaction-sign/move-funds-sign-christina-share
+      alt: Screen showing a QR code and sharing options.
+      caption: Christina shares the partially signed transaction with David.
+
 images_inheritance-transaction-sign-david:
-    - file: inheritance-transaction-sign/app-home-initial-david
-      alt: App home screen showing that a transaction is ready to be signed.
-      caption: The home screen shows that a transaction is ready to be signed.
+    - file: inheritance-transaction-sign/move-funds-sign-david-payment-sheet
+      alt: Dialog showing three different payment options.
+      caption: David initiates the transaction signing process.
+    - file: inheritance-transaction-sign/move-funds-sign-david-import-options
+      alt: Screen showing different options for how to import a transaction.
+      caption: He chooses the scan QR code option.
+    - file: inheritance-transaction-sign/move-funds-sign-david-import-tx
+      alt: QR code scanning screen.
+      caption: David scans the QR code from Christina's phone.
     - file: inheritance-transaction-sign/move-funds-sign-david-initial
       alt: Screen showing the transaction details. It shows that one of the inheritance keys has already signed the transaction.
-      caption: David goes on to sign the transaction as well.
+      caption: David reviews the transaction and signs it.
     - file: inheritance-transaction-sign/move-funds-sign-david-flow
       alt: Placeholder screen representing the transaction signing flow.
-      caption: The app takes her through the signing flow.
+      caption: The app takes him through the signing flow.
     - file: inheritance-transaction-sign/move-funds-success
       alt: Success screen showing that the transaction has been finalized.
       caption: With David's signature the required threshold has been reached and the transaction is finalized.
-    - file: inheritance-transaction-sign/move-funds-sign-david-done
-      alt: Screen showing the details of the finalized transaction.
-      caption: The transaction detail screen now shows the finalized transaction.
-    - file: inheritance-transaction-sign/app-home-sending
+    - file: inheritance-transaction-sign/move-funds-sign-david-home-pending
       alt: App home screen showing a pending transaction.
       caption: The home page shows the pending transaction.
 ---
@@ -148,7 +155,7 @@ After activating the wallet on their signing devices, Christina and David have s
 
 As we have covered on the [use case page]({{ '/guide/inheritance-wallet/overview/' | relative_url }}), the lock period for the inheritance key set is set to 12 months (6 months for the recovery path + 6 months for the inheritance key set). Since Alice and Bob's last transaction was 5 months ago, Christina and David will have to wait an additional 7 months before they can use their inheritance keys.
 
-{% include tip/open.html color="blue" icon="info" label="Note" %}
+{% include tip/open.html color="blue" icon="info" label="Faster access with primary keys" %}
 
 If Christina and David had access to their parents' signing devices, they could potentially use the recovery path after 6 months. However, they don't have this access, so they must wait for the full 12-month period. 
 
