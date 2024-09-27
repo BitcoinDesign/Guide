@@ -146,10 +146,11 @@ Silent payments are made in 4 broad steps:
    retina = "/assets/images/guide/how-it-works/silent-payments/how-silent-payments-work@2x.png"
    mobile = "/assets/images/guide/how-it-works/silent-payments/how-silent-payments-work-mobile.png"
    mobileRetina = "/assets/images/guide/how-it-works/silent-payments/how-silent-payments-work-mobile@2x.png"
+   modalImage = "/assets/images/guide/how-it-works/silent-payments/how-silent-payments-work@2x.png"
    alt-text = "An image that illustrates how silent payments work in 4 steps."
    caption = "Alice posts a static address on the website of her non-profit, Chasing Rabbits. Bob uses it to send bitcoin from his wallet. This transaction pays a derived on-chain address that Alice can recognise while scanning the blockchain."
    width = 1024
-   height = 522
+   height = 640
    layout = "full-width"
 %}
 
@@ -211,8 +212,9 @@ When she receives payments from any of these sources, the respective label(s) wi
    retina = "/assets/images/guide/how-it-works/silent-payments/how-silent-payment-labels-work@2x.png"
    mobile = "/assets/images/guide/how-it-works/silent-payments/how-silent-payment-labels-work-mobile.png"
    mobileRetina = "/assets/images/guide/how-it-works/silent-payments/how-silent-payment-labels-work-mobile@2x.png"
+   modalImage = "/assets/images/guide/how-it-works/silent-payments/how-silent-payment-labels-work@2x.png"
    alt-text = "An image that illustrates how labels feature in silent payments works."
-   caption = "Alice customizes her static addresses with labels when shares them. Whenever she receives a payment from one of them, the label is auto-applied and detected by the wallet."
+   caption = "Alice customizes her static address with labels before she shares them. Whenever she receives a payment from one of them, the label is auto-applied and detected by the wallet."
    width = 1024
    height = 801
    layout = "full-width"
