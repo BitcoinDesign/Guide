@@ -170,7 +170,7 @@ How to design for use cases where it is important to manage multiple wallets in 
 
 <h2 class="h3" markdown="1">[Inheritance wallet]({{ '/guide/inheritance-wallet/' | relative_url }})</h2>
 
-An in-depth exploration of a multi-key wallet designed for long-term savings and inheritance. It covers everything from wallet creation, backup, change management and succession. 
+An in-depth exploration of a multi-key wallet designed for long-term savings and inheritance. It covers everything from wallet creation, backup, change management and succession.
 
 ---
 
@@ -202,6 +202,7 @@ Explanations of various technical aspects of bitcoin and lightning.
 [Lightning liquidity]({{ '/guide/how-it-works/liquidity/' | relative_url }})<br />
 [Lightning services]({{ '/guide/how-it-works/lightning-services/' | relative_url }})<br />
 [Sign in with bitcoin]({{ '/guide/how-it-works/sign-in-with-bitcoin/' | relative_url }})<br />
+[Silent payments]({{ '/guide/how-it-works/silent-payments/' | relative_url }})<br />
 
 </div>
 </div>
