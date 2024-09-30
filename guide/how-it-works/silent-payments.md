@@ -245,11 +245,9 @@ Here's how businesses such as exchanges, merchants and vendors can use labels:
 
 ## Setup
 
-Applications can take a variety of approaches to set up and communicate silent payment wallets. Benefits of silent payments such as Contacts and auto-labelling can be explained during setup. Some wallets may use unique or significant locations (mobile widget, custom app logos, watch faces) to house this static address for easy retrieval, and may highlight the same during setup.
+Applications can take a variety of approaches to set up and communicate silent payment wallets. Benefits of silent payments such as Contacts and auto-labelling should be explained during setup. Some wallets may use unique or significant locations (mobile widget, custom app logos, watch faces) to place this static address for easy retrieval, and may highlight the same during setup.
 
 {% include image-gallery.html pages = page.images_sp-onboarding %}
-
-Silent payment wallets may or may not be set up as [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) and/or [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) HD wallets since the protocol does not require these.
 
 
 ## Sending
