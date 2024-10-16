@@ -128,7 +128,7 @@ To achieve this goal, their backup strategy accounts for the following three sce
 
 1. **Alice and Bob need to recover the wallet themselves**: They might simply need to restore the wallet because one (or both) of them lost access to their phone or computer. This route also accounts for one of the most most likely scenarios in which one spouse outlives the other 
 1. **A self-sovereign inheritance route for Christina and David**: The children should be able to use their inheritance keys and the backup material without any outside help
-1. **An assisted inheritance route** that provides e a fallback in case the self-sovereign inheritance fails. It is designed to help Christina and David access the funds through regular inheritance proceedings. 
+1. **An assisted inheritance route** that provides a fallback in case the self-sovereign inheritance fails. It is designed to help Christina and David access the funds through regular inheritance proceedings. 
 
 As we have covered on the wallet creation page, both of the inheritance routes for Christina and David are available [after six months]({{ '/guide/inheritance-wallet/wallet-creation/#creating-the-inheritance-key-set' | relative_url }}) of wallet inactivity. 
 
