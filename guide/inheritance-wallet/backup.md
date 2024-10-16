@@ -92,7 +92,7 @@ A third party with access to a descriptor can import the wallet and monitor all 
 Our application goes a bit further than only providing the users with a wallet descriptor. It generates a recovery kit that contains all necessary information in a variety of formats, so that users can easily restore a wallet in case of need. The recovery kit is a ZIP folder that includes:
 
 - **Wallet backup files** compatible with third-party applications like Sparrow, Electrum or Nunchuk
-- **A recovery PDF** containig: 
+- **A recovery PDF** containing: 
     - Wallet information and descriptor (as a QR code and in text form)
     - Details about the two key sets and individual signing keys
     - Visual representation of the wallet's unlocking rules
