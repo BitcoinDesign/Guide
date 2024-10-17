@@ -6,8 +6,8 @@ nav_order: 3
 parent: Inheritance wallet
 permalink: /guide/inheritance-wallet/onboarding-cosigners/
 main_classes: -no-top-padding
-image_base: /assets/images/guide/inheritance-wallet/onboarding-cosigners/
 image: https://bitcoin.design/assets/images/guide/inheritance-wallet/onboarding-cosigners/preview.jpg
+image_base: /assets/images/guide/inheritance-wallet/onboarding-cosigners/
 images_bob-export-config:
     - file: bob-export-config/onboard-alice-home
       alt: Home screen showing three tasks that are associated with the wallet for the user to complete.
