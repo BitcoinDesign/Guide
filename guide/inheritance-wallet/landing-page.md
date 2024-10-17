@@ -56,7 +56,7 @@ Before we dive into the details, we will introduce you to the Jones family. We a
 
 ### [Wallet creation]({{ '/guide/inheritance-wallet/wallet-creation/' | relative_url }})
 
-Our application lets users create flexible multi-key wallets with timelocked recovery paths to help them recover funds while they are still alive. On top of that, users can create and manage dedicated inheritance keys that are held by their heirs.
+Our application lets users create flexible multi-key wallets with timelocked recovery paths to help them recover funds. On top of that, users can create and manage dedicated inheritance keys that are held by their heirs.
 
 ---
 

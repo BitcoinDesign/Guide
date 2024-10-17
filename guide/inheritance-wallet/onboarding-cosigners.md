@@ -74,10 +74,6 @@ images_alice-enable-device:
 
 <!--
 
-Editor's notes
-
-This page covers how Alice imports the savings wallet to her own app and enables her signing device to create and sign transactions.  
-
 Illustration sources
 
 https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type=design&node-id=5542%3A2119&mode=design&t=sBtcvrDzb8MPtWaK-1
