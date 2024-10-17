@@ -166,11 +166,9 @@ If a user loses their wallet, they also lose their access to your service. Ensur
 
 ---
 
-Next, view our [case studies]({{ '/guide/case-studies/' | relative_url }}) to see examples of design applied to real bitcoin software.
-
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/wallet-privacy/"
    previousName = "Wallet privacy"
-   nextUrl = "/guide/how-it-works/wallet-selector"
-   nextName = "Wallet selector"
+   nextUrl = "/guide/how-it-works/silent-payments"
+   nextName = "Silent payments"
 %}
