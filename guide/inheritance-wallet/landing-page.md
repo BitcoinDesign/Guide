@@ -12,10 +12,6 @@ image: https://bitcoin.design/assets/images/guide/inheritance-wallet/preview.jpg
 
 <!--
 
-Editor's notes
-
-This page sets the context of the reference design and provides on overview of the overall scope, as well as short introductions to the individual chapters.  
-
 Illustration sources
 
 https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type=design&node-id=5542%3A2119&mode=design&t=sBtcvrDzb8MPtWaK-1

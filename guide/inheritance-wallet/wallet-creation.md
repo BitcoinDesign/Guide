@@ -192,10 +192,6 @@ images_finalize-wallet:
 
 <!--
 
-Editor's notes
-
-This page covers a multi-key wallet that uses timelocks to provide additional recovery options.  
-
 Illustration sources
 
 https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type=design&node-id=5542%3A2119&mode=design&t=sBtcvrDzb8MPtWaK-1
