@@ -7,6 +7,7 @@ parent: Inheritance wallet
 permalink: /guide/inheritance-wallet/onboarding-cosigners/
 main_classes: -no-top-padding
 image_base: /assets/images/guide/inheritance-wallet/onboarding-cosigners/
+image: https://bitcoin.design/assets/images/guide/inheritance-wallet/onboarding-cosigners/preview.jpg
 images_bob-export-config:
     - file: bob-export-config/onboard-alice-home
       alt: Home screen showing three tasks that are associated with the wallet for the user to complete.
@@ -79,6 +80,14 @@ Illustration sources
 https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type=design&node-id=5542%3A2119&mode=design&t=sBtcvrDzb8MPtWaK-1
 
 -->
+
+{% include picture.html
+   image = "/assets/images/guide/inheritance-wallet/onboarding-cosigners/header.jpg"
+   retina = "assets/images/guide/inheritance-wallet/onboarding-cosigners/header@2x.jpg"
+   width = 1600
+   height = 800
+   layout = "full-width"
+%}
 
 # Cosigner onboarding
 {: .no_toc }

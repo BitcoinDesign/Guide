@@ -6,6 +6,7 @@ nav_order: 2
 parent: Inheritance wallet
 permalink: /guide/inheritance-wallet/wallet-creation/
 main_classes: -no-top-padding
+image: https://bitcoin.design/assets/images/guide/inheritance-wallet/wallet-creation/preview.jpg
 image_base: /assets/images/guide/inheritance-wallet/
 images_wallet-creation:
     - file: wallet-creation/onboarding-01
@@ -200,6 +201,14 @@ Illustration sources
 https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type=design&node-id=5542%3A2119&mode=design&t=sBtcvrDzb8MPtWaK-1
 
 -->
+
+{% include picture.html
+   image = "/assets/images/guide/inheritance-wallet/wallet-creation/header.jpg"
+   retina = "assets/images/guide/inheritance-wallet/wallet-creation/header@2x.jpg"
+   width = 1600
+   height = 800
+   layout = "full-width"
+%}
 
 # Wallet creation 
 {: .no_toc }
