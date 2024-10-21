@@ -114,7 +114,7 @@ The first step is to import the family savings wallet to Alice's app. By tapping
 
 {% include image-gallery.html pages = page.images_bob-export-config %}
 
-The app also shows an option to view the [wallet descriptor](https://bitcoin.design/guide/glossary/#output-script-descriptor), which is a small piece of text that contains all the information that a wallet application needs to recover a multi-key wallet. We will cover this topic in more detail in the following chapter about the wallet backup.
+The app also shows an option to view the [wallet descriptor]({{ '/guide/glossary/#output-script-descriptor' | relative_url }}), which is a small piece of text that contains all the information that a wallet application needs to recover a multi-key wallet. We will cover this topic in more detail in the following chapter about the wallet backup.
 
 #### Alice imports the wallet to her app
 
