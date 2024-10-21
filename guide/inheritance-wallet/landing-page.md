@@ -20,7 +20,7 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
 
 {% include picture.html
    image = "/assets/images/guide/inheritance-wallet/header.jpg"
-   retina = "assets/images/guide/inheritance-wallet/header@2x.jpg"
+   retina = "/assets/images/guide/inheritance-wallet/header@2x.jpg"
    alt-text = "Two parents handing bitcoin to their two children."
    width = 1600
    height = 800

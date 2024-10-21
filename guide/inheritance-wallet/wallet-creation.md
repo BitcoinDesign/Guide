@@ -200,7 +200,7 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
 
 {% include picture.html
    image = "/assets/images/guide/inheritance-wallet/wallet-creation/header.jpg"
-   retina = "assets/images/guide/inheritance-wallet/wallet-creation/header@2x.jpg"
+   retina = "/assets/images/guide/inheritance-wallet/wallet-creation/header@2x.jpg"
    width = 1600
    height = 800
    layout = "full-width"
