@@ -7,35 +7,8 @@ parent: Inheritance wallet
 permalink: /guide/inheritance-wallet/backup/
 main_classes: -no-top-padding
 image_base: /assets/images/guide/inheritance-wallet/
-images_wallet-backup:
-    - file: wallet-backup/app-home-backup-before
-      alt: Image of the app home screen showing a reminder to backup the wallet.
-      caption: The app shows a reminder to save the backup kit.
-    - file: wallet-backup/wallet-settings-backup-kit
-      alt: Screen showing instructions on how to store the wallet backup.
-      caption: The backup page highlights the most important points about the wallet backup and provides a link to learn more.
-    - file: wallet-backup/backup-save-dialog
-      alt: Placeholder screen representing the operating system native file download dialog.
-      caption: The file is saved using the native file download flow.
-    - file: wallet-backup/backup-success
-      alt: Screen showing a success message.
-      caption: The success screen reminds the user once again to not store the backup kit in the same place as the private key backups.
-    - file: wallet-backup/app-home-backup-done
-      alt: Image of the home screen that does not show the backup reminder anymore.
-      caption: The app home screen does not show the backup reminder anymore.
 ---
 
-<!--
-
-Editor's notes
-
-This page covers how users backup their wallet and an example approach of how to store the backup material.  
-
-Illustration sources
-
-https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Inheritance-wallet?type=design&node-id=6293%3A21917&mode=design&t=I2e3qgqYRGpAGyaQ-1 
-
--->
 
 # Wallet backup 
 {: .no_toc }
@@ -80,11 +53,11 @@ Firstly, users need to back up the private keys. In our example, the Joneses nee
 #### Wallet configuration
 In addition to the private keys, it is also necessary to back up the wallet configuration. This is important because the wallet application needs to know how to generate corresponding bitcoin addresses as well as the rules that define how bitcoin can be spent from these addresses. The wallet configuration is sometimes also called the [wallet descriptor]({{ '/guide/glossary/#output-script-descriptor' | relative_url }}). It's a small piece of text that contains all the information that a wallet application needs to recover a multi-key wallet. 
 
-The backup of a wallet descriptor does not require the same level of security as a private key backup, because it does not contain any private key material. It is, however, a critical piece of information. If you lose the wallet descriptor and have not backed up at least all extended public keys (XPUBs), you will not be able to recover the wallet in case of need. 
+The backup of the wallet configuration does not require the same level of security as a private key backup, because it does not contain any private key material. It is, however, a critical piece of information. If you lose the wallet configuration and have not backed up at least all extended public keys (XPUBs), including their fingerprint and [derivation path]({{ '/guide/glossary/#derivation-path' | relative_url }}), you will not be able to recover the wallet in case of need. 
 
-{% include tip/open.html color="blue" icon="info" label="Wallet descriptors are privacy-sensitive" %}
+{% include tip/open.html color="blue" icon="info" label="The wallet configuration is privacy-sensitive" %}
 
-A third party with access to a descriptor can import the wallet and monitor all activity, past and future. However, without the necessary private keys, they cannot spend funds.
+A third party with access to the configuration can import the wallet and monitor all activity, past and future. However, without the necessary private keys, they cannot spend funds.
 
 {% include tip/close.html %} 
 
@@ -153,11 +126,11 @@ The diagram below provides a high-level overview of how Alice and Bob distribute
 %}
 
 
-### Password Manager
+### Password Manager (digital)
 
 ##### Alice and Bob's personal vaults
 
-Alice and Bob each store an encrypted version of the recovery kit in their own personal vaults of the password manager they use. Encrypting the recovery kit protects it from a potential security breach on the side of the password manager. 
+Alice and Bob each store an encrypted version of the recovery kit in their own personal vaults of their password manager. Encrypting the recovery kit protects it from a potential security breach on the side of the password manager. 
 
 {% include picture.html
    image = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-tool-distribution-pwm.png"
@@ -171,13 +144,13 @@ Alice and Bob each store an encrypted version of the recovery kit in their own p
 
 ##### Shared family vault
 
-To make sure that Christina and David will be able to retrieve both the recovery kit  and the password to decrypt it, Alice and Bob store the following pieces of information in a shared family vault:
+To make sure that Christina and David will be able to retrieve both the recovery kit and the password to decrypt it, Alice and Bob create a shared family vault in the password manager, where they store the following pieces of information:
 
-- House safe PIN
+- The PIN to the home safe
 - Lawyer's contact details
 - Bank deposit box details
 
-### Home safe
+### Home safe (physical)
 
 Bob places the following items in a tamper-evident bag and stores it in their home safe:
 
@@ -248,7 +221,7 @@ If either Bob or Alice need to recover the funds alone, without the help of one 
 
 If anything happens to Alice and Bob, Christina and David can access the funds after six months using:
 
-- The PIN to the safe, stored in the shared family vault of the password manager
+- The PIN to open the physical home safe, which is stored in the shared family vault of the password manager
 - The backup materials from the home safe
 - Their inheritance keys to move the funds
 
