@@ -6,6 +6,7 @@ nav_order: 2
 parent: Inheritance wallet
 permalink: /guide/inheritance-wallet/wallet-creation/
 main_classes: -no-top-padding
+image: https://bitcoin.design/assets/images/guide/inheritance-wallet/wallet-creation/preview.jpg
 image_base: /assets/images/guide/inheritance-wallet/
 images_wallet-creation:
     - file: wallet-creation/onboarding-01
@@ -191,15 +192,19 @@ images_finalize-wallet:
 
 <!--
 
-Editor's notes
-
-This page covers a multi-key wallet that uses timelocks to provide additional recovery options.  
-
 Illustration sources
 
 https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type=design&node-id=5542%3A2119&mode=design&t=sBtcvrDzb8MPtWaK-1
 
 -->
+
+{% include picture.html
+   image = "/assets/images/guide/inheritance-wallet/wallet-creation/header.jpg"
+   retina = "/assets/images/guide/inheritance-wallet/wallet-creation/header@2x.jpg"
+   width = 1600
+   height = 800
+   layout = "full-width"
+%}
 
 # Wallet creation 
 {: .no_toc }
@@ -212,10 +217,29 @@ https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type
 </div>
 
 ---
+## How it works
+Now that we have a [good understanding]({{ '/guide/inheritance-wallet/overview/' | relative_url }}) of how Bob and Alice want to set up their inheritance wallet, let's examine the initial user experience and wallet setup process. To create a fully functional wallet, the Joneses need to complete the following high-level steps:
 
-## Onboarding
+<div class="center" markdown="1">
 
-Now that we have a [good understanding]({{ '/guide/inheritance-wallet/overview/' | relative_url }}) of how Bob and Alice want to set up their inheritance wallet, let's take a close look at the first use experience and wallet setup.
+{% include picture.html
+   image = "/assets/images/guide/inheritance-wallet/wallet-creation/process-overview.png"
+   retina = "/assets/images/guide/inheritance-wallet/wallet-creation/process-overview@2x.png"
+   alt-text = "A diagram showing the wallet creation and cosigner onboarding process."
+   width = 1106
+   height = 1659
+   layout = "float-right-desktop"
+%}
+
+1. Bob creates the wallet template in his app and shares it with Alice (cosigner) and Christina, David, and Edward (inheritance key holders).
+2. Everyone creates a key on their respective signing devices and provides it to Bob.
+3. Bob adds all keys to the configuration and finalizes the wallet.
+4. Bob shares the final wallet configuration with Alice, but not with the inheritance key holders.
+5. Alice imports the wallet and activates it on her signing device.
+
+</div>
+
+## App onboarding
 
 After downloading the app, it walks them through the purpose of the product and highlights some of the most important features. 
 
@@ -268,7 +292,15 @@ The main difference is that the inheritance key set should only be unlocked afte
 
 ## Step 2: Adding the signing keys
 
-The wallet is now fully configured. What is left to do is to add the signing keys. Adding a key technically means that users have to import the extended public key (XPUB) from each signing device that should be used to sign transactions. 
+Now that the wallet rules are configured, the next step is to add the signing keys to the wallet configuration. Adding a key technically means that users have to import the extended public key (XPUB) from each signing device that should be used to sign transactions. For the Jones family, all signing keys are stored on dedicated hardware wallets.
+
+
+{% include tip/open.html color="blue" icon="info" label="Important security note" %}
+
+While it's technically possible to use smartphones or personal computers as signing devices, this is not recommended. These devices often connect to the internet, making them more vulnerable to cyber attacks. Using dedicated hardware wallets significantly enhances security.
+
+{% include tip/close.html %}
+
 
 ### Adding the primary keys
 
@@ -333,6 +365,6 @@ The homescreen shows the newly created wallet. In addition, the app shows a coup
 {% include next-previous.html
    previousUrl = "/guide/inheritance-wallet/overview"
    previousName = "Overview"
-   nextUrl = "/guide/upgradeable-wallet/"
-   nextName = "Upgradeable wallet"
+   nextUrl = "/guide/inheritance-wallet/onboarding-cosigners"
+   nextName = "Onboarding cosigners"
 %}
