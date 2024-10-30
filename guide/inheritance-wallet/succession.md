@@ -6,6 +6,7 @@ nav_order: 6
 parent: Inheritance wallet
 permalink: /guide/inheritance-wallet/succession/
 main_classes: -no-top-padding
+image: https://bitcoin.design/assets/images/guide/inheritance-wallet/succession/preview.png
 image_base: /assets/images/guide/inheritance-wallet/succession/
 images_wallet-import:
     - file: wallet-import/app-home-initial
@@ -67,7 +68,6 @@ images_inheritance-transaction-sign-christina:
     - file: inheritance-transaction-sign/move-funds-sign-christina-share
       alt: Screen showing a QR code and sharing options.
       caption: Christina shares the partially signed transaction with David.
-
 images_inheritance-transaction-sign-david:
     - file: inheritance-transaction-sign/move-funds-sign-david-payment-sheet
       alt: Dialog showing three different payment options.
@@ -92,17 +92,14 @@ images_inheritance-transaction-sign-david:
       caption: The home page shows the pending transaction.
 ---
 
-<!--
+{% include picture.html
+   image = "/assets/images/guide/inheritance-wallet/succession/header.png"
+   retina = "/assets/images/guide/inheritance-wallet/succession/header@2x.png"
+   width = 1600
+   height = 800
+   layout = "full-width"
+%}
 
-Editor's notes
-
-This page describes how Christina and David access their inheritance and distribute the funds between them. It also discusses the pros and cons of using multi-key wallets and (relative) timelocks for inheritance.  
-
-Illustration sources
-
-https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type=design&node-id=5542%3A2119&mode=design&t=sBtcvrDzb8MPtWaK-1
-
--->
 
 # Succession and fund transfer
 {: .no_toc }
