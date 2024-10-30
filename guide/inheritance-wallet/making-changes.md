@@ -6,6 +6,7 @@ nav_order: 5
 parent: Inheritance wallet
 permalink: /guide/inheritance-wallet/making-changes/
 main_classes: -no-top-padding
+image: https://bitcoin.design/assets/images/guide/inheritance-wallet/making-changes/preview.jpg
 image_base: /assets/images/guide/inheritance-wallet/making-changes/
 images_key-replacement-configuration:
     - file: key-replacement/app-home-initial
@@ -176,17 +177,15 @@ images_config-changes:
       alt: Success screen showing the option to download the wallet backup kit.
       caption: The new wallet has been created and added to the home screen.
 ---
-<!--
 
-Editor's notes
+{% include picture.html
+   image = "/assets/images/guide/inheritance-wallet/making-changes/header.jpg"
+   retina = "/assets/images/guide/inheritance-wallet/making-changes/header@2x.jpg"
+   width = 1600
+   height = 800
+   layout = "full-width"
+%}
 
-This page covers how users can replace individual keys or change the wallet configuration itself.  
-
-Illustration sources
-
-https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Inheritance-wallet?type=design&node-id=6293%3A21917&mode=design&t=I2e3qgqYRGpAGyaQ-1 
-
--->
 
 # Making changes 
 {: .no_toc }
@@ -209,12 +208,12 @@ Alice and Bob have been using their savings wallet for a couple of years now and
 
 When users need to make changes to their multisig wallet, such as replacing a key or modifying the wallet configuration, the process involves creating a new wallet and transferring funds. Here's how the process works from Bob's and Alice's perspective:
 
-1. Bob makes the desired changes, which creates a new wallet.
-1. He shares the new wallet with Alice for setup in her application.
-1. Bob and Alice activate the new wallet on all three primary signing devices. 
-1. They save and store the new wallet recovery kit as described in the [backup page]({{ '/guide/inheritance-wallet/backup/#backup-strategy' | relative_url }}).
-1. Transfer all funds to the new wallet.
-1. Archive the old wallet to manage any future incoming funds.
+1. Bob makes the desired changes, which creates a new wallet
+1. He shares the new wallet with Alice for setup in her application
+1. Bob and Alice activate the new wallet on all three primary signing devices 
+1. They save and store the new wallet recovery kit as described in the [backup page]({{ '/guide/inheritance-wallet/backup/#backup-strategy' | relative_url }})
+1. Transfer all funds to the new wallet
+1. Archive the old wallet to manage any future incoming funds
 
 
 ## Replacing David's signing key
@@ -248,15 +247,17 @@ The next step is to add David's new extended public key. This works in the same 
 
 {% include image-gallery.html pages = page.images_key-replacement-add-key %}
 
-### Cosigner setup, device activation and wallet backup 
+#### Cosigner setup, device activation and wallet backup 
 
 The new inheritance wallet is now created. Just like during the initial wallet creation, Alice and Bob now need to:
 
-1. Share the wallet configuration with Alice, so that she can set up the wallet on her app.
-1. Activate the new wallet on all of their signing devices.
-1. Save the backup kit for the new wallet.
+1. Share the wallet configuration with Alice, so that she can set up the wallet on her app
+1. Activate the new wallet on all of their signing devices
+1. Save the backup kit for the new wallet
 
 We have covered these topics in the previous pages of this reference design.
+
+---
 
 ### Moving funds to the new wallet
 
@@ -284,6 +285,8 @@ After she completes the signing flow  with her BitBox, the app automatically bro
 
 Back on the home screen, Alice sees that the transaction is being confirmed by the network. After it has been confirmed, the app shows a reminder that the original wallet should be archived. 
 
+---
+
 ### Archiving the old wallet
 
 Archiving unused wallets removes complexity and helps users focus on the wallets they actively use. Archiving a wallet does not delete it from the app. It is only removed from the home screen and from the wallets tab. 
@@ -292,16 +295,16 @@ The app will still monitor the Bitcoin blockchain for incoming transactions. If 
 
 {% include image-gallery.html pages = page.images_archive-wallet %}
 
-### Alternative approach
+## Alternative approach
 As you can see, making changes to a multi-key wallet can be a tedious process. An alternative to replacing the David's key would be for David to simply import the backup of his existing private key into a new signing device. This approach has some advantages:
 
 1. **Simplicity**: It doesn't require creating a new wallet or moving funds, which incurs transaction fees.
-1. **Convenience**: Other family members wouldn't need to be involved in the process.
+1. **Convenience**: Other family members wouldn't need to be involved in the process
 
 However, there are also significant downsides:
 
-1. **Security risk**: If the original device was stolen rather than just lost, the thief might eventually gain access to the private key, putting the funds at risk.
-1. **Potential compromise**: If there's any chance the seed phrase backup was exposed or compromised, using it again could jeopardize the wallet's security.
+1. **Security risk**: If the original device was stolen rather than just lost, the thief might eventually gain access to the private key, putting the funds at risk
+1. **Potential compromise**: If there's any chance the seed phrase backup was exposed or compromised, using it again could jeopardize the wallet's security
 
 In a multi-key setup, a single compromised key doesn't immediately put the funds at risk because multiple keys are required to authorize a transaction. In addition to that, the inheritance key set is protected by the timelocks that Alice and Bob have put in place. However, it does reduce the overall security of the wallet.
 
