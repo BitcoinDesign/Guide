@@ -6,6 +6,7 @@ nav_order: 1
 parent: Inheritance wallet
 permalink: /guide/inheritance-wallet/overview/
 main_classes: -no-top-padding
+image: https://bitcoin.design/assets/images/guide/inheritance-wallet/overview/preview.jpg
 
 ---
 
@@ -20,6 +21,14 @@ Illustration sources
 https://www.figma.com/file/h5GP5v5dYfpXXfEUXf6nvC/Family-inheritance-wallet?type=design&node-id=5542%3A2119&mode=design&t=sBtcvrDzb8MPtWaK-1
 
 -->
+
+{% include picture.html
+   image = "/assets/images/guide/inheritance-wallet/overview/header.jpg"
+   retina = "/assets/images/guide/inheritance-wallet/overview/header@2x.jpg"
+   width = 1600
+   height = 800
+   layout = "full-width"
+%}
 
 # Overview 
 {: .no_toc }
