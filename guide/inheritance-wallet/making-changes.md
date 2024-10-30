@@ -291,7 +291,7 @@ Back on the home screen, Alice sees that the transaction is being confirmed by t
 
 Archiving unused wallets removes complexity and helps users focus on the wallets they actively use. Archiving a wallet does not delete it from the app. It is only removed from the home screen and from the wallets tab. 
 
-The app will still monitor the Bitcoin blockchain for incoming transactions. If there are any, they are shown on the home screen and in the wallets tab. Users can then transfer the funds to a wallet that they actively use. This is why it is important to keep the backup kit and at least one of the primary keys of every wallet.   
+The app will still monitor the bitcoin blockchain for incoming transactions. If there are any, they are shown on the home screen and in the wallets tab. Users can then transfer the funds to a wallet that they actively use. This is why it is important to keep the backup kit and at least one of the primary keys of every wallet.   
 
 {% include image-gallery.html pages = page.images_archive-wallet %}
 
