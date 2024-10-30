@@ -237,7 +237,7 @@ The prototype below lets you click through the key replacement flow:
    height = 500
 %}
 
-Once he receives David's XPUB, Bob opens our application and navigates to the wallet settings. On the wallet settings page, Bob goes the signing keys page. From there the app guides him through the key replacement flow. It starts with a short explanation dialog that outlines how the process works.   
+Once he receives David's XPUB, Bob opens our application and navigates to the wallet settings. On the wallet settings page, Bob goes to the signing keys page. From there, the app guides him through the key replacement flow. It starts with a short explanation dialog that outlines how the process works.   
 
 {% include image-gallery.html pages = page.images_key-replacement-configuration %} 
 
