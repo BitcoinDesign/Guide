@@ -19,12 +19,12 @@ images_contacts:
       caption: The wallet owner's contact page allows them to view and quickly share their payment information.
     - file: contacts-list
       modalImage: contacts-list@2x
-      alt: A Contacts page shows the user a searchable contact list, in order quickly access saved payment information, including their won.
+      alt: A Contacts page shows the user a searchable contact list, in order quickly access saved payment information, including their own.
       caption: A Contacts page lets the user search and quickly access saved payment information, including their own.
     - file: home-screen-with-contacts
       modalImage: home-screen-with-contacts@2x
       alt: App home screen containing a pinned contacts section, which includes a self contact for the wallet owner.
-      caption: An home screen with a pinned contacts section allows quick access to frequently used payment information.
+      caption: A home screen with a pinned contacts section allows quick access to frequently used payment information.
 
 images_sp-onboarding:
     - file: setup-silent-payments-onboarding-i
@@ -110,9 +110,9 @@ https://www.figma.com/design/q8IYl9UVsOWkkPhs4IkHQR/Bitcoin-Wallet-UI-Kit-%26-De
 
 [Silent payments](https://github.com/bitcoin/bips/blob/master/bip-0352.mediawiki) is a protocol the uses static addresses to simplify payment experience while preserving privacy. Once the receiver shares a static address, senders derive a new unique on-chain address with it they make a payment. This prevents [address reuse](/guide/glossary/address/#address-reuse) without repeated user interaction.
 
-For e.g: Alice can simply post a static address on her website, and receive bitcoin donations at unique on-chain addresses. The static address itself never shows up on-chain.
+For example: Alice can simply post a static address on her website, and receive bitcoin donations at unique on-chain addresses. The static address itself never shows up on-chain.
 
-Silent payments also allow users to customize their static address with labels that are detected when payments are received. This is a powerful tool that provides actionable information for [coin selection](/guide/how-it-works/silent-payments/#coin-selection) with minimal manual effort.
+Silent payments also allow users to customize their static address with labels that are detected when payments are received. This is a powerful tool that provides actionable information for [coin selection](/guide/how-it-works/silent-payments/#coin-selection), with minimal manual effort.
 
 Static addresses & labels enable robust [contacts](/guide/how-it-works/silent-payments/#contacts) features. The result is a better interaction model centred around users.
 
@@ -190,7 +190,7 @@ Silent payments allow users to add labels to their static addresses on a case-by
 
 </div>
 
-For example, Alice can add can customise her static address with different labels before sharing them
+For example, Alice can customise her static address with different labels before sharing them:
 - with a certain client
 - on Nostr and
 - on her website
@@ -210,7 +210,7 @@ When she receives payments from any of these sources, the respective label(s) wi
    layout = "full-width"
 %}
 
-This scheme improves labelling in general since labels get auto-applied to all derived on-chain addresses. This eliminates the friction of manually adding labels to addresses or transactions. Labels can contain crucial information that is useful for automatic or manual coin selection for future outgoing payments.
+This scheme improves labelling in general, since labels get auto-applied to all derived on-chain addresses. This eliminates the friction of manually adding labels to addresses or transactions. Labels can contain crucial information that is useful for automatic or manual coin selection for future outgoing payments.
 
 #### Tracking payments
 
@@ -218,12 +218,12 @@ Without using labels, receivers have no way of knowing who may have paid them si
 
 {% include tip/recommendation.html %}
 
-Labels in silent payments are critical if receivers such as businesses need to match payments with customers.
+Labels in silent payments are critical if receivers, such as businesses, need to match payments with customers.
 
 {% include tip/close.html %}
 
-Here's how businesses such as exchanges, merchants and vendors can use labels:
-- Invoices: merchant software like [BTCPay](https://btcpayserver.org/) must use labels to match incoming payments with invoices and/or provide static addresses to repeat customers.
+Here's how businesses, such as exchanges, merchants and vendors can use labels:
+- **Invoices:** merchant software like [BTCPay](https://btcpayserver.org/) must use labels to match incoming payments with invoices and/or provide unique static addresses to repeat customers.
 - Bitcoin exchange deposits: Customers looking to sell/deposit bitcoin at exchanges encounter friction when their deposit addresses change constantly. Labelled static addresses for users fix this without address reuse while retaining the ability to match deposits to customers.
 
 
@@ -231,28 +231,28 @@ Here's how businesses such as exchanges, merchants and vendors can use labels:
 
  Since senders can safely use the same static address for multiple payments, it is natural for them to want to store these for future use. Contacts are a great way to do this in terms that users can intuit: names and faces. The [contacts](/guide/daily-spending-wallet/contacts/) page provides guidance about the topic.
 
- Silent payments (along with bolt-12) allow applications to center their payments experience around people instead of addresses, something that was not advisable before due to issues with on-chain address reuse.
+ Silent payments (along with [BOLT-12](http://bolt12.org)) allow applications to center their payments experience around people instead of addresses. This was not advisable before, due to issues with on-chain address reuse.
 
 
 {% include image-gallery.html pages = page.images_contacts %}
 
 {% include tip/tip.html %}
 
- Contacts are not just for sending. The receiver can create contacts for parties they only receive bitcoin from. When they share a labelled static addresses with others, such as employers or customers, creating a contact can help with invoicing, tracking payments and coin selection.
+Contacts are not just for sending. The receiver can create contacts for parties they only receive bitcoin from. When they share a labelled static addresses with others, such as employers or customers, creating a contact can help with invoicing, tracking payments and coin selection.
 
 {% include tip/close.html %}
 
 
 ## Setup
 
-Applications can take a variety of approaches to set up and communicate silent payment wallets. Benefits of silent payments such as Contacts and auto-labelling should be explained during setup. Some wallets may use unique or significant locations (mobile widget, custom app logos, watch faces) to place this static address for easy retrieval, and may highlight the same during setup.
+Applications can take a variety of approaches to set up and communicate silent payment wallets. Benefits of silent payments, such as contacts and auto-labelling, should be explained during setup. Some wallets may use unique or significant locations (mobile widget, custom app logos, watch faces) to place this static address for easy retrieval, and may highlight the same during setup.
 
 {% include image-gallery.html pages = page.images_sp-onboarding %}
 
 
 ## Sending
 
-With the improvements to contacts, on-chain send flows may start from a number of [entry points](/guide/daily-spending-wallet/sending/#payment-entry-points). When users start with obtaining a static address, every on-chain address derived from it will be visibly different from the static address the sender started with. This is likely to be confusing for users. Applications should take measures such as short explainers to avoid confusion on the users part. Test transactions are another good way to help users deal with this.
+With the improvements to contacts, on-chain send flows may start from a number of [entry points](/guide/daily-spending-wallet/sending/#payment-entry-points). When users start with obtaining a static address, every on-chain address derived from it will be visibly different from the static address the sender started with. This is likely to be confusing for users. Applications should take measures such as short explainers to avoid confusion on the user's part. Test transactions are another good way to help users deal with this.
 
 {% include image-gallery.html pages = page.images_send %}
 
@@ -268,7 +268,7 @@ As mentioned in the introduction, coin selection can be significantly improved d
 
 {% include tip/tip.html %}
 
-The coin(s) selected for a transaction determine the derived on-chain address due to the nature of silent payments protocol. The interface should avoid showing the on-chain address before the coin selection is done.
+The coin(s) selected for a transaction determine the derived on-chain address, due to the nature of the silent payments protocol. The interface should avoid showing the on-chain address before the coin selection is done.
 
 {% include tip/close.html %}
 
@@ -287,7 +287,7 @@ The coin(s) selected for a transaction determine the derived on-chain address du
    layout = "float-right-desktop -background -shadow"
 %}
 
-Receiving flows are likely to be used less often since static addresses can be safely reused. If the receiver has publicly posted their static address, they will receive payments without any interaction with the sender. Therefore, applications should encourage users to add labels or a contact whenever they actively share a static address with a sender.
+Receiving flows are likely to be used less often, since static addresses can be safely reused. If the receiver has publicly posted their static address, they will receive payments without any interaction with the sender. Therefore, applications should encourage users to add labels or a contact whenever they actively share a static address with a sender.
 
 Applications should also allow receivers to generate and share conventional on-chain addresses in case the sender's wallet cannot send to static addresses.
 
@@ -300,7 +300,7 @@ Some practical examples for where users might want to share (labelled) static ad
 </div>
 
 
-The tradeoff with silent payments, for all their benefits, is a higher blockchain scanning requirement. This scanning process is more computation-intensive and time-consuming than for popular BIP-32 wallets and addresses. Mobile wallet users are likely to face a noticeable delay in the detecting payments once they come online. While the scanning is takes place, applications should show progress and estimated time to complete the scanning process.
+The tradeoff with silent payments, for all their benefits, is a higher blockchain scanning requirement. This scanning process is more computation-intensive and time-consuming than for popular BIP-32 wallets and addresses. Mobile wallet users are likely to face a noticeable delay in detecting payments once they come online. While scanning takes place, applications should show progress and the estimated completion time.
 
 
 ## Backup & Recovery
@@ -326,7 +326,7 @@ Like [lightning wallets](/guide/daily-spending-wallet/backup-and-recovery/cloud-
 - [labels](/guide/how-it-works/silent-payments/#labels)
 - contacts
 
-Applications should allow users to manually note backup information in case they misplace the backup file or the recovery application does not support backup files at all. Like regular wallets, silent payment wallets can also be backed up with restored using a recovery phrase. However, this method may result in longer recovery times as well as loss of valuable metadata.
+Applications should allow users to manually note backup information in case they misplace the backup file or the recovery application does not support backup files at all. Like regular wallets, silent payment wallets can also be backed up and restored using a recovery phrase. However, this method may result in longer recovery times as well as loss of valuable metadata.
 
 </div>
 
@@ -363,7 +363,7 @@ Applications should allow both backup & recovery through multiple methods. This 
 
 {% include fact/cons.html %}
 
-- Static addresses does not match on-chain addresses in the transaction, breaking conceptual model for seasoned users
+- Static addresses do not match on-chain addresses in transactions, breaking the conceptual model for seasoned users
 - Scanning for payments doesn’t work well with electrum servers (widely used by wallets)
 
 {% include fact/close.html %}
