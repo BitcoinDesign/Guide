@@ -108,7 +108,7 @@ https://www.figma.com/design/q8IYl9UVsOWkkPhs4IkHQR/Bitcoin-Wallet-UI-Kit-%26-De
 
 ---
 
-[Silent payments](https://github.com/bitcoin/bips/blob/master/bip-0352.mediawiki) is a protocol the uses static addresses to simplify payment experience while preserving privacy. Once the receiver shares a static address, senders derive a new unique on-chain address with it they make a payment. This prevents [address reuse](/guide/glossary/address/#address-reuse) without repeated user interaction.
+[Silent payments](https://github.com/bitcoin/bips/blob/master/bip-0352.mediawiki) is a protocol that uses static addresses to simplify payment experience, while preserving privacy. Once the receiver shares a static address, senders derive a new unique on-chain addresses while making payments. This prevents [address reuse](/guide/glossary/address/#address-reuse) without repeated user interaction.
 
 For example: Alice can simply post a static address on her website, and receive bitcoin donations at unique on-chain addresses. The static address itself never shows up on-chain.
 
@@ -146,24 +146,23 @@ Silent payments are made in 4 broad steps:
 
 ## A new conceptual model
 
-Silent payments introduce a new technical model that separates payment information based on their purpose.
+Silent payments introduce a new technical model that separates payment information based on its purpose.
 
-For example: the static address is only shared with senders who use it to make payments. Payment detection is done with a separate scan key and doesn't use the static address at all. Here are the main components of this new model:
+Here are the main components of this new model:
 
 | Component       |Used by         | Purpose |
 |:-------------|:------------------|:------|
 | Static address | Senders | Making payments
-| Scan key     | Nodes & [light clients](/guide/how-it-works/nodes/#light-nodes)  | Detecting payments
+| Scan key     | [Nodes & light clients](/guide/how-it-works/nodes)  | Detecting payments
 | Spend key   | Wallet owner | Spending bitcoin
 
-
-The above model introduces a scan key that is used for payment scanning and a static address which is used for deriving on-chain addresses. This is in contrast with the BIP-32 model where [extended public keys](/guide/glossary/#extended-public-key-xpub-ypub-zpub) are used for both purposes. Below is a summary of the differences between the two models:
+As shown above, the model introduces a scan key that is used for payment scanning and a static address which is used for deriving on-chain addresses. This is in contrast with the [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) model where [extended public key](/guide/glossary/#extended-public-key-xpub-ypub-zpub) are used for both purposes. Below is a summary of the differences between the two models:
 
 | BIP-32       | Silent payments          | Benefit  |
 |:-------------|:------------------|:------|
-| Single-use on-chain address           | Static address | Reusable & untraceable on-chain |
-| Extended private key (xprv) | Spend (private) key   |   |
-| Extended public key (xpub)           | Scan (public) key      | Nodes & [light clients](/guide/how-it-works/nodes/#light-nodes) can scan for payments but cannot derive addresses    |
+| On-chain address           | Static address | Reusable; untraceable on-chain |
+| Extended private key (xprv) | Spend key   |   |
+| Extended public key (xpub)           | Scan key      | Nodes & light clients can scan for payments but cannot derive addresses    |
 | *Address-based model*           | *Contact-based model* | *More intuitive and familiar*  |
 
 
@@ -184,7 +183,7 @@ The above model introduces a scan key that is used for payment scanning and a st
    layout = "float-right-desktop -background -shadow"
 %}
 
-Labels or tags (such as `business` or `no-kyc`) are brief identifiers often associated with information such as payments, transactions and addresses. They're used to organise, categorise or quickly spot items from a large set.
+Labels (such as `business` or `no-kyc`) are brief identifiers often associated with information such as payments, transactions and addresses. They're used to organise, categorise or quickly spot information from a large set.
 
 Silent payments allow users to add labels to their static addresses on a case-by-case basis before sharing or posting them. When a payment is received, these labels can be detected by the receiver (but no one else) and used to identify the static address that was used to make the payment.
 
@@ -214,22 +213,22 @@ This scheme improves labelling in general, since labels get auto-applied to all 
 
 #### Tracking payments
 
-Without using labels, receivers have no way of knowing who may have paid them since they do not interact with the sender to provide them a on-chain address.
+Without labels, receivers have no way of knowing who may have paid them. This is because the sender independently generates the on-chain addresses without any involvement of the receiver.
 
 {% include tip/recommendation.html %}
 
-Labels in silent payments are critical if receivers, such as businesses, need to match payments with customers.
+Labels in silent payments are critical when receivers, such as businesses, need to match payments with customers.
 
 {% include tip/close.html %}
 
 Here's how businesses, such as exchanges, merchants and vendors can use labels:
 - **Invoices:** merchant software like [BTCPay](https://btcpayserver.org/) must use labels to match incoming payments with invoices and/or provide unique static addresses to repeat customers.
-- Bitcoin exchange deposits: Customers looking to sell/deposit bitcoin at exchanges encounter friction when their deposit addresses change constantly. Labelled static addresses for users fix this without address reuse while retaining the ability to match deposits to customers.
+- **Bitcoin exchange deposits:** Customers looking to sell/deposit bitcoin at exchanges encounter friction when their deposit addresses change constantly. Labelled static addresses for users fix this without address reuse while retaining the ability to match deposits to customers.
 
 
 ### Contacts
 
- Since senders can safely use the same static address for multiple payments, it is natural for them to want to store these for future use. Contacts are a great way to do this in terms that users can intuit: names and faces. The [contacts](/guide/daily-spending-wallet/contacts/) page provides guidance about the topic.
+ Since senders can safely use the same static address for multiple payments, it is natural for them to want to store these for future use. Contacts are a great way to do this in a way that users can intuit: names and faces. The [contacts](/guide/daily-spending-wallet/contacts/) page provides guidance about the topic.
 
  Silent payments (along with [BOLT-12](http://bolt12.org)) allow applications to center their payments experience around people instead of addresses. This was not advisable before, due to issues with on-chain address reuse.
 
@@ -355,7 +354,7 @@ Applications should allow both backup & recovery through multiple methods. This 
 - Prevents address reuse without repeated user interactions
 - Enables a better user interaction model centred around users instead of unwieldy addresses
 - Reduces the possibility of mistakes while handling on-chain addresses
-- Allows users to optionally infer payment source through labels
+- Allows users to optionally infer payment sources through labels
 - Auto-applied labels improve coin-labelling and coin selection
 - Scanning process is more private since sharing on-chain addresses (or xpubs) is not required
 
