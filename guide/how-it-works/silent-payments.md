@@ -224,6 +224,7 @@ Labels in silent payments are critical when receivers, such as businesses, need 
 Here's how businesses, such as exchanges, merchants and vendors can use labels:
 - **Invoices:** merchant software like [BTCPay](https://btcpayserver.org/) must use labels to match incoming payments with invoices and/or provide unique static addresses to repeat customers.
 - **Bitcoin exchange deposits:** Customers looking to sell/deposit bitcoin at exchanges encounter friction when their deposit addresses change constantly. Labelled static addresses for users fix this without address reuse while retaining the ability to match deposits to customers.
+- **Bitcoin exchange withdrawals:** Customers can withdraw bitcoin from exchanges by providing a (labelled) static address just once, without having to provide an on-chain address every time. This facilitates best practices like [DCA](https://river.com/learn/terms/d/dollar-cost-averaging-dca/) and self-custody, while labels identify bitcoin from exchanges.
 
 
 ### Contacts
