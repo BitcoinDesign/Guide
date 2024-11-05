@@ -148,7 +148,7 @@ Silent payments are made in 4 broad steps:
 
 Silent payments introduce a new technical model that separates payment information based on its purpose.
 
-Here are the main components of this new model:
+Here are the main components of this new model with their purpose:
 
 | Component       |Used by         | Purpose |
 |:-------------|:------------------|:------|
