@@ -43,8 +43,8 @@ There are two parts to backing up a multi-key wallet: the private keys as well a
    image = "/assets/images/guide/inheritance-wallet/wallet-backup/multikey-backup-components.png"
    retina = "/assets/images/guide/inheritance-wallet/wallet-backup/multikey-backup-components@2x.png"
    alt-text = "An illustration showing the two parts of a multi-key wallet backup."
-   width = 560
-   height = 480
+   width = 800
+   height = 397
 %}
 
 #### Private keys
@@ -75,10 +75,10 @@ Our application goes a bit further than only providing the users with a wallet d
    retina = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-pdf@2x.png"
    modalImage = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-pdf@2x.png"
    alt-text = "An example of the recovery PDF file."
-   width = 1600
-   height = 800
-   modalWidth = 4050
-   modalHeight = 2168
+   width = 800
+   height = 429
+   modalWidth = 1600
+   modalHeight = 848
 %}
 
 If anyone needs to recover the wallet, they can use the recovery PDF to quickly understand the wallet structure and import it into their preferred wallet software.
@@ -93,8 +93,8 @@ Alice and Bob want to ensure that they can restore the wallet themselves, if the
    mobile = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-scenarios-mobile.png"
    mobileRetina = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-scenarios-mobile@2x.png"
    alt-text = "A diagram showing the sequence of recovery scenarios."
-   width = 1304
-   height = 480
+   width = 800
+   height = 251
 %}
 
 To achieve this goal, their backup strategy accounts for the following three scenarios: 
@@ -117,12 +117,12 @@ The diagram below provides a high-level overview of how Alice and Bob distribute
    mobileRetina = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-tool-distribution-mobile@2x.png"
    modalImageMobile = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-tool-distribution-mobile@2x.png"
    alt-text = "A schematic illustration showing how the backup material is distributed between the parents, their children and the lawyer."
-   width = 1600
-   height = 800
-   modalWidth = 3324
-   modalHeight = 1850
-   modalWidthMobile = 1156
-   modalHeightMobile = 2936
+   width = 800
+   height = 506
+   modalWidth = 1600
+   modalHeight = 1012
+   modalWidthMobile = 400
+   modalHeightMobile = 1090
 %}
 
 
@@ -138,8 +138,8 @@ Alice and Bob each store an encrypted version of the recovery kit in their own p
    mobile = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-tool-distribution-pwm-mobile.png"
    mobileRetina = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-tool-distribution-pwm-mobile@2x.png"
    alt-text = "A diagram showing the sequence of recovery scenarios."
-   width = 1600
-   height = 800
+   width = 800
+   height = 312
 %}
 
 ##### Shared family vault
@@ -164,8 +164,8 @@ Bob places the following items in a tamper-evident bag and stores it in their ho
    mobile = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-tool-distribution-safe-mobile.png"
    mobileRetina = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-tool-distribution-safe-mobile@2x.png"
    alt-text = "A diagram showing the sequence of recovery scenarios."
-   width = 682
-   height = 316
+   width = 800
+   height = 324
 %}
 
 This way, the family can access the material if needed, but any tampering would be immediately noticeable.
@@ -183,8 +183,8 @@ To enable the assisted inheritance route for their children, Alice and Bob provi
    mobile = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-tool-distribution-secondary-mobile.png"
    mobileRetina = "/assets/images/guide/inheritance-wallet/wallet-backup/recovery-tool-distribution-secondary-mobile@2x.png"
    alt-text = "A diagram showing the sequence of recovery scenarios."
-   width = 751
-   height = 397
+   width = 800
+   height = 423
 %}
 
 ### Privacy considerations
