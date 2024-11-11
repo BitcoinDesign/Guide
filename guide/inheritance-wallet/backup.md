@@ -99,7 +99,7 @@ Alice and Bob want to ensure that they can restore the wallet themselves, if the
 
 To achieve this goal, their backup strategy accounts for the following three scenarios: 
 
-1. **Alice and Bob need to recover the wallet themselves**: They might simply need to restore the wallet because one (or both) of them lost access to their phone or computer. This route also accounts for one of the most most likely scenarios in which one spouse outlives the other 
+1. **Alice and Bob need to recover the wallet themselves**: They might simply need to restore the wallet because one (or both) of them lost access to their phone or computer. This route also accounts for one of the most likely scenarios in which one spouse outlives the other 
 1. **A self-sovereign inheritance route for Christina and David**: The children should be able to use their inheritance keys and the backup material without any outside help
 1. **An assisted inheritance route** that provides a fallback in case the self-sovereign inheritance fails. It is designed to help Christina and David access the funds through regular inheritance proceedings. 
 
