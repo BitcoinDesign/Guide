@@ -161,22 +161,22 @@ images_p2pk:
 images_guardian-status:
     - file: federation-guardian-good
       modalImage: federation-guardian-good@2x
-      alt: A mobile wallet interface with a screen that shows a federation and their health status in the form of a green progress bar. The more the progress bar is filled, the more the guardian has maintained uptime.
-      caption: Consider the privacy implications of showing the status and name of guardians.
+      alt: Status screen for the Real Bedford federation, showing a health score with 100% uptime over the last 30 days.
+      caption: A 100% uptime score reassures users of consistent performance. Online status of all guardians confirms active oversight of funds.
     - file: federation-guardian-ok
       modalImage: federation-guardian-ok@2x
-      alt: A mobile wallet interface with a screen that shows a federation experiencing partial connecetivity issues due to one guardian being offline.
-      caption: Show the user the current status of the federation.
+      alt: Status screen for Stockholm BTC Mint showing an alert for partial connectivity due to Guardian 2 experiencing issues.
+      caption: Stockholm BTC Mint status screen with a partial connectivity alert. Guardian 2 is offline, but the federation remains operational.
     - file: federation-guardian-bad
       modalImage: federation-guardian-bad@2x
-      alt: A mobile wallet interface with a screen that shows an unreliable federation and their health status in the form of a red progress bar along with a message that the federation is offline.
-      caption: Clearly inform a user if a federation is offline.
+      alt: Status screen for Web3 Federation indicating an alert due to offline status.
+      caption: Web3 Federation status screen indicating offline status due to multiple guardians being offline.
 
 images_guardian-expiry:
     - file: federation-guardian-expiry
       modalImage: federation-guardian-expiry@2x
       alt: A mobile wallet interface with a screen that shows a countdown timer and a message that the federation will shut down in 15 days.
-      caption: Federation expiration timestamp displayed as a countdown alter when less 30 days remaining.
+      caption: Federation expiration timestamp displayed as a countdown alert when less 30 days remaining.
     - file: federation-guardian-expiry-join
       modalImage: federation-guardian-expiry-join@2x
       alt: A mobile wallet interface with a screen that shows a countdown timer and a message that the federation will shut down in 15 days.
@@ -212,7 +212,7 @@ images_federation-expiry:
     - file: federation-guardian-expiry
       modalImage: federation-guardian-expiry@2x
       alt: A mobile wallet interface with a screen that shows a countdown timer and a message that the federation will shut down in 15 days.
-      caption: Federation expiration timestamp displayed as a countdown alter when less 30 days remaining.
+      caption: Federation expiration timestamp displayed as a countdown alert when less 30 days remaining.
     - file: federation-guardian-expiry-join
       modalImage: federation-guardian-expiry-join@2x
       alt: A mobile wallet interface with a screen that shows a countdown timer and a message that the federation will shut down in 15 days.
@@ -532,7 +532,7 @@ Consider displaying real-time indicators of each guardian's status, such as the 
 
 #### Federation metadata fields: Explanation and usage
 
-Federations can provide configuration and metadata to users. These metadata fields are consensus-relevant, meaning they must be consistent across all federation members. This ensures that users can rely on their accuracy. Let's explore the core metadata fields defined in the Fedimint protocol:
+Federations can provide configuration and [metadata](https://github.com/fedimint/fedimint/blob/main/docs/spec/01-metadata.md) to users. These metadata fields are consensus-relevant, meaning they must be consistent across all federation members. This ensures that users can rely on their accuracy. Let's explore the core metadata fields defined in the Fedimint protocol:
 
 #### Federation overview and expiration
 
