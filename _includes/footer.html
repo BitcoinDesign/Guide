@@ -1,17 +1,17 @@
 <footer class="site-footer">
   <div class="wrapper">
 
-    <a class="-logo" href="{{ "/" | relative_url }}" aria-label="Bitcoin design community logo">
+    <a class="-logo" href="{{ "/" | relative_url }}" aria-label="Bitcoin design community logo" title="Bitcoin design community logo">
       {% include bitcoin-design-community-medium.svg %}
     </a>
+
+    {%- include social.html -%}  
 
     <div class="edit-license">
       <a class="-edit" target="_blank" rel="noopener" href="{{site.github_repository_url}}blob/master/{{page.path}}">Edit this page</a>
 
       <a class="-license" href="{{ "/LICENSE" }}">License</a>
     </div>
-
-    {%- include social.html -%}  
 
     <nav class="footer-nav" aria-label="Footer navigation">
       {%- for path in page_paths -%}

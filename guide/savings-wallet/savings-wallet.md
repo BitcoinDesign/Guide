@@ -2,7 +2,7 @@
 layout: guide
 title: Savings wallet
 description: A UX reference design for a multi-key bitcoin wallet designed for both daily spending and storing medium amounts.
-nav_order: 6
+nav_order: 5
 has_children: true
 permalink: /guide/savings-wallet/
 redirect_from:

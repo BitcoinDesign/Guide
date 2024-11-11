@@ -18,7 +18,6 @@
     a.-logo {
       display: block;
       line-height: 1;
-      order: 1;
 
       svg {
         width: 50px;
@@ -38,7 +37,6 @@
 
     .edit-license {
       border-top: 1px solid black;
-      order: 3;
       flex-basis: 100%;
       display: flex;
       justify-content: space-between;
@@ -50,6 +48,10 @@
         color: black;
         font-size: 16px;
 
+        &:visited {
+          color: #808080;
+        }
+
         &:hover {
           color: var(--primary-color);
         }
@@ -59,7 +61,6 @@
     nav.social-media-list {
       display: flex;
       align-items: center;
-      order: 2;
       margin-left: auto;
 
       a {
@@ -72,6 +73,12 @@
           transition: all 150ms $ease;
         }
 
+        &:visited {
+          svg {
+            fill: #808080 !important;
+          }
+        }
+
         &:hover {
           svg {
             fill: var(--primary-color) !important;
@@ -79,7 +86,7 @@
         }
 
         & + a {
-          margin-left: 15px;
+          margin-left: 20px;
         }
       }
     }
@@ -100,7 +107,12 @@
         color: black;
         font-size: 16px;
 
-        &:hover {
+        &:visited {
+          color: #808080;
+        }
+
+        &:hover,
+        &.active {
           color: var(--primary-color);
         }
       }
@@ -122,6 +134,18 @@
       nav.footer-nav {
         a {
           font-size: 13px;
+        }
+      }
+    }
+  }
+
+  @include media-query(small) {
+    .wrapper {
+      nav.social-media-list {
+        a {
+          & + a {
+            margin-left: 5px;
+          }
         }
       }
     }

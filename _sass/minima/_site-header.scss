@@ -28,12 +28,7 @@
             letter-spacing: -0.5px;
             color: var(--frontHex);
             transition: color 100ms $ease;
-            // outline: none;
             white-space: nowrap;
-
-            &:focus {
-                outline: 2px solid var(--primary-color);
-            }
 
             svg {
                 width: 40px;
@@ -50,7 +45,8 @@
                 color: $site-title-color;
             }
 
-            &:focus {
+            &:focus-visible {
+                outline: 2px solid var(--primary-color);
                 background-color: rgba(var(--primary-color), 0.05);
             }
 
@@ -79,7 +75,7 @@
                     text-decoration: none;
                 }
 
-                &:focus {
+                &:focus-visible {
                     background-color: rgba(var(--primary-color), 0.1);
                 }
 
@@ -109,7 +105,7 @@
                 transition: color 100ms linear;
             }
 
-            &:focus {
+            &:focus-visible {
                 background-color: rgba(var(--primary-color), 0.05);
             }
 
@@ -155,7 +151,7 @@
                     position: relative;
                     background-color: transparent;
 
-                    &:focus {
+                    &:focus-visible {
                         outline: none;
                     }
                 }
@@ -264,7 +260,7 @@
                     height: 44px;
                 }
 
-                &:focus {
+                &:focus-visible {
                     background-color: rgba(var(--primary-color), 0.05);
                 }
 
