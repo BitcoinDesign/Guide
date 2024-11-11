@@ -11,6 +11,43 @@ redirect_from:
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/how-it-works/ecash/best-practicies.jpg
 image_base: /assets/images/guide/how-it-works/ecash/
+
+images_onboarding:
+    - file: ecash-onboarding-01
+      modalImage: ecash-onboarding-01@2x
+      alt: Onboarding screen introducing ‘Satoshi Cash,’ a bitcoin-backed ecash wallet. The screen highlights that the wallet offers fast and private transactions and features a video thumbnail with an explainer video.
+      caption: Landing screen for Satoshi Cash, a bitcoin-backed ecash wallet.
+    - file: ecash-onboarding-02
+      modalImage: ecash-onboarding-02@2x
+      alt: Screen explaining that ecash in Satoshi Cash is custodial, meaning funds are held by a trusted mint or federation. Visual elements show federations as circles around a central icon to illustrate the custodial structure.
+      caption: Explanation of ecash custodial model. Users are informed that their funds are managed by a trusted mint or federation, which holds custody over their ecash.
+    - file: ecash-onboarding-03
+      modalImage: ecash-onboarding-03@2x
+      alt: Screen instructing users on choosing a mint or federation to manage their ecash. Three mint cards are displayed with names, logos, reviews, and star ratings, encouraging users to make an informed choice.
+      caption: Guidance for selecting a mint or federation to hold your ecash. Users choose based on reviews and trustworthiness.
+    - file: ecash-onboarding-04
+      modalImage: ecash-onboarding-04@2x
+      alt: Final onboarding screen with confetti graphics, indicating that the user setup is complete. The message encourages users to start using ecash and consider a non-custodial wallet for larger savings.
+      caption: Completion screen celebrating setup success. Users are ready to start using ecash and are advised to consider non-custodial options for larger holdings.
+
+images_unknown-mint:
+    - file: unknown-mint-01
+      modalImage: unknown-mint-01@2x
+      alt: Empty state home screen of the bitcoin-backed ecash wallet, with a “Ready to start?” message and a button labeled “Join a mint.” The balance shows as 0, and the bottom navigation includes “Home,” “Mints,” “Settings,” and buttons for “Send” and “Receive.”
+      caption: Initial empty state of the wallet’s home screen, prompting the user to join a mint to get started.
+    - file: unknown-mint-02
+      modalImage: unknown-mint-02@2x
+      alt: Home screen of the bitcoin-backed ecash wallet, showing a message prompting the user to “Add a mint to get up and running.” The options include “Discover mints” from a recommended list or “Add a trusted mint” manually.
+      caption: Encourage users to add a mint by offering options to discover recommended mints or add a known mint by scanning a QR code or entering the URL.
+    - file: unknown-mint-03
+      modalImage: unknown-mint-03@2x
+      alt: Discover mints screen displaying a list of available mints for the bitcoin-backed ecash wallet. Each mint has its name, URL, number of reviews, and star rating. A note above the list advises users to “Do your own research before joining a mint.”
+      caption: Mint discovery interface displaying a list of available mints with ratings and reviews, encouraging users to do their own research before connecting.
+    - file: unknown-mint-04
+      modalImage: unknown-mint-04@2x
+      alt: Onboarding screen for a bitcoin-backed ecash wallet showing a successful connection to “Minibits Mint.” The screen includes a message about the mint being in BETA and advises users not to store large amounts of ecash. A “Continue” button is displayed at the bottom.
+      caption: Confirmation screen showing a successful connection to a mint, with a reminder for users to exercise caution and avoid storing large amounts of ecash.
+
 images_mint-list:
     - file: federation-list
       modalImage: federation-list@2x
@@ -261,10 +298,12 @@ When designing bitcoin-backed ecash applications, it’s important to prioritize
 Since ecash is still a relatively new technology this guide focuses on best practices for managing tokens and communicating mint and federation details. As the ecash ecosystem develops we encourage designers and developers to contribute their insights and help improveme this guide.
 
 ### User onboarding
+{% include image-gallery.html pages = page.images_onboarding %}
 
 It is recomended to start the onboarding process by explaining the risks associated with ecash and then guide the user through the process of joining their first mint or federation. 
 
 #### Joining unknown mints or federations
+{% include image-gallery.html pages = page.images_unknown-mint %}
 During the inital mint selection screen a wallet could display a list of recommended mints or federations based on the user's device information, location, and other factors. One current example of this is [Bitcoin Mints](https://bitcoinmints.com/). Their mint list can be integrated into the wallet so it's easier for the user to see a list of mints and ratings and make their own decision as to which mint or federation to join.
 
 #### Joining known mints or federations
@@ -488,9 +527,6 @@ Consider using a prominent, color-coded indicator to show the overall status of 
 {% include image-gallery.html pages = page.images_guardian-status %}
 
 Consider displaying real-time indicators of each guardian's status, such as the connection status and last activity. This information builds trust by keeping users informed about the reliability and performance of the guardians managing their funds.
-
-### Privacy considerations in guardian information display
-Fedimint automatically generates random names for guardians during setup. While users can change these names, it’s not recommended. When displaying guardian information, consider using code names like "Guardian 1" and randomly generated identicons for each guardian. This helps protect user and federation privacy, particularly for invite-only mints. Guardian information should only be visible to users who have joined the federation.
 
 ### Metadata and information management
 
