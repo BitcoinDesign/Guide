@@ -174,15 +174,53 @@ After changes have been published on your copy, it's time to announce them in th
    height = 400
 %}
 
-#### Applying additional changes
+#### Request a review
 
-Your proposed changes need to undergo a [review process]({{ '/guide/contribute/review/' | relative_url }}). During the review of your pull request, you may be asked to make certain changes. To do that, simply make sure that you're on the same branch as the pull request you've submitted. [Apply and push](#applying-changes) your changes.
+Your proposed changes need to undergo a [review process]({{ '/guide/contribute/review/' | relative_url }}). It often consists of  several rounds of feedback, these rounds usually include the following:
+
+1. **Structural:** Reviewers look at how the new content fits in with the existing content in the guide. They check if it's generally appropriate, complete and accurate. It gives you confidence that you are working in the right direction.
+2. **Refinement:** This is about ensuring the content (text and visuals) is accurate, well-written, and communicates well. Several rounds may be needed. 
+3. **Polish:** Here we make the final content tweaks, like ensuring that there are no typos, everything renders correctly across devices, images have alt texts, etc. Once complete, the pull request can be approved and merged. 
+
+This is a generalization and your process may look different. In your pull request, and when requesting reviews, make sure to clearly communicate the type of feedback you are looking for. This makes the review task easier and more focused, and leads to more helpful responses.
+
+The community may not automatically see when you post a new pull request. Make sure to ask in the [#bitcoin-design-guide](https://discord.gg/7Z6z8cetwu) Discord channel, and reach out to reviewers whose specific feedback you would appreciate. You can also organize a [reading session](https://www.youtube.com/watch?v=hjgpNVRe4uY) for your content, so far they have always been extremely helpful.
+
+During the review of your pull request, you may be asked to make certain changes. To do that, simply make sure that you're on the same branch as the pull request you've submitted. [Apply and push](#applying-changes) your changes.
 
 Once there is a consensus on the proposed changes, your pull request will be merged, and your changes will become part of the Bitcoin Design Guide.
 
 [^1]:[Creating, cloning and archiving repositories](https://docs.github.com/en/enterprise-server@3.0/github/creating-cloning-and-archiving-repositories/about-repositories)
 [^2]:[Branches in a nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
 [^3]: [Committing and reviewing changes](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/committing-and-reviewing-changes-to-your-project#about-commits)
+
+#### Common issues checklist
+
+There have been over 600 pull requests on this project, and we have noticed some points of feedback that regularly come up. If you look out for those before requesting reviews, the overall process will be smoother.
+
+**Front matter**
+
+These are the page properties at the top of markdown files, between the dividers ("---").
+- Ensure the page preview image is 1200x630px in size, and different from the banner image
+- _redirect_from_ means that this page previously existed at a different URL. It is not needed for new pages
+
+**Content**
+- Write in sentence case, not title case
+- Lowercase "bitcoin", "lightning network" and "ecash"
+- Make sure to explain new or lesser-known technical terms instead of expecting users to understand their meaning and properties
+- If a new page is a sub-section, make sure to include a reference in the section landing page ([example](https://bitcoin.design/guide/how-it-works/))
+- A simpler writing style allows your content to be more accessible to more readers (especially ones for whom english is not their native language)
+- For new pages, make sure to update the "Next" and "Previous" buttons on the respective next and previous pages
+- Look for opportunities to cross-reference other content in the guide. If somethig is already well-covered elsewhere, you can build on that
+
+**Images**
+- Ensure image content (especially text in images) is legible on mobile devices
+- Ensure image paths are correct
+- Ensure "width" and "height" attributes in picture and image includes match the actual image dimensions
+- For smallest file size, use the JPG file format for textured and photographic images, and PNG for images with mostly flat color
+- Compress your images via tool like [ImageOptim](http://imageoptim.com) (can save ~70% of bandwidth)
+- Delete unused images from your PR
+- Every non-decorative image needs to have helpful alt text ([tips](https://www.w3.org/WAI/tutorials/images/tips/))
 
 ---
 
