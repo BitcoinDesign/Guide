@@ -176,7 +176,7 @@ After changes have been published on your copy, it's time to announce them in th
 
 #### Request a review
 
-Your proposed changes need to undergo a [review process]({{ '/guide/contribute/review/' | relative_url }}). It often consists of  several rounds of feedback, for example:
+Your proposed changes need to undergo a [review process]({{ '/guide/contribute/review/' | relative_url }}). It often consists of  several rounds of feedback, these rounds usually include the following:
 
 1. **Structural:** Reviewers look at how the new content fits in with the existing content in the guide. They check if it's generally appropriate, complete and accurate. It gives you confidence that you are working in the right direction.
 2. **Refinement:** This is about ensuring the content (text and visuals) is accurate, well-written, and communicates well. Several rounds may be needed. 
@@ -184,7 +184,7 @@ Your proposed changes need to undergo a [review process]({{ '/guide/contribute/r
 
 This is a generalization and your process may look different. In your pull request, and when requesting reviews, make sure to clearly communicate the type of feedback you are looking for. This makes the review task easier and more focused, and leads to more helpful responses.
 
-The community may not automatically see when you post a new pull request. Make sure to ask in the [#bitcoin-design-guide](https://discord.gg/7Z6z8cetwu) Discord channel, and reach out to reviewers whose specific feedback you would appreciate. You can also organize a reading session for your content, so far they have always been extremely helpful.
+The community may not automatically see when you post a new pull request. Make sure to ask in the [#bitcoin-design-guide](https://discord.gg/7Z6z8cetwu) Discord channel, and reach out to reviewers whose specific feedback you would appreciate. You can also organize a [reading session](https://www.youtube.com/watch?v=hjgpNVRe4uY) for your content, so far they have always been extremely helpful.
 
 During the review of your pull request, you may be asked to make certain changes. To do that, simply make sure that you're on the same branch as the pull request you've submitted. [Apply and push](#applying-changes) your changes.
 
