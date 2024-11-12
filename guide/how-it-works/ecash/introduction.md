@@ -172,7 +172,7 @@ When a user sends an ecash token to another user, the wallet verifies the mint's
    alt-text = "Diagram comparing three types of payments: On-chain bitcoin, lightning, and ecash. The On-chain bitcoin section shows Alice sending bitcoin to Bob via an address, resulting in a payment on the network. The lightning section illustrates Alice sending bitcoin to Bob via an invoice, resulting in a payment on the lightning network. The ecash section shows Alice sending an ecash token to Bob, who redeems it through a mint."
    caption = "On-chain Bitcoin uses addresses, lightning usually employs invoices, and ecash transfers are mediated by mints using tokens."
    width = 800
-   height = 508
+   height = 765
    layout = "full-width"
 %}
 

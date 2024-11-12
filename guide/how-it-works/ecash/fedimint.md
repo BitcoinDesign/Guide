@@ -44,8 +44,9 @@ Fedimint is the first bitcoin-backed ecash protocol. Fedimint decentralizes trus
    retina = "/assets/images/guide/how-it-works/ecash/federated-mint@2x.jpg"
    mobile = "/assets/images/guide/how-it-works/ecash/federated-mint-mobile.jpg"
    mobileRetina = "/assets/images/guide/how-it-works/ecash/federated-mint-mobile@2x.jpg"
+   caption = "How a users interacts with a Fedimint federation."
+   modalImage = "/assets/images/guide/how-it-works/ecash/federated-mint@2x.jpg"  
    alt-text = "An illustration of how users, ecash, and a federated mint interact."
-   caption = "How guardians interact with users of federated mint."
    width = 800
    height = 500
    layout = "full-width"
@@ -73,14 +74,14 @@ Guardians are participants who collaboratively manage a federation's operations.
    retina = "/assets/images/guide/how-it-works/ecash/gateways@2x.png"
    mobile = "/assets/images/guide/how-it-works/ecash/gateways.png"
    mobileRetina = "/assets/images/guide/how-it-works/ecash/gateways@2x.png"
-   alt-text = "Network diagram showing how gateways connect federations (represented by blue dots) with the lightning network (represented by orange dots). The nodes are linked by dashed lines, visualizing the interconnected structure of federations and lightning nodes."
-   caption = "Gateways connect a federation’s ecash and bitcoin via the lightning network."
+   alt-text = "Diagram illustrating the role of a Fedimint gateway in connecting Fedimint ecash and bitcoin on the lightning network. On the left, an icon represents Fedimint ecash with a bitcoin symbol, connected by a dotted line to the center image labeled ‘Gateway,’ showing two hands exchanging cash in front of a vintage computer. On the right, another dotted line connects the gateway to an image of lightning bolts, symbolizing bitcoin on the lightning network."
+   caption = "By acting as a bridge, a Fedimint Gateway lets users pay lightning invoices with Fedimint bitcoin or receive Fedimint bitcoin from lightning payments, without converting between the two assets."
    width = 800
    height = 508
    layout = "full-width"
 %}
 
-A gateway is a service that facilitates interactions between the federation and the lightning network. A gateway acts as a bridge, enabling users within the federation to make payments to and receive payments on the lightning network.
+A [gateway](https://fedimint.org/docs/GettingStarted/TechCompontents#lightning-swaps) is a service that facilitates interactions between the federation and the lightning network. A gateway acts as a bridge, enabling users within the federation to make payments to and receive payments on the lightning network.
 
 **How gateways work**: The gateway accepts bitcoin payments on the lightning network and converts them into the bitcoin-backed ecash tokens used within the federation. It can also convert bitcoin-backed ecash tokens into bitcoin and send them over the lightning network. This is crucial because it allows the users within a federation to interact with the outside bitcoin and lightning network.
 
