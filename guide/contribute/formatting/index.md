@@ -102,9 +102,12 @@ There should be whitespace between paragraphs.
 
 #### Internal links
 
+Formatting with `relative_url` is required for internal links, so the site can create correct links across any domain and sub-domain.
+
 ```markdown
-[Linking]({{ '/guide/getting-started/why-bitcoin-is-unique/' | relative_url }})
+{% raw %}[Linking]({{ '/guide/getting-started/why-bitcoin-is-unique/' | relative_url }}){% endraw %}
 ```
+
 [Linking]({{ '/guide/getting-started/why-bitcoin-is-unique/' | relative_url }})
 
 #### Button links
