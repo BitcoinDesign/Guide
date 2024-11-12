@@ -85,7 +85,7 @@ This page is about the unique approach of Cashu to ecash. To learn more about de
    caption = "How a users interacts with a Cashu mint."
    modalImage = "/assets/images/guide/how-it-works/ecash/cashumint@2x.jpg"
    width = 800
-   height = 456
+   height = 500
    layout = "full-width"
 %}
 
