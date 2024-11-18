@@ -40,13 +40,39 @@ Fedimint is the first bitcoin-backed ecash protocol. Fedimint decentralizes trus
 ## Federated mints
 
 {% include picture.html
-   image = "/assets/images/guide/how-it-works/ecash/federated-mint.jpg"
-   retina = "/assets/images/guide/how-it-works/ecash/federated-mint@2x.jpg"
-   mobile = "/assets/images/guide/how-it-works/ecash/federated-mint-mobile.jpg"
-   mobileRetina = "/assets/images/guide/how-it-works/ecash/federated-mint-mobile@2x.jpg"
-   caption = "How a users interacts with a Fedimint federation."
-   modalImage = "/assets/images/guide/how-it-works/ecash/federated-mint@2x.jpg"  
-   alt-text = "An illustration of how users, ecash, and a federated mint interact."
+   image = "/assets/images/guide/how-it-works/ecash/federated-mint-1.jpg"
+   retina = "/assets/images/guide/how-it-works/ecash/federated-mint-1@2x.jpg"
+   mobile = "/assets/images/guide/how-it-works/ecash/federated-mint-1-mobile.jpg"
+   mobileRetina = "/assets/images/guide/how-it-works/ecash/federated-mint-1-mobile@2x.jpg"
+   caption = "How users interact with a Fedimint federation."
+   modalImage = "/assets/images/guide/how-it-works/ecash/federated-mint-1@2x.jpg"
+   alt-text = "Diagram of three federations with user avatars. A user deposits bitcoin into Federation 1 and receives ecash. A gateway with a lightning symbol represents the bitcoin lightning network connecting the federations."
+   width = 800
+   height = 500
+   layout = "full-width"
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/ecash/federated-mint-2.jpg"
+   retina = "/assets/images/guide/how-it-works/ecash/federated-mint-2@2x.jpg"
+   mobile = "/assets/images/guide/how-it-works/ecash/federated-mint-2-mobile.jpg"
+   mobileRetina = "/assets/images/guide/how-it-works/ecash/federated-mint-2-mobile@2x.jpg"
+   caption = "Ecash transfers within a federation are instant, free, and private."
+   modalImage = "/assets/images/guide/how-it-works/ecash/federated-mint-2@2x.jpg"
+   alt-text = "Illustration showing members of Federation 1, represented by user avatars and ecash icons within a blue circle. Dashed arrows connect the ecash icons, symbolizing instant, free, and private ecash transfers between members of the same federation. The text reads, ‘Members of the same federation can send ecash with each other instantly, for free, and privately.’"
+   width = 800
+   height = 500
+   layout = "full-width"
+%}
+
+{% include picture.html
+   image = "/assets/images/guide/how-it-works/ecash/federated-mint-3.jpg"
+   retina = "/assets/images/guide/how-it-works/ecash/federated-mint-3@2x.jpg"
+   mobile = "/assets/images/guide/how-it-works/ecash/federated-mint-3-mobile.jpg"
+   mobileRetina = "/assets/images/guide/how-it-works/ecash/federated-mint-3-mobile@2x.jpg"
+   caption = "Federations are controlled by guardians who manage the issuance and redemption of ecash and bitcoin."
+   modalImage = "/assets/images/guide/how-it-works/ecash/federated-mint-3@2x.jpg"
+   alt-text = "Diagram showing Federation 1 controlled by four guardians, each with a server and a set of keys. Federation 1 includes a user, an ecash icon, and a bitcoin icon connected by dashed lines."
    width = 800
    height = 500
    layout = "full-width"
@@ -75,7 +101,7 @@ Guardians are participants who collaboratively manage a federation's operations.
    mobile = "/assets/images/guide/how-it-works/ecash/gateways.png"
    mobileRetina = "/assets/images/guide/how-it-works/ecash/gateways@2x.png"
    alt-text = "Diagram illustrating the role of a Fedimint gateway in connecting Fedimint ecash and bitcoin on the lightning network. On the left, an icon represents Fedimint ecash with a bitcoin symbol, connected by a dotted line to the center image labeled ‘Gateway,’ showing two hands exchanging cash in front of a vintage computer. On the right, another dotted line connects the gateway to an image of lightning bolts, symbolizing bitcoin on the lightning network."
-   caption = "By acting as a bridge, a Fedimint Gateway lets users pay lightning invoices with Fedimint bitcoin or receive Fedimint bitcoin from lightning payments, without converting between the two assets."
+   caption = "A Fedimint Gateway lets users pay lightning invoices with Fedimint bitcoin or receive Fedimint bitcoin from lightning payments, without converting between the two assets."
    width = 800
    height = 508
    layout = "full-width"
@@ -89,7 +115,7 @@ A [gateway](https://fedimint.org/docs/GettingStarted/TechCompontents#lightning-s
 To learn more about Fedimint specific design best practices you can check out the [Design best practices]({{ '/guide/how-it-works/ecash/design-best-practices' | relative_url }}) section.
 
 
-<!-- 
+<!--
 ### Federated single guardian mints
 
 {% include picture.html

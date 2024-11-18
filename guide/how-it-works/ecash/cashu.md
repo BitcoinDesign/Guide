@@ -89,7 +89,7 @@ This page is about the unique approach of Cashu to ecash. To learn more about de
    layout = "full-width"
 %}
 
-A Cashu mint operates simply and centrally. One entity (the mint) handles the entire process: issuing bitcoin-backed ecash tokens when users deposit bitcoin and redeeming them when users request withdrawals. This centralized model enables fast payments but requires trust in the mint’s integrity and security. 
+A Cashu mint operates simply and centrally. One entity (the mint) handles the entire process: issuing bitcoin-backed ecash tokens when users deposit bitcoin and redeeming them when users request withdrawals. This centralized model enables fast payments but requires trust in the mint’s integrity and security.
 
 Cashu’s design prioritizes simplicity and speed, relying on a single operator to manage all operations. Cashu currently only supports lightning payments, but in the future it will support on-chain payments as well.
 
@@ -122,6 +122,7 @@ Cashu’s design prioritizes simplicity and speed, relying on a single operator 
 - [Sovran](https://sovranbitcoin.com/)
 
 ### Services
+- [Athenut](https://athenut.com/)
 - [npub.cash](https://npub.cash/)
 - [Shopstr](https://shopstr.store/)
 - [Cashu Decoder](https://nostrapps.github.io/cashu/)
