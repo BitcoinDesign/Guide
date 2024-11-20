@@ -86,6 +86,12 @@ How lightning wallets can support authentication and payments with external appl
 
 ---
 
+### [Silent payments]({{ '/guide/how-it-works/silent-payments/' | relative_url }})
+
+A simplified explanation of how silent payments work, along with its impact on bitcoin's interaction model and wallet flows.
+
+---
+
 ### [Wallet selector]({{ '/guide/how-it-works/wallet-selector/' | relative_url }})
 
 Documentation of an interface pattern for letting users choose which external wallet to use when withdrawing, sending, or receiving in a bitcoin application.
