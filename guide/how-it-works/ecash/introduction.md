@@ -16,7 +16,7 @@ Editor's notes
 
 An introduction and detailed summary of bitcoin-backed ecash.
 
-Illustration sources
+Illustration sources:
 
 
 -->
@@ -81,7 +81,7 @@ Bitcoin-backed ecash works by using protocols like [Fedimint]({{ '/guide/how-it-
    layout = "full-width"
 %}
 
-**Fedimint** and **Cashu** are two unqiue bitcoin-backed ecash protocols. They differ in their approach to trust and governance. 
+**Fedimint** and **Cashu** are two unique bitcoin-backed ecash protocols. They differ in their approach to trust and governance.
 
 ---
 
@@ -119,11 +119,11 @@ Fedimint operates through a federated model where a group of trusted entities (c
    alt-text = "Diagram illustrating the creation and redemption of ecash by Alice. On the left side, under ‘Creation,’ Alice sends 100 sats to an ecash mint, which creates ecash tokens, and Alice receives 100 sats in ecash form. On the right side, under ‘Redemption,’ Alice sends 100 sats in ecash form to the mint, which burns the ecash tokens, and Alice receives 100 sats back in Bitcoin. The process flow is represented with dashed arrows and labeled steps."
    caption = "Alice mints 100 sats into ecash through a mint and later redeems the ecash tokens to reclaim her original 100 sats in bitcoin."
    width = 800
-   height = 508
+   height = 390
    layout = "full-width"
 %}
 
-Cashu and Fedimint use various terms for the processes of creating, redeeming, and transferring bitcoin-backed ecash. To provide clarity, we'll use neutral terms in our explanations and provide a translation table for specific implementations.
+Cashu and Fedimint use various terms for the processes of creating, redeeming, and transferring bitcoin-backed ecash. To provide clarity, we'll use neutral terms in our explanations and provide a translation table for specific implementations. While the underlying technology differs, the end user experience of ecash wallets is very similar to Lightning wallets - users simply send and receive sats without needing to understand the technical conversion between bitcoin and ecash happening behind the scenes. Most users won't notice any significant differences from their usual Lightning wallet experience.
 
 #### Creating ecash
 
@@ -135,18 +135,18 @@ Cashu and Fedimint use various terms for the processes of creating, redeeming, a
 
 #### Converting ecash to bitcoin
 
-**1. User initiates conversion** - User initiates a conversion request with their mint or federation.
+**1. User initiates conversion** - A user initiates a conversion request with their mint or federation, typically by paying a Lightning invoice.
 
 **2. Ecash verification and invalidation** - The mint or federation verifies the validity of the ecash tokens. Upon verification, the mint or federation invalidates these tokens, ensuring they cannot be reused. This step prevents double-spending.
 
-**3. Bitcoin transfer** - Once the tokens are verified and invalidated, the mint or federation sends an equivalent amount of bitcoin to the user. 
+**3. Bitcoin transfer** - Once the tokens are verified and invalidated, the mint or federation sends an equivalent amount of bitcoin to the user.
 
 #### Terminology translation table
 
 | Generic term | Cashu term | Fedimint term |
 |-------|----------|----------|
 | Create ecash | Mint | Issue |
-| Send ecash | Swap | Reissue | 
+| Send ecash | Swap | Reissue |
 | Convert ecash to bitcoin | Melt | Redeem |
 | Token | Token | Note |
 
@@ -159,7 +159,7 @@ Cashu and Fedimint use various terms for the processes of creating, redeeming, a
    alt-text = "Diagram showing Alice exchanging 100 sats with an ecash mint and receiving 100 sats in ecash form. Alice then transfers 100 sats in ecash to Bob, who also interacts with an ecash mint. The process is represented with dashed arrows and labeled amounts, illustrating the flow of sats between Alice, the mint, and Bob."
    caption = "Alice mints 100 sats into ecash then sends the ecash to Bob. The ecash mint makes sure the ecash token is valid before issuing new one to Bob."
    width = 800
-   height = 508
+   height = 196
    layout = "full-width"
 %}
 When a user sends an ecash token to another user, the wallet verifies the mint's signature to confirm the token's authenticity. The mint then checks its database to ensure the token has not been previously spent. If the token is valid, it is invalidated and replaced with a new token, which is then issued to the recipient. This cycle of invalidating the old token and issuing a new one prevents double spending while maintaining user privacy and security.
@@ -186,12 +186,6 @@ Most applications allow users to share a token via Bluetooth. However, more comp
 
 #### QR codes
 On the base chain and Lightning network, QR codes provide directions for where to send Bitcoin. In contrast, ecash tokens can be embedded within a QR code itself. The ecash token can be claimed by simply scanning the QR code. This method is particularly useful for in person payments or quick transfers, and also enables physical bearer assets like paper notes.
-
----
-
-### [Design Best Practices]({{ '/guide/how-it-works/ecash/design-best-practices/' | relative_url }})
-
-Explore guidelines and best practices for optimizing the use of ecash on Bitcoin.
 
 ---
 

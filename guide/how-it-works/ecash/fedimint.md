@@ -168,10 +168,10 @@ Solo mints are the simplest and most cost-effective option. Here, a single guard
 
 * **High risk** - With all control in the hands of one guardian, the risks of loss or theft are much higher. Additionally, if the server goes offline, users lose access to the federation until it’s restored. -->
 
-## When to use fedimint
+## When to use Fedimint
 Use Fedimint whenever a custodial Lightning and ecash wallet is required, and single points of failure aren't acceptable. For example, when larger amounts are being stored or reliability is a concern.
 
-## Products that use fedimint
+## Products that use Fedimint
 
 ### Wallets
 - [Fedi](https://www.fedi.xyz)
