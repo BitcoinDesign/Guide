@@ -9,7 +9,7 @@ permalink: /guide/how-it-works/ecash/design-best-practices
 redirect_from:
  - /guide/how-it-works/ecash/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/how-it-works/ecash/best-practicies.jpg
+image: https://bitcoin.design/assets/images/guide/how-it-works/ecash/dbp_og.jpg
 image_base: /assets/images/guide/how-it-works/ecash/
 
 images_onboarding:
@@ -101,8 +101,8 @@ images_mint-default:
       caption: Advanced mint operations like setting a default mint, updating mint url, and removing a mint.
     - file: cashu-mint-details-default-set-confirmation
       modalImage: cashu-mint-details-default-set-confirmation@2x
-      alt: A success confirmation that the mint has been set as default.
-      caption: Confirmation when a mint has been set as default.
+      alt: A mobile wallet interface showing a success message that confirms the mint has been set as default, explaining that received tokens can now be auto-swapped to this mint.
+      caption: Success message explaining that the default mint will be used for auto-swapping received tokens and as the preferred mint for sending payments.
     - file: cashu-default-applied
       modalImage: cashu-default-applied@2x
       alt: A list of mints with the default mint highlighted by a home icon.
@@ -163,7 +163,7 @@ images_cashu-request:
       caption: The payer scans a Cashu request QR code.
     - file: cashu-request-04
       modalImage: cashu-request-04@2x
-      alt: Confirmation screen titled ‘Send ecash’ with fields displaying the payment amount of $1 (₿1128), description ‘Tip for orange bean coffee shop,’ and source ‘Minibits Mint.’ A purple button labeled ‘Send payment’ is at the bottom.
+      alt: Confirmation screen titled ‘Send ecash’ with fields displaying the payment amount of $1 (₿1128), description ‘Tip for orange bean coffee shop,’ and source ‘Minibits Mint.’ A purple button labeled ���Send payment’ is at the bottom.
       caption: Confirmation screen appears after the payer scans the QR code, showing all payment details before finalizing the transaction.
 
 images_mint-url-edit:
@@ -188,7 +188,7 @@ images_p2pk:
     - file: enter-p2pk
       modalImage: enter-p2pk@2x
       alt: A mobile wallet interface with an input field to enter the recipient's public key.
-      caption: Allow the user to manually enter the recipient's public key or 
+      caption: Allow the user to manually enter the recipient's public key or
     - file: share-ecash
       modalImage: share-ecash@2x
       alt: A QR code for a generate ecash token with the token string available to copy to clipboard.
@@ -222,11 +222,11 @@ images_auto-swap:
     - file: pending-token
       modalImage: pending-token@2x
       alt: A mobile wallet interface with a screen that shows a scan button at the bottom.
-      caption: User scans or recieves an ecash token
+      caption: User scans or receives an ecash token
     - file: scan
       modalImage: scan@2x
       alt: A mobile wallet interface showing a camera scanning a QR code.
-      caption: User scans or recieves an ecash token.
+      caption: User scans or receives an ecash token.
     - file: trust-mint
       modalImage: trust-mint@2x
       alt: A mobile wallet interface showing a bottom sheet with the option to trust the mint that the token is being sent from, or to auto-swap the mint to their default mint.
@@ -311,8 +311,7 @@ images_cashu-id:
 
 This is a summary page of best design practices for both bitcoin-backed ecash protocols: Cashu and Fedimint.
 
-The design source for screen mock-ups on this page can be found here:
-ADD Figma URL
+Illustration sources: https://www.figma.com/community/file/1444347139219091325/bitcoin-design-community-ecash-images
 
 
 -->
@@ -329,14 +328,14 @@ ADD Figma URL
 
 ---
 ## Common ecash design guidelines
-When designing bitcoin-backed ecash applications, it’s important to prioritize clear and intuitive interfaces that allow users to easily manage their tokens, whether minting, sending, or redeeming them. Many of the same design principles for [sending]({{ '/guide/daily-spending-wallet/sending/' | relative_url }}) and [requesting]({{ '/guide/daily-spending-wallet/requesting/' | relative_url }}) from the [lightning wallet reference design]({{ '/guide/guide/daily-spending-wallet/' | relative_url }}) apply here as well. 
+When designing bitcoin-backed ecash applications, it’s important to prioritize clear and intuitive interfaces that allow users to easily manage their tokens, whether minting, sending, or redeeming them. Many of the same design principles for [sending]({{ '/guide/daily-spending-wallet/sending/' | relative_url }}) and [requesting]({{ '/guide/daily-spending-wallet/requesting/' | relative_url }}) from the [lightning wallet reference design]({{ '/guide/guide/daily-spending-wallet/' | relative_url }}) apply here as well.
 
-Since ecash is still a relatively new technology this guide focuses on best practices for managing tokens and communicating mint and federation details. As the ecash ecosystem develops we encourage designers and developers to contribute their insights and help improveme this guide.
+Since ecash is still a relatively new technology this guide focuses on best practices for managing tokens and communicating mint and federation details. As the ecash ecosystem develops we encourage designers and developers to contribute their insights and help improve this guide.
 
 ### User onboarding
 {% include image-gallery.html pages = page.images_onboarding %}
 
-It is recomended to start the onboarding process by explaining the risks associated with ecash and then guide the user through the process of joining their first mint or federation. 
+It is recomended to start the onboarding process by explaining the risks associated with ecash and then guide the user through the process of joining their first mint or federation.
 
 #### Joining unknown mints or federations
 {% include image-gallery.html pages = page.images_unknown-mint %}
@@ -371,7 +370,7 @@ Users may prefer to use a trusted mint for their payments. By allowing them to s
 {% include image-gallery.html pages = page.images_auto-swap %}
 Wallets can provide the option to automatically swap ecash from an unknown mint to their default mint or federation. This optional feature can simplify payments by routing all ecash through the assigned default mint or federation.
 
-{% include tip/open.html color="blue" icon="info" label="Auto-Swapping Involves Fees" %}
+{% include tip/open.html color="blue" icon="info" label="Auto-swapping involves fees" %}
 
 It's important to inform users that swapping requires a a lightning payment and involves fees. The amount of fees depends on the amount of ecash they want to swap and the current network conditions.
 
@@ -386,11 +385,11 @@ It's useful to display generated tokens in the payment history along with their 
 ### Backup
 {% include image-gallery.html pages = page.images_backup %}
 
-Both Fedimint and Cashu support the ability to use a seed phrase to backup and restore ecash tokens. Users are advised to store their seed phrase securely. It is crucial to keep this seed phrase in a safe, physical format (such as written on paper) and stored in a secure location to prevent unauthorized access or loss. The best practices in the [Backup & recovery]({{ '/guide/daily-spending-wallet/backup-and-recovery/landing-page/' | relative_url }}) section also apply to ecash applications and wallets. 
+Both Fedimint and Cashu support the ability to use a seed phrase to backup and restore ecash tokens. Users are advised to store their seed phrase securely. It is crucial to keep this seed phrase in a safe, physical format (such as written on paper) and stored in a secure location to prevent unauthorized access or loss. The best practices in the [Backup & recovery]({{ '/guide/daily-spending-wallet/backup-and-recovery/landing-page/' | relative_url }}) section also apply to ecash applications and wallets.
 
-{% include tip/open.html color="blue" icon="info" label="Mint Information Needed" %}
+{% include tip/open.html color="blue" icon="info" label="Mint information needed" %}
 
-Instruct the user to keep a record of the mints or federations they are connected to. During the restoration process, users will need to reconnect to these specific mints or federations to re-verify their ecash. Without this information, they will not be able to fully restore their wallet.
+Instruct the user to keep a record of the mints or federations they are connected to. This can be done by writing them down or, since the mint list is not sensitive information, the wallet can offer to save the list of mints on cloud storage. During the restoration process, users will need to reconnect to these specific mints or federations to re-verify their ecash. Without this information, they will not be able to fully restore their wallet.
 
 {% include tip/close.html %}
 
@@ -406,11 +405,11 @@ In the future, applications may implement encrypted, privacy-preserving backup s
 ### Cashu payment request
 {% include image-gallery.html pages = page.images_cashu-request %}
 
-[NUT-18](https://github.com/cashubtc/nuts/blob/main/18.md) introduces a standardized format for cashu payment requests, allowing receivers to initiate transactions with clear, structured information that the sender can easily pay. 
+[NUT-18](https://github.com/cashubtc/nuts/blob/main/18.md) introduces a standardized format for cashu payment requests, allowing receivers to initiate transactions with clear, structured information that the sender can easily pay.
 
 A Cashu Request includes fields that specify the `amount`, `unit`, and whether the request is for `single-use`, as well as a `description` that provides context to the sender. The request can also define which `mints` are preferred for payment, and offer a choice of `transport` methods (https or nostr) for completing the transaction.
 
-For receivers, Cashu requests ensure that they can easily input payment details and generate a QR code or other format for display. 
+For receivers, Cashu requests ensure that they can easily input payment details and generate a QR code or other format for display.
 
 For senders, their wallet should display the request details in a user-friendly way upon scanning, showing the amount, description, and any relevant mint preferences before they confirm payment.
 
@@ -500,7 +499,7 @@ It's useful to provide users with the ability to manually update or refresh mint
    caption = "A message of the day can consists of anything the mint operator wants to tell the user. It can for example be used to announce a new feature or a upcoming maintenance."
 %}
 
-`motd` (Message of the Day): Used for important announcements. Consider displaying this in a prominent, dismissible notification area when users interact with the mint, making sure they don't miss any critical information.
+`motd` (Message of the day): Used for important announcements. Consider displaying this in a prominent, dismissible notification area when users interact with the mint, making sure they don't miss any critical information.
 
 </div>
 
@@ -571,14 +570,14 @@ P2PK ecash tokens are not derived from a seed phrase. This means they cannot be 
 Consider using a prominent, color-coded indicator to show the overall status of the federation. This should reflect whether the federation is fully operational, partially degraded, or offline. This helps users quickly assess the health of a federation.
 
 </div>
-### Guardian Status Indicators
+### Guardian status indicators
 {% include image-gallery.html pages = page.images_guardian-status %}
 
 Consider displaying real-time indicators of each guardian's status, such as the connection status and last activity. This information builds trust by keeping users informed about the reliability and performance of the guardians managing their funds.
 
 ### Metadata and information management
 
-#### Federation metadata fields: Explanation and usage
+#### Federation metadata fields: explanation and usage
 
 Federations can provide configuration and [metadata](https://github.com/fedimint/fedimint/blob/main/docs/spec/01-metadata.md) to users. These metadata fields are consensus-relevant, meaning they must be consistent across all federation members. This ensures that users can rely on their accuracy. Let's explore the core metadata fields defined in the Fedimint protocol:
 
@@ -617,7 +616,7 @@ Federations can provide configuration and [metadata](https://github.com/fedimint
 Different federations may choose to display the welcome message in different contexts. Some may use it as a welcome message, others may use it to display the terms of service or other important information.
 {% include tip/close.html %}
 
-#### Organizing Fedimint Metadata Fields
+#### Organizing fedimint metadata fields
 
 When designing your Fedimint wallet interface, consider organizing these metadata fields in a logical, user-friendly manner to help users understand and interact with the federation. Here are some suggestions:
 
@@ -628,11 +627,11 @@ When designing your Fedimint wallet interface, consider organizing these metadat
 By effectively incorporating these Fedimint metadata fields you can create a more transparent and informative experience for users, helping them understand the federation's structure, rules, and trusted entities.
 
 ---
-Next, learn how [transactions]({{ '/guide/how-it-works/transactions/' | relative_url }}) work.
+Next, learn how [private key management]({{ '/guide/how-it-works/private-key-management/introduction/' | relative_url }}) works.
 
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/ecash/fedimint/"
    previousName = "Fedimint"
-   nextUrl = "/guide/how-it-works/transactions/"
-   nextName = "Transactions"
+   nextUrl = "/guide/how-it-works/private-key-management/introduction/"
+   nextName = "Private key management"
 %}

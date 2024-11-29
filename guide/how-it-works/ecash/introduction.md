@@ -7,14 +7,14 @@ parent: How it works
 has_children: true
 permalink: /guide/how-it-works/ecash/introduction/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/how-it-works/ecash/ecash-intro-image.jpg
+image: https://bitcoin.design/assets/images/guide/how-it-works/ecash/ecash_og.jpg
 ---
 
 <!--
 
 Editor's notes
 
-An introduction and detailed summary of bitcoin-backed ecash.
+An introduction to bitcoin-backed ecash.
 
 Illustration sources:
 
@@ -178,7 +178,7 @@ When a user sends an ecash token to another user, the wallet verifies the mint's
 
 Sending ecash and receiving can be done via multiple methods to suit different needs. One of the advantages of bitcoin-backed ecash is that the tokens are just text, which is very flexible and can be transmitted via any communication medium. Some unique ways that ecash can be sent and received, which are not possible with on-chain or Lightning payments, include the following:
 
-#### Text message, such as email or SMS
+#### Text message, such as email, chat apps, or SMS
 Users can send ecash by copying and pasting the token string. This is particularly useful for online payments or when using text based communication platforms.
 
 #### Bluetooth transmission
@@ -226,7 +226,7 @@ The spectrum of decentralization and custody for bitcoin ranges from highly dece
 
 ---
 
-Next, we do a technical deep dive into how [Cashu]({{ '/guide/how-it-works/ecash/cashu' | relative_url }}) works.
+Next, learn how [Cashu]({{ '/guide/how-it-works/ecash/cashu' | relative_url }}) works.
 
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/payment-request-formats/"

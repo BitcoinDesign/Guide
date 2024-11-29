@@ -8,52 +8,18 @@ grand_parent: How it works
 permalink: /guide/how-it-works/ecash/cashu/
 redirect_from:
  - /guide/ecash/cashu
-image: https://bitcoin.design/assets/images/guide/how-it-works/ecash/cashu.jpg
+image: https://bitcoin.design/assets/images/guide/how-it-works/ecash/cashu_og.jpg
 main_classes: -no-top-padding
 image_base: /assets/images/guide/how-it-works/ecash/
-images_backup:
-    - file: manual-backup-recovery-phrase-intro
-      modalImage: manual-backup-recovery-phrase-intro-full
-      alt: TBD
-      caption: TBD
-    - file: manual-backup-recovery-phrase
-      modalImage: manual-backup-recovery-phrase-full
-      alt: TBD
-      caption: TBD
-    - file: manual-backup-mint-intro
-      modalImage: manual-backup-mint-intro-full
-      alt: TBD
-      caption: TBD
-    - file: manual-backup-mint-back-up
-      modalImage: manual-backup-mint-back-up-full
-      alt: TBD
-      caption: TBD
-images_restore:
-    - file: restore-start
-      modalImage: restore-start-full
-      alt: TBD
-      caption: TBD
-    - file: restore-manual-recovery-phrase-complete
-      modalImage: restore-manual-recovery-phrase-complete-full
-      alt: TBD
-      caption: TBD
-    - file: restore-mints
-      modalImage: restore-mints-full
-      alt: TBD
-      caption: TBD
-    - file: restore-mint-info
-      modalImage: restore-mint-info-full
-      alt: TBD
-      caption: TBD
 ---
 
 <!--
 
 Editor's notes
 
-Explains generally how Cashu works.
+An introduction to Cashu.
 
-Illustration sources
+Illustration sources: https://www.figma.com/community/file/1444347139219091325/bitcoin-design-community-ecash-images
 
 -->
 
@@ -138,7 +104,7 @@ Cashu Documentation - Access the official Cashu documentation for detailed infor
 
 ---
 
-Next, we do a technical deep dive into how [Fedimint]({{ '/guide/how-it-works/ecash/fedimint' | relative_url }}) works.
+Next, learn how [Fedimint]({{ '/guide/how-it-works/ecash/fedimint' | relative_url }}) works.
 
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/ecash/introduction/"

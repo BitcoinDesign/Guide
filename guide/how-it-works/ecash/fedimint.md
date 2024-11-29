@@ -8,7 +8,7 @@ grand_parent: How it works
 permalink: /guide/how-it-works/ecash/fedimint/
 redirect_from:
  - /guide/ecash/fedimint
-image: https://bitcoin.design/assets/images/guide/how-it-works/ecash/fedimint.jpg
+image: https://bitcoin.design/assets/images/guide/how-it-works/ecash/fedimint_og.jpg
 main_classes: -no-top-padding
 ---
 
@@ -16,7 +16,7 @@ main_classes: -no-top-padding
 
 Editor's notes
 
-Explains generally how fedimint works
+An introduction to Fedimint.
 
 Illustration sources
 
@@ -111,62 +111,9 @@ A [gateway](https://fedimint.org/docs/GettingStarted/TechCompontents#lightning-s
 
 **How gateways work**: The gateway accepts bitcoin payments on the lightning network and converts them into the bitcoin-backed ecash tokens used within the federation. It can also convert bitcoin-backed ecash tokens into bitcoin and send them over the lightning network. This is crucial because it allows the users within a federation to interact with the outside bitcoin and lightning network.
 
-## Design Best Practices
+## Design best practices
 To learn more about Fedimint specific design best practices you can check out the [Design best practices]({{ '/guide/how-it-works/ecash/design-best-practices' | relative_url }}) section.
 
-
-<!--
-### Federated single guardian mints
-
-{% include picture.html
-   image = "/assets/images/guide/how-it-works/ecash/single-mint.jpg"
-   retina = "/assets/images/guide/how-it-works/ecash/single-mint@2x.jpg"
-   mobile = "/assets/images/guide/how-it-works/ecash/single-mintmobile.jpg"
-   mobileRetina = "/assets/images/guide/how-it-works/ecash/single-mint-mobile.jpg"
-   alt-text = "An illustration of how users, ecash, and a single guardian mint interact."
-   caption = "How a guardian interacts with users of a single guardian mint."
-   width = 800
-   height = 500
-   layout = "full-width"
-%}
-
-This model offers a compromise between security and simplicity. A single guardian manages the mint but runs multiple servers, providing some level of resilience without the need for multiple guardians.
-
-#### Pros:
-
-* **Enhanced resilience** - By using servers from multiple providers, the mint remains operational even during scheduled downtime or attempts of censorship, ensuring both reliability and security.
-
-* **Simplified setup** - Easier to set up compared to a fully federated mint, making it accessible while still offering improved resilience over a solo setup.
-
-#### Cons:
-
-* **Security trade-off** - With only one guardian, there’s still a single point of failure, making it less secure than a fully federated setup.
-
-### Solo mints (unfederated mints)
-
-{% include picture.html
-   image = "/assets/images/guide/how-it-works/ecash/solomint.jpg"
-   retina = "/assets/images/guide/how-it-works/ecash/solomint@2x.jpg"
-   mobile = "/assets/images/guide/how-it-works/ecash/solomint-mobile.jpg"
-   mobileRetina = "/assets/images/guide/how-it-works/ecash/solomint-mobile.jpg"
-   alt-text = "An illustration of how users, ecash, and a solo mint interact."
-   caption = "How a guardian interacts with users of a solo mint."
-   width = 800
-   height = 500
-   layout = "full-width"
-%}
-
-Solo mints are the simplest and most cost-effective option. Here, a single guardian manages the entire mint, making it easy to set up, but with significant trade-offs in terms of security and resilience.
-
-#### Pros:
-
-* **Quick and easy setup** - Ideal for those who need a simple, low-cost solution.
-
-* **Cost-effective** - Fewer resources are required, making it an attractive option for smaller operations.
-
-#### Cons:
-
-* **High risk** - With all control in the hands of one guardian, the risks of loss or theft are much higher. Additionally, if the server goes offline, users lose access to the federation until it’s restored. -->
 
 ## When to use Fedimint
 Use Fedimint whenever a custodial Lightning and ecash wallet is required, and single points of failure aren't acceptable. For example, when larger amounts are being stored or reliability is a concern.
@@ -175,7 +122,6 @@ Use Fedimint whenever a custodial Lightning and ecash wallet is required, and si
 
 ### Wallets
 - [Fedi](https://www.fedi.xyz)
-- [Mutiny](https://www.mutinywallet.com/  )
 - [Webimint](https://github.com/elsirion/webimint-rs)
 
 ### Services
@@ -190,7 +136,7 @@ For a comprehensive list of products and services that use Fedimint visit [Aweso
 
 ---
 
-Next, let's take a look at some [ecash design best practices]({{ '/guide/how-it-works/ecash/design-best-practices' | relative_url }}).
+Next, learn about [ecash design best practices]({{ '/guide/how-it-works/ecash/design-best-practices' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/ecash/cashu/"
