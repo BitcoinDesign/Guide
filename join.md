@@ -295,7 +295,7 @@ For more information visit the [foundation website](https://opencollective.com/b
 
 ## Tracking
 
-Please be aware that we currently use the analytics tool [Umami](https://umami.is/) to track activity on the site. This helps us better understand what content is useful in the guide. Umami is open-source and GDPR-compliant, and we host it ourselves. You can see the [public dashboard here](https://info.bitcoin.design/). More background on the decision to include tracking can be found [here](https://github.com/BitcoinDesign/Guide/issues/1125).
+Please be aware that we currently use the analytics tool [Umami](https://umami.is/) to track activity on the site. This helps us better understand what content is useful in the guide. Umami is open-source and GDPR-compliant, and we host it ourselves. You can see the [public dashboard here](https://info.bitcoin.design/share/V7Iv1L3zfTzbfmEp/bitcoin.design). More background on the decision to include tracking can be found [here](https://github.com/BitcoinDesign/Guide/issues/1125).
 
 </div>
 
