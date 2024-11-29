@@ -37,10 +37,10 @@ Illustration sources: https://www.figma.com/community/file/1444347139219091325/b
 # Cashu
 Cashu is an [ecash protocol]({{ '/guide/how-it-works/ecash/introduction/' | relative_url }}) that operates on a model where any user can run their own solo mint, or join existing mints run by others. This makes Cashu an easy to deploy, flexible, and agile approach to managing bitcoin-backed ecash.
 
-## Design Best Practices
-This page is about the unique approach of Cashu to ecash. To learn more about design aspects, check out the [Design best practices]({{ '/guide/how-it-works/ecash/design-best-practices' | relative_url }}) page.
+## Design best practices
+This page is about the unique approach of Cashu to ecash. To learn more about design aspects, check out the [design best practices]({{ '/guide/how-it-works/ecash/design-best-practices' | relative_url }}) page.
 
-## Cashu Mints
+## Cashu mints
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/ecash/cashumint.jpg"
@@ -69,13 +69,13 @@ Cashu’s design prioritizes simplicity and speed, relying on a single operator 
 
 * **High Risk** - With all control in the hands of one operator, the risks of loss or theft are much higher. Additionally, if the server goes offline, users lose access to the mint until it’s restored.
 
-## When to Use Cashu
+## When to use cashu
 
-* **Rapid Deployment and Simple Integration** - Great for projects that need to be launched quickly with minimal setup. Cashu has a much smaller codebase and is easier to understand and modify compared to Fedimint.
+* **Rapid deployment and simple integration** - Great for projects that need to be launched quickly with minimal setup. Cashu has a much smaller codebase and is easier to understand and modify compared to Fedimint.
 
 * **Localized or Small Community Solutions** - Independent mints can be operated by trusted local entities to serve their communities, based on existing trust relationships and customized to local needs.
 
-## Products That Use Cashu
+## Products that use Cashu
 
 ### Wallets
 - [Boardwalk Cash](https://boardwalkcash.com/)
@@ -95,7 +95,7 @@ Cashu’s design prioritizes simplicity and speed, relying on a single operator 
 
 For a comprehensive list of products and services that use Cashu visit [Awesome Cashu](https://github.com/cashubtc/awesome-cashu).
 
-## Cashu Resources
+## Cashu resources
 Cashu Documentation - Access the official Cashu documentation for detailed information on setup, usage, and integration.
 - [Cashu Website](https://cashu.space/)
 - [Cashu Documentation](https://docs.cashu.space/)
