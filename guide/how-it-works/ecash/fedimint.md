@@ -126,9 +126,10 @@ Use Fedimint whenever a custodial Lightning and ecash wallet is required, and si
 For a comprehensive list of products and services that use Fedimint visit [Awesome Fedimint](https://github.com/fedimint/awesome-fedimint).
 
 ## Fedimint resources
-- [Fedimint Website](https://fedimint.org/)
 - [Fedimint Documentation](https://docs.fedimint.org/)
 - [Fedimint Observer](https://observer.fedimint.org/)
+- [Fedimint Website](https://fedimint.org/)
+- [Fedimint Web SDK](https://web.fedimint.org/)
 
 ---
 

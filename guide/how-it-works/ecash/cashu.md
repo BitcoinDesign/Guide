@@ -58,19 +58,19 @@ Cashu’s design prioritizes simplicity and speed, relying on a single operator 
 
 #### Pros:
 
-* **Quick and Easy Setup** - Ideal for those who need a simple, low-cost solution.
+* **Quick and easy setup** - Ideal for those who need a simple, low-cost solution.
 
-* **Cost-Effective** - Fewer resources are required, making it an attractive option for smaller operations.
+* **Cost-effective** - Fewer resources are required, making it an attractive option for smaller operations.
 
 #### Cons:
 
-* **High Risk** - With all control in the hands of one operator, the risks of loss or theft are much higher. Additionally, if the server goes offline, users lose access to the mint until it’s restored.
+* **High risk** - With all control in the hands of one operator, the risks of loss or theft are much higher. Additionally, if the server goes offline, users lose access to the mint until it’s restored.
 
-## When to use cashu
+## When to use Cashu
 
 * **Rapid deployment and simple integration** - Great for projects that need to be launched quickly with minimal setup. Cashu has a much smaller codebase and is easier to understand and modify compared to Fedimint.
 
-* **Localized or Small Community Solutions** - Independent mints can be operated by trusted local entities to serve their communities, based on existing trust relationships and customized to local needs.
+* **Localized or small community solutions** - Independent mints can be operated by trusted local entities to serve their communities, based on existing trust relationships and customized to local needs.
 
 ## Products that use Cashu
 

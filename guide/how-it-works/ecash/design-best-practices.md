@@ -343,7 +343,7 @@ During the inital mint selection screen a wallet could display a list of recomme
 {% include image-gallery.html pages = page.images_known-mint %}
 If a user is already aware of the specific mint or federation they want to join, wallets should support the ability to manually enter the mint name or address or scan a QR code to add the mint or federation to their wallet.
 
-{% include tip/open.html color="blue" icon="info" label="Web of Trust" %}
+{% include tip/open.html color="blue" icon="info" label="Web of trust" %}
 
 Applications should try to leverage webs of trust when displaying lists of mints. For example, [Bitcoin Mints](https://bitcoinmints.com/) allows users to login with their nostr key and then see filter the list of mints by ratings left by users they are connected to. This allows for a way of discovering mints that are recommended by their network peers.
 {% include tip/close.html %}
@@ -520,7 +520,7 @@ It's useful to provide users with the ability to manually update or refresh mint
 
 </div>
 
-{% include tip/open.html color="green" icon="check" label="Avoid Jargon & NUTs 01-06" %}
+{% include tip/open.html color="green" icon="check" label="Avoid jargon & NUTs 01-06" %}
 
 When displaying [NUTs](https://github.com/cashubtc/nuts) (Notation, Usage, and Terminology) that a mint supports, avoid simply listing NUT01, NUT02, etc. Instead, provide users with clear descriptions of each NUTs functionality. This helps users understand the features and capabilities of the mint at a glance. Since NUTs 01-06 are mandatory for Cashu protocol interoperability, focus on optional NUTs that add unique functionality. Consider using the descriptions provided in the official documentation to keep the information accurate.
 
@@ -610,7 +610,7 @@ Federations can provide configuration and [metadata](https://github.com/fedimint
 
 </div>
 
-{% include tip/open.html color="blue" icon="info" label="Flexible Use of Welcome Message" %}
+{% include tip/open.html color="blue" icon="info" label="Flexible use of welcome message" %}
 Different federations may choose to display the welcome message in different contexts. Some may use it as a welcome message, others may use it to display the terms of service or other important information.
 {% include tip/close.html %}
 
