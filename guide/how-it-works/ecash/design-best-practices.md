@@ -15,7 +15,7 @@ image_base: /assets/images/guide/how-it-works/ecash/
 images_onboarding:
     - file: ecash-onboarding-01
       modalImage: ecash-onboarding-01@2x
-      alt: Onboarding screen introducing ‘Satoshi Cash,’ a bitcoin-backed ecash wallet. The screen highlights that the wallet offers fast and private transactions and features a video thumbnail with an explainer video.
+      alt: Onboarding screen introducing ‘Satoshi Cash,’ a fictional bitcoin-backed ecash wallet. The screen highlights that the wallet offers fast and private transactions and features a video thumbnail with an explainer video.
       caption: Landing screen for Satoshi Cash, a bitcoin-backed ecash wallet.
     - file: ecash-onboarding-02
       modalImage: ecash-onboarding-02@2x
