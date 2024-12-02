@@ -96,8 +96,6 @@ Guardians are participants who collaboratively manage a federation's operations.
 {% include picture.html
    image = "/assets/images/guide/how-it-works/ecash/gateways.png"
    retina = "/assets/images/guide/how-it-works/ecash/gateways@2x.png"
-   mobile = "/assets/images/guide/how-it-works/ecash/gateways.png"
-   mobileRetina = "/assets/images/guide/how-it-works/ecash/gateways@2x.png"
    alt-text = "Diagram illustrating the role of a Fedimint gateway in connecting Fedimint ecash and bitcoin on the lightning network. On the left, an icon represents Fedimint ecash with a bitcoin symbol, connected by a dotted line to the center image labeled ‘Gateway,’ showing two hands exchanging cash in front of a vintage computer. On the right, another dotted line connects the gateway to an image of lightning bolts, symbolizing bitcoin on the lightning network."
    caption = "A Fedimint Gateway lets users pay lightning invoices with Fedimint bitcoin or receive Fedimint bitcoin from lightning payments, without converting between the two assets."
    width = 800

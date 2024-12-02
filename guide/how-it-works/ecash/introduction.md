@@ -98,8 +98,6 @@ Fedimint operates through a federated model where a group of trusted entities (c
 {% include picture.html
    image = "/assets/images/guide/how-it-works/ecash/using-ecash.jpg"
    retina = "/assets/images/guide/how-it-works/ecash/using-ecash@2x.jpg"
-   mobile = "/assets/images/guide/how-it-works/ecash/using-ecash@2x.jpg"
-   mobileRetina = "/assets/images/guide/how-it-works/ecash/using-ecash@2x.jpg"
    alt-text = "Surreal image featuring two people extending their arms from opposite sides, exchanging dollar bills in front of a retro computer. The computer, with a blank screen and an old keyboard, sits on a small desk. One person is dressed in a pink suit, while the other wears a yellow outfit, set against a vibrant pink and orange background."
    width = 800
    height = 508
