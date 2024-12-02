@@ -6,11 +6,8 @@ nav_order: 2
 parent: Ecash
 grand_parent: How it works
 permalink: /guide/how-it-works/ecash/cashu/
-redirect_from:
- - /guide/ecash/cashu
 image: https://bitcoin.design/assets/images/guide/how-it-works/ecash/cashu_og.jpg
 main_classes: -no-top-padding
-image_base: /assets/images/guide/how-it-works/ecash/
 ---
 
 <!--
