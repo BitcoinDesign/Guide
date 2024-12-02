@@ -6,8 +6,6 @@ nav_order: 5
 parent: Ecash
 grand_parent: How it works
 permalink: /guide/how-it-works/ecash/design-best-practices
-redirect_from:
- - /guide/how-it-works/ecash/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/how-it-works/ecash/dbp_og.jpg
 image_base: /assets/images/guide/how-it-works/ecash/

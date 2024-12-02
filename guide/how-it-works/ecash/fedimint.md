@@ -6,8 +6,6 @@ nav_order: 3
 parent: Ecash
 grand_parent: How it works
 permalink: /guide/how-it-works/ecash/fedimint/
-redirect_from:
- - /guide/ecash/fedimint
 image: https://bitcoin.design/assets/images/guide/how-it-works/ecash/fedimint_og.jpg
 main_classes: -no-top-padding
 ---
@@ -18,7 +16,7 @@ Editor's notes
 
 An introduction to Fedimint.
 
-Illustration sources
+Illustration sources: https://www.figma.com/community/file/1444347139219091325/bitcoin-design-community-ecash-images
 
 
 -->
