@@ -45,7 +45,7 @@ This page is about the unique approach of Cashu to ecash. To learn more about de
 {% include picture.html
    image = "/assets/images/guide/how-it-works/ecash/cashumint.jpg"
    retina = "/assets/images/guide/how-it-works/ecash/cashumint@2x.jpg"
-   mobile = "/assets/images/guide/how-it-works/ecash/cashumint-mobile@2x.jpg"
+   mobile = "/assets/images/guide/how-it-works/ecash/cashumint-mobile.jpg"
    mobileRetina = "/assets/images/guide/how-it-works/ecash/cashumint-mobile@2x.jpg"
    alt-text = "An illustration of how users, ecash, and a Cashu mint interact."
    caption = "How a users interacts with a Cashu mint."

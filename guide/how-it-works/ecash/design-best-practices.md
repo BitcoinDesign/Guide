@@ -163,7 +163,7 @@ images_cashu-request:
       caption: The payer scans a Cashu request QR code.
     - file: cashu-request-04
       modalImage: cashu-request-04@2x
-      alt: Confirmation screen titled ‘Send ecash’ with fields displaying the payment amount of $1 (₿1128), description ‘Tip for orange bean coffee shop,’ and source ‘Minibits Mint.’ A purple button labeled ���Send payment’ is at the bottom.
+      alt: Confirmation screen titled ‘Send ecash’ with fields displaying the payment amount of $1 (₿1128), description ‘Tip for orange bean coffee shop,’ and source ‘Minibits Mint.’ A purple button labeled ’Send payment’ is at the bottom.
       caption: Confirmation screen appears after the payer scans the QR code, showing all payment details before finalizing the transaction.
 
 images_mint-url-edit:
@@ -616,7 +616,7 @@ Federations can provide configuration and [metadata](https://github.com/fedimint
 Different federations may choose to display the welcome message in different contexts. Some may use it as a welcome message, others may use it to display the terms of service or other important information.
 {% include tip/close.html %}
 
-#### Organizing fedimint metadata fields
+#### Organizing Fedimint metadata fields
 
 When designing your Fedimint wallet interface, consider organizing these metadata fields in a logical, user-friendly manner to help users understand and interact with the federation. Here are some suggestions:
 
