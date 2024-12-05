@@ -220,7 +220,7 @@ When users need to make changes to their multisig wallet, such as replacing a ke
 
 Let's assume that David, one of the heirs, has lost his signing device. Fortunately, it is part of the inheritance key set, which is restricted by a timelock, as we have covered [here]({{ '/guide/inheritance-wallet/wallet-creation/#creating-the-inheritance-key-set' | relative_url }}). Although David still has his seed phrase backup, the Joneses decide to replace David's key as a precautionary measure. They would follow the same approach if David had lost the seed phrase backup or suspected it had been compromised.
 
-#### Adding the new key
+### Adding the new key
 
 After David received the new signing device, he exports the extendend public key (XPUB), just like he did during the [wallet creation]({{ '/guide/inheritance-wallet/wallet-creation/#adding-the-inheritance-keys' | relative_url }}) process. He then shares it with his parents via a shared chat on Signal. 
 
@@ -247,7 +247,7 @@ The next step is to add David's new extended public key. This works in the same 
 
 {% include image-gallery.html pages = page.images_key-replacement-add-key %}
 
-#### Cosigner setup, device activation and wallet backup 
+### Cosigner setup, device activation and wallet backup 
 
 The new inheritance wallet is now created. Just like during the initial wallet creation, Alice and Bob now need to:
 
@@ -257,13 +257,11 @@ The new inheritance wallet is now created. Just like during the initial wallet c
 
 We have covered these topics in the previous pages of this reference design.
 
----
-
 ### Moving funds to the new wallet
 
 Now that the new wallet is ready, Alice and Bob need to transfer their savings to this new wallet. Again, our app shows this in the form of a reminder. 
 
-#### Bob creates and signs the transaction
+##### Bob creates and signs the transaction
 
 Bob taps on the reminder and initiates the transaction creation process. Because the app is aware of both wallets, it can prefill most of the information in the send flow, such as the recipient address and the transaction amount. After creating the transaction, Bob signs it with his Trezor right away.
 
@@ -273,7 +271,7 @@ The transaction is now ready for Alice to sign as well. However, there is no cen
 
 This means that Bob has to manually share the [partially signed bitcoin transaction]({{ '/guide/glossary/#partially-signed-bitcoin-transaction-psbt' | relative_url }}) (PSBT) with Alice. Our app offers a variety of different sharing options. Bob chooses to generate a QR code, so that Alice can scan it conveniently.
 
-#### Alice co-signs the transaction
+##### Alice co-signs the transaction
 
 Alice opens the wallet app on her phone, selects the family savings wallet and hits send. In the send sheet she taps "sign transaction" and uses the QR scanner to import the partially signed transaction from Bob's phone.
 
@@ -285,7 +283,6 @@ After she completes the signing flow  with her BitBox, the app automatically bro
 
 Back on the home screen, Alice sees that the transaction is being confirmed by the network. After it has been confirmed, the app shows a reminder that the original wallet should be archived. 
 
----
 
 ### Archiving the old wallet
 
@@ -295,8 +292,8 @@ The app will still monitor the bitcoin blockchain for incoming transactions. If 
 
 {% include image-gallery.html pages = page.images_archive-wallet %}
 
-## Alternative approach
-As you can see, making changes to a multi-key wallet can be a tedious process. An alternative to replacing the David's key would be for David to simply import the backup of his existing private key into a new signing device. This approach has some advantages:
+### Alternative approach
+As you can see, making changes to a multi-key wallet can be a tedious process. An alternative to replacing David's key would be for David to simply import the backup of his existing private key into a new signing device. This approach has some advantages:
 
 1. **Simplicity**: It doesn't require creating a new wallet or moving funds, which incurs transaction fees.
 1. **Convenience**: Other family members wouldn't need to be involved in the process
