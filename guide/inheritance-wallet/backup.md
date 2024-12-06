@@ -6,8 +6,19 @@ nav_order: 4
 parent: Inheritance wallet
 permalink: /guide/inheritance-wallet/backup/
 main_classes: -no-top-padding
+image: https://bitcoin.design/assets/images/guide/inheritance-wallet/wallet-backup/preview.png
 image_base: /assets/images/guide/inheritance-wallet/
 ---
+
+
+{% include picture.html
+   image = "/assets/images/guide/inheritance-wallet/wallet-backup/header.jpg"
+   retina = "/assets/images/guide/inheritance-wallet/wallet-backup/header@2x.jpg"
+   width = 1600
+   height = 800
+   layout = "full-width"
+%}
+
 
 
 # Wallet backup 
