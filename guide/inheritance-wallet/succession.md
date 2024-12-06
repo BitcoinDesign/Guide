@@ -176,6 +176,12 @@ After Christina is done, she shares the partially signed transaction with David 
 
 While waiting for the first transaction to be confirmed, Christina and David repeat the process to create and sign a second transaction, sending the remaining 50% of the funds to David's personal wallet.
 
+{% include tip/open.html color="blue" icon="info" label="What if they don't trust each other?" %}
+
+In a more adversarial environment, David may not be OK with signing the transaction for Christina without any guarantee that she will also sign his transaction. In that case, Christina can create a batch transaction, or two separate transactions. That way she is committed to both transactions before David signs anything. 
+
+{% include tip/close.html %} 
+
 With both transactions confirmed on the blockchain, the inheritance is now fully distributed. Christina and David each control their respective share of the funds in their personal wallets, completing the inheritance process as their parents had intended. This marks the successful transfer of assets and the fulfillment of Bob and Alice's inheritance plan.
 
 ## Conclusion
@@ -217,6 +223,17 @@ The inheritance wallet design explored in this reference implementation leverage
 9. **Ongoing transaction costs**: Timelocks need to be refreshed at regular intervals, incurring transaction fees. This ongoing cost needs to be factored into the long-term management of the wallet
 
 In conclusion, while multi-key and timelocks offer powerful tools for creating secure and flexible inheritance solutions, they also require careful planning, ongoing management, and a good understanding of the technology. Families considering such a setup should weigh these pros and cons against their specific needs, technical capabilities, and risk tolerance. The added security and flexibility come with increased complexity and maintenance requirements, including regular updates and associated transaction costs.
+
+### Final thoughts
+
+A unique point about bitcoin inheritance is that it cannot be overruled by the law. With traditional methods, the descendants could get a court order to get to the funds. But that's simply not possible with bitcoin.
+
+Compared to traditional inheritance setups, the bitcoin setup is technically more complex but operationally simpler in many ways. It eliminates many intermediaries and provides more direct control, but requires:
+
+- Technical competence from all parties
+- Careful key management
+- Regular maintenance (checking keys, updating configurations)
+- Family coordination and education
 
 
 ---

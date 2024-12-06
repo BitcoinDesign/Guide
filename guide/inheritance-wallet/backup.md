@@ -6,7 +6,7 @@ nav_order: 4
 parent: Inheritance wallet
 permalink: /guide/inheritance-wallet/backup/
 main_classes: -no-top-padding
-image: https://bitcoin.design/assets/images/guide/inheritance-wallet/succession/preview.png
+image: https://bitcoin.design/assets/images/guide/inheritance-wallet/wallet-backup/preview.png
 image_base: /assets/images/guide/inheritance-wallet/
 ---
 
