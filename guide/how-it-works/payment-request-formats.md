@@ -262,11 +262,11 @@ You can learn more about unified payment requests [here](https://bitcoinqr.dev/)
 
 ---
 
-Next, we will learn about the different [private key schemes]({{ '/guide/how-it-works/private-key-management/introduction/' | relative_url }}) used to secure your bitcoin.
+Next, we will learn about [ecash]({{ '/guide/how-it-works/ecash/introduction/' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/nodes/"
    previousName = "Nodes"
-   nextUrl = "/guide/how-it-works/private-key-management/introduction/"
-   nextName = "Private key management"
+   nextUrl = "/guide/how-it-works/ecash/introduction/"
+   nextName = "Ecash"
 %}

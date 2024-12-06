@@ -2,7 +2,7 @@
 layout: guide
 title: Stabilizing bitcoin value
 description:
-nav_order: 13
+nav_order: 14
 parent: How it works
 permalink: /guide/how-it-works/stabilizing-bitcoin-value/
 main_classes: -no-top-padding
