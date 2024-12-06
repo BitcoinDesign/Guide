@@ -14,7 +14,7 @@ images_wallet-import:
       caption: Christina taps the plus button to start adding the wallet.
     - file: wallet-import/add-wallet-sheet
       alt: Screen showing different options for adding a wallet.
-      caption: Christina selects "Recover an existing wallet"
+      caption: Christina selects "Import wallet"
     - file: wallet-import/christina-import-config-options
       alt: Screen showing different options for importing the wallet configuration.
       caption: She chooses to scan the QR code from the recovery PDF. 
