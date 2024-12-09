@@ -166,7 +166,7 @@ Christina goes on to create the first transaction, which will send half of the f
 
 {% include image-gallery.html pages = page.images_inheritance-transaction-create %}
 
-The transaction has been created and is ready to be signed. Christina goes ahead and sings it with her hardware signing device.
+The transaction has been created and is ready to be signed. Christina goes ahead and signs it with her hardware signing device.
 
 {% include image-gallery.html pages = page.images_inheritance-transaction-sign-christina %} 
 
