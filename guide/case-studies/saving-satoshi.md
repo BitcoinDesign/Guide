@@ -35,7 +35,7 @@ Illustration sources: <>
    image = "assets/images/guide/case-studies/saving-satoshi/chapter-1.jpg"
    retina = "assets/images/guide/case-studies/saving-satoshi/chapter-1@2x.jpg"
    mobile = "assets/images/guide/case-studies/saving-satoshi/chapter-1-mobile.jpg"
-   mobileRetina = "assets/images/guide/case-studies/saving-satoshi/chapter-1-mobile-@2x.jpg"
+   mobileRetina = "assets/images/guide/case-studies/saving-satoshi/chapter-1-mobile@2x.jpg"
    alt-text = ""
    caption = "Chapter 1 starts with learning how to look up transaction data in an explorer."
    width = 1200
@@ -49,7 +49,7 @@ The unique learning experience is told as a sci-fi epic set in a hyperbitcoinize
    image = "assets/images/guide/case-studies/saving-satoshi/chapter-3.jpg"
    retina = "assets/images/guide/case-studies/saving-satoshi/chapter-3@2x.jpg"
    mobile = "assets/images/guide/case-studies/saving-satoshi/chapter-3-mobile.jpg"
-   mobileRetina = "assets/images/guide/case-studies/saving-satoshi/chapter-3-mobile-@2x.jpg"
+   mobileRetina = "assets/images/guide/case-studies/saving-satoshi/chapter-3-mobile@2x.jpg"
    alt-text = ""
    caption = "In chapter 3, players learn about 51% attacks."
    width = 1200
@@ -81,7 +81,7 @@ Excited about this great initial response, the team continued their work, and in
    image = "assets/images/guide/case-studies/saving-satoshi/tabconf-2024-workshop.jpg"
    retina = "assets/images/guide/case-studies/saving-satoshi/tabconf-2024-workshop@2x.jpg"
    mobile = "assets/images/guide/case-studies/saving-satoshi/tabconf-2024-workshop-mobile.jpg"
-   mobileRetina = "assets/images/guide/case-studies/saving-satoshi/tabconf-2024-workshop-mobile-@2x.jpg"
+   mobileRetina = "assets/images/guide/case-studies/saving-satoshi/tabconf-2024-workshop-mobile@2x.jpg"
    alt-text = ""
    caption = "The Saving Satoshi workshop at TABConf 2024."
    width = 800
@@ -99,7 +99,7 @@ In December 2024, eager to get Saving Satoshi in front of more learners, the tea
    image = "assets/images/guide/case-studies/saving-satoshi/tabconf-2024-meet.jpg"
    retina = "assets/images/guide/case-studies/saving-satoshi/tabconf-2024-meet@2x.jpg"
    mobile = "assets/images/guide/case-studies/saving-satoshi/tabconf-2024-meet-mobile.jpg"
-   mobileRetina = "assets/images/guide/case-studies/saving-satoshi/tabconf-2024-meet-mobile-@2x.jpg"
+   mobileRetina = "assets/images/guide/case-studies/saving-satoshi/tabconf-2024-meet-mobile@2x.jpg"
    alt-text = ""
    caption = "Some of the team met at TABConf 2024."
    width = 800
@@ -163,7 +163,7 @@ Despite all the benefits that design delivers to the user experience, it is stil
    image = "assets/images/guide/case-studies/saving-satoshi/chapter-5.jpg"
    retina = "assets/images/guide/case-studies/saving-satoshi/chapter-5@2x.jpg"
    mobile = "assets/images/guide/case-studies/saving-satoshi/chapter-5-mobile.jpg"
-   mobileRetina = "assets/images/guide/case-studies/saving-satoshi/chapter-5-mobile-@2x.jpg"
+   mobileRetina = "assets/images/guide/case-studies/saving-satoshi/chapter-5-mobile@2x.jpg"
    alt-text = ""
    width = 1200
    height = 780
@@ -181,7 +181,7 @@ One early educational partner and supporter for Saving Satoshi has been Scalar S
    image = "assets/images/guide/case-studies/saving-satoshi/chapter-10.jpg"
    retina = "assets/images/guide/case-studies/saving-satoshi/chapter-10@2x.jpg"
    mobile = "assets/images/guide/case-studies/saving-satoshi/chapter-10-mobile.jpg"
-   mobileRetina = "assets/images/guide/case-studies/saving-satoshi/chapter-10-mobile-@2x.jpg"
+   mobileRetina = "assets/images/guide/case-studies/saving-satoshi/chapter-10-mobile@2x.jpg"
    alt-text = ""
    caption = "Chapter 10 culminates in learning about constructing channels and making payments on the lightning network."
    width = 1200
@@ -207,7 +207,7 @@ A second challenge was to create a learning experience that started gentle, and 
    image = "assets/images/guide/case-studies/saving-satoshi/design-system.jpg"
    retina = "assets/images/guide/case-studies/saving-satoshi/design-system@2x.jpg"
    mobile = "assets/images/guide/case-studies/saving-satoshi/design-system-mobile.jpg"
-   mobileRetina = "assets/images/guide/case-studies/saving-satoshi/design-system-mobile-@2x.jpg"
+   mobileRetina = "assets/images/guide/case-studies/saving-satoshi/design-system-mobile@2x.jpg"
    alt-text = ""
    caption = "Some of the unique interface components built for the learning experiences."
    width = 1200
@@ -229,7 +229,7 @@ Lastly is in creating an educational platform we have been trying to create as m
    image = "assets/images/guide/case-studies/saving-satoshi/script-editor.jpg"
    retina = "assets/images/guide/case-studies/saving-satoshi/script-editor@2x.jpg"
    mobile = "assets/images/guide/case-studies/saving-satoshi/script-editor-mobile.jpg"
-   mobileRetina = "assets/images/guide/case-studies/saving-satoshi/script-editor-mobile-@2x.jpg"
+   mobileRetina = "assets/images/guide/case-studies/saving-satoshi/script-editor-mobile@2x.jpg"
    alt-text = ""
    caption = "The script editor from chapter 9 is also available at [script.savingsatoshi.com](http://script.savingsatoshi.com)."
    width = 1200
