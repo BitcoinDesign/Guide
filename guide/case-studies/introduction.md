@@ -44,6 +44,12 @@ An iniative to redesign the first bitcoin wallet ever.
 
 ---
 
+### [Saving Satoshi]({{ '/guide/case-studies/saving-satoshi' | relative_url }})
+
+...
+
+---
+
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/stabilizing-bitcoin-value/"
    previousName = "Stabilizing bitcoin value"
