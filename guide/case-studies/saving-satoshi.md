@@ -21,7 +21,9 @@ Illustration sources: <>
 {% include picture.html
    image = "assets/images/guide/case-studies/saving-satoshi/saving-satoshi-header.jpg"
    retina = "assets/images/guide/case-studies/saving-satoshi/saving-satoshi-header@2x.jpg"
-   alt-text = "Side-by-side screenshows of the original software and the new design"
+   mobile = "assets/images/guide/case-studies/saving-satoshi/saving-satoshi-header-mobile.jpg"
+   mobileRetina = "assets/images/guide/case-studies/saving-satoshi/saving-satoshi-header-mobile@2x.jpg"
+   alt-text = "Anime-style promotional art showing five diverse characters and a cat against a twilight cityscape, with 'SAVING SATOSHI' in large white text above."
    width = 1600
    height = 1024
    layout = "full-width"
@@ -36,7 +38,7 @@ Illustration sources: <>
    retina = "assets/images/guide/case-studies/saving-satoshi/chapter-1@2x.jpg"
    mobile = "assets/images/guide/case-studies/saving-satoshi/chapter-1-mobile.jpg"
    mobileRetina = "assets/images/guide/case-studies/saving-satoshi/chapter-1-mobile@2x.jpg"
-   alt-text = ""
+   alt-text = "Challenge screen from Saving Satoshi Chapter 1 titled 'Genesis', showing instructions to find a hidden message in Bitcoin's genesis block. The interface includes a 'View block 0' button and an input area for pasting the discovered value."
    caption = "Chapter 1 starts with learning how to look up transaction data in an explorer."
    width = 1200
    height = 780
@@ -50,7 +52,7 @@ The unique learning experience is told as a sci-fi epic set in a hyperbitcoinize
    retina = "assets/images/guide/case-studies/saving-satoshi/chapter-3@2x.jpg"
    mobile = "assets/images/guide/case-studies/saving-satoshi/chapter-3-mobile.jpg"
    mobileRetina = "assets/images/guide/case-studies/saving-satoshi/chapter-3-mobile@2x.jpg"
-   alt-text = ""
+   alt-text = "Story screen from Saving Satoshi Chapter 3 'Hashing it out', showing narrative text about BitRey virus and mining pools, alongside anime-style character portraits of four main characters. A quote from HOLOCAT mentions running through walls and scaring mice."
    caption = "In chapter 3, players learn about 51% attacks."
    width = 1200
    height = 780
@@ -82,7 +84,7 @@ Excited about this great initial response, the team continued their work, and in
    retina = "assets/images/guide/case-studies/saving-satoshi/tabconf-2024-workshop@2x.jpg"
    mobile = "assets/images/guide/case-studies/saving-satoshi/tabconf-2024-workshop-mobile.jpg"
    mobileRetina = "assets/images/guide/case-studies/saving-satoshi/tabconf-2024-workshop-mobile@2x.jpg"
-   alt-text = ""
+   alt-text = "Workshop room at TABConf showing attendees at tables with laptops, facing a projector screen displaying a Satoshi Nakamoto quote from the game and a glowing cat illustration."
    caption = "The Saving Satoshi workshop at TABConf 2024."
    width = 800
    height = 544
@@ -100,7 +102,7 @@ In December 2024, eager to get Saving Satoshi in front of more learners, the tea
    retina = "assets/images/guide/case-studies/saving-satoshi/tabconf-2024-meet@2x.jpg"
    mobile = "assets/images/guide/case-studies/saving-satoshi/tabconf-2024-meet-mobile.jpg"
    mobileRetina = "assets/images/guide/case-studies/saving-satoshi/tabconf-2024-meet-mobile@2x.jpg"
-   alt-text = ""
+   alt-text = "The Saving Satoshi team standing behind their conference booth, which displays merchandise, stickers, and a monitor showing the glowing cat logo. A 'SAVING SATOSHI' banner decorates the table front."
    caption = "Some of the team met at TABConf 2024."
    width = 800
    height = 647
@@ -164,7 +166,8 @@ Despite all the benefits that design delivers to the user experience, it is stil
    retina = "assets/images/guide/case-studies/saving-satoshi/chapter-5@2x.jpg"
    mobile = "assets/images/guide/case-studies/saving-satoshi/chapter-5-mobile.jpg"
    mobileRetina = "assets/images/guide/case-studies/saving-satoshi/chapter-5-mobile@2x.jpg"
-   alt-text = ""
+   alt-text = "Challenge screen from Saving Satoshi Chapter 5 titled 'Derive the message', showing instructions about Bitcoin transaction structure alongside a hex transaction blob and its decoded components in different colors."
+   caption = "Chapter 5 covers transactions structure."
    width = 1200
    height = 780
    layout = "full-width"
@@ -182,7 +185,7 @@ One early educational partner and supporter for Saving Satoshi has been Scalar S
    retina = "assets/images/guide/case-studies/saving-satoshi/chapter-10@2x.jpg"
    mobile = "assets/images/guide/case-studies/saving-satoshi/chapter-10-mobile.jpg"
    mobileRetina = "assets/images/guide/case-studies/saving-satoshi/chapter-10-mobile@2x.jpg"
-   alt-text = ""
+   alt-text = "Challenge screen from Saving Satoshi Chapter 10 'Splits', showing a multi-part transaction interface with commitment details between two parties, script code, and signature status indicators. Navigation tabs at top show 'Deposit', 'Multi-sig', 'Refund', and 'Commitment' options."
    caption = "Chapter 10 culminates in learning about constructing channels and making payments on the lightning network."
    width = 1200
    height = 819
@@ -208,7 +211,7 @@ A second challenge was to create a learning experience that started gentle, and 
    retina = "assets/images/guide/case-studies/saving-satoshi/design-system@2x.jpg"
    mobile = "assets/images/guide/case-studies/saving-satoshi/design-system-mobile.jpg"
    mobileRetina = "assets/images/guide/case-studies/saving-satoshi/design-system-mobile@2x.jpg"
-   alt-text = ""
+   alt-text = "Design system interface elements for Saving Satoshi, featuring dark-themed UI components including a script editor with stack frames, challenge navigation bars, status indicators, code boxes with copy buttons, navigation tabs, and various button styles."
    caption = "Some of the unique interface components built for the learning experiences."
    width = 1200
    height = 704
@@ -230,7 +233,7 @@ Lastly is in creating an educational platform we have been trying to create as m
    retina = "assets/images/guide/case-studies/saving-satoshi/script-editor@2x.jpg"
    mobile = "assets/images/guide/case-studies/saving-satoshi/script-editor-mobile.jpg"
    mobileRetina = "assets/images/guide/case-studies/saving-satoshi/script-editor-mobile@2x.jpg"
-   alt-text = ""
+   alt-text = "Bitcoin Script editor interface showing OP_CODE buttons organized by category (constant, arithmetic, crypto, etc.), alongside documentation, examples, and an execution stack visualizer. The interface has a dark theme with teal accents."
    caption = "The script editor from chapter 9 is also available at [script.savingsatoshi.com](http://script.savingsatoshi.com)."
    width = 1200
    height = 780
