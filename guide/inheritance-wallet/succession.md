@@ -29,7 +29,7 @@ images_wallet-import:
       caption: Christina skips the download of the backup kit, as she already has it.
     - file: wallet-import/app-home-done
       alt: App home screen showing the family savings wallet.
-      caption: The home screen reminds Christina that she should download the backup kit and enable her signing device.
+      caption: The home screen reminds Christina that she should enable her signing device.
 images_inheritance-transaction-create:
     - file: inheritance-transaction-create/move-funds-app-home-initial
       alt: App home screen showing the inheritance wallet.
