@@ -37,6 +37,9 @@ images_inheritance-transaction-create:
     - file: inheritance-transaction-create/move-funds-wallet-overview
       alt: Wallet overview screen.
       caption: On the wallet details page, she hits "pay".
+    - file: inheritance-transaction-create/move-funds-create-payment-sheet
+      alt: Dialog showing three different payment options.
+      caption: Christina starts to create a new transaction.
     - file: inheritance-transaction-create/move-funds-recipient-filled
       alt: Screen letting the user enter a payment address.
       caption: She pastes the address of her personal bitcoin wallet.
