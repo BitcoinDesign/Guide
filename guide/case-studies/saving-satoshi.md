@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Saving Satoshi
-description: This case study shares the vision for the build process of Bitcoin Core App as well as it's history.
+description: Discover how Saving Satoshi, an interactive RPG set in 2139, makes learning Bitcoin development engaging through storytelling and hands-on challenges. From mining to Lightning Network, explore how this unique educational project combines technical learning with narrative elements to onboard new Bitcoin developers.
 nav_order: 5
 parent: Case studies
 permalink: /guide/case-studies/saving-satoshi/
