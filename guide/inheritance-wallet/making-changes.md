@@ -283,7 +283,6 @@ After she completes the signing flow  with her BitBox, the app automatically bro
 
 Back on the home screen, Alice sees that the transaction is being confirmed by the network. After it has been confirmed, the app shows a reminder that the original wallet should be archived. 
 
-
 ### Archiving the old wallet
 
 Archiving unused wallets removes complexity and helps users focus on the wallets they actively use. Archiving a wallet does not delete it from the app. It is only removed from the home screen and from the wallets tab. 

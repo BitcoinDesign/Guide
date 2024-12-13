@@ -74,7 +74,7 @@ Over time, it might become necessary for users to make changes to their savings 
 
 --- 
 
-### Succession (coming soon)
+### [Succession & fund transfer]({{ '/guide/inheritance-wallet/succession/' | relative_url }})
 
 When it's time for the heirs to claim their inheritance, the Jones' children can use their own signing devices to recover their funds.
 
