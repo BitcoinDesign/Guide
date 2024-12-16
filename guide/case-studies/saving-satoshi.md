@@ -164,6 +164,7 @@ Take addresses that correspond to public keys as an example. While we now have m
    image = "assets/images/guide/case-studies/saving-satoshi/feedback.jpg"
    retina = "assets/images/guide/case-studies/saving-satoshi/feedback@2x.jpg"
    alt-text = "A screenshot of a social media post with a yellow lightbulb emoji and the heading 'Learned something new? Tell us :-)'. The post's text reads: 'I didnt know how prevelant p2pk addresses were back in the day! I enjoyed digging around in those early bloc I am so use to Schnorr and never really took the time to learn ECDSA verification (kinda glad I never did :) ).'"
+   caption = "Anonymous feedback collected by a player."
    width = 800
    height = 173
    layout = "full-width"
@@ -279,7 +280,7 @@ Mentions of bitcoin culture and history can be found all over the game. The very
 
 Powered by an immersive game UX, Saving Satoshi uses rich visuals and seamless interactions to journey players through time and space to learn about bitcoin coding. However, that is much easier said than done and the blending of story and education resulted in some unique design challenges.
 
-An early ambition proposed by Christoph was to illustrate the story using generative AI. Compared to what is available today, the AI image generation tools of late 2022 were rudimentary. There was no shortage of issues including things like six fingered hands, inconsistent characters, limited resolutions, and little to no control over an image’s composition. Despite these inconveniences we stayed committed to this direction. There was just an expectation that we would have to iterate as the technology progressed. Fast forward to the end of chapter ten and that’s exactly what happened. While you may still see an extra finger or two, it’s clear that the quality of the art has made leaps and bounds. Christoph’s foresight in choosing this direction cannot be understated. The strategy worked out well and allowed the game’s visual storytelling to make huge strides.
+An early ambition proposed by Christoph was to illustrate the story using generative AI. Compared to what is available today, the AI image generation tools of late 2022 were rudimentary. There was no shortage of issues including things like six fingered hands, inconsistent characters, limited resolutions, and little to no control over an image’s composition. Despite these inconveniences we stayed committed to this direction. There was just an expectation that we would have to iterate as the technology progressed. Fast forward to the end of chapter ten and that’s exactly what happened. While you may still see an extra finger or two, it’s clear that the quality of the art has made leaps and bounds. Christoph’s foresight in choosing this direction and betting on the future cannot be understated. The strategy worked out well and allowed the game’s visual storytelling to make huge strides.
 
 {% include picture.html
    image = "assets/images/guide/case-studies/saving-satoshi/generative-art-progress.jpg"
@@ -417,7 +418,7 @@ Now be quick! [Satoshi needs you](https://savingsatoshi.com).
 
 Saving Satoshi would not be possible without the many people that have come together over the last few years to build it. The core team is made up of Adam Jonas, Christoph Ono (design lead), Satsie, BenAllenG (engineering lead), Matthew Zipkin (lesson content lead), Tuedon Tuoyo, Art Assoiants (product manager), and 4 mysterious cats that Spiral let us borrow to write the story.
 
-Throughout the journey we have also had a number of contributors play key roles at various points in the game. This includes, but is not limited to, ecurrencyhodler, JT Woodhouse, JSMS, Kevin Karsopawiro, daviroo, Vinayak Sharma, Shashwat Vangani, Aurèle Oulès, and sabakhilji.
+Throughout the journey we have also had a number of contributors play key roles at various points in the game. This includes, but is not limited to, ecurrencyhodler, JT Woodhouse, JSMS, Kevin Karsopawiro, daviroo, Vinayak Sharma, Shashwat Vangani, Aurèle Oulès, and sabakhilji. We'd also like to thank the countless testers that tried out the game and provided invaluable feedback on their experience.
 
 A full list of code contributors can be found [on GitHub](https://github.com/saving-satoshi/saving-satoshi/graphs/contributors).
 
