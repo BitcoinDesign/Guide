@@ -79,10 +79,12 @@ Saving Satoshi strives to make technical bitcoin education more fun and accessib
 
 Learning doesn’t have to be boring. It can be joyful and entertaining. There is no reason why the bitcoin ecosystem can’t have beautiful, captivating educational products that touch on all the things that make bitcoin special. We believe learning about bitcoin can be just as creative, unique, and innovative as the technology itself.
 
-**Onboarding ₿OSS devs**  
+**Onboarding ₿OSS devs**
+
 We feel that bitcoin is a positive force in the world, and want to see more bitcoiners and bitcoin devs. Understanding it from a technical standpoint, even if it’s just the basics, is often the main step to deeper involvement. With more contributors, bitcoin can grow stronger, no matter what challenges it faces. 
 
 **Personal reasons**  
+
 This project is also driven by personal reasons. There is an enjoyment to be had from the creative challenge of putting something unique and innovative out into the world. Educators get to experiment and iterate on the developer learning experience. Designers get to play with storytelling and generative AI. Engineers get to uncover new or forgotten details about bitcoin tech.
 
 ## Origin story
@@ -152,10 +154,12 @@ Bitcoin has no shortage of rabbit holes, and the game’s educational content re
 
 Some subjects, like the basics of elliptic curve cryptography, can be difficult to understand with traditional forms of learning like books and white papers. Having said that, Saving Satoshi is not designed to compete with these resources, rather its goal is to complement them. It offers players yet another way to approach bitcoin tech, one with a higher level of interactivity and visuals, and where learning drives a story forward.
 
-**Working with a story**  
+**Working with a story**
+
 Players will find that the exercises they complete go hand in hand with the narrative. One example is in chapter five where the villain, Thomas Vanderpoole, claims to be the great-grandson of Satoshi Nakamoto. Users learn that if this claim is indeed true, Vanderpoole should have no problem producing a digital signature with one of Satoshi’s keys. The game guides the player through an adventure that begins with reading an old message from Hal Finney on the Bitcoin Talk forum. Then, that information is used to find one of Satoshi’s public keys in the blockchain. Following that, users dive into the specifics of the ECDSA message signing and verification algorithm used in Bitcoin Core before executing the code themselves to figure out if Vanderpoole is really telling the truth.
 
-**Learning history to build strong foundations**  
+**Learning history to build strong foundations**
+
 While some of the topics covered in Saving Satoshi involve concepts used less commonly today, it can be beneficial to understand how things got to where they are now. With simple, straightforward examples, players build solid foundations before layering on the complexity. In many cases, this is similar to the natural trajectory of whatever aspect of bitcoin technology a chapter happens to be focused on.
 
 Take addresses that correspond to public keys as an example. While we now have more advanced address types that involve scripts and other elements of a transaction, you can still see P2WPKH, and even P2PKH addresses in block explorers, wallet software, and documentation. In Saving Satoshi, players first master public-private key cryptography and the corresponding address derivation for public keys before moving onto more advanced topics like bitcoin Script. Attempting to learn everything at once would be like drinking from a firehose.
@@ -172,7 +176,8 @@ Take addresses that correspond to public keys as an example. While we now have m
 
 The bitcoin industry deliberately moves at a pace that is slow and steady. Many software projects do not use the latest and greatest technology until it has been battle tested. Even when the time comes for a product to move to a newer solution, it can often take a while, especially if a large user base will be impacted. For that reason, we believe that learning the history of a technology and what it looked like in previous iterations is time well spent.
 
-**Designing for the tension between simplicity and accuracy**  
+**Designing for the tension between simplicity and accuracy**
+
 When developing educational material, especially for bitcoin, there is often an inherent tension between creating something easy to understand and something that is technically accurate. To tackle this challenge, we had to get creative and expand on the ways the game could communicate and interact with users. Design played a critical role in this, allowing us to unlock new ways of thinking so more learning material could be presented and absorbed in a way that was not overwhelming.
 
 Some places where this can be seen are:
@@ -198,10 +203,12 @@ Some places where this can be seen are:
 
 Despite all the benefits that design delivers to the user experience, it is still of the utmost importance  that every lesson goes through an in-depth review process. Every exercise has been thoroughly tested countless times by a number of contributors, including Bitcoin Core and lightning protocol developers.
 
-**Thorough review**  
+**Thorough review**
+
 One could create the best, most thoughtful, well designed learning material that follows a story and the job still wouldn’t be over. It is of the utmost importance that every lesson goes through an in-depth review process. For Saving Satoshi, each exercise was thoroughly tested countless times by a number of contributors, including Bitcoin Core and lightning protocol developers. This kind of testing resulted in many changes at nearly every point in the process. From the initial sketches of what an exercise would look like, to designing the wireframes, to actual implementation, to QA, we were always iterating to make sure the learning content was accurate, helpful to the player, and an overall good experience.
 
-**Made with educators in mind**  
+**Made with educators in mind**
+
 Saving Satoshi offers an exciting opportunity for educators that want to integrate bitcoin into their programs. While the game certainly has enough material on its own for a strong curriculum, each chapter is full of additional resources and links for those looking to dive deeper. One thing that has been saving a lot of time is instead of gathering individual resources, we often use [ChatBTC](https://chat.bitcoinsearch.xyz/) to provide additional context on a particular topic and to guide users to where they can get more information. ChatBTC formulates its answers from vetted sources like Optech, Delving Bitcoin, and the mailing lists, making us confident in the quality of service it provides. 
 
 By what could be considered a happy accident, the game itself follows a difficulty arc where chapters 1-3 are relatively easy before things kick up a notch. At the time of writing, chapter six supports two difficulty modes, normal and hard. A long term goal is to extend this to the rest of the game so Saving Satoshi can serve a wider audience without compromising on the quality of learning.
@@ -224,19 +231,22 @@ The game is also great for learning with friends, whether that’s in person or 
 
 ## 2. Story
 
-**Building a story around the words “Saving Satoshi”**  
+**Building a story around the words “Saving Satoshi”**
+
 Most stories are born from an idea. Few begin with just a title, and that is for good reason. Any writer will tell you that crafting a game’s entire storyline around a cool sounding phrase isn’t the best idea. This is because it’s difficult to work backwards and create an engaging, cohesive tale that leads to a very specific ending. Fortunately for Jonas who came up with the phrase “Saving Satoshi”, and unfortunately for our lead storywriter, the name “Saving Satoshi” was quickly set in stone due to a lack of writers at the project’s early stages. Thanks to this unusual decision, the Saving Satoshi storyline experienced no shortage or hurdles.
 
 From as far back as the first brainstorming sessions, it was established that the game was going to be set in the future against some kind of sci-fi epic. It only made sense then to incorporate a historic, but yet-to-happen bitcoin event, the mining of the last satoshi. Because bitcoin’s supply cap is so unique to its design, this event is a big deal. Making it the focal point of chapter one was straightforward and since, at the time, it was just for a hackathon, there wasn’t concern about how a story like this may end.
 
 Things quickly ramped up as work on chapters two and three began. It’s hard to write a story one chapter at a time, especially when it’s unclear where it’s all going. That’s when the team was fortunate enough to get help from Spiral in the form of one very talented lead storywriter that is rumored to actually be four cats behind a keyboard. With their help, a sketch started to form of what the full story would look like beyond chapter three. It was known that the game needed to end on a high note, with a sense of accomplishment that the player really did “save Satoshi”—even if “Satoshi” was more about the spirit that bitcoin was created on, and not the literal creator. That was the only story requirement. Everything else was fair game.
 
-**The plot thickens**  
+**The plot thickens**
+
 Before long, ideas started flowing. The Thomas Vanderpoole character, an antagonist previously named Dr. Greg B.S. Wrong, began to form. An initial version of the story [can be found here](https://youtu.be/ZX6oqDKzVx4?si=shPW3ac1AdAKxse_&t=35) in our submission video for the first Bolt.fun Legends of Lightning Hackathon in 2022. It’s a fascinating glimpse at how far the story and visuals have come. For the lead storywriter, it was important that Vanderpoole was not 100% evil villain and for him to have some humanizing qualities. Even better was if he could have a redemption arc. Players will see that as they learn more about Vanderpoole’s background and personal connection to bitcoin, they are better able to understand his actions, regardless of how disruptive they are to the bitcoin network.
 
 Another gem that came out of this phase is Holocat, a holographic cat that delivers clues and messages to the player. It took no time for her to earn the title of fan favorite, both internally with the team and with players. However all these new characters and ideas brought a big challenge. How can they all fit together and form a story that makes sense? If that isn’t difficult enough, the next question is how can the story be shaped around lesson content? Both tasks proved to be quite difficult but thankfully the lesson content was only scoped for a few chapters. For later material, the process was updated so the story and the lesson content were developed in partnership with each other.  
    
-**The final review**  
+**The final review**
+
 The story was able to move at a considerably faster pace than development and after many months, it was done in spring 2023. However, the *story* doesn’t end there. Fast forward a year and a half later to late summer 2024 when the final chapters of Saving Satoshi were under development. That’s when the story underwent a final review. This review took several months to complete as it contained a countless amount of edits and updates.
 
 While there weren’t any major changes to the plot, this final revision resulted in many smaller updates and one complete character redesign. User testing revealed that players wanted a more interesting character so after many rejected name proposals like Jessica Soup, Mike Ramen was replaced with the confident and adventurous Mika 3000.
@@ -252,7 +262,8 @@ While there weren’t any major changes to the plot, this final revision resulte
 
 A number of plot holes were also addressed at this time, some that had been there since the very beginning. These were cans that could no longer be kicked down the road, calling for deep collaboration between writers and bitcoin tech experts. Care had to be put into making sure the scenarios we were creating were not only technically sound, but that they still meaningfully drove the story forward. Many things were hashed out over phone calls and long comment threads.
 
-**World building**  
+**World building**
+
 An especially fun part of story writing is creating a universe unique to the game. The team had fun reciting Holocat’s sassy one liners, imagining what sitting at a ButtLift Hover Desk would be like, and agreeing that no one would ever think to look for Satoshi’s keys on a CD-ROM labeled *Creed – My Own Prison*. 
 
 The universe really came to life at the first Saving Satoshi workshop where swag was created to represent different elements of the game like logos for the mining groups featured in chapter 3 and holographic Holocat stickers.
@@ -272,6 +283,7 @@ The universe really came to life at the first Saving Satoshi workshop where swag
 While there were a number of things that didn’t make it into the final cut of the story these ideas have been saved for later releases. Look forward to a future update with a list of bitcoin themed cocktail drinks and much more!
 
 **Incorporating bitcoin culture and history**
+
 The story provides a unique opportunity to incorporate bits of bitcoin culture and history that not only enriches the overall game, but also balances out some of the more heavy technical material. Normally one would have to go to Twitter or Reddit to learn more about these topics, so it was great to be able to transmit this kind of information in a different way. Saving Satoshi is built by a team passionate about bitcoin. Bringing some bitcoin culture and history into the game yet another way to express that love.
 
 Mentions of bitcoin culture and history can be found all over the game. The very first exercise in the game is to find the secret message in the genesis block (“The Times 03/Jan/2009 Chancellor on brink of second bailout for banks”). At several points in the game “don’t trust, verify” is taken quite literally like chapter 8 when users compute block subsidies and check that the longest chain adheres to the rules. When bitcoin Script is introduced in chapter nine, Holocat delivers a message about the ```OP_CHECKMULTISIG``` bug in Satoshi’s code that pops an extra item off the stack. In chapter ten players meet a character named Laszlo, a nod to the famous Laszlo Hanyecz who bought two pizzas for 10,000 bitcoin in 2020. Even the spirit of the game, one where the protagonist can be anybody but still save bitcoin, echoes the popular saying, “We are all Satoshi”.
@@ -332,7 +344,8 @@ A big challenge in development has been thinking about incrementing difficulty a
 
 We found creating new and unique components important to keeping the experience interesting while trying to keep development time as low as possible.
 
-**Supporting new contributors**  
+**Supporting new contributors**
+
 Lastly is in creating an educational platform we have been trying to reduce the friction as much as possible for new contributors. While we are not directly a bitcoin app or program, we are a touch point for a lot of new bitcoin developers. It’s important to us that we do what we can to set new folks up for success, especially if one of our project goals is to create long term participants in the ₿OSS ecosystem. What some of this looks like in practice is having detailed templates for bug reports and feature requests, maintaining good documentation in the project’s README for things like how to run the code locally, and quickly responding to users as well as potential contributors over Discord and social media. It’s been a pleasure to see players do things like file GitHub issues and open PRs for translations for a number of different languages like Brazilian Portuguese and French. We look forward to continuing to welcome more contributors!
 
 {% include picture.html
@@ -371,10 +384,10 @@ The scope was to test only one chapter per interview. To avoid influencing them,
 
 We also tested a variety of hypotheses across the verticals of demographics, UI, UX, and lesson content such as:
 
-- Demographics: This game is engaging enough for Senior Developers to continue playing.  
-- UI: Tooltip pop-ups triggered by a hovering mouse are intuitive.  
-- UX: This clue that appears after three failed challenge attempts will help the user move on to the next step.  
-- Lesson content: This topic and challenge won’t be too difficult for a beginner developers.
+- **Demographics:** This game is engaging enough for Senior Developers to continue playing.  
+- **UI:** Tooltip pop-ups triggered by a hovering mouse are intuitive.  
+- **UX:** This clue that appears after three failed challenge attempts will help the user move on to the next step.  
+- **Lesson content:** This topic and challenge won’t be too difficult for a beginner developers.
 
 These interviews were then summarized and shared with the team.
 
@@ -393,15 +406,19 @@ All in all, the product team had several different sources of data and feedback 
 Chapter 10 may be a major milestone for Saving Satoshi, but the project is far from over! At the time of writing, December 2024, there are still many things the team has planned for future releases. From design, to learning content, to community, these ideas are not confined to just one aspect of the project and instead span across many facets of the game.
 
 **Difficulty levels**
+
 One of the larger items on the to-do list is support for difficulty levels. In an ideal world, Saving Satoshi would be able to accommodate a variety of learners but currently, a solid understanding of how to code is a major requirement. It would be nice to one day support people that are just getting started and are new to coding. Conversely, it would also be great to make advanced exercises for those looking for more of a challenge. This has been implemented to some degree by sometimes moving hints to a separate help page, but there is so much more that can be done. At the moment, chapter six supports two difficulty modes (normal and hard). This was initially implemented as a proof-of-concept and the team looks forward to extending this functionality to other chapters.
 
 **Movie trailer**
+
 On the design and marketing front, a big dream is to do a movie trailer (here’s an [early exploration](https://www.youtube.com/watch?v=EW6tmJMNc5g) from 2023) and poster. When the project first began, the AI image and video generation tools were nowhere near where they had to be to support something like this. A lot has changed in the last two years! Even just over the last few months, the design team has made some very impressive short clips to demonstrate what the technology today is capable of. It’s only going to get better and as it does, the possibility of a movie trailer becomes more likely.
 
-**Community involvement**  
+**Community involvement**
+
 In terms of community, the team would like to put more effort towards tapping into the larger bitcoin and software engineering ecosystems to share the game and partner with neighboring groups. More educator tools like a guide for individuals that want to run Saving Satoshi workshops or a comprehensive list of topics that the game covers would help with this initiative.
 
-**Puzzles and interactive content**  
+**Puzzles and interactive content**
+
 The team would like to continue exploring ways to make learning bitcoin tech fun, specifically through more interactive, puzzle-like exercises. This has been one of the project’s goals from the start and it’s one where there is always room for more ideas. The hope is now that version 1 of the game is out, there is bandwidth to iterate on some chapters and find additional ways to creatively engage with the player.
 
 ## Conclusion
