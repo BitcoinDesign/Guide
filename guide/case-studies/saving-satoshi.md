@@ -321,6 +321,8 @@ A second challenge was to create a learning experience that started gentle, and 
    layout = "full-width"
 %}
 
+Third, it was important for the team to support smartphones. Many people around the world have one computer - their phone. A separate navigation and layout logic was designed to accommodate both mobile users and give them full access to the whole experience.
+
 To peek into the design process, you can find the main design file [here](https://www.figma.com/design/LqjK3Tpvd9KJ4buFArCJBQ/Saving-Satoshi?node-id=0-1&t=hKCIATRVZnYLooMh-1). The process for image generation is documented [here](https://www.figma.com/design/0Fg2IiEbLI5o8juawKqkJM/Saving-Satoshi-images?node-id=407-2995&t=3iZ1Yh3n3bOCcBaM-1). Plus, Christoph created [various recordings](https://www.youtube.com/@germanysbestkeptsecret/search?query=saving%20satoshi) of the design process.
 
 ## 4. Development
