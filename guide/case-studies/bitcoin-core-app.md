@@ -240,6 +240,6 @@ Next, view the [resources]({{ '/guide/resources' | relative_url }}) that can hel
 {% include next-previous.html
    previousUrl = "/guide/case-studies/walletscrutiny/"
    previousName = "WalletScrutiny"
-   nextUrl = "/guide/resources/"
-   nextName = "Resources"
+   nextUrl = "/guide/case-studies/saving-satoshi/"
+   nextName = "Saving Satoshi"
 %}

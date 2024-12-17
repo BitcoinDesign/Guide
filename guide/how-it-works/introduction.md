@@ -111,8 +111,8 @@ An explainer for the different techniques for stabilizing bitcoin againts other 
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/multiple-wallets/"
-   previousName = "Multiple wallets"
+   previousUrl = "/guide/case-studies/saving-satoshi/"
+   previousName = "Saving Satoshi"
    nextUrl = "/guide/how-it-works/backups/"
    nextName = "Bitcoin backups"
 %}
