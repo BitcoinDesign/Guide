@@ -211,7 +211,7 @@ Explanations of various technical aspects of bitcoin and lightning.
 
 <h2 class="h3" markdown="1">[Case studies]({{ '/guide/case-studies/' | relative_url }})</h2>
 
-Collaboration summaries including [Blixt Wallet]({{ '/guide/case-studies/blixt-wallet/' | relative_url }}), [Payjoin]({{ '/guide/case-studies/payjoin/' | relative_url }}), [WalletScrutiny]({{ '/guide/case-studies/walletscrutiny/' | relative_url }}), and [Bitcoin Core App]({{ '/guide/case-studies/bitcoin-core-app/' | relative_url }}).
+Collaboration summaries including [Blixt Wallet]({{ '/guide/case-studies/blixt-wallet/' | relative_url }}), [Payjoin]({{ '/guide/case-studies/payjoin/' | relative_url }}), [WalletScrutiny]({{ '/guide/case-studies/walletscrutiny/' | relative_url }}), [Bitcoin Core App]({{ '/guide/case-studies/bitcoin-core-app/' | relative_url }}), and [Saving Satoshi]({{ '/guide/case-studies/saving-satoshi/' | relative_url }}).
 
 ---
 

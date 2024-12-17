@@ -444,8 +444,8 @@ A full list of code contributors can be found [on GitHub](https://github.com/sav
 Next, view the [resources]({{ '/guide/resources' | relative_url }}) that can help you build better bitcoin products.
 
 {% include next-previous.html
-   previousUrl = "/guide/case-studies/walletscrutiny/"
-   previousName = "WalletScrutiny"
-   nextUrl = "/guide/resources/"
-   nextName = "Resources"
+   previousUrl = "/guide/case-studies/bitcoin-core-app/"
+   previousName = "Bitcoin Core App"
+   nextUrl = "/guide/how-it-works/"
+   nextName = "How it works"
 %}

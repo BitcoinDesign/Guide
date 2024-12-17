@@ -46,7 +46,7 @@ An iniative to redesign the first bitcoin wallet ever.
 
 ### [Saving Satoshi]({{ '/guide/case-studies/saving-satoshi' | relative_url }})
 
-...
+An interactive game set that makes learning Bitcoin development engaging through storytelling and hands-on challenges. From mining to the Lightning Network, this unique educational project combines technical learning with narrative elements to onboard new bitcoin developers.
 
 ---
 
