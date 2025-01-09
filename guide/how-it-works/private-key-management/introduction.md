@@ -76,8 +76,8 @@ A wallet that is managed by multiple independent keys, of which at least one is 
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/how-it-works/payment-request-formats/"
-   previousName = "Payment request formats"
+   previousUrl = "/guide/how-it-works/human-readable-addresses/"
+   previousName = "Human readable addresses"
    nextUrl = "/guide/how-it-works/private-key-management/overview/"
    nextName = "Overview"
 %}
