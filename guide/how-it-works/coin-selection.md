@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Coin Selection
+title: Coin selection
 description: A primer on how UTXOs are chosen to fund new bitcoin transactions.
 nav_order: 2
 parent: How it works
@@ -24,7 +24,7 @@ main_classes: -no-top-padding
 
 # Coin selection
 
-Coin selection is the process of choosing which [UTXOs](https://bitcoin.design/guide/glossary/#unspent-transaction-output-utxo) (or “coins”) to use as inputs when making an on-chain bitcoin payment. For payments on the lightning network, coin selection is only relevant for the transaction that opens the lightning channel.
+Coin selection is the process of choosing which [UTXOs]({{ '/guide/glossary/#unspent-transaction-output-utxo' | relative_url }}) (or “coins”) to use as inputs when making an on-chain bitcoin payment. For payments on the lightning network, coin selection is only relevant for the transaction that opens the lightning channel.
 
 Coin selection can be [**automatic**](#automatic-coin-selection), and handled by the wallet application. Or it can be [**manual**](#manual-coin-selection-aka-coin-control), letting the user control which coins are used.
 

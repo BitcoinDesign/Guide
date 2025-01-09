@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Lightning Services
+title: Lightning services
 description: Third party services that solve common user experience problems when connecting to and using the lightning network.
 nav_order: 4
 parent: How it works

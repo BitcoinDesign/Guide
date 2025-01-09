@@ -212,11 +212,11 @@ https://www.figma.com/file/uxZMdWR2HfnKSMC9YWyr2h/Time-based-recovery?type=desig
 
 ---
 
-In this reference design, we look at a variation of the [savings wallet reference design](https://bitcoin.design/guide/savings-wallet/). Specifically, we design a wallet application that allows users to enable a simple recovery path in order to provide even more fault tolerance than a regular multi-key wallet. 
+In this reference design, we look at a variation of the [savings wallet reference design]({{ '/guide/savings-wallet/' | relative_url }}). Specifically, we design a wallet application that allows users to enable a simple recovery path in order to provide even more fault tolerance than a regular multi-key wallet. 
 
 ### Prior reading
 
-The use case for this design is relatively simple. However, we will be referencing some advanced bitcoin concepts and capabilities that are provided by [Miniscript](https://bitcoin.design/guide/glossary/#miniscript). If you are unfamiliar with the topic, please read the [custom spending conditions page](https://bitcoin.design/guide/how-it-works/custom-spending-conditions/) before diving deeper into this reference design.
+The use case for this design is relatively simple. However, we will be referencing some advanced bitcoin concepts and capabilities that are provided by [Miniscript]({{ '/guide/glossary/#miniscript' | relative_url }}). If you are unfamiliar with the topic, please read the [custom spending conditions page]({{ '/guide/how-it-works/custom-spending-conditions/' | relative_url }}) before diving deeper into this reference design.
 
 ### Use case
 
@@ -230,7 +230,7 @@ Below is a description of the high-level phases involved in setting up and using
 
 1. Wallet creation
     -  Choose the primary key scheme used for spending under normal circumstances (2-of-3 in our case).
-    -  Register the signing devices to the wallet by importing the three [extended public keys keys](https://bitcoin.design/guide/glossary/#extended-public-key-xpub-ypub-zpub).
+    -  Register the signing devices to the wallet by importing the three [extended public keys keys]({{ '/guide/glossary/#extended-public-key-xpub-ypub-zpub' | relative_url }}).
     - Enable the recovery path.
 2. Wallet backup
 3. Cosigner onboarding
@@ -251,7 +251,7 @@ The following [prototype](https://www.figma.com/proto/uxZMdWR2HfnKSMC9YWyr2h/Tim
 
 ### Creating the wallet
 
-The process for creating the wallet is very similar to the one that is covered in the [savings wallet reference design](https://bitcoin.design/guide/savings-wallet/#the-onboarding-experience). The main differences for this design is that all signing keys are hardware wallets (external signers) and that our application offers a recovery path.
+The process for creating the wallet is very similar to the one that is covered in the [savings wallet reference design]({{ '/guide/savings-wallet/#the-onboarding-experience' | relative_url }}). The main differences for this design is that all signing keys are hardware wallets (external signers) and that our application offers a recovery path.
 
 #### The primary key scheme
 
@@ -313,13 +313,13 @@ A less convenient but more trustless way would be for Alice to configure the wal
 
 ### Spending from the wallet
 
-Creating transactions and spending from the wallet works like with any other multi-key wallet. We have covered how this works on the [savings wallet reference design](https://bitcoin.design/guide/savings-wallet/#making-small-payments), if you would like to learn more.  
+Creating transactions and spending from the wallet works like with any other multi-key wallet. We have covered how this works on the [savings wallet reference design]({{ '/guide/savings-wallet/#making-small-payments' | relative_url }}), if you would like to learn more.  
 
 ### Managing the recovery path
 
-As mentioned above, recovery paths are powered by timelocks. Technically, however, these timelocks are not applied at the wallet level but at the [UTXO](https://bitcoin.design/guide/glossary/#unspent-transaction-output-utxo) level. This means that every UTXO has its own timelock, based on the time when it was deposited into the wallet. 
+As mentioned above, recovery paths are powered by timelocks. Technically, however, these timelocks are not applied at the wallet level but at the [UTXO]({{ '/guide/glossary/#unspent-transaction-output-utxo' | relative_url }}) level. This means that every UTXO has its own timelock, based on the time when it was deposited into the wallet. 
 
-To prevent the recovery path from kicking in and refreshing the timelock, a UTXO has to be spent and re-deposited back into the wallet. Please refer to the [custom spending conditions page](https://bitcoin.design/guide/how-it-works/custom-spending-conditions/) for more information about how timelocks work. 
+To prevent the recovery path from kicking in and refreshing the timelock, a UTXO has to be spent and re-deposited back into the wallet. Please refer to the [custom spending conditions page]({{ '/guide/how-it-works/custom-spending-conditions/' | relative_url }}) for more information about how timelocks work. 
  
 
 ##### Preventing recovery path activation
@@ -332,7 +332,7 @@ This allows us to show only one timelock, which makes it easier to understand fo
 
 {% include image-gallery.html pages = page.images_prevent-unlock %}
 
-To give users additional flexibility, our application allows them to selectively manage the refresh behavior for individual UTXOs via the advanced options feature. This is similar to the [coin control](https://bitcoin.design/guide/glossary/#coin-control) functionality available in many wallet applications. 
+To give users additional flexibility, our application allows them to selectively manage the refresh behavior for individual UTXOs via the advanced options feature. This is similar to the [coin control]({{ '/guide/glossary/#coin-control' | relative_url }}) functionality available in many wallet applications. 
 
 ##### Resetting an activated recovery path
 
@@ -388,6 +388,6 @@ If Bob wants to replace one of the signing devices he can use the new device wit
 {% include next-previous.html
    previousUrl = "/guide/savings-wallet/"
    previousName = "Savings wallet"
-   nextUrl = "/guide/upgradeable-wallet/"
-   nextName = "Upgradeable wallet"
+   nextUrl = "/guide/inheritance-wallet/"
+   nextName = "Inheritance wallet"
 %}

@@ -2,7 +2,7 @@
 layout: guide
 title: Shared wallet
 description: Bitcoin wallet design reference design for wallets managed together by multiple owners.
-nav_order: 7
+nav_order: 8
 permalink: /guide/shared-wallet/
 redirect_from:
  - /guide/case-studies/shared-account/

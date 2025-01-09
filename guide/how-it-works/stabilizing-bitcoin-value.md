@@ -2,7 +2,7 @@
 layout: guide
 title: Stabilizing bitcoin value
 description:
-nav_order: 13
+nav_order: 14
 parent: How it works
 permalink: /guide/how-it-works/stabilizing-bitcoin-value/
 main_classes: -no-top-padding
@@ -40,7 +40,7 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 
 ---
 
-The price of bitcoin can wildly fluctuate relative to government-issued currencies (also called [fiat currencies](https://bitcoin.design/guide/glossary/#fiat)). For a user whose primary use is building up savings over the long-term, this might not be an issue. For example, they may be more interested in the price of bitcoin relative to the Euro in 10 years rather than the price tomorrow morning.
+The price of bitcoin can wildly fluctuate relative to government-issued currencies (also called [fiat currencies]({{ '/guide/glossary/#fiat' | relative_url }})). For a user whose primary use is building up savings over the long-term, this might not be an issue. For example, they may be more interested in the price of bitcoin relative to the Euro in 10 years rather than the price tomorrow morning.
 
 However, for a user who hopes to use bitcoin for daily spending or remittances, the volatility is a problem. Suppose Alice lives paycheck to paycheck. If she is paid in bitcoin, even a relatively small decrease in the price could make her unable to pay her Euro-denominated bills each month.
 

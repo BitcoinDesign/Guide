@@ -191,7 +191,7 @@ Although every application will have its own unique interface, there are certain
 
 Connecting to the bitcoin or lightning network should be as trust-minimized and privacy preserving as possible. While it is convenient when applications provide their own node connection, it is beneficial to allow users to connect to a trusted node or their own self-hosted bitcoin or lightning node.
 
-Having the option to choose how that data is queried, say using [Neutrino over SPV](https://bitcoin.design/guide/glossary/node/#light-nodes), should also be an option. This results in better network [decentralization](https://bitcoin.design/guide/getting-started/principles/#decentralization), and has privacy and [security](https://bitcoin.design/guide/getting-started/principles/#security) benefits for users.
+Having the option to choose how that data is queried, say using [Neutrino over SPV]({{ '/guide/glossary/node/#light-nodes' | relative_url }}), should also be an option. This results in better network [decentralization]({{ '/guide/getting-started/principles/#decentralization' | relative_url }}), and has privacy and [security]({{ '/guide/getting-started/principles/#security' | relative_url }}) benefits for users.
 
 If your application uses the lightning network, users should be running their own lightning node. However, there are certain aspects of a lightning node that can be outsourced, such as creating inbound liquidity from an LSP or constructing payment paths.
 

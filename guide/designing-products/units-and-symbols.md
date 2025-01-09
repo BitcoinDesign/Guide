@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Units & Symbols
+title: Units & symbols
 description: How to display and format bitcoin and currency units in bitcoin applications.
 nav_order: 7
 parent: Designing bitcoin products
@@ -48,10 +48,10 @@ amount of different notation standards around the world, it focuses on bitcoin.
 Illustration sources
 
 Header image
-- https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=1642%3A19055
+https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?node-id=1642%3A19055
 
 Content images
-- https://www.figma.com/file/VB3GQdAnhl8yta44DY3PSV/Bitcoin-Wallet-UI-Kit?node-id=2318%3A61126
+https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrations-CO?type=design&node-id=2927%3A22418&mode=design&t=xChdzUaoR55o941e-1
 
 -->
 
@@ -79,9 +79,9 @@ Bitcoin is most commonly expressed as BTC (bitcoin) or sat (satoshi), with 1 bit
 | ------------ | ------------ | ----------------- |
 | bitcoin      | BTC or ₿     | 1                 |
 | millibit     | mBTC         | 0.001             |
-| bit          | μBTC         | 0.000 001         |
-| satoshi      | sat          | 0.00 000 001      |
-| millisatoshi | msat         | 0.00 000 000 001  |
+| bit          | μBTC         | 0.000&thinsp;001         |
+| satoshi      | sat          | 0.00&thinsp;000&thinsp;001      |
+| millisatoshi | msat         | 0.00&thinsp;000&thinsp;000&thinsp;001  |
 
 For more information, see the Bitcoin Wiki:
 
@@ -151,8 +151,8 @@ For uneven values, you can round to two non-zero digits and add ~ to indicate ro
 ##### Satcomma
 
 The "Satcomma standard" (well explained by [Mark Nugent](https://medium.com/@mark.nugent.iv/grouping-bitcoins-fractional-digits-an-idea-whose-time-has-come-22d9dad8ac51) and [ProgrammableTX](https://medium.com/coinmonks/the-satcomma-standard-89f1e7c2aede)) is a proposal that suggests adjustment of digit group separators for better readability of small bitcoin fractions, as follows:
-- `0.000 250 00 bitcoin`
-- `0.00 025 000 bitcoin`
+- `0.000 250 00 bitcoin`
+- `0.00 025 000 bitcoin`
 
 Starting the grouping from the right side makes it easier to identify the Satoshi value, which is in this example 25 000. As there is no clear consensus around this proposal, it is up to designers to decide whether this is appropriate for their audience.
 
@@ -180,7 +180,7 @@ Type choices, spacing, color, and other details also affect the ease at which us
    height = 198
 %}
 
-Clearly separating digit groups with spacing and/or color can help more quickly understand how large or small a number is.
+Clearly separating digit groups with a [thin space](https://en.wikipedia.org/wiki/Thin_space) and/or color can help more quickly understand how large or small a number is.
 
 ### Monospace fonts
 
@@ -194,7 +194,7 @@ Clearly separating digit groups with spacing and/or color can help more quickly 
    height = 198
 %}
 
-Proportional fonts adjust the spacing of characters for legibility, which is ideal in most situations. Characters in monospace fonts are of equal width, establishing consistency across lines.
+Proportional fonts adjust the spacing of characters for legibility, which is ideal in most situations. Characters in monospace fonts are of equal width, establishing consistency across lines, which can be helpful in comparing numbers more easily.
 
 ### Trailing zeros
 

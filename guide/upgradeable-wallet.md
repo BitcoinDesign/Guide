@@ -2,7 +2,7 @@
 layout: guide
 title: Upgradeable wallet
 description: UX reference design for a bitcoin wallet with multiple private key management schemes.
-nav_order: 6
+nav_order: 7
 permalink: /guide/upgradeable-wallet/
 redirect_from:
  - /guide/case-studies/upgradeable-wallet/
@@ -99,8 +99,8 @@ The screens below show how this architecture allows users to get onboarded quick
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/savings-wallet/time-based-recovery/"
-   previousName = "Time-based recovery"
+   previousUrl = "/guide/inheritance-wallet/making-changes/"
+   previousName = "Making changes"
    nextUrl = "/guide/shared-wallet/"
    nextName = "Shared wallet"
 %}

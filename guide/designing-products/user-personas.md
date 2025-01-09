@@ -1,12 +1,38 @@
 ---
 layout: guide
 title: User personas
-description: How to use bitcoin user personas to build better products
+description: How to use bitcoin user personas to build better products, including several bitcoin-specific personas
 parent: Designing bitcoin products
 nav_order: 4
 permalink: /guide/designing-products/user-personas/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/designing-products/user-personas/user-personas-preview.jpg
+image_base: /assets/images/guide/designing-products/user-personas/
+images_coinbits_personas:
+    - file: coinbits-persona-eric
+      modalImage: coinbits-persona-eric-big
+      modalWidth: 2000
+      modalHeight: 1250
+      alt: Persona sheet of Erik describing personal situation, personal goals, motivations, jobs-to-be-done, and favorite brands.
+      caption: Erik, account manager from Columbus, Ohio.
+    - file: coinbits-persona-mukhtar
+      modalImage: coinbits-persona-mukhtar-big
+      modalWidth: 2000
+      modalHeight: 1250
+      alt: Persona sheet of Mukhtar describing personal situation, personal goals, motivations, jobs-to-be-done, and favorite brands.
+      caption: Mukhtar, non-profit director from Chicago, Illinois.
+    - file: coinbits-persona-andrew
+      modalImage: coinbits-persona-andrew-big
+      modalWidth: 2000
+      modalHeight: 1250
+      alt: Persona sheet of Andrew describing personal situation, personal goals, motivations, jobs-to-be-done, and favorite brands.
+      caption: Andrew, financial analyst from Irvine, California.
+    - file: coinbits-persona-jonny
+      modalImage: coinbits-persona-jonny-big
+      modalWidth: 2000
+      modalHeight: 1250
+      alt: Persona sheet of Jonny describing personal situation, personal goals, motivations, jobs-to-be-done, and favorite brands.
+      caption: Jonny, fire chief from Flagstaff, Arizona.
 ---
 
 <!--
@@ -33,10 +59,19 @@ https://www.figma.com/community/file/1118899250147680107
 %}
 
 # User personas
+{:.no_toc}
+---
+
+<div class="glossary-toc" markdown="1">
+* Table of contents
+{:toc}
+</div>
+
+---
 
 A persona is a fictitious person that we imagine uses our application. It may include a name, age, profession, location, life situation, preferences, dislikes, etc. The goal is to get away from purely thinking about technology or features during design and look through the lens of a person that ideally closely resembles our actual users. Bitcoin products can best be developed by having one or more specific persons in mind, so that the features and interface will match their needs as closely as possible.
 
-One could imagine a wallet for a non-native English speaker based in El Salvador versus a wallet being used daily by a university student in Europe. These would best include UX considerations based on these people's [use cases](https://bitcoin.design/guide/designing-products/personal-finance/), which could be quite different. One person might be more interested in using their wallet to save, whereas the other might want to pay for a coffee now and then. If we design the wallet with the priorities of our personas in mind, it is more likely to meet their expectations and creates a smoother, more appropriate user experience.
+One could imagine a wallet for a non-native English speaker based in El Salvador versus a wallet being used daily by a university student in Europe. These would best include UX considerations based on these people's [use cases]({{ '/guide/designing-products/personal-finance/' | relative_url }}), which could be quite different. One person might be more interested in using their wallet to save, whereas the other might want to pay for a coffee now and then. If we design the wallet with the priorities of our personas in mind, it is more likely to meet their expectations and creates a smoother, more appropriate user experience.
 
 [Alan Cooper](https://en.wikipedia.org/wiki/Alan_Cooper) initially developed personas in the early 80s to help designers gain more empathy for the people who would eventually use the software they were designing.
 
@@ -44,14 +79,14 @@ One could imagine a wallet for a non-native English speaker based in El Salvador
 >
 > <cite>By <a href="https://uxplanet.org/how-to-create-personas-step-by-step-guide-303d7b0d81b4">UX Planet</a></cite>
 
-## How can personas help us build better products?
+### How can personas help us build better products?
 
 - They help us build empathy and allow us to understand what a user's needs and expectations are when using a product.
 - They can help to shape the product strategy; for example, we can prioritise feature requests based on our core personas' needs.
 - They help us to understand negative experiences that users might have had with other products. We can then use this information to differentiate our product from competitors.
 - They ensure that we, as designers, create products for real users and not design for ourselves.
 
-## How to build user personas
+### How to build user personas
 User personas can be created by simply speaking to users of our product. We can connect to these people by doing user interviews and surveys.
 
 A list of questions we can ask:
@@ -68,7 +103,7 @@ A list of questions we can ask:
 _The above questions around bitcoin personas were created during a UX Research [community call](https://www.youtube.com/watch?v=PSHJzIsEzKA) focused on personas and captured in a [Figma file](https://www.figma.com/file/7g3FRoxzXnNJwzY1lbKzU2/Bitcoin-Design-guide-Personas?node-id=0%3A1)._
 
 
-# Bitcoin user personas
+## Bitcoin user personas
 Patrícia Estevão developed several personas of bitcoin users based on 1-1 interview sessions. You can read about her full [process here](https://patestevao.com/work/bitcoin-ux-research). These personas can be a great inspiration and foundation for your own work. Here we provide short summaries for you to get started with.
 
 ### Musa: The one for whom Bitcoin fits right in
@@ -209,6 +244,12 @@ Patrícia Estevão developed several personas of bitcoin users based on 1-1 inte
    height = 438
    layout = "full-width"
 %}
+
+## Coinbits personas
+
+The [Coinbits](https://coinbits.app) team created several US-focused personas as part of a [Summer of Bitcoin](http://summerofbitcoin.org) project. Find out more about it [here](https://coinbits.app/bitcoin-personas).
+
+{% include image-gallery.html pages = page.images_coinbits_personas %}
 
 ---
 

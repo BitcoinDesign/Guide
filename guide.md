@@ -159,6 +159,19 @@ How to design for use cases where it is important to manage multiple wallets in 
 </div>
 </div>
 
+{% include image.html
+   image = "/assets/images/guide/inheritance-wallet.png"
+   retina = "/assets/images/guide/inheritance-wallet@2x.png"
+   alt-text = "A mobile mockup for a lng-term savings wallet with inheritance features"
+   width = 1600
+   height = 840
+   link-url = "/guide/inheritance-wallet/"
+%}
+
+<h2 class="h3" markdown="1">[Inheritance wallet]({{ '/guide/inheritance-wallet/' | relative_url }})</h2>
+
+An in-depth exploration of a multi-key wallet designed for long-term savings and inheritance. It covers everything from wallet creation, backup, change management and succession.
+
 ---
 
 <h2 class="h3" markdown="1">[How it works]({{ '/guide/how-it-works/' | relative_url }})</h2>
@@ -172,19 +185,33 @@ Explanations of various technical aspects of bitcoin and lightning.
 [Automatic cloud backup]({{ '/guide/how-it-works/private-key-management/cloud-backup/' | relative_url }})<br />
 [Manual backup]({{ '/guide/how-it-works/private-key-management/manual-backup/' | relative_url }})<br />
 [External signers]({{ '/guide/how-it-works/private-key-management/external-signers/' | relative_url }})<br />
-[Multi-key]({{ '/guide/how-it-works/private-key-management/multi-key/' | relative_url }})
-
-</div>
-<div class="column" markdown="1">
-
+[Multi-key]({{ '/guide/how-it-works/private-key-management/multi-key/' | relative_url }})<br />
 [Bitcoin backups]({{ '/guide/how-it-works/backups/' | relative_url }})<br />
 [Payment request formats]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }})<br />
 [Coin selection]({{ '/guide/how-it-works/coin-selection/' | relative_url }})<br />
 [Nodes]({{ '/guide/how-it-works/nodes/' | relative_url }})<br />
-[Transactions]({{ '/guide/how-it-works/transactions/' | relative_url }})
+
+</div>
+<div class="column" markdown="1">
+
+[Transactions]({{ '/guide/how-it-works/transactions/' | relative_url }})<br />
+[Wallet privacy]({{ '/guide/how-it-works/wallet-privacy/' | relative_url }})<br />
+[Wallet selector]({{ '/guide/how-it-works/wallet-selector/' | relative_url }})<br />
+[Custom spending conditions]({{ '/guide/how-it-works/custom-spending-conditions/' | relative_url }})<br />
+[Stabilizing bitcoin value]({{ '/guide/how-it-works/stabilizing-bitcoin-value/' | relative_url }})<br />
+[Lightning liquidity]({{ '/guide/how-it-works/liquidity/' | relative_url }})<br />
+[Lightning services]({{ '/guide/how-it-works/lightning-services/' | relative_url }})<br />
+[Sign in with bitcoin]({{ '/guide/how-it-works/sign-in-with-bitcoin/' | relative_url }})<br />
+[Silent payments]({{ '/guide/how-it-works/silent-payments/' | relative_url }})<br />
 
 </div>
 </div>
+
+---
+
+<h2 class="h3" markdown="1">[Case studies]({{ '/guide/case-studies/' | relative_url }})</h2>
+
+Collaboration summaries including [Blixt Wallet]({{ '/guide/case-studies/blixt-wallet/' | relative_url }}), [Payjoin]({{ '/guide/case-studies/payjoin/' | relative_url }}), [WalletScrutiny]({{ '/guide/case-studies/walletscrutiny/' | relative_url }}), [Bitcoin Core App]({{ '/guide/case-studies/bitcoin-core-app/' | relative_url }}), and [Saving Satoshi]({{ '/guide/case-studies/saving-satoshi/' | relative_url }}).
 
 ---
 

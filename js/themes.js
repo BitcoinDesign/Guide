@@ -328,6 +328,53 @@ var themes = [
         name: "Susrita Chatterjee",
         link: "https://github.com/BitcoinDesign/Guide/issues/688"
     }
+  },
+  {
+    // Here Comes Bitcoin
+    logo: {
+        path: "/assets/bitcoin-design-community-banner.svg",
+        fillColor: "#F7931A",
+        outlineColor: "#000"
+    },
+    title: {
+        fillColor: "#000",
+        outlineColor: "transparent"
+    },
+    description: {
+        fillColor: "#000"
+    },
+    button1: {
+        fillColor: "#70B6C3",
+        outlineColor: "#000",
+        labelFillColor: "#FFF"
+    },
+    button2: {
+        fillColor: "#F7931A",
+        outlineColor: "#000",
+        labelFillColor: "#FFF"
+    },
+    background: {
+        path: '',
+        pathRetina: '',
+        pathMobile: '',
+        pathMobileRetina: '',
+        backgroundColor: "#FFFFFF"
+    },
+    copy: {
+        backgroundColor: ''
+    },
+    image: {
+        path: 'url("/assets/images/home/banner/HCB-Banner.png")',
+        pathRetina: 'url("/assets/images/home/banner/HCB-Banner@2x.png")',
+        pathMobile: 'url("/assets/images/home/banner/HCB-Banner-Mobile.png")',
+        pathMobileRetina: 'url("/assets/images/home/banner/HCB-Banner-Mobile@2x.png")',
+        backgroundColor: ""
+    },
+    flipLayoutOnMobile: true,
+    author: {
+        name: "Sushant Faujdar and Abhijay Jain",
+        link: "https://github.com/BitcoinDesign/Guide/issues/1110"
+    }
   }
 ];
 

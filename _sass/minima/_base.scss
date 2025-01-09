@@ -607,7 +607,7 @@ a.skip-to-content-link {
   border-bottom-right-radius: 5px;
   transition: transform 150ms $ease;
 
-  &:focus {
+  &:focus-visible {
     transform: translate(-50%, 0%);
   }
 }

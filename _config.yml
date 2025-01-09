@@ -31,6 +31,8 @@ slack_invite_url: "https://join.slack.com/t/bitcoindesign/shared_invite/zt-1rxp5
 discord_invite_url: "https://discord.gg/K7aQ5PErht"
 youtube_url: "https://www.youtube.com/c/BitcoinDesign"
 twitter_url: "https://twitter.com/bitcoin_design"
+nostr_url: "https://nosta.me/_@bitcoin.design"
+bitcoin_tv_url: "https://bitcointv.com/c/bitcoindesign/videos"
 
 # Build settings
 theme: minima

@@ -1,8 +1,8 @@
 ---
 layout: guide
-title: Custom Spending Conditions
+title: Custom spending conditions
 description: An overview about advanced capabilities that enable users to create more flexible bitcoin wallets.
-nav_order: 12
+nav_order: 13
 parent: How it works
 permalink: /guide/how-it-works/custom-spending-conditions/
 main_classes: -no-top-padding
@@ -46,13 +46,13 @@ In addition to these standard configurations it is also possible to create more 
 
 #### Self-custody
 
-Custom spending conditions can be helpful to decrease the risk of losing funds in personal self-custody context. Let's say that you have a wallet that you use regularly on a weekly basis. You could unlock a recovery spending condition automatically if that wallet has not been used for more than six months, because it's likely that you have lost access to your primary key. The recovery condition could contain an additional key held in a different location. Such a setup does not decrease the wallet security, because the second key is locked under normal circumstances of using the wallet. 
+Custom spending conditions can be helpful to decrease the risk of losing funds in personal self-custody context. Let's say that you have a wallet that you use regularly on a weekly basis. You could unlock a recovery spending condition automatically if that wallet has not been used for more than six months, because it's likely that you have lost access to your primary key. The recovery condition could contain an additional key held in a different location. Such a setup does not decrease the wallet security, because the second key is locked under normal circumstances of using the wallet.
 
 In a multi-key context, the recovery condition could require only one instead of two keys to spend funds after 6 months of inactivity. This will help mitigate the risk of loss of funds in case one key holder loses a key.
 
 #### Company treasuries
 
-Custom spending conditions can also be useful in an organizational context. Companies need to make sure that they retain access to funds even if one or more employees lose their keys. Not only that, employees could also be compromised by a third party or try to obstruct the deployment of funds for their own benefit. Another use case is that a company needs to implement company-specific processes for corporate spending. For example, they would want to create a rule that the CFO must sign transactions for treasury management. 
+Custom spending conditions can also be useful in an organizational context. Companies need to make sure that they retain access to funds even if one or more employees lose their keys. Not only that, employees could also be compromised by a third party or try to obstruct the deployment of funds for their own benefit. Another use case is that a company needs to implement company-specific processes for corporate spending. For example, they would want to create a rule that the CFO must sign transactions for treasury management.
 
 
 ## Building blocks
@@ -106,19 +106,19 @@ One important thing to note is that, once unlocked, spending conditions always r
 
 ### Wallet creation and setup
 
-Similar to regular multi-key wallets, a software wallet application or coordination software initiates a multi-key wallet, choosing the number of total keys, and the number of keys required to sign transactions (called threshold). You then add [extended public keys](https://bitcoin.design/guide/glossary/#extended-public-key-xpub-ypub-zpub) (XPUBs) from other wallets generated elsewhere to the multisig after which the software wallet can complete the creation process. Please refer to the [Multi-key](/guide/how-it-works/private-key-management/multi-key/) page for a more detailed overview about how multi-key wallets work.
+Similar to regular multi-key wallets, a software wallet application or coordination software initiates a multi-key wallet, choosing the number of total keys, and the number of keys required to sign transactions (called threshold). You then add [extended public keys]({{ '/guide/glossary/#extended-public-key-xpub-ypub-zpub' | relative_url }}) (XPUBs) from other wallets generated elsewhere to the multisig after which the software wallet can complete the creation process. Please refer to the [Multi-key]({{ '/guide/how-it-works/private-key-management/multi-key/' | relative_url }}) page for a more detailed overview about how multi-key wallets work.
 
 Notice that all conditions need to be configured during wallet creation. Therefore, you will need to have all XPUBs ready upfront. If you need to make any changes at a later point in time, you will need to create a new wallet with the desired configuration and move the funds to that wallet.
 
-After the wallet has been created, it needs to be registered on all of the involved signing devices. To do this, you will need the [wallet descriptor](https://bitcoin.design/guide/glossary/#output-script-descriptor), which is basically the “map” of the wallet. Each signing device needs to import this map to be able to sign transactions. This process is specific to each signing device and works in the same way as with regular multi-key wallets.
+After the wallet has been created, it needs to be registered on all of the involved signing devices. To do this, you will need the [wallet descriptor]({{ '/guide/glossary/#output-script-descriptor' | relative_url }}), which is basically the “map” of the wallet. Each signing device needs to import this map to be able to sign transactions. This process is specific to each signing device and works in the same way as with regular multi-key wallets.
 
 ### Timelocks
 
-Timelocks can be relative (e.g. “1 year after the wallet has been last used”) or absolute (e.g. “on January 3rd, 2024”). 
+Timelocks can be relative (e.g. “1 year after the wallet has been last used”) or absolute (e.g. “on January 3rd, 2024”).
 
 ##### Relative timelocks
 
-Relative timelocks can reach up to a maximum of 65535 blocks into the future, which is about 455 days. 
+Relative timelocks can reach up to a maximum of 65535 blocks into the future, which is about 455 days.
 
 An important aspect of timelocks is that they are applied to each [unspent transaction output (UTXO)](/guide/glossary/#unspent-transaction-output-utxo) in the wallet individually, not to the wallet as a whole. If a wallet uses relative timelocks, this means that the timelocks expire at different times for each UTXO, based on the time and date on which they were deposited into the wallet.
 
@@ -135,7 +135,7 @@ An important aspect of timelocks is that they are applied to each [unspent trans
    layout = "float-right-desktop"
 %}
 
-Let’s have a look at a concrete example. This image shows a wallet that contains three UTXOs with a total value of 0,40 BTC. The first UTXO of 0,10 BTC was received well ahead of the other two. And since it was not spent for six months, the recovery condition was unlocked. The emergency condition will unlock very soon, if the UTXO is not spent. 
+Let’s have a look at a concrete example. This image shows a wallet that contains three UTXOs with a total value of 0,40 BTC. The first UTXO of 0,10 BTC was received well ahead of the other two. And since it was not spent for six months, the recovery condition was unlocked. The emergency condition will unlock very soon, if the UTXO is not spent.
 
 As you can see, we are actually dealing with three timelocks, rather than one.
 
@@ -153,16 +153,16 @@ Note that an on-chain transaction is required to reset a timelock, along with th
 
 #### Absolute timelocks
 
-Absolute timelocks use a specific calendar date or block height as their reference point. In contrast to relative timelocks, absolute timelocks can go out as far as you want (the technical limit is 500 million blocks). 
+Absolute timelocks use a specific calendar date or block height as their reference point. In contrast to relative timelocks, absolute timelocks can go out as far as you want (the technical limit is 500 million blocks).
 
 Absolute timelocks apply the same timelock for each UTXO in the wallet. This has the advantage that they expire for all UTXOs in the wallet at the same time. This means that users only have to keep track of one deadline, which can make the management of the wallet easier and less demanding.
 
-**Resetting an absolute timelock requires sending the funds to a brand new wallet,** because a self-transfer to the same wallet would re-apply the same absolute timelock to the newly created UTXO. If your product uses absolute timelocks, it is therefore recommended to provide features that help streamline this process for your users. 
+**Resetting an absolute timelock requires sending the funds to a brand new wallet,** because a self-transfer to the same wallet would re-apply the same absolute timelock to the newly created UTXO. If your product uses absolute timelocks, it is therefore recommended to provide features that help streamline this process for your users.
 
 
 ### Flexibility vs. complexity
 
-Spending conditions based on Miniscript are composable. This means that you can create as many spending conditions as you like. You can even have one of the keys in one wallet be a multi-key wallet itself. Or you can combine time locked spending conditions with veto keys. It is also possible to combine relative and absolute timelocks. 
+Spending conditions based on Miniscript are composable. This means that you can create as many spending conditions as you like. You can even have one of the keys in one wallet be a multi-key wallet itself. Or you can combine time locked spending conditions with veto keys. It is also possible to combine relative and absolute timelocks.
 
 However, these kinds of setups can become complex very quickly and should not be used in most personal setups or by users who are new to bitcoin.
 
@@ -205,7 +205,7 @@ In terms of securing the wallet, backing up the individual private keys is not e
 - **Provide informational content to help users guide through the setup process** and educate them about how to properly use a time-based wallet. They can be powerful tools to achieve very robust setups. However, with an increasing number of conditions, setups become complex very quickly, which might actually decrease their security.
 - **Educate users that composing condition layers is only one aspect of their setup.** Make them aware that they should think through the adjacent topics before implementing a specific scheme. These topics include aspects like the trust relationships with other users, key backups and wallet configuration backups. The more layers people use, the more complicated the entire setup gets.
 - **If possible, provide a way to save unfinished wallet configurations during the setup process.** As the creation process may involve many steps and/or users might not have all the necessary signing keys available, they would need to start from scratch at a different point in time, which could cause frustration.
-- **Use [Taproot](https://bitcoin.design/guide/glossary/#taproot) in your product**, as it adds many privacy benefits to the users, especially in a multi-key context. First, using multi-key on its own reduces the anonymity set. Taproot helps mitigate this aspect, because only the executed part is revealed on-chain. Second, spending conditions that are not used in a Taproot transaction are not revealed on-chain. This means that inactive keys or conditions cannot be detected through chain-surveillance tools. Third, Taproot transactions have a smaller on-chain footprint. Therefore, they are more economical.
+- **Use [Taproot]({{ '/guide/glossary/#taproot' | relative_url }}) in your product**, as it adds many privacy benefits to the users, especially in a multi-key context. First, using multi-key on its own reduces the anonymity set. Taproot helps mitigate this aspect, because only the executed part is revealed on-chain. Second, spending conditions that are not used in a Taproot transaction are not revealed on-chain. This means that inactive keys or conditions cannot be detected through chain-surveillance tools. Third, Taproot transactions have a smaller on-chain footprint. Therefore, they are more economical.
 
 ## Miniscript resources
 

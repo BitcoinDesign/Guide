@@ -2,7 +2,7 @@
 layout: guide
 title: WalletScrutiny
 description: This was a collaboration between WalletScrutiny and the Bitcoin Design Community to help with the redesign of the website.
-nav_order: 4
+nav_order: 3
 parent: Case studies
 permalink: /guide/case-studies/walletscrutiny/
 main_classes: -no-top-padding
@@ -208,11 +208,11 @@ Links to project resources:
 
 ---
 
-Next, view the [resources]({{ '/guide/resources' | relative_url }}) a collection of design resources to that can help you design and build better bitcoin products.
+Now let's look at the [Bitcoin Core App]({{ '/guide/case-studies/bitcoin-core-app/' | relative_url }}) case study about the recent and ongoing rework of the original bitcoin wallet.
 
 {% include next-previous.html
    previousUrl = "/guide/case-studies/payjoin/"
-   previousName = "Case studies"
-   nextUrl = "/guide/resources/"
-   nextName = "Resources"
+   previousName = "Payjoin"
+   nextUrl = "/guide/case-studies/bitcoin-core-app/"
+   nextName = "Bitcoin Core App"
 %}

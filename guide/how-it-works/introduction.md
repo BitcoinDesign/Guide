@@ -2,7 +2,7 @@
 layout: guide
 title: How it works
 description: Find out about the complexities of how bitcoin works.
-nav_order: 9
+nav_order: 10
 has_children: true
 permalink: /guide/how-it-works/
 main_classes: -no-top-padding
@@ -86,6 +86,12 @@ How lightning wallets can support authentication and payments with external appl
 
 ---
 
+### [Silent payments]({{ '/guide/how-it-works/silent-payments/' | relative_url }})
+
+A simplified explanation of how silent payments work, along with its impact on bitcoin's interaction model and wallet flows.
+
+---
+
 ### [Wallet selector]({{ '/guide/how-it-works/wallet-selector/' | relative_url }})
 
 Documentation of an interface pattern for letting users choose which external wallet to use when withdrawing, sending, or receiving in a bitcoin application.
@@ -105,8 +111,8 @@ An explainer for the different techniques for stabilizing bitcoin againts other 
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/multiple-wallets/"
-   previousName = "Multiple wallets"
+   previousUrl = "/guide/case-studies/saving-satoshi/"
+   previousName = "Saving Satoshi"
    nextUrl = "/guide/how-it-works/backups/"
    nextName = "Bitcoin backups"
 %}
