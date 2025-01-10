@@ -75,7 +75,7 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 The benefits to the user experience include:
 
 - Familiarity: A format that feels more human and familiar to users
-- Ease of sharing: A format that is easier to remember and recall and share in a social setting
+- Ease of sharing: A format that is easier to remember, recall, and share
 
 **Important:** Human-readable addresses should only be used for direct communication. Whenever payment information is communicated digitally (copy & paste, links, QR codes, messaging, etc), cryptographic formats should be used for the best security and privacy.
 
@@ -99,7 +99,7 @@ There are various technical approaches to resolve addresses. We’ll learn more 
 
 ### Security & privacy
 
-Every approach requires at least one intermediary that is being contacted to serve the payment information. This creates potential privacy and security vulnerabilities that users need to understand.
+Every approach requires at least one intermediary that is being contacted to serve the payment information. This creates potential privacy and security risks that users need to understand.
 
 Key considerations:
 
@@ -107,7 +107,7 @@ Key considerations:
 - DNS queries may leak information about payment relationships
 - Services can potentially serve different payment information than specified
 
-If these intermediate hops are not controlled by the user, we will refer to the address as "_managed_". To be clear, intermediaries cannot move funds at the user-provided address. They can only prevent payment information retrieval, or re-route funds by returning different payment information.
+If the domain (website) where the payment information is stored, is not controlled by the user, we will refer to the address as "_managed_". To be clear, intermediaries cannot move funds at the user-provided address. They can only prevent payment information retrieval, or re-route funds by returning different payment information.
 
 ### Address format basics
 
@@ -161,7 +161,7 @@ Wallets look up the payment information when first exposed to a human-readable a
 
 ### Trust
 
-Setting this up requires a user to own a domain, and trust the domain provider and DNS system to truthfully communicate their payment information.
+Setting this up in a trust-minimised manner requires a user to own a domain, and trust the domain provider and DNS system to truthfully communicate their payment information.
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/human-readable-addresses/dns-payment-instructions-trust.png"
@@ -200,7 +200,7 @@ Framing the correct use of the address should be done right away and as early in
    mobile = "/assets/images/guide/how-it-works/human-readable-addresses/education-mobile.jpg"
    mobileRetina = "/assets/images/guide/how-it-works/human-readable-addresses/education-mobile@2x.jpg"
    alt-text = "UI mock-up of a feature intro screen presenting bitcoin addresses for verbal communication"
-   caption = "Introduction of the feature in an imaginary application called Bubble Wallet."
+   caption = "Introduction to the feature in an imaginary application called Bubble Wallet."
    width = 800
    height = 608
 %}
