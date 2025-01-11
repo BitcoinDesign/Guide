@@ -377,6 +377,7 @@ Applications should allow both backup & recovery through multiple methods. This 
 
 - [Cake wallet](https://cakewallet.com/)
 - [Blue wallet](https://bluewallet.io/) (sending only)
+- [Wasabi wallet](https://wasabiwallet.io/) (sending only)
 
 
 ---
