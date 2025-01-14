@@ -304,7 +304,7 @@ Compared to DNS Payment Instructions, [Lightning Addresses](http://lightningaddr
    mobileRetina = "/assets/images/guide/how-it-works/human-readable-addresses/lightning-address-mapping-mobile@2x.png"
    alt-text = "Diagram showing how a lightning address is transformed to a URL"
    width = 800
-   height = 208
+   height = 114
 %}
 
 ### How it works
