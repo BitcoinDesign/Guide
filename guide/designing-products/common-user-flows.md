@@ -532,7 +532,7 @@ This is similar to exchanging many small coins into bills (like exchanging 100 o
 
 Mixing coins is a technique to improve transaction privacy by making a special transaction. Multiple senders participate in the same transaction by sending and receiving identical amounts of bitcoin. Because this intertwines the transaction history of those coins, it becomes much harder to trace the individual coins and their respective owners.
 
-One of these technique is called Payjoin, which you can learn more about [here]({{ '/guide/case-studies/payjoin/' | relative_url }}).
+One of these techniques is called Payjoin, which you can learn more about [here]({{ '/guide/case-studies/payjoin/' | relative_url }}).
 
 </div>
 
@@ -567,11 +567,9 @@ Whether it's to ensure a hardware wallet still works, or to install a software u
    layout = "float-left"
 %}
 
-A watch-only wallet allows users to monitor the balance and transactions of a bitcoin wallet without having the private keys required to spend the funds. This can be useful for tracking purposes or for keeping an eye on a wallet's activity without risking the security of the funds.
+A watch-only wallet allows users to monitor the balance and transactions of a bitcoin wallet without having the private keys required to spend the funds. Setup involves importing an address or the [extended public key]({{ '/guide/glossary/#extended-public-key-xpub-ypub-zpub' | relative_url }}) (xpub) of the wallet they want to monitor. This provides read-only access to the wallet's transaction history and current balance.
 
 </div>
-
-To create a watch-only wallet, users typically import an address or the [extended public key]({{ '/guide/glossary/#extended-public-key-xpub-ypub-zpub' | relative_url }}) (xpub) of the wallet they want to monitor. This provides read-only access to the wallet's transaction history and current balance.
 
 Watch-only wallets are particularly useful for:
 
