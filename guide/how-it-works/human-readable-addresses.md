@@ -27,6 +27,10 @@ images_settings:
       modalImage: settings-full
       alt: Address settings screen showing a Bubble email address 'Bcharles@bubble.com', with empty fields for backup Bitcoin address and personal message. The primary Bitcoin address shows 'Default' with a dropdown menu.
       caption: By default, this address is configured with the wallet's own BOLT 12 lightning offer.
+    - file: settings-select
+      modalImage: settings-select-full
+      alt: Bubble app settings screen showing address configuration options. Main email address 'bcharles@bubble.com' is displayed, followed by payment options including 'Re-usable lightning address (BOLT12 offer)', 'Re-usable bitcoin address (Silent payments)', and 'Enter a new address'.
+      caption: The default bitcoin address linked to the Bubble address can easily be changed.
     - file: settings-filled
       modalImage: settings-filled-full
       alt: Address settings screen showing a Bubble email address 'Bcharles@bubble.com', a default Bitcoin lightning address, a long backup Bitcoin address starting with 'sp1q', and a personal message saying 'Thanks for all the sats. - Charles'
@@ -194,6 +198,19 @@ Framing the correct use of the address should be done right away and as early in
 - The purpose of the address is for verbally sharing their bitcoin address in a social setting.
 - That the address is public, which carries a clear directional understanding about privacy.
 
+{% include tip/open.html label="Bubble Wallet" %}
+
+The mock-ups below show an imaginary application called "Bubble Wallet". Its naming conventions are based on the idea that _Human-readable address_ is an appropriate descriptive term for technical proposal and discussion, but not necessarily practical for end-users. Due to the similarities to the familiar email format and social media practices, it borrows from those standards.
+
+- A human-readable address is referred to generally as (a new type of) _bitcoin address_
+- More specifically, it is referred to as _Bubble address_ or _Bubble bitcoin address_, because it is managed by the wallet (provider)
+- The first part of the address is referred to as _username_
+- Other address types are first referred to by their primary properties, and secondly by their technical names
+
+You may choose different naming conventions based on your audience, feature set, and adoption outlook.
+
+{% include tip/close.html %}
+
 {% include picture.html
    image = "/assets/images/guide/how-it-works/human-readable-addresses/education.jpg"
    retina = "/assets/images/guide/how-it-works/human-readable-addresses/education@2x.jpg"
@@ -204,14 +221,6 @@ Framing the correct use of the address should be done right away and as early in
    width = 800
    height = 608
 %}
-
-#### Naming
-
-_Human-readable address_ is an appropriate descriptive term for this proposal and technical discussion, but not necessarily practical for end-users. Due to the similarities to the familiar email format and social media practices, we can borrow from these standards.
-
-- We can generally refer to a human-readable address as (a new type of) _bitcoin address_
-- If it is provided and managed by a third-party, the product name can be used (.e.g _Bubble address_ or _Bubble bitcoin address_ as in the example above)
-- The first part of the address can be referred to as _username_ (see the setup section below)
 
 #### Managed address setup
 
