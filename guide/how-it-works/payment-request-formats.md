@@ -4,6 +4,7 @@ title: Payment request formats
 description: An introduction to the different bitcoin payment request formats.
 nav_order: 6
 parent: How it works
+has_children: true
 permalink: /guide/how-it-works/payment-request-formats/
 redirect_from:
  - /guide/payments/send/payment-request-formats/
@@ -138,7 +139,7 @@ LNURL-Pay allows senders to dynamically request an invoice from the receiver to 
 
 ##### Lightning address
 
-[Lightning addresses](https://lightningaddress.com) build on top of LNURL-Pay and give users a more human-readable payment address. They use the very familiar email format (user@bitcoin.design) to request payments.
+[Lightning addresses](https://lightningaddress.com) build on top of LNURL-Pay and give users a more [human readable payment address]({{ '/guide/how-it-works/human-readable-addresses/' | relative_url }}). They use the very familiar email format (_username@domain.com_) to request payments.
 
 ##### Withdraw
 
@@ -235,7 +236,7 @@ Payment codes have been popularised in wallets such as [Samourai](https://samour
 
 A downside to payment codes is that they require an additional on-chain transaction each time two users want to connect and use them. [Silent payments](https://gist.github.com/RubenSomsen/c43b79517e7cb701ebf77eec6dbb46b8?permalink_comment_id=4113680) are a new experimental proposal that prevents the need for this additional on-chain transaction at the cost of extra bandwidth for receivers.
 
-Some wallets use what is called a [PayNym](https://paynym.is/) to abstract payment codes into more human readable payment request formats. However, this is not standardized, directories are not open-source, and currently Samourai is the only operator running a directory.
+Static payment codes are great for use with [DNS-based human readable addresses]({{ '/guide/how-it-works/human-readable-addresses/#dns-payment-instructions' | relative_url }}).
 
 </div>
 
@@ -262,11 +263,11 @@ You can learn more about unified payment requests [here](https://bitcoinqr.dev/)
 
 ---
 
-Next, we will learn about [ecash]({{ '/guide/how-it-works/ecash/introduction/' | relative_url }}).
+As you noticed, these formats are impossible to memorize and pronounce. That is what [human readable addresses]({{ '/guide/how-it-works/human-readable-addresses/' | relative_url }}) aim to solve.
 
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/nodes/"
    previousName = "Nodes"
-   nextUrl = "/guide/how-it-works/ecash/introduction/"
-   nextName = "Ecash"
+   nextUrl = "/guide/how-it-works/human-readable-addresses/"
+   nextName = "Human readable addresses"
 %}

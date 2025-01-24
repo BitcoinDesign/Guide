@@ -224,6 +224,16 @@ article.guide {
     }
   }
 
+  span {
+    &.-blue {
+        color: $blue;
+    }
+
+    &.-green {
+        color: $green;
+    }
+  }
+
   > iframe {
     display: block;
   }
