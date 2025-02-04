@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Common user flows
-description: Overview of the most common user activities in bitcoin applications.
+description: An overview of the most common user activities in bitcoin applications, breaking down the overall user experience into specific activities for better optimization.
 nav_order: 5
 parent: Designing bitcoin products
 permalink: /guide/designing-products/common-user-flows/
@@ -56,7 +56,7 @@ Let's take a look at some common user needs and workflows that can be created fo
 
 ## Orientation
 
-This step is often overlooked, but before anyone uses your product, they first need to find out it exists, understand and develop interest and decide to start using it. If users cannot quickly learn the application's purpose and benefits, they are less likely to use it. Also see the first three phases of the [usage life cycle]({% link guide/designing-products/usage-life-cycle.md %}).
+This step is often overlooked, but before anyone uses your product, they first need to find out it exists, understand and develop interest and decide to start using it. If users cannot quickly learn the application's purpose and benefits, they are less likely to use it. Also see the first three phases of the [usage life cycle]({{ '/guide/designing-products/usage-life-cycle' | relative_url }}).
 
 ## Software download & installation
 
@@ -236,7 +236,7 @@ You can find more screenshots [here](https://www.figma.com/file/rPyJ0Y8xg0kN4FrH
 
 </div>
 
-See the [first use](/guide/daily-spending-wallet/first-use/) to learn more on this topic.
+See the [first use]({{ '/guide/daily-spending-wallet/first-use/' | relative_url }}) to learn more on this topic.
 
 ## Creating a new wallet
 
@@ -251,17 +251,17 @@ See the [first use](/guide/daily-spending-wallet/first-use/) to learn more on th
    layout = "float-left"
 %}
 
-By _wallet_, we normally mean the [_wallet application_](/guide/glossary/wallet/#wallet-application). In this context, we will instead talk about creating the [_bitcoin wallet_](/guide/glossary/wallet/#bitcoin-wallet) (the data structure which stores and manages the user's private key(s), which the software interacts with to control funds on the bitcoin blockchain.
+By _wallet_, we normally mean the [_wallet application_]({{ '/guide/glossary/wallet/#wallet-application' | relative_url }}). In this context, we will instead talk about creating the [_bitcoin wallet_]({{ '/guide/glossary/wallet/#bitcoin-wallet' | relative_url }}) (the data structure which stores and manages the user's private key(s), which the software interacts with to control funds on the bitcoin blockchain.
 
 </div>
 
-A good starting point today is an [HD wallet](/guide/glossary/wallet/#hd-wallet) implemented according to [BIP](/guide/glossary/#bip---bitcoin-improvement-proposal) [32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki), [39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki), [43](https://github.com/bitcoin/bips/blob/master/bip-0043.mediawiki), [44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki), [49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki), [84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki) and [380](https://github.com/bitcoin/bips/blob/master/bip-0380.mediawiki).
+A good starting point today is an [HD wallet]({{ '/guide/glossary/wallet/#hd-wallet' | relative_url }}) implemented according to [BIP]({{ '/guide/glossary/#bip---bitcoin-improvement-proposal' | relative_url }}) [32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki), [39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki), [43](https://github.com/bitcoin/bips/blob/master/bip-0043.mediawiki), [44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki), [49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki), [84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki) and [380](https://github.com/bitcoin/bips/blob/master/bip-0380.mediawiki).
 
 Some older software may create wallets with outdated technical formats, while others allow users to choose specific formats for their particular needs. Generally, this is difficult to understand for regular users and should either be automatically handled with good default settings, or explained in layman's terms. [Wallets Recovery](https://walletsrecovery.org) provides a great overview of different implementations and how nuanced some of the differences are.
 
 Most modern wallet applications should aim to support the lightning network in addition to the base layer. While there are different options for how the applications interact with a lightning network node, an HD wallet works fine for storing the required keys.
 
-Wallets can also be created with control shared between several other wallets, so called [multi-key wallets](/guide/private-key-management/multi-key/) (or multi-signature / multi-sig). This is typically done to increase security.
+Wallets can also be created with control shared between several other wallets, so called [multi-key wallets]({{ '/guide/private-key-management/multi-key/' | relative_url }}) (or multi-signature / multi-sig). This is typically done to increase security.
 
 ## Securing a wallet
 
@@ -276,13 +276,13 @@ Wallets can also be created with control shared between several other wallets, s
    layout = "float-left"
 %}
 
-Like fiat currencies, securely storing funds can be as simple as storing some coins in your pocket or highly complex with multiple banks’ safety deposit boxes. For self-custodial wallets, all of this is in the users’ hands, although wallet software ideally provides guidelines and support to more easily follow best practices. See also, the [Private key management](/guide/private-key-management/introduction/) section and [Protecting a wallet](/guide/onboarding/protecting-a-wallet/).
+Like fiat currencies, securely storing funds can be as simple as storing some coins in your pocket or highly complex with multiple banks’ safety deposit boxes. For self-custodial wallets, all of this is in the users’ hands, although wallet software ideally provides guidelines and support to more easily follow best practices. See also, the [Private key management]({{ '/guide/private-key-management/introduction/' | relative_url }}) section and [Protecting a wallet]({{ '/guide/onboarding/protecting-a-wallet/' | relative_url }}).
 
 </div>
 
 ## Backing up a wallet
 
-To enable recovery of a wallet that uses the manual backup scheme for private key management, we should ask users to securely back up their keys with their [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) (and for full compatibility, [derivation path](/guide/glossary/#derivation-path) and [output descriptors](/guide/glossary/#output-script-descriptor)) when they create new wallets.  See also, [Wallet interoperability](/guide/designing-products/interoperability/) and [bitcoin backups](/guide/private-key-management/backups/).
+To enable recovery of a wallet that uses the manual backup scheme for private key management, we should ask users to securely back up their keys with their [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) (and for full compatibility, [derivation path]({{ '/guide/glossary/#derivation-path' | relative_url }}) and [output descriptors])({{ '/guide/glossary/#output-script-descriptor' | relative_url }}) when they create new wallets.  See also, [Wallet interoperability]({{ '/guide/designing-products/interoperability/' | relative_url }}) and [bitcoin backups]({{ '/guide/private-key-management/backups/' | relative_url }}).
 
 ## Importing an existing wallet
 
@@ -297,7 +297,7 @@ To enable recovery of a wallet that uses the manual backup scheme for private ke
    layout = "float-left"
 %}
 
-If the user is in possession of the [recovery phrase](/guide/glossary/#recovery-phrase) for a bitcoin wallet, they should be able to import it into any application that supports the same standards. Some technical caveats apply, generally users are best advised to attempt recovery of a wallet with the same application as the wallet was created with for full compatibility. See also, [Wallet interoperability](/guide/designing-products/interoperability/) and [Restoring a wallet](/guide/onboarding/restoring-a-wallet/).
+If the user is in possession of the [recovery phrase]({{ '/guide/glossary/#recovery-phrase' | relative_url }}) for a bitcoin wallet, they should be able to import it into any application that supports the same standards. Some technical caveats apply, generally users are best advised to attempt recovery of a wallet with the same application as the wallet was created with for full compatibility. See also, [Wallet interoperability]({{ '/guide/designing-products/interoperability/' | relative_url }}) and [Restoring a wallet]({{ '/guide/onboarding/restoring-a-wallet/' | relative_url }}).
 
 </div>
 
@@ -342,13 +342,13 @@ While we all prefer to receive bitcoin, there are times when we need to send the
 
 </div>
 
-Bitcoin can be sent two ways; on the primary base layer, or the secondary [lightning network](/guide/glossary/#lightning-network) layer.
+Bitcoin can be sent two ways; on the primary base layer, or the secondary [lightning network]({{ '/guide/glossary/#lightning-network' | relative_url }}) layer.
 
-On the base layer, once a transaction is broadcast from a wallet, the bitcoin network starts processing it. Users may want to stay informed about this progress, particularly when a transaction takes longer than expected. The average transaction time on the base layer is 10 minutes, but this can vary a lot depending on the fee the sender was willing to pay. In extreme cases, it is possible to retroactively increase the transaction fee to get validated faster with a [Replace-by-Fee](/guide/glossary/#replace-by-fee-rbf) technique.
+On the base layer, once a transaction is broadcast from a wallet, the bitcoin network starts processing it. Users may want to stay informed about this progress, particularly when a transaction takes longer than expected. The average transaction time on the base layer is 10 minutes, but this can vary a lot depending on the fee the sender was willing to pay. In extreme cases, it is possible to retroactively increase the transaction fee to get validated faster with a [Replace-by-Fee]({{ '/guide/glossary/#replace-by-fee-rbf' | relative_url }}) technique.
 
 On the lightning network, transactions happen inside payment channels that are established on the base layer between two participants. The state of ownership of the bitcoin within the channel is maintained by the participant lightning network nodes. Transactions on this layer are almost instant, and have negligible fees. However, there are fees to open and close channels, as this is recorded on the base layer.
 
-To find out more, visit the [Sending bitcoin](/guide/payments/send/) page.
+To find out more, visit the [Sending bitcoin]({{ '/guide/payments/send/' | relative_url }}) page.
 
 ## Requesting bitcoin
 
@@ -398,6 +398,8 @@ For more information-rich base layer requests, [BIP 21](https://github.com/bitco
 
 For requests on the lightning network, the receiver needs to create a lightning invoice that includes the amount, and then share the invoice with the sender.
 
+To find out more, visit the [Requesting bitcoin]({{ '/guide/daily-spending-wallet/requesting/' | relative_url }}) page.
+
 ## Receiving bitcoin
 
 <div class="center" markdown="1">
@@ -411,7 +413,7 @@ For requests on the lightning network, the receiver needs to create a lightning 
    layout = "float-left"
 %}
 
-Once a user has requested payment, they are naturally interested in knowing when sent and confirmed. Even when the request was not specifically made, it is nice to know when you receive money. This can ideally be communicated via push notifications or similar mechanisms. Since the bitcoin network does not have native functionality to push updates to wallet clients, this requires wallet software to regularly check for new transactions or the use of a trusted third-party service.
+Once a user has requested payment, they are naturally interested in knowing when it was sent and confirmed. Even when the request was not specifically made, it is nice to know when you receive money. This can ideally be communicated via push notifications or similar mechanisms. Since the bitcoin network does not have native functionality to push updates to wallet clients, this requires wallet software to regularly check for new transactions or the use of a trusted third-party service.
 </div>
 
 <div class="center" markdown="1">
@@ -428,6 +430,8 @@ Once a user has requested payment, they are naturally interested in knowing when
 A user may also want to check in and see if any previous requests have not been completed yet. This is easily possible if the user has initiated all requests on the same wallet and used a new address for each one. In this case, a request can be considered fulfilled if at least one payment has been received with the total amount the user asked for. It is not as clear if addresses are getting re-used (how to tell which payment was for which purpose?) or the request has been made with another wallet (as this metadata is not stored and synced via the bitcoin network).
 
 On the lightning network, receiving bitcoin requires an invoice. This makes it easy to track if payments have been completed or not.
+
+To find out more, visit the [Receiving bitcoin]({{ '/guide/daily-spending-wallet/requesting/receiving/' | relative_url }}) page.
 
 </div>
 
@@ -468,11 +472,11 @@ There are several reasons a user might want to switch wallets.
 
 A different wallet application might have features they need, or be better supported than the one they originally created the bitcoin wallet with. Importing the wallet with the recovery phrase into the new application should be possible, and will be free from fees as no transfer of funds is happening.
 
-The owner may want to increase the security of their wallet, either by using a single-key wallet with a [passphrase](/guide/glossary/#passphrase), or a [multi-key](/guide/private-key-management/multi-key/) wallet. As both of these include transferring funds to a new bitcoin wallet, there will be fees to pay.
+The owner may want to increase the security of their wallet, either by using a single-key wallet with a [passphrase]({{ '/guide/glossary/#passphrase' | relative_url }}), or a [multi-key]({{ '/guide/private-key-management/multi-key/' | relative_url }}) wallet. As both of these include transferring funds to a new bitcoin wallet, there will be fees to pay. The old wallet can be [archived]({{ '/guide/multiple-wallets/#archival' | relative_url }}), in case it might still receive transactions.
 
 In the worst-case scenario, the wallet might have been compromised, and funds should be saved by sending them all to a different bitcoin wallet.
 
-Whatever the reason, the import and backup of wallets is a vital function for users that applications should support. While it is easy to send all funds to a new address, additional meta and state data stored in wallet applications also need to be considered for full compatibility. It's not recommended to switch wallets that include funds on the lightning network, as standards for backing up channel state have yet to emerge. See also, [Wallet interoperability](/guide/designing-products/interoperability/).
+Whatever the reason, the import and [backup]({{ '/guide/daily-spending-wallet/backup-and-recovery/landing-page/' | relative_url }}) of wallets is a vital function for users that applications should support. While it is easy to send all funds to a new address, additional meta and state data stored in wallet applications also need to be considered for full compatibility. It's not recommended to switch wallets that include funds on the lightning network, as standards for backing up channel state have yet to emerge. See also, [Wallet interoperability]({{ '/guide/designing-products/interoperability/' | relative_url }}).
 
 
 </div>
@@ -528,6 +532,8 @@ This is similar to exchanging many small coins into bills (like exchanging 100 o
 
 Mixing coins is a technique to improve transaction privacy by making a special transaction. Multiple senders participate in the same transaction by sending and receiving identical amounts of bitcoin. Because this intertwines the transaction history of those coins, it becomes much harder to trace the individual coins and their respective owners.
 
+One of these techniques is called Payjoin, which you can learn more about [here]({{ '/guide/case-studies/payjoin/' | relative_url }}).
+
 </div>
 
 ### Test hardware wallets
@@ -547,6 +553,29 @@ Mixing coins is a technique to improve transaction privacy by making a special t
 Whether it's to ensure a hardware wallet still works, or to install a software update, it is recommended to verify that everything still operates as expected regularly. If a hardware wallet is exclusively used with a particular application, then the application can offer users support with this task (for example, by reminding users to check the hardware wallet every six months). The higher the amount stored, the more important it is to regularly check the setup's health.
 
 </div>
+
+## Watching a wallet
+
+<div class="center" markdown="1">
+
+{% include image.html
+   image = "/assets/images/guide/designing-products/common-user-flows/watch.jpg"
+   retina = "/assets/images/guide/designing-products/common-user-flows/watch@2x.jpg"
+   alt-text = ""
+   width = 100
+   height = 100
+   layout = "float-left"
+%}
+
+A watch-only wallet allows users to monitor the balance and transactions of a bitcoin wallet without having the private keys required to spend the funds. Setup involves importing an address or the [extended public key]({{ '/guide/glossary/#extended-public-key-xpub-ypub-zpub' | relative_url }}) (xpub) of the wallet they want to monitor. This provides read-only access to the wallet's transaction history and current balance.
+
+</div>
+
+Watch-only wallets are particularly useful for:
+
+1. Monitoring cold storage wallets without exposing private keys.
+2. Keeping track of [multiple wallets]({{ '/guide/multiple-wallets/' | relative_url }}) from a single interface.
+3. Providing transparency for [shared wallets]({{ '/guide/shared-wallet/' | relative_url }}) or organizational funds.
 
 ## Resolving a problem
 
