@@ -23,7 +23,7 @@ images_bob-export-config:
       caption: Bob confirms that all cosigners have been onboarded. In our use case, Bob and Alice are the only cosigners.
     - file: bob-export-config/onboard-alice-done
       alt: Home screen showing two tasks associated with the wallet.
-      caption: The cosigner onboarding task is gone from the list and Bob can continue with the the next task.
+      caption: The cosigner onboarding task is gone from the list and Bob can continue with the next task.
 images_alice-import-config:
     - file: alice-import-config/app-home-initial
       alt: Screen showing an empty app home screen.
@@ -58,7 +58,7 @@ images_alice-enable-device:
       caption: Alice connects her BitBox via USB-C to export the wallet configuration.
     - file: alice-enable-device/enable-alice-device-flow
       alt: Placholder screen representing the device-specific wallet activation flow.
-      caption: The app guides her throught the import flow on her BitBox.
+      caption: The app guides her through the import flow on her BitBox.
     - file: alice-enable-device/enable-alice-success
       alt: Success screen showing the option activate another device or go to the home screen.
       caption: On the success screen, the app shows the option to enable another signing device.
