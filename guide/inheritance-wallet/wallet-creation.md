@@ -92,7 +92,7 @@ images_primary-keys-alice-export-key:
       caption: On her end, Alice selects "Provide a key" to add her key.
     - file: wallet-creation/alice-provide-import-config-options
       alt: Screen showing different options to import the wallet configuration.
-      caption: Alice chooses to scan the the wallet configuration from Bob's screen.
+      caption: Alice chooses to scan the wallet configuration from Bob's screen.
     - file: wallet-creation/alice-scan-request
       alt: Screen showing an open QR code scanner.
       caption: The app opens the QR code scanner to import the wallet configuration.
