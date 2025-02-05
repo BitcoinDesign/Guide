@@ -14,7 +14,7 @@ image: https://bitcoin.design/assets/images/guide/getting-started/software/softw
 Editor's notes
 
 This page highlights some of the most common software categories. Future expansion
-could be to create sub-pages for each category to discusss it in more detail.
+could be to create sub-pages for each category to discuss it in more detail.
 
 Illustration sources
 
