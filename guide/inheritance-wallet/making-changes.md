@@ -45,7 +45,7 @@ images_key-replacement-add-key:
       caption: Bob chooses to scan the key via a QR code.
     - file: key-replacement/replace-keys-xpub-import
       alt: Screen showing an open QR code scanner.
-      caption: Bob scans the the extended public key that is displayed on the Jade.
+      caption: Bob scans the extended public key that is displayed on the Jade.
     - file: key-replacement/replace-keys-xpub-details
       alt: Screen showing detailed information about the imported signing key.
       caption: Bob makes sure that the key information matches with what is displayed on the Jade.
