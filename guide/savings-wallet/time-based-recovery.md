@@ -69,7 +69,7 @@ images_backup:
       caption: 
 images_cosigner-onboarding:
     - file: cosigner-onboarding/cosigner-phone2-add-wallet
-      alt: Screen for choosing whether to create a new wallet or import an existing one. Importing is the selected opton.
+      alt: Screen for choosing whether to create a new wallet or import an existing one. Importing is the selected option.
       caption: Alice chooses to import a wallet.
     - file: cosigner-onboarding/cosigner-phone2-import-options
       alt: Option screen showing different import methods for the wallet.
