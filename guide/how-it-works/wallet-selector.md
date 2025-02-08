@@ -15,7 +15,7 @@ example-screens:
       caption: 'Withdrawing sats in a <a href="https://www.thndr.games/" target="_blank" rel="nofollow noopener noreferrer">THNDR Games</a> app.'
     - file: the-bitcoin-company
       modalImage: the-bitcoin-company-big
-      alt: A lightning payment screen with an overal for selecting a lightnig wallet from a list.
+      alt: A lightning payment screen with an overall for selecting a lightning wallet from a list.
       caption: 'Choosing a wallet for payment in <a href="https://thebitcoincompany.com" target="_blank" rel="nofollow noopener noreferrer">The Bitcoin Company</a> app.'
     - file: damus
       modalImage: damus-big
