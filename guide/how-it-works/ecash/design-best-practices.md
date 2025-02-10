@@ -240,7 +240,7 @@ images_federation-welcome:
     - file: federation-welcome
       modalImage: federation-welcome@2x
       alt: Federation welcome message display in a wallet interface.
-      caption: A welcome message being used durring the new user onboarding process.
+      caption: A welcome message being used during the new user onboarding process.
 
 images_federation-expiry:
     - file: federation-guardian-expiry
@@ -603,7 +603,7 @@ Federations can provide configuration and [metadata](https://github.com/fedimint
    width = 632
    height = 812
    layout = "float-right-desktop -background -shadow"
-   caption = "A welcome message being used durring the new user onboarding process."
+   caption = "A welcome message being used during the new user onboarding process."
 %}
 
 `welcome_message`: This field contains a welcome message for new users joining the federation. It could be displayed during the onboarding process to provide users with important information or instructions.

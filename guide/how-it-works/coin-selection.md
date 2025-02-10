@@ -248,7 +248,7 @@ A user chooses to send a payment to one of their contacts. They enter the amount
    image = "/assets/images/guide/how-it-works/coin-selection/manual.png"
    retina = "/assets/images/guide/how-it-works/coin-selection/manual@2x.png"
    alt-text = "Screen showing a list of transactions with no context just amounts and transaction IDs"
-   caption = "When reveiwing their payment's details, the sender opts to disable automatic coin selection."
+   caption = "When reviewing their payment's details, the sender opts to disable automatic coin selection."
    width = 250
    height = 541
    layout = "shadow"
