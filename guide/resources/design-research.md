@@ -97,6 +97,12 @@ A survey and follow-up interview of 990 bitcoin users to determine bitcoin manag
 
 ## Independent research
 
+#### [Bitcoin Payments: From Digital Gold to Everyday Currency](https://breez.technology/report/)
+
+_2025 by Breez and 1A1z_
+
+A report exploring how bitcoin has evolved from a store of value into an everyday medium of exchange, examining real-world adoption with case studies.
+
 #### [2024 American Bitcoin Survey report](https://www.thenakamotoproject.org/report)
 
 _2024 by The Nakamoto Project_
