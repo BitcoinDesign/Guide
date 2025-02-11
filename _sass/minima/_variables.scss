@@ -58,6 +58,12 @@ $primary-color: $bitcoin-yellow;
     --primary-color-s: 72%;
     --primary-color-l: 35%;
     --primary-color-l-darker: 25%;
+    
+    a {
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 2px;
+    }
   }
 }
 
