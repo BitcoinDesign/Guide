@@ -1,6 +1,13 @@
 article.guide {
   position: relative;
 
+  p {
+    strong {
+      font-weight: 500;
+      color: var(--frontHex);
+    }
+  }
+
   > figure:first-child {
     margin-top: 0;
   }
