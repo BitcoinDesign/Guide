@@ -77,8 +77,8 @@ Bitcoin Design Guide:
 - [Getting Started]({{ '/guide/getting-started/introduction/' | relative_url }}) (Read all 8 pages)
 
 Open Design Guide:
-- [Open Source]({{ '/1-open-source/' | relative_url }})
-- [Understanding the Designer's Role]({{ '/2-the-designers-role/' | relative_url }})
+- [Open Source](https://opendesign.guide/1-open-source/)
+- [Understanding the Designer's Role](https://opendesign.guide/2-the-designers-role/)
 
 #### Test Your Understanding
 
@@ -301,7 +301,7 @@ This week, you’ll focus on refining wallet interactions to make Bitcoin more i
 
 But this is just the beginning. The best way to keep learning is by applying your knowledge — contribute to open-source Bitcoin projects, keep iterating on your designs, and stay engaged with the community.
 
-If you have questions, need feedback, or just want to share your work, join us in the **#education** channel on Discord. We’d love to see what you’ve built!
+If you have questions, need feedback, or just want to share your work, join us in the [#education](https://discord.gg/a2KzKc7BYk) channel on Discord. We’d love to see what you’ve built!
 
 ---
 
