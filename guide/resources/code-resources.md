@@ -2,7 +2,7 @@
 layout: guide
 title: Code resources
 description: Code implementations of reference designs and other resources from the Bitcoin Design Guide, created by the community.
-nav_order: 4
+nav_order: 5
 parent: Resources
 permalink: /guide/resources/code-resources/
 main_classes: -no-top-padding
@@ -63,8 +63,8 @@ Various guides on how to build bitcoin wallets that are related to the Bitcoin D
 ---
 
 {% include next-previous.html
-   previousUrl = "/guide/resources/design-challenges/"
-   previousName = "Design challenges"
+   previousUrl = "/guide/resources/learning-bootcamp/"
+   previousName = "Learning bootcamp"
    nextUrl = "/guide/contribute/"
    nextName = "Contribute to guide"
 %}

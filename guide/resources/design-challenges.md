@@ -95,6 +95,6 @@ Now let's look at how to [contribute to the guide]({{ '/guide/contribute/' | rel
 {% include next-previous.html
    previousUrl = "/guide/resources/design-research/"
    previousName = "Design research"
-   nextUrl = "/guide/resources/code-resources/"
-   nextName = "Code resources"
+   nextUrl = "/guide/resources/learning-bootcamp/"
+   nextName = "Learning bootcamp"
 %}

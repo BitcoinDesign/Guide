@@ -52,6 +52,12 @@ Get hands-on with these take-home bitcoin design challenges to practice and play
 
 ---
 
+### [Learning bootcamp]({{ '/guide/resources/learning-bootcamp/' | relative_url }})
+
+Go through this 4-week self-guided learning experience to level up your bitcoin & design skills and knowledge.
+
+---
+
 ### [Code resources]({{ '/guide/resources/code-resources/' | relative_url }})
 
 Code resources that are based on, or influenced by the Bitcoin Design Guide and the Bitcoin UI Kit.
