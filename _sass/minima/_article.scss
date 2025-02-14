@@ -1,7 +1,8 @@
 article.guide {
   position: relative;
 
-  p {
+  p,
+  li {
     strong {
       font-weight: 500;
       color: var(--frontHex);
