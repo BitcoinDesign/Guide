@@ -45,7 +45,10 @@ Each week focuses on a key aspect of Bitcoin design, with curated reading materi
 - [Week 3: Keys, Wallet Creation, Backup](#week-3-keys-wallet-creation-backup)
 - [Week 4: Wallet Design Patterns](#week-4-wallet-design-patterns)
 
-Each week, you’ll go through **2-3 hours of reading** followed by a **4-5 hour hands-on challenge**. The goal isn’t perfection—it’s learning by doing. Focus on working through the full design process within the given time rather than over-polishing. Submit what you can in those 5 hours, and remember: done is better than perfect.
+Expect about 2-3 hours of reading per week, followed by a 4-5 hour hands-on design challenge.
+
+- **If you’re part of Summer of Bitcoin**, aim to complete the challenge within the given time frame — focus on working through the full design process rather than over-polishing. Submit what you can in those 5 hours, and remember: done is better than perfect.
+- **If you're learning independently**, you can take your time, but we still encourage you to prioritize progress over perfection.
 
 
 {% include tip/open.html color="blue" label="Note" icon="info" %}
