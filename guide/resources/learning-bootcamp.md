@@ -34,9 +34,11 @@ Challenge materials are not included, but can be requested.
 # Bitcoin Design Learning Bootcamp
 {:.no_toc}
 
-This is a four-week curriculum for self-guided learning. Initially created for [Summer of Bitcoin](http://summerofbitcoin.org), you may also go through the material independently, or use it for your own educational initiatives.
+Design is at its best when it makes the complex feel simple. That’s what Bitcoin Design is all about — taking this revolutionary technology and making it intuitive for the masses. If you want to contribute to this vision, this four-week self-paced curriculum will take you through the fundamentals of Bitcoin design, and help you build a strong foundation through engaging, real-world design challenges.
 
-Over the next four weeks, you'll explore the fundamentals of Bitcoin design — starting with the basics and progressing to more advanced wallet interactions. This program is designed to help you build a solid foundation while working on practical design challenges.
+Originally created for [Summer of Bitcoin](http://summerofbitcoin.org), this track is now open for anyone who wants to learn independently or use it to run their own educational initiatives.
+
+Each week focuses on a key aspect of Bitcoin design, with curated reading materials to build your knowledge with a hands-on challenge:
 
 - [Week 1: Bitcoin Design Fundamentals](#week-1-bitcoin-design-fundamentals)
 - [Week 2: User Research & Personal Finance](#week-2-user-research--personal-finance)
@@ -48,7 +50,7 @@ Each week, you’ll go through **2-3 hours of reading** followed by a **4-5 hour
 
 {% include tip/open.html color="blue" label="Note" icon="info" %}
 
-The challenges are not publicly included in this page. Since they are used as part of educational programs, we share them directly by request. If you are interested, reach out in Discord in the [#education](https://discord.gg/a2KzKc7BYk) channel.
+All reading materials are open to everyone. However, design challenges, **for independent learners**, are shared on request — just ask for access in the [#education](https://discord.gg/a2KzKc7BYk) channel on Discord when you're ready to tackle them.
 
 {% include tip/close.html %}
 
@@ -72,13 +74,13 @@ By the end of this week, you should be able to:
 These external resources will help you answer the reflection questions and complete the challenge.
 
 Bitcoin Design Guide:
-- [Getting Started]({{ '/guide/getting-started/' | relative_url }}) (Read all 8 pages)
+- [Getting Started]({{ '/guide/getting-started/introduction/' | relative_url }}) (Read all 8 pages)
 
 Open Design Guide:
-- [Open Design]({{ '/guide/open-design/' | relative_url }})
-- [Understanding the Designer's Role]({{ '/guide/open-design/#the-designers-role' | relative_url }})
+- [Open Source]({{ '/1-open-source/' | relative_url }})
+- [Understanding the Designer's Role]({{ '/2-the-designers-role/' | relative_url }})
 
-#### Test Your Knowledge
+#### Test Your Understanding
 
 These are not assignments but reflections to help you engage deeply with the material.
 
@@ -91,7 +93,7 @@ These are not assignments but reflections to help you engage deeply with the mat
 
 - Self-custody is central to Bitcoin. What makes self-custody possible, and how does it compare to traditional financial systems?
 
-**[Open Design]({{ '/getting-started/open-design/' | relative_url }})**
+**[Open Design]({{ '/guide/getting-started/open-design/' | relative_url }})**
 
 - How does open-source development contribute to Bitcoin’s security, reliability, and evolution?  
 - How does the collaborative nature of open design influence innovation and product development in Bitcoin?
@@ -144,7 +146,7 @@ Bitcoin Design Guide / Designing bitcoin products:
 
 [UX Research Playbook](https://bitcoinresearch.xyz/playbook) (how to set up a research process)
 
-#### Test Your Knowledge
+#### Test Your Understanding
 
 **[Personal Finance]({{ '/guide/designing-products/personal-finance/' | relative_url }})**  
 - Why might someone want different wallet setups for daily spending versus savings? Can you think of a real-world example?  
@@ -196,7 +198,7 @@ Bitcoin Design Guide:
 - Daily spending wallet / [Backup & Recovery]({{ '/guide/daily-spending-wallet/backup-and-recovery/landing-page/' | relative_url }})
 - [Multiple Wallets Reference Design]({{ '/guide/multiple-wallets/' | relative_url }})
 
-#### Test Your Knowledge
+#### Test Your Understanding
 
 **[Private Key Management]({{ '/guide/how-it-works/private-key-management/introduction/' | relative_url }})**
 
@@ -257,7 +259,7 @@ Bitcoin Design Guide:
 - How it works / [Transactions]({{ '/guide/how-it-works/transactions/' | relative_url }})  
 - How it works / [Wallet Privacy]({{ '/guide/how-it-works/wallet-privacy/' | relative_url }})
 
-#### Test Your Knowledge
+#### Test Your Understanding
 
 **[Savings Wallet Reference Design]({{ '/guide/savings-wallet/' | relative_url }})**
 
@@ -295,7 +297,11 @@ This week, you’ll focus on refining wallet interactions to make Bitcoin more i
 
 ---
 
-Did you make it all the way through? Are you stuck and have questions? Join us on Discord in the [#education](https://discord.gg/a2KzKc7BYk) channel and share your journey. We're excited to chat with you.
+**You made it!** Four weeks of learning, thinking, and designing for Bitcoin — whether you completed everything or just explored parts of it, you’ve taken a solid step toward understanding Bitcoin design.
+
+But this is just the beginning. The best way to keep learning is by applying your knowledge — contribute to open-source Bitcoin projects, keep iterating on your designs, and stay engaged with the community.
+
+If you have questions, need feedback, or just want to share your work, join us in the **#education** channel on Discord. We’d love to see what you’ve built!
 
 ---
 
