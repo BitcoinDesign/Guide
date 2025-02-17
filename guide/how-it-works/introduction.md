@@ -106,7 +106,7 @@ Overview about advanced capabilities that enable users to create more flexible b
 
 ### [Stabilizing bitcoin value]({{ '/guide/how-it-works/stabilizing-bitcoin-value/' | relative_url }})
 
-An explainer for the different techniques for stabilizing bitcoin againts other currencies, from a basic swap at a third-party exchange, to the use of Discrete Log Contracts.
+An explainer for the different techniques for stabilizing bitcoin against other currencies, from a basic swap at a third-party exchange, to the use of Discrete Log Contracts.
 
 ---
 
