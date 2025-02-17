@@ -132,7 +132,7 @@ This includes hearing difficulties such as being completely or partly deaf, affe
 
 #### Literacy
 
-Illiteracy is a person's inability to read, write, or understand a simple statement that is related to their everyday life. There are over 700 million illiterate adults worldwide, and more than half of them are women ([source](http://uis.unesco.org/en/topic/literacy)).
+Illiteracy is a person's inability to read, write, or understand a simple statement that is related to their everyday life. There are over 700 million illiterate adults worldwide, and more than half of them are women ([source](https://uis.unesco.org/en/topic/literacy)).
 
 ## Tips and examples
 

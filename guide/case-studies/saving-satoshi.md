@@ -41,7 +41,7 @@ Illustration sources: <>
 
 ---
 
-There’s never really been an easy, let alone fun, way to get people engaged with bitcoin tech. That was until [Saving Satoshi](http://savingsatoshi.com), a light-hearted, interactive role-playing game (RPG) that functions as a first point of contact for coders learning bitcoin development.
+There’s never really been an easy, let alone fun, way to get people engaged with bitcoin tech. That was until [Saving Satoshi](https://savingsatoshi.com), a light-hearted, interactive role-playing game (RPG) that functions as a first point of contact for coders learning bitcoin development.
 
 Saving Satoshi uses storytelling and game mechanics to onboard curious developers into bitcoin tech and the ₿OSS (bitcoin open source software) ecosystem. With fun, innovative challenges, it’s designed to be a gentle and welcoming entry point for those wishing to go deeper into the world of bitcoin development. From address derivation to block template construction, players are introduced to a variety of technical topics over the course of ten chapters, each filled to the brim with challenges, simulations, and coding exercises. Beginning with basic concepts like hashing and using a block explorer, learners quickly advance to more difficult material that ultimately culminates in the lightning network.
 
@@ -89,7 +89,7 @@ This project is also driven by personal reasons. There is an enjoyment to be had
 
 ## Origin story
 
-In October 2022, the Bitcoin Design Community organized its first [Designathon](http://event.bitcoin.design), in collaboration with the first Bolt.fun Legends of Lightning hackathon. Adam Jonas of [Chaincode Labs](http://chaincode.com) proposed the initial idea of Saving Satoshi, which was very close to what the project came to be. Take a look back in [this recording](https://www.youtube.com/watch?v=b5Fw0HIqZDM) of the first call the group had together.
+In October 2022, the Bitcoin Design Community organized its first [Designathon](https://event.bitcoin.design), in collaboration with the first Bolt.fun Legends of Lightning hackathon. Adam Jonas of [Chaincode Labs](https://chaincode.com) proposed the initial idea of Saving Satoshi, which was very close to what the project came to be. Take a look back in [this recording](https://www.youtube.com/watch?v=b5Fw0HIqZDM) of the first call the group had together.
 
 Christoph, who helped organize the Designathon, simply meant to help get the project off the ground while Jonas was traveling for a few days. Little did he know that he would go on to lead the design for the next two+ years.
 
@@ -354,7 +354,7 @@ Lastly is in creating an educational platform we have been trying to reduce the 
    mobile = "assets/images/guide/case-studies/saving-satoshi/script-editor-mobile.jpg"
    mobileRetina = "assets/images/guide/case-studies/saving-satoshi/script-editor-mobile@2x.jpg"
    alt-text = "Bitcoin Script editor interface showing OP_CODE buttons organized by category (constant, arithmetic, crypto, etc.), alongside documentation, examples, and an execution stack visualizer. The interface has a dark theme with teal accents."
-   caption = "The script editor from chapter 9 is also available at [script.savingsatoshi.com](http://script.savingsatoshi.com)."
+   caption = "The script editor from chapter 9 is also available at [script.savingsatoshi.com](https://script.savingsatoshi.com)."
    width = 1200
    height = 780
    layout = "full-width"

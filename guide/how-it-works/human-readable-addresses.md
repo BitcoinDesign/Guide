@@ -304,7 +304,7 @@ Wallets should gracefully handle various failure modes, and provide clear error 
 
 ## Lightning Address
 
-Compared to DNS Payment Instructions, [Lightning Addresses](http://lightningaddress.com) are focused on the lightning network only. They bring another intermediary into play, and allow for much more dynamic functionality.
+Compared to DNS Payment Instructions, [Lightning Addresses](https://lightningaddress.com) are focused on the lightning network only. They bring another intermediary into play, and allow for much more dynamic functionality.
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/human-readable-addresses/lightning-address-mapping.png"
@@ -332,7 +332,7 @@ Lightning addresses look like traditional emails. Under the hood, a wallet that 
 
 In a similar vein, [UMA](https://www.uma.me) is based on LNURL and Lightning Address, with modified functionality and the *"$<span class="-green">alice</span>@<span class="-blue">domain.com</span>"* address format. The *$* prefix was chosen to represent both fiat and crypto currencies.
 
-## [Paynyms](http://paynym.is)
+## [Paynyms](https://paynym.is)
 
 This approach relies on a single directory provider, which maps a human readable name with a [BIP-47](https://github.com/bitcoin/bips/blob/master/bip-0047.mediawiki) payment code. Having a single provider allows for the omission of the global part, in this case *"my.paynym.is/<span class="-green">username</span>"* and users can simply be referred to by their usernames. The directory code is not open-source.
 

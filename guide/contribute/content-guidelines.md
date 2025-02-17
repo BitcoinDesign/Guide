@@ -47,7 +47,7 @@ Address the reader directly. Whenever possible, try using active instead of pass
 
 ### Use simple language
 
-Bitcoin is a global currency. Not everyone using this guide is a native English speaker. Make sure you are writing in plain, easy to follow English. If you're still unsure, try using a readability tool to analyze your text and make recommendations. We like [Hemingway](http://www.hemingwayapp.com).
+Bitcoin is a global currency. Not everyone using this guide is a native English speaker. Make sure you are writing in plain, easy to follow English. If you're still unsure, try using a readability tool to analyze your text and make recommendations. We like [Hemingway](https://www.hemingwayapp.com).
 
 ### Be concise
 

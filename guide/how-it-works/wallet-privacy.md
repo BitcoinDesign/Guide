@@ -13,7 +13,7 @@ image: /assets/images/guide/how-it-works/wallet-privacy/wallet-privacy-preview.j
     image = "/assets/images/guide/how-it-works/wallet-privacy/wallet-privacy.jpg"
     retina = "/assets/images/guide/how-it-works/wallet-privacy/wallet-privacy@2x.jpg"
     mobile = "/assets/images/guide/how-it-works/wallet-privacy/wallet-privacy-mobile.jpg"
-    mobileRetina = "/assets/images/how-it-works/wallet-privacy/wallet-privacy-mobile@2x.jpg"
+    mobileRetina = "/assets/images/guide/how-it-works/wallet-privacy/wallet-privacy-mobile@2x.jpg"
     alt-text = "Illustration of an eye, with a cross on top of an ink blot background"
     width = 1600
     height = 600

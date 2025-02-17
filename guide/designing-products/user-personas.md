@@ -247,7 +247,7 @@ Patrícia Estevão developed several personas of bitcoin users based on 1-1 inte
 
 ## Coinbits personas
 
-The [Coinbits](https://coinbits.app) team created several US-focused personas as part of a [Summer of Bitcoin](http://summerofbitcoin.org) project. Find out more about it [here](https://coinbits.app/bitcoin-personas).
+The [Coinbits](https://coinbits.app) team created several US-focused personas as part of a [Summer of Bitcoin](https://summerofbitcoin.org) project. Find out more about it [here](https://coinbits.app/bitcoin-personas).
 
 {% include image-gallery.html pages = page.images_coinbits_personas %}
 

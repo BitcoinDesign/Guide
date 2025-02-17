@@ -2,7 +2,7 @@
 layout: guide
 title: Submit a header theme
 description: A how-to guide for creating your own theme for the bitcoin.design homepage banner.
-permalink: /submit-header-design
+permalink: /submit-header-design/
 main_nav: false
 secondary_nav: false
 image: https://bitcoin.design/assets/images/submit-header-design-preview.jpg

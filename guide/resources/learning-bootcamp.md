@@ -29,14 +29,12 @@ Challenge materials are not included, but can be requested.
    layout = "full-width"
 %}
 
-[]({{ '' | relative_url }})
-
 # Bitcoin Design Learning Bootcamp
 {:.no_toc}
 
 Design is at its best when it makes the complex feel simple. That’s what Bitcoin Design is all about — taking this revolutionary technology and making it intuitive for the masses. If you want to contribute to this vision, this four-week self-paced curriculum will take you through the fundamentals of Bitcoin design, and help you build a strong foundation through engaging, real-world design challenges.
 
-Originally created for [Summer of Bitcoin](http://summerofbitcoin.org), this track is now open for anyone who wants to learn independently or use it to run their own educational initiatives.
+Originally created for [Summer of Bitcoin](https://summerofbitcoin.org), this track is now open for anyone who wants to learn independently or use it to run their own educational initiatives.
 
 Each week focuses on a key aspect of Bitcoin design, with curated reading materials to build your knowledge with a hands-on challenge:
 

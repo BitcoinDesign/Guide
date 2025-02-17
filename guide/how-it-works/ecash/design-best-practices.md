@@ -5,7 +5,7 @@ description: An overview on best design practices for bitcoin-backed ecash.
 nav_order: 5
 parent: Ecash
 grand_parent: How it works
-permalink: /guide/how-it-works/ecash/design-best-practices
+permalink: /guide/how-it-works/ecash/design-best-practices/
 main_classes: -no-top-padding
 image: https://bitcoin.design/assets/images/guide/how-it-works/ecash/dbp_og.jpg
 image_base: /assets/images/guide/how-it-works/ecash/
@@ -326,7 +326,7 @@ Illustration sources: https://www.figma.com/community/file/1444347139219091325/b
 
 ---
 ## Common ecash design guidelines
-When designing bitcoin-backed ecash applications, it’s important to prioritize clear and intuitive interfaces that allow users to easily manage their tokens, whether minting, sending, or redeeming them. Many of the same design principles for [sending]({{ '/guide/daily-spending-wallet/sending/' | relative_url }}) and [requesting]({{ '/guide/daily-spending-wallet/requesting/' | relative_url }}) from the [lightning wallet reference design]({{ '/guide/guide/daily-spending-wallet/' | relative_url }}) apply here as well.
+When designing bitcoin-backed ecash applications, it’s important to prioritize clear and intuitive interfaces that allow users to easily manage their tokens, whether minting, sending, or redeeming them. Many of the same design principles for [sending]({{ '/guide/daily-spending-wallet/sending/' | relative_url }}) and [requesting]({{ '/guide/daily-spending-wallet/requesting/' | relative_url }}) from the [lightning wallet reference design]({{ '/guide/daily-spending-wallet/' | relative_url }}) apply here as well.
 
 Since ecash is still a relatively new technology this guide focuses on best practices for managing tokens and communicating mint and federation details. As the ecash ecosystem develops we encourage designers and developers to contribute their insights and help improve this guide.
 
@@ -555,7 +555,7 @@ P2PK ecash tokens are not derived from a seed phrase. This means they cannot be 
 <div class="center" markdown="1">
 
 {% include picture.html
-   image = "/assets/images/guide/how-it-works/ecash/federation-guardian-info"
+   image = "/assets/images/guide/how-it-works/ecash/federation-guardian-info.png"
    retina = "/assets/images/guide/how-it-works/ecash/federation-guardian-info@2x.png"
    modalImage = "/assets/images/guide/how-it-works/ecash/federation-guardian-info@2x.png"
    alt-text = ""

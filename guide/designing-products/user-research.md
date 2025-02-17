@@ -101,7 +101,7 @@ Diverse online communities rapidly formed around bitcoin. Vast amounts of public
 - [Bitcoin on GitHub](https://github.com/bitcoin)
 - [Bitcoin mailing list](https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev)
 - [Bitcointalk](https://bitcointalk.org/)
-- [Bitcoin Core dev meeting logs](http://www.erisian.com.au/meetbot/bitcoin-core-dev/)
+- [Bitcoin Core dev meeting logs](https://www.erisian.com.au/meetbot/bitcoin-core-dev/)
 - [Bitcoin subreddit](https://www.reddit.com/r/bitcoin)
 
 </div>

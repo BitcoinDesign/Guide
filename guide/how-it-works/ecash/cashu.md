@@ -35,7 +35,7 @@ Illustration sources: https://www.figma.com/community/file/1444347139219091325/b
 Cashu is an [ecash protocol]({{ '/guide/how-it-works/ecash/introduction/' | relative_url }}) that operates on a model where any user can run their own solo mint, or join existing mints run by others. This makes Cashu an easy to deploy, flexible, and agile approach to managing bitcoin-backed ecash.
 
 ## Design best practices
-This page is about the unique approach of Cashu to ecash. To learn more about design aspects, check out the [design best practices]({{ '/guide/how-it-works/ecash/design-best-practices' | relative_url }}) page.
+This page is about the unique approach of Cashu to ecash. To learn more about design aspects, check out the [design best practices]({{ '/guide/how-it-works/ecash/design-best-practices/' | relative_url }}) page.
 
 ## Cashu mints
 

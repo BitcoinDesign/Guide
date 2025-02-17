@@ -65,7 +65,7 @@ Like any novelty, the process may seem intimidating at first, but the best way t
 3. [Manage files](#managing-files)
 4. [Apply changes](#applying-changes)
 5. [Create a pull request](#creating-a-pull-request)
-6. [Applying additional changes](#applying-additional-changes)
+6. [Request a review](#request-a-review)
 
 #### Forking Design Guide repository
 
@@ -218,7 +218,7 @@ These are the page properties at the top of markdown files, between the dividers
 - Ensure image paths are correct
 - Ensure "width" and "height" attributes in picture and image includes match the actual image dimensions
 - For smallest file size, use the JPG file format for textured and photographic images, and PNG for images with mostly flat color
-- Compress your images via tool like [ImageOptim](http://imageoptim.com) (can save ~70% of bandwidth)
+- Compress your images via tool like [ImageOptim](https://imageoptim.com) (can save ~70% of bandwidth)
 - Delete unused images from your PR
 - Every non-decorative image needs to have helpful alt text ([tips](https://www.w3.org/WAI/tutorials/images/tips/))
 

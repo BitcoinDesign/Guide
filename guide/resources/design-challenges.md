@@ -29,8 +29,6 @@ This is primarily meant for personal use.
    layout = "full-width"
 %}
 
-[]({{ '' | relative_url }})
-
 # Design challenges
 
 Looking for a way to improve your bitcoin design chops? We put together a series of design challenges that you can independently work on and should not take longer than 4-6 hours. Each task focuses on a user experience that is unique to bitcoin.

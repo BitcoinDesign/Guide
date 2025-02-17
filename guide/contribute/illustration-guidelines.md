@@ -154,7 +154,7 @@ Create and specify differently laid out images for desktop and mobile as needed.
 
 ## File size optimization
 
-Use PNG for images with mostly flat colors and JPG for more photographic images. Optimize your images before committing them. The easiest way is by using a tool like [ImageOptim]http://imageoptim.com). After compression, ensure that the quality is still acceptable. Heavily textured images are sometimes heavily compressed, resulting in visible compression crystals, blurry lines and other visual artefacts.
+Use PNG for images with mostly flat colors and JPG for more photographic images. Optimize your images before committing them. The easiest way is by using a tool like [ImageOptim]https://imageoptim.com). After compression, ensure that the quality is still acceptable. Heavily textured images are sometimes heavily compressed, resulting in visible compression crystals, blurry lines and other visual artefacts.
 
 ## Link preview images
 
