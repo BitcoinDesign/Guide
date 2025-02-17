@@ -231,7 +231,7 @@ Here's how businesses, such as exchanges, merchants and vendors can use labels:
 
  Since senders can safely use the same static address for multiple payments, it is natural for them to want to store these for future use. Contacts are a great way to do this in a way that users can intuit: names and faces. The [contacts](/guide/daily-spending-wallet/contacts/) page provides guidance about the topic.
 
- Silent payments (along with [BOLT-12](http://bolt12.org)) allow applications to center their payments experience around people instead of addresses. This was not advisable before, due to issues with on-chain address reuse.
+ Silent payments (along with [BOLT-12](https://bolt12.org)) allow applications to center their payments experience around people instead of addresses. This was not advisable before, due to issues with on-chain address reuse.
 
 
 {% include image-gallery.html pages = page.images_contacts %}

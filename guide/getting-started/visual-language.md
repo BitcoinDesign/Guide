@@ -54,7 +54,7 @@ Since bitcoin answers to no central authority, there is no single symbol or logo
    layout = "float-left"
 %}
 
-Satoshi Nakamoto created this lettered golden coin for the original Bitcoin client, [released on January 9, 2009](https://web.archive.org/web/20140326174921/http://www.mail-archive.com/cryptography@metzdowd.com/msg10142.html).
+Satoshi Nakamoto created this lettered golden coin for the original Bitcoin client, [released on January 9, 2009](https://web.archive.org/web/20140326174921/https://www.mail-archive.com/cryptography@metzdowd.com/msg10142.html).
 
 </div>
 
@@ -135,7 +135,7 @@ On November 1, 2010, a user named bitboy proposed a new icon and set of promotio
    layout = "float-left"
 %}
 
-The Unicode symbol for bitcoin (₿) was introduced in [Unicode 10.0.0](http://www.unicode.org/versions/Unicode10.0.0/) on June 20, 2017. This important step established bitcoin as a currency symbol alongside the US Dollar ($), Euro (€), and others. As of mid-2021, few fonts support the symbol.
+The Unicode symbol for bitcoin (₿) was introduced in [Unicode 10.0.0](https://www.unicode.org/versions/Unicode10.0.0/) on June 20, 2017. This important step established bitcoin as a currency symbol alongside the US Dollar ($), Euro (€), and others. As of mid-2021, few fonts support the symbol.
 
 </div>
 
@@ -151,7 +151,7 @@ There is currently not an agreed-upon symbol to represent the satoshi (or if the
    image = "/assets/images/guide/getting-started/visual-language/satoshi-symbols.png"
    retina = "/assets/images/guide/getting-started/visual-language/satoshi-symbols@2x.png"
    alt-text = "Sequence of images showing proposals for satoshi symbols"
-   caption = "References from top left to bottom right, unknown author, <a href='http://satbase.org/' target='_blank'>2</a>, <a href='https://www.reddit.com/r/Bitcoin/comments/ku9nl8/design_proposal_for_the_satoshi_symbol/' target='_blank'>3</a>, <a href='https://twitter.com/PLK5280/status/1326347333219606528' target='_blank'>4</a>, <a href='https://www.reddit.com/r/Bitcoin/comments/ku9nl8/design_proposal_for_the_satoshi_symbol/' target='_blank'>5</a>, Jeremiah, Alexa, <a href='https://satsymbol.com/' target='_blank'>8</a>, <a href='https://twitter.com/BitkoYinowsky' target='_blank'>9</a>, <a href='https://twitter.com/sbtlaln/status/1361368643238567951' target='_blank'>10</a>, <a href='https://www.reddit.com/r/Bitcoin/comments/k0e98n/my_proposal_for_the_satish_symbol_still_looks/' target='_blank'>11</a>, and <a href='https://www.reddit.com/r/Bitcoin/comments/ku9nl8/design_proposal_for_the_satoshi_symbol/' target='_blank'>12</a>."
+   caption = "References from top left to bottom right, unknown author, <a href='https://satbase.org/' target='_blank'>2</a>, <a href='https://www.reddit.com/r/Bitcoin/comments/ku9nl8/design_proposal_for_the_satoshi_symbol/' target='_blank'>3</a>, <a href='https://twitter.com/PLK5280/status/1326347333219606528' target='_blank'>4</a>, <a href='https://www.reddit.com/r/Bitcoin/comments/ku9nl8/design_proposal_for_the_satoshi_symbol/' target='_blank'>5</a>, Jeremiah, Alexa, <a href='https://satsymbol.com/' target='_blank'>8</a>, <a href='https://twitter.com/BitkoYinowsky' target='_blank'>9</a>, <a href='https://twitter.com/sbtlaln/status/1361368643238567951' target='_blank'>10</a>, <a href='https://www.reddit.com/r/Bitcoin/comments/k0e98n/my_proposal_for_the_satish_symbol_still_looks/' target='_blank'>11</a>, and <a href='https://www.reddit.com/r/Bitcoin/comments/ku9nl8/design_proposal_for_the_satoshi_symbol/' target='_blank'>12</a>."
    width = 800
    height = 570
 %}
@@ -172,7 +172,7 @@ From moon Lambos to the price rollercoaster, there’s a meme for practically ev
    image = "/assets/images/guide/getting-started/visual-language/memes.jpg"
    retina = "/assets/images/guide/getting-started/visual-language/memes@2x.jpg"
    alt-text = "Examples of popular bitcoin memes"
-   caption = "References from top left to bottom right, <a href='http://www.brainlesstales.com/bitcoin-roller-coaster' target='_blank'>1</a>, <a href='https://www.reddit.com/r/Bitcoin/comments/1gagle/lol_new_bitcoin_billboard_in_san_jose_honey_badger/' target='_blank'>2</a>, <a href='https://ryantdesign.com/bitcoin-art' target='_blank'>3</a>, <a href='https://medium.com/@paulbars/magic-internet-money-how-a-reddit-ad-made-bitcoin-hit-1000-and-inspired-south-parks-art-b414ec7a5598' target='_blank'>4</a>, unknown author, unknown author."
+   caption = "References from top left to bottom right, <a href='https://www.brainlesstales.com/bitcoin-roller-coaster' target='_blank'>1</a>, <a href='https://www.reddit.com/r/Bitcoin/comments/1gagle/lol_new_bitcoin_billboard_in_san_jose_honey_badger/' target='_blank'>2</a>, <a href='https://ryantdesign.com/bitcoin-art' target='_blank'>3</a>, <a href='https://medium.com/@paulbars/magic-internet-money-how-a-reddit-ad-made-bitcoin-hit-1000-and-inspired-south-parks-art-b414ec7a5598' target='_blank'>4</a>, unknown author, unknown author."
    width = 800
    height = 421
 %}
@@ -206,7 +206,7 @@ Magazines, blogs, and other publications often hire professional illustrators to
    image = "/assets/images/guide/getting-started/visual-language/illustrations.jpg"
    retina = "/assets/images/guide/getting-started/visual-language/illustrations@2x.jpg"
    alt-text = "Examples of professional illustrations involving bitcoin"
-   caption = "References from top left to bottom right, <a href='https://www.behance.net/gallery/66922301/Cryptoshop_Spot' target='_blank'>1</a>, <a href='https://www.behance.net/gallery/16903103/INSIDE-THE-WILD-WORLD-OF-BITCOIN' target='_blank'>2</a>, <a href='https://www.behance.net/gallery/25226745/Bitcoin-Illustration-for-an-internal-corporale-mag' target='_blank'>3</a>, <a href='https://www.behance.net/gallery/55850063/Waiting-for-Bitcoin' target='_blank'>4</a>, <a href='https://www.behance.net/gallery/56839949/The-Bitcoin-Knight' target='_blank'>5</a>, <a href='https://www.behance.net/gallery/58381785/Cryptocurrency' target='_blank'>6</a>, <a href='https://www.behance.net/gallery/59591697/Miss-Currency' target='_blank'>7</a>, <a href='https://www.behance.net/gallery/59920255/WIRED-Backchannel-The-Future-of-Bitcoin' target='_blank'>8</a>, <a href='https://mercuryo.io' target='_blank'>9</a>, <a href='' target='_blank'>10</a>, <a href='https://cash.app/bitcoin' target='_blank'>11</a>."
+   caption = "References from top left to bottom right, <a href='https://www.behance.net/gallery/66922301/Cryptoshop_Spot' target='_blank'>1</a>, <a href='https://www.behance.net/gallery/16903103/INSIDE-THE-WILD-WORLD-OF-BITCOIN' target='_blank'>2</a>, <a href='https://www.behance.net/gallery/25226745/Bitcoin-Illustration-for-an-internal-corporale-mag' target='_blank'>3</a>, <a href='https://www.behance.net/gallery/55850063/Waiting-for-Bitcoin' target='_blank'>4</a>, <a href='https://www.behance.net/gallery/56839949/The-Bitcoin-Knight' target='_blank'>5</a>, <a href='https://www.behance.net/gallery/58381785/Cryptocurrency' target='_blank'>6</a>, <a href='https://www.behance.net/gallery/59591697/Miss-Currency' target='_blank'>7</a>, <a href='https://www.behance.net/gallery/59920255/WIRED-Backchannel-The-Future-of-Bitcoin' target='_blank'>8</a>, <a href='https://mercuryo.io' target='_blank'>9</a>, <a href='https://cash.app/bitcoin' target='_blank'>11</a>."
    width = 800
    height = 608
 %}

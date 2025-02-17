@@ -20,7 +20,7 @@ example-screens:
     - file: damus
       modalImage: damus-big
       alt: A mobile screen showing a lightning invoice and a list of wallets to choose from.
-      caption: 'Choosing a wallet for invoice payment in <a href="http://damus.io" target="_blank" rel="nofollow noopener noreferrer">Damus</a>.'
+      caption: 'Choosing a wallet for invoice payment in <a href="https://damus.io" target="_blank" rel="nofollow noopener noreferrer">Damus</a>.'
 
 ---
 

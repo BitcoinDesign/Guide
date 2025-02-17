@@ -147,7 +147,7 @@ After importing the wallet, Christina and David can view the wallet balance and 
 
 ### Activating the wallet on the signing devices
 
-Next, they need to import the wallet to their respective signing devices. To do this, they follow the same process as Alice did during [cosigner onboarding]({{ '/guide/inheritance-wallet/onboarding-cosigners/#alice-activates-the-wallet-on-her-bitbox/' | relative_url }}). 
+Next, they need to import the wallet to their respective signing devices. To do this, they follow the same process as Alice did during [cosigner onboarding]({{ '/guide/inheritance-wallet/onboarding-cosigners/#alice-activates-the-wallet-on-her-bitbox' | relative_url }}). 
 
 ### Timelock constraints
 
