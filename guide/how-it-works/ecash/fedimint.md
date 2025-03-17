@@ -108,7 +108,7 @@ A [gateway](https://fedimint.org/docs/GettingStarted/TechCompontents#lightning-s
 **How gateways work**: The gateway accepts bitcoin payments on the lightning network and converts them into the bitcoin-backed ecash tokens used within the federation. It can also convert bitcoin-backed ecash tokens into bitcoin and send them over the lightning network. This is crucial because it allows the users within a federation to interact with the outside bitcoin and lightning network.
 
 ## Design best practices
-To learn more about Fedimint specific design best practices you can check out the [Design best practices]({{ '/guide/how-it-works/ecash/design-best-practices' | relative_url }}) section.
+To learn more about Fedimint specific design best practices you can check out the [Design best practices]({{ '/guide/how-it-works/ecash/design-best-practices/' | relative_url }}) section.
 
 
 ## When to use Fedimint
@@ -133,7 +133,7 @@ For a comprehensive list of products and services that use Fedimint visit [Aweso
 
 ---
 
-Next, learn about [ecash design best practices]({{ '/guide/how-it-works/ecash/design-best-practices' | relative_url }}).
+Next, learn about [ecash design best practices]({{ '/guide/how-it-works/ecash/design-best-practices/' | relative_url }}).
 
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/ecash/cashu/"

@@ -66,7 +66,7 @@ projects:
       height: 75
     links:
       - name: Website
-        link: http://opencollective.com/bitcoin-design-foundation
+        link: https://opencollective.com/bitcoin-design-foundation
       - name: Discord
         link: https://discord.gg/V4xwxTBett
 
@@ -145,7 +145,7 @@ collaborations:
       height: 75
     links:
       - name: More info
-        link: http://savingsatoshi.com
+        link: https://savingsatoshi.com
 
   - name: Summer of Bitcoin
     description: We support and mentor students in this educational initiative.
@@ -155,7 +155,7 @@ collaborations:
       height: 75
     links:
       - name: More info
-        link: http://summerofbitcoin.org
+        link: https://summerofbitcoin.org
 
   - name: Alby
     description: Alby brings Bitcoin to the web with in-browser payments and identity, no account required.
@@ -179,7 +179,7 @@ collaborations:
       height: 75
     links:
       - name: Design docs
-        link: http://bitcoincore.app
+        link: https://bitcoincore.app
       - name: Collaboration
         link: https://github.com/BitcoinDesign/Meta/issues/238
 
@@ -203,7 +203,7 @@ collaborations:
       height: 75
     links:
       - name: Site
-        link: http://jamapp.org
+        link: https://jamapp.org
       - name: Collaboration
         link: https://github.com/BitcoinDesign/Meta/issues/239
       - name: Telegram

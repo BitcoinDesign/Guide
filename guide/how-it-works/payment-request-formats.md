@@ -236,7 +236,7 @@ Payment codes have been popularised in wallets such as [Samourai](https://samour
 
 A downside to payment codes is that they require an additional on-chain transaction each time two users want to connect and use them. [Silent payments](https://gist.github.com/RubenSomsen/c43b79517e7cb701ebf77eec6dbb46b8?permalink_comment_id=4113680) are a new experimental proposal that prevents the need for this additional on-chain transaction at the cost of extra bandwidth for receivers.
 
-Static payment codes are great for use with [DNS-based human readable addresses]({{ '/guide/how-it-works/human-readable-addresses/#dns-payment-instructions' | relative_url }}).
+Static payment codes are great for use with [DNS-based human readable addresses]({{ '/guide/how-it-works/human-readable-addresses/#bip-353-dns-payment-instructions' | relative_url }}).
 
 </div>
 
