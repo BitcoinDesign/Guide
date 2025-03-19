@@ -97,6 +97,12 @@ A survey and follow-up interview of 990 bitcoin users to determine bitcoin manag
 
 ## Independent research
 
+#### [What’s Driving Bitcoin Adoption in 2025?](https://blog.river.com/bitcoin-adoption-2025/)
+
+_2025 by River_
+
+An analysis of various aspects of bitcoin adoption over the last year, from custody and lightning network statistics, to institutional, nation-state and business statistics.
+
 #### [Bitcoin Payments: From Digital Gold to Everyday Currency](https://breez.technology/report/)
 
 _2025 by Breez and 1A1z_
