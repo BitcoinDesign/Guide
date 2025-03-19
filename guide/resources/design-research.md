@@ -97,6 +97,12 @@ A survey and follow-up interview of 990 bitcoin users to determine bitcoin manag
 
 ## Independent research
 
+#### [What’s Driving Bitcoin Adoption in 2025?](https://blog.river.com/bitcoin-adoption-2025/)
+
+_2025 by River_
+
+An analysis of various aspects of bitcoin adoption over the last year, from custody and lightning network statistics, to institutional, nation-state and business statistics.
+
 #### [2024 American Bitcoin Survey report](https://www.thenakamotoproject.org/report)
 
 _2024 by The Nakamoto Project_
