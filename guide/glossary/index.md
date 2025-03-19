@@ -175,7 +175,7 @@ See also [PayJoin](#payjoin-p2ep).
 
 ### Derivation path
 
-There are several standards for how to notate the path to a key and corresponding address in [HD wallets](#hd-wallet). It is important to know which ones are used and supported by a wallet-application when importing and exporting a wallet. The most common are:
+There are several standards for how to notate the path to a key and corresponding address in [HD wallets]({{ '/guide/glossary/wallet/#hd-wallet' | relative_url }}). It is important to know which ones are used and supported by a wallet-application when importing and exporting a wallet. The most common are:
 
 - [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki): original, deprecated
 - [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki): multi-account for HD wallets
@@ -312,7 +312,7 @@ A small piece of data that has all the information needed to generate a specific
    image = "/assets/images/guide/glossary/descriptors.jpg"
    retina = "/assets/images/guide/glossary/descriptors@2x.jpg"
    mobile = "/assets/images/guide/glossary/descriptors-mobile.jpg"
-   mobileRetina = "/assets/images/glossary/descriptors-mobile@2x.jpg"
+   mobileRetina = "/assets/images/guide/glossary/descriptors-mobile@2x.jpg"
    alt-text = "A four-panel comic explaining how descriptors provide instructions for key and address generation"
    width = 800
    height = 800

@@ -103,6 +103,12 @@ _2025 by River_
 
 An analysis of various aspects of bitcoin adoption over the last year, from custody and lightning network statistics, to institutional, nation-state and business statistics.
 
+#### [Bitcoin Payments: From Digital Gold to Everyday Currency](https://breez.technology/report/)
+
+_2025 by Breez and 1A1z_
+
+A report exploring how bitcoin has evolved from a store of value into an everyday medium of exchange, examining real-world adoption with case studies.
+
 #### [2024 American Bitcoin Survey report](https://www.thenakamotoproject.org/report)
 
 _2024 by The Nakamoto Project_
