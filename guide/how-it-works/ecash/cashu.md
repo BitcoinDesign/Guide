@@ -77,7 +77,6 @@ Cashu’s design prioritizes simplicity and speed, relying on a single operator 
 ### Wallets
 - [Boardwalk Cash](https://boardwalkcash.com/)
 - [Cashu.me](https://wallet.cashu.me/)
-- [eNuts](https://www.enuts.cash/)
 - [Macadamia](https://macadamia.cash/)
 - [Minibits](https://www.minibits.cash/)
 - [Nutshell](https://github.com/cashubtc/nutshell)
@@ -86,9 +85,11 @@ Cashu’s design prioritizes simplicity and speed, relying on a single operator 
 
 ### Services
 - [Athenut](https://athenut.com/)
+- [Cashu-brrr](https://brrr.gandlaf.com/)
+- [Cashu Decoder](https://nostrapps.github.io/cashu/)
 - [npub.cash](https://npub.cash/)
 - [Shopstr](https://shopstr.store/)
-- [Cashu Decoder](https://nostrapps.github.io/cashu/)
+
 
 For a comprehensive list of products and services that use Cashu visit [Awesome Cashu](https://github.com/cashubtc/awesome-cashu).
 
@@ -98,6 +99,7 @@ Cashu Documentation - Access the official Cashu documentation for detailed infor
 - [Cashu Documentation](https://docs.cashu.space/)
 - [Cashu Only Mint List](https://cashumints.space/)
 - [Cashu & Fedimint Mint List](https://bitcoinmints.com)
+- [Round Robin Auditor](https://audit.8333.space/)
 
 ---
 
