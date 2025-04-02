@@ -133,8 +133,7 @@ Open-source software development has existed for decades. Public review and deba
 - Join the conversation on [Discord]({{site.discord_invite_url}}). Navigate toward the channels that interest you. Dive into topics and conversations that draw you in.
 - Visit the [join page]({{ '/join/' | relative_url }}), which has lots of tips to get started, whether you're a newcomer or more experienced.
 - Try your hand at the [self-guided learning bootcamp]({{ '/guide/resources/learning-bootcamp/' | relative_url }}) for this guide.
-- We also created the [Open Design Guide]({{ 'https://opendesign.guide/' | relative_url }}) that covers all the basics of designing in open-source.
-
+- We also created the [Open Design Guide](https://opendesign.guide/) that covers all the basics of designing in open-source.
 ### Test, redesign, and engage in feedback
 
 - Experiment with bitcoin and lightning. Download a wallet and test small amounts. You can also test network features without using real bitcoin on Testnet. It works with some wallets.
