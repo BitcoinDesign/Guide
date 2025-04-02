@@ -85,13 +85,13 @@ Open design communities can have multidisciplinary teams with designers, develop
 
 We could argue bitcoin needs open design to stay true to its mission.
 
-* bitcoin is public and open source
+* Bitcoin is public and open source
 * It has public and unrestricted network participation
 * It allows permissionless transfer of value
 
 Thousands of projects have borrowed ideas, techniques, and code from bitcoin. Countless open-source experiments have arisen. To a designer, bitcoin is a robust foundation for collaboration. A foundation that comes with a responsibility toward the benefit of society.
 
-This ethical responsibility encompasses application design. Most people interact with applications instead of the underlying bitcoin technical protocol. If someone controls access to an application, it won't matter if the protocol is open. It is up to the global community to build [principled bitcoin applications](/guide/getting-started/principles/)
+This ethical responsibility encompasses application design. Most people interact with applications instead of the underlying bitcoin technical protocol. If someone controls access to an application, it won't matter if the protocol is open. It is up to the global community to build [principled bitcoin applications]({{ '/guide/getting-started/principles/' | relative_url }}).
 
 Bitcoin is a protocol created to give access to anyone. Access and accessibility go hand in hand. Designing bitcoin products means working on removing barriers of entry. It means making decisions to create a unique
 balance of features for ease of use.
@@ -131,19 +131,14 @@ Open-source software development has existed for decades. Public review and deba
 **Our focus is on exploring best practices to improve bitcoin product design.**
 
 - Join the conversation on [Discord]({{site.discord_invite_url}}). Navigate toward the channels that interest you. Dive into topics and conversations that draw you in.
-- Identify your strengths and goals. Figure out how they may fit within the community's vision. A good place to start is listening to a [Community Call](https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+Community+Call) or reading our [newsletter]({{ '/newsletter/' | relative_url }}).
-- Feel free to ask questions or ask for help in solving bitcoin design issues.
-- See some of the community [Projects](https://bitcoin.design/projects/).
-- Visit our [Contribute](https://bitcoin.design/contribute/) page.
-- Follow us on [Twitter](https://twitter.com/bitcoin_design)
-- Subscribe to [our YouTube](https://www.youtube.com/c/BitcoinDesign)
-
+- Visit the [join page]({{ '/join/' | relative_url }}), which has lots of tips to get started, whether you're a newcomer or more experienced.
+- Try your hand at the [self-guided learning bootcamp]({{ '/guide/resources/learning-bootcamp/' | relative_url }}) for this guide.
+- We also created the [Open Design Guide](https://opendesign.guide/) that covers all the basics of designing in open-source.
 ### Test, redesign, and engage in feedback
 
 - Experiment with bitcoin and lightning. Download a wallet and test small amounts. You can also test network features without using real bitcoin on Testnet. It works with some wallets.
 - Redesign a bitcoin and/or lightning application or focus on a user experience issue that interests you. Even as a brief exercise, a redesign is a great way to develop understanding of how something works.
 - Join a [Design Review](https://github.com/BitcoinDesign/Meta/issues?q=is%3Aissue+is%3Aopen+Design+Review+Call+). A call focusing on giving feedback to improve a specific bitcoin product. Products vary by call.
-- Join the [Wallet Improvement Project](https://github.com/BitcoinDesign/Guide/issues/493). It tests a list of real world bitcoin projects and suggests redesigns to their makers.
 
 ### Continuous learning
 
@@ -153,7 +148,7 @@ Read, watch, listen, and test. You can discover great material about bitcoin and
 
 - Try new ways of making your knowledge, tools, and workflows public and accessible to others.
 
-- Create free and open resources like an [icon set](https://bitcoinicons.com/), a [UI kit](https://www.bitcoinuikit.com/), or a workshop.
+- Create free and open resources like an [icon set](https://bitcoinicons.com/), a [UI kit](https://www.bitcoinuikit.com/), [research kit](https://bitcoinresearch.xyz) or a workshop.
 
 ## Licensing
 
@@ -171,6 +166,7 @@ This Bitcoin Design Guide uses three licenses ([MIT license]({{site.github_repos
 
 ---
 
+- [Open Design Guide](https://opendesign.guide)
 - [Open-design movement](https://en.wikipedia.org/wiki/Open-design_movement) on Wikipedia
 - [Open Source Design](https://opensourcedesign.net/) community
 - [Articles on open design](https://opendesign.ushahidi.com/open-design-articles/) by [Ushahidi](https://www.ushahidi.com/)
