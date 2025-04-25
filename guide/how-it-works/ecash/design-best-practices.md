@@ -333,7 +333,7 @@ Since ecash is still a relatively new technology this guide focuses on best prac
 ### User onboarding
 {% include image-gallery.html pages = page.images_onboarding %}
 
-It is recomended to start the onboarding process by explaining the risks associated with ecash and then guide the user through the process of joining their first mint or federation.
+It is recommended to start the onboarding process by explaining the risks associated with ecash and then guide the user through the process of joining their first mint or federation.
 
 #### Joining unknown mints or federations
 {% include image-gallery.html pages = page.images_unknown-mint %}

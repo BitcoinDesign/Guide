@@ -159,7 +159,7 @@ Depending on your skills and interest, you can help in a number of ways. We desi
 
 </div>
 
-If you are not familiar with the concepts of open design, we have a [great intro]({{ '/guide/getting-started/open-design/' | relative_url }}) for you. Open, public collaboration gives a lot of freedom to each participant and relies on us organically coming up with the organizational structures we want. The result is that things can sometimes look unorganized or unintuitive from the outside. The big benefit is that you can choose how you want to participate and can have a say in everthing.
+If you are not familiar with the concepts of open design, we have a [great intro]({{ '/guide/getting-started/open-design/' | relative_url }}) for you. Open, public collaboration gives a lot of freedom to each participant and relies on us organically coming up with the organizational structures we want. The result is that things can sometimes look unorganized or unintuitive from the outside. The big benefit is that you can choose how you want to participate and can have a say in everything.
 
 Some ways of contributing could be:
 
