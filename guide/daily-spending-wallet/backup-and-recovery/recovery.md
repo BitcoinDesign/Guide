@@ -39,7 +39,7 @@ images_manual_recovery:
       caption: User selects \"advanced\" from the restore screen, and is taken here.
     - file: restore-manual-recovery-phrase-error
       modalImage: restore-manual-recovery-phrase-error-full
-      alt: Screen showing an incorrectly typed word highlighed in red.
+      alt: Screen showing an incorrectly typed word highlighted in red.
       caption: User enters their recovery phrase. The app can notify them if a word is incorrect before they have finished typing it.
     - file: restore-manual-recovery-phrase-progress
       modalImage: restore-manual-recovery-phrase-progress-full
