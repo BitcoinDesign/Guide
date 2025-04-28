@@ -211,7 +211,7 @@ These are the page properties at the top of markdown files, between the dividers
 - If a new page is a sub-section, make sure to include a reference in the section landing page ([example](https://bitcoin.design/guide/how-it-works/))
 - A simpler writing style allows your content to be more accessible to more readers (especially ones for whom english is not their native language)
 - For new pages, make sure to update the "Next" and "Previous" buttons on the respective next and previous pages
-- Look for opportunities to cross-reference other content in the guide. If somethig is already well-covered elsewhere, you can build on that
+- Look for opportunities to cross-reference other content in the guide. If something is already well-covered elsewhere, you can build on that
 
 **Images**
 - Ensure image content (especially text in images) is legible on mobile devices
