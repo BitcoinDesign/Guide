@@ -252,7 +252,7 @@ Documentation of the user research, redesign and testing process of Coinhako, a 
 
 #### [Lightning Network UX Research](https://patestevao.com/work/lightning-network-ux-research/)
 
-The study conducted to look into the interactions between users and the lightning payments. It also reviewers three well-known projects at that time and looks through their user-experience.
+The study conducted to look into the interactions between users and the lightning payments. It also reviews three well-known projects at that time and looks through their user-experience.
 
 _2019 by Estevão._
 
