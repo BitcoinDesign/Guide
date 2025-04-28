@@ -57,7 +57,7 @@ images_alice-enable-device:
       alt: Screen showing different options to export the wallet configuration.
       caption: Alice connects her BitBox via USB-C to export the wallet configuration.
     - file: alice-enable-device/enable-alice-device-flow
-      alt: Placholder screen representing the device-specific wallet activation flow.
+      alt: Placeholder screen representing the device-specific wallet activation flow.
       caption: The app guides her through the import flow on her BitBox.
     - file: alice-enable-device/enable-alice-success
       alt: Success screen showing the option activate another device or go to the home screen.
