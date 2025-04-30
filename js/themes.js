@@ -90,7 +90,7 @@ var themes = [
     flipLayoutOnMobile: false,
     author: {
         name: "Christoph Ono",
-        link: "https://github.com/BitcoinDesign/Guide/issues/45"
+        link: "https://github.com/BitcoinDesign/Guide/pull/1162"
     }
   },
 //   {
