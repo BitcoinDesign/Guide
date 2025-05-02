@@ -39,6 +39,17 @@ https://www.figma.com/file/qr4P17z6WSPADm6oW0cKw2/?node-id=25%3A2
 %}
 
 # Address
+{:.no_toc}
+
+---
+
+<div class="glossary-toc" markdown="1">
+* Table of contents
+{:toc}
+</div>
+
+---
+
 A bitcoin address is a 26-62 alphanumeric character identifier that is used to receive bitcoin. There are several address formats based on different specifications.
 
 When users enter an address, these formats have specific prefixes, so it is possible to determine which format is being used.
@@ -110,6 +121,8 @@ The receiver should then have the ability to switch to a Script or Taproot addre
 Handling addresses can be stressful when sending bitcoin. Transactions cannot be reversed, and sending to an incorrect address may mean loss of funds. While address formats are what they are, visual formatting can make it easier for users to compare addresses and ensure their accuracy.
 
 Especially when addresses are displayed in a compacted way, make sure to offer a more easily readable alternative. Spacing, subtle coloration, and use of mono-space fonts help users identify chunks of the address to compare, and distinguish characters better.
+
+Choose a typeface whose characters can be clearly distinguished (such as [Source Code Pro](https://github.com/adobe-fonts/source-code-pro) or [Fira Mono](https://github.com/mozilla/Fira)). Keep in mind that each address format has a different set of supported characters. For example, [Bech32](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki#user-content-Segwit_address_format) addresses do not allow _"1"_, _"b"_, _"i"_, and _"o"_ in their data parts.
 
 </div>
 
