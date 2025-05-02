@@ -35,54 +35,54 @@ Illustration sources
 
 # Getting started
 
-Welcome to the Bitcoin Design Guide! You’re in for an adventure. This chapter is all about the big concepts that are helpful to be familiar with when creating bitcoin products. You’ll find a summary of concepts on this page. Click through if you would like to dig deeper into a specific topic. The guide isn't a comprehensive overview of all bitcoin topics, but only the ones you should know as a designer working in this space.
+Welcome to the Bitcoin Design Guide! You’re in for an adventure. This chapter is all about the big concepts that are helpful to be familiar with when creating bitcoin products. You’ll find a summary of concepts on this page. Click through if you would like to dig deeper into a specific topic. The guide isn’t a comprehensive overview of all bitcoin topics, but only the ones you should know as a designer working in this space.
 
 ---
 
 ### [Why bitcoin is unique]({{ '/guide/getting-started/why-bitcoin-is-unique/' | relative_url }})
 
-The internet has opened an infinite design space for information and communication. Bitcoin adds the new dimension of transferring value that could bring similar change as previous waves of innovation.
+Ever wonder what makes bitcoin special? Here you'll discover how this digital currency works without banks, has a limited supply, and gives people worldwide financial access. See why bitcoin might be changing our relationship with money in the digital age.
 
 ---
 
 ### [Why design for bitcoin]({{ '/guide/getting-started/why-design-for-bitcoin/' | relative_url }})
 
-Bitcoin is fundamentally open and participatory and allows designers and creators to explore and shape experiences for users around the globe.
+Curious about designing for bitcoin? This is your invitation to join an exciting frontier where designers are still rare and your work can make a real difference. Find out why creating bitcoin experiences offers unique challenges and rewards you won't find in traditional design fields.
 
 ---
 
 ### [Open design]({{ '/guide/getting-started/open-design/' | relative_url }})
 
-Open design is about global collaboration that balances the free exchange of design information, the independence of individual designers and the collective power of collaboration.
+Dive into the world of open design, where collaboration trumps competition. See how sharing ideas freely helps create better bitcoin products. Discover why this approach perfectly matches bitcoin's community-driven spirit and how you can become part of this global movement.
 
 ---
 
 ### [The visual language of bitcoin]({{ '/guide/getting-started/visual-language/' | relative_url }})
 
-As an open and public protocol, bitcoin does not have a strictly defined brand. Yet there is a recognizable symbol that has evolved and remixed endlessly.
+From golden coins to the famous ₿ symbol, see how bitcoin's look has evolved through community creativity. Explore the rich visual culture that's grown around bitcoin, from memes to professional illustrations, and why this gives designers unusual creative freedom.
 
 ---
 
 ### [Technology primer]({{ '/guide/getting-started/technology-primer/' | relative_url }})
 
-Learn the basics behind the technologies that make bitcoin work, from what a bitcoin is to how transactions are confirmed.
+Don't worry—you don't need to be a tech genius to understand bitcoin! Here we break down the basics in plain language. Learn just enough about blockchains, mining, and payment networks to feel confident designing great bitcoin products.
 
 ---
 
 ### [Bitcoin design principles]({{ '/guide/getting-started/principles/' | relative_url }})
 
-Core bitcoin design principles recommended by the Bitcoin Design Community.
+What makes a great bitcoin product? Explore the core principles that guide thoughtful bitcoin design. Learn why giving users control of their money matters, how to make security less intimidating, and ways to create products that work for people everywhere.
 
 ---
 ### [Software categories]({{ '/guide/getting-started/software/' | relative_url }})
 
-Bitcoin applications roughly fall into a defined set of categories, from consumer-friendly wallets, to merchant tools, and more.
+Get the lay of the land with this tour of bitcoin software. From wallets for everyday users to specialized tools for developers, see how different applications serve different needs. Understanding this ecosystem will help you place your own design work in context.
 
 ---
 
 ### [Hardware categories]({{ '/guide/getting-started/hardware/' | relative_url }})
 
-Whether for security or participating in the network, bitcoin hardware is an essential part of the ecosystem and user experience.
+Beyond apps and websites, bitcoin has spawned a whole world of physical devices. Check out the specialized hardware that helps keep bitcoin secure and accessible—from tiny hardware wallets protecting millions in bitcoin to powerful mining machines securing the network.
 
 ---
 
