@@ -58,6 +58,9 @@ exampleImagesThree:
       caption: Ensure the information can be understood by those with color vision defficiences. For example, by using "+" and "-" indicate withdrawals and deposits instead of green and red coloration only.
 video_base: /assets/images/guide/designing-products/accessibility/
 videos:
+    - youtubeId: qSJn6KN2Mlw
+      file: designathon-accessibility-resources
+      caption: Presentation on Accessibility Resources
     - youtubeId: dQc2YWxOB6A
       file: learning-bitcoin-and-design-accessibility
       caption: Learning bitcoin & design call on testing
