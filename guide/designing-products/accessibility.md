@@ -58,6 +58,9 @@ exampleImagesThree:
       caption: Ensure the information can be understood by those with color vision defficiences. For example, by using "+" and "-" indicate withdrawals and deposits instead of green and red coloration only.
 video_base: /assets/images/guide/designing-products/accessibility/
 videos:
+    - youtubeId: qSJn6KN2Mlw
+      file: designathon-accessibility-resources
+      caption: Presentation on Accessibility Resources
     - youtubeId: dQc2YWxOB6A
       file: learning-bitcoin-and-design-accessibility
       caption: Learning bitcoin & design call on testing
@@ -70,6 +73,9 @@ videos:
     - youtubeId: 17mwm5x1Wa8
       file: wallet-of-satoshi-accessibility-test
       caption: Test summary for Wallet of Satoshi
+    - youtubeId: QR8A2jjbYhE
+      file: sparrow-wallet-test
+      caption: Test summary for Sparrow Wallet
 ---
 
 <!--
@@ -158,6 +164,7 @@ The accessibility pages by [Apple](https://www.apple.com/accessibility/), [Micro
 
 ### Sources of information
 
+- [Bitcoin accessibility guide](https://jason-me.github.io/bitcoin-universal-design/)
 - [What is accessibility?](https://www.interaction-design.org/literature/topics/accessibility)
 - [Web accessibility](https://en.wikipedia.org/wiki/Web_accessibility)
 - [Material design accessibility tips](https://material.io/design/usability/accessibility.html#understanding-accessibility)
