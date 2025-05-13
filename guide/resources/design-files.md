@@ -64,6 +64,12 @@ files:
     retina: /assets/images/guide/resources/design-files/bitcoin-design-stickers@2x.jpg
     width: 400
     height: 210
+  - caption: <a href="https://www.figma.com/community/file/1499681205477242413/bitcoin-design-shirts">Bitcoin Design T-Shirts</a>
+    alt: Close-up of a t-shirt with Bitcoin Design Community and Foundation logos, and the text 'Make magic internet money feel magical'
+    image: /assets/images/guide/resources/design-files/shirts.jpg
+    retina: /assets/images/guide/resources/design-files/shirts@2x.jpg
+    width: 400
+    height: 210
 ---
 
 <!--
