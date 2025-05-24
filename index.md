@@ -12,18 +12,6 @@ videoWidth: 1600
 videoHeight: 840
 ---
 
-<!--
-A temporary insertion to promo the designathon.
-Using HTML instead of markdown to make the image a link.
--->
-### Join the [Bitcoin Designathon](https://event.bitcoin.design)
-
-We are organizing a designathon! Imagine a traditional hackathon, but this time focused only on design. Our goal is to motivate designers and builders to get together and collaboratively explore ideas and concepts in and around the bitcoin ecosystem. Come join us!
-
-[Find out more](https://event.bitcoin.design){: .button }
-
----
-
 ## We are helping make [bitcoin](https://bitcoin.org) more intuitive and accessible.
 
 As bitcoin’s popularity continues to rise, it is essential that everyone be able to participate in this new economy regardless of technical expertise or geography. That can only happen if creators everywhere have the resources and community necessary to foster better bitcoin experiences.
