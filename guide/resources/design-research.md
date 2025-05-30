@@ -37,65 +37,21 @@ Below is a collection of published user research findings around bitcoin, from a
 ---
 
 <div class="glossary-toc" markdown="1">
-- [Journal Articles](#journal-articles)
 - [Independent research](#independent-research)
+- [Journal Articles](#journal-articles)
 - [Case studies](#case-studies)
 - [Blog posts & write-ups](#blog-posts--write-ups)
 </div>
 
 ---
 
-## Journal articles
-
-#### [Bits Under the Mattress: Understanding Different Risk Perceptions and Security Behaviours of Crypto-Asset Users](https://dl.acm.org/doi/pdf/10.1145/3411764.3445679)
-
-_2021 by Abramova, Voskobojnikov, Beznosov, and Böhme._
-
-A survey of security behaviours among three bitcoin user archetypes, showing that cypherpunks tend to use self-managed security solutions, whereas hodlers and rookies use either custodial solutions or non-custodial wallets.
-
-#### [Investigating the Adoption Factors of Cryptocurrencies—A Case of Bitcoin: Empirical Evidence From China](https://journals.sagepub.com/doi/full/10.1177/2158244021998704)
-
-_2021 by Nadeem, Liu, Beznosov, and Pitafi._
-
-A survey of 385 Chinese residents that aims to investigate the adoption factors influencing bitcoin. Results reveal that perceived ease of use and the perceived usefulness have a positive relationship with the intention to use bitcoin.
-
-#### [Non-adoption of crypto-assets: Exploring the role of trust, self-efficacy, and risk](https://informationsecurity.uibk.ac.at/pdfs/ECIS21_Non-Adoption_of_Crypto-Assets.pdf)
-
-_2021 by Voskobojnikov, Abramova, Beznosov, and Böhme._
-
-A survey of 200 users and 204 non-users of crypto-assets about the roles of trust, self-efficacy, and risk on adoption intention. Results found that trust is a critical factor affecting adoption intention.
-
-#### [The U in Crypto Stands for Usable: An Empirical Study of User Experience with Mobile Cryptocurrency Wallets](https://dl.acm.org/doi/pdf/10.1145/3411764.3445407)
-
-_2021 by Voskobojnikov, Wiese, M. Koushki, Roth, and Beznosov._
-
-An analysis of app reviews of the top five mobile cryptocurrency wallets suggesting that both new and experienced users struggle with general and domain-specific UX issues that might lead to dangerous errors and irreversible monetary losses.
-
-#### [User Perception of Bitcoin Usability and Security across Novice Users](https://www.sciencedirect.com/science/article/abs/pii/S1071581918301459)
-
-_2019 by Alshamsi and Andras._
-
-A survey of 22 undergraduate students at Keele University concluding that bitcoin was still in its infancy at the time of writing and required user education and a new way of thinking. The study recommends user-centered design to develop users’ mental models and deepen their understanding of digital payment technology.
-
-#### [A First Look at the Usability of Bitcoin Key Management](https://arxiv.org/pdf/1802.04351.pdf)
-
-_2018 by Eskandari, Barrera, Stobert, and Clark._
-
-A broad usability evaluation of key management techniques used by six representative bitcoin clients. Findings show that bitcoin shares many fundamental challenges known from other domains, and also presents a unique opportunity to rethink key management for end users.
-
-#### [An Evaluation of User Attitudes Towards Anonymity in Bitcoin](https://www.diva-portal.org/smash/get/diva2:1141672/FULLTEXT01.pdf)
-
-_2017 by Pajunen._
-
-A survey of 50 users on the [r/Bitcoin subreddit](https://www.reddit.com/r/Bitcoin/) that showed bitcoin users value their anonymity, which suggests that anonymity is an integral part of bitcoin, at least from an end user perspective.
-
-#### [The Other Side of the Coin: User Experiences with Bitcoin Security and Privacy](https://publications.sba-research.org/publications/TheOtherSideOfTheCoin_FC16preConf.pdf)
-
-_2017 by Krombholz, Judmayer, Gusenbauer, and Weippl._
-
-A survey and follow-up interview of 990 bitcoin users to determine bitcoin management strategies and identify how they deploy security measures to protect their keys and bitcoins. It was found that many do not use all security capabilities of their selected applications and have significant misconceptions on how to remain anonymous and protect their privacy.
-
 ## Independent research
+
+#### [Global State of Crypto](https://www.gemini.com/state-of-crypto-2025)
+
+_2025 by Gemini_
+
+7,205 consumers across the US, UK, France, Italy, Singapore, and Australia were asked about crypto ownership, attitudes towards digital assets, the influence of policy changes, and purchasing/investment plans.
 
 #### [What’s Driving Bitcoin Adoption in 2025?](https://blog.river.com/bitcoin-adoption-2025/)
 
@@ -229,6 +185,56 @@ A survey of over 200 crypto holders regarding their frequency and experiences in
 _2020 by Blandin, Pieters, Wu, Eisermann, Dek, Taylor and Njoki._
 
 A review of the changes in the industry since the 2nd report in 2018. The study gathers survey data from more than 280 cryptoasset companies in 59 countries, focusing on the following four key industry segments: exchanges, payments, custody, and mining.
+
+## Journal articles
+
+#### [Bits Under the Mattress: Understanding Different Risk Perceptions and Security Behaviours of Crypto-Asset Users](https://dl.acm.org/doi/pdf/10.1145/3411764.3445679)
+
+_2021 by Abramova, Voskobojnikov, Beznosov, and Böhme._
+
+A survey of security behaviours among three bitcoin user archetypes, showing that cypherpunks tend to use self-managed security solutions, whereas hodlers and rookies use either custodial solutions or non-custodial wallets.
+
+#### [Investigating the Adoption Factors of Cryptocurrencies—A Case of Bitcoin: Empirical Evidence From China](https://journals.sagepub.com/doi/full/10.1177/2158244021998704)
+
+_2021 by Nadeem, Liu, Beznosov, and Pitafi._
+
+A survey of 385 Chinese residents that aims to investigate the adoption factors influencing bitcoin. Results reveal that perceived ease of use and the perceived usefulness have a positive relationship with the intention to use bitcoin.
+
+#### [Non-adoption of crypto-assets: Exploring the role of trust, self-efficacy, and risk](https://informationsecurity.uibk.ac.at/pdfs/ECIS21_Non-Adoption_of_Crypto-Assets.pdf)
+
+_2021 by Voskobojnikov, Abramova, Beznosov, and Böhme._
+
+A survey of 200 users and 204 non-users of crypto-assets about the roles of trust, self-efficacy, and risk on adoption intention. Results found that trust is a critical factor affecting adoption intention.
+
+#### [The U in Crypto Stands for Usable: An Empirical Study of User Experience with Mobile Cryptocurrency Wallets](https://dl.acm.org/doi/pdf/10.1145/3411764.3445407)
+
+_2021 by Voskobojnikov, Wiese, M. Koushki, Roth, and Beznosov._
+
+An analysis of app reviews of the top five mobile cryptocurrency wallets suggesting that both new and experienced users struggle with general and domain-specific UX issues that might lead to dangerous errors and irreversible monetary losses.
+
+#### [User Perception of Bitcoin Usability and Security across Novice Users](https://www.sciencedirect.com/science/article/abs/pii/S1071581918301459)
+
+_2019 by Alshamsi and Andras._
+
+A survey of 22 undergraduate students at Keele University concluding that bitcoin was still in its infancy at the time of writing and required user education and a new way of thinking. The study recommends user-centered design to develop users’ mental models and deepen their understanding of digital payment technology.
+
+#### [A First Look at the Usability of Bitcoin Key Management](https://arxiv.org/pdf/1802.04351.pdf)
+
+_2018 by Eskandari, Barrera, Stobert, and Clark._
+
+A broad usability evaluation of key management techniques used by six representative bitcoin clients. Findings show that bitcoin shares many fundamental challenges known from other domains, and also presents a unique opportunity to rethink key management for end users.
+
+#### [An Evaluation of User Attitudes Towards Anonymity in Bitcoin](https://www.diva-portal.org/smash/get/diva2:1141672/FULLTEXT01.pdf)
+
+_2017 by Pajunen._
+
+A survey of 50 users on the [r/Bitcoin subreddit](https://www.reddit.com/r/Bitcoin/) that showed bitcoin users value their anonymity, which suggests that anonymity is an integral part of bitcoin, at least from an end user perspective.
+
+#### [The Other Side of the Coin: User Experiences with Bitcoin Security and Privacy](https://publications.sba-research.org/publications/TheOtherSideOfTheCoin_FC16preConf.pdf)
+
+_2017 by Krombholz, Judmayer, Gusenbauer, and Weippl._
+
+A survey and follow-up interview of 990 bitcoin users to determine bitcoin management strategies and identify how they deploy security measures to protect their keys and bitcoins. It was found that many do not use all security capabilities of their selected applications and have significant misconceptions on how to remain anonymous and protect their privacy.
 
 ## Case studies
 
