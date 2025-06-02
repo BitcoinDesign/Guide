@@ -92,6 +92,16 @@ Legacy addresses begin with the number 1, can contain upper and lowercase charac
 
 Example: `1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2`
 
+### Silent payments address
+
+This is a new type of address used by the silent payments protocol ([BIP-352](https://github.com/bitcoin/bips/blob/master/bip-0352.mediawiki)). It is different from other address types on this page, since it doesn't appear on the blockchain itself. Silent payments addresses are used wallets to generate unique on-chain ([taproot]({{'/guide/glossary/address/#taproot-address---p2tr' | relative_url}}) addresses that funds are sent to.
+
+Since the protocol ensures that unique on-chain addresses are generated, the [address reuse]({{'/guide/glossary/address/#silent-payments-address' | relative_url}}) problem is automatically avoided.
+
+Silent payments addresses starts with `sp1q`, and are not case sensitive.
+
+Example: ` `
+
 ### Change address
 
 When the output of a transaction is used as the input of another transaction, it must be spent entirely. Sometimes the value of the output is higher than what the user wishes to pay. In this case, the bitcoin client generates a new bitcoin address, and sends the difference back to this address. This is known as *change address*. The change address format used will usually be the default format used by the wallet application.
