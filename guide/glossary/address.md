@@ -96,7 +96,7 @@ Example: `1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2`
 
 This is a new type of address used by the silent payments protocol ([BIP-352](https://github.com/bitcoin/bips/blob/master/bip-0352.mediawiki)). It is different from other address types on this page, since it doesn't appear on the blockchain. Silent payments addresses are used by wallets to generate unique on-chain ([taproot]({{'/guide/glossary/address/#taproot-address---p2tr' | relative_url}}) addresses during every transaction.
 
-Since the protocol ensures that unique on-chain addresses are generated, the [address reuse]({{'/guide/glossary/address/#silent-payments-address' | relative_url}}) problem is automatically avoided. Learn more about silent payments UX [here]({{'/guide/how-it-works/address/#silent-payments' | relative_url}}).
+Since the protocol ensures that unique on-chain addresses are generated, the [address reuse]({{'/guide/glossary/address/#address-reuse' | relative_url}}) problem is automatically avoided. Learn more about silent payments UX [here]({{'/guide/how-it-works/address/#silent-payments' | relative_url}}).
 
 Silent payments addresses starts with `sp1q`, and are not case sensitive.
 
