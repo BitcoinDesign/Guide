@@ -251,7 +251,7 @@ Whatever pluralization scheme you choose, it's good to be consistent with this c
 
 ## New convention: ₿-only format
 
-As June 2025 there is a new convention emerging among a small handful of forward-looking wallets for simplifying how bitcoin quantities are represented in text and product UIs.
+As of June 2025 there is a new convention emerging among a small handful of forward-looking wallets for simplifying how bitcoin quantities are represented in text and product UIs.
 
 ### Motivation
 
