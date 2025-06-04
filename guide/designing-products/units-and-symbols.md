@@ -18,6 +18,10 @@ images_app:
     - file: settings-local-currency
       alt: Mobile phone screen showing currency unit options by country.
       caption: Local currency options.
+images_b:
+    - file: b-unit
+      alt: Wallet homescreen showing use of bitcoin quantities as integers
+      caption: Showing bitcoin quantities as integers with the ₿ symbol.
 images_home:
     - file: home-unit-sats
       alt: Home screen showing user funds displays in satoshis.
@@ -244,6 +248,49 @@ Consider the best way to pluralize bitcoin units in your product. Treatment of p
 Typically, the word "bitcoin" can mean a singular or a plural. In the early days of bitcoin, it was common to see people use the word "bitcoins" as a plural. This has become a less commonly used word, though it's still grammatically correct. However, it's far more common to see the satoshi (sat) expressed as "satoshis" (sats) when plural.
 
 Whatever pluralization scheme you choose, it's good to be consistent with this choice throughout your product.
+
+## New convention: ₿-only format
+
+As June 2025 there is a new convention emerging among a small handful of forward-looking wallets for simplifying how bitcoin quantities are represented in text and product UIs.
+
+### Motivation
+
+This approach is motivated by wanting minimize confusion posed by (1) inscrutable decimal quantities (2) the unfamiliar word "satoshis" or "sats" appearing in product UIs, and (3) the inconsistency of sometimes showing decimal quantities and other times integer quantities. 
+
+The aim is to achieve greater simplicity and consistency in how bitcoin quantities are represented everywhere. 
+
+This new convention was inspired by some of the thinking articulated in [BIP-177](https://github.com/bitcoin/bips/blob/master/bip-0177.mediawiki). 
+
+### Proposed best practices
+
+The following best practices are proposed for wallets wanting to adopt the ₿-only format: 
+
+- Show quantities only in integers form, representing the number of base units of bitcoin
+- Preface quantities with the ₿ symbol
+- Include a fiat value below the bitcoin quantity for maximum clarity 
+- Use 'BTC' to refer to 100M base units (i.e. 1BTC = ₿100,000,000)
+- Deprecate use of decimal representation
+- Deprecate explicit use of "satoshis" or "sats" in product UIs
+
+### Examples
+
+Examples of how legacy bitcoin quantities would be represented under this new convention: 
+
+- `0.00000100 BTC -> ₿100`
+- `0.00005449 BTC -> ₿5,449`
+- `3.25 BTC -> ₿325,000,000 or ₿325M`
+- `15,000 sats -> ₿15,000 or ₿15K`
+
+### Sample mockup
+
+This ₿-only format is naturally accomodated in bitcoin product UIs. For example, a common wallet home screen migth look like:
+
+{% include image-gallery.html pages = page.images_b %}
+
+### Adoption
+
+Wallets that have adopted this new convention include: [Boardwalk Cash](https://boardwalkcash.com/), [BitKit](https://bitkit.to/), and early mockups of [Square's next generation POS](https://x.com/Square/status/1927396327039684690). 
+
 
 ---
 
