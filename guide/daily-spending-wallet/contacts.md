@@ -185,10 +185,6 @@ imagesOwner:
     layout = "full-width"
 %}
 
-
-# Contacts
-{:.no_toc}
-
 <!--
 
 This page describes a UI system and user flows to handle contacts in a mobile bitcoin wallet.
@@ -201,11 +197,8 @@ https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototyp
 
 -->
 
-Whether we’re sending emails, physical mail, or following someone on social media, we primarily think in terms of names and faces, and not the respective address or user ID.
 
-Addresses, invoices, node IDs and other transaction endpoints in bitcoin and lightning are highly unintuitive. Abstracting them via a contact list can create a much smoother user experience. With the advent & growing popularity of reusable payment request formats such as [silent payments]({{ '/guide/how-it-works/silent-payments' | relative_url }}), [bolt-12]({{ '/guide/how-it-works/payment-request-formats/#offers' | relative_url }}) and [BIP-353]({{ '/guide/how-it-works/human-readable-addresses/#bip-353-dns-payment-instructions' | relative_url }}), bitcoin's interaction model itself can be centred around contacts. There are many [formats]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }}), each with unique properties and varying levels of maturity and adoption, requiring unique design solutions. This page uses the more approachable term "address", along with various UI techniques, to abstract these complexities for users.
-
-Let's go over common user interactions around managing contacts. This will illustrate how such a feature could work, and helps explain the underlying design problems and decisions.
+# Contacts
 
 ---
 
@@ -215,6 +208,13 @@ Let's go over common user interactions around managing contacts. This will illus
 </div>
 
 ---
+
+Whether we’re sending emails, physical mail, or following someone on social media, we primarily think in terms of names and faces, and not the respective address or user ID.
+
+Addresses, invoices, node IDs and other transaction endpoints in bitcoin and lightning are highly unintuitive. Abstracting them via a contact list can create a much smoother user experience. With the advent & growing popularity of reusable payment request formats such as [silent payments]({{ '/guide/how-it-works/silent-payments' | relative_url }}), [bolt-12]({{ '/guide/how-it-works/payment-request-formats/#offers' | relative_url }}) and [BIP-353]({{ '/guide/how-it-works/human-readable-addresses/#bip-353-dns-payment-instructions' | relative_url }}), bitcoin's interaction model itself can be centred around contacts. There are many [formats]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }}), each with unique properties and varying levels of maturity and adoption, requiring unique design solutions. This page uses the more approachable term "address", along with various UI techniques, to abstract these complexities for users.
+
+Let's go over common user interactions around managing contacts. This will illustrate how such a feature could work, and helps explain the underlying design problems and decisions.
+
 
 ### Adding a contact
 
