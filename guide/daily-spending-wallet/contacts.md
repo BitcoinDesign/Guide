@@ -203,7 +203,7 @@ https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototyp
 
 Whether we’re sending emails, physical mail, or following someone on social media, we primarily think in terms of names and faces, and not the respective address or user ID.
 
-Invoices, node IDs and other transaction endpoints in bitcoin and lightning are highly unintuitive. Abstracting them via a contact list can create a much smoother user experience. There are many [payment request formats]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }}), each with unique properties and varying levels of maturity and adoption, requiring unique design solutions. This page uses the more approachable term "address", along with various UI techniques, to abstract these complexities for users.
+Addresses, invoices, node IDs and other transaction endpoints in bitcoin and lightning are highly unintuitive. Abstracting them via a contact list can create a much smoother user experience. With the advent & growing popularity of reusable payment request formats such as [silent payments]({{ '/guide/how-it-works/silent-payments' | relative_url }}), [bolt-12]({{ '/guide/how-it-works/payment-request-formats/#offers' | relative_url }}) and [BIP-353]({{ '/guide/how-it-works/human-readable-addresses/#bip-353-dns-payment-instructions' | relative_url }}), bitcoin's interaction model itself can be centred around contacts. There are many [formats]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }}), each with unique properties and varying levels of maturity and adoption, requiring unique design solutions. This page uses the more approachable term "address", along with various UI techniques, to abstract these complexities for users.
 
 Let's go over common user interactions around managing contacts. This will illustrate how such a feature could work, and helps explain the underlying design problems and decisions.
 
@@ -232,7 +232,7 @@ The contacts screen should offer various features for editing and organization.
 
 ### Importing an address
 
-This scenario can be initiated by copying a lightning address to the clipboard, scanning a QR code, or tapping a payment link (see [payment entry points]({{ '/guide/daily-spending-wallet/sending/#payment-entry-points' | relative_url }})). An address is passed into the application and, where it's recognized and appropriate options are shown to the user. In the example below, the user adds the address as a new contact.
+This scenario can be initiated by copying an address to the clipboard, scanning a QR code, or tapping a payment link (see [payment entry points]({{ '/guide/daily-spending-wallet/sending/#payment-entry-points' | relative_url }})). An address is passed into the application and, where it's recognized and appropriate options are shown to the user. In the example below, the user adds the address as a new contact.
 
 {% include image-gallery.html pages = page.imagesImportAddress %}
 
@@ -240,7 +240,7 @@ This scenario can be initiated by copying a lightning address to the clipboard, 
 
 This sequence is similar to the one above. The difference is that a payment request was passed into the application, which contains different data and also includes a specific user action, and therefore requires different user flows. The one below shows how a user has scanned a payment request and assigns a contact to the payment.
 
-Some payment request formats may include an address that can receive repeatedly. In this case, the address is added to the contact for future use. For [single use payment requests]({{ '/guide/daily-spending-wallet/requesting/' | relative_url }}), only the payment is linked.
+Some payment request formats such as silent payment addresses and BIP-353 may include an address that can be repeatedly used without privacy compromises. In such cases, the address is added to the contact for future use. For [single use payment requests]({{ '/guide/daily-spending-wallet/requesting/' | relative_url }}), only the payment is linked.
 
 Payment requests may also contain recipient names. These can be used to suggest the name for a new contact to the user. Names can be spoofed, so they should not be automatically assigned without user approval.
 
