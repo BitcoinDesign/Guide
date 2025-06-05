@@ -283,7 +283,7 @@ Examples of how legacy bitcoin quantities would be represented under this new co
 
 ### Sample mockup
 
-This ₿-only format is naturally accomodated in bitcoin product UIs. For example, a common wallet home screen migth look like:
+This ₿-only format is naturally accommodated in bitcoin product UIs. For example, a common wallet home screen might look like:
 
 {% include image-gallery.html pages = page.images_b %}
 
