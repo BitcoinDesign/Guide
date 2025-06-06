@@ -21,10 +21,10 @@ images_app:
 images_b:
     - file: before
       alt: Wallet homescreen showing traditional display of bitcoin quantities.
-      caption: Before: bitcoin quantities represented in traditional formats.
+      caption: Before - bitcoin quantities represented in traditional formats.
     - file: after
       alt: Wallet homescreen showing use of bitcoin quantities in ₿-only format.
-      caption: After: bitcoin quantities represented in ₿-only format.
+      caption: After - bitcoin quantities represented in ₿-only format.
 images_home:
     - file: home-unit-sats
       alt: Home screen showing user funds displays in satoshis.
