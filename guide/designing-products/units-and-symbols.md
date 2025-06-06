@@ -260,9 +260,9 @@ As of June 2025 there is a new convention emerging among a handful of wallets se
 
 This approach is motivated by wanting to minimize confusion posed by several aspects of the traditional approach to showing quantities: 
 
-1. Inscrutable decimal quantities - for small quantities it is difficult for user to parse numbers with many leading zeroes.
-2. Meaning of "sats". "The word "satoshis" or "sats" appearing in product UIs, often alongside BTC or bitcoin, raises the question for new users: what are these units and how do they relate to bitcoin? It presents an eduation/understanding hurdle. 
-3. Inconsistency. The current dual convention that is typically employed has products sometimes showing quantities in decimal representation and other times integer quantities. This inconsistency creates unpredictability in the product experience. 
+1. *Inscrutable decimal quantities.* For small quantities it is difficult for user to parse numbers with many leading zeroes.
+2. *Meaning of "sats".* "The word "satoshis" or "sats" appearing in product UIs, often alongside BTC or bitcoin, raises the question for new users: what are these units and how do they relate to bitcoin? It presents an eduation/understanding hurdle. 
+3. *Inconsistency.* The current dual convention that is typically employed has products sometimes showing quantities in decimal representation and other times integer quantities. This inconsistency creates unpredictability in the product experience. 
 
 The BEFORE & AFTER [sample mockups](#sample-mockup) below demonstrate how these points of confusion are remedied with this new ₿-only format.
 
