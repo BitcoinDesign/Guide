@@ -20,11 +20,11 @@ images_app:
       caption: Local currency options.
 images_b:
     - file: before
-      alt: Wallet homescreen showing traditional display of bitcoin quantities
-      caption: Before: bitcoin quantities represented in traditional formats
+      alt: Wallet homescreen showing traditional display of bitcoin quantities.
+      caption: Before: bitcoin quantities represented in traditional formats.
     - file: after
-      alt: Wallet homescreen showing use of bitcoin quantities in ₿-only format
-      caption: After: bitcoin quantities represented in ₿-only format
+      alt: Wallet homescreen showing use of bitcoin quantities in ₿-only format.
+      caption: After: bitcoin quantities represented in ₿-only format.
 images_home:
     - file: home-unit-sats
       alt: Home screen showing user funds displays in satoshis.
@@ -264,7 +264,7 @@ This approach is motivated by wanting minimize confusion posed by several aspect
 2. The word "satoshis" or "sats" appearing in product UIs, often alongside BTC or bitcoin, raising the question: what are these units and how do they relate to bitcoin? 
 3. The inconsistency of sometimes showing decimal quantities and other times integer quantities. It will be unclear to the user why one format sometimes wins over the other. 
 
-The BEFORE & AFTER [sample mockup](#sample-mockup) below demonstrate how these points of confusion are remedied with this new appraoch.
+The BEFORE & AFTER [sample mockups](#sample-mockup) below demonstrate how these points of confusion are remedied with this new appraoch.
 
 ### Proposed best practices
 
