@@ -254,17 +254,17 @@ Whatever pluralization scheme you choose, it's good to be consistent with this c
 
 ## New convention: ₿-only format
 
-As of June 2025 there is a new convention emerging among a handful of wallets seeking to simplify how bitcoin quantities are represented in text and product UIs.
+A new convention is emerging whereby bitcoin quantities are displayed as integers and labeled with the ₿ symbol.
 
 ### Motivation
 
 This approach is motivated by wanting to minimize confusion posed by several aspects of the traditional approach to showing quantities: 
 
-1. **Inscrutable decimal quantities.** For small quantities it is difficult for user to parse numbers with many leading zeroes.
-2. **Meaning of "sats".** "The word "satoshis" or "sats" appearing in product UIs, often alongside BTC or bitcoin, raises the question for new users: what are these units and how do they relate to bitcoin? It presents an eduation/understanding hurdle. 
-3. **Inconsistency.** The current dual convention that is typically employed has products sometimes showing quantities in decimal representation and other times integer quantities. This inconsistency creates unpredictability in the product experience. 
+1. **Inscrutable decimal quantities.** For small quantities it is often difficult for users to parse numbers with many leading zeroes.
+2. **Meaning of "sats".** "The word "satoshis" or "sats" appearing in product UIs, often alongside BTC or bitcoin, raises the question for new users: what are these units and how do they relate to bitcoin? It presents an eduation/understanding hurdle that can be avoided.
+3. **Inconsistency.** The current dual convention that is typically employed by wallets sometimes shows quantities in decimal representation (typically if larger) and other times integer quantities (typically if smaller). This inconsistency creates unpredictability in the product experience. 
 
-The BEFORE & AFTER [sample mockups](#sample-mockup) below demonstrate how these points of confusion might be remedied with this new ₿-only format.
+The BEFORE & AFTER [sample mockups](#sample-mockup) below demonstrate how these points of potential confusion are manifest in traditional UIs and might be remedied under this new ₿-only format.
 
 ### Proposed best practices
 
@@ -286,17 +286,17 @@ Examples of how legacy bitcoin quantities would be represented under this new co
 - `3.25 BTC -> ₿325,000,000 or ₿325M`
 - `15,000 sats -> ₿15,000 or ₿15K`
 
-### Sample mockup
+### Sample mockups
 
-This ₿-only format is naturally accommodated in bitcoin product UIs. 
+This ₿-only format is easily accommodated in bitcoin product UIs. 
 
-For example, the mockups below show what a typical wallet activity screen might look like BEFORE and AFTER adopting this new convention. 
+For example, the mockups below show how a typical wallet activity screen might be redesigned to adopt the new ₿-only format. 
 
 {% include image-gallery.html pages = page.images_b %}
 
 ### Adoption
 
-Wallets that have adopted this new convention include: [Boardwalk Cash](https://boardwalkcash.com/), [BitKit](https://bitkit.to/). [Square's next generation POS](https://x.com/Square/status/1927396327039684690) is being marketed with this convention. 
+As of June 2025, wallets that have adopted this new ₿-only format include: [Boardwalk Cash](https://boardwalkcash.com/) and [BitKit](https://bitkit.to/). [Square's next generation POS](https://x.com/Square/status/1927396327039684690) is being marketed with this convention.  
 
 
 ---
