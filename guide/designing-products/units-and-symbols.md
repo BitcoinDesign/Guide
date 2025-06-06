@@ -254,21 +254,21 @@ Whatever pluralization scheme you choose, it's good to be consistent with this c
 
 ## New convention: ₿-only format
 
-A new convention is emerging whereby bitcoin quantities are displayed as integers and labeled with the ₿ symbol.
+A new convention is emerging whereby all bitcoin quantities are displayed alongside the ₿ symbol and shown in integer base units only, hereafter referred to as "₿-only format". 
 
 ### Motivation
 
-This approach is motivated by wanting to minimize confusion posed by several aspects of the traditional approach to showing quantities: 
+This ₿-only format is motivated by wanting to minimize potential user confusion posed by several aspects of the traditional approach to showing bitcoin quantities: 
 
-1. **Inscrutable decimal quantities.** For small quantities it is often difficult for users to parse numbers with many leading zeroes.
+1. **Inscrutable decimals.** For small quantities it is often difficult for users to parse numbers with many leading zeroes.
 2. **Meaning of "sats".** "The word "satoshis" or "sats" appearing in product UIs, often alongside BTC or bitcoin, raises the question for new users: what are these units and how do they relate to bitcoin? It presents an eduation/understanding hurdle that can be avoided.
 3. **Inconsistency.** The current dual convention that is typically employed by wallets sometimes shows quantities in decimal representation (typically if larger) and other times integer quantities (typically if smaller). This inconsistency creates unpredictability in the product experience. 
 
-The BEFORE & AFTER [sample mockups](#sample-mockup) below demonstrate how these points of potential confusion are manifest in traditional UIs and might be remedied under this new ₿-only format.
+The BEFORE & AFTER [sample mockups](#sample-mockup) below demonstrate how these points of potential confusion are manifest in traditional wallet UIs and might be remedied under this new ₿-only format.
 
 ### Proposed best practices
 
-The following best practices are proposed for wallets wanting to adopt the ₿-only format: 
+The following best practices are proposed for products wanting to adopt the ₿-only format: 
 
 - Show quantities only in integers form, representing the number of base units of bitcoin
 - Label quantities with ₿ symbol (either pre-fix or post-fix per local custom)
