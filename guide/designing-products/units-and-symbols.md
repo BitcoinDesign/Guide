@@ -288,9 +288,9 @@ Examples of how legacy bitcoin quantities would be represented under this new co
 
 ### Sample mockup
 
-This ₿-only format is naturally accommodated in bitcoin product UIs in a way that addresses many existing potential points of confusion. 
+This ₿-only format is naturally accommodated in bitcoin product UIs. 
 
-For example, a typical wallet home screen becomes notably simpler and more consistent when adopting this change:
+For example, the mockups below show what a typical wallet activity screen might look like BEFORE and AFTER adopting this new convention. 
 
 {% include image-gallery.html pages = page.images_b %}
 
