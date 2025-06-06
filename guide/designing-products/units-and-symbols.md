@@ -264,7 +264,7 @@ This ₿-only format is motivated by wanting to minimize potential user confusio
 2. **Meaning of "sats".** "The word "satoshis" or "sats" appearing in product UIs, often alongside BTC or bitcoin, raises the question for new users: what are these units and how do they relate to bitcoin? It presents an eduation/understanding hurdle that can be avoided.
 3. **Inconsistency.** The current dual convention that is typically employed by wallets sometimes shows quantities in decimal representation (typically if larger) and other times integer quantities (typically if smaller). This inconsistency creates unpredictability in the product experience. 
 
-The BEFORE & AFTER [sample mockups](#sample-mockup) below demonstrate how these points of potential confusion are manifest in traditional wallet UIs and might be remedied under this new ₿-only format.
+The BEFORE & AFTER [sample mockups](#sample-mockups) below demonstrate how these points of potential confusion are manifest in traditional wallet UIs and might be remedied under this new ₿-only format.
 
 ### Proposed best practices
 
@@ -273,9 +273,10 @@ The following best practices are proposed for products wanting to adopt the ₿-
 - Show quantities only in integers form, representing the number of base units of bitcoin
 - Label quantities with ₿ symbol (either pre-fix or post-fix per local custom)
 - Include a fiat value below the bitcoin quantity for maximum clarity 
-- Use 'BTC' to refer to 100M base units (i.e. 1BTC = ₿100,000,000)
+- Retain definition of 'BTC' to refer to 100M base units (i.e. 1BTC = ₿100,000,000)
 - Deprecate use of decimal representation
 - Deprecate explicit use of "satoshis" or "sats" in product UIs
+- For existing products making the switch: consider explanatory copy describing the change
 
 ### Examples
 
