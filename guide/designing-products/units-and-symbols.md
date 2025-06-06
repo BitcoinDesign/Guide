@@ -19,9 +19,12 @@ images_app:
       alt: Mobile phone screen showing currency unit options by country.
       caption: Local currency options.
 images_b:
-    - file: b-unit
-      alt: Wallet homescreen showing use of bitcoin quantities as integers
-      caption: Showing bitcoin quantities as integers with the ₿ symbol.
+    - file: before
+      alt: Wallet homescreen showing traditional display of bitcoin quantities
+      caption: Before: bitcoin quantities represented in traditional formats
+    - file: after
+      alt: Wallet homescreen showing use of bitcoin quantities in ₿-only format
+      caption: After: bitcoin quantities represented in ₿-only format
 images_home:
     - file: home-unit-sats
       alt: Home screen showing user funds displays in satoshis.
@@ -255,18 +258,20 @@ As of June 2025 there is a new convention emerging among a small handful of forw
 
 ### Motivation
 
-This approach is motivated by wanting minimize confusion posed by (1) inscrutable decimal quantities (2) the unfamiliar word "satoshis" or "sats" appearing in product UIs, and (3) the inconsistency of sometimes showing decimal quantities and other times integer quantities. 
+This approach is motivated by wanting minimize confusion posed by several aspects of the traditional approach to showing quantities: 
 
-The aim is to achieve greater simplicity and consistency in how bitcoin quantities are represented everywhere. 
+1. Inscrutable decimal quantities - for small quantities it is difficult, visually unappealing and uncommom to parse numbers with many leading zeroes.
+2. The word "satoshis" or "sats" appearing in product UIs, often alongside BTC or bitcoin, raising the question: what are these units and how do they relate to bitcoin? 
+3. The inconsistency of sometimes showing decimal quantities and other times integer quantities. It will be unclear to the user why one format sometimes wins over the other. 
 
-This new convention was inspired by some of the thinking articulated in [BIP-177](https://github.com/bitcoin/bips/blob/master/bip-0177.mediawiki). 
+The BEFORE & AFTER [sample mockup](#sample-mockup) below demonstrate how these points of confusion are remedied with this new appraoch.
 
 ### Proposed best practices
 
 The following best practices are proposed for wallets wanting to adopt the ₿-only format: 
 
 - Show quantities only in integers form, representing the number of base units of bitcoin
-- Preface quantities with the ₿ symbol
+- Label quantities with ₿ symbol (either pre-fix or post-fix per local custom)
 - Include a fiat value below the bitcoin quantity for maximum clarity 
 - Use 'BTC' to refer to 100M base units (i.e. 1BTC = ₿100,000,000)
 - Deprecate use of decimal representation
@@ -283,13 +288,13 @@ Examples of how legacy bitcoin quantities would be represented under this new co
 
 ### Sample mockup
 
-This ₿-only format is naturally accommodated in bitcoin product UIs. For example, a common wallet home screen might look like:
+This ₿-only format is naturally accommodated in bitcoin product UIs in a way that addresses many existing potential points of confusion. For example, a common wallet home screen becomes notably simpler and more consistent when adopting this change:
 
 {% include image-gallery.html pages = page.images_b %}
 
 ### Adoption
 
-Wallets that have adopted this new convention include: [Boardwalk Cash](https://boardwalkcash.com/), [BitKit](https://bitkit.to/), and early mockups of [Square's next generation POS](https://x.com/Square/status/1927396327039684690). 
+Wallets that have adopted this new convention include: [Boardwalk Cash](https://boardwalkcash.com/), [BitKit](https://bitkit.to/). [Square's next generation POS](https://x.com/Square/status/1927396327039684690) is being marketed with this convention. 
 
 
 ---
