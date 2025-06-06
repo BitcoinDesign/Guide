@@ -296,7 +296,7 @@ For example, the mockups below show how a typical wallet activity screen might b
 
 ### Adoption
 
-As of June 2025, wallets that have adopted this new ₿-only format include: [Boardwalk Cash](https://boardwalkcash.com/) and [BitKit](https://bitkit.to/). [Square's next generation POS](https://x.com/Square/status/1927396327039684690) is being marketed with this convention.  
+As of June 2025, wallets that have adopted this new ₿-only format include: [Boardwalk Cash](https://boardwalkcash.com/), [BitKit](https://bitkit.to/) and [Cashu.Me](https://x.com/callebtc/status/1930324534172999809). [Square's next generation POS](https://x.com/Square/status/1927396327039684690) is being marketed with this convention.  
 
 
 ---
