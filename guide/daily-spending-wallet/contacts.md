@@ -199,7 +199,7 @@ https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototyp
 
 
 # Contacts
-
+{:.no_toc}
 ---
 
 <div class="glossary-toc" markdown="1">
