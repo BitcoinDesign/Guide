@@ -254,17 +254,17 @@ Whatever pluralization scheme you choose, it's good to be consistent with this c
 
 ## New convention: ₿-only format
 
-As of June 2025 there is a new convention emerging among a small handful of forward-looking wallets for simplifying how bitcoin quantities are represented in text and product UIs.
+As of June 2025 there is a new convention emerging among a handful of wallets seeking to simplify how bitcoin quantities are represented in text and product UIs.
 
 ### Motivation
 
-This approach is motivated by wanting minimize confusion posed by several aspects of the traditional approach to showing quantities: 
+This approach is motivated by wanting to minimize confusion posed by several aspects of the traditional approach to showing quantities: 
 
-1. Inscrutable decimal quantities - for small quantities it is difficult, visually unappealing and uncommom to parse numbers with many leading zeroes.
-2. The word "satoshis" or "sats" appearing in product UIs, often alongside BTC or bitcoin, raising the question: what are these units and how do they relate to bitcoin? 
-3. The inconsistency of sometimes showing decimal quantities and other times integer quantities. It will be unclear to the user why one format sometimes wins over the other. 
+1. Inscrutable decimal quantities - for small quantities it is difficult for user to parse numbers with many leading zeroes.
+2. Meaning of "sats". "The word "satoshis" or "sats" appearing in product UIs, often alongside BTC or bitcoin, raises the question for new users: what are these units and how do they relate to bitcoin? It presents an eduation/understanding hurdle. 
+3. Inconsistency. The current dual convention that is typically employed has products sometimes showing quantities in decimal representation and other times integer quantities. This inconsistency creates unpredictability in the product experience. 
 
-The BEFORE & AFTER [sample mockups](#sample-mockup) below demonstrate how these points of confusion are remedied with this new appraoch.
+The BEFORE & AFTER [sample mockups](#sample-mockup) below demonstrate how these points of confusion are remedied with this new ₿-only format.
 
 ### Proposed best practices
 
@@ -288,7 +288,9 @@ Examples of how legacy bitcoin quantities would be represented under this new co
 
 ### Sample mockup
 
-This ₿-only format is naturally accommodated in bitcoin product UIs in a way that addresses many existing potential points of confusion. For example, a common wallet home screen becomes notably simpler and more consistent when adopting this change:
+This ₿-only format is naturally accommodated in bitcoin product UIs in a way that addresses many existing potential points of confusion. 
+
+For example, a typical wallet home screen becomes notably simpler and more consistent when adopting this change:
 
 {% include image-gallery.html pages = page.images_b %}
 
