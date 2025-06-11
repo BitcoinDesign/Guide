@@ -252,9 +252,11 @@ Typically, the word "bitcoin" can mean a singular or a plural. In the early days
 
 Whatever pluralization scheme you choose, it's good to be consistent with this choice throughout your product.
 
-## New convention: ₿-only format
+## ₿-only format
 
-A new convention is emerging whereby all bitcoin quantities are displayed alongside the ₿ symbol and shown in integer base units only, hereafter referred to as "₿-only format". 
+[BIP-177](https://github.com/bitcoin/bips/blob/master/bip-0177.mediawiki) describes a new approach to bitcoin units that deprecates both the use of decimals and the usage of "sats/satoshis" to describe the base unit. 
+
+Here we look specifically at showing bitcoin quantities in product UIs with integers only and using the "₿" symbol, a format we refer to as the "₿-only" format.
 
 ### Motivation
 
