@@ -18,6 +18,13 @@ images_app:
     - file: settings-local-currency
       alt: Mobile phone screen showing currency unit options by country.
       caption: Local currency options.
+images_b:
+    - file: before
+      alt: Wallet homescreen showing traditional display of bitcoin quantities.
+      caption: Before - bitcoin quantities represented in traditional formats.
+    - file: after
+      alt: Wallet homescreen showing use of bitcoin quantities in ₿-only format.
+      caption: After - bitcoin quantities represented in ₿-only format.
 images_home:
     - file: home-unit-sats
       alt: Home screen showing user funds displays in satoshis.
@@ -244,6 +251,56 @@ Consider the best way to pluralize bitcoin units in your product. Treatment of p
 Typically, the word "bitcoin" can mean a singular or a plural. In the early days of bitcoin, it was common to see people use the word "bitcoins" as a plural. This has become a less commonly used word, though it's still grammatically correct. However, it's far more common to see the satoshi (sat) expressed as "satoshis" (sats) when plural.
 
 Whatever pluralization scheme you choose, it's good to be consistent with this choice throughout your product.
+
+## ₿-only format
+
+[BIP-177](https://github.com/bitcoin/bips/blob/master/bip-0177.mediawiki) describes a new approach to bitcoin units that deprecates both the use of decimals and the usage of "sats/satoshis" to describe the base unit. 
+
+Here we look specifically at showing bitcoin quantities in product UIs with integers only and using the "₿" symbol, a format we refer to as the "₿-only" format.
+
+### Motivation
+
+This ₿-only format is motivated by wanting to minimize potential user confusion posed by several aspects of the traditional approach to showing bitcoin quantities: 
+
+1. **Inscrutable decimals.** For small quantities it is often difficult for users to parse numbers with many leading zeroes.
+2. **Meaning of "sats".** "The word "satoshis" or "sats" appearing in product UIs, often alongside BTC or bitcoin, raises the question for new users: what are these units and how do they relate to bitcoin? It presents an eduation/understanding hurdle that can be avoided.
+3. **Inconsistency.** The current dual convention that is typically employed by wallets sometimes shows quantities in decimal representation (typically if larger) and other times integer quantities (typically if smaller). This inconsistency creates unpredictability in the product experience. 
+
+The BEFORE & AFTER [sample mockups](#sample-mockups) below demonstrate how these points of potential confusion are manifest in traditional wallet UIs and might be remedied under this new ₿-only format.
+
+### Proposed best practices
+
+The following best practices are proposed for products wanting to adopt the ₿-only format: 
+
+- Show quantities only in integers form, representing the number of base units of bitcoin
+- Label quantities with ₿ symbol (either pre-fix or post-fix per local custom)
+- Include a fiat value below the bitcoin quantity for maximum clarity 
+- Retain definition of 'BTC' to refer to 100M base units (i.e. 1BTC = ₿100,000,000)
+- Deprecate use of decimal representation
+- Deprecate explicit use of "satoshis" or "sats" in product UIs
+- For existing products making the switch: consider explanatory copy describing the change
+
+### Examples
+
+Examples of how legacy bitcoin quantities would be represented under this new convention: 
+
+- `0.00000100 BTC -> ₿100`
+- `0.00005449 BTC -> ₿5,449`
+- `3.25 BTC -> ₿325,000,000 or ₿325M`
+- `15,000 sats -> ₿15,000 or ₿15K`
+
+### Sample mockups
+
+This ₿-only format is easily accommodated in bitcoin product UIs. 
+
+For example, the mockups below show how a typical wallet activity screen might be redesigned to adopt the new ₿-only format. 
+
+{% include image-gallery.html pages = page.images_b %}
+
+### Adoption
+
+As of June 2025, wallets that have adopted this new ₿-only format include: [Boardwalk Cash](https://boardwalkcash.com/), [BitKit](https://bitkit.to/) and [Cashu.Me](https://x.com/callebtc/status/1930324534172999809). [Square's next generation POS](https://x.com/Square/status/1927396327039684690) is being marketed with this convention.  
+
 
 ---
 
