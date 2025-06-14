@@ -131,19 +131,19 @@ images_restore:
       caption: Explain what a manual restore is.
     - file: restore-manual-recovery-phrase-complete
       modalImage: restore-manual-recovery-phrase-complete@2x
-      alt: A mobile wallet interfact that shows a list of a 12 word recovery phrase with numbering.
+      alt: A mobile wallet interface that shows a list of a 12 word recovery phrase with numbering.
       caption: Allow user to enter the recovery phrase, include numbering.
     - file: restore-mints
       modalImage: restore-mints@2x
-      alt: A mobile wallet interfact that explains what type of mint information is needed before proceeding, and give user the option to back out.
+      alt: A mobile wallet interface that explains what type of mint information is needed before proceeding, and give user the option to back out.
       caption: Explain what the mint information is needed before proceeding, and give user the option to back out.
     - file: restore-mint-info-add
       modalImage: restore-mint-info-add@2x
-      alt: A mobile wallet interfact that shows a user entering a mint url and the mint name automatically populating.
+      alt: A mobile wallet interface that shows a user entering a mint url and the mint name automatically populating.
       caption: Requiring the user to enter the mint url prevents any errors. All other mint information (metadata) can be retrieved from the mint url.
     - file: restore-mint-info
       modalImage: restore-mint-info@2x
-      alt: A mobile wallet interfact that shows a list of mints that the user has entered along with the option to add a new mint or continue with the restoration process.
+      alt: A mobile wallet interface that shows a list of mints that the user has entered along with the option to add a new mint or continue with the restoration process.
       caption: Provide user with the option to type mint information or scan a mint's QR code.
 
 images_cashu-request:
