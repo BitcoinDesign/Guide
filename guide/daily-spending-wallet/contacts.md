@@ -224,11 +224,6 @@ The most basic interaction is that a user manually adds a contact by entering th
 
 {% include image-gallery.html pages = page.imagesAddContact %}
 
-{% include tip/tip.html %}
-
-Consider requiring [user verification]({{ '/guide/daily-spending-wallet/security/#preventing-unwanted-access' | relative_url }}) (like PIN entry) when adding or updating contacts. This reduces the risk that contact information is tampered with and payments are sent to wrong destination, especially with re-usable addresses.
-
-{% include tip/close.html %}
 
 ### Contact editing
 
