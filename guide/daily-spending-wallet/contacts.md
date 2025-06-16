@@ -40,16 +40,16 @@ imagesAddContact:
       alt: A contact with a lightning address assigned
       caption: A contact with a lightning address associated.
 imagesSupportedFormats:
-    - file: manual-add-contact-add-address-valid-on-chain
-      modalImage: manual-add-contact-add-address-valid-on-chain-big
-      alt: Address entry screen with inline validation for an on-chain address
+    - file: manual-add-contact-add-address-valid-on-chain-silent-payments
+      modalImage: manual-add-contact-add-address-valid-on-chain-silent-payments-big
+      alt: Address entry screen with inline validation for a silent payments address
       caption: Particular properties of address types can be pointed out right away.
-    - file: manual-add-contact-with-on-chain-address
-      modalImage: manual-add-contact-with-on-chain-address-big
+    - file: manual-add-contact-with-on-chain-silent-payments-address
+      modalImage: manual-add-contact-with-on-chain-silent-payments-address-big
       alt: A contact with an on-chain address assigned
       caption: A contact with an on-chain address attached. Once a payment is made to the address, it disappears from this list as it should only be used once for best privacy.
-    - file: manual-add-contact-add-address-xpub-toggle
-      modalImage: manual-add-contact-add-address-xpub-toggle-big
+    - file: manual-add-contact-add-address-on-chain-toggle
+      modalImage: manual-add-contact-add-address-on-chain-toggle-big
       alt: Add address screen with a warning users need to accept
       caption: You may want to support certain address formats to give users flexibility, but ensure they understand the implications.
     - file: manual-add-contact-add-address-xpub-error
