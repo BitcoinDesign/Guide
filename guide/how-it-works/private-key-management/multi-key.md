@@ -121,7 +121,7 @@ Now Alice wants to send bitcoin received to the shared wallet. She can initiate 
    retina = "/assets/images/guide/how-it-works/private-key-management/multi-key/multi-key-diagram-1-signing@2x.png"
    mobile = "/assets/images/guide/how-it-works/private-key-management/multi-key/multi-key-diagram-1-signing-mobile.png"
    mobileRetina = "/assets/images/guide/how-it-works/private-key-management/multi-key/multi-key-diagram-1-signing-mobile@2x.png"
-   alt-text = "Diagram of Alice intiating a transaction and Robert signing it"
+   alt-text = "Diagram of Alice initiating a transaction and Robert signing it"
    width = 800
    height = 168
 %}

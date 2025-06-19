@@ -291,7 +291,7 @@ However, we guide users towards using a single, primary private key to construct
 
 This simplifies the [backup process]({{ '/guide/how-it-works/backups/' | relative_url }}) to reduce the risk of loss of wallet. This is acceptable from a security perspective, because the wallets with larger amounts are either view-only (keys are external), or additionally protected by requiring multiple signatures (from the partner, hardware wallet, or assisted custody provider respectively).
 
-Remember to guide users during wallet setup towards best practices around [progressive security]({{ '/guide/getting-started/principles/#security' | relative_url }}). Even with strong guidance, you often still want to allow users to deviate, to accomodate their unique use case and context.
+Remember to guide users during wallet setup towards best practices around [progressive security]({{ '/guide/getting-started/principles/#security' | relative_url }}). Even with strong guidance, you often still want to allow users to deviate, to accommodate their unique use case and context.
 
 {% include image-gallery.html pages = page.images_custom_backup %}
 
