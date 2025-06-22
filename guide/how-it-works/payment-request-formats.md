@@ -208,10 +208,10 @@ An address is the standard format used for on-chain payment requests. There are 
 Below are the primary address types available to test if your application supports them.
 
 {% include picture.html
-   image = "/assets/images/guide/how-it-works/payment-request-formats/adresses.jpg"
-   retina = "/assets/images/guide/how-it-works/payment-request-formats/adresses@2x.jpg"
-   mobile = "/assets/images/guide/how-it-works/payment-request-formats/adresses-mobile.jpg"
-   mobileRetina = "/assets/images/guide/how-it-works/payment-request-formats/adresses-mobile@2x.jpg"
+   image = "/assets/images/guide/how-it-works/payment-request-formats/addresses.jpg"
+   retina = "/assets/images/guide/how-it-works/payment-request-formats/addresses@2x.jpg"
+   mobile = "/assets/images/guide/how-it-works/payment-request-formats/addresses-mobile.jpg"
+   mobileRetina = "/assets/images/guide/how-it-works/payment-request-formats/addresses-mobile@2x.jpg"
    alt-text = "How LSPs offer liquidity as a service"
    width = 800
    height = 348
