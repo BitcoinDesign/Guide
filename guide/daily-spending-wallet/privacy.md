@@ -37,10 +37,10 @@ https://www.figma.com/file/lf2Xyw2I2OXPsHiFQVQdiG/Daily-spending-wallet-prototyp
 
 ---
 
-<div class="glossary-toc" markdown="1">
+<nav class="glossary-toc" markdown="1" aria-label="Table of contents">
  * Table of contents
 {:toc}
-</div>
+</nav>
 
 ---
 

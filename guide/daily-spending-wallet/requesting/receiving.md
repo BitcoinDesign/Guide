@@ -70,10 +70,10 @@ Once a user has shared a payment request, the next step is receiving the payment
 
 ---
 
-<div class="glossary-toc" markdown="1">
+<nav class="glossary-toc" markdown="1" aria-label="Table of contents">
 * Table of contents
 {:toc}
-</div>
+</nav>
 
 ---
 

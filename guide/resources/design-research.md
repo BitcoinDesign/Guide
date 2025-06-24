@@ -36,12 +36,12 @@ Below is a collection of published user research findings around bitcoin, from a
 
 ---
 
-<div class="glossary-toc" markdown="1">
+<nav class="glossary-toc" markdown="1" aria-label="Table of contents">
 - [Independent research](#independent-research)
 - [Journal Articles](#journal-articles)
 - [Case studies](#case-studies)
 - [Blog posts & write-ups](#blog-posts--write-ups)
-</div>
+</nav>
 
 ---
 

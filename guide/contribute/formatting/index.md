@@ -29,7 +29,7 @@ The design source file is a public Figma community file you can find [here](http
 
 ---
 
-<div class="glossary-toc" markdown="1">
+<nav class="glossary-toc" markdown="1" aria-label="Table of contents">
 - [Text](#text-formatting)
 - [Headers](#headers)
 - [Blockquotes](#blockquote)
@@ -42,7 +42,7 @@ The design source file is a public Figma community file you can find [here](http
 - [Do's and don'ts](#dos-and-donts)
 - [Footnotes](#footnotes)
 - [Media]({{ '/guide/contribute/formatting/media/' | relative_url }})
-</div>
+</nav>
 
 ---
 

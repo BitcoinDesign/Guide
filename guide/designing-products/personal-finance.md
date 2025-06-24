@@ -49,10 +49,10 @@ Assuming that a user wants to [self-custody](/guide/getting-started/principles/#
 
 ---
 
-<div class="glossary-toc" markdown="1">
+<nav class="glossary-toc" markdown="1" aria-label="Table of contents">
 * Table of contents
 {:toc}
-</div>
+</nav>
 
 ---
 

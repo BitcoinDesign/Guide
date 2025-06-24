@@ -205,10 +205,10 @@ https://www.figma.com/file/uxZMdWR2HfnKSMC9YWyr2h/Time-based-recovery?type=desig
 
 ---
 
-<div class="glossary-toc" markdown="1">
+<nav class="glossary-toc" markdown="1" aria-label="Table of contents">
  * Table of contents
 {:toc}
-</div>
+</nav>
 
 ---
 
