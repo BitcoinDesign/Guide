@@ -184,7 +184,7 @@ The most common scenario is that sender and receiver have an understanding of ho
 2. The sender balance is enough to cover the amount to pay, but not the fee
 3. The sender wants to clear out the wallet, possibly to migrate
 
-To accomodate these, the interface also needs to provide manual customization options, although they can be placed into secondary location (see below).
+To accommodate these, the interface also needs to provide manual customization options, although they can be placed into secondary location (see below).
 
 </div>
 
