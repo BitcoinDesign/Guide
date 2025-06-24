@@ -165,7 +165,7 @@ images_david-send-key:
       caption: David receives the key request from his father in a text message.
     - file: wallet-creation/david-invite-loading-wallet
       alt: Screen showing a loading indicator.
-      caption: Our app opens an loads the wallet configuration. If David hadn't already installed the app, he would be taken to the app store to download it.
+      caption: Our app opens and loads the wallet configuration. If David hadn't already installed the app, he would be taken to the app store to download it.
     - file: wallet-creation/david-provide-wallet-overview
       alt: Screen displaying a visual representation of the wallet configuration.
       caption: The wallet overview screen shows that David's key will be part of the inheritance key set. 

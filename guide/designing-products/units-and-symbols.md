@@ -74,6 +74,15 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 %}
 
 # Units and symbols
+{:.no_toc}
+---
+
+<div class="glossary-toc" markdown="1">
+* Table of contents
+{:toc}
+</div>
+
+---
 
 Bitcoin, bits, sats. The format and presentation of bitcoin values are probably amongst the most challenging for application builders. While there are no official standards for how they should be used, a good way to achieve converging user experiences is to formalize what is widely used today.
 
