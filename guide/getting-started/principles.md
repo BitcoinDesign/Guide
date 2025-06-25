@@ -40,7 +40,7 @@ These are principles we in the Bitcoin Design Community identified and stand beh
 
 ---
 
-<div class="glossary-toc" markdown="1">
+<nav class="glossary-toc" markdown="1" aria-label="Table of contents">
 - [Self-custody](#self-custody)
 - [Security](#security)
 - [Inclusion](#inclusion)
@@ -48,7 +48,7 @@ These are principles we in the Bitcoin Design Community identified and stand beh
 - [Transparency](#transparency)
 - [Privacy](#privacy)
 - [Decentralization](#decentralization)
-</div>
+</nav>
 
 ---
 

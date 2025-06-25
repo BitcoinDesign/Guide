@@ -47,10 +47,10 @@ Let's take a look at some common user needs and workflows that can be created fo
 
 ---
 
-<div class="glossary-toc" markdown="1">
+<nav class="glossary-toc" markdown="1" aria-label="Table of contents">
 * Table of contents
 {:toc}
-</div>
+</nav>
 
 ---
 

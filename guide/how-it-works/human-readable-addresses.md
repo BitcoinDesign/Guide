@@ -67,10 +67,10 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
 {:.no_toc}
 ---
 
-<div class="glossary-toc" markdown="1">
+<nav class="glossary-toc" markdown="1" aria-label="Table of contents">
 * Table of contents
 {:toc}
-</div>
+</nav>
 
 ---
 

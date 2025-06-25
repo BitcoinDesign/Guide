@@ -108,7 +108,7 @@ The daily spending wallet is an app designed to quickly and easily send small am
 
 ---
 
-<div class="glossary-toc" markdown="1">
+<nav class="glossary-toc" markdown="1" aria-label="Table of contents">
    <ul id="markdown-toc">
       <li><a href="/guide/daily-spending-wallet/first-use/">First use</a></li>
       <li><a href="/guide/daily-spending-wallet/backup-and-recovery/landing-page/">Backup & recovery</a></li>
@@ -120,7 +120,7 @@ The daily spending wallet is an app designed to quickly and easily send small am
       <li><a href="/guide/daily-spending-wallet/privacy/">Privacy</a></li>
       <li><a href="/guide/daily-spending-wallet/settings/">Settings</a></li>
    </ul>
-</div>
+</nav>
 
 ---
 

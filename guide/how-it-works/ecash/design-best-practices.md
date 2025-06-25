@@ -319,10 +319,10 @@ Illustration sources: https://www.figma.com/community/file/1444347139219091325/b
 
 ---
 
-<div class="glossary-toc" markdown="1">
+<nav class="glossary-toc" markdown="1" aria-label="Table of contents">
  * Table of contents
 {:toc}
-</div>
+</nav>
 
 ---
 ## Common ecash design guidelines
