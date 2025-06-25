@@ -213,10 +213,9 @@ Whether we’re sending emails, physical mail, or following someone on social me
 
 Addresses, invoices, node IDs and other transaction endpoints in bitcoin are highly unintuitive. Abstracting them via a contact list can create a much smoother user experience. There are many [payment request formats]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }}), each with unique properties and varying levels of maturity and adoption, requiring unique design solutions. This page will use a more approachable "address" as an umbrella term for various types of payment information.
 
-Recently, a number of safely reusable payment request formats such as [silent payments]({{ '/guide/how-it-works/silent-payments' | relative_url }}), [BOLT 12]({{ '/guide/how-it-works/payment-request-formats/#offers' | relative_url }}) and [BIP-353]({{ '/guide/how-it-works/human-readable-addresses/#bip-353-dns-payment-instructions' | relative_url }}) have emerged. This property makes them ideal for abstraction through contacts.
+Some payment request formats such as [silent payments]({{ '/guide/how-it-works/silent-payments' | relative_url }}), [BOLT 12]({{ '/guide/how-it-works/payment-request-formats/#offers' | relative_url }}) and [BIP-353]({{ '/guide/how-it-works/human-readable-addresses/#bip-353-dns-payment-instructions' | relative_url }}) are designed to be safely reused. This property makes them ideal for abstraction through contacts.
 
 Let's go over common user interactions around managing contacts. This will illustrate how such a feature could work, and helps explain the underlying design problems and decisions.
-
 
 ### Adding a contact
 
