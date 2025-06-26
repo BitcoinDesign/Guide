@@ -213,7 +213,7 @@ Whether we’re sending emails, physical mail, or following someone on social me
 
 Addresses, invoices, node IDs and other transaction endpoints in bitcoin are highly unintuitive. Abstracting them via a contact list can create a much smoother user experience. There are many [payment request formats]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }}), each with unique properties and varying levels of maturity and adoption, requiring unique design solutions. This page will use a more approachable "address" as an umbrella term for various types of payment information.
 
-Some payment request formats such as [silent payments]({{ '/guide/how-it-works/silent-payments' | relative_url }}), [BOLT 12]({{ '/guide/how-it-works/payment-request-formats/#offers' | relative_url }}) and [BIP-353]({{ '/guide/how-it-works/human-readable-addresses/#bip-353-dns-payment-instructions' | relative_url }}) are designed to be safely reused. This property makes them ideal for abstraction through contacts.
+Some payment request formats such as [silent payments (BIP-352)]({{ '/guide/how-it-works/silent-payments' | relative_url }}), [lightning offers (BOLT 12)]({{ '/guide/how-it-works/payment-request-formats/#offers' | relative_url }}) and [DNS payment instructions (BIP-353)]({{ '/guide/how-it-works/human-readable-addresses/#bip-353-dns-payment-instructions' | relative_url }}) are designed to be safely reused. This property makes them ideal for abstraction through contacts.
 
 Let's go over common user interactions around managing contacts. This will illustrate how such a feature could work, and helps explain the underlying design problems and decisions.
 
@@ -240,7 +240,7 @@ This scenario can be initiated by copying an address to the clipboard, scanning 
 
 This sequence is similar to the one above. The difference is that a payment request was passed into the application, which contains different data and also includes a specific user action, and therefore requires different user flows. The one below shows how a user has scanned a payment request and assigns a contact to the payment.
 
-Some payment request formats such as silent payment addresses and BIP-353 may include an address that can be repeatedly used without privacy compromises. In such cases, the address is added to the contact for future use. For [single use payment requests]({{ '/guide/daily-spending-wallet/requesting/' | relative_url }}), only the payment is linked.
+Some payment request formats, such as silent payments and DNS payment instructions, may include an address that can be repeatedly used, without privacy compromises. In such cases, the address is added to the contact for future use. For [single use payment requests]({{ '/guide/daily-spending-wallet/requesting/' | relative_url }}), only the payment is linked.
 
 Payment requests may also contain recipient names. These can be used to suggest the name for a new contact to the user. Names can be spoofed, so they should not be automatically assigned without user approval.
 
