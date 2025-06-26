@@ -241,6 +241,26 @@ If using a security step here, it should come after the user has selected all ot
 
 {% include image-gallery.html pages = page.imagesReview %}
 
+### Test transactions
+
+Users often experience anxiety when transacting with large amounts, or using new payment methods/information. One way users manage this is by sending a small payment first, and have the other party confirm they received it.
+
+This anxiety can be higher with bitcoin payments due to its novelty, irreversible nature and the possibility of permanent loss if funds are sent to an invalid address. Offering a automated test transactions feature can help users minimise the risk as well as manual effort. This feature can be useful in the case of on-chain as well as lightning payments.
+
+There are three main interactions in this feature:
+1. **application prompts the user on review screen**: in the appropriate scenario, such a large amount or new silent payments address is being used
+2. **user chooses & sends the test transaction
+3. user finalises (or reverts) the original payment
+
+
+
+
+
+
+
+
+
+
 ## Transaction processing
 
 Processing times may also differ between on-chain and lightning network payments. On-chain, pending transactions are bundled into a [new block]({{ '/guide/getting-started/technology-primer/#what-is-a-blockchain' | relative_url }}) roughly every 10 minutes. On the lightning network, [payment routing]({{ '/guide/getting-started/technology-primer/#how-are-payments-routed' | relative_url }}) happens instantly and is largely dependent on the number of nodes involved, as well as their liquidity and processing speeds.
