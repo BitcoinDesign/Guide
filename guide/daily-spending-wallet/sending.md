@@ -135,6 +135,24 @@ imagesLightning:
       modalImage: onchain-warning-big
       alt: Information screen that details the payment taking 10 minutes to an hour to confirm with a fee of 1,023 sats, and suggests asking the recipient for a lightning compatible format.
       caption: The user may choose to proceed with the on-chain payment anyways, but has been informed they may be able to save time and fees by asking for a different payment format.
+imagesTestTransactions:
+    - file: send-review-with-test-toggle
+      modalImage: send-review-with-test-toggle-big
+      alt: Wallet home screen with amount input, pay and request options
+      caption: Home screens provide quick access to entering payment flows.
+    - file: send-test-transaction-confirmation
+      modalImage: send-test-transaction-confirmation-big
+      alt: Wallet home screen with amount input, pay and request options
+      caption: Home screens provide quick access to entering payment flows.
+    - file: home-test-transaction-reminder
+      modalImage: home-test-transaction-reminder-big
+      alt: Wallet home screen with amount input, pay and request options
+      caption: Home screens provide quick access to entering payment flows.
+    - file: finalise-test-transaction
+      modalImage: finalise-test-transaction-big
+      alt: Wallet home screen with amount input, pay and request options
+      caption: Home screens provide quick access to entering payment flows.
+
 ---
 
 <!--
@@ -243,23 +261,18 @@ If using a security step here, it should come after the user has selected all ot
 
 ### Test transactions
 
-Users often experience anxiety when transacting with large amounts, or using new payment methods/information. One way users manage this is by sending a small payment first, and have the other party confirm they received it.
+Users often experience anxiety when transacting with large amounts, or using new payment methods/information. This anxiety can be higher with bitcoin payments due to its novelty, irreversible nature and the possibility of permanent loss if funds are sent to an invalid address. One way users manage this is by sending a small payment first, and have the recipient confirm they received it.
 
-This anxiety can be higher with bitcoin payments due to its novelty, irreversible nature and the possibility of permanent loss if funds are sent to an invalid address. Offering a automated test transactions feature can help users minimise the risk as well as manual effort. This feature can be useful in the case of on-chain as well as lightning payments.
+Offering an automated test transactions feature can help users minimise the risk as well as manual effort. This feature can be useful in the case of on-chain as well as lightning payments, provided that the transacting parties can communicate with one another.
+
+Technically, this feature can utilise [replace-by-fee](https://bitcoinops.org/en/topics/replace-by-fee/) (RBF) or a simple small-value transaction.
 
 There are three main interactions in this feature:
-1. **application prompts the user on review screen**: in the appropriate scenario, such a large amount or new silent payments address is being used
-2. **user chooses & sends the test transaction
-3. user finalises (or reverts) the original payment
+1. **application presents this option user on review screen**: in the appropriate scenario, such as large amount or new silent payments address is being used.
+2. **user chooses & sends the test transaction**: they may ignore it if they have no way of communicating with the receiver. Inform users about relevant fees, if any.
+3. **user finalises the original payment**: allow the user to easily find and finalise the transaction. Applications can even remind the user about this after appropriate time.
 
-
-
-
-
-
-
-
-
+{% include image-gallery.html pages = page.imagesTestTransactions %}
 
 ## Transaction processing
 
