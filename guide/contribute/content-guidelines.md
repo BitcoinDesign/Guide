@@ -107,7 +107,7 @@ It's a good idea to ask for directions by seeking feedback early. This may stop 
 
 Bitcoin technology keeps evolving, and not all new ideas end up being broadly adopted. Help readers understand what the current maturity and adoption status is, so they can make appropriate decisions in their own products. The [Stabilizing bitcoin value]({{ '/guide/how-it-works/stabilizing-bitcoin-value/' | relative_url }}) page is a good example.
 
-When in doubt, ask the community for an evaluation. While the guide is forward-looking and covers a lot of areas, please also be understanding if the community feedback is that your topic should not be included. Also keep in mind that minds can change over time, especially by pragmatically addressing concerns.
+When in doubt, ask the community for an evaluation. While the guide is forward-looking and covers a lot of areas, please also be understanding if the community feedback suggests that your topic should not be included. Also keep in mind that minds can change over time, especially by pragmatically addressing concerns.
 
 ---
 
