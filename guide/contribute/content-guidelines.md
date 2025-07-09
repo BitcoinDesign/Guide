@@ -22,6 +22,15 @@ image: https://bitcoin.design/assets/images/guide/contribute/content-guidelines/
 
 
 # Content guidelines
+{:.no_toc}
+---
+
+<nav class="glossary-toc" markdown="1" aria-label="Table of contents">
+* Table of contents
+{:toc}
+</nav>
+
+---
 
 The Bitcoin Design Guide is the work of many authors with different backgrounds, each with their own unique voice and perspective. To help us ensure a consistent written voice throughout the guide, follow these content guidelines.
 
@@ -93,6 +102,12 @@ The guide is a work in progress and needs to evolve to stay relevant. What we wr
 ### Write in the open
 
 It's a good idea to ask for directions by seeking feedback early. This may stop you from wandering too far in the wrong direction. There is a whole community around you that's ready to jump in and help.
+
+### Indicate adoption status as needed
+
+Bitcoin technology keeps evolving, and not all new ideas end up being broadly adopted. Help readers understand what the current maturity and adoption status is, so they can make appropriate decisions in their own products. The [Stabilizing bitcoin value]({{ '/guide/how-it-works/stabilizing-bitcoin-value/' | relative_url }}) page is a good example.
+
+When in doubt, ask the community for an evaluation. While the guide is forward-looking and covers a lot of areas, please also be understanding if the community feedback suggests that your topic should not be included. Also keep in mind that minds can change over time, especially by pragmatically addressing concerns.
 
 ---
 
