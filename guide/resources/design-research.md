@@ -47,6 +47,12 @@ Below is a collection of published user research findings around bitcoin, from a
 
 ## Independent research
 
+#### [Bring Only What You Can Carry: Bitcoin’s Role in Refugee Wealth Preservation](https://www.da-ri.org/articles/bring-only-what-you-can-carry)
+
+_2025 by Dari_
+
+Every year, millions are forced to flee their homes. This research finds that at least 329,000 displaced people have relied on Bitcoin for financial continuity, a figure projected to grow to up to 7.5 million by 2035.
+
 #### [Global State of Crypto](https://www.gemini.com/state-of-crypto-2025)
 
 _2025 by Gemini_
