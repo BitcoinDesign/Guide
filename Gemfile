@@ -25,4 +25,4 @@ end
 gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
 # Required for Ruby 3+ to serve the site locally
-gem "webrick", ">= 1.8"
+gem "webrick", "~> 1.8"
