@@ -308,8 +308,17 @@ For example, the mockups below show how a typical wallet activity screen might b
 
 ### Adoption
 
-As of June 2025, wallets that have adopted this new ₿-only format include: [Boardwalk Cash](https://boardwalkcash.com/), [BitKit](https://bitkit.to/) and [Cashu.Me](https://x.com/callebtc/status/1930324534172999809). [Square's next generation POS](https://x.com/Square/status/1927396327039684690) is being marketed with this convention.  
+As of August 2025, wallets that have adopted this new ₿-only format include:
 
+ - [Boardwalk Cash](https://boardwalkcash.com/)
+ - [BitKit](https://bitkit.to/)
+ - [Blitz Wallet](https://blitz-wallet.com/)
+ - [Wallet of Satoshi](https://www.walletofsatoshi.com/)
+ - [StashPay](https://stashpay.me/)
+ - [Cashu.Me](https://x.com/callebtc/status/1930324534172999809)
+
+[Square's next generation POS](https://x.com/Square/status/1927396327039684690) is being marketed with this convention. 
+A [vending machine](https://x.com/matbalez/status/1955134584196305402) at Mintgreen's office in Vancouver, Canada has been spotted displaying prices in ₿ units. 
 
 ---
 
