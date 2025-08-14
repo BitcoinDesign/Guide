@@ -311,7 +311,7 @@ For example, the mockups below show how a typical wallet activity screen might b
 As of August 2025, wallets that have adopted this new ₿-only format include:
 
  - [Boardwalk Cash](https://boardwalkcash.com/)
- - [BitKit](https://bitkit.to/)
+ - [Bitkit](https://bitkit.to/)
  - [Blitz Wallet](https://blitz-wallet.com/)
  - [Wallet of Satoshi](https://www.walletofsatoshi.com/)
  - [StashPay](https://stashpay.me/)
