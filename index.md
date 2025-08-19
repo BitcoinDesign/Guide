@@ -12,6 +12,17 @@ videoWidth: 1600
 videoHeight: 840
 ---
 
+<!--
+A temporary insertion to promote the 5-year anniversary.
+-->
+### [Bitcoin Design is 5](https://five.bitcoin.design)
+
+2020-2025. Five years of designing bitcoin for everyone, with everyone. We put together a throwback with all the big milestones, projects, and much more.
+
+[Take a look](https://five.bitcoin.design){: .button }
+
+---
+
 ## We are helping make [bitcoin](https://bitcoin.org) more intuitive and accessible.
 
 As bitcoin’s popularity continues to rise, it is essential that everyone be able to participate in this new economy regardless of technical expertise or geography. That can only happen if creators everywhere have the resources and community necessary to foster better bitcoin experiences.

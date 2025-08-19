@@ -46,163 +46,352 @@ var themes = [
   //       link: "https://github.com/BitcoinDesign/Guide/pull/27"
   //   }
   // },
+//   {
+//     // Bridging bitcoin
+//     logo: {
+//         path: "/assets/bitcoin-design-community-banner.svg",
+//         fillColor: "#FFF",
+//         outlineColor: "#000"
+//     },
+//     title: {
+//         fillColor: "#000",
+//         outlineColor: "transparent"
+//     },
+//     description: {
+//         fillColor: "#000"
+//     },
+//     button1: {
+//         fillColor: "#FFF",
+//         outlineColor: "#000",
+//         labelFillColor: "#000"
+//     },
+//     button2: {
+//         fillColor: '',
+//         outlineColor: "#000",
+//         labelFillColor: "#000"
+//     },
+//     background: {
+//         path: '',
+//         pathRetina: '',
+//         pathMobile: '',
+//         pathMobileRetina: '',
+//         backgroundColor: ''
+//     },
+//     copy: {
+//         backgroundColor: "#F7931A"
+//     },
+//     image: {
+//         path: 'url("/assets/images/home/banner/header-theme-1-bridging-bitcoin.png")',
+//         pathRetina: 'url("/assets/images/home/banner/header-theme-1-bridging-bitcoin@2x.png")',
+//         pathMobile: 'url("/assets/images/home/banner/header-theme-1-bridging-bitcoin-mobile.png")',
+//         pathMobileRetina: 'url("/assets/images/home/banner/header-theme-1-bridging-bitcoin-mobile@2x.png")',
+//         backgroundColor: "#F7931A"
+//     },
+//     flipLayoutOnMobile: false,
+//     author: {
+//         name: "Alexa Aker",
+//         link: "https://github.com/BitcoinDesign/Guide/issues/45"
+//     }
+//   },
+//   {
+//     // Rutuja bitcoin page theme banner
+//     logo: {
+//         path: "/assets/bitcoin-design-community-banner.svg",
+//         fillColor: "#FEE78D",
+//         outlineColor: "#5A4C4C"
+//     },
+//     title: {
+//         fillColor: "#FEE78D",
+//         outlineColor: "#FEE78D"
+//     },
+//     description: {
+//         fillColor: "#E4CBCB"
+//     },
+//     button1: {
+//         fillColor: "#FEE78D",
+//         outlineColor: "#FEE78D",
+//         labelFillColor: "#5A4C4C"
+//     },
+//     button2: {
+//         fillColor: "#5A4C4C",
+//         outlineColor: "#FEE78D",
+//         labelFillColor: "#FEE78D"
+//     },
+//     image: {
+//         path: '',
+//         pathRetina: '',
+//         pathMobile: '',
+//         pathMobileRetina: '',
+//         backgroundColor: ''
+//     },
+//     copy: {
+//         backgroundColor: ''
+//     },
+//     background: {
+//         path: 'url("/assets/images/home/banner/rutuja_bitcoin_theme_banner_web.jpg")',
+//         pathRetina: 'url("/assets/images/home/banner/rutuja_bitcoin_theme_banner_web@2x.jpg")',
+//         pathMobile: 'url("/assets/images/home/banner/themeBG_mobile.jpg")',
+//         pathMobileRetina: 'url("/assets/images/home/banner/themeBG_mobile@2x.jpg")',
+//         backgroundColor: "#5A4C4C"
+//     },
+//     flipLayoutOnMobile: false,
+//     author: {
+//         name: "Rutuja Kelkar",
+//         link: "https://github.com/BitcoinDesign/Guide/issues/592"
+//     }
+//   },
+//   {
+//     // 3D abstract
+//     logo: {
+//         path: "/assets/bitcoin-design-community-banner.svg",
+//         fillColor: "#F7931A",
+//         outlineColor: "#FFF"
+//     },
+//     title: {
+//         fillColor: "#F7931A",
+//         outlineColor: "#F7931A"
+//     },
+//     description: {
+//         fillColor: "#000"
+//     },
+//     button1: {
+//         fillColor: "#F7931A",
+//         outlineColor: "#F7931A",
+//         labelFillColor: "#FFF"
+//     },
+//     button2: {
+//         fillColor: "#F7931A",
+//         outlineColor: "#F7931A",
+//         labelFillColor: "#FFF"
+//     },
+//     background: {
+//         path: '',
+//         pathRetina: '',
+//         pathMobile: '',
+//         pathMobileRetina: '',
+//         backgroundColor: ''
+//     },
+//     copy: {
+//         backgroundColor: "#64EBFC"
+//     },
+//     image: {
+//         path: 'url("/assets/images/home/banner/header-theme-2-3d-abstract.png")',
+//         pathRetina: 'url("/assets/images/home/banner/header-theme-2-3d-abstract@2x.png")',
+//         pathMobile: 'url("/assets/images/home/banner/header-theme-2-3d-abstract-mobile.png")',
+//         pathMobileRetina: 'url("/assets/images/home/banner/header-theme-2-3d-abstract-mobile@2x.png")',
+//         backgroundColor: "#64EBFC"
+//     },
+//     flipLayoutOnMobile: false,
+//     author: {
+//         name: "Gabor Magyar",
+//         link: "https://github.com/BitcoinDesign/Guide/issues/143"
+//     }
+//   },
+//   {
+//     // The Meta-Future
+//     logo: {
+//         path: "/assets/bitcoin-design-community-banner.svg",
+//         fillColor: "#F7931A",
+//         outlineColor: "#000"
+//     },
+//     title: {
+//         fillColor: "#000",
+//         outlineColor: "transparent"
+//     },
+//     description: {
+//         fillColor: "#000"
+//     },
+//     button1: {
+//         fillColor: "#F7931A",
+//         outlineColor: "#000",
+//         labelFillColor: "#000"
+//     },
+//     button2: {
+//         fillColor: "#FFF",
+//         outlineColor: "#000",
+//         labelFillColor: "#000"
+//     },
+//     background: {
+//         path: 'url("/assets/images/home/banner/the-meta-future.jpg")',
+//         pathRetina: 'url("/assets/images/home/banner/the-meta-future@2x.jpg")',
+//         pathMobile: 'url("/assets/images/home/banner/the-meta-future-mobile.jpg")',
+//         pathMobileRetina: 'url("/assets/images/home/banner/the-meta-future-mobile@2x.jpg")',
+//         backgroundColor: "#D0E8E1"
+//     },
+//     copy: {
+//         backgroundColor: ""
+//     },
+//     image: {
+//         path: '',
+//         pathRetina: '',
+//         pathMobile: '',
+//         pathMobileRetina: '',
+//         backgroundColor: ''
+//     },
+//     flipLayoutOnMobile: false,
+//     author: {
+//         name: "Rama Krushna",
+//         link: "https://github.com/BitcoinDesign/Guide/issues/272"
+//     }
+//   },
+//   {
+//     // BITs and pieces
+//     logo: {
+//         path: "/assets/bitcoin-design-community-banner.svg",
+//         fillColor: "#FEC34A",
+//         outlineColor: "#000"
+//     },
+//     title: {
+//         fillColor: "#000",
+//         outlineColor: "transparent"
+//     },
+//     description: {
+//         fillColor: "#000"
+//     },
+//     button1: {
+//         fillColor: "#00C4C6",
+//         outlineColor: "#000",
+//         labelFillColor: "#000"
+//     },
+//     button2: {
+//         fillColor: "#FEC34A",
+//         outlineColor: "#000",
+//         labelFillColor: "#000"
+//     },
+//     background: {
+//         path: 'url("/assets/images/home/banner/bits-and-pieces.png")',
+//         pathRetina: 'url("/assets/images/home/banner/bits-and-pieces@2x.png")',
+//         pathMobile: '',
+//         pathMobileRetina: '',
+//         backgroundColor: "#FFFFFF"
+//     },
+//     copy: {
+//         backgroundColor: ""
+//     },
+//     image: {
+//         path: 'url("/assets/images/home/banner/bits-and-pieces-fallback.png")',
+//         pathRetina: 'url("/assets/images/home/banner/bits-and-pieces-fallback@2x.png")',
+//         pathMobile: 'url("/assets/images/home/banner/bits-and-pieces-mobile.png")',
+//         pathMobileRetina: 'url("/assets/images/home/banner/bits-and-pieces-mobile@2x.png")',
+//         backgroundColor: '',
+//         lottie: "/assets/animations/banner-jessica.json"
+//     },
+//     flipLayoutOnMobile: false,
+//     author: {
+//         name: "Jessica Wolff and Andy Ribetz",
+//         link: "https://github.com/BitcoinDesign/Guide/issues/289"
+//     }
+//   },
+//   {
+//     // The Ongoing Development of Bitcoin
+//     logo: {
+//         path: "/assets/bitcoin-design-community-banner.svg",
+//         fillColor: "#E0E0E0",
+//         outlineColor: "#000"
+//     },
+//     title: {
+//         fillColor: "#ADAAAA",
+//         outlineColor: "#000"
+//     },
+//     description: {
+//         fillColor: "#000"
+//     },
+//     button1: {
+//         fillColor: "#F7931A",
+//         outlineColor: '#F7931A',
+//         labelFillColor: "#00"
+//     },
+//     button2: {
+//         fillColor: "#FFF",
+//         outlineColor: "#000",
+//         labelFillColor: "#000"
+//     },
+//     background: {
+//         path: '',
+//         pathRetina: '',
+//         pathMobile: '',
+//         pathMobileRetina: '',
+//         backgroundColor: "#F4F4F4"
+//     },
+//     copy: {
+//         backgroundColor: ''
+//     },
+//     image: {
+//         path: 'url("/assets/images/home/banner/ongoing-development.png")',
+//         pathRetina: 'url("/assets/images/home/banner/ongoing-development@2x.png")',
+//         pathMobile: 'url("/assets/images/home/banner/ongoing-development-mobile.png")',
+//         pathMobileRetina: 'url("/assets/images/home/banner/ongoing-development-mobile@2x.png")',
+//         backgroundColor: ""
+//     },
+//     flipLayoutOnMobile: false,
+//     author: {
+//         name: "Susrita Chatterjee",
+//         link: "https://github.com/BitcoinDesign/Guide/issues/688"
+//     }
+//   },
+//   {
+//     // Here Comes Bitcoin
+//     logo: {
+//         path: "/assets/bitcoin-design-community-banner.svg",
+//         fillColor: "#F7931A",
+//         outlineColor: "#000"
+//     },
+//     title: {
+//         fillColor: "#000",
+//         outlineColor: "transparent"
+//     },
+//     description: {
+//         fillColor: "#000"
+//     },
+//     button1: {
+//         fillColor: "#70B6C3",
+//         outlineColor: "#000",
+//         labelFillColor: "#FFF"
+//     },
+//     button2: {
+//         fillColor: "#F7931A",
+//         outlineColor: "#000",
+//         labelFillColor: "#FFF"
+//     },
+//     background: {
+//         path: '',
+//         pathRetina: '',
+//         pathMobile: '',
+//         pathMobileRetina: '',
+//         backgroundColor: "#FFFFFF"
+//     },
+//     copy: {
+//         backgroundColor: ''
+//     },
+//     image: {
+//         path: 'url("/assets/images/home/banner/HCB-Banner.png")',
+//         pathRetina: 'url("/assets/images/home/banner/HCB-Banner@2x.png")',
+//         pathMobile: 'url("/assets/images/home/banner/HCB-Banner-Mobile.png")',
+//         pathMobileRetina: 'url("/assets/images/home/banner/HCB-Banner-Mobile@2x.png")',
+//         backgroundColor: ""
+//     },
+//     flipLayoutOnMobile: true,
+//     author: {
+//         name: "Sushant Faujdar and Abhijay Jain",
+//         link: "https://github.com/BitcoinDesign/Guide/issues/1110"
+//     }
+//   },
   {
-    // Bridging bitcoin
+    // Bitcoin Design is 5
     logo: {
         path: "/assets/bitcoin-design-community-banner.svg",
         fillColor: "#FFF",
         outlineColor: "#000"
     },
     title: {
-        fillColor: "#000",
-        outlineColor: "transparent"
-    },
-    description: {
-        fillColor: "#000"
-    },
-    button1: {
         fillColor: "#FFF",
-        outlineColor: "#000",
-        labelFillColor: "#000"
-    },
-    button2: {
-        fillColor: '',
-        outlineColor: "#000",
-        labelFillColor: "#000"
-    },
-    background: {
-        path: '',
-        pathRetina: '',
-        pathMobile: '',
-        pathMobileRetina: '',
-        backgroundColor: ''
-    },
-    copy: {
-        backgroundColor: "#F7931A"
-    },
-    image: {
-        path: 'url("/assets/images/home/banner/header-theme-1-bridging-bitcoin.png")',
-        pathRetina: 'url("/assets/images/home/banner/header-theme-1-bridging-bitcoin@2x.png")',
-        pathMobile: 'url("/assets/images/home/banner/header-theme-1-bridging-bitcoin-mobile.png")',
-        pathMobileRetina: 'url("/assets/images/home/banner/header-theme-1-bridging-bitcoin-mobile@2x.png")',
-        backgroundColor: "#F7931A"
-    },
-    flipLayoutOnMobile: false,
-    author: {
-        name: "Alexa Aker",
-        link: "https://github.com/BitcoinDesign/Guide/issues/45"
-    }
-  },
-  {
-    // Rutuja bitcoin page theme banner
-    logo: {
-        path: "/assets/bitcoin-design-community-banner.svg",
-        fillColor: "#FEE78D",
-        outlineColor: "#5A4C4C"
-    },
-    title: {
-        fillColor: "#FEE78D",
-        outlineColor: "#FEE78D"
-    },
-    description: {
-        fillColor: "#E4CBCB"
-    },
-    button1: {
-        fillColor: "#FEE78D",
-        outlineColor: "#FEE78D",
-        labelFillColor: "#5A4C4C"
-    },
-    button2: {
-        fillColor: "#5A4C4C",
-        outlineColor: "#FEE78D",
-        labelFillColor: "#FEE78D"
-    },
-    image: {
-        path: '',
-        pathRetina: '',
-        pathMobile: '',
-        pathMobileRetina: '',
-        backgroundColor: ''
-    },
-    copy: {
-        backgroundColor: ''
-    },
-    background: {
-        path: 'url("/assets/images/home/banner/rutuja_bitcoin_theme_banner_web.jpg")',
-        pathRetina: 'url("/assets/images/home/banner/rutuja_bitcoin_theme_banner_web@2x.jpg")',
-        pathMobile: 'url("/assets/images/home/banner/themeBG_mobile.jpg")',
-        pathMobileRetina: 'url("/assets/images/home/banner/themeBG_mobile@2x.jpg")',
-        backgroundColor: "#5A4C4C"
-    },
-    flipLayoutOnMobile: false,
-    author: {
-        name: "Rutuja Kelkar",
-        link: "https://github.com/BitcoinDesign/Guide/issues/592"
-    }
-  },
-  {
-    // 3D abstract
-    logo: {
-        path: "/assets/bitcoin-design-community-banner.svg",
-        fillColor: "#F7931A",
-        outlineColor: "#FFF"
-    },
-    title: {
-        fillColor: "#F7931A",
-        outlineColor: "#F7931A"
-    },
-    description: {
-        fillColor: "#000"
-    },
-    button1: {
-        fillColor: "#F7931A",
-        outlineColor: "#F7931A",
-        labelFillColor: "#FFF"
-    },
-    button2: {
-        fillColor: "#F7931A",
-        outlineColor: "#F7931A",
-        labelFillColor: "#FFF"
-    },
-    background: {
-        path: '',
-        pathRetina: '',
-        pathMobile: '',
-        pathMobileRetina: '',
-        backgroundColor: ''
-    },
-    copy: {
-        backgroundColor: "#64EBFC"
-    },
-    image: {
-        path: 'url("/assets/images/home/banner/header-theme-2-3d-abstract.png")',
-        pathRetina: 'url("/assets/images/home/banner/header-theme-2-3d-abstract@2x.png")',
-        pathMobile: 'url("/assets/images/home/banner/header-theme-2-3d-abstract-mobile.png")',
-        pathMobileRetina: 'url("/assets/images/home/banner/header-theme-2-3d-abstract-mobile@2x.png")',
-        backgroundColor: "#64EBFC"
-    },
-    flipLayoutOnMobile: false,
-    author: {
-        name: "Gabor Magyar",
-        link: "https://github.com/BitcoinDesign/Guide/issues/143"
-    }
-  },
-  {
-    // The Meta-Future
-    logo: {
-        path: "/assets/bitcoin-design-community-banner.svg",
-        fillColor: "#F7931A",
         outlineColor: "#000"
     },
-    title: {
-        fillColor: "#000",
-        outlineColor: "transparent"
-    },
     description: {
         fillColor: "#000"
     },
     button1: {
-        fillColor: "#F7931A",
+        fillColor: "#FFF",
         outlineColor: "#000",
         labelFillColor: "#000"
     },
@@ -212,11 +401,11 @@ var themes = [
         labelFillColor: "#000"
     },
     background: {
-        path: 'url("/assets/images/home/banner/the-meta-future.jpg")',
-        pathRetina: 'url("/assets/images/home/banner/the-meta-future@2x.jpg")',
-        pathMobile: 'url("/assets/images/home/banner/the-meta-future-mobile.jpg")',
-        pathMobileRetina: 'url("/assets/images/home/banner/the-meta-future-mobile@2x.jpg")',
-        backgroundColor: "#D0E8E1"
+        path: 'url("/assets/images/home/banner/bitcoin-design-is-5.webp")',
+        pathRetina: 'url("/assets/images/home/banner/bitcoin-design-is-5@2x.webp")',
+        pathMobile: 'url("/assets/images/home/banner/bitcoin-design-is-5-mobile.webp")',
+        pathMobileRetina: 'url("/assets/images/home/banner/bitcoin-design-is-5-mobile@2x.webp")',
+        backgroundColor: "#FFD230"
     },
     copy: {
         backgroundColor: ""
@@ -230,152 +419,10 @@ var themes = [
     },
     flipLayoutOnMobile: false,
     author: {
-        name: "Rama Krushna",
-        link: "https://github.com/BitcoinDesign/Guide/issues/272"
+        name: "Christoph Ono",
+        link: "https://github.com/BitcoinDesign/Meta/issues/808"
     }
   },
-  {
-    // BITs and pieces
-    logo: {
-        path: "/assets/bitcoin-design-community-banner.svg",
-        fillColor: "#FEC34A",
-        outlineColor: "#000"
-    },
-    title: {
-        fillColor: "#000",
-        outlineColor: "transparent"
-    },
-    description: {
-        fillColor: "#000"
-    },
-    button1: {
-        fillColor: "#00C4C6",
-        outlineColor: "#000",
-        labelFillColor: "#000"
-    },
-    button2: {
-        fillColor: "#FEC34A",
-        outlineColor: "#000",
-        labelFillColor: "#000"
-    },
-    background: {
-        path: 'url("/assets/images/home/banner/bits-and-pieces.png")',
-        pathRetina: 'url("/assets/images/home/banner/bits-and-pieces@2x.png")',
-        pathMobile: '',
-        pathMobileRetina: '',
-        backgroundColor: "#FFFFFF"
-    },
-    copy: {
-        backgroundColor: ""
-    },
-    image: {
-        path: 'url("/assets/images/home/banner/bits-and-pieces-fallback.png")',
-        pathRetina: 'url("/assets/images/home/banner/bits-and-pieces-fallback@2x.png")',
-        pathMobile: 'url("/assets/images/home/banner/bits-and-pieces-mobile.png")',
-        pathMobileRetina: 'url("/assets/images/home/banner/bits-and-pieces-mobile@2x.png")',
-        backgroundColor: '',
-        lottie: "/assets/animations/banner-jessica.json"
-    },
-    flipLayoutOnMobile: false,
-    author: {
-        name: "Jessica Wolff and Andy Ribetz",
-        link: "https://github.com/BitcoinDesign/Guide/issues/289"
-    }
-  },
-  {
-    // The Ongoing Development of Bitcoin
-    logo: {
-        path: "/assets/bitcoin-design-community-banner.svg",
-        fillColor: "#E0E0E0",
-        outlineColor: "#000"
-    },
-    title: {
-        fillColor: "#ADAAAA",
-        outlineColor: "#000"
-    },
-    description: {
-        fillColor: "#000"
-    },
-    button1: {
-        fillColor: "#F7931A",
-        outlineColor: '#F7931A',
-        labelFillColor: "#00"
-    },
-    button2: {
-        fillColor: "#FFF",
-        outlineColor: "#000",
-        labelFillColor: "#000"
-    },
-    background: {
-        path: '',
-        pathRetina: '',
-        pathMobile: '',
-        pathMobileRetina: '',
-        backgroundColor: "#F4F4F4"
-    },
-    copy: {
-        backgroundColor: ''
-    },
-    image: {
-        path: 'url("/assets/images/home/banner/ongoing-development.png")',
-        pathRetina: 'url("/assets/images/home/banner/ongoing-development@2x.png")',
-        pathMobile: 'url("/assets/images/home/banner/ongoing-development-mobile.png")',
-        pathMobileRetina: 'url("/assets/images/home/banner/ongoing-development-mobile@2x.png")',
-        backgroundColor: ""
-    },
-    flipLayoutOnMobile: false,
-    author: {
-        name: "Susrita Chatterjee",
-        link: "https://github.com/BitcoinDesign/Guide/issues/688"
-    }
-  },
-  {
-    // Here Comes Bitcoin
-    logo: {
-        path: "/assets/bitcoin-design-community-banner.svg",
-        fillColor: "#F7931A",
-        outlineColor: "#000"
-    },
-    title: {
-        fillColor: "#000",
-        outlineColor: "transparent"
-    },
-    description: {
-        fillColor: "#000"
-    },
-    button1: {
-        fillColor: "#70B6C3",
-        outlineColor: "#000",
-        labelFillColor: "#FFF"
-    },
-    button2: {
-        fillColor: "#F7931A",
-        outlineColor: "#000",
-        labelFillColor: "#FFF"
-    },
-    background: {
-        path: '',
-        pathRetina: '',
-        pathMobile: '',
-        pathMobileRetina: '',
-        backgroundColor: "#FFFFFF"
-    },
-    copy: {
-        backgroundColor: ''
-    },
-    image: {
-        path: 'url("/assets/images/home/banner/HCB-Banner.png")',
-        pathRetina: 'url("/assets/images/home/banner/HCB-Banner@2x.png")',
-        pathMobile: 'url("/assets/images/home/banner/HCB-Banner-Mobile.png")',
-        pathMobileRetina: 'url("/assets/images/home/banner/HCB-Banner-Mobile@2x.png")',
-        backgroundColor: ""
-    },
-    flipLayoutOnMobile: true,
-    author: {
-        name: "Sushant Faujdar and Abhijay Jain",
-        link: "https://github.com/BitcoinDesign/Guide/issues/1110"
-    }
-  }
 ];
 
 var shuffleArray = function(array) {
