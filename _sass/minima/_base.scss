@@ -169,12 +169,24 @@ a {
     color: var(--link-hover-color);
     text-decoration: underline;
   }
+}
 
-  .social-media-list &:hover {
+.social-media-list {
+  a {
+    color: #000000;
     text-decoration: none;
 
-    .username {
-      text-decoration: underline;
+    svg {
+      color: inherit;
+      fill: currentColor;
+    }
+
+    &:hover {
+      color: #e77e23;
+      text-decoration: none;
+      .username {
+        text-decoration: underline;
+      }
     }
   }
 }
