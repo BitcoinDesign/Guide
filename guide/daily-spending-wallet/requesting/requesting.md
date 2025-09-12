@@ -155,13 +155,14 @@ Moreover, users have the option to skip entering an amount. This flexibility cat
 
 After entering an amount, the user taps the 'Request' button. The app then generates and presents a payment request.
 
-This wallet defaults to a [unified payment request]({{ "/guide/how-it-works/payment-request-formats/#unified-payment-requests" | relative_url }}). These combine a [lightning invoice]({{ "/guide/how-it-works/payment-request-formats/#invoice" | relative_url }}) and an [on-chain address]({{ "/guide/how-it-works/payment-request-formats/#addresses" | relative_url }}) into a single payment request using BIP21. 
+This wallet defaults to a [unified payment request]({{ "/guide/how-it-works/payment-request-formats/#unified-payment-requests" | relative_url }}). This combines a [lightning invoice]({{ "/guide/how-it-works/payment-request-formats/#invoice" | relative_url }}), an [offer]({{ "/guide/how-it-works/payment-request-formats/#offers" | relative_url }}) and an [on-chain address]({{ "/guide/how-it-works/payment-request-formats/#addresses" | relative_url }}) into a single payment request using BIP(3)21.
 
 Unified requests eliminate the hassle for users of choosing between requesting payment via the lightning network or on-chain. This choice can often be confusing, particularly for newcomers. 
 
-This wallet utilizes 'swap addresses' for all on-chain transactions. These are used to facilitate the transfer of received Bitcoin into the user's Lightning balance. Consequently, the wallet maintains a single Lightning balance, avoiding the need for a separate on-chain balance. This simplifies the user experience and is trust-minimized and non-custodial, courtesy of [submarine swaps](https://thebitcoinmanual.com/articles/btc-submarine-swaps/). We cover these more in our [lightning services]({{ "/guide/how-it-works/lightning-services/#swaps" | relative_url }}) and receiving pages.
 
-As unified requests [aren't widely supported yet](https://bitcoinqr.dev/), and users may want to request just from lightning or on-chain, they have options to share the lightning invoice or on-chain address independently. 
+This wallet utilizes **splicing** for all on-chain transactions. Splicing allows the seamless transfer of received Bitcoin into the user's Lightning balance without maintaining a separate on-chain balance. As a result, the wallet presents a single Lightning balance, greatly simplifying the user experience. This approach is trust-minimized and non-custodial, as channel capacity can be increased or decreased directly on-chain without relying on external swap services. We cover these more in our [lightning liquidity]({{ "/guide/how-it-works/liquidity" | relative_url }}) and receiving pages.
+
+As unified requests [aren't widely supported yet](https://bitcoinqr.dev/), and users may want to request just from lightning or on-chain, they have options to share the lightning invoice or offer or on-chain address independently. 
 
 Receiving payments to this wallet requires users to be online. This wallet notifies users that their wallet should remain open until the payment is received. We cover this more on our [receiving]({{ "/guide/daily-spending-wallet/requesting/receiving/#receiving-offline" | relative_url }}) and [lighting services]({{ "/guide/how-it-works/lightning-services/#receive-payments-offline" | relative_url }}) pages.
 
@@ -223,7 +224,7 @@ Requests can be shared wirelessly over short distances using [near-field communi
 
 ### Payment link
 
-Payment links use a BIP21 [URI]({{ "/guide/how-it-works/payment-request-formats/#uniform-resource-identifier-uris-schemes" | relative_url }}) `bitcoin:` which makes these readable by other bitcoin applications. These can be included as part of a button or hyperlink. Also see the [wallet selector UI pattern]({{ "/guide/how-it-works/wallet-selector/" | relative_url }}).
+Payment links use a BIP(3)21 [URI]({{ "/guide/how-it-works/payment-request-formats/#uniform-resource-identifier-uris-schemes" | relative_url }}) `bitcoin:` which makes these readable by other bitcoin applications. These can be included as part of a button or hyperlink. Also see the [wallet selector UI pattern]({{ "/guide/how-it-works/wallet-selector/" | relative_url }}).
 
 {% include image-gallery.html pages = page.images_link %}
 
