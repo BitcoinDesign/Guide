@@ -160,7 +160,7 @@ This wallet defaults to a [unified payment request]({{ "/guide/how-it-works/paym
 Unified requests eliminate the hassle for users of choosing between requesting payment via the lightning network or on-chain. This choice can often be confusing, particularly for newcomers. 
 
 
-This wallet utilizes **splicing** for all on-chain transactions. Splicing allows the seamless transfer of received Bitcoin into the user's Lightning balance without maintaining a separate on-chain balance. As a result, the wallet presents a single Lightning balance, greatly simplifying the user experience. This approach is trust-minimized and non-custodial, as channel capacity can be increased or decreased directly on-chain without relying on external swap services. We cover these more in our \[lightning liquidity]\({{ "/guide/how-it-works/liquidity" | relative\_url }}) and receiving pages.
+This wallet utilizes **splicing** for all on-chain transactions. Splicing allows the seamless transfer of received Bitcoin into the user's Lightning balance without maintaining a separate on-chain balance. As a result, the wallet presents a single Lightning balance, greatly simplifying the user experience. This approach is trust-minimized and non-custodial, as channel capacity can be increased or decreased directly on-chain without relying on external swap services. We cover these more in our [lightning liquidity]({{ "/guide/how-it-works/liquidity" | relative_url }}) and receiving pages.
 
 As unified requests [aren't widely supported yet](https://bitcoinqr.dev/), and users may want to request just from lightning or on-chain, they have options to share the lightning invoice or offer or on-chain address independently. 
 
