@@ -119,6 +119,8 @@ Use Fedimint whenever a custodial Lightning and ecash wallet is required, and si
 ### Wallets
 - [Fedi](https://www.fedi.xyz)
 - [Webimint](https://github.com/elsirion/webimint-rs)
+- [Ecash App](https://ecash.love)
+- [Harbor](https://harbor.cash/)
 
 ### Services
 - [Clovyr](https://clovyr.app/)
