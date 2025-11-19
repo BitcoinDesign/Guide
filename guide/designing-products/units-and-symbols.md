@@ -308,7 +308,7 @@ For example, the mockups below show how a typical wallet activity screen might b
 
 ### Adoption
 
-As of September 2025, wallets that have adopted this new ₿-only format include:
+As of November 2025, wallets that have adopted this new ₿-only format include:
 
  - [Boardwalk Cash](https://boardwalkcash.com/)
  - [Bitkit](https://bitkit.to/)
@@ -317,9 +317,10 @@ As of September 2025, wallets that have adopted this new ₿-only format include
  - [StashPay](https://stashpay.me/)
  - [Cashu.Me](https://x.com/callebtc/status/1930324534172999809)
  - [Lexe](https://x.com/lexeapp/status/1963275796849492077)
+ - [Agicash](https://alpha.agi.cash/)
+ - [Cash App](https://x.com/milessuter/status/1989792769406361926)
 
-[Square's next generation POS](https://x.com/Square/status/1927396327039684690) is being marketed with this convention. 
-A [vending machine](https://x.com/matbalez/status/1955134584196305402) at Mintgreen's office in Vancouver, Canada has been spotted displaying prices in ₿ units. 
+In November 2025, [Square](https://squareup.com/us/en/bitcoin) launched bitcoin payments support in their point-of-sale software in the US. It adopts the ₿-only format by default in the merchant-facing product, customer-facing UI and on printed receipts.  
 
 ---
 
