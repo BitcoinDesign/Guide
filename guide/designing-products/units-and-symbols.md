@@ -319,6 +319,7 @@ As of November 2025, wallets that have adopted this new ₿-only format include:
  - [Lexe](https://x.com/lexeapp/status/1963275796849492077)
  - [Agicash](https://alpha.agi.cash/)
  - [Cash App](https://x.com/milessuter/status/1989792769406361926)
+ - [Alby Hub](https://albyhub.com/)
 
 In November 2025, [Square](https://squareup.com/us/en/bitcoin) launched bitcoin payments support in their point-of-sale software in the US. It adopts the ₿-only format by default in the merchant-facing product, customer-facing UI and on printed receipts.  
 
