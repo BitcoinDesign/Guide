@@ -289,6 +289,8 @@ We don't just chat about design. We also actively improve design in the bitcoin 
 
 With collaborations, some of us try to help other bitcoin projects improve their products' design and user experience. For more details, see our [Collaboration](https://github.com/BitcoinDesign/Meta/blob/master/Collaboration.md) and [Project](https://github.com/BitcoinDesign/Meta/blob/master/Projects.md) documents. If you are interested in getting involved, reach out directly to the projects below, or reach out in our [Discord]({{ site.discord_invite_url }}).
 
+Our [5-year anniversary report](https://five.bitcoin.design) is also a great starting point to learn about the community and the many ongoing projects and collaborations. 
+
 ## Community projects
 
 These are some of the design projects we have initiated ourselves.
