@@ -271,7 +271,7 @@ Bitcoin Design Guide:
 **[Payment Request Formats]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }})**
 
 - What are the key differences between a regular Lightning invoice and a Lightning address in terms of user experience and privacy?
-- Why do unified payment requests use the BIP 21 bitcoin: URI scheme? What problem does this solve?
+- Why do unified payment requests use the BIP 321 bitcoin: URI scheme? What problem does this solve?
 - Between LNURL, Offers (BOLT 12), and regular invoices, which would you choose for building a subscription service and why?
 
 **[Lightning Services]({{ '/guide/how-it-works/lightning-services/' | relative_url }})**

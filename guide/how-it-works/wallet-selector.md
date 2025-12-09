@@ -82,7 +82,7 @@ We’ll outline each of those below.
 
 ### 1. Opening the default wallet
 
-A widely supported standard is [BIP 21](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki#Examples) (also see [Payment request formats](/guide/how-it-works/payment-request-formats/#uniform-resource-identifier-uris-schemes)), which defines a URI scheme for passing bitcoin payment information to other applications.
+A widely supported standard is [BIP 321](https://github.com/bitcoin/bips/blob/master/bip-0321.mediawiki) (also see [Payment request formats](/guide/how-it-works/payment-request-formats/#uniform-resource-identifier-uris-schemes)), which defines a URI scheme for passing bitcoin payment information to other applications.
 
 For example, clicking a link or button with the following URI is opened in the default bitcoin wallet (if there is one installed):
 `bitcoin:16AgmhoCVSJoGeEkERPdrsdvJG3RWmum6T`

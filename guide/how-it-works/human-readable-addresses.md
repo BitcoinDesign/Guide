@@ -123,15 +123,10 @@ From email and social media, we are familiar with addresses consisting of a <spa
 
 For social media, users know to navigate to the respective website or app and look up the username there. Applications rely on domains (via the [Domain Name System](https://en.wikipedia.org/wiki/Domain_Name_System), or DNS) to resolve the global part. In physical addresses, we have more hierarchical parts - country, state, city, street, house number and apartment. It is a familiar system.
 
-## BIP-353: DNS Payment Instructions
+## Human Bitcoin Address (BIP 353)
 
 This [proposal](https://github.com/bitcoin/bips/blob/master/bip-0353.mediawiki) only relies on the Domain Name System (DNS) to retrieve payment information. DNS is a decentralized hierarchical naming system used to translate human-friendly domain names (like *www.example.com*) into IP addresses (like *192.0.2.1*) that computers use to identify each other on the network. Anytime we type in a domain into a browser, we rely on this system. This use case is very similar to what human-readable addresses try to achieve, making DNS a good fit.
 
-{% include tip/open.html color="blue" label="Note" icon="info" %}
-
-This is a new proposal. It is still being discussed, and not widely implemented.
-
-{% include tip/close.html %}
 
 ### Address format
 
@@ -139,7 +134,7 @@ This proposal uses the formats *“<span class="-green">username</span>@<span cl
 
 ### How it works
 
-Users create DNS entries with payment information, which can be one or more addresses of different formats, combined to a [BIP 21 URI](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki). Since address reuse is best avoided for privacy reasons, the included addresses should be reusable (like [silent payments]({{ '/guide/how-it-works/silent-payments/' | relative_url }}) and [BOLT12](https://bolt12.org/) offers). Single-use addresses can be used if needed, but a mechanism to rotate them should be in place.
+Users create DNS entries with payment information, which can be one or more addresses of different formats, combined to a [BIP 321 URI](https://github.com/bitcoin/bips/blob/master/bip-0321.mediawiki). Since address reuse is best avoided for privacy reasons, the included addresses should be reusable (like [silent payments]({{ '/guide/how-it-works/silent-payments/' | relative_url }}) and [BOLT12](https://bolt12.org/) offers). Single-use addresses can be used if needed, but a mechanism to rotate them should be in place.
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/human-readable-addresses/dns-payment-instructions-mapping.png"
@@ -200,9 +195,9 @@ Framing the correct use of the address should be done right away and as early in
 
 {% include tip/open.html label="Bubble Wallet" %}
 
-The mock-ups below show an imaginary application called "Bubble Wallet". Its naming conventions are based on the idea that _Human-readable address_ is an appropriate descriptive term for technical proposal and discussion, but not necessarily practical for end-users. Due to the similarities to the familiar email format and social media practices, it borrows from those standards.
+The mock-ups below show an imaginary application called "Bubble Wallet". Its naming conventions are based on the idea that _Human bitcoin address_ is an appropriate descriptive term for technical proposal and discussion, but not necessarily practical for end-users. Due to the similarities to the familiar email format and social media practices, it borrows from those standards.
 
-- A human-readable address is referred to generally as (a new type of) _bitcoin address_
+- A human bitcoin address is referred to generally as (a new type of) _bitcoin address_
 - More specifically, it is referred to as _Bubble address_ or _Bubble bitcoin address_, because it is managed by the wallet (provider)
 - The first part of the address is referred to as _username_
 - Other address types are first referred to by their primary properties, and secondly by their technical names

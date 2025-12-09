@@ -394,7 +394,7 @@ For the simplest form of base layer requests, the receiver only needs to share o
 
 While it is possible to re-use the same receiving address repeatedly, this practice is highly discouraged for privacy reasons.
 
-For more information-rich base layer requests, [BIP 21](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki) describes a URI scheme to turn requests into links that can be shared like any other link. On click, wallets that support this scheme can immediately show the send screen with the correct information pre-filled. Links can also be encoded and transmitted via QR code. Since the scheme also allows for the inclusion of an address label and transaction description, it allows both sender and recipient to stay organized.
+For more information-rich base layer requests, [BIP 321](https://github.com/bitcoin/bips/blob/master/bip-0321.mediawiki) describes a URI scheme to turn requests into links that can be shared like any other link. On click, wallets that support this scheme can immediately show the send screen with the correct information pre-filled. Links can also be encoded and transmitted via QR code. Since the scheme also allows for the inclusion of an address label and transaction description, it allows both sender and recipient to stay organized.
 
 For requests on the lightning network, the receiver needs to create a lightning invoice that includes the amount, and then share the invoice with the sender.
 

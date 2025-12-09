@@ -59,13 +59,13 @@ You should ensure your application is interoperable with the various techniques 
 
 Supporting, generating, and reading as many [payment request formats]({{ '/guide/how-it-works/payment-request-formats/' | relative_url }}) as possible in your application will make it more interoperable with others.
 
-It also matters how these formats are generated. Your applications should be able to read, and generate, [BIP 21](https://bips.xyz/21) encoded payment requests.
+It also matters how these formats are generated. Your applications should be able to read, and generate, [BIP 321](https://github.com/bitcoin/bips/blob/master/bip-0321.mediawiki) encoded payment requests.
 
-An evolving standard that improves payment usability between on-chain and lightning is being able to read and generate [unified bitcoin payment requests](https://bitcoinqr.dev/) that contain an on-chain address and lightning invoice inside a BIP 21 URI.
+An evolving standard that improves payment usability between on-chain and lightning is being able to read and generate [unified bitcoin payment requests](https://bitcoinqr.dev/) that contain an on-chain address and lightning invoice inside a BIP 321 URI.
 
 When dealing with lightning invoice [amounts]({{ '/guide/daily-spending-wallet/requesting/#entering-an-amount' | relative_url }}), your application should be able to read and generate zero amount invoices.
 
-Payment links, often using BIP 21, should be readable by your application. Forms should be automatically opened and filled when a user clicks a payment link or button.
+Payment links, often using BIP 321, should be readable by your application. Forms should be automatically opened and filled when a user clicks a payment link or button.
 
 [Near-field communication](https://en.wikipedia.org/wiki/Near-field_communication) (NFC) should be supported for paying and sharing payment requests.
 

@@ -45,11 +45,11 @@ If you need to test whether your application supports a payment request type, yo
 
 A [Uniform Resource Identifier](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) (URI) is a web technology that uses unique prefixes to identify anything. This can be real-world objects, websites, information, etc.
 
-Bitcoin uses URIs to help apps identify payment requests. The technical details of this scheme are detailed in [BIP 21](https://bips.xyz/21).
+Bitcoin uses URIs to help apps identify payment requests. The technical details of this scheme are detailed in [BIP 321](https://github.com/bitcoin/bips/blob/master/bip-0321.mediawiki).
 
-BIP 21 uses a `bitcoin:` URI scheme to identify and help applications manage bitcoin payment requests. Applications should support this if they want to be [interoperable]({{'/guide/getting-started/principles/#interoperability' | relative_url}}) with other bitcoin products. Some other URI schemes used for bitcoin payment requests include `lightning` and LNURL schemes such as `lnurlp`. Note that a URI scheme can be presented as lowercase or uppercase.
+BIP 321 uses a `bitcoin:` URI scheme to identify and help applications manage bitcoin payment requests. Applications should support this if they want to be [interoperable]({{'/guide/getting-started/principles/#interoperability' | relative_url}}) with other bitcoin products. Some other URI schemes used for bitcoin payment requests include `lightning` and LNURL schemes such as `lnurlp`. Note that a URI scheme can be presented as lowercase or uppercase.
 
-BIP 21 is extensible and allows for the addition of other useful meta data that give more context to a payment request. This includes things like an amount, labels, messages, and other useful data. It also allows [more than one type]({{'/guide/how-it-works/payment-request-formats/#unified-payment-requests' | relative_url}}) of payment request format to be included in a payment request.
+BIP 321 is extensible and allows for the addition of other useful meta data that give more context to a payment request. This includes things like an amount, labels, messages, and other useful data. It also allows [more than one type]({{'/guide/how-it-works/payment-request-formats/#unified-payment-requests' | relative_url}}) of payment request format to be included in a payment request.
 
 A common pattern using URIs for inter-app payments is detailed in the [wallet selector page]({{'/guide/how-it-works/wallet-selector/' | relative_url}}).
 
@@ -236,7 +236,7 @@ Payment codes have been popularised in wallets such as [Samourai](https://samour
 
 A downside to payment codes is that they require an additional on-chain transaction each time two users want to connect and use them. [Silent payments](https://gist.github.com/RubenSomsen/c43b79517e7cb701ebf77eec6dbb46b8?permalink_comment_id=4113680) are a new experimental proposal that prevents the need for this additional on-chain transaction at the cost of extra bandwidth for receivers.
 
-Static payment codes are great for use with [DNS-based human readable addresses]({{ '/guide/how-it-works/human-readable-addresses/#bip-353-dns-payment-instructions' | relative_url }}).
+Static payment codes are great for use with [DNS-based human readable addresses]({{ '/guide/how-it-works/human-readable-addresses/#human-bitcoin-address-bip-353' | relative_url }}).
 
 </div>
 
@@ -255,7 +255,7 @@ Static payment codes are great for use with [DNS-based human readable addresses]
 
 A unified payment request combines one or more of the formats listed above. This makes it easier to request a payment when you are unsure what formats the sender supports.
 
-Unified payment requests use the BIP 21 `bitcoin:` URI to add multiple payment request formats to a single payment request. The more formats added, the larger the request becomes which can be an issue for lower end devices that can't scan complex QR codes.
+Unified payment requests use the BIP 321 `bitcoin:` URI to add multiple payment request formats to a single payment request. The more formats added, the larger the request becomes which can be an issue for lower end devices that can't scan complex QR codes.
 
 You can learn more about unified payment requests [here](https://bitcoinqr.dev/).
 
