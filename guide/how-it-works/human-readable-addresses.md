@@ -203,7 +203,6 @@ Framing the correct use of the address should be done right away and as early in
 The mock-ups below show an imaginary application called "Bubble Wallet". Its naming conventions are based on the idea that _Human-readable address_ is an appropriate descriptive term for technical proposal and discussion, but not necessarily practical for end-users. Due to the similarities to the familiar email format and social media practices, it borrows from those standards.
 
 - A human-readable address is referred to generally as (a new type of) _bitcoin address_
-- More specifically, it is referred to as _Bubble address_ or _Bubble bitcoin address_, because it is managed by the wallet (provider)
 - The first part of the address is referred to as _username_
 - Other address types are first referred to by their primary properties, and secondly by their technical names
 
