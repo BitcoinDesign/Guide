@@ -195,7 +195,7 @@ Framing the correct use of the address should be done right away and as early in
 
 {% include tip/open.html label="Bubble Wallet" %}
 
-The mock-ups below show an imaginary application called "Bubble Wallet". Its naming conventions are based on the idea that _Human bitcoin address_ is an appropriate descriptive term for technical proposal and discussion, but not necessarily practical for end-users. Due to the similarities to the familiar email format and social media practices, it borrows from those standards.
+The mock-ups below show an imaginary application called "Bubble Wallet". Its naming conventions are based on the idea that _Human Bitcoin address_ is an appropriate descriptive term for technical proposals and discussions, and can also be used contextually and subtly in product UI where appropriate—for example, in titles, labels, and input-field placeholders. Due to the similarities to the familiar email format and social media practices, it borrows from those standards.
 
 - A human bitcoin address is referred to generally as (a new type of) _bitcoin address_
 - More specifically, it is referred to as _Bubble address_ or _Bubble bitcoin address_, because it is managed by the wallet (provider)
