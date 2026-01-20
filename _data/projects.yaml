@@ -32,7 +32,7 @@ projects:
       url: https://discord.gg/rBRqnjDnmC
 
   - id: 3
-    image: project_image_03.svg
+    image: project_name_privacy_22.svg
     color: "#AE66D6"
     category: Design Resources
     title: Bitcoin Builder Kit
