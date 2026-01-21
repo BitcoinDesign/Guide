@@ -53,7 +53,10 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
       <div class="projects-toc__image" style="background-color: {{ project.color }};">
         <img src="/assets/images/projects/{{ project.image }}" alt="">
       </div>
-      <div class="projects-toc__title">{{ project.title }}</div>
+      <div class="projects-toc__content">
+        <span class="projects-toc__number">{{ forloop.index | prepend: '00' | slice: -2, 2 }}</span>
+        <div class="projects-toc__title">{{ project.title }}</div>
+      </div>
     </a>
     {% endfor %}
   </div>

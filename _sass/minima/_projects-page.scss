@@ -218,13 +218,29 @@
     &__item {
         display: flex;
         gap: 12px;
-        align-items: center;
+        align-items: flex-start;
         text-decoration: none;
         color: #032869;
 
         &:hover {
             color: $brand-color;
         }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    &__number {
+        font-family: $code-font-family;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1.4px;
+        line-height: 0.99;
+        color: #032869;
+        margin: 0;
     }
 
     &__image {
