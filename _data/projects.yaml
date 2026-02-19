@@ -154,11 +154,11 @@ projects:
     title: Celebrate Design Craft
     short_description: Celebrate real bitcoin products doing great design work and hold them up as examples to aspire to.
     long_description: |
-      Let's celebrate the best of bitcoin design. We should shine the spotlight on teams and products that are putting exceptional bitcoin design craft, design thinking into the world. Such a real-world showcase will become the reference points to which builders across the ecosystem should aspire. We can bring a new level of design culture to bitcoin writ large.
+      [Bitcoin Bites](https://bitcoindesign.substack.com/), our monthly series, celebrates the best of bitcoin design by shining the spotlight on teams and products putting exceptional design craft and thinking into the world. The featured work sets the bar for what great bitcoin design looks like.
     key_people:
       - handle: "@uxerik_"
         url: https://x.com/uxerik_
-    status: Planning stage
+    status: Active advocacy underway
     connect:
       channel: "#spread-the-word"
       url: https://discord.gg/nGeeNJqSNs
