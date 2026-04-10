@@ -47,6 +47,12 @@ Below is a collection of published user research findings around bitcoin, from a
 
 ## Independent research
 
+#### [The Psychology of Bitcoiners](https://brandonquittem.com/bitcoin-myers-briggs-mbti/)
+
+_2025 by Brandon Quittem._
+
+An analysis of the Myers-Briggs Type Indicators (MBTI) of bitcoiners, exploring the personality types most common among bitcoin holders and how psychological traits relate to bitcoin adoption.
+
 #### [Bring Only What You Can Carry: Bitcoin’s Role in Refugee Wealth Preservation](https://www.da-ri.org/articles/bring-only-what-you-can-carry)
 
 _2025 by Dari_
