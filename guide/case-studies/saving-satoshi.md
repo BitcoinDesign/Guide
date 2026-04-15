@@ -441,11 +441,11 @@ A full list of code contributors can be found [on GitHub](https://github.com/sav
 
 ---
 
-Next, view the [resources]({{ '/guide/resources' | relative_url }}) that can help you build better bitcoin products.
+Next, view the [SeedSigner]({{ '/guide/case-studies/seedsigner/' | relative_url }}) case study to learn about hardware wallet UI design.
 
 {% include next-previous.html
    previousUrl = "/guide/case-studies/bitcoin-core-app/"
    previousName = "Bitcoin Core App"
-   nextUrl = "/guide/how-it-works/"
-   nextName = "How it works"
+   nextUrl = "/guide/case-studies/seedsigner/"
+   nextName = "SeedSigner"
 %}
