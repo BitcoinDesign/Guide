@@ -50,6 +50,12 @@ An interactive game set that makes learning Bitcoin development engaging through
 
 ---
 
+### [SeedSigner]({{ '/guide/case-studies/seedsigner/' | relative_url }})
+
+How a UX redesign transformed a DIY signing device into one of Bitcoin's most accessible open source projects.
+
+---
+
 {% include next-previous.html
    previousUrl = "/guide/how-it-works/stabilizing-bitcoin-value/"
    previousName = "Stabilizing bitcoin value"
