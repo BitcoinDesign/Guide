@@ -45,7 +45,7 @@ This case study examines the goals, process, design decisions, and outcomes of t
 | **Project** | SeedSigner |
 | **Timeline** | June 2021 -- April 2022 (v0.5.0 launch) |
 | **Platform** | Raspberry Pi Zero + 1.3" 240x240 LCD + Camera + Joystick |
-| **Team** | [SeedSigner the Man](https://x.com/sesi_the_man) (project lead), [Keith Mukai](https://x.com/KeithMukai) (lead developer), [Newtonick](https://x.com/newtonick) (lead maintainer), Easy (UX design), and community contributors |
+| **Team** | [SeedSigner the Man](https://x.com/sesi_the_man) (project lead), [Keith Mukai](https://x.com/KeithMukai) (lead developer), [Newtonick](https://x.com/newtonick) (lead maintainer), [Easy](https://x.com/easyuxd) (UX design), and community contributors |
 | **Links** | [GitHub](https://github.com/SeedSigner/seedsigner) -- [Design System](https://github.com/easyuxd/seedsigner-design-system) -- [UX Guidelines](https://github.com/easyuxd/seedsigner-ux-guidelines) |
 
 ## Background
@@ -85,7 +85,7 @@ Like many free and open source software (FOSS) projects, SeedSigner had prioriti
 The v0.5.0 redesign was organized around four design goals that would guide every decision.
 
 ### 1. Visual Design
-Improve aesthetics and provide visual aids using UI treatments and iconography. An attractive interface is not vanity; research consistently shows that users perceive aesthetically pleasing designs as more usable ([Aesthetic-Usability Effect](https://lawsofux.com/aesthetic-usability-effect/)).
+Improve aesthetics and provide visual aids using UI treatments and iconography. An attractive interface is not vanity; research consistently shows that users perceive aesthetically pleasing designs as more usable (Aesthetic-Usability Effect).
 
 ### 2. Interaction Design
 Increase overall efficiency of user inputs and feedback. Minimize button presses, reduce scrolling, and make interactions predictable.
@@ -371,7 +371,7 @@ Since the v0.5.0 release in April 2022, SeedSigner has experienced significant g
 
 ## Acknowledgements
 
-This redesign was a team effort. [SeedSigner](https://x.com/sesi_the_man) (project lead) brought the vision, mental model, and unwavering commitment to simplicity. [Keith Mukai](https://x.com/KeithMukai) brought pixel-perfect implementation, creative design solutions, and the technical architecture that made the design system possible. [Newtonick](https://x.com/newtonick) maintained the repository, championed QR standardization, and together with [DesobedienteTecnológico](https://x.com/DesobedienteTec) added reproducible builds. [Jean Do](https://github.com/jdlcdl) contributed code, testing, and tireless community support. We are grateful to the many other contributors and the broader SeedSigner community (enclosure designers, testers, translators, and users) for their work, feedback, and energy that drives the project forward.
+This redesign was a team effort. [SeedSigner the Man](https://x.com/sesi_the_man) (project lead) brought the vision, mental model, and unwavering commitment to simplicity. [Easy](https://x.com/easyuxd) contributed UX/UI design, bringing clarity and polish to the user experience. [Keith Mukai](https://x.com/KeithMukai) brought pixel-perfect implementation, creative design solutions, and the technical architecture that made the design system possible. [Newtonick](https://x.com/newtonick) maintained the repository, championed QR standardization, and together with [DesobedienteTecnológico](https://x.com/DesobedienteTec) added reproducible builds. [Jean Do](https://github.com/jdlcdl) contributed code, testing, and tireless community support. We are grateful to the many other contributors and the broader SeedSigner community (enclosure designers, testers, translators, and users) for their work, feedback, and energy that drives the project forward.
 
 ---
 
