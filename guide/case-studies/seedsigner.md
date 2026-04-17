@@ -72,7 +72,7 @@ By early 2021, SeedSigner had proven its concept. The hardware was cheap and acc
    height = 240
 %}
 
-The UI was a series of text-based list menus. Functional, but only for hobbyists. Finding a loaded seed required navigating `Seed Tools > Store a Seed (temp) > Display Seed Slot #1`. There were no icons, no navigation bar, no visual hierarchy, no consistent interaction patterns. Labels used technical jargon. The power button lived inside the main menu alongside operational items.
+The UI was a series of text-based list menus. Functional, but only for hobbyists. There were no icons, no navigation bar, no visual hierarchy, no consistent interaction patterns or information architecture. Labels used technical jargon. The power button lived inside the main menu alongside operational items.
 
 **The innovative technology with an intuitive mental model was trapped behind a UI that only hobbyists would use.**
 
