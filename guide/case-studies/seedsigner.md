@@ -175,7 +175,7 @@ Four principles guided the design process:
 Several established UX principles directly informed design decisions:
 
 - **Jakob's Law:** Users expect software to behave like other software they've used. Follow existing conventions; don't reinvent the wheel.
-- **Tessler's Law:** Complexity cannot be eliminated, only moved. Bitcoin is inherently complex; abstract it away from the user wherever possible.
+- **Tesler's Law:** Complexity cannot be eliminated, only moved. Bitcoin is inherently complex; abstract it away from the user wherever possible.
 - **Paradox of the Active User:** Users never read the manual. Design for how people actually behave; let them poke around and learn by doing.
 - **Mental Model:** Align the system with the user's existing understanding. Most people already know how banking apps work; leverage that knowledge.
 
