@@ -1,4 +1,9 @@
 [[headers]]
+  for = "/*"
+    [headers.values]
+    Content-Signal = "ai-train=yes, search=yes, ai-input=yes"
+
+[[headers]]
   for = "/.well-known/nostr.json"
     [headers.values]
     Access-Control-Allow-Origin = "*"
