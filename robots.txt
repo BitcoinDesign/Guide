@@ -1,7 +1,7 @@
 # robots.txt for bitcoin.design
 # RFC 9309 compliant groups and rules
 
-# AI crawlers — explicit entries required per RFC 9309
+# AI crawlers — explicit entries for selected agents
 User-agent: GPTBot
 User-agent: OAI-SearchBot
 User-agent: Claude-Web
