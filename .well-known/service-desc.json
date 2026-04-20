@@ -1,0 +1,10 @@
+{
+  "name": "Bitcoin Design website service descriptor",
+  "description": "Discovery metadata for machine clients.",
+  "homepage": "https://bitcoin.design/",
+  "resources": {
+    "apiCatalog": "https://bitcoin.design/.well-known/api-catalog",
+    "serviceDoc": "https://bitcoin.design/guide/",
+    "describedBy": "https://bitcoin.design/search-data.json"
+  }
+}

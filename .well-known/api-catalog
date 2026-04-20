@@ -1,0 +1,25 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://bitcoin.design/.well-known/api-catalog",
+      "item": [
+        {
+          "href": "https://bitcoin.design/search-data.json",
+          "type": "application/json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://bitcoin.design/guide/",
+          "type": "text/html"
+        }
+      ],
+      "describedby": [
+        {
+          "href": "https://bitcoin.design/search-data.json",
+          "type": "application/json"
+        }
+      ]
+    }
+  ]
+}

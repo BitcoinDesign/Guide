@@ -2,3 +2,18 @@
   for = "/.well-known/nostr.json"
     [headers.values]
     Access-Control-Allow-Origin = "*"
+
+[[headers]]
+  for = "/"
+    [headers.values]
+    Link = "</.well-known/api-catalog>; rel=\"api-catalog\", </.well-known/service-desc.json>; rel=\"service-desc\"; type=\"application/json\", </guide/>; rel=\"service-doc\"; type=\"text/html\", </search-data.json>; rel=\"describedby\"; type=\"application/json\""
+
+[[headers]]
+  for = "/index.html"
+    [headers.values]
+    Link = "</.well-known/api-catalog>; rel=\"api-catalog\", </.well-known/service-desc.json>; rel=\"service-desc\"; type=\"application/json\", </guide/>; rel=\"service-doc\"; type=\"text/html\", </search-data.json>; rel=\"describedby\"; type=\"application/json\""
+
+[[headers]]
+  for = "/.well-known/api-catalog"
+    [headers.values]
+    Content-Type = "application/linkset+json; profile=\"https://www.rfc-editor.org/info/rfc9727\""
