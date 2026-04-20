@@ -17,3 +17,7 @@
   for = "/.well-known/api-catalog"
     [headers.values]
     Content-Type = "application/linkset+json; profile=\"https://www.rfc-editor.org/info/rfc9727\""
+
+[[edge_functions]]
+  path = "/*"
+  function = "markdown-negotiation"
