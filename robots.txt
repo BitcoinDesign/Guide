@@ -1,0 +1,19 @@
+# robots.txt for bitcoin.design
+# RFC 9309 compliant groups and rules
+
+User-agent: *
+Allow: /guide/
+Allow: /projects/
+Allow: /community/
+Allow: /join/
+Allow: /assets/
+Allow: /
+Disallow: /404.html
+Disallow: /search.html
+Disallow: /search-data.json
+Disallow: /script/
+Disallow: /docker-compose.yml
+Disallow: /Gemfile
+Disallow: /RAKEFILE
+
+Sitemap: https://bitcoin.design/sitemap.xml
