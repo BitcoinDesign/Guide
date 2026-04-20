@@ -1,6 +1,3 @@
-// @ts-ignore: Deno URL import is resolved by Netlify Edge at runtime.
-import { DOMParser as DenoDOMParser } from "https://deno.land/x/deno_dom@v0.1.56/deno-dom-wasm.ts";
-
 const MARKDOWN_CONTENT_TYPE = "text/markdown; charset=utf-8";
 const TEXT_NODE = 3;
 const ELEMENT_NODE = 1;
@@ -65,13 +62,6 @@ function estimateTokenCount(markdown: string): number {
 
 function htmlToMarkdown(html: string, baseUrl: URL): string {
   let doc: { querySelector: (selector: string) => any; querySelectorAll: (selector: string) => any; body?: any } | null = null;
-
-  // Prefer a parser that is available in Netlify Edge runtimes.
-  try {
-    doc = new DenoDOMParser().parseFromString(html, "text/html") as any;
-  } catch {
-    doc = null;
-  }
 
   // Fall back to native DOMParser if available.
   if (!doc && typeof DOMParser !== "undefined") {
