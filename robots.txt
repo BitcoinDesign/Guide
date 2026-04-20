@@ -40,4 +40,6 @@ Disallow: /docker-compose.yml
 Disallow: /Gemfile
 Disallow: /RAKEFILE
 
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
+
 Sitemap: https://bitcoin.design/sitemap.xml
