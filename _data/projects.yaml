@@ -12,8 +12,8 @@ projects:
         url: https://x.com/gbks
     status: Planning stage
     connect:
-      channel: "#general"
-      url: https://discord.gg/Exnh2pye4H
+      channel: "Tracking issue"
+      url: https://github.com/BitcoinDesign/Meta/issues/822
 
   - id: 2
     image: project_image_02.svg
