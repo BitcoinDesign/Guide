@@ -42,7 +42,7 @@ projects:
     key_people:
       - handle: "@StephenDeLorme"
         url: https://x.com/StephenDeLorme
-    status: Alpha stage, approaching v1 launch
+    status: Alpha stage<span class="hide-mobile">, approaching v1 launch</span>
     connect:
       channel: "#bitcoin-builder-kit"
       url: https://discord.gg/km4pzgc5aG
@@ -92,7 +92,7 @@ projects:
     key_people:
       - handle: "@matbalez"
         url: https://x.com/matbalez
-    status: Active advocacy underway
+    status: Active advocacy<span class="hide-mobile">&nbsp;underway</span>
     connect:
       channel: "#bip-177"
       url: https://discord.gg/amVyhmzZ3s
@@ -110,7 +110,7 @@ projects:
         url: https://x.com/matbalez
       - handle: "@ConorOkus"
         url: https://x.com/ConorOkus
-    status: Active advocacy underway
+    status: Active advocacy<span class="hide-mobile">&nbsp;underway</span>
     connect:
       channel: "#bip-353"
       url: https://discord.gg/Ja8ke7Kg2G
@@ -286,7 +286,7 @@ projects:
     key_people:
       - handle: "@Yashraj__"
         url: https://x.com/Yashraj__
-    status: Active advocacy underway
+    status: Active advocacy<span class="hide-mobile">&nbsp;underway</span>
     connect:
       channel: "#privacy"
       url: https://discord.gg/AQefTMm5hK
