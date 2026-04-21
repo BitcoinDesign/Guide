@@ -1,0 +1,45 @@
+# robots.txt for bitcoin.design
+# RFC 9309 compliant groups and rules
+
+# AI crawlers — explicit entries for selected agents
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: Claude-Web
+User-agent: anthropic-ai
+User-agent: Google-Extended
+User-agent: Amazonbot
+User-agent: Applebot-Extended
+User-agent: Bytespider
+User-agent: CCBot
+Allow: /guide/
+Allow: /projects/
+Allow: /community/
+Allow: /join/
+Allow: /assets/
+Allow: /
+Disallow: /404.html
+Disallow: /search.html
+Disallow: /search-data.json
+Disallow: /script/
+Disallow: /docker-compose.yml
+Disallow: /Gemfile
+Disallow: /RAKEFILE
+
+User-agent: *
+Allow: /guide/
+Allow: /projects/
+Allow: /community/
+Allow: /join/
+Allow: /assets/
+Allow: /
+Disallow: /404.html
+Disallow: /search.html
+Disallow: /search-data.json
+Disallow: /script/
+Disallow: /docker-compose.yml
+Disallow: /Gemfile
+Disallow: /RAKEFILE
+
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
+
+Sitemap: https://bitcoin.design/sitemap.xml
