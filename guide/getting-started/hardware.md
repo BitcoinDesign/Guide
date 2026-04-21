@@ -101,7 +101,7 @@ Lightning node software can be run on a smartphone. Though, this often comes wit
 
 Heavy users of the lightning network, such as routing node operators, often run lightning nodes on dedicated hardware. Lightning nodes require 24/7 uptime, which is much easier to achieve with dedicated hardware. Lightning nodes also require the private keys to be stored on the same device. Dedicated hardware reduces the attack surface and makes it easier to secure private keys.
 
-[Plug-and-play hardware nodes](https://samouraiwallet.com/nodl) exist and make it simple to set up a dedicated hardware node. The most common way people run dedicated hardware nodes is installing a node OS, like [Umbrel](https://getumbrel.com/) or [MyNode](https://mynodebtc.com/), on a hardware device.
+Plug-and-play hardware nodes exist and make it simple to set up a dedicated hardware node. The most common way people run dedicated hardware nodes is installing a node OS, like [Umbrel](https://getumbrel.com/) or [MyNode](https://mynodebtc.com/), on a hardware device.
 
 See our [nodes]({{ '/guide/glossary/node/' | relative_url }}) page for more details on how they work.
 

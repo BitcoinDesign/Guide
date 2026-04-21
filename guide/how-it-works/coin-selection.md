@@ -314,7 +314,7 @@ A user chooses to send a payment to one of their contacts. They enter the amount
 #### Products that use this scheme
 
 {% include fact/products.html %}
-[Bitcoin Core](https://bitcoincore.org), [BTCPay Server](https://btcpayserver.org), [Chaincase](https://chaincase.app), [Samourai](https://samouraiwallet.com), and [Wasabi](https://wasabiwallet.io)
+[Bitcoin Core](https://bitcoincore.org), [BTCPay Server](https://btcpayserver.org), and [Wasabi](https://wasabiwallet.io)
 {% include fact/close.html %}
 
 ---

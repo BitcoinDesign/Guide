@@ -232,7 +232,7 @@ Below are the primary address types available to test if your application suppor
 
 A payment code is a static payment request type that can receive multiple payments. The technical details of how these work is defined in [BIP 47](https://bips.xyz/47).
 
-Payment codes have been popularised in wallets such as [Samourai](https://samouraiwallet.com/) and [Sparrow](https://sparrowwallet.com/).
+Payment codes have been popularised in wallets such as Samourai (no longer operational) and [Sparrow](https://sparrowwallet.com/).
 
 A downside to payment codes is that they require an additional on-chain transaction each time two users want to connect and use them. [Silent payments](https://gist.github.com/RubenSomsen/c43b79517e7cb701ebf77eec6dbb46b8?permalink_comment_id=4113680) are a new experimental proposal that prevents the need for this additional on-chain transaction at the cost of extra bandwidth for receivers.
 
