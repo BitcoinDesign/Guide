@@ -1,6 +1,34 @@
 const MARKDOWN_CONTENT_TYPE = "text/markdown; charset=utf-8";
 const TEXT_NODE = 3;
 const ELEMENT_NODE = 1;
+const NOISE_SELECTORS = [
+  "script",
+  "style",
+  "noscript",
+  "template",
+  "svg",
+  "header",
+  "footer",
+  "nav",
+  "aside",
+  ".site-header",
+  ".site-footer",
+  ".side-bar",
+  ".secondary-nav",
+  ".search-input-wrap",
+  ".social-media-list",
+  ".footer-nav",
+  ".skip-to-content-link",
+  ".header-anchor",
+  ".next-previous",
+  ".next-previous--feedback",
+  ".home-banner-info",
+  "#secondary-nav",
+  "#site-nav",
+  "#toggled-search",
+  "[aria-label='Main navigation']",
+  "[aria-label='Footer navigation']",
+];
 
 export default async (request: Request, context: { next: () => Promise<Response> }) => {
   const response = await context.next();
@@ -76,18 +104,15 @@ function htmlToMarkdown(html: string, baseUrl: URL): string {
     return htmlToMarkdownFallback(html, baseUrl);
   }
 
-  for (const selector of ["script", "style", "noscript"]) {
-    doc.querySelectorAll(selector).forEach((node: any) => node.remove());
-  }
+  pruneDocument(doc);
 
   const title = normalizeWhitespace(doc.querySelector("title")?.textContent || "");
-  const body = doc.body;
-  const bodyMarkdown = body ? renderChildren(body, baseUrl) : "";
+  const contentRoot = selectContentRoot(doc);
+  const bodyMarkdown = contentRoot ? renderChildren(contentRoot, baseUrl) : "";
 
   const parts: string[] = [];
   if (title) {
     parts.push(`---\ntitle: ${title}\n---`);
-    parts.push(`# ${title}`);
   }
 
   if (bodyMarkdown) {
@@ -102,19 +127,20 @@ function htmlToMarkdownFallback(html: string, baseUrl: URL): string {
     .replace(/<!--[\s\S]*?-->/g, "")
     .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "")
     .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, "")
-    .replace(/<noscript\b[^>]*>[\s\S]*?<\/noscript>/gi, "");
+    .replace(/<noscript\b[^>]*>[\s\S]*?<\/noscript>/gi, "")
+    .replace(/<svg\b[^>]*>[\s\S]*?<\/svg>/gi, "");
 
   const titleMatch = sanitized.match(/<title\b[^>]*>([\s\S]*?)<\/title>/i);
   const title = titleMatch ? normalizeWhitespace(decodeHtmlEntities(stripTags(titleMatch[1]))) : "";
 
   const bodyMatch = sanitized.match(/<body\b[^>]*>([\s\S]*?)<\/body>/i);
-  const bodyHtml = bodyMatch ? bodyMatch[1] : sanitized;
+  const rawBodyHtml = bodyMatch ? bodyMatch[1] : sanitized;
+  const bodyHtml = extractPrimaryHtmlFragment(rawBodyHtml);
   const bodyMarkdown = renderHtmlFragmentToMarkdown(bodyHtml, baseUrl);
 
   const parts: string[] = [];
   if (title) {
     parts.push(`---\ntitle: ${title}\n---`);
-    parts.push(`# ${title}`);
   }
 
   if (bodyMarkdown) {
@@ -126,7 +152,7 @@ function htmlToMarkdownFallback(html: string, baseUrl: URL): string {
 
 function renderHtmlFragmentToMarkdown(html: string, baseUrl: URL): string {
   const protectedBlocks: string[] = [];
-  let content = html;
+  let content = stripFallbackNoise(html);
 
   // Protect code blocks so later tag cleanup does not alter their content.
   content = content.replace(/<pre\b[^>]*>([\s\S]*?)<\/pre>/gi, (_match, preContent: string) => {
@@ -137,16 +163,8 @@ function renderHtmlFragmentToMarkdown(html: string, baseUrl: URL): string {
   });
 
   content = content.replace(/<h([1-6])\b[^>]*>([\s\S]*?)<\/h\1>/gi, (_match, level: string, text: string) => {
-    const clean = decodeHtmlEntities(stripTags(text)).trim();
+    const clean = normalizeWhitespace(decodeHtmlEntities(stripTags(text)));
     return clean ? `\n\n${"#".repeat(Number(level))} ${clean}\n\n` : "";
-  });
-
-  content = content.replace(/<a\b([^>]*)>([\s\S]*?)<\/a>/gi, (_match, attrs: string, text: string) => {
-    const hrefMatch = attrs.match(/href\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s>]+))/i);
-    const rawHref = hrefMatch ? hrefMatch[1] || hrefMatch[2] || hrefMatch[3] || "" : "";
-    const href = toAbsoluteUrl(rawHref, baseUrl);
-    const label = normalizeWhitespace(decodeHtmlEntities(stripTags(text))) || href;
-    return href ? `[${label}](${href})` : label;
   });
 
   content = content.replace(/<img\b([^>]*)>/gi, (_match, attrs: string) => {
@@ -157,6 +175,18 @@ function renderHtmlFragmentToMarkdown(html: string, baseUrl: URL): string {
     const src = toAbsoluteUrl(srcRaw, baseUrl);
     const alt = normalizeWhitespace(decodeHtmlEntities(altRaw)) || "image";
     return src ? `![${alt}](${src})` : "";
+  });
+
+  content = content.replace(/<a\b([^>]*)>([\s\S]*?)<\/a>/gi, (_match, attrs: string, text: string) => {
+    const hrefMatch = attrs.match(/href\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s>]+))/i);
+    const rawHref = hrefMatch ? hrefMatch[1] || hrefMatch[2] || hrefMatch[3] || "" : "";
+    const href = toAbsoluteUrl(rawHref, baseUrl);
+    const label = normalizeWhitespace(decodeHtmlEntities(stripTags(text)));
+    if (!href || !label) {
+      return label;
+    }
+
+    return `[${label}](${href})`;
   });
 
   content = content
@@ -185,7 +215,7 @@ function renderHtmlFragmentToMarkdown(html: string, baseUrl: URL): string {
   content = decodeHtmlEntities(stripTags(content))
     .replace(/\n{3,}/g, "\n\n")
     .split("\n")
-    .map((line) => line.trimEnd())
+    .map((line) => line.trim())
     .join("\n")
     .trim();
 
@@ -244,8 +274,12 @@ function renderNode(node: any, baseUrl: URL, listDepth: number): string {
   }
 
   if (tag === "a") {
-    const text = renderInlineChildren(el, baseUrl) || normalizeWhitespace(el.getAttribute("href") || "");
+    const text = renderInlineChildren(el, baseUrl);
     const href = toAbsoluteUrl(el.getAttribute("href"), baseUrl);
+    if (!text) {
+      return "";
+    }
+
     return href ? `[${text}](${href})` : text;
   }
 
@@ -349,9 +383,20 @@ function renderInlineChildren(parent: any, baseUrl: URL): string {
     const tag = el.tagName.toLowerCase();
 
     if (tag === "a") {
-      const text = renderInlineChildren(el, baseUrl) || normalizeWhitespace(el.getAttribute("href") || "");
+      const text = renderInlineChildren(el, baseUrl);
       const href = toAbsoluteUrl(el.getAttribute("href"), baseUrl);
-      out.push(href ? `[${text}](${href})` : text);
+      if (text) {
+        out.push(href ? `[${text}](${href})` : text);
+      }
+      continue;
+    }
+
+    if (tag === "img") {
+      const alt = normalizeWhitespace(el.getAttribute("alt") || "image");
+      const src = toAbsoluteUrl(el.getAttribute("src"), baseUrl);
+      if (src) {
+        out.push(`![${alt}](${src})`);
+      }
       continue;
     }
 
@@ -407,4 +452,71 @@ function toAbsoluteUrl(href: string | null, baseUrl: URL): string {
 
 function normalizeWhitespace(value: string): string {
   return value.replace(/\s+/g, " ").trim();
+}
+
+function pruneDocument(doc: { querySelectorAll: (selector: string) => any }): void {
+  for (const selector of NOISE_SELECTORS) {
+    doc.querySelectorAll(selector).forEach((node: any) => node.remove());
+  }
+}
+
+function selectContentRoot(doc: { querySelector: (selector: string) => any; body?: any }): any {
+  const main = doc.querySelector("main");
+  if (main && /\bhome-page\b/.test(main.getAttribute?.("class") || "")) {
+    return main;
+  }
+
+  const preferredSelectors = [
+    "#main article",
+    "main article",
+    "article.guide",
+    "article",
+    "#main",
+    "[role='main']",
+    "main",
+    "body",
+  ];
+
+  for (const selector of preferredSelectors) {
+    const found = doc.querySelector(selector);
+    if (found) {
+      return found;
+    }
+  }
+
+  return doc.body || null;
+}
+
+function extractPrimaryHtmlFragment(html: string): string {
+  const mainMatch = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i);
+  const mainHtml = mainMatch ? mainMatch[1] : "";
+  const isHome = /<main\b[^>]*class=("|')[^"']*\bhome-page\b[^"']*\1/i.test(html);
+
+  if (isHome && mainHtml) {
+    return mainHtml;
+  }
+
+  const articleMatch = html.match(/<article\b[^>]*>([\s\S]*?)<\/article>/i);
+  if (articleMatch) {
+    return articleMatch[1];
+  }
+
+  if (mainHtml) {
+    return mainHtml;
+  }
+
+  return html;
+}
+
+function stripFallbackNoise(html: string): string {
+  return html
+    .replace(/<header\b[^>]*>[\s\S]*?<\/header>/gi, "")
+    .replace(/<footer\b[^>]*>[\s\S]*?<\/footer>/gi, "")
+    .replace(/<nav\b[^>]*>[\s\S]*?<\/nav>/gi, "")
+    .replace(/<aside\b[^>]*>[\s\S]*?<\/aside>/gi, "")
+    .replace(/<div\b[^>]*class=("|')[^"']*\bnext-previous\b[^"']*\1[^>]*>[\s\S]*?<\/div>/gi, "")
+    .replace(/<section\b[^>]*class=("|')[^"']*\bhome-banner-info\b[^"']*\1[^>]*>[\s\S]*?<\/section>/gi, "")
+    .replace(/<div\b[^>]*class=("|')[^"']*\bside-bar\b[^"']*\1[^>]*>[\s\S]*?<\/div>/gi, "")
+    .replace(/<a\b[^>]*class=("|')[^"']*\bskip-to-content-link\b[^"']*\1[^>]*>[\s\S]*?<\/a>/gi, "")
+    .replace(/<a\b[^>]*class=("|')[^"']*\bheader-anchor\b[^"']*\1[^>]*>[\s\S]*?<\/a>/gi, "");
 }
