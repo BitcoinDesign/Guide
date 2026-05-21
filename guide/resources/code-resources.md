@@ -53,6 +53,15 @@ The [BDK Swift example wallet](https://github.com/reez/BDKSwiftExampleWallet) is
 
 The [BDG Wallet](https://github.com/bdgwallet) is a work in process project for implementing the reference designs from the guide in Swift and Flutter. It is also built using [LDK Node](https://lightningdevkit.org).
 
+## UI components
+
+### Bitcoin address display
+
+A vanilla JavaScript [web component](https://matthewball.me/bitcoin-address-component/) for displaying bitcoin addresses with truncation, expand/collapse, and copy-to-clipboard. Implements the [visual formatting]({{ '/guide/glossary/address/#visual-formatting' | relative_url }}) principles from the guide including prefix highlighting, character grouping, and mono-space fonts. Zero dependencies, Shadow DOM encapsulation, dark mode support.
+
+- [Live demo](https://matthewball.me/bitcoin-address-component/)
+- [Source code on GitHub](https://github.com/matthewrball/beautiful-bitcoin-address-component)
+
 ## Guides and blog posts
 
 Various guides on how to build bitcoin wallets that are related to the Bitcoin Design Community.
