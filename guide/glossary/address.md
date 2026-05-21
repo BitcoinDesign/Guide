@@ -168,8 +168,8 @@ When displaying addresses in your application, consider building interactive com
 Apply the same formatting principles from above: mono-space fonts, character grouping, and prefix highlighting. Add a toast or visual confirmation after copying so users know the address was captured correctly. Supporting light and dark themes helps the component fit into different application contexts.
 
 {% include image.html
-   image = "/assets/images/guide/glossary/address/address-component-half.png"
-   retina = "/assets/images/guide/glossary/address/address-component.png"
+   image = "/assets/images/guide/glossary/address/address-component.png"
+   retina = "/assets/images/guide/glossary/address/address-component@2x.png"
    width = 735
    height = 735
    link-url = "https://matthewball.me/bitcoin-address-component/"
