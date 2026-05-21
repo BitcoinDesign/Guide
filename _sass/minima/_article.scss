@@ -362,7 +362,9 @@ article.guide {
     }
   }
 
-  // Full width images stretch all the way, up to 1600px width.
+  // Full width images stretch all the way.
+  // On non-sidebar pages, break out to full viewport width.
+  // On sidebar pages, only cancel the article padding.
 
   & > .-full-width {
     display: flex;
@@ -381,6 +383,30 @@ article.guide {
     @include media-query(large) {
       margin-left: - $spacing-unit;
       margin-right: - $spacing-unit;
+    }
+  }
+
+  .main:not(.sidebar) > & > .-full-width {
+    @include media-query(large) {
+      width: 100vw;
+      margin-left: calc(-50vw + 50%);
+      margin-right: calc(-50vw + 50%);
+
+      figure {
+        width: 100%;
+      }
+
+      picture {
+        display: block;
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+        max-width: none;
+        max-height: calc(#{$content-width - $spacing-unit * 4} * 0.375); // 600:1600 banner ratio
+        object-fit: cover;
+      }
     }
   }
 
