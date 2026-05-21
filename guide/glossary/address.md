@@ -136,6 +136,23 @@ Choose a typeface whose characters can be clearly distinguished (such as [Source
 
 </div>
 
+## Componentry
+
+When displaying addresses in your application, consider building interactive components that go beyond static text. A truncated preview with the option to expand, paired with a copy button, reduces the need for manual selection and the errors that come with it.
+
+Apply the same formatting principles from above: mono-space fonts, character grouping, and prefix highlighting. Add a toast or visual confirmation after copying so users know the address was captured correctly. Supporting light and dark themes helps the component fit into different application contexts.
+
+{% include image.html
+   image = "/assets/images/guide/glossary/address/address-component-half.png"
+   retina = "/assets/images/guide/glossary/address/address-component.png"
+   width = 735
+   height = 735
+   link-url = "https://matthewball.me/bitcoin-address-component/"
+   caption = 'An address component with expand, collapse, and copy-to-clipboard interactions ([source code](https://github.com/matthewrball/beautiful-bitcoin-address-component)).'
+   alt-text = "Bitcoin address display component showing Native SegWit and Wrapped SegWit addresses with copy and expand controls."
+   layout = "-background"
+%}
+
 ## Address validation
 
 Validation with visual feedback can reduce user anxiety about making mistakes. While addresses look like randomly assembled characters, there are patterns that can be used to identify whether an address is valid or not. For [segwit]({{'/guide/glossary/address/#segwit-address---p2wpkh' | relative_url}}) and [taproot]({{'/guide/glossary/address/#taproot-address---p2tr' | relative_url}}) addresses, it may be possible to identify which characters are incorrect. However, there are limits to this. Too many mistakes may result in an address that is valid but different from what the user intended to enter. You can try [this interactive validator](https://bitcoin.sipa.be/bech32/demo/demo.html).
