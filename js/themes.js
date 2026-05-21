@@ -585,11 +585,15 @@ docReady(function() {
 
         var bannerNext = document.getElementById('home-banner-info-next');
         if(bannerNext) {
-            bannerNext.addEventListener('click', function(event) {
-                event.preventDefault();
+            if(themes.length <= 1) {
+                bannerNext.style.display = 'none';
+            } else {
+                bannerNext.addEventListener('click', function(event) {
+                    event.preventDefault();
 
-                applyNextTheme();
-            });
+                    applyNextTheme();
+                });
+            }
         }
     }
 });
