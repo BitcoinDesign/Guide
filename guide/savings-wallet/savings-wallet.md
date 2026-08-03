@@ -47,10 +47,10 @@ images_onboarding:
       caption: Introduction to the key creation process via the signing device.
     - file: onboarding/key-2-step-2
       alt:
-      caption: Step 1 is to export the XPUB on the ColdCard.
+      caption: Step 1 is to export the XPUB on the BitBox.
     - file: onboarding/key-2-step-3
       alt:
-      caption: Step 2 is to connect the SD card from the ColdCard to the phone.
+      caption: Step 2 is to connect the SD card from the BitBox to the phone.
     - file: onboarding/key-2-step-4
       alt:
       caption: The card was detected and the XPUB copied.
@@ -88,7 +88,7 @@ images_send_manual:
       caption: Connect the SD card to save the PSBT file.
     - file: send/amount-high-step-3
       alt:
-      caption: Describes how to sign the PSBT file on the Coldcard.
+      caption: Describes how to sign the PSBT file on the BitBox.
     - file: send/amount-high-step-4
       alt:
       caption: Loading the (now signed) PSBT file back into the app.

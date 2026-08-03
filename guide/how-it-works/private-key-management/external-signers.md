@@ -101,7 +101,6 @@ Lightning signers are an experimental type of external signers interacting with 
 #### Hardware external signers
 - [Trezor]({{ 'https://trezor.io'}})
 - [Ledger]({{ 'https://www.ledger.com'}})
-- [Coldcard]({{ 'https://coldcardwallet.com'}})
 
 ---
 

@@ -72,7 +72,7 @@ You may already be familiar with physical security keys from your bank or work. 
    mobile = "/assets/images/guide/getting-started/hardware/hardware-wallets-mobile.jpg"
    mobileRetina = "/assets/images/guide/getting-started/hardware/hardware-wallets-mobile@2x.jpg"
    alt-text = "Examples of hardware wallets"
-   caption = '<a href="https://coldcardwallet.com" target="_blank">Coldcard</a>, <a href="https://www.ledger.com/" target="_blank">Ledger</a>, <a href="https://trezor.io" target="_blank">Trezor</a>, and <a href="https://foundationdevices.com" target="_blank">Foundation</a>'
+   caption = '<a href="https://seedsigner.com/" target="_blank">Seedsigner</a>, <a href="https://www.ledger.com/" target="_blank">Ledger</a>, <a href="https://trezor.io" target="_blank">Trezor</a>, and <a href="https://foundationdevices.com" target="_blank">Foundation</a>'
    width = 800
    height = 400
 %}
