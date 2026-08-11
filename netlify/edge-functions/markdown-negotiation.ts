@@ -6,7 +6,6 @@ const NOISE_SELECTORS = [
   "style",
   "noscript",
   "template",
-  "svg",
   "header",
   "footer",
   "nav",
@@ -127,8 +126,7 @@ function htmlToMarkdownFallback(html: string, baseUrl: URL): string {
     .replace(/<!--[\s\S]*?-->/g, "")
     .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "")
     .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, "")
-    .replace(/<noscript\b[^>]*>[\s\S]*?<\/noscript>/gi, "")
-    .replace(/<svg\b[^>]*>[\s\S]*?<\/svg>/gi, "");
+    .replace(/<noscript\b[^>]*>[\s\S]*?<\/noscript>/gi, "");
 
   const titleMatch = sanitized.match(/<title\b[^>]*>([\s\S]*?)<\/title>/i);
   const title = titleMatch ? normalizeWhitespace(decodeHtmlEntities(stripTags(titleMatch[1]))) : "";
@@ -469,11 +467,13 @@ function selectContentRoot(doc: { querySelector: (selector: string) => any; body
   const preferredSelectors = [
     "#main article",
     "main article",
+    ".main article",
     "article.guide",
     "article",
     "#main",
     "[role='main']",
     "main",
+    ".main",
     "body",
   ];
 
@@ -494,6 +494,11 @@ function extractPrimaryHtmlFragment(html: string): string {
 
   if (isHome && mainHtml) {
     return mainHtml;
+  }
+
+  const guideArticleMatch = html.match(/<article\b[^>]*class=("')[^"']*\bguide\b[^"']*\1[^>]*>([\s\S]*?)<\/article>/i);
+  if (guideArticleMatch) {
+    return guideArticleMatch[2];
   }
 
   const articleMatch = html.match(/<article\b[^>]*>([\s\S]*?)<\/article>/i);
