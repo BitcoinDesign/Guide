@@ -46,9 +46,25 @@ https://www.figma.com/file/qzvCvqhSRx3Jq8aywaSjlr/Bitcoin-Design-Guide-Illustrat
   <p>These design initiatives can have a giant impact on bitcoin, and thus, on the world. It is a big ambitious slate of work, one for which we need incredible designers to lean in to help us explore, to create and to lead the charge with us. Bitcoin is money for everyone. But it is also yours—what will you design it to be?</p>
 </section>
 
+<div class="projects-toc">
+  <div class="projects-toc__grid">
+    {% for project in site.data.projects.projects %}
+    <a href="#project-{{ project.id }}" class="projects-toc__item">
+      <div class="projects-toc__image" style="background-color: {{ project.color }};">
+        <img src="/assets/images/projects/{{ project.image }}" alt="">
+      </div>
+      <div class="projects-toc__content">
+        <span class="projects-toc__number">{{ forloop.index | prepend: '00' | slice: -2, 2 }}</span>
+        <div class="projects-toc__title">{{ project.title }}</div>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+
 <div class="projects-grid">
   {% for project in site.data.projects.projects %}
-  <div class="project-card">
+  <div class="project-card" id="project-{{ project.id }}">
     <div class="project-card__main">
       <div class="project-card__content">
         <span class="project-card__number">{{ forloop.index | prepend: '00' | slice: -2, 2 }}</span>
