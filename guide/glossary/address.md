@@ -161,6 +161,23 @@ Address reuse is the practice of receiving more than one transaction to a single
 
 </div>
 
+## Componentry
+
+When displaying addresses in your application, consider building interactive components that go beyond static text. A truncated preview with the option to expand, paired with a copy button, reduces the need for manual selection and the errors that come with it.
+
+Apply the same formatting principles from above: mono-space fonts, character grouping, and prefix highlighting. Add a toast or visual confirmation after copying so users know the address was captured correctly. Supporting light and dark themes helps the component fit into different application contexts.
+
+{% include image.html
+   image = "/assets/images/guide/glossary/address/address-component.png"
+   retina = "/assets/images/guide/glossary/address/address-component@2x.png"
+   width = 735
+   height = 735
+   link-url = "https://matthewball.me/bitcoin-address-component/"
+   caption = 'An address component with expand, collapse, and copy-to-clipboard interactions ([source code](https://github.com/matthewrball/beautiful-bitcoin-address-component)).'
+   alt-text = "Bitcoin address display component showing Native SegWit and Wrapped SegWit addresses with copy and expand controls."
+   layout = "-background"
+%}
+
 ---
 
 Next, learn about the different kinds of [wallets]({{ '/guide/glossary/wallet/' | relative_url }}) that exist with bitcoin.
