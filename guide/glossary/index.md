@@ -47,7 +47,7 @@ A bitcoin address is an identifier of 26-35 alphanumeric characters that is used
 
 ### Account
 
-Just like wallet, the term account can also be used for very different things. In bitcoin wallets that follow the hierarchy described in [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki), a bitcoin wallet can have multiple accounts, with each one having its own addresses. However, an account is also oftentimes used for accounts with third-party service providers.
+Just like wallet, the term account can also be used for very different things. In bitcoin wallets that follow the hierarchy described in [BIP 44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki), a bitcoin wallet can have multiple accounts, with each one having its own addresses. However, an account is also oftentimes used for accounts with third-party service providers.
 
 Differentiate between
 
@@ -77,14 +77,14 @@ An open-source project that maintains and releases the bitcoin client of the sam
 
 A standardized technical document format for suggesting improvements to bitcoin. They are hosted on Github [here](https://github.com/bitcoin/bips). Some important proposals to be aware of:
 
-- [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki): Mnemonic code for generating deterministic keys
-- [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki): Multi-account hierarchy for HD wallets
-- [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki): Derivation scheme for HD wallets using nested SegWit
-- [BIP84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki): Derivation scheme for HD wallets using SegWit
-- [BIP141](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki): SegWit, changes to transaction structure
-- [BIP173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki): *Bech32* standard for native SegWit addresses
-- [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki): Partially Signed Bitcoin Transaction Format
-- [BIP380](https://github.com/bitcoin/bips/blob/master/bip-0380.mediawiki): Output Script Descriptors General Operation
+- [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki): Mnemonic code for generating deterministic keys
+- [BIP 44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki): Multi-account hierarchy for HD wallets
+- [BIP 49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki): Derivation scheme for HD wallets using nested SegWit
+- [BIP 84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki): Derivation scheme for HD wallets using SegWit
+- [BIP 141](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki): SegWit, changes to transaction structure
+- [BIP 173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki): *Bech32* standard for native SegWit addresses
+- [BIP 174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki): Partially Signed Bitcoin Transaction Format
+- [BIP 380](https://github.com/bitcoin/bips/blob/master/bip-0380.mediawiki): Output Script Descriptors General Operation
 
 ### Block
 <div class="center" markdown="1">
@@ -177,15 +177,15 @@ See also [PayJoin](#payjoin-p2ep).
 
 There are several standards for how to notate the path to a key and corresponding address in [HD wallets]({{ '/guide/glossary/wallet/#hd-wallet' | relative_url }}). It is important to know which ones are used and supported by a wallet-application when importing and exporting a wallet. The most common are:
 
-- [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki): original, deprecated
-- [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki): multi-account for HD wallets
-- [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki): multi-account, for script addresses with nested-SegWit
-- [BIP84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki): multi-account, for SegWit addresses
+- [BIP 32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki): original, deprecated
+- [BIP 44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki): multi-account for HD wallets
+- [BIP 49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki): multi-account, for script addresses with nested-SegWit
+- [BIP 84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki): multi-account, for SegWit addresses
 
-BIP44 introduced the following structure, which BIP49 and BIP84 follow:<br/>
+BIP 44 introduced the following structure, which BIP 49 and BIP 84 follow:<br/>
 `m / purpose / coin_type / account / change / index`
 
-The path to the first address in a bitcoin-wallet using BIP84 will look like this:<br/>
+The path to the first address in a bitcoin-wallet using BIP 84 will look like this:<br/>
 `m/84h/0h/0h/0/0`
 
 For full [interoperability](/guide/getting-started/principles/#interoperability) a wallet should support all of these standards. More information can be found [here](/guide/designing-products/interoperability/#wallet-backups) and [here](https://learnmeabitcoin.com/technical/derivation-paths).
@@ -200,11 +200,11 @@ The master public key of a bitcoin account. All public addresses are generated f
 
 #### ypub
 
-Same as xpub, however the y denotes that this xpub belongs to a wallet that is following the [BIP49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki) standard that details the derivation scheme for wrapped-segwit addresses (P2WPKH-nested-in-P2SH).
+Same as xpub, however the y denotes that this xpub belongs to a wallet that is following the [BIP 49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki) standard that details the derivation scheme for wrapped-segwit addresses (P2WPKH-nested-in-P2SH).
 
 #### zpub
 
-Same as ypub though the z denotes it is an extended public key from a segregated witness enabled wallet following [BIP84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki).
+Same as ypub though the z denotes it is an extended public key from a segregated witness enabled wallet following [BIP 84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki).
 
 ### Fiat
 
@@ -356,13 +356,13 @@ A node policy that allows an unconfirmed transaction to be replaced with a diffe
 
 _Also referred to as Seed, Mnemonic, and Backup phrase._
 
-The controlling keypair of a bitcoin wallet can be derived from a *recovery phrase* of 12 words (it can also be 18 or 24 words, which is less common and not recommended as it does not provide better security) from a standardized list, defined in [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki). [Learn here](https://bennet.org/learn/how-secure-is-your-bitcoin-wallets-mnemonic-seed-phrase/) how the words are chosen. The recovery phrase provides full access to a bitcoin wallet as it contains the private key and is therefore very valuable. It’s extremely important to keep it safe, both from other people getting access to it and for yourself not to lose it by creating one or several backups of the phrase. In many applications, most of this work falls on the user, and it’s important to acknowledge the responsibility here of the makers of the application to ensure that the user is able and aware of how to securely store a recovery phrase backup.
+The controlling keypair of a bitcoin wallet can be derived from a *recovery phrase* of 12 words (it can also be 18 or 24 words, which is less common and not recommended as it does not provide better security) from a standardized list, defined in [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki). [Learn here](https://bennet.org/learn/how-secure-is-your-bitcoin-wallets-mnemonic-seed-phrase/) how the words are chosen. The recovery phrase provides full access to a bitcoin wallet as it contains the private key and is therefore very valuable. It’s extremely important to keep it safe, both from other people getting access to it and for yourself not to lose it by creating one or several backups of the phrase. In many applications, most of this work falls on the user, and it’s important to acknowledge the responsibility here of the makers of the application to ensure that the user is able and aware of how to securely store a recovery phrase backup.
 
-Many wallet-applications work with HD wallets and recovery phrases, and are interoperable, meaning you can change the application that can control your wallet should you wish (although there are some caveats depending on if they support just BIP32 or also BIP44).
+Many wallet-applications work with HD wallets and recovery phrases, and are interoperable, meaning you can change the application that can control your wallet should you wish (although there are some caveats depending on if they support just BIP 32 or also BIP 44).
 
-**Technicalities** - Recovery of multisig-wallets needs both the extended public key and the recovery phrase of all participating keys as well as the master key fingerprint as defined by BIP32 concatenated with the derivation path of the public key. The derivation path is represented as 32-bit little endian unsigned integer indexes concatenated with each other. The number of 32 bit unsigned integer indexes must match the depth provided in the extended public key.
+**Technicalities** - Recovery of multisig-wallets needs both the extended public key and the recovery phrase of all participating keys as well as the master key fingerprint as defined by BIP 32 concatenated with the derivation path of the public key. The derivation path is represented as 32-bit little endian unsigned integer indexes concatenated with each other. The number of 32 bit unsigned integer indexes must match the depth provided in the extended public key.
 
-**Language considerations** - Recovery phrases typically consists of English-language words, which may not be intuitive to recognize, remember, or write for many users around the world. Consider supporting multiple languages (see [BIP39 wordlists](https://github.com/bitcoin/bips/blob/master/bip-0039/bip-0039-wordlists.md)), or an alternate backup technique like [output descriptors]({{ '/guide/glossary/#output-script-descriptor' | relative_url }}).
+**Language considerations** - Recovery phrases typically consists of English-language words, which may not be intuitive to recognize, remember, or write for many users around the world. Consider supporting multiple languages (see [BIP 39 wordlists](https://github.com/bitcoin/bips/blob/master/bip-0039/bip-0039-wordlists.md)), or an alternate backup technique like [output descriptors]({{ '/guide/glossary/#output-script-descriptor' | relative_url }}).
 
 ### Simplified payment verification (SPV)
 
@@ -380,11 +380,11 @@ An algorithm to generate cryptographic signatures. One of the benefits is that t
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Schnorr_signature)
 - [Bitcoin wiki](https://en.bitcoin.it/wiki/Schnorr)
-- [BIP340](https://github.com/bitcoin/bips/blob/master/bip-0340.mediawiki)
+- [BIP 340](https://github.com/bitcoin/bips/blob/master/bip-0340.mediawiki)
 
 ### Segregated witness (SegWit)
 
-Segregated Witness, or SegWit, is the name for a soft fork change in the transaction format of bitcoin. It was described in [BIP141](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki). It was intended to mitigate a blockchain size limitation problem that reduces bitcoin transaction speed. It does this by splitting the transaction into two segments, removing the unlocking signature (*witness* data) from the original portion and appending it as a separate structure at the end. The original section holds the sender and receiver data, and the new *witness* structure contains scripts and signatures.
+Segregated Witness, or SegWit, is the name for a soft fork change in the transaction format of bitcoin. It was described in [BIP 141](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki). It was intended to mitigate a blockchain size limitation problem that reduces bitcoin transaction speed. It does this by splitting the transaction into two segments, removing the unlocking signature (*witness* data) from the original portion and appending it as a separate structure at the end. The original section holds the sender and receiver data, and the new *witness* structure contains scripts and signatures.
 
 ### Signature
 <div class="center" markdown="1">
@@ -424,8 +424,8 @@ A portable data format for transactions before they are verified by the network.
 
 **References:**
 
-- [BIP174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki): Partially Signed Bitcoin Transaction Format
-- [BIP370](https://github.com/bitcoin/bips/blob/master/bip-0370.mediawiki): PSBT Version 2
+- [BIP 174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki): Partially Signed Bitcoin Transaction Format
+- [BIP 370](https://github.com/bitcoin/bips/blob/master/bip-0370.mediawiki): PSBT Version 2
 - [PSBT Versions Deep Dive](https://river.com/learn/what-are-partially-signed-bitcoin-transactions-psbts/)
 
 ###  Passphrase
@@ -434,7 +434,7 @@ Technically, all recovery phrases have a passphrase. If it’s not set by the us
 
 **References:**
 
-- [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki): Mnemonic code for generating deterministic keys
+- [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki): Mnemonic code for generating deterministic keys
 
 ### Vault
 

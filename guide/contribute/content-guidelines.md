@@ -58,6 +58,18 @@ Address the reader directly. Whenever possible, try using active instead of pass
 
 Bitcoin is a global currency. Not everyone using this guide is a native English speaker. Make sure you are writing in plain, easy to follow English. If you're still unsure, try using a readability tool to analyze your text and make recommendations. We like [Hemingway](https://www.hemingwayapp.com).
 
+### Reference BIPs and BOLTs consistently
+
+When mentioning Bitcoin Improvement Proposals or Lightning BOLTs, use the space-separated form used by the RFC series: BIP 21, BIP 353, BOLT 11, BOLT 12. Do not write BIP-21, BIP353, or BOLT12. Leave official filenames and URLs unchanged (for example `bip-0021.mediawiki` or `bolt12.org`).
+
+##### Do
+
+*Offers are defined in [BOLT 12](https://bolt12.org/). Human-readable addresses follow [BIP 353](https://github.com/bitcoin/bips/blob/master/bip-0353.mediawiki).*
+
+##### Don't
+
+*Offers are defined in BOLT12. Human-readable addresses follow BIP-353.*
+
 ### Be concise
 
 Focus on information relevant to the reader. Use direct, clear, concise sentences that are easy to understand. Try to reduce the word count to just the right brevity without being obscure.

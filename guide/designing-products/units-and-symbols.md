@@ -263,7 +263,7 @@ Whatever pluralization scheme you choose, it's good to be consistent with this c
 
 ## ₿-only format
 
-[BIP-177](https://github.com/bitcoin/bips/blob/master/bip-0177.mediawiki) describes a new approach to bitcoin units that deprecates both the use of decimals and the usage of "sats/satoshis" to describe the base unit. 
+[BIP 177](https://github.com/bitcoin/bips/blob/master/bip-0177.mediawiki) describes a new approach to bitcoin units that deprecates both the use of decimals and the usage of "sats/satoshis" to describe the base unit. 
 
 Here we look specifically at showing bitcoin quantities in product UIs with integers only and using the "₿" symbol, a format we refer to as the "₿-only" format.
 

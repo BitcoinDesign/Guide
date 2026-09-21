@@ -43,7 +43,7 @@ All bitcoin-related data derived from and associated with a single [recovery phr
 
 #### HD wallet
 
-Hierarchical Deterministic wallets, or HD wallets, can create infinite keypairs organized in a tree-structure (hierarchical) from a single (deterministic) controlling keypair. They were introduced and defined in [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) and then expanded with [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) which added the ability to handle multiple *accounts* in one wallet.
+Hierarchical Deterministic wallets, or HD wallets, can create infinite keypairs organized in a tree-structure (hierarchical) from a single (deterministic) controlling keypair. They were introduced and defined in [BIP 32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) and then expanded with [BIP 44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) which added the ability to handle multiple *accounts* in one wallet.
 
 **Technicalities** - There are different bitcoin address formats (see [address]({{ '/guide/glossary/address' | relative_url }})). They have to be held in different branches of the HD wallet but can be controlled by the same recovery phrase.
 

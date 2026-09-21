@@ -155,7 +155,7 @@ Moreover, users have the option to skip entering an amount. This flexibility cat
 
 After entering an amount, the user taps the 'Request' button. The app then generates and presents a payment request.
 
-This wallet defaults to a [unified payment request]({{ "/guide/how-it-works/payment-request-formats/#unified-payment-requests" | relative_url }}). These combine a [lightning invoice]({{ "/guide/how-it-works/payment-request-formats/#invoice" | relative_url }}) and an [on-chain address]({{ "/guide/how-it-works/payment-request-formats/#addresses" | relative_url }}) into a single payment request using BIP21. 
+This wallet defaults to a [unified payment request]({{ "/guide/how-it-works/payment-request-formats/#unified-payment-requests" | relative_url }}). These combine a [lightning invoice]({{ "/guide/how-it-works/payment-request-formats/#invoice" | relative_url }}) and an [on-chain address]({{ "/guide/how-it-works/payment-request-formats/#addresses" | relative_url }}) into a single payment request using BIP 21. 
 
 Unified requests eliminate the hassle for users of choosing between requesting payment via the lightning network or on-chain. This choice can often be confusing, particularly for newcomers. 
 
@@ -223,7 +223,7 @@ Requests can be shared wirelessly over short distances using [near-field communi
 
 ### Payment link
 
-Payment links use a BIP21 [URI]({{ "/guide/how-it-works/payment-request-formats/#uniform-resource-identifier-uris-schemes" | relative_url }}) `bitcoin:` which makes these readable by other bitcoin applications. These can be included as part of a button or hyperlink. Also see the [wallet selector UI pattern]({{ "/guide/how-it-works/wallet-selector/" | relative_url }}).
+Payment links use a BIP 21 [URI]({{ "/guide/how-it-works/payment-request-formats/#uniform-resource-identifier-uris-schemes" | relative_url }}) `bitcoin:` which makes these readable by other bitcoin applications. These can be included as part of a button or hyperlink. Also see the [wallet selector UI pattern]({{ "/guide/how-it-works/wallet-selector/" | relative_url }}).
 
 {% include image-gallery.html pages = page.images_link %}
 

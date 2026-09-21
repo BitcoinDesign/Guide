@@ -29,7 +29,7 @@ images_settings:
       caption: By default, this address is configured with the wallet's own BOLT 12 lightning offer.
     - file: settings-select
       modalImage: settings-select-full
-      alt: Bubble app settings screen showing address configuration options. Main email address 'bcharles@bubble.com' is displayed, followed by payment options including 'Re-usable lightning address (BOLT12 offer)', 'Re-usable bitcoin address (Silent payments)', and 'Enter a new address'.
+      alt: Bubble app settings screen showing address configuration options. Main email address 'bcharles@bubble.com' is displayed, followed by payment options including 'Re-usable lightning address (BOLT 12 offer)', 'Re-usable bitcoin address (Silent payments)', and 'Enter a new address'.
       caption: The default bitcoin address linked to the Bubble address can easily be changed.
     - file: settings-filled
       modalImage: settings-filled-full
@@ -83,7 +83,7 @@ The benefits to the user experience include:
 
 **Important:** Human-readable addresses should only be used for direct communication. Whenever payment information is communicated digitally (copy & paste, links, QR codes, messaging, etc), cryptographic formats should be used for the best security and privacy.
 
-On this page, we focus primarily on the [BIP-353 for DNS Payment Instructions](https://github.com/bitcoin/bips/blob/master/bip-0353.mediawiki), with some information about [Lightning Addresses](https://lightningaddress.com). They pursue similar goals, but in very different ways.
+On this page, we focus primarily on the [BIP 353 for DNS Payment Instructions](https://github.com/bitcoin/bips/blob/master/bip-0353.mediawiki), with some information about [Lightning Addresses](https://lightningaddress.com). They pursue similar goals, but in very different ways.
 
 ### The basic idea
 
@@ -134,7 +134,7 @@ This proposal uses the formats *“<span class="-green">username</span>@<span cl
 
 ### How it works
 
-Users create DNS entries with payment information, which can be one or more addresses of different formats, combined to a [BIP 321 URI](https://github.com/bitcoin/bips/blob/master/bip-0321.mediawiki). Since address reuse is best avoided for privacy reasons, the included addresses should be reusable (like [silent payments]({{ '/guide/how-it-works/silent-payments/' | relative_url }}) and [BOLT12](https://bolt12.org/) offers). Single-use addresses can be used if needed, but a mechanism to rotate them should be in place.
+Users create DNS entries with payment information, which can be one or more addresses of different formats, combined to a [BIP 321 URI](https://github.com/bitcoin/bips/blob/master/bip-0321.mediawiki). Since address reuse is best avoided for privacy reasons, the included addresses should be reusable (like [silent payments]({{ '/guide/how-it-works/silent-payments/' | relative_url }}) and [BOLT 12](https://bolt12.org/) offers). Single-use addresses can be used if needed, but a mechanism to rotate them should be in place.
 
 {% include picture.html
    image = "/assets/images/guide/how-it-works/human-readable-addresses/dns-payment-instructions-mapping.png"
@@ -231,7 +231,7 @@ Address settings allow users to adjust the payment information associated with t
 
 Wallets should also verify any addresses the user defines. For example, a user who tries to add a regular onchain address can be informed that this is a bad practice due to the privacy implications.
 
-The additional configuration is important, to account for the diversity of features that different wallets offer. There are likely to be situations where the user wants to bundle payment information from several wallets. The best candidates for address types to use (due to their re-usability) are BOLT12 offers and silent payment addresses. Those are not broadly established, so a user may rely on different wallets for each type.
+The additional configuration is important, to account for the diversity of features that different wallets offer. There are likely to be situations where the user wants to bundle payment information from several wallets. The best candidates for address types to use (due to their re-usability) are BOLT 12 offers and silent payment addresses. Those are not broadly established, so a user may rely on different wallets for each type.
 
 #### Sharing
 
@@ -329,7 +329,7 @@ In a similar vein, [UMA](https://www.uma.me) is based on LNURL and Lightning Add
 
 ## [Paynyms](https://paynym.is)
 
-This approach relies on a single directory provider, which maps a human readable name with a [BIP-47](https://github.com/bitcoin/bips/blob/master/bip-0047.mediawiki) payment code. Having a single provider allows for the omission of the global part, in this case *"my.paynym.is/<span class="-green">username</span>"* and users can simply be referred to by their usernames. The directory code is not open-source.
+This approach relies on a single directory provider, which maps a human readable name with a [BIP 47](https://github.com/bitcoin/bips/blob/master/bip-0047.mediawiki) payment code. Having a single provider allows for the omission of the global part, in this case *"my.paynym.is/<span class="-green">username</span>"* and users can simply be referred to by their usernames. The directory code is not open-source.
 
 ---
 

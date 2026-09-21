@@ -156,9 +156,9 @@ Here are the main components of this new model with their purpose:
 | Scan key     | [Nodes & light clients](/guide/how-it-works/nodes)  | Detecting payments
 | Spend key   | Wallet owner | Spending bitcoin
 
-As shown above, the model introduces a scan key that is used for payment scanning and a static address which is used for deriving on-chain addresses. This is in contrast with the [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) model where [extended public key](/guide/glossary/#extended-public-key-xpub-ypub-zpub) are used for both purposes. Below is a summary of the differences between the two models:
+As shown above, the model introduces a scan key that is used for payment scanning and a static address which is used for deriving on-chain addresses. This is in contrast with the [BIP 32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) model where [extended public key](/guide/glossary/#extended-public-key-xpub-ypub-zpub) are used for both purposes. Below is a summary of the differences between the two models:
 
-| BIP-32       | Silent payments          | Benefit  |
+| BIP 32       | Silent payments          | Benefit  |
 |:-------------|:------------------|:------|
 | On-chain address           | Static address | Reusable; untraceable on-chain |
 | Extended private key (xprv) | Spend key   |   |
@@ -231,7 +231,7 @@ Here's how businesses, such as exchanges, merchants and vendors can use labels:
 
  Since senders can safely use the same static address for multiple payments, it is natural for them to want to store these for future use. Contacts are a great way to do this in a way that users can intuit: names and faces. The [contacts](/guide/daily-spending-wallet/contacts/) page provides guidance about the topic.
 
- Silent payments (along with [BOLT-12](https://bolt12.org)) allow applications to center their payments experience around people instead of addresses. This was not advisable before, due to issues with on-chain address reuse.
+ Silent payments (along with [BOLT 12](https://bolt12.org)) allow applications to center their payments experience around people instead of addresses. This was not advisable before, due to issues with on-chain address reuse.
 
 
 {% include image-gallery.html pages = page.images_contacts %}
@@ -300,7 +300,7 @@ Some practical examples for where users might want to share (labelled) static ad
 </div>
 
 
-The tradeoff with silent payments, for all their benefits, is a higher blockchain scanning requirement. This scanning process is more computation-intensive and time-consuming than for popular BIP-32 wallets and addresses. Mobile wallet users are likely to face a noticeable delay in detecting payments once they come online. While scanning takes place, applications should show progress and the estimated completion time.
+The tradeoff with silent payments, for all their benefits, is a higher blockchain scanning requirement. This scanning process is more computation-intensive and time-consuming than for popular BIP 32 wallets and addresses. Mobile wallet users are likely to face a noticeable delay in detecting payments once they come online. While scanning takes place, applications should show progress and the estimated completion time.
 
 
 ## Backup & Recovery
@@ -370,7 +370,7 @@ Applications should allow both backup & recovery through multiple methods. This 
 
 ## Resources
 
-- [BIP-352](https://github.com/bitcoin/bips/blob/master/bip-0352.mediawiki)
+- [BIP 352](https://github.com/bitcoin/bips/blob/master/bip-0352.mediawiki)
 - [https://silentpayments.xyz/](https://silentpayments.xyz/)
 
 ### Wallets implementing silent payments
