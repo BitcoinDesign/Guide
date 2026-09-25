@@ -309,6 +309,6 @@ If you have questions, need feedback, or just want to share your work, join us i
 {% include next-previous.html
    previousUrl = "/guide/resources/design-research/"
    previousName = "Design research"
-   nextUrl = "/guide/resources/code-resources/"
-   nextName = "Code resources"
+   nextUrl = "/guide/resources/planb-intro-course/"
+   nextName = "Plan ₿ intro course"
 %}
