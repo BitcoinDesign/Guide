@@ -1,9 +1,10 @@
-version: '3.8'
 services:
-    jekyll:
-        image: jekyll/jekyll:4.2.2
-        ports:
-            - '4000:4000'
-        volumes:
-            - '.:/srv/jekyll'
-        command: jekyll serve
+  jekyll:
+    image: jekyll/jekyll:4.2.2
+    ports:
+      - '4000:4000'
+    volumes:
+      - '.:/srv/jekyll'
+    command: >
+      sh -c 'bundle install &&
+             jekyll serve --host 0.0.0.0 --force_polling --watch'
