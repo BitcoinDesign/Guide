@@ -78,9 +78,9 @@ The sender on the other hand needs little-to-no setup (apart from using a suppor
 
 ### What is a payjoin?
 
-In a payjoin, both the sender and receiver contribute inputs to the transaction in a coordinated manner. The payjoin mechanism is also called pay-to-endpoint (P2EP), since the coordination is mediated through an endpoint run by the receiver. The endpoint address is communicated through a [BIP-21](https://bitcoinqr.dev) URI, along with the payment address and amount.
+In a payjoin, both the sender and receiver contribute inputs to the transaction in a coordinated manner. The payjoin mechanism is also called pay-to-endpoint (P2EP), since the coordination is mediated through an endpoint run by the receiver. The endpoint address is communicated through a [BIP 21](https://bitcoinqr.dev) URI, along with the payment address and amount.
 
-In the payjoin process, parties edit, sign and pass iterations of the transaction between each other, before a final version is broadcasted. [BIP-78](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki#user-content-Respecting_the_minimum_relay_fee_policy) codifies a protocol with 2 iterations (or one round of interaction beyond address sharing), as shown in the visual here.
+In the payjoin process, parties edit, sign and pass iterations of the transaction between each other, before a final version is broadcasted. [BIP 78](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki#user-content-Respecting_the_minimum_relay_fee_policy) codifies a protocol with 2 iterations (or one round of interaction beyond address sharing), as shown in the visual here.
 
 {% include picture.html
    image = "assets/images/guide/case-studies/payjoin/payjoin-bip78-process.png"
@@ -94,7 +94,7 @@ In the payjoin process, parties edit, sign and pass iterations of the transactio
 
 This case study has its origins in a [design challenge]({{ '/guide/resources/design-challenges/#challenge-6-private-purchase' | relative_url }}), which entailed creating a sender flow for payment using a payjoin transaction.
 
-Payjoins present a somewhat unique challenge of real time coordination between transacting parties and require new user flows for robust and elegant implementation of features enabled by [BIP-78](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki).
+Payjoins present a somewhat unique challenge of real time coordination between transacting parties and require new user flows for robust and elegant implementation of features enabled by [BIP 78](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki).
 
 At this point in early 2023, payjoins have not achieved significant adoption in the bitcoin ecosystem.
 
@@ -173,7 +173,7 @@ We designed a sender flow that attempts to address the issues identified above.
 
 For the purpose of creating the sender flow, we will assume that the receiver only contributes UTXOs, but does not contribute to the fees, since this allows a simple, automated process for both parties.
 
-**In short, the sender flow outlined here asks the user to choose a fee range instead of a fee amount (or fee rate), while keeping the rest of the user flow almost exactly the same. We use it to set 3 optional parameters specified in BIP-78, which can be used to construct a simple but effective payjoin implementation.**
+**In short, the sender flow outlined here asks the user to choose a fee range instead of a fee amount (or fee rate), while keeping the rest of the user flow almost exactly the same. We use it to set 3 optional parameters specified in BIP 78, which can be used to construct a simple but effective payjoin implementation.**
 
 {% include picture.html
    image = "assets/images/guide/case-studies/payjoin/payjoin-sender-flow.png"
@@ -209,7 +209,7 @@ A detailed explainer of each screen can be viewed [here](https://docs.google.com
 
 ### Receiving payjoins
 
-Based on the BIP-78 protocol, [the receiver has higher requirements]({{ '/guide/case-studies/payjoin/#understanding-users--requirements' | relative_url }}) than the sender does. While senders need a compatible mobile wallet, they cannot serve an always-online endpoint. Businesses & institutions on other hand could implement a payjoin receiver setup easily, but avoid hot wallets due to security concerns.
+Based on the BIP 78 protocol, [the receiver has higher requirements]({{ '/guide/case-studies/payjoin/#understanding-users--requirements' | relative_url }}) than the sender does. While senders need a compatible mobile wallet, they cannot serve an always-online endpoint. Businesses & institutions on other hand could implement a payjoin receiver setup easily, but avoid hot wallets due to security concerns.
 
 **While practically every mobile wallet is a hot wallet and it is trivial to fund it, having an online server where the payjoin handshake can be performed is difficult for technical and practical reasons. This might be the biggest impediment to payjoin support and adoption so far.**
 
@@ -247,7 +247,7 @@ A detailed process flow integrated with onboarding is available in this [Figjam 
 
 ##### Requesting payjoin
 
-Once the payjoin setup is functional, all payment requests (BIP-21 payment links or encoded as QRs) should contain the necessary information (including endpoint address) to perform the payjoin transaction. No separate user action should be required.
+Once the payjoin setup is functional, all payment requests (BIP 21 payment links or encoded as QRs) should contain the necessary information (including endpoint address) to perform the payjoin transaction. No separate user action should be required.
 
 
 #####  Payjoin status/settings
@@ -267,7 +267,7 @@ We learnt many things over the course of this case study, and the user flows we 
 - Due to the back-&-forth between parties which can extend over multiple iterations/rounds, this case study introduces the term ‘payjoin handshake’ to encompass all the events between user actions
 - Maintaining an always-online endpoint seems to be the biggest hurdle for payjoin implementation, we list some alternatives here
 - Payjoin burdens the receiver with more requirements, but also provides more benefits and opportunities
-- Output substitution: this is a powerful idea from BIP-78: it is a risk that can become a powerful ally for the payjoiner
+- Output substitution: this is a powerful idea from BIP 78: it is a risk that can become a powerful ally for the payjoiner
 - Output substitution: payjoin can enable recipients to post static payment information, but get paid to a different addresses, avoiding address reuse
 - Instead of setting up another wallet, payjoin receivers can leverage their daily spending wallet, which is used by the receiver as the payjoin hot wallet
 - Payjoin implementations should be mindful of the round-fee-rate heuristic for identifying payjoins, handle it without need for user decisions
@@ -283,7 +283,7 @@ Here are some examples:
 - There is exciting work underway around [serverless](https://gist.github.com/DanGould/243e418752fff760c9f6b23bba8a32f9) payjoin implementation that would work great on platforms implementing both bitcoin & lightning
 - Receiver-side implementations could use address substitution to let users make payments of their own
 - Payjoin coordination over NFC (or other wireless near-range communication technology)
-- BIP-78 could be used to allow 1 more iteration where the sender can adjust fees post-handshake & send it back to the receiver to broadcast
+- BIP 78 could be used to allow 1 more iteration where the sender can adjust fees post-handshake & send it back to the receiver to broadcast
 
 This case study tackles the design aspects around payjoin and it hopes to boost interest in its various use cases and benefits.
 
@@ -294,7 +294,7 @@ This case study tackles the design aspects around payjoin and it hopes to boost 
 
 ## Resources
 
-- [BIP-78](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki)
+- [BIP 78](https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki)
 - [Bitcoin Optech topics: Payjoin](https://bitcoinops.org/en/topics/payjoin)
 - [Payjoin Process Flows](https://www.figma.com/file/NzMvwyzP7x5jfGmwNUKRov/PayJoin-Process-Flows?node-id=0%3A1&t=wSwewTOkQddWhagl-1)
 - [Payjoin User Flows](https://www.figma.com/file/69uUDWVc8N9t5Bej8pZEsF/PayJoin-User-Flows?node-id=0%3A1&t=8F4jOa71i6X1Slbz-1)

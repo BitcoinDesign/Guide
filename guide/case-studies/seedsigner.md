@@ -343,7 +343,7 @@ SeedSigner occupies a unique position in the Bitcoin hardware space. It is not c
 
 ### The SeedQR innovation
 
-One of SeedSigner's most influential UX innovations is [SeedQR](https://github.com/SeedSigner/seedsigner/blob/main/docs/seed_qr/README.md), designed by Keith Mukai: a compact QR code format that encodes a BIP-39 seed phrase. Users can transcribe their seed as a small QR code on paper or metal, then scan it to instantly load their seed into the device.
+One of SeedSigner's most influential UX innovations is [SeedQR](https://github.com/SeedSigner/seedsigner/blob/main/docs/seed_qr/README.md), designed by Keith Mukai: a compact QR code format that encodes a BIP 39 seed phrase. Users can transcribe their seed as a small QR code on paper or metal, then scan it to instantly load their seed into the device.
 
 {% include picture.html
    image = "/assets/images/guide/case-studies/seedsigner/seedqr-hand-transcription.jpg"

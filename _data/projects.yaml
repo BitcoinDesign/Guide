@@ -102,9 +102,9 @@ projects:
     color: "#FFC220"
     category: Design Advocacy
     title: Human Bitcoin Addresses
-    short_description: Drive adoption of BIP-353 across the industry towards an interoperable standard.
+    short_description: Drive adoption of BIP 353 across the industry towards an interoperable standard.
     long_description: |
-      BIP-353 represents a better, more interoperable and human-readable addressing scheme for bitcoin. It's time to drive its adoption throughout the ecosystem. We'll communicate clear best practices for UX, implementation, naming and usage. The Design Community will champion its adoption across the industry through active advocacy and explore applicability in new applications (like AI agents).
+      BIP 353 represents a better, more interoperable and human-readable addressing scheme for bitcoin. It's time to drive its adoption throughout the ecosystem. We'll communicate clear best practices for UX, implementation, naming and usage. The Design Community will champion its adoption across the industry through active advocacy and explore applicability in new applications (like AI agents).
     key_people:
       - handle: "@matbalez"
         url: https://x.com/matbalez
